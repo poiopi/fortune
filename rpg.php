@@ -331,18 +331,16 @@ function drawTile(type,dx,dy){
   ctx.fillRect(dx,dy,TS,TS);
 }
 
-// スプライトシートのペア構造: 偶数列c=前向き(down/up), 奇数列c+1=右向き
-// dir: 'down'|'up'|'left'|'right'
+// スプライトシートのペア: c=前向き, c+1=左向き
+// 左 → c+1そのまま、右 → c+1を水平反転
 function drawChar(key,dx,dy,dir='down'){
   const sp=CSPR[key];
   if(!(_imgReady>=2&&sp)) return;
-  // 右/左 → 右向きスプライト(c+1)を使用。左はそれを反転
-  // 上/下 → 前向きスプライト(c)を使用
-  const useRight = (dir==='right'||dir==='left');
-  const col = useRight ? sp.c+1 : sp.c;
-  const flipH = (dir==='left');
+  const useSide=(dir==='left'||dir==='right');
+  const col=useSide ? sp.c+1 : sp.c;
+  const flipH=(dir==='right'); // 左向きスプライトをflipして右向きに
   const sx=col*CSW, sy=sp.r*CSH;
-  const dh=Math.round(TS*1.4), dw=Math.round(TS*0.9);
+  const dh=Math.round(TS*1.3), dw=Math.round(TS*1.0);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
   if(flipH){
     ctx.save();
@@ -673,8 +671,8 @@ function draw(){
     ctx.fillText('★アイテム',sx+TS/2,sy+TS*.72);
   });
 
-  // NPCs（紫の背景・大きめ・名前表示）
-  NPCS.forEach(n=>{
+  // NPCs（y座標順=奥から手前の順に描画して重なりを正しくする）
+  [...NPCS].sort((a,b)=>a.y-b.y).forEach(n=>{
     const sx=(n.x-cx)*TS, sy=(n.y-cy)*TS;
     if(sx<-TS||sx>=VPC*TS||sy<-TS||sy>=VPR*TS) return;
     // 背景（未訪問=紫、訪問済み=ティール）
