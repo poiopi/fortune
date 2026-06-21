@@ -312,7 +312,8 @@ footer a:hover{color:var(--gold)}
 // 横: 1254÷20スプライト=63px、縦: 1254÷8行=157px(行オフセット)
 // CSHはサンプリング高さ=126px（次行の頭が映り込まないよう小さめに）
 // 4方向セット: c=前(下), c+1=左, c+2=後(上), c+3=右
-const CSW=58, CSH=126, ROW_H=157; // CSW小さめで隣キャラ混入を防ぐ
+const CSW=63, CSH=126, ROW_H=157; // グリッド幅63(1254÷20)で位置計算
+const CSW_SAMPLE=58; // 実際のサンプリング幅（隣キャラ混入防止）
 
 const imgChar=new Image();
 imgChar.src='/characters.png';
@@ -352,10 +353,10 @@ function drawChar(key,dx,dy,dir='down'){
   else if(dir==='right') col=sp.c+2;
   // up: 後ろ向きスプライトなし→正面(c)をそのまま使用
   // down: col=sp.c (default)
-  const sx=col*CSW, sy=sp.r*ROW_H;
-  const dw=Math.round(TS*1.2), dh=Math.round(TS*1.8); // dh大きくして頭を見せる
+  const sx=col*CSW+2, sy=sp.r*ROW_H; // +2で左端の隣キャラをカット
+  const dw=Math.round(TS*1.2), dh=Math.round(TS*1.8);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
-  ctx.drawImage(imgChar,sx,sy,CSW,CSH,ddx,ddy,dw,dh);
+  ctx.drawImage(imgChar,sx,sy,CSW_SAMPLE,CSH,ddx,ddy,dw,dh);
 }
 
 // ════════════════════════════════════════════
