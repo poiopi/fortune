@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 declare(strict_types=1);
 
 // ══════════════════════════════════════════════════════════════════
@@ -171,8 +171,8 @@ $rokuyo     = getRokuyo((int)$today->format('Y'), (int)$today->format('n'), (int
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <style>
-#google_translate_element{font-size:.65rem}
-#google_translate_element .goog-te-gadget{color:transparent}
+#google_translate_element{font-size:.65rem;flex-shrink:0}
+#google_translate_element .goog-te-gadget{color:transparent;white-space:nowrap}
 #google_translate_element .goog-te-gadget select{background:rgba(8,6,15,.9);color:#8a7db5;border:1px solid rgba(160,130,220,.3);border-radius:6px;font-size:.65rem;padding:.15rem .3rem;cursor:pointer}
 .goog-te-banner-frame{display:none!important}
 body{top:0!important}
