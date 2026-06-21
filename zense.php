@@ -143,6 +143,8 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
       <a href="/kyusei">九星気学</a>
       <a href="/rpg">RPG占い</a>
       <a href="/aisho">相性診断</a>
+      前世診断
+      <a href="/guardian">守護霊診断</a>
     </nav>
     <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
@@ -156,6 +158,7 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
       <a href="/rpg">RPG占い</a>
       <a href="/aisho">相性診断</a>
       前世診断
+      <a href="/guardian">守護霊診断</a>
     </div>
   </div>
 </header>
@@ -269,6 +272,8 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
       <a href="/kyusei">九星気学診断</a> &nbsp;/&nbsp;
       <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
       <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
+      前世診断 &nbsp;/&nbsp;
+      <a href="/guardian">守護霊診断</a> &nbsp;/&nbsp;
       <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
       <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
       <a href="/contact">お問い合わせ</a><br>
