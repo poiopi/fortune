@@ -315,7 +315,7 @@ const CSPR={
   smith:   {c:0, r:0},   // 茶色い戦士
   witch:   {c:4, r:0},   // 緑フード（魔女）
   merchant:{c:12,r:0},   // 黄色系（商人）
-  knight:  {c:8, r:0},   // 青い騎士
+  knight:  {c:2, r:0},   // 暗色の騎士
   bard:    {c:14,r:0},   // 橙赤（詩人）
   healer:  {c:8, r:1},   // 白系（薬師）
   grandma: {c:10,r:1},   // 老人系
@@ -331,17 +331,20 @@ function drawTile(type,dx,dy){
   ctx.fillRect(dx,dy,TS,TS);
 }
 
+// スプライトシートのペア構造: 偶数列c=前向き(down/up), 奇数列c+1=右向き
 // dir: 'down'|'up'|'left'|'right'
 function drawChar(key,dx,dy,dir='down'){
   const sp=CSPR[key];
   if(!(_imgReady>=2&&sp)) return;
-  // 上向き=奇数列(c+1)、下/左/右=偶数列(c)
-  const col = (dir==='up') ? sp.c+1 : sp.c;
+  // 右/左 → 右向きスプライト(c+1)を使用。左はそれを反転
+  // 上/下 → 前向きスプライト(c)を使用
+  const useRight = (dir==='right'||dir==='left');
+  const col = useRight ? sp.c+1 : sp.c;
+  const flipH = (dir==='left');
   const sx=col*CSW, sy=sp.r*CSH;
   const dh=Math.round(TS*1.4), dw=Math.round(TS*0.9);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
-  if(dir==='left'){
-    // 水平反転
+  if(flipH){
     ctx.save();
     ctx.scale(-1,1);
     ctx.drawImage(imgChar,sx,sy,CSW,CSH,-(ddx+dw),ddy,dw,dh);
