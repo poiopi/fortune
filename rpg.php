@@ -298,8 +298,9 @@ footer a:hover{color:var(--gold)}
 // ════════════════════════════════════════════
 // SPRITES
 // ════════════════════════════════════════════
-// キャラシートの1コマサイズ(px)  1254÷10列=125、1254÷8行=157
-const CSW=125, CSH=157;
+// キャラシートの1コマサイズ(px)  1254÷20スプライト=63、1254÷8行=157
+// 各キャラは偶数列=前向き(下)、奇数列=後ろ向き(上)のペア
+const CSW=63, CSH=157;
 
 const imgChar=new Image();
 imgChar.src='/characters.png';
@@ -307,21 +308,21 @@ let _imgReady=0;
 imgChar.onload=()=>{_imgReady=2;draw();};
 imgChar.onerror=()=>{_imgReady=99;draw();};
 
-// キャラクター座標 [col,row]  col:0〜9, row:0〜7
-// row0=戦士系, row1=魔法使い系, row2〜5=その他, row6-7=モンスター
+// キャラクター座標  c=偶数列(前向きスプライト), r=行 (0始まり)
+// 偶数c=前向き(下), c+1=後ろ向き(上), 左右は水平反転で対応
 const CSPR={
-  player:  {c:4, r:0},  // 青騎士
-  grandma: {c:5, r:1},  // 白/灰系
-  smith:   {c:0, r:0},  // 茶色戦士
-  witch:   {c:2, r:0},  // 緑エルフ
-  merchant:{c:6, r:0},  // 黄色系
-  knight:  {c:3, r:0},  // 青緑騎士
-  healer:  {c:4, r:1},  // 白系
-  bard:    {c:7, r:0},  // 赤/橙
-  priest:  {c:2, r:1},  // 紫マント
-  thug:    {c:0, r:7},  // ゴブリン
-  guardian:{c:2, r:7},  // 悪魔
-  slime:   {c:7, r:7},  // スライム
+  player:  {c:4, r:0},
+  grandma: {c:4, r:1},
+  smith:   {c:0, r:0},
+  witch:   {c:2, r:0},
+  merchant:{c:6, r:0},
+  knight:  {c:2, r:1},
+  healer:  {c:4, r:2},
+  bard:    {c:6, r:1},
+  priest:  {c:0, r:2},
+  thug:    {c:0, r:7},
+  guardian:{c:2, r:7},
+  slime:   {c:6, r:7},
 };
 
 const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
@@ -330,15 +331,24 @@ function drawTile(type,dx,dy){
   ctx.fillRect(dx,dy,TS,TS);
 }
 
-function drawChar(key,dx,dy){
+// dir: 'down'|'up'|'left'|'right'
+function drawChar(key,dx,dy,dir='down'){
   const sp=CSPR[key];
-  if(_imgReady>=2&&sp){
-    // 各キャラの正面フレーム（中央コマ）を使用
-    const sx=sp.c*CSW, sy=sp.r*CSH;
-    const dh=Math.round(TS*1.4), dw=Math.round(TS*0.9);
-    ctx.drawImage(imgChar,sx,sy,CSW,CSH,dx+(TS-dw)/2,dy-dh+TS,dw,dh);
+  if(!(_imgReady>=2&&sp)) return;
+  // 上向き=奇数列(c+1)、下/左/右=偶数列(c)
+  const col = (dir==='up') ? sp.c+1 : sp.c;
+  const sx=col*CSW, sy=sp.r*CSH;
+  const dh=Math.round(TS*1.4), dw=Math.round(TS*0.9);
+  const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
+  if(dir==='left'){
+    // 水平反転
+    ctx.save();
+    ctx.scale(-1,1);
+    ctx.drawImage(imgChar,sx,sy,CSW,CSH,-(ddx+dw),ddy,dw,dh);
+    ctx.restore();
+  } else {
+    ctx.drawImage(imgChar,sx,sy,CSW,CSH,ddx,ddy,dw,dh);
   }
-  // スプライト未ロード時は絵文字で代用（既存コードが描く）
 }
 
 // ════════════════════════════════════════════
@@ -536,7 +546,7 @@ const ENEM={
 // ════════════════════════════════════════════
 // GAME STATE
 // ════════════════════════════════════════════
-let pl={x:10,y:9,hp:30,mhp:30,mp:20,mmp:20};
+let pl={x:10,y:9,hp:30,mhp:30,mp:20,mmp:20,dir:'down'};
 let inv={herb:0,crystal:0,scroll:false};
 let picked=new Set(), visited=new Set();
 let sc={battle:0,magic:0,wisdom:0,agility:0,heal:0,free:0,nature:0};
@@ -672,7 +682,15 @@ function draw(){
     ctx.strokeRect(sx+3,sy+3,TS-6,TS-6);
     // キャラクタースプライト（またはフォールバック絵文字）
     if(_imgReady>=2){
-      drawChar(n.id,sx,sy);
+      // NPCはプレイヤーの方向に向く（隣接時）、それ以外は下向き
+      let nDir='down';
+      if(adj(n.x,n.y)){
+        if(pl.x<n.x) nDir='left';
+        else if(pl.x>n.x) nDir='right';
+        else if(pl.y<n.y) nDir='up';
+        else nDir='down';
+      }
+      drawChar(n.id,sx,sy,nDir);
     } else {
       ctx.font=Math.round(TS*.65)+'px serif';
       ctx.textAlign='center'; ctx.textBaseline='middle';
@@ -700,13 +718,10 @@ function draw(){
   if(_imgReady>=2){
     const{cx,cy}=cam();
     const px=(pl.x-cx)*TS, py=(pl.y-cy)*TS;
-    const dh=Math.round(TS*1.4), dw=Math.round(TS*0.9);
-    const sp=CSPR.player;
-    ctx.drawImage(imgChar,sp.c*CSW,sp.r*CSH,CSW,CSH,
-      px+(TS-dw)/2, py-dh+TS, dw, dh);
-    pin.style.fontSize='0'; // 絵文字を隠す
+    drawChar('player',px,py,pl.dir);
+    pin.style.fontSize='0';
   } else {
-    pin.style.fontSize=''; // 絵文字を表示
+    pin.style.fontSize='';
   }
 
   // 5人達成後の教会誘導メッセージ
@@ -790,10 +805,10 @@ cv.addEventListener('touchend',e=>{
 
 function move(dir){
   let nx=pl.x,ny=pl.y;
-  if(dir==='u')ny--;
-  if(dir==='d')ny++;
-  if(dir==='l')nx--;
-  if(dir==='r')nx++;
+  if(dir==='u'){ny--;pl.dir='up';}
+  if(dir==='d'){ny++;pl.dir='down';}
+  if(dir==='l'){nx--;pl.dir='left';}
+  if(dir==='r'){nx++;pl.dir='right';}
   if(!passable(nx,ny)) return;
   pl.x=nx; pl.y=ny;
   pickup();
