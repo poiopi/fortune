@@ -446,8 +446,9 @@ const IDEF=[
   for(let y=1;y<MH-1;y++)
     for(let x=1;x<MW-1;x++){
       if(!reach.has(x+','+y)) continue;
-      if(x===13&&y===13) continue; // 神父位置
       if(x===10&&y===9)  continue; // プレイヤースタート
+      // 教会入口周辺（神父＋入口3タイル以内）は除外
+      if(Math.abs(x-13)+Math.abs(y-13)<=3) continue;
       // 上下左右に通行可能な隣接タイルが2つ以上あること（行き止まりは除外）
       const nb=[[x-1,y],[x+1,y],[x,y-1],[x,y+1]].filter(([nx,ny])=>passable(nx,ny)).length;
       if(nb>=2) pool.push([x,y]);
@@ -660,8 +661,22 @@ function adj(x,y){
 }
 
 function updateTalkBtn(){
-  const near=NPCS.some(n=>adj(n.x,n.y));
-  document.getElementById('talkBtn').style.display=near?'block':'none';
+  const btn=document.getElementById('talkBtn');
+  const bA=document.getElementById('bA');
+  const priest=NPCS.find(n=>n.priest&&adj(n.x,n.y));
+  const other=NPCS.find(n=>!n.priest&&adj(n.x,n.y));
+  if(priest){
+    btn.style.display='block';
+    btn.textContent='🔮 占う / Space';
+    bA.innerHTML='占う<br>Space';
+  } else if(other){
+    btn.style.display='block';
+    btn.textContent='💬 話す / Space';
+    bA.innerHTML='話す<br>Space';
+  } else {
+    btn.style.display='none';
+    bA.innerHTML='話す<br>Space';
+  }
 }
 
 // ════════════════════════════════════════════
