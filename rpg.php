@@ -428,23 +428,50 @@ const IDEF=[
   {id:'s1',type:'scroll', emoji:'📜',x:0,y:0,name:'謎の巻物',desc:'神父がより詳しく占う'},
 ];
 
-// ── 日替わり配置（通行可能タイルのみ）──────────────
+// ── 日替わり配置（BFSで到達可能タイルのみ）──────────
 (function placeActors(){
+  // BFSでプレイヤースタート(10,9)から到達可能な全タイルを列挙
+  const reach=new Set(['10,9']);
+  const q=[[10,9]];
+  while(q.length){
+    const[x,y]=q.shift();
+    for(const[nx,ny] of[[x-1,y],[x+1,y],[x,y-1],[x,y+1]]){
+      const k=nx+','+ny;
+      if(!reach.has(k)&&passable(nx,ny)){reach.add(k);q.push([nx,ny]);}
+    }
+  }
+
+  // 到達可能 & 通行可能 & 特定位置除外 & 隣接可能タイルを選定
+  const pool=[];
+  for(let y=1;y<MH-1;y++)
+    for(let x=1;x<MW-1;x++){
+      if(!reach.has(x+','+y)) continue;
+      if(x===13&&y===13) continue; // 神父位置
+      if(x===10&&y===9)  continue; // プレイヤースタート
+      // 上下左右に通行可能な隣接タイルが2つ以上あること（行き止まりは除外）
+      const nb=[[x-1,y],[x+1,y],[x,y-1],[x,y+1]].filter(([nx,ny])=>passable(nx,ny)).length;
+      if(nb>=2) pool.push([x,y]);
+    }
+
+  // 日付シードでシャッフル
   const d=new Date();
   let _s=(d.getFullYear()*10000+d.getMonth()*100+d.getDate())*2654435761>>>0;
   const rng=()=>{_s=Math.imul(_s^(_s>>>16),0x45d9f3b)>>>0;return _s/4294967296};
-  const pool=[];
-  for(let y=1;y<MH-1;y++)
-    for(let x=1;x<MW-1;x++)
-      if(passable(x,y)&&!(x===13&&y===13)) pool.push([x,y]);
   for(let i=pool.length-1;i>0;i--){const j=0|rng()*(i+1);[pool[i],pool[j]]=[pool[j],pool[i]];}
+
+  // 最低距離4を保ちながら配置（より分散させる）
   const used=[];
   const pick=()=>{
     for(const[x,y] of pool){
+      if(used.every(([ux,uy])=>Math.abs(ux-x)+Math.abs(uy-y)>=4)){used.push([x,y]);return{x,y};}
+    }
+    // 距離3に緩める
+    for(const[x,y] of pool){
       if(used.every(([ux,uy])=>Math.abs(ux-x)+Math.abs(uy-y)>=3)){used.push([x,y]);return{x,y};}
     }
-    return{x:9,y:9};
+    return{x:9,y:8}; // フォールバック
   };
+
   NPCS.forEach(n=>{if(!n.priest){const p=pick();n.x=p.x;n.y=p.y}});
   IDEF.forEach(it=>{const p=pick();it.x=p.x;it.y=p.y});
 })();
