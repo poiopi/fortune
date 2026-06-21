@@ -113,38 +113,41 @@ $PRESENT_POOLS=[
 
 // ─── 結果計算 ─────────────────────────────────────────
 $result=null; $errors=[];
-$yourBirth   =trim($_GET['your_birth']    ??'');
-$partnerBirth=trim($_GET['partner_birth'] ??'');
-$partnerName =htmlspecialchars(trim($_GET['partner_name']??''),ENT_QUOTES,'UTF-8');
+$yourName   =htmlspecialchars(trim($_GET['your_name']   ??''),ENT_QUOTES,'UTF-8');
+$partnerName=htmlspecialchars(trim($_GET['partner_name']??''),ENT_QUOTES,'UTF-8');
+$ym=(int)($_GET['your_month']    ??0);
+$yd=(int)($_GET['your_day']      ??0);
+$pm=(int)($_GET['partner_month'] ??0);
+$pd=(int)($_GET['partner_day']   ??0);
 
-if($yourBirth!==''&&$partnerBirth!==''){
-  try{
-    $yD=new DateTimeImmutable($yourBirth);
-    $pD=new DateTimeImmutable($partnerBirth);
-    $ym=(int)$yD->format('n');$yd=(int)$yD->format('j');$yy=(int)$yD->format('Y');
-    $pm=(int)$pD->format('n');$pd=(int)$pD->format('j');$py=(int)$pD->format('Y');
+if($ym>0&&$yd>0&&$pm>0&&$pd>0){
+  if($ym<1||$ym>12||$yd<1||$yd>31||$pm<1||$pm>12||$pd<1||$pd>31){
+    $errors[]='月・日の入力値が正しくありません。';
+  } else {
     $yZi=getZodiacIdx($ym,$yd); $pZi=getZodiacIdx($pm,$pd);
     $yZ=$ZODIAC[$yZi]; $pZ=$ZODIAC[$pZi];
-    $yLP=calcLP($yy,$ym,$yd); $pLP=calcLP($py,$pm,$pd);
 
-    $seed=abs(crc32($yourBirth.$partnerBirth));
+    // 1990年固定でライフパスを計算（表示はしない）
+    $yLP=calcLP(1990,$ym,$yd); $pLP=calcLP(1990,$pm,$pd);
+
+    $seed=abs(crc32(sprintf('%02d%02d%02d%02d',$ym,$yd,$pm,$pd)));
     $base=zodiacScore($yZ['el'],$pZ['el']);
     $bonus=lpBonus($yLP,$pLP);
 
     $marriageScore=min(5,max(1,$base+$bonus+($seed%2)-1));
     $loverScore   =min(5,max(1,$base+(($seed>>3)%2)+$bonus-1+($yZ['el']!==$pZ['el']?1:0)));
 
-    // デートスポット・プレゼントをシードで固定選択
-    $datePool =$DATE_POOLS[$pZ['el']];
-    $dateSpot =$datePool[$seed%count($datePool)];
-    $presPool =$PRESENT_POOLS[$pLP]??$PRESENT_POOLS[9];
-    $present  =$presPool[$seed%count($presPool)];
+    $datePool=$DATE_POOLS[$pZ['el']];
+    $dateSpot=$datePool[$seed%count($datePool)];
+    $presPool=$PRESENT_POOLS[$pLP]??$PRESENT_POOLS[9];
+    $present =$presPool[$seed%count($presPool)];
 
     $confess=$CONFESS[$pZ['name']]??$CONFESS['獅子座'];
 
-    $result=compact('yZ','pZ','yLP','pLP','marriageScore','loverScore',
-                    'confess','dateSpot','present','partnerName');
-  }catch(Exception $e){$errors[]='生年月日の形式が正しくありません。';}
+    $result=compact('yZ','pZ','marriageScore','loverScore',
+                    'confess','dateSpot','present','yourName','partnerName',
+                    'ym','yd','pm','pd');
+  }
 }
 ?>
 <!DOCTYPE html>
@@ -244,6 +247,10 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .cal-name-tag{font-family:var(--ff-mono);font-size:.68rem;background:rgba(155,114,239,.1);border:1px solid rgba(155,114,239,.3);border-radius:20px;padding:.3rem .75rem;color:var(--violet-lt);cursor:pointer;transition:background .15s;white-space:nowrap}
 .cal-name-tag:hover{background:rgba(155,114,239,.3)}
 .cal-empty{font-family:var(--ff-mono);font-size:.68rem;color:var(--muted)}
+.cal-month-tabs{display:flex;gap:.4rem;margin-bottom:.8rem;flex-wrap:wrap}
+.cal-month-btn{font-family:var(--ff-mono);font-size:.7rem;padding:.3rem .9rem;border-radius:16px;border:1px solid var(--border);background:rgba(155,114,239,.06);color:var(--muted);cursor:pointer;transition:all .15s}
+.cal-month-btn:hover{background:rgba(155,114,239,.15);color:var(--violet-lt)}
+.cal-month-btn.active{background:rgba(155,114,239,.3);color:var(--violet-lt);border-color:var(--violet)}
 
 /* 結果 */
 .result-wrap{animation:fadeIn .8s ease}
@@ -364,13 +371,14 @@ footer a:hover{color:var(--gold)}
   <div class="cal-section">
     <div class="cal-title">📅 誕生日カレンダーから選ぶ（1月）</div>
     <p class="cal-note">※日付ボタンをタップすると、その日が誕生日の有名人・キャラクターが表示されます。名前をタップするとお相手欄に自動入力されます。<br>誕生日データは参考情報です。正確性は保証されません。年は参考値として1990年を使用しています。</p>
+    <div class="cal-month-tabs" id="calMonthTabs"></div>
     <div class="cal-days" id="calDays"></div>
     <div class="cal-names" id="calNames"><span class="cal-empty">日付を選んでください</span></div>
   </div>
 
   <!-- フォーム -->
   <div class="form-card">
-    <div class="form-title">✦ 生年月日を入力 ✦</div>
+    <div class="form-title">✦ 誕生日を入力 ✦</div>
     <?php if(!empty($errors)):?>
     <div class="error-box"><?=implode('<br>',$errors)?></div>
     <?php endif;?>
@@ -381,12 +389,24 @@ footer a:hover{color:var(--gold)}
           <div class="form-group">
             <label class="form-label">お名前（任意）</label>
             <input class="form-input" type="text" name="your_name" id="your_name"
-              value="<?=htmlspecialchars(trim($_GET['your_name']??''),ENT_QUOTES)?>" placeholder="例：山田さん">
+              value="<?=$yourName?>" placeholder="例：山田さん">
           </div>
           <div class="form-group">
-            <label class="form-label">生年月日</label>
-            <input class="form-input" type="date" name="your_birth" id="your_birth"
-              value="<?=htmlspecialchars($yourBirth,ENT_QUOTES)?>" max="<?=date('Y-m-d')?>" required>
+            <label class="form-label">誕生日</label>
+            <div style="display:flex;gap:.5rem;align-items:center">
+              <select class="form-input" name="your_month" id="your_month" required style="flex:1">
+                <option value="">月</option>
+                <?php for($i=1;$i<=12;$i++):?>
+                <option value="<?=$i?>"<?=$ym===$i?' selected':''?>><?=$i?>月</option>
+                <?php endfor;?>
+              </select>
+              <select class="form-input" name="your_day" id="your_day" required style="flex:1">
+                <option value="">日</option>
+                <?php for($i=1;$i<=31;$i++):?>
+                <option value="<?=$i?>"<?=$yd===$i?' selected':''?>><?=$i?>日</option>
+                <?php endfor;?>
+              </select>
+            </div>
           </div>
         </div>
         <div class="person-card">
@@ -394,12 +414,24 @@ footer a:hover{color:var(--gold)}
           <div class="form-group">
             <label class="form-label">お名前（任意）</label>
             <input class="form-input" type="text" name="partner_name" id="partner_name"
-              value="<?=htmlspecialchars($partnerName,ENT_QUOTES)?>" placeholder="例：田中さん">
+              value="<?=$partnerName?>" placeholder="例：田中さん">
           </div>
           <div class="form-group">
-            <label class="form-label">生年月日</label>
-            <input class="form-input" type="date" name="partner_birth" id="partner_birth"
-              value="<?=htmlspecialchars($partnerBirth,ENT_QUOTES)?>" max="<?=date('Y-m-d')?>" required>
+            <label class="form-label">誕生日</label>
+            <div style="display:flex;gap:.5rem;align-items:center">
+              <select class="form-input" name="partner_month" id="partner_month" required style="flex:1">
+                <option value="">月</option>
+                <?php for($i=1;$i<=12;$i++):?>
+                <option value="<?=$i?>"<?=$pm===$i?' selected':''?>><?=$i?>月</option>
+                <?php endfor;?>
+              </select>
+              <select class="form-input" name="partner_day" id="partner_day" required style="flex:1">
+                <option value="">日</option>
+                <?php for($i=1;$i<=31;$i++):?>
+                <option value="<?=$i?>"<?=$pd===$i?' selected':''?>><?=$i?>日</option>
+                <?php endfor;?>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -410,6 +442,7 @@ footer a:hover{color:var(--gold)}
   <!-- 結果 -->
   <?php if($result):
     $r=$result;
+    $yLabel=$r['yourName']!==''?$r['yourName'].'さん':'あなた';
     $pLabel=$r['partnerName']!==''?$r['partnerName'].'さん':'お相手';
     $marriageScores=[1=>'縁遠い',2=>'普通',3=>'相性まずまず',4=>'相性良好',5=>'運命的な相手'];
     $loverScores  =[1=>'ドキドキ少なめ',2=>'穏やかな関係',3=>'楽しい恋人',4=>'情熱的な恋',5=>'運命の恋人'];
@@ -442,7 +475,7 @@ footer a:hover{color:var(--gold)}
       </div>
       <div class="rb-score-txt"><?=$marriageScores[$r['marriageScore']]?></div>
       <p class="rb-text" style="margin-top:.7rem">
-        <?=$r['yZ']['name']?>と<?=$r['pZ']['name']?>の組み合わせは、
+        <?=$yLabel?>（<?=$r['yZ']['name']?>）と<?=$pLabel?>（<?=$r['pZ']['name']?>）の組み合わせは、
         <?php if($r['yZ']['el']===$r['pZ']['el']):?>
         同じ<strong><?=$r['yZ']['el']?></strong>のエレメント同士。価値観が近く、長期的な安定が期待できる相性です。
         <?php elseif(in_array([$r['yZ']['el'],$r['pZ']['el']],[['火','風'],['風','火'],['水','地'],['地','水']])):?>
@@ -450,8 +483,6 @@ footer a:hover{color:var(--gold)}
         <?php else:?>
         異なるエレメント同士ですが、だからこそ相手から学べることが多い刺激的な関係になります。
         <?php endif;?>
-        数秘術では<?=$r['yLP']?>と<?=$r['pLP']?>の組み合わせで、
-        <?php if(lpBonus($r['yLP'],$r['pLP'])>0):?>互いを高め合える相性です。<?php else:?>異なる力で補い合える相性です。<?php endif;?>
       </p>
     </div>
 
@@ -582,32 +613,129 @@ const BIRTHDAY_DB = {
   '01-29':['アントン・チェーホフ','オプラ・ウィンフリー','トム・セレック','濱口優','宝生舞','きゃりーぱみゅぱみゅ','中野四葉','伊之助','サンジ','夜神月'],
   '01-30':['フランクリン・ルーズベルト','ジーン・ハックマン','フィル・コリンズ','石川さゆり','吉村由美','春風亭昇太','中野五月','禪院真希','冨岡義勇','リヴァイ'],
   '01-31':['フランツ・シューベルト','ジャスティン・ティンバーレイク','ケリー・リンチ','真矢みき','香取慎吾','石野真子','中野五月','伏黒恵','ロロノア・ゾロ','ミカサ・アッカーマン'],
+  '02-01':['クラーク・ゲーブル','ブランドン・リー','リサ・マリー・プレスリー','布袋寅泰','磯野貴理子','吉沢亮','胡蝶しのぶ','うちはサスケ','影山飛雄','アスナ'],
+  '02-02':['ジェームズ・ジョイス','ファラ・フォーセット','シャキーラ','劇団ひとり','浅尾美和','桐山照史','我妻善逸','ロロノア・ゾロ','綾波レイ','キルア＝ゾルディック'],
+  '02-03':['ノーマン・ロックウェル','モーガン・フェアチャイルド','ネイサン・レイン','川合俊一','有田哲平','柳原可奈子','竈門炭治郎','五条悟','モンキー・D・ルフィ','エレン・イェーガー'],
+  '02-04':['ローザ・パークス','アリス・クーパー','ナタリー・インブルーリア','石破茂','時任三郎','桐谷健太','冨岡義勇','夜神月','リヴァイ','ベジータ'],
+  '02-05':['ハンク・アーロン','クリスティアーノ・ロナウド','ネイマール','大地真央','中島美嘉','山田五郎','嘴平伊之助','サンジ','ミカサ・アッカーマン','伏黒恵'],
+  '02-06':['ボブ・マーリー','フランソワ・トリュフォー','リック・アストリー','福山雅治','坂井泉水','小沢仁志','宇髄天元','キリト','エドワード・エルリック','赤司征十郎'],
+  '02-07':['チャールズ・ディケンズ','クリス・ロック','アシュトン・カッチャー','向井理','香坂みゆき','石毛宏典','我愛羅','煉獄杏寿郎','アルミン・アルレルト','キルア＝ゾルディック'],
+  '02-08':['ジュール・ヴェルヌ','ジャック・レモン','ジェームズ・ディーン','田中卓志','松下奈緒','高岡蒼佑','冨岡義勇','サスケ','夜神月','リヴァイ'],
+  '02-09':['ミア・ファロー','ジョー・ペシ','トム・ヒドルストン','ラモス瑠偉','春日俊彰','鈴木亜美','五条悟','ロロノア・ゾロ','竈門炭治郎','綾波レイ'],
+  '02-10':['バート・レイノルズ','ロブ・トーマス','エマ・ロバーツ','島田洋七','市川由衣','川口春奈','嘴平伊之助','トラファルガー・ロー','エレン・イェーガー','ベジータ'],
+  '02-11':['トーマス・エジソン','ジェニファー・アニストン','シェリル・クロウ','鳩山由紀夫','ホリ','山本モナ','煉獄杏寿郎','キリト','リヴァイ','エース'],
+  '02-12':['エイブラハム・リンカーン','チャールズ・ダーウィン','フランコ・ゼフィレッリ','下平さやか','榮倉奈々','市川美織','うちはイタチ','時透無一郎','夜神月','赤司征十郎'],
+  '02-13':['ピーター・ガブリエル','ロビー・ウィリアムズ','ジェリー・スプリンガー','南原清隆','出川哲朗','有村架純','胡蝶しのぶ','ロロノア・ゾロ','我愛羅','ミカサ・アッカーマン'],
+  '02-14':['マイケル・ブルームバーグ','サイモン・ペッグ','フレデリック・ダグラス','酒井法子','ヒロシ','JUJU','竈門炭治郎','サンジ','アルミン・アルレルト','ベジータ'],
+  '02-15':['ガリレオ・ガリレイ','マット・グレーニング','クリストファー・マクドナルド','堀ちえみ','浅田美代子','インリン','五条悟','エレン・イェーガー','嘴平伊之助','キルア＝ゾルディック'],
+  '02-16':['ジョン・マッケンロー','アイス-T','リロイ・サンチェス','オダギリジョー','香椎由宇','相川七瀬','胡蝶しのぶ','ロロノア・ゾロ','綾波レイ','夜神月'],
+  '02-17':['マイケル・ジョーダン','パリス・ヒルトン','エド・シーラン','吉瀬美智子','YUKI','舞の海秀平','竈門炭治郎','我愛羅','ミカサ・アッカーマン','赤司征十郎'],
+  '02-18':['ジョン・トラボルタ','マット・ディロン','ヨーコ・オノ','影山ヒロノブ','Dr.コパ','安藤サクラ','冨岡義勇','キリト','リヴァイ','エース'],
+  '02-19':['ニコラウス・コペルニクス','スモーキー・ロビンソン','ジェフ・ダニエルズ','藤岡弘','かとうれいこ','村上龍','嘴平伊之助','サスケ','アルミン・アルレルト','ベジータ'],
+  '02-20':['カート・コバーン','シンディ・クロフォード','リアーナ','志村けん','森田剛','小出恵介','五条悟','トラファルガー・ロー','エレン・イェーガー','時透無一郎'],
+  '02-21':['ニーナ・シモン','アラン・リックマン','ジェニファー・ラブ・ヒューイット','要潤','酒井美紀','ハイヒール・モモコ','リヴァイ','我妻善逸','キルア＝ゾルディック','夜神月'],
+  '02-22':['ジョージ・ワシントン','ドリュー・バリモア','ジェームズ・ブラント','陣内智則','高崎晃','渡瀬マキ','ロロノア・ゾロ','うちはイタチ','エレン・イェーガー','ベジータ'],
+  '02-23':['ジョージ・フレデリック・ヘンデル','ピーター・フォンダ','ダコタ・ファニング','中島みゆき','野口五郎','亀梨和也','冨岡義勇','サンジ','ミカサ・アッカーマン','赤司征十郎'],
+  '02-24':['スティーブ・ジョブズ','ビリー・ゼイン','フロイド・メイウェザー','草野仁','ASKA','北山たけし','竈門炭治郎','我愛羅','キリト','エース'],
+  '02-25':['ピエール＝オーギュスト・ルノワール','ジョージ・ハリスン','ティア・レオーニ','寺脇康文','森久保祥太郎','最上もが','五条悟','嘴平伊之助','アルミン・アルレルト','トラファルガー・ロー'],
+  '02-26':['ヴィクトル・ユーゴー','ジョニー・キャッシュ','エリカ・バドゥ','三浦知良','桑田佳祐','藤本美貴','煉獄杏寿郎','ロロノア・ゾロ','リヴァイ','ベジータ'],
+  '02-27':['エリザベス・テイラー','ジョアン・ベネット','アダム・ボールドウィン','徳永英明','富野由悠季','新沼謙治','竈門炭治郎','うちはサスケ','エレン・イェーガー','赤司征十郎'],
+  '02-28':['ミケランジェロ','ブライアン・ジョーンズ','ジェイソン・アルディーン','田原俊彦','菊川怜','芳根京子','我妻善逸','トラファルガー・ロー','キルア＝ゾルディック','夜神月'],
+  '02-29':['ジョアキーノ・ロッシーニ','ハーマン・ホレリス','デニス・ファリーナ','飯島直子','峰竜太','赤川次郎','冨岡義勇','ミカサ・アッカーマン','サンジ','五条悟'],
+  '03-01':['野川さくら','中山美穂','エミ・マイヤー','斉藤秀翼','音無さやか','野本かりあ','西川弘志','水原ゆき','平沢麗奈','美波わかな','中津留章仁','成田梨紗','大野真緒','床田寛樹','三浦弦太','李俊龍','ウォノ','Newspeak','MeloMance','KnightA-騎士A-'],
+  '03-02':['トン・ニノ','浅野愛子','島崎和歌子','佐藤史果','伊澤麻璃也','岡本菜摘','水萌みず','亜里沙','秋田真琴','藤崎直','前田利恵','千葉れみ','小倉星羅','小川千菜美','小林麗菜','早川諒','松山友紀','宮内龍汰','イ・ホンギ','ウォンビン','キム・ダヨン','川尻蓮','桃鈴ねね'],
+  '03-03':['川島海荷','中野公美子','ムラタメグミ','永井裕子','影山一郎','山口桃子','吉沢明歩','荒井萌','坂口杏里','岡野洋祐','権田修一','猶本光','有永一生','ソン・ユリ','パク・チョロン','ユジン','キム・ボラ','神楽坂淳','柴田柚菜','花咲みやび'],
+  '03-04':['真崎ゆか','笹峯愛','関口愛美','田口華','藤井梨央','小林弥生','中村蒼','相楽樹','中村世渚','細田善彦','牧野翔矢','山岡哲也','セリン','TOMORROW X TOGETHER','shela'],
+  '03-05':['テディ','引田香織','矢野妃菜喜','山口茜','松山ケンイチ','忍成修吾','山田まりや','山本一輝','志尊淳','後藤駿太','田中耀飛','永井謙佑','イェリ','杉山愛佳','鈴木絢音','さくらみこ'],
+  '03-06':['嗣永桃子','有村竜太朗','小泉真也','ベッキー','南壽あさ子','松下洸平','中島礼香','時田愛梨','七海薫子','嘉門洋子','大森拓郎','岩田剛典','山根和馬','西野勇士','青木亮太','チョア'],
+  '03-07':['間宮梨花','はねだえりか','菊池風磨','羽賀朱音','田野優花','永山絢斗','山川恵里佳','矢作穂香','姫野昂志','櫻井敦司','チェ・ジョンフン','イム・ヒョンシク','IRyS'],
+  '03-08':['須藤元気','桜井和寿','佐武宇綺','松井珠理奈','山口乃々華','立花彩野','藤澤ノリマサ','増田俊樹','橋本大翔','愛川あやの','和田桜子','竹内実生','内田讓','前田知恵','原愛実','山崎裕太','カン・ヒョンホ','ユン・ジソン','チェ・ウンジョン','小嶋菜月','髙地優吾','天宮こころ'],
+  '03-09':['西尾悦子','カノン','千葉雄大','水谷瞬','テヨン','チュ・ハンニョン','ソ・スジン','チョン・ソミ','イ・ウンジュ','加藤るみ','稲熊ひな','SUGA'],
+  '03-10':['藤井隆','米津玄師','杉浦太陽','永尾まりや','高橋光臣','篠原愛実','川本まゆ','廣井ゆう','斉藤みのり','広瀬仁美','高橋理','ミル','プニエル','林美澪'],
+  '03-11':['土屋アンナ','東山奈央','ピコ','滝ありさ','高木延秀','篠田麻里子','ささの友間','児玉真菜','川口翔子','新山のぞみ','菊池涼介','三浦伊織','西舘勇陽','鈴木研一','中澤日菜子','安田叶'],
+  '03-12':['椎名へきる','ユースケ・サンタマリア','小田さくら','小野真弓','ØMI','我那覇美奈','斎藤千和','大塚千弘','坂田将人','有吉優樹','吉住晴斗','西森正明','ダイアモンド☆ユカイ','江崎ひかる','アーニャ・メルフィッサ'],
+  '03-13':['中島健人','羽多野渉','南里侑香','小渕健太郎','向井太一','五十嵐玲央','大東駿介','夏目鈴','星野大地','佐藤輝明','イライ','クォン・ナラ','エル','ボムギュ','スミン','矢作有紀奈','片岡成美'],
+  '03-14':['出口陽','姿月あさと','仲村みう','磯貝龍虎','青木崇高','岡田絵里香','酒井高徳','山崎亮平','高田一憲','ムン・ヒジュン','行天優莉奈','谷口愛理','坂井新奈','オーロ・クロニー'],
+  '03-15':['北乃きい','梅田悠','豊田萌絵','大谷映美里','有安杏果','渋谷桃子','渋江譲二','かとうかな子','マイコ','上尾野辺めぐみ','田中舜','ユギョン','ジンジン','仲村和泉','博衣こより','根本凪'],
+  '03-16':['工藤晴香','野島健児','坂上庸介','高野千恵','花谷麻妃','永田杏奈','咲妃みゆ','濵口遥大','土岐田洸平','田口泰士','高丘陽平','北川莉央'],
+  '03-17':['藤森慎吾','神谷えり','早見あかり','玉森裕太','髙木俊','冨手麻妙','内村賢介','香川真司','笠原祥太郎','スユン','石田千穂','中西アルノ'],
+  '03-18':['西野カナ','上西恵','黒田俊介','渡部真一','寺田拓哉','坂田めぐみ','吉井怜','守田菜生','松本華奈','岩渕真奈','立仙愛理','ベスティア・ゼータ','Annabel'],
+  '03-19':['市川実和子','下川みくに','宮脇咲良','後藤浩輝','矢野奨吾','佐藤翔','小林豊','宇野愛海','金丸将也','田城飛翔','ジュヨン','桜もこ','ソン・ウンソク','犬塚あさな'],
+  '03-20':['大石恵','岸本梓','井上正大','遠藤雄弥','野村佑香','今井仁美','吉川あいみ','大谷龍太','清武功暉','湊あかね','オク・チュヒョン','サンドゥル','ヒョンジン','梅田綾乃','小久保柚乃','不知火フレア','真柴あずき'],
+  '03-21':['佐藤健','東山義久','水沢エレナ','加藤良輔','秋吉亮','金光栄大','イ・ジン','ユンサナ','アントン','三島ゆたか','森杏奈','セレス・ファウナ','山猿','音尾琢真'],
+  '03-22':['土岐麻子','橋本美加子','大石参月','田辺修斗','島村幸大','服部美穂','鈴木博志','ハ・ソンウン','永野恵','八木愛月','川後陽菜','星街すいせい','ミライアカリ'],
+  '03-23':['千賀健永','山本琴乃','夢輝のあ','黒木あすか','諸星あずな','安藤咲桜','紗倉まな','小池城太朗','川口翔平','平田良介','遠藤一星','宇賀神友弥','ロンジュン','佐藤楓','武元唯衣'],
+  '03-24':['綾瀬はるか','持田香織','丹下桜','村上雄信','青木瑠璃子','竜星涼','初音映莉子','大津祐樹','パク・ボム','中野愛理','山田麻莉奈','鈴木裕乃'],
+  '03-25':['はいだしょうこ','Machico','中里アミ','佐藤峻','原田善友','小山翔平','西川史礁','小深田大地','宮舘涼太','miko','小谷嘉一'],
+  '03-26':['渡辺麻友','髙木雄也','清水愛','後藤久美子','相川茉穂','松本嘉菜','三好康児','ソン・ホヨン','シウミン','キム・キョンジュ','ハンドン','ミレ','チュ・ミジョン','中林里茉'],
+  '03-27':['悠木碧','嶋村瞳','知花くらら','南翔太','八代目市川染五郎','内田篤人','リサ','ヨウォン','イ・ジフン','永野芹佳','鶴崎仁香','弦月藤士郎'],
+  '03-28':['岸尾だいすけ','いとうかなこ','島津亜矢','高橋龍輝','小林彩子','高宮千夏','武子直輝','吉川麻衣子','大平真嗣','安田良子','根本慎太郎','ビキ','イ・ホウォン','ジャクソン','出口恵理','要ゆうじ'],
+  '03-29':['里田まい','滝沢秀明','松澤由美','傳田真央','篠原ともえ','高田由香','屋宜照悟','河野大樹','箭内翔太','ユ・ソヨン','ソルリ','アイリーン','江籠裕奈','工藤理子','深川麻衣','柏木ひなた'],
+  '03-30':['川澄綾子','小松未歩','新谷良子','岡田淳一','96猫','島崎遥香','マリウス葉','橋爪大佑','イ・ギグァン','チャウヌ','ソン・ミンホ','宮里莉羅','村瀬紗英','女王蜂'],
+  '03-31':['坂本真綾','宮迫博之','日高慎二','バン・ヨングク','キム・ボヒョン','ク・ジュンフェ','山崎将平','倉内沙莉','大川雅大','山岸門人','斎藤幸乃','平川蓮','根本悠楓'],
 };
 
 (function(){
-  const daysEl = document.getElementById('calDays');
+  const MONTHS = [
+    {mm:'01', label:'1月', days:31},
+    {mm:'02', label:'2月', days:29},
+    {mm:'03', label:'3月', days:31},
+  ];
+  const tabsEl  = document.getElementById('calMonthTabs');
+  const daysEl  = document.getElementById('calDays');
   const namesEl = document.getElementById('calNames');
   let activeDay = null;
-  for (let d = 1; d <= 31; d++) {
-    const key = '01-' + String(d).padStart(2,'0');
-    if (!BIRTHDAY_DB[key]) continue;
-    const btn = document.createElement('button');
-    btn.className = 'cal-day-btn';
-    btn.textContent = d + '日';
-    btn.onclick = () => {
-      if (activeDay) activeDay.classList.remove('active');
-      btn.classList.add('active');
-      activeDay = btn;
-      namesEl.innerHTML = BIRTHDAY_DB[key].map(n =>
-        `<span class="cal-name-tag" onclick="selectFromCal('${n.replace(/'/g,"\\'")}','1990-${key}')">${n}</span>`
-      ).join('');
-    };
-    daysEl.appendChild(btn);
+  let activeMonthBtn = null;
+
+  function renderDays(mm, days) {
+    daysEl.innerHTML = '';
+    namesEl.innerHTML = '<span class="cal-empty">日付を選んでください</span>';
+    activeDay = null;
+    for (let d = 1; d <= days; d++) {
+      const key = mm + '-' + String(d).padStart(2,'0');
+      if (!BIRTHDAY_DB[key]) continue;
+      const btn = document.createElement('button');
+      btn.className = 'cal-day-btn';
+      btn.textContent = d + '日';
+      btn.onclick = () => {
+        if (activeDay) activeDay.classList.remove('active');
+        btn.classList.add('active');
+        activeDay = btn;
+        namesEl.innerHTML = '';
+        BIRTHDAY_DB[key].forEach(n => {
+          const s = document.createElement('span');
+          s.className = 'cal-name-tag';
+          s.textContent = n;
+          s.onclick = () => selectFromCal(n, key);
+          namesEl.appendChild(s);
+        });
+      };
+      daysEl.appendChild(btn);
+    }
   }
+
+  MONTHS.forEach((m, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'cal-month-btn' + (i === 0 ? ' active' : '');
+    btn.textContent = m.label;
+    btn.onclick = () => {
+      if (activeMonthBtn) activeMonthBtn.classList.remove('active');
+      btn.classList.add('active');
+      activeMonthBtn = btn;
+      renderDays(m.mm, m.days);
+    };
+    tabsEl.appendChild(btn);
+    if (i === 0) activeMonthBtn = btn;
+  });
+
+  renderDays(MONTHS[0].mm, MONTHS[0].days);
 })();
 
-function selectFromCal(name, birth) {
-  document.getElementById('partner_birth').value = birth;
+function selectFromCal(name, mmdd) {
+  // mmdd = '01-15' など
+  const parts = mmdd.split('-');
+  document.getElementById('partner_month').value = parseInt(parts[0]);
+  document.getElementById('partner_day').value = parseInt(parts[1]);
   document.getElementById('partner_name').value = name;
   document.getElementById('partner_birth').closest('form').scrollIntoView({behavior:'smooth', block:'center'});
 }
@@ -684,7 +812,12 @@ function filterCelebs() {
 }
 
 function selectCeleb(birth, name) {
-  document.getElementById('partner_birth').value = birth;
+  // birth = 'YYYY-MM-DD' or 'MM-DD'
+  const parts = birth.split('-');
+  const m = parts.length === 3 ? parseInt(parts[1]) : parseInt(parts[0]);
+  const d = parts.length === 3 ? parseInt(parts[2]) : parseInt(parts[1]);
+  document.getElementById('partner_month').value = m;
+  document.getElementById('partner_day').value = d;
   document.getElementById('partner_name').value = name;
   document.getElementById('partner_birth').closest('form').scrollIntoView({behavior:'smooth', block:'center'});
 }
