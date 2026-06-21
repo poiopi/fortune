@@ -343,7 +343,7 @@ function drawChar(key,dx,dy,dir='down'){
   else if(dir==='up')    col=sp.c+3;
   // down: col=sp.c (default)
   const sx=col*CSW, sy=sp.r*ROW_H; // 行オフセットはROW_H基準
-  const dw=Math.round(TS*0.8), dh=Math.round(TS*1.6); // 縦横比をCSW:CSH≈1:2に合わせる
+  const dw=Math.round(TS*1.2), dh=Math.round(TS*1.6);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
   ctx.drawImage(imgChar,sx,sy,CSW,CSH,ddx,ddy,dw,dh);
 }
