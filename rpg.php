@@ -349,40 +349,6 @@ function passable(x,y){
   return true;
 }
 
-// ── 日替わり配置（通行可能タイルのみ）────────────────
-(function placeActors(){
-  // 日付シード（毎日変わる）
-  const d=new Date();
-  let _s=(d.getFullYear()*10000+d.getMonth()*100+d.getDate())*2654435761>>>0;
-  const rng=()=>{_s=Math.imul(_s^(_s>>>16),0x45d9f3b)>>>0;return _s/4294967296};
-
-  // 通行可能な内部タイルを列挙（境界・神父位置付近を除く）
-  const pool=[];
-  for(let y=1;y<MH-1;y++)
-    for(let x=1;x<MW-1;x++)
-      if(passable(x,y)&&!(x===13&&y===13)) pool.push([x,y]);
-
-  // フィッシャー–イェーツシャッフル
-  for(let i=pool.length-1;i>0;i--){
-    const j=0|rng()*(i+1);
-    [pool[i],pool[j]]=[pool[j],pool[i]];
-  }
-
-  // 最低距離を保ちながら配置
-  const used=[];
-  const pick=()=>{
-    for(const [x,y] of pool){
-      if(used.every(([ux,uy])=>Math.abs(ux-x)+Math.abs(uy-y)>=3)){
-        used.push([x,y]); return{x,y};
-      }
-    }
-    return{x:9,y:9}; // フォールバック
-  };
-
-  // 神父以外のNPCとアイテムに座標を割り当て
-  NPCS.forEach(n=>{if(!n.priest){const p=pick();n.x=p.x;n.y=p.y}});
-  IDEF.forEach(it=>{const p=pick();it.x=p.x;it.y=p.y});
-})();
 
 // ════════════════════════════════════════════
 // NPCs
@@ -461,6 +427,27 @@ const IDEF=[
   {id:'c2',type:'crystal',emoji:'💎',x:0,y:0,name:'魔法石', desc:'占い精度UP'},
   {id:'s1',type:'scroll', emoji:'📜',x:0,y:0,name:'謎の巻物',desc:'神父がより詳しく占う'},
 ];
+
+// ── 日替わり配置（通行可能タイルのみ）──────────────
+(function placeActors(){
+  const d=new Date();
+  let _s=(d.getFullYear()*10000+d.getMonth()*100+d.getDate())*2654435761>>>0;
+  const rng=()=>{_s=Math.imul(_s^(_s>>>16),0x45d9f3b)>>>0;return _s/4294967296};
+  const pool=[];
+  for(let y=1;y<MH-1;y++)
+    for(let x=1;x<MW-1;x++)
+      if(passable(x,y)&&!(x===13&&y===13)) pool.push([x,y]);
+  for(let i=pool.length-1;i>0;i--){const j=0|rng()*(i+1);[pool[i],pool[j]]=[pool[j],pool[i]];}
+  const used=[];
+  const pick=()=>{
+    for(const[x,y] of pool){
+      if(used.every(([ux,uy])=>Math.abs(ux-x)+Math.abs(uy-y)>=3)){used.push([x,y]);return{x,y};}
+    }
+    return{x:9,y:9};
+  };
+  NPCS.forEach(n=>{if(!n.priest){const p=pick();n.x=p.x;n.y=p.y}});
+  IDEF.forEach(it=>{const p=pick();it.x=p.x;it.y=p.y});
+})();
 
 // ════════════════════════════════════════════
 // ENEMIES
