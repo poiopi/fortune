@@ -329,8 +329,8 @@ const BLDS=[
   {x:13,y:1,w:4,h:4,name:'市場',      emoji:'🏪',doorX:15,doorY:4},
   {x:3, y:6,w:3,h:6,name:'鍛冶屋',   emoji:'⚒️',doorX:4, doorY:11},
   {x:14,y:6,w:3,h:6,name:'詰所',      emoji:'🏰',doorX:15,doorY:11},
-  {x:3, y:14,w:4,h:5,name:'魔女の小屋',emoji:'🔮',doorX:5, doorY:18},
-  {x:13,y:13,w:5,h:6,name:'教会',     emoji:'⛪',doorX:15,doorY:18},
+  {x:3, y:14,w:4,h:5,name:'魔女の小屋',emoji:'🔮',doorX:5, doorY:14,church:false},
+  {x:10,y:14,w:8,h:5,name:'⛪ 教会（占いの聖地）',emoji:'⛪',doorX:13,doorY:14,church:true},
 ];
 
 // impassable set
@@ -411,7 +411,7 @@ const NPCS=[
           {t:'一緒に歌いましょう！',sc:{free:3},healMp:5}]},
      {tx:'♪ 風よ、星よ、この旅人に幸運の歌を授けよ…素敵な旅を！'}
    ]},
-  {id:'priest',name:'神父のオルフェウス',emoji:'✝️',x:10,y:16,priest:true,
+  {id:'priest',name:'神父のオルフェウス',emoji:'✝️',x:13,y:13,priest:true,
    dlg:[{tx:'よく来られた旅人よ。村の皆と十分に話したならば、星と数の占いをしましょう。'}]},
 ];
 
@@ -503,51 +503,97 @@ function draw(){
   BLDS.forEach(b=>{
     const sx=(b.x-cx)*TS, sy=(b.y-cy)*TS;
     if(sx+b.w*TS<0||sx>VPC*TS||sy+b.h*TS<0||sy>VPR*TS) return;
-    ctx.fillStyle='#5c4a30'; ctx.fillRect(sx,sy,b.w*TS,b.h*TS);
-    ctx.fillStyle='#3d2e1a'; ctx.fillRect(sx,sy,b.w*TS,TS*1.1);
-    // door
+    if(b.church){
+      // 教会は特別デザイン（石造り・大きな十字架）
+      ctx.fillStyle='#4a3d6e'; ctx.fillRect(sx,sy,b.w*TS,b.h*TS);
+      ctx.fillStyle='#2e2448'; ctx.fillRect(sx,sy,b.w*TS,TS*1.2);
+      // 光る縁取り
+      ctx.strokeStyle='rgba(201,168,76,.6)'; ctx.lineWidth=3;
+      ctx.strokeRect(sx+1,sy+1,b.w*TS-2,b.h*TS-2);
+      ctx.lineWidth=1;
+      // 大きな⛪アイコン
+      ctx.font=Math.round(TS*1.4)+'px serif';
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText('⛪',sx+b.w*TS/2,sy+b.h*TS/2);
+      // 名前ラベル
+      ctx.font='bold '+Math.round(TS*.26)+'px DotGothic16,monospace';
+      ctx.fillStyle='#e8c96a'; ctx.textAlign='center'; ctx.textBaseline='top';
+      ctx.fillText('⛪ 教会（占いの聖地）',sx+b.w*TS/2,sy+TS*1.3);
+    } else {
+      ctx.fillStyle='#5c4a30'; ctx.fillRect(sx,sy,b.w*TS,b.h*TS);
+      ctx.fillStyle='#3d2e1a'; ctx.fillRect(sx,sy,b.w*TS,TS*1.1);
+      ctx.font=Math.round(TS*.55)+'px serif';
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText(b.emoji,sx+b.w*TS/2,sy+TS*.6);
+      ctx.font=Math.round(TS*.23)+'px DotGothic16,monospace';
+      ctx.fillStyle='#e8d08a'; ctx.textAlign='center'; ctx.textBaseline='top';
+      ctx.fillText(b.name,sx+b.w*TS/2,sy+TS+2);
+    }
+    // 扉（共通）
     const dx=(b.doorX-cx)*TS, dy=(b.doorY-cy)*TS;
-    ctx.fillStyle='#7a5a14';
-    ctx.fillRect(dx+TS*.2,dy+TS*.1,TS*.6,TS*.85);
-    // icon
-    ctx.font=Math.round(TS*.55)+'px serif';
-    ctx.textAlign='center'; ctx.textBaseline='middle';
-    ctx.fillText(b.emoji,sx+b.w*TS/2,sy+TS*.6);
-    // name
-    ctx.font=Math.round(TS*.23)+'px DotGothic16,monospace';
-    ctx.fillStyle='#e8d08a'; ctx.textAlign='center'; ctx.textBaseline='top';
-    ctx.fillText(b.name,sx+b.w*TS/2,sy+TS+2);
+    ctx.fillStyle=b.church?'#c9a84c':'#7a5a14';
+    ctx.fillRect(dx+TS*.2,dy+(b.church?0:TS*.1),TS*.6,b.church?TS:TS*.85);
   });
 
-  // items
+  // items（金色の台座付き・明るく目立つ）
   IDEF.forEach(it=>{
     if(picked.has(it.id)) return;
     const sx=(it.x-cx)*TS, sy=(it.y-cy)*TS;
     if(sx<-TS||sx>=VPC*TS||sy<-TS||sy>=VPR*TS) return;
-    ctx.shadowColor='#e8c96a'; ctx.shadowBlur=10;
-    ctx.font=Math.round(TS*.5)+'px serif';
+    // 金色の台座
+    ctx.fillStyle='rgba(201,168,76,.35)';
+    ctx.beginPath();
+    ctx.arc(sx+TS/2,sy+TS/2,TS*.38,0,Math.PI*2);
+    ctx.fill();
+    // 輝き
+    ctx.shadowColor='#e8c96a'; ctx.shadowBlur=14;
+    ctx.font=Math.round(TS*.55)+'px serif';
     ctx.textAlign='center'; ctx.textBaseline='middle';
     ctx.fillText(it.emoji,sx+TS/2,sy+TS/2);
     ctx.shadowBlur=0;
+    // 「アイテム」ラベル
+    ctx.font=Math.round(TS*.2)+'px DotGothic16,monospace';
+    ctx.fillStyle='#e8c96a'; ctx.textAlign='center'; ctx.textBaseline='top';
+    ctx.fillText('★アイテム',sx+TS/2,sy+TS*.72);
   });
 
-  // NPCs
+  // NPCs（紫の背景・大きめ・名前表示）
   NPCS.forEach(n=>{
     const sx=(n.x-cx)*TS, sy=(n.y-cy)*TS;
     if(sx<-TS||sx>=VPC*TS||sy<-TS||sy>=VPR*TS) return;
-    if(visited.has(n.id)){
-      ctx.fillStyle='rgba(78,205,196,.2)';
-      ctx.fillRect(sx+2,sy+2,TS-4,TS-4);
-    }
-    ctx.font=Math.round(TS*.62)+'px serif';
+    // 背景（未訪問=紫、訪問済み=ティール）
+    ctx.fillStyle=visited.has(n.id)?'rgba(78,205,196,.35)':'rgba(155,114,239,.35)';
+    ctx.fillRect(sx+3,sy+3,TS-6,TS-6);
+    // 枠線
+    ctx.strokeStyle=visited.has(n.id)?'rgba(78,205,196,.7)':'rgba(155,114,239,.7)';
+    ctx.strokeRect(sx+3,sy+3,TS-6,TS-6);
+    // 大きめ絵文字
+    ctx.font=Math.round(TS*.65)+'px serif';
     ctx.textAlign='center'; ctx.textBaseline='middle';
-    ctx.fillText(n.emoji,sx+TS/2,sy+TS/2);
+    ctx.fillText(n.emoji,sx+TS/2,sy+TS*.45);
+    // 名前
+    ctx.font=Math.round(TS*.18)+'px DotGothic16,monospace';
+    ctx.fillStyle=visited.has(n.id)?'#4ecdc4':'#c4a8f5';
+    ctx.textAlign='center'; ctx.textBaseline='bottom';
+    ctx.fillText(n.name,sx+TS/2,sy+TS-.5);
+    // 隣接時の「！」
     if(adj(n.x,n.y)){
-      ctx.font=Math.round(TS*.32)+'px DotGothic16,monospace';
+      ctx.font=Math.round(TS*.38)+'px DotGothic16,monospace';
       ctx.fillStyle='#e8c96a'; ctx.textAlign='center'; ctx.textBaseline='bottom';
-      ctx.fillText('！',sx+TS/2,sy);
+      ctx.shadowColor='#e8c96a'; ctx.shadowBlur=8;
+      ctx.fillText('！',sx+TS/2,sy-2);
+      ctx.shadowBlur=0;
     }
   });
+
+  // 5人達成後の教会誘導メッセージ
+  if(visited.size>=5 && phase==='explore'){
+    ctx.fillStyle='rgba(201,168,76,.92)';
+    ctx.fillRect(4,4,VPC*TS-8,26);
+    ctx.font='bold '+Math.round(TS*.28)+'px DotGothic16,monospace';
+    ctx.fillStyle='#1a1000'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText('⛪ 南の教会へ行って神父に話しかけよう！',VPC*TS/2,17);
+  }
 }
 
 function adj(x,y){
