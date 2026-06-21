@@ -201,7 +201,8 @@ footer a:hover{color:var(--gold)}
 
     <div class="game-viewport" id="gvp">
       <canvas id="gc"></canvas>
-      <div class="player-pin" id="pin">🧙</div>
+      <div class="player-pin" id="pin" style="font-size:0">🧙</div>
+      <canvas id="playerCanvas" style="position:absolute;pointer-events:none;z-index:6;display:none"></canvas>
       <button class="talk-btn-canvas" id="talkBtn" onclick="talk()">💬 話す / Space</button>
     </div>
 
@@ -294,6 +295,67 @@ footer a:hover{color:var(--gold)}
 </footer>
 
 <script>
+// ════════════════════════════════════════════
+// SPRITES
+// ════════════════════════════════════════════
+// タイルセット内の1タイルサイズ(px) ← ずれたらここを調整
+const TSS=70;
+// キャラシートの1コマサイズ(px)
+const CSW=63, CSH=105;
+
+const imgTile=new Image(), imgChar=new Image();
+imgTile.src='/tileset.png'; imgChar.src='/characters.png';
+let _imgReady=0;
+imgTile.onload=imgChar.onload=()=>{if(++_imgReady>=2)draw();};
+imgTile.onerror=imgChar.onerror=()=>{_imgReady=99;draw();};
+
+// タイルセット座標 [col,row] — ずれたら数値を±1して調整
+const TSPR={
+  [0/*G*/]:[0,0],   // 草
+  [1/*P*/]:[0,3],   // 石畳/道
+  [3/*W*/]:[3,3],   // 水
+};
+// 木はタイルセットの左下エリアから
+const TREE_SP=[0,7];
+
+// キャラクター座標 [col,row] — ずれたら数値を調整
+const CSPR={
+  player:  {c:12,r:2},  // 青騎士
+  grandma: {c:12,r:1},  // 白ローブ
+  smith:   {c:0, r:0},  // 茶色戦士
+  witch:   {c:0, r:4},  // 緑エルフ
+  merchant:{c:0, r:5},  // 旅人
+  knight:  {c:12,r:3},  // 黒騎士
+  healer:  {c:16,r:4},  // ピンク
+  bard:    {c:0, r:1},  // 赤髪
+  priest:  {c:16,r:1},  // 白ローブ神父
+  thug:    {c:0, r:6},  // ゴブリン
+  guardian:{c:8, r:6},  // 悪魔
+  slime:   {c:15,r:6},  // スライム
+};
+
+function drawTile(type,dx,dy){
+  const sp=TSPR[type];
+  if(_imgReady>=2&&sp){
+    ctx.drawImage(imgTile,sp[0]*TSS,sp[1]*TSS,TSS,TSS,dx,dy,TS,TS);
+  } else {
+    const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
+    ctx.fillStyle=TCOL[type]||'#3d6b3e';
+    ctx.fillRect(dx,dy,TS,TS);
+  }
+}
+
+function drawChar(key,dx,dy){
+  const sp=CSPR[key];
+  if(_imgReady>=2&&sp){
+    // 各キャラの正面フレーム（中央コマ）を使用
+    const sx=sp.c*CSW, sy=sp.r*CSH;
+    const dh=Math.round(TS*1.4), dw=Math.round(TS*0.9);
+    ctx.drawImage(imgChar,sx,sy,CSW,CSH,dx+(TS-dw)/2,dy-dh+TS,dw,dh);
+  }
+  // スプライト未ロード時は絵文字で代用（既存コードが描く）
+}
+
 // ════════════════════════════════════════════
 // MAP & CONSTANTS
 // ════════════════════════════════════════════
@@ -532,8 +594,6 @@ function cam(){
   return{cx,cy};
 }
 
-const TCOL={[G]:'#3d6b3e',[P]:'#b0894e',[T]:'#2b4a26',[W]:'#2a5caa'};
-
 function draw(){
   ctx.clearRect(0,0,cv.width,cv.height);
   const{cx,cy}=cam();
@@ -544,14 +604,23 @@ function draw(){
       const mx=c+cx,my=r+cy;
       if(mx<0||my<0||mx>=MW||my>=MH) continue;
       const t=MAP[my][mx];
-      ctx.fillStyle=TCOL[t]||'#3d6b3e';
-      ctx.fillRect(c*TS,r*TS,TS,TS);
-      ctx.strokeStyle='rgba(0,0,0,.12)';
-      ctx.strokeRect(c*TS,r*TS,TS,TS);
       if(t===T){
-        ctx.font=Math.round(TS*.6)+'px serif';
-        ctx.textAlign='center'; ctx.textBaseline='middle';
-        ctx.fillText('🌲',c*TS+TS/2,r*TS+TS/2);
+        // 木は草の上に重ねて描く
+        drawTile(G,c*TS,r*TS);
+        if(_imgReady>=2){
+          ctx.drawImage(imgTile,TREE_SP[0]*TSS,TREE_SP[1]*TSS,TSS,TSS,
+            c*TS-4,r*TS-8,TS+8,TS+8);
+        } else {
+          ctx.font=Math.round(TS*.6)+'px serif';
+          ctx.textAlign='center'; ctx.textBaseline='middle';
+          ctx.fillText('🌲',c*TS+TS/2,r*TS+TS/2);
+        }
+      } else {
+        drawTile(t,c*TS,r*TS);
+        if(_imgReady<2){
+          ctx.strokeStyle='rgba(0,0,0,.12)';
+          ctx.strokeRect(c*TS,r*TS,TS,TS);
+        }
       }
     }
   }
@@ -624,10 +693,14 @@ function draw(){
     // 枠線
     ctx.strokeStyle=visited.has(n.id)?'rgba(78,205,196,.7)':'rgba(155,114,239,.7)';
     ctx.strokeRect(sx+3,sy+3,TS-6,TS-6);
-    // 大きめ絵文字
-    ctx.font=Math.round(TS*.65)+'px serif';
-    ctx.textAlign='center'; ctx.textBaseline='middle';
-    ctx.fillText(n.emoji,sx+TS/2,sy+TS*.45);
+    // キャラクタースプライト（またはフォールバック絵文字）
+    if(_imgReady>=2){
+      drawChar(n.id,sx,sy);
+    } else {
+      ctx.font=Math.round(TS*.65)+'px serif';
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText(n.emoji,sx+TS/2,sy+TS*.45);
+    }
     // 名前
     ctx.font=Math.round(TS*.18)+'px DotGothic16,monospace';
     ctx.fillStyle=visited.has(n.id)?'#4ecdc4':'#c4a8f5';
@@ -645,6 +718,19 @@ function draw(){
 
   // プレイヤーピン位置を更新
   updatePin();
+
+  // プレイヤースプライト描画
+  if(_imgReady>=2){
+    const{cx,cy}=cam();
+    const px=(pl.x-cx)*TS, py=(pl.y-cy)*TS;
+    const dh=Math.round(TS*1.4), dw=Math.round(TS*0.9);
+    const sp=CSPR.player;
+    ctx.drawImage(imgChar,sp.c*CSW,sp.r*CSH,CSW,CSH,
+      px+(TS-dw)/2, py-dh+TS, dw, dh);
+    pin.style.fontSize='0'; // 絵文字を隠す
+  } else {
+    pin.style.fontSize=''; // 絵文字を表示
+  }
 
   // 5人達成後の教会誘導メッセージ
   if(visited.size>=5 && phase==='explore'){
