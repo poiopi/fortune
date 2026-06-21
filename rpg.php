@@ -179,6 +179,7 @@ footer a:hover{color:var(--gold)}
       <a href="/kyusei.php">九星気学</a>
       RPG占い
       <a href="/aisho.php">相性診断</a>
+      <a href="/zense">前世診断</a>
     </nav>
     <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
@@ -191,6 +192,7 @@ footer a:hover{color:var(--gold)}
       <a href="/kyusei.php">九星気学</a>
       <span>RPG占い</span>
       <a href="/aisho.php">相性診断</a>
+      <a href="/zense">前世診断</a>
     </div>
   </div>
 </header>
@@ -324,6 +326,7 @@ footer a:hover{color:var(--gold)}
   <a href="/kyusei.php">九星気学</a> &nbsp;/&nbsp;
   RPG占い &nbsp;/&nbsp;
   <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
+  <a href="/zense">前世診断</a> &nbsp;/&nbsp;
   <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact.php">お問い合わせ</a><br>
