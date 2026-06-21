@@ -301,21 +301,38 @@ if($ym>0&&$yd>0&&$pm>0&&$pd>0){
     $marriageScore=min(5,max(1,$base+$bonus+($seed%2)-1));
     $loverScore   =min(5,max(1,$base+(($seed>>3)%2)+$bonus-1+($yZ['el']!==$pZ['el']?1:0)));
 
-    $nL=count($DATE_LOCATIONS); $nT=count($DATE_TYPES);
-    $l1=$seed%$nL; $t1=($seed>>8)%$nT;
-    $l2=($seed>>4)%$nL; if($l2===$l1)$l2=($l2+1)%$nL;
-    $t2=($seed>>12)%$nT; if($t2===$t1)$t2=($t2+1)%$nT;
+    // 重み付き場所選択（70%日常 / 20%ギャグ / 10%海外）
+    $wloc=function(int $s) use($DATE_LOC_DAILY,$DATE_LOC_GAG,$DATE_LOC_OVERSEAS):string{
+      $cat=abs($s)%10;
+      if($cat===0) return $DATE_LOC_OVERSEAS[abs($s>>4)%count($DATE_LOC_OVERSEAS)];
+      if($cat<=2)  return $DATE_LOC_GAG[abs($s>>4)%count($DATE_LOC_GAG)];
+      return $DATE_LOC_DAILY[abs($s>>4)%count($DATE_LOC_DAILY)];
+    };
+    $nT=count($DATE_TYPES);
+    $loc1=$wloc($seed);
+    $loc2=$wloc($seed*1013+7); if($loc2===$loc1) $loc2=$wloc($seed*1013+77);
+    $t1=$seed%$nT;
+    $t2=($seed>>12)%$nT; if($t2===$t1) $t2=($t2+1)%$nT;
     $dateSpot=[
-      ['spot'=>$DATE_LOCATIONS[$l1].$DATE_TYPES[$t1]['type'],'desc'=>$DATE_TYPES[$t1]['desc']],
-      ['spot'=>$DATE_LOCATIONS[$l2].$DATE_TYPES[$t2]['type'],'desc'=>$DATE_TYPES[$t2]['desc']],
+      ['spot'=>$loc1.$DATE_TYPES[$t1]['type'],'desc'=>$DATE_TYPES[$t1]['desc']],
+      ['spot'=>$loc2.$DATE_TYPES[$t2]['type'],'desc'=>$DATE_TYPES[$t2]['desc']],
     ];
-    $nPx=count($PRESENT_PREFIX); $nPi=count($PRESENT_ALL);
-    $px1=($seed>>16)%$nPx; $pi1=($seed>>20)%$nPi;
-    $px2=($seed>>24)%$nPx; if($px2===$px1)$px2=($px2+1)%$nPx;
-    $pi2=($seed>>28)%$nPi; if($pi2===$pi1)$pi2=($pi2+1)%$nPi;
+
+    // 重み付きプレゼント接頭語選択（70%日常 / 20%ギャグ / 10%特別）
+    $wpfx=function(int $s) use($PRESENT_PFX_DAILY,$PRESENT_PFX_GAG,$PRESENT_PFX_SPECIAL):string{
+      $cat=abs($s)%10;
+      if($cat===0) return $PRESENT_PFX_SPECIAL[abs($s>>4)%count($PRESENT_PFX_SPECIAL)];
+      if($cat<=2)  return $PRESENT_PFX_GAG[abs($s>>4)%count($PRESENT_PFX_GAG)];
+      return $PRESENT_PFX_DAILY[abs($s>>4)%count($PRESENT_PFX_DAILY)];
+    };
+    $nPi=count($PRESENT_ALL);
+    $pfx1=$wpfx($seed*997+3);
+    $pfx2=$wpfx($seed*983+11); if($pfx2===$pfx1) $pfx2=$wpfx($seed*983+111);
+    $pi1=($seed>>16)%$nPi;
+    $pi2=($seed>>20)%$nPi; if($pi2===$pi1) $pi2=($pi2+1)%$nPi;
     $present=[
-      ['item'=>$PRESENT_PREFIX[$px1].$PRESENT_ALL[$pi1]['item'],'why'=>$PRESENT_ALL[$pi1]['why']],
-      ['item'=>$PRESENT_PREFIX[$px2].$PRESENT_ALL[$pi2]['item'],'why'=>$PRESENT_ALL[$pi2]['why']],
+      ['item'=>$pfx1.$PRESENT_ALL[$pi1]['item'],'why'=>$PRESENT_ALL[$pi1]['why']],
+      ['item'=>$pfx2.$PRESENT_ALL[$pi2]['item'],'why'=>$PRESENT_ALL[$pi2]['why']],
     ];
 
     $confess='「'.
