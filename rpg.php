@@ -681,15 +681,16 @@ function draw(){
     ctx.strokeStyle=visited.has(n.id)?'rgba(78,205,196,.7)':'rgba(155,114,239,.7)';
     ctx.strokeRect(sx+3,sy+3,TS-6,TS-6);
     // キャラクタースプライト（またはフォールバック絵文字）
-    if(_imgReady>=2){
-      // NPC向き: 4方向対応。プレイヤーの方を向く
-      let nDir='down';
-      if(adj(n.x,n.y)){
-        if(pl.x<n.x)      nDir='left';
-        else if(pl.x>n.x) nDir='right';
-        else if(pl.y<n.y) nDir='up';
-        // pl.y>n.y の場合は down(前向き)のまま
-      }
+    // NPC向き: 4方向対応。プレイヤーの方を向く
+    let nDir='down';
+    if(adj(n.x,n.y)){
+      if(pl.x<n.x)      nDir='left';
+      else if(pl.x>n.x) nDir='right';
+      else if(pl.y<n.y) nDir='up';
+    }
+    const nFileDir=DIR_MAP[nDir]||'front';
+    const nImg=CHAR_IMGS[n.id]?.[nFileDir];
+    if(nImg&&nImg.complete&&nImg.naturalWidth>0){
       drawChar(n.id,sx,sy,nDir);
     } else {
       ctx.font=Math.round(TS*.65)+'px serif';
@@ -715,7 +716,9 @@ function draw(){
   updatePin();
 
   // プレイヤースプライト描画
-  if(_imgReady>=2){
+  const plFileDir=DIR_MAP[pl.dir]||'front';
+  const plImg=CHAR_IMGS['player']?.[plFileDir];
+  if(plImg&&plImg.complete&&plImg.naturalWidth>0){
     const{cx,cy}=cam();
     const px=(pl.x-cx)*TS, py=(pl.y-cy)*TS;
     drawChar('player',px,py,pl.dir);
