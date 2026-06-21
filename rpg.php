@@ -338,9 +338,9 @@ function drawChar(key,dx,dy,dir='down'){
   const sp=CSPR[key];
   if(!(_imgReady>=2&&sp)) return;
   let col=sp.c, flipH=false;
-  if(dir==='left')  col=sp.c+1;
-  else if(dir==='up')    col=sp.c+2;
-  else if(dir==='right') col=sp.c+3;
+  if(dir==='left')       col=sp.c+1;
+  else if(dir==='right') col=sp.c+2;
+  else if(dir==='up')    col=sp.c+3;
   // down: col=sp.c (default)
   const sx=col*CSW, sy=sp.r*ROW_H; // 行オフセットはROW_H基準
   const dw=Math.round(TS*0.8), dh=Math.round(TS*1.6); // 縦横比をCSW:CSH≈1:2に合わせる
