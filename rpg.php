@@ -312,7 +312,7 @@ footer a:hover{color:var(--gold)}
 // 横: 1254÷20スプライト=63px、縦: 1254÷8行=157px(行オフセット)
 // CSHはサンプリング高さ=126px（次行の頭が映り込まないよう小さめに）
 // 4方向セット: c=前(下), c+1=左, c+2=後(上), c+3=右
-const CSW=63, CSH=126, ROW_H=157;
+const CSW=58, CSH=126, ROW_H=157; // CSW小さめで隣キャラ混入を防ぐ
 
 const imgChar=new Image();
 imgChar.src='/characters.png';
@@ -350,10 +350,10 @@ function drawChar(key,dx,dy,dir='down'){
   let col=sp.c, flipH=false;
   if(dir==='left')       col=sp.c+1;
   else if(dir==='right') col=sp.c+2;
-  else if(dir==='up')    col=sp.c+3;
+  // up: 後ろ向きスプライトなし→正面(c)をそのまま使用
   // down: col=sp.c (default)
-  const sx=col*CSW, sy=sp.r*ROW_H; // 行オフセットはROW_H基準
-  const dw=Math.round(TS*1.2), dh=Math.round(TS*1.6);
+  const sx=col*CSW, sy=sp.r*ROW_H;
+  const dw=Math.round(TS*1.2), dh=Math.round(TS*1.8); // dh大きくして頭を見せる
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
   ctx.drawImage(imgChar,sx,sy,CSW,CSH,ddx,ddy,dw,dh);
 }
