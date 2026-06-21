@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Staging"
+AuthUserFile /home/users/0/boo.jp-life-fun/web/test.life-fun.net/.htpasswd
+Require valid-user
