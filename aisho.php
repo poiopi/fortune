@@ -229,10 +229,14 @@ select.form-input option{background:#1e1738;color:var(--text)}
 .celeb-tag{font-family:var(--ff-mono);font-size:.68rem;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:.3rem .75rem;color:var(--gold-lt);cursor:pointer;transition:background .15s;white-space:nowrap}
 .celeb-tag:hover{background:rgba(201,168,76,.25)}
 .celeb-tag.user-added{border-color:rgba(78,205,196,.3);background:rgba(78,205,196,.08);color:var(--teal)}
-.celeb-add{display:flex;gap:.5rem;margin-top:.5rem;flex-wrap:wrap}
+.celeb-add{display:flex;flex-direction:column;gap:.4rem;margin-top:.5rem}
+.celeb-add-row{display:flex;gap:.5rem}
 .celeb-add input{flex:1;min-width:0;background:rgba(78,205,196,.06);border:1px solid rgba(78,205,196,.2);border-radius:8px;padding:.5rem .8rem;font-family:var(--ff-sans);font-size:.85rem;color:var(--text);outline:none}
-input[type="date"].celeb-add-date{flex:0 0 auto;width:100%;}
 .celeb-add input:focus{border-color:var(--teal)}
+@media(max-width:768px){
+  .celeb-add{flex-direction:row;flex-wrap:wrap;gap:.4rem}
+  .celeb-add-row{flex:1;min-width:0}
+}
 .celeb-add-btn{background:rgba(78,205,196,.15);border:1px solid rgba(78,205,196,.3);border-radius:8px;padding:.5rem 1rem;font-family:var(--ff-mono);font-size:.72rem;color:var(--teal);cursor:pointer;white-space:nowrap;transition:background .15s}
 .celeb-add-btn:hover{background:rgba(78,205,196,.3)}
 .celeb-del-btn{font-size:.6rem;color:var(--muted);margin-left:.3rem;cursor:pointer;vertical-align:middle}
@@ -569,9 +573,13 @@ footer a:hover{color:var(--gold)}
         <div class="celeb-list" id="celebList"></div>
         <div style="font-family:var(--ff-mono);font-size:.62rem;color:var(--teal);margin-bottom:.4rem">+ 有名人を追加する</div>
         <div class="celeb-add">
-          <input type="text" id="celebNameInput" placeholder="名前（例：山田花子）">
-          <input type="date" id="celebBirthInput" style="flex:1;min-width:0;max-width:100%">
-          <button class="celeb-add-btn" onclick="addCeleb()">追加</button>
+          <div class="celeb-add-row">
+            <input type="text" id="celebNameInput" placeholder="名前（例：山田花子）">
+          </div>
+          <div class="celeb-add-row">
+            <input type="date" id="celebBirthInput">
+            <button class="celeb-add-btn" onclick="addCeleb()">追加</button>
+          </div>
         </div>
       </div>
 
