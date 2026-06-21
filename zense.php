@@ -111,8 +111,15 @@ header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-fi
 .mission-text{font-family:var(--ff-serif);font-size:.9rem;color:var(--violet-lt);font-weight:600}
 
 .share-area{text-align:center;margin-top:1.5rem}
-.share-btn{display:inline-block;padding:.65rem 1.4rem;background:linear-gradient(135deg,#1d9bf0,#0d7bc4);color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;box-shadow:0 4px 16px rgba(29,155,240,.3)}
-.retry-btn{display:inline-block;margin-left:.8rem;padding:.65rem 1.4rem;background:rgba(155,114,239,.15);border:1px solid var(--border2);color:var(--violet-lt);border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;cursor:pointer}
+.share-label{font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
+.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap;margin-bottom:1rem}
+.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.5rem 1rem;border-radius:20px;font-size:.75rem;font-family:var(--ff-sans);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap;font-weight:600}
+.share-btn:hover{opacity:.8}
+.share-line{background:#06C755;color:#fff}
+.share-x{background:#000;color:#fff}
+.share-fb{background:#1877F2;color:#fff}
+.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
+.retry-btn{display:inline-block;padding:.65rem 1.4rem;background:rgba(155,114,239,.15);border:1px solid var(--border2);color:var(--violet-lt);border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;cursor:pointer}
 
 /* ─── FOOTER ─── */
 footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
@@ -239,7 +246,13 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
     </div>
 
     <div class="share-area">
-      <a id="twitterShare" class="share-btn" href="#" target="_blank" rel="noopener">𝕏 シェアする</a>
+      <p class="share-label">✦ 結果をシェアする</p>
+      <div class="share-btns">
+        <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
+        <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
+        <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
+        <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
+      </div>
       <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
     </div>
   </div>
@@ -537,14 +550,28 @@ function diagnose(){
   kwEl.innerHTML='';
   kws.forEach(k=>{const s=document.createElement('span');s.className='keyword-tag';s.textContent=k;kwEl.appendChild(s);});
 
-  const shareText=`【前世診断】\n私の前世は${era}の${region}で生きた「${roleObj.r}」。\n転生${lifeCount}回目の魂タイプは「${soulType.n}」でした。\n\n▼あなたの前世は？\nhttps://life-fun.net/zense`;
-  document.getElementById('twitterShare').href='https://twitter.com/intent/tweet?text='+encodeURIComponent(shareText);
+  window._shareText=`【前世診断】私の前世は${era}の${region}で生きた「${roleObj.r}」。転生${lifeCount}回目の魂タイプは「${soulType.n}」でした。▼あなたの前世は？ https://life-fun.net/zense`;
 
   document.getElementById('formArea').style.display='none';
   document.getElementById('result').style.display='block';
   document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
 }
 
+function openShare(type){
+  const u=encodeURIComponent('https://life-fun.net/zense');
+  const txt=window._shareText||'前世診断';
+  const urls={
+    line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt),
+    x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt),
+    fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
+  };
+  window.open(urls[type],'_blank','noopener');
+}
+function copyShareUrl(){
+  navigator.clipboard.writeText('https://life-fun.net/zense').then(()=>{
+    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
+  });
+}
 function resetForm(){
   document.getElementById('formArea').style.display='block';
   document.getElementById('result').style.display='none';
