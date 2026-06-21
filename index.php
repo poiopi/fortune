@@ -1165,6 +1165,17 @@ header.site-header{
           冒険する &#8594;
         </a>
       </div>
+      <!-- 相性診断への導線 -->
+      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(232,113,154,.12) 0%,rgba(201,168,76,.08) 100%);border:1px solid rgba(232,113,154,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.3rem">Compatibility</div>
+          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">二人の相性診断</div>
+          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">星座と数秘術で恋愛・結婚の相性を鑑定する</div>
+        </div>
+        <a href="/aisho.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--rose),var(--gold));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(232,113,154,.3);">
+          診断する &#8594;
+        </a>
+      </div>
    
       <!-- 結果（main-colの内側） -->
       <?php if ($result): ?>
