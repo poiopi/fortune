@@ -351,6 +351,7 @@ footer a:hover{color:var(--gold)}
       <a href="/mbti.php">MBTI×星座</a>
       数秘術
       <a href="/kyusei.php">九星気学</a>
+      <a href="/rpg.php">RPG占い</a>
     </nav>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
     <div class="sp-dropdown" id="spDropdown">
@@ -360,6 +361,7 @@ footer a:hover{color:var(--gold)}
       <a href="/mbti.php">MBTI×星座</a>
       <span>数秘術</span>
       <a href="/kyusei.php">九星気学</a>
+      <a href="/rpg.php">RPG占い</a>
     </div>
   </div>
 </header>
@@ -520,6 +522,7 @@ footer a:hover{color:var(--gold)}
   <a href="/mbti.php">MBTI×星座診断</a> &nbsp;/&nbsp;
   数秘術診断 &nbsp;/&nbsp;
   <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
+  <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
     <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact.php">お問い合わせ</a><br>
