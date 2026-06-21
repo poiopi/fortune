@@ -13,7 +13,7 @@
 
   <meta charset="UTF-8">
   <!-- tarot.php -->
-  <link rel="canonical" href="https://life-fun.net/tarot.php" />
+  <link rel="canonical" href="https://life-fun.net/tarot" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="13枚のタロットカードが円形に並ぶ本格タロット占い。直感でカードを選び、大アルカナからのメッセージを受け取ってください。">
   <title>本格タロット占い｜カードを選んで運命を知る</title>
@@ -329,23 +329,23 @@
       <nav class="header-nav">
         <a href="/">トップ</a>
         タロット
-        <a href="/calendar.php">カレンダー</a>
-        <a href="/mbti.php">MBTI×星座</a>
-          <a href="/numerology.php">数秘術</a>
-          <a href="/kyusei.php">九星気学</a>
-        <a href="/rpg.php">RPG占い</a>
-        <a href="/aisho.php">相性診断</a>
+        <a href="/calendar">カレンダー</a>
+        <a href="/mbti">MBTI×星座</a>
+          <a href="/numerology">数秘術</a>
+          <a href="/kyusei">九星気学</a>
+        <a href="/rpg">RPG占い</a>
+        <a href="/aisho">相性診断</a>
       </nav>
       <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
       <div class="sp-dropdown" id="spDropdown">
         <a href="/">トップ</a>
         <span>タロット</span>
-        <a href="/calendar.php">開運カレンダー</a>
-        <a href="/mbti.php">MBTI×星座</a>
-          <a href="/numerology.php">数秘術</a>
-          <a href="/kyusei.php">九星気学</a>
-        <a href="/rpg.php">RPG占い</a>
-        <a href="/aisho.php">相性診断</a>
+        <a href="/calendar">開運カレンダー</a>
+        <a href="/mbti">MBTI×星座</a>
+          <a href="/numerology">数秘術</a>
+          <a href="/kyusei">九星気学</a>
+        <a href="/rpg">RPG占い</a>
+        <a href="/aisho">相性診断</a>
       </div>
     </div>
   </header>
@@ -412,15 +412,15 @@
   <footer>
     <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
     タロット占い &nbsp;/&nbsp;
-    <a href="/calendar.php">開運カレンダー</a> &nbsp;/&nbsp;
-    <a href="/mbti.php">MBTI×星座診断</a> &nbsp;/&nbsp;
-    <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
-    <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
-    <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
-    <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
-    <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
-    <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
-    <a href="/contact.php">お問い合わせ</a><br>
+    <a href="/calendar">開運カレンダー</a> &nbsp;/&nbsp;
+    <a href="/mbti">MBTI×星座診断</a> &nbsp;/&nbsp;
+    <a href="/numerology">数秘術診断</a> &nbsp;/&nbsp;
+    <a href="/kyusei">九星気学診断</a> &nbsp;/&nbsp;
+    <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
+    <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
+    <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
+    <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
+    <a href="/contact">お問い合わせ</a><br>
     &copy; 2026 三星統合鑑定
   </footer>
 
