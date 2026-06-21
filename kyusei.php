@@ -167,6 +167,15 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .retry-btn:hover{color:var(--text);border-color:var(--violet)}
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
+.share-wrap{text-align:center;margin:1.5rem 0 1rem}
+.share-label{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
+.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap}
+.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .85rem;border-radius:20px;font-size:.7rem;font-family:var(--ff-rpg);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap}
+.share-btn:hover{opacity:.8}
+.share-line{background:#06C755;color:#fff}
+.share-x{background:#000;color:#fff}
+.share-fb{background:#1877F2;color:#fff}
+.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -311,6 +320,15 @@ footer a:hover{color:var(--gold)}
       <div style="font-size:.82rem;color:var(--rose)">⚠ <?= $result['data']['caution'] ?></div>
     </div>
 
+    <div class="share-wrap">
+      <p class="share-label">✦ 結果をシェアする</p>
+      <div class="share-btns">
+        <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
+        <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
+        <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
+        <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
+      </div>
+    </div>
     <a href="/kyusei.php" class="retry-btn">もう一度診断する</a>
   </div>
 
@@ -319,6 +337,8 @@ footer a:hover{color:var(--gold)}
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
 
 </div>
+
+<p style="max-width:900px;margin:0 auto 1.5rem;padding:0 1.2rem;text-align:center;font-size:.72rem;color:var(--muted);line-height:1.8">本サービスはエンターテインメントを目的とした占いコンテンツです。結果は楽しみや気づきの参考としてご活用ください。</p>
 
 <footer>
   <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
@@ -335,6 +355,17 @@ footer a:hover{color:var(--gold)}
 </footer>
 
 <script>
+function openShare(type){
+  const u=encodeURIComponent(location.href);
+  const t=encodeURIComponent(document.title);
+  const urls={line:'https://social-plugins.line.me/lineit/share?url='+u,x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
+  window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
+}
+function copyShareUrl(){
+  navigator.clipboard.writeText(location.href).then(()=>{
+    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
+  });
+}
 function toggleSpMenu(){
   document.getElementById('spDropdown').classList.toggle('open');
 }

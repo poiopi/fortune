@@ -285,6 +285,15 @@ header{
 /* ── AdSense ── */
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
+.share-wrap{text-align:center;margin:1.5rem 0 1rem}
+.share-label{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
+.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap}
+.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .85rem;border-radius:20px;font-size:.7rem;font-family:var(--ff-rpg);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap}
+.share-btn:hover{opacity:.8}
+.share-line{background:#06C755;color:#fff}
+.share-x{background:#000;color:#fff}
+.share-fb{background:#1877F2;color:#fff}
+.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 
 /* ── カレンダー ── */
 .cal-section{margin-bottom:2.5rem}
@@ -579,6 +588,16 @@ footer a:hover{color:var(--gold)}
 </div>
   </section>
 
+  <div class="share-wrap">
+    <p class="share-label">✦ 今月の運勢をシェアする</p>
+    <div class="share-btns">
+      <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
+      <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
+      <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
+      <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
+    </div>
+  </div>
+
   <!-- AdSense枠 -->
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
 
@@ -598,6 +617,17 @@ footer a:hover{color:var(--gold)}
   &copy; 2026 三星統合鑑定
 </footer>
 <script>
+function openShare(type){
+  const u=encodeURIComponent(location.href);
+  const t=encodeURIComponent(document.title);
+  const urls={line:'https://social-plugins.line.me/lineit/share?url='+u,x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
+  window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
+}
+function copyShareUrl(){
+  navigator.clipboard.writeText(location.href).then(()=>{
+    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
+  });
+}
 function toggleSpMenu(){
   document.getElementById('spDropdown').classList.toggle('open');
 }
