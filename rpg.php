@@ -228,7 +228,10 @@ footer a:hover{color:var(--gold)}
         <button class="db" id="bD">▼</button>
         <div class="db empty"></div>
       </div>
-      <div class="ghint">🎮 矢印キー or WASD で移動<br>Space / Enterで話しかける<br>アイテムは踏むと自動取得</div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.5rem">
+        <button id="bgmBtn" onclick="toggleBgm()" style="background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--muted);font-family:var(--ff-rpg);font-size:.65rem;padding:.35rem .7rem;cursor:pointer;-webkit-tap-highlight-color:transparent">🔇 BGM OFF</button>
+        <div class="ghint">🎮 矢印キー or WASD で移動<br>Space / Enterで話しかける<br>アイテムは踏むと自動取得</div>
+      </div>
     </div>
   </div>
 
@@ -1096,6 +1099,93 @@ function resetGame(){
   document.getElementById('resOv').classList.remove('on');
   document.getElementById('frmOv').classList.remove('on');
   hud(); draw();
+}
+
+// ════════════════════════════════════════════
+// BGM (Web Audio API チップチューン)
+// ════════════════════════════════════════════
+let _ac=null, _bgmOn=false, _bgmNodes=[];
+const _BPM=112, _B=60/_BPM;
+
+// 村のテーマ メロディー（音名→Hz）
+const N={
+  C4:261.63,D4:293.66,E4:329.63,F4:349.23,G4:392.00,A4:440.00,B4:493.88,
+  C5:523.25,D5:587.33,E5:659.25,G5:783.99,A5:880.00,_:0
+};
+// [周波数, 音長(拍)]
+const MELODY=[
+  [N.E5,1],[N.D5,1],[N.C5,2],
+  [N.E5,1],[N.G5,1],[N.A5,2],
+  [N.G5,1],[N.E5,1],[N.D5,2],
+  [N.C5,1],[N.D5,1],[N.E5,1],[N.C5,1],
+  [N.E5,1],[N.D5,1],[N.C5,2],
+  [N.D5,1],[N.E5,1],[N.F4,2],
+  [N.E4,1],[N.F4,1],[N.G4,1],[N.A4,1],
+  [N.G4,2],[N.C5,2],
+];
+const BASS=[
+  [N.C4,2],[N.G4,2],[N.A4,2],[N.E4,2],
+  [N.F4,2],[N.C4,2],[N.G4,2],[N.G4,2],
+];
+
+function _playSeq(notes,type,gain,loop){
+  if(!_ac) return null;
+  const g=_ac.createGain(); g.gain.value=gain; g.connect(_ac.destination);
+  let t=_ac.currentTime+0.05;
+  const total=notes.reduce((s,[,d])=>s+d*_B,0);
+  function schedule(offset){
+    notes.forEach(([freq,dur])=>{
+      if(freq===0){t+=dur*_B;return;}
+      const o=_ac.createOscillator();
+      o.type=type; o.frequency.value=freq;
+      const eg=_ac.createGain();
+      eg.gain.setValueAtTime(gain,t);
+      eg.gain.linearRampToValueAtTime(0,t+dur*_B*0.85);
+      o.connect(eg); eg.connect(_ac.destination);
+      o.start(t); o.stop(t+dur*_B*0.9);
+      t+=dur*_B;
+    });
+  }
+  schedule(0);
+  if(loop){
+    const id=setInterval(()=>{
+      if(!_bgmOn){clearInterval(id);return;}
+      schedule(0);
+    }, total*1000);
+    return id;
+  }
+  return null;
+}
+
+function startBgm(){
+  if(!_ac) _ac=new(window.AudioContext||window.webkitAudioContext)();
+  if(_ac.state==='suspended') _ac.resume();
+  _bgmNodes.forEach(id=>clearInterval(id));
+  _bgmNodes=[];
+  _bgmNodes.push(_playSeq(MELODY,'square',0.07,true));
+  _bgmNodes.push(_playSeq(BASS,'triangle',0.05,true));
+}
+
+function stopBgm(){
+  _bgmNodes.forEach(id=>clearInterval(id));
+  _bgmNodes=[];
+  if(_ac) _ac.suspend();
+}
+
+function toggleBgm(){
+  _bgmOn=!_bgmOn;
+  const btn=document.getElementById('bgmBtn');
+  if(_bgmOn){
+    startBgm();
+    btn.textContent='🔊 BGM ON';
+    btn.style.color='var(--gold)';
+    btn.style.borderColor='rgba(201,168,76,.4)';
+  } else {
+    stopBgm();
+    btn.textContent='🔇 BGM OFF';
+    btn.style.color='var(--muted)';
+    btn.style.borderColor='var(--border2)';
+  }
 }
 
 // ════════════════════════════════════════════
