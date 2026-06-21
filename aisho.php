@@ -231,6 +231,20 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .celeb-add-btn:hover{background:rgba(78,205,196,.3)}
 .celeb-del-btn{font-size:.6rem;color:var(--muted);margin-left:.3rem;cursor:pointer;vertical-align:middle}
 
+/* 誕生日カレンダー */
+.cal-section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;margin-bottom:2rem;position:relative;overflow:hidden}
+.cal-section::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--violet),var(--rose))}
+.cal-title{font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--violet-lt);margin-bottom:.4rem}
+.cal-note{font-size:.72rem;color:var(--muted);margin-bottom:1rem;line-height:1.6}
+.cal-days{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem}
+.cal-day-btn{font-family:var(--ff-mono);font-size:.7rem;padding:.3rem .6rem;border-radius:6px;border:1px solid var(--border);background:rgba(155,114,239,.06);color:var(--muted);cursor:pointer;transition:all .15s}
+.cal-day-btn:hover{background:rgba(155,114,239,.2);color:var(--violet-lt);border-color:var(--violet)}
+.cal-day-btn.active{background:rgba(155,114,239,.3);color:var(--violet-lt);border-color:var(--violet)}
+.cal-names{display:flex;flex-wrap:wrap;gap:.4rem;min-height:2rem}
+.cal-name-tag{font-family:var(--ff-mono);font-size:.68rem;background:rgba(155,114,239,.1);border:1px solid rgba(155,114,239,.3);border-radius:20px;padding:.3rem .75rem;color:var(--violet-lt);cursor:pointer;transition:background .15s;white-space:nowrap}
+.cal-name-tag:hover{background:rgba(155,114,239,.3)}
+.cal-empty{font-family:var(--ff-mono);font-size:.68rem;color:var(--muted)}
+
 /* 結果 */
 .result-wrap{animation:fadeIn .8s ease}
 @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
@@ -346,6 +360,14 @@ footer a:hover{color:var(--gold)}
     </div>
   </div>
 
+  <!-- 誕生日カレンダー -->
+  <div class="cal-section">
+    <div class="cal-title">📅 誕生日カレンダーから選ぶ（1月）</div>
+    <p class="cal-note">※日付ボタンをタップすると、その日が誕生日の有名人・キャラクターが表示されます。名前をタップするとお相手欄に自動入力されます。<br>誕生日データは参考情報です。正確性は保証されません。年は参考値として1990年を使用しています。</p>
+    <div class="cal-days" id="calDays"></div>
+    <div class="cal-names" id="calNames"><span class="cal-empty">日付を選んでください</span></div>
+  </div>
+
   <!-- フォーム -->
   <div class="form-card">
     <div class="form-title">✦ 生年月日を入力 ✦</div>
@@ -356,6 +378,11 @@ footer a:hover{color:var(--gold)}
       <div class="form-grid">
         <div class="person-card">
           <div class="person-title you">💙 あなた</div>
+          <div class="form-group">
+            <label class="form-label">お名前（任意）</label>
+            <input class="form-input" type="text" name="your_name" id="your_name"
+              value="<?=htmlspecialchars(trim($_GET['your_name']??''),ENT_QUOTES)?>" placeholder="例：山田さん">
+          </div>
           <div class="form-group">
             <label class="form-label">生年月日</label>
             <input class="form-input" type="date" name="your_birth" id="your_birth"
@@ -469,7 +496,7 @@ footer a:hover{color:var(--gold)}
           <div class="affiliate-name">📍 <?=$r['dateSpot']['spot']?></div>
           <div class="affiliate-why"><?=$r['dateSpot']['desc']?></div>
         </div>
-        <a class="affiliate-btn" href="#" onclick="return false;">詳しく見る →</a>
+        <!-- アフィリエイトURL設定後にこの行を有効化: <a class="affiliate-btn" href="【URL】">詳しく見る →</a> -->
       </div>
     </div>
 
@@ -482,7 +509,7 @@ footer a:hover{color:var(--gold)}
           <div class="affiliate-name">✨ <?=$r['present']['item']?></div>
           <div class="affiliate-why"><?=$r['present']['why']?></div>
         </div>
-        <a class="affiliate-btn" href="#" onclick="return false;">商品を探す →</a>
+        <!-- アフィリエイトURL設定後にこの行を有効化: <a class="affiliate-btn" href="【URL】">商品を探す →</a> -->
       </div>
     </div>
 
@@ -522,6 +549,69 @@ footer a:hover{color:var(--gold)}
 </footer>
 
 <script>
+// ─── 誕生日カレンダーデータ（1月）──────────────────
+const BIRTHDAY_DB = {
+  '01-01':['尾田栄一郎','堂本光一','箕輪はるか','ポール・リビア','J・D・サリンジャー','ベッツィ・ロス','雪村千鶴','木之本桜','四葉環','爆豪勝己'],
+  '01-02':['アイザック・アシモフ','キューバ・グッディング・ジュニア','浦沢直樹','竹野内豊','豊口めぐみ','水樹奈々','カルナ','鏡音リン','猿飛アスマ','神宮寺レン'],
+  '01-03':['メル・ギブソン','マイケル・シューマッハ','ダンテ・アリギエーリ','岩下志麻','柳葉敏郎','小沢真珠','ロロノア・ゾロ','日向ネジ','七海建人','我妻善逸'],
+  '01-04':['アイザック・ニュートン','ティルダ・スウィントン','マイケル・スタイプ','竹内力','衛藤美彩','子安武人','緑谷出久','竈門炭治郎','沖田総悟','朽木ルキア'],
+  '01-05':['宮崎駿','ロバート・デュヴァル','ダイアン・キートン','深水元基','小池徹平','元ちとせ','モンキー・D・ルフィ','黒崎一護','爆豪勝己','シエル・ファントムハイヴ'],
+  '01-06':['エディ・レッドメイン','ローワン・アトキンソン','大場つぐみ','CHAGE','中畑清','ノーマン・リーダス','不死川玄弥','神楽','渚カヲル','トラファルガー・ロー'],
+  '01-07':['ニコラス・ケイジ','ルイス・ハミルトン','ケニー・ロギンス','水木一郎','青木琴美','森政弘','うずまきナルト','五条悟','エレン・イェーガー','キリト'],
+  '01-08':['エルヴィス・プレスリー','デヴィッド・ボウイ','スティーヴン・ホーキング','小泉純一郎','田中裕二','井上麻里奈','綾波レイ','煉獄杏寿郎','アスナ','伏黒恵'],
+  '01-09':['リチャード・ニクソン','ジミー・ペイジ','デイヴ・マシューズ','岸部一徳','伴都美子','岡本真夜','冨岡義勇','日番谷冬獅郎','神威','我愛羅'],
+  '01-10':['ロッド・スチュワート','ジョージ・フォアマン','パット・ベネター','財前直見','田中裕二','三浦建太郎','嘴平伊之助','サンジ','キルア＝ゾルディック','碇シンジ'],
+  '01-11':['デヴィッド・ボウイ','深津絵里','持田香織','メアリー・J・ブライジ','アマンダ・ピート','ジェイミー・ヴァーディ','カカシ','中野三玖','エミリア','轟焦凍'],
+  '01-12':['村上春樹','ジェフ・ベック','オリバー・プラット','楠田枝里子','井上雄彦','ロビー・ベンソン','ベジータ','ミカサ・アッカーマン','朽木白哉','我妻由乃'],
+  '01-13':['オーランド・ブルーム','リーアム・ヘムズワース','秋本治','中山優馬','柴田純','パトリック・デンプシー','孫悟空','エドワード・エルリック','江戸川コナン','めぐみん'],
+  '01-14':['三島由紀夫','デイヴ・グロール','LL・クール・J','玉木宏','山崎弘也','田中真弓','綾小路清隆','夜神月','時透無一郎','セイバー'],
+  '01-15':['マーティン・ルーサー・キング・ジュニア','ピットブル','樹木希林','吉岡里帆','石原良純','アリストテレス・オナシス','リヴァイ','竈門禰豆子','坂田銀時','惣流・アスカ・ラングレー'],
+  '01-16':['ケイト・モス','ジョン・カーペンター','リン＝マニュエル・ミランダ','藪宏太','木下隆行','桂文枝','ロロノア・ゾロ','日向翔陽','レム','伊黒小芭内'],
+  '01-17':['モハメド・アリ','ジム・キャリー','ミシェル・オバマ','山口百恵','平井堅','坂本龍一','我愛羅','嘴平伊之助','影山飛雄','ゼロツー'],
+  '01-18':['ケビン・コスナー','オリバー・ハーディ','キャリー・グラント','ビートたけし','中山忍','長谷部誠','黒崎一護','エレン・イェーガー','宇髄天元','キルア＝ゾルディック'],
+  '01-19':['エドガー・アラン・ポー','ジャニス・ジョプリン','ドリー・パートン','松任谷由実','宇多田ヒカル','柴門ふみ','冨岡義勇','ベジータ','アルフォンス・エルリック','赤司征十郎'],
+  '01-20':['フェデリコ・フェリーニ','デヴィッド・リンチ','レイン・ウィルソン','南果歩','IKKO','矢口真里','竈門炭治郎','五条悟','モンキー・D・ルフィ','ミカサ・アッカーマン'],
+  '01-21':['プラシド・ドミンゴ','ジーナ・デイヴィス','ロビー・ベンソン','京本政樹','水樹奈々','稲盛和夫','胡蝶しのぶ','サスケ','及川徹','アルミン・アルレルト'],
+  '01-22':['ダイアン・レイン','リンダ・ブレア','フランシス・ベーコン','中田英寿','高橋惠子','HEATH','我妻善逸','エース','爆豪勝己','エドワード・エルリック'],
+  '01-23':['ジャンゴ・ラインハルト','ジョン・ハンコック','千葉真一','葉加瀬太郎','トリンドル玲奈','吉田鋼太郎','日向翔陽','煉獄杏寿郎','キリト','江戸川コナン'],
+  '01-24':['ニール・ダイアモンド','ナスターシャ・キンスキー','エド・ヘルムズ','五輪真弓','岩井俊二','前田日明','禪院真希','竈門禰豆子','ロロノア・ゾロ','エレン・イェーガー'],
+  '01-25':['ヴァージニア・ウルフ','アリシア・キーズ','毛利元就','北野誠','さとう宗幸','石ノ森章太郎','伏黒恵','リヴァイ','トラファルガー・ロー','うちはイタチ'],
+  '01-26':['ポール・ニューマン','エレン・デジェネレス','エディ・ヴァン・ヘイレン','長嶋一茂','hitomi','綾小路翔','中野一花','胡蝶カナエ','ヒソカ','アスナ'],
+  '01-27':['モーツァルト','ルイス・キャロル','ブリジット・フォンダ','雛形あきこ','清水ミチコ','三田寛子','中野二乃','我妻善逸','エース','爆豪勝己'],
+  '01-28':['ジャクソン・ポロック','イライジャ・ウッド','アラン・アルダ','乙葉','新庄剛志','星野源','中野三玖','時透無一郎','キルア＝ゾルディック','五条悟'],
+  '01-29':['アントン・チェーホフ','オプラ・ウィンフリー','トム・セレック','濱口優','宝生舞','きゃりーぱみゅぱみゅ','中野四葉','伊之助','サンジ','夜神月'],
+  '01-30':['フランクリン・ルーズベルト','ジーン・ハックマン','フィル・コリンズ','石川さゆり','吉村由美','春風亭昇太','中野五月','禪院真希','冨岡義勇','リヴァイ'],
+  '01-31':['フランツ・シューベルト','ジャスティン・ティンバーレイク','ケリー・リンチ','真矢みき','香取慎吾','石野真子','中野五月','伏黒恵','ロロノア・ゾロ','ミカサ・アッカーマン'],
+};
+
+(function(){
+  const daysEl = document.getElementById('calDays');
+  const namesEl = document.getElementById('calNames');
+  let activeDay = null;
+  for (let d = 1; d <= 31; d++) {
+    const key = '01-' + String(d).padStart(2,'0');
+    if (!BIRTHDAY_DB[key]) continue;
+    const btn = document.createElement('button');
+    btn.className = 'cal-day-btn';
+    btn.textContent = d + '日';
+    btn.onclick = () => {
+      if (activeDay) activeDay.classList.remove('active');
+      btn.classList.add('active');
+      activeDay = btn;
+      namesEl.innerHTML = BIRTHDAY_DB[key].map(n =>
+        `<span class="cal-name-tag" onclick="selectFromCal('${n.replace(/'/g,"\\'")}','1990-${key}')">${n}</span>`
+      ).join('');
+    };
+    daysEl.appendChild(btn);
+  }
+})();
+
+function selectFromCal(name, birth) {
+  document.getElementById('partner_birth').value = birth;
+  document.getElementById('partner_name').value = name;
+  document.getElementById('partner_birth').closest('form').scrollIntoView({behavior:'smooth', block:'center'});
+}
+
 // ─── 有名人データ ──────────────────────────────────
 const PRESET_CELEBS = [
   {name:'大谷翔平',      birth:'1994-07-05'},
@@ -571,11 +661,22 @@ function renderCelebs(filter='') {
   const all = allCelebs();
   const filtered = filter ? all.filter(c=>c.name.includes(filter)) : all;
 
-  list.innerHTML = filtered.map(c => {
+  list.innerHTML = '';
+  filtered.forEach(c => {
     const isUser = userNames.has(c.name);
-    const del = isUser ? `<span class="celeb-del-btn" onclick="deleteCeleb('${c.name.replace(/'/g,"\\'")}')">✕</span>` : '';
-    return `<span class="celeb-tag${isUser?' user-added':''}" onclick="selectCeleb('${c.birth}','${c.name.replace(/'/g,"\\'")}'")">${c.name}${del}</span>`;
-  }).join('');
+    const span = document.createElement('span');
+    span.className = 'celeb-tag' + (isUser ? ' user-added' : '');
+    span.textContent = c.name;
+    span.onclick = () => selectCeleb(c.birth, c.name);
+    if (isUser) {
+      const del = document.createElement('span');
+      del.className = 'celeb-del-btn';
+      del.textContent = '✕';
+      del.onclick = (e) => { e.stopPropagation(); deleteCeleb(c.name); };
+      span.appendChild(del);
+    }
+    list.appendChild(span);
+  });
 }
 
 function filterCelebs() {
