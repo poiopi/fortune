@@ -298,10 +298,11 @@ footer a:hover{color:var(--gold)}
 // ════════════════════════════════════════════
 // SPRITES
 // ════════════════════════════════════════════
-// キャラシートの1コマサイズ(px)
+// キャラシートのサイズ
+// 横: 1254÷20スプライト=63px、縦: 1254÷8行=157px(行オフセット)
+// CSHはサンプリング高さ=126px（次行の頭が映り込まないよう小さめに）
 // 4方向セット: c=前(下), c+1=左, c+2=後(上), c+3=右
-// 1254÷20スプライト≈63px/コマ、1254÷7行≈179px/行
-const CSW=63, CSH=179;
+const CSW=63, CSH=126, ROW_H=157;
 
 const imgChar=new Image();
 imgChar.src='/characters.png';
@@ -341,8 +342,8 @@ function drawChar(key,dx,dy,dir='down'){
   else if(dir==='up')    col=sp.c+2;
   else if(dir==='right') col=sp.c+3;
   // down: col=sp.c (default)
-  const sx=col*CSW, sy=sp.r*CSH;
-  const dh=Math.round(TS*1.3), dw=Math.round(TS*1.0);
+  const sx=col*CSW, sy=sp.r*ROW_H; // 行オフセットはROW_H基準
+  const dw=Math.round(TS*0.8), dh=Math.round(TS*1.6); // 縦横比をCSW:CSH≈1:2に合わせる
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
   ctx.drawImage(imgChar,sx,sy,CSW,CSH,ddx,ddy,dw,dh);
 }
