@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+﻿<?php declare(strict_types=1); ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -97,6 +97,7 @@ footer a:hover{color:var(--gold)}
       <a href="/numerology.php">数秘術</a>
       <a href="/kyusei.php">九星気学</a>
       <a href="/rpg.php">RPG占い</a>
+      <a href="/aisho.php">相性診断</a>
     </nav>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
     <div class="sp-dropdown" id="spDropdown">
@@ -107,6 +108,7 @@ footer a:hover{color:var(--gold)}
       <a href="/numerology.php">数秘術</a>
       <a href="/kyusei.php">九星気学</a>
       <a href="/rpg.php">RPG占い</a>
+      <a href="/aisho.php">相性診断</a>
     </div>
   </div>
 </header>
@@ -151,6 +153,7 @@ footer a:hover{color:var(--gold)}
    <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
   <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
   <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
+  <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
   プライバシーポリシー &nbsp;/&nbsp;
   <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact.php">お問い合わせ</a><br>

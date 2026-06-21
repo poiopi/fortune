@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 declare(strict_types=1);
 
 function calcKyusei(int $y, int $m, int $d): int {
@@ -210,6 +210,7 @@ footer a:hover{color:var(--gold)}
       <a href="/numerology.php">数秘術</a>
       九星気学
       <a href="/rpg.php">RPG占い</a>
+      <a href="/aisho.php">相性診断</a>
     </nav>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
     <div class="sp-dropdown" id="spDropdown">
@@ -220,6 +221,7 @@ footer a:hover{color:var(--gold)}
       <a href="/numerology.php">数秘術</a>
       <span>九星気学</span>
       <a href="/rpg.php">RPG占い</a>
+      <a href="/aisho.php">相性診断</a>
     </div>
   </div>
 </header>
@@ -348,6 +350,7 @@ footer a:hover{color:var(--gold)}
   <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
   九星気学診断 &nbsp;/&nbsp;
   <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
+  <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
   <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact.php">お問い合わせ</a><br>
