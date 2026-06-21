@@ -59,8 +59,8 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold)}
 
 /* VIEWPORT */
-.game-viewport{position:relative;overflow:hidden;background:#1e3320;touch-action:none;user-select:none;-webkit-user-select:none}
-#gc{display:block}
+.game-viewport{position:relative;overflow:hidden;background:#1e3320;touch-action:none;user-select:none;-webkit-user-select:none;display:flex;justify-content:center}
+#gc{display:block;flex-shrink:0}
 .player-pin{position:absolute;pointer-events:none;z-index:5;transform:translate(-50%,-55%);line-height:1;transition:none}
 .talk-btn-canvas{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(201,168,76,.92);border:none;border-radius:20px;padding:.4rem 1.4rem;font-family:var(--ff-rpg);font-size:.78rem;color:#1a1000;cursor:pointer;display:none;-webkit-tap-highlight-color:transparent;box-shadow:0 2px 12px rgba(0,0,0,.5);animation:pulse .8s infinite alternate}
 @keyframes pulse{from{box-shadow:0 2px 12px rgba(201,168,76,.3)}to{box-shadow:0 2px 20px rgba(201,168,76,.8)}}
@@ -298,25 +298,14 @@ footer a:hover{color:var(--gold)}
 // ════════════════════════════════════════════
 // SPRITES
 // ════════════════════════════════════════════
-// タイルセット内の1タイルサイズ(px) ← ずれたらここを調整
-const TSS=70;
-// キャラシートの1コマサイズ(px)
-const CSW=63, CSH=105;
+// キャラシートの1コマサイズ(px)  1254÷20列=63、1254÷8行=157
+const CSW=63, CSH=157;
 
-const imgTile=new Image(), imgChar=new Image();
-imgTile.src='/tileset.png'; imgChar.src='/characters.png';
+const imgChar=new Image();
+imgChar.src='/characters.png';
 let _imgReady=0;
-imgTile.onload=imgChar.onload=()=>{if(++_imgReady>=2)draw();};
-imgTile.onerror=imgChar.onerror=()=>{_imgReady=99;draw();};
-
-// タイルセット座標 [col,row] — ずれたら数値を±1して調整
-const TSPR={
-  [0/*G*/]:[0,0],   // 草
-  [1/*P*/]:[0,3],   // 石畳/道
-  [3/*W*/]:[3,3],   // 水
-};
-// 木はタイルセットの左下エリアから
-const TREE_SP=[0,7];
+imgChar.onload=()=>{_imgReady=2;draw();};
+imgChar.onerror=()=>{_imgReady=99;draw();};
 
 // キャラクター座標 [col,row] — ずれたら数値を調整
 const CSPR={
@@ -334,15 +323,10 @@ const CSPR={
   slime:   {c:15,r:6},  // スライム
 };
 
+const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
 function drawTile(type,dx,dy){
-  const sp=TSPR[type];
-  if(_imgReady>=2&&sp){
-    ctx.drawImage(imgTile,sp[0]*TSS,sp[1]*TSS,TSS,TSS,dx,dy,TS,TS);
-  } else {
-    const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
-    ctx.fillStyle=TCOL[type]||'#3d6b3e';
-    ctx.fillRect(dx,dy,TS,TS);
-  }
+  ctx.fillStyle=TCOL[type]||'#3d6b3e';
+  ctx.fillRect(dx,dy,TS,TS);
 }
 
 function drawChar(key,dx,dy){
@@ -605,22 +589,14 @@ function draw(){
       if(mx<0||my<0||mx>=MW||my>=MH) continue;
       const t=MAP[my][mx];
       if(t===T){
-        // 木は草の上に重ねて描く
         drawTile(G,c*TS,r*TS);
-        if(_imgReady>=2){
-          ctx.drawImage(imgTile,TREE_SP[0]*TSS,TREE_SP[1]*TSS,TSS,TSS,
-            c*TS-4,r*TS-8,TS+8,TS+8);
-        } else {
-          ctx.font=Math.round(TS*.6)+'px serif';
-          ctx.textAlign='center'; ctx.textBaseline='middle';
-          ctx.fillText('🌲',c*TS+TS/2,r*TS+TS/2);
-        }
+        ctx.font=Math.round(TS*.6)+'px serif';
+        ctx.textAlign='center'; ctx.textBaseline='middle';
+        ctx.fillText('🌲',c*TS+TS/2,r*TS+TS/2);
       } else {
         drawTile(t,c*TS,r*TS);
-        if(_imgReady<2){
-          ctx.strokeStyle='rgba(0,0,0,.12)';
-          ctx.strokeRect(c*TS,r*TS,TS,TS);
-        }
+        ctx.strokeStyle='rgba(0,0,0,.12)';
+        ctx.strokeRect(c*TS,r*TS,TS,TS);
       }
     }
   }
