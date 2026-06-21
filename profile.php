@@ -107,6 +107,7 @@ body{top:0!important}
       <a href="/kyusei.php">九星気学</a>
       <a href="/rpg.php">RPG占い</a>
       <a href="/aisho.php">相性診断</a>
+      <a href="/zense">前世診断</a>
     </nav>
     <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
@@ -119,6 +120,7 @@ body{top:0!important}
       <a href="/kyusei.php">九星気学</a>
       <a href="/rpg.php">RPG占い</a>
       <a href="/aisho.php">相性診断</a>
+      <a href="/zense">前世診断</a>
     </div>
   </div>
 </header>
@@ -158,6 +160,7 @@ body{top:0!important}
   <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
   <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
   <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
+  <a href="/zense">前世診断</a> &nbsp;/&nbsp;
   <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
   運営者情報 &nbsp;/&nbsp;
   <a href="/contact.php">お問い合わせ</a><br>
