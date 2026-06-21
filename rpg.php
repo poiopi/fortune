@@ -308,21 +308,21 @@ let _imgReady=0;
 imgChar.onload=()=>{_imgReady=2;draw();};
 imgChar.onerror=()=>{_imgReady=99;draw();};
 
-// キャラクター座標  c=偶数列(前向きスプライト), r=行 (0始まり)
-// 偶数c=前向き(下), c+1=後ろ向き(上), 左右は水平反転で対応
+// キャラクター座標  偶数c=前向き, c+1=後ろ向き
+// row0=戦士系, row1=魔道士系, row7=モンスター
 const CSPR={
-  player:  {c:4, r:0},
-  grandma: {c:4, r:1},
-  smith:   {c:0, r:0},
-  witch:   {c:2, r:0},
-  merchant:{c:6, r:0},
-  knight:  {c:2, r:1},
-  healer:  {c:4, r:2},
-  bard:    {c:6, r:1},
-  priest:  {c:0, r:2},
-  thug:    {c:0, r:7},
-  guardian:{c:2, r:7},
-  slime:   {c:6, r:7},
+  player:  {c:6, r:0},   // 青緑の勇者
+  smith:   {c:0, r:0},   // 茶色い戦士
+  witch:   {c:4, r:0},   // 緑フード（魔女）
+  merchant:{c:12,r:0},   // 黄色系（商人）
+  knight:  {c:8, r:0},   // 青い騎士
+  bard:    {c:14,r:0},   // 橙赤（詩人）
+  healer:  {c:8, r:1},   // 白系（薬師）
+  grandma: {c:10,r:1},   // 老人系
+  priest:  {c:4, r:1},   // 紫マント（神父）
+  thug:    {c:0, r:7},   // ゴブリン
+  guardian:{c:2, r:7},   // 悪魔系
+  slime:   {c:14,r:7},   // スライム
 };
 
 const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
@@ -682,13 +682,12 @@ function draw(){
     ctx.strokeRect(sx+3,sy+3,TS-6,TS-6);
     // キャラクタースプライト（またはフォールバック絵文字）
     if(_imgReady>=2){
-      // NPCはプレイヤーの方向に向く（隣接時）、それ以外は下向き
+      // NPCは常に前向き。プレイヤーが左右に隣接したとき反転して向きを変える
       let nDir='down';
       if(adj(n.x,n.y)){
-        if(pl.x<n.x) nDir='left';
-        else if(pl.x>n.x) nDir='right';
-        else if(pl.y<n.y) nDir='up';
-        else nDir='down';
+        if(pl.x<n.x) nDir='left';      // プレイヤーが左 → NPC左向き
+        else if(pl.x>n.x) nDir='right'; // プレイヤーが右 → NPC右向き
+        // 上下は前向き(down)のまま（後ろ姿を避ける）
       }
       drawChar(n.id,sx,sy,nDir);
     } else {
