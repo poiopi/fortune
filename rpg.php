@@ -349,11 +349,46 @@ function passable(x,y){
   return true;
 }
 
+// ── 日替わり配置（通行可能タイルのみ）────────────────
+(function placeActors(){
+  // 日付シード（毎日変わる）
+  const d=new Date();
+  let _s=(d.getFullYear()*10000+d.getMonth()*100+d.getDate())*2654435761>>>0;
+  const rng=()=>{_s=Math.imul(_s^(_s>>>16),0x45d9f3b)>>>0;return _s/4294967296};
+
+  // 通行可能な内部タイルを列挙（境界・神父位置付近を除く）
+  const pool=[];
+  for(let y=1;y<MH-1;y++)
+    for(let x=1;x<MW-1;x++)
+      if(passable(x,y)&&!(x===13&&y===13)) pool.push([x,y]);
+
+  // フィッシャー–イェーツシャッフル
+  for(let i=pool.length-1;i>0;i--){
+    const j=0|rng()*(i+1);
+    [pool[i],pool[j]]=[pool[j],pool[i]];
+  }
+
+  // 最低距離を保ちながら配置
+  const used=[];
+  const pick=()=>{
+    for(const [x,y] of pool){
+      if(used.every(([ux,uy])=>Math.abs(ux-x)+Math.abs(uy-y)>=3)){
+        used.push([x,y]); return{x,y};
+      }
+    }
+    return{x:9,y:9}; // フォールバック
+  };
+
+  // 神父以外のNPCとアイテムに座標を割り当て
+  NPCS.forEach(n=>{if(!n.priest){const p=pick();n.x=p.x;n.y=p.y}});
+  IDEF.forEach(it=>{const p=pick();it.x=p.x;it.y=p.y});
+})();
+
 // ════════════════════════════════════════════
 // NPCs
 // ════════════════════════════════════════════
 const NPCS=[
-  {id:'grandma',name:'村の老婆',emoji:'👵',x:9,y:3,
+  {id:'grandma',name:'村の老婆',emoji:'👵',x:0,y:0,
    dlg:[
      {tx:'おや、見かけない顔じゃ。この村に何の用かい？',
       ch:[{t:'強くなりたくて来ました',sc:{battle:2}},
@@ -361,7 +396,7 @@ const NPCS=[
           {t:'旅の途中ですよ',sc:{free:2}}]},
      {tx:'なるほどのう。お前さんの目には芯の強さがある。きっと大きな使命があるじゃろよ。'}
    ]},
-  {id:'smith',name:'鍛冶屋のゴルド',emoji:'⚒️',x:4,y:12,
+  {id:'smith',name:'鍛冶屋のゴルド',emoji:'⚒️',x:0,y:0,
    dlg:[
      {tx:'おう！剣でも買いにきたか？',
       ch:[{t:'最強の剣をください！',sc:{battle:3}},
@@ -370,7 +405,7 @@ const NPCS=[
           {t:'財布を盗んで逃げる！',bad:true,enemy:'thug'}]},
      {tx:'戦場で生き残るのは力だけじゃない。守る心があってこそ真の戦士だ。'}
    ]},
-  {id:'witch',name:'魔女のシルヴィア',emoji:'🧙‍♀️',x:7,y:16,
+  {id:'witch',name:'魔女のシルヴィア',emoji:'🧙‍♀️',x:0,y:0,
    dlg:[
      {tx:'珍しい来客ね。あなたから不思議なオーラを感じるわ。',
       ch:[{t:'魔法を教えてください',sc:{magic:3}},
@@ -379,7 +414,7 @@ const NPCS=[
           {t:'魔法石を奪う！',bad:true,enemy:'guardian'}]},
      {tx:'魔力は心の鏡よ。あなたが何を信じるかで、使える力が変わってくる。'}
    ]},
-  {id:'merchant',name:'商人のリカルド',emoji:'🪙',x:12,y:3,
+  {id:'merchant',name:'商人のリカルド',emoji:'🪙',x:0,y:0,
    dlg:[
      {tx:'いらっしゃい！今日は何が必要かな？',
       ch:[{t:'情報が欲しいです',sc:{wisdom:2}},
@@ -387,7 +422,7 @@ const NPCS=[
           {t:'値切り交渉しましょう',sc:{free:3}}]},
      {tx:'賢い客は価値がわかる。世の中をうまく渡れるもんだ。'}
    ]},
-  {id:'knight',name:'騎士団長のアルス',emoji:'⚔️',x:15,y:12,
+  {id:'knight',name:'騎士団長のアルス',emoji:'⚔️',x:0,y:0,
    dlg:[
      {tx:'貴様、何者だ。この村に何の用だ？',
       ch:[{t:'仲間になりたいのです！',sc:{battle:3}},
@@ -395,7 +430,7 @@ const NPCS=[
           {t:'守るべきものがあります',sc:{heal:2}}]},
      {tx:'その目、気に入った。真の騎士は力だけでなく、守る心を持つ者だ。'}
    ]},
-  {id:'healer',name:'薬師のルナ',emoji:'💚',x:9,y:11,
+  {id:'healer',name:'薬師のルナ',emoji:'💚',x:0,y:0,
    dlg:[
      {tx:'こんにちは旅人さん。お体の調子はいかがですか？',
       ch:[{t:'元気いっぱいです！',sc:{heal:1}},
@@ -403,7 +438,7 @@ const NPCS=[
           {t:'薬草の使い方を教えて',sc:{nature:2}}]},
      {tx:'癒しとは他者への思いやりから生まれます。あなたの優しい心が周りを救うでしょう。'}
    ]},
-  {id:'bard',name:'吟遊詩人のフィン',emoji:'🎵',x:10,y:9,
+  {id:'bard',name:'吟遊詩人のフィン',emoji:'🎵',x:0,y:0,
    dlg:[
      {tx:'♪ 旅人よ、歌を聴いてゆかないか？',
       ch:[{t:'ぜひ聴かせてください！',sc:{free:2,magic:1}},
@@ -419,12 +454,12 @@ const NPCS=[
 // ITEMS
 // ════════════════════════════════════════════
 const IDEF=[
-  {id:'h1',type:'herb',  emoji:'🌿',x:8, y:2, name:'薬草',   desc:'HP+10'},
-  {id:'h2',type:'herb',  emoji:'🌿',x:17,y:8, name:'薬草',   desc:'HP+10'},
-  {id:'h3',type:'herb',  emoji:'🌿',x:2, y:15,name:'薬草',   desc:'HP+10'},
-  {id:'c1',type:'crystal',emoji:'💎',x:11,y:3, name:'魔法石', desc:'占い精度UP'},
-  {id:'c2',type:'crystal',emoji:'💎',x:8, y:17,name:'魔法石', desc:'占い精度UP'},
-  {id:'s1',type:'scroll', emoji:'📜',x:17,y:15,name:'謎の巻物',desc:'神父がより詳しく占う'},
+  {id:'h1',type:'herb',  emoji:'🌿',x:0,y:0,name:'薬草',   desc:'HP+10'},
+  {id:'h2',type:'herb',  emoji:'🌿',x:0,y:0,name:'薬草',   desc:'HP+10'},
+  {id:'h3',type:'herb',  emoji:'🌿',x:0,y:0,name:'薬草',   desc:'HP+10'},
+  {id:'c1',type:'crystal',emoji:'💎',x:0,y:0,name:'魔法石', desc:'占い精度UP'},
+  {id:'c2',type:'crystal',emoji:'💎',x:0,y:0,name:'魔法石', desc:'占い精度UP'},
+  {id:'s1',type:'scroll', emoji:'📜',x:0,y:0,name:'謎の巻物',desc:'神父がより詳しく占う'},
 ];
 
 // ════════════════════════════════════════════
