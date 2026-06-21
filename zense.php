@@ -181,7 +181,7 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
       </div>
     </div>
     <button class="submit-btn" onclick="diagnose()">前世を読み解く</button>
-    <p style="font-size:.65rem;color:var(--muted);text-align:center;margin-top:.8rem;line-height:1.7">入力された情報はサーバーに送信・保存されません。<br>同じ名前・生年月日からは毎回同じ結果が表示されます。</p>
+    <p style="font-size:.65rem;color:var(--muted);text-align:center;margin-top:.8rem;line-height:1.7">入力された情報はサーバーに送信・保存されません。<br>同じ名前・生年月日からは毎回同じ結果が表示されます。<br><span style="color:rgba(138,125,181,.5)">※本サービスはエンターテインメントです。重要な判断の根拠にはしないでください。</span></p>
   </div>
 
   <div id="result">
