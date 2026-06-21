@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+﻿<?php declare(strict_types=1); ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,6 +12,15 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+#google_translate_element{font-size:.65rem}
+#google_translate_element .goog-te-gadget{color:transparent}
+#google_translate_element .goog-te-gadget select{background:rgba(8,6,15,.9);color:#8a7db5;border:1px solid rgba(160,130,220,.3);border-radius:6px;font-size:.65rem;padding:.15rem .3rem;cursor:pointer}
+.goog-te-banner-frame{display:none!important}
+body{top:0!important}
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Shippori+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
@@ -161,6 +170,7 @@ footer a:hover{color:var(--gold)}
       <a href="/kyusei.php">九星気学</a>
       RPG占い
     </nav>
+    <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
     <div class="sp-dropdown" id="spDropdown">
       <a href="/">トップ</a>
@@ -1072,6 +1082,9 @@ function jobClass(){
 // ════════════════════════════════════════════
 // SP MENU / RESET
 // ════════════════════════════════════════════
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
+}
 function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
 document.addEventListener('click',e=>{
   if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown'))
@@ -1098,3 +1111,4 @@ window.addEventListener('resize',resize);
 </script>
 </body>
 </html>
+
