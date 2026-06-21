@@ -209,6 +209,8 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .form-label{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted);display:block;margin-bottom:.45rem}
 .form-input{width:100%;background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s}
 .form-input:focus{border-color:var(--violet)}
+select.form-input{background-color:#1e1738;color:var(--text);-webkit-appearance:none;appearance:none}
+select.form-input option{background:#1e1738;color:var(--text)}
 .person-card{background:rgba(0,0,0,.2);border:1px solid var(--border);border-radius:12px;padding:1.2rem}
 .person-title{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.15em;color:var(--rose);margin-bottom:.8rem;text-align:center}
 .person-title.you{color:var(--teal)}
@@ -227,8 +229,9 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .celeb-tag{font-family:var(--ff-mono);font-size:.68rem;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.25);border-radius:20px;padding:.3rem .75rem;color:var(--gold-lt);cursor:pointer;transition:background .15s;white-space:nowrap}
 .celeb-tag:hover{background:rgba(201,168,76,.25)}
 .celeb-tag.user-added{border-color:rgba(78,205,196,.3);background:rgba(78,205,196,.08);color:var(--teal)}
-.celeb-add{display:flex;gap:.5rem;margin-top:.5rem}
-.celeb-add input{flex:1;background:rgba(78,205,196,.06);border:1px solid rgba(78,205,196,.2);border-radius:8px;padding:.5rem .8rem;font-family:var(--ff-sans);font-size:.85rem;color:var(--text);outline:none}
+.celeb-add{display:flex;gap:.5rem;margin-top:.5rem;flex-wrap:wrap}
+.celeb-add input{flex:1;min-width:0;background:rgba(78,205,196,.06);border:1px solid rgba(78,205,196,.2);border-radius:8px;padding:.5rem .8rem;font-family:var(--ff-sans);font-size:.85rem;color:var(--text);outline:none}
+input[type="date"].celeb-add-date{flex:0 0 auto;width:100%;}
 .celeb-add input:focus{border-color:var(--teal)}
 .celeb-add-btn{background:rgba(78,205,196,.15);border:1px solid rgba(78,205,196,.3);border-radius:8px;padding:.5rem 1rem;font-family:var(--ff-mono);font-size:.72rem;color:var(--teal);cursor:pointer;white-space:nowrap;transition:background .15s}
 .celeb-add-btn:hover{background:rgba(78,205,196,.3)}
@@ -567,7 +570,7 @@ footer a:hover{color:var(--gold)}
         <div style="font-family:var(--ff-mono);font-size:.62rem;color:var(--teal);margin-bottom:.4rem">+ 有名人を追加する</div>
         <div class="celeb-add">
           <input type="text" id="celebNameInput" placeholder="名前（例：山田花子）">
-          <input type="date" id="celebBirthInput" style="width:150px;flex:none">
+          <input type="date" id="celebBirthInput" style="flex:1;min-width:0;max-width:100%">
           <button class="celeb-add-btn" onclick="addCeleb()">追加</button>
         </div>
       </div>
