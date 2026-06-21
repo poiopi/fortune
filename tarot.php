@@ -1,5 +1,5 @@
-  <?php declare(strict_types=1); ?>
-  <!DOCTYPE html>
+<?php declare(strict_types=1); ?>
+<!DOCTYPE html>
   <html lang="ja">
   <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
