@@ -61,8 +61,8 @@ function getLuckyDirections(int $star): array {
 $result = null;
 $errors = [];
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $birthdate = trim($_POST['birthdate'] ?? '');
+if (isset($_GET['birthdate']) && $_GET['birthdate'] !== '') {
+    $birthdate = trim($_GET['birthdate'] ?? '');
     if (empty($birthdate)) {
         $errors[] = '生年月日を入力してください。';
     }
@@ -241,10 +241,10 @@ footer a:hover{color:var(--gold)}
     <?php if (!empty($errors)): ?>
     <div class="error-box"><?php foreach ($errors as $e): ?><?= htmlspecialchars($e) ?><?php endforeach; ?></div>
     <?php endif; ?>
-    <form method="post" action="">
+    <form method="get" action="">
       <div class="form-group">
         <label class="form-label" for="birthdate">生年月日</label>
-        <input class="form-input" type="date" id="birthdate" name="birthdate" value="<?= htmlspecialchars($_POST['birthdate'] ?? '') ?>">
+        <input class="form-input" type="date" id="birthdate" name="birthdate" value="<?= htmlspecialchars($_GET['birthdate'] ?? '') ?>">
       </div>
       <button class="submit-btn" type="submit">本命星を算出する ✦</button>
     </form>

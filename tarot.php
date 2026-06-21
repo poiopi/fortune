@@ -679,6 +679,7 @@ function showResult() {
     <button class="retry-btn" onclick="resetAll()">&#8617; もう一度カードを引く</button>
   `;
 
+  window._shareText = `${card.name}（${dirLabel}）が出ました！✨`;
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
@@ -704,9 +705,14 @@ window.addEventListener('resize', () => {
 </script>
 <script>
 function openShare(type){
-  const u=encodeURIComponent(location.href);
-  const t=encodeURIComponent(document.title);
-  const urls={line:'https://social-plugins.line.me/lineit/share?url='+u,x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
+  const url=location.href;
+  const u=encodeURIComponent(url);
+  const txt=(window._shareText||document.title);
+  const urls={
+    line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt+'\n'+url),
+    x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt+' ')+u,
+    fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
+  };
   window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
 }
 function copyShareUrl(){

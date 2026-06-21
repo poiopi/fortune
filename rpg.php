@@ -1034,6 +1034,7 @@ function calcFortune(){
   document.getElementById('frmOv').classList.remove('on');
   document.getElementById('resOv').classList.add('on');
   phase='result';
+  window._shareText=`RPG占い結果：${zod.name}の${job.emoji}${job.name}（運命数${lp}）✨`;
 }
 
 function rsec(lbl,body){
@@ -1105,9 +1106,14 @@ function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
 function openShare(type){
-  const u=encodeURIComponent(location.href);
-  const t=encodeURIComponent(document.title);
-  const urls={line:'https://social-plugins.line.me/lineit/share?url='+u,x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
+  const url=location.href;
+  const u=encodeURIComponent(url);
+  const txt=(window._shareText||document.title);
+  const urls={
+    line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt+'\n'+url),
+    x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt+' ')+u,
+    fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
+  };
   window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
 }
 function copyShareUrl(){
