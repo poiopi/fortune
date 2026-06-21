@@ -504,17 +504,24 @@ const ctx=cv.getContext('2d');
 const gvp=document.getElementById('gvp');
 const pin=document.getElementById('pin');
 
+let _scale=1;
 function resize(){
   const w=Math.min(gvp.parentElement.clientWidth-2, VPC*TS);
-  const scale=w/(VPC*TS);
-  const h=Math.round(VPR*TS*scale);
+  _scale=w/(VPC*TS);
+  const h=Math.round(VPR*TS*_scale);
   cv.width=VPC*TS; cv.height=VPR*TS;
   cv.style.width=w+'px'; cv.style.height=h+'px';
   gvp.style.height=h+'px';
-  pin.style.left=Math.round(w/2)+'px';
-  pin.style.top=Math.round(h/2)+'px';
-  pin.style.fontSize=Math.round(TS*scale*.72)+'px';
+  pin.style.fontSize=Math.round(TS*_scale*.72)+'px';
   draw();
+}
+
+function updatePin(){
+  const{cx,cy}=cam();
+  const px=Math.round((pl.x-cx)*TS*_scale+TS*_scale/2);
+  const py=Math.round((pl.y-cy)*TS*_scale+TS*_scale/2);
+  pin.style.left=px+'px';
+  pin.style.top=py+'px';
 }
 
 function cam(){
@@ -635,6 +642,9 @@ function draw(){
     }
   });
 
+  // プレイヤーピン位置を更新
+  updatePin();
+
   // 5人達成後の教会誘導メッセージ
   if(visited.size>=5 && phase==='explore'){
     ctx.fillStyle='rgba(201,168,76,.92)';
@@ -725,10 +735,14 @@ function pickup(){
   });
 }
 
+let _talkLock=false;
 function popup(msg){
   const el=document.getElementById('ipop');
   el.textContent=msg; el.classList.add('on');
+  // アイテム取得直後のSpace誤爆防止（0.6秒ロック）
+  _talkLock=true;
   clearTimeout(el._t);
+  el._lt=setTimeout(()=>{_talkLock=false;},600);
   el._t=setTimeout(()=>el.classList.remove('on'),2600);
 }
 
@@ -736,6 +750,7 @@ function popup(msg){
 // DIALOG
 // ════════════════════════════════════════════
 function talk(){
+  if(_talkLock) return;
   const n=NPCS.find(n=>adj(n.x,n.y));
   if(!n) return;
   curNpc=n; dlgIdx=0;
