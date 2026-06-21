@@ -303,6 +303,13 @@ footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
 .sp-menu-btn{display:none}
 .sp-dropdown{display:none}
+/* 2カラムレイアウト */
+.main-layout{display:grid;grid-template-columns:1fr 320px;gap:1.5rem;align-items:start;margin-bottom:2rem}
+.main-col{}
+.sidebar-col{position:sticky;top:70px}
+/* サイドバー内のceleb/calはmargin-bottomのみ */
+.sidebar-col .celeb-section{margin-bottom:1.2rem}
+.sidebar-col .cal-section{margin-bottom:0}
 @media(max-width:768px){
   .header-nav{display:none}
   .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer}
@@ -312,6 +319,9 @@ footer a:hover{color:var(--gold)}
   .sp-dropdown span{color:var(--text)}
   .sp-dropdown a:last-child,.sp-dropdown span:last-child{border-bottom:none}
   .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
+  .main-layout{grid-template-columns:1fr}
+  .sidebar-col{position:static;order:2}
+  .main-col{order:1}
 }
 </style>
 </head>
@@ -353,101 +363,84 @@ footer a:hover{color:var(--gold)}
 
   <div class="adsense-space"></div>
 
-  <!-- 有名人セクション -->
-  <div class="celeb-section">
-    <div class="celeb-title">💫 有名人の誕生日から選ぶ</div>
-    <p class="celeb-note">※誕生日データは一般公開情報を元にしています。正確性は保証されません。参考としてお楽しみください。<br>自分で追加したデータはこのブラウザに保存されます。</p>
-    <input type="text" class="celeb-search" placeholder="名前で検索..." id="celebSearch" oninput="filterCelebs()">
-    <div class="celeb-list" id="celebList"></div>
-    <div style="font-family:var(--ff-mono);font-size:.62rem;color:var(--teal);margin-bottom:.4rem">+ 有名人を追加する</div>
-    <div class="celeb-add">
-      <input type="text" id="celebNameInput" placeholder="名前（例：山田花子）">
-      <input type="date" id="celebBirthInput" style="width:150px;flex:none">
-      <button class="celeb-add-btn" onclick="addCeleb()">追加</button>
-    </div>
-  </div>
+  <!-- 2カラムレイアウト -->
+  <div class="main-layout">
 
-  <!-- 誕生日カレンダー -->
-  <div class="cal-section">
-    <div class="cal-title">📅 誕生日カレンダーから選ぶ（1月）</div>
-    <p class="cal-note">※日付ボタンをタップすると、その日が誕生日の有名人・キャラクターが表示されます。名前をタップするとお相手欄に自動入力されます。<br>誕生日データは参考情報です。正確性は保証されません。年は参考値として1990年を使用しています。</p>
-    <div class="cal-month-tabs" id="calMonthTabs"></div>
-    <div class="cal-days" id="calDays"></div>
-    <div class="cal-names" id="calNames"><span class="cal-empty">日付を選んでください</span></div>
-  </div>
+    <!-- 左：メインカラム（フォーム＋結果） -->
+    <div class="main-col">
 
-  <!-- フォーム -->
-  <div class="form-card">
-    <div class="form-title">✦ 誕生日を入力 ✦</div>
-    <?php if(!empty($errors)):?>
-    <div class="error-box"><?=implode('<br>',$errors)?></div>
-    <?php endif;?>
-    <form method="get" action="">
-      <div class="form-grid">
-        <div class="person-card">
-          <div class="person-title you">💙 あなた</div>
-          <div class="form-group">
-            <label class="form-label">お名前（任意）</label>
-            <input class="form-input" type="text" name="your_name" id="your_name"
-              value="<?=$yourName?>" placeholder="例：山田さん">
-          </div>
-          <div class="form-group">
-            <label class="form-label">誕生日</label>
-            <div style="display:flex;gap:.5rem;align-items:center">
-              <select class="form-input" name="your_month" id="your_month" required style="flex:1">
-                <option value="">月</option>
-                <?php for($i=1;$i<=12;$i++):?>
-                <option value="<?=$i?>"<?=$ym===$i?' selected':''?>><?=$i?>月</option>
-                <?php endfor;?>
-              </select>
-              <select class="form-input" name="your_day" id="your_day" required style="flex:1">
-                <option value="">日</option>
-                <?php for($i=1;$i<=31;$i++):?>
-                <option value="<?=$i?>"<?=$yd===$i?' selected':''?>><?=$i?>日</option>
-                <?php endfor;?>
-              </select>
+      <!-- フォーム -->
+      <div class="form-card">
+        <div class="form-title">✦ 誕生日を入力 ✦</div>
+        <?php if(!empty($errors)):?>
+        <div class="error-box"><?=implode('<br>',$errors)?></div>
+        <?php endif;?>
+        <form method="get" action="">
+          <div class="form-grid">
+            <div class="person-card">
+              <div class="person-title you">💙 あなた</div>
+              <div class="form-group">
+                <label class="form-label">お名前（任意）</label>
+                <input class="form-input" type="text" name="your_name" id="your_name"
+                  value="<?=$yourName?>" placeholder="例：山田さん">
+              </div>
+              <div class="form-group">
+                <label class="form-label">誕生日</label>
+                <div style="display:flex;gap:.5rem;align-items:center">
+                  <select class="form-input" name="your_month" id="your_month" required style="flex:1">
+                    <option value="">月</option>
+                    <?php for($i=1;$i<=12;$i++):?>
+                    <option value="<?=$i?>"<?=$ym===$i?' selected':''?>><?=$i?>月</option>
+                    <?php endfor;?>
+                  </select>
+                  <select class="form-input" name="your_day" id="your_day" required style="flex:1">
+                    <option value="">日</option>
+                    <?php for($i=1;$i<=31;$i++):?>
+                    <option value="<?=$i?>"<?=$yd===$i?' selected':''?>><?=$i?>日</option>
+                    <?php endfor;?>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="person-card">
+              <div class="person-title">💗 お相手</div>
+              <div class="form-group">
+                <label class="form-label">お名前（任意）</label>
+                <input class="form-input" type="text" name="partner_name" id="partner_name"
+                  value="<?=$partnerName?>" placeholder="例：田中さん">
+              </div>
+              <div class="form-group">
+                <label class="form-label">誕生日</label>
+                <div style="display:flex;gap:.5rem;align-items:center">
+                  <select class="form-input" name="partner_month" id="partner_month" required style="flex:1">
+                    <option value="">月</option>
+                    <?php for($i=1;$i<=12;$i++):?>
+                    <option value="<?=$i?>"<?=$pm===$i?' selected':''?>><?=$i?>月</option>
+                    <?php endfor;?>
+                  </select>
+                  <select class="form-input" name="partner_day" id="partner_day" required style="flex:1">
+                    <option value="">日</option>
+                    <?php for($i=1;$i<=31;$i++):?>
+                    <option value="<?=$i?>"<?=$pd===$i?' selected':''?>><?=$i?>日</option>
+                    <?php endfor;?>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="person-card">
-          <div class="person-title">💗 お相手</div>
-          <div class="form-group">
-            <label class="form-label">お名前（任意）</label>
-            <input class="form-input" type="text" name="partner_name" id="partner_name"
-              value="<?=$partnerName?>" placeholder="例：田中さん">
-          </div>
-          <div class="form-group">
-            <label class="form-label">誕生日</label>
-            <div style="display:flex;gap:.5rem;align-items:center">
-              <select class="form-input" name="partner_month" id="partner_month" required style="flex:1">
-                <option value="">月</option>
-                <?php for($i=1;$i<=12;$i++):?>
-                <option value="<?=$i?>"<?=$pm===$i?' selected':''?>><?=$i?>月</option>
-                <?php endfor;?>
-              </select>
-              <select class="form-input" name="partner_day" id="partner_day" required style="flex:1">
-                <option value="">日</option>
-                <?php for($i=1;$i<=31;$i++):?>
-                <option value="<?=$i?>"<?=$pd===$i?' selected':''?>><?=$i?>日</option>
-                <?php endfor;?>
-              </select>
-            </div>
-          </div>
-        </div>
+          <button type="submit" class="submit-btn">💘 相性を鑑定する</button>
+        </form>
       </div>
-      <button type="submit" class="submit-btn">💘 相性を鑑定する</button>
-    </form>
-  </div>
 
-  <!-- 結果 -->
-  <?php if($result):
-    $r=$result;
-    $yLabel=$r['yourName']!==''?$r['yourName'].'さん':'あなた';
-    $pLabel=$r['partnerName']!==''?$r['partnerName'].'さん':'お相手';
-    $marriageScores=[1=>'縁遠い',2=>'普通',3=>'相性まずまず',4=>'相性良好',5=>'運命的な相手'];
-    $loverScores  =[1=>'ドキドキ少なめ',2=>'穏やかな関係',3=>'楽しい恋人',4=>'情熱的な恋',5=>'運命の恋人'];
-  ?>
-  <div class="result-wrap">
+      <!-- 結果 -->
+      <?php if($result):
+        $r=$result;
+        $yLabel=$r['yourName']!==''?$r['yourName'].'さん':'あなた';
+        $pLabel=$r['partnerName']!==''?$r['partnerName'].'さん':'お相手';
+        $marriageScores=[1=>'縁遠い',2=>'普通',3=>'相性まずまず',4=>'相性良好',5=>'運命的な相手'];
+        $loverScores  =[1=>'ドキドキ少なめ',2=>'穏やかな関係',3=>'楽しい恋人',4=>'情熱的な恋',5=>'運命の恋人'];
+      ?>
+      <div class="result-wrap" id="result">
     <div class="result-header">
       <div class="pair-display">
         <div class="pair-sign">
@@ -555,9 +548,42 @@ footer a:hover{color:var(--gold)}
       </div>
     </div>
 
-    <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
-  </div>
-  <?php endif;?>
+        <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
+      </div>
+      <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});</script>
+      <?php endif;?>
+
+    </div><!-- /main-col -->
+
+    <!-- 右：サイドバー（有名人＋カレンダー） -->
+    <div class="sidebar-col">
+
+      <!-- 有名人セクション -->
+      <div class="celeb-section">
+        <div class="celeb-title">💫 有名人の誕生日から選ぶ</div>
+        <p class="celeb-note">※誕生日データは一般公開情報を元にしています。正確性は保証されません。参考としてお楽しみください。<br>自分で追加したデータはこのブラウザに保存されます。</p>
+        <input type="text" class="celeb-search" placeholder="名前で検索..." id="celebSearch" oninput="filterCelebs()">
+        <div class="celeb-list" id="celebList"></div>
+        <div style="font-family:var(--ff-mono);font-size:.62rem;color:var(--teal);margin-bottom:.4rem">+ 有名人を追加する</div>
+        <div class="celeb-add">
+          <input type="text" id="celebNameInput" placeholder="名前（例：山田花子）">
+          <input type="date" id="celebBirthInput" style="width:150px;flex:none">
+          <button class="celeb-add-btn" onclick="addCeleb()">追加</button>
+        </div>
+      </div>
+
+      <!-- 誕生日カレンダー -->
+      <div class="cal-section">
+        <div class="cal-title">📅 誕生日カレンダーから選ぶ</div>
+        <p class="cal-note">※日付ボタンをタップすると、その日が誕生日の有名人が表示されます。名前をタップするとお相手欄に自動入力されます。<br>誕生日データは参考情報です。正確性は保証されません。年は参考値として1990年を使用しています。</p>
+        <div class="cal-month-tabs" id="calMonthTabs"></div>
+        <div class="cal-days" id="calDays"></div>
+        <div class="cal-names" id="calNames"><span class="cal-empty">日付を選んでください</span></div>
+      </div>
+
+    </div><!-- /sidebar-col -->
+
+  </div><!-- /main-layout -->
 
   <div class="adsense-space"></div>
 </div>
@@ -764,6 +790,190 @@ const BIRTHDAY_DB = {
   '06-28':['分島花音','三森すずこ','昆夏美','濱田岳','カン・ミンヒョク','ソヒョン','山﨑愛生'],
   '06-29':['菅原紗由理','木村昴','シン・ドンホ','上野圭澄'],
   '06-30':['天月-あまつき-','夏帆','菊地あやか','キズナアイ'],
+  '07-01':['チャラン・ポ・ランタン','AZKi','イトゥク'],
+  '07-02':['三宅健','金澤朋子','大空スバル'],
+  '07-03':['板野友美','岡崎体育','賀来賢人'],
+  '07-04':['増田貴久','菊地最愛','ユン・ドゥジュン'],
+  '07-05':['山田優','大谷翔平','宝鐘マリン'],
+  '07-06':['齊藤なぎさ','小鳥遊キアラ'],
+  '07-07':['生田衣梨奈','真彩希帆'],
+  '07-08':['古畑星夏','パク・キョン'],
+  '07-09':['草彅剛','Aimer','池松壮亮'],
+  '07-10':['前田敦子','田中圭','キム・ヒチョル','森田ひかる'],
+  '07-11':['加藤シゲアキ'],
+  '07-12':['百田夏菜子','石橋杏奈','インソン','鈴谷アキ'],
+  '07-13':['道重さゆみ','のん'],
+  '07-14':['山本彩','久保史緒里'],
+  '07-15':['柏木由紀','橋本良亮','森本慎太郎'],
+  '07-16':['宇野実彩子','山田哲人','小嶋花梨','勇気ちひろ'],
+  '07-17':['井上玲音','北野日奈子'],
+  '07-18':['広末涼子','テミン','山本美月'],
+  '07-19':['藤木直人','オ・ハヨン'],
+  '07-20':['石神のぞみ'],
+  '07-21':['はるな愛','SoRi','ベクホ'],
+  '07-22':['吉高由里子','タブロ','夏色まつり'],
+  '07-23':['内田彩','ファサ','後藤楽々','河田陽菜','伏見ガク'],
+  '07-24':['坂本昌行','水川あさみ','ハン・スンヨン'],
+  '07-25':['仲俣汐里','平山遊季'],
+  '07-26':['秋元才加','加藤夏希','山下美月'],
+  '07-27':['星野真里','渡邉理佐','ヒュニン・バヒエ'],
+  '07-28':['矢井田瞳','逢沢りな','ヒョジョン','レオス・ヴィンセント'],
+  '07-29':['望月理世','村重杏奈','五百城茉央'],
+  '07-30':['木村良平','宮崎美穂','小瀧望'],
+  '07-31':['愛内里菜','遠藤舞','ニコラス・エドワーズ','リジ'],
+  '08-01':['和田彩花','ティファニー・ヤング','ヨンウ','キム・チェウォン','黒川智花','柊瑠美','清宮レイ'],
+  '08-02':['マーク','ジョンア'],
+  '08-03':['熊井友理奈','白石隼也','カン・ミンギョン','キム・ヒョンジュン'],
+  '08-04':['白濱亜嵐','七詩ムメイ','小野ゆり子'],
+  '08-05':['柴咲コウ','王一博','シヒョン','チョ・スンヨン'],
+  '08-06':['奥菜恵','石原夏織','麻生夏子','二階堂高嗣'],
+  '08-07':['ロウン','大西流星','藤嶌果歩'],
+  '08-08':['逢田梨香子','橋本マナミ','エスクプス','シャオジュン','賀喜遥香','常闇トワ'],
+  '08-09':['木南晴夏','ファン・ミニョン','中村一葉'],
+  '08-10':['安倍なつみ','中島裕翔','速水もこみち','齋藤飛鳥','赤井はあと'],
+  '08-11':['蒼井翔太','チャンビン'],
+  '08-12':['宮澤佐江','ルナ','チェ・ユジン','電脳少女シロ'],
+  '08-13':['篠原涼子','ジェミン','ユン・ボミ'],
+  '08-14':['ゴンチャン','ヒュニンカイ','矢久保美緒'],
+  '08-15':['岡田将生','小倉唯','ナオト・インティライミ','椎名唯華'],
+  '08-16':['西田ひかる','斉藤朱夏','リナ・サワヤマ','ダルビッシュ有','ニエル'],
+  '08-17':['華原朋美','戸田恵梨香','山本由伸','オム・ジョンファ'],
+  '08-18':['中居正広','成海璃子','鈴木誠也','G-DRAGON','チョン・ウンジ'],
+  '08-19':['ディーン・フジオカ','チョンジン','オムジ','エリン','ボナ'],
+  '08-20':['白石麻衣','森山未來','秋元真夏','カウン','大神ミオ'],
+  '08-21':['萩原聖人','ソン・スンヒョン','キム・キボム'],
+  '08-22':['斎藤工','菅野美穂','北川景子','チョン・ソミン'],
+  '08-23':['五十嵐健人','東村芽依','中井りか'],
+  '08-24':['三浦大知','NCT DREAM','吉田麻也','イェソン','ボミン','早川聖来'],
+  '08-25':['夏焼雅','クリス・ハート','オン・ソンウ','ドウン','渋谷凪咲'],
+  '08-26':['重岡大毅','キム・ミンソク','キム・ユンジ'],
+  '08-27':['剛力彩芽','松村沙友理','イ・ソンヨル','猫又おかゆ'],
+  '08-28':['福原遥','雨宮天','AK-69','チョ・グォン','金世正'],
+  '08-29':['片寄涼太','浜辺美波','千葉翔也','藤吉夏鈴','ソンフン'],
+  '08-30':['松本潤','チャオ・ルー','ホ・ヨンジ'],
+  '08-31':['桐山照史','チャン・ウォニョン','本間ひまわり'],
+  '09-01':['JUNG KOOK','アン・ユジン','三浦理恵子'],
+  '09-02':['今市隆二','鈴木くるみ'],
+  '09-03':['梶裕貴','染谷将太','ジョイ','浅倉樹々'],
+  '09-04':['島谷ひとみ','中丸雄一','あの','長濱ねる'],
+  '09-05':['BoA','齊藤京子'],
+  '09-06':['氷川きよし','百鬼あやめ'],
+  '09-07':['山﨑賢人','小坂菜緒'],
+  '09-08':['本仮屋ユイカ','関智一','獅白ぼたん'],
+  '09-09':['大塚愛','酒井若菜','堀米悠斗'],
+  '09-10':['松田翔太','上木彩矢','金村美玖'],
+  '09-11':['倉持明日香','安田章大','大島麻衣'],
+  '09-12':['長友佑都','RM','田中美久'],
+  '09-13':['ヨンジュン','玉置浩二','大園桃子'],
+  '09-14':['上戸彩','安達祐実','ジコ','ハン'],
+  '09-15':['アンジェラ・アキ','フィリックス'],
+  '09-16':['森下純菜','山岸奈津美'],
+  '09-17':['松岡禎丞','北山宏光','ユア'],
+  '09-18':['大貫亜美','大森靖子','杉野遥亮','エンバ','冨里奈央'],
+  '09-19':['西川貴教','渡辺美優紀'],
+  '09-20':['安室奈美恵','堀江由衣','一青窈','ガイン'],
+  '09-21':['二階堂ふみ','チェン','ミナ','不破湊'],
+  '09-22':['今井絵理子','宮近海斗','ジニョン','ヒョヨン'],
+  '09-23':['後藤真希','キー','ウギ','寺田蘭世'],
+  '09-24':['早乙女太一','イ・テイル','瀧野由美子'],
+  '09-25':['高槻かなこ'],
+  '09-26':['上間綾乃','キム・ジヌ'],
+  '09-27':['中田敦彦','内田理央','クォン・ウンビ','髙橋未来虹'],
+  '09-28':['山﨑天','工藤由愛'],
+  '09-29':['岸優太','チェ・イェナ'],
+  '09-30':['今泉佑唯'],
+  '10-01':['神田沙也加','鈴木みのり','戌神ころね'],
+  '10-02':['杉咲花','林瑠奈'],
+  '10-03':['高橋朱里','遠藤さくら'],
+  '10-04':['上田竜也','岩立沙穂','ジョンハン'],
+  '10-05':['小野賢章','白上フブキ'],
+  '10-06':['堀北真希','本田仁美'],
+  '10-07':['生田斗真','加藤和樹'],
+  '10-08':['平野綾','ウエンツ瑛士','ホ・ユンジン'],
+  '10-09':['長野博','夏川りみ'],
+  '10-10':['栗山千明','ペ・スジ','姫森ルーナ'],
+  '10-11':['秦基博','金城武'],
+  '10-12':['ともさかりえ','伊藤美来'],
+  '10-13':['益若つばさ','石川界人','JIMIN'],
+  '10-14':['白間美瑠','ちゃんみな'],
+  '10-15':['水原希子','ドンヘ','ヒスン','堀未央奈'],
+  '10-16':['瀧本美織'],
+  '10-17':['大島優子','松坂桃李'],
+  '10-18':['仲里依紗','まふまふ'],
+  '10-19':['ヒジン'],
+  '10-20':['山田孝之','チュウ'],
+  '10-21':['May\'n','田村芽実','太田遥香'],
+  '10-22':['チョ・ユリ','B.I'],
+  '10-23':['渡辺直美','ミンニ','ニンニン','小林由依'],
+  '10-24':['木村カエラ','クリスタル','上國料萌衣'],
+  '10-25':['高垣彩陽','リノ'],
+  '10-26':['飯田里穂','中本悠太'],
+  '10-27':['青山テルマ','工藤遥','キム・ウソク'],
+  '10-28':['倉木麻衣','豊崎愛生'],
+  '10-29':['YURiKA'],
+  '10-30':['仲間由紀恵','鬼束ちひろ','佐藤勝利','ジゼル'],
+  '10-31':['須田亜香里','山本耕史'],
+  '11-01':['小倉優子','ジョンヨン','渡辺みり愛'],
+  '11-02':['深田恭子','諏訪ななか','パク・ウジン'],
+  '11-03':['錦戸亮','北村匠海','そらる','佐々木朗希'],
+  '11-04':['尾野真千子','T.O.P'],
+  '11-05':['鈴木このみ','BoA','渡辺翔太'],
+  '11-06':['SUPER JUNIOR','ウー・イーファン','大矢真那'],
+  '11-07':['長瀬智也','片瀬那奈','ディエイト'],
+  '11-08':['高橋メアリージュン','チェウォン','物述有栖'],
+  '11-09':['モモ','笹木咲','葛葉'],
+  '11-10':['田中れいな','手越祐也','本間日陽'],
+  '11-11':['鈴木達央','チェ・ミンファン','アルランディス'],
+  '11-12':['ナナヲアカリ','パク・サンダラ','平祐奈'],
+  '11-13':['木村拓哉','倖田來未'],
+  '11-14':['小池美波'],
+  '11-15':['峯岸みなみ','髙橋優斗','本郷奏多','雪花ラミィ'],
+  '11-16':['内田有紀','パク・ヒョンシク','佐藤詩織'],
+  '11-17':['城島茂','ユギョム'],
+  '11-18':['岡田准一','渡辺満里奈','名取さな'],
+  '11-19':['ゴウォン'],
+  '11-20':['山崎エリイ','小池栄子','久保怜音'],
+  '11-21':['指原莉乃','キム・ドンワン'],
+  '11-22':['aiko','清水佐紀','ウジ','キヒョン','川島如恵留'],
+  '11-23':['竹内朱莉'],
+  '11-24':['井之脇海','白銀ノエル'],
+  '11-25':['武藤十夢','ケビン'],
+  '11-26':['大野智','丸山隆平','福山潤','剣持刀也'],
+  '11-27':['浅野忠信','チャンヨル','阿部亮平'],
+  '11-28':['河北麻友子'],
+  '11-29':['田口淳之介','菅井友香','ミニョク'],
+  '11-30':['満島ひかり','知念侑李','藍井エイル'],
+  '12-01':['宮本佳林','任時完','湊あくあ','花譜'],
+  '12-02':['八乙女光','水瀬いのり'],
+  '12-03':['高岡早紀','壇蜜','入山杏奈','京本大我'],
+  '12-04':['JIN'],
+  '12-05':['観月ありさ','太田奈緒'],
+  '12-06':['保田圭','林遣都'],
+  '12-07':['桜田通','松尾レミ'],
+  '12-08':['横山由依','稲垣吾郎','ミンホ'],
+  '12-09':['高橋一生','NI-KI'],
+  '12-10':['カン・ダニエル','新田恵海'],
+  '12-11':['広瀬アリス','ヒョリン'],
+  '12-12':['瀬戸朝香','加藤あい','貫地谷しほり','V.I'],
+  '12-13':['家入レオ','永山瑛太'],
+  '12-14':['高畑充希','オニュ','井上小百合'],
+  '12-15':['ジュンス'],
+  '12-16':['桐谷美玲','DECO*27'],
+  '12-17':['福田明日香','Jessi','佐々木美玲'],
+  '12-18':['絢香','戌亥とこ'],
+  '12-19':['反町隆史','佐藤江梨子'],
+  '12-20':['中元すず香','道枝咲'],
+  '12-21':['馬嘉伶','松本日向'],
+  '12-22':['忽那汐里','ムンビョル'],
+  '12-23':['亀井絵里','倉科カナ','坂口渚沙'],
+  '12-24':['相葉雅紀','石原さとみ','中村倫也'],
+  '12-25':['武井咲'],
+  '12-26':['城田優','小栗旬','小栗有以'],
+  '12-27':['内田真礼','テギョン','稲場愛香'],
+  '12-28':['新川優愛','大家志津香'],
+  '12-29':['生駒里奈','サナ'],
+  '12-30':['藤原さくら','植村あかり','ユナ'],
+  '12-31':['市井紗耶香'],
 };
 
 (function(){
@@ -774,6 +984,12 @@ const BIRTHDAY_DB = {
     {mm:'04', label:'4月', days:30},
     {mm:'05', label:'5月', days:31},
     {mm:'06', label:'6月', days:30},
+    {mm:'07', label:'7月', days:31},
+    {mm:'08', label:'8月', days:31},
+    {mm:'09', label:'9月', days:30},
+    {mm:'10', label:'10月', days:31},
+    {mm:'11', label:'11月', days:30},
+    {mm:'12', label:'12月', days:31},
   ];
   const tabsEl  = document.getElementById('calMonthTabs');
   const daysEl  = document.getElementById('calDays');
