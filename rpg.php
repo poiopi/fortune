@@ -308,12 +308,10 @@ footer a:hover{color:var(--gold)}
 // ════════════════════════════════════════════
 // SPRITES
 // ════════════════════════════════════════════
-// キャラシートのサイズ
-// 横: 1254÷20スプライト=63px、縦: 1254÷8行=157px(行オフセット)
-// CSHはサンプリング高さ=126px（次行の頭が映り込まないよう小さめに）
-// 4方向セット: c=前(下), c+1=左, c+2=後(上), c+3=右
-const CSW=63, CSH=126, ROW_H=157; // グリッド幅63(1254÷20)で位置計算
-const CSW_SAMPLE=58; // 実際のサンプリング幅（隣キャラ混入防止）
+// キャラシートのサイズ: 1254×1254, 20列×7行
+// グリッド幅=63(1254÷20), 行高さ=157(1254÷8近似)
+// sw=サンプリング幅, sh=サンプリング高さ
+const ROW_H=157;
 
 const imgChar=new Image();
 imgChar.src='/characters.png';
@@ -321,21 +319,31 @@ let _imgReady=0;
 imgChar.onload=()=>{_imgReady=2;draw();};
 imgChar.onerror=()=>{_imgReady=99;draw();};
 
-// c は必ず4の倍数(0,4,8,12,16) = 各キャラの先頭コマ(前向き)
-// row0=戦士系, row1=魔道士系, row6=モンスター(7行→r:0〜6)
+// 各キャラの方向ごとのsx座標を個別指定（col×63）
+// sy=row×ROW_H, sw/sh=サンプリングサイズ
+function sp(row, c_down, c_left, c_right, c_up){
+  const G=63; // グリッド幅
+  return {
+    down:  {sx:c_down *G+2, sy:row*ROW_H, sw:58, sh:126},
+    left:  {sx:c_left *G+2, sy:row*ROW_H, sw:58, sh:126},
+    right: {sx:c_right*G+2, sy:row*ROW_H, sw:58, sh:126},
+    up:    {sx:c_up   *G+2, sy:row*ROW_H, sw:58, sh:126},
+  };
+}
+// row, 前(下), 左, 右, 後(上) の列番号
 const CSPR={
-  player:  {c:8,  r:0},  // 赤系勇者
-  smith:   {c:0,  r:0},  // 茶色い戦士
-  witch:   {c:4,  r:0},  // 緑フード
-  merchant:{c:12, r:0},  // 黄色系
-  knight:  {c:0,  r:1},  // 鎧系
-  bard:    {c:16, r:0},  // 灰銀系
-  healer:  {c:8,  r:1},  // 白系
-  grandma: {c:12, r:1},  // 老人系
-  priest:  {c:4,  r:1},  // 紫マント
-  thug:    {c:0,  r:6},  // ゴブリン
-  guardian:{c:4,  r:6},  // 悪魔系
-  slime:   {c:12, r:6},  // スライム
+  player:  sp(0,  8,  9, 10,  8),  // 上は前と同じ(後ろ向きなし)
+  smith:   sp(0,  0,  1,  2,  0),
+  witch:   sp(0,  4,  5,  6,  4),
+  merchant:sp(0, 12, 13, 14, 12),
+  knight:  sp(1,  0,  1,  2,  0),
+  bard:    sp(0, 16, 17, 18, 16),
+  healer:  sp(1,  8,  9, 10,  8),
+  grandma: sp(1, 12, 13, 14, 12),
+  priest:  sp(1,  4,  5,  6,  4),
+  thug:    sp(6,  0,  1,  2,  0),
+  guardian:sp(6,  4,  5,  6,  4),
+  slime:   sp(6, 12, 13, 14, 12),
 };
 
 const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
@@ -348,15 +356,10 @@ function drawTile(type,dx,dy){
 function drawChar(key,dx,dy,dir='down'){
   const sp=CSPR[key];
   if(!(_imgReady>=2&&sp)) return;
-  let col=sp.c, flipH=false;
-  if(dir==='left')       col=sp.c+1;
-  else if(dir==='right') col=sp.c+2;
-  // up: 後ろ向きスプライトなし→正面(c)をそのまま使用
-  // down: col=sp.c (default)
-  const sx=col*CSW+2, sy=sp.r*ROW_H; // +2で左端の隣キャラをカット
+  const f=sp[dir]||sp['down'];
   const dw=Math.round(TS*1.2), dh=Math.round(TS*1.8);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
-  ctx.drawImage(imgChar,sx,sy,CSW_SAMPLE,CSH,ddx,ddy,dw,dh);
+  ctx.drawImage(imgChar,f.sx,f.sy,f.sw,f.sh,ddx,ddy,dw,dh);
 }
 
 // ════════════════════════════════════════════
