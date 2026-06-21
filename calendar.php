@@ -442,6 +442,7 @@ footer a:hover{color:var(--gold)}
       <a href="/mbti.php">MBTI×星座</a>
          <a href="/numerology.php">数秘術</a>
          <a href="/kyusei.php">九星気学</a>
+      <a href="/rpg.php">RPG占い</a>
     </nav>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
     <div class="sp-dropdown" id="spDropdown">
@@ -451,6 +452,7 @@ footer a:hover{color:var(--gold)}
       <a href="/mbti.php">MBTI×星座診断</a>
          <a href="/numerology.php">数秘術</a>
          <a href="/kyusei.php">九星気学</a>
+      <a href="/rpg.php">RPG占い</a>
     </div>
   </div>
 </header>
