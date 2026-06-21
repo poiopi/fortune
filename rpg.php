@@ -345,7 +345,8 @@ function drawChar(key,dx,dy,dir='down'){
   const fileDir=DIR_MAP[dir]||'front';
   const img=CHAR_IMGS[key]?.[fileDir];
   if(!img||!img.complete||!img.naturalWidth) return;
-  const dw=Math.round(TS*1.2), dh=Math.round(TS*1.8);
+  const dh=Math.round(TS*1.8);
+  const dw=Math.round(dh*img.naturalWidth/img.naturalHeight);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
   ctx.drawImage(img,0,0,img.naturalWidth,img.naturalHeight,ddx,ddy,dw,dh);
 }
