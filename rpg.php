@@ -298,8 +298,8 @@ footer a:hover{color:var(--gold)}
 // ════════════════════════════════════════════
 // SPRITES
 // ════════════════════════════════════════════
-// キャラシートの1コマサイズ(px)  1254÷20列=63、1254÷8行=157
-const CSW=63, CSH=157;
+// キャラシートの1コマサイズ(px)  1254÷10列=125、1254÷8行=157
+const CSW=125, CSH=157;
 
 const imgChar=new Image();
 imgChar.src='/characters.png';
@@ -307,20 +307,21 @@ let _imgReady=0;
 imgChar.onload=()=>{_imgReady=2;draw();};
 imgChar.onerror=()=>{_imgReady=99;draw();};
 
-// キャラクター座標 [col,row] — ずれたら数値を調整
+// キャラクター座標 [col,row]  col:0〜9, row:0〜7
+// row0=戦士系, row1=魔法使い系, row2〜5=その他, row6-7=モンスター
 const CSPR={
-  player:  {c:12,r:2},  // 青騎士
-  grandma: {c:12,r:1},  // 白ローブ
+  player:  {c:4, r:0},  // 青騎士
+  grandma: {c:5, r:1},  // 白/灰系
   smith:   {c:0, r:0},  // 茶色戦士
-  witch:   {c:0, r:4},  // 緑エルフ
-  merchant:{c:0, r:5},  // 旅人
-  knight:  {c:12,r:3},  // 黒騎士
-  healer:  {c:16,r:4},  // ピンク
-  bard:    {c:0, r:1},  // 赤髪
-  priest:  {c:16,r:1},  // 白ローブ神父
-  thug:    {c:0, r:6},  // ゴブリン
-  guardian:{c:8, r:6},  // 悪魔
-  slime:   {c:15,r:6},  // スライム
+  witch:   {c:2, r:0},  // 緑エルフ
+  merchant:{c:6, r:0},  // 黄色系
+  knight:  {c:3, r:0},  // 青緑騎士
+  healer:  {c:4, r:1},  // 白系
+  bard:    {c:7, r:0},  // 赤/橙
+  priest:  {c:2, r:1},  // 紫マント
+  thug:    {c:0, r:7},  // ゴブリン
+  guardian:{c:2, r:7},  // 悪魔
+  slime:   {c:7, r:7},  // スライム
 };
 
 const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
