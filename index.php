@@ -1172,11 +1172,22 @@ header.site-header{
           <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">二人の相性診断</div>
           <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">星座と数秘術で恋愛・結婚の相性を鑑定する</div>
         </div>
-        <a href="/aisho.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--rose),var(--gold));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(232,113,154,.3);">
+        <a href="/aisho" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--rose),var(--gold));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(232,113,154,.3);">
           診断する &#8594;
         </a>
       </div>
-   
+      <!-- 前世診断への導線 -->
+      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(155,114,239,.12) 0%,rgba(78,205,196,.08) 100%);border:1px solid rgba(155,114,239,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--violet-lt);text-transform:uppercase;margin-bottom:.3rem">Past Life Reading</div>
+          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">前世診断</div>
+          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">あなたは何回目の転生？魂のカルテを読み解く</div>
+        </div>
+        <a href="/zense" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--violet),var(--teal));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(155,114,239,.3);">
+          診断する &#8594;
+        </a>
+      </div>
+
       <!-- 結果（main-colの内側） -->
       <?php if ($result): ?>
       <section class="result-section" id="result">
