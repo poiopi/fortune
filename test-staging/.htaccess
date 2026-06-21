@@ -2,3 +2,16 @@ AuthType Basic
 AuthName "Staging"
 AuthUserFile /home/users/0/boo.jp-life-fun/web/test.life-fun.net/.htpasswd
 Require valid-user
+
+RewriteEngine On
+RewriteBase /
+
+# .php拡張子を省略したURLへ301リダイレクト（index.phpは除外）
+RewriteCond %{THE_REQUEST} \s/(?!index\.php)([^?\s]+)\.php[?\s] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 拡張子なしのURLで対応する.phpファイルを内部呼び出し
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^.]+)$ $1.php [L]
