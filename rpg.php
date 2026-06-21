@@ -298,9 +298,10 @@ footer a:hover{color:var(--gold)}
 // ════════════════════════════════════════════
 // SPRITES
 // ════════════════════════════════════════════
-// キャラシートの1コマサイズ(px)  1254÷20スプライト=63、1254÷8行=157
-// 各キャラは偶数列=前向き(下)、奇数列=後ろ向き(上)のペア
-const CSW=63, CSH=157;
+// キャラシートの1コマサイズ(px)
+// 4方向セット: c=前(下), c+1=左, c+2=後(上), c+3=右
+// 1254÷20スプライト≈63px/コマ、1254÷7行≈179px/行
+const CSW=63, CSH=179;
 
 const imgChar=new Image();
 imgChar.src='/characters.png';
@@ -308,21 +309,21 @@ let _imgReady=0;
 imgChar.onload=()=>{_imgReady=2;draw();};
 imgChar.onerror=()=>{_imgReady=99;draw();};
 
-// キャラクター座標  偶数c=前向き, c+1=後ろ向き
-// row0=戦士系, row1=魔道士系, row7=モンスター
+// c は必ず4の倍数(0,4,8,12,16) = 各キャラの先頭コマ(前向き)
+// row0=戦士系, row1=魔道士系, row6=モンスター(7行→r:0〜6)
 const CSPR={
-  player:  {c:6, r:0},   // 青緑の勇者
-  smith:   {c:0, r:0},   // 茶色い戦士
-  witch:   {c:4, r:0},   // 緑フード（魔女）
-  merchant:{c:12,r:0},   // 黄色系（商人）
-  knight:  {c:2, r:0},   // 暗色の騎士
-  bard:    {c:14,r:0},   // 橙赤（詩人）
-  healer:  {c:8, r:1},   // 白系（薬師）
-  grandma: {c:10,r:1},   // 老人系
-  priest:  {c:4, r:1},   // 紫マント（神父）
-  thug:    {c:0, r:7},   // ゴブリン
-  guardian:{c:2, r:7},   // 悪魔系
-  slime:   {c:14,r:7},   // スライム
+  player:  {c:8,  r:0},  // 赤系勇者
+  smith:   {c:0,  r:0},  // 茶色い戦士
+  witch:   {c:4,  r:0},  // 緑フード
+  merchant:{c:12, r:0},  // 黄色系
+  knight:  {c:0,  r:1},  // 鎧系
+  bard:    {c:16, r:0},  // 灰銀系
+  healer:  {c:8,  r:1},  // 白系
+  grandma: {c:12, r:1},  // 老人系
+  priest:  {c:4,  r:1},  // 紫マント
+  thug:    {c:0,  r:6},  // ゴブリン
+  guardian:{c:4,  r:6},  // 悪魔系
+  slime:   {c:12, r:6},  // スライム
 };
 
 const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
@@ -331,25 +332,19 @@ function drawTile(type,dx,dy){
   ctx.fillRect(dx,dy,TS,TS);
 }
 
-// スプライトシートのペア: c=前向き, c+1=左向き
-// 左 → c+1そのまま、右 → c+1を水平反転
+// 4方向: c=前(下), c+1=左, c+2=後(上), c+3=右
 function drawChar(key,dx,dy,dir='down'){
   const sp=CSPR[key];
   if(!(_imgReady>=2&&sp)) return;
-  const useSide=(dir==='left'||dir==='right');
-  const col=useSide ? sp.c+1 : sp.c;
-  const flipH=(dir==='right'); // 左向きスプライトをflipして右向きに
+  let col=sp.c, flipH=false;
+  if(dir==='left')  col=sp.c+1;
+  else if(dir==='up')    col=sp.c+2;
+  else if(dir==='right') col=sp.c+3;
+  // down: col=sp.c (default)
   const sx=col*CSW, sy=sp.r*CSH;
   const dh=Math.round(TS*1.3), dw=Math.round(TS*1.0);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
-  if(flipH){
-    ctx.save();
-    ctx.scale(-1,1);
-    ctx.drawImage(imgChar,sx,sy,CSW,CSH,-(ddx+dw),ddy,dw,dh);
-    ctx.restore();
-  } else {
-    ctx.drawImage(imgChar,sx,sy,CSW,CSH,ddx,ddy,dw,dh);
-  }
+  ctx.drawImage(imgChar,sx,sy,CSW,CSH,ddx,ddy,dw,dh);
 }
 
 // ════════════════════════════════════════════
@@ -683,12 +678,13 @@ function draw(){
     ctx.strokeRect(sx+3,sy+3,TS-6,TS-6);
     // キャラクタースプライト（またはフォールバック絵文字）
     if(_imgReady>=2){
-      // NPCは常に前向き。プレイヤーが左右に隣接したとき反転して向きを変える
+      // NPC向き: 4方向対応。プレイヤーの方を向く
       let nDir='down';
       if(adj(n.x,n.y)){
-        if(pl.x<n.x) nDir='left';      // プレイヤーが左 → NPC左向き
-        else if(pl.x>n.x) nDir='right'; // プレイヤーが右 → NPC右向き
-        // 上下は前向き(down)のまま（後ろ姿を避ける）
+        if(pl.x<n.x)      nDir='left';
+        else if(pl.x>n.x) nDir='right';
+        else if(pl.y<n.y) nDir='up';
+        // pl.y>n.y の場合は down(前向き)のまま
       }
       drawChar(n.id,sx,sy,nDir);
     } else {
