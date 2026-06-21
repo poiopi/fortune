@@ -62,6 +62,8 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .game-viewport{position:relative;overflow:hidden;background:#1e3320;touch-action:none;user-select:none;-webkit-user-select:none}
 #gc{display:block}
 .player-pin{position:absolute;pointer-events:none;z-index:5;transform:translate(-50%,-55%);line-height:1;transition:none}
+.talk-btn-canvas{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(201,168,76,.92);border:none;border-radius:20px;padding:.4rem 1.4rem;font-family:var(--ff-rpg);font-size:.78rem;color:#1a1000;cursor:pointer;display:none;-webkit-tap-highlight-color:transparent;box-shadow:0 2px 12px rgba(0,0,0,.5);animation:pulse .8s infinite alternate}
+@keyframes pulse{from{box-shadow:0 2px 12px rgba(201,168,76,.3)}to{box-shadow:0 2px 20px rgba(201,168,76,.8)}}
 
 /* CONTROLS */
 .game-controls{background:rgba(0,0,0,.35);padding:.6rem 1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);flex-wrap:wrap;gap:.5rem}
@@ -200,6 +202,7 @@ footer a:hover{color:var(--gold)}
     <div class="game-viewport" id="gvp">
       <canvas id="gc"></canvas>
       <div class="player-pin" id="pin">🧙</div>
+      <button class="talk-btn-canvas" id="talkBtn" onclick="talk()">💬 話す / Space</button>
     </div>
 
     <div class="game-controls">
@@ -358,7 +361,7 @@ const NPCS=[
           {t:'旅の途中ですよ',sc:{free:2}}]},
      {tx:'なるほどのう。お前さんの目には芯の強さがある。きっと大きな使命があるじゃろよ。'}
    ]},
-  {id:'smith',name:'鍛冶屋のゴルド',emoji:'⚒️',x:5,y:8,
+  {id:'smith',name:'鍛冶屋のゴルド',emoji:'⚒️',x:4,y:12,
    dlg:[
      {tx:'おう！剣でも買いにきたか？',
       ch:[{t:'最強の剣をください！',sc:{battle:3}},
@@ -384,7 +387,7 @@ const NPCS=[
           {t:'値切り交渉しましょう',sc:{free:3}}]},
      {tx:'賢い客は価値がわかる。世の中をうまく渡れるもんだ。'}
    ]},
-  {id:'knight',name:'騎士団長のアルス',emoji:'⚔️',x:13,y:8,
+  {id:'knight',name:'騎士団長のアルス',emoji:'⚔️',x:15,y:12,
    dlg:[
      {tx:'貴様、何者だ。この村に何の用だ？',
       ch:[{t:'仲間になりたいのです！',sc:{battle:3}},
@@ -551,6 +554,11 @@ function adj(x,y){
   return Math.abs(x-pl.x)<=1&&Math.abs(y-pl.y)<=1&&!(x===pl.x&&y===pl.y);
 }
 
+function updateTalkBtn(){
+  const near=NPCS.some(n=>adj(n.x,n.y));
+  document.getElementById('talkBtn').style.display=near?'block':'none';
+}
+
 // ════════════════════════════════════════════
 // HUD
 // ════════════════════════════════════════════
@@ -607,6 +615,7 @@ function move(dir){
   pl.x=nx; pl.y=ny;
   pickup();
   draw();
+  updateTalkBtn();
 }
 
 function pickup(){
