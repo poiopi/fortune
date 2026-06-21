@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 declare(strict_types=1);
 ?>
 <!DOCTYPE html>
@@ -21,6 +21,15 @@ declare(strict_types=1);
 
 <!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+#google_translate_element{font-size:.65rem}
+#google_translate_element .goog-te-gadget{color:transparent}
+#google_translate_element .goog-te-gadget select{background:rgba(8,6,15,.9);color:#8a7db5;border:1px solid rgba(160,130,220,.3);border-radius:6px;font-size:.65rem;padding:.15rem .3rem;cursor:pointer}
+.goog-te-banner-frame{display:none!important}
+body{top:0!important}
+</style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -356,7 +365,8 @@ footer a:hover{color:var(--gold)}
      <a href="/kyusei.php">九星気学</a>
   <a href="/rpg.php">RPG占い</a>
 </nav>
- <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
+ <div id="google_translate_element"></div>
+    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
 <div class="sp-dropdown" id="spDropdown">
   <a href="/">トップ</a>
   <a href="/tarot.php">タロット</a>
@@ -676,6 +686,9 @@ function restart() {
 renderQ();
 </script>
 <script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
+}
 function toggleSpMenu(){
   document.getElementById('spDropdown').classList.toggle('open');
 }
@@ -687,3 +700,4 @@ document.addEventListener('click',function(e){
 </script>
 </body>
 </html>
+

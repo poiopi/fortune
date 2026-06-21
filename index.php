@@ -419,6 +419,15 @@ $weekdayJa   = ['日','月','火','水','木','金','土'][(int)$todayObj->forma
 
 <!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
+<!-- Google Translate -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+#google_translate_element{font-size:.65rem}
+#google_translate_element .goog-te-gadget{color:transparent}
+#google_translate_element .goog-te-gadget select{background:rgba(8,6,15,.9);color:#8a7db5;border:1px solid rgba(160,130,220,.3);border-radius:6px;font-size:.65rem;padding:.15rem .3rem;cursor:pointer}
+.goog-te-banner-frame{display:none!important}
+body{top:0!important}
+</style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1042,6 +1051,7 @@ header.site-header{
       <a href="/kyusei.php">九星気学</a>
       <a href="/rpg.php">RPG占い</a>
     </nav>
+    <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
     <div class="sp-dropdown" id="spDropdown">
       <span>トップ</span>
@@ -1129,6 +1139,28 @@ header.site-header{
         </div>
         <a href="/numerology.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--teal),var(--gold));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(78,205,196,.3);">
           診断する &#8594;
+        </a>
+      </div>
+      <!-- 九星気学への導線 -->
+      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(232,113,154,.1) 0%,rgba(155,114,239,.08) 100%);border:1px solid rgba(232,113,154,.25);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.3rem">Nine Star Ki</div>
+          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">九星気学診断</div>
+          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">生まれ年の九星から運勢・相性・吉方位を鑑定</div>
+        </div>
+        <a href="/kyusei.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--rose),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(232,113,154,.3);">
+          診断する &#8594;
+        </a>
+      </div>
+      <!-- RPG占いへの導線 -->
+      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(46,90,60,.3) 0%,rgba(43,74,38,.2) 100%);border:1px solid rgba(78,150,90,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:#7ecf8a;text-transform:uppercase;margin-bottom:.3rem">RPG Fortune</div>
+          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">RPG占いの村</div>
+          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">勇者となって占いの村を冒険しながら運命を知る</div>
+        </div>
+        <a href="/rpg.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,#4a9c5a,#2b7a3a);color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(74,156,90,.3);">
+          冒険する &#8594;
         </a>
       </div>
    
@@ -1361,6 +1393,9 @@ window.addEventListener('load', function(){
 
 </script>
 <script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
+}
 function toggleSpMenu(){
   document.getElementById('spDropdown').classList.toggle('open');
 }
