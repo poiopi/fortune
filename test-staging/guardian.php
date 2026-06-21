@@ -169,36 +169,7 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
   <div class="rank-reveal" id="rankReveal"></div>
 </div>
 
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">トップ</a>
-      <a href="/tarot">タロット</a>
-      <a href="/calendar">カレンダー</a>
-      <a href="/mbti">MBTI×星座</a>
-      <a href="/numerology">数秘術</a>
-      <a href="/kyusei">九星気学</a>
-      <a href="/rpg">RPG占い</a>
-      <a href="/aisho">相性診断</a>
-      <a href="/zense">前世診断</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-    <div class="sp-dropdown" id="spDropdown">
-      <a href="/">トップ</a>
-      <a href="/tarot">タロット</a>
-      <a href="/calendar">開運カレンダー</a>
-      <a href="/mbti">MBTI×星座</a>
-      <a href="/numerology">数秘術</a>
-      <a href="/kyusei">九星気学</a>
-      <a href="/rpg">RPG占い</a>
-      <a href="/aisho">相性診断</a>
-      <a href="/zense">前世診断</a>
-      守護霊診断
-    </div>
-  </div>
-</header>
+<?php $currentPage='guardian'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
   <div class="page-title">
@@ -295,26 +266,7 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
   </div>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-nav">
-      <a href="/">トップ</a> &nbsp;/&nbsp;
-      <a href="/tarot">タロット</a> &nbsp;/&nbsp;
-      <a href="/calendar">開運カレンダー</a> &nbsp;/&nbsp;
-      <a href="/mbti">MBTI×星座診断</a> &nbsp;/&nbsp;
-      <a href="/numerology">数秘術診断</a> &nbsp;/&nbsp;
-      <a href="/kyusei">九星気学診断</a> &nbsp;/&nbsp;
-      <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
-      <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
-      <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-      <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
-      <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
-      <a href="/contact">お問い合わせ</a><br>
-      <span style="font-size:.6rem;color:rgba(138,125,181,.5)">※占い結果はエンターテインメントです。重要な判断の根拠にはしないでください。</span>
-    </div>
-    <div class="footer-copy">© 2025 life-fun.net — All rights reserved</div>
-  </div>
-</footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
 // ─── セレクト生成 ───────────────────────────────────────────

@@ -343,7 +343,6 @@ body{top:0!important}
         <a href="/rpg">RPG占い</a>
         <a href="/aisho">相性診断</a>
         <a href="/zense">前世診断</a>
-        <a href="/guardian">守護霊診断</a>
       </nav>
       <div id="google_translate_element"></div>
       <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
@@ -357,7 +356,6 @@ body{top:0!important}
         <a href="/rpg">RPG占い</a>
         <a href="/aisho">相性診断</a>
         <a href="/zense">前世診断</a>
-        <a href="/guardian">守護霊診断</a>
       </div>
     </div>
   </header>
@@ -431,7 +429,6 @@ body{top:0!important}
     <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
     <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
     <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-    <a href="/guardian">守護霊診断</a> &nbsp;/&nbsp;
     <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
     <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
     <a href="/contact">お問い合わせ</a><br>
