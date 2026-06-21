@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# http → https リダイレクト
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 旧WordPressのURLを全部トップにリダイレクト
+RewriteRule ^index\.php/.*$ / [R=301,L] 
