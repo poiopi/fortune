@@ -3,17 +3,12 @@
 <html lang="ja">
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P1EKB3WWX8');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P1EKB3WWX8');</script>
 <meta charset="UTF-8">
 <link rel="canonical" href="https://life-fun.net/rpg.php" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="RPG風の村を歩いてキャラクターに話しかけ、あなたの隠されたジョブ・クラスを占います。">
-<title>RPG占い｜あなたの隠されたジョブを探せ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="RPG風の村を歩いてキャラクターに話しかけ、星座・数秘術・ジョブクラスで運命を占います。">
+<title>RPG占い｜村を歩いて運命を探せ</title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -46,96 +41,90 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .hero h1{font-family:var(--ff-rpg);font-size:clamp(1.4rem,4vw,2.2rem);font-weight:400;line-height:1.4;letter-spacing:.06em;background:linear-gradient(135deg,var(--gold-lt) 0%,var(--violet-lt) 50%,var(--teal) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
 .hero-sub{font-size:.9rem;color:var(--muted);letter-spacing:.04em;line-height:1.7}
 
-/* ── RPGゲームエリア ── */
-.game-wrap{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:2rem;position:relative}
-.game-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal))}
+/* ── GAME SHELL ── */
+.game-outer{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:2rem;position:relative}
+.game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1}
 
-/* ── ステータスバー ── */
-.status-bar{background:rgba(0,0,0,.4);padding:.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:.5rem}
-.status-name{font-family:var(--ff-rpg);font-size:.85rem;color:var(--gold-lt)}
-.status-count{font-family:var(--ff-rpg);font-size:.78rem;color:var(--teal)}
-.progress-dots{display:flex;gap:.3rem}
-.dot{width:10px;height:10px;border-radius:50%;border:1px solid var(--border2);background:transparent;transition:background .3s}
-.dot.filled{background:var(--gold)}
-.dot.active{background:var(--teal);box-shadow:0 0 6px var(--teal)}
+/* HUD */
+.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.hud-group{display:flex;align-items:center;gap:.35rem}
+.hud-lbl{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted)}
+.hud-bar-wrap{width:60px;height:7px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.hud-bar{height:7px;border-radius:3px;transition:width .3s}
+.hud-bar.hp{background:linear-gradient(90deg,#e55,#f88)}
+.hud-bar.mp{background:linear-gradient(90deg,#66e,#aaf)}
+.hud-num{font-family:var(--ff-rpg);font-size:.62rem;color:var(--text);min-width:36px}
+.hud-items{display:flex;gap:.3rem;margin-left:auto}
+.hud-chip{font-family:var(--ff-rpg);font-size:.6rem;color:var(--teal);background:rgba(78,205,196,.1);border:1px solid rgba(78,205,196,.25);border-radius:4px;padding:.1rem .35rem}
+.hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold)}
 
-/* ── マップ ── */
-.map-area{padding:1.5rem;display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
-.char-btn{
-  background:rgba(155,114,239,.06);border:1px solid var(--border);
-  border-radius:10px;padding:1rem;cursor:pointer;
-  transition:background .2s,border-color .2s,transform .1s;
-  text-align:left;position:relative;
-}
-.char-btn:hover{background:rgba(155,114,239,.14);border-color:var(--border2);transform:translateY(-1px)}
-.char-btn.visited{border-color:var(--gold);background:rgba(201,168,76,.08)}
-.char-btn.disabled{opacity:.4;cursor:default;pointer-events:none}
-.char-btn.final-btn{border-color:var(--teal);background:rgba(78,205,196,.08);grid-column:1/-1}
-.char-btn.final-btn:hover{background:rgba(78,205,196,.15)}
-.char-icon{font-size:1.8rem;margin-bottom:.4rem;display:block}
-.char-name{font-family:var(--ff-rpg);font-size:.85rem;color:var(--gold-lt);margin-bottom:.2rem}
-.char-loc{font-family:var(--ff-mono);font-size:.6rem;color:var(--muted);letter-spacing:.08em}
-.char-badge{
-  position:absolute;top:.5rem;right:.5rem;
-  font-family:var(--ff-rpg);font-size:.6rem;
-  background:var(--gold);color:#000;
-  border-radius:4px;padding:.1rem .4rem;
-}
-.char-badge.visited-badge{background:var(--teal)}
+/* VIEWPORT */
+.game-viewport{position:relative;overflow:hidden;background:#1e3320;touch-action:none;user-select:none;-webkit-user-select:none}
+#gc{display:block}
+.player-pin{position:absolute;pointer-events:none;z-index:5;transform:translate(-50%,-55%);line-height:1;transition:none}
 
-/* ── ダイアログウィンドウ ── */
-.dialog-area{display:none;border-top:1px solid var(--border);background:rgba(0,0,0,.5);padding:1.5rem}
-.dialog-area.show{display:block}
-.dialog-box{
-  background:#0a0818;border:2px solid var(--violet);
-  border-radius:4px;padding:1.25rem 1.5rem;margin-bottom:1rem;
-  position:relative;min-height:80px;
-}
-.dialog-box::before{content:'▼';position:absolute;bottom:-.8rem;left:50%;transform:translateX(-50%);color:var(--violet);font-size:.8rem}
-.dialog-speaker{font-family:var(--ff-rpg);font-size:.75rem;color:var(--gold);margin-bottom:.5rem}
-.dialog-text{font-family:var(--ff-rpg);font-size:.85rem;color:var(--text);line-height:1.9;letter-spacing:.05em}
-.dialog-choices{display:flex;flex-direction:column;gap:.5rem}
-.choice-btn{
-  background:rgba(155,114,239,.1);border:1px solid var(--border2);
-  border-radius:6px;padding:.65rem 1rem;
-  font-family:var(--ff-rpg);font-size:.8rem;color:var(--violet-lt);
-  cursor:pointer;text-align:left;transition:background .2s,border-color .2s;
-}
-.choice-btn:hover{background:rgba(155,114,239,.25);border-color:var(--violet)}
-.choice-btn::before{content:'▶ ';color:var(--gold)}
-.close-dialog-btn{
-  width:100%;background:none;border:1px solid var(--border);
-  border-radius:6px;padding:.55rem;
-  font-family:var(--ff-rpg);font-size:.75rem;color:var(--muted);
-  cursor:pointer;margin-top:.5rem;transition:color .2s;
-}
-.close-dialog-btn:hover{color:var(--text)}
+/* CONTROLS */
+.game-controls{background:rgba(0,0,0,.35);padding:.6rem 1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);flex-wrap:wrap;gap:.5rem}
+.dpad{display:grid;grid-template-columns:repeat(3,42px);grid-template-rows:repeat(3,42px);gap:2px}
+.db{background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--violet-lt);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .1s}
+.db:active{background:rgba(155,114,239,.4)}
+.db.act{background:rgba(201,168,76,.15);border-color:rgba(201,168,76,.3);color:var(--gold);font-family:var(--ff-rpg);font-size:.6rem;text-align:center;line-height:1.3}
+.db.empty{visibility:hidden}
+.ghint{font-family:var(--ff-rpg);font-size:.65rem;color:var(--muted);line-height:1.7;max-width:200px}
 
-/* ── 結果 ── */
-.result-area{display:none;padding:2rem}
-.result-area.show{display:block}
-.result-fanfare{text-align:center;margin-bottom:1.5rem}
-.result-fanfare-text{font-family:var(--ff-rpg);font-size:.75rem;color:var(--gold);letter-spacing:.2em;margin-bottom:.5rem}
-.result-job-badge{display:inline-block;font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--violet-lt);background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.3);border-radius:20px;padding:.25rem .9rem;margin-bottom:.75rem}
-.result-job-icon{font-size:4rem;display:block;margin-bottom:.5rem}
-.result-job-name{font-family:var(--ff-rpg);font-size:1.8rem;color:var(--gold-lt);margin-bottom:.25rem;letter-spacing:.1em}
-.result-job-en{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.15em;color:var(--muted);margin-bottom:1rem}
-.result-desc-box{background:rgba(0,0,0,.4);border:1px solid var(--border);border-radius:8px;padding:1.25rem;margin-bottom:1.25rem}
-.result-desc{font-family:var(--ff-rpg);font-size:.82rem;line-height:2;color:var(--text)}
-.result-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1.25rem}
-.stat-item{background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:.75rem;text-align:center}
-.stat-label{font-family:var(--ff-rpg);font-size:.6rem;color:var(--muted);margin-bottom:.3rem}
-.stat-bar-wrap{height:6px;background:rgba(160,130,220,.15);border-radius:3px;margin-bottom:.3rem;overflow:hidden}
-.stat-bar{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--violet),var(--teal))}
-.stat-val{font-family:var(--ff-rpg);font-size:.75rem;color:var(--gold-lt)}
-.rare-badge{display:inline-block;font-family:var(--ff-rpg);font-size:.65rem;color:#000;background:linear-gradient(90deg,var(--gold),var(--gold-lt));border-radius:4px;padding:.2rem .6rem;margin-left:.5rem;vertical-align:middle}
-.retry-btn{width:100%;background:none;border:1px solid var(--border2);border-radius:8px;padding:.65rem;font-family:var(--ff-rpg);font-size:.78rem;color:var(--muted);cursor:pointer;margin-top:.75rem;transition:color .2s,border-color .2s}
-.retry-btn:hover{color:var(--text);border-color:var(--violet)}
+/* OVERLAY */
+.ov{display:none;position:fixed;inset:0;z-index:300;background:rgba(8,6,15,.88);backdrop-filter:blur(10px);align-items:center;justify-content:center;padding:1rem}
+.ov.on{display:flex}
+.ob{background:var(--card);border:2px solid var(--violet);border-radius:16px;padding:1.5rem;width:100%;max-width:420px;max-height:88vh;overflow-y:auto}
+.ot{font-family:var(--ff-rpg);font-size:.88rem;color:var(--gold);margin-bottom:.6rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.osp{font-family:var(--ff-rpg);font-size:.72rem;color:var(--violet-lt);margin-bottom:.35rem}
+.otx{font-family:var(--ff-rpg);font-size:.8rem;color:var(--text);line-height:2;margin-bottom:.9rem}
+.ochoices{display:flex;flex-direction:column;gap:.45rem}
+.cbtn{background:rgba(155,114,239,.1);border:1px solid var(--border2);border-radius:8px;padding:.6rem .9rem;font-family:var(--ff-rpg);font-size:.76rem;color:var(--violet-lt);cursor:pointer;text-align:left;transition:background .15s;-webkit-tap-highlight-color:transparent}
+.cbtn::before{content:'▶ ';color:var(--gold)}
+.cbtn:hover,.cbtn:active{background:rgba(155,114,239,.25)}
+.cbtn.bad{color:var(--rose);border-color:rgba(232,113,154,.25)}
+.cbtn.bad::before{color:var(--rose)}
+.ocls{width:100%;background:none;border:1px solid var(--border);border-radius:8px;padding:.5rem;font-family:var(--ff-rpg);font-size:.7rem;color:var(--muted);cursor:pointer;margin-top:.6rem;transition:color .2s}
+.ocls:hover{color:var(--text)}
 
-/* ── ヒント ── */
-.hint-box{background:rgba(78,205,196,.06);border:1px solid rgba(78,205,196,.2);border-radius:10px;padding:.9rem 1.2rem;margin:0 1.5rem 1.5rem;font-family:var(--ff-rpg);font-size:.75rem;color:var(--teal);line-height:1.8}
+/* COMBAT */
+.cbtfield{background:rgba(0,0,0,.4);border:1px solid var(--border);border-radius:10px;padding:1rem;margin-bottom:.9rem;text-align:center}
+.cenemy{font-size:2.5rem;margin-bottom:.3rem}
+.cename{font-family:var(--ff-rpg);font-size:.78rem;color:var(--rose);margin-bottom:.4rem}
+.cehpw{height:7px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden;margin-bottom:.3rem}
+.cehpb{height:7px;background:linear-gradient(90deg,#e55,#f88);border-radius:3px;transition:width .4s}
+.cehpv{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted)}
+.clog{font-family:var(--ff-rpg);font-size:.74rem;color:var(--muted);min-height:2.2rem;line-height:1.8;margin-bottom:.7rem}
+.cacts{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
+.cact{background:rgba(155,114,239,.1);border:1px solid var(--border2);border-radius:8px;padding:.6rem;font-family:var(--ff-rpg);font-size:.72rem;color:var(--violet-lt);cursor:pointer;transition:background .15s;-webkit-tap-highlight-color:transparent}
+.cact:hover{background:rgba(155,114,239,.25)}
+.cact.mag{color:var(--teal);border-color:rgba(78,205,196,.3)}
+.cact.itm{color:var(--gold);border-color:rgba(201,168,76,.3)}
+.cact.run{color:var(--muted)}
+.cact:disabled{opacity:.35;cursor:default;pointer-events:none}
 
-/* ── AdSense ── */
+/* ITEM POPUP */
+.ipop{position:fixed;bottom:28%;left:50%;transform:translateX(-50%);background:rgba(30,23,56,.97);border:1px solid var(--gold);border-radius:10px;padding:.5rem 1.1rem;font-family:var(--ff-rpg);font-size:.76rem;color:var(--gold);z-index:200;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap;text-align:center}
+.ipop.on{opacity:1}
+
+/* FORTUNE FORM */
+.fform{display:flex;flex-direction:column;gap:.7rem}
+.fform label{font-family:var(--ff-rpg);font-size:.7rem;color:var(--muted)}
+.fform input{background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.6rem .9rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s;width:100%}
+.fform input:focus{border-color:var(--violet)}
+.fsub{background:linear-gradient(135deg,var(--gold),var(--violet));border:none;border-radius:10px;padding:.72rem;font-family:var(--ff-rpg);font-size:.82rem;color:#fff;cursor:pointer;transition:opacity .2s;margin-top:.4rem}
+.fsub:hover{opacity:.85}
+
+/* RESULT */
+.rsec{margin-bottom:1.1rem;padding:.9rem 1rem;background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:10px}
+.rlbl{font-family:var(--ff-rpg);font-size:.6rem;letter-spacing:.14em;color:var(--muted);margin-bottom:.35rem}
+.rbig{font-family:var(--ff-rpg);font-size:1.3rem;color:var(--gold-lt);margin-bottom:.25rem}
+.rsub{font-family:var(--ff-rpg);font-size:.76rem;color:var(--text);line-height:1.9}
+.rbadge{display:inline-block;font-family:var(--ff-rpg);font-size:.62rem;background:rgba(155,114,239,.18);border:1px solid rgba(155,114,239,.35);border-radius:4px;padding:.12rem .45rem;color:var(--violet-lt);margin:.1rem}
+.rtry{width:100%;background:none;border:1px solid var(--border2);border-radius:8px;padding:.6rem;font-family:var(--ff-rpg);font-size:.75rem;color:var(--muted);cursor:pointer;margin-top:.7rem;transition:color .2s,border-color .2s}
+.rtry:hover{color:var(--text);border-color:var(--violet)}
+
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -145,17 +134,14 @@ footer a:hover{color:var(--gold)}
 .sp-dropdown{display:none}
 @media(max-width:768px){
   .header-nav{display:none}
-  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer;transition:color .2s,border-color .2s}
-  .sp-menu-btn:hover{color:var(--text);border-color:var(--border2)}
+  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer}
   .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
   .sp-dropdown.open{display:block}
-  .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
-  .sp-dropdown a:last-child{border-bottom:none}
+  .sp-dropdown a,.sp-dropdown span{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
+  .sp-dropdown span{color:var(--text)}
+  .sp-dropdown a:last-child,.sp-dropdown span:last-child{border-bottom:none}
   .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
-  .sp-dropdown span{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--text);border-bottom:1px solid var(--border)}
-  .sp-dropdown span:last-child{border-bottom:none}
-  .map-area{grid-template-columns:1fr}
-  .result-stats{grid-template-columns:1fr 1fr}
+  .ghint{display:none}
 }
 </style>
 </head>
@@ -189,59 +175,106 @@ footer a:hover{color:var(--gold)}
 <div class="wrap">
   <section class="hero">
     <span class="hero-eyebrow">RPG Fortune</span>
-    <h1>あなたの隠されたジョブを探せ</h1>
-    <p class="hero-sub">村のキャラクターに話しかけながら冒険し、<br>教会の神父にあなたの真の職業を占ってもらおう。</p>
+    <h1>村を歩いて運命を探せ</h1>
+    <p class="hero-sub">ソラリス村を自由に歩き、村人に話しかけ、アイテムを集めよう。<br>教会の神父があなたの星座・数秘術・隠れたジョブを占います。</p>
   </section>
 
-  <div class="adsense-space"><!-- AdSenseコードをここに --></div>
+  <div class="adsense-space"></div>
 
-  <div class="game-wrap">
-    <!-- ステータスバー -->
-    <div class="status-bar">
-      <span class="status-name">🗺 ソラリス村</span>
-      <div style="display:flex;align-items:center;gap:.75rem">
-        <span class="status-count" id="visitCount">0 / 10人に話しかけた</span>
-        <div class="progress-dots" id="progressDots"></div>
+  <div class="game-outer">
+    <div class="game-hud">
+      <div class="hud-group">
+        <span class="hud-lbl">HP</span>
+        <div class="hud-bar-wrap"><div class="hud-bar hp" id="hpBar"></div></div>
+        <span class="hud-num" id="hpVal">30/30</span>
       </div>
+      <div class="hud-group">
+        <span class="hud-lbl">MP</span>
+        <div class="hud-bar-wrap"><div class="hud-bar mp" id="mpBar"></div></div>
+        <span class="hud-num" id="mpVal">20/20</span>
+      </div>
+      <div class="hud-items" id="hudItems"></div>
+      <span class="hud-talk" id="hudTalk">👥 0/5人</span>
     </div>
 
-    <!-- ヒント -->
-    <div class="hint-box" id="hintBox">
-      ▶ 村人たちに話しかけよう。最低5人に話しかけると、教会の神父が占いをしてくれる。
+    <div class="game-viewport" id="gvp">
+      <canvas id="gc"></canvas>
+      <div class="player-pin" id="pin">🧙</div>
     </div>
 
-    <!-- マップ（キャラクター一覧） -->
-    <div class="map-area" id="mapArea"></div>
-
-    <!-- ダイアログ -->
-    <div class="dialog-area" id="dialogArea">
-      <div class="dialog-box">
-        <div class="dialog-speaker" id="dialogSpeaker"></div>
-        <div class="dialog-text" id="dialogText"></div>
+    <div class="game-controls">
+      <div class="dpad">
+        <div class="db empty"></div>
+        <button class="db" id="bU">▲</button>
+        <div class="db empty"></div>
+        <button class="db" id="bL">◀</button>
+        <button class="db act" id="bA">話す<br>Space</button>
+        <button class="db" id="bR">▶</button>
+        <div class="db empty"></div>
+        <button class="db" id="bD">▼</button>
+        <div class="db empty"></div>
       </div>
-      <div class="dialog-choices" id="dialogChoices"></div>
-      <button class="close-dialog-btn" onclick="closeDialog()">▶ 話を終える</button>
-    </div>
-
-    <!-- 結果 -->
-    <div class="result-area" id="resultArea">
-      <div class="result-fanfare">
-        <div class="result-fanfare-text">✦ 神父の占い結果 ✦</div>
-        <div class="result-job-badge" id="rJobBadge"></div>
-        <span class="result-job-icon" id="rIcon"></span>
-        <div class="result-job-name" id="rName"></div>
-        <div class="result-job-en" id="rEn"></div>
-      </div>
-      <div class="result-desc-box">
-        <div class="result-desc" id="rDesc"></div>
-      </div>
-      <div class="result-stats" id="rStats"></div>
-      <button class="retry-btn" onclick="resetGame()">▶ もう一度占う</button>
+      <div class="ghint">🎮 矢印キー or WASD で移動<br>Space / Enterで話しかける<br>アイテムは踏むと自動取得</div>
     </div>
   </div>
 
-  <div class="adsense-space"><!-- AdSenseコードをここに --></div>
+  <div class="adsense-space"></div>
 </div>
+
+<!-- DIALOG -->
+<div class="ov" id="dlgOv">
+  <div class="ob">
+    <div class="ot" id="dlgTitle"></div>
+    <div class="osp" id="dlgSp"></div>
+    <div class="otx" id="dlgTx"></div>
+    <div class="ochoices" id="dlgCh"></div>
+    <button class="ocls" id="dlgCls" onclick="closeDlg()">▶ 話を終える</button>
+  </div>
+</div>
+
+<!-- COMBAT -->
+<div class="ov" id="cbtOv">
+  <div class="ob">
+    <div class="ot">⚔️ バトル！</div>
+    <div class="cbtfield">
+      <div class="cenemy" id="cEmo"></div>
+      <div class="cename" id="cName"></div>
+      <div class="cehpw"><div class="cehpb" id="cHpB"></div></div>
+      <div class="cehpv" id="cHpV"></div>
+    </div>
+    <div class="clog" id="cLog"></div>
+    <div class="cacts">
+      <button class="cact" onclick="ca('atk')">⚔️ たたかう</button>
+      <button class="cact mag" id="cMag" onclick="ca('mag')">✨ 魔法(5MP)</button>
+      <button class="cact itm" id="cItm" onclick="ca('itm')">🌿 薬草を使う</button>
+      <button class="cact run" onclick="ca('run')">💨 にげる</button>
+    </div>
+  </div>
+</div>
+
+<!-- FORTUNE FORM -->
+<div class="ov" id="frmOv">
+  <div class="ob">
+    <div class="ot">⛪ 神父の占い</div>
+    <div class="otx">旅人よ、よく来てくれた。生年月日を教えてくれれば、星と数と天の意志があなたの運命を示そう。</div>
+    <div class="fform">
+      <label>生年月日</label>
+      <input type="date" id="bdate" max="<?= date('Y-m-d') ?>">
+      <button class="fsub" onclick="calcFortune()">✦ 占ってもらう</button>
+    </div>
+  </div>
+</div>
+
+<!-- RESULT -->
+<div class="ov" id="resOv">
+  <div class="ob">
+    <div class="ot">✦ 占い結果 ✦</div>
+    <div id="resContent"></div>
+    <button class="rtry" onclick="resetGame()">▶ もう一度遊ぶ</button>
+  </div>
+</div>
+
+<div class="ipop" id="ipop"></div>
 
 <footer>
   <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
@@ -258,404 +291,601 @@ footer a:hover{color:var(--gold)}
 </footer>
 
 <script>
-// ═══════════════════════════════════════════════
-// キャラクターデータ
-// ═══════════════════════════════════════════════
-const CHARS = [
-  {
-    id:'villager1', name:'村の老婆', icon:'👵', loc:'村の入り口',
-    attr:'wisdom',
-    dialogs:[
-      {text:'お前さん、見かけない顔だね。この村に何の用かい？',
-       choices:[
-         {text:'強くなりたくてやってきました',score:{battle:2}},
-         {text:'知恵を借りたくて',score:{wisdom:2}},
-         {text:'ただの旅の途中です',score:{free:2}},
-       ]},
-      {text:'ふむ、なるほど。お前さんの目には芯の強さがある。きっと大きな使命があるんじゃろう。'},
-    ]
-  },
-  {
-    id:'blacksmith', name:'鍛冶屋のゴルド', icon:'⚒️', loc:'鍛冶屋',
-    attr:'battle',
-    dialogs:[
-      {text:'おう！剣でも買いにきたか？それとも防具か？',
-       choices:[
-         {text:'最強の剣をください！',score:{battle:3}},
-         {text:'軽くて動きやすい装備がいい',score:{agility:2}},
-         {text:'道具より知恵の方が大事です',score:{wisdom:2}},
-       ]},
-      {text:'いい目をしてるな。戦場で生き残るのは力だけじゃないが、力なくして守れるものも何もない。'},
-    ]
-  },
-  {
-    id:'witch', name:'魔女のシルヴィア', icon:'🧙‍♀️', loc:'森の小屋',
-    attr:'magic',
-    dialogs:[
-      {text:'珍しい来客ね。あなたから不思議なオーラを感じるわ。',
-       choices:[
-         {text:'魔法を教えてください',score:{magic:3}},
-         {text:'占いをしてください',score:{wisdom:2}},
-         {text:'薬草が欲しいんです',score:{nature:2}},
-       ]},
-      {text:'魔力は心の鏡よ。あなたが何を信じるかで、使える力が変わってくる。'},
-    ]
-  },
-  {
-    id:'merchant', name:'商人のリカルド', icon:'🪙', loc:'市場',
-    attr:'free',
-    dialogs:[
-      {text:'いらっしゃい！何でも揃ってるよ。今日は何が必要かな？',
-       choices:[
-         {text:'情報が欲しいです',score:{wisdom:2}},
-         {text:'一番高い物を見せてください',score:{battle:1,magic:1}},
-         {text:'値切り交渉しましょう',score:{free:3}},
-       ]},
-      {text:'賢い客は価値がわかる。モノの本当の値段がわかる人間は、世の中をうまく渡れるもんだ。'},
-    ]
-  },
-  {
-    id:'knight', name:'騎士団長のアルス', icon:'⚔️', loc:'詰所',
-    attr:'battle',
-    dialogs:[
-      {text:'貴様、何者だ。この村に何の用だ？',
-       choices:[
-         {text:'仲間になりたいのです',score:{battle:3}},
-         {text:'旅の冒険者です',score:{agility:2}},
-         {text:'守るべきものがあります',score:{heal:2}},
-       ]},
-      {text:'その目、気に入った。真の騎士は力だけでなく、守る心を持つ者だ。'},
-    ]
-  },
-  {
-    id:'scholar', name:'学者のアルヴィン', icon:'📚', loc:'図書館',
-    attr:'wisdom',
-    dialogs:[
-      {text:'む、本に興味があるのかね？どんな分野が好きかね？',
-       choices:[
-         {text:'歴史と哲学が好きです',score:{wisdom:3}},
-         {text:'魔法の本はありますか',score:{magic:2}},
-         {text:'あまり本は読みません',score:{battle:1,agility:1}},
-       ]},
-      {text:'知識は武器にも盾にもなる。学ぶことをやめた者は、成長することもやめた者だ。'},
-    ]
-  },
-  {
-    id:'healer', name:'癒し手のルナ', icon:'💚', loc:'診療所',
-    attr:'heal',
-    dialogs:[
-      {text:'怪我はない？心の傷でも診てあげるわ。',
-       choices:[
-         {text:'疲れた心を癒してほしい',score:{heal:3}},
-         {text:'強くなりたい',score:{battle:2}},
-         {text:'仲間のために強くなりたい',score:{heal:2,battle:1}},
-       ]},
-      {text:'人を癒す力は、誰の心にも眠っている。大切なのは、その力を誰かのために使おうとする気持ちよ。'},
-    ]
-  },
-  {
-    id:'bard', name:'吟遊詩人のフィン', icon:'🎸', loc:'酒場',
-    attr:'agility',
-    dialogs:[
-      {text:'ヤァ！旅人さん！一曲聴いていかないかい？',
-       choices:[
-         {text:'ぜひ！聴かせてください',score:{free:2,agility:1}},
-         {text:'今は急いでいます',score:{battle:1,agility:2}},
-         {text:'一緒に歌いましょう',score:{agility:3}},
-       ]},
-      {text:'旅は歌と笑いで軽くなる。君の足取りには、どこか楽しそうな軽さがあるね。'},
-    ]
-  },
-  {
-    id:'king', name:'村の王様', icon:'👑', loc:'小さなお城',
-    attr:'wisdom',
-    dialogs:[
-      {text:'余の城へようこそ。そなた、何か願いがあってきたのであろう？',
-       choices:[
-         {text:'民のために力を貸してください',score:{heal:2,wisdom:1}},
-         {text:'強力な力を授けてください',score:{battle:2,magic:1}},
-         {text:'真実を知りたいのです',score:{wisdom:3}},
-       ]},
-      {text:'賢者は力を求めず、力は賢者を求める。そなたにはその素質がある。'},
-    ]
-  },
-  {
-    id:'priest', name:'教会の神父', icon:'⛪', loc:'教会', isFinal:true,
-    dialogs:[
-      {text:'よく来たな、旅人よ。\n神はすべてを見ておられる。\nあなたが歩んできた道を映し出し、\n真の姿を示してくれるだろう。\n\n占いを始めてよいか？',
-       choices:[
-         {text:'はい、お願いします',score:{}},
-       ]},
-    ]
-  },
+// ════════════════════════════════════════════
+// MAP & CONSTANTS
+// ════════════════════════════════════════════
+const TS=40, VPC=13, VPR=11, MW=20, MH=20;
+const G=0,P=1,T=2,W=3;
+
+const MAP=[
+  [T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,G,T],
+  [T,G,P,G,G,G,G,G,G,G,G,G,G,G,G,G,G,P,G,T],
+  [T,G,P,G,G,G,G,G,G,G,G,G,G,G,G,G,G,P,G,T],
+  [T,G,P,G,G,G,W,W,G,G,G,G,W,W,G,G,G,P,G,T],
+  [T,G,P,G,G,G,W,W,G,G,G,G,W,W,G,G,G,P,G,T],
+  [T,G,P,G,G,G,G,G,G,G,G,G,G,G,G,G,G,P,G,T],
+  [T,G,P,G,G,G,G,G,G,G,G,G,G,G,G,G,G,P,G,T],
+  [T,G,P,G,G,G,G,G,G,G,G,G,G,G,G,G,G,P,G,T],
+  [T,G,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,P,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,T],
+  [T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T,T],
 ];
 
-// ═══════════════════════════════════════════════
-// ジョブデータ
-// ═══════════════════════════════════════════════
-const JOBS = [
-  {id:'hero',     name:'勇者',       en:'HERO',          icon:'⚔️',  rare:false, primary:'battle',  secondary:'wisdom',
-   desc:'すべての属性をバランスよく持つ伝説の存在。\n困難を恐れず、仲間のために剣を振るう。\n時代が英雄を必要とするとき、あなたは現れる。',
-   stats:{力:90,知:70,速:75,癒:65,運:80}},
-  {id:'mage',     name:'魔法使い',   en:'MAGE',          icon:'🔮',  rare:false, primary:'magic',   secondary:'wisdom',
-   desc:'古代の知識と強大な魔力を操る学者。\n言葉ひとつで世界を変える力を秘めている。\n知識こそが最大の武器と信じて疑わない。',
-   stats:{力:40,知:95,速:60,癒:50,運:85}},
-  {id:'warrior',  name:'戦士',       en:'WARRIOR',       icon:'🛡️',  rare:false, primary:'battle',  secondary:'agility',
-   desc:'圧倒的な力と鉄壁の守りで前線を支える。\n傷つくことを恐れない鋼の意志を持つ。\n戦場に立つ限り、仲間は倒れない。',
-   stats:{力:95,知:50,速:65,癒:45,運:60}},
-  {id:'healer',   name:'聖職者',     en:'CLERIC',        icon:'✨',  rare:false, primary:'heal',    secondary:'wisdom',
-   desc:'神に仕え、仲間の傷を癒す光の使者。\n戦わずして多くの命を救う真の強さを持つ。\n その優しさが、世界を変える力になる。',
-   stats:{力:45,知:80,速:55,癒:95,運:75}},
-  {id:'thief',    name:'盗賊',       en:'ROGUE',         icon:'🗡️',  rare:false, primary:'agility', secondary:'free',
-   desc:'闇に溶け込み、素早い動きで翻弄する。\nルールより自分の信念で行動する自由人。\n誰も知らない道を、誰より早く走り抜ける。',
-   stats:{力:70,知:65,速:95,癒:40,運:90}},
-  {id:'bard',     name:'吟遊詩人',   en:'BARD',          icon:'🎵',  rare:false, primary:'free',    secondary:'agility',
-   desc:'歌と言葉で仲間を鼓舞し、敵を惑わす。\nどんな場所でも笑顔を絶やさない太陽の存在。\n旅そのものが、あなたの人生の物語になる。',
-   stats:{力:55,知:70,速:80,癒:70,運:95}},
-  {id:'druid',    name:'ドルイド',   en:'DRUID',         icon:'🌿',  rare:false, primary:'nature',  secondary:'heal',
-   desc:'大地と森の精霊と語らう自然の守護者。\n生命の循環を理解し、万物と調和して生きる。\n自然の力を借りて、世界の均衡を守る。',
-   stats:{力:60,知:80,速:65,癒:85,運:70}},
-  {id:'paladin',  name:'聖騎士',     en:'PALADIN',       icon:'🌟',  rare:false, primary:'battle',  secondary:'heal',
-   desc:'剣と祈りを両立させる正義の具現者。\n光の力で悪を断ち、傷ついた者を救う。\n信念と力、どちらも最高水準を誇る。',
-   stats:{力:85,知:65,速:60,癒:80,運:75}},
-  {id:'summoner', name:'召喚師',     en:'SUMMONER',      icon:'🐉',  rare:false, primary:'magic',   secondary:'free',
-   desc:'異界の存在を呼び出し、従わせる変わり者。\nこの世のものではない力を自在に操る。\n孤独に見えて、常に多くの仲間と共にいる。',
-   stats:{力:55,知:90,速:65,癒:60,運:80}},
-  {id:'ninja',    name:'忍者',       en:'NINJA',         icon:'🥷',  rare:false, primary:'agility', secondary:'battle',
-   desc:'影のように素早く、音もなく任務を遂行する。\n感情を見せず、ただ目的のために動く孤高の存在。\nその姿は、見た者の記憶からも消える。',
-   stats:{力:80,知:70,速:98,癒:35,運:75}},
-  // レアジョブ（特定の組み合わせで出現）
-  {id:'sage',     name:'賢者',       en:'SAGE',          icon:'🌙',  rare:true, primary:'wisdom',  secondary:'magic',
-   desc:'すべての知識と経験を統合した伝説の存在。\n過去・現在・未来を見通す神の瞳を持つ。\n賢者は語らず、ただ存在するだけで世界を変える。',
-   stats:{力:70,知:99,速:65,癒:80,運:90}},
-  {id:'darkKnight',name:'暗黒騎士',  en:'DARK KNIGHT',   icon:'🖤',  rare:true, primary:'battle',  secondary:'magic',
-   desc:'光を失った場所で生まれた力の体現者。\n憎しみすら力に変えて戦う禁断の存在。\n最も暗い闇の中にこそ、最も強い光が宿る。',
-   stats:{力:99,知:70,速:70,癒:30,運:65}},
-  {id:'oracle',   name:'神託者',     en:'ORACLE',        icon:'🔯',  rare:true, primary:'wisdom',  secondary:'heal',
-   desc:'神の言葉を人々に伝える橋渡しの存在。\n過去の痛みを癒し、未来への道を照らす。\nあなたの言葉には、見えない力が宿っている。',
-   stats:{力:50,知:90,速:60,癒:95,運:85}},
-  {id:'trickster',name:'トリックスター',en:'TRICKSTER',  icon:'🃏',  rare:true, primary:'free',    secondary:'agility',
-   desc:'予測不能な行動で世界をかき回す混沌の使者。\n常識の外側から物事を変える唯一無二の存在。\n誰も予想しない方法で、誰も達成できない奇跡を起こす。',
-   stats:{力:70,知:75,速:90,癒:55,運:99}},
-  {id:'archmage', name:'大魔導士',   en:'ARCHMAGE',      icon:'⚡',  rare:true, primary:'magic',   secondary:'wisdom',
-   desc:'古代魔法の粋を極めた究極の魔術師。\n星々の運行すら操ると言われる伝説の存在。\n千年に一人と言われる才能が、あなたの中に眠っている。',
-   stats:{力:55,知:99,速:70,癒:65,運:88}},
+// buildings: {x,y,w,h,name,emoji,doorX,doorY}
+const BLDS=[
+  {x:3, y:1,w:4,h:4,name:'宿屋',      emoji:'🏨',doorX:5, doorY:4},
+  {x:13,y:1,w:4,h:4,name:'市場',      emoji:'🏪',doorX:15,doorY:4},
+  {x:3, y:6,w:3,h:6,name:'鍛冶屋',   emoji:'⚒️',doorX:4, doorY:11},
+  {x:14,y:6,w:3,h:6,name:'詰所',      emoji:'🏰',doorX:15,doorY:11},
+  {x:3, y:14,w:4,h:5,name:'魔女の小屋',emoji:'🔮',doorX:5, doorY:18},
+  {x:13,y:13,w:5,h:6,name:'教会',     emoji:'⛪',doorX:15,doorY:18},
 ];
 
-// ═══════════════════════════════════════════════
-// レアジョブ解禁条件
-// ═══════════════════════════════════════════════
-const RARE_CONDITIONS = [
-  {job:'sage',      required:['scholar','witch','king'],    desc:'学者・魔女・王様全員に話しかけた'},
-  {job:'darkKnight',required:['blacksmith','knight','witch'],desc:'鍛冶屋・騎士団長・魔女に話しかけた'},
-  {job:'oracle',    required:['healer','priest','villager1'],desc:'癒し手・村の老婆に話しかけた'},
-  {job:'trickster', required:['merchant','bard','thief'],   desc:'商人・吟遊詩人に話しかけた'},
-  {job:'archmage',  required:['witch','scholar','priest'],  desc:'魔女・学者に話しかけた'},
-];
-
-// ═══════════════════════════════════════════════
-// ゲーム状態
-// ═══════════════════════════════════════════════
-let visited = new Set();
-let scores = {battle:0,magic:0,wisdom:0,heal:0,agility:0,free:0,nature:0};
-let currentChar = null;
-let currentDialogIdx = 0;
-
-// ═══════════════════════════════════════════════
-// 初期化
-// ═══════════════════════════════════════════════
-function init(){
-  visited = new Set();
-  scores = {battle:0,magic:0,wisdom:0,heal:0,agility:0,free:0,nature:0};
-  currentChar = null;
-  currentDialogIdx = 0;
-  renderMap();
-  updateStatus();
-  document.getElementById('dialogArea').classList.remove('show');
-  document.getElementById('resultArea').classList.remove('show');
-  document.getElementById('mapArea').style.display='grid';
-  document.getElementById('hintBox').style.display='block';
-}
-
-function renderMap(){
-  const map = document.getElementById('mapArea');
-  map.innerHTML = '';
-  const dots = document.getElementById('progressDots');
-  dots.innerHTML = '';
-  for(let i=0;i<10;i++){
-    const d=document.createElement('div');
-    d.className='dot'+(i<visited.size?' filled':'')+(i===visited.size?' active':'');
-    dots.appendChild(d);
-  }
-  CHARS.forEach(c=>{
-    const btn=document.createElement('button');
-    const isVisited=visited.has(c.id);
-    const isFinal=c.isFinal;
-    const canFinal=isFinal&&visited.size>=5;
-    btn.className='char-btn'+(isVisited?' visited':'')+(isFinal?' final-btn':'')+(isFinal&&!canFinal?' disabled':'');
-    btn.innerHTML=`
-      <span class="char-icon">${c.icon}</span>
-      <div class="char-name">${c.name}${c.rare?'<span class="rare-badge">RARE</span>':''}</div>
-      <div class="char-loc">📍 ${c.loc}</div>
-      ${isVisited?'<span class="char-badge visited-badge">話した</span>':''}
-      ${isFinal&&!canFinal?'<span class="char-badge" style="background:var(--muted)">5人以上必要</span>':''}
-    `;
-    if((!isFinal||canFinal)&&!isVisited||isFinal&&canFinal){
-      btn.onclick=()=>openDialog(c);
-    } else if(!isVisited){
-      btn.onclick=()=>openDialog(c);
-    }
-    map.appendChild(btn);
-  });
-}
-
-function updateStatus(){
-  document.getElementById('visitCount').textContent=`${visited.size} / 10人に話しかけた`;
-  const dots=document.getElementById('progressDots');
-  dots.innerHTML='';
-  for(let i=0;i<10;i++){
-    const d=document.createElement('div');
-    d.className='dot'+(i<visited.size?' filled':'')+(i===visited.size&&visited.size<10?' active':'');
-    dots.appendChild(d);
-  }
-  const hint=document.getElementById('hintBox');
-  if(visited.size>=5&&!visited.has('priest')){
-    hint.textContent='▶ 5人以上に話しかけた！教会の神父に話しかけて占ってもらおう。';
-  } else if(visited.size<5){
-    hint.textContent=`▶ あと${5-visited.size}人に話しかけると神父の占いが解放される。`;
-  }
-}
-
-// ═══════════════════════════════════════════════
-// ダイアログ
-// ═══════════════════════════════════════════════
-function openDialog(char){
-  currentChar=char;
-  currentDialogIdx=0;
-  showDialogStep(0);
-  document.getElementById('dialogArea').classList.add('show');
-  document.getElementById('dialogArea').scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-
-function showDialogStep(idx){
-  const dialog=currentChar.dialogs[idx];
-  if(!dialog)return;
-  document.getElementById('dialogSpeaker').textContent=currentChar.icon+' '+currentChar.name;
-  document.getElementById('dialogText').textContent=dialog.text;
-  const choicesEl=document.getElementById('dialogChoices');
-  choicesEl.innerHTML='';
-  if(dialog.choices){
-    dialog.choices.forEach(ch=>{
-      const btn=document.createElement('button');
-      btn.className='choice-btn';
-      btn.textContent=ch.text;
-      btn.onclick=()=>selectChoice(ch);
-      choicesEl.appendChild(btn);
-    });
-  }
-}
-
-function selectChoice(choice){
-  if(choice.score){
-    Object.entries(choice.score).forEach(([k,v])=>{scores[k]=(scores[k]||0)+v;});
-  }
-  visited.add(currentChar.id);
-  updateStatus();
-  if(currentChar.isFinal){
-    closeDialog();
-    showResult();
-    return;
-  }
-  const nextIdx=currentDialogIdx+1;
-  if(nextIdx<currentChar.dialogs.length){
-    currentDialogIdx=nextIdx;
-    const nextDialog=currentChar.dialogs[nextIdx];
-    document.getElementById('dialogText').textContent=nextDialog.text;
-    document.getElementById('dialogChoices').innerHTML='';
-  } else {
-    closeDialog();
-    renderMap();
-  }
-}
-
-function closeDialog(){
-  document.getElementById('dialogArea').classList.remove('show');
-  renderMap();
-}
-
-// ═══════════════════════════════════════════════
-// 結果算出
-// ═══════════════════════════════════════════════
-function showResult(){
-  // レアジョブチェック
-  let job=null;
-  for(const cond of RARE_CONDITIONS){
-    if(cond.required.every(id=>visited.has(id))){
-      job=JOBS.find(j=>j.id===cond.job);
-      break;
-    }
-  }
-  // 通常ジョブ（スコア最大の属性で決定）
-  if(!job){
-    const topAttr=Object.entries(scores).sort((a,b)=>b[1]-a[1])[0][0];
-    const secondAttr=Object.entries(scores).sort((a,b)=>b[1]-a[1])[1][0];
-    const candidates=JOBS.filter(j=>!j.rare&&j.primary===topAttr);
-    if(candidates.length>0){
-      // 2位属性でさらに絞る
-      const refined=candidates.find(j=>j.secondary===secondAttr);
-      job=refined||candidates[0];
-    } else {
-      job=JOBS.find(j=>j.id==='hero');
-    }
-  }
-  renderResult(job);
-}
-
-function renderResult(job){
-  document.getElementById('mapArea').style.display='none';
-  document.getElementById('hintBox').style.display='none';
-  document.getElementById('dialogArea').classList.remove('show');
-  document.getElementById('resultArea').classList.add('show');
-  document.getElementById('resultArea').scrollIntoView({behavior:'smooth'});
-  document.getElementById('rJobBadge').innerHTML=job.rare?'✦ レアジョブ解禁 ✦':'✦ あなたのジョブ ✦';
-  document.getElementById('rIcon').textContent=job.icon;
-  document.getElementById('rName').innerHTML=job.name+(job.rare?'<span class="rare-badge">RARE</span>':'');
-  document.getElementById('rEn').textContent=job.en;
-  document.getElementById('rDesc').textContent=job.desc;
-  const statsEl=document.getElementById('rStats');
-  statsEl.innerHTML='';
-  Object.entries(job.stats).forEach(([label,val])=>{
-    const item=document.createElement('div');
-    item.className='stat-item';
-    item.innerHTML=`
-      <div class="stat-label">${label}</div>
-      <div class="stat-bar-wrap"><div class="stat-bar" style="width:${val}%"></div></div>
-      <div class="stat-val">${val}</div>
-    `;
-    statsEl.appendChild(item);
-  });
-}
-
-function resetGame(){
-  document.getElementById('resultArea').classList.remove('show');
-  document.getElementById('mapArea').style.display='grid';
-  document.getElementById('hintBox').style.display='block';
-  init();
-}
-
-// ═══════════════════════════════════════════════
-// スマホメニュー
-// ═══════════════════════════════════════════════
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    document.getElementById('spDropdown').classList.remove('open');
-  }
+// impassable set
+const WALL=new Set();
+BLDS.forEach(b=>{
+  for(let bx=b.x;bx<b.x+b.w;bx++)
+    for(let by=b.y;by<b.y+b.h;by++)
+      if(bx!==b.doorX||by!==b.doorY) WALL.add(bx+','+by);
 });
 
-init();
+function passable(x,y){
+  if(x<0||y<0||x>=MW||y>=MH) return false;
+  const t=MAP[y][x];
+  if(t===T||t===W) return false;
+  if(WALL.has(x+','+y)) return false;
+  return true;
+}
+
+// ════════════════════════════════════════════
+// NPCs
+// ════════════════════════════════════════════
+const NPCS=[
+  {id:'grandma',name:'村の老婆',emoji:'👵',x:9,y:3,
+   dlg:[
+     {tx:'おや、見かけない顔じゃ。この村に何の用かい？',
+      ch:[{t:'強くなりたくて来ました',sc:{battle:2}},
+          {t:'知恵を借りたくて来ました',sc:{wisdom:2}},
+          {t:'旅の途中ですよ',sc:{free:2}}]},
+     {tx:'なるほどのう。お前さんの目には芯の強さがある。きっと大きな使命があるじゃろよ。'}
+   ]},
+  {id:'smith',name:'鍛冶屋のゴルド',emoji:'⚒️',x:5,y:8,
+   dlg:[
+     {tx:'おう！剣でも買いにきたか？',
+      ch:[{t:'最強の剣をください！',sc:{battle:3}},
+          {t:'軽くて動ける装備がほしい',sc:{agility:2}},
+          {t:'道具より知恵が大事ですよ',sc:{wisdom:2}},
+          {t:'財布を盗んで逃げる！',bad:true,enemy:'thug'}]},
+     {tx:'戦場で生き残るのは力だけじゃない。守る心があってこそ真の戦士だ。'}
+   ]},
+  {id:'witch',name:'魔女のシルヴィア',emoji:'🧙‍♀️',x:7,y:16,
+   dlg:[
+     {tx:'珍しい来客ね。あなたから不思議なオーラを感じるわ。',
+      ch:[{t:'魔法を教えてください',sc:{magic:3}},
+          {t:'占いをしてください',sc:{wisdom:2}},
+          {t:'薬草が欲しいんです',sc:{nature:2}},
+          {t:'魔法石を奪う！',bad:true,enemy:'guardian'}]},
+     {tx:'魔力は心の鏡よ。あなたが何を信じるかで、使える力が変わってくる。'}
+   ]},
+  {id:'merchant',name:'商人のリカルド',emoji:'🪙',x:12,y:3,
+   dlg:[
+     {tx:'いらっしゃい！今日は何が必要かな？',
+      ch:[{t:'情報が欲しいです',sc:{wisdom:2}},
+          {t:'一番高い物を！',sc:{battle:1,magic:1}},
+          {t:'値切り交渉しましょう',sc:{free:3}}]},
+     {tx:'賢い客は価値がわかる。世の中をうまく渡れるもんだ。'}
+   ]},
+  {id:'knight',name:'騎士団長のアルス',emoji:'⚔️',x:13,y:8,
+   dlg:[
+     {tx:'貴様、何者だ。この村に何の用だ？',
+      ch:[{t:'仲間になりたいのです！',sc:{battle:3}},
+          {t:'旅の冒険者です',sc:{agility:2}},
+          {t:'守るべきものがあります',sc:{heal:2}}]},
+     {tx:'その目、気に入った。真の騎士は力だけでなく、守る心を持つ者だ。'}
+   ]},
+  {id:'healer',name:'薬師のルナ',emoji:'💚',x:9,y:11,
+   dlg:[
+     {tx:'こんにちは旅人さん。お体の調子はいかがですか？',
+      ch:[{t:'元気いっぱいです！',sc:{heal:1}},
+          {t:'少し疲れました…',sc:{heal:3},healHp:10},
+          {t:'薬草の使い方を教えて',sc:{nature:2}}]},
+     {tx:'癒しとは他者への思いやりから生まれます。あなたの優しい心が周りを救うでしょう。'}
+   ]},
+  {id:'bard',name:'吟遊詩人のフィン',emoji:'🎵',x:10,y:9,
+   dlg:[
+     {tx:'♪ 旅人よ、歌を聴いてゆかないか？',
+      ch:[{t:'ぜひ聴かせてください！',sc:{free:2,magic:1}},
+          {t:'急いでいるので遠慮します',sc:{battle:1}},
+          {t:'一緒に歌いましょう！',sc:{free:3},healMp:5}]},
+     {tx:'♪ 風よ、星よ、この旅人に幸運の歌を授けよ…素敵な旅を！'}
+   ]},
+  {id:'priest',name:'神父のオルフェウス',emoji:'✝️',x:10,y:16,priest:true,
+   dlg:[{tx:'よく来られた旅人よ。村の皆と十分に話したならば、星と数の占いをしましょう。'}]},
+];
+
+// ════════════════════════════════════════════
+// ITEMS
+// ════════════════════════════════════════════
+const IDEF=[
+  {id:'h1',type:'herb',  emoji:'🌿',x:8, y:2, name:'薬草',   desc:'HP+10'},
+  {id:'h2',type:'herb',  emoji:'🌿',x:17,y:8, name:'薬草',   desc:'HP+10'},
+  {id:'h3',type:'herb',  emoji:'🌿',x:2, y:15,name:'薬草',   desc:'HP+10'},
+  {id:'c1',type:'crystal',emoji:'💎',x:11,y:3, name:'魔法石', desc:'占い精度UP'},
+  {id:'c2',type:'crystal',emoji:'💎',x:8, y:17,name:'魔法石', desc:'占い精度UP'},
+  {id:'s1',type:'scroll', emoji:'📜',x:17,y:15,name:'謎の巻物',desc:'神父がより詳しく占う'},
+];
+
+// ════════════════════════════════════════════
+// ENEMIES
+// ════════════════════════════════════════════
+const ENEM={
+  thug:    {name:'ゴロツキ',    emoji:'🗡️', hp:12,atk:5,def:1,rew:'薬草',rewT:'herb'},
+  guardian:{name:'魔法の使い魔',emoji:'🐈‍⬛',hp:10,atk:4,def:2,rew:'魔法石',rewT:'crystal'},
+  slime:   {name:'スライム',   emoji:'🟢', hp:8, atk:3,def:0,rew:'薬草',rewT:'herb'},
+};
+
+// ════════════════════════════════════════════
+// GAME STATE
+// ════════════════════════════════════════════
+let pl={x:10,y:9,hp:30,mhp:30,mp:20,mmp:20};
+let inv={herb:0,crystal:0,scroll:false};
+let picked=new Set(), visited=new Set();
+let sc={battle:0,magic:0,wisdom:0,agility:0,heal:0,free:0,nature:0};
+let curNpc=null, dlgIdx=0;
+let curEn=null, enHp=0, enMHp=0;
+let phase='explore'; // explore|dialog|combat|fortune|result
+
+// ════════════════════════════════════════════
+// CANVAS
+// ════════════════════════════════════════════
+const cv=document.getElementById('gc');
+const ctx=cv.getContext('2d');
+const gvp=document.getElementById('gvp');
+const pin=document.getElementById('pin');
+
+function resize(){
+  const w=Math.min(gvp.parentElement.clientWidth-2, VPC*TS);
+  const scale=w/(VPC*TS);
+  const h=Math.round(VPR*TS*scale);
+  cv.width=VPC*TS; cv.height=VPR*TS;
+  cv.style.width=w+'px'; cv.style.height=h+'px';
+  gvp.style.height=h+'px';
+  pin.style.left=Math.round(w/2)+'px';
+  pin.style.top=Math.round(h/2)+'px';
+  pin.style.fontSize=Math.round(TS*scale*.72)+'px';
+  draw();
+}
+
+function cam(){
+  let cx=pl.x-Math.floor(VPC/2), cy=pl.y-Math.floor(VPR/2);
+  cx=Math.max(0,Math.min(MW-VPC,cx));
+  cy=Math.max(0,Math.min(MH-VPR,cy));
+  return{cx,cy};
+}
+
+const TCOL={[G]:'#3d6b3e',[P]:'#b0894e',[T]:'#2b4a26',[W]:'#2a5caa'};
+
+function draw(){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  const{cx,cy}=cam();
+
+  // tiles
+  for(let r=0;r<VPR;r++){
+    for(let c=0;c<VPC;c++){
+      const mx=c+cx,my=r+cy;
+      if(mx<0||my<0||mx>=MW||my>=MH) continue;
+      const t=MAP[my][mx];
+      ctx.fillStyle=TCOL[t]||'#3d6b3e';
+      ctx.fillRect(c*TS,r*TS,TS,TS);
+      ctx.strokeStyle='rgba(0,0,0,.12)';
+      ctx.strokeRect(c*TS,r*TS,TS,TS);
+      if(t===T){
+        ctx.font=Math.round(TS*.6)+'px serif';
+        ctx.textAlign='center'; ctx.textBaseline='middle';
+        ctx.fillText('🌲',c*TS+TS/2,r*TS+TS/2);
+      }
+    }
+  }
+
+  // buildings
+  BLDS.forEach(b=>{
+    const sx=(b.x-cx)*TS, sy=(b.y-cy)*TS;
+    if(sx+b.w*TS<0||sx>VPC*TS||sy+b.h*TS<0||sy>VPR*TS) return;
+    ctx.fillStyle='#5c4a30'; ctx.fillRect(sx,sy,b.w*TS,b.h*TS);
+    ctx.fillStyle='#3d2e1a'; ctx.fillRect(sx,sy,b.w*TS,TS*1.1);
+    // door
+    const dx=(b.doorX-cx)*TS, dy=(b.doorY-cy)*TS;
+    ctx.fillStyle='#7a5a14';
+    ctx.fillRect(dx+TS*.2,dy+TS*.1,TS*.6,TS*.85);
+    // icon
+    ctx.font=Math.round(TS*.55)+'px serif';
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(b.emoji,sx+b.w*TS/2,sy+TS*.6);
+    // name
+    ctx.font=Math.round(TS*.23)+'px DotGothic16,monospace';
+    ctx.fillStyle='#e8d08a'; ctx.textAlign='center'; ctx.textBaseline='top';
+    ctx.fillText(b.name,sx+b.w*TS/2,sy+TS+2);
+  });
+
+  // items
+  IDEF.forEach(it=>{
+    if(picked.has(it.id)) return;
+    const sx=(it.x-cx)*TS, sy=(it.y-cy)*TS;
+    if(sx<-TS||sx>=VPC*TS||sy<-TS||sy>=VPR*TS) return;
+    ctx.shadowColor='#e8c96a'; ctx.shadowBlur=10;
+    ctx.font=Math.round(TS*.5)+'px serif';
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(it.emoji,sx+TS/2,sy+TS/2);
+    ctx.shadowBlur=0;
+  });
+
+  // NPCs
+  NPCS.forEach(n=>{
+    const sx=(n.x-cx)*TS, sy=(n.y-cy)*TS;
+    if(sx<-TS||sx>=VPC*TS||sy<-TS||sy>=VPR*TS) return;
+    if(visited.has(n.id)){
+      ctx.fillStyle='rgba(78,205,196,.2)';
+      ctx.fillRect(sx+2,sy+2,TS-4,TS-4);
+    }
+    ctx.font=Math.round(TS*.62)+'px serif';
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(n.emoji,sx+TS/2,sy+TS/2);
+    if(adj(n.x,n.y)){
+      ctx.font=Math.round(TS*.32)+'px DotGothic16,monospace';
+      ctx.fillStyle='#e8c96a'; ctx.textAlign='center'; ctx.textBaseline='bottom';
+      ctx.fillText('！',sx+TS/2,sy);
+    }
+  });
+}
+
+function adj(x,y){
+  return Math.abs(x-pl.x)<=1&&Math.abs(y-pl.y)<=1&&!(x===pl.x&&y===pl.y);
+}
+
+// ════════════════════════════════════════════
+// HUD
+// ════════════════════════════════════════════
+function hud(){
+  document.getElementById('hpBar').style.width=(pl.hp/pl.mhp*100)+'%';
+  document.getElementById('hpVal').textContent=pl.hp+'/'+pl.mhp;
+  document.getElementById('mpBar').style.width=(pl.mp/pl.mmp*100)+'%';
+  document.getElementById('mpVal').textContent=pl.mp+'/'+pl.mmp;
+  document.getElementById('hudTalk').textContent='👥 '+visited.size+'/5人';
+  let h='';
+  if(inv.herb>0)    h+=`<span class="hud-chip">🌿×${inv.herb}</span>`;
+  if(inv.crystal>0) h+=`<span class="hud-chip">💎×${inv.crystal}</span>`;
+  if(inv.scroll)    h+=`<span class="hud-chip">📜×1</span>`;
+  document.getElementById('hudItems').innerHTML=h;
+}
+
+// ════════════════════════════════════════════
+// MOVEMENT
+// ════════════════════════════════════════════
+const DMAP={ArrowUp:'u',ArrowDown:'d',ArrowLeft:'l',ArrowRight:'r',
+            w:'u',s:'d',a:'l',d:'r',W:'u',S:'d',A:'l',D:'r'};
+
+document.addEventListener('keydown',e=>{
+  if(phase!=='explore') return;
+  const dir=DMAP[e.key];
+  if(dir){e.preventDefault();move(dir);return;}
+  if(e.key===' '||e.key==='Enter'){e.preventDefault();talk();}
+});
+
+['bU','bD','bL','bR'].forEach((id,i)=>{
+  const dirs=['u','d','l','r'];
+  document.getElementById(id).addEventListener('click',()=>{if(phase==='explore')move(dirs[i]);});
+});
+document.getElementById('bA').addEventListener('click',()=>{if(phase==='explore')talk();});
+
+// touch swipe on canvas
+let tx0,ty0;
+cv.addEventListener('touchstart',e=>{tx0=e.touches[0].clientX;ty0=e.touches[0].clientY;e.preventDefault();},{passive:false});
+cv.addEventListener('touchend',e=>{
+  if(phase!=='explore') return;
+  const dx=e.changedTouches[0].clientX-tx0, dy=e.changedTouches[0].clientY-ty0;
+  if(Math.abs(dx)<8&&Math.abs(dy)<8){talk();return;}
+  Math.abs(dx)>Math.abs(dy)?move(dx>0?'r':'l'):move(dy>0?'d':'u');
+  e.preventDefault();
+},{passive:false});
+
+function move(dir){
+  let nx=pl.x,ny=pl.y;
+  if(dir==='u')ny--;
+  if(dir==='d')ny++;
+  if(dir==='l')nx--;
+  if(dir==='r')nx++;
+  if(!passable(nx,ny)) return;
+  pl.x=nx; pl.y=ny;
+  pickup();
+  draw();
+}
+
+function pickup(){
+  IDEF.forEach(it=>{
+    if(picked.has(it.id)||it.x!==pl.x||it.y!==pl.y) return;
+    picked.add(it.id);
+    if(it.type==='herb')    inv.herb++;
+    if(it.type==='crystal') inv.crystal++;
+    if(it.type==='scroll')  inv.scroll=true;
+    popup(it.emoji+' '+it.name+'を手に入れた！（'+it.desc+'）');
+    hud();
+  });
+}
+
+function popup(msg){
+  const el=document.getElementById('ipop');
+  el.textContent=msg; el.classList.add('on');
+  clearTimeout(el._t);
+  el._t=setTimeout(()=>el.classList.remove('on'),2600);
+}
+
+// ════════════════════════════════════════════
+// DIALOG
+// ════════════════════════════════════════════
+function talk(){
+  const n=NPCS.find(n=>adj(n.x,n.y));
+  if(!n) return;
+  curNpc=n; dlgIdx=0;
+  if(n.priest){openPriest();return;}
+  openDlg();
+}
+
+function openDlg(){
+  const n=curNpc, d=n.dlg[dlgIdx];
+  document.getElementById('dlgTitle').textContent=n.emoji+' '+n.name;
+  document.getElementById('dlgSp').textContent=n.name;
+  document.getElementById('dlgTx').textContent=d.tx;
+  const ch=document.getElementById('dlgCh');
+  ch.innerHTML='';
+  const cls=document.getElementById('dlgCls');
+  if(d.ch){
+    cls.style.display='none';
+    d.ch.forEach(c=>{
+      const b=document.createElement('button');
+      b.className='cbtn'+(c.bad?' bad':'');
+      b.textContent=c.t;
+      b.onclick=()=>pick(c);
+      ch.appendChild(b);
+    });
+  } else {
+    cls.style.display='block';
+    visited.add(n.id); hud();
+  }
+  phase='dialog';
+  document.getElementById('dlgOv').classList.add('on');
+}
+
+function pick(c){
+  if(c.bad){closeDlg();startCombat(ENEM[c.enemy]||ENEM.slime);return;}
+  Object.entries(c.sc||{}).forEach(([k,v])=>sc[k]=(sc[k]||0)+v);
+  if(c.healHp){pl.hp=Math.min(pl.mhp,pl.hp+c.healHp);popup('💚 HPが'+c.healHp+'回復した！');}
+  if(c.healMp){pl.mp=Math.min(pl.mmp,pl.mp+c.healMp);popup('✨ MPが'+c.healMp+'回復した！');}
+  dlgIdx++;
+  if(dlgIdx<curNpc.dlg.length){openDlg();}
+  else{visited.add(curNpc.id);hud();closeDlg();}
+}
+
+function closeDlg(){
+  document.getElementById('dlgOv').classList.remove('on');
+  phase='explore'; draw();
+}
+
+function openPriest(){
+  phase='dialog';
+  const need=5, got=visited.size;
+  if(got<need){
+    document.getElementById('dlgTitle').textContent='✝️ 神父のオルフェウス';
+    document.getElementById('dlgSp').textContent='神父のオルフェウス';
+    document.getElementById('dlgTx').textContent=`まだ村の者たちをよく知らぬようじゃ。もう少し皆と話してから来るがよい。（あと${need-got}人に話しかけよう）`;
+    document.getElementById('dlgCh').innerHTML='';
+    document.getElementById('dlgCls').style.display='block';
+    document.getElementById('dlgOv').classList.add('on');
+    return;
+  }
+  closeDlg();
+  phase='fortune';
+  document.getElementById('frmOv').classList.add('on');
+}
+
+// ════════════════════════════════════════════
+// COMBAT
+// ════════════════════════════════════════════
+function startCombat(en){
+  curEn={...en}; enMHp=en.hp; enHp=en.hp;
+  phase='combat';
+  document.getElementById('cEmo').textContent=en.emoji;
+  document.getElementById('cName').textContent=en.name;
+  updCbt();
+  document.getElementById('cLog').textContent=en.name+'が現れた！';
+  document.getElementById('cMag').disabled=pl.mp<5;
+  document.getElementById('cItm').disabled=inv.herb<=0;
+  document.getElementById('cbtOv').classList.add('on');
+}
+
+function updCbt(){
+  const p=Math.max(0,enHp/enMHp*100);
+  document.getElementById('cHpB').style.width=p+'%';
+  document.getElementById('cHpV').textContent='HP '+Math.max(0,enHp)+'/'+enMHp;
+  hud();
+}
+
+function ca(act){
+  const log=document.getElementById('cLog');
+  let dmg=0;
+  if(act==='atk'){
+    dmg=Math.max(1,5+Math.floor(Math.random()*4)-curEn.def);
+    enHp-=dmg; updCbt();
+    log.textContent='⚔️ '+dmg+'のダメージ！';
+  } else if(act==='mag'){
+    if(pl.mp<5) return;
+    dmg=Math.max(1,9+Math.floor(Math.random()*5)-curEn.def);
+    pl.mp-=5; enHp-=dmg; sc.magic=(sc.magic||0)+1;
+    updCbt(); log.textContent='✨ 魔法で'+dmg+'のダメージ！';
+  } else if(act==='itm'){
+    if(inv.herb<=0) return;
+    inv.herb--; pl.hp=Math.min(pl.mhp,pl.hp+15);
+    updCbt(); log.textContent='🌿 薬草でHPが15回復！';
+    setTimeout(enAtk,600); return;
+  } else if(act==='run'){
+    if(Math.random()<.5){endCbt(false,true);return;}
+    log.textContent='逃げられなかった！';
+    setTimeout(enAtk,600); return;
+  }
+  if(enHp<=0){endCbt(true,false);return;}
+  setTimeout(enAtk,600);
+}
+
+function enAtk(){
+  const d=Math.max(1,curEn.atk-1+Math.floor(Math.random()*3));
+  pl.hp=Math.max(0,pl.hp-d); updCbt();
+  document.getElementById('cLog').textContent=curEn.name+'の攻撃！'+d+'のダメージ！';
+  document.getElementById('cMag').disabled=pl.mp<5;
+  document.getElementById('cItm').disabled=inv.herb<=0;
+  if(pl.hp<=0) setTimeout(()=>endCbt(false,false),600);
+}
+
+function endCbt(won,fled){
+  document.getElementById('cbtOv').classList.remove('on');
+  phase='explore';
+  if(won){
+    if(curEn.rewT==='herb') inv.herb++;
+    if(curEn.rewT==='crystal') inv.crystal++;
+    popup('✨ 勝利！'+curEn.rew+'を手に入れた！'); hud();
+  } else if(fled){
+    popup('💨 逃げ出した…');
+  } else {
+    pl.hp=Math.floor(pl.mhp*.5);
+    popup('😵 宿屋で目が覚めた。HPが回復した。'); hud();
+  }
+  draw();
+}
+
+// ════════════════════════════════════════════
+// FORTUNE
+// ════════════════════════════════════════════
+function calcFortune(){
+  const v=document.getElementById('bdate').value;
+  if(!v){alert('生年月日を入力してください');return;}
+  const[y,m,d]=v.split('-').map(Number);
+  const zod=zodiac(m,d);
+  const lp=lifePath(y,m,d);
+  const job=jobClass();
+
+  let h='';
+  h+=rsec('⭐ 星座（生まれの星）','<div class="rbig">'+zod.sym+' '+zod.name+'</div><div class="rsub">'+zod.msg+'</div>');
+  h+=rsec('🔢 数秘術（運命数）','<div class="rbig">ライフパス数：'+lp+'</div><div class="rsub">'+lpMsg(lp)+'</div>');
+  h+=rsec('⚔️ 隠されたジョブ','<div class="rbig">'+job.emoji+' '+job.name+'</div><div class="rsub">'+job.desc+'</div><div style="margin-top:.4rem">'+job.tags.map(t=>'<span class="rbadge">'+t+'</span>').join('')+'</div>');
+  if(inv.crystal>0){
+    h+=rsec('💎 魔法石の祝福','<div class="rsub">集めた魔法石が今日の吉方位を示しています。<br>吉方位：<strong style="color:var(--gold)">'+zod.dir+'</strong>　ラッキーカラー：<strong style="color:var(--teal)">'+zod.col+'</strong></div>');
+  }
+  if(inv.scroll){
+    h+=rsec('📜 謎の巻物の啓示','<div class="rsub">'+zod.name+'の旅人よ、運命数'+lp+'と「'+job.name+'」の組み合わせは極めて稀です。'+zod.msg+' そして'+lpMsg(lp)+' この二つの力を持つ'+job.name+'として、あなたの人生は多くの人の光となるでしょう。</div>');
+  }
+  h+=rsec('💬 神父からの言葉','<div class="rsub">「'+zod.name+'の'+job.name+'よ、'+lp+'の運命数を持つあなたには、'+job.proph+'」</div>');
+
+  document.getElementById('resContent').innerHTML=h;
+  document.getElementById('frmOv').classList.remove('on');
+  document.getElementById('resOv').classList.add('on');
+  phase='result';
+}
+
+function rsec(lbl,body){
+  return '<div class="rsec"><div class="rlbl">'+lbl+'</div>'+body+'</div>';
+}
+
+function zodiac(m,d){
+  const list=[
+    {name:'山羊座',sym:'♑',cut:[12,22],msg:'堅実な努力が今まさに実を結ぼうとしています。焦らず自分のペースを守ることが吉。',dir:'北',col:'チャコールグレー'},
+    {name:'水瓶座',sym:'♒',cut:[1,20], msg:'革新的な発想があなたを際立たせます。独自の視点を大切に。',dir:'西',col:'エレクトリックブルー'},
+    {name:'魚座',  sym:'♓',cut:[2,19], msg:'豊かな感受性と直感があなたの宝。夢を信じてください。',dir:'北西',col:'ラベンダー'},
+    {name:'牡羊座',sym:'♈',cut:[3,21], msg:'行動力と情熱があなたの原動力。今こそ前に進む時です。',dir:'東',col:'スカーレット'},
+    {name:'牡牛座',sym:'♉',cut:[4,20], msg:'美と豊かさを引き寄せる力があります。感覚を大切に。',dir:'南東',col:'エメラルドグリーン'},
+    {name:'双子座',sym:'♊',cut:[5,21], msg:'知識と縁があなたに集まる季節。好奇心のままに動いて。',dir:'南',col:'イエロー'},
+    {name:'蟹座',  sym:'♋',cut:[6,22], msg:'家族や大切な人との絆が力の源。直感を信じてください。',dir:'北',col:'シルバー'},
+    {name:'獅子座',sym:'♌',cut:[7,23], msg:'自信を持って輝いてください。カリスマが人を動かします。',dir:'南',col:'ゴールド'},
+    {name:'乙女座',sym:'♍',cut:[8,23], msg:'細部への注意と誠実さがあなたを高みへ連れていきます。',dir:'北西',col:'ネイビー'},
+    {name:'天秤座',sym:'♎',cut:[9,23], msg:'バランスと調和を大切にすることで良縁が訪れます。',dir:'西',col:'ローズピンク'},
+    {name:'蠍座',  sym:'♏',cut:[10,24],msg:'深い洞察と変容の力があります。手放すことで扉が開く。',dir:'北',col:'ディープレッド'},
+    {name:'射手座',sym:'♐',cut:[11,23],msg:'自由と冒険があなたを成長させます。遠くに目を向けて。',dir:'東南',col:'パープル'},
+  ];
+  const cuts=[19,18,20,19,20,21,22,22,22,23,21,21];
+  let i=(d<=cuts[m-1])?(m-1):m%12;
+  return list[i];
+}
+
+function lifePath(y,m,d){
+  const s=(String(y)+String(m).padStart(2,'0')+String(d).padStart(2,'0')).split('').reduce((a,c)=>a+Number(c),0);
+  let n=s;
+  while(n>9&&n!==11&&n!==22&&n!==33) n=String(n).split('').reduce((a,c)=>a+Number(c),0);
+  return n;
+}
+
+function lpMsg(n){
+  const m={1:'リーダーシップと独立心の持ち主。道を切り開く力があります。',
+    2:'協調性と感受性が豊か。人と人をつなぐ橋渡し役です。',
+    3:'創造性と表現力に恵まれています。言葉や芸術で人を惹きつけます。',
+    4:'勤勉で信頼性が高い。着実な努力が大きな実りをもたらします。',
+    5:'自由と変化を愛する冒険家。多才な才能が世界へ導きます。',
+    6:'責任感と愛情深さが魅力。家族や仲間を支える力があります。',
+    7:'分析力と直感に優れた探求者。真実の追求があなたを輝かせます。',
+    8:'実行力と組織力の持ち主。大きな目標を達成する運命にあります。',
+    9:'慈悲と智慧を持つ完成者。人類全体への貢献があなたの使命です。',
+    11:'直感と霊感の持ち主。精神的なインスピレーションをもたらします。',
+    22:'マスタービルダー。大きな夢を現実に変える力があります。',
+    33:'マスターティーチャー。愛と叡智で世界を照らす存在です。'};
+  return m[n]||m[n%9]||'特別な運命数を持つあなたは独自の道を歩みます。';
+}
+
+function jobClass(){
+  const entries=Object.entries(sc).sort((a,b)=>b[1]-a[1]);
+  const top=entries[0]?entries[0][0]:'free';
+  const jobs={
+    battle:{name:'勇者',    emoji:'⚔️',desc:'困難に立ち向かう強さを持ち、周囲を引っ張るリーダー。',tags:['力強さ','勇気','行動力'],proph:'試練を超えるたびに真の輝きを放つでしょう。'},
+    magic: {name:'魔法使い',emoji:'🔮',desc:'知識と魔力を操る者。隠された真実を見抜く洞察力を持つ。',tags:['知性','神秘','探求'],proph:'知識の深みに宿る光があなたを照らすでしょう。'},
+    wisdom:{name:'賢者',    emoji:'📚',desc:'深い知恵と冷静な判断力で仲間を導く存在。',tags:['叡智','洞察','冷静'],proph:'知恵の言葉が多くの命を救うでしょう。'},
+    agility:{name:'盗賊',   emoji:'🗡️',desc:'素早さと機転で道を切り開く天才的な観察眼を持つ。',tags:['俊敏','機転','自由'],proph:'誰も見えない道を切り開いていくでしょう。'},
+    heal:  {name:'聖職者',  emoji:'✨',desc:'癒しと光の力で仲間を守る。深い愛情と信念を持つ存在。',tags:['癒し','愛','信念'],proph:'あなたの優しさが世界に平和をもたらすでしょう。'},
+    free:  {name:'吟遊詩人',emoji:'🎵',desc:'自由な発想と語りで人々の心を動かす。縛られない精神が武器。',tags:['自由','創造','共感'],proph:'あなたの物語が世界を動かすでしょう。'},
+    nature:{name:'薬師',    emoji:'🌿',desc:'自然の力と命の流れを理解する者。地に足のついた知恵で癒す。',tags:['自然','癒し','智慧'],proph:'自然との絆があなたに無限の力を与えるでしょう。'},
+  };
+  return jobs[top]||jobs.free;
+}
+
+// ════════════════════════════════════════════
+// SP MENU / RESET
+// ════════════════════════════════════════════
+function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown'))
+    document.getElementById('spDropdown').classList.remove('open');
+});
+
+function resetGame(){
+  pl={x:10,y:9,hp:30,mhp:30,mp:20,mmp:20};
+  inv={herb:0,crystal:0,scroll:false};
+  picked=new Set(); visited=new Set();
+  sc={battle:0,magic:0,wisdom:0,agility:0,heal:0,free:0,nature:0};
+  phase='explore';
+  document.getElementById('resOv').classList.remove('on');
+  document.getElementById('frmOv').classList.remove('on');
+  hud(); draw();
+}
+
+// ════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════
+resize();
+hud();
+window.addEventListener('resize',resize);
 </script>
 </body>
 </html>

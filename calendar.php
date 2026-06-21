@@ -589,6 +589,7 @@ footer a:hover{color:var(--gold)}
   <a href="/mbti.php">MBTI×星座診断</a> &nbsp;/&nbsp;
    <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
     <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
+  <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
   <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact.php">お問い合わせ</a><br>
