@@ -308,43 +308,31 @@ footer a:hover{color:var(--gold)}
 // ════════════════════════════════════════════
 // SPRITES
 // ════════════════════════════════════════════
-// キャラシートのサイズ: 1254×1254, 20列×7行
-// グリッド幅=63(1254÷20), 行高さ=157(1254÷8近似)
-// sw=サンプリング幅, sh=サンプリング高さ
-const ROW_H=157;
-
-const imgChar=new Image();
-imgChar.src='/characters.png';
-let _imgReady=0;
-imgChar.onload=()=>{_imgReady=2;draw();};
-imgChar.onerror=()=>{_imgReady=99;draw();};
-
-// 各キャラの方向ごとのsx座標を個別指定（col×63）
-// sy=row×ROW_H, sw/sh=サンプリングサイズ
-function sp(row, c_down, c_left, c_right, c_up){
-  const G=63; // グリッド幅
-  return {
-    down:  {sx:c_down *G+2, sy:row*ROW_H, sw:58, sh:126},
-    left:  {sx:c_left *G+2, sy:row*ROW_H, sw:58, sh:126},
-    right: {sx:c_right*G+2, sy:row*ROW_H, sw:58, sh:126},
-    up:    {sx:c_up   *G+2, sy:row*ROW_H, sw:58, sh:126},
-  };
-}
-// row, 前(下), 左, 右, 後(上) の列番号
-const CSPR={
-  player:  sp(0,  8,  9, 10,  8),  // 上は前と同じ(後ろ向きなし)
-  smith:   sp(0,  0,  1,  2,  0),
-  witch:   sp(0,  4,  5,  6,  4),
-  merchant:sp(0, 12, 13, 14, 12),
-  knight:  sp(1,  0,  1,  2,  0),
-  bard:    sp(0, 16, 17, 18, 16),
-  healer:  sp(1,  8,  9, 10,  8),
-  grandma: sp(1, 12, 13, 14, 12),
-  priest:  sp(1,  4,  5,  6,  4),
-  thug:    sp(6,  0,  1,  2,  0),
-  guardian:sp(6,  4,  5,  6,  4),
-  slime:   sp(6, 12, 13, 14, 12),
+const CHAR_FILES={
+  player:'A', witch:'B',   healer:'C', smith:'D',
+  knight:'E', bard:'F',    grandma:'G',merchant:'H',
+  priest:'I', thug:'J',    guardian:'K',slime:'N',
 };
+const FILE_DIRS=['front','back','left','right'];
+const DIR_MAP={down:'front',up:'back',left:'left',right:'right'};
+
+const CHAR_IMGS={};
+let _imgLoaded=0;
+const _imgTotal=Object.keys(CHAR_FILES).length*4;
+let _imgReady=0;
+
+Object.entries(CHAR_FILES).forEach(([key,letter])=>{
+  CHAR_IMGS[key]={};
+  FILE_DIRS.forEach(d=>{
+    const img=new Image();
+    img.src='/sprites/'+letter+'_'+d+'.png';
+    img.onload=img.onerror=()=>{
+      _imgLoaded++;
+      if(_imgLoaded>=_imgTotal){_imgReady=2;draw();}
+    };
+    CHAR_IMGS[key][d]=img;
+  });
+});
 
 const TCOL={0:'#3d6b3e',1:'#b0894e',2:'#2b4a26',3:'#2a5caa'};
 function drawTile(type,dx,dy){
@@ -352,14 +340,14 @@ function drawTile(type,dx,dy){
   ctx.fillRect(dx,dy,TS,TS);
 }
 
-// 4方向: c=前(下), c+1=左, c+2=後(上), c+3=右
 function drawChar(key,dx,dy,dir='down'){
-  const sp=CSPR[key];
-  if(!(_imgReady>=2&&sp)) return;
-  const f=sp[dir]||sp['down'];
+  if(_imgReady<2) return;
+  const fileDir=DIR_MAP[dir]||'front';
+  const img=CHAR_IMGS[key]?.[fileDir];
+  if(!img||!img.complete||!img.naturalWidth) return;
   const dw=Math.round(TS*1.2), dh=Math.round(TS*1.8);
   const ddx=dx+(TS-dw)/2, ddy=dy-dh+TS;
-  ctx.drawImage(imgChar,f.sx,f.sy,f.sw,f.sh,ddx,ddy,dw,dh);
+  ctx.drawImage(img,0,0,img.naturalWidth,img.naturalHeight,ddx,ddy,dw,dh);
 }
 
 // ════════════════════════════════════════════
