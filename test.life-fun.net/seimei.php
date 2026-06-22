@@ -198,6 +198,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .overall-title{font-family:var(--ff-serif);font-size:1.4rem;font-weight:700;color:var(--gold-lt);margin-bottom:.6rem;letter-spacing:.08em}
 .overall-desc{font-family:var(--ff-sans);font-size:.85rem;color:var(--text);line-height:1.8}
 
+.share-wrap{text-align:center;margin:1.5rem 0 1rem}
+.share-label{font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
+.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap}
+.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .85rem;border-radius:20px;font-size:.7rem;font-family:var(--ff-mono);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap}
+.share-btn:hover{opacity:.8}
+.share-line{background:#06C755;color:#fff}
+.share-x{background:#000;color:#fff}
+.share-fb{background:#1877F2;color:#fff}
+.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 .retry-wrap{text-align:center;margin:2rem 0}
 .retry-btn-link{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.6rem;border:1px solid var(--border2);border-radius:20px;font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);cursor:pointer;text-decoration:none;background:none;transition:color .2s,border-color .2s}
 .retry-btn-link:hover{color:var(--text);border-color:var(--violet)}
@@ -284,6 +293,15 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
   <div class="result-name-display" id="resultNameDisplay"></div>
   <div class="overall-card" id="overallCard"></div>
   <div class="gogaku-grid" id="gogakuGrid"></div>
+  <div class="share-wrap">
+    <p class="share-label">✦ 結果をシェアする</p>
+    <div class="share-btns">
+      <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
+      <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
+      <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
+      <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
+    </div>
+  </div>
   <div class="retry-wrap">
     <button class="retry-btn-link" onclick="resetForm()">← もう一度鑑定する</button>
   </div>
@@ -659,6 +677,17 @@ function showResult(){
   setTimeout(()=>rs.scrollIntoView({behavior:'smooth',block:'start'}),80);
 }
 
+function openShare(type){
+  const u=encodeURIComponent(location.href);
+  const t=encodeURIComponent(document.title);
+  const urls={line:'https://social-plugins.line.me/lineit/share?url='+u,x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
+  window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
+}
+function copyShareUrl(){
+  navigator.clipboard.writeText(location.href).then(()=>{
+    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
+  });
+}
 function resetForm(){
   document.getElementById('resultSection').style.display='none';
   document.getElementById('inputSei').value='';
