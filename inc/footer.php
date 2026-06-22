@@ -1,4 +1,8 @@
-<?php $_p = $currentPage ?? ''; ?>
+<?php $_p = $currentPage ?? ''; require_once __DIR__.'/nav-cards.php'; ?>
+<div class="nav-cards-section">
+  <h3>✦ 他の占いも試してみる ✦</h3>
+  <?= _nav_cards(9, $_p) ?>
+</div>
 <footer>
   <?= $_p==='top' ? '占いポータル トップ' : '<a href="/">占いポータル トップ</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='tarot' ? 'タロット占い' : '<a href="/tarot.php">タロット占い</a>' ?> &nbsp;/&nbsp;
