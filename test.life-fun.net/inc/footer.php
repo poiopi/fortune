@@ -118,6 +118,16 @@ require_once __DIR__.'/nav-cards.php';
   0%,100%{transform:scale(1);opacity:.7}
   50%{transform:scale(1.25);opacity:0}
 }
+/* オーラ */
+.fmenu-btn::before{
+  content:'';position:absolute;inset:-12px;border-radius:50%;
+  background:radial-gradient(circle,rgba(130,60,240,.45) 0%,rgba(201,168,76,.15) 50%,transparent 70%);
+  animation:fmenu-aura 3s ease-in-out infinite
+}
+@keyframes fmenu-aura{
+  0%,100%{transform:scale(.85);opacity:.5}
+  50%{transform:scale(1.35);opacity:1}
+}
 .fmenu-btn-label{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.18em;color:#e8d48a;line-height:1;text-shadow:0 0 8px rgba(201,168,76,.8)}
 .fmenu-btn-lines{display:flex;flex-direction:column;gap:3px}
 .fmenu-btn-line{width:20px;height:1.5px;background:linear-gradient(90deg,#c9a84c,#b87fff);border-radius:1px;box-shadow:0 0 4px rgba(201,168,76,.6)}
