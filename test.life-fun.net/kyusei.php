@@ -240,6 +240,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .form-group{margin-bottom:1.25rem}
 .form-label{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted);display:block;margin-bottom:.5rem}
 .form-input{width:100%;background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s}
+select.form-input{appearance:none;-webkit-appearance:none;background-color:#1a1530;color:#e8e0f8;cursor:pointer}
 .form-input:focus{border-color:var(--violet)}
 .submit-btn{width:100%;background:linear-gradient(135deg,var(--gold),var(--violet));border:none;border-radius:10px;padding:.85rem;font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:#fff;cursor:pointer;letter-spacing:.06em;transition:opacity .2s;margin-top:.5rem}
 .submit-btn:hover{opacity:.85}
