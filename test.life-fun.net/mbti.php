@@ -642,6 +642,7 @@ function showResult() {
   });
   window._shareText = `MBTI診断結果：${selectedMbti}（${m.name}）× ${s.name} でした！✨`;
   showStep('step-result');
+  setTimeout(function(){ document.getElementById('step-result').scrollIntoView({behavior:'smooth',block:'start'}); }, 80);
 }
 
 function restart() {

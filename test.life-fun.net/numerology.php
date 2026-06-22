@@ -490,6 +490,7 @@ body{top:0!important}
 
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <a href="/numerology.php" class="retry-btn">もう一度診断する</a>
+    <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
     <div class="nav-cards-section" style="padding:2rem 0 0">
       <h3>✦ 次はこれを試してみては？ ✦</h3>
       <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'numerology'); ?>
