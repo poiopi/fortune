@@ -12,16 +12,7 @@ function _navlink(string $label, string $href, string $key, string $current): st
   <div class="header-inner">
     <a href="/" class="logo">占い<em>Portal</em></a>
     <nav class="header-nav">
-      <?= _navlink('トップ',       '/',           'top',        $_p) ?>
-      <?= _navlink('タロット',     '/tarot',      'tarot',      $_p) ?>
-      <?= _navlink('カレンダー',   '/calendar',   'calendar',   $_p) ?>
-      <?= _navlink('MBTI×星座',   '/mbti',       'mbti',       $_p) ?>
-      <?= _navlink('数秘術',       '/numerology', 'numerology', $_p) ?>
-      <?= _navlink('九星気学',     '/kyusei',     'kyusei',     $_p) ?>
-      <?= _navlink('RPG占い',      '/rpg',        'rpg',        $_p) ?>
-      <?= _navlink('相性診断',     '/aisho',      'aisho',      $_p) ?>
-      <?= _navlink('前世診断',     '/zense',      'zense',      $_p) ?>
-      <?= _navlink('守護霊診断',   '/guardian',   'guardian',   $_p) ?>
+      <?= _navlink('トップ', '/', 'top', $_p) ?>
     </nav>
     <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
