@@ -230,7 +230,7 @@ footer a:hover{color:var(--gold)}
     <div class="osp" id="dlgSp"></div>
     <div class="otx" id="dlgTx"></div>
     <div class="ochoices" id="dlgCh"></div>
-    <button class="ocls" id="dlgCls" onclick="closeDlg()">▶ 話を終える</button>
+    <button class="ocls" id="dlgCls" onclick="closeDlg()">▶ 話を終える &nbsp;<span style="font-size:.6rem;opacity:.5">Space / Enter</span></button>
   </div>
 </div>
 
@@ -246,10 +246,10 @@ footer a:hover{color:var(--gold)}
     </div>
     <div class="clog" id="cLog"></div>
     <div class="cacts">
-      <button class="cact" onclick="ca('atk')">⚔️ たたかう</button>
-      <button class="cact mag" id="cMag" onclick="ca('mag')">✨ 魔法(5MP)</button>
-      <button class="cact itm" id="cItm" onclick="ca('itm')">🌿 薬草を使う</button>
-      <button class="cact run" onclick="ca('run')">💨 にげる</button>
+      <button class="cact" onclick="ca('atk')">⚔️ [1] たたかう</button>
+      <button class="cact mag" id="cMag" onclick="ca('mag')">✨ [2] 魔法(5MP)</button>
+      <button class="cact itm" id="cItm" onclick="ca('itm')">🌿 [3] 薬草を使う</button>
+      <button class="cact run" onclick="ca('run')">💨 [4] にげる</button>
     </div>
   </div>
 </div>
@@ -782,10 +782,15 @@ document.addEventListener('keydown',e=>{
       if(btns[n-1]){e.preventDefault();btns[n-1].click();}
       return;
     }
-    if((e.key===' '||e.key==='Enter')){
+    if(e.key===' '||e.key==='Enter'){
       const cls=document.getElementById('dlgCls');
       if(cls&&cls.style.display!=='none'){e.preventDefault();cls.click();}
     }
+    return;
+  }
+  if(phase==='combat'){
+    const map={'1':'atk','2':'mag','3':'itm','4':'run'};
+    if(map[e.key]){e.preventDefault();ca(map[e.key]);}
     return;
   }
   if(phase!=='explore') return;
@@ -1175,7 +1180,8 @@ function resetGame(){
   phase='explore';
   document.getElementById('resOv').classList.remove('on');
   document.getElementById('frmOv').classList.remove('on');
-  hud(); draw();
+  document.getElementById('talkBtn').style.display='none';
+  hud(); draw(); updateTalkBtn();
 }
 
 // ════════════════════════════════════════════
