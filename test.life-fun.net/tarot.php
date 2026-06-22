@@ -421,22 +421,7 @@ body{top:0!important}
       <p>本サービスはエンターテインメントを目的としています。結果は参考程度にお楽しみください。医学・法律・投資などの専門的な助言を行うものではありません。</p>
     </div>
   </div>
-  <footer>
-    <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
-    タロット占い &nbsp;/&nbsp;
-    <a href="/calendar">開運カレンダー</a> &nbsp;/&nbsp;
-    <a href="/mbti">MBTI×星座診断</a> &nbsp;/&nbsp;
-    <a href="/numerology">数秘術診断</a> &nbsp;/&nbsp;
-    <a href="/kyusei">九星気学診断</a> &nbsp;/&nbsp;
-    <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
-    <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
-    <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-    <a href="/guardian">守護霊診断</a> &nbsp;/&nbsp;
-    <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
-    <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
-    <a href="/contact">お問い合わせ</a><br>
-    &copy; 2026 三星統合鑑定
-  </footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 
   <script>
   // ══ タロットデータ 22枚 ══════════════════════════════════════════

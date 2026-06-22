@@ -13,7 +13,7 @@
   <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact">お問い合わせ</a><br>
-  &copy; <?= date('Y') ?> life-fun.net
+  &copy; <?= date('Y') ?> 三星統合鑑定
 </footer>
 <script>
 function googleTranslateElementInit(){

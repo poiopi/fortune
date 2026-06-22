@@ -617,22 +617,7 @@ body{top:0!important}
 
 </div>
 
-<footer>
-  <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
-  <a href="/tarot.php">タロット占い</a> &nbsp;/&nbsp;
-  開運カレンダー &nbsp;/&nbsp;
-  <a href="/mbti.php">MBTI×星座診断</a> &nbsp;/&nbsp;
-   <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
-    <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
-  <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
-  <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
-  <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-  <a href="/guardian">守護霊診断</a> &nbsp;/&nbsp;
-  <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
-  <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
-  <a href="/contact.php">お問い合わせ</a><br>
-  &copy; 2026 三星統合鑑定
-</footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 <script>
 function openShare(type){
   const u=encodeURIComponent(location.href);
