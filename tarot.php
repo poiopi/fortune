@@ -330,35 +330,7 @@ body{top:0!important}
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </head>
   <body>
-  <header>
-    <div class="header-inner">
-      <a href="/" class="logo">占い<em>Portal</em></a>
-      <nav class="header-nav">
-        <a href="/">トップ</a>
-        タロット
-        <a href="/calendar">カレンダー</a>
-        <a href="/mbti">MBTI×星座</a>
-          <a href="/numerology">数秘術</a>
-          <a href="/kyusei">九星気学</a>
-        <a href="/rpg">RPG占い</a>
-        <a href="/aisho">相性診断</a>
-        <a href="/zense">前世診断</a>
-      </nav>
-      <div id="google_translate_element"></div>
-      <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-      <div class="sp-dropdown" id="spDropdown">
-        <a href="/">トップ</a>
-        <span>タロット</span>
-        <a href="/calendar">開運カレンダー</a>
-        <a href="/mbti">MBTI×星座</a>
-          <a href="/numerology">数秘術</a>
-          <a href="/kyusei">九星気学</a>
-        <a href="/rpg">RPG占い</a>
-        <a href="/aisho">相性診断</a>
-        <a href="/zense">前世診断</a>
-      </div>
-    </div>
-  </header>
+<?php $currentPage='tarot'; require __DIR__.'/inc/header.php'; ?>
 
   <div class="wrap">
     <section class="hero">
@@ -419,21 +391,7 @@ body{top:0!important}
       <p>本サービスはエンターテインメントを目的としています。結果は参考程度にお楽しみください。医学・法律・投資などの専門的な助言を行うものではありません。</p>
     </div>
   </div>
-  <footer>
-    <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
-    タロット占い &nbsp;/&nbsp;
-    <a href="/calendar">開運カレンダー</a> &nbsp;/&nbsp;
-    <a href="/mbti">MBTI×星座診断</a> &nbsp;/&nbsp;
-    <a href="/numerology">数秘術診断</a> &nbsp;/&nbsp;
-    <a href="/kyusei">九星気学診断</a> &nbsp;/&nbsp;
-    <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
-    <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
-    <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-    <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
-    <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
-    <a href="/contact">お問い合わせ</a><br>
-    &copy; 2026 三星統合鑑定
-  </footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 
   <script>
   // ══ タロットデータ 22枚 ══════════════════════════════════════════
@@ -734,17 +692,6 @@ function copyShareUrl(){
     const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
   });
 }
-function googleTranslateElementInit(){
-  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
-}
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    document.getElementById('spDropdown').classList.remove('open');
-  }
-});
 </script>
 </body>
 </html>

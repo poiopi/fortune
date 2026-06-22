@@ -448,35 +448,7 @@ body{top:0!important}
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">トップ</a>
-      <a href="/tarot.php">タロット</a>
-      カレンダー
-      <a href="/mbti.php">MBTI×星座</a>
-         <a href="/numerology.php">数秘術</a>
-         <a href="/kyusei.php">九星気学</a>
-      <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-    <div class="sp-dropdown" id="spDropdown">
-      <a href="/">トップ</a>
-      <a href="/tarot.php">タロット</a>
-      <span>開運カレンダー</span>
-      <a href="/mbti.php">MBTI×星座診断</a>
-         <a href="/numerology.php">数秘術</a>
-         <a href="/kyusei.php">九星気学</a>
-      <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-    </div>
-  </div>
-</header>
+<?php $currentPage='calendar'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
 
@@ -615,21 +587,7 @@ body{top:0!important}
 
 </div>
 
-<footer>
-  <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
-  <a href="/tarot.php">タロット占い</a> &nbsp;/&nbsp;
-  開運カレンダー &nbsp;/&nbsp;
-  <a href="/mbti.php">MBTI×星座診断</a> &nbsp;/&nbsp;
-   <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
-    <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
-  <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
-  <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
-  <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-  <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
-  <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
-  <a href="/contact.php">お問い合わせ</a><br>
-  &copy; 2026 三星統合鑑定
-</footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 <script>
 function openShare(type){
   const u=encodeURIComponent(location.href);
@@ -641,12 +599,6 @@ function copyShareUrl(){
   navigator.clipboard.writeText(location.href).then(()=>{
     const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
   });
-}
-function googleTranslateElementInit(){
-  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
-}
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
 }
 document.addEventListener('click',function(e){
   if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
