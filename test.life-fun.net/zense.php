@@ -122,7 +122,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-fi
 .retry-btn{display:inline-block;padding:.65rem 1.4rem;background:rgba(155,114,239,.15);border:1px solid var(--border2);color:var(--violet-lt);border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;cursor:pointer}
 
 /* ─── FOOTER ─── */
-footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 .footer-inner{max-width:900px;margin:0 auto}
 .footer-nav{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.06em;line-height:2.4;color:var(--muted)}
 .footer-nav a{color:var(--muted);text-decoration:none}
