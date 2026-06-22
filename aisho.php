@@ -530,6 +530,8 @@ footer a:hover{color:var(--gold)}
     </div>
 
         <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
+        <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
+        <div class="nav-cards-section"><h3>✦ 他の占いも試してみる ✦</h3><?= _nav_cards(3,'aisho') ?></div>
       </div>
       <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});</script>
       <?php endif;?>

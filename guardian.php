@@ -262,6 +262,8 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
         <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
       </div>
       <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
+      <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
+      <div class="nav-cards-section"><h3>✦ 他の占いも試してみる ✦</h3><?= _nav_cards(3,'guardian') ?></div>
     </div>
   </div>
 </div>

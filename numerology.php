@@ -508,6 +508,8 @@ body{top:0!important}
       </div>
     </div>
     <a href="/numerology.php" class="retry-btn">もう一度診断する</a>
+    <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
+    <div class="nav-cards-section"><h3>✦ 他の占いも試してみる ✦</h3><?= _nav_cards(3,'numerology') ?></div>
 
   </div>
 

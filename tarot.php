@@ -394,7 +394,7 @@ body{top:0!important}
 <?php require __DIR__.'/inc/footer.php'; ?>
 
   <script>
-  var _navCardsHtml = <?= json_encode('<div class="nav-cards-section"><h3>✦ 他の占いも試してみる ✦</h3>' . _nav_cards(8, 'tarot') . '</div>') ?>;
+  var _navCardsHtml = <?= json_encode('<div class="nav-cards-section"><h3>✦ 他の占いも試してみる ✦</h3>' . _nav_cards(3, 'tarot') . '</div>') ?>;
   // ══ タロットデータ 22枚 ══════════════════════════════════════════
   const TAROT = [
     {num:'0',   order:0,  name:'愚者',      en:'The Fool',           sym:'&#x1F4AB;', // 💫 自由・旅立ち

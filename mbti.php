@@ -459,7 +459,7 @@ body{top:0!important}
     <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
     <div class="nav-cards-section">
       <h3>✦ 他の占いも試してみる ✦</h3>
-      <?= _nav_cards(8, 'mbti') ?>
+      <?= _nav_cards(3, 'mbti') ?>
     </div>
 
   </div><!-- /.shindan-card -->
