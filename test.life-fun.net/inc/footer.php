@@ -84,43 +84,43 @@ require_once __DIR__.'/nav-cards.php';
 /* フローティングボタン */
 .fmenu-btn{
   position:fixed;bottom:1.6rem;left:1.6rem;z-index:1998;
-  width:58px;height:58px;border-radius:50%;border:none;
-  background:radial-gradient(circle at 35% 35%,#2a1a5e,#0f0b1e);
+  width:64px;height:64px;border-radius:50%;border:none;
+  background:radial-gradient(circle at 35% 35%,#4a20a0,#1a0a40);
   cursor:pointer;
-  box-shadow:0 0 0 1px rgba(155,114,239,.5),0 0 20px rgba(90,50,180,.6),0 4px 20px rgba(0,0,0,.5);
+  box-shadow:0 0 0 2px rgba(201,168,76,.7),0 0 28px rgba(130,70,240,.9),0 0 60px rgba(100,50,200,.5),0 4px 20px rgba(0,0,0,.7);
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
   transition:box-shadow .3s,transform .2s
 }
 .fmenu-btn:hover{
-  transform:scale(1.08);
-  box-shadow:0 0 0 1px rgba(155,114,239,.8),0 0 30px rgba(120,70,220,.8),0 4px 24px rgba(0,0,0,.6)
+  transform:scale(1.1);
+  box-shadow:0 0 0 2px #c9a84c,0 0 40px rgba(160,90,255,1),0 0 80px rgba(120,60,220,.7),0 4px 24px rgba(0,0,0,.8)
 }
 /* 回転リング */
 .fmenu-ring{
-  position:absolute;inset:-4px;border-radius:50%;
-  border:1px solid rgba(155,114,239,.4);
-  border-top-color:#9b72ef;border-right-color:#c9a84c;
-  animation:fmenu-spin 6s linear infinite
+  position:absolute;inset:-5px;border-radius:50%;
+  border:2px solid transparent;
+  border-top-color:#c9a84c;border-right-color:#9b72ef;
+  animation:fmenu-spin 4s linear infinite
 }
 .fmenu-ring2{
-  position:absolute;inset:-8px;border-radius:50%;
-  border:1px dashed rgba(155,114,239,.18);
-  animation:fmenu-spin 12s linear infinite reverse
+  position:absolute;inset:-10px;border-radius:50%;
+  border:1px dashed rgba(201,168,76,.35);
+  animation:fmenu-spin 10s linear infinite reverse
 }
 @keyframes fmenu-spin{to{transform:rotate(360deg)}}
 /* パルス */
 .fmenu-btn::after{
-  content:'';position:absolute;inset:-2px;border-radius:50%;
-  border:1px solid rgba(155,114,239,.35);
-  animation:fmenu-pulse 2.4s ease-in-out infinite
+  content:'';position:absolute;inset:-3px;border-radius:50%;
+  border:2px solid rgba(201,168,76,.6);
+  animation:fmenu-pulse 2s ease-in-out infinite
 }
 @keyframes fmenu-pulse{
-  0%,100%{transform:scale(1);opacity:.5}
-  50%{transform:scale(1.18);opacity:0}
+  0%,100%{transform:scale(1);opacity:.7}
+  50%{transform:scale(1.25);opacity:0}
 }
-.fmenu-btn-label{font-family:'DM Mono',monospace;font-size:.48rem;letter-spacing:.18em;color:#9b72ef;line-height:1}
+.fmenu-btn-label{font-family:'DM Mono',monospace;font-size:.5rem;letter-spacing:.18em;color:#e8d48a;line-height:1;text-shadow:0 0 8px rgba(201,168,76,.8)}
 .fmenu-btn-lines{display:flex;flex-direction:column;gap:3px}
-.fmenu-btn-line{width:18px;height:1px;background:linear-gradient(90deg,#9b72ef,#c9a84c);border-radius:1px}
+.fmenu-btn-line{width:20px;height:1.5px;background:linear-gradient(90deg,#c9a84c,#b87fff);border-radius:1px;box-shadow:0 0 4px rgba(201,168,76,.6)}
 </style>
 
 <!-- ドロワー本体 -->
