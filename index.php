@@ -1253,6 +1253,12 @@ header.site-header{
       <div class="integrated-text"><?= htmlspecialchars($result['integrated']) ?></div>
     </div>
 
+    <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
+    <div class="nav-cards-section" style="padding:2rem 0 0">
+      <h3>✦ 次はこれを試してみては？ ✦</h3>
+      <?= _nav_cards(3, 'top') ?>
+    </div>
+
     <!-- もう一度 -->
     <div style="text-align:center;margin-top:2rem">
       <a href="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" style="

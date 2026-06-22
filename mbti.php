@@ -455,11 +455,11 @@ body{top:0!important}
         </div>
       </div>
       <button class="retry-btn" onclick="restart()">もう一度診断する</button>
-    </div>
-    <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
-    <div class="nav-cards-section">
-      <h3>✦ 他の占いも試してみる ✦</h3>
-      <?= _nav_cards(3, 'mbti') ?>
+      <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
+      <div class="nav-cards-section" style="padding:2rem 0 0">
+        <h3>✦ 次はこれを試してみては？ ✦</h3>
+        <?= _nav_cards(3, 'mbti') ?>
+      </div>
     </div>
 
   </div><!-- /.shindan-card -->
