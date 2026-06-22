@@ -136,14 +136,6 @@ header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-fi
 
 /* シェア */
 .share-area{text-align:center;margin-top:1.5rem}
-.share-label{font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
-.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap;margin-bottom:1rem}
-.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.5rem 1rem;border-radius:20px;font-size:.75rem;font-family:var(--ff-sans);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap;font-weight:600}
-.share-btn:hover{opacity:.8}
-.share-line{background:#06C755;color:#fff}
-.share-x{background:#000;color:#fff}
-.share-fb{background:#1877F2;color:#fff}
-.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 .retry-btn{display:inline-block;padding:.65rem 1.4rem;background:rgba(155,114,239,.15);border:1px solid var(--border2);color:var(--violet-lt);border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;cursor:pointer}
 
 /* ─── FOOTER ─── */
@@ -254,13 +246,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     </div>
 
     <div class="share-area">
-      <p class="share-label">✦ 結果をシェアする</p>
-      <div class="share-btns">
-        <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
-        <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
-        <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
-        <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
-      </div>
+      <?php require __DIR__.'/inc/share-btns.php'; ?>
       <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
       <div class="nav-cards-section" style="padding:2rem 0 0">
         <h3>✦ 次はこれを試してみては？ ✦</h3>
@@ -584,17 +570,6 @@ function diagnose(){
   });
 }
 
-function openShare(type){
-  const u=encodeURIComponent('https://life-fun.net/guardian');
-  const txt=window._shareText||'守護霊診断';
-  const urls={line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt),x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt),fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
-  window.open(urls[type],'_blank','noopener');
-}
-function copyShareUrl(){
-  navigator.clipboard.writeText('https://life-fun.net/guardian').then(()=>{
-    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
-  });
-}
 function resetForm(){
   document.getElementById('formArea').style.display='block';
   document.getElementById('result').style.display='none';
