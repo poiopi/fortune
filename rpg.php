@@ -795,9 +795,29 @@ document.addEventListener('keydown',e=>{
   if(e.key===' '||e.key==='Enter'){e.preventDefault();talk();}
 });
 
+// 押しっぱなし連続移動
+let _holdTimer=null, _holdInterval=null;
+function _startHold(dir){
+  if(phase!=='explore') return;
+  move(dir);
+  _holdTimer=setTimeout(()=>{
+    _holdInterval=setInterval(()=>{if(phase==='explore')move(dir);else _stopHold();},130);
+  },220);
+}
+function _stopHold(){
+  clearTimeout(_holdTimer); clearInterval(_holdInterval);
+  _holdTimer=null; _holdInterval=null;
+}
+
 ['bU','bD','bL','bR'].forEach((id,i)=>{
   const dirs=['u','d','l','r'];
-  document.getElementById(id).addEventListener('click',()=>{if(phase==='explore')move(dirs[i]);});
+  const el=document.getElementById(id);
+  el.addEventListener('mousedown',()=>_startHold(dirs[i]));
+  el.addEventListener('touchstart',e=>{e.preventDefault();_startHold(dirs[i]);},{passive:false});
+  el.addEventListener('mouseup',_stopHold);
+  el.addEventListener('mouseleave',_stopHold);
+  el.addEventListener('touchend',_stopHold);
+  el.addEventListener('touchcancel',_stopHold);
 });
 document.getElementById('bA').addEventListener('click',()=>{if(phase==='explore')talk();});
 
