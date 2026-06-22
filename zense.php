@@ -514,7 +514,11 @@ function diagnose(){
   const key=name+y+mo+d;
   const seed=strHash(key);
 
-  const lifeCount=seededNum(1,999,seed,'lc');
+  const lcRaw=Math.abs(strHash(String(seed)+'lc'))%100;
+  let lifeCount;
+  if(lcRaw<90){lifeCount=1+Math.abs(strHash(String(seed)+'lc2'))%10;}
+  else if(lcRaw<95){lifeCount=11+Math.abs(strHash(String(seed)+'lc3'))%90;}
+  else{lifeCount=101+Math.abs(strHash(String(seed)+'lc4'))%899;}
   const era=seededPick(ERAS,seed,'er');
   const region=seededPick(REGIONS,seed,'rg');
   const roleObj=seededPick(ROLES,seed,'ro');
