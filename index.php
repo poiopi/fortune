@@ -1040,34 +1040,7 @@ header.site-header{
 </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/tarot.php">タロット</a>
-      <a href="/calendar.php">カレンダー</a>
-      <a href="/mbti.php">MBTI×星座</a>
-      <a href="/numerology.php">数秘術</a>
-      <a href="/kyusei.php">九星気学</a>
-      <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-    <div class="sp-dropdown" id="spDropdown">
-      <span>トップ</span>
-      <a href="/tarot.php">タロット</a>
-      <a href="/calendar.php">開運カレンダー</a>
-      <a href="/mbti.php">MBTI×星座</a>
-      <a href="/numerology.php">数秘術</a>
-      <a href="/kyusei.php">九星気学</a>
-      <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-    </div>
-  </div>
-</header>
+<?php $currentPage='top'; require __DIR__.'/inc/header.php'; ?>
 <div class="wrap">
 
   <!-- HERO -->
@@ -1178,17 +1151,6 @@ header.site-header{
           診断する &#8594;
         </a>
       </div>
-      <!-- 守護霊診断への導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(201,168,76,.1) 0%,rgba(155,114,239,.1) 100%);border:1px solid rgba(201,168,76,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--gold-lt);text-transform:uppercase;margin-bottom:.3rem">Guardian Spirit</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">守護霊診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚</div>
-        </div>
-        <a href="/guardian" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--gold),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(201,168,76,.3);">
-          召喚する &#8594;
-        </a>
-      </div>
       <!-- 前世診断への導線 -->
       <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(155,114,239,.12) 0%,rgba(78,205,196,.08) 100%);border:1px solid rgba(155,114,239,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
         <div>
@@ -1198,6 +1160,17 @@ header.site-header{
         </div>
         <a href="/zense" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--violet),var(--teal));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(155,114,239,.3);">
           診断する &#8594;
+        </a>
+      </div>
+      <!-- 守護霊診断への導線 -->
+      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(201,168,76,.1) 0%,rgba(155,114,239,.1) 100%);border:1px solid rgba(201,168,76,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+        <div>
+          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--gold-lt);text-transform:uppercase;margin-bottom:.3rem">Guardian Spirit</div>
+          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">守護霊診断</div>
+          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚</div>
+        </div>
+        <a href="/guardian" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--gold),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(201,168,76,.3);">
+          召喚する &#8594;
         </a>
       </div>
 
@@ -1380,21 +1353,7 @@ header.site-header{
 </div>
 
 </section>
-<footer>
-  占いポータル トップ &nbsp;/&nbsp;
-  <a href="/tarot.php">タロット占い</a> &nbsp;/&nbsp;
-  <a href="/calendar.php">開運カレンダー</a> &nbsp;/&nbsp;
-  <a href="/mbti.php">MBTI×星座診断</a> &nbsp;/&nbsp;
-   <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
-    <a href="/kyusei.php">九星気学診断</a> &nbsp;/&nbsp;
-  <a href="/rpg.php">RPG占い</a> &nbsp;/&nbsp;
-  <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
-  <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-  <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
-  <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
-  <a href="/contact.php">お問い合わせ</a><br>
-  &copy; 2026 三星統合鑑定
-</footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 </div>
 <div id="loading-overlay">
   <div class="loader-box">
@@ -1432,12 +1391,6 @@ window.addEventListener('load', function(){
 
 </script>
 <script>
-function googleTranslateElementInit(){
-  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
-}
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
 document.addEventListener('click',function(e){
   if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
     document.getElementById('spDropdown').classList.remove('open');

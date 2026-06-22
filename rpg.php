@@ -167,35 +167,7 @@ footer a:hover{color:var(--gold)}
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">トップ</a>
-      <a href="/tarot.php">タロット</a>
-      <a href="/calendar.php">カレンダー</a>
-      <a href="/mbti.php">MBTI×星座</a>
-      <a href="/numerology.php">数秘術</a>
-      <a href="/kyusei.php">九星気学</a>
-      RPG占い
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-    <div class="sp-dropdown" id="spDropdown">
-      <a href="/">トップ</a>
-      <a href="/tarot.php">タロット</a>
-      <a href="/calendar.php">開運カレンダー</a>
-      <a href="/mbti.php">MBTI×星座診断</a>
-      <a href="/numerology.php">数秘術診断</a>
-      <a href="/kyusei.php">九星気学</a>
-      <span>RPG占い</span>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-    </div>
-  </div>
-</header>
+<?php $currentPage='rpg'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
   <section class="hero">
@@ -317,21 +289,7 @@ footer a:hover{color:var(--gold)}
 
 <p style="max-width:900px;margin:0 auto 1.5rem;padding:0 1.2rem;text-align:center;font-size:.72rem;color:var(--muted);line-height:1.8">本サービスはエンターテインメントを目的とした占いコンテンツです。結果は楽しみや気づきの参考としてご活用ください。</p>
 
-<footer>
-  <a href="/">占いポータル トップ</a> &nbsp;/&nbsp;
-  <a href="/tarot.php">タロット占い</a> &nbsp;/&nbsp;
-  <a href="/calendar.php">開運カレンダー</a> &nbsp;/&nbsp;
-  <a href="/mbti.php">MBTI×星座診断</a> &nbsp;/&nbsp;
-  <a href="/numerology.php">数秘術診断</a> &nbsp;/&nbsp;
-  <a href="/kyusei.php">九星気学</a> &nbsp;/&nbsp;
-  RPG占い &nbsp;/&nbsp;
-  <a href="/aisho.php">相性診断</a> &nbsp;/&nbsp;
-  <a href="/zense">前世診断</a> &nbsp;/&nbsp;
-  <a href="/privacy.php">プライバシーポリシー</a> &nbsp;/&nbsp;
-  <a href="/profile.php">運営者情報</a> &nbsp;/&nbsp;
-  <a href="/contact.php">お問い合わせ</a><br>
-  &copy; <?= date('Y') ?> 三星統合鑑定
-</footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
 // ════════════════════════════════════════════
@@ -1108,9 +1066,6 @@ function jobClass(){
 // ════════════════════════════════════════════
 // SP MENU / RESET
 // ════════════════════════════════════════════
-function googleTranslateElementInit(){
-  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
-}
 function openShare(type){
   const url=location.href;
   const u=encodeURIComponent(url);
@@ -1127,12 +1082,6 @@ function copyShareUrl(){
     const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
   });
 }
-function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
-document.addEventListener('click',e=>{
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown'))
-    document.getElementById('spDropdown').classList.remove('open');
-});
-
 function resetGame(){
   pl={x:10,y:9,hp:30,mhp:30,mp:20,mmp:20};
   inv={herb:0,crystal:0,scroll:false};

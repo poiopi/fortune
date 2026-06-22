@@ -122,7 +122,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-fi
 .retry-btn{display:inline-block;padding:.65rem 1.4rem;background:rgba(155,114,239,.15);border:1px solid var(--border2);color:var(--violet-lt);border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;cursor:pointer}
 
 /* ─── FOOTER ─── */
-footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 .footer-inner{max-width:900px;margin:0 auto}
 .footer-nav{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.06em;line-height:2.4;color:var(--muted)}
 .footer-nav a{color:var(--muted);text-decoration:none}
@@ -131,34 +131,7 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
 </style>
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">トップ</a>
-      <a href="/tarot">タロット</a>
-      <a href="/calendar">カレンダー</a>
-      <a href="/mbti">MBTI×星座</a>
-      <a href="/numerology">数秘術</a>
-      <a href="/kyusei">九星気学</a>
-      <a href="/rpg">RPG占い</a>
-      <a href="/aisho">相性診断</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-    <div class="sp-dropdown" id="spDropdown">
-      <a href="/">トップ</a>
-      <a href="/tarot">タロット</a>
-      <a href="/calendar">開運カレンダー</a>
-      <a href="/mbti">MBTI×星座</a>
-      <a href="/numerology">数秘術</a>
-      <a href="/kyusei">九星気学</a>
-      <a href="/rpg">RPG占い</a>
-      <a href="/aisho">相性診断</a>
-      前世診断
-    </div>
-  </div>
-</header>
+<?php $currentPage='zense'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
   <div class="page-title">
@@ -258,25 +231,7 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
   </div>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-nav">
-      <a href="/">トップ</a> &nbsp;/&nbsp;
-      <a href="/tarot">タロット</a> &nbsp;/&nbsp;
-      <a href="/calendar">開運カレンダー</a> &nbsp;/&nbsp;
-      <a href="/mbti">MBTI×星座診断</a> &nbsp;/&nbsp;
-      <a href="/numerology">数秘術診断</a> &nbsp;/&nbsp;
-      <a href="/kyusei">九星気学診断</a> &nbsp;/&nbsp;
-      <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
-      <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
-      <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
-      <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
-      <a href="/contact">お問い合わせ</a><br>
-      <span style="font-size:.6rem;color:rgba(138,125,181,.5)">※占い結果はエンターテインメントです。重要な判断の根拠にはしないでください。</span>
-    </div>
-    <div class="footer-copy">© 2025 life-fun.net — All rights reserved</div>
-  </div>
-</footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
 // ─── セレクト生成 ───────────────────────────────────────────
@@ -582,20 +537,6 @@ function resetForm(){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function toggleSpMenu(){
-  const d=document.getElementById('spDropdown');
-  d.style.display=d.style.display==='block'?'none':'block';
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    const d=document.getElementById('spDropdown');
-    if(d) d.style.display='none';
-  }
-});
-
-function googleTranslateElementInit(){
-  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
-}
 </script>
 </body>
 </html>
