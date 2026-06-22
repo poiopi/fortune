@@ -367,9 +367,6 @@ body{top:0!important}
       <button class="submit-btn" type="submit">本命星を算出する ✦</button>
     </form>
     <script>
-    <?php if($result!==null): ?>
-    document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});
-    <?php endif; ?>
     function buildDate(){
       var y=document.getElementById('bdY').value;
       var m=document.getElementById('bdM').value;
@@ -463,6 +460,7 @@ body{top:0!important}
     <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
     <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'kyusei') ?></div>
   </div>
+  <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
 
   <?php endif; ?>
 
