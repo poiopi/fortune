@@ -131,37 +131,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 </style>
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">トップ</a>
-      <a href="/tarot">タロット</a>
-      <a href="/calendar">カレンダー</a>
-      <a href="/mbti">MBTI×星座</a>
-      <a href="/numerology">数秘術</a>
-      <a href="/kyusei">九星気学</a>
-      <a href="/rpg">RPG占い</a>
-      <a href="/aisho">相性診断</a>
-      前世診断
-      <a href="/guardian">守護霊診断</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-    <div class="sp-dropdown" id="spDropdown">
-      <a href="/">トップ</a>
-      <a href="/tarot">タロット</a>
-      <a href="/calendar">開運カレンダー</a>
-      <a href="/mbti">MBTI×星座</a>
-      <a href="/numerology">数秘術</a>
-      <a href="/kyusei">九星気学</a>
-      <a href="/rpg">RPG占い</a>
-      <a href="/aisho">相性診断</a>
-      前世診断
-      <a href="/guardian">守護霊診断</a>
-    </div>
-  </div>
-</header>
+<?php $currentPage='zense'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
   <div class="page-title">

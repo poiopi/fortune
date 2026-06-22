@@ -448,37 +448,7 @@ body{top:0!important}
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">トップ</a>
-      <a href="/tarot.php">タロット</a>
-      カレンダー
-      <a href="/mbti.php">MBTI×星座</a>
-         <a href="/numerology.php">数秘術</a>
-         <a href="/kyusei.php">九星気学</a>
-      <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-      <a href="/guardian">守護霊診断</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-    <div class="sp-dropdown" id="spDropdown">
-      <a href="/">トップ</a>
-      <a href="/tarot.php">タロット</a>
-      <span>開運カレンダー</span>
-      <a href="/mbti.php">MBTI×星座診断</a>
-         <a href="/numerology.php">数秘術</a>
-         <a href="/kyusei.php">九星気学</a>
-      <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-      <a href="/guardian">守護霊診断</a>
-    </div>
-  </div>
-</header>
+<?php $currentPage='calendar'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
 
