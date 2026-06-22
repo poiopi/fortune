@@ -92,7 +92,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .otx{font-family:var(--ff-rpg);font-size:.8rem;color:var(--text);line-height:2;margin-bottom:.9rem}
 .ochoices{display:flex;flex-direction:column;gap:.45rem}
 .cbtn{background:rgba(155,114,239,.1);border:1px solid var(--border2);border-radius:8px;padding:.6rem .9rem;font-family:var(--ff-rpg);font-size:.76rem;color:var(--violet-lt);cursor:pointer;text-align:left;transition:background .15s;-webkit-tap-highlight-color:transparent}
-.cbtn::before{content:'▶ ';color:var(--gold)}
+.cbtn::before{content:attr(data-num) ' ▶ ';color:var(--gold)}
 .cbtn:hover,.cbtn:active{background:rgba(155,114,239,.25)}
 .cbtn.bad{color:var(--rose);border-color:rgba(232,113,154,.25)}
 .cbtn.bad::before{color:var(--rose)}
@@ -230,7 +230,7 @@ footer a:hover{color:var(--gold)}
     <div class="osp" id="dlgSp"></div>
     <div class="otx" id="dlgTx"></div>
     <div class="ochoices" id="dlgCh"></div>
-    <button class="ocls" id="dlgCls" onclick="closeDlg()">▶ 話を終える</button>
+    <button class="ocls" id="dlgCls" onclick="closeDlg()">▶ 話を終える &nbsp;<span style="font-size:.6rem;opacity:.5">Space / Enter</span></button>
   </div>
 </div>
 
@@ -246,10 +246,10 @@ footer a:hover{color:var(--gold)}
     </div>
     <div class="clog" id="cLog"></div>
     <div class="cacts">
-      <button class="cact" onclick="ca('atk')">⚔️ たたかう</button>
-      <button class="cact mag" id="cMag" onclick="ca('mag')">✨ 魔法(5MP)</button>
-      <button class="cact itm" id="cItm" onclick="ca('itm')">🌿 薬草を使う</button>
-      <button class="cact run" onclick="ca('run')">💨 にげる</button>
+      <button class="cact" onclick="ca('atk')">⚔️ [1] たたかう</button>
+      <button class="cact mag" id="cMag" onclick="ca('mag')">✨ [2] 魔法(5MP)</button>
+      <button class="cact itm" id="cItm" onclick="ca('itm')">🌿 [3] 薬草を使う</button>
+      <button class="cact run" onclick="ca('run')">💨 [4] にげる</button>
     </div>
   </div>
 </div>
@@ -269,7 +269,8 @@ footer a:hover{color:var(--gold)}
 
 <!-- RESULT -->
 <div class="ov" id="resOv">
-  <div class="ob">
+  <div class="ob" style="position:relative">
+    <button onclick="resetGame()" style="position:absolute;top:.6rem;right:.6rem;background:none;border:1px solid rgba(155,114,239,.3);border-radius:50%;width:28px;height:28px;color:#8a7db5;cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:color .2s,border-color .2s" onmouseover="this.style.color='#c4a8f5';this.style.borderColor='#9b72ef'" onmouseout="this.style.color='#8a7db5';this.style.borderColor='rgba(155,114,239,.3)'">✕</button>
     <div class="ot">✦ 占い結果 ✦</div>
     <div id="resContent"></div>
     <div class="share-wrap">
@@ -770,6 +771,24 @@ const DMAP={ArrowUp:'u',ArrowDown:'d',ArrowLeft:'l',ArrowRight:'r',
             w:'u',s:'d',a:'l',d:'r',W:'u',S:'d',A:'l',D:'r'};
 
 document.addEventListener('keydown',e=>{
+  if(phase==='dialog'){
+    const n=parseInt(e.key);
+    if(n>=1&&n<=9){
+      const btns=document.querySelectorAll('#dlgCh .cbtn');
+      if(btns[n-1]){e.preventDefault();btns[n-1].click();}
+      return;
+    }
+    if(e.key===' '||e.key==='Enter'){
+      const cls=document.getElementById('dlgCls');
+      if(cls&&cls.style.display!=='none'){e.preventDefault();cls.click();}
+    }
+    return;
+  }
+  if(phase==='combat'){
+    const map={'1':'atk','2':'mag','3':'itm','4':'run'};
+    if(map[e.key]){e.preventDefault();ca(map[e.key]);}
+    return;
+  }
   if(phase!=='explore') return;
   const dir=DMAP[e.key];
   if(dir){e.preventDefault();move(dir);return;}
@@ -851,9 +870,10 @@ function openDlg(){
   const cls=document.getElementById('dlgCls');
   if(d.ch){
     cls.style.display='none';
-    d.ch.forEach(c=>{
+    d.ch.forEach((c,i)=>{
       const b=document.createElement('button');
       b.className='cbtn'+(c.bad?' bad':'');
+      b.setAttribute('data-num',i+1);
       b.textContent=c.t;
       b.onclick=()=>pick(c);
       ch.appendChild(b);
@@ -1090,7 +1110,8 @@ function resetGame(){
   phase='explore';
   document.getElementById('resOv').classList.remove('on');
   document.getElementById('frmOv').classList.remove('on');
-  hud(); draw();
+  document.getElementById('talkBtn').style.display='none';
+  hud(); draw(); updateTalkBtn();
 }
 
 // ════════════════════════════════════════════
