@@ -153,6 +153,7 @@ require_once __DIR__.'/nav-cards.php';
       'aisho'      => ['icon'=>'💑', 'name'=>'相性診断',            'url'=>'/aisho'],
       'zense'      => ['icon'=>'🌀', 'name'=>'前世診断',            'url'=>'/zense'],
       'guardian'   => ['icon'=>'👻', 'name'=>'守護霊診断',          'url'=>'/guardian'],
+      'seimei'     => ['icon'=>'✍️', 'name'=>'姓名判断',            'url'=>'/seimei'],
     ];
     echo '<div class="fmenu-section-label">占い一覧</div>';
     foreach($fmenu_pages as $key=>$pg):
