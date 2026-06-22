@@ -1163,27 +1163,6 @@ header.site-header{
           <a href="/guardian.php" class="page-card-btn btn-guardian">召喚する →</a>
         </div>
       </div>
-      <div style="display:none"><!-- 旧インラインブロック削除済み -->
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--violet-lt);text-transform:uppercase;margin-bottom:.3rem">New</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">本格タロット占い</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">カードをめくって今のあなたへのメッセージを</div>
-        </div>
-        <a href="/tarot.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--teal),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(78,205,196,.35);">
-        カードを引く &#8594;
-        </a>
-      </div>
-      <div style="display:none"><!-- 旧MBTI〜守護霊ブロック削除済み -->
-      <div style="display:none">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:.3rem">MBTI × Zodiac</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">MBTI×星座 性格診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">10の質問で性格タイプと星座の組み合わせ運命を診断</div>
-        </div>
-        <a href="/mbti.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--gold),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(201,168,76,.3);">
-          診断する &#8594;
-        </a>
-      </div>
 
       <!-- 結果（main-colの内側） -->
       <?php if ($result): ?>
