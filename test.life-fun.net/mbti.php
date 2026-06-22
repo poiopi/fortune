@@ -485,6 +485,10 @@ body{top:0!important}
         </div>
       </div>
       <button class="retry-btn" onclick="restart()">もう一度診断する</button>
+      <div class="nav-cards-section" style="padding:2rem 0 0">
+        <h3>✦ 次はこれを試してみては？ ✦</h3>
+        <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'mbti'); ?>
+      </div>
     </div>
 
   </div><!-- /.shindan-card -->

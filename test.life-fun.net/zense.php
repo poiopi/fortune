@@ -257,6 +257,10 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
         <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
       </div>
       <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
+      <div class="nav-cards-section" style="padding:2rem 0 0">
+        <h3>✦ 次はこれを試してみては？ ✦</h3>
+        <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'zense'); ?>
+      </div>
     </div>
   </div>
 </div>
