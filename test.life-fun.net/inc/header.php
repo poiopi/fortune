@@ -12,8 +12,19 @@ function _navlink(string $label, string $href, string $key, string $current): st
   <div class="header-inner">
     <a href="/" class="logo">占い<em>Portal</em></a>
     <nav class="header-nav">
-      <?= _navlink('トップ', '/', 'top', $_p) ?>
+      <?= $_p==='top' ? '<span class="header-top-link current">✦ TOP</span>' : '<a href="/" class="header-top-link">✦ TOPへ戻る</a>' ?>
     </nav>
+    <style>
+    .header-top-link{
+      display:inline-flex;align-items:center;padding:.3rem .9rem;
+      border:1px solid rgba(201,168,76,.45);border-radius:20px;
+      font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.12em;
+      color:#c9a84c;text-decoration:none;white-space:nowrap;
+      transition:border-color .2s,color .2s,box-shadow .2s
+    }
+    .header-top-link:hover{border-color:#c9a84c;color:#e8d48a;box-shadow:0 0 10px rgba(201,168,76,.3)}
+    .header-top-link.current{opacity:.45;cursor:default;pointer-events:none}
+    </style>
     <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
     <div class="sp-dropdown" id="spDropdown">
