@@ -652,7 +652,7 @@ body{top:0!important}
     `;
 
     window._shareText = `${card.name}（${dirLabel}）が出ました！✨`;
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    setTimeout(function(){var el=document.getElementById('result-section');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},80);
   }
 
   // ══ リセット ════════════════════════════════════════════════════

@@ -533,6 +533,9 @@ function copyShareUrl(){
     const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
   });
 }
+<?php if($result!==null): ?>
+document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});
+<?php endif; ?>
 </script>
 </body>
 </html>

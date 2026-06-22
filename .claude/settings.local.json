@@ -7,7 +7,8 @@
       "PowerShell(\\(Get-Item \"C:\\\\Users\\\\sende\\\\fortune\\\\aisho.php\"\\).Length; \\(Get-Content \"C:\\\\Users\\\\sende\\\\fortune\\\\aisho.php\" -Encoding Byte -TotalCount 4 | ForEach-Object { \"{0:X2}\" -f $_ }\\) -join \" \")",
       "PowerShell($content = Get-Content \"C:\\\\Users\\\\sende\\\\fortune\\\\tarot.php\" -Raw; $content.Length; $content.Substring\\($content.Length - 20\\))",
       "mcp__visualize__read_me",
-      "mcp__visualize__show_widget"
+      "mcp__visualize__show_widget",
+      "PowerShell(\\(Select-String -Path 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\seimei.php' -Pattern \"'.':[0-9]+\" -AllMatches\\).Matches.Count)"
     ]
   }
 }

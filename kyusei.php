@@ -367,6 +367,9 @@ body{top:0!important}
       <button class="submit-btn" type="submit">本命星を算出する ✦</button>
     </form>
     <script>
+    <?php if($result!==null): ?>
+    document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});
+    <?php endif; ?>
     function buildDate(){
       var y=document.getElementById('bdY').value;
       var m=document.getElementById('bdM').value;
