@@ -261,27 +261,7 @@ footer{border-top:1px solid var(--border);padding:2rem 1.2rem;text-align:center}
   </div>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-nav">
-      <a href="/">トップ</a> &nbsp;/&nbsp;
-      <a href="/tarot">タロット</a> &nbsp;/&nbsp;
-      <a href="/calendar">開運カレンダー</a> &nbsp;/&nbsp;
-      <a href="/mbti">MBTI×星座診断</a> &nbsp;/&nbsp;
-      <a href="/numerology">数秘術診断</a> &nbsp;/&nbsp;
-      <a href="/kyusei">九星気学診断</a> &nbsp;/&nbsp;
-      <a href="/rpg">RPG占い</a> &nbsp;/&nbsp;
-      <a href="/aisho">相性診断</a> &nbsp;/&nbsp;
-      前世診断 &nbsp;/&nbsp;
-      <a href="/guardian">守護霊診断</a> &nbsp;/&nbsp;
-      <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
-      <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
-      <a href="/contact">お問い合わせ</a><br>
-      <span style="font-size:.6rem;color:rgba(138,125,181,.5)">※占い結果はエンターテインメントです。重要な判断の根拠にはしないでください。</span>
-    </div>
-    <div class="footer-copy">© 2025 life-fun.net — All rights reserved</div>
-  </div>
-</footer>
+<?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
 // ─── セレクト生成 ───────────────────────────────────────────
