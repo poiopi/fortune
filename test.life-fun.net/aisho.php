@@ -761,6 +761,10 @@ footer a:hover{color:var(--gold)}
     </div>
 
         <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
+        <div class="nav-cards-section" style="padding:2rem 0 0">
+          <h3>✦ 次はこれを試してみては？ ✦</h3>
+          <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'aisho'); ?>
+        </div>
       </div>
       <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});</script>
       <?php endif;?>

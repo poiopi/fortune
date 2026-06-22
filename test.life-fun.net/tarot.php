@@ -328,6 +328,7 @@ body{top:0!important}
   </style>
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<?php require_once __DIR__.'/inc/nav-cards.php'; $tarotNavCards = _nav_cards(3,'tarot'); ?>
   </head>
   <body>
   <header>
@@ -385,6 +386,13 @@ body{top:0!important}
 
     <!-- 結果 -->
     <div class="result-section" id="result-section"></div>
+    <!-- 次の診断へ -->
+    <div id="tarot-nav-cards" style="display:none">
+      <div class="nav-cards-section" style="padding:2rem 0 0">
+        <h3>✦ 次はこれを試してみては？ ✦</h3>
+        <?= $tarotNavCards ?>
+      </div>
+    </div>
   </div>
 
   <!-- 中央オーバーレイ（カード移動・フリップ演出） -->
@@ -681,6 +689,7 @@ body{top:0!important}
       <button class="retry-btn" onclick="resetAll()">&#8617; もう一度カードを引く</button>
     `;
 
+    document.getElementById('tarot-nav-cards').style.display='block';
     window._shareText = `${card.name}（${dirLabel}）が出ました！✨`;
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
@@ -689,6 +698,7 @@ body{top:0!important}
   function resetAll() {
     document.getElementById('result-section').style.display = 'none';
     document.getElementById('result-section').innerHTML = '';
+    document.getElementById('tarot-nav-cards').style.display = 'none';
     const stage = document.getElementById('stage-select');
     stage.style.display = 'flex';
     // オーバーレイリセット

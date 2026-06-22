@@ -312,6 +312,10 @@ footer a:hover{color:var(--gold)}
       </div>
     </div>
     <button class="rtry" onclick="resetGame()">▶ もう一度遊ぶ</button>
+    <div class="nav-cards-section" style="padding:2rem 0 0">
+      <h3>✦ 次はこれを試してみては？ ✦</h3>
+      <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'rpg'); ?>
+    </div>
   </div>
 </div>
 
