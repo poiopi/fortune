@@ -364,13 +364,46 @@ body{top:0!important}
     <?php if (!empty($errors)): ?>
     <div class="error-box"><?php foreach ($errors as $e): ?><?= htmlspecialchars($e) ?><?php endforeach; ?></div>
     <?php endif; ?>
-    <form method="get" action="">
+    <form method="get" action="" onsubmit="buildDate()">
       <div class="form-group">
-        <label class="form-label" for="birthdate">生年月日</label>
-        <input class="form-input" type="date" id="birthdate" name="birthdate" value="<?= htmlspecialchars($_GET['birthdate'] ?? '') ?>">
+        <label class="form-label">生年月日</label>
+        <div style="display:flex;gap:.5rem;align-items:center">
+          <?php
+            $bd = $_GET['birthdate'] ?? '';
+            [$by,$bm,$bdd] = $bd ? explode('-',$bd) : ['','',''];
+          ?>
+          <select class="form-input" id="bdY" style="flex:2">
+            <option value="">年</option>
+            <?php for($y=date('Y');$y>=1924;$y--): ?>
+            <option value="<?=$y?>" <?=$by==(string)$y?'selected':''?>><?=$y?>年</option>
+            <?php endfor; ?>
+          </select>
+          <select class="form-input" id="bdM" style="flex:1">
+            <option value="">月</option>
+            <?php for($m=1;$m<=12;$m++): ?>
+            <option value="<?=sprintf('%02d',$m)?>" <?=$bm===sprintf('%02d',$m)?'selected':''?>><?=$m?>月</option>
+            <?php endfor; ?>
+          </select>
+          <select class="form-input" id="bdD" style="flex:1">
+            <option value="">日</option>
+            <?php for($d=1;$d<=31;$d++): ?>
+            <option value="<?=sprintf('%02d',$d)?>" <?=$bdd===sprintf('%02d',$d)?'selected':''?>><?=$d?>日</option>
+            <?php endfor; ?>
+          </select>
+        </div>
+        <input type="hidden" id="birthdate" name="birthdate">
       </div>
       <button class="submit-btn" type="submit">本命星を算出する ✦</button>
     </form>
+    <script>
+    function buildDate(){
+      var y=document.getElementById('bdY').value;
+      var m=document.getElementById('bdM').value;
+      var d=document.getElementById('bdD').value;
+      if(!y||!m||!d){alert('生年月日をすべて選択してください');event.preventDefault();return;}
+      document.getElementById('birthdate').value=y+'-'+m+'-'+d;
+    }
+    </script>
   </div>
 
   <div class="form-card">
