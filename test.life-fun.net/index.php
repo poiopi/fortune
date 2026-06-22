@@ -870,6 +870,55 @@ footer{
   .hero{padding:3rem .5rem 2rem}
   .lucky-row{padding:.6rem 1rem}
 }
+/* ── ページ導線グリッド ── */
+.page-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:.9rem;
+  margin-bottom:1.8rem;
+}
+@media(max-width:560px){.page-grid{grid-template-columns:1fr}}
+.page-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.1rem 1.2rem 1rem;
+  display:flex;flex-direction:column;gap:.45rem;
+  position:relative;overflow:hidden;
+  transition:border-color .2s,transform .15s;
+}
+.page-card:hover{border-color:var(--border2);transform:translateY(-2px)}
+.page-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.pc-violet::before{background:linear-gradient(90deg,var(--violet),var(--rose))}
+.pc-gold::before  {background:linear-gradient(90deg,var(--gold),var(--violet))}
+.pc-teal::before  {background:linear-gradient(90deg,var(--teal),var(--gold))}
+.pc-rose::before  {background:linear-gradient(90deg,var(--rose),var(--violet))}
+.pc-green::before {background:linear-gradient(90deg,#4a9c5a,#7ecf8a)}
+.pc-compat::before{background:linear-gradient(90deg,var(--rose),var(--gold))}
+.pc-zense::before {background:linear-gradient(90deg,var(--violet),var(--teal))}
+.pc-guardian::before{background:linear-gradient(90deg,var(--gold-lt),var(--violet))}
+.pc-seimei::before{background:linear-gradient(90deg,#c9a84c,#8b6914,#c9a84c)}
+.page-card-label{font-family:var(--ff-mono);font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.page-card-title{font-family:var(--ff-serif);font-size:.95rem;font-weight:600;color:var(--text)}
+.page-card-desc {font-size:.72rem;color:var(--muted);line-height:1.5;flex:1}
+.page-card-btn{
+  display:inline-block;text-align:center;
+  padding:.45rem .8rem;border-radius:7px;
+  font-family:var(--ff-serif);font-size:.78rem;font-weight:600;
+  color:#fff;text-decoration:none;letter-spacing:.06em;
+  transition:opacity .2s;margin-top:.25rem;align-self:flex-start;
+}
+.page-card-btn:hover{opacity:.85}
+.btn-violet{background:linear-gradient(135deg,var(--teal),var(--violet));box-shadow:0 3px 12px rgba(78,205,196,.3)}
+.btn-gold  {background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
+.btn-teal  {background:linear-gradient(135deg,var(--teal),var(--gold));box-shadow:0 3px 12px rgba(78,205,196,.3)}
+.btn-rose  {background:linear-gradient(135deg,var(--rose),var(--violet));box-shadow:0 3px 12px rgba(232,113,154,.3)}
+.btn-green {background:linear-gradient(135deg,#4a9c5a,#2b7a3a);box-shadow:0 3px 12px rgba(74,156,90,.3)}
+.btn-compat{background:linear-gradient(135deg,var(--rose),var(--gold));box-shadow:0 3px 12px rgba(232,113,154,.3)}
+.btn-zense {background:linear-gradient(135deg,var(--violet),var(--teal));box-shadow:0 3px 12px rgba(155,114,239,.3)}
+.btn-guardian{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
+.btn-seimei{background:linear-gradient(135deg,#c9a84c,#8b5e00);box-shadow:0 3px 12px rgba(201,168,76,.35)}
+
 /* 鑑定中画面 */
 #loading-overlay{
     position:fixed;
@@ -1085,93 +1134,62 @@ header.site-header{
         </div>
       </section>
 
-      <!-- タロット占いへの導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(155,114,239,.12) 0%,rgba(232,113,154,.08) 100%);border:1px solid rgba(155,114,239,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--violet-lt);text-transform:uppercase;margin-bottom:.3rem">New</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">本格タロット占い</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">カードをめくって今のあなたへのメッセージを</div>
+      <!-- 占いページ 2列グリッド -->
+      <div class="page-grid">
+        <div class="page-card pc-violet">
+          <div class="page-card-label">Tarot</div>
+          <div class="page-card-title">🃏 本格タロット占い</div>
+          <div class="page-card-desc">カードをめくって今のあなたへのメッセージを受け取る</div>
+          <a href="/tarot" class="page-card-btn btn-violet">カードを引く →</a>
         </div>
-        <a href="/tarot.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--teal),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(78,205,196,.35);">
-        カードを引く &#8594;
-        </a>
-      </div>
-      <!-- MBTI診断への導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(201,168,76,.1) 0%,rgba(155,114,239,.08) 100%);border:1px solid rgba(201,168,76,.25);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:.3rem">MBTI × Zodiac</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">MBTI×星座 性格診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">10の質問で性格タイプと星座の組み合わせ運命を診断</div>
+        <div class="page-card pc-gold">
+          <div class="page-card-label">MBTI × Zodiac</div>
+          <div class="page-card-title">🧠 MBTI×星座 性格診断</div>
+          <div class="page-card-desc">10の質問で性格タイプと星座の組み合わせ運命を診断</div>
+          <a href="/mbti" class="page-card-btn btn-gold">診断する →</a>
         </div>
-        <a href="/mbti.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--gold),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(201,168,76,.3);">
-          診断する &#8594;
-        </a>
-      </div>
-      <!-- 数秘術への導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(78,205,196,.1) 0%,rgba(201,168,76,.08) 100%);border:1px solid rgba(78,205,196,.25);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--teal);text-transform:uppercase;margin-bottom:.3rem">Numerology</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">数秘術診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">生年月日と名前から4つの数字で人生の使命を読み解く</div>
+        <div class="page-card pc-teal">
+          <div class="page-card-label">Numerology</div>
+          <div class="page-card-title">🔢 数秘術診断</div>
+          <div class="page-card-desc">生年月日と名前から4つの数字で人生の使命を読み解く</div>
+          <a href="/numerology" class="page-card-btn btn-teal">診断する →</a>
         </div>
-        <a href="/numerology.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--teal),var(--gold));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(78,205,196,.3);">
-          診断する &#8594;
-        </a>
-      </div>
-      <!-- 九星気学への導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(232,113,154,.1) 0%,rgba(155,114,239,.08) 100%);border:1px solid rgba(232,113,154,.25);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.3rem">Nine Star Ki</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">九星気学診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">生まれ年の九星から運勢・相性・吉方位を鑑定</div>
+        <div class="page-card pc-rose">
+          <div class="page-card-label">Nine Star Ki</div>
+          <div class="page-card-title">⭐ 九星気学診断</div>
+          <div class="page-card-desc">生まれ年の九星から運勢・相性・吉方位を鑑定</div>
+          <a href="/kyusei" class="page-card-btn btn-rose">診断する →</a>
         </div>
-        <a href="/kyusei.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--rose),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(232,113,154,.3);">
-          診断する &#8594;
-        </a>
-      </div>
-      <!-- RPG占いへの導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(46,90,60,.3) 0%,rgba(43,74,38,.2) 100%);border:1px solid rgba(78,150,90,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:#7ecf8a;text-transform:uppercase;margin-bottom:.3rem">RPG Fortune</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">RPG占いの村</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">勇者となって占いの村を冒険しながら運命を知る</div>
+        <div class="page-card pc-green">
+          <div class="page-card-label">RPG Fortune</div>
+          <div class="page-card-title">⚔️ RPG占いの村</div>
+          <div class="page-card-desc">勇者となって占いの村を冒険しながら運命を知る</div>
+          <a href="/rpg" class="page-card-btn btn-green">冒険する →</a>
         </div>
-        <a href="/rpg.php" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,#4a9c5a,#2b7a3a);color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(74,156,90,.3);">
-          冒険する &#8594;
-        </a>
-      </div>
-      <!-- 相性診断への導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(232,113,154,.12) 0%,rgba(201,168,76,.08) 100%);border:1px solid rgba(232,113,154,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--rose);text-transform:uppercase;margin-bottom:.3rem">Compatibility</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">二人の相性診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">星座と数秘術で恋愛・結婚の相性を鑑定する</div>
+        <div class="page-card pc-compat">
+          <div class="page-card-label">Compatibility</div>
+          <div class="page-card-title">💑 二人の相性診断</div>
+          <div class="page-card-desc">星座と数秘術で恋愛・結婚の相性を鑑定する</div>
+          <a href="/aisho" class="page-card-btn btn-compat">診断する →</a>
         </div>
-        <a href="/aisho" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--rose),var(--gold));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(232,113,154,.3);">
-          診断する &#8594;
-        </a>
-      </div>
-      <!-- 前世診断への導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(155,114,239,.12) 0%,rgba(78,205,196,.08) 100%);border:1px solid rgba(155,114,239,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--violet-lt);text-transform:uppercase;margin-bottom:.3rem">Past Life Reading</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">前世診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">あなたは何回目の転生？魂のカルテを読み解く</div>
+        <div class="page-card pc-zense">
+          <div class="page-card-label">Past Life Reading</div>
+          <div class="page-card-title">🌀 前世診断</div>
+          <div class="page-card-desc">あなたは何回目の転生？魂のカルテを読み解く</div>
+          <a href="/zense" class="page-card-btn btn-zense">診断する →</a>
         </div>
-        <a href="/zense" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--violet),var(--teal));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(155,114,239,.3);">
-          診断する &#8594;
-        </a>
-      </div>
-      <!-- 守護霊診断への導線 -->
-      <div style="margin:0 0 1.5rem;background:linear-gradient(135deg,rgba(201,168,76,.1) 0%,rgba(155,114,239,.1) 100%);border:1px solid rgba(201,168,76,.3);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--gold-lt);text-transform:uppercase;margin-bottom:.3rem">Guardian Spirit</div>
-          <div style="font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--text)">守護霊診断</div>
-          <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚</div>
+        <div class="page-card pc-guardian">
+          <div class="page-card-label">Guardian Spirit</div>
+          <div class="page-card-title">👻 守護霊診断</div>
+          <div class="page-card-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚</div>
+          <a href="/guardian" class="page-card-btn btn-guardian">召喚する →</a>
         </div>
-        <a href="/guardian" style="display:inline-block;padding:.6rem 1.2rem;background:linear-gradient(135deg,var(--gold),var(--violet));color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(201,168,76,.3);">
-          召喚する &#8594;
-        </a>
+        <div class="page-card pc-seimei">
+          <div class="page-card-label">Seimei Handan</div>
+          <div class="page-card-title">✍️ 姓名判断</div>
+          <div class="page-card-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む</div>
+          <a href="/seimei" class="page-card-btn btn-seimei">鑑定する →</a>
+        </div>
       </div>
 
       <!-- 結果（main-colの内側） -->
