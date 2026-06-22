@@ -96,12 +96,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .name-char{
   display:inline-block;opacity:0;position:relative;
 }
-.name-char.revealed{animation:char-reveal .35s ease-out forwards}
-@keyframes char-reveal{
-  0%{opacity:0;clip-path:inset(0 0 100% 0);transform:translateY(-4px)}
-  30%{opacity:.7}
-  100%{opacity:1;clip-path:inset(0 0 0% 0);transform:translateY(0)}
-}
 .name-space{display:inline-block;width:.4em}
 
 /* 筆カーソル */
@@ -208,6 +202,26 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
+
+/* ── HEADER ── */
+header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px)}
+.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
+.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
+.logo em{font-style:italic;color:var(--gold)}
+.header-nav{display:flex;gap:1.5rem}
+.header-nav a,.header-nav span{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
+.header-nav a:hover{color:var(--gold-lt)}
+.sp-menu-btn{display:none}
+.sp-dropdown{display:none}
+@media(max-width:768px){
+  .header-nav{display:none}
+  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer;transition:color .2s,border-color .2s}
+  .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
+  .sp-dropdown.open{display:block}
+  .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
+  .sp-dropdown a:last-child{border-bottom:none}
+  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
+}
 </style>
 </head>
 <body>
@@ -512,6 +526,78 @@ function resetFrame(){
   });
 }
 
+// ─── Canvas インク滲み reveal ───────────────────────
+const WASHI_COLOR='#ede8d8';
+const CHAR_DURATION=1100; // ms per character
+
+function revealCharWithInk(el){
+  return new Promise(resolve=>{
+    el.style.opacity='1';
+    const paper=document.getElementById('washiPaper');
+    const paperRect=paper.getBoundingClientRect();
+    const elRect=el.getBoundingClientRect();
+
+    const pad=6;
+    const cw=elRect.width+pad*2;
+    const ch=elRect.height+pad*2;
+    const dpr=window.devicePixelRatio||1;
+
+    const cv=document.createElement('canvas');
+    cv.width=Math.round(cw*dpr);
+    cv.height=Math.round(ch*dpr);
+    cv.style.cssText=`position:absolute;`
+      +`left:${elRect.left-paperRect.left-pad}px;`
+      +`top:${elRect.top-paperRect.top-pad}px;`
+      +`width:${cw}px;height:${ch}px;`
+      +`pointer-events:none;z-index:4`;
+    paper.appendChild(cv);
+
+    const ctx=cv.getContext('2d');
+    ctx.scale(dpr,dpr);
+
+    const start=performance.now();
+    function frame(now){
+      const t=Math.min(1,(now-start)/CHAR_DURATION);
+      // ease: slow start, accelerate slightly at mid, slow end
+      const ease=t<.5 ? 2*t*t : -1+(4-2*t)*t;
+
+      ctx.clearRect(0,0,cw,ch);
+
+      // ── 未公開エリアを和紙色で覆う ──
+      const revY=ease*(ch+10);
+
+      ctx.fillStyle=WASHI_COLOR;
+      ctx.beginPath();
+      ctx.moveTo(-1,revY);
+      // 有機的なインク滲みエッジ
+      for(let x=0;x<=cw+1;x+=1.5){
+        const n= Math.sin(x*0.9+t*22)*1.8
+               + Math.cos(x*1.5+t*13)*1.2
+               + Math.sin(x*0.4+t*8)*.8;
+        ctx.lineTo(x, revY+n);
+      }
+      ctx.lineTo(cw+1,ch+2);
+      ctx.lineTo(-1,ch+2);
+      ctx.closePath();
+      ctx.fill();
+
+      // ── インクにじみ（エッジのにじみグロー）──
+      if(t<.98){
+        const grd=ctx.createLinearGradient(0,revY-8,0,revY+5);
+        grd.addColorStop(0,'rgba(12,5,1,0)');
+        grd.addColorStop(.55,'rgba(12,5,1,0.5)');
+        grd.addColorStop(1,'rgba(12,5,1,0)');
+        ctx.fillStyle=grd;
+        ctx.fillRect(0,revY-8,cw,13);
+      }
+
+      if(t<1) requestAnimationFrame(frame);
+      else{ cv.remove(); resolve(); }
+    }
+    requestAnimationFrame(frame);
+  });
+}
+
 async function runAnim(chars, seiLen){
   _animRunning=true;
   const brush=document.getElementById('brushCursor');
@@ -520,18 +606,31 @@ async function runAnim(chars, seiLen){
   // 1文字ずつ書く
   for(let i=0;i<chars.length;i++){
     if(_skipFlag) break;
-    const idx=i>= seiLen ? i+1 : i; // スペース分ずらし
     const el=document.getElementById('nc'+i);
     if(!el) continue;
 
-    // 筆カーソルをその文字の位置へ
+    // 筆カーソルをその文字の位置へ（書き始め＝左上）
     const rect=el.getBoundingClientRect();
     const paperRect=document.getElementById('washiPaper').getBoundingClientRect();
-    brush.style.left=(rect.left-paperRect.left+rect.width*.3)+'px';
-    brush.style.top=(rect.top-paperRect.top-20)+'px';
+    brush.style.left=(rect.left-paperRect.left+rect.width*.15)+'px';
+    brush.style.top=(rect.top-paperRect.top+4)+'px';
+    brush.style.transition='left .08s,top .08s';
 
-    el.classList.add('revealed');
-    await sleep(280);
+    // canvas インク滲みで reveal（この間ブラシも下へ動く）
+    const animPromise=revealCharWithInk(el);
+    // brushを下へ追従させる
+    let brushMoveInterval=setInterval(()=>{
+      const r=el.getBoundingClientRect();
+      const pr=document.getElementById('washiPaper').getBoundingClientRect();
+      const elapsed=(performance.now()-(performance.now()-100));
+      brush.style.top=(r.top-pr.top + r.height*0.5 + Math.random()*6)+'px';
+      brush.style.left=(r.left-pr.left + r.width*0.3 + Math.random()*4)+'px';
+    },90);
+    await animPromise;
+    clearInterval(brushMoveInterval);
+
+    // 文字間の微小間隔
+    await sleep(120);
   }
 
   brush.style.opacity='0';
@@ -606,12 +705,9 @@ function showFrameInstant(){
 function skipAnim(){
   _skipFlag=true;
   document.getElementById('brushCursor').style.opacity='0';
-  // 全文字を即表示
-  document.querySelectorAll('.name-char').forEach(el=>{
-    el.style.opacity='1';
-    el.style.clipPath='none';
-    el.classList.add('revealed');
-  });
+  // 全文字を即表示＆canvasカバーを除去
+  document.querySelectorAll('.name-char').forEach(el=>{ el.style.opacity='1'; });
+  document.querySelectorAll('#washiPaper canvas').forEach(cv=>cv.remove());
   stopSparkle();
   finishAnim();
 }
