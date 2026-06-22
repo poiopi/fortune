@@ -228,7 +228,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
       </div>
       <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
       <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
-      <div class="nav-cards-section"><h3>✦ 他の占いも試してみる ✦</h3><?= _nav_cards(3,'zense') ?></div>
+      <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'zense') ?></div>
     </div>
   </div>
 </div>
