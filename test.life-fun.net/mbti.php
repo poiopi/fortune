@@ -360,37 +360,7 @@ body{top:0!important}
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-<nav class="header-nav">
-  <a href="/">トップ</a>
-  <a href="/tarot.php">タロット</a>
-  <a href="/calendar.php">カレンダー</a>
-  MBTI×星座
-     <a href="/numerology.php">数秘術</a>
-     <a href="/kyusei.php">九星気学</a>
-  <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-      <a href="/guardian">守護霊診断</a>
-</nav>
- <div id="google_translate_element"></div>
- <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-<div class="sp-dropdown" id="spDropdown">
-  <a href="/">トップ</a>
-  <a href="/tarot.php">タロット</a>
-  <a href="/calendar.php">開運カレンダー</a>
-  <span>MBTI×星座</span>
-     <a href="/numerology.php">数秘術</a>
-     <a href="/kyusei.php">九星気学</a>
-  <a href="/rpg.php">RPG占い</a>
-      <a href="/aisho.php">相性診断</a>
-      <a href="/zense">前世診断</a>
-      <a href="/guardian">守護霊診断</a>
-</div>
-  </div>
-</header>
+<?php $currentPage='mbti'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
 

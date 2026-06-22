@@ -331,37 +331,7 @@ body{top:0!important}
 <?php require_once __DIR__.'/inc/nav-cards.php'; $tarotNavCards = _nav_cards(3,'tarot'); ?>
   </head>
   <body>
-  <header>
-    <div class="header-inner">
-      <a href="/" class="logo">占い<em>Portal</em></a>
-      <nav class="header-nav">
-        <a href="/">トップ</a>
-        タロット
-        <a href="/calendar">カレンダー</a>
-        <a href="/mbti">MBTI×星座</a>
-          <a href="/numerology">数秘術</a>
-          <a href="/kyusei">九星気学</a>
-        <a href="/rpg">RPG占い</a>
-        <a href="/aisho">相性診断</a>
-        <a href="/zense">前世診断</a>
-        <a href="/guardian">守護霊診断</a>
-      </nav>
-      <div id="google_translate_element"></div>
-      <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-      <div class="sp-dropdown" id="spDropdown">
-        <a href="/">トップ</a>
-        <span>タロット</span>
-        <a href="/calendar">開運カレンダー</a>
-        <a href="/mbti">MBTI×星座</a>
-          <a href="/numerology">数秘術</a>
-          <a href="/kyusei">九星気学</a>
-        <a href="/rpg">RPG占い</a>
-        <a href="/aisho">相性診断</a>
-        <a href="/zense">前世診断</a>
-        <a href="/guardian">守護霊診断</a>
-      </div>
-    </div>
-  </header>
+<?php $currentPage='tarot'; require __DIR__.'/inc/header.php'; ?>
 
   <div class="wrap">
     <section class="hero">
