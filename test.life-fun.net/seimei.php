@@ -698,6 +698,7 @@ function startSeimei(){
   const sei=document.getElementById('inputSei').value.trim();
   const mei=document.getElementById('inputMei').value.trim();
   if(!sei||!mei){alert('姓と名を両方入力してください');return;}
+  if(/[a-zA-Z]/.test(sei+mei)){alert('姓名判断は漢字・ひらがな・カタカナで入力してください\n（アルファベットは対応していません）');return;}
 
   _animResult={sei, mei, gogaku: calcGogaku(sei,mei)};
   _skipFlag=false;
