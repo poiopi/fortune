@@ -99,12 +99,16 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .daiyun-meta{font-size:.78rem;color:var(--muted);margin-bottom:1rem;font-family:var(--ff-mono);letter-spacing:.06em}
 .daiyun-scroll{overflow-x:auto}
 .daiyun-list{display:flex;gap:.7rem;min-width:max-content;padding-bottom:.5rem}
-.daiyun-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.8rem .9rem;width:100px;text-align:center;flex-shrink:0}
+.daiyun-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.7rem .6rem;width:96px;text-align:center;flex-shrink:0}
 .daiyun-item.current-daiyun{border-color:var(--gold);background:rgba(201,168,76,.08)}
-.daiyun-age{font-family:var(--ff-mono);font-size:.6rem;color:var(--muted);margin-bottom:.3rem}
+.daiyun-age{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);margin-bottom:.25rem}
 .daiyun-kan{font-size:1.3rem;font-weight:700;line-height:1.1}
-.daiyun-shi{font-size:1.2rem;font-weight:700;line-height:1.1}
-.daiyun-period{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);margin-top:.3rem}
+.daiyun-shi{font-size:1.2rem;font-weight:700;line-height:1.1;margin-bottom:.25rem}
+.daiyun-period{font-family:var(--ff-mono);font-size:.55rem;color:var(--muted);margin-bottom:.3rem}
+.daiyun-tags{display:flex;flex-direction:column;gap:.2rem;align-items:center}
+.daiyun-tag{font-family:var(--ff-mono);font-size:.56rem;padding:.1rem .4rem;border-radius:10px;white-space:nowrap}
+.tag-god{background:rgba(155,114,239,.15);color:var(--violet);border:1px solid rgba(155,114,239,.2)}
+.tag-juni{background:rgba(201,168,76,.12);color:var(--gold);border:1px solid rgba(201,168,76,.2)}
 /* ── 今年の運勢 ── */
 .nenun-card{background:var(--surface);border:1px solid var(--border2);border-radius:12px;padding:1.4rem;margin-bottom:2rem}
 .nenun-year{font-family:var(--ff-mono);font-size:.65rem;color:var(--gold);margin-bottom:.5rem;letter-spacing:.1em}
