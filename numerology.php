@@ -363,7 +363,7 @@ body{top:0!important}
 
   <section class="hero">
     <span class="hero-eyebrow">Numerology</span>
-    <h1>数秘術診断</h1>
+    <h1>数秘術診断｜ライフパスナンバー・運命数を無料算出</h1>
     <p class="hero-sub">生年月日と名前から4つの数字を算出し、<br>あなたの人生の使命・才能・魂の欲求を読み解きます。</p>
   </section>
 

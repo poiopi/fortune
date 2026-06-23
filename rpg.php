@@ -7,8 +7,8 @@
 <meta charset="UTF-8">
 <link rel="canonical" href="https://life-fun.net/rpg.php" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="description" content="RPG風の村を歩いてキャラクターに話しかけ、星座・数秘術・ジョブクラスで運命を占います。">
-<title>RPG占い｜村を歩いて運命を探せ</title>
+<meta name="description" content="RPGゲーム風の無料占い。村を歩いてキャラクターに話しかけ、星座・数秘術・ジョブクラスで運命を占います。ユニークな体験型占いゲーム。">
+<title>RPG占いゲーム｜村を歩いて星座・数秘術で運命診断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -172,7 +172,7 @@ footer a:hover{color:var(--gold)}
 <div class="wrap">
   <section class="hero">
     <span class="hero-eyebrow">RPG Fortune</span>
-    <h1>村を歩いて運命を探せ</h1>
+    <h1>RPG占いゲーム｜村を歩いて運命診断</h1>
     <p class="hero-sub">ソラリス村を自由に歩き、村人に話しかけ、アイテムを集めよう。<br>教会の神父があなたの星座・数秘術・隠れたジョブを占います。</p>
   </section>
 

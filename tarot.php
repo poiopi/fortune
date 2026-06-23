@@ -15,7 +15,7 @@
   <!-- tarot.php -->
   <link rel="canonical" href="https://life-fun.net/tarot" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="13枚のタロットカードが円形に並ぶ本格タロット占い。直感でカードを選び、大アルカナからのメッセージを受け取ってください。">
+  <meta name="description" content="22枚の大アルカナが円形に並ぶ本格タロット占い。直感でカードを選び、恋愛・仕事・運勢へのメッセージを無料で受け取ってください。">
   <title>本格タロット占い｜カードを選んで運命を知る</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -335,7 +335,7 @@ body{top:0!important}
   <div class="wrap">
     <section class="hero">
       <span class="hero-eyebrow">Interactive Tarot Reading</span>
-      <h1>本格タロット占い</h1>
+      <h1>本格タロット占い｜大アルカナ22枚で運命を読む</h1>
       <p class="hero-sub">円形に並ぶカードの中から、直感で1枚を選んでください</p>
 
   </section>

@@ -166,7 +166,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 <div class="wrap">
   <div class="page-title">
     <div class="subtitle">Guardian Spirit Reading</div>
-    <h1>守護霊診断</h1>
+    <h1>守護霊診断｜あなたを守る霊はUR・SSR・SR？無料鑑定</h1>
     <p style="font-size:.8rem;color:var(--muted);margin-top:.5rem">あなたを守る霊は何者か。<br>レアリティ・属性・守護霊名を今すぐ鑑定します。</p>
   </div>
 
