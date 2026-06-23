@@ -898,6 +898,7 @@ footer{
 .pc-zense::before {background:linear-gradient(90deg,var(--violet),var(--teal))}
 .pc-guardian::before{background:linear-gradient(90deg,var(--gold-lt),var(--violet))}
 .pc-seimei::before{background:linear-gradient(90deg,#c9a84c,#8b6914,#c9a84c)}
+.pc-shichu::before{background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal))}
 .page-card-label{font-family:var(--ff-mono);font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
 .page-card-title{font-family:var(--ff-serif);font-size:.95rem;font-weight:600;color:var(--text)}
 .page-card-desc {font-size:.72rem;color:var(--muted);line-height:1.5;flex:1}
@@ -918,6 +919,7 @@ footer{
 .btn-zense {background:linear-gradient(135deg,var(--violet),var(--teal));box-shadow:0 3px 12px rgba(155,114,239,.3)}
 .btn-guardian{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
 .btn-seimei{background:linear-gradient(135deg,#c9a84c,#8b5e00);box-shadow:0 3px 12px rgba(201,168,76,.35)}
+.btn-shichu{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(155,114,239,.35)}
 
 /* 鑑定中画面 */
 #loading-overlay{
@@ -1141,6 +1143,12 @@ header.site-header{
           <div class="page-card-title">🃏 本格タロット占い</div>
           <div class="page-card-desc">カードをめくって今のあなたへのメッセージを受け取る</div>
           <a href="/tarot" class="page-card-btn btn-violet">カードを引く →</a>
+        </div>
+        <div class="page-card pc-shichu">
+          <div class="page-card-label">Shichu Suimei</div>
+          <div class="page-card-title">🔯 四柱推命</div>
+          <div class="page-card-desc">生年月日から命式・十神・大運・天中殺を本格算出する</div>
+          <a href="/shichu" class="page-card-btn btn-shichu">算出する →</a>
         </div>
         <div class="page-card pc-gold">
           <div class="page-card-label">MBTI × Zodiac</div>
