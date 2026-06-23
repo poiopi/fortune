@@ -748,6 +748,7 @@ function isKata(str){return /^[ァ-ヶー]+$/.test(str);}
 function genNames(personality){
   const styles=['インパクト','親しみ','本格'];
   const usedFullnames=new Set();
+  resetKonbiUsed();
 
   return styles.map(style=>{
     // 1ワード芸名（10%の確率）
@@ -794,12 +795,17 @@ function genNames(personality){
   });
 }
 
+const _usedKonbiA=new Set();
+const _usedKonbiB=new Set();
 function genKonbi(style){
   const aPool=shuffle([...KONBI_A.filter(a=>a.st.includes(style))]);
   const bPool=shuffle([...KONBI_B.filter(b=>b.st.includes(style))]);
-  const kA=aPool[0]||KONBI_A[0];const kB=bPool[0]||KONBI_B[0];
+  const kA=aPool.find(a=>!_usedKonbiA.has(a.t))||aPool[0]||KONBI_A[0];
+  const kB=bPool.find(b=>!_usedKonbiB.has(b.t))||bPool[0]||KONBI_B[0];
+  _usedKonbiA.add(kA.t);_usedKonbiB.add(kB.t);
   return kA.t+kB.t;
 }
+function resetKonbiUsed(){_usedKonbiA.clear();_usedKonbiB.clear();}
 
 function makeReason(myoji,namae,jinkaku,style,personality){
   const sD={'インパクト':'インパクトと個性の強さが','親しみ':'親しみやすさと愛されキャラの素質が','本格':'実力派芸人としての風格が'};
