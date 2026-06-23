@@ -26,7 +26,8 @@
       "Bash(git -C \"C:/Users/sende/fortune\" add test.life-fun.net/shichu.php test.life-fun.net/inc/nav-cards.php)",
       "Bash(git -C \"C:/Users/sende/fortune\" add test.life-fun.net/shichu.php)",
       "Bash(git -C C:/Users/sende/fortune commit -m 'shichu: 解説テキストのフォントサイズを拡大 *)",
-      "Bash(git -C C:/Users/sende/fortune commit -m 'shichu: 日付ピッカーにcolor-scheme:darkを追加 *)"
+      "Bash(git -C C:/Users/sende/fortune commit -m 'shichu: 日付ピッカーにcolor-scheme:darkを追加 *)",
+      "Bash(git -C C:/Users/sende/fortune commit -m 'shichu: ヘッダー・フッターのCSSを追加 *)"
     ]
   }
 }
