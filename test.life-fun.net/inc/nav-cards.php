@@ -11,6 +11,7 @@ $_NAV_PAGES = [
   'zense'      => ['name'=>'前世診断',       'url'=>'/zense',      'desc'=>'何回目の転生？魂のカルテを解読',   'icon'=>'🌀'],
   'guardian'   => ['name'=>'守護霊診断',     'url'=>'/guardian',   'desc'=>'あなたを守る霊のレアリティは？',   'icon'=>'👻'],
   'seimei'     => ['name'=>'姓名判断',       'url'=>'/seimei',     'desc'=>'名前に宿る運命を五格で鑑定する',     'icon'=>'✍️'],
+  'shichu'     => ['name'=>'四柱推命',       'url'=>'/shichu',     'desc'=>'命式・十神・大運を本格算出する',       'icon'=>'🔯'],
 ];
 
 // $count枚カードを出力（$excludeは現在ページキー）
