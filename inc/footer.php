@@ -30,6 +30,7 @@ require_once __DIR__.'/nav-cards.php';
   <?= $_p==='zense' ? '前世診断' : '<a href="/zense">前世診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='guardian' ? '守護霊診断' : '<a href="/guardian">守護霊診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='seimei' ? '姓名判断' : '<a href="/seimei">姓名判断</a>' ?> &nbsp;/&nbsp;
+  <?= $_p==='geimei' ? '芸名診断' : '<a href="/geimei">芸名診断</a>' ?> &nbsp;/&nbsp;
   <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact">お問い合わせ</a><br>
@@ -168,6 +169,7 @@ require_once __DIR__.'/nav-cards.php';
       'zense'      => ['icon'=>'🌀', 'name'=>'前世診断',            'url'=>'/zense'],
       'guardian'   => ['icon'=>'👻', 'name'=>'守護霊診断',          'url'=>'/guardian'],
       'seimei'     => ['icon'=>'✍️', 'name'=>'姓名判断',            'url'=>'/seimei'],
+      'geimei'     => ['icon'=>'🎭', 'name'=>'芸名診断',            'url'=>'/geimei'],
     ];
     echo '<div class="fmenu-section-label">占い一覧</div>';
     foreach($fmenu_pages as $key=>$pg):
