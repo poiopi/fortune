@@ -24,7 +24,9 @@
       "Bash(git -C \"C:/Users/sende/fortune\" add seimei.php calendar.php test.life-fun.net/seimei.php test.life-fun.net/calendar.php)",
       "Bash(git -C C:/Users/sende/fortune add index.php tarot.php kyusei.php rpg.php aisho.php zense.php guardian.php seimei.php numerology.php test.life-fun.net/index.php test.life-fun.net/tarot.php test.life-fun.net/kyusei.php test.life-fun.net/rpg.php test.life-fun.net/aisho.php test.life-fun.net/zense.php test.life-fun.net/guardian.php test.life-fun.net/seimei.php test.life-fun.net/numerology.php)",
       "Bash(git -C \"C:/Users/sende/fortune\" add test.life-fun.net/shichu.php test.life-fun.net/inc/nav-cards.php)",
-      "Bash(git -C \"C:/Users/sende/fortune\" add test.life-fun.net/shichu.php)"
+      "Bash(git -C \"C:/Users/sende/fortune\" add test.life-fun.net/shichu.php)",
+      "Bash(git -C C:/Users/sende/fortune commit -m 'shichu: 解説テキストのフォントサイズを拡大 *)",
+      "Bash(git -C C:/Users/sende/fortune commit -m 'shichu: 日付ピッカーにcolor-scheme:darkを追加 *)"
     ]
   }
 }
