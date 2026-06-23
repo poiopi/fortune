@@ -204,6 +204,13 @@
   .result-message{font-size:.92rem;line-height:2.1;color:var(--text);border-top:1px solid var(--border);padding-top:1rem;margin-top:.5rem}
   .retry-btn{display:block;width:100%;padding:.9rem;background:transparent;border:1px solid var(--border2);border-radius:10px;color:var(--muted);font-family:var(--ff-mono);font-size:.8rem;letter-spacing:.12em;cursor:pointer;transition:color .2s,border-color .2s,background .2s;margin-top:2rem}
   .retry-btn:hover{color:var(--violet-lt);border-color:var(--violet);background:rgba(155,114,239,.05)}
+  .article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+  .article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+  .article-link-icon{font-size:1.4rem;flex-shrink:0}
+  .article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+  .article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+  .article-link-body small{font-size:.75rem;color:var(--muted)}
+  .article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 
   footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
   footer a{color:var(--muted);text-decoration:none}
@@ -639,6 +646,15 @@ body{top:0!important}
 
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <button class="retry-btn" onclick="resetAll()">&#8617; もう一度カードを引く</button>
+
+      <a href="/articles/tarot/" class="article-link-box">
+        <span class="article-link-icon">📖</span>
+        <span class="article-link-body">
+          <strong>タロットについて詳しく知る</strong>
+          <small>22枚の大アルカナの意味・歴史・読み方を解説</small>
+        </span>
+        <span class="article-link-arrow">→</span>
+      </a>
     `;
 
     document.getElementById('tarot-nav-cards').style.display='block';
