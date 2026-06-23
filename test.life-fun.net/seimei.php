@@ -285,7 +285,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
   <div class="overall-card" id="overallCard"></div>
   <div class="gogaku-grid" id="gogakuGrid"></div>
   <?php require __DIR__.'/inc/share-btns.php'; ?>
-  <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'seimei') ?></div>
+  <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'seimei'); ?></div>
   <div class="retry-wrap">
     <button class="retry-btn-link" onclick="resetForm()">← もう一度鑑定する</button>
   </div>
