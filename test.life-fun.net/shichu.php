@@ -107,21 +107,21 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .guide-item{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:.7rem .8rem}
 .guide-item.is-day-guide{border-color:var(--gold);background:rgba(201,168,76,.06)}
 .guide-pillar-name{font-family:var(--ff-mono);font-size:.7rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
-.guide-pillar-desc{font-size:.65rem;color:var(--muted);line-height:1.6}
+.guide-pillar-desc{font-size:.72rem;color:var(--muted);line-height:1.7}
 /* ── 天中殺・律音 ── */
 .tcs-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:1.5rem}
 .tcs-row{display:flex;flex-wrap:wrap;gap:1rem}
 .tcs-block{flex:1;min-width:200px}
 .tcs-label{font-family:var(--ff-mono);font-size:.64rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem}
 .tcs-value{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
-.tcs-note{font-size:.66rem;color:var(--muted);line-height:1.7;margin-bottom:.2rem}
+.tcs-note{font-size:.73rem;color:var(--muted);line-height:1.75;margin-bottom:.3rem}
 /* ── 現在大運コメント ── */
 .daiyun-current-desc{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem}
 .cur-dy-title{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem}
 .cur-dy-kanshi{font-size:2rem;font-weight:700;margin-bottom:.6rem;line-height:1}
 .cur-dy-row{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.4rem}
 .cur-dy-badge{font-family:var(--ff-mono);font-size:.58rem;padding:.15rem .5rem;border-radius:10px;white-space:nowrap;margin-top:.1rem;flex-shrink:0}
-.cur-dy-text{font-size:.68rem;color:var(--muted);line-height:1.7}
+.cur-dy-text{font-size:.75rem;color:var(--muted);line-height:1.75}
 /* ── 十二運星 凡例 ── */
 .juni-legend{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin-top:.8rem}
 .legend-title{font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.14em;color:var(--muted);margin-bottom:.7rem}
@@ -129,7 +129,7 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 @media(min-width:600px){.legend-grid{grid-template-columns:repeat(3,1fr)}}
 .legend-item{display:flex;gap:.4rem;align-items:baseline}
 .legend-name{font-family:var(--ff-mono);font-size:.7rem;font-weight:700;color:var(--gold);white-space:nowrap;min-width:2.2rem}
-.legend-desc{font-size:.62rem;color:var(--muted);line-height:1.5}
+.legend-desc{font-size:.7rem;color:var(--muted);line-height:1.6}
 .daiyun-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.7rem .6rem;width:96px;text-align:center;flex-shrink:0}
 .daiyun-item.current-daiyun{border-color:var(--gold);background:rgba(201,168,76,.08)}
 .daiyun-age{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);margin-bottom:.25rem}
