@@ -99,7 +99,7 @@
       'aisho'      => ['icon'=>'💑', 'name'=>'相性診断',            'url'=>'/aisho.php'],
       'zense'      => ['icon'=>'🌀', 'name'=>'前世診断',            'url'=>'/zense'],
       'guardian'   => ['icon'=>'👻', 'name'=>'守護霊診断',          'url'=>'/guardian'],
-      'seimei'     => ['icon'=>'✍️', 'name'=>'姓名判断',            'url'=>'/seimei'],
+      // 'seimei' => ['icon'=>'✍️', 'name'=>'姓名判断', 'url'=>'/seimei'], // 一時非表示（AdSense審査中）
     ];
     echo '<div class="fmenu-section-label">占い一覧</div>';
     foreach($fmenu_pages as $key=>$pg):
