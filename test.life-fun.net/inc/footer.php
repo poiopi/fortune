@@ -28,6 +28,7 @@ require_once __DIR__.'/nav-cards.php';
   <?= $_p==='aisho' ? '相性診断' : '<a href="/aisho">相性診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='zense' ? '前世診断' : '<a href="/zense">前世診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='guardian' ? '守護霊診断' : '<a href="/guardian">守護霊診断</a>' ?> &nbsp;/&nbsp;
+  <?= $_p==='seimei' ? '姓名判断' : '<a href="/seimei">姓名判断</a>' ?> &nbsp;/&nbsp;
   <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact">お問い合わせ</a><br>

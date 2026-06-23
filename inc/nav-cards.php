@@ -1,15 +1,15 @@
 <?php
 // ページデータ
 $_NAV_PAGES = [
-  'tarot'      => ['name'=>'タロット占い',   'url'=>'/tarot.php',      'desc'=>'22枚のカードが運命を映し出す',     'icon'=>'🃏'],
-  'calendar'   => ['name'=>'開運カレンダー', 'url'=>'/calendar.php',   'desc'=>'今日・今月の運勢と開運アドバイス', 'icon'=>'📅'],
-  'mbti'       => ['name'=>'MBTI×星座診断', 'url'=>'/mbti.php',       'desc'=>'16タイプ×12星座で性格を深掘り',   'icon'=>'🧠'],
-  'numerology' => ['name'=>'数秘術診断',     'url'=>'/numerology.php', 'desc'=>'生年月日が導く魂の数字の意味',     'icon'=>'🔢'],
-  'kyusei'     => ['name'=>'九星気学診断',   'url'=>'/kyusei.php',     'desc'=>'本命星で読み解く運命と相性',       'icon'=>'⭐'],
-  'rpg'        => ['name'=>'RPG占い',        'url'=>'/rpg.php',        'desc'=>'あなたの職業と運命を冒険で解く',   'icon'=>'⚔️'],
-  'aisho'      => ['name'=>'相性診断',       'url'=>'/aisho.php',      'desc'=>'二人の星座と数秘から相性を鑑定',   'icon'=>'💑'],
-  'zense'      => ['name'=>'前世診断',       'url'=>'/zense.php',      'desc'=>'何回目の転生？魂のカルテを解読',   'icon'=>'🌀'],
-  'guardian'   => ['name'=>'守護霊診断',     'url'=>'/guardian.php',   'desc'=>'あなたを守る霊のレアリティは？',   'icon'=>'👻'],
+  'tarot'      => ['name'=>'タロット占い',   'url'=>'/tarot',      'desc'=>'22枚のカードが運命を映し出す',     'icon'=>'🃏'],
+  'calendar'   => ['name'=>'開運カレンダー', 'url'=>'/calendar',   'desc'=>'今日・今月の運勢と開運アドバイス', 'icon'=>'📅'],
+  'mbti'       => ['name'=>'MBTI×星座診断', 'url'=>'/mbti',       'desc'=>'16タイプ×12星座で性格を深掘り',   'icon'=>'🧠'],
+  'numerology' => ['name'=>'数秘術診断',     'url'=>'/numerology', 'desc'=>'生年月日が導く魂の数字の意味',     'icon'=>'🔢'],
+  'kyusei'     => ['name'=>'九星気学診断',   'url'=>'/kyusei',     'desc'=>'本命星で読み解く運命と相性',       'icon'=>'⭐'],
+  'rpg'        => ['name'=>'RPG占い',        'url'=>'/rpg',        'desc'=>'あなたの職業と運命を冒険で解く',   'icon'=>'⚔️'],
+  'aisho'      => ['name'=>'相性診断',       'url'=>'/aisho',      'desc'=>'二人の星座と数秘から相性を鑑定',   'icon'=>'💑'],
+  'zense'      => ['name'=>'前世診断',       'url'=>'/zense',      'desc'=>'何回目の転生？魂のカルテを解読',   'icon'=>'🌀'],
+  'guardian'   => ['name'=>'守護霊診断',     'url'=>'/guardian',   'desc'=>'あなたを守る霊のレアリティは？',   'icon'=>'👻'],
 ];
 
 // $count枚カードを出力（$excludeは現在ページキー）

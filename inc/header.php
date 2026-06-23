@@ -26,6 +26,18 @@ function _navlink(string $label, string $href, string $key, string $current): st
     .header-top-link.current{opacity:.45;cursor:default;pointer-events:none}
     </style>
     <div id="google_translate_element"></div>
-    <div class="sp-dropdown" id="spDropdown"></div>
+    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
+    <div class="sp-dropdown" id="spDropdown">
+      <?= _navlink('トップ',           '/',           'top',        $_p) ?>
+      <?= _navlink('タロット',         '/tarot',      'tarot',      $_p) ?>
+      <?= _navlink('開運カレンダー',   '/calendar',   'calendar',   $_p) ?>
+      <?= _navlink('MBTI×星座診断',   '/mbti',       'mbti',       $_p) ?>
+      <?= _navlink('数秘術診断',       '/numerology', 'numerology', $_p) ?>
+      <?= _navlink('九星気学診断',     '/kyusei',     'kyusei',     $_p) ?>
+      <?= _navlink('RPG占い',          '/rpg',        'rpg',        $_p) ?>
+      <?= _navlink('相性診断',         '/aisho',      'aisho',      $_p) ?>
+      <?= _navlink('前世診断',         '/zense',      'zense',      $_p) ?>
+      <?= _navlink('守護霊診断',       '/guardian',   'guardian',   $_p) ?>
+    </div>
   </div>
 </header>
