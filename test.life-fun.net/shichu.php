@@ -157,6 +157,31 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .loading-text{font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.2em;color:var(--gold)}
 .loading-ring{width:50px;height:50px;border:2px solid rgba(155,114,239,.2);border-top-color:var(--violet);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── HEADER ── */
+header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px)}
+.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
+.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
+.logo em{font-style:italic;color:var(--gold)}
+.header-nav{display:flex;gap:1.5rem}
+.header-nav a,.header-nav span{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
+.header-nav a:hover{color:var(--gold-lt)}
+.sp-menu-btn{display:none}
+.sp-dropdown{display:none}
+@media(max-width:768px){
+  .header-nav{display:none}
+  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer;transition:color .2s,border-color .2s}
+  .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
+  .sp-dropdown.open{display:block}
+  .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
+  .sp-dropdown a:last-child{border-bottom:none}
+  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
+}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--gold)}
 </style>
 </head>
 <body>
