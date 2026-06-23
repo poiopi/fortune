@@ -526,7 +526,7 @@ footer a:hover{color:var(--gold)}
 <div class="wrap">
   <section class="hero">
     <span class="hero-eyebrow">Compatibility Fortune</span>
-    <h1>二人の相性診断</h1>
+    <h1>相性診断｜星座×数秘術で恋愛・結婚の相性を占う</h1>
     <p class="hero-sub">生年月日を入力するだけで、星座と数秘術から<br>二人の恋愛・結婚相性を鑑定します。</p>
   </section>
 

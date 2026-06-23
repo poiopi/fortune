@@ -136,7 +136,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 <div class="wrap">
   <div class="page-title">
     <div class="subtitle">Past Life Reading</div>
-    <h1>前世診断</h1>
+    <h1>前世診断｜転生回数・前世の時代と職業を無料鑑定</h1>
     <p style="font-size:.8rem;color:var(--muted);margin-top:.5rem">あなたは今、何回目の転生を生きているのか。<br>魂のカルテを読み解きます。</p>
   </div>
 

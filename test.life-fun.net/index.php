@@ -412,8 +412,8 @@ $weekdayJa   = ['日','月','火','水','木','金','土'][(int)$todayObj->forma
 <meta charset="UTF-8">
 <link rel="canonical" href="https://life-fun.net/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="西洋占星術・タロット・四柱推命の3大占いを一度に体験。生年月日を入力するだけで、あなただけの統合鑑定書を無料でお届けします。">
-<title>三星鑑定 ── 西洋占星術・タロット・四柱推命</title>
+<meta name="description" content="タロット占い・数秘術・九星気学・相性診断・姓名判断など無料の占いが揃う占いポータル。生年月日や名前を入力するだけで鑑定結果をすぐに表示します。">
+<title>無料占いポータル｜タロット・数秘術・九星気学・姓名判断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 
@@ -1095,8 +1095,8 @@ header.site-header{
   <!-- HERO -->
   <header class="hero">
     <span class="hero-eyebrow">Free Fortune Telling</span>
-    <h1>三星鑑定</h1>
-    <p class="hero-sub">西洋占星術・タロット・四柱推命 ── 三つの叡智による統合鑑定</p>
+    <h1>無料占いポータル｜三星統合鑑定</h1>
+    <p class="hero-sub">タロット・数秘術・九星気学・姓名判断 ── 複数の占術で運命を読み解く</p>
     <div class="pillars">
       <span class="pillar">♈ 西洋占星術</span>
       <span class="pillar">🔮 タロット</span>

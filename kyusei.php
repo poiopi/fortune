@@ -202,8 +202,8 @@ if (isset($_GET['birthdate']) && $_GET['birthdate'] !== '') {
 <meta charset="UTF-8">
 <link rel="canonical" href="https://life-fun.net/kyusei.php" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="生年月日から九星気学の本命星・月命星を算出。吉方位・運勢・性格を無料で診断します。">
-<title>九星気学診断｜生年月日で導く本命星と吉方位</title>
+<meta name="description" content="生年月日から九星気学の本命星・月命星・命式を無料で算出。吉方位・2024年の運勢・性格・相性を詳しく診断します。">
+<title>九星気学｜本命星・月命星・命式を無料診断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -322,8 +322,8 @@ body{top:0!important}
 
   <section class="hero">
     <span class="hero-eyebrow">Kyusei Kigaku</span>
-    <h1>九星気学診断</h1>
-    <p class="hero-sub">生年月日から本命星・月命星を算出し、<br>あなたの吉方位・運勢・本質的な性格を読み解きます。</p>
+    <h1>九星気学｜本命星・月命星・命式を無料診断</h1>
+    <p class="hero-sub">生年月日から本命星・月命星・命式を算出し、<br>あなたの吉方位・運勢・本質的な性格を読み解きます。</p>
   </section>
 
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>

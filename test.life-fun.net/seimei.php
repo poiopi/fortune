@@ -236,7 +236,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 <div class="wrap">
   <section class="hero">
     <span class="hero-eyebrow">Seimei Handan · 姓名判断</span>
-    <h1>名前に宿る運命を鑑定する</h1>
+    <h1>姓名判断｜五格（天格・人格・地格・外格・総格）で無料鑑定</h1>
     <p class="hero-sub">五格（天格・人格・地格・外格・総格）から<br>あなたの運勢・性格・対人運を読み解きます。</p>
   </section>
 
