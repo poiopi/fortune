@@ -585,6 +585,8 @@ body{top:0!important}
   <!-- AdSense枠 -->
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
 
+  <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'calendar') ?></div>
+
 </div>
 
 <?php require __DIR__.'/inc/footer.php'; ?>
