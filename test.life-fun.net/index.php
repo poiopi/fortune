@@ -1152,12 +1152,6 @@ header.site-header{
           <div class="page-card-desc">生年月日から命式・十神・大運・天中殺を本格算出する</div>
           <a href="/shichu" class="page-card-btn btn-shichu">算出する →</a>
         </div>
-        <div class="page-card pc-geimei">
-          <div class="page-card-label">Geimei Shindan</div>
-          <div class="page-card-title">🎭 芸名診断</div>
-          <div class="page-card-desc">大喜利ゲームで芸風を判定！画数から大吉の芸名を3パターン提案</div>
-          <a href="/geimei" class="page-card-btn btn-geimei">診断する →</a>
-        </div>
         <div class="page-card pc-gold">
           <div class="page-card-label">MBTI × Zodiac</div>
           <div class="page-card-title">🧠 MBTI×星座 性格診断</div>
@@ -1205,6 +1199,12 @@ header.site-header{
           <div class="page-card-title">✍️ 姓名判断</div>
           <div class="page-card-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む</div>
           <a href="/seimei" class="page-card-btn btn-seimei">鑑定する →</a>
+        </div>
+        <div class="page-card pc-geimei">
+          <div class="page-card-label">Geimei Shindan</div>
+          <div class="page-card-title">🎭 芸名診断</div>
+          <div class="page-card-desc">大喜利ゲームで芸風を判定！画数から大吉の芸名を3パターン提案</div>
+          <a href="/geimei" class="page-card-btn btn-geimei">診断する →</a>
         </div>
       </div>
 
