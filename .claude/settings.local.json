@@ -9,7 +9,16 @@
       "mcp__visualize__read_me",
       "mcp__visualize__show_widget",
       "PowerShell(\\(Select-String -Path 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\seimei.php' -Pattern \"'.':[0-9]+\" -AllMatches\\).Matches.Count)",
-      "Bash(grep -n \"<!-- 鑑定中\\\\|<!-- loading\\\\|/\\\\* 鑑定中\\\\|loading-overlay\\\\|\\\\.scores{\" C:/Users/sende/fortune/index.php)"
+      "Bash(grep -n \"<!-- 鑑定中\\\\|<!-- loading\\\\|/\\\\* 鑑定中\\\\|loading-overlay\\\\|\\\\.scores{\" C:/Users/sende/fortune/index.php)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(git -C \"C:\\\\Users\\\\sende\\\\fortune\" diff HEAD~1 HEAD -- \"test.life-fun.net/seimei.php\")",
+      "Bash(git -C \"C:\\\\Users\\\\sende\\\\fortune\" diff HEAD -- \"test.life-fun.net/seimei.php\")",
+      "Bash(git -C \"C:\\\\Users\\\\sende\\\\fortune\" add \"test.life-fun.net/seimei.php\")",
+      "Bash(git -C 'C:\\\\Users\\\\sende\\\\fortune' commit -m ' *)",
+      "Bash(git -C \"C:\\\\Users\\\\sende\\\\fortune\" status)",
+      "Bash(git -C \"C:/Users/sende/fortune\" add seimei.php index.php inc/footer.php)",
+      "Bash(git -C C:/Users/sende/fortune commit -m ' *)"
     ]
   }
 }
