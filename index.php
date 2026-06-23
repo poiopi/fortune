@@ -884,6 +884,7 @@ footer{
 .pc-compat::before{background:linear-gradient(90deg,var(--rose),var(--gold))}
 .pc-zense::before{background:linear-gradient(90deg,var(--violet),var(--teal))}
 .pc-guardian::before{background:linear-gradient(90deg,var(--gold-lt),var(--violet))}
+.pc-seimei::before{background:linear-gradient(90deg,#c9a84c,#8b6914,#c9a84c)}
 .page-card-label{font-family:var(--ff-mono);font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
 .page-card-title{font-family:var(--ff-serif);font-size:.95rem;font-weight:600;color:var(--text)}
 .page-card-desc{font-size:.72rem;color:var(--muted);line-height:1.5;flex:1}
@@ -897,6 +898,7 @@ footer{
 .btn-compat{background:linear-gradient(135deg,var(--rose),var(--gold));box-shadow:0 3px 12px rgba(232,113,154,.3)}
 .btn-zense{background:linear-gradient(135deg,var(--violet),var(--teal));box-shadow:0 3px 12px rgba(155,114,239,.3)}
 .btn-guardian{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
+.btn-seimei{background:linear-gradient(135deg,#c9a84c,#8b5e00);box-shadow:0 3px 12px rgba(201,168,76,.35)}
 /* 鑑定中画面 */
 #loading-overlay{
     position:fixed;
@@ -1161,6 +1163,12 @@ header.site-header{
           <div class="page-card-title">👻 守護霊診断</div>
           <div class="page-card-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚</div>
           <a href="/guardian.php" class="page-card-btn btn-guardian">召喚する →</a>
+        </div>
+        <div class="page-card pc-seimei">
+          <div class="page-card-label">Seimei Handan</div>
+          <div class="page-card-title">✍️ 姓名判断</div>
+          <div class="page-card-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む</div>
+          <a href="/seimei" class="page-card-btn btn-seimei">鑑定する →</a>
         </div>
       </div>
 
