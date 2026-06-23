@@ -51,16 +51,28 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 /* ── Result ── */
 #resultSection{display:none}
 .result-title{text-align:center;font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.22em;color:var(--gold);margin-bottom:1.5rem;padding-top:1rem}
-/* ── 命式盤 ── */
-.meishiki{overflow-x:auto;margin-bottom:2rem}
-.meishiki table{width:100%;border-collapse:collapse;min-width:400px}
-.meishiki th,.meishiki td{border:1px solid var(--border2);padding:.6rem .5rem;text-align:center;font-size:.85rem}
-.meishiki th{background:var(--surface2);font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em;font-weight:normal}
-.meishiki td{background:var(--surface)}
-.kan-cell{font-size:1.4rem;font-weight:700;line-height:1.2}
-.shi-cell{font-size:1.3rem;font-weight:700;line-height:1.2}
-.god-cell{font-size:.7rem;color:var(--muted);font-family:var(--ff-mono);letter-spacing:.05em}
-.elem-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:3px;vertical-align:middle}
+/* ── 命式盤（4柱カード） ── */
+.meishiki-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin-bottom:2rem}
+@media(max-width:520px){.meishiki-grid{grid-template-columns:repeat(2,1fr)}}
+.pillar-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pillar-card.is-day{border-color:var(--gold);box-shadow:0 0 18px rgba(201,168,76,.18)}
+.pillar-card.no-time{opacity:.45;border-style:dashed}
+.pillar-header{padding:.5rem .7rem .4rem;background:var(--surface2);display:flex;flex-direction:column;align-items:center;gap:.2rem;border-bottom:1px solid var(--border)}
+.pillar-label{font-family:var(--ff-mono);font-size:.58rem;letter-spacing:.16em;color:var(--muted)}
+.pillar-god{font-size:.68rem;padding:.1rem .55rem;border-radius:20px;font-family:var(--ff-mono);letter-spacing:.06em}
+.pillar-god-day{background:rgba(201,168,76,.2);color:var(--gold);border:1px solid rgba(201,168,76,.35)}
+.pillar-god-other{background:var(--surface);color:var(--muted);border:1px solid var(--border)}
+.pillar-body{flex:1;display:flex;flex-direction:column;align-items:center;padding:.9rem .5rem .7rem;gap:.1rem}
+.pillar-kan{font-size:2.6rem;font-weight:700;line-height:1;letter-spacing:-.02em}
+.pillar-elem{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);margin-bottom:.4rem}
+.pillar-hr{width:60%;height:1px;background:var(--border);margin:.3rem 0}
+.pillar-shi{font-size:2.2rem;font-weight:700;line-height:1}
+.pillar-shelem{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted)}
+.pillar-zang{padding:.5rem .7rem .6rem;border-top:1px solid var(--border);background:rgba(8,6,15,.3)}
+.pillar-zang-label{font-family:var(--ff-mono);font-size:.54rem;letter-spacing:.12em;color:var(--muted);margin-bottom:.25rem}
+.pillar-zang-list{display:flex;flex-wrap:wrap;gap:.25rem .5rem;align-items:baseline}
+.pillar-zang-list .zs{font-size:.82rem;font-weight:700}
+.pillar-zang-list .zg{font-size:.55rem;color:var(--muted);font-family:var(--ff-mono)}
 /* Element colors */
 .e-wood{color:var(--wood)}.e-fire{color:var(--fire)}.e-earth{color:var(--earth)}.e-metal{color:var(--metal)}.e-water{color:var(--water)}
 .bg-wood{background:rgba(76,175,80,.12)}.bg-fire{background:rgba(239,83,80,.12)}.bg-earth{background:rgba(255,179,0,.12)}.bg-metal{background:rgba(144,202,249,.12)}.bg-water{background:rgba(66,165,245,.12)}
@@ -191,16 +203,7 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
     <div class="result-title">✦ 命式鑑定結果 ✦</div>
 
     <!-- 命式盤 -->
-    <div class="meishiki">
-      <table id="meishikiTable">
-        <thead>
-          <tr>
-            <th>時柱</th><th>日柱</th><th>月柱</th><th>年柱</th>
-          </tr>
-        </thead>
-        <tbody id="meishikiBody"></tbody>
-      </table>
-    </div>
+    <div class="meishiki-grid" id="meishikiGrid"></div>
 
     <!-- 日主カード -->
     <div class="nichishu-card" id="nichishuCard"></div>
@@ -554,134 +557,59 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
   const dp = getDayPillar(year, month, day);
   const hp = hasHour ? getHourPillar(hour, dp.stem) : null;
 
-  // ── 命式盤 ──
-  const allStems = hasHour
-    ? [yp.stem, mp.stem, hp.stem]
-    : [yp.stem, mp.stem];
-
-  function godCell(stem) {
-    const g = getTenGod(dp.stem, stem);
-    if (stem === dp.stem) return '<span style="color:var(--gold)">日主</span>';
-    return g >= 0 ? `<span>${JUSSHIN_NAMES[g]}</span>` : '';
-  }
-
-  const cols = hasHour
-    ? [hp, dp, mp, yp]
-    : [null, dp, mp, yp];
+  // ── 命式盤（4柱カード） ──
+  const allStems = hasHour ? [yp.stem, mp.stem, hp.stem] : [yp.stem, mp.stem];
+  const cols = hasHour ? [hp, dp, mp, yp] : [null, dp, mp, yp];
   const colLabels = ['時柱','日柱','月柱','年柱'];
 
-  // 蔵干HTML
-  function zangHTML(branch) {
-    return ZANGGAN[branch].map(s => {
+  function makePillarCard(col, label, isDayMaster) {
+    if (col === null) {
+      return `<div class="pillar-card no-time">
+        <div class="pillar-header">
+          <div class="pillar-label">${label}</div>
+          <div class="pillar-god pillar-god-other">――</div>
+        </div>
+        <div class="pillar-body">
+          <div class="pillar-kan" style="font-size:1.6rem;color:var(--muted)">?</div>
+          <div class="pillar-elem">時間不明</div>
+          <div class="pillar-hr"></div>
+          <div class="pillar-shi" style="font-size:1.6rem;color:var(--muted)">?</div>
+          <div class="pillar-shelem">――</div>
+        </div>
+      </div>`;
+    }
+    const se = STEM_ELEM[col.stem], be = BRANCH_ELEM[col.branch];
+    const godIdx = getTenGod(dp.stem, col.stem);
+    const godLabel = isDayMaster ? '日 主' : (godIdx >= 0 ? JUSSHIN_NAMES[godIdx] : '');
+    const godCls = isDayMaster ? 'pillar-god-day' : 'pillar-god-other';
+    const zangItems = ZANGGAN[col.branch].map(s => {
       const g = getTenGod(dp.stem, s);
-      const gname = s === dp.stem ? '日主' : (g >= 0 ? JUSSHIN_NAMES[g] : '');
-      return `<span class="${ELEM_COLOR[STEM_ELEM[s]]}">${STEMS[s]}</span><small style="color:var(--muted);font-size:.6rem">${gname}</small>`;
-    }).join(' ');
+      const gn = (s === dp.stem) ? '日主' : (g >= 0 ? JUSSHIN_NAMES[g] : '');
+      return `<span class="zs ${ELEM_COLOR[STEM_ELEM[s]]}">${STEMS[s]}</span><span class="zg">${gn}</span>`;
+    }).join('');
+    return `<div class="pillar-card${isDayMaster?' is-day':''}">
+      <div class="pillar-header">
+        <div class="pillar-label">${label}</div>
+        <div class="pillar-god ${godCls}">${godLabel}</div>
+      </div>
+      <div class="pillar-body">
+        <div class="pillar-kan ${ELEM_COLOR[se]}">${STEMS[col.stem]}</div>
+        <div class="pillar-elem">${ELEMENTS[se]}・${STEM_YIN[col.stem]?'陰':'陽'}</div>
+        <div class="pillar-hr"></div>
+        <div class="pillar-shi ${ELEM_COLOR[be]}">${BRANCHES[col.branch]}</div>
+        <div class="pillar-shelem">${ELEMENTS[be]}</div>
+      </div>
+      <div class="pillar-zang">
+        <div class="pillar-zang-label">蔵 干</div>
+        <div class="pillar-zang-list">${zangItems}</div>
+      </div>
+    </div>`;
   }
 
-  const tbody = document.getElementById('meishikiBody');
-  tbody.innerHTML = '';
-
-  // 天干行
-  const trKan = document.createElement('tr');
-  cols.forEach((col, i) => {
-    const td = document.createElement('td');
-    td.className = 'kan-cell';
-    if (col === null) {
-      td.innerHTML = '<span style="color:var(--muted);font-size:.8rem">不明</span>';
-    } else {
-      td.innerHTML = `<span class="${ELEM_COLOR[STEM_ELEM[col.stem]]}">${STEMS[col.stem]}</span>`;
-      if (i === 1) td.style.borderColor = 'var(--gold)'; // 日柱強調
-    }
-    trKan.appendChild(td);
-  });
-  const thKan = document.createElement('th');
-  thKan.textContent = '天干'; trKan.insertBefore(thKan, trKan.firstChild);
-  // いや、テーブル構造を修正。thead側にラベルがある
-
-  // テーブルを再構築
-  const meishikiTable = document.getElementById('meishikiTable');
-  meishikiTable.innerHTML = '';
-
-  // ヘッダー
-  const thead = document.createElement('thead');
-  const trHead = document.createElement('tr');
-  ['', ...colLabels].forEach((l, i) => {
-    const th = document.createElement('th');
-    th.textContent = l;
-    if (i === 2) th.style.borderColor = 'var(--gold)'; // 日柱
-    trHead.appendChild(th);
-  });
-  thead.appendChild(trHead);
-  meishikiTable.appendChild(thead);
-
-  const tbodyNew = document.createElement('tbody');
-
-  // 十神行
-  const trGod = document.createElement('tr');
-  const thGod = document.createElement('th'); thGod.textContent = '十神';
-  trGod.appendChild(thGod);
-  cols.forEach((col, i) => {
-    const td = document.createElement('td');
-    td.className = 'god-cell';
-    if (i === 1) { td.innerHTML = '<span style="color:var(--gold);font-weight:700">日主</span>'; td.style.borderColor='var(--gold)'; }
-    else if (col) td.innerHTML = JUSSHIN_NAMES[getTenGod(dp.stem, col.stem)];
-    else td.textContent = '-';
-    trGod.appendChild(td);
-  });
-  tbodyNew.appendChild(trGod);
-
-  // 天干行
-  const trK = document.createElement('tr');
-  const thK = document.createElement('th'); thK.textContent = '天干';
-  trK.appendChild(thK);
-  cols.forEach((col, i) => {
-    const td = document.createElement('td');
-    td.className = 'kan-cell';
-    if (i === 1) td.style.borderColor = 'var(--gold)';
-    if (col) {
-      const e = STEM_ELEM[col.stem];
-      td.innerHTML = `<span class="${ELEM_COLOR[e]}">${STEMS[col.stem]}</span><br><small style="font-size:.65rem;color:var(--muted)">${ELEMENTS[e]}・${STEM_YIN[col.stem]?'陰':'陽'}</small>`;
-    } else {
-      td.innerHTML = '<span style="color:var(--muted);font-size:.8rem">―</span>';
-    }
-    trK.appendChild(td);
-  });
-  tbodyNew.appendChild(trK);
-
-  // 地支行
-  const trS = document.createElement('tr');
-  const thS = document.createElement('th'); thS.textContent = '地支';
-  trS.appendChild(thS);
-  cols.forEach((col, i) => {
-    const td = document.createElement('td');
-    td.className = 'shi-cell';
-    if (i === 1) td.style.borderColor = 'var(--gold)';
-    if (col) {
-      const e = BRANCH_ELEM[col.branch];
-      td.innerHTML = `<span class="${ELEM_COLOR[e]}">${BRANCHES[col.branch]}</span><br><small style="font-size:.65rem;color:var(--muted)">${ELEMENTS[e]}</small>`;
-    } else {
-      td.innerHTML = '<span style="color:var(--muted);font-size:.8rem">―</span>';
-    }
-    trS.appendChild(td);
-  });
-  tbodyNew.appendChild(trS);
-
-  // 蔵干行
-  const trZ = document.createElement('tr');
-  const thZ = document.createElement('th'); thZ.textContent = '蔵干';
-  trZ.appendChild(thZ);
-  cols.forEach((col, i) => {
-    const td = document.createElement('td');
-    td.style.fontSize = '.72rem'; td.style.lineHeight = '1.6';
-    if (i === 1) td.style.borderColor = 'var(--gold)';
-    if (col) td.innerHTML = zangHTML(col.branch);
-    else td.innerHTML = '<span style="color:var(--muted)">―</span>';
-    trZ.appendChild(td);
-  });
-  tbodyNew.appendChild(trZ);
-
-  meishikiTable.appendChild(tbodyNew);
+  const grid = document.getElementById('meishikiGrid');
+  grid.innerHTML = cols.map((col, i) =>
+    makePillarCard(col, colLabels[i], i === 1)
+  ).join('');
 
   // ── 日主カード ──
   const nd = NICHISHU_DESC[dp.stem];
