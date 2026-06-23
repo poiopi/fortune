@@ -252,7 +252,7 @@ footer a:hover{color:var(--gold)}
   require_once __DIR__.'/inc/nav-cards.php';
   ?>
   <div id="inlineNavCards" style="display:none">
-    <div class="nav-cards-section"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(6,'geimei') ?></div>
+    <div class="nav-cards-section"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'geimei') ?></div>
   </div>
 
   <p class="disclaimer">※ 本サービスはエンターテインメント目的のコンテンツです。提案された芸名の使用は自己責任でお願いします。</p>
