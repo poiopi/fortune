@@ -1164,12 +1164,14 @@ header.site-header{
           <div class="page-card-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚</div>
           <a href="/guardian.php" class="page-card-btn btn-guardian">召喚する →</a>
         </div>
+        <?php /* seimei: 一時非表示（AdSense審査中）
         <div class="page-card pc-seimei">
           <div class="page-card-label">Seimei Handan</div>
           <div class="page-card-title">✍️ 姓名判断</div>
           <div class="page-card-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む</div>
           <a href="/seimei" class="page-card-btn btn-seimei">鑑定する →</a>
         </div>
+        */ ?>
       </div>
 
       <!-- 結果（main-colの内側） -->
