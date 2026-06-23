@@ -450,6 +450,19 @@ const NICHISHU_DESC = [
 ];
 
 // ═══════════════════════════════════════════════════
+// 十二運星
+// ═══════════════════════════════════════════════════
+const JUNI_UNSEI = ['長生','沐浴','冠帯','建禄','帝旺','衰','病','死','墓','絶','胎','養'];
+// 各日干の「長生」の地支インデックス（甲→亥=11, 乙→午=6, ...）
+const CHOSEISTART = [11, 6, 2, 9, 2, 9, 5, 0, 8, 3];
+function getJuniUnsei(dayStem, branch) {
+  const start = CHOSEISTART[dayStem];
+  const yang = STEM_YIN[dayStem] === 0;
+  const steps = yang ? (branch - start + 12) % 12 : (start - branch + 12) % 12;
+  return JUNI_UNSEI[steps];
+}
+
+// ═══════════════════════════════════════════════════
 // 大運算出
 // ═══════════════════════════════════════════════════
 function getDaiyun(birthYear, birthMonth, birthDay, gender, yearStem, monthStem, monthBranch) {
@@ -671,13 +684,20 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
   dy.daiyun.forEach(d => {
     const isCurrent = currentAge >= d.startAge && currentAge < d.startAge + 10;
     const se = STEM_ELEM[d.stem], be = BRANCH_ELEM[d.branch];
+    const godIdx = getTenGod(dp.stem, d.stem);
+    const godName = godIdx >= 0 ? JUSSHIN_NAMES[godIdx] : '―';
+    const juniName = getJuniUnsei(dp.stem, d.branch);
     list.innerHTML += `
       <div class="daiyun-item${isCurrent?' current-daiyun':''}">
         <div class="daiyun-age">${d.startAge}歳〜</div>
         <div class="daiyun-kan ${ELEM_COLOR[se]}">${STEMS[d.stem]}</div>
         <div class="daiyun-shi ${ELEM_COLOR[be]}">${BRANCHES[d.branch]}</div>
         <div class="daiyun-period">${year+d.startAge}年〜</div>
-        ${isCurrent?'<div style="font-size:.55rem;color:var(--gold);margin-top:.2rem;font-family:var(--ff-mono)">▶ 現在</div>':''}
+        <div class="daiyun-tags">
+          <span class="daiyun-tag tag-god">${godName}</span>
+          <span class="daiyun-tag tag-juni">${juniName}</span>
+        </div>
+        ${isCurrent?'<div style="font-size:.55rem;color:var(--gold);margin-top:.3rem;font-family:var(--ff-mono)">▶ 現在</div>':''}
       </div>`;
   });
 
