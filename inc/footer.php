@@ -20,6 +20,7 @@ require_once __DIR__.'/nav-cards.php';
 <footer>
   <?= $_p==='top' ? '占いポータル トップ' : '<a href="/">占いポータル トップ</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='tarot' ? 'タロット占い' : '<a href="/tarot">タロット占い</a>' ?> &nbsp;/&nbsp;
+  <?= $_p==='shichu' ? '四柱推命' : '<a href="/shichu">四柱推命</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='calendar' ? '開運カレンダー' : '<a href="/calendar">開運カレンダー</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='mbti' ? 'MBTI×星座診断' : '<a href="/mbti">MBTI×星座診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='numerology' ? '数秘術診断' : '<a href="/numerology">数秘術診断</a>' ?> &nbsp;/&nbsp;
@@ -157,6 +158,7 @@ require_once __DIR__.'/nav-cards.php';
     $fmenu_pages = [
       'top'        => ['icon'=>'🏠', 'name'=>'トップ',              'url'=>'/'],
       'tarot'      => ['icon'=>'🃏', 'name'=>'タロット占い',        'url'=>'/tarot'],
+      'shichu'     => ['icon'=>'🔯', 'name'=>'四柱推命',            'url'=>'/shichu'],
       'calendar'   => ['icon'=>'📅', 'name'=>'開運カレンダー',      'url'=>'/calendar'],
       'mbti'       => ['icon'=>'🧠', 'name'=>'MBTI×星座診断',      'url'=>'/mbti'],
       'numerology' => ['icon'=>'🔢', 'name'=>'数秘術診断',          'url'=>'/numerology'],
