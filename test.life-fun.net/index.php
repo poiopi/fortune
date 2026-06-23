@@ -920,6 +920,8 @@ footer{
 .btn-guardian{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
 .btn-seimei{background:linear-gradient(135deg,#c9a84c,#8b5e00);box-shadow:0 3px 12px rgba(201,168,76,.35)}
 .btn-shichu{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(155,114,239,.35)}
+.pc-geimei::before{background:linear-gradient(90deg,var(--rose),var(--violet),var(--teal))}
+.btn-geimei{background:linear-gradient(135deg,var(--rose),var(--violet));box-shadow:0 3px 12px rgba(232,113,154,.35)}
 
 /* 鑑定中画面 */
 #loading-overlay{
@@ -1149,6 +1151,12 @@ header.site-header{
           <div class="page-card-title">🔯 四柱推命</div>
           <div class="page-card-desc">生年月日から命式・十神・大運・天中殺を本格算出する</div>
           <a href="/shichu" class="page-card-btn btn-shichu">算出する →</a>
+        </div>
+        <div class="page-card pc-geimei">
+          <div class="page-card-label">Geimei Shindan</div>
+          <div class="page-card-title">🎭 芸名診断</div>
+          <div class="page-card-desc">大喜利ゲームで芸風を判定！画数から大吉の芸名を3パターン提案</div>
+          <a href="/geimei" class="page-card-btn btn-geimei">診断する →</a>
         </div>
         <div class="page-card pc-gold">
           <div class="page-card-label">MBTI × Zodiac</div>

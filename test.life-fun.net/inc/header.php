@@ -31,6 +31,7 @@ function _navlink(string $label, string $href, string $key, string $current): st
       <?= _navlink('トップ',           '/',           'top',        $_p) ?>
       <?= _navlink('タロット',         '/tarot',      'tarot',      $_p) ?>
       <?= _navlink('四柱推命',         '/shichu',     'shichu',     $_p) ?>
+      <?= _navlink('芸名診断',         '/geimei',     'geimei',     $_p) ?>
       <?= _navlink('開運カレンダー',   '/calendar',   'calendar',   $_p) ?>
       <?= _navlink('MBTI×星座診断',   '/mbti',       'mbti',       $_p) ?>
       <?= _navlink('数秘術診断',       '/numerology', 'numerology', $_p) ?>
