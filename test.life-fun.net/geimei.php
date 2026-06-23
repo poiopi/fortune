@@ -248,6 +248,13 @@ footer a:hover{color:var(--gold)}
     </div>
   </div>
 
+  <?php
+  require_once __DIR__.'/inc/nav-cards.php';
+  ?>
+  <div id="inlineNavCards" style="display:none">
+    <div class="nav-cards-section"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(6,'geimei') ?></div>
+  </div>
+
   <p class="disclaimer">※ 本サービスはエンターテインメント目的のコンテンツです。提案された芸名の使用は自己責任でお願いします。</p>
 </div>
 
@@ -880,6 +887,7 @@ function showResult(){
     document.getElementById('gameSection').style.display='none';
     document.getElementById('formSection').style.display='none';
     document.getElementById('resultSection').style.display='block';
+    document.getElementById('inlineNavCards').style.display='block';
     document.getElementById('loadingOverlay').classList.remove('show');
     window.scrollTo({top:0,behavior:'smooth'});
   },900);
