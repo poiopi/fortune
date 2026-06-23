@@ -18,7 +18,8 @@
       "Bash(git -C 'C:\\\\Users\\\\sende\\\\fortune' commit -m ' *)",
       "Bash(git -C \"C:\\\\Users\\\\sende\\\\fortune\" status)",
       "Bash(git -C \"C:/Users/sende/fortune\" add seimei.php index.php inc/footer.php)",
-      "Bash(git -C C:/Users/sende/fortune commit -m ' *)"
+      "Bash(git -C C:/Users/sende/fortune commit -m ' *)",
+      "Bash(git -C \"C:/Users/sende/fortune\" add index.php inc/footer.php)"
     ]
   }
 }
