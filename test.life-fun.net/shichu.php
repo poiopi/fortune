@@ -99,6 +99,37 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .daiyun-meta{font-size:.78rem;color:var(--muted);margin-bottom:1rem;font-family:var(--ff-mono);letter-spacing:.06em}
 .daiyun-scroll{overflow-x:auto}
 .daiyun-list{display:flex;gap:.7rem;min-width:max-content;padding-bottom:.5rem}
+/* ── 4柱ガイド ── */
+.guide-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:1.5rem}
+.guide-title{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.16em;color:var(--muted);text-align:center;margin-bottom:.9rem}
+.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+@media(max-width:520px){.guide-grid{grid-template-columns:repeat(2,1fr)}}
+.guide-item{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:.7rem .8rem}
+.guide-item.is-day-guide{border-color:var(--gold);background:rgba(201,168,76,.06)}
+.guide-pillar-name{font-family:var(--ff-mono);font-size:.7rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
+.guide-pillar-desc{font-size:.65rem;color:var(--muted);line-height:1.6}
+/* ── 天中殺・律音 ── */
+.tcs-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:1.5rem}
+.tcs-row{display:flex;flex-wrap:wrap;gap:1rem}
+.tcs-block{flex:1;min-width:200px}
+.tcs-label{font-family:var(--ff-mono);font-size:.64rem;letter-spacing:.1em;color:var(--muted);margin-bottom:.35rem}
+.tcs-value{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
+.tcs-note{font-size:.66rem;color:var(--muted);line-height:1.7;margin-bottom:.2rem}
+/* ── 現在大運コメント ── */
+.daiyun-current-desc{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem}
+.cur-dy-title{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem}
+.cur-dy-kanshi{font-size:2rem;font-weight:700;margin-bottom:.6rem;line-height:1}
+.cur-dy-row{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.4rem}
+.cur-dy-badge{font-family:var(--ff-mono);font-size:.58rem;padding:.15rem .5rem;border-radius:10px;white-space:nowrap;margin-top:.1rem;flex-shrink:0}
+.cur-dy-text{font-size:.68rem;color:var(--muted);line-height:1.7}
+/* ── 十二運星 凡例 ── */
+.juni-legend{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin-top:.8rem}
+.legend-title{font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.14em;color:var(--muted);margin-bottom:.7rem}
+.legend-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.4rem .8rem}
+@media(min-width:600px){.legend-grid{grid-template-columns:repeat(3,1fr)}}
+.legend-item{display:flex;gap:.4rem;align-items:baseline}
+.legend-name{font-family:var(--ff-mono);font-size:.7rem;font-weight:700;color:var(--gold);white-space:nowrap;min-width:2.2rem}
+.legend-desc{font-size:.62rem;color:var(--muted);line-height:1.5}
 .daiyun-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.7rem .6rem;width:96px;text-align:center;flex-shrink:0}
 .daiyun-item.current-daiyun{border-color:var(--gold);background:rgba(201,168,76,.08)}
 .daiyun-age{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);margin-bottom:.25rem}
@@ -209,8 +240,14 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
     <!-- 命式盤 -->
     <div class="meishiki-grid" id="meishikiGrid"></div>
 
+    <!-- 4柱の読み方 -->
+    <div id="pillarsGuide" class="guide-card"></div>
+
     <!-- 日主カード -->
     <div class="nichishu-card" id="nichishuCard"></div>
+
+    <!-- 天中殺・律音 -->
+    <div id="tenchusatsuCard"></div>
 
     <!-- 十神 -->
     <div class="jusshin-section">
@@ -225,6 +262,8 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
       <div class="daiyun-scroll">
         <div class="daiyun-list" id="daiyunList"></div>
       </div>
+      <div id="daiyunCurrentDesc" class="daiyun-current-desc"></div>
+      <div class="juni-legend" id="juniLegend"></div>
     </div>
 
     <!-- 今年の運勢 -->
@@ -453,7 +492,20 @@ const NICHISHU_DESC = [
 // 十二運星
 // ═══════════════════════════════════════════════════
 const JUNI_UNSEI = ['長生','沐浴','冠帯','建禄','帝旺','衰','病','死','墓','絶','胎','養'];
-// 各日干の「長生」の地支インデックス（甲→亥=11, 乙→午=6, ...）
+const JUNI_DESC = {
+  '長生':'新しいサイクルの始まり。エネルギーが生まれ、物事がスタートしやすい伸びやかな時期。',
+  '沐浴':'感受性と直感が高まる。衝動的になりやすいが、個性や魅力が輝き、恋愛運も活発に。',
+  '冠帯':'実力がつき自信が芽生える成長期。積極的な行動が実を結びやすく、出世・昇格の機会も。',
+  '建禄':'安定と充実の時期。努力が認められ、実力が正当に評価される。生活基盤が固まる。',
+  '帝旺':'絶頂期。エネルギーが最高潮に達し、大きな成果を掴みやすい。リーダーシップが輝く。',
+  '衰':'少しずつ力が落ちてくる移行期。無理をせず方向転換の準備を始めるとよい。',
+  '病':'体調や運気に注意が必要な時期。休養と内省を大切に。焦らず養生が吉。',
+  '死':'古いものが終わる静養期。焦らず次のサイクルを待つことで新たな力が宿る。',
+  '墓':'蓄積と整理の時期。過去の経験を活かし、次のステージの土台を固める。',
+  '絶':'変革の時期。古い自分が崩れ、新しい自分へ生まれ変わる準備が始まる。',
+  '胎':'新しいものが宿る受胎期。内側での準備と充電が大切な、静かな転換点。',
+  '養':'周囲のサポートを受けながら育まれる時期。焦らず力を蓄えることが吉。',
+};
 const CHOSEISTART = [11, 6, 2, 9, 2, 9, 5, 0, 8, 3];
 function getJuniUnsei(dayStem, branch) {
   const start = CHOSEISTART[dayStem];
@@ -461,6 +513,41 @@ function getJuniUnsei(dayStem, branch) {
   const steps = yang ? (branch - start + 12) % 12 : (start - branch + 12) % 12;
   return JUNI_UNSEI[steps];
 }
+
+// ═══════════════════════════════════════════════════
+// 天中殺・律音
+// ═══════════════════════════════════════════════════
+// 日柱の60サイクル番号から天中殺（空亡）の2支を返す
+function getTenchusatsu(dayCycle) {
+  // グループ0〜5ごとに「当たらない2支」
+  const missing = [[10,11],[8,9],[6,7],[4,5],[2,3],[0,1]];
+  return missing[Math.floor(dayCycle / 10)];
+}
+// 同一干支が複数柱に現れる「律音」を検出
+function getRitchin(pillars) {
+  const results = [];
+  for (let i = 0; i < pillars.length - 1; i++) {
+    for (let j = i + 1; j < pillars.length; j++) {
+      if (pillars[i].stem === pillars[j].stem && pillars[i].branch === pillars[j].branch) {
+        results.push({ label1: colLabels[i], label2: colLabels[j],
+          kanshi: STEMS[pillars[i].stem] + BRANCHES[pillars[i].branch] });
+      }
+    }
+  }
+  return results;
+}
+const JUSSHIN_GOD_DESC = {
+  '比肩':'独立・自我。自力で切り拓く力が強まる時期。自分らしさを貫くことで運が開く。',
+  '劫財':'競争・決断。変化や争いの中で力を発揮する。過度な強引さには注意。',
+  '食神':'表現・豊穣。才能や個性が自然に花開く。食・趣味・創作に縁が深まる。',
+  '傷官':'創造・反骨。既存の枠を超える革新の時。才覚は輝くが、権威との摩擦に注意。',
+  '偏財':'行動・財運。活動的に動くことで金運が拓ける。対人・ビジネスチャンスに富む。',
+  '正財':'堅実・蓄財。地道な努力が着実な財運につながる。家庭・実務が安定する。',
+  '偏官':'変化・勝負。スピード感ある行動が吉。リスクを取る決断が運命を動かす。',
+  '正官':'地位・規律。信頼と責任が高まる。キャリアや社会的評価が向上しやすい。',
+  '偏印':'探求・直観。学びや精神世界との縁が深まる。独自の世界観が武器になる。',
+  '印綬':'保護・学業。目上の人のサポートが得やすい。勉強・資格取得に最適な時期。',
+};
 
 // ═══════════════════════════════════════════════════
 // 大運算出
@@ -628,6 +715,17 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
     makePillarCard(col, colLabels[i], i === 1)
   ).join('');
 
+  // ── 4柱の読み方 ──
+  document.getElementById('pillarsGuide').innerHTML = `
+    <div class="guide-title">✦ 4柱の読み方 ✦</div>
+    <div class="guide-grid">
+      <div class="guide-item"><div class="guide-pillar-name">年柱</div><div class="guide-pillar-desc">祖先・幼少期（〜15歳）の運命的素地。他人から見た外面的な印象も表す。</div></div>
+      <div class="guide-item"><div class="guide-pillar-name">月柱</div><div class="guide-pillar-desc">親・兄弟・青年期（16〜30歳）と仕事・社会運。命式の中心的な力を持つ柱。</div></div>
+      <div class="guide-item is-day-guide"><div class="guide-pillar-name">日柱 ⭐</div><div class="guide-pillar-desc">あなた自身の本質・中年期（31〜45歳）。日干が「日主」として命式全体の基準点になる。</div></div>
+      <div class="guide-item"><div class="guide-pillar-name">時柱</div><div class="guide-pillar-desc">子供・晩年期（46歳〜）の運勢。将来への意志や目標、老後の環境を示す。</div></div>
+    </div>
+  `;
+
   // ── 日主カード ──
   const nd = NICHISHU_DESC[dp.stem];
   const elemIdx = STEM_ELEM[dp.stem];
@@ -641,6 +739,44 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
       </div>
     </div>
     <p class="nichishu-desc">${nd.desc}</p>
+  `;
+
+  // ── 天中殺・律音 ──
+  const dayCycle = (getJDN(year, month, day) + 49) % 60;
+  const tcsBranches = getTenchusatsu(dayCycle);
+  const tcsNames = tcsBranches.map(b => BRANCHES[b]).join('・');
+  const tcsYears = tcsBranches.map(b => {
+    // 干支12支のうちtcsBranchに当たる西暦年の近い例を示す（参考）
+    const currentY = new Date().getFullYear();
+    const base = (currentY - 4 + 600) % 12;
+    const diff1 = (b - base + 12) % 12;
+    return `${currentY + diff1}年`;
+  }).join('・');
+
+  const validCols = cols.filter(c => c !== null);
+  const ritchinList = getRitchin(validCols);
+
+  let ritchinHTML = '';
+  if (ritchinList.length > 0) {
+    ritchinHTML = `<div class="tcs-block">
+      <div class="tcs-label">⚡ 律音（りっちん）あり</div>
+      ${ritchinList.map(r=>`<div class="tcs-value">${r.label1}・${r.label2}が同じ「<strong>${r.kanshi}</strong>」</div>
+        <div class="tcs-note">同一干支が重なることで、その干支のエネルギーが倍増します。強烈な個性や突出した才能が現れやすい半面、行き過ぎに注意が必要です。</div>`).join('')}
+    </div>`;
+  }
+
+  document.getElementById('tenchusatsuCard').innerHTML = `
+    <div class="tcs-card">
+      <div class="tcs-row">
+        <div class="tcs-block">
+          <div class="tcs-label">🌑 天中殺（空亡）</div>
+          <div class="tcs-value">${tcsNames}年・月・日</div>
+          <div class="tcs-note">天干の届かない2つの地支。この地支が巡る年・月・日は天のサポートが薄れ、物事が不安定になりやすい時期。大きな決断・開業・投資は避け、内を固める準備期間として活かすのが吉。</div>
+          <div class="tcs-note">次の該当年の目安：${tcsYears}</div>
+        </div>
+        ${ritchinHTML}
+      </div>
+    </div>
   `;
 
   // ── 十神グリッド ──
@@ -657,13 +793,13 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
         { label:'日支（蔵干）', stem: ZANGGAN_MAIN[dp.branch] },
       ];
 
-  const grid = document.getElementById('jusshinGrid');
-  grid.innerHTML = '';
+  const jGrid = document.getElementById('jusshinGrid');
+  jGrid.innerHTML = '';
   positions.forEach(pos => {
     const g = getTenGod(dp.stem, pos.stem);
     if (g < 0) return;
     const e = STEM_ELEM[pos.stem];
-    grid.innerHTML += `
+    jGrid.innerHTML += `
       <div class="jusshin-item ${ELEM_BG[e]}">
         <div class="jusshin-label">${pos.label}</div>
         <div class="jusshin-name ${ELEM_COLOR[e]}">${JUSSHIN_NAMES[g]}（${STEMS[pos.stem]}）</div>
@@ -700,6 +836,33 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
         ${isCurrent?'<div style="font-size:.55rem;color:var(--gold);margin-top:.3rem;font-family:var(--ff-mono)">▶ 現在</div>':''}
       </div>`;
   });
+
+  // ── 現在大運コメント ──
+  const currentDy = dy.daiyun.find(d => currentAge >= d.startAge && currentAge < d.startAge + 10);
+  if (currentDy) {
+    const cgIdx = getTenGod(dp.stem, currentDy.stem);
+    const cgName = cgIdx >= 0 ? JUSSHIN_NAMES[cgIdx] : '';
+    const cjName = getJuniUnsei(dp.stem, currentDy.branch);
+    const cse = STEM_ELEM[currentDy.stem], cbe = BRANCH_ELEM[currentDy.branch];
+    const godDescText = JUSSHIN_GOD_DESC[cgName] || '';
+    const juniDescText = JUNI_DESC[cjName] || '';
+    document.getElementById('daiyunCurrentDesc').innerHTML = `
+      <div class="cur-dy-title">▶ 現在の大運（${currentDy.startAge}歳〜）の読み解き</div>
+      <div class="cur-dy-kanshi">
+        <span class="${ELEM_COLOR[cse]}">${STEMS[currentDy.stem]}</span><span class="${ELEM_COLOR[cbe]}">${BRANCHES[currentDy.branch]}</span>
+      </div>
+      <div class="cur-dy-row"><span class="cur-dy-badge tag-god">${cgName}</span><span class="cur-dy-text">${godDescText}</span></div>
+      <div class="cur-dy-row"><span class="cur-dy-badge tag-juni">${cjName}</span><span class="cur-dy-text">${juniDescText}</span></div>
+    `;
+  }
+
+  // ── 十二運星 凡例 ──
+  document.getElementById('juniLegend').innerHTML = `
+    <div class="legend-title">十二運星の意味</div>
+    <div class="legend-grid">
+      ${JUNI_UNSEI.map(n=>`<div class="legend-item"><span class="legend-name">${n}</span><span class="legend-desc">${JUNI_DESC[n].split('。')[0]}。</span></div>`).join('')}
+    </div>
+  `;
 
   // ── 今年の流年運勢 ──
   const thisYear = new Date().getFullYear();
