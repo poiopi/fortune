@@ -981,6 +981,24 @@ function renderResult({sei, mei, gogaku}){
     </div>`;
   }).join('');
 }
+
+// URLパラメータから芸名を自動入力
+(function(){
+  const p=new URLSearchParams(location.search);
+  const name=p.get('name');
+  if(!name)return;
+  const parts=name.trim().split(/[\s　]+/);
+  if(parts.length>=2){
+    const sei=document.getElementById('inputSei');
+    const mei=document.getElementById('inputMei');
+    if(sei)sei.value=parts[0];
+    if(mei)mei.value=parts.slice(1).join('');
+  }else if(parts.length===1){
+    // 1ワード芸名は名前欄のみ
+    const mei=document.getElementById('inputMei');
+    if(mei)mei.value=parts[0];
+  }
+})();
 </script>
 </body>
 </html>

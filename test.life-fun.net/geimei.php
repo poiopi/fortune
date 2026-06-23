@@ -146,7 +146,10 @@ footer a:hover{color:var(--gold)}
 .name-reason{font-size:.72rem;color:var(--muted);line-height:1.75;margin-bottom:.8rem}
 .konbi-section{border-top:1px solid var(--border);padding-top:.8rem;margin-top:.2rem}
 .konbi-label{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.3rem}
-.konbi-name{font-family:var(--ff-serif);font-size:1.3rem;font-weight:700;color:var(--violet);letter-spacing:.08em}
+.konbi-name{font-family:var(--ff-serif);font-size:1.3rem;font-weight:700;color:var(--violet);letter-spacing:.08em;margin-bottom:.5rem}
+.seimei-btn{display:inline-block;padding:.4rem 1rem;background:linear-gradient(135deg,var(--gold),#8b5e00);color:#fff;border-radius:20px;font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.06em;transition:opacity .2s;margin-top:.3rem}
+.seimei-btn:hover{opacity:.8}
+.kata-note{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);margin-top:.3rem;display:block}
 .seimei-guide{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:1rem 1.2rem;margin-bottom:1.5rem;text-align:center}
 .seimei-guide p{font-size:.75rem;color:var(--muted);line-height:1.7;margin-bottom:.6rem}
 .seimei-link{display:inline-block;padding:.5rem 1.2rem;background:linear-gradient(135deg,var(--gold),#8b5e00);color:#fff;border-radius:8px;font-family:var(--ff-serif);font-size:.8rem;font-weight:700}
@@ -256,50 +259,248 @@ function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('
 
 const LUCKY = new Set([1,3,5,6,7,8,11,13,15,16,17,21,23,24,25,31,32,33,35,37,38,41,45,47,48,52,57,58,63,65,67,68,81]);
 
+// ── 苗字プール（漢字:約30語レア, カタカナ:約100語 高確率） ──
+// type: 'kanji' | 'kata'
 const MYOJI = [
-  {t:'山田',r:'やまだ',s:8,st:['インパクト','親しみ'],pt:['天然','体育会系']},
-  {t:'田中',r:'たなか',s:9,st:['親しみ'],pt:['天然','知性系']},
-  {t:'松本',r:'まつもと',s:13,st:['インパクト','本格'],pt:['体育会系','知性系']},
-  {t:'中村',r:'なかむら',s:11,st:['親しみ','本格'],pt:['天然']},
-  {t:'木村',r:'きむら',s:11,st:['親しみ','インパクト'],pt:['体育会系','天然']},
-  {t:'鈴木',r:'すずき',s:17,st:['本格','インパクト'],pt:['知性系','毒舌']},
-  {t:'吉田',r:'よしだ',s:11,st:['本格','親しみ'],pt:['知性系','天然']},
-  {t:'加藤',r:'かとう',s:23,st:['本格'],pt:['知性系','毒舌']},
-  {t:'春風',r:'はるかぜ',s:18,st:['親しみ','インパクト'],pt:['天然']},
-  {t:'天野',r:'あまの',s:15,st:['インパクト','本格'],pt:['天然','知性系']},
-  {t:'月野',r:'つきの',s:15,st:['親しみ','インパクト'],pt:['天然']},
-  {t:'星野',r:'ほしの',s:20,st:['本格','インパクト'],pt:['知性系']},
-  {t:'吉本',r:'よしもと',s:11,st:['インパクト'],pt:['体育会系']},
-  {t:'東野',r:'ひがしの',s:19,st:['本格'],pt:['知性系']},
-  {t:'喜多',r:'きた',s:18,st:['インパクト','親しみ'],pt:['体育会系','天然']},
-  {t:'太田',r:'おおた',s:9,st:['親しみ','インパクト'],pt:['体育会系','天然']},
-  {t:'夏川',r:'なつかわ',s:13,st:['親しみ'],pt:['天然']},
-  {t:'高橋',r:'たかはし',s:26,st:['本格'],pt:['知性系','毒舌']},
-  {t:'岡田',r:'おかだ',s:13,st:['本格','親しみ'],pt:['知性系','天然']},
-  {t:'林田',r:'はやしだ',s:13,st:['インパクト','親しみ'],pt:['体育会系','天然']},
+  // 漢字（レア: weight=1）
+  {t:'山田',r:'やまだ',s:8,w:1,st:['インパクト','親しみ'],pt:['天然','体育会系']},
+  {t:'田中',r:'たなか',s:9,w:1,st:['親しみ'],pt:['天然','知性系']},
+  {t:'松本',r:'まつもと',s:13,w:1,st:['インパクト','本格'],pt:['体育会系','知性系']},
+  {t:'中村',r:'なかむら',s:11,w:1,st:['親しみ','本格'],pt:['天然']},
+  {t:'木村',r:'きむら',s:11,w:1,st:['親しみ','インパクト'],pt:['体育会系','天然']},
+  {t:'鈴木',r:'すずき',s:17,w:1,st:['本格','インパクト'],pt:['知性系','毒舌']},
+  {t:'吉田',r:'よしだ',s:11,w:1,st:['本格','親しみ'],pt:['知性系','天然']},
+  {t:'加藤',r:'かとう',s:23,w:1,st:['本格'],pt:['知性系','毒舌']},
+  {t:'春風',r:'はるかぜ',s:18,w:1,st:['親しみ','インパクト'],pt:['天然']},
+  {t:'天野',r:'あまの',s:15,w:1,st:['インパクト','本格'],pt:['天然','知性系']},
+  {t:'月野',r:'つきの',s:15,w:1,st:['親しみ','インパクト'],pt:['天然']},
+  {t:'星野',r:'ほしの',s:20,w:1,st:['本格','インパクト'],pt:['知性系']},
+  {t:'吉本',r:'よしもと',s:11,w:1,st:['インパクト'],pt:['体育会系']},
+  {t:'東野',r:'ひがしの',s:19,w:1,st:['本格'],pt:['知性系']},
+  {t:'喜多',r:'きた',s:18,w:1,st:['インパクト','親しみ'],pt:['体育会系','天然']},
+  {t:'太田',r:'おおた',s:9,w:1,st:['親しみ','インパクト'],pt:['体育会系','天然']},
+  {t:'夏川',r:'なつかわ',s:13,w:1,st:['親しみ'],pt:['天然']},
+  {t:'高橋',r:'たかはし',s:26,w:1,st:['本格'],pt:['知性系','毒舌']},
+  {t:'岡田',r:'おかだ',s:13,w:1,st:['本格','親しみ'],pt:['知性系','天然']},
+  {t:'林田',r:'はやしだ',s:13,w:1,st:['インパクト','親しみ'],pt:['体育会系','天然']},
+  {t:'花岡',r:'はなおか',s:16,w:1,st:['親しみ'],pt:['天然']},
+  {t:'黒木',r:'くろき',s:19,w:1,st:['インパクト','本格'],pt:['毒舌','知性系']},
+  {t:'白石',r:'しらいし',s:18,w:1,st:['本格'],pt:['知性系']},
+  {t:'金城',r:'きんじょう',s:16,w:1,st:['インパクト'],pt:['体育会系']},
+  {t:'龍崎',r:'りゅうざき',s:21,w:1,st:['インパクト','本格'],pt:['知性系','毒舌']},
+  {t:'桐島',r:'きりしま',s:18,w:1,st:['本格','インパクト'],pt:['知性系']},
+  {t:'宇治',r:'うじ',s:10,w:1,st:['親しみ','本格'],pt:['天然']},
+  {t:'西村',r:'にしむら',s:16,w:1,st:['親しみ'],pt:['天然','知性系']},
+  {t:'藤原',r:'ふじわら',s:21,w:1,st:['本格'],pt:['知性系']},
+  {t:'今井',r:'いまい',s:10,w:1,st:['親しみ'],pt:['天然','体育会系']},
+
+  // カタカナ（高確率: weight=4）
+  // 外国人苗字系
+  {t:'マーク',r:'まーく',s:8,w:4,st:['インパクト','本格'],pt:['知性系','体育会系']},
+  {t:'フランク',r:'ふらんく',s:8,w:4,st:['インパクト'],pt:['体育会系','天然']},
+  {t:'ミラー',r:'みらー',s:6,w:4,st:['本格','インパクト'],pt:['知性系']},
+  {t:'ブラック',r:'ぶらっく',s:8,w:4,st:['インパクト'],pt:['毒舌']},
+  {t:'ホワイト',r:'ほわいと',s:8,w:4,st:['親しみ'],pt:['天然']},
+  {t:'グレイ',r:'ぐれい',s:6,w:4,st:['本格','インパクト'],pt:['知性系','毒舌']},
+  {t:'ロス',r:'ろす',s:4,w:4,st:['インパクト','親しみ'],pt:['体育会系','天然']},
+  {t:'ジャクソン',r:'じゃくそん',s:9,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ウィルソン',r:'うぃるそん',s:9,w:4,st:['本格'],pt:['知性系']},
+  {t:'ブラウン',r:'ぶらうん',s:7,w:4,st:['親しみ','インパクト'],pt:['天然','体育会系']},
+  {t:'グリーン',r:'ぐりーん',s:7,w:4,st:['親しみ'],pt:['天然']},
+  {t:'スミス',r:'すみす',s:5,w:4,st:['インパクト','本格'],pt:['知性系']},
+  {t:'ジョーンズ',r:'じょーんず',s:9,w:4,st:['本格'],pt:['知性系','毒舌']},
+  {t:'テイラー',r:'ていらー',s:7,w:4,st:['親しみ','本格'],pt:['天然','知性系']},
+  {t:'アンダーソン',r:'あんだーそん',s:11,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ムーア',r:'むーあ',s:5,w:4,st:['親しみ'],pt:['天然']},
+  {t:'クラーク',r:'くらーく',s:7,w:4,st:['本格','インパクト'],pt:['知性系']},
+  {t:'ルイス',r:'るいす',s:5,w:4,st:['親しみ','インパクト'],pt:['天然','体育会系']},
+  {t:'ロビンソン',r:'ろびんそん',s:9,w:4,st:['インパクト','親しみ'],pt:['体育会系','天然']},
+  {t:'ウォーカー',r:'うぉーかー',s:8,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ハリス',r:'はりす',s:5,w:4,st:['本格'],pt:['知性系']},
+  {t:'マーティン',r:'まーてぃん',s:8,w:4,st:['インパクト','本格'],pt:['知性系','体育会系']},
+  {t:'ノワール',r:'のわーる',s:7,w:4,st:['本格','インパクト'],pt:['知性系','毒舌']},
+  {t:'ブレア',r:'ぶれあ',s:5,w:4,st:['インパクト','本格'],pt:['毒舌']},
+  {t:'デイビス',r:'でいびす',s:6,w:4,st:['本格'],pt:['知性系']},
+  // かっこいい英単語系
+  {t:'ブレイブ',r:'ぶれいぶ',s:7,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ダーク',r:'だーく',s:5,w:4,st:['インパクト'],pt:['毒舌','知性系']},
+  {t:'スター',r:'すたー',s:5,w:4,st:['インパクト','親しみ'],pt:['体育会系','天然']},
+  {t:'ドーン',r:'どーん',s:5,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ナイツ',r:'ないつ',s:5,w:4,st:['本格','インパクト'],pt:['知性系']},
+  {t:'ビート',r:'びーと',s:5,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ロック',r:'ろっく',s:5,w:4,st:['インパクト'],pt:['体育会系','毒舌']},
+  {t:'フラッシュ',r:'ふらっしゅ',s:8,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'サンダー',r:'さんだー',s:7,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ライトニング',r:'らいとにんぐ',s:11,w:4,st:['インパクト'],pt:['体育会系','知性系']},
+  {t:'シャドウ',r:'しゃどう',s:6,w:4,st:['インパクト','本格'],pt:['毒舌','知性系']},
+  {t:'フェニックス',r:'ふぇにっくす',s:10,w:4,st:['インパクト','本格'],pt:['知性系']},
+  // 食べ物・物系（親しみ・天然寄り）
+  {t:'タコス',r:'たこす',s:5,w:4,st:['親しみ','インパクト'],pt:['天然']},
+  {t:'パフェ',r:'ぱふぇ',s:4,w:4,st:['親しみ'],pt:['天然']},
+  {t:'マロン',r:'まろん',s:5,w:4,st:['親しみ'],pt:['天然']},
+  {t:'カプリ',r:'かぷり',s:5,w:4,st:['親しみ'],pt:['天然']},
+  {t:'ナポリ',r:'なぽり',s:5,w:4,st:['親しみ','インパクト'],pt:['天然','体育会系']},
+  {t:'ビスケット',r:'びすけっと',s:8,w:4,st:['親しみ'],pt:['天然']},
+  {t:'アーモンド',r:'あーもんど',s:8,w:4,st:['親しみ','インパクト'],pt:['天然']},
+  {t:'チョコ',r:'ちょこ',s:4,w:4,st:['親しみ'],pt:['天然']},
+  {t:'クレープ',r:'くれーぷ',s:6,w:4,st:['親しみ'],pt:['天然']},
+  {t:'ミルク',r:'みるく',s:5,w:4,st:['親しみ'],pt:['天然']},
+  // 動物系
+  {t:'パンダ',r:'ぱんだ',s:5,w:4,st:['親しみ','インパクト'],pt:['天然']},
+  {t:'フラミンゴ',r:'ふらみんご',s:8,w:4,st:['インパクト'],pt:['天然','体育会系']},
+  {t:'コアラ',r:'こあら',s:5,w:4,st:['親しみ'],pt:['天然']},
+  {t:'ジャガー',r:'じゃがー',s:6,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'コンドル',r:'こんどる',s:6,w:4,st:['インパクト'],pt:['体育会系','知性系']},
+  {t:'イグアナ',r:'いぐあな',s:6,w:4,st:['インパクト','親しみ'],pt:['天然']},
+  {t:'カピバラ',r:'かぴばら',s:6,w:4,st:['親しみ'],pt:['天然']},
+  {t:'アルパカ',r:'あるぱか',s:6,w:4,st:['親しみ'],pt:['天然']},
+  // 地名・人名外来語系
+  {t:'ダラス',r:'だらす',s:5,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'ロマン',r:'ろまん',s:5,w:4,st:['親しみ','本格'],pt:['知性系','天然']},
+  {t:'シド',r:'しど',s:3,w:4,st:['インパクト'],pt:['毒舌']},
+  {t:'リオ',r:'りお',s:3,w:4,st:['親しみ','インパクト'],pt:['天然','体育会系']},
+  {t:'ベガス',r:'べがす',s:5,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'モナコ',r:'もなこ',s:5,w:4,st:['本格','インパクト'],pt:['知性系']},
+  {t:'バンコク',r:'ばんこく',s:7,w:4,st:['インパクト'],pt:['体育会系','天然']},
+  {t:'マカオ',r:'まかお',s:5,w:4,st:['インパクト','親しみ'],pt:['天然','体育会系']},
+  {t:'ソウル',r:'そうる',s:5,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'マドリード',r:'まどりーど',s:8,w:4,st:['本格','インパクト'],pt:['知性系']},
+  // その他おもしろ系
+  {t:'デラックス',r:'でらっくす',s:8,w:4,st:['インパクト'],pt:['体育会系','毒舌']},
+  {t:'プレミアム',r:'ぷれみあむ',s:8,w:4,st:['本格','インパクト'],pt:['知性系']},
+  {t:'ゴールド',r:'ごーるど',s:6,w:4,st:['インパクト','本格'],pt:['体育会系','知性系']},
+  {t:'シルバー',r:'しるばー',s:6,w:4,st:['本格'],pt:['知性系']},
+  {t:'プラチナ',r:'ぷらちな',s:6,w:4,st:['本格'],pt:['知性系']},
+  {t:'ダイヤモンド',r:'だいやもんど',s:11,w:4,st:['インパクト','本格'],pt:['知性系']},
+  {t:'エース',r:'えーす',s:5,w:4,st:['インパクト'],pt:['体育会系']},
+  {t:'キング',r:'きんぐ',s:5,w:4,st:['インパクト'],pt:['体育会系','知性系']},
+  {t:'クイーン',r:'くいーん',s:6,w:4,st:['インパクト','本格'],pt:['毒舌','知性系']},
+  {t:'ジョーカー',r:'じょーかー',s:7,w:4,st:['インパクト'],pt:['天然','毒舌']},
 ];
 
+// ── 名前プール（漢字:約20語レア, カタカナ:約100語 高確率） ──
 const NAMAE = [
-  {t:'太郎',r:'たろう',s:13,pt:['体育会系','天然']},
-  {t:'恵太',r:'けいた',s:16,pt:['天然']},
-  {t:'光',r:'ひかる',s:6,pt:['知性系','本格']},
-  {t:'恵',r:'めぐみ',s:12,pt:['親しみ','天然']},
-  {t:'勝',r:'まさる',s:12,pt:['体育会系']},
-  {t:'達也',r:'たつや',s:15,pt:['体育会系','インパクト']},
-  {t:'陽',r:'よう',s:12,pt:['天然','親しみ']},
-  {t:'花子',r:'はなこ',s:10,pt:['天然','親しみ']},
-  {t:'正人',r:'まさと',s:7,pt:['知性系','本格']},
-  {t:'翔',r:'しょう',s:12,pt:['体育会系','インパクト']},
-  {t:'明',r:'あきら',s:8,pt:['親しみ','知性系']},
-  {t:'空',r:'そら',s:8,pt:['天然','親しみ']},
-  {t:'勇気',r:'ゆうき',s:11,pt:['体育会系','インパクト']},
-  {t:'美智子',r:'みちこ',s:15,pt:['知性系','本格']},
-  {t:'一郎',r:'いちろう',s:10,pt:['本格','知性系']},
-  {t:'健',r:'けん',s:11,pt:['体育会系','親しみ']},
-  {t:'幸子',r:'さちこ',s:11,pt:['親しみ','天然']},
-  {t:'喜美',r:'きみ',s:21,pt:['天然','親しみ']},
-  {t:'龍也',r:'りゅうや',s:19,pt:['インパクト','体育会系']},
-  {t:'恵理',r:'えり',s:23,pt:['知性系','本格']},
+  // 漢字（レア: weight=1）
+  {t:'太郎',r:'たろう',s:13,w:1,pt:['体育会系','天然']},
+  {t:'恵太',r:'けいた',s:16,w:1,pt:['天然']},
+  {t:'光',r:'ひかる',s:6,w:1,pt:['知性系','本格']},
+  {t:'恵',r:'めぐみ',s:12,w:1,pt:['親しみ','天然']},
+  {t:'勝',r:'まさる',s:12,w:1,pt:['体育会系']},
+  {t:'達也',r:'たつや',s:15,w:1,pt:['体育会系','インパクト']},
+  {t:'陽',r:'よう',s:12,w:1,pt:['天然','親しみ']},
+  {t:'花子',r:'はなこ',s:10,w:1,pt:['天然','親しみ']},
+  {t:'正人',r:'まさと',s:7,w:1,pt:['知性系','本格']},
+  {t:'翔',r:'しょう',s:12,w:1,pt:['体育会系','インパクト']},
+  {t:'明',r:'あきら',s:8,w:1,pt:['親しみ','知性系']},
+  {t:'空',r:'そら',s:8,w:1,pt:['天然','親しみ']},
+  {t:'勇気',r:'ゆうき',s:11,w:1,pt:['体育会系','インパクト']},
+  {t:'美智子',r:'みちこ',s:15,w:1,pt:['知性系','本格']},
+  {t:'一郎',r:'いちろう',s:10,w:1,pt:['本格','知性系']},
+  {t:'健',r:'けん',s:11,w:1,pt:['体育会系','親しみ']},
+  {t:'幸子',r:'さちこ',s:11,w:1,pt:['親しみ','天然']},
+  {t:'喜美',r:'きみ',s:21,w:1,pt:['天然','親しみ']},
+  {t:'龍也',r:'りゅうや',s:19,w:1,pt:['インパクト','体育会系']},
+  {t:'恵理',r:'えり',s:23,w:1,pt:['知性系','本格']},
+
+  // カタカナ（高確率: weight=4）
+  // 外国人名前系
+  {t:'マリア',r:'まりあ',s:5,w:4,pt:['親しみ','天然']},
+  {t:'ソフィア',r:'そふぃあ',s:6,w:4,pt:['本格','知性系']},
+  {t:'エミリー',r:'えみりー',s:6,w:4,pt:['親しみ','天然']},
+  {t:'ローラ',r:'ろーら',s:5,w:4,pt:['親しみ']},
+  {t:'ルーカス',r:'るーかす',s:6,w:4,pt:['インパクト','体育会系']},
+  {t:'フランソワ',r:'ふらんそわ',s:8,w:4,pt:['本格','知性系']},
+  {t:'アントニオ',r:'あんとにお',s:8,w:4,pt:['体育会系','インパクト']},
+  {t:'クロード',r:'くろーど',s:6,w:4,pt:['本格','知性系']},
+  {t:'リコ',r:'りこ',s:3,w:4,pt:['親しみ','天然']},
+  {t:'マックス',r:'まっくす',s:6,w:4,pt:['体育会系','インパクト']},
+  {t:'ニコラス',r:'にこらす',s:7,w:4,pt:['知性系','本格']},
+  {t:'アレックス',r:'あれっくす',s:8,w:4,pt:['インパクト','体育会系']},
+  {t:'レオ',r:'れお',s:3,w:4,pt:['インパクト','親しみ']},
+  {t:'ジュリア',r:'じゅりあ',s:6,w:4,pt:['親しみ','本格']},
+  {t:'ビクター',r:'びくたー',s:6,w:4,pt:['体育会系','インパクト']},
+  {t:'オリビア',r:'おりびあ',s:6,w:4,pt:['親しみ']},
+  {t:'カルロス',r:'かるろす',s:6,w:4,pt:['体育会系']},
+  {t:'イザベル',r:'いざべる',s:6,w:4,pt:['本格','知性系']},
+  {t:'ガブリエル',r:'がぶりえる',s:8,w:4,pt:['インパクト','体育会系']},
+  {t:'エリック',r:'えりっく',s:6,w:4,pt:['インパクト','知性系']},
+  {t:'ルイ',r:'るい',s:3,w:4,pt:['本格','親しみ']},
+  {t:'アリス',r:'ありす',s:5,w:4,pt:['天然','親しみ']},
+  {t:'アイダ',r:'あいだ',s:5,w:4,pt:['親しみ']},
+  {t:'ノア',r:'のあ',s:3,w:4,pt:['天然','親しみ']},
+  {t:'リアム',r:'りあむ',s:4,w:4,pt:['体育会系','インパクト']},
+  // かっこいいカタカナ系
+  {t:'マサル',r:'まさる',s:5,w:4,pt:['体育会系']},
+  {t:'ケン',r:'けん',s:3,w:4,pt:['体育会系','親しみ']},
+  {t:'ハナ',r:'はな',s:3,w:4,pt:['親しみ','天然']},
+  {t:'ゾウ',r:'ぞう',s:3,w:4,pt:['インパクト','天然']},
+  {t:'タロウ',r:'たろう',s:5,w:4,pt:['天然','体育会系']},
+  {t:'ユウ',r:'ゆう',s:3,w:4,pt:['親しみ']},
+  {t:'リン',r:'りん',s:3,w:4,pt:['親しみ','本格']},
+  {t:'コウ',r:'こう',s:3,w:4,pt:['インパクト','知性系']},
+  {t:'ミオ',r:'みお',s:3,w:4,pt:['親しみ']},
+  {t:'カイ',r:'かい',s:3,w:4,pt:['体育会系','インパクト']},
+  {t:'レン',r:'れん',s:3,w:4,pt:['インパクト','本格']},
+  {t:'ソウ',r:'そう',s:3,w:4,pt:['インパクト','体育会系']},
+  {t:'ナオ',r:'なお',s:3,w:4,pt:['親しみ','天然']},
+  {t:'アイ',r:'あい',s:3,w:4,pt:['親しみ']},
+  // ユニーク・おもしろ系
+  {t:'チャンプ',r:'ちゃんぷ',s:5,w:4,pt:['体育会系','インパクト']},
+  {t:'ボンバー',r:'ぼんばー',s:6,w:4,pt:['体育会系','インパクト']},
+  {t:'ゴリラ',r:'ごりら',s:5,w:4,pt:['体育会系','天然']},
+  {t:'タイガー',r:'たいがー',s:6,w:4,pt:['体育会系','インパクト']},
+  {t:'ドラゴン',r:'どらごん',s:6,w:4,pt:['インパクト','体育会系']},
+  {t:'サムライ',r:'さむらい',s:6,w:4,pt:['本格','インパクト']},
+  {t:'ニンジャ',r:'にんじゃ',s:5,w:4,pt:['インパクト']},
+  {t:'ショーグン',r:'しょーぐん',s:7,w:4,pt:['本格','インパクト']},
+  {t:'マジシャン',r:'まじしゃん',s:7,w:4,pt:['知性系','インパクト']},
+  {t:'ピエロ',r:'ぴえろ',s:5,w:4,pt:['天然','インパクト']},
+  {t:'ジョーカー',r:'じょーかー',s:7,w:4,pt:['天然','毒舌']},
+  {t:'バスター',r:'ばすたー',s:6,w:4,pt:['体育会系']},
+  {t:'ロケット',r:'ろけっと',s:6,w:4,pt:['体育会系','インパクト']},
+  {t:'ジェット',r:'じぇっと',s:5,w:4,pt:['インパクト','体育会系']},
+  {t:'コメット',r:'こめっと',s:6,w:4,pt:['インパクト']},
+  // 食べ物・癒し系
+  {t:'プリン',r:'ぷりん',s:5,w:4,pt:['親しみ','天然']},
+  {t:'ムース',r:'むーす',s:5,w:4,pt:['親しみ','天然']},
+  {t:'クリーム',r:'くりーむ',s:6,w:4,pt:['親しみ']},
+  {t:'ワッフル',r:'わっふる',s:6,w:4,pt:['天然','親しみ']},
+  {t:'タピオカ',r:'たぴおか',s:6,w:4,pt:['天然','親しみ']},
+  {t:'ナタデ',r:'なたで',s:5,w:4,pt:['天然']},
+  {t:'チーズ',r:'ちーず',s:5,w:4,pt:['親しみ','天然']},
+  {t:'バター',r:'ばたー',s:5,w:4,pt:['親しみ','天然']},
+  {t:'ハチミツ',r:'はちみつ',s:7,w:4,pt:['親しみ','天然']},
+  {t:'キャラメル',r:'きゃらめる',s:8,w:4,pt:['親しみ']},
+  // 知性・毒舌系
+  {t:'ロジック',r:'ろじっく',s:6,w:4,pt:['知性系']},
+  {t:'カオス',r:'かおす',s:5,w:4,pt:['毒舌','インパクト']},
+  {t:'パラドックス',r:'ぱらどっくす',s:10,w:4,pt:['知性系','毒舌']},
+  {t:'シニカル',r:'しにかる',s:6,w:4,pt:['毒舌','知性系']},
+  {t:'クリティカル',r:'くりてぃかる',s:9,w:4,pt:['毒舌','知性系']},
+  {t:'アイロニー',r:'あいろにー',s:7,w:4,pt:['毒舌','知性系']},
+  {t:'ファンタジー',r:'ふぁんたじー',s:9,w:4,pt:['天然','知性系']},
+  {t:'ミステリー',r:'みすてりー',s:8,w:4,pt:['知性系','本格']},
+  {t:'カリスマ',r:'かりすま',s:6,w:4,pt:['本格','知性系']},
+  {t:'アリーナ',r:'ありーな',s:6,w:4,pt:['インパクト','体育会系']},
+];
+
+// ── 1ワード芸名プール ──
+const ONE_WORD = [
+  {t:'ペットボトル',r:'ぺっとぼとる',s:11},
+  {t:'フライパン',r:'ふらいぱん',s:8},
+  {t:'ダンボール',r:'だんぼーる',s:8},
+  {t:'コンセント',r:'こんせんと',s:8},
+  {t:'マスカット',r:'ますかっと',s:7},
+  {t:'ハンドソープ',r:'はんどそーぷ',s:10},
+  {t:'ガムテープ',r:'がむてーぷ',s:8},
+  {t:'シュークリーム',r:'しゅーくりーむ',s:11},
+  {t:'カーテンレール',r:'かーてんれーる',s:12},
+  {t:'スプーン',r:'すぷーん',s:6},
+  {t:'トランポリン',r:'とらんぽりん',s:10},
+  {t:'バリカン',r:'ばりかん',s:6},
+  {t:'ビニールハウス',r:'びにーるはうす',s:12},
+  {t:'メロンパン',r:'めろんぱん',s:8},
+  {t:'シャンデリア',r:'しゃんでりあ',s:9},
 ];
 
 const KONBI_A = [
@@ -315,6 +516,14 @@ const KONBI_A = [
   {t:'爆笑',st:['インパクト','親しみ']},
   {t:'夢想',st:['親しみ','本格']},
   {t:'快速',st:['インパクト','親しみ']},
+  {t:'無敵',st:['インパクト']},
+  {t:'最強',st:['インパクト','体育会系']},
+  {t:'永遠',st:['本格','親しみ']},
+  {t:'銀河',st:['インパクト','本格']},
+  {t:'幻想',st:['本格']},
+  {t:'爆裂',st:['インパクト']},
+  {t:'超特急',st:['インパクト']},
+  {t:'波乱',st:['インパクト','毒舌']},
 ];
 const KONBI_B = [
   {t:'ブラザーズ',st:['親しみ','インパクト']},
@@ -329,6 +538,14 @@ const KONBI_B = [
   {t:'楽団',st:['親しみ','本格']},
   {t:'堂',st:['本格']},
   {t:'家族',st:['親しみ']},
+  {t:'団地',st:['親しみ','インパクト']},
+  {t:'道場',st:['本格','インパクト']},
+  {t:'学園',st:['親しみ','本格']},
+  {t:'工場',st:['インパクト','親しみ']},
+  {t:'大作戦',st:['インパクト']},
+  {t:'ジャパン',st:['インパクト','本格']},
+  {t:'ワールド',st:['インパクト','本格']},
+  {t:'スタジアム',st:['インパクト']},
 ];
 
 const PERSONALITY_INFO = {
@@ -467,7 +684,7 @@ function renderQuestion(){
   document.getElementById('gameQ').textContent=q.q;
   const wrap=document.getElementById('choicesWrap');
   wrap.innerHTML='';
-  q.c.forEach((ch,i)=>{
+  q.c.forEach((ch)=>{
     const btn=document.createElement('button');
     btn.className='choice-btn';btn.textContent=ch.t;
     btn.onclick=()=>selectChoice(ch.p,q.id,btn);
@@ -485,8 +702,7 @@ function selectChoice(pType,qid,btn){
   document.getElementById('nextBtn').disabled=false;
 }
 function toggleFree(){
-  const w=document.getElementById('freeWrap');
-  w.classList.toggle('show');
+  document.getElementById('freeWrap').classList.toggle('show');
 }
 function submitFree(){
   const val=document.getElementById('freeInput').value.trim();
@@ -513,51 +729,128 @@ function calcPersonality(){
   state.answers.forEach(a=>{if(cnt[a.type]!==undefined)cnt[a.type]++;});
   return Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0][0];
 }
+
+// weightを考慮した抽選
+function weightedPool(arr){
+  const out=[];
+  arr.forEach(item=>{
+    const w=item.w||1;
+    for(let i=0;i<w;i++)out.push(item);
+  });
+  return out;
+}
+
 function isLucky(n){return LUCKY.has(n);}
-function genNames(personality,dt){
+
+// カタカナかどうか
+function isKata(str){return /^[ァ-ヶー]+$/.test(str);}
+
+function genNames(personality){
   const styles=['インパクト','親しみ','本格'];
+  const usedFullnames=new Set();
+
   return styles.map(style=>{
-    let myojiPool=MYOJI.filter(m=>m.st.includes(style));
-    if(!myojiPool.length)myojiPool=MYOJI;
-    const preferred=myojiPool.filter(m=>m.pt.includes(personality));
-    const myojiList=preferred.length?preferred:myojiPool;
+    // 1ワード芸名（10%の確率）
+    const doOneWord=Math.random()<0.10;
+    if(doOneWord){
+      const ow=shuffle([...ONE_WORD])[0];
+      const konbi=genKonbi(style);
+      return{style,oneWord:ow,konbi,jinkaku:ow.s};
+    }
+
+    // 苗字候補: スタイル一致優先、なければ全体
+    let myojiPool=weightedPool(MYOJI.filter(m=>m.st.includes(style)));
+    if(!myojiPool.length)myojiPool=weightedPool(MYOJI);
+    // 名前候補
+    let namaePool=weightedPool(NAMAE);
+
+    // 大吉の画数を探す（カタカナは固定s=6を使う）
     let found=null;
-    for(const myoji of shuffle([...myojiList])){
-      for(const namae of shuffle([...NAMAE])){
-        if(isLucky(myoji.s+namae.s)){found={myoji,namae,jinkaku:myoji.s+namae.s};break;}
+    const shuffledM=shuffle([...myojiPool]);
+    const shuffledN=shuffle([...namaePool]);
+    outer: for(const myoji of shuffledM){
+      for(const namae of shuffledN){
+        const key=myoji.t+'_'+namae.t;
+        if(usedFullnames.has(key))continue;
+        // カタカナ同士の重複を許可、漢字×漢字は同じ字種のみ排除
+        const bothKanji=!isKata(myoji.t)&&!isKata(namae.t);
+        if(bothKanji&&myoji.t===namae.t)continue;
+        if(isLucky(myoji.s+namae.s)){
+          found={myoji,namae,jinkaku:myoji.s+namae.s};
+          usedFullnames.add(key);
+          break outer;
+        }
       }
-      if(found)break;
     }
     if(!found){
-      const m=myojiList[0];const n=NAMAE[0];
+      // 大吉なくても最初のペアで
+      const m=shuffledM[0];const n=shuffledN[0];
       found={myoji:m,namae:n,jinkaku:m.s+n.s};
+      usedFullnames.add(m.t+'_'+n.t);
     }
-    const aPool=shuffle([...KONBI_A.filter(a=>a.st.includes(style))]);
-    const bPool=shuffle([...KONBI_B.filter(b=>b.st.includes(style))]);
-    const kA=aPool[0]||KONBI_A[0];const kB=bPool[0]||KONBI_B[0];
-    return{style,myoji:found.myoji,namae:found.namae,jinkaku:found.jinkaku,konbi:kA.t+kB.t};
+
+    const konbi=genKonbi(style);
+    return{style,myoji:found.myoji,namae:found.namae,jinkaku:found.jinkaku,konbi};
   });
 }
+
+function genKonbi(style){
+  const aPool=shuffle([...KONBI_A.filter(a=>a.st.includes(style))]);
+  const bPool=shuffle([...KONBI_B.filter(b=>b.st.includes(style))]);
+  const kA=aPool[0]||KONBI_A[0];const kB=bPool[0]||KONBI_B[0];
+  return kA.t+kB.t;
+}
+
 function makeReason(myoji,namae,jinkaku,style,personality){
   const sD={'インパクト':'インパクトと個性の強さが','親しみ':'親しみやすさと愛されキャラの素質が','本格':'実力派芸人としての風格が'};
   const pD={'天然':'天然の笑いセンスを引き立て','毒舌':'毒舌の切れ味を磨き上げ','体育会系':'体育会系の勢いを後押しし','知性系':'インテリ的な笑いの構成力を活かし'};
   return `「${myoji.t} ${namae.t}」は人格${jinkaku}画で、大吉の画数です。${sD[style]}この名前に宿り、${pD[personality]||'芸人としての個性を活かし'}ます。`;
 }
+
+function buildSeimeiUrl(fullname){
+  return '/seimei?name='+encodeURIComponent(fullname);
+}
+
 function showResult(){
   document.getElementById('loadingOverlay').classList.add('show');
   setTimeout(()=>{
-    const dt=getDate();const personality=calcPersonality();const names=genNames(personality,dt);
+    const personality=calcPersonality();
+    const names=genNames(personality);
     const pCard=document.getElementById('personalityCard');
     if(state.fromGame){
       const pi=PERSONALITY_INFO[personality];
       pCard.innerHTML=`<div style="font-size:2rem;margin-bottom:.3rem">${pi.icon}</div><div class="personality-type">${pi.label}</div><div class="personality-desc">${pi.desc}</div>`;
       pCard.style.display='block';
     }else{pCard.style.display='none';}
+
     const cardsEl=document.getElementById('nameCards');
     cardsEl.innerHTML=names.map(n=>{
       const si=STYLE_INFO[n.style];
+      if(n.oneWord){
+        // 1ワード芸名パターン
+        const seimeiUrl=buildSeimeiUrl(n.oneWord.t);
+        return `<div class="name-card">
+          <div class="name-card-header">
+            <span class="name-card-badge ${si.badge}">${si.label}</span>
+            <span class="name-card-title">${si.desc}</span>
+          </div>
+          <div class="name-card-body">
+            <div class="fullname">${n.oneWord.t}</div>
+            <div class="fullname-read">（${n.oneWord.r}）</div>
+            <div class="konbi-section">
+              <div class="konbi-label">コンビ・グループ名として</div>
+              <div class="konbi-name">「${n.konbi}」</div>
+              <a href="${seimeiUrl}" class="seimei-btn">✍️ この芸名で姓名判断 →</a>
+              <span class="kata-note">※カタカナ芸名の画数は参考値です</span>
+            </div>
+          </div>
+        </div>`;
+      }
       const lucky=isLucky(n.jinkaku)?`人格${n.jinkaku}画（大吉）`:`人格${n.jinkaku}画`;
       const reason=state.fromGame?makeReason(n.myoji,n.namae,n.jinkaku,n.style,personality):'';
+      const fullname=n.myoji.t+' '+n.namae.t;
+      const seimeiUrl=buildSeimeiUrl(fullname);
+      const hasKata=isKata(n.myoji.t)||isKata(n.namae.t);
       return `<div class="name-card">
         <div class="name-card-header">
           <span class="name-card-badge ${si.badge}">${si.label}</span>
@@ -568,6 +861,8 @@ function showResult(){
           <div class="fullname-read">（${n.myoji.r} ${n.namae.r}）</div>
           <div class="jinkaku-badge">${lucky}</div>
           ${reason?`<div class="name-reason">${reason}</div>`:''}
+          <a href="${seimeiUrl}" class="seimei-btn">✍️ この芸名で姓名判断 →</a>
+          ${hasKata?'<span class="kata-note">※カタカナ部分の画数は参考値です</span>':''}
           <div class="konbi-section">
             <div class="konbi-label">コンビ・グループ名として</div>
             <div class="konbi-name">「${n.konbi}」</div>
@@ -575,10 +870,12 @@ function showResult(){
         </div>
       </div>`;
     }).join('');
+
     document.getElementById('gameSection').style.display='none';
     document.getElementById('formSection').style.display='none';
     document.getElementById('resultSection').style.display='block';
     document.getElementById('loadingOverlay').classList.remove('show');
+    window.scrollTo({top:0,behavior:'smooth'});
   },900);
 }
 function resetAll(){
