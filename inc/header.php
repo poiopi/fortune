@@ -39,6 +39,8 @@ function _navlink(string $label, string $href, string $key, string $current): st
       <?= _navlink('相性診断',         '/aisho',      'aisho',      $_p) ?>
       <?= _navlink('前世診断',         '/zense',      'zense',      $_p) ?>
       <?= _navlink('守護霊診断',       '/guardian',   'guardian',   $_p) ?>
+      <?= _navlink('姓名判断',         '/seimei',     'seimei',     $_p) ?>
+      <?= _navlink('芸名診断',         '/geimei',     'geimei',     $_p) ?>
     </div>
   </div>
 </header>

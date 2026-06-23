@@ -21,7 +21,6 @@ require_once __DIR__.'/nav-cards.php';
   <?= $_p==='top' ? '占いポータル トップ' : '<a href="/">占いポータル トップ</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='tarot' ? 'タロット占い' : '<a href="/tarot">タロット占い</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='shichu' ? '四柱推命' : '<a href="/shichu">四柱推命</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='geimei' ? '芸名診断' : '<a href="/geimei">芸名診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='calendar' ? '開運カレンダー' : '<a href="/calendar">開運カレンダー</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='mbti' ? 'MBTI×星座診断' : '<a href="/mbti">MBTI×星座診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='numerology' ? '数秘術診断' : '<a href="/numerology">数秘術診断</a>' ?> &nbsp;/&nbsp;
@@ -31,6 +30,7 @@ require_once __DIR__.'/nav-cards.php';
   <?= $_p==='zense' ? '前世診断' : '<a href="/zense">前世診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='guardian' ? '守護霊診断' : '<a href="/guardian">守護霊診断</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='seimei' ? '姓名判断' : '<a href="/seimei">姓名判断</a>' ?> &nbsp;/&nbsp;
+  <?= $_p==='geimei' ? '芸名診断' : '<a href="/geimei">芸名診断</a>' ?> &nbsp;/&nbsp;
   <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
   <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
   <a href="/contact">お問い合わせ</a><br>
@@ -160,7 +160,6 @@ require_once __DIR__.'/nav-cards.php';
       'top'        => ['icon'=>'🏠', 'name'=>'トップ',              'url'=>'/'],
       'tarot'      => ['icon'=>'🃏', 'name'=>'タロット占い',        'url'=>'/tarot'],
       'shichu'     => ['icon'=>'🔯', 'name'=>'四柱推命',            'url'=>'/shichu'],
-      'geimei'     => ['icon'=>'🎭', 'name'=>'芸名診断',            'url'=>'/geimei'],
       'calendar'   => ['icon'=>'📅', 'name'=>'開運カレンダー',      'url'=>'/calendar'],
       'mbti'       => ['icon'=>'🧠', 'name'=>'MBTI×星座診断',      'url'=>'/mbti'],
       'numerology' => ['icon'=>'🔢', 'name'=>'数秘術診断',          'url'=>'/numerology'],
@@ -170,6 +169,7 @@ require_once __DIR__.'/nav-cards.php';
       'zense'      => ['icon'=>'🌀', 'name'=>'前世診断',            'url'=>'/zense'],
       'guardian'   => ['icon'=>'👻', 'name'=>'守護霊診断',          'url'=>'/guardian'],
       'seimei'     => ['icon'=>'✍️', 'name'=>'姓名判断',            'url'=>'/seimei'],
+      'geimei'     => ['icon'=>'🎭', 'name'=>'芸名診断',            'url'=>'/geimei'],
     ];
     echo '<div class="fmenu-section-label">占い一覧</div>';
     foreach($fmenu_pages as $key=>$pg):
