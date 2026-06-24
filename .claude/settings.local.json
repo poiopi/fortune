@@ -36,7 +36,12 @@
       "Bash(sed -i 's|<li><a href=\"/shichu\">三星統合鑑定</a></li>|<li><a href=\"/\">三星統合鑑定</a></li>|g' \"C:/Users/sende/fortune/inc/footer.php\")",
       "Bash(sed -i 's|<li><a href=\"/shichu\">三星統合鑑定</a></li>|<li><a href=\"/\">三星統合鑑定</a></li>|g' \"C:/Users/sende/fortune/test.life-fun.net/inc/footer.php\")",
       "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\seiza\" -Force)",
-      "Bash(php -r ' *)"
+      "Bash(php -r ' *)",
+      "Bash(git status *)",
+      "Bash(grep -v \"^$\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
