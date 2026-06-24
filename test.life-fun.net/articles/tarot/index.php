@@ -127,7 +127,7 @@
   /* ── FOOTER ── */
   .art-footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 1.2rem 1.5rem;margin-top:3rem}
   .art-footer-inner{max-width:780px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
-  .aft-heading{font-size:.68rem;font-weight:500;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;font-family:var(--ff-mono)}
+  .aft-heading{font-size:.68rem;font-weight:500;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.6rem;font-family:var(--ff-mono);padding-bottom:.5rem;border-bottom:1px solid var(--border)}
   .art-footer ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
   .art-footer ul a{font-size:.8rem;color:var(--muted);text-decoration:none;transition:color .2s}
   .art-footer ul a:hover{color:var(--accent)}

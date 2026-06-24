@@ -90,8 +90,19 @@
   }
   .btn-fortune:hover{border-color:var(--accent);background:rgba(124,77,206,.05)}
 
+  /* ── POPULAR PICKS ── */
+  .popular-picks{padding:1.5rem 0;border-bottom:1px solid var(--border)}
+  .popular-picks-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin-bottom:.85rem}
+  .popular-picks-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem}
+  .pick-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:.9rem;display:flex;flex-direction:column;gap:.3rem;text-decoration:none;transition:border-color .2s,transform .15s}
+  .pick-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
+  .pick-icon{font-size:1.4rem;line-height:1}
+  .pick-name{font-family:var(--ff-serif);font-size:.9rem;font-weight:700;color:var(--text)}
+  .pick-desc{font-size:.72rem;color:var(--muted)}
+  .pick-btn{font-size:.72rem;color:var(--accent);margin-top:.2rem}
+
   /* ── HUB INTRO ── */
-  .hub-intro{padding:1.5rem 0 0;border-bottom:1px solid var(--border);padding-bottom:1.5rem}
+  .hub-intro{padding:1.5rem 0;border-bottom:1px solid var(--border)}
   .hub-intro p{font-size:.88rem;color:#444;line-height:1.9;margin-bottom:.75rem}
   .hub-intro p:last-child{margin-bottom:0}
 
@@ -111,7 +122,7 @@
   /* ── FOOTER ── */
   .art-footer{background:#fff;border-top:1px solid var(--border);padding:2.5rem 1.2rem 1.5rem;margin-top:3rem}
   .art-footer-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
-  .aft-heading{font-size:.68rem;font-weight:500;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;font-family:var(--ff-mono)}
+  .aft-heading{font-size:.68rem;font-weight:500;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.6rem;font-family:var(--ff-mono);padding-bottom:.5rem;border-bottom:1px solid var(--border)}
   .art-footer ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
   .art-footer ul a{font-size:.8rem;color:var(--muted);text-decoration:none;transition:color .2s}
   .art-footer ul a:hover{color:var(--accent)}
@@ -149,13 +160,37 @@
   <div class="hub-hero">
     <span class="hub-label">ARTICLES · 占い解説ガイド</span>
     <h1>無料占いをもっと楽しむための解説ガイド</h1>
-    <p>タロット・四柱推命・九星気学・MBTIなど<br>各占術の意味や歴史、活用方法を解説します。</p>
+    <p>タロット・四柱推命・MBTIなど<br>人気占術の意味や活用方法を解説します。</p>
   </div>
 
-  <div class="hub-intro">
-    <p>占いには、タロット占い・四柱推命・九星気学・数秘術・姓名判断・MBTI診断など、様々な種類があります。それぞれ異なる視点から「あなた」を映し出し、活用場面も異なります。</p>
-    <p>たとえばタロット占いは「今この瞬間の状況」を直感的に読み取るのに向いており、四柱推命は「生まれ持った性質と人生の流れ」を長期的に分析するのに優れています。九星気学は「今年・来年の運気の周期」を把握したいときに重宝され、数秘術は「人生のテーマと才能」を掘り下げます。</p>
-    <p>このページでは、各占術の基礎知識・歴史・読み方・活用シーンをカテゴリ別にまとめています。気になる占術の解説を読んでから占うと、結果がより深く理解できるようになります。</p>
+  <div class="popular-picks">
+    <p class="popular-picks-label">人気コンテンツ</p>
+    <div class="popular-picks-grid">
+      <a href="/tarot" class="pick-card">
+        <span class="pick-icon">🔮</span>
+        <span class="pick-name">タロット占い</span>
+        <span class="pick-desc">22枚の大アルカナ</span>
+        <span class="pick-btn">今すぐ占う →</span>
+      </a>
+      <a href="/shichu" class="pick-card">
+        <span class="pick-icon">🌙</span>
+        <span class="pick-name">四柱推命</span>
+        <span class="pick-desc">命式・大運・年運</span>
+        <span class="pick-btn">今すぐ占う →</span>
+      </a>
+      <a href="/mbti" class="pick-card">
+        <span class="pick-icon">🧠</span>
+        <span class="pick-name">MBTI×星座診断</span>
+        <span class="pick-desc">16タイプ性格分析</span>
+        <span class="pick-btn">今すぐ占う →</span>
+      </a>
+      <a href="/calendar" class="pick-card">
+        <span class="pick-icon">📅</span>
+        <span class="pick-name">開運カレンダー</span>
+        <span class="pick-desc">今日の吉方位・運勢</span>
+        <span class="pick-btn">今すぐ見る →</span>
+      </a>
+    </div>
   </div>
 
   <?php
@@ -215,6 +250,12 @@
     </div>
   </div>
   <?php endforeach; ?>
+
+  <div class="hub-intro">
+    <p>占いには、タロット占い・四柱推命・九星気学・数秘術・姓名判断・MBTI診断など、様々な種類があります。それぞれ異なる視点から「あなた」を映し出し、活用場面も異なります。</p>
+    <p>たとえばタロット占いは「今この瞬間の状況」を直感的に読み取るのに向いており、四柱推命は「生まれ持った性質と人生の流れ」を長期的に分析するのに優れています。九星気学は「今年・来年の運気の周期」を把握したいときに重宝され、数秘術は「人生のテーマと才能」を掘り下げます。</p>
+    <p>このページでは、各占術の基礎知識・歴史・読み方・活用シーンをカテゴリ別にまとめています。気になる占術の解説を読んでから占うと、結果がより深く理解できるようになります。</p>
+  </div>
 
   <div class="popular-section">
     <p class="popular-title">人気の占い</p>

@@ -50,7 +50,7 @@ require_once __DIR__.'/nav-cards.php';
 <style>
 .site-footer{border-top:1px solid rgba(160,130,220,.18);padding:2.5rem 1.2rem 1.5rem;margin-top:2rem}
 .site-footer-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
-.sf-heading{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;color:#c9a84c;text-transform:uppercase;margin-bottom:.75rem}
+.sf-heading{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;color:#c9a84c;text-transform:uppercase;margin-bottom:.6rem;padding-bottom:.5rem;border-bottom:1px solid rgba(160,130,220,.18)}
 .site-footer ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
 .site-footer ul a{font-size:.8rem;color:#8a7db5;text-decoration:none;transition:color .2s}
 .site-footer ul a:hover{color:#c4a8f5}
