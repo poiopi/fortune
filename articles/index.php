@@ -203,6 +203,7 @@
         ['icon'=>'⭐','title'=>'九星気学','desc'=>'九つの星で人の性質と運気の周期を読む、日本古来の占術。','url_article'=>'/articles/kyusei/','url_tool'=>'/kyusei','ready'=>true],
         ['icon'=>'🔢','title'=>'数秘術','desc'=>'誕生日と名前から導き出す「運命数」で、人生のテーマを知る。','url_article'=>'/articles/numerology/','url_tool'=>'/numerology','ready'=>true],
         ['icon'=>'✍️','title'=>'姓名判断','desc'=>'漢字の画数から名前の吉凶・運勢を読み解く日本の伝統占術。','url_article'=>'/articles/seimei/','url_tool'=>'/seimei','ready'=>true],
+        ['icon'=>'☯️','title'=>'算命学','desc'=>'生年月日から元命・主星・従星を算出し、才能・性格・仕事適性を読み解く東洋占術。','url_article'=>'/articles/sanmei/','url_tool'=>'/sanmei','ready'=>true],
       ]
     ],
     [
@@ -306,6 +307,7 @@
         <li><a href="/articles/numerology/">数秘術とは</a></li>
         <li><a href="/articles/mbti/">MBTI診断とは</a></li>
         <li><a href="/articles/seimei/">姓名判断とは</a></li>
+        <li><a href="/articles/sanmei/">算命学とは</a></li>
       </ul>
     </div>
     <div class="aft-col">
