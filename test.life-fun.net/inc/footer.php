@@ -34,6 +34,7 @@ require_once __DIR__.'/nav-cards.php';
       <ul>
         <li><a href="/articles/">占い解説ガイド</a></li>
         <li><a href="/articles/tarot/">タロット占いとは</a></li>
+        <li><a href="/articles/shichu/">四柱推命とは</a></li>
       </ul>
     </div>
     <div class="sf-col">
