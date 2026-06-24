@@ -720,7 +720,6 @@ footer a:hover{color:var(--gold)}
     <!-- シェア -->
     <?php require __DIR__.'/inc/share-btns.php'; ?>
 
-        <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
 <a href="/articles/aisho/" class="article-link-box">
   <span class="article-link-icon">📖</span>
   <span class="article-link-body">
@@ -732,6 +731,9 @@ footer a:hover{color:var(--gold)}
         <div class="nav-cards-section" style="padding:2rem 0 0">
           <h3>✦ 次はこれを試してみては？ ✦</h3>
           <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'aisho'); ?>
+        </div>
+        <div style="text-align:center;margin:2rem 0">
+          <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
         </div>
       </div>
       <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});</script>

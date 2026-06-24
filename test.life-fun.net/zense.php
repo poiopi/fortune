@@ -219,7 +219,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 
     <div class="share-area">
       <?php require __DIR__.'/inc/share-btns.php'; ?>
-      <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
 <a href="/articles/zense/" class="article-link-box" style="margin-top:1rem">
   <span class="article-link-icon">📖</span>
   <span class="article-link-body">
@@ -231,6 +230,9 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
       <div class="nav-cards-section" style="padding:2rem 0 0">
         <h3>✦ 次はこれを試してみては？ ✦</h3>
         <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'zense'); ?>
+      </div>
+      <div class="retry-wrap" style="text-align:center;margin:2rem 0">
+        <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
       </div>
     </div>
   </div>
