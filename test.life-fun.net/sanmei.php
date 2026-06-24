@@ -616,18 +616,21 @@ function _calcAndRender(year, month, day) {
     <div class="daiyun-theme-note">算命学では10年ごとに運気のテーマが変わります。現在は「${DAIYUN_THEMES[themeIndex]}」の時期にあたります。</div>
   `;
 
-  // result_code
+  // URLにresult_codeを埋め込む
+  history.pushState(null, '', '/sanmei?r=' + resultCode);
+
+  // result_code表示（小さくラベルのみ）
   document.getElementById('resultCode').textContent = resultCode;
 
-  // シェアボタン
+  // シェアボタン（URLはlocation.hrefを使う → result_code入りURLをシェア）
   const shareText = encodeURIComponent(`私は「${nickname}」タイプでした #算命学診断`);
-  const shareUrl = encodeURIComponent('https://life-fun.net/sanmei');
+  const shareUrl = encodeURIComponent(location.href);
   document.getElementById('shareWrap').innerHTML = `
     <div class="share-label">鑑定結果をシェアする</div>
     <div class="share-btns">
       <a href="https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-x">𝕏 シェア</a>
       <a href="https://social-plugins.line.me/lineit/share?url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-line">LINE</a>
-      <button onclick="copyResultCode()" class="share-btn share-copy">🔗 コピー</button>
+      <button onclick="copyPageUrl()" class="share-btn share-copy" id="copyUrlBtn">🔗 URLをコピー</button>
     </div>
   `;
 
@@ -637,21 +640,94 @@ function _calcAndRender(year, month, day) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function copyResultCode() {
-  const code = document.getElementById('resultCode').textContent;
-  navigator.clipboard.writeText(code).then(() => {
-    const el = document.getElementById('resultCode');
-    const orig = el.textContent;
-    el.textContent = '✓ コピーしました！';
-    setTimeout(() => { el.textContent = orig; }, 2000);
+function copyPageUrl() {
+  navigator.clipboard.writeText(location.href).then(() => {
+    const btn = document.getElementById('copyUrlBtn');
+    const orig = btn.textContent;
+    btn.textContent = '✓ コピーしました！';
+    setTimeout(() => { btn.textContent = orig; }, 2000);
   });
 }
 
 function resetForm() {
+  history.pushState(null, '', '/sanmei');
   document.getElementById('formArea').style.display = 'block';
   document.getElementById('resultSection').style.display = 'none';
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// ページ読み込み時に?r=パラメータがあれば自動で結果表示
+(function() {
+  const params = new URLSearchParams(location.search);
+  const r = params.get('r');
+  if (!r) return;
+  // GM00-SY00-TJ00-W00000 形式をパース
+  const m = r.match(/^GM(\d{2})-SY(\d{2})-TJ(\d{2})-W(\d{5})$/);
+  if (!m) return;
+  const gmIdx = parseInt(m[1]);
+  const syIdx = parseInt(m[2]);
+  const tjIdx = parseInt(m[3]);
+  const wStr  = m[4];
+  if (gmIdx > 9 || syIdx > 9 || tjIdx > 11) return;
+  const elemCounts = wStr.split('').map(Number);
+
+  const genme  = GENME[gmIdx];
+  const shusei = SHUSEI[syIdx];
+  const jusei  = JUSEI[tjIdx];
+  const nickname = genme.prefix + shusei.suffix;
+
+  const currentYear = new Date().getFullYear();
+  // 大運テーマはresult_codeから生年が取れないためデフォルト表示
+  const themeIndex = 0;
+  const periodLabel = '現在の大運';
+
+  const strengthArr = STRENGTHS[gmIdx];
+  const selectedStrengths = [strengthArr[0], strengthArr[2], strengthArr[4]];
+  const weaknessArr = WEAKNESSES[gmIdx];
+  const selectedWeaknesses = [weaknessArr[0], weaknessArr[1]];
+
+  // タイプカード
+  document.getElementById('typeCard').innerHTML = `
+    <div class="type-badge">算命学 三星鑑定</div>
+    <div class="type-stars">${genme.name}（元命）× ${shusei.name}（主星）× ${jusei.name}（従星）</div>
+    <div class="type-nickname">${nickname}</div>
+    <div class="type-label">エネルギー：${jusei.energy}　／　五行：${genme.element}（${genme.yin?'陰':'陽'}）</div>
+  `;
+
+  // 五行グラフ
+  const maxCount = Math.max(...elemCounts, 1);
+  const gogyouNames = ['木','火','土','金','水'];
+  const gogyouClasses = ['wood','fire','earth','metal','water'];
+  let gogyouHTML = `<div class="gogyou-title">五行バランス</div>`;
+  elemCounts.forEach((cnt, i) => {
+    const pct = Math.round((cnt / maxCount) * 100);
+    gogyouHTML += `<div class="gogyou-row"><div class="gogyou-label ${gogyouClasses[i]}">${gogyouNames[i]}</div><div class="gogyou-bar-wrap gogyou-${gogyouClasses[i]}"><div class="gogyou-bar" style="width:${pct}%"></div></div><div class="gogyou-count">${cnt}</div></div>`;
+  });
+  document.getElementById('gogyouSection').innerHTML = gogyouHTML;
+
+  document.getElementById('genmeBlock').innerHTML = `<div class="result-block-title">☯ あなたの本質 ─ 元命「${genme.name}」</div><div class="result-block-body">${GENME_DESC[gmIdx]}</div>`;
+  document.getElementById('strengthBlock').innerHTML = `<div class="result-block-title">◎ あなたの強み</div><ul class="strength-list">${selectedStrengths.map(s=>`<li>${s}</li>`).join('')}</ul>`;
+  document.getElementById('weaknessBlock').innerHTML = `<div class="result-block-title">△ 気をつけたい傾向</div><ul class="weakness-list">${selectedWeaknesses.map(w=>`<li>${w}</li>`).join('')}</ul>`;
+  document.getElementById('loveBlock').innerHTML = `<div class="result-block-title">❤ 恋愛スタイル</div><div class="result-block-body">${LOVE_STYLE[gmIdx]}</div>`;
+  document.getElementById('jobsBlock').innerHTML = `<div class="result-block-title">💼 向いている仕事</div><div class="jobs-grid">${JOBS[gmIdx].map(j=>`<span class="job-tag">${j}</span>`).join('')}</div>`;
+  document.getElementById('relationsBlock').innerHTML = `<div class="result-block-title">👥 人間関係の傾向</div><div class="result-block-body">${RELATIONS[gmIdx]}</div>`;
+  document.getElementById('daiyunBlock').innerHTML = `<div class="daiyun-theme-label">✦ 現在の大運テーマ</div><div class="daiyun-theme-value">${DAIYUN_THEMES[themeIndex]}</div>`;
+  document.getElementById('resultCode').textContent = r;
+
+  const shareUrl = encodeURIComponent(location.href);
+  const shareText2 = encodeURIComponent(`私は「${nickname}」タイプでした #算命学診断`);
+  document.getElementById('shareWrap').innerHTML = `
+    <div class="share-label">鑑定結果をシェアする</div>
+    <div class="share-btns">
+      <a href="https://twitter.com/intent/tweet?text=${shareText2}&url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-x">𝕏 シェア</a>
+      <a href="https://social-plugins.line.me/lineit/share?url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-line">LINE</a>
+      <button onclick="copyPageUrl()" class="share-btn share-copy" id="copyUrlBtn">🔗 URLをコピー</button>
+    </div>
+  `;
+
+  document.getElementById('formArea').style.display = 'none';
+  document.getElementById('resultSection').style.display = 'block';
+})();
 </script>
 </body>
 </html>
