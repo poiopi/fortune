@@ -250,8 +250,8 @@ footer a:hover{color:var(--gold)}
 
     <!-- result_code -->
     <div class="result-code-wrap">
-      <div class="result-code" id="resultCode" onclick="copyResultCode()"></div>
-      <div class="result-code-tip">クリックでコピー</div>
+      <div class="result-code" id="resultCode" onclick="copyPageUrl()"></div>
+      <div class="result-code-tip">クリックでURLをコピー</div>
     </div>
 
     <!-- シェア -->
