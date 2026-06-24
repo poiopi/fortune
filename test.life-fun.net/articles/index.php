@@ -217,6 +217,7 @@
       'label' => '✦ 開運・エンタメ',
       'items' => [
         ['icon'=>'📅','title'=>'開運カレンダー','desc'=>'毎日の吉方位・ラッキーカラー・運気の波を一覧で確認。','url_article'=>'/articles/calendar/','url_tool'=>'/calendar','ready'=>true],
+        ['icon'=>'👻','title'=>'守護霊診断','desc'=>'守護霊・守護獣の種類と役割、あなたを守る存在を診断。','url_article'=>'/articles/guardian/','url_tool'=>'/guardian','ready'=>true],
         ['icon'=>'⚔️','title'=>'RPG占い','desc'=>'あなたの運命をRPGの勇者クエスト形式で読み解くエンタメ占い。','url_article'=>'/articles/rpg/','url_tool'=>'/rpg','ready'=>false],
         ['icon'=>'🎭','title'=>'芸名診断','desc'=>'大喜利10問で性格タイプを判定し、最強の芸名を命名する診断。','url_article'=>'/articles/geimei/','url_tool'=>'/geimei','ready'=>false],
       ]
@@ -304,6 +305,9 @@
         <li><a href="/articles/tarot/">タロット占いとは</a></li>
         <li><a href="/articles/shichu/">四柱推命とは</a></li>
         <li><a href="/articles/kyusei/">九星気学とは</a></li>
+        <li><a href="/articles/numerology/">数秘術とは</a></li>
+        <li><a href="/articles/mbti/">MBTI診断とは</a></li>
+        <li><a href="/articles/seimei/">姓名判断とは</a></li>
       </ul>
     </div>
     <div class="aft-col">
