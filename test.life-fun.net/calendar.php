@@ -320,6 +320,14 @@ header{
 .day-rokuyo.senbu{background:rgba(138,125,181,.12);color:#8a7db5}
 .day-rokuyo.butsumetsu{background:rgba(107,100,86,.12);color:#6b6456}
 
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
+
 /* ── フッター ── */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
@@ -567,6 +575,14 @@ body{top:0!important}
   <!-- AdSense枠 -->
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
 
+<a href="/articles/calendar/" class="article-link-box" style="margin:1rem 0">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>開運カレンダーとは？</strong>
+    <small>吉方位・ラッキーカラー・一粒万倍日の意味を解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
   <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'calendar'); ?></div>
 
 </div>

@@ -306,6 +306,13 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 
 .retry-btn{width:100%;font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.1em;background:none;border:1px solid var(--border2);border-radius:8px;padding:.65rem;color:var(--muted);cursor:pointer;margin-top:.5rem;transition:color .2s,border-color .2s;text-decoration:none;display:block;text-align:center}
 .retry-btn:hover{color:var(--text);border-color:var(--violet)}
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 
 /* ── AdSense ── */
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
@@ -490,6 +497,14 @@ body{top:0!important}
 
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <a href="/numerology.php" class="retry-btn">もう一度診断する</a>
+<a href="/articles/numerology/" class="article-link-box">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>数秘術とは？</strong>
+    <small>運命数の計算方法と1〜9の意味を解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
     <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
     <div class="nav-cards-section" style="padding:2rem 0 0">
       <h3>✦ 次はこれを試してみては？ ✦</h3>

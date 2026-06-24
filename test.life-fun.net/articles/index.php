@@ -201,22 +201,22 @@
         ['icon'=>'🔮','title'=>'タロット占い','desc'=>'22枚の大アルカナの意味、歴史、正位置・逆位置の読み方を解説。','url_article'=>'/articles/tarot/','url_tool'=>'/tarot','ready'=>true],
         ['icon'=>'🌙','title'=>'四柱推命','desc'=>'生まれた年月日時から命式を算出し、大運・年運の流れを読む本格占術。','url_article'=>'/articles/shichu/','url_tool'=>'/shichu','ready'=>true],
         ['icon'=>'⭐','title'=>'九星気学','desc'=>'九つの星で人の性質と運気の周期を読む、日本古来の占術。','url_article'=>'/articles/kyusei/','url_tool'=>'/kyusei','ready'=>true],
-        ['icon'=>'🔢','title'=>'数秘術','desc'=>'誕生日と名前から導き出す「運命数」で、人生のテーマを知る。','url_article'=>'/articles/numerology/','url_tool'=>'/numerology','ready'=>false],
-        ['icon'=>'✍️','title'=>'姓名判断','desc'=>'漢字の画数から名前の吉凶・運勢を読み解く日本の伝統占術。','url_article'=>'/articles/seimei/','url_tool'=>'/seimei','ready'=>false],
+        ['icon'=>'🔢','title'=>'数秘術','desc'=>'誕生日と名前から導き出す「運命数」で、人生のテーマを知る。','url_article'=>'/articles/numerology/','url_tool'=>'/numerology','ready'=>true],
+        ['icon'=>'✍️','title'=>'姓名判断','desc'=>'漢字の画数から名前の吉凶・運勢を読み解く日本の伝統占術。','url_article'=>'/articles/seimei/','url_tool'=>'/seimei','ready'=>true],
       ]
     ],
     [
       'label' => '✦ 性格・相性を知る',
       'items' => [
-        ['icon'=>'🧠','title'=>'MBTI×星座診断','desc'=>'16タイプの性格タイプと星座を掛け合わせた、詳細な性格分析。','url_article'=>'/articles/mbti/','url_tool'=>'/mbti','ready'=>false],
-        ['icon'=>'💞','title'=>'相性診断','desc'=>'誕生日・血液型・星座から二人の相性を多角的に分析。','url_article'=>'/articles/aisho/','url_tool'=>'/aisho','ready'=>false],
-        ['icon'=>'🌀','title'=>'前世診断','desc'=>'あなたの前世の姿と、今世に引き継いだ魂の傾向を占う。','url_article'=>'/articles/zense/','url_tool'=>'/zense','ready'=>false],
+        ['icon'=>'🧠','title'=>'MBTI×星座診断','desc'=>'16タイプの性格タイプと星座を掛け合わせた、詳細な性格分析。','url_article'=>'/articles/mbti/','url_tool'=>'/mbti','ready'=>true],
+        ['icon'=>'💞','title'=>'相性診断','desc'=>'誕生日・血液型・星座から二人の相性を多角的に分析。','url_article'=>'/articles/aisho/','url_tool'=>'/aisho','ready'=>true],
+        ['icon'=>'🌀','title'=>'前世診断','desc'=>'あなたの前世の姿と、今世に引き継いだ魂の傾向を占う。','url_article'=>'/articles/zense/','url_tool'=>'/zense','ready'=>true],
       ]
     ],
     [
       'label' => '✦ 開運・エンタメ',
       'items' => [
-        ['icon'=>'📅','title'=>'開運カレンダー','desc'=>'毎日の吉方位・ラッキーカラー・運気の波を一覧で確認。','url_article'=>'/articles/calendar/','url_tool'=>'/calendar','ready'=>false],
+        ['icon'=>'📅','title'=>'開運カレンダー','desc'=>'毎日の吉方位・ラッキーカラー・運気の波を一覧で確認。','url_article'=>'/articles/calendar/','url_tool'=>'/calendar','ready'=>true],
         ['icon'=>'⚔️','title'=>'RPG占い','desc'=>'あなたの運命をRPGの勇者クエスト形式で読み解くエンタメ占い。','url_article'=>'/articles/rpg/','url_tool'=>'/rpg','ready'=>false],
         ['icon'=>'🎭','title'=>'芸名診断','desc'=>'大喜利10問で性格タイプを判定し、最強の芸名を命名する診断。','url_article'=>'/articles/geimei/','url_tool'=>'/geimei','ready'=>false],
       ]

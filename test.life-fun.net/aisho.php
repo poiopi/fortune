@@ -491,6 +491,13 @@ select.form-input option{background:#1e1738;color:var(--text)}
 .affiliate-btn:hover{opacity:.85}
 .retry-btn{width:100%;background:none;border:1px solid var(--border2);border-radius:8px;padding:.65rem;font-family:var(--ff-mono);font-size:.75rem;color:var(--muted);cursor:pointer;margin-top:.5rem;transition:color .2s,border-color .2s;text-decoration:none;display:block;text-align:center}
 .retry-btn:hover{color:var(--text);border-color:var(--violet)}
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -714,6 +721,14 @@ footer a:hover{color:var(--gold)}
     <?php require __DIR__.'/inc/share-btns.php'; ?>
 
         <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
+<a href="/articles/aisho/" class="article-link-box">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>相性診断とは？</strong>
+    <small>誕生日・血液型・星座で相性を占う仕組みを解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
         <div class="nav-cards-section" style="padding:2rem 0 0">
           <h3>✦ 次はこれを試してみては？ ✦</h3>
           <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'aisho'); ?>
