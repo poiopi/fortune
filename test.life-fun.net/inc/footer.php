@@ -246,6 +246,14 @@ document.addEventListener('click',function(e){
   }
 });
 
+// リザルト表示＆スクロール（リザルトがある全ページで使用）
+function scrollToResult(id){
+  var el=document.getElementById(id);
+  if(!el)return;
+  el.style.display='block';
+  setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);
+}
+
 // シェアボタン
 function openShare(type){
   var u=encodeURIComponent(location.href);

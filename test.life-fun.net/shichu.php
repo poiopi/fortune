@@ -903,8 +903,7 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
 
   // ── 表示 ──
   document.getElementById('formArea').style.display = 'none';
-  document.getElementById('resultSection').style.display = 'block';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollToResult('resultSection');
 }
 
 function resetForm() {

@@ -889,10 +889,9 @@ function showResult(){
 
     document.getElementById('gameSection').style.display='none';
     document.getElementById('formSection').style.display='none';
-    document.getElementById('resultSection').style.display='block';
     document.getElementById('inlineNavCards').style.display='block';
     document.getElementById('loadingOverlay').classList.remove('show');
-    window.scrollTo({top:0,behavior:'smooth'});
+    scrollToResult('resultSection');
   },900);
 }
 function resetAll(){

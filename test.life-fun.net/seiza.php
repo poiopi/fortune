@@ -508,8 +508,7 @@ function _renderResult(signIdx, innerIdx, tzCode, dateLine) {
   `;
 
   document.getElementById('formArea').style.display = 'none';
-  document.getElementById('resultSection').style.display = 'block';
-  document.getElementById('resultSection').scrollIntoView({behavior:'smooth',block:'start'});
+  scrollToResult('resultSection');
 }
 
 function _calcAndRender(year, month, day, tzCode) {

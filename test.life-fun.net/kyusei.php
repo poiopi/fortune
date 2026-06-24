@@ -380,7 +380,7 @@ body{top:0!important}
 
   <?php else: ?>
 
-  <div class="form-card">
+  <div class="form-card" id="resultSection">
     <div class="result-hero">
       <span class="star-symbol"><?= $result['data']['symbol'] ?></span>
       <div class="result-star-num">本命星 第<?= $result['star'] ?>星</div>
@@ -439,7 +439,7 @@ body{top:0!important}
     </div>
 
     <?php require __DIR__.'/inc/share-btns.php'; ?>
-    <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
+    <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('resultSection');});</script>
     <?php
     $articleUrl  = null;
     $contextKey  = 'kyusei';
