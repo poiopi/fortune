@@ -645,7 +645,6 @@ body{top:0!important}
       </div>
 
       <?php require __DIR__.'/inc/share-btns.php'; ?>
-      <button class="retry-btn" onclick="resetAll()">&#8617; もう一度カードを引く</button>
 
       <a href="/articles/tarot/" class="article-link-box">
         <span class="article-link-icon">📖</span>
@@ -655,6 +654,7 @@ body{top:0!important}
         </span>
         <span class="article-link-arrow">→</span>
       </a>
+      <button class="retry-btn" onclick="resetAll()">&#8617; もう一度カードを引く</button>
     `;
 
     document.getElementById('tarot-nav-cards').style.display='block';
