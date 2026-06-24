@@ -1162,6 +1162,12 @@ header.site-header{
           <div class="page-card-desc">生年月日から命式・十神・大運・天中殺を本格算出する</div>
           <a href="/shichu" class="page-card-btn btn-shichu">算出する →</a>
         </div>
+        <div class="page-card pc-teal">
+          <div class="page-card-label">Sanmeigaku</div>
+          <div class="page-card-title">☯ 算命学</div>
+          <div class="page-card-desc">元命・主星・従星から才能・恋愛・仕事適性を読み解く性格占術</div>
+          <a href="/sanmei" class="page-card-btn btn-teal">鑑定する →</a>
+        </div>
         <div class="page-card pc-gold">
           <div class="page-card-label">MBTI × Zodiac</div>
           <div class="page-card-title">🧠 MBTI×星座 性格診断</div>
