@@ -34,7 +34,8 @@
       "Bash(git -C C:/Users/sende/fortune commit -m 'sitemap: 四柱推命を追加 *)",
       "Bash(grep -v \"//\\\\|結果\\\\|鑑定書\\\\|integrated\\\\|三星鑑定\\\\|三星統合鑑定書\\\\|pillar\\\\|label\")",
       "Bash(sed -i 's|<li><a href=\"/shichu\">三星統合鑑定</a></li>|<li><a href=\"/\">三星統合鑑定</a></li>|g' \"C:/Users/sende/fortune/inc/footer.php\")",
-      "Bash(sed -i 's|<li><a href=\"/shichu\">三星統合鑑定</a></li>|<li><a href=\"/\">三星統合鑑定</a></li>|g' \"C:/Users/sende/fortune/test.life-fun.net/inc/footer.php\")"
+      "Bash(sed -i 's|<li><a href=\"/shichu\">三星統合鑑定</a></li>|<li><a href=\"/\">三星統合鑑定</a></li>|g' \"C:/Users/sende/fortune/test.life-fun.net/inc/footer.php\")",
+      "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\seiza\" -Force)"
     ]
   }
 }
