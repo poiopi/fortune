@@ -1,26 +1,45 @@
 <?php
-// ページデータ
 $_NAV_PAGES = [
-  'tarot'      => ['name'=>'タロット占い',   'url'=>'/tarot',      'desc'=>'22枚のカードが運命を映し出す',     'icon'=>'🃏'],
-  'calendar'   => ['name'=>'開運カレンダー', 'url'=>'/calendar',   'desc'=>'今日・今月の運勢と開運アドバイス', 'icon'=>'📅'],
-  'mbti'       => ['name'=>'MBTI×星座診断', 'url'=>'/mbti',       'desc'=>'16タイプ×12星座で性格を深掘り',   'icon'=>'🧠'],
-  'numerology' => ['name'=>'数秘術診断',     'url'=>'/numerology', 'desc'=>'生年月日が導く魂の数字の意味',     'icon'=>'🔢'],
-  'kyusei'     => ['name'=>'九星気学診断',   'url'=>'/kyusei',     'desc'=>'本命星で読み解く運命と相性',       'icon'=>'⭐'],
-  'rpg'        => ['name'=>'RPG占い',        'url'=>'/rpg',        'desc'=>'あなたの職業と運命を冒険で解く',   'icon'=>'⚔️'],
-  'aisho'      => ['name'=>'相性診断',       'url'=>'/aisho',      'desc'=>'二人の星座と数秘から相性を鑑定',   'icon'=>'💑'],
-  'zense'      => ['name'=>'前世診断',       'url'=>'/zense',      'desc'=>'何回目の転生？魂のカルテを解読',   'icon'=>'🌀'],
-  'guardian'   => ['name'=>'守護霊診断',     'url'=>'/guardian',   'desc'=>'あなたを守る霊のレアリティは？',   'icon'=>'👻'],
-  'seimei'     => ['name'=>'姓名判断',       'url'=>'/seimei',     'desc'=>'名前に宿る運命を五格で鑑定する',     'icon'=>'✍️'],
-  'shichu'     => ['name'=>'四柱推命',       'url'=>'/shichu',     'desc'=>'命式・十神・大運を本格算出する',       'icon'=>'🔯'],
-  'geimei'     => ['name'=>'芸名診断',       'url'=>'/geimei',     'desc'=>'大喜利で見つける最強の芸名',             'icon'=>'🎭'],
-  'sanmei'     => ['name'=>'算命学鑑定',     'url'=>'/sanmei',     'desc'=>'元命・主星・従星で本質と才能を読む',       'icon'=>'☯️'],
-  'seiza'      => ['name'=>'西洋占星術',     'url'=>'/seiza',      'desc'=>'太陽星座×内面タイプで個性を深掘り',         'icon'=>'⭐'],
+  'sansei'     => ['name'=>'三星統合鑑定', 'url'=>'/',          'article'=>null,                     'featured_score'=>100, 'icon'=>'✨', 'desc'=>'生年月日×星座×数秘の三位一体鑑定'],
+  'tarot'      => ['name'=>'タロット占い',  'url'=>'/tarot',     'article'=>'/articles/tarot/',       'featured_score'=>95,  'icon'=>'🃏', 'desc'=>'22枚のカードが運命を映し出す'],
+  'shichu'     => ['name'=>'四柱推命',      'url'=>'/shichu',    'article'=>'/articles/shichu/',      'featured_score'=>90,  'icon'=>'🔯', 'desc'=>'命式・十神・大運を本格算出する'],
+  'mbti'       => ['name'=>'MBTI×星座診断','url'=>'/mbti',      'article'=>'/articles/mbti/',        'featured_score'=>80,  'icon'=>'🧠', 'desc'=>'16タイプ×12星座で性格を深掘り'],
+  'calendar'   => ['name'=>'開運カレンダー','url'=>'/calendar',  'article'=>null,                     'featured_score'=>80,  'icon'=>'📅', 'desc'=>'今日・今月の運勢と開運アドバイス'],
+  'sanmei'     => ['name'=>'算命学鑑定',    'url'=>'/sanmei',    'article'=>'/articles/sanmei/',      'featured_score'=>75,  'icon'=>'☯️', 'desc'=>'元命・主星・従星で本質と才能を読む'],
+  'seiza'      => ['name'=>'西洋占星術',    'url'=>'/seiza',     'article'=>'/articles/seiza/',       'featured_score'=>75,  'icon'=>'⭐', 'desc'=>'太陽星座×内面タイプで個性を深掘り'],
+  'aisho'      => ['name'=>'相性診断',      'url'=>'/aisho',     'article'=>'/articles/aisho/',       'featured_score'=>65,  'icon'=>'💑', 'desc'=>'二人の星座と数秘から相性を鑑定'],
+  'seimei'     => ['name'=>'姓名判断',      'url'=>'/seimei',    'article'=>'/articles/seimei/',      'featured_score'=>65,  'icon'=>'✍️', 'desc'=>'名前に宿る運命を五格で鑑定する'],
+  'rpg'        => ['name'=>'RPG占い',       'url'=>'/rpg',       'article'=>null,                     'featured_score'=>60,  'icon'=>'⚔️', 'desc'=>'あなたの職業と運命を冒険で解く'],
+  'kyusei'     => ['name'=>'九星気学診断',  'url'=>'/kyusei',    'article'=>'/articles/kyusei/',      'featured_score'=>60,  'icon'=>'⭐', 'desc'=>'本命星で読み解く運命と相性'],
+  'numerology' => ['name'=>'数秘術診断',    'url'=>'/numerology','article'=>'/articles/numerology/',  'featured_score'=>60,  'icon'=>'🔢', 'desc'=>'生年月日が導く魂の数字の意味'],
+  'zense'      => ['name'=>'前世診断',      'url'=>'/zense',     'article'=>'/articles/zense/',       'featured_score'=>60,  'icon'=>'🌀', 'desc'=>'何回目の転生？魂のカルテを解読'],
+  'guardian'   => ['name'=>'守護霊診断',    'url'=>'/guardian',  'article'=>'/articles/guardian/',    'featured_score'=>60,  'icon'=>'👻', 'desc'=>'あなたを守る霊のレアリティは？'],
+  'geimei'     => ['name'=>'芸名診断',      'url'=>'/geimei',    'article'=>null,                     'featured_score'=>50,  'icon'=>'🎭', 'desc'=>'大喜利で見つける最強の芸名'],
 ];
 
-// $count枚カードを出力（$excludeは現在ページキー）
+// featured_score上位N件を返す
+function get_featured_pages(int $n = 5): array {
+  global $_NAV_PAGES;
+  $sorted = $_NAV_PAGES;
+  uasort($sorted, fn($a, $b) => ($b['featured_score'] ?? 0) <=> ($a['featured_score'] ?? 0));
+  return array_slice($sorted, 0, $n, true);
+}
+
+// article URLを持つページ一覧（自ページ除外可）
+function get_article_pages(string $excludeSlug = ''): array {
+  global $_NAV_PAGES;
+  return array_filter(
+    $_NAV_PAGES,
+    fn($p, $slug) => !empty($p['article']) && $slug !== $excludeSlug,
+    ARRAY_FILTER_USE_BOTH
+  );
+}
+
+// ランダムナビカード（sansei=トップページは除外、自ページ除外可）
 function _nav_cards(int $count, string $exclude = ''): string {
   global $_NAV_PAGES;
   $pool = $_NAV_PAGES;
+  unset($pool['sansei']);
   if ($exclude && isset($pool[$exclude])) unset($pool[$exclude]);
   $keys = array_keys($pool);
   shuffle($keys);

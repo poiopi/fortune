@@ -1,6 +1,47 @@
 <?php
-$_p = $currentPage ?? '';
+$_slug = $currentSlug ?? ($currentPage ?? '');
+$_type = $pageType ?? 'tool';
 require_once __DIR__.'/nav-cards.php';
+$_p = $_slug; // 後方互換（fmenuの current 判定用）
+
+function render_footer(array $opts = []): void {
+  global $_NAV_PAGES;
+  $slug = $opts['currentSlug'] ?? '';
+  $featured  = get_featured_pages(5);
+  $articles  = get_article_pages($slug);
+  echo '<footer class="site-footer">';
+  echo '<div class="site-footer-inner">';
+  // 人気の占い
+  echo '<div class="sf-col"><p class="sf-heading">人気の占い</p><ul>';
+  foreach ($featured as $s => $p) {
+    if ($s === $slug) {
+      echo '<li><span style="color:var(--muted)">'.$p['name'].'</span></li>';
+    } else {
+      echo '<li><a href="'.htmlspecialchars($p['url']).'">'.$p['name'].'</a></li>';
+    }
+  }
+  echo '</ul></div>';
+  // 解説ガイド
+  echo '<div class="sf-col"><p class="sf-heading">解説ガイド</p><ul>';
+  echo '<li><a href="/articles/">占い解説ガイド</a></li>';
+  foreach ($articles as $s => $p) {
+    if ($s === $slug) {
+      echo '<li><span style="color:var(--muted)">'.$p['name'].'とは</span></li>';
+    } else {
+      echo '<li><a href="'.htmlspecialchars($p['article']).'">'.$p['name'].'とは</a></li>';
+    }
+  }
+  echo '</ul></div>';
+  // サイト情報
+  echo '<div class="sf-col"><p class="sf-heading">サイト情報</p><ul>';
+  echo '<li><a href="/profile">運営者情報</a></li>';
+  echo '<li><a href="/privacy">プライバシーポリシー</a></li>';
+  echo '<li><a href="/contact">お問い合わせ</a></li>';
+  echo '</ul></div>';
+  echo '</div>';
+  echo '<p class="sf-copy">&copy; '.date('Y').' 占いPortal</p>';
+  echo '</footer>';
+}
 ?>
 <style>
 .share-wrap{text-align:center;margin:1.5rem 0 1rem}
@@ -17,44 +58,7 @@ require_once __DIR__.'/nav-cards.php';
   <h3>✦ 他の占いも試してみる ✦</h3>
   <?= _nav_cards(9, $_p) ?>
 </div>
-<footer class="site-footer">
-  <div class="site-footer-inner">
-    <div class="sf-col">
-      <p class="sf-heading">人気の占い</p>
-      <ul>
-        <li><a href="/">三星統合鑑定</a></li>
-        <li><a href="/tarot">タロット占い</a></li>
-        <li><a href="/shichu">四柱推命</a></li>
-        <li><a href="/sanmei">算命学</a></li>
-        <li><a href="/seiza">西洋占星術</a></li>
-        <li><a href="/mbti">MBTI×星座診断</a></li>
-        <li><a href="/calendar">開運カレンダー</a></li>
-      </ul>
-    </div>
-    <div class="sf-col">
-      <p class="sf-heading">解説ガイド</p>
-      <ul>
-        <li><a href="/articles/">占い解説ガイド</a></li>
-        <li><a href="/articles/tarot/">タロット占いとは</a></li>
-        <li><a href="/articles/shichu/">四柱推命とは</a></li>
-        <li><a href="/articles/kyusei/">九星気学とは</a></li>
-        <li><a href="/articles/numerology/">数秘術とは</a></li>
-        <li><a href="/articles/seimei/">姓名判断とは</a></li>
-        <li><a href="/articles/sanmei/">算命学とは</a></li>
-        <li><a href="/articles/seiza/">西洋占星術とは</a></li>
-      </ul>
-    </div>
-    <div class="sf-col">
-      <p class="sf-heading">サイト情報</p>
-      <ul>
-        <li><a href="/profile">運営者情報</a></li>
-        <li><a href="/privacy">プライバシーポリシー</a></li>
-        <li><a href="/contact">お問い合わせ</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="sf-copy">&copy; <?= date('Y') ?> 占いPortal</p>
-</footer>
+<?php render_footer(['currentSlug' => $_slug, 'pageType' => $_type]); ?>
 <style>
 .site-footer{border-top:1px solid rgba(160,130,220,.18);padding:2.5rem 1.2rem 1.5rem;margin-top:2rem}
 .site-footer-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
@@ -187,27 +191,11 @@ require_once __DIR__.'/nav-cards.php';
   </div>
   <nav class="fmenu-nav">
     <?php
-    $fmenu_pages = [
-      'top'        => ['icon'=>'🏠', 'name'=>'トップ',              'url'=>'/'],
-      'tarot'      => ['icon'=>'🃏', 'name'=>'タロット占い',        'url'=>'/tarot'],
-      'shichu'     => ['icon'=>'🔯', 'name'=>'四柱推命',            'url'=>'/shichu'],
-      'calendar'   => ['icon'=>'📅', 'name'=>'開運カレンダー',      'url'=>'/calendar'],
-      'mbti'       => ['icon'=>'🧠', 'name'=>'MBTI×星座診断',      'url'=>'/mbti'],
-      'numerology' => ['icon'=>'🔢', 'name'=>'数秘術診断',          'url'=>'/numerology'],
-      'kyusei'     => ['icon'=>'⭐', 'name'=>'九星気学診断',        'url'=>'/kyusei'],
-      'rpg'        => ['icon'=>'⚔️', 'name'=>'RPG占い',             'url'=>'/rpg'],
-      'aisho'      => ['icon'=>'💑', 'name'=>'相性診断',            'url'=>'/aisho'],
-      'zense'      => ['icon'=>'🌀', 'name'=>'前世診断',            'url'=>'/zense'],
-      'guardian'   => ['icon'=>'👻', 'name'=>'守護霊診断',          'url'=>'/guardian'],
-      'seimei'     => ['icon'=>'✍️', 'name'=>'姓名判断',            'url'=>'/seimei'],
-      'geimei'     => ['icon'=>'🎭', 'name'=>'芸名診断',            'url'=>'/geimei'],
-      'sanmei'     => ['icon'=>'☯️', 'name'=>'算命学鑑定',          'url'=>'/sanmei'],
-      'seiza'      => ['icon'=>'⭐', 'name'=>'西洋占星術',           'url'=>'/seiza'],
-    ];
     echo '<div class="fmenu-section-label">占い一覧</div>';
-    foreach($fmenu_pages as $key=>$pg):
-      $cls = ($key===$_p) ? 'fmenu-item current' : 'fmenu-item';
-      if($key===$_p):
+    foreach($_NAV_PAGES as $key => $pg):
+      $isCurrent = ($key === $_slug);
+      $cls = $isCurrent ? 'fmenu-item current' : 'fmenu-item';
+      if ($isCurrent):
     ?>
     <span class="<?= $cls ?>"><span class="fmenu-item-icon"><?= $pg['icon'] ?></span><?= $pg['name'] ?></span>
     <?php else: ?>
