@@ -200,7 +200,7 @@
       'items' => [
         ['icon'=>'🔮','title'=>'タロット占い','desc'=>'22枚の大アルカナの意味、歴史、正位置・逆位置の読み方を解説。','url_article'=>'/articles/tarot/','url_tool'=>'/tarot','ready'=>true],
         ['icon'=>'🌙','title'=>'四柱推命','desc'=>'生まれた年月日時から命式を算出し、大運・年運の流れを読む本格占術。','url_article'=>'/articles/shichu/','url_tool'=>'/shichu','ready'=>true],
-        ['icon'=>'⭐','title'=>'九星気学','desc'=>'九つの星で人の性質と運気の周期を読む、日本古来の占術。','url_article'=>'/articles/kyusei/','url_tool'=>'/kyusei','ready'=>false],
+        ['icon'=>'⭐','title'=>'九星気学','desc'=>'九つの星で人の性質と運気の周期を読む、日本古来の占術。','url_article'=>'/articles/kyusei/','url_tool'=>'/kyusei','ready'=>true],
         ['icon'=>'🔢','title'=>'数秘術','desc'=>'誕生日と名前から導き出す「運命数」で、人生のテーマを知る。','url_article'=>'/articles/numerology/','url_tool'=>'/numerology','ready'=>false],
         ['icon'=>'✍️','title'=>'姓名判断','desc'=>'漢字の画数から名前の吉凶・運勢を読み解く日本の伝統占術。','url_article'=>'/articles/seimei/','url_tool'=>'/seimei','ready'=>false],
       ]
@@ -303,6 +303,7 @@
         <li><a href="/articles/">占い解説ガイド</a></li>
         <li><a href="/articles/tarot/">タロット占いとは</a></li>
         <li><a href="/articles/shichu/">四柱推命とは</a></li>
+        <li><a href="/articles/kyusei/">九星気学とは</a></li>
       </ul>
     </div>
     <div class="aft-col">
