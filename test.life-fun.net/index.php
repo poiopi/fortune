@@ -996,6 +996,16 @@ header.site-header{
 /* ======================
    三星鑑定について
 ====================== */
+.guide-block{margin:1.5rem 0;padding:1.25rem 1.5rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.22);border-radius:14px}
+.guide-block-label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:.5rem}
+.guide-block-title{font-family:'Shippori Mincho',serif;font-size:1rem;font-weight:700;color:var(--text-lt);margin-bottom:.35rem}
+.guide-block-desc{font-size:.8rem;color:var(--muted);line-height:1.7;margin-bottom:.9rem}
+.guide-block-links{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.85rem}
+.guide-link-tag{font-size:.72rem;color:var(--muted);text-decoration:none;padding:.25rem .65rem;border:1px solid rgba(155,114,239,.25);border-radius:20px;transition:border-color .2s,color .2s}
+.guide-link-tag:hover{border-color:var(--violet-lt);color:var(--violet-lt)}
+.guide-block-btn{display:inline-flex;align-items:center;gap:.4rem;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.08em;color:var(--violet-lt);text-decoration:none;border:1px solid rgba(155,114,239,.35);border-radius:20px;padding:.4rem 1rem;transition:border-color .2s,background .2s}
+.guide-block-btn:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.1)}
+
 .about-box{
     max-width:900px;
     margin:2rem auto 3rem;
@@ -1206,6 +1216,19 @@ header.site-header{
           <div class="page-card-desc">大喜利ゲームで芸風を判定！画数から大吉の芸名を3パターン提案</div>
           <a href="/geimei" class="page-card-btn btn-geimei">診断する →</a>
         </div>
+      </div>
+
+      <!-- 解説ガイド導線 -->
+      <div class="guide-block">
+        <p class="guide-block-label">ARTICLES · 占い解説ガイド</p>
+        <p class="guide-block-title">📖 占いをもっと深く知りたい方へ</p>
+        <p class="guide-block-desc">タロット・四柱推命・MBTIなど各占術の意味・歴史・活用方法をわかりやすく解説しています。</p>
+        <div class="guide-block-links">
+          <a href="/articles/tarot/" class="guide-link-tag">タロット占いとは</a>
+          <a href="/articles/shichu/" class="guide-link-tag">四柱推命とは</a>
+          <a href="/articles/mbti/" class="guide-link-tag">MBTIとは</a>
+        </div>
+        <a href="/articles/" class="guide-block-btn">すべての解説を見る →</a>
       </div>
 
       <!-- 結果（main-colの内側） -->
