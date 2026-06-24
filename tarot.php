@@ -58,16 +58,6 @@
   /* ADSENSE */
   .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
   .adsense-space::after{content:'AD SPACE'}
-  .share-wrap{text-align:center;margin:1.5rem 0 1rem}
-  .share-label{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
-  .share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap}
-  .share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .85rem;border-radius:20px;font-size:.7rem;font-family:var(--ff-rpg);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap}
-  .share-btn:hover{opacity:.8}
-  .share-line{background:#06C755;color:#fff}
-  .share-x{background:#000;color:#fff}
-  .share-fb{background:#1877F2;color:#fff}
-  .share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
-
   /* ══ 円形カードステージ ══ */
   .stage{display:none;flex-direction:column;align-items:center;padding:1rem 0 2rem}
   .stage.active{display:flex}
@@ -214,6 +204,13 @@
   .result-message{font-size:.92rem;line-height:2.1;color:var(--text);border-top:1px solid var(--border);padding-top:1rem;margin-top:.5rem}
   .retry-btn{display:block;width:100%;padding:.9rem;background:transparent;border:1px solid var(--border2);border-radius:10px;color:var(--muted);font-family:var(--ff-mono);font-size:.8rem;letter-spacing:.12em;cursor:pointer;transition:color .2s,border-color .2s,background .2s;margin-top:2rem}
   .retry-btn:hover{color:var(--violet-lt);border-color:var(--violet);background:rgba(155,114,239,.05)}
+  .article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+  .article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+  .article-link-icon{font-size:1.4rem;flex-shrink:0}
+  .article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+  .article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+  .article-link-body small{font-size:.75rem;color:var(--muted)}
+  .article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 
   footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
   footer a{color:var(--muted);text-decoration:none}
@@ -328,6 +325,7 @@ body{top:0!important}
   </style>
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<?php require_once __DIR__.'/inc/nav-cards.php'; $tarotNavCards = _nav_cards(3,'tarot'); ?>
   </head>
   <body>
 <?php $currentPage='tarot'; require __DIR__.'/inc/header.php'; ?>
@@ -355,6 +353,13 @@ body{top:0!important}
 
     <!-- 結果 -->
     <div class="result-section" id="result-section"></div>
+    <!-- 次の診断へ -->
+    <div id="tarot-nav-cards" style="display:none">
+      <div class="nav-cards-section" style="padding:2rem 0 0">
+        <h3>✦ 次はこれを試してみては？ ✦</h3>
+        <?= $tarotNavCards ?>
+      </div>
+    </div>
   </div>
 
   <!-- 中央オーバーレイ（カード移動・フリップ演出） -->
@@ -394,7 +399,6 @@ body{top:0!important}
 <?php require __DIR__.'/inc/footer.php'; ?>
 
   <script>
-  var _navCardsHtml = <?= json_encode('<div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3>' . _nav_cards(3, 'tarot') . '</div>') ?>;
   // ══ タロットデータ 22枚 ══════════════════════════════════════════
   const TAROT = [
     {num:'0',   order:0,  name:'愚者',      en:'The Fool',           sym:'&#x1F4AB;', // 💫 自由・旅立ち
@@ -640,26 +644,29 @@ body{top:0!important}
         </div>
       </div>
 
-      <div class="share-wrap">
-        <p class="share-label">✦ 結果をシェアする</p>
-        <div class="share-btns">
-          <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
-          <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
-          <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
-          <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
-        </div>
-      </div>
+      <?php require __DIR__.'/inc/share-btns.php'; ?>
       <button class="retry-btn" onclick="resetAll()">&#8617; もう一度カードを引く</button>
-    ` + _navCardsHtml;
 
+      <a href="/articles/tarot/" class="article-link-box">
+        <span class="article-link-icon">📖</span>
+        <span class="article-link-body">
+          <strong>タロット占いとは？</strong>
+          <small>22枚の大アルカナや正位置・逆位置の意味を解説</small>
+        </span>
+        <span class="article-link-arrow">→</span>
+      </a>
+    `;
+
+    document.getElementById('tarot-nav-cards').style.display='block';
     window._shareText = `${card.name}（${dirLabel}）が出ました！✨`;
-    setTimeout(function(){var el=document.getElementById('result-section');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},80);
+    setTimeout(function(){ document.getElementById('result-section').scrollIntoView({behavior:'smooth',block:'start'}); }, 80);
   }
 
   // ══ リセット ════════════════════════════════════════════════════
   function resetAll() {
     document.getElementById('result-section').style.display = 'none';
     document.getElementById('result-section').innerHTML = '';
+    document.getElementById('tarot-nav-cards').style.display = 'none';
     const stage = document.getElementById('stage-select');
     stage.style.display = 'flex';
     // オーバーレイリセット
@@ -677,22 +684,17 @@ window.addEventListener('resize', () => {
 });
 </script>
 <script>
-function openShare(type){
-  const url=location.href;
-  const u=encodeURIComponent(url);
-  const txt=(window._shareText||document.title);
-  const urls={
-    line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt+'\n'+url),
-    x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt+' ')+u,
-    fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
-  };
-  window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function copyShareUrl(){
-  navigator.clipboard.writeText(location.href).then(()=>{
-    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
-  });
+function toggleSpMenu(){
+  document.getElementById('spDropdown').classList.toggle('open');
 }
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
+    document.getElementById('spDropdown').classList.remove('open');
+  }
+});
 </script>
 </body>
 </html>

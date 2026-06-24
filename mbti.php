@@ -223,6 +223,13 @@ header{
   transition:color .2s,border-color .2s;
 }
 .retry-btn:hover{color:var(--text);border-color:var(--violet)}
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 
 /* ── ステップ表示切り替え ── */
 .step{display:none}
@@ -231,15 +238,6 @@ header{
 /* ── AdSense ── */
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
-.share-wrap{text-align:center;margin:1.5rem 0 1rem}
-.share-label{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
-.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap}
-.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .85rem;border-radius:20px;font-size:.7rem;font-family:var(--ff-rpg);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap}
-.share-btn:hover{opacity:.8}
-.share-line{background:#06C755;color:#fff}
-.share-x{background:#000;color:#fff}
-.share-fb{background:#1877F2;color:#fff}
-.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 
 /* ── フッター ── */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -445,20 +443,19 @@ body{top:0!important}
         <div class="type-tags" id="r-famous"></div>
       </div>
 
-      <div class="share-wrap">
-        <p class="share-label">✦ 結果をシェアする</p>
-        <div class="share-btns">
-          <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
-          <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
-          <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
-          <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
-        </div>
-      </div>
+      <?php require __DIR__.'/inc/share-btns.php'; ?>
       <button class="retry-btn" onclick="restart()">もう一度診断する</button>
-      <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
+<a href="/articles/mbti/" class="article-link-box">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>MBTI診断とは？</strong>
+    <small>16タイプの性格と4つの指標をわかりやすく解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
       <div class="nav-cards-section" style="padding:2rem 0 0">
         <h3>✦ 次はこれを試してみては？ ✦</h3>
-        <?= _nav_cards(3, 'mbti') ?>
+        <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'mbti'); ?>
       </div>
     </div>
 
@@ -660,7 +657,7 @@ function showResult() {
   });
   window._shareText = `MBTI診断結果：${selectedMbti}（${m.name}）× ${s.name} でした！✨`;
   showStep('step-result');
-  setTimeout(function(){var el=document.getElementById('step-result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},80);
+  setTimeout(function(){ document.getElementById('step-result').scrollIntoView({behavior:'smooth',block:'start'}); }, 80);
 }
 
 function restart() {
@@ -673,22 +670,17 @@ function restart() {
 renderQ();
 </script>
 <script>
-function openShare(type){
-  const url=location.href;
-  const u=encodeURIComponent(url);
-  const txt=(window._shareText||document.title);
-  const urls={
-    line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt+'\n'+url),
-    x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt+' ')+u,
-    fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
-  };
-  window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function copyShareUrl(){
-  navigator.clipboard.writeText(location.href).then(()=>{
-    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
-  });
+function toggleSpMenu(){
+  document.getElementById('spDropdown').classList.toggle('open');
 }
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
+    document.getElementById('spDropdown').classList.remove('open');
+  }
+});
 </script>
 </body>
 </html>
