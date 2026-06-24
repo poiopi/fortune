@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://life-fun.net/articles/shichu/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="四柱推命とは何か、命式・十神・大運・天中殺の意味をわかりやすく解説。年柱・月柱・日柱・時柱の読み方から十干十二支まで四柱推命の基礎を完全ガイド。">
-  <title>四柱推命とは？命式・十神・大運・天中殺の意味を徹底解説</title>
+  <title>四柱推命とは？命式・十神・大運・天中殺の意味をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -182,7 +182,7 @@
 
   <div class="art-hero">
     <span class="art-label">SHICHU SUIMEI · 完全ガイド</span>
-    <h1>四柱推命とは？<br>命式・十神・大運・天中殺の意味を徹底解説</h1>
+    <h1>四柱推命とは？<br>命式・十神・大運・天中殺の意味をわかりやすく解説</h1>
     <p class="art-lead">四柱推命は生年月日と生まれた時刻から「命式」を算出し、性格・才能・人生の流れを読み解く東洋の占術です。年柱・月柱・日柱・時柱の4つの柱と、十干・十二支の組み合わせで導き出す命式は、あなたの人生の設計図といえます。</p>
   </div>
 
@@ -214,7 +214,7 @@
     <h2>四柱推命とは</h2>
     <p>四柱推命（しちゅうすいめい）は、生年・生月・生日・生時の4つを「柱」として命式を立て、その人の宿命や運命の流れを読む占術です。中国古来の陰陽五行思想を基盤とし、木・火・土・金・水の5つのエネルギーバランスから性格・才能・対人関係・人生の転換期を読み解きます。</p>
     <p>タロットや占星術と大きく異なるのは、「生まれた瞬間」が全ての起点になること。生年月日時さえわかれば、誰でも同じ命式が導き出されるため、再現性が高く本格的な統計占術として知られています。</p>
-    <p>日本では「算命学」「九星気学」と並ぶ東洋三大占術のひとつとして定着しており、婚活・就職・起業のタイミングを判断する際に活用する人も多くいます。</p>
+    <p>日本では「算命学」「九星気学」と並ぶ東洋三大占術のひとつとして定着しており、婚活・就職・起業のタイミングを判断する際に活用する人も多くいます。<br><a href="/articles/kyusei/" style="font-size:.85rem;color:var(--accent);">→ 九星気学について詳しく見る</a></p>
   </section>
 
   <section class="art-section" id="history">
@@ -322,6 +322,10 @@
     <h2>関連コンテンツ</h2>
     <p>四柱推命で自分の命式を知ったら、他の占術でも多角的に分析してみましょう。</p>
     <div class="related-grid">
+      <a href="/shichu" class="related-card" style="border-color:#d4bfff;background:linear-gradient(135deg,#f5f0ff,#fdf4fa)">
+        <div class="related-card-label" style="color:var(--accent)">三星統合鑑定</div>
+        <div class="related-card-title">四柱推命・タロット・数秘術をまとめて鑑定 →</div>
+      </a>
       <a href="/tarot" class="related-card">
         <div class="related-card-label">タロット占い</div>
         <div class="related-card-title">今この瞬間のメッセージを受け取る →</div>
@@ -340,6 +344,14 @@
       </a>
     </div>
   </section>
+
+  <div class="cta-box" style="margin:2.5rem 0 0">
+    <div>
+      <p>🌙 あなたの命式を無料で算出する</p>
+      <small>生年月日を入力するだけ。十神・大運・天中殺まで表示します。</small>
+    </div>
+    <a href="/shichu" class="cta-btn">四柱推命を算出する →</a>
+  </div>
 
 </div>
 
