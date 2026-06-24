@@ -655,7 +655,7 @@ function _calcAndRender(year, month, day) {
   // 表示切り替え
   document.getElementById('formArea').style.display = 'none';
   document.getElementById('resultSection').style.display = 'block';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function copyPageUrl() {
@@ -761,6 +761,7 @@ function resetForm() {
 
   document.getElementById('formArea').style.display = 'none';
   document.getElementById('resultSection').style.display = 'block';
+  document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
 })();
 </script>
 </body>
