@@ -650,8 +650,8 @@ body{top:0!important}
       <a href="/articles/tarot/" class="article-link-box">
         <span class="article-link-icon">📖</span>
         <span class="article-link-body">
-          <strong>タロットについて詳しく知る</strong>
-          <small>22枚の大アルカナの意味・歴史・読み方を解説</small>
+          <strong>タロット占いとは？</strong>
+          <small>22枚の大アルカナや正位置・逆位置の意味を解説</small>
         </span>
         <span class="article-link-arrow">→</span>
       </a>
