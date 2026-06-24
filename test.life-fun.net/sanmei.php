@@ -250,8 +250,11 @@ footer a:hover{color:var(--gold)}
 
     <!-- result_code -->
     <div class="result-code-wrap">
-      <div class="result-code" id="resultCode" onclick="copyPageUrl()"></div>
-      <div class="result-code-tip">クリックでURLをコピー</div>
+      <details style="font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);text-align:center">
+        <summary style="cursor:pointer;letter-spacing:.08em;list-style:none">診断コードを見る ▾</summary>
+        <div id="resultCode" onclick="copyPageUrl()" style="margin-top:.5rem;cursor:pointer;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px;padding:.4rem .9rem;display:inline-block;transition:color .2s" onmouseenter="this.style.color='var(--sanmei2)'" onmouseleave="this.style.color=''"></div>
+        <div style="font-size:.58rem;margin-top:.3rem">クリックでURLをコピー</div>
+      </details>
     </div>
 
     <!-- シェア -->
@@ -347,30 +350,30 @@ function getDayPillar(year, month, day) {
 
 // 元命（日干インデックス 0-9）
 const GENME = [
-  { id:'GM00', name:'貫索星', prefix:'自立派',   element:'木', yin:false },
-  { id:'GM01', name:'石門星', prefix:'調和派',   element:'木', yin:true  },
-  { id:'GM02', name:'鳳閣星', prefix:'自由人',   element:'火', yin:false },
-  { id:'GM03', name:'調舒星', prefix:'感性派',   element:'火', yin:true  },
-  { id:'GM04', name:'禄存星', prefix:'奉仕派',   element:'土', yin:false },
-  { id:'GM05', name:'司禄星', prefix:'堅実派',   element:'土', yin:true  },
-  { id:'GM06', name:'車騎星', prefix:'行動派',   element:'金', yin:false },
-  { id:'GM07', name:'牽牛星', prefix:'誠実派',   element:'金', yin:true  },
-  { id:'GM08', name:'龍高星', prefix:'探究者',   element:'水', yin:false },
-  { id:'GM09', name:'玉堂星', prefix:'知性派',   element:'水', yin:true  },
+  { id:'GM00', name:'貫索星', prefix:'孤高の',         element:'木', yin:false },
+  { id:'GM01', name:'石門星', prefix:'人情厚い',       element:'木', yin:true  },
+  { id:'GM02', name:'鳳閣星', prefix:'自由奔放な',     element:'火', yin:false },
+  { id:'GM03', name:'調舒星', prefix:'感性豊かな',     element:'火', yin:true  },
+  { id:'GM04', name:'禄存星', prefix:'愛情深い',       element:'土', yin:false },
+  { id:'GM05', name:'司禄星', prefix:'堅実な',         element:'土', yin:true  },
+  { id:'GM06', name:'車騎星', prefix:'情熱的な',       element:'金', yin:false },
+  { id:'GM07', name:'牽牛星', prefix:'誠実な',         element:'金', yin:true  },
+  { id:'GM08', name:'龍高星', prefix:'探求心旺盛な',   element:'水', yin:false },
+  { id:'GM09', name:'玉堂星', prefix:'知性派の',       element:'水', yin:true  },
 ];
 
 // 主星（年干インデックス 0-9）
 const SHUSEI = [
-  { id:'SY00', name:'貫索星', suffix:'独立型'    },
-  { id:'SY01', name:'石門星', suffix:'協調型'    },
-  { id:'SY02', name:'鳳閣星', suffix:'表現型'    },
-  { id:'SY03', name:'調舒星', suffix:'個性型'    },
-  { id:'SY04', name:'禄存星', suffix:'包容型'    },
-  { id:'SY05', name:'司禄星', suffix:'蓄積型'    },
-  { id:'SY06', name:'車騎星', suffix:'突破型'    },
-  { id:'SY07', name:'牽牛星', suffix:'完全主義型' },
-  { id:'SY08', name:'龍高星', suffix:'革新型'    },
-  { id:'SY09', name:'玉堂星', suffix:'知識型'    },
+  { id:'SY00', name:'貫索星', suffix:'一匹狼'         },
+  { id:'SY01', name:'石門星', suffix:'ムードメーカー' },
+  { id:'SY02', name:'鳳閣星', suffix:'クリエイター'   },
+  { id:'SY03', name:'調舒星', suffix:'アーティスト'   },
+  { id:'SY04', name:'禄存星', suffix:'人気者'         },
+  { id:'SY05', name:'司禄星', suffix:'縁の下の力持ち' },
+  { id:'SY06', name:'車騎星', suffix:'チャレンジャー' },
+  { id:'SY07', name:'牽牛星', suffix:'完璧主義者'     },
+  { id:'SY08', name:'龍高星', suffix:'革新者'         },
+  { id:'SY09', name:'玉堂星', suffix:'知識人'         },
 ];
 
 // 従星（日支インデックス 0-11）
@@ -522,7 +525,8 @@ function _calcAndRender(year, month, day) {
   const currentYear = new Date().getFullYear();
   const age = currentYear - year;
   const themeIndex = Math.floor(age / 10) % 4;
-  const periodLabel = `${Math.floor(age/10)*10}〜${Math.floor(age/10)*10+9}歳の大運`;
+  const periodStart = currentYear - (age % 10);
+  const periodLabel = `${periodStart}〜${periodStart+9}年のテーマ`;
 
   // ── 強み（インデックス 0,2,4 を選択） ──
   const strengthArr = STRENGTHS[dp.stem];
@@ -611,9 +615,9 @@ function _calcAndRender(year, month, day) {
 
   // 大運テーマ
   document.getElementById('daiyunBlock').innerHTML = `
-    <div class="daiyun-theme-label">✦ 現在の大運テーマ（${periodLabel}）</div>
+    <div class="daiyun-theme-label">✦ この10年間のテーマ（${periodLabel}）</div>
     <div class="daiyun-theme-value">${DAIYUN_THEMES[themeIndex]}</div>
-    <div class="daiyun-theme-note">算命学では10年ごとに運気のテーマが変わります。現在は「${DAIYUN_THEMES[themeIndex]}」の時期にあたります。</div>
+    <div class="daiyun-theme-note">算命学では10年ごとに人生のテーマが変わります。現在あなたは「${DAIYUN_THEMES[themeIndex]}」の時期にあたります。</div>
   `;
 
   // URLにresult_codeを埋め込む
