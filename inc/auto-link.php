@@ -30,6 +30,19 @@ $_autoLinkMap = [
     '前世診断'   => ['/articles/zense/',       'zense'],
     '守護霊'     => ['/articles/guardian/',    'guardian'],
     '西洋占星術' => ['/articles/seiza/',       'seiza'],
+    '12星座'     => ['/articles/seiza/',       'seiza'],
+    '牡羊座'     => ['/articles/seiza/aries/',       'aries'],
+    '牡牛座'     => ['/articles/seiza/taurus/',      'taurus'],
+    '双子座'     => ['/articles/seiza/gemini/',      'gemini'],
+    '蟹座'       => ['/articles/seiza/cancer/',      'cancer'],
+    '獅子座'     => ['/articles/seiza/leo/',         'leo'],
+    '乙女座'     => ['/articles/seiza/virgo/',       'virgo'],
+    '天秤座'     => ['/articles/seiza/libra/',       'libra'],
+    '蠍座'       => ['/articles/seiza/scorpio/',     'scorpio'],
+    '射手座'     => ['/articles/seiza/sagittarius/', 'sagittarius'],
+    '山羊座'     => ['/articles/seiza/capricorn/',   'capricorn'],
+    '水瓶座'     => ['/articles/seiza/aquarius/',    'aquarius'],
+    '魚座'       => ['/articles/seiza/pisces/',      'pisces'],
 ];
 
 function autoLink(string $html, string $currentSlug): string {
