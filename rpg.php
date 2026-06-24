@@ -138,15 +138,6 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
-.share-wrap{text-align:center;margin:1.5rem 0 1rem}
-.share-label{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
-.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap}
-.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .85rem;border-radius:20px;font-size:.7rem;font-family:var(--ff-rpg);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap}
-.share-btn:hover{opacity:.8}
-.share-line{background:#06C755;color:#fff}
-.share-x{background:#000;color:#fff}
-.share-fb{background:#1877F2;color:#fff}
-.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -273,21 +264,15 @@ footer a:hover{color:var(--gold)}
     <button onclick="resetGame()" style="position:absolute;top:.6rem;right:.6rem;background:none;border:1px solid rgba(155,114,239,.3);border-radius:50%;width:28px;height:28px;color:#8a7db5;cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:color .2s,border-color .2s" onmouseover="this.style.color='#c4a8f5';this.style.borderColor='#9b72ef'" onmouseout="this.style.color='#8a7db5';this.style.borderColor='rgba(155,114,239,.3)'">✕</button>
     <div class="ot">✦ 占い結果 ✦</div>
     <div id="resContent"></div>
-    <div class="share-wrap">
-      <p class="share-label">✦ 結果をシェアする</p>
-      <div class="share-btns">
-        <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
-        <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
-        <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
-        <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
-      </div>
-    </div>
-    <button class="rtry" onclick="resetGame()">▶ もう一度遊ぶ</button>
-    <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?= _nav_cards(3, 'rpg') ?>
-    </div>
+    <?php require __DIR__.'/inc/share-btns.php'; ?>
+    <?php
+    $articleUrl  = null;
+    $contextKey  = 'rpg';
+    $retryLabel  = 'もう一度遊ぶ';
+    $retryType   = 'js';
+    $retryValue  = 'resetGame()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 </div>
 
@@ -1168,22 +1153,15 @@ function jobClass(y,m,d){
 // ════════════════════════════════════════════
 // SP MENU / RESET
 // ════════════════════════════════════════════
-function openShare(type){
-  const url=location.href;
-  const u=encodeURIComponent(url);
-  const txt=(window._shareText||document.title);
-  const urls={
-    line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt+'\n'+url),
-    x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt+' ')+u,
-    fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
-  };
-  window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function copyShareUrl(){
-  navigator.clipboard.writeText(location.href).then(()=>{
-    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
-  });
-}
+function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown'))
+    document.getElementById('spDropdown').classList.remove('open');
+});
+
 function resetGame(){
   pl={x:10,y:9,hp:30,mhp:30,mp:20,mmp:20};
   inv={herb:0,crystal:0,scroll:false};

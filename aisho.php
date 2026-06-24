@@ -720,19 +720,17 @@ footer a:hover{color:var(--gold)}
     <!-- シェア -->
     <?php require __DIR__.'/inc/share-btns.php'; ?>
 
-        <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
-<a href="/articles/aisho/" class="article-link-box">
-  <span class="article-link-icon">📖</span>
-  <span class="article-link-body">
-    <strong>相性診断とは？</strong>
-    <small>誕生日・血液型・星座で相性を占う仕組みを解説</small>
-  </span>
-  <span class="article-link-arrow">→</span>
-</a>
-        <div class="nav-cards-section" style="padding:2rem 0 0">
-          <h3>✦ 次はこれを試してみては？ ✦</h3>
-          <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'aisho'); ?>
-        </div>
+        <?php
+        $articleUrl   = '/articles/aisho/';
+        $articleIcon  = '📖';
+        $articleTitle = '相性診断とは？';
+        $articleDesc  = '誕生日・血液型・星座で相性を占う仕組みを解説';
+        $contextKey   = 'aisho';
+        $retryLabel   = 'もう一度診断する';
+        $retryType    = 'link';
+        $retryValue   = '/aisho.php';
+        require __DIR__.'/inc/result-footer.php';
+        ?>
       </div>
       <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('result');});</script>
       <?php endif;?>

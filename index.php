@@ -1168,6 +1168,12 @@ header.site-header{
           <div class="page-card-desc">元命・主星・従星から才能・恋愛・仕事適性を読み解く性格占術</div>
           <a href="/sanmei" class="page-card-btn btn-teal">鑑定する →</a>
         </div>
+        <div class="page-card pc-rose">
+          <div class="page-card-label">Western Astrology</div>
+          <div class="page-card-title">⭐ 西洋占星術</div>
+          <div class="page-card-desc">太陽星座×内面タイプ×時間帯で個性・恋愛・仕事適性を深掘り鑑定</div>
+          <a href="/seiza" class="page-card-btn btn-rose">鑑定する →</a>
+        </div>
         <div class="page-card pc-gold">
           <div class="page-card-label">MBTI × Zodiac</div>
           <div class="page-card-title">🧠 MBTI×星座 性格診断</div>

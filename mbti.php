@@ -444,19 +444,17 @@ body{top:0!important}
       </div>
 
       <?php require __DIR__.'/inc/share-btns.php'; ?>
-      <button class="retry-btn" onclick="restart()">もう一度診断する</button>
-<a href="/articles/mbti/" class="article-link-box">
-  <span class="article-link-icon">📖</span>
-  <span class="article-link-body">
-    <strong>MBTI診断とは？</strong>
-    <small>16タイプの性格と4つの指標をわかりやすく解説</small>
-  </span>
-  <span class="article-link-arrow">→</span>
-</a>
-      <div class="nav-cards-section" style="padding:2rem 0 0">
-        <h3>✦ 次はこれを試してみては？ ✦</h3>
-        <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'mbti'); ?>
-      </div>
+      <?php
+      $articleUrl   = '/articles/mbti/';
+      $articleIcon  = '📖';
+      $articleTitle = 'MBTI診断とは？';
+      $articleDesc  = '16タイプの性格と4つの指標をわかりやすく解説';
+      $contextKey   = 'mbti';
+      $retryLabel   = 'もう一度診断する';
+      $retryType    = 'js';
+      $retryValue   = 'restart()';
+      require __DIR__.'/inc/result-footer.php';
+      ?>
     </div>
 
   </div><!-- /.shindan-card -->

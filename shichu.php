@@ -294,21 +294,18 @@ footer a:hover{color:var(--gold)}
     <!-- 今年の運勢 -->
     <div class="nenun-card" id="nenunCard"></div>
 
-    <!-- Share -->
-    <div style="margin-bottom:1.5rem">
-      <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
-      <?php require __DIR__.'/inc/share-btns.php'; ?>
-    </div>
-
-    <!-- ランダムカード -->
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?php echo _nav_cards(3,'shichu'); ?>
-    </div>
-
-    <div class="retry-wrap">
-      <button class="retry-btn" onclick="resetForm()">← もう一度算出する</button>
-    </div>
+    <?php require __DIR__.'/inc/share-btns.php'; ?>
+    <?php
+    $articleUrl   = '/articles/shichu/';
+    $articleIcon  = '☯️';
+    $articleTitle = '四柱推命とは？';
+    $articleDesc  = '命式・十干・十二支・通変星の意味をわかりやすく解説';
+    $contextKey   = 'shichu';
+    $retryLabel   = 'もう一度算出する';
+    $retryType    = 'js';
+    $retryValue   = 'resetForm()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 
   <p class="disclaimer">
