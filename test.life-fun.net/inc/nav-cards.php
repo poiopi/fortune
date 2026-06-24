@@ -13,6 +13,7 @@ $_NAV_PAGES = [
   'seimei'     => ['name'=>'姓名判断',       'url'=>'/seimei',     'desc'=>'名前に宿る運命を五格で鑑定する',     'icon'=>'✍️'],
   'shichu'     => ['name'=>'四柱推命',       'url'=>'/shichu',     'desc'=>'命式・十神・大運を本格算出する',       'icon'=>'🔯'],
   'geimei'     => ['name'=>'芸名診断',       'url'=>'/geimei',     'desc'=>'大喜利で見つける最強の芸名',             'icon'=>'🎭'],
+  'sanmei'     => ['name'=>'算命学鑑定',     'url'=>'/sanmei',     'desc'=>'元命・主星・従星で本質と才能を読む',       'icon'=>'☯️'],
 ];
 
 // $count枚カードを出力（$excludeは現在ページキー）
