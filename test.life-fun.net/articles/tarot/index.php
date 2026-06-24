@@ -1,4 +1,8 @@
-<?php declare(strict_types=1); ?>
+﻿<?php
+declare(strict_types=1);
+require_once __DIR__ . '/../../inc/auto-link.php';
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -138,6 +142,8 @@
     .cta-box{flex-direction:column;align-items:flex-start}
     .card-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
   }
+.al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
+  .al-link:hover{color:var(--accent-lt)}
   </style>
 
   <!-- FAQ構造化データ -->
@@ -385,3 +391,8 @@ function toggleFaq(el){
 
 </body>
 </html>
+<?php
+$html = ob_get_clean();
+echo autoLink($html, 'tarot');
+?>
+
