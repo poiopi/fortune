@@ -1,4 +1,8 @@
-<?php declare(strict_types=1); ?>
+﻿<?php
+declare(strict_types=1);
+require_once __DIR__ . '/../../inc/auto-link.php';
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -89,6 +93,8 @@
   .art-footer ul a:hover{color:var(--accent)}
   .aft-copy{font-size:.72rem;color:var(--muted);text-align:center;font-family:var(--ff-mono);letter-spacing:.08em}
   @media(max-width:600px){.art-footer-inner{grid-template-columns:1fr;gap:1.5rem}.cta-box{flex-direction:column;align-items:flex-start}}
+.al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
+  .al-link:hover{color:var(--accent-lt)}
   </style>
 
   <script type="application/ld+json">
@@ -277,3 +283,8 @@ function toggleFaq(el){
 
 </body>
 </html>
+<?php
+$html = ob_get_clean();
+echo autoLink($html, 'zense');
+?>
+
