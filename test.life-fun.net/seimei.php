@@ -201,6 +201,13 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .retry-wrap{text-align:center;margin:2rem 0}
 .retry-btn-link{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.6rem;border:1px solid var(--border2);border-radius:20px;font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);cursor:pointer;text-decoration:none;background:none;transition:color .2s,border-color .2s}
 .retry-btn-link:hover{color:var(--text);border-color:var(--violet)}
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 
 .disclaimer{max-width:900px;margin:0 auto 1.5rem;padding:0 1.2rem;text-align:center;font-size:.72rem;color:var(--muted);line-height:1.8}
 
@@ -288,6 +295,14 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
   <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'seimei'); ?></div>
   <div class="retry-wrap">
     <button class="retry-btn-link" onclick="resetForm()">← もう一度鑑定する</button>
+<a href="/articles/seimei/" class="article-link-box" style="margin-top:1rem">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>姓名判断とは？</strong>
+    <small>五格・画数・吉数の意味をわかりやすく解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
   </div>
 </div>
 

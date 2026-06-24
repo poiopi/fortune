@@ -36,6 +36,8 @@ require_once __DIR__.'/nav-cards.php';
         <li><a href="/articles/tarot/">タロット占いとは</a></li>
         <li><a href="/articles/shichu/">四柱推命とは</a></li>
         <li><a href="/articles/kyusei/">九星気学とは</a></li>
+        <li><a href="/articles/numerology/">数秘術とは</a></li>
+        <li><a href="/articles/seimei/">姓名判断とは</a></li>
       </ul>
     </div>
     <div class="sf-col">

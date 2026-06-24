@@ -112,6 +112,13 @@ header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-fi
 
 .share-area{text-align:center;margin-top:1.5rem}
 .retry-btn{display:inline-block;padding:.65rem 1.4rem;background:rgba(155,114,239,.15);border:1px solid var(--border2);color:var(--violet-lt);border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-decoration:none;cursor:pointer}
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 
 /* ─── FOOTER ─── */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -213,6 +220,14 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     <div class="share-area">
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
+<a href="/articles/zense/" class="article-link-box" style="margin-top:1rem">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>前世診断とは？</strong>
+    <small>前世・輪廻転生・カルマの意味をわかりやすく解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
       <div class="nav-cards-section" style="padding:2rem 0 0">
         <h3>✦ 次はこれを試してみては？ ✦</h3>
         <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'zense'); ?>
