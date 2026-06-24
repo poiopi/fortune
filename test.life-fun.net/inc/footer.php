@@ -22,7 +22,7 @@ require_once __DIR__.'/nav-cards.php';
     <div class="sf-col">
       <p class="sf-heading">人気の占い</p>
       <ul>
-        <li><a href="/shichu">三星統合鑑定</a></li>
+        <li><a href="/">三星統合鑑定</a></li>
         <li><a href="/tarot">タロット占い</a></li>
         <li><a href="/shichu">四柱推命</a></li>
         <li><a href="/sanmei">算命学</a></li>
