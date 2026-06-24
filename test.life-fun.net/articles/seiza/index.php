@@ -220,7 +220,7 @@ ob_start();
     <h2>12星座の特徴</h2>
     <p>黄道を12等分した星座を「黄道十二宮」と呼び、太陽が各星座に滞在する時期が誕生日となる人の太陽星座になります。各星座には固有の気質とエレメント・クオリティがあります。</p>
     <div class="sign-grid">
-      <div class="sign-card"><span class="sign-symbol">♈</span><div><div class="sign-name">牡羊座</div><div class="sign-period">3/21〜4/19</div><div class="sign-elem">火 ／ 活動宮</div></div></div>
+      <a href="/articles/seiza/aries/" class="sign-card" style="text-decoration:none"><span class="sign-symbol">♈</span><div><div class="sign-name">牡羊座</div><div class="sign-period">3/21〜4/19</div><div class="sign-elem">火 ／ 活動宮</div></div></a>
       <div class="sign-card"><span class="sign-symbol">♉</span><div><div class="sign-name">牡牛座</div><div class="sign-period">4/20〜5/20</div><div class="sign-elem">地 ／ 不動宮</div></div></div>
       <div class="sign-card"><span class="sign-symbol">♊</span><div><div class="sign-name">双子座</div><div class="sign-period">5/21〜6/21</div><div class="sign-elem">風 ／ 柔軟宮</div></div></div>
       <div class="sign-card"><span class="sign-symbol">♋</span><div><div class="sign-name">蟹座</div><div class="sign-period">6/22〜7/22</div><div class="sign-elem">水 ／ 活動宮</div></div></div>

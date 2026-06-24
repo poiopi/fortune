@@ -30,6 +30,8 @@ $_autoLinkMap = [
     '前世診断'   => ['/articles/zense/',       'zense'],
     '守護霊'     => ['/articles/guardian/',    'guardian'],
     '西洋占星術' => ['/articles/seiza/',       'seiza'],
+    '12星座'     => ['/articles/seiza/',       'seiza'],
+    '牡羊座'     => ['/articles/seiza/aries/', 'aries'],
 ];
 
 function autoLink(string $html, string $currentSlug): string {
