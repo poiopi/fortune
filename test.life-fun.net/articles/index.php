@@ -90,9 +90,13 @@
   }
   .btn-fortune:hover{border-color:var(--accent);background:rgba(124,77,206,.05)}
 
+  /* ── HUB INTRO ── */
+  .hub-intro{padding:1.5rem 0 0;border-bottom:1px solid var(--border);padding-bottom:1.5rem}
+  .hub-intro p{font-size:.88rem;color:#444;line-height:1.9;margin-bottom:.75rem}
+  .hub-intro p:last-child{margin-bottom:0}
+
   /* ── COMING SOON ── */
-  .article-card.coming{opacity:.55}
-  .coming-badge{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--border);border-radius:20px;padding:.2rem .6rem;display:inline-block}
+  .btn-coming{background:var(--border)!important;color:var(--muted)!important;cursor:default;pointer-events:none}
 
   /* ── POPULAR ── */
   .popular-section{background:var(--bg2);border-radius:14px;padding:1.5rem;margin:2rem 0}
@@ -141,8 +145,14 @@
 
   <div class="hub-hero">
     <span class="hub-label">ARTICLES · 占い解説ガイド</span>
-    <h1>占術を知ると、占いが変わる</h1>
-    <p>タロット・四柱推命・九星気学など各占術の意味・歴史・活用方法を解説。無料占いをより深く楽しむためのガイドです。</p>
+    <h1>無料占いをもっと楽しむための解説ガイド</h1>
+    <p>タロット・四柱推命・九星気学・MBTIなど<br>各占術の意味や歴史、活用方法を解説します。</p>
+  </div>
+
+  <div class="hub-intro">
+    <p>占いには、タロット占い・四柱推命・九星気学・数秘術・姓名判断・MBTI診断など、様々な種類があります。それぞれ異なる視点から「あなた」を映し出し、活用場面も異なります。</p>
+    <p>たとえばタロット占いは「今この瞬間の状況」を直感的に読み取るのに向いており、四柱推命は「生まれ持った性質と人生の流れ」を長期的に分析するのに優れています。九星気学は「今年・来年の運気の周期」を把握したいときに重宝され、数秘術は「人生のテーマと才能」を掘り下げます。</p>
+    <p>このページでは、各占術の基礎知識・歴史・読み方・活用シーンをカテゴリ別にまとめています。気になる占術の解説を読んでから占うと、結果がより深く理解できるようになります。</p>
   </div>
 
   <?php
@@ -183,20 +193,20 @@
     </div>
     <div class="article-grid">
       <?php foreach($cat['items'] as $item): ?>
-      <div class="article-card<?= $item['ready'] ? '' : ' coming' ?>">
+      <div class="article-card">
         <div class="article-card-head">
           <span class="article-card-icon"><?= $item['icon'] ?></span>
           <span class="article-card-title"><?= $item['title'] ?></span>
         </div>
         <p class="article-card-desc"><?= $item['desc'] ?></p>
-        <?php if($item['ready']): ?>
         <div class="card-btns">
+          <?php if($item['ready']): ?>
           <a href="<?= $item['url_article'] ?>" class="btn-read">📖 解説を読む</a>
+          <?php else: ?>
+          <span class="btn-read btn-coming">📖 解説準備中</span>
+          <?php endif; ?>
           <a href="<?= $item['url_tool'] ?>" class="btn-fortune">🔮 占う</a>
         </div>
-        <?php else: ?>
-        <span class="coming-badge">解説ページ準備中</span>
-        <?php endif; ?>
       </div>
       <?php endforeach; ?>
     </div>
