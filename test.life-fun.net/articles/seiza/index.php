@@ -26,8 +26,8 @@
     --ff-serif:'Shippori Mincho',serif;
     --ff-sans:'Zen Kaku Gothic New',sans-serif;
     --ff-mono:'DM Mono',monospace;
-    --accent:#c2185b;
-    --accent-lt:#e91e63;
+    --accent:#7c4dce;
+    --accent-lt:#9b72ef;
     --gold:#c9a84c;
     --text:#1a1a2e;
     --muted:#6b6b8a;
@@ -52,7 +52,7 @@
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  .cta-box{background:linear-gradient(135deg,rgba(194,24,91,.06) 0%,rgba(240,98,146,.04) 100%);border:1px solid rgba(194,24,91,.2);border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+  .cta-box{background:linear-gradient(135deg,rgba(124,77,206,.06) 0%,rgba(155,114,239,.04) 100%);border:1px solid rgba(124,77,206,.2);border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
   .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
   .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
   .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}
@@ -73,7 +73,7 @@
   /* Sign grid */
   .sign-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:.75rem;margin-top:1rem}
   .sign-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;display:flex;align-items:flex-start;gap:.75rem;transition:border-color .2s}
-  .sign-card:hover{border-color:rgba(194,24,91,.35)}
+  .sign-card:hover{border-color:rgba(124,77,206,.35)}
   .sign-symbol{font-size:1.5rem;line-height:1;flex-shrink:0}
   .sign-name{font-family:var(--ff-serif);font-size:.9rem;font-weight:700;color:var(--text)}
   .sign-period{font-family:var(--ff-mono);font-size:.6rem;color:var(--muted);margin-top:.15rem}
@@ -100,7 +100,7 @@
   .quality-desc{font-size:.78rem;color:#444;line-height:1.7}
 
   /* Highlight box */
-  .highlight-box{background:rgba(194,24,91,.05);border:1px solid rgba(194,24,91,.18);border-radius:10px;padding:1.1rem 1.3rem;margin:1rem 0}
+  .highlight-box{background:rgba(124,77,206,.05);border:1px solid rgba(124,77,206,.18);border-radius:10px;padding:1.1rem 1.3rem;margin:1rem 0}
   .highlight-box p{font-size:.88rem;color:#333;line-height:1.9;margin-bottom:0}
   .highlight-box strong{color:var(--accent)}
 
@@ -117,7 +117,7 @@
   .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}
   .related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}
   .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
-  .related-card.featured{background:linear-gradient(135deg,rgba(194,24,91,.07),rgba(240,98,146,.04));border-color:rgba(194,24,91,.3)}
+  .related-card.featured{background:linear-gradient(135deg,rgba(124,77,206,.07),rgba(155,114,239,.04));border-color:rgba(124,77,206,.3)}
   .related-card.featured:hover{border-color:var(--accent)}
   .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
   .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}

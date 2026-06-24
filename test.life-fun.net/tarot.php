@@ -322,6 +322,15 @@
 #google_translate_element .goog-te-gadget select{background:rgba(8,6,15,.9);color:#8a7db5;border:1px solid rgba(160,130,220,.3);border-radius:6px;font-size:.65rem;padding:.15rem .3rem;cursor:pointer}
 .goog-te-banner-frame{display:none!important}
 body{top:0!important}
+.rf-article-link{display:flex;align-items:center;gap:.9rem;background:rgba(124,77,206,.06);border:1px solid rgba(124,77,206,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.rf-article-link:hover{border-color:#9b72ef;background:rgba(124,77,206,.12)}
+.rf-article-icon{font-size:1.4rem;flex-shrink:0}
+.rf-article-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.rf-article-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:#9b72ef}
+.rf-article-body small{font-size:.75rem;color:var(--muted,#6b6b8a)}
+.rf-article-arrow{color:#9b72ef;font-family:var(--ff-mono,monospace);font-size:.9rem;flex-shrink:0}
+.rf-retry-btn{display:block;width:100%;padding:.9rem;background:#7c4dce;color:#fff;border:none;border-radius:10px;font-family:var(--ff-sans,sans-serif);font-size:.9rem;font-weight:500;cursor:pointer;text-align:center;text-decoration:none;margin-top:1.5rem;transition:background .2s;letter-spacing:.04em}
+.rf-retry-btn:hover{background:#6a3fc2}
   </style>
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -646,15 +655,15 @@ body{top:0!important}
 
       <?php require __DIR__.'/inc/share-btns.php'; ?>
 
-      <a href="/articles/tarot/" class="article-link-box">
-        <span class="article-link-icon">📖</span>
-        <span class="article-link-body">
+      <a href="/articles/tarot/" class="rf-article-link">
+        <span class="rf-article-icon">📖</span>
+        <span class="rf-article-body">
           <strong>タロット占いとは？</strong>
           <small>22枚の大アルカナや正位置・逆位置の意味を解説</small>
         </span>
-        <span class="article-link-arrow">→</span>
+        <span class="rf-article-arrow">→</span>
       </a>
-      <button class="retry-btn" onclick="resetAll()">&#8617; もう一度カードを引く</button>
+      <button class="rf-retry-btn" onclick="resetAll()">もう一度カードを引く</button>
     `;
 
     document.getElementById('tarot-nav-cards').style.display='block';

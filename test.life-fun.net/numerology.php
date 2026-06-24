@@ -496,20 +496,18 @@ body{top:0!important}
     </div>
 
     <?php require __DIR__.'/inc/share-btns.php'; ?>
-    <a href="/numerology.php" class="retry-btn">もう一度診断する</a>
-<a href="/articles/numerology/" class="article-link-box">
-  <span class="article-link-icon">📖</span>
-  <span class="article-link-body">
-    <strong>数秘術とは？</strong>
-    <small>運命数の計算方法と1〜9の意味を解説</small>
-  </span>
-  <span class="article-link-arrow">→</span>
-</a>
     <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'numerology'); ?>
-    </div>
+    <?php
+    $articleUrl   = '/articles/numerology/';
+    $articleIcon  = '📖';
+    $articleTitle = '数秘術とは？';
+    $articleDesc  = '運命数の計算方法と1〜9の意味を解説';
+    $contextKey   = 'numerology';
+    $retryLabel   = 'もう一度診断する';
+    $retryType    = 'link';
+    $retryValue   = '/numerology.php';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 
   <?php endif; ?>
