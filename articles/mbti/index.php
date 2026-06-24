@@ -92,14 +92,6 @@ ob_start();
   .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
   .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
   .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
-  .art-footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 1.2rem 1.5rem;margin-top:3rem}
-  .art-footer-inner{max-width:780px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
-  .aft-heading{font-size:.68rem;font-weight:500;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.6rem;font-family:var(--ff-mono);padding-bottom:.5rem;border-bottom:1px solid var(--border)}
-  .art-footer ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
-  .art-footer ul a{font-size:.8rem;color:var(--muted);text-decoration:none;transition:color .2s}
-  .art-footer ul a:hover{color:var(--accent)}
-  .aft-copy{font-size:.72rem;color:var(--muted);text-align:center;font-family:var(--ff-mono);letter-spacing:.08em}
-  @media(max-width:600px){.art-footer-inner{grid-template-columns:1fr;gap:1.5rem}.cta-box{flex-direction:column;align-items:flex-start}.type-grid{grid-template-columns:repeat(2,1fr)}}
 .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
   </style>
@@ -279,41 +271,6 @@ ob_start();
 
 </div>
 
-<footer class="art-footer">
-  <div class="art-footer-inner">
-    <div class="aft-col">
-      <p class="aft-heading">人気の占い</p>
-      <ul>
-        <li><a href="/shichu">三星統合鑑定</a></li>
-        <li><a href="/tarot">タロット占い</a></li>
-        <li><a href="/shichu">四柱推命</a></li>
-        <li><a href="/mbti">MBTI×星座診断</a></li>
-        <li><a href="/calendar">開運カレンダー</a></li>
-      </ul>
-    </div>
-    <div class="aft-col">
-      <p class="aft-heading">解説ガイド</p>
-      <ul>
-        <li><a href="/articles/">占い解説ガイド</a></li>
-        <li><a href="/articles/tarot/">タロット占いとは</a></li>
-        <li><a href="/articles/shichu/">四柱推命とは</a></li>
-        <li><a href="/articles/kyusei/">九星気学とは</a></li>
-        <li><a href="/articles/numerology/">数秘術とは</a></li>
-        <li><a href="/articles/mbti/">MBTI診断とは</a></li>
-        <li><a href="/articles/seimei/">姓名判断とは</a></li>
-      </ul>
-    </div>
-    <div class="aft-col">
-      <p class="aft-heading">サイト情報</p>
-      <ul>
-        <li><a href="/profile">運営者情報</a></li>
-        <li><a href="/privacy">プライバシーポリシー</a></li>
-        <li><a href="/contact">お問い合わせ</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="aft-copy">© <?= date('Y') ?> 占いPortal</p>
-</footer>
 
 <script>
 function toggleFaq(el){
@@ -322,6 +279,7 @@ function toggleFaq(el){
 }
 </script>
 
+<?php $currentSlug='mbti'; $pageType='article'; require __DIR__.'/../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
