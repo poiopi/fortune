@@ -879,8 +879,7 @@ function showResult(){
   stopSparkle();
   renderResult(_animResult);
   const rs=document.getElementById('resultSection');
-  rs.style.display='block';
-  setTimeout(()=>rs.scrollIntoView({behavior:'smooth',block:'start'}),80);
+  scrollToResult('resultSection');
 }
 
 function resetForm(){

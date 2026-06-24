@@ -732,7 +732,7 @@ footer a:hover{color:var(--gold)}
         require __DIR__.'/inc/result-footer.php';
         ?>
       </div>
-      <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});</script>
+      <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('result');});</script>
       <?php endif;?>
 
     </div><!-- /main-col -->

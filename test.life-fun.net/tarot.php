@@ -668,7 +668,7 @@ body{top:0!important}
 
     document.getElementById('tarot-nav-cards').style.display='block';
     window._shareText = `${card.name}（${dirLabel}）が出ました！✨`;
-    setTimeout(function(){ document.getElementById('result-section').scrollIntoView({behavior:'smooth',block:'start'}); }, 80);
+    scrollToResult('result-section');
   }
 
   // ══ リセット ════════════════════════════════════════════════════

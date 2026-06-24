@@ -646,8 +646,7 @@ function _calcAndRender(year, month, day) {
 
   // 表示切り替え
   document.getElementById('formArea').style.display = 'none';
-  document.getElementById('resultSection').style.display = 'block';
-  document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  scrollToResult('resultSection');
 }
 
 function copyPageUrl() {
@@ -752,8 +751,7 @@ function resetForm() {
   `;
 
   document.getElementById('formArea').style.display = 'none';
-  document.getElementById('resultSection').style.display = 'block';
-  document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  scrollToResult('resultSection');
 })();
 </script>
 </body>

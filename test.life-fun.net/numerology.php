@@ -414,7 +414,7 @@ body{top:0!important}
   <?php else: ?>
 
   <!-- 結果表示 -->
-  <div class="form-card">
+  <div class="form-card" id="resultSection">
 
     <div class="result-hero">
       <div class="result-name-badge"><?= htmlspecialchars($result['name']) ?> さん ／ <?= $result['birthdate'] ?></div>
@@ -496,7 +496,7 @@ body{top:0!important}
     </div>
 
     <?php require __DIR__.'/inc/share-btns.php'; ?>
-    <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
+    <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('resultSection');});</script>
     <?php
     $articleUrl   = '/articles/numerology/';
     $articleIcon  = '📖';
