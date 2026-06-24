@@ -254,21 +254,17 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 
     <div class="share-area">
       <?php require __DIR__.'/inc/share-btns.php'; ?>
-<a href="/articles/guardian/" class="article-link-box" style="margin-top:1rem">
-  <span class="article-link-icon">📖</span>
-  <span class="article-link-body">
-    <strong>守護霊診断とは？</strong>
-    <small>守護霊・守護獣の意味と種類をわかりやすく解説</small>
-  </span>
-  <span class="article-link-arrow">→</span>
-</a>
-      <div class="nav-cards-section" style="padding:2rem 0 0">
-        <h3>✦ 次はこれを試してみては？ ✦</h3>
-        <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'guardian'); ?>
-      </div>
-      <div class="retry-wrap" style="text-align:center;margin:2rem 0">
-        <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
-      </div>
+      <?php
+      $articleUrl   = '/articles/guardian/';
+      $articleIcon  = '📖';
+      $articleTitle = '守護霊診断とは？';
+      $articleDesc  = '守護霊・守護獣の意味と種類をわかりやすく解説';
+      $contextKey   = 'guardian';
+      $retryLabel   = 'もう一度診断する';
+      $retryType    = 'js';
+      $retryValue   = 'resetForm()';
+      require __DIR__.'/inc/result-footer.php';
+      ?>
     </div>
   </div>
 </div>

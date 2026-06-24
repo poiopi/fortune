@@ -439,12 +439,15 @@ body{top:0!important}
     </div>
 
     <?php require __DIR__.'/inc/share-btns.php'; ?>
-    <a href="/kyusei.php" class="retry-btn">もう一度診断する</a>
     <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'kyusei'); ?>
-    </div>
+    <?php
+    $articleUrl  = null;
+    $contextKey  = 'kyusei';
+    $retryLabel  = 'もう一度診断する';
+    $retryType   = 'link';
+    $retryValue  = '/kyusei.php';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 
   <?php endif; ?>

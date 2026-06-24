@@ -247,23 +247,17 @@ footer a:hover{color:var(--gold)}
 
     <div class="share-wrap" id="shareWrap"></div>
 
-    <a href="/articles/seiza/" class="article-link-box">
-      <span class="article-link-icon">⭐</span>
-      <span class="article-link-body">
-        <strong>西洋占星術とは？</strong>
-        <small>12星座・エレメント・クオリティの意味と活用方法を解説</small>
-      </span>
-      <span class="article-link-arrow">→</span>
-    </a>
-
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'seiza'); ?>
-    </div>
-
-    <div class="retry-wrap">
-      <button class="retry-btn" onclick="resetForm()">← もう一度鑑定する</button>
-    </div>
+    <?php
+    $articleUrl   = '/articles/seiza/';
+    $articleIcon  = '⭐';
+    $articleTitle = '西洋占星術とは？';
+    $articleDesc  = '12星座・エレメント・クオリティの意味と活用方法を解説';
+    $contextKey   = 'seiza';
+    $retryLabel   = 'もう一度鑑定する';
+    $retryType    = 'js';
+    $retryValue   = 'resetForm()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>

@@ -265,11 +265,14 @@ footer a:hover{color:var(--gold)}
     <div class="ot">✦ 占い結果 ✦</div>
     <div id="resContent"></div>
     <?php require __DIR__.'/inc/share-btns.php'; ?>
-    <button class="rtry" onclick="resetGame()">▶ もう一度遊ぶ</button>
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'rpg'); ?>
-    </div>
+    <?php
+    $articleUrl  = null;
+    $contextKey  = 'rpg';
+    $retryLabel  = 'もう一度遊ぶ';
+    $retryType   = 'js';
+    $retryValue  = 'resetGame()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 </div>
 

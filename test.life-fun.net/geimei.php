@@ -162,6 +162,8 @@ footer a:hover{color:var(--gold)}
 .loading-text{font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.2em;color:var(--gold)}
 .loading-ring{width:50px;height:50px;border:2px solid rgba(155,114,239,.2);border-top-color:var(--violet);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
+.rf-retry-btn{display:block;width:100%;padding:.9rem;background:#7c4dce;color:#fff;border:none;border-radius:10px;font-family:var(--ff-sans,sans-serif);font-size:.9rem;font-weight:500;cursor:pointer;text-align:center;text-decoration:none;margin-top:1.5rem;transition:background .2s;letter-spacing:.04em}
+.rf-retry-btn:hover{background:#6a3fc2}
 </style>
 </head>
 <body>
@@ -244,7 +246,7 @@ footer a:hover{color:var(--gold)}
       <a href="/seimei" class="seimei-link">✍️ 姓名判断で調べる →</a>
     </div>
     <div class="retry-wrap">
-      <button class="retry-btn" onclick="resetAll()">← もう一度診断する</button>
+      <button class="rf-retry-btn" onclick="resetAll()">もう一度診断する</button>
     </div>
   </div>
 
