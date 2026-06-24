@@ -389,7 +389,7 @@ body{top:0!important}
 
   <?php else: ?>
 
-  <div class="form-card">
+  <div class="form-card" id="resultSection">
     <div class="result-hero">
       <span class="star-symbol"><?= $result['data']['symbol'] ?></span>
       <div class="result-star-num">本命星 第<?= $result['star'] ?>星</div>
@@ -460,7 +460,7 @@ body{top:0!important}
     <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
     <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'kyusei') ?></div>
   </div>
-  <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
+  <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('resultSection');});</script>
 
   <?php endif; ?>
 

@@ -517,8 +517,7 @@ function diagnose(){
   window._shareText=`【前世診断】私の前世は${era}の${region}で生きた「${roleObj.r}」。転生${lifeCount}回目の魂タイプは「${soulType.n}」でした。▼あなたの前世は？ https://life-fun.net/zense`;
 
   document.getElementById('formArea').style.display='none';
-  document.getElementById('result').style.display='block';
-  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
+  scrollToResult('result');
 }
 
 function resetForm(){

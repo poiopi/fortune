@@ -580,8 +580,7 @@ function diagnose(){
     karte.className='karte karte-'+rarity.toLowerCase();
 
     document.getElementById('formArea').style.display='none';
-    document.getElementById('result').style.display='block';
-    document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
+    scrollToResult('result');
   });
 }
 

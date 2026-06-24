@@ -734,7 +734,7 @@ footer a:hover{color:var(--gold)}
           <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'aisho'); ?>
         </div>
       </div>
-      <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});</script>
+      <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('result');});</script>
       <?php endif;?>
 
     </div><!-- /main-col -->

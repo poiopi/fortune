@@ -414,7 +414,7 @@ body{top:0!important}
   <?php else: ?>
 
   <!-- 結果表示 -->
-  <div class="form-card">
+  <div class="form-card" id="resultSection">
 
     <div class="result-hero">
       <div class="result-name-badge"><?= htmlspecialchars($result['name']) ?> さん ／ <?= $result['birthdate'] ?></div>
@@ -505,7 +505,7 @@ body{top:0!important}
   </span>
   <span class="article-link-arrow">→</span>
 </a>
-    <script>document.addEventListener('DOMContentLoaded',function(){var el=document.querySelector('.result-hero');if(el)setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);});</script>
+    <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('resultSection');});</script>
     <div class="nav-cards-section" style="padding:2rem 0 0">
       <h3>✦ 次はこれを試してみては？ ✦</h3>
       <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'numerology'); ?>
