@@ -32,7 +32,7 @@
     --text:#1a1a2e;
     --muted:#6b6b8a;
     --border:#e5e3ee;
-    --bg:#ffffff;
+    --bg:#faf7ff;
     --bg2:#f8f7fc;
   }
   html{font-size:16px;scroll-behavior:smooth}
@@ -253,7 +253,7 @@
 
   <section class="art-section" id="cards">
     <h2>大アルカナ22枚 意味一覧</h2>
-    <p>以下は大アルカナ全22枚のキーワード一覧です。各カードの詳細は今後個別ページで解説予定です。</p>
+    <p>以下は大アルカナ全22枚のキーワード一覧です。</p>
     <div class="card-grid">
       <?php
       $cards = [
