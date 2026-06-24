@@ -871,38 +871,58 @@ footer{
   .lucky-row{padding:.6rem 1rem}
 }
 /* ── ページ導線グリッド ── */
-.page-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-bottom:1.8rem}
+.page-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:.9rem;
+  margin-bottom:1.8rem;
+}
 @media(max-width:560px){.page-grid{grid-template-columns:1fr}}
-.page-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.1rem 1.2rem 1rem;display:flex;flex-direction:column;gap:.45rem;position:relative;overflow:hidden;transition:border-color .2s,transform .15s}
+.page-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.1rem 1.2rem 1rem;
+  display:flex;flex-direction:column;gap:.45rem;
+  position:relative;overflow:hidden;
+  transition:border-color .2s,transform .15s;
+}
 .page-card:hover{border-color:var(--border2);transform:translateY(-2px)}
 .page-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
 .pc-violet::before{background:linear-gradient(90deg,var(--violet),var(--rose))}
-.pc-gold::before{background:linear-gradient(90deg,var(--gold),var(--violet))}
-.pc-teal::before{background:linear-gradient(90deg,var(--teal),var(--gold))}
-.pc-rose::before{background:linear-gradient(90deg,var(--rose),var(--violet))}
-.pc-green::before{background:linear-gradient(90deg,#4a9c5a,#7ecf8a)}
+.pc-gold::before  {background:linear-gradient(90deg,var(--gold),var(--violet))}
+.pc-teal::before  {background:linear-gradient(90deg,var(--teal),var(--gold))}
+.pc-rose::before  {background:linear-gradient(90deg,var(--rose),var(--violet))}
+.pc-green::before {background:linear-gradient(90deg,#4a9c5a,#7ecf8a)}
 .pc-compat::before{background:linear-gradient(90deg,var(--rose),var(--gold))}
-.pc-zense::before{background:linear-gradient(90deg,var(--violet),var(--teal))}
+.pc-zense::before {background:linear-gradient(90deg,var(--violet),var(--teal))}
 .pc-guardian::before{background:linear-gradient(90deg,var(--gold-lt),var(--violet))}
 .pc-seimei::before{background:linear-gradient(90deg,#c9a84c,#8b6914,#c9a84c)}
 .pc-shichu::before{background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal))}
 .page-card-label{font-family:var(--ff-mono);font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
 .page-card-title{font-family:var(--ff-serif);font-size:.95rem;font-weight:600;color:var(--text)}
-.page-card-desc{font-size:.72rem;color:var(--muted);line-height:1.5;flex:1}
-.page-card-btn{display:inline-block;text-align:center;padding:.45rem .8rem;border-radius:7px;font-family:var(--ff-serif);font-size:.78rem;font-weight:600;color:#fff;text-decoration:none;letter-spacing:.06em;transition:opacity .2s;margin-top:.25rem;align-self:flex-start}
+.page-card-desc {font-size:.72rem;color:var(--muted);line-height:1.5;flex:1}
+.page-card-btn{
+  display:inline-block;text-align:center;
+  padding:.45rem .8rem;border-radius:7px;
+  font-family:var(--ff-serif);font-size:.78rem;font-weight:600;
+  color:#fff;text-decoration:none;letter-spacing:.06em;
+  transition:opacity .2s;margin-top:.25rem;align-self:flex-start;
+}
 .page-card-btn:hover{opacity:.85}
 .btn-violet{background:linear-gradient(135deg,var(--teal),var(--violet));box-shadow:0 3px 12px rgba(78,205,196,.3)}
-.btn-gold{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
-.btn-teal{background:linear-gradient(135deg,var(--teal),var(--gold));box-shadow:0 3px 12px rgba(78,205,196,.3)}
-.btn-rose{background:linear-gradient(135deg,var(--rose),var(--violet));box-shadow:0 3px 12px rgba(232,113,154,.3)}
-.btn-green{background:linear-gradient(135deg,#4a9c5a,#2b7a3a);box-shadow:0 3px 12px rgba(74,156,90,.3)}
+.btn-gold  {background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
+.btn-teal  {background:linear-gradient(135deg,var(--teal),var(--gold));box-shadow:0 3px 12px rgba(78,205,196,.3)}
+.btn-rose  {background:linear-gradient(135deg,var(--rose),var(--violet));box-shadow:0 3px 12px rgba(232,113,154,.3)}
+.btn-green {background:linear-gradient(135deg,#4a9c5a,#2b7a3a);box-shadow:0 3px 12px rgba(74,156,90,.3)}
 .btn-compat{background:linear-gradient(135deg,var(--rose),var(--gold));box-shadow:0 3px 12px rgba(232,113,154,.3)}
-.btn-zense{background:linear-gradient(135deg,var(--violet),var(--teal));box-shadow:0 3px 12px rgba(155,114,239,.3)}
+.btn-zense {background:linear-gradient(135deg,var(--violet),var(--teal));box-shadow:0 3px 12px rgba(155,114,239,.3)}
 .btn-guardian{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(201,168,76,.3)}
 .btn-seimei{background:linear-gradient(135deg,#c9a84c,#8b5e00);box-shadow:0 3px 12px rgba(201,168,76,.35)}
 .btn-shichu{background:linear-gradient(135deg,var(--gold),var(--violet));box-shadow:0 3px 12px rgba(155,114,239,.35)}
 .pc-geimei::before{background:linear-gradient(90deg,var(--rose),var(--violet),var(--teal))}
 .btn-geimei{background:linear-gradient(135deg,var(--rose),var(--violet));box-shadow:0 3px 12px rgba(232,113,154,.35)}
+
 /* 鑑定中画面 */
 #loading-overlay{
     position:fixed;
@@ -976,6 +996,16 @@ header.site-header{
 /* ======================
    三星鑑定について
 ====================== */
+.guide-block{margin:1.5rem 0;padding:1.25rem 1.5rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.22);border-radius:14px}
+.guide-block-label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:.5rem}
+.guide-block-title{font-family:'Shippori Mincho',serif;font-size:1rem;font-weight:700;color:var(--text-lt);margin-bottom:.35rem}
+.guide-block-desc{font-size:.8rem;color:var(--muted);line-height:1.7;margin-bottom:.9rem}
+.guide-block-links{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.85rem}
+.guide-link-tag{font-size:.72rem;color:var(--muted);text-decoration:none;padding:.25rem .65rem;border:1px solid rgba(155,114,239,.25);border-radius:20px;transition:border-color .2s,color .2s}
+.guide-link-tag:hover{border-color:var(--violet-lt);color:var(--violet-lt)}
+.guide-block-btn{display:inline-flex;align-items:center;gap:.4rem;font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.08em;color:var(--violet-lt);text-decoration:none;border:1px solid rgba(155,114,239,.35);border-radius:20px;padding:.4rem 1rem;transition:border-color .2s,background .2s}
+.guide-block-btn:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.1)}
+
 .about-box{
     max-width:900px;
     margin:2rem auto 3rem;
@@ -1118,13 +1148,13 @@ header.site-header{
         </div>
       </section>
 
-      <!-- ページ導線グリッド -->
+      <!-- 占いページ 2列グリッド -->
       <div class="page-grid">
         <div class="page-card pc-violet">
           <div class="page-card-label">Tarot</div>
           <div class="page-card-title">🃏 本格タロット占い</div>
           <div class="page-card-desc">カードをめくって今のあなたへのメッセージを受け取る</div>
-          <a href="/tarot.php" class="page-card-btn btn-violet">カードを引く →</a>
+          <a href="/tarot" class="page-card-btn btn-violet">カードを引く →</a>
         </div>
         <div class="page-card pc-shichu">
           <div class="page-card-label">Shichu Suimei</div>
@@ -1136,43 +1166,43 @@ header.site-header{
           <div class="page-card-label">MBTI × Zodiac</div>
           <div class="page-card-title">🧠 MBTI×星座 性格診断</div>
           <div class="page-card-desc">10の質問で性格タイプと星座の組み合わせ運命を診断</div>
-          <a href="/mbti.php" class="page-card-btn btn-gold">診断する →</a>
+          <a href="/mbti" class="page-card-btn btn-gold">診断する →</a>
         </div>
         <div class="page-card pc-teal">
           <div class="page-card-label">Numerology</div>
           <div class="page-card-title">🔢 数秘術診断</div>
           <div class="page-card-desc">生年月日と名前から4つの数字で人生の使命を読み解く</div>
-          <a href="/numerology.php" class="page-card-btn btn-teal">診断する →</a>
+          <a href="/numerology" class="page-card-btn btn-teal">診断する →</a>
         </div>
         <div class="page-card pc-rose">
           <div class="page-card-label">Nine Star Ki</div>
           <div class="page-card-title">⭐ 九星気学診断</div>
           <div class="page-card-desc">生まれ年の九星から運勢・相性・吉方位を鑑定</div>
-          <a href="/kyusei.php" class="page-card-btn btn-rose">診断する →</a>
+          <a href="/kyusei" class="page-card-btn btn-rose">診断する →</a>
         </div>
         <div class="page-card pc-green">
           <div class="page-card-label">RPG Fortune</div>
           <div class="page-card-title">⚔️ RPG占いの村</div>
           <div class="page-card-desc">勇者となって占いの村を冒険しながら運命を知る</div>
-          <a href="/rpg.php" class="page-card-btn btn-green">冒険する →</a>
+          <a href="/rpg" class="page-card-btn btn-green">冒険する →</a>
         </div>
         <div class="page-card pc-compat">
           <div class="page-card-label">Compatibility</div>
           <div class="page-card-title">💑 二人の相性診断</div>
           <div class="page-card-desc">星座と数秘術で恋愛・結婚の相性を鑑定する</div>
-          <a href="/aisho.php" class="page-card-btn btn-compat">診断する →</a>
+          <a href="/aisho" class="page-card-btn btn-compat">診断する →</a>
         </div>
         <div class="page-card pc-zense">
           <div class="page-card-label">Past Life Reading</div>
           <div class="page-card-title">🌀 前世診断</div>
           <div class="page-card-desc">あなたは何回目の転生？魂のカルテを読み解く</div>
-          <a href="/zense.php" class="page-card-btn btn-zense">診断する →</a>
+          <a href="/zense" class="page-card-btn btn-zense">診断する →</a>
         </div>
         <div class="page-card pc-guardian">
           <div class="page-card-label">Guardian Spirit</div>
           <div class="page-card-title">👻 守護霊診断</div>
           <div class="page-card-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚</div>
-          <a href="/guardian.php" class="page-card-btn btn-guardian">召喚する →</a>
+          <a href="/guardian" class="page-card-btn btn-guardian">召喚する →</a>
         </div>
         <div class="page-card pc-seimei">
           <div class="page-card-label">Seimei Handan</div>
@@ -1186,6 +1216,19 @@ header.site-header{
           <div class="page-card-desc">大喜利ゲームで芸風を判定！画数から大吉の芸名を3パターン提案</div>
           <a href="/geimei" class="page-card-btn btn-geimei">診断する →</a>
         </div>
+      </div>
+
+      <!-- 解説ガイド導線 -->
+      <div class="guide-block">
+        <p class="guide-block-label">ARTICLES · 占い解説ガイド</p>
+        <p class="guide-block-title">📖 占いをもっと深く知りたい方へ</p>
+        <p class="guide-block-desc">タロット・四柱推命・MBTIなど各占術の意味・歴史・活用方法をわかりやすく解説しています。</p>
+        <div class="guide-block-links">
+          <a href="/articles/tarot/" class="guide-link-tag">タロット占いとは</a>
+          <a href="/articles/shichu/" class="guide-link-tag">四柱推命とは</a>
+          <a href="/articles/mbti/" class="guide-link-tag">MBTIとは</a>
+        </div>
+        <a href="/articles/" class="guide-block-btn">すべての解説を見る →</a>
       </div>
 
       <!-- 結果（main-colの内側） -->
@@ -1275,12 +1318,6 @@ header.site-header{
         <span class="block-symbol">✨</span>三星統合鑑定書
       </div>
       <div class="integrated-text"><?= htmlspecialchars($result['integrated']) ?></div>
-    </div>
-
-    <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?= _nav_cards(3, 'top') ?>
     </div>
 
     <!-- もう一度 -->
@@ -1411,6 +1448,12 @@ window.addEventListener('load', function(){
 
 </script>
 <script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
+}
+function toggleSpMenu(){
+  document.getElementById('spDropdown').classList.toggle('open');
+}
 document.addEventListener('click',function(e){
   if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
     document.getElementById('spDropdown').classList.remove('open');

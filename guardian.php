@@ -136,15 +136,14 @@ header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-fi
 
 /* シェア */
 .share-area{text-align:center;margin-top:1.5rem}
-.share-label{font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
-.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap;margin-bottom:1rem}
-.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.5rem 1rem;border-radius:20px;font-size:.75rem;font-family:var(--ff-sans);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap;font-weight:600}
-.share-btn:hover{opacity:.8}
-.share-line{background:#06C755;color:#fff}
-.share-x{background:#000;color:#fff}
-.share-fb{background:#1877F2;color:#fff}
-.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 .retry-btn{display:inline-block;padding:.65rem 1.4rem;background:rgba(155,114,239,.15);border:1px solid var(--border2);color:var(--violet-lt);border-radius:8px;font-family:var(--ff-serif);font-size:.85rem;font-weight:600;cursor:pointer}
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 
 /* ─── FOOTER ─── */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -254,16 +253,20 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     </div>
 
     <div class="share-area">
-      <p class="share-label">✦ 結果をシェアする</p>
-      <div class="share-btns">
-        <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
-        <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
-        <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
-        <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
-      </div>
+      <?php require __DIR__.'/inc/share-btns.php'; ?>
       <span class="retry-btn" onclick="resetForm()">もう一度診断</span>
-      <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
-      <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'guardian') ?></div>
+<a href="/articles/guardian/" class="article-link-box" style="margin-top:1rem">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>守護霊診断とは？</strong>
+    <small>守護霊・守護獣の意味と種類をわかりやすく解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
+      <div class="nav-cards-section" style="padding:2rem 0 0">
+        <h3>✦ 次はこれを試してみては？ ✦</h3>
+        <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'guardian'); ?>
+      </div>
     </div>
   </div>
 </div>
@@ -582,21 +585,22 @@ function diagnose(){
   });
 }
 
-function openShare(type){
-  const u=encodeURIComponent('https://life-fun.net/guardian');
-  const txt=window._shareText||'守護霊診断';
-  const urls={line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt),x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt),fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
-  window.open(urls[type],'_blank','noopener');
-}
-function copyShareUrl(){
-  navigator.clipboard.writeText('https://life-fun.net/guardian').then(()=>{
-    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
-  });
-}
 function resetForm(){
   document.getElementById('formArea').style.display='block';
   document.getElementById('result').style.display='none';
   window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleSpMenu(){
+  const d=document.getElementById('spDropdown');
+  d.style.display=d.style.display==='block'?'none':'block';
+}
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
+    const d=document.getElementById('spDropdown');if(d)d.style.display='none';
+  }
+});
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
 </script>
 </body>

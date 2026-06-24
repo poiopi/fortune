@@ -17,25 +17,52 @@ require_once __DIR__.'/nav-cards.php';
   <h3>✦ 他の占いも試してみる ✦</h3>
   <?= _nav_cards(9, $_p) ?>
 </div>
-<footer>
-  <?= $_p==='top' ? '占いポータル トップ' : '<a href="/">占いポータル トップ</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='tarot' ? 'タロット占い' : '<a href="/tarot">タロット占い</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='shichu' ? '四柱推命' : '<a href="/shichu">四柱推命</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='calendar' ? '開運カレンダー' : '<a href="/calendar">開運カレンダー</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='mbti' ? 'MBTI×星座診断' : '<a href="/mbti">MBTI×星座診断</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='numerology' ? '数秘術診断' : '<a href="/numerology">数秘術診断</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='kyusei' ? '九星気学診断' : '<a href="/kyusei">九星気学診断</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='rpg' ? 'RPG占い' : '<a href="/rpg">RPG占い</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='aisho' ? '相性診断' : '<a href="/aisho">相性診断</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='zense' ? '前世診断' : '<a href="/zense">前世診断</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='guardian' ? '守護霊診断' : '<a href="/guardian">守護霊診断</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='seimei' ? '姓名判断' : '<a href="/seimei">姓名判断</a>' ?> &nbsp;/&nbsp;
-  <?= $_p==='geimei' ? '芸名診断' : '<a href="/geimei">芸名診断</a>' ?> &nbsp;/&nbsp;
-  <a href="/privacy">プライバシーポリシー</a> &nbsp;/&nbsp;
-  <a href="/profile">運営者情報</a> &nbsp;/&nbsp;
-  <a href="/contact">お問い合わせ</a><br>
-  &copy; <?= date('Y') ?> 三星統合鑑定
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="sf-col">
+      <p class="sf-heading">人気の占い</p>
+      <ul>
+        <li><a href="/shichu">三星統合鑑定</a></li>
+        <li><a href="/tarot">タロット占い</a></li>
+        <li><a href="/shichu">四柱推命</a></li>
+        <li><a href="/mbti">MBTI×星座診断</a></li>
+        <li><a href="/calendar">開運カレンダー</a></li>
+      </ul>
+    </div>
+    <div class="sf-col">
+      <p class="sf-heading">解説ガイド</p>
+      <ul>
+        <li><a href="/articles/">占い解説ガイド</a></li>
+        <li><a href="/articles/tarot/">タロット占いとは</a></li>
+        <li><a href="/articles/shichu/">四柱推命とは</a></li>
+        <li><a href="/articles/kyusei/">九星気学とは</a></li>
+        <li><a href="/articles/numerology/">数秘術とは</a></li>
+        <li><a href="/articles/seimei/">姓名判断とは</a></li>
+      </ul>
+    </div>
+    <div class="sf-col">
+      <p class="sf-heading">サイト情報</p>
+      <ul>
+        <li><a href="/profile">運営者情報</a></li>
+        <li><a href="/privacy">プライバシーポリシー</a></li>
+        <li><a href="/contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="sf-copy">&copy; <?= date('Y') ?> 占いPortal</p>
 </footer>
+<style>
+.site-footer{border-top:1px solid rgba(160,130,220,.18);padding:2.5rem 1.2rem 1.5rem;margin-top:2rem}
+.site-footer-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
+.sf-heading{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;color:#c9a84c;text-transform:uppercase;margin-bottom:.6rem;padding-bottom:.5rem;border-bottom:1px solid rgba(160,130,220,.18)}
+.site-footer ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.site-footer ul a{font-size:.8rem;color:#8a7db5;text-decoration:none;transition:color .2s}
+.site-footer ul a:hover{color:#c4a8f5}
+.sf-copy{font-family:'DM Mono',monospace;font-size:.68rem;color:rgba(138,125,181,.45);text-align:center;letter-spacing:.1em}
+@media(max-width:600px){
+  .site-footer-inner{grid-template-columns:1fr;gap:1.5rem}
+}
+</style>
 <!-- ═══ フローティングメニュー ═══ -->
 <style>
 /* SPではヘッダーのハンバーガーを非表示 → フローティングに一本化 */

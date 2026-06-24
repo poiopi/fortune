@@ -39,76 +39,240 @@ function lpBonus(int $a,int $b): int {
   return (in_array($a,[11,22,33])||in_array($b,[11,22,33]))?1:0;
 }
 
-// 告白の言葉
-$CONFESS=[
-  '山羊座'=>'「あなたの誠実さと芯の強さに、ずっと惹かれてきました。一緒に未来を歩んでいきたいです。」',
-  '水瓶座'=>'「世界中探しても、あなたみたいな人はいない。あなただけが私の心をわかってくれる気がする。」',
-  '魚座'  =>'「あなたのそばにいると、なぜか心が落ち着くんです。もっとそばにいさせてほしい。」',
-  '牡羊座'=>'「あなたの情熱と行動力に、気づいたら心を奪われていました。私をもっと刺激してください。」',
-  '牡牛座'=>'「あなたと一緒にいる時間が一番ほっとします。これからもずっと隣にいてほしい。」',
-  '双子座'=>'「あなたといると毎日が楽しくて、もっと一緒にいたいって思う。正直に言うと、好きです。」',
-  '蟹座'  =>'「あなたの優しさに何度も救われました。今度は私が、あなたを大切にしたいんです。」',
-  '獅子座'=>'「あなたの輝きに最初から目を奪われていました。あなたの隣に立てる人になりたい。」',
-  '乙女座'=>'「あなたの細やかな気遣いと誠実さに、いつの間にか本気になっていました。」',
-  '天秤座'=>'「あなたといると自分の中のバランスが取れる気がします。そんな人、初めてです。」',
-  '蠍座'  =>'「あなたの奥深さに、どんどん引き込まれていきました。あなたのことをもっと知りたい。」',
-  '射手座'=>'「あなたといると世界が広がる気がします。一緒に冒険してみませんか？」',
+// 告白の言葉（パーツ組み合わせ）
+$CONFESS_OPEN=[
+  'ずっと言えなかったんだけど、',
+  'こんなこと急に言うのも変かもだけど、',
+  'うまく言葉にできるかわからないけど、',
+  'ちゃんと伝えたくて。',
+  'ずっと気になってて、もう隠しておけないから言います。',
+  'なんか急に言うのもアレなんだけど、',
+  '今日、どうしても伝えたいことがあって。',
+  'ずっと機会を伺ってたんです。',
+  'あなたには正直に言いたくて。',
+  'うまく伝えられる自信ないけど、',
+  'ずっと言いたかったこと、やっと言える気がして。',
+  'ごめん、急に真面目な話するね。',
+  'これ言ったら関係が変わるかなって不安なんだけど、',
+  '笑わないで聞いてほしいんだけど、',
+  'なんか緊張してるんだけど、',
+  'これ言うの勇気がいったんだけど、',
+  'もし迷惑だったら忘れてほしいんだけど、',
+  'ちょっと聞いてほしいことがあって、',
+  '前から思ってたことを正直に伝えさせてください。',
+  'ずっとモヤモヤしてたから、言ってしまいます。',
+];
+$CONFESS_FEEL=[
+  'あなたのことが好きです。',
+  'いつの間にか、あなたのことばかり考えるようになってた。',
+  'あなたといると、なんか自分らしくいられる気がするんだよね。',
+  '一緒にいるとほっとする人って、あなたが初めてかも。',
+  'あなたがいる日といない日で、こんなに気持ちが違うなんて思わなかった。',
+  '気づいたら、あなたのことを誰よりも大切に思ってた。',
+  'あなたのこと、もっとそばで見ていたいって思う。',
+  '毎日あなたのことを考えてしまってて、自分でびっくりしてる。',
+  '一緒にいるといつも楽しくて、離れたくないって思う。',
+  'あなたの笑顔を見ると、なんか胸がきゅってなる。',
+  'あなたといる時間が、今一番好きな時間だって気づいた。',
+  'こんなに誰かのことを気になったの、久しぶりで。',
+  'あなたのことを考えると、自然と顔がにやけてしまう。',
+  '最近あなたのことが頭から離れないんだよね。',
+  'あなたといると安心するし、一緒にいたいって自然に思える。',
+  'あなたのことがどんどん好きになってる気がして。',
+  '気がついたら、あなたのことが一番大切になってた。',
+  'あなたにとって特別な人になりたいって思ってる。',
+  'あなたのそばにいると、時間が経つのが早くて困る。',
+  '正直、あなたのことが気になって仕方ない。',
+];
+$CONFESS_ASK=[
+  'よかったら、もっと近くにいさせてほしいです。',
+  'もし気持ちが同じだったら、うれしいんだけど。',
+  'よかったら、二人でどこか行きませんか？',
+  'あなたのことを、もっと知りたいです。',
+  '返事はゆっくりでいいので、考えてもらえませんか？',
+  'これからも、そばにいてほしいです。',
+  '急がなくていいので、気持ちを聞かせてもらえると。',
+  '嫌じゃなかったら、もっと話しましょう。',
+  '一緒にいると楽しいから、また誘ってもいいですか？',
+  'もし同じ気持ちだったら、すごくうれしいです。',
+  'これからも、ずっとそばにいてもいいですか？',
+  '重く考えなくていいので、気が向いたら教えてください。',
+  '一緒に色々なところへ行ってみませんか？',
+  'よかったら、もう少し僕（私）を見てほしいです。',
+  '急かすつもりはないけど、あなたの気持ちが知りたいです。',
+  'もし迷惑じゃなかったら、もう少し一緒にいられませんか？',
+  'よかったら、僕（私）のことも気にかけてほしいな。',
+  'あなたの答えが何であれ、伝えられてよかったです。',
+  'これからも、こうして会えたらいいな。',
+  'これからも、あなたの隣にいたいです。',
+];
+$CONFESS_TIPS=[
+  '伝える場所は、二人だけになれる静かな場所がおすすめです。',
+  '完璧な言葉じゃなくていい。あなたの言葉で伝えることが大切です。',
+  '緊張してもOK。むしろその緊張が、本気の証拠になります。',
+  '「好き」の一言より、なぜ好きなのかを添えると伝わりやすいです。',
+  '笑顔で伝えると、相手も受け取りやすくなります。',
+  '焦らなくて大丈夫。あなたのタイミングで伝えましょう。',
+  '手紙に書いて渡すのも、言葉が整理できておすすめです。',
+  '伝える前に深呼吸。それだけで声が落ち着きます。',
+  'テキストより直接話す方が、気持ちがより伝わります。',
+  '相手がリラックスしているときを選ぶと、気持ちが届きやすいです。',
+  '長い説明より、シンプルな言葉の方が心に刺さります。',
+  '結果がどうであれ、伝えること自体があなたを成長させます。',
+  'あなたの言葉に自信を持って。気持ちは必ず伝わります。',
+  '伝えた後は、相手のペースに合わせてあげてください。',
+  '相手の目を見て話すと、言葉以上のものが伝わりますよ。',
 ];
 
 // デートスポット候補（元素別・複数）
-$DATE_POOLS=[
-  '火'=>[
-    ['spot'=>'富士急ハイランド','desc'=>'絶叫系アトラクションで盛り上がり、二人の距離が一気に縮まります。スリルを共有すると恋が加速！'],
-    ['spot'=>'山でのハイキング＆ピクニック','desc'=>'自然の中で体を動かすことで、お互いの素の姿が見えてきます。山頂で食べるお弁当は格別。'],
-    ['spot'=>'スポーツ観戦（野球・サッカー）','desc'=>'同じチームを応援することで一体感が生まれます。感情を共有できる最高の空間。'],
-    ['spot'=>'バーベキュー＆アウトドア','desc'=>'火を囲んで料理を分け合う体験は、原始的な絆を育てます。'],
-  ],
-  '地'=>[
-    ['spot'=>'老舗料亭でのディナー','desc'=>'丁寧に作られた料理と静かな空間が、落ち着いた会話を生みます。本物志向のお相手に響く選択。'],
-    ['spot'=>'美術館・博物館巡り','desc'=>'アートや歴史を一緒に味わうことで、お互いの感性を知ることができます。'],
-    ['spot'=>'近郊の温泉旅行','desc'=>'日常を離れた特別な空間で、自然と心がほぐれます。温泉宿の夕食も◎。'],
-    ['spot'=>'植物園・庭園散策','desc'=>'季節の花を眺めながらのんびり歩く時間は、安心感と親密感を育てます。'],
-  ],
-  '風'=>[
-    ['spot'=>'おしゃれカフェ巡り','desc'=>'話題のカフェをハシゴしながら会話が弾みます。インスタ映えスポット探しも楽しい！'],
-    ['spot'=>'映画鑑賞＋感想戦','desc'=>'同じ映画を見て語り合うことで、お互いの価値観が見えてきます。ミニシアター系がおすすめ。'],
-    ['spot'=>'読書カフェ・本屋デート','desc'=>'互いが選んだ本を交換する「本交換デート」は知的なお相手に刺さります。'],
-    ['spot'=>'新しくオープンしたスポット開拓','desc'=>'「一緒に初めて行く場所」の記憶は特別なもの。最新のグルメスポットを開拓しましょう。'],
-  ],
-  '水'=>[
-    ['spot'=>'水族館デート','desc'=>'幻想的な水の世界でロマンチックな時間を。暗い空間が自然と距離を縮めます。'],
-    ['spot'=>'ホテルのアフタヌーンティー','desc'=>'非日常の贅沢な空間で、特別な会話の時間を作りましょう。夕食につなげても◎。'],
-    ['spot'=>'夜景スポット＆ドライブ','desc'=>'夜景を見ながら語らう時間は、感受性豊かなお相手の心に深く刻まれます。'],
-    ['spot'=>'川沿い・海辺の散歩＋カフェ','desc'=>'水辺の開放的な雰囲気が、自然と本音の会話を引き出します。'],
-  ],
+// デートスポット：場所カテゴリ（重み付き選択）
+$DATE_LOC_DAILY=[  // 70%で出る・日常系
+  '近所の','家の近くの','駅前の','地元の','実家の近くの',
+  '職場の近くの','いつもの','ちょっと遠くの','隣町の','少し足をのばした先の',
+  '車で30分の','電車で1時間の','歩いて行ける距離の','自転車でちょうどいい',
+  'バス1本で行ける','乗り換えなしで行ける','地元で評判の','地元民しか知らない',
+  '穴場の','前から気になってた','友達に教えてもらった','子供の頃に行ってた',
+  '海沿いの','山の近くの','川沿いの','下町の','港町の',
+  '都心の','郊外の','商店街の','ショッピングモールの','温泉街の',
+  '新しくできた','よく通る道沿いの','話題の','地図で見つけた穴場の',
+  '口コミで知った','SNSでバズってた','テレビで紹介された','隠れた名所の',
+];
+$DATE_LOC_GAG=[  // 20%で出る・ギャグ系
+  '最初の交差点を曲がった先にある',
+  'なぜか前から気になってた',
+  'グーグルマップが突然勧めてきた',
+  '口コミ★4.2の',
+  '行列ができてた',
+  '通りすがりに見かけた',
+  '誰かのSNSに偶然出てきた',
+  '地図アプリに突然表示された',
+  '前を通るたびにずっと気になってた',
+  '存在を忘れかけてた',
+];
+$DATE_LOC_OVERSEAS=[  // 10%で出る・海外系
+  'パリの','ローマの','バリ島の','ソウルの','ハワイの',
+];
+$DATE_TYPES=[
+  ['type'=>'の水族館','desc'=>'幻想的な海の世界が二人を包みます。暗い空間が自然と距離を縮めてくれます。'],
+  ['type'=>'のプラネタリウム','desc'=>'満天の星空を見上げながら語る時間は、特別なロマンを生み出します。'],
+  ['type'=>'の夜景スポット','desc'=>'輝く夜景を二人で眺める時間は、言葉がなくても伝わるものがあります。'],
+  ['type'=>'の展望台','desc'=>'高さから見る景色は非日常感があり、二人の会話がはずむきっかけになります。'],
+  ['type'=>'の美術館・ギャラリー','desc'=>'感性を刺激し合える場所。感想を語り合うことで互いをより深く知れます。'],
+  ['type'=>'の動物園','desc'=>'かわいい動物を前にするとリラックスでき、自然と笑顔があふれます。'],
+  ['type'=>'の植物園・庭園','desc'=>'季節の花を眺めながらのんびり歩く時間は、安心感と親密感を育てます。'],
+  ['type'=>'の温泉・スパ','desc'=>'身も心もほぐれる温泉が、自然と本音の会話を引き出します。'],
+  ['type'=>'のクルーズ・屋形船','desc'=>'水上からの眺めと非日常の空間が、特別なデートの雰囲気を演出します。'],
+  ['type'=>'の高級レストラン','desc'=>'丁寧に作られた料理と静かな空間が、落ち着いた特別な会話を生みます。'],
+  ['type'=>'のカフェ巡り','desc'=>'その土地ならではのカフェで過ごす時間が、旅の思い出を豊かにします。'],
+  ['type'=>'のライブ・コンサート','desc'=>'生の音楽を一緒に楽しむ体験は、言葉を超えた共感が生まれます。'],
+  ['type'=>'の朝市・市場散策','desc'=>'活気ある市場をぶらつくと、その土地の空気を二人で共有できます。'],
+  ['type'=>'の食べ歩き','desc'=>'いろんなものを少しずつ一緒に食べる体験が、自然な会話を生み出します。'],
+  ['type'=>'のお花見・フラワーパーク','desc'=>'カラフルな花に囲まれた空間は、自然と気分が上がり笑顔が増えます。'],
+  ['type'=>'のテーマパーク','desc'=>'一緒にドキドキワクワクを共有することで、一気に距離が縮まります。'],
+  ['type'=>'のハイキング・トレッキング','desc'=>'自然の中で体を動かすと素の姿が見えます。達成感も二人の絆を深めます。'],
+  ['type'=>'のサイクリング','desc'=>'並走することで自然な会話が生まれ、街の景色をゆっくり楽しめます。'],
+  ['type'=>'のロープウェイ・ケーブルカー','desc'=>'ゆっくりと動く密閉空間は、自然と会話が生まれる不思議なスポット。'],
+  ['type'=>'のジャズバー・バー','desc'=>'大人の雰囲気の中で過ごす時間が、二人の会話に深みを加えます。'],
+  ['type'=>'の謎解き・エスケープルーム','desc'=>'チームで謎を解く体験は、お互いの思考が見えて意外な面が発見できます。'],
+  ['type'=>'の料理・クッキング体験','desc'=>'一緒に作って食べる体験は、協力関係が生まれ仲が深まります。'],
+  ['type'=>'の陶芸・ものづくり体験','desc'=>'世界にひとつの作品を二人で作る体験は、忘れられない思い出に。'],
+  ['type'=>'のナイトクルーズ','desc'=>'夜の水上から見る景色は、昼間とはまた違う特別なロマンがあります。'],
+  ['type'=>'の観光農園・果物狩り','desc'=>'自分で摘む体験は子供心に戻れる感覚で、自然と笑顔があふれます。'],
+  ['type'=>'のスポーツ観戦','desc'=>'同じチームを一緒に応援する一体感は、距離を一気に縮めます。'],
+  ['type'=>'の映画祭・野外シネマ','desc'=>'特別な空間で映画を見る体験は、その場所の記憶と重なって残ります。'],
+  ['type'=>'の星空観察','desc'=>'澄んだ星空を二人で見上げる夜は、不思議なロマンが生まれます。'],
+  ['type'=>'の伝統工芸体験','desc'=>'その土地ならではの体験が、旅の思い出をさらに特別なものにします。'],
+  ['type'=>'のサウナ＆整い体験','desc'=>'整った後の穏やかな気分が、自然と深い会話を引き出してくれます。'],
 ];
 
-// プレゼント候補（数字別・複数）
-$PRESENT_POOLS=[
-  1 =>[['item'=>'上質な本革財布','why'=>'一点モノへのこだわりがある1の人には、長く使える本物志向のアイテムを。'],
-       ['item'=>'ビジネス手帳＋万年筆セット','why'=>'目標に向かって進む1の人には、夢を書き記す道具が最高のギフトに。']],
-  2 =>[['item'=>'ペアネックレス','why'=>'絆を大切にする2の人には、いつも身につけられるペアアクセサリーが◎。'],
-       ['item'=>'フォトブック作成サービス','why'=>'思い出を大切にする2の人には、二人の記録を形にするギフトが響きます。']],
-  3 =>[['item'=>'季節の花束＋香水','why'=>'美的センスの高い3の人には、感覚に訴える贈り物が喜ばれます。'],
-       ['item'=>'アートポスター＋フレームセット','why'=>'創造性あふれる3の人の部屋に飾れるアートは特別な存在に。']],
-  4 =>[['item'=>'高品質キッチンツール（ル・クルーゼなど）','why'=>'実直な4の人には、毎日使える一生モノの道具が心に残ります。'],
-       ['item'=>'上質なブランドバッグ・財布','why'=>'堅実な4の人が本当に欲しいのは、長く使える確かなもの。']],
-  5 =>[['item'=>'旅行用トラベルセット＋スーツケース','why'=>'自由を愛する5の人には、次の冒険をイメージさせるアイテムを。'],
-       ['item'=>'体験型ギフト券（料理教室・温泉など）','why'=>'モノより体験を重視する5の人に最適なギフト。']],
-  6 =>[['item'=>'ルームフレグランス＋キャンドルセット','why'=>'家と人を大切にする6の人には、空間を豊かにするギフトが刺さります。'],
-       ['item'=>'観葉植物＋おしゃれな鉢','why'=>'愛情深い6の人には、育てる楽しさのある贈り物を。']],
-  7 =>[['item'=>'知的系ボードゲーム・パズル','why'=>'探究心旺盛な7の人には、一緒に楽しめる知的な体験を。'],
-       ['item'=>'プラネタリウムペアチケット＋図鑑','why'=>'宇宙や自然の神秘に惹かれる7の人に最高の組み合わせ。']],
-  8 =>[['item'=>'ブランド腕時計','why'=>'成功志向の8の人には、ステータスを感じる一生モノを。'],
-       ['item'=>'高級レストランのペアディナー','why'=>'上質な体験を好む8の人には、記憶に残る食体験を贈りましょう。']],
-  9 =>[['item'=>'世界各国のフェアトレードチョコ詰め合わせ','why'=>'慈悲深い9の人には、世界とのつながりを感じるエシカルなギフトを。'],
-       ['item'=>'寄付付きオルゴール・アクセサリー','why'=>'誰かの役に立つことに喜びを感じる9の人への最高の贈り物。']],
-  11=>[['item'=>'パワーストーンブレスレット','why'=>'霊感豊かな11の人には、エネルギーを感じるクリスタルが響きます。'],
-       ['item'=>'アロマオイルセット＋ディフューザー','why'=>'感受性の強い11の人には、感覚を豊かにするアロマが最適。']],
-  22=>[['item'=>'高品質な革製システム手帳','why'=>'夢を現実にするマスタービルダー22の人には、計画を形にする道具を。'],
-       ['item'=>'プロ仕様ツールセット（カメラ・楽器など）','why'=>'大きな夢を持つ22の人には、その夢を支える一流の道具を。']],
-  33=>[['item'=>'高級アロマディフューザー＋精油セット','why'=>'癒しの達人33の人には、心身を整えるスパグッズが喜ばれます。'],
-       ['item'=>'ハーブティーギフトセット＋マグカップ','why'=>'人を癒す33の人に、自分自身を癒す時間をプレゼント。']],
+// プレゼント接頭語：カテゴリ別（重み付き選択）
+$PRESENT_PFX_DAILY=[  // 70%・日常系
+  '記念日にぴったりな','さりげなく渡せる','長く使える',
+  'センスが光る','思い出に残る','日常をちょっと豊かにする',
+  '特別な日に贈りたい','サプライズ向けの','二人の記念になる',
+  'もらって嬉しい定番の','こだわり派に喜ばれる','大切な気持ちが伝わる',
+  '使うたびに思い出す','ちょっと背伸びした','毎日の生活を変える',
+  'ありがとうの気持ちをこめた','一生モノになりそうな','予算内でベストを尽くした',
+  '口コミで評判の','売り場で迷いに迷った','思い切って奮発した',
+  '実はずっと前から用意してた','ネットで調べまくって選んだ','店員さんに相談して決めた',
+  'もらって絶対笑顔になれる','ずっと使ってもらえそうな','ちょっとした感謝をこめた',
+  '誕生日に間に合わせた','相手のことを考えながら選んだ','定番だけど外さない',
+];
+$PRESENT_PFX_GAG=[  // 20%・ギャグ系
+  '祖母の形見の',
+  '駅前で拾った',
+  'メルカリで見つけた',
+  'フリマで100円だった',
+  'なぜかふたつ持ってた',
+  '福袋から出てきた',
+  'くじ引きで当たった',
+  '深夜のテンションで買ってしまった',
+  '通販で間違えてふたつ注文した',
+  '返品し損ねた',
+  'お年玉を全部はたいた',
+  'ポイントだけで買えた',
+  'おそらく偽物の',
+  '本物かどうかわからない',
+  '鑑定士も首をかしげた',
+  '保証書がなぜかない',
+];
+$PRESENT_PFX_SPECIAL=[  // 10%・ちょっといい系
+  'パリで見つけた','旅先で出会った',
+  '現地でしか買えない','海外から取り寄せた','世界に数個しかない',
+];
+$PRESENT_ALL=[
+  ['item'=>'ペアネックレス・ブレスレット','why'=>'いつも身につけていられるペアアクセサリーは、常に相手を思い出させてくれます。'],
+  ['item'=>'上質な本革財布','why'=>'長く使える本物志向のアイテムは、気持ちが伝わる実用的な贈り物です。'],
+  ['item'=>'ブランド腕時計','why'=>'一生モノの腕時計は、特別なタイミングの贈り物として強く記憶に残ります。'],
+  ['item'=>'アロマオイルセット＋ディフューザー','why'=>'香りで空間を整えるアロマは、毎日の生活に癒しを届けます。'],
+  ['item'=>'パワーストーンブレスレット','why'=>'運気を高めながら毎日身につけられる。スピリチュアルな贈り物として人気です。'],
+  ['item'=>'高品質キッチンツール（ル・クルーゼなど）','why'=>'毎日使える一生モノの道具は、使うたびに贈ってくれた人を思い出します。'],
+  ['item'=>'上質なブランドバッグ','why'=>'毎日持ち歩くバッグは、長く愛用してもらえる喜ばれる贈り物です。'],
+  ['item'=>'季節の花束＋オリジナルメッセージカード','why'=>'花の美しさと手書きの言葉を組み合わせたシンプルだけど心に刺さる贈り物。'],
+  ['item'=>'香水（フレグランス）','why'=>'身につけるたびに贈った人を思い出してもらえる、特別な贈り物です。'],
+  ['item'=>'体験型ギフト券（料理教室・陶芸・温泉など）','why'=>'モノより体験の思い出。二人で行けば距離もさらに縮まります。'],
+  ['item'=>'旅行用スーツケース','why'=>'次の冒険をイメージさせるアイテム。旅好きな人には特に喜ばれます。'],
+  ['item'=>'ルームフレグランス＋キャンドルセット','why'=>'家の空間を豊かにするアイテムは、毎晩その人を思いながら使ってもらえます。'],
+  ['item'=>'観葉植物＋おしゃれな鉢','why'=>'育てる楽しさがあり、部屋に飾るたびに贈った人のことを思い出します。'],
+  ['item'=>'フォトブック作成サービス','why'=>'二人の記録を形にするギフト。思い出を共有したいときの最高の贈り物。'],
+  ['item'=>'アートポスター＋フレームセット','why'=>'部屋に飾れるアートは毎日目に入り、特別な存在感があります。'],
+  ['item'=>'高品質な革製システム手帳','why'=>'計画を書き記す道具は、夢に向かって進む人に最高のプレゼントです。'],
+  ['item'=>'プラネタリウムペアチケット','why'=>'二人で星空を見上げる体験がセットになった、思い出になる贈り物です。'],
+  ['item'=>'高級レストランのペアディナー券','why'=>'記憶に残る食体験を贈ることで、特別な夜の思い出が生まれます。'],
+  ['item'=>'スパ＆エステ体験券','why'=>'日々の疲れを癒してもらえる体験は、心から喜ばれます。'],
+  ['item'=>'コーヒー・紅茶の高級ギフトセット','why'=>'毎朝のひとときを豊かにするアイテム。毎日使うものだから喜ばれます。'],
+  ['item'=>'ハーブティーギフトセット＋マグカップ','why'=>'自分を癒す時間をプレゼント。忙しい人ほど喜ばれます。'],
+  ['item'=>'ワイン・日本酒ギフトセット','why'=>'お酒好きの人には種類豊富なセットが特別な夜のお供になります。'],
+  ['item'=>'ビジネス手帳＋万年筆セット','why'=>'夢を書き記す道具は、目標に向かって進む人への最高のギフトです。'],
+  ['item'=>'Bluetoothスピーカー（高音質）','why'=>'音楽を高音質で楽しめる環境は、毎日の生活を豊かにします。'],
+  ['item'=>'ワイヤレスイヤホン（AirPodsなど）','why'=>'音楽好きな人には毎日使うガジェットが実用的で喜ばれます。'],
+  ['item'=>'スマートウォッチ・フィットネストラッカー','why'=>'健康意識の高い人に。毎日身につけるものだから特別感があります。'],
+  ['item'=>'チェキ・インスタントカメラ','why'=>'二人の思い出を形に残せるカメラは、特別な瞬間を増やしてくれます。'],
+  ['item'=>'スキンケアセット（高品質コスメ）','why'=>'毎日使うスキンケアに高品質なものを贈ることで、特別感が伝わります。'],
+  ['item'=>'入浴剤＋バスソルトセット','why'=>'毎晩のお風呂時間を贅沢にできる、サプライズにもぴったりの贈り物です。'],
+  ['item'=>'シルクのパジャマ・ナイトウェア','why'=>'肌に触れるものをグレードアップするギフトは、意外と喜ばれます。'],
+  ['item'=>'名入れギフト（グラス・カッティングボードなど）','why'=>'世界にひとつのオリジナルアイテムは、特別感が抜群の贈り物です。'],
+  ['item'=>'ペアグラス・ペアマグカップ','why'=>'日常的に使えるペアアイテムは、毎日の生活に相手を感じさせてくれます。'],
+  ['item'=>'電動マッサージャー・ネックマッサージャー','why'=>'疲れた体を癒してくれるアイテムは、心からの「ありがとう」が伝わります。'],
+  ['item'=>'高品質なブランケット・ひざ掛け','why'=>'冬に使うたびに温かい気持ちになれる、心のこもった贈り物です。'],
+  ['item'=>'料理本（有名シェフ監修など）','why'=>'料理好きの人には丁寧に選んだレシピ本が新しい楽しみを届けます。'],
+  ['item'=>'ヨガマット＋フィットネスグッズセット','why'=>'健康・美容に関心のある人に。自分磨きを後押しするプレゼントです。'],
+  ['item'=>'アウトドアグッズ（テント・ランタン）','why'=>'アウトドア好きの人に。次の冒険をイメージさせるアイテムです。'],
+  ['item'=>'チョコレート専門店のギフトボックス','why'=>'世界中のチョコレートが詰まったセットは、ちょっとした贅沢感があります。'],
+  ['item'=>'パン・洋菓子の高級ギフトセット','why'=>'毎日のおやつ時間を豊かにする贈り物は、日常に彩りを添えます。'],
+  ['item'=>'映画・音楽ストリーミングのギフトカード','why'=>'好きなコンテンツを楽しんでもらえる実用的かつ嬉しいギフトです。'],
+  ['item'=>'プリザーブドフラワー（枯れない花）','why'=>'何年も飾れる花は、長く気持ちを届け続けてくれます。'],
+  ['item'=>'ハンドクリーム＋ネイルケアセット','why'=>'手を毎日ケアするアイテムは、繊細な気遣いが伝わる贈り物です。'],
+  ['item'=>'電子書籍リーダー（Kindle等）','why'=>'本好きな人に。いつでもどこでも好きな本を読める環境を贈ります。'],
+  ['item'=>'ナイトクルーズ・花火クルーズのペアチケット','why'=>'普段とは違う夜を演出できる体験チケットは特別な思い出になります。'],
+  ['item'=>'サウナグッズセット（サウナハット・桶など）','why'=>'サウナブームで人気急上昇。サウナ好きな人には最高の贈り物です。'],
+  ['item'=>'コーヒーメーカー・全自動エスプレッソマシン','why'=>'カフェ好きな人に自宅でカフェ体験を届けるプレミアムギフトです。'],
+  ['item'=>'グルメ食材セット（高級肉・海産物など）','why'=>'家での食事を豪華にできる食材ギフトは、喜ばれる定番の贈り物です。'],
+  ['item'=>'アロマキャンドル＋バスグッズセット','why'=>'ゆっくり自分を癒す時間を作れる、リラックス系のプレゼントです。'],
+  ['item'=>'ペットグッズ（おしゃれなケア用品セット）','why'=>'ペット好きな人には、愛する動物へのギフトが最高に喜ばれます。'],
+  ['item'=>'知的系ボードゲーム・パズル','why'=>'二人で楽しめる知的な体験を贈れば、デートのきっかけにもなります。'],
+  ['item'=>'旅行計画グッズ（ノート・ガイドブックセット）','why'=>'次の旅へのワクワクを一緒に届けるコンセプトギフトです。'],
+  ['item'=>'ハンドメイド革小物体験チケット','why'=>'自分で作る体験チケットは、ユニークで記憶に残る贈り物です。'],
 ];
 
 // ─── 結果計算 ─────────────────────────────────────────
@@ -137,15 +301,48 @@ if($ym>0&&$yd>0&&$pm>0&&$pd>0){
     $marriageScore=min(5,max(1,$base+$bonus+($seed%2)-1));
     $loverScore   =min(5,max(1,$base+(($seed>>3)%2)+$bonus-1+($yZ['el']!==$pZ['el']?1:0)));
 
-    $datePool=$DATE_POOLS[$pZ['el']];
-    $dateSpot=$datePool[$seed%count($datePool)];
-    $presPool=$PRESENT_POOLS[$pLP]??$PRESENT_POOLS[9];
-    $present =$presPool[$seed%count($presPool)];
+    // 重み付き場所選択（70%日常 / 20%ギャグ / 10%海外）
+    $wloc=function(int $s) use($DATE_LOC_DAILY,$DATE_LOC_GAG,$DATE_LOC_OVERSEAS):string{
+      $cat=abs($s)%10;
+      if($cat===0) return $DATE_LOC_OVERSEAS[abs($s>>4)%count($DATE_LOC_OVERSEAS)];
+      if($cat<=2)  return $DATE_LOC_GAG[abs($s>>4)%count($DATE_LOC_GAG)];
+      return $DATE_LOC_DAILY[abs($s>>4)%count($DATE_LOC_DAILY)];
+    };
+    $nT=count($DATE_TYPES);
+    $loc1=$wloc($seed);
+    $loc2=$wloc($seed*1013+7); if($loc2===$loc1) $loc2=$wloc($seed*1013+77);
+    $t1=$seed%$nT;
+    $t2=($seed>>12)%$nT; if($t2===$t1) $t2=($t2+1)%$nT;
+    $dateSpot=[
+      ['spot'=>$loc1.$DATE_TYPES[$t1]['type'],'desc'=>$DATE_TYPES[$t1]['desc']],
+      ['spot'=>$loc2.$DATE_TYPES[$t2]['type'],'desc'=>$DATE_TYPES[$t2]['desc']],
+    ];
 
-    $confess=$CONFESS[$pZ['name']]??$CONFESS['獅子座'];
+    // 重み付きプレゼント接頭語選択（70%日常 / 20%ギャグ / 10%特別）
+    $wpfx=function(int $s) use($PRESENT_PFX_DAILY,$PRESENT_PFX_GAG,$PRESENT_PFX_SPECIAL):string{
+      $cat=abs($s)%10;
+      if($cat===0) return $PRESENT_PFX_SPECIAL[abs($s>>4)%count($PRESENT_PFX_SPECIAL)];
+      if($cat<=2)  return $PRESENT_PFX_GAG[abs($s>>4)%count($PRESENT_PFX_GAG)];
+      return $PRESENT_PFX_DAILY[abs($s>>4)%count($PRESENT_PFX_DAILY)];
+    };
+    $nPi=count($PRESENT_ALL);
+    $pfx1=$wpfx($seed*997+3);
+    $pfx2=$wpfx($seed*983+11); if($pfx2===$pfx1) $pfx2=$wpfx($seed*983+111);
+    $pi1=($seed>>16)%$nPi;
+    $pi2=($seed>>20)%$nPi; if($pi2===$pi1) $pi2=($pi2+1)%$nPi;
+    $present=[
+      ['item'=>$pfx1.$PRESENT_ALL[$pi1]['item'],'why'=>$PRESENT_ALL[$pi1]['why']],
+      ['item'=>$pfx2.$PRESENT_ALL[$pi2]['item'],'why'=>$PRESENT_ALL[$pi2]['why']],
+    ];
+
+    $confess='「'.
+      $CONFESS_OPEN[$seed%count($CONFESS_OPEN)].
+      $CONFESS_FEEL[($seed>>4)%count($CONFESS_FEEL)].
+      $CONFESS_ASK[($seed>>8)%count($CONFESS_ASK)].'」';
+    $confessTip=$CONFESS_TIPS[($seed>>12)%count($CONFESS_TIPS)];
 
     $result=compact('yZ','pZ','marriageScore','loverScore',
-                    'confess','dateSpot','present','yourName','partnerName',
+                    'confess','confessTip','dateSpot','present','yourName','partnerName',
                     'ym','yd','pm','pd');
   }
 }
@@ -294,17 +491,15 @@ select.form-input option{background:#1e1738;color:var(--text)}
 .affiliate-btn:hover{opacity:.85}
 .retry-btn{width:100%;background:none;border:1px solid var(--border2);border-radius:8px;padding:.65rem;font-family:var(--ff-mono);font-size:.75rem;color:var(--muted);cursor:pointer;margin-top:.5rem;transition:color .2s,border-color .2s;text-decoration:none;display:block;text-align:center}
 .retry-btn:hover{color:var(--text);border-color:var(--violet)}
+.article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
+.article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
+.article-link-icon{font-size:1.4rem;flex-shrink:0}
+.article-link-body{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.article-link-body strong{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--violet-lt)}
+.article-link-body small{font-size:.75rem;color:var(--muted)}
+.article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
-.share-wrap{text-align:center;margin:1.5rem 0 1rem}
-.share-label{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.55rem}
-.share-btns{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap}
-.share-btn{display:inline-flex;align-items:center;gap:.3rem;padding:.45rem .85rem;border-radius:20px;font-size:.7rem;font-family:var(--ff-rpg);cursor:pointer;text-decoration:none;border:none;transition:opacity .2s;white-space:nowrap}
-.share-btn:hover{opacity:.8}
-.share-line{background:#06C755;color:#fff}
-.share-x{background:#000;color:#fff}
-.share-fb{background:#1877F2;color:#fff}
-.share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:var(--violet-lt)}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -487,9 +682,9 @@ footer a:hover{color:var(--gold)}
     <!-- 告白の言葉 -->
     <div class="result-block rb-confess">
       <div class="rb-label">CONFESSION WORDS</div>
-      <div class="rb-title">💌 <?=$pLabel?>への告白の言葉</div>
+      <div class="rb-title">💌 <?=$pLabel?>へ・こんな一言はいかがですか？<span style="font-size:.7rem;color:var(--teal);font-family:var(--ff-mono);margin-left:.5rem">（おすすめ）</span></div>
       <div class="confess-quote"><?=$r['confess']?></div>
-      <p class="rb-text"><?=$r['pZ']['name']?>には<strong>素直でまっすぐな言葉</strong>が一番響きます。飾りすぎず、あなたの本音を伝えましょう。</p>
+      <p class="rb-text" style="font-size:.78rem">💡 <?=$r['confessTip']?></p>
     </div>
 
     <!-- デートスポット -->
@@ -497,11 +692,13 @@ footer a:hover{color:var(--gold)}
       <div class="rb-label">DATE SPOT</div>
       <div class="rb-title">🗺️ おすすめデートスポット</div>
       <div class="affiliate-box">
+        <?php foreach($r['dateSpot'] as $ds): ?>
         <div class="affiliate-item">
-          <div class="affiliate-name">📍 <?=$r['dateSpot']['spot']?></div>
-          <div class="affiliate-why"><?=$r['dateSpot']['desc']?></div>
+          <div class="affiliate-name">📍 <?=$ds['spot']?></div>
+          <div class="affiliate-why"><?=$ds['desc']?></div>
+          <!-- アフィリエイトURL設定後にこの行を有効化: <a class="affiliate-btn" href="【URL】">詳しく見る →</a> -->
         </div>
-        <!-- アフィリエイトURL設定後にこの行を有効化: <a class="affiliate-btn" href="【URL】">詳しく見る →</a> -->
+        <?php endforeach; ?>
       </div>
     </div>
 
@@ -510,28 +707,32 @@ footer a:hover{color:var(--gold)}
       <div class="rb-label">LUCKY PRESENT</div>
       <div class="rb-title">🎁 運気が上がるプレゼント</div>
       <div class="affiliate-box">
+        <?php foreach($r['present'] as $pr): ?>
         <div class="affiliate-item">
-          <div class="affiliate-name">✨ <?=$r['present']['item']?></div>
-          <div class="affiliate-why"><?=$r['present']['why']?></div>
+          <div class="affiliate-name">✨ <?=$pr['item']?></div>
+          <div class="affiliate-why"><?=$pr['why']?></div>
+          <!-- アフィリエイトURL設定後にこの行を有効化: <a class="affiliate-btn" href="【URL】">商品を探す →</a> -->
         </div>
-        <!-- アフィリエイトURL設定後にこの行を有効化: <a class="affiliate-btn" href="【URL】">商品を探す →</a> -->
+        <?php endforeach; ?>
       </div>
     </div>
 
     <!-- シェア -->
-    <div class="share-wrap">
-      <p class="share-label">✦ 結果をシェアする</p>
-      <div class="share-btns">
-        <button class="share-btn share-line" onclick="openShare('line')">LINE</button>
-        <button class="share-btn share-x" onclick="openShare('x')">𝕏</button>
-        <button class="share-btn share-fb" onclick="openShare('fb')">Facebook</button>
-        <button class="share-btn share-copy" onclick="copyShareUrl()">🔗 リンクをコピー</button>
-      </div>
-    </div>
+    <?php require __DIR__.'/inc/share-btns.php'; ?>
 
         <a href="/aisho.php" class="retry-btn">▶ もう一度診断する</a>
-        <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
-        <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'aisho') ?></div>
+<a href="/articles/aisho/" class="article-link-box">
+  <span class="article-link-icon">📖</span>
+  <span class="article-link-body">
+    <strong>相性診断とは？</strong>
+    <small>誕生日・血液型・星座で相性を占う仕組みを解説</small>
+  </span>
+  <span class="article-link-arrow">→</span>
+</a>
+        <div class="nav-cards-section" style="padding:2rem 0 0">
+          <h3>✦ 次はこれを試してみては？ ✦</h3>
+          <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'aisho'); ?>
+        </div>
       </div>
       <script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('result');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});});</script>
       <?php endif;?>
@@ -1135,22 +1336,14 @@ renderCelebs();
 window._shareText = <?=json_encode($shareText)?>;
 <?php endif;?>
 
-function openShare(type){
-  const url=location.href;
-  const u=encodeURIComponent(url);
-  const txt=(window._shareText||document.title);
-  const urls={
-    line:'https://line.me/R/msg/text/?'+encodeURIComponent(txt+'\n'+url),
-    x:'https://twitter.com/intent/tweet?text='+encodeURIComponent(txt+' ')+u,
-    fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
-  };
-  window.open(urls[type],'_blank','noopener,noreferrer,width=600,height=400');
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function copyShareUrl(){
-  navigator.clipboard.writeText(location.href).then(()=>{
-    const b=document.querySelector('.share-copy');const orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(()=>b.textContent=orig,2000);
-  });
-}
+function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown'))
+    document.getElementById('spDropdown').classList.remove('open');
+});
 </script>
 </body>
 </html>
