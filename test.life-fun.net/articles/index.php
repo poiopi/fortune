@@ -204,6 +204,7 @@
         ['icon'=>'🔢','title'=>'数秘術','desc'=>'誕生日と名前から導き出す「運命数」で、人生のテーマを知る。','url_article'=>'/articles/numerology/','url_tool'=>'/numerology','ready'=>true],
         ['icon'=>'✍️','title'=>'姓名判断','desc'=>'漢字の画数から名前の吉凶・運勢を読み解く日本の伝統占術。','url_article'=>'/articles/seimei/','url_tool'=>'/seimei','ready'=>true],
         ['icon'=>'☯️','title'=>'算命学','desc'=>'生年月日から元命・主星・従星を算出し、才能・性格・仕事適性を読み解く東洋占術。','url_article'=>'/articles/sanmei/','url_tool'=>'/sanmei','ready'=>true],
+        ['icon'=>'⭐','title'=>'西洋占星術','desc'=>'太陽星座・エレメント・クオリティから個性・恋愛・仕事適性を読み解く西洋最古の占術。','url_article'=>'/articles/seiza/','url_tool'=>'/seiza','ready'=>true],
       ]
     ],
     [
@@ -290,11 +291,12 @@
     <div class="aft-col">
       <p class="aft-heading">人気の占い</p>
       <ul>
-        <li><a href="/shichu">三星統合鑑定</a></li>
+        <li><a href="/">三星統合鑑定</a></li>
         <li><a href="/tarot">タロット占い</a></li>
         <li><a href="/shichu">四柱推命</a></li>
+        <li><a href="/seiza">西洋占星術</a></li>
+        <li><a href="/sanmei">算命学</a></li>
         <li><a href="/mbti">MBTI×星座診断</a></li>
-        <li><a href="/calendar">開運カレンダー</a></li>
       </ul>
     </div>
     <div class="aft-col">
@@ -305,6 +307,7 @@
         <li><a href="/articles/shichu/">四柱推命とは</a></li>
         <li><a href="/articles/kyusei/">九星気学とは</a></li>
         <li><a href="/articles/numerology/">数秘術とは</a></li>
+        <li><a href="/articles/seiza/">西洋占星術とは</a></li>
         <li><a href="/articles/mbti/">MBTI診断とは</a></li>
         <li><a href="/articles/seimei/">姓名判断とは</a></li>
         <li><a href="/articles/sanmei/">算命学とは</a></li>
