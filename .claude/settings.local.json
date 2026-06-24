@@ -43,7 +43,8 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(xargs -I{} basename {})",
-      "Bash(git reset *)"
+      "Bash(git reset *)",
+      "Bash(Select-Object Name)"
     ]
   }
 }
