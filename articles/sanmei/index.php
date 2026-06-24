@@ -30,8 +30,8 @@ ob_start();
     --ff-serif:'Shippori Mincho',serif;
     --ff-sans:'Zen Kaku Gothic New',sans-serif;
     --ff-mono:'DM Mono',monospace;
-    --accent:#2a9d8f;
-    --accent-lt:#3bbcae;
+    --accent:#7c4dce;
+    --accent-lt:#9b72ef;
     --gold:#c9a84c;
     --text:#1a1a2e;
     --muted:#6b6b8a;
@@ -76,7 +76,7 @@ ob_start();
 
   /* 比較表 */
   .compare-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.85rem}
-  .compare-table th{background:rgba(42,157,143,.12);color:var(--accent);font-weight:600;padding:.65rem .85rem;border:1px solid var(--border);text-align:left;font-family:var(--ff-serif)}
+  .compare-table th{background:rgba(124,77,206,.12);color:var(--accent);font-weight:600;padding:.65rem .85rem;border:1px solid var(--border);text-align:left;font-family:var(--ff-serif)}
   .compare-table td{padding:.6rem .85rem;border:1px solid var(--border);color:#333;line-height:1.6}
   .compare-table tr:nth-child(even) td{background:var(--bg2)}
 
@@ -90,7 +90,7 @@ ob_start();
 
   /* 五行表 */
   .gogyou-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.85rem}
-  .gogyou-table th{background:rgba(42,157,143,.1);color:var(--accent);font-weight:600;padding:.55rem .75rem;border:1px solid var(--border);text-align:left;font-family:var(--ff-serif)}
+  .gogyou-table th{background:rgba(124,77,206,.1);color:var(--accent);font-weight:600;padding:.55rem .75rem;border:1px solid var(--border);text-align:left;font-family:var(--ff-serif)}
   .gogyou-table td{padding:.5rem .75rem;border:1px solid var(--border);color:#333}
   .gogyou-table tr:nth-child(even) td{background:var(--bg2)}
   .gogyou-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:.4rem;vertical-align:middle}

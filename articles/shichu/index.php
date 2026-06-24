@@ -127,7 +127,7 @@ ob_start();
     .jikkan-grid{grid-template-columns:repeat(5,1fr)}
     .art-footer-inner{grid-template-columns:1fr;gap:1.5rem}
   }
-.al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
+  .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
   </style>
 
@@ -408,4 +408,3 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'shichu');
 ?>
-

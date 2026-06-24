@@ -256,25 +256,17 @@ footer a:hover{color:var(--gold)}
     <!-- シェア -->
     <div class="share-wrap" id="shareWrap"></div>
 
-    <!-- 記事リンク -->
-    <a href="/articles/sanmei/" class="article-link-box">
-      <span class="article-link-icon">☯️</span>
-      <span class="article-link-body">
-        <strong>算命学とは？</strong>
-        <small>元命・主星・従星・十大主星の意味と計算方法を解説</small>
-      </span>
-      <span class="article-link-arrow">→</span>
-    </a>
-
-    <!-- nav-cards -->
-    <div class="nav-cards-section" style="padding:2rem 0 0">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'sanmei'); ?>
-    </div>
-
-    <div class="retry-wrap">
-      <button class="retry-btn" onclick="resetForm()">← もう一度鑑定する</button>
-    </div>
+    <?php
+    $articleUrl   = '/articles/sanmei/';
+    $articleIcon  = '☯️';
+    $articleTitle = '算命学とは？';
+    $articleDesc  = '元命・主星・従星・十大主星の意味と計算方法を解説';
+    $contextKey   = 'sanmei';
+    $retryLabel   = 'もう一度鑑定する';
+    $retryType    = 'js';
+    $retryValue   = 'resetForm()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>

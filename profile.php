@@ -124,5 +124,18 @@ body{top:0!important}
 </div>
 
 <?php require __DIR__.'/inc/footer.php'; ?>
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
+}
+function toggleSpMenu(){
+  document.getElementById('spDropdown').classList.toggle('open');
+}
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
+    document.getElementById('spDropdown').classList.remove('open');
+  }
+});
+</script>
 </body>
 </html>

@@ -292,18 +292,17 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
   <div class="overall-card" id="overallCard"></div>
   <div class="gogaku-grid" id="gogakuGrid"></div>
   <?php require __DIR__.'/inc/share-btns.php'; ?>
-  <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'seimei'); ?></div>
-  <div class="retry-wrap">
-    <button class="retry-btn-link" onclick="resetForm()">← もう一度鑑定する</button>
-<a href="/articles/seimei/" class="article-link-box" style="margin-top:1rem">
-  <span class="article-link-icon">📖</span>
-  <span class="article-link-body">
-    <strong>姓名判断とは？</strong>
-    <small>五格・画数・吉数の意味をわかりやすく解説</small>
-  </span>
-  <span class="article-link-arrow">→</span>
-</a>
-  </div>
+  <?php
+  $articleUrl   = '/articles/seimei/';
+  $articleIcon  = '📖';
+  $articleTitle = '姓名判断とは？';
+  $articleDesc  = '五格・画数・吉数の意味をわかりやすく解説';
+  $contextKey   = 'seimei';
+  $retryLabel   = 'もう一度鑑定する';
+  $retryType    = 'js';
+  $retryValue   = 'resetForm()';
+  require __DIR__.'/inc/result-footer.php';
+  ?>
 </div>
 
 <p class="disclaimer">※ 画数は熊崎式に基づいて算出していますが、一部の漢字は正確でない場合があります。<br>本サービスはエンターテインメントを目的とした占いコンテンツです。結果は楽しみや気づきの参考としてご活用ください。</p>

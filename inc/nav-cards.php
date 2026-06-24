@@ -14,6 +14,7 @@ $_NAV_PAGES = [
   'shichu'     => ['name'=>'四柱推命',       'url'=>'/shichu',     'desc'=>'命式・十神・大運を本格算出する',       'icon'=>'🔯'],
   'geimei'     => ['name'=>'芸名診断',       'url'=>'/geimei',     'desc'=>'大喜利で見つける最強の芸名',             'icon'=>'🎭'],
   'sanmei'     => ['name'=>'算命学鑑定',     'url'=>'/sanmei',     'desc'=>'元命・主星・従星で本質と才能を読む',       'icon'=>'☯️'],
+  'seiza'      => ['name'=>'西洋占星術',     'url'=>'/seiza',      'desc'=>'太陽星座×内面タイプで個性を深掘り',         'icon'=>'⭐'],
 ];
 
 // $count枚カードを出力（$excludeは現在ページキー）

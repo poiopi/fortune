@@ -26,6 +26,7 @@ require_once __DIR__.'/nav-cards.php';
         <li><a href="/tarot">タロット占い</a></li>
         <li><a href="/shichu">四柱推命</a></li>
         <li><a href="/sanmei">算命学</a></li>
+        <li><a href="/seiza">西洋占星術</a></li>
         <li><a href="/mbti">MBTI×星座診断</a></li>
         <li><a href="/calendar">開運カレンダー</a></li>
       </ul>
@@ -40,6 +41,7 @@ require_once __DIR__.'/nav-cards.php';
         <li><a href="/articles/numerology/">数秘術とは</a></li>
         <li><a href="/articles/seimei/">姓名判断とは</a></li>
         <li><a href="/articles/sanmei/">算命学とは</a></li>
+        <li><a href="/articles/seiza/">西洋占星術とは</a></li>
       </ul>
     </div>
     <div class="sf-col">
@@ -200,6 +202,7 @@ require_once __DIR__.'/nav-cards.php';
       'seimei'     => ['icon'=>'✍️', 'name'=>'姓名判断',            'url'=>'/seimei'],
       'geimei'     => ['icon'=>'🎭', 'name'=>'芸名診断',            'url'=>'/geimei'],
       'sanmei'     => ['icon'=>'☯️', 'name'=>'算命学鑑定',          'url'=>'/sanmei'],
+      'seiza'      => ['icon'=>'⭐', 'name'=>'西洋占星術',           'url'=>'/seiza'],
     ];
     echo '<div class="fmenu-section-label">占い一覧</div>';
     foreach($fmenu_pages as $key=>$pg):
