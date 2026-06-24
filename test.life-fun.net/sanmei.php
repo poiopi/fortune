@@ -250,11 +250,7 @@ footer a:hover{color:var(--gold)}
 
     <!-- result_code -->
     <div class="result-code-wrap">
-      <details style="font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);text-align:center">
-        <summary style="cursor:pointer;letter-spacing:.08em;list-style:none">診断コードを見る ▾</summary>
-        <div id="resultCode" onclick="copyPageUrl()" style="margin-top:.5rem;cursor:pointer;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px;padding:.4rem .9rem;display:inline-block;transition:color .2s" onmouseenter="this.style.color='var(--sanmei2)'" onmouseleave="this.style.color=''"></div>
-        <div style="font-size:.58rem;margin-top:.3rem">クリックでURLをコピー</div>
-      </details>
+      <div id="resultCode" style="display:none"></div>
     </div>
 
     <!-- シェア -->
@@ -563,7 +559,25 @@ function _calcAndRender(year, month, day) {
         <div class="gogyou-count">${cnt}</div>
       </div>`;
   });
-  gogyouHTML += `<div style="margin-top:.6rem;font-family:var(--ff-mono);font-size:.62rem;color:var(--muted)">年柱・日柱の干支4点から算出</div>`;
+  // 五行解説文
+  const gogyouDesc = ['木','火','土','金','水'];
+  const gogyouTraits = ['創造力・成長力・柔軟性','情熱・行動力・表現力','安定感・包容力・誠実さ','決断力・効率・集中力','直感力・適応力・知性'];
+  const gogyouLack  = ['継続力や粘り強さ','慎重さや客観性','変化への柔軟さ','感受性や協調性','安定感や持続力'];
+  const maxElem = elemCounts.indexOf(Math.max(...elemCounts));
+  const minElem = elemCounts.indexOf(Math.min(...elemCounts));
+  const maxSame = elemCounts.filter(v => v === elemCounts[maxElem]).length;
+  let gogyouComment = '';
+  if (maxSame >= 4) {
+    gogyouComment = `五行がバランス良く分布しています。特定の偏りが少なく、状況に応じて様々な力を発揮できる柔軟なタイプです。`;
+  } else {
+    gogyouComment = `あなたは「${gogyouDesc[maxElem]}」の気が強く、${gogyouTraits[maxElem]}に優れています。`;
+    if (elemCounts[minElem] === 0) {
+      gogyouComment += `一方で「${gogyouDesc[minElem]}」が少ないため、${gogyouLack[minElem]}を意識するとさらにバランスが取れるでしょう。`;
+    }
+  }
+  gogyouHTML += `
+    <div style="margin-top:.85rem;font-size:.82rem;color:var(--text-lt);line-height:1.85;border-top:1px solid rgba(255,255,255,.07);padding-top:.75rem">${gogyouComment}</div>
+    <div style="margin-top:.5rem;font-family:var(--ff-mono);font-size:.6rem;color:var(--muted)">生年月日をもとに算出</div>`;
   document.getElementById('gogyouSection').innerHTML = gogyouHTML;
 
   // 元命ブロック
@@ -707,6 +721,22 @@ function resetForm() {
     const pct = Math.round((cnt / maxCount) * 100);
     gogyouHTML += `<div class="gogyou-row"><div class="gogyou-label ${gogyouClasses[i]}">${gogyouNames[i]}</div><div class="gogyou-bar-wrap gogyou-${gogyouClasses[i]}"><div class="gogyou-bar" style="width:${pct}%"></div></div><div class="gogyou-count">${cnt}</div></div>`;
   });
+  const gogyouDesc2 = ['木','火','土','金','水'];
+  const gogyouTraits2 = ['創造力・成長力・柔軟性','情熱・行動力・表現力','安定感・包容力・誠実さ','決断力・効率・集中力','直感力・適応力・知性'];
+  const gogyouLack2  = ['継続力や粘り強さ','慎重さや客観性','変化への柔軟さ','感受性や協調性','安定感や持続力'];
+  const maxElem2 = elemCounts.indexOf(Math.max(...elemCounts));
+  const minElem2 = elemCounts.indexOf(Math.min(...elemCounts));
+  const maxSame2 = elemCounts.filter(v => v === elemCounts[maxElem2]).length;
+  let gogyouComment2 = '';
+  if (maxSame2 >= 4) {
+    gogyouComment2 = `五行がバランス良く分布しています。特定の偏りが少なく、状況に応じて様々な力を発揮できる柔軟なタイプです。`;
+  } else {
+    gogyouComment2 = `あなたは「${gogyouDesc2[maxElem2]}」の気が強く、${gogyouTraits2[maxElem2]}に優れています。`;
+    if (elemCounts[minElem2] === 0) {
+      gogyouComment2 += `一方で「${gogyouDesc2[minElem2]}」が少ないため、${gogyouLack2[minElem2]}を意識するとさらにバランスが取れるでしょう。`;
+    }
+  }
+  gogyouHTML += `<div style="margin-top:.85rem;font-size:.82rem;color:var(--text-lt);line-height:1.85;border-top:1px solid rgba(255,255,255,.07);padding-top:.75rem">${gogyouComment2}</div><div style="margin-top:.5rem;font-family:var(--ff-mono);font-size:.6rem;color:var(--muted)">生年月日をもとに算出</div>`;
   document.getElementById('gogyouSection').innerHTML = gogyouHTML;
 
   document.getElementById('genmeBlock').innerHTML = `<div class="result-block-title">☯ あなたの本質 ─ 元命「${genme.name}」</div><div class="result-block-body">${GENME_DESC[gmIdx]}</div>`;
