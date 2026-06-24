@@ -19,6 +19,7 @@ require_once __DIR__.'/nav-cards.php';
 </div>
 <footer>
   <?= $_p==='top' ? '占いポータル トップ' : '<a href="/">占いポータル トップ</a>' ?> &nbsp;/&nbsp;
+  <a href="/articles/">占い解説ガイド</a> &nbsp;/&nbsp;
   <?= $_p==='tarot' ? 'タロット占い' : '<a href="/tarot">タロット占い</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='shichu' ? '四柱推命' : '<a href="/shichu">四柱推命</a>' ?> &nbsp;/&nbsp;
   <?= $_p==='calendar' ? '開運カレンダー' : '<a href="/calendar">開運カレンダー</a>' ?> &nbsp;/&nbsp;
