@@ -25,6 +25,7 @@ require_once __DIR__.'/nav-cards.php';
         <li><a href="/shichu">三星統合鑑定</a></li>
         <li><a href="/tarot">タロット占い</a></li>
         <li><a href="/shichu">四柱推命</a></li>
+        <li><a href="/sanmei">算命学</a></li>
         <li><a href="/mbti">MBTI×星座診断</a></li>
         <li><a href="/calendar">開運カレンダー</a></li>
       </ul>
