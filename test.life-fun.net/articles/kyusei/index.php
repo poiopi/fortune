@@ -1,4 +1,8 @@
-<?php declare(strict_types=1); ?>
+﻿<?php
+declare(strict_types=1);
+require_once __DIR__ . '/../../inc/auto-link.php';
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -117,6 +121,8 @@
     .cta-box{flex-direction:column;align-items:flex-start}
     .art-footer-inner{grid-template-columns:1fr;gap:1.5rem}
   }
+.al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
+  .al-link:hover{color:var(--accent-lt)}
   </style>
 
   <script type="application/ld+json">
@@ -387,3 +393,8 @@ function toggleFaq(el){ el.parentElement.classList.toggle('open'); }
 </script>
 </body>
 </html>
+<?php
+$html = ob_get_clean();
+echo autoLink($html, 'kyusei');
+?>
+
