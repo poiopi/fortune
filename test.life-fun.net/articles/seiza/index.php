@@ -220,18 +220,18 @@ ob_start();
     <h2>12星座の特徴</h2>
     <p>黄道を12等分した星座を「黄道十二宮」と呼び、太陽が各星座に滞在する時期が誕生日となる人の太陽星座になります。各星座には固有の気質とエレメント・クオリティがあります。</p>
     <div class="sign-grid">
-      <a href="/articles/seiza/aries/" class="sign-card" style="text-decoration:none"><span class="sign-symbol">♈</span><div><div class="sign-name">牡羊座</div><div class="sign-period">3/21〜4/19</div><div class="sign-elem">火 ／ 活動宮</div></div></a>
-      <div class="sign-card"><span class="sign-symbol">♉</span><div><div class="sign-name">牡牛座</div><div class="sign-period">4/20〜5/20</div><div class="sign-elem">地 ／ 不動宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♊</span><div><div class="sign-name">双子座</div><div class="sign-period">5/21〜6/21</div><div class="sign-elem">風 ／ 柔軟宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♋</span><div><div class="sign-name">蟹座</div><div class="sign-period">6/22〜7/22</div><div class="sign-elem">水 ／ 活動宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♌</span><div><div class="sign-name">獅子座</div><div class="sign-period">7/23〜8/22</div><div class="sign-elem">火 ／ 不動宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♍</span><div><div class="sign-name">乙女座</div><div class="sign-period">8/23〜9/22</div><div class="sign-elem">地 ／ 柔軟宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♎</span><div><div class="sign-name">天秤座</div><div class="sign-period">9/23〜10/23</div><div class="sign-elem">風 ／ 活動宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♏</span><div><div class="sign-name">蠍座</div><div class="sign-period">10/24〜11/21</div><div class="sign-elem">水 ／ 不動宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♐</span><div><div class="sign-name">射手座</div><div class="sign-period">11/22〜12/21</div><div class="sign-elem">火 ／ 柔軟宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♑</span><div><div class="sign-name">山羊座</div><div class="sign-period">12/22〜1/19</div><div class="sign-elem">地 ／ 活動宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♒</span><div><div class="sign-name">水瓶座</div><div class="sign-period">1/20〜2/18</div><div class="sign-elem">風 ／ 不動宮</div></div></div>
-      <div class="sign-card"><span class="sign-symbol">♓</span><div><div class="sign-name">魚座</div><div class="sign-period">2/19〜3/20</div><div class="sign-elem">水 ／ 柔軟宮</div></div></div>
+      <a href="/articles/seiza/aries/"       class="sign-card" style="text-decoration:none"><span class="sign-symbol">♈</span><div><div class="sign-name">牡羊座</div><div class="sign-period">3/21〜4/19</div><div class="sign-elem">火 ／ 活動宮</div></div></a>
+      <a href="/articles/seiza/taurus/"      class="sign-card" style="text-decoration:none"><span class="sign-symbol">♉</span><div><div class="sign-name">牡牛座</div><div class="sign-period">4/20〜5/20</div><div class="sign-elem">地 ／ 不動宮</div></div></a>
+      <a href="/articles/seiza/gemini/"      class="sign-card" style="text-decoration:none"><span class="sign-symbol">♊</span><div><div class="sign-name">双子座</div><div class="sign-period">5/21〜6/21</div><div class="sign-elem">風 ／ 柔軟宮</div></div></a>
+      <a href="/articles/seiza/cancer/"      class="sign-card" style="text-decoration:none"><span class="sign-symbol">♋</span><div><div class="sign-name">蟹座</div><div class="sign-period">6/22〜7/22</div><div class="sign-elem">水 ／ 活動宮</div></div></a>
+      <a href="/articles/seiza/leo/"         class="sign-card" style="text-decoration:none"><span class="sign-symbol">♌</span><div><div class="sign-name">獅子座</div><div class="sign-period">7/23〜8/22</div><div class="sign-elem">火 ／ 不動宮</div></div></a>
+      <a href="/articles/seiza/virgo/"       class="sign-card" style="text-decoration:none"><span class="sign-symbol">♍</span><div><div class="sign-name">乙女座</div><div class="sign-period">8/23〜9/22</div><div class="sign-elem">地 ／ 柔軟宮</div></div></a>
+      <a href="/articles/seiza/libra/"       class="sign-card" style="text-decoration:none"><span class="sign-symbol">♎</span><div><div class="sign-name">天秤座</div><div class="sign-period">9/23〜10/23</div><div class="sign-elem">風 ／ 活動宮</div></div></a>
+      <a href="/articles/seiza/scorpio/"     class="sign-card" style="text-decoration:none"><span class="sign-symbol">♏</span><div><div class="sign-name">蠍座</div><div class="sign-period">10/24〜11/22</div><div class="sign-elem">水 ／ 不動宮</div></div></a>
+      <a href="/articles/seiza/sagittarius/" class="sign-card" style="text-decoration:none"><span class="sign-symbol">♐</span><div><div class="sign-name">射手座</div><div class="sign-period">11/23〜12/21</div><div class="sign-elem">火 ／ 柔軟宮</div></div></a>
+      <a href="/articles/seiza/capricorn/"   class="sign-card" style="text-decoration:none"><span class="sign-symbol">♑</span><div><div class="sign-name">山羊座</div><div class="sign-period">12/22〜1/19</div><div class="sign-elem">地 ／ 活動宮</div></div></a>
+      <a href="/articles/seiza/aquarius/"    class="sign-card" style="text-decoration:none"><span class="sign-symbol">♒</span><div><div class="sign-name">水瓶座</div><div class="sign-period">1/20〜2/18</div><div class="sign-elem">風 ／ 不動宮</div></div></a>
+      <a href="/articles/seiza/pisces/"      class="sign-card" style="text-decoration:none"><span class="sign-symbol">♓</span><div><div class="sign-name">魚座</div><div class="sign-period">2/19〜3/20</div><div class="sign-elem">水 ／ 柔軟宮</div></div></a>
     </div>
     <p>12星座は春分（牡羊座）から始まり、一年をかけて一巡します。各星座は「エレメント（4種）」と「クオリティ（3種）」の組み合わせで構成されており、それが性格の大きな枠組みになります。</p>
   </section>
