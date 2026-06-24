@@ -245,6 +245,7 @@ footer a:hover{color:var(--gold)}
       <p>自分で考えた芸名の画数・運勢を調べたい方は<br>姓名判断ページをご利用ください。</p>
       <a href="/seimei" class="seimei-link">✍️ 姓名判断で調べる →</a>
     </div>
+    <?php require __DIR__.'/inc/share-btns.php'; ?>
     <div class="retry-wrap">
       <button class="rf-retry-btn" onclick="resetAll()">もう一度診断する</button>
     </div>
