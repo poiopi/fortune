@@ -99,6 +99,7 @@ ob_start();
     margin-bottom:.6rem;
     position:relative;overflow:hidden;
   }
+  .card-illust img{width:100%;height:100%;object-fit:contain;display:block}
   .card-illust::before,.card-illust::after{
     content:'';position:absolute;width:6px;height:6px;
     border:1px solid rgba(201,168,76,.4);
@@ -258,7 +259,7 @@ ob_start();
     </div>
     <div class="card-visual">
       <div class="card-roman">0</div>
-      <div class="card-illust">🃏</div>
+      <div class="card-illust"><img src="/cards/fool.png" alt="愚者"></div>
       <div class="card-en">THE FOOL</div>
       <div class="card-ja">愚者</div>
     </div>
