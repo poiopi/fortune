@@ -365,13 +365,13 @@ ob_start();
   <section class="art-section">
     <h2>他のカードを見る</h2>
     <div class="card-nav">
-      <a href="/articles/tarot/" class="card-nav-item">
-        <div class="card-nav-dir">← 一覧へ戻る</div>
-        <div class="card-nav-name">大アルカナ22枚 解説一覧</div>
+      <a href="/articles/tarot/world/" class="card-nav-item">
+        <div class="card-nav-dir">← 前のカード</div>
+        <div class="card-nav-name">世界</div>
       </a>
-      <a href="/articles/tarot/" class="card-nav-item">
+      <a href="/articles/tarot/magician/" class="card-nav-item">
         <div class="card-nav-dir">次のカード →</div>
-        <div class="card-nav-name">I. 魔術師（近日公開）</div>
+        <div class="card-nav-name">魔術師</div>
       </a>
     </div>
   </section>
