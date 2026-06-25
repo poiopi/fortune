@@ -131,6 +131,10 @@ ob_start();
     <p class="art-lead">数秘術（ニューメロロジー）は、誕生日を数字に還元することで「運命数」を導き出し、その人の本質・才能・人生テーマを読み解く占術です。古代ピタゴラスの時代から続く数の神秘を、現代の視点でわかりやすく解説します。</p>
   </div>
 
+      <?php endforeach; ?>
+    </div>
+  </section>
+
   <?php
 $ctaTitle = '🔢 あなたの運命数を調べる';
 $ctaText  = '生年月日を入力するだけで運命数と詳細な解説を表示。';
@@ -138,9 +142,6 @@ $ctaUrl   = '/numerology';
 $ctaBtn   = '数秘術を診断する →';
 require __DIR__.'/../../inc/article-cta.php';
 ?>
-      <?php endforeach; ?>
-    </div>
-  </section>
 
   <section class="art-section" id="birthday">
     <h2>誕生日数とは</h2>
