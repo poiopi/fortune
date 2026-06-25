@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+﻿<?php declare(strict_types=1);
 if ($_SERVER['REQUEST_METHOD']==='POST' && ($_POST['action']??'')==='save_answer') {
     header('Content-Type: application/json');
     $answer = trim($_POST['answer'] ?? '');
@@ -30,6 +30,13 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && ($_POST['action']??'')==='save_answer
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P1EKB3WWX8');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="大喜利ゲームで芸風を判定！生年月日の画数から大吉の芸名をフルネーム＋コンビ名で3パターン提案。ボケ・ツッコミ・ピン芸人から選んでチャレンジ。">

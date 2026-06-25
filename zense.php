@@ -1,7 +1,14 @@
-<?php declare(strict_types=1); ?>
+﻿<?php declare(strict_types=1); ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P1EKB3WWX8');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="名前と生年月日から前世を診断。何回目の転生か、どの時代のどこで何者だったか、魂のカルテを生成します。">
