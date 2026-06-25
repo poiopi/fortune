@@ -43,6 +43,7 @@ ob_start();
   <div class="art-hero">
     <div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ V</span><h1>法王（THE HIEROPHANT）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ5番「法王」は、制度・伝統・慣習の守護者です。独自の道より確立された道を歩むよう促します。師や権威からの教えを受け取る時——このカードはその聖なる橋渡し役を担います。</p><div class="kw-tags"><span class="kw-tag upright">伝統</span><span class="kw-tag upright">精神</span><span class="kw-tag upright">導き</span><span class="kw-tag upright">信頼</span><span class="kw-tag upright">正統性</span> <span class="kw-tag reversed">教条主義</span><span class="kw-tag reversed">形式主義</span><span class="kw-tag reversed">慣習への疑問</span></div></div>
     <div class="card-visual"><div class="card-roman">V</div><div class="card-illust"><img src="/cards/hierophant.png" alt="法王"></div><div class="card-en">THE HIEROPHANT</div><div class="card-ja">法王</div></div>
+  </div>
 
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>法王は二本の柱の間の玉座に座り、信者たちを祝福しています。彼が体現するのは「受け継がれてきた知恵」の力です。すべてを自分で発見する必要はない。先人が積み上げた道をたどることにも、深い意味があります。このカードが現れる時、信頼できる師や制度の中に学びがあることを示しています。</p></section>

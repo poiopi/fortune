@@ -69,7 +69,8 @@ ob_start();
       <div class="card-illust"><img src="/cards/emperor.png" alt="皇帝"></div>
       <div class="card-en">THE EMPEROR</div>
       <div class="card-ja">皇帝</div>
-
+    </div>
+  </div>
 
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>玉座に座る皇帝の表情は厳しく、背後には険しい山が連なります。柔らかさより強さ、感情より理性——皇帝が体現するのはそういう世界です。しかし彼は無慈悲ではありません。秩序は守るためにある。ルールは混沌から人々を護るためにある。皇帝のカードが出る時、あなたに求められているのは「大人の判断」です。</p></section>

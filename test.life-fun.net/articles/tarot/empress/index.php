@@ -69,7 +69,8 @@ ob_start();
       <div class="card-illust"><img src="/cards/empress.png" alt="女帝"></div>
       <div class="card-en">THE EMPRESS</div>
       <div class="card-ja">女帝</div>
-
+    </div>
+  </div>
 
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>小麦が実る野原に豊かに座る女帝は、生命そのものの象徴です。彼女の周りには木々が茂り、川が流れ、すべてが実っています。このカードは「与えることで豊かになる」という宇宙の法則を体現しています。愛情を注げば注ぐほど、あなたにも返ってくる。その循環の中心に女帝は立っています。</p></section>
