@@ -46,7 +46,8 @@
       "Bash(git reset *)",
       "Bash(Select-Object Name)",
       "PowerShell(Get-ChildItem 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net' -Directory -Recurse -Depth 2 | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\('C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\',''\\) })",
-      "PowerShell(New-Item -ItemType Directory -Path 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\css' -Force)"
+      "PowerShell(New-Item -ItemType Directory -Path 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\css' -Force)",
+      "PowerShell(Get-ChildItem 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles' -Recurse -Filter 'index.php' | ForEach-Object { $_.FullName.Replace\\('C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\',''\\) } | Sort-Object)"
     ]
   }
 }
