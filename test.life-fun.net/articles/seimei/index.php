@@ -24,6 +24,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -56,11 +57,6 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  .cta-box{background:linear-gradient(135deg,#f5f0ff 0%,#fdf4fa 100%);border:1px solid #d4bfff;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-  .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
-  .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}
-  .cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
   .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
@@ -84,11 +80,6 @@ ob_start();
   .faq-item.open .faq-q::after{transform:rotate(45deg)}
   .faq-a{font-size:.88rem;color:#444;line-height:1.85;padding:0 1.1rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}
-  .related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}
-  .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
-  .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
-  .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
 .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
   </style>
@@ -138,12 +129,11 @@ ob_start();
     <p class="art-lead">姓名判断は漢字の画数を使って名前の吉凶・運勢を読み解く日本の伝統占術です。天格・人格・地格・外格・総格の「五格」を組み合わせることで、その人の本質・社会運・家庭運などを多角的に鑑定します。</p>
   </div>
 
-  <div class="cta-box">
-    <div>
+  <div class="article-cta"><div class="article-cta-text">
       <p>✍️ あなたの名前を鑑定する</p>
       <small>姓名を入力するだけで五格・画数・吉凶を自動鑑定。</small>
     </div>
-    <a href="/seimei" class="cta-btn">姓名判断を鑑定する →</a>
+    <a href="/seimei" class="article-cta-btn">姓名判断を鑑定する →</a>
   </div>
 
   <nav class="toc">
@@ -230,22 +220,22 @@ ob_start();
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>名前の数字を知ったら、次は誕生日の数字も調べてみましょう。</p>
-    <div class="related-grid">
-      <a href="/" class="related-card">
-        <div class="related-card-label">三星統合鑑定</div>
-        <div class="related-card-title">四柱推命・数秘・九星を統合して鑑定する →</div>
+    <div class="article-related-grid">
+      <a href="/" class="article-related-item">
+        <div class="article-related-label">三星統合鑑定</div>
+        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
       </a>
-      <a href="/articles/numerology/" class="related-card">
-        <div class="related-card-label">数秘術とは</div>
-        <div class="related-card-title">誕生日から運命数を計算して読み解く →</div>
+      <a href="/articles/numerology/" class="article-related-item">
+        <div class="article-related-label">数秘術とは</div>
+        <div class="article-related-title">誕生日から運命数を計算して読み解く →</div>
       </a>
-      <a href="/articles/tarot/" class="related-card">
-        <div class="related-card-label">タロット占いとは</div>
-        <div class="related-card-title">直感でカードを選んでメッセージを受け取る →</div>
+      <a href="/articles/tarot/" class="article-related-item">
+        <div class="article-related-label">タロット占いとは</div>
+        <div class="article-related-title">直感でカードを選んでメッセージを受け取る →</div>
       </a>
-      <a href="/articles/shichu/" class="related-card">
-        <div class="related-card-label">四柱推命とは</div>
-        <div class="related-card-title">命式・大運・年運の流れを知る →</div>
+      <a href="/articles/shichu/" class="article-related-item">
+        <div class="article-related-label">四柱推命とは</div>
+        <div class="article-related-title">命式・大運・年運の流れを知る →</div>
       </a>
     </div>
   </section>
