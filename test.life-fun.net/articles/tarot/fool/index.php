@@ -91,9 +91,9 @@ ob_start();
   }
   .card-illust{
     width:84px;height:84px;
-    border:1px solid rgba(201,168,76,.4);
+    border:none;
     border-radius:3px;
-    background:#f2ecd8;
+    background:transparent;
     display:flex;align-items:center;justify-content:center;
     font-size:2.6rem;line-height:1;
     margin-bottom:.6rem;
