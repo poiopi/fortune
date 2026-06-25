@@ -151,55 +151,6 @@ ob_start();
       <div class="card-ja">魔術師</div>
     </div>
   </div>
-
-  <div class="article-cta">
-    <div class="article-cta-text">
-      <p>🔮 今すぐカードを引いてみる</p>
-      <small>。</small>
-    </div>
-    <a href="/tarot" class="article-cta-btn">タロット占いを始める →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#overview"></a></li>
-      <li><a href="#upright">正位置の意味</a></li>
-      <li><a href="#reversed">逆位置の意味</a></li>
-      <li><a href="#love">恋愛での意味</a></li>
-      <li><a href="#work">仕事・お金での意味</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="overview">
-    <h2></h2>
-    <p>自分の中にすでに全ての道具が揃っている——魔術師はそう告げます。テーブルの上には杖・剣・聖杯・金貨。大アルカナ四元素の象徴がすべて揃い、魔術師はそれを自在に操る存在です。「始める前に準備が必要」ではなく「今持っているものがすでに十分」を伝えるカード。準備を言い訳にしているなら、このカードはその幻想を打ち砕きます。</p>
-  </section>
-
-  <section class="art-section" id="upright">
-    <h2>正位置の意味</h2>
-    <div class="reading-box upright">
-      <div class="reading-box-label">UPRIGHT · 正位置</div>
-      <p>意志の力で現実を動かせる時期です。アイデアを行動に変えよ、というシンプルかつ強力なメッセージ。あなたが今感じている「やれるかもしれない」という感覚は正しい。魔術師は「やれる」に変換する力を持っています。今こそ始める時です。</p>
-    </div>
-  </section>
-
-  <section class="art-section" id="reversed">
-    <h2>逆位置の意味</h2>
-    <div class="reading-box reversed">
-      <div class="reading-box-label">REVERSED · 逆位置</div>
-      <p>才能や能力を過信・誇示しすぎているか、または逆に自分の力を全く信じられていない状態です。どちらも「魔術師の道具が正しく使われていない」という点で共通しています。外に向けて誇示するより、内なる集中へ。自己不信があるなら、まず小さな一歩を。</p>
-    </div>
-  </section>
-
-  <section class="art-section" id="love">
-    <h2>恋愛での意味</h2>
-    <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-label">UPRIGHT · 正位置</div>
-        <div class="cat-text">恋愛において積極的なアプローチが実を結ぶ時期です。自分の魅力を信じて、気持ちをまっすぐに伝えてみましょう。</div>
-      </div>
       <div class="cat-card">
         <div class="cat-label">REVERSED · 逆位置</div>
         <div class="cat-text">口先だけの言葉や誠実さのない態度が関係を壊すリスクがあります。言葉より行動で誠意を示すことが今は大切です。</div>

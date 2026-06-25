@@ -260,16 +260,6 @@ require __DIR__.'/../../inc/article-cta.php';
     ?>
   </section>
 
-  <div class="article-cta" style="margin:2.5rem 0 0">
-    <div>
-      <p>🌙 あなたの命式を無料で算出する</p>
-      <small>生年月日を入力するだけ。十神・大運・天中殺まで表示します。</small>
-    </div>
-    <a href="/shichu" class="article-cta-btn">四柱推命を算出する →</a>
-  </div>
-
-</div>
-
 
 <script>
 function toggleFaq(el){
