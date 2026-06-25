@@ -73,6 +73,11 @@ ob_start();
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
 
   /* ── CTA BOX ── */
+  
+  
+  
+  
+  
 
   /* ── TOC ── */
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
@@ -109,10 +114,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
 
   /* ── RELATED ── */
+  
+  
+  
+  
+  
 
   /* ── FOOTER ── */
 
   @media(max-width:600px){
+    
     .card-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
   }
 .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
@@ -181,17 +192,129 @@ ob_start();
     <p class="art-lead">15世紀に生まれたタロットは、78枚のカードで潜在意識と運命の流れを読み解く占術。直感でカードを選ぶことで、今のあなたへのメッセージが浮かび上がります。この記事ではタロットの基礎知識から22枚のカード意味一覧まで、まとめて解説します。</p>
   </div>
 
-      <?php endif; endforeach; ?>
-    </div>
-  </section>
-
   <?php
 $ctaTitle = '🔮 実際にカードを引いてみる';
 $ctaText  = '22枚の大アルカナが並ぶ本格タロット。直感で1枚選ぶだけ。';
 $ctaUrl   = '/tarot';
 $ctaBtn   = 'タロット占いを始める →';
 require __DIR__.'/../../inc/article-cta.php';
-?>
+  ?>
+
+  <nav class="toc">
+    <p class="toc-title">目次</p>
+    <ol>
+      <li><a href="#about">タロット占いとは</a></li>
+      <li><a href="#history">タロットの歴史</a></li>
+      <li><a href="#arcana">大アルカナ・小アルカナとは</a></li>
+      <li><a href="#reading">正位置・逆位置の読み方</a></li>
+      <li><a href="#cards">大アルカナ22枚 意味一覧</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#related">関連コンテンツ</a></li>
+    </ol>
+  </nav>
+
+  <section class="art-section" id="about">
+    <h2>タロット占いとは</h2>
+    <p>タロット占いは、78枚の絵札を使って現在の状況・心理・運勢の流れを読み取る占術です。質問を心に持ちながらカードを引くことで、潜在意識が「今もっとも必要なメッセージ」を引き寄せると考えられています。</p>
+    <p>占星術や数秘術と異なり、生年月日や名前といった個人データを必要としないのが特徴。「今この瞬間の直感」を大切にする、即興性の高い占術です。</p>
+    <p>心理学者カール・ユングの「集合的無意識」との親和性も指摘されており、自己分析ツールとして活用する人も増えています。「答えはカードが出す」のではなく「カードが自分の内側の声を映す」と捉えると、より深く楽しめます。</p>
+  </section>
+
+  <section class="art-section" id="history">
+    <h2>タロットの歴史</h2>
+    <p>タロットの起源は15世紀のイタリアに遡ります。当初は貴族向けのカードゲーム「タロッキ」として誕生しました。エジプト起源説やユダヤ神秘主義（カバラ）との関連を主張する説もありますが、歴史的証拠としてはイタリア起源が最有力です。</p>
+    <p>18世紀のフランスで、神秘主義者たちがタロットを占いツールとして体系化。アントワーヌ・クール・ド・ジェブランが「タロットは古代エジプトの智慧を伝える書」と著作で紹介したことが、占いとしての普及を加速させました。</p>
+    <p>現在もっとも広く使われる「ライダー・ウェイト版」は1909年にアーサー・ウェイトとパメラ・コールマン・スミスが制作。各カードに描かれた豊かな絵柄が初心者にも直感的で読みやすく、現代タロットの標準となっています。</p>
+  </section>
+
+  <section class="art-section" id="arcana">
+    <h2>大アルカナ・小アルカナとは</h2>
+    <h3>大アルカナ（22枚）</h3>
+    <p>0「愚者」から21「世界」までの22枚。人生の大きなテーマや転換点、魂の成長プロセスを表します。占いでは特に重要なカードとして扱われ、大アルカナだけを使ったスプレッドも多く存在します。</p>
+    <h3>小アルカナ（56枚）</h3>
+    <p>ワンド・カップ・ソード・ペンタクルの4スートに分かれた56枚。日常的な出来事や具体的な状況を表します。トランプの祖先にあたり、4スートはハート・ダイヤ・クラブ・スペードに対応しています。</p>
+    <p>当サイトのタロット占いは大アルカナ22枚を使用しています。</p>
+  </section>
+
+  <section class="art-section" id="reading">
+    <h2>正位置・逆位置の読み方</h2>
+    <h3>正位置</h3>
+    <p>カードが正立した状態。そのカードが持つ意味がストレートに現れているとき。たとえば「太陽」の正位置は成功・喜び・明るい未来を示します。</p>
+    <h3>逆位置</h3>
+    <p>カードが逆さまになった状態。正位置の意味が内向きになる・遅延する・過剰になるといった変化が生じます。「太陽」の逆位置なら、喜びが内にこもる・一時的な停滞といった意味になります。逆位置を採用しないリーダーも多く、初心者は正位置のみから始めるのがおすすめです。</p>
+  </section>
+
+  <section class="art-section" id="cards">
+    <h2>大アルカナ22枚 意味一覧</h2>
+    <p>以下は大アルカナ全22枚のキーワード一覧です。</p>
+    <div class="card-grid">
+      <?php
+      $cards = [
+        ['0','愚者','自由・新出発・純粋'],
+        ['I','魔術師','意志・技術・実行力'],
+        ['II','女教皇','直感・神秘・内なる知恵'],
+        ['III','女帝','豊かさ・母性・創造'],
+        ['IV','皇帝','権力・安定・リーダーシップ'],
+        ['V','教皇','伝統・精神・導き'],
+        ['VI','恋人','選択・愛・調和'],
+        ['VII','戦車','勝利・前進・意志力'],
+        ['VIII','力','勇気・忍耐・内なる強さ'],
+        ['IX','隠者','内省・孤独・探求'],
+        ['X','運命の輪','転機・サイクル・チャンス'],
+        ['XI','正義','公正・真実・バランス'],
+        ['XII','吊られた男','試練・待機・視点転換'],
+        ['XIII','死神','終わり・変容・再生'],
+        ['XIV','節制','調整・癒し・中庸'],
+        ['XV','悪魔','束縛・執着・誘惑'],
+        ['XVI','塔','崩壊・解放・突然の変化'],
+        ['XVII','星','希望・回復・インスピレーション'],
+        ['XVIII','月','不安・幻想・直感'],
+        ['XIX','太陽','成功・喜び・活力'],
+        ['XX','審判','覚醒・再評価・転生'],
+        ['XXI','世界','完成・達成・統合'],
+      ];
+      $card_links = [
+        '0'    => '/articles/tarot/fool/',
+        'I'    => '/articles/tarot/magician/',
+        'II'   => '/articles/tarot/high-priestess/',
+        'III'  => '/articles/tarot/empress/',
+        'IV'   => '/articles/tarot/emperor/',
+        'V'    => '/articles/tarot/hierophant/',
+        'VI'   => '/articles/tarot/lovers/',
+        'VII'  => '/articles/tarot/chariot/',
+        'VIII' => '/articles/tarot/strength/',
+        'IX'   => '/articles/tarot/hermit/',
+        'X'    => '/articles/tarot/wheel/',
+        'XI'   => '/articles/tarot/justice/',
+        'XII'  => '/articles/tarot/hanged-man/',
+        'XIII' => '/articles/tarot/death/',
+        'XIV'  => '/articles/tarot/temperance/',
+        'XV'   => '/articles/tarot/devil/',
+        'XVI'  => '/articles/tarot/tower/',
+        'XVII' => '/articles/tarot/star/',
+        'XVIII'=> '/articles/tarot/moon/',
+        'XIX'  => '/articles/tarot/sun/',
+        'XX'   => '/articles/tarot/judgement/',
+        'XXI'  => '/articles/tarot/world/',
+      ];
+      foreach($cards as $c):
+        $slug = $card_links[$c[0]] ?? null;
+        if($slug): ?>
+      <a href="<?= $slug ?>" class="arc-card">
+        <div class="arc-num"><?= $c[0] ?></div>
+        <div class="arc-name"><?= $c[1] ?></div>
+        <div class="arc-kw"><?= $c[2] ?></div>
+        <div class="arc-link">詳細を読む →</div>
+      </a>
+      <?php else: ?>
+      <div class="arc-card">
+        <div class="arc-num"><?= $c[0] ?></div>
+        <div class="arc-name"><?= $c[1] ?></div>
+        <div class="arc-kw"><?= $c[2] ?></div>
+      </div>
+      <?php endif; endforeach; ?>
+    </div>
+  </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
@@ -213,16 +336,9 @@ require __DIR__.'/../../inc/article-cta.php';
         <div class="faq-a">問題ありません。ただし同じ質問を繰り返すのは避け、1日1枚を「今日のカード」として引くスタイルがおすすめです。</div>
       </div>
     </div>
-  </section>
-  <section class="art-section">
-    <?php
-    $ctaTitle = '🔮 22枚の意味を読んだ今、実際に占ってみましょう';
-    $ctaText  = '今のあなたにはどのカードが現れるでしょうか。';
-    $ctaUrl   = '/tarot';
-    $ctaBtn   = 'タロット占いを始める →';
-    require __DIR__.'/../../inc/article-cta.php';
-    ?>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
@@ -230,13 +346,14 @@ require __DIR__.'/../../inc/article-cta.php';
     <?php
     $relatedItems = [
       ['label'=>'四柱推命', 'title'=>'生まれ持った命式と大運を調べる →', 'url'=>'/shichu'],
-      ['label'=>'数秘術',   'title'=>'誕生日から運命数を読み解く →',     'url'=>'/numerology'],
-      ['label'=>'九星気学', 'title'=>'今年・来年の運気の流れを知る →',   'url'=>'/kyusei'],
-      ['label'=>'相性診断', 'title'=>'気になる相手との相性を占う →',     'url'=>'/aisho'],
+      ['label'=>'数秘術', 'title'=>'誕生日から運命数を読み解く →', 'url'=>'/numerology'],
+      ['label'=>'九星気学', 'title'=>'今年・来年の運気の流れを知る →', 'url'=>'/kyusei'],
+      ['label'=>'相性診断', 'title'=>'気になる相手との相性を占う →', 'url'=>'/aisho'],
     ];
     require __DIR__.'/../../inc/article-related.php';
     ?>
   </section>
+
 </div>
 
 
