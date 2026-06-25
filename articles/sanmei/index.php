@@ -392,7 +392,7 @@ ob_start();
     <h2>関連コンテンツ</h2>
     <p>算命学で自分の本質を知ったら、他の占術で多角的に深めてみませんか。</p>
     <div class="related-grid">
-      <a href="/shichu" class="related-card featured">
+      <a href="/" class="related-card featured">
         <div class="related-card-label">三星統合鑑定（おすすめ）</div>
         <div class="related-card-title">四柱推命・数秘・九星を統合して鑑定する →</div>
       </a>

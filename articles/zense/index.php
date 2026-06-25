@@ -209,7 +209,7 @@ ob_start();
     <h2>関連コンテンツ</h2>
     <p>前世を知ったら、今世のあなたをさらに多角的に占ってみましょう。</p>
     <div class="related-grid">
-      <a href="/shichu" class="related-card">
+      <a href="/" class="related-card">
         <div class="related-card-label">三星統合鑑定</div>
         <div class="related-card-title">四柱推命・数秘・九星を統合して鑑定する →</div>
       </a>
