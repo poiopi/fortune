@@ -173,42 +173,13 @@ ob_start();
     <p class="art-lead">西洋占星術は、惑星と星座の位置関係から人の性格・運命・相性を読み解く占術です。12星座の意味・4つのエレメント・3つのクオリティを組み合わせることで、あなた固有の個性が見えてきます。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>⭐ あなたの太陽星座・エレメントを調べる</p>
-      <small>生年月日と生まれた時間帯を入力するだけで鑑定できます。</small>
-    </div>
-    <a href="/seiza" class="article-cta-btn">西洋占星術で鑑定する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#whatis">西洋占星術とは</a></li>
-      <li><a href="#signs">12星座の特徴</a></li>
-      <li><a href="#elements">4つのエレメント（火・地・風・水）</a></li>
-      <li><a href="#qualities">クオリティ（活動宮・不動宮・柔軟宮）</a></li>
-      <li><a href="#howto">西洋占星術の活用方法</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="whatis">
-    <h2>西洋占星術とは</h2>
-    <p>西洋占星術（Western Astrology）は、太陽・月・惑星が黄道十二宮のどの星座に位置するかをもとに、人の性格・運命・相性などを読み解く占術です。その起源は古代バビロニアにさかのぼり、現代に至るまで数千年の歴史を持ちます。</p>
-    <p>最もよく知られているのは「太陽星座」——生まれた日に太陽が位置していた星座で、一般的に「あなたは何座?」と聞くときの「星座」はこれを指します。太陽星座は人の「外の顔」、すなわち意識的な性格・目標・自己表現の傾向を表します。</p>
-    <div class="highlight-box">
-      <p>西洋占星術では太陽星座のほかに、<strong>月星座（感情・本能）</strong>、<strong>上昇星座（第一印象・外見的な雰囲気）</strong>など複数の要素を組み合わせて鑑定します。本サイトの鑑定ツールでは太陽星座・エレメント・内面タイプ（独自概念）・生まれた時間帯を組み合わせた個性分析を行っています。</p>
-    </div>
-    <h3>東洋占術との違い</h3>
-    <p>算命学・四柱推命などの東洋占術が「年・月・日・時の干支」をベースに命運を読むのに対し、西洋占星術は「惑星の位置と星座」を中心に宇宙的な視点からアプローチします。東洋が「運命の流れ」に重点を置くのに対し、西洋占星術は「個人の気質・性格・対人関係」の分析に強みがあります。</p>
-  </section>
-
-  <section class="art-section" id="signs">
-    <h2>12星座の特徴</h2>
-    <p>黄道を12等分した星座を「黄道十二宮」と呼び、太陽が各星座に滞在する時期が誕生日となる人の太陽星座になります。各星座には固有の気質とエレメント・クオリティがあります。</p>
-    <div class="sign-grid">
-      <a href="/articles/seiza/aries/"       class="sign-card" style="text-decoration:none"><span class="sign-symbol">♈</span><div><div class="sign-name">牡羊座</div><div class="sign-period">3/21〜4/19</div><div class="sign-elem">火 ／ 活動宮</div></div></a>
+  <?php
+$ctaTitle = '⭐ あなたの太陽星座・エレメントを調べる';
+$ctaText  = '生年月日と生まれた時間帯を入力するだけで鑑定できます。';
+$ctaUrl   = '/seiza';
+$ctaBtn   = '西洋占星術で鑑定する →';
+require __DIR__.'/../../inc/article-cta.php';
+?></a>
       <a href="/articles/seiza/taurus/"      class="sign-card" style="text-decoration:none"><span class="sign-symbol">♉</span><div><div class="sign-name">牡牛座</div><div class="sign-period">4/20〜5/20</div><div class="sign-elem">地 ／ 不動宮</div></div></a>
       <a href="/articles/seiza/gemini/"      class="sign-card" style="text-decoration:none"><span class="sign-symbol">♊</span><div><div class="sign-name">双子座</div><div class="sign-period">5/21〜6/21</div><div class="sign-elem">風 ／ 柔軟宮</div></div></a>
       <a href="/articles/seiza/cancer/"      class="sign-card" style="text-decoration:none"><span class="sign-symbol">♋</span><div><div class="sign-name">蟹座</div><div class="sign-period">6/22〜7/22</div><div class="sign-elem">水 ／ 活動宮</div></div></a>
@@ -317,29 +288,21 @@ ob_start();
         <div class="faq-a">太陽星座は生まれた日付で決まりますが、本格的な占星術では月星座・上昇星座・各惑星の配置も性格に影響します。また、生まれた時間帯・内面タイプなど複数の要素が組み合わさるため、同じ太陽星座でも個人差が生まれます。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>西洋占星術で自分の傾向を知ったら、他の占術で多角的に深めてみませんか。</p>
-    <div class="article-related-grid">
-      <a href="/seiza" class="related-card featured">
-        <div class="article-related-label">西洋占星術（おすすめ）</div>
-        <div class="article-related-title">太陽星座×内面タイプで今すぐ鑑定する →</div>
-      </a>
-      <a href="/articles/sanmei/" class="article-related-item">
-        <div class="article-related-label">算命学とは</div>
-        <div class="article-related-title">元命・主星・従星の意味を解説 →</div>
-      </a>
-      <a href="/articles/numerology/" class="article-related-item">
-        <div class="article-related-label">数秘術とは</div>
-        <div class="article-related-title">運命数の計算方法と意味を解説 →</div>
-      </a>
-      <a href="/articles/" class="article-related-item">
-        <div class="article-related-label">解説ガイド一覧</div>
-        <div class="article-related-title">タロット・四柱推命など各占術の解説 →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'算命学とは', 'title'=>'元命・主星・従星の意味を解説 →', 'url'=>'/articles/sanmei/'],
+      ['label'=>'数秘術とは', 'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
+      ['label'=>'解説ガイド一覧', 'title'=>'タロット・四柱推命など各占術の解説 →', 'url'=>'/articles/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>

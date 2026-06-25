@@ -132,51 +132,13 @@ ob_start();
     <p class="art-lead">MBTI（Myers-Briggs Type Indicator）は、ユング心理学をベースに開発された世界最大規模の性格タイプ診断です。E/I・S/N・T/F・J/Pの4軸16タイプで性格傾向を把握し、星座占いと組み合わせることで、より立体的な自己理解が得られます。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>🧠 あなたのMBTI×星座タイプを調べる</p>
-      <small>生年月日と簡単な質問に答えるだけで16タイプの詳細解説が出力。</small>
-    </div>
-    <a href="/mbti" class="article-cta-btn">MBTI×星座を診断する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">MBTI診断とは</a></li>
-      <li><a href="#axes">4つの指標（E/I, S/N, T/F, J/P）</a></li>
-      <li><a href="#types">16タイプ一覧</a></li>
-      <li><a href="#zodiac">星座との組み合わせ</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>MBTI診断とは</h2>
-    <p>MBTI（Myers-Briggs Type Indicator）は、1940年代にキャサリン・ブリッグスとイザベル・マイヤーズ親子がカール・ユングの「心理学的タイプ論」をもとに開発した性格タイプ診断です。世界170カ国以上で年間2000万人以上が受検するとされ、企業の採用・チームビルディング・自己啓発など多くの場面で活用されています。</p>
-    <p>MBTIの特徴は、人間の認知・判断のパターンを「どちらかの傾向が強いか」という二項対立で捉える点にあります。優劣をつけるのではなく、すべてのタイプに等しく長所があることが前提となっています。</p>
-    <p>当サイトではMBTIタイプと星座を組み合わせた診断を提供しています。MBTIが「思考・行動の傾向」を、星座が「感情・直感的な面」を補完し合うことで、よりリアルな性格分析が得られます。</p>
-  </section>
-
-  <section class="art-section" id="axes">
-    <h2>4つの指標</h2>
-    <h3>E（外向）/ I（内向）— エネルギーの方向</h3>
-    <p>Extraversion（外向）は外の世界・人との交流でエネルギーを充電するタイプ。Introversion（内向）は内面の思考・独処でエネルギーを回復するタイプ。社交性の高低ではなく「エネルギー源がどこか」を示します。</p>
-    <h3>S（感覚）/ N（直感）— 情報収集の方法</h3>
-    <p>Sensing（感覚）は五感で感じる具体的な事実・現実を重視。iNtuition（直感）は全体像・パターン・可能性・未来を重視します。</p>
-    <h3>T（思考）/ F（感情）— 意思決定の方法</h3>
-    <p>Thinking（思考）は論理・客観的分析で決断。Feeling（感情）は価値観・人への影響・感情的な調和を優先して決断します。</p>
-    <h3>J（判断）/ P（知覚）— 外の世界への接し方</h3>
-    <p>Judging（判断）は計画・秩序・決断を好む傾向。Perceiving（知覚）は柔軟性・自発性・選択肢を開いておくことを好む傾向です。</p>
-  </section>
-
-  <section class="art-section" id="types">
-    <h2>16タイプ一覧</h2>
-    <p>4軸の組み合わせで生まれる16タイプをグループ別に紹介します。</p>
-
-    <p class="group-label">🔵 アナリスト（NT）</p>
-    <div class="type-grid">
-      <div class="type-card"><div class="type-code">INTJ</div><div class="type-name">建築家</div><div class="type-kw">戦略的・独立・完璧主義</div></div>
+  <?php
+$ctaTitle = '🧠 あなたのMBTI×星座タイプを調べる';
+$ctaText  = '生年月日と簡単な質問に答えるだけで16タイプの詳細解説が出力。';
+$ctaUrl   = '/mbti';
+$ctaBtn   = 'MBTI×星座を診断する →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <div class="type-card"><div class="type-code">INTP</div><div class="type-name">論理学者</div><div class="type-kw">分析的・創造的・内向的</div></div>
       <div class="type-card"><div class="type-code">ENTJ</div><div class="type-name">指揮官</div><div class="type-kw">リーダー・断固・カリスマ</div></div>
       <div class="type-card"><div class="type-code">ENTP</div><div class="type-name">討論者</div><div class="type-kw">革新的・挑戦的・機知</div></div>
@@ -234,29 +196,22 @@ ob_start();
         <div class="faq-a">当サイトのMBTI×星座診断は生年月日と簡単な質問に答えるだけで、約2〜3分で結果が出ます。本格的なMBTI公式テストは90問以上あり20〜30分かかりますが、当サイトは手軽さを重視した簡易診断版です。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>性格・相性をさらに多角的に知りたい方はこちらもどうぞ。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item">
-        <div class="article-related-label">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/aisho/" class="article-related-item">
-        <div class="article-related-label">相性診断とは</div>
-        <div class="article-related-title">誕生日・血液型・星座で相性を占う仕組みを解説 →</div>
-      </a>
-      <a href="/articles/numerology/" class="article-related-item">
-        <div class="article-related-label">数秘術とは</div>
-        <div class="article-related-title">運命数の計算方法と意味を解説 →</div>
-      </a>
-      <a href="/articles/shichu/" class="article-related-item">
-        <div class="article-related-label">四柱推命とは</div>
-        <div class="article-related-title">命式・大運・年運の流れを知る →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'相性診断とは', 'title'=>'誕生日・血液型・星座で相性を占う仕組みを解説 →', 'url'=>'/articles/aisho/'],
+      ['label'=>'数秘術とは', 'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
+      ['label'=>'四柱推命とは', 'title'=>'命式・大運・年運の流れを知る →', 'url'=>'/articles/shichu/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>

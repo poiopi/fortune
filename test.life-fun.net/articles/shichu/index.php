@@ -174,74 +174,13 @@ ob_start();
     <p class="art-lead">四柱推命は生年月日と生まれた時刻から「命式」を算出し、性格・才能・人生の流れを読み解く東洋の占術です。年柱・月柱・日柱・時柱の4つの柱と、十干・十二支の組み合わせで導き出す命式は、あなたの人生の設計図といえます。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>🌙 自分の命式を算出してみる</p>
-      <small>生年月日を入力するだけ。十神・大運・天中殺まで無料で表示。</small>
-    </div>
-    <a href="/shichu" class="article-cta-btn">四柱推命を算出する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">四柱推命とは</a></li>
-      <li><a href="#history">四柱推命の歴史</a></li>
-      <li><a href="#four-pillars">四柱（年柱・月柱・日柱・時柱）とは</a></li>
-      <li><a href="#jikkan">十干とは</a></li>
-      <li><a href="#junishi">十二支とは</a></li>
-      <li><a href="#juushin">十神（通変星）とは</a></li>
-      <li><a href="#daion">大運とは</a></li>
-      <li><a href="#chukusat">天中殺（空亡）とは</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>四柱推命とは</h2>
-    <p>四柱推命（しちゅうすいめい）は、生年・生月・生日・生時の4つを「柱」として命式を立て、その人の宿命や運命の流れを読む占術です。中国古来の陰陽五行思想を基盤とし、木・火・土・金・水の5つのエネルギーバランスから性格・才能・対人関係・人生の転換期を読み解きます。</p>
-    <p>タロットや占星術と大きく異なるのは、「生まれた瞬間」が全ての起点になること。生年月日時さえわかれば、誰でも同じ命式が導き出されるため、再現性が高く本格的な統計占術として知られています。</p>
-    <p>日本では「算命学」「九星気学」と並ぶ東洋三大占術のひとつとして定着しており、婚活・就職・起業のタイミングを判断する際に活用する人も多くいます。<br><a href="/articles/kyusei/" style="font-size:.85rem;color:var(--accent);">→ 九星気学について詳しく見る</a></p>
-  </section>
-
-  <section class="art-section" id="history">
-    <h2>四柱推命の歴史</h2>
-    <p>四柱推命の起源は中国・唐代（7〜10世紀）に遡ります。李虚中（りきょちゅう）が年・月・日の3柱で占ったのが始まりとされ、その後の宋代に徐子平（じょしへい）が「時柱」を加えて現在の4柱体系を完成させました。この徐子平の体系を「子平術（しへいじゅつ）」とも呼びます。</p>
-    <p>日本には江戸時代に伝わり、明治以降に独自の発展を遂げました。現代日本では「四柱推命」という名称が一般的ですが、台湾・中国では「八字（はちじ）」と呼ばれ、アジア全域で広く親しまれています。</p>
-  </section>
-
-  <section class="art-section" id="four-pillars">
-    <h2>四柱（年柱・月柱・日柱・時柱）とは</h2>
-    <p>命式は4つの柱から構成されます。それぞれに「天干（てんかん）」と「地支（ちし）」が配置され、合計8文字になることから「八字（はちじ）」とも呼ばれます。</p>
-    <table class="shichu-table">
-      <thead>
-        <tr><th>柱</th><th>何を表すか</th><th>関係する領域</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>年柱</td><td>生まれた年の干支</td><td>先祖・社会との関係・人生の土台</td></tr>
-        <tr><td>月柱</td><td>生まれた月の干支</td><td>両親・兄弟・仕事・才能傾向</td></tr>
-        <tr><td>日柱</td><td>生まれた日の干支</td><td>自分自身・配偶者・本質的な性格</td></tr>
-        <tr><td>時柱</td><td>生まれた時間の干支</td><td>子供・晩年・目標・潜在能力</td></tr>
-      </tbody>
-    </table>
-    <p>特に「日柱の天干（日干）」は自分自身を象徴する最重要の要素で、十干のどれにあたるかで基本的な性格や行動パターンが大きく変わります。</p>
-  </section>
-
-  <section class="art-section" id="jikkan">
-    <h2>十干とは</h2>
-    <p>十干（じっかん）は甲・乙・丙・丁・戊・己・庚・辛・壬・癸の10種類。木・火・土・金・水の五行それぞれに「陽（兄）」と「陰（弟）」があり、合計10になります。</p>
-    <div class="jikkan-grid">
-      <div class="jikkan-card"><div class="jikkan-name">甲</div><div class="jikkan-yomi">きのえ</div><span class="jikkan-elem elem-wood">木（陽）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">乙</div><div class="jikkan-yomi">きのと</div><span class="jikkan-elem elem-wood">木（陰）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">丙</div><div class="jikkan-yomi">ひのえ</div><span class="jikkan-elem elem-fire">火（陽）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">丁</div><div class="jikkan-yomi">ひのと</div><span class="jikkan-elem elem-fire">火（陰）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">戊</div><div class="jikkan-yomi">つちのえ</div><span class="jikkan-elem elem-earth">土（陽）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">己</div><div class="jikkan-yomi">つちのと</div><span class="jikkan-elem elem-earth">土（陰）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">庚</div><div class="jikkan-yomi">かのえ</div><span class="jikkan-elem elem-metal">金（陽）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">辛</div><div class="jikkan-yomi">かのと</div><span class="jikkan-elem elem-metal">金（陰）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">壬</div><div class="jikkan-yomi">みずのえ</div><span class="jikkan-elem elem-water">水（陽）</span></div>
-      <div class="jikkan-card"><div class="jikkan-name">癸</div><div class="jikkan-yomi">みずのと</div><span class="jikkan-elem elem-water">水（陰）</span></div>
-    </div>
+  <?php
+$ctaTitle = '🌙 自分の命式を算出してみる';
+$ctaText  = '生年月日を入力するだけ。十神・大運・天中殺まで無料で表示。';
+$ctaUrl   = '/shichu';
+$ctaBtn   = '四柱推命を算出する →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
     <p>自分の「日干」が何であるかは、命式算出結果の「日柱」天干で確認できます。甲・乙なら木の気質、丙・丁なら火の気質というように、五行の性質が性格に大きく影響します。</p>
   </section>
 
@@ -303,33 +242,22 @@ ob_start();
         <div class="faq-a">天中殺（空亡）とは、十二支のサイクルの中で日柱に対応する2支が「空白」になる期間のことです。行動が空回りしやすい時期とされ、新しいことを始めるより現状維持・準備期間として活用するのが吉とされます。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>四柱推命で自分の命式を知ったら、他の占術でも多角的に分析してみましょう。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item" style="border-color:#d4bfff;background:linear-gradient(135deg,#f5f0ff,#fdf4fa)">
-        <div class="article-related-label" style="color:var(--accent)">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・タロット・数秘術をまとめて鑑定 →</div>
-      </a>
-      <a href="/tarot" class="article-related-item">
-        <div class="article-related-label">タロット占い</div>
-        <div class="article-related-title">今この瞬間のメッセージを受け取る →</div>
-      </a>
-      <a href="/kyusei" class="article-related-item">
-        <div class="article-related-label">九星気学</div>
-        <div class="article-related-title">今年・来年の運気の周期を知る →</div>
-      </a>
-      <a href="/numerology" class="article-related-item">
-        <div class="article-related-label">数秘術</div>
-        <div class="article-related-title">誕生日から運命数を読み解く →</div>
-      </a>
-      <a href="/aisho" class="article-related-item">
-        <div class="article-related-label">相性診断</div>
-        <div class="article-related-title">気になる相手との相性を占う →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'タロット占い', 'title'=>'今この瞬間のメッセージを受け取る →', 'url'=>'/tarot'],
+      ['label'=>'九星気学', 'title'=>'今年・来年の運気の周期を知る →', 'url'=>'/kyusei'],
+      ['label'=>'数秘術', 'title'=>'誕生日から運命数を読み解く →', 'url'=>'/numerology'],
+      ['label'=>'相性診断', 'title'=>'気になる相手との相性を占う →', 'url'=>'/aisho'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
   <div class="article-cta" style="margin:2.5rem 0 0">

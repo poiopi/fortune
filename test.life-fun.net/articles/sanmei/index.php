@@ -158,86 +158,13 @@ ob_start();
     <p class="art-lead">算命学は中国発祥の東洋占術で、生年月日だけから「元命（十大主星）」「主星」「従星」を算出し、その人の本質・才能・社会的な在り方・エネルギーを読み解きます。日本では高尾義政が体系化し普及させました。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>☯️ あなたの元命・主星・従星を調べる</p>
-      <small>生年月日を入力するだけで三星と五行バランスを算出。</small>
-    </div>
-    <a href="/sanmei" class="article-cta-btn">算命学で鑑定する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">算命学とは</a></li>
-      <li><a href="#diff">四柱推命との違い</a></li>
-      <li><a href="#genme">元命（十大主星）とは</a></li>
-      <li><a href="#shusei">主星・従星とは</a></li>
-      <li><a href="#gogyou">五行バランスとは</a></li>
-      <li><a href="#usage">算命学の活用方法</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>算命学とは</h2>
-    <p>算命学（さんめいがく）は、中国の陰陽五行思想を基盤とする東洋占術の一つです。生年月日（年・月・日）を干支（十干十二支）に変換し、そこから「元命」「主星」「従星」という三つの星を読み取ることで、その人の本質・才能・社会的な役割・エネルギーレベルを総合的に鑑定します。</p>
-    <p>四柱推命と同じく干支を基本とする占術ですが、算命学の大きな特徴は<strong>生まれた時刻が不要</strong>という点です。年・月・日の3つの情報だけで鑑定が完結するため、時刻がわからない人にも広く活用できます。</p>
-    <p>日本には昭和時代に伝わり、高尾義政（たかおよしまさ）氏が日本人向けに体系化・普及させました。現在も性格分析・才能発見・仕事適性・人間関係の改善など、自己理解のツールとして多くの人に親しまれています。</p>
-  </section>
-
-  <section class="art-section" id="diff">
-    <h2>四柱推命との違い</h2>
-    <p>算命学と四柱推命はどちらも干支を使う東洋占術ですが、目的・入力情報・得意分野に違いがあります。</p>
-    <table class="compare-table">
-      <thead>
-        <tr>
-          <th>項目</th>
-          <th>算命学</th>
-          <th>四柱推命</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>起源・体系</td>
-          <td>中国発祥、日本で高尾義政が体系化</td>
-          <td>中国発祥、命理学の一体系</td>
-        </tr>
-        <tr>
-          <td>必要な入力</td>
-          <td>生年月日のみ（年・月・日）</td>
-          <td>生年月日＋時刻（四柱）</td>
-        </tr>
-        <tr>
-          <td>基本概念</td>
-          <td>三星（元命・主星・従星）</td>
-          <td>四柱（年柱・月柱・日柱・時柱）と十神</td>
-        </tr>
-        <tr>
-          <td>得意分野</td>
-          <td>性格・才能・本質の把握</td>
-          <td>時期・運勢の詳細な流れの把握</td>
-        </tr>
-        <tr>
-          <td>時刻不明でも使える？</td>
-          <td>はい（生年月日のみでOK）</td>
-          <td>時柱が不完全になる</td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="margin-top:1rem">どちらが優れているわけではなく、目的に応じて使い分けるのがベストです。「自分の本質・才能を知りたい」なら算命学、「今年・来年の運気の流れを詳しく知りたい」なら四柱推命が向いています。</p>
-  </section>
-
-  <section class="art-section" id="genme">
-    <h2>元命（十大主星）とは</h2>
-    <p>元命（げんめい）は算命学の中心概念で、日柱の十干（日干）から算出します。「十大主星」とも呼ばれ、10種類の星があり、その人の本質的な性格・才能・生き方のスタイルを表します。</p>
-    <h3>十大主星の一覧</h3>
-    <div class="star-grid">
-      <div class="star-card">
-        <div class="star-name">貫索星（かんさくせい）</div>
-        <div class="star-element">五行：木（陽）</div>
-        <div class="star-kw">自立・独立・信念を貫く。マイペースで一人でも強い自立派。</div>
-      </div>
+  <?php
+$ctaTitle = '☯️ あなたの元命・主星・従星を調べる';
+$ctaText  = '生年月日を入力するだけで三星と五行バランスを算出。';
+$ctaUrl   = '/sanmei';
+$ctaBtn   = '算命学で鑑定する →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <div class="star-card">
         <div class="star-name">石門星（せきもんせい）</div>
         <div class="star-element">五行：木（陰）</div>
@@ -374,29 +301,21 @@ ob_start();
         <div class="faq-a">元命・主星・従星は生涯変わりません。これらは生年月日から定まるもので、あなたの本質・社会性・エネルギーを表します。ただし大運（10年ごとの運気テーマ）は変化します。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>算命学で自分の本質を知ったら、他の占術で多角的に深めてみませんか。</p>
-    <div class="article-related-grid">
-      <a href="/" class="related-card featured">
-        <div class="article-related-label">三星統合鑑定（おすすめ）</div>
-        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/shichu/" class="article-related-item">
-        <div class="article-related-label">四柱推命とは</div>
-        <div class="article-related-title">命式・十神・大運の読み方を解説 →</div>
-      </a>
-      <a href="/articles/numerology/" class="article-related-item">
-        <div class="article-related-label">数秘術とは</div>
-        <div class="article-related-title">運命数の計算方法と意味を解説 →</div>
-      </a>
-      <a href="/sanmei" class="article-related-item">
-        <div class="article-related-label">算命学を試す</div>
-        <div class="article-related-title">元命・主星・従星を無料で算出 →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'四柱推命とは', 'title'=>'命式・十神・大運の読み方を解説 →', 'url'=>'/articles/shichu/'],
+      ['label'=>'数秘術とは', 'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
+      ['label'=>'算命学を試す', 'title'=>'元命・主星・従星を無料で算出 →', 'url'=>'/sanmei'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>

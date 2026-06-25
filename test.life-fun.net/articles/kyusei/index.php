@@ -152,59 +152,13 @@ ob_start();
     <p class="art-lead">九星気学は生年月日から「本命星」を算出し、性格・吉方位・運気の年サイクルを読む東洋の占術です。一白水星から九紫火星まで9つの星がそれぞれ異なる気質を持ち、毎年・毎月変わる九星盤から運気の流れを掴むことができます。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>⭐ 自分の本命星を調べてみる</p>
-      <small>生年月日を入力するだけ。吉方位・運勢・性格まで無料で表示。</small>
-    </div>
-    <a href="/kyusei" class="article-cta-btn">九星気学を診断する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">九星気学とは</a></li>
-      <li><a href="#history">九星気学の歴史</a></li>
-      <li><a href="#honmeisei">本命星・月命星とは</a></li>
-      <li><a href="#nine-stars">九星（一白〜九紫）一覧</a></li>
-      <li><a href="#direction">吉方位・凶方位とは</a></li>
-      <li><a href="#setsubun">節分と年の切り替わり</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>九星気学とは</h2>
-    <p>九星気学（きゅうせいきがく）は、一白水星・二黒土星・三碧木星・四緑木星・五黄土星・六白金星・七赤金星・八白土星・九紫火星の9つの星を使い、人の性格・運気・吉方位を読む占術です。</p>
-    <p>四柱推命・算命学と並ぶ東洋三大占術のひとつで、<a href="/articles/shichu/" style="color:var(--accent)">四柱推命</a>が「命式の精密分析」に優れるのに対し、九星気学は「運気の年サイクルと方位」を読むのが得意です。</p>
-    <p>生まれ年から求める「本命星」が基本となり、さらに生まれ月から「月命星」を求めることで、より詳細な性格分析ができます。方位学としても活用され、引越し・旅行・開業などのタイミングと方角を決める際に使われています。</p>
-  </section>
-
-  <section class="art-section" id="history">
-    <h2>九星気学の歴史</h2>
-    <p>九星気学の源流は中国古代の「洛書（らくしょ）」に遡ります。洛書は古代中国の亀の甲羅に刻まれた9つの数字の配列とされ、縦・横・斜めどの列も合計が15になる「魔方陣」が元になっています。この9つの数字に五行思想と陰陽論を組み合わせたのが九星の始まりです。</p>
-    <p>日本には奈良〜平安時代に伝わり、陰陽道と融合しながら独自の発展を遂げました。明治時代に園田真次郎が体系化し、現在の「九星気学」として広まりました。現代でも開運・方位学・家相などの分野で広く活用されています。</p>
-  </section>
-
-  <section class="art-section" id="honmeisei">
-    <h2>本命星・月命星とは</h2>
-    <h3>本命星</h3>
-    <p>生まれた年（節分基準）から算出される最重要の星。その人の本質的な性格・才能・運命の傾向を示します。九星気学の中心となる要素で、吉方位もこの本命星から導き出されます。</p>
-    <h3>月命星</h3>
-    <p>生まれた月から算出される星。本命星を補完する形で、対人関係・才能の発揮スタイル・感情面の傾向を示します。本命星と月命星の組み合わせを読むことで、より立体的な性格分析ができます。</p>
-    <h3>本命星の求め方（簡易）</h3>
-    <p>生まれた年の西暦の各桁を足して1桁にし、11から引いた数が本命星の番号です。例：1990年生まれ → 1+9+9+0=19 → 1+9=10 → 1+0=1 → 11-1=10 → 1+0=<strong>1</strong>（一白水星）。ただし1月1日〜2月3日生まれは前年で計算します。</p>
-  </section>
-
-  <section class="art-section" id="nine-stars">
-    <h2>九星（一白〜九紫）一覧</h2>
-    <div class="star-grid">
-      <div class="star-card">
-        <div class="star-num">第1星</div>
-        <div class="star-name">一白水星</div>
-        <span class="star-elem elem-water">水</span>
-        <div class="star-kw">柔軟・知性・流動性・忍耐</div>
-      </div>
+  <?php
+$ctaTitle = '⭐ 自分の本命星を調べてみる';
+$ctaText  = '生年月日を入力するだけ。吉方位・運勢・性格まで無料で表示。';
+$ctaUrl   = '/kyusei';
+$ctaBtn   = '九星気学を診断する →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <div class="star-card">
         <div class="star-num">第2星</div>
         <div class="star-name">二黒土星</div>
@@ -298,29 +252,21 @@ ob_start();
         <div class="faq-a">本命星は一生変わりませんが、年・月ごとに盤が変化するため、運気の吉凶は毎年・毎月変わります。本命星が中宮（中央）に回座する年は特に重要な転機とされます。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>九星気学と組み合わせると、より多角的に運勢を読み解けます。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item" style="border-color:#d4bfff;background:linear-gradient(135deg,#f5f0ff,#fdf4fa)">
-        <div class="article-related-label" style="color:var(--accent)">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・タロット・数秘術をまとめて鑑定 →</div>
-      </a>
-      <a href="/articles/shichu/" class="article-related-item">
-        <div class="article-related-label">四柱推命 解説</div>
-        <div class="article-related-title">命式・十神・大運・天中殺を詳しく知る →</div>
-      </a>
-      <a href="/tarot" class="article-related-item">
-        <div class="article-related-label">タロット占い</div>
-        <div class="article-related-title">今この瞬間のメッセージを受け取る →</div>
-      </a>
-      <a href="/numerology" class="article-related-item">
-        <div class="article-related-label">数秘術</div>
-        <div class="article-related-title">誕生日から運命数を読み解く →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'四柱推命 解説', 'title'=>'命式・十神・大運・天中殺を詳しく知る →', 'url'=>'/articles/shichu/'],
+      ['label'=>'タロット占い', 'title'=>'今この瞬間のメッセージを受け取る →', 'url'=>'/tarot'],
+      ['label'=>'数秘術', 'title'=>'誕生日から運命数を読み解く →', 'url'=>'/numerology'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
   <div class="article-cta" style="margin:2.5rem 0 0">

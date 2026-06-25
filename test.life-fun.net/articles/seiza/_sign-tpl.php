@@ -4,6 +4,11 @@
  * 各星座の index.php から $sign データをセットして require する
  */
 declare(strict_types=1);
+// CTA共通変数
+$ctaTitle = '⭐ あなたの星座タイプを無料で調べる';
+$ctaText  = '生年月日と生まれた時間帯から、太陽星座・エレメント・内面タイプを鑑定できます。';
+$ctaUrl   = '/seiza';
+$ctaBtn   = '西洋占星術で鑑定する →';
 require_once __DIR__ . '/../../inc/auto-link.php';
 
 // 全12星座ナビデータ（他の星座リンク用）
@@ -152,12 +157,7 @@ ob_start();
     <p class="art-lead"><?= htmlspecialchars($sign['lead']) ?></p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>⭐ あなたの星座タイプを無料で調べる</p>
-      <small>生年月日と生まれた時間帯から、太陽星座・エレメント・内面タイプを鑑定できます。</small>
-    </div>
-    <a href="/seiza" class="article-cta-btn">西洋占星術で鑑定する →</a>
-  </div>
+  <?php require __DIR__ . '/../../inc/article-cta.php'; ?>
 
   <nav class="toc">
     <p class="toc-title">目次</p>
@@ -244,12 +244,7 @@ ob_start();
     </section>
 
     <!-- 中盤CTA -->
-    <div class="article-cta"><div class="article-cta-text">
-        <p>⭐ <?= htmlspecialchars($sign['name']) ?>の詳細鑑定を試してみる</p>
-        <small>太陽星座×内面タイプで、あなただけの個性を読み解きます。</small>
-      </div>
-      <a href="/seiza" class="article-cta-btn">西洋占星術で鑑定する →</a>
-    </div>
+    <?php require __DIR__ . '/../../inc/article-cta.php'; ?>
 
     <section class="art-section" id="compat-good">
       <h2><?= htmlspecialchars($sign['name']) ?>と相性の良い星座</h2>
@@ -284,12 +279,7 @@ ob_start();
     </section>
 
     <!-- 記事末尾CTA -->
-    <div class="article-cta"><div class="article-cta-text">
-        <p>⭐ あなたの星座を無料で鑑定する</p>
-        <small>生年月日と時間帯を入力するだけ。<?= htmlspecialchars($sign['name']) ?>の詳細な鑑定結果が分かります。</small>
-      </div>
-      <a href="/seiza" class="article-cta-btn">今すぐ無料診断 →</a>
-    </div>
+    <?php $ctaBtn = '今すぐ無料診断 →'; require __DIR__ . '/../../inc/article-cta.php'; ?>
 
     <!-- 他の星座を見る -->
     <section class="art-section" id="other-signs">
@@ -323,8 +313,18 @@ ob_start();
 
   </article>
 </div>
-
-<?php $currentSlug = $sign['slug']; $pageType = 'article'; require __DIR__ . '/../../inc/footer.php'; ?>
+    <section class="art-section" id="related">
+      <h2>関連コンテンツ</h2>
+      <?php
+      $relatedItems = [
+        ['label'=>'タロット占い解説', 'title'=>'大アルカナ22枚の意味を見る →', 'url'=>'/articles/tarot/'],
+        ['label'=>'数秘術とは',       'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
+        ['label'=>'四柱推命とは',     'title'=>'命式・大運・年運の流れを知る →', 'url'=>'/articles/shichu/'],
+      ];
+      require __DIR__ . '/../../inc/article-related.php';
+      ?>
+    </section>
+  <?php $currentSlug = $sign['slug']; $pageType = 'article'; require __DIR__ . '/../../inc/footer.php'; ?>
 </body>
 </html>
 <?php

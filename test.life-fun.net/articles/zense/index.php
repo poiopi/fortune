@@ -125,61 +125,13 @@ ob_start();
     <p class="art-lead">前世診断とは、誕生日や性格的傾向をもとに「前世でどのような人生を生きたか」を読み解く占いです。輪廻転生・カルマという概念とともに、今世の自分を深く見つめ直すユニークなツールとして世界中で楽しまれています。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>🌀 あなたの前世を診断する</p>
-      <small>生年月日から前世の姿と今世に受け継いだ魂の傾向を占う。</small>
-    </div>
-    <a href="/zense" class="article-cta-btn">前世を診断する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">前世診断とは</a></li>
-      <li><a href="#reincarnation">前世・輪廻転生とは</a></li>
-      <li><a href="#karma">カルマ（業）とは</a></li>
-      <li><a href="#howto">前世診断の楽しみ方</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>前世診断とは</h2>
-    <p>前世診断とは、生年月日や生まれつきの性格・傾向をもとに、過去世（前の人生）でどのような存在だったかを読み解く占術・診断です。古代インドや仏教の輪廻転生思想、近代のスピリチュアリズムなどをベースに、現代のエンターテインメントとして発展しました。</p>
-    <p>前世診断の目的は単純に「前世が何だったか」を知ることにとどまりません。前世での体験や傾向が今世の性格・才能・課題にどう影響しているかを洞察することで、自己理解を深めるヒントが得られます。「なぜ自分はこういう人間なのか」という疑問への一つの答えを提供してくれます。</p>
-    <p>診断の方法は様々です。生年月日を数字に変換して前世タイプを算出するものから、質問に答えることで傾向を導くものまであります。当サイトの前世診断は誕生日をベースにした算出式を採用しています。</p>
-  </section>
-
-  <section class="art-section" id="reincarnation">
-    <h2>前世・輪廻転生とは</h2>
-    <p>輪廻転生（りんねてんしょう）とは、魂が死後に新たな肉体に生まれ変わり、何度も人生を繰り返すという思想です。インドのヒンドゥー教・仏教に根ざす概念で、「生死輪廻」「サンサーラ」とも呼ばれます。</p>
-    <p>仏教では煩悩と業（カルマ）によって輪廻の輪に縛られ、それを超えることが悟り・涅槃（ねはん）であるとされます。西洋のニューエイジ思想では、魂が多くの人生経験を通じて成長・進化するプロセスとして輪廻を肯定的に捉えることが多いです。</p>
-    <p>現代では科学的な証明がなされていない一方、過去生の記憶を持つとされる子どもたちの事例研究（バージニア大学のイアン・スティーヴンソン博士らによる）も行われており、学術的にも完全否定されているわけではありません。</p>
-  </section>
-
-  <section class="art-section" id="karma">
-    <h2>カルマ（業）とは</h2>
-    <p>カルマ（Karma）はサンスクリット語で「業（ごう）」を意味します。行為・意思・言葉のすべてが宇宙的な因果律に従って結果を生む、という考え方です。良い行いは良い結果（善業）を、悪い行いは悪い結果（悪業）を生むとされます。</p>
-    <p>スピリチュアルな文脈では、前世で解決できなかったカルマは今世に持ち越されるとされます。たとえば人間関係で繰り返す同じパターン、特定の課題への強い抵抗感、理由のわからない得意不得意などがカルマの痕跡として語られることがあります。</p>
-    <p>前世診断ではこうしたカルマの概念をもとに、「今世でクリアすべきテーマ」「持ち越してきた才能」「解放すべきパターン」などを読み解きます。結果をもとに自分の行動を内省するきっかけとして活用してみてください。</p>
-  </section>
-
-  <section class="art-section" id="howto">
-    <h2>前世診断の楽しみ方</h2>
-    <p>前世診断は「本当の前世を知る」というより「自分の別側面を想像する物語」として楽しむのがおすすめです。診断結果が示す前世像と今の自分を照らし合わせてみると、意外な共通点や新しい自己理解が生まれることがあります。</p>
-    <h3>結果の読み方のコツ</h3>
-    <p>前世タイプが「騎士」なら、今世での正義感・守る気持ち・困難に立ち向かう姿勢と重ねてみましょう。「旅人」なら好奇心・移動への欲求・多様な人との出会いへの喜びと結びつけてみると、より豊かな解釈ができます。</p>
-    <p>また「前世での課題」として示された内容は、今世で意識して乗り越えたいテーマのヒントとして受け取ってみてください。診断結果に囚われず、自分自身の感覚と対話しながら楽しんでいただけると幸いです。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">前世は本当にあるのですか？</div>
-        <div class="faq-a">前世の存在は科学的に証明されていませんが、輪廻転生の概念は仏教・ヒンドゥー教・新霊性運動など世界中の多くの思想に見られます。前世診断は「前世があるかもしれない」という前提で、今世の自分を見つめ直すきっかけを提供するエンターテインメントです。</div>
-      </div>
+  <?php
+$ctaTitle = '🌀 あなたの前世を診断する';
+$ctaText  = '生年月日から前世の姿と今世に受け継いだ魂の傾向を占う。';
+$ctaUrl   = '/zense';
+$ctaBtn   = '前世を診断する →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">前世の記憶はよみがえることがありますか？</div>
         <div class="faq-a">特定の場所・音楽・匂いに強い既視感を覚えたり、初めて会った人に懐かしさを感じたりする体験を「前世の記憶」と解釈する方もいます。科学的には記憶の錯誤や想像力の作用で説明されることが多いですが、そのような体験を持つ方は少なくありません。</div>
@@ -193,29 +145,22 @@ ob_start();
         <div class="faq-a">前世診断のアルゴリズムや設問に乱数要素が含まれている場合、毎回異なる結果が出ることがあります。「前世」は唯一ではなく複数あるという考え方もあり、どの前世の側面が現れるかは毎回変わるという解釈もできます。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>前世を知ったら、今世のあなたをさらに多角的に占ってみましょう。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item">
-        <div class="article-related-label">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/guardian/" class="article-related-item">
-        <div class="article-related-label">守護霊診断とは</div>
-        <div class="article-related-title">守護霊・守護獣の意味と種類を解説 →</div>
-      </a>
-      <a href="/articles/numerology/" class="article-related-item">
-        <div class="article-related-label">数秘術とは</div>
-        <div class="article-related-title">誕生日から運命数を読み解く →</div>
-      </a>
-      <a href="/articles/tarot/" class="article-related-item">
-        <div class="article-related-label">タロット占いとは</div>
-        <div class="article-related-title">今この瞬間のメッセージをカードで受け取る →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'守護霊診断とは', 'title'=>'守護霊・守護獣の意味と種類を解説 →', 'url'=>'/articles/guardian/'],
+      ['label'=>'数秘術とは', 'title'=>'誕生日から運命数を読み解く →', 'url'=>'/articles/numerology/'],
+      ['label'=>'タロット占いとは', 'title'=>'今この瞬間のメッセージをカードで受け取る →', 'url'=>'/articles/tarot/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>
