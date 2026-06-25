@@ -73,7 +73,8 @@ ob_start();
       <div class="card-illust"><img src="/cards/high-priestess.png" alt="女教皇"></div>
       <div class="card-en">THE HIGH PRIESTESS</div>
       <div class="card-ja">女教皇</div>
-
+    </div>
+  </div>
 
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>女教皇は書物を膝に抱き、ザクロの幕の前に静かに座っています。彼女は語りません。しかしすべてを知っています。このカードが現れる時、宇宙はあなたに「もっと静かになれ」と告げています。頭で考えることをやめ、感じることに全意識を向ける時です。答えは外ではなく、あなたの内側の深みに沈んでいます。</p></section>

@@ -43,6 +43,7 @@ ob_start();
   <div class="art-hero">
     <div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ VI</span><h1>恋人（THE LOVERS）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ6番「恋人」は、恋愛だけでなく「重要な選択」のカードです。岐路に立ち、心から信じる道を選ぶ覚悟を求めています。二つのものの間で迷っているなら、このカードはあなたに問います——本当に選びたいのはどちらですか。</p><div class="kw-tags"><span class="kw-tag upright">愛</span><span class="kw-tag upright">選択</span><span class="kw-tag upright">調和</span><span class="kw-tag upright">価値観の一致</span><span class="kw-tag upright">誠実さ</span> <span class="kw-tag reversed">不和</span><span class="kw-tag reversed">優柔不断</span><span class="kw-tag reversed">価値観の衝突</span></div></div>
     <div class="card-visual"><div class="card-roman">VI</div><div class="card-illust"><img src="/cards/lovers.png" alt="恋人"></div><div class="card-en">THE LOVERS</div><div class="card-ja">恋人</div></div>
+  </div>
 
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>天使が見守る中、男と女が立っています。背景にある林檎の木と蛇は、選択の誘惑と責任を暗示します。恋人のカードは「ただ恋愛する」のではなく、「誰と・どう生きるか」を選ぶカードです。表面的な選択ではなく、魂の深さで選べているかどうかが問われています。</p></section>
