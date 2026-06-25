@@ -1,4 +1,4 @@
-<?php
+?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
 ob_start();
@@ -281,13 +281,45 @@ ob_start();
         ['XX','審判','覚醒・再評価・転生'],
         ['XXI','世界','完成・達成・統合'],
       ];
-      foreach($cards as $c): ?>
+      $card_links = [
+        '0'    => '/articles/tarot/fool/',
+        'I'    => '/articles/tarot/magician/',
+        'II'   => '/articles/tarot/high-priestess/',
+        'III'  => '/articles/tarot/empress/',
+        'IV'   => '/articles/tarot/emperor/',
+        'V'    => '/articles/tarot/hierophant/',
+        'VI'   => '/articles/tarot/lovers/',
+        'VII'  => '/articles/tarot/chariot/',
+        'VIII' => '/articles/tarot/strength/',
+        'IX'   => '/articles/tarot/hermit/',
+        'X'    => '/articles/tarot/wheel/',
+        'XI'   => '/articles/tarot/justice/',
+        'XII'  => '/articles/tarot/hanged-man/',
+        'XIII' => '/articles/tarot/death/',
+        'XIV'  => '/articles/tarot/temperance/',
+        'XV'   => '/articles/tarot/devil/',
+        'XVI'  => '/articles/tarot/tower/',
+        'XVII' => '/articles/tarot/star/',
+        'XVIII'=> '/articles/tarot/moon/',
+        'XIX'  => '/articles/tarot/sun/',
+        'XX'   => '/articles/tarot/judgement/',
+        'XXI'  => '/articles/tarot/world/',
+      ];
+      foreach($cards as $c):
+        $slug = $card_links[$c[0]] ?? null;
+        if($slug): ?>
+      <a href="<?= $slug ?>" class="arc-card" style="text-decoration:none;color:inherit">
+        <div class="arc-num"><?= $c[0] ?></div>
+        <div class="arc-name"><?= $c[1] ?></div>
+        <div class="arc-kw"><?= $c[2] ?></div>
+      </a>
+      <?php else: ?>
       <div class="arc-card">
         <div class="arc-num"><?= $c[0] ?></div>
         <div class="arc-name"><?= $c[1] ?></div>
         <div class="arc-kw"><?= $c[2] ?></div>
       </div>
-      <?php endforeach; ?>
+      <?php endif; endforeach; ?>
     </div>
   </section>
 
