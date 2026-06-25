@@ -152,7 +152,13 @@ ob_start();
     </div>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text"><p>🔮 今すぐカードを引いてみる</p><small>。</small></div><a href="/tarot" class="article-cta-btn">タロット占いを始める →</a></div>
+  <div class="article-cta">
+    <div class="article-cta-text">
+      <p>🔮 今すぐカードを引いてみる</p>
+      <small>。</small>
+    </div>
+    <a href="/tarot" class="article-cta-btn">タロット占いを始める →</a>
+  </div>
 
   <nav class="toc">
     <p class="toc-title">目次</p>
@@ -242,10 +248,10 @@ ob_start();
   </section>
   <section class="art-section">
     <?php
-    \ = '🔮 魔術師の意味を読んだら、実際に占ってみましょう';
-    \  = '今のあなたには魔術師ではなく、別のカードが現れるかもしれません。';
-    \   = '/tarot';
-    \   = 'タロット占いを始める →';
+    $ctaTitle = '🔮 魔術師の意味を読んだら、実際に占ってみましょう';
+    $ctaText  = '今のあなたには魔術師ではなく、別のカードが現れるかもしれません。';
+    $ctaUrl   = '/tarot';
+    $ctaBtn   = 'タロット占いを始める →';
     require __DIR__.'/../../../inc/article-cta.php';
     ?>
   </section>
@@ -253,25 +259,26 @@ ob_start();
   <section class="art-section">
     <h2>他のカードを見る</h2>
     <?php
-    \ = '愚者';
-    \   = '/articles/tarot/fool/';
-    \ = '← 前のカード';
-    \ = '女教皇';
-    \   = '/articles/tarot/high-priestess/';
-    \ = '次のカード →';
-    \ = '大アルカナ一覧';
-    \   = '/articles/tarot/';
+    $prevTitle = '愚者';
+    $prevUrl   = '/articles/tarot/fool/';
+    $prevLabel = '← 前のカード';
+    $nextTitle = '女教皇';
+    $nextUrl   = '/articles/tarot/high-priestess/';
+    $nextLabel = '次のカード →';
+    $listTitle = '大アルカナ一覧';
+    $listUrl   = '/articles/tarot/';
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
   </section>
+
   <section class="art-section">
     <h2>関連コンテンツ</h2>
     <?php
-    \ = [
-      ['label'=>'タロット占い',     'title'=>'実際にカードを引いてみる →',     'url'=>'/tarot'],
-      ['label'=>'タロット完全ガイド','title'=>'大アルカナの基礎知識を学ぶ →',   'url'=>'/articles/tarot/'],
-      ['label'=>'三星統合鑑定',     'title'=>'タロット×星座×数秘で深読みする →','url'=>'/'],
-      ['label'=>'数秘術',           'title'=>'誕生日から運命数を読み解く →',     'url'=>'/numerology'],
+    $relatedItems = [
+      ['label'=>'タロット占い',      'title'=>'実際にカードを引いてみる →',      'url'=>'/tarot'],
+      ['label'=>'タロット完全ガイド', 'title'=>'大アルカナの基礎知識を学ぶ →',    'url'=>'/articles/tarot/'],
+      ['label'=>'三星統合鑑定',      'title'=>'タロット×星座×数秘で深読みする →', 'url'=>'/'],
+      ['label'=>'数秘術',            'title'=>'誕生日から運命数を読み解く →',      'url'=>'/numerology'],
     ];
     require __DIR__.'/../../../inc/article-related.php';
     ?>
