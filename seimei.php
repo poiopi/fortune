@@ -556,10 +556,21 @@ const KK={
   'ナ':2,'ニ':2,'ヌ':2,'ネ':4,'ノ':1,'ハ':2,'ヒ':2,'フ':1,'ヘ':1,'ホ':4,
   'マ':2,'ミ':3,'ム':2,'メ':2,'モ':3,'ヤ':2,'ユ':2,'ヨ':3,
   'ラ':2,'リ':2,'ル':2,'レ':2,'ロ':3,'ワ':2,'ヲ':3,'ン':2,
+  // 旧字体・異体字
+  '邊':19,'邉':17,
 };
 
 function strokes(ch){
-  return KK[ch] || 3; // 不明な場合は3画とみなす
+  if(KK[ch] !== undefined) return KK[ch];
+  if(typeof gtag === 'function'){
+    gtag('event', 'unknown_kanji', {kanji: ch});
+  }
+  return null;
+}
+
+function checkUnknownKanji(str){
+  const unknown = [...str].filter(ch => strokes(ch) === null);
+  return unknown;
 }
 
 // ══════════════════════════════════════════════════════
@@ -714,6 +725,8 @@ function startSeimei(){
   const mei=document.getElementById('inputMei').value.trim();
   if(!sei||!mei){alert('姓と名を両方入力してください');return;}
   if(/[a-zA-Z]/.test(sei+mei)){alert('姓名判断は漢字・ひらがな・カタカナで入力してください\n（アルファベットは対応していません）');return;}
+  const unknown=checkUnknownKanji(sei+mei);
+  if(unknown.length>0){alert('申し訳ありません。以下の漢字は現在未対応です。\n「'+unknown.join('・')+'」\n\nひらがな・カタカナで代替入力するか、別の字をお試しください。');return;}
 
   _animResult={sei, mei, gogaku: calcGogaku(sei,mei)};
   _skipFlag=false;
