@@ -114,9 +114,8 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
 
   /* Related */
-  .related-card.featured{background:linear-gradient(135deg,rgba(124,77,206,.07),rgba(155,114,239,.04));border-color:rgba(124,77,206,.3)}
-  .related-card.featured:hover{border-color:var(--accent)}
-  .related-card.featured
+  
+  
   /* Footer */
 
   @media(max-width:600px){

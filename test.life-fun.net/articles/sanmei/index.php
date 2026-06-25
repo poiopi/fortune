@@ -102,9 +102,8 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
 
   /* Related */
-  .related-card.featured{background:linear-gradient(135deg,#f5f0ff,#fdf4fa);border-color:#d4bfff}
-  .related-card.featured:hover{border-color:#9b72ef}
-  .related-card.featured
+  
+  
   /* Footer */
   @media(max-width:600px){
     .star-grid{grid-template-columns:1fr}

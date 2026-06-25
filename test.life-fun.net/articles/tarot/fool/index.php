@@ -218,63 +218,6 @@ ob_start();
       <div class="card-ja">愚者</div>
     </div>
   </div>
-
-  <div class="article-cta">
-    <div class="article-cta-text">
-      <p>🔮 今すぐカードを引いてみる</p>
-      <small>愚者を含む22枚の大アルカナで占う本格タロット。</small>
-    </div>
-    <a href="/tarot" class="article-cta-btn">タロット占いを始める →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#overview">愚者とはどんなカードか</a></li>
-      <li><a href="#upright">正位置の意味</a></li>
-      <li><a href="#reversed">逆位置の意味</a></li>
-      <li><a href="#love">恋愛での意味</a></li>
-      <li><a href="#work">仕事・お金での意味</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="overview">
-    <h2>愚者とはどんなカードか</h2>
-    <p>愚者は大アルカナ22枚の中で唯一「0番」を持つ特別なカードです。1番の魔術師から始まる旅の「出発点」、あるいは21番の世界を超えた「次の始まり」を表すとも解釈されます。</p>
-    <p>ライダー・ウェイト版では、若者が崖っぷちに立ちながらも空を見上げ、軽やかに一歩を踏み出す姿が描かれています。傍らには小犬が吠えていますが、彼は気にも留めません。この「無邪気な勇気」こそが愚者の本質です。</p>
-    <p>愚者は「無知」や「愚かさ」を否定的に示すのではなく、知識や経験に縛られない自由な魂のあり方を肯定するカードです。「まだ準備ができていない」と感じているあなたへ、このカードは言います——完璧な準備を待っていたら、旅は永遠に始まらないと。</p>
-  </section>
-
-  <section class="art-section" id="upright">
-    <h2>正位置の意味</h2>
-    <div class="reading-box upright">
-      <div class="reading-box-label">UPRIGHT · 正位置</div>
-      <p>あなたは今、新しいサイクルの入り口に立っています。過去の失敗も、他人の評価も、今この瞬間は関係ありません。愚者が正位置で現れるとき、それは「直感を信じて動いてよい」というサインです。</p>
-      <p>「もう少し経験を積んでから」「条件が整ったら」——そう考えて止まっているとしたら、愚者はその言い訳を静かに笑っています。このカードが出たということは、あなたにはすでに必要なものが揃っているのかもしれません。</p>
-    </div>
-    <h3>正位置のキーワード</h3>
-    <p>新出発・自由・純粋・冒険心・直感・無限の可能性・楽観・開放感</p>
-  </section>
-
-  <section class="art-section" id="reversed">
-    <h2>逆位置の意味</h2>
-    <div class="reading-box reversed">
-      <div class="reading-box-label">REVERSED · 逆位置</div>
-      <p>愚者の逆位置は、自由を求めるあまり大切なものを見落としているサインです。今のあなたは「動きたい気持ち」だけが先走り、地に足がついていない状態かもしれません。</p>
-      <p>衝動的な決断、計画のない行動、現実から目を背けた楽観——これらが今のあなたの足を引っ張っている可能性があります。逆位置は「止まれ」という禁止ではなく、「一度立ち止まって確かめよ」という助言です。嵐の前に、荷物を整理する時間を取ってください。</p>
-    </div>
-    <h3>逆位置のキーワード</h3>
-    <p>無計画・無謀・現実逃避・先延ばし・無責任・軽率・足元を見ていない</p>
-  </section>
-
-  <section class="art-section" id="love">
-    <h2>恋愛での意味</h2>
-    <div class="cat-grid">
-      <div class="cat-card">
-        <div class="cat-label">UPRIGHT · 正位置</div>
-        <div class="cat-text">新しい出会いの予感が高まっています。既存の関係では、二人の間に新鮮な風が吹き込む時期。「どうせ上手くいかない」という過去のパターンを手放して、素直な気持ちで相手と向き合ってみてください。</div>
-      </div>
       <div class="cat-card">
         <div class="cat-label">REVERSED · 逆位置</div>
         <div class="cat-text">衝動的な言動や軽率な行動が関係にひびを入れるリスクがあります。「気持ちが盛り上がった勢いで」動くより、相手のペースや気持ちを確認する丁寧さが今は必要です。</div>

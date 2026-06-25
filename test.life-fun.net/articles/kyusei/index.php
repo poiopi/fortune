@@ -269,16 +269,6 @@ require __DIR__.'/../../inc/article-cta.php';
     ?>
   </section>
 
-  <div class="article-cta" style="margin:2.5rem 0 0">
-    <div>
-      <p>⭐ 自分の本命星を無料で調べる</p>
-      <small>生年月日を入力するだけ。吉方位・運勢・性格まで表示します。</small>
-    </div>
-    <a href="/kyusei" class="article-cta-btn">九星気学を診断する →</a>
-  </div>
-
-</div>
-
 
 <script>
 function toggleFaq(el){ el.parentElement.classList.toggle('open'); }
