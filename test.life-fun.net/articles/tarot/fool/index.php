@@ -68,21 +68,48 @@ ob_start();
 
   /* ── CARD VISUAL ── */
   .card-visual{
-    width:90px;flex-shrink:0;
-    background:linear-gradient(160deg,#1a0a3e,#0d051f);
-    border:1.5px solid rgba(201,168,76,0.5);
-    border-radius:8px;padding:1rem .5rem;
+    width:120px;flex-shrink:0;
+    background:linear-gradient(170deg,#1e0e42 0%,#0d051f 100%);
+    border:2px solid var(--gold);
+    border-radius:10px;
+    padding:.7rem .6rem .8rem;
     text-align:center;
     position:relative;
-    box-shadow:0 4px 20px rgba(0,0,0,0.4),inset 0 0 12px rgba(155,114,239,0.2);
+    box-shadow:0 0 0 1px rgba(201,168,76,.15),0 8px 32px rgba(0,0,0,.5),inset 0 0 20px rgba(155,114,239,.15);
+    display:flex;flex-direction:column;align-items:center;
   }
-  .card-visual::before,.card-visual::after{content:'';position:absolute;width:8px;height:8px;border:1px solid var(--gold);opacity:.6}
-  .card-visual::before{top:4px;left:4px;border-right:none;border-bottom:none}
-  .card-visual::after{bottom:4px;right:4px;border-left:none;border-top:none}
-  .card-roman{font-family:var(--ff-mono);font-size:.6rem;color:rgba(201,168,76,.7);letter-spacing:.15em;margin-bottom:.5rem}
-  .card-symbol{font-size:2rem;line-height:1;margin-bottom:.5rem}
-  .card-en{font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.12em;color:rgba(201,168,76,.6);text-transform:uppercase;margin-bottom:.4rem}
-  .card-ja{font-family:var(--ff-serif);font-size:.8rem;font-weight:700;color:#e8e0ff}
+  /* 四隅ゴールド装飾 */
+  .card-visual::before,.card-visual::after{
+    content:'';position:absolute;width:10px;height:10px;
+    border:1.5px solid var(--gold);opacity:.7;
+  }
+  .card-visual::before{top:5px;left:5px;border-right:none;border-bottom:none}
+  .card-visual::after{bottom:5px;right:5px;border-left:none;border-top:none}
+  .card-roman{
+    font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;
+    color:rgba(201,168,76,.8);margin-bottom:.5rem;
+  }
+  .card-illust{
+    width:84px;height:84px;
+    border:1px solid rgba(201,168,76,.3);
+    border-radius:4px;
+    background:linear-gradient(135deg,rgba(155,114,239,.08),rgba(201,168,76,.04));
+    display:flex;align-items:center;justify-content:center;
+    font-size:2.6rem;line-height:1;
+    margin-bottom:.6rem;
+    position:relative;overflow:hidden;
+  }
+  .card-illust::before,.card-illust::after{
+    content:'';position:absolute;width:6px;height:6px;
+    border:1px solid rgba(201,168,76,.4);
+  }
+  .card-illust::before{top:3px;left:3px;border-right:none;border-bottom:none}
+  .card-illust::after{bottom:3px;right:3px;border-left:none;border-top:none}
+  .card-en{
+    font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.18em;
+    color:rgba(201,168,76,.75);text-transform:uppercase;margin-bottom:.25rem;
+  }
+  .card-ja{font-family:var(--ff-serif);font-size:.85rem;font-weight:700;color:#e8e0ff}
 
   /* ── KEYWORD TAGS ── */
   .kw-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.2rem 0}
@@ -153,11 +180,8 @@ ob_start();
   .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
 
   @media(max-width:600px){
-    .art-hero{flex-direction:column-reverse;gap:1rem}
-    .card-visual{width:100%;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem}
-    .card-visual::before{top:4px;left:4px}
-    .card-visual::after{bottom:4px;right:4px}
-    .card-symbol{font-size:1.6rem;margin-bottom:0}
+    .art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}
+    .card-visual{width:130px}
     .cat-grid{grid-template-columns:1fr}
     .cta-box{flex-direction:column;align-items:flex-start}
   }
@@ -234,7 +258,7 @@ ob_start();
     </div>
     <div class="card-visual">
       <div class="card-roman">0</div>
-      <div class="card-symbol">🌅</div>
+      <div class="card-illust">🃏</div>
       <div class="card-en">THE FOOL</div>
       <div class="card-ja">愚者</div>
     </div>
