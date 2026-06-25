@@ -24,6 +24,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -62,11 +63,6 @@ ob_start();
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
 
-  .cta-box{background:linear-gradient(135deg,#f5f0ff 0%,#fdf4fa 100%);border:1px solid #d4bfff;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-  .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
-  .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}
-  .cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
 
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
@@ -109,14 +105,8 @@ ob_start();
   .faq-a{font-size:.88rem;color:#444;line-height:1.85;padding:0 1.1rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
   .faq-item.open .faq-a{max-height:400px;padding:.9rem 1.1rem}
 
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}
-  .related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}
-  .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
-  .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
-  .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
 
   @media(max-width:600px){
-    .cta-box{flex-direction:column;align-items:flex-start}
     .jikkan-grid{grid-template-columns:repeat(5,1fr)}
   }
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
@@ -184,12 +174,11 @@ ob_start();
     <p class="art-lead">四柱推命は生年月日と生まれた時刻から「命式」を算出し、性格・才能・人生の流れを読み解く東洋の占術です。年柱・月柱・日柱・時柱の4つの柱と、十干・十二支の組み合わせで導き出す命式は、あなたの人生の設計図といえます。</p>
   </div>
 
-  <div class="cta-box">
-    <div>
+  <div class="article-cta"><div class="article-cta-text">
       <p>🌙 自分の命式を算出してみる</p>
       <small>生年月日を入力するだけ。十神・大運・天中殺まで無料で表示。</small>
     </div>
-    <a href="/shichu" class="cta-btn">四柱推命を算出する →</a>
+    <a href="/shichu" class="article-cta-btn">四柱推命を算出する →</a>
   </div>
 
   <nav class="toc">
@@ -319,36 +308,36 @@ ob_start();
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>四柱推命で自分の命式を知ったら、他の占術でも多角的に分析してみましょう。</p>
-    <div class="related-grid">
-      <a href="/" class="related-card" style="border-color:#d4bfff;background:linear-gradient(135deg,#f5f0ff,#fdf4fa)">
-        <div class="related-card-label" style="color:var(--accent)">三星統合鑑定</div>
-        <div class="related-card-title">四柱推命・タロット・数秘術をまとめて鑑定 →</div>
+    <div class="article-related-grid">
+      <a href="/" class="article-related-item" style="border-color:#d4bfff;background:linear-gradient(135deg,#f5f0ff,#fdf4fa)">
+        <div class="article-related-label" style="color:var(--accent)">三星統合鑑定</div>
+        <div class="article-related-title">四柱推命・タロット・数秘術をまとめて鑑定 →</div>
       </a>
-      <a href="/tarot" class="related-card">
-        <div class="related-card-label">タロット占い</div>
-        <div class="related-card-title">今この瞬間のメッセージを受け取る →</div>
+      <a href="/tarot" class="article-related-item">
+        <div class="article-related-label">タロット占い</div>
+        <div class="article-related-title">今この瞬間のメッセージを受け取る →</div>
       </a>
-      <a href="/kyusei" class="related-card">
-        <div class="related-card-label">九星気学</div>
-        <div class="related-card-title">今年・来年の運気の周期を知る →</div>
+      <a href="/kyusei" class="article-related-item">
+        <div class="article-related-label">九星気学</div>
+        <div class="article-related-title">今年・来年の運気の周期を知る →</div>
       </a>
-      <a href="/numerology" class="related-card">
-        <div class="related-card-label">数秘術</div>
-        <div class="related-card-title">誕生日から運命数を読み解く →</div>
+      <a href="/numerology" class="article-related-item">
+        <div class="article-related-label">数秘術</div>
+        <div class="article-related-title">誕生日から運命数を読み解く →</div>
       </a>
-      <a href="/aisho" class="related-card">
-        <div class="related-card-label">相性診断</div>
-        <div class="related-card-title">気になる相手との相性を占う →</div>
+      <a href="/aisho" class="article-related-item">
+        <div class="article-related-label">相性診断</div>
+        <div class="article-related-title">気になる相手との相性を占う →</div>
       </a>
     </div>
   </section>
 
-  <div class="cta-box" style="margin:2.5rem 0 0">
+  <div class="article-cta" style="margin:2.5rem 0 0">
     <div>
       <p>🌙 あなたの命式を無料で算出する</p>
       <small>生年月日を入力するだけ。十神・大運・天中殺まで表示します。</small>
     </div>
-    <a href="/shichu" class="cta-btn">四柱推命を算出する →</a>
+    <a href="/shichu" class="article-cta-btn">四柱推命を算出する →</a>
   </div>
 
 </div>

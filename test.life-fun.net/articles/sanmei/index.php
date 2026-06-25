@@ -24,6 +24,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -56,11 +57,6 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  .cta-box{background:linear-gradient(135deg,#f0faf9 0%,#f8fbfa 100%);border:1px solid #a8e0da;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-  .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
-  .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}
-  .cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
   .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
@@ -106,18 +102,11 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
 
   /* Related */
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}
-  .related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}
-  .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
   .related-card.featured{background:linear-gradient(135deg,#f5f0ff,#fdf4fa);border-color:#d4bfff}
   .related-card.featured:hover{border-color:#9b72ef}
-  .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
-  .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
-  .related-card.featured .related-card-title{color:#7c4dce}
-
+  .related-card.featured
   /* Footer */
   @media(max-width:600px){
-    .cta-box{flex-direction:column;align-items:flex-start}
     .star-grid{grid-template-columns:1fr}
   }
 .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
@@ -169,12 +158,11 @@ ob_start();
     <p class="art-lead">算命学は中国発祥の東洋占術で、生年月日だけから「元命（十大主星）」「主星」「従星」を算出し、その人の本質・才能・社会的な在り方・エネルギーを読み解きます。日本では高尾義政が体系化し普及させました。</p>
   </div>
 
-  <div class="cta-box">
-    <div>
+  <div class="article-cta"><div class="article-cta-text">
       <p>☯️ あなたの元命・主星・従星を調べる</p>
       <small>生年月日を入力するだけで三星と五行バランスを算出。</small>
     </div>
-    <a href="/sanmei" class="cta-btn">算命学で鑑定する →</a>
+    <a href="/sanmei" class="article-cta-btn">算命学で鑑定する →</a>
   </div>
 
   <nav class="toc">
@@ -391,22 +379,22 @@ ob_start();
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>算命学で自分の本質を知ったら、他の占術で多角的に深めてみませんか。</p>
-    <div class="related-grid">
+    <div class="article-related-grid">
       <a href="/" class="related-card featured">
-        <div class="related-card-label">三星統合鑑定（おすすめ）</div>
-        <div class="related-card-title">四柱推命・数秘・九星を統合して鑑定する →</div>
+        <div class="article-related-label">三星統合鑑定（おすすめ）</div>
+        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
       </a>
-      <a href="/articles/shichu/" class="related-card">
-        <div class="related-card-label">四柱推命とは</div>
-        <div class="related-card-title">命式・十神・大運の読み方を解説 →</div>
+      <a href="/articles/shichu/" class="article-related-item">
+        <div class="article-related-label">四柱推命とは</div>
+        <div class="article-related-title">命式・十神・大運の読み方を解説 →</div>
       </a>
-      <a href="/articles/numerology/" class="related-card">
-        <div class="related-card-label">数秘術とは</div>
-        <div class="related-card-title">運命数の計算方法と意味を解説 →</div>
+      <a href="/articles/numerology/" class="article-related-item">
+        <div class="article-related-label">数秘術とは</div>
+        <div class="article-related-title">運命数の計算方法と意味を解説 →</div>
       </a>
-      <a href="/sanmei" class="related-card">
-        <div class="related-card-label">算命学を試す</div>
-        <div class="related-card-title">元命・主星・従星を無料で算出 →</div>
+      <a href="/sanmei" class="article-related-item">
+        <div class="article-related-label">算命学を試す</div>
+        <div class="article-related-title">元命・主星・従星を無料で算出 →</div>
       </a>
     </div>
   </section>

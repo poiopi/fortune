@@ -24,6 +24,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -56,11 +57,6 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  .cta-box{background:linear-gradient(135deg,rgba(124,77,206,.06) 0%,rgba(155,114,239,.04) 100%);border:1px solid rgba(124,77,206,.2);border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-  .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
-  .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}
-  .cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
   .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
@@ -118,19 +114,12 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
 
   /* Related */
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}
-  .related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}
-  .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
   .related-card.featured{background:linear-gradient(135deg,rgba(124,77,206,.07),rgba(155,114,239,.04));border-color:rgba(124,77,206,.3)}
   .related-card.featured:hover{border-color:var(--accent)}
-  .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
-  .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
-  .related-card.featured .related-card-title{color:var(--accent)}
-
+  .related-card.featured
   /* Footer */
 
   @media(max-width:600px){
-    .cta-box{flex-direction:column;align-items:flex-start}
     .elem-grid{grid-template-columns:1fr}
     .quality-grid{grid-template-columns:1fr}
     .sign-grid{grid-template-columns:repeat(2,1fr)}
@@ -184,12 +173,11 @@ ob_start();
     <p class="art-lead">西洋占星術は、惑星と星座の位置関係から人の性格・運命・相性を読み解く占術です。12星座の意味・4つのエレメント・3つのクオリティを組み合わせることで、あなた固有の個性が見えてきます。</p>
   </div>
 
-  <div class="cta-box">
-    <div>
+  <div class="article-cta"><div class="article-cta-text">
       <p>⭐ あなたの太陽星座・エレメントを調べる</p>
       <small>生年月日と生まれた時間帯を入力するだけで鑑定できます。</small>
     </div>
-    <a href="/seiza" class="cta-btn">西洋占星術で鑑定する →</a>
+    <a href="/seiza" class="article-cta-btn">西洋占星術で鑑定する →</a>
   </div>
 
   <nav class="toc">
@@ -334,22 +322,22 @@ ob_start();
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>西洋占星術で自分の傾向を知ったら、他の占術で多角的に深めてみませんか。</p>
-    <div class="related-grid">
+    <div class="article-related-grid">
       <a href="/seiza" class="related-card featured">
-        <div class="related-card-label">西洋占星術（おすすめ）</div>
-        <div class="related-card-title">太陽星座×内面タイプで今すぐ鑑定する →</div>
+        <div class="article-related-label">西洋占星術（おすすめ）</div>
+        <div class="article-related-title">太陽星座×内面タイプで今すぐ鑑定する →</div>
       </a>
-      <a href="/articles/sanmei/" class="related-card">
-        <div class="related-card-label">算命学とは</div>
-        <div class="related-card-title">元命・主星・従星の意味を解説 →</div>
+      <a href="/articles/sanmei/" class="article-related-item">
+        <div class="article-related-label">算命学とは</div>
+        <div class="article-related-title">元命・主星・従星の意味を解説 →</div>
       </a>
-      <a href="/articles/numerology/" class="related-card">
-        <div class="related-card-label">数秘術とは</div>
-        <div class="related-card-title">運命数の計算方法と意味を解説 →</div>
+      <a href="/articles/numerology/" class="article-related-item">
+        <div class="article-related-label">数秘術とは</div>
+        <div class="article-related-title">運命数の計算方法と意味を解説 →</div>
       </a>
-      <a href="/articles/" class="related-card">
-        <div class="related-card-label">解説ガイド一覧</div>
-        <div class="related-card-title">タロット・四柱推命など各占術の解説 →</div>
+      <a href="/articles/" class="article-related-item">
+        <div class="article-related-label">解説ガイド一覧</div>
+        <div class="article-related-title">タロット・四柱推命など各占術の解説 →</div>
       </a>
     </div>
   </section>
