@@ -281,13 +281,22 @@ ob_start();
         ['XX','審判','覚醒・再評価・転生'],
         ['XXI','世界','完成・達成・統合'],
       ];
-      foreach($cards as $c): ?>
+      $card_links = ['0' => '/articles/tarot/fool/'];
+      foreach($cards as $c):
+        $slug = $card_links[$c[0]] ?? null;
+        if($slug): ?>
+      <a href="<?= $slug ?>" class="arc-card" style="text-decoration:none;color:inherit">
+        <div class="arc-num"><?= $c[0] ?></div>
+        <div class="arc-name"><?= $c[1] ?></div>
+        <div class="arc-kw"><?= $c[2] ?></div>
+      </a>
+      <?php else: ?>
       <div class="arc-card">
         <div class="arc-num"><?= $c[0] ?></div>
         <div class="arc-name"><?= $c[1] ?></div>
         <div class="arc-kw"><?= $c[2] ?></div>
       </div>
-      <?php endforeach; ?>
+      <?php endif; endforeach; ?>
     </div>
   </section>
 
