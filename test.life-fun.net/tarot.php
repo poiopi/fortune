@@ -593,13 +593,14 @@ body{top:0!important}
     const dirClass = isUp ? 'dir-up' : 'dir-rev';
     const dirLabel = isUp ? '正位置' : '逆位置';
 
-    document.getElementById('big-img').innerHTML  = `<img src="/cards/${card.img}.png" alt="${card.name}" style="max-width:80%;max-height:100%;object-fit:contain">` ;
+    const imgStyle = isUp ? '' : 'transform:rotate(180deg)';
+    document.getElementById('big-img').innerHTML  = `<img src="/cards/${card.img}.png" alt="${card.name}" style="max-width:80%;max-height:100%;object-fit:contain;${imgStyle}">`;
     document.getElementById('big-num').textContent = '第' + card.order + '番';
     document.getElementById('big-name').textContent = card.name;
     document.getElementById('big-en').textContent   = card.en;
     const dirEl = document.getElementById('big-dir');
-    dirEl.textContent  = dirLabel;
-    dirEl.className    = 'big-dir ' + dirClass;
+    dirEl.textContent  = '';
+    dirEl.className    = 'big-dir';
 
     // オーバーレイ表示
     const overlay = document.getElementById('overlay');
@@ -623,6 +624,8 @@ body{top:0!important}
     setTimeout(() => {
       document.getElementById('overlay-msg').textContent = card.name;
       document.getElementById('overlay-sub').textContent = 'タップして結果を見る';
+      dirEl.textContent = dirLabel;
+      dirEl.className   = 'big-dir ' + dirClass;
       overlay.addEventListener('click', showResult, {once: true});
     }, 1600);
   }
