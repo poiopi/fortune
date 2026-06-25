@@ -44,7 +44,9 @@
       "Bash(git push *)",
       "Bash(xargs -I{} basename {})",
       "Bash(git reset *)",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "PowerShell(Get-ChildItem 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net' -Directory -Recurse -Depth 2 | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\('C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\',''\\) })",
+      "PowerShell(New-Item -ItemType Directory -Path 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\css' -Force)"
     ]
   }
 }
