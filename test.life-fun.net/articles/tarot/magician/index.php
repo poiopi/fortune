@@ -50,8 +50,8 @@ ob_start();
   .card-visual::before{top:5px;left:5px;border-right:none;border-bottom:none}
   .card-visual::after{bottom:5px;right:5px;border-left:none;border-top:none}
   .card-roman{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:rgba(201,168,76,.8);margin-bottom:.5rem;}
-  .card-illust{width:84px;height:84px;border:1px solid rgba(201,168,76,.4);border-radius:3px;background:#f2ecd8;display:flex;align-items:center;justify-content:center;font-size:2.6rem;line-height:1;margin-bottom:.6rem;position:relative;overflow:hidden;}
-  .card-illust img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply}
+  .card-illust{width:84px;height:84px;border:none;border-radius:3px;background:transparent;display:flex;align-items:center;justify-content:center;font-size:2.6rem;line-height:1;margin-bottom:.6rem;position:relative;overflow:hidden;}
+  .card-illust img{width:100%;height:100%;object-fit:contain;display:block}
   .card-en{font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.18em;color:rgba(201,168,76,.75);text-transform:uppercase;margin-bottom:.25rem;}
   .card-ja{font-family:var(--ff-serif);font-size:.85rem;font-weight:700;color:#e8e0ff}
   .kw-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.2rem 0}

@@ -35,8 +35,8 @@ ob_start();
   .card-visual{width:120px;flex-shrink:0;background:linear-gradient(170deg,#1e0e42 0%,#0d051f 100%);border:2px solid var(--gold);border-radius:10px;padding:.7rem .6rem .8rem;text-align:center;position:relative;box-shadow:0 0 0 1px rgba(201,168,76,.15),0 8px 32px rgba(0,0,0,.5),inset 0 0 20px rgba(155,114,239,.15);display:flex;flex-direction:column;align-items:center;}
   .card-visual::before,.card-visual::after{content:'';position:absolute;width:10px;height:10px;border:1.5px solid var(--gold);opacity:.7;}.card-visual::before{top:5px;left:5px;border-right:none;border-bottom:none}.card-visual::after{bottom:5px;right:5px;border-left:none;border-top:none}
   .card-roman{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:rgba(201,168,76,.8);margin-bottom:.5rem;}
-  .card-illust{width:84px;height:84px;border:1px solid rgba(201,168,76,.4);border-radius:3px;background:#f2ecd8;display:flex;align-items:center;justify-content:center;font-size:2.6rem;line-height:1;margin-bottom:.6rem;position:relative;overflow:hidden;}
-  .card-illust img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply}
+  .card-illust{width:84px;height:84px;border:none;border-radius:3px;background:transparent;display:flex;align-items:center;justify-content:center;font-size:2.6rem;line-height:1;margin-bottom:.6rem;position:relative;overflow:hidden;}
+  .card-illust img{width:100%;height:100%;object-fit:contain;display:block}
   .card-en{font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.18em;color:rgba(201,168,76,.75);text-transform:uppercase;margin-bottom:.25rem;}
   .card-ja{font-family:var(--ff-serif);font-size:.85rem;font-weight:700;color:#e8e0ff}
   .kw-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.2rem 0}.kw-tag{font-family:var(--ff-mono);font-size:.7rem;padding:.25rem .7rem;border-radius:20px;border:1px solid var(--border);color:var(--muted);background:#fff}.kw-tag.upright{border-color:rgba(124,77,206,.3);color:var(--accent);background:rgba(124,77,206,.05)}.kw-tag.reversed{border-color:rgba(180,100,80,.3);color:#a05040;background:rgba(180,100,80,.05)}
