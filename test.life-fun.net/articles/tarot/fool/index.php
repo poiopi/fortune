@@ -99,7 +99,7 @@ ob_start();
     margin-bottom:.6rem;
     position:relative;overflow:hidden;
   }
-  .card-illust img{width:100%;height:100%;object-fit:contain;display:block}
+  .card-illust img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply}
   .card-en{
     font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.18em;
     color:rgba(201,168,76,.75);text-transform:uppercase;margin-bottom:.25rem;
