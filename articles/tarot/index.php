@@ -1,4 +1,4 @@
-?php
+<?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
 ob_start();
@@ -106,11 +106,12 @@ ob_start();
 
   /* ── CARD GRID ── */
   .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.75rem;margin-top:1rem}
-  .arc-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s}
-  .arc-card:hover{border-color:var(--accent-lt)}
+  .arc-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s,transform .15s;display:block;text-decoration:none;color:inherit}
+  .arc-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
   .arc-num{font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.3rem}
   .arc-name{font-family:var(--ff-serif);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.35rem}
-  .arc-kw{font-size:.75rem;color:var(--muted);line-height:1.6}
+  .arc-kw{font-size:.75rem;color:var(--muted);line-height:1.6;margin-bottom:.5rem}
+  .arc-link{font-family:var(--ff-mono);font-size:.68rem;color:var(--accent);letter-spacing:.04em}
 
   /* ── FAQ ── */
   .faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
@@ -308,10 +309,11 @@ ob_start();
       foreach($cards as $c):
         $slug = $card_links[$c[0]] ?? null;
         if($slug): ?>
-      <a href="<?= $slug ?>" class="arc-card" style="text-decoration:none;color:inherit">
+      <a href="<?= $slug ?>" class="arc-card">
         <div class="arc-num"><?= $c[0] ?></div>
         <div class="arc-name"><?= $c[1] ?></div>
         <div class="arc-kw"><?= $c[2] ?></div>
+        <div class="arc-link">詳細を読む →</div>
       </a>
       <?php else: ?>
       <div class="arc-card">
