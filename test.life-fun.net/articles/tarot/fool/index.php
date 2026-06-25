@@ -91,21 +91,15 @@ ob_start();
   }
   .card-illust{
     width:84px;height:84px;
-    border:1px solid rgba(201,168,76,.3);
+    border:none;
     border-radius:4px;
-    background:linear-gradient(135deg,rgba(155,114,239,.08),rgba(201,168,76,.04));
+    background:transparent;
     display:flex;align-items:center;justify-content:center;
     font-size:2.6rem;line-height:1;
     margin-bottom:.6rem;
     position:relative;overflow:hidden;
   }
   .card-illust img{width:100%;height:100%;object-fit:contain;display:block}
-  .card-illust::before,.card-illust::after{
-    content:'';position:absolute;width:6px;height:6px;
-    border:1px solid rgba(201,168,76,.4);
-  }
-  .card-illust::before{top:3px;left:3px;border-right:none;border-bottom:none}
-  .card-illust::after{bottom:3px;right:3px;border-left:none;border-top:none}
   .card-en{
     font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.18em;
     color:rgba(201,168,76,.75);text-transform:uppercase;margin-bottom:.25rem;
