@@ -73,8 +73,8 @@ ob_start();
       <div class="card-illust"><img src="/cards/high-priestess.png" alt="女教皇"></div>
       <div class="card-en">THE HIGH PRIESTESS</div>
       <div class="card-ja">女教皇</div>
-    </div>
-  </div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">隠し事・二面性・本音を見せない関係への警告です。どちらかが感情を封印している可能性があります。正直な対話が必要な時です。</div></div></div></section>
+
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>女教皇は書物を膝に抱き、ザクロの幕の前に静かに座っています。彼女は語りません。しかしすべてを知っています。このカードが現れる時、宇宙はあなたに「もっと静かになれ」と告げています。頭で考えることをやめ、感じることに全意識を向ける時です。答えは外ではなく、あなたの内側の深みに沈んでいます。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は動くより待つ時です。直感が正しい方向を教えてくれています。情報収集・観察・内省に集中することで、表面には見えなかった真実が浮かび上がります。焦りは最大の敵。静けさの中にだけ見える景色があります。</p></div></section>
