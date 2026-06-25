@@ -149,8 +149,8 @@ ob_start();
       <div class="card-illust"><img src="/cards/magician.png" alt="魔術師"></div>
       <div class="card-en">THE MAGICIAN</div>
       <div class="card-ja">魔術師</div>
-    </div>
-  </div>
+
+
 
 
   <nav class="toc">

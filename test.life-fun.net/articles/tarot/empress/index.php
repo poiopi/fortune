@@ -69,8 +69,8 @@ ob_start();
       <div class="card-illust"><img src="/cards/empress.png" alt="女帝"></div>
       <div class="card-en">THE EMPRESS</div>
       <div class="card-ja">女帝</div>
-    </div>
-  </div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">相手への過度な依存、または支配的になりすぎていないかを確認してください。愛情が重さになっていないか、立ち止まって見直す時です。</div></div></div></section>
+
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>小麦が実る野原に豊かに座る女帝は、生命そのものの象徴です。彼女の周りには木々が茂り、川が流れ、すべてが実っています。このカードは「与えることで豊かになる」という宇宙の法則を体現しています。愛情を注げば注ぐほど、あなたにも返ってくる。その循環の中心に女帝は立っています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>創造的なエネルギーが満ちている時期です。与えること・育てることで運が開きます。アイデアを形にする、誰かをサポートする、自然の流れに従う——今はその時です。生み出すことへの喜びを感じながら動いてください。</p></div></section>
