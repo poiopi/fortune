@@ -24,6 +24,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -72,21 +73,6 @@ ob_start();
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
 
   /* ── CTA BOX ── */
-  .cta-box{
-    background:linear-gradient(135deg,#f5f0ff 0%,#fdf4fa 100%);
-    border:1px solid #d4bfff;border-radius:12px;
-    padding:1.25rem 1.5rem;margin:1.5rem 0;
-    display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
-  }
-  .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
-  .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{
-    display:inline-block;background:var(--accent);color:#fff;
-    font-family:var(--ff-sans);font-size:.85rem;font-weight:500;
-    padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;
-    white-space:nowrap;transition:background .2s,transform .15s;
-  }
-  .cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
 
   /* ── TOC ── */
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
@@ -123,16 +109,10 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
 
   /* ── RELATED ── */
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}
-  .related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}
-  .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
-  .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
-  .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
 
   /* ── FOOTER ── */
 
   @media(max-width:600px){
-    .cta-box{flex-direction:column;align-items:flex-start}
     .card-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
   }
 .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
@@ -201,12 +181,11 @@ ob_start();
     <p class="art-lead">15世紀に生まれたタロットは、78枚のカードで潜在意識と運命の流れを読み解く占術。直感でカードを選ぶことで、今のあなたへのメッセージが浮かび上がります。この記事ではタロットの基礎知識から22枚のカード意味一覧まで、まとめて解説します。</p>
   </div>
 
-  <div class="cta-box">
-    <div>
+  <div class="article-cta"><div class="article-cta-text">
       <p>🔮 実際にカードを引いてみる</p>
       <small>22枚の大アルカナが並ぶ本格タロット。直感で1枚選ぶだけ。</small>
     </div>
-    <a href="/tarot" class="cta-btn">タロット占いを始める →</a>
+    <a href="/tarot" class="article-cta-btn">タロット占いを始める →</a>
   </div>
 
   <nav class="toc">
@@ -346,30 +325,29 @@ ob_start();
       </div>
     </div>
   </section>
+  <section class="art-section">
+    <?php
+    $ctaTitle = '🔮 22枚の意味を読んだ今、実際に占ってみましょう';
+    $ctaText  = '今のあなたにはどのカードが現れるでしょうか。';
+    $ctaUrl   = '/tarot';
+    $ctaBtn   = 'タロット占いを始める →';
+    require __DIR__.'/../../inc/article-cta.php';
+    ?>
+  </section>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>タロットで引いたカードのテーマをさらに深掘りしたいときは、以下の占いもおすすめです。</p>
-    <div class="related-grid">
-      <a href="/shichu" class="related-card">
-        <div class="related-card-label">四柱推命</div>
-        <div class="related-card-title">生まれ持った命式と大運を調べる →</div>
-      </a>
-      <a href="/numerology" class="related-card">
-        <div class="related-card-label">数秘術</div>
-        <div class="related-card-title">誕生日から運命数を読み解く →</div>
-      </a>
-      <a href="/kyusei" class="related-card">
-        <div class="related-card-label">九星気学</div>
-        <div class="related-card-title">今年・来年の運気の流れを知る →</div>
-      </a>
-      <a href="/aisho" class="related-card">
-        <div class="related-card-label">相性診断</div>
-        <div class="related-card-title">気になる相手との相性を占う →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'四柱推命', 'title'=>'生まれ持った命式と大運を調べる →', 'url'=>'/shichu'],
+      ['label'=>'数秘術',   'title'=>'誕生日から運命数を読み解く →',     'url'=>'/numerology'],
+      ['label'=>'九星気学', 'title'=>'今年・来年の運気の流れを知る →',   'url'=>'/kyusei'],
+      ['label'=>'相性診断', 'title'=>'気になる相手との相性を占う →',     'url'=>'/aisho'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
-
 </div>
 
 
