@@ -186,7 +186,8 @@
   .big-name{font-family:var(--ff-serif);font-size:1.2rem;font-weight:700;color:var(--gold-lt);text-align:center}
   @media(max-width:480px){.big-name{font-size:1rem}}
   .big-en{font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);letter-spacing:.08em}
-  .big-dir{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.06em;padding:.18rem .7rem;border-radius:4px;margin-top:2px}
+  .big-dir{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.06em;padding:.22rem .9rem;border-radius:4px;margin-top:.6rem;display:none}
+  .big-dir:not(:empty){display:inline-block}
   .dir-up{background:rgba(78,205,196,.15);color:var(--teal);border:1px solid rgba(78,205,196,.3)}
   .dir-rev{background:rgba(232,113,154,.15);color:var(--rose);border:1px solid rgba(232,113,154,.3)}
 
@@ -406,10 +407,10 @@ body{top:0!important}
           <div class="big-img" id="big-img"></div>
           <div class="big-name" id="big-name"></div>
           <div class="big-en" id="big-en"></div>
-          <span class="big-dir" id="big-dir"></span>
         </div>
       </div>
     </div>
+    <span class="big-dir" id="big-dir"></span>
     <div class="overlay-msg" id="overlay-msg">カードが語りかけています...</div>
     <div class="overlay-sub" id="overlay-sub"></div>
   </div>
