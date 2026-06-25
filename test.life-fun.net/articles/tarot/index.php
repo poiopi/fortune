@@ -181,6 +181,10 @@ ob_start();
     <p class="art-lead">15世紀に生まれたタロットは、78枚のカードで潜在意識と運命の流れを読み解く占術。直感でカードを選ぶことで、今のあなたへのメッセージが浮かび上がります。この記事ではタロットの基礎知識から22枚のカード意味一覧まで、まとめて解説します。</p>
   </div>
 
+      <?php endif; endforeach; ?>
+    </div>
+  </section>
+
   <?php
 $ctaTitle = '🔮 実際にカードを引いてみる';
 $ctaText  = '22枚の大アルカナが並ぶ本格タロット。直感で1枚選ぶだけ。';
@@ -188,9 +192,6 @@ $ctaUrl   = '/tarot';
 $ctaBtn   = 'タロット占いを始める →';
 require __DIR__.'/../../inc/article-cta.php';
 ?>
-      <?php endif; endforeach; ?>
-    </div>
-  </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
