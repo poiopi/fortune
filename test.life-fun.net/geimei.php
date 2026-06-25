@@ -1,4 +1,4 @@
-﻿<?php declare(strict_types=1);
+<?php declare(strict_types=1);
 if ($_SERVER['REQUEST_METHOD']==='POST' && ($_POST['action']??'')==='save_answer') {
     header('Content-Type: application/json');
     $answer = trim($_POST['answer'] ?? '');
