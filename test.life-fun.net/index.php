@@ -21,7 +21,7 @@ function getZodiac(int $month, int $day): array {
         ['name'=>'牡牛座','en'=>'Taurus',   'symbol'=>'♉','period'=>'4/20〜5/20'],
         ['name'=>'双子座','en'=>'Gemini',   'symbol'=>'♊','period'=>'5/21〜6/21'],
         ['name'=>'蟹座',  'en'=>'Cancer',   'symbol'=>'♋','period'=>'6/22〜7/22'],
-        ['name'=>'獅子座','en'=>'Leo',      'symabol'=>'♌','period'=>'7/23〜8/22'],
+        ['name'=>'獅子座','en'=>'Leo',      'symbol'=>'♌','period'=>'7/23〜8/22'],
         ['name'=>'乙女座','en'=>'Virgo',    'symbol'=>'♍','period'=>'8/23〜9/22'],
         ['name'=>'天秤座','en'=>'Libra',    'symbol'=>'♎','period'=>'9/23〜10/23'],
         ['name'=>'蠍座',  'en'=>'Scorpio',  'symbol'=>'♏','period'=>'10/24〜11/21'],
@@ -296,8 +296,8 @@ $name     = '';
 $birthday = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name     = trim(htmlspecialchars($_POST['name']     ?? '', ENT_QUOTES, 'UTF-8'));
-    $birthday = trim(htmlspecialchars($_POST['birthday'] ?? '', ENT_QUOTES, 'UTF-8'));
+    $name     = trim($_POST['name']     ?? '');
+    $birthday = trim($_POST['birthday'] ?? '');
 
     if ($name === '')     $errors[] = 'お名前を入力してください。';
     if ($birthday === '') $errors[] = '生年月日を入力してください。';
@@ -1136,7 +1136,7 @@ header.site-header{
           <form method="post" action="">
             <div class="field">
               <label for="name">お名前（ニックネーム可）</label>
-              <input type="text" id="name" name="name" value="<?= $name ?>" placeholder="例：さくら" required>
+              <input type="text" id="name" name="name" value="<?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>" placeholder="例：さくら" required>
             </div>
             <div class="field">
               <label for="birthday">生年月日</label>
@@ -1248,7 +1248,7 @@ header.site-header{
       <section class="result-section" id="result">
 
     <div class="result-header">
-      <div class="result-name"><?= $name ?> さんの鑑定書</div>
+      <div class="result-name"><?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?> さんの鑑定書</div>
       <div class="result-date"><?= (new DateTimeImmutable($birthday))->format('Y年n月j日生まれ') ?></div>
     </div>
 
