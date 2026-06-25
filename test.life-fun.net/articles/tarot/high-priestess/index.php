@@ -19,6 +19,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--ff-serif:'Shippori Mincho',serif;--ff-sans:'Zen Kaku Gothic New',sans-serif;--ff-mono:'DM Mono',monospace;--accent:#7c4dce;--accent-lt:#9b72ef;--gold:#c9a84c;--text:#1a1a2e;--muted:#6b6b8a;--border:#e5e3ee;--bg:#faf7ff;--bg2:#f8f7fc;}
@@ -40,8 +41,6 @@ ob_start();
   .card-en{font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.18em;color:rgba(201,168,76,.75);text-transform:uppercase;margin-bottom:.25rem;}
   .card-ja{font-family:var(--ff-serif);font-size:.85rem;font-weight:700;color:#e8e0ff}
   .kw-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.2rem 0}.kw-tag{font-family:var(--ff-mono);font-size:.7rem;padding:.25rem .7rem;border-radius:20px;border:1px solid var(--border);color:var(--muted);background:#fff}.kw-tag.upright{border-color:rgba(124,77,206,.3);color:var(--accent);background:rgba(124,77,206,.05)}.kw-tag.reversed{border-color:rgba(180,100,80,.3);color:#a05040;background:rgba(180,100,80,.05)}
-  .cta-box{background:linear-gradient(135deg,#f5f0ff 0%,#fdf4fa 100%);border:1px solid #d4bfff;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.cta-box p{font-size:.9rem;color:var(--text);font-weight:500}.cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}.cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}.toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}.toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}.toc li{font-size:.88rem}.toc a{color:var(--accent);text-decoration:none}.toc a:hover{text-decoration:underline}
   .art-section{padding:2.5rem 0;border-bottom:1px solid var(--border)}.art-section:last-child{border-bottom:none}
   .art-section h2{font-family:var(--ff-serif);font-size:1.35rem;font-weight:700;color:var(--text);margin-bottom:1rem;padding-left:.9rem;border-left:3px solid var(--accent)}
@@ -52,9 +51,7 @@ ob_start();
   .reading-box p{font-size:.92rem;line-height:1.9;color:#333;margin-bottom:.7rem}.reading-box p:last-child{margin-bottom:0}
   .cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1rem}.cat-card{border-radius:10px;padding:1rem 1.1rem;border:1px solid var(--border);background:#fff}.cat-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.12em;color:var(--muted);margin-bottom:.4rem}.cat-text{font-size:.88rem;line-height:1.75;color:#333}
   .faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}.faq-item{border:1px solid var(--border);border-radius:10px;overflow:hidden}.faq-q{font-size:.9rem;font-weight:500;padding:.9rem 1.1rem;background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.5rem}.faq-q::after{content:'＋';font-family:var(--ff-mono);color:var(--accent);flex-shrink:0;transition:transform .2s}.faq-item.open .faq-q::after{transform:rotate(45deg)}.faq-a{font-size:.88rem;color:#444;line-height:1.85;padding:0 1.1rem;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}.faq-item.open .faq-a{max-height:400px;padding:.9rem 1.1rem}
-  .card-nav{display:flex;gap:.75rem;margin-top:1rem;flex-wrap:wrap}.card-nav-item{flex:1;min-width:140px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}.card-nav-item:hover{border-color:var(--accent-lt);transform:translateY(-2px)}.card-nav-dir{font-size:.65rem;color:var(--muted);font-family:var(--ff-mono);margin-bottom:.3rem}.card-nav-name{font-size:.9rem;font-weight:500;color:var(--accent)}
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}.related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}.related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}.related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}.related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
-  @media(max-width:600px){.art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}.card-visual{width:130px}.cat-grid{grid-template-columns:1fr}.cta-box{flex-direction:column;align-items:flex-start}}
+  @media(max-width:600px){.art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}.card-visual{width:130px}.cat-grid{grid-template-columns:1fr}}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"女教皇は恋愛でどういう意味？","acceptedAnswer":{"@type":"Answer","text":"感情より直感を信じるよう促しています。言葉ではなく空気を読み、相手の本音を感じ取ることが大切な時期です。"}},{"@type":"Question","name":"女教皇の逆位置は何を意味する？","acceptedAnswer":{"@type":"Answer","text":"直感を無視している、または秘密を抱えているサインです。知っていることを隠すことで生じる歪みへの警告でもあります。"}},{"@type":"Question","name":"女教皇と魔術師の違いは？","acceptedAnswer":{"@type":"Answer","text":"魔術師は「行動」、女教皇は「待機と観察」。方向性が真逆のカードです。魔術師が動くなら、女教皇は待つ。"}}]}</script>
@@ -78,7 +75,7 @@ ob_start();
       <div class="card-ja">女教皇</div>
     </div>
   </div>
-  <div class="cta-box"><div><p>🔮 今すぐカードを引いてみる</p><small>。</small></div><a href="/tarot" class="cta-btn">タロット占いを始める →</a></div>
+  <div class="article-cta"><div class="article-cta-text"><p>🔮 今すぐカードを引いてみる</p><small>。</small></div><a href="/tarot" class="article-cta-btn">タロット占いを始める →</a></div>
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>女教皇は書物を膝に抱き、ザクロの幕の前に静かに座っています。彼女は語りません。しかしすべてを知っています。このカードが現れる時、宇宙はあなたに「もっと静かになれ」と告げています。頭で考えることをやめ、感じることに全意識を向ける時です。答えは外ではなく、あなたの内側の深みに沈んでいます。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は動くより待つ時です。直感が正しい方向を教えてくれています。情報収集・観察・内省に集中することで、表面には見えなかった真実が浮かび上がります。焦りは最大の敵。静けさの中にだけ見える景色があります。</p></div></section>
@@ -86,8 +83,42 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">相手の言葉より感じる空気を信じて。沈黙の中にこそ本音があります。「何も言わなくてもわかってほしい」より、感じたことを丁寧に言語化する努力が関係を深めます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">隠し事・二面性・本音を見せない関係への警告です。どちらかが感情を封印している可能性があります。正直な対話が必要な時です。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">表に出ずに情報を集める時期です。今は発言より観察、行動より準備。焦らず状況を見極めることが最善手になります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">重要な情報が隠されている可能性があります。表面だけを見て判断しないことが大切です。契約・交渉は特に慎重に。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">直感的な判断が正解に近い時期です。焦らず情報を集めてから動くことで、確実な結果が得られます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">隠れたリスクへの注意が必要です。契約書の細部を必ず確認し、「なんとなく」での判断を避けてください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女教皇は恋愛でどういう意味？</div><div class="faq-a">感情より直感を信じるよう促しています。言葉ではなく空気を読み、相手の本音を感じ取ることが大切な時期です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女教皇の逆位置は何を意味する？</div><div class="faq-a">直感を無視している、または秘密を抱えているサインです。知っていることを隠すことで生じる歪みへの警告でもあります。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女教皇と魔術師の違いは？</div><div class="faq-a">魔術師は「行動」、女教皇は「待機と観察」。方向性が真逆のカードです。魔術師が動くなら、女教皇は待つ。</div></div></div></section>
-  <section class="art-section"><h2>他のカードを見る</h2><div class="card-nav"><a href="/articles/tarot/magician/" class="card-nav-item"><div class="card-nav-dir">← 前のカード</div><div class="card-nav-name">魔術師</div></a><a href="/articles/tarot/empress/" class="card-nav-item"><div class="card-nav-dir">次のカード →</div><div class="card-nav-name">女帝</div></a></div></section>
-  <section class="art-section"><h2>関連コンテンツ</h2><div class="related-grid"><a href="/tarot" class="related-card"><div class="related-card-label">タロット占い</div><div class="related-card-title">実際にカードを引いてみる →</div></a><a href="/articles/tarot/" class="related-card"><div class="related-card-label">タロット完全ガイド</div><div class="related-card-title">大アルカナの基礎知識を学ぶ →</div></a><a href="/" class="related-card"><div class="related-card-label">三星統合鑑定</div><div class="related-card-title">タロット×星座×数秘で深読みする →</div></a><a href="/numerology" class="related-card"><div class="related-card-label">数秘術</div><div class="related-card-title">誕生日から運命数を読み解く →</div></a></div></section>
+  <section class="art-section">
+    <?php
+    \ = '🔮 女教皇の意味を読んだら、実際に占ってみましょう';
+    \  = '今のあなたには女教皇ではなく、別のカードが現れるかもしれません。';
+    \   = '/tarot';
+    \   = 'タロット占いを始める →';
+    require __DIR__.'/../../../inc/article-cta.php';
+    ?>
+  </section>
+
+  <section class="art-section">
+    <h2>他のカードを見る</h2>
+    <?php
+    \ = '魔術師';
+    \   = '/articles/tarot/magician/';
+    \ = '← 前のカード';
+    \ = '女帝';
+    \   = '/articles/tarot/empress/';
+    \ = '次のカード →';
+    \ = '大アルカナ一覧';
+    \   = '/articles/tarot/';
+    require __DIR__.'/../../../inc/article-nav.php';
+    ?>
+  </section>
+  <section class="art-section">
+    <h2>関連コンテンツ</h2>
+    <?php
+    \ = [
+      ['label'=>'タロット占い',     'title'=>'実際にカードを引いてみる →',     'url'=>'/tarot'],
+      ['label'=>'タロット完全ガイド','title'=>'大アルカナの基礎知識を学ぶ →',   'url'=>'/articles/tarot/'],
+      ['label'=>'三星統合鑑定',     'title'=>'タロット×星座×数秘で深読みする →','url'=>'/'],
+      ['label'=>'数秘術',           'title'=>'誕生日から運命数を読み解く →',     'url'=>'/numerology'],
+    ];
+    require __DIR__.'/../../../inc/article-related.php';
+    ?>
+  </section>
 </div>
 <script>function toggleFaq(el){const item=el.parentElement;item.classList.toggle('open');}</script>
 <?php $currentSlug='tarot'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

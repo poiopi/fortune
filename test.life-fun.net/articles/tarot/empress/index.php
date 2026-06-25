@@ -17,6 +17,7 @@ ob_start();
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--ff-serif:'Shippori Mincho',serif;--ff-sans:'Zen Kaku Gothic New',sans-serif;--ff-mono:'DM Mono',monospace;--accent:#7c4dce;--accent-lt:#9b72ef;--gold:#c9a84c;--text:#1a1a2e;--muted:#6b6b8a;--border:#e5e3ee;--bg:#faf7ff;--bg2:#f8f7fc;}
@@ -37,8 +38,6 @@ ob_start();
   .card-illust img{width:100%;height:100%;object-fit:contain;display:block}
   .card-en{font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.18em;color:rgba(201,168,76,.75);text-transform:uppercase;margin-bottom:.25rem;}.card-ja{font-family:var(--ff-serif);font-size:.85rem;font-weight:700;color:#e8e0ff}
   .kw-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.2rem 0}.kw-tag{font-family:var(--ff-mono);font-size:.7rem;padding:.25rem .7rem;border-radius:20px;border:1px solid var(--border);color:var(--muted);background:#fff}.kw-tag.upright{border-color:rgba(124,77,206,.3);color:var(--accent);background:rgba(124,77,206,.05)}.kw-tag.reversed{border-color:rgba(180,100,80,.3);color:#a05040;background:rgba(180,100,80,.05)}
-  .cta-box{background:linear-gradient(135deg,#f5f0ff 0%,#fdf4fa 100%);border:1px solid #d4bfff;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.cta-box p{font-size:.9rem;color:var(--text);font-weight:500}.cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}.cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}.toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}.toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}.toc li{font-size:.88rem}.toc a{color:var(--accent);text-decoration:none}.toc a:hover{text-decoration:underline}
   .art-section{padding:2.5rem 0;border-bottom:1px solid var(--border)}.art-section:last-child{border-bottom:none}
   .art-section h2{font-family:var(--ff-serif);font-size:1.35rem;font-weight:700;color:var(--text);margin-bottom:1rem;padding-left:.9rem;border-left:3px solid var(--accent)}
@@ -48,9 +47,7 @@ ob_start();
   .reading-box p{font-size:.92rem;line-height:1.9;color:#333;margin-bottom:.7rem}.reading-box p:last-child{margin-bottom:0}
   .cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1rem}.cat-card{border-radius:10px;padding:1rem 1.1rem;border:1px solid var(--border);background:#fff}.cat-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.12em;color:var(--muted);margin-bottom:.4rem}.cat-text{font-size:.88rem;line-height:1.75;color:#333}
   .faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}.faq-item{border:1px solid var(--border);border-radius:10px;overflow:hidden}.faq-q{font-size:.9rem;font-weight:500;padding:.9rem 1.1rem;background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.5rem}.faq-q::after{content:'＋';font-family:var(--ff-mono);color:var(--accent);flex-shrink:0;transition:transform .2s}.faq-item.open .faq-q::after{transform:rotate(45deg)}.faq-a{font-size:.88rem;color:#444;line-height:1.85;padding:0 1.1rem;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}.faq-item.open .faq-a{max-height:400px;padding:.9rem 1.1rem}
-  .card-nav{display:flex;gap:.75rem;margin-top:1rem;flex-wrap:wrap}.card-nav-item{flex:1;min-width:140px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}.card-nav-item:hover{border-color:var(--accent-lt);transform:translateY(-2px)}.card-nav-dir{font-size:.65rem;color:var(--muted);font-family:var(--ff-mono);margin-bottom:.3rem}.card-nav-name{font-size:.9rem;font-weight:500;color:var(--accent)}
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}.related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}.related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}.related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}.related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
-  @media(max-width:600px){.art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}.card-visual{width:130px}.cat-grid{grid-template-columns:1fr}.cta-box{flex-direction:column;align-items:flex-start}}
+  @media(max-width:600px){.art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}.card-visual{width:130px}.cat-grid{grid-template-columns:1fr}}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"女帝は妊娠・結婚を意味しますか？","acceptedAnswer":{"@type":"Answer","text":"豊かさと創造の象徴として、そのような展開の予兆とされることがあります。ただし文字通りではなく、新しいものを生み出す喜びの象徴として読むことが基本です。"}},{"@type":"Question","name":"女帝の逆位置は何を意味する？","acceptedAnswer":{"@type":"Answer","text":"依存・過保護・創造力の停滞を示します。自分を大切にできていない、または誰かに依存しすぎているサインです。"}},{"@type":"Question","name":"女帝が仕事で出たら？","acceptedAnswer":{"@type":"Answer","text":"クリエイティブなプロジェクトや育成に関わる仕事で吉です。与えること・育てることが評価につながります。"}}]}</script>
@@ -74,7 +71,7 @@ ob_start();
       <div class="card-ja">女帝</div>
     </div>
   </div>
-  <div class="cta-box"><div><p>🔮 今すぐカードを引いてみる</p><small>。</small></div><a href="/tarot" class="cta-btn">タロット占いを始める →</a></div>
+  <div class="article-cta"><div class="article-cta-text"><p>🔮 今すぐカードを引いてみる</p><small>。</small></div><a href="/tarot" class="article-cta-btn">タロット占いを始める →</a></div>
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>小麦が実る野原に豊かに座る女帝は、生命そのものの象徴です。彼女の周りには木々が茂り、川が流れ、すべてが実っています。このカードは「与えることで豊かになる」という宇宙の法則を体現しています。愛情を注げば注ぐほど、あなたにも返ってくる。その循環の中心に女帝は立っています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>創造的なエネルギーが満ちている時期です。与えること・育てることで運が開きます。アイデアを形にする、誰かをサポートする、自然の流れに従う——今はその時です。生み出すことへの喜びを感じながら動いてください。</p></div></section>
@@ -82,8 +79,42 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">愛情豊かな関係が深まる時期です。結婚・妊娠の暗示もあります。自然体で愛情を表現することで、関係が豊かに育まれます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">相手への過度な依存、または支配的になりすぎていないかを確認してください。愛情が重さになっていないか、立ち止まって見直す時です。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">クリエイティブな仕事が実を結びます。チームを育てる立場に就く暗示も。感性を活かした仕事・表現・教育の分野で吉。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">創造性が枯渇しているサインです。休養と自己ケアが必要な時期。無理に生み出そうとせず、まずインプットを増やしましょう。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">豊かさが自然に流れ込む時期です。投資より受け取ることを意識して。感謝の気持ちで受け取ることが更なる豊かさを呼びます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">過度な出費・散財への警告です。感情的な買い物や、誰かを喜ばせるための浪費に注意してください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女帝は妊娠・結婚を意味しますか？</div><div class="faq-a">豊かさと創造の象徴として、そのような展開の予兆とされることがあります。ただし文字通りではなく、新しいものを生み出す喜びの象徴として読むことが基本です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女帝の逆位置は何を意味する？</div><div class="faq-a">依存・過保護・創造力の停滞を示します。自分を大切にできていない、または誰かに依存しすぎているサインです。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女帝が仕事で出たら？</div><div class="faq-a">クリエイティブなプロジェクトや育成に関わる仕事で吉です。与えること・育てることが評価につながります。</div></div></div></section>
-  <section class="art-section"><h2>他のカードを見る</h2><div class="card-nav"><a href="/articles/tarot/high-priestess/" class="card-nav-item"><div class="card-nav-dir">← 前のカード</div><div class="card-nav-name">女教皇</div></a><a href="/articles/tarot/emperor/" class="card-nav-item"><div class="card-nav-dir">次のカード →</div><div class="card-nav-name">皇帝</div></a></div></section>
-  <section class="art-section"><h2>関連コンテンツ</h2><div class="related-grid"><a href="/tarot" class="related-card"><div class="related-card-label">タロット占い</div><div class="related-card-title">実際にカードを引いてみる →</div></a><a href="/articles/tarot/" class="related-card"><div class="related-card-label">タロット完全ガイド</div><div class="related-card-title">大アルカナの基礎知識を学ぶ →</div></a><a href="/" class="related-card"><div class="related-card-label">三星統合鑑定</div><div class="related-card-title">タロット×星座×数秘で深読みする →</div></a><a href="/numerology" class="related-card"><div class="related-card-label">数秘術</div><div class="related-card-title">誕生日から運命数を読み解く →</div></a></div></section>
+  <section class="art-section">
+    <?php
+    \ = '🔮 女帝の意味を読んだら、実際に占ってみましょう';
+    \  = '今のあなたには女帝ではなく、別のカードが現れるかもしれません。';
+    \   = '/tarot';
+    \   = 'タロット占いを始める →';
+    require __DIR__.'/../../../inc/article-cta.php';
+    ?>
+  </section>
+
+  <section class="art-section">
+    <h2>他のカードを見る</h2>
+    <?php
+    \ = '女教皇';
+    \   = '/articles/tarot/high-priestess/';
+    \ = '← 前のカード';
+    \ = '皇帝';
+    \   = '/articles/tarot/emperor/';
+    \ = '次のカード →';
+    \ = '大アルカナ一覧';
+    \   = '/articles/tarot/';
+    require __DIR__.'/../../../inc/article-nav.php';
+    ?>
+  </section>
+  <section class="art-section">
+    <h2>関連コンテンツ</h2>
+    <?php
+    \ = [
+      ['label'=>'タロット占い',     'title'=>'実際にカードを引いてみる →',     'url'=>'/tarot'],
+      ['label'=>'タロット完全ガイド','title'=>'大アルカナの基礎知識を学ぶ →',   'url'=>'/articles/tarot/'],
+      ['label'=>'三星統合鑑定',     'title'=>'タロット×星座×数秘で深読みする →','url'=>'/'],
+      ['label'=>'数秘術',           'title'=>'誕生日から運命数を読み解く →',     'url'=>'/numerology'],
+    ];
+    require __DIR__.'/../../../inc/article-related.php';
+    ?>
+  </section>
 </div>
 <script>function toggleFaq(el){const item=el.parentElement;item.classList.toggle('open');}</script>
 <?php $currentSlug='tarot'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
