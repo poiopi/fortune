@@ -125,63 +125,13 @@ ob_start();
     <p class="art-lead">相性診断は恋愛・友情・仕事など、あらゆる人間関係の「合いやすさ」を占う手法です。誕生日・血液型・星座という身近な情報を組み合わせることで、二人の関係をより深く理解するヒントが得られます。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>💞 二人の相性を診断する</p>
-      <small>誕生日・血液型・星座を入力して二人の相性スコアを算出。</small>
-    </div>
-    <a href="/aisho" class="article-cta-btn">相性診断をする →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">相性診断とは</a></li>
-      <li><a href="#birthday">誕生日による相性</a></li>
-      <li><a href="#blood">血液型相性</a></li>
-      <li><a href="#zodiac">星座相性</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>相性診断とは</h2>
-    <p>相性診断とは、二人の持つ属性（生年月日・血液型・星座など）を比較・分析し、「この二人はどれくらい合うのか」という傾向を読み取る占いです。恋愛・結婚・友人・職場関係など、あらゆる人間関係の理解に活用されています。</p>
-    <p>相性診断の目的は「合わない相手を避ける」ことではなく、「互いの違いを理解してコミュニケーションの質を上げる」ことにあります。相性が難しいとされる組み合わせでも、お互いの傾向を知ることで摩擦を減らし、関係を深めることができます。</p>
-    <p>当サイトの相性診断では、誕生日から算出する数秘術的な指標・血液型の相性・星座の相性を統合したスコアで総合的に判定します。単一指標より多角的で、より参考になる結果が得られます。</p>
-  </section>
-
-  <section class="art-section" id="birthday">
-    <h2>誕生日による相性</h2>
-    <p>数秘術では、誕生日から算出した運命数（ライフパスナンバー）同士の相性を読み解きます。同じ数字同士は共鳴しやすい反面、摩擦も生まれやすいとされます。対極的な数字同士は補い合える関係になることが多いとされています。</p>
-    <h3>相性の良い運命数の組み合わせ例</h3>
-    <p>1と9（リーダーと完成者）、2と8（協調者と支配者）、3と6（表現者と養育者）などはバランスがとれた関係とされます。また、1・5・7は自由を重んじるタイプで同士の相性も良く、2・4・8は安定を重んじるタイプで相互理解しやすいとされています。</p>
-    <p>誕生日の日にちをそのまま使う「誕生日数」での相性診断も一般的です。同じ日や近い日に生まれた二人は価値観が似やすく、距離が縮まりやすいとされます。</p>
-  </section>
-
-  <section class="art-section" id="blood">
-    <h2>血液型相性</h2>
-    <p>日本独自の文化として発展した血液型性格・相性論。科学的根拠は確認されていませんが、コミュニケーションのツールとして広く親しまれています。</p>
-    <h3>各血液型の一般的な傾向</h3>
-    <p><strong>A型</strong>は几帳面・完璧主義・思いやりがある反面、細かいことが気になりやすい。<strong>B型</strong>はマイペース・個性的・好奇心旺盛で、自分のペースを大切にする。<strong>O型</strong>はおおらか・社交的・リーダー気質で、おおざっぱな面も。<strong>AB型</strong>は合理的・個性的・二面性があり、独特の視点を持つとされます。</p>
-    <p>相性では同じ血液型同士は理解しやすい反面、ぶつかると激しくなるという見方もあります。AとBは正反対で刺激的、OとABは安定した関係になりやすいなど、様々な説があります。</p>
-  </section>
-
-  <section class="art-section" id="zodiac">
-    <h2>星座相性</h2>
-    <p>西洋占星術では12星座を火・土・風・水の4元素に分類します。同じ元素同士は基本的な価値観が似ており相性良しとされ、補完関係にある元素同士（火と風、土と水）も相性が良いとされます。</p>
-    <h3>元素別相性の傾向</h3>
-    <p><strong>火の星座（牡羊・獅子・射手）</strong>は情熱的・行動力がある。同士では共に盛り上がり、風の星座とは互いを高め合う関係。<strong>土の星座（牡牛・乙女・山羊）</strong>は堅実・現実的。同士では安定感があり、水の星座とは支え合う関係。</p>
-    <p><strong>風の星座（双子・天秤・水瓶）</strong>は知的・社交的。同士では話が合い、火の星座と組むと活発な関係に。<strong>水の星座（蟹・蠍・魚）</strong>は感受性豊か・直感的。同士では深い絆が生まれやすく、土の星座とは安らぎを与え合う関係です。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">相性が悪いと付き合えませんか？</div>
-        <div class="faq-a">相性診断はあくまで傾向の参考であり、相性が悪いからといって絶対に付き合えないわけではありません。相性が難しいとされる組み合わせでも、お互いの理解と努力によって深い関係を築いているカップルはたくさんいます。</div>
-      </div>
+  <?php
+$ctaTitle = '💞 二人の相性を診断する';
+$ctaText  = '誕生日・血液型・星座を入力して二人の相性スコアを算出。';
+$ctaUrl   = '/aisho';
+$ctaBtn   = '相性診断をする →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">血液型相性は科学的に証明されていますか？</div>
         <div class="faq-a">現時点では、血液型と性格・相性の間に科学的な因果関係は証明されていません。ただし日本では長年にわたって文化的に親しまれており、会話のきっかけや自己理解のツールとして楽しまれています。</div>
@@ -195,29 +145,22 @@ ob_start();
         <div class="faq-a">星座では同じ元素同士、または補完し合う元素同士が相性良しとされます。血液型ではO型は誰とでも合わせやすいとされます。ただしこれらはあくまで傾向であり、個人差があります。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>相性を知ったら、それぞれの個性もさらに深く知ってみましょう。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item">
-        <div class="article-related-label">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/mbti/" class="article-related-item">
-        <div class="article-related-label">MBTI診断とは</div>
-        <div class="article-related-title">16タイプの性格と4つの指標を解説 →</div>
-      </a>
-      <a href="/articles/numerology/" class="article-related-item">
-        <div class="article-related-label">数秘術とは</div>
-        <div class="article-related-title">運命数で二人の相性を深掘り →</div>
-      </a>
-      <a href="/articles/tarot/" class="article-related-item">
-        <div class="article-related-label">タロット占いとは</div>
-        <div class="article-related-title">二人の関係をタロットで読む →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'MBTI診断とは', 'title'=>'16タイプの性格と4つの指標を解説 →', 'url'=>'/articles/mbti/'],
+      ['label'=>'数秘術とは', 'title'=>'運命数で二人の相性を深掘り →', 'url'=>'/articles/numerology/'],
+      ['label'=>'タロット占いとは', 'title'=>'二人の関係をタロットで読む →', 'url'=>'/articles/tarot/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>

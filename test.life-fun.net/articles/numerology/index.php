@@ -131,74 +131,13 @@ ob_start();
     <p class="art-lead">数秘術（ニューメロロジー）は、誕生日を数字に還元することで「運命数」を導き出し、その人の本質・才能・人生テーマを読み解く占術です。古代ピタゴラスの時代から続く数の神秘を、現代の視点でわかりやすく解説します。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>🔢 あなたの運命数を調べる</p>
-      <small>生年月日を入力するだけで運命数と詳細な解説を表示。</small>
-    </div>
-    <a href="/numerology" class="article-cta-btn">数秘術を診断する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">数秘術とは</a></li>
-      <li><a href="#history">数秘術の歴史</a></li>
-      <li><a href="#calc">運命数の計算方法</a></li>
-      <li><a href="#numbers">運命数1〜9＋11・22の意味一覧</a></li>
-      <li><a href="#birthday">誕生日数とは</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>数秘術とは</h2>
-    <p>数秘術（ニューメロロジー／Numerology）とは、誕生日や名前を特定のルールで数字に変換し、その数字が持つ固有のエネルギーや意味を読み解く占術です。タロットや星占いと並んで世界中で広く親しまれており、自己理解・才能発見・人生の方向性確認などに活用されています。</p>
-    <p>数秘術の中心となるのは「運命数（ライフパスナンバー）」です。生年月日の数字をすべて足し合わせ、1桁になるまで繰り返し加算することで算出します。この数字はその人が持つ根本的な性質・使命・人生テーマを表すとされています。</p>
-    <p>占星術が「いつ・どこに生まれたか」という時空間の情報を使うのに対し、数秘術は「数字そのものが持つ振動とエネルギー」を重視する点が特徴です。計算がシンプルで、紙とペンがあればすぐに算出できる手軽さも人気の理由のひとつです。</p>
-  </section>
-
-  <section class="art-section" id="history">
-    <h2>数秘術の歴史</h2>
-    <p>数秘術の起源は古代ギリシャの数学者・哲学者ピタゴラス（紀元前570年頃）に求められます。ピタゴラスは「万物の根源は数である」と説き、数字には物質的な量だけでなく霊的・宇宙的な意味があると考えました。このピタゴラス的数秘術は現代でも最もポピュラーなシステムです。</p>
-    <p>その他にも、ユダヤ神秘主義（カバラ）に基づくカバラ数秘術、古代チャルデア文明に由来するカルデア数秘術なども存在します。カルデア式は1〜8の数字のみを使い、9は神聖数として別扱いするなど、ピタゴラス式と異なるルールを持ちます。</p>
-    <p>20世紀に入ると、アメリカのマティス・ダリス（ジュノ・ジョーダン）らが現代向けに体系化し、名前から算出する各種数字も加えた総合的なニューメロロジーとして普及させました。現在は欧米を中心に多くのセラピスト・コーチが活用しています。</p>
-  </section>
-
-  <section class="art-section" id="calc">
-    <h2>運命数の計算方法</h2>
-    <p>運命数（ライフパスナンバー）は生年月日をすべて足して1桁にするだけで求められます。</p>
-    <h3>計算例：1990年7月23日生まれの場合</h3>
-    <p>1＋9＋9＋0＋7＋2＋3＝31　→　3＋1＝<strong>4</strong>　よって運命数は「4」</p>
-    <h3>マスターナンバーの注意点</h3>
-    <p>計算の途中や最終結果が <strong>11・22・33</strong> になった場合は、そこで計算を止めます。これらは「マスターナンバー」と呼ばれ、特別な意味を持つとされるため、さらに足して1桁にはしません。</p>
-    <p>例：1979年11月29日　→　1＋9＋7＋9＋1＋1＋2＋9＝39　→　3＋9＝12　→　1＋2＝3（この場合は3）。ただし合計が11や22になった段階で止めます。</p>
-  </section>
-
-  <section class="art-section" id="numbers">
-    <h2>運命数1〜9＋11・22の意味一覧</h2>
-    <p>各運命数が示す基本的な性質とキーワードをまとめました。</p>
-    <div class="num-grid">
-      <?php
-      $nums = [
-        ['1','リーダー','独立・自立・開拓・パイオニア精神'],
-        ['2','協調者','調和・感受性・パートナーシップ・繊細さ'],
-        ['3','表現者','創造性・コミュニケーション・楽観性・芸術'],
-        ['4','実務家','勤勉・安定・忍耐・組織力・信頼'],
-        ['5','冒険家','自由・変化・好奇心・多才・旅'],
-        ['6','養育者','責任・愛・奉仕・家庭・美的センス'],
-        ['7','探求者','内省・分析・神秘・知性・哲学'],
-        ['8','支配者','野心・物質的成功・権力・ビジネス'],
-        ['9','人道主義者','博愛・完結・精神性・国際的視野'],
-        ['11','直感者（M）','直感・霊性・インスピレーション・使命'],
-        ['22','建設者（M）','大きなビジョン・現実化・マスタービルダー'],
-      ];
-      foreach($nums as $n): ?>
-      <div class="num-card">
-        <div class="num-n"><?= $n[0] ?></div>
-        <div class="num-name"><?= $n[1] ?></div>
-        <div class="num-kw"><?= $n[2] ?></div>
-      </div>
+  <?php
+$ctaTitle = '🔢 あなたの運命数を調べる';
+$ctaText  = '生年月日を入力するだけで運命数と詳細な解説を表示。';
+$ctaUrl   = '/numerology';
+$ctaBtn   = '数秘術を診断する →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <?php endforeach; ?>
     </div>
   </section>
@@ -230,29 +169,22 @@ ob_start();
         <div class="faq-a">基本の運命数（ライフパスナンバー）は生年月日から算出するため、一生変わりません。ただし「個人年数」という概念では、その年の数字によって運気の周期が変わると考えられています。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>数字で自分を知ったら、他の占術でさらに深掘りしてみませんか。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item">
-        <div class="article-related-label">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/seimei/" class="article-related-item">
-        <div class="article-related-label">姓名判断とは</div>
-        <div class="article-related-title">名前の画数から運勢を読む →</div>
-      </a>
-      <a href="/articles/tarot/" class="article-related-item">
-        <div class="article-related-label">タロット占いとは</div>
-        <div class="article-related-title">直感でカードを選んでメッセージを受け取る →</div>
-      </a>
-      <a href="/articles/kyusei/" class="article-related-item">
-        <div class="article-related-label">九星気学とは</div>
-        <div class="article-related-title">今年の運気の流れを九星で知る →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'姓名判断とは', 'title'=>'名前の画数から運勢を読む →', 'url'=>'/articles/seimei/'],
+      ['label'=>'タロット占いとは', 'title'=>'直感でカードを選んでメッセージを受け取る →', 'url'=>'/articles/tarot/'],
+      ['label'=>'九星気学とは', 'title'=>'今年の運気の流れを九星で知る →', 'url'=>'/articles/kyusei/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>

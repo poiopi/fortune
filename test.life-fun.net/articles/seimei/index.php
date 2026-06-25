@@ -129,79 +129,13 @@ ob_start();
     <p class="art-lead">姓名判断は漢字の画数を使って名前の吉凶・運勢を読み解く日本の伝統占術です。天格・人格・地格・外格・総格の「五格」を組み合わせることで、その人の本質・社会運・家庭運などを多角的に鑑定します。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>✍️ あなたの名前を鑑定する</p>
-      <small>姓名を入力するだけで五格・画数・吉凶を自動鑑定。</small>
-    </div>
-    <a href="/seimei" class="article-cta-btn">姓名判断を鑑定する →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">姓名判断とは</a></li>
-      <li><a href="#history">歴史</a></li>
-      <li><a href="#gokaku">五格の意味</a></li>
-      <li><a href="#kichiku">吉数・凶数とは</a></li>
-      <li><a href="#count">画数の数え方</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>姓名判断とは</h2>
-    <p>姓名判断（せいめいはんだん）は、名前を構成する漢字の画数を特定のルールで組み合わせ、その数字が持つ意味から吉凶・運勢・性格を読み解く占術です。日本では明治時代から普及し、現代でも子どもの命名や改名の参考として広く活用されています。</p>
-    <p>姓名判断の核となるのは「五格（ごかく）」と呼ばれる5つの数字の組み合わせです。姓と名それぞれの画数を組み合わせることで、天格・人格・地格・外格・総格を算出し、その人の各運勢の吉凶を判断します。</p>
-    <p>同じ読み方の名前でも使う漢字が違えば画数が変わり、鑑定結果も変わります。たとえば「けい」であれば「恵」（10画）「慧」（15画）「圭」（6画）と異なる数字になり、それぞれ意味も違います。</p>
-  </section>
-
-  <section class="art-section" id="history">
-    <h2>歴史</h2>
-    <p>姓名判断の思想的ルーツは中国の陰陽五行説や易経にあります。漢字の画数に吉凶が宿るという考え方は古く、日本には遅くとも江戸時代には伝わっていたとされています。</p>
-    <p>現代の姓名判断の体系を整備したのは、明治〜大正期の熊崎健翁（くまざき・けんおう）とされています。彼は五格の考え方を整理・体系化し、「姓名学」として広めました。熊崎式は現代でも最もポピュラーなシステムです。</p>
-    <p>その後、五十音の字源に基づく画数の数え方（字源画数）や、吉数・凶数の定義に流派によって差異が生まれました。現在は熊崎式以外にも複数の流派が存在し、使用する画数や吉数の定義が異なるため、診断ツールによって結果が変わることがあります。</p>
-  </section>
-
-  <section class="art-section" id="gokaku">
-    <h2>五格（ごかく）の意味</h2>
-    <p>五格は姓と名の画数を組み合わせて算出する5つの数字です。それぞれが異なる運勢を表します。</p>
-    <table class="gokaku-table">
-      <tr><th>格</th><th>算出方法</th><th>示す運勢</th></tr>
-      <tr><td><strong>天格</strong></td><td>姓の総画数</td><td>先祖から受け継いだ運勢。家系・先天的な素質を示す。</td></tr>
-      <tr><td><strong>人格</strong></td><td>姓の最後の文字＋名の最初の文字の画数</td><td>性格・精神・意志・社会的な自己を示す最重要格。</td></tr>
-      <tr><td><strong>地格</strong></td><td>名の総画数</td><td>幼少期〜青年期の運勢。基礎運・内面的な性質を示す。</td></tr>
-      <tr><td><strong>外格</strong></td><td>総格−人格（姓の最初＋名の最後の文字の画数）</td><td>社会運・対人関係・外から見た印象を示す。</td></tr>
-      <tr><td><strong>総格</strong></td><td>姓と名の全画数の合計</td><td>人生全体の運勢。晩年運・総合的な生涯運を示す。</td></tr>
-    </table>
-  </section>
-
-  <section class="art-section" id="kichiku">
-    <h2>吉数・凶数とは</h2>
-    <p>姓名判断では1〜81の画数それぞれに吉・凶・半吉などの判断が割り振られています。代表的な吉数は1・3・5・6・7・8・11・13・15・16・17・18・21・23・24・25・29・31・32・33・35・37・38・39・41・45・47・48・52などとされています。</p>
-    <p>特に五格の中でも人格は「主運」として最も重要視されます。人格が吉数であれば、他の格に凶数が混じっていても補えると言われます。逆に人格が凶数でも他の格が整っていれば部分的に補うことができます。</p>
-    <p>ただし吉凶の定義は流派によって異なります。「大吉」とされる数字が別の流派では「注意が必要」とされる場合もあるため、複数のシステムで確認してみるのもよいでしょう。</p>
-  </section>
-
-  <section class="art-section" id="count">
-    <h2>画数の数え方</h2>
-    <p>姓名判断では「字源画数」という考え方を使います。漢字の成り立ちに基づいて画数を数えるため、現代の常用漢字の画数と異なる場合があります。代表的な注意点は以下の通りです。</p>
-    <h3>さんずい（氵）は4画</h3>
-    <p>水（みず）の旧形が4画のため、「氵」のつく字（沢・海・清など）はさんずいを4画として数えます。</p>
-    <h3>草かんむり（艹）は6画</h3>
-    <p>草（くさ）の旧形が6画のため、草かんむりのつく字（花・英・葵など）は6画として計算します。</p>
-    <h3>しんにょう（辶）は7画</h3>
-    <p>行（ゆく）の意味を持つ部首で、辶は7画として数えます（近・道・遠など）。</p>
-    <p>旧字体か新字体かによっても画数が変わります。鑑定ツールごとに異なるルールを採用している場合があるため、複数のツールで結果が違うことは珍しくありません。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">姓名判断は当たりますか？</div>
-        <div class="faq-a">姓名判断は日本で長く親しまれてきた占術で、名前の画数に宿るエネルギーを読み解くものです。科学的な証明はありませんが、「自分の名前のもつ意味を知る」という観点から自己理解に活用できます。名付けの参考にしている方も多くいます。</div>
-      </div>
+  <?php
+$ctaTitle = '✍️ あなたの名前を鑑定する';
+$ctaText  = '姓名を入力するだけで五格・画数・吉凶を自動鑑定。';
+$ctaUrl   = '/seimei';
+$ctaBtn   = '姓名判断を鑑定する →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">カタカナ・ひらがなの画数はどう数えますか？</div>
         <div class="faq-a">カタカナ・ひらがなで名前を書く場合は、アの字源である「阿」（8画）のように元の漢字の画数を使う流派と、文字そのものの画数を数える流派があります。当サイトでは漢字の画数を基準に鑑定しています。</div>
@@ -215,29 +149,22 @@ ob_start();
         <div class="faq-a">姓名判断の観点では「使う名前が変わればエネルギーも変わる」とされています。芸名・ペンネーム・ニックネームも同様です。ただし運勢が変わるかどうかは信念や行動次第の面もあり、名前変更はあくまでひとつのきっかけとして考えるのがよいでしょう。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>名前の数字を知ったら、次は誕生日の数字も調べてみましょう。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item">
-        <div class="article-related-label">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/numerology/" class="article-related-item">
-        <div class="article-related-label">数秘術とは</div>
-        <div class="article-related-title">誕生日から運命数を計算して読み解く →</div>
-      </a>
-      <a href="/articles/tarot/" class="article-related-item">
-        <div class="article-related-label">タロット占いとは</div>
-        <div class="article-related-title">直感でカードを選んでメッセージを受け取る →</div>
-      </a>
-      <a href="/articles/shichu/" class="article-related-item">
-        <div class="article-related-label">四柱推命とは</div>
-        <div class="article-related-title">命式・大運・年運の流れを知る →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'数秘術とは', 'title'=>'誕生日から運命数を計算して読み解く →', 'url'=>'/articles/numerology/'],
+      ['label'=>'タロット占いとは', 'title'=>'直感でカードを選んでメッセージを受け取る →', 'url'=>'/articles/tarot/'],
+      ['label'=>'四柱推命とは', 'title'=>'命式・大運・年運の流れを知る →', 'url'=>'/articles/shichu/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>

@@ -129,79 +129,13 @@ ob_start();
     <p class="art-lead">開運カレンダーは、日々の吉方位・ラッキーカラー・吉日・凶日などの情報をまとめ、より良い日常を過ごすためのガイドです。一粒万倍日・天赦日・六曜など、開運に関わるキーワードの意味と活用法を解説します。</p>
   </div>
 
-  <div class="article-cta"><div class="article-cta-text">
-      <p>📅 今日の開運情報を確認する</p>
-      <small>吉方位・ラッキーカラー・運気の波を毎日更新でお届け。</small>
-    </div>
-    <a href="/calendar" class="article-cta-btn">開運カレンダーを見る →</a>
-  </div>
-
-  <nav class="toc">
-    <p class="toc-title">目次</p>
-    <ol>
-      <li><a href="#about">開運カレンダーとは</a></li>
-      <li><a href="#kichihoui">吉方位とは</a></li>
-      <li><a href="#lucky-color">ラッキーカラーとは</a></li>
-      <li><a href="#kichijitsu">一粒万倍日・天赦日とは</a></li>
-      <li><a href="#eto">干支と運気</a></li>
-      <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#related">関連コンテンツ</a></li>
-    </ol>
-  </nav>
-
-  <section class="art-section" id="about">
-    <h2>開運カレンダーとは</h2>
-    <p>開運カレンダーとは、日本の伝統的な暦（こよみ）や東洋占術・風水などに基づいて、その日その日の吉凶・吉方位・ラッキーカラー・特別な吉日などの情報を一覧化したカレンダーです。毎朝チェックすることで、一日の行動計画や運気アップのヒントが得られます。</p>
-    <p>日本では古くから「大安に結婚式を挙げる」「仏滅に引越しを避ける」など、暦の吉凶を生活に取り入れる文化があります。現代の開運カレンダーはこうした伝統的な要素に加え、九星気学・数秘術・陰陽五行など多様な占術の知見を統合した情報を提供します。</p>
-    <p>当サイトの開運カレンダーでは、九星気学に基づく方位・陰陽五行のエネルギーに対応したラッキーカラー・一粒万倍日などの特別な吉日を毎日お届けしています。</p>
-  </section>
-
-  <section class="art-section" id="kichihoui">
-    <h2>吉方位とは</h2>
-    <p>吉方位（きちほうい）とは、その人にとってその時期に運気が高まる方角のことです。九星気学では9つの星（一白水星〜九紫火星）がそれぞれ月・年単位で特定の方位を巡り、自分の本命星（生まれ年の星）と各方位の組み合わせによって吉方位・凶方位が変化します。</p>
-    <p>吉方位の活用法として代表的なのは「吉方位旅行」です。吉方位に向かって旅行することで、その方位のエネルギーを吸収し運気が向上するとされます。日常的には吉方位の方角にある神社へお参りする・仕事の商談先が吉方位にある場合に積極的に動くなどの取り入れ方もあります。</p>
-    <p>当サイトの開運カレンダーでは毎日の吉方位を表示していますが、本格的な吉方位は九星気学の本命星と各月・年の気を組み合わせて個人別に算出します。より詳しく知りたい方は九星気学診断もあわせてご活用ください。</p>
-  </section>
-
-  <section class="art-section" id="lucky-color">
-    <h2>ラッキーカラーとは</h2>
-    <p>ラッキーカラーは、その日その人の運気を後押しするとされる色のことです。陰陽五行説では「木・火・土・金・水」の5つの要素（五行）それぞれに対応する色があり、運気の流れによって取り入れるべき色が変わります。</p>
-    <h3>五行と対応する色</h3>
-    <p><strong>木（もく）</strong>→ 緑・青緑（成長・発展のエネルギー）<br>
-    <strong>火（か）</strong>→ 赤・オレンジ・紫（情熱・活力のエネルギー）<br>
-    <strong>土（ど）</strong>→ 黄・茶・ベージュ（安定・信頼のエネルギー）<br>
-    <strong>金（こん）</strong>→ 白・ゴールド・シルバー（清潔・収穫のエネルギー）<br>
-    <strong>水（すい）</strong>→ 黒・紺・ネイビー（知恵・流れのエネルギー）</p>
-    <p>日常への取り入れ方は服・小物・アクセサリーがシンプルで始めやすいです。財布の中のカードをラッキーカラーにする・デスクの小物を変えるなど、気軽に実践できます。</p>
-  </section>
-
-  <section class="art-section" id="kichijitsu">
-    <h2>一粒万倍日・天赦日とは</h2>
-    <p>開運カレンダーでよく目にする「一粒万倍日」「天赦日」などの特別な吉日について解説します。</p>
-    <table class="kichijitsu-table">
-      <tr><th>吉日名</th><th>意味・特徴</th><th>おすすめの行動</th></tr>
-      <tr><td><strong>一粒万倍日</strong></td><td>一粒の籾（もみ）が万倍に実るという日。何かを始めると大きな成果につながるとされる。月に4〜6日ある。</td><td>新規事業の開始・貯金スタート・財布の購入・種まき</td></tr>
-      <tr><td><strong>天赦日</strong></td><td>天が万物の罪を赦す最高の吉日。年に5〜6日しかない最も強力な吉日とされる。</td><td>何か新しいことを始める・重要な決断・結婚・開業</td></tr>
-      <tr><td><strong>大安（六曜）</strong></td><td>六曜の中で最も縁起が良い日。すべての事柄に吉とされる。</td><td>結婚式・入籍・引越し・開業・大切な取引</td></tr>
-      <tr><td><strong>寅の日</strong></td><td>寅（虎）が「千里行って千里戻る」という言い伝えから、金運の日とされる。</td><td>財布の購入・金運アップのお参り・旅行開始</td></tr>
-      <tr><td><strong>己巳の日</strong></td><td>弁財天の縁日。金運・財運・芸術運アップに良いとされる。</td><td>弁財天へのお参り・財布の新調・芸術活動の開始</td></tr>
-    </table>
-  </section>
-
-  <section class="art-section" id="eto">
-    <h2>干支と運気</h2>
-    <p>干支（えと）は十干（甲・乙・丙・丁・戊・己・庚・辛・壬・癸）と十二支（子・丑・寅・卯・辰・巳・午・未・申・酉・戌・亥）の組み合わせで、60年で一巡する時間の周期です。年・月・日にそれぞれ干支が割り当てられ、その組み合わせが吉日・凶日の判断に使われます。</p>
-    <p>開運カレンダーでは毎日の干支をもとに、一粒万倍日・天赦日・三隣亡（凶日）などを計算しています。自分の生まれ年の十二支（本命星）と各日の干支の相性を見ることで、より個人に合った開運情報が得られます。</p>
-    <p>年単位では、十二支の年回りが「酉年は金運の年」「辰年は変化の年」などと語られることもあります。自分の干支（生まれ年の十二支）が年の干支と一致する「本厄」「年男・年女」の年は、特に慎重に過ごしたり厄除けを行ったりする習慣があります。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">開運カレンダーは毎日チェックした方がいいですか？</div>
-        <div class="faq-a">毎日チェックする習慣をつけると、その日の行動計画を立てるヒントになります。特に大きな決断・新しいことを始める日・重要な約束の日などは事前にカレンダーで吉日・凶日を確認するのがおすすめです。ただし結果に縛られすぎず、あくまで参考にするスタンスが大切です。</div>
-      </div>
+  <?php
+$ctaTitle = '📅 今日の開運情報を確認する';
+$ctaText  = '吉方位・ラッキーカラー・運気の波を毎日更新でお届け。';
+$ctaUrl   = '/calendar';
+$ctaBtn   = '開運カレンダーを見る →';
+require __DIR__.'/../../inc/article-cta.php';
+?>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">吉方位に合わせた行動とはどういうことですか？</div>
         <div class="faq-a">吉方位に向かって旅行・引越し・大切な訪問などをすることで運気が高まるとされます。日常的には、吉方位にある場所で食事する・散歩する・仕事の打ち合わせをするといった形で取り入れることができます。</div>
@@ -215,29 +149,22 @@ ob_start();
         <div class="faq-a">当日のラッキーカラーを服・小物・アクセサリー・インテリアに取り入れることで、そのカラーのエネルギーを日常に取り込めるとされます。財布の中に入れるカードを変えたり、デスクに置く小物をラッキーカラーにするといった取り入れ方も人気です。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>日々の運気をさらに多角的に調べてみましょう。</p>
-    <div class="article-related-grid">
-      <a href="/" class="article-related-item">
-        <div class="article-related-label">三星統合鑑定</div>
-        <div class="article-related-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/kyusei/" class="article-related-item">
-        <div class="article-related-label">九星気学とは</div>
-        <div class="article-related-title">今年・来年の運気の流れを知る →</div>
-      </a>
-      <a href="/articles/numerology/" class="article-related-item">
-        <div class="article-related-label">数秘術とは</div>
-        <div class="article-related-title">誕生日から運命数を計算して読み解く →</div>
-      </a>
-      <a href="/articles/tarot/" class="article-related-item">
-        <div class="article-related-label">タロット占いとは</div>
-        <div class="article-related-title">今この瞬間のメッセージをカードで受け取る →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'九星気学とは', 'title'=>'今年・来年の運気の流れを知る →', 'url'=>'/articles/kyusei/'],
+      ['label'=>'数秘術とは', 'title'=>'誕生日から運命数を計算して読み解く →', 'url'=>'/articles/numerology/'],
+      ['label'=>'タロット占いとは', 'title'=>'今この瞬間のメッセージをカードで受け取る →', 'url'=>'/articles/tarot/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>
