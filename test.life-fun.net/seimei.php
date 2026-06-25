@@ -2,6 +2,13 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P1EKB3WWX8');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="姓名判断｜あなたの名前に宿る運命を五格で鑑定。天格・人格・地格・外格・総格から運勢・性格・対人運を読み解きます。">

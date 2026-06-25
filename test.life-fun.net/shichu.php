@@ -1,7 +1,14 @@
-<?php declare(strict_types=1); ?>
+﻿<?php declare(strict_types=1); ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P1EKB3WWX8');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生年月日と生まれた時間から四柱推命の命式を無料で算出。年柱・月柱・日柱・時柱・十神・大運をすべて表示します。">
