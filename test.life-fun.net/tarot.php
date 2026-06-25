@@ -198,11 +198,27 @@
   .result-section.active{display:block}
   .result-header{text-align:center;padding:1.5rem 0 1.5rem;border-bottom:1px solid var(--border);margin-bottom:1.8rem}
   .chosen-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-bottom:.8rem}
-  .chosen-card{display:inline-flex;flex-direction:column;align-items:center;gap:.3rem;background:linear-gradient(135deg,rgba(201,168,76,.1),rgba(155,114,239,.08));border:1px solid rgba(201,168,76,.3);border-radius:12px;padding:1.2rem 2.5rem;margin:.6rem 0}
-  .chosen-sym{font-size:2.8rem;line-height:1}
-  .chosen-name{font-family:var(--ff-serif);font-size:1.4rem;font-weight:700;color:var(--gold-lt)}
-  .chosen-en{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);letter-spacing:.1em}
-  .chosen-dir{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.08em;padding:.2rem .8rem;border-radius:4px;margin-top:.2rem}
+  .chosen-card-wrap{display:inline-flex;flex-direction:column;align-items:center;gap:.5rem;margin:.6rem 0}
+  .chosen-card{
+    width:110px;
+    background:linear-gradient(170deg,#1e0e42,#0d051f);
+    border:2px solid var(--gold);
+    border-radius:10px;
+    padding:.6rem .5rem .7rem;
+    display:flex;flex-direction:column;align-items:center;
+    gap:0;
+    position:relative;
+    box-shadow:0 0 32px rgba(201,168,76,.45),0 0 64px rgba(155,114,239,.2);
+  }
+  .chosen-card::before,.chosen-card::after{content:'';position:absolute;width:9px;height:9px;border:1.5px solid rgba(201,168,76,.7)}
+  .chosen-card::before{top:5px;left:5px;border-right:none;border-bottom:none}
+  .chosen-card::after{bottom:5px;right:5px;border-left:none;border-top:none}
+  .chosen-num{font-family:var(--ff-mono);font-size:.55rem;color:rgba(201,168,76,.8);letter-spacing:.12em;margin-bottom:.4rem}
+  .chosen-img{width:76px;height:76px;display:flex;align-items:center;justify-content:center;margin-bottom:.5rem}
+  .chosen-img img{max-width:100%;max-height:100%;object-fit:contain}
+  .chosen-en{font-family:var(--ff-mono);font-size:.5rem;color:rgba(201,168,76,.65);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.25rem}
+  .chosen-name{font-family:var(--ff-serif);font-size:.9rem;font-weight:700;color:var(--gold-lt)}
+  .chosen-dir{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.08em;padding:.2rem .8rem;border-radius:4px;margin-top:.1rem}
   .result-block{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:1.6rem;margin-bottom:1.2rem;position:relative;overflow:hidden}
   .result-block::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet))}
   .block-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.8rem}
@@ -629,10 +645,13 @@ body{top:0!important}
     sec.innerHTML = `
       <div class="result-header fade-in">
         <div class="chosen-label">あなたが選んだカード</div>
-        <div class="chosen-card">
-          <div class="chosen-sym">${card.sym}</div>
-          <div class="chosen-name">${card.num}. ${card.name}</div>
-          <div class="chosen-en">${card.en}</div>
+        <div class="chosen-card-wrap">
+          <div class="chosen-card">
+            <div class="chosen-num">${card.num}</div>
+            <div class="chosen-img"><img src="/cards/${card.img}.png" alt="${card.name}"></div>
+            <div class="chosen-en">${card.en}</div>
+            <div class="chosen-name">${card.name}</div>
+          </div>
           <span class="chosen-dir ${dirClass}">${dirLabel}</span>
         </div>
       </div>
