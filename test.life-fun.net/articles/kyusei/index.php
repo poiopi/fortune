@@ -315,7 +315,7 @@ ob_start();
     <h2>関連コンテンツ</h2>
     <p>九星気学と組み合わせると、より多角的に運勢を読み解けます。</p>
     <div class="related-grid">
-      <a href="/shichu" class="related-card" style="border-color:#d4bfff;background:linear-gradient(135deg,#f5f0ff,#fdf4fa)">
+      <a href="/" class="related-card" style="border-color:#d4bfff;background:linear-gradient(135deg,#f5f0ff,#fdf4fa)">
         <div class="related-card-label" style="color:var(--accent)">三星統合鑑定</div>
         <div class="related-card-title">四柱推命・タロット・数秘術をまとめて鑑定 →</div>
       </a>
