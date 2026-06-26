@@ -221,7 +221,7 @@ footer a:hover{color:var(--gold)}
 </div>
 
 <!-- 操作説明オーバーレイ -->
-<div class="ov" id="instructOv" style="display:flex">
+<div class="ov on" id="instructOv">
   <div class="ob" style="text-align:center">
     <div class="ot">⚔️ 操作ガイド</div>
     <div style="font-family:var(--ff-rpg);font-size:.8rem;color:var(--text);line-height:2.4;text-align:left;margin:1rem 0">
@@ -231,7 +231,7 @@ footer a:hover{color:var(--gold)}
       <div>📱 <strong style="color:var(--gold)">スマホ</strong>　画面下のボタンで操作</div>
     </div>
     <div style="font-family:var(--ff-rpg);font-size:.72rem;color:var(--muted);margin-bottom:1.2rem">🎯 村人5人と話したら、南の教会へ！</div>
-    <button class="ocls" onclick="document.getElementById('instructOv').style.display='none'">✦ 冒険を始める ✦</button>
+    <button type="button" class="ocls" onclick="document.getElementById('instructOv').classList.remove('on')">✦ 冒険を始める ✦</button>
   </div>
 </div>
 
@@ -794,6 +794,7 @@ document.addEventListener('keydown',function(e){
 
 
 document.addEventListener('keydown',e=>{
+  if(document.getElementById('instructOv').classList.contains('on')) return;
   if(phase==='dialog'){
     const n=parseInt(e.key);
     if(n>=1&&n<=9){
@@ -1281,7 +1282,7 @@ function stopBgm(){
 }
 
 
-var _ovIds=['instructOv','dlgOv','cbtOv','frmOv','resOv','ipop'];
+var _ovIds=['dlgOv','cbtOv','frmOv','resOv','ipop'];
 function toggleFS(){
   var el=document.querySelector('.game-outer');
   if(!document.fullscreenElement&&!document.webkitFullscreenElement){
