@@ -36,6 +36,10 @@ let battleTalkTimeoutId = null;
 let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
 // ルール4：HTML上の各ボタンに対して確実なイベント登録
+document.getElementById('title-start-btn').addEventListener('click', goToOpening);
+document.getElementById('op-skip-btn').addEventListener('click', skipOpening);
+document.getElementById('op-next-btn').addEventListener('click', skipOpening);
+document.getElementById('restart-btn').addEventListener('click', resetGame);
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
 
 // ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
