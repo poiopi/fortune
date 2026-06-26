@@ -622,4 +622,14 @@ export class GameEngine {
             this.updateAllyUI();
         }
     }
+
+    cancelLoop() {
+        cancelAnimationFrame(this.animationId);
+    }
+
+    endGame(isWin) {
+        this.isGameOver = true;
+        cancelAnimationFrame(this.animationId);
+        this.onStageEnd(isWin);
+    }
 }
