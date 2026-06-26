@@ -56,7 +56,7 @@ button:active { background-color: #e09ba9; }
 .novel-box-common {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px; padding: 15px;
-    height: 140px; position: absolute;
+    height: 180px; position: absolute;
     box-sizing: border-box; cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     z-index: 20;
@@ -112,15 +112,15 @@ canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
 #hp-gauge-bar {
     width: 100%;
     height: 100%;
-    background-color: #ff6b8b; /* かわいいレジスタンスピンク */
+    background-color: #ff6b8b;
     transition: width 0.2s ease-out;
 }
 
-/* ★重要：上下左右移動に対応するため、ボムボタンを画面右上に配置変更しました */
+/* ★ボムボタンを画面右下に再配置。z-indexを30に設定して自機より前面に確保 */
 #bomb-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -133,7 +133,7 @@ canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
     justify-content: center;
     align-items: center;
     font-size: 13px;
-    z-index: 7;
+    z-index: 30;
     cursor: pointer;
 }
 #screen-flash {
