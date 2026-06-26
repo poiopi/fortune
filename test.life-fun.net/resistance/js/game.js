@@ -19,7 +19,7 @@ export class GameEngine {
         this.boss = null;
 
         this.isGameOver = false;
-        this.isCh2EventStarted = false; // ★新規：異変会話イベント開始フラグ（重複検知防止）
+        this.isCh2EventStarted = false; // 異変会話イベント開始フラグ（重複検知防止）
         this.isCh2EventTriggered = false; // ボス出現・戦闘中フラグ
         this.isCh2DefeatedSceneActive = false;
         this.ch2StartTime = 0;
@@ -42,8 +42,7 @@ export class GameEngine {
 
     setupControls() {
         const self = this;
-        // 画面全体（#screen-shooting）でスライド入力を監視することで、
-        // ボムボタンの上をドラッグしても自機の移動が遮断されず、スムーズに移動し続けられます
+        // 画面全体（#screen-shooting）でスライド入力を監視します。
         const shootScreen = document.getElementById('screen-shooting');
 
         // マウス移動（PC） - 上下左右（360度）の追従移動
@@ -87,8 +86,8 @@ export class GameEngine {
         this.player.lastHitTime = 0; // 無敵時間の初期化
 
         this.isGameOver = false;
-        this.isCh2EventStarted = false; // 初期化
-        this.isCh2EventTriggered = false; // 初期化
+        this.isCh2EventStarted = false; 
+        this.isCh2EventTriggered = false; 
         this.isCh2DefeatedSceneActive = false;
         this.bullets = [];
         this.enemies = [];
@@ -183,7 +182,7 @@ export class GameEngine {
         this.ctx.fillStyle = '#e3fafc';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-        // 自機の描画（無敵時間中は100msごとにチカチカ点滅させて無敵感を表現）
+        // 自機の描画（無敵時間中は100msごとに点滅）
         let now = Date.now();
         let shouldDrawPlayer = (now - this.player.lastHitTime >= 1000) || (Math.floor(now / 100) % 2 === 0);
 
@@ -441,9 +440,10 @@ export class GameEngine {
                 e.y < this.player.y + this.player.height && e.y + e.height > this.player.y) {
                 
                 hitPlayerByBody = true;
-                e.toRemove = true; // 衝突したゾンビは消滅
+                e.toRemove = true; // 衝突したゾンビ（またはマト）は消滅
 
-                if (now - this.player.lastHitTime >= 1000) {
+                // ★修行ステージのマト（isTarget）であれば衝突してもダメージを受けない安全対策を適用
+                if (!e.isTarget && (now - this.player.lastHitTime >= 1000)) {
                     this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
                     
                     if (this.gameState.allies.length > 0) {
@@ -623,6 +623,6 @@ export class GameEngine {
     endGame(isWin) {
         this.isGameOver = true;
         cancelAnimationFrame(this.animationId);
-        this.onStageEnd(isWin); // コールバックを呼んでクリア・ゲームオーバー画面へ
+        this.onStageEnd(isWin);
     }
 }
