@@ -171,6 +171,9 @@ footer a:hover{color:var(--gold)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .rf-retry-btn{display:block;width:100%;padding:.9rem;background:#7c4dce;color:#fff;border:none;border-radius:10px;font-family:var(--ff-sans,sans-serif);font-size:.9rem;font-weight:500;cursor:pointer;text-align:center;text-decoration:none;margin-top:1.5rem;transition:background .2s;letter-spacing:.04em}
 .rf-retry-btn:hover{background:#6a3fc2}
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
+.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc p:last-child{margin-bottom:0}
 </style>
 </head>
 <body>
@@ -184,6 +187,11 @@ footer a:hover{color:var(--gold)}
     <h1>大喜利で見つける<br><em>最強の芸名</em></h1>
     <p class="hero-sub">あなたの芸風を大喜利で判定。<br>生年月日の画数から<em style="color:var(--gold)">大吉</em>の芸名を3パターン提案します。</p>
   </section>
+
+  <div class="tool-desc">
+    <p>芸名・源氏名・ビジネスネーム判断は、活動で使う名前の画数を基に、仕事運・人気運・人脈運などを姓名判断の観点から読み解く診断です。</p>
+    <p>この簡易鑑定ツールでは、候補のお名前を入力するだけで吉凶を自動算出します。新しく活動を始める際や、より魅力的なビジネスネームを選ぶためのサポートとしてお役立てください。</p>
+  </div>
 
   <div id="formSection">
     <div class="form-card">
