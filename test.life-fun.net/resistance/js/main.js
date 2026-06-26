@@ -40,7 +40,7 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     // 会話ウインドウが表示されているときだけ動作
     if (talkBox && talkBox.style.display === 'block') {
         advanceBattleTalk();
-        // イベントの伝播を防ぎ、意図しない自機のワープ移動や自機ショットの中断を防ぎます
+        // イベントの伝播を防ぎ、自機が右下に勝手に動いたりショットが中断するのを防止
         e.stopPropagation();
     }
 });
@@ -145,10 +145,10 @@ function nextNovel() {
             // 拉致イベント終了後は、チャプター3の特訓イントロへ
             startChapter3Intro();
         } else if (gameState.currentScene === "ch3_clear") {
-            // 特訓会話終了後は、チャプター4の導入（トビー裏切り）へ進みます
+            // 特訓会話終了後は、チャプター4の導入（トビー案内＆応援）へ進みます
             startChapter4Intro();
         } else if (gameState.currentScene === "ch4_confession") {
-            // ★新規追加：トビーの裏切り告白ノベル終了後、戦闘へ移行し「お供巨大化エフェクト」および「大ボス戦」を起動！
+            // ★裏切り告白終了後：大ボス起動用のゲームループを開始
             changeScreen('screen-shooting');
             adjustViewportHeight();
             if (game) {
@@ -274,6 +274,7 @@ function advanceBattleTalk() {
                 game.loop();
             }
         } else {
+            // 弾切れ強制敗北シーンのダイアログ送り
             battleTalkStep++;
             if (battleTalkStep < battleTalkData.length) {
                 showBattleTalk();
@@ -283,23 +284,21 @@ function advanceBattleTalk() {
             }
         }
     } else if (gameState.currentChapter === 4) {
-        // ★チャプター4中ボス警告の手動送り対応
-        if (!game.isCh4MidBossEventTriggered) {
-            ch4MidBossStep++;
-            if (ch4MidBossStep < ch4MidBossTalks.length) {
-                showCh4MidBossTalk();
-            } else {
-                document.getElementById('battle-talk-box').style.display = 'none';
-                game.isCh4MidBossEventTriggered = true;
-                
-                game.boss = {
-                    x: game.canvas.width / 2 - 40, y: 50, width: 80, height: 80,
-                    color: '#a5d8ff', direction: 1, lastShotTime: 0, hp: 20
-                };
-                document.getElementById('boss-hp-area').style.display = "block";
-                document.getElementById('boss-hp-val').innerText = "20";
-                game.loop();
-            }
+        // ★チャプター4：中ボス出現前ダイアログ送り
+        ch4MidBossStep++;
+        if (ch4MidBossStep < ch4MidBossTalks.length) {
+            showCh4MidBossTalk();
+        } else {
+            document.getElementById('battle-talk-box').style.display = 'none';
+            game.isCh4MidBossEventTriggered = true; // 中ボス戦闘フラグON
+            
+            game.boss = {
+                x: game.canvas.width / 2 - 40, y: 50, width: 80, height: 80,
+                color: '#a5d8ff', direction: 1, lastShotTime: 0, hp: 20
+            };
+            document.getElementById('boss-hp-area').style.display = "block";
+            document.getElementById('boss-hp-val').innerText = "20";
+            game.loop();
         }
     }
 }
@@ -380,7 +379,7 @@ function endCh3Training() {
         gameState.currentNovelData = [
             { name: "トビー", text: `素晴らしいです、リーダー！ マトを ${game.ch3TargetsHit} 個も壊せましたね！` },
             { name: "リーダー", text: "うん！ 力が湧いてきた。あの子を助けるための伝説の力を感じる……！" },
-            { name: "システム", text: "【伝説の3方向ショット】が解放されました！次回ステージから永続的に使用可能になります。" }
+            { name: "システム", text: "【伝説 of 3方向ショット】が解放されました！次回ステージから永続的に使用可能になります。" }
         ];
     } else {
         gameState.currentScene = "ch3_clear";
@@ -397,23 +396,23 @@ function endCh3Training() {
     startNovelAutoplay();
 }
 
-// チャプター4導入ノベル（トビー裏切り）開始
+// ★新規追加：チャプター4導入ノベル（トビーの案内＆応援）開始
 function startChapter4Intro() {
     gameState.currentChapter = 4;
     gameState.currentScene = "ch4_intro";
     gameState.novelIndex = 0;
-    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState);
+    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーとの会話（告白ではない最初の会話）を正しくロード
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
-    startNovelAutoplay(); // 導入も自動進行
+    startNovelAutoplay(); // 導入会話も自動進行（3.5秒）を適用
 }
 
-// ★新規追加：中ボス撃破、トビー裏切り白状ノベルの呼び出し処理
+// ★新規追加：中ボス撃破時、トビーの裏切り告白ノベルへの遷移
 function triggerCh4Confession() {
-    gameState.currentScene = "ch4_confession"; // 会話フラグ
+    gameState.currentScene = "ch4_confession"; // 会話フラグを変更
     gameState.novelIndex = 0;
-    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーの告白ノベル
+    gameState.currentNovelData = chapter4.getNovelDataConfession(gameState); // 裏切り告白ノベルをロード
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
@@ -457,7 +456,7 @@ function onStageFinished(isWin, specialReason) {
         endCh3Training();
         return;
     }
-    // ★新規追加：中ボス撃破時の告白ストーリーへの遷移処理
+    // ★新規追加：中ボス撃破、告白ノベルへ遷移する処理
     if (specialReason === "ch4_midboss_defeated") {
         triggerCh4Confession();
         return;
@@ -532,3 +531,4 @@ window.nextNovel = nextNovel;
 window.triggerBomb = triggerBomb;
 window.resetGame = resetGame;
 window.advanceBattleTalk = advanceBattleTalk;
+```
