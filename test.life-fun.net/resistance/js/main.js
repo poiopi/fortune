@@ -1,7 +1,7 @@
 import { chapter1 } from './chapters/chapter1.js';
 import { chapter2 } from './chapters/chapter2.js'; 
 import { chapter3 } from './chapters/chapter3.js'; 
-import { chapter4 } from './chapters/chapter4.js'; // チャプター4をインポート
+import { chapter4 } from './chapters/chapter4.js'; 
 import { GameEngine } from './game.js';
 
 // ゲーム内グローバル状態
@@ -29,8 +29,7 @@ let battleTalkTimeoutId = null;
 let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
 // ==========================================
-// ★ルール4準拠：HTML上のすべてのボタンのイベント登録を完了
-// これにより「ゲームスタート」や「スキップ」が完全に動作します
+// ★ルール4準拠：HTML上のすべてのボタンのイベント登録を完全一元化
 // ==========================================
 document.getElementById('title-start-btn').addEventListener('click', goToOpening);
 document.getElementById('op-skip-btn').addEventListener('click', skipOpening);
@@ -47,7 +46,7 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     // 会話ウインドウが表示されているときだけ動作
     if (talkBox && talkBox.style.display === 'block') {
         advanceBattleTalk();
-        // イベントの伝播を防ぎ、自機が右下に勝手に動いたりショットが中断するのを防止
+        // イベントの伝播を防ぎ、意図しない自機のワープ移動や自機ショットの中断を防ぎます
         e.stopPropagation();
     }
 });
@@ -238,7 +237,7 @@ function triggerCh4MidBossEvent() {
 function showCh4MidBossTalk() {
     let current = ch4MidBossTalks[ch4MidBossStep];
     updateDialogueStyle('battle-talk-box', current.speaker);
-    document.getElementById('battle-talk-speaker').innerText = document.getElementById('battle-talk-speaker').innerText = current.speaker;
+    document.getElementById('battle-talk-speaker').innerText = current.speaker;
     document.getElementById('battle-talk-text').innerText = current.text;
 
     startBattleTalkAutoplay(() => {
@@ -408,7 +407,7 @@ function startChapter4Intro() {
     gameState.currentChapter = 4;
     gameState.currentScene = "ch4_intro";
     gameState.novelIndex = 0;
-    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーとの最初の会話をロード
+    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーとの会話（最初の会話）をロード
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
