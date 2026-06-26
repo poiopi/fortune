@@ -1,4 +1,3 @@
-import { chapter1 } from './chapters/chapter1.js';
 import { chapter2 } from './chapters/chapter2.js'; 
 import { chapter3 } from './chapters/chapter3.js'; 
 import { chapter4 } from './chapters/chapter4.js'; 
@@ -537,4 +536,3 @@ window.nextNovel = nextNovel;
 window.triggerBomb = triggerBomb;
 window.resetGame = resetGame;
 window.advanceBattleTalk = advanceBattleTalk;
-```
