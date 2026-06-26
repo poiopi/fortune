@@ -19,7 +19,8 @@ export class GameEngine {
         this.boss = null;
 
         this.isGameOver = false;
-        this.isCh2EventTriggered = false;
+        this.isCh2EventStarted = false; // ★新規：異変会話イベント開始フラグ（重複検知防止）
+        this.isCh2EventTriggered = false; // ボス出現・戦闘中フラグ
         this.isCh2DefeatedSceneActive = false;
         this.ch2StartTime = 0;
 
@@ -86,7 +87,8 @@ export class GameEngine {
         this.player.lastHitTime = 0; // 無敵時間の初期化
 
         this.isGameOver = false;
-        this.isCh2EventTriggered = false;
+        this.isCh2EventStarted = false; // 初期化
+        this.isCh2EventTriggered = false; // 初期化
         this.isCh2DefeatedSceneActive = false;
         this.bullets = [];
         this.enemies = [];
@@ -181,8 +183,8 @@ export class GameEngine {
         this.ctx.fillStyle = '#e3fafc';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
+        // 自機の描画（無敵時間中は100msごとにチカチカ点滅させて無敵感を表現）
         let now = Date.now();
-        // ★リアルタイム被弾比較を導入するため、フレーム開始時点の isInvincible 計算を廃止しました
         let shouldDrawPlayer = (now - this.player.lastHitTime >= 1000) || (Math.floor(now / 100) % 2 === 0);
 
         if (shouldDrawPlayer) {
@@ -215,7 +217,7 @@ export class GameEngine {
                 this.isCh2DefeatedSceneActive = true;
                 this.cancelLoop();
                 this.onStageEnd(false, "ch2_scripted_defeat");
-                return; // ★重要：以降の処理（フレーム予約含む）を即時遮断
+                return; // ループ強制脱出
             }
         }
 
@@ -290,7 +292,7 @@ export class GameEngine {
             if (remaining <= 0) {
                 this.cancelLoop();
                 this.onStageEnd(true, "ch3_time_up");
-                return; // ★重要：以降の処理を即時遮断
+                return; // ループ強制脱出
             }
 
             if (now - this.ch3LastSpawnTime > 1000) {
@@ -401,9 +403,9 @@ export class GameEngine {
 
                         if (this.gameState.currentChapter === 1 && this.gameState.killCount >= 10) {
                             this.endGame(true);
-                        } else if (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered && this.gameState.killCount >= 3) {
-                            // ★バグ修正：他フレームの重複検知を防ぐため、即座にフラグを立ててloopを強制終了
-                            this.isCh2EventTriggered = true; 
+                        } else if (this.gameState.currentChapter === 2 && !this.isCh2EventStarted && this.gameState.killCount >= 3) {
+                            // ★バグ完全解消：開始フラグに「isCh2EventStarted」を即時適用し、会話終了後の「isCh2EventTriggered」と分離
+                            this.isCh2EventStarted = true; 
                             this.enemies = [];
                             this.bullets = [];
                             this.cancelLoop();
@@ -441,7 +443,6 @@ export class GameEngine {
                 hitPlayerByBody = true;
                 e.toRemove = true; // 衝突したゾンビは消滅
 
-                // ★バグ修正：無敵クールタイム判定をフレーム内のリアルタイム（直接比較）に修正
                 if (now - this.player.lastHitTime >= 1000) {
                     this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
                     
@@ -499,7 +500,6 @@ export class GameEngine {
                 
                 hitPlayer = true;
 
-                // ★バグ修正：無敵クールタイム判定をフレーム内のリアルタイム（直接比較）に修正
                 if (now - this.player.lastHitTime >= 1000) {
                     this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
 
@@ -565,7 +565,7 @@ export class GameEngine {
         }
         this.items = nextItems;
 
-        // ★次フレームの予約（キャンセルまたは強制終了フラグがない時のみ安全に予約します）
+        // 次フレームの予約（キャンセルまたは強制終了フラグがない時のみ安全に予約します）
         this.animationId = requestAnimationFrame(() => this.loop());
     }
 
