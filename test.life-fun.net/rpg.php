@@ -140,7 +140,9 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .adsense-space::after{content:'AD SPACE'}
 .fs-btn{background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--violet-lt);font-size:.6rem;font-family:var(--ff-rpg);padding:.35rem .6rem;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .1s;white-space:nowrap}
 .fs-btn:active{background:rgba(155,114,239,.4)}
-.game-outer:fullscreen,.game-outer:-webkit-full-screen{border-radius:0;max-width:100vw}
+.game-outer:fullscreen,.game-outer:-webkit-full-screen{border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#08060f;width:100vw;height:100vh}
+.game-outer:fullscreen .game-hud,.game-outer:-webkit-full-screen .game-hud{width:100%;box-sizing:border-box}
+.game-outer:fullscreen .game-controls,.game-outer:-webkit-full-screen .game-controls{width:100%;box-sizing:border-box}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -561,9 +563,14 @@ const pin=document.getElementById('pin');
 
 let _scale=1;
 function resize(){
-  const w=Math.min(gvp.parentElement.clientWidth-2, VPC*TS);
-  _scale=w/(VPC*TS);
-  const h=Math.round(VPR*TS*_scale);
+  var isFS=!!(document.fullscreenElement||document.webkitFullscreenElement);
+  var availW=gvp.parentElement.clientWidth-2;
+  if(!isFS) availW=Math.min(availW,VPC*TS);
+  var scaleW=availW/(VPC*TS);
+  var scaleH=isFS?(window.innerHeight-180)/(VPR*TS):2;
+  _scale=Math.min(scaleW,scaleH);
+  var w=Math.round(VPC*TS*_scale);
+  var h=Math.round(VPR*TS*_scale);
   cv.width=VPC*TS; cv.height=VPR*TS;
   cv.style.width=w+'px'; cv.style.height=h+'px';
   gvp.style.height=h+'px';
@@ -1274,17 +1281,22 @@ function stopBgm(){
 }
 
 
+var _ovIds=['instructOv','dlgOv','cbtOv','frmOv','resOv','ipop'];
 function toggleFS(){
   var el=document.querySelector('.game-outer');
   if(!document.fullscreenElement&&!document.webkitFullscreenElement){
+    _ovIds.forEach(function(id){var ov=document.getElementById(id);if(ov&&ov.parentElement!==el)el.appendChild(ov);});
     (el.requestFullscreen||el.webkitRequestFullscreen).call(el).catch(function(){});
   } else {
     (document.exitFullscreen||document.webkitExitFullscreen).call(document);
   }
 }
 function _updFS(){
+  var isFS=!!(document.fullscreenElement||document.webkitFullscreenElement);
   var btn=document.getElementById('fsBtn');
-  if(btn) btn.textContent=(document.fullscreenElement||document.webkitFullscreenElement)?'✕ 全画面終了':'⛶ 全画面';
+  if(btn) btn.textContent=isFS?'✕ 全画面終了':'⛶ 全画面';
+  if(!isFS) _ovIds.forEach(function(id){var ov=document.getElementById(id);if(ov)document.body.appendChild(ov);});
+  setTimeout(resize,150);
 }
 document.addEventListener('fullscreenchange',_updFS);
 document.addEventListener('webkitfullscreenchange',_updFS);
