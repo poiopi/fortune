@@ -103,7 +103,7 @@ export const ch4Logic = {
         if (engine.isCh4GreatBossActive) {
             engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 12, height: 12, vx: 0, vy: bSpeed, color: '#f03e3e' });
             engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 12, height: 12, vx: Math.sin(-0.3)*bSpeed, vy: Math.cos(-0.3)*bSpeed, color: '#f03e3e' });
-            engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + this.boss.height, width: 12, height: 12, vx: Math.sin(0.3)*bSpeed, vy: Math.cos(0.3)*bSpeed, color: '#f03e3e' });
+            engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 12, height: 12, vx: Math.sin(0.3)*bSpeed, vy: Math.cos(0.3)*bSpeed, color: '#f03e3e' });
         } else {
             let dx = (engine.player.x + engine.player.width/2) - (engine.boss.x + engine.boss.width/2);
             let dy = (engine.player.y + engine.player.height/2) - (engine.boss.y + engine.boss.height);
