@@ -218,7 +218,7 @@ export class GameEngine {
             this.lastAllyShootTime = now;
         }
 
-        // 仲間たちの描画（★修正箇所：this.playerに統一しフリーズを完全に解消しました）
+        // 仲間たちの描画（★バグ解消箇所：this.playerに統一しフリーズを完全に解消しました）
         this.gameState.allies.forEach((ally, index) => {
             this.ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
             this.ctx.beginPath();
@@ -231,14 +231,16 @@ export class GameEngine {
         if (this.gameState.currentChapter === 1) {
             if (now - this.lastEnemyTime > 1500) {
                 let enemyX = Math.random() * (this.canvas.width - 40);
-                this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
+                let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
+                this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
                 this.lastEnemyTime = now;
             }
         } else if (this.gameState.currentChapter === 2) {
             if (!this.isCh2EventTriggered) {
                 if (now - this.lastEnemyTime > 1500) {
                     let enemyX = Math.random() * (this.canvas.width - 40);
-                    this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
+                    let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
+                    this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
                     this.lastEnemyTime = now;
                 }
             } else if (this.boss) {
@@ -305,7 +307,30 @@ export class GameEngine {
         if (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered)) {
             this.enemies.forEach(e => {
                 if (now - e.lastShotTime > 2000) {
-                    this.enemyBullets.push({ x: e.x + e.width/2 - 4, y: e.y + e.height, width: 8, height: 8, vx: 0, vy: 4, color: '#f03e3e' });
+                    let bulletVx = 0;
+                    let bulletVy = 4;
+                    let bulletColor = '#f03e3e';
+
+                    if (e.shootType === 'aimed') {
+                        let dx = (this.player.x + this.player.width/2) - (e.x + e.width/2);
+                        let dy = (this.player.y + this.player.height/2) - (e.y + e.height);
+                        let dist = Math.sqrt(dx*dx + dy*dy);
+                        if (dist > 0) {
+                            bulletVx = (dx / dist) * 4;
+                            bulletVy = (dy / dist) * 4;
+                        }
+                        bulletColor = '#fd7e14';
+                    }
+
+                    this.enemyBullets.push({ 
+                        x: e.x + e.width/2 - 4, 
+                        y: e.y + e.height, 
+                        width: 8, 
+                        height: 8, 
+                        vx: bulletVx, 
+                        vy: bulletVy, 
+                        color: bulletColor 
+                    });
                     e.lastShotTime = now;
                 }
             });
