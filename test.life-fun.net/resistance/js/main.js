@@ -1,8 +1,15 @@
 import { chapter1 } from './chapters/chapter1.js';
 import { chapter2 } from './chapters/chapter2.js'; 
-import { chapter3 } from './chapters/chapter3.js'; // ★チャプター3をインポート
-import { chapter4 } from './chapters/chapter4.js'; // ★チャプター4をインポート
-import { GameEngine } from './game.js';
+import { chapter3 } from './chapters/chapter3.js'; 
+import { chapter4 } from './chapters/chapter4.js'; 
+
+// ★新規：チャプターゲームロジックモジュールのインポート
+import { ch1Logic } from './chapters/ch1-logic.js';
+import { ch2Logic } from './chapters/ch2-logic.js';
+import { ch3Logic } from './chapters/ch3-logic.js';
+import { ch4Logic } from './chapters/ch4-logic.js';
+
+import { GameEngine } from './game-engine.js'; // コアエンジン名に修正
 
 // ゲーム内グローバル状態
 const gameState = {
@@ -29,10 +36,6 @@ let battleTalkTimeoutId = null;
 let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
 // ルール4：HTML上の各ボタンに対して確実なイベント登録
-document.getElementById('title-start-btn').addEventListener('click', goToOpening);
-document.getElementById('op-skip-btn').addEventListener('click', skipOpening);
-document.getElementById('op-next-btn').addEventListener('click', skipOpening);
-document.getElementById('restart-btn').addEventListener('click', resetGame);
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
 
 // ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
@@ -146,10 +149,10 @@ function nextNovel() {
     } else {
         // ルール3適用：安全な文字列フラグの比較で次のフローへ遷移
         if (gameState.currentScene === "ch2_defeat") {
-            // ★バグ修正：拉致イベント終了後は、一時デモ画面ではなく、明確に「チャプター2クリア画面」に切り替えます
+            // ★バグ修正：拉致イベント終了後は、明確に「チャプター2クリア画面」に切り替えます
             showChapter2ClearScreen();
         } else if (gameState.currentScene === "ch3_clear") {
-            // ★バグ修正：3面会話終了後は、一時デモ画面ではなく、「チャプター3クリア画面」に切り替えます
+            // ★バグ修正：3面会話終了後は、明確に「チャプター3クリア画面」に切り替えます
             showChapter3ClearScreen();
         } else if (gameState.currentScene === "ch4_confession") {
             // 裏切り告白終了後：大ボス起動用のゲームループを開始
@@ -167,7 +170,15 @@ function nextNovel() {
             if (!game) {
                 game = new GameEngine(gameState, onStageFinished, triggerCh2AirHeavyEvent, triggerCh4MidBossEvent);
             }
-            game.initStage();
+            
+            // ★動的なチャプターロジックの判定と注入処理
+            let activeLogic;
+            if (gameState.currentChapter === 1) activeLogic = ch1Logic;
+            else if (gameState.currentChapter === 2) activeLogic = ch2Logic;
+            else if (gameState.currentChapter === 3) activeLogic = ch3Logic;
+            else if (gameState.currentChapter === 4) activeLogic = ch4Logic;
+
+            game.initStage(activeLogic);
         }
     }
 }
@@ -207,13 +218,13 @@ function showCh2EventTalk() {
             document.getElementById('battle-talk-box').style.display = 'none';
             game.isCh2EventTriggered = true; 
             
-            // ボス出現
+            // ボス出現設定
             game.boss = {
-                x: game.canvas.width / 2 - 50, y: 50, width: 100, height: 100,
-                color: '#b085f5', targetY: 60, direction: 1, lastShotTime: 0
+                x: game.canvas.width / 2 - 50, y: -50, targetY: 60, width: 100, height: 100,
+                color: '#b085f5', direction: 1, lastShotTime: 0
             };
-            // 登場演出を有効にする
-            game.isBossEntranceAnimating = true;
+            game.isBossEntranceAnimating = true; // 登場演出ON
+            game.ch2StartTime = Date.now();
             game.loop();
         }
     }, 2500);
@@ -277,6 +288,7 @@ function advanceBattleTalk() {
                     color: '#b085f5', direction: 1, lastShotTime: 0
                 };
                 game.isBossEntranceAnimating = true;
+                game.ch2StartTime = Date.now();
                 game.loop();
             }
         } else {
@@ -332,15 +344,14 @@ function showBattleTalk() {
     document.getElementById('battle-talk-speaker').innerText = current.speaker;
     document.getElementById('battle-talk-text').innerText = current.text;
 
-    // ★可視化バグ修正：1行目のセリフ（「弾が切れた！？」）が表示された瞬間に画面がフラッシュし、HPが即時1に減少します。
-    // これにより、会話を読んでいる間（最大7.5秒間）、HPゲージが1%になっている状態を戦闘画面上で確実かつ鮮明に目視できます。
+    // ★可視化バグ修正：1行目のセリフが表示された瞬間に画面がフラッシュし、HPが即時1に減少します。
     if (battleTalkStep === 0) {
         game.flashScreen();
         gameState.playerHP = 1;
         document.getElementById('hp-value').innerText = gameState.playerHP;
         const hpBar = document.getElementById('hp-gauge-bar');
         if (hpBar) {
-            hpBar.style.width = '1%'; 
+            hpBar.style.width = '1%'; // 視覚的にも1%に激減
         }
     }
 
@@ -355,17 +366,6 @@ function showBattleTalk() {
     }, 2500);
 }
 
-function startChapter2() {
-    gameState.currentChapter = 2;
-    gameState.currentScene = "ch2_intro";
-    gameState.novelIndex = 0;
-    gameState.currentNovelData = chapter2.getNovelDataIntro(gameState);
-    showNovelStep();
-    changeScreen('screen-novel');
-    adjustViewportHeight();
-    startNovelAutoplay();
-}
-
 // チャプター2：敗北（パートナー拉致）のフルノベル開始
 function startChapter2DefeatNovel() {
     gameState.currentScene = "ch2_defeat"; 
@@ -374,7 +374,7 @@ function startChapter2DefeatNovel() {
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
-    startNovelAutoplay(); 
+    startNovelAutoplay(); // 拉致イベントノベルも自動進行（3.5秒）を適用
 }
 
 // チャプター3：涙の特訓ノベル開始
@@ -418,7 +418,7 @@ function endCh3Training() {
     startNovelAutoplay();
 }
 
-// ★追加：チャプター2クリア（拉致イベント完了）画面表示
+// ★追加：チャプター2クリア画面表示
 function showChapter2ClearScreen() {
     changeScreen('screen-clear');
     document.getElementById('clear-title').innerText = "STAGE 2 COMPLETE!";
@@ -431,7 +431,7 @@ function showChapter2ClearScreen() {
     adjustViewportHeight();
 }
 
-// ★追加：チャプター3クリア（特訓＆ボス撃破完了）画面表示
+// ★追加：チャプター3クリア画面表示
 function showChapter3ClearScreen() {
     changeScreen('screen-clear');
     document.getElementById('clear-title').innerText = "STAGE 3 CLEAR!";
@@ -499,7 +499,7 @@ function onStageFinished(isWin, specialReason) {
         triggerCh2ScriptedDefeat();
         return;
     }
-    // ★追加：特訓時間切れではなく、3面特訓ボスを無事撃退した際のコールバック処理
+    // ★追加：3面特訓ボス撃退完了時コールバック
     if (specialReason === "ch3_boss_defeated") {
         endCh3Training();
         return;
@@ -520,6 +520,7 @@ function onStageFinished(isWin, specialReason) {
         changeScreen('screen-clear');
         adjustViewportHeight();
     } else if (gameState.currentChapter === 4 && isWin) {
+        // 大ボスドローン撃破、トビー改心イベントへ遷移
         triggerChapter4ClearScenario();
     } else if (!isWin) {
         document.getElementById('clear-title').innerText = "GAME OVER";
