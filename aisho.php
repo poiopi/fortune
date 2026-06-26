@@ -1228,7 +1228,7 @@ function selectFromCal(name, mmdd) {
   document.getElementById('partner_month').value = parseInt(parts[0]);
   document.getElementById('partner_day').value = parseInt(parts[1]);
   document.getElementById('partner_name').value = name;
-  document.getElementById('partner_birth').closest('form').scrollIntoView({behavior:'smooth', block:'center'});
+  document.getElementById('partner_name').closest('form').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 // ─── 有名人データ ──────────────────────────────────
@@ -1310,7 +1310,7 @@ function selectCeleb(birth, name) {
   document.getElementById('partner_month').value = m;
   document.getElementById('partner_day').value = d;
   document.getElementById('partner_name').value = name;
-  document.getElementById('partner_birth').closest('form').scrollIntoView({behavior:'smooth', block:'center'});
+  document.getElementById('partner_name').closest('form').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 function addCeleb() {
