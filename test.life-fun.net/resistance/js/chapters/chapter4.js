@@ -29,4 +29,3 @@ export const chapter4 = {
         document.getElementById('stage-objective').innerHTML = "本拠地周辺を索敵せよ";
     }
 };
-```
