@@ -1,7 +1,7 @@
 import { chapter1 } from './chapters/chapter1.js';
 import { chapter2 } from './chapters/chapter2.js'; 
 import { chapter3 } from './chapters/chapter3.js'; 
-import { chapter4 } from './chapters/chapter4.js'; // ★チャプター4をインポート
+import { chapter4 } from './chapters/chapter4.js'; // チャプター4をインポート
 import { GameEngine } from './game.js';
 
 // ゲーム内グローバル状態
@@ -28,24 +28,30 @@ let game = null;
 let battleTalkTimeoutId = null;
 let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
-// ルール4：HTML上の各ボタンに対して確実なイベント登録
+// ==========================================
+// ★ルール4準順：HTML上の各要素とイベントリスナーの登録を完全一元化
+// ==========================================
+document.getElementById('title-start-btn').addEventListener('click', goToOpening);
+document.getElementById('op-skip-btn').addEventListener('click', skipOpening);
+document.getElementById('op-next-btn').addEventListener('click', skipOpening);
+document.getElementById('restart-btn').addEventListener('click', resetGame);
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
 
-// ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
+// ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
 document.getElementById('screen-novel').addEventListener('click', nextNovel);
 
-// ★重要：シューティング画面全体のクリックリスナー登録（割り込み会話の発生時、画面のどこをクリックしても進みます）
+// シューティング画面全体のクリックリスナー登録（割り込み会話の発生時、画面のどこをクリックしても進みます）
 document.getElementById('screen-shooting').addEventListener('click', (e) => {
     const talkBox = document.getElementById('battle-talk-box');
     // 会話ウインドウが表示されているときだけ動作
     if (talkBox && talkBox.style.display === 'block') {
         advanceBattleTalk();
-        // イベントの伝播を防ぎ、自機が右下に勝手に動いたりショットが中断するのを防止
+        // イベントの伝播を防ぎ、意図しない自機のワープ移動や自機ショットの中断を防ぎます
         e.stopPropagation();
     }
 });
 
-// ★重要（ボムワープバグ防止）：ボムボタンへの確実なイベント登録
+// ボムボタンへの確実なイベント登録と自機移動の干渉防止（ワープバグ防止）
 const bombBtn = document.getElementById('bomb-button');
 bombBtn.addEventListener('click', (e) => {
     triggerBomb();
@@ -148,7 +154,7 @@ function nextNovel() {
             // 特訓会話終了後は、チャプター4の導入（トビー案内＆応援）へ進みます
             startChapter4Intro();
         } else if (gameState.currentScene === "ch4_confession") {
-            // ★裏切り告白終了後：大ボス起動用のゲームループを開始
+            // 裏切り告白終了後：大ボス起動用のゲームループを開始
             changeScreen('screen-shooting');
             adjustViewportHeight();
             if (game) {
@@ -214,7 +220,7 @@ function showCh2EventTalk() {
     }, 2500);
 }
 
-// ★新規追加：チャプター4の中ボス出現前ダイアログ制御
+// チャプター4の中ボス出現前ダイアログ制御
 let ch4MidBossStep = 0;
 let ch4MidBossTalks = [];
 
@@ -284,7 +290,7 @@ function advanceBattleTalk() {
             }
         }
     } else if (gameState.currentChapter === 4) {
-        // ★チャプター4：中ボス出現前ダイアログ送り
+        // チャプター4中ボス警告の手動送り
         ch4MidBossStep++;
         if (ch4MidBossStep < ch4MidBossTalks.length) {
             showCh4MidBossTalk();
@@ -379,7 +385,7 @@ function endCh3Training() {
         gameState.currentNovelData = [
             { name: "トビー", text: `素晴らしいです、リーダー！ マトを ${game.ch3TargetsHit} 個も壊せましたね！` },
             { name: "リーダー", text: "うん！ 力が湧いてきた。あの子を助けるための伝説の力を感じる……！" },
-            { name: "システム", text: "【伝説 of 3方向ショット】が解放されました！次回ステージから永続的に使用可能になります。" }
+            { name: "システム", text: "【伝説の3方向ショット】が解放されました！次回ステージから永続的に使用可能になります。" }
         ];
     } else {
         gameState.currentScene = "ch3_clear";
@@ -396,19 +402,19 @@ function endCh3Training() {
     startNovelAutoplay();
 }
 
-// ★新規追加：チャプター4導入ノベル（トビーの案内＆応援）開始
+// チャプター4導入ノベル（トビーの案内＆応援）開始
 function startChapter4Intro() {
     gameState.currentChapter = 4;
     gameState.currentScene = "ch4_intro";
     gameState.novelIndex = 0;
-    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーとの会話（告白ではない最初の会話）を正しくロード
+    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーとの会話（最初の会話）をロード
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
     startNovelAutoplay(); // 導入会話も自動進行（3.5秒）を適用
 }
 
-// ★新規追加：中ボス撃破時、トビーの裏切り告白ノベルへの遷移
+// 中ボス撃破時、トビーの裏切り告白ノベルへの遷移
 function triggerCh4Confession() {
     gameState.currentScene = "ch4_confession"; // 会話フラグを変更
     gameState.novelIndex = 0;
@@ -456,7 +462,7 @@ function onStageFinished(isWin, specialReason) {
         endCh3Training();
         return;
     }
-    // ★新規追加：中ボス撃破、告白ノベルへ遷移する処理
+    // 中ボス撃破、告白ノベルへ遷移する処理
     if (specialReason === "ch4_midboss_defeated") {
         triggerCh4Confession();
         return;
