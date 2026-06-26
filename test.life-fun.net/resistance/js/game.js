@@ -7,7 +7,7 @@ export class GameEngine {
         this.canvas = document.getElementById('gameCanvas');
         this.ctx = this.canvas.getContext('2d');
         
-        // プレイヤーの移動と無敵状態を保持するパラメータを追加
+        // プレイヤーの移動と無敵状態を保持するパラメータ
         this.player = { 
             x: 200, y: 550, width: 40, height: 40, color: '#ffb7c5',
             lastHitTime: 0 // 無敵時間（クールタイム）計算用の最終被弾ミリ秒
@@ -165,15 +165,12 @@ export class GameEngine {
         this.ctx.fillStyle = '#e3fafc';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
+        // 自機の描画（無敵時間中は100msごとにチカチカ点滅させて無敵感を表現）
         let now = Date.now();
-
-        // 無敵時間（被弾から1秒間）の判定
         let isInvincible = (now - this.player.lastHitTime < 1000);
-        // 無敵時間中は100msごとに点滅させて視覚的フィードバックを行います
         let shouldDrawPlayer = !isInvincible || (Math.floor(now / 100) % 2 === 0);
 
         if (shouldDrawPlayer) {
-            // 自機の描画
             this.ctx.fillStyle = this.player.color;
             this.ctx.beginPath();
             this.ctx.arc(this.player.x + this.player.width/2, this.player.y + this.player.height/2, this.player.width/2, 0, Math.PI * 2);
@@ -221,7 +218,7 @@ export class GameEngine {
             this.lastAllyShootTime = now;
         }
 
-        // 仲間たちの描画（★Ver.4.5バグ完全解消：this.playerへの参照に統一）
+        // 仲間たちの描画（★修正箇所：this.playerに統一しフリーズを完全に解消しました）
         this.gameState.allies.forEach((ally, index) => {
             this.ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
             this.ctx.beginPath();
@@ -234,17 +231,14 @@ export class GameEngine {
         if (this.gameState.currentChapter === 1) {
             if (now - this.lastEnemyTime > 1500) {
                 let enemyX = Math.random() * (this.canvas.width - 40);
-                // 通常ゾンビに「狙い撃ち(aimed)」と「直進(straight)」の属性を確率で付与します
-                let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
-                this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
+                this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
                 this.lastEnemyTime = now;
             }
         } else if (this.gameState.currentChapter === 2) {
             if (!this.isCh2EventTriggered) {
                 if (now - this.lastEnemyTime > 1500) {
                     let enemyX = Math.random() * (this.canvas.width - 40);
-                    let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
-                    this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
+                    this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
                     this.lastEnemyTime = now;
                 }
             } else if (this.boss) {
@@ -307,35 +301,11 @@ export class GameEngine {
             }
         }
 
-        // ザコ反撃（直進・自機狙い弾幕の生成）
+        // ザコ反撃
         if (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered)) {
             this.enemies.forEach(e => {
                 if (now - e.lastShotTime > 2000) {
-                    let bulletVx = 0;
-                    let bulletVy = 4;
-                    let bulletColor = '#f03e3e'; // 通常の直進弾（赤）
-
-                    // 自機狙い弾のベクトル演算（★ルール2：angleを使わずにvx / vyで制御）
-                    if (e.shootType === 'aimed') {
-                        let dx = (this.player.x + this.player.width/2) - (e.x + e.width/2);
-                        let dy = (this.player.y + this.player.height/2) - (e.y + e.height);
-                        let dist = Math.sqrt(dx*dx + dy*dy);
-                        if (dist > 0) {
-                            bulletVx = (dx / dist) * 4;
-                            bulletVy = (dy / dist) * 4;
-                        }
-                        bulletColor = '#fd7e14'; // 狙い撃ちの斜め弾（オレンジ）
-                    }
-
-                    this.enemyBullets.push({ 
-                        x: e.x + e.width/2 - 4, 
-                        y: e.y + e.height, 
-                        width: 8, 
-                        height: 8, 
-                        vx: bulletVx, 
-                        vy: bulletVy, 
-                        color: bulletColor 
-                    });
+                    this.enemyBullets.push({ x: e.x + e.width/2 - 4, y: e.y + e.height, width: 8, height: 8, vx: 0, vy: 4, color: '#f03e3e' });
                     e.lastShotTime = now;
                 }
             });
@@ -436,7 +406,7 @@ export class GameEngine {
                         this.updateAllyUI();
                         this.flashScreen();
                     } else {
-                        // 体当たりダメージは一撃15に調整
+                        // 体当たりダメージ
                         this.gameState.playerHP -= 15;
                         document.getElementById('hp-value').innerText = this.gameState.playerHP;
                         
@@ -484,7 +454,7 @@ export class GameEngine {
                 
                 hitPlayer = true;
 
-                // 被弾時：無敵時間中でなければダメージ・ノックバックを計算
+                // 被弾時：無敵時間中でなければダメージ計算
                 if (!isInvincible) {
                     this.player.lastHitTime = now; // 無敵時間の開始（1秒間）
 
@@ -493,7 +463,7 @@ export class GameEngine {
                         this.updateAllyUI();
                         this.flashScreen();
                     } else {
-                        // ダメージ量を20から10に引き下げ
+                        // 弾被弾ダメージ
                         this.gameState.playerHP -= 10;
                         document.getElementById('hp-value').innerText = this.gameState.playerHP;
                         
