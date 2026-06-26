@@ -241,6 +241,9 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
   .sp-dropdown a:last-child{border-bottom:none}
   .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
 }
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
+.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc p:last-child{margin-bottom:0}
 </style>
 </head>
 <body>
@@ -253,6 +256,11 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
     <h1>姓名判断｜五格（天格・人格・地格・外格・総格）で無料鑑定</h1>
     <p class="hero-sub">五格（天格・人格・地格・外格・総格）から<br>あなたの運勢・性格・対人運を読み解きます。</p>
   </section>
+
+  <div class="tool-desc">
+    <p>姓名判断は、名前の漢字の画数（五格：天格・人格・地格・外格・総格）と陰陽五行のバランスから、性格や社会的な運勢を読み解く占術です。</p>
+    <p>この簡易鑑定ツールでは、お名前を入力するだけで各格の意味と吉凶を算出します。名付けの参考や自己分析、運気向上のヒントとしてお気軽にお試しください。</p>
+  </div>
 
   <div class="form-card">
     <div class="form-title">✦ お名前を入力してください ✦</div>
