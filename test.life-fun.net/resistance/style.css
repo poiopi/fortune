@@ -56,7 +56,7 @@ button:active { background-color: #e09ba9; }
 .novel-box-common {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px; padding: 15px;
-    height: 180px; position: absolute;
+    height: 140px; position: absolute;
     box-sizing: border-box; cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     z-index: 20;
@@ -74,10 +74,7 @@ button:active { background-color: #e09ba9; }
     border: 3px solid #74c0fc; /* パートナー：ブルー */
 }
 
-/* 
-   ★重要：戦闘中の割り込みダイアログは、下部の自機や敵弾を隠さないように
-   強制的に画面上部（UIのすぐ下）に固定配置します（!important指定でtalk-left等の干渉を上書き）
-*/
+/* 戦闘中の割り込みダイアログは画面上部に固定 */
 #battle-talk-box {
     top: 100px !important;
     bottom: auto !important;
@@ -115,17 +112,29 @@ canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
 #hp-gauge-bar {
     width: 100%;
     height: 100%;
-    background-color: #ff6b8b;
+    background-color: #ff6b8b; /* かわいいレジスタンスピンク */
     transition: width 0.2s ease-out;
 }
 
+/* ★重要：上下左右移動に対応するため、ボムボタンを画面右上に配置変更しました */
 #bomb-button {
-    position: absolute; bottom: 30px; right: 20px;
-    width: 60px; height: 60px; border-radius: 50%;
-    background-color: #ff6b6b; color: white; font-weight: bold;
-    border: 3px solid white; box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    display: none; justify-content: center; align-items: center;
-    font-size: 14px; z-index: 7; cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    z-index: 7;
+    cursor: pointer;
 }
 #screen-flash {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
