@@ -42,6 +42,18 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     }
 });
 
+// ==========================================
+// ★スマホのアドレスバー（URLバー）による画面見切れ対策
+// window.innerHeightから正確な高さを計算し、CSSカスタムプロパティ(--vh)に設定します
+// ==========================================
+function adjustViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+window.addEventListener('resize', adjustViewportHeight);
+window.addEventListener('orientationchange', adjustViewportHeight);
+adjustViewportHeight(); // 起動時に実行
+
 function changeScreen(screenId) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     document.getElementById(screenId).classList.add('active');
@@ -72,6 +84,7 @@ function goToOpening() {
     }));
 
     changeScreen('screen-opening');
+    adjustViewportHeight(); // 各画面遷移時にも念のため高さを再計算
 }
 
 function skipOpening() {
@@ -85,6 +98,7 @@ function startChapter1() {
     gameState.currentNovelData = chapter1.getNovelData(gameState);
     showNovelStep();
     changeScreen('screen-novel');
+    adjustViewportHeight();
 }
 
 function showNovelStep() {
@@ -101,22 +115,17 @@ function nextNovel() {
     if (gameState.novelIndex < gameState.currentNovelData.length) {
         showNovelStep();
     } else {
-        // ルール3適用：安全な文字列フラグの比較で次のフローへ遷移
-        if (gameState.currentScene === "ch2_defeat") {
-            // チャプター2の敗北（拉致イベント）が終了した場合、テストプレイ完了画面へ
-            showChapter2ClearDemoScreen();
-        } else {
-            changeScreen('screen-shooting');
-            // コールバック関数を渡してインスタンス生成
-            if (!game) {
-                game = new GameEngine(gameState, onStageFinished, triggerCh2AirHeavyEvent);
-            }
-            game.initStage();
+        changeScreen('screen-shooting');
+        adjustViewportHeight();
+        // コールバック関数を渡してインスタンス生成
+        if (!game) {
+            game = new GameEngine(gameState, onStageFinished, triggerCh2AirHeavyEvent);
         }
+        game.initStage();
     }
 }
 
-// ボス戦中会話イベントの自動進行タイマー設定関数（ミリ秒指定、標準2500ms）
+// ボス戦中会話イベントの自動進行タイマー設定関数（標準2500ms）
 function startBattleTalkAutoplay(callback, delay = 2500) {
     if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
     battleTalkTimeoutId = setTimeout(callback, delay);
@@ -249,6 +258,7 @@ function startChapter2DefeatNovel() {
     gameState.currentNovelData = chapter2.getNovelDataDefeat(gameState);
     showNovelStep();
     changeScreen('screen-novel');
+    adjustViewportHeight();
 }
 
 // チャプター2テスト完了（拉致イベント終了時）のデモ終了画面
@@ -260,6 +270,7 @@ function showChapter2ClearDemoScreen() {
     
     document.getElementById('next-chapter-btn').style.display = "none";
     document.getElementById('restart-btn').style.display = "block";
+    adjustViewportHeight();
 }
 
 // 判定コールバック
@@ -276,12 +287,14 @@ function onStageFinished(isWin, specialReason) {
         document.getElementById('next-chapter-btn').style.display = "block";
         document.getElementById('restart-btn').style.display = "none";
         changeScreen('screen-clear');
+        adjustViewportHeight();
     } else if (!isWin) {
         document.getElementById('clear-title').innerText = "GAME OVER";
         document.getElementById('clear-status').innerText = "レジスタンスは壊滅してしまった……。";
         document.getElementById('next-chapter-btn').style.display = "none";
         document.getElementById('restart-btn').style.display = "block";
         changeScreen('screen-clear');
+        adjustViewportHeight();
     }
 }
 
@@ -300,6 +313,7 @@ function startChapter2() {
     gameState.currentNovelData = chapter2.getNovelDataIntro(gameState);
     showNovelStep();
     changeScreen('screen-novel');
+    adjustViewportHeight();
 }
 
 function resetGame() {
@@ -309,6 +323,7 @@ function resetGame() {
     gameState.playerHP = 100;
     gameState.score = 0;
     changeScreen('screen-title');
+    adjustViewportHeight();
 }
 
 function triggerBomb() {
