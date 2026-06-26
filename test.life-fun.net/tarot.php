@@ -58,6 +58,9 @@
   /* ADSENSE */
   .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
   .adsense-space::after{content:'AD SPACE'}
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
+.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc p:last-child{margin-bottom:0}
   /* ══ 円形カードステージ ══ */
   .stage{display:none;flex-direction:column;align-items:center;padding:1rem 0 2rem}
   .stage.active{display:flex}
@@ -374,6 +377,11 @@ body{top:0!important}
 
 
     <div class="adsense-space"><!-- AdSenseコードをここに --></div>
+
+    <div class="tool-desc">
+      <p>タロット占いは、78枚のカードに描かれたシンボルを通じて、潜在意識や気になる問題の現状、少し先の流れを映し出す占術です。</p>
+      <p>このツールでは、あなたが選んだカードから今必要なメッセージやアドバイスを導き出します。現在の悩みへの気づきや、選択を迷ったときのヒントとしてお役立てください。</p>
+    </div>
 
     <!-- カード選択ステージ -->
     <div class="stage active" id="stage-select">

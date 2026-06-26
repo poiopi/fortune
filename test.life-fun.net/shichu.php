@@ -189,6 +189,9 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
+.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc p:last-child{margin-bottom:0}
 </style>
 </head>
 <body>
@@ -206,6 +209,11 @@ footer a:hover{color:var(--gold)}
     <p style="font-size:.8rem;color:var(--muted);margin-top:.5rem">
       生年月日と生まれた時間から命式を算出。<br>十神・大運・今年の運勢まで本格鑑定します。
     </p>
+  </div>
+
+  <div class="tool-desc">
+    <p>四柱推命は、生まれた「年・月・日・時」の4つの柱から運命を読み解く東洋占術です。陰陽五行の考え方を基に、生まれ持った性格や才能、人生の運気の流れを算出します。</p>
+    <p>この簡易鑑定ツールでは、命式・十神・大運を自動で算出します。現在の自分の状況を確認し、これからの選択に活かすアドバイスとしてぜひご利用ください。</p>
   </div>
 
   <!-- フォーム -->

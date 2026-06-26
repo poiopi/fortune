@@ -238,6 +238,9 @@ header{
 /* ── AdSense ── */
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
+.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc p:last-child{margin-bottom:0}
 
 /* ── フッター ── */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -370,6 +373,11 @@ body{top:0!important}
   </section>
 
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
+
+  <div class="tool-desc">
+    <p>MBTI（16タイプ診断）は、ユングの心理学をベースに、人の認識や判断の傾向を16の性格タイプに分類する自己理解ツールです。</p>
+    <p>この簡易セルフ診断では、いくつかの質問に答えることであなたの強みや意思決定の傾向、向いている環境を算出します。自分への理解を深め、より良い人間関係を築くためのヒントとしてご利用ください。</p>
+  </div>
 
   <div class="shindan-card">
 
