@@ -107,16 +107,37 @@ body{top:0!important}
   <div class="today-band">
     <div class="rokuyo-desc">
 
+      <strong style="color:var(--text)">運営者（管理人）</strong><br>
+      管理人 K<br><br>
+
       <strong style="color:var(--text)">サイト名</strong><br>
       占いPortal<br><br>
 
+      <strong style="color:var(--text)">サイトURL</strong><br>
+      https://life-fun.net<br><br>
+
+      <strong style="color:var(--text)">お問い合わせ</strong><br>
+      <a href="/contact" style="color:var(--violet-lt)">お問い合わせフォーム</a>よりご連絡ください。
+
+    </div>
+  </div>
+
+  <div class="today-band" style="margin-top:1.5rem">
+    <div class="rokuyo-desc">
+
+      <strong style="color:var(--text)">プロフィール・サイトについて</strong><br><br>
+
+      はじめまして、管理人の「K」です。<br><br>
+
+      日々の暮らしを少し良くするヒントとして、算命学や星座占いなどの簡易セルフチェックツールを個人で制作・運営しています。ちょっとした息抜きにお役立てください。<br><br>
+
+      当サイトは、「占いを身近に、手軽に楽しんでいただくこと」をコンセプトに、算命学・四柱推命・西洋占星術などのセルフ鑑定ツールと、その見方をわかりやすく解説する記事をエンジニアが個人で開発・運営しています。<br><br>
+
       <strong style="color:var(--text)">サイトの概要</strong><br>
-      占いPortalは、西洋占星術・タロット・四柱推命をはじめとする占いコンテンツを無料でお楽しみいただけるサイトです。三星鑑定（統合鑑定）、本格タロット占い、開運カレンダー、MBTI×星座性格診断など、さまざまな占い・診断サービスを提供しています。<br><br>
+      占いPortalは、西洋占星術・タロット・算命学・四柱推命をはじめとする占いコンテンツを無料でお楽しみいただけるサイトです。三星鑑定（統合鑑定）、本格タロット占い、開運カレンダー、MBTI×星座性格診断など、さまざまな占い・診断サービスを提供しています。<br><br>
 
       <strong style="color:var(--text)">サービスの目的</strong><br>
-      当サイトのすべてのコンテンツは、エンターテインメントを目的としたサービスです。占いや診断の結果は、日々の生活を楽しむための参考や気づきとしてご活用ください。医学・法律・投資などの専門的な判断の代わりになるものではありません。<br><br>
-
-      ご意見・ご感想・お問い合わせは<a href="/contact.php" style="color:var(--violet-lt)">お問い合わせページ</a>よりご連絡ください。
+      当サイトのすべてのコンテンツは、エンターテインメントを目的としたサービスです。占いや診断の結果は、日々の生活を楽しむための参考や気づきとしてご活用ください。医学・法律・投資などの専門的な判断の代わりになるものではありません。
 
     </div>
   </div>

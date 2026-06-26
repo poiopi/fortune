@@ -36,6 +36,7 @@ function render_footer(array $opts = []): void {
   echo '<div class="sf-col"><p class="sf-heading">サイト情報</p><ul>';
   echo '<li><a href="/profile">運営者情報</a></li>';
   echo '<li><a href="/privacy">プライバシーポリシー</a></li>';
+  echo '<li><a href="/disclaimer">免責事項</a></li>';
   echo '<li><a href="/contact">お問い合わせ</a></li>';
   echo '</ul></div>';
   echo '</div>';
@@ -202,9 +203,10 @@ function render_footer(array $opts = []): void {
     <a href="<?= $pg['url'] ?>" class="<?= $cls ?>"><span class="fmenu-item-icon"><?= $pg['icon'] ?></span><?= $pg['name'] ?></a>
     <?php endif; endforeach; ?>
     <div class="fmenu-section-label" style="margin-top:.5rem">サイト情報</div>
-    <a href="/privacy"  class="fmenu-item <?= $_p==='privacy'?'current':'' ?>"><span class="fmenu-item-icon">📜</span>プライバシーポリシー</a>
-    <a href="/profile"  class="fmenu-item <?= $_p==='profile'?'current':'' ?>"><span class="fmenu-item-icon">👤</span>運営者情報</a>
-    <a href="/contact"  class="fmenu-item <?= $_p==='contact'?'current':'' ?>"><span class="fmenu-item-icon">✉️</span>お問い合わせ</a>
+    <a href="/privacy"    class="fmenu-item <?= $_p==='privacy'?'current':'' ?>"><span class="fmenu-item-icon">📜</span>プライバシーポリシー</a>
+    <a href="/disclaimer" class="fmenu-item <?= $_p==='disclaimer'?'current':'' ?>"><span class="fmenu-item-icon">⚠️</span>免責事項</a>
+    <a href="/profile"    class="fmenu-item <?= $_p==='profile'?'current':'' ?>"><span class="fmenu-item-icon">👤</span>運営者情報</a>
+    <a href="/contact"    class="fmenu-item <?= $_p==='contact'?'current':'' ?>"><span class="fmenu-item-icon">✉️</span>お問い合わせ</a>
   </nav>
 </div>
 
