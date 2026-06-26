@@ -24,6 +24,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -56,11 +57,11 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  .cta-box{background:linear-gradient(135deg,#f5f0ff 0%,#fdf4fa 100%);border:1px solid #d4bfff;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-  .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
-  .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}
-  .cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
+  
+  
+  
+  
+  
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
   .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
@@ -87,11 +88,11 @@ ob_start();
   .faq-item.open .faq-q::after{transform:rotate(45deg)}
   .faq-a{font-size:.88rem;color:#444;line-height:1.85;padding:0 1.1rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
-  .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;margin-top:1rem}
-  .related-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;display:block;transition:border-color .2s,transform .15s}
-  .related-card:hover{border-color:var(--accent-lt);transform:translateY(-2px)}
-  .related-card-label{font-size:.7rem;color:var(--muted);margin-bottom:.3rem;font-family:var(--ff-mono)}
-  .related-card-title{font-size:.9rem;font-weight:500;color:var(--accent)}
+  
+  
+  
+  
+  
 .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
   </style>
@@ -141,13 +142,13 @@ ob_start();
     <p class="art-lead">MBTI（Myers-Briggs Type Indicator）は、ユング心理学をベースに開発された世界最大規模の性格タイプ診断です。E/I・S/N・T/F・J/Pの4軸16タイプで性格傾向を把握し、星座占いと組み合わせることで、より立体的な自己理解が得られます。</p>
   </div>
 
-  <div class="cta-box">
-    <div>
-      <p>🧠 あなたのMBTI×星座タイプを調べる</p>
-      <small>生年月日と簡単な質問に答えるだけで16タイプの詳細解説が出力。</small>
-    </div>
-    <a href="/mbti" class="cta-btn">MBTI×星座を診断する →</a>
-  </div>
+  <?php
+$ctaTitle = '🧠 あなたのMBTI×星座タイプを調べる';
+$ctaText  = '生年月日と簡単な質問に答えるだけで16タイプの詳細解説が出力。';
+$ctaUrl   = '/mbti';
+$ctaBtn   = 'MBTI×星座を診断する →';
+require __DIR__.'/../../inc/article-cta.php';
+  ?>
 
   <nav class="toc">
     <p class="toc-title">目次</p>
@@ -244,29 +245,22 @@ ob_start();
         <div class="faq-a">当サイトのMBTI×星座診断は生年月日と簡単な質問に答えるだけで、約2〜3分で結果が出ます。本格的なMBTI公式テストは90問以上あり20〜30分かかりますが、当サイトは手軽さを重視した簡易診断版です。</div>
       </div>
     </div>
-  </section>
+    </section>
+
+  <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <p>性格・相性をさらに多角的に知りたい方はこちらもどうぞ。</p>
-    <div class="related-grid">
-      <a href="/" class="related-card">
-        <div class="related-card-label">三星統合鑑定</div>
-        <div class="related-card-title">四柱推命・数秘・九星を統合して鑑定する →</div>
-      </a>
-      <a href="/articles/aisho/" class="related-card">
-        <div class="related-card-label">相性診断とは</div>
-        <div class="related-card-title">誕生日・血液型・星座で相性を占う仕組みを解説 →</div>
-      </a>
-      <a href="/articles/numerology/" class="related-card">
-        <div class="related-card-label">数秘術とは</div>
-        <div class="related-card-title">運命数の計算方法と意味を解説 →</div>
-      </a>
-      <a href="/articles/shichu/" class="related-card">
-        <div class="related-card-label">四柱推命とは</div>
-        <div class="related-card-title">命式・大運・年運の流れを知る →</div>
-      </a>
-    </div>
+    <?php
+    $relatedItems = [
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'相性診断とは', 'title'=>'誕生日・血液型・星座で相性を占う仕組みを解説 →', 'url'=>'/articles/aisho/'],
+      ['label'=>'数秘術とは', 'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
+      ['label'=>'四柱推命とは', 'title'=>'命式・大運・年運の流れを知る →', 'url'=>'/articles/shichu/'],
+    ];
+    require __DIR__.'/../../inc/article-related.php';
+    ?>
   </section>
 
 </div>
