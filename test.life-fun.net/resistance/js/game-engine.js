@@ -79,14 +79,16 @@ export class GameEngine {
         this.player.lastHitTime = 0; 
 
         this.isGameOver = false;
-        this.isBossEntranceAnimating = false; 
-        this.isBossExploding = false; 
-        this.particles = [];          
+        this.isBossEntranceAnimating = false;
+        this.isBossExploding = false;
+        this.particles = [];
         this.bullets = [];
         this.enemies = [];
         this.enemyBullets = [];
         this.items = [];
         this.boss = null;
+        this.isCh2EventTriggered = false;
+        this.isCh4MidBossEventTriggered = false;
 
         this.updateBombUI();
         this.updateAllyUI();
@@ -494,6 +496,8 @@ export class GameEngine {
         this.enemies = nextEnemies;
 
         // 3. 敵弾更新（ボス登場中・巨大化中・爆発中は被弾判定を一時停止）
+        let canTakeBulletDamage = !this.isBossEntranceAnimating && !isCh4GreatBossSpawnAnimating && !this.isBossExploding;
+        let canCollectItems = !this.isBossEntranceAnimating && !isCh4GreatBossSpawnAnimating && !this.isBossExploding;
         let nextEnemyBullets = [];
         for (let i = 0; i < this.enemyBullets.length; i++) {
             let eb = this.enemyBullets[i];
