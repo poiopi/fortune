@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>フォーチューン ハザード - プロトタイプ Ver.4.7</title>
+    <title>フォーチューン ハザード - プロトタイプ Ver.4.8</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,9 +49,10 @@
     </div>
 
     <!-- 2. ノベル画面（共通） -->
+    <!-- 画面全域クリックを有効化するため、onclick属性は削除しJS側で画面全体（#screen-novel）へイベントを登録しています -->
     <div id="screen-novel" class="screen">
         <div id="character-stand">【立ち絵表示】</div>
-        <div id="novel-box" class="novel-box-common" onclick="nextNovel()">
+        <div id="novel-box" class="novel-box-common">
             <strong id="novel-name" style="color: #d05a7f;"></strong>
             <p id="novel-text" style="margin-top: 5px;"></p>
         </div>
@@ -61,15 +62,12 @@
     <div id="screen-shooting" class="screen" style="padding: 0;">
         <div id="game-ui">
             <div id="stage-title" style="margin-bottom: 4px; font-size: 16px;">STAGE 1</div>
-            <!-- ルール4適用：JSで書き換えるための要素を定義 -->
             <div id="stage-objective" style="margin-bottom: 4px;"></div>
             <div>撃退数: <span id="kill-count">0</span></div>
             <div>スコア: <span id="score-val">0</span> 点</div>
             
-            <!-- HP表示領域（テキストとゲージバー） -->
             <div id="hp-bar-area">
                 HP: <span id="hp-value">100</span> / 100
-                <!-- 追加された視覚的HPゲージコンテナ -->
                 <div id="hp-gauge-container">
                     <div id="hp-gauge-bar"></div>
                 </div>
@@ -80,8 +78,8 @@
         </div>
         <div id="bomb-button" onclick="triggerBomb()">BOMB<br><span id="bomb-count">0</span></div>
         
-        <!-- 戦闘中割り込みダイアログ用 -->
-        <div id="battle-talk-box" class="novel-box-common" style="display: none;" onclick="advanceBattleTalk()">
+        <!-- 戦闘中割り込みダイアログ用：こちらもインラインonclickを外し、JSの全画面リスナーで処理します -->
+        <div id="battle-talk-box" class="novel-box-common" style="display: none;">
             <strong id="battle-talk-speaker" style="color: #d05a7f;"></strong>
             <p id="battle-talk-text" style="margin-top: 5px;"></p>
         </div>
@@ -99,7 +97,6 @@
 
 </div>
 
-<!-- ルール4：エントリーポイント用JSファイルをモジュールとしてロード -->
 <script type="module" src="js/main.js"></script>
 </body>
 </html>
