@@ -3,548 +3,1006 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>レジスタンスの夜明け - Ver.3</title>
+    <title>レジスタンスの夜明け - プロトタイプ Ver.4</title>
     <style>
-        body{margin:0;padding:0;background:#f7e6eb;font-family:'Helvetica Neue',Arial,sans-serif;
-             display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden;user-select:none;}
-        #game-container{width:100%;max-width:400px;height:100vh;max-height:700px;background:#fff;
-            box-shadow:0 0 10px rgba(0,0,0,.1);position:relative;display:flex;flex-direction:column;
-            border-radius:8px;overflow:hidden;}
-        .screen{position:absolute;top:0;left:0;width:100%;height:100%;display:none;box-sizing:border-box;
-                padding:20px;flex-direction:column;justify-content:center;align-items:center;z-index:5;}
-        .active{display:flex;}
-        h1{color:#d05a7f;font-size:24px;margin-bottom:20px;text-align:center;}
-        p{color:#555;line-height:1.6;}
-        input,select,button{width:80%;padding:12px;margin:10px 0;border-radius:20px;border:2px solid #ffb7c5;
-                            font-size:16px;outline:none;box-sizing:border-box;}
-        button{background:#ffb7c5;color:#fff;font-weight:bold;border:none;cursor:pointer;transition:.2s;}
-        button:active{background:#e09ba9;}
-        #opening-text-container{width:90%;height:60%;overflow-y:auto;background:rgba(255,255,255,.8);
-            border:2px solid #ffb7c5;border-radius:15px;padding:20px;box-sizing:border-box;margin-bottom:20px;}
-        .skip-btn{position:absolute;top:15px;right:15px;background:rgba(0,0,0,.4);color:#fff;
-                  border-radius:15px;width:auto;padding:5px 15px;font-size:12px;border:none;cursor:pointer;z-index:10;}
-        #novel-box{background:rgba(255,255,255,.9);border:3px solid #ffb7c5;border-radius:15px;padding:15px;
-                   width:90%;height:150px;position:absolute;bottom:20px;box-sizing:border-box;cursor:pointer;}
-        #character-stand{width:150px;height:200px;background:#ffe0e6;border:2px dashed #ffb7c5;
-                         display:flex;justify-content:center;align-items:center;color:#d05a7f;
-                         font-size:14px;margin-bottom:180px;border-radius:10px;}
-        canvas{background:#e3fafc;display:block;width:100%;height:100%;}
-        #game-ui{position:absolute;top:10px;left:10px;color:#d05a7f;font-weight:bold;font-size:13px;
-                 pointer-events:none;background:rgba(255,255,255,.85);padding:8px;border-radius:8px;
-                 line-height:1.4;z-index:6;}
-        #bomb-button{position:absolute;bottom:30px;right:20px;width:60px;height:60px;border-radius:50%;
-                     background:#ff6b6b;color:#fff;font-weight:bold;border:3px solid #fff;
-                     box-shadow:0 4px 6px rgba(0,0,0,.2);display:none;justify-content:center;
-                     align-items:center;font-size:14px;z-index:7;cursor:pointer;}
-        #screen-flash{position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;opacity:0;
-                      pointer-events:none;transition:opacity .1s ease-out;z-index:99;}
-        #battle-talk{position:absolute;bottom:100px;left:5%;width:90%;background:rgba(0,0,0,.8);color:#fff;
-                     padding:15px;border-radius:10px;font-weight:bold;box-sizing:border-box;
-                     display:none;z-index:10;border:2px solid #ffb7c5;}
+        body {
+            margin: 0; padding: 0; background-color: #f7e6eb;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh; overflow: hidden; user-select: none;
+        }
+        #game-container {
+            width: 100%; max-width: 400px; height: 100vh; max-height: 700px;
+            background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative; display: flex; flex-direction: column;
+            border-radius: 8px; overflow: hidden;
+        }
+        .screen {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            display: none; box-sizing: border-box; padding: 20px;
+            flex-direction: column; justify-content: center; align-items: center;
+            z-index: 5;
+        }
+        .active { display: flex; }
+        h1 { color: #d05a7f; font-size: 24px; margin-bottom: 20px; text-align: center; }
+        p { color: #555; line-height: 1.6; }
+        input, select, button {
+            width: 80%; padding: 12px; margin: 10px 0;
+            border-radius: 20px; border: 2px solid #ffb7c5;
+            font-size: 16px; outline: none; box-sizing: border-box;
+        }
+        button {
+            background-color: #ffb7c5; color: white; font-weight: bold;
+            border: none; cursor: pointer; transition: 0.2s;
+        }
+        button:active { background-color: #e09ba9; }
+
+        /* オープニング */
+        #opening-text-container {
+            width: 90%; height: 60%; overflow-y: auto;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #ffb7c5; border-radius: 15px;
+            padding: 20px; box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .skip-btn {
+            position: absolute; top: 15px; right: 15px;
+            background-color: rgba(0,0,0,0.4); color: white;
+            border-radius: 15px; width: auto; padding: 5px 15px;
+            font-size: 12px; border: none; cursor: pointer; z-index: 10;
+        }
+
+        /* 会話用吹き出しスタイル（位置と枠線の自動切り替え） */
+        .novel-box-common {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px; padding: 15px;
+            height: 140px; position: absolute;
+            box-sizing: border-box; cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            z-index: 20;
+        }
+        /* 発言者ごとのデザイン */
+        .talk-top {
+            top: 20px; bottom: auto; left: 5%; width: 90%;
+            border: 3px solid #b085f5; /* ボス：パープル */
+        }
+        .talk-left {
+            bottom: 20px; top: auto; left: 5%; width: 65%;
+            border: 3px solid #ffb7c5; /* リーダー：ピンク */
+        }
+        .talk-right {
+            bottom: 20px; top: auto; right: 5%; left: auto; width: 65%;
+            border: 3px solid #74c0fc; /* パートナー：ブルー */
+        }
+
+        #character-stand {
+            width: 150px; height: 200px; background-color: #ffe0e6;
+            border: 2px dashed #ffb7c5; display: flex; justify-content: center;
+            align-items: center; color: #d05a7f; font-size: 14px;
+            margin-bottom: 180px; border-radius: 10px;
+        }
+
+        /* シューティング画面UI */
+        canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
+        #game-ui {
+            position: absolute; top: 10px; left: 10px; color: #d05a7f;
+            font-weight: bold; font-size: 13px; pointer-events: none;
+            background: rgba(255,255,255,0.85); padding: 8px; border-radius: 8px;
+            line-height: 1.4; z-index: 6;
+        }
+        
+        #bomb-button {
+            position: absolute; bottom: 30px; right: 20px;
+            width: 60px; height: 60px; border-radius: 50%;
+            background-color: #ff6b6b; color: white; font-weight: bold;
+            border: 3px solid white; box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            display: none; justify-content: center; align-items: center;
+            font-size: 14px; z-index: 7; cursor: pointer;
+        }
+
+        #screen-flash {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: white; opacity: 0; pointer-events: none;
+            transition: opacity 0.1s ease-out; z-index: 99;
+        }
     </style>
 </head>
 <body>
+
 <div id="game-container">
-  <div id="screen-flash"></div>
 
-  <div id="screen-title" class="screen active">
-    <h1>レジスタンスの夜明け</h1>
-    <p>名前と生年月日を入力してね</p>
-    <input type="text" id="player-name" placeholder="お名前" value="リーダー">
-    <input type="date" id="player-dob" value="2000-01-01">
-    <select id="player-gender">
-      <option value="female">女の子（主人公）</option>
-      <option value="male">男の子（主人公）</option>
-    </select>
-    <button onclick="goToOpening()">ゲームスタート</button>
-  </div>
+    <!-- 画面フラッシュ用 -->
+    <div id="screen-flash"></div>
 
-  <div id="screen-opening" class="screen" style="background:#ffeef2;">
-    <button class="skip-btn" onclick="skipOpening()">スキップ ≫</button>
-    <h1>プロローグ</h1>
-    <div id="opening-text-container">
-      <p style="font-size:15px;line-height:1.8;color:#444;margin:0;">
-        時は20XX年。<br>平和な世界は突如として暗雲に包まれる。<br><br>
-        どこからともなく現れたゾンビが町を襲い、人々はパニックに陥った。<br><br>
-        それから一月後……。生き残った人々は「レジスタンス」を結成。<br>
-        ゾンビたちを打倒し、再び平和な日常を取り戻すために立ち上がった。<br><br>
-        若きリーダーであるあなた（主人公）は、大切な仲間たちと共に、いま最後の戦いに赴く――。
-      </p>
+    <!-- 1. タイトル/入力画面 -->
+    <div id="screen-title" class="screen active">
+        <h1>レジスタンスの夜明け</h1>
+        <p>名前と生年月日を入力してね</p>
+        <input type="text" id="player-name" placeholder="お名前" value="リーダー">
+        <input type="date" id="player-dob" value="2000-01-01">
+        <select id="player-gender">
+            <option value="female">女の子（主人公）</option>
+            <option value="male">男の子（主人公）</option>
+        </select>
+        <button onclick="goToOpening()">ゲームスタート</button>
     </div>
-    <button onclick="skipOpening()" style="width:60%;">次へ進む</button>
-  </div>
 
-  <div id="screen-novel" class="screen">
-    <div id="character-stand">【パートナー】</div>
-    <div id="novel-box" onclick="nextNovel()">
-      <strong id="novel-name" style="color:#d05a7f;"></strong>
-      <p id="novel-text" style="margin-top:5px;"></p>
+    <!-- 1.5. オープニング画面 -->
+    <div id="screen-opening" class="screen" style="background-color: #ffeef2;">
+        <button class="skip-btn" onclick="skipOpening()">スキップ ≫</button>
+        <h1>プロローグ</h1>
+        <div id="opening-text-container">
+            <p style="font-size: 15px; line-height: 1.8; color: #444; margin: 0;">
+                時は20XX年。<br>
+                平和な世界は突如として暗雲に包まれる。<br><br>
+                どこからともなく現れたゾンビが町を襲い、人々はパニックに陥った。<br><br>
+                それから一月後……。<br>
+                生き残った人々は「レジスタンス」を結成。<br>
+                ゾンビたちを打倒し、再び平和な日常を取り戻すために立ち上がった。<br><br>
+                若きリーダーであるあなた（主人公）は、大切な仲間たちと共に、いま最後の戦いに赴く――。
+            </p>
+        </div>
+        <button onclick="skipOpening()" style="width: 60%;">次へ進む</button>
     </div>
-  </div>
 
-  <div id="screen-shooting" class="screen" style="padding:0;">
-    <div id="game-ui">
-      <div id="stage-title" style="margin-bottom:4px;font-size:16px;">STAGE 1</div>
-      <div id="stage-objective">撃退数: <span id="kill-count">0</span> / 5</div>
-      <div id="hp-bar-area" style="margin-top:4px;">HP: <span id="hp-value">100</span> / 100</div>
-      <div id="ally-status" style="margin-top:4px;color:#40c057;"></div>
+    <!-- 2. ノベル画面（共通） -->
+    <div id="screen-novel" class="screen">
+        <div id="character-stand">【立ち絵表示】</div>
+        <div id="novel-box" class="novel-box-common" onclick="nextNovel()">
+            <strong id="novel-name" style="color: #d05a7f;"></strong>
+            <p id="novel-text" style="margin-top: 5px;"></p>
+        </div>
     </div>
-    <div id="bomb-button" onclick="triggerBomb()">BOMB<br><span id="bomb-count">0</span></div>
-    <div id="battle-talk" onclick="advanceBattleTalk()">
-      <strong id="battle-talk-speaker" style="color:#ffb7c5;"></strong>
-      <p id="battle-talk-text" style="margin:5px 0 0 0;"></p>
-    </div>
-    <canvas id="gameCanvas"></canvas>
-  </div>
 
-  <div id="screen-clear" class="screen">
-    <h1 id="clear-title">STAGE CLEAR!</h1>
-    <p id="clear-status" style="text-align:center;margin-bottom:20px;white-space:pre-line;"></p>
-    <button id="next-chapter-btn" onclick="startChapter2()">チャプター2へ進む</button>
-    <button id="restart-btn" onclick="resetGame()" style="display:none;background:#ccc;">最初から遊ぶ</button>
-  </div>
+    <!-- 3. シューティング画面 -->
+    <div id="screen-shooting" class="screen" style="padding: 0;">
+        <div id="game-ui">
+            <div id="stage-title" style="margin-bottom: 4px; font-size: 16px;">STAGE 1</div>
+            <div>撃退数: <span id="kill-count">0</span></div>
+            <div>スコア: <span id="score-val">0</span> 点</div>
+            <div id="hp-bar-area">HP: <span id="hp-value">100</span> / 100</div>
+            <div id="boss-hp-area" style="display: none; color: #b085f5; font-weight: bold;">BOSS HP: <span id="boss-hp-val">100</span></div>
+            <div id="ally-status" style="margin-top: 4px; color: #40c057;"></div>
+        </div>
+        <div id="bomb-button" onclick="triggerBomb()">BOMB<br><span id="bomb-count">0</span></div>
+        
+        <!-- 戦闘中割り込みダイアログ用 -->
+        <div id="battle-talk-box" class="novel-box-common" style="display: none;" onclick="advanceBattleTalk()">
+            <strong id="battle-talk-speaker" style="color: #d05a7f;"></strong>
+            <p id="battle-talk-text" style="margin-top: 5px;"></p>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- 4. ステージクリア / 進行画面 -->
+    <div id="screen-clear" class="screen">
+        <h1 id="clear-title">STAGE CLEAR!</h1>
+        <p id="clear-status" style="text-align: center; margin-bottom: 20px;"></p>
+        <button id="next-chapter-btn" onclick="startChapter2()">チャプター2へ進む</button>
+        <button id="restart-btn" onclick="resetGame()" style="display: none; background-color: #ccc;">最初から遊ぶ</button>
+    </div>
+
 </div>
 
 <script>
-var gameState = {
-    name:'', dob:'', gender:'',
-    currentChapter:1, killCount:0,
-    novelIndex:0, currentNovelData:[],
-    weaponType:'normal', bombs:1,
-    allies:[], speedLevel:1, playerHP:100
-};
+    let gameState = {
+        name: "", dob: "", gender: "",
+        partnerName: "", // ジム または キャシー
+        currentChapter: 1,
+        killCount: 0,
+        score: 0,
+        novelIndex: 0,
+        currentNovelData: [],
+        
+        // 引き継ぎパラメータ
+        weaponType: 'normal',
+        bombs: 1,
+        allies: [],
+        playerHP: 100
+    };
 
-var novelDataChapter1 = [
-    {name:'パートナー', text:'ついにここまで来たね…！街はかわいいゾンビたちでいっぱいだ。'},
-    {name:'パートナー', text:'私の後ろについてきて。画面を左右にスライドして、ゾンビをやっつけよう！'},
-    {name:'システム',   text:'【ステージ1】敵を5体倒してね！敵も弾を撃つので注意。たまに仲間・アイテムが落ちるよ。'}
-];
-var novelDataChapter2Intro = [
-    {name:'パートナー', text:'やったね！最初のエリアはクリアだよ！'},
-    {name:'パートナー', text:'……あれ？急に空気が重くなったような……？'},
-    {name:'パートナー', text:'キャーッ！なにあの巨大なゾンビ！！'},
-    {name:'システム',   text:'【ステージ2】中ボスゾンビ出現！'}
-];
-var novelDataChapter3Intro = [
-    {name:'システム',   text:'――ボスはパートナーを連れ去ってしまった。'},
-    {name:'リーダー',  text:'うぅ……私のせいで、あの子が……。'},
-    {name:'サポート',  text:'リーダー、落ち込んでいる暇はありません！特訓しましょう！'},
-    {name:'システム',   text:'【ステージ3 特訓】15秒で「特訓マト」を8個以上撃ち抜こう！攻撃はしてこないよ。'}
-];
+    // 発言者の位置判定用スタイル設定
+    function updateDialogueStyle(boxId, speakerName) {
+        const box = document.getElementById(boxId);
+        box.classList.remove('talk-top', 'talk-left', 'talk-right');
 
-function changeScreen(id){
-    document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});
-    document.getElementById(id).classList.add('active');
-}
-function flashScreen(){
-    var f=document.getElementById('screen-flash');
-    f.style.opacity='1';setTimeout(function(){f.style.opacity='0';},300);
-}
-
-function goToOpening(){
-    gameState.name=document.getElementById('player-name').value||'リーダー';
-    gameState.dob=document.getElementById('player-dob').value;
-    gameState.gender=document.getElementById('player-gender').value;
-    changeScreen('screen-opening');
-}
-function skipOpening(){startChapter1();}
-
-function startChapter1(){
-    gameState.currentChapter=1;
-    gameState.novelIndex=0;
-    gameState.currentNovelData=novelDataChapter1;
-    showNovelStep();changeScreen('screen-novel');
-}
-function startChapter2(){
-    gameState.currentChapter=2;
-    gameState.novelIndex=0;
-    gameState.currentNovelData=novelDataChapter2Intro;
-    showNovelStep();changeScreen('screen-novel');
-}
-function startChapter3Intro(){
-    gameState.currentChapter=3;
-    gameState.novelIndex=0;
-    gameState.currentNovelData=novelDataChapter3Intro;
-    showNovelStep();changeScreen('screen-novel');
-}
-function showNovelStep(){
-    var c=gameState.currentNovelData[gameState.novelIndex];
-    document.getElementById('novel-name').innerText=c.name;
-    document.getElementById('novel-text').innerText=c.text.replace('リーダー',gameState.name);
-}
-function nextNovel(){
-    gameState.novelIndex++;
-    if(gameState.novelIndex<gameState.currentNovelData.length){showNovelStep();}
-    else{changeScreen('screen-shooting');initShooting();}
-}
-
-var canvas=document.getElementById('gameCanvas');
-var ctx=canvas.getContext('2d');
-var animationId;
-var player={x:200,y:550,width:40,height:40,color:'#ffb7c5'};
-var bullets=[],enemies=[],enemyBullets=[],items=[];
-var lastEnemyTime=0,isGameOver=false;
-var boss=null,ch2StartTime=0,isCh2DefeatedSceneActive=false;
-var ch3Timer=15,ch3TargetsHit=0,ch3LastSpawnTime=0,ch3GameStartTime=0;
-var lastHealTime=0,lastShootTime=0,lastAllyShootTime=0;
-
-function initShooting(){
-    canvas.width=canvas.parentNode.clientWidth;
-    canvas.height=canvas.parentNode.clientHeight;
-    player.x=canvas.width/2-player.width/2;
-    player.y=canvas.height-100;
-    isGameOver=false;isCh2DefeatedSceneActive=false;
-    bullets=[];enemies=[];enemyBullets=[];items=[];
-    updateBombUI();updateAllyUI();
-
-    if(gameState.currentChapter===1){
-        document.getElementById('stage-title').innerText='STAGE 1';
-        document.getElementById('stage-objective').innerHTML='撃退数: <span id="kill-count">0</span> / 5';
-        gameState.killCount=0;boss=null;
-    } else if(gameState.currentChapter===2){
-        document.getElementById('stage-title').innerText='STAGE 2 (BOSS)';
-        document.getElementById('stage-objective').innerHTML='ボスを撃退せよ！';
-        boss={x:canvas.width/2-50,y:50,width:100,height:100,color:'#b085f5',direction:1,lastShotTime:0};
-        ch2StartTime=Date.now();
-    } else if(gameState.currentChapter===3){
-        document.getElementById('stage-title').innerText='STAGE 3 (特訓)';
-        document.getElementById('stage-objective').innerHTML='マト命中数: <span id="kill-count">0</span>/8 (残り<span id="ch3-timer">15</span>秒)';
-        ch3TargetsHit=0;ch3GameStartTime=Date.now();ch3LastSpawnTime=0;boss=null;
-    }
-    document.getElementById('hp-value').innerText=gameState.playerHP;
-
-    canvas.addEventListener('mousemove',function(e){_movePlayer(e.clientX);});
-    canvas.addEventListener('touchmove',function(e){
-        if(e.touches[0])_movePlayer(e.touches[0].clientX);
-        e.preventDefault();
-    },{passive:false});
-
-    lastEnemyTime=Date.now();
-    loop();
-}
-
-function _movePlayer(clientX){
-    var rect=canvas.getBoundingClientRect();
-    player.x=(clientX-rect.left)-player.width/2;
-    if(player.x<0)player.x=0;
-    if(player.x>canvas.width-player.width)player.x=canvas.width-player.width;
-}
-function updateBombUI(){
-    var btn=document.getElementById('bomb-button');
-    if(gameState.bombs>0&&gameState.currentChapter!==3){
-        btn.style.display='flex';
-        document.getElementById('bomb-count').innerText=gameState.bombs;
-    } else {btn.style.display='none';}
-}
-function updateAllyUI(){
-    var area=document.getElementById('ally-status');
-    area.innerText=gameState.allies.length>0
-        ?'同伴: '+gameState.allies.map(function(a){return a==='attacker'?'援護射撃':'自動回復';}).join(' + '):'';
-}
-function triggerBomb(){
-    if(gameState.bombs<=0||isGameOver||isCh2DefeatedSceneActive)return;
-    gameState.bombs--;updateBombUI();flashScreen();
-    if(gameState.currentChapter===1){
-        gameState.killCount+=enemies.length;
-        document.getElementById('kill-count').innerText=gameState.killCount;
-        enemies=[];
-        if(gameState.killCount>=5){endGame(true);}
-    }
-    enemyBullets=[];
-}
-
-function loop(){
-    if(isGameOver)return;
-    ctx.fillStyle='#e3fafc';ctx.fillRect(0,0,canvas.width,canvas.height);
-
-    ctx.fillStyle=player.color;ctx.beginPath();
-    ctx.arc(player.x+player.width/2,player.y+player.height/2,player.width/2,0,Math.PI*2);ctx.fill();
-    ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText('L',player.x+16,player.y+24);
-
-    var now=Date.now();
-
-    if(gameState.allies.includes('healer')&&now-lastHealTime>3000){
-        gameState.playerHP=Math.min(100,gameState.playerHP+5);
-        document.getElementById('hp-value').innerText=gameState.playerHP;
-        lastHealTime=now;
-    }
-
-    if(gameState.currentChapter===2&&!isCh2DefeatedSceneActive){
-        if(now-ch2StartTime>10000){
-            isCh2DefeatedSceneActive=true;
-            triggerCh2ScriptedDefeat();return;
-        }
-    }
-
-    if(!isCh2DefeatedSceneActive&&now-lastShootTime>150){
-        firePlayerBullet(player.x+player.width/2,player.y);
-        lastShootTime=now;
-    }
-    if(!isCh2DefeatedSceneActive&&gameState.allies.includes('attacker')&&now-lastAllyShootTime>300){
-        bullets.push({x:player.x-10,y:player.y+10,vx:0,vy:-6,width:6,height:12,isLaser:false});
-        bullets.push({x:player.x+player.width+5,y:player.y+10,vx:0,vy:-6,width:6,height:12,isLaser:false});
-        lastAllyShootTime=now;
-    }
-
-    // 仲間描画
-    for(var ai=0;ai<gameState.allies.length;ai++){
-        ctx.fillStyle=gameState.allies[ai]==='attacker'?'#ff6b6b':'#51cf66';
-        ctx.beginPath();
-        ctx.arc(player.x+player.width/2+(ai===0?-25:25),player.y+player.height+10,10,0,Math.PI*2);ctx.fill();
-    }
-
-    // 敵生成
-    if(gameState.currentChapter===1&&now-lastEnemyTime>1500){
-        enemies.push({x:Math.random()*(canvas.width-40),y:-40,width:35,height:35,
-                      color:'#96f2d7',speed:2,lastShotTime:now,isTarget:false});
-        lastEnemyTime=now;
-    } else if(gameState.currentChapter===2&&boss){
-        boss.x+=boss.direction*2;
-        if(boss.x<10||boss.x>canvas.width-boss.width-10)boss.direction*=-1;
-        ctx.fillStyle=boss.color;ctx.beginPath();
-        ctx.arc(boss.x+boss.width/2,boss.y+boss.height/2,boss.width/2,0,Math.PI*2);ctx.fill();
-        ctx.fillStyle='#333';ctx.fillRect(boss.x+30,boss.y+35,8,8);ctx.fillRect(boss.x+62,boss.y+35,8,8);
-        ctx.fillStyle='#ff6b8b';ctx.fillRect(boss.x+40,boss.y+65,20,5);
-        if(now-boss.lastShotTime>800){
-            var bx=boss.x+boss.width/2,by=boss.y+boss.height;
-            enemyBullets.push({x:bx,   y:by,vx:0,   vy:4,width:20,height:20,color:'#ff8787'});
-            enemyBullets.push({x:bx-10,y:by,vx:-2,  vy:3.5,width:20,height:20,color:'#ff8787'});
-            enemyBullets.push({x:bx+10,y:by,vx: 2,  vy:3.5,width:20,height:20,color:'#ff8787'});
-            boss.lastShotTime=now;
-        }
-    } else if(gameState.currentChapter===3){
-        var elapsedSec=Math.floor((now-ch3GameStartTime)/1000);
-        var remaining=Math.max(0,ch3Timer-elapsedSec);
-        var timerEl=document.getElementById('ch3-timer');
-        if(timerEl)timerEl.innerText=remaining;
-        if(remaining<=0){endCh3Training();return;}
-        if(now-ch3LastSpawnTime>1000){
-            enemies.push({x:Math.random()*(canvas.width-40),y:-40,width:30,height:30,
-                          color:'#1c7ed6',speed:3,lastShotTime:0,isTarget:true});
-            ch3LastSpawnTime=now;
-        }
-    }
-
-    // Ch1 ザコ敵の攻撃
-    if(gameState.currentChapter===1){
-        for(var ei2=0;ei2<enemies.length;ei2++){
-            if(now-enemies[ei2].lastShotTime>2000){
-                enemyBullets.push({x:enemies[ei2].x+enemies[ei2].width/2,y:enemies[ei2].y+enemies[ei2].height,
-                                   vx:0,vy:4,width:8,height:8,color:'#f03e3e'});
-                enemies[ei2].lastShotTime=now;
-            }
-        }
-    }
-
-    // 自機弾更新
-    var nextBullets=[];
-    for(var bi=0;bi<bullets.length;bi++){
-        var b=bullets[bi];
-        b.x+=(b.vx||0); b.y+=(b.vy||(-(b.speed||8)));
-        if(b.y<-30)continue;
-        ctx.fillStyle=b.isLaser?'#4dabf7':'#ff6b8b';
-        ctx.fillRect(b.x,b.y,b.width,b.height);
-        var hitBoss=false;
-        if(gameState.currentChapter===2&&boss){
-            if(b.x<boss.x+boss.width&&b.x+b.width>boss.x&&b.y<boss.y+boss.height&&b.y+b.height>boss.y){
-                ctx.fillStyle='rgba(255,255,255,.8)';ctx.beginPath();
-                ctx.arc(b.x+b.width/2,b.y+b.height/2,12,0,Math.PI*2);ctx.fill();
-                if(!b.isLaser)hitBoss=true;
-            }
-        }
-        if(!hitBoss)nextBullets.push(b);
-    }
-    bullets=nextBullets;
-
-    // 敵更新
-    var nextEnemies=[];
-    for(var ei=0;ei<enemies.length;ei++){
-        var e=enemies[ei];
-        e.y+=e.speed;
-        if(e.y>canvas.height)continue;
-        ctx.fillStyle=e.color;ctx.beginPath();
-        ctx.arc(e.x+e.width/2,e.y+e.height/2,e.width/2,0,Math.PI*2);ctx.fill();
-        if(e.isTarget){
-            ctx.fillStyle='#fff';ctx.beginPath();
-            ctx.arc(e.x+e.width/2,e.y+e.height/2,e.width/4,0,Math.PI*2);ctx.fill();
+        if (speakerName === "ボス" || speakerName === "警備ドローン" || speakerName === "システム") {
+            box.classList.add('talk-top');
+        } else if (speakerName === gameState.name || speakerName === "リーダー") {
+            box.classList.add('talk-left');
         } else {
-            ctx.fillStyle='#333';ctx.fillRect(e.x+10,e.y+12,3,3);ctx.fillRect(e.x+22,e.y+12,3,3);
+            // パートナー（ジム/キャシー）やサポート（トビー）は右側に表示
+            box.classList.add('talk-right');
         }
-        var killed=false,nextB2=[];
-        for(var bi2=0;bi2<bullets.length;bi2++){
-            if(!killed&&bullets[bi2].x<e.x+e.width&&bullets[bi2].x+bullets[bi2].width>e.x&&
-               bullets[bi2].y<e.y+e.height&&bullets[bi2].y+bullets[bi2].height>e.y){
-                killed=true;
-                if(bullets[bi2].isLaser)nextB2.push(bullets[bi2]);
-            } else {nextB2.push(bullets[bi2]);}
-        }
-        if(killed){
-            bullets=nextB2;
-            if(gameState.currentChapter===1){
-                gameState.killCount++;
-                document.getElementById('kill-count').innerText=gameState.killCount;
-                if(Math.random()<0.4)spawnItem(e.x,e.y);
-                if(gameState.killCount>=5){endGame(true);return;}
-            } else if(gameState.currentChapter===3&&e.isTarget){
-                ch3TargetsHit++;
-                document.getElementById('kill-count').innerText=ch3TargetsHit;
-            }
-        } else {nextEnemies.push(e);}
     }
-    enemies=nextEnemies;
 
-    // 敵弾更新
-    var nextEB=[];
-    for(var j=0;j<enemyBullets.length;j++){
-        var eb=enemyBullets[j];
-        eb.x+=(eb.vx||0); eb.y+=(eb.vy||4);
-        if(eb.y>canvas.height)continue;
-        ctx.fillStyle=eb.color;ctx.beginPath();
-        ctx.arc(eb.x+eb.width/2,eb.y+eb.height/2,eb.width/2,0,Math.PI*2);ctx.fill();
-        if(eb.x<player.x+player.width&&eb.x+eb.width>player.x&&
-           eb.y<player.y+player.height&&eb.y+eb.height>player.y){
-            if(gameState.allies.length>0){
-                gameState.allies.pop();updateAllyUI();flashScreen();
+    // 各章のノベル定義（動的な名前挿入対応）
+    function getNovelDataChapter1() {
+        return [
+            { name: gameState.partnerName, text: "ついにここまで来たね…！街はかわいいゾンビたちでいっぱいだ。" },
+            { name: gameState.partnerName, text: "私の後ろについてきて。画面を左右にスライドして、ゾンビをやっつけよう！" },
+            { name: "システム", text: "【ステージ1】10体のゾンビを撃破してください！(スコア: 1000点以上目標)" }
+        ];
+    }
+
+    function getNovelDataChapter2Intro() {
+        return [
+            { name: gameState.partnerName, text: "楽勝だったな、この調子でいこう！" },
+            { name: gameState.name, text: "油断は禁物だよ、パートナー！ 慎重に進もう。" }
+        ];
+    }
+
+    function getNovelDataChapter3Intro() {
+        return [
+            { name: "システム", text: "――ボスはパートナーを連れ去ってしまった。" },
+            { name: gameState.name, text: "うぅ……私のせいで、あの子が……。" },
+            { name: "トビー", text: "リーダー、落ち込んでいる暇はありません！ 追いかけるために、一度特訓をしましょう！" },
+            { name: "システム", text: "【ステージ3（特訓）】15秒以内に「訓練用マト」を8個以上破壊してください！" }
+        ];
+    }
+
+    function getNovelDataChapter4Intro() {
+        return [
+            { name: gameState.name, text: "ついにボスの本拠地近くまで来たね、トビー。" },
+            { name: "トビー", text: "リーダー、実は……本当にごめんなさい！" },
+            { name: "トビー", text: "ボスの情報を敵に売ってしまったのは、僕なんです。おじいちゃんの治療薬と引き換えにするって言われて……。" },
+            { name: "トビー", text: "でも、これ以上先にはリーダーを進ませるわけにはいかないんです！" },
+            { name: "トビー", text: "僕の警備ドローン『マカロン』、起動！！" }
+        ];
+    }
+
+    function getNovelDataChapter4Clear() {
+        return [
+            { name: "トビー", text: "うぅ……負けました。本当にごめんなさい……。" },
+            { name: gameState.name, text: "大丈夫だよ、トビー。一緒におじいちゃんも、さらわれたパートナーも救い出そう。" },
+            { name: "トビー", text: "リーダー……！ これ、お詫びと応援の気持ちです。持って行ってください！" },
+            { name: "システム", text: "（トビーから「強力な回復スプレー」と「ボム」を貰った！HPが最大まで回復し、ボムが2個増えました）" }
+        ];
+    }
+
+    function changeScreen(screenId) {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById(screenId).classList.add('active');
+    }
+
+    function flashScreen() {
+        const flash = document.getElementById('screen-flash');
+        flash.style.opacity = '1';
+        setTimeout(() => { flash.style.opacity = '0'; }, 300);
+    }
+
+    function goToOpening() {
+        gameState.name = document.getElementById('player-name').value || "リーダー";
+        gameState.dob = document.getElementById('player-dob').value;
+        gameState.gender = document.getElementById('player-gender').value;
+
+        // パートナーの性別固定ネーム
+        gameState.partnerName = (gameState.gender === 'female') ? 'ジム' : 'キャシー';
+
+        localStorage.setItem('resistance_player_info', JSON.stringify({
+            name: gameState.name, dob: gameState.dob, gender: gameState.gender, partnerName: gameState.partnerName
+        }));
+
+        changeScreen('screen-opening');
+    }
+
+    function skipOpening() {
+        startChapter1();
+    }
+
+    function startChapter1() {
+        gameState.currentChapter = 1;
+        gameState.novelIndex = 0;
+        gameState.currentNovelData = getNovelDataChapter1();
+        showNovelStep();
+        changeScreen('screen-novel');
+    }
+
+    function showNovelStep() {
+        const current = gameState.currentNovelData[gameState.novelIndex];
+        
+        // ダイアログ位置設定
+        updateDialogueStyle('novel-box', current.name);
+
+        document.getElementById('novel-name').innerText = current.name;
+        let text = current.text.replace("パートナー", gameState.partnerName);
+        document.getElementById('novel-text').innerText = text;
+    }
+
+    function nextNovel() {
+        gameState.novelIndex++;
+        if (gameState.novelIndex < gameState.currentNovelData.length) {
+            showNovelStep();
+        } else {
+            if (gameState.currentNovelData === getNovelDataChapter4Clear()) {
+                // チャプター4クリア画面へ
+                showChapter4ClearScreen();
             } else {
-                gameState.playerHP-=20;
-                document.getElementById('hp-value').innerText=gameState.playerHP;
-                flashScreen();
-                if(gameState.playerHP<=0){endGame(false);return;}
+                changeScreen('screen-shooting');
+                initShooting();
             }
-        } else {nextEB.push(eb);}
+        }
     }
-    enemyBullets=nextEB;
 
-    // アイテム更新
-    var nextItems=[];
-    for(var ii=0;ii<items.length;ii++){
-        var item=items[ii];
-        item.y+=2;
-        if(item.y>canvas.height)continue;
-        ctx.fillStyle=item.color;ctx.fillRect(item.x,item.y,item.width,item.height);
-        ctx.fillStyle='#000';ctx.font='bold 10px sans-serif';ctx.fillText(item.label,item.x+5,item.y+14);
-        if(item.x<player.x+player.width&&item.x+item.width>player.x&&
-           item.y<player.y+player.height&&item.y+item.height>player.y){
-            collectItem(item);
-        } else {nextItems.push(item);}
+    // --- シューティングエンジン（ Canvas ） ---
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    let animationId;
+
+    let player = { x: 200, y: 550, width: 40, height: 40, color: '#ffb7c5' };
+    let bullets = [];
+    let enemies = [];
+    let enemyBullets = [];
+    let items = [];
+    let lastEnemyTime = 0;
+    let isGameOver = false;
+    let boss = null;
+    let ch2StartTime = 0;
+    let isCh2DefeatedSceneActive = false;
+    let isCh2EventTriggered = false; // 「なんだか空気が重くなってきた」イベント管理
+
+    // チャプター3
+    let ch3Timer = 15;
+    let ch3TargetsHit = 0;
+    let ch3LastSpawnTime = 0;
+    let ch3GameStartTime = 0;
+
+    function initShooting() {
+        canvas.width = canvas.parentNode.clientWidth;
+        canvas.height = canvas.parentNode.clientHeight;
+
+        player.x = canvas.width / 2 - player.width / 2;
+        player.y = canvas.height - 100;
+        isGameOver = false;
+        isCh2DefeatedSceneActive = false;
+        isCh2EventTriggered = false;
+        bullets = [];
+        enemies = [];
+        enemyBullets = [];
+        items = [];
+        boss = null;
+
+        updateBombUI();
+        updateAllyUI();
+
+        gameState.killCount = 0;
+        document.getElementById('kill-count').innerText = gameState.killCount;
+        document.getElementById('score-val').innerText = gameState.score;
+        document.getElementById('boss-hp-area').style.display = "none";
+
+        if (gameState.currentChapter === 1) {
+            document.getElementById('stage-title').innerText = "STAGE 1";
+        } else if (gameState.currentChapter === 2) {
+            document.getElementById('stage-title').innerText = "STAGE 2";
+        } else if (gameState.currentChapter === 3) {
+            document.getElementById('stage-title').innerText = "STAGE 3 (特訓)";
+            document.getElementById('stage-objective').innerHTML = 'マト命中数: <span id="kill-count">0</span> / 8 (残り <span id="ch3-timer">15</span>秒)';
+            ch3TargetsHit = 0;
+            ch3GameStartTime = Date.now();
+            ch3LastSpawnTime = 0;
+        } else if (gameState.currentChapter === 4) {
+            document.getElementById('stage-title').innerText = "STAGE 4 (BOSS)";
+            document.getElementById('stage-objective').innerHTML = '警備ドローン『マカロン』を破壊せよ！';
+            document.getElementById('boss-hp-area').style.display = "block";
+            document.getElementById('boss-hp-val').innerText = "100";
+            
+            // トビーのドローンボス設定
+            boss = {
+                x: canvas.width / 2 - 40, y: 50, width: 80, height: 80,
+                color: '#f783ac', direction: 1, lastShotTime: 0, hp: 100
+            };
+        }
+
+        document.getElementById('hp-value').innerText = gameState.playerHP;
+        lastEnemyTime = Date.now();
+        loop();
     }
-    items=nextItems;
 
-    animationId=requestAnimationFrame(loop);
-}
-
-function firePlayerBullet(x,y){
-    var t=gameState.weaponType;
-    if(t==='normal'){
-        bullets.push({x:x-4,y:y,vx:0,vy:-8,width:8,height:15,speed:8,isLaser:false});
-    } else if(t==='double'){
-        bullets.push({x:x-15,y:y,vx:0,vy:-8,width:8,height:15,speed:8,isLaser:false});
-        bullets.push({x:x+7, y:y,vx:0,vy:-8,width:8,height:15,speed:8,isLaser:false});
-    } else if(t==='laser'){
-        bullets.push({x:x-3,y:y-50,vx:0,vy:-12,width:6,height:80,speed:12,isLaser:true});
-    } else if(t==='legend'){
-        bullets.push({x:x-4, y:y,vx:0,                      vy:-8,width:8,height:15,speed:8,isLaser:false});
-        bullets.push({x:x-15,y:y,vx:Math.sin(-0.2)*8,        vy:-Math.cos(0.2)*8,width:8,height:15,speed:8,isLaser:false});
-        bullets.push({x:x+7, y:y,vx:Math.sin(0.2)*8,         vy:-Math.cos(0.2)*8,width:8,height:15,speed:8,isLaser:false});
+    function updateBombUI() {
+        const btn = document.getElementById('bomb-button');
+        if (gameState.bombs > 0 && gameState.currentChapter !== 3) {
+            btn.style.display = 'flex';
+            document.getElementById('bomb-count').innerText = gameState.bombs;
+        } else {
+            btn.style.display = 'none';
+        }
     }
-}
 
-function spawnItem(x,y){
-    var types=[
-        {label:'W',color:'#e5dbff',type:'weapon_double'},
-        {label:'L',color:'#c5f6fa',type:'weapon_laser'},
-        {label:'B',color:'#ffc9c9',type:'bomb'},
-        {label:'A',color:'#ffdeeb',type:'ally_attacker'},
-        {label:'H',color:'#d3f9d8',type:'ally_healer'}
-    ];
-    var sel=types[Math.floor(Math.random()*types.length)];
-    items.push({x:x,y:y,width:20,height:20,color:sel.color,label:sel.label,type:sel.type});
-}
-
-function collectItem(item){
-    if(item.type==='weapon_double')gameState.weaponType='double';
-    if(item.type==='weapon_laser')gameState.weaponType='laser';
-    if(item.type==='bomb'){gameState.bombs++;updateBombUI();}
-    if(item.type==='ally_attacker'&&!gameState.allies.includes('attacker')){
-        gameState.allies.push('attacker');updateAllyUI();
+    function updateAllyUI() {
+        const area = document.getElementById('ally-status');
+        if (gameState.allies.length > 0) {
+            let alliesText = gameState.allies.map(a => a === 'attacker' ? '援護射撃' : '自動回復').join(' + ');
+            area.innerText = `同伴中: ${alliesText}`;
+        } else {
+            area.innerText = "";
+        }
     }
-    if(item.type==='ally_healer'&&!gameState.allies.includes('healer')){
-        gameState.allies.push('healer');updateAllyUI();
-    }
-}
 
-var battleTalkStep=0;
-var battleTalkData=[
-    {speaker:'リーダー',   text:'弾が切れた！？ どうして、こんな時に…！'},
-    {speaker:'リーダー',   text:'うわーっ！ やめろーっ！！'},
-    {speaker:'ボスゾンビ', text:'ふっふっふ……これをくらえー！'},
-    {speaker:'システム',   text:'（まばゆい光とともに、強烈な一撃が炸裂する！）'},
-    {speaker:'リーダー',   text:'うぅ……身体が、動かない……。'},
-    {speaker:'パートナー', text:'リーダー！！ そんな……ああっ、ここは一旦引くぞ！'}
-];
-
-function triggerCh2ScriptedDefeat(){
-    cancelAnimationFrame(animationId);
-    document.getElementById('battle-talk').style.display='block';
-    battleTalkStep=0;
-    showBattleTalk();
-}
-function showBattleTalk(){
-    var c=battleTalkData[battleTalkStep];
-    document.getElementById('battle-talk-speaker').innerText=c.speaker;
-    document.getElementById('battle-talk-text').innerText=c.text;
-    if(battleTalkStep===3){
+    function triggerBomb() {
+        if (gameState.bombs <= 0 || isGameOver || isCh2DefeatedSceneActive) return;
+        gameState.bombs--;
+        updateBombUI();
         flashScreen();
-        gameState.playerHP=1;
-        document.getElementById('hp-value').innerText=1;
-    }
-}
-function advanceBattleTalk(){
-    battleTalkStep++;
-    if(battleTalkStep<battleTalkData.length){showBattleTalk();}
-    else{
-        document.getElementById('battle-talk').style.display='none';
-        startChapter3Intro();
-    }
-}
 
-function endCh3Training(){
-    cancelAnimationFrame(animationId);
-    document.getElementById('restart-btn').style.display='block';
-    document.getElementById('next-chapter-btn').style.display='none';
-    if(ch3TargetsHit>=8){
-        gameState.weaponType='legend';
-        document.getElementById('clear-title').innerText='特訓大成功！';
-        document.getElementById('clear-status').innerText='マトを'+ch3TargetsHit+'個破壊しました！\n\n修行を乗り越えた'+gameState.name+'さんは、\n【伝説の3方向ショット】を習得しました！';
-    } else {
-        document.getElementById('clear-title').innerText='特訓終了';
-        document.getElementById('clear-status').innerText='破壊したマトは'+ch3TargetsHit+'個でした。（目標は8個以上）\n次のエリアへ向かいましょう！';
+        // 画面上部へのダメージ処理（新配列方式の順守）
+        if (gameState.currentChapter === 1 || (gameState.currentChapter === 2 && !isCh2EventTriggered)) {
+            gameState.killCount += enemies.length;
+            gameState.score += enemies.length * 100;
+            document.getElementById('kill-count').innerText = gameState.killCount;
+            document.getElementById('score-val').innerText = gameState.score;
+            enemies = [];
+            if (gameState.currentChapter === 1 && gameState.killCount >= 10) endGame(true);
+        } else if (gameState.currentChapter === 4 && boss) {
+            boss.hp -= 20;
+            document.getElementById('boss-hp-val').innerText = Math.max(0, boss.hp);
+            if (boss.hp <= 0) endGame(true);
+        }
+        enemyBullets = [];
     }
-    changeScreen('screen-clear');
-}
 
-function endGame(isWin){
-    isGameOver=true;cancelAnimationFrame(animationId);
-    if(gameState.currentChapter===1&&isWin){
-        document.getElementById('clear-title').innerText='STAGE 1 CLEAR!';
-        document.getElementById('clear-status').innerText=gameState.name+'さん、最初の戦いを無事に生き延びました！\n引き継いだアイテムや仲間と共に、さらなる脅威へと挑みます。';
-        document.getElementById('next-chapter-btn').style.display='block';
-        document.getElementById('restart-btn').style.display='none';
+    let lastHealTime = 0;
+    let lastShootTime = 0;
+    let lastAllyShootTime = 0;
+
+    function loop() {
+        if (isGameOver) return;
+
+        ctx.fillStyle = '#e3fafc';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // 自機の描画
+        ctx.fillStyle = player.color;
+        ctx.beginPath();
+        ctx.arc(player.x + player.width/2, player.y + player.height/2, player.width/2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#ffffff';
+        ctx.font = '10px sans-serif';
+        ctx.fillText("L", player.x + 16, player.y + 24);
+
+        let now = Date.now();
+
+        // ヒーラー同伴時の自動回復
+        if (gameState.allies.includes('healer')) {
+            if (now - lastHealTime > 3000) {
+                gameState.playerHP = Math.min(100, gameState.playerHP + 5);
+                document.getElementById('hp-value').innerText = gameState.playerHP;
+                lastHealTime = now;
+            }
+        }
+
+        // --- CHAPTER 2 専用：強制敗北イベントトリガー（中ボス出現後10秒経過で弾切れ） ---
+        if (gameState.currentChapter === 2 && isCh2EventTriggered && !isCh2DefeatedSceneActive) {
+            let elapsed = now - ch2StartTime;
+            if (elapsed > 10000) { 
+                isCh2DefeatedSceneActive = true;
+                triggerCh2ScriptedDefeat();
+                return;
+            }
+        }
+
+        // プレイヤーの弾丸発射（新配列方式＆vx/vy物理演算の順守）
+        let canShoot = !isCh2DefeatedSceneActive;
+        if (canShoot && now - lastShootTime > 150) {
+            firePlayerBullet(player.x + player.width / 2, player.y);
+            lastShootTime = now;
+        }
+
+        // アタッカーの援護射撃
+        if (canShoot && gameState.allies.includes('attacker') && now - lastAllyShootTime > 300) {
+            bullets.push({ x: player.x - 10, y: player.y + 10, width: 6, height: 12, vx: 0, vy: -6, isLaser: false });
+            bullets.push({ x: player.x + player.width + 5, y: player.y + 10, width: 6, height: 12, vx: 0, vy: -6, isLaser: false });
+            lastAllyShootTime = now;
+        }
+
+        // 仲間キャラの描画
+        gameState.allies.forEach((ally, index) => {
+            ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
+            ctx.beginPath();
+            let offset = index === 0 ? -25 : 25;
+            ctx.arc(player.x + player.width/2 + offset, player.y + player.height + 10, 10, 0, Math.PI * 2);
+            ctx.fill();
+        });
+
+        // --- STAGE 1 のザコ生成 ---
+        if (gameState.currentChapter === 1) {
+            if (now - lastEnemyTime > 1500) {
+                let enemyX = Math.random() * (canvas.width - 40);
+                enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
+                lastEnemyTime = now;
+            }
+        }
+        // --- STAGE 2 の通常・イベント・ボス処理 ---
+        else if (gameState.currentChapter === 2) {
+            if (!isCh2EventTriggered) {
+                // 中ボス出現前のザコ戦
+                if (now - lastEnemyTime > 1500) {
+                    let enemyX = Math.random() * (canvas.width - 40);
+                    enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
+                    lastEnemyTime = now;
+                }
+            } else if (boss) {
+                // 巨大ボス出現中
+                boss.x += boss.direction * 2;
+                if (boss.x < 10 || boss.x > canvas.width - boss.width - 10) boss.direction *= -1;
+
+                ctx.fillStyle = boss.color;
+                ctx.beginPath();
+                ctx.arc(boss.x + boss.width/2, boss.y + boss.height/2, boss.width/2, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.fillStyle = '#333';
+                ctx.fillRect(boss.x + 30, boss.y + 35, 8, 8);
+                ctx.fillRect(boss.x + 62, boss.y + 35, 8, 8);
+                ctx.fillStyle = '#ff6b8b';
+                ctx.fillRect(boss.x + 40, boss.y + 65, 20, 5);
+
+                if (now - boss.lastShotTime > 800) {
+                    // 下方向への直進弾
+                    enemyBullets.push({ x: boss.x + boss.width / 2 - 10, y: boss.y + boss.height, width: 20, height: 20, vx: 0, vy: 4, color: '#ff8787' });
+                    boss.lastShotTime = now;
+                }
+            }
+        }
+        // --- STAGE 3 の特訓（マト当て） ---
+        else if (gameState.currentChapter === 3) {
+            let elapsedSec = Math.floor((now - ch3GameStartTime) / 1000);
+            let remaining = Math.max(0, ch3Timer - elapsedSec);
+            document.getElementById('ch3-timer').innerText = remaining;
+
+            if (remaining <= 0) {
+                endCh3Training();
+                return;
+            }
+
+            if (now - ch3LastSpawnTime > 1000) {
+                let targetX = Math.random() * (canvas.width - 40);
+                enemies.push({ x: targetX, y: -40, width: 30, height: 30, color: '#1c7ed6', speed: 3, isTarget: true });
+                ch3LastSpawnTime = now;
+            }
+        }
+        // --- STAGE 4 のボス（トビードローン戦） ---
+        else if (gameState.currentChapter === 4 && boss) {
+            boss.x += boss.direction * 3;
+            if (boss.x < 10 || boss.x > canvas.width - boss.width - 10) boss.direction *= -1;
+
+            // ドローンの描画（マカロン風の可愛いピンク）
+            ctx.fillStyle = boss.color;
+            ctx.beginPath();
+            ctx.arc(boss.x + boss.width/2, boss.y + boss.height/2, boss.width/2, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#e64980';
+            ctx.fillRect(boss.x + boss.width/2 - 25, boss.y + boss.height/2 - 5, 50, 10); // クリームライン
+
+            if (now - boss.lastShotTime > 1000) {
+                // ドローンから3方向に拡散する弾（新ルール：vx / vy の物理演算順守）
+                let bSpeed = 4;
+                enemyBullets.push({ x: boss.x + boss.width/2, y: boss.y + boss.height, width: 12, height: 12, vx: 0, vy: bSpeed, color: '#f03e3e' });
+                enemyBullets.push({ x: boss.x + boss.width/2, y: boss.y + boss.height, width: 12, height: 12, vx: Math.sin(-0.3)*bSpeed, vy: Math.cos(-0.3)*bSpeed, color: '#f03e3e' });
+                enemyBullets.push({ x: boss.x + boss.width/2, y: boss.y + boss.height, width: 12, height: 12, vx: Math.sin(0.3)*bSpeed, vy: Math.cos(0.3)*bSpeed, color: '#f03e3e' });
+                boss.lastShotTime = now;
+            }
+        }
+
+        // ザコゾンビが攻撃してくる処理（通常時）
+        if (gameState.currentChapter === 1 || (gameState.currentChapter === 2 && !isCh2EventTriggered)) {
+            enemies.forEach(e => {
+                if (now - e.lastShotTime > 2000) {
+                    enemyBullets.push({ x: e.x + e.width/2 - 4, y: e.y + e.height, width: 8, height: 8, vx: 0, vy: 4, color: '#f03e3e' });
+                    e.lastShotTime = now;
+                }
+            });
+        }
+
+        // --- ルール1：新配列方式（forループを使用した要素除去） ---
+        // 1. プレイヤー弾の更新・当たり判定
+        let nextBullets = [];
+        for (let i = 0; i < bullets.length; i++) {
+            let b = bullets[i];
+            b.x += b.vx || 0;
+            b.y += b.vy || 0;
+
+            ctx.fillStyle = b.isLaser ? '#4dabf7' : '#ff6b8b';
+            ctx.fillRect(b.x, b.y, b.width, b.height);
+
+            let bulletRemoved = false;
+
+            // ボスとの判定（Ch.4 または Ch.2）
+            if (gameState.currentChapter === 4 && boss) {
+                if (b.x < boss.x + boss.width && b.x + b.width > boss.x &&
+                    b.y < boss.y + boss.height && b.y + b.height > boss.y) {
+                    bulletRemoved = true;
+                    boss.hp -= b.isLaser ? 3 : 5; // レーザーのバランス調整
+                    document.getElementById('boss-hp-val').innerText = Math.max(0, boss.hp);
+                    if (boss.hp <= 0) {
+                        endGame(true);
+                    }
+                }
+            } else if (gameState.currentChapter === 2 && boss) {
+                if (b.x < boss.x + boss.width && b.x + b.width > boss.x &&
+                    b.y < boss.y + boss.height && b.y + b.height > boss.y) {
+                    bulletRemoved = true;
+                    ctx.fillStyle = '#fff';
+                    ctx.fillRect(b.x - 10, b.y - 10, 20, 20);
+                }
+            }
+
+            // 敵（マト）との判定
+            for (let j = 0; j < enemies.length; j++) {
+                let e = enemies[j];
+                if (!e.toRemove && b.x < e.x + e.width && b.x + b.width > e.x &&
+                    b.y < e.y + e.height && b.y + b.height > e.y) {
+                    
+                    e.toRemove = true;
+                    if (!b.isLaser) bulletRemoved = true;
+
+                    if (gameState.currentChapter === 1 || (gameState.currentChapter === 2 && !isCh2EventTriggered)) {
+                        gameState.killCount++;
+                        gameState.score += 100;
+                        document.getElementById('kill-count').innerText = gameState.killCount;
+                        document.getElementById('score-val').innerText = gameState.score;
+                        
+                        if (Math.random() < 0.4) spawnItem(e.x, e.y);
+
+                        // 各チャプターの目標達成
+                        if (gameState.currentChapter === 1 && gameState.killCount >= 10) {
+                            endGame(true);
+                        } else if (gameState.currentChapter === 2 && gameState.killCount >= 3) {
+                            // チャプター2：3体倒した時点で一度進行を止めて異変イベントへ
+                            enemies = [];
+                            bullets = [];
+                            triggerCh2AirHeavyEvent();
+                        }
+                    } else if (gameState.currentChapter === 3 && e.isTarget) {
+                        ch3TargetsHit++;
+                        document.getElementById('kill-count').innerText = ch3TargetsHit;
+                    }
+                }
+            }
+
+            // 画面内かつ未接触の弾のみ残す
+            if (b.y >= -20 && b.y <= canvas.height + 20 && !bulletRemoved) {
+                nextBullets.push(b);
+            }
+        }
+        bullets = nextBullets;
+
+        // 2. 敵の更新（新配列方式）
+        let nextEnemies = [];
+        for (let i = 0; i < enemies.length; i++) {
+            let e = enemies[i];
+            e.y += e.speed;
+            
+            if (!e.toRemove && e.y <= canvas.height + 40) {
+                nextEnemies.push(e);
+
+                ctx.fillStyle = e.color;
+                ctx.beginPath();
+                ctx.arc(e.x + e.width/2, e.y + e.height/2, e.width/2, 0, Math.PI * 2);
+                ctx.fill();
+
+                if (gameState.currentChapter === 3) {
+                    ctx.fillStyle = '#ffffff';
+                    ctx.beginPath();
+                    ctx.arc(e.x + e.width/2, e.y + e.height/2, e.width/4, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+        }
+        enemies = nextEnemies;
+
+        // 3. 敵弾の更新（新配列方式）
+        let nextEnemyBullets = [];
+        for (let i = 0; i < enemyBullets.length; i++) {
+            let eb = enemyBullets[i];
+            eb.x += eb.vx || 0;
+            eb.y += eb.vy || 0;
+
+            let hitPlayer = false;
+
+            if (eb.x < player.x + player.width && eb.x + eb.width > player.x &&
+                eb.y < player.y + player.height && eb.y + eb.height > player.y) {
+                
+                hitPlayer = true;
+                if (gameState.allies.length > 0) {
+                    gameState.allies.pop();
+                    updateAllyUI();
+                    flashScreen();
+                } else {
+                    gameState.playerHP -= 20;
+                    document.getElementById('hp-value').innerText = gameState.playerHP;
+                    flashScreen();
+                    if (gameState.playerHP <= 0) {
+                        endGame(false);
+                    }
+                }
+            }
+
+            if (eb.y <= canvas.height + 20 && eb.y >= -20 && !hitPlayer) {
+                nextEnemyBullets.push(eb);
+
+                ctx.fillStyle = eb.color;
+                ctx.beginPath();
+                ctx.arc(eb.x + eb.width/2, eb.y + eb.height/2, eb.width/2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        enemyBullets = nextEnemyBullets;
+
+        // 4. アイテムの更新（新配列方式）
+        let nextItems = [];
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i];
+            item.y += 2;
+
+            let collected = false;
+
+            if (item.x < player.x + player.width && item.x + item.width > player.x &&
+                item.y < player.y + player.height && item.y + item.height > player.y) {
+                
+                collected = true;
+                collectItem(item);
+            }
+
+            if (item.y <= canvas.height + 20 && !collected) {
+                nextItems.push(item);
+
+                ctx.fillStyle = item.color;
+                ctx.fillRect(item.x, item.y, item.width, item.height);
+                ctx.fillStyle = '#000';
+                ctx.font = 'bold 10px sans-serif';
+                ctx.fillText(item.label, item.x + 5, item.y + 12);
+            }
+        }
+        items = nextItems;
+
+        animationId = requestAnimationFrame(loop);
+    }
+
+    // プレイヤーの弾の発射ベクトル割り振りの定義（ルール2：angleではなくvx/vy制御）
+    function firePlayerBullet(x, y) {
+        let type = gameState.weaponType;
+        let bSpeed = 8;
+        if (type === 'normal') {
+            bullets.push({ x: x - 4, y: y, width: 8, height: 15, vx: 0, vy: -bSpeed, isLaser: false });
+        } else if (type === 'double') {
+            bullets.push({ x: x - 15, y: y, width: 8, height: 15, vx: 0, vy: -bSpeed, isLaser: false });
+            bullets.push({ x: x + 7, y: y, width: 8, height: 15, vx: 0, vy: -bSpeed, isLaser: false });
+        } else if (type === 'laser') {
+            bullets.push({ x: x - 3, y: y - 50, width: 6, height: 80, vx: 0, vy: -12, isLaser: true });
+        } else if (type === 'legend') {
+            // 【3方向ショット】ルール2順守：斜め移動を角度(angle)ではなく事前にvx/vy速度ベクトルに分解して格納
+            bullets.push({ x: x - 4, y: y, width: 8, height: 15, vx: 0, vy: -bSpeed, isLaser: false });
+            bullets.push({ x: x - 15, y: y, width: 8, height: 15, vx: Math.sin(-0.2) * bSpeed, vy: -Math.cos(-0.2) * bSpeed, isLaser: false });
+            bullets.push({ x: x + 7, y: y, width: 8, height: 15, vx: Math.sin(0.2) * bSpeed, vy: -Math.cos(0.2) * bSpeed, isLaser: false });
+        }
+    }
+
+    function spawnItem(x, y) {
+        const types = [
+            { label: 'W', color: '#e5dbff', type: 'weapon_double' },
+            { label: 'L', color: '#c5f6fa', type: 'weapon_laser' },
+            { label: 'B', color: '#ffc9c9', type: 'bomb' },
+            { label: 'A', color: '#ffdeeb', type: 'ally_attacker' },
+            { label: 'H', color: '#d3f9d8', type: 'ally_healer' }
+        ];
+        let select = types[Math.floor(Math.random() * types.length)];
+        items.push({ x: x, y: y, width: 20, height: 20, color: select.color, label: select.label, type: select.type });
+    }
+
+    function collectItem(item) {
+        if (item.type === 'weapon_double') gameState.weaponType = 'double';
+        if (item.type === 'weapon_laser') gameState.weaponType = 'laser';
+        if (item.type === 'bomb') {
+            gameState.bombs++;
+            updateBombUI();
+        }
+        if (item.type === 'ally_attacker') {
+            if (!gameState.allies.includes('attacker')) gameState.allies.push('attacker');
+            updateAllyUI();
+        }
+        if (item.type === 'ally_healer') {
+            if (!gameState.allies.includes('healer')) gameState.allies.push('healer');
+            updateAllyUI();
+        }
+    }
+
+    // --- チャプター2：異変イベント演出（3体撃破時に割り込み） ---
+    let ch2EventStep = 0;
+    let ch2EventTalks = [];
+
+    function triggerCh2AirHeavyEvent() {
+        cancelAnimationFrame(animationId);
+        
+        ch2EventTalks = [
+            { speaker: gameState.name, text: "……なんだか、急に空気が重くなってきた？" },
+            { speaker: gameState.partnerName, text: "えっ、な、なにこれ！？ 画面が不気味に揺れて……" }
+        ];
+
+        document.getElementById('battle-talk-box').style.display = 'block';
+        ch2EventStep = 0;
+        showCh2EventTalk();
+    }
+
+    function showCh2EventTalk() {
+        let current = ch2EventTalks[ch2EventStep];
+        updateDialogueStyle('battle-talk-box', current.speaker);
+        document.getElementById('battle-talk-speaker').innerText = current.speaker;
+        document.getElementById('battle-talk-text').innerText = current.text.replace("パートナー", gameState.partnerName);
+    }
+
+    function advanceBattleTalk() {
+        if (gameState.currentChapter === 2) {
+            if (!isCh2EventTriggered) {
+                // 中ボス出現前のダイアログ
+                ch2EventStep++;
+                if (ch2EventStep < ch2EventTalks.length) {
+                    showCh2EventTalk();
+                } else {
+                    document.getElementById('battle-talk-box').style.display = 'none';
+                    isCh2EventTriggered = true;
+                    // ボスゾンビを出現させて戦闘再開
+                    boss = {
+                        x: canvas.width / 2 - 50, y: 50, width: 100, height: 100,
+                        color: '#b085f5', direction: 1, lastShotTime: 0
+                    };
+                    ch2StartTime = Date.now();
+                    loop();
+                }
+            } else {
+                // ボス戦終了時（弾切れ敗北ダイアログ）
+                battleTalkStep++;
+                if (battleTalkStep < battleTalkData.length) {
+                    showBattleTalk();
+                } else {
+                    document.getElementById('battle-talk-box').style.display = 'none';
+                    startChapter3Intro();
+                }
+            }
+        }
+    }
+
+    // --- チャプター2：強制敗北イベントダイアログ演出 ---
+    let battleTalkStep = 0;
+    let battleTalkData = [];
+
+    function triggerCh2ScriptedDefeat() {
+        cancelAnimationFrame(animationId);
+
+        battleTalkData = [
+            { speaker: "リーダー", text: "弾が切れた！？ どうして、こんな時に…！" },
+            { speaker: "リーダー", text: "うわーっ！ やめろーっ！！" },
+            { speaker: "ボス", text: "ふっふっふ……これをくらえー！" },
+            { speaker: "システム", text: "（まばゆい光とともに、強烈な一撃が炸裂する！）" },
+            { speaker: "リーダー", text: "うぅ……身体が、動かない……。" },
+            { speaker: "パートナー", text: "リーダー！！ そんな……ああっ、ここは一旦引くぞ！" }
+        ];
+
+        document.getElementById('battle-talk-box').style.display = 'block';
+        battleTalkStep = 0;
+        showBattleTalk();
+    }
+
+    function showBattleTalk() {
+        let current = battleTalkData[battleTalkStep];
+        updateDialogueStyle('battle-talk-box', current.speaker);
+        document.getElementById('battle-talk-speaker').innerText = current.speaker;
+        document.getElementById('battle-talk-text').innerText = current.text;
+
+        if (battleTalkStep === 3) {
+            flashScreen();
+            gameState.playerHP = 1;
+            document.getElementById('hp-value').innerText = gameState.playerHP;
+        }
+    }
+
+    // チャプター3への導入
+    function startChapter3Intro() {
+        gameState.currentChapter = 3;
+        gameState.novelIndex = 0;
+        gameState.currentNovelData = getNovelDataChapter3Intro();
+        showNovelStep();
+        changeScreen('screen-novel');
+    }
+
+    function endCh3Training() {
+        cancelAnimationFrame(animationId);
         changeScreen('screen-clear');
-    } else if(!isWin){
-        document.getElementById('clear-title').innerText='GAME OVER';
-        document.getElementById('clear-status').innerText='レジスタンスは壊滅してしまった……。';
-        document.getElementById('next-chapter-btn').style.display='none';
-        document.getElementById('restart-btn').style.display='block';
+
+        document.getElementById('restart-btn').style.display = "none";
+        document.getElementById('next-chapter-btn').style.display = "block";
+        document.getElementById('next-chapter-btn').setAttribute('onclick', 'startChapter4Intro()');
+
+        if (ch3TargetsHit >= 8) {
+            gameState.weaponType = 'legend';
+            document.getElementById('clear-title').innerText = "特訓大成功！";
+            document.getElementById('clear-status').innerText = 
+                `マトを ${ch3TargetsHit} 個破壊しました！\n\n【伝説の3方向ショット】を習得！\n裏切り者の手がかりを見つけ、ボスの隠れ家へと急ぎましょう。`;
+        } else {
+            document.getElementById('clear-title').innerText = "特訓終了";
+            document.getElementById('clear-status').innerText = 
+                `破壊したマトは ${ch3TargetsHit} 個でした。（目標8個以上）\n伝説の武器は解放できませんでしたが、次のエリアへ向かいましょう！`;
+        }
+    }
+
+    // --- チャプター4：導入・戦闘開始 ---
+    function startChapter4Intro() {
+        gameState.currentChapter = 4;
+        gameState.novelIndex = 0;
+        gameState.currentNovelData = getNovelDataChapter4Intro();
+        showNovelStep();
+        changeScreen('screen-novel');
+    }
+
+    // --- チャプター4クリア後のシナリオ遷移 ---
+    function triggerChapter4ClearScenario() {
+        gameState.novelIndex = 0;
+        gameState.currentNovelData = getNovelDataChapter4Clear();
+        showNovelStep();
+        changeScreen('screen-novel');
+    }
+
+    function showChapter4ClearScreen() {
+        // セーブデータに反映＆トビーからの贈り物
+        gameState.playerHP = 100;
+        gameState.bombs += 2;
+
+        let savedData = JSON.parse(localStorage.getItem('resistance_player_info')) || {};
+        savedData.progress = "chapter4_clear";
+        localStorage.setItem('resistance_player_info', JSON.stringify(savedData));
+
+        document.getElementById('clear-title').innerText = "STAGE 4 CLEAR!";
+        document.getElementById('clear-status').innerText = 
+            `裏切り者のトビーを許し、再び仲間に引き入れました！\nHPが全回復し、ボムがさらに2個増えました。\n\nいよいよ次は、さらわれたパートナーを救い出す決戦のステージです！`;
+        
+        document.getElementById('next-chapter-btn').style.display = "none";
+        document.getElementById('restart-btn').style.display = "block";
         changeScreen('screen-clear');
     }
-}
 
-function resetGame(){
-    gameState.weaponType='normal';gameState.bombs=1;gameState.allies=[];
-    gameState.speedLevel=1;gameState.playerHP=100;
-    changeScreen('screen-title');
-}
+    // シューティングゲームの最終判定
+    function endGame(isWin) {
+        isGameOver = true;
+        cancelAnimationFrame(animationId);
+
+        if (gameState.currentChapter === 1 && isWin) {
+            document.getElementById('clear-title').innerText = "STAGE 1 CLEAR!";
+            document.getElementById('clear-status').innerText = 
+                `${gameState.name}さん、最初の戦いを無事に生き延びました！\nアイテムや仲間を連れて、チャプター2に進みます。`;
+            document.getElementById('next-chapter-btn').style.display = "block";
+            document.getElementById('next-chapter-btn').setAttribute('onclick', 'startChapter2()');
+            document.getElementById('restart-btn').style.display = "none";
+            changeScreen('screen-clear');
+        } else if (gameState.currentChapter === 4 && isWin) {
+            // ドローン破壊成功、トビーの改心イベントへ
+            triggerChapter4ClearScenario();
+        } else if (!isWin) {
+            // HP 0
+            document.getElementById('clear-title').innerText = "GAME OVER";
+            document.getElementById('clear-status').innerText = "レジスタンスは壊滅してしまった……。";
+            document.getElementById('next-chapter-btn').style.display = "none";
+            document.getElementById('restart-btn').style.display = "block";
+            changeScreen('screen-clear');
+        }
+    }
+
+    function startChapter2() {
+        gameState.currentChapter = 2;
+        gameState.novelIndex = 0;
+        gameState.currentNovelData = getNovelDataChapter2Intro();
+        showNovelStep();
+        changeScreen('screen-novel');
+    }
+
+    function resetGame() {
+        gameState.weaponType = 'normal';
+        gameState.bombs = 1;
+        gameState.allies = [];
+        gameState.playerHP = 100;
+        gameState.score = 0;
+        changeScreen('screen-title');
+    }
 </script>
+
 </body>
 </html>
