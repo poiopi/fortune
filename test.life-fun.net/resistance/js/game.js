@@ -218,7 +218,7 @@ export class GameEngine {
             this.lastAllyShootTime = now;
         }
 
-        // 仲間たちの描画（★バグ解消箇所：this.playerに統一しフリーズを完全に解消しました）
+        // 仲間たちの描画（★Ver.4.5バグ完全解消：this.playerに統一しフリーズを完全に解消しました）
         this.gameState.allies.forEach((ally, index) => {
             this.ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
             this.ctx.beginPath();
