@@ -29,7 +29,8 @@ let battleTalkTimeoutId = null;
 let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
 // ==========================================
-// ★ルール4準拠：HTML上の各要素とイベントリスナーの登録を完全一元化
+// ★ルール4準拠：HTML上のすべてのボタンのイベント登録を完了
+// これにより「ゲームスタート」や「スキップ」が完全に動作します
 // ==========================================
 document.getElementById('title-start-btn').addEventListener('click', goToOpening);
 document.getElementById('op-skip-btn').addEventListener('click', skipOpening);
@@ -46,7 +47,7 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     // 会話ウインドウが表示されているときだけ動作
     if (talkBox && talkBox.style.display === 'block') {
         advanceBattleTalk();
-        // イベントの伝播を防ぎ、意図しない自機のワープ移動や自機ショットの中断を防ぎます
+        // イベントの伝播を防ぎ、自機が右下に勝手に動いたりショットが中断するのを防止
         e.stopPropagation();
     }
 });
@@ -237,7 +238,7 @@ function triggerCh4MidBossEvent() {
 function showCh4MidBossTalk() {
     let current = ch4MidBossTalks[ch4MidBossStep];
     updateDialogueStyle('battle-talk-box', current.speaker);
-    document.getElementById('battle-talk-speaker').innerText = current.speaker;
+    document.getElementById('battle-talk-speaker').innerText = document.getElementById('battle-talk-speaker').innerText = current.speaker;
     document.getElementById('battle-talk-text').innerText = current.text;
 
     startBattleTalkAutoplay(() => {
@@ -385,7 +386,7 @@ function endCh3Training() {
         gameState.currentNovelData = [
             { name: "トビー", text: `素晴らしいです、リーダー！ マトを ${game.ch3TargetsHit} 個も壊せましたね！` },
             { name: "リーダー", text: "うん！ 力が湧いてきた。あの子を助けるための伝説の力を感じる……！" },
-            { name: "システム", text: "【伝説の3方向ショット】が解放されました！次回ステージから永続的に使用可能になります。" }
+            { name: "システム", text: "【伝説 of 3方向ショット】が解放されました！次回ステージから永続的に使用可能になります。" }
         ];
     } else {
         gameState.currentScene = "ch3_clear";
@@ -407,7 +408,7 @@ function startChapter4Intro() {
     gameState.currentChapter = 4;
     gameState.currentScene = "ch4_intro";
     gameState.novelIndex = 0;
-    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーとの会話（最初の会話）をロード
+    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーとの最初の会話をロード
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
@@ -445,7 +446,7 @@ function showChapter4ClearDemoScreen() {
     changeScreen('screen-clear');
     document.getElementById('clear-title').innerText = "STAGE 4 END (STG DEMO)";
     document.getElementById('clear-status').innerText = 
-        `裏切り者のトビーを許し、再び仲間に引き入れました！\nHPが最大まで回復し、ボムが2個増えました。\n\nいよいよ次は、さらわれたパートナーを救い出す決戦のステージです！`;
+        `裏切り者のトビーを許し、再び仲間に引き入れました！\nHPが最大まで回復し、ボムが2個増えました。\n\nここでチャプター4のテストプレイは終了です。\n次は「チャプター5：運命の救出（決戦・マルチ分岐ステージ）」の追加となります！`;
     
     document.getElementById('next-chapter-btn').style.display = "none";
     document.getElementById('restart-btn').style.display = "block";

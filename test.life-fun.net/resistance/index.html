@@ -16,7 +16,6 @@
     <div id="screen-title" class="screen active">
         <!-- 
             ★ロゴ画像枠：後ほどsrc属性を指定してご活用ください。
-            その際、下のh1タグを非表示または削除してください。 
             <img src="logo.png" alt="フォーチューン ハザード" class="game-logo">
         -->
         <h1>フォーチューン ハザード</h1>
@@ -27,7 +26,6 @@
             <option value="female">女の子（主人公）</option>
             <option value="male">男の子（主人公）</option>
         </select>
-        <!-- ルール4：すべてのonclick属性を完全に廃止し、IDによる紐付けに統一 -->
         <button id="title-start-btn">ゲームスタート</button>
     </div>
 
@@ -62,7 +60,6 @@
     <div id="screen-shooting" class="screen" style="padding: 0;">
         <div id="game-ui">
             <div id="stage-title" style="margin-bottom: 4px; font-size: 16px;">STAGE 1</div>
-            <!-- ルール4適用：JSで書き換えるための要素を定義 -->
             <div id="stage-objective" style="margin-bottom: 4px;"></div>
             <div>撃退数: <span id="kill-count">0</span></div>
             <div>スコア: <span id="score-val">0</span> 点</div>
@@ -99,7 +96,6 @@
 
 </div>
 
-<!-- ルール4：モジュールエントリーJSをロード -->
 <script type="module" src="js/main.js"></script>
 </body>
 </html>
