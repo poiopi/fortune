@@ -500,6 +500,9 @@ select.form-input option{background:#1e1738;color:var(--text)}
 .article-link-arrow{color:var(--violet-lt);font-family:var(--ff-mono);font-size:.9rem;flex-shrink:0}
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
+.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc p:last-child{margin-bottom:0}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -538,6 +541,11 @@ footer a:hover{color:var(--gold)}
   </section>
 
   <div class="adsense-space"></div>
+
+  <div class="tool-desc">
+    <p>相性占いは、あなたと大切な人の生年月日や星座の組み合わせから、二人の価値観の傾向や惹かれ合うポイントを読み解く占術です。</p>
+    <p>このセルフ鑑定ツールでは、お互いの生年月日を入力するだけで、恋愛・仕事・友人としての相性を自動で算出します。お互いへの理解を深め、より良い関係を築くための参考にどうぞ。</p>
+  </div>
 
   <!-- 2カラムレイアウト -->
   <div class="main-layout">

@@ -163,6 +163,9 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 /* ── AdSense space ── */
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
+.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc p:last-child{margin-bottom:0}
 
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
@@ -188,6 +191,11 @@ footer a:hover{color:var(--gold)}
   </div>
 
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
+
+  <div class="tool-desc">
+    <p>西洋占星術の12星座占いは、生まれたときに太陽がどの星座に位置していたかを基に、基本性格や行動パターンを読み解く占術です。</p>
+    <p>このセルフ鑑定ツールでは、あなたの星座から本質的な強みや、恋愛・仕事での適性を算出します。自分を客観的に見つめ直し、毎日をより前向きに過ごすためのヒントとしてお気軽にご活用ください。</p>
+  </div>
 
   <!-- フォーム -->
   <div class="form-card" id="formArea">
