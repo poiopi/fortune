@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>フォーチューン ハザード - プロトタイプ Ver.4.8</title>
+    <title>フォーチューン ハザード - プロトタイプ Ver.5.01</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,12 +27,13 @@
             <option value="female">女の子（主人公）</option>
             <option value="male">男の子（主人公）</option>
         </select>
-        <button onclick="goToOpening()">ゲームスタート</button>
+        <!-- ルール4：すべてのonclick属性を完全に廃止し、IDによる紐付けに統一 -->
+        <button id="title-start-btn">ゲームスタート</button>
     </div>
 
     <!-- 1.5. オープニング画面 -->
     <div id="screen-opening" class="screen" style="background-color: #ffeef2;">
-        <button class="skip-btn" onclick="skipOpening()">スキップ ≫</button>
+        <button id="op-skip-btn" class="skip-btn">スキップ ≫</button>
         <h1>プロローグ</h1>
         <div id="opening-text-container">
             <p style="font-size: 15px; line-height: 1.8; color: #444; margin: 0;">
@@ -45,11 +46,10 @@
                 若きリーダーであるあなた（主人公）は、大切な仲間たちと共に、いま最後の戦いに赴く――。
             </p>
         </div>
-        <button onclick="skipOpening()" style="width: 60%;">次へ進む</button>
+        <button id="op-next-btn" style="width: 60%;">次へ進む</button>
     </div>
 
     <!-- 2. ノベル画面（共通） -->
-    <!-- 会話送りクリックリスナーは、JS側で画面全体（#screen-novel）へ安全に登録しています -->
     <div id="screen-novel" class="screen">
         <div id="character-stand">【立ち絵表示】</div>
         <div id="novel-box" class="novel-box-common">
@@ -67,7 +67,7 @@
             <div>撃退数: <span id="kill-count">0</span></div>
             <div>スコア: <span id="score-val">0</span> 点</div>
             
-            <!-- HP表示領域（テキストとゲージバー） -->
+            <!-- HP表示領域 -->
             <div id="hp-bar-area">
                 HP: <span id="hp-value">100</span> / 100
                 <div id="hp-gauge-container">
@@ -78,9 +78,9 @@
             <div id="boss-hp-area" style="display: none; color: #b085f5; font-weight: bold;">BOSS HP: <span id="boss-hp-val">100</span></div>
             <div id="ally-status" style="margin-top: 4px; color: #40c057;"></div>
         </div>
-        <div id="bomb-button" onclick="triggerBomb()">BOMB<br><span id="bomb-count">0</span></div>
+        <div id="bomb-button">BOMB<br><span id="bomb-count">0</span></div>
         
-        <!-- 戦闘中割り込みダイアログ用：こちらもJSの全画面クリックリスナーで制御します -->
+        <!-- 戦闘中割り込みダイアログ用 -->
         <div id="battle-talk-box" class="novel-box-common" style="display: none;">
             <strong id="battle-talk-speaker" style="color: #d05a7f;"></strong>
             <p id="battle-talk-text" style="margin-top: 5px;"></p>
@@ -94,7 +94,7 @@
         <h1 id="clear-title">STAGE CLEAR!</h1>
         <p id="clear-status" style="text-align: center; margin-bottom: 20px;"></p>
         <button id="next-chapter-btn">チャプター2へ進む</button>
-        <button id="restart-btn" style="display: none; background-color: #ccc;" onclick="resetGame()">最初から遊ぶ</button>
+        <button id="restart-btn" style="display: none; background-color: #ccc;">最初から遊ぶ</button>
     </div>
 
 </div>
@@ -103,3 +103,4 @@
 <script type="module" src="js/main.js"></script>
 </body>
 </html>
+```
