@@ -1,4 +1,3 @@
-```javascript
 export const chapter1 = {
     getNovelData: (gameState) => [
         { name: gameState.partnerName, text: "ついにここまで来たね…！街はかわいいゾンビたちでいっぱいだ。" },

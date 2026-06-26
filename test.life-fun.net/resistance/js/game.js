@@ -1,4 +1,3 @@
-```javascript
 export class GameEngine {
     constructor(gameState, onStageEnd, onCh2EventTrigger) {
         this.gameState = gameState;

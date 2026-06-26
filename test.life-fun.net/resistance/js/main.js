@@ -1,4 +1,3 @@
-```javascript
 import { chapter1 } from './chapters/chapter1.js';
 import { GameEngine } from './game.js';
 
@@ -144,4 +143,3 @@ window.skipOpening = skipOpening;
 window.nextNovel = nextNovel;
 window.triggerBomb = triggerBomb;
 window.resetGame = resetGame;
-```
