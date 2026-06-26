@@ -41,8 +41,8 @@ export class GameEngine {
 
     setupControls() {
         const self = this;
-        // ★重要：canvas単体ではなく、親要素である「#screen-shooting」全体で移動入力を監視します。
-        // これにより、指やマウスがボムボタンの上に重なっても移動入力をキャッチし続け、滑らかに移動可能です。
+        // 画面全体（#screen-shooting）でスライド入力を監視することで、
+        // ボムボタンの上をドラッグしても自機の移動が遮断されず、スムーズに移動し続けられます
         const shootScreen = document.getElementById('screen-shooting');
 
         // マウス移動（PC） - 上下左右（360度）の追従移動
@@ -181,10 +181,9 @@ export class GameEngine {
         this.ctx.fillStyle = '#e3fafc';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-        // 自機の描画（無敵時間中は100msごとにチカチカ点滅させて無敵感を表現）
         let now = Date.now();
-        let isInvincible = (now - this.player.lastHitTime < 1000);
-        let shouldDrawPlayer = !isInvincible || (Math.floor(now / 100) % 2 === 0);
+        // ★リアルタイム被弾比較を導入するため、フレーム開始時点の isInvincible 計算を廃止しました
+        let shouldDrawPlayer = (now - this.player.lastHitTime >= 1000) || (Math.floor(now / 100) % 2 === 0);
 
         if (shouldDrawPlayer) {
             this.ctx.fillStyle = this.player.color;
@@ -216,7 +215,7 @@ export class GameEngine {
                 this.isCh2DefeatedSceneActive = true;
                 this.cancelLoop();
                 this.onStageEnd(false, "ch2_scripted_defeat");
-                return;
+                return; // ★重要：以降の処理（フレーム予約含む）を即時遮断
             }
         }
 
@@ -291,7 +290,7 @@ export class GameEngine {
             if (remaining <= 0) {
                 this.cancelLoop();
                 this.onStageEnd(true, "ch3_time_up");
-                return;
+                return; // ★重要：以降の処理を即時遮断
             }
 
             if (now - this.ch3LastSpawnTime > 1000) {
@@ -403,10 +402,13 @@ export class GameEngine {
                         if (this.gameState.currentChapter === 1 && this.gameState.killCount >= 10) {
                             this.endGame(true);
                         } else if (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered && this.gameState.killCount >= 3) {
+                            // ★バグ修正：他フレームの重複検知を防ぐため、即座にフラグを立ててloopを強制終了
+                            this.isCh2EventTriggered = true; 
                             this.enemies = [];
                             this.bullets = [];
                             this.cancelLoop();
                             this.onCh2EventTrigger();
+                            return; // ★重要：以降の処理を遮断し次のフレームの予約を防ぎます
                         }
                     } else if (this.gameState.currentChapter === 3 && e.isTarget) {
                         this.ch3TargetsHit++;
@@ -439,8 +441,9 @@ export class GameEngine {
                 hitPlayerByBody = true;
                 e.toRemove = true; // 衝突したゾンビは消滅
 
-                if (!isInvincible) {
-                    this.player.lastHitTime = now; // 無敵時間開始
+                // ★バグ修正：無敵クールタイム判定をフレーム内のリアルタイム（直接比較）に修正
+                if (now - this.player.lastHitTime >= 1000) {
+                    this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
                     
                     if (this.gameState.allies.length > 0) {
                         this.gameState.allies.pop();
@@ -458,6 +461,7 @@ export class GameEngine {
                         this.flashScreen();
                         if (this.gameState.playerHP <= 0) {
                             this.endGame(false);
+                            return; // ★重要
                         }
                     }
                 }
@@ -495,9 +499,9 @@ export class GameEngine {
                 
                 hitPlayer = true;
 
-                // 被弾時：無敵時間中でなければダメージ計算
-                if (!isInvincible) {
-                    this.player.lastHitTime = now; // 無敵時間の開始（1秒間）
+                // ★バグ修正：無敵クールタイム判定をフレーム内のリアルタイム（直接比較）に修正
+                if (now - this.player.lastHitTime >= 1000) {
+                    this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
 
                     if (this.gameState.allies.length > 0) {
                         this.gameState.allies.pop();
@@ -517,6 +521,7 @@ export class GameEngine {
                         this.flashScreen();
                         if (this.gameState.playerHP <= 0) {
                             this.endGame(false);
+                            return; // ★重要
                         }
                     }
                 }
@@ -560,6 +565,7 @@ export class GameEngine {
         }
         this.items = nextItems;
 
+        // ★次フレームの予約（キャンセルまたは強制終了フラグがない時のみ安全に予約します）
         this.animationId = requestAnimationFrame(() => this.loop());
     }
 
@@ -617,6 +623,6 @@ export class GameEngine {
     endGame(isWin) {
         this.isGameOver = true;
         cancelAnimationFrame(this.animationId);
-        this.onStageEnd(isWin);
+        this.onStageEnd(isWin); // コールバックを呼んでクリア・ゲームオーバー画面へ
     }
 }
