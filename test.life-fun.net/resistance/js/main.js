@@ -1,5 +1,6 @@
 import { chapter1 } from './chapters/chapter1.js';
 import { chapter2 } from './chapters/chapter2.js'; 
+import { chapter3 } from './chapters/chapter3.js'; // ★チャプター3をインポート
 import { GameEngine } from './game.js';
 
 // ゲーム内グローバル状態
@@ -140,7 +141,11 @@ function nextNovel() {
     } else {
         // ルール3適用：安全な文字列フラグの比較で次のフローへ遷移
         if (gameState.currentScene === "ch2_defeat") {
-            showChapter2ClearDemoScreen();
+            // ★拉致イベント終了後は、チャプター3の特訓イントロへそのまま進みます
+            startChapter3Intro();
+        } else if (gameState.currentScene === "ch3_clear") {
+            // チャプター3（特訓）終了時、デモ完了画面へ
+            showChapter3ClearDemoScreen();
         } else {
             changeScreen('screen-shooting');
             adjustViewportHeight();
@@ -185,8 +190,7 @@ function showCh2EventTalk() {
             showCh2EventTalk();
         } else {
             document.getElementById('battle-talk-box').style.display = 'none';
-            // ★バグ完全解消：会話が完全に終わった段階で、はじめて「ボス戦開始（isCh2EventTriggered=true）」をセットします
-            game.isCh2EventTriggered = true; 
+            game.isCh2EventTriggered = true;
             
             // ボス出現
             game.boss = {
@@ -203,7 +207,7 @@ function advanceBattleTalk() {
     if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
 
     if (gameState.currentChapter === 2) {
-        // ★バグ完全解消：異変会話中なのか、ボス戦後の敗北会話中なのかを「isCh2EventTriggered」で正確に判定
+        // 異変会話中なのか、ボス戦後の敗北会話中なのかを「isCh2EventTriggered」で正確に判定
         if (!game.isCh2EventTriggered) {
             ch2EventStep++;
             if (ch2EventStep < ch2EventTalks.length) {
@@ -287,12 +291,50 @@ function startChapter2DefeatNovel() {
     startNovelAutoplay(); // 拉致イベントノベルも自動進行（3.5秒）を適用
 }
 
-// チャプター2テスト完了デモ終了画面
-function showChapter2ClearDemoScreen() {
+// チャプター3：涙の特訓ノベル開始（★新規追加）
+function startChapter3Intro() {
+    gameState.currentChapter = 3;
+    gameState.currentScene = "ch3_intro";
+    gameState.novelIndex = 0;
+    gameState.currentNovelData = chapter3.getNovelData(gameState);
+    showNovelStep();
+    changeScreen('screen-novel');
+    adjustViewportHeight();
+    startNovelAutoplay(); // 修行イントロも自動進行
+}
+
+// チャプター3：特訓結果判定と会話処理（★新規追加）
+function endCh3Training() {
+    if (game.ch3TargetsHit >= 8) {
+        gameState.weaponType = 'legend'; // 伝説の3方向ショットを永続解放！
+        gameState.currentScene = "ch3_clear";
+        gameState.novelIndex = 0;
+        gameState.currentNovelData = [
+            { name: "トビー", text: `素晴らしいです、リーダー！ マトを ${game.ch3TargetsHit} 個も壊せましたね！` },
+            { name: "リーダー", text: "うん！ 力が湧いてきた。あの子を助けるための伝説の力を感じる……！" },
+            { name: "システム", text: "【伝説の3方向ショット】が解放されました！次回ステージから永続的に使用可能になります。" }
+        ];
+    } else {
+        gameState.currentScene = "ch3_clear";
+        gameState.novelIndex = 0;
+        gameState.currentNovelData = [
+            { name: "トビー", text: `特訓終了です、リーダー。壊したマトは ${game.ch3TargetsHit} 個でしたね。（目標8個）` },
+            { name: "リーダー", text: "う、あの子を想うと焦ってしまって……でも、立ち止まってはいられない！" },
+            { name: "システム", text: "伝説の武器は解放できませんでしたが、次のエリアへ向かいましょう！" }
+        ];
+    }
+    showNovelStep();
+    changeScreen('screen-novel');
+    adjustViewportHeight();
+    startNovelAutoplay();
+}
+
+// チャプター3テスト完了デモ終了画面（★新規追加）
+function showChapter3ClearDemoScreen() {
     changeScreen('screen-clear');
-    document.getElementById('clear-title').innerText = "STAGE 2 END (STG DEMO)";
+    document.getElementById('clear-title').innerText = "STAGE 3 END (STG DEMO)";
     document.getElementById('clear-status').innerText = 
-        `パートナーの「${gameState.partnerName}」が連れ去られてしまいました……！\n\nここでチャプター2のテストプレイは終了です。\n次は「チャプター3：涙の特訓（修行ステージ）」の追加となります！`;
+        `修行（特訓）を終え、実戦への準備を整えました！\n（マトを8個以上撃破できていれば、次回の初期状態より3方向ショットで遊べます）\n\nここでチャプター3のテストプレイは終了です。\n次は「チャプター4：明かされる裏切り（トビー戦）」の追加となります！`;
     
     document.getElementById('next-chapter-btn').style.display = "none";
     document.getElementById('restart-btn').style.display = "block";
@@ -303,6 +345,11 @@ function showChapter2ClearDemoScreen() {
 function onStageFinished(isWin, specialReason) {
     if (specialReason === "ch2_scripted_defeat") {
         triggerCh2ScriptedDefeat();
+        return;
+    }
+    // ★追加：特訓時間切れ（15秒経過）による特訓終了コールバック処理
+    if (specialReason === "ch3_time_up") {
+        endCh3Training();
         return;
     }
 
