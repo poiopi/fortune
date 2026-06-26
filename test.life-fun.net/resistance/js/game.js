@@ -41,8 +41,13 @@ export class GameEngine {
 
     setupControls() {
         const self = this;
+        // ★重要：canvas単体ではなく、親要素である「#screen-shooting」全体で移動入力を監視します。
+        // これにより、指やマウスがボムボタンの上に重なっても移動入力をキャッチし続け、滑らかに移動可能です。
+        const shootScreen = document.getElementById('screen-shooting');
+
         // マウス移動（PC） - 上下左右（360度）の追従移動
-        this.canvas.addEventListener('mousemove', function(e) {
+        shootScreen.addEventListener('mousemove', function(e) {
+            if (self.isGameOver || self.isCh2DefeatedSceneActive) return;
             const rect = self.canvas.getBoundingClientRect();
             const scaleX = self.canvas.width / rect.width;
             const scaleY = self.canvas.height / rect.height;
@@ -56,7 +61,8 @@ export class GameEngine {
         });
 
         // タッチ移動（スマートフォン） - 上下左右（360度）の追従移動
-        this.canvas.addEventListener('touchmove', function(e) {
+        shootScreen.addEventListener('touchmove', function(e) {
+            if (self.isGameOver || self.isCh2DefeatedSceneActive) return;
             e.preventDefault();
             const rect = self.canvas.getBoundingClientRect();
             const scaleX = self.canvas.width / rect.width;
@@ -397,7 +403,6 @@ export class GameEngine {
                         if (this.gameState.currentChapter === 1 && this.gameState.killCount >= 10) {
                             this.endGame(true);
                         } else if (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered && this.gameState.killCount >= 3) {
-                            // ★バグ修正：無限トリガーを防ぐため、!this.isCh2EventTriggered のフラグ条件を厳密に追加
                             this.enemies = [];
                             this.bullets = [];
                             this.cancelLoop();
@@ -612,6 +617,6 @@ export class GameEngine {
     endGame(isWin) {
         this.isGameOver = true;
         cancelAnimationFrame(this.animationId);
-        this.onStageEnd(isWin); // コールバックを呼んでクリア・ゲームオーバー画面へ
+        this.onStageEnd(isWin);
     }
 }

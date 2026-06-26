@@ -24,11 +24,12 @@ let game = null;
 
 // 自動送り用タイマーの参照保持変数
 let battleTalkTimeoutId = null;
+let novelTimeoutId = null; // ★追加：通常のストーリー画面（ノベル画面）用オート進行タイマー
 
 // ルール4：HTML上の各ボタンに対して確実なイベント登録
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
 
-// ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
+// ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても進みます）
 document.getElementById('screen-novel').addEventListener('click', nextNovel);
 
 // ★重要：シューティング画面全体のクリックリスナー登録（割り込み会話の発生時、画面のどこをクリックしても進みます）
@@ -37,12 +38,12 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     // 会話ウインドウが表示されているときだけ動作
     if (talkBox && talkBox.style.display === 'block') {
         advanceBattleTalk();
-        // イベントの伝播を防ぎ、意図しない自機のワープ移動や自機ショットの中断を防ぎます
+        // イベントの伝播を防ぎ、自機が右下に勝手に動いたりショットが中断するのを防止
         e.stopPropagation();
     }
 });
 
-// ★重要（ボムワープバグ防止）：ボムボタンへの確実なイベント登録と、自機移動の干渉防止
+// ★重要（ボムワープバグ防止）：ボムボタンへの確実なイベント登録
 const bombBtn = document.getElementById('bomb-button');
 bombBtn.addEventListener('click', (e) => {
     triggerBomb();
@@ -108,6 +109,15 @@ function startChapter1() {
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
+    startNovelAutoplay(); // ★自動進行（3.5秒）を開始
+}
+
+// 通常ストーリー（ノベル）画面用の自動送りタイマー設定関数（標準3500ms）
+function startNovelAutoplay() {
+    if (novelTimeoutId) clearTimeout(novelTimeoutId);
+    novelTimeoutId = setTimeout(() => {
+        nextNovel();
+    }, 3500);
 }
 
 function showNovelStep() {
@@ -120,13 +130,16 @@ function showNovelStep() {
 }
 
 function nextNovel() {
+    // 手動で画面クリックがあった場合は自動進行用のタイマーをキャンセルします
+    if (novelTimeoutId) clearTimeout(novelTimeoutId);
+
     gameState.novelIndex++;
     if (gameState.novelIndex < gameState.currentNovelData.length) {
         showNovelStep();
+        startNovelAutoplay(); // 引き続き自動進行タイマーをセット
     } else {
         // ルール3適用：安全な文字列フラグの比較で次のフローへ遷移
         if (gameState.currentScene === "ch2_defeat") {
-            // チャプター2の敗北（拉致イベント）が終了した場合、テストプレイ完了画面へ
             showChapter2ClearDemoScreen();
         } else {
             changeScreen('screen-shooting');
@@ -239,7 +252,7 @@ function showBattleTalk() {
     document.getElementById('battle-talk-speaker').innerText = current.speaker;
     document.getElementById('battle-talk-text').innerText = current.text;
 
-    // ★HP 1 減少＆フラッシュの発生タイミング（ボスが叫んだ瞬間）
+    // HP 1 減少＆フラッシュの発生タイミング
     if (battleTalkStep === 2) {
         game.flashScreen();
         gameState.playerHP = 1;
@@ -269,6 +282,7 @@ function startChapter2DefeatNovel() {
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
+    startNovelAutoplay(); // ★拉致イベントノベルも自動進行（3.5秒）を適用
 }
 
 // チャプター2テスト完了デモ終了画面
@@ -324,12 +338,16 @@ function startChapter2() {
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
+    startNovelAutoplay(); // ★チャプター2の導入ノベルも自動進行（3.5秒）を適用
 }
 
-// ★バグ解消箇所：最初から遊ぶ（リセット）した際、ゲーム内Chapter情報やシーン状態も完全に初期化します
+// 最初から遊ぶ（リセット）
 function resetGame() {
-    gameState.currentChapter = 1; // 完全に1に戻す
-    gameState.currentScene = "ch1_intro"; // シーンも初期化
+    if (novelTimeoutId) clearTimeout(novelTimeoutId);
+    if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
+
+    gameState.currentChapter = 1; 
+    gameState.currentScene = "ch1_intro"; 
     gameState.weaponType = 'normal';
     gameState.bombs = 1;
     gameState.allies = [];
