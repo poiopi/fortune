@@ -40,7 +40,7 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     // 会話ウインドウが表示されているときだけ動作
     if (talkBox && talkBox.style.display === 'block') {
         advanceBattleTalk();
-        // イベントの伝播を防ぎ、自機が右下に勝手に動いたりショットが中断するのを防止
+        // イベントの伝播を防ぎ、意図しない自機のワープ移動や自機ショットの中断を防ぎます
         e.stopPropagation();
     }
 });
@@ -145,16 +145,23 @@ function nextNovel() {
             // 拉致イベント終了後は、チャプター3の特訓イントロへ
             startChapter3Intro();
         } else if (gameState.currentScene === "ch3_clear") {
-            // 特訓会話終了後は、チャプター4の導入（トビー裏切り）へ進みます（★Ver.4.9よりアップデート）
+            // 特訓会話終了後は、チャプター4の導入（トビー裏切り）へ進みます
             startChapter4Intro();
+        } else if (gameState.currentScene === "ch4_confession") {
+            // ★新規追加：トビーの裏切り告白ノベル終了後、戦闘へ移行し「お供巨大化エフェクト」および「大ボス戦」を起動！
+            changeScreen('screen-shooting');
+            adjustViewportHeight();
+            if (game) {
+                game.initGreatBossStage();
+            }
         } else if (gameState.currentScene === "ch4_clear") {
-            // ドローン撃破・トビー改心会話終了後は、チャプター4デモ終了画面へ
+            // 改心会話終了後は、チャプター4デモ終了画面へ
             showChapter4ClearDemoScreen();
         } else {
             changeScreen('screen-shooting');
             adjustViewportHeight();
             if (!game) {
-                game = new GameEngine(gameState, onStageFinished, triggerCh2AirHeavyEvent);
+                game = new GameEngine(gameState, onStageFinished, triggerCh2AirHeavyEvent, triggerCh4MidBossEvent);
             }
             game.initStage();
         }
@@ -194,7 +201,7 @@ function showCh2EventTalk() {
             showCh2EventTalk();
         } else {
             document.getElementById('battle-talk-box').style.display = 'none';
-            game.isCh2EventTriggered = true;
+            game.isCh2EventTriggered = true; 
             
             // ボス出現
             game.boss = {
@@ -202,6 +209,46 @@ function showCh2EventTalk() {
                 color: '#b085f5', direction: 1, lastShotTime: 0
             };
             game.ch2StartTime = Date.now();
+            game.loop();
+        }
+    }, 2500);
+}
+
+// ★新規追加：チャプター4の中ボス出現前ダイアログ制御
+let ch4MidBossStep = 0;
+let ch4MidBossTalks = [];
+
+function triggerCh4MidBossEvent() {
+    ch4MidBossTalks = [
+        { speaker: "トビー", text: "リーダー、こっちです！ 安全な裏道があります！" },
+        { speaker: gameState.name, text: "わかった、トビー！ 急ごう！" }
+    ];
+    document.getElementById('battle-talk-box').style.display = 'block';
+    ch4MidBossStep = 0;
+    showCh4MidBossTalk();
+}
+
+function showCh4MidBossTalk() {
+    let current = ch4MidBossTalks[ch4MidBossStep];
+    updateDialogueStyle('battle-talk-box', current.speaker);
+    document.getElementById('battle-talk-speaker').innerText = current.speaker;
+    document.getElementById('battle-talk-text').innerText = current.text;
+
+    startBattleTalkAutoplay(() => {
+        ch4MidBossStep++;
+        if (ch4MidBossStep < ch4MidBossTalks.length) {
+            showCh4MidBossTalk();
+        } else {
+            document.getElementById('battle-talk-box').style.display = 'none';
+            game.isCh4MidBossEventTriggered = true; // 中ボス戦闘フラグON
+            
+            // 中ボスの出現（HP: 20）
+            game.boss = {
+                x: game.canvas.width / 2 - 40, y: 50, width: 80, height: 80,
+                color: '#a5d8ff', direction: 1, lastShotTime: 0, hp: 20
+            };
+            document.getElementById('boss-hp-area').style.display = "block";
+            document.getElementById('boss-hp-val').innerText = "20";
             game.loop();
         }
     }, 2500);
@@ -227,13 +274,31 @@ function advanceBattleTalk() {
                 game.loop();
             }
         } else {
-            // 弾切れ強制敗北シーンのダイアログ送り
             battleTalkStep++;
             if (battleTalkStep < battleTalkData.length) {
                 showBattleTalk();
             } else {
                 document.getElementById('battle-talk-box').style.display = 'none';
                 startChapter2DefeatNovel();
+            }
+        }
+    } else if (gameState.currentChapter === 4) {
+        // ★チャプター4中ボス警告の手動送り対応
+        if (!game.isCh4MidBossEventTriggered) {
+            ch4MidBossStep++;
+            if (ch4MidBossStep < ch4MidBossTalks.length) {
+                showCh4MidBossTalk();
+            } else {
+                document.getElementById('battle-talk-box').style.display = 'none';
+                game.isCh4MidBossEventTriggered = true;
+                
+                game.boss = {
+                    x: game.canvas.width / 2 - 40, y: 50, width: 80, height: 80,
+                    color: '#a5d8ff', direction: 1, lastShotTime: 0, hp: 20
+                };
+                document.getElementById('boss-hp-area').style.display = "block";
+                document.getElementById('boss-hp-val').innerText = "20";
+                game.loop();
             }
         }
     }
@@ -332,7 +397,7 @@ function endCh3Training() {
     startNovelAutoplay();
 }
 
-// ★新規追加：チャプター4導入ノベル（トビー裏切り）開始
+// チャプター4導入ノベル（トビー裏切り）開始
 function startChapter4Intro() {
     gameState.currentChapter = 4;
     gameState.currentScene = "ch4_intro";
@@ -344,7 +409,18 @@ function startChapter4Intro() {
     startNovelAutoplay(); // 導入も自動進行
 }
 
-// ★新規追加：チャプター4ドローン撃破・トビー改心会話
+// ★新規追加：中ボス撃破、トビー裏切り白状ノベルの呼び出し処理
+function triggerCh4Confession() {
+    gameState.currentScene = "ch4_confession"; // 会話フラグ
+    gameState.novelIndex = 0;
+    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState); // トビーの告白ノベル
+    showNovelStep();
+    changeScreen('screen-novel');
+    adjustViewportHeight();
+    startNovelAutoplay();
+}
+
+// チャプター4ドローン撃破・トビー改心会話
 function triggerChapter4ClearScenario() {
     gameState.currentScene = "ch4_clear"; 
     gameState.novelIndex = 0;
@@ -355,7 +431,7 @@ function triggerChapter4ClearScenario() {
     startNovelAutoplay(); // 改心ノベルも自動進行
 }
 
-// ★新規追加：チャプター4クリアデモ終了画面
+// チャプター4クリアデモ終了画面
 function showChapter4ClearDemoScreen() {
     // トビーからの贈り物適用
     gameState.playerHP = 100;
@@ -381,6 +457,11 @@ function onStageFinished(isWin, specialReason) {
         endCh3Training();
         return;
     }
+    // ★新規追加：中ボス撃破時の告白ストーリーへの遷移処理
+    if (specialReason === "ch4_midboss_defeated") {
+        triggerCh4Confession();
+        return;
+    }
 
     if (gameState.currentChapter === 1 && isWin) {
         document.getElementById('clear-title').innerText = "STAGE 1 CLEAR!";
@@ -391,7 +472,7 @@ function onStageFinished(isWin, specialReason) {
         changeScreen('screen-clear');
         adjustViewportHeight();
     } else if (gameState.currentChapter === 4 && isWin) {
-        // ★新規追加：警備ドローン撃破、トビー改心イベントへ遷移
+        // 大ボスドローン撃破、トビー改心イベントへ遷移
         triggerChapter4ClearScenario();
     } else if (!isWin) {
         document.getElementById('clear-title').innerText = "GAME OVER";
