@@ -41,7 +41,7 @@ export class GameEngine {
 
     setupControls() {
         const self = this;
-        // マウス移動（PC） - ★上下左右（360度）の追従移動へ変更
+        // マウス移動（PC） - 上下左右（360度）の追従移動
         this.canvas.addEventListener('mousemove', function(e) {
             const rect = self.canvas.getBoundingClientRect();
             const scaleX = self.canvas.width / rect.width;
@@ -55,7 +55,7 @@ export class GameEngine {
             self.player.y = Math.max(0, Math.min(self.canvas.height - self.player.height, self.player.y));
         });
 
-        // タッチ移動（スマートフォン） - ★上下左右（360度）の追従移動へ変更
+        // タッチ移動（スマートフォン） - 上下左右（360度）の追従移動
         this.canvas.addEventListener('touchmove', function(e) {
             e.preventDefault();
             const rect = self.canvas.getBoundingClientRect();
@@ -396,7 +396,8 @@ export class GameEngine {
 
                         if (this.gameState.currentChapter === 1 && this.gameState.killCount >= 10) {
                             this.endGame(true);
-                        } else if (this.gameState.currentChapter === 2 && this.gameState.killCount >= 3) {
+                        } else if (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered && this.gameState.killCount >= 3) {
+                            // ★バグ修正：無限トリガーを防ぐため、!this.isCh2EventTriggered のフラグ条件を厳密に追加
                             this.enemies = [];
                             this.bullets = [];
                             this.cancelLoop();
@@ -611,6 +612,6 @@ export class GameEngine {
     endGame(isWin) {
         this.isGameOver = true;
         cancelAnimationFrame(this.animationId);
-        this.onStageEnd(isWin);
+        this.onStageEnd(isWin); // コールバックを呼んでクリア・ゲームオーバー画面へ
     }
 }

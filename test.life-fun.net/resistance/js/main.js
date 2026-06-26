@@ -37,22 +37,31 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     // 会話ウインドウが表示されているときだけ動作
     if (talkBox && talkBox.style.display === 'block') {
         advanceBattleTalk();
-        // イベントの伝播を防ぎ、意図しないボム暴発などを防ぎます
+        // イベントの伝播を防ぎ、意図しない自機のワープ移動や自機ショットの中断を防ぎます
         e.stopPropagation();
     }
 });
 
-// ==========================================
-// ★スマホのアドレスバー（URLバー）による画面見切れ対策
-// window.innerHeightから正確な高さを計算し、CSSカスタムプロパティ(--vh)に設定します
-// ==========================================
+// ★重要（ボムワープバグ防止）：ボムボタンへの確実なイベント登録と、自機移動の干渉防止
+const bombBtn = document.getElementById('bomb-button');
+bombBtn.addEventListener('click', (e) => {
+    triggerBomb();
+    e.stopPropagation(); // クリックイベントをシューティング画面に流さない
+});
+bombBtn.addEventListener('touchstart', (e) => {
+    triggerBomb();
+    e.stopPropagation(); 
+    e.preventDefault(); // 自機が右下にワープして移動してしまうのを100%完全に防止
+}, { passive: false });
+
+// スマホのアドレスバー対策（--vh設定）
 function adjustViewportHeight() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 window.addEventListener('resize', adjustViewportHeight);
 window.addEventListener('orientationchange', adjustViewportHeight);
-adjustViewportHeight(); // 起動時に実行
+adjustViewportHeight(); // 起動時実行
 
 function changeScreen(screenId) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -84,7 +93,7 @@ function goToOpening() {
     }));
 
     changeScreen('screen-opening');
-    adjustViewportHeight(); // 各画面遷移時にも念のため高さを再計算
+    adjustViewportHeight();
 }
 
 function skipOpening() {
@@ -115,23 +124,28 @@ function nextNovel() {
     if (gameState.novelIndex < gameState.currentNovelData.length) {
         showNovelStep();
     } else {
-        changeScreen('screen-shooting');
-        adjustViewportHeight();
-        // コールバック関数を渡してインスタンス生成
-        if (!game) {
-            game = new GameEngine(gameState, onStageFinished, triggerCh2AirHeavyEvent);
+        // ルール3適用：安全な文字列フラグの比較で次のフローへ遷移
+        if (gameState.currentScene === "ch2_defeat") {
+            // チャプター2の敗北（拉致イベント）が終了した場合、テストプレイ完了画面へ
+            showChapter2ClearDemoScreen();
+        } else {
+            changeScreen('screen-shooting');
+            adjustViewportHeight();
+            if (!game) {
+                game = new GameEngine(gameState, onStageFinished, triggerCh2AirHeavyEvent);
+            }
+            game.initStage();
         }
-        game.initStage();
     }
 }
 
-// ボス戦中会話イベントの自動進行タイマー設定関数（標準2500ms）
+// ボス戦中会話イベントの自動進行タイマー
 function startBattleTalkAutoplay(callback, delay = 2500) {
     if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
     battleTalkTimeoutId = setTimeout(callback, delay);
 }
 
-// チャプター2：雑魚戦中（3体撃破時）の異変イベント割り込み
+// チャプター2：通常戦中（3体撃破時）の異変
 let ch2EventStep = 0;
 let ch2EventTalks = [];
 
@@ -152,7 +166,6 @@ function showCh2EventTalk() {
     document.getElementById('battle-talk-speaker').innerText = current.speaker;
     document.getElementById('battle-talk-text').innerText = current.text.replace("パートナー", gameState.partnerName);
 
-    // ★自動送り：2.5秒後に自動的に次のメッセージへ進みます
     startBattleTalkAutoplay(() => {
         ch2EventStep++;
         if (ch2EventStep < ch2EventTalks.length) {
@@ -161,7 +174,7 @@ function showCh2EventTalk() {
             document.getElementById('battle-talk-box').style.display = 'none';
             game.isCh2EventTriggered = true;
             
-            // ボス出現設定
+            // ボス出現
             game.boss = {
                 x: game.canvas.width / 2 - 50, y: 50, width: 100, height: 100,
                 color: '#b085f5', direction: 1, lastShotTime: 0
@@ -173,7 +186,6 @@ function showCh2EventTalk() {
 }
 
 function advanceBattleTalk() {
-    // 手動で画面クリックがあった場合は自動送り用のタイマーをキャンセルします
     if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
 
     if (gameState.currentChapter === 2) {
@@ -185,7 +197,6 @@ function advanceBattleTalk() {
                 document.getElementById('battle-talk-box').style.display = 'none';
                 game.isCh2EventTriggered = true;
                 
-                // ボス出現設定
                 game.boss = {
                     x: game.canvas.width / 2 - 50, y: 50, width: 100, height: 100,
                     color: '#b085f5', direction: 1, lastShotTime: 0
@@ -239,7 +250,6 @@ function showBattleTalk() {
         }
     }
 
-    // ★自動送り：2.5秒後に自動的に次のメッセージ（または次のノベル画面）へ進みます
     startBattleTalkAutoplay(() => {
         battleTalkStep++;
         if (battleTalkStep < battleTalkData.length) {
@@ -253,7 +263,7 @@ function showBattleTalk() {
 
 // チャプター2：敗北（パートナー拉致）のフルノベル開始
 function startChapter2DefeatNovel() {
-    gameState.currentScene = "ch2_defeat"; // ルール3適用：フラグ変更
+    gameState.currentScene = "ch2_defeat"; 
     gameState.novelIndex = 0;
     gameState.currentNovelData = chapter2.getNovelDataDefeat(gameState);
     showNovelStep();
@@ -261,7 +271,7 @@ function startChapter2DefeatNovel() {
     adjustViewportHeight();
 }
 
-// チャプター2テスト完了（拉致イベント終了時）のデモ終了画面
+// チャプター2テスト完了デモ終了画面
 function showChapter2ClearDemoScreen() {
     changeScreen('screen-clear');
     document.getElementById('clear-title').innerText = "STAGE 2 END (STG DEMO)";
@@ -316,7 +326,10 @@ function startChapter2() {
     adjustViewportHeight();
 }
 
+// ★バグ解消箇所：最初から遊ぶ（リセット）した際、ゲーム内Chapter情報やシーン状態も完全に初期化します
 function resetGame() {
+    gameState.currentChapter = 1; // 完全に1に戻す
+    gameState.currentScene = "ch1_intro"; // シーンも初期化
     gameState.weaponType = 'normal';
     gameState.bombs = 1;
     gameState.allies = [];
