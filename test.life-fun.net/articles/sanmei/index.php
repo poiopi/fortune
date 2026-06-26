@@ -250,51 +250,51 @@ require __DIR__.'/../../inc/article-cta.php';
         <div class="star-element">五行：木（陽）</div>
         <div class="star-kw">自立・独立・信念を貫く。マイペースで一人でも強い自立派。</div>
       </a>
-      <div class="star-card">
+      <a href="/articles/sanmei/sekimon/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">石門星（せきもんせい）</div>
         <div class="star-element">五行：木（陰）</div>
         <div class="star-kw">調和・協調・広い人脈。グループの中で輝く調和の達人。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/houkaku/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">鳳閣星（ほうかくせい）</div>
         <div class="star-element">五行：火（陽）</div>
         <div class="star-kw">自由・表現・創造。個性的な発想と表現力に優れた自由人。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/chousho/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">調舒星（ちょうじょせい）</div>
         <div class="star-element">五行：火（陰）</div>
         <div class="star-kw">感性・芸術・完璧主義。繊細な感受性と深い芸術的才能。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/rokuson/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">禄存星（ろくそんせい）</div>
         <div class="star-element">五行：土（陽）</div>
         <div class="star-kw">奉仕・包容・人望。人を助け慕われる面倒見の良い奉仕派。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/shiroku/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">司禄星（しろくせい）</div>
         <div class="star-element">五行：土（陰）</div>
         <div class="star-kw">蓄積・堅実・継続力。地道に積み重ねる信頼の堅実派。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/shaki/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">車騎星（しゃきせい）</div>
         <div class="star-element">五行：金（陽）</div>
         <div class="star-kw">行動・突破・スピード。困難を突き破る行動力あふれる実践家。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/kengyu/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">牽牛星（けんぎゅうせい）</div>
         <div class="star-element">五行：金（陰）</div>
         <div class="star-kw">誠実・完璧・プライド。高い基準と責任感を持つ誠実な完全主義者。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/ryuko/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">龍高星（りゅうこうせい）</div>
         <div class="star-element">五行：水（陽）</div>
         <div class="star-kw">探求・革新・自由発想。型を超えた知的好奇心と革新力。</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/sanmei/gyokudo/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">玉堂星（ぎょくどうせい）</div>
         <div class="star-element">五行：水（陰）</div>
         <div class="star-kw">知性・学習・伝達力。知識を深め、人に伝える知性派。</div>
-      </div>
+      </a>
     </div>
   </section>
 
