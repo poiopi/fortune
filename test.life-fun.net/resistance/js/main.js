@@ -24,6 +24,20 @@ let game = null;
 // ルール4：HTML上の各ボタンに対して確実なイベント登録
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
 
+// ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
+document.getElementById('screen-novel').addEventListener('click', nextNovel);
+
+// ★重要：シューティング画面全体のクリックリスナー登録（割り込み会話の発生時、画面のどこをクリックしても進みます）
+document.getElementById('screen-shooting').addEventListener('click', (e) => {
+    const talkBox = document.getElementById('battle-talk-box');
+    // 会話ウインドウが表示されているときだけ動作
+    if (talkBox && talkBox.style.display === 'block') {
+        advanceBattleTalk();
+        // イベントの伝播を防ぎ、意図しないボム暴発などを防ぎます
+        e.stopPropagation();
+    }
+});
+
 function changeScreen(screenId) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     document.getElementById(screenId).classList.add('active');
