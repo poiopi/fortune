@@ -29,7 +29,7 @@ let battleTalkTimeoutId = null;
 let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
 // ==========================================
-// ★ルール4準順：HTML上の各要素とイベントリスナーの登録を完全一元化
+// ★ルール4準拠：HTML上の各要素とイベントリスナーの登録を完全一元化
 // ==========================================
 document.getElementById('title-start-btn').addEventListener('click', goToOpening);
 document.getElementById('op-skip-btn').addEventListener('click', skipOpening);
@@ -51,7 +51,7 @@ document.getElementById('screen-shooting').addEventListener('click', (e) => {
     }
 });
 
-// ボムボタンへの確実なイベント登録と自機移動の干渉防止（ワープバグ防止）
+// ★重要（ボムワープバグ防止）：ボムボタンへの確実なイベント登録
 const bombBtn = document.getElementById('bomb-button');
 bombBtn.addEventListener('click', (e) => {
     triggerBomb();
@@ -445,7 +445,7 @@ function showChapter4ClearDemoScreen() {
     changeScreen('screen-clear');
     document.getElementById('clear-title').innerText = "STAGE 4 END (STG DEMO)";
     document.getElementById('clear-status').innerText = 
-        `裏切り者のトビーを許し、再び仲間に引き入れました！\nHPが最大まで回復し、ボムが2個増えました。\n\nここでチャプター4のテストプレイは終了です。\n次は「チャプター5：運命の救出（決戦・マルチ分岐ステージ）」の追加となります！`;
+        `裏切り者のトビーを許し、再び仲間に引き入れました！\nHPが最大まで回復し、ボムが2個増えました。\n\nいよいよ次は、さらわれたパートナーを救い出す決戦のステージです！`;
     
     document.getElementById('next-chapter-btn').style.display = "none";
     document.getElementById('restart-btn').style.display = "block";
