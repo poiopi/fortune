@@ -1,6 +1,7 @@
 import { chapter1 } from './chapters/chapter1.js';
 import { chapter2 } from './chapters/chapter2.js'; 
-import { chapter3 } from './chapters/chapter3.js'; // ★チャプター3をインポート
+import { chapter3 } from './chapters/chapter3.js'; 
+import { chapter4 } from './chapters/chapter4.js'; // ★チャプター4をインポート
 import { GameEngine } from './game.js';
 
 // ゲーム内グローバル状態
@@ -141,11 +142,14 @@ function nextNovel() {
     } else {
         // ルール3適用：安全な文字列フラグの比較で次のフローへ遷移
         if (gameState.currentScene === "ch2_defeat") {
-            // ★拉致イベント終了後は、チャプター3の特訓イントロへそのまま進みます
+            // 拉致イベント終了後は、チャプター3の特訓イントロへ
             startChapter3Intro();
         } else if (gameState.currentScene === "ch3_clear") {
-            // チャプター3（特訓）終了時、デモ完了画面へ
-            showChapter3ClearDemoScreen();
+            // 特訓会話終了後は、チャプター4の導入（トビー裏切り）へ進みます（★Ver.4.9よりアップデート）
+            startChapter4Intro();
+        } else if (gameState.currentScene === "ch4_clear") {
+            // ドローン撃破・トビー改心会話終了後は、チャプター4デモ終了画面へ
+            showChapter4ClearDemoScreen();
         } else {
             changeScreen('screen-shooting');
             adjustViewportHeight();
@@ -207,7 +211,6 @@ function advanceBattleTalk() {
     if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
 
     if (gameState.currentChapter === 2) {
-        // 異変会話中なのか、ボス戦後の敗北会話中なのかを「isCh2EventTriggered」で正確に判定
         if (!game.isCh2EventTriggered) {
             ch2EventStep++;
             if (ch2EventStep < ch2EventTalks.length) {
@@ -291,7 +294,7 @@ function startChapter2DefeatNovel() {
     startNovelAutoplay(); // 拉致イベントノベルも自動進行（3.5秒）を適用
 }
 
-// チャプター3：涙の特訓ノベル開始（★新規追加）
+// チャプター3：涙の特訓ノベル開始
 function startChapter3Intro() {
     gameState.currentChapter = 3;
     gameState.currentScene = "ch3_intro";
@@ -303,7 +306,7 @@ function startChapter3Intro() {
     startNovelAutoplay(); // 修行イントロも自動進行
 }
 
-// チャプター3：特訓結果判定と会話処理（★新規追加）
+// チャプター3：特訓結果判定と会話処理
 function endCh3Training() {
     if (game.ch3TargetsHit >= 8) {
         gameState.weaponType = 'legend'; // 伝説の3方向ショットを永続解放！
@@ -329,12 +332,39 @@ function endCh3Training() {
     startNovelAutoplay();
 }
 
-// チャプター3テスト完了デモ終了画面（★新規追加）
-function showChapter3ClearDemoScreen() {
+// ★新規追加：チャプター4導入ノベル（トビー裏切り）開始
+function startChapter4Intro() {
+    gameState.currentChapter = 4;
+    gameState.currentScene = "ch4_intro";
+    gameState.novelIndex = 0;
+    gameState.currentNovelData = chapter4.getNovelDataIntro(gameState);
+    showNovelStep();
+    changeScreen('screen-novel');
+    adjustViewportHeight();
+    startNovelAutoplay(); // 導入も自動進行
+}
+
+// ★新規追加：チャプター4ドローン撃破・トビー改心会話
+function triggerChapter4ClearScenario() {
+    gameState.currentScene = "ch4_clear"; 
+    gameState.novelIndex = 0;
+    gameState.currentNovelData = chapter4.getNovelDataClear(gameState);
+    showNovelStep();
+    changeScreen('screen-novel');
+    adjustViewportHeight();
+    startNovelAutoplay(); // 改心ノベルも自動進行
+}
+
+// ★新規追加：チャプター4クリアデモ終了画面
+function showChapter4ClearDemoScreen() {
+    // トビーからの贈り物適用
+    gameState.playerHP = 100;
+    gameState.bombs += 2;
+
     changeScreen('screen-clear');
-    document.getElementById('clear-title').innerText = "STAGE 3 END (STG DEMO)";
+    document.getElementById('clear-title').innerText = "STAGE 4 END (STG DEMO)";
     document.getElementById('clear-status').innerText = 
-        `修行（特訓）を終え、実戦への準備を整えました！\n（マトを8個以上撃破できていれば、次回の初期状態より3方向ショットで遊べます）\n\nここでチャプター3のテストプレイは終了です。\n次は「チャプター4：明かされる裏切り（トビー戦）」の追加となります！`;
+        `裏切り者のトビーを許し、再び仲間に引き入れました！\nHPが最大まで回復し、ボムが2個増えました。\n\nここでチャプター4のテストプレイは終了です。\n次は「チャプター5：運命の救出（決戦・マルチ分岐ステージ）」の追加となります！`;
     
     document.getElementById('next-chapter-btn').style.display = "none";
     document.getElementById('restart-btn').style.display = "block";
@@ -347,7 +377,6 @@ function onStageFinished(isWin, specialReason) {
         triggerCh2ScriptedDefeat();
         return;
     }
-    // ★追加：特訓時間切れ（15秒経過）による特訓終了コールバック処理
     if (specialReason === "ch3_time_up") {
         endCh3Training();
         return;
@@ -361,6 +390,9 @@ function onStageFinished(isWin, specialReason) {
         document.getElementById('restart-btn').style.display = "none";
         changeScreen('screen-clear');
         adjustViewportHeight();
+    } else if (gameState.currentChapter === 4 && isWin) {
+        // ★新規追加：警備ドローン撃破、トビー改心イベントへ遷移
+        triggerChapter4ClearScenario();
     } else if (!isWin) {
         document.getElementById('clear-title').innerText = "GAME OVER";
         document.getElementById('clear-status').innerText = "レジスタンスは壊滅してしまった……。";
