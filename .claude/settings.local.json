@@ -50,7 +50,8 @@
       "PowerShell(Get-ChildItem 'C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles' -Recurse -Filter 'index.php' | ForEach-Object { $_.FullName.Replace\\('C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\',''\\) } | Sort-Object)",
       "mcp__Claude_in_Chrome__navigate",
       "mcp__Claude_in_Chrome__tabs_context_mcp",
-      "PowerShell(php -l \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\numerology\\\\index.php\" 2>&1)"
+      "PowerShell(php -l \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\numerology\\\\index.php\" 2>&1)",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\sanmei\\\\kansaku\")"
     ]
   }
 }

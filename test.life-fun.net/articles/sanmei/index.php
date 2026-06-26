@@ -245,11 +245,11 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>元命（げんめい）は算命学の中心概念で、日柱の十干（日干）から算出します。「十大主星」とも呼ばれ、10種類の星があり、その人の本質的な性格・才能・生き方のスタイルを表します。</p>
     <h3>十大主星の一覧</h3>
     <div class="star-grid">
-      <div class="star-card">
+      <a href="/articles/sanmei/kansaku/" class="star-card" style="text-decoration:none;color:inherit">
         <div class="star-name">貫索星（かんさくせい）</div>
         <div class="star-element">五行：木（陽）</div>
         <div class="star-kw">自立・独立・信念を貫く。マイペースで一人でも強い自立派。</div>
-      </div>
+      </a>
       <div class="star-card">
         <div class="star-name">石門星（せきもんせい）</div>
         <div class="star-element">五行：木（陰）</div>
