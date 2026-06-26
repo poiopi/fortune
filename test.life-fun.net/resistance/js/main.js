@@ -1,5 +1,5 @@
 import { chapter1 } from './chapters/chapter1.js';
-import { chapter2 } from './chapters/chapter2.js'; // ★チャプター2のモジュールをインポート
+import { chapter2 } from './chapters/chapter2.js'; 
 import { GameEngine } from './game.js';
 
 // ゲーム内グローバル状態
@@ -21,6 +21,9 @@ const gameState = {
 };
 
 let game = null;
+
+// 自動送り用タイマーの参照保持変数
+let battleTalkTimeoutId = null;
 
 // ルール4：HTML上の各ボタンに対して確実なイベント登録
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
@@ -113,6 +116,12 @@ function nextNovel() {
     }
 }
 
+// ボス戦中会話イベントの自動進行タイマー設定関数（ミリ秒指定、標準2500ms）
+function startBattleTalkAutoplay(callback, delay = 2500) {
+    if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
+    battleTalkTimeoutId = setTimeout(callback, delay);
+}
+
 // チャプター2：雑魚戦中（3体撃破時）の異変イベント割り込み
 let ch2EventStep = 0;
 let ch2EventTalks = [];
@@ -133,9 +142,31 @@ function showCh2EventTalk() {
     updateDialogueStyle('battle-talk-box', current.speaker);
     document.getElementById('battle-talk-speaker').innerText = current.speaker;
     document.getElementById('battle-talk-text').innerText = current.text.replace("パートナー", gameState.partnerName);
+
+    // ★自動送り：2.5秒後に自動的に次のメッセージへ進みます
+    startBattleTalkAutoplay(() => {
+        ch2EventStep++;
+        if (ch2EventStep < ch2EventTalks.length) {
+            showCh2EventTalk();
+        } else {
+            document.getElementById('battle-talk-box').style.display = 'none';
+            game.isCh2EventTriggered = true;
+            
+            // ボス出現設定
+            game.boss = {
+                x: game.canvas.width / 2 - 50, y: 50, width: 100, height: 100,
+                color: '#b085f5', direction: 1, lastShotTime: 0
+            };
+            game.ch2StartTime = Date.now();
+            game.loop();
+        }
+    }, 2500);
 }
 
 function advanceBattleTalk() {
+    // 手動で画面クリックがあった場合は自動送り用のタイマーをキャンセルします
+    if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
+
     if (gameState.currentChapter === 2) {
         if (!game.isCh2EventTriggered) {
             ch2EventStep++;
@@ -188,15 +219,27 @@ function showBattleTalk() {
     document.getElementById('battle-talk-speaker').innerText = current.speaker;
     document.getElementById('battle-talk-text').innerText = current.text;
 
+    // ★HP 1 減少＆フラッシュの発生タイミング（ボスが叫んだ瞬間）
     if (battleTalkStep === 2) {
         game.flashScreen();
         gameState.playerHP = 1;
         document.getElementById('hp-value').innerText = gameState.playerHP;
         const hpBar = document.getElementById('hp-gauge-bar');
         if (hpBar) {
-            hpBar.style.width = '1%';
+            hpBar.style.width = '1%'; // 視覚的にも1%に激減
         }
     }
+
+    // ★自動送り：2.5秒後に自動的に次のメッセージ（または次のノベル画面）へ進みます
+    startBattleTalkAutoplay(() => {
+        battleTalkStep++;
+        if (battleTalkStep < battleTalkData.length) {
+            showBattleTalk();
+        } else {
+            document.getElementById('battle-talk-box').style.display = 'none';
+            startChapter2DefeatNovel();
+        }
+    }, 2500);
 }
 
 // チャプター2：敗北（パートナー拉致）のフルノベル開始
