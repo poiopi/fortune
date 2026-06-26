@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>フォーチューン ハザード - プロトタイプ Ver.4.5</title>
+    <title>フォーチューン ハザード - プロトタイプ Ver.4.6</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -65,7 +65,16 @@
             <div id="stage-objective" style="margin-bottom: 4px;"></div>
             <div>撃退数: <span id="kill-count">0</span></div>
             <div>スコア: <span id="score-val">0</span> 点</div>
-            <div id="hp-bar-area">HP: <span id="hp-value">100</span> / 100</div>
+            
+            <!-- HP表示領域（テキストとゲージバー） -->
+            <div id="hp-bar-area">
+                HP: <span id="hp-value">100</span> / 100
+                <!-- 追加された視覚的HPゲージコンテナ -->
+                <div id="hp-gauge-container">
+                    <div id="hp-gauge-bar"></div>
+                </div>
+            </div>
+            
             <div id="boss-hp-area" style="display: none; color: #b085f5; font-weight: bold;">BOSS HP: <span id="boss-hp-val">100</span></div>
             <div id="ally-status" style="margin-top: 4px; color: #40c057;"></div>
         </div>

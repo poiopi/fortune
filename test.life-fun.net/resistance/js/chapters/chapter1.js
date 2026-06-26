@@ -1,3 +1,4 @@
+```javascript
 export const chapter1 = {
     getNovelData: (gameState) => [
         { name: gameState.partnerName, text: "ついにここまで来たね…！街はかわいいゾンビたちでいっぱいだ。" },
@@ -9,4 +10,3 @@ export const chapter1 = {
         document.getElementById('stage-objective').innerHTML = "10体倒せばクリア！";
     }
 };
-```

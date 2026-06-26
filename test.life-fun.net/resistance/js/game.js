@@ -1,3 +1,4 @@
+```javascript
 export class GameEngine {
     constructor(gameState, onStageEnd, onCh2EventTrigger) {
         this.gameState = gameState;
@@ -96,7 +97,13 @@ export class GameEngine {
             };
         }
 
+        // HP数値とビジュアルゲージの同期
         document.getElementById('hp-value').innerText = this.gameState.playerHP;
+        const hpBar = document.getElementById('hp-gauge-bar');
+        if (hpBar) {
+            hpBar.style.width = this.gameState.playerHP + '%';
+        }
+
         this.lastEnemyTime = Date.now();
         this.loop();
     }
@@ -170,6 +177,10 @@ export class GameEngine {
             if (now - this.lastHealTime > 3000) {
                 this.gameState.playerHP = Math.min(100, this.gameState.playerHP + 5);
                 document.getElementById('hp-value').innerText = this.gameState.playerHP;
+                const hpBar = document.getElementById('hp-gauge-bar');
+                if (hpBar) {
+                    hpBar.style.width = this.gameState.playerHP + '%';
+                }
                 this.lastHealTime = now;
             }
         }
@@ -199,7 +210,7 @@ export class GameEngine {
             this.lastAllyShootTime = now;
         }
 
-        // 仲間たちの描画
+        // 仲間たちの描画（★バグ解消箇所：playerからthis.playerへの参照修正）
         this.gameState.allies.forEach((ally, index) => {
             this.ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
             this.ctx.beginPath();
@@ -409,6 +420,13 @@ export class GameEngine {
                 } else {
                     this.gameState.playerHP -= 20;
                     document.getElementById('hp-value').innerText = this.gameState.playerHP;
+                    
+                    // HPビジュアルゲージバーの更新
+                    const hpBar = document.getElementById('hp-gauge-bar');
+                    if (hpBar) {
+                        hpBar.style.width = Math.max(0, this.gameState.playerHP) + '%';
+                    }
+
                     this.flashScreen();
                     if (this.gameState.playerHP <= 0) {
                         this.endGame(false);
@@ -514,4 +532,3 @@ export class GameEngine {
         this.onStageEnd(isWin); // コールバックを呼んでクリア・ゲームオーバー画面へ
     }
 }
-```
