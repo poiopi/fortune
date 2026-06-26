@@ -11,7 +11,7 @@ export class GameEngine {
         // プレイヤーの移動と無敵状態を保持するパラメータ
         this.player = { 
             x: 200, y: 550, width: 40, height: 40, color: '#ffb7c5',
-            lastHitTime: 0 
+            lastHitTime: 0 // 無敵時間（クールタイム）計算用の最終被弾ミリ秒
         };
         this.bullets = [];
         this.enemies = [];
@@ -24,6 +24,10 @@ export class GameEngine {
         this.isCh2EventTriggered = false; 
         this.isCh2DefeatedSceneActive = false;
         this.ch2StartTime = 0;
+
+        // ★チャプター1進行管理フラグ
+        this.isCh1BossActive = false; // 1面ボス出現フラグ
+        this.isBossEntranceAnimating = false; // ボスが画面外からスーッと登場する演出中フラグ
 
         // ★チャプター4進行管理フラグ
         this.isCh4MiniBossActive = false;       
@@ -50,12 +54,12 @@ export class GameEngine {
         this.lastHealTime = 0;
         this.animationId = null;
 
+        // イベントリスナーの登録（多重登録を防止するため、コンストラクタで1度だけ実行）
         this.setupControls();
     }
 
     setupControls() {
         const self = this;
-        // 画面全体（#screen-shooting）でスライド入力を監視します。
         const shootScreen = document.getElementById('screen-shooting');
 
         // マウス移動（PC） - 上下左右（360度）の追従移動
@@ -68,7 +72,7 @@ export class GameEngine {
             self.player.x = (e.clientX - rect.left) * scaleX - self.player.width / 2;
             self.player.y = (e.clientY - rect.top) * scaleY - self.player.height / 2;
 
-            // 画面外への飛び出し防止（クランプ：上下左右）
+            // クランプ
             self.player.x = Math.max(0, Math.min(self.canvas.width - self.player.width, self.player.x));
             self.player.y = Math.max(0, Math.min(self.canvas.height - self.player.height, self.player.y));
         });
@@ -84,7 +88,6 @@ export class GameEngine {
             self.player.x = (e.touches[0].clientX - rect.left) * scaleX - self.player.width / 2;
             self.player.y = (e.touches[0].clientY - rect.top) * scaleY - self.player.height / 2;
 
-            // 画面外への飛び出し防止（クランプ：上下左右）
             self.player.x = Math.max(0, Math.min(self.canvas.width - self.player.width, self.player.x));
             self.player.y = Math.max(0, Math.min(self.canvas.height - self.player.height, self.player.y));
         }, { passive: false });
@@ -99,6 +102,8 @@ export class GameEngine {
         this.player.lastHitTime = 0; 
 
         this.isGameOver = false;
+        this.isCh1BossActive = false; // 初期化
+        this.isBossEntranceAnimating = false; // 初期化
         this.isCh2EventStarted = false; 
         this.isCh2EventTriggered = false; 
         this.isCh2DefeatedSceneActive = false;
@@ -123,6 +128,9 @@ export class GameEngine {
         document.getElementById('kill-count').innerText = this.gameState.killCount;
         document.getElementById('score-val').innerText = this.gameState.score;
         document.getElementById('boss-hp-area').style.display = "none";
+
+        // ★バグ修正：左上のステージタイトルを現在のチャプター数に動的に書き換えます
+        document.getElementById('stage-title').innerText = "STAGE " + this.gameState.currentChapter;
 
         if (this.gameState.currentChapter === 2) {
             this.ch2StartTime = 0;
@@ -150,40 +158,6 @@ export class GameEngine {
         this.loop();
     }
 
-    // 大ボス出現の巨大化アニメーション初期化処理
-    initGreatBossStage() {
-        this.canvas.width = this.canvas.parentNode.clientWidth;
-        this.canvas.height = this.canvas.parentNode.clientHeight;
-
-        this.isGameOver = false;
-        this.bullets = [];
-        this.enemies = [];
-        this.enemyBullets = [];
-        this.items = [];
-        this.boss = null;
-
-        this.bossSpawnFrame = 0;
-        this.isCh4GreatBossSpawnAnimating = true; 
-        this.isCh4GreatBossActive = false;
-
-        if (this.gameState.allies.length > 0) {
-            this.animatingAllyType = this.gameState.allies.pop(); 
-            this.updateAllyUI();
-            
-            this.animatingAllyX = this.player.x + this.player.width / 2;
-            this.animatingAllyY = this.player.y + this.player.height + 10;
-        } else {
-            this.animatingAllyType = null;
-            this.animatingAllyX = this.canvas.width / 2;
-            this.animatingAllyY = -50;
-        }
-
-        document.getElementById('boss-hp-area').style.display = "block";
-        document.getElementById('boss-hp-val').innerText = "40"; 
-
-        this.loop();
-    }
-
     updateBombUI() {
         const btn = document.getElementById('bomb-button');
         if (this.gameState.bombs > 0 && this.gameState.currentChapter !== 3) {
@@ -205,7 +179,7 @@ export class GameEngine {
     }
 
     triggerBomb() {
-        if (this.gameState.bombs <= 0 || this.isGameOver || this.isCh2DefeatedSceneActive || this.isCh4GreatBossSpawnAnimating) return;
+        if (this.gameState.bombs <= 0 || this.isGameOver || this.isCh2DefeatedSceneActive || this.isCh4GreatBossSpawnAnimating || this.isBossEntranceAnimating) return;
         this.gameState.bombs--;
         this.updateBombUI();
         this.flashScreen();
@@ -216,18 +190,23 @@ export class GameEngine {
             document.getElementById('kill-count').innerText = this.gameState.killCount;
             document.getElementById('score-val').innerText = this.gameState.score;
             this.enemies = [];
-            if (this.gameState.currentChapter === 1 && this.gameState.killCount >= 10) this.endGame(true);
-        } else if (this.gameState.currentChapter === 4 && this.boss) {
+            // ボス未出現時のみボムでステージ1クリア
+            if (this.gameState.currentChapter === 1 && !this.isCh1BossActive && this.gameState.killCount >= 10) this.endGame(true);
+        } else if (this.boss) {
+            // ボスへのダメージ（ボムは一撃でHP 15分のダメージに設定）
             this.boss.hp -= 15;
             document.getElementById('boss-hp-val').innerText = Math.max(0, this.boss.hp);
             if (this.boss.hp <= 0) {
                 this.cancelLoop();
-                if (!this.isCh4MidBossEventStarted) {
+                if (this.gameState.currentChapter === 1) {
+                    this.endGame(true);
+                } else if (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventStarted) {
                     this.isCh4MidBossEventStarted = true;
                     this.boss = null;
                     this.onCh4MidBossTrigger();
-                } else if (!this.isCh4MidBossDefeated) {
+                } else if (this.gameState.currentChapter === 4 && this.isCh4MidBossEventTriggered && !this.isCh4MidBossDefeated) {
                     this.isCh4MidBossDefeated = true;
+                    this.boss = null;
                     this.onStageEnd(true, "ch4_midboss_defeated");
                 } else {
                     this.endGame(true);
@@ -250,9 +229,11 @@ export class GameEngine {
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
         let now = Date.now();
-        let shouldDrawPlayer = (now - this.player.lastHitTime >= 1000) || (Math.floor(now / 100) % 2 === 0);
+        let isInvincible = (now - this.player.lastHitTime < 1000);
+        let shouldDrawPlayer = (!isInvincible || (Math.floor(now / 100) % 2 === 0)) && !this.isCh4GreatBossSpawnAnimating;
 
         if (shouldDrawPlayer) {
+            // 自機の描画
             this.ctx.fillStyle = this.player.color;
             this.ctx.beginPath();
             this.ctx.arc(this.player.x + this.player.width/2, this.player.y + this.player.height/2, this.player.width/2, 0, Math.PI * 2);
@@ -262,6 +243,7 @@ export class GameEngine {
             this.ctx.fillText("L", this.player.x + 16, this.player.y + 24);
         }
 
+        // ヒーラー自動回復
         if (this.gameState.allies.includes('healer') && !this.isCh4GreatBossSpawnAnimating) {
             if (now - this.lastHealTime > 3000) {
                 this.gameState.playerHP = Math.min(100, this.gameState.playerHP + 5);
@@ -274,6 +256,7 @@ export class GameEngine {
             }
         }
 
+        // Ch.2 強制敗北用タイマー
         if (this.gameState.currentChapter === 2 && this.isCh2EventTriggered && !this.isCh2DefeatedSceneActive) {
             let elapsed = now - this.ch2StartTime;
             if (elapsed > 10000) { 
@@ -284,27 +267,34 @@ export class GameEngine {
             }
         }
 
-        let canShoot = !this.isCh2DefeatedSceneActive && !this.isCh4GreatBossSpawnAnimating;
+        // ★ボス出現演出中は「自機は動かせるが、弾（ショット）は出ない」仕様に制御
+        let canShoot = !this.isCh2DefeatedSceneActive && !this.isCh4GreatBossSpawnAnimating && !this.isBossEntranceAnimating;
         if (canShoot && now - this.lastShootTime > 150) {
             this.firePlayerBullet(this.player.x + this.player.width / 2, this.player.y);
             this.lastShootTime = now;
         }
 
+        // 仲間アタッカー援護射撃
         if (canShoot && this.gameState.allies.includes('attacker') && now - this.lastAllyShootTime > 300) {
             this.bullets.push({ x: this.player.x - 10, y: this.player.y + 10, width: 6, height: 12, vx: 0, vy: -6, isLaser: false });
             this.bullets.push({ x: this.player.x + this.player.width + 5, y: this.player.y + 10, width: 6, height: 12, vx: 0, vy: -6, isLaser: false });
             this.lastAllyShootTime = now;
         }
 
-        this.gameState.allies.forEach((ally, index) => {
-            this.ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
-            this.ctx.beginPath();
-            let offset = index === 0 ? -25 : 25;
-            this.ctx.arc(this.player.x + this.player.width/2 + offset, this.player.y + this.player.height + 10, 10, 0, Math.PI * 2);
-            this.ctx.fill();
-        });
+        // 仲間たちの描画
+        if (!this.isCh4GreatBossSpawnAnimating) {
+            this.gameState.allies.forEach((ally, index) => {
+                this.ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
+                this.ctx.beginPath();
+                let offset = index === 0 ? -25 : 25;
+                this.ctx.arc(this.player.x + this.player.width/2 + offset, this.player.y + this.player.height + 10, 10, 0, Math.PI * 2);
+                this.ctx.fill();
+            });
+        }
 
-        if (this.gameState.currentChapter === 1) {
+        // ゾンビ生成
+        if (this.gameState.currentChapter === 1 && !this.isCh1BossActive) {
+            // ボス未出現時のみザコを生成
             if (now - this.lastEnemyTime > 1500) {
                 let enemyX = Math.random() * (this.canvas.width - 40);
                 let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
@@ -319,7 +309,8 @@ export class GameEngine {
                     this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
                     this.lastEnemyTime = now;
                 }
-            } else if (this.boss) {
+            } else if (this.boss && !this.isBossEntranceAnimating) {
+                // 異変イベント会話が終了し、演出が終わったらボスが動き出す
                 this.boss.x += this.boss.direction * 2;
                 if (this.boss.x < 10 || this.boss.x > this.canvas.width - this.boss.width - 10) this.boss.direction *= -1;
 
@@ -360,7 +351,9 @@ export class GameEngine {
                 this.ch3LastSpawnTime = now;
             }
         } else if (this.gameState.currentChapter === 4) {
+            // チャプター4のザコ戦・ボス戦処理
             if (!this.isCh4MidBossEventTriggered) {
+                // 中ボス出現前の通常索敵
                 if (now - this.lastEnemyTime > 1500) {
                     let enemyX = Math.random() * (this.canvas.width - 40);
                     let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
@@ -368,6 +361,7 @@ export class GameEngine {
                     this.lastEnemyTime = now;
                 }
             } else if (this.isCh4GreatBossSpawnAnimating) {
+                // お供吸い込み＆巨大化アニメ
                 this.bossSpawnFrame++;
                 let progress = this.bossSpawnFrame / 60; 
                 
@@ -404,7 +398,8 @@ export class GameEngine {
                         lastShotTime: Date.now()
                     };
                 }
-            } else if (this.boss && (this.isCh4GreatBossActive || (this.isCh4MidBossEventTriggered && !this.isCh4MidBossDefeated) || (this.isCh4MiniBossActive && !this.isCh4MidBossEventStarted))) {
+            } else if (this.boss && !this.isBossEntranceAnimating && (this.isCh4GreatBossActive || (this.isCh4MidBossEventTriggered && !this.isCh4MidBossDefeated) || (this.isCh4MiniBossActive && !this.isCh4MidBossEventStarted))) {
+                // アクティブなボス（小ボス・中ボス・大ボス）の動作と移動
                 this.boss.x += this.boss.direction * 3;
                 if (this.boss.x < 10 || this.boss.x > this.canvas.width - this.boss.width - 10) {
                     this.boss.direction *= -1;
@@ -449,8 +444,31 @@ export class GameEngine {
             }
         }
 
-        // ザコ反撃
-        if (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered)) {
+        // ★ボス登場時の「画面外からスーッと降りてくる」汎用演出処理
+        if (this.isBossEntranceAnimating && this.boss) {
+            this.boss.y += 2; // スピード調整
+            if (this.boss.y >= this.boss.targetY) {
+                this.boss.y = this.boss.targetY;
+                this.isBossEntranceAnimating = false; // 演出終了、戦闘（ボス攻撃）開始！
+                this.boss.lastShotTime = Date.now();
+            }
+
+            // 登場中のボスを画面に描画
+            this.ctx.fillStyle = this.boss.color;
+            this.ctx.beginPath();
+            this.ctx.arc(this.boss.x + this.boss.width/2, this.boss.y + this.boss.height/2, this.boss.width/2, 0, Math.PI * 2);
+            this.ctx.fill();
+
+            // 1面のミニボスには簡単な装飾線をいれます
+            if (this.gameState.currentChapter === 1) {
+                this.ctx.fillStyle = '#e64980';
+                this.ctx.fillRect(this.boss.x + this.boss.width/2 - 10, this.boss.y + this.boss.height/2 - 2, 20, 4);
+            }
+        }
+
+        // ザコ反撃（ボスの登場演出中は反撃しない）
+        let canZombiesAttack = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating;
+        if (canZombiesAttack && (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered))) {
             this.enemies.forEach(e => {
                 if (now - e.lastShotTime > 2000) {
                     let bulletVx = 0;
@@ -495,24 +513,33 @@ export class GameEngine {
 
             let bulletRemoved = false;
 
-            if (this.gameState.currentChapter === 4 && this.boss) {
+            if (this.boss && !this.isBossEntranceAnimating) {
+                // 1面ボス、2面ボス、4面ボスの当たり判定を一元化
                 if (b.x < this.boss.x + this.boss.width && b.x + b.width > this.boss.x &&
                     b.y < this.boss.y + this.boss.height && b.y + b.height > this.boss.y) {
                     bulletRemoved = true;
                     
                     let damage = b.isLaser ? 2 : 1;
-                    this.boss.hp -= damage;
+                    this.boss.hp = (this.boss.hp || 0) - damage;
                     
-                    document.getElementById('boss-hp-val').innerText = Math.max(0, this.boss.hp);
+                    // ボスHP表示用のタグが存在していれば、数値を更新
+                    const hpValEl = document.getElementById('boss-hp-val');
+                    if (hpValEl && this.boss.hp !== undefined) {
+                        hpValEl.innerText = Math.max(0, this.boss.hp);
+                    }
                     
-                    if (this.boss.hp <= 0) {
+                    if (this.boss.hp !== undefined && this.boss.hp <= 0) {
                         this.cancelLoop();
-                        if (!this.isCh4MidBossEventStarted) {
+                        if (this.gameState.currentChapter === 1) {
+                            // ★1面ボス撃破時のクリア処理
+                            this.endGame(true);
+                            return; 
+                        } else if (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventStarted) {
                             this.isCh4MidBossEventStarted = true;
                             this.boss = null;
                             this.onCh4MidBossTrigger();
                             return; 
-                        } else if (!this.isCh4MidBossDefeated) {
+                        } else if (this.gameState.currentChapter === 4 && this.isCh4MidBossEventTriggered && !this.isCh4MidBossDefeated) {
                             this.isCh4MidBossDefeated = true;
                             this.boss = null;
                             this.onStageEnd(true, "ch4_midboss_defeated");
@@ -548,9 +575,27 @@ export class GameEngine {
                         
                         if (Math.random() < 0.4) this.spawnItem(e.x, e.y);
 
-                        if (this.gameState.currentChapter === 1 && this.gameState.killCount >= 10) {
-                            this.endGame(true);
-                            return; 
+                        // 通常ザコ撃破による各イベントトリガーの制御（ボスの登場演出中はトリガーさせない）
+                        if (this.gameState.currentChapter === 1 && !this.isCh1BossActive && this.gameState.killCount >= 8) {
+                            // ★1面の撃破数が8に達した瞬間に、画面外からミニボスがスーッと出現する演出を起動
+                            this.isCh1BossActive = true;
+                            this.enemies = []; // 雑魚を一度消去
+                            this.enemyBullets = []; // 敵の弾もリセット
+                            this.isBossEntranceAnimating = true; // ボス登場アニメON
+                            this.boss = {
+                                x: this.canvas.width / 2 - 25,
+                                y: -50,
+                                targetY: 60,
+                                width: 50,
+                                height: 50,
+                                color: '#fcc419', // 黄色いミニボス
+                                direction: 1,
+                                lastShotTime: 0,
+                                hp: 10 // 通常攻撃10発分（レーザーなら5発）
+                            };
+                            document.getElementById('boss-hp-area').style.display = "block";
+                            document.getElementById('boss-hp-val').innerText = "10";
+                            document.getElementById('stage-objective').innerHTML = 'ミニボスを撃破せよ！';
                         } else if (this.gameState.currentChapter === 2 && !this.isCh2EventStarted && this.gameState.killCount >= 3) {
                             this.isCh2EventStarted = true; 
                             this.enemies = [];
@@ -562,9 +607,19 @@ export class GameEngine {
                             this.isCh4MiniBossActive = true;
                             this.enemies = [];
                             this.bullets = [];
+                            
+                            // ★4面の小ボス(HP: 10)も画面外（y: -50）からスーッと登場する演出を起動します
+                            this.isBossEntranceAnimating = true;
                             this.boss = {
-                                x: this.canvas.width / 2 - 25, y: 50, width: 50, height: 50,
-                                color: '#fcc419', direction: 1, lastShotTime: 0, hp: 10
+                                x: this.canvas.width / 2 - 25,
+                                y: -50,
+                                targetY: 50,
+                                width: 50,
+                                height: 50,
+                                color: '#fcc419', 
+                                direction: 1,
+                                lastShotTime: 0,
+                                hp: 10
                             };
                             document.getElementById('boss-hp-area').style.display = "block";
                             document.getElementById('boss-hp-val').innerText = "10";
@@ -593,21 +648,24 @@ export class GameEngine {
             let e = this.enemies[i];
             e.y += e.speed;
 
+            // 自機との直接的な衝突（体当たり）判定
             let hitPlayerByBody = false;
             if (!e.toRemove && e.x < this.player.x + this.player.width && e.x + e.width > this.player.x &&
                 e.y < this.player.y + this.player.height && e.y + e.height > this.player.y) {
                 
                 hitPlayerByBody = true;
-                e.toRemove = true; 
+                e.toRemove = true; // 衝突したゾンビ（またはマト）は消滅
 
+                // ★修行ステージのマト（isTarget）であれば衝突してもダメージを受けない安全対策
                 if (!e.isTarget && (now - this.player.lastHitTime >= 1000)) {
-                    this.player.lastHitTime = now; 
+                    this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
                     
                     if (this.gameState.allies.length > 0) {
                         this.gameState.allies.pop();
                         this.updateAllyUI();
                         this.flashScreen();
                     } else {
+                        // 体当たりダメージ
                         this.gameState.playerHP -= 15;
                         document.getElementById('hp-value').innerText = this.gameState.playerHP;
                         
@@ -618,7 +676,7 @@ export class GameEngine {
                         this.flashScreen();
                         if (this.gameState.playerHP <= 0) {
                             this.endGame(false);
-                            return; 
+                            return; // ★重要
                         }
                     }
                 }
@@ -642,8 +700,9 @@ export class GameEngine {
         }
         this.enemies = nextEnemies;
 
-        // 3. 敵弾更新
+        // 3. 敵弾更新（ボス登場中や大ボス巨大化演出中は被弾判定を一時停止）
         let nextEnemyBullets = [];
+        let canTakeBulletDamage = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating;
         for (let i = 0; i < this.enemyBullets.length; i++) {
             let eb = this.enemyBullets[i];
             eb.x += eb.vx || 0;
@@ -651,22 +710,24 @@ export class GameEngine {
 
             let hitPlayer = false;
 
-            if (eb.x < this.player.x + this.player.width && eb.x + eb.width > this.player.x &&
+            if (canTakeBulletDamage && eb.x < this.player.x + this.player.width && eb.x + eb.width > this.player.x &&
                 eb.y < this.player.y + this.player.height && eb.y + eb.height > this.player.y) {
                 
                 hitPlayer = true;
 
                 if (now - this.player.lastHitTime >= 1000) {
-                    this.player.lastHitTime = now; 
+                    this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
 
                     if (this.gameState.allies.length > 0) {
                         this.gameState.allies.pop();
                         this.updateAllyUI();
                         this.flashScreen();
                     } else {
+                        // 弾被弾ダメージ
                         this.gameState.playerHP -= 10;
                         document.getElementById('hp-value').innerText = this.gameState.playerHP;
                         
+                        // HPビジュアルゲージバーの更新
                         const hpBar = document.getElementById('hp-gauge-bar');
                         if (hpBar) {
                             hpBar.style.width = Math.max(0, this.gameState.playerHP) + '%';
@@ -675,7 +736,7 @@ export class GameEngine {
                         this.flashScreen();
                         if (this.gameState.playerHP <= 0) {
                             this.endGame(false);
-                            return; 
+                            return; // ★重要
                         }
                     }
                 }
@@ -692,15 +753,16 @@ export class GameEngine {
         }
         this.enemyBullets = nextEnemyBullets;
 
-        // 4. アイテム更新
+        // 4. アイテム更新（ボス登場中や大ボス巨大化演出中はアイテム獲得判定を一時停止）
         let nextItems = [];
+        let canCollectItems = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating;
         for (let i = 0; i < this.items.length; i++) {
             let item = this.items[i];
             item.y += 2;
 
             let collected = false;
 
-            if (item.x < this.player.x + this.player.width && item.x + item.width > this.player.x &&
+            if (canCollectItems && item.x < this.player.x + this.player.width && item.x + item.width > this.player.x &&
                 item.y < this.player.y + this.player.height && item.y + item.height > this.player.y) {
                 
                 collected = true;
@@ -719,6 +781,7 @@ export class GameEngine {
         }
         this.items = nextItems;
 
+        // 次フレームの予約
         this.animationId = requestAnimationFrame(() => this.loop());
     }
 
@@ -733,6 +796,7 @@ export class GameEngine {
         } else if (type === 'laser') {
             this.bullets.push({ x: x - 3, y: y - 50, width: 6, height: 80, vx: 0, vy: -12, isLaser: true });
         } else if (type === 'legend') {
+            // ルール2：3方向ショットもvx / vy分解を徹底
             this.bullets.push({ x: x - 4, y: y, width: 8, height: 15, vx: 0, vy: -bSpeed, isLaser: false });
             this.bullets.push({ x: x - 15, y: y, width: 8, height: 15, vx: Math.sin(-0.2) * bSpeed, vy: -Math.cos(-0.2) * bSpeed, isLaser: false });
             this.bullets.push({ x: x + 7, y: y, width: 8, height: 15, vx: Math.sin(0.2) * bSpeed, vy: -Math.cos(0.2) * bSpeed, isLaser: false });
