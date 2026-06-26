@@ -1,3 +1,4 @@
+```javascript
 import { chapter1 } from './chapters/chapter1.js';
 import { GameEngine } from './game.js';
 

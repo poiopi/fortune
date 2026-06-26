@@ -1,3 +1,4 @@
+```css
 body {
     margin: 0; padding: 0; background-color: #f7e6eb;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -79,6 +80,25 @@ canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
     background: rgba(255,255,255,0.85); padding: 8px; border-radius: 8px;
     line-height: 1.4; z-index: 6;
 }
+
+/* ビジュアルHPゲージコンテナ */
+#hp-gauge-container {
+    width: 110px;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-top: 4px;
+    overflow: hidden;
+    border: 1px solid #ffb7c5;
+}
+/* ビジュアルHPゲージバー */
+#hp-gauge-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #ff6b8b; /* かわいいレジスタンスピンク */
+    transition: width 0.2s ease-out;
+}
+
 #bomb-button {
     position: absolute; bottom: 30px; right: 20px;
     width: 60px; height: 60px; border-radius: 50%;
