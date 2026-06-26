@@ -1,4 +1,3 @@
-```css
 body {
     margin: 0; padding: 0; background-color: #f7e6eb;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -112,4 +111,3 @@ canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
     background-color: white; opacity: 0; pointer-events: none;
     transition: opacity 0.1s ease-out; z-index: 99;
 }
-```
