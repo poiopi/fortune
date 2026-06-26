@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>レジスタンスの夜明け - プロトタイプ</title>
+    <title>レジスタンスの夜明け - プロトタイプ Ver.2</title>
     <style>
         body {
             margin: 0; padding: 0; background-color: #f7e6eb;
@@ -23,7 +23,7 @@
             flex-direction: column; justify-content: center; align-items: center;
         }
         .active { display: flex; }
-        h1 { color: #d05a7f; font-size: 24px; margin-bottom: 20px; }
+        h1 { color: #d05a7f; font-size: 24px; margin-bottom: 20px; text-align: center; }
         p { color: #555; line-height: 1.6; }
         input, select, button {
             width: 80%; padding: 12px; margin: 10px 0;
@@ -35,6 +35,18 @@
             border: none; cursor: pointer; transition: 0.2s;
         }
         button:active { background-color: #e09ba9; }
+        #opening-text-container {
+            width: 90%; height: 60%; overflow-y: auto;
+            background: rgba(255,255,255,0.8);
+            border: 2px solid #ffb7c5; border-radius: 15px;
+            padding: 20px; box-sizing: border-box; margin-bottom: 20px;
+        }
+        .skip-btn {
+            position: absolute; top: 15px; right: 15px;
+            background-color: rgba(0,0,0,0.4); color: white;
+            border-radius: 15px; width: auto; padding: 5px 15px;
+            font-size: 12px; border: none; cursor: pointer;
+        }
         #novel-box {
             background: rgba(255,255,255,0.9); border: 3px solid #ffb7c5;
             border-radius: 15px; padding: 15px; width: 90%; height: 150px;
@@ -49,7 +61,8 @@
         canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
         #game-ui {
             position: absolute; top: 10px; left: 10px; color: #d05a7f;
-            font-weight: bold; font-size: 18px; pointer-events: none;
+            font-weight: bold; font-size: 14px; pointer-events: none;
+            background: rgba(255,255,255,0.7); padding: 8px; border-radius: 8px;
         }
     </style>
 </head>
@@ -64,125 +77,328 @@
             <option value="female">女の子（主人公）</option>
             <option value="male">男の子（主人公）</option>
         </select>
-        <button onclick="startGame()">ゲームスタート</button>
+        <button onclick="goToOpening()">ゲームスタート</button>
     </div>
+
+    <div id="screen-opening" class="screen" style="background-color:#ffeef2;">
+        <button class="skip-btn" onclick="skipOpening()">スキップ ≫</button>
+        <h1>プロローグ</h1>
+        <div id="opening-text-container">
+            <p style="font-size:15px;line-height:1.8;color:#444;margin:0;">
+                時は20XX年。<br>
+                平和な世界は突如として暗雲に包まれる。<br><br>
+                どこからともなく現れたゾンビが町を襲い、人々はパニックに陥った。<br><br>
+                それから一月後……。<br>
+                生き残った人々は「レジスタンス」を結成。<br>
+                ゾンビたちを打倒し、再び平和な日常を取り戻すために立ち上がった。<br><br>
+                若きリーダーであるあなた（主人公）は、大切な仲間たちと共に、いま最後の戦いに赴く――。
+            </p>
+        </div>
+        <button onclick="skipOpening()" style="width:60%;">次へ進む</button>
+    </div>
+
     <div id="screen-novel" class="screen">
-        <div id="character-stand">【パートナーの立ち絵】</div>
+        <div id="character-stand">【パートナー】</div>
         <div id="novel-box" onclick="nextNovel()">
             <strong id="novel-name" style="color:#d05a7f;"></strong>
             <p id="novel-text" style="margin-top:5px;"></p>
         </div>
     </div>
+
     <div id="screen-shooting" class="screen" style="padding:0;">
-        <div id="game-ui">ゾンビ撃退数: <span id="kill-count">0</span> / 5</div>
+        <div id="game-ui">
+            <div id="stage-title" style="margin-bottom:4px;">STAGE 1</div>
+            <div id="stage-objective">ゾンビ撃退数: <span id="kill-count">0</span> / 5</div>
+            <div id="hp-bar-area" style="display:none;margin-top:4px;">
+                HP: <span id="hp-value">100</span> / 100
+            </div>
+        </div>
         <canvas id="gameCanvas"></canvas>
     </div>
+
     <div id="screen-clear" class="screen">
-        <h1>STAGE 1 CLEAR!</h1>
-        <p id="clear-status"></p>
-        <p style="font-size:12px;color:#999;">（進行状況はブラウザに自動保存されました）</p>
-        <button onclick="resetGame()">最初から遊ぶ（データを消す）</button>
+        <h1 id="clear-title">STAGE CLEAR!</h1>
+        <p id="clear-status" style="text-align:center;margin-bottom:20px;white-space:pre-line;"></p>
+        <button id="next-chapter-btn" onclick="startChapter2()">チャプター2へ進む</button>
+        <button id="restart-btn" onclick="resetGame()" style="display:none;background-color:#ccc;">最初から遊ぶ</button>
     </div>
 </div>
+
 <script>
-    let gameState={name:"",dob:"",gender:"",killCount:0,novelIndex:0};
-    const novelData=[
-        {name:"パートナー",text:"ついにここまで来たね…！街はかわいいゾンビたちでいっぱいだ。"},
-        {name:"パートナー",text:"私の後ろについてきて。画面を左右にスライドして、ゾンビをやっつけよう！"},
-        {name:"システム",text:"【シューティングパートが始まります】5体倒せばクリアです！"}
-    ];
-    function changeScreen(id){
-        document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
+var gameState={name:"",dob:"",gender:"",currentChapter:1,killCount:0,novelIndex:0,currentNovelData:[]};
+
+var novelDataCh1=[
+    {name:"パートナー",text:"ついにここまで来たね…！街はかわいいゾンビたちでいっぱいだ。"},
+    {name:"パートナー",text:"私の後ろについてきて。画面を左右にスライドして、ゾンビをやっつけよう！"},
+    {name:"システム",text:"【シューティングパート（Ch.1）】5体倒せばクリアです！"}
+];
+var novelDataCh2Intro=[
+    {name:"パートナー",text:"やったねリーダー！ 最初のエリアはクリアだよ！"},
+    {name:"パートナー",text:"……あ、あれ？ 急に空気が重くなったような……？"},
+    {name:"パートナー",text:"キャーッ！ な、なにあの巨大なゾンビ！！"},
+    {name:"システム",text:"【シューティングパート（Ch.2）】ボスの攻撃を避けましょう！（強制敗北イベント）"}
+];
+var novelDataCh2Defeat=[
+    {name:"パートナー",text:"きゃあああ！ ボスが強すぎて攻撃が全く効かないよ……！"},
+    {name:"パートナー",text:"リーダー、危ないっ！！！"},
+    {name:"システム",text:"（パートナーが身代わりになってボスゾンビに捕まってしまう！）"},
+    {name:"パートナー",text:"私に構わず逃げて……！ もっと強くなって、絶対に助けにきてね……！"},
+    {name:"システム",text:"――ボスはパートナーを連れ去り、去っていった。こうしてパートナーを救うための「特訓（修行）」の日々が始まる……。"}
+];
+
+function changeScreen(id){
+    document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});
+    document.getElementById(id).classList.add('active');
+}
+
+function goToOpening(){
+    gameState.name=document.getElementById('player-name').value||"リーダー";
+    gameState.dob=document.getElementById('player-dob').value;
+    gameState.gender=document.getElementById('player-gender').value;
+    localStorage.setItem('resistance_player_info',JSON.stringify({name:gameState.name,dob:gameState.dob,gender:gameState.gender}));
+    changeScreen('screen-opening');
+}
+
+function skipOpening(){startChapter1();}
+
+function startChapter1(){
+    gameState.currentChapter=1;
+    gameState.novelIndex=0;
+    gameState.currentNovelData=novelDataCh1;
+    showNovelStep();
+    changeScreen('screen-novel');
+}
+
+function showNovelStep(){
+    var c=gameState.currentNovelData[gameState.novelIndex];
+    document.getElementById('novel-name').innerText=c.name;
+    document.getElementById('novel-text').innerText=c.text.replace("リーダー",gameState.name);
+}
+
+function nextNovel(){
+    gameState.novelIndex++;
+    if(gameState.novelIndex<gameState.currentNovelData.length){
+        showNovelStep();
+    } else if(gameState.currentNovelData===novelDataCh2Defeat){
+        showChapter2ClearScreen();
+    } else {
+        changeScreen('screen-shooting');
+        initShooting();
     }
-    function startGame(){
-        gameState.name=document.getElementById('player-name').value||"リーダー";
-        gameState.dob=document.getElementById('player-dob').value;
-        gameState.gender=document.getElementById('player-gender').value;
-        localStorage.setItem('resistance_player_info',JSON.stringify({name:gameState.name,dob:gameState.dob,gender:gameState.gender}));
+}
+
+var canvas=document.getElementById('gameCanvas');
+var ctx=canvas.getContext('2d');
+var animationId;
+var player={x:0,y:0,width:40,height:40,color:'#ffb7c5',hp:100};
+var bullets=[],enemies=[],enemyBullets=[];
+var lastEnemyTime=0,lastShootTime=0,isGameOver=false;
+var boss=null,bossStartTime=0;
+var BOSS_TIMELIMIT=30000; // 30秒で強制敗北
+
+function initShooting(){
+    canvas.width=canvas.parentNode.clientWidth;
+    canvas.height=canvas.parentNode.clientHeight;
+    player.x=canvas.width/2-player.width/2;
+    player.y=canvas.height-100;
+    player.hp=100;
+    bullets=[];enemies=[];enemyBullets=[];
+    isGameOver=false;cancelAnimationFrame(animationId);
+
+    if(gameState.currentChapter===1){
+        document.getElementById('stage-title').innerText="STAGE 1";
+        document.getElementById('stage-objective').innerHTML='ゾンビ撃退数: <span id="kill-count">0</span> / 5';
+        document.getElementById('hp-bar-area').style.display="none";
+        gameState.killCount=0;boss=null;
+    } else {
+        document.getElementById('stage-title').innerText="STAGE 2 (BOSS)";
+        document.getElementById('stage-objective').innerHTML='ボスゾンビを撃退せよ！';
+        document.getElementById('hp-bar-area').style.display="block";
+        document.getElementById('hp-value').innerText=100;
+        boss={x:canvas.width/2-50,y:50,width:100,height:100,color:'#b085f5',direction:1,lastShotTime:0};
+        bossStartTime=Date.now();
+    }
+
+    canvas.addEventListener('mousemove',function(e){movePlayer(e.clientX);});
+    canvas.addEventListener('touchmove',function(e){if(e.touches[0])movePlayer(e.touches[0].clientX);e.preventDefault();},{passive:false});
+
+    lastEnemyTime=Date.now();
+    loop();
+}
+
+function movePlayer(clientX){
+    var rect=canvas.getBoundingClientRect();
+    player.x=(clientX-rect.left)-player.width/2;
+    if(player.x<0)player.x=0;
+    if(player.x>canvas.width-player.width)player.x=canvas.width-player.width;
+}
+
+function circleHit(ax,ay,ar,bx,by,br){
+    var dx=ax-bx,dy=ay-by;
+    return Math.sqrt(dx*dx+dy*dy)<ar+br;
+}
+
+function loop(){
+    if(isGameOver)return;
+    ctx.fillStyle='#e3fafc';ctx.fillRect(0,0,canvas.width,canvas.height);
+
+    // 自機
+    ctx.fillStyle=player.color;ctx.beginPath();
+    ctx.arc(player.x+player.width/2,player.y+player.height/2,player.width/2,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#fff';ctx.font='10px sans-serif';ctx.fillText("L",player.x+16,player.y+24);
+
+    var now=Date.now();
+    if(now-lastShootTime>150){
+        bullets.push({x:player.x+player.width/2,y:player.y,r:5,speed:8});
+        lastShootTime=now;
+    }
+
+    if(gameState.currentChapter===1){
+        if(now-lastEnemyTime>1500){
+            enemies.push({x:Math.random()*(canvas.width-40)+20,y:-20,r:18,color:'#96f2d7',speed:2});
+            lastEnemyTime=now;
+        }
+    } else if(boss){
+        boss.x+=boss.direction*2;
+        if(boss.x<10||boss.x>canvas.width-boss.width-10)boss.direction*=-1;
+
+        ctx.fillStyle=boss.color;ctx.beginPath();
+        ctx.arc(boss.x+boss.width/2,boss.y+boss.height/2,boss.width/2,0,Math.PI*2);ctx.fill();
+        ctx.fillStyle='#333';
+        ctx.fillRect(boss.x+30,boss.y+35,8,8);ctx.fillRect(boss.x+62,boss.y+35,8,8);
+        ctx.fillStyle='#ff6b8b';ctx.fillRect(boss.x+40,boss.y+65,20,5);
+
+        // 残り時間表示
+        var elapsed=now-bossStartTime;
+        var remain=Math.max(0,Math.ceil((BOSS_TIMELIMIT-elapsed)/1000));
+        ctx.fillStyle='rgba(255,255,255,0.85)';ctx.font='bold 13px sans-serif';
+        ctx.fillText('残り '+remain+'秒',canvas.width-80,20);
+        if(elapsed>=BOSS_TIMELIMIT){endGame(false);return;}
+
+        // 3方向弾（中央・左斜め・右斜め）
+        if(now-boss.lastShotTime>1000){
+            var bx=boss.x+boss.width/2, by=boss.y+boss.height;
+            var angles=[Math.PI/2, Math.PI/2-0.45, Math.PI/2+0.45];
+            for(var ai=0;ai<angles.length;ai++){
+                enemyBullets.push({x:bx,y:by,r:10,
+                    vx:Math.cos(angles[ai]-Math.PI/2)*4,
+                    vy:Math.sin(angles[ai])*4,
+                    color:'#ff8787'});
+            }
+            boss.lastShotTime=now;
+        }
+    }
+
+    // 自機弾
+    var nextBullets=[];
+    for(var i=0;i<bullets.length;i++){
+        var b=bullets[i];
+        b.y-=b.speed;
+        if(b.y<-20)continue;
+        ctx.fillStyle='#ff6b8b';ctx.beginPath();ctx.arc(b.x,b.y,b.r,0,Math.PI*2);ctx.fill();
+
+        var hit=false;
+        if(gameState.currentChapter===2&&boss){
+            if(circleHit(b.x,b.y,b.r,boss.x+boss.width/2,boss.y+boss.height/2,boss.width/2)){
+                // ボスには当たるが倒せない（火花）
+                ctx.fillStyle='rgba(255,255,255,0.8)';ctx.beginPath();
+                ctx.arc(b.x,b.y,12,0,Math.PI*2);ctx.fill();
+                hit=true;
+            }
+        }
+        if(!hit)nextBullets.push(b);
+    }
+    bullets=nextBullets;
+
+    // ザコ敵（Ch.1）
+    var nextEnemies=[];
+    for(var ei=0;ei<enemies.length;ei++){
+        var e=enemies[ei];
+        e.y+=e.speed;
+        if(e.y>canvas.height){nextEnemies.push(e);continue;}
+        ctx.fillStyle=e.color;ctx.beginPath();ctx.arc(e.x,e.y,e.r,0,Math.PI*2);ctx.fill();
+        ctx.fillStyle='#333';ctx.fillRect(e.x-8,e.y-6,3,3);ctx.fillRect(e.x+5,e.y-6,3,3);
+
+        var killed=false;
+        var nextB2=[];
+        for(var bi=0;bi<bullets.length;bi++){
+            if(!killed&&circleHit(bullets[bi].x,bullets[bi].y,bullets[bi].r,e.x,e.y,e.r)){
+                killed=true;
+            } else {
+                nextB2.push(bullets[bi]);
+            }
+        }
+        if(killed){
+            bullets=nextB2;
+            gameState.killCount++;
+            document.getElementById('kill-count').innerText=gameState.killCount;
+            if(gameState.killCount>=5){endGame(true);return;}
+        } else {
+            nextEnemies.push(e);
+        }
+    }
+    enemies=nextEnemies;
+
+    // 敵弾（Ch.2）
+    var nextEB=[];
+    for(var j=0;j<enemyBullets.length;j++){
+        var eb=enemyBullets[j];
+        eb.x+=eb.vx||0; eb.y+=(eb.vy||eb.speed||4);
+        if(eb.y>canvas.height)continue;
+        ctx.fillStyle=eb.color;ctx.beginPath();ctx.arc(eb.x,eb.y,eb.r,0,Math.PI*2);ctx.fill();
+
+        if(circleHit(eb.x,eb.y,eb.r,player.x+player.width/2,player.y+player.height/2,player.width/2)){
+            player.hp-=25;
+            document.getElementById('hp-value').innerText=Math.max(0,player.hp);
+            if(player.hp<=0){endGame(false);return;}
+        } else {
+            nextEB.push(eb);
+        }
+    }
+    enemyBullets=nextEB;
+
+    animationId=requestAnimationFrame(loop);
+}
+
+function endGame(isWin){
+    isGameOver=true;cancelAnimationFrame(animationId);
+    if(gameState.currentChapter===1&&isWin){
+        document.getElementById('clear-title').innerText="STAGE 1 CLEAR!";
+        document.getElementById('clear-status').innerText=gameState.name+"さん、最初の戦いを無事に生き延びました！\nしかし、この先にさらに大きな影が……。";
+        document.getElementById('next-chapter-btn').style.display="block";
+        document.getElementById('restart-btn').style.display="none";
+        changeScreen('screen-clear');
+    } else if(gameState.currentChapter===2&&!isWin){
         gameState.novelIndex=0;
+        gameState.currentNovelData=novelDataCh2Defeat;
         showNovelStep();
         changeScreen('screen-novel');
     }
-    function showNovelStep(){
-        const c=novelData[gameState.novelIndex];
-        document.getElementById('novel-name').innerText=c.name;
-        document.getElementById('novel-text').innerText=c.text.replace("リーダー",gameState.name);
-    }
-    function nextNovel(){
-        gameState.novelIndex++;
-        if(gameState.novelIndex<novelData.length){showNovelStep();}
-        else{changeScreen('screen-shooting');initShooting();}
-    }
-    const canvas=document.getElementById('gameCanvas');
-    const ctx=canvas.getContext('2d');
-    let animationId,player={x:200,y:550,width:40,height:40,color:'#ffb7c5'};
-    let bullets=[],enemies=[],lastEnemyTime=0,isGameOver=false,lastShootTime=0;
-    function initShooting(){
-        canvas.width=canvas.parentNode.clientWidth;
-        canvas.height=canvas.parentNode.clientHeight;
-        player.x=canvas.width/2-player.width/2;
-        player.y=canvas.height-100;
-        bullets=[];enemies=[];gameState.killCount=0;
-        document.getElementById('kill-count').innerText=0;
-        isGameOver=false;
-        const handleMove=(clientX)=>{
-            const rect=canvas.getBoundingClientRect();
-            player.x=(clientX-rect.left)-player.width/2;
-            if(player.x<0)player.x=0;
-            if(player.x>canvas.width-player.width)player.x=canvas.width-player.width;
-        };
-        canvas.addEventListener('mousemove',(e)=>handleMove(e.clientX));
-        canvas.addEventListener('touchmove',(e)=>{if(e.touches[0])handleMove(e.touches[0].clientX);e.preventDefault();},{passive:false});
-        lastEnemyTime=Date.now();
-        loop();
-    }
-    function loop(){
-        if(isGameOver)return;
-        ctx.fillStyle='#e3fafc';ctx.fillRect(0,0,canvas.width,canvas.height);
-        ctx.fillStyle=player.color;ctx.beginPath();
-        ctx.arc(player.x+player.width/2,player.y+player.height/2,player.width/2,0,Math.PI*2);ctx.fill();
-        ctx.fillStyle='#ffffff';ctx.font='10px sans-serif';ctx.fillText("L",player.x+16,player.y+24);
-        let now=Date.now();
-        if(now-lastShootTime>150){
-            bullets.push({x:player.x+player.width/2-4,y:player.y,width:8,height:15,speed:8});
-            lastShootTime=now;
-        }
-        if(now-lastEnemyTime>1500){
-            enemies.push({x:Math.random()*(canvas.width-40),y:-40,width:35,height:35,color:'#96f2d7',speed:2});
-            lastEnemyTime=now;
-        }
-        bullets.forEach((b,bi)=>{
-            b.y-=b.speed;ctx.fillStyle='#ff6b8b';ctx.fillRect(b.x,b.y,b.width,b.height);
-            if(b.y<-20)bullets.splice(bi,1);
-        });
-        enemies.forEach((e,ei)=>{
-            e.y+=e.speed;ctx.fillStyle=e.color;ctx.beginPath();
-            ctx.arc(e.x+e.width/2,e.y+e.height/2,e.width/2,0,Math.PI*2);ctx.fill();
-            ctx.fillStyle='#333';ctx.fillRect(e.x+10,e.y+12,3,3);ctx.fillRect(e.x+22,e.y+12,3,3);
-            bullets.forEach((b,bi)=>{
-                if(b.x<e.x+e.width&&b.x+b.width>e.x&&b.y<e.y+e.height&&b.y+b.height>e.y){
-                    enemies.splice(ei,1);bullets.splice(bi,1);
-                    gameState.killCount++;
-                    document.getElementById('kill-count').innerText=gameState.killCount;
-                    if(gameState.killCount>=5)endGame(true);
-                }
-            });
-            if(e.y>canvas.height)enemies.splice(ei,1);
-        });
-        animationId=requestAnimationFrame(loop);
-    }
-    function endGame(isWin){
-        isGameOver=true;cancelAnimationFrame(animationId);
-        if(isWin){
-            let d=JSON.parse(localStorage.getItem('resistance_player_info'))||{};
-            d.progress="chapter1_clear";
-            localStorage.setItem('resistance_player_info',JSON.stringify(d));
-            document.getElementById('clear-status').innerText=gameState.name+'さん（生年月日: '+gameState.dob+'）は、無事最初の戦いを生き延びました！';
-            changeScreen('screen-clear');
-        }
-    }
-    function resetGame(){localStorage.removeItem('resistance_player_info');changeScreen('screen-title');}
+}
+
+function startChapter2(){
+    gameState.currentChapter=2;
+    gameState.novelIndex=0;
+    gameState.currentNovelData=novelDataCh2Intro;
+    showNovelStep();
+    changeScreen('screen-novel');
+}
+
+function showChapter2ClearScreen(){
+    var d=JSON.parse(localStorage.getItem('resistance_player_info'))||{};
+    d.progress="chapter2_clear";
+    localStorage.setItem('resistance_player_info',JSON.stringify(d));
+    document.getElementById('clear-title').innerText="CHAPTER 2 CLEARED (STORY)";
+    document.getElementById('clear-status').innerText="パートナーがボスにさらわれてしまいました……！\n\n【次のステージ予告】\nさらわれたパートナーを救い出すため、"+gameState.name+"さんの過酷な「修行」が始まります。";
+    document.getElementById('next-chapter-btn').style.display="none";
+    document.getElementById('restart-btn').style.display="block";
+    changeScreen('screen-clear');
+}
+
+function resetGame(){
+    localStorage.removeItem('resistance_player_info');
+    changeScreen('screen-title');
+}
 </script>
 </body>
 </html>
