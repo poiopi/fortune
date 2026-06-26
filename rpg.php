@@ -55,7 +55,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1}
 
 /* HUD */
-.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:nowrap;overflow:hidden;border-bottom:1px solid var(--border)}
 .hud-group{display:flex;align-items:center;gap:.35rem}
 .hud-lbl{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted)}
 .hud-bar-wrap{width:60px;height:7px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
@@ -138,6 +138,11 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 
 .adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
 .adsense-space::after{content:'AD SPACE'}
+.fs-btn{background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--violet-lt);font-size:.6rem;font-family:var(--ff-rpg);padding:.35rem .6rem;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .1s;white-space:nowrap}
+.fs-btn:active{background:rgba(155,114,239,.4)}
+.game-outer:fullscreen,.game-outer:-webkit-full-screen{border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#08060f;width:100vw;height:100vh}
+.game-outer:fullscreen .game-hud,.game-outer:-webkit-full-screen .game-hud{width:100%;box-sizing:border-box}
+.game-outer:fullscreen .game-controls,.game-outer:-webkit-full-screen .game-controls{width:100%;box-sizing:border-box}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -205,6 +210,7 @@ footer a:hover{color:var(--gold)}
         <div class="db empty"></div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.5rem">
+        <button id="fsBtn" class="fs-btn" onclick="toggleFS()">⛶ 全画面</button>
         <button id="bgmBtn" onclick="toggleBgm()" style="background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--muted);font-family:var(--ff-rpg);font-size:.65rem;padding:.35rem .7rem;cursor:pointer;-webkit-tap-highlight-color:transparent">🔇 BGM OFF</button>
         <div class="ghint">🎮 矢印キー or WASD で移動<br>Space / Enterで話しかける<br>アイテムは踏むと自動取得</div>
       </div>
@@ -212,6 +218,21 @@ footer a:hover{color:var(--gold)}
   </div>
 
   <div class="adsense-space"></div>
+</div>
+
+<!-- 操作説明オーバーレイ -->
+<div class="ov on" id="instructOv">
+  <div class="ob" style="text-align:center">
+    <div class="ot">⚔️ 操作ガイド</div>
+    <div style="font-family:var(--ff-rpg);font-size:.8rem;color:var(--text);line-height:2.4;text-align:left;margin:1rem 0">
+      <div>🎮 <strong style="color:var(--gold)">移動</strong>　矢印キー / WASD</div>
+      <div>💬 <strong style="color:var(--gold)">話す・決定</strong>　Space / Enter</div>
+      <div>🔢 <strong style="color:var(--gold)">選択肢</strong>　数字キー（1〜4）</div>
+      <div>📱 <strong style="color:var(--gold)">スマホ</strong>　画面下のボタンで操作</div>
+    </div>
+    <div style="font-family:var(--ff-rpg);font-size:.72rem;color:var(--muted);margin-bottom:1.2rem">🎯 村人5人と話したら、南の教会へ！</div>
+    <button type="button" class="ocls" onclick="document.getElementById('instructOv').classList.remove('on')">✦ 冒険を始める ✦</button>
+  </div>
 </div>
 
 <!-- DIALOG -->
@@ -542,9 +563,14 @@ const pin=document.getElementById('pin');
 
 let _scale=1;
 function resize(){
-  const w=Math.min(gvp.parentElement.clientWidth-2, VPC*TS);
-  _scale=w/(VPC*TS);
-  const h=Math.round(VPR*TS*_scale);
+  var isFS=!!(document.fullscreenElement||document.webkitFullscreenElement);
+  var availW=gvp.parentElement.clientWidth-2;
+  if(!isFS) availW=Math.min(availW,VPC*TS);
+  var scaleW=availW/(VPC*TS);
+  var scaleH=isFS?(window.innerHeight-180)/(VPR*TS):2;
+  _scale=Math.min(scaleW,scaleH);
+  var w=Math.round(VPC*TS*_scale);
+  var h=Math.round(VPR*TS*_scale);
   cv.width=VPC*TS; cv.height=VPR*TS;
   cv.style.width=w+'px'; cv.style.height=h+'px';
   gvp.style.height=h+'px';
@@ -760,7 +786,15 @@ function hud(){
 const DMAP={ArrowUp:'u',ArrowDown:'d',ArrowLeft:'l',ArrowRight:'r',
             w:'u',s:'d',a:'l',d:'r',W:'u',S:'d',A:'l',D:'r'};
 
+// ゲームキーのブラウザスクロール防止
+document.addEventListener('keydown',function(e){
+  var gk=[' ','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'];
+  if(gk.indexOf(e.key)>=0&&e.target.tagName!=='INPUT'&&e.target.tagName!=='TEXTAREA'){e.preventDefault();}
+},{capture:true});
+
+
 document.addEventListener('keydown',e=>{
+  if(document.getElementById('instructOv').classList.contains('on')) return;
   if(phase==='dialog'){
     const n=parseInt(e.key);
     if(n>=1&&n<=9){
@@ -830,6 +864,8 @@ function move(dir){
   if(dir==='r'){nx++;pl.dir='right';}
   if(!passable(nx,ny)) return;
   pl.x=nx; pl.y=ny;
+  var _door=BLDS.find(function(b){return !b.church&&b.doorX===nx&&b.doorY===ny;});
+  if(_door) popup('🚧 '+_door.name+'は現在準備中です');
   pickup();
   draw();
   updateTalkBtn();
@@ -1244,6 +1280,27 @@ function stopBgm(){
   _bgmNodes=[];
   if(_ac) _ac.suspend();
 }
+
+
+var _ovIds=['dlgOv','cbtOv','frmOv','resOv','ipop'];
+function toggleFS(){
+  var el=document.querySelector('.game-outer');
+  if(!document.fullscreenElement&&!document.webkitFullscreenElement){
+    _ovIds.forEach(function(id){var ov=document.getElementById(id);if(ov&&ov.parentElement!==el)el.appendChild(ov);});
+    (el.requestFullscreen||el.webkitRequestFullscreen).call(el).catch(function(){});
+  } else {
+    (document.exitFullscreen||document.webkitExitFullscreen).call(document);
+  }
+}
+function _updFS(){
+  var isFS=!!(document.fullscreenElement||document.webkitFullscreenElement);
+  var btn=document.getElementById('fsBtn');
+  if(btn) btn.textContent=isFS?'✕ 全画面終了':'⛶ 全画面';
+  if(!isFS) _ovIds.forEach(function(id){var ov=document.getElementById(id);if(ov)document.body.appendChild(ov);});
+  setTimeout(resize,150);
+}
+document.addEventListener('fullscreenchange',_updFS);
+document.addEventListener('webkitfullscreenchange',_updFS);
 
 function toggleBgm(){
   _bgmOn=!_bgmOn;
