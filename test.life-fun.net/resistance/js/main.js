@@ -355,6 +355,17 @@ function showBattleTalk() {
     }, 2500);
 }
 
+function startChapter2() {
+    gameState.currentChapter = 2;
+    gameState.currentScene = "ch2_intro";
+    gameState.novelIndex = 0;
+    gameState.currentNovelData = chapter2.getNovelDataIntro(gameState);
+    showNovelStep();
+    changeScreen('screen-novel');
+    adjustViewportHeight();
+    startNovelAutoplay();
+}
+
 // チャプター2：敗北（パートナー拉致）のフルノベル開始
 function startChapter2DefeatNovel() {
     gameState.currentScene = "ch2_defeat"; 
