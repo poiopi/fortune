@@ -41,23 +41,33 @@ export class GameEngine {
 
     setupControls() {
         const self = this;
-        // マウス移動（PC）
+        // マウス移動（PC） - ★上下左右（360度）の追従移動へ変更
         this.canvas.addEventListener('mousemove', function(e) {
             const rect = self.canvas.getBoundingClientRect();
             const scaleX = self.canvas.width / rect.width;
+            const scaleY = self.canvas.height / rect.height;
+
             self.player.x = (e.clientX - rect.left) * scaleX - self.player.width / 2;
-            // 画面外への飛び出し防止（クランプ）
+            self.player.y = (e.clientY - rect.top) * scaleY - self.player.height / 2;
+
+            // 画面外への飛び出し防止（クランプ：上下左右）
             self.player.x = Math.max(0, Math.min(self.canvas.width - self.player.width, self.player.x));
+            self.player.y = Math.max(0, Math.min(self.canvas.height - self.player.height, self.player.y));
         });
 
-        // タッチ移動（スマートフォン）
+        // タッチ移動（スマートフォン） - ★上下左右（360度）の追従移動へ変更
         this.canvas.addEventListener('touchmove', function(e) {
             e.preventDefault();
             const rect = self.canvas.getBoundingClientRect();
             const scaleX = self.canvas.width / rect.width;
+            const scaleY = self.canvas.height / rect.height;
+
             self.player.x = (e.touches[0].clientX - rect.left) * scaleX - self.player.width / 2;
-            // 画面外への飛び出し防止（クランプ）
+            self.player.y = (e.touches[0].clientY - rect.top) * scaleY - self.player.height / 2;
+
+            // 画面外への飛び出し防止（クランプ：上下左右）
             self.player.x = Math.max(0, Math.min(self.canvas.width - self.player.width, self.player.x));
+            self.player.y = Math.max(0, Math.min(self.canvas.height - self.player.height, self.player.y));
         }, { passive: false });
     }
 
@@ -218,7 +228,7 @@ export class GameEngine {
             this.lastAllyShootTime = now;
         }
 
-        // 仲間たちの描画（★Ver.4.5バグ完全解消：this.playerに統一しフリーズを完全に解消しました）
+        // 仲間たちの描画
         this.gameState.allies.forEach((ally, index) => {
             this.ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
             this.ctx.beginPath();
@@ -601,6 +611,6 @@ export class GameEngine {
     endGame(isWin) {
         this.isGameOver = true;
         cancelAnimationFrame(this.animationId);
-        this.onStageEnd(isWin); // コールバックを呼んでクリア・ゲームオーバー画面へ
+        this.onStageEnd(isWin);
     }
 }
