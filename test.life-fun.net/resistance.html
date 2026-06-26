@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>レジスタンスの夜明け - プロトタイプ Ver.4</title>
+    <title>繝輔か繝ｼ繝√Η繝ｼ繝ｳ 繝上じ繝ｼ繝・- 繝励Ο繝医ち繧､繝・Ver.4.2</title>
     <style>
         body {
             margin: 0; padding: 0; background-color: #f7e6eb;
@@ -24,6 +24,12 @@
             z-index: 5;
         }
         .active { display: flex; }
+
+        /* 笘・ｧ｣豎ｺ遲厄ｼ壹す繝･繝ｼ繝・ぅ繝ｳ繧ｰ逕ｻ髱｢縺縺代・Flexbox縺ｫ縺帙★縲，anvas繧・00%陦ｨ遉ｺ縺吶ｋ縺溘ａ縺ｫBlock縺ｫ縺励∪縺・*/
+        #screen-shooting.active {
+            display: block;
+        }
+
         h1 { color: #d05a7f; font-size: 24px; margin-bottom: 20px; text-align: center; }
         p { color: #555; line-height: 1.6; }
         input, select, button {
@@ -37,7 +43,15 @@
         }
         button:active { background-color: #e09ba9; }
 
-        /* オープニング */
+        /* 繝ｭ繧ｴ逕ｻ蜒上・繧ｹ繧ｿ繧､繝ｫ螳夂ｾｩ */
+        .game-logo {
+            max-width: 85%;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* 繧ｪ繝ｼ繝励ル繝ｳ繧ｰ */
         #opening-text-container {
             width: 90%; height: 60%; overflow-y: auto;
             background: rgba(255, 255, 255, 0.8);
@@ -52,7 +66,7 @@
             font-size: 12px; border: none; cursor: pointer; z-index: 10;
         }
 
-        /* 会話用吹き出しスタイル（位置と枠線の自動切り替え） */
+        /* 莨夊ｩｱ逕ｨ蜷ｹ縺榊・縺励せ繧ｿ繧､繝ｫ */
         .novel-box-common {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 15px; padding: 15px;
@@ -61,18 +75,18 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
             z-index: 20;
         }
-        /* 発言者ごとのデザイン */
+        /* 逋ｺ險閠・＃縺ｨ縺ｮ繝・じ繧､繝ｳ */
         .talk-top {
             top: 20px; bottom: auto; left: 5%; width: 90%;
-            border: 3px solid #b085f5; /* ボス：パープル */
+            border: 3px solid #b085f5; /* 繝懊せ・壹ヱ繝ｼ繝励Ν */
         }
         .talk-left {
             bottom: 20px; top: auto; left: 5%; width: 65%;
-            border: 3px solid #ffb7c5; /* リーダー：ピンク */
+            border: 3px solid #ffb7c5; /* 繝ｪ繝ｼ繝繝ｼ・壹ヴ繝ｳ繧ｯ */
         }
         .talk-right {
             bottom: 20px; top: auto; right: 5%; left: auto; width: 65%;
-            border: 3px solid #74c0fc; /* パートナー：ブルー */
+            border: 3px solid #74c0fc; /* 繝代・繝医リ繝ｼ・壹ヶ繝ｫ繝ｼ */
         }
 
         #character-stand {
@@ -82,7 +96,7 @@
             margin-bottom: 180px; border-radius: 10px;
         }
 
-        /* シューティング画面UI */
+        /* 繧ｷ繝･繝ｼ繝・ぅ繝ｳ繧ｰ逕ｻ髱｢UI */
         canvas { background-color: #e3fafc; display: block; width: 100%; height: 100%; }
         #game-ui {
             position: absolute; top: 10px; left: 10px; color: #d05a7f;
@@ -111,62 +125,67 @@
 
 <div id="game-container">
 
-    <!-- 画面フラッシュ用 -->
+    <!-- 逕ｻ髱｢繝輔Λ繝・す繝･逕ｨ -->
     <div id="screen-flash"></div>
 
-    <!-- 1. タイトル/入力画面 -->
+    <!-- 1. 繧ｿ繧､繝医Ν/蜈･蜉帷判髱｢ -->
     <div id="screen-title" class="screen active">
-        <h1>レジスタンスの夜明け</h1>
-        <p>名前と生年月日を入力してね</p>
-        <input type="text" id="player-name" placeholder="お名前" value="リーダー">
+        <!-- 
+            笘・Ο繧ｴ逕ｻ蜒上・繝ｬ繝ｼ繧ｹ繝帙Ν繝繝ｼ
+            繝ｭ繧ｴ逕ｻ蜒上ｒ逕ｨ諢上＠縺溷ｾ後・縲∽ｻ･荳九・繧ｳ繝｡繝ｳ繝医い繧ｦ繝医ｒ隗｣髯､縺・src="繝ｭ繧ｴ逕ｻ蜒上ヱ繧ｹ" 繧定ｨｭ螳壹＠縺ｦ縺上□縺輔＞縲・            縺昴・髫帙∽ｸ九・ <h1> 繧ｿ繧ｰ縺ｯ蜑企勁縺吶ｋ縺矩撼陦ｨ遉ｺ縺ｫ縺励※縺上□縺輔＞縲・        -->
+        <!-- <img src="logo.png" alt="繝輔か繝ｼ繝√Η繝ｼ繝ｳ 繝上じ繝ｼ繝・ class="game-logo"> -->
+        
+        <h1>繝輔か繝ｼ繝√Η繝ｼ繝ｳ 繝上じ繝ｼ繝・/h1>
+        <p>蜷榊燕縺ｨ逕溷ｹｴ譛域律繧貞・蜉帙＠縺ｦ縺ｭ</p>
+        <input type="text" id="player-name" placeholder="縺雁錐蜑・ value="繝ｪ繝ｼ繝繝ｼ">
         <input type="date" id="player-dob" value="2000-01-01">
         <select id="player-gender">
-            <option value="female">女の子（主人公）</option>
-            <option value="male">男の子（主人公）</option>
+            <option value="female">螂ｳ縺ｮ蟄撰ｼ井ｸｻ莠ｺ蜈ｬ・・/option>
+            <option value="male">逕ｷ縺ｮ蟄撰ｼ井ｸｻ莠ｺ蜈ｬ・・/option>
         </select>
-        <button onclick="goToOpening()">ゲームスタート</button>
+        <button onclick="goToOpening()">繧ｲ繝ｼ繝繧ｹ繧ｿ繝ｼ繝・/button>
     </div>
 
-    <!-- 1.5. オープニング画面 -->
+    <!-- 1.5. 繧ｪ繝ｼ繝励ル繝ｳ繧ｰ逕ｻ髱｢ -->
     <div id="screen-opening" class="screen" style="background-color: #ffeef2;">
-        <button class="skip-btn" onclick="skipOpening()">スキップ ≫</button>
-        <h1>プロローグ</h1>
+        <button class="skip-btn" onclick="skipOpening()">繧ｹ繧ｭ繝・・ 竕ｫ</button>
+        <h1>繝励Ο繝ｭ繝ｼ繧ｰ</h1>
         <div id="opening-text-container">
             <p style="font-size: 15px; line-height: 1.8; color: #444; margin: 0;">
-                時は20XX年。<br>
-                平和な世界は突如として暗雲に包まれる。<br><br>
-                どこからともなく現れたゾンビが町を襲い、人々はパニックに陥った。<br><br>
-                それから一月後……。<br>
-                生き残った人々は「レジスタンス」を結成。<br>
-                ゾンビたちを打倒し、再び平和な日常を取り戻すために立ち上がった。<br><br>
-                若きリーダーであるあなた（主人公）は、大切な仲間たちと共に、いま最後の戦いに赴く――。
-            </p>
+                譎ゅ・20XX蟷ｴ縲・br>
+                蟷ｳ蜥後↑荳也阜縺ｯ遯∝ｦゅ→縺励※證鈴峇縺ｫ蛹・∪繧後ｋ縲・br><br>
+                縺ｩ縺薙°繧峨→繧ゅ↑縺冗樟繧後◆繧ｾ繝ｳ繝薙′逕ｺ繧定･ｲ縺・∽ｺｺ縲・・繝代ル繝・け縺ｫ髯･縺｣縺溘・br><br>
+                縺昴ｌ縺九ｉ荳譛亥ｾ娯ｦ窶ｦ縲・br>
+                逕溘″谿九▲縺滉ｺｺ縲・・縲後Ξ繧ｸ繧ｹ繧ｿ繝ｳ繧ｹ縲阪ｒ邨先・縲・br>
+                繧ｾ繝ｳ繝薙◆縺｡繧呈遠蛟偵＠縲∝・縺ｳ蟷ｳ蜥後↑譌･蟶ｸ繧貞叙繧頑綾縺吶◆繧√↓遶九■荳翫′縺｣縺溘・br><br>
+                闍･縺阪Μ繝ｼ繝繝ｼ縺ｧ縺ゅｋ縺ゅ↑縺滂ｼ井ｸｻ莠ｺ蜈ｬ・峨・縲∝､ｧ蛻・↑莉ｲ髢薙◆縺｡縺ｨ蜈ｱ縺ｫ縲√＞縺ｾ譛蠕後・謌ｦ縺・↓襍ｴ縺鞘補輔・            </p>
         </div>
-        <button onclick="skipOpening()" style="width: 60%;">次へ進む</button>
+        <button onclick="skipOpening()" style="width: 60%;">谺｡縺ｸ騾ｲ繧</button>
     </div>
 
-    <!-- 2. ノベル画面（共通） -->
+    <!-- 2. 繝弱・繝ｫ逕ｻ髱｢・亥・騾夲ｼ・-->
     <div id="screen-novel" class="screen">
-        <div id="character-stand">【立ち絵表示】</div>
+        <div id="character-stand">縲千ｫ九■邨ｵ陦ｨ遉ｺ縲・/div>
         <div id="novel-box" class="novel-box-common" onclick="nextNovel()">
             <strong id="novel-name" style="color: #d05a7f;"></strong>
             <p id="novel-text" style="margin-top: 5px;"></p>
         </div>
     </div>
 
-    <!-- 3. シューティング画面 -->
+    <!-- 3. 繧ｷ繝･繝ｼ繝・ぅ繝ｳ繧ｰ逕ｻ髱｢ -->
     <div id="screen-shooting" class="screen" style="padding: 0;">
         <div id="game-ui">
             <div id="stage-title" style="margin-bottom: 4px; font-size: 16px;">STAGE 1</div>
-            <div>撃退数: <span id="kill-count">0</span></div>
-            <div>スコア: <span id="score-val">0</span> 点</div>
+            <div>謦・謨ｰ: <span id="kill-count">0</span></div>
+            <div>繧ｹ繧ｳ繧｢: <span id="score-val">0</span> 轤ｹ</div>
             <div id="hp-bar-area">HP: <span id="hp-value">100</span> / 100</div>
             <div id="boss-hp-area" style="display: none; color: #b085f5; font-weight: bold;">BOSS HP: <span id="boss-hp-val">100</span></div>
+            <div id="stage-objective" style="margin-top: 4px; font-size: 12px;"></div>
             <div id="ally-status" style="margin-top: 4px; color: #40c057;"></div>
         </div>
         <div id="bomb-button" onclick="triggerBomb()">BOMB<br><span id="bomb-count">0</span></div>
         
-        <!-- 戦闘中割り込みダイアログ用 -->
+        <!-- 謌ｦ髣倅ｸｭ蜑ｲ繧願ｾｼ縺ｿ繝繧､繧｢繝ｭ繧ｰ逕ｨ -->
         <div id="battle-talk-box" class="novel-box-common" style="display: none;" onclick="advanceBattleTalk()">
             <strong id="battle-talk-speaker" style="color: #d05a7f;"></strong>
             <p id="battle-talk-text" style="margin-top: 5px;"></p>
@@ -175,12 +194,12 @@
         <canvas id="gameCanvas"></canvas>
     </div>
 
-    <!-- 4. ステージクリア / 進行画面 -->
+    <!-- 4. 繧ｹ繝・・繧ｸ繧ｯ繝ｪ繧｢ / 騾ｲ陦檎判髱｢ -->
     <div id="screen-clear" class="screen">
         <h1 id="clear-title">STAGE CLEAR!</h1>
         <p id="clear-status" style="text-align: center; margin-bottom: 20px;"></p>
-        <button id="next-chapter-btn" onclick="startChapter2()">チャプター2へ進む</button>
-        <button id="restart-btn" onclick="resetGame()" style="display: none; background-color: #ccc;">最初から遊ぶ</button>
+        <button id="next-chapter-btn" onclick="startChapter2()">繝√Ε繝励ち繝ｼ2縺ｸ騾ｲ繧</button>
+        <button id="restart-btn" onclick="resetGame()" style="display: none; background-color: #ccc;">譛蛻昴°繧蛾♀縺ｶ</button>
     </div>
 
 </div>
@@ -188,76 +207,74 @@
 <script>
     let gameState = {
         name: "", dob: "", gender: "",
-        partnerName: "", // ジム または キャシー
+        partnerName: "", // 繧ｸ繝 縺ｾ縺溘・ 繧ｭ繝｣繧ｷ繝ｼ
         currentChapter: 1,
+        currentScene: "ch1_intro", // 繧ｷ繝ｼ繝ｳ隴伜挨逕ｨ繝輔Λ繧ｰ
         killCount: 0,
         score: 0,
         novelIndex: 0,
         currentNovelData: [],
         
-        // 引き継ぎパラメータ
+        // 蠑輔″邯吶℃繝代Λ繝｡繝ｼ繧ｿ
         weaponType: 'normal',
         bombs: 1,
         allies: [],
         playerHP: 100
     };
 
-    // 発言者の位置判定用スタイル設定
-    function updateDialogueStyle(boxId, speakerName) {
+    // 逋ｺ險閠・・菴咲ｽｮ蛻､螳夂畑繧ｹ繧ｿ繧､繝ｫ險ｭ螳・    function updateDialogueStyle(boxId, speakerName) {
         const box = document.getElementById(boxId);
         box.classList.remove('talk-top', 'talk-left', 'talk-right');
 
-        if (speakerName === "ボス" || speakerName === "警備ドローン" || speakerName === "システム") {
+        if (speakerName === "繝懊せ" || speakerName === "隴ｦ蛯吶ラ繝ｭ繝ｼ繝ｳ" || speakerName === "繧ｷ繧ｹ繝・Β") {
             box.classList.add('talk-top');
-        } else if (speakerName === gameState.name || speakerName === "リーダー") {
+        } else if (speakerName === gameState.name || speakerName === "繝ｪ繝ｼ繝繝ｼ") {
             box.classList.add('talk-left');
         } else {
-            // パートナー（ジム/キャシー）やサポート（トビー）は右側に表示
             box.classList.add('talk-right');
         }
     }
 
-    // 各章のノベル定義（動的な名前挿入対応）
-    function getNovelDataChapter1() {
+    // 蜷・ｫ縺ｮ繝弱・繝ｫ螳夂ｾｩ・亥虚逧・↑蜷榊燕謖ｿ蜈･蟇ｾ蠢懶ｼ・    function getNovelDataChapter1() {
         return [
-            { name: gameState.partnerName, text: "ついにここまで来たね…！街はかわいいゾンビたちでいっぱいだ。" },
-            { name: gameState.partnerName, text: "私の後ろについてきて。画面を左右にスライドして、ゾンビをやっつけよう！" },
-            { name: "システム", text: "【ステージ1】10体のゾンビを撃破してください！(スコア: 1000点以上目標)" }
+            { name: gameState.partnerName, text: "縺､縺・↓縺薙％縺ｾ縺ｧ譚･縺溘・窶ｦ・∬｡励・縺九ｏ縺・＞繧ｾ繝ｳ繝薙◆縺｡縺ｧ縺・▲縺ｱ縺・□縲・ },
+            { name: gameState.partnerName, text: "遘√・蠕後ｍ縺ｫ縺､縺・※縺阪※縲ら判髱｢繧貞ｷｦ蜿ｳ縺ｫ繧ｹ繝ｩ繧､繝峨＠縺ｦ縲√だ繝ｳ繝薙ｒ繧・▲縺､縺代ｈ縺・ｼ・ },
+            { name: "繧ｷ繧ｹ繝・Β", text: "縲舌せ繝・・繧ｸ1縲・0菴薙・繧ｾ繝ｳ繝薙ｒ謦・ｴ縺励※縺上□縺輔＞・・繧ｹ繧ｳ繧｢: 1000轤ｹ莉･荳顔岼讓・" }
         ];
     }
 
     function getNovelDataChapter2Intro() {
         return [
-            { name: gameState.partnerName, text: "楽勝だったな、この調子でいこう！" },
-            { name: gameState.name, text: "油断は禁物だよ、パートナー！ 慎重に進もう。" }
+            { name: gameState.partnerName, text: "讌ｽ蜍昴□縺｣縺溘↑縲√％縺ｮ隱ｿ蟄舌〒縺・％縺・ｼ・ },
+            { name: gameState.name, text: "豐ｹ譁ｭ縺ｯ遖∫黄縺繧医√ヱ繝ｼ繝医リ繝ｼ・・諷朱㍾縺ｫ騾ｲ繧ゅ≧縲・ }
         ];
     }
 
     function getNovelDataChapter3Intro() {
         return [
-            { name: "システム", text: "――ボスはパートナーを連れ去ってしまった。" },
-            { name: gameState.name, text: "うぅ……私のせいで、あの子が……。" },
-            { name: "トビー", text: "リーダー、落ち込んでいる暇はありません！ 追いかけるために、一度特訓をしましょう！" },
-            { name: "システム", text: "【ステージ3（特訓）】15秒以内に「訓練用マト」を8個以上破壊してください！" }
+            { name: "繧ｷ繧ｹ繝・Β", text: "窶補輔・繧ｹ縺ｯ繝代・繝医リ繝ｼ繧帝｣繧悟悉縺｣縺ｦ縺励∪縺｣縺溘・ },
+            { name: gameState.name, text: "縺・≦窶ｦ窶ｦ遘√・縺帙＞縺ｧ縲√≠縺ｮ蟄舌′窶ｦ窶ｦ縲・ },
+            { name: "繝医ン繝ｼ", text: "繝ｪ繝ｼ繝繝ｼ縲∬誠縺｡霎ｼ繧薙〒縺・ｋ證・・縺ゅｊ縺ｾ縺帙ｓ・・霑ｽ縺・°縺代ｋ縺溘ａ縺ｫ縲∽ｸ蠎ｦ迚ｹ險薙ｒ縺励∪縺励ｇ縺・ｼ・ },
+            { name: "繧ｷ繧ｹ繝・Β", text: "縲舌せ繝・・繧ｸ3・育音險難ｼ峨・5遘剃ｻ･蜀・↓縲瑚ｨ鍋ｷｴ逕ｨ繝槭ヨ縲阪ｒ8蛟倶ｻ･荳顔ｴ螢翫＠縺ｦ縺上□縺輔＞・・ }
         ];
     }
 
     function getNovelDataChapter4Intro() {
         return [
-            { name: gameState.name, text: "ついにボスの本拠地近くまで来たね、トビー。" },
-            { name: "トビー", text: "リーダー、実は……本当にごめんなさい！" },
-            { name: "トビー", text: "ボスの情報を敵に売ってしまったのは、僕なんです。おじいちゃんの治療薬と引き換えにするって言われて……。" },
-            { name: "トビー", text: "でも、これ以上先にはリーダーを進ませるわけにはいかないんです！" },
-            { name: "トビー", text: "僕の警備ドローン『マカロン』、起動！！" }
+            { name: gameState.name, text: "縺､縺・↓繝懊せ縺ｮ譛ｬ諡蝨ｰ霑代￥縺ｾ縺ｧ譚･縺溘・縲√ヨ繝薙・縲・ },
+            { name: "繝医ン繝ｼ", text: "繝ｪ繝ｼ繝繝ｼ縲∝ｮ溘・窶ｦ窶ｦ譛ｬ蠖薙↓縺斐ａ繧薙↑縺輔＞・・ },
+            { name: "繝医ン繝ｼ", text: "繝懊せ縺ｮ諠・ｱ繧呈雰縺ｫ螢ｲ縺｣縺ｦ縺励∪縺｣縺溘・縺ｯ縲∝ヵ縺ｪ繧薙〒縺吶ゅ♀縺倥＞縺｡繧・ｓ縺ｮ豐ｻ逋り脈縺ｨ蠑輔″謠帙∴縺ｫ縺吶ｋ縺｣縺ｦ險繧上ｌ縺ｦ窶ｦ窶ｦ縲・ },
+            { name: "繝医ン繝ｼ", text: "蛯ｷ縺､縺代ｋ縺､繧ゅｊ縺ｯ縺ｪ縺九▲縺溘ｓ縺ｧ縺吶ゅ〒繧ゅ√％繧御ｻ･荳雁・縺ｫ縺ｯ騾ｲ縺ｾ縺帙ｋ繧上￠縺ｫ縺ｯ縺・°縺ｪ縺・ｓ縺ｧ縺呻ｼ・ },
+            { name: "繝医ン繝ｼ", text: "蜒輔・隴ｦ蛯吶ラ繝ｭ繝ｼ繝ｳ縲弱・繧ｫ繝ｭ繝ｳ縲上∬ｵｷ蜍包ｼ・ｼ・ }
         ];
     }
 
     function getNovelDataChapter4Clear() {
         return [
-            { name: "トビー", text: "うぅ……負けました。本当にごめんなさい……。" },
-            { name: gameState.name, text: "大丈夫だよ、トビー。一緒におじいちゃんも、さらわれたパートナーも救い出そう。" },
-            { name: "トビー", text: "リーダー……！ これ、お詫びと応援の気持ちです。持って行ってください！" },
-            { name: "システム", text: "（トビーから「強力な回復スプレー」と「ボム」を貰った！HPが最大まで回復し、ボムが2個増えました）" }
+            { name: "繝医ン繝ｼ", text: "縺・≦窶ｦ窶ｦ雋縺代∪縺励◆縲よ悽蠖薙↓縺斐ａ繧薙↑縺輔＞窶ｦ窶ｦ縲・ },
+            { name: gameState.name, text: "螟ｧ荳亥､ｫ縺繧医√ヨ繝薙・縲ゆｸ邱偵↓縺翫§縺・■繧・ｓ繧ゅ√＆繧峨ｏ繧後◆繝代・繝医リ繝ｼ繧よ舞縺・・縺昴≧縲・ },
+            { name: "繝医ン繝ｼ", text: "繝ｪ繝ｼ繝繝ｼ窶ｦ窶ｦ・・縺薙ｌ縲√♀隧ｫ縺ｳ縺ｨ蠢懈抄縺ｮ豌玲戟縺｡縺ｧ縺吶よ戟縺｣縺ｦ陦後▲縺ｦ縺上□縺輔＞・・ },
+            { name: "繧ｷ繧ｹ繝・Β", text: "・医ヨ繝薙・縺九ｉ縲悟ｼｷ蜉帙↑蝗槫ｾｩ繧ｹ繝励Ξ繝ｼ縲阪→縲後・繝縲阪ｒ雋ｰ縺｣縺滂ｼ？P縺梧怙螟ｧ縺ｾ縺ｧ蝗槫ｾｩ縺励√・繝縺・蛟句｢励∴縺ｾ縺励◆・・ }
         ];
     }
 
@@ -273,12 +290,11 @@
     }
 
     function goToOpening() {
-        gameState.name = document.getElementById('player-name').value || "リーダー";
+        gameState.name = document.getElementById('player-name').value || "繝ｪ繝ｼ繝繝ｼ";
         gameState.dob = document.getElementById('player-dob').value;
         gameState.gender = document.getElementById('player-gender').value;
 
-        // パートナーの性別固定ネーム
-        gameState.partnerName = (gameState.gender === 'female') ? 'ジム' : 'キャシー';
+        gameState.partnerName = (gameState.gender === 'female') ? '繧ｸ繝' : '繧ｭ繝｣繧ｷ繝ｼ';
 
         localStorage.setItem('resistance_player_info', JSON.stringify({
             name: gameState.name, dob: gameState.dob, gender: gameState.gender, partnerName: gameState.partnerName
@@ -293,7 +309,7 @@
 
     function startChapter1() {
         gameState.currentChapter = 1;
-        gameState.novelIndex = 0;
+        gameState.currentScene = "ch1_intro"; // 繧ｷ繝ｼ繝ｳ險ｭ螳・        gameState.novelIndex = 0;
         gameState.currentNovelData = getNovelDataChapter1();
         showNovelStep();
         changeScreen('screen-novel');
@@ -302,11 +318,10 @@
     function showNovelStep() {
         const current = gameState.currentNovelData[gameState.novelIndex];
         
-        // ダイアログ位置設定
         updateDialogueStyle('novel-box', current.name);
 
         document.getElementById('novel-name').innerText = current.name;
-        let text = current.text.replace("パートナー", gameState.partnerName);
+        let text = current.text.replace("繝代・繝医リ繝ｼ", gameState.partnerName);
         document.getElementById('novel-text').innerText = text;
     }
 
@@ -315,9 +330,10 @@
         if (gameState.novelIndex < gameState.currentNovelData.length) {
             showNovelStep();
         } else {
-            if (gameState.currentNovelData === getNovelDataChapter4Clear()) {
-                // チャプター4クリア画面へ
+            // 笘・ヵ繝ｩ繧ｰ縺ｫ繧医ｋ蛻､螳・            if (gameState.currentScene === "ch4_clear") {
                 showChapter4ClearScreen();
+            } else if (gameState.currentScene === "ch2_defeat") {
+                startChapter3Intro();
             } else {
                 changeScreen('screen-shooting');
                 initShooting();
@@ -325,7 +341,7 @@
         }
     }
 
-    // --- シューティングエンジン（ Canvas ） ---
+    // --- 繧ｷ繝･繝ｼ繝・ぅ繝ｳ繧ｰ繧ｨ繝ｳ繧ｸ繝ｳ ---
     const canvas = document.getElementById('gameCanvas');
     const ctx = canvas.getContext('2d');
     let animationId;
@@ -340,9 +356,9 @@
     let boss = null;
     let ch2StartTime = 0;
     let isCh2DefeatedSceneActive = false;
-    let isCh2EventTriggered = false; // 「なんだか空気が重くなってきた」イベント管理
+    let isCh2EventTriggered = false;
 
-    // チャプター3
+    // 繝√Ε繝励ち繝ｼ3
     let ch3Timer = 15;
     let ch3TargetsHit = 0;
     let ch3LastSpawnTime = 0;
@@ -376,18 +392,17 @@
         } else if (gameState.currentChapter === 2) {
             document.getElementById('stage-title').innerText = "STAGE 2";
         } else if (gameState.currentChapter === 3) {
-            document.getElementById('stage-title').innerText = "STAGE 3 (特訓)";
-            document.getElementById('stage-objective').innerHTML = 'マト命中数: <span id="kill-count">0</span> / 8 (残り <span id="ch3-timer">15</span>秒)';
+            document.getElementById('stage-title').innerText = "STAGE 3 (迚ｹ險・";
+            document.getElementById('stage-objective').innerHTML = '繝槭ヨ蜻ｽ荳ｭ謨ｰ: <span id="kill-count">0</span> / 8 (谿九ｊ <span id="ch3-timer">15</span>遘・';
             ch3TargetsHit = 0;
             ch3GameStartTime = Date.now();
             ch3LastSpawnTime = 0;
         } else if (gameState.currentChapter === 4) {
             document.getElementById('stage-title').innerText = "STAGE 4 (BOSS)";
-            document.getElementById('stage-objective').innerHTML = '警備ドローン『マカロン』を破壊せよ！';
+            document.getElementById('stage-objective').innerHTML = '隴ｦ蛯吶ラ繝ｭ繝ｼ繝ｳ縲弱・繧ｫ繝ｭ繝ｳ縲上ｒ遐ｴ螢翫○繧茨ｼ・;
             document.getElementById('boss-hp-area').style.display = "block";
             document.getElementById('boss-hp-val').innerText = "100";
             
-            // トビーのドローンボス設定
             boss = {
                 x: canvas.width / 2 - 40, y: 50, width: 80, height: 80,
                 color: '#f783ac', direction: 1, lastShotTime: 0, hp: 100
@@ -412,8 +427,8 @@
     function updateAllyUI() {
         const area = document.getElementById('ally-status');
         if (gameState.allies.length > 0) {
-            let alliesText = gameState.allies.map(a => a === 'attacker' ? '援護射撃' : '自動回復').join(' + ');
-            area.innerText = `同伴中: ${alliesText}`;
+            let alliesText = gameState.allies.map(a => a === 'attacker' ? '謠ｴ隴ｷ蟆・茶' : '閾ｪ蜍募屓蠕ｩ').join(' + ');
+            area.innerText = `蜷御ｼｴ荳ｭ: ${alliesText}`;
         } else {
             area.innerText = "";
         }
@@ -425,7 +440,6 @@
         updateBombUI();
         flashScreen();
 
-        // 画面上部へのダメージ処理（新配列方式の順守）
         if (gameState.currentChapter === 1 || (gameState.currentChapter === 2 && !isCh2EventTriggered)) {
             gameState.killCount += enemies.length;
             gameState.score += enemies.length * 100;
@@ -451,7 +465,6 @@
         ctx.fillStyle = '#e3fafc';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        // 自機の描画
         ctx.fillStyle = player.color;
         ctx.beginPath();
         ctx.arc(player.x + player.width/2, player.y + player.height/2, player.width/2, 0, Math.PI * 2);
@@ -462,7 +475,6 @@
 
         let now = Date.now();
 
-        // ヒーラー同伴時の自動回復
         if (gameState.allies.includes('healer')) {
             if (now - lastHealTime > 3000) {
                 gameState.playerHP = Math.min(100, gameState.playerHP + 5);
@@ -471,7 +483,6 @@
             }
         }
 
-        // --- CHAPTER 2 専用：強制敗北イベントトリガー（中ボス出現後10秒経過で弾切れ） ---
         if (gameState.currentChapter === 2 && isCh2EventTriggered && !isCh2DefeatedSceneActive) {
             let elapsed = now - ch2StartTime;
             if (elapsed > 10000) { 
@@ -481,21 +492,18 @@
             }
         }
 
-        // プレイヤーの弾丸発射（新配列方式＆vx/vy物理演算の順守）
         let canShoot = !isCh2DefeatedSceneActive;
         if (canShoot && now - lastShootTime > 150) {
             firePlayerBullet(player.x + player.width / 2, player.y);
             lastShootTime = now;
         }
 
-        // アタッカーの援護射撃
         if (canShoot && gameState.allies.includes('attacker') && now - lastAllyShootTime > 300) {
             bullets.push({ x: player.x - 10, y: player.y + 10, width: 6, height: 12, vx: 0, vy: -6, isLaser: false });
             bullets.push({ x: player.x + player.width + 5, y: player.y + 10, width: 6, height: 12, vx: 0, vy: -6, isLaser: false });
             lastAllyShootTime = now;
         }
 
-        // 仲間キャラの描画
         gameState.allies.forEach((ally, index) => {
             ctx.fillStyle = ally === 'attacker' ? '#ff6b6b' : '#51cf66';
             ctx.beginPath();
@@ -504,25 +512,20 @@
             ctx.fill();
         });
 
-        // --- STAGE 1 のザコ生成 ---
         if (gameState.currentChapter === 1) {
             if (now - lastEnemyTime > 1500) {
                 let enemyX = Math.random() * (canvas.width - 40);
                 enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
                 lastEnemyTime = now;
             }
-        }
-        // --- STAGE 2 の通常・イベント・ボス処理 ---
-        else if (gameState.currentChapter === 2) {
+        } else if (gameState.currentChapter === 2) {
             if (!isCh2EventTriggered) {
-                // 中ボス出現前のザコ戦
                 if (now - lastEnemyTime > 1500) {
                     let enemyX = Math.random() * (canvas.width - 40);
                     enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now });
                     lastEnemyTime = now;
                 }
             } else if (boss) {
-                // 巨大ボス出現中
                 boss.x += boss.direction * 2;
                 if (boss.x < 10 || boss.x > canvas.width - boss.width - 10) boss.direction *= -1;
 
@@ -538,14 +541,11 @@
                 ctx.fillRect(boss.x + 40, boss.y + 65, 20, 5);
 
                 if (now - boss.lastShotTime > 800) {
-                    // 下方向への直進弾
                     enemyBullets.push({ x: boss.x + boss.width / 2 - 10, y: boss.y + boss.height, width: 20, height: 20, vx: 0, vy: 4, color: '#ff8787' });
                     boss.lastShotTime = now;
                 }
             }
-        }
-        // --- STAGE 3 の特訓（マト当て） ---
-        else if (gameState.currentChapter === 3) {
+        } else if (gameState.currentChapter === 3) {
             let elapsedSec = Math.floor((now - ch3GameStartTime) / 1000);
             let remaining = Math.max(0, ch3Timer - elapsedSec);
             document.getElementById('ch3-timer').innerText = remaining;
@@ -560,22 +560,18 @@
                 enemies.push({ x: targetX, y: -40, width: 30, height: 30, color: '#1c7ed6', speed: 3, isTarget: true });
                 ch3LastSpawnTime = now;
             }
-        }
-        // --- STAGE 4 のボス（トビードローン戦） ---
-        else if (gameState.currentChapter === 4 && boss) {
+        } else if (gameState.currentChapter === 4 && boss) {
             boss.x += boss.direction * 3;
             if (boss.x < 10 || boss.x > canvas.width - boss.width - 10) boss.direction *= -1;
 
-            // ドローンの描画（マカロン風の可愛いピンク）
             ctx.fillStyle = boss.color;
             ctx.beginPath();
             ctx.arc(boss.x + boss.width/2, boss.y + boss.height/2, boss.width/2, 0, Math.PI * 2);
             ctx.fill();
             ctx.fillStyle = '#e64980';
-            ctx.fillRect(boss.x + boss.width/2 - 25, boss.y + boss.height/2 - 5, 50, 10); // クリームライン
+            ctx.fillRect(boss.x + boss.width/2 - 25, boss.y + boss.height/2 - 5, 50, 10);
 
             if (now - boss.lastShotTime > 1000) {
-                // ドローンから3方向に拡散する弾（新ルール：vx / vy の物理演算順守）
                 let bSpeed = 4;
                 enemyBullets.push({ x: boss.x + boss.width/2, y: boss.y + boss.height, width: 12, height: 12, vx: 0, vy: bSpeed, color: '#f03e3e' });
                 enemyBullets.push({ x: boss.x + boss.width/2, y: boss.y + boss.height, width: 12, height: 12, vx: Math.sin(-0.3)*bSpeed, vy: Math.cos(-0.3)*bSpeed, color: '#f03e3e' });
@@ -584,7 +580,6 @@
             }
         }
 
-        // ザコゾンビが攻撃してくる処理（通常時）
         if (gameState.currentChapter === 1 || (gameState.currentChapter === 2 && !isCh2EventTriggered)) {
             enemies.forEach(e => {
                 if (now - e.lastShotTime > 2000) {
@@ -594,9 +589,8 @@
             });
         }
 
-        // --- ルール1：新配列方式（forループを使用した要素除去） ---
-        // 1. プレイヤー弾の更新・当たり判定
-        let nextBullets = [];
+        // --- 繝ｫ繝ｼ繝ｫ1・壽眠驟榊・譁ｹ蠑擾ｼ・or繝ｫ繝ｼ繝励ｒ菴ｿ逕ｨ縺励◆隕∫ｴ髯､蜴ｻ・・---
+        // 1. 繝励Ξ繧､繝､繝ｼ蠑ｾ縺ｮ譖ｴ譁ｰ繝ｻ蠖薙◆繧雁愛螳・        let nextBullets = [];
         for (let i = 0; i < bullets.length; i++) {
             let b = bullets[i];
             b.x += b.vx || 0;
@@ -607,12 +601,11 @@
 
             let bulletRemoved = false;
 
-            // ボスとの判定（Ch.4 または Ch.2）
             if (gameState.currentChapter === 4 && boss) {
                 if (b.x < boss.x + boss.width && b.x + b.width > boss.x &&
                     b.y < boss.y + boss.height && b.y + b.height > boss.y) {
                     bulletRemoved = true;
-                    boss.hp -= b.isLaser ? 3 : 5; // レーザーのバランス調整
+                    boss.hp -= b.isLaser ? 3 : 5;
                     document.getElementById('boss-hp-val').innerText = Math.max(0, boss.hp);
                     if (boss.hp <= 0) {
                         endGame(true);
@@ -627,7 +620,6 @@
                 }
             }
 
-            // 敵（マト）との判定
             for (let j = 0; j < enemies.length; j++) {
                 let e = enemies[j];
                 if (!e.toRemove && b.x < e.x + e.width && b.x + b.width > e.x &&
@@ -644,11 +636,9 @@
                         
                         if (Math.random() < 0.4) spawnItem(e.x, e.y);
 
-                        // 各チャプターの目標達成
                         if (gameState.currentChapter === 1 && gameState.killCount >= 10) {
                             endGame(true);
                         } else if (gameState.currentChapter === 2 && gameState.killCount >= 3) {
-                            // チャプター2：3体倒した時点で一度進行を止めて異変イベントへ
                             enemies = [];
                             bullets = [];
                             triggerCh2AirHeavyEvent();
@@ -660,14 +650,13 @@
                 }
             }
 
-            // 画面内かつ未接触の弾のみ残す
             if (b.y >= -20 && b.y <= canvas.height + 20 && !bulletRemoved) {
                 nextBullets.push(b);
             }
         }
         bullets = nextBullets;
 
-        // 2. 敵の更新（新配列方式）
+        // 2. 謨ｵ縺ｮ譖ｴ譁ｰ
         let nextEnemies = [];
         for (let i = 0; i < enemies.length; i++) {
             let e = enemies[i];
@@ -691,7 +680,7 @@
         }
         enemies = nextEnemies;
 
-        // 3. 敵弾の更新（新配列方式）
+         // 3. 謨ｵ蠑ｾ縺ｮ譖ｴ譁ｰ
         let nextEnemyBullets = [];
         for (let i = 0; i < enemyBullets.length; i++) {
             let eb = enemyBullets[i];
@@ -729,7 +718,7 @@
         }
         enemyBullets = nextEnemyBullets;
 
-        // 4. アイテムの更新（新配列方式）
+        // 4. 繧｢繧､繝・Β縺ｮ譖ｴ譁ｰ
         let nextItems = [];
         for (let i = 0; i < items.length; i++) {
             let item = items[i];
@@ -759,8 +748,7 @@
         animationId = requestAnimationFrame(loop);
     }
 
-    // プレイヤーの弾の発射ベクトル割り振りの定義（ルール2：angleではなくvx/vy制御）
-    function firePlayerBullet(x, y) {
+    // 繝励Ξ繧､繝､繝ｼ縺ｮ蟆・茶蜃ｦ逅・ｼ医Ν繝ｼ繝ｫ2・夊ｧ貞ｺｦ繧剃ｽｿ繧上★騾溷ｺｦ繝吶け繝医Νvx/vy縺ｧ蛻ｶ蠕｡・・    function firePlayerBullet(x, y) {
         let type = gameState.weaponType;
         let bSpeed = 8;
         if (type === 'normal') {
@@ -771,7 +759,6 @@
         } else if (type === 'laser') {
             bullets.push({ x: x - 3, y: y - 50, width: 6, height: 80, vx: 0, vy: -12, isLaser: true });
         } else if (type === 'legend') {
-            // 【3方向ショット】ルール2順守：斜め移動を角度(angle)ではなく事前にvx/vy速度ベクトルに分解して格納
             bullets.push({ x: x - 4, y: y, width: 8, height: 15, vx: 0, vy: -bSpeed, isLaser: false });
             bullets.push({ x: x - 15, y: y, width: 8, height: 15, vx: Math.sin(-0.2) * bSpeed, vy: -Math.cos(-0.2) * bSpeed, isLaser: false });
             bullets.push({ x: x + 7, y: y, width: 8, height: 15, vx: Math.sin(0.2) * bSpeed, vy: -Math.cos(0.2) * bSpeed, isLaser: false });
@@ -807,7 +794,7 @@
         }
     }
 
-    // --- チャプター2：異変イベント演出（3体撃破時に割り込み） ---
+    // --- 繝√Ε繝励ち繝ｼ2・夂焚螟峨う繝吶Φ繝域ｼ泌・ ---
     let ch2EventStep = 0;
     let ch2EventTalks = [];
 
@@ -815,8 +802,8 @@
         cancelAnimationFrame(animationId);
         
         ch2EventTalks = [
-            { speaker: gameState.name, text: "……なんだか、急に空気が重くなってきた？" },
-            { speaker: gameState.partnerName, text: "えっ、な、なにこれ！？ 画面が不気味に揺れて……" }
+            { speaker: gameState.name, text: "窶ｦ窶ｦ縺ｪ繧薙□縺九∵･縺ｫ遨ｺ豌励′驥阪￥縺ｪ縺｣縺ｦ縺阪◆・・ },
+            { speaker: gameState.partnerName, text: "縺医▲縲√↑縲√↑縺ｫ縺薙ｌ・・ｼ・逕ｻ髱｢縺御ｸ肴ｰ怜袖縺ｫ謠ｺ繧後※窶ｦ窶ｦ" }
         ];
 
         document.getElementById('battle-talk-box').style.display = 'block';
@@ -828,20 +815,18 @@
         let current = ch2EventTalks[ch2EventStep];
         updateDialogueStyle('battle-talk-box', current.speaker);
         document.getElementById('battle-talk-speaker').innerText = current.speaker;
-        document.getElementById('battle-talk-text').innerText = current.text.replace("パートナー", gameState.partnerName);
+        document.getElementById('battle-talk-text').innerText = current.text.replace("繝代・繝医リ繝ｼ", gameState.partnerName);
     }
 
     function advanceBattleTalk() {
         if (gameState.currentChapter === 2) {
             if (!isCh2EventTriggered) {
-                // 中ボス出現前のダイアログ
                 ch2EventStep++;
                 if (ch2EventStep < ch2EventTalks.length) {
                     showCh2EventTalk();
                 } else {
                     document.getElementById('battle-talk-box').style.display = 'none';
                     isCh2EventTriggered = true;
-                    // ボスゾンビを出現させて戦闘再開
                     boss = {
                         x: canvas.width / 2 - 50, y: 50, width: 100, height: 100,
                         color: '#b085f5', direction: 1, lastShotTime: 0
@@ -850,7 +835,6 @@
                     loop();
                 }
             } else {
-                // ボス戦終了時（弾切れ敗北ダイアログ）
                 battleTalkStep++;
                 if (battleTalkStep < battleTalkData.length) {
                     showBattleTalk();
@@ -862,7 +846,7 @@
         }
     }
 
-    // --- チャプター2：強制敗北イベントダイアログ演出 ---
+    // --- 繝√Ε繝励ち繝ｼ2・壼ｼｷ蛻ｶ謨怜圏繧､繝吶Φ繝医ム繧､繧｢繝ｭ繧ｰ貍泌・ ---
     let battleTalkStep = 0;
     let battleTalkData = [];
 
@@ -870,12 +854,12 @@
         cancelAnimationFrame(animationId);
 
         battleTalkData = [
-            { speaker: "リーダー", text: "弾が切れた！？ どうして、こんな時に…！" },
-            { speaker: "リーダー", text: "うわーっ！ やめろーっ！！" },
-            { speaker: "ボス", text: "ふっふっふ……これをくらえー！" },
-            { speaker: "システム", text: "（まばゆい光とともに、強烈な一撃が炸裂する！）" },
-            { speaker: "リーダー", text: "うぅ……身体が、動かない……。" },
-            { speaker: "パートナー", text: "リーダー！！ そんな……ああっ、ここは一旦引くぞ！" }
+            { speaker: "繝ｪ繝ｼ繝繝ｼ", text: "蠑ｾ縺悟・繧後◆・・ｼ・縺ｩ縺・＠縺ｦ縲√％繧薙↑譎ゅ↓窶ｦ・・ },
+            { speaker: "繝ｪ繝ｼ繝繝ｼ", text: "縺・ｏ繝ｼ縺｣・・繧・ａ繧阪・縺｣・・ｼ・ },
+            { speaker: "繝懊せ", text: "縺ｵ縺｣縺ｵ縺｣縺ｵ窶ｦ窶ｦ縺薙ｌ繧偵￥繧峨∴繝ｼ・・ },
+            { speaker: "繧ｷ繧ｹ繝・Β", text: "・医∪縺ｰ繧・＞蜈峨→縺ｨ繧ゅ↓縲∝ｼｷ辜医↑荳謦・′轤ｸ陬ゅ☆繧具ｼ・ｼ・ },
+            { speaker: "繝ｪ繝ｼ繝繝ｼ", text: "縺・≦窶ｦ窶ｦ霄ｫ菴薙′縲∝虚縺九↑縺・ｦ窶ｦ縲・ },
+            { speaker: "繝代・繝医リ繝ｼ", text: "繝ｪ繝ｼ繝繝ｼ・・ｼ・縺昴ｓ縺ｪ窶ｦ窶ｦ縺ゅ≠縺｣縲√％縺薙・荳譌ｦ蠑輔￥縺橸ｼ・ }
         ];
 
         document.getElementById('battle-talk-box').style.display = 'block';
@@ -896,7 +880,6 @@
         }
     }
 
-    // チャプター3への導入
     function startChapter3Intro() {
         gameState.currentChapter = 3;
         gameState.novelIndex = 0;
@@ -915,17 +898,16 @@
 
         if (ch3TargetsHit >= 8) {
             gameState.weaponType = 'legend';
-            document.getElementById('clear-title').innerText = "特訓大成功！";
+            document.getElementById('clear-title').innerText = "迚ｹ險灘､ｧ謌仙粥・・;
             document.getElementById('clear-status').innerText = 
-                `マトを ${ch3TargetsHit} 個破壊しました！\n\n【伝説の3方向ショット】を習得！\n裏切り者の手がかりを見つけ、ボスの隠れ家へと急ぎましょう。`;
+                `繝槭ヨ繧・${ch3TargetsHit} 蛟狗ｴ螢翫＠縺ｾ縺励◆・―n\n縲蝉ｼ晁ｪｬ縺ｮ3譁ｹ蜷代す繝ｧ繝・ヨ縲代ｒ鄙貞ｾ暦ｼ―n陬丞・繧願・・謇九′縺九ｊ繧定ｦ九▽縺代√・繧ｹ縺ｮ髫繧悟ｮｶ縺ｸ縺ｨ諤･縺弱∪縺励ｇ縺・Ａ;
         } else {
-            document.getElementById('clear-title').innerText = "特訓終了";
+            document.getElementById('clear-title').innerText = "迚ｹ險鍋ｵゆｺ・;
             document.getElementById('clear-status').innerText = 
-                `破壊したマトは ${ch3TargetsHit} 個でした。（目標8個以上）\n伝説の武器は解放できませんでしたが、次のエリアへ向かいましょう！`;
+                `遐ｴ螢翫＠縺溘・繝医・ ${ch3TargetsHit} 蛟九〒縺励◆縲ゑｼ育岼讓・蛟倶ｻ･荳奇ｼ噂n莨晁ｪｬ縺ｮ豁ｦ蝎ｨ縺ｯ隗｣謾ｾ縺ｧ縺阪∪縺帙ｓ縺ｧ縺励◆縺後∵ｬ｡縺ｮ繧ｨ繝ｪ繧｢縺ｸ蜷代°縺・∪縺励ｇ縺・ｼ～;
         }
     }
 
-    // --- チャプター4：導入・戦闘開始 ---
     function startChapter4Intro() {
         gameState.currentChapter = 4;
         gameState.novelIndex = 0;
@@ -934,8 +916,8 @@
         changeScreen('screen-novel');
     }
 
-    // --- チャプター4クリア後のシナリオ遷移 ---
     function triggerChapter4ClearScenario() {
+        gameState.currentScene = "ch4_clear";
         gameState.novelIndex = 0;
         gameState.currentNovelData = getNovelDataChapter4Clear();
         showNovelStep();
@@ -943,7 +925,6 @@
     }
 
     function showChapter4ClearScreen() {
-        // セーブデータに反映＆トビーからの贈り物
         gameState.playerHP = 100;
         gameState.bombs += 2;
 
@@ -953,14 +934,13 @@
 
         document.getElementById('clear-title').innerText = "STAGE 4 CLEAR!";
         document.getElementById('clear-status').innerText = 
-            `裏切り者のトビーを許し、再び仲間に引き入れました！\nHPが全回復し、ボムがさらに2個増えました。\n\nいよいよ次は、さらわれたパートナーを救い出す決戦のステージです！`;
+            `陬丞・繧願・・繝医ン繝ｼ繧定ｨｱ縺励∝・縺ｳ莉ｲ髢薙↓蠑輔″蜈･繧後∪縺励◆・―nHP縺悟・蝗槫ｾｩ縺励√・繝縺後＆繧峨↓2蛟句｢励∴縺ｾ縺励◆縲・n\n縺・ｈ縺・ｈ谺｡縺ｯ縲√＆繧峨ｏ繧後◆繝代・繝医リ繝ｼ繧呈舞縺・・縺呎ｱｺ謌ｦ縺ｮ繧ｹ繝・・繧ｸ縺ｧ縺呻ｼ～;
         
         document.getElementById('next-chapter-btn').style.display = "none";
         document.getElementById('restart-btn').style.display = "block";
         changeScreen('screen-clear');
     }
 
-    // シューティングゲームの最終判定
     function endGame(isWin) {
         isGameOver = true;
         cancelAnimationFrame(animationId);
@@ -968,18 +948,16 @@
         if (gameState.currentChapter === 1 && isWin) {
             document.getElementById('clear-title').innerText = "STAGE 1 CLEAR!";
             document.getElementById('clear-status').innerText = 
-                `${gameState.name}さん、最初の戦いを無事に生き延びました！\nアイテムや仲間を連れて、チャプター2に進みます。`;
+                `${gameState.name}縺輔ｓ縲∵怙蛻昴・謌ｦ縺・ｒ辟｡莠九↓逕溘″蟒ｶ縺ｳ縺ｾ縺励◆・―n繧｢繧､繝・Β繧・ｻｲ髢薙ｒ騾｣繧後※縲√メ繝｣繝励ち繝ｼ2縺ｫ騾ｲ縺ｿ縺ｾ縺吶Ａ;
             document.getElementById('next-chapter-btn').style.display = "block";
             document.getElementById('next-chapter-btn').setAttribute('onclick', 'startChapter2()');
             document.getElementById('restart-btn').style.display = "none";
             changeScreen('screen-clear');
         } else if (gameState.currentChapter === 4 && isWin) {
-            // ドローン破壊成功、トビーの改心イベントへ
             triggerChapter4ClearScenario();
         } else if (!isWin) {
-            // HP 0
             document.getElementById('clear-title').innerText = "GAME OVER";
-            document.getElementById('clear-status').innerText = "レジスタンスは壊滅してしまった……。";
+            document.getElementById('clear-status').innerText = "繝ｬ繧ｸ繧ｹ繧ｿ繝ｳ繧ｹ縺ｯ螢頑ｻ・＠縺ｦ縺励∪縺｣縺溪ｦ窶ｦ縲・;
             document.getElementById('next-chapter-btn').style.display = "none";
             document.getElementById('restart-btn').style.display = "block";
             changeScreen('screen-clear');
@@ -1005,4 +983,3 @@
 </script>
 
 </body>
-</html>
