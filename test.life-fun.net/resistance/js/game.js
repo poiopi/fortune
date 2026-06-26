@@ -27,7 +27,12 @@ export class GameEngine {
 
         // ★チャプター1進行管理フラグ
         this.isCh1BossActive = false; // 1面ボス出現フラグ
-        this.isBossEntranceAnimating = false; // ボスが画面外からスーッと登場する演出中フラグ
+        this.isBossEntranceAnimating = false; // ボスが画面外から登場する演出中フラグ
+
+        // ★ボス撃破時の爆発エフェクト管理用パラメータ
+        this.isBossExploding = false;
+        this.bossExplosionStartTime = 0;
+        this.particles = [];
 
         // ★チャプター4進行管理フラグ
         this.isCh4MiniBossActive = false;       
@@ -64,7 +69,7 @@ export class GameEngine {
 
         // マウス移動（PC） - 上下左右（360度）の追従移動
         shootScreen.addEventListener('mousemove', function(e) {
-            if (self.isGameOver || self.isCh2DefeatedSceneActive || self.isCh4GreatBossSpawnAnimating) return;
+            if (self.isGameOver || self.isCh2DefeatedSceneActive || self.isCh4GreatBossSpawnAnimating || self.isBossExploding) return;
             const rect = self.canvas.getBoundingClientRect();
             const scaleX = self.canvas.width / rect.width;
             const scaleY = self.canvas.height / rect.height;
@@ -79,7 +84,7 @@ export class GameEngine {
 
         // タッチ移動（スマートフォン） - 上下左右（360度）の追従移動
         shootScreen.addEventListener('touchmove', function(e) {
-            if (self.isGameOver || self.isCh2DefeatedSceneActive || self.isCh4GreatBossSpawnAnimating) return;
+            if (self.isGameOver || self.isCh2DefeatedSceneActive || self.isCh4GreatBossSpawnAnimating || self.isBossExploding) return;
             e.preventDefault();
             const rect = self.canvas.getBoundingClientRect();
             const scaleX = self.canvas.width / rect.width;
@@ -102,8 +107,10 @@ export class GameEngine {
         this.player.lastHitTime = 0; 
 
         this.isGameOver = false;
-        this.isCh1BossActive = false; // 初期化
-        this.isBossEntranceAnimating = false; // 初期化
+        this.isCh1BossActive = false; 
+        this.isBossEntranceAnimating = false; 
+        this.isBossExploding = false; // 初期化
+        this.particles = [];          // 初期化
         this.isCh2EventStarted = false; 
         this.isCh2EventTriggered = false; 
         this.isCh2DefeatedSceneActive = false;
@@ -129,7 +136,7 @@ export class GameEngine {
         document.getElementById('score-val').innerText = this.gameState.score;
         document.getElementById('boss-hp-area').style.display = "none";
 
-        // ★バグ修正：左上のステージタイトルを現在のチャプター数に動的に書き換えます
+        // ステージタイトルを現在のチャプター数に動的に書き換え
         document.getElementById('stage-title').innerText = "STAGE " + this.gameState.currentChapter;
 
         if (this.gameState.currentChapter === 2) {
@@ -147,7 +154,6 @@ export class GameEngine {
             };
         }
 
-        // HP同期
         document.getElementById('hp-value').innerText = this.gameState.playerHP;
         const hpBar = document.getElementById('hp-gauge-bar');
         if (hpBar) {
@@ -179,7 +185,7 @@ export class GameEngine {
     }
 
     triggerBomb() {
-        if (this.gameState.bombs <= 0 || this.isGameOver || this.isCh2DefeatedSceneActive || this.isCh4GreatBossSpawnAnimating || this.isBossEntranceAnimating) return;
+        if (this.gameState.bombs <= 0 || this.isGameOver || this.isCh2DefeatedSceneActive || this.isCh4GreatBossSpawnAnimating || this.isBossEntranceAnimating || this.isBossExploding) return;
         this.gameState.bombs--;
         this.updateBombUI();
         this.flashScreen();
@@ -197,20 +203,8 @@ export class GameEngine {
             this.boss.hp -= 15;
             document.getElementById('boss-hp-val').innerText = Math.max(0, this.boss.hp);
             if (this.boss.hp <= 0) {
-                this.cancelLoop();
-                if (this.gameState.currentChapter === 1) {
-                    this.endGame(true);
-                } else if (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventStarted) {
-                    this.isCh4MidBossEventStarted = true;
-                    this.boss = null;
-                    this.onCh4MidBossTrigger();
-                } else if (this.gameState.currentChapter === 4 && this.isCh4MidBossEventTriggered && !this.isCh4MidBossDefeated) {
-                    this.isCh4MidBossDefeated = true;
-                    this.boss = null;
-                    this.onStageEnd(true, "ch4_midboss_defeated");
-                } else {
-                    this.endGame(true);
-                }
+                // 撃破処理（爆発エフェクトのフラグを立てる）
+                this.triggerBossExplosion();
             }
         }
         this.enemyBullets = [];
@@ -222,18 +216,41 @@ export class GameEngine {
         setTimeout(() => { flash.style.opacity = '0'; }, 300);
     }
 
+    // ★新規追加：ボス撃破時にダイナミックな爆発エフェクトを発生させるトリガー
+    triggerBossExplosion() {
+        this.isBossExploding = true;
+        this.bossExplosionStartTime = Date.now();
+        this.flashScreen();
+
+        // 30個のカラフルな火花粒子を生成し、全方位に拡散させます
+        this.particles = [];
+        for (let k = 0; k < 30; k++) {
+            let angle = Math.random() * Math.PI * 2;
+            let speed = 2 + Math.random() * 5;
+            this.particles.push({
+                x: this.boss.x + this.boss.width / 2,
+                y: this.boss.y + this.boss.height / 2,
+                vx: Math.sin(angle) * speed,
+                vy: Math.cos(angle) * speed,
+                radius: 3 + Math.random() * 5,
+                color: ['#ff6b6b', '#fcc419', '#51cf66', '#339af0', '#ae3ec9'][Math.floor(Math.random() * 5)],
+                alpha: 1
+            });
+        }
+    }
+
     loop() {
         if (this.isGameOver) return;
 
         this.ctx.fillStyle = '#e3fafc';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
+        // 自機の描画（無敵時間中は100msごとに点滅、ボス爆発中も操作だけは可能）
         let now = Date.now();
         let isInvincible = (now - this.player.lastHitTime < 1000);
         let shouldDrawPlayer = (!isInvincible || (Math.floor(now / 100) % 2 === 0)) && !this.isCh4GreatBossSpawnAnimating;
 
         if (shouldDrawPlayer) {
-            // 自機の描画
             this.ctx.fillStyle = this.player.color;
             this.ctx.beginPath();
             this.ctx.arc(this.player.x + this.player.width/2, this.player.y + this.player.height/2, this.player.width/2, 0, Math.PI * 2);
@@ -267,8 +284,8 @@ export class GameEngine {
             }
         }
 
-        // ★ボス出現演出中は「自機は動かせるが、弾（ショット）は出ない」仕様に制御
-        let canShoot = !this.isCh2DefeatedSceneActive && !this.isCh4GreatBossSpawnAnimating && !this.isBossEntranceAnimating;
+        // シューティング弾自動射撃（★ボス登場演出中、およびボス爆発中は弾が出ない）
+        let canShoot = !this.isCh2DefeatedSceneActive && !this.isCh4GreatBossSpawnAnimating && !this.isBossEntranceAnimating && !this.isBossExploding;
         if (canShoot && now - this.lastShootTime > 150) {
             this.firePlayerBullet(this.player.x + this.player.width / 2, this.player.y);
             this.lastShootTime = now;
@@ -292,10 +309,13 @@ export class GameEngine {
             });
         }
 
-        // ゾンビ生成
-        if (this.gameState.currentChapter === 1 && !this.isCh1BossActive) {
-            // ボス未出現時のみザコを生成
-            if (now - this.lastEnemyTime > 1500) {
+        // --- ザコゾンビの生成（チャプター個別） ---
+        // ★修正：1面はミニボス出現後も、お供（取り巻き）の通常ザコが上空から降り注ぎ続けるように変更
+        if (this.gameState.currentChapter === 1) {
+            let canSpawnZombies = !this.isBossEntranceAnimating && !this.isBossExploding;
+            // ミニボス戦中（isCh1BossActiveがtrue）は、スポーン間隔を2.5秒に少し落としてお供を送り込みます
+            let spawnInterval = this.isCh1BossActive ? 2500 : 1500;
+            if (canSpawnZombies && (now - this.lastEnemyTime > spawnInterval)) {
                 let enemyX = Math.random() * (this.canvas.width - 40);
                 let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
                 this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
@@ -308,26 +328,6 @@ export class GameEngine {
                     let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
                     this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
                     this.lastEnemyTime = now;
-                }
-            } else if (this.boss && !this.isBossEntranceAnimating) {
-                // 異変イベント会話が終了し、演出が終わったらボスが動き出す
-                this.boss.x += this.boss.direction * 2;
-                if (this.boss.x < 10 || this.boss.x > this.canvas.width - this.boss.width - 10) this.boss.direction *= -1;
-
-                this.ctx.fillStyle = this.boss.color;
-                this.ctx.beginPath();
-                this.ctx.arc(this.boss.x + this.boss.width/2, this.boss.y + this.boss.height/2, this.boss.width/2, 0, Math.PI * 2);
-                this.ctx.fill();
-
-                this.ctx.fillStyle = '#333';
-                this.ctx.fillRect(this.boss.x + 30, this.boss.y + 35, 8, 8);
-                this.ctx.fillRect(this.boss.x + 62, this.boss.y + 35, 8, 8);
-                this.ctx.fillStyle = '#ff6b8b';
-                this.ctx.fillRect(this.boss.x + 40, this.boss.y + 65, 20, 5);
-
-                if (now - this.boss.lastShotTime > 800) {
-                    this.enemyBullets.push({ x: this.boss.x + this.boss.width / 2 - 10, y: this.boss.y + this.boss.height, width: 20, height: 20, vx: 0, vy: 4, color: '#ff8787' });
-                    this.boss.lastShotTime = now;
                 }
             }
         } else if (this.gameState.currentChapter === 3) {
@@ -351,105 +351,22 @@ export class GameEngine {
                 this.ch3LastSpawnTime = now;
             }
         } else if (this.gameState.currentChapter === 4) {
-            // チャプター4のザコ戦・ボス戦処理
             if (!this.isCh4MidBossEventTriggered) {
-                // 中ボス出現前の通常索敵
                 if (now - this.lastEnemyTime > 1500) {
                     let enemyX = Math.random() * (this.canvas.width - 40);
                     let shootType = Math.random() < 0.4 ? 'aimed' : 'straight';
                     this.enemies.push({ x: enemyX, y: -40, width: 35, height: 35, color: '#96f2d7', speed: 2, lastShotTime: now, shootType: shootType });
                     this.lastEnemyTime = now;
                 }
-            } else if (this.isCh4GreatBossSpawnAnimating) {
-                // お供吸い込み＆巨大化アニメ
-                this.bossSpawnFrame++;
-                let progress = this.bossSpawnFrame / 60; 
-                
-                let currentX, currentY, currentRadius, currentColor;
-                
-                if (this.animatingAllyType) {
-                    currentX = this.animatingAllyX + (this.canvas.width / 2 - this.animatingAllyX) * progress;
-                    currentY = this.animatingAllyY + (100 - this.animatingAllyY) * progress;
-                    currentRadius = 10 + (40 - 10) * progress;
-                    currentColor = this.animatingAllyType === 'attacker' ? '#ff6b6b' : '#51cf66';
-                } else {
-                    currentX = this.canvas.width / 2;
-                    currentY = -50 + (100 - (-50)) * progress;
-                    currentRadius = 5 + (40 - 5) * progress;
-                    currentColor = '#f783ac';
-                }
-                
-                this.ctx.fillStyle = currentColor;
-                this.ctx.beginPath();
-                this.ctx.arc(currentX, currentY, currentRadius, 0, Math.PI * 2);
-                this.ctx.fill();
-                
-                if (this.bossSpawnFrame >= 60) {
-                    this.isCh4GreatBossSpawnAnimating = false;
-                    this.isCh4GreatBossActive = true;
-                    this.boss = {
-                        x: this.canvas.width / 2 - 40,
-                        y: 60,
-                        width: 80,
-                        height: 80,
-                        hp: 40, 
-                        color: '#f783ac',
-                        direction: 1,
-                        lastShotTime: Date.now()
-                    };
-                }
-            } else if (this.boss && !this.isBossEntranceAnimating && (this.isCh4GreatBossActive || (this.isCh4MidBossEventTriggered && !this.isCh4MidBossDefeated) || (this.isCh4MiniBossActive && !this.isCh4MidBossEventStarted))) {
-                // アクティブなボス（小ボス・中ボス・大ボス）の動作と移動
-                this.boss.x += this.boss.direction * 3;
-                if (this.boss.x < 10 || this.boss.x > this.canvas.width - this.boss.width - 10) {
-                    this.boss.direction *= -1;
-                }
-
-                this.ctx.fillStyle = this.boss.color;
-                this.ctx.beginPath();
-                this.ctx.arc(this.boss.x + this.boss.width/2, this.boss.y + this.boss.height/2, this.boss.width/2, 0, Math.PI * 2);
-                this.ctx.fill();
-
-                if (this.isCh4GreatBossActive) {
-                    this.ctx.fillStyle = '#e64980';
-                    this.ctx.fillRect(this.boss.x + this.boss.width/2 - 25, this.boss.y + this.boss.height/2 - 5, 50, 10);
-                } else if (this.isCh4MidBossEventTriggered) {
-                    this.ctx.fillStyle = '#1c7ed6';
-                    this.ctx.fillRect(this.boss.x + this.boss.width/2 - 15, this.boss.y + this.boss.height/2 - 3, 30, 6);
-                } else {
-                    this.ctx.fillStyle = '#fcc419';
-                    this.ctx.fillRect(this.boss.x + this.boss.width/2 - 8, this.boss.y + this.boss.height/2 - 2, 16, 4);
-                }
-
-                if (now - this.boss.lastShotTime > 1000) {
-                    let bSpeed = 4;
-                    if (this.isCh4GreatBossActive) {
-                        this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 12, height: 12, vx: 0, vy: bSpeed, color: '#f03e3e' });
-                        this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 12, height: 12, vx: Math.sin(-0.3)*bSpeed, vy: Math.cos(-0.3)*bSpeed, color: '#f03e3e' });
-                        this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 12, height: 12, vx: Math.sin(0.3)*bSpeed, vy: Math.cos(0.3)*bSpeed, color: '#f03e3e' });
-                    } else {
-                        let dx = (this.player.x + this.player.width/2) - (this.boss.x + this.boss.width/2);
-                        let dy = (this.player.y + this.player.height/2) - (this.boss.y + this.boss.height);
-                        let dist = Math.sqrt(dx*dx + dy*dy);
-                        let bVx = 0;
-                        let bVy = bSpeed;
-                        if (dist > 0 && Math.random() < 0.5) {
-                            bVx = (dx / dist) * bSpeed;
-                            bVy = (dy / dist) * bSpeed;
-                        }
-                        this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 10, height: 10, vx: bVx, vy: bVy, color: '#f03e3e' });
-                    }
-                    this.boss.lastShotTime = now;
-                }
             }
         }
 
-        // ★ボス登場時の「画面外からスーッと降りてくる」汎用演出処理
+        // --- ボス登場演出（グローバル共通処理：y:-50 から targetY までスーッと降りてきます） ---
         if (this.isBossEntranceAnimating && this.boss) {
-            this.boss.y += 2; // スピード調整
+            this.boss.y += 2; // 降下スピード
             if (this.boss.y >= this.boss.targetY) {
                 this.boss.y = this.boss.targetY;
-                this.isBossEntranceAnimating = false; // 演出終了、戦闘（ボス攻撃）開始！
+                this.isBossEntranceAnimating = false; // 到着したら戦闘開始
                 this.boss.lastShotTime = Date.now();
             }
 
@@ -459,15 +376,160 @@ export class GameEngine {
             this.ctx.arc(this.boss.x + this.boss.width/2, this.boss.y + this.boss.height/2, this.boss.width/2, 0, Math.PI * 2);
             this.ctx.fill();
 
-            // 1面のミニボスには簡単な装飾線をいれます
             if (this.gameState.currentChapter === 1) {
                 this.ctx.fillStyle = '#e64980';
                 this.ctx.fillRect(this.boss.x + this.boss.width/2 - 10, this.boss.y + this.boss.height/2 - 2, 20, 4);
             }
         }
+        // --- 大ボス巨大化演出（Ch.4専用） ---
+        else if (this.gameState.currentChapter === 4 && this.isCh4GreatBossSpawnAnimating) {
+            this.bossSpawnFrame++;
+            let progress = this.bossSpawnFrame / 60; 
+            
+            let currentX, currentY, currentRadius, currentColor;
+            
+            if (this.animatingAllyType) {
+                currentX = this.animatingAllyX + (this.canvas.width / 2 - this.animatingAllyX) * progress;
+                currentY = this.animatingAllyY + (100 - this.animatingAllyY) * progress;
+                currentRadius = 10 + (40 - 10) * progress;
+                currentColor = this.animatingAllyType === 'attacker' ? '#ff6b6b' : '#51cf66';
+            } else {
+                currentX = this.canvas.width / 2;
+                currentY = -50 + (100 - (-50)) * progress;
+                currentRadius = 5 + (40 - 5) * progress;
+                currentColor = '#f783ac';
+            }
+            
+            this.ctx.fillStyle = currentColor;
+            this.ctx.beginPath();
+            this.ctx.arc(currentX, currentY, currentRadius, 0, Math.PI * 2);
+            this.ctx.fill();
+            
+            if (this.bossSpawnFrame >= 60) {
+                this.isCh4GreatBossSpawnAnimating = false;
+                this.isCh4GreatBossActive = true;
+                this.boss = {
+                    x: this.canvas.width / 2 - 40,
+                    y: 60,
+                    width: 80,
+                    height: 80,
+                    hp: 40, 
+                    color: '#f783ac',
+                    direction: 1,
+                    lastShotTime: Date.now()
+                };
+            }
+        }
+        // ★不具合解消箇所：共通のアクティブなボス（STAGE1/STAGE2/STAGE4のボス共通）の動作と描画
+        else if (this.boss && !this.isBossExploding) {
+            this.boss.x += this.boss.direction * 3;
+            if (this.boss.x < 10 || this.boss.x > this.canvas.width - this.boss.width - 10) {
+                this.boss.direction *= -1;
+            }
 
-        // ザコ反撃（ボスの登場演出中は反撃しない）
-        let canZombiesAttack = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating;
+            // ボス本体の描画
+            this.ctx.fillStyle = this.boss.color;
+            this.ctx.beginPath();
+            this.ctx.arc(this.boss.x + this.boss.width/2, this.boss.y + this.boss.height/2, this.boss.width/2, 0, Math.PI * 2);
+            this.ctx.fill();
+
+            // チャプターごとの専用グラフィック装飾
+            if (this.gameState.currentChapter === 4 && this.isCh4GreatBossActive) {
+                // 大ボス
+                this.ctx.fillStyle = '#e64980';
+                this.ctx.fillRect(this.boss.x + this.boss.width/2 - 25, this.boss.y + this.boss.height/2 - 5, 50, 10);
+            } else if (this.gameState.currentChapter === 4 && this.isCh4MidBossEventTriggered) {
+                // 中ボス
+                this.ctx.fillStyle = '#1c7ed6';
+                this.ctx.fillRect(this.boss.x + this.boss.width/2 - 15, this.boss.y + this.boss.height/2 - 3, 30, 6);
+            } else if (this.gameState.currentChapter === 4 && this.isCh4MiniBossActive) {
+                // 小ボス
+                this.ctx.fillStyle = '#fcc419';
+                this.ctx.fillRect(this.boss.x + this.boss.width/2 - 8, this.boss.y + this.boss.height/2 - 2, 16, 4);
+            } else if (this.gameState.currentChapter === 2) {
+                // 2面巨大ボス
+                this.ctx.fillStyle = '#333';
+                this.ctx.fillRect(this.boss.x + 30, this.boss.y + 35, 8, 8);
+                this.ctx.fillRect(this.boss.x + 62, this.boss.y + 35, 8, 8);
+                this.ctx.fillStyle = '#ff6b8b';
+                this.ctx.fillRect(this.boss.x + 40, this.boss.y + 65, 20, 5);
+            } else if (this.gameState.currentChapter === 1) {
+                // 1面ミニボス
+                this.ctx.fillStyle = '#e64980';
+                this.ctx.fillRect(this.boss.x + this.boss.width/2 - 10, this.boss.y + this.boss.height/2 - 2, 20, 4);
+            }
+
+            // ボス攻撃
+            if (now - this.boss.lastShotTime > 1000) {
+                let bSpeed = 4;
+                if (this.gameState.currentChapter === 4 && this.isCh4GreatBossActive) {
+                    this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 12, height: 12, vx: 0, vy: bSpeed, color: '#f03e3e' });
+                    this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 12, height: 12, vx: Math.sin(-0.3)*bSpeed, vy: Math.cos(-0.3)*bSpeed, color: '#f03e3e' });
+                    this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 12, height: 12, vx: Math.sin(0.3)*bSpeed, vy: Math.cos(0.3)*bSpeed, color: '#f03e3e' });
+                } else if (this.gameState.currentChapter === 1 || this.gameState.currentChapter === 2 || this.gameState.currentChapter === 4) {
+                    let dx = (this.player.x + this.player.width/2) - (this.boss.x + this.boss.width/2);
+                    let dy = (this.player.y + this.player.height/2) - (this.boss.y + this.boss.height);
+                    let dist = Math.sqrt(dx*dx + dy*dy);
+                    let bVx = 0;
+                    let bVy = bSpeed;
+                    if (dist > 0 && Math.random() < 0.5) {
+                        bVx = (dx / dist) * bSpeed;
+                        bVy = (dy / dist) * bSpeed;
+                    }
+                    this.enemyBullets.push({ x: this.boss.x + this.boss.width/2, y: this.boss.y + this.boss.height, width: 10, height: 10, vx: bVx, vy: bVy, color: '#f03e3e' });
+                }
+                this.boss.lastShotTime = now;
+            }
+        }
+
+        // ★新規追加：ボス大爆発・フラッシュの1秒間の非同期エフェクト処理
+        if (this.isBossExploding) {
+            let nextParticles = [];
+            for (let k = 0; k < this.particles.length; k++) {
+                let p = this.particles[k];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.alpha -= 0.02; // スーッとフェードアウト
+                
+                if (p.alpha > 0) {
+                    nextParticles.push(p);
+                    this.ctx.save();
+                    this.ctx.globalAlpha = p.alpha;
+                    this.ctx.fillStyle = p.color;
+                    this.ctx.beginPath();
+                    this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    this.ctx.fill();
+                    this.ctx.restore();
+                }
+            }
+            this.particles = nextParticles;
+
+            // 1秒間（1000ms）の派手な爆発が終わったら、安全に次のクリア・会話画面へ遷移させます
+            if (now - this.bossExplosionStartTime > 1000) {
+                this.isBossExploding = false;
+                this.cancelLoop();
+                
+                let savedChapter = this.gameState.currentChapter;
+                let isMidBossDefeatedLocal = this.isCh4MidBossDefeated;
+                this.boss = null; // ボスを消去
+
+                if (savedChapter === 1) {
+                    this.endGame(true); // 1面クリア！
+                } else if (savedChapter === 4 && !this.isCh4MidBossEventStarted) {
+                    this.isCh4MidBossEventStarted = true;
+                    this.onCh4MidBossTrigger();
+                } else if (savedChapter === 4 && this.isCh4MidBossEventTriggered && !isMidBossDefeatedLocal) {
+                    this.isCh4MidBossDefeated = true;
+                    this.onStageEnd(true, "ch4_midboss_defeated");
+                } else {
+                    this.endGame(true); // 4面大ボス撃破！
+                }
+                return;
+            }
+        }
+
+        // ザコ反撃（ボス登場演出中・巨大化中・ボス大爆発中は攻撃してこない）
+        let canZombiesAttack = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating && !this.isBossExploding;
         if (canZombiesAttack && (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered))) {
             this.enemies.forEach(e => {
                 if (now - e.lastShotTime > 2000) {
@@ -513,8 +575,8 @@ export class GameEngine {
 
             let bulletRemoved = false;
 
-            if (this.boss && !this.isBossEntranceAnimating) {
-                // 1面ボス、2面ボス、4面ボスの当たり判定を一元化
+            // ボス登場中・爆発中はボスへの攻撃が無効化されます
+            if (this.boss && !this.isBossEntranceAnimating && !this.isBossExploding) {
                 if (b.x < this.boss.x + this.boss.width && b.x + b.width > this.boss.x &&
                     b.y < this.boss.y + this.boss.height && b.y + b.height > this.boss.y) {
                     bulletRemoved = true;
@@ -522,35 +584,17 @@ export class GameEngine {
                     let damage = b.isLaser ? 2 : 1;
                     this.boss.hp = (this.boss.hp || 0) - damage;
                     
-                    // ボスHP表示用のタグが存在していれば、数値を更新
                     const hpValEl = document.getElementById('boss-hp-val');
                     if (hpValEl && this.boss.hp !== undefined) {
                         hpValEl.innerText = Math.max(0, this.boss.hp);
                     }
                     
                     if (this.boss.hp !== undefined && this.boss.hp <= 0) {
-                        this.cancelLoop();
-                        if (this.gameState.currentChapter === 1) {
-                            // ★1面ボス撃破時のクリア処理
-                            this.endGame(true);
-                            return; 
-                        } else if (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventStarted) {
-                            this.isCh4MidBossEventStarted = true;
-                            this.boss = null;
-                            this.onCh4MidBossTrigger();
-                            return; 
-                        } else if (this.gameState.currentChapter === 4 && this.isCh4MidBossEventTriggered && !this.isCh4MidBossDefeated) {
-                            this.isCh4MidBossDefeated = true;
-                            this.boss = null;
-                            this.onStageEnd(true, "ch4_midboss_defeated");
-                            return; 
-                        } else {
-                            this.endGame(true);
-                            return; 
-                        }
+                        // ★直接クリアせず、大爆発エフェクトを起動します
+                        this.triggerBossExplosion();
                     }
                 }
-            } else if (this.gameState.currentChapter === 2 && this.boss) {
+            } else if (this.gameState.currentChapter === 2 && this.boss && !this.isBossEntranceAnimating && !this.isBossExploding) {
                 if (b.x < this.boss.x + this.boss.width && b.x + b.width > this.boss.x &&
                     b.y < this.boss.y + this.boss.height && b.y + b.height > this.boss.y) {
                     bulletRemoved = true;
@@ -575,23 +619,22 @@ export class GameEngine {
                         
                         if (Math.random() < 0.4) this.spawnItem(e.x, e.y);
 
-                        // 通常ザコ撃破による各イベントトリガーの制御（ボスの登場演出中はトリガーさせない）
+                        // ザコ撃破時の各ボス起動トリガー
                         if (this.gameState.currentChapter === 1 && !this.isCh1BossActive && this.gameState.killCount >= 8) {
-                            // ★1面の撃破数が8に達した瞬間に、画面外からミニボスがスーッと出現する演出を起動
                             this.isCh1BossActive = true;
-                            this.enemies = []; // 雑魚を一度消去
-                            this.enemyBullets = []; // 敵の弾もリセット
-                            this.isBossEntranceAnimating = true; // ボス登場アニメON
+                            this.enemies = []; 
+                            this.enemyBullets = []; 
+                            this.isBossEntranceAnimating = true; 
                             this.boss = {
                                 x: this.canvas.width / 2 - 25,
                                 y: -50,
                                 targetY: 60,
                                 width: 50,
                                 height: 50,
-                                color: '#fcc419', // 黄色いミニボス
+                                color: '#fcc419', 
                                 direction: 1,
                                 lastShotTime: 0,
-                                hp: 10 // 通常攻撃10発分（レーザーなら5発）
+                                hp: 10 
                             };
                             document.getElementById('boss-hp-area').style.display = "block";
                             document.getElementById('boss-hp-val').innerText = "10";
@@ -607,8 +650,6 @@ export class GameEngine {
                             this.isCh4MiniBossActive = true;
                             this.enemies = [];
                             this.bullets = [];
-                            
-                            // ★4面の小ボス(HP: 10)も画面外（y: -50）からスーッと登場する演出を起動します
                             this.isBossEntranceAnimating = true;
                             this.boss = {
                                 x: this.canvas.width / 2 - 25,
@@ -656,7 +697,6 @@ export class GameEngine {
                 hitPlayerByBody = true;
                 e.toRemove = true; // 衝突したゾンビ（またはマト）は消滅
 
-                // ★修行ステージのマト（isTarget）であれば衝突してもダメージを受けない安全対策
                 if (!e.isTarget && (now - this.player.lastHitTime >= 1000)) {
                     this.player.lastHitTime = now; // 被弾時間の記録（1秒間の無敵開始）
                     
@@ -700,9 +740,9 @@ export class GameEngine {
         }
         this.enemies = nextEnemies;
 
-        // 3. 敵弾更新（ボス登場中や大ボス巨大化演出中は被弾判定を一時停止）
+        // 3. 敵弾更新（ボス登場中・爆発中は被弾判定を一時停止）
         let nextEnemyBullets = [];
-        let canTakeBulletDamage = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating;
+        let canTakeBulletDamage = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating && !this.isBossExploding;
         for (let i = 0; i < this.enemyBullets.length; i++) {
             let eb = this.enemyBullets[i];
             eb.x += eb.vx || 0;
@@ -753,9 +793,9 @@ export class GameEngine {
         }
         this.enemyBullets = nextEnemyBullets;
 
-        // 4. アイテム更新（ボス登場中や大ボス巨大化演出中はアイテム獲得判定を一時停止）
+        // 4. アイテム更新（ボス登場中・爆発中はアイテム獲得判定を一時停止）
         let nextItems = [];
-        let canCollectItems = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating;
+        let canCollectItems = !this.isBossEntranceAnimating && !this.isCh4GreatBossSpawnAnimating && !this.isBossExploding;
         for (let i = 0; i < this.items.length; i++) {
             let item = this.items[i];
             item.y += 2;
