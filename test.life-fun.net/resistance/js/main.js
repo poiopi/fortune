@@ -24,12 +24,12 @@ let game = null;
 
 // 自動送り用タイマーの参照保持変数
 let battleTalkTimeoutId = null;
-let novelTimeoutId = null; // ★追加：通常のストーリー画面（ノベル画面）用オート進行タイマー
+let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
 // ルール4：HTML上の各ボタンに対して確実なイベント登録
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
 
-// ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても進みます）
+// ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
 document.getElementById('screen-novel').addEventListener('click', nextNovel);
 
 // ★重要：シューティング画面全体のクリックリスナー登録（割り込み会話の発生時、画面のどこをクリックしても進みます）
@@ -109,7 +109,7 @@ function startChapter1() {
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
-    startNovelAutoplay(); // ★自動進行（3.5秒）を開始
+    startNovelAutoplay(); // 自動進行（3.5秒）を開始
 }
 
 // 通常ストーリー（ノベル）画面用の自動送りタイマー設定関数（標準3500ms）
@@ -185,7 +185,8 @@ function showCh2EventTalk() {
             showCh2EventTalk();
         } else {
             document.getElementById('battle-talk-box').style.display = 'none';
-            game.isCh2EventTriggered = true;
+            // ★バグ完全解消：会話が完全に終わった段階で、はじめて「ボス戦開始（isCh2EventTriggered=true）」をセットします
+            game.isCh2EventTriggered = true; 
             
             // ボス出現
             game.boss = {
@@ -202,13 +203,14 @@ function advanceBattleTalk() {
     if (battleTalkTimeoutId) clearTimeout(battleTalkTimeoutId);
 
     if (gameState.currentChapter === 2) {
+        // ★バグ完全解消：異変会話中なのか、ボス戦後の敗北会話中なのかを「isCh2EventTriggered」で正確に判定
         if (!game.isCh2EventTriggered) {
             ch2EventStep++;
             if (ch2EventStep < ch2EventTalks.length) {
                 showCh2EventTalk();
             } else {
                 document.getElementById('battle-talk-box').style.display = 'none';
-                game.isCh2EventTriggered = true;
+                game.isCh2EventTriggered = true; // ボス出現
                 
                 game.boss = {
                     x: game.canvas.width / 2 - 50, y: 50, width: 100, height: 100,
@@ -282,7 +284,7 @@ function startChapter2DefeatNovel() {
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
-    startNovelAutoplay(); // ★拉致イベントノベルも自動進行（3.5秒）を適用
+    startNovelAutoplay(); // 拉致イベントノベルも自動進行（3.5秒）を適用
 }
 
 // チャプター2テスト完了デモ終了画面
@@ -338,7 +340,7 @@ function startChapter2() {
     showNovelStep();
     changeScreen('screen-novel');
     adjustViewportHeight();
-    startNovelAutoplay(); // ★チャプター2の導入ノベルも自動進行（3.5秒）を適用
+    startNovelAutoplay(); // チャプター2の導入ノベルも自動進行（3.5秒）を適用
 }
 
 // 最初から遊ぶ（リセット）
