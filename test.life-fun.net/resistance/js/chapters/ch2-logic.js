@@ -67,20 +67,18 @@ export const ch2Logic = {
     },
 
     updateBossAttack(engine, now) {
-        if (now - engine.boss.lastShotTime < 2500) return;
+        if (now - engine.boss.lastShotTime < 800) return;
         engine.boss.lastShotTime = now;
 
         let bSpeed = 4;
+        engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 16, height: 16, vx: 0, vy: bSpeed, color: '#f03e3e', isBossBullet: true });
         let dx = (engine.player.x + engine.player.width/2) - (engine.boss.x + engine.boss.width/2);
         let dy = (engine.player.y + engine.player.height/2) - (engine.boss.y + engine.boss.height);
         let dist = Math.sqrt(dx*dx + dy*dy);
-        let bVx = 0;
-        let bVy = bSpeed;
-        if (dist > 0 && Math.random() < 0.5) {
-            bVx = (dx / dist) * bSpeed;
-            bVy = (dy / dist) * bSpeed;
+        engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 16, height: 16, vx: (dx/dist)*bSpeed, vy: (dy/dist)*bSpeed, color: '#f03e3e', isBossBullet: true });
+        if (Math.random() < 0.5) {
+            engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 16, height: 16, vx: (Math.random()-0.5)*bSpeed, vy: bSpeed, color: '#f03e3e', isBossBullet: true });
         }
-        engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 10, height: 10, vx: bVx, vy: bVy, color: '#f03e3e' });
     },
 
     handleBombDamage(engine) {
