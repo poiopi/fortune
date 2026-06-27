@@ -2,6 +2,7 @@ export const ch2Logic = {
     initStage(engine) {
         engine.stage2BossHits = 0;
         document.getElementById('boss-hp-area').style.display = "none";
+        document.getElementById('stage-objective').innerHTML = "ステージをクリアせよ！";
     },
 
     spawnEnemies(engine, now) {
@@ -66,7 +67,9 @@ export const ch2Logic = {
     },
 
     updateBossAttack(engine, now) {
-        // 2面ボスの通常攻撃
+        if (now - engine.boss.lastShotTime < 2500) return;
+        engine.boss.lastShotTime = now;
+
         let bSpeed = 4;
         let dx = (engine.player.x + engine.player.width/2) - (engine.boss.x + engine.boss.width/2);
         let dy = (engine.player.y + engine.player.height/2) - (engine.boss.y + engine.boss.height);
