@@ -70,8 +70,8 @@ ob_start();
   .art-section p{font-size:.93rem;line-height:1.9;color:#333;margin-bottom:.9rem}
   .art-section p:last-child{margin-bottom:0}
   .num-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.75rem;margin-top:1rem}
-  .num-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s}
-  .num-card:hover{border-color:var(--accent-lt)}
+  .num-card{display:block;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s;text-decoration:none;color:inherit}
+  .num-card:hover{border-color:var(--accent-lt);background:#fff}
   .num-n{font-family:var(--ff-mono);font-size:1.4rem;font-weight:300;color:var(--accent);margin-bottom:.3rem}
   .num-name{font-family:var(--ff-serif);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
   .num-kw{font-size:.75rem;color:var(--muted);line-height:1.6}
@@ -195,11 +195,11 @@ require __DIR__.'/../../inc/article-cta.php';
         ['22','建設者（M）','大きなビジョン・現実化・マスタービルダー'],
       ];
       foreach($nums as $n): ?>
-      <div class="num-card">
+      <a href="/articles/numerology/<?= $n[0] ?>/" class="num-card">
         <div class="num-n"><?= $n[0] ?></div>
         <div class="num-name"><?= $n[1] ?></div>
         <div class="num-kw"><?= $n[2] ?></div>
-      </div>
+      </a>
       <?php endforeach; ?>
     </div>
   </section>
