@@ -240,10 +240,21 @@
 
   <url>
     <loc>https://life-fun.net/articles/numerology/</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://life-fun.net/articles/numerology/1/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/2/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/3/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/4/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/5/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/6/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/7/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/8/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/9/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/11/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/numerology/22/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <url>
     <loc>https://life-fun.net/articles/mbti/</loc>
