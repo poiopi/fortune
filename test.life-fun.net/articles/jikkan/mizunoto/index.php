@@ -522,6 +522,8 @@ ob_start();
     $prevTitle='壬（みずのえ）';
     $nextUrl='';
     $nextTitle='';
+    $listTitle='十干一覧';
+    $listUrl='/articles/jikkan/';
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
 

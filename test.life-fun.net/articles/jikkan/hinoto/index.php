@@ -522,6 +522,8 @@ ob_start();
     $prevTitle='丙（ひのえ）';
     $nextUrl='/articles/jikkan/tsuchinoe/';
     $nextTitle='戊（つちのえ）';
+    $listTitle='十干一覧';
+    $listUrl='/articles/jikkan/';
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
 

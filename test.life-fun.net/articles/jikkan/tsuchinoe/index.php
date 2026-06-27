@@ -522,6 +522,8 @@ ob_start();
     $prevTitle='丁（ひのと）';
     $nextUrl='/articles/jikkan/tsuchinoto/';
     $nextTitle='己（つちのと）';
+    $listTitle='十干一覧';
+    $listUrl='/articles/jikkan/';
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
 
