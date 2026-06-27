@@ -243,16 +243,16 @@ require __DIR__.'/../../inc/article-cta.php';
     <h2>十干とは</h2>
     <p>十干（じっかん）は甲・乙・丙・丁・戊・己・庚・辛・壬・癸の10種類。木・火・土・金・水の五行それぞれに「陽（兄）」と「陰（弟）」があり、合計10になります。</p>
     <div class="jikkan-grid">
-      <a href="/articles/jikkan/kinoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">甲</div><div class="jikkan-yomi">きのえ</div><span class="jikkan-elem elem-wood">木（陽）</span></a>
-      <a href="/articles/jikkan/kinoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">乙</div><div class="jikkan-yomi">きのと</div><span class="jikkan-elem elem-wood">木（陰）</span></a>
-      <a href="/articles/jikkan/hinoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">丙</div><div class="jikkan-yomi">ひのえ</div><span class="jikkan-elem elem-fire">火（陽）</span></a>
-      <a href="/articles/jikkan/hinoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">丁</div><div class="jikkan-yomi">ひのと</div><span class="jikkan-elem elem-fire">火（陰）</span></a>
-      <a href="/articles/jikkan/tsuchinoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">戊</div><div class="jikkan-yomi">つちのえ</div><span class="jikkan-elem elem-earth">土（陽）</span></a>
-      <a href="/articles/jikkan/tsuchinoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">己</div><div class="jikkan-yomi">つちのと</div><span class="jikkan-elem elem-earth">土（陰）</span></a>
-      <a href="/articles/jikkan/kanoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">庚</div><div class="jikkan-yomi">かのえ</div><span class="jikkan-elem elem-metal">金（陽）</span></a>
-      <a href="/articles/jikkan/kanoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">辛</div><div class="jikkan-yomi">かのと</div><span class="jikkan-elem elem-metal">金（陰）</span></a>
-      <a href="/articles/jikkan/mizunoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">壬</div><div class="jikkan-yomi">みずのえ</div><span class="jikkan-elem elem-water">水（陽）</span></a>
-      <a href="/articles/jikkan/mizunoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">癸</div><div class="jikkan-yomi">みずのと</div><span class="jikkan-elem elem-water">水（陰）</span></a>
+      <a href="/articles/shichu/kinoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">甲</div><div class="jikkan-yomi">きのえ</div><span class="jikkan-elem elem-wood">木（陽）</span></a>
+      <a href="/articles/shichu/kinoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">乙</div><div class="jikkan-yomi">きのと</div><span class="jikkan-elem elem-wood">木（陰）</span></a>
+      <a href="/articles/shichu/hinoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">丙</div><div class="jikkan-yomi">ひのえ</div><span class="jikkan-elem elem-fire">火（陽）</span></a>
+      <a href="/articles/shichu/hinoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">丁</div><div class="jikkan-yomi">ひのと</div><span class="jikkan-elem elem-fire">火（陰）</span></a>
+      <a href="/articles/shichu/tsuchinoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">戊</div><div class="jikkan-yomi">つちのえ</div><span class="jikkan-elem elem-earth">土（陽）</span></a>
+      <a href="/articles/shichu/tsuchinoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">己</div><div class="jikkan-yomi">つちのと</div><span class="jikkan-elem elem-earth">土（陰）</span></a>
+      <a href="/articles/shichu/kanoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">庚</div><div class="jikkan-yomi">かのえ</div><span class="jikkan-elem elem-metal">金（陽）</span></a>
+      <a href="/articles/shichu/kanoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">辛</div><div class="jikkan-yomi">かのと</div><span class="jikkan-elem elem-metal">金（陰）</span></a>
+      <a href="/articles/shichu/mizunoe/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">壬</div><div class="jikkan-yomi">みずのえ</div><span class="jikkan-elem elem-water">水（陽）</span></a>
+      <a href="/articles/shichu/mizunoto/" class="jikkan-card" style="text-decoration:none;color:inherit"><div class="jikkan-name">癸</div><div class="jikkan-yomi">みずのと</div><span class="jikkan-elem elem-water">水（陰）</span></a>
     </div>
     <p>自分の「日干」が何であるかは、命式算出結果の「日柱」天干で確認できます。甲・乙なら木の気質、丙・丁なら火の気質というように、五行の性質が性格に大きく影響します。</p>
   </section>
