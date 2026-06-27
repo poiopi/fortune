@@ -72,7 +72,7 @@ export const ch1Logic = {
     },
 
     updateBossAttack(engine, now) {
-        if (now - engine.boss.lastShotTime < 3000) return;
+        if (now - engine.boss.lastShotTime < 1500) return;
         engine.boss.lastShotTime = now;
 
         let bSpeed = 4;
