@@ -17,7 +17,7 @@ export const ch3Logic = {
             }
 
             if (remaining <= 0) {
-                // 15秒経過：修行終了、ではなく修行ボス出現演出！
+                // 15秒経過：修行終了、修行ボス出現演出！
                 engine.isCh3BossActive = true;
                 engine.enemies = []; // マト全消去
                 engine.enemyBullets = [];
@@ -93,18 +93,23 @@ export const ch3Logic = {
         engine.ctx.fill();
     },
 
+    // ★難易度再設計：修行中ボス仕様（800msに2〜3発、弾は通常サイズ10x10、被弾ダメージ10）
     updateBossAttack(engine, now) {
+        if (now - engine.boss.lastShotTime < 800) return; // ★追加：インターバルチェック
+        engine.boss.lastShotTime = now; // ★追加：最終射撃ミリ秒の更新
+
         let bSpeed = 4;
+        // 正面弾（常時）
+        engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 10, height: 10, vx: 0, vy: bSpeed, color: '#f03e3e' });
+        // 自機狙い弾（常時）
         let dx = (engine.player.x + engine.player.width/2) - (engine.boss.x + engine.boss.width/2);
         let dy = (engine.player.y + engine.player.height/2) - (engine.boss.y + engine.boss.height);
         let dist = Math.sqrt(dx*dx + dy*dy);
-        let bVx = 0;
-        let bVy = bSpeed;
-        if (dist > 0 && Math.random() < 0.5) {
-            bVx = (dx / dist) * bSpeed;
-            bVy = (dy / dist) * bSpeed;
+        engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 10, height: 10, vx: (dx/dist)*bSpeed, vy: (dy/dist)*bSpeed, color: '#f03e3e' });
+        // ランダム追加弾（50%の確率）
+        if (Math.random() < 0.5) {
+            engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 10, height: 10, vx: (Math.random()-0.5)*bSpeed, vy: bSpeed, color: '#f03e3e' });
         }
-        engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 10, height: 10, vx: bVx, vy: bVy, color: '#f03e3e' });
     },
 
     handleBombDamage(engine) {

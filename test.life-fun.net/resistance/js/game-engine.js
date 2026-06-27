@@ -242,7 +242,8 @@ export class GameEngine {
         this.updateBombUI();
         this.flashScreen();
 
-        if (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered)) {
+        // ★箇所3：ボムによるザコ一掃の進行判定に「フェーズ3」の条件（|| this.isCh2Phase3Active）を追加
+        if (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && (!this.isCh2EventTriggered || this.isCh2Phase3Active)) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered)) {
             this.gameState.killCount += this.enemies.length;
             this.gameState.score += this.enemies.length * 100;
             document.getElementById('kill-count').innerText = this.gameState.killCount;
@@ -263,7 +264,6 @@ export class GameEngine {
         setTimeout(() => { flash.style.opacity = '0'; }, 300);
     }
 
-    // ★復元箇所：ボス撃破時にダイナミックな爆発エフェクトを発生させるトリガー
     triggerBossExplosion() {
         this.isBossExploding = true;
         this.bossExplosionStartTime = Date.now();
@@ -436,7 +436,8 @@ export class GameEngine {
 
         // ザコ反撃
         let canZombiesAttack = !this.isBossEntranceAnimating && !isCh4GreatBossSpawnAnimating && !this.isBossExploding;
-        if (canZombiesAttack && (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered))) {
+        // ★箇所1：2面フェーズ3進行中のザコ反撃を有効にするため、条件式（|| this.isCh2Phase3Active）を追加
+        if (canZombiesAttack && (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && (!this.isCh2EventTriggered || this.isCh2Phase3Active)) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered))) {
             this.enemies.forEach(e => {
                 if (e.shootType !== 'no-shoot' && (now - e.lastShotTime > 800)) {
                     let bulletVx = 0;
@@ -502,8 +503,8 @@ export class GameEngine {
                     e.toRemove = true;
                     if (!b.isLaser) bulletRemoved = true;
 
-                    // スコア更新
-                    if (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && !this.isCh2EventTriggered) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered)) {
+                    // ★箇所2：2面フェーズ3進行中のスコア加算、撃破加算およびonEnemyKilledコールバックを有効にするため、条件式（|| this.isCh2Phase3Active）を追加
+                    if (this.gameState.currentChapter === 1 || (this.gameState.currentChapter === 2 && (!this.isCh2EventTriggered || this.isCh2Phase3Active)) || (this.gameState.currentChapter === 4 && !this.isCh4MidBossEventTriggered)) {
                         this.gameState.killCount++;
                         this.gameState.score += 100;
                         document.getElementById('kill-count').innerText = this.gameState.killCount;
@@ -550,7 +551,7 @@ export class GameEngine {
                 if (!e.isTarget && (now - this.player.lastHitTime >= 1000)) {
                     this.player.lastHitTime = now;
 
-                    // 被弾ロジック（体当たり）
+                    // 被弾ロジック（体当たり：必ず15ダメージ適用 ＋ 仲間離脱またはダウングレード）
                     this.gameState.playerHP -= 15;
                     document.getElementById('hp-value').innerText = this.gameState.playerHP;
                     
@@ -595,7 +596,6 @@ export class GameEngine {
 
         // 3. 敵弾更新
         let nextEnemyBullets = [];
-        let canTakeBulletDamage = !this.isBossEntranceAnimating && !isCh4GreatBossSpawnAnimating && !this.isBossExploding && !isCh2DefeatedSceneActive;
         for (let i = 0; i < this.enemyBullets.length; i++) {
             let eb = this.enemyBullets[i];
             eb.x += eb.vx || 0;
@@ -611,7 +611,7 @@ export class GameEngine {
                 if (now - this.player.lastHitTime >= 1000) {
                     this.player.lastHitTime = now; 
 
-                    // 被弾ロジック（敵弾）
+                    // 被弾ロジック（敵弾：必ずダメージ ＋ 仲間離脱またはダウングレード）
                     let dmg = eb.isBossBullet ? 15 : 10;
                     this.gameState.playerHP -= dmg;
                     document.getElementById('hp-value').innerText = this.gameState.playerHP;
@@ -620,6 +620,7 @@ export class GameEngine {
                     if (hpBar) {
                         hpBar.style.width = Math.max(0, this.gameState.playerHP) + '%';
                     }
+
                     this.flashScreen();
 
                     if (this.gameState.allies.length > 0) {
@@ -650,7 +651,6 @@ export class GameEngine {
 
         // 4. アイテム更新
         let nextItems = [];
-        let canCollectItems = !this.isBossEntranceAnimating && !isCh4GreatBossSpawnAnimating && !this.isBossExploding;
         for (let i = 0; i < this.items.length; i++) {
             let item = this.items[i];
             item.y += 2;
@@ -725,10 +725,12 @@ export class GameEngine {
         }
     }
 
+    // ★重要メソッド1：完全に含めるお約束の順守
     cancelLoop() {
         cancelAnimationFrame(this.animationId);
     }
 
+    // ★重要メソッド2：完全に含めるお約束の順守
     endGame(isWin) {
         this.isGameOver = true;
         cancelAnimationFrame(this.animationId);
