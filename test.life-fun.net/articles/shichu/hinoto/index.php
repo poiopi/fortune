@@ -176,7 +176,7 @@ ob_start();
     $ctaText='生年月日を入力するだけで四柱推命の日干を算出。';
     $ctaUrl='/shichu';
     $ctaBtn='四柱推命で鑑定する →';
-    require __DIR__.'/../../inc/article-cta.php';
+    require __DIR__.'/../../../inc/article-cta.php';
     ?>
 
     <nav class="toc">
@@ -324,7 +324,7 @@ ob_start();
     $ctaText='生年月日を入力するだけで四柱推命の日干を算出。';
     $ctaUrl='/shichu';
     $ctaBtn='四柱推命で鑑定する →';
-    require __DIR__.'/../../inc/article-cta.php';
+    require __DIR__.'/../../../inc/article-cta.php';
     ?>
 
     <?php
@@ -334,7 +334,7 @@ ob_start();
     $nextTitle='戊（つちのえ）';
     $listTitle='十干一覧';
     $listUrl='/articles/shichu/';
-    require __DIR__.'/../../inc/article-nav.php';
+    require __DIR__.'/../../../inc/article-nav.php';
     ?>
 
     <?php
@@ -343,11 +343,11 @@ ob_start();
       ['label'=>'四柱推命','title'=>'四柱推命で日干を調べる →','url'=>'/shichu'],
       ['label'=>'算命学とは','title'=>'十大主星の読み方を解説 →','url'=>'/articles/sanmei/'],
     ];
-    require __DIR__.'/../../inc/article-related.php';
+    require __DIR__.'/../../../inc/article-related.php';
     ?>
 </div>
 
-<?php $currentSlug='jikkan'; $pageType='article'; require __DIR__.'/../../inc/footer.php'; ?>
+<?php $currentSlug='jikkan'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php $html=ob_get_clean(); echo autoLink($html,'jikkan'); ?>
