@@ -53,7 +53,8 @@
       "PowerShell(php -l \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\numerology\\\\index.php\" 2>&1)",
       "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\sanmei\\\\kansaku\")",
       "Bash(grep -n \"\\\\/5\\\\|encounter\\\\|count\\\\|fullscreen\\\\|keydown\\\\|space\\\\|preventDefault\\\\|overflow\\\\|position\" C:/Users/sende/fortune/test.life-fun.net/rpg.php)",
-      "Bash(ls C:/Users/sende/fortune/ -la 2>/dev/null | grep -i ftp; ls C:/Users/sende/ | grep -i ftp; find C:/Users/sende/fortune -name \"*.bat\" -o -name \"*.ps1\" -o -name \"deploy*\" 2>/dev/null | head -10)"
+      "Bash(ls C:/Users/sende/fortune/ -la 2>/dev/null | grep -i ftp; ls C:/Users/sende/ | grep -i ftp; find C:/Users/sende/fortune -name \"*.bat\" -o -name \"*.ps1\" -o -name \"deploy*\" 2>/dev/null | head -10)",
+      "PowerShell(Get-ChildItem C:\\\\Users\\\\sende\\\\fortune\\\\articles\\\\jikkan\\\\ | ForEach-Object { \"$\\($_.Name\\)/index.php exists: $\\(Test-Path \"$\\($_.FullName\\)\\\\index.php\"\\)\" })"
     ]
   }
 }
