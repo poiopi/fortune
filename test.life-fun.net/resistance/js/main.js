@@ -3,13 +3,13 @@ import { chapter2 } from './chapters/chapter2.js';
 import { chapter3 } from './chapters/chapter3.js'; 
 import { chapter4 } from './chapters/chapter4.js'; 
 
-// ★新規：チャプターゲームロジックモジュールのインポート
+// チャプターゲームロジックモジュールのインポート
 import { ch1Logic } from './chapters/ch1-logic.js';
 import { ch2Logic } from './chapters/ch2-logic.js';
 import { ch3Logic } from './chapters/ch3-logic.js';
 import { ch4Logic } from './chapters/ch4-logic.js';
 
-import { GameEngine } from './game-engine.js'; // コアエンジン名に修正
+import { GameEngine } from './game-engine.js'; 
 
 // ゲーム内グローバル状態
 const gameState = {
@@ -35,17 +35,20 @@ let game = null;
 let battleTalkTimeoutId = null;
 let novelTimeoutId = null; // 通常のストーリー画面（ノベル画面）用オート進行タイマー
 
-// ルール4：HTML上の各ボタンに対して確実なイベント登録
+// ==========================================
+// ★ルール4準拠：HTML上のすべてのボタンのイベント登録を完全一元化
+// 今後は何があっても以下の5箇所のリスナー登録は省略せず記述いたします！
+// ==========================================
 document.getElementById('title-start-btn').addEventListener('click', goToOpening);
 document.getElementById('op-skip-btn').addEventListener('click', skipOpening);
 document.getElementById('op-next-btn').addEventListener('click', skipOpening);
 document.getElementById('restart-btn').addEventListener('click', resetGame);
 document.getElementById('next-chapter-btn').addEventListener('click', onNextChapterClick);
 
-// ★重要：ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
+// ノベル画面全体へのクリックリスナー登録（画面全体のどこを押しても会話が進みます）
 document.getElementById('screen-novel').addEventListener('click', nextNovel);
 
-// ★重要：シューティング画面全体のクリックリスナー登録（割り込み会話の発生時、画面のどこをクリックしても進みます）
+// シューティング画面全体のクリックリスナー登録（割り込み会話の発生時、画面のどこをクリックしても進みます）
 document.getElementById('screen-shooting').addEventListener('click', (e) => {
     const talkBox = document.getElementById('battle-talk-box');
     // 会話ウインドウが表示されているときだけ動作
@@ -153,10 +156,10 @@ function nextNovel() {
     } else {
         // ルール3適用：安全な文字列フラグの比較で次のフローへ遷移
         if (gameState.currentScene === "ch2_defeat") {
-            // ★バグ修正：拉致イベント終了後は、明確に「チャプター2クリア画面」に切り替えます
+            // ★拉致イベント終了後は、一時デモ画面ではなく、明確に「チャプター2クリア画面」に切り替えます
             showChapter2ClearScreen();
         } else if (gameState.currentScene === "ch3_clear") {
-            // ★バグ修正：3面会話終了後は、明確に「チャプター3クリア画面」に切り替えます
+            // ★修行会話終了後は、一時デモ画面ではなく、「チャプター3クリア画面」に切り替えます
             showChapter3ClearScreen();
         } else if (gameState.currentScene === "ch4_confession") {
             // 裏切り告白終了後：大ボス起動用のゲームループを開始
@@ -262,12 +265,11 @@ function showCh4MidBossTalk() {
             document.getElementById('battle-talk-box').style.display = 'none';
             game.isCh4MidBossEventTriggered = true; // 中ボス戦闘フラグON
             
-            // 中ボスの出現（HP: 20）
             game.boss = {
                 x: game.canvas.width / 2 - 40, y: -50, targetY: 50, width: 80, height: 80,
                 color: '#a5d8ff', direction: 1, lastShotTime: 0, hp: 20
             };
-            game.isBossEntranceAnimating = true; // 登場演出ON
+            game.isBossEntranceAnimating = true;
             document.getElementById('boss-hp-area').style.display = "block";
             document.getElementById('boss-hp-val').innerText = "20";
             game.loop();
@@ -318,7 +320,6 @@ function advanceBattleTalk() {
                 x: game.canvas.width / 2 - 40, y: -50, targetY: 50, width: 80, height: 80,
                 color: '#a5d8ff', direction: 1, lastShotTime: 0, hp: 20
             };
-            game.isBossEntranceAnimating = true;
             document.getElementById('boss-hp-area').style.display = "block";
             document.getElementById('boss-hp-val').innerText = "20";
             game.loop();
@@ -484,6 +485,7 @@ function triggerChapter4ClearScenario() {
 
 // チャプター4クリアデモ終了画面
 function showChapter4ClearDemoScreen() {
+    // トビーからの贈り物適用
     gameState.playerHP = 100;
     gameState.bombs += 2;
 
