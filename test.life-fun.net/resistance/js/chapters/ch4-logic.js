@@ -99,6 +99,9 @@ export const ch4Logic = {
     },
 
     updateBossAttack(engine, now) {
+        if (now - engine.boss.lastShotTime < 1000) return;
+        engine.boss.lastShotTime = now;
+
         let bSpeed = 4;
         if (engine.isCh4GreatBossActive) {
             engine.enemyBullets.push({ x: engine.boss.x + engine.boss.width/2, y: engine.boss.y + engine.boss.height, width: 12, height: 12, vx: 0, vy: bSpeed, color: '#f03e3e' });

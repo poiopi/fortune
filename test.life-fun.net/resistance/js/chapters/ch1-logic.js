@@ -72,7 +72,9 @@ export const ch1Logic = {
     },
 
     updateBossAttack(engine, now) {
-        // 中ボスのアダプティブ狙い撃ち弾（直進または自機狙い）
+        if (now - engine.boss.lastShotTime < 3000) return;
+        engine.boss.lastShotTime = now;
+
         let bSpeed = 4;
         let dx = (engine.player.x + engine.player.width/2) - (engine.boss.x + engine.boss.width/2);
         let dy = (engine.player.y + engine.player.height/2) - (engine.boss.y + engine.boss.height);
