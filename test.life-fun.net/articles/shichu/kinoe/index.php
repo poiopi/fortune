@@ -44,7 +44,7 @@ ob_start();
   .info-row dt{background:var(--bg2);color:var(--muted);font-weight:600}.info-row dd{background:#fff;color:var(--text)}
   .point-list{margin:1rem 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.6rem}
   .point-list li{position:relative;padding:.75rem 1rem .75rem 2.2rem;border:1px solid var(--border);border-radius:8px;background:#fff;font-size:.9rem;color:#333}
-  .point-list li::before{content:"";position:absolute;left:.85rem;top:1.1rem;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+  .point-list li::before{content:"";position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:var(--gold)}
   .aisho-grid{display:grid;gap:.75rem;margin-top:1rem}
   .aisho-item{border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;background:#fff}
   .aisho-item strong{display:block;color:var(--accent);font-size:.9rem;margin-bottom:.4rem}
