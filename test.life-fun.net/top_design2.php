@@ -853,6 +853,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   const CARD_GAP = 14;    // .9rem ≈ 14px
 
   let pos       = 0;
+  let targetPos = 0;   // イージング用の目標位置
   let paused    = false;
   let dragging  = false;
   let dragStartX   = 0;
@@ -879,24 +880,34 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 
   /* メインループ */
   function tick(){
-    if(!isMobile() && !paused && !dragging){
-      pos += SPEED;
+    if(!isMobile()){
       const ow = origWidth();
-      if(ow > 0 && pos >= ow) pos -= ow;
+      if(!paused && !dragging){
+        /* 自動スクロール：targetPosも一緒に進める */
+        pos += SPEED;
+        targetPos += SPEED;
+        if(ow > 0 && pos >= ow) { pos -= ow; targetPos -= ow; }
+      }
+      /* イージング：posをtargetPosに向かってなめらかに近づける */
+      if(Math.abs(targetPos - pos) > 0.1){
+        pos += (targetPos - pos) * 0.1;
+        /* ループ境界処理 */
+        if(ow > 0 && pos >= ow) pos -= ow;
+        if(pos < 0) pos += ow;
+      }
       track.scrollLeft = pos;
     }
     raf = requestAnimationFrame(tick);
   }
 
-  /* 矢印：1枚分ジャンプ */
+  /* 矢印：1枚分なめらかに移動 */
   function jump(dir){
     if(isMobile()) return;
     const cardW = origCards[0] ? origCards[0].offsetWidth + CARD_GAP : 200;
-    pos += dir * cardW;
+    targetPos += dir * cardW;
     const ow = origWidth();
-    if(pos < 0)   pos += ow;
-    if(pos >= ow) pos -= ow;
-    track.scrollLeft = pos;
+    if(targetPos < 0)   targetPos += ow;
+    if(targetPos >= ow) targetPos -= ow;
   }
 
   document.getElementById('cPrev').addEventListener('click', () => jump(-1));
@@ -909,6 +920,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   /* ドラッグ */
   track.addEventListener('pointerdown', e => {
     if(isMobile()) return;
+    e.preventDefault();           /* リンクのドラッグ干渉を防ぐ */
     dragging     = true;
     dragStartX   = e.clientX;
     dragStartPos = pos;
@@ -918,10 +930,11 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   track.addEventListener('pointermove', e => {
     if(!dragging) return;
     const dx = dragStartX - e.clientX;
-    pos = dragStartPos + dx;
     const ow = origWidth();
-    if(pos < 0)   pos += ow;
-    if(pos >= ow) pos -= ow;
+    let next = dragStartPos + dx;
+    if(next < 0)   next += ow;
+    if(next >= ow) next -= ow;
+    pos = targetPos = next;       /* ドラッグ中はイージングをバイパス */
     track.scrollLeft = pos;
   });
   ['pointerup','pointercancel'].forEach(ev => {
@@ -929,6 +942,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       if(!dragging) return;
       dragging = false;
       track.classList.remove('dragging');
+      targetPos = pos;  /* 離した位置から自動スクロール再開 */
     });
   });
 
