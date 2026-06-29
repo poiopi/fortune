@@ -73,54 +73,29 @@ body {
   margin-bottom: 2rem;
 }
 
-/* ══ パララックスバンド ══ */
+/* ══ セクション区切り ══ */
 .parallax-band {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-.pb-layer {
-  position: absolute;
-  inset: -60px 0;           /* 上下に余裕を持たせてスクロールで動かす */
-  will-change: transform;
+  height: 64px;
+  display: flex; align-items: center; justify-content: center;
 }
 .pb-content {
-  position: absolute; inset: 0;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  gap: 6px; z-index: 2;
+  gap: 7px; width: 100%;
 }
 .pb-gold-line {
   width: min(480px, 80%);
   height: 1px;
   background: linear-gradient(90deg,
-    transparent, rgba(201,168,76,.6) 30%,
-    rgba(201,168,76,.95) 50%,
-    rgba(201,168,76,.6) 70%, transparent);
+    transparent, rgba(201,168,76,.55) 30%,
+    rgba(201,168,76,.9) 50%,
+    rgba(201,168,76,.55) 70%, transparent);
 }
 .pb-kamon {
-  font-size: 1.4rem;
-  opacity: .55;
-  filter: drop-shadow(0 0 10px rgba(201,168,76,.5));
-}
-/* 各バンドの背景グラデーション */
-.pb-violet .pb-layer {
-  background: radial-gradient(ellipse 80% 60% at 50% 50%,
-    rgba(90,40,140,.55) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 20% 80%,
-    rgba(201,168,76,.12) 0%, transparent 60%);
-}
-.pb-teal .pb-layer {
-  background: radial-gradient(ellipse 80% 60% at 50% 50%,
-    rgba(30,140,130,.4) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 80% 20%,
-    rgba(122,74,158,.2) 0%, transparent 60%);
-}
-.pb-rose .pb-layer {
-  background: radial-gradient(ellipse 80% 60% at 50% 50%,
-    rgba(160,50,100,.4) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 30% 70%,
-    rgba(58,184,176,.15) 0%, transparent 60%);
+  font-size: 1rem;
+  color: rgba(201,168,76,.5);
+  letter-spacing: .2em;
+  font-family: var(--ff-mono);
 }
 
 /* フェードイン共通 */
@@ -314,16 +289,14 @@ body {
 .carousel-track {
   display: flex;
   gap: .9rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  overflow-x: hidden;       /* PCは JS制御 */
   scrollbar-width: none;
-  padding: .6rem 1.2rem 1rem;
+  padding: .6rem 0 1rem 1.2rem;
   cursor: grab;
   -webkit-overflow-scrolling: touch;
 }
 .carousel-track::-webkit-scrollbar { display: none; }
-.carousel-track.dragging { cursor: grabbing; scroll-behavior: auto; }
+.carousel-track.dragging { cursor: grabbing; }
 
 /* ─── SP グリッド（モバイル上書き） ─── */
 @media (max-width: 639px) {
@@ -332,10 +305,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: .65rem;
     overflow-x: visible;
-    scroll-snap-type: none;
     padding: 0 1rem 1rem;
     cursor: default;
   }
+  /* SP: 複製カードを非表示 */
+  .carousel-track .fcard[aria-hidden="true"] { display: none; }
 }
 
 /* 占いカード共通 */
@@ -403,16 +377,9 @@ body {
 
 /* カルーセルコントロール（PCのみ） */
 .carousel-controls {
-  display: flex; align-items: center; justify-content: center; gap: 1rem;
-  margin-top: .7rem;
+  display: flex; align-items: center; justify-content: center; gap: .8rem;
+  margin-top: .5rem;
 }
-.cdots { display: flex; gap: 5px; }
-.cdot {
-  width: 5px; height: 5px; border-radius: 50%;
-  background: rgba(160,130,220,.22); cursor: pointer;
-  transition: all .3s;
-}
-.cdot.on { width: 16px; border-radius: 3px; background: var(--gold); }
 .c-arr {
   width: 30px; height: 30px; border-radius: 50%;
   border: 1px solid rgba(201,168,76,.35);
@@ -420,9 +387,14 @@ body {
   color: var(--gold); font-size: .85rem;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; transition: background .2s, border-color .2s;
+  user-select: none;
 }
 .c-arr:hover { background: rgba(201,168,76,.18); border-color: var(--gold); }
-
+.c-pause-hint {
+  font-family: var(--ff-mono);
+  font-size: .58rem; letter-spacing: .12em;
+  color: rgba(201,168,76,.35);
+}
 @media (max-width: 639px) {
   .carousel-controls { display: none; }
 }
@@ -573,8 +545,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   </div>
 </section>
 
-<div class="parallax-band pb-violet" data-speed="0.38">
-  <div class="pb-layer"></div>
+<div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
     <span class="pb-kamon">✦ ── ⛩ ── ✦</span>
@@ -699,16 +670,15 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 
     </div><!-- /carousel-track -->
 
-    <div class="carousel-controls" id="cControls">
+    <div class="carousel-controls">
       <button class="c-arr" id="cPrev">‹</button>
-      <div class="cdots" id="cDots"></div>
+      <span class="c-pause-hint">hover / drag to pause</span>
       <button class="c-arr" id="cNext">›</button>
     </div>
   </div>
 </section>
 
-<div class="parallax-band pb-teal" data-speed="0.45">
-  <div class="pb-layer"></div>
+<div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
     <span class="pb-kamon">✦ ── 🌙 ── ✦</span>
@@ -747,8 +717,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   </div>
 </section>
 
-<div class="parallax-band pb-rose" data-speed="0.42">
-  <div class="pb-layer"></div>
+<div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
     <span class="pb-kamon">✦ ── ✨ ── ✦</span>
@@ -874,99 +843,111 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   setTimeout(spawnMeteor, 1800);
 })();
 
-/* ══ PC カルーセル（自動再生 + ドラッグ） ══ */
+/* ══ PC カルーセル（無限じわスクロール + ドラッグ） ══ */
 (function(){
   const isMobile = () => window.innerWidth < 640;
   const track = document.getElementById('cTrack');
-  const dotsWrap = document.getElementById('cDots');
-  const cards = Array.from(track.querySelectorAll('.fcard'));
-  let current = 0, autoTimer = null;
+  const origCards = Array.from(track.querySelectorAll('.fcard'));
 
-  /* 表示枚数 */
-  function perView(){ return window.innerWidth < 900 ? 2 : 3; }
-  /* ページ数 */
-  function pages(){ return Math.ceil(cards.length / perView()); }
+  const SPEED   = 0.45;   // px/frame（遅め）
+  const CARD_GAP = 14;    // .9rem ≈ 14px
 
-  /* ドット生成 */
-  function buildDots(){
-    dotsWrap.innerHTML = '';
-    for(let i = 0; i < pages(); i++){
-      const d = document.createElement('div');
-      d.className = 'cdot' + (i===current ? ' on' : '');
-      d.onclick = () => goTo(i);
-      dotsWrap.appendChild(d);
-    }
+  let pos       = 0;
+  let paused    = false;
+  let dragging  = false;
+  let dragStartX   = 0;
+  let dragStartPos = 0;
+  let raf = null;
+  let cloned = false;
+
+  /* カードを複製してDOMに追加（1セット追加で無限ループ） */
+  function setupClones(){
+    if(cloned) return;
+    origCards.forEach(c => {
+      const cl = c.cloneNode(true);
+      cl.setAttribute('aria-hidden', 'true');
+      track.appendChild(cl);
+    });
+    cloned = true;
   }
 
-  /* 指定ページへ移動 */
-  function goTo(idx){
-    const p = pages();
-    current = ((idx % p) + p) % p;
-    if(!isMobile()){
-      const cardW = cards[0].offsetWidth + 14;
-      track.scrollTo({ left: current * perView() * cardW, behavior: 'smooth' });
-    }
-    dotsWrap.querySelectorAll('.cdot').forEach((d,i) => d.classList.toggle('on', i===current));
+  /* 1セット分の幅 */
+  function origWidth(){
+    if(!origCards[0]) return 0;
+    return (origCards[0].offsetWidth + CARD_GAP) * origCards.length;
   }
 
-  /* 自動再生（PCのみ） */
-  function startAuto(){
-    stopAuto();
+  /* メインループ */
+  function tick(){
+    if(!isMobile() && !paused && !dragging){
+      pos += SPEED;
+      const ow = origWidth();
+      if(ow > 0 && pos >= ow) pos -= ow;
+      track.scrollLeft = pos;
+    }
+    raf = requestAnimationFrame(tick);
+  }
+
+  /* 矢印：1枚分ジャンプ */
+  function jump(dir){
     if(isMobile()) return;
-    autoTimer = setInterval(() => goTo(current + 1), 3800);
-  }
-  function stopAuto(){
-    if(autoTimer){ clearInterval(autoTimer); autoTimer = null; }
+    const cardW = origCards[0] ? origCards[0].offsetWidth + CARD_GAP : 200;
+    pos += dir * cardW;
+    const ow = origWidth();
+    if(pos < 0)   pos += ow;
+    if(pos >= ow) pos -= ow;
+    track.scrollLeft = pos;
   }
 
-  document.getElementById('cPrev').onclick = () => { goTo(current-1); startAuto(); };
-  document.getElementById('cNext').onclick = () => { goTo(current+1); startAuto(); };
+  document.getElementById('cPrev').addEventListener('click', () => jump(-1));
+  document.getElementById('cNext').addEventListener('click', () => jump(1));
 
   /* ホバーで一時停止 */
-  track.addEventListener('mouseenter', stopAuto);
-  track.addEventListener('mouseleave', startAuto);
+  track.addEventListener('mouseenter', () => { if(!isMobile()) paused = true;  });
+  track.addEventListener('mouseleave', () => { if(!isMobile()) paused = false; });
 
-  /* ドラッグスクロール（PC） */
-  let isDragging = false, startX = 0, scrollLeft = 0;
+  /* ドラッグ */
   track.addEventListener('pointerdown', e => {
     if(isMobile()) return;
-    isDragging = true;
-    startX = e.clientX;
-    scrollLeft = track.scrollLeft;
+    dragging     = true;
+    dragStartX   = e.clientX;
+    dragStartPos = pos;
     track.classList.add('dragging');
     track.setPointerCapture(e.pointerId);
-    stopAuto();
   });
   track.addEventListener('pointermove', e => {
-    if(!isDragging) return;
-    const dx = e.clientX - startX;
-    track.scrollLeft = scrollLeft - dx;
+    if(!dragging) return;
+    const dx = dragStartX - e.clientX;
+    pos = dragStartPos + dx;
+    const ow = origWidth();
+    if(pos < 0)   pos += ow;
+    if(pos >= ow) pos -= ow;
+    track.scrollLeft = pos;
   });
-  track.addEventListener('pointerup', () => {
-    if(!isDragging) return;
-    isDragging = false;
-    track.classList.remove('dragging');
-    /* スクロール位置からcurrentを同期 */
-    const cardW = cards[0].offsetWidth + 14;
-    current = Math.round(track.scrollLeft / (perView() * cardW));
-    dotsWrap.querySelectorAll('.cdot').forEach((d,i) => d.classList.toggle('on', i===current));
-    startAuto();
+  ['pointerup','pointercancel'].forEach(ev => {
+    track.addEventListener(ev, () => {
+      if(!dragging) return;
+      dragging = false;
+      track.classList.remove('dragging');
+    });
   });
 
-  /* スクロールイベントでdot同期 */
-  track.addEventListener('scroll', () => {
-    if(isMobile() || isDragging) return;
-    const cardW = cards[0].offsetWidth + 14;
-    const idx = Math.round(track.scrollLeft / (perView() * cardW));
-    if(idx !== current){
-      current = idx;
-      dotsWrap.querySelectorAll('.cdot').forEach((d,i) => d.classList.toggle('on', i===current));
+  /* 初期化 */
+  function init(){
+    if(!isMobile()){
+      setupClones();
+      track.scrollLeft = 0;
+      pos = 0;
     }
-  }, { passive: true });
+    if(!raf) raf = requestAnimationFrame(tick);
+  }
 
-  window.addEventListener('resize', () => { buildDots(); if(!isMobile()) startAuto(); else stopAuto(); });
-  buildDots();
-  startAuto();
+  window.addEventListener('resize', () => {
+    /* リサイズ時にSP⇔PCを切り替え */
+    track.scrollLeft = pos = 0;
+  });
+
+  init();
 })();
 
 /* ══ IntersectionObserver ══ */
@@ -974,35 +955,6 @@ const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: .12 });
 document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
-
-/* ══ パララックス ══ */
-(function(){
-  const bands = document.querySelectorAll('.parallax-band');
-  if(!bands.length) return;
-
-  /* モバイルでは無効（パフォーマンス考慮） */
-  const noParallax = () => window.innerWidth < 640;
-
-  function update(){
-    if(noParallax()){
-      bands.forEach(b => b.querySelector('.pb-layer').style.transform = '');
-      return;
-    }
-    const sy = window.scrollY;
-    bands.forEach(band => {
-      const rect  = band.getBoundingClientRect();
-      const speed = parseFloat(band.dataset.speed || '0.4');
-      /* バンド中央がビューポート中央にある時を基準0 */
-      const center = rect.top + rect.height / 2 - window.innerHeight / 2;
-      const offset = center * speed;
-      band.querySelector('.pb-layer').style.transform = `translateY(${offset}px)`;
-    });
-  }
-
-  window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update, { passive: true });
-  update();
-})();
 
 /* ══ スマホメニュー ══ */
 window.toggleMenu = function(){
