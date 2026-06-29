@@ -54,7 +54,13 @@
       "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\sanmei\\\\kansaku\")",
       "Bash(grep -n \"\\\\/5\\\\|encounter\\\\|count\\\\|fullscreen\\\\|keydown\\\\|space\\\\|preventDefault\\\\|overflow\\\\|position\" C:/Users/sende/fortune/test.life-fun.net/rpg.php)",
       "Bash(ls C:/Users/sende/fortune/ -la 2>/dev/null | grep -i ftp; ls C:/Users/sende/ | grep -i ftp; find C:/Users/sende/fortune -name \"*.bat\" -o -name \"*.ps1\" -o -name \"deploy*\" 2>/dev/null | head -10)",
-      "PowerShell(Get-ChildItem C:\\\\Users\\\\sende\\\\fortune\\\\articles\\\\jikkan\\\\ | ForEach-Object { \"$\\($_.Name\\)/index.php exists: $\\(Test-Path \"$\\($_.FullName\\)\\\\index.php\"\\)\" })"
+      "PowerShell(Get-ChildItem C:\\\\Users\\\\sende\\\\fortune\\\\articles\\\\jikkan\\\\ | ForEach-Object { \"$\\($_.Name\\)/index.php exists: $\\(Test-Path \"$\\($_.FullName\\)\\\\index.php\"\\)\" })",
+      "WebFetch(domain:life-fun.net)",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "WebFetch(domain:kamadojinja.or.jp)",
+      "WebFetch(domain:onoteru.or.jp)",
+      "WebFetch(domain:www.kawagoehikawa.jp)",
+      "PowerShell(head)"
     ]
   }
 }
