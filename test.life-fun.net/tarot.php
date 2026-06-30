@@ -134,19 +134,22 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .big-card-wrap{width:160px;perspective:1000px;margin-bottom:1.5rem;flex-shrink:0}
 @media(max-width:480px){.big-card-wrap{width:120px}}
 .big-card-inner{width:100%;padding-bottom:158%;position:relative;transform-style:preserve-3d}
-.big-card-face{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px 6px}
+.big-card-face{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px 6px;overflow:hidden}
 .big-back{background:linear-gradient(160deg,#1a1040,#0d082a);border:2px solid rgba(155,114,239,.4)}
 .big-back-icon{font-size:3rem;opacity:.5}
 @media(max-width:480px){.big-back-icon{font-size:2rem}}
-.big-front{transform:rotateY(180deg);background:linear-gradient(170deg,#1e0e42,#0d051f);border:2px solid var(--gold);box-shadow:0 0 40px rgba(201,168,76,.5),0 0 80px rgba(155,114,239,.25);justify-content:space-between;padding:8px 6px}
+.big-front{transform:rotateY(180deg);background:linear-gradient(170deg,#1e0e42,#0d051f);border:2px solid var(--gold);box-shadow:0 0 40px rgba(201,168,76,.5),0 0 80px rgba(155,114,239,.25);justify-content:flex-start;gap:4px;padding:10px 6px}
 .big-front::before,.big-front::after{content:'';position:absolute;width:10px;height:10px;border:1.5px solid rgba(201,168,76,.7)}
 .big-front::before{top:5px;left:5px;border-right:none;border-bottom:none}
 .big-front::after{bottom:5px;right:5px;border-left:none;border-top:none}
-.big-img{flex:1;display:flex;align-items:center;justify-content:center;width:100%;min-height:0;padding:3px 0}
-.big-img img{max-width:72%;max-height:100%;object-fit:contain}
-.big-num{font-family:var(--ff-mono);font-size:.68rem;color:rgba(201,168,76,.8);letter-spacing:.1em;flex-shrink:0}
-.big-name{font-family:var(--ff-serif);font-size:clamp(.85rem,4vw,1.15rem);font-weight:700;color:var(--gold-lt);text-align:center;line-height:1.2;flex-shrink:0}
-.big-en{font-family:var(--ff-mono);font-size:.58rem;color:var(--muted);letter-spacing:.08em;flex-shrink:0}
+.big-img{flex:1;display:flex;align-items:center;justify-content:center;width:100%;min-height:0}
+.big-img img{max-width:80%;max-height:100%;object-fit:contain}
+.big-num{font-family:var(--ff-mono);font-size:.65rem;color:rgba(201,168,76,.8);letter-spacing:.1em;flex-shrink:0}
+/* カード名・英語名はカードの外に出す */
+.big-card-info{display:flex;flex-direction:column;align-items:center;gap:.15rem;margin-bottom:.3rem;opacity:0;transition:opacity .4s .2s}
+.big-card-info.visible{opacity:1}
+.big-name{font-family:var(--ff-serif);font-size:clamp(.95rem,4vw,1.3rem);font-weight:700;color:var(--gold-lt);text-align:center;line-height:1.2}
+.big-en{font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);letter-spacing:.1em}
 .big-dir{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.06em;padding:.22rem .9rem;border-radius:4px;margin-top:.6rem;display:none}
 .big-dir:not(:empty){display:inline-block}
 .dir-up{background:rgba(58,184,176,.15);color:var(--teal);border:1px solid rgba(58,184,176,.3)}
@@ -284,10 +287,12 @@ body{top:0!important}
       <div class="big-card-face big-front" id="big-front">
         <div class="big-num" id="big-num"></div>
         <div class="big-img" id="big-img"></div>
-        <div class="big-name" id="big-name"></div>
-        <div class="big-en" id="big-en"></div>
       </div>
     </div>
+  </div>
+  <div class="big-card-info" id="big-card-info">
+    <div class="big-name" id="big-name"></div>
+    <div class="big-en" id="big-en"></div>
   </div>
   <span class="big-dir" id="big-dir"></span>
   <div class="overlay-msg" id="overlay-msg">カードが語りかけています...</div>
@@ -537,8 +542,9 @@ function onSelect(idx) {
     inner.style.transform  = 'rotateY(180deg)';
   }, 600);
   setTimeout(() => {
-    document.getElementById('overlay-msg').textContent = card.name;
+    document.getElementById('overlay-msg').textContent = '';
     document.getElementById('overlay-sub').textContent = 'タップして結果を見る';
+    document.getElementById('big-card-info').classList.add('visible');
     dirEl.textContent = dirLabel;
     dirEl.className   = 'big-dir ' + dirClass;
     overlay.addEventListener('click', showResult, {once: true});
@@ -617,6 +623,7 @@ function resetAll() {
   const inner = document.getElementById('big-card-inner');
   inner.style.transition = 'none';
   inner.style.transform  = 'rotateY(0deg)';
+  document.getElementById('big-card-info').classList.remove('visible');
   document.getElementById('overlay').style.display = 'none';
 
   init();
