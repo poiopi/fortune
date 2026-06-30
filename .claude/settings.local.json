@@ -62,7 +62,10 @@
       "WebFetch(domain:www.kawagoehikawa.jp)",
       "PowerShell(head)",
       "PowerShell($path=\"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\tarot.php\";$c=[System.IO.File]::ReadAllText\\($path,[System.Text.Encoding]::UTF8\\);$enc=New-Object System.Text.UTF8Encoding $false;[System.IO.File]::WriteAllText\\($path,$c,$enc\\);Write-Host \"OK\")",
-      "PowerShell($path=\"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\sansei.php\";$c=[System.IO.File]::ReadAllText\\($path,[System.Text.Encoding]::UTF8\\);$enc=New-Object System.Text.UTF8Encoding $false;[System.IO.File]::WriteAllText\\($path,$c,$enc\\);Write-Host \"OK\")"
+      "PowerShell($path=\"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\sansei.php\";$c=[System.IO.File]::ReadAllText\\($path,[System.Text.Encoding]::UTF8\\);$enc=New-Object System.Text.UTF8Encoding $false;[System.IO.File]::WriteAllText\\($path,$c,$enc\\);Write-Host \"OK\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\guardian\\\\ryujin\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\guardian\\\\ryujin\")",
+      "Bash(Test-Path \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\guardian\\\\index.php\")"
     ]
   }
 }
