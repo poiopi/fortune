@@ -1,8 +1,6 @@
 <?php
 declare(strict_types=1);
 
-// ── 占いロジック（index.php と共通） ──────────────────────────────
-
 function getZodiac(int $month, int $day): array {
     $signs = [
         ['name'=>'山羊座','en'=>'Capricorn','symbol'=>'♑','period'=>'12/22〜1/19'],
@@ -37,7 +35,7 @@ function getZodiacReading(string $signName): array {
         '乙女座' => ['element'=>'土','planet'=>'水星','lucky'=>['色'=>'ネイビー','数'=>'3','石'=>'サファイア'],'today'=>['love'=>3,'work'=>5,'money'=>4,'health'=>5],'message'=>'水星の分析的なエネルギーと地の安定性が融合し、今のあなたの判断力は非常に冴えています。細部に宿る重要なサインを見逃さないでください。仕事面では、丁寧で几帳面なあなたの仕事ぶりが高く評価される時期。','advice'=>'「完璧を目指す心」が今のあなたを正しい方向へ導きます。'],
         '天秤座' => ['element'=>'風','planet'=>'金星','lucky'=>['色'=>'ローズピンク','数'=>'6','石'=>'ローズクォーツ'],'today'=>['love'=>5,'work'=>4,'money'=>3,'health'=>4],'message'=>'金星の調和のエネルギーが、あなたの周囲に美しいバランスをもたらしています。人間関係において公平で優雅な立ち振る舞いができる今、新たな縁が結ばれやすくなっています。','advice'=>'バランスと美を大切にすることが、今のあなたの開運の鍵です。'],
         '蠍座'   => ['element'=>'水','planet'=>'冥王星','lucky'=>['色'=>'ディープレッド','数'=>'0','石'=>'オブシディアン'],'today'=>['love'=>4,'work'=>4,'money'=>5,'health'=>3],'message'=>'冥王星の深淵なるエネルギーが、あなたの内なる変容を促しています。表面に見えるものだけでなく、その奥に潜む本質を見抜く力が今のあなたには備わっています。','advice'=>'変化を恐れず、深く潜ることで真の宝が見つかります。'],
-        '射手座' => ['element'=>'火','planet'=>'木星','lucky'=>['色'=>'パープル','数'=>'9','石'=>'ターコイズ'],'today'=>['love'=>4,'work'=>4,'money'=>5,'health'=>4],'message'=>'木星の拡大のエネルギーがあなたの視野をどこまでも広げています。今の「遠くへ行きたい」「もっと知りたい」という衝動は、宇宙からの正しいサインです。新しい学びや旅が大きな幸運の扉を開きます。','advice'=>'矢は放たなければ的に当たりません。今こそ大きく狙って。'],
+        '射手座' => ['element'=>'火','planet'=>'木星','lucky'=>['色'=>'パープル','数'=>'9','石'=>'ターコイズ'],'today'=>['love'=>4,'work'=>4,'money'=>5,'health'=>4],'message'=>'木星の拡大のエネルギーがあなたの視野をどこまでも広げています。新しい学びや旅、異文化との出会いが大きな幸運の扉を開きます。楽観的な姿勢が最高の引き寄せになります。','advice'=>'矢は放たなければ的に当たりません。今こそ大きく狙って。'],
     ];
     return $readings[$signName] ?? $readings['山羊座'];
 }
@@ -45,11 +43,11 @@ function getZodiacReading(string $signName): array {
 function getTarotReading(string $name, string $birthdate): array {
     $seed = crc32($name . $birthdate . date('Ymd'));
     $cards = [
-        ['name'=>'愚者','num'=>'0','symbol'=>'🌟','upright_msg'=>'新しい旅の始まりを告げる「愚者」が現れました。計算より直感、準備より行動。純粋な心で一歩を踏み出した先に、想像を超えた景色が広がっています。','reversed_msg'=>'焦りや無謀さが足元を危うくしているかもしれません。地に足をついた判断を取り戻しましょう。'],
+        ['name'=>'愚者','num'=>'0','symbol'=>'🌟','upright_msg'=>'新しい旅の始まりを告げる「愚者」が現れました。計算より直感、準備より行動。純粋な心で一歩を踏み出した先に、想像を超えた景色が広がっています。恐れを手放し、今すぐ動いてください。','reversed_msg'=>'焦りや無謀さが足元を危うくしているかもしれません。飛び込む前に少しだけ立ち止まり、地に足をついた判断を取り戻しましょう。'],
         ['name'=>'魔術師','num'=>'I','symbol'=>'🔮','upright_msg'=>'あなたが必要な力はすでに揃っています。才能・知識・情熱——あとは強い意志で一点に集中するだけ。今の目標に向けてエネルギーを集めることで、現実が大きく動き始めます。','reversed_msg'=>'持っている才能を活かしきれていない状況です。まず一つに絞り、そこに全力を注ぐことで好転します。'],
         ['name'=>'女教皇','num'=>'II','symbol'=>'🌙','upright_msg'=>'答えはすでにあなたの内側にあります。外の世界より内なる声に耳を澄ませてください。今は行動より「感じること」を優先する時期です。','reversed_msg'=>'自分の直感を信じることをためらっていませんか？心の奥から聞こえる声に正直に向き合ってみてください。'],
         ['name'=>'女帝','num'=>'III','symbol'=>'🌺','upright_msg'=>'豊穣と愛情のエネルギーに満ちています。与えること、育てること、楽しむこと——この三つを大切にすることで人生はさらに花開きます。','reversed_msg'=>'誰かへの依存や自分を後回しにしすぎている状況が見受けられます。まず自分自身を大切にすることから始めてください。'],
-        ['name'=>'皇帝','num'=>'IV','symbol'=>'⚡','upright_msg'=>'今こそ、自分の人生の主役として堂々と立つべき時です。ルールを設け秩序をもたらすことで周囲からの信頼が集まります。','reversed_msg'=>'コントロールへの執着が柔軟性を奪っているかもしれません。時には流れに身を委ねることも大切です。'],
+        ['name'=>'皇帝','num'=>'IV','symbol'=>'⚡','upright_msg'=>'今こそ、自分の人生の主役として堂々と立つべき時です。ルールを設け秩序をもたらすことで周囲からの信頼が集まります。感情より論理、計画が吉。','reversed_msg'=>'コントロールへの執着が柔軟性を奪っているかもしれません。時には流れに身を委ねることも大切です。'],
         ['name'=>'法王','num'=>'V','symbol'=>'✨','upright_msg'=>'信頼できる師や先輩との縁が深まる時期です。伝統や慣習の中に重要なヒントが隠れています。学ぶ姿勢が精神的な成長をもたらします。','reversed_msg'=>'古いルールや既成概念があなたを縛っているかもしれません。本当に自分が信じることを改めて問い直してみましょう。'],
         ['name'=>'恋人','num'=>'VI','symbol'=>'💖','upright_msg'=>'心から「Yes」と言える選択が、今のあなたに問われています。魂レベルで「これだ」と感じる方向へ進んでください。','reversed_msg'=>'価値観のズレや選択への迷いを感じているかもしれません。自分の心が本当に求めるものに正直になってみてください。'],
         ['name'=>'戦車','num'=>'VII','symbol'=>'🏆','upright_msg'=>'強い意志と集中力で目標へと突き進む時です。障害はあなたを試すためにあります。前進あるのみ。','reversed_msg'=>'方向性が定まらずエネルギーが分散しているかもしれません。まず「どこへ向かいたいか」を明確にすることが先決です。'],
@@ -59,7 +57,7 @@ function getTarotReading(string $name, string $birthdate): array {
         ['name'=>'正義','num'=>'XI','symbol'=>'⚖️','upright_msg'=>'因果の法則が働いています。正直で公正な行動が今のあなたに最大の幸運をもたらします。','reversed_msg'=>'誰かに対して、あるいは自分自身に対して、不誠実になっていませんか？真実に向き合うことで停滞が動き始めます。'],
         ['name'=>'吊られた男','num'=>'XII','symbol'=>'🌊','upright_msg'=>'今は行動よりも待機の時。逆さまになることでまったく新しい視点が得られます。手放すことを恐れないでください。','reversed_msg'=>'無駄な我慢や変化への抵抗が状況を複雑にしているかもしれません。手放すべきものを手放すことで流れが変わります。'],
         ['name'=>'死神','num'=>'XIII','symbol'=>'🔄','upright_msg'=>'「死神」は終わりではなく変容と再生の象徴です。今感じる「終わり」は次の始まりへの扉。手放す勇気があなたの人生に新鮮な息吹をもたらします。','reversed_msg'=>'変化を恐れて終わるべきものにしがみついていませんか？手放すことへの恐れが新しい出発を遅らせています。'],
-        ['name'=>'節制','num'=>'XIV','symbol'=>'🌈','upright_msg'=>'異なるものをうまく組み合わせることで奇跡が生まれます。焦らずじっくりと。今のあなたに必要なのはバランスと忍耐、そして癒しの時間です。','reversed_msg'=>'何かが行き過ぎていませんか？バランスが崩れているかもしれません。中庸を取り戻すことが今の課題です。'],
+        ['name'=>'節制','num'=>'XIV','symbol'=>'🌈','upright_msg'=>'異なるものをうまく組み合わせることで奇跡が生まれます。今のあなたに必要なのはバランスと忍耐、そして癒しの時間です。','reversed_msg'=>'何かが行き過ぎていませんか？バランスが崩れているかもしれません。中庸を取り戻すことが今の課題です。'],
         ['name'=>'悪魔','num'=>'XV','symbol'=>'🗝️','upright_msg'=>'何かがあなたを縛っているように感じていませんか？しかしその鎖は自分でいつでも外せるものです。何があなたを縛っているのかを正直に見つめることが解放への第一歩です。','reversed_msg'=>'執着や恐れからの解放が近づいています。長い間あなたを縛っていたものからようやく自由になれるタイミングです。'],
         ['name'=>'塔','num'=>'XVI','symbol'=>'🌩️','upright_msg'=>'崩れるべきものが崩れ、本質だけが残ります。一見破壊的に見えるこの変化の中に必要だった「解放」が隠れています。変化を受け入れてください。','reversed_msg'=>'内側では大きな変化が起きているのに表面では現状維持しようとしているかもしれません。変化に正直に向き合う時です。'],
         ['name'=>'星','num'=>'XVII','symbol'=>'⭐','upright_msg'=>'あなたの前には確かな可能性の光が灯っています。傷ついた心が癒され夢を信じる力が戻ってきます。希望を手放さないでください。宇宙はあなたの味方です。','reversed_msg'=>'希望を見失いかけているかもしれませんが、星はまだそこにあります。小さな一歩から再び始めましょう。'],
@@ -94,11 +92,11 @@ function getSichu(string $birthdate): array {
     $dayBranch  = $branches[$dayBranchIdx];
     $element    = $stemElem[$dayStem];
     $readings = [
-        '木'=>['keyword'=>'成長・発展・柔軟','nature'=>'春の木のような生命力を持つあなた。根を張りながらも天へと伸びる柔軟さと粘り強さが特徴です。','message'=>'日干「'.$dayStem.'」を持つあなたは、木の気の持ち主。新しいことを始める才能と、人を育てる優しさが備わっています。今の時期は、種を丁寧に蒔くことが重要です。焦らず、じっくりと根を張ることで、やがて大きな実りが得られます。','lucky'=>['方位'=>'東','色'=>'グリーン','季節'=>'春']],
+        '木'=>['keyword'=>'成長・発展・柔軟','nature'=>'春の木のような生命力を持つあなた。根を張りながらも天へと伸びる柔軟さと粘り強さが特徴です。','message'=>'日干「'.$dayStem.'」を持つあなたは、木の気の持ち主。新しいことを始める才能と、人を育てる優しさが備わっています。焦らず、じっくりと根を張ることで、やがて大きな実りが得られます。','lucky'=>['方位'=>'東','色'=>'グリーン','季節'=>'春']],
         '火'=>['keyword'=>'情熱・輝き・変容','nature'=>'燃える炎のような情熱と輝きを持つあなた。周囲を温め、照らす存在です。','message'=>'日干「'.$dayStem.'」を持つあなたは、火の気の持ち主。行動力と情熱、そして人を惹きつけるカリスマ性が特徴です。感情豊かなあなたの表現力は、今最大の武器となります。','lucky'=>['方位'=>'南','色'=>'レッド','季節'=>'夏']],
-        '土'=>['keyword'=>'安定・信頼・包容','nature'=>'大地のような包容力と安定感を持つあなた。すべてを受け入れ、育む力があります。','message'=>'日干「'.$dayStem.'」を持つあなたは、土の気の持ち主。信頼感と誠実さ、そして人を包み込む温かさが最大の魅力です。今の時期は、足元をしっかり固めることが運気向上の鍵。','lucky'=>['方位'=>'中央','色'=>'イエロー','季節'=>'土用']],
+        '土'=>['keyword'=>'安定・信頼・包容','nature'=>'大地のような包容力と安定感を持つあなた。すべてを受け入れ、育む力があります。','message'=>'日干「'.$dayStem.'」を持つあなたは、土の気の持ち主。信頼感と誠実さ、そして人を包み込む温かさが最大の魅力です。足元をしっかり固めることが運気向上の鍵。','lucky'=>['方位'=>'中央','色'=>'イエロー','季節'=>'土用']],
         '金'=>['keyword'=>'鋭敏・義理・変革','nature'=>'磨かれた金属のように、鋭い感性と強い意志を持つあなた。義理と筋を重んじます。','message'=>'日干「'.$dayStem.'」を持つあなたは、金の気の持ち主。鋭い判断力と揺るぎない意志、そして美的センスが特徴です。不要なものを整理することで新たな価値が生まれます。','lucky'=>['方位'=>'西','色'=>'ホワイト','季節'=>'秋']],
-        '水'=>['keyword'=>'知恵・流動・深み','nature'=>'深い海のような知恵と、川のような流動性を持つあなた。本質を見抜く力があります。','message'=>'日干「'.$dayStem.'」を持つあなたは、水の気の持ち主。深い洞察力と柔軟な適応力、そして知的好奇心の旺盛さが特徴です。流れに逆らわず、自然な形で物事を進めることでスムーズに目標へとたどり着けます。','lucky'=>['方位'=>'北','色'=>'ブラック','季節'=>'冬']],
+        '水'=>['keyword'=>'知恵・流動・深み','nature'=>'深い海のような知恵と、川のような流動性を持つあなた。本質を見抜く力があります。','message'=>'日干「'.$dayStem.'」を持つあなたは、水の気の持ち主。深い洞察力と柔軟な適応力、そして知的好奇心の旺盛さが特徴です。流れに逆らわず進めることでスムーズに目標へとたどり着けます。','lucky'=>['方位'=>'北','色'=>'ブラック','季節'=>'冬']],
     ];
     $reading = $readings[$element];
     return ['yearPillar'=>$yearStem.$yearBranch,'dayPillar'=>$dayStem.$dayBranch,'dayStem'=>$dayStem,'element'=>$element,'keyword'=>$reading['keyword'],'nature'=>$reading['nature'],'message'=>$reading['message'],'lucky'=>$reading['lucky']];
@@ -114,26 +112,22 @@ function buildIntegratedReading(string $name, array $zodiac, array $zodiacReadin
         'あなたの持つ本来の輝きを、今こそ世界に解き放つとき',
     ];
     $themeIdx = crc32($name . date('Ymd')) % count($themes);
-    $template = "{name}さん、三つの叡智があなたへのメッセージを届けています。\n\n{zodiac_symbol}【星の導き】{zodiac_symbol}\n{zodiac_name}を宿すあなたは、{planet}の加護のもと、{zodiac_advice}\n\n{tarot_symbol}【カードの啓示】{tarot_symbol}\n「{tarot_name}（{direction}）」が示す通り、今のあなたには{tarot_keyword}の力が宿っています。\n\n☯【命式が示す本質】☯\n{sichu_element}の気を持つあなたの本質は「{sichu_keyword}」。{sichu_nature}\n\n✨【統合された鑑定より】✨\n宇宙の三つの言語、西洋占星術・タロット・四柱推命が、今この瞬間に同じ方向を指しています。それは「{integrated_theme}」というメッセージです。\n\n今のあなたにとって最も大切なことは、自分の内なる声を信頼すること。星があなたを見守り、カードがあなたの力を証明し、命式があなたの本質を示しています。すべての鑑定が伝えるのは、あなたにはその道を歩む力が十分に備わっているということです。";
+    $t = "{name}さん、三つの叡智があなたへのメッセージを届けています。\n\n{zodiac_symbol}【星の導き】{zodiac_symbol}\n{zodiac_name}を宿すあなたは、{planet}の加護のもと、{zodiac_advice}\n\n{tarot_symbol}【カードの啓示】{tarot_symbol}\n「{tarot_name}（{direction}）」が示す通り、今のあなたには{tarot_keyword}の力が宿っています。\n\n☯【命式が示す本質】☯\n{sichu_element}の気を持つあなたの本質は「{sichu_keyword}」。{sichu_nature}\n\n✨【統合された鑑定より】✨\n宇宙の三つの言語、西洋占星術・タロット・四柱推命が、今この瞬間に同じ方向を指しています。それは「{integrated_theme}」というメッセージです。\n\n今のあなたにとって最も大切なことは、自分の内なる声を信頼すること。星があなたを見守り、カードがあなたの力を証明し、命式があなたの本質を示しています。すべての鑑定が伝えるのは、あなたにはその道を歩む力が十分に備わっているということです。";
     return str_replace(
         ['{name}','{zodiac_symbol}','{zodiac_name}','{planet}','{zodiac_advice}','{tarot_symbol}','{tarot_name}','{direction}','{tarot_keyword}','{sichu_element}','{sichu_keyword}','{sichu_nature}','{integrated_theme}'],
         [$name,$zodiac['symbol'],$zodiac['name'],$zodiacReading['planet'],$zodiacReading['advice'],$tarot['symbol'],$tarot['name'],$direction,mb_substr($tarot['message'],0,30),$sichu['element'],$sichu['keyword'],$sichu['nature'],$themes[abs($themeIdx)]],
-        $template
+        $t
     );
 }
 
 function stars(int $n, int $max = 5): string {
     $out = '';
     for ($i = 1; $i <= $max; $i++)
-        $out .= '<span class="star' . ($i <= $n ? ' filled' : '') . '">★</span>';
+        $out .= '<span class="star'.($i<=$n?' filled':'').'">★</span>';
     return $out;
 }
 
-$result   = null;
-$errors   = [];
-$name     = '';
-$birthday = '';
-
+$result = null; $errors = []; $name = ''; $birthday = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name     = trim($_POST['name']     ?? '');
     $birthday = trim($_POST['birthday'] ?? '');
@@ -207,78 +201,193 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 @media(max-width:768px){.header-nav{display:none}.sp-menu-btn{display:flex;align-items:center;gap:.35rem}}
 
 /* ══ HERO ══ */
-.hero{text-align:center;padding:2.5rem 1rem 2rem;border-bottom:1px solid var(--border);margin-bottom:2rem}
+.hero{text-align:center;padding:3rem 1rem 2.5rem;border-bottom:1px solid var(--border);margin-bottom:0;position:relative}
 .hero-eyebrow{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.28em;color:var(--gold);text-transform:uppercase;margin-bottom:.8rem;display:block}
-.hero h1{font-family:var(--ff-serif);font-size:clamp(1.6rem,5vw,2.4rem);font-weight:700;line-height:1.2;letter-spacing:.06em;background:linear-gradient(135deg,var(--gold-lt) 0%,var(--violet-lt) 50%,var(--rose) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
-.hero-sub{color:var(--muted);font-size:.88rem;letter-spacing:.04em;margin-bottom:1.2rem}
-.hero-pillars{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap}
-.hero-pillar{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.1em;padding:.3rem .9rem;border:1px solid var(--border2);border-radius:20px;color:var(--violet-lt)}
+.hero h1{font-family:var(--ff-serif);font-size:clamp(1.55rem,4.5vw,2.4rem);font-weight:700;line-height:1.2;letter-spacing:.06em;background:linear-gradient(135deg,var(--gold-lt) 0%,var(--violet-lt) 50%,var(--rose) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.6rem}
+.hero-sub{color:var(--muted);font-size:.88rem;letter-spacing:.04em}
 
-/* ══ adsense ══ */
-.adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
-.adsense-space::after{content:'AD SPACE'}
+/* ══ 三角ビジュアル ══ */
+.trinity-visual{display:flex;flex-direction:column;align-items:center;padding:2.5rem 1rem 2rem;gap:1.2rem}
+.trinity-orbs{display:flex;justify-content:center;align-items:flex-end;gap:2.5rem;position:relative}
+.trinity-orbs::before{
+  content:'';position:absolute;
+  left:50%;top:50%;
+  width:200px;height:160px;
+  transform:translate(-50%,-60%);
+  background:
+    linear-gradient(135deg,rgba(201,168,76,.08),rgba(122,74,158,.06));
+  clip-path:polygon(50% 0%,100% 100%,0% 100%);
+  pointer-events:none;
+}
+.t-orb{display:flex;flex-direction:column;align-items:center;gap:.5rem;position:relative;z-index:1}
+.t-orb-circle{
+  width:72px;height:72px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;
+  position:relative;
+}
+.t-orb-circle::before{content:'';position:absolute;inset:-3px;border-radius:50%;z-index:-1;opacity:.5}
+.t-orb-circle::after{content:'';position:absolute;inset:0;border-radius:50%;z-index:-1}
+.orb-star .t-orb-circle{animation:floatA 4s ease-in-out infinite}
+.orb-star .t-orb-circle::after{background:radial-gradient(circle,rgba(176,136,224,.25),transparent 70%);border:1px solid rgba(176,136,224,.4)}
+.orb-tarot .t-orb-circle{animation:floatB 4.5s ease-in-out infinite}
+.orb-tarot .t-orb-circle::after{background:radial-gradient(circle,rgba(201,168,76,.2),transparent 70%);border:1px solid rgba(201,168,76,.35)}
+.orb-sichu .t-orb-circle{animation:floatC 3.8s ease-in-out infinite}
+.orb-sichu .t-orb-circle::after{background:radial-gradient(circle,rgba(58,184,176,.2),transparent 70%);border:1px solid rgba(58,184,176,.35)}
+.t-orb-label{font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.12em;color:var(--muted)}
+.t-orb-en{font-family:var(--ff-mono);font-size:.5rem;letter-spacing:.08em;color:rgba(138,125,181,.5)}
 
-/* ══ フォーム ══ */
-.form-card{background:var(--card-bg);border:1px solid var(--border2);border-radius:16px;padding:2rem;margin-bottom:2rem;box-shadow:0 8px 40px rgba(0,0,0,.35)}
-.form-card h2{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--gold-lt);text-align:center;letter-spacing:.1em;margin-bottom:1.6rem}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes floatB{0%,100%{transform:translateY(-4px)}50%{transform:translateY(4px)}}
+@keyframes floatC{0%,100%{transform:translateY(-2px)}50%{transform:translateY(-10px)}}
+
+.trinity-connector{display:flex;align-items:center;gap:.6rem;font-family:var(--ff-mono);font-size:.6rem;color:rgba(138,125,181,.4);letter-spacing:.1em}
+.trinity-connector span{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.25),transparent)}
+
+/* ══ フォームセクション ══ */
+.form-section{padding:0 0 2rem}
+.form-card{
+  background:linear-gradient(160deg,rgba(30,21,60,.95),rgba(10,8,24,.98));
+  border:1px solid rgba(201,168,76,.25);
+  border-radius:20px;
+  padding:2.2rem;
+  box-shadow:0 0 60px rgba(122,74,158,.12),0 20px 60px rgba(0,0,0,.5);
+  position:relative;overflow:hidden;
+}
+.form-card::before{content:'';position:absolute;top:-1px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.6),transparent)}
+.form-card::after{content:'';position:absolute;bottom:-1px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.3),transparent)}
+.form-title{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--gold-lt);text-align:center;letter-spacing:.14em;margin-bottom:1.8rem}
+.form-title small{display:block;font-family:var(--ff-mono);font-size:.58rem;font-weight:400;color:var(--muted);letter-spacing:.2em;margin-top:.3rem}
 .field{margin-bottom:1.3rem}
-.field label{display:block;font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.12em;color:var(--muted);margin-bottom:.5rem}
-.field input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:8px;padding:.75rem 1rem;color:var(--text);font-size:1rem;font-family:var(--ff-sans);outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none}
-.field input:focus{border-color:var(--violet);box-shadow:0 0 0 3px rgba(122,74,158,.2)}
-.btn-submit{width:100%;padding:.9rem;background:linear-gradient(135deg,var(--violet),#5a3090);color:#fff;border:none;border-radius:10px;font-family:var(--ff-serif);font-size:1rem;font-weight:600;letter-spacing:.12em;cursor:pointer;transition:opacity .2s,transform .15s;margin-top:.5rem}
-.btn-submit:hover{opacity:.9;transform:translateY(-1px)}
+.field label{display:block;font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.14em;color:var(--muted);margin-bottom:.5rem}
+.field input{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.2);border-radius:8px;padding:.8rem 1rem;color:var(--text);font-size:1rem;font-family:var(--ff-sans);outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none}
+.field input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.12)}
+.btn-submit{
+  width:100%;padding:1rem;
+  background:linear-gradient(135deg,rgba(201,168,76,.9),rgba(139,105,20,.9));
+  color:#0a0818;
+  border:none;border-radius:10px;
+  font-family:var(--ff-serif);font-size:1rem;font-weight:700;
+  letter-spacing:.18em;cursor:pointer;
+  transition:opacity .2s,transform .15s,box-shadow .2s;
+  margin-top:.5rem;
+  box-shadow:0 4px 24px rgba(201,168,76,.25);
+}
+.btn-submit:hover{opacity:.92;transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,168,76,.35)}
 .error-list{background:rgba(200,80,128,.1);border:1px solid rgba(200,80,128,.3);border-radius:8px;padding:.8rem 1rem;margin-bottom:1rem;list-style:none}
 .error-list li{font-size:.85rem;color:var(--rose)}
 
-/* ══ 説明文 ══ */
-.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
-.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
-.tool-desc p:last-child{margin-bottom:0}
+/* ══ AdSense ══ */
+.adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
+.adsense-space::after{content:'AD SPACE'}
 
-/* ══ 結果 ══ */
-.result-header{text-align:center;padding:1.5rem 0;border-bottom:1px solid var(--border);margin-bottom:1.8rem}
-.result-name{font-family:var(--ff-serif);font-size:1.4rem;font-weight:700;color:var(--gold-lt);letter-spacing:.08em;margin-bottom:.3rem}
-.result-date{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);letter-spacing:.1em}
+/* ══ 結果ヘッダー ══ */
+.result-header{
+  text-align:center;
+  padding:2.5rem 1rem;
+  position:relative;
+  margin-bottom:2rem;
+}
+.result-header::before,.result-header::after{
+  content:'';display:block;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(201,168,76,.4),transparent);
+  margin:1.2rem 0;
+}
+.result-seal{
+  width:64px;height:64px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(201,168,76,.15),rgba(122,74,158,.1));
+  border:1px solid rgba(201,168,76,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;margin:0 auto .8rem;
+  box-shadow:0 0 24px rgba(201,168,76,.15);
+}
+.result-name{font-family:var(--ff-serif);font-size:1.5rem;font-weight:700;color:var(--gold-lt);letter-spacing:.1em;margin-bottom:.25rem}
+.result-date{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);letter-spacing:.12em}
 
-.result-block{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:1.6rem;margin-bottom:1.4rem;position:relative;overflow:hidden}
-.result-block::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
-.block-astro::before{background:linear-gradient(90deg,var(--violet),var(--rose))}
-.block-tarot::before{background:linear-gradient(90deg,var(--gold),var(--violet))}
-.block-sichu::before{background:linear-gradient(90deg,var(--teal),var(--violet))}
-.block-integrated::before{background:linear-gradient(90deg,var(--gold),var(--violet),var(--rose))}
+/* ══ 結果ブロック共通 ══ */
+.result-block{
+  border-radius:16px;
+  padding:0;
+  margin-bottom:1.6rem;
+  position:relative;
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+.result-block.visible{opacity:1;transform:translateY(0)}
+.block-inner{padding:1.8rem}
 
-.block-label{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
-.block-title{font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--gold-lt);letter-spacing:.06em;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
-.block-symbol{font-size:1.2rem}
-.tarot-direction{font-family:var(--ff-mono);font-size:.65rem;padding:.18rem .7rem;border-radius:4px;letter-spacing:.06em}
+/* 各ブロックの外枠カラー */
+.block-astro{background:linear-gradient(160deg,rgba(122,74,158,.12),rgba(26,21,53,.98));border:1px solid rgba(176,136,224,.25)}
+.block-tarot{background:linear-gradient(160deg,rgba(201,168,76,.08),rgba(26,21,53,.98));border:1px solid rgba(201,168,76,.22)}
+.block-sichu{background:linear-gradient(160deg,rgba(58,184,176,.1),rgba(26,21,53,.98));border:1px solid rgba(58,184,176,.22)}
+.block-integrated{background:linear-gradient(160deg,rgba(201,168,76,.06),rgba(122,74,158,.08),rgba(26,21,53,.98));border:1px solid rgba(201,168,76,.3)}
+
+/* 各ブロック上部ライン */
+.block-astro::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--violet),var(--violet-lt),var(--rose))}
+.block-tarot::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold-dk),var(--gold),var(--gold-lt))}
+.block-sichu::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),rgba(58,184,176,.4),var(--teal))}
+.block-integrated::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--rose))}
+
+/* 背景シンボル */
+.block-bg-symbol{
+  position:absolute;right:1rem;top:50%;transform:translateY(-50%);
+  font-size:5rem;opacity:.04;line-height:1;pointer-events:none;
+  user-select:none;
+}
+
+.block-label{font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
+.block-title{font-family:var(--ff-serif);font-size:1.2rem;font-weight:700;color:var(--gold-lt);letter-spacing:.06em;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.block-symbol{font-size:1.3rem}
+.tarot-direction{font-family:var(--ff-mono);font-size:.62rem;padding:.18rem .7rem;border-radius:4px;letter-spacing:.06em}
 .upright{background:rgba(58,184,176,.15);color:var(--teal);border:1px solid rgba(58,184,176,.3)}
 .reversed{background:rgba(200,80,128,.15);color:var(--rose);border:1px solid rgba(200,80,128,.3)}
 
-.scores{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem .8rem;margin-bottom:1rem}
+.scores{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem 1rem;margin-bottom:1rem}
 .score-row{display:flex;align-items:center;gap:.6rem;font-size:.82rem}
-.score-label{font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);letter-spacing:.06em;width:3em;flex-shrink:0}
-.stars{display:flex;gap:1px}
-.star{color:rgba(160,130,220,.2);font-size:.85rem}
+.score-label{font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);letter-spacing:.06em;width:3.2em;flex-shrink:0}
+.stars{display:flex;gap:2px}
+.star{color:rgba(160,130,220,.18);font-size:.85rem}
 .star.filled{color:var(--gold)}
 
 .lucky-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
 .lucky-item{font-size:.72rem;background:rgba(122,74,158,.1);border:1px solid rgba(122,74,158,.2);border-radius:6px;padding:.2rem .65rem;color:var(--violet-lt)}
-.lucky-item span{color:var(--muted);margin-right:.3rem;font-family:var(--ff-mono);font-size:.6rem}
+.lucky-item span{color:var(--muted);margin-right:.3rem;font-family:var(--ff-mono);font-size:.58rem}
 .pillar-badges{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
 .pillar-badge{font-family:var(--ff-mono);font-size:.68rem;background:rgba(58,184,176,.1);border:1px solid rgba(58,184,176,.2);border-radius:6px;padding:.2rem .65rem;color:var(--teal)}
-.block-message{font-size:.92rem;line-height:2;color:var(--text);border-top:1px solid var(--border);padding-top:1rem;margin-top:.5rem}
-.integrated-text{font-size:.92rem;line-height:2.1;color:var(--text);white-space:pre-wrap}
+.block-message{font-size:.92rem;line-height:2.1;color:rgba(232,226,245,.88);border-top:1px solid var(--border);padding-top:1rem;margin-top:.5rem}
+
+/* ══ 統合鑑定 特別レイアウト ══ */
+.integrated-scroll{
+  position:relative;
+  background:rgba(0,0,0,.15);
+  border:1px solid rgba(201,168,76,.15);
+  border-radius:10px;
+  padding:1.5rem 1.6rem;
+  margin-top:.5rem;
+}
+.integrated-scroll::before,.integrated-scroll::after{
+  content:'✦  ✦  ✦';
+  display:block;text-align:center;
+  font-family:var(--ff-mono);font-size:.62rem;
+  color:rgba(201,168,76,.35);letter-spacing:.3em;
+  margin:.2rem 0 .8rem;
+}
+.integrated-scroll::after{margin:.8rem 0 .2rem}
+.integrated-text{font-size:.92rem;line-height:2.2;color:rgba(232,226,245,.88);white-space:pre-wrap}
 
 /* ══ もう一度ボタン ══ */
-.retry-btn{display:block;text-align:center;margin:2rem auto;padding:.85rem 2.5rem;border:1px solid var(--border2);border-radius:30px;color:var(--muted);font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.12em;text-decoration:none;transition:color .2s,border-color .2s,background .2s;width:fit-content}
+.retry-btn{display:block;text-align:center;margin:2.5rem auto;padding:.85rem 2.5rem;border:1px solid rgba(201,168,76,.3);border-radius:30px;color:var(--gold);font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.14em;text-decoration:none;transition:color .2s,border-color .2s,background .2s;width:fit-content}
 .retry-btn:hover{color:var(--gold-lt);border-color:var(--gold);background:rgba(201,168,76,.06)}
 
-/* ══ 他の占いへ ══ */
-.nav-section{padding:2rem 0 0;border-top:1px solid var(--border);margin-top:2rem}
+/* ══ 他ページへ ══ */
+.nav-section{padding:2rem 0 0;border-top:1px solid var(--border);margin-top:1rem}
 .nav-section h3{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:1rem;text-align:center}
 .nav-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
 @media(max-width:480px){.nav-grid{grid-template-columns:1fr}}
-.nav-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem;text-decoration:none;display:flex;flex-direction:column;gap:.25rem;transition:border-color .2s,background .2s}
+.nav-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem;text-decoration:none;display:flex;flex-direction:column;gap:.2rem;transition:border-color .2s,background .2s}
 .nav-card:hover{border-color:var(--border2);background:rgba(160,130,220,.06)}
 .nav-card-title{font-family:var(--ff-sans);font-size:.88rem;font-weight:500;color:var(--text)}
 .nav-card-desc{font-size:.74rem;color:var(--muted);line-height:1.6}
@@ -295,7 +404,7 @@ footer a:hover{color:var(--gold)}
 </head>
 <body>
 
-<!-- ══ HEADER ══ -->
+<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo">⛩ 占い<em>Portal</em></a>
@@ -334,41 +443,60 @@ footer a:hover{color:var(--gold)}
 
   <section class="hero">
     <span class="hero-eyebrow">Integrated Fortune Reading</span>
-    <h1>三星統合鑑定｜三つの叡智で運命を読む</h1>
-    <p class="hero-sub">西洋占星術・タロット・四柱推命を組み合わせた、占いPortal独自の統合鑑定</p>
-    <div class="hero-pillars">
-      <span class="hero-pillar">♈ 西洋占星術</span>
-      <span class="hero-pillar">🃏 タロット</span>
-      <span class="hero-pillar">☯ 四柱推命</span>
-    </div>
+    <h1>三星統合鑑定</h1>
+    <p class="hero-sub">西洋占星術・タロット・四柱推命 ── 三つの叡智が同じ方向を指すとき、そこに真実がある</p>
   </section>
+
+  <!-- 三角ビジュアル -->
+  <div class="trinity-visual">
+    <div class="trinity-orbs">
+      <div class="t-orb orb-star">
+        <div class="t-orb-circle">♈</div>
+        <div class="t-orb-label">西洋占星術</div>
+        <div class="t-orb-en">Astrology</div>
+      </div>
+      <div class="t-orb orb-tarot" style="margin-bottom:2rem">
+        <div class="t-orb-circle">🃏</div>
+        <div class="t-orb-label">タロット</div>
+        <div class="t-orb-en">Tarot</div>
+      </div>
+      <div class="t-orb orb-sichu">
+        <div class="t-orb-circle">☯</div>
+        <div class="t-orb-label">四柱推命</div>
+        <div class="t-orb-en">Shichū</div>
+      </div>
+    </div>
+    <div class="trinity-connector">
+      <span></span>三つの叡智が統合される<span></span>
+    </div>
+  </div>
 
   <div class="adsense-space"></div>
 
-  <div class="tool-desc">
-    <p>三星統合鑑定は、西洋占星術・タロット・四柱推命という3つの異なる占術を組み合わせ、あなたへの統合メッセージを導き出す独自の鑑定サービスです。</p>
-    <p>星座があなたの今のエネルギーを示し、タロットが潜在意識のメッセージを伝え、四柱推命が命式に刻まれた本質を明かします。三つの叡智が同じ方向を指すとき、そこには深い真実があります。</p>
-  </div>
-
   <!-- フォーム -->
-  <div class="form-card">
-    <h2>✦ 鑑定情報を入力 ✦</h2>
-    <?php if (!empty($errors)): ?>
-    <ul class="error-list">
-      <?php foreach($errors as $e): ?><li><?= htmlspecialchars($e) ?></li><?php endforeach; ?>
-    </ul>
-    <?php endif; ?>
-    <form method="post" action="">
-      <div class="field">
-        <label for="name">お名前（ニックネーム可）</label>
-        <input type="text" id="name" name="name" value="<?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>" placeholder="例：さくら" required>
+  <div class="form-section">
+    <div class="form-card">
+      <div class="form-title">
+        ✦ 鑑定情報を入力 ✦
+        <small>YOUR INFORMATION</small>
       </div>
-      <div class="field">
-        <label for="birthday">生年月日</label>
-        <input type="date" id="birthday" name="birthday" value="<?= htmlspecialchars($birthday) ?>" min="1920-01-01" max="<?= date('Y-m-d') ?>" required>
-      </div>
-      <button type="submit" class="btn-submit">✦ 三星鑑定を開始する ✦</button>
-    </form>
+      <?php if (!empty($errors)): ?>
+      <ul class="error-list">
+        <?php foreach($errors as $e): ?><li><?= htmlspecialchars($e) ?></li><?php endforeach; ?>
+      </ul>
+      <?php endif; ?>
+      <form method="post" action="">
+        <div class="field">
+          <label for="name">お名前（ニックネーム可）</label>
+          <input type="text" id="name" name="name" value="<?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>" placeholder="例：さくら" required>
+        </div>
+        <div class="field">
+          <label for="birthday">生年月日</label>
+          <input type="date" id="birthday" name="birthday" value="<?= htmlspecialchars($birthday) ?>" min="1920-01-01" max="<?= date('Y-m-d') ?>" required>
+        </div>
+        <button type="submit" class="btn-submit">✦ 三星鑑定を開始する ✦</button>
+      </form>
+    </div>
   </div>
 
   <!-- 結果 -->
@@ -376,77 +504,92 @@ footer a:hover{color:var(--gold)}
   <section id="result">
 
     <div class="result-header">
+      <div class="result-seal">✨</div>
       <div class="result-name"><?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?> さんの鑑定書</div>
       <div class="result-date"><?= (new DateTimeImmutable($birthday))->format('Y年n月j日生まれ') ?></div>
     </div>
 
     <!-- 西洋占星術 -->
-    <div class="result-block block-astro">
-      <div class="block-label">Western Astrology · 西洋占星術</div>
-      <div class="block-title">
-        <span class="block-symbol"><?= $result['zodiac']['symbol'] ?></span>
-        <?= $result['zodiac']['name'] ?> ── <?= $result['zodiacReading']['planet'] ?>
+    <div class="result-block block-astro" data-delay="0">
+      <div class="block-bg-symbol"><?= $result['zodiac']['symbol'] ?></div>
+      <div class="block-inner">
+        <div class="block-label">Western Astrology · 第一の叡智</div>
+        <div class="block-title">
+          <span class="block-symbol"><?= $result['zodiac']['symbol'] ?></span>
+          <?= $result['zodiac']['name'] ?> ── <?= $result['zodiacReading']['planet'] ?>
+        </div>
+        <div class="scores">
+          <div class="score-row"><span class="score-label">恋愛運</span><div class="stars"><?= stars($result['zodiacReading']['today']['love']) ?></div></div>
+          <div class="score-row"><span class="score-label">仕事運</span><div class="stars"><?= stars($result['zodiacReading']['today']['work']) ?></div></div>
+          <div class="score-row"><span class="score-label">金　運</span><div class="stars"><?= stars($result['zodiacReading']['today']['money']) ?></div></div>
+          <div class="score-row"><span class="score-label">健康運</span><div class="stars"><?= stars($result['zodiacReading']['today']['health']) ?></div></div>
+        </div>
+        <div class="lucky-row">
+          <?php foreach($result['zodiacReading']['lucky'] as $k => $v): ?>
+          <span class="lucky-item"><span><?= $k ?></span><?= $v ?></span>
+          <?php endforeach; ?>
+        </div>
+        <div class="block-message"><?= nl2br(htmlspecialchars($result['zodiacReading']['message'])) ?></div>
       </div>
-      <div class="scores">
-        <div class="score-row"><span class="score-label">恋愛運</span><div class="stars"><?= stars($result['zodiacReading']['today']['love']) ?></div></div>
-        <div class="score-row"><span class="score-label">仕事運</span><div class="stars"><?= stars($result['zodiacReading']['today']['work']) ?></div></div>
-        <div class="score-row"><span class="score-label">金　運</span><div class="stars"><?= stars($result['zodiacReading']['today']['money']) ?></div></div>
-        <div class="score-row"><span class="score-label">健康運</span><div class="stars"><?= stars($result['zodiacReading']['today']['health']) ?></div></div>
-      </div>
-      <div class="lucky-row">
-        <?php foreach($result['zodiacReading']['lucky'] as $k => $v): ?>
-        <span class="lucky-item"><span><?= $k ?></span><?= $v ?></span>
-        <?php endforeach; ?>
-      </div>
-      <div class="block-message"><?= nl2br(htmlspecialchars($result['zodiacReading']['message'])) ?></div>
     </div>
 
     <div class="adsense-space"></div>
 
     <!-- タロット -->
-    <div class="result-block block-tarot">
-      <div class="block-label">Tarot Reading · タロット</div>
-      <div class="block-title">
-        <span class="block-symbol"><?= $result['tarot']['symbol'] ?></span>
-        <?= $result['tarot']['num'] ?>. <?= $result['tarot']['name'] ?>
-        <span class="tarot-direction <?= $result['tarot']['upright'] ? 'upright' : 'reversed' ?>">
-          <?= $result['tarot']['upright'] ? '正位置' : '逆位置' ?>
-        </span>
+    <div class="result-block block-tarot" data-delay="150">
+      <div class="block-bg-symbol">🃏</div>
+      <div class="block-inner">
+        <div class="block-label">Tarot Reading · 第二の叡智</div>
+        <div class="block-title">
+          <span class="block-symbol"><?= $result['tarot']['symbol'] ?></span>
+          <?= $result['tarot']['num'] ?>. <?= $result['tarot']['name'] ?>
+          <span class="tarot-direction <?= $result['tarot']['upright'] ? 'upright' : 'reversed' ?>">
+            <?= $result['tarot']['upright'] ? '正位置' : '逆位置' ?>
+          </span>
+        </div>
+        <div class="block-message"><?= nl2br(htmlspecialchars($result['tarot']['message'])) ?></div>
       </div>
-      <div class="block-message"><?= nl2br(htmlspecialchars($result['tarot']['message'])) ?></div>
     </div>
 
     <div class="adsense-space"></div>
 
     <!-- 四柱推命 -->
-    <div class="result-block block-sichu">
-      <div class="block-label">四柱推命 · Shichū Suimei</div>
-      <div class="block-title">
-        <span class="block-symbol">☯</span>
-        日干「<?= $result['sichu']['dayStem'] ?>」── <?= $result['sichu']['element'] ?>の気
+    <div class="result-block block-sichu" data-delay="300">
+      <div class="block-bg-symbol">☯</div>
+      <div class="block-inner">
+        <div class="block-label">四柱推命 · 第三の叡智</div>
+        <div class="block-title">
+          <span class="block-symbol">☯</span>
+          日干「<?= $result['sichu']['dayStem'] ?>」── <?= $result['sichu']['element'] ?>の気
+        </div>
+        <div class="pillar-badges">
+          <span class="pillar-badge">年柱 <?= $result['sichu']['yearPillar'] ?></span>
+          <span class="pillar-badge">日柱 <?= $result['sichu']['dayPillar'] ?></span>
+          <span class="pillar-badge">キーワード：<?= $result['sichu']['keyword'] ?></span>
+        </div>
+        <div class="lucky-row">
+          <?php foreach($result['sichu']['lucky'] as $k => $v): ?>
+          <span class="lucky-item"><span><?= $k ?></span><?= $v ?></span>
+          <?php endforeach; ?>
+        </div>
+        <div class="block-message"><?= nl2br(htmlspecialchars($result['sichu']['message'])) ?></div>
       </div>
-      <div class="pillar-badges">
-        <span class="pillar-badge">年柱 <?= $result['sichu']['yearPillar'] ?></span>
-        <span class="pillar-badge">日柱 <?= $result['sichu']['dayPillar'] ?></span>
-        <span class="pillar-badge">キーワード：<?= $result['sichu']['keyword'] ?></span>
-      </div>
-      <div class="lucky-row">
-        <?php foreach($result['sichu']['lucky'] as $k => $v): ?>
-        <span class="lucky-item"><span><?= $k ?></span><?= $v ?></span>
-        <?php endforeach; ?>
-      </div>
-      <div class="block-message"><?= nl2br(htmlspecialchars($result['sichu']['message'])) ?></div>
     </div>
 
     <div class="adsense-space"></div>
 
     <!-- 統合鑑定 -->
-    <div class="result-block block-integrated">
-      <div class="block-label">Integrated Reading · 統合鑑定</div>
-      <div class="block-title">
-        <span class="block-symbol">✨</span>三星統合鑑定書
+    <div class="result-block block-integrated" data-delay="500">
+      <div class="block-bg-symbol">✨</div>
+      <div class="block-inner">
+        <div class="block-label">Integrated Reading · 三星統合鑑定書</div>
+        <div class="block-title">
+          <span class="block-symbol">✨</span>三つの叡智からの統合メッセージ
+        </div>
+        <div class="integrated-scroll">
+          <div class="integrated-text"><?= htmlspecialchars($result['integrated']) ?></div>
+        </div>
       </div>
-      <div class="integrated-text"><?= htmlspecialchars($result['integrated']) ?></div>
     </div>
 
     <a href="/sansei" class="retry-btn">↩ もう一度鑑定する</a>
@@ -454,34 +597,16 @@ footer a:hover{color:var(--gold)}
   </section>
   <?php endif; ?>
 
-  <!-- 他の占いへ -->
+  <!-- 他のページへ -->
   <div class="nav-section">
     <h3>✦ 他の占いも試してみる ✦</h3>
     <div class="nav-grid">
-      <a href="/tarot" class="nav-card">
-        <span class="nav-card-title">🃏 本格タロット占い</span>
-        <span class="nav-card-desc">22枚の大アルカナから1枚選ぶ直感型タロット</span>
-      </a>
-      <a href="/shichu" class="nav-card">
-        <span class="nav-card-title">🔯 四柱推命</span>
-        <span class="nav-card-desc">命式・十神・大運を本格算出する</span>
-      </a>
-      <a href="/seiza" class="nav-card">
-        <span class="nav-card-title">⭐ 西洋占星術</span>
-        <span class="nav-card-desc">太陽星座から個性・恋愛・仕事適性を鑑定</span>
-      </a>
-      <a href="/numerology" class="nav-card">
-        <span class="nav-card-title">🔢 数秘術</span>
-        <span class="nav-card-desc">生年月日と名前から人生の使命を読み解く</span>
-      </a>
-      <a href="/kyusei" class="nav-card">
-        <span class="nav-card-title">⭐ 九星気学</span>
-        <span class="nav-card-desc">生まれ年の九星から運勢・相性・吉方位を鑑定</span>
-      </a>
-      <a href="/aisho" class="nav-card">
-        <span class="nav-card-title">💑 相性診断</span>
-        <span class="nav-card-desc">星座と数秘術で恋愛・結婚の相性を鑑定</span>
-      </a>
+      <a href="/tarot" class="nav-card"><span class="nav-card-title">🃏 本格タロット占い</span><span class="nav-card-desc">22枚の大アルカナから1枚選ぶ直感型タロット</span></a>
+      <a href="/shichu" class="nav-card"><span class="nav-card-title">🔯 四柱推命</span><span class="nav-card-desc">命式・十神・大運を本格算出する</span></a>
+      <a href="/seiza" class="nav-card"><span class="nav-card-title">⭐ 西洋占星術</span><span class="nav-card-desc">太陽星座から個性・恋愛・仕事適性を鑑定</span></a>
+      <a href="/numerology" class="nav-card"><span class="nav-card-title">🔢 数秘術</span><span class="nav-card-desc">生年月日と名前から人生の使命を読み解く</span></a>
+      <a href="/kyusei" class="nav-card"><span class="nav-card-title">⭐ 九星気学</span><span class="nav-card-desc">生まれ年の九星から運勢・相性・吉方位を鑑定</span></a>
+      <a href="/aisho" class="nav-card"><span class="nav-card-title">💑 相性診断</span><span class="nav-card-desc">星座と数秘術で恋愛・結婚の相性を鑑定</span></a>
     </div>
   </div>
 
@@ -508,10 +633,28 @@ document.addEventListener('click',function(e){
     document.getElementById('spDropdown').classList.remove('open');
   }
 });
+
+// 結果ブロックを時差でフェードイン
 <?php if($result): ?>
-document.addEventListener('DOMContentLoaded',function(){
-  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
+document.addEventListener('DOMContentLoaded', function(){
+  document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
+
+  const blocks = document.querySelectorAll('.result-block[data-delay]');
+  blocks.forEach(function(block){
+    const delay = parseInt(block.dataset.delay) || 0;
+    setTimeout(function(){
+      block.classList.add('visible');
+    }, 300 + delay);
+  });
 });
+<?php else: ?>
+// スクロールで出現（フォームページ）
+const observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting) e.target.classList.add('visible');
+  });
+},{threshold:0.1});
+document.querySelectorAll('.result-block').forEach(function(el){observer.observe(el)});
 <?php endif; ?>
 </script>
 </body>
