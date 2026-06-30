@@ -156,12 +156,12 @@ ob_start();
   </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
-  $prevUrl='/articles/sanmei/kengyu/';$prevTitle='牽牛星';$nextUrl='/articles/sanmei/gyokudo/';$nextTitle='玉堂星';$listUrl='/articles/sanmei/';$listTitle='十大主星 一覧';
+  $prevUrl='/articles/sanmei/kengyu/';$prevTitle='牽牛星';$nextUrl='/articles/sanmei/gyokudo/';$nextTitle='玉堂星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';
   require __DIR__.'/../../../inc/article-nav.php';
   ?>
   <?php
   $relatedItems=[
-    ['label'=>'算命学とは','title'=>'元命・主星・従星の読み方を解説 →','url'=>'/articles/sanmei/'],
+    ['label'=>'算命学とは','title'=>'元命・主星・従星の読み方を解説 →','url'=>'/articles/sanmei/#genme'],
     ['label'=>'玉堂星','title'=>'知性の星・玉堂星を徹底解説 →','url'=>'/articles/sanmei/gyokudo/'],
     ['label'=>'算命学で鑑定する','title'=>'三星と五行バランスを無料で算出 →','url'=>'/sanmei'],
   ];

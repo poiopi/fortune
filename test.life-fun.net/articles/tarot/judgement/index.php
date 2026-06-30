@@ -68,7 +68,7 @@ ob_start();
     $nextUrl   = '/articles/tarot/world/';
     $nextLabel = '次のカード →';
     $listTitle = '大アルカナ一覧';
-    $listUrl   = '/articles/tarot/';
+    $listUrl   = '/articles/tarot/#cards';
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
   </section>
@@ -78,7 +78,7 @@ ob_start();
     <?php
     $relatedItems = [
       ['label'=>'タロット占い',      'title'=>'実際にカードを引いてみる →',      'url'=>'/tarot'],
-      ['label'=>'タロット完全ガイド', 'title'=>'大アルカナの基礎知識を学ぶ →',    'url'=>'/articles/tarot/'],
+      ['label'=>'タロット完全ガイド', 'title'=>'大アルカナの基礎知識を学ぶ →',    'url'=>'/articles/tarot/#cards'],
       ['label'=>'三星統合鑑定',      'title'=>'タロット×星座×数秘で深読みする →', 'url'=>'/'],
       ['label'=>'数秘術',            'title'=>'誕生日から運命数を読み解く →',      'url'=>'/numerology'],
     ];

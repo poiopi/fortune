@@ -199,7 +199,7 @@ ob_start();
     <h2>他の守護霊タイプを見る</h2>
     <?php
     $listTitle = '守護霊タイプ一覧';
-    $listUrl   = '/articles/guardian/';
+    $listUrl   = '/articles/guardian/#type-list';
     $prevTitle = null;
     $prevUrl   = null;
     $prevLabel = null;
