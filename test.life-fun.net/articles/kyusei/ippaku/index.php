@@ -277,9 +277,9 @@ require __DIR__.'/../../../inc/article-cta.php';
     ?>
   </section>
 
-</div>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 
-<?php require __DIR__.'/../../../inc/article-nav.php'; ?>
+</div>
 
 <script>
 function toggleFaq(el){ el.parentElement.classList.toggle('open'); }
