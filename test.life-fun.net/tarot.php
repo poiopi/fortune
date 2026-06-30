@@ -95,8 +95,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   transition:border-color .2s,background .2s,transform .15s;
 }
 .shuffle-btn:hover{border-color:var(--gold);background:rgba(201,168,76,.08);transform:translateY(-1px)}
-.shuffle-btn .s-icon{display:inline-block;transition:transform .45s ease}
-.shuffle-btn.spinning .s-icon{transform:rotate(360deg)}
+.shuffle-btn .s-icon{display:inline-block}
 
 /* ══ 円形エリア（22枚対応） ══ */
 .circle-area{position:relative;width:min(620px,94vw);height:min(620px,94vw);margin:0 auto}
@@ -395,15 +394,63 @@ function init() {
   renderCircle();
 }
 
-// シャッフル（カード引くまで何度でも）
+// シャッフル — 収束→再配置→展開アニメーション
 function shuffleCards() {
   if (selected !== null) return;
-  const btn = document.getElementById('shuffleBtn');
-  btn.classList.add('spinning');
-  pickedCards = pickedCards.map(c => ({ ...c, isUpright: Math.random() > .35 }));
-  pickedCards.sort(() => Math.random() - .5);
-  renderCircle();
-  setTimeout(() => btn.classList.remove('spinning'), 450);
+
+  const btn  = document.getElementById('shuffleBtn');
+  const area = document.getElementById('circle-area');
+  const size = area.offsetWidth;
+  const cx   = size / 2;
+  const cy   = size / 2;
+
+  btn.disabled = true;
+  btn.style.opacity = '.5';
+
+  // ── Phase 1: 全カードを中央へ収束 ──
+  const cardEls = area.querySelectorAll('.tcard');
+  cardEls.forEach(card => {
+    const dx = cx - parseFloat(card.style.left);
+    const dy = cy - parseFloat(card.style.top);
+    card.style.transition = 'transform .35s cubic-bezier(.55,0,1,.7)';
+    card.style.transform  = `translate(${dx}px,${dy}px) scale(.18)`;
+  });
+
+  // ── Phase 2: データ更新＋再描画（中央位置から即セット） ──
+  setTimeout(() => {
+    pickedCards = pickedCards.map(c => ({ ...c, isUpright: Math.random() > .35 }));
+    pickedCards.sort(() => Math.random() - .5);
+
+    renderCircle(); // 新しい left/top で DOM 再構築
+
+    // 再描画直後のカードを中央に固定（transition なしで）
+    const newEls = area.querySelectorAll('.tcard');
+    newEls.forEach(card => {
+      const dx = cx - parseFloat(card.style.left);
+      const dy = cy - parseFloat(card.style.top);
+      card.style.transition = 'none';
+      card.style.transform  = `translate(${dx}px,${dy}px) scale(.18)`;
+    });
+
+    // ── Phase 3: 新しい位置へ展開（時差あり） ──
+    // 2フレーム待ってから transition を有効にする
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        newEls.forEach((card, i) => {
+          card.style.transition =
+            `transform .45s cubic-bezier(.2,.8,.4,1) ${i * 18}ms`;
+          card.style.transform = 'translate(0,0) scale(1)';
+        });
+
+        // 展開完了後にボタンを戻す
+        const totalMs = 450 + (newEls.length - 1) * 18 + 60;
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.style.opacity = '';
+        }, totalMs);
+      });
+    });
+  }, 370);
 }
 
 // 22枚を円形に配置
