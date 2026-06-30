@@ -333,13 +333,13 @@ ob_start();
     $nextUrl='/articles/shichu/mizunoe/';
     $nextTitle='壬（みずのえ）';
     $listTitle='十干一覧';
-    $listUrl='/articles/shichu/';
+    $listUrl='/articles/shichu/#jikkan';
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
 
     <?php
     $relatedItems=[
-      ['label'=>'四柱推命解説','title'=>'四柱推命の基本をわかりやすく解説 →','url'=>'/articles/shichu/'],
+      ['label'=>'四柱推命解説','title'=>'四柱推命の基本をわかりやすく解説 →','url'=>'/articles/shichu/#jikkan'],
       ['label'=>'四柱推命','title'=>'四柱推命で日干を調べる →','url'=>'/shichu'],
       ['label'=>'算命学とは','title'=>'十大主星の読み方を解説 →','url'=>'/articles/sanmei/'],
     ];

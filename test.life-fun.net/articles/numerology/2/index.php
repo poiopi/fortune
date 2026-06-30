@@ -220,13 +220,13 @@ ob_start();
   $nextUrl='/articles/numerology/3/';
   $nextTitle='運命数3：表現者';
   $listTitle='運命数一覧';
-  $listUrl='/articles/numerology/';
+  $listUrl='/articles/numerology/#numbers';
   require __DIR__.'/../../../inc/article-nav.php';
   ?>
 
   <?php
   $relatedItems=[
-    ['label'=>'数秘術とは','title'=>'運命数の計算方法と意味を解説 →','url'=>'/articles/numerology/'],
+    ['label'=>'数秘術とは','title'=>'運命数の計算方法と意味を解説 →','url'=>'/articles/numerology/#numbers'],
     ['label'=>'数秘術診断','title'=>'生年月日から運命数を調べる →','url'=>'/numerology'],
     ['label'=>'相性診断','title'=>'星座と数秘術で恋愛・結婚相性を見る →','url'=>'/aisho'],
   ];

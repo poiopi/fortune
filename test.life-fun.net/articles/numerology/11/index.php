@@ -11,8 +11,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/numerology/11/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="数秘術の運命数11（直感者）の意味を解説。直感・霊性・インスピレーション・使命をキーワードに、性格、恋愛傾向、仕事運、相性をわかりやすく紹介します。">
-  <title>運命数11（直感者）とは？性格・恋愛・仕事・相性を解説 | 占いPortal</title>
+  <meta name="description" content="数秘術の運命数11（直感者（マスターナンバー））の意味を解説。直感・霊性・インスピレーション・使命をキーワードに、性格、恋愛傾向、仕事運、相性をわかりやすく紹介します。">
+  <title>運命数11（直感者（マスターナンバー））とは？性格・恋愛・仕事・相性を解説 | 占いPortal</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -65,12 +65,12 @@ ob_start();
     {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
     {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
     {"@type":"ListItem","position":3,"name":"数秘術とは","item":"https://life-fun.net/articles/numerology/"},
-    {"@type":"ListItem","position":4,"name":"運命数11：直感者","item":"https://life-fun.net/articles/numerology/11/"}
+    {"@type":"ListItem","position":4,"name":"運命数11：直感者（マスターナンバー）","item":"https://life-fun.net/articles/numerology/11/"}
   ]}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"運命数11（直感者）とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"11は「啓示」と「高い感受性」を象徴します。2の協調性を内包しながら、より強い霊性や理想を帯びた数字です。芸術、言葉、癒し、教育、スピリチュアルな表現を通じて、周囲の心を揺り動かす力があります。"}},
+    {"@type":"Question","name":"運命数11（直感者（マスターナンバー））とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"11は「啓示」と「高い感受性」を象徴します。2の協調性を内包しながら、より強い霊性や理想を帯びた数字です。芸術、言葉、癒し、教育、スピリチュアルな表現を通じて、周囲の心を揺り動かす力があります。"}},
     {"@type":"Question","name":"運命数11の恋愛傾向は？","acceptedAnswer":{"@type":"Answer","text":"恋愛では、魂のつながりや深い共鳴を求めます。言葉にならない感覚を大切にするため、表面的な関係では満たされにくいでしょう。相手に理想を重ねすぎず、現実の歩幅も見ることが大切です。"}},
     {"@type":"Question","name":"運命数11に向いている仕事は？","acceptedAnswer":{"@type":"Answer","text":"仕事では、芸術、執筆、音楽、占術、カウンセリング、教育、ヒーリング、企画、社会的メッセージを届ける活動に適性があります。ひらめきを形にする環境が必要です。"}},
     {"@type":"Question","name":"運命数11と相性の良い数字は？","acceptedAnswer":{"@type":"Answer","text":"運命数2や6とは安心感があり、7や9とは精神的に深く響き合えます。1や8とは現実化の力を借りられますが、繊細さを理解してもらう対話が必要です。"}}
@@ -93,7 +93,7 @@ ob_start();
 
   <div class="art-hero">
     <span class="art-label">NUMEROLOGY · LIFE PATH NUMBER 11</span>
-    <h1>運命数11（直感者）とは？<br>性格・恋愛・仕事・相性を解説</h1>
+    <h1>運命数11（直感者（マスターナンバー））とは？<br>性格・恋愛・仕事・相性を解説</h1>
     <p class="art-lead">運命数11は、鋭い直感とインスピレーションを持つマスターナンバーです。目に見える現実だけでなく、空気、象徴、ひらめきからメッセージを受け取り、人に気づきを与える役割を持ちます。</p>
     <div class="art-meta">
       <span>運命数：11</span>
@@ -113,7 +113,7 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">運命数11（直感者）とは</a></li>
+      <li><a href="#about">運命数11（直感者（マスターナンバー））とは</a></li>
       <li><a href="#personality">基本性格</a></li>
       <li><a href="#love">恋愛傾向</a></li>
       <li><a href="#work">仕事運</a></li>
@@ -124,12 +124,12 @@ ob_start();
   </nav>
 
   <section id="about" class="art-section">
-    <h2>運命数11（直感者）とは</h2>
+    <h2>運命数11（直感者（マスターナンバー））とは</h2>
     <p>11は「啓示」と「高い感受性」を象徴します。2の協調性を内包しながら、より強い霊性や理想を帯びた数字です。芸術、言葉、癒し、教育、スピリチュアルな表現を通じて、周囲の心を揺り動かす力があります。</p>
     <p>感受性が強いぶん、緊張や不安を抱えやすい面もあります。周囲の感情を受け取りすぎると、自分の感覚がわからなくなることもあります。</p>
     <dl class="info-box">
       <div class="info-row"><dt>数字</dt><dd>11</dd></div>
-      <div class="info-row"><dt>キャラ名</dt><dd>直感者</dd></div>
+      <div class="info-row"><dt>キャラ名</dt><dd>直感者（マスターナンバー）</dd></div>
       <div class="info-row"><dt>キーワード</dt><dd>直感・霊性・インスピレーション・使命</dd></div>
       <div class="info-row"><dt>テーマ</dt><dd>運命数11は、鋭い直感とインスピレーションを持つマスターナンバーです。目に見える現実だけでなく、空気、象徴、ひらめきからメッセージを受け取り、人に気づきを与える役割を持ちます。</dd></div>
     </dl>
@@ -188,7 +188,7 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list">
       <details>
-        <summary>運命数11（直感者）とは何ですか？</summary>
+        <summary>運命数11（直感者（マスターナンバー））とは何ですか？</summary>
         <div class="faq-answer">11は「啓示」と「高い感受性」を象徴します。2の協調性を内包しながら、より強い霊性や理想を帯びた数字です。芸術、言葉、癒し、教育、スピリチュアルな表現を通じて、周囲の心を揺り動かす力があります。</div>
       </details>
       <details>
@@ -220,13 +220,13 @@ ob_start();
   $nextUrl='/articles/numerology/22/';
   $nextTitle='運命数22：建設者（マスターナンバー）';
   $listTitle='運命数一覧';
-  $listUrl='/articles/numerology/';
+  $listUrl='/articles/numerology/#numbers';
   require __DIR__.'/../../../inc/article-nav.php';
   ?>
 
   <?php
   $relatedItems=[
-    ['label'=>'数秘術とは','title'=>'運命数の計算方法と意味を解説 →','url'=>'/articles/numerology/'],
+    ['label'=>'数秘術とは','title'=>'運命数の計算方法と意味を解説 →','url'=>'/articles/numerology/#numbers'],
     ['label'=>'数秘術診断','title'=>'生年月日から運命数を調べる →','url'=>'/numerology'],
     ['label'=>'相性診断','title'=>'星座と数秘術で恋愛・結婚相性を見る →','url'=>'/aisho'],
   ];

@@ -156,12 +156,12 @@ ob_start();
   </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
-  $prevUrl='/articles/sanmei/ryuko/';$prevTitle='龍高星';$nextUrl='';$nextTitle='';$listUrl='/articles/sanmei/';$listTitle='十大主星 一覧';
+  $prevUrl='/articles/sanmei/ryuko/';$prevTitle='龍高星';$nextUrl='';$nextTitle='';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';
   require __DIR__.'/../../../inc/article-nav.php';
   ?>
   <?php
   $relatedItems=[
-    ['label'=>'算命学とは','title'=>'元命・主星・従星の読み方を解説 →','url'=>'/articles/sanmei/'],
+    ['label'=>'算命学とは','title'=>'元命・主星・従星の読み方を解説 →','url'=>'/articles/sanmei/#genme'],
     ['label'=>'龍高星','title'=>'探求の星・龍高星を徹底解説 →','url'=>'/articles/sanmei/ryuko/'],
     ['label'=>'算命学で鑑定する','title'=>'三星と五行バランスを無料で算出 →','url'=>'/sanmei'],
   ];
