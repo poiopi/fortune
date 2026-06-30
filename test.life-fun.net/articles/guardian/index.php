@@ -192,31 +192,31 @@ require __DIR__.'/../../inc/article-cta.php';
 
     <p class="cat-heading">先祖霊系</p>
     <div class="type-grid">
-      <span class="type-card no-link"><span class="type-emoji">⚔️</span><span class="type-name">武家の先祖霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">⛩️</span><span class="type-name">巫女の先祖霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">☯️</span><span class="type-name">陰陽師の先祖霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🪷</span><span class="type-name">僧侶の先祖霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🏺</span><span class="type-name">土着の先祖霊</span><span class="type-cat">解説準備中</span></span>
+      <a href="/articles/guardian/buke-senzo/" class="type-card"><span class="type-emoji">⚔️</span><span class="type-name">武家の先祖霊</span><span class="type-cat">先祖霊系</span></a>
+      <a href="/articles/guardian/miko-senzo/" class="type-card"><span class="type-emoji">⛩️</span><span class="type-name">巫女の先祖霊</span><span class="type-cat">先祖霊系</span></a>
+      <a href="/articles/guardian/onmyoji-senzo/" class="type-card"><span class="type-emoji">☯️</span><span class="type-name">陰陽師の先祖霊</span><span class="type-cat">先祖霊系</span></a>
+      <a href="/articles/guardian/sou-senzo/" class="type-card"><span class="type-emoji">🪷</span><span class="type-name">僧侶の先祖霊</span><span class="type-cat">先祖霊系</span></a>
+      <a href="/articles/guardian/dochaku-senzo/" class="type-card"><span class="type-emoji">🏺</span><span class="type-name">土着の先祖霊</span><span class="type-cat">先祖霊系</span></a>
     </div>
 
     <p class="cat-heading">精霊系</p>
     <div class="type-grid">
-      <span class="type-card no-link"><span class="type-emoji">🌿</span><span class="type-name">大地の精霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🌬️</span><span class="type-name">風の精霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🔥</span><span class="type-name">炎の守護者</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🌊</span><span class="type-name">海の守護者</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">💚</span><span class="type-name">癒しの精霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🌑</span><span class="type-name">闇の精霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">⭐</span><span class="type-name">星の使者</span><span class="type-cat">解説準備中</span></span>
+      <a href="/articles/guardian/daichi/" class="type-card"><span class="type-emoji">🌿</span><span class="type-name">大地の精霊</span><span class="type-cat">精霊系</span></a>
+      <a href="/articles/guardian/kaze/" class="type-card"><span class="type-emoji">🌬️</span><span class="type-name">風の精霊</span><span class="type-cat">精霊系</span></a>
+      <a href="/articles/guardian/honoo/" class="type-card"><span class="type-emoji">🔥</span><span class="type-name">炎の守護者</span><span class="type-cat">精霊系</span></a>
+      <a href="/articles/guardian/umi/" class="type-card"><span class="type-emoji">🌊</span><span class="type-name">海の守護者</span><span class="type-cat">精霊系</span></a>
+      <a href="/articles/guardian/iyashi/" class="type-card"><span class="type-emoji">💚</span><span class="type-name">癒しの精霊</span><span class="type-cat">精霊系</span></a>
+      <a href="/articles/guardian/yami/" class="type-card"><span class="type-emoji">🌑</span><span class="type-name">闇の精霊</span><span class="type-cat">精霊系</span></a>
+      <a href="/articles/guardian/hoshi/" class="type-card"><span class="type-emoji">⭐</span><span class="type-name">星の使者</span><span class="type-cat">精霊系</span></a>
     </div>
 
     <p class="cat-heading">神格・天界系</p>
     <div class="type-grid">
-      <span class="type-card no-link"><span class="type-emoji">🦊</span><span class="type-name">白狐の精霊</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🔥</span><span class="type-name">鳳凰の守護者</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">👼</span><span class="type-name">天女・天使</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">🌙</span><span class="type-name">月の女神</span><span class="type-cat">解説準備中</span></span>
-      <span class="type-card no-link"><span class="type-emoji">☀️</span><span class="type-name">太陽の神使</span><span class="type-cat">解説準備中</span></span>
+      <a href="/articles/guardian/hakko/" class="type-card"><span class="type-emoji">🦊</span><span class="type-name">白狐の精霊</span><span class="type-cat">神格・天界系</span></a>
+      <a href="/articles/guardian/hoo/" class="type-card"><span class="type-emoji">🔥</span><span class="type-name">鳳凰の守護者</span><span class="type-cat">神格・天界系</span></a>
+      <a href="/articles/guardian/tenshi/" class="type-card"><span class="type-emoji">👼</span><span class="type-name">天女・天使</span><span class="type-cat">神格・天界系</span></a>
+      <a href="/articles/guardian/tsuki/" class="type-card"><span class="type-emoji">🌙</span><span class="type-name">月の女神</span><span class="type-cat">神格・天界系</span></a>
+      <a href="/articles/guardian/taiyou/" class="type-card"><span class="type-emoji">☀️</span><span class="type-name">太陽の神使</span><span class="type-cat">神格・天界系</span></a>
     </div>
   </section>
 
