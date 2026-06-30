@@ -225,14 +225,14 @@ ob_start();
   $prevTitle = '';
   $nextUrl   = '/articles/sanmei/sekimon/';
   $nextTitle = '石門星';
-  $listUrl   = '/articles/sanmei/';
+  $listUrl   = '/articles/sanmei/#genme';
   $listTitle = '十大主星 一覧';
   require __DIR__.'/../../../inc/article-nav.php';
   ?>
 
   <?php
   $relatedItems = [
-    ['label'=>'算命学とは', 'title'=>'元命・主星・従星の読み方を解説 →', 'url'=>'/articles/sanmei/'],
+    ['label'=>'算命学とは', 'title'=>'元命・主星・従星の読み方を解説 →', 'url'=>'/articles/sanmei/#genme'],
     ['label'=>'四柱推命とは', 'title'=>'命式・十神・大運の読み方を解説 →', 'url'=>'/articles/shichu/'],
     ['label'=>'算命学で鑑定する', 'title'=>'三星と五行バランスを無料で算出 →', 'url'=>'/sanmei'],
   ];
