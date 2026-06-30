@@ -397,6 +397,22 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 #google_translate_element .goog-te-gadget select{background:rgba(6,4,16,.9);color:#8a7db5;border:1px solid rgba(160,130,220,.3);border-radius:6px;font-size:.65rem;padding:.15rem .3rem;cursor:pointer}
 .goog-te-banner-frame{display:none!important}
 body{top:0!important}
+/* ══ 三星鑑定について ══ */
+.about-box{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:1.6rem;margin:2rem 0}
+.about-box h2{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--gold-lt);letter-spacing:.1em;margin-bottom:1.1rem;padding-bottom:.7rem;border-bottom:1px solid var(--border)}
+.about-item{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:.9rem}
+.about-item:last-child{margin-bottom:0}
+.about-item span{font-size:1.1rem;flex-shrink:0;margin-top:.1rem}
+.about-item p{font-size:.86rem;color:rgba(232,226,245,.72);line-height:1.85}
+
+/* ══ ローディング ══ */
+#loading-overlay{display:none;position:fixed;inset:0;background:rgba(6,4,16,.92);z-index:500;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;backdrop-filter:blur(8px)}
+.loader-box{text-align:center}
+.crystal{font-size:3rem;animation:crystalPulse 1.2s ease-in-out infinite}
+@keyframes crystalPulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 8px rgba(201,168,76,.4))}50%{transform:scale(1.12);filter:drop-shadow(0 0 20px rgba(201,168,76,.8))}}
+.loading-text{font-family:var(--ff-serif);font-size:1.1rem;color:var(--gold-lt);letter-spacing:.12em;margin-top:.5rem}
+.loading-sub{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);letter-spacing:.1em;margin-top:.3rem}
+
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:3rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -597,6 +613,14 @@ footer a:hover{color:var(--gold)}
   </section>
   <?php endif; ?>
 
+  <!-- 三星鑑定について -->
+  <div class="about-box">
+    <h2>三星鑑定について</h2>
+    <div class="about-item"><span>✨</span><p>占いPortalの「三星鑑定」は、西洋占星術・タロット・四柱推命を組み合わせた無料の統合鑑定サービスです。</p></div>
+    <div class="about-item"><span>🔮</span><p>お名前（ニックネーム可）と生年月日を入力するだけで、簡単に鑑定結果をお楽しみいただけます。</p></div>
+    <div class="about-item"><span>🌙</span><p>本サービスはエンターテインメントを目的とした占いコンテンツです。結果は楽しみや気づきの参考としてご活用ください。</p></div>
+  </div>
+
   <!-- 他のページへ -->
   <div class="nav-section">
     <h3>✦ 他の占いも試してみる ✦</h3>
@@ -621,7 +645,19 @@ footer a:hover{color:var(--gold)}
   <p>&copy; <?= date('Y') ?> 占いPortal</p>
 </footer>
 
+<!-- ローディングオーバーレイ -->
+<div id="loading-overlay">
+  <div class="loader-box">
+    <div class="crystal">🔮</div>
+    <div class="loading-text">鑑定中…</div>
+    <div class="loading-sub">星々からのメッセージを受信しています</div>
+  </div>
+</div>
+
 <script>
+document.querySelector('form').addEventListener('submit', function(){
+  document.getElementById('loading-overlay').style.display = 'flex';
+});
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
