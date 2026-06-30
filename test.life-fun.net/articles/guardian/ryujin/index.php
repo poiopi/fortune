@@ -203,8 +203,8 @@ ob_start();
     $prevTitle = null;
     $prevUrl   = null;
     $prevLabel = null;
-    $nextTitle = null;
-    $nextUrl   = null;
+    $nextTitle = '白狐の精霊';
+    $nextUrl   = '/articles/guardian/hakko/';
     $nextLabel = null;
     require __DIR__.'/../../../inc/article-nav.php';
     ?>

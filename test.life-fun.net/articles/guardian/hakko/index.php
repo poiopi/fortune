@@ -94,8 +94,8 @@ ob_start();
     <?php
     $listTitle = '守護霊タイプ一覧';
     $listUrl   = '/articles/guardian/#type-list';
-    $prevTitle = null; $prevUrl = null; $prevLabel = null;
-    $nextTitle = null; $nextUrl = null; $nextLabel = null;
+    $prevTitle = '龍神'; $prevUrl = '/articles/guardian/ryujin/'; $prevLabel = null;
+    $nextTitle = '鳳凰の守護者'; $nextUrl = '/articles/guardian/hoo/'; $nextLabel = null;
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
   </section>

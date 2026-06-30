@@ -94,8 +94,8 @@ ob_start();
     <?php
     $listTitle = '守護霊タイプ一覧';
     $listUrl   = '/articles/guardian/#type-list';
-    $prevTitle = null; $prevUrl = null; $prevLabel = null;
-    $nextTitle = null; $nextUrl = null; $nextLabel = null;
+    $prevTitle = '武家の先祖霊'; $prevUrl = '/articles/guardian/buke-senzo/'; $prevLabel = null;
+    $nextTitle = '陰陽師の先祖霊'; $nextUrl = '/articles/guardian/onmyoji-senzo/'; $nextLabel = null;
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
   </section>
