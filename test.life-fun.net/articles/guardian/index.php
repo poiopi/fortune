@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/guardian/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="守護霊・守護獣とは何か、その役割と種類、守護霊診断の楽しみ方をわかりやすく解説。">
+  <meta name="description" content="守護霊・守護獣とは何か、その役割と種類、守護霊診断の楽しみ方をわかりやすく解説。龍神・白狐・鳳凰・天使など20種類の守護霊タイプ別解説も。">
   <title>守護霊診断とは？守護霊・守護獣の意味をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -57,11 +57,6 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  
-  
-  
-  
-  
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
   .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
@@ -81,12 +76,19 @@ ob_start();
   .faq-item.open .faq-q::after{transform:rotate(45deg)}
   .faq-a{font-size:.88rem;color:#444;line-height:1.85;padding:0 1.1rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
-  
-  
-  
-  
-  
-.al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
+
+  /* タイプグリッド */
+  .cat-heading{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin:1.75rem 0 .5rem}
+  .type-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.65rem}
+  .type-card{display:flex;flex-direction:column;align-items:center;gap:.35rem;padding:.9rem .75rem;border-radius:12px;border:1px solid var(--border);background:#fff;text-decoration:none;color:var(--text);transition:border-color .2s,box-shadow .2s;text-align:center}
+  .type-card:hover{border-color:var(--accent-lt);box-shadow:0 2px 12px rgba(124,77,206,.1)}
+  .type-card.no-link{cursor:default;opacity:.5}
+  .type-card.no-link:hover{border-color:var(--border);box-shadow:none}
+  .type-emoji{font-size:1.8rem;line-height:1}
+  .type-name{font-family:var(--ff-serif);font-size:.88rem;font-weight:600;line-height:1.4}
+  .type-cat{font-family:var(--ff-mono);font-size:.58rem;letter-spacing:.08em;color:var(--muted)}
+
+  .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
   </style>
 
@@ -148,6 +150,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <ol>
       <li><a href="#about">守護霊とは</a></li>
       <li><a href="#types">守護霊の種類</a></li>
+      <li><a href="#type-list">守護霊タイプ一覧</a></li>
       <li><a href="#beast">守護獣とは</a></li>
       <li><a href="#howto">守護霊診断の楽しみ方</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -174,6 +177,49 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>特定の宗教に属さない普遍的な光の存在として語られることもあります。個人の信仰や世界観によって捉え方は異なりますが、愛と調和のエネルギーを持つ存在として描かれることが多いです。</p>
   </section>
 
+  <section class="art-section" id="type-list">
+    <h2>守護霊タイプ一覧</h2>
+    <p>当サイトの守護霊診断では、生年月日をもとに20種類の守護霊タイプを判定します。各タイプの詳しい解説は個別ページでご覧いただけます。</p>
+
+    <p class="cat-heading">龍神系</p>
+    <div class="type-grid">
+      <a href="/articles/guardian/ryujin/" class="type-card">
+        <span class="type-emoji">🐲</span>
+        <span class="type-name">龍神</span>
+        <span class="type-cat">天龍・水龍・金龍</span>
+      </a>
+    </div>
+
+    <p class="cat-heading">先祖霊系</p>
+    <div class="type-grid">
+      <span class="type-card no-link"><span class="type-emoji">⚔️</span><span class="type-name">武家の先祖霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">⛩️</span><span class="type-name">巫女の先祖霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">☯️</span><span class="type-name">陰陽師の先祖霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🪷</span><span class="type-name">僧侶の先祖霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🏺</span><span class="type-name">土着の先祖霊</span><span class="type-cat">解説準備中</span></span>
+    </div>
+
+    <p class="cat-heading">精霊系</p>
+    <div class="type-grid">
+      <span class="type-card no-link"><span class="type-emoji">🌿</span><span class="type-name">大地の精霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🌬️</span><span class="type-name">風の精霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🔥</span><span class="type-name">炎の守護者</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🌊</span><span class="type-name">海の守護者</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">💚</span><span class="type-name">癒しの精霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🌑</span><span class="type-name">闇の精霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">⭐</span><span class="type-name">星の使者</span><span class="type-cat">解説準備中</span></span>
+    </div>
+
+    <p class="cat-heading">神格・天界系</p>
+    <div class="type-grid">
+      <span class="type-card no-link"><span class="type-emoji">🦊</span><span class="type-name">白狐の精霊</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🔥</span><span class="type-name">鳳凰の守護者</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">👼</span><span class="type-name">天女・天使</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">🌙</span><span class="type-name">月の女神</span><span class="type-cat">解説準備中</span></span>
+      <span class="type-card no-link"><span class="type-emoji">☀️</span><span class="type-name">太陽の神使</span><span class="type-cat">解説準備中</span></span>
+    </div>
+  </section>
+
   <section class="art-section" id="beast">
     <h2>守護獣とは</h2>
     <p>守護獣（しゅごじゅう）とは、動物の霊的存在または神聖な動物がその人を守護するという概念です。日本の神社では狐（稲荷社）・狛犬・龍・鹿などが神使（かみつかい）として知られており、特定の神様の使いがその人を守るという考え方に基づいています。</p>
@@ -183,7 +229,7 @@ require __DIR__.'/../../inc/article-cta.php';
 
   <section class="art-section" id="howto">
     <h2>守護霊診断の楽しみ方</h2>
-    <p>守護霊診断の結果は「自分を支える見えない力の性質」として受け取るのがおすすめです。守護霊タイプや守護獣のキャラクターを知ることで、自分の強みや得意な领域、逆境での向き合い方のヒントが得られます。</p>
+    <p>守護霊診断の結果は「自分を支える見えない力の性質」として受け取るのがおすすめです。守護霊タイプや守護獣のキャラクターを知ることで、自分の強みや得意な領域、逆境での向き合い方のヒントが得られます。</p>
     <p>たとえば守護霊が「先祖霊（家族運を司る）」タイプなら、家族や身近な人との縁を大切にすることで運気が上がるというサインとして解釈できます。守護獣が「龍（変化と上昇）」なら、変化を恐れず飛び込む行動力が開運の鍵になるかもしれません。</p>
     <p>信じるか信じないかよりも「こんな見方もできるのか」という発見を楽しむ気持ちで受け取ってみてください。日々の生活の中で守護の存在を意識することで、感謝と穏やかさが生まれるという体験をする方も少なくありません。</p>
   </section>
@@ -208,7 +254,7 @@ require __DIR__.'/../../inc/article-cta.php';
         <div class="faq-a">人生のステージや課題の変化によって守護霊が変わる・複数の守護霊が入れ替わるという説もあります。一方で一生を通じて同じ守護霊が見守るという考え方もあり、流派によって異なります。</div>
       </div>
     </div>
-    </section>
+  </section>
 
   <?php require __DIR__.'/../../inc/article-cta.php'; ?>
 
@@ -228,7 +274,6 @@ require __DIR__.'/../../inc/article-cta.php';
 
 </div>
 
-
 <script>
 function toggleFaq(el){
   const item = el.parentElement;
@@ -243,4 +288,3 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'guardian');
 ?>
-
