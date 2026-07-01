@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>六白金星はどんな性格ですか？</div><div class='faq-a'>誇り高く完璧主義で統率力がある星です。高い理想と強い意志を持ち、組織をまとめるリーダーシップがあります。天運を持つとされ、晩年に大きな成功を収めることが多いとされます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>六白金星の吉方位は？</div><div class='faq-a'>年・月の九星盤によって変わります。当サイトの九星気学診断で生年月日を入力すると確認できます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>六白金星と相性の良い星は？</div><div class='faq-a'>土生金の関係から二黒土星・五黄土星・八白土星との相性が良いとされます。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>六白金星は九星気学の第6星。金の気が示す統率・完璧主義・天・リーダーが基本キーワード。</li>
+      <li>高い理想と完璧主義を持ち、組織の長として頂点を目指す気質。</li>
+      <li>土星（二黒・五黄・八白）との相性が良く（土生金）、火星（九紫）とは注意（火剋金）。</li>
+      <li>経営・管理職・法律・金融など、秩序と権威が求められる分野が向いている。</li>
+      <li>柔軟性を意識し、完璧主義を手放す瞬間を作ることが開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

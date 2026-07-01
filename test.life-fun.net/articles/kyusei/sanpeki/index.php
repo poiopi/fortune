@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>三碧木星はどんな性格ですか？</div><div class='faq-a'>行動力があり積極的、独創的なアイデアと情熱を持つタイプです。スピードを重視し思い立ったらすぐ動く推進力がありますが、継続力が弱点になることがあります。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>三碧木星の吉方位は？</div><div class='faq-a'>年・月の九星盤によって変わります。当サイトの九星気学診断で生年月日を入力すると確認できます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>三碧木星と相性の良い星は？</div><div class='faq-a'>水生木の関係から一白水星との相性が良いとされます。同じ木星（四緑木星）とも価値観が合いやすいです。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>三碧木星は九星気学の第3星。木の気が示す行動力・情熱・先駆者・挑戦が基本キーワード。</li>
+      <li>スピード感と直感力で真っ先に動く、九星随一のチャレンジャー気質。</li>
+      <li>水星（一白）との相性が良く（水生木）、金星（六白・七赤）とは摩擦が生まれやすい（金剋木）。</li>
+      <li>起業・営業・クリエイティブ・芸術など、スピードと発想力が活きる分野が向いている。</li>
+      <li>新しいことに飛び込む経験の積み重ねが開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

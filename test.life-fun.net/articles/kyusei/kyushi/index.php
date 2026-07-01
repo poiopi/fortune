@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>九紫火星はどんな性格ですか？</div><div class='faq-a'>華やかで感受性が豊か、直感力と美意識に優れたタイプです。太陽のような輝く存在感と、時代の変化を先取りする感覚を持ちます。名誉・評判との縁が深い星とされます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>九紫火星の吉方位は？</div><div class='faq-a'>年・月の九星盤によって変わります。当サイトの九星気学診断で生年月日を入力すると確認できます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>九紫火星と相性の良い星は？</div><div class='faq-a'>木生火の関係から三碧木星・四緑木星との相性が良いとされます。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>九紫火星は九星気学の第9星・最終星。火の気が示す情熱・明るさ・直感・美的センスが基本キーワード。</li>
+      <li>輝きと存在感を持ち、人々を引きつけるカリスマ的な魅力がある。</li>
+      <li>木星（三碧・四緑）との相性が良く（木生火）、水星（一白）とは注意（水剋火）。</li>
+      <li>芸術・ファッション・広報・政治など、表舞台で輝ける分野が向いている。</li>
+      <li>感謝の気持ちを持ち、自分だけでなく周囲も照らす意識が開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

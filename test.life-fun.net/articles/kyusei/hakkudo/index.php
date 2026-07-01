@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>八白土星はどんな性格ですか？</div><div class='faq-a'>誠実で粘り強く、長期的な視点で物事を積み上げるタイプです。普段は穏やかですが、決断したときの変革力は大きいです。若い頃の苦労が中年以降の大成につながる星とされます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>八白土星の吉方位は？</div><div class='faq-a'>年・月の九星盤によって変わります。当サイトの九星気学診断で生年月日を入力すると確認できます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>八白土星と相性の良い星は？</div><div class='faq-a'>火生土の関係から九紫火星との相性が良いとされます。同じ土星（二黒・五黄）とも安定した関係を築きやすいです。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>八白土星は九星気学の第8星。土の気が示す変革・継承・停止と変化・山が基本キーワード。</li>
+      <li>じっくり蓄積して一気に変化する山のような気質。世代をまたいだ仕事や伝統に縁がある。</li>
+      <li>火星（九紫）との相性が良く（火生土）、木星（三碧・四緑）とは摩擦が生まれやすい（木剋土）。</li>
+      <li>不動産・伝統工芸・家業・継承事業など、積み重ねと変革を兼ねた分野が向いている。</li>
+      <li>焦らずタイミングを見極めて動くことが開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

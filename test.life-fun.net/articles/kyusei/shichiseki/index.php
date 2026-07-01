@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>七赤金星はどんな性格ですか？</div><div class='faq-a'>明るく社交的で話術に優れた楽天家です。人を楽しませることが得意で、金運との縁が深い星とされます。飲食や人前に立つ仕事で才能を発揮しやすいです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>七赤金星の吉方位は？</div><div class='faq-a'>年・月の九星盤によって変わります。当サイトの九星気学診断で生年月日を入力すると確認できます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>七赤金星と相性の良い星は？</div><div class='faq-a'>土生金の関係から二黒土星・五黄土星・八白土星との相性が良いとされます。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>七赤金星は九星気学の第7星。金の気が示す社交・弁が立つ・楽しむ・喜びが基本キーワード。</li>
+      <li>明るく社交的で場を盛り上げる、九星随一のエンターテイナー気質。</li>
+      <li>土星（二黒・五黄・八白）との相性が良く（土生金）、火星（九紫）とは注意（火剋金）。</li>
+      <li>接客・芸能・飲食・コンサルタントなど、人を喜ばせる仕事が向いている。</li>
+      <li>感謝を言葉にして伝えること・楽しさを追求することが開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

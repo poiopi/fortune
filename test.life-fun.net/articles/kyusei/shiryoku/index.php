@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>四緑木星はどんな性格ですか？</div><div class='faq-a'>社交的で調和を大切にするタイプです。誰とでも自然に馴染める適応力があり、人と人をつなぐ橋渡し役として活躍します。旅や移動との縁も深い星です。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>四緑木星の吉方位は？</div><div class='faq-a'>年・月の九星盤によって変わります。当サイトの九星気学診断で生年月日を入力すると確認できます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>四緑木星と相性の良い星は？</div><div class='faq-a'>水生木の関係から一白水星との相性が良く、同じ木星の三碧木星とも価値観が合います。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>四緑木星は九星気学の第4星。木の気が示すコミュニケーション・調和・柔軟・旅が基本キーワード。</li>
+      <li>人と人をつなぐ橋渡し役。風のように広い人脈と情報網を持つ。</li>
+      <li>水星（一白）との相性が良く（水生木）、金星（六白・七赤）とは摩擦が生まれやすい（金剋木）。</li>
+      <li>貿易・外交・営業・教育・メディアなど、人とのつながりを活かす仕事が向いている。</li>
+      <li>移動・旅行・新しい出会いが運を開くポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
