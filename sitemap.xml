@@ -237,6 +237,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://life-fun.net/articles/kyusei/ippaku/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/nikoku/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/sanpeki/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/shiryoku/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/goko/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/roppaku/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/shichiseki/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/hakkudo/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://life-fun.net/articles/kyusei/kyushi/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <url>
     <loc>https://life-fun.net/articles/numerology/</loc>
