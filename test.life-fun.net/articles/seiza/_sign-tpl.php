@@ -278,8 +278,35 @@ ob_start();
       </div>
     </section>
 
+    <!-- まとめ -->
+    <section class="art-section" id="matome">
+      <h2>まとめ</h2>
+      <ul class="matome-list">
+        <li><?= htmlspecialchars($sign['name']) ?>（<?= htmlspecialchars($sign['period']) ?>）は<?= htmlspecialchars($sign['element_full']) ?>・<?= htmlspecialchars($sign['quality_full']) ?>。守護星は<?= htmlspecialchars($sign['planet']) ?>。</li>
+        <li>強みは<?= htmlspecialchars(implode('・', array_slice($sign['strengths'], 0, 4))) ?>。課題は<?= htmlspecialchars(implode('・', $sign['weaknesses'])) ?>。</li>
+        <li><?= htmlspecialchars($sign['love_highlight']) ?></li>
+        <li><?= htmlspecialchars($sign['work_lead']) ?></li>
+        <li>相性の良い星座：<?= htmlspecialchars($sign['compat_good_signs']) ?>。</li>
+      </ul>
+    </section>
+
     <!-- 記事末尾CTA -->
     <?php $ctaBtn = '今すぐ無料診断 →'; require __DIR__ . '/../../inc/article-cta.php'; ?>
+
+    <!-- 前後ナビ -->
+    <?php
+    $signCount  = count($_ALL_SIGNS);
+    $currentIdx = array_search($sign['slug'], array_column($_ALL_SIGNS, 'slug'));
+    $prevSign   = $currentIdx > 0 ? $_ALL_SIGNS[$currentIdx - 1] : null;
+    $nextSign   = $currentIdx < $signCount - 1 ? $_ALL_SIGNS[$currentIdx + 1] : null;
+    $prevTitle  = $prevSign ? $prevSign['name'] : null;
+    $prevUrl    = $prevSign ? '/articles/seiza/' . $prevSign['slug'] . '/' : null;
+    $nextTitle  = $nextSign ? $nextSign['name'] : null;
+    $nextUrl    = $nextSign ? '/articles/seiza/' . $nextSign['slug'] . '/' : null;
+    $listTitle  = '12星座一覧';
+    $listUrl    = '/articles/seiza/#signs';
+    require __DIR__ . '/../../inc/article-nav.php';
+    ?>
 
     <!-- 他の星座を見る -->
     <section class="art-section" id="other-signs">

@@ -219,6 +219,14 @@ ob_start();
     </div>
   </div>
 
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
@@ -313,6 +321,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>愚者（0番）は始まり・自由・無限の可能性を象徴するタロット最初のカード。</li>
+      <li>正位置では新たな出発・純粋な好奇心・冒険への一歩を促すメッセージ。</li>
+      <li>逆位置では無謀・準備不足・軽率な行動への警告を示す。</li>
+      <li>恋愛では自由で純粋な出会い、仕事では新規プロジェクトへの飛び込みを示唆。</li>
+      <li>ゼロから始める勇気と、今この瞬間を楽しむ姿勢が愚者の本質。</li>
+    </ul>
+  </section>
+
 
   <section class="art-section">
     <?php

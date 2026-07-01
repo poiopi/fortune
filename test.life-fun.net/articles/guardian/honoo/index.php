@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">HONOO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">炎の守護者とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>炎の守護者はどんな人につきますか？</div><div class='faq-a'>情熱的で行動力がある人、強いリーダーシップを持つ人、カリスマ性がある人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>炎の守護者のサインは？</div><div class='faq-a'>情熱的になると止まらない、怒りや興奮の感情が強い、人を引っ張るリーダー役になりやすいなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>明確な目標を持ち、炎や太陽のエネルギーを取り込むことが炎の守護者の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>炎の守護霊は情熱・行動力・浄化を象徴。魂を燃やし不純なものを焼き払う力を持つ。</li>
+      <li>強い情熱と行動力で目標に向かって突き進む、守護霊随一の熱血タイプ。</li>
+      <li>恋愛では激しく情熱的。一度愛したら全力で相手を愛し、燃え上がる関係を好む。</li>
+      <li>起業家・スポーツ選手・料理家・芸術家など、情熱を直接ぶつけられる分野が向いている。</li>
+      <li>炎の浄化力を活かし、感謝と行動を続けることが炎守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

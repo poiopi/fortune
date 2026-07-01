@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>吊るされた男（THE HANGED MAN）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ XII</span><h1>吊るされた男（THE HANGED MAN）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ12番「吊るされた男」は、逆さに吊られながら穏やかに微笑む男のカードです。状況は同じでも、視点を変えれば別の世界が見える——このカードは強制的な停止の中に宝を見つける術を教えます。</p><div class="kw-tags"><span class="kw-tag upright">待機</span><span class="kw-tag upright">試練</span><span class="kw-tag upright">視点の転換</span><span class="kw-tag upright">自発的な犠牲</span><span class="kw-tag upright">悟り</span> <span class="kw-tag reversed">無駄な犠牲</span><span class="kw-tag reversed">停滞</span><span class="kw-tag reversed">犠牲者意識</span></div></div><div class="card-visual"><div class="card-roman">XII</div><div class="card-illust"><img src="/cards/hanged-man.png" alt="吊るされた男"></div><div class="card-en">THE HANGED MAN</div><div class="card-ja">吊るされた男</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>一本の木から逆さに吊られた男の顔は、穏やかです。苦しんでいません。なぜなら彼は自分でそこにいることを選んだから。逆さの視点から見える世界は、普段とまったく違います。右と左が逆になり、上と下が入れ替わる——この強制的な「逆」の体験が、新しい真実への扉を開きます。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は動かず待つことが正解です。この停滞には意味があります。強制的な休止の中に答えが隠されています。「何もできない」ではなく「今は受け取る時」と捉え直してください。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">今は焦らないことが正解です。相手のペースに合わせる忍耐が、今の関係には必要です。押しても引いても進まない時は、ただ待つことが最善です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">一方的な犠牲・献身への疲れを感じているサインです。報われない関係に疑問を持ち始めたなら、その感覚は正しいです。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">今のポジションで学ぶことがまだあります。転職・変化より現状維持が吉です。停滞に見えても、内側で確実に成長しています。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">理不尽な状況に甘んじすぎています。そろそろ声を上げるか、環境を変える行動に移る時です。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">今は守りの時期です。大きな動きより現状維持を。静かに波が来るのを待つことが、長期的な安全につながります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">損切りのタイミングを誤っている可能性があります。「まだ戻るかもしれない」という期待が損失を拡大させているなら、冷静に判断してください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">吊るされた男は悪いカードですか？</div><div class="faq-a">悪いカードではありません。意図的な待機と視点転換を促す、深いカードです。焦りが最大の敵になる時期を示しています。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">吊るされた男の逆位置は？</div><div class="faq-a">無意味な犠牲や停滞のサインです。我慢の期間が終わり、そろそろ動くべき時を示しています。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">吊るされた男が恋愛で出たら？</div><div class="faq-a">正位置は待つことが吉です。焦らず相手のペースに合わせる忍耐が必要な時期です。逆位置は一方的な犠牲への警告です。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>吊られた男（12番）は自己犠牲・視点の転換・待機・悟りを象徴するカード。</li>
+      <li>正位置では自発的な停止・視点を変える必要性・精神的な成長のための試練を示す。</li>
+      <li>逆位置では無駄な犠牲・行動の先延ばし・殉教者意識への警告を示す。</li>
+      <li>恋愛では相手のために身を引く・待つ時期、仕事では戦略的撤退や再考の必要性を示唆。</li>
+      <li>逆さから見ると世界が変わる。手放すことで得るものがある、という逆説の教え。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 吊られた男の意味を読んだら、実際に占ってみましょう';

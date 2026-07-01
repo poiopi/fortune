@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">DOCHAKU-SENZO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">土着の先祖霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>土着の先祖霊はどんな人につきますか？</div><div class='faq-a'>実直で誠実な生き方をする人、地道な努力を続けられる人、地元や家族とのつながりを大切にする人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>土着の先祖霊のサインは？</div><div class='faq-a'>故郷や地元に特別な愛着がある、コツコツした作業が苦にならない、義理人情を大切にするなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>先祖供養と地元とのつながりを大切にすること、日課の継続が土着の先祖霊の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>土着の先祖霊は土地・縁・伝統を守る守護霊。生まれ育った土地と深い縁を持つ。</li>
+      <li>地域の縁や伝統を大切にし、根を張ってコツコツと生きることに強みを持つ。</li>
+      <li>恋愛では地域や縁を通じた出会いが多く、長く安定した関係を築く。</li>
+      <li>農業・伝統工芸・地方創生・建設など、土地に根ざした仕事が向いている。</li>
+      <li>先祖への感謝と土地への敬意を忘れないことが、土着先祖守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

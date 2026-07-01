@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">BUKE-SENZO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">武家の先祖霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>武家の先祖霊はどんな人につきますか？</div><div class='faq-a'>正義感が強く、誠実な生き方を大切にする人、義理と人情を重んじる人に武家の先祖霊がつくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>武家の先祖霊がついているサインは？</div><div class='faq-a'>理不尽なことへの強い怒りを感じる、義理人情を何より大切にする、困難な状況でも逃げない意志を持つ——これらが武家の先祖霊のサインとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>武家の先祖霊の開運方法は？</div><div class='faq-a'>誠実な行動の積み重ねと先祖供養が基本です。身体を鍛える習慣も守護のエネルギーを高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>武家の先祖霊は誠実・義理・武士道の精神を宿す守護霊。忠義と礼節を重んじる。</li>
+      <li>責任感が強く、義理を大切にし、弱きを助け強きをくじく正義感を持つ。</li>
+      <li>恋愛では誠実で一途。恋人・家族を守ることに全力を尽くすタイプ。</li>
+      <li>自衛官・警察・消防・管理職など、責任と規律が求められる仕事が向いている。</li>
+      <li>誠実さと礼節を忘れず、義理を大切にすることが武家先祖守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';
