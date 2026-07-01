@@ -68,7 +68,8 @@
       "Bash(Test-Path \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\guardian\\\\index.php\")",
       "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\sende\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-sende-fortune\\\\3b5227e7-8153-4060-b5df-951ec6b04e50\\\\scratchpad\\\\fix_guardian.ps1\")",
       "mcp__claude-in-chrome__navigate",
-      "mcp__claude-in-chrome__tabs_context_mcp"
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__claude-in-chrome__computer"
     ]
   }
 }
