@@ -73,7 +73,8 @@
       "PowerShell(\\(Get-Item \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\mbti\\\\_type-tpl.php\"\\).LastWriteTime)",
       "PowerShell(Get-NetTCPConnection -LocalPort 80,443,8080 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalPort,OwningProcess | ForEach-Object { $p = Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue; [PSCustomObject]@{Port=$_.LocalPort; Process=$p.Name; PID=$p.Id} })",
       "PowerShell(netstat -an)",
-      "PowerShell(head -5)"
+      "PowerShell(head -5)",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\sende\\\\fortune\\\\sitemap.xml\" \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\sitemap.xml\" -Force)"
     ]
   }
 }
