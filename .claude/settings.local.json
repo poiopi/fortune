@@ -69,7 +69,11 @@
       "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\sende\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-sende-fortune\\\\3b5227e7-8153-4060-b5df-951ec6b04e50\\\\scratchpad\\\\fix_guardian.ps1\")",
       "mcp__claude-in-chrome__navigate",
       "mcp__claude-in-chrome__tabs_context_mcp",
-      "mcp__claude-in-chrome__computer"
+      "mcp__claude-in-chrome__computer",
+      "PowerShell(\\(Get-Item \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\articles\\\\mbti\\\\_type-tpl.php\"\\).LastWriteTime)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 80,443,8080 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalPort,OwningProcess | ForEach-Object { $p = Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue; [PSCustomObject]@{Port=$_.LocalPort; Process=$p.Name; PID=$p.Id} })",
+      "PowerShell(netstat -an)",
+      "PowerShell(head -5)"
     ]
   }
 }

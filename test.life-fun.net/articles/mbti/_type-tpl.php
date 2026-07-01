@@ -102,12 +102,15 @@ ob_start();
   .trait-item.good{background:#f0fbf4;border-left:3px solid #4caf7d;color:#1a3a2a}
   .trait-item.bad{background:#fff5f5;border-left:3px solid #e57373;color:#3a1a1a}
   /* 相性 */
-  .compat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
-  .compat-box{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem}
-  .compat-label{font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);letter-spacing:.1em;margin-bottom:.5rem}
-  .compat-types{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
-  .compat-type-tag{font-family:var(--ff-mono);font-size:.8rem;background:#ede9fb;color:var(--accent);padding:.2rem .6rem;border-radius:6px;font-weight:500}
-  .compat-reason{font-size:.8rem;color:var(--muted);line-height:1.7}
+  .compat-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
+  .compat-box{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;display:grid;grid-template-columns:auto 1fr;gap:.5rem 1rem;align-items:start}
+  .compat-badge{display:flex;flex-direction:column;align-items:center;gap:.25rem;min-width:56px}
+  .compat-type-tag{font-family:var(--ff-mono);font-size:.85rem;font-weight:500;padding:.3rem .7rem;border-radius:6px;white-space:nowrap}
+  .compat-type-tag.best{background:#e8f5e9;color:#2e7d32}
+  .compat-type-tag.good{background:#e3f2fd;color:#1565c0}
+  .compat-type-tag.caution{background:#fff3e0;color:#e65100}
+  .compat-label-text{font-family:var(--ff-mono);font-size:.6rem;color:var(--muted);letter-spacing:.08em;text-align:center}
+  .compat-reason{font-size:.85rem;color:#444;line-height:1.8;padding-top:.1rem}
   /* FAQ */
   .faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
   .faq-item{border:1px solid var(--border);border-radius:10px;overflow:hidden}
@@ -225,6 +228,9 @@ ob_start();
       <div class="trait-item good">✓ <?= htmlspecialchars($s) ?></div>
       <?php endforeach; ?>
     </div>
+    <?php if(!empty($type['strengths_body'])): ?>
+    <p style="margin-top:1.25rem"><?= htmlspecialchars($type['strengths_body']) ?></p>
+    <?php endif; ?>
   </section>
 
   <section class="art-section" id="weaknesses">
@@ -234,6 +240,9 @@ ob_start();
       <div class="trait-item bad">△ <?= htmlspecialchars($w) ?></div>
       <?php endforeach; ?>
     </div>
+    <?php if(!empty($type['weaknesses_body'])): ?>
+    <p style="margin-top:1.25rem"><?= htmlspecialchars($type['weaknesses_body']) ?></p>
+    <?php endif; ?>
   </section>
 
   <section class="art-section" id="love">
@@ -250,25 +259,16 @@ ob_start();
 
   <section class="art-section" id="compat">
     <h2>相性</h2>
-    <div class="compat-grid">
+    <div class="compat-list">
+      <?php foreach($type['compat'] as $c): ?>
       <div class="compat-box">
-        <div class="compat-label">GOOD MATCH</div>
-        <div class="compat-types">
-          <?php foreach($type['compat_good'] as $ct): ?>
-          <span class="compat-type-tag"><?= htmlspecialchars($ct) ?></span>
-          <?php endforeach; ?>
+        <div class="compat-badge">
+          <span class="compat-type-tag <?= htmlspecialchars($c['level']) ?>"><?= htmlspecialchars($c['type']) ?></span>
+          <span class="compat-label-text"><?= htmlspecialchars($c['label']) ?></span>
         </div>
-        <p class="compat-reason"><?= htmlspecialchars($type['compat_good_reason']) ?></p>
+        <p class="compat-reason"><?= htmlspecialchars($c['reason']) ?></p>
       </div>
-      <div class="compat-box">
-        <div class="compat-label">NEEDS EFFORT</div>
-        <div class="compat-types">
-          <?php foreach($type['compat_caution'] as $ct): ?>
-          <span class="compat-type-tag" style="background:#fff0f0;color:#c0392b"><?= htmlspecialchars($ct) ?></span>
-          <?php endforeach; ?>
-        </div>
-        <p class="compat-reason"><?= htmlspecialchars($type['compat_caution_reason']) ?></p>
-      </div>
+      <?php endforeach; ?>
     </div>
   </section>
 
