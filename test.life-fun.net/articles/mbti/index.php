@@ -187,7 +187,7 @@ require __DIR__.'/../../inc/article-cta.php';
 
     <p class="group-label">🔵 アナリスト（NT）</p>
     <div class="type-grid">
-      <div class="type-card"><div class="type-code">INTJ</div><div class="type-name">建築家</div><div class="type-kw">戦略的・独立・完璧主義</div></div>
+      <a href="/articles/mbti/intj/" class="type-card"><div class="type-code">INTJ</div><div class="type-name">建築家</div><div class="type-kw">戦略的・独立・完璧主義</div></a>
       <div class="type-card"><div class="type-code">INTP</div><div class="type-name">論理学者</div><div class="type-kw">分析的・創造的・内向的</div></div>
       <div class="type-card"><div class="type-code">ENTJ</div><div class="type-name">指揮官</div><div class="type-kw">リーダー・断固・カリスマ</div></div>
       <div class="type-card"><div class="type-code">ENTP</div><div class="type-name">討論者</div><div class="type-kw">革新的・挑戦的・機知</div></div>
