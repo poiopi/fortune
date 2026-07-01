@@ -154,6 +154,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>玉堂星は算命学十大主星の一つ。五行「水性の陰」に属し、知識・伝統・学術がキーワード。</li>
+      <li>深い知識欲と伝統への敬意を持ち、コツコツと学び積み上げていく着実な気質。</li>
+      <li>恋愛では誠実さと思いやりを大切にし、長期的な信頼関係を築こうとする。</li>
+      <li>教育・研究・伝統文化・医療など、専門知識を活かせる分野が向いている。</li>
+      <li>知識を伝える場に立つことで、玉堂星のエネルギーが最大化される。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/ryuko/';$prevTitle='龍高星';$nextUrl='';$nextTitle='';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

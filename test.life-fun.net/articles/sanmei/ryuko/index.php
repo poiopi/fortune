@@ -154,6 +154,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>龍高星は算命学十大主星の一つ。五行「水性の陽」に属し、独創・改革・破壊と創造がキーワード。</li>
+      <li>固定観念を破り、全く新しいものを生み出す革命家タイプ。</li>
+      <li>恋愛では独自の恋愛観を持ち、一般的な形にこだわらない自由な関係を好む。</li>
+      <li>発明・研究・芸術・起業など、全く新しい分野を切り開く仕事が向いている。</li>
+      <li>変化を恐れず前進することが、龍高星の開運のポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/kengyu/';$prevTitle='牽牛星';$nextUrl='/articles/sanmei/gyokudo/';$nextTitle='玉堂星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">TSUKI</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">月の女神とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>月の女神はどんな人につきますか？</div><div class='faq-a'>感受性が豊かで直感を大切にする人、神秘的なものへの関心がある人、芸術的センスを持つ人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>月の女神のサインは？</div><div class='faq-a'>月を見ると特別な感覚がある、満月の夜に感情が高ぶる、夜中に最もアイデアが浮かぶなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>月を眺める習慣と月のサイクルを意識した行動が月の女神の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>月の守護霊は感情・変化・内なる自己を象徴。潮の満ち引きのように繊細に変化する力を持つ。</li>
+      <li>豊かな感情と直感、内なる世界の深さを持つ。月のように周期的に変化しながら成長する。</li>
+      <li>恋愛では繊細で感受性が豊か。相手の感情に深く共鳴し、心のつながりを最も大切にする。</li>
+      <li>芸術・ヒーリング・心理学・占い師など、内面の世界を扱う分野が向いている。</li>
+      <li>月を眺め感情を受け入れ流すことで、月守護のエネルギーが高まる。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

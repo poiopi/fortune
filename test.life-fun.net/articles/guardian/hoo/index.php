@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">HOO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">鳳凰の守護者とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>鳳凰の守護者はどんな人につきますか？</div><div class='faq-a'>試練や挫折を経験しながらも立ち上がり続ける人、変化を恐れない強い魂の持ち主に鳳凰がつくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>鳳凰とフェニックスは同じですか？</div><div class='faq-a'>概念的には近いですが、鳳凰は中国・日本の東洋の霊鳥で、平和と繁栄の象徴でもあります。フェニックスは西洋由来の不死の鳥で、再生のみを象徴します。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>鳳凰守護の人の開運方法は？</div><div class='faq-a'>炎や太陽のエネルギーを取り入れ、過去を手放すことが大切です。試練を成長の機会と捉える姿勢が鳳凰のエネルギーを高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>鳳凰は復活・再生・高貴さを象徴する伝説の霊鳥。困難を超えて蘇る力を与える守護霊。</li>
+      <li>試練を経て真の美しさと強さを開花させる、再生の才能を持つ。</li>
+      <li>恋愛では深く愛し、傷ついても立ち上がる強さを持つ。高貴な美しさで相手を魅了する。</li>
+      <li>芸術・ファッション・精神的なリーダーシップが求められる分野で輝ける。</li>
+      <li>困難を乗り越えるたびに輝きを増す。美しさと誇りを失わないことが開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

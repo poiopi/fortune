@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>死神（DEATH）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ XIII</span><h1>死神（DEATH）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ13番「死神」は、タロットで最も誤解されるカードです。しかし死神が告げるのは「死」ではありません。終わりと始まりを告げる使者として、古いものを手放すことでしか新しいものは来ないという真実を運びます。</p><div class="kw-tags"><span class="kw-tag upright">終わり</span><span class="kw-tag upright">変容</span><span class="kw-tag upright">再生</span><span class="kw-tag upright">手放す</span><span class="kw-tag upright">新しい章</span> <span class="kw-tag reversed">変化への抵抗</span><span class="kw-tag reversed">過去への執着</span><span class="kw-tag reversed">停滞</span></div></div><div class="card-visual"><div class="card-roman">XIII</div><div class="card-illust"><img src="/cards/death.png" alt="死神"></div><div class="card-en">DEATH</div><div class="card-ja">死神</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>骸骨の騎士が白馬に乗り、花を持って進んでいます。彼の前に王も司教も膝をつきます——死は平等にすべてのものに訪れます。しかし白馬のたてがみに咲く白い花は、終わりの中に宿る希望の象徴。このカードを恐れる必要はありません。死神が来るのは、古い自分が終わり、新しい自分が生まれる時です。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>何かが終わろうとしています。それを恐れず受け入れることで、次の扉が開きます。終わりは失敗ではなく、完了です。「手放す勇気」があるとき、人生は次の章へと進みます。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">関係の大きな転換点が来ています。古い関係性のパターンを終わらせ、新しい形へと進化させる時期です。怖くても、流れに従ってください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">終わった関係への執着が、新しい出会いを妨げています。過去を手放すことが、未来への入り口になります。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">今のやり方・ポジション・職場を手放す時が来ているかもしれません。変化の後に必ず新しいチャンスが来ます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">変わるべきなのに変われない状態です。古いやり方への固執が成長を妨げています。思い切った変化が今は必要です。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">古い収入源や無駄な出費の整理が必要です。手放すことで新しいお金の流れが生まれます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">損切りできずに損失が拡大している可能性があります。「まだ戻る」という期待ではなく、現実を直視することが今は必要です。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">死神のカードは本当に死を意味しますか？</div><div class="faq-a">タロットの死神が文字通りの死を意味することはほとんどありません。変容・終わりと始まりの象徴として扱われます。怖がらないでください。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">死神が恋愛で出たら？</div><div class="faq-a">正位置は関係の大きな変化（別れか再生か）を示します。逆位置は終わった関係への執着を表します。どちらも「変化の時」のサインです。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">死神の逆位置は怖い？</div><div class="faq-a">怖くはありません。変化を拒む自分への気づきを促しているカードです。抵抗が強いほど、変化が必要なサインとも言えます。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>死神（13番）は終わりと始まり・変容・手放しを象徴する変化のカード。</li>
+      <li>正位置では古いものの終焉・大きな変化の到来・不要なものを手放す必要性を示す。</li>
+      <li>逆位置では変化への抵抗・終わりを認めない執着・必要な変容の回避への警告を示す。</li>
+      <li>恋愛では関係の終わりや大きな転換点、仕事では古いやり方の終わりと新たな始まりを示唆。</li>
+      <li>死は終わりではなく変容。手放すことで新しい命が芽吹く。これが死神カードの真実。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 死神の意味を読んだら、実際に占ってみましょう';

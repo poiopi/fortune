@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">KAZE</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">風の精霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>風の精霊はどんな人につきますか？</div><div class='faq-a'>好奇心旺盛で新しいことが好きな人、コミュニケーション能力が高い人、変化を楽しめる人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>風の精霊のサインは？</div><div class='faq-a'>新しいことへの関心が尽きない、じっとしているより動いていたい、多くの人と関わりたいと感じるなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>新しい場所への外出と、積極的なコミュニケーションが風の精霊の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>風の守護霊は自由・変化・コミュニケーションを象徴。新しい風を運ぶ存在。</li>
+      <li>自由を愛し、移動や変化を通じて多様な経験を積む。情報を広める才能を持つ。</li>
+      <li>恋愛では束縛を嫌い、互いの自由を尊重し合える関係を好む。</li>
+      <li>メディア・旅行・営業・IT・教育など、情報と移動が活きる分野が向いている。</li>
+      <li>風のように流れに乗りながら、自分の軸を持ち続けることが開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

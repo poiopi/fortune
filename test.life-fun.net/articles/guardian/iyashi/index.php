@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">IYASHI</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">癒しの精霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>癒しの精霊はどんな人につきますか？</div><div class='faq-a'>優しく思いやりがある人、人の悩みを引き受けやすい人、生まれ持った癒しのオーラがある人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>癒しの精霊のサインは？</div><div class='faq-a'>一緒にいると相手が落ち着くと言われる、悩みを打ち明けられることが多い、自然と人の世話を焼いてしまうなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>自分自身を癒す時間を最優先にすることと、緑のある場所での休息が癒しの精霊の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>癒しの守護霊は愛・奉仕・共感を象徴。人の心の傷を和らげる特別な力を与える。</li>
+      <li>高い共感力と愛のエネルギーを持ち、そばにいるだけで安心感を与える存在。</li>
+      <li>恋愛では相手の痛みに寄り添い、心の傷を癒すことができるパートナー。</li>
+      <li>看護・福祉・セラピー・カウンセリングなど、人の心身を癒す分野が向いている。</li>
+      <li>自分自身も癒しの時間を大切にすることが、癒し守護のエネルギーを保つポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

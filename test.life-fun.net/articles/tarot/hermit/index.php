@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>隠者（THE HERMIT）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ IX</span><h1>隠者（THE HERMIT）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ9番「隠者」は、山頂でランタンを掲げる老賢者のカードです。答えは外ではなく内側にある。一人の時間こそが最大の師——このカードはあなたに静かに内を見るよう促します。</p><div class="kw-tags"><span class="kw-tag upright">内省</span><span class="kw-tag upright">孤独</span><span class="kw-tag upright">探求</span><span class="kw-tag upright">知恵</span><span class="kw-tag upright">道標</span> <span class="kw-tag reversed">孤立</span><span class="kw-tag reversed">引きこもり</span><span class="kw-tag reversed">孤独への恐れ</span></div></div><div class="card-visual"><div class="card-roman">IX</div><div class="card-illust"><img src="/cards/hermit.png" alt="隠者"></div><div class="card-en">THE HERMIT</div><div class="card-ja">隠者</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>雪深い山頂で、老人がランタンを掲げています。彼は迷子ではありません。意図的にここにいる。世界の喧騒から離れ、自分の内側に向かっているのです。隠者のランタンは「自分だけの光」——誰かの真実ではなく、あなた自身の真実を照らすために在ります。一人でいることを恐れずにいられる時、人は最も深く成長します。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は静かに自分と向き合う時です。群れから離れることで真実が見えてきます。この孤独は弱さではなく、選択です。賢者は意図的に一人の時間を作ります。今のあなたもそれができる時期です。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">一人の時間を大切にしてください。自分を深く知ることが良い関係の土台になります。焦らず自分と向き合うことで、次の関係の質が変わります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">相手との心の距離が生まれています。言葉が届かなくなっているなら、まず対話の場を作ることが大切です。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">専門性を深める時期です。一人で集中して取り組む仕事が実を結ぶ。研究・執筆・深い思考を必要とする仕事が吉です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">周囲との連携が取れていない状態です。孤立した判断が機会を遠ざけています。情報共有と対話を意識してください。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">地道な積み上げが安全な時期です。今は守りを固め、着実に蓄えを増やすことを優先してください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">情報収集の怠りが損失を招くリスクがあります。孤立した判断・一人だけの情報で大きな決断をしないことが大切です。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">隠者は孤独を意味するカード？</div><div class="faq-a">孤独を意味しますが、ネガティブではありません。賢者の意志的な一人の時間として、自己成長の機会を示しています。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">隠者が恋愛で出たら？</div><div class="faq-a">正位置は自分を知ることが良い関係の土台になる時期です。逆位置は相手との心理的な距離への警告です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">隠者と月の違いは？</div><div class="faq-a">隠者は意志的な内省、月は無意識の深みへの迷い込みです。どちらも内面を扱いますが、その方向性が異なります。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>隠者（9番）は内省・孤独・智慧の探求・精神的な成熟を象徴するカード。</li>
+      <li>正位置では一人の時間・深い内省・魂の探求・精神的な師を示す。</li>
+      <li>逆位置では孤立・引きこもり・孤独への恐れ・内省の拒否への警告を示す。</li>
+      <li>恋愛では一人の時間や自己理解の必要性、仕事では深い研究や専門性の追求を示唆。</li>
+      <li>灯台の光は自分のためではなく他者を照らすもの。内なる光を磨くことが隠者の道。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 隠者の意味を読んだら、実際に占ってみましょう';
