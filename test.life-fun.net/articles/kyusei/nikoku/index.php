@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>二黒土星はどんな性格ですか？</div><div class='faq-a'>勤勉で誠実、人を支えることが好きな奉仕精神旺盛なタイプです。忍耐力と持続力は九星の中でも際立っています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>二黒土星の吉方位は？</div><div class='faq-a'>年・月の九星盤によって変わります。当サイトの九星気学診断で生年月日を入力すると確認できます。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>二黒土星と相性の良い星は？</div><div class='faq-a'>火生土の関係から九紫火星との相性が良いとされます。同じ土星（五黄・八白）とも安定した関係を築きやすいです。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>二黒土星は九星気学の第2星。土の気が示す勤勉・堅実・母性・奉仕が基本キーワード。</li>
+      <li>縁の下の力持ちとして周囲を支えることに喜びを見出す、母なる大地のような存在。</li>
+      <li>九紫火星（火生土）との相性が良く、三碧・四緑木星（木剋土）とは摩擦が生まれやすい。</li>
+      <li>介護・保育・農業・サポート職など人や物を丁寧に扱う仕事が向いている。</li>
+      <li>土に触れること・NOと言う練習が開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

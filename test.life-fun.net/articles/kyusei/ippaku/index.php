@@ -263,8 +263,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     </div>
   </section>
 
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>一白水星は九星気学の第1星。水の気が示す柔軟・知性・流動性・忍耐が基本キーワード。</li>
+      <li>表面の穏やかさの奥に強い意志と忍耐力を持つ。じっくり積み上げて大きな成果を出すタイプ。</li>
+      <li>六白・七赤金星（金生水）との相性が良く、土星（二黒・五黄・八白）とは摩擦が生まれやすい。</li>
+      <li>研究・文筆・相談業など知性と感性を活かせる職種が向いている。</li>
+      <li>水に触れる習慣・インプットの時間確保が開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
-
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -276,8 +286,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 
 </div>
 

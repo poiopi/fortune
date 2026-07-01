@@ -136,7 +136,18 @@ require __DIR__.'/../../../inc/article-cta.php';
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>五黄土星はどんな性格ですか？</div><div class='faq-a'>九星の中心・帝王の星。カリスマと強運を持つ反面、波乱も多いとされます。困難を乗り越えるたびに成長する再生力が最大の強みです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>五黄土星の吉方位は？</div><div class='faq-a'>五黄土星は「五黄殺」の影響がある特殊な星です。年・月ごとに変わる吉方位を診断ツールで確認することをおすすめします。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>五黄土星は最強の星ですか？</div><div class='faq-a'>最大の吉凶を持つ星ですが「最強」ではありません。エネルギーが強いほど使い方次第で結果が大きく変わります。</div></div></div>
   </section>
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>五黄土星は九星気学の第5星・中心星。破壊と創造・カリスマ・支配力が基本キーワード。</li>
+      <li>九星の中心に位置する強大なエネルギー。成功も失敗も人一倍大きくなる傾向がある。</li>
+      <li>火星（九紫）との相性が良く（火生土）、木星（三碧・四緑）とは摩擦が生まれやすい（木剋土）。</li>
+      <li>経営・政治・リーダー職など、大きな組織を動かす立場で真価を発揮する。</li>
+      <li>謙虚さを忘れず地道に積み上げることが開運のポイント。</li>
+    </ul>
+  </section>
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
+  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
   <section class="art-section" id="related">
     <h2>他の九星を見る</h2>
     <?php
@@ -148,7 +159,6 @@ require __DIR__.'/../../../inc/article-cta.php';
     require __DIR__.'/../../../inc/article-related.php';
     ?>
   </section>
-  <?php require __DIR__.'/../../../inc/article-nav.php'; ?>
 </div>
 <script>function toggleFaq(el){ el.parentElement.classList.toggle('open'); }</script>
 <?php $currentSlug='kyusei'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>

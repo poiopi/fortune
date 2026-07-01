@@ -77,6 +77,20 @@
   .article-nav-center { grid-column: 1 / -1; order: -1; }
 }
 
+/* ── MATOME LIST ── */
+.matome-list {
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin-top: .75rem;
+}
+.matome-list li {
+  font-size: .93rem;
+  line-height: 1.9;
+  color: #333;
+}
+
 /* ── ARTICLE RELATED ── */
 .article-related-grid {
   display: grid;
