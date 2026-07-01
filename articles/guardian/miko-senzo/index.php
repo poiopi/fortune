@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">MIKO-SENZO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">巫女の先祖霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>巫女の先祖霊はどんな人につきますか？</div><div class='faq-a'>感受性が豊かで霊的なものへの親しみがある人、清潔感を大切にする人、穏やかに生きる人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>巫女の先祖霊のサインは？</div><div class='faq-a'>神社や自然の中で特別な安心感を感じる、白い色に縁がある、場の雰囲気を敏感に感じ取れるなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>邪気を祓う方法は？</div><div class='faq-a'>神社参拝・塩を使った浄化・お香を焚く・清潔な環境を保つことが有効とされています。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>巫女の先祖霊は霊性・奉仕・神聖さを宿す守護霊。神と人の間を結ぶ役割を持つ。</li>
+      <li>高い霊感と直感を持ち、場の空気や人の感情を読み取る特別な感受性がある。</li>
+      <li>恋愛では純粋で繊細。相手の心の深いところと共鳴できる精神的な絆を求める。</li>
+      <li>神職・カウンセリング・ヒーリング・芸術など、霊性を活かせる分野が向いている。</li>
+      <li>神社参拝や自然との対話を大切にすることが、巫女先祖守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

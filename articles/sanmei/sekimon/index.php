@@ -183,6 +183,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>石門星は算命学十大主星の一つ。五行「木性の陰」に属し、連帯・グループ・集団調和がキーワード。</li>
+      <li>人と協力し合うことに喜びを感じ、チームの中で調和をもたらす存在。</li>
+      <li>恋愛ではグループの中から縁が育まれやすく、友情から発展するケースが多い。</li>
+      <li>組合・コミュニティ・福祉・教育など、人々をつなぐ分野で才能を発揮する。</li>
+      <li>人との絆を広げながらも自分の意見を持つことが、石門星の成長につながるポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl   = '/articles/sanmei/kansaku/';

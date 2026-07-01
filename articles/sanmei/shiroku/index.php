@@ -154,6 +154,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>司禄星は算命学十大主星の一つ。五行「土性の陰」に属し、貯蓄・家庭・コツコツがキーワード。</li>
+      <li>地道な積み重ねを大切にし、家庭や身近な人を守ることに使命感を持つ。</li>
+      <li>恋愛では安定と安心を求め、長く深い関係を望む家庭的なタイプ。</li>
+      <li>事務・経理・家業・農業・保育など、地道な積み上げが評価される仕事が向いている。</li>
+      <li>自分の「地道さ」を強みとして誇りに思うことが、司禄星の開運のポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/rokuson/';$prevTitle='禄存星';$nextUrl='/articles/sanmei/shaki/';$nextTitle='車騎星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

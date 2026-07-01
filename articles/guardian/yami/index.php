@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">YAMI</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">闇の精霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>闇の精霊はどんな人につきますか？</div><div class='faq-a'>洞察力が鋭い人、物事の本質を見ようとする人、一人の静かな時間が必要な内向的な人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>闇の精霊のサインは？</div><div class='faq-a'>人のウソを感じ取れる、一人でいる時間が好き、表面より本質に興味があるなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>一人の内省の時間と直感を大切にした行動が、闇の精霊の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>闇の守護霊は内省・変容・深さを象徴。光と影の両方を理解する深い知恵を与える。</li>
+      <li>表面より深層を見つめ、変容と再生の力を持つ。闇の中に光を見出す洞察力がある。</li>
+      <li>恋愛では深く真剣。相手の影の部分も含めて受け入れる包容力を持つ。</li>
+      <li>心理学・哲学・探偵・研究者など、深層を掘り下げる分野で才能を発揮する。</li>
+      <li>自分の影と向き合い光に変える作業を続けることが、闇守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

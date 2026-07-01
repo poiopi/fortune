@@ -154,6 +154,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>調舒星は算命学十大主星の一つ。五行「火性の陰」に属し、感性・孤高・芸術がキーワード。</li>
+      <li>繊細な感受性と深い内面世界を持つ完璧主義者。美しいものへのこだわりが強い。</li>
+      <li>恋愛では魂の共鳴を求め、信頼できる相手に深く純粋な愛情を注ぐ。</li>
+      <li>アーティスト・作家・デザイナーなど、感性を直接表現できる職種が向いている。</li>
+      <li>自分の感性を信頼し、信頼できる人と言葉を交わす時間を持つことが開運のポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/houkaku/';$prevTitle='鳳閣星';$nextUrl='/articles/sanmei/rokuson/';$nextTitle='禄存星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

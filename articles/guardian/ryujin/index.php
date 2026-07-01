@@ -83,6 +83,14 @@ ob_start();
     </div>
   </div>
 
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">龍神とは</a></li>
     <li><a href="#types">3種類の龍神</a></li>
@@ -184,6 +192,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>龍神は守護霊の中でも最も力強いとされる存在。変革・力・水の守護がキーワード。</li>
+      <li>強い意志と変化を恐れない魂を持つ人に宿るとされ、天龍・水龍・金龍の3種がある。</li>
+      <li>恋愛では情熱的で一途だが、変化を求めるため刺激のある関係を好む。</li>
+      <li>リーダー職・芸術・スポーツなど、勝負の世界や創造的な分野で力を発揮しやすい。</li>
+      <li>水との縁を大切にし、変化を恐れず行動し続けることが龍神守護の開運のポイント。</li>
+    </ul>
+  </section>
+
 
   <section class="art-section">
     <?php

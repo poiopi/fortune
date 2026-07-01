@@ -154,6 +154,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>牽牛星は算命学十大主星の一つ。五行「金性の陽」に属し、義務・誇り・社会的責任がキーワード。</li>
+      <li>高いプライドと責任感を持ち、社会的なルールや立場を大切にする真面目な気質。</li>
+      <li>恋愛では誠実で礼儀正しいが、プライドから感情表現が苦手になりやすい。</li>
+      <li>公務員・管理職・法律・医療など、社会的責任と規律が求められる職種が向いている。</li>
+      <li>完璧主義を手放し、自分に正直になることが牽牛星の開運のポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/shaki/';$prevTitle='車騎星';$nextUrl='/articles/sanmei/ryuko/';$nextTitle='龍高星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

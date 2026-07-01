@@ -158,6 +158,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>鳳閣星は算命学十大主星の一つ。五行「火性の陽」に属し、自由・表現・喜びがキーワード。</li>
+      <li>自由を愛し、人生そのものを楽しむことを大切にする表現者タイプ。</li>
+      <li>恋愛では自然体で相手を楽しませ、束縛されることを極度に嫌う自由人。</li>
+      <li>芸術家・エンターテイナー・クリエイター・教師など、表現を生業にする分野が向いている。</li>
+      <li>「楽しむこと」を仕事の中心に置くことが、鳳閣星の才能を開花させるポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/sekimon/';$prevTitle='石門星';$nextUrl='/articles/sanmei/chousho/';$nextTitle='調舒星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

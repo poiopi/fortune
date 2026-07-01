@@ -152,6 +152,14 @@ ob_start();
     </div>
   </div>
 
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
@@ -238,6 +246,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>魔術師（1番）は意志・技術・創造力を象徴。四大元素を使いこなす達人のカード。</li>
+      <li>正位置では能力の発揮・集中力・目標実現への強い意志を示す。</li>
+      <li>逆位置では詐欺・過信・力の乱用・集中力散漫への警告を示す。</li>
+      <li>恋愛では積極的なアプローチ、仕事では持てる才能をフル活用する時期を示唆。</li>
+      <li>「天と地をつなぐ」存在として、理想を現実に変える行動力が魔術師の核心。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 魔術師の意味を読んだら、実際に占ってみましょう';

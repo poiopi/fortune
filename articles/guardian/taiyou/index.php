@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">TAIYOU</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">太陽の神使とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>太陽の神使はどんな人につきますか？</div><div class='faq-a'>明るく前向きな人、行動力がある人、周囲を元気にする存在感を持つ人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>太陽の神使のサインは？</div><div class='faq-a'>朝が得意で日光が心地よい、自然とリーダー役を担うことが多い、どんな状況でも前向きでいられるなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>朝日を浴びる習慣と、前向きな言葉・行動の積み重ねが太陽の神使の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>太陽の守護霊は活力・明るさ・生命力を象徴。全てを照らす光と温かさの源。</li>
+      <li>輝くエネルギーと生命力を持ち、周囲を元気にする存在感を自然に放つ。</li>
+      <li>恋愛では明るく情熱的。太陽のような存在感で相手の人生を照らし豊かにする。</li>
+      <li>芸能・教育・スポーツ・経営など、人前に立ち輝ける舞台で真価を発揮する。</li>
+      <li>朝日を浴びることと感謝の習慣が、太陽守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

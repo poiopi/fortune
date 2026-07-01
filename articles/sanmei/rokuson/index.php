@@ -154,6 +154,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>禄存星は算命学十大主星の一つ。五行「土性の陽」に属し、奉仕・世話好き・金運がキーワード。</li>
+      <li>人の世話をすることに喜びを感じ、周囲から頼られる存在になりやすい。</li>
+      <li>恋愛では相手への奉仕精神が強く、尽くすタイプ。</li>
+      <li>接客・医療・福祉・コンサルタントなど、人を直接サポートする仕事で才能を発揮する。</li>
+      <li>自分自身も大切にしながら人を助けることが、禄存星のエネルギーを健全に保つポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/chousho/';$prevTitle='調舒星';$nextUrl='/articles/sanmei/shiroku/';$nextTitle='司禄星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">ONMYOJI-SENZO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">陰陽師の先祖霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>陰陽師の先祖霊はどんな人につきますか？</div><div class='faq-a'>分析的で神秘的なものへの関心が強い人、バランス感覚に優れた人、物事の裏側を読もうとする探求心がある人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>陰陽道とは何ですか？</div><div class='faq-a'>中国から伝わった陰陽五行説に基づく日本の占術・呪術体系で、平安時代には朝廷で重要な役割を担っていました。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>陰陽のバランスを整えた生活と、知識を深め続ける姿勢が開運につながります。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>陰陽師の先祖霊は洞察・神秘・知恵を司る守護霊。陰陽の法則を読む力を与える。</li>
+      <li>鋭い洞察力と神秘的な知恵を持ち、目に見えない法則を読み取る能力がある。</li>
+      <li>恋愛では相手の深層心理を読み取るが、ミステリアスな雰囲気が魅力になる。</li>
+      <li>占い師・研究者・戦略家・プロデューサーなど、洞察力を活かす仕事が向いている。</li>
+      <li>陰陽のバランスを意識し、感謝と敬意を持って生きることが開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

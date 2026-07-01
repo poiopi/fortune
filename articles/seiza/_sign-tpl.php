@@ -4,6 +4,11 @@
  * 各星座の index.php から $sign データをセットして require する
  */
 declare(strict_types=1);
+// CTA共通変数
+$ctaTitle = '⭐ あなたの星座タイプを無料で調べる';
+$ctaText  = '生年月日と生まれた時間帯から、太陽星座・エレメント・内面タイプを鑑定できます。';
+$ctaUrl   = '/seiza';
+$ctaBtn   = '西洋占星術で鑑定する →';
 require_once __DIR__ . '/../../inc/auto-link.php';
 
 // 全12星座ナビデータ（他の星座リンク用）
@@ -40,6 +45,7 @@ ob_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
   <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--ff-serif:'Shippori Mincho',serif;--ff-sans:'Zen Kaku Gothic New',sans-serif;--ff-mono:'DM Mono',monospace;--accent:#7c4dce;--accent-lt:#9b72ef;--gold:#c9a84c;--text:#1a1a2e;--muted:#6b6b8a;--border:#e5e3ee;--bg:#faf7ff;--bg2:#f8f7fc}
@@ -60,11 +66,6 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  .cta-box{background:linear-gradient(135deg,rgba(124,77,206,.06) 0%,rgba(155,114,239,.04) 100%);border:1px solid rgba(124,77,206,.2);border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-  .cta-box p{font-size:.9rem;color:var(--text);font-weight:500}
-  .cta-box small{display:block;font-size:.78rem;color:var(--muted);margin-top:.2rem;font-weight:400}
-  .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--ff-sans);font-size:.85rem;font-weight:500;padding:.65rem 1.5rem;border-radius:24px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s}
-  .cta-btn:hover{background:var(--accent-lt);transform:translateY(-1px)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
   .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
@@ -113,7 +114,6 @@ ob_start();
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
   @media(max-width:600px){
-    .cta-box{flex-direction:column;align-items:flex-start}
     .signs-grid{grid-template-columns:repeat(3,1fr)}
     .hub-link-box{flex-direction:column;align-items:flex-start}
   }
@@ -157,13 +157,7 @@ ob_start();
     <p class="art-lead"><?= htmlspecialchars($sign['lead']) ?></p>
   </div>
 
-  <div class="cta-box">
-    <div>
-      <p>⭐ あなたの星座タイプを無料で調べる</p>
-      <small>生年月日と生まれた時間帯から、太陽星座・エレメント・内面タイプを鑑定できます。</small>
-    </div>
-    <a href="/seiza" class="cta-btn">西洋占星術で鑑定する →</a>
-  </div>
+  <?php require __DIR__ . '/../../inc/article-cta.php'; ?>
 
   <nav class="toc">
     <p class="toc-title">目次</p>
@@ -250,13 +244,7 @@ ob_start();
     </section>
 
     <!-- 中盤CTA -->
-    <div class="cta-box" style="margin:0">
-      <div>
-        <p>⭐ <?= htmlspecialchars($sign['name']) ?>の詳細鑑定を試してみる</p>
-        <small>太陽星座×内面タイプで、あなただけの個性を読み解きます。</small>
-      </div>
-      <a href="/seiza" class="cta-btn">西洋占星術で鑑定する →</a>
-    </div>
+    <?php require __DIR__ . '/../../inc/article-cta.php'; ?>
 
     <section class="art-section" id="compat-good">
       <h2><?= htmlspecialchars($sign['name']) ?>と相性の良い星座</h2>
@@ -290,14 +278,35 @@ ob_start();
       </div>
     </section>
 
+    <!-- まとめ -->
+    <section class="art-section" id="matome">
+      <h2>まとめ</h2>
+      <ul class="matome-list">
+        <li><?= htmlspecialchars($sign['name']) ?>（<?= htmlspecialchars($sign['period']) ?>）は<?= htmlspecialchars($sign['element_full']) ?>・<?= htmlspecialchars($sign['quality_full']) ?>。守護星は<?= htmlspecialchars($sign['planet']) ?>。</li>
+        <li>強みは<?= htmlspecialchars(implode('・', array_slice($sign['strengths'], 0, 4))) ?>。課題は<?= htmlspecialchars(implode('・', $sign['weaknesses'])) ?>。</li>
+        <li><?= htmlspecialchars($sign['love_highlight']) ?></li>
+        <li><?= htmlspecialchars($sign['work_lead']) ?></li>
+        <li>相性の良い星座：<?= htmlspecialchars($sign['compat_good_signs']) ?>。</li>
+      </ul>
+    </section>
+
     <!-- 記事末尾CTA -->
-    <div class="cta-box" style="margin:0 0 2rem">
-      <div>
-        <p>⭐ あなたの星座を無料で鑑定する</p>
-        <small>生年月日と時間帯を入力するだけ。<?= htmlspecialchars($sign['name']) ?>の詳細な鑑定結果が分かります。</small>
-      </div>
-      <a href="/seiza" class="cta-btn">今すぐ無料診断 →</a>
-    </div>
+    <?php $ctaBtn = '今すぐ無料診断 →'; require __DIR__ . '/../../inc/article-cta.php'; ?>
+
+    <!-- 前後ナビ -->
+    <?php
+    $signCount  = count($_ALL_SIGNS);
+    $currentIdx = array_search($sign['slug'], array_column($_ALL_SIGNS, 'slug'));
+    $prevSign   = $currentIdx > 0 ? $_ALL_SIGNS[$currentIdx - 1] : null;
+    $nextSign   = $currentIdx < $signCount - 1 ? $_ALL_SIGNS[$currentIdx + 1] : null;
+    $prevTitle  = $prevSign ? $prevSign['name'] : null;
+    $prevUrl    = $prevSign ? '/articles/seiza/' . $prevSign['slug'] . '/' : null;
+    $nextTitle  = $nextSign ? $nextSign['name'] : null;
+    $nextUrl    = $nextSign ? '/articles/seiza/' . $nextSign['slug'] . '/' : null;
+    $listTitle  = '12星座一覧';
+    $listUrl    = '/articles/seiza/#signs';
+    require __DIR__ . '/../../inc/article-nav.php';
+    ?>
 
     <!-- 他の星座を見る -->
     <section class="art-section" id="other-signs">
@@ -331,8 +340,18 @@ ob_start();
 
   </article>
 </div>
-
-<?php $currentSlug = $sign['slug']; $pageType = 'article'; require __DIR__ . '/../../inc/footer.php'; ?>
+    <section class="art-section" id="related">
+      <h2>関連コンテンツ</h2>
+      <?php
+      $relatedItems = [
+        ['label'=>'タロット占い解説', 'title'=>'大アルカナ22枚の意味を見る →', 'url'=>'/articles/tarot/'],
+        ['label'=>'数秘術とは',       'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
+        ['label'=>'四柱推命とは',     'title'=>'命式・大運・年運の流れを知る →', 'url'=>'/articles/shichu/'],
+      ];
+      require __DIR__ . '/../../inc/article-related.php';
+      ?>
+    </section>
+  <?php $currentSlug = $sign['slug']; $pageType = 'article'; require __DIR__ . '/../../inc/footer.php'; ?>
 </body>
 </html>
 <?php

@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">UMI</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">海の守護者とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>海の守護者はどんな人につきますか？</div><div class='faq-a'>包容力があり感受性豊かな人、水や海が好きな人、流れに柔軟に乗れる人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>海の守護者のサインは？</div><div class='faq-a'>海や川の近くで心が落ち着く、雨の音に安らぎを感じる、他者の感情を自分のことのように感じるなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>海や水辺を訪れ、流れに身を任せる姿勢を持つことが開運につながります。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>海の守護霊は感受性・深さ・包容力を象徴。広大な海のように全てを受け入れる力を持つ。</li>
+      <li>豊かな感受性と直感を持ち、相手の感情の深いところまで感知する能力がある。</li>
+      <li>恋愛では深く純粋に愛し、精神的なつながりと包容力を大切にする。</li>
+      <li>芸術・ヒーリング・カウンセリング・海に関わる仕事など、感性を活かせる分野が向いている。</li>
+      <li>海を訪れ波音を聞き、自分の感受性を整えることが海守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">SOU-SENZO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">僧侶の先祖霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>僧侶の先祖霊はどんな人につきますか？</div><div class='faq-a'>穏やかで他者を思いやる人、精神的な成長を大切にする人、争いより和を好む人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>僧侶の先祖霊のサインは？</div><div class='faq-a'>お寺や仏像の前で特別な安らぎを感じる、感情的になりにくい、人の悩みを自然と引き受けてしまうなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>瞑想・写経・お参りと、日常での小さな親切の積み重ねが開運につながります。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>僧侶の先祖霊は慈悲・悟り・精神性を宿す守護霊。執着を手放す智慧を与える。</li>
+      <li>深い慈悲心と精神的な洞察を持ち、人の苦しみに寄り添う力がある。</li>
+      <li>恋愛では執着より愛、所有より共存を大切にする成熟した愛情観を持つ。</li>
+      <li>宗教・福祉・医療・哲学・精神科など、魂に寄り添う分野が向いている。</li>
+      <li>感謝の心と手放す勇気を持つことが、僧侶先祖守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';
