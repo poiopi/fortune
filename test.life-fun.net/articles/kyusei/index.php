@@ -211,60 +211,60 @@ require __DIR__.'/../../inc/article-cta.php';
   <section class="art-section" id="nine-stars">
     <h2>九星（一白〜九紫）一覧</h2>
     <div class="star-grid">
-      <div class="star-card">
+      <a href="/articles/kyusei/ippaku/" class="star-card">
         <div class="star-num">第1星</div>
         <div class="star-name">一白水星</div>
         <span class="star-elem elem-water">水</span>
         <div class="star-kw">柔軟・知性・流動性・忍耐</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/nikoku/" class="star-card">
         <div class="star-num">第2星</div>
         <div class="star-name">二黒土星</div>
         <span class="star-elem elem-earth">土</span>
         <div class="star-kw">勤勉・堅実・母性・奉仕</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/sanpeki/" class="star-card">
         <div class="star-num">第3星</div>
         <div class="star-name">三碧木星</div>
         <span class="star-elem elem-wood">木</span>
         <div class="star-kw">行動力・独創性・情熱・積極性</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/shiryoku/" class="star-card">
         <div class="star-num">第4星</div>
         <div class="star-name">四緑木星</div>
         <span class="star-elem elem-wood">木</span>
         <div class="star-kw">調和・社交性・信頼・旅運</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/goko/" class="star-card">
         <div class="star-num">第5星</div>
         <div class="star-name">五黄土星</div>
         <span class="star-elem elem-earth">土</span>
         <div class="star-kw">カリスマ・強運・波乱・再生力</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/roppaku/" class="star-card">
         <div class="star-num">第6星</div>
         <div class="star-name">六白金星</div>
         <span class="star-elem elem-metal">金</span>
         <div class="star-kw">完全主義・高貴・統率力・天運</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/shichiseki/" class="star-card">
         <div class="star-num">第7星</div>
         <div class="star-name">七赤金星</div>
         <span class="star-elem elem-metal">金</span>
         <div class="star-kw">社交・楽天・弁舌・金運</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/hakkudo/" class="star-card">
         <div class="star-num">第8星</div>
         <div class="star-name">八白土星</div>
         <span class="star-elem elem-earth">土</span>
         <div class="star-kw">不動・変革・誠実・蓄積</div>
-      </div>
-      <div class="star-card">
+      </a>
+      <a href="/articles/kyusei/kyushi/" class="star-card">
         <div class="star-num">第9星</div>
         <div class="star-name">九紫火星</div>
         <span class="star-elem elem-fire">火</span>
         <div class="star-kw">直感・美意識・名誉・変化</div>
-      </div>
+      </a>
     </div>
   </section>
 
