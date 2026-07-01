@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/auto-link.php';
 
 // 全16タイプ（ナビゲーション用）
 $_ALL_TYPES = [
@@ -205,7 +205,7 @@ ob_start();
   $ctaText  = '生年月日と簡単な質問に答えるだけで16タイプの詳細解説が出力。';
   $ctaUrl   = '/mbti';
   $ctaBtn   = 'MBTI×星座を診断する →';
-  require __DIR__.'/../../../inc/article-cta.php';
+  require __DIR__.'/../../inc/article-cta.php';
   ?>
 
   <nav class="toc">
@@ -298,7 +298,7 @@ ob_start();
   $ctaText  = '生年月日と簡単な質問に答えるだけで16タイプの詳細解説が出力。';
   $ctaUrl   = '/mbti';
   $ctaBtn   = 'MBTI×星座を診断する →';
-  require __DIR__.'/../../../inc/article-cta.php';
+  require __DIR__.'/../../inc/article-cta.php';
   ?>
 
   <?php
@@ -308,7 +308,7 @@ ob_start();
   $nextUrl   = $_nextType ? '/articles/mbti/'.$_nextType['slug'].'/' : null;
   $listTitle = '16タイプ一覧';
   $listUrl   = '/articles/mbti/#types';
-  require __DIR__.'/../../../inc/article-nav.php';
+  require __DIR__.'/../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -320,7 +320,7 @@ ob_start();
       ['label'=>'九星気学とは', 'title'=>'生まれ年でわかる9つの気質を解説 →', 'url'=>'/articles/kyusei/'],
       ['label'=>'星座とは',     'title'=>'12星座の特徴と相性を解説 →', 'url'=>'/articles/seiza/'],
     ];
-    require __DIR__.'/../../../inc/article-related.php';
+    require __DIR__.'/../../inc/article-related.php';
     ?>
   </section>
 
@@ -332,7 +332,7 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='mbti'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
+<?php $currentSlug='mbti'; $pageType='article'; require __DIR__.'/../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
