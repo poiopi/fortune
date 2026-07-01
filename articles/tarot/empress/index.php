@@ -72,6 +72,14 @@ ob_start();
     </div>
   </div>
 
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>小麦が実る野原に豊かに座る女帝は、生命そのものの象徴です。彼女の周りには木々が茂り、川が流れ、すべてが実っています。このカードは「与えることで豊かになる」という宇宙の法則を体現しています。愛情を注げば注ぐほど、あなたにも返ってくる。その循環の中心に女帝は立っています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>創造的なエネルギーが満ちている時期です。与えること・育てることで運が開きます。アイデアを形にする、誰かをサポートする、自然の流れに従う——今はその時です。生み出すことへの喜びを感じながら動いてください。</p></div></section>
@@ -79,6 +87,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">愛情豊かな関係が深まる時期です。結婚・妊娠の暗示もあります。自然体で愛情を表現することで、関係が豊かに育まれます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">相手への過度な依存、または支配的になりすぎていないかを確認してください。愛情が重さになっていないか、立ち止まって見直す時です。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">クリエイティブな仕事が実を結びます。チームを育てる立場に就く暗示も。感性を活かした仕事・表現・教育の分野で吉。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">創造性が枯渇しているサインです。休養と自己ケアが必要な時期。無理に生み出そうとせず、まずインプットを増やしましょう。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">豊かさが自然に流れ込む時期です。投資より受け取ることを意識して。感謝の気持ちで受け取ることが更なる豊かさを呼びます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">過度な出費・散財への警告です。感情的な買い物や、誰かを喜ばせるための浪費に注意してください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女帝は妊娠・結婚を意味しますか？</div><div class="faq-a">豊かさと創造の象徴として、そのような展開の予兆とされることがあります。ただし文字通りではなく、新しいものを生み出す喜びの象徴として読むことが基本です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女帝の逆位置は何を意味する？</div><div class="faq-a">依存・過保護・創造力の停滞を示します。自分を大切にできていない、または誰かに依存しすぎているサインです。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女帝が仕事で出たら？</div><div class="faq-a">クリエイティブなプロジェクトや育成に関わる仕事で吉です。与えること・育てることが評価につながります。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>女帝（3番）は豊穣・母性・創造・自然の恵みを象徴する大地の母のカード。</li>
+      <li>正位置では豊かさ・妊娠・育む愛情・芸術的才能の開花を示す。</li>
+      <li>逆位置では依存・過保護・創造性の停滞・物質への執着への警告を示す。</li>
+      <li>恋愛では愛情あふれる関係の充実、仕事では創造的なプロジェクトの実りを示唆。</li>
+      <li>与え育てることの喜びを知る女帝は、愛と豊かさを循環させる存在。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 女帝の意味を読んだら、実際に占ってみましょう';

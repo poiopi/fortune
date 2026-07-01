@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>審判（JUDGEMENT）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ XX</span><h1>審判（JUDGEMENT）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ20番「審判」は、天使のラッパの音が響き、人々が目覚めるカードです。最後の審判ではなく「今こそ目を覚ませ」という呼びかけ——自分の本当の使命と価値観に気づく転換点を告げます。</p><div class="kw-tags"><span class="kw-tag upright">覚醒</span><span class="kw-tag upright">再評価</span><span class="kw-tag upright">転生</span><span class="kw-tag upright">使命</span><span class="kw-tag upright">呼びかけ</span> <span class="kw-tag reversed">自己批判</span><span class="kw-tag reversed">変化への抵抗</span><span class="kw-tag reversed">後悔</span></div></div><div class="card-visual"><div class="card-roman">XX</div><div class="card-illust"><img src="/cards/judgement.png" alt="審判"></div><div class="card-en">JUDGEMENT</div><div class="card-ja">審判</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>天使ガブリエルがラッパを吹き鳴らし、棺から人々が目覚めて立ち上がります。これは終わりの審判ではなく、始まりの目覚めです。「今まで眠っていた自分の本質」が呼び起こされる瞬間。このカードが来る時、宇宙はあなたに問いかけています——「あなたは本当に生きていますか？ 本当にやりたいことをやっていますか？」</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>自分の本当の使命や価値観に気づく時です。これまでの人生を振り返り、新しい自分として立ち上がる転換点。ラッパの音が聞こえているなら、それに従ってください。人生の新しい章が始まろうとしています。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">過去の関係を清算し、新しい愛のステージへ進む時期です。または古い絆が新しい形で復活することも。どちらも「過去から学んだ自分」として向き合うことが大切です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">過去の傷を引きずりすぎて新しい愛に踏み出せない状態です。自分を許すことが、次のステップへの鍵です。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">キャリアの大きな転換点が来ています。本当にやりたいことへの覚醒のタイミング。惰性で続けているなら、今こそ見直す時です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">変化すべき時なのに、惰性で続けている状態です。ラッパの音に耳を傾け、本当にやりたいことを聞いてみてください。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">財務状況の全体的な見直し・再評価が吉です。過去の金銭的な決断を振り返り、新しい方針を立てましょう。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">過去の金銭的な失敗から学べていないサインです。同じ過ちを繰り返さないための振り返りが必要です。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">審判は復縁を意味しますか？</div><div class="faq-a">過去の関係が再評価されることがあります。ただし前と同じではなく、新しい形での再出発を示すことが多いです。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">審判の逆位置は後悔を示す？</div><div class="faq-a">過去への後悔や自己批判が前進を妨げているサインです。過去を清算し、新しい自分として立ち上がることが求められています。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">審判が仕事で出たら？</div><div class="faq-a">キャリアの見直しや本当にやりたいことへの転換点を示します。今の仕事に魂が入っているか、問い直す時期です。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>審判（20番）は覚醒・再生・召命・過去の清算と新たな段階への移行を象徴するカード。</li>
+      <li>正位置では魂の目覚め・人生の使命への気づき・過去の解放と赦しを示す。</li>
+      <li>逆位置では自己批判・過去への執着・使命の拒絶・変化への恐れへの警告を示す。</li>
+      <li>恋愛では関係の再評価や深い絆の再確認、仕事では天職や使命感に気づく転換点を示唆。</li>
+      <li>ラッパの音は「目を覚ませ」という呼びかけ。自分の使命に応える時が来たというサイン。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 審判の意味を読んだら、実際に占ってみましょう';

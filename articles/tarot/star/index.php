@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>星（THE STAR）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ XVII</span><h1>星（THE STAR）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ17番「星」は、塔の嵐の後に現れる静かな星空のカードです。最も暗い夜の後に最も美しい星が輝く——希望を失わないことへの、宇宙からのメッセージです。</p><div class="kw-tags"><span class="kw-tag upright">希望</span><span class="kw-tag upright">回復</span><span class="kw-tag upright">インスピレーション</span><span class="kw-tag upright">平和</span><span class="kw-tag upright">信頼</span> <span class="kw-tag reversed">絶望</span><span class="kw-tag reversed">失望</span><span class="kw-tag reversed">非現実的な期待</span></div></div><div class="card-visual"><div class="card-roman">XVII</div><div class="card-illust"><img src="/cards/star.png" alt="星"></div><div class="card-en">THE STAR</div><div class="card-ja">星</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>裸の女性が星の光の下、大地と水に杯を注いでいます。一枚の大きな星と七枚の小さな星が夜空に輝く——全てが静まり返った、嵐の後の静寂です。このカードは「大丈夫。もう嵐は去った」と告げます。傷ついた後に現れる星は、癒しの時が始まったことを知らせています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>癒しと回復の時期です。信じ続けることが未来を引き寄せます。「もう無理だ」と思っていたことが、少しずつ変わり始めています。あなたの内側に灯っている希望の光を信じてください。それは決して消えません。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">傷ついた心が癒され、新しい愛への扉が開く時期です。過去の痛みを抱えながらも、新しい出会いを受け入れる準備が整ってきています。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">理想の相手を追い求めすぎて、目の前の現実を見ていない状態です。完璧な人は存在しません。目の前にいる人を大切に見てください。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">インスピレーションが湧く時期です。クリエイティブな仕事・芸術・癒しに関わる仕事が輝きます。自分らしい表現が評価されます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">理想と現実のギャップに失望しているサインです。現実的な目標に設定し直すことで、前に進めるようになります。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">回復の兆しがあります。穏やかだが着実な改善が期待できます。焦らず、流れに乗ってください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">根拠のない楽観・宝くじ的な期待への警告です。希望を持ちながらも、地道な積み上げを忘れないでください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">星は希望のカードですか？</div><div class="faq-a">タロットの中で最も希望を象徴するカードの一つです。暗闇の後の光として、癒しと回復のエネルギーをもたらします。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">星の逆位置は絶望？</div><div class="faq-a">完全な絶望ではありません。現実とのズレへの気づきを促しています。夢は大切ですが、地に足もつけてください。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">星が恋愛で出たら？</div><div class="faq-a">正位置は癒しと新しい出会いの兆しです。逆位置は理想と現実のギャップへの注意を促しています。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>星（17番）は希望・癒し・インスピレーション・未来への信頼を象徴するカード。</li>
+      <li>正位置では嵐の後の穏やかさ・希望の回復・願いの成就・才能の輝きを示す。</li>
+      <li>逆位置では希望の喪失・自己不信・夢を諦める気持ちへの警告を示す。</li>
+      <li>恋愛では純粋な希望と癒しに満ちた出会いや関係、仕事では夢の実現への道筋を示唆。</li>
+      <li>どんな夜も星は輝き続ける。希望を持ち続けることが星カードの最も大切な教え。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 星の意味を読んだら、実際に占ってみましょう';

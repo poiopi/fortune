@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">HOSHI</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">星の使者とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>星の使者はどんな人につきますか？</div><div class='faq-a'>独創的な発想を持つ人、常識にとらわれない自由な思考の人、宇宙や科学に関心がある人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>星の使者のサインは？</div><div class='faq-a'>夜空を見上げると安らぐ、突然のひらめきが多い、既存の枠に収まることへの抵抗感があるなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>夜空を眺める習慣と、独創的なアイデアを大切にすることが開運につながります。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>星の守護霊は夢・希望・導きを象徴。暗闇の中でも方向を示す光の存在。</li>
+      <li>高い理想と夢を持ち、人々に希望と方向性を示すインスピレーターとしての才能がある。</li>
+      <li>恋愛では憧れや理想を大切にし、相手の可能性を信じ応援し続ける。</li>
+      <li>占星術・コーチング・芸術・教育など、人の可能性を照らす分野が向いている。</li>
+      <li>夜空を見上げ宇宙とのつながりを感じる時間が、星守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

@@ -154,6 +154,18 @@ ob_start();
       </div>
     </div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>車騎星は算命学十大主星の一つ。五行「金性の陰」に属し、行動・闘争・瞬発力がキーワード。</li>
+      <li>瞬発力と行動力に優れ、問題が起きたときに真っ先に動く戦士タイプ。</li>
+      <li>恋愛では積極的にアプローチし、情熱的に相手を口説く直球スタイル。</li>
+      <li>スポーツ・営業・救急医療など、スピードと実行力が求められる職種が向いている。</li>
+      <li>エネルギーを目標に集中させ、怒りを建設的な力に変えることが開運のポイント。</li>
+    </ul>
+  </section>
+
   <?php require __DIR__.'/../../../inc/article-cta.php'; ?>
   <?php
   $prevUrl='/articles/sanmei/shiroku/';$prevTitle='司禄星';$nextUrl='/articles/sanmei/kengyu/';$nextTitle='牽牛星';$listUrl='/articles/sanmei/#genme';$listTitle='十大主星 一覧';

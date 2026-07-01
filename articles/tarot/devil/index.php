@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>悪魔（THE DEVIL）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ XV</span><h1>悪魔（THE DEVIL）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ15番「悪魔」は、縛られている二人を見ると鎖が緩くいつでも外せることに気づくカードです。縛っているのは自分自身——このカードは見えない鎖への気づきを促します。</p><div class="kw-tags"><span class="kw-tag upright">束縛</span><span class="kw-tag upright">執着</span><span class="kw-tag upright">誘惑</span><span class="kw-tag upright">物質主義</span><span class="kw-tag upright">依存</span> <span class="kw-tag reversed">解放</span><span class="kw-tag reversed">気づき</span><span class="kw-tag reversed">目覚め</span></div></div><div class="card-visual"><div class="card-roman">XV</div><div class="card-illust"><img src="/cards/devil.png" alt="悪魔"></div><div class="card-en">THE DEVIL</div><div class="card-ja">悪魔</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>大きな悪魔の台座に繋がれた二人の人物。しかしよく見ると、鎖は緩い。首に引っかかっているだけで、いつでも外せます。彼らが逃げないのは、悪魔の力ではなく、自分たちが諦めているからです。悪魔のカードは「あなたを縛っているのは誰ですか？」という問いを突きつけます。外側を責める前に、内側を見てください。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>何かへの依存・執着に気づいていない状態です。見えない鎖に縛られています。それは人かもしれない、仕事かもしれない、スマートフォンかもしれない、怠惰かもしれない——気づくだけで、変化が始まります。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">不健全な依存関係・共依存への警告です。愛ではなく恐れで繋がっていないか、冷静に見つめ直してください。本当の愛は相手を縛りません。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">不健全な関係から解放されるタイミングが来ています。やっと自由になれるサインです。怖くても、そちらに進んでください。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">職場・仕事への不健全な依存が生じています。または誘惑・不正への警戒が必要です。「これをやめたら終わり」という思い込みを疑ってみてください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">束縛されていた状況からの脱出のタイミングです。転職・独立・新しい働き方への移行が吉に動きます。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">物質的な欲求・ギャンブル・衝動買いへの警戒が必要です。「これさえ手に入れれば幸せ」という思考パターンを見直してください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">借金・依存からの解放が始まるサインです。少しずつでも、財務的な縛りを減らす行動を始めてください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">悪魔のカードは怖いですか？</div><div class="faq-a">怖く見えますが、本質は「気づき」のカードです。見えない鎖を意識させてくれる存在として、解放への第一歩を示しています。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">悪魔の逆位置は良い意味？</div><div class="faq-a">はい。解放と目覚めを示します。束縛から自由になれる重要なサインです。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">悪魔が恋愛で出たら？</div><div class="faq-a">正位置は依存・不健全な執着への警告です。逆位置は関係の見直しと解放を示します。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>悪魔（15番）は束縛・執着・物質欲・影の自己を象徴するカード。</li>
+      <li>正位置では依存・執着・物質主義・自分を縛る思い込みへの気づきを示す。</li>
+      <li>逆位置では束縛からの解放・依存の克服・影の自己の統合を示す。</li>
+      <li>恋愛では依存的・支配的な関係のパターン、仕事では過労や利益への執着への警告を示唆。</li>
+      <li>鎖は実は自分で外せる。悪魔カードは「気づき」こそが解放への扉だと教える。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 悪魔の意味を読んだら、実際に占ってみましょう';

@@ -76,6 +76,14 @@ ob_start();
     </div>
   </div>
 
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>女教皇は書物を膝に抱き、ザクロの幕の前に静かに座っています。彼女は語りません。しかしすべてを知っています。このカードが現れる時、宇宙はあなたに「もっと静かになれ」と告げています。頭で考えることをやめ、感じることに全意識を向ける時です。答えは外ではなく、あなたの内側の深みに沈んでいます。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は動くより待つ時です。直感が正しい方向を教えてくれています。情報収集・観察・内省に集中することで、表面には見えなかった真実が浮かび上がります。焦りは最大の敵。静けさの中にだけ見える景色があります。</p></div></section>
@@ -83,6 +91,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">相手の言葉より感じる空気を信じて。沈黙の中にこそ本音があります。「何も言わなくてもわかってほしい」より、感じたことを丁寧に言語化する努力が関係を深めます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">隠し事・二面性・本音を見せない関係への警告です。どちらかが感情を封印している可能性があります。正直な対話が必要な時です。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">表に出ずに情報を集める時期です。今は発言より観察、行動より準備。焦らず状況を見極めることが最善手になります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">重要な情報が隠されている可能性があります。表面だけを見て判断しないことが大切です。契約・交渉は特に慎重に。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">直感的な判断が正解に近い時期です。焦らず情報を集めてから動くことで、確実な結果が得られます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">隠れたリスクへの注意が必要です。契約書の細部を必ず確認し、「なんとなく」での判断を避けてください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女教皇は恋愛でどういう意味？</div><div class="faq-a">感情より直感を信じるよう促しています。言葉ではなく空気を読み、相手の本音を感じ取ることが大切な時期です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女教皇の逆位置は何を意味する？</div><div class="faq-a">直感を無視している、または秘密を抱えているサインです。知っていることを隠すことで生じる歪みへの警告でもあります。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">女教皇と魔術師の違いは？</div><div class="faq-a">魔術師は「行動」、女教皇は「待機と観察」。方向性が真逆のカードです。魔術師が動くなら、女教皇は待つ。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>女教皇（2番）は直感・神秘・内なる知恵を象徴。潜在意識の深みにアクセスするカード。</li>
+      <li>正位置では内なる声に従う・静かな知恵・秘密の保持を示す。</li>
+      <li>逆位置では感情の抑圧・秘密の暴露・直感の無視への警告を示す。</li>
+      <li>恋愛では深い精神的つながりを求め、仕事では表に出ない情報収集の重要性を示唆。</li>
+      <li>沈黙と観察の中に真実がある。焦らず内側の声を聴くことが女教皇の教え。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 女教皇の意味を読んだら、実際に占ってみましょう';

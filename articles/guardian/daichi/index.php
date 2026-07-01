@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">DAICHI</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">大地の精霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>大地の精霊はどんな人につきますか？</div><div class='faq-a'>地道に努力する人、安定を大切にする人、自然が好きな人、継続力がある人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>大地の精霊のサインは？</div><div class='faq-a'>土や植物に触れると落ち着く、コツコツした作業が苦にならない、安定した環境を好むなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>土や自然に触れる習慣と、継続できる日課を持つことが大地の精霊の守護を高めます。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>大地の守護霊は包容力・安定・育む力を象徴。大地のように揺るぎない存在感を持つ。</li>
+      <li>どんな存在も受け入れる懐の深さと、じっくり育てる忍耐力を持つ。</li>
+      <li>恋愛では安定と安心を相手に与え、長く深い関係を育てることが得意。</li>
+      <li>農業・保育・福祉・建設など、根を張って育てる仕事で真価を発揮する。</li>
+      <li>大地に足をつけ感謝を持って生きることが、大地守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

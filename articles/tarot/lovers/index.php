@@ -45,6 +45,14 @@ ob_start();
     <div class="card-visual"><div class="card-roman">VI</div><div class="card-illust"><img src="/cards/lovers.png" alt="恋人"></div><div class="card-en">THE LOVERS</div><div class="card-ja">恋人</div></div>
   </div>
 
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>天使が見守る中、男と女が立っています。背景にある林檎の木と蛇は、選択の誘惑と責任を暗示します。恋人のカードは「ただ恋愛する」のではなく、「誰と・どう生きるか」を選ぶカードです。表面的な選択ではなく、魂の深さで選べているかどうかが問われています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>心から選んだ道、または人との関係が正しい方向に進んでいます。二者択一の場面では、頭より心の声を優先することが吉。今のあなたには、自分が本当に望むものを選ぶ準備ができています。</p></div></section>
@@ -52,6 +60,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">深い信頼と愛情で結ばれる時期です。真剣な関係への発展を示す吉サイン。お互いの価値観が一致していることが、この時期の恋愛の核心です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">浮気・不誠実・どちらかへの優柔不断な態度への警告です。一方を選ぶ勇気が、今の関係には必要かもしれません。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">仕事の方向性や協力者との関係が良好です。大きな決断の場面では、心が動く方向を信じてください。パートナーシップが鍵になります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">仕事上のパートナーシップでの意見の相違が表面化しています。価値観の違いを明確にし、どちらかを選ぶ必要がある時期です。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">誰かとの協力・共同事業で収入が増える暗示があります。共同投資・事業提携も吉です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">金銭的な誘惑への注意が必要です。「美味しい話」に乗せられて、損失を招かないよう慎重に判断を。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">恋人カードは好きな人の気持ちを示しますか？</div><div class="faq-a">相手の心が動いているサインです。ただし「選択」のカードでもあるため、どちらかが決断を迫られている状況の可能性もあります。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">恋人の逆位置は別れを意味しますか？</div><div class="faq-a">必ずしも別れではありません。関係の見直しや価値観の調整が必要なサインです。今の関係の本質を問い直す時期を示しています。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">恋人は仕事でどんな意味？</div><div class="faq-a">重要な選択や提携・協力関係が鍵になる時期です。どちらかの選択肢を選ぶ必要がある場面で、心の声を優先することが大切です。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>恋人（6番）は愛・選択・価値観の一致・魂のつながりを象徴するカード。</li>
+      <li>正位置では深い愛の結合・重要な選択・自分の価値観との統合を示す。</li>
+      <li>逆位置では関係の不調和・誤った選択・自分への不誠実さへの警告を示す。</li>
+      <li>恋愛では運命的な出会いや深い絆の形成、仕事では心から愛せる道の選択を示唆。</li>
+      <li>真の愛とは選択であり責任。心の声に従い誠実に選ぶことが恋人カードの教え。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 恋人の意味を読んだら、実際に占ってみましょう';

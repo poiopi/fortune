@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>塔（THE TOWER）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ XVI</span><h1>塔（THE TOWER）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ16番「塔」は、雷に打たれて崩れ落ちる塔のカードです。しかし崩れるのは「嘘の上に建てられた構造物」。破壊は新しい土台のための浄化——このカードは避けられない変化の使者です。</p><div class="kw-tags"><span class="kw-tag upright">崩壊</span><span class="kw-tag upright">突然の変化</span><span class="kw-tag upright">覚醒</span><span class="kw-tag upright">解体</span><span class="kw-tag upright">真実の露見</span> <span class="kw-tag reversed">災難の回避</span><span class="kw-tag reversed">変化の先延ばし</span><span class="kw-tag reversed">崩壊への恐れ</span></div></div><div class="card-visual"><div class="card-roman">XVI</div><div class="card-illust"><img src="/cards/tower.png" alt="塔"></div><div class="card-en">THE TOWER</div><div class="card-ja">塔</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>高い塔の頂点に雷が落ち、人々が投げ出されます。しかし空には雷雲の中に光があります。塔が崩れるのは、それが人間の傲慢さで建てられた嘘の建物だからです。真実の上に建てられたものは、雷に耐えます。このカードが来る時、あなたの人生の中で「嘘の上に建てられた何か」が崩れようとしています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>予期せぬ変化が来ます。しかしそれは必要な崩壊です。真実が明らかになる時——短期的には混乱があっても、長期的には正しい方向への転換です。崩れることを恐れないでください。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">隠れていた問題が一気に噴出します。短期的には辛いですが、偽りの関係を終わらせる力をこのカードは持っています。本物の関係なら、この嵐を超えられます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">関係の崩壊を恐れて問題を先送りにしています。早めに対話することで、大崩壊を防げます。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">職場・業界・プロジェクトに突然の変化が来ます。これを機に再構築できるか、新しい方向を見つけられるかが鍵です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">先が見えない不安の中での現状維持は、いつか限界が来ます。変化を予測して準備する姿勢が今は重要です。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">予期せぬ損失・出費の可能性があります。緊急資金の確保と、リスク分散の意識が今は大切です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">経済的な危機を先延ばしにしているだけの可能性があります。今のうちに専門家に相談することが長期的な安全につながります。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">塔は最も怖いカードですか？</div><div class="faq-a">怖い印象はありますが、真実を明かす力を持つカードです。偽りの上に建てられた構造が崩れるだけで、本物のものは残ります。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">塔が恋愛で出たら？</div><div class="faq-a">関係の根本的な問題が表面化するサインです。乗り越えれば本物の絆になります。逃げずに向き合うことが大切です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">塔の逆位置は良い意味？</div><div class="faq-a">大きな崩壊は免れますが、問題の先送りへの警告でもあります。変化を遅らせているだけで、いつかは訪れます。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>塔（16番）は突然の崩壊・解放・偽りの構造の破壊を象徴するカード。</li>
+      <li>正位置では予期せぬ激変・古い構造の崩壊・真実の暴露・根本的な変化を示す。</li>
+      <li>逆位置では変化への恐れ・崩壊の引き延ばし・内部的な危機への警告を示す。</li>
+      <li>恋愛では突然の別れや関係の崩壊、仕事では会社や計画の急変を示唆する場合がある。</li>
+      <li>壊れるべきものは壊れる。真の基盤の上に再建される新しい現実が塔の後に来る。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 塔の意味を読んだら、実際に占ってみましょう';

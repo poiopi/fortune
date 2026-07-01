@@ -72,6 +72,14 @@ ob_start();
     </div>
   </div>
 
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>玉座に座る皇帝の表情は厳しく、背後には険しい山が連なります。柔らかさより強さ、感情より理性——皇帝が体現するのはそういう世界です。しかし彼は無慈悲ではありません。秩序は守るためにある。ルールは混沌から人々を護るためにある。皇帝のカードが出る時、あなたに求められているのは「大人の判断」です。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>計画・ルール・構造によって目標が達成できる時です。感情に流されず、冷静に判断することが今最も賢い選択。リーダーとして立ち、責任を引き受けることで道が開きます。</p></div></section>
@@ -79,6 +87,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">安定した関係を築く時期です。責任を持って相手に向き合い、長期的な視点で関係を育む姿勢が吉です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">支配的・頑固・感情を抑圧している関係への警告です。対等なパートナーシップが、今の関係には必要かもしれません。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">計画を立て、着実に実行する時です。管理職・責任ある立場での吉運。論理と構造があなたの武器になります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">権力の乱用・硬直した組織への不満が高まっています。柔軟性が求められている時です。ルールを破るより、ルールを賢く使いましょう。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">長期的な計画に基づく資産形成が吉です。分散投資・積み立て・堅実な管理が今の金運を守ります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">頑固さやケチすぎる態度が機会を逃しています。守ることも大切ですが、適切な投資・支出は成長の糧です。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">皇帝は怖いカードですか？</div><div class="faq-a">怖くはありません。秩序と安定の象徴です。権威的に見えますが、本質的には保護者。計画・ルール・構造によって守られる安心感を示しています。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">皇帝が恋愛で出たら？</div><div class="faq-a">正位置は安定と誠実さを示します。責任を持って相手に向き合う時期のサインです。逆位置は支配的な関係への警告です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">皇帝と女帝の違いは？</div><div class="faq-a">女帝が感性・豊かさなら、皇帝は理性・構造を体現します。対になる存在で、二人合わせてバランスが生まれます。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>皇帝（4番）は権威・秩序・安定・父性的な力を象徴する支配者のカード。</li>
+      <li>正位置では強いリーダーシップ・構造の確立・目標への粘り強い追求を示す。</li>
+      <li>逆位置では支配欲・硬直した思考・権威への反発・感情の抑圧への警告を示す。</li>
+      <li>恋愛では安定感のある頼れる存在、仕事では責任ある立場での実力発揮を示唆。</li>
+      <li>秩序と規律の中に真の自由がある。基盤を固めることが皇帝の本質的メッセージ。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 皇帝の意味を読んだら、実際に占ってみましょう';

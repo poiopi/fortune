@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">TENSHI</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">天女・天使とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>天女・天使はどんな人につきますか？</div><div class='faq-a'>純粋な心を持ち人を愛することが自然にできる人、美しいものや調和を大切にする人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>天女と天使は別ものですか？</div><div class='faq-a'>文化的な背景は異なりますが、天界の存在であり愛と光で人を守護する点では共通しています。当サイトでは同じ守護タイプとして扱っています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>自分を愛することと美しいものに触れる習慣が基本です。白やゴールドを日常に取り入れることも効果的です。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>天使の守護霊は純粋・愛・光を象徴。神の意志を地上に伝えるメッセンジャーの存在。</li>
+      <li>純粋な愛と光のエネルギーを持ち、周囲を明るくし善きことを引き寄せる。</li>
+      <li>恋愛では純粋で誠実。条件なく相手を愛し、光のように温かく包み込む。</li>
+      <li>ヒーリング・音楽・保育・社会福祉など、純粋な愛情を注ぐ分野が向いている。</li>
+      <li>感謝の祈りを持ち、純粋さと誠実さを保ち続けることが天使守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';

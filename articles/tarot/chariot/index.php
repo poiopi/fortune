@@ -41,6 +41,14 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>戦車（THE CHARIOT）</nav>
   <div class="art-hero"><div class="art-hero-text"><span class="art-label">TAROT · 大アルカナ VII</span><h1>戦車（THE CHARIOT）<br>タロットの意味・正位置・逆位置</h1><p class="art-lead">大アルカナ7番「戦車」は、意志の力で困難を乗り越えるカードです。勝利は努力と自制心の産物。相反する力を制御しながら前進する戦士——このカードはあなたの中の闘志に火をつけます。</p><div class="kw-tags"><span class="kw-tag upright">勝利</span><span class="kw-tag upright">前進</span><span class="kw-tag upright">意志力</span><span class="kw-tag upright">コントロール</span><span class="kw-tag upright">突破</span> <span class="kw-tag reversed">無謀</span><span class="kw-tag reversed">方向性の喪失</span><span class="kw-tag reversed">感情的な衝突</span></div></div><div class="card-visual"><div class="card-roman">VII</div><div class="card-illust"><img src="/cards/chariot.png" alt="戦車"></div><div class="card-en">THE CHARIOT</div><div class="card-ja">戦車</div></div></div>
+    <?php
+  $ctaTitle = 'タロット占いを試してみる';
+  $ctaText  = '今引いたカードがあなたへのメッセージ。無料で今すぐ占えます。';
+  $ctaUrl   = '/tarot';
+  $ctaBtn   = 'タロット占いを始める →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
   <section class="art-section" id="overview"><h2></h2><p>冠を持つ戦士が、黒と白のスフィンクスに引かれた戦車に乗っています。二頭のスフィンクスは相反する力——この二つを制御することが戦車の本質です。感情と理性、本能と意志。どちらかを切り捨てるのではなく、両方を手綱で制御することで、戦車は動き出します。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は前進あるのみです。意志を固め、迷わず突き進む時。「できるかどうか」ではなく「やるかどうか」を問われています。あなたの中に戦士はいます——あとはその戦士に、前を向かせるだけです。</p></div></section>
@@ -48,6 +56,18 @@ ob_start();
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">積極的なアプローチで関係が前進します。障害を乗り越えて結ばれる暗示があります。臆さず、あなたの気持ちを伝えることが今の最善手です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">感情的になりすぎて相手を傷つけているか、または執着が強すぎています。力強さが「重さ」になっていないか確認してください。</div></div></div></section>
   <section class="art-section" id="work"><h2>仕事・お金での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 仕事</div><div class="cat-text">競争に勝つ時期です。目標に向かって集中すれば達成できます。マルチタスクより、一点突破の戦略が今は有効です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 仕事</div><div class="cat-text">無計画な突進が失敗を招く可能性があります。チームとの摩擦にも注意。「速く動く」より「正しく動く」を意識してください。</div></div><div class="cat-card"><div class="cat-label">UPRIGHT · 金運</div><div class="cat-text">努力が実を結ぶ時期です。収入増加・目標達成が視野に入ってきました。今の行動が確実に積み上がっています。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 金運</div><div class="cat-text">衝動的な金銭的決断が損失を招くリスクがあります。投資・大きな出費は冷静な状態で判断してください。</div></div></div></section>
   <section class="art-section" id="faq"><h2>よくある質問</h2><div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">戦車は恋愛で良いカード？</div><div class="faq-a">正位置は積極的なアプローチが実ります。障害があっても突破できるサインです。自分から動くことが吉です。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">戦車の逆位置は何を示す？</div><div class="faq-a">感情的な暴走・力任せ・方向性の喪失への警告です。力があっても、制御がなければただの破壊になります。</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">戦車が仕事で出たら？</div><div class="faq-a">競争に勝てる時期です。集中と自制心が武器になります。今は迷わず前進することが正解です。</div></div></div></section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>戦車（7番）は意志の力・勝利・前進・自己制御を象徴する勝者のカード。</li>
+      <li>正位置では困難を突破する意志力・勝利への突進・強い自己コントロールを示す。</li>
+      <li>逆位置では方向性の喪失・力の暴走・攻撃性・目標の見失いへの警告を示す。</li>
+      <li>恋愛では積極的な求愛や関係の主導権、仕事では競争に勝ち抜く推進力を示唆。</li>
+      <li>相反する力をひとつにまとめる意志こそが戦車の勝利の秘訣。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '🔮 戦車の意味を読んだら、実際に占ってみましょう';

@@ -56,6 +56,14 @@ ob_start();
       <div class="gv-cat">HAKKO</div>
     </div>
   </div>
+    <?php
+  $ctaTitle = 'あなたの守護霊を診断する';
+  $ctaText  = '生年月日から守護霊タイプを判定。どのタイプか確かめてみましょう。';
+  $ctaUrl   = '/guardian';
+  $ctaBtn   = '守護霊を診断する →';
+  require __DIR__.'/../../../inc/article-cta.php';
+  ?>
+
   <nav class="toc"><p class="toc-title">目次</p><ol>
     <li><a href="#about">白狐の精霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
@@ -80,6 +88,18 @@ ob_start();
     <h2>よくある質問</h2>
     <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>白狐の精霊はどんな人につきますか？</div><div class='faq-a'>知恵と適応力を持つ人、コミュニケーション能力が高い人、変化に柔軟に対応できる人に白狐がつくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>白狐と狐の精霊は同じですか？</div><div class='faq-a'>白狐は神の使いとして特別な地位にある霊狐です。一般的な狐の精霊より位が高く、稲荷神と直接つながる霊的存在とされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>白狐に守護された人の開運方法は？</div><div class='faq-a'>稲荷神社への参拝と、直感を大切にした行動が開運につながります。変化を恐れず新しい環境に飛び込むことがカギです。</div></div></div>
   </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul class="matome-list">
+      <li>白狐の精霊は知恵・縁結び・神聖さを司る守護霊。稲荷神社との縁が深い存在。</li>
+      <li>鋭い直感と洞察力を持ち、縁の下から人々をつなぐ役割を果たすことが多い。</li>
+      <li>恋愛では縁結びの力を持ち、不思議な縁で出会いがやってくることが多い。</li>
+      <li>占い・カウンセリング・外交・仲介業など、人と人をつなぐ分野が向いている。</li>
+      <li>稲荷神社への参拝や食物への感謝を大切にすることが、白狐守護の開運のポイント。</li>
+    </ul>
+  </section>
+
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';
