@@ -188,33 +188,33 @@ require __DIR__.'/../../inc/article-cta.php';
     <p class="group-label">🔵 アナリスト（NT）</p>
     <div class="type-grid">
       <a href="/articles/mbti/intj/" class="type-card"><div class="type-code">INTJ</div><div class="type-name">建築家</div><div class="type-kw">戦略的・独立・完璧主義</div></a>
-      <div class="type-card"><div class="type-code">INTP</div><div class="type-name">論理学者</div><div class="type-kw">分析的・創造的・内向的</div></div>
-      <div class="type-card"><div class="type-code">ENTJ</div><div class="type-name">指揮官</div><div class="type-kw">リーダー・断固・カリスマ</div></div>
-      <div class="type-card"><div class="type-code">ENTP</div><div class="type-name">討論者</div><div class="type-kw">革新的・挑戦的・機知</div></div>
+      <a href="/articles/mbti/intp/" class="type-card"><div class="type-code">INTP</div><div class="type-name">論理学者</div><div class="type-kw">分析的・創造的・内向的</div></a>
+      <a href="/articles/mbti/entj/" class="type-card"><div class="type-code">ENTJ</div><div class="type-name">指揮官</div><div class="type-kw">リーダー・断固・カリスマ</div></a>
+      <a href="/articles/mbti/entp/" class="type-card"><div class="type-code">ENTP</div><div class="type-name">討論者</div><div class="type-kw">革新的・挑戦的・機知</div></a>
     </div>
 
     <p class="group-label">🟢 外交官（NF）</p>
     <div class="type-grid">
-      <div class="type-card"><div class="type-code">INFJ</div><div class="type-name">提唱者</div><div class="type-kw">理想主義・洞察力・使命感</div></div>
-      <div class="type-card"><div class="type-code">INFP</div><div class="type-name">仲介者</div><div class="type-kw">詩的・繊細・忠実</div></div>
-      <div class="type-card"><div class="type-code">ENFJ</div><div class="type-name">主人公</div><div class="type-kw">カリスマ・共感・指導力</div></div>
-      <div class="type-card"><div class="type-code">ENFP</div><div class="type-name">運動家</div><div class="type-kw">熱狂的・創造的・社交的</div></div>
+      <a href="/articles/mbti/infj/" class="type-card"><div class="type-code">INFJ</div><div class="type-name">提唱者</div><div class="type-kw">理想主義・洞察力・使命感</div></a>
+      <a href="/articles/mbti/infp/" class="type-card"><div class="type-code">INFP</div><div class="type-name">仲介者</div><div class="type-kw">詩的・繊細・忠実</div></a>
+      <a href="/articles/mbti/enfj/" class="type-card"><div class="type-code">ENFJ</div><div class="type-name">主人公</div><div class="type-kw">カリスマ・共感・指導力</div></a>
+      <a href="/articles/mbti/enfp/" class="type-card"><div class="type-code">ENFP</div><div class="type-name">運動家</div><div class="type-kw">熱狂的・創造的・社交的</div></a>
     </div>
 
     <p class="group-label">🟡 番人（SJ）</p>
     <div class="type-grid">
-      <div class="type-card"><div class="type-code">ISTJ</div><div class="type-name">管理者</div><div class="type-kw">誠実・責任感・伝統重視</div></div>
-      <div class="type-card"><div class="type-code">ISFJ</div><div class="type-name">擁護者</div><div class="type-kw">思いやり・勤勉・献身</div></div>
-      <div class="type-card"><div class="type-code">ESTJ</div><div class="type-name">幹部</div><div class="type-kw">組織力・実直・リーダー</div></div>
-      <div class="type-card"><div class="type-code">ESFJ</div><div class="type-name">領事</div><div class="type-kw">協調性・思いやり・社交</div></div>
+      <a href="/articles/mbti/istj/" class="type-card"><div class="type-code">ISTJ</div><div class="type-name">管理者</div><div class="type-kw">誠実・責任感・伝統重視</div></a>
+      <a href="/articles/mbti/isfj/" class="type-card"><div class="type-code">ISFJ</div><div class="type-name">擁護者</div><div class="type-kw">思いやり・勤勉・献身</div></a>
+      <a href="/articles/mbti/estj/" class="type-card"><div class="type-code">ESTJ</div><div class="type-name">幹部</div><div class="type-kw">組織力・実直・リーダー</div></a>
+      <a href="/articles/mbti/esfj/" class="type-card"><div class="type-code">ESFJ</div><div class="type-name">領事</div><div class="type-kw">協調性・思いやり・社交</div></a>
     </div>
 
     <p class="group-label">🔴 探検家（SP）</p>
     <div class="type-grid">
-      <div class="type-card"><div class="type-code">ISTP</div><div class="type-name">巨匠</div><div class="type-kw">大胆・実用的・器用</div></div>
-      <div class="type-card"><div class="type-code">ISFP</div><div class="type-name">冒険家</div><div class="type-kw">柔軟・魅力的・自発的</div></div>
-      <div class="type-card"><div class="type-code">ESTP</div><div class="type-name">起業家</div><div class="type-kw">行動的・エネルギッシュ・観察力</div></div>
-      <div class="type-card"><div class="type-code">ESFP</div><div class="type-name">エンターテイナー</div><div class="type-kw">自発的・楽観的・明るい</div></div>
+      <a href="/articles/mbti/istp/" class="type-card"><div class="type-code">ISTP</div><div class="type-name">巨匠</div><div class="type-kw">大胆・実用的・器用</div></a>
+      <a href="/articles/mbti/isfp/" class="type-card"><div class="type-code">ISFP</div><div class="type-name">冒険家</div><div class="type-kw">柔軟・魅力的・自発的</div></a>
+      <a href="/articles/mbti/estp/" class="type-card"><div class="type-code">ESTP</div><div class="type-name">起業家</div><div class="type-kw">行動的・エネルギッシュ・観察力</div></a>
+      <a href="/articles/mbti/esfp/" class="type-card"><div class="type-code">ESFP</div><div class="type-name">エンターテイナー</div><div class="type-kw">自発的・楽観的・明るい</div></a>
     </div>
   </section>
 
