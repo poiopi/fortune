@@ -95,7 +95,11 @@
       "Bash(curl -s \"https://life-fun.net/tarot.php\")",
       "Bash(curl -sI \"https://life-fun.net/tarot.php\")",
       "Bash(curl -sI \"https://life-fun.net/tarot\")",
-      "Bash(curl -s \"https://life-fun.net/tarot\")"
+      "Bash(curl -s \"https://life-fun.net/tarot\")",
+      "Bash(curl -s \"https://test.life-fun.net/profile.php\")",
+      "Bash(curl -sI \"https://test.life-fun.net/profile.php\")",
+      "Bash(curl -s \"https://test.life-fun.net/profile\" -o /tmp/profile_stg.html -w \"%{http_code}\\\\n\")",
+      "Read(//tmp/**)"
     ]
   }
 }
