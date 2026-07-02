@@ -940,7 +940,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   const DRAG_THRESHOLD = 6; // px
   let pointerIsDown = false;
   let pointerDownX = 0;
-  let downTargetLink = null;
+  let moved = false; // このポインタ操作でドラッグ判定（しきい値超え）が発生したか
 
   track.addEventListener('pointerdown', e => {
     if(isMobile()) return;
@@ -948,7 +948,6 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     pointerDownX = e.clientX;
     dragStartX   = e.clientX;
     dragStartPos = pos;
-    downTargetLink = e.target.closest('.fcard');
     track.setPointerCapture(e.pointerId);
   });
   track.addEventListener('pointermove', e => {
@@ -957,6 +956,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       if(Math.abs(e.clientX - pointerDownX) < DRAG_THRESHOLD) return;
       /* しきい値を超えたらここで初めてドラッグ開始 */
       dragging = true;
+      moved = true;
       track.classList.add('dragging');
     }
     e.preventDefault();
@@ -969,18 +969,31 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     track.scrollLeft = pos;
   });
   ['pointerup','pointercancel'].forEach(ev => {
-    track.addEventListener(ev, () => {
+    track.addEventListener(ev, e => {
       pointerIsDown = false;
+      track.releasePointerCapture(e.pointerId);
       if(dragging){
         dragging = false;
         track.classList.remove('dragging');
         targetPos = pos;  /* 離した位置から自動スクロール再開 */
-        /* ドラッグ操作の終わりなので、直後のクリックでのページ遷移を止める */
-        if(downTargetLink) downTargetLink.addEventListener('click', ev2 => ev2.preventDefault(), { once: true });
       }
-      downTargetLink = null;
+      /* moved はここで即リセットしない：直後に同期発火するclickイベント側で
+         先に参照させる必要があるため。ただし、要素外でpointerupした場合など
+         clickが発火しないケースに備え、次のイベントループでの遅延リセットを
+         安全策として必ず入れておく（reset漏れによる誤爆の再発防止） */
+      setTimeout(() => { moved = false; }, 0);
     });
   });
+
+  /* ドラッグ操作の直後だけ、そのクリックによるページ遷移を止める。
+     捕捉フェーズ(true)でリンクのデフォルト動作より先に判定する。 */
+  track.addEventListener('click', e => {
+    if(moved){
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    moved = false; // 判定に使ったら必ずリセット（reset漏れ防止）
+  }, true);
 
   /* 初期化 */
   function init(){
