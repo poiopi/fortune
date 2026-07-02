@@ -936,18 +936,30 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   track.addEventListener('mouseenter', () => { if(!isMobile()) paused = true;  });
   track.addEventListener('mouseleave', () => { if(!isMobile()) paused = false; });
 
-  /* ドラッグ */
+  /* ドラッグ（一定距離動いたときだけドラッグ扱いにし、単純クリックはリンクとして機能させる） */
+  const DRAG_THRESHOLD = 6; // px
+  let pointerIsDown = false;
+  let pointerDownX = 0;
+  let downTargetLink = null;
+
   track.addEventListener('pointerdown', e => {
     if(isMobile()) return;
-    e.preventDefault();           /* リンクのドラッグ干渉を防ぐ */
-    dragging     = true;
+    pointerIsDown = true;
+    pointerDownX = e.clientX;
     dragStartX   = e.clientX;
     dragStartPos = pos;
-    track.classList.add('dragging');
+    downTargetLink = e.target.closest('.fcard');
     track.setPointerCapture(e.pointerId);
   });
   track.addEventListener('pointermove', e => {
-    if(!dragging) return;
+    if(!pointerIsDown) return;
+    if(!dragging){
+      if(Math.abs(e.clientX - pointerDownX) < DRAG_THRESHOLD) return;
+      /* しきい値を超えたらここで初めてドラッグ開始 */
+      dragging = true;
+      track.classList.add('dragging');
+    }
+    e.preventDefault();
     const dx = dragStartX - e.clientX;
     const ow = origWidth();
     let next = dragStartPos + dx;
@@ -958,10 +970,15 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   });
   ['pointerup','pointercancel'].forEach(ev => {
     track.addEventListener(ev, () => {
-      if(!dragging) return;
-      dragging = false;
-      track.classList.remove('dragging');
-      targetPos = pos;  /* 離した位置から自動スクロール再開 */
+      pointerIsDown = false;
+      if(dragging){
+        dragging = false;
+        track.classList.remove('dragging');
+        targetPos = pos;  /* 離した位置から自動スクロール再開 */
+        /* ドラッグ操作の終わりなので、直後のクリックでのページ遷移を止める */
+        if(downTargetLink) downTargetLink.addEventListener('click', ev2 => ev2.preventDefault(), { once: true });
+      }
+      downTargetLink = null;
     });
   });
 
