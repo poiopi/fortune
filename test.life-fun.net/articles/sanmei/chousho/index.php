@@ -184,4 +184,4 @@ ob_start();
 <?php $currentSlug='sanmei';$pageType='article';require __DIR__.'/../../../inc/footer.php'; ?>
 </body>
 </html>
-<?php $html=ob_get_clean(); echo autoLink($html,'sanmei'); ?>
+<?php $html=ob_get_clean(); echo autoLink($html, 'chousho'); ?>

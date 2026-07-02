@@ -250,4 +250,4 @@ ob_start();
 <?php $currentSlug='numerology'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
 </body>
 </html>
-<?php $html=ob_get_clean(); echo autoLink($html,'numerology'); ?>
+<?php $html=ob_get_clean(); echo autoLink($html,'numerology-3'); ?>
