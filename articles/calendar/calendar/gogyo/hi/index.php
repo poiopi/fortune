@@ -1,0 +1,252 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__ . '/../../../../inc/auto-link.php';
+ob_start();
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P1EKB3WWX8');
+  </script>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/gogyo/hi/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="五行「火（か）」の意味・性質・ラッキーカラー・相性を解説。情熱と活力のエネルギーを持つ火のエネルギーを日常に取り入れる方法を紹介します。">
+  <title>五行「火（か）」とは？意味とラッキーカラーをわかりやすく解説</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/article-components.css">
+  <style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ff-serif:'Shippori Mincho',serif;
+    --ff-sans:'Zen Kaku Gothic New',sans-serif;
+    --ff-mono:'DM Mono',monospace;
+    --accent:#7c4dce;
+    --accent-lt:#9b72ef;
+    --gold:#c9a84c;
+    --text:#1a1a2e;
+    --muted:#6b6b8a;
+    --border:#e5e3ee;
+    --bg:#faf7ff;
+    --bg2:#f8f7fc;
+  }
+  html{font-size:16px;scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
+  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+  .art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}
+  .art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}
+  .art-logo em{font-style:italic;color:var(--gold)}
+  .art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}
+  .art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
+  .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}
+  .breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}
+  .breadcrumb a{color:var(--muted);text-decoration:none}
+  .breadcrumb a:hover{color:var(--accent)}
+  .breadcrumb span{margin:0 .4rem}
+  .art-hero{padding:2rem 0 1.5rem;border-bottom:1px solid var(--border)}
+  .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
+  .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
+  .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
+  .basic-info{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.2rem;font-size:.88rem}
+  .basic-info dt{color:var(--muted);font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.04em}
+  .basic-info dd{color:var(--text)}
+  .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
+  .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
+  .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
+  .toc li{font-size:.88rem}
+  .toc a{color:var(--accent);text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+  .art-section{padding:2.5rem 0;border-bottom:1px solid var(--border)}
+  .art-section:last-child{border-bottom:none}
+  .art-section h2{font-family:var(--ff-serif);font-size:1.35rem;font-weight:700;color:var(--text);margin-bottom:1rem;padding-left:.9rem;border-left:3px solid var(--accent)}
+  .art-section h3{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--text);margin:1.5rem 0 .6rem}
+  .art-section p{font-size:.93rem;line-height:1.9;color:#333;margin-bottom:.9rem}
+  .art-section p:last-child{margin-bottom:0}
+  .art-section ul{padding-left:1.4rem;font-size:.93rem;line-height:1.9;color:#333}
+  .art-section li{margin-bottom:.4rem}
+  .faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
+  .faq-item{border:1px solid var(--border);border-radius:10px;overflow:hidden}
+  .faq-q{font-size:.9rem;font-weight:500;padding:.9rem 1.1rem;background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+  .faq-q::after{content:'＋';font-family:var(--ff-mono);color:var(--accent);flex-shrink:0;transition:transform .2s}
+  .faq-item.open .faq-q::after{transform:rotate(45deg)}
+  .faq-a{font-size:.88rem;color:#444;line-height:1.85;padding:0 1.1rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
+  .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
+  .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
+  .al-link:hover{color:var(--accent-lt)}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"火の五行に合う色は何ですか？","acceptedAnswer":{"@type":"Answer","text":"赤・オレンジ・紫が火のエネルギーに対応する色です。情熱・活力を高めたいときに、これらの色を服や小物に取り入れるのがおすすめです。"}},
+      {"@type":"Question","name":"火の五行の人はどんな性格ですか？","acceptedAnswer":{"@type":"Answer","text":"火の気が強い人は、情熱的で明るく、人を惹きつけるカリスマ性を持つとされます。行動力があり社交的な一方、感情の起伏が激しくなりやすい面もあるといわれます。"}},
+      {"@type":"Question","name":"火は何に剋されますか？","acceptedAnswer":{"@type":"Answer","text":"五行の相剋関係では「水は火を剋す」とされます。水の気が強すぎると火のエネルギーが弱まるという考え方です。逆に火は金を剋す（火は金属を溶かす）関係にあります。"}}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
+      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
+      {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
+      {"@type":"ListItem","position":4,"name":"陰陽五行とは","item":"https://life-fun.net/articles/calendar/gogyo/"},
+      {"@type":"ListItem","position":5,"name":"火とは","item":"https://life-fun.net/articles/calendar/gogyo/hi/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="art-header">
+  <div class="art-header-inner">
+    <a href="/" class="art-logo">占い<em>Portal</em></a>
+    <a href="/calendar" class="art-back">📅 開運カレンダーを見る →</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumb">
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/gogyo/">陰陽五行とは</a><span>›</span>火とは
+  </nav>
+
+  <div class="art-hero">
+    <span class="art-label">HI · 五行</span>
+    <h1>五行「火（か）」とは？<br>意味とラッキーカラーをわかりやすく解説</h1>
+    <p class="art-lead">火（か）は陰陽五行の一つで、情熱・活力・拡散を象徴するエネルギーです。燃え上がる炎のように、人を惹きつけ場を明るくするパワーを表します。意味・ラッキーカラー・相性まで詳しく解説します。</p>
+  </div>
+
+  <dl class="basic-info">
+    <dt>読み方</dt><dd>か</dd>
+    <dt>象徴するエネルギー</dt><dd>情熱・活力・拡散</dd>
+    <dt>ラッキーカラー</dt><dd>赤・オレンジ・紫</dd>
+    <dt>季節</dt><dd>夏</dd>
+  </dl>
+
+  <?php
+  $ctaTitle = '📅 今日のラッキーカラーを確認する';
+  $ctaText  = '五行に基づいたラッキーカラーを毎日更新でお届け。';
+  $ctaUrl   = '/calendar';
+  $ctaBtn   = '開運カレンダーを見る →';
+  require __DIR__.'/../../../../inc/article-cta.php';
+  ?>
+
+  <nav class="toc">
+    <p class="toc-title">目次</p>
+    <ol>
+      <li><a href="#about">火の意味</a></li>
+      <li><a href="#color">火のラッキーカラー</a></li>
+      <li><a href="#personality">火の気を持つ人の性格</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#matome">まとめ</a></li>
+    </ol>
+  </nav>
+
+  <section class="art-section" id="about">
+    <h2>火の意味</h2>
+    <p>火（か）は陰陽五行の中で、燃え上がる炎のエネルギーを象徴する要素です。情熱・活力・拡散・華やかさを表し、五行の循環の中では夏の季節に対応します。物事を勢いよく広げ、周囲を明るく照らすエネルギーとして知られています。</p>
+    <p>相生の関係では、火は土を生み出す存在です（燃え尽きたものが灰となり土になる）。一方、相剋の関係では、火は金を溶かし（火剋金）、水によって消される（水剋火）という関係にあります。</p>
+  </section>
+
+  <section class="art-section" id="color">
+    <h2>火のラッキーカラー</h2>
+    <p>火の気に対応する色は赤・オレンジ・紫です。情熱・エネルギー・活力を象徴する色で、行動力や自信を高めたいときに効果的とされています。赤いアクセサリーを身につける・オレンジ色の小物を使う・情熱を表現したい場面で赤を取り入れるといった活用法があります。</p>
+    <p>新しいことに挑戦する勇気が欲しいとき・人前で自分をアピールしたいときは、火のラッキーカラーである赤系の色を意識的に取り入れると良いとされています。</p>
+  </section>
+
+  <section class="art-section" id="personality">
+    <h2>火の気を持つ人の性格</h2>
+    <p>四柱推命や九星気学において「火」の気が強い人は、情熱的で明るく、人を惹きつけるカリスマ性を持つとされています。行動力があり、周囲を巻き込むリーダーシップを発揮する場面も多いタイプです。</p>
+    <p>一方で、感情の起伏が激しくなりやすい・熱しやすく冷めやすいといった面もあるといわれます。火の気が強い人は、時には冷静さを意識することで、持ち前の情熱をより効果的に活かせるとされています。</p>
+  </section>
+
+  <section class="art-section" id="faq">
+    <h2>よくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">火の五行に合う色は何ですか？</div>
+        <div class="faq-a">赤・オレンジ・紫が火のエネルギーに対応する色です。情熱・活力を高めたいときに、これらの色を服や小物に取り入れるのがおすすめです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">火の五行の人はどんな性格ですか？</div>
+        <div class="faq-a">火の気が強い人は、情熱的で明るく、人を惹きつけるカリスマ性を持つとされます。行動力があり社交的な一方、感情の起伏が激しくなりやすい面もあるといわれます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">火は何に剋されますか？</div>
+        <div class="faq-a">五行の相剋関係では「水は火を剋す」とされます。水の気が強すぎると火のエネルギーが弱まるという考え方です。逆に火は金を剋す（火は金属を溶かす）関係にあります。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="matome">
+    <h2>まとめ</h2>
+    <ul>
+      <li>火は情熱・活力・拡散を象徴する五行の一つで、夏の季節に対応する。</li>
+      <li>ラッキーカラーは赤・オレンジ・紫。行動力や自信を後押ししてくれるとされる。</li>
+      <li>火の気が強い人は情熱的でカリスマ性があるが、感情の起伏が激しくなりやすい。</li>
+      <li>相生では土を生み、相剋では金を剋し、水に剋される関係にある。</li>
+    </ul>
+  </section>
+
+  <?php
+  $ctaTitle = '📅 今日のラッキーカラーを確認する';
+  $ctaText  = '吉方位・ラッキーカラー・運気の波を毎日更新でお届け。';
+  $ctaUrl   = '/calendar';
+  $ctaBtn   = '開運カレンダーを見る →';
+  require __DIR__.'/../../../../inc/article-cta.php';
+  ?>
+
+  <?php
+  $prevUrl   = '/articles/calendar/gogyo/ki/';
+  $prevTitle = '木';
+  $nextUrl   = '/articles/calendar/gogyo/tsuchi/';
+  $nextTitle = '土';
+  $listUrl   = '/articles/calendar/gogyo/';
+  $listTitle = '五行一覧';
+  require __DIR__.'/../../../../inc/article-nav.php';
+  ?>
+
+  <section class="art-section" id="related">
+    <h2>関連コンテンツ</h2>
+    <p>五行や暦についてさらに詳しく知りたい方はこちら。</p>
+    <?php
+    $relatedItems = [
+      ['label'=>'陰陽五行とは', 'title'=>'木・火・土・金・水の関係を知る →', 'url'=>'/articles/calendar/gogyo/'],
+      ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
+      ['label'=>'九星気学とは', 'title'=>'今年・来年の運気の流れを知る →', 'url'=>'/articles/kyusei/'],
+    ];
+    require __DIR__.'/../../../../inc/article-related.php';
+    ?>
+  </section>
+
+</div>
+
+<script>
+function toggleFaq(el){
+  const item = el.parentElement;
+  item.classList.toggle('open');
+}
+</script>
+
+<?php $currentSlug='gogyo-hi'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
+</body>
+</html>
+<?php
+$html = ob_get_clean();
+echo autoLink($html, 'gogyo-hi');
+?>

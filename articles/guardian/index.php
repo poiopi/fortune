@@ -202,6 +202,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p class="cat-heading">精霊系</p>
     <div class="type-grid">
       <a href="/articles/guardian/daichi/" class="type-card"><span class="type-emoji">🌿</span><span class="type-name">大地の精霊</span><span class="type-cat">精霊系</span></a>
+      <a href="/articles/guardian/mori-kenja/" class="type-card"><span class="type-emoji">🌳</span><span class="type-name">森の賢者霊</span><span class="type-cat">精霊系</span></a>
       <a href="/articles/guardian/kaze/" class="type-card"><span class="type-emoji">🌬️</span><span class="type-name">風の精霊</span><span class="type-cat">精霊系</span></a>
       <a href="/articles/guardian/honoo/" class="type-card"><span class="type-emoji">🔥</span><span class="type-name">炎の守護者</span><span class="type-cat">精霊系</span></a>
       <a href="/articles/guardian/umi/" class="type-card"><span class="type-emoji">🌊</span><span class="type-name">海の守護者</span><span class="type-cat">精霊系</span></a>
