@@ -1,9 +1,21 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__.'/inc/nav-cards.php';
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P1EKB3WWX8');</script>
 <meta charset="UTF-8">
+<link rel="canonical" href="https://life-fun.net/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【デザイン案2】無料占いポータル</title>
+<meta name="description" content="タロット占い・数秘術・九星気学・相性診断・姓名判断など無料の占いが揃う占いポータル。生年月日や名前を入力するだけで鑑定結果をすぐに表示します。">
+<title>無料占いポータル｜タロット・数秘術・九星気学・姓名判断</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
@@ -484,36 +496,37 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 <!-- ══ HEADER ══ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="#" class="logo">⛩ 占い<em>Portal</em></a>
+    <a href="/" class="logo">⛩ 占い<em>Portal</em></a>
     <nav class="header-nav">
-      <a href="#" class="cur">✦ TOP</a>
-      <a href="#">タロット</a>
-      <a href="#">四柱推命</a>
-      <a href="#">九星気学</a>
-      <a href="#">解説ガイド</a>
+      <a href="/" class="cur">✦ TOP</a>
+      <a href="/tarot">タロット</a>
+      <a href="/shichu">四柱推命</a>
+      <a href="/kyusei">九星気学</a>
+      <a href="/articles/">解説ガイド</a>
     </nav>
+    <div id="google_translate_element"></div>
     <button class="sp-menu-btn" onclick="toggleMenu()">☰ メニュー</button>
   </div>
   <div class="header-gold-line"></div>
 </header>
 
 <div class="sp-dropdown" id="spMenu">
-  <a href="#">✦ トップ</a>
-  <a href="#">✨ 三星統合鑑定</a>
-  <a href="#">🃏 タロット占い</a>
-  <a href="#">🔯 四柱推命</a>
-  <a href="#">☯ 算命学</a>
-  <a href="#">⭐ 西洋占星術</a>
-  <a href="#">🧠 MBTI×星座</a>
-  <a href="#">🔢 数秘術</a>
-  <a href="#">⭐ 九星気学</a>
-  <a href="#">⚔️ RPG占い</a>
-  <a href="#">💑 相性診断</a>
-  <a href="#">🌀 前世診断</a>
-  <a href="#">👻 守護霊診断</a>
-  <a href="#">✍️ 姓名判断</a>
-  <a href="#">🎭 芸名診断</a>
-  <a href="#">📖 解説ガイド</a>
+  <a href="/">✦ トップ</a>
+  <a href="/sansei">✨ 三星統合鑑定</a>
+  <a href="/tarot">🃏 タロット占い</a>
+  <a href="/shichu">🔯 四柱推命</a>
+  <a href="/sanmei">☯ 算命学</a>
+  <a href="/seiza">⭐ 西洋占星術</a>
+  <a href="/mbti">🧠 MBTI×星座</a>
+  <a href="/numerology">🔢 数秘術</a>
+  <a href="/kyusei">⭐ 九星気学</a>
+  <a href="/rpg">⚔️ RPG占い</a>
+  <a href="/aisho">💑 相性診断</a>
+  <a href="/zense">🌀 前世診断</a>
+  <a href="/guardian">👻 守護霊診断</a>
+  <a href="/seimei">✍️ 姓名判断</a>
+  <a href="/geimei">🎭 芸名診断</a>
+  <a href="/articles/">📖 解説ガイド</a>
 </div>
 
 <!-- ══ HERO ══ -->
@@ -526,7 +539,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <span class="hero-eyebrow h-d2">Free Fortune Telling · 占いPortal</span>
     <div class="hero-deco h-d3"><span>✦ ── ✦ ── ✦</span></div>
     <h1 class="hero-h1 h-d4">無料占いポータル</h1>
-    <span class="hero-sub h-d5">星と運命の交差点 · 12種類の占術で今を読み解く</span>
+    <span class="hero-sub h-d5">星と運命の交差点 · 14種類の占術で今を読み解く</span>
     <div class="hero-pillars h-d6">
       <span class="pillar">♈ 西洋占星術</span>
       <span class="pillar">🔮 タロット</span>
@@ -558,13 +571,13 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
     <h2 class="section-title">占いを選ぶ</h2>
-    <p class="section-sub">13種類の占術から、今のあなたに合ったものを</p>
+    <p class="section-sub">14種類の占術から、今のあなたに合ったものを</p>
   </div>
 
   <div class="carousel-outer">
     <div class="carousel-track" id="cTrack">
 
-      <a href="#" class="fcard ct-s fade-up">
+      <a href="/sansei" class="fcard ct-s fade-up">
         <span class="fc-icon">✨</span>
         <span class="fc-lbl">Integrated</span>
         <div class="fc-name">三星統合鑑定</div>
@@ -572,7 +585,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">鑑定する →</span>
       </a>
 
-      <a href="#" class="fcard ct-v fade-up">
+      <a href="/tarot" class="fcard ct-v fade-up">
         <span class="fc-icon">🃏</span>
         <span class="fc-lbl">Tarot</span>
         <div class="fc-name">タロット占い</div>
@@ -580,7 +593,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">カードを引く →</span>
       </a>
 
-      <a href="#" class="fcard ct-g fade-up">
+      <a href="/shichu" class="fcard ct-g fade-up">
         <span class="fc-icon">🔯</span>
         <span class="fc-lbl">Shichu Suimei</span>
         <div class="fc-name">四柱推命</div>
@@ -588,7 +601,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">算出する →</span>
       </a>
 
-      <a href="#" class="fcard ct-t fade-up">
+      <a href="/sanmei" class="fcard ct-t fade-up">
         <span class="fc-icon">☯</span>
         <span class="fc-lbl">Sanmeigaku</span>
         <div class="fc-name">算命学鑑定</div>
@@ -596,7 +609,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">鑑定する →</span>
       </a>
 
-      <a href="#" class="fcard ct-r fade-up">
+      <a href="/seiza" class="fcard ct-r fade-up">
         <span class="fc-icon">⭐</span>
         <span class="fc-lbl">Western Astrology</span>
         <div class="fc-name">西洋占星術</div>
@@ -604,7 +617,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">鑑定する →</span>
       </a>
 
-      <a href="#" class="fcard ct-i fade-up">
+      <a href="/mbti" class="fcard ct-i fade-up">
         <span class="fc-icon">🧠</span>
         <span class="fc-lbl">MBTI × Zodiac</span>
         <div class="fc-name">MBTI×星座診断</div>
@@ -612,7 +625,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">診断する →</span>
       </a>
 
-      <a href="#" class="fcard ct-t fade-up">
+      <a href="/numerology" class="fcard ct-t fade-up">
         <span class="fc-icon">🔢</span>
         <span class="fc-lbl">Numerology</span>
         <div class="fc-name">数秘術診断</div>
@@ -620,7 +633,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">診断する →</span>
       </a>
 
-      <a href="#" class="fcard ct-a fade-up">
+      <a href="/kyusei" class="fcard ct-a fade-up">
         <span class="fc-icon">⭐</span>
         <span class="fc-lbl">Nine Star Ki</span>
         <div class="fc-name">九星気学診断</div>
@@ -628,7 +641,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">診断する →</span>
       </a>
 
-      <a href="#" class="fcard ct-gn fade-up">
+      <a href="/rpg" class="fcard ct-gn fade-up">
         <span class="fc-icon">⚔️</span>
         <span class="fc-lbl">RPG Fortune</span>
         <div class="fc-name">RPG占いの村</div>
@@ -636,7 +649,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">冒険する →</span>
       </a>
 
-      <a href="#" class="fcard ct-r fade-up">
+      <a href="/aisho" class="fcard ct-r fade-up">
         <span class="fc-icon">💑</span>
         <span class="fc-lbl">Compatibility</span>
         <div class="fc-name">二人の相性診断</div>
@@ -644,7 +657,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">診断する →</span>
       </a>
 
-      <a href="#" class="fcard ct-c fade-up">
+      <a href="/zense" class="fcard ct-c fade-up">
         <span class="fc-icon">🌀</span>
         <span class="fc-lbl">Past Life</span>
         <div class="fc-name">前世診断</div>
@@ -652,7 +665,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">診断する →</span>
       </a>
 
-      <a href="#" class="fcard ct-g fade-up">
+      <a href="/guardian" class="fcard ct-g fade-up">
         <span class="fc-icon">👻</span>
         <span class="fc-lbl">Guardian Spirit</span>
         <div class="fc-name">守護霊診断</div>
@@ -660,12 +673,20 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">召喚する →</span>
       </a>
 
-      <a href="#" class="fcard ct-v fade-up">
+      <a href="/seimei" class="fcard ct-v fade-up">
         <span class="fc-icon">✍️</span>
         <span class="fc-lbl">Seimei</span>
         <div class="fc-name">姓名判断</div>
         <div class="fc-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む。</div>
         <span class="fc-btn">鑑定する →</span>
+      </a>
+
+      <a href="/geimei" class="fcard ct-a fade-up">
+        <span class="fc-icon">🎭</span>
+        <span class="fc-lbl">Geimei</span>
+        <div class="fc-name">芸名診断</div>
+        <div class="fc-desc">大喜利で見つける最強の芸名。</div>
+        <span class="fc-btn">診断する →</span>
       </a>
 
     </div><!-- /carousel-track -->
@@ -710,7 +731,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
             <div class="ochip"><span class="ochip-l">ITEM</span>&nbsp;天然石ブレスレット</div>
             <div class="ochip"><span class="ochip-l">ACTION</span>&nbsp;深呼吸を3回</div>
           </div>
-          <div class="oracle-more"><a href="#">詳しい開運カレンダーを見る →</a></div>
+          <div class="oracle-more"><a href="/calendar">詳しい開運カレンダーを見る →</a></div>
         </div>
       </div>
     </div>
@@ -733,37 +754,37 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <p class="section-sub">各占術の仕組み・歴史・読み方をわかりやすく解説</p>
 
     <div class="guide-grid">
-      <a href="#" class="gcard fade-up" style="--c1:#9b72ef;--c2:#c85080">
+      <a href="/articles/tarot/" class="gcard fade-up" style="--c1:#9b72ef;--c2:#c85080">
         <span class="gc-lbl">Tarot</span>
         <div class="gc-name">🃏 タロット占いとは</div>
         <div class="gc-desc">22枚の意味・歴史・正位置逆位置の読み方</div>
         <span class="gc-link">解説を読む →</span>
       </a>
-      <a href="#" class="gcard fade-up" style="--c1:#c9a84c;--c2:#9b72ef">
+      <a href="/articles/shichu/" class="gcard fade-up" style="--c1:#c9a84c;--c2:#9b72ef">
         <span class="gc-lbl">Shichu Suimei</span>
         <div class="gc-name">🔯 四柱推命とは</div>
         <div class="gc-desc">命式・十神・大運・天中殺の見方</div>
         <span class="gc-link">解説を読む →</span>
       </a>
-      <a href="#" class="gcard fade-up" style="--c1:#3ab8b0;--c2:#c9a84c">
+      <a href="/articles/numerology/" class="gcard fade-up" style="--c1:#3ab8b0;--c2:#c9a84c">
         <span class="gc-lbl">Numerology</span>
         <div class="gc-name">🔢 数秘術とは</div>
         <div class="gc-desc">ライフパスナンバーの計算方法と意味</div>
         <span class="gc-link">解説を読む →</span>
       </a>
-      <a href="#" class="gcard fade-up" style="--c1:#c85080;--c2:#9b72ef">
+      <a href="/articles/mbti/" class="gcard fade-up" style="--c1:#c85080;--c2:#9b72ef">
         <span class="gc-lbl">MBTI</span>
         <div class="gc-name">🧠 MBTIとは</div>
         <div class="gc-desc">16タイプの特徴と星座との組み合わせ</div>
         <span class="gc-link">解説を読む →</span>
       </a>
-      <a href="#" class="gcard fade-up" style="--c1:#9b72ef;--c2:#3ab8b0">
+      <a href="/articles/kyusei/" class="gcard fade-up" style="--c1:#9b72ef;--c2:#3ab8b0">
         <span class="gc-lbl">Nine Star Ki</span>
         <div class="gc-name">⭐ 九星気学とは</div>
         <div class="gc-desc">本命星・月命星と吉方位の求め方</div>
         <span class="gc-link">解説を読む →</span>
       </a>
-      <a href="#" class="gcard fade-up" style="--c1:#c9a84c;--c2:#3ab8b0">
+      <a href="/articles/sanmei/" class="gcard fade-up" style="--c1:#c9a84c;--c2:#3ab8b0">
         <span class="gc-lbl">Sanmeigaku</span>
         <div class="gc-name">☯ 算命学とは</div>
         <div class="gc-desc">元命・主星・従星から才能と本質を読む</div>
@@ -772,22 +793,20 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     </div>
 
     <div class="guide-more">
-      <a href="#">すべての解説を見る（全12カテゴリ）→</a>
+      <a href="/articles/">すべての解説を見る（全12カテゴリ）→</a>
     </div>
   </div>
 </section>
 
-<!-- ══ FOOTER ══ -->
-<footer>
-  <div class="footer-line"></div>
-  <div class="footer-links">
-    <a href="#">プライバシーポリシー</a>
-    <a href="#">免責事項</a>
-    <a href="#">お問い合わせ</a>
-    <a href="#">プロフィール</a>
+<!-- ══ FOOTER（共通フッター：内部リンク構造を移植） ══ -->
+<div class="parallax-band">
+  <div class="pb-content">
+    <div class="pb-gold-line"></div>
+    <span class="pb-kamon">✦ ── ⛩ ── ✦</span>
+    <div class="pb-gold-line"></div>
   </div>
-  <p class="footer-copy">© 2026 占いPortal — Entertainment Fortune Telling</p>
-</footer>
+</div>
+<?php $currentPage = 'top'; require __DIR__.'/inc/footer.php'; ?>
 
 <script>
 /* ══ Canvas 星空 ══ */
