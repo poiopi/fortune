@@ -74,6 +74,12 @@ ob_start();
   .art-section h3{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--text);margin:1.5rem 0 .6rem}
   .art-section p{font-size:.93rem;line-height:1.9;color:#333;margin-bottom:.9rem}
   .art-section p:last-child{margin-bottom:0}
+  .type-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin-top:1rem}
+  .type-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s;display:block;text-decoration:none;color:inherit}
+  .type-card:hover{border-color:var(--accent-lt)}
+  .type-code{font-family:var(--ff-mono);font-size:.8rem;color:var(--accent);letter-spacing:.08em;margin-bottom:.25rem}
+  .type-name{font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;margin-bottom:.3rem}
+  .type-kw{font-size:.75rem;color:var(--muted)}
   .kichijitsu-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.88rem}
   .kichijitsu-table th{background:var(--accent);color:#fff;padding:.65rem .9rem;text-align:left;font-family:var(--ff-serif);font-weight:600}
   .kichijitsu-table td{padding:.65rem .9rem;border-bottom:1px solid var(--border);line-height:1.7}
@@ -151,6 +157,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p class="toc-title">目次</p>
     <ol>
       <li><a href="#about">開運カレンダーとは</a></li>
+      <li><a href="#categories">カテゴリ一覧</a></li>
       <li><a href="#kichihoui">吉方位とは</a></li>
       <li><a href="#lucky-color">ラッキーカラーとは</a></li>
       <li><a href="#kichijitsu">一粒万倍日・天赦日とは</a></li>
@@ -165,6 +172,16 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>開運カレンダーとは、日本の伝統的な暦（こよみ）や東洋占術・風水などに基づいて、その日その日の吉凶・吉方位・ラッキーカラー・特別な吉日などの情報を一覧化したカレンダーです。毎朝チェックすることで、一日の行動計画や運気アップのヒントが得られます。</p>
     <p>日本では古くから「大安に結婚式を挙げる」「仏滅に引越しを避ける」など、暦の吉凶を生活に取り入れる文化があります。現代の開運カレンダーはこうした伝統的な要素に加え、九星気学・数秘術・陰陽五行など多様な占術の知見を統合した情報を提供します。</p>
     <p>当サイトの開運カレンダーでは、九星気学に基づく方位・陰陽五行のエネルギーに対応したラッキーカラー・一粒万倍日などの特別な吉日を毎日お届けしています。</p>
+  </section>
+
+  <section class="art-section" id="categories">
+    <h2>カテゴリ一覧</h2>
+    <p>開運カレンダーに関わるキーワードをカテゴリ別に詳しく解説しています。</p>
+    <div class="type-grid">
+      <a href="/articles/calendar/rokuyo/" class="type-card"><div class="type-code">六曜</div><div class="type-name">先勝・友引・大安など</div><div class="type-kw">冠婚葬祭の日取りの目安</div></a>
+      <a href="/articles/calendar/gogyo/" class="type-card"><div class="type-code">陰陽五行</div><div class="type-name">木・火・土・金・水</div><div class="type-kw">ラッキーカラーの由来</div></a>
+      <a href="/articles/calendar/kichijitsu/" class="type-card"><div class="type-code">特別な吉日</div><div class="type-name">一粒万倍日・天赦日など</div><div class="type-kw">縁起の良い日の意味</div></a>
+    </div>
   </section>
 
   <section class="art-section" id="kichihoui">
