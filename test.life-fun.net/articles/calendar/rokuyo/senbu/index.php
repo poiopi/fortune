@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/senshou/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/senbu/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="六曜「先勝」の意味・由来・過ごし方を解説。午前は吉、午後は凶とされる先勝の日にすべきこと・避けるべきことをわかりやすく紹介します。">
-  <title>先勝（せんしょう）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
+  <meta name="description" content="六曜「先負」の意味・由来・過ごし方を解説。午前は凶、午後は吉とされる先負の日にすべきこと・避けるべきことをわかりやすく紹介します。">
+  <title>先負（せんぶ）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"先勝の日に避けたほうがいいことはありますか？","acceptedAnswer":{"@type":"Answer","text":"先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。"}},
-      {"@type":"Question","name":"先勝と友引はどちらが良い日ですか？","acceptedAnswer":{"@type":"Answer","text":"友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。"}},
-      {"@type":"Question","name":"先勝はどう読みますか？","acceptedAnswer":{"@type":"Answer","text":"「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。"}}
+      {"@type":"Question","name":"先負の日に急用が入ったらどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"先負は「勝負を避け静かに過ごす」のが基本なので、可能であれば急がず慎重に対応するのが良いとされます。どうしても対応が必要な場合は、吉とされる午後に行動するのがおすすめです。"}},
+      {"@type":"Question","name":"先負と先勝はどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"先勝は午前が吉・午後が凶、先負はその逆で午前が凶・午後が吉です。どちらも「先に動くかどうか」で吉凶が分かれる点は共通していますが、吉の時間帯が真逆になっています。"}},
+      {"@type":"Question","name":"先負の日に結婚式を挙げても大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"先負は「勝負事や急用を避け、平穏に過ごすべき日」とされ、大安や友引ほど積極的に選ばれる日ではありません。ただし絶対に避けるべき凶日というわけではなく、午後の時間帯であれば問題ないとされています。"}}
     ]
   }
   </script>
@@ -106,7 +106,7 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"六曜とは","item":"https://life-fun.net/articles/calendar/rokuyo/"},
-      {"@type":"ListItem","position":5,"name":"先勝とは","item":"https://life-fun.net/articles/calendar/rokuyo/senshou/"}
+      {"@type":"ListItem","position":5,"name":"先負とは","item":"https://life-fun.net/articles/calendar/rokuyo/senbu/"}
     ]
   }
   </script>
@@ -122,25 +122,25 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>先勝とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>先負とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">SENSHOU · 六曜</span>
-    <h1>先勝（せんしょう）とは？<br>意味と過ごし方をわかりやすく解説</h1>
-    <p class="art-lead">先勝（せんしょう）は六曜の一つで、「先んずれば即ち勝つ」という意味を持つ日です。午前中は吉、午後は凶とされ、急ぎの用事や勝負事に向いた日とされています。由来・過ごし方・友引との違いまで詳しく解説します。</p>
+    <span class="art-label">SENBU · 六曜</span>
+    <h1>先負（せんぶ）とは？<br>意味と過ごし方をわかりやすく解説</h1>
+    <p class="art-lead">先負（せんぶ・さきまけ）は六曜の一つで、「先んずれば即ち負ける」という意味を持つ日です。先勝とは逆に午前中は凶、午後は吉とされ、静かに慎重に過ごすことが推奨される日です。由来・過ごし方まで詳しく解説します。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>読み方</dt><dd>せんしょう（さきがち）</dd>
-    <dt>吉の時間帯</dt><dd>午前中（11時頃まで）</dd>
-    <dt>凶の時間帯</dt><dd>午後（13時〜17時頃）</dd>
-    <dt>向いていること</dt><dd>急ぎの用事・訴訟・勝負事・午前中の契約</dd>
+    <dt>読み方</dt><dd>せんぶ・さきまけ</dd>
+    <dt>吉の時間帯</dt><dd>午後（13時以降）</dd>
+    <dt>凶の時間帯</dt><dd>午前中</dd>
+    <dt>向いていること</dt><dd>静かに過ごす・平穏な用事・午後の契約</dd>
   </dl>
 
   <?php
   $ctaTitle = '📅 今日の六曜を確認する';
-  $ctaText  = '今日が先勝かどうか、開運カレンダーで毎日更新でお届け。';
+  $ctaText  = '今日が先負かどうか、開運カレンダーで毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
   require __DIR__.'/../../../../inc/article-cta.php';
@@ -149,46 +149,46 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">先勝の意味</a></li>
-      <li><a href="#origin">先勝の由来</a></li>
-      <li><a href="#action">先勝の日にすべきこと</a></li>
+      <li><a href="#about">先負の意味</a></li>
+      <li><a href="#origin">先負の由来</a></li>
+      <li><a href="#action">先負の日にすべきこと</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>先勝の意味</h2>
-    <p>先勝（せんしょう）は、六曜の中で「先んずれば即ち勝つ」という意味を持つ日です。文字通り「先に動いた者が勝つ」という考え方から、何事も早めに行動することが吉とされています。六曜の巡りの中では友引の前、先負の後に位置し、月初めには先勝から始まる月もあります。</p>
-    <p>一日の中でも吉凶が時間帯によって分かれているのが先勝の特徴です。午前中（おおよそ11時頃まで）は吉、午後（13時〜17時頃）は凶とされ、正午前後は判断が分かれる境目の時間とされています。</p>
+    <h2>先負の意味</h2>
+    <p>先負（せんぶ）は、六曜の中で「先んずれば即ち負ける」という意味を持つ日です。先勝とは正反対で、先に動くと失敗しやすいとされ、何事も控えめに、平静を保って過ごすことが良いとされています。六曜の巡りでは友引の後、仏滅の前に位置します。</p>
+    <p>一日の中では午前中が凶、午後（13時以降）が吉とされています。先勝の吉凶がちょうど逆になった形で、「午前は静かに、午後から動く」という過ごし方が基本です。</p>
   </section>
 
   <section class="art-section" id="origin">
-    <h2>先勝の由来</h2>
-    <p>六曜はもともと中国で生まれた時刻・日にちの吉凶占いが日本に伝わったもので、鎌倉時代から室町時代にかけて日本に伝来したとされています。当時は「即吉」「共引」といった異なる漢字が当てられていましたが、江戸時代から明治時代にかけて現在の「先勝」の字が定着しました。</p>
-    <p>先勝はもともと「小吉」とも呼ばれており、「先んずれば即ち勝つ」という解釈は後世に付け加えられた意味合いが強いとされています。それでも「早めの行動が吉」というシンプルなメッセージ性から、現代でも広く親しまれています。</p>
+    <h2>先負の由来</h2>
+    <p>先負はもともと「小凶」「周吉」といった異なる表記がされていましたが、時代を経て「先負」という字が定着しました。「先んずれば負ける」という解釈から、積極的な行動より受け身の姿勢が推奨される日として広まりました。</p>
+    <p>先勝が「積極性の吉日」であるのに対し、先負は「慎重さの吉日」という対照的な位置づけです。この対比が六曜全体のバランスを作っており、六曜が単なる吉凶の羅列ではなく、行動の指針としての側面を持つことがうかがえます。</p>
   </section>
 
   <section class="art-section" id="action">
-    <h2>先勝の日にすべきこと</h2>
-    <p>先勝の日は「午前中に動く」ことが基本方針です。重要な契約・商談・訴訟・引っ越しの手続きなど、勝負事や急ぎの用事は午前中に済ませるのが理想とされます。逆に午後に大切な決断を下すことは避け、静かに過ごすのが良いとされています。</p>
-    <p>また「先んずれば勝つ」という言葉の意味から、スポーツの試合・受験・面接など、勝敗や結果を伴う物事のスタートに縁起が良い日ともいわれます。午前中に大切な予定を入れることで、六曜の意味を日常に取り入れることができます。</p>
+    <h2>先負の日にすべきこと</h2>
+    <p>先負の日は「午前中は控えめに、午後から動く」のが基本方針です。重要な決断・交渉・新しいことのスタートは午後に回すのが理想とされます。午前中に急ぎの用事が入った場合も、可能であれば午後まで待つのが良いとされています。</p>
+    <p>また先負は「勝負事を避ける日」でもあるため、大きな契約やギャンブル的な要素のある決断は避け、平穏無事に過ごすことが推奨されます。静かに過ごすことで運気を落ち着かせる日、と捉えると実践しやすくなります。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝の日に避けたほうがいいことはありますか？</div>
-        <div class="faq-a">先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">先負の日に急用が入ったらどうすればいいですか？</div>
+        <div class="faq-a">先負は「勝負を避け静かに過ごす」のが基本なので、可能であれば急がず慎重に対応するのが良いとされます。どうしても対応が必要な場合は、吉とされる午後に行動するのがおすすめです。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝と友引はどちらが良い日ですか？</div>
-        <div class="faq-a">友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">先負と先勝はどう違いますか？</div>
+        <div class="faq-a">先勝は午前が吉・午後が凶、先負はその逆で午前が凶・午後が吉です。どちらも「先に動くかどうか」で吉凶が分かれる点は共通していますが、吉の時間帯が真逆になっています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝はどう読みますか？</div>
-        <div class="faq-a">「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">先負の日に結婚式を挙げても大丈夫ですか？</div>
+        <div class="faq-a">先負は「勝負事や急用を避け、平穏に過ごすべき日」とされ、大安や友引ほど積極的に選ばれる日ではありません。ただし絶対に避けるべき凶日というわけではなく、午後の時間帯であれば問題ないとされています。</div>
       </div>
     </div>
   </section>
@@ -196,10 +196,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>先勝は「先んずれば即ち勝つ」という意味を持つ六曜の一つ。</li>
-      <li>午前中（11時頃まで）が吉、午後（13時〜17時頃）は凶とされる。</li>
-      <li>急ぎの用事・訴訟・勝負事は午前中に済ませるのが理想。</li>
-      <li>鎌倉〜室町時代に中国から伝来し、江戸〜明治時代に現在の表記が定着した。</li>
+      <li>先負は「先んずれば即ち負ける」という意味を持つ六曜の一つ。</li>
+      <li>午前中が凶、午後（13時以降）が吉とされる、先勝と正反対の日。</li>
+      <li>積極的な行動より、静かに控えめに過ごすことが推奨される。</li>
+      <li>重要な決断・交渉は午後に回すのが理想とされる。</li>
     </ul>
   </section>
 
@@ -212,10 +212,10 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = null;
-  $prevTitle = null;
-  $nextUrl   = '/articles/calendar/rokuyo/tomobiki/';
-  $nextTitle = '友引';
+  $prevUrl   = '/articles/calendar/rokuyo/tomobiki/';
+  $prevTitle = '友引';
+  $nextUrl   = '/articles/calendar/rokuyo/butsumetsu/';
+  $nextTitle = '仏滅';
   $listUrl   = '/articles/calendar/rokuyo/';
   $listTitle = '六曜一覧';
   require __DIR__.'/../../../../inc/article-nav.php';
@@ -243,10 +243,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='senshou'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
+<?php $currentSlug='senbu'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'senshou');
+echo autoLink($html, 'senbu');
 ?>

@@ -172,11 +172,11 @@ ob_start();
     <h2>六曜の種類</h2>
     <div class="type-grid">
       <a href="/articles/calendar/rokuyo/senshou/" class="type-card"><div class="type-code">先勝</div><div class="type-name">せんしょう</div><div class="type-kw">午前は吉、午後は凶</div></a>
-      <div class="type-card"><div class="type-code">友引</div><div class="type-name">ともびき</div><div class="type-kw">祝い事に良い日</div></div>
-      <div class="type-card"><div class="type-code">先負</div><div class="type-name">せんぶ</div><div class="type-kw">午後が吉の日</div></div>
-      <div class="type-card"><div class="type-code">仏滅</div><div class="type-name">ぶつめつ</div><div class="type-kw">最も凶とされる日</div></div>
-      <div class="type-card"><div class="type-code">大安</div><div class="type-name">たいあん</div><div class="type-kw">最も縁起が良い日</div></div>
-      <div class="type-card"><div class="type-code">赤口</div><div class="type-name">しゃっこう</div><div class="type-kw">正午のみ吉の日</div></div>
+      <a href="/articles/calendar/rokuyo/tomobiki/" class="type-card"><div class="type-code">友引</div><div class="type-name">ともびき</div><div class="type-kw">祝い事に良い日</div></a>
+      <a href="/articles/calendar/rokuyo/senbu/" class="type-card"><div class="type-code">先負</div><div class="type-name">せんぶ</div><div class="type-kw">午後が吉の日</div></a>
+      <a href="/articles/calendar/rokuyo/butsumetsu/" class="type-card"><div class="type-code">仏滅</div><div class="type-name">ぶつめつ</div><div class="type-kw">最も凶とされる日</div></a>
+      <a href="/articles/calendar/rokuyo/taian/" class="type-card"><div class="type-code">大安</div><div class="type-name">たいあん</div><div class="type-kw">最も縁起が良い日</div></a>
+      <a href="/articles/calendar/rokuyo/shakko/" class="type-card"><div class="type-code">赤口</div><div class="type-name">しゃっこう</div><div class="type-kw">正午のみ吉の日</div></a>
     </div>
   </section>
 
@@ -219,8 +219,9 @@ ob_start();
   <?php
   $prevUrl   = null;
   $prevTitle = null;
-  $nextUrl   = '/articles/calendar/rokuyo/senshou/';
-  $nextTitle = '先勝';
+  $nextUrl   = '/articles/calendar/gogyo/';
+  $nextTitle = '陰陽五行とは';
+  $nextLabel = '次のカテゴリ →';
   $listUrl   = '/articles/calendar/';
   $listTitle = '開運カレンダーとは';
   require __DIR__.'/../../../inc/article-nav.php';

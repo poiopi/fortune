@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/senshou/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/gogyo/hi/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="六曜「先勝」の意味・由来・過ごし方を解説。午前は吉、午後は凶とされる先勝の日にすべきこと・避けるべきことをわかりやすく紹介します。">
-  <title>先勝（せんしょう）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
+  <meta name="description" content="五行「火（か）」の意味・性質・ラッキーカラー・相性を解説。情熱と活力のエネルギーを持つ火のエネルギーを日常に取り入れる方法を紹介します。">
+  <title>五行「火（か）」とは？意味とラッキーカラーをわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"先勝の日に避けたほうがいいことはありますか？","acceptedAnswer":{"@type":"Answer","text":"先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。"}},
-      {"@type":"Question","name":"先勝と友引はどちらが良い日ですか？","acceptedAnswer":{"@type":"Answer","text":"友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。"}},
-      {"@type":"Question","name":"先勝はどう読みますか？","acceptedAnswer":{"@type":"Answer","text":"「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。"}}
+      {"@type":"Question","name":"火の五行に合う色は何ですか？","acceptedAnswer":{"@type":"Answer","text":"赤・オレンジ・紫が火のエネルギーに対応する色です。情熱・活力を高めたいときに、これらの色を服や小物に取り入れるのがおすすめです。"}},
+      {"@type":"Question","name":"火の五行の人はどんな性格ですか？","acceptedAnswer":{"@type":"Answer","text":"火の気が強い人は、情熱的で明るく、人を惹きつけるカリスマ性を持つとされます。行動力があり社交的な一方、感情の起伏が激しくなりやすい面もあるといわれます。"}},
+      {"@type":"Question","name":"火は何に剋されますか？","acceptedAnswer":{"@type":"Answer","text":"五行の相剋関係では「水は火を剋す」とされます。水の気が強すぎると火のエネルギーが弱まるという考え方です。逆に火は金を剋す（火は金属を溶かす）関係にあります。"}}
     ]
   }
   </script>
@@ -105,8 +105,8 @@ ob_start();
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
-      {"@type":"ListItem","position":4,"name":"六曜とは","item":"https://life-fun.net/articles/calendar/rokuyo/"},
-      {"@type":"ListItem","position":5,"name":"先勝とは","item":"https://life-fun.net/articles/calendar/rokuyo/senshou/"}
+      {"@type":"ListItem","position":4,"name":"陰陽五行とは","item":"https://life-fun.net/articles/calendar/gogyo/"},
+      {"@type":"ListItem","position":5,"name":"火とは","item":"https://life-fun.net/articles/calendar/gogyo/hi/"}
     ]
   }
   </script>
@@ -122,25 +122,25 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>先勝とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/gogyo/">陰陽五行とは</a><span>›</span>火とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">SENSHOU · 六曜</span>
-    <h1>先勝（せんしょう）とは？<br>意味と過ごし方をわかりやすく解説</h1>
-    <p class="art-lead">先勝（せんしょう）は六曜の一つで、「先んずれば即ち勝つ」という意味を持つ日です。午前中は吉、午後は凶とされ、急ぎの用事や勝負事に向いた日とされています。由来・過ごし方・友引との違いまで詳しく解説します。</p>
+    <span class="art-label">HI · 五行</span>
+    <h1>五行「火（か）」とは？<br>意味とラッキーカラーをわかりやすく解説</h1>
+    <p class="art-lead">火（か）は陰陽五行の一つで、情熱・活力・拡散を象徴するエネルギーです。燃え上がる炎のように、人を惹きつけ場を明るくするパワーを表します。意味・ラッキーカラー・相性まで詳しく解説します。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>読み方</dt><dd>せんしょう（さきがち）</dd>
-    <dt>吉の時間帯</dt><dd>午前中（11時頃まで）</dd>
-    <dt>凶の時間帯</dt><dd>午後（13時〜17時頃）</dd>
-    <dt>向いていること</dt><dd>急ぎの用事・訴訟・勝負事・午前中の契約</dd>
+    <dt>読み方</dt><dd>か</dd>
+    <dt>象徴するエネルギー</dt><dd>情熱・活力・拡散</dd>
+    <dt>ラッキーカラー</dt><dd>赤・オレンジ・紫</dd>
+    <dt>季節</dt><dd>夏</dd>
   </dl>
 
   <?php
-  $ctaTitle = '📅 今日の六曜を確認する';
-  $ctaText  = '今日が先勝かどうか、開運カレンダーで毎日更新でお届け。';
+  $ctaTitle = '📅 今日のラッキーカラーを確認する';
+  $ctaText  = '五行に基づいたラッキーカラーを毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
   require __DIR__.'/../../../../inc/article-cta.php';
@@ -149,46 +149,46 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">先勝の意味</a></li>
-      <li><a href="#origin">先勝の由来</a></li>
-      <li><a href="#action">先勝の日にすべきこと</a></li>
+      <li><a href="#about">火の意味</a></li>
+      <li><a href="#color">火のラッキーカラー</a></li>
+      <li><a href="#personality">火の気を持つ人の性格</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>先勝の意味</h2>
-    <p>先勝（せんしょう）は、六曜の中で「先んずれば即ち勝つ」という意味を持つ日です。文字通り「先に動いた者が勝つ」という考え方から、何事も早めに行動することが吉とされています。六曜の巡りの中では友引の前、先負の後に位置し、月初めには先勝から始まる月もあります。</p>
-    <p>一日の中でも吉凶が時間帯によって分かれているのが先勝の特徴です。午前中（おおよそ11時頃まで）は吉、午後（13時〜17時頃）は凶とされ、正午前後は判断が分かれる境目の時間とされています。</p>
+    <h2>火の意味</h2>
+    <p>火（か）は陰陽五行の中で、燃え上がる炎のエネルギーを象徴する要素です。情熱・活力・拡散・華やかさを表し、五行の循環の中では夏の季節に対応します。物事を勢いよく広げ、周囲を明るく照らすエネルギーとして知られています。</p>
+    <p>相生の関係では、火は土を生み出す存在です（燃え尽きたものが灰となり土になる）。一方、相剋の関係では、火は金を溶かし（火剋金）、水によって消される（水剋火）という関係にあります。</p>
   </section>
 
-  <section class="art-section" id="origin">
-    <h2>先勝の由来</h2>
-    <p>六曜はもともと中国で生まれた時刻・日にちの吉凶占いが日本に伝わったもので、鎌倉時代から室町時代にかけて日本に伝来したとされています。当時は「即吉」「共引」といった異なる漢字が当てられていましたが、江戸時代から明治時代にかけて現在の「先勝」の字が定着しました。</p>
-    <p>先勝はもともと「小吉」とも呼ばれており、「先んずれば即ち勝つ」という解釈は後世に付け加えられた意味合いが強いとされています。それでも「早めの行動が吉」というシンプルなメッセージ性から、現代でも広く親しまれています。</p>
+  <section class="art-section" id="color">
+    <h2>火のラッキーカラー</h2>
+    <p>火の気に対応する色は赤・オレンジ・紫です。情熱・エネルギー・活力を象徴する色で、行動力や自信を高めたいときに効果的とされています。赤いアクセサリーを身につける・オレンジ色の小物を使う・情熱を表現したい場面で赤を取り入れるといった活用法があります。</p>
+    <p>新しいことに挑戦する勇気が欲しいとき・人前で自分をアピールしたいときは、火のラッキーカラーである赤系の色を意識的に取り入れると良いとされています。</p>
   </section>
 
-  <section class="art-section" id="action">
-    <h2>先勝の日にすべきこと</h2>
-    <p>先勝の日は「午前中に動く」ことが基本方針です。重要な契約・商談・訴訟・引っ越しの手続きなど、勝負事や急ぎの用事は午前中に済ませるのが理想とされます。逆に午後に大切な決断を下すことは避け、静かに過ごすのが良いとされています。</p>
-    <p>また「先んずれば勝つ」という言葉の意味から、スポーツの試合・受験・面接など、勝敗や結果を伴う物事のスタートに縁起が良い日ともいわれます。午前中に大切な予定を入れることで、六曜の意味を日常に取り入れることができます。</p>
+  <section class="art-section" id="personality">
+    <h2>火の気を持つ人の性格</h2>
+    <p>四柱推命や九星気学において「火」の気が強い人は、情熱的で明るく、人を惹きつけるカリスマ性を持つとされています。行動力があり、周囲を巻き込むリーダーシップを発揮する場面も多いタイプです。</p>
+    <p>一方で、感情の起伏が激しくなりやすい・熱しやすく冷めやすいといった面もあるといわれます。火の気が強い人は、時には冷静さを意識することで、持ち前の情熱をより効果的に活かせるとされています。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝の日に避けたほうがいいことはありますか？</div>
-        <div class="faq-a">先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">火の五行に合う色は何ですか？</div>
+        <div class="faq-a">赤・オレンジ・紫が火のエネルギーに対応する色です。情熱・活力を高めたいときに、これらの色を服や小物に取り入れるのがおすすめです。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝と友引はどちらが良い日ですか？</div>
-        <div class="faq-a">友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">火の五行の人はどんな性格ですか？</div>
+        <div class="faq-a">火の気が強い人は、情熱的で明るく、人を惹きつけるカリスマ性を持つとされます。行動力があり社交的な一方、感情の起伏が激しくなりやすい面もあるといわれます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝はどう読みますか？</div>
-        <div class="faq-a">「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">火は何に剋されますか？</div>
+        <div class="faq-a">五行の相剋関係では「水は火を剋す」とされます。水の気が強すぎると火のエネルギーが弱まるという考え方です。逆に火は金を剋す（火は金属を溶かす）関係にあります。</div>
       </div>
     </div>
   </section>
@@ -196,15 +196,15 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>先勝は「先んずれば即ち勝つ」という意味を持つ六曜の一つ。</li>
-      <li>午前中（11時頃まで）が吉、午後（13時〜17時頃）は凶とされる。</li>
-      <li>急ぎの用事・訴訟・勝負事は午前中に済ませるのが理想。</li>
-      <li>鎌倉〜室町時代に中国から伝来し、江戸〜明治時代に現在の表記が定着した。</li>
+      <li>火は情熱・活力・拡散を象徴する五行の一つで、夏の季節に対応する。</li>
+      <li>ラッキーカラーは赤・オレンジ・紫。行動力や自信を後押ししてくれるとされる。</li>
+      <li>火の気が強い人は情熱的でカリスマ性があるが、感情の起伏が激しくなりやすい。</li>
+      <li>相生では土を生み、相剋では金を剋し、水に剋される関係にある。</li>
     </ul>
   </section>
 
   <?php
-  $ctaTitle = '📅 今日の六曜を確認する';
+  $ctaTitle = '📅 今日のラッキーカラーを確認する';
   $ctaText  = '吉方位・ラッキーカラー・運気の波を毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
@@ -212,21 +212,21 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = null;
-  $prevTitle = null;
-  $nextUrl   = '/articles/calendar/rokuyo/tomobiki/';
-  $nextTitle = '友引';
-  $listUrl   = '/articles/calendar/rokuyo/';
-  $listTitle = '六曜一覧';
+  $prevUrl   = '/articles/calendar/gogyo/ki/';
+  $prevTitle = '木';
+  $nextUrl   = '/articles/calendar/gogyo/tsuchi/';
+  $nextTitle = '土';
+  $listUrl   = '/articles/calendar/gogyo/';
+  $listTitle = '五行一覧';
   require __DIR__.'/../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
-    <p>六曜や暦についてさらに詳しく知りたい方はこちら。</p>
+    <p>五行や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'六曜とは', 'title'=>'先勝・友引・先負・仏滅・大安・赤口を知る →', 'url'=>'/articles/calendar/rokuyo/'],
+      ['label'=>'陰陽五行とは', 'title'=>'木・火・土・金・水の関係を知る →', 'url'=>'/articles/calendar/gogyo/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
       ['label'=>'九星気学とは', 'title'=>'今年・来年の運気の流れを知る →', 'url'=>'/articles/kyusei/'],
     ];
@@ -243,10 +243,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='senshou'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
+<?php $currentSlug='gogyo-hi'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'senshou');
+echo autoLink($html, 'gogyo-hi');
 ?>
