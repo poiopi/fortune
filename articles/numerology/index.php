@@ -145,7 +145,7 @@ require __DIR__.'/../../inc/article-cta.php';
       <li><a href="#about">数秘術とは</a></li>
       <li><a href="#history">数秘術の歴史</a></li>
       <li><a href="#calc">運命数の計算方法</a></li>
-      <li><a href="#numbers">運命数1〜9＋11・22の意味一覧</a></li>
+      <li><a href="#numbers">運命数1〜9＋11・22・33の意味一覧</a></li>
       <li><a href="#birthday">誕生日数とは</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#related">関連コンテンツ</a></li>
@@ -177,7 +177,7 @@ require __DIR__.'/../../inc/article-cta.php';
   </section>
 
   <section class="art-section" id="numbers">
-    <h2>運命数1〜9＋11・22の意味一覧</h2>
+    <h2>運命数1〜9＋11・22・33の意味一覧</h2>
     <p>各運命数が示す基本的な性質とキーワードをまとめました。</p>
     <div class="num-grid">
       <?php
@@ -193,6 +193,7 @@ require __DIR__.'/../../inc/article-cta.php';
         ['9','人道主義者','博愛・完結・精神性・国際的視野'],
         ['11','直感者（M）','直感・霊性・インスピレーション・使命'],
         ['22','建設者（M）','大きなビジョン・現実化・マスタービルダー'],
+        ['33','マスターティーチャー（M）','無条件の愛・癒し・奉仕'],
       ];
       foreach($nums as $n): ?>
       <a href="/articles/numerology/<?= $n[0] ?>/" class="num-card">

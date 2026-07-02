@@ -115,7 +115,7 @@ ob_start();
     $listTitle = '守護霊タイプ一覧';
     $listUrl   = '/articles/guardian/#type-list';
     $prevTitle = '土着の先祖霊'; $prevUrl = '/articles/guardian/dochaku-senzo/'; $prevLabel = null;
-    $nextTitle = '風の精霊'; $nextUrl = '/articles/guardian/kaze/'; $nextLabel = null;
+    $nextTitle = '森の賢者霊'; $nextUrl = '/articles/guardian/mori-kenja/'; $nextLabel = null;
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
   </section>
