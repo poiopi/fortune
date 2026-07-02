@@ -91,7 +91,11 @@
       "Bash(grep -n '\\\\$[a-zA-Z_]*[^\\\\x00-\\\\x7f]' /c/Users/sende/fortune/test.life-fun.net/tools/debug/regression-test.php)",
       "Bash(\"/c/php/php.exe\" \"/c/Users/sende/fortune/test.life-fun.net/tools/debug/mini_test.php\")",
       "Bash(git tag *)",
-      "Bash(/c/php/php.exe -r ' *)"
+      "Bash(/c/php/php.exe -r ' *)",
+      "Bash(curl -s \"https://life-fun.net/tarot.php\")",
+      "Bash(curl -sI \"https://life-fun.net/tarot.php\")",
+      "Bash(curl -sI \"https://life-fun.net/tarot\")",
+      "Bash(curl -s \"https://life-fun.net/tarot\")"
     ]
   }
 }
