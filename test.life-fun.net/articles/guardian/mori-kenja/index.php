@@ -9,10 +9,10 @@ ob_start();
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P1EKB3WWX8');</script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/guardian/kaze/" />
+  <link rel="canonical" href="https://life-fun.net/articles/guardian/mori-kenja/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="守護霊「風の精霊」の意味を解説。風に乗って世界を巡る自由な精霊が守護する人の性格・変化の力・開運のヒントを紹介します。">
-  <title>守護霊「風の精霊」とは｜自由と変化の守護・開運のヒントを解説</title>
+  <meta name="description" content="守護霊「森の賢者霊」の意味を解説。古代の森に宿る知恵の霊が守護する人の性格・知性の力・開運のヒントを紹介します。">
+  <title>守護霊「森の賢者霊」とは｜知恵と洞察の守護・開運のヒントを解説</title>
   <link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,23 +37,23 @@ ob_start();
   @media(max-width:600px){.art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}.guardian-visual{width:130px}.trait-grid{grid-template-columns:1fr}}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"守護霊ガイド","item":"https://life-fun.net/articles/guardian/"},{"@type":"ListItem","position":3,"name":"風の精霊","item":"https://life-fun.net/articles/guardian/kaze/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"守護霊ガイド","item":"https://life-fun.net/articles/guardian/"},{"@type":"ListItem","position":3,"name":"森の賢者霊","item":"https://life-fun.net/articles/guardian/mori-kenja/"}]}</script>
 </head>
 <body>
 <header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/guardian" class="art-back">👻 守護霊を診断する →</a></div></header>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/guardian/">守護霊ガイド</a><span>›</span>風の精霊</nav>
+  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/guardian/">守護霊ガイド</a><span>›</span>森の賢者霊</nav>
   <div class="art-hero">
     <div class="art-hero-text">
       <span class="art-label">GUARDIAN · 精霊系</span>
-      <h1>守護霊「風の精霊」とは<br>自由と変化の守護者</h1>
-      <p class="art-lead">風の精霊は、風に乗って世界を巡る自由な霊的存在です。変化と旅の力を与え、どんな場所にも適応できる柔軟性と、新しいものへの好奇心をもたらします。</p>
-      <div class="kw-tags"><span class='kw-tag'>自由</span><span class='kw-tag'>変化</span><span class='kw-tag'>好奇心</span><span class='kw-tag'>コミュニケーション</span><span class='kw-tag'>旅</span></div>
+      <h1>守護霊「森の賢者霊」とは<br>知恵と洞察の守護者</h1>
+      <p class="art-lead">森の賢者霊は、古代の森に宿る知恵の霊的存在です。長い時間をかけて積み上げた叡智を主に授け、物事の本質を見抜く洞察力をもたらします。焦らず深く考える力を与えてくれます。</p>
+      <div class="kw-tags"><span class='kw-tag'>知恵</span><span class='kw-tag'>洞察力</span><span class='kw-tag'>冷静</span><span class='kw-tag'>探究心</span><span class='kw-tag'>自然</span></div>
     </div>
     <div class="guardian-visual">
-      <div class="gv-emoji">🌬️</div>
-      <div class="gv-name">風の精霊</div>
-      <div class="gv-cat">KAZE</div>
+      <div class="gv-emoji">🌳</div>
+      <div class="gv-name">森の賢者霊</div>
+      <div class="gv-cat">MORI-KENJA</div>
     </div>
   </div>
     <?php
@@ -65,45 +65,45 @@ ob_start();
   ?>
 
   <nav class="toc"><p class="toc-title">目次</p><ol>
-    <li><a href="#about">風の精霊とは</a></li>
+    <li><a href="#about">森の賢者霊とは</a></li>
     <li><a href="#traits">守護された人の特徴</a></li>
     <li><a href="#fortune">開運のヒント</a></li>
     <li><a href="#faq">よくある質問</a></li>
   </ol></nav>
   <section class="art-section" id="about">
-    <h2>風の精霊とは</h2>
-    <p>風の精霊は、風・大気に宿る霊的存在です。風は目には見えませんが、確かに存在し、世界中を自由に旅します。方向を変え、形を変え、どこへでも向かう風の精霊は、変化と自由の象徴です。</p><p>守護霊として風の精霊がつく人は、好奇心旺盛で新しい情報や知識を積極的に取り入れます。一か所に留まることより、様々な場所・人・考え方に触れることでエネルギーが高まるタイプです。</p><p>コミュニケーション能力が高く、人と人をつなぐ橋渡し役になることが多いとされています。</p>
+    <h2>森の賢者霊とは</h2>
+    <p>森の賢者霊は、古代から続く深い森の中に宿る知恵の霊的存在です。何百年、何千年という長い時間をかけて森が積み重ねてきた記憶と叡智を宿し、それを守護する相手に静かに授けるとされています。</p><p>守護霊として森の賢者霊がつく人は、物事の表面だけでなく本質を見抜く洞察力と、じっくり考えてから行動する慎重さを持つとされています。</p><p>流行や周囲の意見に流されず、自分の頭で深く考える探究心の強い人に多い守護霊です。</p>
   </section>
   <section class="art-section" id="traits">
-    <h2>風の精霊に守護された人の特徴</h2>
-    <p>風の精霊に守護された人には、以下のような特性があります。</p>
-    <div class="trait-grid"><div class='trait-card'><div class='trait-label'>性格・気質</div><div class='trait-text'>好奇心旺盛で行動力がある。新しいことへの関心が強く、様々な分野に興味を持つ。</div></div><div class='trait-card'><div class='trait-label'>強み</div><div class='trait-text'>コミュニケーション能力が高い。初対面でも打ち解けやすく、情報収集と情報伝達が得意。</div></div><div class='trait-card'><div class='trait-label'>人間関係</div><div class='trait-text'>広い交友関係を持ち、人と人をつなぐのが得意。ただし深い関係より広い関係を好む傾向がある。</div></div><div class='trait-card'><div class='trait-label'>弱点・注意点</div><div class='trait-text'>飽きやすく、一つのことを続けることが苦手なことがある。気が散りやすい面も。</div></div><div class='trait-card'><div class='trait-label'>向いている分野</div><div class='trait-text'>メディア・広報・旅行・貿易・教育・フリーランスなど、多様な人や情報と関わる分野。</div></div><div class='trait-card'><div class='trait-label'>運気の波</div><div class='trait-text'>動いているときに運が開ける型。じっとしているより行動することが開運のカギ。</div></div></div>
+    <h2>森の賢者霊に守護された人の特徴</h2>
+    <p>森の賢者霊に守護された人には、以下のような特性があります。</p>
+    <div class="trait-grid"><div class='trait-card'><div class='trait-label'>性格・気質</div><div class='trait-text'>物静かで思慮深い。感情的にならず、常に冷静な視点で物事を捉えることができる。</div></div><div class='trait-card'><div class='trait-label'>強み</div><div class='trait-text'>深い洞察力と分析力を持つ。表面的な情報に惑わされず、本質を見抜く力に優れている。</div></div><div class='trait-card'><div class='trait-label'>人間関係</div><div class='trait-text'>広く浅くより、少数の相手と深く関わることを好む。相談相手として頼られることが多い。</div></div><div class='trait-card'><div class='trait-label'>弱点・注意点</div><div class='trait-text'>考えすぎて行動が遅れることがある。内向的なため、自分の考えを言葉にするのが苦手な面も。</div></div><div class='trait-card'><div class='trait-label'>向いている分野</div><div class='trait-text'>研究・学術・執筆・カウンセリング・古典や歴史に関わる分野など、深く探求する仕事。</div></div><div class='trait-card'><div class='trait-label'>運気の波</div><div class='trait-text'>じっくりと知識と経験を積み上げる型。年齢を重ねるほど運気が安定し深まっていく。</div></div></div>
   </section>
   <section class="art-section" id="fortune">
     <h2>開運のヒント</h2>
-    <p>風の精霊のエネルギーを高めるために意識したいポイントです。</p>
-    <div class="fortune-box"><p><strong>新しい場所に出かける</strong><br>風の精霊は移動を喜びます。旅行・新しいカフェ・行ったことのない街など、定期的に新しい場所に出かけることが開運につながります。</p><p><strong>人と積極的に話す</strong><br>風の精霊はコミュニケーションを通じてエネルギーを広げます。初対面の人との会話や、久しぶりの人への連絡が流れを良くします。</p><p><strong>窓を開けて新鮮な空気を取り入れる</strong><br>朝の新鮮な空気を室内に取り込むことで風の精霊のエネルギーが満ちます。深呼吸も効果的です。</p></div>
+    <p>森の賢者霊のエネルギーを高めるために意識したいポイントです。</p>
+    <div class="fortune-box"><p><strong>森や自然の中で過ごす</strong><br>森林浴・ハイキング・古い木々のある場所を訪れることで、賢者霊とのつながりが深まります。</p><p><strong>読書や学びを続ける</strong><br>知識を積み重ねることは森の賢者霊への最も直接的なアプローチです。興味のある分野を深く掘り下げてみましょう。</p><p><strong>一人で静かに考える時間を持つ</strong><br>森の賢者霊は静寂を好みます。定期的に一人の時間を作り、内省することが守護を強めます。</p></div>
   </section>
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
-    <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>風の精霊はどんな人につきますか？</div><div class='faq-a'>好奇心旺盛で新しいことが好きな人、コミュニケーション能力が高い人、変化を楽しめる人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>風の精霊のサインは？</div><div class='faq-a'>新しいことへの関心が尽きない、じっとしているより動いていたい、多くの人と関わりたいと感じるなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>新しい場所への外出と、積極的なコミュニケーションが風の精霊の守護を高めます。</div></div></div>
+    <div class="faq-list"><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>森の賢者霊はどんな人につきますか？</div><div class='faq-a'>物事を深く考える人、知識や学びを大切にする人、静かな環境を好む人、洞察力に優れた人につくとされています。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>森の賢者霊のサインは？</div><div class='faq-a'>森や木々のある場所に行くと落ち着く、一人で考える時間が好き、物事の本質を見抜く直感が働くなどがサインです。</div></div><div class='faq-item'><div class='faq-q' onclick='toggleFaq(this)'>開運方法は？</div><div class='faq-a'>自然の中で過ごす習慣と、読書や学びを続けることが森の賢者霊の守護を高めます。</div></div></div>
   </section>
 
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul class="matome-list">
-      <li>風の守護霊は自由・変化・コミュニケーションを象徴。新しい風を運ぶ存在。</li>
-      <li>自由を愛し、移動や変化を通じて多様な経験を積む。情報を広める才能を持つ。</li>
-      <li>恋愛では束縛を嫌い、互いの自由を尊重し合える関係を好む。</li>
-      <li>メディア・旅行・営業・IT・教育など、情報と移動が活きる分野が向いている。</li>
-      <li>風のように流れに乗りながら、自分の軸を持ち続けることが開運のポイント。</li>
+      <li>森の賢者霊は知恵・洞察力・探究心を象徴。古代の森が育んだ深い叡智を宿す守護霊。</li>
+      <li>物事の本質を見抜く力と、じっくり考えてから動く慎重さを併せ持つ。</li>
+      <li>人間関係は少数精鋭型。信頼できる相手には頼られる相談役になる。</li>
+      <li>研究・執筆・カウンセリングなど、深く探求する分野で真価を発揮する。</li>
+      <li>自然の中で静かに過ごし、学びを続けることが森の賢者霊の開運のポイント。</li>
     </ul>
   </section>
 
   <section class="art-section">
     <?php
     $ctaTitle = '👻 あなたの守護霊を診断する';
-    $ctaText  = '生年月日から守護霊タイプを判定。風の精霊かどうか確かめてみましょう。';
+    $ctaText  = '生年月日から守護霊タイプを判定。森の賢者霊かどうか確かめてみましょう。';
     $ctaUrl   = '/guardian';
     $ctaBtn   = '守護霊を診断する →';
     require __DIR__.'/../../../inc/article-cta.php';
@@ -114,8 +114,8 @@ ob_start();
     <?php
     $listTitle = '守護霊タイプ一覧';
     $listUrl   = '/articles/guardian/#type-list';
-    $prevTitle = '森の賢者霊'; $prevUrl = '/articles/guardian/mori-kenja/'; $prevLabel = null;
-    $nextTitle = '炎の守護者'; $nextUrl = '/articles/guardian/honoo/'; $nextLabel = null;
+    $prevTitle = '大地の精霊'; $prevUrl = '/articles/guardian/daichi/'; $prevLabel = null;
+    $nextTitle = '風の精霊'; $nextUrl = '/articles/guardian/kaze/'; $nextLabel = null;
     require __DIR__.'/../../../inc/article-nav.php';
     ?>
   </section>
