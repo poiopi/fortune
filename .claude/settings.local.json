@@ -99,7 +99,19 @@
       "Bash(curl -s \"https://test.life-fun.net/profile.php\")",
       "Bash(curl -sI \"https://test.life-fun.net/profile.php\")",
       "Bash(curl -s \"https://test.life-fun.net/profile\" -o /tmp/profile_stg.html -w \"%{http_code}\\\\n\")",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://life-fun.net/profile\" -o /tmp/profile_prod.html -w \"status: %{http_code}\\\\n\")",
+      "mcp__claude-in-chrome__resize_window",
+      "mcp__claude-in-chrome__tabs_create_mcp",
+      "mcp__claude-in-chrome__tabs_close_mcp",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(winget list --id OpenJS.NodeJS 2>$null)",
+      "PowerShell(winget install --id OpenJS.NodeJS.LTS -e --accept-source-agreements --accept-package-agreements)",
+      "Bash(\"/c/php/php.exe\" -l \"/c/Users/sende/fortune/test.life-fun.net/top_design2.php\")",
+      "Bash(\"/c/php/php.exe\" -l \"/c/Users/sende/fortune/test.life-fun.net/sansei.php\")",
+      "Bash(\"/c/php/php.exe\" -l \"/c/Users/sende/fortune/test.life-fun.net/inc/nav-cards.php\")",
+      "Bash(/c/php/php.exe -d display_errors=1 -r ' *)",
+      "Bash(\"/c/php/php.exe\" -l /c/Users/sende/fortune/test.life-fun.net/index.php)"
     ]
   }
 }
