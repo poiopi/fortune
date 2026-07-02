@@ -74,7 +74,23 @@
       "PowerShell(Get-NetTCPConnection -LocalPort 80,443,8080 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalPort,OwningProcess | ForEach-Object { $p = Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue; [PSCustomObject]@{Port=$_.LocalPort; Process=$p.Name; PID=$p.Id} })",
       "PowerShell(netstat -an)",
       "PowerShell(head -5)",
-      "PowerShell(Copy-Item \"C:\\\\Users\\\\sende\\\\fortune\\\\sitemap.xml\" \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\sitemap.xml\" -Force)"
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\sende\\\\fortune\\\\sitemap.xml\" \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\sitemap.xml\" -Force)",
+      "mcp__claude-in-chrome__javascript_tool",
+      "mcp__claude-in-chrome__get_page_text",
+      "PowerShell(winget --version)",
+      "PowerShell(winget install --id PHP.PHP.8.3 --accept-source-agreements --accept-package-agreements -e)",
+      "PowerShell(winget search PHP.PHP)",
+      "PowerShell(winget install --id PHP.PHP.NTS.8.3 --accept-source-agreements --accept-package-agreements -e)",
+      "PowerShell(winget install --id PHP.PHP.NTS.8.4 --accept-source-agreements --accept-package-agreements -e)",
+      "PowerShell(& \"C:\\\\php\\\\php.exe\" -v)",
+      "Bash(\"/c/php/php.exe\" \"/c/Users/sende/fortune/test.life-fun.net/test_autolink_debug.php\")",
+      "Read(//c/php/**)",
+      "Bash(cp /c/php/php.ini-production /c/php/php.ini)",
+      "Bash(\"/c/php/php.exe\" -m)",
+      "Bash(\"/c/php/php.exe\" \"/c/Users/sende/fortune/test.life-fun.net/tools/debug/regression-test.php\")",
+      "Bash(grep -n '\\\\$[a-zA-Z_]*[^\\\\x00-\\\\x7f]' /c/Users/sende/fortune/test.life-fun.net/tools/debug/regression-test.php)",
+      "Bash(\"/c/php/php.exe\" \"/c/Users/sende/fortune/test.life-fun.net/tools/debug/mini_test.php\")",
+      "Bash(git tag *)"
     ]
   }
 }
