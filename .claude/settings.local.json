@@ -90,7 +90,8 @@
       "Bash(\"/c/php/php.exe\" \"/c/Users/sende/fortune/test.life-fun.net/tools/debug/regression-test.php\")",
       "Bash(grep -n '\\\\$[a-zA-Z_]*[^\\\\x00-\\\\x7f]' /c/Users/sende/fortune/test.life-fun.net/tools/debug/regression-test.php)",
       "Bash(\"/c/php/php.exe\" \"/c/Users/sende/fortune/test.life-fun.net/tools/debug/mini_test.php\")",
-      "Bash(git tag *)"
+      "Bash(git tag *)",
+      "Bash(/c/php/php.exe -r ' *)"
     ]
   }
 }

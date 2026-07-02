@@ -26,6 +26,18 @@
  *   1文字でしか表現できない単語（十干・五行・タロットの一部カード名等）は、
  *   「甲（きのえ）」のように読み仮名付きの複合語にして2文字以上にするか、
  *   登録を諦めてハブページのカードリンクに委ねること。
+ *
+ * 【設計思想】意味が一意に定まらないキーワードは登録しない：
+ *   このリンク処理は文脈（前後の意味）を理解せず、文字列が含まれているか
+ *   どうかだけで判定する。そのため、2文字以上でも「このサイトの中でこの
+ *   単語が指すページは1つしかない」と言い切れない語（「世界」「正義」
+ *   「恋人」等、日常語としても使われる語）を登録すると、無関係な文脈にまで
+ *   誤ってリンクが貼られる（実例：「正義感」の一部が誤ってタロット「正義」
+ *   カードへリンクされた）。
+ *   登録して良いのは、そのサイト内で意味が一意に定まる固有名詞・専門用語
+ *   だけ。リンクの本数を増やすことより、クリックした先が必ず期待通りの
+ *   ページであることを優先する。迷うキーワードは登録せず「要検討」として
+ *   保留すること。
  */
 
 $_autoLinkMap = [
@@ -45,8 +57,7 @@ $_autoLinkMap = [
     '守護霊'     => ['/articles/guardian/',    'guardian'],
     '開運カレンダー' => ['/articles/calendar/',      'calendar'],
     '開運日'         => ['/articles/calendar/',      'calendar'],
-    '吉日'           => ['/articles/calendar/',      'calendar'],
-    '六曜'       => ['/articles/calendar/rokuyo/',   'calendar-rokuyo'],
+    '六曜'       => ['/articles/calendar/rokuyo/',   'rokuyo'],
     '先勝'       => ['/articles/calendar/rokuyo/senshou/', 'senshou'],
     '一白水星'   => ['/articles/kyusei/ippaku/',    'ippaku'],
     '二黒土星'   => ['/articles/kyusei/nikoku/',    'nikoku'],
@@ -147,24 +158,22 @@ $_autoLinkMap = [
     '運命数は33' => ['/articles/numerology/33/', 'numerology-33'],
     '運命数の33' => ['/articles/numerology/33/', 'numerology-33'],
 
-    // タロット大アルカナ（単一漢字カードは除外：月・星・力・塔）
+    // タロット大アルカナ
+    // 除外1（単一漢字）：月・星・力・塔
+    // 除外2（一般名詞として頻出し誤爆実績あり）：世界・正義・恋人
     '愚者'         => ['/articles/tarot/fool/',           'fool'],
     '魔術師'       => ['/articles/tarot/magician/',       'magician'],
     '女教皇'       => ['/articles/tarot/high-priestess/', 'high-priestess'],
     '女帝'         => ['/articles/tarot/empress/',        'empress'],
     '皇帝'         => ['/articles/tarot/emperor/',        'emperor'],
     '法王'         => ['/articles/tarot/hierophant/',     'hierophant'],
-    '恋人'         => ['/articles/tarot/lovers/',         'lovers'],
-    '戦車'         => ['/articles/tarot/chariot/',        'chariot'],
     '隠者'         => ['/articles/tarot/hermit/',         'hermit'],
     '運命の輪'     => ['/articles/tarot/wheel/',          'wheel'],
-    '正義'         => ['/articles/tarot/justice/',        'justice'],
     '吊るされた男' => ['/articles/tarot/hanged-man/',     'hanged-man'],
     '死神'         => ['/articles/tarot/death/',          'death'],
     '節制'         => ['/articles/tarot/temperance/',     'temperance'],
     '悪魔'         => ['/articles/tarot/devil/',          'devil'],
     '審判'         => ['/articles/tarot/judgement/',      'judgement'],
-    '世界'         => ['/articles/tarot/world/',          'world'],
 
     // MBTI 16タイプ
     'INTJ' => ['/articles/mbti/intj/', 'intj'],
@@ -212,10 +221,10 @@ $_autoLinkMap = [
     '赤口' => ['/articles/calendar/rokuyo/shakko/',      'shakko'],
 
     // 開運カレンダー 陰陽五行（単一漢字の木・火・土・金・水は除外）
-    '陰陽五行' => ['/articles/calendar/gogyo/', 'calendar-gogyo'],
+    '陰陽五行' => ['/articles/calendar/gogyo/', 'gogyo'],
 
     // 開運カレンダー 特別な吉日
-    '特別な吉日'   => ['/articles/calendar/kichijitsu/',               'calendar-kichijitsu'],
+    '特別な吉日'   => ['/articles/calendar/kichijitsu/',               'kichijitsu'],
     '一粒万倍日'   => ['/articles/calendar/kichijitsu/ichiryumanbai/', 'ichiryumanbai'],
     '天赦日'       => ['/articles/calendar/kichijitsu/tenshabi/',      'tenshabi'],
     '寅の日'       => ['/articles/calendar/kichijitsu/tora/',          'tora'],
@@ -241,14 +250,28 @@ function autoLink(string $html, string $currentSlug): string {
                 if ($slug === $currentSlug || isset($linked[$keyword])) continue;
                 if (mb_strpos($inner, $keyword) === false) continue;
 
-                // 既存 <a> タグの中は置換しないよう分割処理
-                $parts = preg_split('/(<a\b[^>]*>.*?<\/a>)/su', $inner, -1, PREG_SPLIT_DELIM_CAPTURE);
+                // HTMLタグ全般（属性値含む）と既存<a>...</a>の中身は置換しないよう、
+                // タグ単位で分割してテキスト部分だけを対象にする
+                $parts = preg_split('/(<[^>]+>)/su', $inner, -1, PREG_SPLIT_DELIM_CAPTURE);
                 $replaced = false;
+                $insideA = false;
                 foreach ($parts as &$part) {
                     if ($replaced) break;
-                    if (preg_match('/^<a\b/iu', $part)) continue;
+                    if (preg_match('/^<a\b/iu', $part)) { $insideA = true; continue; }
+                    if (preg_match('/^<\/a>/iu', $part)) { $insideA = false; continue; }
+                    if (str_starts_with($part, '<')) continue; // 他のタグ・属性値はスキップ
+                    if ($insideA) continue; // 既存<a>タグの中のテキストはスキップ
+                    // 数字で終わるキーワードは、直後に別の数字が続く場合は
+                    // 一致させない（例: 「運命数3」が「運命数33」の一部を
+                    // 誤って奪うのを防ぐ。長い順ソートだけでは、長い方の
+                    // キーワードが記事の別の場所で既にリンク済みだった場合に
+                    // 未リンクの箇所を短いキーワードが食ってしまう事故を防げない）
+                    $pattern = preg_quote($keyword, '/');
+                    if (preg_match('/\d$/u', $keyword)) {
+                        $pattern .= '(?!\d)';
+                    }
                     $new = preg_replace(
-                        '/' . preg_quote($keyword, '/') . '/u',
+                        '/' . $pattern . '/u',
                         '<a href="' . $url . '" class="al-link">' . $keyword . '</a>',
                         $part, 1, $count
                     );

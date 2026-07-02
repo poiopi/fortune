@@ -135,4 +135,4 @@ ob_start();
 <script>function toggleFaq(el){const item=el.parentElement;item.classList.toggle('open');}</script>
 <?php $currentSlug='guardian'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
 </body></html>
-<?php $html=ob_get_clean();echo autoLink($html,'guardian'); ?>
+<?php $html=ob_get_clean();echo autoLink($html,'kaze'); ?>
