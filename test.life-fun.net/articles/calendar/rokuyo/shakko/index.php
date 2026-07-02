@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/senshou/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/shakko/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="六曜「先勝」の意味・由来・過ごし方を解説。午前は吉、午後は凶とされる先勝の日にすべきこと・避けるべきことをわかりやすく紹介します。">
-  <title>先勝（せんしょう）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
+  <meta name="description" content="六曜「赤口」の意味・由来・過ごし方を解説。正午のみ吉、それ以外は凶とされる赤口の日に注意すべきことをわかりやすく紹介します。">
+  <title>赤口（しゃっこう）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"先勝の日に避けたほうがいいことはありますか？","acceptedAnswer":{"@type":"Answer","text":"先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。"}},
-      {"@type":"Question","name":"先勝と友引はどちらが良い日ですか？","acceptedAnswer":{"@type":"Answer","text":"友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。"}},
-      {"@type":"Question","name":"先勝はどう読みますか？","acceptedAnswer":{"@type":"Answer","text":"「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。"}}
+      {"@type":"Question","name":"赤口の日に気をつけることは何ですか？","acceptedAnswer":{"@type":"Answer","text":"赤口は「赤」の字から火や刃物による怪我・災いを連想させるため、火の元・刃物の扱いに注意すべき日とされています。また訴訟・契約などのトラブルにつながりやすい用事も避けたほうが良いとされます。"}},
+      {"@type":"Question","name":"赤口に結婚式を挙げても大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"赤口は仏滅に次いで縁起が悪いとされる日ですが、正午前後は吉とされるため、その時間帯の挙式であれば問題ないという考え方もあります。気にする親族がいる場合は事前に相談するのがおすすめです。"}},
+      {"@type":"Question","name":"赤口の読み方はどれが正しいですか？","acceptedAnswer":{"@type":"Answer","text":"「しゃっこう」「しゃっく」「せきぐち」など複数の読み方がありますが、一般的には「しゃっこう」または「しゃっく」と読まれることが多いです。地域や慣習によって読み方が異なります。"}}
     ]
   }
   </script>
@@ -106,7 +106,7 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"六曜とは","item":"https://life-fun.net/articles/calendar/rokuyo/"},
-      {"@type":"ListItem","position":5,"name":"先勝とは","item":"https://life-fun.net/articles/calendar/rokuyo/senshou/"}
+      {"@type":"ListItem","position":5,"name":"赤口とは","item":"https://life-fun.net/articles/calendar/rokuyo/shakko/"}
     ]
   }
   </script>
@@ -122,25 +122,25 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>先勝とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>赤口とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">SENSHOU · 六曜</span>
-    <h1>先勝（せんしょう）とは？<br>意味と過ごし方をわかりやすく解説</h1>
-    <p class="art-lead">先勝（せんしょう）は六曜の一つで、「先んずれば即ち勝つ」という意味を持つ日です。午前中は吉、午後は凶とされ、急ぎの用事や勝負事に向いた日とされています。由来・過ごし方・友引との違いまで詳しく解説します。</p>
+    <span class="art-label">SHAKKO · 六曜</span>
+    <h1>赤口（しゃっこう）とは？<br>意味と過ごし方をわかりやすく解説</h1>
+    <p class="art-lead">赤口（しゃっこう・しゃっく）は六曜の一つで、正午前後のみ吉、それ以外は凶とされる日です。「赤」の字から火や刃物による災いを連想させ、注意深く過ごすべき日とされています。由来・過ごし方まで詳しく解説します。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>読み方</dt><dd>せんしょう（さきがち）</dd>
-    <dt>吉の時間帯</dt><dd>午前中（11時頃まで）</dd>
-    <dt>凶の時間帯</dt><dd>午後（13時〜17時頃）</dd>
-    <dt>向いていること</dt><dd>急ぎの用事・訴訟・勝負事・午前中の契約</dd>
+    <dt>読み方</dt><dd>しゃっこう・しゃっく</dd>
+    <dt>吉の時間帯</dt><dd>正午前後（11時〜13時頃）</dd>
+    <dt>凶の時間帯</dt><dd>正午前後以外</dd>
+    <dt>注意すべきこと</dt><dd>火の元・刃物の扱い・訴訟や契約トラブル</dd>
   </dl>
 
   <?php
   $ctaTitle = '📅 今日の六曜を確認する';
-  $ctaText  = '今日が先勝かどうか、開運カレンダーで毎日更新でお届け。';
+  $ctaText  = '今日が赤口かどうか、開運カレンダーで毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
   require __DIR__.'/../../../../inc/article-cta.php';
@@ -149,46 +149,46 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">先勝の意味</a></li>
-      <li><a href="#origin">先勝の由来</a></li>
-      <li><a href="#action">先勝の日にすべきこと</a></li>
+      <li><a href="#about">赤口の意味</a></li>
+      <li><a href="#origin">赤口の由来</a></li>
+      <li><a href="#action">赤口の日に気をつけること</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>先勝の意味</h2>
-    <p>先勝（せんしょう）は、六曜の中で「先んずれば即ち勝つ」という意味を持つ日です。文字通り「先に動いた者が勝つ」という考え方から、何事も早めに行動することが吉とされています。六曜の巡りの中では友引の前、先負の後に位置し、月初めには先勝から始まる月もあります。</p>
-    <p>一日の中でも吉凶が時間帯によって分かれているのが先勝の特徴です。午前中（おおよそ11時頃まで）は吉、午後（13時〜17時頃）は凶とされ、正午前後は判断が分かれる境目の時間とされています。</p>
+    <h2>赤口の意味</h2>
+    <p>赤口（しゃっこう）は、六曜の中で正午前後のみ吉、それ以外の時間帯は凶とされる日です。「赤」という字が血や火を連想させることから、刃物・火に関わる災いに特に注意すべき日とされています。六曜の巡りでは大安の後、先勝の前に位置し、六曜のサイクルを締めくくる日です。</p>
+    <p>仏滅ほど広く知られてはいませんが、六曜の中では仏滅に次いで凶とされる日という位置づけです。一日の中で正午前後（11時〜13時頃）だけは吉とされ、この短い時間帯を活用する過ごし方が推奨されます。</p>
   </section>
 
   <section class="art-section" id="origin">
-    <h2>先勝の由来</h2>
-    <p>六曜はもともと中国で生まれた時刻・日にちの吉凶占いが日本に伝わったもので、鎌倉時代から室町時代にかけて日本に伝来したとされています。当時は「即吉」「共引」といった異なる漢字が当てられていましたが、江戸時代から明治時代にかけて現在の「先勝」の字が定着しました。</p>
-    <p>先勝はもともと「小吉」とも呼ばれており、「先んずれば即ち勝つ」という解釈は後世に付け加えられた意味合いが強いとされています。それでも「早めの行動が吉」というシンプルなメッセージ性から、現代でも広く親しまれています。</p>
+    <h2>赤口の由来</h2>
+    <p>赤口はもともと陰陽道における「羅睺（らごう）」という凶神に由来するとされ、「赤舌日（しゃくぜつにち）」という古い暦注が変化したものと考えられています。「赤」の字が持つ血・火のイメージから、刃物や火に関する災いを警戒する日として定着しました。</p>
+    <p>六曜の他の5つ（先勝・友引・先負・仏滅・大安）に比べて由来が複雑で諸説あるのも赤口の特徴です。仏滅と並んで「凶日」として扱われますが、正午前後だけは吉とされる点が独特です。</p>
   </section>
 
   <section class="art-section" id="action">
-    <h2>先勝の日にすべきこと</h2>
-    <p>先勝の日は「午前中に動く」ことが基本方針です。重要な契約・商談・訴訟・引っ越しの手続きなど、勝負事や急ぎの用事は午前中に済ませるのが理想とされます。逆に午後に大切な決断を下すことは避け、静かに過ごすのが良いとされています。</p>
-    <p>また「先んずれば勝つ」という言葉の意味から、スポーツの試合・受験・面接など、勝敗や結果を伴う物事のスタートに縁起が良い日ともいわれます。午前中に大切な予定を入れることで、六曜の意味を日常に取り入れることができます。</p>
+    <h2>赤口の日に気をつけること</h2>
+    <p>赤口の日は火の元・刃物の取り扱いに特に注意すべきとされています。キッチンでの調理・DIY作業・アウトドアでの火起こしなど、刃物や火を扱う場面では普段以上に慎重になることが推奨されます。</p>
+    <p>また訴訟・契約・大きな決断などトラブルに発展しやすい用事も避けたほうが良いとされます。どうしても重要な用事がある場合は、吉とされる正午前後（11時〜13時頃）に行うのがおすすめです。それ以外の時間帯は静かに過ごすことを心がけましょう。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝の日に避けたほうがいいことはありますか？</div>
-        <div class="faq-a">先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">赤口の日に気をつけることは何ですか？</div>
+        <div class="faq-a">赤口は「赤」の字から火や刃物による怪我・災いを連想させるため、火の元・刃物の扱いに注意すべき日とされています。また訴訟・契約などのトラブルにつながりやすい用事も避けたほうが良いとされます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝と友引はどちらが良い日ですか？</div>
-        <div class="faq-a">友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">赤口に結婚式を挙げても大丈夫ですか？</div>
+        <div class="faq-a">赤口は仏滅に次いで縁起が悪いとされる日ですが、正午前後は吉とされるため、その時間帯の挙式であれば問題ないという考え方もあります。気にする親族がいる場合は事前に相談するのがおすすめです。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝はどう読みますか？</div>
-        <div class="faq-a">「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">赤口の読み方はどれが正しいですか？</div>
+        <div class="faq-a">「しゃっこう」「しゃっく」「せきぐち」など複数の読み方がありますが、一般的には「しゃっこう」または「しゃっく」と読まれることが多いです。地域や慣習によって読み方が異なります。</div>
       </div>
     </div>
   </section>
@@ -196,10 +196,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>先勝は「先んずれば即ち勝つ」という意味を持つ六曜の一つ。</li>
-      <li>午前中（11時頃まで）が吉、午後（13時〜17時頃）は凶とされる。</li>
-      <li>急ぎの用事・訴訟・勝負事は午前中に済ませるのが理想。</li>
-      <li>鎌倉〜室町時代に中国から伝来し、江戸〜明治時代に現在の表記が定着した。</li>
+      <li>赤口は正午前後（11時〜13時頃）のみ吉、それ以外は凶とされる日。</li>
+      <li>「赤」の字から火や刃物による災いを連想させ、注意が必要とされる。</li>
+      <li>陰陽道の「羅睺」に由来するとされ、仏滅に次いで凶とされる日。</li>
+      <li>重要な用事は正午前後に行い、それ以外の時間帯は静かに過ごすのが良い。</li>
     </ul>
   </section>
 
@@ -212,10 +212,10 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = null;
-  $prevTitle = null;
-  $nextUrl   = '/articles/calendar/rokuyo/tomobiki/';
-  $nextTitle = '友引';
+  $prevUrl   = '/articles/calendar/rokuyo/taian/';
+  $prevTitle = '大安';
+  $nextUrl   = null;
+  $nextTitle = null;
   $listUrl   = '/articles/calendar/rokuyo/';
   $listTitle = '六曜一覧';
   require __DIR__.'/../../../../inc/article-nav.php';
@@ -243,10 +243,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='senshou'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
+<?php $currentSlug='shakko'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'senshou');
+echo autoLink($html, 'shakko');
 ?>

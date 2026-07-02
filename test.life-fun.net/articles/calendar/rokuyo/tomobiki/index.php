@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/senshou/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/tomobiki/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="六曜「先勝」の意味・由来・過ごし方を解説。午前は吉、午後は凶とされる先勝の日にすべきこと・避けるべきことをわかりやすく紹介します。">
-  <title>先勝（せんしょう）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
+  <meta name="description" content="六曜「友引」の意味・由来・過ごし方を解説。祝い事に良く葬儀は避けるべきとされる友引の日にすべきこと・避けるべきことをわかりやすく紹介します。">
+  <title>友引（ともびき）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"先勝の日に避けたほうがいいことはありますか？","acceptedAnswer":{"@type":"Answer","text":"先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。"}},
-      {"@type":"Question","name":"先勝と友引はどちらが良い日ですか？","acceptedAnswer":{"@type":"Answer","text":"友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。"}},
-      {"@type":"Question","name":"先勝はどう読みますか？","acceptedAnswer":{"@type":"Answer","text":"「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。"}}
+      {"@type":"Question","name":"友引に葬儀をしてはいけないのですか？","acceptedAnswer":{"@type":"Answer","text":"絶対禁止ではありませんが、「友を引く」という字面から「故人が友人をあの世に連れていく」と連想されるため、古くから友引の葬儀は避けられてきました。多くの火葬場が友引を休業日にしているため、実務的にも友引の葬儀は難しいことが多いです。"}},
+      {"@type":"Question","name":"友引に結婚式を挙げるのは良いことですか？","acceptedAnswer":{"@type":"Answer","text":"はい、友引は「幸せのお裾分け」という意味合いで結婚式には縁起が良い日とされています。「友を引く」＝「良いことを友人にも引き寄せる」というポジティブな解釈で、結婚式場では人気の高い日取りの一つです。"}},
+      {"@type":"Question","name":"友引の凶の時間帯はいつですか？","acceptedAnswer":{"@type":"Answer","text":"友引は正午（11時〜13時頃）が凶とされ、それ以外の朝・夕は吉とされます。慶事はこの凶の時間帯を避けて行うのが良いとされています。"}}
     ]
   }
   </script>
@@ -106,7 +106,7 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"六曜とは","item":"https://life-fun.net/articles/calendar/rokuyo/"},
-      {"@type":"ListItem","position":5,"name":"先勝とは","item":"https://life-fun.net/articles/calendar/rokuyo/senshou/"}
+      {"@type":"ListItem","position":5,"name":"友引とは","item":"https://life-fun.net/articles/calendar/rokuyo/tomobiki/"}
     ]
   }
   </script>
@@ -122,25 +122,25 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>先勝とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>友引とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">SENSHOU · 六曜</span>
-    <h1>先勝（せんしょう）とは？<br>意味と過ごし方をわかりやすく解説</h1>
-    <p class="art-lead">先勝（せんしょう）は六曜の一つで、「先んずれば即ち勝つ」という意味を持つ日です。午前中は吉、午後は凶とされ、急ぎの用事や勝負事に向いた日とされています。由来・過ごし方・友引との違いまで詳しく解説します。</p>
+    <span class="art-label">TOMOBIKI · 六曜</span>
+    <h1>友引（ともびき）とは？<br>意味と過ごし方をわかりやすく解説</h1>
+    <p class="art-lead">友引（ともびき）は六曜の一つで、「友を引く」という意味を持つ日です。慶事には良いが凶事（特に葬儀）は避けるべきとされ、正午のみ凶、それ以外は吉とされています。由来・過ごし方・結婚式や葬儀との関係まで詳しく解説します。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>読み方</dt><dd>せんしょう（さきがち）</dd>
-    <dt>吉の時間帯</dt><dd>午前中（11時頃まで）</dd>
-    <dt>凶の時間帯</dt><dd>午後（13時〜17時頃）</dd>
-    <dt>向いていること</dt><dd>急ぎの用事・訴訟・勝負事・午前中の契約</dd>
+    <dt>読み方</dt><dd>ともびき</dd>
+    <dt>吉の時間帯</dt><dd>朝・夕（正午以外）</dd>
+    <dt>凶の時間帯</dt><dd>正午（11時〜13時頃）</dd>
+    <dt>向いていること</dt><dd>結婚式・お祝い事（葬儀は避けるべき）</dd>
   </dl>
 
   <?php
   $ctaTitle = '📅 今日の六曜を確認する';
-  $ctaText  = '今日が先勝かどうか、開運カレンダーで毎日更新でお届け。';
+  $ctaText  = '今日が友引かどうか、開運カレンダーで毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
   require __DIR__.'/../../../../inc/article-cta.php';
@@ -149,46 +149,46 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">先勝の意味</a></li>
-      <li><a href="#origin">先勝の由来</a></li>
-      <li><a href="#action">先勝の日にすべきこと</a></li>
+      <li><a href="#about">友引の意味</a></li>
+      <li><a href="#origin">友引の由来</a></li>
+      <li><a href="#action">友引の日にすべきこと</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>先勝の意味</h2>
-    <p>先勝（せんしょう）は、六曜の中で「先んずれば即ち勝つ」という意味を持つ日です。文字通り「先に動いた者が勝つ」という考え方から、何事も早めに行動することが吉とされています。六曜の巡りの中では友引の前、先負の後に位置し、月初めには先勝から始まる月もあります。</p>
-    <p>一日の中でも吉凶が時間帯によって分かれているのが先勝の特徴です。午前中（おおよそ11時頃まで）は吉、午後（13時〜17時頃）は凶とされ、正午前後は判断が分かれる境目の時間とされています。</p>
+    <h2>友引の意味</h2>
+    <p>友引（ともびき）は、六曜の中で「友を引く」という意味を持つ日です。文字通り「良いことも悪いことも友人を引き寄せる」という解釈から、慶事には良いが、凶事（特に葬儀）は避けるべきとされてきました。六曜の巡りでは先勝の後、先負の前に位置します。</p>
+    <p>一日の中では正午（11時〜13時頃）のみ凶とされ、それ以外の朝・夕の時間帯は吉とされています。「友引に何かをする際は正午を避ける」というのが基本的な考え方です。</p>
   </section>
 
   <section class="art-section" id="origin">
-    <h2>先勝の由来</h2>
-    <p>六曜はもともと中国で生まれた時刻・日にちの吉凶占いが日本に伝わったもので、鎌倉時代から室町時代にかけて日本に伝来したとされています。当時は「即吉」「共引」といった異なる漢字が当てられていましたが、江戸時代から明治時代にかけて現在の「先勝」の字が定着しました。</p>
-    <p>先勝はもともと「小吉」とも呼ばれており、「先んずれば即ち勝つ」という解釈は後世に付け加えられた意味合いが強いとされています。それでも「早めの行動が吉」というシンプルなメッセージ性から、現代でも広く親しまれています。</p>
+    <h2>友引の由来</h2>
+    <p>友引はもともと「共引」と表記され、「共に引き分ける」＝勝負がつかない日という意味でした。この「共引」が「友引」という漢字に変わったことで、「友を引く」という新しい解釈が生まれ、現在のような吉凶の意味合いが定着しました。</p>
+    <p>特に「友引の葬儀は故人が友人をあの世に連れていく」という連想から、江戸時代以降、友引の日に葬儀を避ける慣習が広まりました。この慣習は現代でも根強く残っており、多くの火葬場・斎場が友引を定休日にしています。</p>
   </section>
 
   <section class="art-section" id="action">
-    <h2>先勝の日にすべきこと</h2>
-    <p>先勝の日は「午前中に動く」ことが基本方針です。重要な契約・商談・訴訟・引っ越しの手続きなど、勝負事や急ぎの用事は午前中に済ませるのが理想とされます。逆に午後に大切な決断を下すことは避け、静かに過ごすのが良いとされています。</p>
-    <p>また「先んずれば勝つ」という言葉の意味から、スポーツの試合・受験・面接など、勝敗や結果を伴う物事のスタートに縁起が良い日ともいわれます。午前中に大切な予定を入れることで、六曜の意味を日常に取り入れることができます。</p>
+    <h2>友引の日にすべきこと</h2>
+    <p>友引は結婚式・入籍・お祝い事など、慶事全般に向いた日とされています。「幸せを友人にも引き寄せる」というポジティブな解釈から、結婚式場では特に人気が高い日取りの一つです。予約が集中しやすいため、友引に結婚式を挙げたい場合は早めの予約がおすすめです。</p>
+    <p>一方で葬儀・法事などの凶事は避けるべきとされており、実際に多くの火葬場が友引を休業日としています。慶事を行う場合も、正午（11時〜13時頃）の凶の時間帯は避けて、朝や夕方に予定を組むとより良いとされています。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝の日に避けたほうがいいことはありますか？</div>
-        <div class="faq-a">先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">友引に葬儀をしてはいけないのですか？</div>
+        <div class="faq-a">絶対禁止ではありませんが、「友を引く」という字面から「故人が友人をあの世に連れていく」と連想されるため、古くから友引の葬儀は避けられてきました。多くの火葬場が友引を休業日にしているため、実務的にも友引の葬儀は難しいことが多いです。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝と友引はどちらが良い日ですか？</div>
-        <div class="faq-a">友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">友引に結婚式を挙げるのは良いことですか？</div>
+        <div class="faq-a">はい、友引は「幸せのお裾分け」という意味合いで結婚式には縁起が良い日とされています。「友を引く」＝「良いことを友人にも引き寄せる」というポジティブな解釈で、結婚式場では人気の高い日取りの一つです。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝はどう読みますか？</div>
-        <div class="faq-a">「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">友引の凶の時間帯はいつですか？</div>
+        <div class="faq-a">友引は正午（11時〜13時頃）が凶とされ、それ以外の朝・夕は吉とされます。慶事はこの凶の時間帯を避けて行うのが良いとされています。</div>
       </div>
     </div>
   </section>
@@ -196,10 +196,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>先勝は「先んずれば即ち勝つ」という意味を持つ六曜の一つ。</li>
-      <li>午前中（11時頃まで）が吉、午後（13時〜17時頃）は凶とされる。</li>
-      <li>急ぎの用事・訴訟・勝負事は午前中に済ませるのが理想。</li>
-      <li>鎌倉〜室町時代に中国から伝来し、江戸〜明治時代に現在の表記が定着した。</li>
+      <li>友引は「友を引く」という意味を持つ六曜の一つ。</li>
+      <li>正午（11時〜13時頃）が凶、それ以外の朝・夕は吉とされる。</li>
+      <li>結婚式などの慶事には良いが、葬儀などの凶事は避けるべきとされる。</li>
+      <li>多くの火葬場・斎場が友引を定休日にしている慣習が今も残る。</li>
     </ul>
   </section>
 
@@ -212,10 +212,10 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = null;
-  $prevTitle = null;
-  $nextUrl   = '/articles/calendar/rokuyo/tomobiki/';
-  $nextTitle = '友引';
+  $prevUrl   = '/articles/calendar/rokuyo/senshou/';
+  $prevTitle = '先勝';
+  $nextUrl   = '/articles/calendar/rokuyo/senbu/';
+  $nextTitle = '先負';
   $listUrl   = '/articles/calendar/rokuyo/';
   $listTitle = '六曜一覧';
   require __DIR__.'/../../../../inc/article-nav.php';
@@ -243,10 +243,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='senshou'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
+<?php $currentSlug='tomobiki'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'senshou');
+echo autoLink($html, 'tomobiki');
 ?>

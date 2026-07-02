@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/senshou/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/butsumetsu/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="六曜「先勝」の意味・由来・過ごし方を解説。午前は吉、午後は凶とされる先勝の日にすべきこと・避けるべきことをわかりやすく紹介します。">
-  <title>先勝（せんしょう）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
+  <meta name="description" content="六曜「仏滅」の意味・由来・過ごし方を解説。六曜の中で最も凶とされる仏滅の日にすべきこと・避けるべきことをわかりやすく紹介します。">
+  <title>仏滅（ぶつめつ）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"先勝の日に避けたほうがいいことはありますか？","acceptedAnswer":{"@type":"Answer","text":"先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。"}},
-      {"@type":"Question","name":"先勝と友引はどちらが良い日ですか？","acceptedAnswer":{"@type":"Answer","text":"友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。"}},
-      {"@type":"Question","name":"先勝はどう読みますか？","acceptedAnswer":{"@type":"Answer","text":"「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。"}}
+      {"@type":"Question","name":"仏滅に何をしても悪いことが起きるのですか？","acceptedAnswer":{"@type":"Answer","text":"六曜は迷信の一種であり、仏滅だからといって科学的に悪いことが起きるわけではありません。ただし社会的な慣習として避ける人が多いため、結婚式・開業などの大きなイベントは仏滅を避けるのが無難とされています。"}},
+      {"@type":"Question","name":"仏滅に結婚式を挙げるとどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"仏滅の結婚式自体に問題はありませんが、六曜を気にする親族・招待客がいる場合は配慮が必要です。一方で仏滅は式場料金が割引になることが多く、六曜を気にしないカップルには経済的なメリットがあります。"}},
+      {"@type":"Question","name":"仏滅の由来は仏教と関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"直接的な関係はありません。「仏も滅するような凶日」という当て字から「仏滅」という漢字が使われるようになりましたが、仏教の教義とは無関係です。もともとは「空亡」「虚亡」という表記でした。"}}
     ]
   }
   </script>
@@ -106,7 +106,7 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"六曜とは","item":"https://life-fun.net/articles/calendar/rokuyo/"},
-      {"@type":"ListItem","position":5,"name":"先勝とは","item":"https://life-fun.net/articles/calendar/rokuyo/senshou/"}
+      {"@type":"ListItem","position":5,"name":"仏滅とは","item":"https://life-fun.net/articles/calendar/rokuyo/butsumetsu/"}
     ]
   }
   </script>
@@ -122,25 +122,25 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>先勝とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/rokuyo/">六曜とは</a><span>›</span>仏滅とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">SENSHOU · 六曜</span>
-    <h1>先勝（せんしょう）とは？<br>意味と過ごし方をわかりやすく解説</h1>
-    <p class="art-lead">先勝（せんしょう）は六曜の一つで、「先んずれば即ち勝つ」という意味を持つ日です。午前中は吉、午後は凶とされ、急ぎの用事や勝負事に向いた日とされています。由来・過ごし方・友引との違いまで詳しく解説します。</p>
+    <span class="art-label">BUTSUMETSU · 六曜</span>
+    <h1>仏滅（ぶつめつ）とは？<br>意味と過ごし方をわかりやすく解説</h1>
+    <p class="art-lead">仏滅（ぶつめつ）は六曜の中で最も凶とされる日です。「仏も滅するほどの凶日」という意味を持ち、新しいことを始めるのは避けるべきとされる一方、静養や現状維持には適した日ともいわれます。由来・過ごし方まで詳しく解説します。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>読み方</dt><dd>せんしょう（さきがち）</dd>
-    <dt>吉の時間帯</dt><dd>午前中（11時頃まで）</dd>
-    <dt>凶の時間帯</dt><dd>午後（13時〜17時頃）</dd>
-    <dt>向いていること</dt><dd>急ぎの用事・訴訟・勝負事・午前中の契約</dd>
+    <dt>読み方</dt><dd>ぶつめつ</dd>
+    <dt>吉凶</dt><dd>終日凶（六曜の中で最も凶とされる）</dd>
+    <dt>向いていること</dt><dd>静養・現状維持・振り返り</dd>
+    <dt>避けるべきこと</dt><dd>結婚式・開業・新規契約・引越し</dd>
   </dl>
 
   <?php
   $ctaTitle = '📅 今日の六曜を確認する';
-  $ctaText  = '今日が先勝かどうか、開運カレンダーで毎日更新でお届け。';
+  $ctaText  = '今日が仏滅かどうか、開運カレンダーで毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
   require __DIR__.'/../../../../inc/article-cta.php';
@@ -149,46 +149,46 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">先勝の意味</a></li>
-      <li><a href="#origin">先勝の由来</a></li>
-      <li><a href="#action">先勝の日にすべきこと</a></li>
+      <li><a href="#about">仏滅の意味</a></li>
+      <li><a href="#origin">仏滅の由来</a></li>
+      <li><a href="#action">仏滅の日にすべきこと</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>先勝の意味</h2>
-    <p>先勝（せんしょう）は、六曜の中で「先んずれば即ち勝つ」という意味を持つ日です。文字通り「先に動いた者が勝つ」という考え方から、何事も早めに行動することが吉とされています。六曜の巡りの中では友引の前、先負の後に位置し、月初めには先勝から始まる月もあります。</p>
-    <p>一日の中でも吉凶が時間帯によって分かれているのが先勝の特徴です。午前中（おおよそ11時頃まで）は吉、午後（13時〜17時頃）は凶とされ、正午前後は判断が分かれる境目の時間とされています。</p>
+    <h2>仏滅の意味</h2>
+    <p>仏滅（ぶつめつ）は、六曜の中で「仏も滅するほどの凶日」という意味を持つ、最も凶とされる日です。一日を通してすべての物事に凶とされ、六曜の巡りでは先負の後、大安の前に位置します。</p>
+    <p>「仏滅」という字面の強さから最も避けられる日として知られていますが、実際には「物事が一度滅び、新しく始まる節目の日」という前向きな解釈をする考え方もあります。</p>
   </section>
 
   <section class="art-section" id="origin">
-    <h2>先勝の由来</h2>
-    <p>六曜はもともと中国で生まれた時刻・日にちの吉凶占いが日本に伝わったもので、鎌倉時代から室町時代にかけて日本に伝来したとされています。当時は「即吉」「共引」といった異なる漢字が当てられていましたが、江戸時代から明治時代にかけて現在の「先勝」の字が定着しました。</p>
-    <p>先勝はもともと「小吉」とも呼ばれており、「先んずれば即ち勝つ」という解釈は後世に付け加えられた意味合いが強いとされています。それでも「早めの行動が吉」というシンプルなメッセージ性から、現代でも広く親しまれています。</p>
+    <h2>仏滅の由来</h2>
+    <p>仏滅はもともと「空亡」「虚亡」と表記され、「すべてが空しくなる日」という意味でした。この表記が時代を経て「物滅」となり、さらに仏教的な響きを持つ「仏滅」という字が当てられるようになったとされています。実際には仏教の教義とは直接関係がありません。</p>
+    <p>「仏も滅するほどの凶日」という強いイメージから、日本人の間で最も広く知られ、最も避けられる六曜となりました。結婚式場や葬儀場の予約状況、料金設定にも影響を与えるほど社会的な浸透度が高い日です。</p>
   </section>
 
   <section class="art-section" id="action">
-    <h2>先勝の日にすべきこと</h2>
-    <p>先勝の日は「午前中に動く」ことが基本方針です。重要な契約・商談・訴訟・引っ越しの手続きなど、勝負事や急ぎの用事は午前中に済ませるのが理想とされます。逆に午後に大切な決断を下すことは避け、静かに過ごすのが良いとされています。</p>
-    <p>また「先んずれば勝つ」という言葉の意味から、スポーツの試合・受験・面接など、勝敗や結果を伴う物事のスタートに縁起が良い日ともいわれます。午前中に大切な予定を入れることで、六曜の意味を日常に取り入れることができます。</p>
+    <h2>仏滅の日にすべきこと</h2>
+    <p>仏滅の日は、結婚式・入籍・開業・新規契約・引越しなど、新しく何かを始めることは避けるのが伝統的な考え方です。特に結婚式・入籍は仏滅を避けるカップルが今も多く、式場の予約状況にも影響しています。</p>
+    <p>一方で仏滅は「静かに過ごす日」「振り返りの日」として活用することもできます。新しいことを始めるより、これまでのことを整理する・体を休める・家でゆっくり過ごすといった過ごし方が向いています。また仏滅は結婚式場が割引になることも多く、六曜を気にしない場合は経済的なメリットもあります。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝の日に避けたほうがいいことはありますか？</div>
-        <div class="faq-a">先勝は午後が凶とされるため、午後の重要な商談・訴訟・急ぎの契約などは避けたほうが良いとされます。午前中に済ませられる用事は先勝の日の午前に行うのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">仏滅に何をしても悪いことが起きるのですか？</div>
+        <div class="faq-a">六曜は迷信の一種であり、仏滅だからといって科学的に悪いことが起きるわけではありません。ただし社会的な慣習として避ける人が多いため、結婚式・開業などの大きなイベントは仏滅を避けるのが無難とされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝と友引はどちらが良い日ですか？</div>
-        <div class="faq-a">友引は一日を通して祝い事に向いた日とされ、先勝は午前中のみ吉とされます。結婚式など終日にわたる祝い事であれば友引、午前中に終わる用事であれば先勝が向いています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">仏滅に結婚式を挙げるとどうなりますか？</div>
+        <div class="faq-a">仏滅の結婚式自体に問題はありませんが、六曜を気にする親族・招待客がいる場合は配慮が必要です。一方で仏滅は式場料金が割引になることが多く、六曜を気にしないカップルには経済的なメリットがあります。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">先勝はどう読みますか？</div>
-        <div class="faq-a">「せんしょう」と読むのが一般的ですが、「さきがち」「せんかち」と読まれることもあります。地域や慣習によって読み方に違いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">仏滅の由来は仏教と関係がありますか？</div>
+        <div class="faq-a">直接的な関係はありません。「仏も滅するような凶日」という当て字から「仏滅」という漢字が使われるようになりましたが、仏教の教義とは無関係です。もともとは「空亡」「虚亡」という表記でした。</div>
       </div>
     </div>
   </section>
@@ -196,10 +196,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>先勝は「先んずれば即ち勝つ」という意味を持つ六曜の一つ。</li>
-      <li>午前中（11時頃まで）が吉、午後（13時〜17時頃）は凶とされる。</li>
-      <li>急ぎの用事・訴訟・勝負事は午前中に済ませるのが理想。</li>
-      <li>鎌倉〜室町時代に中国から伝来し、江戸〜明治時代に現在の表記が定着した。</li>
+      <li>仏滅は六曜の中で最も凶とされる日で、一日を通して凶とされる。</li>
+      <li>結婚式・開業・新規契約・引越しなど新しいことの開始は避けるのが伝統的な考え方。</li>
+      <li>静養・現状維持・振り返りの日として活用する考え方もある。</li>
+      <li>仏教とは無関係で、もともとは「空亡」「虚亡」という表記だった。</li>
     </ul>
   </section>
 
@@ -212,10 +212,10 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = null;
-  $prevTitle = null;
-  $nextUrl   = '/articles/calendar/rokuyo/tomobiki/';
-  $nextTitle = '友引';
+  $prevUrl   = '/articles/calendar/rokuyo/senbu/';
+  $prevTitle = '先負';
+  $nextUrl   = '/articles/calendar/rokuyo/taian/';
+  $nextTitle = '大安';
   $listUrl   = '/articles/calendar/rokuyo/';
   $listTitle = '六曜一覧';
   require __DIR__.'/../../../../inc/article-nav.php';
@@ -243,10 +243,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='senshou'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
+<?php $currentSlug='butsumetsu'; $pageType='article'; require __DIR__.'/../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'senshou');
+echo autoLink($html, 'butsumetsu');
 ?>

@@ -179,8 +179,8 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>開運カレンダーに関わるキーワードをカテゴリ別に詳しく解説しています。</p>
     <div class="type-grid">
       <a href="/articles/calendar/rokuyo/" class="type-card"><div class="type-code">六曜</div><div class="type-name">先勝・友引・大安など</div><div class="type-kw">冠婚葬祭の日取りの目安</div></a>
-      <div class="type-card"><div class="type-code">陰陽五行</div><div class="type-name">木・火・土・金・水</div><div class="type-kw">ラッキーカラーの由来</div></div>
-      <div class="type-card"><div class="type-code">特別な吉日</div><div class="type-name">一粒万倍日・天赦日など</div><div class="type-kw">縁起の良い日の意味</div></div>
+      <a href="/articles/calendar/gogyo/" class="type-card"><div class="type-code">陰陽五行</div><div class="type-name">木・火・土・金・水</div><div class="type-kw">ラッキーカラーの由来</div></a>
+      <a href="/articles/calendar/kichijitsu/" class="type-card"><div class="type-code">特別な吉日</div><div class="type-name">一粒万倍日・天赦日など</div><div class="type-kw">縁起の良い日の意味</div></a>
     </div>
   </section>
 
