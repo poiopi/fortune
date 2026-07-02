@@ -265,5 +265,5 @@ function toggleFaq(el){
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'sanmei');
+echo autoLink($html, 'kansaku');
 ?>

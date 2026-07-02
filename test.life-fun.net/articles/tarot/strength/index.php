@@ -110,4 +110,4 @@ ob_start();
 <?php $currentSlug='tarot'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
 </body>
 </html>
-<?php $html=ob_get_clean();echo autoLink($html,'tarot'); ?>
+<?php $html=ob_get_clean();echo autoLink($html,'strength'); ?>

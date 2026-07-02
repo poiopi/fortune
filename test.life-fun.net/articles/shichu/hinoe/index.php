@@ -362,4 +362,4 @@ ob_start();
 <?php $currentSlug='jikkan'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
 </body>
 </html>
-<?php $html=ob_get_clean(); echo autoLink($html,'jikkan'); ?>
+<?php $html=ob_get_clean(); echo autoLink($html,'hinoe'); ?>

@@ -310,5 +310,5 @@ function toggleFaq(el){
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'tarot');
+echo autoLink($html,'magician');
 ?>

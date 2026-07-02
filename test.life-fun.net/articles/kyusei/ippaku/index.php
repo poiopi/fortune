@@ -297,5 +297,5 @@ function toggleFaq(el){ el.parentElement.classList.toggle('open'); }
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'kyusei');
+echo autoLink($html, 'ippaku');
 ?>

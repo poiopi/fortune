@@ -247,4 +247,4 @@ ob_start();
 <?php $currentSlug='guardian'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
 </body>
 </html>
-<?php $html=ob_get_clean();echo autoLink($html,'guardian'); ?>
+<?php $html=ob_get_clean();echo autoLink($html,'ryujin'); ?>
