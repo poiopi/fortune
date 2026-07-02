@@ -942,13 +942,19 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   let pointerDownX = 0;
   let moved = false; // このポインタ操作でドラッグ判定（しきい値超え）が発生したか
 
+  let activePointerId = null;
+
   track.addEventListener('pointerdown', e => {
     if(isMobile()) return;
     pointerIsDown = true;
     pointerDownX = e.clientX;
     dragStartX   = e.clientX;
     dragStartPos = pos;
-    track.setPointerCapture(e.pointerId);
+    activePointerId = e.pointerId;
+    /* setPointerCaptureはここでは呼ばない：単純クリックの時点でcaptureすると
+       ブラウザによってはその後のclickイベントのtargetが実際の<a>ではなく
+       track自身に付け替わり、リンク遷移が起きなくなることがあるため。
+       ドラッグが確定した瞬間(pointermove側)にのみcaptureする。 */
   });
   track.addEventListener('pointermove', e => {
     if(!pointerIsDown) return;
@@ -958,6 +964,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       dragging = true;
       moved = true;
       track.classList.add('dragging');
+      track.setPointerCapture(e.pointerId);
     }
     e.preventDefault();
     const dx = dragStartX - e.clientX;
@@ -971,7 +978,10 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   ['pointerup','pointercancel'].forEach(ev => {
     track.addEventListener(ev, e => {
       pointerIsDown = false;
-      track.releasePointerCapture(e.pointerId);
+      if(activePointerId !== null && track.hasPointerCapture(activePointerId)){
+        track.releasePointerCapture(activePointerId);
+      }
+      activePointerId = null;
       if(dragging){
         dragging = false;
         track.classList.remove('dragging');

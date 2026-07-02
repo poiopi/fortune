@@ -114,7 +114,10 @@
       "Bash(\"/c/php/php.exe\" -l /c/Users/sende/fortune/test.life-fun.net/index.php)",
       "Bash(\"/c/php/php.exe\" -l /c/Users/sende/fortune/test.life-fun.net/top_design2.php)",
       "Bash(ffmpeg -version)",
-      "PowerShell(winget install --id Gyan.FFmpeg -e --accept-source-agreements --accept-package-agreements)"
+      "PowerShell(winget install --id Gyan.FFmpeg -e --accept-source-agreements --accept-package-agreements)",
+      "mcp__claude-in-chrome__read_console_messages",
+      "Bash(/c/php/php.exe -l \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\index.php\")",
+      "Bash(/c/php/php.exe -l \"C:\\\\Users\\\\sende\\\\fortune\\\\test.life-fun.net\\\\top_design2.php\")"
     ]
   }
 }
