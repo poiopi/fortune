@@ -111,7 +111,8 @@
       "Bash(\"/c/php/php.exe\" -l \"/c/Users/sende/fortune/test.life-fun.net/sansei.php\")",
       "Bash(\"/c/php/php.exe\" -l \"/c/Users/sende/fortune/test.life-fun.net/inc/nav-cards.php\")",
       "Bash(/c/php/php.exe -d display_errors=1 -r ' *)",
-      "Bash(\"/c/php/php.exe\" -l /c/Users/sende/fortune/test.life-fun.net/index.php)"
+      "Bash(\"/c/php/php.exe\" -l /c/Users/sende/fortune/test.life-fun.net/index.php)",
+      "Bash(\"/c/php/php.exe\" -l /c/Users/sende/fortune/test.life-fun.net/top_design2.php)"
     ]
   }
 }
