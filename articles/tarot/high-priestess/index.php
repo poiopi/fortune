@@ -147,5 +147,5 @@ ob_start();
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'tarot');
+echo autoLink($html,'high-priestess');
 ?>

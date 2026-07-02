@@ -222,5 +222,5 @@ function toggleFaq(el){ const item=el.parentElement; item.classList.toggle('open
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'sanmei');
+echo autoLink($html, 'sekimon');
 ?>
