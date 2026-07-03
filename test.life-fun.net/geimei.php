@@ -261,16 +261,17 @@ footer a:hover{color:var(--gold)}
       <a href="/seimei" class="seimei-link">✍️ 姓名判断で調べる →</a>
     </div>
     <?php require __DIR__.'/inc/share-btns.php'; ?>
-    <div class="retry-wrap">
-      <button class="rf-retry-btn" onclick="resetAll()">もう一度診断する</button>
-    </div>
-  </div>
-
-  <?php
-  require_once __DIR__.'/inc/nav-cards.php';
-  ?>
-  <div id="inlineNavCards" style="display:none">
-    <div class="nav-cards-section"><h3>✦ 次はこれを試してみては？ ✦</h3><?= _nav_cards(3,'geimei') ?></div>
+    <?php
+    $articleUrl   = null;
+    $articleIcon  = '';
+    $articleTitle = '';
+    $articleDesc  = '';
+    $contextKey   = 'geimei';
+    $retryLabel   = 'もう一度診断する';
+    $retryType    = 'js';
+    $retryValue   = 'resetAll()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 
   <p class="disclaimer">※ 本サービスはエンターテインメント目的のコンテンツです。提案された芸名の使用は自己責任でお願いします。</p>
@@ -904,7 +905,6 @@ function showResult(){
 
     document.getElementById('gameSection').style.display='none';
     document.getElementById('formSection').style.display='none';
-    document.getElementById('inlineNavCards').style.display='block';
     document.getElementById('loadingOverlay').classList.remove('show');
     scrollToResult('resultSection');
   },900);
