@@ -49,6 +49,7 @@ $oracleDateLabel = $today->format('Y年n月j日').'（'.$weekdayJp[(int)$today->
   --teal:     #3ab8b0;
   --text:     #e8e2f5;
   --muted:    #8a7db5;
+  --text-secondary: #c3b8e0; /* 本文用：--mutedより明るく可読性重視。ラベル装飾には使わない */
   --ff-serif: 'Shippori Mincho', serif;
   --ff-sans:  'Zen Kaku Gothic New', sans-serif;
   --ff-mono:  'DM Mono', monospace;
@@ -87,10 +88,11 @@ body {
   margin-bottom: .35rem;
 }
 .section-sub {
-  font-size: .8rem;
-  color: var(--muted);
+  font-size: .85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: .03em;
   margin-bottom: 2rem;
 }
 
@@ -368,7 +370,7 @@ body {
 .fc-icon  { font-size: 1.7rem; line-height: 1; }
 .fc-lbl   { font-family: var(--ff-mono); font-size: .53rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
 .fc-name  { font-family: var(--ff-serif); font-size: .93rem; font-weight: 700; color: var(--text); letter-spacing: .04em; }
-.fc-desc  { font-size: .69rem; color: var(--muted); line-height: 1.55; flex: 1; }
+.fc-desc  { font-size: .78rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
 
 @media (max-width: 639px) {
   .fc-desc { display: none; } /* SPでは説明文を省略して高さを詰める */
@@ -449,7 +451,7 @@ body {
 .rokuyo-name { font-family: var(--ff-serif); font-size: 1.75rem; font-weight: 700; color: var(--gold); line-height: 1; }
 .rokuyo-en   { font-family: var(--ff-mono); font-size: .48rem; letter-spacing: .12em; color: var(--muted); margin-top: .4rem; }
 
-.oracle-desc { font-size: .8rem; color: var(--muted); line-height: 1.75; margin-bottom: .8rem; }
+.oracle-desc { font-size: .85rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: .8rem; }
 .oracle-msg { font-family: var(--ff-serif); font-size: .86rem; color: var(--gold-lt); font-style: italic; line-height: 1.7; padding: .55rem .85rem; border-left: 2px solid var(--gold); background: rgba(201,168,76,.05); border-radius: 0 6px 6px 0; margin-bottom: .9rem; }
 .oracle-chips { display: flex; flex-wrap: wrap; gap: .4rem; padding-top: .8rem; border-top: 1px solid var(--border); }
 .ochip { display: flex; align-items: center; gap: .3rem; background: rgba(155,114,239,.08); border: 1px solid rgba(155,114,239,.2); border-radius: 20px; padding: .2rem .65rem; font-size: .7rem; color: var(--violet-lt); }
@@ -482,7 +484,7 @@ body {
 .gcard:hover { border-color: var(--border2); transform: translateY(-2px); }
 .gc-lbl { font-family: var(--ff-mono); font-size: .52rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
 .gc-name { font-family: var(--ff-serif); font-size: .88rem; font-weight: 700; color: var(--text); }
-.gc-desc { font-size: .69rem; color: var(--muted); line-height: 1.5; flex: 1; }
+.gc-desc { font-size: .78rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
 @media (max-width: 640px) { .gc-desc { display: none; } }
 .gc-link { font-family: var(--ff-mono); font-size: .63rem; color: var(--gold); letter-spacing: .06em; margin-top: .15rem; }
 .guide-more { display: flex; justify-content: center; margin-top: 1.5rem; }
