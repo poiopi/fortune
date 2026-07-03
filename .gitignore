@@ -1,0 +1,13 @@
+# SFTP/FTP credentials
+.vscode/sftp.json
+**/.htpasswd
+
+# Claude Code local settings (machine-specific, not for sharing)
+.claude/settings.local.json
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+
+# Local notes (not for public repo)
+claude.md
