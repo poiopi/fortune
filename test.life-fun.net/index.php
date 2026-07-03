@@ -1,6 +1,15 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__.'/inc/nav-cards.php';
+require_once __DIR__.'/inc/oracle.php';
+
+$today      = new DateTimeImmutable();
+$todayStr   = $today->format('Y-m-d');
+$rokuyo     = getRokuyo((int)$today->format('Y'), (int)$today->format('n'), (int)$today->format('j'));
+$luckyItems = getLuckyItems($todayStr);
+
+$weekdayJp = ['日','月','火','水','木','金','土'];
+$oracleDateLabel = $today->format('Y年n月j日').'（'.$weekdayJp[(int)$today->format('w')].'）';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -715,21 +724,21 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <p class="section-sub">六曜・ラッキーアイテム・今日のメッセージ</p>
 
     <div class="oracle-card fade-up">
-      <div class="oracle-date">2026年6月30日（月）</div>
+      <div class="oracle-date"><?= htmlspecialchars($oracleDateLabel, ENT_QUOTES, 'UTF-8') ?></div>
       <div class="oracle-grid">
         <div class="rokuyo-box">
-          <div class="rokuyo-name">赤口</div>
-          <div class="rokuyo-en">SHAKKU</div>
+          <div class="rokuyo-name"><?= htmlspecialchars($rokuyo['name'], ENT_QUOTES, 'UTF-8') ?></div>
+          <div class="rokuyo-en"><?= htmlspecialchars(strtoupper($rokuyo['en']), ENT_QUOTES, 'UTF-8') ?></div>
         </div>
         <div>
-          <p class="oracle-desc">午の刻（11〜13時）のみ吉。火や血に関することは慎む日とされています。静かに過ごすことが運気を保つ秘訣です。</p>
-          <div class="oracle-msg">「直感を信じて行動しましょう。日常に隠れた小さな幸せに気づく日。」</div>
+          <p class="oracle-desc"><?= htmlspecialchars($rokuyo['desc'], ENT_QUOTES, 'UTF-8') ?></p>
+          <div class="oracle-msg">「<?= htmlspecialchars($luckyItems['message'], ENT_QUOTES, 'UTF-8') ?>」</div>
           <div class="oracle-chips">
-            <div class="ochip"><span class="ochip-l">COLOR</span>&nbsp;ラベンダー</div>
-            <div class="ochip"><span class="ochip-l">NO.</span>&nbsp;7</div>
-            <div class="ochip"><span class="ochip-l">FOOD</span>&nbsp;抹茶ラテ</div>
-            <div class="ochip"><span class="ochip-l">ITEM</span>&nbsp;天然石ブレスレット</div>
-            <div class="ochip"><span class="ochip-l">ACTION</span>&nbsp;深呼吸を3回</div>
+            <div class="ochip"><span class="ochip-l">COLOR</span>&nbsp;<?= htmlspecialchars($luckyItems['color']['name'], ENT_QUOTES, 'UTF-8') ?></div>
+            <div class="ochip"><span class="ochip-l">NO.</span>&nbsp;<?= (int)$luckyItems['number'] ?></div>
+            <div class="ochip"><span class="ochip-l">FOOD</span>&nbsp;<?= htmlspecialchars(getLuckyItemByCat($luckyItems, '食べ物'), ENT_QUOTES, 'UTF-8') ?></div>
+            <div class="ochip"><span class="ochip-l">ITEM</span>&nbsp;<?= htmlspecialchars(getLuckyItemByCat($luckyItems, 'アイテム'), ENT_QUOTES, 'UTF-8') ?></div>
+            <div class="ochip"><span class="ochip-l">ACTION</span>&nbsp;<?= htmlspecialchars(getLuckyItemByCat($luckyItems, '行動'), ENT_QUOTES, 'UTF-8') ?></div>
           </div>
           <div class="oracle-more"><a href="/calendar">詳しい開運カレンダーを見る →</a></div>
         </div>
