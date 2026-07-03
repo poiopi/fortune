@@ -207,39 +207,7 @@ body{top:0!important}
 </head>
 <body>
 
-<!-- ══ HEADER ══ -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="logo">⛩ 占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">✦ TOP</a>
-      <a href="/tarot" class="cur">🃏 タロット</a>
-      <a href="/shichu">🔯 四柱推命</a>
-      <a href="/kyusei">⭐ 九星気学</a>
-      <a href="/articles/tarot/">📖 解説</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-  </div>
-  <div class="header-gold-line"></div>
-</header>
-
-<div class="sp-dropdown" id="spDropdown">
-  <a href="/">✦ トップ</a>
-  <a href="/tarot">🃏 タロット占い</a>
-  <a href="/shichu">🔯 四柱推命</a>
-  <a href="/sanmei">☯ 算命学</a>
-  <a href="/seiza">⭐ 西洋占星術</a>
-  <a href="/mbti">🧠 MBTI×星座</a>
-  <a href="/numerology">🔢 数秘術</a>
-  <a href="/kyusei">⭐ 九星気学</a>
-  <a href="/rpg">⚔️ RPG占い</a>
-  <a href="/aisho">💑 相性診断</a>
-  <a href="/zense">🌀 前世診断</a>
-  <a href="/guardian">👻 守護霊診断</a>
-  <a href="/seimei">✍️ 姓名判断</a>
-  <a href="/geimei">🎭 芸名診断</a>
-</div>
+<?php $currentPage = 'tarot'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
   <section class="hero">
