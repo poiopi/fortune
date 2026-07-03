@@ -280,9 +280,14 @@ body {
 }
 .hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.5rem; }
 .hero-pillars { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
-.pillar { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .1em; padding: .28rem .85rem; border: 1px solid rgba(201,168,76,.28); border-radius: 20px; color: rgba(201,168,76,.7); }
-.pillar-flagship { border-color: var(--gold); color: var(--gold-lt); background: rgba(201,168,76,.12); text-decoration: none; transition: background .2s, border-color .2s; }
-.pillar-flagship:hover { background: rgba(201,168,76,.2); border-color: var(--gold-lt); }
+.pillar { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .1em; padding: .28rem .85rem; border: 1px solid rgba(201,168,76,.28); border-radius: 20px; color: rgba(201,168,76,.7); text-decoration: none; display: inline-block; cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
+.pillar:hover, .pillar:focus-visible { background: rgba(201,168,76,.1); border-color: rgba(201,168,76,.5); color: rgba(201,168,76,.9); }
+.pillar:focus-visible { outline: 2px solid var(--gold-lt); outline-offset: 2px; }
+.pillar-flagship { border-color: var(--gold); color: var(--gold-lt); background: rgba(201,168,76,.12); }
+.pillar-flagship:hover, .pillar-flagship:focus-visible { background: rgba(201,168,76,.2); border-color: var(--gold-lt); color: var(--gold-lt); }
+@media (max-width: 600px) {
+  .pillar { padding: .8rem .9rem; min-height: 44px; display: inline-flex; align-items: center; }
+}
 .hero-cta { display: flex; justify-content: center; flex-wrap: wrap; gap: .7rem; }
 .btn-primary { padding: .72rem 1.9rem; background: linear-gradient(135deg, var(--violet), var(--rose)); border: none; border-radius: 28px; color: #fff; font-family: var(--ff-serif); font-size: .9rem; font-weight: 700; letter-spacing: .12em; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: 0 4px 22px rgba(122,74,158,.4); transition: opacity .2s, transform .15s; }
 .btn-primary:hover { opacity: .88; transform: translateY(-2px); }
@@ -565,11 +570,22 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <h1 class="hero-h1 h-d4">無料占いポータル</h1>
     <span class="hero-sub h-d5">星と運命の交差点 · 14種類の占術で今を読み解く</span>
     <div class="hero-pillars h-d6">
-      <a href="/sansei" class="pillar pillar-flagship">✨ 三星統合鑑定</a>
-      <span class="pillar">♈ 西洋占星術</span>
-      <span class="pillar">🔮 タロット</span>
-      <span class="pillar">☯ 四柱推命</span>
-      <span class="pillar">🌙 算命学</span>
+      <?php
+      // Hero直下のピル：URL・アイコンは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として利用（二重管理を避ける）。
+      // 表示名のみHero専用の短縮ラベルを使う（Heroは「入口」であり、カード一覧の正式名称とは役割が異なるため）。
+      $_heroPills = [
+        'sansei' => '三星鑑定',
+        'seiza'  => '西洋占星術',
+        'tarot'  => 'タロット',
+        'shichu' => '四柱推命',
+        'sanmei' => '算命学',
+      ];
+      foreach ($_heroPills as $_slugKey => $_shortLabel):
+        $_heroPill = $_NAV_PAGES[$_slugKey];
+        $_cls = $_slugKey === 'sansei' ? 'pillar pillar-flagship' : 'pillar';
+      ?>
+      <a href="<?= htmlspecialchars($_heroPill['url'], ENT_QUOTES, 'UTF-8') ?>" class="<?= $_cls ?>"><?= htmlspecialchars($_heroPill['icon'], ENT_QUOTES, 'UTF-8') ?> <?= htmlspecialchars($_shortLabel, ENT_QUOTES, 'UTF-8') ?></a>
+      <?php endforeach; ?>
     </div>
     <div class="hero-cta h-d7">
       <a href="#fortunes" class="btn-primary">占いを選ぶ ▼</a>
