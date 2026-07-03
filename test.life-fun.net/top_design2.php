@@ -87,6 +87,14 @@ body {
   letter-spacing: .1em;
   margin-bottom: .35rem;
 }
+.fortune-guide {
+  font-size: .78rem;
+  color: var(--gold-lt);
+  text-align: center;
+  letter-spacing: .02em;
+  margin: -1.3rem auto 1.6rem;
+  max-width: 480px;
+}
 .section-sub {
   font-size: .85rem;
   color: var(--text-secondary);
@@ -273,6 +281,8 @@ body {
 .hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.5rem; }
 .hero-pillars { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
 .pillar { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .1em; padding: .28rem .85rem; border: 1px solid rgba(201,168,76,.28); border-radius: 20px; color: rgba(201,168,76,.7); }
+.pillar-flagship { border-color: var(--gold); color: var(--gold-lt); background: rgba(201,168,76,.12); text-decoration: none; transition: background .2s, border-color .2s; }
+.pillar-flagship:hover { background: rgba(201,168,76,.2); border-color: var(--gold-lt); }
 .hero-cta { display: flex; justify-content: center; flex-wrap: wrap; gap: .7rem; }
 .btn-primary { padding: .72rem 1.9rem; background: linear-gradient(135deg, var(--violet), var(--rose)); border: none; border-radius: 28px; color: #fff; font-family: var(--ff-serif); font-size: .9rem; font-weight: 700; letter-spacing: .12em; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: 0 4px 22px rgba(122,74,158,.4); transition: opacity .2s, transform .15s; }
 .btn-primary:hover { opacity: .88; transform: translateY(-2px); }
@@ -498,6 +508,9 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 .footer-line { height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.45) 30%, rgba(201,168,76,.75) 50%, rgba(201,168,76,.45) 70%, transparent); margin-bottom: 1.5rem; }
 .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 1rem; }
 .footer-links a { font-family: var(--ff-mono); font-size: .63rem; letter-spacing: .1em; color: var(--muted); text-decoration: none; transition: color .2s; }
+.closing-cta { padding: 3rem 1.2rem; text-align: center; }
+.closing-cta-title { font-family: var(--ff-serif); font-size: clamp(1.1rem, 2.8vw, 1.4rem); font-weight: 700; color: var(--text); letter-spacing: .08em; margin-bottom: .6rem; }
+.closing-cta-sub { font-size: .8rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
 .footer-links a:hover { color: var(--gold-lt); }
 .footer-copy { font-family: var(--ff-mono); font-size: .58rem; color: rgba(138,125,181,.3); letter-spacing: .1em; }
 </style>
@@ -552,6 +565,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <h1 class="hero-h1 h-d4">無料占いポータル</h1>
     <span class="hero-sub h-d5">星と運命の交差点 · 14種類の占術で今を読み解く</span>
     <div class="hero-pillars h-d6">
+      <a href="/sansei" class="pillar pillar-flagship">✨ 三星統合鑑定</a>
       <span class="pillar">♈ 西洋占星術</span>
       <span class="pillar">🔮 タロット</span>
       <span class="pillar">☯ 四柱推命</span>
@@ -583,6 +597,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <span class="section-label">Choose Your Fortune</span>
     <h2 class="section-title">占いを選ぶ</h2>
     <p class="section-sub">14種類の占術から、今のあなたに合ったものを</p>
+    <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
   <div class="carousel-outer">
@@ -806,6 +821,15 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <div class="guide-more">
       <a href="/articles/">すべての解説を見る（全12カテゴリ）→</a>
     </div>
+  </div>
+</section>
+
+<!-- ══ 締めのCTA（離脱防止・三星統合鑑定への導線強化） ══ -->
+<section class="closing-cta">
+  <div class="wrap">
+    <h2 class="closing-cta-title">さあ、あなたの運命を占ってみましょう</h2>
+    <p class="closing-cta-sub">名前と生年月日を入力するだけ。西洋占星術×タロット×四柱推命の三位一体鑑定 ✨三星統合鑑定</p>
+    <a href="/sansei" class="btn-primary">三星統合鑑定をはじめる →</a>
   </div>
 </section>
 

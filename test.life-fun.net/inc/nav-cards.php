@@ -58,7 +58,8 @@ function _nav_cards(int $count, string $exclude = ''): string {
 ?>
 <style>
 .nav-cards-section{padding:2.5rem 1.2rem 1rem;max-width:900px;margin:0 auto}
-.nav-cards-section h3{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:1rem;text-align:center}
+.nav-cards-section h3{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:.4rem;text-align:center}
+.nav-cards-lead{font-size:.75rem;color:var(--muted);text-align:center;margin-bottom:1rem}
 .nav-cards{display:flex;gap:.75rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin;scrollbar-color:var(--border2) transparent}
 .nav-cards::-webkit-scrollbar{height:4px}
 .nav-cards::-webkit-scrollbar-track{background:transparent}
