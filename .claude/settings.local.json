@@ -125,7 +125,8 @@
       "Bash(/c/php/php.exe -r '$_SERVER[\"REQUEST_URI\"]=\"/\"; ob_start\\(\\); include \"index.php\"; $h=ob_get_clean\\(\\); preg_match\\(\"/oracle-date\\\\\">\\(.*?\\)</\",$h,$m\\); echo \"date: \".\\($m[1]??\"NOTFOUND\"\\).\"\\\\n\"; preg_match\\(\"/rokuyo-name\\\\\">\\(.*?\\)</\",$h,$m2\\); echo \"rokuyo: \".\\($m2[1]??\"NOTFOUND\"\\).\"\\\\n\";')",
       "Bash(/c/php/php.exe -r 'echo date_default_timezone_get\\(\\).\"\\\\n\"; echo date\\(\"Y-m-d H:i:s\"\\).\"\\\\n\";')",
       "Bash(/c/php/php.exe -r '$_SERVER[\"REQUEST_URI\"]=\"/\"; ob_start\\(\\); include \"index.php\"; $h=ob_get_clean\\(\\); preg_match\\(\"/oracle-date\\\\\">\\(.*?\\)</\",$h,$m\\); echo \"date: \".\\($m[1]??\"NOTFOUND\"\\).\"\\\\n\"; preg_match\\(\"/rokuyo-name\\\\\">\\(.*?\\)</\",$h,$m2\\); echo \"rokuyo: \".\\($m2[1]??\"NOTFOUND\"\\).\"\\\\n\"; preg_match\\(\"/ochip-l\\\\\">COLOR<\\\\/span>&nbsp;\\([^<]+\\)/\",$h,$m3\\); echo \"color: \".\\($m3[1]??\"NOTFOUND\"\\).\"\\\\n\";')",
-      "Bash(/c/php/php.exe -r '$_SERVER[\"REQUEST_URI\"]=\"/calendar\"; ob_start\\(\\); include \"calendar.php\"; $h=ob_get_clean\\(\\); preg_match\\(\"/rokuyo-name\\\\\">\\(.*?\\)</\",$h,$m\\); echo \"calendar rokuyo: \".\\($m[1]??\"NOTFOUND\"\\).\"\\\\n\"; echo \"len=\".strlen\\($h\\).\"\\\\n\";')"
+      "Bash(/c/php/php.exe -r '$_SERVER[\"REQUEST_URI\"]=\"/calendar\"; ob_start\\(\\); include \"calendar.php\"; $h=ob_get_clean\\(\\); preg_match\\(\"/rokuyo-name\\\\\">\\(.*?\\)</\",$h,$m\\); echo \"calendar rokuyo: \".\\($m[1]??\"NOTFOUND\"\\).\"\\\\n\"; echo \"len=\".strlen\\($h\\).\"\\\\n\";')",
+      "WebSearch"
     ]
   }
 }
