@@ -56,7 +56,8 @@ function render_footer(array $opts = []): void {
 .share-copy{background:rgba(155,114,239,.15);border:1px solid rgba(155,114,239,.35)!important;color:#c4a8f5}
 </style>
 <div class="nav-cards-section">
-  <h3>✦ 他の占いも試してみる ✦</h3>
+  <h3>✦ おすすめの占い ✦</h3>
+  <p class="nav-cards-lead">こちらもあわせてどうぞ</p>
   <?= _nav_cards(9, $_p) ?>
 </div>
 <?php render_footer(['currentSlug' => $_slug, 'pageType' => $_type]); ?>

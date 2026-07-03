@@ -1,6 +1,6 @@
 <?php
 $_NAV_PAGES = [
-  'sansei'     => ['name'=>'三星統合鑑定', 'url'=>'/',          'article'=>null,                     'featured_score'=>100, 'icon'=>'✨', 'desc'=>'生年月日×星座×数秘の三位一体鑑定'],
+  'sansei'     => ['name'=>'三星統合鑑定', 'url'=>'/sansei',    'article'=>null,                     'featured_score'=>100, 'icon'=>'✨', 'desc'=>'生年月日×星座×数秘の三位一体鑑定'],
   'tarot'      => ['name'=>'タロット占い',  'url'=>'/tarot',     'article'=>'/articles/tarot/',       'featured_score'=>95,  'icon'=>'🃏', 'desc'=>'22枚のカードが運命を映し出す'],
   'shichu'     => ['name'=>'四柱推命',      'url'=>'/shichu',    'article'=>'/articles/shichu/',      'featured_score'=>90,  'icon'=>'🔯', 'desc'=>'命式・十神・大運を本格算出する'],
   'mbti'       => ['name'=>'MBTI×星座診断','url'=>'/mbti',      'article'=>'/articles/mbti/',        'featured_score'=>80,  'icon'=>'🧠', 'desc'=>'16タイプ×12星座で性格を深掘り'],
@@ -35,11 +35,10 @@ function get_article_pages(string $excludeSlug = ''): array {
   );
 }
 
-// ランダムナビカード（sansei=トップページは除外、自ページ除外可）
+// ランダムナビカード（自ページ除外可）
 function _nav_cards(int $count, string $exclude = ''): string {
   global $_NAV_PAGES;
   $pool = $_NAV_PAGES;
-  unset($pool['sansei']);
   if ($exclude && isset($pool[$exclude])) unset($pool[$exclude]);
   $keys = array_keys($pool);
   shuffle($keys);
@@ -59,7 +58,8 @@ function _nav_cards(int $count, string $exclude = ''): string {
 ?>
 <style>
 .nav-cards-section{padding:2.5rem 1.2rem 1rem;max-width:900px;margin:0 auto}
-.nav-cards-section h3{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:1rem;text-align:center}
+.nav-cards-section h3{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:.4rem;text-align:center}
+.nav-cards-lead{font-size:.75rem;color:var(--muted);text-align:center;margin-bottom:1rem}
 .nav-cards{display:flex;gap:.75rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin;scrollbar-color:var(--border2) transparent}
 .nav-cards::-webkit-scrollbar{height:4px}
 .nav-cards::-webkit-scrollbar-track{background:transparent}
