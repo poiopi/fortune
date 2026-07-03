@@ -238,6 +238,11 @@ body{top:0!important}
   <!-- 結果 -->
   <div class="result-section" id="result-section"></div>
 
+  <!-- シェアボタン -->
+  <div id="tarot-share-btns" style="display:none">
+    <?php require __DIR__.'/inc/share-btns.php'; ?>
+  </div>
+
   <!-- 次の診断へ -->
   <div id="tarot-nav-cards" style="display:none">
     <div class="nav-cards-section">
@@ -577,6 +582,7 @@ function showResult() {
     <button class="rf-retry-btn" onclick="resetAll()">🔀 もう一度カードを引く</button>
   `;
 
+  document.getElementById('tarot-share-btns').style.display = 'block';
   document.getElementById('tarot-nav-cards').style.display = 'block';
   sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -584,6 +590,7 @@ function showResult() {
 function resetAll() {
   document.getElementById('result-section').style.display = 'none';
   document.getElementById('result-section').innerHTML = '';
+  document.getElementById('tarot-share-btns').style.display = 'none';
   document.getElementById('tarot-nav-cards').style.display = 'none';
 
   const stage = document.getElementById('stage-select');
