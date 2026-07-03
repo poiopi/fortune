@@ -203,7 +203,6 @@ body{top:0!important}
 .fade-in-3{animation:fadeIn .6s ease .3s both}
 </style>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<?php require_once __DIR__.'/inc/nav-cards.php'; $tarotNavCards = _nav_cards(3,'tarot'); ?>
 </head>
 <body>
 
@@ -243,12 +242,19 @@ body{top:0!important}
     <?php require __DIR__.'/inc/share-btns.php'; ?>
   </div>
 
-  <!-- 次の診断へ -->
-  <div id="tarot-nav-cards" style="display:none">
-    <div class="nav-cards-section">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?= $tarotNavCards ?>
-    </div>
+  <!-- 関連記事・もう一度占う -->
+  <div id="tarot-result-footer" style="display:none">
+    <?php
+    $articleUrl   = '/articles/tarot/';
+    $articleIcon  = '📖';
+    $articleTitle = 'タロット占いとは？';
+    $articleDesc  = '22枚の大アルカナや正位置・逆位置の意味を解説';
+    $contextKey   = 'tarot';
+    $retryLabel   = 'もう一度カードを引く';
+    $retryType    = 'js';
+    $retryValue   = 'resetAll()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 </div>
 
@@ -571,19 +577,10 @@ function showResult() {
         逆位置のキーワード：${card.reversed}
       </div>
     </div>
-    <a href="/articles/tarot/" class="rf-article-link">
-      <span class="rf-article-icon">📖</span>
-      <span class="rf-article-body">
-        <strong>タロット占いとは？</strong>
-        <small>22枚の大アルカナや正位置・逆位置の意味を解説</small>
-      </span>
-      <span class="rf-article-arrow">→</span>
-    </a>
-    <button class="rf-retry-btn" onclick="resetAll()">🔀 もう一度カードを引く</button>
   `;
 
   document.getElementById('tarot-share-btns').style.display = 'block';
-  document.getElementById('tarot-nav-cards').style.display = 'block';
+  document.getElementById('tarot-result-footer').style.display = 'block';
   sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -591,7 +588,7 @@ function resetAll() {
   document.getElementById('result-section').style.display = 'none';
   document.getElementById('result-section').innerHTML = '';
   document.getElementById('tarot-share-btns').style.display = 'none';
-  document.getElementById('tarot-nav-cards').style.display = 'none';
+  document.getElementById('tarot-result-footer').style.display = 'none';
 
   const stage = document.getElementById('stage-select');
   stage.style.display = 'flex';
