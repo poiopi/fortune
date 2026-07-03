@@ -49,7 +49,7 @@ $oracleDateLabel = $today->format('Y年n月j日').'（'.$weekdayJp[(int)$today->
   --teal:     #3ab8b0;
   --text:     #e8e2f5;
   --muted:    #8a7db5;
-  --text-secondary: #c3b8e0; /* 本文用：--mutedより明るく可読性重視。ラベル装飾には使わない */
+  --text-secondary: #b7acd7; /* 本文用：--mutedより明るく可読性重視。ラベル装飾には使わない */
   --ff-serif: 'Shippori Mincho', serif;
   --ff-sans:  'Zen Kaku Gothic New', sans-serif;
   --ff-mono:  'DM Mono', monospace;
@@ -370,7 +370,7 @@ body {
 .fc-icon  { font-size: 1.7rem; line-height: 1; }
 .fc-lbl   { font-family: var(--ff-mono); font-size: .53rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
 .fc-name  { font-family: var(--ff-serif); font-size: .93rem; font-weight: 700; color: var(--text); letter-spacing: .04em; }
-.fc-desc  { font-size: .78rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
+.fc-desc  { font-size: .74rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
 
 @media (max-width: 639px) {
   .fc-desc { display: none; } /* SPでは説明文を省略して高さを詰める */
@@ -484,7 +484,7 @@ body {
 .gcard:hover { border-color: var(--border2); transform: translateY(-2px); }
 .gc-lbl { font-family: var(--ff-mono); font-size: .52rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
 .gc-name { font-family: var(--ff-serif); font-size: .88rem; font-weight: 700; color: var(--text); }
-.gc-desc { font-size: .78rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
+.gc-desc { font-size: .74rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
 @media (max-width: 640px) { .gc-desc { display: none; } }
 .gc-link { font-family: var(--ff-mono); font-size: .63rem; color: var(--gold); letter-spacing: .06em; margin-top: .15rem; }
 .guide-more { display: flex; justify-content: center; margin-top: 1.5rem; }
