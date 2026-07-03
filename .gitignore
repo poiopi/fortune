@@ -5,6 +5,16 @@
 # Claude Code local settings (machine-specific, not for sharing)
 .claude/settings.local.json
 
+# Generic credential file patterns (defense in depth)
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+**/sftp.json
+**/*credentials*
+**/*secrets*
+
 # OS/editor junk
 .DS_Store
 Thumbs.db
