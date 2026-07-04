@@ -1106,18 +1106,35 @@ footer{
               <?php foreach($errors as $e): ?><li><?= $e ?></li><?php endforeach; ?>
             </ul>
           <?php endif; ?>
-          <form method="post" action="">
+          <form method="post" action="" onsubmit="return validateBirthdate()">
             <div class="field">
               <label for="name">お名前（ニックネーム可）</label>
               <input type="text" id="name" name="name" value="<?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>" placeholder="例：さくら" required>
             </div>
             <div class="field">
-              <label for="birthday">生年月日</label>
-              <input type="date" id="birthday" name="birthday" value="<?= $birthday ?>"
-                     min="1920-01-01" max="<?= date('Y-m-d') ?>" required>
+              <label>生年月日</label>
+              <?php
+                [$by,$bm,$bdd] = $birthday !== '' && preg_match('/^\d{4}-\d{2}-\d{2}$/', $birthday)
+                  ? explode('-', $birthday)
+                  : ['', '', ''];
+                require_once __DIR__.'/inc/birthday-input.php';
+                render_birthdate_input([
+                  'prefix'       => 'birth',
+                  'hiddenName'   => 'birthday',
+                  'defaultYear'  => $by !== '' ? (int)$by : 1990,
+                  'defaultMonth' => $bm !== '' ? (int)$bm : null,
+                  'defaultDay'   => $bdd !== '' ? (int)$bdd : null,
+                ]);
+              ?>
             </div>
             <button type="submit" class="btn-submit">✦ 三星鑑定を開始する ✦</button>
           </form>
+          <script>
+          function validateBirthdate(){
+            if(!window.BirthdayInput.getValue('birth')){alert('生年月日をすべて選択してください');return false;}
+            return true;
+          }
+          </script>
         </div>
       </section>
 
