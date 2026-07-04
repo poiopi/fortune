@@ -187,9 +187,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     <div class="form-group">
       <label class="form-label">生年月日</label>
       <div class="date-row">
-        <select class="form-input" id="birthYear"><option value="">年</option></select>
-        <select class="form-input" id="birthMonth"><option value="">月</option></select>
-        <select class="form-input" id="birthDay"><option value="">日</option></select>
+        <?php require_once __DIR__.'/inc/birthday-input.php'; render_birthdate_input(['prefix'=>'birth','hiddenName'=>'birthday']); ?>
       </div>
     </div>
     <button class="submit-btn" onclick="diagnose()">✦ 守護霊を召喚する ✦</button>
@@ -273,17 +271,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 <?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
-// ─── セレクト生成 ───────────────────────────────────────────
-(function(){
-  const y=document.getElementById('birthYear');
-  const m=document.getElementById('birthMonth');
-  const d=document.getElementById('birthDay');
-  const now=new Date().getFullYear();
-  for(let i=now;i>=1920;i--){const o=document.createElement('option');o.value=i;o.textContent=i+'年';y.appendChild(o);}
-  for(let i=1;i<=12;i++){const o=document.createElement('option');o.value=i;o.textContent=i+'月';m.appendChild(o);}
-  for(let i=1;i<=31;i++){const o=document.createElement('option');o.value=i;o.textContent=i+'日';d.appendChild(o);}
-})();
-
 // ─── ハッシュ ────────────────────────────────────────────────
 function strHash(str){
   let h=5381;
@@ -498,9 +485,8 @@ function runAnimation(rarity,cb){
 // ─── 診断 ────────────────────────────────────────────────────
 function diagnose(){
   const name=document.getElementById('userName').value.trim();
-  const y=document.getElementById('birthYear').value;
-  const mo=document.getElementById('birthMonth').value;
-  const d=document.getElementById('birthDay').value;
+  const bd=document.getElementById('birth-hidden').value;
+  const [y,mo,d]=bd?bd.split('-'):['','',''];
   if(!name||!y||!mo||!d){alert('名前と生年月日をすべて入力してください');return;}
   const key=name+y+mo+d;
   const seed=strHash(key);
