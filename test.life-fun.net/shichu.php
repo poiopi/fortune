@@ -216,8 +216,17 @@ footer a:hover{color:var(--gold)}
     </div>
 
     <div class="form-group">
-      <label class="form-label" for="birthDate">生年月日</label>
-      <input type="date" id="birthDate" class="form-input" min="1900-01-01" max="2099-12-31">
+      <label class="form-label">生年月日</label>
+      <?php
+        require_once __DIR__.'/inc/birthday-input.php';
+        render_birthdate_input([
+          'prefix'      => 'birth',
+          'hiddenName'  => 'birthDate',
+          'startYear'   => 1900,
+          'endYear'     => 2099,
+          'defaultYear' => null,
+        ]);
+      ?>
     </div>
 
     <div class="form-group">
@@ -653,7 +662,7 @@ function elemLabel(stem) {
 // メイン計算
 // ═══════════════════════════════════════════════════
 function calcShichu() {
-  const dateVal = document.getElementById('birthDate').value;
+  const dateVal = window.BirthdayInput.getValue('birth');
   if (!dateVal) { alert('生年月日を入力してください'); return; }
   const [year, month, day] = dateVal.split('-').map(Number);
   if (year < 1900 || year > 2099) { alert('1900年〜2099年の範囲で入力してください'); return; }
