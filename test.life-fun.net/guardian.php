@@ -60,7 +60,7 @@ body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-we
 .date-row{display:flex;gap:.6rem}
 .date-row select.form-input{flex:1;background-color:#1e1738;-webkit-appearance:none;appearance:none}
 .date-row select.form-input option{background:#1e1738;color:var(--text)}
-.submit-btn{width:100%;padding:1rem;background:linear-gradient(135deg,rgba(155,114,239,.8),rgba(201,168,76,.7));border:none;border-radius:10px;font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;color:#fff;cursor:pointer;margin-top:1.5rem;letter-spacing:.12em;transition:opacity .2s}
+.submit-btn{width:100%;padding:1rem;background:linear-gradient(135deg,rgba(155,114,239,.8),rgba(201,168,76,.7));border:none;border-radius:10px;font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;color:#fff;cursor:pointer;margin-top:1.9rem;letter-spacing:.12em;transition:opacity .2s}
 .submit-btn:hover{opacity:.88}
 
 /* ─── 演出オーバーレイ ─── */

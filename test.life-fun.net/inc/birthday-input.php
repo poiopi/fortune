@@ -80,7 +80,7 @@ function render_birthdate_input(array $opts = []): void {
           border-color:var(--violet);
           box-shadow:0 0 0 3px rgba(155,114,239,.12),0 0 16px rgba(201,168,76,.18);
         }
-        .date-input-group .date-input-year{flex:1.64}
+        .date-input-group .date-input-year{flex:1.45}
         .date-input-group .date-input-month,.date-input-group .date-input-day{flex:1}
         </style>
         <script>
