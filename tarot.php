@@ -203,43 +203,10 @@ body{top:0!important}
 .fade-in-3{animation:fadeIn .6s ease .3s both}
 </style>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<?php require_once __DIR__.'/inc/nav-cards.php'; $tarotNavCards = _nav_cards(3,'tarot'); ?>
 </head>
 <body>
 
-<!-- ══ HEADER ══ -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="logo">⛩ 占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/">✦ TOP</a>
-      <a href="/tarot" class="cur">🃏 タロット</a>
-      <a href="/shichu">🔯 四柱推命</a>
-      <a href="/kyusei">⭐ 九星気学</a>
-      <a href="/articles/tarot/">📖 解説</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleSpMenu()">☰ メニュー</button>
-  </div>
-  <div class="header-gold-line"></div>
-</header>
-
-<div class="sp-dropdown" id="spDropdown">
-  <a href="/">✦ トップ</a>
-  <a href="/tarot">🃏 タロット占い</a>
-  <a href="/shichu">🔯 四柱推命</a>
-  <a href="/sanmei">☯ 算命学</a>
-  <a href="/seiza">⭐ 西洋占星術</a>
-  <a href="/mbti">🧠 MBTI×星座</a>
-  <a href="/numerology">🔢 数秘術</a>
-  <a href="/kyusei">⭐ 九星気学</a>
-  <a href="/rpg">⚔️ RPG占い</a>
-  <a href="/aisho">💑 相性診断</a>
-  <a href="/zense">🌀 前世診断</a>
-  <a href="/guardian">👻 守護霊診断</a>
-  <a href="/seimei">✍️ 姓名判断</a>
-  <a href="/geimei">🎭 芸名診断</a>
-</div>
+<?php $currentPage = 'tarot'; require __DIR__.'/inc/header.php'; ?>
 
 <div class="wrap">
   <section class="hero">
@@ -270,14 +237,28 @@ body{top:0!important}
   <!-- 結果 -->
   <div class="result-section" id="result-section"></div>
 
-  <!-- 次の診断へ -->
-  <div id="tarot-nav-cards" style="display:none">
-    <div class="nav-cards-section">
-      <h3>✦ 次はこれを試してみては？ ✦</h3>
-      <?= $tarotNavCards ?>
-    </div>
+  <!-- シェアボタン -->
+  <div id="tarot-share-btns" style="display:none">
+    <?php require __DIR__.'/inc/share-btns.php'; ?>
+  </div>
+
+  <!-- 関連記事・もう一度占う -->
+  <div id="tarot-result-footer" style="display:none">
+    <?php
+    $articleUrl   = '/articles/tarot/';
+    $articleIcon  = '📖';
+    $articleTitle = 'タロット占いとは？';
+    $articleDesc  = '22枚の大アルカナや正位置・逆位置の意味を解説';
+    $contextKey   = 'tarot';
+    $retryLabel   = 'もう一度カードを引く';
+    $retryType    = 'js';
+    $retryValue   = 'resetAll()';
+    require __DIR__.'/inc/result-footer.php';
+    ?>
   </div>
 </div>
+
+<p style="max-width:900px;margin:0 auto 1.5rem;padding:0 1.2rem;text-align:center;font-size:.72rem;color:var(--muted);line-height:1.8">本サービスはエンターテインメントを目的とした占いコンテンツです。結果は楽しみや気づきの参考としてご活用ください。</p>
 
 <!-- オーバーレイ -->
 <div class="overlay" id="overlay">
@@ -596,25 +577,18 @@ function showResult() {
         逆位置のキーワード：${card.reversed}
       </div>
     </div>
-    <a href="/articles/tarot/" class="rf-article-link">
-      <span class="rf-article-icon">📖</span>
-      <span class="rf-article-body">
-        <strong>タロット占いとは？</strong>
-        <small>22枚の大アルカナや正位置・逆位置の意味を解説</small>
-      </span>
-      <span class="rf-article-arrow">→</span>
-    </a>
-    <button class="rf-retry-btn" onclick="resetAll()">🔀 もう一度カードを引く</button>
   `;
 
-  document.getElementById('tarot-nav-cards').style.display = 'block';
+  document.getElementById('tarot-share-btns').style.display = 'block';
+  document.getElementById('tarot-result-footer').style.display = 'block';
   sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function resetAll() {
   document.getElementById('result-section').style.display = 'none';
   document.getElementById('result-section').innerHTML = '';
-  document.getElementById('tarot-nav-cards').style.display = 'none';
+  document.getElementById('tarot-share-btns').style.display = 'none';
+  document.getElementById('tarot-result-footer').style.display = 'none';
 
   const stage = document.getElementById('stage-select');
   stage.style.display = 'flex';
