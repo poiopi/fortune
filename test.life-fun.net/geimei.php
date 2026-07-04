@@ -79,6 +79,7 @@ footer a:hover{color:var(--gold)}
 .form-label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:.4rem;letter-spacing:.06em}
 .form-input{width:100%;background:rgba(8,6,15,.7);border:1px solid var(--border2);border-radius:8px;padding:.6rem .9rem;color:var(--text);font-family:var(--ff-serif);font-size:.9rem;outline:none;transition:border-color .2s;color-scheme:dark}
 .form-input:focus{border-color:var(--violet)}
+.date-input-group select.form-input{-webkit-appearance:none;appearance:none}
 .role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:.4rem}
 .role-btn{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:.8rem .5rem;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;font-family:var(--ff-sans)}
 .role-btn:hover{border-color:var(--violet);background:rgba(155,114,239,.08)}
@@ -183,8 +184,16 @@ footer a:hover{color:var(--gold)}
         <input type="text" id="gName" class="form-input" placeholder="例：山田 太郎">
       </div>
       <div class="form-group">
-        <label class="form-label" for="gDate">生年月日 <span style="color:var(--rose)">*</span></label>
-        <input type="date" id="gDate" class="form-input" min="1900-01-01" max="2099-12-31">
+        <label class="form-label">生年月日 <span style="color:var(--rose)">*</span></label>
+        <?php
+          require_once __DIR__.'/inc/birthday-input.php';
+          render_birthdate_input([
+            'prefix'     => 'gdate',
+            'hiddenName' => 'gDate',
+            'startYear'  => 1900,
+            'endYear'    => 2099,
+          ]);
+        ?>
       </div>
       <div class="form-group">
         <label class="form-label">芸風を選んでください <span style="color:var(--rose)">*</span></label>
@@ -661,7 +670,7 @@ function selectRole(role,el){
   state.role=role;
 }
 function getDate(){
-  const v=document.getElementById('gDate').value;
+  const v=window.BirthdayInput.getValue('gdate');
   if(!v)return null;
   const[y,m,d]=v.split('-').map(Number);
   return{y,m,d};
