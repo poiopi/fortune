@@ -15,8 +15,11 @@ function _navlink(string $label, string $href, string $key, string $current): st
       <?= $_p==='top' ? '<span class="header-top-link current">✦ TOP</span>' : '<a href="/" class="header-top-link">✦ TOPへ戻る</a>' ?>
     </nav>
     <style>
-    /* ── HEADER（共通、値は各ページ実測の標準値に合わせている。tarot.phpのみ独自スキームのため対象外） ── */
-    header{
+    /* ── HEADER（共通、値は各ページ実測の標準値に合わせている。tarot.phpのみ独自スキームのため対象外）
+       セレクタは要素セレクタ header{} ではなく .site-header{} を使用する。
+       sansei.phpにはHero部分にも<header class="hero">という別の<header>要素があり、
+       bare header{}にすると意図せずHero側にも sticky/背景色 が適用されてしまうため。 ── */
+    .site-header{
       border-bottom:1px solid var(--border);padding:0 1.2rem;
       position:sticky;top:0;z-index:100;
       background:rgba(8,6,15,.9);backdrop-filter:blur(12px);

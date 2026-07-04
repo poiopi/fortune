@@ -42,24 +42,7 @@ body{top:0!important}
 html{font-size:16px;scroll-behavior:smooth}
 body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-weight:300;line-height:1.8;min-height:100vh}
 
-/* ─── HEADER ─── */
-header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px;padding:0 1.2rem}
-.logo{font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.05em}
-.logo em{color:var(--gold);font-style:normal}
-.header-nav{display:flex;gap:1.2rem;align-items:center}
-.header-nav a{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
-.sp-menu-btn{display:none;background:none;border:1px solid var(--border);color:var(--muted);font-size:.7rem;padding:.3rem .7rem;border-radius:6px;cursor:pointer;font-family:var(--ff-mono);letter-spacing:.06em}
-.sp-dropdown{display:none;position:absolute;top:54px;left:0;right:0;background:rgba(8,6,15,.97);border-bottom:1px solid var(--border);z-index:200;padding:.5rem 0}
-.sp-dropdown a,.sp-dropdown span{display:block;padding:.7rem 1.4rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border)}
-.sp-dropdown a:last-child{border-bottom:none}
-.sp-dropdown a:hover{color:var(--gold-lt)}
-.sp-dropdown span{color:var(--text)}
-@media(max-width:700px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:block}
-}
+/* ─── HEADER：inc/header.php側で一元管理（COMPONENTS.md参照） ─── */
 
 /* ─── LAYOUT ─── */
 .wrap{max-width:900px;margin:0 auto;padding:2rem 1.2rem 4rem}
