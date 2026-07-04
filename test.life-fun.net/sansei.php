@@ -592,6 +592,20 @@ input[type="text"]:focus,input[type="date"]:focus{
   box-shadow:0 0 0 3px rgba(155,114,239,.2);
 }
 input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(.6)}
+.form-input{
+  width:100%;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border2);
+  border-radius:8px;
+  padding:.75rem 1rem;
+  color:var(--text);
+  font-size:1rem;
+  font-family:var(--ff-sans);
+  outline:none;
+  transition:border-color .2s,box-shadow .2s;
+}
+select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:none;color-scheme:dark}
+.form-input:focus{border-color:var(--violet);box-shadow:0 0 0 3px rgba(155,114,239,.2)}
 .btn-submit{
   width:100%;
   padding:1rem;
