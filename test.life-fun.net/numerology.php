@@ -148,6 +148,7 @@ function getNumberData(int $n): array {
 }
 
 // フォーム処理
+require_once __DIR__.'/inc/birthday-input.php';
 $result = null;
 $errors = [];
 
@@ -255,6 +256,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 }
 .form-input:focus{border-color:var(--violet)}
 .form-input::placeholder{color:var(--muted)}
+select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:none;color-scheme:dark;cursor:pointer}
 .submit-btn{
   width:100%;
   background:linear-gradient(135deg,var(--violet),rgba(155,114,239,.7));
@@ -362,17 +364,33 @@ body{top:0!important}
     </div>
     <?php endif; ?>
 
-    <form method="get" action="">
+    <form method="get" action="" onsubmit="return validateBirthdate()">
       <div class="form-group">
         <label class="form-label" for="name">お名前（ひらがな・カタカナ・アルファベットで入力してください。漢字は使えません）</label>
         <input class="form-input" type="text" id="name" name="name" placeholder="例：やまだ はなこ" value="<?= htmlspecialchars($_GET['name'] ?? '') ?>">
       </div>
       <div class="form-group">
-        <label class="form-label" for="birthdate">生年月日</label>
-        <input class="form-input" type="date" id="birthdate" name="birthdate" value="<?= htmlspecialchars($_GET['birthdate'] ?? '') ?>">
+        <label class="form-label">生年月日</label>
+        <?php
+          $bd = $_GET['birthdate'] ?? '';
+          [$by,$bm,$bdd] = $bd && preg_match('/^\d{4}-\d{2}-\d{2}$/', $bd) ? explode('-', $bd) : ['', '', ''];
+          render_birthdate_input([
+            'prefix'       => 'birth',
+            'hiddenName'   => 'birthdate',
+            'defaultYear'  => $by !== '' ? (int)$by : 1990,
+            'defaultMonth' => $bm !== '' ? (int)$bm : null,
+            'defaultDay'   => $bdd !== '' ? (int)$bdd : null,
+          ]);
+        ?>
       </div>
       <button class="submit-btn" type="submit">数字を算出する ✦</button>
     </form>
+    <script>
+    function validateBirthdate(){
+      if(!window.BirthdayInput.getValue('birth')){alert('生年月日をすべて選択してください');return false;}
+      return true;
+    }
+    </script>
   </div>
 
   <!-- 数秘術の説明 -->
