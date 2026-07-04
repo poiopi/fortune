@@ -383,7 +383,7 @@ body{top:0!important}
           ]);
         ?>
       </div>
-      <button class="submit-btn" type="submit">数字を算出する ✦</button>
+      <button class="submit-btn" type="submit" data-ga-event="fortune_submit">数字を算出する ✦</button>
     </form>
     <script>
     function validateBirthdate(){

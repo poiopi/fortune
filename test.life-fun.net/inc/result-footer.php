@@ -46,7 +46,7 @@
 </div>
 
 <?php if ($retryType === 'js'): ?>
-<button class="rf-retry-btn" onclick="<?= htmlspecialchars($retryValue) ?>"><?= htmlspecialchars($retryLabel) ?></button>
+<button class="rf-retry-btn" onclick="<?= htmlspecialchars($retryValue) ?>" data-ga-event="retry_click"><?= htmlspecialchars($retryLabel) ?></button>
 <?php else: ?>
-<a href="<?= htmlspecialchars($retryValue) ?>" class="rf-retry-btn"><?= htmlspecialchars($retryLabel) ?></a>
+<a href="<?= htmlspecialchars($retryValue) ?>" class="rf-retry-btn" data-ga-event="retry_click"><?= htmlspecialchars($retryLabel) ?></a>
 <?php endif; ?>

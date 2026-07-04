@@ -137,6 +137,13 @@ function render_birthdate_input(array $opts = []): void {
             const yearEl  = document.getElementById(prefix + '-year');
             const monthEl = document.getElementById(prefix + '-month');
 
+            var _started = false;
+            function _markFortuneStart(){
+              if(_started) return;
+              _started = true;
+              if(typeof trackEvent === 'function') trackEvent('fortune_start', {});
+            }
+
             yearEl.innerHTML = '<option value="">年</option>';
             for(let y = endYear; y >= startYear; y--){
               const o = document.createElement('option');
@@ -162,9 +169,9 @@ function render_birthdate_input(array $opts = []): void {
             }
             syncHidden(prefix);
 
-            yearEl.addEventListener('change', function(){ refreshDayOptions(prefix, true); syncHidden(prefix); });
-            monthEl.addEventListener('change', function(){ refreshDayOptions(prefix, true); syncHidden(prefix); });
-            document.getElementById(prefix + '-day').addEventListener('change', function(){ syncHidden(prefix); });
+            yearEl.addEventListener('change', function(){ _markFortuneStart(); refreshDayOptions(prefix, true); syncHidden(prefix); });
+            monthEl.addEventListener('change', function(){ _markFortuneStart(); refreshDayOptions(prefix, true); syncHidden(prefix); });
+            document.getElementById(prefix + '-day').addEventListener('change', function(){ _markFortuneStart(); syncHidden(prefix); });
           }
 
           function getValue(prefix){

@@ -223,7 +223,39 @@ function render_footer(array $opts = []): void {
   <span class="fmenu-btn-label">MENU</span>
 </button>
 
+<script>window.GA_FORTUNE_TYPE = <?= json_encode(
+  !empty($currentSlug) ? $currentSlug :
+  (!empty($currentPage) ? $currentPage :
+  (!empty($_slug) ? $_slug : 'top')),
+  JSON_UNESCAPED_UNICODE
+) ?>;</script>
+
 <script>
+// ── GA4計測基盤（すべてのイベント送信はtrackEvent経由） ──
+function getFortuneType(){
+  return window.GA_FORTUNE_TYPE || 'unknown';
+}
+function trackEvent(name, params){
+  if (typeof gtag !== 'function') return;
+  params = params || {};
+  var base = {
+    fortune_type: getFortuneType(),
+    page_title: document.title,
+    referrer: document.referrer
+  };
+  var payload = Object.assign({}, params, base); // baseが優先（共通パラメータの意図しない上書きを防止）
+  gtag('event', name, payload);
+}
+// data-ga-event属性を持つ要素のクリックを一括計測（cta_click / retry_click / fortune_submit）
+document.addEventListener('click', function(e){
+  var t = e.target.closest('[data-ga-event]');
+  if(!t) return;
+  var params = {};
+  if(t.dataset.ctaName) params.cta_name = t.dataset.ctaName;
+  if(t.dataset.ctaDestination) params.cta_destination = t.dataset.ctaDestination;
+  trackEvent(t.dataset.gaEvent, params);
+});
+
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
@@ -242,11 +274,13 @@ function scrollToResult(id){
   var el=document.getElementById(id);
   if(!el)return;
   el.style.display='block';
+  trackEvent('fortune_result_view', {});
   setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);
 }
 
 // シェアボタン
 function openShare(type){
+  trackEvent('share', {method: type});
   var u=encodeURIComponent(location.href);
   var t=encodeURIComponent(document.title);
   var urls={line:'https://social-plugins.line.me/lineit/share?url='+u,x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
@@ -254,6 +288,7 @@ function openShare(type){
 }
 function copyShareUrl(){
   navigator.clipboard.writeText(location.href).then(function(){
+    trackEvent('share', {method: 'copy'});
     var b=document.querySelector('.share-copy');if(!b)return;
     var orig=b.textContent;b.textContent='✓ コピーしました！';setTimeout(function(){b.textContent=orig;},2000);
   });

@@ -595,7 +595,7 @@ footer a:hover{color:var(--gold)}
               </div>
             </div>
           </div>
-          <button type="submit" class="submit-btn">💘 相性を鑑定する</button>
+          <button type="submit" class="submit-btn" data-ga-event="fortune_submit">💘 相性を鑑定する</button>
         </form>
       </div>
 

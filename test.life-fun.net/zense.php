@@ -145,7 +145,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
       <label class="form-label">生年月日</label>
       <?php require_once __DIR__.'/inc/birthday-input.php'; render_birthdate_input(['prefix'=>'birth','hiddenName'=>'birthday']); ?>
     </div>
-    <button class="submit-btn" onclick="diagnose()">前世を読み解く</button>
+    <button class="submit-btn" onclick="diagnose()" data-ga-event="fortune_submit">前世を読み解く</button>
     <p style="font-size:.65rem;color:var(--muted);text-align:center;margin-top:.8rem;line-height:1.7">入力された情報はサーバーに送信・保存されません。<br>同じ名前・生年月日からは毎回同じ結果が表示されます。<br><span style="color:rgba(138,125,181,.5)">※本サービスはエンターテインメントです。重要な判断の根拠にはしないでください。</span></p>
   </div>
 

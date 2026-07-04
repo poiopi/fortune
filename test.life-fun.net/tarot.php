@@ -378,6 +378,7 @@ const TAROT = [
 
 let pickedCards = [];
 let selected = null;
+let _tarotStarted = false;
 
 window.addEventListener('DOMContentLoaded', init);
 
@@ -392,6 +393,7 @@ function init() {
 // シャッフル — 収束→再配置→展開アニメーション
 function shuffleCards() {
   if (selected !== null) return;
+  if (!_tarotStarted) { _tarotStarted = true; if (typeof trackEvent === 'function') trackEvent('fortune_start', {}); }
 
   const btn  = document.getElementById('shuffleBtn');
   const area = document.getElementById('circle-area');
@@ -487,6 +489,7 @@ function renderCircle() {
 function onSelect(idx) {
   if (selected !== null) return;
   selected = idx;
+  if (typeof trackEvent === 'function') trackEvent('fortune_submit', {});
   const card = pickedCards[idx];
 
   // シャッフルボタン非表示
@@ -548,6 +551,7 @@ function showResult() {
 
   const sec = document.getElementById('result-section');
   sec.style.display = 'block';
+  if (typeof trackEvent === 'function') trackEvent('fortune_result_view', {});
   sec.innerHTML = `
     <div class="result-header fade-in">
       <div class="chosen-label">あなたが選んだカード</div>

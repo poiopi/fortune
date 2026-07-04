@@ -265,7 +265,7 @@ footer a:hover{color:var(--gold)}
           'endYear'    => (int)date('Y'),
         ]);
       ?>
-      <button class="fsub" onclick="calcFortune()">✦ 占ってもらう</button>
+      <button class="fsub" onclick="calcFortune()" data-ga-event="fortune_submit">✦ 占ってもらう</button>
     </div>
   </div>
 </div>
@@ -1012,6 +1012,8 @@ function enAtk(){
   if(pl.hp<=0) setTimeout(()=>endCbt(false,false),600);
 }
 
+let _rpgResultFired = false;
+
 function endCbt(won,fled){
   document.getElementById('cbtOv').classList.remove('on');
   phase='explore';
@@ -1054,6 +1056,10 @@ function calcFortune(){
   document.getElementById('resContent').innerHTML=h;
   document.getElementById('frmOv').classList.remove('on');
   document.getElementById('resOv').classList.add('on');
+  if (!_rpgResultFired) {
+    _rpgResultFired = true;
+    if (typeof trackEvent === 'function') trackEvent('fortune_result_view', {});
+  }
   phase='result';
   window._shareText=`RPG占い結果：${zod.name}の${job.emoji}${job.name}（運命数${lp}）✨`;
 }
@@ -1195,6 +1201,7 @@ function resetGame(){
   picked=new Set(); visited=new Set();
   sc={battle:0,magic:0,wisdom:0,agility:0,heal:0,free:0,nature:0};
   phase='explore';
+  _rpgResultFired=false;
   document.getElementById('resOv').classList.remove('on');
   document.getElementById('frmOv').classList.remove('on');
   document.getElementById('talkBtn').style.display='none';

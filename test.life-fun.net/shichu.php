@@ -261,7 +261,7 @@ footer a:hover{color:var(--gold)}
       <div class="time-note">※ 時間がわからない場合は3柱（年・月・日）で鑑定します</div>
     </div>
 
-    <button class="calc-btn" onclick="calcShichu()">✦ 命式を算出する ✦</button>
+    <button class="calc-btn" onclick="calcShichu()" data-ga-event="fortune_submit">✦ 命式を算出する ✦</button>
   </div>
 
   <!-- 結果 -->
