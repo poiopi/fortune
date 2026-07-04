@@ -230,7 +230,7 @@ footer a:hover{color:var(--gold)}
         </label>
       </div>
     </div>
-    <button class="calc-btn" onclick="calcSeiza()">✦ 星座で鑑定する ✦</button>
+    <button class="calc-btn" onclick="calcSeiza()" data-ga-event="fortune_submit">✦ 星座で鑑定する ✦</button>
   </div>
 
   <!-- 結果 -->

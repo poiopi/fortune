@@ -216,8 +216,8 @@ footer a:hover{color:var(--gold)}
         </div>
       </div>
       <div class="btn-row">
-        <button class="calc-btn btn-game" onclick="startGame()">🎯 大喜利で診断する</button>
-        <button class="calc-btn btn-skip" onclick="skipToResult()">⚡ すぐ芸名を見る</button>
+        <button class="calc-btn btn-game" onclick="startGame()" data-ga-event="fortune_submit">🎯 大喜利で診断する</button>
+        <button class="calc-btn btn-skip" onclick="skipToResult()" data-ga-event="fortune_submit">⚡ すぐ芸名を見る</button>
       </div>
       <p class="time-note">「すぐ芸名を見る」の場合、芸名の説明は省略されます</p>
     </div>

@@ -364,7 +364,7 @@ body{top:0!important}
     <div class="step" id="step-seiza">
       <div class="select-title">あなたの星座を選んでください</div>
       <div class="seiza-grid" id="seiza-grid"></div>
-      <button class="next-btn full-btn" id="seiza-next" onclick="showResult()" disabled>診断結果を見る →</button>
+      <button class="next-btn full-btn" id="seiza-next" onclick="showResult()" disabled data-ga-event="fortune_submit">診断結果を見る →</button>
     </div>
 
     <!-- ステップ4：結果 -->
@@ -494,6 +494,7 @@ let current = 0;
 let answers = [];
 let selectedMbti = null;
 let selectedSeiza = null;
+let _mbtiStarted = false;
 
 function showStep(id) {
   document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
@@ -521,6 +522,7 @@ function renderQ() {
 }
 
 function selectChoice(i) {
+  if (!_mbtiStarted) { _mbtiStarted = true; if (typeof trackEvent === 'function') trackEvent('fortune_start', {}); }
   answers[current] = i;
   document.querySelectorAll('.choice-btn').forEach((b, j) => b.classList.toggle('selected', j === i));
   document.getElementById('next-btn').disabled = false;

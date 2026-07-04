@@ -257,7 +257,7 @@ footer a:hover{color:var(--gold)}
       </div>
     </div>
     <p class="form-note">漢字・ひらがな・カタカナで入力してください</p>
-    <button class="sub-btn" onclick="startSeimei()"><span>鑑定する</span></button>
+    <button class="sub-btn" onclick="startSeimei()" data-ga-event="fortune_submit"><span>鑑定する</span></button>
   </div>
 </div>
 

@@ -333,7 +333,7 @@ body{top:0!important}
           ]);
         ?>
       </div>
-      <button class="submit-btn" type="submit">本命星を算出する ✦</button>
+      <button class="submit-btn" type="submit" data-ga-event="fortune_submit">本命星を算出する ✦</button>
     </form>
     <script>
     function validateBirthdate(){

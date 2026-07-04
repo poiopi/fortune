@@ -1141,7 +1141,7 @@ footer{
                 ]);
               ?>
             </div>
-            <button type="submit" class="btn-submit">✦ 三星鑑定を開始する ✦</button>
+            <button type="submit" class="btn-submit" data-ga-event="fortune_submit">✦ 三星鑑定を開始する ✦</button>
           </form>
           <script>
           function validateBirthdate(){
@@ -1249,6 +1249,7 @@ footer{
 
       <!-- 結果（main-colの内側） -->
       <?php if ($result): ?>
+      <script>document.addEventListener('DOMContentLoaded',function(){ if(typeof trackEvent==='function') trackEvent('fortune_result_view', {}); });</script>
       <section class="result-section" id="result">
 
     <div class="result-header">

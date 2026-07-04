@@ -213,7 +213,7 @@ footer a:hover{color:var(--gold)}
         ]);
       ?>
     </div>
-    <button class="calc-btn" onclick="calcSanmei()">✦ 算命学で鑑定する ✦</button>
+    <button class="calc-btn" onclick="calcSanmei()" data-ga-event="fortune_submit">✦ 算命学で鑑定する ✦</button>
   </div>
 
   <!-- 結果 -->
