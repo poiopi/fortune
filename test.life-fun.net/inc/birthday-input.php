@@ -63,7 +63,8 @@ function render_birthdate_input(array $opts = []): void {
         <style>
         .date-input-group{display:flex;gap:.5rem;width:100%}
         .date-input-group select{
-          padding:.55rem .5rem;
+          padding:.65rem .5rem;
+          min-height:44px;
           text-align:center;
           background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
           background-position:calc(100% - 14px) center,calc(100% - 9px) center;
