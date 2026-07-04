@@ -60,6 +60,7 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .form-label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:.4rem;letter-spacing:.06em}
 .form-input{width:100%;background:rgba(8,6,15,.7);border:1px solid var(--border2);border-radius:8px;padding:.6rem .9rem;color:var(--text);font-family:var(--ff-serif);font-size:.9rem;outline:none;transition:border-color .2s;color-scheme:dark}
 .form-input:focus{border-color:var(--seiza)}
+.date-input-group select.form-input{-webkit-appearance:none;appearance:none}
 
 /* ── 時間帯ラジオ ── */
 .time-radio-group{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
@@ -183,8 +184,16 @@ footer a:hover{color:var(--gold)}
   <div class="form-card" id="formArea">
     <div class="form-section-label">✦ 生年月日と生まれた時間帯を入力 ✦</div>
     <div class="form-group">
-      <label class="form-label" for="birthDate">生年月日</label>
-      <input type="date" id="birthDate" class="form-input" min="1900-01-01" max="2099-12-31">
+      <label class="form-label">生年月日</label>
+      <?php
+        require_once __DIR__.'/inc/birthday-input.php';
+        render_birthdate_input([
+          'prefix'     => 'birth',
+          'hiddenName' => 'birthDate',
+          'startYear'  => 1900,
+          'endYear'    => 2099,
+        ]);
+      ?>
     </div>
     <div class="form-group">
       <label class="form-label">生まれた時間帯</label>
@@ -417,7 +426,7 @@ function getTimeZoneIndex(code) {
 // ══════════════════════════════════════════════
 
 function calcSeiza() {
-  const dateVal = document.getElementById('birthDate').value;
+  const dateVal = window.BirthdayInput.getValue('birth');
   if (!dateVal) { alert('生年月日を入力してください'); return; }
   const [year, month, day] = dateVal.split('-').map(Number);
   if (year < 1900 || year > 2099) { alert('1900年〜2099年の範囲で入力してください'); return; }
