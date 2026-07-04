@@ -44,3 +44,13 @@ function _navlink(string $label, string $href, string $key, string $current): st
     </div>
   </div>
 </header>
+<script>
+function toggleSpMenu(){
+  document.getElementById('spDropdown').classList.toggle('open');
+}
+document.addEventListener('click', function(e){
+  if(!e.target.closest('.sp-menu-btn') && !e.target.closest('.sp-dropdown')){
+    document.getElementById('spDropdown').classList.remove('open');
+  }
+});
+</script>
