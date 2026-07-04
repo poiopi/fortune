@@ -117,6 +117,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .fform label{font-family:var(--ff-rpg);font-size:.7rem;color:var(--muted)}
 .fform input{background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.6rem .9rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s;width:100%}
 .fform input:focus{border-color:var(--violet)}
+.date-input-group select{background-color:#1e1738;-webkit-appearance:none;appearance:none}
 .fsub{background:linear-gradient(135deg,var(--gold),var(--violet));border:none;border-radius:10px;padding:.72rem;font-family:var(--ff-rpg);font-size:.82rem;color:#fff;cursor:pointer;transition:opacity .2s;margin-top:.4rem}
 .fsub:hover{opacity:.85}
 
@@ -256,7 +257,14 @@ footer a:hover{color:var(--gold)}
     <div class="otx">旅人よ、よく来てくれた。生年月日を教えてくれれば、星と数と天の意志があなたの運命を示そう。</div>
     <div class="fform">
       <label>生年月日</label>
-      <input type="date" id="bdate" max="<?= date('Y-m-d') ?>">
+      <?php
+        require_once __DIR__.'/inc/birthday-input.php';
+        render_birthdate_input([
+          'prefix'     => 'bdate',
+          'hiddenName' => 'bdate',
+          'endYear'    => (int)date('Y'),
+        ]);
+      ?>
       <button class="fsub" onclick="calcFortune()">✦ 占ってもらう</button>
     </div>
   </div>
@@ -1024,7 +1032,7 @@ function endCbt(won,fled){
 // FORTUNE
 // ════════════════════════════════════════════
 function calcFortune(){
-  const v=document.getElementById('bdate').value;
+  const v=window.BirthdayInput.getValue('bdate');
   if(!v){alert('生年月日を入力してください');return;}
   const[y,m,d]=v.split('-').map(Number);
   const zod=zodiac(m,d);
