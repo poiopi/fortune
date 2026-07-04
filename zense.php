@@ -42,24 +42,7 @@ body{top:0!important}
 html{font-size:16px;scroll-behavior:smooth}
 body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-weight:300;line-height:1.8;min-height:100vh}
 
-/* ─── HEADER ─── */
-header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px;padding:0 1.2rem}
-.logo{font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.05em}
-.logo em{color:var(--gold);font-style:normal}
-.header-nav{display:flex;gap:1.2rem;align-items:center}
-.header-nav a{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
-.sp-menu-btn{display:none;background:none;border:1px solid var(--border);color:var(--muted);font-size:.7rem;padding:.3rem .7rem;border-radius:6px;cursor:pointer;font-family:var(--ff-mono);letter-spacing:.06em}
-.sp-dropdown{display:none;position:absolute;top:54px;left:0;right:0;background:rgba(8,6,15,.97);border-bottom:1px solid var(--border);z-index:200;padding:.5rem 0}
-.sp-dropdown a,.sp-dropdown span{display:block;padding:.7rem 1.4rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border)}
-.sp-dropdown a:last-child{border-bottom:none}
-.sp-dropdown a:hover{color:var(--gold-lt)}
-.sp-dropdown span{color:var(--text)}
-@media(max-width:700px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:block}
-}
+/* ─── HEADER：inc/header.php側で一元管理（COMPONENTS.md参照） ─── */
 
 /* ─── LAYOUT ─── */
 .wrap{max-width:900px;margin:0 auto;padding:2rem 1.2rem 4rem}
@@ -74,9 +57,6 @@ header{position:sticky;top:0;z-index:100;background:rgba(8,6,15,.92);backdrop-fi
 .form-label{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:.4rem}
 .form-input{width:100%;background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s}
 .form-input:focus{border-color:var(--violet)}
-.date-row{display:flex;gap:.6rem}
-.date-row select.form-input{flex:1;background-color:#1e1738;-webkit-appearance:none;appearance:none}
-.date-row select.form-input option{background:#1e1738;color:var(--text)}
 .submit-btn{width:100%;padding:1rem;background:linear-gradient(135deg,rgba(155,114,239,.8),rgba(201,168,76,.7));border:none;border-radius:10px;font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;color:#fff;cursor:pointer;margin-top:.5rem;letter-spacing:.12em;transition:opacity .2s;position:relative;overflow:hidden}
 .submit-btn:hover{opacity:.88}
 .submit-btn::before{content:'✦ ';font-size:.8rem}
@@ -162,17 +142,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     </div>
     <div class="form-group">
       <label class="form-label">生年月日</label>
-      <div class="date-row">
-        <select class="form-input" id="birthYear">
-          <option value="">年</option>
-        </select>
-        <select class="form-input" id="birthMonth">
-          <option value="">月</option>
-        </select>
-        <select class="form-input" id="birthDay">
-          <option value="">日</option>
-        </select>
-      </div>
+      <?php require_once __DIR__.'/inc/birthday-input.php'; render_birthdate_input(['prefix'=>'birth','hiddenName'=>'birthday']); ?>
     </div>
     <button class="submit-btn" onclick="diagnose()">前世を読み解く</button>
     <p style="font-size:.65rem;color:var(--muted);text-align:center;margin-top:.8rem;line-height:1.7">入力された情報はサーバーに送信・保存されません。<br>同じ名前・生年月日からは毎回同じ結果が表示されます。<br><span style="color:rgba(138,125,181,.5)">※本サービスはエンターテインメントです。重要な判断の根拠にはしないでください。</span></p>
@@ -252,16 +222,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 <?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
-// ─── セレクト生成 ───────────────────────────────────────────
-(function(){
-  const y=document.getElementById('birthYear');
-  const m=document.getElementById('birthMonth');
-  const d=document.getElementById('birthDay');
-  const now=new Date().getFullYear();
-  for(let i=now;i>=1920;i--){const o=document.createElement('option');o.value=i;o.textContent=i+'年';y.appendChild(o);}
-  for(let i=1;i<=12;i++){const o=document.createElement('option');o.value=i;o.textContent=i+'月';m.appendChild(o);}
-  for(let i=1;i<=31;i++){const o=document.createElement('option');o.value=i;o.textContent=i+'日';d.appendChild(o);}
-})();
 
 // ─── ハッシュ ────────────────────────────────────────────────
 function strHash(str){
@@ -479,9 +439,8 @@ function getSoulAgeLabel(n){
 // ─── 診断 ───────────────────────────────────────────────────
 function diagnose(){
   const name=document.getElementById('userName').value.trim();
-  const y=document.getElementById('birthYear').value;
-  const mo=document.getElementById('birthMonth').value;
-  const d=document.getElementById('birthDay').value;
+  const bd=document.getElementById('birth-hidden').value;
+  const [y,mo,d]=bd?bd.split('-'):['','',''];
   if(!name||!y||!mo||!d){alert('名前と生年月日をすべて入力してください');return;}
 
   const key=name+y+mo+d;

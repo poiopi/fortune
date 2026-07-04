@@ -46,6 +46,7 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .form-label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:.4rem;letter-spacing:.06em}
 .form-input{width:100%;background:rgba(8,6,15,.7);border:1px solid var(--border2);border-radius:8px;padding:.6rem .9rem;color:var(--text);font-family:var(--ff-serif);font-size:.9rem;outline:none;transition:border-color .2s;color-scheme:dark}
 .form-input:focus{border-color:var(--violet)}
+.date-input-group select.form-input{-webkit-appearance:none;appearance:none}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:480px){.form-row{grid-template-columns:1fr}}
 .radio-group{display:flex;gap:1rem;flex-wrap:wrap}
@@ -165,25 +166,7 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .loading-ring{width:50px;height:50px;border:2px solid rgba(155,114,239,.2);border-top-color:var(--violet);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* ── HEADER ── */
-header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px)}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
-.logo em{font-style:italic;color:var(--gold)}
-.header-nav{display:flex;gap:1.5rem}
-.header-nav a,.header-nav span{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
-.sp-menu-btn{display:none}
-.sp-dropdown{display:none}
-@media(max-width:768px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer;transition:color .2s,border-color .2s}
-  .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
-  .sp-dropdown.open{display:block}
-  .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
-  .sp-dropdown a:last-child{border-bottom:none}
-  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
-}
+/* ── HEADER：inc/header.php側で一元管理（COMPONENTS.md参照） ── */
 
 /* ── FOOTER ── */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -234,8 +217,16 @@ footer a:hover{color:var(--gold)}
     </div>
 
     <div class="form-group">
-      <label class="form-label" for="birthDate">生年月日</label>
-      <input type="date" id="birthDate" class="form-input" min="1900-01-01" max="2099-12-31">
+      <label class="form-label">生年月日</label>
+      <?php
+        require_once __DIR__.'/inc/birthday-input.php';
+        render_birthdate_input([
+          'prefix'      => 'birth',
+          'hiddenName'  => 'birthDate',
+          'startYear'   => 1900,
+          'endYear'     => 2099,
+        ]);
+      ?>
     </div>
 
     <div class="form-group">
@@ -671,7 +662,7 @@ function elemLabel(stem) {
 // メイン計算
 // ═══════════════════════════════════════════════════
 function calcShichu() {
-  const dateVal = document.getElementById('birthDate').value;
+  const dateVal = window.BirthdayInput.getValue('birth');
   if (!dateVal) { alert('生年月日を入力してください'); return; }
   const [year, month, day] = dateVal.split('-').map(Number);
   if (year < 1900 || year > 2099) { alert('1900年〜2099年の範囲で入力してください'); return; }

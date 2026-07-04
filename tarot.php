@@ -37,8 +37,10 @@ body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-we
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(90,50,180,.22) 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(180,50,100,.14) 0%,transparent 55%);pointer-events:none;z-index:0}
 .wrap{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:0 1rem}
 
-/* ══ HEADER ══ */
-.site-header{position:sticky;top:0;z-index:200;background:rgba(6,4,16,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+/* ══ HEADER ══（独自スキーム維持。inc/header.php共通CSSと同一セレクタ.site-headerだと
+   詳細度が同点でソース順（inc/header.php側が後）に負けるため、header.site-headerで
+   詳細度を上げて確実にこちらを優先させる） */
+header.site-header{position:sticky;top:0;z-index:200;background:rgba(6,4,16,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .header-inner{max-width:960px;margin:0 auto;padding:0 1.4rem;display:flex;align-items:center;justify-content:space-between;height:56px;gap:1rem}
 .logo{font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.5rem;letter-spacing:.06em;white-space:nowrap}
 .logo em{font-style:italic;color:var(--gold)}

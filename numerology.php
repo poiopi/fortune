@@ -148,6 +148,7 @@ function getNumberData(int $n): array {
 }
 
 // フォーム処理
+require_once __DIR__.'/inc/birthday-input.php';
 $result = null;
 $errors = [];
 
@@ -233,14 +234,7 @@ body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-we
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(90,50,180,.22) 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(180,50,100,.14) 0%,transparent 55%);pointer-events:none;z-index:0;}
 .wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 1.2rem}
 
-/* ── HEADER ── */
-header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px);}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
-.logo em{font-style:italic;color:var(--gold)}
-.header-nav{display:flex;gap:1.5rem}
-.header-nav a{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
+/* ── HEADER：inc/header.php側で一元管理（COMPONENTS.md参照） ── */
 
 /* ── HERO ── */
 .hero{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--border);margin-bottom:2rem}
@@ -262,6 +256,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 }
 .form-input:focus{border-color:var(--violet)}
 .form-input::placeholder{color:var(--muted)}
+select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:none;color-scheme:dark;cursor:pointer}
 .submit-btn{
   width:100%;
   background:linear-gradient(135deg,var(--violet),rgba(155,114,239,.7));
@@ -325,22 +320,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
 
-/* ── スマホメニュー ── */
-.sp-menu-btn{display:none}
-.sp-dropdown{display:none}
-@media(max-width:768px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer;transition:color .2s,border-color .2s;}
-  .sp-menu-btn:hover{color:var(--text);border-color:var(--border2)}
-  .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px);}
-  .sp-dropdown.open{display:block}
-  .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s;}
-  .sp-dropdown a:last-child{border-bottom:none}
-  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
-  .sp-dropdown span{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--text);border-bottom:1px solid var(--border);}
-  .sp-dropdown span:last-child{border-bottom:none}
-}
-
 @media(max-width:600px){
   .numbers-grid{grid-template-columns:1fr}
   .detail-grid{grid-template-columns:1fr}
@@ -385,17 +364,33 @@ body{top:0!important}
     </div>
     <?php endif; ?>
 
-    <form method="get" action="">
+    <form method="get" action="" onsubmit="return validateBirthdate()">
       <div class="form-group">
         <label class="form-label" for="name">お名前（ひらがな・カタカナ・アルファベットで入力してください。漢字は使えません）</label>
         <input class="form-input" type="text" id="name" name="name" placeholder="例：やまだ はなこ" value="<?= htmlspecialchars($_GET['name'] ?? '') ?>">
       </div>
       <div class="form-group">
-        <label class="form-label" for="birthdate">生年月日</label>
-        <input class="form-input" type="date" id="birthdate" name="birthdate" value="<?= htmlspecialchars($_GET['birthdate'] ?? '') ?>">
+        <label class="form-label">生年月日</label>
+        <?php
+          $bd = $_GET['birthdate'] ?? '';
+          [$by,$bm,$bdd] = $bd && preg_match('/^\d{4}-\d{2}-\d{2}$/', $bd) ? explode('-', $bd) : ['', '', ''];
+          render_birthdate_input([
+            'prefix'       => 'birth',
+            'hiddenName'   => 'birthdate',
+            'defaultYear'  => $by !== '' ? (int)$by : 1990,
+            'defaultMonth' => $bm !== '' ? (int)$bm : null,
+            'defaultDay'   => $bdd !== '' ? (int)$bdd : null,
+          ]);
+        ?>
       </div>
       <button class="submit-btn" type="submit">数字を算出する ✦</button>
     </form>
+    <script>
+    function validateBirthdate(){
+      if(!window.BirthdayInput.getValue('birth')){alert('生年月日をすべて選択してください');return false;}
+      return true;
+    }
+    </script>
   </div>
 
   <!-- 数秘術の説明 -->

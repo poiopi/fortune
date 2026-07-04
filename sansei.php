@@ -592,6 +592,20 @@ input[type="text"]:focus,input[type="date"]:focus{
   box-shadow:0 0 0 3px rgba(155,114,239,.2);
 }
 input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(.6)}
+.form-input{
+  width:100%;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border2);
+  border-radius:8px;
+  padding:.75rem 1rem;
+  color:var(--text);
+  font-size:1rem;
+  font-family:var(--ff-sans);
+  outline:none;
+  transition:border-color .2s,box-shadow .2s;
+}
+select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:none;color-scheme:dark}
+.form-input:focus{border-color:var(--violet);box-shadow:0 0 0 3px rgba(155,114,239,.2)}
 .btn-submit{
   width:100%;
   padding:1rem;
@@ -999,18 +1013,7 @@ footer{
         transform:translateY(0);
     }
 }
-/* ── HEADER ── */
-header.site-header{
-  border-bottom:1px solid var(--border);padding:0 1.2rem;
-  position:sticky;top:0;z-index:100;
-  background:rgba(8,6,15,.9);backdrop-filter:blur(12px);
-}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
-.logo em{font-style:italic;color:var(--gold)}
-.header-nav{display:flex;gap:1.5rem}
-.header-nav a{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
+/* ── HEADER：inc/header.php側で一元管理（COMPONENTS.md参照） ── */
 /* ======================
    三星鑑定について
 ====================== */
@@ -1083,41 +1086,7 @@ header.site-header{
     }
 
 }
-/* ── スマホメニュー ── */
-.sp-menu-btn{display:none}
-.sp-dropdown{display:none}
-@media(max-width:768px){
-  .header-nav{display:none}
-  .sp-menu-btn{
-    display:flex;align-items:center;gap:.4rem;
-    font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;
-    color:var(--muted);background:none;
-    border:1px solid var(--border);border-radius:6px;
-    padding:.35rem .8rem;cursor:pointer;transition:color .2s,border-color .2s;
-  }
-  .sp-menu-btn:hover{color:var(--text);border-color:var(--border2)}
-  .sp-dropdown{
-    display:none;position:absolute;top:54px;right:1.2rem;
-    background:rgba(8,6,15,.97);border:1px solid var(--border2);
-    border-radius:12px;overflow:hidden;z-index:200;min-width:180px;
-    backdrop-filter:blur(16px);
-  }
-  .sp-dropdown.open{display:block}
-  .sp-dropdown a{
-    display:block;padding:.85rem 1.25rem;
-    font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;
-    color:var(--muted);text-decoration:none;
-    border-bottom:1px solid var(--border);transition:color .2s,background .2s;
-  }
-  .sp-dropdown a:last-child{border-bottom:none}
-  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
-  .sp-dropdown span{
-    display:block;padding:.85rem 1.25rem;
-    font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;
-    color:var(--text);border-bottom:1px solid var(--border);
-  }
-  .sp-dropdown span:last-child{border-bottom:none}
-}
+/* ── スマホメニュー：inc/header.php側で一元管理（COMPONENTS.md参照） ── */
 </style>
 </head>
 <body>
@@ -1151,18 +1120,35 @@ header.site-header{
               <?php foreach($errors as $e): ?><li><?= $e ?></li><?php endforeach; ?>
             </ul>
           <?php endif; ?>
-          <form method="post" action="">
+          <form method="post" action="" onsubmit="return validateBirthdate()">
             <div class="field">
               <label for="name">お名前（ニックネーム可）</label>
               <input type="text" id="name" name="name" value="<?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>" placeholder="例：さくら" required>
             </div>
             <div class="field">
-              <label for="birthday">生年月日</label>
-              <input type="date" id="birthday" name="birthday" value="<?= $birthday ?>"
-                     min="1920-01-01" max="<?= date('Y-m-d') ?>" required>
+              <label>生年月日</label>
+              <?php
+                [$by,$bm,$bdd] = $birthday !== '' && preg_match('/^\d{4}-\d{2}-\d{2}$/', $birthday)
+                  ? explode('-', $birthday)
+                  : ['', '', ''];
+                require_once __DIR__.'/inc/birthday-input.php';
+                render_birthdate_input([
+                  'prefix'       => 'birth',
+                  'hiddenName'   => 'birthday',
+                  'defaultYear'  => $by !== '' ? (int)$by : 1990,
+                  'defaultMonth' => $bm !== '' ? (int)$bm : null,
+                  'defaultDay'   => $bdd !== '' ? (int)$bdd : null,
+                ]);
+              ?>
             </div>
             <button type="submit" class="btn-submit">✦ 三星鑑定を開始する ✦</button>
           </form>
+          <script>
+          function validateBirthdate(){
+            if(!window.BirthdayInput.getValue('birth')){alert('生年月日をすべて選択してください');return false;}
+            return true;
+          }
+          </script>
         </div>
       </section>
 

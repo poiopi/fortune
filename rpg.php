@@ -38,13 +38,6 @@ html{font-size:16px;scroll-behavior:smooth}
 body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-weight:300;line-height:1.8;min-height:100vh}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(90,50,180,.22) 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(180,50,100,.14) 0%,transparent 55%);pointer-events:none;z-index:0}
 .wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 1.2rem}
-header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px)}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
-.logo em{font-style:italic;color:var(--gold)}
-.header-nav{display:flex;gap:1.5rem}
-.header-nav a{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
 .hero{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--border);margin-bottom:2rem}
 .hero-eyebrow{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;display:block}
 .hero h1{font-family:var(--ff-rpg);font-size:clamp(1.4rem,4vw,2.2rem);font-weight:400;line-height:1.4;letter-spacing:.06em;background:linear-gradient(135deg,var(--gold-lt) 0%,var(--violet-lt) 50%,var(--teal) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
@@ -124,6 +117,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 .fform label{font-family:var(--ff-rpg);font-size:.7rem;color:var(--muted)}
 .fform input{background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.6rem .9rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s;width:100%}
 .fform input:focus{border-color:var(--violet)}
+.date-input-group select{background-color:#1e1738;-webkit-appearance:none;appearance:none}
 .fsub{background:linear-gradient(135deg,var(--gold),var(--violet));border:none;border-radius:10px;padding:.72rem;font-family:var(--ff-rpg);font-size:.82rem;color:#fff;cursor:pointer;transition:opacity .2s;margin-top:.4rem}
 .fsub:hover{opacity:.85}
 
@@ -146,17 +140,7 @@ header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;to
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
-.sp-menu-btn{display:none}
-.sp-dropdown{display:none}
 @media(max-width:768px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer}
-  .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
-  .sp-dropdown.open{display:block}
-  .sp-dropdown a,.sp-dropdown span{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
-  .sp-dropdown span{color:var(--text)}
-  .sp-dropdown a:last-child,.sp-dropdown span:last-child{border-bottom:none}
-  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
   .ghint{display:none}
 }
 </style>
@@ -273,7 +257,14 @@ footer a:hover{color:var(--gold)}
     <div class="otx">旅人よ、よく来てくれた。生年月日を教えてくれれば、星と数と天の意志があなたの運命を示そう。</div>
     <div class="fform">
       <label>生年月日</label>
-      <input type="date" id="bdate" max="<?= date('Y-m-d') ?>">
+      <?php
+        require_once __DIR__.'/inc/birthday-input.php';
+        render_birthdate_input([
+          'prefix'     => 'bdate',
+          'hiddenName' => 'bdate',
+          'endYear'    => (int)date('Y'),
+        ]);
+      ?>
       <button class="fsub" onclick="calcFortune()">✦ 占ってもらう</button>
     </div>
   </div>
@@ -1041,7 +1032,7 @@ function endCbt(won,fled){
 // FORTUNE
 // ════════════════════════════════════════════
 function calcFortune(){
-  const v=document.getElementById('bdate').value;
+  const v=window.BirthdayInput.getValue('bdate');
   if(!v){alert('生年月日を入力してください');return;}
   const[y,m,d]=v.split('-').map(Number);
   const zod=zodiac(m,d);

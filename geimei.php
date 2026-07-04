@@ -64,24 +64,6 @@ body{top:0!important}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);min-height:100vh;line-height:1.7}
 a{color:inherit;text-decoration:none}
-header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px)}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
-.logo em{font-style:italic;color:var(--gold)}
-.header-nav{display:flex;gap:1.5rem}
-.header-nav a,.header-nav span{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
-.sp-menu-btn{display:none}
-.sp-dropdown{display:none}
-@media(max-width:768px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer}
-  .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
-  .sp-dropdown.open{display:block}
-  .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
-  .sp-dropdown a:last-child{border-bottom:none}
-  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
-}
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
@@ -97,6 +79,7 @@ footer a:hover{color:var(--gold)}
 .form-label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:.4rem;letter-spacing:.06em}
 .form-input{width:100%;background:rgba(8,6,15,.7);border:1px solid var(--border2);border-radius:8px;padding:.6rem .9rem;color:var(--text);font-family:var(--ff-serif);font-size:.9rem;outline:none;transition:border-color .2s;color-scheme:dark}
 .form-input:focus{border-color:var(--violet)}
+.date-input-group select.form-input{-webkit-appearance:none;appearance:none}
 .role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:.4rem}
 .role-btn{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:.8rem .5rem;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;font-family:var(--ff-sans)}
 .role-btn:hover{border-color:var(--violet);background:rgba(155,114,239,.08)}
@@ -201,8 +184,16 @@ footer a:hover{color:var(--gold)}
         <input type="text" id="gName" class="form-input" placeholder="例：山田 太郎">
       </div>
       <div class="form-group">
-        <label class="form-label" for="gDate">生年月日 <span style="color:var(--rose)">*</span></label>
-        <input type="date" id="gDate" class="form-input" min="1900-01-01" max="2099-12-31">
+        <label class="form-label">生年月日 <span style="color:var(--rose)">*</span></label>
+        <?php
+          require_once __DIR__.'/inc/birthday-input.php';
+          render_birthdate_input([
+            'prefix'     => 'gdate',
+            'hiddenName' => 'gDate',
+            'startYear'  => 1900,
+            'endYear'    => 2099,
+          ]);
+        ?>
       </div>
       <div class="form-group">
         <label class="form-label">芸風を選んでください <span style="color:var(--rose)">*</span></label>
@@ -679,7 +670,7 @@ function selectRole(role,el){
   state.role=role;
 }
 function getDate(){
-  const v=document.getElementById('gDate').value;
+  const v=window.BirthdayInput.getValue('gdate');
   if(!v)return null;
   const[y,m,d]=v.split('-').map(Number);
   return{y,m,d};

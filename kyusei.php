@@ -160,6 +160,8 @@ $WORK_TIP = [
   '今日の自分に満足せず、常に一歩先を目指す姿勢が大切です。',
 ];
 
+require_once __DIR__.'/inc/birthday-input.php';
+
 $result = null;
 $errors = [];
 
@@ -223,13 +225,6 @@ html{font-size:16px;scroll-behavior:smooth}
 body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-weight:300;line-height:1.8;min-height:100vh}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(90,50,180,.22) 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(180,50,100,.14) 0%,transparent 55%);pointer-events:none;z-index:0}
 .wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 1.2rem}
-header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px)}
-.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-.logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
-.logo em{font-style:italic;color:var(--gold)}
-.header-nav{display:flex;gap:1.5rem}
-.header-nav a{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
-.header-nav a:hover{color:var(--gold-lt)}
 .hero{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--border);margin-bottom:2rem}
 .hero-eyebrow{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;display:block}
 .hero h1{font-family:var(--ff-serif);font-size:clamp(1.8rem,5vw,2.8rem);font-weight:700;line-height:1.2;letter-spacing:.06em;background:linear-gradient(135deg,var(--gold-lt) 0%,var(--violet-lt) 50%,var(--teal) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
@@ -283,19 +278,7 @@ select.form-input{appearance:none;-webkit-appearance:none;background-color:#1a15
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
-.sp-menu-btn{display:none}
-.sp-dropdown{display:none}
 @media(max-width:768px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer;transition:color .2s,border-color .2s}
-  .sp-menu-btn:hover{color:var(--text);border-color:var(--border2)}
-  .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border2);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
-  .sp-dropdown.open{display:block}
-  .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
-  .sp-dropdown a:last-child{border-bottom:none}
-  .sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.08)}
-  .sp-dropdown span{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.08em;color:var(--text);border-bottom:1px solid var(--border)}
-  .sp-dropdown span:last-child{border-bottom:none}
   .info-grid{grid-template-columns:1fr 1fr}
   .dir-grid{grid-template-columns:1fr}
 }
@@ -334,44 +317,28 @@ body{top:0!important}
     <?php if (!empty($errors)): ?>
     <div class="error-box"><?php foreach ($errors as $e): ?><?= htmlspecialchars($e) ?><?php endforeach; ?></div>
     <?php endif; ?>
-    <form method="get" action="" onsubmit="buildDate()">
+    <form method="get" action="" onsubmit="return validateBirthdate()">
       <div class="form-group">
         <label class="form-label">生年月日</label>
-        <div style="display:flex;gap:.5rem;align-items:center">
-          <?php
-            $bd = $_GET['birthdate'] ?? '';
-            [$by,$bm,$bdd] = $bd ? explode('-',$bd) : ['','',''];
-          ?>
-          <select class="form-input" id="bdY" style="flex:2">
-            <option value="">年</option>
-            <?php for($y=date('Y');$y>=1924;$y--): ?>
-            <option value="<?=$y?>" <?=$by==(string)$y?'selected':''?>><?=$y?>年</option>
-            <?php endfor; ?>
-          </select>
-          <select class="form-input" id="bdM" style="flex:1">
-            <option value="">月</option>
-            <?php for($m=1;$m<=12;$m++): ?>
-            <option value="<?=sprintf('%02d',$m)?>" <?=$bm===sprintf('%02d',$m)?'selected':''?>><?=$m?>月</option>
-            <?php endfor; ?>
-          </select>
-          <select class="form-input" id="bdD" style="flex:1">
-            <option value="">日</option>
-            <?php for($d=1;$d<=31;$d++): ?>
-            <option value="<?=sprintf('%02d',$d)?>" <?=$bdd===sprintf('%02d',$d)?'selected':''?>><?=$d?>日</option>
-            <?php endfor; ?>
-          </select>
-        </div>
-        <input type="hidden" id="birthdate" name="birthdate">
+        <?php
+          $bd = $_GET['birthdate'] ?? '';
+          [$by,$bm,$bdd] = $bd ? explode('-',$bd) : ['','',''];
+          render_birthdate_input([
+            'prefix'       => 'birth',
+            'hiddenName'   => 'birthdate',
+            'startYear'    => 1924,
+            'defaultYear'  => $by !== '' ? (int)$by : 1990,
+            'defaultMonth' => $bm !== '' ? (int)$bm : null,
+            'defaultDay'   => $bdd !== '' ? (int)$bdd : null,
+          ]);
+        ?>
       </div>
       <button class="submit-btn" type="submit">本命星を算出する ✦</button>
     </form>
     <script>
-    function buildDate(){
-      var y=document.getElementById('bdY').value;
-      var m=document.getElementById('bdM').value;
-      var d=document.getElementById('bdD').value;
-      if(!y||!m||!d){alert('生年月日をすべて選択してください');event.preventDefault();return;}
-      document.getElementById('birthdate').value=y+'-'+m+'-'+d;
+    function validateBirthdate(){
+      if(!window.BirthdayInput.getValue('birth')){alert('生年月日をすべて選択してください');return false;}
+      return true;
     }
     </script>
   </div>
