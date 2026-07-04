@@ -145,8 +145,8 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 .footer-nav a{color:var(--muted);text-decoration:none}
 .footer-nav a:hover{color:var(--gold-lt)}
 .footer-copy{font-family:var(--ff-mono);font-size:.6rem;color:rgba(138,125,181,.4);letter-spacing:.1em;margin-top:.8rem}
-.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
-.tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
+.tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1rem 1.4rem;margin-bottom:1rem}
+.tool-desc p{font-size:.85rem;color:rgba(232,226,245,.78);line-height:1.7;margin-bottom:.5rem}
 .tool-desc p:last-child{margin-bottom:0}
 </style>
 </head>

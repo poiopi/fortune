@@ -60,6 +60,22 @@ function render_birthdate_input(array $opts = []): void {
     if (!$scriptEmitted) {
         $scriptEmitted = true;
         ?>
+        <style>
+        .date-input-group{display:flex;gap:.5rem;width:100%}
+        .date-input-group select{
+          padding:.55rem .5rem;
+          text-align:center;
+          background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+          background-position:calc(100% - 14px) center,calc(100% - 9px) center;
+          background-size:5px 5px,5px 5px;
+          background-repeat:no-repeat;
+          color:inherit;
+          opacity:.85;
+        }
+        .date-input-group select:focus{opacity:1}
+        .date-input-group .date-input-year{flex:1.6}
+        .date-input-group .date-input-month,.date-input-group .date-input-day{flex:1}
+        </style>
         <script>
         window.BirthdayInput = window.BirthdayInput || (function(){
           function pad(n){ return String(n).padStart(2,'0'); }
