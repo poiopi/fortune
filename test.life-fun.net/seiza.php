@@ -511,6 +511,7 @@ function _renderResult(signIdx, innerIdx, tzCode, dateLine) {
     <div class="share-btns">
       <a href="https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-x">𝕏 シェア</a>
       <a href="https://social-plugins.line.me/lineit/share?url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-line">LINE</a>
+      <button onclick="openShare('fb')" class="share-btn share-fb">Facebook</button>
       <button onclick="copyPageUrl()" class="share-btn share-copy" id="copyUrlBtn">🔗 URLをコピー</button>
     </div>
   `;

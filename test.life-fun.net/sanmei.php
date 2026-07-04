@@ -641,6 +641,15 @@ function _calcAndRender(year, month, day) {
   document.getElementById('resultCode').textContent = resultCode;
 
   // シェアボタン（URLはlocation.hrefを使う → result_code入りURLをシェア）
+  renderShareWrap(nickname);
+
+  // 表示切り替え
+  document.getElementById('formArea').style.display = 'none';
+  scrollToResult('resultSection');
+}
+
+// 鑑定結果のシェアボタンを生成（通常診断・?r=復元の両方から呼び出す共通処理）
+function renderShareWrap(nickname) {
   const shareText = encodeURIComponent(`私は「${nickname}」タイプでした #算命学診断`);
   const shareUrl = encodeURIComponent(location.href);
   document.getElementById('shareWrap').innerHTML = `
@@ -648,13 +657,10 @@ function _calcAndRender(year, month, day) {
     <div class="share-btns">
       <a href="https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-x">𝕏 シェア</a>
       <a href="https://social-plugins.line.me/lineit/share?url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-line">LINE</a>
+      <button onclick="openShare('fb')" class="share-btn share-fb">Facebook</button>
       <button onclick="copyPageUrl()" class="share-btn share-copy" id="copyUrlBtn">🔗 URLをコピー</button>
     </div>
   `;
-
-  // 表示切り替え
-  document.getElementById('formArea').style.display = 'none';
-  scrollToResult('resultSection');
 }
 
 function copyPageUrl() {
@@ -747,16 +753,7 @@ function resetForm() {
   document.getElementById('daiyunBlock').innerHTML = `<div class="daiyun-theme-label">✦ 現在の大運テーマ</div><div class="daiyun-theme-value">${DAIYUN_THEMES[themeIndex]}</div>`;
   document.getElementById('resultCode').textContent = r;
 
-  const shareUrl = encodeURIComponent(location.href);
-  const shareText2 = encodeURIComponent(`私は「${nickname}」タイプでした #算命学診断`);
-  document.getElementById('shareWrap').innerHTML = `
-    <div class="share-label">鑑定結果をシェアする</div>
-    <div class="share-btns">
-      <a href="https://twitter.com/intent/tweet?text=${shareText2}&url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-x">𝕏 シェア</a>
-      <a href="https://social-plugins.line.me/lineit/share?url=${shareUrl}" target="_blank" rel="noopener noreferrer" class="share-btn share-line">LINE</a>
-      <button onclick="copyPageUrl()" class="share-btn share-copy" id="copyUrlBtn">🔗 URLをコピー</button>
-    </div>
-  `;
+  renderShareWrap(nickname);
 
   document.getElementById('formArea').style.display = 'none';
   scrollToResult('resultSection');
