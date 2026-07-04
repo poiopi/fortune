@@ -57,9 +57,6 @@ body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-we
 .form-label{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:.4rem}
 .form-input{width:100%;background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s}
 .form-input:focus{border-color:var(--violet)}
-.date-row{display:flex;gap:.6rem}
-.date-row select.form-input{flex:1;background-color:#1e1738;-webkit-appearance:none;appearance:none}
-.date-row select.form-input option{background:#1e1738;color:var(--text)}
 .submit-btn{width:100%;padding:1rem;background:linear-gradient(135deg,rgba(155,114,239,.8),rgba(201,168,76,.7));border:none;border-radius:10px;font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;color:#fff;cursor:pointer;margin-top:.5rem;letter-spacing:.12em;transition:opacity .2s;position:relative;overflow:hidden}
 .submit-btn:hover{opacity:.88}
 .submit-btn::before{content:'✦ ';font-size:.8rem}
@@ -145,9 +142,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     </div>
     <div class="form-group">
       <label class="form-label">生年月日</label>
-      <div class="date-row">
-        <?php require_once __DIR__.'/inc/birthday-input.php'; render_birthdate_input(['prefix'=>'birth','hiddenName'=>'birthday']); ?>
-      </div>
+      <?php require_once __DIR__.'/inc/birthday-input.php'; render_birthdate_input(['prefix'=>'birth','hiddenName'=>'birthday']); ?>
     </div>
     <button class="submit-btn" onclick="diagnose()">前世を読み解く</button>
     <p style="font-size:.65rem;color:var(--muted);text-align:center;margin-top:.8rem;line-height:1.7">入力された情報はサーバーに送信・保存されません。<br>同じ名前・生年月日からは毎回同じ結果が表示されます。<br><span style="color:rgba(138,125,181,.5)">※本サービスはエンターテインメントです。重要な判断の根拠にはしないでください。</span></p>
