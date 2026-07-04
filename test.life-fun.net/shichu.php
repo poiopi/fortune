@@ -46,6 +46,7 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .form-label{display:block;font-size:.75rem;color:var(--muted);margin-bottom:.4rem;letter-spacing:.06em}
 .form-input{width:100%;background:rgba(8,6,15,.7);border:1px solid var(--border2);border-radius:8px;padding:.6rem .9rem;color:var(--text);font-family:var(--ff-serif);font-size:.9rem;outline:none;transition:border-color .2s;color-scheme:dark}
 .form-input:focus{border-color:var(--violet)}
+.date-input-group select.form-input{-webkit-appearance:none;appearance:none}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:480px){.form-row{grid-template-columns:1fr}}
 .radio-group{display:flex;gap:1rem;flex-wrap:wrap}
@@ -224,7 +225,6 @@ footer a:hover{color:var(--gold)}
           'hiddenName'  => 'birthDate',
           'startYear'   => 1900,
           'endYear'     => 2099,
-          'defaultYear' => null,
         ]);
       ?>
     </div>
