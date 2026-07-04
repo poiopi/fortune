@@ -61,20 +61,26 @@ function render_birthdate_input(array $opts = []): void {
         $scriptEmitted = true;
         ?>
         <style>
-        .date-input-group{display:flex;gap:.5rem;width:100%}
+        .date-input-group{display:flex;gap:.6rem;width:100%}
         .date-input-group select{
-          padding:.65rem .5rem;
-          min-height:44px;
+          padding:.85rem 1.6rem .85rem .6rem;
+          min-height:50px;
           text-align:center;
           background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
-          background-position:calc(100% - 14px) center,calc(100% - 9px) center;
+          background-position:calc(100% - 16px) center,calc(100% - 11px) center;
           background-size:5px 5px,5px 5px;
           background-repeat:no-repeat;
           color:inherit;
           opacity:.85;
+          transition:opacity .2s,border-color .35s,box-shadow .35s;
         }
-        .date-input-group select:focus{opacity:1}
-        .date-input-group .date-input-year{flex:1.6}
+        .date-input-group select:hover{opacity:.95}
+        .date-input-group select:focus{
+          opacity:1;
+          border-color:var(--violet);
+          box-shadow:0 0 0 3px rgba(155,114,239,.12),0 0 16px rgba(201,168,76,.18);
+        }
+        .date-input-group .date-input-year{flex:1.64}
         .date-input-group .date-input-month,.date-input-group .date-input-day{flex:1}
         </style>
         <script>
