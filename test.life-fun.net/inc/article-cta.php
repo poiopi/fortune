@@ -7,8 +7,10 @@
 require_once __DIR__.'/nav-cards.php';
 $_ctaSlug = trim((string)parse_url($ctaUrl ?? '/', PHP_URL_PATH), '/');
 $_ctaName = $_NAV_PAGES[$_ctaSlug]['name'] ?? ($ctaBtn ?? 'CTA');
+$GLOBALS['_ctaOccurrence'] = ($GLOBALS['_ctaOccurrence'] ?? 0) + 1;
+$_ctaPosition = $GLOBALS['_ctaOccurrence'];
 ?>
-<div class="article-cta">
+<div class="article-cta" data-cta-position="<?= (int)$_ctaPosition ?>" data-cta-name="<?= htmlspecialchars($_ctaName) ?>">
   <div class="article-cta-text">
     <p><?= htmlspecialchars($ctaTitle ?? '') ?></p>
     <?php if (!empty($ctaText)): ?>

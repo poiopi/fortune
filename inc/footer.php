@@ -246,14 +246,34 @@ function trackEvent(name, params){
   var payload = Object.assign({}, params, base); // baseが優先（共通パラメータの意図しない上書きを防止）
   gtag('event', name, payload);
 }
-// data-ga-event属性を持つ要素のクリックを一括計測（cta_click / retry_click / fortune_submit）
+// data-ga-event属性を持つ要素のクリックを一括計測（cta_click / retry_click / fortune_submit / article_nav_click / article_related_click）
 document.addEventListener('click', function(e){
   var t = e.target.closest('[data-ga-event]');
   if(!t) return;
   var params = {};
   if(t.dataset.ctaName) params.cta_name = t.dataset.ctaName;
   if(t.dataset.ctaDestination) params.cta_destination = t.dataset.ctaDestination;
+  if(t.dataset.navType) params.nav_type = t.dataset.navType;
+  if(t.dataset.relatedDestination) params.related_destination = t.dataset.relatedDestination;
   trackEvent(t.dataset.gaEvent, params);
+});
+
+// 記事内CTAの表示計測（article_cta_view、1要素につき1回のみ発火）
+document.addEventListener('DOMContentLoaded', function(){
+  var ctaBlocks = document.querySelectorAll('.article-cta[data-cta-position]');
+  if(!ctaBlocks.length || typeof IntersectionObserver === 'undefined') return;
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(!entry.isIntersecting) return;
+      var el = entry.target;
+      trackEvent('article_cta_view', {
+        cta_position: el.dataset.ctaPosition,
+        cta_name: el.dataset.ctaName
+      });
+      observer.unobserve(el);
+    });
+  }, {threshold: 0.5});
+  ctaBlocks.forEach(function(el){ observer.observe(el); });
 });
 
 function googleTranslateElementInit(){

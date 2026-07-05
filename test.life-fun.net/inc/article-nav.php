@@ -14,7 +14,7 @@ $_listTitle  = $listTitle  ?? '一覧';
 ?>
 <div class="article-nav">
   <?php if (!empty($prevUrl)): ?>
-  <a href="<?= htmlspecialchars($prevUrl) ?>" class="article-nav-item prev">
+  <a href="<?= htmlspecialchars($prevUrl) ?>" class="article-nav-item prev" data-ga-event="article_nav_click" data-nav-type="prev">
     <div class="article-nav-dir"><?= htmlspecialchars($_prevLabel) ?></div>
     <div class="article-nav-name"><?= htmlspecialchars($prevTitle ?? '') ?></div>
   </a>
@@ -22,7 +22,7 @@ $_listTitle  = $listTitle  ?? '一覧';
   <div class="article-nav-item empty"></div>
   <?php endif; ?>
 
-  <a href="<?= htmlspecialchars($listUrl ?? '/') ?>" class="article-nav-center">
+  <a href="<?= htmlspecialchars($listUrl ?? '/') ?>" class="article-nav-center" data-ga-event="article_nav_click" data-nav-type="hub">
     <div>
       <div class="article-nav-list-label">一覧</div>
       <div class="article-nav-list-name"><?= htmlspecialchars($_listTitle) ?></div>
@@ -30,7 +30,7 @@ $_listTitle  = $listTitle  ?? '一覧';
   </a>
 
   <?php if (!empty($nextUrl)): ?>
-  <a href="<?= htmlspecialchars($nextUrl) ?>" class="article-nav-item next">
+  <a href="<?= htmlspecialchars($nextUrl) ?>" class="article-nav-item next" data-ga-event="article_nav_click" data-nav-type="next">
     <div class="article-nav-dir"><?= htmlspecialchars($_nextLabel) ?></div>
     <div class="article-nav-name"><?= htmlspecialchars($nextTitle ?? '') ?></div>
   </a>
