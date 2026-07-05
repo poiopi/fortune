@@ -48,7 +48,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1}
 
 /* HUD */
-.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:nowrap;overflow:hidden;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}
+.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:nowrap;overflow:hidden;border-bottom:1px solid var(--border);position:sticky;top:55px;z-index:20}
 .hud-group{display:flex;align-items:center;gap:.35rem}
 .hud-lbl{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted)}
 .hud-bar-wrap{width:60px;height:7px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
