@@ -549,7 +549,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <a href="/mbti">🧠 MBTI×星座</a>
   <a href="/numerology">🔢 数秘術</a>
   <a href="/kyusei">⭐ 九星気学</a>
-  <a href="/rpg">⚔️ RPG占い</a>
+  <a href="/rpg">⚔️ RPG風占い</a>
   <a href="/aisho">💑 相性診断</a>
   <a href="/zense">🌀 前世診断</a>
   <a href="/guardian">👻 守護霊診断</a>
@@ -686,7 +686,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       <a href="/rpg" class="fcard ct-gn fade-up">
         <span class="fc-icon">⚔️</span>
         <span class="fc-lbl">RPG Fortune</span>
-        <div class="fc-name">RPG占いの村</div>
+        <div class="fc-name">RPG風占いの村</div>
         <div class="fc-desc">勇者となって占いの村を冒険しながら運命を知る。</div>
         <span class="fc-btn">冒険する →</span>
       </a>

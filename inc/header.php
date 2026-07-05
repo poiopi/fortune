@@ -84,7 +84,7 @@ function _navlink(string $label, string $href, string $key, string $current): st
       <?= _navlink('MBTI×星座診断',   '/mbti',       'mbti',       $_p) ?>
       <?= _navlink('数秘術診断',       '/numerology', 'numerology', $_p) ?>
       <?= _navlink('九星気学診断',     '/kyusei',     'kyusei',     $_p) ?>
-      <?= _navlink('RPG占い',          '/rpg',        'rpg',        $_p) ?>
+      <?= _navlink('RPG風占い',          '/rpg',        'rpg',        $_p) ?>
       <?= _navlink('相性診断',         '/aisho',      'aisho',      $_p) ?>
       <?= _navlink('前世診断',         '/zense',      'zense',      $_p) ?>
       <?= _navlink('守護霊診断',       '/guardian',   'guardian',   $_p) ?>

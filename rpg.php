@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://life-fun.net/rpg.php" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="description" content="RPGゲーム風の無料占い。村を歩いてキャラクターに話しかけ、星座・数秘術・ジョブクラスで運命を占います。ユニークな体験型占いゲーム。">
-<title>RPG占いゲーム｜村を歩いて星座・数秘術で運命診断</title>
+<title>RPG風占いゲーム｜村を歩いて星座・数秘術で運命診断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -44,11 +44,13 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .hero-sub{font-size:.9rem;color:var(--muted);letter-spacing:.04em;line-height:1.7}
 
 /* ── GAME SHELL ── */
-.game-outer{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:2rem;position:relative}
-.game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1}
+.game-outer{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:2rem;position:relative}
+.game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1;border-radius:16px 16px 0 0}
 
 /* HUD */
-.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:nowrap;overflow:hidden;border-bottom:1px solid var(--border)}
+.game-hud{display:flex;flex-direction:column;gap:.25rem;padding:.55rem 1rem;background:rgba(0,0,0,.55);border-bottom:1px solid var(--border);position:sticky;top:55px;z-index:20;border-radius:16px 16px 0 0}
+.hud-row--primary{display:flex;align-items:center;gap:.6rem;flex-wrap:nowrap}
+.hud-row--primary > *{flex-shrink:1;min-width:0}
 .hud-group{display:flex;align-items:center;gap:.35rem}
 .hud-lbl{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted)}
 .hud-bar-wrap{width:60px;height:7px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
@@ -56,9 +58,16 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .hud-bar.hp{background:linear-gradient(90deg,#e55,#f88)}
 .hud-bar.mp{background:linear-gradient(90deg,#66e,#aaf)}
 .hud-num{font-family:var(--ff-rpg);font-size:.62rem;color:var(--text);min-width:36px}
-.hud-items{display:flex;gap:.3rem;margin-left:auto}
+.hud-row--secondary{display:flex;gap:.4rem;overflow-x:auto;white-space:nowrap;padding-bottom:.2rem;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.3) transparent}
+.hud-row--secondary::-webkit-scrollbar{height:4px}
+.hud-row--secondary::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:2px}
+.hud-items{display:flex;gap:.3rem}
 .hud-chip{font-family:var(--ff-rpg);font-size:.6rem;color:var(--teal);background:rgba(78,205,196,.1);border:1px solid rgba(78,205,196,.25);border-radius:4px;padding:.1rem .35rem}
-.hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold)}
+.hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold);flex-shrink:0;white-space:nowrap;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.35);border-radius:6px;padding:.15rem .4rem;font-weight:600}
+@media(max-width:400px){
+  .hud-bar-wrap{width:46px}
+  .hud-row--primary{gap:.4rem}
+}
 
 /* VIEWPORT */
 .game-viewport{position:relative;overflow:hidden;background:#1e3320;touch-action:none;user-select:none;-webkit-user-select:none;display:flex;justify-content:center}
@@ -68,7 +77,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 @keyframes pulse{from{box-shadow:0 2px 12px rgba(201,168,76,.3)}to{box-shadow:0 2px 20px rgba(201,168,76,.8)}}
 
 /* CONTROLS */
-.game-controls{background:rgba(0,0,0,.35);padding:.6rem 1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);flex-wrap:wrap;gap:.5rem}
+.game-controls{background:rgba(0,0,0,.35);padding:.6rem 1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);flex-wrap:wrap;gap:.5rem;border-radius:0 0 16px 16px}
 .dpad{display:grid;grid-template-columns:repeat(3,42px);grid-template-rows:repeat(3,42px);gap:2px}
 .db{background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--violet-lt);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .1s}
 .db:active{background:rgba(155,114,239,.4)}
@@ -152,7 +161,7 @@ footer a:hover{color:var(--gold)}
 <div class="wrap">
   <section class="hero">
     <span class="hero-eyebrow">RPG Fortune</span>
-    <h1>RPG占いゲーム｜村を歩いて運命診断</h1>
+    <h1>RPG風占いゲーム｜村を歩いて運命診断</h1>
     <p class="hero-sub">ソラリス村を自由に歩き、村人に話しかけ、アイテムを集めよう。<br>教会の神父があなたの星座・数秘術・隠れたジョブを占います。</p>
   </section>
 
@@ -160,18 +169,22 @@ footer a:hover{color:var(--gold)}
 
   <div class="game-outer">
     <div class="game-hud">
-      <div class="hud-group">
-        <span class="hud-lbl">HP</span>
-        <div class="hud-bar-wrap"><div class="hud-bar hp" id="hpBar"></div></div>
-        <span class="hud-num" id="hpVal">30/30</span>
+      <div class="hud-row hud-row--primary">
+        <div class="hud-group">
+          <span class="hud-lbl">HP</span>
+          <div class="hud-bar-wrap"><div class="hud-bar hp" id="hpBar"></div></div>
+          <span class="hud-num" id="hpVal">30/30</span>
+        </div>
+        <div class="hud-group">
+          <span class="hud-lbl">MP</span>
+          <div class="hud-bar-wrap"><div class="hud-bar mp" id="mpBar"></div></div>
+          <span class="hud-num" id="mpVal">20/20</span>
+        </div>
+        <span class="hud-talk" id="hudTalk">👥 0/5人</span>
       </div>
-      <div class="hud-group">
-        <span class="hud-lbl">MP</span>
-        <div class="hud-bar-wrap"><div class="hud-bar mp" id="mpBar"></div></div>
-        <span class="hud-num" id="mpVal">20/20</span>
+      <div class="hud-row hud-row--secondary">
+        <div class="hud-items" id="hudItems"></div>
       </div>
-      <div class="hud-items" id="hudItems"></div>
-      <span class="hud-talk" id="hudTalk">👥 0/5人</span>
     </div>
 
     <div class="game-viewport" id="gvp">
@@ -1061,7 +1074,7 @@ function calcFortune(){
     if (typeof trackEvent === 'function') trackEvent('fortune_result_view', {});
   }
   phase='result';
-  window._shareText=`RPG占い結果：${zod.name}の${job.emoji}${job.name}（運命数${lp}）✨`;
+  window._shareText=`RPG風占い結果：${zod.name}の${job.emoji}${job.name}（運命数${lp}）✨`;
 }
 
 function rsec(lbl,body){
