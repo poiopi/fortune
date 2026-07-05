@@ -9,7 +9,7 @@ $_NAV_PAGES = [
   'seiza'      => ['name'=>'西洋占星術',    'url'=>'/seiza',     'article'=>'/articles/seiza/',       'featured_score'=>75,  'icon'=>'⭐', 'desc'=>'太陽星座×内面タイプで個性を深掘り'],
   'aisho'      => ['name'=>'相性診断',      'url'=>'/aisho',     'article'=>'/articles/aisho/',       'featured_score'=>65,  'icon'=>'💑', 'desc'=>'二人の星座と数秘から相性を鑑定'],
   'seimei'     => ['name'=>'姓名判断',      'url'=>'/seimei',    'article'=>'/articles/seimei/',      'featured_score'=>65,  'icon'=>'✍️', 'desc'=>'名前に宿る運命を五格で鑑定する'],
-  'rpg'        => ['name'=>'RPG占い',       'url'=>'/rpg',       'article'=>null,                     'featured_score'=>60,  'icon'=>'⚔️', 'desc'=>'あなたの職業と運命を冒険で解く'],
+  'rpg'        => ['name'=>'RPG風占い',       'url'=>'/rpg',       'article'=>null,                     'featured_score'=>60,  'icon'=>'⚔️', 'desc'=>'あなたの職業と運命を冒険で解く'],
   'kyusei'     => ['name'=>'九星気学診断',  'url'=>'/kyusei',    'article'=>'/articles/kyusei/',      'featured_score'=>60,  'icon'=>'⭐', 'desc'=>'本命星で読み解く運命と相性'],
   'numerology' => ['name'=>'数秘術診断',    'url'=>'/numerology','article'=>'/articles/numerology/',  'featured_score'=>60,  'icon'=>'🔢', 'desc'=>'生年月日が導く魂の数字の意味'],
   'zense'      => ['name'=>'前世診断',      'url'=>'/zense',     'article'=>'/articles/zense/',       'featured_score'=>60,  'icon'=>'🌀', 'desc'=>'何回目の転生？魂のカルテを解読'],

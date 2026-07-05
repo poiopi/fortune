@@ -1198,7 +1198,7 @@ footer{
         </div>
         <div class="page-card pc-green">
           <div class="page-card-label">RPG Fortune</div>
-          <div class="page-card-title">⚔️ RPG占いの村</div>
+          <div class="page-card-title">⚔️ RPG風占いの村</div>
           <div class="page-card-desc">勇者となって占いの村を冒険しながら運命を知る</div>
           <a href="/rpg" class="page-card-btn btn-green">冒険する →</a>
         </div>
