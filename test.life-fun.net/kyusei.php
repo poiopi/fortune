@@ -416,7 +416,10 @@ body{top:0!important}
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('resultSection');});</script>
     <?php
-    $articleUrl  = '/articles/kyusei/';
+    $articleUrl   = '/articles/kyusei/';
+    $articleIcon  = '☯️';
+    $articleTitle = '九星気学とは？';
+    $articleDesc  = '本命星・月命星・吉方位の意味をわかりやすく解説';
     $contextKey  = 'kyusei';
     $retryLabel  = 'もう一度診断する';
     $retryType   = 'link';
