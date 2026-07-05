@@ -48,7 +48,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1}
 
 /* HUD */
-.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:nowrap;overflow:hidden;border-bottom:1px solid var(--border)}
+.game-hud{background:rgba(0,0,0,.55);padding:.55rem 1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:nowrap;overflow:hidden;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}
 .hud-group{display:flex;align-items:center;gap:.35rem}
 .hud-lbl{font-family:var(--ff-rpg);font-size:.62rem;color:var(--muted)}
 .hud-bar-wrap{width:60px;height:7px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
@@ -60,7 +60,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .hud-items::-webkit-scrollbar{height:4px}
 .hud-items::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:2px}
 .hud-chip{font-family:var(--ff-rpg);font-size:.6rem;color:var(--teal);background:rgba(78,205,196,.1);border:1px solid rgba(78,205,196,.25);border-radius:4px;padding:.1rem .35rem}
-.hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold);flex-shrink:0}
+.hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold);flex-shrink:0;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:4px;padding:.1rem .35rem}
 
 /* VIEWPORT */
 .game-viewport{position:relative;overflow:hidden;background:#1e3320;touch-action:none;user-select:none;-webkit-user-select:none;display:flex;justify-content:center}
