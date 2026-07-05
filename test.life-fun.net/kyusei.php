@@ -416,7 +416,7 @@ body{top:0!important}
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('resultSection');});</script>
     <?php
-    $articleUrl  = null;
+    $articleUrl  = '/articles/kyusei/';
     $contextKey  = 'kyusei';
     $retryLabel  = 'もう一度診断する';
     $retryType   = 'link';

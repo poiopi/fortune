@@ -56,9 +56,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .hud-bar.hp{background:linear-gradient(90deg,#e55,#f88)}
 .hud-bar.mp{background:linear-gradient(90deg,#66e,#aaf)}
 .hud-num{font-family:var(--ff-rpg);font-size:.62rem;color:var(--text);min-width:36px}
-.hud-items{display:flex;gap:.3rem;margin-left:auto}
+.hud-items{display:flex;gap:.3rem;margin-left:auto;overflow-x:auto;min-width:0;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.3) transparent}
+.hud-items::-webkit-scrollbar{height:4px}
+.hud-items::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:2px}
 .hud-chip{font-family:var(--ff-rpg);font-size:.6rem;color:var(--teal);background:rgba(78,205,196,.1);border:1px solid rgba(78,205,196,.25);border-radius:4px;padding:.1rem .35rem}
-.hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold)}
+.hud-talk{font-family:var(--ff-rpg);font-size:.62rem;color:var(--gold);flex-shrink:0}
 
 /* VIEWPORT */
 .game-viewport{position:relative;overflow:hidden;background:#1e3320;touch-action:none;user-select:none;-webkit-user-select:none;display:flex;justify-content:center}
