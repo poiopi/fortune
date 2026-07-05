@@ -44,11 +44,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .hero-sub{font-size:.9rem;color:var(--muted);letter-spacing:.04em;line-height:1.7}
 
 /* ── GAME SHELL ── */
-.game-outer{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:2rem;position:relative}
-.game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1}
+.game-outer{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:2rem;position:relative}
+.game-outer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal));z-index:1;border-radius:16px 16px 0 0}
 
 /* HUD */
-.game-hud{display:flex;flex-direction:column;gap:.25rem;padding:.55rem 1rem;background:rgba(0,0,0,.55);border-bottom:1px solid var(--border);position:sticky;top:55px;z-index:20}
+.game-hud{display:flex;flex-direction:column;gap:.25rem;padding:.55rem 1rem;background:rgba(0,0,0,.55);border-bottom:1px solid var(--border);position:sticky;top:55px;z-index:20;border-radius:16px 16px 0 0}
 .hud-row--primary{display:flex;align-items:center;gap:.6rem;flex-wrap:nowrap}
 .hud-row--primary > *{flex-shrink:1;min-width:0}
 .hud-group{display:flex;align-items:center;gap:.35rem}
@@ -77,7 +77,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 @keyframes pulse{from{box-shadow:0 2px 12px rgba(201,168,76,.3)}to{box-shadow:0 2px 20px rgba(201,168,76,.8)}}
 
 /* CONTROLS */
-.game-controls{background:rgba(0,0,0,.35);padding:.6rem 1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);flex-wrap:wrap;gap:.5rem}
+.game-controls{background:rgba(0,0,0,.35);padding:.6rem 1rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);flex-wrap:wrap;gap:.5rem;border-radius:0 0 16px 16px}
 .dpad{display:grid;grid-template-columns:repeat(3,42px);grid-template-rows:repeat(3,42px);gap:2px}
 .db{background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--violet-lt);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .1s}
 .db:active{background:rgba(155,114,239,.4)}
