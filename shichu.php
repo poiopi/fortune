@@ -320,6 +320,7 @@ footer a:hover{color:var(--gold)}
   </p>
 </div>
 
+<?php require __DIR__.'/inc/retry-reset.php'; ?>
 <?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
@@ -913,9 +914,9 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
 }
 
 function resetForm() {
-  document.getElementById('formArea').style.display = 'block';
-  document.getElementById('resultSection').style.display = 'none';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  clearName('userName');
+  clearBirthdate('birth');
+  resetResultView('formArea','resultSection');
 }
 </script>
 </body>
