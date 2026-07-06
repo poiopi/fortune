@@ -264,6 +264,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
   </div>
 </div>
 
+<?php require __DIR__.'/inc/retry-reset.php'; ?>
 <?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
@@ -566,9 +567,9 @@ function diagnose(){
 }
 
 function resetForm(){
-  document.getElementById('formArea').style.display='block';
-  document.getElementById('result').style.display='none';
-  window.scrollTo({top:0,behavior:'smooth'});
+  clearName('userName');
+  clearBirthdate('birth');
+  resetResultView('formArea','result');
 }
 function toggleSpMenu(){
   const d=document.getElementById('spDropdown');
