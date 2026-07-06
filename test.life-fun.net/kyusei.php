@@ -424,7 +424,6 @@ body{top:0!important}
     $retryLabel  = 'もう一度診断する';
     $retryType   = 'link';
     $retryValue  = '/kyusei.php';
-    require __DIR__.'/inc/form-error-scroll.php';
     require __DIR__.'/inc/result-footer.php';
     ?>
   </div>
@@ -437,6 +436,7 @@ body{top:0!important}
 
 <p style="max-width:900px;margin:0 auto 1.5rem;padding:0 1.2rem;text-align:center;font-size:.72rem;color:var(--muted);line-height:1.8">本サービスはエンターテインメントを目的とした占いコンテンツです。結果は楽しみや気づきの参考としてご活用ください。</p>
 
+<?php require __DIR__.'/inc/form-error-scroll.php'; ?>
 <?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
