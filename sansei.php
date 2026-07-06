@@ -1297,6 +1297,7 @@ footer{
 </div>
 
 </section>
+<?php require __DIR__.'/inc/form-error-scroll.php'; ?>
 <?php require __DIR__.'/inc/footer.php'; ?>
 </div>
 <div id="loading-overlay">
