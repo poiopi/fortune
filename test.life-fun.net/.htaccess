@@ -7,10 +7,10 @@ RewriteEngine On
 RewriteBase /
 
 # .php拡張子を省略したURLへ301リダイレクト（index.phpは除外）
-# GETのみを対象とする。301リダイレクトはPOSTボディを保持しないため、
+# GET/HEADのみを対象とする。301リダイレクトはPOSTボディを保持しないため、
 # POSTフォーム（sansei.php等）を持つページで.php付きURLへ直接POSTされた場合に
 # データが失われる問題があった（2026-07-06 Step5-B調査で発見）。
-RewriteCond %{REQUEST_METHOD} =GET
+RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$
 RewriteCond %{THE_REQUEST} \s/(?!index\.php)([^?\s]+)\.php[?\s] [NC]
 RewriteRule ^ /%1 [R=301,L]
 

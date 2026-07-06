@@ -2,307 +2,17 @@
 declare(strict_types=1);
 
 // ══════════════════════════════════════════════════════════════════
-// 占いロジック
+// 占いロジック（Step3で撤去。sansei.php は占い計算ロジックを持たない。
+// 実装は inc/shichu-engine.php・inc/tarot-engine.php・inc/seiza-engine.php・
+// inc/axis-engine.php の sanseiEngine() へ移行済み。sanseiEngine()を唯一の
+// 情報源とし、旧来の独自簡易ロジックへは戻さない）
 // ══════════════════════════════════════════════════════════════════
 
-function getZodiac(int $month, int $day): array {
-    $signs = [
-        ['name'=>'山羊座','en'=>'Capricorn','symbol'=>'♑','period'=>'12/22〜1/19'],
-        ['name'=>'水瓶座','en'=>'Aquarius', 'symbol'=>'♒','period'=>'1/20〜2/18'],
-        ['name'=>'魚座',  'en'=>'Pisces',   'symbol'=>'♓','period'=>'2/19〜3/20'],
-        ['name'=>'牡羊座','en'=>'Aries',    'symbol'=>'♈','period'=>'3/21〜4/19'],
-        ['name'=>'牡牛座','en'=>'Taurus',   'symbol'=>'♉','period'=>'4/20〜5/20'],
-        ['name'=>'双子座','en'=>'Gemini',   'symbol'=>'♊','period'=>'5/21〜6/21'],
-        ['name'=>'蟹座',  'en'=>'Cancer',   'symbol'=>'♋','period'=>'6/22〜7/22'],
-        ['name'=>'獅子座','en'=>'Leo',      'symbol'=>'♌','period'=>'7/23〜8/22'],
-        ['name'=>'乙女座','en'=>'Virgo',    'symbol'=>'♍','period'=>'8/23〜9/22'],
-        ['name'=>'天秤座','en'=>'Libra',    'symbol'=>'♎','period'=>'9/23〜10/23'],
-        ['name'=>'蠍座',  'en'=>'Scorpio',  'symbol'=>'♏','period'=>'10/24〜11/21'],
-        ['name'=>'射手座','en'=>'Sagittarius','symbol'=>'♐','period'=>'11/22〜12/21'],
-    ];
-    $dates = [19,18,20,19,20,21,22,22,22,23,21,21];
-    $idx = ($day <= $dates[$month-1]) ? ($month - 1) : $month;
-    if ($idx >= 12) $idx = 0;
-    return $signs[$idx];
-}
-
-function getZodiacReading(string $signName): array {
-    $readings = [
-        '山羊座' => [
-            'element' => '土',
-            'planet'  => '土星',
-            'lucky'   => ['色'=>'チャコールグレー','数'=>'8','石'=>'オニキス'],
-            'today'   => ['love'=>4,'work'=>5,'money'=>3,'health'=>4],
-            'message' => '土星の導きにより、今あなたの足元には確かな地盤が築かれています。コツコツと積み上げてきた努力が、静かに、しかし確実に実を結ぼうとしています。焦らず、自分のペースを守ることが吉。恋愛面では、言葉より行動で気持ちを示すことで相手の心が動くでしょう。',
-            'advice'  => '「継続は力なり」があなたの今の合言葉。小さな一歩を丁寧に踏み続けてください。',
-        ],
-        '水瓶座' => [
-            'element' => '風',
-            'planet'  => '天王星',
-            'lucky'   => ['色'=>'エレクトリックブルー','数'=>'11','石'=>'アメジスト'],
-            'today'   => ['love'=>3,'work'=>5,'money'=>4,'health'=>3],
-            'message' => '天王星の革新的なエネルギーがあなたの感性を研ぎ澄ませています。独自のアイデアや直感を大切に。周囲が「無理だ」と言うことでも、あなたの視点からは新しい道が見えているはずです。人間関係では、少し距離を置いた冷静な観察眼が良縁を引き寄せます。',
-            'advice'  => '枠にとらわれない発想こそ、今のあなたの最大の武器です。',
-        ],
-        '魚座' => [
-            'element' => '水',
-            'planet'  => '海王星',
-            'lucky'   => ['色'=>'ラベンダー','数'=>'7','石'=>'アクアマリン'],
-            'today'   => ['love'=>5,'work'=>3,'money'=>3,'health'=>4],
-            'message' => '海王星の夢幻的なエネルギーに包まれ、あなたの感受性は今、最高潮に達しています。直感を信じてください。特に恋愛においては、言葉にならない「感じ」を大切にすることで、魂レベルでのつながりが育まれるでしょう。芸術的な活動も吉です。',
-            'advice'  => '今日は理屈より「感じる心」を優先することで扉が開きます。',
-        ],
-        '牡羊座' => [
-            'element' => '火',
-            'planet'  => '火星',
-            'lucky'   => ['色'=>'スカーレット','数'=>'9','石'=>'ルビー'],
-            'today'   => ['love'=>4,'work'=>5,'money'=>4,'health'=>5],
-            'message' => '火星の力強いエネルギーが全身を駆け巡っています。今こそ、ずっと温めてきた計画を実行に移す絶好の機会です。多少のリスクを恐れず、先頭に立って進む姿勢が周囲の信頼を集めるでしょう。恋愛では積極性が鍵。想いは早めに伝えて。',
-            'advice'  => '迷ったら動く。今のあなたの行動力は、星々が後押ししています。',
-        ],
-        '牡牛座' => [
-            'element' => '土',
-            'planet'  => '金星',
-            'lucky'   => ['色'=>'エメラルドグリーン','数'=>'6','石'=>'エメラルド'],
-            'today'   => ['love'=>5,'work'=>4,'money'=>5,'health'=>3],
-            'message' => '金星の恵みがあなたの周囲に美と豊かさをもたらしています。五感で楽しめることに積極的に触れることで、運気がさらに上昇。特に金運は好調で、長期的な視点での投資や貯蓄の計画を立てるには絶好のタイミング。愛情面でも温かな関係が育まれます。',
-            'advice'  => '自分を大切にすることが、最高の開運行動です。',
-        ],
-        '双子座' => [
-            'element' => '風',
-            'planet'  => '水星',
-            'lucky'   => ['色'=>'イエロー','数'=>'5','石'=>'シトリン'],
-            'today'   => ['love'=>3,'work'=>5,'money'=>3,'health'=>4],
-            'message' => '水星の知的なエネルギーがあなたのコミュニケーション能力を高めています。今日出会う人、交わす言葉、受け取る情報、すべてに大きな意味が宿っています。複数のことを同時進行させる今の状況は、双子座の本領発揮の時。好奇心の赴くままに行動しましょう。',
-            'advice'  => '情報と人脈が、今のあなたの最大の財産です。',
-        ],
-        '蟹座' => [
-            'element' => '水',
-            'planet'  => '月',
-            'lucky'   => ['色'=>'シルバー','数'=>'2','石'=>'ムーンストーン'],
-            'today'   => ['love'=>5,'work'=>3,'money'=>4,'health'=>4],
-            'message' => '月のやさしい光があなたの感情を穏やかに照らしています。家族や大切な人との時間を大切にすることで、心の深いところから活力が湧いてくるでしょう。直感が鋭くなっている今、第一印象を信じることが大切です。居心地の良い環境づくりが全運を底上げします。',
-            'advice'  => '「ホーム」を整えることが、すべての運気の土台になります。',
-        ],
-        '獅子座' => [
-            'element' => '火',
-            'planet'  => '太陽',
-            'lucky'   => ['色'=>'ゴールド','数'=>'1','石'=>'タイガーアイ'],
-            'today'   => ['love'=>4,'work'=>5,'money'=>4,'health'=>5],
-            'message' => '太陽の輝かしいエネルギーがあなたをスポットライトの中心へと導いています。自信を持って自分を表現することで、自然と人が集まり、チャンスが広がります。今のあなたのカリスマ性は最高潮。舞台の上に立つことを恐れないでください。',
-            'advice'  => '堂々と輝くこと。それが今のあなたへの星からのメッセージです。',
-        ],
-        '乙女座' => [
-            'element' => '土',
-            'planet'  => '水星',
-            'lucky'   => ['色'=>'ネイビー','数'=>'3','石'=>'サファイア'],
-            'today'   => ['love'=>3,'work'=>5,'money'=>4,'health'=>5],
-            'message' => '水星の分析的なエネルギーと地の安定性が融合し、今のあなたの判断力は非常に冴えています。細部に宿る重要なサインを見逃さないでください。仕事面では、丁寧で几帳面なあなたの仕事ぶりが高く評価される時期。健康管理を意識することでさらに運気が安定します。',
-            'advice'  => '「完璧を目指す心」が今のあなたを正しい方向へ導きます。',
-        ],
-        '天秤座' => [
-            'element' => '風',
-            'planet'  => '金星',
-            'lucky'   => ['色'=>'ローズピンク','数'=>'6','石'=>'ローズクォーツ'],
-            'today'   => ['love'=>5,'work'=>4,'money'=>3,'health'=>4],
-            'message' => '金星の調和のエネルギーが、あなたの周囲に美しいバランスをもたらしています。人間関係において公平で優雅な立ち振る舞いができる今、新たな縁が結ばれやすくなっています。決断を迫られる場面では、「美しい選択」を基準にすることで迷いが消えるでしょう。',
-            'advice'  => 'バランスと美を大切にすることが、今のあなたの開運の鍵です。',
-        ],
-        '蠍座' => [
-            'element' => '水',
-            'planet'  => '冥王星',
-            'lucky'   => ['色'=>'ディープレッド','数'=>'0','石'=>'オブシディアン'],
-            'today'   => ['love'=>4,'work'=>4,'money'=>5,'money'=>5,'health'=>3],
-            'message' => '冥王星の深淵なるエネルギーが、あなたの内なる変容を促しています。表面に見えるものだけでなく、その奥に潜む本質を見抜く力が今のあなたには備わっています。金運の上昇が見込まれる今、大切なのは「手放すこと」で新たな豊かさへの道が開かれます。',
-            'advice'  => '変化を恐れず、深く潜ることで真の宝が見つかります。',
-        ],
-        '射手座' => [
-            'element' => '火',
-            'planet'  => '木星',
-            'lucky'   => ['色'=>'パープル','数'=>'9','石'=>'ターコイズ'],
-            'today'   => ['love'=>4,'work'=>4,'money'=>5,'health'=>4],
-            'message' => '木星の拡大のエネルギーがあなたの視野をどこまでも広げています。今の「遠くへ行きたい」「もっと知りたい」という衝動は、宇宙からの正しいサインです。新しい学びや旅、異文化との出会いが大きな幸運の扉を開きます。楽観的な姿勢が最高の引き寄せになります。',
-            'advice'  => '矢は放たなければ的に当たりません。今こそ大きく狙って。',
-        ],
-    ];
-    return $readings[$signName] ?? $readings['山羊座'];
-}
-
-function getTarotReading(string $name, string $birthdate): array {
-    $seed = crc32($name . $birthdate . date('Ymd'));
-
-    $cards = [
-        ['name'=>'愚者',       'num'=>'0',    'symbol'=>'🌟',
-         'upright_msg'=>'新しい旅の始まりを告げる「愚者」が現れました。計算より直感、準備より行動。純粋な心で一歩を踏み出した先に、想像を超えた景色が広がっています。恐れを手放し、今すぐ動いてください。',
-         'reversed_msg'=>'焦りや無謀さが足元を危うくしているかもしれません。飛び込む前に少しだけ立ち止まり、地に足をついた判断を取り戻しましょう。準備が整えば、道は必ず開けます。'],
-        ['name'=>'魔術師',     'num'=>'I',    'symbol'=>'🔮',
-         'upright_msg'=>'あなたが必要な力はすでに揃っています。才能・知識・情熱——あとは強い意志で一点に集中するだけ。今の目標に向けてエネルギーを集めることで、現実が大きく動き始めます。',
-         'reversed_msg'=>'持っている才能を活かしきれていない状況です。エネルギーが分散していませんか？まず一つに絞り、そこに全力を注ぐことで、状況が好転します。'],
-        ['name'=>'女教皇',     'num'=>'II',   'symbol'=>'🌙',
-         'upright_msg'=>'答えはすでにあなたの内側にあります。外の世界より内なる声に耳を澄ませてください。夢や直感、ふとした閃き——すべてが宇宙からのメッセージです。今は行動より「感じること」を優先する時期です。',
-         'reversed_msg'=>'自分の直感を信じることをためらっていませんか？心の奥から聞こえる声を無視せず、正直に向き合ってみてください。答えはとうに出ています。'],
-        ['name'=>'女帝',       'num'=>'III',  'symbol'=>'🌺',
-         'upright_msg'=>'豊穣と愛情のエネルギーに満ちています。与えること、育てること、楽しむこと——この三つを大切にすることで、あなたの人生はさらに花開きます。創造的な活動や自然との触れ合いが今の運気を高めます。',
-         'reversed_msg'=>'誰かへの依存や、自分を後回しにしすぎている状況が見受けられます。まず自分自身を大切にすることから始めてください。豊かさはそこから育まれます。'],
-        ['name'=>'皇帝',       'num'=>'IV',   'symbol'=>'⚡',
-         'upright_msg'=>'今こそ、自分の人生における主役として堂々と立つべき時です。ルールを設け、秩序をもたらすことで周囲からの信頼が集まります。感情より論理、直感より計画。しっかりとした基盤を築くことが吉。',
-         'reversed_msg'=>'コントロールへの執着が、柔軟性を奪っているかもしれません。時には流れに身を委ねることも、大切なリーダーシップです。'],
-        ['name'=>'法王',       'num'=>'V',    'symbol'=>'✨',
-         'upright_msg'=>'信頼できる師や先輩との縁が深まる時期です。伝統や慣習の中に、あなたへの重要なヒントが隠れています。学ぶ姿勢を持ち続けることで、精神的な成長が物質的な豊かさをも呼び込みます。',
-         'reversed_msg'=>'古いルールや既成概念があなたを縛っているかもしれません。本当に自分が信じることは何か、改めて問い直してみましょう。'],
-        ['name'=>'恋人',       'num'=>'VI',   'symbol'=>'💖',
-         'upright_msg'=>'心から「Yes」と言える選択が、今のあなたに問われています。恋愛だけでなく、仕事や生き方においても「本当に好きなもの」を選ぶ勇気が開運の鍵。魂レベルで「これだ」と感じる方向へ進んでください。',
-         'reversed_msg'=>'価値観のズレや、選択への迷いを感じているかもしれません。誰かに合わせすぎず、自分の心が本当に求めるものに正直になってみてください。'],
-        ['name'=>'戦車',       'num'=>'VII',  'symbol'=>'🏆',
-         'upright_msg'=>'強い意志と集中力で、目標へと突き進む時です。相反する力をコントロールし、一つの方向へエネルギーを集めてください。障害はあなたを試すためにあります。前進あるのみ。',
-         'reversed_msg'=>'方向性が定まらず、エネルギーが分散しているかもしれません。まず「どこへ向かいたいか」を明確にすることが先決です。'],
-        ['name'=>'力',         'num'=>'VIII', 'symbol'=>'🦁',
-         'upright_msg'=>'真の力は、激しさではなく優しさから生まれます。感情を力で押さえ込むのではなく、愛情を持って向き合うことで、どんな困難も乗り越えられます。あなたの内側には、獅子をも従わせる穏やかな強さが宿っています。',
-         'reversed_msg'=>'自信を失いかけているかもしれませんが、それは一時的なものです。弱さを認める勇気こそが、本当の強さへの第一歩です。'],
-        ['name'=>'隠者',       'num'=>'IX',   'symbol'=>'🕯️',
-         'upright_msg'=>'今は立ち止まり、自分の内側を静かに照らすべき時です。孤独を恐れず、一人の時間を大切にすることで、次のステージへ向けた深い洞察が得られます。答えはすでにあなたの中にあります。',
-         'reversed_msg'=>'孤立が長すぎると、視野が狭まることがあります。信頼できる人に心を開くことで、新しい光が見えてくるでしょう。'],
-        ['name'=>'運命の輪',   'num'=>'X',    'symbol'=>'⚙️',
-         'upright_msg'=>'運命の輪が回り、新たなサイクルの始まりを告げています。変化を恐れず乗りこなすことで、幸運の波があなたを高みへと運びます。今起きていることには必ず意味があります。流れを信頼してください。',
-         'reversed_msg'=>'変化への抵抗が、停滞を生んでいるかもしれません。輪は必ず回ります。今の状況は永遠ではありません。流れに乗る準備を整えましょう。'],
-        ['name'=>'正義',       'num'=>'XI',   'symbol'=>'⚖️',
-         'upright_msg'=>'因果の法則が働いています。正直で公正な行動が、今のあなたに最大の幸運をもたらします。過去の誠実な努力が正当に評価される時期でもあります。迷ったときは「正しいこと」を選ぶ。それだけで道は開けます。',
-         'reversed_msg'=>'誰かに対して、あるいは自分自身に対して、不誠実になっていませんか？真実に向き合うことで、停滞が動き始めます。'],
-        ['name'=>'吊られた男', 'num'=>'XII',  'symbol'=>'🌊',
-         'upright_msg'=>'今は行動よりも待機の時。逆さまになることで、まったく新しい視点が得られます。手放すことを恐れないでください。執着を離れた先に、真の豊かさと深い気づきが待っています。',
-         'reversed_msg'=>'無駄な我慢や、変化への頑固な抵抗が状況を複雑にしているかもしれません。手放すべきものを手放すことで、流れが変わります。'],
-        ['name'=>'死神',       'num'=>'XIII', 'symbol'=>'🔄',
-         'upright_msg'=>'「死神」は終わりではなく、変容と再生の象徴です。古いものが終わりを告げ、新しいものが生まれようとしています。今感じる「終わり」は次の始まりへの扉。手放す勇気が、あなたの人生に新鮮な息吹をもたらします。',
-         'reversed_msg'=>'変化を恐れて、終わるべきものにしがみついていませんか？手放すことへの恐れが、新しい出発を遅らせています。'],
-        ['name'=>'節制',       'num'=>'XIV',  'symbol'=>'🌈',
-         'upright_msg'=>'異なるものをうまく組み合わせることで、奇跡が生まれます。焦らず、じっくりと。時間をかけて物事を育てることで、やがて黄金が生まれます。今のあなたに必要なのは、バランスと忍耐、そして癒しの時間です。',
-         'reversed_msg'=>'何かが行き過ぎていませんか？仕事・感情・生活習慣のどこかでバランスが崩れているかもしれません。中庸を取り戻すことが今の課題です。'],
-        ['name'=>'悪魔',       'num'=>'XV',   'symbol'=>'🗝️',
-         'upright_msg'=>'何かがあなたを縛っているように感じていませんか？しかしその鎖は、実は自分でいつでも外せるものです。恐れや欲望、習慣——何があなたを縛っているのかを正直に見つめることが、解放への第一歩です。',
-         'reversed_msg'=>'執着や恐れからの解放が近づいています。長い間あなたを縛っていたものから、ようやく自由になれるタイミングです。'],
-        ['name'=>'塔',         'num'=>'XVI',  'symbol'=>'🌩️',
-         'upright_msg'=>'崩れるべきものが崩れ、本質だけが残ります。一見破壊的に見えるこの変化の中に、長い間必要だった「解放」が隠れています。嵐が過ぎた後の空は、必ず澄み渡っています。変化を受け入れてください。',
-         'reversed_msg'=>'内側では大きな変化が起きているのに、表面では現状維持しようとしているかもしれません。迫りくる変化に正直に向き合う時です。'],
-        ['name'=>'星',         'num'=>'XVII', 'symbol'=>'⭐',
-         'upright_msg'=>'あなたの前には、確かな可能性の光が灯っています。傷ついた心が癒され、夢を信じる力が戻ってきます。今のあなたの願いは、星の力を借りて現実へと近づいています。希望を手放さないでください。宇宙はあなたの味方です。',
-         'reversed_msg'=>'希望を見失いかけているかもしれませんが、星はまだそこにあります。曇り空の向こうにも、光は消えていません。小さな一歩から再び始めましょう。'],
-        ['name'=>'月',         'num'=>'XVIII','symbol'=>'🌙',
-         'upright_msg'=>'今は物事がはっきり見えにくい時期かもしれませんが、それはあなたの感性が研ぎ澄まされているサインでもあります。夢や直感を大切にしてください。見えない世界からのメッセージに耳を傾けることで、真実が浮かび上がります。',
-         'reversed_msg'=>'霧が晴れ始め、混乱していた状況が明確になってきます。恐れていたことが実は大したことではなかったと気づく時期です。'],
-        ['name'=>'太陽',       'num'=>'XIX',  'symbol'=>'☀️',
-         'upright_msg'=>'大アルカナ最高の幸運カード「太陽」があなたのもとへ！喜びと成功、子供のような純粋さで世界と向き合うことで、あらゆる願いが光の速さで実現に向かいます。今のあなたには、輝きを受け取る準備ができています。',
-         'reversed_msg'=>'喜びや自信が内側に隠れてしまっているかもしれません。完璧でなくていい。今のあなたのままで、十分に輝く力があります。'],
-        ['name'=>'審判',       'num'=>'XX',   'symbol'=>'🎺',
-         'upright_msg'=>'覚醒と再生の呼び声が聞こえています。過去を清算し、真の使命に気づくタイミング。大きな転換点に立つあなたへの星からのメッセージは「今こそ本当の自分として生きよ」です。',
-         'reversed_msg'=>'自己批判や後悔が前進を妨げているかもしれません。過去は変えられませんが、今この瞬間の選択は変えられます。自分を許すことから始めましょう。'],
-        ['name'=>'世界',       'num'=>'XXI',  'symbol'=>'🌍',
-         'upright_msg'=>'大アルカナの完成形「世界」があなたを祝福しています！一つのサイクルの完全なる達成と成就。今のあなたには、物事を完成に導く力が宿っています。喜んで受け取り、次の大きな旅への準備をしてください。',
-         'reversed_msg'=>'あと一歩のところで完成を先延ばしにしていませんか？完璧を求めすぎず、「今のベスト」でゴールテープを切る勇気が必要です。'],
-    ];
-
-    $idx     = abs($seed) % count($cards);
-    $upright = (intdiv(abs($seed), count($cards)) % 2) === 0;
-    $card    = $cards[$idx];
-    $card['upright'] = $upright;
-    $card['message'] = $upright ? $card['upright_msg'] : $card['reversed_msg'];
-    return $card;
-}
-
-function getSichu(string $birthdate): array {
-    $date  = new DateTimeImmutable($birthdate);
-    $year  = (int)$date->format('Y');
-    $month = (int)$date->format('n');
-    $day   = (int)$date->format('j');
-
-    $stems  = ['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'];
-    $branches = ['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
-    $elements = ['木','木','火','火','土','土','金','金','水','水'];
-    $stemElem = ['甲'=>'木','乙'=>'木','丙'=>'火','丁'=>'火','戊'=>'土','己'=>'土','庚'=>'金','辛'=>'金','壬'=>'水','癸'=>'水'];
-
-    $yearStemIdx   = ($year - 4)  % 10; if($yearStemIdx < 0) $yearStemIdx += 10;
-    $yearBranchIdx = ($year - 4)  % 12; if($yearBranchIdx < 0) $yearBranchIdx += 12;
-    $dayStemIdx    = (intval(($year*365.25 + $month*30.4 + $day + 10)) % 10);
-    $dayBranchIdx  = (intval(($year*365.25 + $month*30.4 + $day + 10)) % 12);
-
-    $yearStem   = $stems[$yearStemIdx];
-    $yearBranch = $branches[$yearBranchIdx];
-    $dayStem    = $stems[$dayStemIdx];
-    $dayBranch  = $branches[$dayBranchIdx];
-    $element    = $stemElem[$dayStem];
-
-    $readings = [
-        '木' => [
-            'keyword' => '成長・発展・柔軟',
-            'nature'  => '春の木のような生命力を持つあなた。根を張りながらも天へと伸びる柔軟さと粘り強さが特徴です。',
-            'message' => '日干「'.$dayStem.'」を持つあなたは、木の気の持ち主。新しいことを始める才能と、人を育てる優しさが備わっています。今の時期は、種を丁寧に蒔くことが重要です。焦らず、じっくりと根を張ることで、やがて大きな実りが得られます。人間関係では、自然体でいることが最大の魅力を引き出します。',
-            'lucky'   => ['方位'=>'東','色'=>'グリーン','季節'=>'春'],
-        ],
-        '火' => [
-            'keyword' => '情熱・輝き・変容',
-            'nature'  => '燃える炎のような情熱と輝きを持つあなた。周囲を温め、照らす存在です。',
-            'message' => '日干「'.$dayStem.'」を持つあなたは、火の気の持ち主。行動力と情熱、そして人を惹きつけるカリスマ性が特徴です。今の時期は、あなたの情熱を具体的な形にするチャンス。ただし、燃えすぎないよう、時には休息を取ることも重要です。感情豊かなあなたの表現力は、今最大の武器となります。',
-            'lucky'   => ['方位'=>'南','色'=>'レッド','季節'=>'夏'],
-        ],
-        '土' => [
-            'keyword' => '安定・信頼・包容',
-            'nature'  => '大地のような包容力と安定感を持つあなた。すべてを受け入れ、育む力があります。',
-            'message' => '日干「'.$dayStem.'」を持つあなたは、土の気の持ち主。信頼感と誠実さ、そして人を包み込む温かさが最大の魅力です。今の時期は、足元をしっかり固めることが運気向上の鍵。中心にドンと構えることで、周囲が自然と集まってきます。長期的な視点を持つことで、大きな成果が得られます。',
-            'lucky'   => ['方位'=>'中央','色'=>'イエロー','季節'=>'土用'],
-        ],
-        '金' => [
-            'keyword' => '鋭敏・義理・変革',
-            'nature'  => '磨かれた金属のように、鋭い感性と強い意志を持つあなた。義理と筋を重んじます。',
-            'message' => '日干「'.$dayStem.'」を持つあなたは、金の気の持ち主。鋭い判断力と揺るぎない意志、そして美的センスが特徴です。今の時期は、不要なものを思い切って整理することで、新たな価値が生まれます。完璧主義な面が才能を磨きますが、時には「十分」と言える柔軟さも大切です。',
-            'lucky'   => ['方位'=>'西','色'=>'ホワイト','季節'=>'秋'],
-        ],
-        '水' => [
-            'keyword' => '知恵・流動・深み',
-            'nature'  => '深い海のような知恵と、川のような流動性を持つあなた。本質を見抜く力があります。',
-            'message' => '日干「'.$dayStem.'」を持つあなたは、水の気の持ち主。深い洞察力と柔軟な適応力、そして知的好奇心の旺盛さが特徴です。今の時期は、情報収集と深い思索があなたの道を切り開きます。流れに逆らわず、自然な形で物事を進めることで、スムーズに目標へとたどり着けます。',
-            'lucky'   => ['方位'=>'北','色'=>'ブラック','季節'=>'冬'],
-        ],
-    ];
-
-    $reading = $readings[$element];
-
-    return [
-        'yearPillar'  => $yearStem . $yearBranch,
-        'dayPillar'   => $dayStem  . $dayBranch,
-        'dayStem'     => $dayStem,
-        'element'     => $element,
-        'keyword'     => $reading['keyword'],
-        'nature'      => $reading['nature'],
-        'message'     => $reading['message'],
-        'lucky'       => $reading['lucky'],
-    ];
-}
-
-function buildIntegratedReading(string $name, array $zodiac, array $zodiacReading, array $tarot, array $sichu): string {
-    $direction = $tarot['upright'] ? '正位置' : '逆位置';
-    $templates = [
-        "{name}さん、三つの叡智があなたへのメッセージを届けています。\n\n{zodiac_symbol}【星の導き】{zodiac_symbol}\n{zodiac_name}を宿すあなたは、{planet}の加護のもと、{zodiac_advice}\n\n{tarot_symbol}【カードの啓示】{tarot_symbol}\n「{tarot_name}（{direction}）」が示す通り、今のあなたには{tarot_keyword}の力が宿っています。\n\n☯【命式が示す本質】☯\n{sichu_element}の気を持つあなたの本質は「{sichu_keyword}」。{sichu_nature}\n\n✨【統合された鑑定より】✨\n宇宙の三つの言語、西洋占星術・タロット・四柱推命が、今この瞬間に同じ方向を指しています。それは「{integrated_theme}」というメッセージです。\n\n今のあなたにとって最も大切なことは、自分の内なる声を信頼すること。星があなたを見守り、カードがあなたの力を証明し、命式があなたの本質を示しています。すべての鑑定が伝えるのは、あなたにはその道を歩む力が十分に備わっているということです。",
-    ];
-
-    $themes = [
-        '自分自身の力を信じ、新たな一歩を踏み出す時が来ている',
-        '内なる知恵と宇宙の流れが、あなたを正しい方向へ導いている',
-        '変化を恐れず受け入れることで、大きな恵みが訪れる',
-        '今の努力は必ず実を結ぶ。焦らず、信じて進め',
-        'あなたの持つ本来の輝きを、今こそ世界に解き放つとき',
-    ];
-
-    $themeIdx = crc32($name . date('Ymd')) % count($themes);
-
-    return str_replace(
-        ['{name}','{zodiac_symbol}','{zodiac_name}','{planet}','{zodiac_advice}',
-         '{tarot_symbol}','{tarot_name}','{direction}','{tarot_keyword}',
-         '{sichu_element}','{sichu_keyword}','{sichu_nature}','{integrated_theme}'],
-        [$name, $zodiac['symbol'], $zodiac['name'], $zodiacReading['planet'], $zodiacReading['advice'],
-         $tarot['symbol'], $tarot['name'], $direction, mb_substr($tarot['message'], 0, 30),
-         $sichu['element'], $sichu['keyword'], $sichu['nature'], $themes[abs($themeIdx)]],
-        $templates[0]
-    );
-}
+require_once __DIR__ . '/inc/shichu-engine.php';
+require_once __DIR__ . '/inc/tarot-engine.php';
+require_once __DIR__ . '/inc/seiza-engine.php';
+require_once __DIR__ . '/inc/axis-engine.php';
+require_once __DIR__ . '/inc/resultdata-validator.php';
 
 // ══════════════════════════════════════════════════════════════════
 // リクエスト処理
@@ -323,16 +33,95 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = '生年月日の形式が正しくありません。';
 
     if (empty($errors)) {
-        $bDate        = new DateTimeImmutable($birthday);
-        $month        = (int)$bDate->format('n');
-        $day          = (int)$bDate->format('j');
-        $zodiac       = getZodiac($month, $day);
-        $zodiacReading= getZodiacReading($zodiac['name']);
-        $tarot        = getTarotReading($name, $birthday);
-        $sichu        = getSichu($birthday);
-        $integrated   = buildIntegratedReading($name, $zodiac, $zodiacReading, $tarot, $sichu);
+        $bDate = new DateTimeImmutable($birthday);
 
-        $result = compact('zodiac','zodiacReading','tarot','sichu','integrated');
+        // Step3 Phase1: エンジンへ渡す入力値をここに集約する。
+        // フォームは性別・出生時刻・時間帯を収集していないため、暫定値を使う。
+        // Phase2でフォームに項目を追加する際は、ここだけを差し替えればよい。
+        $engineInput = [
+            'year'      => (int)$bDate->format('Y'),
+            'month'     => (int)$bDate->format('n'),
+            'day'       => (int)$bDate->format('j'),
+            // 現在のSanseiResultはdaiyun（性別で順行/逆行が変わる）をtraits・meta・
+            // highlights・extrasのいずれにも使用していないため、性別が仮値でも
+            // 出力に影響しない（2026-07-05確認済み）。将来daiyunをUI表示または
+            // traitへ反映する場合は、フォーム入力へ変更すること。
+            'gender'    => 'male',
+            'birthTime' => null,
+            'timeBand'  => 'U', // 'わからない'。seiza.php本体にも存在する正式な選択肢
+        ];
+
+        $shichuResult = shichuEngine([
+            'year'   => $engineInput['year'],
+            'month'  => $engineInput['month'],
+            'day'    => $engineInput['day'],
+            'hour'   => $engineInput['birthTime'],
+            'gender' => $engineInput['gender'],
+        ]);
+
+        $draw = tarot_drawRandomCard();
+        $tarotResult = tarotEngine($draw['cardOrder'], $draw['isUpright']);
+
+        $seizaResult = seizaEngine($engineInput['month'], $engineInput['day'], $engineInput['timeBand']);
+
+        validateResultData($shichuResult);
+        validateResultData($tarotResult);
+        validateResultData($seizaResult);
+
+        $sanseiResult = sanseiEngine([
+            'shichu' => $shichuResult,
+            'tarot'  => $tarotResult,
+            'seiza'  => $seizaResult,
+        ]);
+
+        // ── 表示用アダプター ──
+        // レイアウト構造（3占術ブロック＋統合鑑定ブロック）はStep3時点では変更しない。
+        // 各フィールドは実エンジンの出力から組み立てる。対応するデータがない項目
+        // （惑星・星座側のラッキー情報等）は復元せず削除する（理由は各所のコメント参照）。
+
+        $seizaSign = SEIZA_SIGNS[$seizaResult['raw']['signIndex']];
+        $zodiac = [
+            'symbol' => $seizaSign['symbol'],
+            'name'   => $seizaSign['name'],
+        ];
+        $zodiacReading = [
+            // Removed in Step3: 「惑星」はseizaEngineのデータモデルに存在しない概念のため、
+            // 旧sansei.php独自データを復元しない。
+            // Removed in Step3: 星座側の「ラッキー○○」もseizaEngineに概念が存在しないため削除。
+            'message' => $seizaResult['highlights'][0],
+        ];
+
+        $tarotCard = TAROT_DATA[$tarotResult['raw']['cardOrder']];
+        $tarot = [
+            'symbol'  => '🃏', // カードごとの絵文字は旧sansei.php独自データのため復元しない（固定の装飾アイコン）
+            'num'     => $tarotCard['num'],
+            'name'    => $tarotCard['name'],
+            'upright' => $tarotResult['raw']['isUpright'],
+            'message' => $tarotResult['highlights'][0],
+        ];
+
+        $dayStemIdx    = $shichuResult['raw']['dayPillar']['stem'];
+        $dayBranchIdx  = $shichuResult['raw']['dayPillar']['branch'];
+        $yearStemIdx   = $shichuResult['raw']['yearPillar']['stem'];
+        $yearBranchIdx = $shichuResult['raw']['yearPillar']['branch'];
+        $sichu = [
+            'dayStem'    => SHICHU_STEMS[$dayStemIdx],
+            'element'    => SHICHU_ELEMENTS[SHICHU_STEM_ELEM[$dayStemIdx]],
+            'yearPillar' => SHICHU_STEMS[$yearStemIdx] . SHICHU_BRANCHES[$yearBranchIdx],
+            'dayPillar'  => SHICHU_STEMS[$dayStemIdx] . SHICHU_BRANCHES[$dayBranchIdx],
+            // Removed in Step3: 「キーワード」（成長・発展・柔軟 等）は旧sansei.php独自データの
+            // ため復元しない。日主の解説文（message）が実質的な代替になる。
+            'extras'     => $shichuResult['extras'], // {type,label,value}形式。旧「lucky」を置換
+            'message'    => $shichuResult['highlights'][0],
+        ];
+
+        $result = [
+            'zodiac'        => $zodiac,
+            'zodiacReading' => $zodiacReading,
+            'tarot'         => $tarot,
+            'sichu'         => $sichu,
+            'sansei'        => $sanseiResult,
+        ];
     }
 }
 
@@ -343,18 +132,42 @@ function stars(int $n, int $max = 5): string {
     return $out;
 }
 
+/**
+ * extras（{type,label,value}形式）のvalueを表示用文字列に整形する。
+ * valueはスカラー（数値・文字列）、連想配列（例:lucky_colorの{name,meaning}）、
+ * リスト配列（例:lucky_itemsの[{cat,item},...]）のいずれかを取り得る。
+ */
+function sansei_formatExtraValue($value): string {
+    if (!is_array($value)) return (string)$value;
+    if (isset($value['name'])) return (string)$value['name'];
+    $items = [];
+    foreach ($value as $entry) {
+        if (is_array($entry) && isset($entry['item'])) $items[] = $entry['item'];
+        elseif (is_scalar($entry)) $items[] = (string)$entry;
+    }
+    return implode('、', $items);
+}
+
 // ══════════════════════════════════════════════════════════════════
-// 開運カレンダー用ロジック
+// 開運カレンダー用ロジック（三星統合鑑定とは無関係な別機能。Step3のスコープ外）
+//
+// 関数名にsansei_cal接頭辞を付けている理由：Step3でinc/shichu-engine.php経由
+// inc/oracle.phpをrequireするようになり、oracle.php側にも同名の
+// myGregorianToJD()/jdToLunar()/getRokuyo()が存在するため（Step1-0で確認済みの
+// 重複実装）、関数名の衝突（Fatal error: Cannot redeclare）を避ける必要がある。
+// oracle.php側のgetRokuyo()はclass値の形式が異なる（'taian' vs 'cal-taian'）ため、
+// 単純な差し替えはCSSとの対応が崩れる。この開運カレンダー機能自体の重複解消は
+// 別タスクとして扱い、ここでは名前衝突の回避のみ行う。
 // ══════════════════════════════════════════════════════════════════
 
-function myGregorianToJD(int $y, int $m, int $d): int {
+function sansei_calGregorianToJD(int $y, int $m, int $d): int {
     if ($m <= 2) { $y--; $m += 12; }
     $a = (int)($y / 100);
     $b = 2 - $a + (int)($a / 4);
     return (int)(365.25 * ($y + 4716)) + (int)(30.6001 * ($m + 1)) + $d + $b - 1524;
 }
 
-function jdToLunar(int $jd): array {
+function sansei_calJdToLunar(int $jd): array {
     $cycle = $jd - 2451550;
     $monthNum = (int)($cycle / 29.53059);
     $monthStart = (int)(2451550 + $monthNum * 29.53059);
@@ -363,7 +176,7 @@ function jdToLunar(int $jd): array {
     return ['month' => $month, 'day' => $day];
 }
 
-function getRokuyo(int $year, int $month, int $day): array {
+function sansei_getRokuyo(int $year, int $month, int $day): array {
     $rokuyoList = [
         ['name'=>'大安', 'class'=>'cal-taian',  'color'=>'#c9a84c', 'desc'=>'万事に大吉。何を始めるにも最良の日。'],
         ['name'=>'赤口', 'class'=>'cal-shakku', 'color'=>'#e8719a', 'desc'=>'午の刻のみ吉。火や血に注意の日。'],
@@ -372,8 +185,8 @@ function getRokuyo(int $year, int $month, int $day): array {
         ['name'=>'先負', 'class'=>'cal-senbu',  'color'=>'#8a7db5', 'desc'=>'午後が吉。静かに過ごすのが良い日。'],
         ['name'=>'仏滅', 'class'=>'cal-butsu',  'color'=>'#6b6456', 'desc'=>'控えめに過ごすのが吉とされる日。'],
     ];
-    $jd = myGregorianToJD($year, $month, $day);
-    $lunar = jdToLunar($jd);
+    $jd = sansei_calGregorianToJD($year, $month, $day);
+    $lunar = sansei_calJdToLunar($jd);
     $idx = ($lunar['month'] + $lunar['day']) % 6;
     return $rokuyoList[$idx];
 }
@@ -412,7 +225,7 @@ function getLuckyToday(): array {
 }
 
 $todayObj    = new DateTimeImmutable();
-$calRokuyo   = getRokuyo((int)$todayObj->format('Y'), (int)$todayObj->format('n'), (int)$todayObj->format('j'));
+$calRokuyo   = sansei_getRokuyo((int)$todayObj->format('Y'), (int)$todayObj->format('n'), (int)$todayObj->format('j'));
 $luckyToday  = getLuckyToday();
 $weekdayJa   = ['日','月','火','水','木','金','土'][(int)$todayObj->format('w')];
 ?>
@@ -657,6 +470,54 @@ select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:no
   margin-top:.4rem;
 }
 
+/* ── Result Hero（Step4-1）：archetype/summaryを結論ファーストで表示 ──
+   ページ冒頭の .hero（無料占いポータルの静的タイトル）とは別要素・別クラス。
+   視覚言語（グラデーション見出し）は既存の.hero h1と統一する（DESIGN.md準拠） */
+.result-hero{
+  text-align:center;
+  padding:1rem 0 2rem;
+}
+.result-hero-eyebrow{
+  font-family:var(--ff-mono);
+  font-size:.68rem;
+  letter-spacing:.25em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:1rem;
+  display:block;
+}
+.result-hero h2{
+  font-family:var(--ff-serif);
+  font-size:clamp(1.6rem,5vw,2.6rem);
+  font-weight:700;
+  line-height:1.3;
+  letter-spacing:.06em;
+  background:linear-gradient(135deg,var(--gold-lt) 0%,var(--violet-lt) 50%,var(--rose) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  margin-bottom:1rem;
+}
+.result-hero-sub{
+  font-family:var(--ff-serif);
+  font-size:.95rem;
+  line-height:2;
+  color:var(--text);
+  max-width:640px;
+  margin:0 auto;
+}
+
+/* ── 影響度バッジ（各占術カード内、Step4-1） ── */
+.influence-row{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  margin-bottom:1rem;
+  font-size:.72rem;
+  font-family:var(--ff-mono);
+  color:var(--muted);
+}
+
 .block{
   background:var(--card);
   border:1px solid var(--border);
@@ -673,7 +534,8 @@ select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:no
 .block-astro::before{background:linear-gradient(90deg,var(--gold),var(--violet))}
 .block-tarot::before{background:linear-gradient(90deg,var(--violet),var(--rose))}
 .block-sichu::before{background:linear-gradient(90deg,var(--teal),var(--violet))}
-.block-integrated::before{background:linear-gradient(90deg,var(--gold),var(--rose),var(--violet))}
+.block-scores::before{background:linear-gradient(90deg,var(--gold),var(--violet),var(--rose))}
+.block-advice::before{background:linear-gradient(90deg,var(--rose),var(--gold))}
 
 .block-label{
   font-family:var(--ff-mono);
@@ -749,14 +611,6 @@ select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:no
 }
 .upright{background:rgba(78,205,196,.15);color:var(--teal);border:1px solid rgba(78,205,196,.3)}
 .reversed{background:rgba(232,113,154,.15);color:var(--rose);border:1px solid rgba(232,113,154,.3)}
-
-.integrated-text{
-  font-family:var(--ff-serif);
-  font-size:.95rem;
-  line-height:2.1;
-  white-space:pre-line;
-  color:var(--text);
-}
 
 .pillar-badges{
   display:flex;gap:.6rem;flex-wrap:wrap;margin:.8rem 0 1rem;
@@ -1257,27 +1111,25 @@ footer{
       <div class="result-date"><?= (new DateTimeImmutable($birthday))->format('Y年n月j日生まれ') ?></div>
     </div>
 
-    <!-- 西洋占星術 -->
-    <div class="block block-astro">
-      <div class="block-label">Western Astrology</div>
-      <div class="block-title">
-        <span class="block-symbol"><?= $result['zodiac']['symbol'] ?></span>
-        <?= $result['zodiac']['name'] ?> ── <?= $result['zodiacReading']['planet'] ?>
-      </div>
+    <!-- Step4-1: 結論ファースト（archetype → summary → scores → advice → 各占術の根拠） -->
 
+    <!-- Result Hero：archetype（本質・不変） + summary（本質＋今日の流れ） -->
+    <div class="result-hero">
+      <span class="result-hero-eyebrow">✨ Integrated Reading · 三星統合鑑定</span>
+      <h2><?= htmlspecialchars($result['sansei']['archetype']) ?></h2>
+      <p class="result-hero-sub"><?= nl2br(htmlspecialchars($result['sansei']['summary'])) ?></p>
+    </div>
+
+    <!-- 4カテゴリスコア：SanseiResult.scores（3占術統合値） -->
+    <div class="block block-scores">
+      <div class="block-label">Today's Fortune</div>
+      <div class="block-title"><span class="block-symbol">⭐</span>総合運スコア</div>
       <div class="scores">
-        <div class="score-row"><span class="score-label">恋愛運</span><div class="stars"><?= stars($result['zodiacReading']['today']['love']) ?></div></div>
-        <div class="score-row"><span class="score-label">仕事運</span><div class="stars"><?= stars($result['zodiacReading']['today']['work']) ?></div></div>
-        <div class="score-row"><span class="score-label">金　運</span><div class="stars"><?= stars($result['zodiacReading']['today']['money']) ?></div></div>
-        <div class="score-row"><span class="score-label">健康運</span><div class="stars"><?= stars($result['zodiacReading']['today']['health']) ?></div></div>
+        <div class="score-row"><span class="score-label">恋愛運</span><div class="stars"><?= stars($result['sansei']['scores']['love']) ?></div></div>
+        <div class="score-row"><span class="score-label">仕事運</span><div class="stars"><?= stars($result['sansei']['scores']['work']) ?></div></div>
+        <div class="score-row"><span class="score-label">金　運</span><div class="stars"><?= stars($result['sansei']['scores']['money']) ?></div></div>
+        <div class="score-row"><span class="score-label">健康運</span><div class="stars"><?= stars($result['sansei']['scores']['health']) ?></div></div>
       </div>
-
-      <div class="lucky-row">
-        <?php foreach($result['zodiacReading']['lucky'] as $k=>$v): ?>
-        <span class="lucky-item"><span><?= $k ?></span><?= $v ?></span>
-        <?php endforeach; ?>
-      </div>
-      <div class="block-message"><?= nl2br(htmlspecialchars($result['zodiacReading']['message'])) ?></div>
     </div>
 
     <!-- AdSense枠 1 -->
@@ -1285,17 +1137,11 @@ footer{
       <!-- ここに AdSense コードを貼り付けてください -->
     </div>
 
-    <!-- タロット -->
-    <div class="block block-tarot">
-      <div class="block-label">Tarot Reading</div>
-      <div class="block-title">
-        <span class="block-symbol"><?= $result['tarot']['symbol'] ?></span>
-        <?= $result['tarot']['num'] ?>. <?= $result['tarot']['name'] ?>
-        <span class="tarot-direction <?= $result['tarot']['upright'] ? 'upright' : 'reversed' ?>">
-          <?= $result['tarot']['upright'] ? '正位置' : '逆位置' ?>
-        </span>
-      </div>
-      <div class="block-message"><?= nl2br(htmlspecialchars($result['tarot']['message'])) ?></div>
+    <!-- 開運アドバイス：TodayBundle由来（毎回変わり得る） -->
+    <div class="block block-advice">
+      <div class="block-label">Today's Advice</div>
+      <div class="block-title"><span class="block-symbol">🔮</span>今日の開運アドバイス</div>
+      <div class="block-message"><?= nl2br(htmlspecialchars($result['sansei']['advice'])) ?></div>
     </div>
 
     <!-- AdSense枠 2 -->
@@ -1303,24 +1149,17 @@ footer{
       <!-- ここに AdSense コードを貼り付けてください -->
     </div>
 
-    <!-- 四柱推命 -->
-    <div class="block block-sichu">
-      <div class="block-label">四柱推命 · Shichū Suimei</div>
+    <!-- ここから各占術の根拠（固定順：西洋占星術→タロット→四柱推命。影響度バッジ付き） -->
+
+    <!-- 西洋占星術 -->
+    <div class="block block-astro">
+      <div class="block-label">Western Astrology · 根拠</div>
       <div class="block-title">
-        <span class="block-symbol">☯</span>
-        日干「<?= $result['sichu']['dayStem'] ?>」── <?= $result['sichu']['element'] ?>の気
+        <span class="block-symbol"><?= $result['zodiac']['symbol'] ?></span>
+        <?= $result['zodiac']['name'] ?>
       </div>
-      <div class="pillar-badges">
-        <span class="pillar-badge">年柱 <?= $result['sichu']['yearPillar'] ?></span>
-        <span class="pillar-badge">日柱 <?= $result['sichu']['dayPillar'] ?></span>
-        <span class="pillar-badge">キーワード：<?= $result['sichu']['keyword'] ?></span>
-      </div>
-      <div class="lucky-row">
-        <?php foreach($result['sichu']['lucky'] as $k=>$v): ?>
-        <span class="lucky-item"><span><?= $k ?></span><?= $v ?></span>
-        <?php endforeach; ?>
-      </div>
-      <div class="block-message"><?= nl2br(htmlspecialchars($result['sichu']['message'])) ?></div>
+      <div class="influence-row">影響度 <span class="stars"><?= stars($result['sansei']['influence']['seiza']) ?></span></div>
+      <div class="block-message"><?= nl2br(htmlspecialchars($result['zodiacReading']['message'])) ?></div>
     </div>
 
     <!-- AdSense枠 3 -->
@@ -1328,13 +1167,44 @@ footer{
       <!-- ここに AdSense コードを貼り付けてください -->
     </div>
 
-    <!-- 統合鑑定 -->
-    <div class="block block-integrated">
-      <div class="block-label">Integrated Reading · 統合鑑定</div>
+    <!-- タロット -->
+    <div class="block block-tarot">
+      <div class="block-label">Tarot Reading · 根拠</div>
       <div class="block-title">
-        <span class="block-symbol">✨</span>三星統合鑑定書
+        <span class="block-symbol"><?= $result['tarot']['symbol'] ?></span>
+        <?= $result['tarot']['num'] ?>. <?= $result['tarot']['name'] ?>
+        <span class="tarot-direction <?= $result['tarot']['upright'] ? 'upright' : 'reversed' ?>">
+          <?= $result['tarot']['upright'] ? '正位置' : '逆位置' ?>
+        </span>
       </div>
-      <div class="integrated-text"><?= htmlspecialchars($result['integrated']) ?></div>
+      <div class="influence-row">影響度 <span class="stars"><?= stars($result['sansei']['influence']['tarot']) ?></span></div>
+      <div class="block-message"><?= nl2br(htmlspecialchars($result['tarot']['message'])) ?></div>
+    </div>
+
+    <!-- AdSense枠 4 -->
+    <div class="adsense-space">
+      <!-- ここに AdSense コードを貼り付けてください -->
+    </div>
+
+    <!-- 四柱推命 -->
+    <div class="block block-sichu">
+      <div class="block-label">四柱推命 · Shichū Suimei · 根拠</div>
+      <div class="block-title">
+        <span class="block-symbol">☯</span>
+        日干「<?= $result['sichu']['dayStem'] ?>」── <?= $result['sichu']['element'] ?>の気
+      </div>
+      <div class="influence-row">影響度 <span class="stars"><?= stars($result['sansei']['influence']['shichu']) ?></span></div>
+      <div class="pillar-badges">
+        <span class="pillar-badge">年柱 <?= $result['sichu']['yearPillar'] ?></span>
+        <span class="pillar-badge">日柱 <?= $result['sichu']['dayPillar'] ?></span>
+      </div>
+      <!-- Step3: shichuEngine()のextras（{type,label,value}形式）に置換 -->
+      <div class="lucky-row">
+        <?php foreach ($result['sichu']['extras'] as $extra): ?>
+        <span class="lucky-item"><span><?= htmlspecialchars($extra['label']) ?></span><?= htmlspecialchars(sansei_formatExtraValue($extra['value'])) ?></span>
+        <?php endforeach; ?>
+      </div>
+      <div class="block-message"><?= nl2br(htmlspecialchars($result['sichu']['message'])) ?></div>
     </div>
 
     <!-- もう一度 -->
