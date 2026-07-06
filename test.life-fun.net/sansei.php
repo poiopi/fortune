@@ -358,7 +358,10 @@ body::before{
   border-radius:20px;
   color:var(--violet-lt);
   font-family:var(--ff-mono);
+  text-decoration:none;
+  transition:opacity .2s;
 }
+.pillar:hover{opacity:.8}
 
 /* ── フォーム ── */
 .form-section{padding:2.5rem 0}
