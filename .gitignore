@@ -28,3 +28,16 @@ COMPONENTS.md
 CHANGELOG.md
 DEVELOPMENT_RULES.md
 DEPLOY_CHECKLIST.md
+
+# Internal design docs / implementation plans (blanket rule so new
+# internal .md files are protected automatically, mirroring the
+# .vscode/sftp.json ignore list's *.md / README* coverage).
+# Scoped to markdown by extension (not a directory-wide docs/ ignore)
+# so a future docs/public/ with non-.md assets stays trackable.
+*.md
+README*
+
+# Dev-only test/tooling assets (Golden Master scripts and fixtures).
+# Not part of the public site; not covered by the *.md rule above
+# since these are .js/.php.
+tests/

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sansei-php-preview",
+      "runtimeExecutable": "C:\\php\\php.exe",
+      "runtimeArgs": ["-S", "localhost:8811", "-t", "test.life-fun.net"],
+      "port": 8811
+    }
+  ]
+}
