@@ -509,6 +509,7 @@ body{top:0!important}
     $retryLabel   = 'もう一度診断する';
     $retryType    = 'link';
     $retryValue   = '/numerology.php';
+    require __DIR__.'/inc/form-error-scroll.php';
     require __DIR__.'/inc/result-footer.php';
     ?>
   </div>

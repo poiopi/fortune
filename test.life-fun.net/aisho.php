@@ -720,6 +720,7 @@ footer a:hover{color:var(--gold)}
         $retryLabel   = 'もう一度診断する';
         $retryType    = 'link';
         $retryValue   = '/aisho.php';
+        require __DIR__.'/inc/form-error-scroll.php';
         require __DIR__.'/inc/result-footer.php';
         ?>
       </div>
