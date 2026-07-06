@@ -953,9 +953,9 @@ footer{
     <h1>無料占いポータル｜三星統合鑑定</h1>
     <p class="hero-sub">タロット・数秘術・九星気学・姓名判断 ── 複数の占術で運命を読み解く</p>
     <div class="pillars">
-      <span class="pillar">♈ 西洋占星術</span>
-      <span class="pillar">🔮 タロット</span>
-      <span class="pillar">☯ 四柱推命</span>
+      <a class="pillar" href="/seiza">♈ 西洋占星術</a>
+      <a class="pillar" href="/tarot">🔮 タロット</a>
+      <a class="pillar" href="/shichu">☯ 四柱推命</a>
     </div>
   </header>
 
