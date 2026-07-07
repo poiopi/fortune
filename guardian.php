@@ -250,7 +250,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     <div class="share-area">
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <?php
-      $articleUrl   = '/articles/guardian/';
       $articleIcon  = '📖';
       $articleTitle = '守護霊診断とは？';
       $articleDesc  = '守護霊・守護獣の意味と種類をわかりやすく解説';

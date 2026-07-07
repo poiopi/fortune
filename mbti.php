@@ -407,7 +407,6 @@ body{top:0!important}
 
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <?php
-      $articleUrl   = '/articles/mbti/';
       $articleIcon  = '📖';
       $articleTitle = 'MBTI診断とは？';
       $articleDesc  = '16タイプの性格と4つの指標をわかりやすく解説';

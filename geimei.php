@@ -253,7 +253,6 @@ footer a:hover{color:var(--gold)}
     </div>
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <?php
-    $articleUrl   = null;
     $articleIcon  = '';
     $articleTitle = '';
     $articleDesc  = '';

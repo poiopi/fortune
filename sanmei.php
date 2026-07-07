@@ -256,7 +256,6 @@ footer a:hover{color:var(--gold)}
     <div class="share-wrap" id="shareWrap"></div>
 
     <?php
-    $articleUrl   = '/articles/sanmei/';
     $articleIcon  = '☯️';
     $articleTitle = '算命学とは？';
     $articleDesc  = '元命・主星・従星・十大主星の意味と計算方法を解説';

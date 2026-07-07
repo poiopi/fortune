@@ -712,7 +712,6 @@ footer a:hover{color:var(--gold)}
     <?php require __DIR__.'/inc/share-btns.php'; ?>
 
         <?php
-        $articleUrl   = '/articles/aisho/';
         $articleIcon  = '📖';
         $articleTitle = '相性診断とは？';
         $articleDesc  = '誕生日・血液型・星座で相性を占う仕組みを解説';

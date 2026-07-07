@@ -291,7 +291,6 @@ footer a:hover{color:var(--gold)}
     <div id="resContent"></div>
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <?php
-    $articleUrl  = null;
     $contextKey  = 'rpg';
     $retryLabel  = 'もう一度遊ぶ';
     $retryType   = 'js';
