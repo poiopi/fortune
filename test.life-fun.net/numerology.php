@@ -501,7 +501,6 @@ body{top:0!important}
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <script>document.addEventListener('DOMContentLoaded',function(){scrollToResult('resultSection');});</script>
     <?php
-    $articleUrl   = '/articles/numerology/';
     $articleIcon  = '📖';
     $articleTitle = '数秘術とは？';
     $articleDesc  = '運命数の計算方法と1〜9の意味を解説';

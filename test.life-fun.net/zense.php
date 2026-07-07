@@ -206,7 +206,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     <div class="share-area">
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <?php
-      $articleUrl   = '/articles/zense/';
       $articleIcon  = '📖';
       $articleTitle = '前世診断とは？';
       $articleDesc  = '前世・輪廻転生・カルマの意味をわかりやすく解説';

@@ -247,7 +247,6 @@ body{top:0!important}
   <!-- 関連記事・もう一度占う -->
   <div id="tarot-result-footer" style="display:none">
     <?php
-    $articleUrl   = '/articles/tarot/';
     $articleIcon  = '📖';
     $articleTitle = 'タロット占いとは？';
     $articleDesc  = '22枚の大アルカナや正位置・逆位置の意味を解説';

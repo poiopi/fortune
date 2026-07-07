@@ -290,7 +290,6 @@ footer a:hover{color:var(--gold)}
   <div class="gogaku-grid" id="gogakuGrid"></div>
   <?php require __DIR__.'/inc/share-btns.php'; ?>
   <?php
-  $articleUrl   = '/articles/seimei/';
   $articleIcon  = '📖';
   $articleTitle = '姓名判断とは？';
   $articleDesc  = '五格・画数・吉数の意味をわかりやすく解説';

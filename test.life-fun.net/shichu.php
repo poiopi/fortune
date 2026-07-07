@@ -302,7 +302,6 @@ footer a:hover{color:var(--gold)}
 
     <?php require __DIR__.'/inc/share-btns.php'; ?>
     <?php
-    $articleUrl   = '/articles/shichu/';
     $articleIcon  = '☯️';
     $articleTitle = '四柱推命とは？';
     $articleDesc  = '命式・十干・十二支・通変星の意味をわかりやすく解説';

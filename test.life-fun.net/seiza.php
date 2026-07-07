@@ -247,7 +247,6 @@ footer a:hover{color:var(--gold)}
     <div class="share-wrap" id="shareWrap"></div>
 
     <?php
-    $articleUrl   = '/articles/seiza/';
     $articleIcon  = '⭐';
     $articleTitle = '西洋占星術とは？';
     $articleDesc  = '12星座・エレメント・クオリティの意味と活用方法を解説';
