@@ -178,12 +178,12 @@ function sansei_calJdToLunar(int $jd): array {
 
 function sansei_getRokuyo(int $year, int $month, int $day): array {
     $rokuyoList = [
-        ['name'=>'大安', 'class'=>'cal-taian',  'color'=>'#c9a84c', 'desc'=>'万事に大吉。何を始めるにも最良の日。'],
-        ['name'=>'赤口', 'class'=>'cal-shakku', 'color'=>'#e8719a', 'desc'=>'午の刻のみ吉。火や血に注意の日。'],
-        ['name'=>'先勝', 'class'=>'cal-sensho', 'color'=>'#9b72ef', 'desc'=>'急ぐことが吉。午前中に動くのが吉。'],
-        ['name'=>'友引', 'class'=>'cal-tomobiki','color'=>'#4ecdc4','desc'=>'慶事吉、弔事凶。朝夕は吉の日。'],
-        ['name'=>'先負', 'class'=>'cal-senbu',  'color'=>'#8a7db5', 'desc'=>'午後が吉。静かに過ごすのが良い日。'],
-        ['name'=>'仏滅', 'class'=>'cal-butsu',  'color'=>'#6b6456', 'desc'=>'控えめに過ごすのが吉とされる日。'],
+        ['name'=>'大安', 'kana'=>'たいあん', 'class'=>'cal-taian',  'color'=>'#c9a84c', 'desc'=>'万事に大吉。何を始めるにも最良の日。'],
+        ['name'=>'赤口', 'kana'=>'しゃっこう', 'class'=>'cal-shakku', 'color'=>'#e8719a', 'desc'=>'午の刻のみ吉。火や血に注意の日。'],
+        ['name'=>'先勝', 'kana'=>'せんしょう', 'class'=>'cal-sensho', 'color'=>'#9b72ef', 'desc'=>'急ぐことが吉。午前中に動くのが吉。'],
+        ['name'=>'友引', 'kana'=>'ともびき', 'class'=>'cal-tomobiki','color'=>'#4ecdc4','desc'=>'慶事吉、弔事凶。朝夕は吉の日。'],
+        ['name'=>'先負', 'kana'=>'せんぷ', 'class'=>'cal-senbu',  'color'=>'#8a7db5', 'desc'=>'午後が吉。静かに過ごすのが良い日。'],
+        ['name'=>'仏滅', 'kana'=>'ぶつめつ', 'class'=>'cal-butsu',  'color'=>'#6b6456', 'desc'=>'控えめに過ごすのが吉とされる日。'],
     ];
     $jd = sansei_calGregorianToJD($year, $month, $day);
     $lunar = sansei_calJdToLunar($jd);
@@ -1238,7 +1238,7 @@ footer{
         <div class="cal-body">
           <div class="rokuyo-badge <?= $calRokuyo['class'] ?>">
             <div class="rokuyo-name"><?= $calRokuyo['name'] ?></div>
-            <div class="rokuyo-kana">Rokuyo</div>
+            <div class="rokuyo-kana"><?= $calRokuyo['kana'] ?></div>
           </div>
           <div>
             <div class="rokuyo-desc"><?= $calRokuyo['desc'] ?></div>
