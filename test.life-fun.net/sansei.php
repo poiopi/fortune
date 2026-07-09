@@ -558,7 +558,8 @@ select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:no
   gap:.6rem;
 }
 .block-symbol{font-size:1.8rem;line-height:1}
-.block-tarot .block-symbol img{height:1.8rem;width:auto;display:block;object-fit:contain}
+.block-tarot .block-symbol{display:inline-flex;align-items:center;justify-content:center;width:1.4rem;height:1.8rem;padding:2px;background:var(--card);border:1px solid var(--gold);border-radius:4px;box-sizing:border-box;overflow:hidden;flex-shrink:0}
+.block-tarot .block-symbol img{width:100%;height:100%;object-fit:contain;display:block}
 
 .scores{
   display:grid;
