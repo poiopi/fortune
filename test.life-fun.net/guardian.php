@@ -53,6 +53,7 @@ body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-we
 /* ─── FORM ─── */
 .form-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:2rem;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
 .form-section-label{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:1.2rem;text-align:center}
+.error-box{background:rgba(232,113,154,.1);border:1px solid rgba(232,113,154,.3);border-radius:8px;padding:.75rem 1rem;margin-bottom:1rem;font-size:.88rem;color:var(--rose);display:none}
 .form-group{margin-bottom:1.6rem}
 .form-label{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:.4rem}
 .form-input{width:100%;background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s}
@@ -178,6 +179,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 
   <div class="form-card" id="formArea">
     <div class="form-section-label">✦ あなたの情報を入力 ✦</div>
+    <div class="error-box" id="formError" style="display:none"></div>
     <div class="form-group">
       <label class="form-label" for="userName">名前（フルネームほど精度が上がります）</label>
       <input class="form-input" type="text" id="userName" placeholder="例：山田 花子" maxlength="30">
@@ -264,6 +266,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 </div>
 
 <?php require __DIR__.'/inc/retry-reset.php'; ?>
+<?php require __DIR__.'/inc/form-error-inline.php'; ?>
 <?php require __DIR__.'/inc/footer.php'; ?>
 
 <script>
@@ -483,7 +486,7 @@ function diagnose(){
   const name=document.getElementById('userName').value.trim();
   const bd=document.getElementById('birth-hidden').value;
   const [y,mo,d]=bd?bd.split('-'):['','',''];
-  if(!name||!y||!mo||!d){alert('名前と生年月日をすべて入力してください');return;}
+  if(!name||!y||!mo||!d){showInlineError('formError','名前と生年月日をすべて入力してください');return;}
   const key=name+y+mo+d;
   const seed=strHash(key);
   const rarity=getRarity(seed);
@@ -568,6 +571,7 @@ function diagnose(){
 function resetForm(){
   clearName('userName');
   clearBirthdate('birth');
+  hideInlineError('formError');
   resetResultView('formArea','result');
 }
 function toggleSpMenu(){
