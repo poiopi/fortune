@@ -1095,14 +1095,15 @@ footer{
       </div>
 
       <!-- 解説ガイド導線 -->
+      <?php require_once __DIR__.'/inc/nav-cards.php'; ?>
       <div class="guide-block">
         <p class="guide-block-label">ARTICLES · 占い解説ガイド</p>
         <p class="guide-block-title">📖 占いをもっと深く知りたい方へ</p>
-        <p class="guide-block-desc">タロット・四柱推命・MBTIなど各占術の意味・歴史・活用方法をわかりやすく解説しています。</p>
+        <p class="guide-block-desc">タロット・四柱推命・西洋占星術など各占術の意味・歴史・活用方法をわかりやすく解説しています。</p>
         <div class="guide-block-links">
-          <a href="/articles/tarot/" class="guide-link-tag">タロット占いとは</a>
-          <a href="/articles/shichu/" class="guide-link-tag">四柱推命とは</a>
-          <a href="/articles/mbti/" class="guide-link-tag">MBTIとは</a>
+          <?php foreach (['tarot','shichu','seiza'] as $_guideSlug): ?>
+          <a href="<?= htmlspecialchars($_NAV_PAGES[$_guideSlug]['article']) ?>" class="guide-link-tag"><?= htmlspecialchars($_NAV_PAGES[$_guideSlug]['name']) ?>とは</a>
+          <?php endforeach; ?>
         </div>
         <a href="/articles/" class="guide-block-btn">すべての解説を見る →</a>
       </div>
