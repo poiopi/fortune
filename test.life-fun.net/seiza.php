@@ -76,6 +76,9 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .calc-btn{width:100%;padding:.85rem;background:linear-gradient(135deg,#7b1340,#c2185b);border:1px solid rgba(194,24,91,.5);border-radius:10px;color:#ffe8f0;font-family:var(--ff-serif);font-size:1rem;letter-spacing:.1em;cursor:pointer;margin-top:.5rem;transition:opacity .2s,box-shadow .2s}
 .calc-btn:hover{opacity:.9;box-shadow:0 0 20px rgba(194,24,91,.5)}
 
+/* ── Form error box ── */
+.error-box{background:rgba(232,113,154,.1);border:1px solid rgba(232,113,154,.3);border-radius:8px;padding:.75rem 1rem;margin-bottom:1rem;font-size:.88rem;color:var(--seiza2)}
+
 /* ── Loading ── */
 #loadingOverlay{display:none;position:fixed;inset:0;background:rgba(8,6,15,.85);z-index:9999;align-items:center;justify-content:center;flex-direction:column;gap:1rem}
 #loadingOverlay.show{display:flex}
@@ -230,6 +233,7 @@ footer a:hover{color:var(--gold)}
         </label>
       </div>
     </div>
+    <div id="jsErrorBox" class="error-box" style="display:none"></div>
     <button class="calc-btn" onclick="calcSeiza()" data-ga-event="fortune_submit">✦ 星座で鑑定する ✦</button>
   </div>
 
@@ -425,11 +429,21 @@ function getTimeZoneIndex(code) {
 // メイン計算・描画
 // ══════════════════════════════════════════════
 
+function showFormError(msg){
+  const box = document.getElementById('jsErrorBox');
+  box.textContent = msg;
+  box.style.display = 'block';
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
 function calcSeiza() {
+  const errBox = document.getElementById('jsErrorBox');
+  if (errBox) errBox.style.display = 'none';
+
   const dateVal = window.BirthdayInput.getValue('birth');
-  if (!dateVal) { alert('生年月日を入力してください'); return; }
+  if (!dateVal) { showFormError('生年月日を入力してください'); return; }
   const [year, month, day] = dateVal.split('-').map(Number);
-  if (year < 1900 || year > 2099) { alert('1900年〜2099年の範囲で入力してください'); return; }
+  if (year < 1900 || year > 2099) { showFormError('1900年〜2099年の範囲で入力してください'); return; }
 
   const tzRadio = document.querySelector('input[name="timeZone"]:checked');
   const tzCode = tzRadio ? tzRadio.value : 'U';

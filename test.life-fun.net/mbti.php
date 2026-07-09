@@ -617,6 +617,7 @@ function showResult() {
     tags.appendChild(span);
   });
   window._shareText = `MBTI診断結果：${selectedMbti}（${m.name}）× ${s.name} でした！✨`;
+  if (window.rfUpdateArticleLink) rfUpdateArticleLink(selectedMbti.toLowerCase(), selectedMbti+'（'+m.name+'）を解説', m.desc);
   showStep('step-result');
   scrollToResult('step-result');
 }

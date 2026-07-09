@@ -23,6 +23,10 @@ $articleUrl = null;
 if (isset($contextKey, $_NAV_PAGES[$contextKey]['article'])) {
   $articleUrl = $_NAV_PAGES[$contextKey]['article'];
 }
+$articleTypeMap = null;
+if (isset($contextKey, $_RESULT_TYPE_ARTICLES[$contextKey])) {
+  $articleTypeMap = $_RESULT_TYPE_ARTICLES[$contextKey];
+}
 ?>
 <style>
 .rf-article-link{display:flex;align-items:center;gap:.9rem;background:rgba(124,77,206,.06);border:1px solid rgba(124,77,206,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem;text-decoration:none;transition:border-color .2s,background .2s}
@@ -37,7 +41,7 @@ if (isset($contextKey, $_NAV_PAGES[$contextKey]['article'])) {
 </style>
 
 <?php if ($articleUrl !== null): ?>
-<a href="<?= htmlspecialchars($articleUrl) ?>" class="rf-article-link">
+<a href="<?= htmlspecialchars($articleUrl) ?>" id="rfArticleLink" class="rf-article-link">
   <span class="rf-article-icon"><?= $articleIcon ?></span>
   <span class="rf-article-body">
     <strong><?= htmlspecialchars($articleTitle) ?></strong>
@@ -45,6 +49,28 @@ if (isset($contextKey, $_NAV_PAGES[$contextKey]['article'])) {
   </span>
   <span class="rf-article-arrow">→</span>
 </a>
+<?php endif; ?>
+
+<?php if ($articleTypeMap !== null): ?>
+<script type="application/json" id="rf-type-map"><?= json_encode($articleTypeMap, JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE) ?></script>
+<script>
+window.rfUpdateArticleLink = function(typeKey, title, desc){
+  var mapEl = document.getElementById('rf-type-map');
+  if(!mapEl) return;
+  try{
+    var map = JSON.parse(mapEl.textContent);
+    var url = map[typeKey];
+    if(!url) return;
+    var a = document.getElementById('rfArticleLink');
+    if(!a) return;
+    a.setAttribute('href', url);
+    var strongEl = a.querySelector('strong');
+    var smallEl = a.querySelector('small');
+    if(strongEl && title) strongEl.textContent = title;
+    if(smallEl && desc) smallEl.textContent = desc;
+  }catch(e){}
+};
+</script>
 <?php endif; ?>
 
 <div class="nav-cards-section" style="padding:2rem 0 0">

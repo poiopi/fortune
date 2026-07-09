@@ -17,6 +17,43 @@ $_NAV_PAGES = [
   'geimei'     => ['name'=>'芸名診断',      'url'=>'/geimei',    'article'=>null,                     'featured_score'=>50,  'icon'=>'🎭', 'desc'=>'大喜利で見つける最強の芸名'],
 ];
 
+// 診断結果の型ごとの解説記事URL（result-footer.php が type-aware 呼び出し時に参照）
+// contextKey => [ typeKey => url ]。URLの管理元をここに一本化する（他ファイルではURLを組み立てない）。
+// このキーが存在しない contextKey は従来通りカテゴリ単位の $articleUrl のみが使われる（後方互換）。
+$_RESULT_TYPE_ARTICLES = [
+  'guardian' => [
+    'ryujin'        => '/articles/guardian/ryujin/',
+    'hakko'         => '/articles/guardian/hakko/',
+    'hoo'           => '/articles/guardian/hoo/',
+    'buke-senzo'    => '/articles/guardian/buke-senzo/',
+    'miko-senzo'    => '/articles/guardian/miko-senzo/',
+    'onmyoji-senzo' => '/articles/guardian/onmyoji-senzo/',
+    'sou-senzo'     => '/articles/guardian/sou-senzo/',
+    'tenshi'        => '/articles/guardian/tenshi/',
+    'daichi'        => '/articles/guardian/daichi/',
+    'umi'           => '/articles/guardian/umi/',
+    'hoshi'         => '/articles/guardian/hoshi/',
+    'kaze'          => '/articles/guardian/kaze/',
+    'honoo'         => '/articles/guardian/honoo/',
+    'tsuki'         => '/articles/guardian/tsuki/',
+    'taiyou'        => '/articles/guardian/taiyou/',
+    'mori-kenja'    => '/articles/guardian/mori-kenja/',
+    'iyashi'        => '/articles/guardian/iyashi/',
+    'yami'          => '/articles/guardian/yami/',
+    'dochaku-senzo' => '/articles/guardian/dochaku-senzo/',
+  ],
+  'mbti' => [
+    'intj' => '/articles/mbti/intj/', 'intp' => '/articles/mbti/intp/',
+    'entj' => '/articles/mbti/entj/', 'entp' => '/articles/mbti/entp/',
+    'infj' => '/articles/mbti/infj/', 'infp' => '/articles/mbti/infp/',
+    'enfj' => '/articles/mbti/enfj/', 'enfp' => '/articles/mbti/enfp/',
+    'istj' => '/articles/mbti/istj/', 'isfj' => '/articles/mbti/isfj/',
+    'estj' => '/articles/mbti/estj/', 'esfj' => '/articles/mbti/esfj/',
+    'istp' => '/articles/mbti/istp/', 'isfp' => '/articles/mbti/isfp/',
+    'estp' => '/articles/mbti/estp/', 'esfp' => '/articles/mbti/esfp/',
+  ],
+];
+
 // featured_score上位N件を返す
 function get_featured_pages(int $n = 5): array {
   global $_NAV_PAGES;
