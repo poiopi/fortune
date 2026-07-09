@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $tarotCard = TAROT_DATA[$tarotResult['raw']['cardOrder']];
         $tarot = [
-            'symbol'  => '🃏', // カードごとの絵文字は旧sansei.php独自データのため復元しない（固定の装飾アイコン）
+            'img'     => $tarotCard['img'], // カード画像ファイル名（拡張子なし）。/cards/{img}.png はtarot.php本体と同一の命名規則
             'num'     => $tarotCard['num'],
             'name'    => $tarotCard['name'],
             'upright' => $tarotResult['raw']['isUpright'],
@@ -558,6 +558,7 @@ select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:no
   gap:.6rem;
 }
 .block-symbol{font-size:1.8rem;line-height:1}
+.block-tarot .block-symbol img{height:1.8rem;width:auto;display:block;object-fit:contain}
 
 .scores{
   display:grid;
@@ -1174,7 +1175,7 @@ footer{
     <div class="block block-tarot">
       <div class="block-label">Tarot Reading · 根拠</div>
       <div class="block-title">
-        <span class="block-symbol"><?= $result['tarot']['symbol'] ?></span>
+        <span class="block-symbol"><img src="/cards/<?= htmlspecialchars($result['tarot']['img']) ?>.png" alt="<?= htmlspecialchars($result['tarot']['name']) ?>" loading="lazy"></span>
         <?= $result['tarot']['num'] ?>. <?= $result['tarot']['name'] ?>
         <span class="tarot-direction <?= $result['tarot']['upright'] ? 'upright' : 'reversed' ?>">
           <?= $result['tarot']['upright'] ? '正位置' : '逆位置' ?>
