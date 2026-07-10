@@ -6,8 +6,8 @@ declare(strict_types=1);
  *
  * mbti.php の10問診断ロジック（calcMbti()、クライアントサイドJavaScript）を
  * PHPへ忠実に移植したもの。docs/engine-template.md / docs/love/07-implementation.md
- * の手順に基づく（Phase 1-4：ResultData化。meta/highlights/extrasを追加。
- * traitsはまだ空 [] のまま。Trait MappingはPhase 1-5で追加する）。
+ * の手順に基づく（Phase 1-5：Trait Mapping。4文字タイプコードをinc/mbti-trait-mapping.php
+ * 経由でtraitsへ変換する）。
  *
  * meta/highlights/extrasはMBTI_DATA（既存の解説文・有名人リスト）からの転記のみで、
  * 新しい解釈は加えない（docs/engine-template.mdの手順6の原則をmeta等にも適用）。
@@ -17,6 +17,7 @@ declare(strict_types=1);
  */
 
 require_once __DIR__ . '/mbti-data.php';
+require_once __DIR__ . '/mbti-trait-mapping.php';
 
 /**
  * calcMbti()のスコアリング・タイブレーク規則をそのまま移植する。
@@ -43,6 +44,27 @@ function mbti_computeMeta(array $raw): array {
         'title' => 'MBTI診断',
         'subtitle' => "{$raw['type']}・{$type['name']}",
     ];
+}
+
+// ═══════════════════════════════════════════════════
+// traits変換（inc/mbti-trait-mapping.php が単一の情報源。Rule ID: M001〜M009）
+// 4文字タイプコードを1文字ずつ分解し、各文字のルールを合算する。
+// ═══════════════════════════════════════════════════
+/**
+ * @return array<string, array{score:int, type:string}>
+ */
+function mbti_computeTraits(string $type): array {
+    $traits = [];
+    $add = function (string $trait, int $score) use (&$traits) {
+        if (!isset($traits[$trait])) $traits[$trait] = ['score' => 0, 'type' => 'permanent'];
+        $traits[$trait]['score'] += $score;
+    };
+
+    foreach (str_split($type) as $letter) {
+        foreach (MBTI_TRAIT_MAPPING[$letter] ?? [] as $rule) $add($rule['trait'], $rule['score']);
+    }
+
+    return $traits;
 }
 
 // ═══════════════════════════════════════════════════
@@ -84,7 +106,7 @@ function mbtiEngine(array $answers): array {
     return [
         'meta' => mbti_computeMeta($raw),
         'raw' => $raw,
-        'traits' => [], // Trait MappingはPhase 1-5で追加する
+        'traits' => mbti_computeTraits($raw['type']),
         'highlights' => mbti_computeHighlights($raw),
         'extras' => mbti_computeExtras($raw),
     ];
