@@ -55,7 +55,8 @@ Shared Axis Library
 | [05-tendency.md](05-tendency.md) | 推定傾向辞書（結婚志向等、価値観寄りの項目） | 作成済み（設計のみ、実装は未着手） |
 | [06-composer.md](06-composer.md) | Result Composer仕様（Bundle・Style・Tendencyを統合して文章生成） | 作成済み（設計のみ、実装は未着手） |
 | [07-implementation.md](07-implementation.md) | 実装順序（MBTI/Blood EngineのEngine化完了を前提とする） | 作成済み。MBTI/Blood Engineとも実装完了 |
-| [08-normalizer.md](08-normalizer.md) | Normalizer仕様（Primitiveごとの百分位閾値、9216通り実測に基づく） | 作成済み。実装は未着手 |
+| [08-normalizer.md](08-normalizer.md) | Normalizer仕様（Primitive/Style/Tendencyごとの百分位閾値、9216通り実測に基づく） | 作成済み。実装は`inc/love-normalizer.php` |
+| [09-writing-rules.md](09-writing-rules.md) | Writing Rules（表示規約7条。Text Bank執筆・最終整形の2箇所で適用） | 作成済み |
 
 ## 4. 用語
 
