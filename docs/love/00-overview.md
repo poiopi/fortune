@@ -48,13 +48,14 @@ Shared Axis Library
 | ファイル | 内容 | 状態 |
 |---|---|---|
 | 00-overview.md | 本ファイル。全体像・前提・用語の位置づけ | 作成済み |
-| [01-principles.md](01-principles.md) | 設計原則9条 | 未作成 |
-| [02-domain-map.md](02-domain-map.md) | DDD構造（Anti-Corruption Layer）、Shared/Love/Presentationの3層、Level1/Level2の詳細 | 未作成 |
-| [03-primitives.md](03-primitives.md) | 性格プリミティブ辞書（5項目、Axisと1:1） | 未作成 |
-| [04-style.md](04-style.md) | 恋愛スタイル辞書（Primitiveの組み合わせ） | 未作成 |
-| [05-tendency.md](05-tendency.md) | 推定傾向辞書（結婚志向等、価値観寄りの項目） | 未作成 |
-| [06-composer.md](06-composer.md) | Result Composer仕様（Bundle・Style・Tendencyを統合して文章生成） | 未作成 |
-| [07-implementation.md](07-implementation.md) | 実装順序（MBTI/Blood EngineのEngine化完了を前提とする） | 未作成 |
+| [01-principles.md](01-principles.md) | 設計原則12条 | 作成済み |
+| [02-domain-map.md](02-domain-map.md) | DDD構造（Anti-Corruption Layer）、Shared/Love/Presentationの3層、Level1/Level2の詳細 | 作成済み |
+| [03-primitives.md](03-primitives.md) | 性格プリミティブ辞書（5項目、Axisと1:1、permanent値のみ使用） | 作成済み。実装は`inc/love-primitive-mapping.php` |
+| [04-style.md](04-style.md) | 恋愛スタイル辞書（Primitiveの組み合わせ） | 作成済み（設計のみ、実装は未着手） |
+| [05-tendency.md](05-tendency.md) | 推定傾向辞書（結婚志向等、価値観寄りの項目） | 作成済み（設計のみ、実装は未着手） |
+| [06-composer.md](06-composer.md) | Result Composer仕様（Bundle・Style・Tendencyを統合して文章生成） | 作成済み（設計のみ、実装は未着手） |
+| [07-implementation.md](07-implementation.md) | 実装順序（MBTI/Blood EngineのEngine化完了を前提とする） | 作成済み。MBTI/Blood Engineとも実装完了 |
+| [08-normalizer.md](08-normalizer.md) | Normalizer仕様（Primitiveごとの百分位閾値、9216通り実測に基づく） | 作成済み。実装は未着手 |
 
 ## 4. 用語
 
