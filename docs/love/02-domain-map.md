@@ -79,6 +79,17 @@ Influenceは Source EnginesのTraitsから直接算出される（Level1の`axis
 
 **記事URL解決も、Influenceと同格の第三の系列としてLove Domainを経由しない。** Source Engineのraw（例：MBTIの型コード、星座のsignIndex）から記事URLを組み立てる処理は、Composerより前段（未実装のページ／薄いorchestrator）が担う。Composerに渡される時点で、記事リンクは`{source, url, label}[]`という既に解決済みの候補配列になっており、ComposerはこれをsourceのInfluence順に並べ替え・URLが無いsource（現状のBlood等）を除外するだけである。rawそのものはComposerまで到達しない（Managerレビュー2026-07-10：ACL境界の保護、Seizaのraw形状がMBTI/Bloodと非対称〈'type'キーを持たない〉ことが判明したため、Source Engineごとの特別対応をComposerに持ち込まないこの設計を採用）。
 
+## 4b. Influenceは2種類に分かれる（2026-07-10確定）
+
+9216通り全数のComposer Snapshot生成時に、`axis_computeInfluence()`（trait絶対値合計の比較）ではMBTIが**全9216件で常に1位**（星5固定。Blood/Seizaは星2〜3）になることが実測で確定した。原因はアルゴリズムのバグではなく、Influenceの定義（trait総量）がSource Engineごとのtrait構造差（MBTI=4文字×+2で8〜9点、Blood=3〜5点、Seiza=3〜5点）をそのまま反映するため。
+
+この事実を受けて、Influenceという概念を2つに分離する：
+
+- **Structural Influence**：`axis_computeInfluence()`の出力そのまま。「各ソースが実際にどれだけのtrait量を寄与したか」という事実。Shared Axis Libraryが持つ。**変更しない**（重み係数の導入は「各Sourceは自分のTraitをそのまま出す」という積み上げ済みの設計思想全体に波及する仕様変更であり、行わない）
+- **Presentation Influence**：記事リンクの並び順等、UI表示用の影響度。ソース間で比較可能になるよう恋愛ドメイン側で正規化してよい。**仕様は未確定**（[07-implementation.md](07-implementation.md)の検討項目）
+
+Sharedは「事実」だけを持ち、Love Domain／Presentationは「どう見せるか」だけを持つ、という本ドキュメントの責務分離そのものをInfluenceにも適用した形である。
+
 ## 5. Presentation
 
 - **Normalizer**：Primitive／Style／Tendencyの生スコアをHigh/Mid/Lowへ変換する。境界値の決定方法はここが持つ

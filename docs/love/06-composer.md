@@ -39,6 +39,8 @@ Composerは、いかなるSource Engineの`raw`も直接参照しない。Compos
 
 Influenceが最も高いソース（MBTI／血液型／星座のいずれか）の記事を先頭に置く。Composerの仕事は、既に解決済みの候補配列をInfluence順に並べ替え、URLが無いsourceを除外することだけであり、URL自体を組み立てない。文字サイズ等の強調は変えず、並び順のみで表現する（視線誘導の安定性を優先する、既存合意）。
 
+**並び替えに使うInfluenceは、Structural Influence（`axis_computeInfluence()`の生値）ではなくPresentation Influence（仕様未確定）である**（[02-domain-map.md](02-domain-map.md)4b節）。Structural Influenceをそのまま使うと、9216通り全件でMBTIが1位（実測確定）となり、並び順が永久に固定されてソート自体が無意味になるため。Presentation Influenceの仕様が決まるまで、Composerの実装（ソートロジック）は「渡されたInfluence値の降順に並べる」という契約のままでよく、変更は不要——どちらの値を渡すかは呼び出し側の判断であり、Composerは値の由来を知らない。
+
 ## 未確定事項
 
 - Style／Tendencyの各High/Mid/Low文言バンクをどこで定義するか（Composerが参照する別ファイルか、Writing Rules文書に含めるか）は未確定。次の検討課題とする
