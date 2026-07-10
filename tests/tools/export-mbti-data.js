@@ -13,14 +13,16 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const mbtiPhpPath = path.join(__dirname, '..', '..', 'test.life-fun.net', 'mbti.php');
+const mbtiDataPhpPath = path.join(__dirname, '..', '..', 'test.life-fun.net', 'inc', 'mbti-data.php');
 const src = fs.readFileSync(mbtiPhpPath, 'utf8');
 
 function extractConst(name) {
   const marker = `const ${name} = {`;
   const startIdx = src.indexOf(marker);
-  if (startIdx === -1) throw new Error(`${marker} が見つかりません`);
+  if (startIdx === -1) return null; // Phase 1-1で既にPHP側へ移行済みの場合はnull
   const objStart = startIdx + marker.length - 1;
   let depth = 0;
   let endIdx = -1;
@@ -33,7 +35,24 @@ function extractConst(name) {
   return eval('(' + src.slice(objStart, endIdx + 1) + ')');
 }
 
-const MBTI_DATA = extractConst('mbtiData');
+// mbti.phpにまだ元のJSリテラルが残っていればそこから抽出する。Phase 1-1で
+// 既にinc/mbti-data.php参照へ移行済みの場合は、その既存ファイル（検証済み）から
+// 読み直す（既存データを保持したまま、新しい定数だけ追記できるようにするため）。
+let MBTI_DATA = extractConst('mbtiData');
+if (MBTI_DATA === null) {
+  if (!fs.existsSync(mbtiDataPhpPath)) {
+    throw new Error('mbtiDataがmbti.phpに見つからず、inc/mbti-data.phpも存在しない');
+  }
+  const json = execFileSync('php', ['-r', `require '${mbtiDataPhpPath.replace(/\\/g, '/')}'; echo json_encode(MBTI_DATA);`], { encoding: 'utf8' });
+  MBTI_DATA = JSON.parse(json);
+}
+
+// questions[].dim をソースから直接抽出する（mbti-engine.phpのraw計算が使う。
+// tests/tools/export-mbti-golden.jsと同じ抽出方法で、手動転記による食い違いを避ける）
+const QUESTION_DIMS = [...src.matchAll(/dim:'([A-Z]{2})'/g)].map(m => m[1]);
+if (QUESTION_DIMS.length !== 10) {
+  throw new Error(`questionsは10件のはずが${QUESTION_DIMS.length}件のdimが見つかった`);
+}
 
 const keys = Object.keys(MBTI_DATA);
 if (keys.length !== 16) throw new Error(`mbtiDataは16件のはずが${keys.length}件`);
@@ -81,8 +100,11 @@ const dataOut = "<?php\n" +
   " *\n" +
   " * Engine ← Data → UI という依存方向にするため、この資産はEngine側（inc/）に置く。\n" +
   " * キーはMBTIタイプコード（INTJ等）。\n" +
+  " *\n" +
+  " * MBTI_QUESTION_DIMSは10問の判定軸（'EI'等）。mbti-engine.phpのraw計算（回答→タイプ）が使う。\n" +
   " */\n\n" +
-  "const MBTI_DATA = " + phpVal(MBTI_DATA, 0) + ";\n";
+  "const MBTI_DATA = " + phpVal(MBTI_DATA, 0) + ";\n\n" +
+  "const MBTI_QUESTION_DIMS = " + phpVal(QUESTION_DIMS, 0) + ";\n";
 
 const outPath = path.join(__dirname, '..', '..', 'test.life-fun.net', 'inc', 'mbti-data.php');
 fs.writeFileSync(outPath, dataOut, 'utf8');

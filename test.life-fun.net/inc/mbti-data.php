@@ -10,6 +10,8 @@ declare(strict_types=1);
  *
  * Engine ← Data → UI という依存方向にするため、この資産はEngine側（inc/）に置く。
  * キーはMBTIタイプコード（INTJ等）。
+ *
+ * MBTI_QUESTION_DIMSは10問の判定軸（'EI'等）。mbti-engine.phpのraw計算（回答→タイプ）が使う。
  */
 
 const MBTI_DATA = [
@@ -157,4 +159,17 @@ const MBTI_DATA = [
             'アデル',
         ],
     ],
+];
+
+const MBTI_QUESTION_DIMS = [
+    'EI',
+    'SN',
+    'TF',
+    'JP',
+    'EI',
+    'SN',
+    'TF',
+    'JP',
+    'EI',
+    'SN',
 ];
