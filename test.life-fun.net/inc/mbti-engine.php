@@ -6,11 +6,14 @@ declare(strict_types=1);
  *
  * mbti.php の10問診断ロジック（calcMbti()、クライアントサイドJavaScript）を
  * PHPへ忠実に移植したもの。docs/engine-template.md / docs/love/07-implementation.md
- * の手順に基づく（Phase 1-3：Engine(raw)のみ）。
+ * の手順に基づく（Phase 1-4：ResultData化。meta/highlights/extrasを追加。
+ * traitsはまだ空 [] のまま。Trait MappingはPhase 1-5で追加する）。
  *
- * この段階ではrawのみを返す。meta・traits・highlights・extrasはPhase 1-5〜以降で追加する。
+ * meta/highlights/extrasはMBTI_DATA（既存の解説文・有名人リスト）からの転記のみで、
+ * 新しい解釈は加えない（docs/engine-template.mdの手順6の原則をmeta等にも適用）。
  *
- * 正しさの基準は tests/cases/mbti-golden.php（Golden Master、1024件全数）。
+ * 正しさの基準は tests/cases/mbti-golden.php（Golden Master、1024件全数）。rawの
+ * 形はPhase 1-3から変えていないため、Golden Master比較は引き続き成立する。
  */
 
 require_once __DIR__ . '/mbti-data.php';
@@ -33,9 +36,45 @@ function mbti_calcType(array $answers): string {
          . ($scores['J'] >= $scores['P'] ? 'J' : 'P');
 }
 
+/** @return array{title: string, subtitle: string} */
+function mbti_computeMeta(array $raw): array {
+    $type = MBTI_DATA[$raw['type']];
+    return [
+        'title' => 'MBTI診断',
+        'subtitle' => "{$raw['type']}・{$type['name']}",
+    ];
+}
+
+// ═══════════════════════════════════════════════════
+// highlights: 既存解説文からの抽出（新規に文章を生成しない）
+// ═══════════════════════════════════════════════════
+/** @return string[] */
+function mbti_computeHighlights(array $raw): array {
+    return [
+        MBTI_DATA[$raw['type']]['desc'],
+    ];
+}
+
+// ═══════════════════════════════════════════════════
+// extras: 表示用の付加データのみ（raw項目の複製はしない）
+// {type, label, value} のオブジェクト配列で統一する（shichu・tarot・seizaと同じ形式）
+// ═══════════════════════════════════════════════════
+/** @return array<int, array{type:string, label:string, value:mixed}> */
+function mbti_computeExtras(array $raw): array {
+    return [
+        ['type' => 'famous', 'label' => '同じタイプの有名人', 'value' => MBTI_DATA[$raw['type']]['famous']],
+    ];
+}
+
 /**
  * @param array<int, int> $answers 10問分の回答（各0または1）
- * @return array{raw: array{type: string}}
+ * @return array{
+ *   meta: array{title:string, subtitle:string},
+ *   raw: array{type:string},
+ *   traits: array<string, array{score:int, type:string}>,
+ *   highlights: string[],
+ *   extras: array<int, array{type:string, label:string, value:mixed}>
+ * }
  */
 function mbtiEngine(array $answers): array {
     $raw = [
@@ -43,6 +82,10 @@ function mbtiEngine(array $answers): array {
     ];
 
     return [
+        'meta' => mbti_computeMeta($raw),
         'raw' => $raw,
+        'traits' => [], // Trait MappingはPhase 1-5で追加する
+        'highlights' => mbti_computeHighlights($raw),
+        'extras' => mbti_computeExtras($raw),
     ];
 }

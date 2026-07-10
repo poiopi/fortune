@@ -5,17 +5,20 @@ declare(strict_types=1);
  * compare-mbti-golden.php
  *
  * tests/cases/mbti-golden.php（1024ケース全数）に対して、
- * mbtiEngine()のrawを照合する。
+ * mbtiEngine()のrawを照合し、あわせて全件をResultData Validatorに通す
+ * （Phase 1-4のDoD：ResultData化 + Validator対応）。
  *
  * 実行方法: php tests/tools/compare-mbti-golden.php
  */
 
 require_once __DIR__ . '/../../test.life-fun.net/inc/mbti-engine.php';
+require_once __DIR__ . '/../../test.life-fun.net/inc/resultdata-validator.php';
 
 $golden = require __DIR__ . '/../cases/mbti-golden.php';
 $cases = $golden['cases'];
 
 $pass = 0; $fail = 0; $failDetails = [];
+$validatorPass = 0; $validatorFail = 0; $validatorFailDetails = [];
 
 foreach ($cases as $i => $case) {
     $input = $case['input'];
@@ -33,15 +36,32 @@ foreach ($cases as $i => $case) {
         $failDetails[] = ['index' => $i, 'input' => $input, 'expected' => $rawExpected, 'actual' => $raw];
         if (count($failDetails) > 10) break; // 大量失敗時に出力が肥大化しないようにする
     }
+
+    try {
+        validateResultData($result);
+        $validatorPass++;
+    } catch (InvalidArgumentException $e) {
+        $validatorFail++;
+        $validatorFailDetails[] = ['index' => $i, 'message' => $e->getMessage()];
+        if (count($validatorFailDetails) > 10) break;
+    }
 }
 
 $total = count($cases);
 echo "=== mbti-engine Golden Master 照合結果 ({$total}件) ===\n\n";
-echo "raw PASS={$pass} FAIL={$fail}\n";
+echo "raw       PASS={$pass} FAIL={$fail}\n";
+echo "Validator PASS={$validatorPass} FAIL={$validatorFail}\n";
 
-if ($fail === 0) {
-    echo "\n総合結果: PASS={$total} FAIL=0 (全数一致)\n";
+if ($fail === 0 && $validatorFail === 0) {
+    echo "\n総合結果: PASS={$total} FAIL=0 (全数一致、Validator全件PASS)\n";
     exit(0);
+}
+
+if ($validatorFail > 0) {
+    echo "\nValidator失敗詳細（最大10件）:\n";
+    foreach ($validatorFailDetails as $f) {
+        echo "--- case #{$f['index']} --- {$f['message']}\n";
+    }
 }
 
 echo "\n詳細（最大10件）:\n";
