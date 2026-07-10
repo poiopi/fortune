@@ -40,6 +40,28 @@ score > P67        → High
 
 これはバグではない。値が離散的（整数）かつ特定の値に集中する分布（例：自立性は0〜1の2値だけで65.7%を占める）では、パーセンタイル境界を引いても均等な3分割にはならない。**この偏りを人為的に均す調整はしない**。母集団上の真の相対位置を表すことがNormalizerの目的であり、見た目の均等さを優先すると「母集団上の位置」という定義そのものと矛盾するため。
 
+## Style／Tendencyの閾値テーブル（9216通り全数、2026-07-10算出）
+
+Style・Tendencyも同じ設計原則（Primitiveごとに独立、百分位ベース）に従う。Style/Tendencyは加重和（負の係数を含む）のため、値は小数・負数を取りうる。
+
+| Style | P33 | P67 |
+|---|---|---|
+| 積極性 | 3.20 | 4.40 |
+| 愛情表現 | 3.40 | 4.80 |
+| 包容力 | 4.40 | 5.80 |
+| 独占欲 | 2.20 | 3.60 |
+| 惚れやすさ | 3.20 | 4.20 |
+| 嫉妬深さ | -0.40 | 1.60 |
+| 恋愛の慎重さ | 3.00 | 4.60 |
+
+| Tendency | P33 | P67 |
+|---|---|---|
+| 結婚志向 | 2.14 | 4.20 |
+| 浮気耐性 | 1.70 | 3.90 |
+
 ## データソース
 
-`tests/tools/export-love-primitives.php`が生成する`tests/cases/love-primitives-snapshot.php`（9216通り全数）。Trait Mapping・Axis重み・Primitive係数が変わった場合、このスナップショットを再生成し、閾値表を見直す必要があるかを確認する。
+- Primitive：`tests/tools/export-love-primitives.php`が生成する`tests/cases/love-primitives-snapshot.php`（9216通り全数）
+- Style／Tendency：`tests/tools/export-love-style-tendency.php`が生成する`tests/cases/love-style-tendency-snapshot.php`（同じ9216件のPrimitive値に導出式を適用）
+
+Trait Mapping・Axis重み・Primitive係数・Style/Tendency係数のいずれかが変わった場合、該当するスナップショットを再生成し、閾値表を見直す必要があるかを確認する。
