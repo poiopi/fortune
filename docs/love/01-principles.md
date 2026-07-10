@@ -13,3 +13,4 @@
 9. Bundleの選定と結果文章の生成は分離する。Bundleの選定はBundleの判定ロジックのみに基づき、恋愛スタイル・推定傾向は結果文章の生成時（Composer）のみ参照する
 10. 依存方向はShared Axis Library→Love Domain→Presentationの一方向のみとする。Love DomainはPresentationの概念（文章・表示形式・星評価・閾値）を参照しない
 11. 各Primitiveの意味は固定され、Style／Tendencyの複数の導出式にわたって一貫して解釈されなければならない。導出式は負の係数を使ってよいが、それはPrimitiveの意味を反転させるのではなく、導出される概念とPrimitiveとの関係が逆であることを表す
+12. Love DomainはShared Axis Libraryの`permanent`値のみを入力とする。`transient`および`total`はLove Domainの導出に使用しない（恋愛エンジンはPermanent Engineであり、同一入力では常に同一結果を返す。将来transientを持つSource Engine（タロット等）を追加する場合も、その寄与はLove Domainの外側にある別レイヤー（今日のアドバイス等）としてのみ扱う）

@@ -2,6 +2,8 @@
 
 PrimitiveはShared Axis LibraryのAxisを恋愛ドメインの語彙へ翻訳した最小単位である。Primitive同士は互いに独立し、Style・Tendency・BundleはPrimitiveの組み合わせから導出される。Primitive自体は単一Axisとの1:1対応を維持する。
 
+**Primitiveは各Axisの`permanent`値から導出する**（`transient`・`total`は使わない。原則12）。`axis_computeAxes()`が返す`{permanent, transient, total}`のうち、Love Domainが読むのは`permanent`のみである。
+
 表示文（結果文・High/Mid/Lowの言い回し等）はここに含めない。Presentation側の文書（Writing Rules／Bundle・Composerのテンプレート）で扱う。
 
 | 名称 | 対応Axis | 使用Trait | 定義（恋愛での意味） |
