@@ -28,16 +28,20 @@ COMPONENTS.md
 CHANGELOG.md
 DEVELOPMENT_RULES.md
 DEPLOY_CHECKLIST.md
+IMPLEMENTATION_PLAN.md
 
-# Internal design docs / implementation plans (blanket rule so new
-# internal .md files are protected automatically, mirroring the
-# .vscode/sftp.json ignore list's *.md / README* coverage).
-# Scoped to markdown by extension (not a directory-wide docs/ ignore)
-# so a future docs/public/ with non-.md assets stays trackable.
+# Root-level/scratch markdown stays untracked by default (mirrors the
+# .vscode/sftp.json ignore list's *.md / README* coverage for publish
+# prevention; that list already protects docs/ and tests/ independently,
+# so this section governs Git tracking only, not publishing).
+# docs/ is explicitly re-included below: it holds versioned engineering
+# specs (engine-template.md, sansei-engine-design.md, docs/love/*) that
+# engine-template.md treats as formal, diffable deliverables.
 *.md
 README*
+!docs/**
 
-# Dev-only test/tooling assets (Golden Master scripts and fixtures).
-# Not part of the public site; not covered by the *.md rule above
-# since these are .js/.php.
-tests/
+# Dev-only test/tooling assets (Golden Master scripts, fixtures, Coverage/
+# Snapshot). Tracked in Git: engine-template.md treats these as formal
+# deliverables that must be diffable across changes; keeping them out of
+# Git defeats the purpose of a Golden Master.
