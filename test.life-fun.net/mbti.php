@@ -206,6 +206,22 @@ body::before{
   border-radius:4px;padding:.2rem .6rem;letter-spacing:.04em;
 }
 
+.love-cta{
+  margin-top:1.25rem;text-align:center;
+  background:linear-gradient(135deg,rgba(232,113,154,.1),rgba(155,114,239,.08));
+  border:1px solid rgba(232,113,154,.25);border-radius:14px;padding:1.5rem 1.3rem;
+}
+.love-cta-eyebrow{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--muted);margin-bottom:.7rem}
+.love-cta-title{font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.love-cta-desc{font-size:.85rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem}
+.love-cta-btn{
+  display:inline-block;font-family:var(--ff-sans);font-size:.9rem;font-weight:500;
+  background:linear-gradient(135deg,var(--rose),var(--violet));
+  border-radius:10px;padding:.8rem 2rem;color:#fff;text-decoration:none;
+  transition:opacity .2s;
+}
+.love-cta-btn:hover{opacity:.85}
+
 .retry-btn{
   width:100%;font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.1em;
   background:none;border:1px solid var(--border2);border-radius:8px;
@@ -406,6 +422,13 @@ body{top:0!important}
         <div class="type-tags" id="r-famous"></div>
       </div>
 
+      <div class="love-cta">
+        <div class="love-cta-eyebrow">▼ もっと詳しく知りたい方へ</div>
+        <div class="love-cta-title">💜 MBTI×血液型×星座で診断</div>
+        <div class="love-cta-desc">恋愛傾向・相性・恋の進め方を<br>3つの性格要素から総合分析します。</div>
+        <a class="love-cta-btn" id="love-cta-link" href="/love.php">恋愛診断を始める →</a>
+      </div>
+
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <?php
       $articleIcon  = '📖';
@@ -602,6 +625,7 @@ function showResult() {
   });
   window._shareText = `MBTI診断結果：${selectedMbti}（${m.name}）× ${s.name} でした！✨`;
   if (window.rfUpdateArticleLink) rfUpdateArticleLink(selectedMbti.toLowerCase(), selectedMbti+'（'+m.name+'）を解説', m.desc);
+  document.getElementById('love-cta-link').href = '/love.php?mbti=' + encodeURIComponent(selectedMbti);
   showStep('step-result');
   scrollToResult('step-result');
 }

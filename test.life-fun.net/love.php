@@ -217,6 +217,7 @@ body{top:0!important}
         <div class="progress-bar"><div class="progress-fill" style="width:66%"></div></div>
       </div>
       <div class="select-title">あなたの血液型を選んでください</div>
+      <div class="select-hint" id="mbti-carried-hint"></div>
       <div class="blood-grid" id="blood-grid"></div>
       <div class="nav-row">
         <button class="back-btn" onclick="goStep('step-mbti')">← 戻る</button>
@@ -331,9 +332,28 @@ function renderBloodGrid() {
   });
 }
 
+function applyMbtiFromQuery() {
+  const params = new URLSearchParams(location.search);
+  const mbtiParam = (params.get('mbti') || '').toUpperCase();
+  if (!mbtiTypes.includes(mbtiParam)) return;
+
+  selectedMbti = mbtiParam;
+  document.querySelectorAll('#mbti-grid .mbti-btn').forEach(b => {
+    b.classList.toggle('selected', b.textContent === mbtiParam);
+  });
+  document.getElementById('mbti-next').disabled = false;
+
+  // mbti.php等からの引き継ぎ時は、既に確定しているMBTI選択（Step1）を
+  // スキップしてStep2（血液型）から開始する。
+  const hint = document.getElementById('mbti-carried-hint');
+  if (hint) hint.textContent = 'MBTI: ' + mbtiParam + '（診断結果から引き継ぎ済み）';
+  goStep('step-blood');
+}
+
 document.addEventListener('DOMContentLoaded', function(){
   renderMbtiGrid();
   renderBloodGrid();
+  applyMbtiFromQuery();
   // birth-hiddenはBirthdayInput側がJSで直接値を書き込むため、hidden自体のchangeは
   // 発火しない。年・月・日の各selectに個別にリスナーを付ける（sansei.phpと同様、
   // BirthdayInput.getValue('birth')で判定する）。
