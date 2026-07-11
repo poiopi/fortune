@@ -119,13 +119,15 @@ FAQセクション自体は各記事テンプレートに含めるが、`schema.
 | 順位 | カテゴリ | 本数 | 状態 | 理由 |
 |---|---|---|---|---|
 | 1 | MBTI | 16 | **完了**（16/16） | 検索ボリューム最大、`mbti.php`との既存連携あり |
-| 2 | Style／Tendency | 9 | 未着手 | 結果ページから直接内部リンクできる。9本と少なく実装コストが低い。Golden Masterとの結びつきが最も強く差別化しやすい |
+| 2 | Style／Tendency | 9 | **完了**（Style 7/7・Tendency 2/2） | 結果ページから直接内部リンクできる。9本と少なく実装コストが低い。Golden Masterとの結びつきが最も強く差別化しやすい |
 | 3 | 星座 | 12 | 未着手 | 検索ボリューム、既存`/articles/seiza/`との回遊性 |
 | 4 | 血液型 | 4 | 未着手 | 検索ボリュームは前2者よりやや小さい |
 | 5 | guide（ピラーページ） | 1 | 未着手 | 他記事公開後にハブとして機能させる |
 | 6 | bundle | 未定 | 未着手 | 20通り中8通りはテキスト共有（[10-bundle.md](10-bundle.md)）で出現率が低く、個別記事化の優先度が低い。低頻度パターンを1記事にまとめる等、この段階では個別記事数を確定しない |
 
 MBTI16記事は、テンプレート（`articles/love/mbti/_type-tpl.php`）固定＋データ差し替え方式で完成させた。各記事はGolden Master実測値（`tests/cases/love-final-snapshot.php`）と、MBTIの4文字→Trait→Axis→Primitiveという実装コード（`inc/mbti-trait-mapping.php`・`inc/axis-mapping.php`）に基づく因果説明を含む。全16記事完成後、公開順に依存した「ここまでのXタイプ中最も」という相対表現を、全16タイプの実測値に基づく正確な表現へ修正する横断レビューを実施済み（詳細は6節のチェックリストを参照）。
+
+Style／Tendency9記事は、MBTI記事とは異なる「概念解説型」の構成（概要→測定対象→Love Engineでの計算方法→High/Mid/Lowの違い→9216件実測分析→関連MBTI→CTA）で完成させた。各記事は計算式（`inc/love-style.php`・`inc/love-tendency.php`のLOVE_STYLE_MAPPING/LOVE_TENDENCY_MAPPING）とGolden Master実測値（全体分布・MBTI別16タイプ・血液型別・Bundle主軸別相関）を含み、High/Mid/LowのテキストはText Bank（`inc/love-style-texts.php`・`inc/love-tendency-texts.php`）の原文をそのまま引用して診断結果との齟齬を防いでいる。似た指標（積極性/愛情表現、独占欲/嫉妬深さ、包容力/恋愛の慎重さ、結婚志向/浮気耐性）は、計算式のどのプリミティブが異なるかを執筆時点からFAQで明記し、「軸の独立性」を確保した。
 
 Style／Tendencyを2位に上げた理由：ユーザー提案の当初案（MBTI→星座→血液型→guide→bundle）ではPrimitive相当の概念が含まれていなかったが、結果ページからの直接内部リンクという強い流入経路を持ち、本数が少なく（9本）実装コストが低いため、3位以降より先に着手する方が費用対効果が高いと判断した。
 
