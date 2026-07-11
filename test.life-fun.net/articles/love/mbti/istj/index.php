@@ -96,6 +96,6 @@ $type = [
   ],
 
   'prev' => ['title' => 'ESTJ（幹部）', 'url' => '/articles/love/mbti/estj/'],
-  'next' => null,
+  'next' => ['title' => 'ESFJ（領事）', 'url' => '/articles/love/mbti/esfj/'],
 ];
 require __DIR__ . '/../_type-tpl.php';

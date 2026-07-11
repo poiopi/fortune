@@ -18,6 +18,8 @@ $_PUBLISHED = [
   ['slug'=>'isfp', 'code'=>'ISFP', 'name'=>'冒険家',   'kw'=>'静かな優しさ・素直な感情'],
   ['slug'=>'estj', 'code'=>'ESTJ', 'name'=>'幹部',     'kw'=>'揺るぎない誠実さ・行動力'],
   ['slug'=>'istj', 'code'=>'ISTJ', 'name'=>'管理者',   'kw'=>'着実な信頼・揺るぎない誠実さ'],
+  ['slug'=>'esfj', 'code'=>'ESFJ', 'name'=>'領事',     'kw'=>'温かい思いやり・誠実さ'],
+  ['slug'=>'isfj', 'code'=>'ISFJ', 'name'=>'擁護者',   'kw'=>'静かな献身・揺るぎない誠実さ'],
 ];
 
 ob_start();
