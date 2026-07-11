@@ -612,7 +612,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
     <h2 class="section-title">占いを選ぶ</h2>
-    <p class="section-sub">14種類の占術から、今のあなたに合ったものを</p>
+    <p class="section-sub">15種類の占術から、今のあなたに合ったものを</p>
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
@@ -625,6 +625,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <div class="fc-name">三星統合鑑定</div>
         <div class="fc-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</div>
         <span class="fc-btn">鑑定する →</span>
+      </a>
+
+      <a href="/love" class="fcard ct-r fade-up">
+        <span class="fc-icon">💜</span>
+        <span class="fc-lbl">Love Type</span>
+        <div class="fc-name">恋愛傾向診断</div>
+        <div class="fc-desc">MBTI×血液型×星座の3つから、あなたの恋愛スタイルと傾向を診断。</div>
+        <span class="fc-btn">診断する →</span>
       </a>
 
       <a href="/tarot" class="fcard ct-v fade-up">
