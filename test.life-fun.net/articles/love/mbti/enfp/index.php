@@ -96,6 +96,6 @@ $type = [
   ],
 
   'prev' => ['title' => 'INTP（論理学者）', 'url' => '/articles/love/mbti/intp/'],
-  'next' => null,
+  'next' => ['title' => 'INFP（仲介者）', 'url' => '/articles/love/mbti/infp/'],
 ];
 require __DIR__ . '/../_type-tpl.php';
