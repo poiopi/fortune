@@ -4,7 +4,13 @@ require_once __DIR__ . '/../../../inc/auto-link.php';
 
 // 公開済み記事のみ掲載（残りは順次追加）
 $_PUBLISHED = [
-  ['slug'=>'sekkyokusei-love', 'name'=>'積極性', 'kw'=>'自分から動くか、相手を待つか'],
+  ['slug'=>'sekkyokusei-love',   'name'=>'積極性',     'kw'=>'自分から動くか、相手を待つか'],
+  ['slug'=>'aijouhyougen-love',  'name'=>'愛情表現',   'kw'=>'感情をどれだけ表に出すか'],
+  ['slug'=>'houyouryoku-love',   'name'=>'包容力',     'kw'=>'相手をどれだけ受け止められるか'],
+  ['slug'=>'dokusenyoku-love',   'name'=>'独占欲',     'kw'=>'相手との結びつきの強さ'],
+  ['slug'=>'horeyasusa-love',    'name'=>'惚れやすさ', 'kw'=>'新しい出会いへの心の開き方'],
+  ['slug'=>'shittobukasa-love',  'name'=>'嫉妬深さ',   'kw'=>'感情の揺れやすさ'],
+  ['slug'=>'shinchousa-love',    'name'=>'恋愛の慎重さ', 'kw'=>'関係を進めるペース'],
 ];
 
 ob_start();
@@ -92,7 +98,7 @@ ob_start();
       </a>
       <?php endforeach; ?>
     </div>
-    <p class="note-box">現在公開中は<?= count($_PUBLISHED) ?>指標です（積極性・愛情表現・包容力・独占欲・惚れやすさ・嫉妬深さ・恋愛の慎重さの全7指標を順次公開予定）。</p>
+    <p class="note-box">Style（恋愛スタイル）の全7指標が揃っています。次はTendency（結婚志向・浮気耐性）の解説記事を公開予定です。</p>
   </section>
 </div>
 
