@@ -110,7 +110,7 @@ ob_start();
       </a>
       <?php endforeach; ?>
     </div>
-    <p class="note-box">現在公開中は<?= count($_PUBLISHED) ?>タイプです。残りのタイプは順次公開予定です。他タイプの一般的な性格解説は<a href="/articles/mbti/" style="color:var(--accent)">MBTI診断とは（16タイプ完全ガイド）</a>で先にご覧いただけます。</p>
+    <p class="note-box">MBTI16タイプすべての恋愛傾向記事が揃っています。各タイプの一般的な性格解説は<a href="/articles/mbti/" style="color:var(--accent)">MBTI診断とは（16タイプ完全ガイド）</a>もあわせてご覧いただけます。</p>
   </section>
 </div>
 
