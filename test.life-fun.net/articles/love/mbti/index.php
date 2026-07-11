@@ -8,6 +8,8 @@ $_PUBLISHED = [
   ['slug'=>'intp', 'code'=>'INTP', 'name'=>'論理学者', 'kw'=>'静かな知的探求・慎重な関係構築'],
   ['slug'=>'enfp', 'code'=>'ENFP', 'name'=>'運動家',   'kw'=>'情熱・共感・惚れやすさ'],
   ['slug'=>'infp', 'code'=>'INFP', 'name'=>'仲介者',   'kw'=>'誠実な理想・静かな情熱'],
+  ['slug'=>'entj', 'code'=>'ENTJ', 'name'=>'指揮官',   'kw'=>'明確な意志・揺るがない誠実さ'],
+  ['slug'=>'intj', 'code'=>'INTJ', 'name'=>'建築家',   'kw'=>'静かな観察・一貫した献身'],
 ];
 
 ob_start();
