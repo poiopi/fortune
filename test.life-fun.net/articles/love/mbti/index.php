@@ -6,6 +6,7 @@ require_once __DIR__ . '/../../../inc/auto-link.php';
 $_PUBLISHED = [
   ['slug'=>'entp', 'code'=>'ENTP', 'name'=>'討論者',   'kw'=>'知的な刺激・率直な対話'],
   ['slug'=>'intp', 'code'=>'INTP', 'name'=>'論理学者', 'kw'=>'静かな知的探求・慎重な関係構築'],
+  ['slug'=>'enfp', 'code'=>'ENFP', 'name'=>'運動家',   'kw'=>'情熱・共感・惚れやすさ'],
 ];
 
 ob_start();
