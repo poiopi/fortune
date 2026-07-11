@@ -134,3 +134,21 @@ Style／Tendencyを2位に上げた理由：ユーザー提案の当初案（MBT
 - Love診断結果ページ→Style/Tendency記事のクリック率（新規追加する内部リンクの効果測定）
 - Love関連記事間の回遊率（MBTI記事↔星座記事等）
 - FAQPageスキーマは効果測定対象に含めない（1-1節）
+
+## 6. 記事チェックリスト
+
+ENTP記事（`articles/love/mbti/entp/`、[RELEASE-v1.0.0.md](RELEASE-v1.0.0.md)後の最初の記事実装）をリファレンス実装として確定する。以降の記事は、テンプレート（`_type-tpl.php`）を固定してデータ部分のみ差し替える方式で量産する。1記事ごとに以下を確認し、「ENTPで確認済みのはずが別タイプで漏れる」事故を防ぐ。
+
+- [ ] title・meta descriptionにタイプ名／カテゴリ名が正しく入っている
+- [ ] H1がtitleと重複しすぎず、かつ内容を正確に表している
+- [ ] canonicalが正しいURLを指している
+- [ ] パンくずの階層・リンク先が正しい
+- [ ] CTA（上）：`/love?xxx=`のクエリで診断側の事前選択と一致するパラメータになっている
+- [ ] Golden Master実測値：`tests/cases/love-final-snapshot.php`から**実際に集計した値**であり、手で作った数値でない
+- [ ] 因果説明：`inc/mbti-trait-mapping.php`／`inc/axis-mapping.php`等、実装コードの対応関係と一致している（1-2節・1-3節の禁止事項参照）
+- [ ] FAQ：本文コンテンツとして書かれており、FAQPageスキーマを実装していない（1-1節）
+- [ ] CTA（下）：CTA（上）と同じ遷移先になっている
+- [ ] 内部リンク（関連コンテンツ）：存在しないカテゴリ（Style/Tendency等、未公開のもの）へリンクしていない
+- [ ] auto-link：意図しないキーワードリンクが挿入されていないか実機で確認する
+- [ ] モバイル表示：375px幅で横スクロールが発生しない（`.nav-cards`等、意図的なもの以外）
+- [ ] ハブページ（`articles/love/mbti/index.php`の`$_PUBLISHED`等）に新規記事を追記している

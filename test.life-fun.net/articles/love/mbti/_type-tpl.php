@@ -106,7 +106,6 @@ ob_start();
   .matome-list li{font-size:.92rem;line-height:1.8;color:#333}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  @media(max-width:560px){ .compat-grid{grid-template-columns:1fr} }
   </style>
 
   <script type="application/ld+json">
