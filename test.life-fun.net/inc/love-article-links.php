@@ -46,7 +46,7 @@ const SEIZA_ARTICLE_SLUGS = [
 function love_resolveMbtiArticleLink(array $mbtiResult): array {
     $type = strtolower($mbtiResult['raw']['type']);
     return [
-        'url' => "/articles/mbti/{$type}/",
+        'url' => "/articles/love/mbti/{$type}/",
         'label' => "{$mbtiResult['raw']['type']}恋愛解説",
     ];
 }
