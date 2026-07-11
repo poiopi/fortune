@@ -97,6 +97,6 @@ $type = [
   ],
 
   'prev' => ['title' => 'ENFJ（主人公）', 'url' => '/articles/love/mbti/enfj/'],
-  'next' => null,
+  'next' => ['title' => 'ESTP（起業家）', 'url' => '/articles/love/mbti/estp/'],
 ];
 require __DIR__ . '/../_type-tpl.php';

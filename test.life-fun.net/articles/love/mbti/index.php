@@ -12,6 +12,7 @@ $_PUBLISHED = [
   ['slug'=>'intj', 'code'=>'INTJ', 'name'=>'建築家',   'kw'=>'静かな観察・一貫した献身'],
   ['slug'=>'enfj', 'code'=>'ENFJ', 'name'=>'主人公',   'kw'=>'深い共感・まっすぐな誠実さ'],
   ['slug'=>'infj', 'code'=>'INFJ', 'name'=>'提唱者',   'kw'=>'静かな誠実さ・深い共感'],
+  ['slug'=>'estp', 'code'=>'ESTP', 'name'=>'起業家',   'kw'=>'今この瞬間・行動力'],
 ];
 
 ob_start();
