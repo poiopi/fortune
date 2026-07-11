@@ -90,6 +90,6 @@ $item = [
   ],
 
   'prev' => null,
-  'next' => null,
+  'next' => ['title' => '牡牛座', 'url' => '/articles/love/seiza/taurus/'],
 ];
 require __DIR__ . '/../_seiza-tpl.php';

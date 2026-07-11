@@ -3,7 +3,18 @@ declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
 
 $_PUBLISHED = [
-  ['slug'=>'aries', 'code'=>'♈', 'name'=>'牡羊座', 'kw'=>'迷う前に動く率直さ'],
+  ['slug'=>'aries',       'code'=>'♈', 'name'=>'牡羊座', 'kw'=>'迷う前に動く率直さ'],
+  ['slug'=>'taurus',      'code'=>'♉', 'name'=>'牡牛座', 'kw'=>'長く大切にする堅実さ'],
+  ['slug'=>'gemini',      'code'=>'♊', 'name'=>'双子座', 'kw'=>'型にはまらない柔軟さ'],
+  ['slug'=>'cancer',      'code'=>'♋', 'name'=>'蟹座',   'kw'=>'守りたい気持ちの率直さ'],
+  ['slug'=>'leo',         'code'=>'♌', 'name'=>'獅子座', 'kw'=>'情熱と誠実さの包容力'],
+  ['slug'=>'virgo',       'code'=>'♍', 'name'=>'乙女座', 'kw'=>'裏切らない誠実さ'],
+  ['slug'=>'libra',       'code'=>'♎', 'name'=>'天秤座', 'kw'=>'バランスと軽やかさ'],
+  ['slug'=>'scorpio',     'code'=>'♏', 'name'=>'蠍座',   'kw'=>'深い感情と誠実さ'],
+  ['slug'=>'sagittarius', 'code'=>'♐', 'name'=>'射手座', 'kw'=>'新しい出会いへの自由さ'],
+  ['slug'=>'capricorn',   'code'=>'♑', 'name'=>'山羊座', 'kw'=>'着実に築く手堅さ'],
+  ['slug'=>'aquarius',    'code'=>'♒', 'name'=>'水瓶座', 'kw'=>'自由な発想と一貫した信念'],
+  ['slug'=>'pisces',      'code'=>'♓', 'name'=>'魚座',   'kw'=>'豊かな感受性'],
 ];
 
 ob_start();
@@ -93,7 +104,7 @@ ob_start();
       </a>
       <?php endforeach; ?>
     </div>
-    <p class="note-box">現在公開中は<?= count($_PUBLISHED) ?>星座です。残りの星座は順次公開予定です。各星座の一般的な性格解説は<a href="/articles/seiza/" style="color:var(--accent)">西洋占星術とは</a>で先にご覧いただけます。</p>
+    <p class="note-box">12星座すべての恋愛傾向記事が揃っています。各星座の一般的な性格解説は<a href="/articles/seiza/" style="color:var(--accent)">西洋占星術とは</a>もあわせてご覧いただけます。</p>
   </section>
 </div>
 
