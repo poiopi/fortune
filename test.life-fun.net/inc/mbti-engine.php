@@ -89,6 +89,27 @@ function mbti_computeExtras(array $raw): array {
 }
 
 /**
+ * @return array{
+ *   meta: array{title:string, subtitle:string},
+ *   raw: array{type:string},
+ *   traits: array<string, array{score:int, type:string}>,
+ *   highlights: string[],
+ *   extras: array<int, array{type:string, label:string, value:mixed}>
+ * }
+ */
+function mbti_buildResultData(string $type): array {
+    $raw = ['type' => $type];
+
+    return [
+        'meta' => mbti_computeMeta($raw),
+        'raw' => $raw,
+        'traits' => mbti_computeTraits($raw['type']),
+        'highlights' => mbti_computeHighlights($raw),
+        'extras' => mbti_computeExtras($raw),
+    ];
+}
+
+/**
  * @param array<int, int> $answers 10問分の回答（各0または1）
  * @return array{
  *   meta: array{title:string, subtitle:string},
@@ -99,15 +120,27 @@ function mbti_computeExtras(array $raw): array {
  * }
  */
 function mbtiEngine(array $answers): array {
-    $raw = [
-        'type' => mbti_calcType($answers),
-    ];
+    return mbti_buildResultData(mbti_calcType($answers));
+}
 
-    return [
-        'meta' => mbti_computeMeta($raw),
-        'raw' => $raw,
-        'traits' => mbti_computeTraits($raw['type']),
-        'highlights' => mbti_computeHighlights($raw),
-        'extras' => mbti_computeExtras($raw),
-    ];
+/**
+ * mbtiEngine()は10問回答からのみResultDataを構築できるが、既にMBTIタイプを
+ * 知っている利用者向けに、タイプコードから直接ResultDataを構築する入口
+ * （love.phpが使う。docs/love/07-implementation.mdの(a)案：love.php自体は
+ * 10問診断UIを持たず、既知のタイプを直接受け取る）。
+ *
+ * @param string $type 4文字のMBTIタイプコード（例：'ENTP'）
+ * @return array{
+ *   meta: array{title:string, subtitle:string},
+ *   raw: array{type:string},
+ *   traits: array<string, array{score:int, type:string}>,
+ *   highlights: string[],
+ *   extras: array<int, array{type:string, label:string, value:mixed}>
+ * }
+ */
+function mbtiEngineFromType(string $type): array {
+    if (!isset(MBTI_DATA[$type])) {
+        throw new InvalidArgumentException("不正なMBTIタイプ: {$type}");
+    }
+    return mbti_buildResultData($type);
 }
