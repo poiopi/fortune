@@ -96,6 +96,6 @@ $type = [
   ],
 
   'prev' => null,
-  'next' => null,
+  'next' => ['title' => 'INTP（論理学者）', 'url' => '/articles/love/mbti/intp/'],
 ];
 require __DIR__ . '/../_type-tpl.php';
