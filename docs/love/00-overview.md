@@ -59,7 +59,7 @@ Shared Axis Library
 | [09-writing-rules.md](09-writing-rules.md) | Writing Rules（表示規約7条。Text Bank執筆・最終整形の2箇所で適用） | 作成済み |
 | [10-bundle.md](10-bundle.md) | Bundle仕様（上位2 Primitive方式、20通り、Text ID共有） | 作成済み。実装は`inc/love-bundle.php` |
 | [RELEASE-v1.0.0.md](RELEASE-v1.0.0.md) | v1.0.0マイルストーンのリリースノート（特定時点のスナップショット、以後更新しない） | 作成済み |
-| [11-articles.md](11-articles.md) | Love Content Platform v1：`/articles/love/`のURL設計・記事テンプレート・独自価値/一次データ利用/禁止事項・優先順位・記事チェックリスト | MBTI16・Style7・Tendency2・星座12・血液型4、計41記事完了（Text Bank41本と対応）。横断レビュー済み。次はguide/bundle |
+| [11-articles.md](11-articles.md) | Love Content Platform v1：`/articles/love/`のURL設計・記事テンプレート・独自価値/一次データ利用/禁止事項・優先順位・記事チェックリスト | MBTI16・Style7・Tendency2・星座12・血液型4・Guide6、計47記事完了。横断レビュー済み。次はBundle5記事（v1.2） |
 
 ## 4. 用語
 
