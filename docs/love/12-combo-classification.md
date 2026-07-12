@@ -285,5 +285,5 @@ tools/qa-combo-articles.sh
 
 ### 8-3. 残課題
 
-- **sitemap.xml**：`/articles/love/`配下のURLはsitemap.xmlに1件も掲載されていない（combo 64記事だけでなく、既存52記事＋ハブ群も含めて未掲載）。掲載範囲の判断待ち。
+- **sitemap.xml**：~~`/articles/love/`配下のURLはsitemap.xmlに1件も掲載されていない~~ →**解消済み（2026-07-12）**。`tools/add-love-sitemap-urls.php`（ファイルシステムから実在ページを列挙して追記する冪等スクリプト）で、9ハブ＋116記事＝125 URLを一括追加した（sitemap全体で161→286エントリ）。今後記事を追加した際も同スクリプトの再実行で反映できる。本番反映後のSearch Console送信は従来通りユーザー自身が実施する（[[feedback_sitemap_habit]]）。
 - **Scaled Content Abuse耐性の継続観察**：固有情報層は「分類＋実測値＋Trait由来の因果説明」で構成しているが、Search Console導入後にインデックス率・評価を観察して判断する。
