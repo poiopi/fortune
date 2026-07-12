@@ -2,6 +2,15 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
 
+// Primitive名 → Bundle記事slugの対応表（articles/love/bundle/配下）。
+const SEIZA_TPL_BUNDLE_SLUGS = [
+  '行動主導性' => 'action-type',
+  '誠実性' => 'reliability-type',
+  '情動性' => 'sensitivity-type',
+  '自立性' => 'autonomy-type',
+  '変化志向' => 'transform-type',
+];
+
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -240,9 +249,15 @@ ob_start();
   <section class="art-section" id="bundle">
     <h2>恋愛タイプの組み合わせ（Bundle）</h2>
     <p><?= htmlspecialchars($item['bundle_intro']) ?></p>
+    <?php
+    $bp = $item['topBundle']['primary'];
+    $bs = $item['topBundle']['secondary'];
+    $bpLink = isset(SEIZA_TPL_BUNDLE_SLUGS[$bp]) ? '<a href="/articles/love/bundle/'.SEIZA_TPL_BUNDLE_SLUGS[$bp].'/" class="al-link">'.htmlspecialchars($bp).'</a>' : htmlspecialchars($bp);
+    $bsLink = isset(SEIZA_TPL_BUNDLE_SLUGS[$bs]) ? '<a href="/articles/love/bundle/'.SEIZA_TPL_BUNDLE_SLUGS[$bs].'/" class="al-link">'.htmlspecialchars($bs).'</a>' : htmlspecialchars($bs);
+    ?>
     <div class="bundle-box">
       <div class="bundle-pct"><?= $item['topBundle']['pct'] ?>%</div>
-      <p style="margin-top:.5rem"><strong><?= htmlspecialchars($item['topBundle']['primary'].' × '.$item['topBundle']['secondary']) ?></strong>の組み合わせが最も多く出現します（<?= (int)$item['sampleSize'] ?>パターン中）。</p>
+      <p style="margin-top:.5rem"><strong><?= $bpLink ?> × <?= $bsLink ?></strong>の組み合わせが最も多く出現します（<?= (int)$item['sampleSize'] ?>パターン中）。</p>
       <p style="margin-top:.5rem"><?= htmlspecialchars($item['topBundle']['note']) ?></p>
     </div>
   </section>
@@ -294,6 +309,7 @@ ob_start();
       ['label'=>htmlspecialchars($item['name']).'とは', 'title'=>'性格・相性を詳しく見る →', 'url'=>'/articles/seiza/'.$item['slug'].'/'],
       ['label'=>'MBTI×恋愛', 'title'=>'16タイプ別の恋愛傾向を見る →', 'url'=>'/articles/love/mbti/'],
       ['label'=>'Style指標一覧', 'title'=>'積極性・愛情表現など7指標を見る →', 'url'=>'/articles/love/style/'],
+      ['label'=>'Bundleとは', 'title'=>'恋愛タイプの分類ロジックを見る →', 'url'=>'/articles/love/guide/bundle-guide/'],
     ];
     require __DIR__.'/../../../inc/article-related.php';
     ?>

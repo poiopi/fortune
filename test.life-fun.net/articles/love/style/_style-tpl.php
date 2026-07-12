@@ -2,6 +2,22 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
 
+// 血液型ラベル → 記事slugの対応表（articles/love/blood/index.phpの$_PUBLISHEDと同じ対応）。
+const STYLE_TPL_BLOOD_SLUGS = [
+  'A型' => 'a-love',
+  'B型' => 'b-love',
+  'O型' => 'o-love',
+  'AB型' => 'ab-love',
+];
+// 主軸ラベル → Bundle記事slugの対応表（articles/love/bundle/配下）。
+const STYLE_TPL_BUNDLE_SLUGS = [
+  '行動主導性が主軸' => 'action-type',
+  '誠実性が主軸' => 'reliability-type',
+  '情動性が主軸' => 'sensitivity-type',
+  '自立性が主軸' => 'autonomy-type',
+  '変化志向が主軸' => 'transform-type',
+];
+
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -82,7 +98,8 @@ ob_start();
   .rank-table a:hover{text-decoration:underline}
   .rank-bar-mini{display:inline-block;height:8px;background:var(--accent);border-radius:3px;vertical-align:middle;margin-right:.4rem}
   .blood-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-top:1rem}
-  .blood-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem;text-align:center}
+  .blood-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem;text-align:center;text-decoration:none;color:inherit;display:block;transition:border-color .2s}
+  a.blood-card:hover{border-color:var(--accent-lt)}
   .blood-card .bt{font-family:var(--ff-serif);font-weight:700;color:var(--text)}
   .blood-card .bp{font-family:var(--ff-mono);color:var(--accent);font-size:1.1rem;margin-top:.3rem}
   .bundle-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.85rem}
@@ -229,7 +246,12 @@ ob_start();
     <p><?= htmlspecialchars($item['blood_body']) ?></p>
     <div class="blood-grid">
       <?php foreach ($item['bloodBreakdown'] as $b): ?>
+      <?php $bloodSlug = STYLE_TPL_BLOOD_SLUGS[$b['type']] ?? null; ?>
+      <?php if ($bloodSlug): ?>
+      <a href="/articles/love/blood/<?= $bloodSlug ?>/" class="blood-card"><div class="bt"><?= htmlspecialchars($b['type']) ?></div><div class="bp"><?= $b['pct'] ?>%</div></a>
+      <?php else: ?>
       <div class="blood-card"><div class="bt"><?= htmlspecialchars($b['type']) ?></div><div class="bp"><?= $b['pct'] ?>%</div></div>
+      <?php endif; ?>
       <?php endforeach; ?>
     </div>
 
@@ -238,7 +260,11 @@ ob_start();
     <table class="bundle-table">
       <tr><th>Bundleの主軸</th><th><?= htmlspecialchars($item['name']) ?>のHigh率</th></tr>
       <?php foreach ($item['bundleCorrelation'] as $bc): ?>
-      <tr><td><?= htmlspecialchars($bc['primitive']) ?></td><td><?= $bc['pct'] ?>%</td></tr>
+      <?php $bundleSlug = STYLE_TPL_BUNDLE_SLUGS[$bc['primitive']] ?? null; ?>
+      <tr>
+        <td><?php if ($bundleSlug): ?><a href="/articles/love/bundle/<?= $bundleSlug ?>/" class="al-link"><?= htmlspecialchars($bc['primitive']) ?></a><?php else: ?><?= htmlspecialchars($bc['primitive']) ?><?php endif; ?></td>
+        <td><?= $bc['pct'] ?>%</td>
+      </tr>
       <?php endforeach; ?>
     </table>
   </section>
@@ -288,6 +314,7 @@ ob_start();
     $relatedItems = [
       ['label'=>'恋愛傾向診断', 'title'=>'MBTI×血液型×星座で診断する →', 'url'=>'/love'],
       ['label'=>'MBTI×恋愛', 'title'=>'16タイプ別の恋愛傾向を見る →', 'url'=>'/articles/love/mbti/'],
+      ['label'=>'Bundleとは', 'title'=>'恋愛タイプの分類ロジックを見る →', 'url'=>'/articles/love/guide/bundle-guide/'],
       ['label'=>'MBTI×星座診断', 'title'=>'16タイプ×12星座で性格を深掘り →', 'url'=>'/mbti'],
     ];
     require __DIR__.'/../../../inc/article-related.php';
