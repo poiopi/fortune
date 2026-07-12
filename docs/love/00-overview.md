@@ -60,6 +60,7 @@ Shared Axis Library
 | [10-bundle.md](10-bundle.md) | Bundle仕様（上位2 Primitive方式、20通り、Text ID共有） | 作成済み。実装は`inc/love-bundle.php` |
 | [RELEASE-v1.0.0.md](RELEASE-v1.0.0.md) | v1.0.0マイルストーンのリリースノート（特定時点のスナップショット、以後更新しない） | 作成済み |
 | [11-articles.md](11-articles.md) | Love Content Platform v1：`/articles/love/`のURL設計・記事テンプレート・独自価値/一次データ利用/禁止事項・優先順位・記事チェックリスト | MBTI16・Style7・Tendency2・星座12・血液型4・Guide6・Bundle5、計52記事完了（Love Content Platform v1.2完了）。横断レビュー済み |
+| [12-combo-classification.md](12-combo-classification.md) | 組み合わせページ自動生成プロジェクト：MBTI×血液型64パターンの分類仕様（協調型/拮抗型2種/転換型、判定アルゴリズム、64件全データ） | 分類ロジック確定・64件算出済み。URL設計・生成方法・リファレンス記事（ENTP×A型）実装は未着手 |
 
 ## 4. 用語
 
