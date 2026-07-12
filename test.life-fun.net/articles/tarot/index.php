@@ -167,7 +167,8 @@ ob_start();
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"タロット占い","item":"https://life-fun.net/articles/tarot/"}
+      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
+      {"@type":"ListItem","position":3,"name":"タロット占いとは","item":"https://life-fun.net/articles/tarot/"}
     ]
   }
   </script>
@@ -183,7 +184,7 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span>タロット占い 解説
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>タロット占いとは
   </nav>
 
   <div class="art-hero">
