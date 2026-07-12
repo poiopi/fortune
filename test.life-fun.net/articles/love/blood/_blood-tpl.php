@@ -2,6 +2,30 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
 
+// Style/Tendency名 → 記事slugの対応表（articles/love/style/index.php・
+// articles/love/tendency/index.phpの$_PUBLISHEDと同じ対応）。
+const BLOOD_TPL_STYLE_SLUGS = [
+  '積極性' => 'sekkyokusei-love',
+  '愛情表現' => 'aijouhyougen-love',
+  '包容力' => 'houyouryoku-love',
+  '独占欲' => 'dokusenyoku-love',
+  '惚れやすさ' => 'horeyasusa-love',
+  '嫉妬深さ' => 'shittobukasa-love',
+  '恋愛の慎重さ' => 'shinchousa-love',
+];
+const BLOOD_TPL_TENDENCY_SLUGS = [
+  '結婚志向' => 'kekkonshikou-love',
+  '浮気耐性' => 'uwakitaisei-love',
+];
+// Primitive名 → Bundle記事slugの対応表（articles/love/bundle/配下）。
+const BLOOD_TPL_BUNDLE_SLUGS = [
+  '行動主導性' => 'action-type',
+  '誠実性' => 'reliability-type',
+  '情動性' => 'sensitivity-type',
+  '自立性' => 'autonomy-type',
+  '変化志向' => 'transform-type',
+];
+
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -185,7 +209,7 @@ ob_start();
     <div class="stat-list">
       <?php foreach($item['styles'] as $name => $s): ?>
       <div>
-        <div class="stat-item-name"><?= htmlspecialchars($name) ?></div>
+        <div class="stat-item-name"><?php if (isset(BLOOD_TPL_STYLE_SLUGS[$name])): ?><a href="/articles/love/style/<?= BLOOD_TPL_STYLE_SLUGS[$name] ?>/" class="al-link"><?= htmlspecialchars($name) ?></a><?php else: ?><?= htmlspecialchars($name) ?><?php endif; ?></div>
         <div class="stat-bar">
           <?php if($s['high']>0): ?><div class="stat-seg high" style="width:<?= $s['high'] ?>%"><?= $s['high'] ?>%</div><?php endif; ?>
           <?php if($s['mid']>0): ?><div class="stat-seg mid" style="width:<?= $s['mid'] ?>%"><?= $s['mid'] ?>%</div><?php endif; ?>
@@ -201,7 +225,7 @@ ob_start();
     <div class="stat-list">
       <?php foreach($item['tendencies'] as $name => $t): ?>
       <div>
-        <div class="stat-item-name"><?= htmlspecialchars($name) ?></div>
+        <div class="stat-item-name"><?php if (isset(BLOOD_TPL_TENDENCY_SLUGS[$name])): ?><a href="/articles/love/tendency/<?= BLOOD_TPL_TENDENCY_SLUGS[$name] ?>/" class="al-link"><?= htmlspecialchars($name) ?></a><?php else: ?><?= htmlspecialchars($name) ?><?php endif; ?></div>
         <div class="stat-bar">
           <?php if($t['high']>0): ?><div class="stat-seg high" style="width:<?= $t['high'] ?>%"><?= $t['high'] ?>%</div><?php endif; ?>
           <?php if($t['mid']>0): ?><div class="stat-seg mid" style="width:<?= $t['mid'] ?>%"><?= $t['mid'] ?>%</div><?php endif; ?>
@@ -247,9 +271,15 @@ ob_start();
   <section class="art-section" id="bundle">
     <h2>恋愛タイプの組み合わせ（Bundle）</h2>
     <p><?= htmlspecialchars($item['bundle_intro']) ?></p>
+    <?php
+    $bp = $item['topBundle']['primary'];
+    $bs = $item['topBundle']['secondary'];
+    $bpLink = isset(BLOOD_TPL_BUNDLE_SLUGS[$bp]) ? '<a href="/articles/love/bundle/'.BLOOD_TPL_BUNDLE_SLUGS[$bp].'/" class="al-link">'.htmlspecialchars($bp).'</a>' : htmlspecialchars($bp);
+    $bsLink = isset(BLOOD_TPL_BUNDLE_SLUGS[$bs]) ? '<a href="/articles/love/bundle/'.BLOOD_TPL_BUNDLE_SLUGS[$bs].'/" class="al-link">'.htmlspecialchars($bs).'</a>' : htmlspecialchars($bs);
+    ?>
     <div class="bundle-box">
       <div class="bundle-pct"><?= $item['topBundle']['pct'] ?>%</div>
-      <p style="margin-top:.5rem"><strong><?= htmlspecialchars($item['topBundle']['primary'].' × '.$item['topBundle']['secondary']) ?></strong>の組み合わせが最も多く出現します（<?= (int)$item['sampleSize'] ?>パターン中）。</p>
+      <p style="margin-top:.5rem"><strong><?= $bpLink ?> × <?= $bsLink ?></strong>の組み合わせが最も多く出現します（<?= (int)$item['sampleSize'] ?>パターン中）。</p>
       <p style="margin-top:.5rem"><?= htmlspecialchars($item['topBundle']['note']) ?></p>
     </div>
   </section>
@@ -300,6 +330,7 @@ ob_start();
       ['label'=>'恋愛傾向診断', 'title'=>'MBTI×血液型×星座で診断する →', 'url'=>'/love'],
       ['label'=>'MBTI×恋愛', 'title'=>'16タイプ別の恋愛傾向を見る →', 'url'=>'/articles/love/mbti/'],
       ['label'=>'星座×恋愛', 'title'=>'12星座別の恋愛傾向を見る →', 'url'=>'/articles/love/seiza/'],
+      ['label'=>'結果の見方', 'title'=>'Style・Bundleなど用語をまとめて理解する →', 'url'=>'/articles/love/guide/kekka-no-mikata/'],
     ];
     require __DIR__.'/../../../inc/article-related.php';
     ?>
