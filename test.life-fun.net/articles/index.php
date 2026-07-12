@@ -204,6 +204,7 @@
       'label' => '✦ 性格・相性を知る',
       'items' => [
         ['icon'=>'🧠','title'=>'MBTI×星座診断','desc'=>'16タイプの性格タイプと星座を掛け合わせた、詳細な性格分析。','url_article'=>'/articles/mbti/','url_tool'=>'/mbti','ready'=>true],
+        ['icon'=>'💜','title'=>'恋愛傾向診断','desc'=>'MBTI×血液型×星座から、恋愛スタイル・結婚観・恋愛タイプを9216パターンの実測データで診断。','url_article'=>'/articles/love/','url_tool'=>'/love','ready'=>true],
         ['icon'=>'💞','title'=>'相性診断','desc'=>'誕生日・血液型・星座から二人の相性を多角的に分析。','url_article'=>'/articles/aisho/','url_tool'=>'/aisho','ready'=>true],
         ['icon'=>'🌀','title'=>'前世診断','desc'=>'あなたの前世の姿と、今世に引き継いだ魂の傾向を占う。','url_article'=>'/articles/zense/','url_tool'=>'/zense','ready'=>true],
       ]

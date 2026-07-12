@@ -4,7 +4,7 @@ $_NAV_PAGES = [
   'tarot'      => ['name'=>'タロット占い',  'url'=>'/tarot',     'article'=>'/articles/tarot/',       'featured_score'=>95,  'icon'=>'🃏', 'desc'=>'22枚のカードが運命を映し出す'],
   'shichu'     => ['name'=>'四柱推命',      'url'=>'/shichu',    'article'=>'/articles/shichu/',      'featured_score'=>90,  'icon'=>'🔯', 'desc'=>'命式・十神・大運を本格算出する'],
   'mbti'       => ['name'=>'MBTI×星座診断','url'=>'/mbti',      'article'=>'/articles/mbti/',        'featured_score'=>80,  'icon'=>'🧠', 'desc'=>'16タイプ×12星座で性格を深掘り'],
-  'love'       => ['name'=>'恋愛傾向診断',  'url'=>'/love',      'article'=>null,                     'featured_score'=>70,  'icon'=>'💜', 'desc'=>'MBTI×血液型×星座で恋愛スタイルを診断'],
+  'love'       => ['name'=>'恋愛傾向診断',  'url'=>'/love',      'article'=>'/articles/love/',        'featured_score'=>70,  'icon'=>'💜', 'desc'=>'MBTI×血液型×星座で恋愛スタイルを診断'],
   'calendar'   => ['name'=>'開運カレンダー','url'=>'/calendar',  'article'=>null,                     'featured_score'=>80,  'icon'=>'📅', 'desc'=>'今日・今月の運勢と開運アドバイス'],
   'sanmei'     => ['name'=>'算命学鑑定',    'url'=>'/sanmei',    'article'=>'/articles/sanmei/',      'featured_score'=>75,  'icon'=>'☯️', 'desc'=>'元命・主星・従星で本質と才能を読む'],
   'seiza'      => ['name'=>'西洋占星術',    'url'=>'/seiza',     'article'=>'/articles/seiza/',       'featured_score'=>75,  'icon'=>'⭐', 'desc'=>'太陽星座×内面タイプで個性を深掘り'],
