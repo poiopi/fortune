@@ -176,3 +176,13 @@ ENTP記事（`articles/love/mbti/entp/`、[RELEASE-v1.0.0.md](RELEASE-v1.0.0.md)
 - [ ] auto-link：意図しないキーワードリンクが挿入されていないか実機で確認する
 - [ ] モバイル表示：375px幅で横スクロールが発生しない（`.nav-cards`等、意図的なもの以外）
 - [ ] ハブページ（`articles/love/mbti/index.php`の`$_PUBLISHED`等）に新規記事を追記している
+
+## 7. 内部導線監査（52記事完成後・v1.2仕上げフェーズ）
+
+52記事完成後、新規カテゴリ追加より先に内部導線の総点検を実施した。カテゴリ構築順（MBTI→Style/Tendency→星座→血液型→Guide→Bundle）に起因し、**後発カテゴリは先発カテゴリへ正しくリンクしている一方、先発カテゴリは構築時点でまだ存在しなかった後発カテゴリへのリンクを持たない**という構造的な偏りが判明した。特にMBTI（16記事、検索流入の主要入口と想定）と血液型（4記事）は、Style/Tendency/Bundle/Guideへの送客が0件だった。
+
+修正は3段階で実施：①MBTI16記事（Style/Tendencyバーの指標名・Bundleボックスの主軸/副軸名をリンク化、関連コンテンツに「結果の見方」「Style指標一覧」を追加）、②Style/Tendency/星座（血液型カード・Bundle相関表・Bundleボックスをリンク化）、③再監査で発見した血液型4記事（MBTIと同一パターンだったため同じ修正を適用）。全52記事に影響する共有テンプレート5ファイル（`mbti/_type-tpl.php`・`style/_style-tpl.php`・`tendency/_tendency-tpl.php`・`seiza/_seiza-tpl.php`・`blood/_blood-tpl.php`）を対象に、各カテゴリの記事名→slug対応表をテンプレートごとに定義し、既存の`.al-link`スタイルを再利用した。
+
+監査で別途、`inc/auto-link.php`のキーワードマップ（MBTI4文字コード・12星座名）が、Love記事の地の文中でLove専用記事ではなく旧・汎用記事（`/articles/mbti/`・`/articles/seiza/{slug}/`）へリンクし続けている競合を実測確認した（`誠実性型`記事で`牡牛座`等が旧URLへリンクされることをブラウザで確認）。以前から把握されていた既知の制約が実際に発生していることを確認した形であり、`inc/auto-link.php`は「安定版・変更時は回帰テストPASS=20/FAIL=0必須」の共有アセットのため、今回は着手せず既知課題として保留する方針とした。
+
+修正後も残る軽微なギャップ（MBTI→星座/血液型、Style/Tendency→星座、星座→Tendency/血液型の単一ペア）は、今回のような「カテゴリ全体が孤立」ではなく個別の欠落であり、優先度は低いと判断し現時点では見送った。
