@@ -186,3 +186,23 @@ ENTP記事（`articles/love/mbti/entp/`、[RELEASE-v1.0.0.md](RELEASE-v1.0.0.md)
 監査で別途、`inc/auto-link.php`のキーワードマップ（MBTI4文字コード・12星座名）が、Love記事の地の文中でLove専用記事ではなく旧・汎用記事（`/articles/mbti/`・`/articles/seiza/{slug}/`）へリンクし続けている競合を実測確認した（`誠実性型`記事で`牡牛座`等が旧URLへリンクされることをブラウザで確認）。以前から把握されていた既知の制約が実際に発生していることを確認した形であり、`inc/auto-link.php`は「安定版・変更時は回帰テストPASS=20/FAIL=0必須」の共有アセットのため、今回は着手せず既知課題として保留する方針とした。
 
 修正後も残る軽微なギャップ（MBTI→星座/血液型、Style/Tendency→星座、星座→Tendency/血液型の単一ペア）は、今回のような「カテゴリ全体が孤立」ではなく個別の欠落であり、優先度は低いと判断し現時点では見送った。
+
+### 7-1. サイト全体からの到達性監査（クリック深度）
+
+52記事同士の内部リンクとは別に、「トップページから何クリックでLove記事に到達できるか」を検証したところ、**サイト全体から`/articles/love/`配下への静的リンクが1本も存在しない**ことが判明した。原因は`inc/nav-cards.php`の`$_NAV_PAGES['love']['article']`が`null`のままだったこと。この配列は全ページ共通のフッター「解説ガイド」リスト（`get_article_pages()`）とおすすめ占いカードの参照元であり、他の占術（タロット・四柱推命・MBTI×星座診断等）は`article`にURLが設定されているのに対し、Loveだけ未設定だった。加えて`love.php`自体にも`/articles/love/`への静的リンクがなく、`articles/index.php`（占い解説ガイド マスターインデックス）のカテゴリ一覧にもLoveが掲載されていなかった。
+
+結果として、52記事への実質的な入口は「診断フォーム送信→結果画面のMBTI/血液型/星座いずれかのリンク」のみで、Style/Tendency/Guide/Bundleの4カテゴリは診断結果画面にすら現れず（`love_resolveArticleLinkCandidates()`がmbti/blood/seizaの3系統しか返さないため）、サイトの他の場所からは一切到達できない状態だった。
+
+**修正**：①`inc/nav-cards.php`の`article`に`/articles/love/`を設定、②7カテゴリ（Guide/MBTI/Style/Tendency/星座/血液型/Bundle）を束ねる`articles/love/index.php`（ルートハブ）を新規作成、③`articles/index.php`の「性格・相性を知る」カテゴリに恋愛傾向診断を追加。
+
+**修正後のクリック深度**：
+
+| 到達先 | トップページからの最短クリック数 |
+|---|---|
+| `/love`（診断フォーム） | 1（既存の直接リンク） |
+| `/articles/love/`（ルートハブ） | 1（フッター「解説ガイド」経由、新設） |
+| 各カテゴリハブ（MBTI/Style/Tendency/星座/血液型/Guide/Bundle） | 2（ホーム→ルートハブ→カテゴリ） |
+| 個別記事 | 3（ホーム→ルートハブ→カテゴリ→記事） |
+| MBTI/血液型/星座の個別記事（診断結果経由） | 2＋診断1回（既存の動的経路、引き続き有効） |
+
+Style/Tendency/Guide/Bundleは診断結果画面には依然として現れないため（Composer側の`articleLinks`拡張は別途検討が必要、v1.1相当のスコープ）、この4カテゴリは静的経路（ルートハブ経由）が唯一の入口になる。
