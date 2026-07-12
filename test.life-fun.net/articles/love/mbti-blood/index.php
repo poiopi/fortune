@@ -4,6 +4,7 @@ require_once __DIR__ . '/../../../inc/auto-link.php';
 
 $_PUBLISHED = [
   ['slug'=>'entp-a', 'mbti'=>'ENTP', 'blood'=>'A型', 'class'=>'拮抗型（血液型優勢）', 'kw'=>'行動主導性×誠実性が拮抗し、血液型側が優勢に'],
+  ['slug'=>'estj-o', 'mbti'=>'ESTJ', 'blood'=>'O型', 'class'=>'転換型', 'kw'=>'誠実性でも情動性でもなく、行動主導性へ転換'],
 ];
 
 ob_start();
