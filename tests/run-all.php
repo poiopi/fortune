@@ -47,6 +47,9 @@ $suites = [
     'Step5-A (Legacy Drift)' => [
         'Legacy Drift Check' => "{$toolsDir}/compare-legacy-drift.php",
     ],
+    'Love Combo (MBTI×血液型)' => [
+        'Invariants' => "{$toolsDir}/love-combo-invariants.php",
+    ],
 ];
 
 $allPass = true;

@@ -287,3 +287,16 @@ tools/qa-combo-articles.sh
 
 - **sitemap.xml**：~~`/articles/love/`配下のURLはsitemap.xmlに1件も掲載されていない~~ →**解消済み（2026-07-12）**。`tools/add-love-sitemap-urls.php`（ファイルシステムから実在ページを列挙して追記する冪等スクリプト）で、9ハブ＋116記事＝125 URLを一括追加した（sitemap全体で161→286エントリ）。今後記事を追加した際も同スクリプトの再実行で反映できる。本番反映後のSearch Console送信は従来通りユーザー自身が実施する（[[feedback_sitemap_habit]]）。
 - **Scaled Content Abuse耐性の継続観察**：固有情報層は「分類＋実測値＋Trait由来の因果説明」で構成しているが、Search Console導入後にインデックス率・評価を観察して判断する。
+
+### 8-4. 回帰テスト（tests/tools/love-combo-invariants.php）
+
+生成物（記事の中身）ではなく、**生成器が守るべき構造的不変条件**をテストする回帰テストを追加した（2026-07-12）。既存のGolden Master方式回帰テスト（`tests/README.md`）とは目的が異なるため区別する：Golden Masterは「エンジンの計算結果が変わっていないか」を見るのに対し、こちらは「生成器の出力が構造的に壊れていないか」を見る。
+
+**チェック項目**：
+1. `combo-data-64.json`が正確に64件
+2. slugの重複なし
+3. prev/nextが単一の直線チェーン（循環なし、分岐/合流なし、64件全てが1本で連結）
+4. 全64記事の`<title>`（正確には`'title'`配列キー）が重複なし
+5. `sitemap.xml`のmbti-blood記事URL件数が64件と一致し、JSON上の全slugが掲載されている
+
+`tests/run-all.php`の「Love Combo（MBTI×血液型）」スイートとして統合済み。テンプレート・生成器ロジックを変更して再生成した後は、`php tests/run-all.php`（または`php tests/tools/love-combo-invariants.php`単体）を実行すること。将来のMBTI×星座・血液型×星座展開時も、この不変条件チェックの枠組みをそのまま流用できる（対象ディレクトリ・件数・prev/next順序の前提を差し替えるだけ）。
