@@ -77,7 +77,8 @@ ob_start();
   .rank-table th{font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--border)}
   .rank-table td{padding:.5rem .6rem;border-bottom:1px solid var(--border)}
   .rarity-box{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin-top:1rem}
-  .rarity-box .rb-num{font-family:var(--ff-mono);font-size:1.6rem;color:var(--accent)}
+  .rarity-box .rb-level{font-family:var(--ff-serif);font-size:1.3rem;font-weight:700;color:var(--accent)}
+  .rarity-box .rb-rank{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);margin-left:.6rem}
   .faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
   .faq-item{border:1px solid var(--border);border-radius:10px;overflow:hidden}
   .faq-q{font-size:.9rem;font-weight:500;padding:.9rem 1.1rem;background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
@@ -235,7 +236,7 @@ ob_start();
   <section class="art-section" id="rarity">
     <h2>この組み合わせの位置づけ</h2>
     <div class="rarity-box">
-      <span class="rb-num"><?= $item['rarityRank'] ?></span> / 64通り中
+      <span class="rb-level"><?= htmlspecialchars($item['rarityLevel']) ?></span><span class="rb-rank">64通り中<?= htmlspecialchars($item['rarityRank']) ?></span>
       <p style="margin-top:.6rem"><?= htmlspecialchars($item['rarity_note']) ?></p>
     </div>
   </section>
