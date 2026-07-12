@@ -78,6 +78,9 @@ ob_start();
   .matome-list{padding-left:1.2rem;display:flex;flex-direction:column;gap:.6rem}
   .matome-list li{font-size:.92rem;line-height:1.8;color:#333}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
+  .rank-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.85rem}
+  .rank-table th{font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--border)}
+  .rank-table td{padding:.5rem .6rem;border-bottom:1px solid var(--border)}
   @media(max-width:560px){ .concept-grid{grid-template-columns:1fr} }
   </style>
 

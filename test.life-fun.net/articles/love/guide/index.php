@@ -4,6 +4,9 @@ require_once __DIR__ . '/../../../inc/auto-link.php';
 
 $_PUBLISHED = [
   ['slug'=>'kekka-no-mikata', 'name'=>'恋愛診断の結果の見方', 'kw'=>'Style・Tendency・Bundle・High/Mid/Lowの意味'],
+  ['slug'=>'bundle-guide', 'name'=>'Bundleとは', 'kw'=>'恋愛タイプの分類ロジック・20通りの内訳・出現率'],
+  ['slug'=>'style-guide', 'name'=>'Styleとは', 'kw'=>'7つの指標一覧・計算式・High/Mid/Lowの読み方'],
+  ['slug'=>'tendency-guide', 'name'=>'Tendencyとは', 'kw'=>'結婚志向・浮気耐性・Styleとの違い'],
 ];
 
 ob_start();
