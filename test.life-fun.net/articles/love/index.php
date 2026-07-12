@@ -10,6 +10,7 @@ $_CATEGORIES = [
   ['slug'=>'seiza', 'name'=>'星座×恋愛', 'icon'=>'⭐', 'kw'=>'12星座別の恋愛傾向（12記事）'],
   ['slug'=>'blood', 'name'=>'血液型×恋愛', 'icon'=>'🩸', 'kw'=>'A・B・O・AB型別の恋愛傾向（4記事）'],
   ['slug'=>'bundle', 'name'=>'恋愛タイプ（Bundle）', 'icon'=>'💜', 'kw'=>'5つの恋愛タイプの分類ロジック（5記事）'],
+  ['slug'=>'mbti-blood', 'name'=>'MBTI×血液型', 'icon'=>'🔀', 'kw'=>'64通りの組み合わせをどちらが優勢か分析（1/64記事・公開中）'],
 ];
 
 ob_start();
@@ -22,7 +23,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/love/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MBTI×血液型×星座で診断する恋愛傾向診断（Love Engine）の解説記事一覧。使い方ガイド・MBTI・恋愛スタイル・推定傾向・星座・血液型・恋愛タイプ、全52記事をカテゴリ別に掲載。">
+  <meta name="description" content="MBTI×血液型×星座で診断する恋愛傾向診断（Love Engine）の解説記事一覧。使い方ガイド・MBTI・恋愛スタイル・推定傾向・星座・血液型・恋愛タイプ・組み合わせ分析をカテゴリ別に掲載。">
   <title>恋愛傾向診断×解説記事一覧｜Love Engineをやさしく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -111,7 +112,7 @@ ob_start();
       </a>
       <?php endforeach; ?>
     </div>
-    <p class="note-box">全52記事が公開中です。各記事は、恋愛傾向診断エンジンが9216通りの組み合わせパターンを実際に計算した実測データに基づいて解説しています。</p>
+    <p class="note-box">基本7カテゴリ（52記事）に加え、MBTI×血液型の組み合わせ記事を順次追加中です。各記事は、恋愛傾向診断エンジンが9216通りの組み合わせパターンを実際に計算した実測データに基づいて解説しています。</p>
   </section>
 </div>
 
