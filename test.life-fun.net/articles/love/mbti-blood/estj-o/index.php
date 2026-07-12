@@ -73,6 +73,7 @@ $item = [
     ['label'=>'MBTI×血液型 一覧', 'title'=>'他の組み合わせを見る →', 'url'=>'/articles/love/mbti-blood/'],
   ],
 
-  'prev' => ['title'=>'ENTP×A型', 'url'=>'/articles/love/mbti-blood/entp-a/'],
+  'prev' => ['title'=>'ESTJ×B型', 'url'=>'/articles/love/mbti-blood/estj-b/'],
+  'next' => ['title'=>'ESTJ×AB型', 'url'=>'/articles/love/mbti-blood/estj-ab/'],
 ];
 require __DIR__ . '/../_combo-tpl.php';
