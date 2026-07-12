@@ -70,7 +70,7 @@ else:
       "comboPrimary": "REL", "comboPrimaryRate": 75.0,
       "comboSecondary": "ACT", "comboSecondaryRate": 85.2,
       "concentrationRank": 33,
-      "concentrationPercentile": 50.0,
+      "concentrationPercentile": 51.6,
       "concentrationLevel": "平均的",
       "causalRowsType": 2,
       "bundleSlug": "reliability-type",
@@ -89,7 +89,7 @@ else:
 | `comboSecondary` | `comboPrimary`が一致する部分集合（primary-matched subset）の中で、最も出現する副軸Primitive |
 | `comboSecondaryRate` | `comboSecondary`が、そのprimary-matched subset内に占める割合(%)。**全体144件に対する割合ではない** |
 | `concentrationRank` | 64通り中の`comboPrimaryRate`順位（1が最も集中度が高い）。タイブレークは`rankTiebreak`参照 |
-| `concentrationPercentile` | 64通り中の相対位置(%)。100に近いほど集中度が高い側 |
+| `concentrationPercentile` | 上位何%に位置するか（`concentrationRank`÷64×100）。小さいほど集中度が高い側。記事では「上位◯%相当」として表示する。**初期実装では逆向きの定義（100に近いほど集中度が高い）を「上位◯%」と表示する不整合があり修正した** |
 | `concentrationLevel` | 64通りの実測分布を5等分した閾値（`levelThresholds`）によるラベル |
 | `causalRowsType` | 記事のcausalRowsテーブルが2行版（協調型/拮抗型）か3行版（転換型）か |
 
@@ -97,8 +97,8 @@ else:
 
 | slug | comboPrimary | comboPrimaryRate | comboSecondary | comboSecondaryRate | rank | percentile | level |
 |---|---|---:|---|---:|---:|---:|---|
-| entp-a | REL | 75.0 | ACT | 85.2 | 33 | 50.0 | 平均的 |
-| estj-o | ACT | 81.3 | REL | 82.9 | 31 | 53.1 | 平均的 |
+| entp-a | REL | 75.0 | ACT | 85.2 | 33 | 51.6 | 平均的 |
+| estj-o | ACT | 81.3 | REL | 82.9 | 31 | 48.4 | 平均的 |
 
 両記事とも上記の確定値に合わせて修正済み（2026-07-12）。
 
@@ -220,7 +220,7 @@ else:
 
 - 分類：**拮抗型（血液型優勢）**
 - MBTI単体：ACT 52.3% ／ 血液型単体：REL 95.5%（血液型単独では最も濃い偏り）／ 組み合わせ：REL 75.0%
-- 集中度5段階評価：**平均的**（64通り中33位、上位50%相当。2-2節SSOTの確定値）
+- 集中度5段階評価：**平均的**（64通り中33位、上位51.6%相当。2-2節SSOTの確定値）
 - 副次的な発見：誠実性が主軸になったケース（108件）のうち85.2%（92件）で、行動主導性が副軸として残る。「主軸を譲っても入力の影響が完全には消えない」ことを示す数値で、記事の結論部で最も強調している
 
 **横断レビュー（1本目）で確認・反映した改善点**（2026-07-12、Managerレビュー）：
@@ -236,15 +236,54 @@ else:
 
 - ESTJ×O型の分類：**転換型**。MBTI単体：誠実性53.1%／血液型単体：情動性40.0%／組み合わせ：行動主導性81.3%
 - 因果の実体：ESTJは内部でE・T（行動主導性）とS・J（誠実性）が僅差で拮抗する構造を持つ。O型も「行動的」（行動主導性+2）と「おおらか」（情動性+2）が同じ強さで拮抗する構造を持つ。この2つの「僅差の拮抗」が組み合わさると、両者に共通する行動主導性への寄与が積み重なり、単体では優勢でなかった行動主導性が81.3%まで押し上げられる
-- 集中度5段階評価：**平均的**（64通り中31位、上位53.1%相当。2-2節SSOTの確定値）——「転換型という分類の珍しさ（4/64）」と「集中度の高さ（81.3%は平均的）」は別の軸であることを記事内で明記した
+- 集中度5段階評価：**平均的**（64通り中31位、上位48.4%相当。2-2節SSOTの確定値）——「転換型という分類の珍しさ（4/64）」と「集中度の高さ（81.3%は平均的）」は別の軸であることを記事内で明記した
 - 副軸残存率：行動主導性が主軸になったケース（117件）のうち82.9%（97件）で誠実性が副軸として残る（ENTP×A型と同じ「主軸一致サブセット内での副軸割合」方式で算出。初期実装では別方式で86.2%と誤って記載していたため2-2節の統一方式に修正済み）
 - prev/next：entp-a→estj-oの順で連結
 
 **結論**：転換型4件（ESTJ×O型・ESTJ×AB型・INTP×B型・ESFP×B型）は、causalRowsに3行目を追加する形式で問題なく執筆できる。63記事の自動生成時も、分類が「転換型」の場合のみ3行版、それ以外は2行版という条件分岐をデータ生成スクリプト側で持たせればよい（テンプレート側の分岐は不要）。全64記事の数値は`combo-master-64.json`から機械的に生成し、記事側で個別に再計算しない（2-2節参照）。
 
-## 8. 未確定事項（次回相談）
+## 8. 生成器・QAパイプライン（実装済み）
 
-- URL設計・カテゴリ名（案：`/articles/love/combo/`）
-- 64ページ全件の生成方法（テンプレート＋データ差し込みか、一部手動レビューか）
-- Scaled Content Abuse回避のための固有情報層の設計（本ドキュメントの分類・数値はGolden Master層。固有情報層に何を書くかは未定）
-- リファレンス記事（ENTP×A型）のレビュー後、残り63ページへの横展開方針
+当初の未確定事項（URL設計・生成方法・横展開方針）は全て確定・実装済み。URL は`/articles/love/mbti-blood/{slug}/`（combo案は将来のmbti-seiza/blood-seiza展開を見据えて不採用）。
+
+### 8-1. 生成器の構成（tools/）
+
+```
+tests/cases/love-final-snapshot.php（9216件 Golden Master）
+        │
+        ▼
+tools/build-combo-data.php
+        │  分類・順位・5段階評価に加え、記事執筆に必要なフル統計
+        │  （Style/Tendency分布・Bundle内訳・Primitive平均）を算出
+        ▼
+docs/love/combo-data-64.json（生成用SSOT）
+        │
+        ▼
+tools/generate-combo-articles.php
+        │  ・分類別の因果説明文を inc/mbti-trait-mapping.php・
+        │    inc/blood-trait-mapping.php の実データから組み立て
+        │  ・prev/nextチェーン自動生成
+        │  ・転換型のみcausalRows3行（テンプレート仕様、データ側で吸収）
+        │  ・手動実装済みのentp-a・estj-oはスキップ（--forceで上書き可）
+        ▼
+articles/love/mbti-blood/{slug}/index.php ×62
+        │
+        ▼
+tools/qa-combo-articles.sh
+           ①php -l 全66ファイル ②HTTP 200 全64記事
+           ③PHPエラー文字列スキャン ④prev/nextチェーン整合性
+           ⑤ハブ$_PUBLISHED 64件掲載確認
+```
+
+生成器はJSONにHTMLを持たせず、レイアウト（causalRowsの行数等）は生成器側のロジックとして保持する。テンプレート（`_combo-tpl.php`）は配列を描画するだけで分岐を持たない。
+
+### 8-2. 生成時に発見・修正した不具合（2026-07-12）
+
+1. **転換型テンプレートの前提誤り**：転換型の説明文が「MBTIと血液型は異なる主軸を持つ」前提で書かれていたが、INTP×B型・ESFP×B型は両者の単体主軸が一致（REL）したまま第3のPrimitive（TRA）へ転換するケース。`samePrimary`分岐を追加し、「単体では両方とも◯◯が優勢だが」という正しい導入文に修正。
+2. **鉤括弧の二重化**：血液型の通俗特徴（`「自由」`等、元データに鉤括弧を含む）をさらに鉤括弧で包んで`「「自由」（変化）」`となっていた。外側の鉤括弧を除去。
+3. **percentileの意味の不整合**：`concentrationPercentile`の初期定義（100に近いほど集中度が高い）を「上位◯%相当」という文言で表示していたため、18位/64が「上位73.4%」と表示される矛盾があった。定義を`rank÷64×100`（小さいほど上位）に変更し、JSON・記事・本ドキュメントを一括修正。
+
+### 8-3. 残課題
+
+- **sitemap.xml**：`/articles/love/`配下のURLはsitemap.xmlに1件も掲載されていない（combo 64記事だけでなく、既存52記事＋ハブ群も含めて未掲載）。掲載範囲の判断待ち。
+- **Scaled Content Abuse耐性の継続観察**：固有情報層は「分類＋実測値＋Trait由来の因果説明」で構成しているが、Search Console導入後にインデックス率・評価を観察して判断する。

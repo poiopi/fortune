@@ -56,7 +56,8 @@ $total = count($prelim);
 foreach ($prelim as $i => $row) {
     $rank = $i + 1;
     $rankMap[$row['key']] = $rank;
-    $percentileMap[$row['key']] = round((1 - ($rank - 1) / $total) * 100, 1);
+    // 「上位◯%」として表示する値。rank/total*100（小さいほど集中度が高い側）
+    $percentileMap[$row['key']] = round($rank / $total * 100, 1);
 }
 $allRatesAsc = array_column($prelim, 'rate'); sort($allRatesAsc);
 $p20 = $allRatesAsc[(int) round(0.2 * 63)]; $p40 = $allRatesAsc[(int) round(0.4 * 63)];

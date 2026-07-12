@@ -261,4 +261,3 @@ foreach ($combos as $i => $c) {
 
 echo "Generated: " . count($generated) . "\n";
 echo "Skipped (already published): " . implode(', ', $skipped) . "\n";
-file_put_contents($root . '/tools/.last-generated.json', json_encode($generated, JSON_PRETTY_PRINT));
