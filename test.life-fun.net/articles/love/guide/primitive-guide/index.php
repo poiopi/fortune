@@ -84,7 +84,7 @@ $item = [
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">自立性だけ説明が少ないのはなぜですか？</div>
-        <div class="faq-a">自立性は、MBTIのI（内向）からのみ、かつ他の特性より小さいスコアでしか伸びない構造になっており、5つのPrimitiveの中でスコアが伸びにくい軸です。そのため<a href="/articles/love/guide/bundle-guide/">Bundleとは</a>で解説している通り、自立性が主役になるケースは相対的に少なくなっています。</div>
+        <div class="faq-a">自立性は、MBTI（Iタイプ）・血液型（B型）・星座（一部の内面タイプ）のいずれからも加算されますが、他のPrimitiveに比べて加算される場面が限られており、最大到達スコアが低くなる構造です。そのため<a href="/articles/love/guide/bundle-guide/">Bundleとは</a>で解説している通り、自立性が主役になるケースは相対的に少なくなっています。</div>
       </div>
     </div>
   </section>
