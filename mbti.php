@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__.'/inc/mbti-data.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -205,6 +206,22 @@ body::before{
   border-radius:4px;padding:.2rem .6rem;letter-spacing:.04em;
 }
 
+.love-cta{
+  margin-top:1.25rem;text-align:center;
+  background:linear-gradient(135deg,rgba(232,113,154,.1),rgba(155,114,239,.08));
+  border:1px solid rgba(232,113,154,.25);border-radius:14px;padding:1.5rem 1.3rem;
+}
+.love-cta-eyebrow{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;color:var(--muted);margin-bottom:.7rem}
+.love-cta-title{font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.love-cta-desc{font-size:.85rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem}
+.love-cta-btn{
+  display:inline-block;font-family:var(--ff-sans);font-size:.9rem;font-weight:500;
+  background:linear-gradient(135deg,var(--rose),var(--violet));
+  border-radius:10px;padding:.8rem 2rem;color:#fff;text-decoration:none;
+  transition:opacity .2s;
+}
+.love-cta-btn:hover{opacity:.85}
+
 .retry-btn{
   width:100%;font-family:var(--ff-mono);font-size:.72rem;letter-spacing:.1em;
   background:none;border:1px solid var(--border2);border-radius:8px;
@@ -405,6 +422,13 @@ body{top:0!important}
         <div class="type-tags" id="r-famous"></div>
       </div>
 
+      <div class="love-cta">
+        <div class="love-cta-eyebrow">▼ もっと詳しく知りたい方へ</div>
+        <div class="love-cta-title">💜 MBTI×血液型×星座で診断</div>
+        <div class="love-cta-desc">恋愛傾向・相性・恋の進め方を<br>3つの性格要素から総合分析します。</div>
+        <a class="love-cta-btn" id="love-cta-link" href="/love.php">恋愛診断を始める →</a>
+      </div>
+
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <?php
       $articleIcon  = '📖';
@@ -454,24 +478,7 @@ const questions = [
   {q:'未来について考えるとき',a:['現実的に、着実に計画を立てる','夢や可能性を大きく広げて考える'],dim:'SN'},
 ];
 
-const mbtiData = {
-  INTJ:{name:'建築家',desc:'戦略的思考と強い意志を持つ完璧主義者。独自のビジョンで物事を構築する天才肌。',famous:['レオナルド・ダ・ヴィンチ','スティーブン・ホーキング','マーク・ザッカーバーグ']},
-  INTP:{name:'論理学者',desc:'知識への飽くなき探求心を持つ思想家。独創的なアイデアで問題を解く分析の達人。',famous:['アルベルト・アインシュタイン','ビル・ゲイツ','ソクラテス']},
-  ENTJ:{name:'指揮官',desc:'天性のリーダーシップで目標を達成する。カリスマ性と決断力で組織を動かす。',famous:['スティーブ・ジョブズ','ナポレオン・ボナパルト','マーガレット・サッチャー']},
-  ENTP:{name:'討論者',desc:'アイデアの探求と議論を楽しむ革新者。常識に挑戦し新しい視点を生み出す。',famous:['ベンジャミン・フランクリン','マーク・トウェイン','トーマス・エジソン']},
-  INFJ:{name:'提唱者',desc:'深い洞察力と理想主義を持つ。人を助けることに使命感を覚える稀有な存在。',famous:['マハトマ・ガンジー','マーティン・ルーサー・キング','ネルソン・マンデラ']},
-  INFP:{name:'仲介者',desc:'感受性が豊かで理想主義的な詩人。価値観に従い静かに世界をより良くしようとする。',famous:['ウィリアム・シェイクスピア','宮沢賢治','オードリー・ヘプバーン']},
-  ENFJ:{name:'主人公',desc:'人を鼓舞し導く天性の教育者。共感力と説得力で周囲に自然とポジティブな影響を与える。',famous:['バラク・オバマ','オプラ・ウィンフリー','ネルソン・マンデラ']},
-  ENFP:{name:'運動家',desc:'情熱と創造性あふれる自由な魂。あらゆる可能性を見出し、人と深くつながる。',famous:['ロビン・ウィリアムズ','マーク・トウェイン','エレン・デジェネレス']},
-  ISTJ:{name:'管理者',desc:'誠実で責任感が強い実務家。伝統と秩序を重んじ、着実に物事を進める信頼の柱。',famous:['アンジェラ・メルケル','ウォーレン・バフェット','クイーン・エリザベス2世']},
-  ISFJ:{name:'擁護者',desc:'献身的で温かく思いやり深い守護者。大切な人を静かに、しかし力強く支え続ける。',famous:['マザー・テレサ','ケイト・ミドルトン','ビヨンセ']},
-  ESTJ:{name:'幹部',desc:'秩序と規則を重んじる管理者。実務能力と統率力で組織を動かすリーダーシップの体現者。',famous:['山本五十六','ヒラリー・クリントン','フランク・シナトラ']},
-  ESFJ:{name:'領事',desc:'社交的で思いやり深い協調者。周囲の調和を保ちながら、皆を気にかける温かな存在。',famous:['テイラー・スウィフト','ビル・クリントン','ホイットニー・ヒューストン']},
-  ISTP:{name:'巨匠',desc:'冷静な観察眼と器用な手を持つ職人。問題を黙々と解決する実践的な達人。',famous:['宮本武蔵','クリント・イーストウッド','マイケル・ジョーダン']},
-  ISFP:{name:'冒険家',desc:'穏やかで好奇心旺盛なアーティスト。今この瞬間の美しさと自由を大切にする。',famous:['マイケル・ジャクソン','ブリトニー・スピアーズ','ボブ・ディラン']},
-  ESTP:{name:'起業家',desc:'エネルギッシュで行動力抜群の問題解決者。リスクを楽しみ、瞬時に状況を読んで動く。',famous:['ドナルド・トランプ','エルネスト・チェ・ゲバラ','マドンナ']},
-  ESFP:{name:'エンターテイナー',desc:'陽気で自発的な楽しさの発信源。その場を明るくし、皆を笑顔にする天性のパフォーマー。',famous:['マリリン・モンロー','エルトン・ジョン','アデル']},
-};
+const mbtiData = <?php echo json_encode(MBTI_DATA, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?>;
 
 const seizaData = [
   {name:'牡羊座',key:'aries',  color:'情熱レッド',    keyword:'新しい挑戦',compat:'射手座',luck:'★★★★☆',combo:'火のエネルギーがあなたの行動力をさらに後押し。直感を信じて躊躇なく前進することで道が開ける。'},
@@ -618,6 +625,7 @@ function showResult() {
   });
   window._shareText = `MBTI診断結果：${selectedMbti}（${m.name}）× ${s.name} でした！✨`;
   if (window.rfUpdateArticleLink) rfUpdateArticleLink(selectedMbti.toLowerCase(), selectedMbti+'（'+m.name+'）を解説', m.desc);
+  document.getElementById('love-cta-link').href = '/love.php?mbti=' + encodeURIComponent(selectedMbti);
   showStep('step-result');
   scrollToResult('step-result');
 }

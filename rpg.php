@@ -126,7 +126,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .fform label{font-family:var(--ff-rpg);font-size:.7rem;color:var(--muted)}
 .fform input{background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.6rem .9rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s;width:100%}
 .fform input:focus{border-color:var(--violet)}
-.date-input-group select{background-color:#1e1738;-webkit-appearance:none;appearance:none}
+.date-input-group select{background-color:#1e1738;-webkit-appearance:none;appearance:none;color-scheme:dark}
 .fsub{background:linear-gradient(135deg,var(--gold),var(--violet));border:none;border-radius:10px;padding:.72rem;font-family:var(--ff-rpg);font-size:.82rem;color:#fff;cursor:pointer;transition:opacity .2s;margin-top:.4rem}
 .fsub:hover{opacity:.85}
 
