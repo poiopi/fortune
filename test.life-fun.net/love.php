@@ -112,7 +112,9 @@ body::before{
 .select-title{font-family:var(--ff-serif);font-size:1.1rem;font-weight:600;color:var(--gold-lt);margin-bottom:.6rem}
 .select-hint{font-size:.8rem;color:var(--muted);margin-bottom:1.2rem;line-height:1.7}
 .select-hint a{color:var(--violet-lt);text-decoration:underline;text-underline-offset:3px}
-.date-input-group select{color-scheme:dark}
+.form-input{width:100%;background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem;font-family:var(--ff-sans);font-size:1rem;color:var(--text);outline:none;transition:border-color .2s}
+.form-input:focus{border-color:var(--violet)}
+.date-input-group select.form-input{background-color:#1e1738;-webkit-appearance:none;appearance:none;color-scheme:dark}
 
 .mbti-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:1.5rem}
 .mbti-btn{background:rgba(155,114,239,.06);border:1px solid var(--border);border-radius:8px;padding:.6rem .2rem;text-align:center;font-family:var(--ff-mono);font-size:.8rem;color:var(--muted);cursor:pointer;transition:background .2s,border-color .2s,color .2s;letter-spacing:.04em}
@@ -235,7 +237,7 @@ body{top:0!important}
       <div class="select-title">生年月日を選んでください</div>
       <?php
       require_once __DIR__.'/inc/birthday-input.php';
-      render_birthdate_input(['prefix' => 'birth', 'hiddenName' => 'birthday', 'defaultYear' => null]);
+      render_birthdate_input(['prefix' => 'birth', 'hiddenName' => 'birthday']);
       ?>
       <div id="submit-error"></div>
       <div class="nav-row">
