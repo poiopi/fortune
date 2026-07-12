@@ -13,8 +13,12 @@ declare(strict_types=1);
  * Love DomainはPresentationの概念を参照しない、の逆方向＝Presentationヘルパーが
  * rawを扱うこと自体は問題ないが、Composer側からこのファイルへの依存は作らない）。
  *
- * blood記事は現状存在しないため、常にnullを返す（Managerレビュー2026-07-10で
- * 確認済み。articles/blood/ 自体が未作成）。
+ * 2026-07-12、Bundle設計レビュー時に2つの内部リンク不具合を発見・修正：
+ * ①血液型記事4本（articles/love/blood/）公開後もlove_resolveBloodArticleLink()が
+ *   常にnullを返す実装のまま放置されていた。
+ * ②love_resolveSeizaArticleLink()が、Love版星座12記事（articles/love/seiza/）
+ *   公開後も旧・汎用星座記事（articles/seiza/）へのURLを返し続けていた
+ *   （love_resolveMbtiArticleLink()で既に修正済みだったのと同種の不具合）。
  */
 
 require_once __DIR__ . '/seiza-data.php';
@@ -52,12 +56,27 @@ function love_resolveMbtiArticleLink(array $mbtiResult): array {
 }
 
 /**
- * 血液型記事は現状存在しないため常にnull（docs/love/07-implementation.md）。
- *
+ * BLOOD_DATAのキー（'A'|'B'|'O'|'AB'）→articles/love/blood/配下のslug対応表。
+ */
+const BLOOD_ARTICLE_SLUGS = [
+    'A' => 'a-love',
+    'B' => 'b-love',
+    'O' => 'o-love',
+    'AB' => 'ab-love',
+];
+
+/**
  * @param array{raw: array{type: string}} $bloodResult bloodEngine()の出力
+ * @return array{url: string, label: string}|null
  */
 function love_resolveBloodArticleLink(array $bloodResult): ?array {
-    return null;
+    $type = $bloodResult['raw']['type'];
+    if (!isset(BLOOD_ARTICLE_SLUGS[$type])) return null;
+    $slug = BLOOD_ARTICLE_SLUGS[$type];
+    return [
+        'url' => "/articles/love/blood/{$slug}/",
+        'label' => "{$type}型の恋愛解説",
+    ];
 }
 
 /**
@@ -70,7 +89,7 @@ function love_resolveSeizaArticleLink(array $seizaResult): ?array {
     $slug = SEIZA_ARTICLE_SLUGS[$signIndex];
     $signName = SEIZA_SIGNS[$signIndex]['name'];
     return [
-        'url' => "/articles/seiza/{$slug}/",
+        'url' => "/articles/love/seiza/{$slug}/",
         'label' => "{$signName}の恋愛解説",
     ];
 }
