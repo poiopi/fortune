@@ -102,5 +102,8 @@ HTML,
     ['label'=>'Bundleとは', 'title'=>'恋愛タイプの分類ロジックを見る →', 'url'=>'/articles/love/guide/bundle-guide/'],
     ['label'=>'Style指標一覧', 'title'=>'7指標の詳しい記事を見る →', 'url'=>'/articles/love/style/'],
   ],
+
+  'prev' => ['title'=>'Bundleとは', 'url'=>'/articles/love/guide/bundle-guide/'],
+  'next' => ['title'=>'Tendencyとは', 'url'=>'/articles/love/guide/tendency-guide/'],
 ];
 require __DIR__ . '/../_guide-tpl.php';

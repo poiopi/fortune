@@ -68,7 +68,7 @@ $item = [
     <h2>恋愛タイプ（Bundle）とは</h2>
     <p>Bundleは、5つのPrimitiveのうち特に強く出ている上位2つの組み合わせで恋愛タイプを分類したものです。例えば「行動主導性×情動性」のように、2つの軸の組み合わせで表現されます。</p>
     <p>Bundleが重要なのは、MBTI・血液型・星座という3つの異なる入力が、最終的にどのプリミティブへ集約されるかを1つの結果として示している点です。41本の記事で見てきたように、同じ「行動主導性×情動性」というBundleでも、それがENTPの性格由来なのか、O型の血液型由来なのか、牡羊座の星座由来なのかは、組み合わせによって変わります。</p>
-    <p>Bundleそれぞれの意味を解説する記事は、順次公開予定です。</p>
+    <p>Bundleの仕組み自体は<a href="/articles/love/guide/bundle-guide/" class="al-link">「Bundleとは」</a>で詳しく解説しています。</p>
   </section>
 
   <section class="art-section" id="9216">
@@ -114,5 +114,7 @@ HTML,
     ['label'=>'Style指標一覧', 'title'=>'積極性・愛情表現など7指標を見る →', 'url'=>'/articles/love/style/'],
     ['label'=>'星座×恋愛', 'title'=>'12星座別の恋愛傾向を見る →', 'url'=>'/articles/love/seiza/'],
   ],
+
+  'next' => ['title'=>'Bundleとは', 'url'=>'/articles/love/guide/bundle-guide/'],
 ];
 require __DIR__ . '/../_guide-tpl.php';

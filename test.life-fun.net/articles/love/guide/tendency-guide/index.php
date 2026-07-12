@@ -80,5 +80,8 @@ HTML,
     ['label'=>'Styleとは', 'title'=>'恋愛スタイル7指標を見る →', 'url'=>'/articles/love/guide/style-guide/'],
     ['label'=>'Tendency指標一覧', 'title'=>'2指標の詳しい記事を見る →', 'url'=>'/articles/love/tendency/'],
   ],
+
+  'prev' => ['title'=>'Styleとは', 'url'=>'/articles/love/guide/style-guide/'],
+  'next' => ['title'=>'9216パターンの仕組み', 'url'=>'/articles/love/guide/9216-patterns/'],
 ];
 require __DIR__ . '/../_guide-tpl.php';

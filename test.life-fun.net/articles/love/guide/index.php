@@ -7,6 +7,8 @@ $_PUBLISHED = [
   ['slug'=>'bundle-guide', 'name'=>'Bundleとは', 'kw'=>'恋愛タイプの分類ロジック・20通りの内訳・出現率'],
   ['slug'=>'style-guide', 'name'=>'Styleとは', 'kw'=>'7つの指標一覧・計算式・High/Mid/Lowの読み方'],
   ['slug'=>'tendency-guide', 'name'=>'Tendencyとは', 'kw'=>'結婚志向・浮気耐性・Styleとの違い'],
+  ['slug'=>'9216-patterns', 'name'=>'9216パターンの仕組み', 'kw'=>'MBTI16×血液型4×星座144・Golden Master'],
+  ['slug'=>'primitive-guide', 'name'=>'Primitiveとは', 'kw'=>'5つの性格プリミティブ・内部計算軸'],
 ];
 
 ob_start();
@@ -94,7 +96,7 @@ ob_start();
       </a>
       <?php endforeach; ?>
     </div>
-    <p class="note-box">現在公開中は<?= count($_PUBLISHED) ?>本です。Primitive・Bundleそれぞれの詳しい解説は順次公開予定です。</p>
+    <p class="note-box">Style・Tendency・Bundle・Primitiveの意味から、9216パターンの実測データの仕組みまで、全<?= count($_PUBLISHED) ?>本のガイドを公開中です。</p>
   </section>
 </div>
 

@@ -139,6 +139,16 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
+  <?php
+  $prevTitle = !empty($item['prev']) ? $item['prev']['title'] : null;
+  $prevUrl   = !empty($item['prev']) ? $item['prev']['url'] : null;
+  $nextTitle = !empty($item['next']) ? $item['next']['title'] : null;
+  $nextUrl   = !empty($item['next']) ? $item['next']['url'] : null;
+  $listTitle = '使い方ガイド 一覧';
+  $listUrl   = '/articles/love/guide/';
+  require __DIR__.'/../../../inc/article-nav.php';
+  ?>
+
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
     <?php

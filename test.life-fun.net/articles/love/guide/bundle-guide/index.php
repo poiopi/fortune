@@ -104,5 +104,8 @@ HTML,
     ['label'=>'MBTI×恋愛', 'title'=>'16タイプ別の恋愛傾向を見る →', 'url'=>'/articles/love/mbti/'],
     ['label'=>'血液型×恋愛', 'title'=>'A・B・O・AB型別の恋愛傾向を見る →', 'url'=>'/articles/love/blood/'],
   ],
+
+  'prev' => ['title'=>'恋愛診断の結果の見方', 'url'=>'/articles/love/guide/kekka-no-mikata/'],
+  'next' => ['title'=>'Styleとは', 'url'=>'/articles/love/guide/style-guide/'],
 ];
 require __DIR__ . '/../_guide-tpl.php';
