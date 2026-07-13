@@ -104,7 +104,7 @@ ob_start();
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"恋愛傾向診断","item":"https://life-fun.net/love"},
+      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"恋愛タイプ（Bundle）","item":"https://life-fun.net/articles/love/bundle/"},
       {"@type":"ListItem","position":4,"name":"<?= htmlspecialchars($item['name']) ?>","item":"https://life-fun.net/articles/love/bundle/<?= $item['slug'] ?>/"}
     ]
@@ -124,7 +124,7 @@ ob_start();
 
   <nav class="breadcrumb">
     <a href="/">占いPortal</a><span>›</span>
-    <a href="/love">恋愛傾向診断</a><span>›</span>
+    <a href="/articles/">占い解説ガイド</a><span>›</span>
     <a href="/articles/love/bundle/">恋愛タイプ（Bundle）</a><span>›</span>
     <?= htmlspecialchars($item['name']) ?>
   </nav>

@@ -174,7 +174,7 @@ ob_start();
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"タロット占い","item":"https://life-fun.net/tarot"},
+      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},
       {"@type":"ListItem","position":4,"name":"愚者（THE FOOL）","item":"https://life-fun.net/articles/tarot/fool/"}
     ]
@@ -192,7 +192,7 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>愚者（THE FOOL）
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>愚者（THE FOOL）
   </nav>
 
   <div class="art-hero">
