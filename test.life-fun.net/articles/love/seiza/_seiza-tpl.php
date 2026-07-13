@@ -108,9 +108,9 @@ ob_start();
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"星座×恋愛","item":"https://life-fun.net/articles/love/seiza/"},
-      {"@type":"ListItem","position":4,"name":"<?= htmlspecialchars($item['name'].'の恋愛傾向') ?>","item":"https://life-fun.net/articles/love/seiza/<?= $item['slug'] ?>/"}
+      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"恋愛傾向診断（Love Engine）解説記事一覧","item":"https://life-fun.net/articles/love/"},
+      {"@type":"ListItem","position":4,"name":"星座×恋愛","item":"https://life-fun.net/articles/love/seiza/"},
+      {"@type":"ListItem","position":5,"name":"<?= htmlspecialchars($item['name'].'の恋愛傾向') ?>","item":"https://life-fun.net/articles/love/seiza/<?= $item['slug'] ?>/"}
     ]
   }
   </script>
@@ -129,6 +129,7 @@ ob_start();
   <nav class="breadcrumb">
     <a href="/">占いPortal</a><span>›</span>
     <a href="/articles/">占い解説ガイド</a><span>›</span>
+    <a href="/articles/love/">恋愛傾向診断（Love Engine）解説記事一覧</a><span>›</span>
     <a href="/articles/love/seiza/">星座×恋愛</a><span>›</span>
     <?= htmlspecialchars($item['name']) ?>
   </nav>

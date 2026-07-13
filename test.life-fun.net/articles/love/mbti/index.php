@@ -90,6 +90,7 @@ ob_start();
   <nav class="breadcrumb">
     <a href="/">占いPortal</a><span>›</span>
     <a href="/articles/">占い解説ガイド</a><span>›</span>
+    <a href="/articles/love/">恋愛傾向診断（Love Engine）解説記事一覧</a><span>›</span>
     MBTI×恋愛
   </nav>
 
