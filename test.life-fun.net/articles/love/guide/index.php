@@ -76,7 +76,7 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb">
     <a href="/">占いPortal</a><span>›</span>
-    <a href="/love">恋愛傾向診断</a><span>›</span>
+    <a href="/articles/">占い解説ガイド</a><span>›</span>
     使い方ガイド
   </nav>
 
