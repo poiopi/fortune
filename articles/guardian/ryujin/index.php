@@ -61,7 +61,7 @@ ob_start();
 <body>
 <header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/guardian" class="art-back">👻 守護霊を診断する →</a></div></header>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/guardian/">守護霊ガイド</a><span>›</span>龍神</nav>
+  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/guardian/">守護霊ガイド</a><span>›</span>龍神</nav>
 
   <div class="art-hero">
     <div class="art-hero-text">

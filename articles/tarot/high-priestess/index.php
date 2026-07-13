@@ -55,12 +55,12 @@ ob_start();
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"女教皇は恋愛でどういう意味？","acceptedAnswer":{"@type":"Answer","text":"感情より直感を信じるよう促しています。言葉ではなく空気を読み、相手の本音を感じ取ることが大切な時期です。"}},{"@type":"Question","name":"女教皇の逆位置は何を意味する？","acceptedAnswer":{"@type":"Answer","text":"直感を無視している、または秘密を抱えているサインです。知っていることを隠すことで生じる歪みへの警告でもあります。"}},{"@type":"Question","name":"女教皇と魔術師の違いは？","acceptedAnswer":{"@type":"Answer","text":"魔術師は「行動」、女教皇は「待機と観察」。方向性が真逆のカードです。魔術師が動くなら、女教皇は待つ。"}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"タロット占い","item":"https://life-fun.net/tarot"},{"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},{"@type":"ListItem","position":4,"name":"女教皇（THE HIGH PRIESTESS）","item":"https://life-fun.net/articles/tarot/high-priestess/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},{"@type":"ListItem","position":4,"name":"女教皇（THE HIGH PRIESTESS）","item":"https://life-fun.net/articles/tarot/high-priestess/"}]}</script>
 </head>
 <body>
 <header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/tarot" class="art-back">🔮 タロットを占う →</a></div></header>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>女教皇（THE HIGH PRIESTESS）</nav>
+  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>女教皇（THE HIGH PRIESTESS）</nav>
   <div class="art-hero">
     <div class="art-hero-text">
       <span class="art-label">TAROT · 大アルカナ II</span>

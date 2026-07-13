@@ -51,12 +51,12 @@ ob_start();
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"女帝は妊娠・結婚を意味しますか？","acceptedAnswer":{"@type":"Answer","text":"豊かさと創造の象徴として、そのような展開の予兆とされることがあります。ただし文字通りではなく、新しいものを生み出す喜びの象徴として読むことが基本です。"}},{"@type":"Question","name":"女帝の逆位置は何を意味する？","acceptedAnswer":{"@type":"Answer","text":"依存・過保護・創造力の停滞を示します。自分を大切にできていない、または誰かに依存しすぎているサインです。"}},{"@type":"Question","name":"女帝が仕事で出たら？","acceptedAnswer":{"@type":"Answer","text":"クリエイティブなプロジェクトや育成に関わる仕事で吉です。与えること・育てることが評価につながります。"}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"タロット占い","item":"https://life-fun.net/tarot"},{"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},{"@type":"ListItem","position":4,"name":"女帝（THE EMPRESS）","item":"https://life-fun.net/articles/tarot/empress/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},{"@type":"ListItem","position":4,"name":"女帝（THE EMPRESS）","item":"https://life-fun.net/articles/tarot/empress/"}]}</script>
 </head>
 <body>
 <header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/tarot" class="art-back">🔮 タロットを占う →</a></div></header>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>女帝（THE EMPRESS）</nav>
+  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>女帝（THE EMPRESS）</nav>
   <div class="art-hero">
     <div class="art-hero-text">
       <span class="art-label">TAROT · 大アルカナ III</span>

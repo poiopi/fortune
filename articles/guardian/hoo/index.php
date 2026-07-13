@@ -37,12 +37,12 @@ ob_start();
   @media(max-width:600px){.art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}.guardian-visual{width:130px}.trait-grid{grid-template-columns:1fr}}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"守護霊ガイド","item":"https://life-fun.net/articles/guardian/"},{"@type":"ListItem","position":3,"name":"鳳凰の守護者","item":"https://life-fun.net/articles/guardian/hoo/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"守護霊ガイド","item":"https://life-fun.net/articles/guardian/"},{"@type":"ListItem","position":4,"name":"鳳凰の守護者","item":"https://life-fun.net/articles/guardian/hoo/"}]}</script>
 </head>
 <body>
 <header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/guardian" class="art-back">👻 守護霊を診断する →</a></div></header>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/guardian/">守護霊ガイド</a><span>›</span>鳳凰の守護者</nav>
+  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/guardian/">守護霊ガイド</a><span>›</span>鳳凰の守護者</nav>
   <div class="art-hero">
     <div class="art-hero-text">
       <span class="art-label">GUARDIAN · 神格・天界系</span>

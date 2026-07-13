@@ -51,12 +51,12 @@ ob_start();
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"皇帝は怖いカードですか？","acceptedAnswer":{"@type":"Answer","text":"怖くはありません。秩序と安定の象徴です。権威的に見えますが、本質的には保護者。計画・ルール・構造によって守られる安心感を示しています。"}},{"@type":"Question","name":"皇帝が恋愛で出たら？","acceptedAnswer":{"@type":"Answer","text":"正位置は安定と誠実さを示します。責任を持って相手に向き合う時期のサインです。逆位置は支配的な関係への警告です。"}},{"@type":"Question","name":"皇帝と女帝の違いは？","acceptedAnswer":{"@type":"Answer","text":"女帝が感性・豊かさなら、皇帝は理性・構造を体現します。対になる存在で、二人合わせてバランスが生まれます。"}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"タロット占い","item":"https://life-fun.net/tarot"},{"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},{"@type":"ListItem","position":4,"name":"皇帝（THE EMPEROR）","item":"https://life-fun.net/articles/tarot/emperor/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},{"@type":"ListItem","position":4,"name":"皇帝（THE EMPEROR）","item":"https://life-fun.net/articles/tarot/emperor/"}]}</script>
 </head>
 <body>
 <header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/tarot" class="art-back">🔮 タロットを占う →</a></div></header>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>皇帝（THE EMPEROR）</nav>
+  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>皇帝（THE EMPEROR）</nav>
   <div class="art-hero">
     <div class="art-hero-text">
       <span class="art-label">TAROT · 大アルカナ IV</span>

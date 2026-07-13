@@ -90,9 +90,9 @@ ob_start();
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"恋愛傾向診断","item":"https://life-fun.net/love"},
-      {"@type":"ListItem","position":3,"name":"使い方ガイド","item":"https://life-fun.net/articles/love/guide/"},
-      {"@type":"ListItem","position":4,"name":"<?= htmlspecialchars($item['title']) ?>","item":"https://life-fun.net/articles/love/guide/<?= $item['slug'] ?>/"}
+      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"恋愛傾向診断（Love Engine）解説記事一覧","item":"https://life-fun.net/articles/love/"},
+      {"@type":"ListItem","position":4,"name":"使い方ガイド","item":"https://life-fun.net/articles/love/guide/"},
+      {"@type":"ListItem","position":5,"name":"<?= htmlspecialchars($item['title']) ?>","item":"https://life-fun.net/articles/love/guide/<?= $item['slug'] ?>/"}
     ]
   }
   </script>
@@ -110,7 +110,8 @@ ob_start();
 
   <nav class="breadcrumb">
     <a href="/">占いPortal</a><span>›</span>
-    <a href="/love">恋愛傾向診断</a><span>›</span>
+    <a href="/articles/">占い解説ガイド</a><span>›</span>
+    <a href="/articles/love/">恋愛傾向診断（Love Engine）解説記事一覧</a><span>›</span>
     <a href="/articles/love/guide/">使い方ガイド</a><span>›</span>
     <?= htmlspecialchars($item['navTitle']) ?>
   </nav>

@@ -73,8 +73,8 @@ ob_start();
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"恋愛傾向診断","item":"https://life-fun.net/love"},
-      {"@type":"ListItem","position":3,"name":"解説記事一覧","item":"https://life-fun.net/articles/love/"}
+      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
+      {"@type":"ListItem","position":3,"name":"恋愛傾向診断（Love Engine）解説記事一覧","item":"https://life-fun.net/articles/love/"}
     ]
   }
   </script>
@@ -91,8 +91,8 @@ ob_start();
 <div class="wrap">
   <nav class="breadcrumb">
     <a href="/">占いPortal</a><span>›</span>
-    <a href="/love">恋愛傾向診断</a><span>›</span>
-    解説記事一覧
+    <a href="/articles/">占い解説ガイド</a><span>›</span>
+    恋愛傾向診断（Love Engine）解説記事一覧
   </nav>
 
   <div class="art-hero">
