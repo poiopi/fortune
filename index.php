@@ -568,7 +568,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <span class="hero-eyebrow h-d2">Free Fortune Telling · 占いPortal</span>
     <div class="hero-deco h-d3"><span>✦ ── ✦ ── ✦</span></div>
     <h1 class="hero-h1 h-d4">無料占いポータル</h1>
-    <span class="hero-sub h-d5">星と運命の交差点 · 14種類の占術で今を読み解く</span>
+    <span class="hero-sub h-d5">星と運命の交差点 · 16種類の占術で今を読み解く</span>
     <div class="hero-pillars h-d6">
       <?php
       // Hero直下のピル：URL・アイコンは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として利用（二重管理を避ける）。
@@ -612,7 +612,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
     <h2 class="section-title">占いを選ぶ</h2>
-    <p class="section-sub">15種類の占術から、今のあなたに合ったものを</p>
+    <p class="section-sub">16種類の占術から、今のあなたに合ったものを</p>
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
