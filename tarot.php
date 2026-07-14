@@ -551,6 +551,7 @@ function showResult() {
   const sec = document.getElementById('result-section');
   sec.style.display = 'block';
   if (typeof trackEvent === 'function') trackEvent('fortune_result_view', {});
+  if (window.rfUpdateArticleLink) rfUpdateArticleLink(card.img, card.name + 'の意味を詳しく見る', 'カードの象徴・正位置逆位置の意味を解説');
   sec.innerHTML = `
     <div class="result-header fade-in">
       <div class="chosen-label">あなたが選んだカード</div>

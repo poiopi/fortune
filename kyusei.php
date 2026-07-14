@@ -425,6 +425,9 @@ body{top:0!important}
     $retryValue  = '/kyusei.php';
     require __DIR__.'/inc/result-footer.php';
     ?>
+    <script>
+    if (window.rfUpdateArticleLink) rfUpdateArticleLink('<?= (int)$result['star'] ?>', '本命星「第<?= (int)$result['star'] ?>星」の詳しい特徴を見る', '性格・恋愛運・仕事運・相性を解説');
+    </script>
   </div>
 
   <?php endif; ?>

@@ -769,6 +769,8 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
     <p class="nichishu-desc">${nd.desc}</p>
   `;
 
+  if (window.rfUpdateArticleLink) rfUpdateArticleLink(STEMS[dp.stem], '日主「'+STEMS[dp.stem]+'」の詳しい特徴を見る', '性格・恋愛運・仕事運・相性を解説');
+
   // ── 天中殺・律音 ──
   const dayCycle = (getJDN(year, month, day) + 49) % 60;
   const tcsBranches = getTenchusatsu(dayCycle);

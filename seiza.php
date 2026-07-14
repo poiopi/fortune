@@ -469,6 +469,8 @@ function _renderResult(signIdx, innerIdx, tzCode, dateLine) {
     </div>
   `;
 
+  if (window.rfUpdateArticleLink) rfUpdateArticleLink(sign.code, sign.name + 'の詳しい特徴を見る', '性格・恋愛・相性を詳しく解説');
+
   document.getElementById('innerBlock').innerHTML = `
     <div class="result-block-title">🌙 内面タイプ ─ ${inner.name}</div>
     <div class="result-block-body">${inner.desc}</div>
