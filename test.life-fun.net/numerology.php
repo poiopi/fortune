@@ -510,6 +510,9 @@ body{top:0!important}
     $retryValue   = '/numerology.php';
     require __DIR__.'/inc/result-footer.php';
     ?>
+    <script>
+    if (window.rfUpdateArticleLink) rfUpdateArticleLink('<?= (int)$lifePathNum ?>', 'ライフパスナンバー「<?= (int)$lifePathNum ?>」の詳しい意味を見る', '数字が示す人生の目的・使命を解説');
+    </script>
   </div>
 
   <?php endif; ?>

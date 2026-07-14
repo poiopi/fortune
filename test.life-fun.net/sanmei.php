@@ -574,6 +574,8 @@ function _calcAndRender(year, month, day) {
     <div style="margin-top:.5rem;font-family:var(--ff-mono);font-size:.6rem;color:var(--muted)">生年月日をもとに算出</div>`;
   document.getElementById('gogyouSection').innerHTML = gogyouHTML;
 
+  if (window.rfUpdateArticleLink) rfUpdateArticleLink(genme.id, genme.name + 'の詳しい特徴を見る', '性格・恋愛・適職・相性を解説');
+
   // 元命ブロック
   document.getElementById('genmeBlock').innerHTML = `
     <div class="result-block-title">☯ あなたの本質 ─ 元命「${genme.name}」</div>

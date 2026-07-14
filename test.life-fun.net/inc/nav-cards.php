@@ -61,6 +61,48 @@ $_RESULT_TYPE_ARTICLES = [
     'VI' => '/articles/seiza/virgo/',       'LI' => '/articles/seiza/libra/',
     'SC' => '/articles/seiza/scorpio/',     'SA' => '/articles/seiza/sagittarius/',
   ],
+  'tarot' => [
+    'fool' => '/articles/tarot/fool/',               'magician' => '/articles/tarot/magician/',
+    'high-priestess' => '/articles/tarot/high-priestess/', 'empress' => '/articles/tarot/empress/',
+    'emperor' => '/articles/tarot/emperor/',         'hierophant' => '/articles/tarot/hierophant/',
+    'lovers' => '/articles/tarot/lovers/',           'chariot' => '/articles/tarot/chariot/',
+    'strength' => '/articles/tarot/strength/',       'hermit' => '/articles/tarot/hermit/',
+    'wheel' => '/articles/tarot/wheel/',             'justice' => '/articles/tarot/justice/',
+    'hanged-man' => '/articles/tarot/hanged-man/',   'death' => '/articles/tarot/death/',
+    'temperance' => '/articles/tarot/temperance/',   'devil' => '/articles/tarot/devil/',
+    'tower' => '/articles/tarot/tower/',             'star' => '/articles/tarot/star/',
+    'moon' => '/articles/tarot/moon/',               'sun' => '/articles/tarot/sun/',
+    'judgement' => '/articles/tarot/judgement/',     'world' => '/articles/tarot/world/',
+  ],
+  'sanmei' => [
+    'GM00' => '/articles/sanmei/kansaku/', 'GM01' => '/articles/sanmei/sekimon/',
+    'GM02' => '/articles/sanmei/houkaku/', 'GM03' => '/articles/sanmei/chousho/',
+    'GM04' => '/articles/sanmei/rokuson/', 'GM05' => '/articles/sanmei/shiroku/',
+    'GM06' => '/articles/sanmei/shaki/',   'GM07' => '/articles/sanmei/kengyu/',
+    'GM08' => '/articles/sanmei/ryuko/',   'GM09' => '/articles/sanmei/gyokudo/',
+  ],
+  'shichu' => [
+    '甲' => '/articles/shichu/kinoe/',      '乙' => '/articles/shichu/kinoto/',
+    '丙' => '/articles/shichu/hinoe/',      '丁' => '/articles/shichu/hinoto/',
+    '戊' => '/articles/shichu/tsuchinoe/',  '己' => '/articles/shichu/tsuchinoto/',
+    '庚' => '/articles/shichu/kanoe/',      '辛' => '/articles/shichu/kanoto/',
+    '壬' => '/articles/shichu/mizunoe/',    '癸' => '/articles/shichu/mizunoto/',
+  ],
+  'kyusei' => [
+    '1' => '/articles/kyusei/ippaku/',     '2' => '/articles/kyusei/nikoku/',
+    '3' => '/articles/kyusei/sanpeki/',    '4' => '/articles/kyusei/shiryoku/',
+    '5' => '/articles/kyusei/goko/',       '6' => '/articles/kyusei/roppaku/',
+    '7' => '/articles/kyusei/shichiseki/', '8' => '/articles/kyusei/hakkudo/',
+    '9' => '/articles/kyusei/kyushi/',
+  ],
+  'numerology' => [
+    '1' => '/articles/numerology/1/', '2' => '/articles/numerology/2/',
+    '3' => '/articles/numerology/3/', '4' => '/articles/numerology/4/',
+    '5' => '/articles/numerology/5/', '6' => '/articles/numerology/6/',
+    '7' => '/articles/numerology/7/', '8' => '/articles/numerology/8/',
+    '9' => '/articles/numerology/9/', '11' => '/articles/numerology/11/',
+    '22' => '/articles/numerology/22/', '33' => '/articles/numerology/33/',
+  ],
 ];
 
 // featured_score上位N件を返す
