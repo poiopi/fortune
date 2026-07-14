@@ -600,13 +600,18 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 </section>
 
 <!-- ══ サイトの理念 ══ -->
-<section class="wrap" style="max-width:720px;padding:2.5rem 1.2rem;text-align:center">
-  <span class="section-label">Our Philosophy</span>
-  <p style="font-size:.92rem;line-height:2;color:rgba(232,226,245,.82);margin-top:1rem;text-align:left">
-    占いを「結果を見て終わり」にせず、結果の背景や考え方まで理解できる体験を提供したいと考えています。<br><br>
-    四柱推命・算命学・タロット・九星気学・MBTIなど、それぞれの占術や診断が持つ考え方を尊重しながら、診断結果と解説記事を組み合わせ、楽しみながら理解を深められるサイトを運営しています。<br><br>
-    コンテンツや診断ロジックは、公開して終わりにせず、より分かりやすく、楽しみながら理解を深められる体験を目指して、継続的に見直し・改善に取り組んでいます。
+<section class="wrap" style="max-width:600px;padding:2rem 1.2rem;text-align:center">
+  <div class="pb-gold-line" style="margin-bottom:1rem"></div>
+  <h2 style="font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--text);letter-spacing:.05em;margin-bottom:.9rem">このサイトが目指すもの</h2>
+  <p style="font-size:.88rem;line-height:1.9;color:rgba(232,226,245,.8);margin-bottom:1.3rem">
+    占いを「結果を見るだけ」で終わらせず、<br>結果の背景や考え方まで理解できる体験を目指しています。
   </p>
+  <ul style="list-style:none;display:inline-flex;flex-direction:column;gap:.6rem;text-align:left;font-size:.85rem;color:rgba(232,226,245,.85)">
+    <li><span style="color:var(--gold)">✓</span> 14種類の占術・診断から、自分に合ったものを選べる</li>
+    <li><span style="color:var(--gold)">✓</span> 診断結果と解説記事をつなげて、理解を深められる</li>
+    <li><span style="color:var(--gold)">✓</span> コンテンツ・診断ロジックを継続的に見直し・改善</li>
+  </ul>
+  <div class="pb-gold-line" style="margin-top:1.3rem"></div>
 </section>
 
 <div class="parallax-band">
