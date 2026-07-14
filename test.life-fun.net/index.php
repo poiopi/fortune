@@ -568,7 +568,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <span class="hero-eyebrow h-d2">Free Fortune Telling · 占いPortal</span>
     <div class="hero-deco h-d3"><span>✦ ── ✦ ── ✦</span></div>
     <h1 class="hero-h1 h-d4">無料占いポータル</h1>
-    <span class="hero-sub h-d5">星と運命の交差点 · 14種類の占術で今を読み解く</span>
+    <span class="hero-sub h-d5">星と運命の交差点 · 16種類の占術で今を読み解く</span>
     <div class="hero-pillars h-d6">
       <?php
       // Hero直下のピル：URL・アイコンは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として利用（二重管理を避ける）。
@@ -601,17 +601,17 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 
 <!-- ══ サイトの理念 ══ -->
 <section class="wrap" style="max-width:600px;padding:2rem 1.2rem;text-align:center">
-  <div class="pb-gold-line" style="margin-bottom:1rem"></div>
+  <div class="pb-gold-line" style="margin:0 auto 1rem"></div>
   <h2 style="font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--text);letter-spacing:.05em;margin-bottom:.9rem">このサイトが目指すもの</h2>
   <p style="font-size:.88rem;line-height:1.9;color:rgba(232,226,245,.8);margin-bottom:1.3rem">
     占いを「結果を見るだけ」で終わらせず、<br>結果の背景や考え方まで理解できる体験を目指しています。
   </p>
   <ul style="list-style:none;display:inline-flex;flex-direction:column;gap:.6rem;text-align:left;font-size:.85rem;color:rgba(232,226,245,.85)">
-    <li><span style="color:var(--gold)">✓</span> 14種類の占術・診断から、自分に合ったものを選べる</li>
+    <li><span style="color:var(--gold)">✓</span> 16種類の占術・診断から、自分に合ったものを選べる</li>
     <li><span style="color:var(--gold)">✓</span> 診断結果と解説記事をつなげて、理解を深められる</li>
     <li><span style="color:var(--gold)">✓</span> コンテンツ・診断ロジックを継続的に見直し・改善</li>
   </ul>
-  <div class="pb-gold-line" style="margin-top:1.3rem"></div>
+  <div class="pb-gold-line" style="margin:1.3rem auto 0"></div>
 </section>
 
 <div class="parallax-band">
@@ -627,7 +627,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
     <h2 class="section-title">占いを選ぶ</h2>
-    <p class="section-sub">15種類の占術から、今のあなたに合ったものを</p>
+    <p class="section-sub">16種類の占術から、今のあなたに合ったものを</p>
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
