@@ -53,6 +53,14 @@ $_RESULT_TYPE_ARTICLES = [
     'istp' => '/articles/mbti/istp/', 'isfp' => '/articles/mbti/isfp/',
     'estp' => '/articles/mbti/estp/', 'esfp' => '/articles/mbti/esfp/',
   ],
+  'seiza' => [
+    'CP' => '/articles/seiza/capricorn/',   'AQ' => '/articles/seiza/aquarius/',
+    'PI' => '/articles/seiza/pisces/',      'AR' => '/articles/seiza/aries/',
+    'TA' => '/articles/seiza/taurus/',      'GE' => '/articles/seiza/gemini/',
+    'CA' => '/articles/seiza/cancer/',      'LE' => '/articles/seiza/leo/',
+    'VI' => '/articles/seiza/virgo/',       'LI' => '/articles/seiza/libra/',
+    'SC' => '/articles/seiza/scorpio/',     'SA' => '/articles/seiza/sagittarius/',
+  ],
 ];
 
 // featured_score上位N件を返す
