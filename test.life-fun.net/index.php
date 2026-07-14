@@ -599,21 +599,6 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   </div>
 </section>
 
-<!-- ══ サイトの理念 ══ -->
-<section class="wrap" style="max-width:600px;padding:2rem 1.2rem;text-align:center">
-  <div class="pb-gold-line" style="margin:0 auto 1rem"></div>
-  <h2 style="font-family:var(--ff-serif);font-size:1.15rem;font-weight:700;color:var(--text);letter-spacing:.05em;margin-bottom:.9rem">このサイトが目指すもの</h2>
-  <p style="font-size:.88rem;line-height:1.9;color:rgba(232,226,245,.8);margin-bottom:1.3rem">
-    占いを「結果を見るだけ」で終わらせず、<br>結果の背景や考え方まで理解できる体験を目指しています。
-  </p>
-  <ul style="list-style:none;display:inline-flex;flex-direction:column;gap:.6rem;text-align:left;font-size:.85rem;color:rgba(232,226,245,.85)">
-    <li><span style="color:var(--gold)">✓</span> 16種類の占術・診断から、自分に合ったものを選べる</li>
-    <li><span style="color:var(--gold)">✓</span> 診断結果と解説記事をつなげて、理解を深められる</li>
-    <li><span style="color:var(--gold)">✓</span> コンテンツ・診断ロジックを継続的に見直し・改善</li>
-  </ul>
-  <div class="pb-gold-line" style="margin:1.3rem auto 0"></div>
-</section>
-
 <div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
