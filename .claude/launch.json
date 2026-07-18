@@ -6,6 +6,12 @@
       "runtimeExecutable": "C:\\php\\php.exe",
       "runtimeArgs": ["-S", "localhost:8811", "-t", "test.life-fun.net"],
       "port": 8811
+    },
+    {
+      "name": "osero-fortune-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["C:\\Users\\sende\\projects\\osero-fortune\\scripts\\devServer.mjs", "8812"],
+      "port": 8812
     }
   ]
 }
