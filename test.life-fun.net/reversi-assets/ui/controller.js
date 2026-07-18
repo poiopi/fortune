@@ -104,9 +104,14 @@ export class GameController {
     if (this.engine.isFinished()) return;
     if (this.engine.getCurrentPlayer() !== HUMAN) return;
 
+    // D-0094：CSSで`max-width:100%`等によりcanvasが448x448の内部解像度より縮小表示される
+    // （モバイル幅等）と、表示座標と内部座標がズレて正しいマスを算出できないバグがあった。
+    // 内部解像度÷表示サイズの比率で補正する。
     const rect = this.canvas.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
+    const scaleX = this.canvas.width / rect.width;
+    const scaleY = this.canvas.height / rect.height;
+    const x = (event.clientX - rect.left) * scaleX;
+    const y = (event.clientY - rect.top) * scaleY;
     const col = Math.floor(x / CELL_PIXEL_SIZE);
     const row = Math.floor(y / CELL_PIXEL_SIZE);
 
