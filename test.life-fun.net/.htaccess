@@ -1,4 +1,4 @@
-# 一時的に無効化（reversi統合作業の動作確認のため、確認後すぐに戻す）
+# 一時的に無効化（reversi対局確認のため、確認後すぐに戻す）
 # AuthType Basic
 # AuthName "Staging"
 # AuthUserFile /home/users/0/boo.jp-life-fun/web/test.life-fun.net/.htpasswd
