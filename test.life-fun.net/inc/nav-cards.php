@@ -16,7 +16,6 @@ $_NAV_PAGES = [
   'zense'      => ['name'=>'前世診断',      'url'=>'/zense',     'article'=>'/articles/zense/',       'featured_score'=>60,  'icon'=>'🌀', 'desc'=>'何回目の転生？魂のカルテを解読'],
   'guardian'   => ['name'=>'守護霊診断',    'url'=>'/guardian',  'article'=>'/articles/guardian/',    'featured_score'=>60,  'icon'=>'👻', 'desc'=>'あなたを守る霊のレアリティは？'],
   'geimei'     => ['name'=>'芸名診断',      'url'=>'/geimei',    'article'=>null,                     'featured_score'=>50,  'icon'=>'🎭', 'desc'=>'大喜利で見つける最強の芸名'],
-  'reversi'    => ['name'=>'オセロ占い',    'url'=>'/reversi',   'article'=>null,                     'featured_score'=>55,  'icon'=>'🌗', 'desc'=>'対局しながら占う、今日の運勢ゲーム'],
 ];
 
 // 診断結果の型ごとの解説記事URL（result-footer.php が type-aware 呼び出し時に参照）
