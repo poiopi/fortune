@@ -98,7 +98,7 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
   <div id="fortuneResult"></div>
 
   <script type="module">
-    import { GameController } from '/reversi/ui/controller.js';
+    import { GameController } from '/reversi-assets/ui/controller.js';
 
     const canvas = document.getElementById('board');
     const statusEl = document.getElementById('status');
