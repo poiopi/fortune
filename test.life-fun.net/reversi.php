@@ -124,7 +124,7 @@ canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.1
     <div class="form-section-label">✦ あなたの情報を入力 ✦</div>
     <div class="error-box" id="startFormError"></div>
     <div class="form-group">
-      <label class="form-label" for="userName">お名前（ニックネーム可）</label>
+      <label class="form-label" for="userName">お名前（任意・ニックネーム可）</label>
       <input class="form-input" type="text" id="userName" placeholder="例：山田 花子" maxlength="30">
     </div>
     <div class="form-group">
@@ -231,14 +231,16 @@ canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.1
   const startScreen = document.getElementById('startScreen');
   const gameArea = document.getElementById('gameArea');
   document.getElementById('startGameBtn').addEventListener('click', () => {
+    // D-0092：名前は任意入力。診断ロジックには使わず、結果タイトルの表示にのみ使うため、
+    // 未入力時は汎用表示（「あなたへの」）にフォールバックする。
     const name = document.getElementById('userName').value.trim();
     const birthday = window.BirthdayInput ? window.BirthdayInput.getValue('birth') : document.getElementById('birth-hidden').value;
-    if (!name || !birthday) {
-      showInlineError('startFormError', 'お名前と生年月日をすべて入力してください');
+    if (!birthday) {
+      showInlineError('startFormError', '生年月日を入力してください');
       return;
     }
     hideInlineError('startFormError');
-    document.querySelector('.fortune-title').textContent = `${name}さんへの今日の占い結果`;
+    document.querySelector('.fortune-title').textContent = name ? `${name}さんへの今日の占い結果` : 'あなたへの今日の占い結果';
     startScreen.style.display = 'none';
     gameArea.style.display = 'block';
   });
