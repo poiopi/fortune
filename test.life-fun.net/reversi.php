@@ -243,13 +243,14 @@ canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.1
     gameArea.style.display = 'block';
   });
 
-  // D-0088：開発者向けプレイテストログパネルは本番(life-fun.net)でのみ非表示にする。
-  // preview/staging等のドメインが増えた場合は、この1箇所（isProductionHost）の判定条件だけを更新すればよい。
-  function isProductionHost() {
-    return location.hostname === 'life-fun.net';
+  // D-0091：開発者向けプレイテストログパネルは、ローカル開発時のみ表示する（本番・STGとも非表示）。
+  // 以前はSTG（test.life-fun.net）でも表示する設計だったが、本人からSTGでの実機確認時に
+  // 「出っぱなし」と指摘されたため、localhostのみに変更した。
+  function isLocalDev() {
+    return location.hostname === 'localhost' || location.hostname === '127.0.0.1';
   }
   const logPanel = document.getElementById('logPanel');
-  if (!isProductionHost()) {
+  if (isLocalDev()) {
     logPanel.style.display = 'block';
 
     const noteInput = document.getElementById('noteInput');
