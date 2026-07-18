@@ -210,6 +210,10 @@ canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.1
     if (noteInput) noteInput.value = '';
     if (diagnosisFeedbackInput) diagnosisFeedbackInput.value = '';
     controller.newGame();
+    // D-0095：他ページのresetResultView()がトップへスクロールするのに合わせ、
+    // 対局画面（#gameArea）まで自動スクロールする。result-footer.phpのボタンは
+    // 結果パネルの下にあるため、押した後の視点をゲーム画面に戻す必要がある。
+    gameArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   document.getElementById('newGameBtn').addEventListener('click', reversiNewGame);
 
