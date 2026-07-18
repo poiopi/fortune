@@ -66,6 +66,9 @@ body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-we
 .submit-btn{width:100%;padding:1rem;background:linear-gradient(135deg,rgba(155,114,239,.8),rgba(201,168,76,.7));border:none;border-radius:10px;font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;color:#fff;cursor:pointer;margin-top:.4rem;letter-spacing:.12em;transition:opacity .2s}
 .submit-btn:hover{opacity:.88}
 
+/* D-0095修正：inc/header.phpの.site-headerがposition:sticky（高さ54px+下線1px）のため、
+   scroll-margin-topを設定しないとscrollIntoView({block:'start'})後に盤面上部がヘッダーに隠れる。 */
+#gameArea{scroll-margin-top:64px}
 canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.18),inset 0 0 14px rgba(0,0,0,.35);border-radius:8px;cursor:pointer;max-width:100%;height:auto}
 #status{margin-top:12px;font-size:15px;font-weight:bold;color:var(--text)}
 .game-controls{display:flex;gap:.6rem;margin-top:12px}
@@ -210,6 +213,10 @@ canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.1
     if (noteInput) noteInput.value = '';
     if (diagnosisFeedbackInput) diagnosisFeedbackInput.value = '';
     controller.newGame();
+    // D-0095：他ページのresetResultView()がトップへスクロールするのに合わせ、
+    // 対局画面（#gameArea）まで自動スクロールする。result-footer.phpのボタンは
+    // 結果パネルの下にあるため、押した後の視点をゲーム画面に戻す必要がある。
+    gameArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   document.getElementById('newGameBtn').addEventListener('click', reversiNewGame);
 
