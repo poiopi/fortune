@@ -739,6 +739,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         <span class="fc-btn">診断する →</span>
       </a>
 
+      <a href="/reversi" class="fcard ct-v fade-up">
+        <span class="fc-icon"><span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style></span>
+        <span class="fc-lbl">Destiny Reversi</span>
+        <div class="fc-name">リバーシ占い</div>
+        <div class="fc-desc">対局中の一手一手が布石となり、今日の運勢を読み解く新感覚の占いゲーム。</div>
+        <span class="fc-btn">対局する →</span>
+      </a>
+
     </div><!-- /carousel-track -->
 
     <div class="carousel-controls">
