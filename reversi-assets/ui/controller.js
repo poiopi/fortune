@@ -46,6 +46,10 @@ export class GameController {
     this.recommendationsEl = recommendationsEl;
     this.resultEl = resultEl;
     this.turnStartedAt = 0;
+    // D-0096：CPUの着手を0.5〜1秒ランダムに遅らせるためのタイマーID。
+    // 「もう一度対局する」等で対局をリセットする際、予約済みのCPU着手が新しい対局へ
+    // 誤って適用されないようclearTimeout()する必要があるため保持する。
+    this._cpuMoveTimeoutId = null;
 
     // D-0075（Step2）：時間依存演出はEffectManagerに一任する。ControllerはEngine/Renderer/
     // EffectManagerの3者を調停するだけで、演出の中身（波紋の形・タイミング等）は一切知らない。
@@ -86,6 +90,8 @@ export class GameController {
   }
 
   newGame() {
+    // D-0096：予約済みのCPU着手（setTimeout）が残っていれば、新しい対局へ誤って適用されないよう破棄する。
+    clearTimeout(this._cpuMoveTimeoutId);
     this.gameNumber++;
     // ダミーの黒側strategy（人間の手番ではControllerが直接applyMoveを呼ぶため実際には使われない）
     this.engine = new GameEngine(new RandomBot(), CPU_STRATEGY);
@@ -127,21 +133,33 @@ export class GameController {
     this._advanceUntilHumanTurnOrFinished();
   }
 
-  /** CPUの手番・パスが続く間は自動で進め、人間の手番になったら止まる。 */
+  /**
+   * CPUの手番・パスが続く間は自動で進め、人間の手番になったら止まる。
+   * D-0096：CPUが実際に石を置く直前だけ0.5〜1秒ランダムに待たせる（元のJavaFXプロトタイプ
+   * `Osero.java`にあった0.5秒のPauseTransitionと同じ意図。Web移植時に引き継がれていなかった）。
+   * パス（置く場所がない）は「考えて石を置く」動作ではないため遅延の対象にしない。
+   */
   _advanceUntilHumanTurnOrFinished() {
-    while (!this.engine.isFinished() && this.engine.getCurrentPlayer() !== HUMAN) {
+    if (!this.engine.isFinished() && this.engine.getCurrentPlayer() !== HUMAN) {
       const current = this.engine.getCurrentPlayer();
       const legal = this.engine.getLegalMoves(current);
       if (legal.length === 0) {
         this.engine.advancePass();
         this._render();
-        continue;
+        this._advanceUntilHumanTurnOrFinished();
+        return;
       }
-      const decision = CPU_STRATEGY.decide(this.engine.board, current);
-      const beforeCells = this.engine.board.cells.map((r) => r.slice());
-      this.engine.applyMove(decision.move, decision.thinkTimeSeconds);
-      this._notifyStonePlaced(beforeCells, decision.move.row, decision.move.col, current);
-      this._render();
+      // ここまでの_render()で「CPUが考えています…」がステータスに表示された状態のまま待たせる。
+      const delayMs = 500 + Math.random() * 500;
+      this._cpuMoveTimeoutId = setTimeout(() => {
+        const decision = CPU_STRATEGY.decide(this.engine.board, current);
+        const beforeCells = this.engine.board.cells.map((r) => r.slice());
+        this.engine.applyMove(decision.move, decision.thinkTimeSeconds);
+        this._notifyStonePlaced(beforeCells, decision.move.row, decision.move.col, current);
+        this._render();
+        this._advanceUntilHumanTurnOrFinished();
+      }, delayMs);
+      return;
     }
 
     // 人間の手番だが合法手がない場合は自動パス
