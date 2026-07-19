@@ -45,7 +45,10 @@ export class EffectManager {
    * @param {{row: number, col: number, player: string, isFinalMove?: boolean}} event
    */
   onStonePlaced({ row, col, player, isFinalMove = false }) {
-    this._createBoardBreathe();
+    // 2026-07-19：スマホ実機で「点滅して見える」というフィードバックを受け、原因切り分けのため
+    // Breathe（盤面全体が明滅する唯一の通常時エフェクト）を一時的に無効化（Step1）。
+    // _createBoardBreathe()自体は削除せず残し、この1行を戻すだけで再有効化できるようにする。
+    // this._createBoardBreathe();
     this._createRipple(row, col);
     // 「運命が確定した石」＝最後の一手だけ、通常の1.6倍のスケールでGlowを強調する（意味づけであり演出だけの都合ではない）
     this._createGlow({ row, col, player, scale: isFinalMove ? 1.6 : 1.0 });
