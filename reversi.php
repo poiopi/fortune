@@ -69,7 +69,7 @@ body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-we
 /* D-0095修正：inc/header.phpの.site-headerがposition:sticky（高さ54px+下線1px）のため、
    scroll-margin-topを設定しないとscrollIntoView({block:'start'})後に盤面上部がヘッダーに隠れる。 */
 #gameArea{scroll-margin-top:64px}
-canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.18),inset 0 0 14px rgba(0,0,0,.35);border-radius:8px;cursor:pointer;max-width:100%;height:auto}
+canvas#board{border:2px solid var(--gold);box-shadow:0 0 20px rgba(212,170,80,.18),inset 0 0 14px rgba(0,0,0,.35);border-radius:8px;cursor:pointer;max-width:100%;height:auto;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 #status{margin-top:12px;font-size:15px;font-weight:bold;color:var(--text)}
 .game-controls{display:flex;gap:.6rem;margin-top:12px}
 .game-controls button{padding:.5rem 1.2rem;font-size:.85rem;font-family:var(--ff-sans);border:1px solid var(--border2);border-radius:8px;background:rgba(155,114,239,.15);color:var(--violet-lt);cursor:pointer}
