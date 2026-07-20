@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__.'/inc/oracle.php';
+require_once __DIR__.'/inc/dayinfo/day-url.php';
 
 // ══════════════════════════════════════════════════════════════════
 // カレンダー生成
@@ -424,10 +425,10 @@ body{top:0!important}
           if($weekday === 6) $dayClass .= ' sat';
           if($isToday)       $dayClass .= ' today';
         ?>
-        <div class="<?= $dayClass ?>">
+        <a href="<?= dayUrl($thisDate) ?>" class="<?= $dayClass ?>" style="text-decoration:none;color:inherit;display:block">
           <div class="day-num"><?= $d ?></div>
           <div class="day-rokuyo <?= $dayRokuyo['class'] ?>"><?= $dayRokuyo['name'] ?></div>
-        </div>
+        </a>
         <?php endfor; ?>
       </div>
     </div>
