@@ -244,6 +244,7 @@ header{
 .sat .day-num{color:#7090e8}
 .day-moon{font-size:.68rem;line-height:1;opacity:.75}
 .day-kichijitsu-mark{font-size:.6rem;color:var(--gold-lt);line-height:1}
+.day-moon-label{font-family:var(--ff-mono);font-size:.5rem;text-align:center;color:var(--muted);line-height:1.1;margin-top:.15rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .day-rokuyo{font-family:var(--ff-serif);font-size:.62rem;text-align:center;padding:.1rem .2rem;border-radius:3px;margin-top:.2rem;line-height:1.2}
 .day-rokuyo.taian{background:rgba(201,168,76,.2);color:#c9a84c;font-weight:700}
 .day-rokuyo.shakku{background:rgba(232,113,154,.15);color:#e8719a}
@@ -272,6 +273,7 @@ footer a:hover{color:var(--gold)}
   .day-rokuyo{font-size:.55rem}
   .day-moon{font-size:.6rem}
   .day-kichijitsu-mark{font-size:.52rem}
+  .day-moon-label{font-size:.44rem}
   .cal-header{flex-direction:column;align-items:flex-start}
   .cal-jump{width:100%}
   .cal-nav{width:100%}
@@ -470,9 +472,9 @@ body{top:0!important}
   <!-- カレンダー -->
   <section class="cal-section" id="cal-section">
     <div class="cal-header">
-      <div class="cal-title"><?= $year ?>年 <?= $month ?>月</div>
+      <div class="cal-title" id="cal-title"><?= $year ?>年 <?= $month ?>月</div>
       <div class="cal-jump">
-        <form method="get" action="/calendar#cal-jump-form" class="cal-jump-form" id="cal-jump-form">
+        <form method="get" action="/calendar#cal-title" class="cal-jump-form">
           <select name="y" class="cal-select" aria-label="表示する年" onchange="this.form.submit()">
             <?php for ($yy = CALENDAR_MIN_YEAR; $yy <= CALENDAR_MAX_YEAR; $yy++): ?>
             <option value="<?= $yy ?>"<?= $yy === $year ? ' selected' : '' ?>><?= $yy ?>年</option>
@@ -546,6 +548,9 @@ body{top:0!important}
             <?php endif; ?>
             <div class="day-num"><?= $d ?></div>
           </div>
+          <?php if ($cellMoon['available']): ?>
+          <div class="day-moon-label"><?= $cellMoon['phase_name'] ?></div>
+          <?php endif; ?>
           <div class="day-rokuyo <?= $dayRokuyo['class'] ?>"><?= $dayRokuyo['name'] ?></div>
         </a>
         <?php endfor; ?>
