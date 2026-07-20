@@ -16,11 +16,12 @@ declare(strict_types=1);
 // ══════════════════════════════════════════════════════════════════
 
 require_once __DIR__.'/providers/rokuyo.php';
+require_once __DIR__.'/providers/lucky.php';
 require_once __DIR__.'/providers/seiza.php';
 require_once __DIR__.'/providers/kyusei.php';
 
 // セクションの表示順（PHP連想配列は挿入順を保持するため、UI側はforeachするだけでよい）
-const DAYINFO_SECTION_ORDER = ['rokuyo', 'seiza', 'kyusei'];
+const DAYINFO_SECTION_ORDER = ['rokuyo', 'lucky', 'seiza', 'kyusei'];
 
 function getDayInfo(DateTimeImmutable $date): array {
     static $cache = [];
@@ -34,6 +35,7 @@ function getDayInfo(DateTimeImmutable $date): array {
 
     $sectionBuilders = [
         'rokuyo' => 'getRokuyoInfo',
+        'lucky'  => 'getLuckyInfo',
         'seiza'  => 'getSeizaInfo',
         'kyusei' => 'getKyuseiInfo',
     ];

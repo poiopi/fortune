@@ -126,6 +126,22 @@ body::before{
 .butsumetsu{border-color:#6b6456;background:rgba(107,100,86,.08)}
 .butsumetsu .rokuyo-name{color:#8a7db5}
 
+/* ラッキーアイテム */
+.lucky-msg{font-family:var(--ff-serif);font-size:.92rem;color:var(--gold-lt);font-style:italic;line-height:1.7;margin-bottom:1rem}
+.lucky-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.9rem}
+.lucky-card{background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:1rem;position:relative;overflow:hidden}
+.lucky-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--violet),var(--gold))}
+.lucky-cat{font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:.45rem}
+.lucky-value{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--gold-lt);line-height:1.3}
+.lucky-note{font-size:.72rem;color:var(--muted);margin-top:.35rem;line-height:1.6}
+.lucky-number{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--violet),var(--rose));
+  font-family:var(--ff-serif);font-size:1.3rem;font-weight:700;
+  color:#fff;margin-bottom:.3rem;
+}
+
 /* 星座 */
 .seiza-row{display:flex;align-items:center;gap:1rem}
 .seiza-symbol{font-size:2.4rem;line-height:1}
@@ -150,6 +166,7 @@ footer a:hover{color:var(--gold)}
 
 @media(max-width:600px){
   .kyusei-grid{grid-template-columns:1fr}
+  .lucky-grid{grid-template-columns:1fr 1fr}
 }
 #google_translate_element{font-size:.65rem;flex-shrink:0}
 #google_translate_element .goog-te-gadget{color:transparent;white-space:nowrap}
@@ -185,6 +202,35 @@ body{top:0!important}
             <div class="rokuyo-en"><?= htmlspecialchars($section['en']) ?></div>
           </div>
           <div class="rokuyo-desc"><?= htmlspecialchars($section['desc']) ?></div>
+        <?php else: ?>
+          <div class="unavailable">情報がありません</div>
+        <?php endif; ?>
+      </div>
+
+    <?php elseif ($sectionKey === 'lucky'): ?>
+      <div class="section-card">
+        <div class="section-label">ラッキーアイテム</div>
+        <?php if ($section['available']): ?>
+          <div class="lucky-msg">&#x2726; <?= htmlspecialchars($section['message']) ?></div>
+          <div class="lucky-grid">
+            <div class="lucky-card">
+              <div class="lucky-cat">Lucky Color</div>
+              <div class="lucky-value"><?= htmlspecialchars($section['color']['name']) ?></div>
+              <div class="lucky-note"><?= htmlspecialchars($section['color']['meaning']) ?></div>
+            </div>
+            <div class="lucky-card">
+              <div class="lucky-cat">Lucky Number</div>
+              <div class="lucky-number"><?= htmlspecialchars((string)$section['number']) ?></div>
+              <div class="lucky-note">今日のあなたを導く数字。</div>
+            </div>
+            <?php foreach ($section['items'] as $item): ?>
+            <div class="lucky-card">
+              <div class="lucky-cat"><?= htmlspecialchars($item['cat']) ?></div>
+              <div class="lucky-value"><?= htmlspecialchars($item['item']) ?></div>
+              <div class="lucky-note">今日の開運アイテム</div>
+            </div>
+            <?php endforeach; ?>
+          </div>
         <?php else: ?>
           <div class="unavailable">情報がありません</div>
         <?php endif; ?>

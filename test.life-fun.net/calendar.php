@@ -2,6 +2,7 @@
 declare(strict_types=1);
 require_once __DIR__.'/inc/oracle.php';
 require_once __DIR__.'/inc/dayinfo/day-url.php';
+require_once __DIR__.'/inc/dayinfo/DayInfoService.php';
 
 const CALENDAR_MIN_YEAR = 1900;
 const CALENDAR_MAX_YEAR = 2100;
@@ -23,14 +24,14 @@ $month     = (int)$today->format('n');
 $todayDay  = (int)$today->format('j');
 
 // リクエストで月を切り替え可能
-$rawY = filter_input(INPUT_GET, 'y', FILTER_VALIDATE_INT);
-$rawM = filter_input(INPUT_GET, 'm', FILTER_VALIDATE_INT);
+$rawYStr = $_GET['y'] ?? null;
+$rawMStr = $_GET['m'] ?? null;
 
-if ($rawY !== null && $rawY !== false && $rawM !== null && $rawM !== false) {
-    $year  = max(CALENDAR_MIN_YEAR, min(CALENDAR_MAX_YEAR, $rawY));
-    $month = max(1, min(12, $rawM));
+if (is_string($rawYStr) && ctype_digit($rawYStr) && is_string($rawMStr) && ctype_digit($rawMStr)) {
+    $year  = max(CALENDAR_MIN_YEAR, min(CALENDAR_MAX_YEAR, (int)$rawYStr));
+    $month = max(1, min(12, (int)$rawMStr));
 }
-// $rawYまたは$rawMが非数値・未指定の場合は、$today由来のデフォルト（現在年月）のまま変更しない
+// $rawYStrまたは$rawMStrが非数値文字列・配列・未指定の場合は、$today由来のデフォルト（現在年月）のまま変更しない
 
 $firstDay  = new DateTimeImmutable("$year-$month-01");
 $daysInMonth = (int)$firstDay->format('t');
@@ -39,6 +40,11 @@ $startWeekday = (int)$firstDay->format('w'); // 0=日, 6=土
 $todayStr  = $today->format('Y-m-d');
 $luckyItems = getLuckyItems($todayStr);
 $rokuyo     = getRokuyo((int)$today->format('Y'), (int)$today->format('n'), (int)$today->format('j'));
+
+// 今日の星座・九星（today-band用）
+$todayInfo  = getDayInfo($today);
+$todaySeiza = $todayInfo['sections']['seiza'];
+$todayKyusei = $todayInfo['sections']['kyusei'];
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -144,6 +150,16 @@ header{
   color:var(--gold-lt);font-style:italic;line-height:1.7;
   padding-top:1rem;border-top:1px solid var(--border);margin-top:.5rem;
 }
+.today-mini{
+  display:flex;align-items:center;gap:.55rem;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border);border-radius:10px;
+  padding:.55rem .9rem;
+}
+.today-mini-symbol{font-size:1.3rem;line-height:1}
+.today-mini-body{display:flex;flex-direction:column;line-height:1.3}
+.today-mini-cat{font-family:var(--ff-mono);font-size:.56rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.today-mini-name{font-family:var(--ff-serif);font-size:.9rem;font-weight:600;color:var(--gold-lt)}
 
 /* 六曜色 */
 .taian{border-color:#c9a84c;background:rgba(201,168,76,.08)}
@@ -383,6 +399,31 @@ body{top:0!important}
         <strong style="color:var(--text)">今日は「<?= $rokuyo['name'] ?>」</strong><br>
         <?= $rokuyo['desc'] ?>
       </div>
+      <?php if ($todaySeiza['available']): ?>
+      <div class="today-mini">
+        <span class="today-mini-symbol"><?= $todaySeiza['symbol'] ?></span>
+        <span class="today-mini-body">
+          <span class="today-mini-cat">星座</span>
+          <span class="today-mini-name"><?= $todaySeiza['name'] ?></span>
+        </span>
+      </div>
+      <?php endif; ?>
+      <?php if ($todayKyusei['available']): ?>
+      <div class="today-mini">
+        <span class="today-mini-symbol"><?= $todayKyusei['year']['symbol'] ?></span>
+        <span class="today-mini-body">
+          <span class="today-mini-cat">年九星</span>
+          <span class="today-mini-name"><?= $todayKyusei['year']['name'] ?></span>
+        </span>
+      </div>
+      <div class="today-mini">
+        <span class="today-mini-symbol"><?= $todayKyusei['month']['symbol'] ?></span>
+        <span class="today-mini-body">
+          <span class="today-mini-cat">月九星</span>
+          <span class="today-mini-name"><?= $todayKyusei['month']['name'] ?></span>
+        </span>
+      </div>
+      <?php endif; ?>
       <div class="today-msg">&#x2726; <?= $luckyItems['message'] ?></div>
     </div>
   </div>
