@@ -11,17 +11,20 @@ declare(strict_types=1);
 // すべてがこの関数を使う想定。Provider登録機構やinterfaceは使わず、
 // 素朴な関数呼び出しの集合として実装する（過剰設計を避けるため）。
 //
-// 現在は既存ロジックへの委譲のみで完結する4セクション
-// （六曜・ラッキーアイテム・星座・九星の年月）を対象とする。
+// 現在は6セクション（六曜・吉日・ラッキーアイテム・月齢/月相・星座・九星の年月）
+// を対象とする。rokuyo/lucky/seiza/kyuseiは既存ロジックへの委譲、
+// kichijitsu/moonはPhase1-Bで追加した新規計算ロジック。
 // ══════════════════════════════════════════════════════════════════
 
 require_once __DIR__.'/providers/rokuyo.php';
+require_once __DIR__.'/providers/kichijitsu.php';
 require_once __DIR__.'/providers/lucky.php';
+require_once __DIR__.'/providers/moon.php';
 require_once __DIR__.'/providers/seiza.php';
 require_once __DIR__.'/providers/kyusei.php';
 
 // セクションの表示順（PHP連想配列は挿入順を保持するため、UI側はforeachするだけでよい）
-const DAYINFO_SECTION_ORDER = ['rokuyo', 'lucky', 'seiza', 'kyusei'];
+const DAYINFO_SECTION_ORDER = ['rokuyo', 'kichijitsu', 'lucky', 'moon', 'seiza', 'kyusei'];
 
 function getDayInfo(DateTimeImmutable $date): array {
     static $cache = [];
@@ -34,10 +37,12 @@ function getDayInfo(DateTimeImmutable $date): array {
     $weekdayNames = ['日', '月', '火', '水', '木', '金', '土'];
 
     $sectionBuilders = [
-        'rokuyo' => 'getRokuyoInfo',
-        'lucky'  => 'getLuckyInfo',
-        'seiza'  => 'getSeizaInfo',
-        'kyusei' => 'getKyuseiInfo',
+        'rokuyo'     => 'getRokuyoInfo',
+        'kichijitsu' => 'getKichijitsuInfo',
+        'lucky'      => 'getLuckyInfo',
+        'moon'       => 'getMoonInfo',
+        'seiza'      => 'getSeizaInfo',
+        'kyusei'     => 'getKyuseiInfo',
     ];
 
     $sections = [];

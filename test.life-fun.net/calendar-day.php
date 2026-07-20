@@ -142,6 +142,24 @@ body::before{
   color:#fff;margin-bottom:.3rem;
 }
 
+/* 吉日 */
+.kichijitsu-list{display:flex;flex-direction:column;gap:.7rem}
+.kichijitsu-item{
+  display:flex;align-items:center;gap:.8rem;
+  background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.28);
+  border-radius:10px;padding:.8rem 1.1rem;text-decoration:none;transition:border-color .2s,background .2s;
+}
+.kichijitsu-item:hover{border-color:var(--gold-lt);background:rgba(201,168,76,.14)}
+.kichijitsu-icon{font-size:1.3rem;flex-shrink:0}
+.kichijitsu-name{font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--gold-lt);flex:1}
+.kichijitsu-arrow{font-family:var(--ff-mono);font-size:.85rem;color:var(--gold-lt);flex-shrink:0}
+
+/* 月齢 */
+.moon-row{display:flex;align-items:center;gap:1rem}
+.moon-symbol{font-size:2.4rem;line-height:1}
+.moon-name{font-family:var(--ff-serif);font-size:1.3rem;font-weight:700;color:var(--gold-lt)}
+.moon-age{font-size:.82rem;color:var(--muted);margin-top:.2rem}
+
 /* 星座 */
 .seiza-row{display:flex;align-items:center;gap:1rem}
 .seiza-symbol{font-size:2.4rem;line-height:1}
@@ -207,6 +225,24 @@ body{top:0!important}
         <?php endif; ?>
       </div>
 
+    <?php elseif ($sectionKey === 'kichijitsu'): ?>
+      <div class="section-card">
+        <div class="section-label">吉日</div>
+        <?php if ($section['available']): ?>
+          <div class="kichijitsu-list">
+            <?php foreach ($section['days'] as $day): ?>
+            <a href="<?= htmlspecialchars($day['url']) ?>" class="kichijitsu-item">
+              <span class="kichijitsu-icon">&#x2728;</span>
+              <span class="kichijitsu-name"><?= htmlspecialchars($day['name']) ?></span>
+              <span class="kichijitsu-arrow">&#8594;</span>
+            </a>
+            <?php endforeach; ?>
+          </div>
+        <?php else: ?>
+          <div class="unavailable">今日は該当する吉日はありません</div>
+        <?php endif; ?>
+      </div>
+
     <?php elseif ($sectionKey === 'lucky'): ?>
       <div class="section-card">
         <div class="section-label">ラッキーアイテム</div>
@@ -230,6 +266,22 @@ body{top:0!important}
               <div class="lucky-note">今日の開運アイテム</div>
             </div>
             <?php endforeach; ?>
+          </div>
+        <?php else: ?>
+          <div class="unavailable">情報がありません</div>
+        <?php endif; ?>
+      </div>
+
+    <?php elseif ($sectionKey === 'moon'): ?>
+      <div class="section-card">
+        <div class="section-label">月齢・月相</div>
+        <?php if ($section['available']): ?>
+          <div class="moon-row">
+            <div class="moon-symbol"><?= htmlspecialchars($section['symbol']) ?></div>
+            <div>
+              <div class="moon-name"><?= htmlspecialchars($section['phase_name']) ?></div>
+              <div class="moon-age">月齢 <?= htmlspecialchars((string)$section['age']) ?></div>
+            </div>
           </div>
         <?php else: ?>
           <div class="unavailable">情報がありません</div>
