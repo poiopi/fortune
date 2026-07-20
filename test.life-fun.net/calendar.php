@@ -237,10 +237,13 @@ header{
 .cal-day:hover{background:var(--card2)}
 .cal-day.empty{background:rgba(0,0,0,.2);cursor:default}
 .cal-day.today{background:linear-gradient(135deg,rgba(155,114,239,.15),rgba(201,168,76,.1));outline:1px solid var(--gold)}
+.day-top-row{display:flex;align-items:center;justify-content:space-between;gap:.2rem}
 .day-num{font-family:var(--ff-mono);font-size:.8rem;text-align:right;margin-bottom:.2rem;padding-right:.2rem}
 .cal-day.today .day-num{color:var(--gold-lt);font-weight:700}
 .sun .day-num{color:#e87070}
 .sat .day-num{color:#7090e8}
+.day-moon{font-size:.68rem;line-height:1;opacity:.75}
+.day-kichijitsu-mark{position:absolute;top:.35rem;left:.35rem;font-size:.6rem;color:var(--gold-lt);line-height:1}
 .day-rokuyo{font-family:var(--ff-serif);font-size:.62rem;text-align:center;padding:.1rem .2rem;border-radius:3px;margin-top:.2rem;line-height:1.2}
 .day-rokuyo.taian{background:rgba(201,168,76,.2);color:#c9a84c;font-weight:700}
 .day-rokuyo.shakku{background:rgba(232,113,154,.15);color:#e8719a}
@@ -267,6 +270,8 @@ footer a:hover{color:var(--gold)}
   .lucky-grid{grid-template-columns:1fr 1fr}
   .cal-day{min-height:56px;padding:.3rem .2rem}
   .day-rokuyo{font-size:.55rem}
+  .day-moon{font-size:.6rem}
+  .day-kichijitsu-mark{font-size:.52rem;top:.25rem;left:.25rem}
   .cal-header{flex-direction:column;align-items:flex-start}
   .cal-jump{width:100%}
   .cal-nav{width:100%}
@@ -467,7 +472,7 @@ body{top:0!important}
     <div class="cal-header">
       <div class="cal-title"><?= $year ?>年 <?= $month ?>月</div>
       <div class="cal-jump">
-        <form method="get" action="/calendar#cal-section" class="cal-jump-form">
+        <form method="get" action="/calendar#cal-jump-form" class="cal-jump-form" id="cal-jump-form">
           <select name="y" class="cal-select" aria-label="表示する年" onchange="this.form.submit()">
             <?php for ($yy = CALENDAR_MIN_YEAR; $yy <= CALENDAR_MAX_YEAR; $yy++): ?>
             <option value="<?= $yy ?>"<?= $yy === $year ? ' selected' : '' ?>><?= $yy ?>年</option>
@@ -521,13 +526,26 @@ body{top:0!important}
           $weekday    = (int)$thisDate->format('w');
           $isToday    = ($year === (int)$today->format('Y') && $month === (int)$today->format('n') && $d === $todayDay);
           $dayRokuyo  = getRokuyo($year, $month, $d);
+          $cellInfo   = getDayInfo($thisDate);
+          $cellMoon   = $cellInfo['sections']['moon'];
+          $cellKichijitsu = $cellInfo['sections']['kichijitsu'];
           $dayClass   = 'cal-day';
           if($weekday === 0) $dayClass .= ' sun';
           if($weekday === 6) $dayClass .= ' sat';
           if($isToday)       $dayClass .= ' today';
         ?>
         <a href="<?= dayUrl($thisDate) ?>" class="<?= $dayClass ?>" style="text-decoration:none;color:inherit;display:block">
-          <div class="day-num"><?= $d ?></div>
+          <?php if ($cellKichijitsu['available']): ?>
+          <span class="day-kichijitsu-mark">&#x2726;</span>
+          <?php endif; ?>
+          <div class="day-top-row">
+            <?php if ($cellMoon['available']): ?>
+            <span class="day-moon"><?= $cellMoon['symbol'] ?></span>
+            <?php else: ?>
+            <span class="day-moon"></span>
+            <?php endif; ?>
+            <div class="day-num"><?= $d ?></div>
+          </div>
           <div class="day-rokuyo <?= $dayRokuyo['class'] ?>"><?= $dayRokuyo['name'] ?></div>
         </a>
         <?php endfor; ?>
