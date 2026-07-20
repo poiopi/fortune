@@ -3,6 +3,17 @@ declare(strict_types=1);
 require_once __DIR__.'/inc/oracle.php';
 require_once __DIR__.'/inc/dayinfo/day-url.php';
 
+const CALENDAR_MIN_YEAR = 1900;
+const CALENDAR_MAX_YEAR = 2100;
+
+function canGoPrevMonth(int $year, int $month): bool {
+    return !($year <= CALENDAR_MIN_YEAR && $month <= 1);
+}
+
+function canGoNextMonth(int $year, int $month): bool {
+    return !($year >= CALENDAR_MAX_YEAR && $month >= 12);
+}
+
 // ══════════════════════════════════════════════════════════════════
 // カレンダー生成
 // ══════════════════════════════════════════════════════════════════
@@ -12,10 +23,14 @@ $month     = (int)$today->format('n');
 $todayDay  = (int)$today->format('j');
 
 // リクエストで月を切り替え可能
-if (isset($_GET['y'], $_GET['m'])) {
-    $year  = (int)$_GET['y'];
-    $month = max(1, min(12, (int)$_GET['m']));
+$rawY = filter_input(INPUT_GET, 'y', FILTER_VALIDATE_INT);
+$rawM = filter_input(INPUT_GET, 'm', FILTER_VALIDATE_INT);
+
+if ($rawY !== null && $rawY !== false && $rawM !== null && $rawM !== false) {
+    $year  = max(CALENDAR_MIN_YEAR, min(CALENDAR_MAX_YEAR, $rawY));
+    $month = max(1, min(12, $rawM));
 }
+// $rawYまたは$rawMが非数値・未指定の場合は、$today由来のデフォルト（現在年月）のまま変更しない
 
 $firstDay  = new DateTimeImmutable("$year-$month-01");
 $daysInMonth = (int)$firstDay->format('t');
@@ -166,8 +181,22 @@ header{
 .adsense-space::after{content:'AD SPACE'}
 /* ── カレンダー ── */
 .cal-section{margin-bottom:2.5rem}
-.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:.7rem}
 .cal-title{font-family:var(--ff-serif);font-size:1.2rem;font-weight:700;color:var(--gold-lt);letter-spacing:.06em}
+.cal-jump{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.cal-jump-form{display:flex;gap:.4rem}
+.cal-select{
+  font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .6rem;
+  border:1px solid var(--border2);border-radius:6px;color:var(--text);
+  background:var(--card2);cursor:pointer;
+}
+.cal-select:hover{border-color:var(--gold)}
+.cal-today-btn{
+  font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .9rem;
+  border:1px solid var(--border2);border-radius:6px;color:var(--muted);
+  text-decoration:none;transition:all .15s;white-space:nowrap;
+}
+.cal-today-btn:hover{background:var(--gold);color:var(--void);border-color:var(--gold)}
 .cal-nav{display:flex;gap:.5rem}
 .cal-nav a{
   font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .9rem;
@@ -175,6 +204,11 @@ header{
   text-decoration:none;transition:all .15s;
 }
 .cal-nav a:hover{background:var(--violet);color:#fff;border-color:var(--violet)}
+.cal-nav-disabled{
+  font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .9rem;
+  border:1px solid var(--border);border-radius:6px;color:var(--muted);
+  opacity:.35;cursor:default;user-select:none;
+}
 
 .cal-grid{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .cal-weekdays{display:grid;grid-template-columns:repeat(7,1fr);border-bottom:1px solid var(--border)}
@@ -217,6 +251,9 @@ footer a:hover{color:var(--gold)}
   .lucky-grid{grid-template-columns:1fr 1fr}
   .cal-day{min-height:56px;padding:.3rem .2rem}
   .day-rokuyo{font-size:.55rem}
+  .cal-header{flex-direction:column;align-items:flex-start}
+  .cal-jump{width:100%}
+  .cal-nav{width:100%}
 }
 /* ======================
    三星鑑定について
@@ -388,6 +425,26 @@ body{top:0!important}
   <section class="cal-section">
     <div class="cal-header">
       <div class="cal-title"><?= $year ?>年 <?= $month ?>月</div>
+      <div class="cal-jump">
+        <form method="get" action="/calendar" class="cal-jump-form">
+          <select name="y" class="cal-select" onchange="this.form.submit()">
+            <?php
+              $todayYear   = (int)$today->format('Y');
+              $yearLoopMin = max(CALENDAR_MIN_YEAR, min($todayYear - 10, $year));
+              $yearLoopMax = min(CALENDAR_MAX_YEAR, max($todayYear + 10, $year));
+              for ($yy = $yearLoopMin; $yy <= $yearLoopMax; $yy++):
+            ?>
+            <option value="<?= $yy ?>"<?= $yy === $year ? ' selected' : '' ?>><?= $yy ?>年</option>
+            <?php endfor; ?>
+          </select>
+          <select name="m" class="cal-select" onchange="this.form.submit()">
+            <?php for ($mm = 1; $mm <= 12; $mm++): ?>
+            <option value="<?= $mm ?>"<?= $mm === $month ? ' selected' : '' ?>><?= $mm ?>月</option>
+            <?php endfor; ?>
+          </select>
+        </form>
+        <a href="/calendar" class="cal-today-btn">今日（<?= $today->format('Y') ?>年<?= $today->format('n') ?>月）</a>
+      </div>
       <div class="cal-nav">
         <?php
           $prev = new DateTimeImmutable("$year-$month-01");
@@ -395,8 +452,16 @@ body{top:0!important}
           $next = new DateTimeImmutable("$year-$month-01");
           $next = $next->modify('+1 month');
         ?>
+        <?php if (canGoPrevMonth($year, $month)): ?>
         <a href="?y=<?= $prev->format('Y') ?>&m=<?= $prev->format('n') ?>">&#9664; 前月</a>
+        <?php else: ?>
+        <span class="cal-nav-disabled">&#9664; 前月</span>
+        <?php endif; ?>
+        <?php if (canGoNextMonth($year, $month)): ?>
         <a href="?y=<?= $next->format('Y') ?>&m=<?= $next->format('n') ?>">翌月 &#9654;</a>
+        <?php else: ?>
+        <span class="cal-nav-disabled">翌月 &#9654;</span>
+        <?php endif; ?>
       </div>
     </div>
 
