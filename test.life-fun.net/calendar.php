@@ -603,6 +603,12 @@ document.addEventListener('click',function(e){
     document.getElementById('spDropdown').classList.remove('open');
   }
 });
+window.addEventListener('load', () => {
+    const knownAnchors = ['#cal-section', '#cal-title'];
+    if (knownAnchors.includes(location.hash)) {
+        document.querySelector(location.hash)?.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }
+});
 </script>
 </body>
 </html>
