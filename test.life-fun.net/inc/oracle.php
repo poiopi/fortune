@@ -29,7 +29,7 @@ function getRokuyo(int $year, int $month, int $day): array {
          'desc'=>'六曜で最も縁起が悪い日とされる。物事は控えめに。新規着手は避けて。'],
     ];
 
-    $idx = ($lunarMonth + $lunarDay) % 6;
+    $idx = ((($lunarMonth + $lunarDay) % 6) + 6) % 6;
     return $rokuyoList[$idx];
 }
 
@@ -43,7 +43,7 @@ function myGregorianToJD(int $y, int $m, int $d): int {
 function jdToLunar(int $jd): array {
     // 簡易旧暦推算
     $cycle = $jd - 2451550; // 2000/1/6 新月基準
-    $monthNum = (int)($cycle / 29.53059);
+    $monthNum = (int)floor($cycle / 29.53059);
     $monthStart = (int)(2451550 + $monthNum * 29.53059);
     $day = $jd - $monthStart + 1;
     $month = (($monthNum % 12) + 12) % 12 + 1;

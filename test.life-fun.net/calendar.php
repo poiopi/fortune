@@ -427,17 +427,12 @@ body{top:0!important}
       <div class="cal-title"><?= $year ?>年 <?= $month ?>月</div>
       <div class="cal-jump">
         <form method="get" action="/calendar" class="cal-jump-form">
-          <select name="y" class="cal-select" onchange="this.form.submit()">
-            <?php
-              $todayYear   = (int)$today->format('Y');
-              $yearLoopMin = max(CALENDAR_MIN_YEAR, min($todayYear - 10, $year));
-              $yearLoopMax = min(CALENDAR_MAX_YEAR, max($todayYear + 10, $year));
-              for ($yy = $yearLoopMin; $yy <= $yearLoopMax; $yy++):
-            ?>
+          <select name="y" class="cal-select" aria-label="表示する年" onchange="this.form.submit()">
+            <?php for ($yy = CALENDAR_MIN_YEAR; $yy <= CALENDAR_MAX_YEAR; $yy++): ?>
             <option value="<?= $yy ?>"<?= $yy === $year ? ' selected' : '' ?>><?= $yy ?>年</option>
             <?php endfor; ?>
           </select>
-          <select name="m" class="cal-select" onchange="this.form.submit()">
+          <select name="m" class="cal-select" aria-label="表示する月" onchange="this.form.submit()">
             <?php for ($mm = 1; $mm <= 12; $mm++): ?>
             <option value="<?= $mm ?>"<?= $mm === $month ? ' selected' : '' ?>><?= $mm ?>月</option>
             <?php endfor; ?>
