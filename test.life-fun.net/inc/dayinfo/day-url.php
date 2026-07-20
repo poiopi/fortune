@@ -12,5 +12,5 @@ function dayUrl(DateTimeImmutable $date): string {
 }
 
 function calendarUrl(int $year, int $month): string {
-    return "/calendar?y={$year}&m={$month}";
+    return "/calendar?y={$year}&m={$month}#cal-section";
 }
