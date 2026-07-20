@@ -243,7 +243,7 @@ header{
 .sun .day-num{color:#e87070}
 .sat .day-num{color:#7090e8}
 .day-moon{font-size:.68rem;line-height:1;opacity:.75}
-.day-kichijitsu-mark{position:absolute;top:.35rem;left:.35rem;font-size:.6rem;color:var(--gold-lt);line-height:1}
+.day-kichijitsu-mark{font-size:.6rem;color:var(--gold-lt);line-height:1}
 .day-rokuyo{font-family:var(--ff-serif);font-size:.62rem;text-align:center;padding:.1rem .2rem;border-radius:3px;margin-top:.2rem;line-height:1.2}
 .day-rokuyo.taian{background:rgba(201,168,76,.2);color:#c9a84c;font-weight:700}
 .day-rokuyo.shakku{background:rgba(232,113,154,.15);color:#e8719a}
@@ -271,7 +271,7 @@ footer a:hover{color:var(--gold)}
   .cal-day{min-height:56px;padding:.3rem .2rem}
   .day-rokuyo{font-size:.55rem}
   .day-moon{font-size:.6rem}
-  .day-kichijitsu-mark{font-size:.52rem;top:.25rem;left:.25rem}
+  .day-kichijitsu-mark{font-size:.52rem}
   .cal-header{flex-direction:column;align-items:flex-start}
   .cal-jump{width:100%}
   .cal-nav{width:100%}
@@ -535,14 +535,14 @@ body{top:0!important}
           if($isToday)       $dayClass .= ' today';
         ?>
         <a href="<?= dayUrl($thisDate) ?>" class="<?= $dayClass ?>" style="text-decoration:none;color:inherit;display:block">
-          <?php if ($cellKichijitsu['available']): ?>
-          <span class="day-kichijitsu-mark">&#x2726;</span>
-          <?php endif; ?>
           <div class="day-top-row">
             <?php if ($cellMoon['available']): ?>
             <span class="day-moon"><?= $cellMoon['symbol'] ?></span>
             <?php else: ?>
             <span class="day-moon"></span>
+            <?php endif; ?>
+            <?php if ($cellKichijitsu['available']): ?>
+            <span class="day-kichijitsu-mark">&#x2726;</span>
             <?php endif; ?>
             <div class="day-num"><?= $d ?></div>
           </div>
