@@ -605,8 +605,27 @@ document.addEventListener('click',function(e){
 });
 window.addEventListener('load', () => {
     const knownAnchors = ['#cal-section', '#cal-title'];
-    if (knownAnchors.includes(location.hash)) {
-        document.querySelector(location.hash)?.scrollIntoView({ behavior: 'auto', block: 'start' });
+    if (!knownAnchors.includes(location.hash)) return;
+    const target = document.querySelector(location.hash);
+    if (!target) return;
+
+    const correct = () => target.scrollIntoView({ behavior: 'auto', block: 'start' });
+    correct();
+
+    if (typeof ResizeObserver !== 'undefined') {
+        let baselineHeight = null;
+        const ro = new ResizeObserver((entries) => {
+            const currentHeight = entries[0].contentRect.height;
+            if (baselineHeight === null) {
+                baselineHeight = currentHeight;
+                return; // 初回通知はベースラインとして記録するだけ、補正はしない
+            }
+            if (currentHeight !== baselineHeight) {
+                correct();
+                ro.disconnect();
+            }
+        });
+        ro.observe(document.body);
     }
 });
 </script>
