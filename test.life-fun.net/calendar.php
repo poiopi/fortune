@@ -37,13 +37,13 @@ $firstDay  = new DateTimeImmutable("$year-$month-01");
 $daysInMonth = (int)$firstDay->format('t');
 $startWeekday = (int)$firstDay->format('w'); // 0=日, 6=土
 
-$todayStr  = $today->format('Y-m-d');
-$luckyItems = getLuckyItems($todayStr);
-$rokuyo     = getRokuyo((int)$today->format('Y'), (int)$today->format('n'), (int)$today->format('j'));
-
-// 今日の星座・九星（today-band用）
-$todayInfo  = getDayInfo($today);
-$todaySeiza = $todayInfo['sections']['seiza'];
+// 今日の六曜・ラッキーアイテム・星座・九星（today-band用）。
+// getDayInfo()が内部でrokuyo/lucky/seiza/kyuseiすべてを一括計算するため、
+// getRokuyo()・getLuckyItems()の個別呼び出しは行わず、ここから取り出して使う。
+$todayInfo   = getDayInfo($today);
+$rokuyo      = $todayInfo['sections']['rokuyo'];
+$luckyItems  = $todayInfo['sections']['lucky'];
+$todaySeiza  = $todayInfo['sections']['seiza'];
 $todayKyusei = $todayInfo['sections']['kyusei'];
 ?>
 <!DOCTYPE html>
@@ -463,11 +463,11 @@ body{top:0!important}
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
 
   <!-- カレンダー -->
-  <section class="cal-section">
+  <section class="cal-section" id="cal-section">
     <div class="cal-header">
       <div class="cal-title"><?= $year ?>年 <?= $month ?>月</div>
       <div class="cal-jump">
-        <form method="get" action="/calendar" class="cal-jump-form">
+        <form method="get" action="/calendar#cal-section" class="cal-jump-form">
           <select name="y" class="cal-select" aria-label="表示する年" onchange="this.form.submit()">
             <?php for ($yy = CALENDAR_MIN_YEAR; $yy <= CALENDAR_MAX_YEAR; $yy++): ?>
             <option value="<?= $yy ?>"<?= $yy === $year ? ' selected' : '' ?>><?= $yy ?>年</option>
@@ -479,7 +479,7 @@ body{top:0!important}
             <?php endfor; ?>
           </select>
         </form>
-        <a href="/calendar" class="cal-today-btn">今日（<?= $today->format('Y') ?>年<?= $today->format('n') ?>月）</a>
+        <a href="/calendar#cal-section" class="cal-today-btn">今日（<?= $today->format('Y') ?>年<?= $today->format('n') ?>月）</a>
       </div>
       <div class="cal-nav">
         <?php
@@ -489,12 +489,12 @@ body{top:0!important}
           $next = $next->modify('+1 month');
         ?>
         <?php if (canGoPrevMonth($year, $month)): ?>
-        <a href="?y=<?= $prev->format('Y') ?>&m=<?= $prev->format('n') ?>">&#9664; 前月</a>
+        <a href="?y=<?= $prev->format('Y') ?>&m=<?= $prev->format('n') ?>#cal-section">&#9664; 前月</a>
         <?php else: ?>
         <span class="cal-nav-disabled">&#9664; 前月</span>
         <?php endif; ?>
         <?php if (canGoNextMonth($year, $month)): ?>
-        <a href="?y=<?= $next->format('Y') ?>&m=<?= $next->format('n') ?>">翌月 &#9654;</a>
+        <a href="?y=<?= $next->format('Y') ?>&m=<?= $next->format('n') ?>#cal-section">翌月 &#9654;</a>
         <?php else: ?>
         <span class="cal-nav-disabled">翌月 &#9654;</span>
         <?php endif; ?>
