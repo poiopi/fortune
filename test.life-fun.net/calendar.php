@@ -180,7 +180,7 @@ header{
 .lucky-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem;position:relative;overflow:hidden}
 .lucky-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--violet),var(--gold))}
 .lucky-cat{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:.5rem}
-.lucky-value{font-family:var(--ff-serif);font-size:1.1rem;font-weight:600;color:var(--gold-lt);line-height:1.3}
+.lucky-value{font-family:var(--ff-serif);font-size:1.1rem;font-weight:600;color:var(--gold-lt);line-height:1.3;min-height:49px}
 .lucky-note{font-size:.75rem;color:var(--muted);margin-top:.4rem;line-height:1.6}
 
 .lucky-number{
