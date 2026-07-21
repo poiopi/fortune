@@ -93,7 +93,7 @@ $todayKyusei = $todayInfo['sections']['kyusei'];
   --ff-sans: 'Zen Kaku Gothic New',sans-serif;
   --ff-mono: 'DM Mono',monospace;
 }
-html{font-size:16px;scroll-behavior:smooth}
+html{font-size:16px;scroll-behavior:auto}
 body{
   background:var(--void);
   color:var(--text);
@@ -602,40 +602,6 @@ document.addEventListener('click',function(e){
   if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
     document.getElementById('spDropdown').classList.remove('open');
   }
-});
-window.addEventListener('load', () => {
-    const knownAnchors = ['#cal-section', '#cal-title'];
-    if (!knownAnchors.includes(location.hash)) return;
-    const target = document.querySelector(location.hash);
-    if (!target) return;
-
-    const correct = () => target.scrollIntoView({ behavior: 'auto', block: 'start' });
-    correct();
-
-    if (typeof ResizeObserver !== 'undefined') {
-        let baselineHeight = null;
-        let debounceTimer = null;
-        const ro = new ResizeObserver((entries) => {
-            const currentHeight = entries[0].contentRect.height;
-            if (baselineHeight === null) {
-                baselineHeight = currentHeight;
-                return; // 初回通知はベースラインとして記録するだけ
-            }
-            if (currentHeight !== baselineHeight) {
-                baselineHeight = currentHeight; // 以降の変化検知の基準を更新
-                clearTimeout(debounceTimer);
-                debounceTimer = setTimeout(() => {
-                    correct();
-                }, 500); // 最後の変化から500ms安定したら1回だけ補正
-            }
-        });
-        ro.observe(document.body);
-
-        setTimeout(() => {
-            clearTimeout(debounceTimer);
-            ro.disconnect();
-        }, 10000); // 最大10秒で監視を強制終了
-    }
 });
 </script>
 </body>
