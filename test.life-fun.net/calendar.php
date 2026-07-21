@@ -614,18 +614,27 @@ window.addEventListener('load', () => {
 
     if (typeof ResizeObserver !== 'undefined') {
         let baselineHeight = null;
+        let debounceTimer = null;
         const ro = new ResizeObserver((entries) => {
             const currentHeight = entries[0].contentRect.height;
             if (baselineHeight === null) {
                 baselineHeight = currentHeight;
-                return; // 初回通知はベースラインとして記録するだけ、補正はしない
+                return; // 初回通知はベースラインとして記録するだけ
             }
             if (currentHeight !== baselineHeight) {
-                correct();
-                ro.disconnect();
+                baselineHeight = currentHeight; // 以降の変化検知の基準を更新
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    correct();
+                }, 500); // 最後の変化から500ms安定したら1回だけ補正
             }
         });
         ro.observe(document.body);
+
+        setTimeout(() => {
+            clearTimeout(debounceTimer);
+            ro.disconnect();
+        }, 10000); // 最大10秒で監視を強制終了
     }
 });
 </script>
