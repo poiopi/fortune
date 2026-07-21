@@ -11,6 +11,13 @@ declare(strict_types=1);
 
 require_once __DIR__.'/../../seiza-data.php';
 
+// 星座code→解説記事slugの変換表
+const SEIZA_ARTICLE_SLUGS = [
+    'AR'=>'aries','TA'=>'taurus','GE'=>'gemini','CA'=>'cancer',
+    'LE'=>'leo','VI'=>'virgo','LI'=>'libra','SC'=>'scorpio',
+    'SA'=>'sagittarius','CP'=>'capricorn','AQ'=>'aquarius','PI'=>'pisces',
+];
+
 function getSeizaInfo(DateTimeImmutable $date): array {
     $month = (int)$date->format('n');
     $day   = (int)$date->format('j');
@@ -34,12 +41,20 @@ function getSeizaInfo(DateTimeImmutable $date): array {
         }
 
         if ($inRange) {
+            $elementName = SEIZA_ELEMENTS[$sign['element']]['name'];
+            $qualityName = SEIZA_QUALITIES[$sign['quality']]['name'];
+            $slug        = SEIZA_ARTICLE_SLUGS[$sign['code']] ?? null;
+
             return [
-                'available' => true,
-                'name'      => $sign['name'],
-                'code'      => $sign['code'],
-                'symbol'    => $sign['symbol'],
-                'suffix'    => $sign['suffix'],
+                'available'    => true,
+                'name'         => $sign['name'],
+                'code'         => $sign['code'],
+                'symbol'       => $sign['symbol'],
+                'suffix'       => $sign['suffix'],
+                'period'       => $sign['period'],
+                'element_name' => $elementName,
+                'quality_name' => $qualityName,
+                'url'          => $slug !== null ? "/articles/seiza/{$slug}/" : null,
             ];
         }
     }

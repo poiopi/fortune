@@ -603,44 +603,6 @@ document.addEventListener('click',function(e){
     document.getElementById('spDropdown').classList.remove('open');
   }
 });
-(function(){
-  function snapshot(label){
-    var overlay = document.querySelector('.fmenu-overlay');
-    var drawer = document.querySelector('.fmenu-drawer');
-    var cs = getComputedStyle(document.body);
-    var target = document.querySelector(location.hash) || document.getElementById('cal-section');
-    console.log('=== SNAPSHOT: ' + label + ' (t=' + Math.round(performance.now()) + 'ms) ===');
-    console.table({
-      scrollY: window.scrollY,
-      bodyOverflow: cs.overflow,
-      bodyTop: cs.top,
-      bodyPosition: cs.position,
-      htmlOverflow: getComputedStyle(document.documentElement).overflow,
-      overlayOpen: overlay ? overlay.classList.contains('open') : null,
-      drawerOpen: drawer ? drawer.classList.contains('open') : null,
-      visualViewportOffsetTop: window.visualViewport ? window.visualViewport.offsetTop : null,
-      visualViewportHeight: window.visualViewport ? window.visualViewport.height : null,
-      windowInnerHeight: window.innerHeight,
-      documentClientHeight: document.documentElement.clientHeight,
-      activeElement: document.activeElement ? document.activeElement.tagName : null,
-      targetTop: target ? Math.round(target.getBoundingClientRect().top) : null,
-      hash: location.hash
-    });
-  }
-  snapshot('page表示直後');
-  [500,1000,2000,3000,5000,8000,10000].forEach(function(ms){
-    setTimeout(function(){ snapshot(ms+'ms経過'); }, ms);
-  });
-
-  var anchorTargets = ['body','.wrap','#cal-section','#cal-title','.cal-header','.today-band'];
-  var anchorReport = {};
-  anchorTargets.forEach(function(sel){
-    var el = document.querySelector(sel);
-    anchorReport[sel] = el ? getComputedStyle(el).overflowAnchor : 'NOT FOUND';
-  });
-  console.log('=== overflow-anchor値 ===');
-  console.table(anchorReport);
-})();
 </script>
 </body>
 </html>

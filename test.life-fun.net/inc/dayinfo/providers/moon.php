@@ -20,14 +20,14 @@ function moonPhaseFromAge(float $age): array {
     // 各区分の境界値（朔望月を8等分し、新月(0)を中心にした区分）
     $boundaries = [1.84566, 5.53699, 9.22831, 12.91963, 16.61096, 20.30228, 23.99361, 27.68493];
     $phases = [
-        ['name' => '新月',       'symbol' => '🌑'],
-        ['name' => '三日月',     'symbol' => '🌒'],
-        ['name' => '上弦の月',   'symbol' => '🌓'],
-        ['name' => '十三夜月',   'symbol' => '🌔'],
-        ['name' => '満月',       'symbol' => '🌕'],
-        ['name' => '十六夜月',   'symbol' => '🌖'],
-        ['name' => '下弦の月',   'symbol' => '🌗'],
-        ['name' => '二十六夜月', 'symbol' => '🌘'],
+        ['name' => '新月',       'symbol' => '🌑', 'description' => '月が見えなくなる、すべての始まりを象徴する日。新しいことを始める、願い事をするのに向いています。'],
+        ['name' => '三日月',     'symbol' => '🌒', 'description' => '細い光が姿を見せ始める、成長の初期段階。小さな一歩を積み重ねることが実を結びやすいでしょう。'],
+        ['name' => '上弦の月',   'symbol' => '🌓', 'description' => '半分が輝く、決断と行動の日。迷いを断ち切り、前へ進む勢いをつけるのに向いています。'],
+        ['name' => '十三夜月',   'symbol' => '🌔', 'description' => '満月まであと一歩、期待が高まる日。仕上げに向けて集中力を高めるとよいでしょう。'],
+        ['name' => '満月',       'symbol' => '🌕', 'description' => '月が最も満ちる、物事の集大成を象徴する日。これまでの努力が実を結びやすいでしょう。'],
+        ['name' => '十六夜月',   'symbol' => '🌖', 'description' => '満月からわずかに欠け始める、余韻を味わう日。得たものを振り返り、感謝する時間に向いています。'],
+        ['name' => '下弦の月',   'symbol' => '🌗', 'description' => '半分に欠けていく、手放しと整理の日。不要なものを見直し、身軽になるのに向いています。'],
+        ['name' => '二十六夜月', 'symbol' => '🌘', 'description' => '光が細くなり、静けさが増す日。次の新月へ向けて心身を休め、内省するのに向いています。'],
     ];
 
     foreach ($boundaries as $i => $b) {
@@ -50,9 +50,11 @@ function getMoonInfo(DateTimeImmutable $date): array {
     $phase = moonPhaseFromAge($rawAge);
 
     return [
-        'available'  => true,
-        'age'        => round($rawAge, 1),
-        'phase_name' => $phase['name'],
-        'symbol'     => $phase['symbol'],
+        'available'   => true,
+        'age'         => round($rawAge, 1),
+        'phase_name'  => $phase['name'],
+        'symbol'      => $phase['symbol'],
+        'description' => $phase['description'],
+        'url'         => null, // 将来の解説記事用。現時点では未作成のためnull
     ];
 }

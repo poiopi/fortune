@@ -3,6 +3,17 @@ declare(strict_types=1);
 require_once __DIR__.'/inc/dayinfo/DayInfoService.php';
 require_once __DIR__.'/inc/dayinfo/day-url.php';
 
+// 六曜class→解説記事slugの変換表（class名とslugが一致しない箇所に注意）
+// rokuyo.php（Provider）自体は変更しないため、このページ側で保持する。
+const ROKUYO_ARTICLE_SLUGS = [
+    'taian'      => 'taian',
+    'shakku'     => 'shakko',   // class名とslugが違う
+    'sensho'     => 'senshou',  // class名とslugが違う
+    'tomobiki'   => 'tomobiki',
+    'senbu'      => 'senbu',
+    'butsumetsu' => 'butsumetsu',
+];
+
 // ══════════════════════════════════════════════════════════════════
 // 日別詳細ページ
 // $_GET['date']（Y-m-d想定）から対象日を決定。不正・未指定の場合は当日にフォールバック。
@@ -107,6 +118,9 @@ body::before{
 .section-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.5rem 1.8rem;margin-bottom:1.25rem;position:relative;overflow:hidden}
 .section-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal))}
 .section-label{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;margin-bottom:.9rem}
+a.section-card{text-decoration:none;color:inherit;display:block;transition:border-color .2s,background .2s,transform .15s}
+a.section-card:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.06);transform:translateY(-2px)}
+.card-link-arrow{position:absolute;top:1rem;right:1.2rem;font-family:var(--ff-mono);font-size:.85rem;color:var(--violet-lt);opacity:.75}
 
 /* 六曜 */
 .rokuyo-badge{display:inline-block;text-align:center;min-width:100px;padding:.9rem 1.4rem;border-radius:10px;border:2px solid;margin-bottom:.9rem}
@@ -154,24 +168,28 @@ body::before{
 .kichijitsu-name{font-family:var(--ff-serif);font-size:1rem;font-weight:600;color:var(--gold-lt);flex:1}
 .kichijitsu-arrow{font-family:var(--ff-mono);font-size:.85rem;color:var(--gold-lt);flex-shrink:0}
 
-/* 月齢 */
-.moon-row{display:flex;align-items:center;gap:1rem}
-.moon-symbol{font-size:2.4rem;line-height:1}
-.moon-name{font-family:var(--ff-serif);font-size:1.3rem;font-weight:700;color:var(--gold-lt)}
-.moon-age{font-size:.82rem;color:var(--muted);margin-top:.2rem}
-
-/* 星座 */
-.seiza-row{display:flex;align-items:center;gap:1rem}
-.seiza-symbol{font-size:2.4rem;line-height:1}
-.seiza-name{font-family:var(--ff-serif);font-size:1.3rem;font-weight:700;color:var(--gold-lt)}
-.seiza-suffix{font-size:.82rem;color:var(--muted);margin-top:.2rem}
-
-/* 九星 */
-.kyusei-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.kyusei-item{background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:1rem}
-.kyusei-item-label{font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.12em;color:var(--muted);margin-bottom:.4rem}
-.kyusei-item-symbol{font-size:1.6rem;margin-bottom:.2rem}
-.kyusei-item-name{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--gold-lt)}
+/* 今日の星回り（月齢・星座・年九星・月九星をまとめたグループ） */
+.star-group{margin-bottom:1.25rem}
+.star-group-heading{
+  font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.16em;
+  color:var(--muted);text-transform:uppercase;
+  display:flex;align-items:center;gap:.7rem;margin-bottom:.9rem;
+}
+.star-group-heading::after{content:'';flex:1;height:1px;background:var(--border)}
+.star-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.9rem}
+.star-card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1rem 1.1rem;position:relative;overflow:hidden;
+}
+.star-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--violet),var(--teal))}
+a.star-card{text-decoration:none;color:inherit;display:block;transition:border-color .2s,background .2s,transform .15s}
+a.star-card:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.06);transform:translateY(-2px)}
+.star-card-symbol{font-size:1.7rem;line-height:1;margin-bottom:.4rem}
+.star-card-label{font-family:var(--ff-mono);font-size:.56rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:.3rem}
+.star-card-name{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--gold-lt);margin-bottom:.35rem;line-height:1.3}
+.star-card-meta{font-size:.68rem;color:var(--muted);line-height:1.6}
+.star-card-desc{font-size:.7rem;color:var(--text);line-height:1.6;margin-top:.4rem;opacity:.85}
+.star-card-arrow{position:absolute;top:.8rem;right:.9rem;font-family:var(--ff-mono);font-size:.75rem;color:var(--violet-lt);opacity:.7}
 
 .unavailable{font-size:.85rem;color:var(--muted)}
 
@@ -183,8 +201,11 @@ footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--gold)}
 
 @media(max-width:600px){
-  .kyusei-grid{grid-template-columns:1fr}
   .lucky-grid{grid-template-columns:1fr 1fr}
+  .star-grid{grid-template-columns:1fr}
+}
+@media(max-width:900px) and (min-width:601px){
+  .star-grid{grid-template-columns:1fr 1fr}
 }
 #google_translate_element{font-size:.65rem;flex-shrink:0}
 #google_translate_element .goog-te-gadget{color:transparent;white-space:nowrap}
@@ -212,7 +233,11 @@ body{top:0!important}
   <?php foreach ($dayInfo['sections'] as $sectionKey => $section): ?>
 
     <?php if ($sectionKey === 'rokuyo'): ?>
-      <div class="section-card">
+      <?php
+        $rokuyoSlug = $section['available'] ? (ROKUYO_ARTICLE_SLUGS[$section['class']] ?? null) : null;
+        $rokuyoTag  = $rokuyoSlug !== null ? 'a' : 'div';
+      ?>
+      <<?= $rokuyoTag ?> class="section-card"<?= $rokuyoSlug !== null ? ' href="/articles/calendar/rokuyo/'.htmlspecialchars($rokuyoSlug).'/"' : '' ?>>
         <div class="section-label">六曜</div>
         <?php if ($section['available']): ?>
           <div class="rokuyo-badge <?= htmlspecialchars($section['class']) ?>">
@@ -220,10 +245,13 @@ body{top:0!important}
             <div class="rokuyo-en"><?= htmlspecialchars($section['en']) ?></div>
           </div>
           <div class="rokuyo-desc"><?= htmlspecialchars($section['desc']) ?></div>
+          <?php if ($rokuyoSlug !== null): ?>
+          <span class="card-link-arrow">&#8594;</span>
+          <?php endif; ?>
         <?php else: ?>
           <div class="unavailable">情報がありません</div>
         <?php endif; ?>
-      </div>
+      </<?= $rokuyoTag ?>>
 
     <?php elseif ($sectionKey === 'kichijitsu'): ?>
       <div class="section-card">
@@ -272,62 +300,91 @@ body{top:0!important}
         <?php endif; ?>
       </div>
 
-    <?php elseif ($sectionKey === 'moon'): ?>
-      <div class="section-card">
-        <div class="section-label">月齢・月相</div>
-        <?php if ($section['available']): ?>
-          <div class="moon-row">
-            <div class="moon-symbol"><?= htmlspecialchars($section['symbol']) ?></div>
-            <div>
-              <div class="moon-name"><?= htmlspecialchars($section['phase_name']) ?></div>
-              <div class="moon-age">月齢 <?= htmlspecialchars((string)$section['age']) ?></div>
-            </div>
-          </div>
-        <?php else: ?>
-          <div class="unavailable">情報がありません</div>
-        <?php endif; ?>
-      </div>
-
-    <?php elseif ($sectionKey === 'seiza'): ?>
-      <div class="section-card">
-        <div class="section-label">星座</div>
-        <?php if ($section['available']): ?>
-          <div class="seiza-row">
-            <div class="seiza-symbol"><?= htmlspecialchars($section['symbol']) ?></div>
-            <div>
-              <div class="seiza-name"><?= htmlspecialchars($section['name']) ?></div>
-              <div class="seiza-suffix"><?= htmlspecialchars($section['suffix']) ?>タイプ</div>
-            </div>
-          </div>
-        <?php else: ?>
-          <div class="unavailable">情報がありません</div>
-        <?php endif; ?>
-      </div>
-
-    <?php elseif ($sectionKey === 'kyusei'): ?>
-      <div class="section-card">
-        <div class="section-label">九星（年家九星・月家九星）</div>
-        <?php if ($section['available']): ?>
-          <div class="kyusei-grid">
-            <div class="kyusei-item">
-              <div class="kyusei-item-label">年九星</div>
-              <div class="kyusei-item-symbol"><?= htmlspecialchars($section['year']['symbol']) ?></div>
-              <div class="kyusei-item-name"><?= htmlspecialchars($section['year']['name']) ?></div>
-            </div>
-            <div class="kyusei-item">
-              <div class="kyusei-item-label">月九星</div>
-              <div class="kyusei-item-symbol"><?= htmlspecialchars($section['month']['symbol']) ?></div>
-              <div class="kyusei-item-name"><?= htmlspecialchars($section['month']['name']) ?></div>
-            </div>
-          </div>
-        <?php else: ?>
-          <div class="unavailable">情報がありません</div>
-        <?php endif; ?>
-      </div>
-
     <?php endif; ?>
+    <?php // moon/seiza/kyusei は下の「今日の星回り」グループでまとめて表示するため、
+          // このforeachループでは何も出力しない ?>
 
   <?php endforeach; ?>
+
+  <?php
+    $moonSection   = $dayInfo['sections']['moon'];
+    $seizaSection  = $dayInfo['sections']['seiza'];
+    $kyuseiSection = $dayInfo['sections']['kyusei'];
+  ?>
+  <div class="star-group">
+    <div class="star-group-heading">今日の星回り</div>
+    <div class="star-grid">
+
+      <!-- 月齢（現時点ではurlがnullのためリンクなし。urlが設定されれば自動的にリンク化される） -->
+      <?php $moonTag = (!empty($moonSection['url'])) ? 'a' : 'div'; ?>
+      <<?= $moonTag ?> class="star-card"<?= !empty($moonSection['url']) ? ' href="'.htmlspecialchars($moonSection['url']).'"' : '' ?>>
+        <?php if ($moonSection['available']): ?>
+          <div class="star-card-symbol"><?= htmlspecialchars($moonSection['symbol']) ?></div>
+          <div class="star-card-label">月齢・月相</div>
+          <div class="star-card-name"><?= htmlspecialchars($moonSection['phase_name']) ?>（月齢<?= htmlspecialchars((string)$moonSection['age']) ?>）</div>
+          <div class="star-card-desc"><?= htmlspecialchars($moonSection['description']) ?></div>
+          <?php if (!empty($moonSection['url'])): ?>
+          <span class="star-card-arrow">&#8594;</span>
+          <?php endif; ?>
+        <?php else: ?>
+          <div class="star-card-label">月齢・月相</div>
+          <div class="unavailable">情報がありません</div>
+        <?php endif; ?>
+      </<?= $moonTag ?>>
+
+      <!-- 星座 -->
+      <?php $seizaTag = (!empty($seizaSection['url'])) ? 'a' : 'div'; ?>
+      <<?= $seizaTag ?> class="star-card"<?= !empty($seizaSection['url']) ? ' href="'.htmlspecialchars($seizaSection['url']).'"' : '' ?>>
+        <?php if ($seizaSection['available']): ?>
+          <div class="star-card-symbol"><?= htmlspecialchars($seizaSection['symbol']) ?></div>
+          <div class="star-card-label">星座</div>
+          <div class="star-card-name"><?= htmlspecialchars($seizaSection['name']) ?>（<?= htmlspecialchars($seizaSection['suffix']) ?>タイプ）</div>
+          <div class="star-card-meta"><?= htmlspecialchars($seizaSection['period']) ?> ・ <?= htmlspecialchars($seizaSection['element_name']) ?> ・ <?= htmlspecialchars($seizaSection['quality_name']) ?></div>
+          <?php if (!empty($seizaSection['url'])): ?>
+          <span class="star-card-arrow">&#8594;</span>
+          <?php endif; ?>
+        <?php else: ?>
+          <div class="star-card-label">星座</div>
+          <div class="unavailable">情報がありません</div>
+        <?php endif; ?>
+      </<?= $seizaTag ?>>
+
+      <!-- 年九星 -->
+      <?php $kyuseiYearTag = (!empty($kyuseiSection['available']) && !empty($kyuseiSection['year']['url'])) ? 'a' : 'div'; ?>
+      <<?= $kyuseiYearTag ?> class="star-card"<?= (!empty($kyuseiSection['available']) && !empty($kyuseiSection['year']['url'])) ? ' href="'.htmlspecialchars($kyuseiSection['year']['url']).'"' : '' ?>>
+        <?php if ($kyuseiSection['available']): ?>
+          <div class="star-card-symbol"><?= htmlspecialchars($kyuseiSection['year']['symbol']) ?></div>
+          <div class="star-card-label">年九星</div>
+          <div class="star-card-name"><?= htmlspecialchars($kyuseiSection['year']['name']) ?></div>
+          <div class="star-card-meta"><?= htmlspecialchars($kyuseiSection['year']['element']) ?>の気 ・ <?= htmlspecialchars($kyuseiSection['year']['personality']) ?></div>
+          <?php if (!empty($kyuseiSection['year']['url'])): ?>
+          <span class="star-card-arrow">&#8594;</span>
+          <?php endif; ?>
+        <?php else: ?>
+          <div class="star-card-label">年九星</div>
+          <div class="unavailable">情報がありません</div>
+        <?php endif; ?>
+      </<?= $kyuseiYearTag ?>>
+
+      <!-- 月九星 -->
+      <?php $kyuseiMonthTag = (!empty($kyuseiSection['available']) && !empty($kyuseiSection['month']['url'])) ? 'a' : 'div'; ?>
+      <<?= $kyuseiMonthTag ?> class="star-card"<?= (!empty($kyuseiSection['available']) && !empty($kyuseiSection['month']['url'])) ? ' href="'.htmlspecialchars($kyuseiSection['month']['url']).'"' : '' ?>>
+        <?php if ($kyuseiSection['available']): ?>
+          <div class="star-card-symbol"><?= htmlspecialchars($kyuseiSection['month']['symbol']) ?></div>
+          <div class="star-card-label">月九星</div>
+          <div class="star-card-name"><?= htmlspecialchars($kyuseiSection['month']['name']) ?></div>
+          <div class="star-card-meta"><?= htmlspecialchars($kyuseiSection['month']['element']) ?>の気 ・ <?= htmlspecialchars($kyuseiSection['month']['personality']) ?></div>
+          <?php if (!empty($kyuseiSection['month']['url'])): ?>
+          <span class="star-card-arrow">&#8594;</span>
+          <?php endif; ?>
+        <?php else: ?>
+          <div class="star-card-label">月九星</div>
+          <div class="unavailable">情報がありません</div>
+        <?php endif; ?>
+      </<?= $kyuseiMonthTag ?>>
+
+    </div>
+  </div>
 
   <!-- AdSense枠 -->
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
