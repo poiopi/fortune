@@ -603,9 +603,6 @@ document.addEventListener('click',function(e){
     document.getElementById('spDropdown').classList.remove('open');
   }
 });
-if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-}
 </script>
 </body>
 </html>
