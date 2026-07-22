@@ -43,6 +43,7 @@ function getKyuseiInfo(DateTimeImmutable $date): array {
             'element'    => $yearData['element'],
             'symbol'     => $yearData['symbol'],
             'personality'=> $yearData['personality'],
+            'fortune'    => $yearData['fortune'],
             'url'        => $yearSlug !== null ? "/articles/kyusei/{$yearSlug}/" : null,
         ],
         'month' => [
@@ -52,6 +53,7 @@ function getKyuseiInfo(DateTimeImmutable $date): array {
             'element'    => $monthData['element'],
             'symbol'     => $monthData['symbol'],
             'personality'=> $monthData['personality'],
+            'fortune'    => $monthData['fortune'],
             'url'        => $monthSlug !== null ? "/articles/kyusei/{$monthSlug}/" : null,
         ],
     ];
