@@ -2,6 +2,7 @@
 declare(strict_types=1);
 require_once __DIR__.'/inc/dayinfo/DayInfoService.php';
 require_once __DIR__.'/inc/dayinfo/day-url.php';
+require_once __DIR__.'/inc/dayinfo/render-star-card.php';
 
 // 六曜class→解説記事slugの変換表（class名とslugが一致しない箇所に注意）
 // rokuyo.php（Provider）自体は変更しないため、このページ側で保持する。
@@ -315,79 +316,55 @@ body{top:0!important}
     <div class="star-group-heading">今日の星回り</div>
     <div class="star-grid">
 
-      <!-- 月齢（現時点ではurlがnullのためリンクなし。urlが設定されれば自動的にリンク化される） -->
-      <?php $moonTag = (!empty($moonSection['url'])) ? 'a' : 'div'; ?>
-      <<?= $moonTag ?> class="star-card"<?= !empty($moonSection['url']) ? ' href="'.htmlspecialchars($moonSection['url']).'"' : '' ?>>
-        <?php if ($moonSection['available']): ?>
-          <div class="star-card-symbol"><?= htmlspecialchars($moonSection['symbol']) ?></div>
-          <div class="star-card-label">月齢・月相</div>
-          <div class="star-card-name"><?= htmlspecialchars($moonSection['phase_name']) ?>（月齢<?= htmlspecialchars((string)$moonSection['age']) ?>）</div>
-          <div class="star-card-desc"><?= htmlspecialchars($moonSection['description']) ?></div>
-          <?php if (!empty($moonSection['url'])): ?>
-          <span class="star-card-arrow">&#8594;</span>
-          <?php endif; ?>
-        <?php else: ?>
-          <div class="star-card-label">月齢・月相</div>
-          <div class="unavailable">情報がありません</div>
-        <?php endif; ?>
-      </<?= $moonTag ?>>
+      <?php
+        // 月齢（現時点ではurlがnullのためリンクなし。urlが設定されれば自動的にリンク化される）
+        echo renderStarCard([
+          'label'     => '月齢・月相',
+          'available' => $moonSection['available'],
+          'symbol'    => $moonSection['available'] ? $moonSection['symbol'] : null,
+          'name'      => $moonSection['available'] ? ($moonSection['phase_name'].'（月齢'.$moonSection['age'].'）') : null,
+          'desc'      => $moonSection['available'] ? $moonSection['description'] : null,
+          'url'       => $moonSection['available'] ? ($moonSection['url'] ?? null) : null,
+        ]);
 
-      <!-- 星座 -->
-      <?php $seizaTag = (!empty($seizaSection['url'])) ? 'a' : 'div'; ?>
-      <<?= $seizaTag ?> class="star-card"<?= !empty($seizaSection['url']) ? ' href="'.htmlspecialchars($seizaSection['url']).'"' : '' ?>>
-        <?php if ($seizaSection['available']): ?>
-          <div class="star-card-symbol"><?= htmlspecialchars($seizaSection['symbol']) ?></div>
-          <div class="star-card-label">星座</div>
-          <div class="star-card-name"><?= htmlspecialchars($seizaSection['name']) ?>（<?= htmlspecialchars($seizaSection['suffix']) ?>タイプ）</div>
-          <div class="star-card-meta"><?= htmlspecialchars($seizaSection['period']) ?> ・ <?= htmlspecialchars($seizaSection['element_name']) ?> ・ <?= htmlspecialchars($seizaSection['quality_name']) ?></div>
-          <?php if (!empty($seizaSection['url'])): ?>
-          <span class="star-card-arrow">&#8594;</span>
-          <?php endif; ?>
-        <?php else: ?>
-          <div class="star-card-label">星座</div>
-          <div class="unavailable">情報がありません</div>
-        <?php endif; ?>
-      </<?= $seizaTag ?>>
+        // 星座
+        echo renderStarCard([
+          'label'     => '星座',
+          'available' => $seizaSection['available'],
+          'symbol'    => $seizaSection['available'] ? $seizaSection['symbol'] : null,
+          'name'      => $seizaSection['available'] ? ($seizaSection['name'].'（'.$seizaSection['suffix'].'タイプ）') : null,
+          'meta'      => $seizaSection['available'] ? ($seizaSection['period'].' ・ '.$seizaSection['element_name'].' ・ '.$seizaSection['quality_name']) : null,
+          'url'       => $seizaSection['available'] ? ($seizaSection['url'] ?? null) : null,
+        ]);
 
-      <!-- 年九星 -->
-      <?php $kyuseiYearTag = (!empty($kyuseiSection['available']) && !empty($kyuseiSection['year']['url'])) ? 'a' : 'div'; ?>
-      <<?= $kyuseiYearTag ?> class="star-card"<?= (!empty($kyuseiSection['available']) && !empty($kyuseiSection['year']['url'])) ? ' href="'.htmlspecialchars($kyuseiSection['year']['url']).'"' : '' ?>>
-        <?php if ($kyuseiSection['available']): ?>
-          <div class="star-card-symbol"><?= htmlspecialchars($kyuseiSection['year']['symbol']) ?></div>
-          <div class="star-card-label">年九星</div>
-          <div class="star-card-name"><?= htmlspecialchars($kyuseiSection['year']['name']) ?></div>
-          <div class="star-card-meta"><?= htmlspecialchars($kyuseiSection['year']['element']) ?>の気 ・ <?= htmlspecialchars($kyuseiSection['year']['personality']) ?></div>
-          <?php if (!empty($kyuseiSection['year']['url'])): ?>
-          <span class="star-card-arrow">&#8594;</span>
-          <?php endif; ?>
-        <?php else: ?>
-          <div class="star-card-label">年九星</div>
-          <div class="unavailable">情報がありません</div>
-        <?php endif; ?>
-      </<?= $kyuseiYearTag ?>>
+        // 年九星
+        echo renderStarCard([
+          'label'     => '年九星',
+          'available' => $kyuseiSection['available'],
+          'symbol'    => $kyuseiSection['available'] ? $kyuseiSection['year']['symbol'] : null,
+          'name'      => $kyuseiSection['available'] ? $kyuseiSection['year']['name'] : null,
+          'meta'      => $kyuseiSection['available'] ? ($kyuseiSection['year']['element'].'の気 ・ '.$kyuseiSection['year']['personality']) : null,
+          'url'       => $kyuseiSection['available'] ? ($kyuseiSection['year']['url'] ?? null) : null,
+        ]);
 
-      <!-- 月九星 -->
-      <?php $kyuseiMonthTag = (!empty($kyuseiSection['available']) && !empty($kyuseiSection['month']['url'])) ? 'a' : 'div'; ?>
-      <<?= $kyuseiMonthTag ?> class="star-card"<?= (!empty($kyuseiSection['available']) && !empty($kyuseiSection['month']['url'])) ? ' href="'.htmlspecialchars($kyuseiSection['month']['url']).'"' : '' ?>>
-        <?php if ($kyuseiSection['available']): ?>
-          <div class="star-card-symbol"><?= htmlspecialchars($kyuseiSection['month']['symbol']) ?></div>
-          <div class="star-card-label">月九星</div>
-          <div class="star-card-name"><?= htmlspecialchars($kyuseiSection['month']['name']) ?></div>
-          <div class="star-card-meta"><?= htmlspecialchars($kyuseiSection['month']['element']) ?>の気 ・ <?= htmlspecialchars($kyuseiSection['month']['personality']) ?></div>
-          <?php if (!empty($kyuseiSection['month']['url'])): ?>
-          <span class="star-card-arrow">&#8594;</span>
-          <?php endif; ?>
-        <?php else: ?>
-          <div class="star-card-label">月九星</div>
-          <div class="unavailable">情報がありません</div>
-        <?php endif; ?>
-      </<?= $kyuseiMonthTag ?>>
+        // 月九星
+        echo renderStarCard([
+          'label'     => '月九星',
+          'available' => $kyuseiSection['available'],
+          'symbol'    => $kyuseiSection['available'] ? $kyuseiSection['month']['symbol'] : null,
+          'name'      => $kyuseiSection['available'] ? $kyuseiSection['month']['name'] : null,
+          'meta'      => $kyuseiSection['available'] ? ($kyuseiSection['month']['element'].'の気 ・ '.$kyuseiSection['month']['personality']) : null,
+          'url'       => $kyuseiSection['available'] ? ($kyuseiSection['month']['url'] ?? null) : null,
+        ]);
+      ?>
 
     </div>
   </div>
 
   <!-- AdSense枠 -->
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
+
+  <div class="nav-cards-section" style="padding:2rem 0 0"><h3>✦ 次はこれを試してみては？ ✦</h3><?php require_once __DIR__.'/inc/nav-cards.php'; echo _nav_cards(3,'calendar'); ?></div>
 
   <nav class="back-nav" style="padding-bottom:1.2rem">
     <a href="<?= htmlspecialchars($backUrl) ?>" class="back-link">&#9664; カレンダーへ戻る</a>
