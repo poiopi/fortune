@@ -188,8 +188,8 @@ a.star-card:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.06)
 .star-card-symbol{font-size:1.7rem;line-height:1;margin-bottom:.4rem}
 .star-card-label{font-family:var(--ff-mono);font-size:.56rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:.3rem}
 .star-card-name{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--gold-lt);margin-bottom:.35rem;line-height:1.3}
-.star-card-meta{font-size:.68rem;color:var(--muted);line-height:1.6}
-.star-card-desc{font-size:.7rem;color:var(--text);line-height:1.6;margin-top:.4rem;opacity:.85}
+.star-card-meta{font-size:.73rem;color:var(--muted);line-height:1.6}
+.star-card-desc{font-size:.78rem;color:var(--text);line-height:1.7;margin-top:.4rem;opacity:.95}
 .star-card-arrow{position:absolute;top:.8rem;right:.9rem;font-family:var(--ff-mono);font-size:.75rem;color:var(--violet-lt);opacity:.7}
 .star-group-footnote{font-size:.72rem;color:var(--muted);margin-top:.7rem;line-height:1.6}
 
@@ -337,6 +337,7 @@ body{top:0!important}
           'symbol'    => $seizaSection['available'] ? $seizaSection['symbol'] : null,
           'name'      => $seizaSection['available'] ? ($seizaSection['name'].'（'.$seizaSection['suffix'].'タイプ）') : null,
           'meta'      => $seizaSection['available'] ? ($seizaSection['period'].' ・ '.$seizaSection['element_name'].' ・ '.$seizaSection['quality_name']) : null,
+          'desc'      => $seizaSection['available'] ? trim($seizaSection['personality'].' '.$seizaSection['strength']) : null,
           'url'       => $seizaSection['available'] ? ($seizaSection['url'] ?? null) : null,
         ]);
 
@@ -367,6 +368,7 @@ body{top:0!important}
           'symbol'    => $flowerSection['available'] ? '🌸' : null,
           'name'      => $flowerSection['available'] ? $flowerSection['name'] : null,
           'meta'      => $flowerSection['available'] ? ('花言葉：'.$flowerSection['meaning']) : null,
+          'desc'      => $flowerSection['available'] ? ($flowerSection['feature'] ?: null) : null,
           'url'       => $flowerSection['available'] ? ($flowerSection['url'] ?? null) : null,
         ]);
 
@@ -384,6 +386,7 @@ body{top:0!important}
           'symbol'    => $stoneSection['available'] ? '💎' : null,
           'name'      => $stoneSection['available'] ? $stoneSection['name'] : null,
           'meta'      => $stoneMeta,
+          'desc'      => $stoneSection['available'] ? ($stoneSection['feature'] ?? null) : null,
           'url'       => $stoneSection['available'] ? ($stoneSection['url'] ?? null) : null,
         ]);
       ?>
