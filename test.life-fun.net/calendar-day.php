@@ -191,6 +191,7 @@ a.star-card:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.06)
 .star-card-meta{font-size:.68rem;color:var(--muted);line-height:1.6}
 .star-card-desc{font-size:.7rem;color:var(--text);line-height:1.6;margin-top:.4rem;opacity:.85}
 .star-card-arrow{position:absolute;top:.8rem;right:.9rem;font-family:var(--ff-mono);font-size:.75rem;color:var(--violet-lt);opacity:.7}
+.star-group-footnote{font-size:.72rem;color:var(--muted);margin-top:.7rem;line-height:1.6}
 
 .unavailable{font-size:.85rem;color:var(--muted)}
 
@@ -311,6 +312,8 @@ body{top:0!important}
     $moonSection   = $dayInfo['sections']['moon'];
     $seizaSection  = $dayInfo['sections']['seiza'];
     $kyuseiSection = $dayInfo['sections']['kyusei'];
+    $flowerSection = $dayInfo['sections']['flower'];
+    $stoneSection  = $dayInfo['sections']['stone'];
   ?>
   <div class="star-group">
     <div class="star-group-heading">今日の星回り</div>
@@ -356,9 +359,37 @@ body{top:0!important}
           'meta'      => $kyuseiSection['available'] ? ($kyuseiSection['month']['element'].'の気 ・ '.$kyuseiSection['month']['personality']) : null,
           'url'       => $kyuseiSection['available'] ? ($kyuseiSection['month']['url'] ?? null) : null,
         ]);
+
+        // 誕生花
+        echo renderStarCard([
+          'label'     => '誕生花',
+          'available' => $flowerSection['available'],
+          'symbol'    => $flowerSection['available'] ? '🌸' : null,
+          'name'      => $flowerSection['available'] ? $flowerSection['name'] : null,
+          'meta'      => $flowerSection['available'] ? ('花言葉：'.$flowerSection['meaning']) : null,
+          'url'       => $flowerSection['available'] ? ($flowerSection['url'] ?? null) : null,
+        ]);
+
+        // 今月の誕生石（日単位ではなく月単位であることが伝わるlabel表記にする）
+        $stoneMeta = null;
+        if ($stoneSection['available']) {
+          $stoneMeta = '石言葉：'.$stoneSection['meaning'];
+          if (!empty($stoneSection['alternates'])) {
+            $stoneMeta .= '（他に'.implode('、', $stoneSection['alternates']).'も）';
+          }
+        }
+        echo renderStarCard([
+          'label'     => '今月の誕生石',
+          'available' => $stoneSection['available'],
+          'symbol'    => $stoneSection['available'] ? '💎' : null,
+          'name'      => $stoneSection['available'] ? $stoneSection['name'] : null,
+          'meta'      => $stoneMeta,
+          'url'       => $stoneSection['available'] ? ($stoneSection['url'] ?? null) : null,
+        ]);
       ?>
 
     </div>
+    <p class="star-group-footnote">※誕生花には複数の体系があり、本サイトでは一般的な体系の一つを採用しています。</p>
   </div>
 
   <!-- AdSense枠 -->
