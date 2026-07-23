@@ -105,7 +105,8 @@ ob_start();
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
-      {"@type":"ListItem","position":4,"name":"下弦の月とは","item":"https://life-fun.net/articles/calendar/moon/kagen/"}
+      {"@type":"ListItem","position":4,"name":"月の満ち欠けとは","item":"https://life-fun.net/articles/calendar/moon/"},
+      {"@type":"ListItem","position":5,"name":"下弦の月とは","item":"https://life-fun.net/articles/calendar/moon/kagen/"}
     ]
   }
   </script>
@@ -121,7 +122,7 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span>下弦の月とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/moon/">月の満ち欠けとは</a><span>›</span>下弦の月とは
   </nav>
 
   <div class="art-hero">
@@ -224,8 +225,8 @@ ob_start();
   $prevTitle = '十六夜月';
   $nextUrl   = '/articles/calendar/moon/nijuurokuya/';
   $nextTitle = '二十六夜月';
-  $listUrl   = '/calendar';
-  $listTitle = '開運カレンダー';
+  $listUrl   = '/articles/calendar/moon/';
+  $listTitle = '月相一覧';
   require __DIR__.'/../../../../inc/article-nav.php';
   ?>
 
@@ -236,7 +237,7 @@ ob_start();
     $relatedItems = [
       ['label'=>'上弦の月とは', 'title'=>'対になる月相を知る →', 'url'=>'/articles/calendar/moon/jougen/'],
       ['label'=>'二十六夜月とは', 'title'=>'次の月相を知る →', 'url'=>'/articles/calendar/moon/nijuurokuya/'],
-      ['label'=>'開運カレンダーとは', 'title'=>'今日の月齢を確認する →', 'url'=>'/calendar'],
+      ['label'=>'開運カレンダーとは', 'title'=>'今日の月齢を確認する →', 'url'=>'/articles/calendar/'],
     ];
     require __DIR__.'/../../../../inc/article-related.php';
     ?>
