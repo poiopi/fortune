@@ -71,7 +71,7 @@ ob_start();
   .art-section p:last-child{margin-bottom:0}
   .type-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin-top:1rem}
   .type-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s;display:block;text-decoration:none;color:inherit}
-  .type-card:hover{border-color:var(--accent-lt)}
+  a.type-card:hover{border-color:var(--accent-lt)}
   .type-code{font-family:var(--ff-mono);font-size:.8rem;line-height:1.4;color:var(--accent);letter-spacing:.08em;margin-bottom:.25rem;min-height:2.24rem}
   .type-name{font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;margin-bottom:.3rem}
   .type-kw{font-size:.75rem;color:var(--muted)}
