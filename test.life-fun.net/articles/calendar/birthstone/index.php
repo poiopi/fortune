@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/moon/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthstone/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="新月・満月など月の満ち欠け（月相）の意味とスピリチュアルな解釈をわかりやすく解説。8つの月相の特徴とおすすめの過ごし方を紹介します。">
-  <title>月の満ち欠け（月相）とは？8つの月相の意味を完全解説</title>
+  <meta name="description" content="1月ガーネット・2月アメジストなど、12か月の誕生石が持つ意味と魅力をわかりやすく解説します。">
+  <title>誕生石とは？12か月の意味を完全解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -98,7 +98,7 @@ ob_start();
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
-      {"@type":"ListItem","position":4,"name":"月の満ち欠けとは","item":"https://life-fun.net/articles/calendar/moon/"}
+      {"@type":"ListItem","position":4,"name":"誕生石とは","item":"https://life-fun.net/articles/calendar/birthstone/"}
     ]
   }
   </script>
@@ -114,18 +114,18 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span>月の満ち欠けとは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span>誕生石とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">MOON PHASE · 完全ガイド</span>
-    <h1>月の満ち欠け（月相）とは？<br>8つの月相の意味を完全解説</h1>
-    <p class="art-lead">月は新月から満月を経て再び新月に戻るまで、およそ29.5日かけて姿を変えていきます。この一巡りの中で月が見せる8つの表情を「月相」と呼び、それぞれに異なる意味やおすすめの過ごし方があるとされています。</p>
+    <span class="art-label">BIRTHSTONE · 完全ガイド</span>
+    <h1>誕生石とは？<br>12か月の意味を完全解説</h1>
+    <p class="art-lead">誕生石とは、生まれた月ごとに定められた宝石のことです。それぞれの石には固有の「石言葉」があり、身につける人を守り、運気を高めるお守りとして古くから親しまれてきました。</p>
   </div>
 
   <?php
-  $ctaTitle = '📅 今日の月齢を確認する';
-  $ctaText  = '今日の月相・月齢を毎日更新でお届け。';
+  $ctaTitle = '📅 今日の運勢を確認する';
+  $ctaText  = '今日の誕生石や運気の波も毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
   require __DIR__.'/../../../inc/article-cta.php';
@@ -134,67 +134,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">月相とは</a></li>
-      <li><a href="#list">8つの月相一覧</a></li>
-      <li><a href="#enjoy">月相ごとの楽しみ方</a></li>
+      <li><a href="#about">誕生石とは</a></li>
+      <li><a href="#list">12か月の誕生石一覧</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>月相とは</h2>
-    <p>月相とは、地球から見た月の満ち欠けの状態を指す言葉です。太陽・地球・月の位置関係によって、月に当たる太陽光のうち地球から見える部分の割合が変化し、新月から満月、そして再び新月へと、およそ29.5日（1朔望月）かけて姿を変えていきます。占いやスピリチュアルの分野では、この周期を「始まり」から「集大成」、そして「手放し」へと続く一つの物語として捉え、日々の過ごし方の参考にする考え方があります。</p>
+    <h2>誕生石とは</h2>
+    <p>誕生石とは、生まれた月ごとに1つずつ定められた宝石のことで、それぞれに固有の意味（石言葉）が込められています。起源は聖書に登場する12種の宝石に遡るとされ、日本では全国宝石卸商協同組合が1958年に定めた基準が広く使われています。誕生石は自分の生まれ月の石を身につけるだけでなく、大切な人への贈り物としても親しまれています。</p>
   </section>
 
   <section class="art-section" id="list">
-    <h2>8つの月相一覧</h2>
+    <h2>12か月の誕生石一覧</h2>
     <table class="kichijitsu-table">
-      <tr><th>月相名</th><th>読み方</th><th>意味・特徴</th><th>おすすめの過ごし方</th></tr>
-      <tr><td><strong>新月</strong></td><td>しんげつ</td><td>太陽の光が当たる面が見えなくなる状態。すべての始まりを象徴する。</td><td>新しい習慣を始める・目標や願い事を書き出す</td></tr>
-      <tr><td><strong>三日月</strong></td><td>みかづき</td><td>新月から数日、細い光の弧が見え始める成長初期の月。芽生えを象徴する。</td><td>情報収集や準備・小さな行動を積み重ねる</td></tr>
-      <tr><td><strong>上弦の月</strong></td><td>じょうげんのつき</td><td>右半分が輝く半月。新月と満月の中間で、決断と行動を象徴する。</td><td>迷っていたことを決断する・新しい挑戦</td></tr>
-      <tr><td><strong>十三夜月</strong></td><td>じゅうさんやづき</td><td>満月の一歩手前、丸みを帯びたふっくらとした形。仕上げと集中を象徴する。</td><td>進めてきたことの仕上げ・最終調整に集中</td></tr>
-      <tr><td><strong>満月</strong></td><td>まんげつ</td><td>丸く満ちて輝く、最も明るい状態の月。物事の集大成を象徴する。</td><td>努力を振り返る・成果に感謝する</td></tr>
-      <tr><td><strong>十六夜月</strong></td><td>いざよいづき</td><td>満月の翌晩、わずかに欠け始めた月。余韻を味わう時期を象徴する。</td><td>満月で得た気づきをゆっくり振り返る</td></tr>
-      <tr><td><strong>下弦の月</strong></td><td>かげんのつき</td><td>左半分が輝く半月。満月から新月へ向かい、手放しと整理を象徴する。</td><td>部屋やデータの整理・不要な習慣の見直し</td></tr>
-      <tr><td><strong>二十六夜月</strong></td><td>にじゅうろくやづき</td><td>新月直前、光がごく細くなった月。静けさと内省を象徴する。</td><td>休息をとる・これまでの一巡りを振り返る</td></tr>
+      <tr><th>月</th><th>石名</th><th>石言葉</th></tr>
+      <tr><td>1月</td><td><strong>ガーネット</strong></td><td>真実の愛</td></tr>
+      <tr><td>2月</td><td><strong>アメジスト</strong></td><td>誠実、心の平和</td></tr>
+      <tr><td>3月</td><td><strong>アクアマリン</strong></td><td>沈着、勇敢</td></tr>
+      <tr><td>4月</td><td><strong>ダイヤモンド</strong></td><td>永遠の絆、純潔</td></tr>
+      <tr><td>5月</td><td><strong>エメラルド</strong></td><td>幸福、夫婦愛</td></tr>
+      <tr><td>6月</td><td><strong>真珠</strong></td><td>健康、富</td></tr>
+      <tr><td>7月</td><td><strong>ルビー</strong></td><td>情熱、愛情</td></tr>
+      <tr><td>8月</td><td><strong>ペリドット</strong></td><td>夫婦の幸福</td></tr>
+      <tr><td>9月</td><td><strong>サファイア</strong></td><td>誠実、慈愛</td></tr>
+      <tr><td>10月</td><td><strong>オパール</strong></td><td>希望、純粋</td></tr>
+      <tr><td>11月</td><td><strong>トパーズ</strong></td><td>友情、希望</td></tr>
+      <tr><td>12月</td><td><strong>トルコ石</strong></td><td>成功、繁栄</td></tr>
     </table>
-  </section>
 
-  <section class="art-section" id="detail">
-    <h2>月相の種類</h2>
     <div class="type-grid">
-      <a href="/articles/calendar/moon/shingetsu/" class="type-card"><div class="type-code">New Moon</div><div class="type-name">新月</div><div class="type-kw">始まり</div></a>
-      <a href="/articles/calendar/moon/mikazuki/" class="type-card"><div class="type-code">Waxing Crescent</div><div class="type-name">三日月</div><div class="type-kw">芽生え</div></a>
-      <a href="/articles/calendar/moon/jougen/" class="type-card"><div class="type-code">First Quarter Moon</div><div class="type-name">上弦の月</div><div class="type-kw">決断</div></a>
-      <a href="/articles/calendar/moon/juusanya/" class="type-card"><div class="type-code">Waxing Gibbous Moon</div><div class="type-name">十三夜月</div><div class="type-kw">仕上げ</div></a>
-      <a href="/articles/calendar/moon/mangetsu/" class="type-card"><div class="type-code">Full Moon</div><div class="type-name">満月</div><div class="type-kw">集大成</div></a>
-      <a href="/articles/calendar/moon/izayoi/" class="type-card"><div class="type-code">Waning Gibbous Moon</div><div class="type-name">十六夜月</div><div class="type-kw">余韻</div></a>
-      <a href="/articles/calendar/moon/kagen/" class="type-card"><div class="type-code">Last Quarter Moon</div><div class="type-name">下弦の月</div><div class="type-kw">手放し</div></a>
-      <a href="/articles/calendar/moon/nijuurokuya/" class="type-card"><div class="type-code">Waning Crescent Moon</div><div class="type-name">二十六夜月</div><div class="type-kw">静けさ</div></a>
+      <a href="/articles/calendar/birthstone/january/" class="type-card"><div class="type-code">ガーネット</div><div class="type-name">1月</div><div class="type-kw">真実の愛</div></a>
+      <div class="type-card"><div class="type-code">アメジスト</div><div class="type-name">2月</div><div class="type-kw">誠実、心の平和</div></div>
+      <div class="type-card"><div class="type-code">アクアマリン</div><div class="type-name">3月</div><div class="type-kw">沈着、勇敢</div></div>
+      <div class="type-card"><div class="type-code">ダイヤモンド</div><div class="type-name">4月</div><div class="type-kw">永遠の絆、純潔</div></div>
+      <div class="type-card"><div class="type-code">エメラルド</div><div class="type-name">5月</div><div class="type-kw">幸福、夫婦愛</div></div>
+      <div class="type-card"><div class="type-code">真珠</div><div class="type-name">6月</div><div class="type-kw">健康、富</div></div>
+      <div class="type-card"><div class="type-code">ルビー</div><div class="type-name">7月</div><div class="type-kw">情熱、愛情</div></div>
+      <div class="type-card"><div class="type-code">ペリドット</div><div class="type-name">8月</div><div class="type-kw">夫婦の幸福</div></div>
+      <div class="type-card"><div class="type-code">サファイア</div><div class="type-name">9月</div><div class="type-kw">誠実、慈愛</div></div>
+      <div class="type-card"><div class="type-code">オパール</div><div class="type-name">10月</div><div class="type-kw">希望、純粋</div></div>
+      <div class="type-card"><div class="type-code">トパーズ</div><div class="type-name">11月</div><div class="type-kw">友情、希望</div></div>
+      <div class="type-card"><div class="type-code">トルコ石</div><div class="type-name">12月</div><div class="type-kw">成功、繁栄</div></div>
     </div>
-  </section>
-
-  <section class="art-section" id="enjoy">
-    <h2>月相ごとの楽しみ方</h2>
-    <p>月相は一つひとつを個別に楽しむこともできますが、新月から満月、そして次の新月までの一巡りをストーリーとして意識すると、日々の過ごし方にリズムが生まれます。開運カレンダーでは今日の月相を毎日確認できるので、気になる月相の日にその過ごし方を試してみるのもおすすめです。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">月相はいくつありますか？</div>
-        <div class="faq-a">一般的には新月・三日月・上弦の月・十三夜月・満月・十六夜月・下弦の月・二十六夜月の8つに分類されます。実際の月の満ち欠けは連続的に変化していますが、区切りやすいようにこの8区分が広く使われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">誕生石は誰が決めているのですか？</div>
+        <div class="faq-a">国や団体によって多少の違いがありますが、日本では全国宝石卸商協同組合が1958年に定めた基準が広く使われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">月相はどのくらいの周期で一巡りしますか？</div>
-        <div class="faq-a">新月から次の新月まで、およそ29.5日（1朔望月）かけて一巡りします。1年におよそ12〜13回、この周期が繰り返されます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">誕生石はどうやって身につければ良いですか？</div>
+        <div class="faq-a">ネックレスや指輪などのアクセサリーとして日常的に身につけるのが一般的です。自分の生まれ月の石でなくても、その日・その月に応じた石を選んで楽しむ人もいます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">月相占いに科学的な根拠はありますか？</div>
-        <div class="faq-a">月相の満ち欠け自体は天文学的な事実ですが、それが運勢や気分に影響するという考え方は、科学的に実証されたものではありません。あくまで一つの文化・楽しみ方として参考にするのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">誕生石には決まった石言葉しかないのですか？</div>
+        <div class="faq-a">広く知られている石言葉のほかにも、石によっては複数の意味が伝えられていることがあります。地域や時代によって解釈が異なる場合もあります。</div>
       </div>
     </div>
   </section>
@@ -202,28 +201,27 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>月相とは、地球から見た月の満ち欠けの状態を8つに分類したもの。</li>
-      <li>新月から満月、再び新月まで、およそ29.5日の周期で一巡りする。</li>
-      <li>占いの分野では「始まり」から「集大成」「手放し」へ続く物語として捉えられる。</li>
-      <li>開運カレンダーで今日の月相を確認しながら、日々の過ごし方の参考にできる。</li>
+      <li>誕生石とは、生まれ月ごとに定められた宝石とその石言葉のこと</li>
+      <li>日本では全国宝石卸商協同組合が定めた基準が広く使われている</li>
+      <li>自分の誕生月の石だけでなく、贈り物としても親しまれている</li>
+      <li>開運カレンダーで毎日の運気とあわせて確認できる</li>
     </ul>
   </section>
 
   <?php
-  $ctaTitle = '📅 今日の月齢を確認する';
-  $ctaText  = '今日のラッキーアイテムや運気の波も毎日更新でお届け。';
+  $ctaTitle = '📅 今日の運勢を確認する';
+  $ctaText  = '今日の誕生石や運気の波も毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
   <?php
-  $prevUrl   = '/articles/calendar/kichijitsu/';
-  $prevTitle = '特別な吉日とは';
+  $prevUrl   = '/articles/calendar/moon/';
+  $prevTitle = '月の満ち欠けとは';
   $prevLabel = '← 前のカテゴリ';
-  $nextUrl   = '/articles/calendar/birthstone/';
-  $nextTitle = '誕生石とは';
-  $nextLabel = '次のカテゴリ →';
+  $nextUrl   = null;
+  $nextTitle = null;
   $listUrl   = '/articles/calendar/';
   $listTitle = '開運カレンダーとは';
   require __DIR__.'/../../../inc/article-nav.php';
@@ -235,7 +233,7 @@ ob_start();
     <?php
     $relatedItems = [
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
-      ['label'=>'特別な吉日とは', 'title'=>'一粒万倍日・天赦日・寅の日を知る →', 'url'=>'/articles/calendar/kichijitsu/'],
+      ['label'=>'月の満ち欠けとは', 'title'=>'8つの月相の意味を知る →', 'url'=>'/articles/calendar/moon/'],
       ['label'=>'九星気学とは', 'title'=>'今年・来年の運気の流れを知る →', 'url'=>'/articles/kyusei/'],
     ];
     require __DIR__.'/../../../inc/article-related.php';
@@ -251,10 +249,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-moon'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthstone'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'moon');
+echo autoLink($html, 'birthstone');
 ?>

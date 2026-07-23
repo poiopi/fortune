@@ -205,6 +205,12 @@ require __DIR__.'/../../inc/article-cta.php';
         <div class="category-desc">新月・満月など8つの月相が持つ意味と、おすすめの過ごし方を紹介しています。</div>
         <div class="category-link">詳しく見る →</div>
       </a>
+      <a href="/articles/calendar/birthstone/" class="category-card">
+        <div class="category-icon">◆</div>
+        <div class="category-name">誕生石</div>
+        <div class="category-desc">1月ガーネット・2月アメジストなど、12か月の誕生石が持つ意味を紹介しています。</div>
+        <div class="category-link">詳しく見る →</div>
+      </a>
     </div>
   </section>
 
