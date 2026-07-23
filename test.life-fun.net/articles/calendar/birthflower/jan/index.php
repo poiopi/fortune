@@ -213,8 +213,9 @@ ob_start();
   <?php
   $prevUrl   = null;
   $prevTitle = null;
-  $nextUrl   = null;
-  $nextTitle = null;
+  $nextUrl   = '/articles/calendar/birthflower/feb/';
+  $nextTitle = '2月の誕生花とは';
+  $nextLabel = '次のカテゴリ →';
   $listUrl   = '/articles/calendar/birthflower/';
   $listTitle = '誕生花トップ';
   require __DIR__.'/../../../../inc/article-nav.php';

@@ -224,8 +224,8 @@ ob_start();
   <?php
   $prevUrl   = null;
   $prevTitle = null;
-  $nextUrl   = null;
-  $nextTitle = null;
+  $nextUrl   = '/articles/calendar/birthflower/jan/0102/';
+  $nextTitle = '1月2日の誕生花（ロウバイ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

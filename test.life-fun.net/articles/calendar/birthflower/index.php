@@ -144,9 +144,20 @@ ob_start();
 
   <section class="art-section" id="months">
     <h2>月ごとの誕生花</h2>
-    <p>誕生花は月ごとにまとめてご紹介しています。現在公開しているのは1月です（今後、月を追って公開していきます）。</p>
+    <p>誕生花は月ごとにまとめてご紹介しています。</p>
     <div class="type-grid">
       <a href="/articles/calendar/birthflower/jan/" class="type-card"><div class="type-code">1月</div><div class="type-name">1月の誕生花</div><div class="type-kw">フクジュソウ・ロウバイなど</div></a>
+      <div class="type-card"><div class="type-code">2月</div><div class="type-name">2月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">3月</div><div class="type-name">3月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">4月</div><div class="type-name">4月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">5月</div><div class="type-name">5月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">6月</div><div class="type-name">6月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">7月</div><div class="type-name">7月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">8月</div><div class="type-name">8月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">9月</div><div class="type-name">9月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">10月</div><div class="type-name">10月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">11月</div><div class="type-name">11月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <div class="type-card"><div class="type-code">12月</div><div class="type-name">12月の誕生花</div><div class="type-kw">近日公開</div></div>
     </div>
   </section>
 
