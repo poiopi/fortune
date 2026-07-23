@@ -405,7 +405,7 @@ body{top:0!important}
       <div class="star-group-heading">空模様</div>
       <div class="star-grid">
         <?php
-          // 月齢（アイコンは☾に統一。urlは常にnullのためcomingSoon扱い）
+          // 月齢（アイコンは☾に統一。urlは現時点では常にnullのためcomingSoon扱いになる）
           echo renderStarCard([
             'label'      => '月齢・月相',
             'available'  => $moonSection['available'],
@@ -413,8 +413,8 @@ body{top:0!important}
             'name'       => $moonSection['available'] ? $moonSection['phase_name'] : null,
             'meta'       => $moonSection['available'] ? ('月齢'.$moonSection['age']) : null,
             'desc'       => $moonSection['available'] ? $moonSection['description'] : null,
-            'url'        => null,
-            'comingSoon' => $moonSection['available'],
+            'url'        => $moonSection['available'] ? ($moonSection['url'] ?? null) : null,
+            'comingSoon' => $moonSection['available'] && empty($moonSection['url'] ?? null),
           ]);
 
           // 星座（アイコンは実際の占星術記号に変更。strengthはこのカードでは非表示）
@@ -436,13 +436,13 @@ body{top:0!important}
       <div class="star-group-heading">気学</div>
       <div class="star-grid">
         <?php
-          // 年九星（アイコンは◈に統一。meta=personality、desc=fortune）
+          // 年九星（アイコンは◈に統一。meta=五行＋personality、desc=fortune）
           echo renderStarCard([
             'label'     => '年九星',
             'available' => $kyuseiSection['available'],
             'symbol'    => $kyuseiSection['available'] ? '◈' : null,
             'name'      => $kyuseiSection['available'] ? $kyuseiSection['year']['name'] : null,
-            'meta'      => $kyuseiSection['available'] ? $kyuseiSection['year']['personality'] : null,
+            'meta'      => $kyuseiSection['available'] ? ($kyuseiSection['year']['element'].'の気 ・ '.$kyuseiSection['year']['personality']) : null,
             'desc'      => $kyuseiSection['available'] ? $kyuseiSection['year']['fortune'] : null,
             'url'       => $kyuseiSection['available'] ? ($kyuseiSection['year']['url'] ?? null) : null,
           ]);
@@ -453,7 +453,7 @@ body{top:0!important}
             'available' => $kyuseiSection['available'],
             'symbol'    => $kyuseiSection['available'] ? '◈' : null,
             'name'      => $kyuseiSection['available'] ? $kyuseiSection['month']['name'] : null,
-            'meta'      => $kyuseiSection['available'] ? $kyuseiSection['month']['personality'] : null,
+            'meta'      => $kyuseiSection['available'] ? ($kyuseiSection['month']['element'].'の気 ・ '.$kyuseiSection['month']['personality']) : null,
             'desc'      => $kyuseiSection['available'] ? $kyuseiSection['month']['fortune'] : null,
             'url'       => $kyuseiSection['available'] ? ($kyuseiSection['month']['url'] ?? null) : null,
           ]);
@@ -465,7 +465,7 @@ body{top:0!important}
       <div class="star-group-heading">今日という日</div>
       <div class="star-grid">
         <?php
-          // 誕生花（アイコンは❀に統一。urlは常にnullのためcomingSoon扱い）
+          // 誕生花（アイコンは❀に統一。urlは現時点では常にnullのためcomingSoon扱いになる）
           echo renderStarCard([
             'label'      => '誕生花',
             'available'  => $flowerSection['available'],
@@ -473,11 +473,11 @@ body{top:0!important}
             'name'       => $flowerSection['available'] ? $flowerSection['name'] : null,
             'meta'       => $flowerSection['available'] ? ('花言葉「'.$flowerSection['meaning'].'」') : null,
             'desc'       => $flowerSection['available'] ? ($flowerSection['feature'] ?: null) : null,
-            'url'        => null,
-            'comingSoon' => $flowerSection['available'],
+            'url'        => $flowerSection['available'] ? ($flowerSection['url'] ?? null) : null,
+            'comingSoon' => $flowerSection['available'] && empty($flowerSection['url'] ?? null),
           ]);
 
-          // 今月の誕生石（アイコンは◆に統一。urlは常にnullのためcomingSoon扱い）
+          // 今月の誕生石（アイコンは◆に統一。urlは現時点では常にnullのためcomingSoon扱いになる）
           echo renderStarCard([
             'label'      => '今月の誕生石',
             'available'  => $stoneSection['available'],
@@ -485,8 +485,8 @@ body{top:0!important}
             'name'       => $stoneSection['available'] ? $stoneSection['name'] : null,
             'meta'       => $stoneSection['available'] ? ('石言葉「'.$stoneSection['meaning'].'」') : null,
             'desc'       => $stoneSection['available'] ? ($stoneSection['feature'] ?? null) : null,
-            'url'        => null,
-            'comingSoon' => $stoneSection['available'],
+            'url'        => $stoneSection['available'] ? ($stoneSection['url'] ?? null) : null,
+            'comingSoon' => $stoneSection['available'] && empty($stoneSection['url'] ?? null),
           ]);
         ?>
       </div>
