@@ -15,6 +15,12 @@ require_once __DIR__.'/../../oracle.php';
 const MOON_SYNODIC_PERIOD_DAYS = 29.53059;
 const MOON_BASE_NEW_MOON_JD    = 2451550; // 2000-01-06 新月（jdToLunar()と同一基準）
 
+// 月相名→解説記事slugの変換表（Phase3-1で追加した月相ガイド記事へのリンク用）
+const DAYINFO_MOON_ARTICLE_SLUGS = [
+    '新月' => 'shingetsu', '三日月' => 'mikazuki', '上弦の月' => 'jougen', '十三夜月' => 'juusanya',
+    '満月' => 'mangetsu', '十六夜月' => 'izayoi', '下弦の月' => 'kagen', '二十六夜月' => 'nijuurokuya',
+];
+
 // 月齢（0〜29.53059）から8区分の月相名・絵文字を返す
 function moonPhaseFromAge(float $age): array {
     // 各区分の境界値（朔望月を8等分し、新月(0)を中心にした区分）
@@ -48,6 +54,7 @@ function getMoonInfo(DateTimeImmutable $date): array {
     }
 
     $phase = moonPhaseFromAge($rawAge);
+    $slug  = DAYINFO_MOON_ARTICLE_SLUGS[$phase['name']] ?? null;
 
     return [
         'available'   => true,
@@ -55,6 +62,6 @@ function getMoonInfo(DateTimeImmutable $date): array {
         'phase_name'  => $phase['name'],
         'symbol'      => $phase['symbol'],
         'description' => $phase['description'],
-        'url'         => null, // 将来の解説記事用。現時点では未作成のためnull
+        'url'         => $slug !== null ? "/articles/calendar/moon/{$slug}/" : null,
     ];
 }
