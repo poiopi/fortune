@@ -211,6 +211,12 @@ require __DIR__.'/../../inc/article-cta.php';
         <div class="category-desc">1月ガーネット・2月アメジストなど、12か月の誕生石が持つ意味を紹介しています。</div>
         <div class="category-link">詳しく見る →</div>
       </a>
+      <a href="/articles/calendar/birthflower/" class="category-card">
+        <div class="category-icon">❀</div>
+        <div class="category-name">誕生花</div>
+        <div class="category-desc">1月1日フクジュソウなど、365日の誕生花が持つ意味を紹介しています。</div>
+        <div class="category-link">詳しく見る →</div>
+      </a>
     </div>
   </section>
 
