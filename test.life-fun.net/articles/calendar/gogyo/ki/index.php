@@ -57,7 +57,7 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
-  .basic-info{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.2rem;font-size:.88rem}
+  .basic-info{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.2rem;font-size:.88rem;align-items:baseline}
   .basic-info dt{color:var(--muted);font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.04em}
   .basic-info dd{color:var(--text)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
