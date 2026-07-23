@@ -166,17 +166,17 @@ ob_start();
 
     <div class="type-grid">
       <a href="/articles/calendar/birthstone/january/" class="type-card"><div class="type-code">ガーネット</div><div class="type-name">1月</div><div class="type-kw">真実の愛</div></a>
-      <div class="type-card"><div class="type-code">アメジスト</div><div class="type-name">2月</div><div class="type-kw">誠実、心の平和</div></div>
-      <div class="type-card"><div class="type-code">アクアマリン</div><div class="type-name">3月</div><div class="type-kw">沈着、勇敢</div></div>
-      <div class="type-card"><div class="type-code">ダイヤモンド</div><div class="type-name">4月</div><div class="type-kw">永遠の絆、純潔</div></div>
-      <div class="type-card"><div class="type-code">エメラルド</div><div class="type-name">5月</div><div class="type-kw">幸福、夫婦愛</div></div>
-      <div class="type-card"><div class="type-code">真珠</div><div class="type-name">6月</div><div class="type-kw">健康、富</div></div>
-      <div class="type-card"><div class="type-code">ルビー</div><div class="type-name">7月</div><div class="type-kw">情熱、愛情</div></div>
-      <div class="type-card"><div class="type-code">ペリドット</div><div class="type-name">8月</div><div class="type-kw">夫婦の幸福</div></div>
-      <div class="type-card"><div class="type-code">サファイア</div><div class="type-name">9月</div><div class="type-kw">誠実、慈愛</div></div>
-      <div class="type-card"><div class="type-code">オパール</div><div class="type-name">10月</div><div class="type-kw">希望、純粋</div></div>
-      <div class="type-card"><div class="type-code">トパーズ</div><div class="type-name">11月</div><div class="type-kw">友情、希望</div></div>
-      <div class="type-card"><div class="type-code">トルコ石</div><div class="type-name">12月</div><div class="type-kw">成功、繁栄</div></div>
+      <a href="/articles/calendar/birthstone/february/" class="type-card"><div class="type-code">アメジスト</div><div class="type-name">2月</div><div class="type-kw">誠実、心の平和</div></a>
+      <a href="/articles/calendar/birthstone/march/" class="type-card"><div class="type-code">アクアマリン</div><div class="type-name">3月</div><div class="type-kw">沈着、勇敢</div></a>
+      <a href="/articles/calendar/birthstone/april/" class="type-card"><div class="type-code">ダイヤモンド</div><div class="type-name">4月</div><div class="type-kw">永遠の絆、純潔</div></a>
+      <a href="/articles/calendar/birthstone/may/" class="type-card"><div class="type-code">エメラルド</div><div class="type-name">5月</div><div class="type-kw">幸福、夫婦愛</div></a>
+      <a href="/articles/calendar/birthstone/june/" class="type-card"><div class="type-code">真珠</div><div class="type-name">6月</div><div class="type-kw">健康、富</div></a>
+      <a href="/articles/calendar/birthstone/july/" class="type-card"><div class="type-code">ルビー</div><div class="type-name">7月</div><div class="type-kw">情熱、愛情</div></a>
+      <a href="/articles/calendar/birthstone/august/" class="type-card"><div class="type-code">ペリドット</div><div class="type-name">8月</div><div class="type-kw">夫婦の幸福</div></a>
+      <a href="/articles/calendar/birthstone/september/" class="type-card"><div class="type-code">サファイア</div><div class="type-name">9月</div><div class="type-kw">誠実、慈愛</div></a>
+      <a href="/articles/calendar/birthstone/october/" class="type-card"><div class="type-code">オパール</div><div class="type-name">10月</div><div class="type-kw">希望、純粋</div></a>
+      <a href="/articles/calendar/birthstone/november/" class="type-card"><div class="type-code">トパーズ</div><div class="type-name">11月</div><div class="type-kw">友情、希望</div></a>
+      <a href="/articles/calendar/birthstone/december/" class="type-card"><div class="type-code">トルコ石</div><div class="type-name">12月</div><div class="type-kw">成功、繁栄</div></a>
     </div>
   </section>
 
