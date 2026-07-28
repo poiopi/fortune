@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0630/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0708/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月30日の誕生花ヘリオトロープの花言葉・特徴・魅力をわかりやすく解説。「献身的な愛」を象徴する甘い香りの紫の花の意味を紹介します。">
-  <title>6月30日の誕生花はヘリオトロープ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="7月8日の誕生花クロユリの花言葉・特徴・魅力をわかりやすく解説。「恋の魔術」を象徴する神秘的な暗紫褐色の花の意味を紹介します。">
+  <title>7月8日の誕生花はクロユリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヘリオトロープはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に紫色の小花を密に咲かせます。ムラサキ科の多年草で、バニラに似た甘い香りが特徴です。"}},
-      {"@type":"Question","name":"ヘリオトロープの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「献身的な愛」という花言葉は、太陽の方向を追うように花や葉を向ける性質が、変わらぬ愛を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヘリオトロープはどんな用途で使われますか？","acceptedAnswer":{"@type":"Answer","text":"甘く上品な香りを生かし、香水の原料として古くから利用されてきました。"}}
+      {"@type":"Question","name":"クロユリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に暗紫褐色の花を咲かせます。ユリ科の多年草です。"}},
+      {"@type":"Question","name":"クロユリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"暗紫褐色という珍しい花色と独特の香りが、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"クロユリにはどんな伝説がありますか？","acceptedAnswer":{"@type":"Answer","text":"アイヌや日本各地に、この花を手にした者の恋が叶うといった言い伝えが残されています。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"6月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/"},
-      {"@type":"ListItem","position":6,"name":"6月30日の誕生花（ヘリオトロープ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/0630/"}
+      {"@type":"ListItem","position":5,"name":"7月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jul/"},
+      {"@type":"ListItem","position":6,"name":"7月8日の誕生花（クロユリ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jul/0708/"}
     ]
   }
   </script>
@@ -126,19 +123,19 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jun/">6月の誕生花とは</a><span>›</span>6月30日の誕生花（ヘリオトロープ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jul/">7月の誕生花とは</a><span>›</span>7月8日の誕生花（クロユリ）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">JUNE 30 · 誕生花</span>
-    <h1>6月30日の誕生花はヘリオトロープ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヘリオトロープは、ムラサキ科の多年草で、夏に紫色の小花を密に咲かせる6月30日の誕生花です。花言葉は「献身的な愛」。バニラに似た甘い香りを放つ花です。</p>
+    <span class="art-label">JULY 8 · 誕生花</span>
+    <h1>7月8日の誕生花はクロユリ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">クロユリは、ユリ科の多年草で、夏になると暗紫褐色の花を咲かせ、他に類を見ない花色が神秘的で少し妖艶な印象を漂わせる花です。花言葉は「恋の魔術」。神秘的で妖艶な印象を漂わせる花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ヘリオトロープ</dd>
-    <dt>花言葉</dt><dd>献身的な愛</dd>
-    <dt>科名</dt><dd>ムラサキ科</dd>
+    <dt>花名</dt><dd>クロユリ</dd>
+    <dt>花言葉</dt><dd>恋の魔術</dd>
+    <dt>科名</dt><dd>ユリ科</dd>
     <dt>見頃</dt><dd>夏</dd>
   </dl>
 
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヘリオトロープとは</a></li>
-      <li><a href="#meaning">ヘリオトロープが象徴する意味</a></li>
-      <li><a href="#charm">ヘリオトロープの魅力</a></li>
+      <li><a href="#about">クロユリとは</a></li>
+      <li><a href="#meaning">クロユリが象徴する意味</a></li>
+      <li><a href="#charm">クロユリの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヘリオトロープとは</h2>
-    <p>ヘリオトロープは、ムラサキ科の多年草で、6月30日の誕生花として知られています。夏になると紫色の小花を密に咲かせ、バニラに似た甘い香りを放ちながら落ち着いた気品ある印象を漂わせる花です。</p>
+    <h2>クロユリとは</h2>
+    <p>クロユリは、ユリ科の多年草で、7月8日の誕生花として知られています。夏になると暗紫褐色の花を咲かせ、他に類を見ない花色が神秘的で少し妖艶な印象を漂わせる花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ヘリオトロープが象徴する意味</h2>
-    <p>ヘリオトロープの花言葉は「献身的な愛」です。太陽の方向を追うように花や葉を向ける性質が、変わらず想いを寄せ続ける献身的な愛の象徴とされることに由来すると言われています。</p>
+    <h2>クロユリが象徴する意味</h2>
+    <p>クロユリの花言葉は「恋の魔術」です。暗紫褐色という珍しい花色と独特の香りが、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ヘリオトロープの魅力</h2>
-    <p>ヘリオトロープの魅力は、小花が密に集まって咲く落ち着いた紫色の美しさと、バニラを思わせる甘く上品な香りにあります。香水の原料としても古くから利用されてきた花です。6月30日生まれの方はもちろん、献身的な想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>クロユリの魅力</h2>
+    <p>クロユリの魅力は、他に類を見ない暗紫褐色の花色と、高山に咲く花ならではの神秘的な存在感にあります。アイヌをはじめ各地に伝わる伝説とともに語り継がれてきた花です。7月8日生まれの方はもちろん、特別な想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ヘリオトロープは日当たりと風通しの良い場所を好み、夏の強い直射日光は避けて管理するとよく育ちます。</p>
+    <p>クロユリは涼しく湿り気のある環境を好み、夏の直射日光を避けて管理するとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>6月30日生まれの方はもちろん、献身的な想いを伝えたい贈り物としてもヘリオトロープは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>7月8日生まれの方はもちろん、特別な想いを伝えたい贈り物としてもクロユリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に紫色の小花を密に咲かせます。ムラサキ科の多年草で、バニラに似た甘い香りが特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロユリはいつ頃咲きますか？</div>
+        <div class="faq-a">夏に暗紫褐色の花を咲かせます。ユリ科の多年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「献身的な愛」という花言葉は、太陽の方向を追うように花や葉を向ける性質が、変わらぬ愛を象徴することに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロユリの花言葉の由来は何ですか？</div>
+        <div class="faq-a">暗紫褐色という珍しい花色と独特の香りが、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープはどんな用途で使われますか？</div>
-        <div class="faq-a">甘く上品な香りを生かし、香水の原料として古くから利用されてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロユリにはどんな伝説がありますか？</div>
+        <div class="faq-a">アイヌや日本各地に、この花を手にした者の恋が叶うといった言い伝えが残されています。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ヘリオトロープは夏に紫色の小花を咲かせる、6月30日の誕生花</li>
-      <li>花言葉は「献身的な愛」、太陽を追う性質に由来する</li>
-      <li>落ち着いた花色とバニラのような甘い香りが魅力</li>
-      <li>日当たりと風通しの良い場所で、強い直射日光は避ける</li>
+      <li>クロユリは夏に暗紫褐色の花を咲かせる、7月8日の誕生花</li>
+      <li>花言葉は「恋の魔術」、珍しい花色と香りに由来する</li>
+      <li>他に類を見ない神秘的な花色が魅力</li>
+      <li>涼しく湿り気のある環境で、夏の直射日光を避けることが必要</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/jun/0629/',
-      'prevTitle'      => '6月29日の誕生花（ペラルゴニウム）とは',
-      'nextTargetFile' => __DIR__.'/../../jul/0701/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/jul/0701/',
-      'nextTitle'      => '7月1日の誕生花（ベゴニア（赤））とは',
-      'listUrl'        => '/articles/calendar/birthflower/jun/',
-      'listTitle'      => '6月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/jul/0707/';
+  $prevTitle = '7月7日の誕生花（ヒオウギ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/jul/0709/';
+  $nextTitle = '7月9日の誕生花（ストケシア）とは';
+  $listUrl   = '/articles/calendar/birthflower/jul/';
+  $listTitle = '7月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'6月の誕生花一覧', 'title'=>'6月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/jun/'],
+      ['label'=>'7月の誕生花一覧', 'title'=>'7月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/jul/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-jun-0630'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-jul-0708'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-jun-0630');
+echo autoLink($html, 'birthflower-jul-0708');
 ?>
