@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0531/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0611/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月31日の誕生花キショウブの花言葉・特徴・魅力をわかりやすく解説。「消息」を象徴する水辺に咲く黄色い花の意味を紹介します。">
-  <title>5月31日の誕生花はキショウブ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="6月11日の誕生花ガクアジサイの花言葉・特徴・魅力をわかりやすく解説。「素直」を象徴する額縁のような形の花の意味を紹介します。">
+  <title>6月11日の誕生花はガクアジサイ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キショウブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。"}},
-      {"@type":"Question","name":"キショウブの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"キショウブとハナショウブはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。"}}
+      {"@type":"Question","name":"ガクアジサイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"梅雨の時期に額縁のような形の花を咲かせます。アジサイ科の落葉低木です。"}},
+      {"@type":"Question","name":"ガクアジサイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「素直」という花言葉は、額縁のような装飾花がまっすぐに縁取る飾らない咲き方に由来すると言われています。"}},
+      {"@type":"Question","name":"ガクアジサイと一般的なアジサイはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"ガクアジサイは中心の花を額縁状の装飾花が囲む原種に近い咲き方で、丸く集まって咲く一般的なアジサイとは花の形が異なります。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"5月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/may/"},
-      {"@type":"ListItem","position":6,"name":"5月31日の誕生花（キショウブ）とは","item":"https://life-fun.net/articles/calendar/birthflower/may/0531/"}
+      {"@type":"ListItem","position":5,"name":"6月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/"},
+      {"@type":"ListItem","position":6,"name":"6月11日の誕生花（ガクアジサイ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/0611/"}
     ]
   }
   </script>
@@ -126,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/may/">5月の誕生花とは</a><span>›</span>5月31日の誕生花（キショウブ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jun/">6月の誕生花とは</a><span>›</span>6月11日の誕生花（ガクアジサイ）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">MAY 31 · 誕生花</span>
-    <h1>5月31日の誕生花はキショウブ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キショウブは、アヤメ科の多年草で、初夏に黄色い花を水辺に咲かせる5月31日の誕生花です。花言葉は「消息」。凛とした印象の花です。</p>
+    <span class="art-label">JUNE 11 · 誕生花</span>
+    <h1>6月11日の誕生花はガクアジサイ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ガクアジサイは、アジサイ科の落葉低木で、梅雨時に額縁のような形の花を咲かせる6月11日の誕生花です。花言葉は「素直」。しっとりとした情緒を持つ花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>キショウブ</dd>
-    <dt>花言葉</dt><dd>消息</dd>
-    <dt>科名</dt><dd>アヤメ科</dd>
-    <dt>見頃</dt><dd>初夏</dd>
+    <dt>花名</dt><dd>ガクアジサイ</dd>
+    <dt>花言葉</dt><dd>素直</dd>
+    <dt>科名</dt><dd>アジサイ科</dd>
+    <dt>見頃</dt><dd>梅雨時</dd>
   </dl>
 
   <?php
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キショウブとは</a></li>
-      <li><a href="#meaning">キショウブが象徴する意味</a></li>
-      <li><a href="#charm">キショウブの魅力</a></li>
+      <li><a href="#about">ガクアジサイとは</a></li>
+      <li><a href="#meaning">ガクアジサイが象徴する意味</a></li>
+      <li><a href="#charm">ガクアジサイの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キショウブとは</h2>
-    <p>キショウブは、アヤメ科の多年草で、5月31日の誕生花として知られています。初夏になると黄色い花を水辺に咲かせ、凛とした佇まいで水辺の景色を明るく彩ります。</p>
+    <h2>ガクアジサイとは</h2>
+    <p>ガクアジサイは、アジサイ科の落葉低木で、6月11日の誕生花として知られています。梅雨の時期になると額縁のような形の花を咲かせ、しっとりとした雨の季節に彩りを添える花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>キショウブが象徴する意味</h2>
-    <p>キショウブの花言葉は「消息」です。水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</p>
+    <h2>ガクアジサイが象徴する意味</h2>
+    <p>ガクアジサイの花言葉は「素直」です。中心の小さな花を額縁のような装飾花がまっすぐに縁取る飾らない咲き方が、素直な心を象徴することに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>キショウブの魅力</h2>
-    <p>キショウブの魅力は、水辺に映える鮮やかな黄色の花と、すらりと伸びた葉が織りなす涼やかな景観にあります。池のほとりや湿地に群生する姿は、初夏の風物詩として親しまれています。5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物にもふさわしい花です。</p>
+    <h2>ガクアジサイの魅力</h2>
+    <p>ガクアジサイの魅力は、中心に集まる本来の花と、それを囲む額縁のような装飾花が生み出す独特の造形美にあります。日本に自生する原種のアジサイとしても知られ、和の情緒を感じさせます。6月11日生まれの方はもちろん、素直な気持ちを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>キショウブは湿地や水辺を好む丈夫な植物で、水を張った環境でもよく育ちます。</p>
+    <p>ガクアジサイは半日陰でも育ち、乾燥に弱いため土が乾かないようこまめに水を与えるとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物としてもキショウブは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>6月11日生まれの方はもちろん、素直な気持ちを伝えたい贈り物としてもガクアジサイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイはいつ頃咲きますか？</div>
+        <div class="faq-a">梅雨の時期に額縁のような形の花を咲かせます。アジサイ科の落葉低木です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「素直」という花言葉は、額縁のような装飾花がまっすぐに縁取る飾らない咲き方に由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブとハナショウブはどう違いますか？</div>
-        <div class="faq-a">同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイと一般的なアジサイはどう違いますか？</div>
+        <div class="faq-a">ガクアジサイは中心の花を額縁状の装飾花が囲む原種に近い咲き方で、丸く集まって咲く一般的なアジサイとは花の形が異なります。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>キショウブは初夏に黄色い花を咲かせる、5月31日の誕生花</li>
-      <li>花言葉は「消息」、便りを待つ心情を思わせる花姿に由来する</li>
-      <li>水辺に映える鮮やかな黄色と涼やかな景観が魅力</li>
-      <li>湿地や水辺を好む丈夫な植物</li>
+      <li>ガクアジサイは梅雨時に額縁状の花を咲かせる、6月11日の誕生花</li>
+      <li>花言葉は「素直」、飾らない咲き方に由来する</li>
+      <li>装飾花が生み出す独特の造形美が魅力</li>
+      <li>半日陰でも育ち、乾燥に弱いためこまめな水やりが必要</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/may/0530/',
-      'prevTitle'      => '5月30日の誕生花（スカビオサ）とは',
-      'nextTargetFile' => __DIR__.'/../../jun/0601/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/jun/0601/',
-      'nextTitle'      => '6月1日の誕生花（クレマチス）とは',
-      'listUrl'        => '/articles/calendar/birthflower/may/',
-      'listTitle'      => '5月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/jun/0610/';
+  $prevTitle = '6月10日の誕生花（ラベンダー）とは';
+  $nextUrl   = '/articles/calendar/birthflower/jun/0612/';
+  $nextTitle = '6月12日の誕生花（ベロペロネ）とは';
+  $listUrl   = '/articles/calendar/birthflower/jun/';
+  $listTitle = '6月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'5月の誕生花一覧', 'title'=>'5月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/may/'],
+      ['label'=>'6月の誕生花一覧', 'title'=>'6月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/jun/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-may-0531'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-jun-0611'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-may-0531');
+echo autoLink($html, 'birthflower-jun-0611');
 ?>

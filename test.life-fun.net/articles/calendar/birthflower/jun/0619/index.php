@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0531/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0619/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月31日の誕生花キショウブの花言葉・特徴・魅力をわかりやすく解説。「消息」を象徴する水辺に咲く黄色い花の意味を紹介します。">
-  <title>5月31日の誕生花はキショウブ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="6月19日の誕生花アリウムの花言葉・特徴・魅力をわかりやすく解説。「正しい主張」を象徴する球状に咲く花の意味を紹介します。">
+  <title>6月19日の誕生花はアリウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キショウブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。"}},
-      {"@type":"Question","name":"キショウブの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"キショウブとハナショウブはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。"}}
+      {"@type":"Question","name":"アリウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に高く伸びた花茎の先に球状の小花を咲かせます。ヒガンバナ科の球根植物です。"}},
+      {"@type":"Question","name":"アリウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「正しい主張」という花言葉は、高く伸びた茎の先で堂々と咲く球状の花姿に由来すると言われています。"}},
+      {"@type":"Question","name":"アリウムはネギの仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。アリウムはネギ属に分類される植物で、観賞用として品種改良されたものが花壇などで親しまれています。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"5月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/may/"},
-      {"@type":"ListItem","position":6,"name":"5月31日の誕生花（キショウブ）とは","item":"https://life-fun.net/articles/calendar/birthflower/may/0531/"}
+      {"@type":"ListItem","position":5,"name":"6月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/"},
+      {"@type":"ListItem","position":6,"name":"6月19日の誕生花（アリウム）とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/0619/"}
     ]
   }
   </script>
@@ -126,19 +123,19 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/may/">5月の誕生花とは</a><span>›</span>5月31日の誕生花（キショウブ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jun/">6月の誕生花とは</a><span>›</span>6月19日の誕生花（アリウム）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">MAY 31 · 誕生花</span>
-    <h1>5月31日の誕生花はキショウブ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キショウブは、アヤメ科の多年草で、初夏に黄色い花を水辺に咲かせる5月31日の誕生花です。花言葉は「消息」。凛とした印象の花です。</p>
+    <span class="art-label">JUNE 19 · 誕生花</span>
+    <h1>6月19日の誕生花はアリウム<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">アリウムは、ヒガンバナ科の球根植物で、初夏に球状の小花を咲かせる6月19日の誕生花です。花言葉は「正しい主張」。ユニークで印象に残る花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>キショウブ</dd>
-    <dt>花言葉</dt><dd>消息</dd>
-    <dt>科名</dt><dd>アヤメ科</dd>
+    <dt>花名</dt><dd>アリウム</dd>
+    <dt>花言葉</dt><dd>正しい主張</dd>
+    <dt>科名</dt><dd>ヒガンバナ科</dd>
     <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キショウブとは</a></li>
-      <li><a href="#meaning">キショウブが象徴する意味</a></li>
-      <li><a href="#charm">キショウブの魅力</a></li>
+      <li><a href="#about">アリウムとは</a></li>
+      <li><a href="#meaning">アリウムが象徴する意味</a></li>
+      <li><a href="#charm">アリウムの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キショウブとは</h2>
-    <p>キショウブは、アヤメ科の多年草で、5月31日の誕生花として知られています。初夏になると黄色い花を水辺に咲かせ、凛とした佇まいで水辺の景色を明るく彩ります。</p>
+    <h2>アリウムとは</h2>
+    <p>アリウムは、ヒガンバナ科の球根植物で、6月19日の誕生花として知られています。初夏になると高く伸びた花茎の先に小花が球状に集まって咲き、ユニークで印象に残る姿を見せる花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>キショウブが象徴する意味</h2>
-    <p>キショウブの花言葉は「消息」です。水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</p>
+    <h2>アリウムが象徴する意味</h2>
+    <p>アリウムの花言葉は「正しい主張」です。すらりと高く伸びた茎の先で堂々と咲く球状の花姿が、まっすぐに自分の考えを伝える強さを連想させることに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>キショウブの魅力</h2>
-    <p>キショウブの魅力は、水辺に映える鮮やかな黄色の花と、すらりと伸びた葉が織りなす涼やかな景観にあります。池のほとりや湿地に群生する姿は、初夏の風物詩として親しまれています。5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物にもふさわしい花です。</p>
+    <h2>アリウムの魅力</h2>
+    <p>アリウムの魅力は、小さな花が集まって作る球体のフォルムと、他の植物にはない存在感のあるシルエットにあります。花壇の中でひときわ目を引くアクセントとしても人気です。6月19日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>キショウブは湿地や水辺を好む丈夫な植物で、水を張った環境でもよく育ちます。</p>
+    <p>アリウムは日当たりと水はけの良い場所を好み、球根植物のため過湿を避けて育てるとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物としてもキショウブは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>6月19日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物としてもアリウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アリウムはいつ頃咲きますか？</div>
+        <div class="faq-a">初夏に高く伸びた花茎の先に球状の小花を咲かせます。ヒガンバナ科の球根植物です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アリウムの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「正しい主張」という花言葉は、高く伸びた茎の先で堂々と咲く球状の花姿に由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブとハナショウブはどう違いますか？</div>
-        <div class="faq-a">同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アリウムはネギの仲間ですか？</div>
+        <div class="faq-a">はい。アリウムはネギ属に分類される植物で、観賞用として品種改良されたものが花壇などで親しまれています。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>キショウブは初夏に黄色い花を咲かせる、5月31日の誕生花</li>
-      <li>花言葉は「消息」、便りを待つ心情を思わせる花姿に由来する</li>
-      <li>水辺に映える鮮やかな黄色と涼やかな景観が魅力</li>
-      <li>湿地や水辺を好む丈夫な植物</li>
+      <li>アリウムは初夏に球状の花を咲かせる、6月19日の誕生花</li>
+      <li>花言葉は「正しい主張」、堂々と咲く花姿に由来する</li>
+      <li>球体のフォルムとユニークな存在感が魅力</li>
+      <li>日当たりと水はけの良い場所でよく育つ</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/may/0530/',
-      'prevTitle'      => '5月30日の誕生花（スカビオサ）とは',
-      'nextTargetFile' => __DIR__.'/../../jun/0601/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/jun/0601/',
-      'nextTitle'      => '6月1日の誕生花（クレマチス）とは',
-      'listUrl'        => '/articles/calendar/birthflower/may/',
-      'listTitle'      => '5月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/jun/0618/';
+  $prevTitle = '6月18日の誕生花（サギソウ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/jun/0620/';
+  $nextTitle = '6月20日の誕生花（オトメギキョウ）とは';
+  $listUrl   = '/articles/calendar/birthflower/jun/';
+  $listTitle = '6月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'5月の誕生花一覧', 'title'=>'5月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/may/'],
+      ['label'=>'6月の誕生花一覧', 'title'=>'6月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/jun/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-may-0531'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-jun-0619'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-may-0531');
+echo autoLink($html, 'birthflower-jun-0619');
 ?>

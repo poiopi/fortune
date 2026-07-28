@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0531/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0609/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月31日の誕生花キショウブの花言葉・特徴・魅力をわかりやすく解説。「消息」を象徴する水辺に咲く黄色い花の意味を紹介します。">
-  <title>5月31日の誕生花はキショウブ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="6月9日の誕生花ゴデチアの花言葉・特徴・魅力をわかりやすく解説。「不変の愛」を象徴する薄紙のような花びらの花の意味を紹介します。">
+  <title>6月9日の誕生花はゴデチア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キショウブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。"}},
-      {"@type":"Question","name":"キショウブの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"キショウブとハナショウブはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。"}}
+      {"@type":"Question","name":"ゴデチアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に薄紙のような質感の花びらの花を咲かせます。アカバナ科の一年草です。"}},
+      {"@type":"Question","name":"ゴデチアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「不変の愛」という花言葉は、薄い花びらでもしっかりと形を保って咲き続ける姿に由来すると言われています。"}},
+      {"@type":"Question","name":"ゴデチアはどんな場所で楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"花壇に群生させて咲かせるほか、切り花としても人気があり、室内でも楽しめます。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"5月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/may/"},
-      {"@type":"ListItem","position":6,"name":"5月31日の誕生花（キショウブ）とは","item":"https://life-fun.net/articles/calendar/birthflower/may/0531/"}
+      {"@type":"ListItem","position":5,"name":"6月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/"},
+      {"@type":"ListItem","position":6,"name":"6月9日の誕生花（ゴデチア）とは","item":"https://life-fun.net/articles/calendar/birthflower/jun/0609/"}
     ]
   }
   </script>
@@ -126,19 +123,19 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/may/">5月の誕生花とは</a><span>›</span>5月31日の誕生花（キショウブ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jun/">6月の誕生花とは</a><span>›</span>6月9日の誕生花（ゴデチア）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">MAY 31 · 誕生花</span>
-    <h1>5月31日の誕生花はキショウブ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キショウブは、アヤメ科の多年草で、初夏に黄色い花を水辺に咲かせる5月31日の誕生花です。花言葉は「消息」。凛とした印象の花です。</p>
+    <span class="art-label">JUNE 9 · 誕生花</span>
+    <h1>6月9日の誕生花はゴデチア<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ゴデチアは、アカバナ科の一年草で、初夏に薄紙のような質感の花びらの花を咲かせる6月9日の誕生花です。花言葉は「不変の愛」。繊細で華やかな花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>キショウブ</dd>
-    <dt>花言葉</dt><dd>消息</dd>
-    <dt>科名</dt><dd>アヤメ科</dd>
+    <dt>花名</dt><dd>ゴデチア</dd>
+    <dt>花言葉</dt><dd>不変の愛</dd>
+    <dt>科名</dt><dd>アカバナ科</dd>
     <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キショウブとは</a></li>
-      <li><a href="#meaning">キショウブが象徴する意味</a></li>
-      <li><a href="#charm">キショウブの魅力</a></li>
+      <li><a href="#about">ゴデチアとは</a></li>
+      <li><a href="#meaning">ゴデチアが象徴する意味</a></li>
+      <li><a href="#charm">ゴデチアの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キショウブとは</h2>
-    <p>キショウブは、アヤメ科の多年草で、5月31日の誕生花として知られています。初夏になると黄色い花を水辺に咲かせ、凛とした佇まいで水辺の景色を明るく彩ります。</p>
+    <h2>ゴデチアとは</h2>
+    <p>ゴデチアは、アカバナ科の一年草で、6月9日の誕生花として知られています。初夏になると薄紙のような質感の花びらを持つ花を咲かせ、繊細でありながら華やかな印象を与える花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>キショウブが象徴する意味</h2>
-    <p>キショウブの花言葉は「消息」です。水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</p>
+    <h2>ゴデチアが象徴する意味</h2>
+    <p>ゴデチアの花言葉は「不変の愛」です。薄い花びらでありながらしっかりと形を保って咲き続ける姿が、変わらぬ愛情の象徴とされることに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>キショウブの魅力</h2>
-    <p>キショウブの魅力は、水辺に映える鮮やかな黄色の花と、すらりと伸びた葉が織りなす涼やかな景観にあります。池のほとりや湿地に群生する姿は、初夏の風物詩として親しまれています。5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物にもふさわしい花です。</p>
+    <h2>ゴデチアの魅力</h2>
+    <p>ゴデチアの魅力は、薄紙のように繊細な質感の花びらが幾重にも重なって咲く華やかさと、次々に花を咲かせる旺盛な開花力にあります。花壇や切り花として彩りを添えてくれる花です。6月9日生まれの方はもちろん、変わらぬ愛を伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>キショウブは湿地や水辺を好む丈夫な植物で、水を張った環境でもよく育ちます。</p>
+    <p>ゴデチアは日当たりの良い場所を好み、過湿に弱いため水はけの良い土で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物としてもキショウブは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>6月9日生まれの方はもちろん、変わらぬ愛を伝えたい贈り物としてもゴデチアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアはいつ頃咲きますか？</div>
+        <div class="faq-a">初夏に薄紙のような質感の花びらの花を咲かせます。アカバナ科の一年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「不変の愛」という花言葉は、薄い花びらでもしっかりと形を保って咲き続ける姿に由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブとハナショウブはどう違いますか？</div>
-        <div class="faq-a">同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアはどんな場所で楽しめますか？</div>
+        <div class="faq-a">花壇に群生させて咲かせるほか、切り花としても人気があり、室内でも楽しめます。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>キショウブは初夏に黄色い花を咲かせる、5月31日の誕生花</li>
-      <li>花言葉は「消息」、便りを待つ心情を思わせる花姿に由来する</li>
-      <li>水辺に映える鮮やかな黄色と涼やかな景観が魅力</li>
-      <li>湿地や水辺を好む丈夫な植物</li>
+      <li>ゴデチアは初夏に薄紙質の花びらの花を咲かせる、6月9日の誕生花</li>
+      <li>花言葉は「不変の愛」、形を保って咲き続ける花姿に由来する</li>
+      <li>繊細な質感と旺盛な開花力による華やかさが魅力</li>
+      <li>日当たりが良く水はけの良い場所でよく育つ</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/may/0530/',
-      'prevTitle'      => '5月30日の誕生花（スカビオサ）とは',
-      'nextTargetFile' => __DIR__.'/../../jun/0601/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/jun/0601/',
-      'nextTitle'      => '6月1日の誕生花（クレマチス）とは',
-      'listUrl'        => '/articles/calendar/birthflower/may/',
-      'listTitle'      => '5月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/jun/0608/';
+  $prevTitle = '6月8日の誕生花（レースフラワー）とは';
+  $nextUrl   = '/articles/calendar/birthflower/jun/0610/';
+  $nextTitle = '6月10日の誕生花（ラベンダー）とは';
+  $listUrl   = '/articles/calendar/birthflower/jun/';
+  $listTitle = '6月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'5月の誕生花一覧', 'title'=>'5月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/may/'],
+      ['label'=>'6月の誕生花一覧', 'title'=>'6月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/jun/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-may-0531'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-jun-0609'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-may-0531');
+echo autoLink($html, 'birthflower-jun-0609');
 ?>
