@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0430/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0521/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月30日の誕生花ムラサキハナナの花言葉・特徴・魅力をわかりやすく解説。「恵まれた未来」を象徴する紫色に群生する花の意味を紹介します。">
-  <title>4月30日の誕生花はムラサキハナナ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="5月21日の誕生花スノーフレークの花言葉・特徴・魅力をわかりやすく解説。「記憶」を象徴する鈴のような白い花の意味を紹介します。">
+  <title>5月21日の誕生花はスノーフレーク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ムラサキハナナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に紫色の花を咲かせます。アブラナ科の一年草で、菜の花に似た花姿が特徴です。"}},
-      {"@type":"Question","name":"ムラサキハナナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恵まれた未来」という花言葉は、こぼれ種でよく増え群生地を豊かに広げていく生命力の強さに由来すると言われています。"}},
-      {"@type":"Question","name":"ムラサキハナナはなぜ「諸葛菜」とも呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"中国の武将・諸葛孔明が広めたという言い伝えがあることから、諸葛菜（しょかつさい）の別名で呼ばれています。"}}
+      {"@type":"Question","name":"スノーフレークはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鈴のような白い花を咲かせます。ヒガンバナ科の球根植物で、スズランに似た可憐な印象を持つ花です。"}},
+      {"@type":"Question","name":"スノーフレークの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「記憶」という花言葉は、うつむき加減にそっと咲く白い花が、静かに心にとどめておきたい大切な思い出を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"スノーフレークとスズランはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"花姿がよく似ていますが、スノーフレークは花びらの先端に緑色の斑点があり、スズランよりも花が大きい点で見分けられます。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"4月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/apr/"},
-      {"@type":"ListItem","position":6,"name":"4月30日の誕生花（ムラサキハナナ）とは","item":"https://life-fun.net/articles/calendar/birthflower/apr/0430/"}
+      {"@type":"ListItem","position":5,"name":"5月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/may/"},
+      {"@type":"ListItem","position":6,"name":"5月21日の誕生花（スノーフレーク）とは","item":"https://life-fun.net/articles/calendar/birthflower/may/0521/"}
     ]
   }
   </script>
@@ -126,19 +123,19 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/apr/">4月の誕生花とは</a><span>›</span>4月30日の誕生花（ムラサキハナナ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/may/">5月の誕生花とは</a><span>›</span>5月21日の誕生花（スノーフレーク）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">APRIL 30 · 誕生花</span>
-    <h1>4月30日の誕生花はムラサキハナナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ムラサキハナナは、アブラナ科の一年草で、春に紫色の花を咲かせる4月30日の誕生花です。花言葉は「恵まれた未来」。菜の花に似た親しみやすい花です。</p>
+    <span class="art-label">MAY 21 · 誕生花</span>
+    <h1>5月21日の誕生花はスノーフレーク<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">スノーフレークは、ヒガンバナ科の球根植物で、春に鈴のような白い花を咲かせる5月21日の誕生花です。花言葉は「記憶」。スズランに似た可憐な印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ムラサキハナナ</dd>
-    <dt>花言葉</dt><dd>恵まれた未来</dd>
-    <dt>科名</dt><dd>アブラナ科</dd>
+    <dt>花名</dt><dd>スノーフレーク</dd>
+    <dt>花言葉</dt><dd>記憶</dd>
+    <dt>科名</dt><dd>ヒガンバナ科</dd>
     <dt>見頃</dt><dd>春</dd>
   </dl>
 
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ムラサキハナナとは</a></li>
-      <li><a href="#meaning">ムラサキハナナが象徴する意味</a></li>
-      <li><a href="#charm">ムラサキハナナの魅力</a></li>
+      <li><a href="#about">スノーフレークとは</a></li>
+      <li><a href="#meaning">スノーフレークが象徴する意味</a></li>
+      <li><a href="#charm">スノーフレークの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ムラサキハナナとは</h2>
-    <p>ムラサキハナナは、アブラナ科の一年草で、4月30日の誕生花として知られています。菜の花に似た十字形の花を紫色に咲かせ、群生すると一面が淡紫色に染まる景観から、諸葛菜（しょかつさい）の別名でも親しまれています。</p>
+    <h2>スノーフレークとは</h2>
+    <p>スノーフレークは、ヒガンバナ科の球根植物で、5月21日の誕生花として知られています。春になると鈴のような形の白い花を咲かせ、スズランに似た可憐な印象で親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ムラサキハナナが象徴する意味</h2>
-    <p>ムラサキハナナの花言葉は「恵まれた未来」です。こぼれ種でよく増え、群生地を年々豊かに広げていく生命力の強さが、実り多い未来を思わせることに由来すると言われています。</p>
+    <h2>スノーフレークが象徴する意味</h2>
+    <p>スノーフレークの花言葉は「記憶」です。うつむき加減にそっと咲く白い花が、静かに心にとどめておきたい大切な思い出を象徴することに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ムラサキハナナの魅力</h2>
-    <p>ムラサキハナナの魅力は、春の陽光の下で一面を紫色に染める群生の景観と、菜の花を思わせる親しみやすい花姿にあります。丈夫でよく増えるため、河川敷や公園などでも見かける身近な花です。4月30日生まれの方はもちろん、明るい未来を願う贈り物にもふさわしい花です。</p>
+    <h2>スノーフレークの魅力</h2>
+    <p>スノーフレークの魅力は、鈴形の花びらの先端に入る緑色の斑点と、うつむいて咲く控えめな美しさにあります。群生させると春の庭に清らかな雰囲気を添えてくれます。5月21日生まれの方はもちろん、大切な思い出を伝える贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ムラサキハナナは日当たりの良い場所を好み、丈夫でこぼれ種でもよく増えます。特別な手入れをしなくても、毎年花を咲かせてくれます。</p>
+    <p>スノーフレークは日当たりから半日陰まで幅広い環境で育つ丈夫な球根植物です。植えっぱなしでも毎年花を咲かせます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>4月30日生まれの方はもちろん、明るい未来を願う贈り物としてもムラサキハナナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>5月21日生まれの方はもちろん、大切な思い出を伝える贈り物としてもスノーフレークは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキハナナはいつ頃咲きますか？</div>
-        <div class="faq-a">春に紫色の花を咲かせます。アブラナ科の一年草で、菜の花に似た花姿が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークはいつ頃咲きますか？</div>
+        <div class="faq-a">春に鈴のような白い花を咲かせます。ヒガンバナ科の球根植物で、スズランに似た可憐な印象を持つ花です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキハナナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「恵まれた未来」という花言葉は、こぼれ種でよく増え群生地を豊かに広げていく生命力の強さに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「記憶」という花言葉は、うつむき加減にそっと咲く白い花が、静かに心にとどめておきたい大切な思い出を象徴することに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキハナナはなぜ「諸葛菜」とも呼ばれるのですか？</div>
-        <div class="faq-a">中国の武将・諸葛孔明が広めたという言い伝えがあることから、諸葛菜（しょかつさい）の別名で呼ばれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークとスズランはどう違いますか？</div>
+        <div class="faq-a">花姿がよく似ていますが、スノーフレークは花びらの先端に緑色の斑点があり、スズランよりも花が大きい点で見分けられます。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ムラサキハナナは春に紫色の花を咲かせる、4月30日の誕生花</li>
-      <li>花言葉は「恵まれた未来」、力強く増えていく生命力に由来する</li>
-      <li>一面を紫に染める群生の景観と親しみやすい花姿が魅力</li>
-      <li>日当たりの良い場所で、手間をかけずに育つ</li>
+      <li>スノーフレークは春に鈴形の白い花を咲かせる、5月21日の誕生花</li>
+      <li>花言葉は「記憶」、うつむいて咲く控えめな花姿に由来する</li>
+      <li>花びら先端の緑の斑点と可憐さが魅力</li>
+      <li>幅広い環境で育つ丈夫な球根植物</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/apr/0429/',
-      'prevTitle'      => '4月29日の誕生花（ミヤコグサ）とは',
-      'nextTargetFile' => __DIR__.'/../../may/0501/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/may/0501/',
-      'nextTitle'      => '5月1日の誕生花（マーガレット）とは',
-      'listUrl'        => '/articles/calendar/birthflower/apr/',
-      'listTitle'      => '4月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/may/0520/';
+  $prevTitle = '5月20日の誕生花（セントポーリア）とは';
+  $nextUrl   = '/articles/calendar/birthflower/may/0522/';
+  $nextTitle = '5月22日の誕生花（カモミール）とは';
+  $listUrl   = '/articles/calendar/birthflower/may/';
+  $listTitle = '5月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'4月の誕生花一覧', 'title'=>'4月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/apr/'],
+      ['label'=>'5月の誕生花一覧', 'title'=>'5月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/may/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-apr-0430'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-may-0521'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-apr-0430');
+echo autoLink($html, 'birthflower-may-0521');
 ?>
