@@ -4,14 +4,15 @@ declare(strict_types=1);
 // ══════════════════════════════════════════════════════════════════
 // DayInfoService: 誕生花セクション用プロバイダ（Phase2新規ロジック、Phase3でfeature追加）
 //
-// inc/dayinfo/birth-flowers-data.php の365日分データ（DAYINFO_BIRTH_FLOWERS）
+// inc/dayinfo/birth-flowers-data.php の366日分データ（DAYINFO_BIRTH_FLOWERS）
 // をそのまま参照する。データ内容自体はこのファイルでは一切変更しない。
 //
 // inc/dayinfo/flower-descriptions-data.php の花の種類ごとの特徴・見頃・印象
 // データ（DAYINFO_FLOWER_DESCRIPTIONS、花の名前がキー）も合わせて参照する。
 //
-// 2/29（うるう日）はデータ対象外のため、該当日は available=false を返す
-// （他のセクションの「情報がありません」パターンと同じ扱い）。
+// 2/29（うるう日）も含め366日分すべてにデータがあるため、通常の日と同様に
+// 誕生花が表示される（isset()によるデータ駆動判定のため、該当キーが存在すれば
+// available=true を返す）。
 // ══════════════════════════════════════════════════════════════════
 
 require_once __DIR__.'/../birth-flowers-data.php';
