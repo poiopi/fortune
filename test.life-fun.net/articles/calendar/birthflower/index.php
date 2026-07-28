@@ -210,7 +210,7 @@ ob_start();
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
-    <p>誕生石や暦についてさらに詳しく知りたい方はこちら。</p>
+    <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
       ['label'=>'誕生石とは', 'title'=>'12か月の誕生石一覧を見る →', 'url'=>'/articles/calendar/birthstone/'],

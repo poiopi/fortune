@@ -232,7 +232,7 @@ ob_start();
 
   <section class="art-section" id="related">
     <h2>関連コンテンツ</h2>
-    <p>誕生石や暦についてさらに詳しく知りたい方はこちら。</p>
+    <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
