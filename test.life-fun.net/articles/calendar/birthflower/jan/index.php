@@ -139,7 +139,7 @@ ob_start();
 
   <section class="art-section" id="about">
     <h2>1月の誕生花について</h2>
-    <p>1月は、フクジュソウやロウバイなど、寒さの中でも力強く咲く花が誕生花として多く見られる月です。新年を祝う縁起の良い花や、春の訪れを予感させる花が並び、1年の始まりにふさわしいラインナップになっています。</p>
+    <p>1月は、フクジュソウやウメ（白）など、寒さの中でも力強く咲く花が誕生花として多く見られる月です。新年を祝う縁起の良い花や、春の訪れを予感させる花が並び、1年の始まりにふさわしいラインナップになっています。</p>
   </section>
 
   <section class="art-section" id="list">
@@ -147,36 +147,36 @@ ob_start();
     <table class="kichijitsu-table">
       <tr><th>日付</th><th>花名</th><th>花言葉</th></tr>
       <tr><td>1日</td><td><a href="/articles/calendar/birthflower/jan/0101/">フクジュソウ</a></td><td>幸せを招く</td></tr>
-      <tr><td>2日</td><td><a href="/articles/calendar/birthflower/jan/0102/">ロウバイ</a></td><td>慈しみ</td></tr>
-      <tr><td>3日</td><td><a href="/articles/calendar/birthflower/jan/0103/">マツ</a></td><td>不老長寿</td></tr>
-      <tr><td>4日</td><td><a href="/articles/calendar/birthflower/jan/0104/">フクジュソウ</a></td><td>幸せを招く</td></tr>
-      <tr><td>5日</td><td><a href="/articles/calendar/birthflower/jan/0105/">ミスミソウ</a></td><td>内緒</td></tr>
-      <tr><td>6日</td><td><a href="/articles/calendar/birthflower/jan/0106/">マンサク</a></td><td>ひらめき</td></tr>
-      <tr><td>7日</td><td><a href="/articles/calendar/birthflower/jan/0107/">セリ</a></td><td>清廉潔白</td></tr>
-      <tr><td>8日</td><td><a href="/articles/calendar/birthflower/jan/0108/">スミレ</a></td><td>誠実</td></tr>
-      <tr><td>9日</td><td><a href="/articles/calendar/birthflower/jan/0109/">ノースポール</a></td><td>冬の足音</td></tr>
-      <tr><td>10日</td><td><a href="/articles/calendar/birthflower/jan/0110/">フリージア</a></td><td>純潔</td></tr>
-      <tr><td>11日</td><td><a href="/articles/calendar/birthflower/jan/0111/">ミスミソウ</a></td><td>内緒</td></tr>
-      <tr><td>12日</td><td><a href="/articles/calendar/birthflower/jan/0112/">スイートアリッサム</a></td><td>優美</td></tr>
-      <tr><td>13日</td><td><a href="/articles/calendar/birthflower/jan/0113/">カトレア</a></td><td>優雅な女性</td></tr>
-      <tr><td>14日</td><td><a href="/articles/calendar/birthflower/jan/0114/">シクラメン</a></td><td>内気</td></tr>
-      <tr><td>15日</td><td><a href="/articles/calendar/birthflower/jan/0115/">オンシジューム</a></td><td>一緒に踊って</td></tr>
-      <tr><td>16日</td><td><a href="/articles/calendar/birthflower/jan/0116/">デンドロビウム</a></td><td>わがままな美人</td></tr>
-      <tr><td>17日</td><td><a href="/articles/calendar/birthflower/jan/0117/">コチョウラン</a></td><td>幸福が飛んでくる</td></tr>
-      <tr><td>18日</td><td><a href="/articles/calendar/birthflower/jan/0118/">プリムラ</a></td><td>青春の喜びと悲しみ</td></tr>
-      <tr><td>19日</td><td><a href="/articles/calendar/birthflower/jan/0119/">ユキヤナギ</a></td><td>殊勝</td></tr>
-      <tr><td>20日</td><td><a href="/articles/calendar/birthflower/jan/0120/">キンセンカ</a></td><td>別れの悲しみ</td></tr>
-      <tr><td>21日</td><td><a href="/articles/calendar/birthflower/jan/0121/">ロウバイ</a></td><td>慈しみ</td></tr>
-      <tr><td>22日</td><td><a href="/articles/calendar/birthflower/jan/0122/">アンスリウム</a></td><td>情熱</td></tr>
-      <tr><td>23日</td><td><a href="/articles/calendar/birthflower/jan/0123/">スノーフレーク</a></td><td>純粋</td></tr>
-      <tr><td>24日</td><td><a href="/articles/calendar/birthflower/jan/0124/">フリージア</a></td><td>純潔</td></tr>
-      <tr><td>25日</td><td><a href="/articles/calendar/birthflower/jan/0125/">プリムラ</a></td><td>青春の喜びと悲しみ</td></tr>
-      <tr><td>26日</td><td><a href="/articles/calendar/birthflower/jan/0126/">アマリリス</a></td><td>誇り</td></tr>
-      <tr><td>27日</td><td><a href="/articles/calendar/birthflower/jan/0127/">プルメリア</a></td><td>気品</td></tr>
-      <tr><td>28日</td><td><a href="/articles/calendar/birthflower/jan/0128/">ネモフィラ</a></td><td>どこでも成功</td></tr>
-      <tr><td>29日</td><td><a href="/articles/calendar/birthflower/jan/0129/">ラナンキュラス</a></td><td>とても魅力的</td></tr>
-      <tr><td>30日</td><td><a href="/articles/calendar/birthflower/jan/0130/">ムスカリ</a></td><td>失望</td></tr>
-      <tr><td>31日</td><td><a href="/articles/calendar/birthflower/jan/0131/">クロッカス</a></td><td>青春の喜び</td></tr>
+      <tr><td>2日</td><td><a href="/articles/calendar/birthflower/jan/0102/">ハルサザンカ</a></td><td>困難に勝つ</td></tr>
+      <tr><td>3日</td><td><a href="/articles/calendar/birthflower/jan/0103/">ストレリチア</a></td><td>ひとり占め</td></tr>
+      <tr><td>4日</td><td><a href="/articles/calendar/birthflower/jan/0104/">ブルースター</a></td><td>幸せな愛</td></tr>
+      <tr><td>5日</td><td><a href="/articles/calendar/birthflower/jan/0105/">ラッパスイセン</a></td><td>再生</td></tr>
+      <tr><td>6日</td><td><a href="/articles/calendar/birthflower/jan/0106/">カーネーション（ピンク）</a></td><td>熱愛</td></tr>
+      <tr><td>7日</td><td><a href="/articles/calendar/birthflower/jan/0107/">アッツザクラ</a></td><td>愛を待つ</td></tr>
+      <tr><td>8日</td><td><a href="/articles/calendar/birthflower/jan/0108/">マンリョウ</a></td><td>予言</td></tr>
+      <tr><td>9日</td><td><a href="/articles/calendar/birthflower/jan/0109/">ユキワリソウ</a></td><td>期待</td></tr>
+      <tr><td>10日</td><td><a href="/articles/calendar/birthflower/jan/0110/">ナワシロイチゴ</a></td><td>恩恵</td></tr>
+      <tr><td>11日</td><td><a href="/articles/calendar/birthflower/jan/0111/">コチョウラン（白）</a></td><td>愛をあなたへ</td></tr>
+      <tr><td>12日</td><td><a href="/articles/calendar/birthflower/jan/0112/">カンツバキ</a></td><td>謙譲</td></tr>
+      <tr><td>13日</td><td><a href="/articles/calendar/birthflower/jan/0113/">マンサク</a></td><td>新鮮</td></tr>
+      <tr><td>14日</td><td><a href="/articles/calendar/birthflower/jan/0114/">ブルーデイジー</a></td><td>恵まれて</td></tr>
+      <tr><td>15日</td><td><a href="/articles/calendar/birthflower/jan/0115/">ポピー</a></td><td>やすらぎ</td></tr>
+      <tr><td>16日</td><td><a href="/articles/calendar/birthflower/jan/0116/">オキザリス</a></td><td>ひたむきな愛</td></tr>
+      <tr><td>17日</td><td><a href="/articles/calendar/birthflower/jan/0117/">スイカズラ</a></td><td>愛の絆</td></tr>
+      <tr><td>18日</td><td><a href="/articles/calendar/birthflower/jan/0118/">グズマニア</a></td><td>完璧</td></tr>
+      <tr><td>19日</td><td><a href="/articles/calendar/birthflower/jan/0119/">ストック（八重）</a></td><td>永遠の美</td></tr>
+      <tr><td>20日</td><td><a href="/articles/calendar/birthflower/jan/0120/">スイートピー</a></td><td>永遠の喜び</td></tr>
+      <tr><td>21日</td><td><a href="/articles/calendar/birthflower/jan/0121/">スイセン</a></td><td>自己愛</td></tr>
+      <tr><td>22日</td><td><a href="/articles/calendar/birthflower/jan/0122/">リカステ</a></td><td>快活</td></tr>
+      <tr><td>23日</td><td><a href="/articles/calendar/birthflower/jan/0123/">オウバイ</a></td><td>高貴</td></tr>
+      <tr><td>24日</td><td><a href="/articles/calendar/birthflower/jan/0124/">ヒヤシンス（紫）</a></td><td>優しくかわいい</td></tr>
+      <tr><td>25日</td><td><a href="/articles/calendar/birthflower/jan/0125/">チューリップ（黄）</a></td><td>正直</td></tr>
+      <tr><td>26日</td><td><a href="/articles/calendar/birthflower/jan/0126/">ピグミーランタン</a></td><td>印象</td></tr>
+      <tr><td>27日</td><td><a href="/articles/calendar/birthflower/jan/0127/">マダガスカルジャスミン</a></td><td>自意識</td></tr>
+      <tr><td>28日</td><td><a href="/articles/calendar/birthflower/jan/0128/">キンギョソウ</a></td><td>欲望</td></tr>
+      <tr><td>29日</td><td><a href="/articles/calendar/birthflower/jan/0129/">スミレ</a></td><td>誠実な愛</td></tr>
+      <tr><td>30日</td><td><a href="/articles/calendar/birthflower/jan/0130/">サクラソウ</a></td><td>忠実</td></tr>
+      <tr><td>31日</td><td><a href="/articles/calendar/birthflower/jan/0131/">ウメ（白）</a></td><td>澄んだ心</td></tr>
     </table>
   </section>
 
