@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0131/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0211/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月31日の誕生花ウメ（白）の花言葉・特徴・魅力をわかりやすく解説。「澄んだ心」を象徴する早春の花木の意味を紹介します。">
-  <title>1月31日の誕生花はウメ（白）｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="2月11日の誕生花アフリカンキンセンカの花言葉・特徴・魅力をわかりやすく解説。「元気」を象徴する初夏に咲く花の意味を紹介します。">
+  <title>2月11日の誕生花はアフリカンキンセンカ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ウメ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、まだ寒さの残る時期に白い花を咲かせます。"}},
-      {"@type":"Question","name":"ウメ（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。"}},
-      {"@type":"Question","name":"白いウメと紅いウメは花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。"}}
+      {"@type":"Question","name":"アフリカンキンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、鮮やかな色合いの花を咲かせます。日差しを受けて生き生きと咲く一年草です。"}},
+      {"@type":"Question","name":"アフリカンキンセンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「元気」という花言葉は、太陽に向かって鮮やかに咲くその明るい花姿に由来するとされています。"}},
+      {"@type":"Question","name":"アフリカンキンセンカはどんな花壇に向いていますか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな色合いが特徴で、明るい印象の花壇や寄せ植えのアクセントとして人気があります。"}}
     ]
   }
   </script>
@@ -106,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月31日の誕生花（ウメ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0131/"}
+      {"@type":"ListItem","position":5,"name":"2月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/"},
+      {"@type":"ListItem","position":6,"name":"2月11日の誕生花（アフリカンキンセンカ）とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/0211/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月31日の誕生花（ウメ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/feb/">2月の誕生花とは</a><span>›</span>2月11日の誕生花（アフリカンキンセンカ）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">JANUARY 31 · 誕生花</span>
-    <h1>1月31日の誕生花はウメ（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ウメ（白）は、早春に白い花を咲かせる1月31日の誕生花です。花言葉は「澄んだ心」。清楚で凛とした印象の花です。</p>
+    <span class="art-label">FEBRUARY 11 · 誕生花</span>
+    <h1>2月11日の誕生花はアフリカンキンセンカ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">アフリカンキンセンカは、キク科の一年草で、初夏に鮮やかな色合いの花を咲かせる2月11日の誕生花です。花言葉は「元気」。明るい印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ウメ（白）</dd>
-    <dt>花言葉</dt><dd>澄んだ心</dd>
-    <dt>科名</dt><dd>バラ科</dd>
-    <dt>見頃</dt><dd>早春</dd>
+    <dt>花名</dt><dd>アフリカンキンセンカ</dd>
+    <dt>花言葉</dt><dd>元気</dd>
+    <dt>科名</dt><dd>キク科</dd>
+    <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ウメ（白）とは</a></li>
-      <li><a href="#meaning">ウメ（白）が象徴する意味</a></li>
-      <li><a href="#charm">ウメ（白）の魅力</a></li>
+      <li><a href="#about">アフリカンキンセンカとは</a></li>
+      <li><a href="#meaning">アフリカンキンセンカが象徴する意味</a></li>
+      <li><a href="#charm">アフリカンキンセンカの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ウメ（白）とは</h2>
-    <p>ウメ（白）は、バラ科の落葉高木で、1月31日の誕生花として知られています。早春、まだ寒さの残る中で白く清楚な花を咲かせ、凛とした美しさから古くから日本で愛されてきた花木です。</p>
+    <h2>アフリカンキンセンカとは</h2>
+    <p>アフリカンキンセンカは、キク科の一年草で、2月11日の誕生花として知られています。初夏になると、オレンジや黄色を中心とした鮮やかな色合いの花を次々と咲かせ、花壇を明るく彩ります。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ウメ（白）が象徴する意味</h2>
-    <p>ウメ（白）の花言葉は「澄んだ心」です。寒さの中でも汚れなく白く咲くその姿から、清らかで澄んだ心を象徴する花とされてきました。</p>
+    <h2>アフリカンキンセンカが象徴する意味</h2>
+    <p>アフリカンキンセンカの花言葉は「元気」です。太陽の光を受けて鮮やかに咲くその明るい花姿が、見る人に活力を与える様子に由来するとされています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ウメ（白）の魅力</h2>
-    <p>ウメ（白）の魅力は、凛とした佇まいで咲く白い花と、あたりに漂うほのかな香りにあります。庭木や盆栽としても長く親しまれ、早春の訪れを清らかに告げてくれます。1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物にもふさわしい花木です。</p>
+    <h2>アフリカンキンセンカの魅力</h2>
+    <p>アフリカンキンセンカの魅力は、日差しの下で一段と映える鮮やかな花色と、次々と花を咲かせる旺盛な生命力にあります。花壇や寄せ植えのアクセントとして、明るい雰囲気を作り出してくれます。2月11日生まれの方はもちろん、元気を届けたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ウメ（白）は日当たりの良い場所を好み、乾燥に強い一方、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
+    <p>アフリカンキンセンカは日当たりの良い場所を好み、水切れに注意しながら育てるのがおすすめです。こまめに花がらを摘むことで、長く花を楽しめます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物としてもウメ（白）は人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>2月11日生まれの方はもちろん、元気を届けたい贈り物としてもアフリカンキンセンカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">早春、まだ寒さの残る時期に白い花を咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカはいつ頃咲きますか？</div>
+        <div class="faq-a">初夏に、鮮やかな色合いの花を咲かせます。日差しを受けて生き生きと咲く一年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「元気」という花言葉は、太陽に向かって鮮やかに咲くその明るい花姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">白いウメと紅いウメは花言葉が違いますか？</div>
-        <div class="faq-a">はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカはどんな花壇に向いていますか？</div>
+        <div class="faq-a">鮮やかな色合いが特徴で、明るい印象の花壇や寄せ植えのアクセントとして人気があります。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ウメ（白）は早春に白い花を咲かせる、1月31日の誕生花</li>
-      <li>花言葉は「澄んだ心」、清らかさを象徴する花とされる</li>
-      <li>凛とした佇まいとほのかな香りが魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>アフリカンキンセンカは初夏に鮮やかな色合いの花を咲かせる、2月11日の誕生花</li>
+      <li>花言葉は「元気」、明るい活力を象徴する花とされる</li>
+      <li>日差しの下で映える花色と旺盛な生命力が魅力</li>
+      <li>日当たりの良い場所で水切れに注意し、こまめな花がら摘みで育てたい</li>
     </ul>
   </section>
 
@@ -222,12 +222,12 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = '/articles/calendar/birthflower/jan/0130/';
-  $prevTitle = '1月30日の誕生花（サクラソウ）とは';
-  $nextUrl   = '/articles/calendar/birthflower/feb/0201/';
-  $nextTitle = '2月1日の誕生花（フリージア（黄））とは';
-  $listUrl   = '/articles/calendar/birthflower/jan/';
-  $listTitle = '1月の誕生花一覧';
+  $prevUrl   = '/articles/calendar/birthflower/feb/0210/';
+  $prevTitle = '2月10日の誕生花（バラ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/feb/0212/';
+  $nextTitle = '2月12日の誕生花（スプレーギク）とは';
+  $listUrl   = '/articles/calendar/birthflower/feb/';
+  $listTitle = '2月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
@@ -236,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'1月の誕生花一覧', 'title'=>'1月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/jan/'],
+      ['label'=>'2月の誕生花一覧', 'title'=>'2月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/feb/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -253,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-jan-0131'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-feb-0211'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-jan-0131');
+echo autoLink($html, 'birthflower-feb-0211');
 ?>

@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0131/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0209/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月31日の誕生花ウメ（白）の花言葉・特徴・魅力をわかりやすく解説。「澄んだ心」を象徴する早春の花木の意味を紹介します。">
-  <title>1月31日の誕生花はウメ（白）｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="2月9日の誕生花クリスマスローズの花言葉・特徴・魅力をわかりやすく解説。「大切な人」を象徴する冬から早春に咲く花の意味を紹介します。">
+  <title>2月9日の誕生花はクリスマスローズ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ウメ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、まだ寒さの残る時期に白い花を咲かせます。"}},
-      {"@type":"Question","name":"ウメ（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。"}},
-      {"@type":"Question","name":"白いウメと紅いウメは花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。"}}
+      {"@type":"Question","name":"クリスマスローズはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から早春にかけて、うつむき加減の花を咲かせます。雪の残る時期にも静かに花を咲かせる多年草です。"}},
+      {"@type":"Question","name":"クリスマスローズの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「大切な人」という花言葉は、うつむいて咲く控えめで奥ゆかしい姿が、思いやりの心を思わせることに由来するとされています。"}},
+      {"@type":"Question","name":"クリスマスローズはクリスマスの時期に咲きますか？","acceptedAnswer":{"@type":"Answer","text":"品種によって開花時期は異なり、冬から早春にかけて咲くものが多い花です。"}}
     ]
   }
   </script>
@@ -106,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月31日の誕生花（ウメ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0131/"}
+      {"@type":"ListItem","position":5,"name":"2月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/"},
+      {"@type":"ListItem","position":6,"name":"2月9日の誕生花（クリスマスローズ）とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/0209/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月31日の誕生花（ウメ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/feb/">2月の誕生花とは</a><span>›</span>2月9日の誕生花（クリスマスローズ）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">JANUARY 31 · 誕生花</span>
-    <h1>1月31日の誕生花はウメ（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ウメ（白）は、早春に白い花を咲かせる1月31日の誕生花です。花言葉は「澄んだ心」。清楚で凛とした印象の花です。</p>
+    <span class="art-label">FEBRUARY 9 · 誕生花</span>
+    <h1>2月9日の誕生花はクリスマスローズ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">クリスマスローズは、キンポウゲ科の多年草で、冬から早春にうつむき加減の花を咲かせる2月9日の誕生花です。花言葉は「大切な人」。静かで奥ゆかしい印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ウメ（白）</dd>
-    <dt>花言葉</dt><dd>澄んだ心</dd>
-    <dt>科名</dt><dd>バラ科</dd>
-    <dt>見頃</dt><dd>早春</dd>
+    <dt>花名</dt><dd>クリスマスローズ</dd>
+    <dt>花言葉</dt><dd>大切な人</dd>
+    <dt>科名</dt><dd>キンポウゲ科</dd>
+    <dt>見頃</dt><dd>冬から早春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ウメ（白）とは</a></li>
-      <li><a href="#meaning">ウメ（白）が象徴する意味</a></li>
-      <li><a href="#charm">ウメ（白）の魅力</a></li>
+      <li><a href="#about">クリスマスローズとは</a></li>
+      <li><a href="#meaning">クリスマスローズが象徴する意味</a></li>
+      <li><a href="#charm">クリスマスローズの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ウメ（白）とは</h2>
-    <p>ウメ（白）は、バラ科の落葉高木で、1月31日の誕生花として知られています。早春、まだ寒さの残る中で白く清楚な花を咲かせ、凛とした美しさから古くから日本で愛されてきた花木です。</p>
+    <h2>クリスマスローズとは</h2>
+    <p>クリスマスローズは、キンポウゲ科の多年草で、2月9日の誕生花として知られています。冬から早春にかけて、うつむき加減に花を咲かせるその姿は静かで奥ゆかしく、庭に落ち着いた彩りを添えてくれます。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ウメ（白）が象徴する意味</h2>
-    <p>ウメ（白）の花言葉は「澄んだ心」です。寒さの中でも汚れなく白く咲くその姿から、清らかで澄んだ心を象徴する花とされてきました。</p>
+    <h2>クリスマスローズが象徴する意味</h2>
+    <p>クリスマスローズの花言葉は「大切な人」です。派手に主張せずうつむいて咲くその控えめな姿が、静かに大切な人を思う気持ちに重なることに由来するとされています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ウメ（白）の魅力</h2>
-    <p>ウメ（白）の魅力は、凛とした佇まいで咲く白い花と、あたりに漂うほのかな香りにあります。庭木や盆栽としても長く親しまれ、早春の訪れを清らかに告げてくれます。1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物にもふさわしい花木です。</p>
+    <h2>クリスマスローズの魅力</h2>
+    <p>クリスマスローズの魅力は、花が少なくなる冬の庭に静かな存在感を与えてくれるところにあります。うつむいて咲くからこそ、覗き込んで眺める楽しさもある花です。2月9日生まれの方はもちろん、大切な人への想いを届けたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ウメ（白）は日当たりの良い場所を好み、乾燥に強い一方、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
+    <p>クリスマスローズは、半日陰で水はけの良い場所を好み、夏の直射日光や乾燥を避けて育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物としてもウメ（白）は人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>2月9日生まれの方はもちろん、大切な人への静かな想いを伝えたい贈り物としてもクリスマスローズは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">早春、まだ寒さの残る時期に白い花を咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズはいつ頃咲きますか？</div>
+        <div class="faq-a">冬から早春にかけて、うつむき加減の花を咲かせます。雪の残る時期にも静かに花を咲かせる多年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「大切な人」という花言葉は、うつむいて咲く控えめで奥ゆかしい姿が、思いやりの心を思わせることに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">白いウメと紅いウメは花言葉が違いますか？</div>
-        <div class="faq-a">はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズはクリスマスの時期に咲きますか？</div>
+        <div class="faq-a">品種によって開花時期は異なり、冬から早春にかけて咲くものが多い花です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ウメ（白）は早春に白い花を咲かせる、1月31日の誕生花</li>
-      <li>花言葉は「澄んだ心」、清らかさを象徴する花とされる</li>
-      <li>凛とした佇まいとほのかな香りが魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>クリスマスローズは冬から早春にうつむいて咲く、2月9日の誕生花</li>
+      <li>花言葉は「大切な人」、静かで思いやりのある心を象徴する</li>
+      <li>花の少ない冬の庭に静かな存在感を与えてくれるのが魅力</li>
+      <li>半日陰で水はけの良い場所を好み、夏の乾燥を避けて育てたい</li>
     </ul>
   </section>
 
@@ -222,12 +222,12 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = '/articles/calendar/birthflower/jan/0130/';
-  $prevTitle = '1月30日の誕生花（サクラソウ）とは';
-  $nextUrl   = '/articles/calendar/birthflower/feb/0201/';
-  $nextTitle = '2月1日の誕生花（フリージア（黄））とは';
-  $listUrl   = '/articles/calendar/birthflower/jan/';
-  $listTitle = '1月の誕生花一覧';
+  $prevUrl   = '/articles/calendar/birthflower/feb/0208/';
+  $prevTitle = '2月8日の誕生花（ハナシノブ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/feb/0210/';
+  $nextTitle = '2月10日の誕生花（バラ）とは';
+  $listUrl   = '/articles/calendar/birthflower/feb/';
+  $listTitle = '2月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
@@ -236,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'1月の誕生花一覧', 'title'=>'1月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/jan/'],
+      ['label'=>'2月の誕生花一覧', 'title'=>'2月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/feb/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -253,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-jan-0131'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-feb-0209'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-jan-0131');
+echo autoLink($html, 'birthflower-feb-0209');
 ?>
