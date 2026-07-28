@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0126/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月26日の誕生花アマリリスの花言葉・特徴・魅力をわかりやすく解説。「誇り」を象徴する大輪の花の意味を紹介します。">
-  <title>1月26日の誕生花はアマリリス｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月26日の誕生花ピグミーランタンの花言葉・特徴・魅力をわかりやすく解説。「印象」を象徴する愛らしい花の意味を紹介します。">
+  <title>1月26日の誕生花はピグミーランタン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アマリリスはどのくらいの大きさの花が咲きますか？","acceptedAnswer":{"@type":"Answer","text":"品種にもよりますが、直径15〜20センチほどの大輪の花を咲かせることもあります。"}},
-      {"@type":"Question","name":"アマリリスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「誇り」という花言葉は、太い花茎にまっすぐ立ち上がり大きく花開く堂々とした姿に由来するとされています。"}},
-      {"@type":"Question","name":"アマリリスは何度も花を咲かせられますか？","acceptedAnswer":{"@type":"Answer","text":"適切に管理すれば、休眠期を経て翌年以降も花を咲かせることができます。"}}
+      {"@type":"Question","name":"ピグミーランタンとはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな提灯のような形の花を咲かせる、愛らしい印象の園芸品種です。"}},
+      {"@type":"Question","name":"ピグミーランタンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「印象」という花言葉は、ランタンを思わせる個性的な花の形が見る人の心に残ることに由来するとされています。"}},
+      {"@type":"Question","name":"ピグミーランタンはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"個性的な花姿を活かして、鉢植えとして室内のインテリアに取り入れるのがおすすめです。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月26日の誕生花（アマリリス）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0126/"}
+      {"@type":"ListItem","position":6,"name":"1月26日の誕生花（ピグミーランタン）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0126/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月26日の誕生花（アマリリス）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月26日の誕生花（ピグミーランタン）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 26 · 誕生花</span>
-    <h1>1月26日の誕生花はアマリリス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アマリリスは、大輪でラッパ状の花が特徴の1月26日の誕生花です。花言葉は「誇り」。</p>
+    <h1>1月26日の誕生花はピグミーランタン<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ピグミーランタンは、小さな提灯のような形の花を咲かせる1月26日の誕生花です。花言葉は「印象」。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>アマリリス</dd>
-    <dt>花言葉</dt><dd>誇り</dd>
-    <dt>科名</dt><dd>ヒガンバナ科</dd>
-    <dt>見頃</dt><dd>4月〜6月</dd>
+    <dt>花名</dt><dd>ピグミーランタン</dd>
+    <dt>花言葉</dt><dd>印象</dd>
+    <dt>科名</dt><dd>-</dd>
+    <dt>見頃</dt><dd>-</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アマリリスとは</a></li>
-      <li><a href="#meaning">アマリリスが象徴する意味</a></li>
-      <li><a href="#charm">アマリリスの魅力</a></li>
+      <li><a href="#about">ピグミーランタンとは</a></li>
+      <li><a href="#meaning">ピグミーランタンが象徴する意味</a></li>
+      <li><a href="#charm">ピグミーランタンの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アマリリスとは</h2>
-    <p>アマリリスは、ヒガンバナ科の球根植物で、1月26日の誕生花として知られています。大輪でラッパ状の華やかな花を咲かせ、その堂々とした花姿から観賞用の花として世界中で親しまれています。</p>
+    <h2>ピグミーランタンとは</h2>
+    <p>ピグミーランタンは、1月26日の誕生花として知られる園芸品種です。小さな提灯（ランタン）のような形の花を咲かせることからこの名がつけられ、愛らしい印象で親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>アマリリスが象徴する意味</h2>
-    <p>アマリリスの花言葉は「誇り」です。太い花茎にまっすぐ立ち上がり、大きく花開くその姿から、堂々とした自信や誇りを象徴する花とされてきました。</p>
+    <h2>ピグミーランタンが象徴する意味</h2>
+    <p>ピグミーランタンの花言葉は「印象」です。ランタンを思わせる個性的な花の形が、見る人の心に強く残ることに由来するとされています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>アマリリスの魅力</h2>
-    <p>アマリリスの魅力は、大輪の花が持つ圧倒的な存在感と、赤・白・ピンクなど鮮やかな色合いにあります。一本でも十分に華やかで、贈り物や特別な日の飾りとして人気があります。1月26日生まれの方はもちろん、自信と誇りを応援したい贈り物にもふさわしい花です。</p>
+    <h2>ピグミーランタンの魅力</h2>
+    <p>ピグミーランタンの魅力は、提灯のような可愛らしい花の形と、小さいながらも個性を放つ存在感にあります。鉢植えとして飾れば、部屋にユニークな印象を添えてくれます。1月26日生まれの方はもちろん、印象的な魅力を伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>アマリリスは日当たりの良い場所を好み、生育期はしっかり水を与え、休眠期は水やりを控えるのがおすすめです。</p>
+    <p>ピグミーランタンは明るい場所を好み、乾燥しすぎないよう土の表面が乾いたら水を与えるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月26日生まれの方はもちろん、堂々とした魅力を伝えたい贈り物としてもアマリリスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月26日生まれの方はもちろん、印象的な魅力を伝えたい贈り物としてもピグミーランタンは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリリスはどのくらいの大きさの花が咲きますか？</div>
-        <div class="faq-a">品種にもよりますが、直径15〜20センチほどの大輪の花を咲かせることもあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンとはどんな花ですか？</div>
+        <div class="faq-a">小さな提灯のような形の花を咲かせる、愛らしい印象の園芸品種です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリリスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「誇り」という花言葉は、太い花茎にまっすぐ立ち上がり大きく花開く堂々とした姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「印象」という花言葉は、ランタンを思わせる個性的な花の形が見る人の心に残ることに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリリスは何度も花を咲かせられますか？</div>
-        <div class="faq-a">適切に管理すれば、休眠期を経て翌年以降も花を咲かせることができます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンはどんな場所に飾るのがおすすめですか？</div>
+        <div class="faq-a">個性的な花姿を活かして、鉢植えとして室内のインテリアに取り入れるのがおすすめです。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>アマリリスは大輪でラッパ状の、1月26日の誕生花</li>
-      <li>花言葉は「誇り」、堂々とした自信を象徴する花とされる</li>
-      <li>圧倒的な存在感と鮮やかな色合いが魅力</li>
-      <li>生育期と休眠期で水やりを調整して育てたい</li>
+      <li>ピグミーランタンは提灯のような花を咲かせる、1月26日の誕生花</li>
+      <li>花言葉は「印象」、心に残る個性を象徴する花とされる</li>
+      <li>愛らしくユニークな花の形が魅力</li>
+      <li>明るい場所で、乾燥しすぎないよう育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0125/';
-  $prevTitle = '1月25日の誕生花（プリムラ）とは';
+  $prevTitle = '1月25日の誕生花（チューリップ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0127/';
-  $nextTitle = '1月27日の誕生花（プルメリア）とは';
+  $nextTitle = '1月27日の誕生花（マダガスカルジャスミン）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

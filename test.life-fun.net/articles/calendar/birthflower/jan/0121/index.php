@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0121/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月21日の誕生花ロウバイの花言葉・特徴・魅力をわかりやすく解説。「慈しみ」を象徴する花の意味と由来を紹介します。">
-  <title>1月21日の誕生花はロウバイ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月21日の誕生花スイセンの花言葉・特徴・魅力をわかりやすく解説。「自己愛」を象徴する春を告げる花の意味を紹介します。">
+  <title>1月21日の誕生花はスイセン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ロウバイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"12月から2月頃、まだ寒さが厳しい時期に咲きます。"}},
-      {"@type":"Question","name":"ロウバイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「慈しみ」という花言葉は、寒さの中でも凛と香り高く咲く姿が、静かな思いやりを象徴すると考えられてきたことに由来するとされています。"}},
-      {"@type":"Question","name":"ロウバイと梅は違う花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、名前は似ていますがロウバイ科とバラ科で全く別の植物です。花の形や香りにも違いがあります。"}}
+      {"@type":"Question","name":"スイセンの花言葉はなぜ「自己愛」なのですか？","acceptedAnswer":{"@type":"Answer","text":"ギリシャ神話に登場するナルキッソスが水面に映る自分の姿に見とれた物語に由来するとされています。"}},
+      {"@type":"Question","name":"スイセンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に、白や黄色の花を咲かせます。"}},
+      {"@type":"Question","name":"スイセンとラッパスイセンは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"ラッパスイセンはスイセンの仲間で、中央の副花冠がラッパ状に大きく発達している品種です。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月21日の誕生花（ロウバイ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0121/"}
+      {"@type":"ListItem","position":6,"name":"1月21日の誕生花（スイセン）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0121/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月21日の誕生花（ロウバイ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月21日の誕生花（スイセン）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 21 · 誕生花</span>
-    <h1>1月21日の誕生花はロウバイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ロウバイは、蝋細工のような透き通る黄色い花を咲かせる1月21日の誕生花です。花言葉は「慈しみ」。寒さの中で凛と香る花として親しまれてきました。</p>
+    <h1>1月21日の誕生花はスイセン<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">スイセンは、早春に白や黄色の花を咲かせる1月21日の誕生花です。花言葉は「自己愛」。春を告げる花として親しまれています。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ロウバイ</dd>
-    <dt>花言葉</dt><dd>慈しみ</dd>
-    <dt>科名</dt><dd>ロウバイ科</dd>
-    <dt>見頃</dt><dd>12月〜2月</dd>
+    <dt>花名</dt><dd>スイセン</dd>
+    <dt>花言葉</dt><dd>自己愛</dd>
+    <dt>科名</dt><dd>ヒガンバナ科</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ロウバイとは</a></li>
-      <li><a href="#meaning">ロウバイが象徴する意味</a></li>
-      <li><a href="#charm">ロウバイの魅力</a></li>
+      <li><a href="#about">スイセンとは</a></li>
+      <li><a href="#meaning">スイセンが象徴する意味</a></li>
+      <li><a href="#charm">スイセンの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ロウバイとは</h2>
-    <p>ロウバイは、ロウバイ科の落葉低木で、1月21日の誕生花として知られています。冬の寒さの中、蝋細工のような透き通る黄色い花を咲かせ、甘く上品な香りを漂わせることからこの名がつけられました。葉に先立って花が咲く、数少ない冬の花木の一つです。</p>
+    <h2>スイセンとは</h2>
+    <p>スイセンは、ヒガンバナ科の球根植物で、1月21日の誕生花として知られています。早春に白や黄色の花を咲かせ、春の訪れを告げる花として古くから親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ロウバイが象徴する意味</h2>
-    <p>ロウバイの花言葉は「慈しみ」です。厳しい寒さの中でも凛と咲き、あたりに甘い香りを届けるその姿から、静かに人を思いやる優しさの象徴とされてきました。控えめでありながら存在感のある花として親しまれています。</p>
+    <h2>スイセンが象徴する意味</h2>
+    <p>スイセンの花言葉は「自己愛」です。ギリシャ神話のナルキッソスの物語に由来するとされる花言葉で、水面に映る自分の姿に見とれる美しさになぞらえられています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ロウバイの魅力</h2>
-    <p>ロウバイの魅力は、透き通るような蝋細工を思わせる花びらと、冬の澄んだ空気に漂う甘い香りにあります。葉のない枝に咲く花は凛とした美しさがあり、庭木や生け花としても好まれています。1月21日生まれの方はもちろん、静かな優しさを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>スイセンの魅力</h2>
+    <p>スイセンの魅力は、清楚な白や鮮やかな黄色の花色と、早春に凛と咲く姿にあります。庭植えや切り花としても人気が高く、寒さの中に春らしい彩りを添えてくれます。1月21日生まれの方はもちろん、自分らしさを大切にしたい方への贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ロウバイは日当たりと水はけの良い場所を好み、乾燥にはやや弱いため、土の表面が乾いたら水を与えるのがおすすめです。</p>
+    <p>スイセンは日当たりの良い場所を好み、丈夫で植えっぱなしでも毎年花を咲かせやすい球根植物です。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月21日生まれの方はもちろん、静かな思いやりを伝えたい贈り物としてもロウバイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月21日生まれの方はもちろん、自分らしさを大切にする方への贈り物としてもスイセンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ロウバイはいつ頃咲きますか？</div>
-        <div class="faq-a">12月から2月頃、まだ寒さが厳しい時期に咲きます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイセンの花言葉はなぜ「自己愛」なのですか？</div>
+        <div class="faq-a">ギリシャ神話に登場するナルキッソスが水面に映る自分の姿に見とれた物語に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ロウバイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「慈しみ」という花言葉は、寒さの中でも凛と香り高く咲く姿が、静かな思いやりを象徴すると考えられてきたことに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイセンはいつ頃咲きますか？</div>
+        <div class="faq-a">早春に、白や黄色の花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ロウバイと梅は違う花ですか？</div>
-        <div class="faq-a">はい、名前は似ていますがロウバイ科とバラ科で全く別の植物です。花の形や香りにも違いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイセンとラッパスイセンは同じ花ですか？</div>
+        <div class="faq-a">ラッパスイセンはスイセンの仲間で、中央の副花冠がラッパ状に大きく発達している品種です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ロウバイは冬に透き通る黄色い花を咲かせる、1月21日の誕生花</li>
-      <li>花言葉は「慈しみ」、静かな思いやりを象徴する花とされる</li>
-      <li>甘い香りと蝋細工のような花びらが魅力</li>
-      <li>乾燥にやや弱いため、水やりに注意して育てたい</li>
+      <li>スイセンは早春に白や黄色の花を咲かせる、1月21日の誕生花</li>
+      <li>花言葉は「自己愛」、ギリシャ神話に由来するとされる</li>
+      <li>清楚な花色と春を告げる姿が魅力</li>
+      <li>丈夫で植えっぱなしでも育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0120/';
-  $prevTitle = '1月20日の誕生花（キンセンカ）とは';
+  $prevTitle = '1月20日の誕生花（スイートピー）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0122/';
-  $nextTitle = '1月22日の誕生花（アンスリウム）とは';
+  $nextTitle = '1月22日の誕生花（リカステ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

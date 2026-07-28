@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0123/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月23日の誕生花スノーフレークの花言葉・特徴・魅力をわかりやすく解説。「純粋」を象徴する花の意味を紹介します。">
-  <title>1月23日の誕生花はスノーフレーク｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月23日の誕生花オウバイの花言葉・特徴・魅力をわかりやすく解説。「高貴」を象徴する迎春花の意味を紹介します。">
+  <title>1月23日の誕生花はオウバイ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スノーフレークとスズランは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"似た印象がありますが別の植物です。スノーフレークはヒガンバナ科、スズランはキジカクシ科に分類されます。"}},
-      {"@type":"Question","name":"スノーフレークの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「純粋」という花言葉は、汚れのない白い花びらと控えめな花姿に由来するとされています。"}},
-      {"@type":"Question","name":"スノーフレークは育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で植えっぱなしでも毎年花を咲かせやすく、初心者にも育てやすい植物です。"}}
+      {"@type":"Question","name":"オウバイはなぜ「迎春花」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"早春、他の花に先駆けて黄色い花を咲かせ、春の訪れを告げることに由来するとされています。"}},
+      {"@type":"Question","name":"オウバイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「高貴」という花言葉は、他の花に先駆けて咲く黄金色の花が気品ある佇まいを感じさせることに由来するとされています。"}},
+      {"@type":"Question","name":"オウバイと梅は同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"名前は似ていますがオウバイはモクセイ科、梅はバラ科で異なる植物です。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月23日の誕生花（スノーフレーク）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0123/"}
+      {"@type":"ListItem","position":6,"name":"1月23日の誕生花（オウバイ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0123/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月23日の誕生花（スノーフレーク）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月23日の誕生花（オウバイ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 23 · 誕生花</span>
-    <h1>1月23日の誕生花はスノーフレーク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スノーフレークは、雪の結晶のような1月23日の誕生花です。花言葉は「純粋」。鈴を思わせる可憐な花姿が特徴です。</p>
+    <h1>1月23日の誕生花はオウバイ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">オウバイは、早春に黄色い花を咲かせる1月23日の誕生花です。花言葉は「高貴」。迎春花とも呼ばれる花木です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>スノーフレーク</dd>
-    <dt>花言葉</dt><dd>純粋</dd>
-    <dt>科名</dt><dd>ヒガンバナ科</dd>
-    <dt>見頃</dt><dd>3月〜4月</dd>
+    <dt>花名</dt><dd>オウバイ</dd>
+    <dt>花言葉</dt><dd>高貴</dd>
+    <dt>科名</dt><dd>モクセイ科</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スノーフレークとは</a></li>
-      <li><a href="#meaning">スノーフレークが象徴する意味</a></li>
-      <li><a href="#charm">スノーフレークの魅力</a></li>
+      <li><a href="#about">オウバイとは</a></li>
+      <li><a href="#meaning">オウバイが象徴する意味</a></li>
+      <li><a href="#charm">オウバイの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スノーフレークとは</h2>
-    <p>スノーフレークは、ヒガンバナ科の球根植物で、1月23日の誕生花として知られています。春にスズランに似た鈴形の白い花を咲かせ、その名の通り雪のかけらを思わせる清らかな姿が特徴です。</p>
+    <h2>オウバイとは</h2>
+    <p>オウバイは、モクセイ科の落葉低木で、1月23日の誕生花として知られています。早春に黄色い花を咲かせ、春を迎える花木として「迎春花」とも呼ばれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>スノーフレークが象徴する意味</h2>
-    <p>スノーフレークの花言葉は「純粋」です。汚れのない白い花びらと、うつむいて咲く控えめな花姿から、清らかで飾らない心を象徴する花とされてきました。</p>
+    <h2>オウバイが象徴する意味</h2>
+    <p>オウバイの花言葉は「高貴」です。他の花に先駆けて咲く黄金色の花が、気品ある佇まいを感じさせることに由来するとされています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>スノーフレークの魅力</h2>
-    <p>スノーフレークの魅力は、雪の結晶のような繊細な白い花と、鈴を思わせる可憐なフォルムにあります。群生して咲く様子も美しく、春の庭に清涼感を添えてくれます。1月23日生まれの方はもちろん、清らかな気持ちを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>オウバイの魅力</h2>
+    <p>オウバイの魅力は、早春に咲く鮮やかな黄色の花と、しなやかに枝垂れる枝ぶりにあります。庭木や生け花としても人気があり、まだ寒さの残る季節に春らしい彩りを添えてくれます。1月23日生まれの方はもちろん、気品ある魅力を伝えたい贈り物にもふさわしい花木です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>スノーフレークは日当たりから半日陰まで幅広く育ち、丈夫で植えっぱなしでも毎年花を咲かせやすい植物です。</p>
+    <p>オウバイは日当たりの良い場所を好み、丈夫で育てやすく、土の表面が乾いたら水を与える程度で十分育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月23日生まれの方はもちろん、清らかな想いを伝えたい贈り物としてもスノーフレークは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月23日生まれの方はもちろん、気品ある魅力を伝えたい贈り物としてもオウバイは人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークとスズランは同じ花ですか？</div>
-        <div class="faq-a">似た印象がありますが別の植物です。スノーフレークはヒガンバナ科、スズランはキジカクシ科に分類されます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オウバイはなぜ「迎春花」と呼ばれるのですか？</div>
+        <div class="faq-a">早春、他の花に先駆けて黄色い花を咲かせ、春の訪れを告げることに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「純粋」という花言葉は、汚れのない白い花びらと控えめな花姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オウバイの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「高貴」という花言葉は、他の花に先駆けて咲く黄金色の花が気品ある佇まいを感じさせることに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークは育てやすいですか？</div>
-        <div class="faq-a">丈夫で植えっぱなしでも毎年花を咲かせやすく、初心者にも育てやすい植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オウバイと梅は同じ花ですか？</div>
+        <div class="faq-a">名前は似ていますがオウバイはモクセイ科、梅はバラ科で異なる植物です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>スノーフレークは雪の結晶のような、1月23日の誕生花</li>
-      <li>花言葉は「純粋」、清らかな心を象徴する花とされる</li>
-      <li>繊細で可憐な鈴形の花姿が魅力</li>
-      <li>丈夫で植えっぱなしでも育てやすい</li>
+      <li>オウバイは早春に黄色い花を咲かせる、1月23日の誕生花</li>
+      <li>花言葉は「高貴」、気品ある佇まいを象徴する花とされる</li>
+      <li>しなやかな枝ぶりと鮮やかな黄色が魅力</li>
+      <li>丈夫で育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0122/';
-  $prevTitle = '1月22日の誕生花（アンスリウム）とは';
+  $prevTitle = '1月22日の誕生花（リカステ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0124/';
-  $nextTitle = '1月24日の誕生花（フリージア）とは';
+  $nextTitle = '1月24日の誕生花（ヒヤシンス）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

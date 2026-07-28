@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0119/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月19日の誕生花ユキヤナギの花言葉・特徴・魅力をわかりやすく解説。「殊勝」を象徴する花の意味を紹介します。">
-  <title>1月19日の誕生花はユキヤナギ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月19日の誕生花ストック（八重）の花言葉・特徴・魅力をわかりやすく解説。「永遠の美」を象徴する花の意味を紹介します。">
+  <title>1月19日の誕生花はストック（八重）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ユキヤナギはなぜこの名前がついたのですか？","acceptedAnswer":{"@type":"Answer","text":"白い小花が枝を雪のように覆う様子と、柳のようにしなやかな枝ぶりに由来するとされています。"}},
-      {"@type":"Question","name":"ユキヤナギの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「殊勝」という花言葉は、細い枝に健気に小花を咲かせる姿に由来するとされています。"}},
-      {"@type":"Question","name":"ユキヤナギはどのくらいの大きさになりますか？","acceptedAnswer":{"@type":"Answer","text":"一般的には1〜2メートル程度の低木で、庭木としても育てやすいサイズです。"}}
+      {"@type":"Question","name":"ストック（八重）はどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"甘く優しい香りを漂わせ、花束やアレンジメントでも人気があります。"}},
+      {"@type":"Question","name":"ストック（八重）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「永遠の美」という花言葉は、幾重にも重なる花びらが長く咲き続ける姿に由来するとされています。"}},
+      {"@type":"Question","name":"ストックの「八重」とはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらが幾重にも重なって咲く品種を指し、通常のストックよりも華やかでボリュームのある花姿になります。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月19日の誕生花（ユキヤナギ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0119/"}
+      {"@type":"ListItem","position":6,"name":"1月19日の誕生花（ストック）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0119/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月19日の誕生花（ユキヤナギ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月19日の誕生花（ストック）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 19 · 誕生花</span>
-    <h1>1月19日の誕生花はユキヤナギ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ユキヤナギは、雪のように白い小花が咲く1月19日の誕生花です。花言葉は「殊勝」。しなやかな枝ぶりが特徴です。</p>
+    <h1>1月19日の誕生花はストック（八重）<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ストック（八重）は、幾重にも重なる花びらの花を穂状に咲かせる1月19日の誕生花です。花言葉は「永遠の美」。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ユキヤナギ</dd>
-    <dt>花言葉</dt><dd>殊勝</dd>
-    <dt>科名</dt><dd>バラ科</dd>
-    <dt>見頃</dt><dd>3月〜4月</dd>
+    <dt>花名</dt><dd>ストック（八重）</dd>
+    <dt>花言葉</dt><dd>永遠の美</dd>
+    <dt>科名</dt><dd>アブラナ科</dd>
+    <dt>見頃</dt><dd>-</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ユキヤナギとは</a></li>
-      <li><a href="#meaning">ユキヤナギが象徴する意味</a></li>
-      <li><a href="#charm">ユキヤナギの魅力</a></li>
+      <li><a href="#about">ストック（八重）とは</a></li>
+      <li><a href="#meaning">ストック（八重）が象徴する意味</a></li>
+      <li><a href="#charm">ストック（八重）の魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ユキヤナギとは</h2>
-    <p>ユキヤナギは、バラ科の落葉低木で、1月19日の誕生花として知られています。春に細い枝いっぱいに白い小花を咲かせる姿が、雪が積もったように、また柳のようにしなやかに見えることからこの名がつけられました。</p>
+    <h2>ストック（八重）とは</h2>
+    <p>ストック（八重）は、アブラナ科の一年草で、1月19日の誕生花として知られています。幾重にも重なる花びらの花を穂状に咲かせ、そのボリューム感ある姿から花束やアレンジメントにも人気です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ユキヤナギが象徴する意味</h2>
-    <p>ユキヤナギの花言葉は「殊勝」です。細い枝にたくさんの小さな花を健気に咲かせるその姿から、ひたむきで感心な心がけを象徴する花とされてきました。</p>
+    <h2>ストック（八重）が象徴する意味</h2>
+    <p>ストック（八重）の花言葉は「永遠の美」です。幾重にも重なる花びらが長く咲き続けるその姿から、色あせない美しさを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ユキヤナギの魅力</h2>
-    <p>ユキヤナギの魅力は、しなやかな枝を雪のように白く覆う無数の小花が織りなす、清らかで軽やかな景色にあります。庭木や生け花としても人気が高く、春の訪れを華やかに告げてくれます。1月19日生まれの方はもちろん、ひたむきな想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>ストック（八重）の魅力</h2>
+    <p>ストック（八重）の魅力は、穂状に連なって咲く花の華やかさと、幾重にも重なる花びらが生み出す豊かなボリューム感にあります。香りも良く、花束の主役としても長く愛されています。1月19日生まれの方はもちろん、変わらぬ美しさを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ユキヤナギは日当たりの良い場所を好み、丈夫で育てやすいため、土の表面が乾いたら水を与える程度で十分育ちます。</p>
+    <p>ストック（八重）は日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月19日生まれの方はもちろん、ひたむきな気持ちを伝えたい贈り物としてもユキヤナギは人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月19日生まれの方はもちろん、変わらぬ美しさを伝えたい贈り物としてもストック（八重）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギはなぜこの名前がついたのですか？</div>
-        <div class="faq-a">白い小花が枝を雪のように覆う様子と、柳のようにしなやかな枝ぶりに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストック（八重）はどんな香りがしますか？</div>
+        <div class="faq-a">甘く優しい香りを漂わせ、花束やアレンジメントでも人気があります。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「殊勝」という花言葉は、細い枝に健気に小花を咲かせる姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストック（八重）の花言葉の由来は何ですか？</div>
+        <div class="faq-a">「永遠の美」という花言葉は、幾重にも重なる花びらが長く咲き続ける姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギはどのくらいの大きさになりますか？</div>
-        <div class="faq-a">一般的には1〜2メートル程度の低木で、庭木としても育てやすいサイズです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストックの「八重」とはどういう意味ですか？</div>
+        <div class="faq-a">花びらが幾重にも重なって咲く品種を指し、通常のストックよりも華やかでボリュームのある花姿になります。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ユキヤナギは雪のように白い小花が咲く、1月19日の誕生花</li>
-      <li>花言葉は「殊勝」、健気でひたむきな心を象徴する花とされる</li>
-      <li>しなやかな枝と無数の小花が織りなす景色が魅力</li>
-      <li>丈夫で育てやすく、日当たりの良い場所を好む</li>
+      <li>ストック（八重）は花びらが幾重にも重なる、1月19日の誕生花</li>
+      <li>花言葉は「永遠の美」、色あせない美しさを象徴する花とされる</li>
+      <li>穂状に咲く華やかさと良い香りが魅力</li>
+      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0118/';
-  $prevTitle = '1月18日の誕生花（プリムラ）とは';
+  $prevTitle = '1月18日の誕生花（グズマニア）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0120/';
-  $nextTitle = '1月20日の誕生花（キンセンカ）とは';
+  $nextTitle = '1月20日の誕生花（スイートピー）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

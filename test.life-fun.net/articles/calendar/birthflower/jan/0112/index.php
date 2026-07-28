@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0112/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月12日の誕生花スイートアリッサムの花言葉・特徴・魅力をわかりやすく解説。「優美」を象徴する花の意味を紹介します。">
-  <title>1月12日の誕生花はスイートアリッサム｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月12日の誕生花カンツバキの花言葉・特徴・魅力をわかりやすく解説。「謙譲」を象徴する寒椿の意味を紹介します。">
+  <title>1月12日の誕生花はカンツバキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スイートアリッサムの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"甘い香りを意味する「スイート」と、ギリシャ語で「怒りを鎮める」という意味を持つ「アリッサム」に由来するとされています。"}},
-      {"@type":"Question","name":"スイートアリッサムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「優美」という花言葉は、小花が群れ咲く優しい雰囲気に由来するとされています。"}},
-      {"@type":"Question","name":"スイートアリッサムはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりと風通しの良い場所を好み、初心者でも育てやすい花として人気があります。"}}
+      {"@type":"Question","name":"カンツバキはなぜ「寒椿」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"冬の寒い時期に花を咲かせることから、寒椿という別名で親しまれています。"}},
+      {"@type":"Question","name":"カンツバキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「謙譲」という花言葉は、派手さを抑えた控えめな花姿に由来するとされています。"}},
+      {"@type":"Question","name":"カンツバキとツバキは違う花ですか？","acceptedAnswer":{"@type":"Answer","text":"カンツバキはツバキとサザンカの交配によって生まれたとされる園芸品種で、冬に咲く点が特徴です。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月12日の誕生花（スイートアリッサム）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0112/"}
+      {"@type":"ListItem","position":6,"name":"1月12日の誕生花（カンツバキ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0112/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月12日の誕生花（スイートアリッサム）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月12日の誕生花（カンツバキ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 12 · 誕生花</span>
-    <h1>1月12日の誕生花はスイートアリッサム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スイートアリッサムは、小さな花が群れ咲く1月12日の誕生花です。花言葉は「優美」。甘い香りが特徴です。</p>
+    <h1>1月12日の誕生花はカンツバキ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">カンツバキは、冬に赤い花を咲かせる1月12日の誕生花です。花言葉は「謙譲」。寒椿とも呼ばれる花木です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>スイートアリッサム</dd>
-    <dt>花言葉</dt><dd>優美</dd>
-    <dt>科名</dt><dd>アブラナ科</dd>
-    <dt>見頃</dt><dd>3〜5月・9〜11月</dd>
+    <dt>花名</dt><dd>カンツバキ</dd>
+    <dt>花言葉</dt><dd>謙譲</dd>
+    <dt>科名</dt><dd>ツバキ科</dd>
+    <dt>見頃</dt><dd>冬</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スイートアリッサムとは</a></li>
-      <li><a href="#meaning">スイートアリッサムが象徴する意味</a></li>
-      <li><a href="#charm">スイートアリッサムの魅力</a></li>
+      <li><a href="#about">カンツバキとは</a></li>
+      <li><a href="#meaning">カンツバキが象徴する意味</a></li>
+      <li><a href="#charm">カンツバキの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スイートアリッサムとは</h2>
-    <p>スイートアリッサムは、アブラナ科の一年草で、1月12日の誕生花として知られています。小さな十字形の花を株いっぱいに咲かせ、甘い香りを漂わせることからこの名がつけられました。</p>
+    <h2>カンツバキとは</h2>
+    <p>カンツバキは、ツバキ科の常緑低木で、1月12日の誕生花として知られています。冬に赤い花を咲かせることから「寒椿」とも呼ばれ、寒さの中でも彩りを添えてくれる花木です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>スイートアリッサムが象徴する意味</h2>
-    <p>スイートアリッサムの花言葉は「優美」です。小さな花が群れ咲く姿が織りなす優しい雰囲気から、上品で美しい佇まいを象徴する花とされてきました。</p>
+    <h2>カンツバキが象徴する意味</h2>
+    <p>カンツバキの花言葉は「謙譲」です。派手さを抑えた控えめな花姿から、へりくだる心や謙虚さを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>スイートアリッサムの魅力</h2>
-    <p>スイートアリッサムの魅力は、こんもりと株を覆うように咲く小花の可憐さと、ほのかに漂う甘い香りにあります。花壇の縁取りや寄せ植えにもよく使われ、控えめながら華やかさを添えてくれる存在です。1月12日生まれの方はもちろん、上品な印象を伝えたい贈り物にもふさわしい花です。</p>
+    <h2>カンツバキの魅力</h2>
+    <p>カンツバキの魅力は、冬の寒さの中で凛と咲く赤い花と、艶やかな緑の葉との対比にあります。生垣や庭木としても人気が高く、冬の景色に落ち着いた彩りを添えてくれます。1月12日生まれの方はもちろん、謙虚な心を伝えたい贈り物にもふさわしい花木です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>スイートアリッサムは日当たりと水はけの良い場所を好み、蒸れに弱いため風通しを良くして育てるのがおすすめです。</p>
+    <p>カンツバキは日当たりから半日陰まで幅広く育ち、丈夫で育てやすい花木です。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月12日生まれの方はもちろん、上品な魅力を伝えたい贈り物としてもスイートアリッサムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月12日生まれの方はもちろん、謙虚な心を伝えたい贈り物としてもカンツバキは親しまれています。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイートアリッサムの名前の由来は何ですか？</div>
-        <div class="faq-a">甘い香りを意味する「スイート」と、ギリシャ語で「怒りを鎮める」という意味を持つ「アリッサム」に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カンツバキはなぜ「寒椿」と呼ばれるのですか？</div>
+        <div class="faq-a">冬の寒い時期に花を咲かせることから、寒椿という別名で親しまれています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイートアリッサムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「優美」という花言葉は、小花が群れ咲く優しい雰囲気に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カンツバキの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「謙譲」という花言葉は、派手さを抑えた控えめな花姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイートアリッサムはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりと風通しの良い場所を好み、初心者でも育てやすい花として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カンツバキとツバキは違う花ですか？</div>
+        <div class="faq-a">カンツバキはツバキとサザンカの交配によって生まれたとされる園芸品種で、冬に咲く点が特徴です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>スイートアリッサムは小花が群れ咲く、1月12日の誕生花</li>
-      <li>花言葉は「優美」、上品な佇まいを象徴する花とされる</li>
-      <li>甘い香りと可憐な花姿が魅力</li>
-      <li>蒸れに弱いため、風通しの良い場所で育てたい</li>
+      <li>カンツバキは冬に赤い花を咲かせる、1月12日の誕生花</li>
+      <li>花言葉は「謙譲」、控えめな心を象徴する花とされる</li>
+      <li>艶やかな葉との対比が美しい</li>
+      <li>丈夫で育てやすい花木</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0111/';
-  $prevTitle = '1月11日の誕生花（ミスミソウ）とは';
+  $prevTitle = '1月11日の誕生花（コチョウラン）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0113/';
-  $nextTitle = '1月13日の誕生花（カトレア）とは';
+  $nextTitle = '1月13日の誕生花（マンサク）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

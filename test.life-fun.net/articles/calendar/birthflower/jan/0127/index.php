@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0127/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月27日の誕生花プルメリアの花言葉・特徴・魅力をわかりやすく解説。「気品」を象徴する南国の花の意味を紹介します。">
-  <title>1月27日の誕生花はプルメリア｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月27日の誕生花マダガスカルジャスミンの花言葉・特徴・魅力をわかりやすく解説。「自意識」を象徴する花の意味を紹介します。">
+  <title>1月27日の誕生花はマダガスカルジャスミン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"プルメリアはなぜハワイのレイに使われるのですか？","acceptedAnswer":{"@type":"Answer","text":"甘く上品な香りと鮮やかな花色が、歓迎の気持ちを表すレイにふさわしいとされ、広く使われるようになりました。"}},
-      {"@type":"Question","name":"プルメリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「気品」という花言葉は、優雅な花びらと上品な香りに由来するとされています。"}},
-      {"@type":"Question","name":"プルメリアは日本でも育てられますか？","acceptedAnswer":{"@type":"Answer","text":"寒さに弱いため、冬は室内で管理するなど工夫すれば日本でも育てることができます。"}}
+      {"@type":"Question","name":"マダガスカルジャスミンはジャスミンの仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"名前にジャスミンとありますが、キョウチクトウ科でジャスミン（モクセイ科）とは別の植物です。香りが似ていることからこの名がつけられました。"}},
+      {"@type":"Question","name":"マダガスカルジャスミンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「自意識」という花言葉は、清らかな白い花が凛とした存在感を放つ姿に由来するとされています。"}},
+      {"@type":"Question","name":"マダガスカルジャスミンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、香りのよい白い花を咲かせます。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月27日の誕生花（プルメリア）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0127/"}
+      {"@type":"ListItem","position":6,"name":"1月27日の誕生花（マダガスカルジャスミン）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0127/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月27日の誕生花（プルメリア）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月27日の誕生花（マダガスカルジャスミン）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 27 · 誕生花</span>
-    <h1>1月27日の誕生花はプルメリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">プルメリアは、南国を象徴する1月27日の誕生花です。花言葉は「気品」。ハワイのレイなどにも使われる香り高い花です。</p>
+    <h1>1月27日の誕生花はマダガスカルジャスミン<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">マダガスカルジャスミンは、香りのよい白い花を咲かせる1月27日の誕生花です。花言葉は「自意識」。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>プルメリア</dd>
-    <dt>花言葉</dt><dd>気品</dd>
+    <dt>花名</dt><dd>マダガスカルジャスミン</dd>
+    <dt>花言葉</dt><dd>自意識</dd>
     <dt>科名</dt><dd>キョウチクトウ科</dd>
-    <dt>見頃</dt><dd>夏</dd>
+    <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">プルメリアとは</a></li>
-      <li><a href="#meaning">プルメリアが象徴する意味</a></li>
-      <li><a href="#charm">プルメリアの魅力</a></li>
+      <li><a href="#about">マダガスカルジャスミンとは</a></li>
+      <li><a href="#meaning">マダガスカルジャスミンが象徴する意味</a></li>
+      <li><a href="#charm">マダガスカルジャスミンの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>プルメリアとは</h2>
-    <p>プルメリアは、キョウチクトウ科の落葉低木で、1月27日の誕生花として知られています。南国を象徴する花として知られ、甘く上品な香りを漂わせることから、ハワイのレイなどにも使われています。</p>
+    <h2>マダガスカルジャスミンとは</h2>
+    <p>マダガスカルジャスミンは、キョウチクトウ科のつる性植物で、1月27日の誕生花として知られています。初夏に香りのよい白い花を咲かせ、ジャスミンに似た甘い香りから観賞用として人気があります。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>プルメリアが象徴する意味</h2>
-    <p>プルメリアの花言葉は「気品」です。優雅な花びらの重なりと、漂う上品な香りから、洗練された美しさを象徴する花とされてきました。</p>
+    <h2>マダガスカルジャスミンが象徴する意味</h2>
+    <p>マダガスカルジャスミンの花言葉は「自意識」です。清らかな白い花が凛とした存在感を放つ姿から、自分自身を大切にする心を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>プルメリアの魅力</h2>
-    <p>プルメリアの魅力は、南国らしい鮮やかな色合いと、心を和ませる甘く優雅な香りにあります。リゾート地を思わせるその存在感は、贈り物としても特別感を演出してくれます。1月27日生まれの方はもちろん、上品な魅力を伝えたい贈り物にもふさわしい花です。</p>
+    <h2>マダガスカルジャスミンの魅力</h2>
+    <p>マダガスカルジャスミンの魅力は、星形の清らかな白い花と、あたりに漂う甘く上品な香りにあります。つる性のためアーチやフェンスに絡ませて育てられることも多く、初夏の庭に爽やかな彩りを添えてくれます。1月27日生まれの方はもちろん、自分らしさを大切にする方への贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>プルメリアは日当たりと温かさを好むため、寒さに当てないよう管理し、冬は水やりを控えめにするのがおすすめです。</p>
+    <p>マダガスカルジャスミンは日当たりの良い場所を好み、つるを伸ばして育つため、支柱やフェンスを用意して育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月27日生まれの方はもちろん、上品な魅力を伝えたい贈り物としてもプルメリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月27日生まれの方はもちろん、自分らしさを大切にする方への贈り物としてもマダガスカルジャスミンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プルメリアはなぜハワイのレイに使われるのですか？</div>
-        <div class="faq-a">甘く上品な香りと鮮やかな花色が、歓迎の気持ちを表すレイにふさわしいとされ、広く使われるようになりました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マダガスカルジャスミンはジャスミンの仲間ですか？</div>
+        <div class="faq-a">名前にジャスミンとありますが、キョウチクトウ科でジャスミン（モクセイ科）とは別の植物です。香りが似ていることからこの名がつけられました。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プルメリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「気品」という花言葉は、優雅な花びらと上品な香りに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マダガスカルジャスミンの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「自意識」という花言葉は、清らかな白い花が凛とした存在感を放つ姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プルメリアは日本でも育てられますか？</div>
-        <div class="faq-a">寒さに弱いため、冬は室内で管理するなど工夫すれば日本でも育てることができます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マダガスカルジャスミンはいつ頃咲きますか？</div>
+        <div class="faq-a">初夏に、香りのよい白い花を咲かせます。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>プルメリアは南国を象徴する、1月27日の誕生花</li>
-      <li>花言葉は「気品」、洗練された美しさを象徴する花とされる</li>
-      <li>甘く優雅な香りと鮮やかな色合いが魅力</li>
-      <li>寒さに弱いため、冬は水やりを控えめに管理したい</li>
+      <li>マダガスカルジャスミンは初夏に白い花を咲かせる、1月27日の誕生花</li>
+      <li>花言葉は「自意識」、凛とした存在感を象徴する花とされる</li>
+      <li>甘く上品な香りが魅力</li>
+      <li>つる性のため支柱やフェンスを用意して育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0126/';
-  $prevTitle = '1月26日の誕生花（アマリリス）とは';
+  $prevTitle = '1月26日の誕生花（ピグミーランタン）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0128/';
-  $nextTitle = '1月28日の誕生花（ネモフィラ）とは';
+  $nextTitle = '1月28日の誕生花（キンギョソウ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

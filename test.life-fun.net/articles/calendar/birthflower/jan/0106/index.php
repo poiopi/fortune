@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0106/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月6日の誕生花マンサクの花言葉・特徴・魅力をわかりやすく解説。「ひらめき」を象徴する花の意味と由来を紹介します。">
-  <title>1月6日の誕生花はマンサク｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月6日の誕生花カーネーション（ピンク）の花言葉・特徴・魅力をわかりやすく解説。「熱愛」を象徴する花の意味を紹介します。">
+  <title>1月6日の誕生花はカーネーション（ピンク）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マンサクの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"早春に他の花より先駆けて咲くことから「まず咲く」が転じたという説や、枝いっぱいに花をつける様子から「豊年満作」に由来するという説があります。"}},
-      {"@type":"Question","name":"マンサクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ひらめき」という花言葉は、他の花に先駆けて突然咲く姿が、新しい発想の訪れを思わせることに由来するとされています。"}},
-      {"@type":"Question","name":"マンサクはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"代表的なのは黄色ですが、赤やオレンジ色の品種もあります。"}}
+      {"@type":"Question","name":"カーネーションの色によって花言葉は違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、ピンクは「熱愛」を表すとされています。"}},
+      {"@type":"Question","name":"カーネーション（ピンク）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「熱愛」という花言葉は、幾重にも重なる花びらが生み出す華やかさと鮮やかなピンク色に由来するとされています。"}},
+      {"@type":"Question","name":"カーネーションはなぜ贈り物によく選ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"優しい花姿と豊富な色合いから、感謝や愛情を伝える贈り物として古くから親しまれてきました。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月6日の誕生花（マンサク）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0106/"}
+      {"@type":"ListItem","position":6,"name":"1月6日の誕生花（カーネーション）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0106/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月6日の誕生花（マンサク）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月6日の誕生花（カーネーション）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 6 · 誕生花</span>
-    <h1>1月6日の誕生花はマンサク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マンサクは、他の花に先駆けて咲く1月6日の誕生花です。花言葉は「ひらめき」。細く縮れた独特な花びらが特徴です。</p>
+    <h1>1月6日の誕生花はカーネーション（ピンク）<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">カーネーション（ピンク）は、幾重にも重なる花びらが特徴の1月6日の誕生花です。花言葉は「熱愛」。優しい印象のピンク色が魅力です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>マンサク</dd>
-    <dt>花言葉</dt><dd>ひらめき</dd>
-    <dt>科名</dt><dd>マンサク科</dd>
-    <dt>見頃</dt><dd>2月〜3月</dd>
+    <dt>花名</dt><dd>カーネーション（ピンク）</dd>
+    <dt>花言葉</dt><dd>熱愛</dd>
+    <dt>科名</dt><dd>ナデシコ科</dd>
+    <dt>見頃</dt><dd>-</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マンサクとは</a></li>
-      <li><a href="#meaning">マンサクが象徴する意味</a></li>
-      <li><a href="#charm">マンサクの魅力</a></li>
+      <li><a href="#about">カーネーション（ピンク）とは</a></li>
+      <li><a href="#meaning">カーネーション（ピンク）が象徴する意味</a></li>
+      <li><a href="#charm">カーネーション（ピンク）の魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マンサクとは</h2>
-    <p>マンサクは、マンサク科の落葉小高木で、1月6日の誕生花として知られています。早春、他の花に先駆けて、細長いリボン状の花びらを持つ黄色い花を咲かせることから、「まず咲く」が転じて名付けられたという説があります。</p>
+    <h2>カーネーション（ピンク）とは</h2>
+    <p>カーネーション（ピンク）は、ナデシコ科の多年草で、1月6日の誕生花として知られています。幾重にも重なる花びらが咲かせる優しいピンク色の花で、母の日の贈り物としても広く親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>マンサクが象徴する意味</h2>
-    <p>マンサクの花言葉は「ひらめき」です。他の花よりも早く、まるで何かを思いついたかのように突然花を咲かせるその姿から、新しい発想やひらめきを象徴する花とされてきました。</p>
+    <h2>カーネーション（ピンク）が象徴する意味</h2>
+    <p>カーネーション（ピンク）の花言葉は「熱愛」です。幾重にも重なり合う花びらが生み出す華やかさと、鮮やかなピンク色から、深く熱い想いを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>マンサクの魅力</h2>
-    <p>マンサクの魅力は、細く縮れたリボンのような独特な花びらの形と、春を告げる黄色い彩りにあります。まだ寒さの残る時期に、いち早く咲くその姿は、新しいアイデアの訪れを予感させてくれます。1月6日生まれの方はもちろん、新しい発想を後押ししたい贈り物にもふさわしい花です。</p>
+    <h2>カーネーション（ピンク）の魅力</h2>
+    <p>カーネーション（ピンク）の魅力は、幾重にも重なる花びらが作る優しく柔らかな印象と、見る人の心を和ませるピンク色にあります。花束やアレンジメントの定番としても長く愛されている花です。1月6日生まれの方はもちろん、熱い想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>マンサクは日当たりの良い場所を好み、乾燥しすぎない程度に土の湿り気を保つのがおすすめです。</p>
+    <p>カーネーションは日当たりと風通しの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月6日生まれの方はもちろん、新しい発想を応援したい贈り物としてもマンサクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月6日生まれの方はもちろん、熱い想いを伝えたい贈り物としてもカーネーションは定番の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンサクの名前の由来は何ですか？</div>
-        <div class="faq-a">早春に他の花より先駆けて咲くことから「まず咲く」が転じたという説や、枝いっぱいに花をつける様子から「豊年満作」に由来するという説があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーションの色によって花言葉は違いますか？</div>
+        <div class="faq-a">はい、色によって花言葉が異なり、ピンクは「熱愛」を表すとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンサクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「ひらめき」という花言葉は、他の花に先駆けて突然咲く姿が、新しい発想の訪れを思わせることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（ピンク）の花言葉の由来は何ですか？</div>
+        <div class="faq-a">「熱愛」という花言葉は、幾重にも重なる花びらが生み出す華やかさと鮮やかなピンク色に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンサクはどんな色の花を咲かせますか？</div>
-        <div class="faq-a">代表的なのは黄色ですが、赤やオレンジ色の品種もあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーションはなぜ贈り物によく選ばれるのですか？</div>
+        <div class="faq-a">優しい花姿と豊富な色合いから、感謝や愛情を伝える贈り物として古くから親しまれてきました。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>マンサクは春に先駆けて咲く、1月6日の誕生花</li>
-      <li>花言葉は「ひらめき」、新しい発想を象徴する花とされる</li>
-      <li>独特なリボン状の花びらが魅力</li>
-      <li>日当たりの良い場所で、適度な湿り気を保って育てたい</li>
+      <li>カーネーション（ピンク）は幾重にも花びらが重なる、1月6日の誕生花</li>
+      <li>花言葉は「熱愛」、深く熱い想いを象徴する花とされる</li>
+      <li>優しく柔らかな花姿が魅力</li>
+      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0105/';
-  $prevTitle = '1月5日の誕生花（ミスミソウ）とは';
+  $prevTitle = '1月5日の誕生花（ラッパスイセン）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0107/';
-  $nextTitle = '1月7日の誕生花（セリ）とは';
+  $nextTitle = '1月7日の誕生花（アッツザクラ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

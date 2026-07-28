@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0129/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月29日の誕生花ラナンキュラスの花言葉・特徴・魅力をわかりやすく解説。「とても魅力的」を象徴する花の意味を紹介します。">
-  <title>1月29日の誕生花はラナンキュラス｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月29日の誕生花スミレの花言葉・特徴・魅力をわかりやすく解説。「誠実な愛」を象徴する野の花の意味を紹介します。">
+  <title>1月29日の誕生花はスミレ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ラナンキュラスの花びらはなぜあんなに多いのですか？","acceptedAnswer":{"@type":"Answer","text":"品種改良によって花びらの数が増え、幾重にも重なる豪華な八重咲きが生まれたとされています。"}},
-      {"@type":"Question","name":"ラナンキュラスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「とても魅力的」という花言葉は、幾重にも重なる花びらが生み出す華やかさに由来するとされています。"}},
-      {"@type":"Question","name":"ラナンキュラスはどんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"白・ピンク・赤・オレンジ・紫など非常に豊富な色合いがあります。"}}
+      {"@type":"Question","name":"スミレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、小さく紫色の花を咲かせます。"}},
+      {"@type":"Question","name":"スミレの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「誠実な愛」という花言葉は、小さくも変わらず毎年花を咲かせる姿に由来するとされています。"}},
+      {"@type":"Question","name":"スミレはどんな場所で見られますか？","acceptedAnswer":{"@type":"Answer","text":"日本各地の野山や道端など、身近な場所に自生していることが多い植物です。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月29日の誕生花（ラナンキュラス）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0129/"}
+      {"@type":"ListItem","position":6,"name":"1月29日の誕生花（スミレ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0129/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月29日の誕生花（ラナンキュラス）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月29日の誕生花（スミレ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 29 · 誕生花</span>
-    <h1>1月29日の誕生花はラナンキュラス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ラナンキュラスは、幾重にも重なる花びらが特徴の1月29日の誕生花です。花言葉は「とても魅力的」。</p>
+    <h1>1月29日の誕生花はスミレ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">スミレは、日本各地の野山に自生する1月29日の誕生花です。花言葉は「誠実な愛」。控えめで可憐な野の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ラナンキュラス</dd>
-    <dt>花言葉</dt><dd>とても魅力的</dd>
-    <dt>科名</dt><dd>キンポウゲ科</dd>
-    <dt>見頃</dt><dd>2月〜4月</dd>
+    <dt>花名</dt><dd>スミレ</dd>
+    <dt>花言葉</dt><dd>誠実な愛</dd>
+    <dt>科名</dt><dd>スミレ科</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ラナンキュラスとは</a></li>
-      <li><a href="#meaning">ラナンキュラスが象徴する意味</a></li>
-      <li><a href="#charm">ラナンキュラスの魅力</a></li>
+      <li><a href="#about">スミレとは</a></li>
+      <li><a href="#meaning">スミレが象徴する意味</a></li>
+      <li><a href="#charm">スミレの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ラナンキュラスとは</h2>
-    <p>ラナンキュラスは、キンポウゲ科の多年草で、1月29日の誕生花として知られています。幾重にも重なる薄い花びらが特徴で、まるでバラのような華やかさを持つことから、春の切り花として高い人気を誇ります。</p>
+    <h2>スミレとは</h2>
+    <p>スミレは、スミレ科の多年草で、1月29日の誕生花として知られています。春に小さく紫色の花を咲かせる、日本各地の野山にも自生する身近な花で、控えめながらも凛とした佇まいで親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ラナンキュラスが象徴する意味</h2>
-    <p>ラナンキュラスの花言葉は「とても魅力的」です。幾重にも重なり合う花びらが生み出す華やかさと柔らかさから、人を惹きつける魅力を象徴する花とされてきました。</p>
+    <h2>スミレが象徴する意味</h2>
+    <p>スミレの花言葉は「誠実な愛」です。小さくも変わらず毎年花を咲かせるその姿から、飾らず一途に想い続ける愛情を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ラナンキュラスの魅力</h2>
-    <p>ラナンキュラスの魅力は、薄い花びらが幾重にも重なり合って作る、ボリューム感あふれる華やかな花姿にあります。パステルカラーから鮮やかな色まで幅広い色合いも楽しめ、贈り物としても人気です。1月29日生まれの方はもちろん、魅力的な人柄を称えたい贈り物にもふさわしい花です。</p>
+    <h2>スミレの魅力</h2>
+    <p>スミレの魅力は、控えめで可憐な紫の花と、素朴で飾らない野の花らしい佇まいにあります。派手さはありませんが、見る人の心にじんわりと寄り添う優しさを感じさせてくれます。1月29日生まれの方はもちろん、誠実な想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ラナンキュラスは涼しく日当たりの良い環境を好み、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
+    <p>スミレは半日陰でも育ちやすく、土の表面が乾いたらたっぷり水を与えるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月29日生まれの方はもちろん、魅力的な人への贈り物としてもラナンキュラスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月29日生まれの方はもちろん、誠実な想いを伝えたい贈り物としてもスミレは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスの花びらはなぜあんなに多いのですか？</div>
-        <div class="faq-a">品種改良によって花びらの数が増え、幾重にも重なる豪華な八重咲きが生まれたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スミレはいつ頃咲きますか？</div>
+        <div class="faq-a">春に、小さく紫色の花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「とても魅力的」という花言葉は、幾重にも重なる花びらが生み出す華やかさに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スミレの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「誠実な愛」という花言葉は、小さくも変わらず毎年花を咲かせる姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスはどんな色がありますか？</div>
-        <div class="faq-a">白・ピンク・赤・オレンジ・紫など非常に豊富な色合いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スミレはどんな場所で見られますか？</div>
+        <div class="faq-a">日本各地の野山や道端など、身近な場所に自生していることが多い植物です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ラナンキュラスは幾重にも花びらが重なる、1月29日の誕生花</li>
-      <li>花言葉は「とても魅力的」、人を惹きつける魅力を象徴する花とされる</li>
-      <li>ボリューム感あふれる華やかな花姿が魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>スミレは春に紫の花を咲かせる、1月29日の誕生花</li>
+      <li>花言葉は「誠実な愛」、一途な想いを象徴する花とされる</li>
+      <li>控えめで可憐な野の花の佇まいが魅力</li>
+      <li>半日陰でも育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0128/';
-  $prevTitle = '1月28日の誕生花（ネモフィラ）とは';
+  $prevTitle = '1月28日の誕生花（キンギョソウ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0130/';
-  $nextTitle = '1月30日の誕生花（ムスカリ）とは';
+  $nextTitle = '1月30日の誕生花（サクラソウ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

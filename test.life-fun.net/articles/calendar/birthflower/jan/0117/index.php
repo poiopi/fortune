@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0117/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月17日の誕生花コチョウランの花言葉・特徴・魅力をわかりやすく解説。「幸福が飛んでくる」を象徴する花の意味を紹介します。">
-  <title>1月17日の誕生花はコチョウラン｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月17日の誕生花スイカズラの花言葉・特徴・魅力をわかりやすく解説。「愛の絆」を象徴する花木の意味を紹介します。">
+  <title>1月17日の誕生花はスイカズラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コチョウランはなぜお祝いによく使われるのですか？","acceptedAnswer":{"@type":"Answer","text":"「幸福が飛んでくる」という花言葉と、長く花が咲き続ける縁起の良さから、開店祝いなどの贈り物に選ばれています。"}},
-      {"@type":"Question","name":"コチョウランの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"蝶が舞うような優美な花姿が、幸せが舞い込む様子を連想させることに由来するとされています。"}},
-      {"@type":"Question","name":"コチョウランはどのくらい花が持ちますか？","acceptedAnswer":{"@type":"Answer","text":"管理次第では1〜2ヶ月以上、長いものでは半年近く花を楽しめることもあります。"}}
+      {"@type":"Question","name":"スイカズラはなぜ花の色が変わるのですか？","acceptedAnswer":{"@type":"Answer","text":"咲き始めは白く、時間が経つにつれて黄色へと変化する性質があります。"}},
+      {"@type":"Question","name":"スイカズラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛の絆」という花言葉は、つるを絡ませながら共に育つ姿に由来するとされています。"}},
+      {"@type":"Question","name":"スイカズラはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"甘く優しい香りを漂わせ、初夏の庭を心地よく彩ります。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月17日の誕生花（コチョウラン）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0117/"}
+      {"@type":"ListItem","position":6,"name":"1月17日の誕生花（スイカズラ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0117/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月17日の誕生花（コチョウラン）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月17日の誕生花（スイカズラ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 17 · 誕生花</span>
-    <h1>1月17日の誕生花はコチョウラン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コチョウランは、蝶が舞うような優美な花姿の1月17日の誕生花です。花言葉は「幸福が飛んでくる」。贈答用の花としても親しまれています。</p>
+    <h1>1月17日の誕生花はスイカズラ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">スイカズラは、白から黄色へ花色を変える1月17日の誕生花です。花言葉は「愛の絆」。甘い香りが漂う優しい印象の花木です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>コチョウラン</dd>
-    <dt>花言葉</dt><dd>幸福が飛んでくる</dd>
-    <dt>科名</dt><dd>ラン科</dd>
-    <dt>見頃</dt><dd>通年</dd>
+    <dt>花名</dt><dd>スイカズラ</dd>
+    <dt>花言葉</dt><dd>愛の絆</dd>
+    <dt>科名</dt><dd>スイカズラ科</dd>
+    <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コチョウランとは</a></li>
-      <li><a href="#meaning">コチョウランが象徴する意味</a></li>
-      <li><a href="#charm">コチョウランの魅力</a></li>
+      <li><a href="#about">スイカズラとは</a></li>
+      <li><a href="#meaning">スイカズラが象徴する意味</a></li>
+      <li><a href="#charm">スイカズラの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コチョウランとは</h2>
-    <p>コチョウランは、ラン科の着生植物で、1月17日の誕生花として知られています。蝶が舞うような優美な花姿から「胡蝶蘭」と名付けられ、贈答用の花としても広く親しまれています。</p>
+    <h2>スイカズラとは</h2>
+    <p>スイカズラは、スイカズラ科のつる性低木で、1月17日の誕生花として知られています。初夏に白い花を咲かせ、その後黄色へと色を変えながら甘い香りを漂わせる、優しい印象の花木です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>コチョウランが象徴する意味</h2>
-    <p>コチョウランの花言葉は「幸福が飛んでくる」です。蝶のように舞う花姿から、幸せが舞い込んでくることを願う縁起の良い花とされ、開店祝いや就任祝いなどにも選ばれています。</p>
+    <h2>スイカズラが象徴する意味</h2>
+    <p>スイカズラの花言葉は「愛の絆」です。つるを絡ませながら共に育つその姿から、寄り添い結びつく愛情や絆を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>コチョウランの魅力</h2>
-    <p>コチョウランの魅力は、蝶が羽ばたくような優雅な花姿と、長期間咲き続ける美しさにあります。気品があり格式高い印象を与えることから、特別な贈り物として長く選ばれ続けています。1月17日生まれの方はもちろん、幸せを願う贈り物にもふさわしい花です。</p>
+    <h2>スイカズラの魅力</h2>
+    <p>スイカズラの魅力は、白から黄色へと移ろう花色の変化と、あたりに漂う甘く優しい香りにあります。生垣やフェンスに絡ませて育てられることも多く、初夏の庭に優しい彩りを添えてくれます。1月17日生まれの方はもちろん、絆を伝えたい贈り物にもふさわしい花木です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>コチョウランは直射日光を避けた明るい室内で育て、水は控えめに、乾いてから与えるのがおすすめです。</p>
+    <p>スイカズラは日当たりの良い場所を好み、丈夫でつるを伸ばしながら育つため、支柱やフェンスを用意して育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月17日生まれの方はもちろん、幸せを願う贈り物としてもコチョウランは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月17日生まれの方はもちろん、絆を伝えたい贈り物としてもスイカズラは親しまれています。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウランはなぜお祝いによく使われるのですか？</div>
-        <div class="faq-a">「幸福が飛んでくる」という花言葉と、長く花が咲き続ける縁起の良さから、開店祝いなどの贈り物に選ばれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイカズラはなぜ花の色が変わるのですか？</div>
+        <div class="faq-a">咲き始めは白く、時間が経つにつれて黄色へと変化する性質があります。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウランの花言葉の由来は何ですか？</div>
-        <div class="faq-a">蝶が舞うような優美な花姿が、幸せが舞い込む様子を連想させることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイカズラの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「愛の絆」という花言葉は、つるを絡ませながら共に育つ姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウランはどのくらい花が持ちますか？</div>
-        <div class="faq-a">管理次第では1〜2ヶ月以上、長いものでは半年近く花を楽しめることもあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイカズラはどんな香りがしますか？</div>
+        <div class="faq-a">甘く優しい香りを漂わせ、初夏の庭を心地よく彩ります。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>コチョウランは蝶が舞うような、1月17日の誕生花</li>
-      <li>花言葉は「幸福が飛んでくる」、幸せを呼ぶ縁起の良い花とされる</li>
-      <li>優雅で長持ちする花姿が魅力</li>
-      <li>水は控えめに、乾いてから与えて育てたい</li>
+      <li>スイカズラは初夏に花色を変える、1月17日の誕生花</li>
+      <li>花言葉は「愛の絆」、寄り添う結びつきを象徴する花とされる</li>
+      <li>甘い香りと花色の変化が魅力</li>
+      <li>つる性のため支柱やフェンスを用意して育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0116/';
-  $prevTitle = '1月16日の誕生花（デンドロビウム）とは';
+  $prevTitle = '1月16日の誕生花（オキザリス）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0118/';
-  $nextTitle = '1月18日の誕生花（プリムラ）とは';
+  $nextTitle = '1月18日の誕生花（グズマニア）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

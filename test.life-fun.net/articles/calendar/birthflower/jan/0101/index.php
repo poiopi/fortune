@@ -225,7 +225,7 @@ ob_start();
   $prevUrl   = null;
   $prevTitle = null;
   $nextUrl   = '/articles/calendar/birthflower/jan/0102/';
-  $nextTitle = '1月2日の誕生花（ロウバイ）とは';
+  $nextTitle = '1月2日の誕生花（ハルサザンカ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

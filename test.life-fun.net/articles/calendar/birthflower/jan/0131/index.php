@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0131/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月31日の誕生花クロッカスの花言葉・特徴・魅力をわかりやすく解説。「青春の喜び」を象徴する春告げ花の意味を紹介します。">
-  <title>1月31日の誕生花はクロッカス｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月31日の誕生花ウメ（白）の花言葉・特徴・魅力をわかりやすく解説。「澄んだ心」を象徴する早春の花木の意味を紹介します。">
+  <title>1月31日の誕生花はウメ（白）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クロッカスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"2月から3月頃、雪解けとともに他の花に先駆けて咲きます。"}},
-      {"@type":"Question","name":"クロッカスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「青春の喜び」という花言葉は、長い冬を越えていち早く咲く姿に由来するとされています。"}},
-      {"@type":"Question","name":"クロッカスとサフランは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"近縁の植物ですが別種で、サフランは秋に咲き、香辛料としても利用される点が異なります。"}}
+      {"@type":"Question","name":"ウメ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、まだ寒さの残る時期に白い花を咲かせます。"}},
+      {"@type":"Question","name":"ウメ（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。"}},
+      {"@type":"Question","name":"白いウメと紅いウメは花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月31日の誕生花（クロッカス）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0131/"}
+      {"@type":"ListItem","position":6,"name":"1月31日の誕生花（ウメ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0131/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月31日の誕生花（クロッカス）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月31日の誕生花（ウメ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 31 · 誕生花</span>
-    <h1>1月31日の誕生花はクロッカス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クロッカスは、雪解けとともに咲く1月31日の誕生花です。花言葉は「青春の喜び」。春をいち早く告げる花として親しまれています。</p>
+    <h1>1月31日の誕生花はウメ（白）<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ウメ（白）は、早春に白い花を咲かせる1月31日の誕生花です。花言葉は「澄んだ心」。清楚で凛とした印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>クロッカス</dd>
-    <dt>花言葉</dt><dd>青春の喜び</dd>
-    <dt>科名</dt><dd>アヤメ科</dd>
-    <dt>見頃</dt><dd>2月〜3月</dd>
+    <dt>花名</dt><dd>ウメ（白）</dd>
+    <dt>花言葉</dt><dd>澄んだ心</dd>
+    <dt>科名</dt><dd>バラ科</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クロッカスとは</a></li>
-      <li><a href="#meaning">クロッカスが象徴する意味</a></li>
-      <li><a href="#charm">クロッカスの魅力</a></li>
+      <li><a href="#about">ウメ（白）とは</a></li>
+      <li><a href="#meaning">ウメ（白）が象徴する意味</a></li>
+      <li><a href="#charm">ウメ（白）の魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クロッカスとは</h2>
-    <p>クロッカスは、アヤメ科の球根植物で、1月31日の誕生花として知られています。早春、まだ雪の残る地面から顔を出すように花を咲かせ、春の訪れをいち早く告げる花として親しまれています。</p>
+    <h2>ウメ（白）とは</h2>
+    <p>ウメ（白）は、バラ科の落葉高木で、1月31日の誕生花として知られています。早春、まだ寒さの残る中で白く清楚な花を咲かせ、凛とした美しさから古くから日本で愛されてきた花木です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>クロッカスが象徴する意味</h2>
-    <p>クロッカスの花言葉は「青春の喜び」です。長い冬を越えていち早く咲くその姿から、新しい季節の始まりに湧き上がる若々しい喜びを象徴する花とされてきました。</p>
+    <h2>ウメ（白）が象徴する意味</h2>
+    <p>ウメ（白）の花言葉は「澄んだ心」です。寒さの中でも汚れなく白く咲くその姿から、清らかで澄んだ心を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>クロッカスの魅力</h2>
-    <p>クロッカスの魅力は、地面すれすれに咲く可憐な花と、紫・黄・白など春らしい色合いにあります。庭や花壇に群生して咲く姿は、冬の終わりを告げる小さな喜びを感じさせてくれます。1月31日生まれの方はもちろん、新しい季節の喜びを届けたい贈り物にもふさわしい花です。</p>
+    <h2>ウメ（白）の魅力</h2>
+    <p>ウメ（白）の魅力は、凛とした佇まいで咲く白い花と、あたりに漂うほのかな香りにあります。庭木や盆栽としても長く親しまれ、早春の訪れを清らかに告げてくれます。1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物にもふさわしい花木です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>クロッカスは日当たりの良い場所を好み、丈夫で植えっぱなしでも毎年花を咲かせやすい球根植物です。</p>
+    <p>ウメ（白）は日当たりの良い場所を好み、乾燥に強い一方、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月31日生まれの方はもちろん、新しい始まりの喜びを届けたい贈り物としてもクロッカスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物としてもウメ（白）は人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカスはいつ頃咲きますか？</div>
-        <div class="faq-a">2月から3月頃、雪解けとともに他の花に先駆けて咲きます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）はいつ頃咲きますか？</div>
+        <div class="faq-a">早春、まだ寒さの残る時期に白い花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「青春の喜び」という花言葉は、長い冬を越えていち早く咲く姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）の花言葉の由来は何ですか？</div>
+        <div class="faq-a">「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカスとサフランは同じ花ですか？</div>
-        <div class="faq-a">近縁の植物ですが別種で、サフランは秋に咲き、香辛料としても利用される点が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">白いウメと紅いウメは花言葉が違いますか？</div>
+        <div class="faq-a">はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>クロッカスは雪解けとともに咲く、1月31日の誕生花</li>
-      <li>花言葉は「青春の喜び」、若々しい喜びを象徴する花とされる</li>
-      <li>地面すれすれに咲く可憐な花姿が魅力</li>
-      <li>丈夫で植えっぱなしでも育てやすい</li>
+      <li>ウメ（白）は早春に白い花を咲かせる、1月31日の誕生花</li>
+      <li>花言葉は「澄んだ心」、清らかさを象徴する花とされる</li>
+      <li>凛とした佇まいとほのかな香りが魅力</li>
+      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
     </ul>
   </section>
 
@@ -223,7 +223,7 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0130/';
-  $prevTitle = '1月30日の誕生花（ムスカリ）とは';
+  $prevTitle = '1月30日の誕生花（サクラソウ）とは';
   $nextUrl   = '/articles/calendar/birthflower/feb/0201/';
   $nextTitle = '2月1日の誕生花とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';

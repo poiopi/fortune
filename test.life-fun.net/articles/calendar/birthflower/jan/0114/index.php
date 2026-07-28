@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0114/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月14日の誕生花シクラメンの花言葉・特徴・魅力をわかりやすく解説。「内気」を象徴する冬の花の意味を紹介します。">
-  <title>1月14日の誕生花はシクラメン｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月14日の誕生花ブルーデイジーの花言葉・特徴・魅力をわかりやすく解説。「恵まれて」を象徴する青い花の意味を紹介します。">
+  <title>1月14日の誕生花はブルーデイジー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シクラメンの花が下向きに咲くのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"雨や雪から花粉を守るための自然な適応とされており、独特な優美なシルエットを生み出しています。"}},
-      {"@type":"Question","name":"シクラメンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「内気」という花言葉は、うつむくように下向きに咲く花の姿に由来するとされています。"}},
-      {"@type":"Question","name":"シクラメンはどうやって水やりをすれば良いですか？","acceptedAnswer":{"@type":"Answer","text":"球根に直接水がかからないよう、鉢の縁からそっと与えるのがポイントです。"}}
+      {"@type":"Question","name":"ブルーデイジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から秋にかけて、長期間青い花を咲かせ続けます。"}},
+      {"@type":"Question","name":"ブルーデイジーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恵まれて」という花言葉は、長い期間にわたって次々と花を咲かせる豊かさに由来するとされています。"}},
+      {"@type":"Question","name":"ブルーデイジーはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりと水はけの良い場所を好み、比較的育てやすい花として人気があります。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月14日の誕生花（シクラメン）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0114/"}
+      {"@type":"ListItem","position":6,"name":"1月14日の誕生花（ブルーデイジー）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0114/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月14日の誕生花（シクラメン）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月14日の誕生花（ブルーデイジー）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 14 · 誕生花</span>
-    <h1>1月14日の誕生花はシクラメン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シクラメンは、花びらが反り返る独特な形が特徴の1月14日の誕生花です。花言葉は「内気」。冬の室内を彩る花として親しまれています。</p>
+    <h1>1月14日の誕生花はブルーデイジー<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ブルーデイジーは、澄んだ青色の花を長く咲かせ続ける1月14日の誕生花です。花言葉は「恵まれて」。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>シクラメン</dd>
-    <dt>花言葉</dt><dd>内気</dd>
-    <dt>科名</dt><dd>サクラソウ科</dd>
-    <dt>見頃</dt><dd>11月〜3月</dd>
+    <dt>花名</dt><dd>ブルーデイジー</dd>
+    <dt>花言葉</dt><dd>恵まれて</dd>
+    <dt>科名</dt><dd>キク科</dd>
+    <dt>見頃</dt><dd>春〜秋</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シクラメンとは</a></li>
-      <li><a href="#meaning">シクラメンが象徴する意味</a></li>
-      <li><a href="#charm">シクラメンの魅力</a></li>
+      <li><a href="#about">ブルーデイジーとは</a></li>
+      <li><a href="#meaning">ブルーデイジーが象徴する意味</a></li>
+      <li><a href="#charm">ブルーデイジーの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シクラメンとは</h2>
-    <p>シクラメンは、サクラソウ科の多年草で、1月14日の誕生花として知られています。花びらが反り返るように咲く独特な形が特徴で、冬から早春にかけて色とりどりの花を楽しませてくれます。</p>
+    <h2>ブルーデイジーとは</h2>
+    <p>ブルーデイジーは、キク科の多年草で、1月14日の誕生花として知られています。春から秋にかけて、澄んだ青色の花を長期間咲かせ続けることから、花壇や寄せ植えでも人気の花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>シクラメンが象徴する意味</h2>
-    <p>シクラメンの花言葉は「内気」です。うつむくように下向きに咲く花の姿から、恥ずかしがり屋で控えめな性格を象徴する花とされてきました。</p>
+    <h2>ブルーデイジーが象徴する意味</h2>
+    <p>ブルーデイジーの花言葉は「恵まれて」です。長い期間にわたって次々と花を咲かせる豊かさから、恵まれた環境や幸運を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>シクラメンの魅力</h2>
-    <p>シクラメンの魅力は、反り返った花びらが作る独特の優美なシルエットと、冬の室内を彩る豊富な色合いにあります。鉢植えとして長く楽しめることから、冬の贈り物としても定番の花です。1月14日生まれの方はもちろん、控えめな優しさを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>ブルーデイジーの魅力</h2>
+    <p>ブルーデイジーの魅力は、爽やかな青色の花びらと、デイジーらしい素朴で親しみやすい花姿にあります。長期間咲き続けることから、庭を彩り続けてくれる頼もしい存在です。1月14日生まれの方はもちろん、恵まれた日々への感謝を伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>シクラメンは涼しい環境を好み、球根に水がかからないよう、鉢の縁からそっと水を与えるのがおすすめです。</p>
+    <p>ブルーデイジーは日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月14日生まれの方はもちろん、冬の贈り物としてもシクラメンは定番の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月14日生まれの方はもちろん、恵まれた日々への感謝を伝えたい贈り物としてもブルーデイジーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シクラメンの花が下向きに咲くのはなぜですか？</div>
-        <div class="faq-a">雨や雪から花粉を守るための自然な適応とされており、独特な優美なシルエットを生み出しています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーはいつ頃咲きますか？</div>
+        <div class="faq-a">春から秋にかけて、長期間青い花を咲かせ続けます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シクラメンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「内気」という花言葉は、うつむくように下向きに咲く花の姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「恵まれて」という花言葉は、長い期間にわたって次々と花を咲かせる豊かさに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シクラメンはどうやって水やりをすれば良いですか？</div>
-        <div class="faq-a">球根に直接水がかからないよう、鉢の縁からそっと与えるのがポイントです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーはどんな場所で育てやすいですか？</div>
+        <div class="faq-a">日当たりと水はけの良い場所を好み、比較的育てやすい花として人気があります。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>シクラメンは花びらが反り返る、1月14日の誕生花</li>
-      <li>花言葉は「内気」、控えめな性格を象徴する花とされる</li>
-      <li>独特な優美なシルエットが魅力</li>
-      <li>涼しい環境を好み、球根に水をかけないよう注意したい</li>
+      <li>ブルーデイジーは春から秋に長く咲き続ける、1月14日の誕生花</li>
+      <li>花言葉は「恵まれて」、豊かさを象徴する花とされる</li>
+      <li>爽やかな青色と素朴な花姿が魅力</li>
+      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0113/';
-  $prevTitle = '1月13日の誕生花（カトレア）とは';
+  $prevTitle = '1月13日の誕生花（マンサク）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0115/';
-  $nextTitle = '1月15日の誕生花（オンシジューム）とは';
+  $nextTitle = '1月15日の誕生花（ポピー）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

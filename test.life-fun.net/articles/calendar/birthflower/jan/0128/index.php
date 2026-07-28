@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0128/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月28日の誕生花ネモフィラの花言葉・特徴・魅力をわかりやすく解説。「どこでも成功」を象徴する花の意味を紹介します。">
-  <title>1月28日の誕生花はネモフィラ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月28日の誕生花キンギョソウの花言葉・特徴・魅力をわかりやすく解説。「欲望」を象徴する花穂の意味を紹介します。">
+  <title>1月28日の誕生花はキンギョソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ネモフィラはどこで見られますか？","acceptedAnswer":{"@type":"Answer","text":"国営ひたち海浜公園など、日本各地の観光スポットで一面に咲く群生地が人気を集めています。"}},
-      {"@type":"Question","name":"ネモフィラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「どこでも成功」という花言葉は、荒れた土地でも力強く群生して咲き広がる生命力に由来するとされています。"}},
-      {"@type":"Question","name":"ネモフィラは育てやすい花ですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすく、初心者でも群生させやすい花として人気があります。"}}
+      {"@type":"Question","name":"キンギョソウの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の形が金魚が連なって泳ぐ姿に似ていることに由来するとされています。"}},
+      {"@type":"Question","name":"キンギョソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「欲望」という花言葉は、ユニークな花の仕掛けと鮮やかな色合いが人の心を惹きつけることに由来するとされています。"}},
+      {"@type":"Question","name":"キンギョソウはどんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤・ピンク・黄色・白など、豊富な色合いがあります。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月28日の誕生花（ネモフィラ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0128/"}
+      {"@type":"ListItem","position":6,"name":"1月28日の誕生花（キンギョソウ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0128/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月28日の誕生花（ネモフィラ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月28日の誕生花（キンギョソウ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 28 · 誕生花</span>
-    <h1>1月28日の誕生花はネモフィラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ネモフィラは、空を思わせる青い花を咲かせる1月28日の誕生花です。花言葉は「どこでも成功」。</p>
+    <h1>1月28日の誕生花はキンギョソウ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">キンギョソウは、金魚が連なったような花穂を咲かせる1月28日の誕生花です。花言葉は「欲望」。愛らしくにぎやかな印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ネモフィラ</dd>
-    <dt>花言葉</dt><dd>どこでも成功</dd>
-    <dt>科名</dt><dd>ムラサキ科</dd>
-    <dt>見頃</dt><dd>4月〜5月</dd>
+    <dt>花名</dt><dd>キンギョソウ</dd>
+    <dt>花言葉</dt><dd>欲望</dd>
+    <dt>科名</dt><dd>オオバコ科</dd>
+    <dt>見頃</dt><dd>春〜初夏</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ネモフィラとは</a></li>
-      <li><a href="#meaning">ネモフィラが象徴する意味</a></li>
-      <li><a href="#charm">ネモフィラの魅力</a></li>
+      <li><a href="#about">キンギョソウとは</a></li>
+      <li><a href="#meaning">キンギョソウが象徴する意味</a></li>
+      <li><a href="#charm">キンギョソウの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ネモフィラとは</h2>
-    <p>ネモフィラは、ムラサキ科の一年草で、1月28日の誕生花として知られています。春に空を思わせる青い花を一面に咲かせ、その群生した景色の美しさから観光地の花畑としても人気を集めています。</p>
+    <h2>キンギョソウとは</h2>
+    <p>キンギョソウは、オオバコ科の植物で、1月28日の誕生花として知られています。春から初夏にかけて、金魚が連なって泳ぐような形の花穂を咲かせることからこの名がつけられました。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ネモフィラが象徴する意味</h2>
-    <p>ネモフィラの花言葉は「どこでも成功」です。荒れた土地でも群生して力強く咲き広がるその生命力から、どんな環境でも成功をつかむたくましさを象徴する花とされてきました。</p>
+    <h2>キンギョソウが象徴する意味</h2>
+    <p>キンギョソウの花言葉は「欲望」です。花を横から押すと口を開くようなユニークな仕掛けと、鮮やかな色合いが人の心を惹きつけることに由来するとされています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ネモフィラの魅力</h2>
-    <p>ネモフィラの魅力は、澄んだ青空を思わせる清々しい色合いと、一面に広がる群生美にあります。見る人の心を晴れやかにしてくれる爽やかな花として、多くの人に愛されています。1月28日生まれの方はもちろん、たくましい成功を願う贈り物にもふさわしい花です。</p>
+    <h2>キンギョソウの魅力</h2>
+    <p>キンギョソウの魅力は、金魚を思わせる愛らしい花の形と、株いっぱいに賑やかに咲く華やかさにあります。花壇や切り花としても人気があり、春から初夏の庭を明るく彩ってくれます。1月28日生まれの方はもちろん、にぎやかで楽しい気持ちを届けたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ネモフィラは日当たりの良い場所を好み、寒さに強い一方、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
+    <p>キンギョソウは日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月28日生まれの方はもちろん、成功を願う贈り物としてもネモフィラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月28日生まれの方はもちろん、にぎやかで楽しい気持ちを届けたい贈り物としてもキンギョソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ネモフィラはどこで見られますか？</div>
-        <div class="faq-a">国営ひたち海浜公園など、日本各地の観光スポットで一面に咲く群生地が人気を集めています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウの名前の由来は何ですか？</div>
+        <div class="faq-a">花の形が金魚が連なって泳ぐ姿に似ていることに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ネモフィラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「どこでも成功」という花言葉は、荒れた土地でも力強く群生して咲き広がる生命力に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「欲望」という花言葉は、ユニークな花の仕掛けと鮮やかな色合いが人の心を惹きつけることに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ネモフィラは育てやすい花ですか？</div>
-        <div class="faq-a">丈夫で育てやすく、初心者でも群生させやすい花として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウはどんな色がありますか？</div>
+        <div class="faq-a">赤・ピンク・黄色・白など、豊富な色合いがあります。</div>
       </div>
     </div>
   </section>
@@ -206,9 +206,9 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ネモフィラは青空を思わせる、1月28日の誕生花</li>
-      <li>花言葉は「どこでも成功」、たくましい生命力を象徴する花とされる</li>
-      <li>澄んだ色合いと群生美が魅力</li>
+      <li>キンギョソウは金魚のような花穂を咲かせる、1月28日の誕生花</li>
+      <li>花言葉は「欲望」、人を惹きつける魅力を象徴する花とされる</li>
+      <li>愛らしくにぎやかな花姿が魅力</li>
       <li>過湿を嫌うため、水はけの良い土で育てたい</li>
     </ul>
   </section>
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0127/';
-  $prevTitle = '1月27日の誕生花（プルメリア）とは';
+  $prevTitle = '1月27日の誕生花（マダガスカルジャスミン）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0129/';
-  $nextTitle = '1月29日の誕生花（ラナンキュラス）とは';
+  $nextTitle = '1月29日の誕生花（スミレ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

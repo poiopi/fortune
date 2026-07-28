@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0103/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月3日の誕生花マツの花言葉・特徴・魅力をわかりやすく解説。「不老長寿」を象徴する木の意味と由来を紹介します。">
-  <title>1月3日の誕生花はマツ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月3日の誕生花ストレリチアの花言葉・特徴・魅力をわかりやすく解説。「ひとり占め」を象徴するエキゾチックな花の意味を紹介します。">
+  <title>1月3日の誕生花はストレリチア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マツはなぜお正月に飾られるのですか？","acceptedAnswer":{"@type":"Answer","text":"一年中緑を保つ生命力と、神様が宿るとされる伝承から、新年を祝う縁起物として門松などに用いられてきました。"}},
-      {"@type":"Question","name":"マツの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「不老長寿」という花言葉は、厳しい冬でも葉を落とさず長く生き続ける姿に由来するとされています。"}},
-      {"@type":"Question","name":"マツ以外にも1月3日に縁のある植物はありますか？","acceptedAnswer":{"@type":"Answer","text":"マツはお正月飾りの代表的な植物として知られ、竹や梅とともに「松竹梅」として縁起物にされることも多いです。"}}
+      {"@type":"Question","name":"ストレリチアはいつ頃花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して花を咲かせ、特定の季節を問わず楽しめる植物です。"}},
+      {"@type":"Question","name":"ストレリチアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ひとり占め」という花言葉は、エキゾチックで力強い花姿が周囲の視線を集める存在感に由来するとされています。"}},
+      {"@type":"Question","name":"ストレリチアはなぜ「極楽鳥花」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"鳥が羽ばたくような独特な花の形が、極楽鳥の姿を連想させることに由来するとされています。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月3日の誕生花（マツ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0103/"}
+      {"@type":"ListItem","position":6,"name":"1月3日の誕生花（ストレリチア）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0103/"}
     ]
   }
   </script>
@@ -123,19 +123,19 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月3日の誕生花（マツ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月3日の誕生花（ストレリチア）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 3 · 誕生花</span>
-    <h1>1月3日の誕生花はマツ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マツは、一年を通じて緑を保ち続ける1月3日の誕生花です。花言葉は「不老長寿」。お正月の門松など、めでたい場面に欠かせない木として親しまれてきました。</p>
+    <h1>1月3日の誕生花はストレリチア<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ストレリチアは、鳥が羽ばたくような形の花を咲かせる1月3日の誕生花です。花言葉は「ひとり占め」。エキゾチックで力強い印象を持つ花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>マツ</dd>
-    <dt>花言葉</dt><dd>不老長寿</dd>
-    <dt>科名</dt><dd>マツ科</dd>
+    <dt>花名</dt><dd>ストレリチア</dd>
+    <dt>花言葉</dt><dd>ひとり占め</dd>
+    <dt>科名</dt><dd>ゴクラクチョウカ科</dd>
     <dt>見頃</dt><dd>通年</dd>
   </dl>
 
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マツとは</a></li>
-      <li><a href="#meaning">マツが象徴する意味</a></li>
-      <li><a href="#charm">マツの魅力</a></li>
+      <li><a href="#about">ストレリチアとは</a></li>
+      <li><a href="#meaning">ストレリチアが象徴する意味</a></li>
+      <li><a href="#charm">ストレリチアの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マツとは</h2>
-    <p>マツは、マツ科の常緑高木で、1月3日の誕生花として知られています。一年を通じて緑を保ち続けることから、古くから生命力と永続性の象徴とされ、日本ではお正月の門松など、めでたい場面に欠かせない木として親しまれてきました。</p>
+    <h2>ストレリチアとは</h2>
+    <p>ストレリチアは、ゴクラクチョウカ科の多年草で、1月3日の誕生花として知られています。鳥が羽ばたくような形をした鮮やかな花を一年を通して咲かせ、その独特な花姿から「極楽鳥花」とも呼ばれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>マツが象徴する意味</h2>
-    <p>マツの花言葉は「不老長寿」です。厳しい冬でも葉を落とさず、長い年月を生き続けるその姿から、健康と長寿を願う象徴として大切にされてきました。新年を祝う縁起の良い植物としても知られています。</p>
+    <h2>ストレリチアが象徴する意味</h2>
+    <p>ストレリチアの花言葉は「ひとり占め」です。エキゾチックで力強い花姿が、周囲の視線を独り占めするような存在感を放つことに由来するとされています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>マツの魅力</h2>
-    <p>マツの魅力は、四季を通じて変わらない深い緑色と、堂々とした佇まいにあります。庭園や盆栽としても長く愛され、時の流れに動じない力強さを感じさせてくれます。1月3日生まれの方はもちろん、長寿や健康を願う贈り物としてもふさわしい木です。</p>
+    <h2>ストレリチアの魅力</h2>
+    <p>ストレリチアの魅力は、鳥が飛び立つ瞬間を思わせる大胆な花の形と、オレンジと青が織りなす鮮やかな色彩にあります。存在感抜群のためインテリアグリーンや生け花のメインとしても人気です。1月3日生まれの方はもちろん、力強い個性を伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>マツは日当たりと風通しの良い場所を好み、乾燥に強い一方で過湿を嫌うため、水の与えすぎに注意するのがおすすめです。</p>
+    <p>ストレリチアは日当たりを好み、乾燥にはやや強いため、土の表面が乾いたらたっぷり水を与える程度で育てやすい植物です。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月3日生まれの方はもちろん、健康や長寿を願う贈り物としてもマツは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月3日生まれの方はもちろん、力強い魅力を伝えたい贈り物としてもストレリチアは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツはなぜお正月に飾られるのですか？</div>
-        <div class="faq-a">一年中緑を保つ生命力と、神様が宿るとされる伝承から、新年を祝う縁起物として門松などに用いられてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアはいつ頃花を咲かせますか？</div>
+        <div class="faq-a">一年を通して花を咲かせ、特定の季節を問わず楽しめる植物です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「不老長寿」という花言葉は、厳しい冬でも葉を落とさず長く生き続ける姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「ひとり占め」という花言葉は、エキゾチックで力強い花姿が周囲の視線を集める存在感に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツ以外にも1月3日に縁のある植物はありますか？</div>
-        <div class="faq-a">マツはお正月飾りの代表的な植物として知られ、竹や梅とともに「松竹梅」として縁起物にされることも多いです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアはなぜ「極楽鳥花」と呼ばれるのですか？</div>
+        <div class="faq-a">鳥が羽ばたくような独特な花の形が、極楽鳥の姿を連想させることに由来するとされています。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>マツは一年中緑を保つ、1月3日の誕生花</li>
-      <li>花言葉は「不老長寿」、健康と長寿を象徴する木とされる</li>
-      <li>堂々とした佇まいが魅力で、お正月飾りとしても人気</li>
-      <li>過湿を嫌うため、水の与えすぎに注意したい</li>
+      <li>ストレリチアは鳥が羽ばたくような花を咲かせる、1月3日の誕生花</li>
+      <li>花言葉は「ひとり占め」、力強い存在感を象徴する花とされる</li>
+      <li>エキゾチックな色彩と大胆な花姿が魅力</li>
+      <li>乾燥にやや強く、日当たりの良い場所で育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0102/';
-  $prevTitle = '1月2日の誕生花（ロウバイ）とは';
+  $prevTitle = '1月2日の誕生花（ハルサザンカ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0104/';
-  $nextTitle = '1月4日の誕生花（フクジュソウ）とは';
+  $nextTitle = '1月4日の誕生花（ブルースター）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

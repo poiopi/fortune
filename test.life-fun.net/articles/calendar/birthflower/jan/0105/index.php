@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0105/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月5日の誕生花ミスミソウ（雪割草）の花言葉・特徴・魅力をわかりやすく解説。「内緒」を象徴する花の意味と由来を紹介します。">
-  <title>1月5日の誕生花はミスミソウ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月5日の誕生花ラッパスイセンの花言葉・特徴・魅力をわかりやすく解説。「再生」を象徴する早春の花の意味を紹介します。">
+  <title>1月5日の誕生花はラッパスイセン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ミスミソウはなぜ「雪割草」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"雪解けの頃にいち早く花を咲かせることから、雪を割って咲く花として「雪割草」という別名で親しまれています。"}},
-      {"@type":"Question","name":"ミスミソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「内緒」という花言葉は、落ち葉の下でひっそりと開花の時を待つ控えめな姿に由来するとされています。"}},
-      {"@type":"Question","name":"ミスミソウはどんな場所に自生していますか？","acceptedAnswer":{"@type":"Answer","text":"山地の落葉樹林の下など、半日陰になる場所に自生していることが多い植物です。"}}
+      {"@type":"Question","name":"ラッパスイセンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に、ラッパ状の副花冠を持つ黄色い花を咲かせます。"}},
+      {"@type":"Question","name":"ラッパスイセンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「再生」という花言葉は、冬の眠りから目覚めるように早春に力強く花開く姿に由来するとされています。"}},
+      {"@type":"Question","name":"ラッパスイセンとスイセンは違う花ですか？","acceptedAnswer":{"@type":"Answer","text":"ラッパスイセンはスイセンの仲間で、中央の副花冠がラッパ状に大きく発達しているのが特徴です。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月5日の誕生花（ミスミソウ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0105/"}
+      {"@type":"ListItem","position":6,"name":"1月5日の誕生花（ラッパスイセン）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0105/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月5日の誕生花（ミスミソウ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月5日の誕生花（ラッパスイセン）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 5 · 誕生花</span>
-    <h1>1月5日の誕生花はミスミソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ミスミソウは、雪解けを待つように可憐な花を咲かせる1月5日の誕生花です。花言葉は「内緒」。「雪割草」という別名でも親しまれています。</p>
+    <h1>1月5日の誕生花はラッパスイセン<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ラッパスイセンは、ラッパ状の副花冠を持つ黄色い花を咲かせる1月5日の誕生花です。花言葉は「再生」。春の訪れを告げる花として親しまれています。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ミスミソウ</dd>
-    <dt>花言葉</dt><dd>内緒</dd>
-    <dt>科名</dt><dd>キンポウゲ科</dd>
-    <dt>見頃</dt><dd>2月〜4月</dd>
+    <dt>花名</dt><dd>ラッパスイセン</dd>
+    <dt>花言葉</dt><dd>再生</dd>
+    <dt>科名</dt><dd>ヒガンバナ科</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ミスミソウとは</a></li>
-      <li><a href="#meaning">ミスミソウが象徴する意味</a></li>
-      <li><a href="#charm">ミスミソウの魅力</a></li>
+      <li><a href="#about">ラッパスイセンとは</a></li>
+      <li><a href="#meaning">ラッパスイセンが象徴する意味</a></li>
+      <li><a href="#charm">ラッパスイセンの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ミスミソウとは</h2>
-    <p>ミスミソウは、キンポウゲ科の多年草で、1月5日の誕生花として知られています。「雪割草」という別名でも親しまれ、早春、三角形をした葉の間から雪解けを待つように可憐な花を咲かせます。</p>
+    <h2>ラッパスイセンとは</h2>
+    <p>ラッパスイセンは、ヒガンバナ科の球根植物で、1月5日の誕生花として知られています。早春、中央にラッパ状の副花冠を持つ鮮やかな黄色い花を咲かせ、春の訪れを告げるスイセンの仲間として親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ミスミソウが象徴する意味</h2>
-    <p>ミスミソウの花言葉は「内緒」です。落ち葉の下でひっそりと開花の時を待ち、控えめに花を咲かせるその姿から、秘めた想いや静かな秘密を象徴する花とされてきました。</p>
+    <h2>ラッパスイセンが象徴する意味</h2>
+    <p>ラッパスイセンの花言葉は「再生」です。冬の眠りから目覚めるように早春に力強く芽吹き、花開くその姿から、新たな始まりや再生を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ミスミソウの魅力</h2>
-    <p>ミスミソウの魅力は、雪解けの中でそっと顔を出す可憐な花姿と、白・ピンク・紫など多彩な色合いにあります。派手さはなくとも、見つけた人の心を和ませる奥ゆかしい美しさが人気です。1月5日生まれの方はもちろん、秘めた想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>ラッパスイセンの魅力</h2>
+    <p>ラッパスイセンの魅力は、太陽のような鮮やかな黄色と、ラッパ状の副花冠が生み出す立体的な花姿にあります。庭植えや切り花としても人気があり、春の訪れを華やかに彩ってくれます。1月5日生まれの方はもちろん、新しい始まりを応援したい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ミスミソウは強い直射日光を嫌うため、半日陰で育て、土が乾ききる前に水を与えるのがおすすめです。</p>
+    <p>ラッパスイセンは日当たりの良い場所を好み、丈夫で植えっぱなしでも毎年花を咲かせやすい球根植物です。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月5日生まれの方はもちろん、静かな想いを伝えたい贈り物としてもミスミソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月5日生まれの方はもちろん、新しい始まりを願う贈り物としてもラッパスイセンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミスミソウはなぜ「雪割草」と呼ばれるのですか？</div>
-        <div class="faq-a">雪解けの頃にいち早く花を咲かせることから、雪を割って咲く花として「雪割草」という別名で親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ラッパスイセンはいつ頃咲きますか？</div>
+        <div class="faq-a">早春に、ラッパ状の副花冠を持つ黄色い花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミスミソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「内緒」という花言葉は、落ち葉の下でひっそりと開花の時を待つ控えめな姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ラッパスイセンの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「再生」という花言葉は、冬の眠りから目覚めるように早春に力強く花開く姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミスミソウはどんな場所に自生していますか？</div>
-        <div class="faq-a">山地の落葉樹林の下など、半日陰になる場所に自生していることが多い植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ラッパスイセンとスイセンは違う花ですか？</div>
+        <div class="faq-a">ラッパスイセンはスイセンの仲間で、中央の副花冠がラッパ状に大きく発達しているのが特徴です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ミスミソウは雪解けとともに咲く、1月5日の誕生花</li>
-      <li>花言葉は「内緒」、秘めた想いを象徴する花とされる</li>
-      <li>控えめで可憐な花姿が魅力</li>
-      <li>直射日光を嫌うため、半日陰で育てたい</li>
+      <li>ラッパスイセンは早春に黄色い花を咲かせる、1月5日の誕生花</li>
+      <li>花言葉は「再生」、新たな始まりを象徴する花とされる</li>
+      <li>立体的な花姿と鮮やかな黄色が魅力</li>
+      <li>丈夫で植えっぱなしでも育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0104/';
-  $prevTitle = '1月4日の誕生花（フクジュソウ）とは';
+  $prevTitle = '1月4日の誕生花（ブルースター）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0106/';
-  $nextTitle = '1月6日の誕生花（マンサク）とは';
+  $nextTitle = '1月6日の誕生花（カーネーション）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

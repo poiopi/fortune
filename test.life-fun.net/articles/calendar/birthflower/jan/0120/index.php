@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0120/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月20日の誕生花キンセンカの花言葉・特徴・魅力をわかりやすく解説。鮮やかな橙黄色の花の意味を紹介します。">
-  <title>1月20日の誕生花はキンセンカ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月20日の誕生花スイートピーの花言葉・特徴・魅力をわかりやすく解説。「永遠の喜び」を象徴する春の花の意味を紹介します。">
+  <title>1月20日の誕生花はスイートピー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キンセンカの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の形が金の盃（さかずき）に似ていることから「金盞花」と名付けられたとされています。"}},
-      {"@type":"Question","name":"キンセンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「別れの悲しみ」はヨーロッパの伝説に由来するとされていますが、地域や文脈によって前向きな意味が添えられることもあります。"}},
-      {"@type":"Question","name":"キンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"品種にもよりますが、12月から5月頃まで長く楽しめる花です。"}}
+      {"@type":"Question","name":"スイートピーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、蝶のような形の花を咲かせます。"}},
+      {"@type":"Question","name":"スイートピーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「永遠の喜び」という花言葉は、ひらひらと優雅に咲く花姿と甘い香りに由来するとされています。"}},
+      {"@type":"Question","name":"スイートピーはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"優しく甘い香りを漂わせ、春らしい爽やかな印象を与えます。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月20日の誕生花（キンセンカ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0120/"}
+      {"@type":"ListItem","position":6,"name":"1月20日の誕生花（スイートピー）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0120/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月20日の誕生花（キンセンカ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月20日の誕生花（スイートピー）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 20 · 誕生花</span>
-    <h1>1月20日の誕生花はキンセンカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キンセンカは、鮮やかな橙黄色の花を咲かせる1月20日の誕生花です。花の形が金の盃に似ていることが名前の由来とされています。</p>
+    <h1>1月20日の誕生花はスイートピー<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">スイートピーは、蝶のような形の花を咲かせる1月20日の誕生花です。花言葉は「永遠の喜び」。優しく甘い香りが特徴です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>キンセンカ</dd>
-    <dt>花言葉</dt><dd>別れの悲しみ</dd>
-    <dt>科名</dt><dd>キク科</dd>
-    <dt>見頃</dt><dd>12月〜5月</dd>
+    <dt>花名</dt><dd>スイートピー</dd>
+    <dt>花言葉</dt><dd>永遠の喜び</dd>
+    <dt>科名</dt><dd>マメ科</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キンセンカとは</a></li>
-      <li><a href="#meaning">キンセンカが象徴する意味</a></li>
-      <li><a href="#charm">キンセンカの魅力</a></li>
+      <li><a href="#about">スイートピーとは</a></li>
+      <li><a href="#meaning">スイートピーが象徴する意味</a></li>
+      <li><a href="#charm">スイートピーの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キンセンカとは</h2>
-    <p>キンセンカは、キク科の一年草で、1月20日の誕生花として知られています。冬から春にかけて鮮やかな橙黄色の花を咲かせ、その名は花の形が金の盃（さかずき）に似ていることに由来するとされています。</p>
+    <h2>スイートピーとは</h2>
+    <p>スイートピーは、マメ科のつる性一年草で、1月20日の誕生花として知られています。春に蝶が舞うような形の花を咲かせ、優しく甘い香りを漂わせることから、春を代表する花として親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>キンセンカが象徴する意味</h2>
-    <p>キンセンカの花言葉は「別れの悲しみ」です。ヨーロッパの伝説に由来するとされる花言葉で、切ない別れの物語と結びつけられていますが、日本では「勇気」「前向きな心」といった花言葉が添えられることもあります。</p>
+    <h2>スイートピーが象徴する意味</h2>
+    <p>スイートピーの花言葉は「永遠の喜び」です。ひらひらと優雅に咲く花姿と甘い香りから、いつまでも続く幸せな喜びを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>キンセンカの魅力</h2>
-    <p>キンセンカの魅力は、太陽を思わせる鮮やかな橙黄色と、寒い季節にも次々と花を咲かせる力強さにあります。花壇や切り花としても人気が高く、冬の景色に明るさを添えてくれます。1月20日生まれの方はもちろん、力強く前を向く気持ちを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>スイートピーの魅力</h2>
+    <p>スイートピーの魅力は、蝶のように軽やかな花姿と、優しく甘い香りにあります。パステルカラーを中心とした豊富な花色も魅力で、春の贈り物としても定番です。1月20日生まれの方はもちろん、変わらぬ喜びを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>キンセンカは日当たりの良い場所を好み、寒さには強い一方、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
+    <p>スイートピーは日当たりの良い場所を好み、つるを伸ばして育つため、支柱を立てて育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月20日生まれの方はもちろん、前向きな気持ちを届けたい贈り物としてもキンセンカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月20日生まれの方はもちろん、変わらぬ喜びを伝えたい贈り物としてもスイートピーは春の定番の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカの名前の由来は何ですか？</div>
-        <div class="faq-a">花の形が金の盃（さかずき）に似ていることから「金盞花」と名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイートピーはいつ頃咲きますか？</div>
+        <div class="faq-a">春に、蝶のような形の花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「別れの悲しみ」はヨーロッパの伝説に由来するとされていますが、地域や文脈によって前向きな意味が添えられることもあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイートピーの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「永遠の喜び」という花言葉は、ひらひらと優雅に咲く花姿と甘い香りに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカはいつ頃咲きますか？</div>
-        <div class="faq-a">品種にもよりますが、12月から5月頃まで長く楽しめる花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイートピーはどんな香りがしますか？</div>
+        <div class="faq-a">優しく甘い香りを漂わせ、春らしい爽やかな印象を与えます。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>キンセンカは鮮やかな橙黄色が特徴的な、1月20日の誕生花</li>
-      <li>花言葉は「別れの悲しみ」だが、前向きな意味が添えられることもある</li>
-      <li>太陽を思わせる色合いと力強さが魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>スイートピーは春に蝶のような花を咲かせる、1月20日の誕生花</li>
+      <li>花言葉は「永遠の喜び」、続く幸せを象徴する花とされる</li>
+      <li>軽やかな花姿と甘い香りが魅力</li>
+      <li>つる性のため支柱を立てて育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0119/';
-  $prevTitle = '1月19日の誕生花（ユキヤナギ）とは';
+  $prevTitle = '1月19日の誕生花（ストック）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0121/';
-  $nextTitle = '1月21日の誕生花（ロウバイ）とは';
+  $nextTitle = '1月21日の誕生花（スイセン）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

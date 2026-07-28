@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0125/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月25日の誕生花プリムラの花言葉・特徴・魅力をわかりやすく解説。「青春の喜びと悲しみ」を象徴する花の意味を紹介します。">
-  <title>1月25日の誕生花はプリムラ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月25日の誕生花チューリップ（黄）の花言葉・特徴・魅力をわかりやすく解説。「正直」を象徴する花の意味を紹介します。">
+  <title>1月25日の誕生花はチューリップ（黄）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"プリムラの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ラテン語で「最初の」を意味する言葉に由来し、早春に他の花に先駆けて咲くことから名付けられたとされています。"}},
-      {"@type":"Question","name":"プリムラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「青春の喜びと悲しみ」という花言葉は、愛らしい花姿に若さゆえの様々な感情を重ね合わせたことに由来するとされています。"}},
-      {"@type":"Question","name":"プリムラはどんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤・黄・ピンク・紫・白など非常に豊富な色合いがあります。"}}
+      {"@type":"Question","name":"チューリップ（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、明るい黄色の花を咲かせます。"}},
+      {"@type":"Question","name":"チューリップ（黄）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「正直」という花言葉は、まっすぐに伸びる茎と飾らない明るい花色に由来するとされています。"}},
+      {"@type":"Question","name":"チューリップは色によって花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色ごとに異なる花言葉があり、黄色は「正直」を表すとされています。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月25日の誕生花（プリムラ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0125/"}
+      {"@type":"ListItem","position":6,"name":"1月25日の誕生花（チューリップ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0125/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月25日の誕生花（プリムラ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月25日の誕生花（チューリップ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 25 · 誕生花</span>
-    <h1>1月25日の誕生花はプリムラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">プリムラは、冬から春に色とりどりの花を咲かせる1月25日の誕生花です。花言葉は「青春の喜びと悲しみ」。</p>
+    <h1>1月25日の誕生花はチューリップ（黄）<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">チューリップ（黄）は、明るい黄色の花を咲かせる1月25日の誕生花です。花言葉は「正直」。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>プリムラ</dd>
-    <dt>花言葉</dt><dd>青春の喜びと悲しみ</dd>
-    <dt>科名</dt><dd>サクラソウ科</dd>
-    <dt>見頃</dt><dd>12月〜4月</dd>
+    <dt>花名</dt><dd>チューリップ（黄）</dd>
+    <dt>花言葉</dt><dd>正直</dd>
+    <dt>科名</dt><dd>ユリ科</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">プリムラとは</a></li>
-      <li><a href="#meaning">プリムラが象徴する意味</a></li>
-      <li><a href="#charm">プリムラの魅力</a></li>
+      <li><a href="#about">チューリップ（黄）とは</a></li>
+      <li><a href="#meaning">チューリップ（黄）が象徴する意味</a></li>
+      <li><a href="#charm">チューリップ（黄）の魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>プリムラとは</h2>
-    <p>プリムラは、サクラソウ科の多年草で、1月25日の誕生花として知られています。冬から春にかけて、赤・黄・紫など色とりどりの花を咲かせ、寒い季節の花壇や鉢植えを明るく彩ってくれます。</p>
+    <h2>チューリップ（黄）とは</h2>
+    <p>チューリップ（黄）は、ユリ科の球根植物で、1月25日の誕生花として知られています。春に明るい黄色の花を咲かせ、その素直で明るい花姿から春の花壇の定番として親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>プリムラが象徴する意味</h2>
-    <p>プリムラの花言葉は「青春の喜びと悲しみ」です。愛らしい花姿の中に、若さゆえの様々な感情の揺れを重ね合わせ、瑞々しい青春時代の心情を象徴する花とされてきました。</p>
+    <h2>チューリップ（黄）が象徴する意味</h2>
+    <p>チューリップ（黄）の花言葉は「正直」です。まっすぐに伸びる茎と、飾らない明るい花色から、素直でうそのない心を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>プリムラの魅力</h2>
-    <p>プリムラの魅力は、小さくも愛らしい花が株いっぱいに咲き誇る、明るく親しみやすい印象にあります。豊富な花色から選ぶ楽しさもあり、冬の贈り物としても人気です。1月25日生まれの方はもちろん、若々しい気持ちを届けたい贈り物にもふさわしい花です。</p>
+    <h2>チューリップ（黄）の魅力</h2>
+    <p>チューリップ（黄）の魅力は、太陽のような明るい黄色と、すっと伸びるまっすぐな花姿にあります。花壇や鉢植えでも育てやすく、春の訪れを明るく彩ってくれます。1月25日生まれの方はもちろん、素直な気持ちを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>プリムラは涼しい環境を好み、暑さや蒸れに弱いため、風通しの良い涼しい場所で育てるのがおすすめです。</p>
+    <p>チューリップ（黄）は日当たりの良い場所を好み、丈夫で育てやすい球根植物です。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月25日生まれの方はもちろん、明るい気持ちを届けたい贈り物としてもプリムラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月25日生まれの方はもちろん、素直な気持ちを伝えたい贈り物としてもチューリップ（黄）は春の定番の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラの名前の由来は何ですか？</div>
-        <div class="faq-a">ラテン語で「最初の」を意味する言葉に由来し、早春に他の花に先駆けて咲くことから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（黄）はいつ頃咲きますか？</div>
+        <div class="faq-a">春に、明るい黄色の花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「青春の喜びと悲しみ」という花言葉は、愛らしい花姿に若さゆえの様々な感情を重ね合わせたことに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（黄）の花言葉の由来は何ですか？</div>
+        <div class="faq-a">「正直」という花言葉は、まっすぐに伸びる茎と飾らない明るい花色に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラはどんな色がありますか？</div>
-        <div class="faq-a">赤・黄・ピンク・紫・白など非常に豊富な色合いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップは色によって花言葉が違いますか？</div>
+        <div class="faq-a">はい、色ごとに異なる花言葉があり、黄色は「正直」を表すとされています。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>プリムラは冬から春に彩り豊かに咲く、1月25日の誕生花</li>
-      <li>花言葉は「青春の喜びと悲しみ」、若さの心情を象徴する花とされる</li>
-      <li>豊富な花色と親しみやすい印象が魅力</li>
-      <li>暑さや蒸れに弱いため、涼しい場所で育てたい</li>
+      <li>チューリップ（黄）は春に明るい黄色の花を咲かせる、1月25日の誕生花</li>
+      <li>花言葉は「正直」、素直な心を象徴する花とされる</li>
+      <li>まっすぐな花姿と明るい色合いが魅力</li>
+      <li>丈夫で育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0124/';
-  $prevTitle = '1月24日の誕生花（フリージア）とは';
+  $prevTitle = '1月24日の誕生花（ヒヤシンス）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0126/';
-  $nextTitle = '1月26日の誕生花（アマリリス）とは';
+  $nextTitle = '1月26日の誕生花（ピグミーランタン）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

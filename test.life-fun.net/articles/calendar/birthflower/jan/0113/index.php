@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0113/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月13日の誕生花カトレアの花言葉・特徴・魅力をわかりやすく解説。「優雅な女性」を象徴する洋ランの意味を紹介します。">
-  <title>1月13日の誕生花はカトレア｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月13日の誕生花マンサクの花言葉・特徴・魅力をわかりやすく解説。「新鮮」を象徴する早春の花木の意味を紹介します。">
+  <title>1月13日の誕生花はマンサク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カトレアはなぜ「洋ランの女王」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"大輪で華やかな花姿が、洋ランの中でも特に気品と豪華さを兼ね備えていることに由来するとされています。"}},
-      {"@type":"Question","name":"カトレアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「優雅な女性」という花言葉は、豪華でありながら気品のある花姿に由来するとされています。"}},
-      {"@type":"Question","name":"カトレアはどんな場面で贈られますか？","acceptedAnswer":{"@type":"Answer","text":"結婚式やお祝いの席など、特別な場面での贈り物として人気があります。"}}
+      {"@type":"Question","name":"マンサクの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"早春に他の花より先駆けて咲くことから「まず咲く」が転じたという説や、枝いっぱいに花をつける様子から「豊年満作」に由来するという説があります。"}},
+      {"@type":"Question","name":"マンサクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「新鮮」という花言葉は、他のどの花よりも早く芽吹き花開く、みずみずしい印象に由来するとされています。"}},
+      {"@type":"Question","name":"マンサクはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"代表的なのは黄色ですが、赤やオレンジ色の品種もあります。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月13日の誕生花（カトレア）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0113/"}
+      {"@type":"ListItem","position":6,"name":"1月13日の誕生花（マンサク）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0113/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月13日の誕生花（カトレア）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月13日の誕生花（マンサク）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 13 · 誕生花</span>
-    <h1>1月13日の誕生花はカトレア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カトレアは、「洋ランの女王」と称される1月13日の誕生花です。花言葉は「優雅な女性」。大輪で華やかな花が特徴です。</p>
+    <h1>1月13日の誕生花はマンサク<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">マンサクは、他の花に先駆けて咲く1月13日の誕生花です。花言葉は「新鮮」。細く縮れた独特な花びらが特徴です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>カトレア</dd>
-    <dt>花言葉</dt><dd>優雅な女性</dd>
-    <dt>科名</dt><dd>ラン科</dd>
-    <dt>見頃</dt><dd>通年</dd>
+    <dt>花名</dt><dd>マンサク</dd>
+    <dt>花言葉</dt><dd>新鮮</dd>
+    <dt>科名</dt><dd>マンサク科</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カトレアとは</a></li>
-      <li><a href="#meaning">カトレアが象徴する意味</a></li>
-      <li><a href="#charm">カトレアの魅力</a></li>
+      <li><a href="#about">マンサクとは</a></li>
+      <li><a href="#meaning">マンサクが象徴する意味</a></li>
+      <li><a href="#charm">マンサクの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カトレアとは</h2>
-    <p>カトレアは、ラン科の着生植物で、1月13日の誕生花として知られています。大輪で華やかな花を咲かせることから「洋ランの女王」とも称され、古くから特別な贈り物の花として愛されてきました。</p>
+    <h2>マンサクとは</h2>
+    <p>マンサクは、マンサク科の落葉小高木で、1月13日の誕生花として知られています。早春、他の花に先駆けて、細長いリボン状の花びらを持つ黄色い花を咲かせ、春の訪れをいち早く告げる花木として知られています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>カトレアが象徴する意味</h2>
-    <p>カトレアの花言葉は「優雅な女性」です。豪華でありながら気品のある花姿から、美しく洗練された女性らしさを象徴する花とされてきました。ブライダルシーンでもよく用いられます。</p>
+    <h2>マンサクが象徴する意味</h2>
+    <p>マンサクの花言葉は「新鮮」です。他のどの花よりも早く芽吹き花開くその姿から、みずみずしい新鮮さや新しい季節の始まりを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>カトレアの魅力</h2>
-    <p>カトレアの魅力は、大輪の花びらが幾重にも重なる豪華さと、気品を感じさせる色合いにあります。存在感がありながら下品にならない絶妙なバランスが、多くの人を魅了してきました。1月13日生まれの方はもちろん、特別な女性への贈り物としてもふさわしい花です。</p>
+    <h2>マンサクの魅力</h2>
+    <p>マンサクの魅力は、細く縮れたリボンのような独特な花びらの形と、他に先駆けて咲く新鮮な印象にあります。まだ寒さの残る時期に咲く姿は、新しい季節の訪れを予感させてくれます。1月13日生まれの方はもちろん、新鮮な始まりを届けたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>カトレアは強い直射日光を避け、明るい日陰で育て、水のやりすぎに注意するのがおすすめです。</p>
+    <p>マンサクは日当たりの良い場所を好み、乾燥しすぎない程度に土の湿り気を保つのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月13日生まれの方はもちろん、特別な人への贈り物としてもカトレアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月13日生まれの方はもちろん、新しい始まりを届けたい贈り物としてもマンサクは人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カトレアはなぜ「洋ランの女王」と呼ばれるのですか？</div>
-        <div class="faq-a">大輪で華やかな花姿が、洋ランの中でも特に気品と豪華さを兼ね備えていることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マンサクの名前の由来は何ですか？</div>
+        <div class="faq-a">早春に他の花より先駆けて咲くことから「まず咲く」が転じたという説や、枝いっぱいに花をつける様子から「豊年満作」に由来するという説があります。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カトレアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「優雅な女性」という花言葉は、豪華でありながら気品のある花姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マンサクの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「新鮮」という花言葉は、他のどの花よりも早く芽吹き花開く、みずみずしい印象に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カトレアはどんな場面で贈られますか？</div>
-        <div class="faq-a">結婚式やお祝いの席など、特別な場面での贈り物として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マンサクはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">代表的なのは黄色ですが、赤やオレンジ色の品種もあります。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>カトレアは大輪で華やかな、1月13日の誕生花</li>
-      <li>花言葉は「優雅な女性」、気品ある美しさを象徴する花とされる</li>
-      <li>豪華でありながら上品な花姿が魅力</li>
-      <li>直射日光を避け、明るい日陰で育てたい</li>
+      <li>マンサクは春に先駆けて咲く、1月13日の誕生花</li>
+      <li>花言葉は「新鮮」、みずみずしい新しさを象徴する花とされる</li>
+      <li>独特なリボン状の花びらが魅力</li>
+      <li>日当たりの良い場所で、適度な湿り気を保って育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0112/';
-  $prevTitle = '1月12日の誕生花（スイートアリッサム）とは';
+  $prevTitle = '1月12日の誕生花（カンツバキ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0114/';
-  $nextTitle = '1月14日の誕生花（シクラメン）とは';
+  $nextTitle = '1月14日の誕生花（ブルーデイジー）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

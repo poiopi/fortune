@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0109/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月9日の誕生花ノースポールの花言葉・特徴・魅力をわかりやすく解説。「冬の足音」を象徴する花の意味を紹介します。">
-  <title>1月9日の誕生花はノースポール｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月9日の誕生花ユキワリソウの花言葉・特徴・魅力をわかりやすく解説。「期待」を象徴する早春の花の意味を紹介します。">
+  <title>1月9日の誕生花はユキワリソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ノースポールはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"12月から4月頃まで、寒い時期を中心に長く花を楽しめます。"}},
-      {"@type":"Question","name":"ノースポールの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「冬の足音」という花言葉は、寒さの厳しい季節に咲き続ける姿に由来するとされています。"}},
-      {"@type":"Question","name":"ノースポールはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりと風通しの良い場所を好み、寒さに強く育てやすい花として人気があります。"}}
+      {"@type":"Question","name":"ユキワリソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、雪解けとともに花を咲かせます。"}},
+      {"@type":"Question","name":"ユキワリソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「期待」という花言葉は、雪解けを待って咲く姿がこれから訪れる春への期待を象徴することに由来するとされています。"}},
+      {"@type":"Question","name":"ユキワリソウとミスミソウは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"どちらも「雪割草」と呼ばれることがありますが、ユキワリソウはサクラソウ科で、ミスミソウ（キンポウゲ科）とは異なる植物です。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月9日の誕生花（ノースポール）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0109/"}
+      {"@type":"ListItem","position":6,"name":"1月9日の誕生花（ユキワリソウ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0109/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月9日の誕生花（ノースポール）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月9日の誕生花（ユキワリソウ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 9 · 誕生花</span>
-    <h1>1月9日の誕生花はノースポール<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ノースポールは、寒さの中で咲き続ける1月9日の誕生花です。花言葉は「冬の足音」。清楚な白い花が特徴です。</p>
+    <h1>1月9日の誕生花はユキワリソウ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ユキワリソウは、雪解けとともに咲く1月9日の誕生花です。花言葉は「期待」。可憐な花姿が特徴です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ノースポール</dd>
-    <dt>花言葉</dt><dd>冬の足音</dd>
-    <dt>科名</dt><dd>キク科</dd>
-    <dt>見頃</dt><dd>12月〜4月</dd>
+    <dt>花名</dt><dd>ユキワリソウ</dd>
+    <dt>花言葉</dt><dd>期待</dd>
+    <dt>科名</dt><dd>サクラソウ科</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ノースポールとは</a></li>
-      <li><a href="#meaning">ノースポールが象徴する意味</a></li>
-      <li><a href="#charm">ノースポールの魅力</a></li>
+      <li><a href="#about">ユキワリソウとは</a></li>
+      <li><a href="#meaning">ユキワリソウが象徴する意味</a></li>
+      <li><a href="#charm">ユキワリソウの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ノースポールとは</h2>
-    <p>ノースポールは、キク科の一年草で、1月9日の誕生花として知られています。冬から春にかけて、白い花びらと黄色い中心を持つ花を株いっぱいに咲かせ、寒さの中でも次々と開花を続けるたくましい植物です。</p>
+    <h2>ユキワリソウとは</h2>
+    <p>ユキワリソウは、サクラソウ科の多年草で、1月9日の誕生花として知られています。早春、雪解けとともに小さく可憐な花を咲かせることからこの名がつけられました。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ノースポールが象徴する意味</h2>
-    <p>ノースポールの花言葉は「冬の足音」です。寒さの厳しい季節に咲き続けるその姿から、冬の訪れとともに静かに春を待つ心を象徴する花とされています。</p>
+    <h2>ユキワリソウが象徴する意味</h2>
+    <p>ユキワリソウの花言葉は「期待」です。雪解けを待って咲くその姿から、これから訪れる春への期待や希望を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ノースポールの魅力</h2>
-    <p>ノースポールの魅力は、清楚な白い花が株全体を覆うように咲き誇る、明るく元気な印象にあります。花壇や寄せ植えでも人気が高く、寒い季節に彩りを添えてくれる貴重な存在です。1月9日生まれの方はもちろん、明るい気持ちを届けたい贈り物にもふさわしい花です。</p>
+    <h2>ユキワリソウの魅力</h2>
+    <p>ユキワリソウの魅力は、雪解けの中でそっと顔を出す控えめな花姿と、春の訪れを予感させる可憐さにあります。庭や鉢植えでも育てやすく、早春の景色に小さな彩りを添えてくれます。1月9日生まれの方はもちろん、これからの期待を伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ノースポールは寒さに強い一方で高温多湿を苦手とするため、日当たりと風通しの良い場所で育てるのがおすすめです。</p>
+    <p>ユキワリソウは半日陰を好み、乾燥を嫌うため、土が乾ききる前に水を与えるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月9日生まれの方はもちろん、明るい気持ちを届けたい贈り物としてもノースポールは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月9日生まれの方はもちろん、これからの期待を伝えたい贈り物としてもユキワリソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノースポールはいつ頃咲きますか？</div>
-        <div class="faq-a">12月から4月頃まで、寒い時期を中心に長く花を楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウはいつ頃咲きますか？</div>
+        <div class="faq-a">早春、雪解けとともに花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノースポールの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「冬の足音」という花言葉は、寒さの厳しい季節に咲き続ける姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「期待」という花言葉は、雪解けを待って咲く姿がこれから訪れる春への期待を象徴することに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノースポールはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりと風通しの良い場所を好み、寒さに強く育てやすい花として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウとミスミソウは同じ花ですか？</div>
+        <div class="faq-a">どちらも「雪割草」と呼ばれることがありますが、ユキワリソウはサクラソウ科で、ミスミソウ（キンポウゲ科）とは異なる植物です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ノースポールは冬から春に咲き続ける、1月9日の誕生花</li>
-      <li>花言葉は「冬の足音」、春を待つ心を象徴する花とされる</li>
-      <li>株いっぱいに咲く清楚な白い花が魅力</li>
-      <li>高温多湿を苦手とするため、風通しの良い場所で育てたい</li>
+      <li>ユキワリソウは雪解けとともに咲く、1月9日の誕生花</li>
+      <li>花言葉は「期待」、春への希望を象徴する花とされる</li>
+      <li>控えめで可憐な花姿が魅力</li>
+      <li>乾燥を嫌うため、半日陰で育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0108/';
-  $prevTitle = '1月8日の誕生花（スミレ）とは';
+  $prevTitle = '1月8日の誕生花（マンリョウ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0110/';
-  $nextTitle = '1月10日の誕生花（フリージア）とは';
+  $nextTitle = '1月10日の誕生花（ナワシロイチゴ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

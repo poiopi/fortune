@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0107/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月7日の誕生花セリの花言葉・特徴・魅力をわかりやすく解説。「清廉潔白」を象徴する春の七草の意味を紹介します。">
-  <title>1月7日の誕生花はセリ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月7日の誕生花アッツザクラの花言葉・特徴・魅力をわかりやすく解説。「愛を待つ」を象徴する可憐な花の意味を紹介します。">
+  <title>1月7日の誕生花はアッツザクラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"セリはなぜ1月7日に食べられるのですか？","acceptedAnswer":{"@type":"Answer","text":"春の七草の一つとして、無病息災を願う「七草粥」の食材に使われる風習があるためです。"}},
-      {"@type":"Question","name":"セリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「清廉潔白」という花言葉は、清らかな水辺に育つ様子が、汚れのない誠実さを象徴すると考えられてきたことに由来するとされています。"}},
-      {"@type":"Question","name":"セリはどんな場所に生えていますか？","acceptedAnswer":{"@type":"Answer","text":"水田のあぜや湿地、清流の近くなど、水気の多い場所に群生して生えています。"}}
+      {"@type":"Question","name":"アッツザクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏にかけて、桜に似た小さな花を咲かせます。"}},
+      {"@type":"Question","name":"アッツザクラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛を待つ」という花言葉は、小さく可憐な花が控えめに咲く姿に由来するとされています。"}},
+      {"@type":"Question","name":"アッツザクラは桜の仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"名前に「サクラ」とありますが桜の仲間ではなく、花の形が桜に似ていることからこの名がつけられました。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月7日の誕生花（セリ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0107/"}
+      {"@type":"ListItem","position":6,"name":"1月7日の誕生花（アッツザクラ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0107/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月7日の誕生花（セリ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月7日の誕生花（アッツザクラ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 7 · 誕生花</span>
-    <h1>1月7日の誕生花はセリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">セリは、春の七草の一つとして親しまれる1月7日の誕生花です。花言葉は「清廉潔白」。清流に群生する清らかな植物です。</p>
+    <h1>1月7日の誕生花はアッツザクラ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">アッツザクラは、桜に似た小さく可憐な花を咲かせる1月7日の誕生花です。花言葉は「愛を待つ」。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>セリ</dd>
-    <dt>花言葉</dt><dd>清廉潔白</dd>
-    <dt>科名</dt><dd>セリ科</dd>
-    <dt>見頃</dt><dd>1月</dd>
+    <dt>花名</dt><dd>アッツザクラ</dd>
+    <dt>花言葉</dt><dd>愛を待つ</dd>
+    <dt>科名</dt><dd>キンバイザサ科</dd>
+    <dt>見頃</dt><dd>春〜初夏</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">セリとは</a></li>
-      <li><a href="#meaning">セリが象徴する意味</a></li>
-      <li><a href="#charm">セリの魅力</a></li>
+      <li><a href="#about">アッツザクラとは</a></li>
+      <li><a href="#meaning">アッツザクラが象徴する意味</a></li>
+      <li><a href="#charm">アッツザクラの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>セリとは</h2>
-    <p>セリは、セリ科の多年草で、1月7日の誕生花として知られています。春の七草の一つとして古くから親しまれ、清流や湿地に競うように群生することから「セリ」という名がついたと伝えられています。</p>
+    <h2>アッツザクラとは</h2>
+    <p>アッツザクラは、キンバイザサ科の多年草で、1月7日の誕生花として知られています。春から初夏にかけて、桜に似た小さく可憐な花を咲かせることからこの名がつけられました。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>セリが象徴する意味</h2>
-    <p>セリの花言葉は「清廉潔白」です。清らかな水辺に育ち、すっと伸びる姿から、汚れのない清らかな心や誠実さを象徴する植物とされてきました。七草粥の食材としても、無病息災を願う縁起物です。</p>
+    <h2>アッツザクラが象徴する意味</h2>
+    <p>アッツザクラの花言葉は「愛を待つ」です。小さく可憐な花が控えめに咲く姿から、静かに想いを寄せる気持ちを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>セリの魅力</h2>
-    <p>セリの魅力は、清流に群生するみずみずしい緑と、春の訪れを告げる素朴な佇まいにあります。1月7日には七草粥として食されることでも知られ、新年の健康を願う行事とも深く結びついています。1月7日生まれの方はもちろん、清らかな心を大切にしたい方への贈り物にもふさわしい植物です。</p>
+    <h2>アッツザクラの魅力</h2>
+    <p>アッツザクラの魅力は、桜を思わせる愛らしい花姿と、鉢植えでも育てやすいコンパクトなサイズにあります。花壇や寄せ植えにもよく使われ、春から初夏の庭を可憐に彩ってくれます。1月7日生まれの方はもちろん、静かな想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>セリは湿った土壌を好むため、水を切らさないように管理し、日当たりの良い場所で育てるのがおすすめです。</p>
+    <p>アッツザクラは日当たりの良い場所を好み、丈夫で育てやすく、土の表面が乾いたら水を与える程度で十分育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月7日生まれの方はもちろん、健康を願う贈り物としてもセリは親しまれています。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月7日生まれの方はもちろん、静かな想いを伝えたい贈り物としてもアッツザクラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">セリはなぜ1月7日に食べられるのですか？</div>
-        <div class="faq-a">春の七草の一つとして、無病息災を願う「七草粥」の食材に使われる風習があるためです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラはいつ頃咲きますか？</div>
+        <div class="faq-a">春から初夏にかけて、桜に似た小さな花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">セリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「清廉潔白」という花言葉は、清らかな水辺に育つ様子が、汚れのない誠実さを象徴すると考えられてきたことに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「愛を待つ」という花言葉は、小さく可憐な花が控えめに咲く姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">セリはどんな場所に生えていますか？</div>
-        <div class="faq-a">水田のあぜや湿地、清流の近くなど、水気の多い場所に群生して生えています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラは桜の仲間ですか？</div>
+        <div class="faq-a">名前に「サクラ」とありますが桜の仲間ではなく、花の形が桜に似ていることからこの名がつけられました。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>セリは清流に群生する、1月7日の誕生花</li>
-      <li>花言葉は「清廉潔白」、清らかな心を象徴する植物とされる</li>
-      <li>春の七草として無病息災を願う行事とも結びつく</li>
-      <li>湿った土壌を好むため、水を切らさず育てたい</li>
+      <li>アッツザクラは桜に似た花を咲かせる、1月7日の誕生花</li>
+      <li>花言葉は「愛を待つ」、静かな想いを象徴する花とされる</li>
+      <li>可憐な花姿とコンパクトなサイズが魅力</li>
+      <li>丈夫で育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0106/';
-  $prevTitle = '1月6日の誕生花（マンサク）とは';
+  $prevTitle = '1月6日の誕生花（カーネーション）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0108/';
-  $nextTitle = '1月8日の誕生花（スミレ）とは';
+  $nextTitle = '1月8日の誕生花（マンリョウ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

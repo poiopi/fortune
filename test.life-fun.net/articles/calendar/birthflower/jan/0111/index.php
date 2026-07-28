@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0111/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月11日の誕生花ミスミソウ（雪割草）の花言葉・特徴・魅力をわかりやすく解説。「内緒」を象徴する花の意味と由来を紹介します。">
-  <title>1月11日の誕生花はミスミソウ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月11日の誕生花コチョウラン（白）の花言葉・特徴・魅力をわかりやすく解説。「愛をあなたへ」を象徴する洋ランの意味を紹介します。">
+  <title>1月11日の誕生花はコチョウラン（白）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ミスミソウはなぜ「雪割草」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"雪解けの頃にいち早く花を咲かせることから、雪を割って咲く花として「雪割草」という別名で親しまれています。"}},
-      {"@type":"Question","name":"ミスミソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「内緒」という花言葉は、落ち葉の下でひっそりと開花の時を待つ控えめな姿に由来するとされています。"}},
-      {"@type":"Question","name":"ミスミソウはどんな場所に自生していますか？","acceptedAnswer":{"@type":"Answer","text":"山地の落葉樹林の下など、半日陰になる場所に自生していることが多い植物です。"}}
+      {"@type":"Question","name":"コチョウラン（白）はどのくらい花が持ちますか？","acceptedAnswer":{"@type":"Answer","text":"管理次第では1〜2ヶ月以上、長期間美しい花を楽しめます。"}},
+      {"@type":"Question","name":"コチョウラン（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛をあなたへ」という花言葉は、清らかな白い花姿がまっすぐな愛情を伝えることに由来するとされています。"}},
+      {"@type":"Question","name":"白いコチョウランはどんな場面で贈られますか？","acceptedAnswer":{"@type":"Answer","text":"開店祝いや就任祝い、結婚式など、格式高い場面での贈り物として選ばれています。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月11日の誕生花（ミスミソウ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0111/"}
+      {"@type":"ListItem","position":6,"name":"1月11日の誕生花（コチョウラン）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0111/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月11日の誕生花（ミスミソウ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月11日の誕生花（コチョウラン）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 11 · 誕生花</span>
-    <h1>1月11日の誕生花はミスミソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ミスミソウは、雪解けを待つように可憐な花を咲かせる1月11日の誕生花です。花言葉は「内緒」。「雪割草」という別名でも親しまれています。</p>
+    <h1>1月11日の誕生花はコチョウラン（白）<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">コチョウラン（白）は、蝶が舞うような白い花を長く咲かせる1月11日の誕生花です。花言葉は「愛をあなたへ」。上品な印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ミスミソウ</dd>
-    <dt>花言葉</dt><dd>内緒</dd>
-    <dt>科名</dt><dd>キンポウゲ科</dd>
-    <dt>見頃</dt><dd>2月〜4月</dd>
+    <dt>花名</dt><dd>コチョウラン（白）</dd>
+    <dt>花言葉</dt><dd>愛をあなたへ</dd>
+    <dt>科名</dt><dd>ラン科</dd>
+    <dt>見頃</dt><dd>-</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ミスミソウとは</a></li>
-      <li><a href="#meaning">ミスミソウが象徴する意味</a></li>
-      <li><a href="#charm">ミスミソウの魅力</a></li>
+      <li><a href="#about">コチョウラン（白）とは</a></li>
+      <li><a href="#meaning">コチョウラン（白）が象徴する意味</a></li>
+      <li><a href="#charm">コチョウラン（白）の魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ミスミソウとは</h2>
-    <p>ミスミソウは、キンポウゲ科の多年草で、1月11日の誕生花として知られています。「雪割草」という別名でも親しまれ、早春、三角形をした葉の間から雪解けを待つように可憐な花を咲かせます。</p>
+    <h2>コチョウラン（白）とは</h2>
+    <p>コチョウラン（白）は、ラン科の洋ランで、1月11日の誕生花として知られています。蝶が舞うような清らかな白い花を長く咲かせ、その上品な佇まいから贈答用の花としても広く親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ミスミソウが象徴する意味</h2>
-    <p>ミスミソウの花言葉は「内緒」です。落ち葉の下でひっそりと開花の時を待ち、控えめに花を咲かせるその姿から、秘めた想いや静かな秘密を象徴する花とされてきました。</p>
+    <h2>コチョウラン（白）が象徴する意味</h2>
+    <p>コチョウラン（白）の花言葉は「愛をあなたへ」です。白く清らかな花姿が、純粋でまっすぐな愛情を伝える象徴とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ミスミソウの魅力</h2>
-    <p>ミスミソウの魅力は、雪解けの中でそっと顔を出す可憐な花姿と、白・ピンク・紫など多彩な色合いにあります。派手さはなくとも、見つけた人の心を和ませる奥ゆかしい美しさが人気です。1月11日生まれの方はもちろん、秘めた想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>コチョウラン（白）の魅力</h2>
+    <p>コチョウラン（白）の魅力は、蝶が羽ばたくような優雅な花姿と、長く咲き続ける美しさにあります。白の清らかさは格式高い印象を与え、特別な贈り物として長く選ばれ続けています。1月11日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ミスミソウは強い直射日光を嫌うため、半日陰で育て、土が乾ききる前に水を与えるのがおすすめです。</p>
+    <p>コチョウラン（白）は直射日光を避けた明るい室内で育て、水は控えめに、乾いてから与えるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月11日生まれの方はもちろん、静かな想いを伝えたい贈り物としてもミスミソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月11日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物としてもコチョウラン（白）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミスミソウはなぜ「雪割草」と呼ばれるのですか？</div>
-        <div class="faq-a">雪解けの頃にいち早く花を咲かせることから、雪を割って咲く花として「雪割草」という別名で親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">コチョウラン（白）はどのくらい花が持ちますか？</div>
+        <div class="faq-a">管理次第では1〜2ヶ月以上、長期間美しい花を楽しめます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミスミソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「内緒」という花言葉は、落ち葉の下でひっそりと開花の時を待つ控えめな姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">コチョウラン（白）の花言葉の由来は何ですか？</div>
+        <div class="faq-a">「愛をあなたへ」という花言葉は、清らかな白い花姿がまっすぐな愛情を伝えることに由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミスミソウはどんな場所に自生していますか？</div>
-        <div class="faq-a">山地の落葉樹林の下など、半日陰になる場所に自生していることが多い植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">白いコチョウランはどんな場面で贈られますか？</div>
+        <div class="faq-a">開店祝いや就任祝い、結婚式など、格式高い場面での贈り物として選ばれています。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ミスミソウは雪解けとともに咲く、1月11日の誕生花</li>
-      <li>花言葉は「内緒」、秘めた想いを象徴する花とされる</li>
-      <li>控えめで可憐な花姿が魅力</li>
-      <li>直射日光を嫌うため、半日陰で育てたい</li>
+      <li>コチョウラン（白）は蝶が舞うような、1月11日の誕生花</li>
+      <li>花言葉は「愛をあなたへ」、まっすぐな愛情を象徴する花とされる</li>
+      <li>清らかな白と長く咲き続ける美しさが魅力</li>
+      <li>水は控えめに、乾いてから与えて育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0110/';
-  $prevTitle = '1月10日の誕生花（フリージア）とは';
+  $prevTitle = '1月10日の誕生花（ナワシロイチゴ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0112/';
-  $nextTitle = '1月12日の誕生花（スイートアリッサム）とは';
+  $nextTitle = '1月12日の誕生花（カンツバキ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

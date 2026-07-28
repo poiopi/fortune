@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0116/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月16日の誕生花デンドロビウムの花言葉・特徴・魅力をわかりやすく解説。「わがままな美人」を象徴する花の意味を紹介します。">
-  <title>1月16日の誕生花はデンドロビウム｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月16日の誕生花オキザリスの花言葉・特徴・魅力をわかりやすく解説。「ひたむきな愛」を象徴する花の意味を紹介します。">
+  <title>1月16日の誕生花はオキザリス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"デンドロビウムにはどんな種類がありますか？","acceptedAnswer":{"@type":"Answer","text":"世界中に1000種以上あるとされ、花の色や形が非常に多彩なことで知られています。"}},
-      {"@type":"Question","name":"デンドロビウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「わがままな美人」という花言葉は、華やかで存在感のある花姿に由来するとされています。"}},
-      {"@type":"Question","name":"デンドロビウムはどのくらい花が咲き続けますか？","acceptedAnswer":{"@type":"Answer","text":"品種にもよりますが、1〜2ヶ月程度花を楽しめることが多いです。"}}
+      {"@type":"Question","name":"オキザリスはなぜ夜に花を閉じるのですか？","acceptedAnswer":{"@type":"Answer","text":"光に反応して開閉する性質があり、夜間や曇りの日には花を閉じるとされています。"}},
+      {"@type":"Question","name":"オキザリスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ひたむきな愛」という花言葉は、日が昇るたびに花を開き律儀に繰り返す姿に由来するとされています。"}},
+      {"@type":"Question","name":"オキザリスは育てやすい花ですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすく、初心者でも扱いやすい植物として人気があります。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月16日の誕生花（デンドロビウム）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0116/"}
+      {"@type":"ListItem","position":6,"name":"1月16日の誕生花（オキザリス）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0116/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月16日の誕生花（デンドロビウム）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月16日の誕生花（オキザリス）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 16 · 誕生花</span>
-    <h1>1月16日の誕生花はデンドロビウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">デンドロビウムは、茎に沿って多数の花を咲かせる1月16日の誕生花です。花言葉は「わがままな美人」。</p>
+    <h1>1月16日の誕生花はオキザリス<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">オキザリスは、日中に開き夜には閉じる1月16日の誕生花です。花言葉は「ひたむきな愛」。小さく可憐な花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>デンドロビウム</dd>
-    <dt>花言葉</dt><dd>わがままな美人</dd>
-    <dt>科名</dt><dd>ラン科</dd>
-    <dt>見頃</dt><dd>冬〜春</dd>
+    <dt>花名</dt><dd>オキザリス</dd>
+    <dt>花言葉</dt><dd>ひたむきな愛</dd>
+    <dt>科名</dt><dd>カタバミ科</dd>
+    <dt>見頃</dt><dd>-</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">デンドロビウムとは</a></li>
-      <li><a href="#meaning">デンドロビウムが象徴する意味</a></li>
-      <li><a href="#charm">デンドロビウムの魅力</a></li>
+      <li><a href="#about">オキザリスとは</a></li>
+      <li><a href="#meaning">オキザリスが象徴する意味</a></li>
+      <li><a href="#charm">オキザリスの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>デンドロビウムとは</h2>
-    <p>デンドロビウムは、ラン科の着生植物で、1月16日の誕生花として知られています。茎に沿って多数の花を咲かせる、洋ランの中でも特に品種が豊富な花で、色や形のバリエーションの多さでも知られています。</p>
+    <h2>オキザリスとは</h2>
+    <p>オキザリスは、カタバミ科の多年草で、1月16日の誕生花として知られています。日中に花を開き、夜には閉じるという特徴的な性質を持つ、小さく可憐な花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>デンドロビウムが象徴する意味</h2>
-    <p>デンドロビウムの花言葉は「わがままな美人」です。華やかで存在感のある花姿から、自分らしさを貫く美しさを象徴する花とされてきました。</p>
+    <h2>オキザリスが象徴する意味</h2>
+    <p>オキザリスの花言葉は「ひたむきな愛」です。日が昇るたびに花を開き、律儀に繰り返すその姿から、変わらず一途に想い続ける心を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>デンドロビウムの魅力</h2>
-    <p>デンドロビウムの魅力は、一本の茎にいくつもの花を連ねて咲かせる華やかさと、清楚でありながら凛とした花姿にあります。品種によって多彩な表情を見せることも人気の理由です。1月16日生まれの方はもちろん、個性的な魅力を伝えたい贈り物にもふさわしい花です。</p>
+    <h2>オキザリスの魅力</h2>
+    <p>オキザリスの魅力は、日の光に合わせて開閉する愛らしい習性と、小さいながらも存在感のある花姿にあります。鉢植えやグラウンドカバーとしても育てやすく、日々の変化を楽しませてくれます。1月16日生まれの方はもちろん、ひたむきな想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>デンドロビウムは日当たりの良い場所を好み、生育期はしっかり水を与え、休眠期は控えめにするのがおすすめです。</p>
+    <p>オキザリスは日当たりの良い場所を好み、丈夫で育てやすく、土の表面が乾いたら水を与える程度で十分育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月16日生まれの方はもちろん、個性を大切にする方への贈り物としてもデンドロビウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月16日生まれの方はもちろん、ひたむきな想いを伝えたい贈り物としてもオキザリスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デンドロビウムにはどんな種類がありますか？</div>
-        <div class="faq-a">世界中に1000種以上あるとされ、花の色や形が非常に多彩なことで知られています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オキザリスはなぜ夜に花を閉じるのですか？</div>
+        <div class="faq-a">光に反応して開閉する性質があり、夜間や曇りの日には花を閉じるとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デンドロビウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「わがままな美人」という花言葉は、華やかで存在感のある花姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オキザリスの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「ひたむきな愛」という花言葉は、日が昇るたびに花を開き律儀に繰り返す姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デンドロビウムはどのくらい花が咲き続けますか？</div>
-        <div class="faq-a">品種にもよりますが、1〜2ヶ月程度花を楽しめることが多いです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オキザリスは育てやすい花ですか？</div>
+        <div class="faq-a">丈夫で育てやすく、初心者でも扱いやすい植物として人気があります。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>デンドロビウムは茎に沿って花を咲かせる、1月16日の誕生花</li>
-      <li>花言葉は「わがままな美人」、自分らしい美しさを象徴する花とされる</li>
-      <li>品種豊富で多彩な花姿が魅力</li>
-      <li>生育期と休眠期で水やりを調整して育てたい</li>
+      <li>オキザリスは日中に開き夜に閉じる、1月16日の誕生花</li>
+      <li>花言葉は「ひたむきな愛」、一途な想いを象徴する花とされる</li>
+      <li>光に合わせて開閉する愛らしい習性が魅力</li>
+      <li>丈夫で育てやすい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0115/';
-  $prevTitle = '1月15日の誕生花（オンシジューム）とは';
+  $prevTitle = '1月15日の誕生花（ポピー）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0117/';
-  $nextTitle = '1月17日の誕生花（コチョウラン）とは';
+  $nextTitle = '1月17日の誕生花（スイカズラ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

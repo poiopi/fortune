@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0130/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月30日の誕生花ムスカリの花言葉・特徴・魅力をわかりやすく解説。ぶどうの房のような花の意味を紹介します。">
-  <title>1月30日の誕生花はムスカリ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月30日の誕生花サクラソウの花言葉・特徴・魅力をわかりやすく解説。「忠実」を象徴する可憐な花の意味を紹介します。">
+  <title>1月30日の誕生花はサクラソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ムスカリの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の香りが麝香（ムスク）に似ていることに由来するとされています。"}},
-      {"@type":"Question","name":"ムスカリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「失望」はギリシャ神話に由来するとされていますが、色や文脈によって前向きな意味が添えられることもあります。"}},
-      {"@type":"Question","name":"ムスカリはどのくらいの大きさになりますか？","acceptedAnswer":{"@type":"Answer","text":"草丈15〜20センチほどのコンパクトな植物で、寄せ植えにも使いやすいサイズです。"}}
+      {"@type":"Question","name":"サクラソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、桜に似た小さな花を房状に咲かせます。"}},
+      {"@type":"Question","name":"サクラソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「忠実」という花言葉は、毎年変わらず同じ場所に花を咲かせる律儀な姿に由来するとされています。"}},
+      {"@type":"Question","name":"サクラソウと桜は関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"植物として直接の関係はありませんが、花の形が桜に似ていることからこの名がつけられました。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月30日の誕生花（ムスカリ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0130/"}
+      {"@type":"ListItem","position":6,"name":"1月30日の誕生花（サクラソウ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0130/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月30日の誕生花（ムスカリ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月30日の誕生花（サクラソウ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 30 · 誕生花</span>
-    <h1>1月30日の誕生花はムスカリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ムスカリは、ぶどうの房のような青紫色の花が特徴の1月30日の誕生花です。</p>
+    <h1>1月30日の誕生花はサクラソウ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">サクラソウは、桜に似た小さな花を房状に咲かせる1月30日の誕生花です。花言葉は「忠実」。可憐で優しい印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>ムスカリ</dd>
-    <dt>花言葉</dt><dd>失望</dd>
-    <dt>科名</dt><dd>キジカクシ科</dd>
-    <dt>見頃</dt><dd>3月〜4月</dd>
+    <dt>花名</dt><dd>サクラソウ</dd>
+    <dt>花言葉</dt><dd>忠実</dd>
+    <dt>科名</dt><dd>サクラソウ科</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ムスカリとは</a></li>
-      <li><a href="#meaning">ムスカリが象徴する意味</a></li>
-      <li><a href="#charm">ムスカリの魅力</a></li>
+      <li><a href="#about">サクラソウとは</a></li>
+      <li><a href="#meaning">サクラソウが象徴する意味</a></li>
+      <li><a href="#charm">サクラソウの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ムスカリとは</h2>
-    <p>ムスカリは、キジカクシ科の球根植物で、1月30日の誕生花として知られています。春にぶどうの房のような形をした青紫色の小花を密集させて咲かせ、その愛らしい姿から花壇や寄せ植えでも人気があります。</p>
+    <h2>サクラソウとは</h2>
+    <p>サクラソウは、サクラソウ科の多年草で、1月30日の誕生花として知られています。春に桜に似た小さな花を房状に咲かせ、その可憐で優しい印象から古くから日本で親しまれてきた花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>ムスカリが象徴する意味</h2>
-    <p>ムスカリの花言葉は「失望」です。ギリシャ神話に由来するとされる花言葉で、切ない伝説と結びつけられていますが、青紫色そのものには「通じ合う心」といった前向きな意味が添えられることもあります。</p>
+    <h2>サクラソウが象徴する意味</h2>
+    <p>サクラソウの花言葉は「忠実」です。毎年変わらず同じ場所に花を咲かせるその律儀な姿から、変わらぬ誠実さや忠実さを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>ムスカリの魅力</h2>
-    <p>ムスカリの魅力は、ぶどうの房を思わせる愛らしい形と、春らしい爽やかな青紫色にあります。他の花との寄せ植えでも引き立て役として活躍し、庭に春らしさを添えてくれます。1月30日生まれの方はもちろん、素朴で愛らしい印象を届けたい贈り物にもふさわしい花です。</p>
+    <h2>サクラソウの魅力</h2>
+    <p>サクラソウの魅力は、桜を思わせる愛らしい花が房状に連なって咲く可憐さと、優しい色合いにあります。鉢植えや庭植えでも育てやすく、春の訪れを穏やかに告げてくれます。1月30日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>ムスカリは日当たりの良い場所を好み、丈夫で育てやすく、植えっぱなしでも毎年花を咲かせやすい球根植物です。</p>
+    <p>サクラソウは半日陰を好み、乾燥を嫌うため、土が乾ききる前に水を与えるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月30日生まれの方はもちろん、素朴な愛らしさを届けたい贈り物としてもムスカリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月30日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物としてもサクラソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムスカリの名前の由来は何ですか？</div>
-        <div class="faq-a">花の香りが麝香（ムスク）に似ていることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サクラソウはいつ頃咲きますか？</div>
+        <div class="faq-a">春に、桜に似た小さな花を房状に咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムスカリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「失望」はギリシャ神話に由来するとされていますが、色や文脈によって前向きな意味が添えられることもあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サクラソウの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「忠実」という花言葉は、毎年変わらず同じ場所に花を咲かせる律儀な姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムスカリはどのくらいの大きさになりますか？</div>
-        <div class="faq-a">草丈15〜20センチほどのコンパクトな植物で、寄せ植えにも使いやすいサイズです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サクラソウと桜は関係がありますか？</div>
+        <div class="faq-a">植物として直接の関係はありませんが、花の形が桜に似ていることからこの名がつけられました。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>ムスカリはぶどうの房のような、1月30日の誕生花</li>
-      <li>花言葉は「失望」だが、前向きな意味が添えられることもある</li>
-      <li>愛らしい形と春らしい色合いが魅力</li>
-      <li>丈夫で植えっぱなしでも育てやすい</li>
+      <li>サクラソウは春に桜に似た花を咲かせる、1月30日の誕生花</li>
+      <li>花言葉は「忠実」、変わらぬ誠実さを象徴する花とされる</li>
+      <li>房状に咲く可憐で優しい花姿が魅力</li>
+      <li>乾燥を嫌うため、半日陰で育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0129/';
-  $prevTitle = '1月29日の誕生花（ラナンキュラス）とは';
+  $prevTitle = '1月29日の誕生花（スミレ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0131/';
-  $nextTitle = '1月31日の誕生花（クロッカス）とは';
+  $nextTitle = '1月31日の誕生花（ウメ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

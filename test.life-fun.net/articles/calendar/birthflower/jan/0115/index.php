@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0115/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月15日の誕生花オンシジュームの花言葉・特徴・魅力をわかりやすく解説。「一緒に踊って」を象徴する花の意味を紹介します。">
-  <title>1月15日の誕生花はオンシジューム｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月15日の誕生花ポピーの花言葉・特徴・魅力をわかりやすく解説。「やすらぎ」を象徴する繊細な花の意味を紹介します。">
+  <title>1月15日の誕生花はポピー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オンシジュームはなぜ「ダンシングレディー」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"小花が風に揺れる姿が、まるでドレスをまとった女性が踊っているように見えることに由来するとされています。"}},
-      {"@type":"Question","name":"オンシジュームの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「一緒に踊って」という花言葉は、軽やかに揺れる花姿に由来するとされています。"}},
-      {"@type":"Question","name":"オンシジュームはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"品種によって異なりますが、チョコレートやバニラに似た甘い香りを持つものもあります。"}}
+      {"@type":"Question","name":"ポピーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、薄く繊細な花びらの花を咲かせます。"}},
+      {"@type":"Question","name":"ポピーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「やすらぎ」という花言葉は、風に揺れる薄い花びらが醸し出す穏やかな雰囲気に由来するとされています。"}},
+      {"@type":"Question","name":"ポピーにはどんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤・オレンジ・白・ピンクなど、豊富な色合いがあります。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月15日の誕生花（オンシジューム）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0115/"}
+      {"@type":"ListItem","position":6,"name":"1月15日の誕生花（ポピー）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0115/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月15日の誕生花（オンシジューム）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月15日の誕生花（ポピー）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 15 · 誕生花</span>
-    <h1>1月15日の誕生花はオンシジューム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オンシジュームは、「ダンシングレディー」の愛称で親しまれる1月15日の誕生花です。花言葉は「一緒に踊って」。</p>
+    <h1>1月15日の誕生花はポピー<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ポピーは、薄い花びらが風にそよぐ1月15日の誕生花です。花言葉は「やすらぎ」。繊細ではかない印象の花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>オンシジューム</dd>
-    <dt>花言葉</dt><dd>一緒に踊って</dd>
-    <dt>科名</dt><dd>ラン科</dd>
-    <dt>見頃</dt><dd>冬〜春</dd>
+    <dt>花名</dt><dd>ポピー</dd>
+    <dt>花言葉</dt><dd>やすらぎ</dd>
+    <dt>科名</dt><dd>ケシ科</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オンシジュームとは</a></li>
-      <li><a href="#meaning">オンシジュームが象徴する意味</a></li>
-      <li><a href="#charm">オンシジュームの魅力</a></li>
+      <li><a href="#about">ポピーとは</a></li>
+      <li><a href="#meaning">ポピーが象徴する意味</a></li>
+      <li><a href="#charm">ポピーの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オンシジュームとは</h2>
-    <p>オンシジュームは、ラン科の着生植物で、1月15日の誕生花として知られています。小さな蝶が舞うような黄色い花を無数に咲かせることから「ダンシングレディー」の愛称でも親しまれています。</p>
+    <h2>ポピーとは</h2>
+    <p>ポピーは、ケシ科の植物で、1月15日の誕生花として知られています。春に薄く繊細な花びらを持つ花を咲かせ、風にそよぐその姿から、はかなく可憐な印象を与える花として親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>オンシジュームが象徴する意味</h2>
-    <p>オンシジュームの花言葉は「一緒に踊って」です。風に揺れる花姿がまるで踊っているように見えることから、楽しさや軽やかさを分かち合いたいという想いを象徴する花とされてきました。</p>
+    <h2>ポピーが象徴する意味</h2>
+    <p>ポピーの花言葉は「やすらぎ」です。風に揺れる薄い花びらが醸し出す穏やかな雰囲気から、心安らぐひとときを象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>オンシジュームの魅力</h2>
-    <p>オンシジュームの魅力は、細い茎に無数の小花が連なり、まるで蝶の群れのように軽やかに揺れる姿にあります。明るい黄色は見る人の心を弾ませ、贈り物としても喜ばれます。1月15日生まれの方はもちろん、楽しい気持ちを分かち合いたい贈り物にもふさわしい花です。</p>
+    <h2>ポピーの魅力</h2>
+    <p>ポピーの魅力は、薄く透けるような花びらが風にそよぐ繊細な美しさと、赤・オレンジ・白など豊富な花色にあります。群生して咲く景色は見る人の心を穏やかにしてくれます。1月15日生まれの方はもちろん、安らぎを届けたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>オンシジュームは明るい日陰を好み、水を与えすぎず乾燥気味に管理するのがおすすめです。</p>
+    <p>ポピーは日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月15日生まれの方はもちろん、楽しい気持ちを届けたい贈り物としてもオンシジュームは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月15日生まれの方はもちろん、安らぎを届けたい贈り物としてもポピーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オンシジュームはなぜ「ダンシングレディー」と呼ばれるのですか？</div>
-        <div class="faq-a">小花が風に揺れる姿が、まるでドレスをまとった女性が踊っているように見えることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ポピーはいつ頃咲きますか？</div>
+        <div class="faq-a">春に、薄く繊細な花びらの花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オンシジュームの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「一緒に踊って」という花言葉は、軽やかに揺れる花姿に由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ポピーの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「やすらぎ」という花言葉は、風に揺れる薄い花びらが醸し出す穏やかな雰囲気に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オンシジュームはどんな香りがしますか？</div>
-        <div class="faq-a">品種によって異なりますが、チョコレートやバニラに似た甘い香りを持つものもあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ポピーにはどんな色がありますか？</div>
+        <div class="faq-a">赤・オレンジ・白・ピンクなど、豊富な色合いがあります。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>オンシジュームは小花が舞うように咲く、1月15日の誕生花</li>
-      <li>花言葉は「一緒に踊って」、楽しさを分かち合う心を象徴する花とされる</li>
-      <li>軽やかに揺れる花姿が魅力</li>
-      <li>乾燥気味に管理して育てたい</li>
+      <li>ポピーは春に薄い花びらの花を咲かせる、1月15日の誕生花</li>
+      <li>花言葉は「やすらぎ」、穏やかな心を象徴する花とされる</li>
+      <li>繊細ではかない花姿が魅力</li>
+      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0114/';
-  $prevTitle = '1月14日の誕生花（シクラメン）とは';
+  $prevTitle = '1月14日の誕生花（ブルーデイジー）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0116/';
-  $nextTitle = '1月16日の誕生花（デンドロビウム）とは';
+  $nextTitle = '1月16日の誕生花（オキザリス）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

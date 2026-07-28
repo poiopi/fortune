@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0122/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月22日の誕生花アンスリウムの花言葉・特徴・魅力をわかりやすく解説。「情熱」を象徴する花の意味を紹介します。">
-  <title>1月22日の誕生花はアンスリウム｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="1月22日の誕生花リカステの花言葉・特徴・魅力をわかりやすく解説。「快活」を象徴する大輪の洋ランの意味を紹介します。">
+  <title>1月22日の誕生花はリカステ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アンスリウムのハート形の部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"実は「苞（ほう）」と呼ばれる葉が変化した部分で、中央の棒状の部分が本来の花の集まりです。"}},
-      {"@type":"Question","name":"アンスリウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「情熱」という花言葉は、光沢のある鮮やかな赤色が燃えるような印象を与えることに由来するとされています。"}},
-      {"@type":"Question","name":"アンスリウムはどのくらい花が持ちますか？","acceptedAnswer":{"@type":"Answer","text":"管理が良ければ1ヶ月以上、長期間美しい姿を楽しめる花です。"}}
+      {"@type":"Question","name":"リカステはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、大輪の花を咲かせます。"}},
+      {"@type":"Question","name":"リカステの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「快活」という花言葉は、すっきりと整った花びらと明るい色合いの花姿に由来するとされています。"}},
+      {"@type":"Question","name":"リカステはどんな環境で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"直射日光を避けた明るい場所を好み、乾燥気味に管理すると育てやすい洋ランです。"}}
     ]
   }
   </script>
@@ -107,7 +107,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月22日の誕生花（アンスリウム）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0122/"}
+      {"@type":"ListItem","position":6,"name":"1月22日の誕生花（リカステ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0122/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月22日の誕生花（アンスリウム）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月22日の誕生花（リカステ）とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 22 · 誕生花</span>
-    <h1>1月22日の誕生花はアンスリウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アンスリウムは、つややかなハート形が特徴の1月22日の誕生花です。花言葉は「情熱」。</p>
+    <h1>1月22日の誕生花はリカステ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">リカステは、大輪の花を咲かせる1月22日の誕生花です。花言葉は「快活」。すっきりと整った花びらが特徴の洋ランです。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>アンスリウム</dd>
-    <dt>花言葉</dt><dd>情熱</dd>
-    <dt>科名</dt><dd>サトイモ科</dd>
-    <dt>見頃</dt><dd>通年</dd>
+    <dt>花名</dt><dd>リカステ</dd>
+    <dt>花言葉</dt><dd>快活</dd>
+    <dt>科名</dt><dd>ラン科</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アンスリウムとは</a></li>
-      <li><a href="#meaning">アンスリウムが象徴する意味</a></li>
-      <li><a href="#charm">アンスリウムの魅力</a></li>
+      <li><a href="#about">リカステとは</a></li>
+      <li><a href="#meaning">リカステが象徴する意味</a></li>
+      <li><a href="#charm">リカステの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アンスリウムとは</h2>
-    <p>アンスリウムは、サトイモ科の多年草で、1月22日の誕生花として知られています。つややかなハート形の苞（ほう）が特徴で、一年を通して咲き続けることから、南国生まれの観葉植物としても親しまれています。</p>
+    <h2>リカステとは</h2>
+    <p>リカステは、ラン科の洋ランで、1月22日の誕生花として知られています。春に大輪の花を咲かせ、その整った花姿から洋ランの中でも人気の高い品種です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>アンスリウムが象徴する意味</h2>
-    <p>アンスリウムの花言葉は「情熱」です。光沢のある鮮やかな赤い苞が燃えるような印象を与えることから、熱い想いや強い情熱を象徴する花とされてきました。</p>
+    <h2>リカステが象徴する意味</h2>
+    <p>リカステの花言葉は「快活」です。すっきりと整った花びらと、明るい色合いの花姿から、明るく生き生きとした印象を象徴する花とされてきました。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>アンスリウムの魅力</h2>
-    <p>アンスリウムの魅力は、つややかで存在感のあるハート形の苞と、モダンで華やかな雰囲気にあります。インテリアグリーンとしても人気が高く、空間に南国的な華やかさを添えてくれます。1月22日生まれの方はもちろん、情熱的な想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>リカステの魅力</h2>
+    <p>リカステの魅力は、大輪で存在感のある花姿と、すっきりとした花びらの美しさにあります。洋ランならではの気品を保ちながらも、明るく親しみやすい印象を与えてくれます。1月22日生まれの方はもちろん、明るい気持ちを届けたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>アンスリウムは明るい日陰を好み、乾燥に弱いため、土の表面が乾いたら水を与え、葉水も適度に行うのがおすすめです。</p>
+    <p>リカステは直射日光を避けた明るい場所を好み、乾燥気味に管理するのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>1月22日生まれの方はもちろん、情熱的な気持ちを伝えたい贈り物としてもアンスリウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>1月22日生まれの方はもちろん、明るい気持ちを届けたい贈り物としてもリカステは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムのハート形の部分は花びらですか？</div>
-        <div class="faq-a">実は「苞（ほう）」と呼ばれる葉が変化した部分で、中央の棒状の部分が本来の花の集まりです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">リカステはいつ頃咲きますか？</div>
+        <div class="faq-a">春に、大輪の花を咲かせます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「情熱」という花言葉は、光沢のある鮮やかな赤色が燃えるような印象を与えることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">リカステの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「快活」という花言葉は、すっきりと整った花びらと明るい色合いの花姿に由来するとされています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムはどのくらい花が持ちますか？</div>
-        <div class="faq-a">管理が良ければ1ヶ月以上、長期間美しい姿を楽しめる花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">リカステはどんな環境で育てやすいですか？</div>
+        <div class="faq-a">直射日光を避けた明るい場所を好み、乾燥気味に管理すると育てやすい洋ランです。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>アンスリウムはつややかなハート形が特徴的な、1月22日の誕生花</li>
-      <li>花言葉は「情熱」、熱い想いを象徴する花とされる</li>
-      <li>モダンで華やかな存在感が魅力</li>
-      <li>乾燥に弱いため、水やりと葉水を適度に行いたい</li>
+      <li>リカステは春に大輪の花を咲かせる、1月22日の誕生花</li>
+      <li>花言葉は「快活」、明るく生き生きとした印象を象徴する花とされる</li>
+      <li>整った花姿と気品が魅力</li>
+      <li>乾燥気味に管理して育てたい</li>
     </ul>
   </section>
 
@@ -223,9 +223,9 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0121/';
-  $prevTitle = '1月21日の誕生花（ロウバイ）とは';
+  $prevTitle = '1月21日の誕生花（スイセン）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0123/';
-  $nextTitle = '1月23日の誕生花（スノーフレーク）とは';
+  $nextTitle = '1月23日の誕生花（オウバイ）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';
