@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0229/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0317/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月29日の誕生花パンジーの花言葉・特徴・魅力をわかりやすく解説。「もの思い」を象徴する冬から春に咲く花の意味を紹介します。">
-  <title>2月29日の誕生花はパンジー｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="3月17日の誕生花ブルーレースフラワーの花言葉・特徴・魅力をわかりやすく解説。「無言の愛」を象徴するレースのように咲く花の意味を紹介します。">
+  <title>3月17日の誕生花はブルーレースフラワー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -90,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"パンジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、色とりどりの花を長期間咲かせます。花壇の定番として親しまれる一年草です。"}},
-      {"@type":"Question","name":"パンジーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「もの思い」という花言葉は、花の中央にある模様が人の顔がうつむいて物思いにふけっているように見えることに由来するとされています。"}},
-      {"@type":"Question","name":"パンジーとビオラはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらもスミレ科の仲間ですが、パンジーはビオラより花が大きく、色や模様のバリエーションが豊富です。"}}
+      {"@type":"Question","name":"ブルーレースフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏にレースのような繊細な質感の花を咲かせます。セリ科の一年草で、青紫の色合いが上品な印象を与えます。"}},
+      {"@type":"Question","name":"ブルーレースフラワーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「無言の愛」という花言葉は、控えめに美しさを添える花の在り方が、言葉にせずとも伝わる静かな愛情を思わせることに由来すると言われています。"}},
+      {"@type":"Question","name":"ブルーレースフラワーはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が無数に集まり、レース編みのように繊細な質感の花房を作ります。ブーケの名脇役として重宝される花です。"}}
     ]
   }
   </script>
@@ -106,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"2月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/"},
-      {"@type":"ListItem","position":6,"name":"2月29日の誕生花（パンジー）とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/0229/"}
+      {"@type":"ListItem","position":5,"name":"3月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/mar/"},
+      {"@type":"ListItem","position":6,"name":"3月17日の誕生花（ブルーレースフラワー）とは","item":"https://life-fun.net/articles/calendar/birthflower/mar/0317/"}
     ]
   }
   </script>
@@ -123,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/feb/">2月の誕生花とは</a><span>›</span>2月29日の誕生花（パンジー）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/mar/">3月の誕生花とは</a><span>›</span>3月17日の誕生花（ブルーレースフラワー）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">FEBRUARY 29 · 誕生花</span>
-    <h1>2月29日の誕生花はパンジー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">パンジーは、スミレ科の一年草で、冬から春に色とりどりの花を長期間咲かせる2月29日の誕生花です。花言葉は「もの思い」。親しみやすく明るい印象の花です。</p>
+    <span class="art-label">MARCH 17 · 誕生花</span>
+    <h1>3月17日の誕生花はブルーレースフラワー<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ブルーレースフラワーは、セリ科の一年草で、初夏にレースのような花を咲かせる3月17日の誕生花です。花言葉は「無言の愛」。繊細で上品な花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>パンジー</dd>
-    <dt>花言葉</dt><dd>もの思い</dd>
-    <dt>科名</dt><dd>スミレ科</dd>
-    <dt>見頃</dt><dd>冬から春</dd>
+    <dt>花名</dt><dd>ブルーレースフラワー</dd>
+    <dt>花言葉</dt><dd>無言の愛</dd>
+    <dt>科名</dt><dd>セリ科</dd>
+    <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
   <?php
@@ -150,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">パンジーとは</a></li>
-      <li><a href="#meaning">パンジーが象徴する意味</a></li>
-      <li><a href="#charm">パンジーの魅力</a></li>
+      <li><a href="#about">ブルーレースフラワーとは</a></li>
+      <li><a href="#meaning">ブルーレースフラワーが象徴する意味</a></li>
+      <li><a href="#charm">ブルーレースフラワーの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -161,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>パンジーとは</h2>
-    <p>パンジーは、スミレ科の一年草で、2月29日の誕生花として知られています。冬から春にかけての長い期間、赤や黄、紫など色とりどりの花を咲かせ続け、花壇の定番として親しまれています。</p>
+    <h2>ブルーレースフラワーとは</h2>
+    <p>ブルーレースフラワーは、セリ科の一年草で、3月17日の誕生花として知られています。小さな花が無数に集まり、レース編みのように繊細な質感の花房を作り出すことからこの名がつけられ、青紫の色合いが上品な印象を与える花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>パンジーが象徴する意味</h2>
-    <p>パンジーの花言葉は「もの思い」です。花の中央にある模様が、人の顔がうつむいて物思いにふけっているように見えることに由来するとされています。名前もフランス語で「考え」を意味する言葉から来ているといわれます。</p>
+    <h2>ブルーレースフラワーが象徴する意味</h2>
+    <p>ブルーレースフラワーの花言葉は「無言の愛」です。派手に主張することなく、細やかなレースのような姿でひっそりと美しさを添える花の在り方が、言葉にせずとも伝わる静かな愛情を思わせることに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>パンジーの魅力</h2>
-    <p>パンジーの魅力は、豊富なカラーバリエーションと、冬から春の長い期間にわたって花を楽しめる丈夫さにあります。花壇や寄せ植えの主役として、多くの庭を明るく彩ってくれる存在です。2月29日生まれの方はもちろん、じっくりと想いを巡らせる時間を届けたい贈り物にもふさわしい花です。</p>
+    <h2>ブルーレースフラワーの魅力</h2>
+    <p>ブルーレースフラワーの魅力は、繊細に広がる花房が生み出す独特の質感と、他の花を引き立てる控えめな上品さにあります。花束の中に添えるだけで全体の雰囲気を柔らかく格上げしてくれるため、ブーケの名脇役として重宝されます。3月17日生まれの方はもちろん、言葉にできない想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>パンジーは日当たりの良い場所を好み、水切れに注意しながら育てるのがおすすめです。こまめに花がらを摘むことで、長い期間花を咲かせ続けてくれます。</p>
+    <p>ブルーレースフラワーは日当たりと風通しの良い場所を好み、水はけの良い土で育てるのがおすすめです。茎が細く倒れやすいため、支柱を立てて育てるとよいでしょう。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>2月29日生まれの方はもちろん、じっくりと物思いにふける穏やかな時間を届けたい贈り物としてもパンジーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>3月17日生まれの方はもちろん、言葉にできない想いを届けたい贈り物としてもブルーレースフラワーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パンジーはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、色とりどりの花を長期間咲かせます。花壇の定番として親しまれる一年草です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーはいつ頃咲きますか？</div>
+        <div class="faq-a">初夏にレースのような繊細な質感の花を咲かせます。セリ科の一年草で、青紫の色合いが上品な印象を与えます。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パンジーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「もの思い」という花言葉は、花の中央にある模様が人の顔がうつむいて物思いにふけっているように見えることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「無言の愛」という花言葉は、控えめに美しさを添える花の在り方が、言葉にせずとも伝わる静かな愛情を思わせることに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パンジーとビオラはどう違いますか？</div>
-        <div class="faq-a">どちらもスミレ科の仲間ですが、パンジーはビオラより花が大きく、色や模様のバリエーションが豊富です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーはどんな咲き方をしますか？</div>
+        <div class="faq-a">小さな花が無数に集まり、レース編みのように繊細な質感の花房を作ります。ブーケの名脇役として重宝される花です。</div>
       </div>
     </div>
   </section>
@@ -206,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>パンジーは冬から春に色とりどりの花を咲かせる、2月29日の誕生花</li>
-      <li>花言葉は「もの思い」、花の模様が人の顔に見えることに由来する</li>
-      <li>豊富なカラーバリエーションと長い花期が魅力</li>
-      <li>日当たりの良い場所で水切れに注意し、花がら摘みで育てたい</li>
+      <li>ブルーレースフラワーは初夏にレースのような花を咲かせる、3月17日の誕生花</li>
+      <li>花言葉は「無言の愛」、控えめに美しさを添える花姿に由来する</li>
+      <li>繊細な質感の花房と上品な青紫の色合いが魅力</li>
+      <li>水はけの良い場所で、支柱を立てて倒伏を防ぎながら育てたい</li>
     </ul>
   </section>
 
@@ -222,12 +222,12 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = '/articles/calendar/birthflower/feb/0228/';
-  $prevTitle = '2月28日の誕生花（ロウバイ）とは';
-  $nextUrl   = '/articles/calendar/birthflower/mar/0301/';
-  $nextTitle = '3月1日の誕生花（ボケ）とは';
-  $listUrl   = '/articles/calendar/birthflower/feb/';
-  $listTitle = '2月の誕生花一覧';
+  $prevUrl   = '/articles/calendar/birthflower/mar/0316/';
+  $prevTitle = '3月16日の誕生花（ビジョナデシコ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/mar/0318/';
+  $nextTitle = '3月18日の誕生花（ジンチョウゲ）とは';
+  $listUrl   = '/articles/calendar/birthflower/mar/';
+  $listTitle = '3月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
@@ -236,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'2月の誕生花一覧', 'title'=>'2月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/feb/'],
+      ['label'=>'3月の誕生花一覧', 'title'=>'3月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/mar/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -253,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-feb-0229'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-mar-0317'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-feb-0229');
+echo autoLink($html, 'birthflower-mar-0317');
 ?>
