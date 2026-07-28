@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0331/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0401/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月31日の誕生花キンセンカの花言葉・特徴・魅力をわかりやすく解説。「変身・再生」を象徴する太陽を思わせる花の意味を紹介します。">
-  <title>3月31日の誕生花はキンセンカ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="4月1日の誕生花クロッカス（黄）の花言葉・特徴・魅力をわかりやすく解説。「切望」を象徴する春を告げる花の意味を紹介します。">
+  <title>4月1日の誕生花はクロッカス（黄）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、鮮やかな橙黄色の花を咲かせます。キク科の一年草で、長い開花期間が特徴です。"}},
-      {"@type":"Question","name":"キンセンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「変身・再生」という花言葉は、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたというギリシャ神話に由来すると言われています。"}},
-      {"@type":"Question","name":"キンセンカは食べることもできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。エディブルフラワー（食用花）としてサラダなどに添えられるほか、肌にやさしい成分を含むことからスキンケア用品の原料としても使われています。"}}
+      {"@type":"Question","name":"クロッカス（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、雪解けの頃から鮮やかな黄色の花を咲かせます。アヤメ科の球根植物で、春を告げる花として親しまれています。"}},
+      {"@type":"Question","name":"クロッカス（黄）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「切望」という花言葉は、長い冬の終わりを待ちわびるように、いち早く花を咲かせる姿に由来すると言われています。"}},
+      {"@type":"Question","name":"クロッカスにはどんな色の花がありますか？","acceptedAnswer":{"@type":"Answer","text":"黄色のほか、紫や白の花を咲かせる品種もあります。色によって花言葉が異なる場合があります。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"3月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/mar/"},
-      {"@type":"ListItem","position":6,"name":"3月31日の誕生花（キンセンカ）とは","item":"https://life-fun.net/articles/calendar/birthflower/mar/0331/"}
+      {"@type":"ListItem","position":5,"name":"4月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/apr/"},
+      {"@type":"ListItem","position":6,"name":"4月1日の誕生花（クロッカス（黄））とは","item":"https://life-fun.net/articles/calendar/birthflower/apr/0401/"}
     ]
   }
   </script>
@@ -126,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/mar/">3月の誕生花とは</a><span>›</span>3月31日の誕生花（キンセンカ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/apr/">4月の誕生花とは</a><span>›</span>4月1日の誕生花（クロッカス（黄））とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">MARCH 31 · 誕生花</span>
-    <h1>3月31日の誕生花はキンセンカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キンセンカは、キク科の一年草で、冬から春に鮮やかな橙黄色の花を咲かせる3月31日の誕生花です。花言葉は「変身・再生」。明るく温かみのある花です。</p>
+    <span class="art-label">APRIL 1 · 誕生花</span>
+    <h1>4月1日の誕生花はクロッカス（黄）<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">クロッカス（黄）は、アヤメ科の球根植物で、早春に鮮やかな黄色の花を咲かせる4月1日の誕生花です。花言葉は「切望」。春の訪れを真っ先に告げる、待ち焦がれる想いを感じさせる花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>キンセンカ</dd>
-    <dt>花言葉</dt><dd>変身・再生</dd>
-    <dt>科名</dt><dd>キク科</dd>
-    <dt>見頃</dt><dd>冬から春</dd>
+    <dt>花名</dt><dd>クロッカス（黄）</dd>
+    <dt>花言葉</dt><dd>切望</dd>
+    <dt>科名</dt><dd>アヤメ科</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キンセンカとは</a></li>
-      <li><a href="#meaning">キンセンカが象徴する意味</a></li>
-      <li><a href="#charm">キンセンカの魅力</a></li>
+      <li><a href="#about">クロッカス（黄）とは</a></li>
+      <li><a href="#meaning">クロッカス（黄）が象徴する意味</a></li>
+      <li><a href="#charm">クロッカス（黄）の魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キンセンカとは</h2>
-    <p>キンセンカは、キク科の一年草で、3月31日の誕生花として知られています。英名は「カレンダー（ひと月）」に由来する「カレンデュラ」といい、ほぼ一年を通してどこかで花を咲かせ続けることから名づけられたとされます。橙色や黄色の鮮やかな花色で花壇を彩る、冬から春の代表的な花です。</p>
+    <h2>クロッカス（黄）とは</h2>
+    <p>クロッカス（黄）は、アヤメ科の球根植物で、4月1日の誕生花として知られています。地表すれすれに小さな花を咲かせ、まだ肌寒さの残る早春にいち早く彩りを届けることから、春を告げる花として世界中で親しまれています。黄色い花びらの中心に見えるオレンジ色の雌しべも印象的です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>キンセンカが象徴する意味</h2>
-    <p>キンセンカの花言葉は「変身・再生」です。ギリシャ神話で、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたという伝説に由来すると言われています。花が太陽の動きを追うように向きを変える性質も、この花言葉と結びつけられています。</p>
+    <h2>クロッカス（黄）が象徴する意味</h2>
+    <p>クロッカス（黄）の花言葉は「切望」です。長い冬の終わりを待ちわびるように、地面から顔を出してすぐに花を咲かせる姿が、待ち望んでいたものへの強い想いを重ねられたことに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>キンセンカの魅力</h2>
-    <p>キンセンカの魅力は、寒い季節にも負けない鮮やかな橙黄色の花色と、長い開花期間にあります。食用花（エディブルフラワー）としてサラダに添えられたり、肌にやさしい成分を含むことからスキンケア用品の原料としても使われたりと、観賞以外の楽しみ方も豊富な花です。3月31日生まれの方はもちろん、新しい自分へと踏み出す門出を祝う贈り物にもふさわしい花です。</p>
+    <h2>クロッカス（黄）の魅力</h2>
+    <p>クロッカス（黄）の魅力は、他の花に先駆けて咲く小さくも力強い花姿にあります。群生させると黄色い絨毯のように地面を彩り、庭やプランターに春一番の明るさを添えてくれます。4月1日生まれの方はもちろん、新しい季節の始まりを祝う贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>キンセンカは日当たりの良い場所を好み、寒さに強く育てやすい花です。花がら摘みをこまめに行うことで、冬から春にかけて長く花を咲かせ続けてくれます。</p>
+    <p>クロッカス（黄）は日当たりの良い場所を好み、秋に球根を植えて育てるのが一般的です。過湿に弱いため、水はけの良い土壌で育てるのがおすすめです。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>3月31日生まれの方はもちろん、新しい自分へと踏み出す門出を祝う贈り物としてもキンセンカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>4月1日生まれの方はもちろん、新しい一歩を踏み出す人への贈り物としてもクロッカス（黄）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、鮮やかな橙黄色の花を咲かせます。キク科の一年草で、長い開花期間が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（黄）はいつ頃咲きますか？</div>
+        <div class="faq-a">早春、雪解けの頃から鮮やかな黄色の花を咲かせます。アヤメ科の球根植物で、春を告げる花として親しまれています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「変身・再生」という花言葉は、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたというギリシャ神話に由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（黄）の花言葉の由来は何ですか？</div>
+        <div class="faq-a">「切望」という花言葉は、長い冬の終わりを待ちわびるように、いち早く花を咲かせる姿に由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカは食べることもできますか？</div>
-        <div class="faq-a">はい。エディブルフラワー（食用花）としてサラダなどに添えられるほか、肌にやさしい成分を含むことからスキンケア用品の原料としても使われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカスにはどんな色の花がありますか？</div>
+        <div class="faq-a">黄色のほか、紫や白の花を咲かせる品種もあります。色によって花言葉が異なる場合があります。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>キンセンカは冬から春に橙黄色の花を咲かせる、3月31日の誕生花</li>
-      <li>花言葉は「変身・再生」、花に姿を変えたニンフの神話に由来する</li>
-      <li>長い開花期間とサラダやスキンケアにも使われる実用性が魅力</li>
-      <li>寒さに強く、花がら摘みをしながら育てたい</li>
+      <li>クロッカス（黄）は早春に黄色い花を咲かせる、4月1日の誕生花</li>
+      <li>花言葉は「切望」、春を待ちわびる想いに由来する</li>
+      <li>他の花に先駆けて咲く力強さと明るい花色が魅力</li>
+      <li>日当たりと水はけの良い場所で、秋植えの球根として育てたい</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/mar/0330/',
-      'prevTitle'      => '3月30日の誕生花（ゲッケイジュ）とは',
-      'nextTargetFile' => __DIR__.'/../../apr/0401/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/apr/0401/',
-      'nextTitle'      => '4月1日の誕生花（クロッカス（黄））とは',
-      'listUrl'        => '/articles/calendar/birthflower/mar/',
-      'listTitle'      => '3月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/mar/0331/';
+  $prevTitle = '3月31日の誕生花（キンセンカ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/apr/0402/';
+  $nextTitle = '4月2日の誕生花（デイジー）とは';
+  $listUrl   = '/articles/calendar/birthflower/apr/';
+  $listTitle = '4月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'3月の誕生花一覧', 'title'=>'3月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/mar/'],
+      ['label'=>'4月の誕生花一覧', 'title'=>'4月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/apr/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-mar-0331'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-apr-0401'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-mar-0331');
+echo autoLink($html, 'birthflower-apr-0401');
 ?>

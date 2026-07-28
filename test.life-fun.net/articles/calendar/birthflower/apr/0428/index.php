@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0331/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0428/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月31日の誕生花キンセンカの花言葉・特徴・魅力をわかりやすく解説。「変身・再生」を象徴する太陽を思わせる花の意味を紹介します。">
-  <title>3月31日の誕生花はキンセンカ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="4月28日の誕生花ローズマリーの花言葉・特徴・魅力をわかりやすく解説。「思い出」を象徴する香り高いハーブの意味を紹介します。">
+  <title>4月28日の誕生花はローズマリー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、鮮やかな橙黄色の花を咲かせます。キク科の一年草で、長い開花期間が特徴です。"}},
-      {"@type":"Question","name":"キンセンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「変身・再生」という花言葉は、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたというギリシャ神話に由来すると言われています。"}},
-      {"@type":"Question","name":"キンセンカは食べることもできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。エディブルフラワー（食用花）としてサラダなどに添えられるほか、肌にやさしい成分を含むことからスキンケア用品の原料としても使われています。"}}
+      {"@type":"Question","name":"ローズマリーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して淡青紫色の小花を咲かせます。シソ科の常緑低木で、香りのよいハーブとして親しまれています。"}},
+      {"@type":"Question","name":"ローズマリーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「思い出」という花言葉は、記憶力を高めるハーブとして古くから儀式にも用いられてきたことに由来すると言われています。"}},
+      {"@type":"Question","name":"ローズマリーはどのように活用できますか？","acceptedAnswer":{"@type":"Answer","text":"料理の風味付けやハーブティー、アロマオイル、香り袋など、幅広い用途で日常的に活用されています。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"3月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/mar/"},
-      {"@type":"ListItem","position":6,"name":"3月31日の誕生花（キンセンカ）とは","item":"https://life-fun.net/articles/calendar/birthflower/mar/0331/"}
+      {"@type":"ListItem","position":5,"name":"4月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/apr/"},
+      {"@type":"ListItem","position":6,"name":"4月28日の誕生花（ローズマリー）とは","item":"https://life-fun.net/articles/calendar/birthflower/apr/0428/"}
     ]
   }
   </script>
@@ -126,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/mar/">3月の誕生花とは</a><span>›</span>3月31日の誕生花（キンセンカ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/apr/">4月の誕生花とは</a><span>›</span>4月28日の誕生花（ローズマリー）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">MARCH 31 · 誕生花</span>
-    <h1>3月31日の誕生花はキンセンカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キンセンカは、キク科の一年草で、冬から春に鮮やかな橙黄色の花を咲かせる3月31日の誕生花です。花言葉は「変身・再生」。明るく温かみのある花です。</p>
+    <span class="art-label">APRIL 28 · 誕生花</span>
+    <h1>4月28日の誕生花はローズマリー<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ローズマリーは、シソ科の常緑低木で、一年を通して淡青紫色の小花を咲かせる4月28日の誕生花です。花言葉は「思い出」。爽やかな香りを持つハーブです。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>キンセンカ</dd>
-    <dt>花言葉</dt><dd>変身・再生</dd>
-    <dt>科名</dt><dd>キク科</dd>
-    <dt>見頃</dt><dd>冬から春</dd>
+    <dt>花名</dt><dd>ローズマリー</dd>
+    <dt>花言葉</dt><dd>思い出</dd>
+    <dt>科名</dt><dd>シソ科</dd>
+    <dt>見頃</dt><dd>一年を通して</dd>
   </dl>
 
   <?php
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キンセンカとは</a></li>
-      <li><a href="#meaning">キンセンカが象徴する意味</a></li>
-      <li><a href="#charm">キンセンカの魅力</a></li>
+      <li><a href="#about">ローズマリーとは</a></li>
+      <li><a href="#meaning">ローズマリーが象徴する意味</a></li>
+      <li><a href="#charm">ローズマリーの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キンセンカとは</h2>
-    <p>キンセンカは、キク科の一年草で、3月31日の誕生花として知られています。英名は「カレンダー（ひと月）」に由来する「カレンデュラ」といい、ほぼ一年を通してどこかで花を咲かせ続けることから名づけられたとされます。橙色や黄色の鮮やかな花色で花壇を彩る、冬から春の代表的な花です。</p>
+    <h2>ローズマリーとは</h2>
+    <p>ローズマリーは、シソ科の常緑低木で、4月28日の誕生花として知られています。一年を通して淡い青紫色の小花を咲かせ、葉には清涼感のある香りがあることから、料理やアロマ、ハーブティーなど幅広く活用されるハーブとして親しまれています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>キンセンカが象徴する意味</h2>
-    <p>キンセンカの花言葉は「変身・再生」です。ギリシャ神話で、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたという伝説に由来すると言われています。花が太陽の動きを追うように向きを変える性質も、この花言葉と結びつけられています。</p>
+    <h2>ローズマリーが象徴する意味</h2>
+    <p>ローズマリーの花言葉は「思い出」です。ヨーロッパでは古くから記憶力を高めるハーブとして扱われ、結婚式や葬儀などの記憶に残る儀式にも用いられてきたことに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>キンセンカの魅力</h2>
-    <p>キンセンカの魅力は、寒い季節にも負けない鮮やかな橙黄色の花色と、長い開花期間にあります。食用花（エディブルフラワー）としてサラダに添えられたり、肌にやさしい成分を含むことからスキンケア用品の原料としても使われたりと、観賞以外の楽しみ方も豊富な花です。3月31日生まれの方はもちろん、新しい自分へと踏み出す門出を祝う贈り物にもふさわしい花です。</p>
+    <h2>ローズマリーの魅力</h2>
+    <p>ローズマリーの魅力は、一年を通して香りと花を楽しめる丈夫さと、清涼感のある爽やかな香りにあります。料理の風味付けから香り袋、アロマオイルまで、日々の暮らしに取り入れやすい実用性の高さも魅力です。4月28日生まれの方はもちろん、大切な思い出を分かち合いたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>キンセンカは日当たりの良い場所を好み、寒さに強く育てやすい花です。花がら摘みをこまめに行うことで、冬から春にかけて長く花を咲かせ続けてくれます。</p>
+    <p>ローズマリーは日当たりと水はけの良い場所を好み、乾燥に強く丈夫に育ちます。過湿を嫌うため、水の与えすぎには注意が必要です。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>3月31日生まれの方はもちろん、新しい自分へと踏み出す門出を祝う贈り物としてもキンセンカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>4月28日生まれの方はもちろん、大切な思い出を分かち合いたい贈り物としてもローズマリーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、鮮やかな橙黄色の花を咲かせます。キク科の一年草で、長い開花期間が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ローズマリーはいつ頃咲きますか？</div>
+        <div class="faq-a">一年を通して淡青紫色の小花を咲かせます。シソ科の常緑低木で、香りのよいハーブとして親しまれています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「変身・再生」という花言葉は、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたというギリシャ神話に由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ローズマリーの花言葉の由来は何ですか？</div>
+        <div class="faq-a">「思い出」という花言葉は、記憶力を高めるハーブとして古くから儀式にも用いられてきたことに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカは食べることもできますか？</div>
-        <div class="faq-a">はい。エディブルフラワー（食用花）としてサラダなどに添えられるほか、肌にやさしい成分を含むことからスキンケア用品の原料としても使われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ローズマリーはどのように活用できますか？</div>
+        <div class="faq-a">料理の風味付けやハーブティー、アロマオイル、香り袋など、幅広い用途で日常的に活用されています。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>キンセンカは冬から春に橙黄色の花を咲かせる、3月31日の誕生花</li>
-      <li>花言葉は「変身・再生」、花に姿を変えたニンフの神話に由来する</li>
-      <li>長い開花期間とサラダやスキンケアにも使われる実用性が魅力</li>
-      <li>寒さに強く、花がら摘みをしながら育てたい</li>
+      <li>ローズマリーは一年を通して淡青紫色の花を咲かせる、4月28日の誕生花</li>
+      <li>花言葉は「思い出」、記憶に残る儀式に用いられてきたことに由来する</li>
+      <li>爽やかな香りと幅広い実用性が魅力</li>
+      <li>日当たりと水はけの良い場所で、乾燥気味に育てたい</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/mar/0330/',
-      'prevTitle'      => '3月30日の誕生花（ゲッケイジュ）とは',
-      'nextTargetFile' => __DIR__.'/../../apr/0401/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/apr/0401/',
-      'nextTitle'      => '4月1日の誕生花（クロッカス（黄））とは',
-      'listUrl'        => '/articles/calendar/birthflower/mar/',
-      'listTitle'      => '3月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/apr/0427/';
+  $prevTitle = '4月27日の誕生花（カルミヤ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/apr/0429/';
+  $nextTitle = '4月29日の誕生花（ミヤコグサ）とは';
+  $listUrl   = '/articles/calendar/birthflower/apr/';
+  $listTitle = '4月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'3月の誕生花一覧', 'title'=>'3月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/mar/'],
+      ['label'=>'4月の誕生花一覧', 'title'=>'4月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/apr/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-mar-0331'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-apr-0428'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-mar-0331');
+echo autoLink($html, 'birthflower-apr-0428');
 ?>
