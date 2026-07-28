@@ -84,6 +84,9 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -213,13 +216,16 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = '/articles/calendar/birthflower/jan/';
-  $prevTitle = '1月の誕生花とは';
-  $nextUrl   = '/articles/calendar/birthflower/mar/';
-  $nextTitle = '3月の誕生花とは';
-  $listUrl   = '/articles/calendar/birthflower/';
-  $listTitle = '誕生花トップ';
-  require __DIR__.'/../../../../inc/article-nav.php';
+  require_once __DIR__.'/../../../../inc/dayinfo/birthflower-boundary-nav.php';
+  renderBirthflowerBoundaryNav([
+      'prevUrl'        => '/articles/calendar/birthflower/jan/',
+      'prevTitle'      => '1月の誕生花とは',
+      'nextTargetFile' => __DIR__.'/../mar/index.php',
+      'nextUrl'        => '/articles/calendar/birthflower/mar/',
+      'nextTitle'      => '3月の誕生花とは',
+      'listUrl'        => '/articles/calendar/birthflower/',
+      'listTitle'      => '誕生花トップ',
+  ]);
   ?>
 
   <section class="art-section" id="related">
