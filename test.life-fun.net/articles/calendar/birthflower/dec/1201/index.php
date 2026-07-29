@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1130/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1201/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月30日の誕生花シネラリアの花言葉・特徴・魅力をわかりやすく解説。「いつも陽気」を象徴する色鮮やかな花の意味を紹介します。">
-  <title>11月30日の誕生花はシネラリア｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="12月1日の誕生花サフランの花言葉・特徴・魅力をわかりやすく解説。「節度の美」を象徴する静かで気品ある花の意味を紹介します。">
+  <title>12月1日の誕生花はサフラン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シネラリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春に色鮮やかな花を株いっぱいに咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"シネラリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"冬から春に色鮮やかな花を株いっぱいに咲かせ続ける賑やかな姿が、いつも陽気な明るさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"シネラリアはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"色鮮やかな花が株いっぱいに咲くため、冬から春の玄関先や室内を彩る鉢植えとして人気です。"}}
+      {"@type":"Question","name":"サフランはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に紫色の花を咲かせます。アヤメ科の球根植物です。"}},
+      {"@type":"Question","name":"サフランの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。"}},
+      {"@type":"Question","name":"サフランの雌しべはどのように利用されますか？","acceptedAnswer":{"@type":"Answer","text":"乾燥させた雌しべは香辛料サフランとして、料理の色づけや香りづけに古くから利用されています。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"11月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/nov/"},
-      {"@type":"ListItem","position":6,"name":"11月30日の誕生花（シネラリア）とは","item":"https://life-fun.net/articles/calendar/birthflower/nov/1130/"}
+      {"@type":"ListItem","position":5,"name":"12月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/dec/"},
+      {"@type":"ListItem","position":6,"name":"12月1日の誕生花（サフラン）とは","item":"https://life-fun.net/articles/calendar/birthflower/dec/1201/"}
     ]
   }
   </script>
@@ -126,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/nov/">11月の誕生花とは</a><span>›</span>11月30日の誕生花（シネラリア）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/dec/">12月の誕生花とは</a><span>›</span>12月1日の誕生花（サフラン）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">NOVEMBER 30 · 誕生花</span>
-    <h1>11月30日の誕生花はシネラリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シネラリアは、キク科の多年草で、冬から春に色鮮やかな花を株いっぱいに咲かせる、賑やかで華やかな印象を持つ花です。花言葉は「いつも陽気」。賑やかな花です。</p>
+    <span class="art-label">DECEMBER 1 · 誕生花</span>
+    <h1>12月1日の誕生花はサフラン<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">サフランは、アヤメ科の球根植物で、秋に紫色の花を咲かせる、静かで気品ある印象を持つ花です。花言葉は「節度の美」。静かな花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>シネラリア</dd>
-    <dt>花言葉</dt><dd>いつも陽気</dd>
-    <dt>科名</dt><dd>キク科</dd>
-    <dt>見頃</dt><dd>冬〜春</dd>
+    <dt>花名</dt><dd>サフラン</dd>
+    <dt>花言葉</dt><dd>節度の美</dd>
+    <dt>科名</dt><dd>アヤメ科</dd>
+    <dt>見頃</dt><dd>秋</dd>
   </dl>
 
   <?php
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シネラリアとは</a></li>
-      <li><a href="#meaning">シネラリアが象徴する意味</a></li>
-      <li><a href="#charm">シネラリアの魅力</a></li>
+      <li><a href="#about">サフランとは</a></li>
+      <li><a href="#meaning">サフランが象徴する意味</a></li>
+      <li><a href="#charm">サフランの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シネラリアとは</h2>
-    <p>シネラリアは、キク科の多年草で、11月30日の誕生花として知られています。冬から春に色鮮やかな花を株いっぱいに咲かせる、賑やかで華やかな印象を持つ花です。</p>
+    <h2>サフランとは</h2>
+    <p>サフランは、アヤメ科の球根植物で、12月1日の誕生花として知られています。秋に紫色の花を咲かせる、静かで気品ある印象を持つ花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>シネラリアが象徴する意味</h2>
-    <p>シネラリアの花言葉は「いつも陽気」です。冬から春に色鮮やかな花を株いっぱいに咲かせ続ける賑やかな姿が、いつも陽気な明るさを象徴することに由来すると言われています。</p>
+    <h2>サフランが象徴する意味</h2>
+    <p>サフランの花言葉は「節度の美」です。気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>シネラリアの魅力</h2>
-    <p>シネラリアの魅力は、株いっぱいに咲きそろう色鮮やかな花が生む賑やかさと、寒い季節を明るく彩る華やかさにあります。11月30日生まれの方はもちろん、いつも陽気な想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>サフランの魅力</h2>
+    <p>サフランの魅力は、気取らず可憐に咲く花の美しさと、雌しべが香辛料として大切に受け継がれてきた実用性にあります。12月1日生まれの方はもちろん、控えめで気品ある想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>シネラリアは日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます。</p>
+    <p>サフランは日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>11月30日生まれの方はもちろん、いつも陽気な想いを伝えたい贈り物としてもシネラリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>12月1日生まれの方はもちろん、控えめで気品ある想いを伝えたい贈り物としてもサフランは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シネラリアはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春に色鮮やかな花を株いっぱいに咲かせます。キク科の多年草です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サフランはいつ頃咲きますか？</div>
+        <div class="faq-a">秋に紫色の花を咲かせます。アヤメ科の球根植物です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シネラリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">冬から春に色鮮やかな花を株いっぱいに咲かせ続ける賑やかな姿が、いつも陽気な明るさを象徴することに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サフランの花言葉の由来は何ですか？</div>
+        <div class="faq-a">気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シネラリアはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">色鮮やかな花が株いっぱいに咲くため、冬から春の玄関先や室内を彩る鉢植えとして人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サフランの雌しべはどのように利用されますか？</div>
+        <div class="faq-a">乾燥させた雌しべは香辛料サフランとして、料理の色づけや香りづけに古くから利用されています。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>シネラリアは冬から春に色鮮やかな花を株いっぱいに咲かせる、11月30日の誕生花</li>
-      <li>花言葉は「いつも陽気」、賑やかに咲き続ける姿に由来する</li>
-      <li>寒い季節を明るく彩る華やかさが魅力</li>
-      <li>日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>サフランは秋に紫色の花を咲かせる、12月1日の誕生花</li>
+      <li>花言葉は「節度の美」、慎み深い花の姿に由来する</li>
+      <li>雌しべが香辛料として利用される、実用性も兼ね備えた花</li>
+      <li>日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/nov/1129/',
-      'prevTitle'      => '11月29日の誕生花（マリーゴールド）とは',
-      'nextTargetFile' => __DIR__.'/../../dec/1201/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/dec/1201/',
-      'nextTitle'      => '12月1日の誕生花（サフラン）とは',
-      'listUrl'        => '/articles/calendar/birthflower/nov/',
-      'listTitle'      => '11月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/nov/1130/';
+  $prevTitle = '11月30日の誕生花（シネラリア）とは';
+  $nextUrl   = '/articles/calendar/birthflower/dec/1202/';
+  $nextTitle = '12月2日の誕生花（ヒメシャラ）とは';
+  $listUrl   = '/articles/calendar/birthflower/dec/';
+  $listTitle = '12月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'11月の誕生花一覧', 'title'=>'11月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/nov/'],
+      ['label'=>'12月の誕生花一覧', 'title'=>'12月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/dec/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-nov-1130'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-01'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-nov-1130');
+echo autoLink($html, 'birthflower-dec-01');
 ?>
