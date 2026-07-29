@@ -1,0 +1,57 @@
+<?php
+declare(strict_types=1);
+
+// ══════════════════════════════════════════════════════════════════
+// DayInfoService: 誕生石セクション用プロバイダ（Phase2新規ロジック）
+//
+// 誕生石は日単位ではなく月単位のデータ（全国宝石卸商協同組合 2021年12月改訂版、
+// 12ヶ月・29石）。対象日の月（1〜12）で引くだけの単純なテーブル参照。
+//
+// 解説記事の有無はfile_existsで実ファイルの存在を都度確認する（静的な月リストではない）。
+// これにより、記事を追加した月から自動的にリンクが有効になり、
+// このファイルを毎月編集する二重管理を避けられる（誕生花プロバイダと同じ設計）。
+// ══════════════════════════════════════════════════════════════════
+
+// 月数値(1〜12)→記事URLの月スラッグの変換表
+const STONE_ARTICLE_MONTH_SLUGS = [
+    1=>'january', 2=>'february', 3=>'march', 4=>'april', 5=>'may', 6=>'june',
+    7=>'july', 8=>'august', 9=>'september', 10=>'october', 11=>'november', 12=>'december',
+];
+
+const DAYINFO_MONTHLY_STONES = [
+    1 => ['name' => 'ガーネット', 'meaning' => '真実の愛', 'alternates' => [], 'feature' => '深い赤色が特徴の宝石で、情熱と生命力を象徴します。古くから旅の安全を守るお守りとされてきました。'],
+    2 => ['name' => 'アメジスト', 'meaning' => '誠実、心の平和', 'alternates' => ['クリソベリル・キャッツアイ'], 'feature' => '紫色の美しい輝きを持つ水晶の一種で、心を落ち着かせる石として親しまれています。高貴で神秘的な色合いが特徴です。'],
+    3 => ['name' => 'アクアマリン', 'meaning' => '沈着、勇敢', 'alternates' => ['サンゴ', 'ブラッドストーン', 'アイオライト'], 'feature' => '海を思わせる淡い水色が特徴の宝石で、清涼感と静けさを象徴します。船乗りのお守りとして愛されてきた歴史を持ちます。'],
+    4 => ['name' => 'ダイヤモンド', 'meaning' => '永遠の絆、純潔', 'alternates' => ['モルガナイト'], 'feature' => '硬度・輝きともに宝石の王様と呼ばれる存在で、永遠に色褪せない美しさから絆の象徴とされます。無色透明な輝きが純粋さを表します。'],
+    5 => ['name' => 'エメラルド', 'meaning' => '幸福、夫婦愛', 'alternates' => ['ヒスイ'], 'feature' => '深い緑色が美しい宝石で、古くから幸福と再生の象徴として親しまれています。豊かな自然を思わせる色合いが特徴です。'],
+    6 => ['name' => '真珠', 'meaning' => '健康、富', 'alternates' => ['ムーンストーン', 'アレキサンドライト'], 'feature' => '貝の中で育まれる唯一の生物由来の宝石で、上品な光沢が特徴です。清らかさと健康を象徴する石として古くから愛されています。'],
+    7 => ['name' => 'ルビー', 'meaning' => '情熱、愛情', 'alternates' => ['スフェーン'], 'feature' => '燃えるような赤色が特徴の宝石で、情熱と生命力の象徴とされます。硬度も高く、古来より宝石の女王とも呼ばれてきました。'],
+    8 => ['name' => 'ペリドット', 'meaning' => '夫婦の幸福', 'alternates' => ['サードニクス', 'スピネル'], 'feature' => '明るいオリーブグリーンが特徴の宝石で、太陽の光を思わせる輝きを持ちます。持ち主に幸福と安らぎをもたらすとされます。'],
+    9 => ['name' => 'サファイア', 'meaning' => '誠実、慈愛', 'alternates' => ['クンツァイト'], 'feature' => '深い青色が印象的な宝石で、誠実さと知性の象徴とされます。硬度が高く、古くから聖職者や王族に愛されてきました。'],
+    10 => ['name' => 'オパール', 'meaning' => '希望、純粋', 'alternates' => ['トルマリン'], 'feature' => '見る角度によって色が変化する遊色効果が特徴的な宝石で、神秘的な輝きを持ちます。希望や無邪気さを象徴します。'],
+    11 => ['name' => 'トパーズ', 'meaning' => '友情、希望', 'alternates' => ['シトリン'], 'feature' => '黄色や橙色など多彩な色合いを持つ宝石で、太陽のような明るさを象徴します。友情や希望を運ぶ石とされてきました。'],
+    12 => ['name' => 'トルコ石', 'meaning' => '成功、繁栄', 'alternates' => ['ラピスラズリ', 'ジルコン', 'タンザナイト'], 'feature' => '空を思わせる鮮やかな青緑色が特徴の宝石で、古代から魔除け・幸運のお守りとして親しまれてきました。'],
+];
+
+function getStoneInfo(DateTimeImmutable $date): array {
+    $month = (int)$date->format('n');
+    $stone = DAYINFO_MONTHLY_STONES[$month];
+
+    $monthSlug = STONE_ARTICLE_MONTH_SLUGS[$month] ?? null;
+    $url       = null;
+    if ($monthSlug !== null) {
+        $articleFile = __DIR__."/../../../articles/calendar/birthstone/{$monthSlug}/index.php";
+        if (file_exists($articleFile)) {
+            $url = "/articles/calendar/birthstone/{$monthSlug}/";
+        }
+    }
+
+    return [
+        'available'  => true,
+        'name'       => $stone['name'],
+        'meaning'    => $stone['meaning'],
+        'alternates' => $stone['alternates'],
+        'feature'    => $stone['feature'],
+        'url'        => $url,
+    ];
+}

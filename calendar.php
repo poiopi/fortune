@@ -1,6 +1,19 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__.'/inc/oracle.php';
+require_once __DIR__.'/inc/dayinfo/day-url.php';
+require_once __DIR__.'/inc/dayinfo/DayInfoService.php';
+
+const CALENDAR_MIN_YEAR = 1900;
+const CALENDAR_MAX_YEAR = 2100;
+
+function canGoPrevMonth(int $year, int $month): bool {
+    return !($year <= CALENDAR_MIN_YEAR && $month <= 1);
+}
+
+function canGoNextMonth(int $year, int $month): bool {
+    return !($year >= CALENDAR_MAX_YEAR && $month >= 12);
+}
 
 // ══════════════════════════════════════════════════════════════════
 // カレンダー生成
@@ -11,18 +24,27 @@ $month     = (int)$today->format('n');
 $todayDay  = (int)$today->format('j');
 
 // リクエストで月を切り替え可能
-if (isset($_GET['y'], $_GET['m'])) {
-    $year  = (int)$_GET['y'];
-    $month = max(1, min(12, (int)$_GET['m']));
+$rawYStr = $_GET['y'] ?? null;
+$rawMStr = $_GET['m'] ?? null;
+
+if (is_string($rawYStr) && ctype_digit($rawYStr) && is_string($rawMStr) && ctype_digit($rawMStr)) {
+    $year  = max(CALENDAR_MIN_YEAR, min(CALENDAR_MAX_YEAR, (int)$rawYStr));
+    $month = max(1, min(12, (int)$rawMStr));
 }
+// $rawYStrまたは$rawMStrが非数値文字列・配列・未指定の場合は、$today由来のデフォルト（現在年月）のまま変更しない
 
 $firstDay  = new DateTimeImmutable("$year-$month-01");
 $daysInMonth = (int)$firstDay->format('t');
 $startWeekday = (int)$firstDay->format('w'); // 0=日, 6=土
 
-$todayStr  = $today->format('Y-m-d');
-$luckyItems = getLuckyItems($todayStr);
-$rokuyo     = getRokuyo((int)$today->format('Y'), (int)$today->format('n'), (int)$today->format('j'));
+// 今日の六曜・ラッキーアイテム・星座・九星（today-band用）。
+// getDayInfo()が内部でrokuyo/lucky/seiza/kyuseiすべてを一括計算するため、
+// getRokuyo()・getLuckyItems()の個別呼び出しは行わず、ここから取り出して使う。
+$todayInfo   = getDayInfo($today);
+$rokuyo      = $todayInfo['sections']['rokuyo'];
+$luckyItems  = $todayInfo['sections']['lucky'];
+$todaySeiza  = $todayInfo['sections']['seiza'];
+$todayKyusei = $todayInfo['sections']['kyusei'];
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -71,7 +93,7 @@ $rokuyo     = getRokuyo((int)$today->format('Y'), (int)$today->format('n'), (int
   --ff-sans: 'Zen Kaku Gothic New',sans-serif;
   --ff-mono: 'DM Mono',monospace;
 }
-html{font-size:16px;scroll-behavior:smooth}
+html{font-size:16px;scroll-behavior:auto}
 body{
   background:var(--void);
   color:var(--text);
@@ -128,6 +150,16 @@ header{
   color:var(--gold-lt);font-style:italic;line-height:1.7;
   padding-top:1rem;border-top:1px solid var(--border);margin-top:.5rem;
 }
+.today-mini{
+  display:flex;align-items:center;gap:.55rem;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border);border-radius:10px;
+  padding:.55rem .9rem;
+}
+.today-mini-symbol{font-size:1.3rem;line-height:1}
+.today-mini-body{display:flex;flex-direction:column;line-height:1.3}
+.today-mini-cat{font-family:var(--ff-mono);font-size:.56rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.today-mini-name{font-family:var(--ff-serif);font-size:.9rem;font-weight:600;color:var(--gold-lt)}
 
 /* 六曜色 */
 .taian{border-color:#c9a84c;background:rgba(201,168,76,.08)}
@@ -148,7 +180,7 @@ header{
 .lucky-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem;position:relative;overflow:hidden}
 .lucky-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--violet),var(--gold))}
 .lucky-cat{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:.5rem}
-.lucky-value{font-family:var(--ff-serif);font-size:1.1rem;font-weight:600;color:var(--gold-lt);line-height:1.3}
+.lucky-value{font-family:var(--ff-serif);font-size:1.1rem;font-weight:600;color:var(--gold-lt);line-height:1.3;min-height:49px}
 .lucky-note{font-size:.75rem;color:var(--muted);margin-top:.4rem;line-height:1.6}
 
 .lucky-number{
@@ -165,8 +197,22 @@ header{
 .adsense-space::after{content:'AD SPACE'}
 /* ── カレンダー ── */
 .cal-section{margin-bottom:2.5rem}
-.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:.7rem}
 .cal-title{font-family:var(--ff-serif);font-size:1.2rem;font-weight:700;color:var(--gold-lt);letter-spacing:.06em}
+.cal-jump{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.cal-jump-form{display:flex;gap:.4rem}
+.cal-select{
+  font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .6rem;
+  border:1px solid var(--border2);border-radius:6px;color:var(--text);
+  background:var(--card2);cursor:pointer;
+}
+.cal-select:hover{border-color:var(--gold)}
+.cal-today-btn{
+  font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .9rem;
+  border:1px solid var(--border2);border-radius:6px;color:var(--muted);
+  text-decoration:none;transition:all .15s;white-space:nowrap;
+}
+.cal-today-btn:hover{background:var(--gold);color:var(--void);border-color:var(--gold)}
 .cal-nav{display:flex;gap:.5rem}
 .cal-nav a{
   font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .9rem;
@@ -174,6 +220,11 @@ header{
   text-decoration:none;transition:all .15s;
 }
 .cal-nav a:hover{background:var(--violet);color:#fff;border-color:var(--violet)}
+.cal-nav-disabled{
+  font-family:var(--ff-mono);font-size:.72rem;padding:.35rem .9rem;
+  border:1px solid var(--border);border-radius:6px;color:var(--muted);
+  opacity:.35;cursor:default;user-select:none;
+}
 
 .cal-grid{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .cal-weekdays{display:grid;grid-template-columns:repeat(7,1fr);border-bottom:1px solid var(--border)}
@@ -186,10 +237,14 @@ header{
 .cal-day:hover{background:var(--card2)}
 .cal-day.empty{background:rgba(0,0,0,.2);cursor:default}
 .cal-day.today{background:linear-gradient(135deg,rgba(155,114,239,.15),rgba(201,168,76,.1));outline:1px solid var(--gold)}
+.day-top-row{display:flex;align-items:center;justify-content:space-between;gap:.2rem}
 .day-num{font-family:var(--ff-mono);font-size:.8rem;text-align:right;margin-bottom:.2rem;padding-right:.2rem}
 .cal-day.today .day-num{color:var(--gold-lt);font-weight:700}
 .sun .day-num{color:#e87070}
 .sat .day-num{color:#7090e8}
+.day-moon{font-size:.68rem;line-height:1;opacity:.75}
+.day-kichijitsu-mark{font-size:.6rem;color:var(--gold-lt);line-height:1}
+.day-moon-label{font-family:var(--ff-mono);font-size:.5rem;text-align:center;color:var(--muted);line-height:1.1;margin-top:.15rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .day-rokuyo{font-family:var(--ff-serif);font-size:.62rem;text-align:center;padding:.1rem .2rem;border-radius:3px;margin-top:.2rem;line-height:1.2}
 .day-rokuyo.taian{background:rgba(201,168,76,.2);color:#c9a84c;font-weight:700}
 .day-rokuyo.shakku{background:rgba(232,113,154,.15);color:#e8719a}
@@ -216,6 +271,12 @@ footer a:hover{color:var(--gold)}
   .lucky-grid{grid-template-columns:1fr 1fr}
   .cal-day{min-height:56px;padding:.3rem .2rem}
   .day-rokuyo{font-size:.55rem}
+  .day-moon{font-size:.6rem}
+  .day-kichijitsu-mark{font-size:.52rem}
+  .day-moon-label{font-size:.44rem}
+  .cal-header{flex-direction:column;align-items:flex-start}
+  .cal-jump{width:100%}
+  .cal-nav{width:100%}
 }
 /* ======================
    三星鑑定について
@@ -345,6 +406,31 @@ body{top:0!important}
         <strong style="color:var(--text)">今日は「<?= $rokuyo['name'] ?>」</strong><br>
         <?= $rokuyo['desc'] ?>
       </div>
+      <?php if ($todaySeiza['available']): ?>
+      <div class="today-mini">
+        <span class="today-mini-symbol"><?= $todaySeiza['symbol'] ?></span>
+        <span class="today-mini-body">
+          <span class="today-mini-cat">星座</span>
+          <span class="today-mini-name"><?= $todaySeiza['name'] ?></span>
+        </span>
+      </div>
+      <?php endif; ?>
+      <?php if ($todayKyusei['available']): ?>
+      <div class="today-mini">
+        <span class="today-mini-symbol"><?= $todayKyusei['year']['symbol'] ?></span>
+        <span class="today-mini-body">
+          <span class="today-mini-cat">年九星</span>
+          <span class="today-mini-name"><?= $todayKyusei['year']['name'] ?></span>
+        </span>
+      </div>
+      <div class="today-mini">
+        <span class="today-mini-symbol"><?= $todayKyusei['month']['symbol'] ?></span>
+        <span class="today-mini-body">
+          <span class="today-mini-cat">月九星</span>
+          <span class="today-mini-name"><?= $todayKyusei['month']['name'] ?></span>
+        </span>
+      </div>
+      <?php endif; ?>
       <div class="today-msg">&#x2726; <?= $luckyItems['message'] ?></div>
     </div>
   </div>
@@ -384,9 +470,24 @@ body{top:0!important}
   <div class="adsense-space"><!-- AdSenseコードをここに --></div>
 
   <!-- カレンダー -->
-  <section class="cal-section">
+  <section class="cal-section" id="cal-section">
     <div class="cal-header">
-      <div class="cal-title"><?= $year ?>年 <?= $month ?>月</div>
+      <div class="cal-title" id="cal-title"><?= $year ?>年 <?= $month ?>月</div>
+      <div class="cal-jump">
+        <form method="get" action="/calendar#cal-title" class="cal-jump-form">
+          <select name="y" class="cal-select" aria-label="表示する年" onchange="this.form.submit()">
+            <?php for ($yy = CALENDAR_MIN_YEAR; $yy <= CALENDAR_MAX_YEAR; $yy++): ?>
+            <option value="<?= $yy ?>"<?= $yy === $year ? ' selected' : '' ?>><?= $yy ?>年</option>
+            <?php endfor; ?>
+          </select>
+          <select name="m" class="cal-select" aria-label="表示する月" onchange="this.form.submit()">
+            <?php for ($mm = 1; $mm <= 12; $mm++): ?>
+            <option value="<?= $mm ?>"<?= $mm === $month ? ' selected' : '' ?>><?= $mm ?>月</option>
+            <?php endfor; ?>
+          </select>
+        </form>
+        <a href="/calendar#cal-section" class="cal-today-btn">今日（<?= $today->format('Y') ?>年<?= $today->format('n') ?>月）</a>
+      </div>
       <div class="cal-nav">
         <?php
           $prev = new DateTimeImmutable("$year-$month-01");
@@ -394,8 +495,16 @@ body{top:0!important}
           $next = new DateTimeImmutable("$year-$month-01");
           $next = $next->modify('+1 month');
         ?>
-        <a href="?y=<?= $prev->format('Y') ?>&m=<?= $prev->format('n') ?>">&#9664; 前月</a>
-        <a href="?y=<?= $next->format('Y') ?>&m=<?= $next->format('n') ?>">翌月 &#9654;</a>
+        <?php if (canGoPrevMonth($year, $month)): ?>
+        <a href="?y=<?= $prev->format('Y') ?>&m=<?= $prev->format('n') ?>#cal-section">&#9664; 前月</a>
+        <?php else: ?>
+        <span class="cal-nav-disabled">&#9664; 前月</span>
+        <?php endif; ?>
+        <?php if (canGoNextMonth($year, $month)): ?>
+        <a href="?y=<?= $next->format('Y') ?>&m=<?= $next->format('n') ?>#cal-section">翌月 &#9654;</a>
+        <?php else: ?>
+        <span class="cal-nav-disabled">翌月 &#9654;</span>
+        <?php endif; ?>
       </div>
     </div>
 
@@ -419,15 +528,31 @@ body{top:0!important}
           $weekday    = (int)$thisDate->format('w');
           $isToday    = ($year === (int)$today->format('Y') && $month === (int)$today->format('n') && $d === $todayDay);
           $dayRokuyo  = getRokuyo($year, $month, $d);
+          $cellInfo   = getDayInfo($thisDate);
+          $cellMoon   = $cellInfo['sections']['moon'];
+          $cellKichijitsu = $cellInfo['sections']['kichijitsu'];
           $dayClass   = 'cal-day';
           if($weekday === 0) $dayClass .= ' sun';
           if($weekday === 6) $dayClass .= ' sat';
           if($isToday)       $dayClass .= ' today';
         ?>
-        <div class="<?= $dayClass ?>">
-          <div class="day-num"><?= $d ?></div>
+        <a href="<?= dayUrl($thisDate) ?>" class="<?= $dayClass ?>" style="text-decoration:none;color:inherit;display:block">
+          <div class="day-top-row">
+            <?php if ($cellMoon['available']): ?>
+            <span class="day-moon"><?= $cellMoon['symbol'] ?></span>
+            <?php else: ?>
+            <span class="day-moon"></span>
+            <?php endif; ?>
+            <?php if ($cellKichijitsu['available']): ?>
+            <span class="day-kichijitsu-mark">&#x2726;</span>
+            <?php endif; ?>
+            <div class="day-num"><?= $d ?></div>
+          </div>
+          <?php if ($cellMoon['available']): ?>
+          <div class="day-moon-label"><?= $cellMoon['phase_name'] ?></div>
+          <?php endif; ?>
           <div class="day-rokuyo <?= $dayRokuyo['class'] ?>"><?= $dayRokuyo['name'] ?></div>
-        </div>
+        </a>
         <?php endfor; ?>
       </div>
     </div>
