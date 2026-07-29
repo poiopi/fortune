@@ -69,6 +69,8 @@ ob_start();
   .art-section h3{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--text);margin:1.5rem 0 .6rem}
   .art-section p{font-size:.93rem;line-height:1.9;color:#333;margin-bottom:.9rem}
   .art-section p:last-child{margin-bottom:0}
+  .art-section ul{padding-left:1.4rem;font-size:.93rem;line-height:1.9;color:#333}
+  .art-section li{margin-bottom:.4rem}
   .kichijitsu-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.88rem}
   .kichijitsu-table th{background:var(--accent);color:#fff;padding:.65rem .9rem;text-align:left;font-family:var(--ff-serif);font-weight:600}
   .kichijitsu-table td{padding:.65rem .9rem;border-bottom:1px solid var(--border);line-height:1.7}

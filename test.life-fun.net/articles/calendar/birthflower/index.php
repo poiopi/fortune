@@ -69,6 +69,8 @@ ob_start();
   .art-section h3{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--text);margin:1.5rem 0 .6rem}
   .art-section p{font-size:.93rem;line-height:1.9;color:#333;margin-bottom:.9rem}
   .art-section p:last-child{margin-bottom:0}
+  .art-section ul{padding-left:1.4rem;font-size:.93rem;line-height:1.9;color:#333}
+  .art-section li{margin-bottom:.4rem}
   .type-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin-top:1rem}
   .type-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s;display:block;text-decoration:none;color:inherit}
   a.type-card:hover{border-color:var(--accent-lt)}
