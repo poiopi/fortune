@@ -6,7 +6,17 @@ declare(strict_types=1);
 //
 // 誕生石は日単位ではなく月単位のデータ（全国宝石卸商協同組合 2021年12月改訂版、
 // 12ヶ月・29石）。対象日の月（1〜12）で引くだけの単純なテーブル参照。
+//
+// 解説記事の有無はfile_existsで実ファイルの存在を都度確認する（静的な月リストではない）。
+// これにより、記事を追加した月から自動的にリンクが有効になり、
+// このファイルを毎月編集する二重管理を避けられる（誕生花プロバイダと同じ設計）。
 // ══════════════════════════════════════════════════════════════════
+
+// 月数値(1〜12)→記事URLの月スラッグの変換表
+const STONE_ARTICLE_MONTH_SLUGS = [
+    1=>'january', 2=>'february', 3=>'march', 4=>'april', 5=>'may', 6=>'june',
+    7=>'july', 8=>'august', 9=>'september', 10=>'october', 11=>'november', 12=>'december',
+];
 
 const DAYINFO_MONTHLY_STONES = [
     1 => ['name' => 'ガーネット', 'meaning' => '真実の愛', 'alternates' => [], 'feature' => '深い赤色が特徴の宝石で、情熱と生命力を象徴します。古くから旅の安全を守るお守りとされてきました。'],
@@ -27,12 +37,21 @@ function getStoneInfo(DateTimeImmutable $date): array {
     $month = (int)$date->format('n');
     $stone = DAYINFO_MONTHLY_STONES[$month];
 
+    $monthSlug = STONE_ARTICLE_MONTH_SLUGS[$month] ?? null;
+    $url       = null;
+    if ($monthSlug !== null) {
+        $articleFile = __DIR__."/../../../articles/calendar/birthstone/{$monthSlug}/index.php";
+        if (file_exists($articleFile)) {
+            $url = "/articles/calendar/birthstone/{$monthSlug}/";
+        }
+    }
+
     return [
         'available'  => true,
         'name'       => $stone['name'],
         'meaning'    => $stone['meaning'],
         'alternates' => $stone['alternates'],
         'feature'    => $stone['feature'],
-        'url'        => null,
+        'url'        => $url,
     ];
 }
