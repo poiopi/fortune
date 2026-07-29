@@ -92,7 +92,7 @@ ob_start();
     "mainEntity": [
       {"@type":"Question","name":"クロッカス（紫）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に紫色の花を咲かせます。アヤメ科の球根植物です。"}},
       {"@type":"Question","name":"クロッカス（紫）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"まだ寒さの残る早春にいち早く紫色の花を咲かせる力強さが、生命のエネルギーを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"クロッカス（紫）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に紫色の花を咲かせる、春の訪れをいち早く告げる花です。"}}
+      {"@type":"Question","name":"クロッカスには紫以外の色もありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。紫のほかに黄色や白の花を咲かせる品種もあり、色によって花言葉が異なるとされています。"}}
     ]
   }
   </script>
@@ -197,8 +197,8 @@ ob_start();
         <div class="faq-a">まだ寒さの残る早春にいち早く紫色の花を咲かせる力強さが、生命のエネルギーを象徴することに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（紫）はいつ頃咲きますか？</div>
-        <div class="faq-a">早春に紫色の花を咲かせる、春の訪れをいち早く告げる花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカスには紫以外の色もありますか？</div>
+        <div class="faq-a">はい。紫のほかに黄色や白の花を咲かせる品種もあり、色によって花言葉が異なるとされています。</div>
       </div>
     </div>
   </section>
