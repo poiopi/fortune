@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0930/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/oct/1015/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月30日の誕生花コルチカムの花言葉・特徴・魅力をわかりやすく解説。「永遠」を象徴する葉のない薄紫の花の意味を紹介します。">
-  <title>9月30日の誕生花はコルチカム｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="10月15日の誕生花フジバカマの花言葉・特徴・魅力をわかりやすく解説。「用心深い」を象徴する淡紫色の花の意味を紹介します。">
+  <title>10月15日の誕生花はフジバカマ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コルチカムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に、葉のない状態で薄紫の花を咲かせます。イヌサフラン科の球根植物です。"}},
-      {"@type":"Question","name":"コルチカムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"コルチカムはサフランと同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。花の姿はよく似ていますが、コルチカムはイヌサフラン科、サフランはアヤメ科に属する別の植物です。"}}
+      {"@type":"Question","name":"フジバカマはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紫色の小花を咲かせます。キク科の多年草です。"}},
+      {"@type":"Question","name":"フジバカマの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"淡紫色の小花が控えめに寄り添って咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"フジバカマは秋の七草に入りますか？","acceptedAnswer":{"@type":"Answer","text":"はい。フジバカマは秋の七草の一つに数えられる、日本古来から親しまれてきた花です。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"9月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/"},
-      {"@type":"ListItem","position":6,"name":"9月30日の誕生花（コルチカム）とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/0930/"}
+      {"@type":"ListItem","position":5,"name":"10月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/oct/"},
+      {"@type":"ListItem","position":6,"name":"10月15日の誕生花（フジバカマ）とは","item":"https://life-fun.net/articles/calendar/birthflower/oct/1015/"}
     ]
   }
   </script>
@@ -126,19 +123,19 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/sep/">9月の誕生花とは</a><span>›</span>9月30日の誕生花（コルチカム）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/oct/">10月の誕生花とは</a><span>›</span>10月15日の誕生花（フジバカマ）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">SEPTEMBER 30 · 誕生花</span>
-    <h1>9月30日の誕生花はコルチカム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コルチカムは、イヌサフラン科の球根植物で、秋、葉のない状態で薄紫の花を咲かせる、静かで少し不思議な印象を持つ花です。花言葉は「永遠」。静かで少し不思議な花です。</p>
+    <span class="art-label">OCTOBER 15 · 誕生花</span>
+    <h1>10月15日の誕生花はフジバカマ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">フジバカマは、キク科の多年草で、秋に淡紫色の小花を咲かせる、奥ゆかしい印象を持つ花です。秋の七草の一つに数えられています。花言葉は「用心深い」。奥ゆかしい花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>コルチカム</dd>
-    <dt>花言葉</dt><dd>永遠</dd>
-    <dt>科名</dt><dd>イヌサフラン科</dd>
+    <dt>花名</dt><dd>フジバカマ</dd>
+    <dt>花言葉</dt><dd>用心深い</dd>
+    <dt>科名</dt><dd>キク科</dd>
     <dt>見頃</dt><dd>秋</dd>
   </dl>
 
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コルチカムとは</a></li>
-      <li><a href="#meaning">コルチカムが象徴する意味</a></li>
-      <li><a href="#charm">コルチカムの魅力</a></li>
+      <li><a href="#about">フジバカマとは</a></li>
+      <li><a href="#meaning">フジバカマが象徴する意味</a></li>
+      <li><a href="#charm">フジバカマの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コルチカムとは</h2>
-    <p>コルチカムは、イヌサフラン科の球根植物で、9月30日の誕生花として知られています。秋、葉のない状態で薄紫の花を咲かせる、静かで少し不思議な印象を持つ花です。</p>
+    <h2>フジバカマとは</h2>
+    <p>フジバカマは、キク科の多年草で、10月15日の誕生花として知られています。秋に淡紫色の小花を咲かせる、奥ゆかしい印象を持つ花です。秋の七草の一つに数えられています。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>コルチカムが象徴する意味</h2>
-    <p>コルチカムの花言葉は「永遠」です。葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。</p>
+    <h2>フジバカマが象徴する意味</h2>
+    <p>フジバカマの花言葉は「用心深い」です。淡紫色の小花が控えめに寄り添って咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>コルチカムの魅力</h2>
-    <p>コルチカムの魅力は、葉のない静けさの中でひっそりと咲く薄紫色の花の神秘的な美しさと、秋の訪れを静かに告げる佇まいにあります。9月30日生まれの方はもちろん、変わらない永遠の想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>フジバカマの魅力</h2>
+    <p>フジバカマの魅力は、淡紫色の花が持つ奥ゆかしい美しさと、秋の七草として親しまれてきた歴史にあります。10月15日生まれの方はもちろん、深い想いをそっと伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>コルチカムは日当たりから半日陰を好み、球根植物のため過湿を避けて管理するとよく育ちます。</p>
+    <p>フジバカマは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>9月30日生まれの方はもちろん、変わらない永遠の想いを伝えたい贈り物としてもコルチカムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>10月15日生まれの方はもちろん、深い想いをそっと伝えたい贈り物としてもフジバカマは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に、葉のない状態で薄紫の花を咲かせます。イヌサフラン科の球根植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フジバカマはいつ頃咲きますか？</div>
+        <div class="faq-a">秋に淡紫色の小花を咲かせます。キク科の多年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フジバカマの花言葉の由来は何ですか？</div>
+        <div class="faq-a">淡紫色の小花が控えめに寄り添って咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムはサフランと同じ花ですか？</div>
-        <div class="faq-a">いいえ。花の姿はよく似ていますが、コルチカムはイヌサフラン科、サフランはアヤメ科に属する別の植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フジバカマは秋の七草に入りますか？</div>
+        <div class="faq-a">はい。フジバカマは秋の七草の一つに数えられる、日本古来から親しまれてきた花です。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>コルチカムは秋に薄紫の花を咲かせる、9月30日の誕生花</li>
-      <li>花言葉は「永遠」、葉のないまま咲く花姿に由来する</li>
-      <li>神秘的な美しさが魅力</li>
-      <li>日当たりから半日陰を好み、過湿を避ける</li>
+      <li>フジバカマは淡紫色の花を咲かせる、10月15日の誕生花</li>
+      <li>花言葉は「用心深い」、控えめに寄り添って咲く花姿に由来する</li>
+      <li>秋の七草として親しまれてきた歴史が魅力</li>
+      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/sep/0929/',
-      'prevTitle'      => '9月29日の誕生花（アキノノゲシ）とは',
-      'nextTargetFile' => __DIR__.'/../../oct/1001/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/oct/1001/',
-      'nextTitle'      => '10月1日の誕生花（センニチコウ）とは',
-      'listUrl'        => '/articles/calendar/birthflower/sep/',
-      'listTitle'      => '9月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/oct/1014/';
+  $prevTitle = '10月14日の誕生花（オンシジウム）とは';
+  $nextUrl   = '/articles/calendar/birthflower/oct/1016/';
+  $nextTitle = '10月16日の誕生花（ヤマスゲ）とは';
+  $listUrl   = '/articles/calendar/birthflower/oct/';
+  $listTitle = '10月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'9月の誕生花一覧', 'title'=>'9月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/sep/'],
+      ['label'=>'10月の誕生花一覧', 'title'=>'10月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/oct/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-sep-0930'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-oct-1015'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-sep-0930');
+echo autoLink($html, 'birthflower-oct-1015');
 ?>

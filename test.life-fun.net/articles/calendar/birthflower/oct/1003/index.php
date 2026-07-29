@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0930/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/oct/1003/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月30日の誕生花コルチカムの花言葉・特徴・魅力をわかりやすく解説。「永遠」を象徴する葉のない薄紫の花の意味を紹介します。">
-  <title>9月30日の誕生花はコルチカム｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="10月3日の誕生花ミセバヤの花言葉・特徴・魅力をわかりやすく解説。「憧れ」を象徴する淡紅色の花の意味を紹介します。">
+  <title>10月3日の誕生花はミセバヤ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コルチカムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に、葉のない状態で薄紫の花を咲かせます。イヌサフラン科の球根植物です。"}},
-      {"@type":"Question","name":"コルチカムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"コルチカムはサフランと同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。花の姿はよく似ていますが、コルチカムはイヌサフラン科、サフランはアヤメ科に属する別の植物です。"}}
+      {"@type":"Question","name":"ミセバヤはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紅色の小花を集めて咲かせます。ベンケイソウ科の多年草です。"}},
+      {"@type":"Question","name":"ミセバヤの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。"}},
+      {"@type":"Question","name":"ミセバヤはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"淡紅色の小花が集まる可憐な姿を活かして、小さな鉢植えとして玄関先や窓辺に飾るのがおすすめです。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"9月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/"},
-      {"@type":"ListItem","position":6,"name":"9月30日の誕生花（コルチカム）とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/0930/"}
+      {"@type":"ListItem","position":5,"name":"10月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/oct/"},
+      {"@type":"ListItem","position":6,"name":"10月3日の誕生花（ミセバヤ）とは","item":"https://life-fun.net/articles/calendar/birthflower/oct/1003/"}
     ]
   }
   </script>
@@ -126,19 +123,19 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/sep/">9月の誕生花とは</a><span>›</span>9月30日の誕生花（コルチカム）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/oct/">10月の誕生花とは</a><span>›</span>10月3日の誕生花（ミセバヤ）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">SEPTEMBER 30 · 誕生花</span>
-    <h1>9月30日の誕生花はコルチカム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コルチカムは、イヌサフラン科の球根植物で、秋、葉のない状態で薄紫の花を咲かせる、静かで少し不思議な印象を持つ花です。花言葉は「永遠」。静かで少し不思議な花です。</p>
+    <span class="art-label">OCTOBER 3 · 誕生花</span>
+    <h1>10月3日の誕生花はミセバヤ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">ミセバヤは、ベンケイソウ科の多年草で、秋に淡紅色の小花を集めて咲かせる、可憐で儚げな印象を持つ花です。花言葉は「憧れ」。可憐で儚げな花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>コルチカム</dd>
-    <dt>花言葉</dt><dd>永遠</dd>
-    <dt>科名</dt><dd>イヌサフラン科</dd>
+    <dt>花名</dt><dd>ミセバヤ</dd>
+    <dt>花言葉</dt><dd>憧れ</dd>
+    <dt>科名</dt><dd>ベンケイソウ科</dd>
     <dt>見頃</dt><dd>秋</dd>
   </dl>
 
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コルチカムとは</a></li>
-      <li><a href="#meaning">コルチカムが象徴する意味</a></li>
-      <li><a href="#charm">コルチカムの魅力</a></li>
+      <li><a href="#about">ミセバヤとは</a></li>
+      <li><a href="#meaning">ミセバヤが象徴する意味</a></li>
+      <li><a href="#charm">ミセバヤの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コルチカムとは</h2>
-    <p>コルチカムは、イヌサフラン科の球根植物で、9月30日の誕生花として知られています。秋、葉のない状態で薄紫の花を咲かせる、静かで少し不思議な印象を持つ花です。</p>
+    <h2>ミセバヤとは</h2>
+    <p>ミセバヤは、ベンケイソウ科の多年草で、10月3日の誕生花として知られています。秋に淡紅色の小花を集めて咲かせる、可憐で儚げな印象を持つ花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>コルチカムが象徴する意味</h2>
-    <p>コルチカムの花言葉は「永遠」です。葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。</p>
+    <h2>ミセバヤが象徴する意味</h2>
+    <p>ミセバヤの花言葉は「憧れ」です。淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>コルチカムの魅力</h2>
-    <p>コルチカムの魅力は、葉のない静けさの中でひっそりと咲く薄紫色の花の神秘的な美しさと、秋の訪れを静かに告げる佇まいにあります。9月30日生まれの方はもちろん、変わらない永遠の想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>ミセバヤの魅力</h2>
+    <p>ミセバヤの魅力は、淡紅色の花が持つ可憐で儚げな美しさと、小花が寄り添うように集まる愛らしい花姿にあります。10月3日生まれの方はもちろん、憧れの気持ちを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>コルチカムは日当たりから半日陰を好み、球根植物のため過湿を避けて管理するとよく育ちます。</p>
+    <p>ミセバヤは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>9月30日生まれの方はもちろん、変わらない永遠の想いを伝えたい贈り物としてもコルチカムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>10月3日生まれの方はもちろん、憧れの気持ちを伝えたい贈り物としてもミセバヤは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に、葉のない状態で薄紫の花を咲かせます。イヌサフラン科の球根植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤはいつ頃咲きますか？</div>
+        <div class="faq-a">秋に淡紅色の小花を集めて咲かせます。ベンケイソウ科の多年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤの花言葉の由来は何ですか？</div>
+        <div class="faq-a">淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムはサフランと同じ花ですか？</div>
-        <div class="faq-a">いいえ。花の姿はよく似ていますが、コルチカムはイヌサフラン科、サフランはアヤメ科に属する別の植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤはどんな場所に飾るのがおすすめですか？</div>
+        <div class="faq-a">淡紅色の小花が集まる可憐な姿を活かして、小さな鉢植えとして玄関先や窓辺に飾るのがおすすめです。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>コルチカムは秋に薄紫の花を咲かせる、9月30日の誕生花</li>
-      <li>花言葉は「永遠」、葉のないまま咲く花姿に由来する</li>
-      <li>神秘的な美しさが魅力</li>
-      <li>日当たりから半日陰を好み、過湿を避ける</li>
+      <li>ミセバヤは淡紅色の花を咲かせる、10月3日の誕生花</li>
+      <li>花言葉は「憧れ」、寄り添うように咲く花姿に由来する</li>
+      <li>小花が寄り添うように集まる愛らしい花姿が魅力</li>
+      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/sep/0929/',
-      'prevTitle'      => '9月29日の誕生花（アキノノゲシ）とは',
-      'nextTargetFile' => __DIR__.'/../../oct/1001/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/oct/1001/',
-      'nextTitle'      => '10月1日の誕生花（センニチコウ）とは',
-      'listUrl'        => '/articles/calendar/birthflower/sep/',
-      'listTitle'      => '9月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/oct/1002/';
+  $prevTitle = '10月2日の誕生花（オレンジコスモス）とは';
+  $nextUrl   = '/articles/calendar/birthflower/oct/1004/';
+  $nextTitle = '10月4日の誕生花（ポットマム）とは';
+  $listUrl   = '/articles/calendar/birthflower/oct/';
+  $listTitle = '10月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'9月の誕生花一覧', 'title'=>'9月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/sep/'],
+      ['label'=>'10月の誕生花一覧', 'title'=>'10月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/oct/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-sep-0930'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-oct-1003'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-sep-0930');
+echo autoLink($html, 'birthflower-oct-1003');
 ?>

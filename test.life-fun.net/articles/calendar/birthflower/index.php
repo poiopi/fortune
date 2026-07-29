@@ -155,7 +155,7 @@ ob_start();
       <a href="/articles/calendar/birthflower/jul/" class="type-card"><div class="type-code">7月</div><div class="type-name">7月の誕生花</div><div class="type-kw">アサガオ・ホオズキ・カンナなど</div></a>
       <a href="/articles/calendar/birthflower/aug/" class="type-card"><div class="type-code">8月</div><div class="type-name">8月の誕生花</div><div class="type-kw">ヒマワリ・ハイビスカスなど</div></a>
       <a href="/articles/calendar/birthflower/sep/" class="type-card"><div class="type-code">9月</div><div class="type-name">9月の誕生花</div><div class="type-kw">キク・キキョウ・コスモスなど</div></a>
-      <div class="type-card"><div class="type-code">10月</div><div class="type-name">10月の誕生花</div><div class="type-kw">近日公開</div></div>
+      <a href="/articles/calendar/birthflower/oct/" class="type-card"><div class="type-code">10月</div><div class="type-name">10月の誕生花</div><div class="type-kw">キンモクセイ・ハギ・ダリアなど</div></a>
       <div class="type-card"><div class="type-code">11月</div><div class="type-name">11月の誕生花</div><div class="type-kw">近日公開</div></div>
       <div class="type-card"><div class="type-code">12月</div><div class="type-name">12月の誕生花</div><div class="type-kw">近日公開</div></div>
     </div>
