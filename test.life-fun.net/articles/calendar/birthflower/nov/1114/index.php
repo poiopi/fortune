@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/oct/1031/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1114/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="10月31日の誕生花タマスダレの花言葉・特徴・魅力をわかりやすく解説。「潔白」を象徴する白い花の意味を紹介します。">
-  <title>10月31日の誕生花はタマスダレ｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="11月14日の誕生花シクラメン（赤）の花言葉・特徴・魅力をわかりやすく解説。「はにかみ」を象徴する赤い花の意味を紹介します。">
+  <title>11月14日の誕生花はシクラメン（赤）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"タマスダレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に白い花を咲かせます。ヒガンバナ科の多年草です。"}},
-      {"@type":"Question","name":"タマスダレの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白い花びらが汚れなく咲きそろう姿が、清らかな潔白さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"タマスダレの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白い花が集まって咲く様子が、玉を連ねたすだれのように見えることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"シクラメン（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春に赤い花を咲かせます。サクラソウ科の多年草です。"}},
+      {"@type":"Question","name":"シクラメン（赤）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらが後ろに反り返るように恥じらいながら咲く姿が、はにかみを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"シクラメン（赤）はどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて長く花を楽しめるため、日当たりのよい室内で飾るのがおすすめです。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"10月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/oct/"},
-      {"@type":"ListItem","position":6,"name":"10月31日の誕生花（タマスダレ）とは","item":"https://life-fun.net/articles/calendar/birthflower/oct/1031/"}
+      {"@type":"ListItem","position":5,"name":"11月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/nov/"},
+      {"@type":"ListItem","position":6,"name":"11月14日の誕生花（シクラメン（赤））とは","item":"https://life-fun.net/articles/calendar/birthflower/nov/1114/"}
     ]
   }
   </script>
@@ -126,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/oct/">10月の誕生花とは</a><span>›</span>10月31日の誕生花（タマスダレ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/nov/">11月の誕生花とは</a><span>›</span>11月14日の誕生花（シクラメン（赤））とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">OCTOBER 31 · 誕生花</span>
-    <h1>10月31日の誕生花はタマスダレ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">タマスダレは、ヒガンバナ科の多年草で、夏から秋に白い花を咲かせる、清らかで潔白な印象を持つ花です。花言葉は「潔白」。清らかで潔白な花です。</p>
+    <span class="art-label">NOVEMBER 14 · 誕生花</span>
+    <h1>11月14日の誕生花はシクラメン（赤）<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">シクラメン（赤）は、サクラソウ科の多年草で、冬から春に赤い花を咲かせる、はにかむような可憐な印象を持つ花です。花言葉は「はにかみ」。可憐な花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>タマスダレ</dd>
-    <dt>花言葉</dt><dd>潔白</dd>
-    <dt>科名</dt><dd>ヒガンバナ科</dd>
-    <dt>見頃</dt><dd>夏〜秋</dd>
+    <dt>花名</dt><dd>シクラメン（赤）</dd>
+    <dt>花言葉</dt><dd>はにかみ</dd>
+    <dt>科名</dt><dd>サクラソウ科</dd>
+    <dt>見頃</dt><dd>冬〜春</dd>
   </dl>
 
   <?php
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">タマスダレとは</a></li>
-      <li><a href="#meaning">タマスダレが象徴する意味</a></li>
-      <li><a href="#charm">タマスダレの魅力</a></li>
+      <li><a href="#about">シクラメン（赤）とは</a></li>
+      <li><a href="#meaning">シクラメン（赤）が象徴する意味</a></li>
+      <li><a href="#charm">シクラメン（赤）の魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>タマスダレとは</h2>
-    <p>タマスダレは、ヒガンバナ科の多年草で、10月31日の誕生花として知られています。夏から秋に白い花を咲かせる、清らかで潔白な印象を持つ花です。</p>
+    <h2>シクラメン（赤）とは</h2>
+    <p>シクラメン（赤）は、サクラソウ科の多年草で、11月14日の誕生花として知られています。冬から春に赤い花を咲かせる、はにかむような可憐な印象を持つ花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>タマスダレが象徴する意味</h2>
-    <p>タマスダレの花言葉は「潔白」です。白い花びらが汚れなく咲きそろう姿が、清らかな潔白さを象徴することに由来すると言われています。</p>
+    <h2>シクラメン（赤）が象徴する意味</h2>
+    <p>シクラメン（赤）の花言葉は「はにかみ」です。花びらが後ろに反り返るように恥じらいながら咲く姿が、はにかみを象徴することに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>タマスダレの魅力</h2>
-    <p>タマスダレの魅力は、白い花が持つ清らかで潔白な美しさと、群れて咲きそろう楚々とした佇まいにあります。10月31日生まれの方はもちろん、清らかな潔白さを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>シクラメン（赤）の魅力</h2>
+    <p>シクラメン（赤）の魅力は、反り返る花びらが生む可憐な佇まいと、冬から春にかけて長く咲き続ける鮮やかな赤にあります。11月14日生まれの方はもちろん、恥じらいの想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>タマスダレは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
+    <p>シクラメンは涼しく明るい場所を好み、水の与えすぎに注意しながら管理するとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>10月31日生まれの方はもちろん、清らかな潔白さを伝えたい贈り物としてもタマスダレは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>11月14日生まれの方はもちろん、恥じらいの想いを伝えたい贈り物としてもシクラメン（赤）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タマスダレはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に白い花を咲かせます。ヒガンバナ科の多年草です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）はいつ頃咲きますか？</div>
+        <div class="faq-a">冬から春に赤い花を咲かせます。サクラソウ科の多年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タマスダレの花言葉の由来は何ですか？</div>
-        <div class="faq-a">白い花びらが汚れなく咲きそろう姿が、清らかな潔白さを象徴することに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）の花言葉の由来は何ですか？</div>
+        <div class="faq-a">花びらが後ろに反り返るように恥じらいながら咲く姿が、はにかみを象徴することに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タマスダレの名前の由来は何ですか？</div>
-        <div class="faq-a">白い花が集まって咲く様子が、玉を連ねたすだれのように見えることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）はどんな場所に飾るのがおすすめですか？</div>
+        <div class="faq-a">冬から春にかけて長く花を楽しめるため、日当たりのよい室内で飾るのがおすすめです。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>タマスダレは白い花を咲かせる、10月31日の誕生花</li>
-      <li>花言葉は「潔白」、汚れなく咲きそろう白い花びらに由来する</li>
-      <li>群れて咲きそろう楚々とした佇まいが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>シクラメン（赤）は冬から春に赤い花を咲かせる、11月14日の誕生花</li>
+      <li>花言葉は「はにかみ」、後ろに反り返って咲く花びらの姿に由来する</li>
+      <li>反り返る花びらが生む可憐な佇まいが魅力</li>
+      <li>涼しく明るい場所を好み、水の与えすぎに注意しながら管理するとよく育ちます</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/oct/1030/',
-      'prevTitle'      => '10月30日の誕生花（クロッカス（紫））とは',
-      'nextTargetFile' => __DIR__.'/../../nov/1101/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/nov/1101/',
-      'nextTitle'      => '11月1日の誕生花（フウセンダマノキ）とは',
-      'listUrl'        => '/articles/calendar/birthflower/oct/',
-      'listTitle'      => '10月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/nov/1113/';
+  $prevTitle = '11月13日の誕生花（サザンカ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/nov/1115/';
+  $nextTitle = '11月15日の誕生花（モレア）とは';
+  $listUrl   = '/articles/calendar/birthflower/nov/';
+  $listTitle = '11月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'10月の誕生花一覧', 'title'=>'10月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/oct/'],
+      ['label'=>'11月の誕生花一覧', 'title'=>'11月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/nov/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-oct-1031'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-nov-1114'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-oct-1031');
+echo autoLink($html, 'birthflower-nov-1114');
 ?>
