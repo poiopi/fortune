@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../../../inc/auto-link.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0923/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月1日フクジュソウなど、365日の誕生花が持つ意味と花言葉をわかりやすく解説します。">
-  <title>誕生花とは？365日の花言葉を完全解説</title>
+  <meta name="description" content="9月23日の誕生花サガギクの花言葉・特徴・魅力をわかりやすく解説。「フェミニン」を象徴する優雅に垂れる花びらの意味を紹介します。">
+  <title>9月23日の誕生花はサガギク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -57,6 +57,9 @@ ob_start();
   .art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
   .art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}
   .art-lead{font-size:.95rem;color:var(--muted);line-height:1.9}
+  .basic-info{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.2rem;font-size:.88rem;align-items:baseline}
+  .basic-info dt{color:var(--muted);font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.04em}
+  .basic-info dd{color:var(--text)}
   .toc{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0}
   .toc-title{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:.75rem;font-family:var(--ff-mono)}
   .toc ol{padding-left:1.2rem;display:flex;flex-direction:column;gap:.35rem}
@@ -69,12 +72,8 @@ ob_start();
   .art-section h3{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--text);margin:1.5rem 0 .6rem}
   .art-section p{font-size:.93rem;line-height:1.9;color:#333;margin-bottom:.9rem}
   .art-section p:last-child{margin-bottom:0}
-  .type-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin-top:1rem}
-  .type-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;transition:border-color .2s;display:block;text-decoration:none;color:inherit}
-  a.type-card:hover{border-color:var(--accent-lt)}
-  .type-code{font-family:var(--ff-mono);font-size:.8rem;line-height:1.4;color:var(--accent);letter-spacing:.08em;margin-bottom:.25rem;min-height:2.24rem}
-  .type-name{font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;margin-bottom:.3rem}
-  .type-kw{font-size:.75rem;color:var(--muted)}
+  .art-section ul{padding-left:1.4rem;font-size:.93rem;line-height:1.9;color:#333}
+  .art-section li{margin-bottom:.4rem}
   .faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
   .faq-item{border:1px solid var(--border);border-radius:10px;overflow:hidden}
   .faq-q{font-size:.9rem;font-weight:500;padding:.9rem 1.1rem;background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
@@ -89,12 +88,26 @@ ob_start();
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"サガギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に細く優雅な花びらを咲かせます。キク科の多年草です。"}},
+      {"@type":"Question","name":"サガギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細く繊細な花びらが糸のように優雅に垂れて咲く上品な花姿が、しなやかで女性らしい魅力を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"サガギクとはどんな菊ですか？","acceptedAnswer":{"@type":"Answer","text":"京都・嵯峨地方で古くから育てられてきた古典菊の一種で、細く優雅に垂れる花びらが特徴です。"}}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
-      {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"}
+      {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
+      {"@type":"ListItem","position":5,"name":"9月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/"},
+      {"@type":"ListItem","position":6,"name":"9月23日の誕生花（サガギク）とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/0923/"}
     ]
   }
   </script>
@@ -110,71 +123,82 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span>誕生花とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/sep/">9月の誕生花とは</a><span>›</span>9月23日の誕生花（サガギク）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">BIRTHFLOWER · 完全ガイド</span>
-    <h1>誕生花とは？<br>365日の花言葉を完全解説</h1>
-    <p class="art-lead">誕生花とは、365日それぞれの日に定められた花のことです。花にはそれぞれ「花言葉」という意味が込められており、生まれた日の花を知ることで、自分らしさや大切な人への想いを表現することができます。</p>
+    <span class="art-label">SEPTEMBER 23 · 誕生花</span>
+    <h1>9月23日の誕生花はサガギク<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">サガギクは、キク科の多年草で、秋に細く優雅な花びらを咲かせる、優雅な印象を漂わせる花です。花言葉は「フェミニン」。優雅な花です。</p>
   </div>
+
+  <dl class="basic-info">
+    <dt>花名</dt><dd>サガギク</dd>
+    <dt>花言葉</dt><dd>フェミニン</dd>
+    <dt>科名</dt><dd>キク科</dd>
+    <dt>見頃</dt><dd>秋</dd>
+  </dl>
 
   <?php
   $ctaTitle = '📅 今日の誕生花を確認する';
   $ctaText  = '今日の誕生花や運気の波も毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
-  require __DIR__.'/../../../inc/article-cta.php';
+  require __DIR__.'/../../../../../inc/article-cta.php';
   ?>
 
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">誕生花とは</a></li>
-      <li><a href="#months">月ごとの誕生花</a></li>
+      <li><a href="#about">サガギクとは</a></li>
+      <li><a href="#meaning">サガギクが象徴する意味</a></li>
+      <li><a href="#charm">サガギクの魅力</a></li>
+      <li><a href="#care">育て方</a></li>
+      <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>誕生花とは</h2>
-    <p>誕生花とは、1年365日それぞれに1種類ずつ定められた花のことで、それぞれに固有の花言葉が込められています。誕生石が生まれ月ごとに1つ定められているのに対し、誕生花は日付単位で細かく設定されているのが特徴です。由来には諸説ありますが、花の持つ美しさや象徴性を、生まれた日という個人的な意味と結びつけて楽しむ文化として世界中に広まりました。</p>
+    <h2>サガギクとは</h2>
+    <p>サガギクは、キク科の多年草で、9月23日の誕生花として知られています。秋に細く優雅な花びらを咲かせる、優雅な印象を漂わせる花です。</p>
   </section>
 
-  <section class="art-section" id="months">
-    <h2>月ごとの誕生花</h2>
-    <p>誕生花は月ごとにまとめてご紹介しています。</p>
-    <div class="type-grid">
-      <a href="/articles/calendar/birthflower/jan/" class="type-card"><div class="type-code">1月</div><div class="type-name">1月の誕生花</div><div class="type-kw">フクジュソウ・ウメなど</div></a>
-      <a href="/articles/calendar/birthflower/feb/" class="type-card"><div class="type-code">2月</div><div class="type-name">2月の誕生花</div><div class="type-kw">クリスマスローズ・サンシュユなど</div></a>
-      <a href="/articles/calendar/birthflower/mar/" class="type-card"><div class="type-code">3月</div><div class="type-name">3月の誕生花</div><div class="type-kw">ボケ・モモ・チューリップなど</div></a>
-      <a href="/articles/calendar/birthflower/apr/" class="type-card"><div class="type-code">4月</div><div class="type-name">4月の誕生花</div><div class="type-kw">サクラ・フジ・ボタンなど</div></a>
-      <a href="/articles/calendar/birthflower/may/" class="type-card"><div class="type-code">5月</div><div class="type-name">5月の誕生花</div><div class="type-kw">シャクヤク・ハナショウブ・スズランなど</div></a>
-      <a href="/articles/calendar/birthflower/jun/" class="type-card"><div class="type-code">6月</div><div class="type-name">6月の誕生花</div><div class="type-kw">アジサイ・クチナシ・ラベンダーなど</div></a>
-      <a href="/articles/calendar/birthflower/jul/" class="type-card"><div class="type-code">7月</div><div class="type-name">7月の誕生花</div><div class="type-kw">アサガオ・ホオズキ・カンナなど</div></a>
-      <a href="/articles/calendar/birthflower/aug/" class="type-card"><div class="type-code">8月</div><div class="type-name">8月の誕生花</div><div class="type-kw">ヒマワリ・ハイビスカスなど</div></a>
-      <a href="/articles/calendar/birthflower/sep/" class="type-card"><div class="type-code">9月</div><div class="type-name">9月の誕生花</div><div class="type-kw">キク・キキョウ・コスモスなど</div></a>
-      <div class="type-card"><div class="type-code">10月</div><div class="type-name">10月の誕生花</div><div class="type-kw">近日公開</div></div>
-      <div class="type-card"><div class="type-code">11月</div><div class="type-name">11月の誕生花</div><div class="type-kw">近日公開</div></div>
-      <div class="type-card"><div class="type-code">12月</div><div class="type-name">12月の誕生花</div><div class="type-kw">近日公開</div></div>
-    </div>
+  <section class="art-section" id="meaning">
+    <h2>サガギクが象徴する意味</h2>
+    <p>サガギクの花言葉は「フェミニン」です。細く繊細な花びらが糸のように優雅に垂れて咲く上品な花姿が、しなやかで女性らしい魅力を象徴することに由来すると言われています。</p>
+  </section>
+
+  <section class="art-section" id="charm">
+    <h2>サガギクの魅力</h2>
+    <p>サガギクの魅力は、糸のように細く繊細な花びらが幾重にも重なって咲く優雅さと、古くから受け継がれてきた京の古典菊としての気品にあります。9月23日生まれの方はもちろん、しなやかな想いを伝えたい贈り物にもふさわしい花です。</p>
+  </section>
+
+  <section class="art-section" id="care">
+    <h2>育て方</h2>
+    <p>サガギクは日当たりを好み、過湿を嫌うため水はけの良い土で管理するとよく育ちます。</p>
+  </section>
+
+  <section class="art-section" id="today">
+    <h2>今日が誕生花なら</h2>
+    <p>9月23日生まれの方はもちろん、しなやかな想いを伝えたい贈り物としてもサガギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">誕生花は誰が決めているのですか？</div>
-        <div class="faq-a">国や文献によって多少の違いがありますが、日本では複数の資料を照合した一般的な体系が広く使われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サガギクはいつ頃咲きますか？</div>
+        <div class="faq-a">秋に細く優雅な花びらを咲かせます。キク科の多年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">同じ花が複数の日にちに割り当てられることはありますか？</div>
-        <div class="faq-a">はい。365日に対して花の種類には限りがあるため、同じ花が複数の日付に割り当てられることがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サガギクの花言葉の由来は何ですか？</div>
+        <div class="faq-a">細く繊細な花びらが糸のように優雅に垂れて咲く上品な花姿が、しなやかで女性らしい魅力を象徴することに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">誕生花と誕生石は関係がありますか？</div>
-        <div class="faq-a">どちらも生まれた日・月に意味を結びつける文化ですが、誕生石は月単位、誕生花は日付単位で定められている点が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サガギクとはどんな菊ですか？</div>
+        <div class="faq-a">京都・嵯峨地方で古くから育てられてきた古典菊の一種で、細く優雅に垂れる花びらが特徴です。</div>
       </div>
     </div>
   </section>
@@ -182,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>誕生花とは、365日それぞれに定められた花とその花言葉のこと</li>
-      <li>誕生石が月単位なのに対し、誕生花は日付単位で細かく設定されている</li>
-      <li>生まれた日の花を通して、自分らしさや想いを表現できる</li>
-      <li>開運カレンダーで毎日の誕生花も確認できる</li>
+      <li>サガギクは秋に優雅な花びらを咲かせる、9月23日の誕生花</li>
+      <li>花言葉は「フェミニン」、優雅に垂れる花びらに由来する</li>
+      <li>糸のように優雅な花びらが魅力</li>
+      <li>日当たりを好み、過湿を嫌う</li>
     </ul>
   </section>
 
@@ -194,18 +218,17 @@ ob_start();
   $ctaText  = '今日の誕生花や運気の波も毎日更新でお届け。';
   $ctaUrl   = '/calendar';
   $ctaBtn   = '開運カレンダーを見る →';
-  require __DIR__.'/../../../inc/article-cta.php';
+  require __DIR__.'/../../../../../inc/article-cta.php';
   ?>
 
   <?php
-  $prevUrl   = '/articles/calendar/birthstone/';
-  $prevTitle = '誕生石とは';
-  $prevLabel = '← 前のカテゴリ';
-  $nextUrl   = null;
-  $nextTitle = null;
-  $listUrl   = '/articles/calendar/';
-  $listTitle = '開運カレンダーとは';
-  require __DIR__.'/../../../inc/article-nav.php';
+  $prevUrl   = '/articles/calendar/birthflower/sep/0922/';
+  $prevTitle = '9月22日の誕生花（クジャクソウ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/sep/0924/';
+  $nextTitle = '9月24日の誕生花（ユウゼンギク）とは';
+  $listUrl   = '/articles/calendar/birthflower/sep/';
+  $listTitle = '9月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -213,11 +236,11 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'誕生石とは', 'title'=>'12か月の誕生石一覧を見る →', 'url'=>'/articles/calendar/birthstone/'],
-      ['label'=>'月の満ち欠けとは', 'title'=>'8つの月相の意味を知る →', 'url'=>'/articles/calendar/moon/'],
+      ['label'=>'9月の誕生花一覧', 'title'=>'9月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/sep/'],
+      ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
-    require __DIR__.'/../../../inc/article-related.php';
+    require __DIR__.'/../../../../../inc/article-related.php';
     ?>
   </section>
 
@@ -230,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower'; $pageType='article'; require __DIR__.'/../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-sep-0923'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower');
+echo autoLink($html, 'birthflower-sep-0923');
 ?>

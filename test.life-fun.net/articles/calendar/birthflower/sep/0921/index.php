@@ -14,10 +14,10 @@ ob_start();
     gtag('config', 'G-P1EKB3WWX8');
   </script>
   <meta charset="UTF-8">
-  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0831/" />
+  <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0921/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月31日の誕生花スパティフィラムの花言葉・特徴・魅力をわかりやすく解説。「清らかな心」を象徴する白い苞の意味を紹介します。">
-  <title>8月31日の誕生花はスパティフィラム｜花言葉と魅力をわかりやすく解説</title>
+  <meta name="description" content="9月21日の誕生花キキョウの花言葉・特徴・魅力をわかりやすく解説。「変わらぬ恋」を象徴する星形の花の意味を紹介します。">
+  <title>9月21日の誕生花はキキョウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -83,9 +83,6 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +90,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スパティフィラムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して白い苞を咲かせます。サトイモ科の多年草です。"}},
-      {"@type":"Question","name":"スパティフィラムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"汚れのない純白の苞が静かに凛と咲く姿が、澄み渡った清らかな心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"スパティフィラムは室内でも育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"はい。日陰にも比較的強く、空気清浄効果もあるとされることから、室内で育てる観葉植物として人気があります。"}}
+      {"@type":"Question","name":"キキョウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に風船のような蕾から星形の花を咲かせます。キキョウ科の多年草です。"}},
+      {"@type":"Question","name":"キキョウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"膨らんだ蕾がはじけるように開き、星形の花を毎年変わらず咲かせ続ける凛とした花姿が、変わらぬ恋心を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"キキョウの蕾はなぜ風船のような形をしているのですか？","acceptedAnswer":{"@type":"Answer","text":"開花前の花びらが内側でくっついたまま膨らむため、風船のような形になります。この特徴から英語では「バルーンフラワー」とも呼ばれます。"}}
     ]
   }
   </script>
@@ -109,8 +106,8 @@ ob_start();
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"8月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/aug/"},
-      {"@type":"ListItem","position":6,"name":"8月31日の誕生花（スパティフィラム）とは","item":"https://life-fun.net/articles/calendar/birthflower/aug/0831/"}
+      {"@type":"ListItem","position":5,"name":"9月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/"},
+      {"@type":"ListItem","position":6,"name":"9月21日の誕生花（キキョウ）とは","item":"https://life-fun.net/articles/calendar/birthflower/sep/0921/"}
     ]
   }
   </script>
@@ -126,20 +123,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/aug/">8月の誕生花とは</a><span>›</span>8月31日の誕生花（スパティフィラム）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/sep/">9月の誕生花とは</a><span>›</span>9月21日の誕生花（キキョウ）とは
   </nav>
 
   <div class="art-hero">
-    <span class="art-label">AUGUST 31 · 誕生花</span>
-    <h1>8月31日の誕生花はスパティフィラム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スパティフィラムは、サトイモ科の多年草で、一年を通して白い苞を咲かせる、清潔感のある落ち着いた印象を持つ植物です。花言葉は「清らかな心」。清潔感のある落ち着いた花です。</p>
+    <span class="art-label">SEPTEMBER 21 · 誕生花</span>
+    <h1>9月21日の誕生花はキキョウ<br>花言葉と魅力をわかりやすく解説</h1>
+    <p class="art-lead">キキョウは、キキョウ科の多年草で、夏に風船のような蕾から星形の花を咲かせる、凛とした涼やかな印象を持つ花です。花言葉は「変わらぬ恋」。凛とした涼やかな花です。</p>
   </div>
 
   <dl class="basic-info">
-    <dt>花名</dt><dd>スパティフィラム</dd>
-    <dt>花言葉</dt><dd>清らかな心</dd>
-    <dt>科名</dt><dd>サトイモ科</dd>
-    <dt>見頃</dt><dd>通年</dd>
+    <dt>花名</dt><dd>キキョウ</dd>
+    <dt>花言葉</dt><dd>変わらぬ恋</dd>
+    <dt>科名</dt><dd>キキョウ科</dd>
+    <dt>見頃</dt><dd>夏</dd>
   </dl>
 
   <?php
@@ -153,9 +150,9 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スパティフィラムとは</a></li>
-      <li><a href="#meaning">スパティフィラムが象徴する意味</a></li>
-      <li><a href="#charm">スパティフィラムの魅力</a></li>
+      <li><a href="#about">キキョウとは</a></li>
+      <li><a href="#meaning">キキョウが象徴する意味</a></li>
+      <li><a href="#charm">キキョウの魅力</a></li>
       <li><a href="#care">育て方</a></li>
       <li><a href="#today">今日が誕生花なら</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -164,44 +161,44 @@ ob_start();
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スパティフィラムとは</h2>
-    <p>スパティフィラムは、サトイモ科の多年草で、8月31日の誕生花として知られています。一年を通して白い苞を咲かせる、清潔感のある落ち着いた印象を持つ植物です。</p>
+    <h2>キキョウとは</h2>
+    <p>キキョウは、キキョウ科の多年草で、9月21日の誕生花として知られています。夏に風船のような蕾から星形の花を咲かせる、凛とした涼やかな印象を持つ花です。</p>
   </section>
 
   <section class="art-section" id="meaning">
-    <h2>スパティフィラムが象徴する意味</h2>
-    <p>スパティフィラムの花言葉は「清らかな心」です。汚れのない純白の苞が静かに凛と咲く姿が、澄み渡った清らかな心を象徴することに由来すると言われています。</p>
+    <h2>キキョウが象徴する意味</h2>
+    <p>キキョウの花言葉は「変わらぬ恋」です。膨らんだ蕾がはじけるように開き、星形の花を毎年変わらず咲かせ続ける凛とした花姿が、変わらぬ恋心を象徴することに由来すると言われています。</p>
   </section>
 
   <section class="art-section" id="charm">
-    <h2>スパティフィラムの魅力</h2>
-    <p>スパティフィラムの魅力は、光沢のある濃い緑の葉とすっと伸びる白い苞が織りなす、清潔感のある美しさにあります。空気清浄効果を持つ観葉植物としても人気の高い花です。8月31日生まれの方はもちろん、清らかな想いを伝えたい贈り物にもふさわしい花です。</p>
+    <h2>キキョウの魅力</h2>
+    <p>キキョウの魅力は、風船のように膨らむ蕾の愛らしさと、開いたときに現れる星形の花びらの涼やかな美しさにあります。秋の七草の一つとしても親しまれています。 9月21日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物にもふさわしい花です。</p>
   </section>
 
   <section class="art-section" id="care">
     <h2>育て方</h2>
-    <p>スパティフィラムは明るい日陰を好み、乾燥に弱いため水切れに注意して管理するとよく育ちます。</p>
+    <p>キキョウは日当たりを好み、過湿を嫌うため水はけの良い土で管理するとよく育ちます。</p>
   </section>
 
   <section class="art-section" id="today">
     <h2>今日が誕生花なら</h2>
-    <p>8月31日生まれの方はもちろん、清らかな想いを伝えたい贈り物としてもスパティフィラムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
+    <p>9月21日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物としてもキキョウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
   </section>
 
   <section class="art-section" id="faq">
     <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して白い苞を咲かせます。サトイモ科の多年草です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キキョウはいつ頃咲きますか？</div>
+        <div class="faq-a">夏に風船のような蕾から星形の花を咲かせます。キキョウ科の多年草です。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">汚れのない純白の苞が静かに凛と咲く姿が、澄み渡った清らかな心を象徴することに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キキョウの花言葉の由来は何ですか？</div>
+        <div class="faq-a">膨らんだ蕾がはじけるように開き、星形の花を毎年変わらず咲かせ続ける凛とした花姿が、変わらぬ恋心を象徴することに由来すると言われています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムは室内でも育てやすいですか？</div>
-        <div class="faq-a">はい。日陰にも比較的強く、空気清浄効果もあるとされることから、室内で育てる観葉植物として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キキョウの蕾はなぜ風船のような形をしているのですか？</div>
+        <div class="faq-a">開花前の花びらが内側でくっついたまま膨らむため、風船のような形になります。この特徴から英語では「バルーンフラワー」とも呼ばれます。</div>
       </div>
     </div>
   </section>
@@ -209,10 +206,10 @@ ob_start();
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
     <ul>
-      <li>スパティフィラムは一年を通して白い苞を咲かせる、8月31日の誕生花</li>
-      <li>花言葉は「清らかな心」、純白の苞に由来する</li>
-      <li>清潔感のある落ち着いた美しさが魅力</li>
-      <li>明るい日陰を好み、水切れに注意する</li>
+      <li>キキョウは夏に星形の花を咲かせる、9月21日の誕生花</li>
+      <li>花言葉は「変わらぬ恋」、変わらず咲く花姿に由来する</li>
+      <li>蕾の愛らしさと涼やかな花姿が魅力</li>
+      <li>日当たりを好み、過湿を嫌う</li>
     </ul>
   </section>
 
@@ -225,16 +222,13 @@ ob_start();
   ?>
 
   <?php
-  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
-  renderBirthflowerBoundaryNav([
-      'prevUrl'        => '/articles/calendar/birthflower/aug/0830/',
-      'prevTitle'      => '8月30日の誕生花（オジギソウ）とは',
-      'nextTargetFile' => __DIR__.'/../../sep/0901/index.php',
-      'nextUrl'        => '/articles/calendar/birthflower/sep/0901/',
-      'nextTitle'      => '9月1日の誕生花（ムラサキツユクサ）とは',
-      'listUrl'        => '/articles/calendar/birthflower/aug/',
-      'listTitle'      => '8月の誕生花一覧',
-  ]);
+  $prevUrl   = '/articles/calendar/birthflower/sep/0920/';
+  $prevTitle = '9月20日の誕生花（ケーププリムローズ）とは';
+  $nextUrl   = '/articles/calendar/birthflower/sep/0922/';
+  $nextTitle = '9月22日の誕生花（クジャクソウ）とは';
+  $listUrl   = '/articles/calendar/birthflower/sep/';
+  $listTitle = '9月の誕生花一覧';
+  require __DIR__.'/../../../../../inc/article-nav.php';
   ?>
 
   <section class="art-section" id="related">
@@ -242,7 +236,7 @@ ob_start();
     <p>誕生花や暦についてさらに詳しく知りたい方はこちら。</p>
     <?php
     $relatedItems = [
-      ['label'=>'8月の誕生花一覧', 'title'=>'8月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/aug/'],
+      ['label'=>'9月の誕生花一覧', 'title'=>'9月の誕生花・花言葉を見る →', 'url'=>'/articles/calendar/birthflower/sep/'],
       ['label'=>'誕生花とは', 'title'=>'365日の誕生花・花言葉を知る →', 'url'=>'/articles/calendar/birthflower/'],
       ['label'=>'開運カレンダーとは', 'title'=>'吉方位・ラッキーカラー・吉日の意味を知る →', 'url'=>'/articles/calendar/'],
     ];
@@ -259,10 +253,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-aug-0831'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-sep-0921'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-aug-0831');
+echo autoLink($html, 'birthflower-sep-0921');
 ?>
