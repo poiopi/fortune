@@ -7523,7 +7523,7 @@ const FLOWER_MATERIAL_CARDS = [
     'サフラン' => [
         'primaryType'   => 'food_culture',
         'secondaryType' => 'color',
-        'shortageLevel' => null,
+        'shortageLevel' => 'B',
         'hook'          => '雌しべが香辛料として使われる、秋に咲く紫の花',
         'observations'  => [
             'アヤメ科の球根植物で、秋に紫色の花を咲かせる点（サフランの説明）',
@@ -7767,7 +7767,7 @@ const FLOWER_MATERIAL_CARDS = [
     'テッポウユリ' => [
         'primaryType'   => 'color',
         'secondaryType' => 'shape',
-        'shortageLevel' => null,
+        'shortageLevel' => 'B',
         'hook'          => '白く、ラッパのように咲く清楚な花',
         'observations'  => [
             '白いラッパ状の花を咲かせる、ユリ科の多年草である点（テッポウユリの説明）',
@@ -7901,7 +7901,7 @@ const FLOWER_MATERIAL_CARDS = [
     'ヘリコニア' => [
         'primaryType'   => 'shape',
         'secondaryType' => 'color',
-        'shortageLevel' => null,
+        'shortageLevel' => 'B',
         'hook'          => '南国を思わせる、鮮やかで独特な苞',
         'observations'  => [
             '夏に鮮やかな苞が特徴的な、南国的な花を咲かせる、ヘリコニア科の多年草である点（ヘリコニアの説明）',
@@ -7967,7 +7967,7 @@ const FLOWER_MATERIAL_CARDS = [
     'ニオイバンマツリ' => [
         'primaryType'   => 'color',
         'secondaryType' => 'scent',
-        'shortageLevel' => null,
+        'shortageLevel' => 'B',
         'hook'          => '紫から白へ、色を変えながら香る花',
         'observations'  => [
             '初夏に紫から白へ色を変える花を咲かせる、ナス科の常緑低木である点（ニオイバンマツリの説明）',
@@ -8053,13 +8053,14 @@ const FLOWER_MATERIAL_CARDS = [
 
     // 12-25
     'クリスマスパレード' => [
-        'primaryType'   => 'season',
-        'secondaryType' => 'lifestyle',
-        'shortageLevel' => 'B',
-        'hook'          => '冬の景色に、静かに彩りを添える',
+        'primaryType'   => 'annual_event',
+        'secondaryType' => 'color',
+        'shortageLevel' => null,
+        'hook'          => 'クリスマスの頃、蕾は白くやがてピンクに色づく',
         'observations'  => [
-            '冬の季節に彩りを添える、華やかな印象の園芸品種である点（クリスマスパレードの説明）',
-            '園芸品種として、暮らしの彩りに取り入れやすい花だといえる点（クリスマスパレードの説明）',
+            'クリスマスシーズンに多く出回ることが名前の由来である点（クリスマスパレードの説明）',
+            '蕾のうちは白く、開くにつれて優しいピンク色に染まる点（クリスマスパレードの説明）',
+            'ツツジ科エリカ属の、冬に咲く筒状の花を持つ常緑低木である点（クリスマスパレードの説明）',
         ],
         'emotion'       => '分け隔てなく、誰にでも優しくありたい気持ち',
         'experiences'   => [
@@ -8121,7 +8122,7 @@ const FLOWER_MATERIAL_CARDS = [
     'ストロベリーキャンドル' => [
         'primaryType'   => 'shape',
         'secondaryType' => 'color',
-        'shortageLevel' => null,
+        'shortageLevel' => 'B',
         'hook'          => '苺のような形をした、赤い花',
         'observations'  => [
             '苺のような形をした赤い花を咲かせる、マメ科の一年草である点（ストロベリーキャンドルの説明）',

@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ナワシロイチゴの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"田植え（苗代）の頃に実をつけることに由来するとされています。"}},
-      {"@type":"Question","name":"ナワシロイチゴの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恩恵」という花言葉は、花のあとに実りをもたらす姿が自然の恵みを象徴することに由来するとされています。"}},
-      {"@type":"Question","name":"ナワシロイチゴの実は食べられますか？","acceptedAnswer":{"@type":"Answer","text":"野いちごの一種で、酸味のある実をつけますが、観賞用として楽しまれることが多い植物です。"}}
+      {"@type":"Question","name":"ナワシロイチゴの名前の由来は？","acceptedAnswer":{"@type":"Answer","text":"苗代（稲の苗を育てる田）を作る頃に実が熟すことが、名前の由来とされています。"}},
+      {"@type":"Question","name":"ナワシロイチゴの花言葉「恩恵」の由来は？","acceptedAnswer":{"@type":"Answer","text":"花を咲かせたあとに実をつけ、ジャムなどにも利用されるその実りの豊かさから「恩恵」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 10 · 誕生花</span>
     <h1>1月10日の誕生花はナワシロイチゴ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ナワシロイチゴは、淡紅色の花と実を両方楽しめる1月10日の誕生花です。花言葉は「恩恵」。</p>
+    <p class="art-lead">松の内が明け、日常が少しずつ戻ってくる1月10日。淡紅色の小さな花と赤い実、両方の恵みを与えてくれるナワシロイチゴを、今日は紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ナワシロイチゴとは</a></li>
-      <li><a href="#meaning">ナワシロイチゴが象徴する意味</a></li>
-      <li><a href="#charm">ナワシロイチゴの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">淡紅色の花と実、ナワシロイチゴの恵み</a></li>
+      <li><a href="#story">1月10日、淡紅色が教えてくれる小さな恩恵</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ナワシロイチゴから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ナワシロイチゴとは</h2>
-    <p>ナワシロイチゴは、バラ科の落葉小低木で、1月10日の誕生花として知られています。初夏に淡い紅色の花を咲かせ、その後小さな実をつけることから、田植えの時期に実をつける野いちごとして親しまれています。</p>
-  </section>
+    <h2>淡紅色の花と実、ナワシロイチゴの恵み</h2>
+    <p>ナワシロイチゴは、バラ科の落葉小低木です。初夏に淡紅色の花を咲かせ、やがて赤い実をつけます。苗代を作る頃に実が熟すことが名前の由来とされ、実はジャムなどに利用されてきました。花と実、両方の姿を楽しめる植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ナワシロイチゴが象徴する意味</h2>
-    <p>ナワシロイチゴの花言葉は「恩恵」です。花のあとに実りをもたらすその姿から、自然からの恵みや恩恵を象徴する植物とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ナワシロイチゴの魅力</h2>
-    <p>ナワシロイチゴの魅力は、淡紅色の可憐な花と、花のあとに実る小さな果実の両方を楽しめる点にあります。野趣あふれる姿は、素朴で懐かしい印象を与えてくれます。1月10日生まれの方はもちろん、恵みへの感謝を伝えたい贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ナワシロイチゴは日当たりの良い場所を好み、丈夫で育てやすく、土の表面が乾いたら水を与える程度で十分育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月10日生まれの方はもちろん、恵みへの感謝を伝えたい贈り物としてもナワシロイチゴは親しまれています。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナワシロイチゴの名前の由来は何ですか？</div>
-        <div class="faq-a">田植え（苗代）の頃に実をつけることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナワシロイチゴの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「恩恵」という花言葉は、花のあとに実りをもたらす姿が自然の恵みを象徴することに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナワシロイチゴの実は食べられますか？</div>
-        <div class="faq-a">野いちごの一種で、酸味のある実をつけますが、観賞用として楽しまれることが多い植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ナワシロイチゴの名前の由来は？</div>
+        <div class="faq-a">苗代（稲の苗を育てる田）を作る頃に実が熟すことが、名前の由来とされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月10日、淡紅色が教えてくれる小さな恩恵</h2>
+    <p>ナワシロイチゴの淡紅色は、派手さのない優しい色合いです。強く主張することはなくても、季節が巡れば必ず花を咲かせ、実を結んでくれる。その静かな確かさに、日々の暮らしの中で受け取っている小さな恵みを重ねてみたくなります。松の内が明けて日常が戻る1月10日、当たり前だと思っていたことの中にも、実はたくさんの恩恵が隠れているのかもしれません。花言葉は「恩恵」。淡紅色の花と赤い実、その両方が与えてくれる実りから生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ナワシロイチゴの花言葉「恩恵」の由来は？</div>
+        <div class="faq-a">花を咲かせたあとに実をつけ、ジャムなどにも利用されるその実りの豊かさから「恩恵」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>日々の中で受け取っている小さな恵みは、意識しないと見過ごしてしまいがちです。今日はふと立ち止まって、当たり前にあるものへありがとうを伝えてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ナワシロイチゴから始める小さな体験</h2>
+    <p>花と実、両方の恵みをもたらすナワシロイチゴにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>淡紅色の小さな花を野や庭で探してみる</li>
+      <li>日々受け取っている小さな恵みを一つ思い浮かべてみる</li>
+      <li>誰かからの親切に、素直に感謝を伝えてみる</li>
+    </ul>
+
+    <p class="cta-lead">小さな恵みに気づいた今日は、運気の流れもあわせてチェックしてみませんか。開運カレンダーでは、日々のラッキーアイテムもわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ナワシロイチゴは、花と実の両方で恵みをもたらす、1月10日らしい誕生花です。</p>
     <ul>
-      <li>ナワシロイチゴは初夏に淡紅色の花を咲かせる、1月10日の誕生花</li>
-      <li>花言葉は「恩恵」、自然の恵みを象徴する植物とされる</li>
-      <li>花と実の両方を楽しめる素朴な魅力がある</li>
-      <li>丈夫で育てやすい</li>
+      <li>ナワシロイチゴはバラ科の落葉小低木で、初夏に淡紅色の花を咲かせ実をつける</li>
+      <li>苗代を作る頃に実が熟すことが名前の由来とされる</li>
+      <li>花言葉は「恩恵」。花と実がもたらす実りの豊かさを象徴する</li>
+      <li>実はジャムなどに利用されると伝えられている</li>
     </ul>
   </section>
 

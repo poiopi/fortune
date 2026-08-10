@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ポピーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、薄く繊細な花びらの花を咲かせます。"}},
-      {"@type":"Question","name":"ポピーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「やすらぎ」という花言葉は、風に揺れる薄い花びらが醸し出す穏やかな雰囲気に由来するとされています。"}},
-      {"@type":"Question","name":"ポピーにはどんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤・オレンジ・白・ピンクなど、豊富な色合いがあります。"}}
+      {"@type":"Question","name":"ポピーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"ポピーの開花期は春です。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。"}},
+      {"@type":"Question","name":"ポピーの花言葉「やすらぎ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"薄く繊細な花びらが風にそよぐ、はかなくも軽やかな印象から「やすらぎ」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 15 · 誕生花</span>
     <h1>1月15日の誕生花はポピー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ポピーは、薄い花びらが風にそよぐ1月15日の誕生花です。花言葉は「やすらぎ」。繊細ではかない印象の花です。</p>
+    <p class="art-lead">小正月を迎える1月15日。正月の慌ただしさもようやく落ち着く頃、薄い花びらを風にそよがせるポピーのように、少し肩の力を抜いてみたくなる日です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ポピーとは</a></li>
-      <li><a href="#meaning">ポピーが象徴する意味</a></li>
-      <li><a href="#charm">ポピーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">風にそよぐ、ポピーの薄い花びら</a></li>
+      <li><a href="#story">1月15日、ポピーの花びらが揺れて教えるやすらぎ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ポピーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ポピーとは</h2>
-    <p>ポピーは、ケシ科の植物で、1月15日の誕生花として知られています。春に薄く繊細な花びらを持つ花を咲かせ、風にそよぐその姿から、はかなく可憐な印象を与える花として親しまれています。</p>
-  </section>
+    <h2>風にそよぐ、ポピーの薄い花びら</h2>
+    <p>ポピーは、ケシ科の植物です。春になると、薄く繊細な花びらが風にそよぐ花を咲かせます。花色は赤やオレンジ、黄、白など多彩で、一枚一枚の花びらがまるで紙のように薄く、はかない印象を与えます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ポピーが象徴する意味</h2>
-    <p>ポピーの花言葉は「やすらぎ」です。風に揺れる薄い花びらが醸し出す穏やかな雰囲気から、心安らぐひとときを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ポピーの魅力</h2>
-    <p>ポピーの魅力は、薄く透けるような花びらが風にそよぐ繊細な美しさと、赤・オレンジ・白など豊富な花色にあります。群生して咲く景色は見る人の心を穏やかにしてくれます。1月15日生まれの方はもちろん、安らぎを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ポピーは日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月15日生まれの方はもちろん、安らぎを届けたい贈り物としてもポピーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ポピーはいつ頃咲きますか？</div>
-        <div class="faq-a">春に、薄く繊細な花びらの花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポピーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「やすらぎ」という花言葉は、風に揺れる薄い花びらが醸し出す穏やかな雰囲気に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポピーにはどんな色がありますか？</div>
-        <div class="faq-a">赤・オレンジ・白・ピンクなど、豊富な色合いがあります。</div>
+        <div class="faq-a">ポピーの開花期は春です。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月15日、ポピーの花びらが揺れて教えるやすらぎ</h2>
+    <p>ポピーの花びらは、他の花に比べても薄く、少しの風でひらひらと揺れます。この頼りなさそうな軽やかさが、かえって見る人の肩の力を抜かせてくれるようです。小正月を迎える1月15日、正月の忙しさもようやくひと段落する頃合いです。力を入れすぎず、ふわりと揺れるポピーの花びらのように、今日は少し力を抜いて過ごしてみるのも良いかもしれません。花言葉は「やすらぎ」。繊細で軽やかなその佇まいから生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ポピーの花言葉「やすらぎ」の由来は？</div>
+        <div class="faq-a">薄く繊細な花びらが風にそよぐ、はかなくも軽やかな印象から「やすらぎ」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>力を抜いていい瞬間は、思っているよりたくさんあります。今日はポピーの花びらのように、肩の力をふっと抜いて過ごしてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ポピーから始める小さな体験</h2>
+    <p>風にそよぐポピーにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>風にそよぐ花を見つけてしばらく眺めてみる</li>
+      <li>深呼吸をして気持ちを落ち着けてみる</li>
+      <li>力を抜いてゆったり過ごす時間を作ってみる</li>
+    </ul>
+
+    <p class="cta-lead">ゆったりとした気持ちで過ごした今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、日々の吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ポピーは、薄い花びらが風に揺れる姿でやすらぎを届ける、1月15日らしい誕生花です。</p>
     <ul>
-      <li>ポピーは春に薄い花びらの花を咲かせる、1月15日の誕生花</li>
-      <li>花言葉は「やすらぎ」、穏やかな心を象徴する花とされる</li>
-      <li>繊細ではかない花姿が魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>ポピーはケシ科の植物で、春に薄く繊細な花びらの花を咲かせる</li>
+      <li>花色は赤やオレンジ、黄、白など多彩</li>
+      <li>花言葉は「やすらぎ」。軽やかで繊細な佇まいを象徴する言葉とされる</li>
+      <li>1月の誕生花だが、実際の開花期は春であることを知っておきたい</li>
     </ul>
   </section>
 

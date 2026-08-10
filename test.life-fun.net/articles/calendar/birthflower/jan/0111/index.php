@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コチョウラン（白）はどのくらい花が持ちますか？","acceptedAnswer":{"@type":"Answer","text":"管理次第では1〜2ヶ月以上、長期間美しい花を楽しめます。"}},
-      {"@type":"Question","name":"コチョウラン（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛をあなたへ」という花言葉は、清らかな白い花姿がまっすぐな愛情を伝えることに由来するとされています。"}},
-      {"@type":"Question","name":"白いコチョウランはどんな場面で贈られますか？","acceptedAnswer":{"@type":"Answer","text":"開店祝いや就任祝い、結婚式など、格式高い場面での贈り物として選ばれています。"}}
+      {"@type":"Question","name":"コチョウラン（白）はどれくらいの期間花が咲きますか？","acceptedAnswer":{"@type":"Answer","text":"コチョウランは花もちがよく、条件が整えば1か月から2か月ほど花を長く楽しめるとされています。"}},
+      {"@type":"Question","name":"コチョウラン（白）の花言葉「愛をあなたへ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"蝶が舞うような花の形が、想いを届けるメッセンジャーのように見えることから「愛をあなたへ」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 11 · 誕生花</span>
     <h1>1月11日の誕生花はコチョウラン（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コチョウラン（白）は、蝶が舞うような白い花を長く咲かせる1月11日の誕生花です。花言葉は「愛をあなたへ」。上品な印象の花です。</p>
+    <p class="art-lead">鏡開きを迎える1月11日。白い花びらを蝶のように広げて咲くコチョウラン（白）は、飾らない清らかさで見る人を静かに惹きつけます。今日はその佇まいをじっくり眺めてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>コチョウラン（白）</dd>
     <dt>花言葉</dt><dd>愛をあなたへ</dd>
     <dt>科名</dt><dd>ラン科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>一年を通して</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コチョウラン（白）とは</a></li>
-      <li><a href="#meaning">コチョウラン（白）が象徴する意味</a></li>
-      <li><a href="#charm">コチョウラン（白）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">蝶が舞うような、コチョウラン（白）の気品</a></li>
+      <li><a href="#story">1月11日、蝶のかたちが伝えるまっすぐな想い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、コチョウラン（白）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コチョウラン（白）とは</h2>
-    <p>コチョウラン（白）は、ラン科の洋ランで、1月11日の誕生花として知られています。蝶が舞うような清らかな白い花を長く咲かせ、その上品な佇まいから贈答用の花としても広く親しまれています。</p>
-  </section>
+    <h2>蝶が舞うような、コチョウラン（白）の気品</h2>
+    <p>コチョウラン（白）は、ラン科の洋ランです。蝶が舞うような形をした白い花を長く咲かせ続けることから、上品で気品のある花として親しまれています。同じ仲間のコチョウランは一年を通して花を咲かせ、開店祝いなど特別な場面の贈り物としても選ばれてきました。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>コチョウラン（白）が象徴する意味</h2>
-    <p>コチョウラン（白）の花言葉は「愛をあなたへ」です。白く清らかな花姿が、純粋でまっすぐな愛情を伝える象徴とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>コチョウラン（白）の魅力</h2>
-    <p>コチョウラン（白）の魅力は、蝶が羽ばたくような優雅な花姿と、長く咲き続ける美しさにあります。白の清らかさは格式高い印象を与え、特別な贈り物として長く選ばれ続けています。1月11日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>コチョウラン（白）は直射日光を避けた明るい室内で育て、水は控えめに、乾いてから与えるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月11日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物としてもコチョウラン（白）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウラン（白）はどのくらい花が持ちますか？</div>
-        <div class="faq-a">管理次第では1〜2ヶ月以上、長期間美しい花を楽しめます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウラン（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「愛をあなたへ」という花言葉は、清らかな白い花姿がまっすぐな愛情を伝えることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">白いコチョウランはどんな場面で贈られますか？</div>
-        <div class="faq-a">開店祝いや就任祝い、結婚式など、格式高い場面での贈り物として選ばれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">コチョウラン（白）はどれくらいの期間花が咲きますか？</div>
+        <div class="faq-a">コチョウランは花もちがよく、条件が整えば1か月から2か月ほど花を長く楽しめるとされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月11日、蝶のかたちが伝えるまっすぐな想い</h2>
+    <p>コチョウランの花びらをよく見ると、左右対称に大きく開いた花弁が、まるで蝶が羽を広げて止まっているかのような形をしています。一輪だけでも十分に存在感があり、白い花びらは飾らない清らかさを感じさせます。鏡開きを迎え、年始の慌ただしさが少しずつ落ち着く1月11日。飾らずまっすぐに、誰かへの気持ちを伝えたくなる日かもしれません。花言葉は「愛をあなたへ」。蝶が舞うような姿そのものが、想いを届けるメッセンジャーのように見えることに由来するといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コチョウラン（白）の花言葉「愛をあなたへ」の由来は？</div>
+        <div class="faq-a">蝶が舞うような花の形が、想いを届けるメッセンジャーのように見えることから「愛をあなたへ」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>飾らない気持ちほど、まっすぐに相手に届くものです。今日は難しく考えず、思っていることをそのまま言葉にしてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、コチョウラン（白）から始める小さな体験</h2>
+    <p>まっすぐな想いを届けるコチョウランにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白いコチョウランの花びらの形をじっくり観察してみる</li>
+      <li>伝えたい気持ちを一つ、素直な言葉にしてみる</li>
+      <li>白い花を飾って気持ちを整えてみる</li>
+    </ul>
+
+    <p class="cta-lead">素直な気持ちを見つめ直した今日は、運気の流れもあわせてチェックしてみませんか。開運カレンダーでは、日々の吉方位もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>コチョウラン（白）は、蝶のような姿でまっすぐな想いを届ける、1月11日らしい誕生花です。</p>
     <ul>
-      <li>コチョウラン（白）は蝶が舞うような、1月11日の誕生花</li>
-      <li>花言葉は「愛をあなたへ」、まっすぐな愛情を象徴する花とされる</li>
-      <li>清らかな白と長く咲き続ける美しさが魅力</li>
-      <li>水は控えめに、乾いてから与えて育てたい</li>
+      <li>コチョウラン（白）はラン科の洋ランで、蝶が舞うような白い花を長く咲かせる</li>
+      <li>同じ仲間のコチョウランは一年を通して花を咲かせ、贈り物としても人気</li>
+      <li>花言葉は「愛をあなたへ」。まっすぐな想いを届ける花として親しまれる</li>
+      <li>特定の場面専用の花ではなく、さまざまな贈り物のシーンで選ばれている</li>
     </ul>
   </section>
 

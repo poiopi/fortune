@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ブルーデイジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から秋にかけて、長期間青い花を咲かせ続けます。"}},
-      {"@type":"Question","name":"ブルーデイジーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恵まれて」という花言葉は、長い期間にわたって次々と花を咲かせる豊かさに由来するとされています。"}},
-      {"@type":"Question","name":"ブルーデイジーはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりと水はけの良い場所を好み、比較的育てやすい花として人気があります。"}}
+      {"@type":"Question","name":"ブルーデイジーは1月に花を見ることができますか？","acceptedAnswer":{"@type":"Answer","text":"ブルーデイジーの開花期は春から秋です。1月の誕生花として親しまれていますが、実際に花が咲くのは暖かい季節になります。"}},
+      {"@type":"Question","name":"ブルーデイジーの花言葉「恵まれて」の由来は？","acceptedAnswer":{"@type":"Answer","text":"澄んだ青色と明るい黄色の対比が生む生き生きとした印象、また遠い南アフリカから世界中で親しまれるようになった巡り合わせから「恵まれて」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 14 · 誕生花</span>
     <h1>1月14日の誕生花はブルーデイジー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ブルーデイジーは、澄んだ青色の花を長く咲かせ続ける1月14日の誕生花です。花言葉は「恵まれて」。</p>
+    <p class="art-lead">成人の日を過ぎ、日常のリズムが戻ってくる1月14日。遠く南アフリカの空を思わせる澄んだ青が印象的なブルーデイジーを、今日は紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ブルーデイジーとは</a></li>
-      <li><a href="#meaning">ブルーデイジーが象徴する意味</a></li>
-      <li><a href="#charm">ブルーデイジーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">南アフリカから届く、ブルーデイジーの澄んだ青</a></li>
+      <li><a href="#story">1月14日、青と黄色が教えてくれる恵まれた日々</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ブルーデイジーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ブルーデイジーとは</h2>
-    <p>ブルーデイジーは、キク科の多年草で、1月14日の誕生花として知られています。春から秋にかけて、澄んだ青色の花を長期間咲かせ続けることから、花壇や寄せ植えでも人気の花です。</p>
-  </section>
+    <h2>南アフリカから届く、ブルーデイジーの澄んだ青</h2>
+    <p>ブルーデイジーは、キク科の多年草です。春から秋にかけて青い花を咲かせ、花の中心は明るい黄色。和名は瑠璃雛菊といい、南アフリカを原産地とします。誕生花としては1月ですが、実際の開花期は春から秋と長く、暖かい季節に花壇を彩る花です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ブルーデイジーが象徴する意味</h2>
-    <p>ブルーデイジーの花言葉は「恵まれて」です。長い期間にわたって次々と花を咲かせる豊かさから、恵まれた環境や幸運を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ブルーデイジーの魅力</h2>
-    <p>ブルーデイジーの魅力は、爽やかな青色の花びらと、デイジーらしい素朴で親しみやすい花姿にあります。長期間咲き続けることから、庭を彩り続けてくれる頼もしい存在です。1月14日生まれの方はもちろん、恵まれた日々への感謝を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ブルーデイジーは日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月14日生まれの方はもちろん、恵まれた日々への感謝を伝えたい贈り物としてもブルーデイジーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーはいつ頃咲きますか？</div>
-        <div class="faq-a">春から秋にかけて、長期間青い花を咲かせ続けます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「恵まれて」という花言葉は、長い期間にわたって次々と花を咲かせる豊かさに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりと水はけの良い場所を好み、比較的育てやすい花として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーは1月に花を見ることができますか？</div>
+        <div class="faq-a">ブルーデイジーの開花期は春から秋です。1月の誕生花として親しまれていますが、実際に花が咲くのは暖かい季節になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月14日、青と黄色が教えてくれる恵まれた日々</h2>
+    <p>ブルーデイジーの花をよく見ると、青い花びらの中心に、はっとするような明るい黄色が配置されているのがわかります。この対比が、花全体に生き生きとした印象を与えています。「瑠璃雛菊」という和名も、その澄んだ青を宝石の瑠璃にたとえたものだといわれています。成人の日を過ぎ、新しい一年の日常が本格的に始まる1月14日。特別なことがなくても、今こうして過ごせている日々そのものが、実は恵まれたものなのかもしれません。花言葉は「恵まれて」。遠い南アフリカから海を越えて親しまれるようになった、その巡り合わせも重なる言葉です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーデイジーの花言葉「恵まれて」の由来は？</div>
+        <div class="faq-a">澄んだ青色と明るい黄色の対比が生む生き生きとした印象、また遠い南アフリカから世界中で親しまれるようになった巡り合わせから「恵まれて」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今すでに持っているものに、意識を向けてみてください。当たり前だと思っていた日常こそが、実はいちばん恵まれたものなのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ブルーデイジーから始める小さな体験</h2>
+    <p>青と黄色の対比が印象的なブルーデイジーにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>青い花を見つけて写真に撮ってみる</li>
+      <li>今すでに持っているものに一つ感謝してみる</li>
+      <li>青系の色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">今ある恵みに気づいた今日は、運気の流れもあわせてチェックしてみませんか。開運カレンダーでは、日々のラッキーカラーもわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ブルーデイジーは、澄んだ青と明るい黄色で恵まれた日々を思い出させる、1月14日らしい誕生花です。</p>
     <ul>
-      <li>ブルーデイジーは春から秋に長く咲き続ける、1月14日の誕生花</li>
-      <li>花言葉は「恵まれて」、豊かさを象徴する花とされる</li>
-      <li>爽やかな青色と素朴な花姿が魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>ブルーデイジーはキク科の多年草で、春から秋に青い花を咲かせる</li>
+      <li>和名は瑠璃雛菊、南アフリカが原産地</li>
+      <li>花言葉は「恵まれて」。今ある日常への気づきを象徴する言葉とされる</li>
+      <li>1月の誕生花だが、実際の開花期は春から秋であることを知っておきたい</li>
     </ul>
   </section>
 

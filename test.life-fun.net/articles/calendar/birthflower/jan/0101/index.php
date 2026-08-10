@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フクジュソウはなぜお正月に飾られるのですか？","acceptedAnswer":{"@type":"Answer","text":"雪の中でいち早く花を咲かせる生命力と、「福寿」という縁起の良い名前から、新年の幸運を呼び込む花として古くからお正月飾りに使われてきました。"}},
-      {"@type":"Question","name":"フクジュソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「幸せを招く」という花言葉は、雪解けとともに真っ先に咲くその姿が、新しい一年の幸運の訪れを象徴すると考えられてきたことに由来するとされています。"}},
-      {"@type":"Question","name":"フクジュソウは毒があると聞きましたが本当ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、フクジュソウは全草に毒性があるとされています。観賞用として楽しみ、誤って口にしないよう注意が必要です。"}}
+      {"@type":"Question","name":"フクジュソウはいつ頃見られますか？","acceptedAnswer":{"@type":"Answer","text":"早春、雪解けの時期に黄金色の花を咲かせます。地域によっては1月頃から花を見ることができます。"}},
+      {"@type":"Question","name":"フクジュソウの花言葉「幸せを招く」の由来は？","acceptedAnswer":{"@type":"Answer","text":"雪の中でいち早く花を咲かせる姿が、新しい一年の幸運の訪れを象徴すると考えられてきたことに由来するといわれています。"}},
+      {"@type":"Question","name":"フクジュソウを庭に植えても大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"観賞用として広く親しまれていますが、全草に毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。"}}
     ]
   }
   </script>
@@ -129,14 +136,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 1 · 誕生花</span>
     <h1>1月1日の誕生花はフクジュソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フクジュソウは、雪解けとともに黄金色の花を咲かせる1月1日の誕生花です。花言葉は「幸せを招く」。新年を祝う縁起の良い花として、日本で古くから親しまれてきました。</p>
+    <p class="art-lead">新しい一年が始まる1月1日。まだ雪の残る庭先で、いち早く黄金色の花を開くのがフクジュソウです。お正月飾りにも使われてきたこの花を、今日の誕生花として少しだけていねいに見つめてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>フクジュソウ</dd>
     <dt>花言葉</dt><dd>幸せを招く</dd>
     <dt>科名</dt><dd>キンポウゲ科</dd>
-    <dt>見頃</dt><dd>1月〜3月</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,66 +157,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フクジュソウとは</a></li>
-      <li><a href="#meaning">フクジュソウが象徴する意味</a></li>
-      <li><a href="#charm">フクジュソウの魅力・見頃の楽しみ方</a></li>
-      <li><a href="#care">育て方・楽しむ際の注意点</a></li>
-      <li><a href="#today">1月1日が誕生花の日なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">元日に咲く、黄金色のフクジュソウ</a></li>
+      <li><a href="#story">元日とフクジュソウが結びつく理由</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フクジュソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フクジュソウとは</h2>
-    <p>フクジュソウは、キンポウゲ科の多年草で、1月1日の誕生花として知られています。早春、雪解けとともに地面から顔を出し、黄金色の花を咲かせることから「福寿草」という縁起の良い名前が付けられました。新年を祝う花として、日本ではお正月飾りにも用いられてきた歴史があります。</p>
-  </section>
+    <h2>元日に咲く、黄金色のフクジュソウ</h2>
+    <p>フクジュソウは、キンポウゲ科の多年草です。早春、雪解けとともに地面から顔を出し、太陽を思わせる黄金色の花を咲かせます。他の花がまだ眠っている時期に真っ先に咲くその姿は、寒さの中でもよく目を引きます。花が開くのは主に日中で、日差しを浴びて花びらを大きく広げるのも特徴のひとつです。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フクジュソウが象徴する意味</h2>
-    <p>フクジュソウの花言葉は「幸せを招く」です。雪の中から真っ先に咲くその姿が、新しい一年の始まりに幸運を呼び込む象徴とされ、古くから新年を寿ぐ花として親しまれてきました。「永久の幸福」「祝福」といった花言葉が添えられることもあり、新しい門出を祝うのにふさわしい花とされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フクジュソウの魅力・見頃の楽しみ方</h2>
-    <p>フクジュソウの魅力は、雪解けの中で真っ先に咲くその生命力と、太陽を思わせる鮮やかな黄金色にあります。見頃は1月から3月頃で、寒さの中に春の訪れを感じさせてくれる貴重な花です。お正月の寄せ植えや盆栽として飾られることも多く、新年の始まりを彩る縁起物として親しまれています。1月1日生まれの方はもちろん、新年の挨拶や門出を祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方・楽しむ際の注意点</h2>
-    <p>フクジュソウは強い日差しや乾燥を苦手とするため、鉢植えの場合は半日陰で育て、土の表面が乾いたら水を与えるのがおすすめです。全草に毒性があるため、観賞用として楽しみ、口に入れないよう注意しましょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>1月1日が誕生花の日なら</h2>
-    <p>1月1日生まれの方はもちろん、新年の始まりを祝う贈り物としてもフクジュソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フクジュソウはなぜお正月に飾られるのですか？</div>
-        <div class="faq-a">雪の中でいち早く花を咲かせる生命力と、「福寿」という縁起の良い名前から、新年の幸運を呼び込む花として古くからお正月飾りに使われてきました。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フクジュソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「幸せを招く」という花言葉は、雪解けとともに真っ先に咲くその姿が、新しい一年の幸運の訪れを象徴すると考えられてきたことに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フクジュソウは毒があると聞きましたが本当ですか？</div>
-        <div class="faq-a">はい、フクジュソウは全草に毒性があるとされています。観賞用として楽しみ、誤って口にしないよう注意が必要です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フクジュソウはいつ頃見られますか？</div>
+        <div class="faq-a">早春、雪解けの時期に黄金色の花を咲かせます。地域によっては1月頃から花を見ることができます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>元日とフクジュソウが結びつく理由</h2>
+    <p>フクジュソウが1月1日の誕生花に選ばれているのは、その名前と姿が新年にふさわしいからだといわれています。「福寿草」という漢字には、福と長寿への願いが込められており、雪の中でいち早く咲く姿は、新しい一年の始まりを祝う象徴として重ねられてきました。お正月の寄せ植えや盆栽に使われてきたのも、こうした縁起の良さゆえだと考えられています。花言葉は「幸せを招く」。一年の入り口に、静かに福を運んでくれる花として、この言葉が添えられているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フクジュソウの花言葉「幸せを招く」の由来は？</div>
+        <div class="faq-a">雪の中でいち早く花を咲かせる姿が、新しい一年の幸運の訪れを象徴すると考えられてきたことに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>雪の下から顔を出すように、新しい一年もきっと少しずつ動き出していきます。今はまだ何も咲いていないように見えても、あなたの中にはもう、次の季節へ向かう力が芽生え始めているのかもしれません。今日という日を、その最初の一歩として大切に過ごしてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フクジュソウから始める小さな体験</h2>
+    <p>フクジュソウの「新しい年の福を呼ぶ」という言い伝えにあやかって、今日はこんな小さな体験から始めてみるのもおすすめです。</p>
+    <ul class="exp-list">
+      <li>黄金色の小さな花を探して、庭先や道端を歩いてみる</li>
+      <li>今年一年の抱負を、一つだけ紙に書き出してみる</li>
+      <li>縁起の良いものを一つ、身の回りに置いてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フクジュソウを庭に植えても大丈夫ですか？</div>
+        <div class="faq-a">観賞用として広く親しまれていますが、全草に毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">こうした小さな体験と合わせて、今日という日の運気の流れも覗いてみると、新年のスタートがもっと楽しくなるかもしれません。開運カレンダーでは、六曜や月齢などその日ならではの情報もあわせて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>フクジュソウは、雪の下から一年の始まりに寄り添うように咲く、元日らしい誕生花です。</p>
     <ul>
-      <li>フクジュソウは雪解けとともに咲く、1月1日の誕生花</li>
-      <li>花言葉は「幸せを招く」、新年の幸運を象徴する花とされる</li>
-      <li>黄金色の花と力強い生命力が魅力で、お正月飾りとしても人気</li>
-      <li>全草に毒性があるため、観賞用として楽しみ口にしないよう注意したい</li>
+      <li>フクジュソウは早春、雪解けとともに黄金色の花を咲かせるキンポウゲ科の多年草</li>
+      <li>「福寿草」という名前とともに、新年を祝う縁起の良い花として親しまれてきた</li>
+      <li>花言葉は「幸せを招く」。一年の始まりに小さな福を運んでくれる花とされる</li>
+      <li>観賞用として楽しみつつ、毒性があるため取り扱いには注意したい</li>
     </ul>
   </section>
 

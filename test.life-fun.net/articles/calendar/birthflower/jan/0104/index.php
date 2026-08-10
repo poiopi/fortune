@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ブルースターはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に淡い青色の星形の花を咲かせます。"}},
-      {"@type":"Question","name":"ブルースターの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「幸せな愛」という花言葉は、澄んだ青空を思わせる清らかな花色に由来するとされています。"}},
-      {"@type":"Question","name":"ブルースターはブーケによく使われますか？","acceptedAnswer":{"@type":"Answer","text":"はい、澄んだ色合いと星形の可愛らしさから、結婚式のブーケなどによく用いられています。"}}
+      {"@type":"Question","name":"ブルースターは1月に花を見ることができますか？","acceptedAnswer":{"@type":"Answer","text":"ブルースターの開花期は夏です。1月の誕生花として親しまれていますが、実際に花が咲くのは夏の時期になります。"}},
+      {"@type":"Question","name":"ブルースターの花言葉「幸せな愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"澄んだ青色と星形の花が織りなす、穏やかで涼やかな印象から「幸せな愛」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 4 · 誕生花</span>
     <h1>1月4日の誕生花はブルースター<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ブルースターは、淡い青色の星形の花を咲かせる1月4日の誕生花です。花言葉は「幸せな愛」。澄んだ色合いが印象的な花です。</p>
+    <p class="art-lead">正月休みも終わりに近づく1月4日。慌ただしさの中でふと目にする淡い青色に、心がすっと落ち着くことがあります。今日はそんな澄んだ青を持つブルースターを紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ブルースターとは</a></li>
-      <li><a href="#meaning">ブルースターが象徴する意味</a></li>
-      <li><a href="#charm">ブルースターの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">夏空を映す、ブルースターの淡い青</a></li>
+      <li><a href="#story">澄んだ青が教えてくれる、幸せな愛のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ブルースターから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ブルースターとは</h2>
-    <p>ブルースターは、キョウチクトウ科の多年草で、1月4日の誕生花として知られています。夏に淡い青色をした星形の花を咲かせ、その澄んだ色合いから結婚式のブーケなどにも用いられています。</p>
-  </section>
+    <h2>夏空を映す、ブルースターの淡い青</h2>
+    <p>ブルースターは、キョウチクトウ科の多年草です。名前の通り、夏になると星形の淡い青色の花を咲かせます。誕生花としては1月に割り当てられていますが、実際に花が咲くのは夏。今日は、その澄んだ青色を思い浮かべながら過ごしてみるのも良いかもしれません。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ブルースターが象徴する意味</h2>
-    <p>ブルースターの花言葉は「幸せな愛」です。澄んだ青空を思わせる清らかな花色から、穏やかで幸せな愛情を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ブルースターの魅力</h2>
-    <p>ブルースターの魅力は、星をちりばめたような可憐な花姿と、爽やかな淡青色にあります。他の花との相性もよく、ブーケや花束に添えられることも多い人気の花です。1月4日生まれの方はもちろん、幸せな気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ブルースターは日当たりと水はけの良い場所を好み、乾燥にはやや強いため、土の表面が乾いてから水を与えるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月4日生まれの方はもちろん、幸せな気持ちを届けたい贈り物としてもブルースターは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルースターはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に淡い青色の星形の花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルースターの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「幸せな愛」という花言葉は、澄んだ青空を思わせる清らかな花色に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルースターはブーケによく使われますか？</div>
-        <div class="faq-a">はい、澄んだ色合いと星形の可愛らしさから、結婚式のブーケなどによく用いられています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブルースターは1月に花を見ることができますか？</div>
+        <div class="faq-a">ブルースターの開花期は夏です。1月の誕生花として親しまれていますが、実際に花が咲くのは夏の時期になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>澄んだ青が教えてくれる、幸せな愛のかたち</h2>
+    <p>ブルースターの花色は、晴れた日の空を思わせる淡い青。星形の花びらが規則正しく並ぶ姿は、涼やかで静かな印象を与えます。派手さはなくても、見る人の心をすっと落ち着かせる色合いです。1月4日を迎え、日常のリズムが少しずつ戻り始める頃、こうした静かな色に目を向けてみると、気持ちが自然と整っていくかもしれません。花言葉は「幸せな愛」。穏やかで、飾らない愛情のかたちを、この淡い青が表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ブルースターの花言葉「幸せな愛」の由来は？</div>
+        <div class="faq-a">澄んだ青色と星形の花が織りなす、穏やかで涼やかな印象から「幸せな愛」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>特別な出来事がなくても、今日という一日が静かに過ぎていくこと自体が、実は幸せなことなのかもしれません。淡い青空を見上げるように、穏やかな気持ちで今日を過ごしてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ブルースターから始める小さな体験</h2>
+    <p>澄んだ青色が印象的なブルースターにあやかって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>星形の花を探して観察してみる</li>
+      <li>淡い青色のものを身の回りに取り入れてみる</li>
+      <li>大切な人との穏やかな時間を思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">穏やかな気持ちで過ごした今日、運気の流れもあわせて確認してみると、心がもっと軽くなるかもしれません。開運カレンダーでは、日々のラッキーカラーもチェックできます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ブルースターは、夏に咲く花でありながら、その澄んだ色合いで1月4日の誕生花として選ばれています。</p>
     <ul>
-      <li>ブルースターは夏に淡青色の星形の花を咲かせる、1月4日の誕生花</li>
-      <li>花言葉は「幸せな愛」、穏やかな愛情を象徴する花とされる</li>
-      <li>澄んだ色合いと可憐な花姿が魅力</li>
-      <li>乾燥にやや強く、日当たりの良い場所で育てやすい</li>
+      <li>ブルースターはキョウチクトウ科の多年草で、夏に淡い青色の星形の花を咲かせる</li>
+      <li>1月の誕生花だが、実際の開花期は夏であることを知っておきたい</li>
+      <li>花言葉は「幸せな愛」。穏やかで飾らない愛情を象徴する</li>
+      <li>淡い青色は、涼やかで落ち着いた印象を与えてくれる</li>
     </ul>
   </section>
 

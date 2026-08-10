@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハルサザンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に花を咲かせます。冬の寒さが残る時期にも凛と咲く花木として知られています。"}},
-      {"@type":"Question","name":"ハルサザンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「困難に勝つ」という花言葉は、寒さの残る早春にも負けず力強く花を咲かせる姿に由来するとされています。"}},
-      {"@type":"Question","name":"ハルサザンカとサザンカは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"ハルサザンカはサザンカの仲間ですが、早春に花を咲かせる点が異なる品種とされています。"}}
+      {"@type":"Question","name":"ハルサザンカとサザンカは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"ハルサザンカはサザンカとツバキの交雑種で、早春に花を咲かせます。晩秋から冬に咲く本来のサザンカとは開花期が異なります。"}},
+      {"@type":"Question","name":"ハルサザンカの花言葉の由来は？","acceptedAnswer":{"@type":"Answer","text":"寒さの厳しい早春にあえて花を咲かせる、その力強さから「困難に勝つ」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 2 · 誕生花</span>
     <h1>1月2日の誕生花はハルサザンカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハルサザンカは、ツバキ科の花木で、早春に花を咲かせる1月2日の誕生花です。花言葉は「困難に勝つ」。サザンカの仲間として親しまれています。</p>
+    <p class="art-lead">正月気分が少し落ち着く1月2日。庭先ではハルサザンカが、寒さに負けず静かに花開こうとしています。サザンカとツバキ、両方の性質を受け継いだこの花を今日はのぞいてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハルサザンカとは</a></li>
-      <li><a href="#meaning">ハルサザンカが象徴する意味</a></li>
-      <li><a href="#charm">ハルサザンカの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">1月2日、寒さの中で彩るハルサザンカ</a></li>
+      <li><a href="#story">困難に負けない、ハルサザンカの強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハルサザンカから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハルサザンカとは</h2>
-    <p>ハルサザンカは、ツバキ科の常緑低木で、1月2日の誕生花として知られています。サザンカの仲間ですが、一般的なサザンカよりも遅く、早春に花を咲かせることからこの名がつけられました。</p>
-  </section>
+    <h2>1月2日、寒さの中で彩るハルサザンカ</h2>
+    <p>ハルサザンカは、ツバキ科の常緑低木で、サザンカとツバキを交配して生まれた花木です。早春、まだ冷え込みの厳しい時期に花を咲かせ、赤に白斑の入るものや濃いピンクなど、品種によって表情の異なる花が楽しめます。晩秋から冬に咲くサザンカとは開花期が異なり、ハルサザンカはひと足遅れて春の気配とともに花を開きます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハルサザンカが象徴する意味</h2>
-    <p>ハルサザンカの花言葉は「困難に勝つ」です。まだ寒さの残る早春に、他の花に先駆けて力強く花を咲かせるその姿から、逆境にも負けない強さを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハルサザンカの魅力</h2>
-    <p>ハルサザンカの魅力は、寒さの残る季節にも凛と咲く花姿と、サザンカ譲りの艶やかな葉にあります。庭木や生け花としても親しまれ、早春の景色に彩りを添えてくれます。1月2日生まれの方はもちろん、困難を乗り越える力を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハルサザンカは日当たりと風通しの良い場所を好み、乾燥しすぎない程度に土の湿り気を保って育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月2日生まれの方はもちろん、逆境に負けない強さを応援したい贈り物としてもハルサザンカは人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハルサザンカはいつ頃咲きますか？</div>
-        <div class="faq-a">早春に花を咲かせます。冬の寒さが残る時期にも凛と咲く花木として知られています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハルサザンカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「困難に勝つ」という花言葉は、寒さの残る早春にも負けず力強く花を咲かせる姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ハルサザンカとサザンカは同じ花ですか？</div>
-        <div class="faq-a">ハルサザンカはサザンカの仲間ですが、早春に花を咲かせる点が異なる品種とされています。</div>
+        <div class="faq-a">ハルサザンカはサザンカとツバキの交雑種で、早春に花を咲かせます。晩秋から冬に咲く本来のサザンカとは開花期が異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>困難に負けない、ハルサザンカの強さ</h2>
+    <p>正月気分がひと段落する1月2日、まだ庭は寒々として見えても、ハルサザンカのつぼみは少しずつ膨らみを増しています。厳しい寒さの中で無理に急がず、けれど着実に季節を進めていくその歩みは、新しい一年を歩き始めたばかりの私たちの姿とも重なります。赤に白斑、濃いピンクなど品種によって色合いが異なるのも、ハルサザンカの魅力のひとつです。花言葉は「困難に勝つ」。寒さの中でも歩みを止めない、その姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハルサザンカの花言葉の由来は？</div>
+        <div class="faq-a">寒さの厳しい早春にあえて花を咲かせる、その力強さから「困難に勝つ」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>焦らなくて大丈夫。今日できることを一つずつ積み重ねていけば、それでじゅうぶんです。難しいと感じていることも、ハルサザンカのつぼみのように、少しずつ確実に前へ進んでいます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハルサザンカから始める小さな体験</h2>
+    <p>寒さに負けず花を咲かせるハルサザンカにあやかって、今日はこんな体験から始めてみませんか。</p>
+    <ul class="exp-list">
+      <li>寒い朝でも、いつも通りの行動を一つ続けてみる</li>
+      <li>早春に咲く花を探して近所を歩いてみる</li>
+      <li>難しいと感じていることに、今日は少しだけ向き合ってみる</li>
+    </ul>
+
+    <p class="cta-lead">小さな一歩を重ねた先に、今日という日の運気の流れも気になってきますよね。開運カレンダーでは、六曜や吉日など日々のヒントもあわせて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ハルサザンカは、厳しい寒さの中でも歩みを止めない、1月2日らしい誕生花です。</p>
     <ul>
-      <li>ハルサザンカは早春に花を咲かせる、1月2日の誕生花</li>
-      <li>花言葉は「困難に勝つ」、逆境にも負けない強さを象徴する花とされる</li>
-      <li>サザンカ譲りの艶やかな葉と凛とした花姿が魅力</li>
-      <li>日当たりと風通しの良い場所で育てたい</li>
+      <li>ハルサザンカはツバキ科の常緑低木で、サザンカとツバキの交雑種</li>
+      <li>早春に咲き、赤に白斑や濃いピンクなど品種によって花色が異なる</li>
+      <li>花言葉は「困難に勝つ」。寒さの中でも咲き続ける強さを象徴する</li>
+      <li>晩秋から冬に咲く本来のサザンカとは開花期が異なる点に注意したい</li>
     </ul>
   </section>
 

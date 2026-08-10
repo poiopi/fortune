@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ストレリチアはいつ頃花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して花を咲かせ、特定の季節を問わず楽しめる植物です。"}},
-      {"@type":"Question","name":"ストレリチアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ひとり占め」という花言葉は、エキゾチックで力強い花姿が周囲の視線を集める存在感に由来するとされています。"}},
-      {"@type":"Question","name":"ストレリチアはなぜ「極楽鳥花」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"鳥が羽ばたくような独特な花の形が、極楽鳥の姿を連想させることに由来するとされています。"}}
+      {"@type":"Question","name":"ストレリチアはいつ頃花が咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して花を咲かせる性質を持つため、季節を問わず楽しむことができます。"}},
+      {"@type":"Question","name":"ストレリチアの花言葉「ひとり占め」はどんな意味ですか？","acceptedAnswer":{"@type":"Answer","text":"他にはない独特な花の形と、堂々とした存在感から生まれた花言葉とされ、自分らしい魅力を表す言葉として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 3 · 誕生花</span>
     <h1>1月3日の誕生花はストレリチア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ストレリチアは、鳥が羽ばたくような形の花を咲かせる1月3日の誕生花です。花言葉は「ひとり占め」。エキゾチックで力強い印象を持つ花です。</p>
+    <p class="art-lead">お正月休みも終盤にさしかかる1月3日。花屋の店先で、鳥が翼を広げたような独特のシルエットを見せているのがストレリチアです。季節を問わず咲くこの花を、今日はじっくり眺めてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ストレリチアとは</a></li>
-      <li><a href="#meaning">ストレリチアが象徴する意味</a></li>
-      <li><a href="#charm">ストレリチアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">一年中楽しめる、ストレリチアの堂々とした姿</a></li>
+      <li><a href="#story">1月3日とストレリチア、堂々とした佇まいの理由</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ストレリチアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ストレリチアとは</h2>
-    <p>ストレリチアは、ゴクラクチョウカ科の多年草で、1月3日の誕生花として知られています。鳥が羽ばたくような形をした鮮やかな花を一年を通して咲かせ、その独特な花姿から「極楽鳥花」とも呼ばれています。</p>
-  </section>
+    <h2>一年中楽しめる、ストレリチアの堂々とした姿</h2>
+    <p>ストレリチアは、ゴクラクチョウカ科の多年草です。名前の通り、鳥が翼を広げて羽ばたくような、他に類を見ない独特の花の形を持ちます。エキゾチックで力強い印象を与える花で、一年を通して花を咲かせるため、季節を問わず楽しめるのも特徴のひとつです。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ストレリチアが象徴する意味</h2>
-    <p>ストレリチアの花言葉は「ひとり占め」です。エキゾチックで力強い花姿が、周囲の視線を独り占めするような存在感を放つことに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ストレリチアの魅力</h2>
-    <p>ストレリチアの魅力は、鳥が飛び立つ瞬間を思わせる大胆な花の形と、オレンジと青が織りなす鮮やかな色彩にあります。存在感抜群のためインテリアグリーンや生け花のメインとしても人気です。1月3日生まれの方はもちろん、力強い個性を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ストレリチアは日当たりを好み、乾燥にはやや強いため、土の表面が乾いたらたっぷり水を与える程度で育てやすい植物です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月3日生まれの方はもちろん、力強い魅力を伝えたい贈り物としてもストレリチアは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアはいつ頃花を咲かせますか？</div>
-        <div class="faq-a">一年を通して花を咲かせ、特定の季節を問わず楽しめる植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「ひとり占め」という花言葉は、エキゾチックで力強い花姿が周囲の視線を集める存在感に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアはなぜ「極楽鳥花」と呼ばれるのですか？</div>
-        <div class="faq-a">鳥が羽ばたくような独特な花の形が、極楽鳥の姿を連想させることに由来するとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアはいつ頃花が咲きますか？</div>
+        <div class="faq-a">一年を通して花を咲かせる性質を持つため、季節を問わず楽しむことができます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月3日とストレリチア、堂々とした佇まいの理由</h2>
+    <p>ストレリチアの花の形をよく見ると、オレンジ色の萼片と青紫の花びらが、まるで鳥のとさかや嘴のように組み合わさっているのがわかります。この独特の構造が、他の花にはないシルエットを生み出しています。年始のあわただしさが落ち着き始める1月3日、堂々とした姿で存在感を放つこの花は、周りに流されず自分らしくいることの心地よさを思い出させてくれます。花言葉は「ひとり占め」。誰かと比べるためではなく、自分だけの魅力を静かに際立たせる花として、この言葉が添えられているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ストレリチアの花言葉「ひとり占め」はどんな意味ですか？</div>
+        <div class="faq-a">他にはない独特な花の形と、堂々とした存在感から生まれた花言葉とされ、自分らしい魅力を表す言葉として親しまれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かと同じである必要はありません。あなたが持つ形、あなたのペースこそが、いちばんあなたらしい魅力です。今日は自分の輪郭を、少しだけ誇らしく感じてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ストレリチアから始める小さな体験</h2>
+    <p>堂々とした佇まいを持つストレリチアにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>鳥が羽ばたくような花の形を、写真や実物でじっくり観察してみる</li>
+      <li>自分らしさを一つ、誰かに気兼ねなく見せてみる</li>
+      <li>力強い色や形のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分らしさを見つめ直した今日は、運気の流れもあわせて確認してみると新たな発見があるかもしれません。開運カレンダーでは、日々のラッキーカラーや吉方位も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ストレリチアは、堂々とした形でそこにあるだけで存在感を放つ、1月3日らしい誕生花です。</p>
     <ul>
-      <li>ストレリチアは鳥が羽ばたくような花を咲かせる、1月3日の誕生花</li>
-      <li>花言葉は「ひとり占め」、力強い存在感を象徴する花とされる</li>
-      <li>エキゾチックな色彩と大胆な花姿が魅力</li>
-      <li>乾燥にやや強く、日当たりの良い場所で育てやすい</li>
+      <li>ストレリチアはゴクラクチョウカ科の多年草で、鳥が羽ばたくような独特の花形を持つ</li>
+      <li>一年を通して花を咲かせるため、季節を問わず楽しめる</li>
+      <li>花言葉は「ひとり占め」。自分らしい魅力を象徴する言葉とされる</li>
+      <li>エキゾチックで力強い印象は、部屋のアクセントにもぴったり</li>
     </ul>
   </section>
 
