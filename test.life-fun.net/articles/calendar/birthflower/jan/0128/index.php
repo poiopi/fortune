@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0128/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月28日の誕生花キンギョソウの花言葉・特徴・魅力をわかりやすく解説。「欲望」を象徴する花穂の意味を紹介します。">
+  <meta name="description" content="1月28日の誕生花キンギョソウの花言葉・特徴・魅力をわかりやすく解説。「欲望」を象徴する花の意味を紹介します。">
   <title>1月28日の誕生花はキンギョソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キンギョソウの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の形が金魚が連なって泳ぐ姿に似ていることに由来するとされています。"}},
-      {"@type":"Question","name":"キンギョソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「欲望」という花言葉は、ユニークな花の仕掛けと鮮やかな色合いが人の心を惹きつけることに由来するとされています。"}},
-      {"@type":"Question","name":"キンギョソウはどんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤・ピンク・黄色・白など、豊富な色合いがあります。"}}
+      {"@type":"Question","name":"キンギョソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏にかけて、金魚のような形の花穂を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春から初夏の時期になります。"}},
+      {"@type":"Question","name":"キンギョソウの花言葉「欲望」の由来は？","acceptedAnswer":{"@type":"Answer","text":"次々と連なって咲く花穂の、生き生きとした様子に由来するといわれています。前向きな気持ちの高まりを表す言葉として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 28 · 誕生花</span>
     <h1>1月28日の誕生花はキンギョソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キンギョソウは、金魚が連なったような花穂を咲かせる1月28日の誕生花です。花言葉は「欲望」。愛らしくにぎやかな印象の花です。</p>
+    <p class="art-lead">1月28日、金魚が連なって泳ぐような愛らしい花穂を咲かせるのがキンギョソウです。名前の通り、その姿はどこかユーモラスで、見る人の心をにぎやかにしてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キンギョソウとは</a></li>
-      <li><a href="#meaning">キンギョソウが象徴する意味</a></li>
-      <li><a href="#charm">キンギョソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">金魚が連なるような、キンギョソウの愛らしい花穂</a></li>
+      <li><a href="#story">1月28日、金魚のようなキンギョソウが伝える欲望という言葉</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キンギョソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キンギョソウとは</h2>
-    <p>キンギョソウは、オオバコ科の植物で、1月28日の誕生花として知られています。春から初夏にかけて、金魚が連なって泳ぐような形の花穂を咲かせることからこの名がつけられました。</p>
-  </section>
+    <h2>金魚が連なるような、キンギョソウの愛らしい花穂</h2>
+    <p>キンギョソウは、オオバコ科の植物です。春から初夏になると、金魚が連なって泳いでいるような形の花を穂状に咲かせます。花の一つひとつが金魚の顔のように見えることからこの名がついたとされ、愛らしくにぎやかな印象を与える花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キンギョソウが象徴する意味</h2>
-    <p>キンギョソウの花言葉は「欲望」です。花を横から押すと口を開くようなユニークな仕掛けと、鮮やかな色合いが人の心を惹きつけることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キンギョソウの魅力</h2>
-    <p>キンギョソウの魅力は、金魚を思わせる愛らしい花の形と、株いっぱいに賑やかに咲く華やかさにあります。花壇や切り花としても人気があり、春から初夏の庭を明るく彩ってくれます。1月28日生まれの方はもちろん、にぎやかで楽しい気持ちを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キンギョソウは日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月28日生まれの方はもちろん、にぎやかで楽しい気持ちを届けたい贈り物としてもキンギョソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウの名前の由来は何ですか？</div>
-        <div class="faq-a">花の形が金魚が連なって泳ぐ姿に似ていることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「欲望」という花言葉は、ユニークな花の仕掛けと鮮やかな色合いが人の心を惹きつけることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウはどんな色がありますか？</div>
-        <div class="faq-a">赤・ピンク・黄色・白など、豊富な色合いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウはいつ頃咲きますか？</div>
+        <div class="faq-a">春から初夏にかけて、金魚のような形の花穂を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春から初夏の時期になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月28日、金魚のようなキンギョソウが伝える欲望という言葉</h2>
+    <p>一輪、また一輪と連なって咲くキンギョソウの花穂は、見ているだけでにぎやかな気持ちにさせてくれます。何かをもっと欲しい、もっと叶えたいという気持ちは、決して悪いものではなく、前に進む力にもなります。1月28日、新年に立てた目標を思い出すこの時期に、素直に「欲しいもの」「叶えたいこと」を見つめ直してみるのも良いかもしれません。花言葉は「欲望」。次々と連なって咲く花穂の、生き生きとした様子から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キンギョソウの花言葉「欲望」の由来は？</div>
+        <div class="faq-a">次々と連なって咲く花穂の、生き生きとした様子に由来するといわれています。前向きな気持ちの高まりを表す言葉として親しまれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>叶えたいことがあるのは、決して欲張りなことではありません。今日は、心の中にある「欲しい」という気持ちを、素直に認めてあげてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キンギョソウから始める小さな体験</h2>
+    <p>金魚のように連なって咲くキンギョソウにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>金魚のような形の花穂をじっくり観察してみる</li>
+      <li>欲しいものや叶えたいことを一つ紙に書き出してみる</li>
+      <li>にぎやかな時間を誰かと一緒に過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">叶えたいことを見つめ直した今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、六曜や吉方位もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>キンギョソウは、金魚のように連なる花穂を通して、前向きな欲望の力を教えてくれる誕生花です。</p>
     <ul>
-      <li>キンギョソウは金魚のような花穂を咲かせる、1月28日の誕生花</li>
-      <li>花言葉は「欲望」、人を惹きつける魅力を象徴する花とされる</li>
-      <li>愛らしくにぎやかな花姿が魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>キンギョソウはオオバコ科の植物で、春から初夏に金魚のような形の花穂を咲かせる（本来の見頃は春から初夏で、1月28日時点では花は咲いていない）</li>
+      <li>花の形が金魚の顔に似ていることから名がついたとされる</li>
+      <li>花言葉は「欲望」。次々と連なって咲く花穂の生き生きとした様子に由来するといわれている</li>
+      <li>愛らしくにぎやかな印象を持つ花として親しまれている</li>
     </ul>
   </section>
 

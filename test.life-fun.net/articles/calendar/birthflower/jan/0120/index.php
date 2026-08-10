@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0120/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月20日の誕生花スイートピーの花言葉・特徴・魅力をわかりやすく解説。「永遠の喜び」を象徴する春の花の意味を紹介します。">
+  <meta name="description" content="1月20日の誕生花スイートピーの花言葉・特徴・魅力をわかりやすく解説。「永遠の喜び」を象徴する花の意味を紹介します。">
   <title>1月20日の誕生花はスイートピー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スイートピーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、蝶のような形の花を咲かせます。"}},
-      {"@type":"Question","name":"スイートピーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「永遠の喜び」という花言葉は、ひらひらと優雅に咲く花姿と甘い香りに由来するとされています。"}},
-      {"@type":"Question","name":"スイートピーはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"優しく甘い香りを漂わせ、春らしい爽やかな印象を与えます。"}}
+      {"@type":"Question","name":"スイートピーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、蝶のような形の花を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。"}},
+      {"@type":"Question","name":"スイートピーの花言葉「永遠の喜び」の由来は？","acceptedAnswer":{"@type":"Answer","text":"蝶のような花が甘く香りながら次々と咲き続ける姿に由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 20 · 誕生花</span>
     <h1>1月20日の誕生花はスイートピー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スイートピーは、蝶のような形の花を咲かせる1月20日の誕生花です。花言葉は「永遠の喜び」。優しく甘い香りが特徴です。</p>
+    <p class="art-lead">大寒に近づく1月20日。スイートピーは、蝶が羽を広げたような形の花びらから、甘い香りを漂わせる花です。今日はその可憐な姿を紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スイートピーとは</a></li>
-      <li><a href="#meaning">スイートピーが象徴する意味</a></li>
-      <li><a href="#charm">スイートピーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">蝶のような花びらが香る、スイートピーの姿</a></li>
+      <li><a href="#story">1月20日、蝶のような花びらが伝える永遠の喜び</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スイートピーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スイートピーとは</h2>
-    <p>スイートピーは、マメ科のつる性一年草で、1月20日の誕生花として知られています。春に蝶が舞うような形の花を咲かせ、優しく甘い香りを漂わせることから、春を代表する花として親しまれています。</p>
-  </section>
+    <h2>蝶のような花びらが香る、スイートピーの姿</h2>
+    <p>スイートピーは、マメ科のつる性一年草です。春になると、蝶が羽を広げたような形の花を咲かせ、優しく甘い香りを漂わせます。淡いピンクや紫、白など花色も豊かで、春らしい軽やかな印象を与えるとされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スイートピーが象徴する意味</h2>
-    <p>スイートピーの花言葉は「永遠の喜び」です。ひらひらと優雅に咲く花姿と甘い香りから、いつまでも続く幸せな喜びを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スイートピーの魅力</h2>
-    <p>スイートピーの魅力は、蝶のように軽やかな花姿と、優しく甘い香りにあります。パステルカラーを中心とした豊富な花色も魅力で、春の贈り物としても定番です。1月20日生まれの方はもちろん、変わらぬ喜びを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スイートピーは日当たりの良い場所を好み、つるを伸ばして育つため、支柱を立てて育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月20日生まれの方はもちろん、変わらぬ喜びを伝えたい贈り物としてもスイートピーは春の定番の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">スイートピーはいつ頃咲きますか？</div>
-        <div class="faq-a">春に、蝶のような形の花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイートピーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「永遠の喜び」という花言葉は、ひらひらと優雅に咲く花姿と甘い香りに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイートピーはどんな香りがしますか？</div>
-        <div class="faq-a">優しく甘い香りを漂わせ、春らしい爽やかな印象を与えます。</div>
+        <div class="faq-a">春に、蝶のような形の花を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月20日、蝶のような花びらが伝える永遠の喜び</h2>
+    <p>スイートピーの花びらは、よく見ると一枚一枚が羽ばたく蝶の翅のような繊細な曲線を描いています。まだ咲いてもいないその姿を思い浮かべるだけで、心がふっと軽くなるような感覚を覚える人もいるかもしれません。1月20日、大寒を迎え寒さが厳しさを増すこの時期だからこそ、春に咲く花の軽やかさを想像してみるのも、良い息抜きになりそうです。花言葉は「永遠の喜び」。蝶のような花が甘く香りながら次々と咲き続ける姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スイートピーの花言葉「永遠の喜び」の由来は？</div>
+        <div class="faq-a">蝶のような花が甘く香りながら次々と咲き続ける姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>喜びは、一瞬で消えてしまうものだけではありません。ふとした瞬間に思い出して、また心が軽くなるような喜びもあります。今日は、そんな喜びを一つ思い出してみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スイートピーから始める小さな体験</h2>
+    <p>蝶のような花びらで甘く香るスイートピーにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>蝶のような形の花びらをじっくり観察してみる</li>
+      <li>甘い香りのするものを身の回りに取り入れてみる</li>
+      <li>嬉しかった出来事を一つ思い出してみる</li>
+    </ul>
+
+    <p class="cta-lead">嬉しかった記憶をたどった今日は、運気の流れもあわせて確認してみると、新たな発見があるかもしれません。開運カレンダーでは、日々のラッキーカラーもわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>スイートピーは、蝶のような花びらを通して、ふとした瞬間によみがえる喜びの大切さを教えてくれる誕生花です。</p>
     <ul>
-      <li>スイートピーは春に蝶のような花を咲かせる、1月20日の誕生花</li>
-      <li>花言葉は「永遠の喜び」、続く幸せを象徴する花とされる</li>
-      <li>軽やかな花姿と甘い香りが魅力</li>
-      <li>つる性のため支柱を立てて育てたい</li>
+      <li>スイートピーはマメ科のつる性一年草で、春に蝶のような形の花を咲かせる（本来の見頃は春で、1月20日時点では花は咲いていない）</li>
+      <li>優しく甘い香りが、春らしい軽やかな印象を与えるとされる</li>
+      <li>花言葉は「永遠の喜び」。次々と咲き続ける姿に由来するといわれている</li>
+      <li>花びらの繊細な曲線に、蝶が羽ばたくような可憐さがある</li>
     </ul>
   </section>
 
@@ -223,7 +229,7 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0119/';
-  $prevTitle = '1月19日の誕生花（ストック）とは';
+  $prevTitle = '1月19日の誕生花（ストック（八重））とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0121/';
   $nextTitle = '1月21日の誕生花（スイセン）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';

@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ストック（八重）はどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"甘く優しい香りを漂わせ、花束やアレンジメントでも人気があります。"}},
-      {"@type":"Question","name":"ストック（八重）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「永遠の美」という花言葉は、幾重にも重なる花びらが長く咲き続ける姿に由来するとされています。"}},
-      {"@type":"Question","name":"ストックの「八重」とはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらが幾重にも重なって咲く品種を指し、通常のストックよりも華やかでボリュームのある花姿になります。"}}
+      {"@type":"Question","name":"ストック（八重）はどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"アブラナ科の一年草で、冬から春に幾重にも重なった花びらを穂状に咲かせます。甘い香りも特徴の一つです。"}},
+      {"@type":"Question","name":"ストック（八重）の花言葉「永遠の美」の由来は？","acceptedAnswer":{"@type":"Answer","text":"幾重にも重なる花びらが、一時的ではなく変わらず続いていく美しさを思わせることに由来するといわれています。なお、一重咲きのストックとは花言葉が異なります。"}}
     ]
   }
   </script>
@@ -107,7 +113,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月19日の誕生花（ストック）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0119/"}
+      {"@type":"ListItem","position":6,"name":"1月19日の誕生花（ストック（八重））とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0119/"}
     ]
   }
   </script>
@@ -123,20 +129,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月19日の誕生花（ストック）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月19日の誕生花（ストック（八重））とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 19 · 誕生花</span>
     <h1>1月19日の誕生花はストック（八重）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ストック（八重）は、幾重にも重なる花びらの花を穂状に咲かせる1月19日の誕生花です。花言葉は「永遠の美」。</p>
+    <p class="art-lead">小正月からしばらく経った1月19日。ストック（八重）は、幾重にも重なる花びらを穂のように咲かせ、あたりに甘い香りを漂わせる花です。今日はその華やかな重なりに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ストック（八重）</dd>
     <dt>花言葉</dt><dd>永遠の美</dd>
     <dt>科名</dt><dd>アブラナ科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>冬〜春</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ストック（八重）とは</a></li>
-      <li><a href="#meaning">ストック（八重）が象徴する意味</a></li>
-      <li><a href="#charm">ストック（八重）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">冬から春、幾重にも重なるストック（八重）の花びら</a></li>
+      <li><a href="#story">1月19日、幾重にも重なる花びらが伝える永遠の美</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ストック（八重）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ストック（八重）とは</h2>
-    <p>ストック（八重）は、アブラナ科の一年草で、1月19日の誕生花として知られています。幾重にも重なる花びらの花を穂状に咲かせ、そのボリューム感ある姿から花束やアレンジメントにも人気です。</p>
-  </section>
+    <h2>冬から春、幾重にも重なるストック（八重）の花びら</h2>
+    <p>ストック（八重）は、アブラナ科の一年草です。冬から春にかけて、幾重にも重なった花びらを穂状に連ねて咲かせ、あたりに甘い香りを漂わせます。一重咲きのストックに比べて花びらの層が厚く、より華やかで温かみのある印象を与えるとされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ストック（八重）が象徴する意味</h2>
-    <p>ストック（八重）の花言葉は「永遠の美」です。幾重にも重なる花びらが長く咲き続けるその姿から、色あせない美しさを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ストック（八重）の魅力</h2>
-    <p>ストック（八重）の魅力は、穂状に連なって咲く花の華やかさと、幾重にも重なる花びらが生み出す豊かなボリューム感にあります。香りも良く、花束の主役としても長く愛されています。1月19日生まれの方はもちろん、変わらぬ美しさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ストック（八重）は日当たりの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月19日生まれの方はもちろん、変わらぬ美しさを伝えたい贈り物としてもストック（八重）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストック（八重）はどんな香りがしますか？</div>
-        <div class="faq-a">甘く優しい香りを漂わせ、花束やアレンジメントでも人気があります。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストック（八重）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「永遠の美」という花言葉は、幾重にも重なる花びらが長く咲き続ける姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストックの「八重」とはどういう意味ですか？</div>
-        <div class="faq-a">花びらが幾重にも重なって咲く品種を指し、通常のストックよりも華やかでボリュームのある花姿になります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストック（八重）はどんな花ですか？</div>
+        <div class="faq-a">アブラナ科の一年草で、冬から春に幾重にも重なった花びらを穂状に咲かせます。甘い香りも特徴の一つです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月19日、幾重にも重なる花びらが伝える永遠の美</h2>
+    <p>ストック（八重）は、寒さの厳しい冬のさなかに咲き始め、そのまま春先まで花を咲かせ続けます。凍えるような季節から、少しずつ暖かさが戻ってくる季節まで、途切れることなく咲き続けるその粘り強さは、一過性ではない美しさを感じさせます。1月19日、日々の暮らしが少しずつ落ち着きを取り戻すこの時期は、ちょうどストック（八重）が咲き始める頃合いでもあります。冬から春へと移ろう時間の流れを、花とともに感じてみるのも良さそうです。花言葉は「永遠の美」。幾重にも重なる花びらが、一時的ではなく変わらず続いていく美しさを思わせることに由来するといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ストック（八重）の花言葉「永遠の美」の由来は？</div>
+        <div class="faq-a">幾重にも重なる花びらが、一時的ではなく変わらず続いていく美しさを思わせることに由来するといわれています。なお、一重咲きのストックとは花言葉が異なります。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>見た目の美しさだけでなく、積み重ねてきた時間や経験も、あなたを形づくる大切な美しさです。今日は、これまで大切に続けてきたことを、少し誇りに思ってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ストック（八重）から始める小さな体験</h2>
+    <p>幾重にも花びらを重ねるストック（八重）にあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>ストックの香りを確かめてみる</li>
+      <li>花びらの重なりをじっくり数えてみる</li>
+      <li>長く大切にしたいものを一つ思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">大切にしてきたものを見つめ直した今日は、運気の流れもあわせて覗いてみませんか。開運カレンダーでは、日々の月齢もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ストック（八重）は、幾重にも重なる花びらを通して、積み重ねてきた美しさの尊さを教えてくれる誕生花です。</p>
     <ul>
-      <li>ストック（八重）は花びらが幾重にも重なる、1月19日の誕生花</li>
-      <li>花言葉は「永遠の美」、色あせない美しさを象徴する花とされる</li>
-      <li>穂状に咲く華やかさと良い香りが魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>ストック（八重）はアブラナ科の一年草で、冬から春に幾重にも重なる花びらを穂状に咲かせる</li>
+      <li>甘い香りも特徴で、華やかで温かみのある印象を与えるとされる</li>
+      <li>花言葉は「永遠の美」。積み重なる花びらが変わらず続く美しさを思わせることに由来するといわれている</li>
+      <li>一重咲きのストックとは花言葉が異なる点も、あわせて知っておきたい</li>
     </ul>
   </section>
 

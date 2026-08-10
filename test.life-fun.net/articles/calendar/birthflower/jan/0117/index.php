@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0117/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月17日の誕生花スイカズラの花言葉・特徴・魅力をわかりやすく解説。「愛の絆」を象徴する花木の意味を紹介します。">
+  <meta name="description" content="1月17日の誕生花スイカズラの花言葉・特徴・魅力をわかりやすく解説。「愛の絆」を象徴する花の意味を紹介します。">
   <title>1月17日の誕生花はスイカズラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スイカズラはなぜ花の色が変わるのですか？","acceptedAnswer":{"@type":"Answer","text":"咲き始めは白く、時間が経つにつれて黄色へと変化する性質があります。"}},
-      {"@type":"Question","name":"スイカズラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛の絆」という花言葉は、つるを絡ませながら共に育つ姿に由来するとされています。"}},
-      {"@type":"Question","name":"スイカズラはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"甘く優しい香りを漂わせ、初夏の庭を心地よく彩ります。"}}
+      {"@type":"Question","name":"スイカズラはいつ頃、どんな花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い花を咲かせ、時間の経過とともに黄色へと色を変えていきます。誕生花としては1月ですが、実際に花が咲くのは初夏の時期です。"}},
+      {"@type":"Question","name":"スイカズラの花言葉「愛の絆」の由来は？","acceptedAnswer":{"@type":"Answer","text":"白から黄色へと色を重ねながら長く咲き続ける姿が、変わらず深まっていく関係を思わせることに由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 17 · 誕生花</span>
     <h1>1月17日の誕生花はスイカズラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スイカズラは、白から黄色へ花色を変える1月17日の誕生花です。花言葉は「愛の絆」。甘い香りが漂う優しい印象の花木です。</p>
+    <p class="art-lead">正月気分もすっかり落ち着いた1月17日。スイカズラは、白い花から次第に黄色へと色を変えながら香る、少し不思議な魅力を持つ花です。今日はそんな一輪を紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スイカズラとは</a></li>
-      <li><a href="#meaning">スイカズラが象徴する意味</a></li>
-      <li><a href="#charm">スイカズラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">白から黄色へ、スイカズラが見せる色の変化</a></li>
+      <li><a href="#story">1月17日、スイカズラの色の移ろいが伝える愛の絆</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スイカズラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スイカズラとは</h2>
-    <p>スイカズラは、スイカズラ科のつる性低木で、1月17日の誕生花として知られています。初夏に白い花を咲かせ、その後黄色へと色を変えながら甘い香りを漂わせる、優しい印象の花木です。</p>
-  </section>
+    <h2>白から黄色へ、スイカズラが見せる色の変化</h2>
+    <p>スイカズラは、スイカズラ科のつる性低木です。初夏になると、まず白い花を咲かせ、時間の経過とともに徐々に黄色へと色を変えていきます。同じ株に白と黄、両方の花が同時に咲いている様子が見られるのも、この花ならではの特徴です。あわせて甘い香りが漂うことでも知られ、優しく穏やかな印象を与えるとされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スイカズラが象徴する意味</h2>
-    <p>スイカズラの花言葉は「愛の絆」です。つるを絡ませながら共に育つその姿から、寄り添い結びつく愛情や絆を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スイカズラの魅力</h2>
-    <p>スイカズラの魅力は、白から黄色へと移ろう花色の変化と、あたりに漂う甘く優しい香りにあります。生垣やフェンスに絡ませて育てられることも多く、初夏の庭に優しい彩りを添えてくれます。1月17日生まれの方はもちろん、絆を伝えたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スイカズラは日当たりの良い場所を好み、丈夫でつるを伸ばしながら育つため、支柱やフェンスを用意して育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月17日生まれの方はもちろん、絆を伝えたい贈り物としてもスイカズラは親しまれています。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイカズラはなぜ花の色が変わるのですか？</div>
-        <div class="faq-a">咲き始めは白く、時間が経つにつれて黄色へと変化する性質があります。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイカズラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「愛の絆」という花言葉は、つるを絡ませながら共に育つ姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイカズラはどんな香りがしますか？</div>
-        <div class="faq-a">甘く優しい香りを漂わせ、初夏の庭を心地よく彩ります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイカズラはいつ頃、どんな花を咲かせますか？</div>
+        <div class="faq-a">初夏に白い花を咲かせ、時間の経過とともに黄色へと色を変えていきます。誕生花としては1月ですが、実際に花が咲くのは初夏の時期です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月17日、スイカズラの色の移ろいが伝える愛の絆</h2>
+    <p>スイカズラの花は、一日にして色が変わるわけではなく、少しずつ、確かに色合いを変えていきます。まっさらな白から始まり、時間をかけて黄色へと重なっていくその移ろい方は、急に深まるのではなく、じわじわと近づいていく間柄を思わせます。正月の挨拶を交わした相手とも、1月も半ばを過ぎたこの時期になると、少しずつ距離が縮まってきている頃かもしれません。花言葉は「愛の絆」。白から黄色へと色を重ねながら、変わらず寄り添うように咲き続ける姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スイカズラの花言葉「愛の絆」の由来は？</div>
+        <div class="faq-a">白から黄色へと色を重ねながら長く咲き続ける姿が、変わらず深まっていく関係を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かとの関係は、ある日突然深まるものではなく、気づかないくらいの小さな変化の積み重ねでできています。今日は、そばにいてくれる誰かとの間に、少しずつ育ってきたものがあることを思い出してみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スイカズラから始める小さな体験</h2>
+    <p>色を変えながら咲き続けるスイカズラにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>色が変わっていく花を探して観察してみる</li>
+      <li>長く続いている関係に、感謝の言葉を伝えてみる</li>
+      <li>甘い香りのするものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">積み重ねてきた関係をふと見つめ直したくなった今日は、運気の流れも一緒にチェックしてみませんか。開運カレンダーでは、日々の六曜もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>スイカズラは、色を変えながら咲き続けることで、静かに深まっていく関係を教えてくれる誕生花です。</p>
     <ul>
-      <li>スイカズラは初夏に花色を変える、1月17日の誕生花</li>
-      <li>花言葉は「愛の絆」、寄り添う結びつきを象徴する花とされる</li>
-      <li>甘い香りと花色の変化が魅力</li>
-      <li>つる性のため支柱やフェンスを用意して育てたい</li>
+      <li>スイカズラはスイカズラ科のつる性低木で、初夏に白から黄色へ色を変える花を咲かせる（本来の見頃は初夏で、1月17日時点では花は咲いていない）</li>
+      <li>甘い香りが漂い、優しく穏やかな印象を持つとされる</li>
+      <li>花言葉は「愛の絆」。色を重ねながら咲き続ける姿が、深まる関係を思わせることに由来するといわれている</li>
+      <li>一日では変わらない、少しずつ育っていく関係の尊さを思い出させてくれる花</li>
     </ul>
   </section>
 

@@ -196,6 +196,10 @@ ob_start();
         <div class="faq-q" onclick="toggleFaq(this)">1月1日の誕生花は何ですか？</div>
         <div class="faq-a">フクジュソウで、花言葉は「幸せを招く」です。</div>
       </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">1月の誕生花には、実際の見頃が春以降の花も多いのはなぜですか？</div>
+        <div class="faq-a">誕生花は開花時期と必ずしも一致するわけではありません。1月の誕生花には、花言葉や由来をもとに選ばれ、本来の見頃が春から初夏になる花も多く含まれています。</div>
+      </div>
     </div>
   </section>
 
@@ -218,8 +222,8 @@ ob_start();
   <?php
   require_once __DIR__.'/../../../../inc/dayinfo/birthflower-boundary-nav.php';
   renderBirthflowerBoundaryNav([
-      'prevUrl'        => null,
-      'prevTitle'      => null,
+      'prevUrl'        => '/articles/calendar/birthflower/dec/',
+      'prevTitle'      => '12月の誕生花とは',
       'nextTargetFile' => __DIR__.'/../feb/index.php',
       'nextUrl'        => '/articles/calendar/birthflower/feb/',
       'nextTitle'      => '2月の誕生花とは',

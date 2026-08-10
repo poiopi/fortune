@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0121/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月21日の誕生花スイセンの花言葉・特徴・魅力をわかりやすく解説。「自己愛」を象徴する春を告げる花の意味を紹介します。">
+  <meta name="description" content="1月21日の誕生花スイセンの花言葉・特徴・魅力をわかりやすく解説。「自己愛」を象徴する花の意味を紹介します。">
   <title>1月21日の誕生花はスイセン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スイセンの花言葉はなぜ「自己愛」なのですか？","acceptedAnswer":{"@type":"Answer","text":"ギリシャ神話に登場するナルキッソスが水面に映る自分の姿に見とれた物語に由来するとされています。"}},
-      {"@type":"Question","name":"スイセンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に、白や黄色の花を咲かせます。"}},
-      {"@type":"Question","name":"スイセンとラッパスイセンは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"ラッパスイセンはスイセンの仲間で、中央の副花冠がラッパ状に大きく発達している品種です。"}}
+      {"@type":"Question","name":"スイセンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に白や黄色の花を咲かせます。1月21日はまだ寒さの厳しい時期ですが、スイセンは春の訪れをいち早く告げる花として知られています。"}},
+      {"@type":"Question","name":"スイセンの花言葉「自己愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"周囲に流されず、自分自身のペースで静かに咲き続ける姿に由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 21 · 誕生花</span>
     <h1>1月21日の誕生花はスイセン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スイセンは、早春に白や黄色の花を咲かせる1月21日の誕生花です。花言葉は「自己愛」。春を告げる花として親しまれています。</p>
+    <p class="art-lead">大寒を迎えた1月21日。スイセンは、まだ寒さの厳しいこの時期に、白や黄色の花を咲かせて春の訪れを告げる花です。今日はその凛とした姿を紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スイセンとは</a></li>
-      <li><a href="#meaning">スイセンが象徴する意味</a></li>
-      <li><a href="#charm">スイセンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">早春に白や黄色で咲く、スイセンの姿</a></li>
+      <li><a href="#story">1月21日、静かに咲くスイセンが伝える自己愛</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スイセンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スイセンとは</h2>
-    <p>スイセンは、ヒガンバナ科の球根植物で、1月21日の誕生花として知られています。早春に白や黄色の花を咲かせ、春の訪れを告げる花として古くから親しまれています。</p>
-  </section>
+    <h2>早春に白や黄色で咲く、スイセンの姿</h2>
+    <p>スイセンは、ヒガンバナ科の球根植物です。早春、まだ肌寒さの残る頃に白や黄色の花を咲かせ、他の花に先駆けて春の訪れを告げる花として知られています。うつむくように咲く花の姿には、控えめでありながら凛とした佇まいがあります。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スイセンが象徴する意味</h2>
-    <p>スイセンの花言葉は「自己愛」です。ギリシャ神話のナルキッソスの物語に由来するとされる花言葉で、水面に映る自分の姿に見とれる美しさになぞらえられています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スイセンの魅力</h2>
-    <p>スイセンの魅力は、清楚な白や鮮やかな黄色の花色と、早春に凛と咲く姿にあります。庭植えや切り花としても人気が高く、寒さの中に春らしい彩りを添えてくれます。1月21日生まれの方はもちろん、自分らしさを大切にしたい方への贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スイセンは日当たりの良い場所を好み、丈夫で植えっぱなしでも毎年花を咲かせやすい球根植物です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月21日生まれの方はもちろん、自分らしさを大切にする方への贈り物としてもスイセンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイセンの花言葉はなぜ「自己愛」なのですか？</div>
-        <div class="faq-a">ギリシャ神話に登場するナルキッソスが水面に映る自分の姿に見とれた物語に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">スイセンはいつ頃咲きますか？</div>
-        <div class="faq-a">早春に、白や黄色の花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイセンとラッパスイセンは同じ花ですか？</div>
-        <div class="faq-a">ラッパスイセンはスイセンの仲間で、中央の副花冠がラッパ状に大きく発達している品種です。</div>
+        <div class="faq-a">早春に白や黄色の花を咲かせます。1月21日はまだ寒さの厳しい時期ですが、スイセンは春の訪れをいち早く告げる花として知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月21日、静かに咲くスイセンが伝える自己愛</h2>
+    <p>スイセンは、うつむき加減に咲きながらも、寒さに負けず自分のペースで花を咲かせます。周りに合わせて急いで咲くのではなく、自分の時期をしっかり見極めて咲く姿は、他者よりもまず自分自身と向き合うことの大切さを思わせます。大寒を迎えた1月21日、一年で最も寒さが厳しいとされるこの時期だからこそ、自分自身をいたわる時間を持ってみるのも良いかもしれません。花言葉は「自己愛」。周囲に流されず、自分らしいペースで静かに咲く姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スイセンの花言葉「自己愛」の由来は？</div>
+        <div class="faq-a">周囲に流されず、自分自身のペースで静かに咲き続ける姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分を大切にすることは、決してわがままなことではありません。今日は少しだけ立ち止まって、自分自身がどんな気持ちでいるか、静かに耳を傾けてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スイセンから始める小さな体験</h2>
+    <p>自分のペースで静かに咲くスイセンにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白や黄色のスイセンを探して春の気配を感じてみる</li>
+      <li>自分自身を労わる時間を少し作ってみる</li>
+      <li>鏡の前で、今日の自分を認めてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分自身と向き合った今日は、運気の流れもあわせてチェックしてみませんか。開運カレンダーでは、日々のラッキーアイテムもわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>スイセンは、自分のペースで静かに咲く姿を通して、自分自身を大切にすることの意味を教えてくれる誕生花です。</p>
     <ul>
-      <li>スイセンは早春に白や黄色の花を咲かせる、1月21日の誕生花</li>
-      <li>花言葉は「自己愛」、ギリシャ神話に由来するとされる</li>
-      <li>清楚な花色と春を告げる姿が魅力</li>
-      <li>丈夫で植えっぱなしでも育てやすい</li>
+      <li>スイセンはヒガンバナ科の球根植物で、早春に白や黄色の花を咲かせる</li>
+      <li>他の花に先駆けて春の訪れを告げる花として知られる</li>
+      <li>花言葉は「自己愛」。自分らしいペースで静かに咲く姿に由来するといわれている</li>
+      <li>うつむくように咲く姿には、控えめながらも凛とした美しさがある</li>
     </ul>
   </section>
 

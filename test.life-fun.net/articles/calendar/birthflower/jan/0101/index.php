@@ -90,6 +90,9 @@ ob_start();
   .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
   .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
   .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -236,13 +239,16 @@ ob_start();
   ?>
 
   <?php
-  $prevUrl   = null;
-  $prevTitle = null;
-  $nextUrl   = '/articles/calendar/birthflower/jan/0102/';
-  $nextTitle = '1月2日の誕生花（ハルサザンカ）とは';
-  $listUrl   = '/articles/calendar/birthflower/jan/';
-  $listTitle = '1月の誕生花一覧';
-  require __DIR__.'/../../../../../inc/article-nav.php';
+  require_once __DIR__.'/../../../../../inc/dayinfo/birthflower-boundary-nav.php';
+  renderBirthflowerBoundaryNav([
+      'prevUrl'        => '/articles/calendar/birthflower/dec/1231/',
+      'prevTitle'      => '12月31日の誕生花（カンギク）とは',
+      'nextTargetFile' => __DIR__.'/../0102/index.php',
+      'nextUrl'        => '/articles/calendar/birthflower/jan/0102/',
+      'nextTitle'      => '1月2日の誕生花（ハルサザンカ）とは',
+      'listUrl'        => '/articles/calendar/birthflower/jan/',
+      'listTitle'      => '1月の誕生花一覧',
+  ]);
   ?>
 
   <section class="art-section" id="related">

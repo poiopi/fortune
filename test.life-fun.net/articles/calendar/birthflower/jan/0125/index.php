@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"チューリップ（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、明るい黄色の花を咲かせます。"}},
-      {"@type":"Question","name":"チューリップ（黄）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「正直」という花言葉は、まっすぐに伸びる茎と飾らない明るい花色に由来するとされています。"}},
-      {"@type":"Question","name":"チューリップは色によって花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色ごとに異なる花言葉があり、黄色は「正直」を表すとされています。"}}
+      {"@type":"Question","name":"チューリップ（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に明るい黄色の花を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。"}},
+      {"@type":"Question","name":"チューリップ（黄）の花言葉「正直」の由来は？","acceptedAnswer":{"@type":"Answer","text":"飾らず素直に咲く黄色の花の姿に由来するといわれています。"}}
     ]
   }
   </script>
@@ -107,7 +113,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月25日の誕生花（チューリップ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0125/"}
+      {"@type":"ListItem","position":6,"name":"1月25日の誕生花（チューリップ（黄））とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0125/"}
     ]
   }
   </script>
@@ -123,13 +129,13 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月25日の誕生花（チューリップ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月25日の誕生花（チューリップ（黄））とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 25 · 誕生花</span>
     <h1>1月25日の誕生花はチューリップ（黄）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">チューリップ（黄）は、明るい黄色の花を咲かせる1月25日の誕生花です。花言葉は「正直」。</p>
+    <p class="art-lead">寒さの厳しい1月25日、思い浮かべたいのが明るい黄色のチューリップです。名前はトルコ語で「ターバン」を意味する言葉に由来するといわれ、原産地もトルコとされています。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">チューリップ（黄）とは</a></li>
-      <li><a href="#meaning">チューリップ（黄）が象徴する意味</a></li>
-      <li><a href="#charm">チューリップ（黄）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">トルコの名を持つ、チューリップ（黄）の明るさ</a></li>
+      <li><a href="#story">1月25日、黄色いチューリップが伝える正直という言葉</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、チューリップ（黄）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>チューリップ（黄）とは</h2>
-    <p>チューリップ（黄）は、ユリ科の球根植物で、1月25日の誕生花として知られています。春に明るい黄色の花を咲かせ、その素直で明るい花姿から春の花壇の定番として親しまれています。</p>
-  </section>
+    <h2>トルコの名を持つ、チューリップ（黄）の明るさ</h2>
+    <p>チューリップ（黄）は、ユリ科の球根植物です。春になると、明るい黄色の花を咲かせます。名前はトルコ語でターバンを意味する言葉に由来するといわれ、原産地もトルコとされています。世界中で親しまれる花ですが、そのルーツは中央アジアからトルコにかけての地域にあるとされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>チューリップ（黄）が象徴する意味</h2>
-    <p>チューリップ（黄）の花言葉は「正直」です。まっすぐに伸びる茎と、飾らない明るい花色から、素直でうそのない心を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>チューリップ（黄）の魅力</h2>
-    <p>チューリップ（黄）の魅力は、太陽のような明るい黄色と、すっと伸びるまっすぐな花姿にあります。花壇や鉢植えでも育てやすく、春の訪れを明るく彩ってくれます。1月25日生まれの方はもちろん、素直な気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>チューリップ（黄）は日当たりの良い場所を好み、丈夫で育てやすい球根植物です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月25日生まれの方はもちろん、素直な気持ちを伝えたい贈り物としてもチューリップ（黄）は春の定番の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">チューリップ（黄）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に、明るい黄色の花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（黄）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「正直」という花言葉は、まっすぐに伸びる茎と飾らない明るい花色に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューリップは色によって花言葉が違いますか？</div>
-        <div class="faq-a">はい、色ごとに異なる花言葉があり、黄色は「正直」を表すとされています。</div>
+        <div class="faq-a">春に明るい黄色の花を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月25日、黄色いチューリップが伝える正直という言葉</h2>
+    <p>黄色は、飾り気なくまっすぐに目に飛び込んでくる色です。派手に主張するわけではないのに、見た人の気持ちをぱっと明るくしてくれる、そんな素直な力を持っています。1月25日、言いたいことをつい飲み込んでしまいがちな人も、今日は黄色いチューリップのように、思っていることを素直に言葉にしてみるのも良いかもしれません。花言葉は「正直」。飾らず素直に咲く黄色の花の姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（黄）の花言葉「正直」の由来は？</div>
+        <div class="faq-a">飾らず素直に咲く黄色の花の姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>取り繕わない素直な言葉は、思っている以上にまっすぐ相手に届くものです。今日は、飾らない気持ちを一つ、そのまま伝えてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、チューリップ（黄）から始める小さな体験</h2>
+    <p>飾らず素直に咲くチューリップ（黄）にあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>黄色いチューリップを見つけて写真に撮ってみる</li>
+      <li>思っていることを一つ、正直に言葉にしてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">素直な気持ちを言葉にできた今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、ラッキーカラーや吉方位もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>チューリップ（黄）は、飾らず素直に咲く姿を通して、正直な気持ちの心地よさを教えてくれる誕生花です。</p>
     <ul>
-      <li>チューリップ（黄）は春に明るい黄色の花を咲かせる、1月25日の誕生花</li>
-      <li>花言葉は「正直」、素直な心を象徴する花とされる</li>
-      <li>まっすぐな花姿と明るい色合いが魅力</li>
-      <li>丈夫で育てやすい</li>
+      <li>チューリップ（黄）はユリ科の球根植物で、春に明るい黄色の花を咲かせる（本来の見頃は春で、1月25日時点では花は咲いていない）</li>
+      <li>名前はトルコ語でターバンを意味する言葉に由来するといわれ、原産地もトルコとされる</li>
+      <li>花言葉は「正直」。飾らず素直に咲く黄色の花の姿に由来するといわれている</li>
+      <li>世界中で親しまれる花だが、そのルーツは中央アジアからトルコにかけての地域にある</li>
     </ul>
   </section>
 
@@ -223,7 +229,7 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0124/';
-  $prevTitle = '1月24日の誕生花（ヒヤシンス）とは';
+  $prevTitle = '1月24日の誕生花（ヒヤシンス（紫））とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0126/';
   $nextTitle = '1月26日の誕生花（ピグミーランタン）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';

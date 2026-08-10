@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0118/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月18日の誕生花グズマニアの花言葉・特徴・魅力をわかりやすく解説。「完璧」を象徴する観葉植物の意味を紹介します。">
+  <meta name="description" content="1月18日の誕生花グズマニアの花言葉・特徴・魅力をわかりやすく解説。「完璧」を象徴する花の意味を紹介します。">
   <title>1月18日の誕生花はグズマニア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"グズマニアの鮮やかな部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"実は「苞（ほう）」と呼ばれる葉が変化した部分で、中央に小さな花が咲きます。"}},
-      {"@type":"Question","name":"グズマニアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「完璧」という花言葉は、整然と重なる鮮やかな苞が作り出す美しいフォルムに由来するとされています。"}},
-      {"@type":"Question","name":"グズマニアはどのくらい観賞できますか？","acceptedAnswer":{"@type":"Answer","text":"管理が良ければ数ヶ月にわたって鮮やかな苞の美しさを楽しめます。"}}
+      {"@type":"Question","name":"グズマニアの鮮やかな色の部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、花びらではなく「苞」と呼ばれる葉の一種です。本来の花は苞の中心に咲く小さなもので、苞と花は別のものとして知られています。"}},
+      {"@type":"Question","name":"グズマニアの花言葉「完璧」の由来は？","acceptedAnswer":{"@type":"Answer","text":"苞と花、それぞれの部分が調和しながら整って咲く姿に由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 18 · 誕生花</span>
     <h1>1月18日の誕生花はグズマニア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">グズマニアは、鮮やかな苞が印象的な1月18日の誕生花です。花言葉は「完璧」。観葉植物として人気があります。</p>
+    <p class="art-lead">小正月から少し日が経った1月18日。グズマニアは、鮮やかな苞の中に小さな花をひそめる、観葉植物としても人気の花です。今日はその整った佇まいに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>グズマニア</dd>
     <dt>花言葉</dt><dd>完璧</dd>
     <dt>科名</dt><dd>パイナップル科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>通年</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">グズマニアとは</a></li>
-      <li><a href="#meaning">グズマニアが象徴する意味</a></li>
-      <li><a href="#charm">グズマニアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">鮮やかな苞にひそむ、グズマニアの小さな花</a></li>
+      <li><a href="#story">1月18日、グズマニアの整った佇まいが伝える完璧という言葉</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、グズマニアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>グズマニアとは</h2>
-    <p>グズマニアは、パイナップル科の多年草で、1月18日の誕生花として知られています。鮮やかな色の苞（ほう）の中に小さな花を咲かせる観葉植物で、インテリアグリーンとしても広く親しまれています。</p>
-  </section>
+    <h2>鮮やかな苞にひそむ、グズマニアの小さな花</h2>
+    <p>グズマニアは、パイナップル科の観葉植物です。よく目にする赤や黄、オレンジの鮮やかな部分は花びらではなく「苞（ほう）」と呼ばれる葉の一種で、本来の花はその中心にひっそりと咲く小さなものです。苞そのものが主役のように色鮮やかに彩られているのが、この植物ならではの特徴といえます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>グズマニアが象徴する意味</h2>
-    <p>グズマニアの花言葉は「完璧」です。整然と重なる鮮やかな苞が作り出す美しいフォルムから、隙のない美しさを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>グズマニアの魅力</h2>
-    <p>グズマニアの魅力は、赤やオレンジなど鮮やかな色の苞が生み出す華やかな存在感にあります。観葉植物として長く楽しめることから、インテリアのアクセントとしても人気です。1月18日生まれの方はもちろん、完成された美しさを伝えたい贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>グズマニアは明るい日陰を好み、乾燥を嫌うため、株の中心（筒状の部分）にも水をためるように管理するのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月18日生まれの方はもちろん、華やかな贈り物としてもグズマニアは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グズマニアの鮮やかな部分は花びらですか？</div>
-        <div class="faq-a">実は「苞（ほう）」と呼ばれる葉が変化した部分で、中央に小さな花が咲きます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グズマニアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「完璧」という花言葉は、整然と重なる鮮やかな苞が作り出す美しいフォルムに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グズマニアはどのくらい観賞できますか？</div>
-        <div class="faq-a">管理が良ければ数ヶ月にわたって鮮やかな苞の美しさを楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">グズマニアの鮮やかな色の部分は花びらですか？</div>
+        <div class="faq-a">いいえ、花びらではなく「苞」と呼ばれる葉の一種です。本来の花は苞の中心に咲く小さなもので、苞と花は別のものとして知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月18日、グズマニアの整った佇まいが伝える完璧という言葉</h2>
+    <p>赤やオレンジなど、グズマニアの苞がまとう色にはためらいがありません。淡さやグラデーションに逃げず、迷いのないくっきりとした一色で咲き切るその潔さは、見る人の目を思わずひきつけます。1月18日は、正月からの日々のリズムがようやく整い始める頃合い。部屋の中を見渡して、少し乱れているところに気づく人もいるかもしれません。すべてを完璧にする必要はありませんが、グズマニアの迷いのない色合いにならって、身の回りを一か所だけでも丁寧に整えてみると、心地よさが広がっていくはずです。花言葉は「完璧」。苞と花、それぞれが役割を持ちながら調和して咲く姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">グズマニアの花言葉「完璧」の由来は？</div>
+        <div class="faq-a">苞と花、それぞれの部分が調和しながら整って咲く姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>完璧を目指す必要はありませんが、身の回りが少し整うだけで、気持ちはふっと軽くなるものです。今日はその心地よさを、小さな範囲でいいので味わってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、グズマニアから始める小さな体験</h2>
+    <p>苞と花、それぞれが調和するグズマニアにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな苞と小さな花の違いを観察してみる</li>
+      <li>部屋を一か所、丁寧に整えてみる</li>
+      <li>観葉植物を飾って空間を整えてみる</li>
+    </ul>
+
+    <p class="cta-lead">身の回りが少し整った今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、日々の吉方位もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>グズマニアは、苞と花それぞれの調和を通して、整うことの心地よさを教えてくれる誕生花です。</p>
     <ul>
-      <li>グズマニアは鮮やかな苞が特徴的な、1月18日の誕生花</li>
-      <li>花言葉は「完璧」、隙のない美しさを象徴する花とされる</li>
-      <li>華やかな色合いが長く楽しめるのが魅力</li>
-      <li>株の中心にも水をためるように管理して育てたい</li>
+      <li>グズマニアはパイナップル科の観葉植物で、鮮やかな苞の中に小さな花を咲かせる</li>
+      <li>苞と花はそれぞれ異なるパーツで、苞そのものが主役のように彩られている</li>
+      <li>花言葉は「完璧」。苞と花が調和しながら咲く姿に由来するといわれている</li>
+      <li>観葉植物として一年を通して楽しめ、暮らしに彩りを添えてくれる</li>
     </ul>
   </section>
 
@@ -225,7 +231,7 @@ ob_start();
   $prevUrl   = '/articles/calendar/birthflower/jan/0117/';
   $prevTitle = '1月17日の誕生花（スイカズラ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0119/';
-  $nextTitle = '1月19日の誕生花（ストック）とは';
+  $nextTitle = '1月19日の誕生花（ストック（八重））とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0126/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月26日の誕生花ピグミーランタンの花言葉・特徴・魅力をわかりやすく解説。「印象」を象徴する愛らしい花の意味を紹介します。">
+  <meta name="description" content="1月26日の誕生花ピグミーランタンの花言葉・特徴・魅力をわかりやすく解説。「印象」を象徴する花の意味を紹介します。">
   <title>1月26日の誕生花はピグミーランタン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ピグミーランタンとはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな提灯のような形の花を咲かせる、愛らしい印象の園芸品種です。"}},
-      {"@type":"Question","name":"ピグミーランタンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「印象」という花言葉は、ランタンを思わせる個性的な花の形が見る人の心に残ることに由来するとされています。"}},
-      {"@type":"Question","name":"ピグミーランタンはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"個性的な花姿を活かして、鉢植えとして室内のインテリアに取り入れるのがおすすめです。"}}
+      {"@type":"Question","name":"ピグミーランタンはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"ミカン科ボロニア属の園芸品種で、和名は「ボロニア」です。小さな提灯のような形の花を咲かせ、芳香を持つことも特徴とされています。"}},
+      {"@type":"Question","name":"ピグミーランタンの花言葉「印象」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さくひっそりと咲きながらも、見る人の記憶に残る佇まいに由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 26 · 誕生花</span>
     <h1>1月26日の誕生花はピグミーランタン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ピグミーランタンは、小さな提灯のような形の花を咲かせる1月26日の誕生花です。花言葉は「印象」。</p>
+    <p class="art-lead">1月26日、小さな提灯のような形の花をひっそりと咲かせるのがピグミーランタンです。和名は「ボロニア」といい、芳香を持つことでも知られています。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ピグミーランタン</dd>
     <dt>花言葉</dt><dd>印象</dd>
-    <dt>科名</dt><dd>-</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>科名</dt><dd>ミカン科</dd>
+    <dt>見頃</dt><dd>不明</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ピグミーランタンとは</a></li>
-      <li><a href="#meaning">ピグミーランタンが象徴する意味</a></li>
-      <li><a href="#charm">ピグミーランタンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">小さな提灯のような花、ピグミーランタンの姿</a></li>
+      <li><a href="#story">1月26日、小さな提灯のようなピグミーランタンが伝える印象という言葉</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ピグミーランタンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ピグミーランタンとは</h2>
-    <p>ピグミーランタンは、1月26日の誕生花として知られる園芸品種です。小さな提灯（ランタン）のような形の花を咲かせることからこの名がつけられ、愛らしい印象で親しまれています。</p>
-  </section>
+    <h2>小さな提灯のような花、ピグミーランタンの姿</h2>
+    <p>ピグミーランタンは、ミカン科ボロニア属の園芸品種で、和名を「ボロニア」といいます。小さな提灯のような形の花を咲かせ、あわせて芳香を持つことも特徴とされています。観賞用に育てられる園芸品種として位置づけられていることから、暮らしの中で親しまれてきた花だといえます。なお、原産地や具体的な開花期については、はっきりとした記録が見当たらないため、ここでは触れません。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ピグミーランタンが象徴する意味</h2>
-    <p>ピグミーランタンの花言葉は「印象」です。ランタンを思わせる個性的な花の形が、見る人の心に強く残ることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ピグミーランタンの魅力</h2>
-    <p>ピグミーランタンの魅力は、提灯のような可愛らしい花の形と、小さいながらも個性を放つ存在感にあります。鉢植えとして飾れば、部屋にユニークな印象を添えてくれます。1月26日生まれの方はもちろん、印象的な魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ピグミーランタンは明るい場所を好み、乾燥しすぎないよう土の表面が乾いたら水を与えるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月26日生まれの方はもちろん、印象的な魅力を伝えたい贈り物としてもピグミーランタンは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンとはどんな花ですか？</div>
-        <div class="faq-a">小さな提灯のような形の花を咲かせる、愛らしい印象の園芸品種です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「印象」という花言葉は、ランタンを思わせる個性的な花の形が見る人の心に残ることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">個性的な花姿を活かして、鉢植えとして室内のインテリアに取り入れるのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンはどんな花ですか？</div>
+        <div class="faq-a">ミカン科ボロニア属の園芸品種で、和名は「ボロニア」です。小さな提灯のような形の花を咲かせ、芳香を持つことも特徴とされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月26日、小さな提灯のようなピグミーランタンが伝える印象という言葉</h2>
+    <p>ピグミーランタンの花は、大きく主張することなく、小さな提灯のようにひっそりと灯っています。近づいて初めて気づくその姿と香りは、目立たなくても確かに心に残る、そんな趣を持っています。1月26日、忙しく過ぎていく毎日の中で、小さな存在にふと目を留めてみると、思いがけない発見があるかもしれません。花言葉は「印象」。ひっそりと咲きながらも、見る人の記憶に残るその佇まいに由来するといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ピグミーランタンの花言葉「印象」の由来は？</div>
+        <div class="faq-a">小さくひっそりと咲きながらも、見る人の記憶に残る佇まいに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>気づかなければ見過ごしてしまうような小さな灯りが、あなたのすぐそばにもあるかもしれません。今日は少しだけ立ち止まって、身の回りの小さな存在に目を向けてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ピグミーランタンから始める小さな体験</h2>
+    <p>小さな提灯のように咲くピグミーランタンにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>提灯のような形の花を探して観察してみる</li>
+      <li>身の回りの小さな存在に一つ目を向けてみる</li>
+      <li>花の芳香をそっと確かめてみる</li>
+    </ul>
+
+    <p class="cta-lead">小さな存在に気づけた今日は、運気の流れも一緒に覗いてみませんか。開運カレンダーでは、日々の月齢もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ピグミーランタンは、小さな提灯のような花を通して、目立たなくても心に残るものの大切さを教えてくれる誕生花です。</p>
     <ul>
-      <li>ピグミーランタンは提灯のような花を咲かせる、1月26日の誕生花</li>
-      <li>花言葉は「印象」、心に残る個性を象徴する花とされる</li>
-      <li>愛らしくユニークな花の形が魅力</li>
-      <li>明るい場所で、乾燥しすぎないよう育てたい</li>
+      <li>ピグミーランタンはミカン科ボロニア属の園芸品種で、和名を「ボロニア」という</li>
+      <li>小さな提灯のような形の花を咲かせ、芳香を持つことも特徴とされる</li>
+      <li>花言葉は「印象」。ひっそり咲きながらも記憶に残る佇まいに由来するといわれている</li>
+      <li>観賞用に育てられてきた園芸品種として、暮らしの中で親しまれている</li>
     </ul>
   </section>
 
@@ -223,7 +229,7 @@ ob_start();
 
   <?php
   $prevUrl   = '/articles/calendar/birthflower/jan/0125/';
-  $prevTitle = '1月25日の誕生花（チューリップ）とは';
+  $prevTitle = '1月25日の誕生花（チューリップ（黄））とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0127/';
   $nextTitle = '1月27日の誕生花（マダガスカルジャスミン）とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';

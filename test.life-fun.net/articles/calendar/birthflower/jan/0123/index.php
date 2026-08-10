@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0123/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月23日の誕生花オウバイの花言葉・特徴・魅力をわかりやすく解説。「高貴」を象徴する迎春花の意味を紹介します。">
+  <meta name="description" content="1月23日の誕生花オウバイの花言葉・特徴・魅力をわかりやすく解説。「高貴」を象徴する花の意味を紹介します。">
   <title>1月23日の誕生花はオウバイ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オウバイはなぜ「迎春花」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"早春、他の花に先駆けて黄色い花を咲かせ、春の訪れを告げることに由来するとされています。"}},
-      {"@type":"Question","name":"オウバイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「高貴」という花言葉は、他の花に先駆けて咲く黄金色の花が気品ある佇まいを感じさせることに由来するとされています。"}},
-      {"@type":"Question","name":"オウバイと梅は同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"名前は似ていますがオウバイはモクセイ科、梅はバラ科で異なる植物です。"}}
+      {"@type":"Question","name":"オウバイとウメは同じ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、異なります。オウバイはモクセイ科、ウメはバラ科の植物で、名前に「梅」の字が入りますが別の科に属しています。"}},
+      {"@type":"Question","name":"オウバイの花言葉「高貴」の由来は？","acceptedAnswer":{"@type":"Answer","text":"寒さの中でも他の花に先駆けて凛と咲き、新年を迎える花として親しまれてきたことに由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 23 · 誕生花</span>
     <h1>1月23日の誕生花はオウバイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オウバイは、早春に黄色い花を咲かせる1月23日の誕生花です。花言葉は「高貴」。迎春花とも呼ばれる花木です。</p>
+    <p class="art-lead">まだ冬本番の寒さが続く1月23日。オウバイは、いち早く黄色い花を咲かせる花です。「迎春花」とも呼ばれ、新年や春の訪れと結びつけて語られてきました。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オウバイとは</a></li>
-      <li><a href="#meaning">オウバイが象徴する意味</a></li>
-      <li><a href="#charm">オウバイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">「迎春花」とも呼ばれる、オウバイの黄色い花</a></li>
+      <li><a href="#story">1月23日、迎春花オウバイが伝える高貴という言葉</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オウバイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オウバイとは</h2>
-    <p>オウバイは、モクセイ科の落葉低木で、1月23日の誕生花として知られています。早春に黄色い花を咲かせ、春を迎える花木として「迎春花」とも呼ばれています。</p>
-  </section>
+    <h2>「迎春花」とも呼ばれる、オウバイの黄色い花</h2>
+    <p>オウバイは、モクセイ科の落葉低木です。早春、まだ寒さの残る頃に黄色い花を咲かせ、「迎春花（げいしゅんか）」という別名でも呼ばれています。名前に「梅」の字が入りますが、実際のウメ（バラ科）とは異なる科の植物で、姿形もウメとは別のものです。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オウバイが象徴する意味</h2>
-    <p>オウバイの花言葉は「高貴」です。他の花に先駆けて咲く黄金色の花が、気品ある佇まいを感じさせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オウバイの魅力</h2>
-    <p>オウバイの魅力は、早春に咲く鮮やかな黄色の花と、しなやかに枝垂れる枝ぶりにあります。庭木や生け花としても人気があり、まだ寒さの残る季節に春らしい彩りを添えてくれます。1月23日生まれの方はもちろん、気品ある魅力を伝えたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オウバイは日当たりの良い場所を好み、丈夫で育てやすく、土の表面が乾いたら水を与える程度で十分育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月23日生まれの方はもちろん、気品ある魅力を伝えたい贈り物としてもオウバイは人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オウバイはなぜ「迎春花」と呼ばれるのですか？</div>
-        <div class="faq-a">早春、他の花に先駆けて黄色い花を咲かせ、春の訪れを告げることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オウバイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「高貴」という花言葉は、他の花に先駆けて咲く黄金色の花が気品ある佇まいを感じさせることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オウバイと梅は同じ花ですか？</div>
-        <div class="faq-a">名前は似ていますがオウバイはモクセイ科、梅はバラ科で異なる植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オウバイとウメは同じ植物ですか？</div>
+        <div class="faq-a">いいえ、異なります。オウバイはモクセイ科、ウメはバラ科の植物で、名前に「梅」の字が入りますが別の科に属しています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月23日、迎春花オウバイが伝える高貴という言葉</h2>
+    <p>「迎春花」という別名が示す通り、オウバイは新年や春の訪れと結びつけて語られてきた花です。1月23日、まだ寒さの厳しいこの時期に、他の花に先駆けて黄色い花を咲かせる姿には、静かな凛々しさが感じられます。誰かに誇示するようなものではなく、自分の役割を淡々と果たす姿勢にこそ、本当の品格が宿るのかもしれません。花言葉は「高貴」。寒さの中でも凛と咲き、新年を迎える花として親しまれてきたことに由来するといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オウバイの花言葉「高貴」の由来は？</div>
+        <div class="faq-a">寒さの中でも他の花に先駆けて凛と咲き、新年を迎える花として親しまれてきたことに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに見せるためではなく、自分自身の姿勢を正すことで生まれる清々しさがあります。今日は少しだけ背筋を伸ばして、丁寧に一日を過ごしてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オウバイから始める小さな体験</h2>
+    <p>寒さの中で凛と咲くオウバイにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>早春に咲く黄色い花を探してみる</li>
+      <li>姿勢を正して、今日一日を丁寧に過ごしてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">背筋を伸ばして過ごせた今日は、運気の流れも一緒に確認してみませんか。開運カレンダーでは、日々の吉方位もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>オウバイは、寒さの中で凛と咲く姿を通して、静かな品格の大切さを教えてくれる誕生花です。</p>
     <ul>
-      <li>オウバイは早春に黄色い花を咲かせる、1月23日の誕生花</li>
-      <li>花言葉は「高貴」、気品ある佇まいを象徴する花とされる</li>
-      <li>しなやかな枝ぶりと鮮やかな黄色が魅力</li>
-      <li>丈夫で育てやすい</li>
+      <li>オウバイはモクセイ科の落葉低木で、早春に黄色い花を咲かせ「迎春花」とも呼ばれる</li>
+      <li>名前に「梅」の字が入るが、ウメ（バラ科）とは異なる科の植物</li>
+      <li>花言葉は「高貴」。寒さの中で凛と咲き、新年を迎える花として親しまれてきたことに由来するといわれている</li>
+      <li>誇示するのではなく、静かに役割を果たす姿勢にこそ品格が宿る</li>
     </ul>
   </section>
 
@@ -225,7 +231,7 @@ ob_start();
   $prevUrl   = '/articles/calendar/birthflower/jan/0122/';
   $prevTitle = '1月22日の誕生花（リカステ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0124/';
-  $nextTitle = '1月24日の誕生花（ヒヤシンス）とは';
+  $nextTitle = '1月24日の誕生花（ヒヤシンス（紫））とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';
