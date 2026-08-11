@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0211/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月11日の誕生花アフリカンキンセンカの花言葉・特徴・魅力をわかりやすく解説。「元気」を象徴する初夏に咲く花の意味を紹介します。">
+  <meta name="description" content="2月11日の誕生花アフリカンキンセンカの花言葉・特徴・魅力をわかりやすく解説。「元気」を象徴する、鮮やかな色合いの花の意味を紹介します。">
   <title>2月11日の誕生花はアフリカンキンセンカ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アフリカンキンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、鮮やかな色合いの花を咲かせます。日差しを受けて生き生きと咲く一年草です。"}},
-      {"@type":"Question","name":"アフリカンキンセンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「元気」という花言葉は、太陽に向かって鮮やかに咲くその明るい花姿に由来するとされています。"}},
-      {"@type":"Question","name":"アフリカンキンセンカはどんな花壇に向いていますか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな色合いが特徴で、明るい印象の花壇や寄せ植えのアクセントとして人気があります。"}}
+      {"@type":"Question","name":"アフリカンキンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に見頃を迎え、鮮やかな色合いの花を咲かせます。明るい印象が特徴のキク科の一年草です。"}},
+      {"@type":"Question","name":"アフリカンキンセンカの花言葉「元気」の由来は？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな色合いが、見る人の気分を明るくすることに由来するといわれています。色そのものが持つ前向きな力を象徴した花言葉です。"}},
+      {"@type":"Question","name":"アフリカンキンセンカはどんな場所で育てられますか？","acceptedAnswer":{"@type":"Answer","text":"日当たりの良い場所を好み、丈夫で育てやすい一年草として知られています。花壇や鉢植えでも楽しめます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 11 · 誕生花</span>
     <h1>2月11日の誕生花はアフリカンキンセンカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アフリカンキンセンカは、キク科の一年草で、初夏に鮮やかな色合いの花を咲かせる2月11日の誕生花です。花言葉は「元気」。明るい印象の花です。</p>
+    <p class="art-lead">鮮やかな色合いで、見る人の気分をぱっと明るくするアフリカンキンセンカ。2月11日の誕生花に選ばれたこの花は、まっすぐに元気を届けてくれる存在です。今日はその明るいエネルギーに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アフリカンキンセンカとは</a></li>
-      <li><a href="#meaning">アフリカンキンセンカが象徴する意味</a></li>
-      <li><a href="#charm">アフリカンキンセンカの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">鮮やかな色があふれる、アフリカンキンセンカの表情</a></li>
+      <li><a href="#story">2月11日、アフリカンキンセンカの色が届ける元気</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アフリカンキンセンカから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アフリカンキンセンカとは</h2>
-    <p>アフリカンキンセンカは、キク科の一年草で、2月11日の誕生花として知られています。初夏になると、オレンジや黄色を中心とした鮮やかな色合いの花を次々と咲かせ、花壇を明るく彩ります。</p>
-  </section>
+    <h2>鮮やかな色があふれる、アフリカンキンセンカの表情</h2>
+    <p>アフリカンキンセンカは、キク科の一年草です。初夏になると、鮮やかな色合いの花を咲かせ、見る人に明るい印象を与えます。派手さの中にも親しみやすさがあり、庭先や花壇を賑やかに彩る花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アフリカンキンセンカが象徴する意味</h2>
-    <p>アフリカンキンセンカの花言葉は「元気」です。太陽の光を受けて鮮やかに咲くその明るい花姿が、見る人に活力を与える様子に由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アフリカンキンセンカの魅力</h2>
-    <p>アフリカンキンセンカの魅力は、日差しの下で一段と映える鮮やかな花色と、次々と花を咲かせる旺盛な生命力にあります。花壇や寄せ植えのアクセントとして、明るい雰囲気を作り出してくれます。2月11日生まれの方はもちろん、元気を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アフリカンキンセンカは日当たりの良い場所を好み、水切れに注意しながら育てるのがおすすめです。こまめに花がらを摘むことで、長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月11日生まれの方はもちろん、元気を届けたい贈り物としてもアフリカンキンセンカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に、鮮やかな色合いの花を咲かせます。日差しを受けて生き生きと咲く一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「元気」という花言葉は、太陽に向かって鮮やかに咲くその明るい花姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカはどんな花壇に向いていますか？</div>
-        <div class="faq-a">鮮やかな色合いが特徴で、明るい印象の花壇や寄せ植えのアクセントとして人気があります。</div>
+        <div class="faq-a">初夏に見頃を迎え、鮮やかな色合いの花を咲かせます。明るい印象が特徴のキク科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月11日、アフリカンキンセンカの色が届ける元気</h2>
+    <p>アフリカンキンセンカの魅力は、なんといってもその色合いの鮮やかさにあります。曇った気分の日でも、この花の色を目にすると、心の中に小さな明かりが灯るような感覚になるかもしれません。色そのものが持つ力によって、見る人の気分を自然と前向きにしてくれる、そんな花です。無理に元気を出そうとするのではなく、ただそこにある色を眺めているだけで、少しずつ気持ちが明るくなっていく。そうした静かな作用を持つ花だといえるでしょう。この鮮やかな色合いが見る人にもたらす前向きな印象から、アフリカンキンセンカには「元気」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカの花言葉「元気」の由来は？</div>
+        <div class="faq-a">鮮やかな色合いが、見る人の気分を明るくすることに由来するといわれています。色そのものが持つ前向きな力を象徴した花言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>気分が晴れない日もあります。そんな日は、鮮やかな色を一つ視界に入れてみてください。それだけで、心のどこかがふっと軽くなることがあります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アフリカンキンセンカから始める小さな体験</h2>
+    <p>鮮やかな色で元気を届けるアフリカンキンセンカにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな色の花を部屋に飾ってみる</li>
+      <li>今日一日を元気に過ごすための目標を一つ決めてみる</li>
+      <li>明るい色の服を選んでみる</li>
+      <li>気分が上がる音楽を聴いてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アフリカンキンセンカはどんな場所で育てられますか？</div>
+        <div class="faq-a">日当たりの良い場所を好み、丈夫で育てやすい一年草として知られています。花壇や鉢植えでも楽しめます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">鮮やかな色に背中を押された今日。せっかくなら、六曜の巡りも一緒にチェックしてみませんか。開運カレンダーでは、その日の六曜や吉日も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月11日、鮮やかな色で明るさを届けるアフリカンキンセンカは、見るだけで元気をくれる花です。</p>
     <ul>
-      <li>アフリカンキンセンカは初夏に鮮やかな色合いの花を咲かせる、2月11日の誕生花</li>
-      <li>花言葉は「元気」、明るい活力を象徴する花とされる</li>
-      <li>日差しの下で映える花色と旺盛な生命力が魅力</li>
-      <li>日当たりの良い場所で水切れに注意し、こまめな花がら摘みで育てたい</li>
+      <li>アフリカンキンセンカはキク科の一年草で、初夏に鮮やかな色合いの花を咲かせる</li>
+      <li>色そのものが持つ力で、見る人の気分を明るくする花とされる</li>
+      <li>花言葉は「元気」。前向きな印象を象徴するとされる</li>
+      <li>日当たりの良い場所を好み、丈夫で育てやすい花</li>
     </ul>
   </section>
 

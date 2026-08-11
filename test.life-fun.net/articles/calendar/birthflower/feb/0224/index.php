@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0224/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月24日の誕生花ニッコウキスゲの花言葉・特徴・魅力をわかりやすく解説。「勤勉」を象徴する夏に咲く花の意味を紹介します。">
+  <meta name="description" content="2月24日の誕生花ニッコウキスゲの花言葉・特徴・魅力をわかりやすく解説。「勤勉」を象徴する、朝に咲き夕方にしぼむ一日花の意味を紹介します。">
   <title>2月24日の誕生花はニッコウキスゲ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ニッコウキスゲはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に、高原で橙黄色の花を咲かせます。朝に咲いて夕方にはしぼむ一日花です。"}},
-      {"@type":"Question","name":"ニッコウキスゲの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「勤勉」という花言葉は、一日で花を終えながらも次々と新しい花を咲かせ続ける健気な姿に由来するとされています。"}},
-      {"@type":"Question","name":"ニッコウキスゲはなぜ一日花なのですか？","acceptedAnswer":{"@type":"Answer","text":"朝に咲いて夕方にはしぼむ性質を持つ花で、次々と新しい花を咲かせることで長い開花期間を楽しめます。"}}
+      {"@type":"Question","name":"ニッコウキスゲはいつ頃、どこで咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に高原で見頃を迎えます。橙黄色の花を群れて咲かせ、涼やかな高原の風景を彩ります。"}},
+      {"@type":"Question","name":"ニッコウキスゲの花言葉「勤勉」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一日花でありながら、毎日絶えることなく次々と花を咲かせ続ける性質に由来するといわれています。地道に日々を積み重ねる姿を象徴する言葉とされます。"}},
+      {"@type":"Question","name":"一日花は寂しい花なのでしょうか？","acceptedAnswer":{"@type":"Answer","text":"そう感じられることもありますが、群れ全体では毎日新しい花が咲き続けます。一日ごとに更新される姿は、むしろ前向きな力強さの表れともいえるでしょう。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 24 · 誕生花</span>
     <h1>2月24日の誕生花はニッコウキスゲ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ニッコウキスゲは、ススキノキ科の多年草で、夏に高原で橙黄色の花を咲かせる2月24日の誕生花です。花言葉は「勤勉」。清々しい一日花です。</p>
+    <p class="art-lead">朝に咲き、夕方にはしぼんでしまう、一日だけの花ニッコウキスゲ。2月24日の誕生花に選ばれたこの花は、儚さの中に地道な勤勉さを宿しています。今日はその一日限りの輝きに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ニッコウキスゲ</dd>
     <dt>花言葉</dt><dd>勤勉</dd>
     <dt>科名</dt><dd>ススキノキ科</dd>
-    <dt>見頃</dt><dd>夏</dd>
+    <dt>見頃</dt><dd>夏（高原）</dd>
   </dl>
 
   <?php
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ニッコウキスゲとは</a></li>
-      <li><a href="#meaning">ニッコウキスゲが象徴する意味</a></li>
-      <li><a href="#charm">ニッコウキスゲの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">夏の高原に咲く、ニッコウキスゲの橙黄色</a></li>
+      <li><a href="#story">2月24日、ニッコウキスゲが教える「一日だけ」という勤勉さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ニッコウキスゲから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ニッコウキスゲとは</h2>
-    <p>ニッコウキスゲは、ススキノキ科の多年草で、2月24日の誕生花として知られています。夏になると、高原一面に橙黄色の花を咲かせ、朝に開いて夕方にはしぼむという一日花の性質を持っています。</p>
-  </section>
+    <h2>夏の高原に咲く、ニッコウキスゲの橙黄色</h2>
+    <p>ニッコウキスゲは、ススキノキ科の多年草です。夏になると高原で、鮮やかな橙黄色の花を咲かせます。ラッパのような形の花が群れて咲く様子は、高原の風景に明るいアクセントを添えてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ニッコウキスゲが象徴する意味</h2>
-    <p>ニッコウキスゲの花言葉は「勤勉」です。一日で花を終えながらも、翌日には次の花を咲かせ、それを繰り返しながら群落全体で長く咲き続けるその健気な姿に由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ニッコウキスゲの魅力</h2>
-    <p>ニッコウキスゲの魅力は、高原一帯を橙黄色に染める群生の美しさと、一日花ならではの儚さにあります。夏の高原で群れ咲く様子は、多くの人が訪れる季節の風物詩となっています。2月24日生まれの方はもちろん、日々の努力を称えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ニッコウキスゲは、日当たりと水はけの良い涼しい環境を好み、高原に近い気候であれば庭でも育てやすい多年草です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月24日生まれの方はもちろん、日々の努力や勤勉さを称えたい贈り物としてもニッコウキスゲは意味のある花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニッコウキスゲはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に、高原で橙黄色の花を咲かせます。朝に咲いて夕方にはしぼむ一日花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニッコウキスゲの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「勤勉」という花言葉は、一日で花を終えながらも次々と新しい花を咲かせ続ける健気な姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニッコウキスゲはなぜ一日花なのですか？</div>
-        <div class="faq-a">朝に咲いて夕方にはしぼむ性質を持つ花で、次々と新しい花を咲かせることで長い開花期間を楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ニッコウキスゲはいつ頃、どこで咲きますか？</div>
+        <div class="faq-a">夏に高原で見頃を迎えます。橙黄色の花を群れて咲かせ、涼やかな高原の風景を彩ります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月24日、ニッコウキスゲが教える「一日だけ」という勤勉さ</h2>
+    <p>ニッコウキスゲの花には、ほかの多くの花にはない特徴があります。それは、一輪の花の命がわずか一日しかないということ。朝に花を開き、夕方には静かにしぼんでしまいます。けれど群れ全体で見れば、花が絶えることはありません。今日しぼんだ花の隣で、また新しい蕾が明日の朝を待っているからです。一日ごとに花を咲かせては役目を終え、また次の花へとバトンを渡していく。その姿は、決して派手ではありませんが、地道に一日一日を積み重ねていく力強さそのものです。この、一日ごとに欠かさず花を次々と更新していく性質から、ニッコウキスゲには「勤勉」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ニッコウキスゲの花言葉「勤勉」の由来は？</div>
+        <div class="faq-a">一日花でありながら、毎日絶えることなく次々と花を咲かせ続ける性質に由来するといわれています。地道に日々を積み重ねる姿を象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今日という一日は、今日にしか咲かせられないものです。明日に持ち越さず、今できることから始めてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ニッコウキスゲから始める小さな体験</h2>
+    <p>朝に咲き夕方にしぼむニッコウキスゲにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>今日一日でやり切りたいことを一つ決めてみる</li>
+      <li>朝の時間を少し丁寧に過ごしてみる</li>
+      <li>橙黄色のものを身の回りに取り入れてみる</li>
+      <li>一日花のように、今この瞬間に集中してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">一日花は寂しい花なのでしょうか？</div>
+        <div class="faq-a">そう感じられることもありますが、群れ全体では毎日新しい花が咲き続けます。一日ごとに更新される姿は、むしろ前向きな力強さの表れともいえるでしょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">一日花のように今この瞬間を大切にできた今日は、今夜の月の姿もそっと眺めてみませんか。開運カレンダーでは、その日の月齢や吉方位も、あわせて見ることができます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月24日、朝に咲き夕方にしぼむニッコウキスゲは、今日という日を大切にする姿勢を教えてくれる花です。</p>
     <ul>
-      <li>ニッコウキスゲは夏の高原で橙黄色の花を咲かせる、2月24日の誕生花</li>
-      <li>花言葉は「勤勉」、一日花を咲かせ続ける健気な姿を象徴する</li>
-      <li>高原一帯を彩る群生の美しさが魅力</li>
-      <li>日当たりと水はけの良い涼しい環境で育てたい</li>
+      <li>ニッコウキスゲはススキノキ科の多年草で、夏に高原で橙黄色の花を咲かせる</li>
+      <li>一輪の命は一日だけだが、群れ全体では毎日新しい花が咲き続ける</li>
+      <li>花言葉は「勤勉」。地道に日々を積み重ねる姿を象徴するとされる</li>
+      <li>一日花という特徴は寂しさではなく、前向きな力強さの表れともいえる</li>
     </ul>
   </section>
 

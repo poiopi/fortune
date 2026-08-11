@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0223/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月23日の誕生花ストック（一重）の花言葉・特徴・魅力をわかりやすく解説。「不変の愛」を象徴する春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月23日の誕生花ストック（一重）の花言葉・特徴・魅力をわかりやすく解説。「不変の愛」を象徴する、甘い香りを穂状に咲かせる花の意味を紹介します。">
   <title>2月23日の誕生花はストック（一重）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ストック（一重）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、香りのよい花を穂状に咲かせます。花壇や切り花として人気の一年草です。"}},
-      {"@type":"Question","name":"ストック（一重）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「不変の愛」という花言葉は、茎にびっしりと連なって咲く花が途切れることのない想いを思わせることに由来するとされています。"}},
-      {"@type":"Question","name":"ストックの一重と八重はどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"一重は花びらが1枚ずつのシンプルな花姿、八重は花びらが幾重にも重なるボリュームのある花姿が特徴です。"}}
+      {"@type":"Question","name":"ストック（一重）はいつ頃香りを楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて見頃を迎え、甘い香りを漂わせます。穂状に連なって咲くため、香りも長く楽しめるとされています。"}},
+      {"@type":"Question","name":"ストック（一重）の花言葉「不変の愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"途切れることなく連なって咲き、甘い香りを絶やさない性質に由来するといわれています。変わらず寄り添い続ける気持ちを象徴する言葉とされます。"}},
+      {"@type":"Question","name":"ストックには一重咲き以外の種類もありますか？","acceptedAnswer":{"@type":"Answer","text":"はい、八重咲きなど咲き方の異なる品種もあるとされています。それぞれに個別の花言葉が贈られているともいわれ、選ぶ際の楽しみのひとつになっています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 23 · 誕生花</span>
     <h1>2月23日の誕生花はストック（一重）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ストック（一重）は、アブラナ科の一年草で、春に香りのよい花を穂状に咲かせる2月23日の誕生花です。花言葉は「不変の愛」。シンプルで清楚な花姿が魅力です。</p>
+    <p class="art-lead">穂のように連なり、甘い香りを漂わせるストック（一重）。2月23日の誕生花に選ばれたこの花は、途切れることのない香りの奥に変わらない愛を宿しています。今日はその優しい香りにそっと包まれてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ストック（一重）</dd>
     <dt>花言葉</dt><dd>不変の愛</dd>
     <dt>科名</dt><dd>アブラナ科</dd>
-    <dt>見頃</dt><dd>春</dd>
+    <dt>見頃</dt><dd>冬から春</dd>
   </dl>
 
   <?php
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ストック（一重）とは</a></li>
-      <li><a href="#meaning">ストック（一重）が象徴する意味</a></li>
-      <li><a href="#charm">ストック（一重）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">冬から春、甘く香りを漂わせるストック（一重）</a></li>
+      <li><a href="#story">2月23日、ストック（一重）の香りが結ぶ、変わらない気持ち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ストック（一重）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ストック（一重）とは</h2>
-    <p>ストック（一重）は、アブラナ科の一年草で、2月23日の誕生花として知られています。春になると、茎に沿って香りのよい花を穂状にたくさん咲かせ、花びらが1枚ずつのシンプルで清楚な花姿が特徴です。</p>
-  </section>
+    <h2>冬から春、甘く香りを漂わせるストック（一重）</h2>
+    <p>ストック（一重）は、アブラナ科の一年草です。冬から春にかけて、甘く優しい香りの花を穂のようにまとめて咲かせます。一つ一つの花が茎にすき間なく連なって咲く姿は、華やかさと同時に温かみのある印象を与えてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ストック（一重）が象徴する意味</h2>
-    <p>ストック（一重）の花言葉は「不変の愛」です。茎にびっしりと連なって咲き続ける花の姿が、途切れることのない変わらぬ愛情を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ストック（一重）の魅力</h2>
-    <p>ストック（一重）の魅力は、シンプルながらも上品な花姿と、あたりに広がる甘く優しい香りにあります。花束やアレンジメントにもよく使われ、香りとともに春らしい気分を届けてくれます。2月23日生まれの方はもちろん、変わらない愛情を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ストック（一重）は日当たりの良い場所を好み、水切れに注意しながら育てるのがおすすめです。冷涼な気候を好むため、暑さには注意が必要です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月23日生まれの方はもちろん、変わらない愛情を伝えたい贈り物としてもストック（一重）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストック（一重）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に、香りのよい花を穂状に咲かせます。花壇や切り花として人気の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストック（一重）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「不変の愛」という花言葉は、茎にびっしりと連なって咲く花が途切れることのない想いを思わせることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストックの一重と八重はどう違いますか？</div>
-        <div class="faq-a">一重は花びらが1枚ずつのシンプルな花姿、八重は花びらが幾重にも重なるボリュームのある花姿が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストック（一重）はいつ頃香りを楽しめますか？</div>
+        <div class="faq-a">冬から春にかけて見頃を迎え、甘い香りを漂わせます。穂状に連なって咲くため、香りも長く楽しめるとされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月23日、ストック（一重）の香りが結ぶ、変わらない気持ち</h2>
+    <p>ストック（一重）に近づくと、まず届くのは甘く優しい香りです。花そのものの姿を見る前に、香りだけでその存在に気づかされることも少なくありません。しかもその香りは、一輪だけでなく、茎に途切れることなく連なって咲く花々からいっせいに漂ってきます。一つ一つの花が寄り添うように並び、香りも途切れることなく続いていく。その様子はまるで、変わらずそばで香り続けてくれる存在のようです。この、途切れることなく香り続ける穂状の姿から、ストック（一重）には「不変の愛」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ストック（一重）の花言葉「不変の愛」の由来は？</div>
+        <div class="faq-a">途切れることなく連なって咲き、甘い香りを絶やさない性質に由来するといわれています。変わらず寄り添い続ける気持ちを象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>甘い香りに気づいたとき、ふと誰かの顔が浮かぶことがあります。今日はその人に、変わらない気持ちをそっと伝えてみるのもいいかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ストック（一重）から始める小さな体験</h2>
+    <p>甘い香りを途切れず漂わせるストック（一重）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>ストックの香りを確かめてみる</li>
+      <li>変わらずそばにいてくれる人に感謝を伝えてみる</li>
+      <li>穂状に咲く花を飾ってみる</li>
+      <li>温かみのある香りのアイテムを試してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ストックには一重咲き以外の種類もありますか？</div>
+        <div class="faq-a">はい、八重咲きなど咲き方の異なる品種もあるとされています。それぞれに個別の花言葉が贈られているともいわれ、選ぶ際の楽しみのひとつになっています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">変わらない温かさに包まれた今日は、六曜が示す運気の流れも確かめてみませんか。開運カレンダーでは、その日の六曜や月齢も、まとめて確かめられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月23日、途切れることなく甘く香るストック（一重）は、変わらない気持ちの尊さを教えてくれる花です。</p>
     <ul>
-      <li>ストック（一重）は春に香りのよい花を穂状に咲かせる、2月23日の誕生花</li>
-      <li>花言葉は「不変の愛」、途切れない愛情を象徴する</li>
-      <li>シンプルで上品な花姿と甘い香りが魅力</li>
-      <li>日当たりの良い場所で水切れに注意し、冷涼な気候を好む</li>
+      <li>ストック（一重）はアブラナ科の一年草で、冬から春に甘い香りの花を穂状に咲かせる</li>
+      <li>一つ一つの花が途切れず連なって咲き、香りも絶えることなく続く</li>
+      <li>花言葉は「不変の愛」。変わらず寄り添う気持ちを象徴するとされる</li>
+      <li>八重咲きなど咲き方の異なる品種もあり、それぞれに花言葉があるとされる</li>
     </ul>
   </section>
 

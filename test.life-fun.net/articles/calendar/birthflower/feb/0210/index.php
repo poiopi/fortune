@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0210/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月10日の誕生花バラ（黄）の花言葉・特徴・魅力をわかりやすく解説。「ジェラシー」を象徴する華やかな花木の意味を紹介します。">
+  <meta name="description" content="2月10日の誕生花バラ（黄）の花言葉・特徴・魅力をわかりやすく解説。「ジェラシー」を象徴する、幾重にも花びらが重なる黄色いバラの意味を紹介します。">
   <title>2月10日の誕生花はバラ（黄）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バラ（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"品種によって開花時期は幅がありますが、明るく元気な黄色い花を咲かせる落葉低木です。"}},
-      {"@type":"Question","name":"バラ（黄）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ジェラシー」という花言葉は、西洋で黄色が嫉妬や不実を連想させる色とされてきたことに由来すると言われています。"}},
-      {"@type":"Question","name":"黄色いバラの花言葉はなぜジェラシーなのですか？","acceptedAnswer":{"@type":"Answer","text":"西洋では嫉妬や別れを連想させる色とされてきたことに由来すると言われていますが、現在では「友情」や「平和」として贈られることも増えています。"}}
+      {"@type":"Question","name":"バラ（黄）はどんな特徴を持つ花ですか？","acceptedAnswer":{"@type":"Answer","text":"バラ科の落葉低木で、幾重にも重なる花びらと芳香が特徴です。黄色い花は特に、明るく華やかな印象を与えます。"}},
+      {"@type":"Question","name":"バラ（黄）の花言葉「ジェラシー」の由来は？","acceptedAnswer":{"@type":"Answer","text":"明るい黄色の印象とは裏腹に、心の中の複雑な感情を表す言葉として贈られてきたといわれています。ネガティブな意味だけでなく、心の動きへの気づきを表すこともあります。"}},
+      {"@type":"Question","name":"黄色いバラは贈り物として避けたほうがいいですか？","acceptedAnswer":{"@type":"Answer","text":"花言葉の印象から避けられることもありますが、由来には諸説あり断定的なものではありません。相手の好みや贈る場面に合わせて選ぶとよいでしょう。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 10 · 誕生花</span>
     <h1>2月10日の誕生花はバラ（黄）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バラ（黄）は、バラ科の落葉低木で、明るく元気な黄色い花を咲かせる2月10日の誕生花です。花言葉は「ジェラシー」。存在感のある華やかな花です。</p>
+    <p class="art-lead">幾重にも重なる花びらを、鮮やかな黄色に染めて咲くバラ（黄）。2月10日の誕生花に選ばれたこの花は、明るさの裏に少し複雑な花言葉を持っています。今日はその輝く色に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バラ（黄）とは</a></li>
-      <li><a href="#meaning">バラ（黄）が象徴する意味</a></li>
-      <li><a href="#charm">バラ（黄）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">幾重にも花びらが重なる、バラ（黄）の輝き</a></li>
+      <li><a href="#story">2月10日、バラ（黄）の黄色が映す心の揺れ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バラ（黄）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バラ（黄）とは</h2>
-    <p>バラ（黄）は、バラ科の落葉低木で、2月10日の誕生花として知られています。数ある花の中でも高い人気を誇るバラの仲間で、明るく元気な黄色い花は見る人の気持ちを晴れやかにしてくれます。</p>
-  </section>
+    <h2>幾重にも花びらが重なる、バラ（黄）の輝き</h2>
+    <p>バラ（黄）は、バラ科の落葉低木で、明るく元気な黄色い花を咲かせます。バラは幾重にも重なる花びらから芳香を漂わせ、華やかさと気品を兼ね備えた花を咲かせるとされ、その中でも黄色い花は、ひときわ目を引く明るさを持っています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バラ（黄）が象徴する意味</h2>
-    <p>バラ（黄）の花言葉は「ジェラシー」です。西洋では黄色いバラが嫉妬や不実を連想させる色として扱われてきた歴史に由来すると言われていますが、近年では「友情」や「平和」を表す花としても贈られています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バラ（黄）の魅力</h2>
-    <p>バラ（黄）の魅力は、なんといってもその華やかさと存在感です。明るい黄色は花束や庭のアクセントとしても人気で、贈られた人に元気を届けてくれます。2月10日生まれの方はもちろん、友情や励ましの気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バラ（黄）は日当たりと風通しの良い場所を好み、水はけの良い土で育てるのがおすすめです。定期的な剪定を行うことで、毎年美しい花を咲かせてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月10日生まれの方はもちろん、友情や励ましの気持ちを届けたい贈り物としてもバラ（黄）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（黄）はいつ頃咲きますか？</div>
-        <div class="faq-a">品種によって開花時期は幅がありますが、明るく元気な黄色い花を咲かせる落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（黄）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「ジェラシー」という花言葉は、西洋で黄色が嫉妬や不実を連想させる色とされてきたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">黄色いバラの花言葉はなぜジェラシーなのですか？</div>
-        <div class="faq-a">西洋では嫉妬や別れを連想させる色とされてきたことに由来すると言われていますが、現在では「友情」や「平和」として贈られることも増えています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（黄）はどんな特徴を持つ花ですか？</div>
+        <div class="faq-a">バラ科の落葉低木で、幾重にも重なる花びらと芳香が特徴です。黄色い花は特に、明るく華やかな印象を与えます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月10日、バラ（黄）の黄色が映す心の揺れ</h2>
+    <p>太陽の光をそのまま集めたような、鮮やかな黄色。バラ（黄）のその色合いは、見る人の気分を明るくする前向きな力を持っています。けれど不思議なことに、この花に贈られた花言葉は「ジェラシー」。明るい色の花に、なぜ心の揺れを表す言葉が選ばれたのでしょうか。幾重にも重なり合う花びらの奥に、簡単には見せない複雑な思いが隠れているようにも映ります。輝くような黄色の花びらを一枚ずつ数えてみると、華やかさの奥にある繊細さに気づかされるかもしれません。この明るさと複雑さが同居する印象から、バラ（黄）には「ジェラシー」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（黄）の花言葉「ジェラシー」の由来は？</div>
+        <div class="faq-a">明るい黄色の印象とは裏腹に、心の中の複雑な感情を表す言葉として贈られてきたといわれています。ネガティブな意味だけでなく、心の動きへの気づきを表すこともあります。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心の奥にちくりとした感情が芽生えたら、その感情の正体をそっと見つめてみましょう。誰かを大切に思う気持ちの裏返しであることも、案外多いものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バラ（黄）から始める小さな体験</h2>
+    <p>幾重にも花びらを重ねて咲くバラ（黄）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>黄色いバラを見つけたら花びらの重なりを数えてみる</li>
+      <li>心の中にあるジェラシーの正体を紙に書き出してみる</li>
+      <li>明るい黄色のものを身の回りに取り入れてみる</li>
+      <li>元気が出る香りのアイテムを試してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">黄色いバラは贈り物として避けたほうがいいですか？</div>
+        <div class="faq-a">花言葉の印象から避けられることもありますが、由来には諸説あり断定的なものではありません。相手の好みや贈る場面に合わせて選ぶとよいでしょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心の奥の感情にそっと気づけた今日は、足を運ぶ方角にも意味があるかもしれません。開運カレンダーで、今日の吉方位を確認してみてはいかがでしょうか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月10日、幾重にも花びらを重ねて咲くバラ（黄）は、明るさの奥にある心の機微を映す花です。</p>
     <ul>
-      <li>バラ（黄）は明るく元気な黄色い花を咲かせる、2月10日の誕生花</li>
-      <li>花言葉は「ジェラシー」だが、近年は「友情」を表す花としても人気</li>
-      <li>華やかで存在感のある花姿が魅力</li>
-      <li>日当たりと風通しの良い場所で、定期的な剪定をして育てたい</li>
+      <li>バラ（黄）はバラ科の落葉低木で、幾重にも重なる花びらの黄色い花を咲かせる</li>
+      <li>芳香と気品を兼ね備えたバラの中でも、黄色は明るく前向きな印象を与える</li>
+      <li>花言葉は「ジェラシー」。心の中の複雑な感情への気づきを象徴するとされる</li>
+      <li>贈る際は花言葉の由来が一様ではないことを踏まえ、相手や場面に合わせて選びたい</li>
     </ul>
   </section>
 

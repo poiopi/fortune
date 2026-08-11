@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0229/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月29日の誕生花パンジーの花言葉・特徴・魅力をわかりやすく解説。「もの思い」を象徴する冬から春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月29日の誕生花パンジーの花言葉・特徴・魅力をわかりやすく解説。4年に一度だけ巡ってくる特別な日と、「もの思い」を象徴する花の意味を紹介します。">
   <title>2月29日の誕生花はパンジー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"パンジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、色とりどりの花を長期間咲かせます。花壇の定番として親しまれる一年草です。"}},
-      {"@type":"Question","name":"パンジーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「もの思い」という花言葉は、花の中央にある模様が人の顔がうつむいて物思いにふけっているように見えることに由来するとされています。"}},
-      {"@type":"Question","name":"パンジーとビオラはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらもスミレ科の仲間ですが、パンジーはビオラより花が大きく、色や模様のバリエーションが豊富です。"}}
+      {"@type":"Question","name":"パンジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、長い期間途切れず色とりどりの花を咲かせ続けます。"}},
+      {"@type":"Question","name":"2月29日はうるう年にしかありませんが、誕生花はありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。2月29日には誕生花としてパンジーが定められており、暦の上では4年に一度だけ巡ってくる特別な日として親しまれています。"}},
+      {"@type":"Question","name":"パンジーの花言葉「もの思い」の由来は？","acceptedAnswer":{"@type":"Answer","text":"うつむくように咲く花の姿が、何かを静かに考え込んでいるように見えることに由来するといわれています。"}}
     ]
   }
   </script>
@@ -132,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 29 · 誕生花</span>
     <h1>2月29日の誕生花はパンジー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">パンジーは、スミレ科の一年草で、冬から春に色とりどりの花を長期間咲かせる2月29日の誕生花です。花言葉は「もの思い」。親しみやすく明るい印象の花です。</p>
+    <p class="art-lead">色とりどりの花を、冬から春へと途切れず咲かせ続けるパンジー。2月29日の誕生花に選ばれたこの花は、暦の上で4年に一度だけ巡ってくる特別な日を、静かに彩ります。今日はその物思わしげな表情に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>パンジー</dd>
     <dt>花言葉</dt><dd>もの思い</dd>
     <dt>科名</dt><dd>スミレ科</dd>
-    <dt>見頃</dt><dd>冬から春</dd>
+    <dt>見頃</dt><dd>冬〜春</dd>
   </dl>
 
   <?php
@@ -153,66 +160,75 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">パンジーとは</a></li>
-      <li><a href="#meaning">パンジーが象徴する意味</a></li>
-      <li><a href="#charm">パンジーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">冬から春へ、途切れず咲き続けるパンジーの多彩な表情</a></li>
+      <li><a href="#story">4年に一度だけ巡ってくる日と、パンジーの「もの思い」</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、パンジーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>パンジーとは</h2>
-    <p>パンジーは、スミレ科の一年草で、2月29日の誕生花として知られています。冬から春にかけての長い期間、赤や黄、紫など色とりどりの花を咲かせ続け、花壇の定番として親しまれています。</p>
-  </section>
+    <h2>冬から春へ、途切れず咲き続けるパンジーの多彩な表情</h2>
+    <p>パンジーは、スミレ科の一年草です。冬から春にかけて、赤・黄・紫など色とりどりの花を、途切れることなく長く咲かせ続けます。一つひとつの花はうつむくように控えめに咲きますが、株全体としては花壇や寄せ植えを賑やかに彩る、親しみやすい存在です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>パンジーが象徴する意味</h2>
-    <p>パンジーの花言葉は「もの思い」です。花の中央にある模様が、人の顔がうつむいて物思いにふけっているように見えることに由来するとされています。名前もフランス語で「考え」を意味する言葉から来ているといわれます。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>パンジーの魅力</h2>
-    <p>パンジーの魅力は、豊富なカラーバリエーションと、冬から春の長い期間にわたって花を楽しめる丈夫さにあります。花壇や寄せ植えの主役として、多くの庭を明るく彩ってくれる存在です。2月29日生まれの方はもちろん、じっくりと想いを巡らせる時間を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>パンジーは日当たりの良い場所を好み、水切れに注意しながら育てるのがおすすめです。こまめに花がらを摘むことで、長い期間花を咲かせ続けてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月29日生まれの方はもちろん、じっくりと物思いにふける穏やかな時間を届けたい贈り物としてもパンジーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">パンジーはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、色とりどりの花を長期間咲かせます。花壇の定番として親しまれる一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パンジーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「もの思い」という花言葉は、花の中央にある模様が人の顔がうつむいて物思いにふけっているように見えることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パンジーとビオラはどう違いますか？</div>
-        <div class="faq-a">どちらもスミレ科の仲間ですが、パンジーはビオラより花が大きく、色や模様のバリエーションが豊富です。</div>
+        <div class="faq-a">冬から春にかけて、長い期間途切れず色とりどりの花を咲かせ続けます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>4年に一度だけ巡ってくる日と、パンジーの「もの思い」</h2>
+    <p>2月29日は、暦の上で4年に一度だけ巡ってくる特別な日です。多くの人にとって1年に一度が当たり前の誕生日が、この日に生まれた人にとっては、ずっと長い周期でしか本当の意味では巡ってこない――そんな独特の時間の流れを持つ日でもあります。</p>
+    <p>パンジーの花言葉は「もの思い」。うつむくように咲くその姿が、何かをじっと考え込んでいるように見えることに由来するといわれています。滅多に巡ってこない日だからこそ、その日について、あるいはこれまでの4年間について、ふと考えを巡らせたくなる――そんな心の動きと、パンジーの「もの思い」という花言葉は、どこか静かに重なり合っているように思えます。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">2月29日はうるう年にしかありませんが、誕生花はありますか？</div>
+        <div class="faq-a">はい。2月29日には誕生花としてパンジーが定められており、暦の上では4年に一度だけ巡ってくる特別な日として親しまれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>4年に一度という長い巡り合わせは、それだけこの一日を特別なものにしてくれます。今日はゆっくりと、この一日だけの時間に想いを巡らせてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、パンジーから始める小さな体験</h2>
+    <p>色とりどりに咲くパンジーにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>色とりどりの花を、写真でじっくり眺めてみる</li>
+      <li>4年に一度という特別な巡り合わせについて、少し考えてみる</li>
+      <li>好きな色を一つ、身の回りに取り入れてみる</li>
+      <li>これまでの4年間を、静かに振り返ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">パンジーの花言葉「もの思い」の由来は？</div>
+        <div class="faq-a">うつむくように咲く花の姿が、何かを静かに考え込んでいるように見えることに由来するといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">4年に一度のこの日だからこそ、今日の運勢や吉方位もあわせて確かめてみませんか。開運カレンダーでは、その日の六曜やラッキーカラーも毎日更新でお届けしています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4年に一度だけ巡ってくるこの日に、色とりどりの花を咲かせ続けるパンジーは、ゆっくりと物思いにふける時間の尊さを教えてくれる花です。</p>
     <ul>
-      <li>パンジーは冬から春に色とりどりの花を咲かせる、2月29日の誕生花</li>
-      <li>花言葉は「もの思い」、花の模様が人の顔に見えることに由来する</li>
-      <li>豊富なカラーバリエーションと長い花期が魅力</li>
-      <li>日当たりの良い場所で水切れに注意し、花がら摘みで育てたい</li>
+      <li>パンジーはスミレ科の一年草で、冬から春に色とりどりの花を咲かせ続ける</li>
+      <li>2月29日は暦の上で4年に一度だけ巡ってくる特別な日</li>
+      <li>花言葉は「もの思い」。うつむいて咲く姿に由来するといわれる</li>
+      <li>滅多に巡ってこない日だからこそ、静かに考えを巡らせる時間にふさわしい</li>
     </ul>
   </section>
 

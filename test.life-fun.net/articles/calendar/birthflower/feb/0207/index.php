@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0207/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月7日の誕生花スノードロップの花言葉・特徴・魅力をわかりやすく解説。「初恋のため息」を象徴する早春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月7日の誕生花スノードロップの花言葉・特徴・魅力をわかりやすく解説。「初恋のため息」を象徴する雪解けに咲く花の意味を紹介します。">
   <title>2月7日の誕生花はスノードロップ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スノードロップはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、雪が残る時期にうつむいて咲く白い小花です。雪解けとともに姿を見せる、季節の訪れを告げる花です。"}},
-      {"@type":"Question","name":"スノードロップの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「初恋のため息」という花言葉は、雪の中でうつむきながら控えめに咲く姿が、はにかむような初々しい恋心を思わせることに由来するとされています。"}},
-      {"@type":"Question","name":"スノードロップはどうしてうつむいて咲くのですか？","acceptedAnswer":{"@type":"Answer","text":"雪や霜から花粉を守るためとされ、そのうつむいた姿が早春の可憐な印象を与えています。"}}
+      {"@type":"Question","name":"スノードロップはいつ頃見られますか？","acceptedAnswer":{"@type":"Answer","text":"早春、雪解けの時期に白い小花を咲かせます。雪の中から顔を出すように咲くことでも知られています。"}},
+      {"@type":"Question","name":"スノードロップの花言葉「初恋のため息」の由来は？","acceptedAnswer":{"@type":"Answer","text":"雪解けの中でうつむき加減に咲く、控えめで清らかな姿に由来するといわれています。切ないだけでなく、淡く懐かしい気持ちを表す言葉としても受け取られています。"}},
+      {"@type":"Question","name":"スノードロップを育てる際に注意することはありますか？","acceptedAnswer":{"@type":"Answer","text":"観賞用として親しまれていますが、球根には毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 7 · 誕生花</span>
     <h1>2月7日の誕生花はスノードロップ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スノードロップは、ヒガンバナ科の球根植物で、早春にうつむいて咲く白い小花を持つ2月7日の誕生花です。花言葉は「初恋のため息」。雪解けの中で咲く清らかな花です。</p>
+    <p class="art-lead">まだ雪の残る2月7日。その雪解けの隙間から、うつむくように白い小花を咲かせるのがスノードロップです。今日はその控えめな早春の姿に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スノードロップとは</a></li>
-      <li><a href="#meaning">スノードロップが象徴する意味</a></li>
-      <li><a href="#charm">スノードロップの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">雪解けの中に現れる、スノードロップの白い小花</a></li>
+      <li><a href="#story">2月7日、スノードロップが伝える早春の気配</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スノードロップから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スノードロップとは</h2>
-    <p>スノードロップは、ヒガンバナ科の球根植物で、2月7日の誕生花として知られています。まだ雪が残る早春に、うつむき加減に咲く白い小花で、雪解けの訪れをそっと告げる花として親しまれています。</p>
-  </section>
+    <h2>雪解けの中に現れる、スノードロップの白い小花</h2>
+    <p>スノードロップは、ヒガンバナ科の球根植物です。早春、まだ雪の残る地面から顔を出し、うつむくように白い小花を咲かせます。雪解けの中で咲くその姿は、清らかな印象を与える花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スノードロップが象徴する意味</h2>
-    <p>スノードロップの花言葉は「初恋のため息」です。雪の中でうつむきながら控えめに咲くその姿が、はにかむような初々しい恋心をため息とともに思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スノードロップの魅力</h2>
-    <p>スノードロップの魅力は、雪の残る景色の中でひっそりと咲く清らかな佇まいにあります。小さな花ながらも春の訪れをいち早く知らせてくれる存在で、庭に春の気配を運んでくれます。2月7日生まれの方はもちろん、初々しい想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スノードロップは球根植物のため、水はけの良い土に植え、寒さには強い一方、夏の高温多湿を避けられる場所で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月7日生まれの方はもちろん、初々しい気持ちを伝えたい贈り物としてもスノードロップは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノードロップはいつ頃咲きますか？</div>
-        <div class="faq-a">早春、雪が残る時期にうつむいて咲く白い小花です。雪解けとともに姿を見せる、季節の訪れを告げる花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノードロップの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「初恋のため息」という花言葉は、雪の中でうつむきながら控えめに咲く姿が、はにかむような初々しい恋心を思わせることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノードロップはどうしてうつむいて咲くのですか？</div>
-        <div class="faq-a">雪や霜から花粉を守るためとされ、そのうつむいた姿が早春の可憐な印象を与えています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スノードロップはいつ頃見られますか？</div>
+        <div class="faq-a">早春、雪解けの時期に白い小花を咲かせます。雪の中から顔を出すように咲くことでも知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月7日、スノードロップが伝える早春の気配</h2>
+    <p>スノードロップが咲くのは、冬から春へと季節が移り変わる、その境目のわずかな期間です。雪がまだ残る地面から、誰よりも早く顔を出し、うつむき加減に白い花を咲かせる姿は、冬の終わりと春の始まりを静かに知らせてくれます。他の花が動き出すよりも先に、そっと季節の変化を教えてくれる、そんな存在です。下を向いて咲く姿はどこか恥じらいやため息を連想させ、清らかでありながらどこか切なさも感じさせます。この雪解けとともに咲く控えめな姿から、スノードロップには「初恋のため息」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スノードロップの花言葉「初恋のため息」の由来は？</div>
+        <div class="faq-a">雪解けの中でうつむき加減に咲く、控えめで清らかな姿に由来するといわれています。切ないだけでなく、淡く懐かしい気持ちを表す言葉としても受け取られています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰にでも、そっと胸の奥にしまってある淡い記憶があるものです。今日は、そんな懐かしい気持ちを無理に忘れようとせず、そっと思い出す時間を持ってみませんか。せつなさの中にも、どこか温かい気持ちが残っているかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スノードロップから始める小さな体験</h2>
+    <p>雪解けの中でうつむいて咲くスノードロップにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>雪解けの季節の変化に目を向けてみる</li>
+      <li>初恋の記憶をそっと思い出してみる</li>
+      <li>うつむき加減の小さな花を探して歩いてみる</li>
+      <li>白い小さな花を一輪、部屋に飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スノードロップを育てる際に注意することはありますか？</div>
+        <div class="faq-a">観賞用として親しまれていますが、球根には毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">淡い記憶にそっと触れられた今日は、六曜の巡りもあわせてのぞいてみませんか。開運カレンダーでは、六曜をはじめとした毎日の運気の流れも確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月7日、雪解けの気配とともに顔を出すスノードロップは、早春の始まりを一輪の白でそっと告げます。</p>
     <ul>
-      <li>スノードロップは早春にうつむいて咲く白い小花、2月7日の誕生花</li>
-      <li>花言葉は「初恋のため息」、初々しい恋心を象徴する</li>
-      <li>雪解けの中でひっそりと咲く清らかな佇まいが魅力</li>
-      <li>寒さに強い一方、夏の高温多湿を避けて育てたい</li>
+      <li>スノードロップはヒガンバナ科の球根植物で、早春に雪解けとともに白い小花を咲かせる</li>
+      <li>うつむき加減に咲く清らかな姿から、冬の終わりと春の始まりを知らせる花とされる</li>
+      <li>花言葉は「初恋のため息」。控えめで懐かしい気持ちを象徴するとされる</li>
+      <li>観賞用として楽しみつつ、球根には毒性があるため取り扱いには注意したい</li>
     </ul>
   </section>
 

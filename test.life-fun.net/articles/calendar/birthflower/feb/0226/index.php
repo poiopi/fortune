@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0226/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月26日の誕生花ミズバショウの花言葉・特徴・魅力をわかりやすく解説。「決心」を象徴する早春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月26日の誕生花ミズバショウの花言葉・特徴・魅力をわかりやすく解説。「決心」を象徴する、早春の湿地にまっすぐ咲く白い花の意味を紹介します。">
   <title>2月26日の誕生花はミズバショウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ミズバショウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に、湿地で白い花を咲かせます。雪解けの水辺に清らかに咲く花です。"}},
-      {"@type":"Question","name":"ミズバショウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「決心」という花言葉は、まっすぐに伸びる白い苞（ほう）が、迷いのない意志の強さを思わせることに由来するとされています。"}},
-      {"@type":"Question","name":"ミズバショウの白い部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"白く大きく見える部分は苞（ほう）と呼ばれる葉が変化した部分で、中央の緑の部分に小さな花が集まって咲きます。"}}
+      {"@type":"Question","name":"ミズバショウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に見頃を迎えます。雪解けが進む湿地に、まっすぐな白い花を咲かせます。"}},
+      {"@type":"Question","name":"ミズバショウの花言葉「決心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"厳しい環境の湿地で、早春にまっすぐ白い花を咲かせる潔い姿に由来するといわれています。迷いのない一歩を踏み出す心の在り方を象徴する言葉とされます。"}},
+      {"@type":"Question","name":"ミズバショウはどんな場所に生えていますか？","acceptedAnswer":{"@type":"Answer","text":"水はけの少ない湿地を好んで生育するとされています。厳しい環境の中でもまっすぐに花を咲かせる、力強い植物です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 26 · 誕生花</span>
     <h1>2月26日の誕生花はミズバショウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ミズバショウは、サトイモ科の多年草で、早春に白い花を湿地に咲かせる2月26日の誕生花です。花言葉は「決心」。清らかで凛とした印象の花です。</p>
+    <p class="art-lead">早春の湿地に、まっすぐ白い花を咲かせるミズバショウ。2月26日の誕生花に選ばれたこの花は、厳しい環境の中に迷いのない決心を宿しています。今日はその凛とした姿に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ミズバショウとは</a></li>
-      <li><a href="#meaning">ミズバショウが象徴する意味</a></li>
-      <li><a href="#charm">ミズバショウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">早春の湿地にまっすぐ咲く、ミズバショウの白</a></li>
+      <li><a href="#story">2月26日、ミズバショウが咲く早春の情景と「決心」</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ミズバショウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ミズバショウとは</h2>
-    <p>ミズバショウは、サトイモ科の多年草で、2月26日の誕生花として知られています。早春、雪解けを迎えた湿地に、白く清らかな花を咲かせ、水辺の景色を静かに彩ります。</p>
-  </section>
+    <h2>早春の湿地にまっすぐ咲く、ミズバショウの白</h2>
+    <p>ミズバショウは、サトイモ科の多年草です。早春、まだ雪解け水の残る湿地で、白い花をまっすぐに咲かせます。周囲の景色がまだ眠っているような季節に、迷いなく凛と立つその姿は、清らかで力強い印象を与えてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ミズバショウが象徴する意味</h2>
-    <p>ミズバショウの花言葉は「決心」です。まっすぐに伸びる白い苞（ほう）が、迷いなく前を向く強い意志を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ミズバショウの魅力</h2>
-    <p>ミズバショウの魅力は、雪解けの湿地に凛と咲く清らかな白さと、水辺に群生する幻想的な景観にあります。多くの湿原で群生地として親しまれ、早春の訪れを象徴する花として人気があります。2月26日生まれの方はもちろん、強い決意を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ミズバショウは湿った土壌や水辺を好み、日当たりの良い湿地環境で育てるのがおすすめです。庭で育てる場合は水はけと水もちのバランスに注意しましょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月26日生まれの方はもちろん、強い決心を伝えたい贈り物としてもミズバショウは意味のある花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ミズバショウはいつ頃咲きますか？</div>
-        <div class="faq-a">早春に、湿地で白い花を咲かせます。雪解けの水辺に清らかに咲く花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミズバショウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「決心」という花言葉は、まっすぐに伸びる白い苞（ほう）が、迷いのない意志の強さを思わせることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミズバショウの白い部分は花びらですか？</div>
-        <div class="faq-a">白く大きく見える部分は苞（ほう）と呼ばれる葉が変化した部分で、中央の緑の部分に小さな花が集まって咲きます。</div>
+        <div class="faq-a">早春に見頃を迎えます。雪解けが進む湿地に、まっすぐな白い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月26日、ミズバショウが咲く早春の情景と「決心」</h2>
+    <p>冬の名残がまだ色濃く残る早春、多くの植物がまだ動き出さないなかで、ミズバショウは湿地にまっすぐ白い花を咲かせます。生きるにはけっして楽ではない湿った環境を、あえて選んで根を張り続けているようにも見えます。周りがまだ迷い続けているような季節に、迷いなく白い花を掲げて立つ姿。その潔さは、何かを決めて一歩を踏み出す瞬間の心の在り方によく似ています。季節が少しずつ動き出す早春の情景の中で、まっすぐに咲くミズバショウの姿から、「決心」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミズバショウの花言葉「決心」の由来は？</div>
+        <div class="faq-a">厳しい環境の湿地で、早春にまっすぐ白い花を咲かせる潔い姿に由来するといわれています。迷いのない一歩を踏み出す心の在り方を象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>白い花がまっすぐに立つように、迷いを断ち切って一歩を踏み出す日があってもいいものです。今日はその一歩を、小さなことから選んでみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ミズバショウから始める小さな体験</h2>
+    <p>早春の湿地にまっすぐ咲くミズバショウにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>早春に咲く白い花を探しに出かけてみる</li>
+      <li>迷っていたことを一つ、今日決めてみる</li>
+      <li>白いものを身の回りに置いて心を整えてみる</li>
+      <li>静かな水辺の景色を思い浮かべてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミズバショウはどんな場所に生えていますか？</div>
+        <div class="faq-a">水はけの少ない湿地を好んで生育するとされています。厳しい環境の中でもまっすぐに花を咲かせる、力強い植物です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心が定まった今日は、進むべき方角、吉方位を確かめてみるのもいいかもしれません。開運カレンダーでは、その日の吉方位やラッキーカラーもあわせてチェックできます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月26日、早春の湿地にまっすぐ咲くミズバショウは、迷いのない一歩を踏み出す心を教えてくれる花です。</p>
     <ul>
-      <li>ミズバショウは早春の湿地に白い花を咲かせる、2月26日の誕生花</li>
-      <li>花言葉は「決心」、迷いのない強い意志を象徴する</li>
-      <li>雪解けの水辺に群生する幻想的な景観が魅力</li>
-      <li>湿った土壌や水辺を好み、水はけと水もちのバランスが大切</li>
+      <li>ミズバショウはサトイモ科の多年草で、早春に湿地で白い花を咲かせる</li>
+      <li>厳しい環境をあえて選び、まっすぐに花を咲かせる潔い姿が特徴</li>
+      <li>花言葉は「決心」。迷いのない一歩を踏み出す心を象徴するとされる</li>
+      <li>湿地を好んで生育する植物で、力強く花を咲かせる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0216/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月16日の誕生花フリージア（白）の花言葉・特徴・魅力をわかりやすく解説。「無邪気」を象徴する春の香り高い花の意味を紹介します。">
+  <meta name="description" content="2月16日の誕生花フリージア（白）の花言葉・特徴・魅力をわかりやすく解説。「無邪気」を象徴する、白くまっすぐに香る花の意味を紹介します。">
   <title>2月16日の誕生花はフリージア（白）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フリージア（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、甘く上品な香りとともに白い花を咲かせます。球根から育つ、春を代表する花のひとつです。"}},
-      {"@type":"Question","name":"フリージア（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「無邪気」という花言葉は、飾り気のない澄んだ白の花色が、素直で純粋な印象を与えることに由来するとされています。"}},
-      {"@type":"Question","name":"白いフリージアと黄色いフリージアは花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、白は「無邪気」を表すとされています。"}}
+      {"@type":"Question","name":"フリージア（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春が見頃です。甘い香りを漂わせながら、穂状に白い花を咲かせます。"}},
+      {"@type":"Question","name":"フリージア（白）の花言葉「無邪気」の由来は？","acceptedAnswer":{"@type":"Answer","text":"飾り気のない白い色合いと、まっすぐに届く香りに由来するといわれています。駆け引きのない、素直な印象を象徴する言葉です。"}},
+      {"@type":"Question","name":"フリージアの香りには個人差がありますか？","acceptedAnswer":{"@type":"Answer","text":"香りの感じ方には個人差があります。甘く爽やかな香りとして親しまれていますが、好みは人それぞれです。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 16 · 誕生花</span>
     <h1>2月16日の誕生花はフリージア（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フリージア（白）は、アヤメ科の球根植物で、春に香りのよい白い花を咲かせる2月16日の誕生花です。花言葉は「無邪気」。清らかで素直な印象の花です。</p>
+    <p class="art-lead">白い花びらから、まっすぐに甘い香りを届けるフリージア（白）。2月16日の誕生花に選ばれたこの花は、飾らない素直さで知られています。今日はその純白の印象に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フリージア（白）とは</a></li>
-      <li><a href="#meaning">フリージア（白）が象徴する意味</a></li>
-      <li><a href="#charm">フリージア（白）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">白と香りが伝える、フリージア（白）の素直さ</a></li>
+      <li><a href="#story">2月16日、フリージア（白）の白さが映す無邪気な心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フリージア（白）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フリージア（白）とは</h2>
-    <p>フリージア（白）は、アヤメ科の球根植物で、2月16日の誕生花として知られています。春になると、甘く上品な香りを漂わせながら、清らかな白い花を茎の先にいくつも咲かせます。</p>
-  </section>
+    <h2>白と香りが伝える、フリージア（白）の素直さ</h2>
+    <p>フリージア（白）は、アヤメ科の球根植物です。フリージアは早春、甘い香りの花を穂状に咲かせ、爽やかで明るい印象を持つ花として知られていますが、その中でも白い花は、香りのよさと純粋な色合いを兼ね備えています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フリージア（白）が象徴する意味</h2>
-    <p>フリージア（白）の花言葉は「無邪気」です。飾り気のない澄んだ白の花色が、素直で屈託のない心を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フリージア（白）の魅力</h2>
-    <p>フリージア（白）の魅力は、清らかな花色と、あたりに広がる爽やかな香りにあります。ブーケやアレンジメントにも重宝され、どんな花とも合わせやすい万能さも人気の理由です。2月16日生まれの方はもちろん、素直な気持ちを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フリージア（白）は球根植物のため、水はけの良い土に植え、生育期はしっかりと水を与えつつ、休眠期は乾燥気味に管理するのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月16日生まれの方はもちろん、素直で屈託のない気持ちを伝えたい贈り物としてもフリージア（白）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">フリージア（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に、甘く上品な香りとともに白い花を咲かせます。球根から育つ、春を代表する花のひとつです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フリージア（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「無邪気」という花言葉は、飾り気のない澄んだ白の花色が、素直で純粋な印象を与えることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">白いフリージアと黄色いフリージアは花言葉が違いますか？</div>
-        <div class="faq-a">はい、色によって花言葉が異なり、白は「無邪気」を表すとされています。</div>
+        <div class="faq-a">春が見頃です。甘い香りを漂わせながら、穂状に白い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月16日、フリージア（白）の白さが映す無邪気な心</h2>
+    <p>何色にも染まっていない、まっさらな白。フリージア（白）のその色は、飾り気のない素直さをまっすぐに伝えてくれます。色を重ねたり複雑にしたりすることなく、ただ白いままで香りを届ける姿は、駆け引きのない正直さそのものです。甘い香りも、控えめに漂わせるのではなく、まっすぐに周囲へ届くように穂状に咲きます。色も香りも、遠回しにせずストレートに届けようとするその咲き方は、思ったことをそのまま口にする、屈託のなさを思わせます。この白く飾らない色合いとまっすぐな香りから、フリージア（白）には「無邪気」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フリージア（白）の花言葉「無邪気」の由来は？</div>
+        <div class="faq-a">飾り気のない白い色合いと、まっすぐに届く香りに由来するといわれています。駆け引きのない、素直な印象を象徴する言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>思ったことをそのまま口にするのは、案外勇気がいるものです。今日は、心に浮かんだ小さな気持ちを一つ、飾らずに誰かへ伝えてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フリージア（白）から始める小さな体験</h2>
+    <p>白く飾らない香りを届けるフリージア（白）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白いフリージアの香りを確かめてみる</li>
+      <li>思ったことを飾らずに一つ口に出してみる</li>
+      <li>白い小物を身の回りに置いてみる</li>
+      <li>子どもの頃好きだったものを思い出してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フリージアの香りには個人差がありますか？</div>
+        <div class="faq-a">香りの感じ方には個人差があります。甘く爽やかな香りとして親しまれていますが、好みは人それぞれです。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">素直な気持ちを言葉にできた今日は、出かける前に吉方位を調べてみるのもおすすめです。開運カレンダーでは、その日の吉方位や吉日も確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月16日、白くまっすぐに香りを届けるフリージア（白）は、飾らない素直さの尊さを教えてくれます。</p>
     <ul>
-      <li>フリージア（白）は春に香りのよい白い花を咲かせる、2月16日の誕生花</li>
-      <li>花言葉は「無邪気」、素直で屈託のない心を象徴する</li>
-      <li>清らかな花色と爽やかな香りが魅力</li>
-      <li>球根植物のため、休眠期は乾燥気味に管理したい</li>
+      <li>フリージア（白）はアヤメ科の球根植物で、春に香りのよい白い花を咲かせる</li>
+      <li>白い色合いと穂状に届く香りが、飾らないまっすぐな印象を与える</li>
+      <li>花言葉は「無邪気」。駆け引きのない素直さを象徴するとされる</li>
+      <li>香りの感じ方には個人差があることを踏まえて楽しみたい</li>
     </ul>
   </section>
 

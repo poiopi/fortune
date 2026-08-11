@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0209/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月9日の誕生花クリスマスローズの花言葉・特徴・魅力をわかりやすく解説。「大切な人」を象徴する冬から早春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月9日の誕生花クリスマスローズの花言葉・特徴・魅力をわかりやすく解説。「大切な人」を象徴する、うつむき加減に咲く冬の花の意味を紹介します。">
   <title>2月9日の誕生花はクリスマスローズ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クリスマスローズはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から早春にかけて、うつむき加減の花を咲かせます。雪の残る時期にも静かに花を咲かせる多年草です。"}},
-      {"@type":"Question","name":"クリスマスローズの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「大切な人」という花言葉は、うつむいて咲く控えめで奥ゆかしい姿が、思いやりの心を思わせることに由来するとされています。"}},
-      {"@type":"Question","name":"クリスマスローズはクリスマスの時期に咲きますか？","acceptedAnswer":{"@type":"Answer","text":"品種によって開花時期は異なり、冬から早春にかけて咲くものが多い花です。"}}
+      {"@type":"Question","name":"クリスマスローズはいつ頃見頃を迎えますか？","acceptedAnswer":{"@type":"Answer","text":"冬から早春にかけてが見頃です。寒さの残る時期に、うつむき加減の花を静かに咲かせます。"}},
+      {"@type":"Question","name":"クリスマスローズの花言葉「大切な人」の由来は？","acceptedAnswer":{"@type":"Answer","text":"うつむき加減に静かに咲く、奥ゆかしい佇まいに由来するといわれています。声高に主張せずとも、大切な存在であり続けることを象徴しているとされます。"}},
+      {"@type":"Question","name":"クリスマスローズを育てるうえで気をつけることはありますか？","acceptedAnswer":{"@type":"Answer","text":"観賞用として親しまれていますが、全草に毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 9 · 誕生花</span>
     <h1>2月9日の誕生花はクリスマスローズ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クリスマスローズは、キンポウゲ科の多年草で、冬から早春にうつむき加減の花を咲かせる2月9日の誕生花です。花言葉は「大切な人」。静かで奥ゆかしい印象の花です。</p>
+    <p class="art-lead">うつむき加減に、静かに花を咲かせるクリスマスローズ。2月9日の誕生花に選ばれたこの花は、声高に自分を主張しない、控えめな佇まいで知られています。今日はその奥ゆかしい姿に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クリスマスローズとは</a></li>
-      <li><a href="#meaning">クリスマスローズが象徴する意味</a></li>
-      <li><a href="#charm">クリスマスローズの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">下を向いて咲く、クリスマスローズの静けさ</a></li>
+      <li><a href="#story">2月9日、クリスマスローズが示すうつむく強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クリスマスローズから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クリスマスローズとは</h2>
-    <p>クリスマスローズは、キンポウゲ科の多年草で、2月9日の誕生花として知られています。冬から早春にかけて、うつむき加減に花を咲かせるその姿は静かで奥ゆかしく、庭に落ち着いた彩りを添えてくれます。</p>
-  </section>
+    <h2>下を向いて咲く、クリスマスローズの静けさ</h2>
+    <p>クリスマスローズは、キンポウゲ科の多年草です。冬から早春にかけて、他の花に先駆けるように、うつむき加減の花を咲かせます。派手に胸を張るのではなく、静かに下を向いて咲くその姿は、奥ゆかしく落ち着いた印象を与える花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クリスマスローズが象徴する意味</h2>
-    <p>クリスマスローズの花言葉は「大切な人」です。派手に主張せずうつむいて咲くその控えめな姿が、静かに大切な人を思う気持ちに重なることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クリスマスローズの魅力</h2>
-    <p>クリスマスローズの魅力は、花が少なくなる冬の庭に静かな存在感を与えてくれるところにあります。うつむいて咲くからこそ、覗き込んで眺める楽しさもある花です。2月9日生まれの方はもちろん、大切な人への想いを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クリスマスローズは、半日陰で水はけの良い場所を好み、夏の直射日光や乾燥を避けて育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月9日生まれの方はもちろん、大切な人への静かな想いを伝えたい贈り物としてもクリスマスローズは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から早春にかけて、うつむき加減の花を咲かせます。雪の残る時期にも静かに花を咲かせる多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「大切な人」という花言葉は、うつむいて咲く控えめで奥ゆかしい姿が、思いやりの心を思わせることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズはクリスマスの時期に咲きますか？</div>
-        <div class="faq-a">品種によって開花時期は異なり、冬から早春にかけて咲くものが多い花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズはいつ頃見頃を迎えますか？</div>
+        <div class="faq-a">冬から早春にかけてが見頃です。寒さの残る時期に、うつむき加減の花を静かに咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月9日、クリスマスローズが示すうつむく強さ</h2>
+    <p>クリスマスローズの何より面白いところは、花が上ではなく下を向いて咲く点にあります。多くの花が空へ向かって顔を上げるなかで、あえてうつむいたまま咲き続けるその姿は、一見すると控えめで消極的にも映るかもしれません。けれど近づいてよく見ると、うつむいているからこそ、雨や雪から花の芯を守り、静かに長く咲き続けられるのだと気づかされます。目立とうとしないその佇まいは、かえって見る人の心に強く残ります。声を張り上げずとも伝わるものがある、そんなことを教えてくれる形です。この下を向いて咲く奥ゆかしい姿から、クリスマスローズには「大切な人」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズの花言葉「大切な人」の由来は？</div>
+        <div class="faq-a">うつむき加減に静かに咲く、奥ゆかしい佇まいに由来するといわれています。声高に主張せずとも、大切な存在であり続けることを象徴しているとされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今、あなたの頭に浮かんでいる人は誰でしょうか。日々の忙しさの中で、その人への気持ちを言葉にする機会は案外少ないものです。今日は、その人のことを少しだけ思い浮かべる時間を作ってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クリスマスローズから始める小さな体験</h2>
+    <p>うつむいて静かに咲くクリスマスローズにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>大切な人の顔を思い浮かべてみる</li>
+      <li>うつむき加減に咲く花を探して観察してみる</li>
+      <li>静かな時間を作って一人でゆっくり過ごす</li>
+      <li>大切な人へ、ひとことメッセージを送ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クリスマスローズを育てるうえで気をつけることはありますか？</div>
+        <div class="faq-a">観賞用として親しまれていますが、全草に毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">大切な人へ向けた気持ちを確かめられた今日。ふと気になったら、ラッキーカラーものぞいてみましょう。開運カレンダーでは、その日のラッキーカラーやラッキーアイテムも紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月9日、うつむいて静かに咲くクリスマスローズは、声を張らずとも伝わる大切さを教えてくれます。</p>
     <ul>
-      <li>クリスマスローズは冬から早春にうつむいて咲く、2月9日の誕生花</li>
-      <li>花言葉は「大切な人」、静かで思いやりのある心を象徴する</li>
-      <li>花の少ない冬の庭に静かな存在感を与えてくれるのが魅力</li>
-      <li>半日陰で水はけの良い場所を好み、夏の乾燥を避けて育てたい</li>
+      <li>クリスマスローズはキンポウゲ科の多年草で、冬から早春にうつむき加減の花を咲かせる</li>
+      <li>下を向いて咲く奥ゆかしい姿が、静かで落ち着いた印象を与える</li>
+      <li>花言葉は「大切な人」。声高に主張せずとも大切であり続ける存在を象徴する</li>
+      <li>観賞用として楽しみつつ、全草に毒性があるため取り扱いには注意したい</li>
     </ul>
   </section>
 

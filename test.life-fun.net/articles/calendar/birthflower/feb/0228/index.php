@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0228/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月28日の誕生花ロウバイの花言葉・特徴・魅力をわかりやすく解説。「温かみ」を象徴する冬に咲く花木の意味を紹介します。">
+  <meta name="description" content="2月28日の誕生花ロウバイの花言葉・特徴・魅力をわかりやすく解説。「温かみ」を象徴する、寒さの中で甘く香る黄色い花の意味を紹介します。">
   <title>2月28日の誕生花はロウバイ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ロウバイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に、蝋細工のような透き通る黄色い花を咲かせます。寒さの中で甘い香りを漂わせる花木です。"}},
-      {"@type":"Question","name":"ロウバイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「温かみ」という花言葉は、寒さ厳しい冬にあたりに甘い香りを漂わせる、その温もりのある存在感に由来するとされています。"}},
-      {"@type":"Question","name":"ロウバイの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"蝋（ろう）細工のような半透明の質感を持つ花を咲かせることから、この名がつけられたとされています。"}}
+      {"@type":"Question","name":"ロウバイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に見頃を迎えます。蝋細工のような透き通る黄色い花を咲かせ、甘い香りを漂わせます。"}},
+      {"@type":"Question","name":"ロウバイの花言葉「温かみ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"寒い冬に、蝋細工のような黄色い花と甘い香りをあわせて届けてくれる姿に由来するといわれています。冷たい季節の中にほっとする印象を象徴する言葉とされます。"}},
+      {"@type":"Question","name":"ロウバイという名前は花の見た目に由来しますか？","acceptedAnswer":{"@type":"Answer","text":"はい、蝋細工のような透き通る質感の花びらに由来するといわれています。その独特の質感が、ロウバイならではの魅力となっています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 28 · 誕生花</span>
     <h1>2月28日の誕生花はロウバイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ロウバイは、ロウバイ科の落葉低木で、冬に蝋細工のような黄色い花を咲かせる2月28日の誕生花です。花言葉は「温かみ」。寒さの中で甘い香りを届ける花木です。</p>
+    <p class="art-lead">寒さの中、蝋細工のような黄色い花を甘く香らせるロウバイ。2月28日の誕生花に選ばれたこの花は、冷たい季節の中に確かな温かみを宿しています。今日はその静かな黄色に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ロウバイとは</a></li>
-      <li><a href="#meaning">ロウバイが象徴する意味</a></li>
-      <li><a href="#charm">ロウバイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">冬の寒さの中に咲く、ロウバイの透き通る黄色</a></li>
+      <li><a href="#story">2月28日、ロウバイの黄色が灯す、冬の中の温かみ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ロウバイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ロウバイとは</h2>
-    <p>ロウバイは、ロウバイ科の落葉低木で、2月28日の誕生花として知られています。冬の寒さが厳しい時期に、蝋細工のような透き通る黄色い花を咲かせ、あたりに甘い香りを漂わせます。</p>
-  </section>
+    <h2>冬の寒さの中に咲く、ロウバイの透き通る黄色</h2>
+    <p>ロウバイは、ロウバイ科の落葉低木です。冬になると、蝋細工のように透き通った黄色い花を咲かせます。甘い香りをあたりに漂わせながら、寒さの厳しい季節に凛とした姿を見せてくれる花木です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ロウバイが象徴する意味</h2>
-    <p>ロウバイの花言葉は「温かみ」です。寒さ厳しい冬にも凛と咲き、周囲に甘い香りを届けるその存在感が、心を温めるような優しさを思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ロウバイの魅力</h2>
-    <p>ロウバイの魅力は、蝋細工のような半透明の花びらと、寒い時期にも漂う甘く上品な香りにあります。葉のない枝に咲く花は遠くからでもよく目立ち、冬の庭に彩りと香りを添えてくれます。2月28日生まれの方はもちろん、心温まる贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ロウバイは日当たりと水はけの良い場所を好み、寒さに強く丈夫な花木です。植え付け後は特別な手間をかけずとも、毎年花を咲かせてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月28日生まれの方はもちろん、心温まる気持ちを伝えたい贈り物としてもロウバイは意味のある花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ロウバイはいつ頃咲きますか？</div>
-        <div class="faq-a">冬に、蝋細工のような透き通る黄色い花を咲かせます。寒さの中で甘い香りを漂わせる花木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ロウバイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「温かみ」という花言葉は、寒さ厳しい冬にあたりに甘い香りを漂わせる、その温もりのある存在感に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ロウバイの名前の由来は何ですか？</div>
-        <div class="faq-a">蝋（ろう）細工のような半透明の質感を持つ花を咲かせることから、この名がつけられたとされています。</div>
+        <div class="faq-a">冬に見頃を迎えます。蝋細工のような透き通る黄色い花を咲かせ、甘い香りを漂わせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月28日、ロウバイの黄色が灯す、冬の中の温かみ</h2>
+    <p>冬枯れの景色が続くなかで、ロウバイの黄色はひときわ目を引きます。派手な原色ではなく、蝋細工のように光を透かすような、柔らかく澄んだ黄色。その色合いは、まるで小さな灯りが冬の景色にともっているかのようです。しかもロウバイは、色だけでなく甘い香りも一緒に届けてくれます。冷たい空気の中に漂うその香りに気づくと、目に見える寒さとは裏腹に、どこかほっとするような温かさを感じることがあります。透き通る黄色と甘い香りが重なり合うことで生まれる、この静かな温かみの印象から、ロウバイには「温かみ」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ロウバイの花言葉「温かみ」の由来は？</div>
+        <div class="faq-a">寒い冬に、蝋細工のような黄色い花と甘い香りをあわせて届けてくれる姿に由来するといわれています。冷たい季節の中にほっとする印象を象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>凛とした静けさの中にも、温かさは確かに存在します。今日は、そんな小さな温もりに気づく時間を持ってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ロウバイから始める小さな体験</h2>
+    <p>寒さの中で黄色く香るロウバイにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>寒い季節にロウバイの香りを探しに出かけてみる</li>
+      <li>透き通る黄色いものを身の回りに取り入れてみる</li>
+      <li>寒さの中でも変わらない温かさを誰かに届けてみる</li>
+      <li>甘い香りのするお茶や飲み物でほっと一息つく</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ロウバイという名前は花の見た目に由来しますか？</div>
+        <div class="faq-a">はい、蝋細工のような透き通る質感の花びらに由来するといわれています。その独特の質感が、ロウバイならではの魅力となっています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">寒い季節にほっと一息つけた今日は、六曜の並びも眺めてみませんか。開運カレンダーでは、その日の六曜や吉方位もあわせて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月28日、寒さの中に透き通る黄色を灯すロウバイは、静かな温かみを教えてくれる花です。</p>
     <ul>
-      <li>ロウバイは冬に蝋細工のような黄色い花を咲かせる、2月28日の誕生花</li>
-      <li>花言葉は「温かみ」、寒さの中の優しさを象徴する</li>
-      <li>透き通る花びらと甘い香りが魅力</li>
-      <li>日当たりと水はけの良い場所で、寒さに強く育てやすい</li>
+      <li>ロウバイはロウバイ科の落葉低木で、冬に蝋細工のような黄色い花を咲かせる</li>
+      <li>透き通る質感の花びらと甘い香りが、冬の景色に温かみを添える</li>
+      <li>花言葉は「温かみ」。冷たい季節の中にほっとする印象を象徴するとされる</li>
+      <li>蝋細工のような質感の花びらが、名前の由来になっているといわれる</li>
     </ul>
   </section>
 

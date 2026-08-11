@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0213/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月13日の誕生花アザレアの花言葉・特徴・魅力をわかりやすく解説。「愛される喜び」を象徴する春に咲く花木の意味を紹介します。">
+  <meta name="description" content="2月13日の誕生花アザレアの花言葉・特徴・魅力をわかりやすく解説。「愛される喜び」を象徴する、株いっぱいに咲く華やかな花の意味を紹介します。">
   <title>2月13日の誕生花はアザレア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アザレアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、株いっぱいに鮮やかな色の花を咲かせます。華やかで可愛らしい印象を持つ花木です。"}},
-      {"@type":"Question","name":"アザレアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛される喜び」という花言葉は、株を覆うように咲き誇る華やかな花姿に由来するとされています。"}},
-      {"@type":"Question","name":"アザレアとツツジは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"アザレアはツツジ科の植物で、ツツジの仲間の中でも特に華やかな花を咲かせる品種として親しまれています。"}}
+      {"@type":"Question","name":"アザレアはいつ頃見頃を迎えますか？","acceptedAnswer":{"@type":"Answer","text":"春が見頃です。株全体を覆うように、鮮やかな色の花を一斉に咲かせます。"}},
+      {"@type":"Question","name":"アザレアの花言葉「愛される喜び」の由来は？","acceptedAnswer":{"@type":"Answer","text":"株いっぱいに惜しみなく花を咲かせる、その華やかな咲きっぷりに由来するといわれています。愛情を出し惜しみしない姿を象徴しているとされます。"}},
+      {"@type":"Question","name":"アザレアを育てる際に注意することはありますか？","acceptedAnswer":{"@type":"Answer","text":"観賞用として親しまれていますが、全草に毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 13 · 誕生花</span>
     <h1>2月13日の誕生花はアザレア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アザレアは、ツツジ科の常緑低木で、春に鮮やかな色の花を株いっぱいに咲かせる2月13日の誕生花です。花言葉は「愛される喜び」。華やかで可愛らしい印象の花木です。</p>
+    <p class="art-lead">株いっぱいに、鮮やかな色をあふれさせて咲くアザレア。2月13日の誕生花に選ばれたこの花は、惜しみない咲き方でその存在を伝えます。今日はその華やかさに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アザレアとは</a></li>
-      <li><a href="#meaning">アザレアが象徴する意味</a></li>
-      <li><a href="#charm">アザレアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">株いっぱいに咲く、アザレアの華やかさ</a></li>
+      <li><a href="#story">2月13日、アザレアの色が伝える愛される喜び</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アザレアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アザレアとは</h2>
-    <p>アザレアは、ツツジ科の常緑低木で、2月13日の誕生花として知られています。春になると、株全体を覆い尽くすように鮮やかな色の花を咲かせ、華やかで可愛らしい印象を庭にもたらしてくれます。</p>
-  </section>
+    <h2>株いっぱいに咲く、アザレアの華やかさ</h2>
+    <p>アザレアは、ツツジ科の常緑低木です。春になると、株いっぱいに鮮やかな色の花を咲かせ、庭や鉢植えを一気に華やかに彩ります。可愛らしく親しみやすい印象を持つ花木として、贈り物にも選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アザレアが象徴する意味</h2>
-    <p>アザレアの花言葉は「愛される喜び」です。株いっぱいに咲き誇るその華やかな花姿が、多くの人から愛され喜びに満ちた様子を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アザレアの魅力</h2>
-    <p>アザレアの魅力は、株全体が花で埋め尽くされるような豪華な咲きぶりにあります。鉢植えとしても人気が高く、春の訪れとともに一気に華やぐ姿は見る人を惹きつけます。2月13日生まれの方はもちろん、愛される喜びを届けたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アザレアは、直射日光を避けた明るい半日陰を好み、乾燥に弱いため土の表面が乾く前にたっぷり水を与えて育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月13日生まれの方はもちろん、愛される喜びを伝えたい贈り物としてもアザレアは人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザレアはいつ頃咲きますか？</div>
-        <div class="faq-a">春に、株いっぱいに鮮やかな色の花を咲かせます。華やかで可愛らしい印象を持つ花木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザレアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「愛される喜び」という花言葉は、株を覆うように咲き誇る華やかな花姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザレアとツツジは同じ花ですか？</div>
-        <div class="faq-a">アザレアはツツジ科の植物で、ツツジの仲間の中でも特に華やかな花を咲かせる品種として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アザレアはいつ頃見頃を迎えますか？</div>
+        <div class="faq-a">春が見頃です。株全体を覆うように、鮮やかな色の花を一斉に咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月13日、アザレアの色が伝える愛される喜び</h2>
+    <p>アザレアの何よりの特徴は、一輪だけをぽつんと咲かせるのではなく、株全体を覆うほどの色を惜しみなく咲かせる点にあります。鮮やかな色があふれるほどに広がる様子は、控えめとは対極にある、堂々とした華やかさを感じさせます。見る人を選ばず、誰の目にも留まるほどの咲きっぷりは、愛情を出し惜しみしない姿にも重なります。一輪では伝わらない量の色彩が、見る人の心にまっすぐ届く。そんな咲き方をする花です。この株いっぱいに惜しみなく色を咲かせる姿から、アザレアには「愛される喜び」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アザレアの花言葉「愛される喜び」の由来は？</div>
+        <div class="faq-a">株いっぱいに惜しみなく花を咲かせる、その華やかな咲きっぷりに由来するといわれています。愛情を出し惜しみしない姿を象徴しているとされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに大切にされた記憶は、思い出すたびに心を温めてくれます。今日は、そんな瞬間を一つ思い出しながら、静かにその温かさを味わってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アザレアから始める小さな体験</h2>
+    <p>株いっぱいに惜しみなく咲くアザレアにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>株いっぱいに咲く花を探して写真に撮ってみる</li>
+      <li>誰かから愛されていると感じた瞬間を思い出してみる</li>
+      <li>鮮やかな色の花を贈ってみる、贈られてみる</li>
+      <li>華やかな色を身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アザレアを育てる際に注意することはありますか？</div>
+        <div class="faq-a">観賞用として親しまれていますが、全草に毒性があるとされています。小さなお子様やペットが誤って口にしないよう、置き場所には注意しましょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かに愛された記憶を味わえた今日。この機会に、今日が吉日かどうかも確認してみませんか。開運カレンダーでは、その日の吉日や六曜もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月13日、株いっぱいに華やかな色を咲かせるアザレアは、惜しみない愛情の形を映す花です。</p>
     <ul>
-      <li>アザレアは春に鮮やかな花を株いっぱいに咲かせる、2月13日の誕生花</li>
-      <li>花言葉は「愛される喜び」、華やかな花姿を象徴する</li>
-      <li>株全体を覆う豪華な咲きぶりが魅力</li>
-      <li>明るい半日陰を好み、乾燥に注意しながら育てたい</li>
+      <li>アザレアはツツジ科の常緑低木で、春に株いっぱいに鮮やかな花を咲かせる</li>
+      <li>一輪ではなく株全体を覆う咲き方が、堂々とした華やかさを生む</li>
+      <li>花言葉は「愛される喜び」。惜しみない愛情を象徴するとされる</li>
+      <li>観賞用として楽しみつつ、全草に毒性があるため取り扱いには注意したい</li>
     </ul>
   </section>
 

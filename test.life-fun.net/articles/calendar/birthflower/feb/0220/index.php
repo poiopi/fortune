@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0220/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月20日の誕生花コブシの花言葉・特徴・魅力をわかりやすく解説。「友情」を象徴する早春に咲く花木の意味を紹介します。">
+  <meta name="description" content="2月20日の誕生花コブシの花言葉・特徴・魅力をわかりやすく解説。「友情」を象徴する、早春に春を告げる白い花木の意味を紹介します。">
   <title>2月20日の誕生花はコブシ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コブシはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に、葉が出るより先に白い花を咲かせます。春の訪れを告げる花木として知られています。"}},
-      {"@type":"Question","name":"コブシの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「友情」という花言葉は、他の花木に先駆けて花を咲かせ、春の到来をみんなに知らせる姿に由来するとされています。"}},
-      {"@type":"Question","name":"コブシとモクレンはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらもモクレン科の花木ですが、コブシの方が花びらが細く、開花期もやや早い傾向があります。"}}
+      {"@type":"Question","name":"コブシはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に見頃を迎えます。他の花木に先駆けて、白い花を咲かせる落葉高木です。"}},
+      {"@type":"Question","name":"コブシの花言葉「友情」の由来は？","acceptedAnswer":{"@type":"Answer","text":"毎年変わらず早春に咲き、多くの人に春の訪れを知らせ続ける律儀な姿に由来するといわれています。長く続く関係を象徴する言葉です。"}},
+      {"@type":"Question","name":"コブシとモクレン、ハクモクレンはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"いずれもモクレン科の花木ですが、花の形や咲く時期、木の大きさなどに違いがあります。近い時期に咲くため見分けが難しいこともありますが、それぞれ異なる特徴を持っています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 20 · 誕生花</span>
     <h1>2月20日の誕生花はコブシ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コブシは、モクレン科の落葉高木で、早春に白い花を咲かせる2月20日の誕生花です。花言葉は「友情」。春の訪れを告げる花木です。</p>
+    <p class="art-lead">早春、他の花に先駆けて白い花を咲かせ、春の訪れを告げるコブシ。2月20日の誕生花に選ばれたこの花は、季節の変わり目をいち早く知らせてくれます。今日はその清らかな姿に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コブシとは</a></li>
-      <li><a href="#meaning">コブシが象徴する意味</a></li>
-      <li><a href="#charm">コブシの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">春の訪れを告げる、コブシの白い花</a></li>
+      <li><a href="#story">2月20日、コブシが伝える変わらぬ友情の形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、コブシから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コブシとは</h2>
-    <p>コブシは、モクレン科の落葉高木で、2月20日の誕生花として知られています。早春、葉が開くよりも先に、白く大きな花を枝いっぱいに咲かせ、遠くからでもよく目立つ存在です。</p>
-  </section>
+    <h2>春の訪れを告げる、コブシの白い花</h2>
+    <p>コブシは、モクレン科の落葉高木です。早春になると、他の花木に先駆けて白い花を咲かせます。まだ寒さの残る景色の中で、いち早く春の訪れを告げる花木として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>コブシが象徴する意味</h2>
-    <p>コブシの花言葉は「友情」です。他の花木に先駆けて花を咲かせ、春の到来をみんなに分け合うように知らせるその姿が、友情の温かさを思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>コブシの魅力</h2>
-    <p>コブシの魅力は、葉のない枝いっぱいに咲く白い花の清々しさと、遠くからでも見渡せる存在感にあります。かつては農作業の目安とされるなど、人々の暮らしとも深く結びついてきた花木です。2月20日生まれの方はもちろん、友情や絆を届けたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>コブシは日当たりと水はけの良い場所を好み、丈夫で育てやすい花木です。広い庭やシンボルツリーとして植えると、毎年美しい花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月20日生まれの方はもちろん、友情や絆を伝えたい贈り物としてもコブシは意味のある花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">コブシはいつ頃咲きますか？</div>
-        <div class="faq-a">早春に、葉が出るより先に白い花を咲かせます。春の訪れを告げる花木として知られています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コブシの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「友情」という花言葉は、他の花木に先駆けて花を咲かせ、春の到来をみんなに知らせる姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コブシとモクレンはどう違いますか？</div>
-        <div class="faq-a">どちらもモクレン科の花木ですが、コブシの方が花びらが細く、開花期もやや早い傾向があります。</div>
+        <div class="faq-a">早春に見頃を迎えます。他の花木に先駆けて、白い花を咲かせる落葉高木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月20日、コブシが伝える変わらぬ友情の形</h2>
+    <p>まだ冬の気配が色濃く残る景色の中で、コブシの白い花だけが一足早く咲き始める光景は、多くの人にとって春の訪れを実感する瞬間です。他の花木が動き出すよりも先に、遠慮なく白い花を咲かせるその姿は、季節の変わり目をいち早く知らせる合図のような役割を担っています。清らかな白色は、まだ寒さの中にあっても、確かに季節が動いていることを静かに伝えてくれます。毎年変わらずこの時期に咲き、多くの人にとって春を知らせる存在であり続けている。その律儀さは、長く続く関係にも通じるものがあります。この毎年変わらず春の訪れを告げる姿から、コブシには「友情」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コブシの花言葉「友情」の由来は？</div>
+        <div class="faq-a">毎年変わらず早春に咲き、多くの人に春の訪れを知らせ続ける律儀な姿に由来するといわれています。長く続く関係を象徴する言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>しばらく連絡を取っていない相手を、今日はふと思い出してみてください。ちょっとした一言を送るだけで、その関係がまた温かく動き出すかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、コブシから始める小さな体験</h2>
+    <p>白い花で春の訪れを告げるコブシにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白い花を咲かせる木を探して春の気配を感じてみる</li>
+      <li>疎遠になっている友人に一つ連絡をしてみる</li>
+      <li>春の訪れを感じたら、これからのことを少し考えてみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コブシとモクレン、ハクモクレンはどう違いますか？</div>
+        <div class="faq-a">いずれもモクレン科の花木ですが、花の形や咲く時期、木の大きさなどに違いがあります。近い時期に咲くため見分けが難しいこともありますが、それぞれ異なる特徴を持っています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">疎遠だった相手を思い出せた今日は、ラッキーカラーを一つ選んで身につけてみるのもいいかもしれません。開運カレンダーでは、その日のラッキーカラーや吉方位も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月20日、他の花木に先駆けて咲くコブシは、変わらず続く友情の温かさを教えてくれます。</p>
     <ul>
-      <li>コブシは早春に白い花を咲かせる、2月20日の誕生花</li>
-      <li>花言葉は「友情」、春の訪れを分け合う温かさを象徴する</li>
-      <li>葉のない枝いっぱいに咲く清々しい花姿が魅力</li>
-      <li>日当たりと水はけの良い場所で、丈夫で育てやすい</li>
+      <li>コブシはモクレン科の落葉高木で、早春に白い花を咲かせる</li>
+      <li>他の花木に先駆けて咲き、春の訪れを知らせる存在とされる</li>
+      <li>花言葉は「友情」。長く変わらず続く関係を象徴するとされる</li>
+      <li>モクレンやハクモクレンとは、花の形や咲く時期などに違いがある</li>
     </ul>
   </section>
 

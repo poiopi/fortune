@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0205/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月5日の誕生花スイレンの花言葉・特徴・魅力をわかりやすく解説。「信仰」を象徴する夏の水辺の花の意味を紹介します。">
+  <meta name="description" content="2月5日の誕生花スイレンの花言葉・特徴・魅力をわかりやすく解説。「信仰」を象徴する水面に咲く花の意味を紹介します。">
   <title>2月5日の誕生花はスイレン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スイレンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に、水面を彩るように花を咲かせます。朝に花を開き、昼過ぎに閉じる性質を持つ品種が多い花です。"}},
-      {"@type":"Question","name":"スイレンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「信仰」という花言葉は、静かな水面に凛と咲く姿が神聖な印象を与えることに由来するとされています。"}},
-      {"@type":"Question","name":"スイレンとハスは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"スイレンとハスは似ていますが別の植物で、スイレンは葉や花が水面に浮くのに対し、ハスは葉や花が水面より高く伸びる点が異なります。"}}
+      {"@type":"Question","name":"スイレンはいつ頃見られますか？","acceptedAnswer":{"@type":"Answer","text":"夏、水面に花を咲かせます。2月の誕生花とされていますが、実際に花を見られるのは夏の時期です。"}},
+      {"@type":"Question","name":"スイレンの花言葉「信仰」の由来は？","acceptedAnswer":{"@type":"Answer","text":"水面に静かに浮かんで咲く姿から、揺るぎなく何かを信じ続ける心のあり方を連想させることに由来するといわれています。"}},
+      {"@type":"Question","name":"スイレンと蓮（ハス）は同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"スイレンとハスは見た目が似ていますが、別の科に属する異なる植物です。葉に切れ込みがあるかどうかなどで見分けられるといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 5 · 誕生花</span>
     <h1>2月5日の誕生花はスイレン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スイレンは、スイレン科の多年草で、夏に水面に花を咲かせる2月5日の誕生花です。花言葉は「信仰」。涼やかで神聖な印象を持つ花です。</p>
+    <p class="art-lead">一年でも冷え込みが厳しいとされる2月5日。今日の誕生花に選ばれているのは、夏の水面に浮かぶように咲くスイレンです。季節は違えど、その静かなたたずまいに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スイレンとは</a></li>
-      <li><a href="#meaning">スイレンが象徴する意味</a></li>
-      <li><a href="#charm">スイレンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">水面に浮かぶように咲く、スイレンの佇まい</a></li>
+      <li><a href="#story">2月5日、スイレンが見せる静けさの形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スイレンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スイレンとは</h2>
-    <p>スイレンは、スイレン科の多年草で、2月5日の誕生花として知られています。夏になると、水面に浮かぶ葉の間から茎を伸ばし、涼やかな花を咲かせる水生植物で、池や睡蓮鉢で育てられています。</p>
-  </section>
+    <h2>水面に浮かぶように咲く、スイレンの佇まい</h2>
+    <p>スイレンは、スイレン科の多年草です。夏になると、水面に浮かぶように花を咲かせる、涼やかな印象の花として知られています。水という特別な舞台の上で花開くその姿は、他の花にはない独特の存在感を放ちます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スイレンが象徴する意味</h2>
-    <p>スイレンの花言葉は「信仰」です。静かな水面に凛として咲くその姿が、揺るぎない心や神聖さを思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スイレンの魅力</h2>
-    <p>スイレンの魅力は、静かな水面に映える涼やかな花姿と、朝に花開き昼過ぎに閉じる規則正しさにあります。水辺の景観を美しく彩り、夏の庭に涼を届けてくれる存在です。2月5日生まれの方はもちろん、静かで揺るぎない心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スイレンは日当たりの良い水辺や睡蓮鉢で育て、水を清潔に保ちながら管理するのがおすすめです。根が張るための十分な土と水深を用意すると、毎年花を咲かせてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月5日生まれの方はもちろん、静かな強さを届けたい贈り物としてもスイレンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイレンはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に、水面を彩るように花を咲かせます。朝に花を開き、昼過ぎに閉じる性質を持つ品種が多い花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイレンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「信仰」という花言葉は、静かな水面に凛と咲く姿が神聖な印象を与えることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スイレンとハスは同じ花ですか？</div>
-        <div class="faq-a">スイレンとハスは似ていますが別の植物で、スイレンは葉や花が水面に浮くのに対し、ハスは葉や花が水面より高く伸びる点が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スイレンはいつ頃見られますか？</div>
+        <div class="faq-a">夏、水面に花を咲かせます。2月の誕生花とされていますが、実際に花を見られるのは夏の時期です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月5日、スイレンが見せる静けさの形</h2>
+    <p>スイレンの魅力は、その咲き方の形にあります。土に根を張るのではなく、水面という特別な舞台の上に浮かぶように花を開くその姿は、他の花にはあまり見られない独特のシルエットをつくります。風が吹けば水面ごとゆらゆらと揺れ、静かな水辺にひときわ目を引く存在感を放ちます。よく観察すると、花びらが幾重にも重なり、朝に開いて夕方には閉じるという一日の中での変化も見どころのひとつです。この水面に浮かぶ静かな姿から、スイレンには「信仰」という花言葉が贈られてきたといわれています。特定の宗教的な意味というより、静かに何かを信じ続ける心のあり方を象徴する言葉として受け取られてきました。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スイレンの花言葉「信仰」の由来は？</div>
+        <div class="faq-a">水面に静かに浮かんで咲く姿から、揺るぎなく何かを信じ続ける心のあり方を連想させることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>水面に浮かぶ花のように、余計な力を抜いて、ただそこにいるだけでいい瞬間があります。今日は、静かに自分の心を見つめる時間を持つと、澄んだ気持ちで過ごせるかもしれません。穏やかな余韻が、一日の終わりにそっと残ってくれるはずです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スイレンから始める小さな体験</h2>
+    <p>水面に静かに咲くスイレンにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>池や水辺のある場所を訪れて静かな時間を過ごす</li>
+      <li>水面に映る景色をぼんやり眺めてみる</li>
+      <li>涼やかな青や白のものを身の回りに取り入れる</li>
+      <li>信じていることを一つ、心の中で確認してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スイレンと蓮（ハス）は同じ花ですか？</div>
+        <div class="faq-a">スイレンとハスは見た目が似ていますが、別の科に属する異なる植物です。葉に切れ込みがあるかどうかなどで見分けられるといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かな気持ちで過ごせた今日は、吉日かどうかもあわせて確認してみませんか。開運カレンダーでは、その日の吉日や六曜も調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月5日、水面にひっそりと浮かぶスイレンの佇まいは、この日を静けさで満たしてくれる誕生花です。</p>
     <ul>
-      <li>スイレンは夏に水面に花を咲かせる、2月5日の誕生花</li>
-      <li>花言葉は「信仰」、静かで揺るぎない心を象徴する</li>
-      <li>朝開き昼過ぎに閉じる規則正しい花姿が魅力</li>
-      <li>日当たりの良い水辺や睡蓮鉢で、水を清潔に保って育てたい</li>
+      <li>スイレンはスイレン科の多年草で、夏に水面に浮かぶように花を咲かせる</li>
+      <li>水という特別な舞台で咲く姿が、他の花にはない独特の存在感を放つ</li>
+      <li>花言葉は「信仰」。静かに何かを信じ続ける心のあり方を象徴するとされる</li>
+      <li>見た目が似ているハス（蓮）とは別の植物である点にも注意したい</li>
     </ul>
   </section>
 
