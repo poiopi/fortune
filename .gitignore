@@ -19,6 +19,10 @@ id_rsa*
 .DS_Store
 Thumbs.db
 
+# Stray local working files (not for public repo/server)
+deploy_config_body.txt
+deploy_chunk_*
+
 # Local notes (not for public repo)
 CLAUDE.md
 ARCHITECTURE.md
