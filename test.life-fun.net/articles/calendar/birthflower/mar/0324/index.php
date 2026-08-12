@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0324/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月24日の誕生花カイドウの花言葉・特徴・魅力をわかりやすく解説。「美人の眠り」を象徴する気品ある花の意味を紹介します。">
+  <meta name="description" content="3月24日の誕生花カイドウの花言葉・特徴・魅力をわかりやすく解説。「美人の眠り」を象徴する、下向きに咲く淡紅色の花の意味を紹介します。">
   <title>3月24日の誕生花はカイドウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カイドウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春、桜と同じ頃にうつむくような淡紅色の花を咲かせます。バラ科の落葉低木で、「花海棠」とも呼ばれています。"}},
-      {"@type":"Question","name":"カイドウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「美人の眠り」という花言葉は、中国の故事で酒に酔って眠る楊貴妃の上気した頬の色が、カイドウの花色にたとえられたという伝説に由来すると言われています。"}},
-      {"@type":"Question","name":"カイドウはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"枝から連なって垂れ下がるように、うつむき加減の淡紅色の花を咲かせます。見上げるたびに違った表情を見せる優雅な花姿が特徴です。"}}
+      {"@type":"Question","name":"カイドウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に淡紅色の花を下向きに咲かせます。ちょうど3月頃から見頃を迎える花木です。"}},
+      {"@type":"Question","name":"カイドウの花言葉「美人の眠り」の由来は？","acceptedAnswer":{"@type":"Answer","text":"下向きに咲く淡紅色の花の、伏し目がちで可憐な佇まいに由来するといわれています。"}},
+      {"@type":"Question","name":"カイドウの花はどんな色をしていますか？","acceptedAnswer":{"@type":"Answer","text":"淡い紅色をしています。下向きに咲く姿と合わさって、可憐で控えめな印象を与えます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 24 · 誕生花</span>
     <h1>3月24日の誕生花はカイドウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カイドウは、バラ科の落葉低木で、春に淡紅色の花を下向きに咲かせる3月24日の誕生花です。花言葉は「美人の眠り」。可憐で気品ある花です。</p>
+    <p class="art-lead">うつむくように淡紅色の花を咲かせるカイドウ。3月24日の誕生花に選ばれたこの花木は、しっかり休むことの大切さを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カイドウとは</a></li>
-      <li><a href="#meaning">カイドウが象徴する意味</a></li>
-      <li><a href="#charm">カイドウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月24日の誕生花として親しまれるカイドウ</a></li>
+      <li><a href="#story">うつむいて咲く、カイドウと静かな春の休息</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カイドウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カイドウとは</h2>
-    <p>カイドウは、バラ科の落葉低木で、3月24日の誕生花として知られています。「花海棠」とも呼ばれ、桜と同じ頃に、うつむくように下向きの淡紅色の花を咲かせます。中国では古くから美しさを象徴する花として、絵画や詩に多く詠まれてきました。</p>
-  </section>
+    <h2>3月24日の誕生花として親しまれるカイドウ</h2>
+    <p>カイドウは、バラ科の落葉低木です。春になると、淡紅色の花を下向きに咲かせます。上を向いて堂々と咲く花とは対照的に、うつむくように咲くその姿が、独特の可憐さを漂わせています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カイドウが象徴する意味</h2>
-    <p>カイドウの花言葉は「美人の眠り」です。中国の故事で、酒に酔って眠る楊貴妃の上気した頬の色が、カイドウの花色にたとえられたという伝説に由来すると言われています。うつむくように咲く花姿も、まどろむ美人の姿を思わせます。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カイドウの魅力</h2>
-    <p>カイドウの魅力は、桜とはまた違った、うつむき加減に咲く花のはかなげな美しさにあります。枝垂れるように連なって咲く花房は、見上げるたびに優雅な表情を見せてくれ、庭木としても古くから愛されてきました。3月24日生まれの方はもちろん、気品ある美しさを称える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カイドウは日当たりの良い場所を好み、水はけの良い土で育てるのがおすすめです。花芽は前年の枝にできるため、剪定は花が終わった直後に行うと翌年も花付きよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月24日生まれの方はもちろん、気品ある美しさを称えたい贈り物としてもカイドウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">カイドウはいつ頃咲きますか？</div>
-        <div class="faq-a">春、桜と同じ頃にうつむくような淡紅色の花を咲かせます。バラ科の落葉低木で、「花海棠」とも呼ばれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カイドウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「美人の眠り」という花言葉は、中国の故事で酒に酔って眠る楊貴妃の上気した頬の色が、カイドウの花色にたとえられたという伝説に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カイドウはどんな咲き方をしますか？</div>
-        <div class="faq-a">枝から連なって垂れ下がるように、うつむき加減の淡紅色の花を咲かせます。見上げるたびに違った表情を見せる優雅な花姿が特徴です。</div>
+        <div class="faq-a">春に淡紅色の花を下向きに咲かせます。ちょうど3月頃から見頃を迎える花木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>うつむいて咲く、カイドウと静かな春の休息</h2>
+    <p>多くの花が太陽に向かって顔を上げるように咲く中で、カイドウの花はうなだれるように下を向いて咲きます。その姿は、疲れて眠っているようにも、あるいは静かに何かを見つめているようにも見えます。淡い紅色をまとい、伏し目がちに咲く花――その佇まいから、「美人の眠り」という花言葉が生まれたといわれています。眠りという言葉は、怠けているという意味ではありません。しっかりと休むことは、次に咲くための大切な準備なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カイドウの花言葉「美人の眠り」の由来は？</div>
+        <div class="faq-a">下向きに咲く淡紅色の花の、伏し目がちで可憐な佇まいに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>しっかり休むことは、次に咲くための大切な準備です。今日は、少し早めに手を止めて、心と体を休めてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カイドウから始める小さな体験</h2>
+    <p>下向きに淡紅色の花を咲かせるカイドウにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>下向きに咲く淡紅色の花を探して観察してみる</li>
+      <li>今日は少し早めに休んでみる</li>
+      <li>淡いピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カイドウの花はどんな色をしていますか？</div>
+        <div class="faq-a">淡い紅色をしています。下向きに咲く姿と合わさって、可憐で控えめな印象を与えます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">下向きにそっと眠るように咲く花に安らぎを覚えた今日は、月齢や吉日もあわせて確認してみませんか。開運カレンダーでは、その日の月齢や吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月24日、うつむくように咲くカイドウは、しっかり休むことの大切さを教えてくれる花です。</p>
     <ul>
-      <li>カイドウは春にうつむく淡紅色の花を咲かせる、3月24日の誕生花</li>
-      <li>花言葉は「美人の眠り」、楊貴妃の頬の色にたとえた故事に由来する</li>
-      <li>うつむき加減に咲くはかなげで気品ある花姿が魅力</li>
-      <li>水はけの良い場所で、花後すぐの剪定を心がけて育てたい</li>
+      <li>カイドウはバラ科の落葉低木で、春に淡紅色の花を下向きに咲かせる</li>
+      <li>伏し目がちに咲く姿が独特の可憐さを生む</li>
+      <li>花言葉は「美人の眠り」。うつむいて咲く佇まいに由来するといわれる</li>
+      <li>休むことは次へ進むための大切な準備でもある</li>
     </ul>
   </section>
 

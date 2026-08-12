@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0313/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月13日の誕生花ノースポールの花言葉・特徴・魅力をわかりやすく解説。「誠実」を象徴する冬から春に咲き続ける花の意味を紹介します。">
+  <meta name="description" content="3月13日の誕生花ノースポールの花言葉・特徴・魅力をわかりやすく解説。「誠実」を象徴する、冬から春に咲き続ける白い花の意味を紹介します。">
   <title>3月13日の誕生花はノースポール｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ノースポールはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、白い花を株いっぱいに長期間咲かせます。キク科の一年草で、寒さに強く育てやすい花です。"}},
-      {"@type":"Question","name":"ノースポールの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「誠実」という花言葉は、寒さの厳しい時期にも変わらず花を咲かせ続ける実直な性質が、まっすぐな心に重ねられたことに由来すると言われています。"}},
-      {"@type":"Question","name":"ノースポールはどれくらいの期間花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて非常に長い期間花を咲かせ続けるのが特徴で、寄せ植えの土台としても幅広く活用されています。"}}
+      {"@type":"Question","name":"ノースポールはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて長く見頃が続きます。株いっぱいに白い花を咲かせ、寒い時期から暖かくなる季節まで変わらず楽しめます。"}},
+      {"@type":"Question","name":"ノースポールの花言葉「誠実」の由来は？","acceptedAnswer":{"@type":"Answer","text":"寒さの厳しい冬から暖かくなる春まで、環境の変化にかかわらず白い花を咲かせ続ける姿に由来するといわれています。"}},
+      {"@type":"Question","name":"ノースポールはマーガレットと同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"花姿が似ているため混同されることがありますが、ノースポールとマーガレットは異なる植物として扱われています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 13 · 誕生花</span>
     <h1>3月13日の誕生花はノースポール<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ノースポールは、キク科の一年草で、冬から春に白い花を株いっぱいに咲かせる3月13日の誕生花です。花言葉は「誠実」。清楚で明るい印象の花です。</p>
+    <p class="art-lead">冬から春にかけて、株いっぱいに白い花を咲かせ続けるノースポール。3月13日の誕生花に選ばれたこの花は、まっすぐな信頼を寄せたくなる誠実さを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ノースポール</dd>
     <dt>花言葉</dt><dd>誠実</dd>
     <dt>科名</dt><dd>キク科</dd>
-    <dt>見頃</dt><dd>冬から春</dd>
+    <dt>見頃</dt><dd>冬〜春</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ノースポールとは</a></li>
-      <li><a href="#meaning">ノースポールが象徴する意味</a></li>
-      <li><a href="#charm">ノースポールの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">冬から春へ、咲き続けるノースポールの白い花</a></li>
+      <li><a href="#story">3月13日、ノースポールが示す、変わらない誠実さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ノースポールから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ノースポールとは</h2>
-    <p>ノースポールは、キク科の一年草で、3月13日の誕生花として知られています。中心が黄色く花びらが白い、マーガレットに似た可憐な花を、冬の寒い時期から春まで長期間にわたって株いっぱいに咲かせ続ける丈夫さが特徴です。</p>
-  </section>
+    <h2>冬から春へ、咲き続けるノースポールの白い花</h2>
+    <p>ノースポールは、キク科の一年草です。冬から春にかけての長い期間、白い花を株いっぱいに咲かせ続けます。マーガレットに似た清楚な花姿で、寒さの厳しい時期から暖かくなる季節まで、変わらず咲き続ける生命力を持つ花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ノースポールが象徴する意味</h2>
-    <p>ノースポールの花言葉は「誠実」です。寒さの厳しい時期にも変わらず花を咲かせ続ける実直な性質が、まっすぐで裏表のない誠実な心に重ねられたことに由来すると言われています。「誠意」「冬の足音」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ノースポールの魅力</h2>
-    <p>ノースポールの魅力は、真っ白な花びらが株を覆うほど数多く咲き、冬の花壇を明るく彩ってくれるところです。開花期間が非常に長く、コンパクトにまとまって育つため、寄せ植えの土台としても幅広く活用されています。3月13日生まれの方はもちろん、誠実な気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ノースポールは日当たりの良い場所を好み、寒さに強く育てやすい花です。花がら摘みをこまめに行うことで、コンパクトな樹形を保ちながら長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月13日生まれの方はもちろん、誠実な気持ちを届けたい贈り物としてもノースポールは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ノースポールはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、白い花を株いっぱいに長期間咲かせます。キク科の一年草で、寒さに強く育てやすい花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノースポールの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「誠実」という花言葉は、寒さの厳しい時期にも変わらず花を咲かせ続ける実直な性質が、まっすぐな心に重ねられたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノースポールはどれくらいの期間花を楽しめますか？</div>
-        <div class="faq-a">冬から春にかけて非常に長い期間花を咲かせ続けるのが特徴で、寄せ植えの土台としても幅広く活用されています。</div>
+        <div class="faq-a">冬から春にかけて長く見頃が続きます。株いっぱいに白い花を咲かせ、寒い時期から暖かくなる季節まで変わらず楽しめます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月13日、ノースポールが示す、変わらない誠実さ</h2>
+    <p>ノースポールの魅力は、その花期の長さにあります。厳しい寒さの中で咲き始め、暖かくなっていく季節の変化を越えても、株いっぱいの白い花を咲かせ続けます。派手さはなくても、環境の変化に左右されず変わらず咲き続けるその姿は、約束を守り続ける誠実さそのものです。この変わらなさから、ノースポールには「誠実」という花言葉が贈られてきたといわれています。誠実さとは、完璧に振る舞うことではなく、状況が変わっても変わらない態度を持ち続けることなのかもしれません。3月という変化の多い時期だからこそ、ノースポールの咲き続ける姿から、変わらないことの価値を思い出したい花です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ノースポールの花言葉「誠実」の由来は？</div>
+        <div class="faq-a">寒さの厳しい冬から暖かくなる春まで、環境の変化にかかわらず白い花を咲かせ続ける姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>完璧さより大切なのは、変わらずそこにいることです。今日は、誠実な佇まいを大切にしてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ノースポールから始める小さな体験</h2>
+    <p>冬から春まで咲き続けるノースポールにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>株いっぱいに咲く白い花を探してみる</li>
+      <li>約束したことを一つ、きちんと守ってみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ノースポールはマーガレットと同じ花ですか？</div>
+        <div class="faq-a">花姿が似ているため混同されることがありますが、ノースポールとマーガレットは異なる植物として扱われています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">変わらない誠実さを意識できた今日は、ラッキーアイテムやおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーアイテムやおすすめの行動をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月13日、冬から春まで咲き続けるノースポールは、環境が変わっても変わらない誠実さの価値を教えてくれる花です。</p>
     <ul>
-      <li>ノースポールは冬から春に白い花を咲かせ続ける、3月13日の誕生花</li>
-      <li>花言葉は「誠実」、寒さの中でも変わらず咲き続ける性質に由来する</li>
-      <li>真っ白な花びらと長い開花期間が魅力</li>
-      <li>寒さに強く、花がら摘みをしながら育てたい</li>
+      <li>ノースポールはキク科の一年草で、冬から春にかけて白い花を株いっぱいに咲かせ続ける</li>
+      <li>環境の変化にかかわらず咲き続ける姿が、変わらない誠実さを連想させる</li>
+      <li>花言葉は「誠実」。完璧さではなく変わらない態度を象徴するといわれる</li>
+      <li>花姿の似たマーガレットとは異なる植物として扱われる</li>
     </ul>
   </section>
 

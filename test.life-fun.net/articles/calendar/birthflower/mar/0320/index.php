@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0320/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月20日の誕生花アカシアの花言葉・特徴・魅力をわかりやすく解説。「秘めた愛」を象徴する香り漂う花木の意味を紹介します。">
+  <meta name="description" content="3月20日の誕生花アカシアの花言葉・特徴・魅力をわかりやすく解説。「秘めた愛」を象徴する、黄色い花房が香る花木の意味を紹介します。">
   <title>3月20日の誕生花はアカシア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アカシアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に黄色い小花を房状に咲かせます。マメ科の常緑高木で、甘い香りが特徴の花木です。"}},
-      {"@type":"Question","name":"アカシアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「秘めた愛」という花言葉は、ふんわりとした花の内側に甘い香りを蓄えている様子が、胸の内に秘めた恋心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"アカシアはミモザと同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"日本では黄色い花を咲かせるアカシアの仲間が「ミモザ」として親しまれることが多く、混同されがちですが、植物学上はどちらもマメ科アカシア属の花木です。"}}
+      {"@type":"Question","name":"アカシアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に黄色い小花を房状に咲かせます。ちょうど3月頃、春の訪れを告げる花木として親しまれています。"}},
+      {"@type":"Question","name":"アカシアの花言葉「秘めた愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"木いっぱいに咲き誇る華やかな姿と、控えめな香りとの対比に由来するといわれています。"}},
+      {"@type":"Question","name":"アカシアとミモザは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"近縁で見た目が似ているため混同されることもありますが、それぞれ異なる特徴を持つ植物といわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 20 · 誕生花</span>
     <h1>3月20日の誕生花はアカシア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アカシアは、マメ科の常緑高木で、早春に黄色い小花を房状に咲かせる3月20日の誕生花です。花言葉は「秘めた愛」。香り高い花木です。</p>
+    <p class="art-lead">黄色い花房をたっぷりと咲かせるアカシア。3月20日の誕生花に選ばれたこの花木は、華やかな姿と控えめな香りの対比が印象的です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アカシアとは</a></li>
-      <li><a href="#meaning">アカシアが象徴する意味</a></li>
-      <li><a href="#charm">アカシアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月20日の誕生花として親しまれるアカシア</a></li>
+      <li><a href="#story">黄色い花房が香る、アカシアと早春の訪れ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アカシアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アカシアとは</h2>
-    <p>アカシアは、マメ科の常緑高木で、3月20日の誕生花として知られています。ふわふわとした黄色い小花が房状に集まって咲き、甘い香りを漂わせます。日本ではミモザと混同して呼ばれることも多く、はちみつの原料としても知られる花木です。</p>
-  </section>
+    <h2>3月20日の誕生花として親しまれるアカシア</h2>
+    <p>アカシアは、マメ科の常緑高木です。早春になると、黄色い小花を房状にたっぷりと咲かせます。木全体を覆うように咲く花房は、遠くからでも目を引く華やかさを持っています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アカシアが象徴する意味</h2>
-    <p>アカシアの花言葉は「秘めた愛」です。ふんわりと柔らかな花の内側に甘い香りを蓄えている様子が、表には出さずに胸の内に秘めた恋心を思わせることに由来すると言われています。「優雅」「友情」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アカシアの魅力</h2>
-    <p>アカシアの魅力は、まだ肌寒い早春に一足早く咲く鮮やかな黄色の花房と、あたりに漂う甘い香りにあります。枝を切って室内に飾れば、ふわふわとした質感と香りで春の訪れをいち早く感じることができ、はちみつの原料としても親しまれています。3月20日生まれの方はもちろん、密かな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アカシアは日当たりと水はけの良い場所を好み、成長が早いため定期的な剪定で樹形を整えるのがおすすめです。寒さにやや弱いため、地域によっては防寒対策も検討するとよいでしょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月20日生まれの方はもちろん、密かな想いを届けたい贈り物としてもアカシアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">アカシアはいつ頃咲きますか？</div>
-        <div class="faq-a">早春に黄色い小花を房状に咲かせます。マメ科の常緑高木で、甘い香りが特徴の花木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アカシアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「秘めた愛」という花言葉は、ふんわりとした花の内側に甘い香りを蓄えている様子が、胸の内に秘めた恋心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アカシアはミモザと同じ花ですか？</div>
-        <div class="faq-a">日本では黄色い花を咲かせるアカシアの仲間が「ミモザ」として親しまれることが多く、混同されがちですが、植物学上はどちらもマメ科アカシア属の花木です。</div>
+        <div class="faq-a">早春に黄色い小花を房状に咲かせます。ちょうど3月頃、春の訪れを告げる花木として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>黄色い花房が香る、アカシアと早春の訪れ</h2>
+    <p>早春の澄んだ空気の中、アカシアの黄色い花房から漂う香りは、どこか甘く、そして控えめです。木いっぱいに咲き誇る姿は華やかなのに、香りは決して主張しすぎない――そのバランスの取れた佇まいが印象的です。目立つ姿と控えめな香りの対比から、「秘めた愛」という花言葉が生まれたといわれています。秘めているというのは、隠すべき恥ずかしい感情ということではなく、あふれそうな気持ちを、そっと胸の内にとどめておく静かな強さを表しているのかもしれません。なお、アカシアと近縁のミモザは見た目が似ているため混同されることもありますが、それぞれ異なる特徴を持つ植物です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アカシアの花言葉「秘めた愛」の由来は？</div>
+        <div class="faq-a">木いっぱいに咲き誇る華やかな姿と、控えめな香りとの対比に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>胸の内にしまった想いは、香りのように、時間をかけてゆっくりと広がっていきます。今日は、その想いをそっと大切に扱ってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アカシアから始める小さな体験</h2>
+    <p>黄色い花房を咲かせるアカシアにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>房状に咲く黄色い花の香りを確かめてみる</li>
+      <li>誰にも言わずにいる気持ちを一つ、心の中で確かめてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アカシアとミモザは同じ花ですか？</div>
+        <div class="faq-a">近縁で見た目が似ているため混同されることもありますが、それぞれ異なる特徴を持つ植物といわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">黄色い花房の奥にひそむ控えめな香りに気づいた今日は、六曜や月齢、ラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、その日の六曜や月齢、ラッキーカラーもまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月20日、華やかな姿と控えめな香りを併せ持つアカシアは、そっとしまっておく想いの重みを教えてくれる花です。</p>
     <ul>
-      <li>アカシアは早春に黄色い小花を房状に咲かせる、3月20日の誕生花</li>
-      <li>花言葉は「秘めた愛」、香りを内に秘めた花の佇まいに由来する</li>
-      <li>ふわふわとした花房と甘い香りが魅力</li>
-      <li>日当たりの良い場所で、定期的な剪定をしながら育てたい</li>
+      <li>アカシアはマメ科の常緑高木で、早春に黄色い花を房状に咲かせる</li>
+      <li>華やかな姿と控えめな香りの対比が魅力</li>
+      <li>花言葉は「秘めた愛」。胸の内にとどめる静かな想いを象徴するといわれる</li>
+      <li>近縁のミモザとは異なる植物とされる</li>
     </ul>
   </section>
 

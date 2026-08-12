@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0317/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月17日の誕生花ブルーレースフラワーの花言葉・特徴・魅力をわかりやすく解説。「無言の愛」を象徴するレースのように咲く花の意味を紹介します。">
+  <meta name="description" content="3月17日の誕生花ブルーレースフラワーの花言葉・特徴・魅力をわかりやすく解説。「無言の愛」を象徴する、レースのように精巧な青紫の花の意味を紹介します。">
   <title>3月17日の誕生花はブルーレースフラワー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ブルーレースフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏にレースのような繊細な質感の花を咲かせます。セリ科の一年草で、青紫の色合いが上品な印象を与えます。"}},
-      {"@type":"Question","name":"ブルーレースフラワーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「無言の愛」という花言葉は、控えめに美しさを添える花の在り方が、言葉にせずとも伝わる静かな愛情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ブルーレースフラワーはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が無数に集まり、レース編みのように繊細な質感の花房を作ります。ブーケの名脇役として重宝される花です。"}}
+      {"@type":"Question","name":"ブルーレースフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏にレースのような繊細な花を咲かせます。3月17日は誕生花として定められている日で、実際の開花期とは異なります。"}},
+      {"@type":"Question","name":"ブルーレースフラワーの花言葉「無言の愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"レースのように精巧な形をした花が、言葉を発さずとも美しさを語りかけてくる佇まいに由来するといわれています。"}},
+      {"@type":"Question","name":"ブルーレースフラワーの花の色はどんな色ですか？","acceptedAnswer":{"@type":"Answer","text":"青紫色をしています。レースのような繊細な花の形と合わさって、涼しげな印象を与えます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 17 · 誕生花</span>
     <h1>3月17日の誕生花はブルーレースフラワー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ブルーレースフラワーは、セリ科の一年草で、初夏にレースのような花を咲かせる3月17日の誕生花です。花言葉は「無言の愛」。繊細で上品な花です。</p>
+    <p class="art-lead">レース細工のように精巧な花を咲かせるブルーレースフラワー。3月17日の誕生花に選ばれたこの花は、言葉を使わずに美しさを語りかけてきます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ブルーレースフラワーとは</a></li>
-      <li><a href="#meaning">ブルーレースフラワーが象徴する意味</a></li>
-      <li><a href="#charm">ブルーレースフラワーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月17日の誕生花として親しまれるブルーレースフラワー</a></li>
+      <li><a href="#story">レースのような形が語る、ブルーレースフラワーの無言の美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ブルーレースフラワーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ブルーレースフラワーとは</h2>
-    <p>ブルーレースフラワーは、セリ科の一年草で、3月17日の誕生花として知られています。小さな花が無数に集まり、レース編みのように繊細な質感の花房を作り出すことからこの名がつけられ、青紫の色合いが上品な印象を与える花です。</p>
-  </section>
+    <h2>3月17日の誕生花として親しまれるブルーレースフラワー</h2>
+    <p>ブルーレースフラワーは、セリ科の一年草です。初夏になると、レースのように繊細な花を咲かせます。青紫色の小さな花が集まって咲く姿は、まるで手編みのレースのような緻密さを持っています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ブルーレースフラワーが象徴する意味</h2>
-    <p>ブルーレースフラワーの花言葉は「無言の愛」です。派手に主張することなく、細やかなレースのような姿でひっそりと美しさを添える花の在り方が、言葉にせずとも伝わる静かな愛情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ブルーレースフラワーの魅力</h2>
-    <p>ブルーレースフラワーの魅力は、繊細に広がる花房が生み出す独特の質感と、他の花を引き立てる控えめな上品さにあります。花束の中に添えるだけで全体の雰囲気を柔らかく格上げしてくれるため、ブーケの名脇役として重宝されます。3月17日生まれの方はもちろん、言葉にできない想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ブルーレースフラワーは日当たりと風通しの良い場所を好み、水はけの良い土で育てるのがおすすめです。茎が細く倒れやすいため、支柱を立てて育てるとよいでしょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月17日生まれの方はもちろん、言葉にできない想いを届けたい贈り物としてもブルーレースフラワーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏にレースのような繊細な質感の花を咲かせます。セリ科の一年草で、青紫の色合いが上品な印象を与えます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「無言の愛」という花言葉は、控えめに美しさを添える花の在り方が、言葉にせずとも伝わる静かな愛情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーはどんな咲き方をしますか？</div>
-        <div class="faq-a">小さな花が無数に集まり、レース編みのように繊細な質感の花房を作ります。ブーケの名脇役として重宝される花です。</div>
+        <div class="faq-a">初夏にレースのような繊細な花を咲かせます。3月17日は誕生花として定められている日で、実際の開花期とは異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>レースのような形が語る、ブルーレースフラワーの無言の美しさ</h2>
+    <p>ブルーレースフラワーの花をよく見ると、小さな花が無数に集まり、まるで職人が編んだレース細工のような繊細な模様を描いていることに気づきます。一つひとつの花は決して目立ちませんが、集まることで初めて、その精巧な形が浮かび上がってくるのです。言葉を発することなく、ただ形そのもので美しさを語りかけてくる――そんな佇まいから、「無言の愛」という花言葉が生まれたといわれています。言葉にしないことは、気持ちを伝える努力を放棄することとは違います。時には、形や行動が言葉以上に多くを語ることもあるのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーの花言葉「無言の愛」の由来は？</div>
+        <div class="faq-a">レースのように精巧な形をした花が、言葉を発さずとも美しさを語りかけてくる佇まいに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>行動や態度は、時に言葉よりも雄弁に気持ちを伝えます。今日は、誰かへの気持ちを、行動でそっと表してみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ブルーレースフラワーから始める小さな体験</h2>
+    <p>レースのように精巧な花を咲かせるブルーレースフラワーにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>レースのような繊細な花びらをじっくり観察してみる</li>
+      <li>言葉にせず、行動で気持ちを示してみる</li>
+      <li>青紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ブルーレースフラワーの花の色はどんな色ですか？</div>
+        <div class="faq-a">青紫色をしています。レースのような繊細な花の形と合わさって、涼しげな印象を与えます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">レース細工のような花の形に見入った今日は、六曜やラッキーアイテム、吉日もあわせて確認してみませんか。開運カレンダーでは、その日の六曜やラッキーアイテム、吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月17日、レースのように精巧な花を咲かせるブルーレースフラワーは、言葉にしない美しさを教えてくれる花です。</p>
     <ul>
-      <li>ブルーレースフラワーは初夏にレースのような花を咲かせる、3月17日の誕生花</li>
-      <li>花言葉は「無言の愛」、控えめに美しさを添える花姿に由来する</li>
-      <li>繊細な質感の花房と上品な青紫の色合いが魅力</li>
-      <li>水はけの良い場所で、支柱を立てて倒伏を防ぎながら育てたい</li>
+      <li>ブルーレースフラワーはセリ科の一年草で、初夏にレースのような花を咲かせる</li>
+      <li>小さな花が集まって精巧なレース模様を描く</li>
+      <li>花言葉は「無言の愛」。言葉を使わずに語りかける佇まいを象徴するといわれる</li>
+      <li>青紫色の花が涼しげな印象を与える</li>
     </ul>
   </section>
 

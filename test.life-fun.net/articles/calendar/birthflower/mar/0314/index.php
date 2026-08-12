@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0314/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月14日の誕生花モモの花言葉・特徴・魅力をわかりやすく解説。「あなたのとりこ」を象徴する華やかな春を告げる花の意味を紹介します。">
+  <meta name="description" content="3月14日の誕生花モモの花言葉・特徴・魅力をわかりやすく解説。「あなたのとりこ」を象徴する、桜より濃い桃色の花の意味を紹介します。">
   <title>3月14日の誕生花はモモ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"モモはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春、桜よりも一足早く濃い桃色の花を咲かせます。バラ科の落葉小高木で、ひなまつりの花としても親しまれています。"}},
-      {"@type":"Question","name":"モモの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「あなたのとりこ」という花言葉は、花色の濃さと甘い香りが人を強く惹きつけることに由来すると言われています。"}},
-      {"@type":"Question","name":"モモはひなまつりとどんな関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"旧暦の3月3日頃にちょうど花期を迎えることから「桃の節句」とも呼ばれ、ひなまつりに欠かせない花として古くから飾られてきました。"}}
+      {"@type":"Question","name":"モモの花はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に見頃を迎えます。桜より濃い桃色の花を咲かせ、桃の節句の頃には華やかに咲きそろいます。"}},
+      {"@type":"Question","name":"モモの花言葉「あなたのとりこ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"桜より一段と濃い桃色が、見る人の視線を強く引きつける、その印象の強さに由来するといわれています。"}},
+      {"@type":"Question","name":"モモの花と実（食用の桃）は同じ時期に楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、花を楽しむ時期は春で、実を収穫する時期は主に夏にあたります。観賞用と食用とでは見頃が異なるといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 14 · 誕生花</span>
     <h1>3月14日の誕生花はモモ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">モモは、バラ科の落葉小高木で、春に桜より濃い桃色の花を咲かせる3月14日の誕生花です。花言葉は「あなたのとりこ」。華やかで生命力あふれる花です。</p>
+    <p class="art-lead">桜より一段と濃い桃色で、視線を釘付けにするモモの花。3月14日の誕生花に選ばれたこの花木は、思わず目が離せなくなる高揚感を届けてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">モモとは</a></li>
-      <li><a href="#meaning">モモが象徴する意味</a></li>
-      <li><a href="#charm">モモの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">桜より濃く、視線を引きつけるモモの桃色</a></li>
+      <li><a href="#story">3月14日、モモの花が生む、目が離せなくなる高揚感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、モモから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>モモとは</h2>
-    <p>モモは、バラ科の落葉小高木で、3月14日の誕生花として知られています。桜よりも一足早く、濃く鮮やかな桃色の花を咲かせ、3月3日のひなまつりに欠かせない花としても古くから親しまれてきました。日本の昔話「桃太郎」にも登場するなど、縁起の良い果樹としても知られています。</p>
-  </section>
+    <h2>桜より濃く、視線を引きつけるモモの桃色</h2>
+    <p>モモは、バラ科の落葉小高木です。春になると、桜より一段と濃い桃色の花を咲かせます。花で楽しむモモと、実を食べるために育てられるモモとでは、開花や収穫の時期が異なり、花の見頃はもっぱら春に集中しています。華やかで生命力あふれる印象を持つ花木として、桃の節句を彩る花としても親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>モモが象徴する意味</h2>
-    <p>モモの花言葉は「あなたのとりこ」です。花色の濃さと甘い香りが人を強く惹きつけることから、この情熱的な花言葉がつけられたと言われています。「気立ての良さ」「天下無敵」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>モモの魅力</h2>
-    <p>モモの魅力は、桜よりも濃く華やかな花色と、枝いっぱいに花をつける生命力あふれる姿にあります。ひなまつりの飾りとしても用いられ、春の訪れを告げる季節の風物詩として日本の暮らしに深く根付いています。3月14日生まれの方はもちろん、強く惹かれる想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>モモは日当たりと水はけの良い場所を好み、乾燥しすぎない程度に水を与えて育てるのがおすすめです。花芽は前年の枝にできるため、剪定は花後の早い時期に行うと翌年も花付きよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月14日生まれの方はもちろん、強く惹かれる想いを届けたい贈り物としてもモモは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モモはいつ頃咲きますか？</div>
-        <div class="faq-a">春、桜よりも一足早く濃い桃色の花を咲かせます。バラ科の落葉小高木で、ひなまつりの花としても親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モモの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「あなたのとりこ」という花言葉は、花色の濃さと甘い香りが人を強く惹きつけることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モモはひなまつりとどんな関係がありますか？</div>
-        <div class="faq-a">旧暦の3月3日頃にちょうど花期を迎えることから「桃の節句」とも呼ばれ、ひなまつりに欠かせない花として古くから飾られてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">モモの花はいつ頃咲きますか？</div>
+        <div class="faq-a">春に見頃を迎えます。桜より濃い桃色の花を咲かせ、桃の節句の頃には華やかに咲きそろいます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月14日、モモの花が生む、目が離せなくなる高揚感</h2>
+    <p>モモの花色を桜と見比べると、その濃さの違いにはっとすることがあります。淡くやわらかい桜の色に対して、モモはより濃く鮮やかな桃色をまとい、見る人の視線を強く引きつけます。一度気づくと、しばらく目が離せなくなるほどの存在感――その強い印象から、モモには「あなたのとりこ」という花言葉が贈られてきたといわれています。とりこになるという言葉は、誰かへの執着的な感情だけを指すのではなく、色や景色、好きなものに夢中になる純粋な高揚感も含んでいるのでしょう。桃の節句とも重なるこの時期、濃い桃色の花に、しばし目を奪われてみるのも良さそうです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">モモの花言葉「あなたのとりこ」の由来は？</div>
+        <div class="faq-a">桜より一段と濃い桃色が、見る人の視線を強く引きつける、その印象の強さに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>夢中になれるものがあるのは、幸せなことです。今日は目が離せなくなるものを、素直に楽しんでみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、モモから始める小さな体験</h2>
+    <p>濃い桃色の花を咲かせるモモにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>桜との色の濃さの違いを見比べてみる</li>
+      <li>心惹かれているものを一つ思い浮かべてみる</li>
+      <li>濃い桃色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">モモの花と実（食用の桃）は同じ時期に楽しめますか？</div>
+        <div class="faq-a">いいえ、花を楽しむ時期は春で、実を収穫する時期は主に夏にあたります。観賞用と食用とでは見頃が異なるといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">濃い桃色に目を奪われた今日は、ラッキーアイテムや吉日もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーアイテムや吉日をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月14日、桜より濃い桃色の花を咲かせるモモは、思わず目が離せなくなる高揚感を教えてくれる花です。</p>
     <ul>
-      <li>モモは春に濃い桃色の花を咲かせる、3月14日の誕生花</li>
-      <li>花言葉は「あなたのとりこ」、人を惹きつける花色と香りに由来する</li>
-      <li>桜より華やかな花色とひなまつりとのゆかりが魅力</li>
-      <li>水はけの良い場所で、花後すぐの剪定を心がけて育てたい</li>
+      <li>モモはバラ科の落葉小高木で、春に桜より濃い桃色の花を咲かせる</li>
+      <li>桜より一段と濃い色合いが、強い視線の引きつけを生む</li>
+      <li>花言葉は「あなたのとりこ」。見る人の視線を強く引きつける印象を象徴するといわれる</li>
+      <li>花を楽しむ時期と実を収穫する時期は異なる</li>
     </ul>
   </section>
 

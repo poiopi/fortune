@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0302/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月2日の誕生花アリッサムの花言葉・特徴・魅力をわかりやすく解説。「仲直り」を象徴する可憐に咲く花の意味を紹介します。">
+  <meta name="description" content="3月2日の誕生花アリッサムの花言葉・特徴・魅力をわかりやすく解説。「仲直り」を象徴する、小さな花が株いっぱいに咲く花の意味を紹介します。">
   <title>3月2日の誕生花はアリッサム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アリッサムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏にかけて、小さな白い花を株いっぱいに密集して咲かせます。アブラナ科の一年草で、花壇の縁取りとしても人気です。"}},
-      {"@type":"Question","name":"アリッサムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「仲直り」という花言葉は、小さな花が寄り添うように群れて咲く様子が、和解した人々の姿を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"アリッサムはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりと風通しの良い場所を好み、乾燥にも比較的強いため、花壇の縁取りやグラウンドカバーとして育てやすい花です。"}}
+      {"@type":"Question","name":"アリッサムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏にかけて見頃を迎えます。小さな花を株いっぱいに密集させて咲かせ、可憐な印象を庭先に添えてくれます。"}},
+      {"@type":"Question","name":"アリッサムの花言葉「仲直り」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が一つひとつ寄り添うように株いっぱいに咲きそろう姿に由来するといわれています。小さな歩み寄りが積み重なっていく様子を象徴する言葉とされます。"}},
+      {"@type":"Question","name":"アリッサムとスイートアリッサムは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"近縁の花ですが、厳密には異なる種として扱われます。どちらも小さな花が密集して咲く点で似た魅力を持っています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 2 · 誕生花</span>
     <h1>3月2日の誕生花はアリッサム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アリッサムは、アブラナ科の一年草で、春から初夏に小さな白い花を密集して咲かせる3月2日の誕生花です。花言葉は「仲直り」。可憐で親しみやすい花です。</p>
+    <p class="art-lead">小さな花が寄り添うように、株いっぱいに咲きそろうアリッサム。3月2日の誕生花に選ばれたこの花は、密集して咲く可憐な姿で、見る人の心をやわらかくほどいてくれます。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>アリッサム</dd>
     <dt>花言葉</dt><dd>仲直り</dd>
     <dt>科名</dt><dd>アブラナ科</dd>
-    <dt>見頃</dt><dd>春から初夏</dd>
+    <dt>見頃</dt><dd>春〜初夏</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アリッサムとは</a></li>
-      <li><a href="#meaning">アリッサムが象徴する意味</a></li>
-      <li><a href="#charm">アリッサムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">株いっぱいに寄り添って咲く、アリッサムの小花</a></li>
+      <li><a href="#story">3月2日、アリッサムが小花で示す、歩み寄りのかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アリッサムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アリッサムとは</h2>
-    <p>アリッサムは、アブラナ科の一年草で、3月2日の誕生花として知られています。「スイートアリッサム」とも呼ばれ、小さな十字形の花が株いっぱいに密集して咲く姿が特徴です。花壇の縁取りやグラウンドカバーとして世界中の庭で親しまれています。</p>
-  </section>
+    <h2>株いっぱいに寄り添って咲く、アリッサムの小花</h2>
+    <p>アリッサムは、アブラナ科の一年草です。春から初夏にかけて、小さな花を株いっぱいに密集させて咲かせます。一つひとつの花は控えめでも、寄り添うように集まって咲く姿は可憐で愛らしく、庭先や花壇を優しい印象で埋めてくれる花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アリッサムが象徴する意味</h2>
-    <p>アリッサムの花言葉は「仲直り」です。小さな花が寄り添うように群れて咲く様子が、仲直りをして再び心を寄せ合う人々の姿を思わせることに由来すると言われています。「美しさに優る価値」という花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アリッサムの魅力</h2>
-    <p>アリッサムの魅力は、小花が集まって作り出すこんもりとしたボリューム感と、ほのかに漂う甘い香りにあります。白のほか、ピンクや紫の品種もあり、他の花との相性も良いため寄せ植えの名脇役として重宝されます。3月2日生まれの方はもちろん、すれ違いを乗り越えた人への贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アリッサムは日当たりと風通しの良い場所を好み、乾燥に強い性質を持っています。花がら摘みをこまめに行うことで、長い期間こんもりとした花姿を保つことができます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月2日生まれの方はもちろん、仲直りの気持ちを伝えたい贈り物としてもアリッサムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">アリッサムはいつ頃咲きますか？</div>
-        <div class="faq-a">春から初夏にかけて、小さな白い花を株いっぱいに密集して咲かせます。アブラナ科の一年草で、花壇の縁取りとしても人気です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アリッサムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「仲直り」という花言葉は、小さな花が寄り添うように群れて咲く様子が、和解した人々の姿を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アリッサムはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりと風通しの良い場所を好み、乾燥にも比較的強いため、花壇の縁取りやグラウンドカバーとして育てやすい花です。</div>
+        <div class="faq-a">春から初夏にかけて見頃を迎えます。小さな花を株いっぱいに密集させて咲かせ、可憐な印象を庭先に添えてくれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月2日、アリッサムが小花で示す、歩み寄りのかたち</h2>
+    <p>3月に入り、まだ肌寒さの残る庭先に、アリッサムの小さな花がぽつぽつと咲き始めます。ここから春が深まるにつれて花の数は少しずつ増えていき、初夏を迎える頃には株いっぱいに咲き広がって、離れて見ても分かるほどの存在感を放つようになります。一つひとつの小さな花が、季節の歩みとともに寄り添う数を増やしていくように――そんな咲き方の重なりから、アリッサムには「仲直り」という花言葉が贈られてきたといわれています。ぎくしゃくした関係も、大きな決着を急ぐ必要はなく、季節が少しずつ移ろうように小さな歩み寄りを積み重ねていくことで、いつの間にかほどけていくものなのかもしれません。新しい生活や環境の変化を控えるこの時期だからこそ、身近な関係を見つめ直すきっかけにしてみたい花です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アリッサムの花言葉「仲直り」の由来は？</div>
+        <div class="faq-a">小さな花が一つひとつ寄り添うように株いっぱいに咲きそろう姿に由来するといわれています。小さな歩み寄りが積み重なっていく様子を象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>無理に大きな一歩を踏み出さなくても大丈夫。小さな歩み寄りを一つ重ねるだけで、こわばっていた気持ちはやわらいでいくものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アリッサムから始める小さな体験</h2>
+    <p>小さな花が寄り添って咲くアリッサムにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>密集して咲く小さな花を探して観察してみる</li>
+      <li>すれ違っている相手に、一つ歩み寄ってみる</li>
+      <li>素直な気持ちを一言、言葉にしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アリッサムとスイートアリッサムは同じ花ですか？</div>
+        <div class="faq-a">近縁の花ですが、厳密には異なる種として扱われます。どちらも小さな花が密集して咲く点で似た魅力を持っています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">小さな歩み寄りを重ねられた今日は、六曜の巡りやラッキーカラーも確認してみませんか。開運カレンダーでは、その日の六曜やラッキーカラーもあわせて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月2日、小さな花が寄り添って株いっぱいに咲くアリッサムは、歩み寄りの積み重ねが関係をほどいていくことを教えてくれる花です。</p>
     <ul>
-      <li>アリッサムは春から初夏に白い小花を密集して咲かせる、3月2日の誕生花</li>
-      <li>花言葉は「仲直り」、寄り添うように咲く花姿に由来する</li>
-      <li>こんもりとしたボリューム感とほのかな香りが魅力</li>
-      <li>日当たりの良い場所で、花がら摘みをしながら育てたい</li>
+      <li>アリッサムはアブラナ科の一年草で、春から初夏に小さな花を株いっぱいに咲かせる</li>
+      <li>一つひとつは小さくても、寄り添って咲く姿に存在感が宿る</li>
+      <li>花言葉は「仲直り」。小さな歩み寄りの積み重ねを象徴するといわれる</li>
+      <li>近縁のスイートアリッサムとは、厳密には異なる種として扱われる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0312/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月12日の誕生花キャンディタフトの花言葉・特徴・魅力をわかりやすく解説。「復活」を象徴する清らかに咲く花の意味を紹介します。">
+  <meta name="description" content="3月12日の誕生花キャンディタフトの花言葉・特徴・魅力をわかりやすく解説。「復活」を象徴する、白やピンクの小花が咲きそろう花の意味を紹介します。">
   <title>3月12日の誕生花はキャンディタフト｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キャンディタフトはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に白やピンクの小花を密集して咲かせます。アブラナ科の一年草で、和名は「マガリバナ」と呼ばれています。"}},
-      {"@type":"Question","name":"キャンディタフトの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「復活」という花言葉は、冬の寒さを越えて春にいっせいに花を咲かせる生命力が、新たに生まれ変わるような力強さを感じさせることに由来すると言われています。"}},
-      {"@type":"Question","name":"キャンディタフトはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"十字形の小花が房になって集まり、株全体を覆うように密集して咲きます。群植すると雪が積もったような景色を楽しめる花です。"}}
+      {"@type":"Question","name":"キャンディタフトはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に見頃を迎えます。白やピンクの小花を密集させて咲かせ、まとまりのある明るい印象を作ります。"}},
+      {"@type":"Question","name":"キャンディタフトの花言葉「復活」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が数を重ねて隙間なく咲きそろい、株全体に勢いを取り戻していくような咲き方に由来するといわれています。"}},
+      {"@type":"Question","name":"キャンディタフトはどんな形の花ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が密集してまとまりのある形に咲くことが知られていますが、詳しい花びらの形状は資料により幅があるため、実際に見て確かめてみるのもおすすめです。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 12 · 誕生花</span>
     <h1>3月12日の誕生花はキャンディタフト<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キャンディタフトは、アブラナ科の一年草で、春に白やピンクの小花を密集して咲かせる3月12日の誕生花です。花言葉は「復活」。清らかで愛らしい花です。</p>
+    <p class="art-lead">白やピンクの小花が寄り集まって咲きそろうキャンディタフト。3月12日の誕生花に選ばれたこの花は、静かに元気を取り戻していく力を思い出させてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キャンディタフトとは</a></li>
-      <li><a href="#meaning">キャンディタフトが象徴する意味</a></li>
-      <li><a href="#charm">キャンディタフトの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">白とピンク、寄り集まって咲くキャンディタフトの小花</a></li>
+      <li><a href="#story">3月12日、キャンディタフトが教える、静かな復活の力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キャンディタフトから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キャンディタフトとは</h2>
-    <p>キャンディタフトは、アブラナ科の一年草で、3月12日の誕生花として知られています。和名は「マガリバナ」。十字形の小花が房になって集まり、株全体を覆うように密集して咲く姿から、こんもりとした花のかたまりのような印象を与える花です。</p>
-  </section>
+    <h2>白とピンク、寄り集まって咲くキャンディタフトの小花</h2>
+    <p>キャンディタフトは、アブラナ科の一年草です。春になると、白やピンクの小さな花を密集させて咲かせます。一つひとつの花は小ぶりながら、寄り集まって咲きそろう姿はまとまりがあり、花壇を明るく彩る花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キャンディタフトが象徴する意味</h2>
-    <p>キャンディタフトの花言葉は「復活」です。冬の寒さを越えて春にいっせいに花を咲かせる生命力が、新たに生まれ変わるような力強さを感じさせることに由来すると言われています。「甘美」「初恋」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キャンディタフトの魅力</h2>
-    <p>キャンディタフトの魅力は、小花が密集して作り出すこんもりとした丸いフォルムと、清らかな白やピンクの花色にあります。グラウンドカバーや花壇の縁取りとして群植すると、雪が積もったような美しい景色を楽しむこともできます。3月12日生まれの方はもちろん、新しい始まりを祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キャンディタフトは日当たりと水はけの良い場所を好み、乾燥にも比較的強い性質を持っています。花がら摘みをこまめに行うことで、長い期間花を咲かせ続けてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月12日生まれの方はもちろん、新しい始まりを祝いたい贈り物としてもキャンディタフトは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">キャンディタフトはいつ頃咲きますか？</div>
-        <div class="faq-a">春に白やピンクの小花を密集して咲かせます。アブラナ科の一年草で、和名は「マガリバナ」と呼ばれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キャンディタフトの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「復活」という花言葉は、冬の寒さを越えて春にいっせいに花を咲かせる生命力が、新たに生まれ変わるような力強さを感じさせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キャンディタフトはどんな咲き方をしますか？</div>
-        <div class="faq-a">十字形の小花が房になって集まり、株全体を覆うように密集して咲きます。群植すると雪が積もったような景色を楽しめる花です。</div>
+        <div class="faq-a">春に見頃を迎えます。白やピンクの小花を密集させて咲かせ、まとまりのある明るい印象を作ります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月12日、キャンディタフトが教える、静かな復活の力</h2>
+    <p>早春、まだ冬の気配が残る頃、キャンディタフトはまず数輪の小さな花をぽつりと咲かせるところから始まります。そこから春にかけて気温が緩んでいくのに合わせて花の数は少しずつ増えていき、やがて株全体が隙間なく咲きそろうまでに勢いを取り戻していきます。冬の静けさから春の盛りへと移ろう季節の歩みそのものが、力強さを取り戻していく過程にも重なります。派手な咲き方ではなく、季節とともに静かに、けれど確実に花を増やしていくその姿から、キャンディタフトには「復活」という花言葉が贈られてきたといわれています。一度諦めかけたことも、大きな一歩ではなく小さな積み重ねから、また少しずつ向き合っていけるのかもしれません。3月という節目の季節に、静かな回復の力を思い出させてくれる花です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キャンディタフトの花言葉「復活」の由来は？</div>
+        <div class="faq-a">小さな花が数を重ねて隙間なく咲きそろい、株全体に勢いを取り戻していくような咲き方に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>小さな積み重ねが、いつの間にか大きな力になります。今日は諦めかけたことに、もう一度そっと向き合ってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キャンディタフトから始める小さな体験</h2>
+    <p>白やピンクの小花を咲かせるキャンディタフトにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>密集して咲く小さな花を探して観察してみる</li>
+      <li>一度諦めかけたことに、もう一度向き合ってみる</li>
+      <li>白やピンクのものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キャンディタフトはどんな形の花ですか？</div>
+        <div class="faq-a">小さな花が密集してまとまりのある形に咲くことが知られていますが、詳しい花びらの形状は資料により幅があるため、実際に見て確かめてみるのもおすすめです。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">小さな積み重ねに向き合えた今日は、ラッキーカラーや吉日もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーカラーや吉日をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月12日、白やピンクの小花が寄り集まって咲くキャンディタフトは、小さな積み重ねが復活の力になることを教えてくれる花です。</p>
     <ul>
-      <li>キャンディタフトは春に小花を密集して咲かせる、3月12日の誕生花</li>
-      <li>花言葉は「復活」、冬を越えていっせいに咲く生命力に由来する</li>
-      <li>こんもりとした丸いフォルムと清らかな花色が魅力</li>
-      <li>水はけの良い場所で、花がら摘みをしながら育てたい</li>
+      <li>キャンディタフトはアブラナ科の一年草で、春に白やピンクの小花を密集して咲かせる</li>
+      <li>小さな花が数を重ねて咲きそろう姿が、静かな復活の力を連想させる</li>
+      <li>花言葉は「復活」。小さな積み重ねによる回復を象徴するといわれる</li>
+      <li>詳しい花の形状には資料による幅があり、断定しすぎない見方も大切な花</li>
     </ul>
   </section>
 

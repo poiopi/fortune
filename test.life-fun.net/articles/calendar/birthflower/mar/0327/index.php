@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0327/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月27日の誕生花ムスカリの花言葉・特徴・魅力をわかりやすく解説。「明るい未来」を象徴する希望を感じさせる花の意味を紹介します。">
+  <meta name="description" content="3月27日の誕生花ムスカリの花言葉・特徴・魅力をわかりやすく解説。「明るい未来」を象徴する、ぶどうの房のような青紫の花の意味を紹介します。">
   <title>3月27日の誕生花はムスカリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ムスカリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春にぶどうの房のような青紫の花を咲かせます。キジカクシ科の球根植物で、「グレープヒヤシンス」とも呼ばれています。"}},
-      {"@type":"Question","name":"ムスカリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「明るい未来」という花言葉は、早春にいち早く芽を出し群れて咲く青紫の花が、これから訪れる希望に満ちた季節を予感させることに由来すると言われています。"}},
-      {"@type":"Question","name":"ムスカリは育てやすい花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。丈夫で植えっぱなしでも毎年花を咲かせてくれるため、初心者でも育てやすい球根植物として人気があります。"}}
+      {"@type":"Question","name":"ムスカリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春にぶどうの房のような青紫の花を咲かせます。ちょうど3月頃から見頃を迎える球根植物です。"}},
+      {"@type":"Question","name":"ムスカリの花言葉「明るい未来」の由来は？","acceptedAnswer":{"@type":"Answer","text":"冬の終わりから春に向けて芽吹き、青紫の花を咲かせる姿に由来するといわれています。"}},
+      {"@type":"Question","name":"ムスカリを育てるときに注意することはありますか？","acceptedAnswer":{"@type":"Answer","text":"球根には毒性があるとされ、口にしないよう注意が必要といわれています。花の愛らしさを楽しみながら、扱いには気をつけたいところです。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 27 · 誕生花</span>
     <h1>3月27日の誕生花はムスカリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ムスカリは、キジカクシ科の球根植物で、春にぶどうの房のような青紫の花を咲かせる3月27日の誕生花です。花言葉は「明るい未来」。愛らしく素朴な花です。</p>
+    <p class="art-lead">ぶどうの房のような青紫の花を咲かせるムスカリ。3月27日の誕生花に選ばれたこの花は、寒さを越えて芽吹く確かな期待を教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ムスカリとは</a></li>
-      <li><a href="#meaning">ムスカリが象徴する意味</a></li>
-      <li><a href="#charm">ムスカリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月27日の誕生花として親しまれるムスカリ</a></li>
+      <li><a href="#story">青紫の房が語る、ムスカリと芽吹きの春</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ムスカリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ムスカリとは</h2>
-    <p>ムスカリは、キジカクシ科の球根植物で、3月27日の誕生花として知られています。小さな粒状の花が茎の先に密集して咲く姿が、ぶどうの房を思わせることから「グレープヒヤシンス」とも呼ばれ、チューリップなど他の球根花との寄せ植えにもよく使われます。</p>
-  </section>
+    <h2>3月27日の誕生花として親しまれるムスカリ</h2>
+    <p>ムスカリは、キジカクシ科の球根植物です。春になると、ぶどうの房のような形をした青紫の花を咲かせます。小さな花が密集して咲く姿は、愛らしくどこか素朴な印象を与えます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ムスカリが象徴する意味</h2>
-    <p>ムスカリの花言葉は「明るい未来」です。まだ寒さの残る早春にいち早く芽を出し、群れて咲く青紫の花が、これから訪れる希望に満ちた季節を予感させることに由来すると言われています。「通じ合う心」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ムスカリの魅力</h2>
-    <p>ムスカリの魅力は、小さいながらも群れて咲くことで生まれる、鮮やかな青紫のじゅうたんのような景色にあります。丈夫で植えっぱなしでも毎年花を咲かせてくれるため、庭に自然に増えていく姿も楽しみのひとつです。3月27日生まれの方はもちろん、これからの明るい未来を願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ムスカリは日当たりと水はけの良い場所を好み、秋に球根を植えて育てるのが一般的です。丈夫で手がかからず、一度植えると数年にわたって花を咲かせ続けてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月27日生まれの方はもちろん、明るい未来を願う贈り物としてもムスカリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ムスカリはいつ頃咲きますか？</div>
-        <div class="faq-a">春にぶどうの房のような青紫の花を咲かせます。キジカクシ科の球根植物で、「グレープヒヤシンス」とも呼ばれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムスカリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「明るい未来」という花言葉は、早春にいち早く芽を出し群れて咲く青紫の花が、これから訪れる希望に満ちた季節を予感させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムスカリは育てやすい花ですか？</div>
-        <div class="faq-a">はい。丈夫で植えっぱなしでも毎年花を咲かせてくれるため、初心者でも育てやすい球根植物として人気があります。</div>
+        <div class="faq-a">春にぶどうの房のような青紫の花を咲かせます。ちょうど3月頃から見頃を迎える球根植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>青紫の房が語る、ムスカリと芽吹きの春</h2>
+    <p>春先、球根から芽を出したムスカリは、まだ肌寒さの残る地面から、青紫の小さな花を一斉に咲かせます。一つひとつの花はごく小さいものですが、房のように連なって咲くことで、地面から立ち上るような愛らしい存在感を生み出します。冬の終わりから春へと向かうこの時期に咲くムスカリの姿には、これから始まる季節への期待感が重なります。その様子から、「明るい未来」という花言葉が生まれたといわれています。根拠のない楽観ではなく、寒さを乗り越えて芽吹いてきたからこそ持てる、確かな希望なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ムスカリの花言葉「明るい未来」の由来は？</div>
+        <div class="faq-a">冬の終わりから春に向けて芽吹き、青紫の花を咲かせる姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>小さな一歩の積み重ねが、これから先の景色を変えていきます。今日は、これから楽しみにしていることを一つ、思い浮かべてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ムスカリから始める小さな体験</h2>
+    <p>青紫の花を咲かせるムスカリにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>ぶどうの房のような花の形をじっくり観察してみる</li>
+      <li>これから楽しみにしていることを一つ思い浮かべてみる</li>
+      <li>青紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ムスカリを育てるときに注意することはありますか？</div>
+        <div class="faq-a">球根には毒性があるとされ、口にしないよう注意が必要といわれています。花の愛らしさを楽しみながら、扱いには気をつけたいところです。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">ぶどうの房のような青紫の花に、これからへの期待がふくらんだ今日は、月齢やラッキーカラー、ラッキーアイテムもあわせて確認してみませんか。開運カレンダーでは、その日の月齢やラッキーカラー、ラッキーアイテムもまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月27日、寒さを越えて咲くムスカリは、これから先への確かな期待を教えてくれる花です。</p>
     <ul>
-      <li>ムスカリは春にぶどうの房のような青紫の花を咲かせる、3月27日の誕生花</li>
-      <li>花言葉は「明るい未来」、早春に群れて咲く花に由来する</li>
-      <li>青紫のじゅうたんのような景色と丈夫さが魅力</li>
-      <li>秋に球根を植え、植えっぱなしでも育てやすい</li>
+      <li>ムスカリはキジカクシ科の球根植物で、春にぶどうの房のような青紫の花を咲かせる</li>
+      <li>小さな花が連なって咲く、愛らしい存在感が魅力</li>
+      <li>花言葉は「明るい未来」。寒さを越えて芽吹く姿に由来するといわれる</li>
+      <li>球根には毒性があるとされ、扱いには注意が必要</li>
     </ul>
   </section>
 

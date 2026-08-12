@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0309/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月9日の誕生花アルメリアの花言葉・特徴・魅力をわかりやすく解説。「共感」を象徴する愛らしく咲く花の意味を紹介します。">
+  <meta name="description" content="3月9日の誕生花アルメリアの花言葉・特徴・魅力をわかりやすく解説。「共感」を象徴する、小花が丸く集まって咲く花の意味を紹介します。">
   <title>3月9日の誕生花はアルメリア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アルメリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小花が丸く集まった花房を咲かせます。イソマツ科の多年草で、和名は「浜簪（ハマカンザシ）」と呼ばれています。"}},
-      {"@type":"Question","name":"アルメリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「共感」という花言葉は、小さな花がひとつにまとまり丸い花房を作って咲く姿が、互いに気持ちを分かち合う様子を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"アルメリアはどんな場所に生えている花ですか？","acceptedAnswer":{"@type":"Answer","text":"海岸沿いの岩場などにも自生する丈夫な性質を持ち、潮風にも比較的強いため、庭植えや花壇の縁取りにも育てやすい花です。"}}
+      {"@type":"Question","name":"アルメリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に見頃を迎えます。小さな花が丸く集まった花房を咲かせ、まとまりのある可愛らしい姿を見せてくれます。"}},
+      {"@type":"Question","name":"アルメリアの花言葉「共感」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が同じ方向を向いて丸く寄り添うように咲く姿に由来するといわれています。気持ちが重なり合う様子を象徴する言葉とされます。"}},
+      {"@type":"Question","name":"アルメリアは他の花と間違えられやすいですか？","acceptedAnswer":{"@type":"Answer","text":"丸く集まって咲く花房の形が似ているアリウムなどと混同されることがあるといわれていますが、科や特徴は異なる植物です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 9 · 誕生花</span>
     <h1>3月9日の誕生花はアルメリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アルメリアは、イソマツ科の多年草で、春に小花が丸く集まった花房を咲かせる3月9日の誕生花です。花言葉は「共感」。可愛らしい印象の花です。</p>
+    <p class="art-lead">小さな花が丸く寄り添って咲くアルメリア。3月9日の誕生花に選ばれたこの花は、誰かと気持ちが重なる嬉しさを思い出させてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アルメリアとは</a></li>
-      <li><a href="#meaning">アルメリアが象徴する意味</a></li>
-      <li><a href="#charm">アルメリアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">丸く寄り添って咲く、アルメリアの可愛らしい花房</a></li>
+      <li><a href="#story">3月9日、アルメリアが教える、気持ちが重なる瞬間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アルメリアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アルメリアとは</h2>
-    <p>アルメリアは、イソマツ科の多年草で、3月9日の誕生花として知られています。和名は「浜簪（ハマカンザシ）」。海岸沿いの岩場などにも自生し、細長い茎の先に小花が丸く集まって咲く姿がかんざしのように見えることからこの名がついたとされています。</p>
-  </section>
+    <h2>丸く寄り添って咲く、アルメリアの可愛らしい花房</h2>
+    <p>アルメリアは、イソマツ科の多年草です。春になると、小さな花が丸く集まった花房を茎の先に咲かせます。一つひとつの花は小ぶりですが、寄り添うように咲きそろう姿はまとまりがあり、可愛らしい印象を持つ花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アルメリアが象徴する意味</h2>
-    <p>アルメリアの花言葉は「共感」です。小さな花がひとつにまとまり、丸い花房を作って咲く姿が、互いに寄り添い気持ちを分かち合う様子を思わせることに由来すると言われています。「思いやり」「哀れみ」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アルメリアの魅力</h2>
-    <p>アルメリアの魅力は、こんもりとした丸い花房が生み出す愛らしさと、潮風にも負けない丈夫さにあります。花壇の縁取りやロックガーデンにもよく合い、群植すると一面に小さな花房が並ぶ可憐な景色を楽しめます。3月9日生まれの方はもちろん、気持ちに寄り添う想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アルメリアは日当たりと水はけの良い場所を好み、乾燥に強い性質を持っています。過湿を嫌うため、庭植えの場合は水はけの良い土づくりを心がけるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月9日生まれの方はもちろん、気持ちに寄り添う想いを届けたい贈り物としてもアルメリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">アルメリアはいつ頃咲きますか？</div>
-        <div class="faq-a">春に小花が丸く集まった花房を咲かせます。イソマツ科の多年草で、和名は「浜簪（ハマカンザシ）」と呼ばれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アルメリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「共感」という花言葉は、小さな花がひとつにまとまり丸い花房を作って咲く姿が、互いに気持ちを分かち合う様子を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アルメリアはどんな場所に生えている花ですか？</div>
-        <div class="faq-a">海岸沿いの岩場などにも自生する丈夫な性質を持ち、潮風にも比較的強いため、庭植えや花壇の縁取りにも育てやすい花です。</div>
+        <div class="faq-a">春に見頃を迎えます。小さな花が丸く集まった花房を咲かせ、まとまりのある可愛らしい姿を見せてくれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月9日、アルメリアが教える、気持ちが重なる瞬間</h2>
+    <p>春を迎えると、庭のあちこちでさまざまな花が示し合わせたように一斉に咲きそろい始めます。アルメリアもそんな季節の中で、小さな花を一つ、また一つと丸く集めながら花房を大きくしていき、気づけば同じ方向を向いた花たちがぴったりと寄り添う一つのまとまりへと育っていきます。多くの花が同じ時期に咲きそろうからこそ生まれる、その重なり合うような咲き方から、アルメリアには「共感」という花言葉が贈られてきたといわれています。誰かの気持ちに寄り添うことは、必ずしも同じ意見を持つことではありません。それぞれ違う場所に咲く小花のように、少しずつ違っていても、同じ方向を見て寄り添うことはできるはずです。3月という別れと出会いが重なる季節に、誰かの話にそっと耳を傾けてみると、思いがけず気持ちが重なる瞬間に出会えるかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アルメリアの花言葉「共感」の由来は？</div>
+        <div class="faq-a">小さな花が同じ方向を向いて丸く寄り添うように咲く姿に由来するといわれています。気持ちが重なり合う様子を象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>同じ意見でなくても、寄り添うことはできます。今日は誰かの話に、そっとうなずいてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アルメリアから始める小さな体験</h2>
+    <p>丸く寄り添って咲くアルメリアにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>丸く集まって咲く花房をじっくり観察してみる</li>
+      <li>誰かの話に、うなずきながら耳を傾けてみる</li>
+      <li>似た者同士で集まる時間を作ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アルメリアは他の花と間違えられやすいですか？</div>
+        <div class="faq-a">丸く集まって咲く花房の形が似ているアリウムなどと混同されることがあるといわれていますが、科や特徴は異なる植物です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かと気持ちが重なった今日は、月齢や吉日もあわせて確認してみませんか。開運カレンダーでは、その日の月齢や吉日をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月9日、小花が丸く寄り添って咲くアルメリアは、違いを持ちながらも気持ちが重なる嬉しさを教えてくれる花です。</p>
     <ul>
-      <li>アルメリアは春に丸い花房を咲かせる、3月9日の誕生花</li>
-      <li>花言葉は「共感」、寄り添うように咲く花房の姿に由来する</li>
-      <li>こんもりとした愛らしい花姿と丈夫さが魅力</li>
-      <li>水はけの良い場所で、乾燥に強い性質を活かして育てたい</li>
+      <li>アルメリアはイソマツ科の多年草で、春に小花が丸く集まった花房を咲かせる</li>
+      <li>同じ方向を向いて寄り添う咲き方が、気持ちの重なりを連想させる</li>
+      <li>花言葉は「共感」。寄り添う姿勢を象徴するといわれる</li>
+      <li>花房の形が似たアリウムなどと混同されやすいが、異なる植物である</li>
     </ul>
   </section>
 

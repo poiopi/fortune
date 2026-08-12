@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0323/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月23日の誕生花ヤマブキの花言葉・特徴・魅力をわかりやすく解説。「富裕」を象徴する黄金色に輝く花の意味を紹介します。">
+  <meta name="description" content="3月23日の誕生花ヤマブキの花言葉・特徴・魅力をわかりやすく解説。「富裕」を象徴する、枝いっぱいに咲く黄色い花の意味を紹介します。">
   <title>3月23日の誕生花はヤマブキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヤマブキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鮮やかな黄色の花を枝いっぱいに咲かせます。バラ科の落葉低木で、しなやかに枝垂れる枝ぶりが特徴です。"}},
-      {"@type":"Question","name":"ヤマブキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「富裕」という花言葉は、鮮やかな黄金色の花色が金銀財宝を思わせる豊かさの象徴とされたことに由来すると言われています。"}},
-      {"@type":"Question","name":"「山吹色」という言葉はヤマブキに由来するのですか？","acceptedAnswer":{"@type":"Answer","text":"はい。大判・小判のような鮮やかな黄金色を表す「山吹色」という言葉は、この花の色に由来しています。古くから和歌にも詠まれてきました。"}}
+      {"@type":"Question","name":"ヤマブキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鮮やかな黄色の花を枝いっぱいに咲かせます。ちょうど3月頃から見頃を迎える花木です。"}},
+      {"@type":"Question","name":"ヤマブキの花言葉「富裕」の由来は？","acceptedAnswer":{"@type":"Answer","text":"枝いっぱいに咲き誇る、豊かな黄色の花の姿に由来するといわれています。"}},
+      {"@type":"Question","name":"ヤマブキの花にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"枝いっぱいに黄色い花を咲かせ、明るく軽やかな春の印象を与える花木として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 23 · 誕生花</span>
     <h1>3月23日の誕生花はヤマブキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヤマブキは、バラ科の落葉低木で、春に鮮やかな黄色の花を枝いっぱいに咲かせる3月23日の誕生花です。花言葉は「富裕」。明るく軽やかな花です。</p>
+    <p class="art-lead">枝いっぱいに鮮やかな黄色の花を咲かせるヤマブキ。3月23日の誕生花に選ばれたこの花木は、心を軽やかに弾ませる明るい豊かさを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヤマブキとは</a></li>
-      <li><a href="#meaning">ヤマブキが象徴する意味</a></li>
-      <li><a href="#charm">ヤマブキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月23日の誕生花として親しまれるヤマブキ</a></li>
+      <li><a href="#story">黄色が弾む、ヤマブキが伝える軽やかな春</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヤマブキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヤマブキとは</h2>
-    <p>ヤマブキは、バラ科の落葉低木で、3月23日の誕生花として知られています。しなやかに枝垂れる枝いっぱいに、鮮やかな黄金色の花を咲かせ、古くから和歌にも詠まれてきた日本の春を代表する花木のひとつです。</p>
-  </section>
+    <h2>3月23日の誕生花として親しまれるヤマブキ</h2>
+    <p>ヤマブキは、バラ科の落葉低木です。春になると、鮮やかな黄色の花を枝いっぱいに咲かせます。しなやかにしだれる枝が黄色で埋め尽くされる様子は、見る人の心を明るく軽やかにしてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヤマブキが象徴する意味</h2>
-    <p>ヤマブキの花言葉は「富裕」です。花色である鮮やかな黄金色が、金銀財宝を思わせる豊かさの象徴とされたことに由来すると言われています。日本の古い通貨「大判・小判」の色を表す言葉としても「山吹色」が使われてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヤマブキの魅力</h2>
-    <p>ヤマブキの魅力は、光を受けて輝くような鮮やかな黄色の花色と、風にしなやかに揺れる枝ぶりにあります。太田道灌の「山吹の実の一つだになきぞ悲しき」の逸話でも知られるように、古くから日本人の暮らしや文学に寄り添ってきた花木です。3月23日生まれの方はもちろん、豊かさと繁栄を願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヤマブキは半日陰から日向まで幅広い環境で育てやすく、丈夫な花木です。花後に伸びすぎた枝を整理するように剪定すると、翌年もこんもりとした美しい花姿を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月23日生まれの方はもちろん、豊かさと繁栄を願う贈り物としてもヤマブキは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ヤマブキはいつ頃咲きますか？</div>
-        <div class="faq-a">春に鮮やかな黄色の花を枝いっぱいに咲かせます。バラ科の落葉低木で、しなやかに枝垂れる枝ぶりが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマブキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「富裕」という花言葉は、鮮やかな黄金色の花色が金銀財宝を思わせる豊かさの象徴とされたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">「山吹色」という言葉はヤマブキに由来するのですか？</div>
-        <div class="faq-a">はい。大判・小判のような鮮やかな黄金色を表す「山吹色」という言葉は、この花の色に由来しています。古くから和歌にも詠まれてきました。</div>
+        <div class="faq-a">春に鮮やかな黄色の花を枝いっぱいに咲かせます。ちょうど3月頃から見頃を迎える花木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>黄色が弾む、ヤマブキが伝える軽やかな春</h2>
+    <p>ヤマブキの枝は、一輪、また一輪と花を増やしていき、やがて枝全体が黄色に染まるほど咲き誇ります。その様子は、少しずつ積み重なったものが、いつの間にか大きな豊かさになっている過程を見ているようです。ヤマブキの花言葉「富裕」は、この枝いっぱいに広がる黄色の豊かさから生まれたといわれています。富裕という言葉には、心が軽やかに弾むような、明るく満ち足りた気分のことも込められているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマブキの花言葉「富裕」の由来は？</div>
+        <div class="faq-a">枝いっぱいに咲き誇る、豊かな黄色の花の姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>枝いっぱいに咲く黄色は、見る人の心まで明るく軽やかにしてくれます。今日は、気分が軽くなるようなことを一つ、自分に贈ってみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヤマブキから始める小さな体験</h2>
+    <p>枝いっぱいに黄色い花を咲かせるヤマブキにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>枝いっぱいに咲く黄色い花を探して観察してみる</li>
+      <li>今すでに持っている豊かさを一つ数えてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマブキの花にはどんな特徴がありますか？</div>
+        <div class="faq-a">枝いっぱいに黄色い花を咲かせ、明るく軽やかな春の印象を与える花木として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">枝いっぱいの黄色に心満たされた今日は、六曜や吉日もあわせて確認してみませんか。開運カレンダーでは、その日の六曜や吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月23日、枝いっぱいに黄色い花を咲かせるヤマブキは、心を軽やかに弾ませる明るい豊かさを教えてくれる花です。</p>
     <ul>
-      <li>ヤマブキは春に鮮やかな黄色の花を咲かせる、3月23日の誕生花</li>
-      <li>花言葉は「富裕」、黄金色の花色が財宝を思わせることに由来する</li>
-      <li>光を受けて輝く花色としなやかな枝ぶりが魅力</li>
-      <li>半日陰から日向まで育てやすく、花後の剪定で樹形を整えたい</li>
+      <li>ヤマブキはバラ科の落葉低木で、春に鮮やかな黄色の花を枝いっぱいに咲かせる</li>
+      <li>枝いっぱいに広がる黄色が、明るく軽やかな印象を生む</li>
+      <li>花言葉は「富裕」。枝いっぱいの黄色の豊かさに由来するといわれる</li>
+      <li>明るく軽やかな春の印象を与える花木</li>
     </ul>
   </section>
 

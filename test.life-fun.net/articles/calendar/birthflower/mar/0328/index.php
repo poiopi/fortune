@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0328/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月28日の誕生花ハナミズキの花言葉・特徴・魅力をわかりやすく解説。「おだやかな心」を象徴する清々しく咲く花木の意味を紹介します。">
+  <meta name="description" content="3月28日の誕生花ハナミズキの花言葉・特徴・魅力をわかりやすく解説。「おだやかな心」を象徴する、白やピンクの苞が咲く花木の意味を紹介します。">
   <title>3月28日の誕生花はハナミズキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハナミズキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に白やピンクの花びらのような苞を咲かせます。ミズキ科の落葉高木で、秋の紅葉や赤い実も楽しめる木です。"}},
-      {"@type":"Question","name":"ハナミズキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「おだやかな心」という花言葉は、柔らかな色合いの苞が枝先に穏やかに広がって咲く様子が、優しい心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ハナミズキと日本にはどんな関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"20世紀初頭、日本からアメリカへ贈られた桜の返礼として贈られた木として知られており、日米友好の象徴としても親しまれています。"}}
+      {"@type":"Question","name":"ハナミズキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に白やピンクの苞を咲かせます。ちょうど3月頃から見頃を迎える花木です。"}},
+      {"@type":"Question","name":"ハナミズキの花言葉「おだやかな心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"白やピンクの苞が、強く主張することなく静かに春を彩る佇まいに由来するといわれています。"}},
+      {"@type":"Question","name":"ハナミズキの花びらのように見える部分は本当の花ですか？","acceptedAnswer":{"@type":"Answer","text":"実は苞と呼ばれる葉が変化した部分で、中心の小さな部分が本来の花にあたるといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 28 · 誕生花</span>
     <h1>3月28日の誕生花はハナミズキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハナミズキは、ミズキ科の落葉高木で、春に白やピンクの花を咲かせる3月28日の誕生花です。花言葉は「おだやかな心」。清々しく明るい花木です。</p>
+    <p class="art-lead">白やピンクの苞を静かに開かせるハナミズキ。3月28日の誕生花に選ばれたこの花木は、おだやかな心の強さを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハナミズキとは</a></li>
-      <li><a href="#meaning">ハナミズキが象徴する意味</a></li>
-      <li><a href="#charm">ハナミズキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月28日の誕生花として親しまれるハナミズキ</a></li>
+      <li><a href="#story">白やピンクの苞が語る、ハナミズキの静けさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハナミズキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハナミズキとは</h2>
-    <p>ハナミズキは、ミズキ科の落葉高木で、3月28日の誕生花として知られています。実際の花は中心の小さな部分で、花びらのように見える白やピンクの4枚は「苞（ほう）」と呼ばれる葉が変化した部分です。街路樹や庭木として日本各地で親しまれています。</p>
-  </section>
+    <h2>3月28日の誕生花として親しまれるハナミズキ</h2>
+    <p>ハナミズキは、ミズキ科の落葉高木です。春になると、白やピンクの花びらのように見える苞を咲かせます。花びらに見えるその部分は、実は苞と呼ばれる葉が変化した器官です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハナミズキが象徴する意味</h2>
-    <p>ハナミズキの花言葉は「おだやかな心」です。柔らかな色合いの花びらのような苞が、枝先に穏やかに広がって咲く様子が、争いを好まない優しい心を思わせることに由来すると言われています。「返礼」「私の思いを受けて」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハナミズキの魅力</h2>
-    <p>ハナミズキの魅力は、春に咲く清々しい花はもちろん、秋には葉が紅葉し、赤い実をつけるなど四季を通じて表情を変える点にもあります。20世紀初頭、日本から贈った桜のお礼としてアメリカから贈られた木として知られ、日米友好の象徴としても親しまれてきました。3月28日生まれの方はもちろん、穏やかな絆を結びたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハナミズキは日当たりと水はけの良い場所を好み、乾燥にはやや弱いため夏場の水やりに注意しながら育てるのがおすすめです。剪定は落葉期に行うと、翌年の花付きに影響が出にくいとされています。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月28日生まれの方はもちろん、穏やかな絆を結びたい贈り物としてもハナミズキは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ハナミズキはいつ頃咲きますか？</div>
-        <div class="faq-a">春に白やピンクの花びらのような苞を咲かせます。ミズキ科の落葉高木で、秋の紅葉や赤い実も楽しめる木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナミズキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「おだやかな心」という花言葉は、柔らかな色合いの苞が枝先に穏やかに広がって咲く様子が、優しい心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナミズキと日本にはどんな関係がありますか？</div>
-        <div class="faq-a">20世紀初頭、日本からアメリカへ贈られた桜の返礼として贈られた木として知られており、日米友好の象徴としても親しまれています。</div>
+        <div class="faq-a">春に白やピンクの苞を咲かせます。ちょうど3月頃から見頃を迎える花木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白やピンクの苞が語る、ハナミズキの静けさ</h2>
+    <p>春の陽気に誘われるように、ハナミズキの枝先には白やピンクの苞が優しく開いていきます。花びらのように見えるその一枚一枚は、実際には葉が姿を変えたものですが、その柔らかな色合いと丸みを帯びた形は、本物の花にも劣らない清々しさを漂わせます。強い主張をすることなく、静かに、しかし確かに春を彩るその佇まいから、「おだやかな心」という花言葉が生まれたといわれています。おだやかであることは、感情を抑え込むこととは違います。むしろ、揺らぎながらも落ち着いていられる、そんな心の在り方を表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナミズキの花言葉「おだやかな心」の由来は？</div>
+        <div class="faq-a">白やピンクの苞が、強く主張することなく静かに春を彩る佇まいに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>静かに、けれど確かに心を落ち着けることも、立派な強さです。今日は、深呼吸を一つして、気持ちをそっと整えてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハナミズキから始める小さな体験</h2>
+    <p>白やピンクの苞を咲かせるハナミズキにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>花びらのように見える苞をじっくり観察してみる</li>
+      <li>深呼吸をして、気持ちを穏やかに整えてみる</li>
+      <li>白やピンクのものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナミズキの花びらのように見える部分は本当の花ですか？</div>
+        <div class="faq-a">実は苞と呼ばれる葉が変化した部分で、中心の小さな部分が本来の花にあたるといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">白やピンクの苞にそっと心が落ち着いた今日は、ラッキーカラーや吉日もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーカラーや吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月28日、白やピンクの苞を静かに咲かせるハナミズキは、おだやかな心の強さを教えてくれる花です。</p>
     <ul>
-      <li>ハナミズキは春に白やピンクの花を咲かせる、3月28日の誕生花</li>
-      <li>花言葉は「おだやかな心」、穏やかに広がる花の姿に由来する</li>
-      <li>四季を通じて表情を変える清々しさと日米友好の逸話が魅力</li>
-      <li>日当たりの良い場所で、夏場の水切れに注意して育てたい</li>
+      <li>ハナミズキはミズキ科の落葉高木で、春に白やピンクの苞を咲かせる</li>
+      <li>花びらのように見える部分は、実は葉が変化した苞</li>
+      <li>花言葉は「おだやかな心」。静かに春を彩る佇まいに由来するといわれる</li>
+      <li>おだやかさは感情を抑えることではなく、落ち着いた心の強さを表す</li>
     </ul>
   </section>
 
