@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0424/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月24日の誕生花シャガの花言葉・特徴・魅力をわかりやすく解説。「自己主張」を象徴する日陰に咲く花の意味を紹介します。">
+  <meta name="description" content="4月24日の誕生花シャガの花言葉・特徴・魅力をわかりやすく解説。日陰に咲く淡い紫の模様が象徴する「自己主張」の意味を紹介します。">
   <title>4月24日の誕生花はシャガ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シャガはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に淡い紫の模様が入った花を咲かせます。アヤメ科の多年草で、日陰でもよく育ちます。"}},
-      {"@type":"Question","name":"シャガの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「自己主張」という花言葉は、目立ちにくい日陰にありながら独特の模様で存在感を放つ姿に由来すると言われています。"}},
-      {"@type":"Question","name":"シャガはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日陰から半日陰を好み、乾燥にも比較的強い丈夫な植物です。庭木の足元の下草としても利用されます。"}}
+      {"@type":"Question","name":"シャガはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に淡い紫の模様が入った花を咲かせます。アヤメ科の多年草で、日陰にひっそりと咲く上品な印象を持つ花です。"}},
+      {"@type":"Question","name":"シャガの花言葉「自己主張」の由来は？","acceptedAnswer":{"@type":"Answer","text":"日陰という目立たない場所に咲きながらも、花びらの模様がはっきりと自分の個性を主張している様子に由来するといわれています。"}},
+      {"@type":"Question","name":"シャガはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"日陰でも育つ性質を持ち、林の縁や竹林の下など、光の少ない場所でよく見られます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 24 · 誕生花</span>
     <h1>4月24日の誕生花はシャガ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シャガは、アヤメ科の多年草で、春に淡い紫の模様が入った花を咲かせる4月24日の誕生花です。花言葉は「自己主張」。日陰にひっそりと咲く上品な印象を持ちます。</p>
+    <p class="art-lead">4月24日、日陰にそっと淡い紫の模様が浮かぶ頃。シャガは、目立たない場所にいても自分らしさを消さずにいられることを教えてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シャガとは</a></li>
-      <li><a href="#meaning">シャガが象徴する意味</a></li>
-      <li><a href="#charm">シャガの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月24日の誕生花として親しまれるシャガ</a></li>
+      <li><a href="#story">淡い紫の模様が語る、シャガの自己主張</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シャガから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シャガとは</h2>
-    <p>シャガは、アヤメ科の多年草で、4月24日の誕生花として知られています。薄い花びらに繊細な紫の模様が入った白い花を咲かせ、日陰でもよく育つことから、林床や竹林の縁などに群生する姿がよく見られます。</p>
-  </section>
+    <h2>4月24日の誕生花として親しまれるシャガ</h2>
+    <p>シャガは、アヤメ科の多年草です。春になると、淡い紫の模様が入った花を咲かせます。日当たりの少ない林の縁や竹林の下など、日陰にひっそりと咲くことが多く、上品な印象を持つ花として親しまれています。この控えめな咲き場所とは裏腹な華やかさから、4月24日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シャガが象徴する意味</h2>
-    <p>シャガの花言葉は「自己主張」です。日陰という目立ちにくい場所にありながら、花びらに独特の模様を持ち、確かな存在感を放つ姿に由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シャガの魅力</h2>
-    <p>シャガの魅力は、白地に淡い紫の模様が入った繊細な花びらの美しさと、日陰でも群生して咲き広がる生命力にあります。一つ一つの花は短命ですが、次々と咲き継いでいく様子が長く楽しめる花です。4月24日生まれの方はもちろん、確かな個性を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シャガは日陰から半日陰を好み、乾燥にも比較的強く丈夫に育ちます。手のかからない下草として、庭木の足元などに植えるのもおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月24日生まれの方はもちろん、確かな個性を届けたい贈り物としてもシャガは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">シャガはいつ頃咲きますか？</div>
-        <div class="faq-a">春に淡い紫の模様が入った花を咲かせます。アヤメ科の多年草で、日陰でもよく育ちます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シャガの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「自己主張」という花言葉は、目立ちにくい日陰にありながら独特の模様で存在感を放つ姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シャガはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日陰から半日陰を好み、乾燥にも比較的強い丈夫な植物です。庭木の足元の下草としても利用されます。</div>
+        <div class="faq-a">春に淡い紫の模様が入った花を咲かせます。アヤメ科の多年草で、日陰にひっそりと咲く上品な印象を持つ花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>淡い紫の模様が語る、シャガの自己主張</h2>
+    <p>シャガが好んで咲くのは、光の届きにくい林の縁や竹林の下といった日陰の場所です。目立つ場所に咲く花々とは対照的に、人目につきにくいところで静かに花を開きます。けれど近づいてよく見ると、その花びらには淡い紫の模様がくっきりと描かれ、決して控えめとは言えない個性を見せてくれます。咲く場所は目立たなくても、自分自身の色や模様は曖昧にしない。そんな在り方が、この花の面白いところです。周囲に埋もれることと、自分らしさを消してしまうことは、実は別のことなのかもしれません。日陰という場所を選びながらも、はっきりとした模様で自分を表現し続けるその姿から、シャガには「自己主張」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シャガの花言葉「自己主張」の由来は？</div>
+        <div class="faq-a">日陰という目立たない場所に咲きながらも、花びらの模様がはっきりと自分の個性を主張している様子に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>目立つ場所にいなくても、自分の考えをはっきり持っていることは大切です。今日は思っていることを一つ、素直に言葉にしてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シャガから始める小さな体験</h2>
+    <p>日陰に咲きながらも個性を見せるシャガにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>淡い紫の模様をじっくり観察してみる</li>
+      <li>自分の意見を一つ、はっきり言葉にしてみる</li>
+      <li>日陰でも育つ植物を探してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シャガはどんな場所でよく見られますか？</div>
+        <div class="faq-a">日陰でも育つ性質を持ち、林の縁や竹林の下など、光の少ない場所でよく見られます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分らしさをそっと示したい今日は、月齢・月相やラッキープレイスも確認してみませんか。開運カレンダーでは、その日の月齢・月相とラッキープレイスをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月24日、日陰にひっそりと咲きながらも淡い紫の模様を見せるシャガは、目立たない場所でも自分らしさを保つ大切さを教えてくれる花です。</p>
     <ul>
-      <li>シャガは春に紫の模様入りの花を咲かせる、4月24日の誕生花</li>
-      <li>花言葉は「自己主張」、日陰で存在感を放つ花姿に由来する</li>
-      <li>繊細な模様の花びらと群生して咲き広がる生命力が魅力</li>
-      <li>日陰から半日陰の、手のかからない場所で育てたい</li>
+      <li>シャガはアヤメ科の多年草で、春に淡い紫の模様が入った花を咲かせる</li>
+      <li>林の縁や竹林の下など、日陰にひっそりと咲く上品な花である</li>
+      <li>花言葉は「自己主張」。日陰でもはっきりとした模様を見せる姿に由来するといわれる</li>
+      <li>自己主張は、目立たない場所でも自分らしさを保つ姿勢を表す言葉ともいえる</li>
     </ul>
   </section>
 

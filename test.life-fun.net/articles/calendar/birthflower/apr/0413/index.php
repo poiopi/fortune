@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0413/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月13日の誕生花エビネの花言葉・特徴・魅力をわかりやすく解説。「気品」を象徴する野趣あふれるランの意味を紹介します。">
+  <meta name="description" content="4月13日の誕生花エビネの花言葉・特徴・魅力をわかりやすく解説。「気品」を象徴する穂状に咲く落ち着いた色合いのランの意味を紹介します。">
   <title>4月13日の誕生花はエビネ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"エビネはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に落ち着いた色合いの花を穂状に咲かせます。ラン科の多年草で、日本に自生する山野草です。"}},
-      {"@type":"Question","name":"エビネの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「気品」という花言葉は、落ち着いた色合いの花を凛と咲かせる、ランならではの上品な佇まいに由来すると言われています。"}},
-      {"@type":"Question","name":"エビネという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"地中を這うように連なる根茎の様子がエビの背に似ていることから、この名がつけられたとされています。"}}
+      {"@type":"Question","name":"エビネはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、落ち着いた色合いの花を穂状に咲かせます。ラン科の多年草で、日本の雑木林に自生する山野草です。"}},
+      {"@type":"Question","name":"エビネの花言葉「気品」の由来は？","acceptedAnswer":{"@type":"Answer","text":"派手さを主張せず、落ち着いた色合いの花を凛と穂状に咲かせる姿が、静かに整った上品な佇まいを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"エビネの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"地中を這うように連なる球茎の姿がエビの背中に似ていることから、この名がつけられたとされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 13 · 誕生花</span>
     <h1>4月13日の誕生花はエビネ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">エビネは、ラン科の多年草で、春に落ち着いた色合いの花を穂状に咲かせる4月13日の誕生花です。花言葉は「気品」。野趣ある山野草として親しまれています。</p>
+    <p class="art-lead">4月13日、雑木林の緑が少しずつ濃くなっていく頃。落ち着いた色合いの花を穂状に咲かせるエビネは、静かな品格を身につけたい気持ちにそっと寄り添ってくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">エビネとは</a></li>
-      <li><a href="#meaning">エビネが象徴する意味</a></li>
-      <li><a href="#charm">エビネの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月13日の誕生花として親しまれるエビネ</a></li>
+      <li><a href="#story">落ち着いた色合いが語る、エビネの気品</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、エビネから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>エビネとは</h2>
-    <p>エビネは、ラン科の多年草で、4月13日の誕生花として知られています。地中を這うように連なる根茎の様子がエビの背に似ていることから名づけられたとされ、日本の雑木林などに自生するランとして古くから愛好家に親しまれています。</p>
-  </section>
+    <h2>4月13日の誕生花として親しまれるエビネ</h2>
+    <p>エビネは、ラン科の多年草です。春になると、落ち着いた色合いの花を穂状に咲かせます。地中に隠れた球茎の連なる姿がエビの背中に似ていることが名前の由来といわれ、日本の雑木林などに自生する山野草として親しまれています。4月13日の誕生花として、その凛とした佇まいが重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>エビネが象徴する意味</h2>
-    <p>エビネの花言葉は「気品」です。派手さはなくとも、落ち着いた色合いの花を凛と穂状に咲かせる姿が、ランならではの上品な佇まいを感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>エビネの魅力</h2>
-    <p>エビネの魅力は、洋ランとは異なる落ち着いた色合いと、日本の風土になじむ野趣あふれる花姿にあります。花色や模様のバリエーションも豊富で、山野草愛好家の間で古くから交配・栽培が楽しまれてきました。4月13日生まれの方はもちろん、気品を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>エビネは半日陰の湿り気のある腐植質の土壌を好みます。強い直射日光を避け、山野草として鉢植えで管理するのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月13日生まれの方はもちろん、気品を届けたい贈り物としてもエビネは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">エビネはいつ頃咲きますか？</div>
-        <div class="faq-a">春に落ち着いた色合いの花を穂状に咲かせます。ラン科の多年草で、日本に自生する山野草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">エビネの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「気品」という花言葉は、落ち着いた色合いの花を凛と咲かせる、ランならではの上品な佇まいに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">エビネという名前の由来は何ですか？</div>
-        <div class="faq-a">地中を這うように連なる根茎の様子がエビの背に似ていることから、この名がつけられたとされています。</div>
+        <div class="faq-a">春に、落ち着いた色合いの花を穂状に咲かせます。ラン科の多年草で、日本の雑木林に自生する山野草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>落ち着いた色合いが語る、エビネの気品</h2>
+    <p>雑木林の下草がまだ低いうちに、エビネは地面近くから花茎を伸ばし、落ち着いた色合いの花を穂状に咲かせます。華やかな洋ランとは異なり、派手さを主張しない控えめな色合いだからこそ、静かな存在感を放つのがこの花の特徴です。季節が本格的な春へと移り変わる中で、木漏れ日の下にひっそりと咲く姿は、周囲の緑に自然と溶け込みながらも、見る人の目を静かに引きつけます。ラン科の多年草として、花色や模様には豊富なバリエーションがあり、一株ごとに違った表情を見せてくれます。そんな、控えめでありながら凛とした佇まいを崩さない姿から、エビネには「気品」という花言葉が贈られているといわれています。この言葉は、他者を寄せつけない排他的な上品さではなく、静かに整った振る舞いから自然とにじみ出る品の良さを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">エビネの花言葉「気品」の由来は？</div>
+        <div class="faq-a">派手さを主張せず、落ち着いた色合いの花を凛と穂状に咲かせる姿が、静かに整った上品な佇まいを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分自身の心が整っているときにこそ、落ち着いた振る舞いは自然とにじみ出てくるものです。今日は、そんな静かな品を自分の中に育ててみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、エビネから始める小さな体験</h2>
+    <p>落ち着いた色合いの花を穂状に咲かせるエビネにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>穂状に咲く落ち着いた色合いの花を探してみる</li>
+      <li>振る舞いを一つ、丁寧に整えてみる</li>
+      <li>野山を歩いて山野草を探してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">エビネの名前の由来は何ですか？</div>
+        <div class="faq-a">地中を這うように連なる球茎の姿がエビの背中に似ていることから、この名がつけられたとされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かな品を大切にしたい今日は、年九星やラッキーカラーも参考にしてみませんか。開運カレンダーでは、その日の年九星とラッキーカラーをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月13日、控えめでありながら凛とした佇まいを崩さないエビネは、静かな品格の育み方を教えてくれる花です。</p>
     <ul>
-      <li>エビネは春に落ち着いた色の花を咲かせる、4月13日の誕生花</li>
-      <li>花言葉は「気品」、凛とした上品な佇まいに由来する</li>
-      <li>野趣あふれる花姿と豊富な花色のバリエーションが魅力</li>
-      <li>半日陰の湿り気のある環境で、山野草として育てたい</li>
+      <li>エビネはラン科の多年草で、春に落ち着いた色合いの花を穂状に咲かせる</li>
+      <li>地中の球茎がエビに似ることが名前の由来とされ、日本の山野草として親しまれている</li>
+      <li>花言葉は「気品」。控えめでも凛とした佇まいに由来するといわれる</li>
+      <li>気品は、静かに整った振る舞いから自然とにじみ出る品の良さを表す言葉ともいえる</li>
     </ul>
   </section>
 

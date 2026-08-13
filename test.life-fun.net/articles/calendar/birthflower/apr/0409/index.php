@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0409/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月9日の誕生花ウォールフラワーの花言葉・特徴・魅力をわかりやすく解説。「熱愛」を象徴する香り高い花の意味を紹介します。">
+  <meta name="description" content="4月9日の誕生花ウォールフラワーの花言葉・特徴・魅力をわかりやすく解説。「熱愛」を象徴する香りのよいオレンジや黄色の花の意味を紹介します。">
   <title>4月9日の誕生花はウォールフラワー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ウォールフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に香りのよいオレンジや黄色の花を咲かせます。アブラナ科の多年草で、甘い香りが特徴です。"}},
-      {"@type":"Question","name":"ウォールフラワーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「熱愛」という花言葉は、暖色系の鮮やかな花色と甘く濃厚な香りが、情熱的な想いを連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"ウォールフラワーという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"石垣（ウォール）の隙間などにもたくましく根を張って育つ性質から、この名がつけられたとされています。"}}
+      {"@type":"Question","name":"ウォールフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春にオレンジや黄色の花を咲かせます。アブラナ科の多年草で、香りのよい花として知られています。"}},
+      {"@type":"Question","name":"ウォールフラワーの花言葉「熱愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"暖色系の鮮やかな花色と、甘く濃厚な香りを漂わせながら咲く姿が、まっすぐな情熱を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ウォールフラワーはどんな場所で楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"花壇や鉢植えのほか、香りを生かして窓辺に置くなど、暮らしの身近な場所で楽しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 9 · 誕生花</span>
     <h1>4月9日の誕生花はウォールフラワー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ウォールフラワーは、アブラナ科の多年草で、春に香りのよいオレンジや黄色の花を咲かせる4月9日の誕生花です。花言葉は「熱愛」。情熱的な花色が印象的な花です。</p>
+    <p class="art-lead">4月9日、暖かさが日ごとに増していく頃。香りのよいオレンジや黄色の花を咲かせるウォールフラワーは、まっすぐでひたむきな情熱を思い出させてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ウォールフラワーとは</a></li>
-      <li><a href="#meaning">ウォールフラワーが象徴する意味</a></li>
-      <li><a href="#charm">ウォールフラワーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月9日の誕生花として親しまれるウォールフラワー</a></li>
+      <li><a href="#story">香りが語る、ウォールフラワーの熱愛</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ウォールフラワーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ウォールフラワーとは</h2>
-    <p>ウォールフラワーは、アブラナ科の多年草で、4月9日の誕生花として知られています。石垣の隙間などにも根を張ってたくましく育つことからこの名がつけられたとされ、オレンジや黄色、赤茶色など温かみのある花色で春の花壇を彩ります。</p>
-  </section>
+    <h2>4月9日の誕生花として親しまれるウォールフラワー</h2>
+    <p>ウォールフラワーは、アブラナ科の多年草です。春になると、オレンジや黄色の花を咲かせ、あたりに香りを漂わせます。暖色系の花色と香りの両方で存在感を放つ花として親しまれています。4月9日の誕生花として、その香り高い花姿が重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ウォールフラワーが象徴する意味</h2>
-    <p>ウォールフラワーの花言葉は「熱愛」です。暖色系の鮮やかな花色と、甘く濃厚な香りを漂わせながら咲く姿が、燃えるような情熱的な想いを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ウォールフラワーの魅力</h2>
-    <p>ウォールフラワーの魅力は、オレンジや黄色を基調とした温かみのある花色と、甘く芳醇な香りにあります。花壇に植えると独特の存在感を放ち、他の春の花との組み合わせでも引き立つ花です。4月9日生まれの方はもちろん、情熱的な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ウォールフラワーは日当たりの良い場所を好み、水はけの良い土壌で育てるのがおすすめです。花がら摘みをこまめに行うことで、長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月9日生まれの方はもちろん、情熱的な想いを届けたい贈り物としてもウォールフラワーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ウォールフラワーはいつ頃咲きますか？</div>
-        <div class="faq-a">春に香りのよいオレンジや黄色の花を咲かせます。アブラナ科の多年草で、甘い香りが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウォールフラワーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「熱愛」という花言葉は、暖色系の鮮やかな花色と甘く濃厚な香りが、情熱的な想いを連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウォールフラワーという名前の由来は何ですか？</div>
-        <div class="faq-a">石垣（ウォール）の隙間などにもたくましく根を張って育つ性質から、この名がつけられたとされています。</div>
+        <div class="faq-a">春にオレンジや黄色の花を咲かせます。アブラナ科の多年草で、香りのよい花として知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>香りが語る、ウォールフラワーの熱愛</h2>
+    <p>ウォールフラワーに近づくと、まず気づくのはその甘く濃厚な香りです。姿を見る前に香りで存在を知らせてくるような花は多くなく、視覚だけでなく嗅覚にも強く訴えかけてくるのがこの花の特徴です。窓辺や庭先に植えられていると、風に乗って香りが室内まで届くこともあり、暮らしの中にそっと彩りを添えてくれます。オレンジや黄色といった暖色系の花色も、その香りの印象をさらに強めているのかもしれません。アブラナ科の多年草として、次々と花を咲かせ続ける丈夫さも持ち合わせています。そんな、香りと花色の両方で力強く存在を主張する姿から、ウォールフラワーには「熱愛」という花言葉が贈られているといわれています。この言葉は、一方的に押し付ける強引さではなく、まっすぐに想いを届けようとするひたむきさを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ウォールフラワーの花言葉「熱愛」の由来は？</div>
+        <div class="faq-a">暖色系の鮮やかな花色と、甘く濃厚な香りを漂わせながら咲く姿が、まっすぐな情熱を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>気になる相手や物事に、素直な気持ちを少しだけ表に出してみると、思いがけず物事が動き出すことがあります。その一歩を、今日は迷わず踏み出してみるのも一案です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ウォールフラワーから始める小さな体験</h2>
+    <p>香りのよいオレンジや黄色の花を咲かせるウォールフラワーにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>オレンジや黄色の花の香りを確かめてみる</li>
+      <li>情熱を感じることに、今日は一つ積極的に取り組んでみる</li>
+      <li>暖色系のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ウォールフラワーはどんな場所で楽しめますか？</div>
+        <div class="faq-a">花壇や鉢植えのほか、香りを生かして窓辺に置くなど、暮らしの身近な場所で楽しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">ひたむきな気持ちで過ごしたい今日は、ラッキーフードやおすすめアイテムも参考にしてみませんか。開運カレンダーでは、その日のラッキーフードとおすすめアイテムをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月9日、香りと花色の両方で存在を主張するウォールフラワーは、まっすぐな情熱を届けるひたむきさを教えてくれる花です。</p>
     <ul>
-      <li>ウォールフラワーは春にオレンジや黄色の花を咲かせる、4月9日の誕生花</li>
-      <li>花言葉は「熱愛」、鮮やかな花色と甘い香りに由来する</li>
-      <li>温かみのある花色と芳醇な香りが魅力</li>
-      <li>日当たりと水はけの良い場所で、花がら摘みをしながら育てたい</li>
+      <li>ウォールフラワーはアブラナ科の多年草で、春にオレンジや黄色の花を咲かせる</li>
+      <li>甘く濃厚な香りを漂わせる、香りのよい花として知られている</li>
+      <li>花言葉は「熱愛」。暖色系の花色と香りが生むまっすぐな情熱に由来するといわれる</li>
+      <li>熱愛は、想いを押し付けるのではなくまっすぐに届けようとするひたむきさを表す言葉ともいえる</li>
     </ul>
   </section>
 

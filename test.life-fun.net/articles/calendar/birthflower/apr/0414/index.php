@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0414/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月14日の誕生花ハルジオンの花言葉・特徴・魅力をわかりやすく解説。「さりげない愛」を象徴する身近な野の花の意味を紹介します。">
+  <meta name="description" content="4月14日の誕生花ハルジオンの花言葉・特徴・魅力をわかりやすく解説。「さりげない愛」を象徴する身近な野に咲く白い花の意味を紹介します。">
   <title>4月14日の誕生花はハルジオン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -91,8 +101,8 @@ ob_start();
     "@type": "FAQPage",
     "mainEntity": [
       {"@type":"Question","name":"ハルジオンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏にかけて、細い花びらの白い花を咲かせます。キク科の多年草で、身近な野の花として親しまれています。"}},
-      {"@type":"Question","name":"ハルジオンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「さりげない愛」という花言葉は、道端でひっそりと寄り添うように咲く姿に由来すると言われています。"}},
-      {"@type":"Question","name":"ハルジオンとヒメジョオンはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"見た目がよく似ていますが、ハルジオンはつぼみがうなだれるように咲き、茎の中が空洞であるのに対し、ヒメジョオンはつぼみが上を向き茎の中が詰まっているという違いがあります。"}}
+      {"@type":"Question","name":"ハルジオンの花言葉「さりげない愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"道端や空き地など身近な場所で、気づかれなくても変わらず咲き続ける姿が、見返りを求めない静かな思いやりを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ハルジオンはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"道端や空き地、河川敷など、身近な場所に群生してよく見られる花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 14 · 誕生花</span>
     <h1>4月14日の誕生花はハルジオン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハルジオンは、キク科の多年草で、春から初夏に細い花びらの白い花を咲かせる4月14日の誕生花です。花言葉は「さりげない愛」。身近で素朴な野の花です。</p>
+    <p class="art-lead">4月14日、道端の草花にも自然と目が向くようになる頃。細い花びらの白い花を咲かせるハルジオンは、気づかれなくても構わない静かな思いやりの尊さを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハルジオンとは</a></li>
-      <li><a href="#meaning">ハルジオンが象徴する意味</a></li>
-      <li><a href="#charm">ハルジオンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月14日の誕生花として親しまれるハルジオン</a></li>
+      <li><a href="#story">白い花びらが語る、ハルジオンのさりげない愛</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハルジオンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハルジオンとは</h2>
-    <p>ハルジオンは、キク科の多年草で、4月14日の誕生花として知られています。道端や空き地など身近な場所に群生し、細い花びらをたくさん持つ白やピンクの花を咲かせる、日本各地でよく見かける野の花です。</p>
-  </section>
+    <h2>4月14日の誕生花として親しまれるハルジオン</h2>
+    <p>ハルジオンは、キク科の多年草です。春から初夏にかけて、細い花びらの白い花を咲かせます。道端や空き地など身近な場所に群生し、素朴な野の花の印象で親しまれています。4月14日の誕生花として、その飾らない佇まいが重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハルジオンが象徴する意味</h2>
-    <p>ハルジオンの花言葉は「さりげない愛」です。特別に目立つわけではないのに、道端でひっそりと寄り添うように咲く姿が、飾らない静かな愛情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハルジオンの魅力</h2>
-    <p>ハルジオンの魅力は、どこにでも咲く身近さと、細い花びらが風に揺れる素朴で可憐な佇まいにあります。つぼみの頃はうなだれるように咲き、開花とともに顔を上げていく様子も見どころのひとつです。4月14日生まれの方はもちろん、さりげない優しさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハルジオンは丈夫で環境を選ばず、日当たりの良い場所であれば特別な手入れをしなくても育ちます。野草として自然な姿を楽しむのもおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月14日生まれの方はもちろん、さりげない優しさを届けたい贈り物としてもハルジオンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ハルジオンはいつ頃咲きますか？</div>
         <div class="faq-a">春から初夏にかけて、細い花びらの白い花を咲かせます。キク科の多年草で、身近な野の花として親しまれています。</div>
       </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="story">
+    <h2>白い花びらが語る、ハルジオンのさりげない愛</h2>
+    <p>春が本格的に深まり、初夏へと季節が移り変わっていく道端に、ハルジオンは細い花びらの白い花をひっそりと咲かせます。特別に目立つ場所ではなく、誰も気に留めないような道端や空き地に群生し、通り過ぎる人の足元でそっと揺れているのがこの花の日常です。派手な花色でも大輪でもないからこそ、意識して見なければ気づかれずに過ぎていくこともあるでしょう。キク科の多年草として、季節が変わる長い期間にわたって花を咲かせ続けるたくましさも持ち合わせています。そんな、気づかれなくても変わらずそこに咲き続ける姿から、ハルジオンには「さりげない愛」という花言葉が贈られているといわれています。この言葉は、存在感のなさを表すのではなく、見返りを求めずに寄り添い続ける静かな思いやりを表しているのでしょう。</p>
+
+    <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハルジオンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「さりげない愛」という花言葉は、道端でひっそりと寄り添うように咲く姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハルジオンとヒメジョオンはどう違いますか？</div>
-        <div class="faq-a">見た目がよく似ていますが、ハルジオンはつぼみがうなだれるように咲き、茎の中が空洞であるのに対し、ヒメジョオンはつぼみが上を向き茎の中が詰まっているという違いがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ハルジオンの花言葉「さりげない愛」の由来は？</div>
+        <div class="faq-a">道端や空き地など身近な場所で、気づかれなくても変わらず咲き続ける姿が、見返りを求めない静かな思いやりを思わせることに由来するといわれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>そばで静かに寄り添い続ける気持ちには、それだけで十分な価値があります。そばにいてくれるという事実だけで、その優しさはちゃんと相手の心に届いているものです。そんなさりげない思いやりを、今日も大切にしていきたいところです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハルジオンから始める小さな体験</h2>
+    <p>身近な場所に白い花を咲かせ続けるハルジオンにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>細い花びらの白い花を野や道端で探してみる</li>
+      <li>さりげない気遣いを一つ、誰かにしてみる</li>
+      <li>白い小さな花を一輪、部屋に飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハルジオンはどんな場所でよく見られますか？</div>
+        <div class="faq-a">道端や空き地、河川敷など、身近な場所に群生してよく見られる花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">さりげない思いやりを届けたい今日は、吉日やおすすめアイテムも確認してみませんか。開運カレンダーでは、その日の吉日とおすすめアイテムをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月14日、気づかれなくても身近な場所で咲き続けるハルジオンは、見返りを求めない静かな思いやりの尊さを教えてくれる花です。</p>
     <ul>
-      <li>ハルジオンは春から初夏に白い花を咲かせる、4月14日の誕生花</li>
-      <li>花言葉は「さりげない愛」、寄り添うように咲く姿に由来する</li>
-      <li>身近な場所に咲く素朴で可憐な佇まいが魅力</li>
-      <li>丈夫で環境を選ばず、日当たりの良い場所で育つ</li>
+      <li>ハルジオンはキク科の多年草で、春から初夏に細い花びらの白い花を咲かせる</li>
+      <li>道端や空き地など身近な場所に群生する、素朴な野の花として親しまれている</li>
+      <li>花言葉は「さりげない愛」。気づかれなくても咲き続ける姿に由来するといわれる</li>
+      <li>さりげない愛は、見返りを求めずに寄り添い続ける静かな思いやりを表す言葉ともいえる</li>
     </ul>
   </section>
 

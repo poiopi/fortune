@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0417/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月17日の誕生花ユスラウメの花言葉・特徴・魅力をわかりやすく解説。「ノスタルジー」を象徴する懐かしい花木の意味を紹介します。">
+  <meta name="description" content="4月17日の誕生花ユスラウメの花言葉・特徴・魅力をわかりやすく解説。春の淡紅色の花と初夏の赤い実が結ぶ「ノスタルジー」を象徴する花木の意味を紹介します。">
   <title>4月17日の誕生花はユスラウメ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ユスラウメはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に淡紅色の花を咲かせ、初夏には赤い実をつけます。バラ科の落葉低木で、実は生食やジャムに利用されます。"}},
-      {"@type":"Question","name":"ユスラウメの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ノスタルジー」という花言葉は、実を摘んで食べた思い出を呼び起こす、素朴で懐かしい佇まいに由来すると言われています。"}},
-      {"@type":"Question","name":"ユスラウメの実は食べられますか？","acceptedAnswer":{"@type":"Answer","text":"はい。初夏につける赤く小さな実は甘酸っぱく、生食のほかジャムなどにも利用されます。"}}
+      {"@type":"Question","name":"ユスラウメはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に淡紅色の花を咲かせます。バラ科の落葉低木で、花のあと初夏には赤い実をつけます。"}},
+      {"@type":"Question","name":"ユスラウメの花言葉「ノスタルジー」の由来は？","acceptedAnswer":{"@type":"Answer","text":"春の花から初夏の赤い実へと移ろっていく姿が、季節が巡るたびに懐かしい記憶を思い出させることに由来するといわれています。"}},
+      {"@type":"Question","name":"ユスラウメの実はどんな時期にできますか？","acceptedAnswer":{"@type":"Answer","text":"花は春に咲き、実は初夏の頃に赤く色づきます。花と実で季節を分けて楽しめる木です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 17 · 誕生花</span>
     <h1>4月17日の誕生花はユスラウメ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ユスラウメは、バラ科の落葉低木で、春に淡紅色の花を咲かせる4月17日の誕生花です。花言葉は「ノスタルジー」。初夏には赤い実をつける、懐かしさを感じさせる花木です。</p>
+    <p class="art-lead">4月17日、淡紅色の花がやがて赤い実へと移ろっていく途中の頃。ユスラウメは、季節が巡るたびに昔の記憶をそっと連れてきてくれる木です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ユスラウメとは</a></li>
-      <li><a href="#meaning">ユスラウメが象徴する意味</a></li>
-      <li><a href="#charm">ユスラウメの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月17日の誕生花として親しまれるユスラウメ</a></li>
+      <li><a href="#story">花から実へ、ユスラウメが運ぶノスタルジー</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ユスラウメから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ユスラウメとは</h2>
-    <p>ユスラウメは、バラ科の落葉低木で、4月17日の誕生花として知られています。春に梅に似た淡紅色の小花を咲かせ、初夏には赤くつやのある小さな実をつけることから、庭木として古くから親しまれ、実は生食やジャムにも利用されてきました。</p>
-  </section>
+    <h2>4月17日の誕生花として親しまれるユスラウメ</h2>
+    <p>ユスラウメは、バラ科の落葉低木です。春になると淡紅色の花を枝いっぱいに咲かせ、花が終わったあとの初夏には小さな赤い実をつけます。庭木としても親しまれ、花と実の両方で季節の移ろいを感じさせてくれる木です。4月17日の誕生花として、この移ろいゆく姿が重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ユスラウメが象徴する意味</h2>
-    <p>ユスラウメの花言葉は「ノスタルジー」です。子どもの頃に実を摘んで食べた記憶を思い起こさせる、素朴で懐かしい佇まいが、過ぎ去った日々への郷愁を感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ユスラウメの魅力</h2>
-    <p>ユスラウメの魅力は、春の可憐な花と、初夏に実る赤い実という二段階の楽しみを味わえるところにあります。庭先に一本あるだけで、季節の移ろいを身近に感じられる花木です。4月17日生まれの方はもちろん、懐かしい思い出を分かち合いたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ユスラウメは日当たりの良い場所を好み、丈夫で育てやすい花木です。実をたくさんつけさせるためには、日当たりと適度な剪定を心がけるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月17日生まれの方はもちろん、懐かしい思い出を分かち合いたい贈り物としてもユスラウメは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ユスラウメはいつ頃咲きますか？</div>
-        <div class="faq-a">春に淡紅色の花を咲かせ、初夏には赤い実をつけます。バラ科の落葉低木で、実は生食やジャムに利用されます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユスラウメの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「ノスタルジー」という花言葉は、実を摘んで食べた思い出を呼び起こす、素朴で懐かしい佇まいに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユスラウメの実は食べられますか？</div>
-        <div class="faq-a">はい。初夏につける赤く小さな実は甘酸っぱく、生食のほかジャムなどにも利用されます。</div>
+        <div class="faq-a">春に淡紅色の花を咲かせます。バラ科の落葉低木で、花のあと初夏には赤い実をつけます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>花から実へ、ユスラウメが運ぶノスタルジー</h2>
+    <p>春先、まだ肌寒さの残る枝に淡紅色の花がふわりと咲き始めると、多くの人がその可憐さに目を留めます。けれどユスラウメの物語はそこで終わりません。花びらが散ったあと、初夏にかけて枝には小さな赤い実がなり始め、庭先や畑の記憶として残っている人も少なくないでしょう。子どもの頃に木からもいで口にした、という記憶を持つ人にとっては、実の赤さそのものが懐かしさの象徴になっていることもあります。花と実、二つの姿を一年のうちに見せてくれるこの木には、季節が巡るたびに古い記憶を思い出させる力が宿っているのかもしれません。そんなところから、ユスラウメには「ノスタルジー」という花言葉が贈られているといわれています。過去を惜しむ言葉というより、思い出をそっと呼び覚ましてくれる存在として受け止めたい花言葉です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユスラウメの花言葉「ノスタルジー」の由来は？</div>
+        <div class="faq-a">春の花から初夏の赤い実へと移ろっていく姿が、季節が巡るたびに懐かしい記憶を思い出させることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>季節が移り変わるたびに、心のどこかで昔の風景がふっとよみがえることがあります。それは過去に引き戻されているのではなく、今の自分の中にまだその記憶が生きている証なのでしょう。今日はそんな懐かしさを、そっと味わってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ユスラウメから始める小さな体験</h2>
+    <p>春の花から初夏の実へと姿を変えていくユスラウメにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>淡紅色の小さな花を庭や道端で探してみる</li>
+      <li>子どもの頃の懐かしい記憶を一つ思い出してみる</li>
+      <li>淡いピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユスラウメの実はどんな時期にできますか？</div>
+        <div class="faq-a">花は春に咲き、実は初夏の頃に赤く色づきます。花と実で季節を分けて楽しめる木です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">懐かしさに浸りたい今日は、今月の誕生石やおすすめの行動も確認してみませんか。開運カレンダーでは、その日の今月の誕生石とおすすめの行動をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月17日、淡紅色の花からやがて赤い実へと姿を変えていくユスラウメは、季節が巡るたびに懐かしい記憶をそっと連れてきてくれる木です。</p>
     <ul>
-      <li>ユスラウメは春に淡紅色の花を咲かせる、4月17日の誕生花</li>
-      <li>花言葉は「ノスタルジー」、懐かしさを感じさせる佇まいに由来する</li>
-      <li>春の花と初夏の赤い実、二段階の楽しみが魅力</li>
-      <li>日当たりの良い場所で、適度な剪定をしながら育てたい</li>
+      <li>ユスラウメはバラ科の落葉低木で、春に淡紅色の花を咲かせる</li>
+      <li>花のあと初夏には赤い実をつけ、花と実の両方を楽しめる</li>
+      <li>花言葉は「ノスタルジー」。花から実への移ろいに由来するといわれる</li>
+      <li>ノスタルジーは、季節が巡るたびによみがえる懐かしい記憶を表す言葉ともいえる</li>
     </ul>
   </section>
 

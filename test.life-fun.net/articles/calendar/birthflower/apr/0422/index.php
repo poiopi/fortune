@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0422/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月22日の誕生花ホシクジャクの花言葉・特徴・魅力をわかりやすく解説。「恋の年頃」を象徴する星をちりばめた花の意味を紹介します。">
+  <meta name="description" content="4月22日の誕生花ホシクジャクの花言葉・特徴・魅力をわかりやすく解説。星をちりばめたような花姿が象徴する「恋の年頃」の意味を紹介します。">
   <title>4月22日の誕生花はホシクジャク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ホシクジャクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"小さな星形の花を無数に咲かせる園芸品種で、可憐な花姿が魅力です。"}},
-      {"@type":"Question","name":"ホシクジャクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恋の年頃」という花言葉は、無数の花が寄り添うように咲きこぼれる姿が、初々しい心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ホシクジャクという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"星をちりばめたような小花が集まって咲く姿が、名前の由来になったとされています。"}}
+      {"@type":"Question","name":"ホシクジャクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"星をちりばめたような繊細な花姿を咲かせる、ブラジル原産のサボテンです。イースターの頃に見頃を迎えることから「イースターカクタス」とも呼ばれます。"}},
+      {"@type":"Question","name":"ホシクジャクの花言葉「恋の年頃」の由来は？","acceptedAnswer":{"@type":"Answer","text":"星をちりばめたような繊細な花姿が、初めて誰かを意識するときのそわそわとした高揚感を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ホシクジャクはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"ブラジル原産のサボテンの仲間で、可憐な花姿から観賞用として親しまれています。「イースターカクタス」という別名でも知られています。"}}
     ]
   }
   </script>
@@ -129,14 +139,13 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 22 · 誕生花</span>
     <h1>4月22日の誕生花はホシクジャク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ホシクジャクは、星をちりばめたような繊細な花姿が魅力の4月22日の誕生花です。花言葉は「恋の年頃」。可憐な印象の園芸品種として親しまれています。</p>
+    <p class="art-lead">4月22日、星をちりばめたような花がふっと咲く頃。ブラジル生まれのホシクジャクは、はじめて誰かを意識するときの、そわそわとした高揚感を思わせる花です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ホシクジャク</dd>
     <dt>花言葉</dt><dd>恋の年頃</dd>
-    <dt>科名</dt><dd>-</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,66 +159,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ホシクジャクとは</a></li>
-      <li><a href="#meaning">ホシクジャクが象徴する意味</a></li>
-      <li><a href="#charm">ホシクジャクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月22日の誕生花として親しまれるホシクジャク</a></li>
+      <li><a href="#story">星形の花姿が語る、ホシクジャクの恋の年頃</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ホシクジャクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ホシクジャクとは</h2>
-    <p>ホシクジャクは、4月22日の誕生花として知られています。小さな星形の花が無数に集まって咲く姿が特徴で、まるで夜空に星をちりばめたような繊細な印象を持つ、可憐な花姿の園芸品種です。</p>
-  </section>
+    <h2>4月22日の誕生花として親しまれるホシクジャク</h2>
+    <p>ホシクジャクは、ブラジル原産のサボテンです。星をちりばめたような繊細な花姿が魅力の、可憐な印象の園芸品種として親しまれています。ちょうどイースターの頃に見頃を迎えることから、「イースターカクタス」という別名でも知られています。この愛らしい花姿から、4月22日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ホシクジャクが象徴する意味</h2>
-    <p>ホシクジャクの花言葉は「恋の年頃」です。無数の小さな花が寄り添うように咲きこぼれる姿が、恋に胸を弾ませる年頃の初々しい心情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ホシクジャクの魅力</h2>
-    <p>ホシクジャクの魅力は、細やかな花が織りなす繊細で華やかな花姿にあります。寄せ植えやハンギングバスケットに用いると、こぼれるように咲く花が優しい表情を添えてくれます。4月22日生まれの方はもちろん、初々しい想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ホシクジャクは日当たりの良い場所を好み、水はけの良い土壌で育てるのがおすすめです。こまめな花がら摘みで、長く花を楽しむことができます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月22日生まれの方はもちろん、初々しい想いを届けたい贈り物としてもホシクジャクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ホシクジャクはいつ頃咲きますか？</div>
-        <div class="faq-a">小さな星形の花を無数に咲かせる園芸品種で、可憐な花姿が魅力です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホシクジャクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「恋の年頃」という花言葉は、無数の花が寄り添うように咲きこぼれる姿が、初々しい心情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホシクジャクという名前の由来は何ですか？</div>
-        <div class="faq-a">星をちりばめたような小花が集まって咲く姿が、名前の由来になったとされています。</div>
+        <div class="faq-a">星をちりばめたような繊細な花姿を咲かせる、ブラジル原産のサボテンです。イースターの頃に見頃を迎えることから「イースターカクタス」とも呼ばれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>星形の花姿が語る、ホシクジャクの恋の年頃</h2>
+    <p>ホシクジャクの花びらは、細く尖った形が放射状に広がり、まるで小さな星を一つひとつ散りばめたように咲きます。サボテンと聞くと無骨な棘を思い浮かべる人も多いかもしれませんが、ホシクジャクの花にはそんなイメージを覆すような繊細さと愛らしさがあります。じっと見ていると、その一輪一輪がきらきらと瞬いているようにも見えてくるから不思議です。まだ何者でもない蕾から、ふいに花開くその瞬間の高揚感は、初めて誰かを気にかけ始めたときの、あの落ち着かない気持ちにどこか似ています。そんな星のきらめきのような花姿から、ホシクジャクには「恋の年頃」という花言葉が贈られているといわれています。特定の年齢に限らず、誰の心にも訪れる、あの初々しい高揚感を表す言葉として受け止めたいところです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ホシクジャクの花言葉「恋の年頃」の由来は？</div>
+        <div class="faq-a">星をちりばめたような繊細な花姿が、初めて誰かを意識するときのそわそわとした高揚感を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>そわそわと落ち着かない気持ちは、何かが新しく始まろうとしているサインです。今日はその高揚感を隠さずに、素直に受け止めてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ホシクジャクから始める小さな体験</h2>
+    <p>星をちりばめたような花を咲かせるホシクジャクにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>星をちりばめたような花姿をじっくり観察してみる</li>
+      <li>気になっている誰かを、そっと思い浮かべてみる</li>
+      <li>「イースターカクタス」という別名について調べてみる</li>
+      <li>繊細な花を一輪、部屋に飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ホシクジャクはどんな植物ですか？</div>
+        <div class="faq-a">ブラジル原産のサボテンの仲間で、可憐な花姿から観賞用として親しまれています。「イースターカクタス」という別名でも知られています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">そわそわと心が浮き立つ今日は、六曜やラッキーカラーも参考にしてみませんか。開運カレンダーでは、その日の六曜とラッキーカラーをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月22日、星をちりばめたような花を咲かせるホシクジャクは、誰かを意識し始めるときの初々しい高揚感を教えてくれる花です。</p>
     <ul>
-      <li>ホシクジャクは星形の小花を無数に咲かせる、4月22日の誕生花</li>
-      <li>花言葉は「恋の年頃」、初々しい心情に由来する</li>
-      <li>細やかな花が織りなす繊細で華やかな花姿が魅力</li>
-      <li>日当たりと水はけの良い場所で、花がら摘みをしながら育てたい</li>
+      <li>ホシクジャクはブラジル原産のサボテンで、星形の繊細な花姿が魅力である</li>
+      <li>イースターの頃に見頃を迎え、「イースターカクタス」とも呼ばれる</li>
+      <li>花言葉は「恋の年頃」。星のきらめきのような花姿に由来するといわれる</li>
+      <li>恋の年頃は、誰かを意識し始めるときの初々しい高揚感を表す言葉ともいえる</li>
     </ul>
   </section>
 

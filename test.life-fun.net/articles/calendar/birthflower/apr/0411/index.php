@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0411/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月11日の誕生花クンシランの花言葉・特徴・魅力をわかりやすく解説。「情け深い」を象徴する気品ある花の意味を紹介します。">
+  <meta name="description" content="4月11日の誕生花クンシランの花言葉・特徴・魅力をわかりやすく解説。「情け深い」を象徴する橙色の花が球状に集まる花の意味を紹介します。">
   <title>4月11日の誕生花はクンシラン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クンシランはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に橙色の花を球状に咲かせます。ヒガンバナ科の多年草で、気品ある佇まいが特徴です。"}},
-      {"@type":"Question","name":"クンシランの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「情け深い」という花言葉は、厚みのある葉に守られるように花を咲かせる姿が、深い思いやりを連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"クンシランはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"直射日光を避けた明るい日陰を好み、乾燥気味に管理することで根腐れを防げます。"}}
+      {"@type":"Question","name":"クンシランはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、橙色の花を球状に咲かせます。ヒガンバナ科の多年草で、風格ある姿が特徴です。"}},
+      {"@type":"Question","name":"クンシランの花言葉「情け深い」の由来は？","acceptedAnswer":{"@type":"Answer","text":"厚みのある葉に守られるように、温かみのある橙色の花を球状に咲かせる姿が、深い思いやりを連想させることに由来するといわれています。"}},
+      {"@type":"Question","name":"クンシランはアマリリスと同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"見た目が似ている部分もありますが、クンシランとアマリリスは異なる種類の植物です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 11 · 誕生花</span>
     <h1>4月11日の誕生花はクンシラン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クンシランは、ヒガンバナ科の多年草で、春に橙色の花を球状に咲かせる4月11日の誕生花です。花言葉は「情け深い」。風格と気品を感じさせる花です。</p>
+    <p class="art-lead">4月11日、新生活のリズムが少しずつ整ってくる頃。橙色の花が球状に集まって咲くクンシランは、誰かをそっと支えたい気持ちを思い出させてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クンシランとは</a></li>
-      <li><a href="#meaning">クンシランが象徴する意味</a></li>
-      <li><a href="#charm">クンシランの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月11日の誕生花として親しまれるクンシラン</a></li>
+      <li><a href="#story">橙色が語る、クンシランの情け深い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クンシランから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クンシランとは</h2>
-    <p>クンシランは、ヒガンバナ科の多年草で、4月11日の誕生花として知られています。太くつややかな葉の間から花茎を伸ばし、橙色の花を球状にまとめて咲かせる姿が、気品ある佇まいとして古くから鉢植えで親しまれています。</p>
-  </section>
+    <h2>4月11日の誕生花として親しまれるクンシラン</h2>
+    <p>クンシランは、ヒガンバナ科の多年草です。春になると、橙色の花を球状にまとめて咲かせます。風格と気品を感じさせる姿から、鉢植えとして古くから親しまれています。4月11日の誕生花として、その橙色の花が集まって咲く様子が重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クンシランが象徴する意味</h2>
-    <p>クンシランの花言葉は「情け深い」です。厚みのある葉に守られるように大切に花を咲かせる姿が、深い思いやりの心を持って人を包み込むことを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クンシランの魅力</h2>
-    <p>クンシランの魅力は、光沢のある濃い緑の葉と、その中心から立ち上がる橙色の花房が織りなす気品ある佇まいにあります。室内でも育てやすく、長く花を楽しめる観葉植物としても人気です。4月11日生まれの方はもちろん、思いやりの心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クンシランは直射日光を避けた明るい日陰を好み、乾燥気味に管理するのがおすすめです。過湿になると根腐れしやすいため、水の与えすぎには注意が必要です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月11日生まれの方はもちろん、思いやりの心を届けたい贈り物としてもクンシランは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">クンシランはいつ頃咲きますか？</div>
-        <div class="faq-a">春に橙色の花を球状に咲かせます。ヒガンバナ科の多年草で、気品ある佇まいが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クンシランの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「情け深い」という花言葉は、厚みのある葉に守られるように花を咲かせる姿が、深い思いやりを連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クンシランはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">直射日光を避けた明るい日陰を好み、乾燥気味に管理することで根腐れを防げます。</div>
+        <div class="faq-a">春に、橙色の花を球状に咲かせます。ヒガンバナ科の多年草で、風格ある姿が特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>橙色が語る、クンシランの情け深い</h2>
+    <p>クンシランの橙色は、赤ほど強くなく、黄色ほど軽やかでもない、その中間にある温かみを持った色です。花茎の先に球状に集まって咲く橙色の花は、見る人の心をふっと和ませるような、包み込むような印象を与えます。派手すぎない色合いだからこそ、そばにいる人をそっと支えるような、控えめな安心感を感じさせるのかもしれません。ヒガンバナ科の多年草として、厚みのある葉が花を守るように広がる姿も、この花ならではの特徴です。そんな、温かみのある橙色が周囲を包み込むような姿から、クンシランには「情け深い」という花言葉が贈られているといわれています。この言葉は、大きな自己犠牲というよりも、そっと寄り添う優しさを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クンシランの花言葉「情け深い」の由来は？</div>
+        <div class="faq-a">厚みのある葉に守られるように、温かみのある橙色の花を球状に咲かせる姿が、深い思いやりを連想させることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>そっと手を差し伸べる小さな優しさは、相手にとって十分な支えになることがあります。そんな控えめな優しさこそ、今日は誰かの心にそっと寄り添う力になります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クンシランから始める小さな体験</h2>
+    <p>橙色の花が球状に集まって咲くクンシランにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>球状に集まって咲く橙色の花を観察してみる</li>
+      <li>困っている誰かに、一つ手を差し伸べてみる</li>
+      <li>橙色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クンシランはアマリリスと同じ花ですか？</div>
+        <div class="faq-a">見た目が似ている部分もありますが、クンシランとアマリリスは異なる種類の植物です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かに寄り添いたい今日は、おすすめの行動やラッキープレイスも参考にしてみませんか。開運カレンダーでは、その日のおすすめの行動とラッキープレイスをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月11日、温かみのある橙色が周囲を包み込むクンシランは、そっと寄り添う優しさの大切さを教えてくれる花です。</p>
     <ul>
-      <li>クンシランは春に橙色の花を球状に咲かせる、4月11日の誕生花</li>
-      <li>花言葉は「情け深い」、葉に守られて咲く花姿に由来する</li>
-      <li>光沢のある葉と気品ある花房の佇まいが魅力</li>
-      <li>明るい日陰で、乾燥気味に管理しながら育てたい</li>
+      <li>クンシランはヒガンバナ科の多年草で、春に橙色の花を球状に咲かせる</li>
+      <li>風格と気品を感じさせる姿から、鉢植えとして古くから親しまれている</li>
+      <li>花言葉は「情け深い」。葉に守られて咲く温かみのある花色に由来するといわれる</li>
+      <li>情け深いは、大きな自己犠牲ではなくそっと寄り添う優しさを表す言葉ともいえる</li>
     </ul>
   </section>
 

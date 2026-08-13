@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0415/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月15日の誕生花タンポポの花言葉・特徴・魅力をわかりやすく解説。「再会の夢」を象徴する綿毛を飛ばす花の意味を紹介します。">
+  <meta name="description" content="4月15日の誕生花タンポポの花言葉・特徴・魅力をわかりやすく解説。黄色い花が綿毛になる様子から「再会の夢」を象徴するといわれる身近な花の意味を紹介します。">
   <title>4月15日の誕生花はタンポポ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"タンポポはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に黄色い花を咲かせ、花後には綿毛となって種を飛ばします。キク科の多年草で、身近な野の花として親しまれています。"}},
-      {"@type":"Question","name":"タンポポの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「再会の夢」という花言葉は、綿毛が風に乗って飛び、別の場所でまた花を咲かせる様子に由来すると言われています。"}},
-      {"@type":"Question","name":"タンポポの綿毛はなぜ種を遠くまで飛ばせるのですか？","acceptedAnswer":{"@type":"Answer","text":"種についた繊細な冠毛（かんもう）がパラシュートの役割を果たし、風に乗って広い範囲まで種を運ぶことができます。"}}
+      {"@type":"Question","name":"タンポポはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に黄色い花を咲かせ、花が終わったあとは綿毛になって種を飛ばします。キク科の多年草で、身近な野の花として親しまれています。"}},
+      {"@type":"Question","name":"タンポポの花言葉「再会の夢」の由来は？","acceptedAnswer":{"@type":"Answer","text":"綿毛になった種が風に乗ってどこかへ運ばれ、やがてまた新しい場所で花を咲かせる姿が、離れても再びめぐり会える予感を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"タンポポの綿毛にはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"綿毛に息を吹きかけて飛ばす遊びは昔から親しまれています。飛んでいく綿毛を眺めながら、誰かを思い浮かべてみるのもおすすめです。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 15 · 誕生花</span>
     <h1>4月15日の誕生花はタンポポ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">タンポポは、キク科の多年草で、春に黄色い花を咲かせる4月15日の誕生花です。花言葉は「再会の夢」。綿毛となって種を飛ばす、身近で懐かしい印象の花です。</p>
+    <p class="art-lead">4月15日、道端の黄色い花が、やがて丸い綿毛に姿を変えていく頃。タンポポは種を風に託しながら、離れてもまた会えるという淡い予感を運んでくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">タンポポとは</a></li>
-      <li><a href="#meaning">タンポポが象徴する意味</a></li>
-      <li><a href="#charm">タンポポの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月15日の誕生花として親しまれるタンポポ</a></li>
+      <li><a href="#story">綿毛が運ぶ、タンポポの再会の夢</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、タンポポから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>タンポポとは</h2>
-    <p>タンポポは、キク科の多年草で、4月15日の誕生花として知られています。春になると黄色い花を咲かせ、花が終わると綿毛をつけた種を風に乗せて遠くまで飛ばす、日本人にとって最も身近な野の花のひとつです。</p>
-  </section>
+    <h2>4月15日の誕生花として親しまれるタンポポ</h2>
+    <p>タンポポは、キク科の多年草です。春になると黄色い花を咲かせ、花が終わるとまん丸の綿毛に姿を変え、風に乗せて種を遠くへ運びます。道端や公園、空き地など身近などこにでも顔を出す、誰もが一度は目にしたことのある花です。4月15日の誕生花として、この変化していく姿が重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>タンポポが象徴する意味</h2>
-    <p>タンポポの花言葉は「再会の夢」です。綿毛となって風に飛ばされた種が、やがて別の場所で新しい花を咲かせる様子が、離れていても再び巡り会える夢を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>タンポポの魅力</h2>
-    <p>タンポポの魅力は、鮮やかな黄色の花から、ふわふわとした白い綿毛へと姿を変えていく、成長の物語を感じさせるところにあります。子どもの頃に綿毛を吹いて遊んだ記憶を呼び起こす、懐かしさを持つ花でもあります。4月15日生まれの方はもちろん、再会への願いを込めた贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>タンポポは非常に丈夫で、日当たりの良い場所であればほとんど手をかけなくても育ちます。こぼれ種でも自然に増えていく生命力の強い花です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月15日生まれの方はもちろん、再会への願いを込めた贈り物としてもタンポポは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">タンポポはいつ頃咲きますか？</div>
-        <div class="faq-a">春に黄色い花を咲かせ、花後には綿毛となって種を飛ばします。キク科の多年草で、身近な野の花として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タンポポの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「再会の夢」という花言葉は、綿毛が風に乗って飛び、別の場所でまた花を咲かせる様子に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タンポポの綿毛はなぜ種を遠くまで飛ばせるのですか？</div>
-        <div class="faq-a">種についた繊細な冠毛（かんもう）がパラシュートの役割を果たし、風に乗って広い範囲まで種を運ぶことができます。</div>
+        <div class="faq-a">春に黄色い花を咲かせ、花が終わったあとは綿毛になって種を飛ばします。キク科の多年草で、身近な野の花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>綿毛が運ぶ、タンポポの再会の夢</h2>
+    <p>春の道端に咲いていた黄色い花が、ある日ふと見ると真っ白な綿毛に変わっている。タンポポのそんな移り変わりに気づいたことがある人は多いのではないでしょうか。丸くふくらんだ綿毛は一つひとつが小さな種の集まりで、風が吹くたびに少しずつほどけて、遠くへ遠くへと飛ばされていきます。落ち着く場所は誰にもわかりません。それでも種はどこかにたどり着き、条件が整えば来年また同じ黄色い花を咲かせます。姿を変え、場所を移しながらも、巡り巡ってまた花を咲かせるこの繰り返しから、タンポポには「再会の夢」という花言葉が贈られているといわれています。離れていく寂しさだけでなく、いつかまたどこかで会えるかもしれないという、ささやかな希望を含んだ言葉なのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タンポポの花言葉「再会の夢」の由来は？</div>
+        <div class="faq-a">綿毛になった種が風に乗ってどこかへ運ばれ、やがてまた新しい場所で花を咲かせる姿が、離れても再びめぐり会える予感を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>離れていくものには、いつかまた巡り会う日がひそんでいることがあります。今はまだ会えていない誰かのことも、心のどこかで気にかけておくだけで十分なのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、タンポポから始める小さな体験</h2>
+    <p>綿毛になって旅立っていくタンポポにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>綿毛になったタンポポを見つけて息を吹きかけてみる</li>
+      <li>久しく会っていない人を一人思い浮かべてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タンポポの綿毛にはどんな楽しみ方がありますか？</div>
+        <div class="faq-a">綿毛に息を吹きかけて飛ばす遊びは昔から親しまれています。飛んでいく綿毛を眺めながら、誰かを思い浮かべてみるのもおすすめです。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">淡い期待を抱いてみたい今日は、月齢・月相や星座も気になるところ。開運カレンダーでは、その日の月齢・月相と星座をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月15日、黄色い花からふわりとした綿毛へと姿を変えていくタンポポは、離れていくものにもいつか再び巡り会えるという、ささやかな希望を教えてくれる花です。</p>
     <ul>
-      <li>タンポポは春に黄色い花を咲かせる、4月15日の誕生花</li>
-      <li>花言葉は「再会の夢」、綿毛が運ばれ再び花咲く様子に由来する</li>
-      <li>黄色い花から綿毛へと姿を変える成長の物語が魅力</li>
-      <li>丈夫で日当たりの良い場所であれば手間なく育つ</li>
+      <li>タンポポはキク科の多年草で、春に黄色い花を咲かせ、後に綿毛となって種を飛ばす</li>
+      <li>道端や公園など身近などこにでも見られる、親しみ深い野の花である</li>
+      <li>花言葉は「再会の夢」。綿毛が運ばれ、また花を咲かせる巡りに由来するといわれる</li>
+      <li>再会の夢は、離れていても再びめぐり会えるという淡い希望を表す言葉ともいえる</li>
     </ul>
   </section>
 

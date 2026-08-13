@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0408/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月8日の誕生花フジの花言葉・特徴・魅力をわかりやすく解説。「恋に酔う」を象徴する紫の花房の意味を紹介します。">
+  <meta name="description" content="4月8日の誕生花フジの花言葉・特徴・魅力をわかりやすく解説。「恋に酔う」を象徴する紫の花房が長く垂れる花の意味を紹介します。">
   <title>4月8日の誕生花はフジ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フジはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に紫色の花房を長く垂らして咲かせます。マメ科のつる性落葉木本で、藤棚を彩る花として親しまれています。"}},
-      {"@type":"Question","name":"フジの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恋に酔う」という花言葉は、甘い香りとともに垂れ下がる花房が、恋心に浸る様子を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"フジはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりの良い場所を好み、棚やフェンスに絡ませて育てるのが一般的です。花芽をつけるための剪定が大切です。"}}
+      {"@type":"Question","name":"フジはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、紫色の花房を長く垂らして咲かせます。マメ科のつる性落葉木本で、優雅な風情を漂わせる花です。"}},
+      {"@type":"Question","name":"フジの花言葉「恋に酔う」の由来は？","acceptedAnswer":{"@type":"Answer","text":"紫色の花房が重みのままに長く垂れ下がり、風に揺れるたびにゆらゆらと動く優雅な姿に由来するといわれています。"}},
+      {"@type":"Question","name":"フジはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"つる性の性質を生かした藤棚など、棚仕立てにして楽しまれることが多い花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 8 · 誕生花</span>
     <h1>4月8日の誕生花はフジ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フジは、マメ科のつる性落葉木本で、春に紫色の花房を長く垂らして咲かせる4月8日の誕生花です。花言葉は「恋に酔う」。優雅でしっとりとした風情を漂わせる花です。</p>
+    <p class="art-lead">4月8日、桜の季節から次の花木へと移り変わる頃。紫の花房を長く垂らして咲くフジは、心が惹かれる瞬間の甘くうっとりするような高揚感を思い出させてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フジとは</a></li>
-      <li><a href="#meaning">フジが象徴する意味</a></li>
-      <li><a href="#charm">フジの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月8日の誕生花として親しまれるフジ</a></li>
+      <li><a href="#story">垂れ下がる花房が語る、フジの恋に酔う</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フジから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フジとは</h2>
-    <p>フジは、マメ科のつる性落葉木本で、4月8日の誕生花として知られています。長く垂れ下がる紫色の花房が藤棚を彩る姿は、日本の春の風物詩として古くから親しまれ、和歌や絵画にもたびたび描かれてきました。</p>
-  </section>
+    <h2>4月8日の誕生花として親しまれるフジ</h2>
+    <p>フジは、マメ科のつる性落葉木本です。春になると、紫色の花房を長く垂らして咲かせます。優雅でしっとりとした風情を漂わせる花として、藤棚などで古くから親しまれてきました。4月8日の誕生花として、その垂れ下がる花房の美しさが重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フジが象徴する意味</h2>
-    <p>フジの花言葉は「恋に酔う」です。甘い香りを漂わせながら幾重にも連なって垂れ下がる花房の姿が、恋心に浸り酔いしれる様子を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フジの魅力</h2>
-    <p>フジの魅力は、藤棚いっぱいに垂れ下がる花房が作り出す幻想的な景観と、風に揺れるたびに漂う甘い香りにあります。淡い紫のグラデーションは、和の情緒を感じさせる特別な美しさです。4月8日生まれの方はもちろん、しっとりとした想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フジはつる性のため、棚やフェンスに絡ませて育てるのが一般的です。日当たりの良い場所を好み、花芽をつけるためには適切な時期の剪定が欠かせません。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月8日生まれの方はもちろん、しっとりとした想いを届けたい贈り物としてもフジは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">フジはいつ頃咲きますか？</div>
-        <div class="faq-a">春に紫色の花房を長く垂らして咲かせます。マメ科のつる性落葉木本で、藤棚を彩る花として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フジの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「恋に酔う」という花言葉は、甘い香りとともに垂れ下がる花房が、恋心に浸る様子を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フジはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりの良い場所を好み、棚やフェンスに絡ませて育てるのが一般的です。花芽をつけるための剪定が大切です。</div>
+        <div class="faq-a">春に、紫色の花房を長く垂らして咲かせます。マメ科のつる性落葉木本で、優雅な風情を漂わせる花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>垂れ下がる花房が語る、フジの恋に酔う</h2>
+    <p>フジの花房を下から見上げてみると、小さな花が一つ一つ連なりながら、まるで滝のように長く垂れ下がっていることに気づきます。上から下へと重みに逆らわず、素直に垂れていくその形は、他の花木にはあまり見られない独特のシルエットです。花房の先端に近づくほど花が小さくつぼんでいく変化を目で追ってみると、垂れ下がる一本の中にも繊細なグラデーションがあることがわかります。マメ科のつる性落葉木本として、しなやかに他のものへ絡みつきながら育つ性質も持ち合わせています。そんな、重みのままに素直に垂れ下がり、風に揺れるたびにゆらゆらと動く姿から、フジには「恋に酔う」という花言葉が贈られているといわれています。この言葉は、我を忘れるというよりも、心惹かれる気持ちにそっと身を委ねる心地よさを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フジの花言葉「恋に酔う」の由来は？</div>
+        <div class="faq-a">紫色の花房が重みのままに長く垂れ下がり、風に揺れるたびにゆらゆらと動く優雅な姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心が大きく動かされる瞬間は、そのまま味わうことで豊かな時間に変わっていきます。惹かれる気持ちに素直に身を任せてみるのも、今日くらいは悪くないはずです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フジから始める小さな体験</h2>
+    <p>紫の花房を長く垂らして咲くフジにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>長く垂れ下がる紫の花房を見上げて観察してみる</li>
+      <li>心惹かれていることを一つ、素直に感じてみる</li>
+      <li>紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フジはどんな場所でよく見られますか？</div>
+        <div class="faq-a">つる性の性質を生かした藤棚など、棚仕立てにして楽しまれることが多い花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心惹かれる気持ちを大切にしたい今日は、ラッキーカラーや吉日も確認してみませんか。開運カレンダーでは、その日のラッキーカラーと吉日をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月8日、紫の花房を長く垂らして咲くフジは、心惹かれる気持ちに素直になる心地よさを教えてくれる花です。</p>
     <ul>
-      <li>フジは春に紫色の花房を垂らして咲かせる、4月8日の誕生花</li>
-      <li>花言葉は「恋に酔う」、甘い香りと連なる花房に由来する</li>
-      <li>藤棚いっぱいに広がる幻想的な景観と甘い香りが魅力</li>
-      <li>日当たりの良い場所で、棚に絡ませながら育てたい</li>
+      <li>フジはマメ科のつる性落葉木本で、春に紫色の花房を長く垂らして咲かせる</li>
+      <li>優雅でしっとりとした風情を漂わせる花として、藤棚などで親しまれている</li>
+      <li>花言葉は「恋に酔う」。重みのままに垂れ下がり揺れる姿に由来するといわれる</li>
+      <li>恋に酔うは、心惹かれる気持ちにそっと身を委ねる心地よさを表す言葉ともいえる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0420/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月20日の誕生花ルピナスの花言葉・特徴・魅力をわかりやすく解説。「想像力」を象徴するまっすぐに伸びる花穂の意味を紹介します。">
+  <meta name="description" content="4月20日の誕生花ルピナスの花言葉・特徴・魅力をわかりやすく解説。藤の花を逆さにしたような花穂が印象的な「想像力」を象徴する花の意味を紹介します。">
   <title>4月20日の誕生花はルピナス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ルピナスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に藤の花を逆さにしたような花穂を咲かせます。マメ科の植物で、まっすぐ伸びる花姿が特徴です。"}},
-      {"@type":"Question","name":"ルピナスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「想像力」という花言葉は、空に向かってまっすぐに伸びる花穂の姿が、発想の広がりを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ルピナスはなぜ「ノボリフジ」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"藤の花房を逆さにしたような形の花穂が、空に向かって昇っていくように見えることから、この別名がつけられました。"}}
+      {"@type":"Question","name":"ルピナスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に藤の花を逆さにしたような花穂を咲かせます。マメ科の植物で、まっすぐで凛とした印象を持つ花として親しまれています。"}},
+      {"@type":"Question","name":"ルピナスの花言葉「想像力」の由来は？","acceptedAnswer":{"@type":"Answer","text":"重力に逆らうように上へ上へと伸びていく花穂の形が、常識にとらわれない自由な発想を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ルピナスの花穂はどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"藤の花房を逆さにしたような、下から上へ向かって咲き進む珍しい形が特徴です。「昇り藤」という別名でも呼ばれます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 20 · 誕生花</span>
     <h1>4月20日の誕生花はルピナス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ルピナスは、マメ科の植物で、春に藤の花を逆さにしたような花穂を咲かせる4月20日の誕生花です。花言葉は「想像力」。まっすぐで凛とした印象を持つ花です。</p>
+    <p class="art-lead">4月20日、花穂がまっすぐ空へ向かって伸びていく頃。ルピナスは、見慣れた花の形を逆さにしたようなユニークな姿で、自由な発想の面白さを教えてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ルピナスとは</a></li>
-      <li><a href="#meaning">ルピナスが象徴する意味</a></li>
-      <li><a href="#charm">ルピナスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月20日の誕生花として親しまれるルピナス</a></li>
+      <li><a href="#story">逆さの花穂が刺激する、ルピナスの想像力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ルピナスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ルピナスとは</h2>
-    <p>ルピナスは、マメ科の植物で、4月20日の誕生花として知られています。藤の花を逆さにしたような形から「ノボリフジ（昇り藤）」とも呼ばれ、まっすぐに伸びた花穂に小花が連なって咲く姿が特徴です。</p>
-  </section>
+    <h2>4月20日の誕生花として親しまれるルピナス</h2>
+    <p>ルピナスは、マメ科の植物です。春になると、藤の花房を逆さにしたような形の花穂を、下から上へ向かって咲き進めていきます。まっすぐに立ち上がるその姿から「昇り藤」とも呼ばれ、凛とした印象を与える花です。この個性的な咲き方から、4月20日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ルピナスが象徴する意味</h2>
-    <p>ルピナスの花言葉は「想像力」です。空に向かってまっすぐに伸びる花穂の姿が、限界を感じさせずに高みを目指す発想の広がりを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ルピナスの魅力</h2>
-    <p>ルピナスの魅力は、天に向かって力強く伸びる花穂と、豊富な花色にあります。花壇に植えると縦のラインが際立ち、他の花との組み合わせにメリハリを与えてくれる存在です。4月20日生まれの方はもちろん、新しい発想を後押ししたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ルピナスは日当たりの良い場所を好み、根が繊細なため移植を嫌います。水はけの良い土壌に直接種をまいて育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月20日生まれの方はもちろん、新しい発想を後押ししたい贈り物としてもルピナスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ルピナスはいつ頃咲きますか？</div>
-        <div class="faq-a">春に藤の花を逆さにしたような花穂を咲かせます。マメ科の植物で、まっすぐ伸びる花姿が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルピナスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「想像力」という花言葉は、空に向かってまっすぐに伸びる花穂の姿が、発想の広がりを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルピナスはなぜ「ノボリフジ」と呼ばれるのですか？</div>
-        <div class="faq-a">藤の花房を逆さにしたような形の花穂が、空に向かって昇っていくように見えることから、この別名がつけられました。</div>
+        <div class="faq-a">春に藤の花を逆さにしたような花穂を咲かせます。マメ科の植物で、まっすぐで凛とした印象を持つ花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>逆さの花穂が刺激する、ルピナスの想像力</h2>
+    <p>藤の花といえば、房が垂れ下がりながら咲く姿を思い浮かべる人が多いはずです。ルピナスの花穂は、その常識をひっくり返したかのように、下から上へ向かってまっすぐ伸びていきます。重力に沿うのではなく、あえて逆らうように立ち上がるその姿は、一度見ると忘れられない印象を残します。見慣れた花のイメージを裏返してみせるこの咲き方は、物事を一つの角度からしか見ない習慣に、ふと疑問を投げかけてくるようでもあります。もし花が逆さに咲くのなら、他にも当たり前だと思っていたことをひっくり返して見られるかもしれない。そんな発想の飛躍を後押ししてくれるところから、ルピナスには「想像力」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ルピナスの花言葉「想像力」の由来は？</div>
+        <div class="faq-a">重力に逆らうように上へ上へと伸びていく花穂の形が、常識にとらわれない自由な発想を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>当たり前だと思っていた見方をひっくり返してみると、思いがけない景色が見えてくることがあります。今日はふだんの発想を少し脇に置いて、自由に想像を膨らませてみるのもよさそうです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ルピナスから始める小さな体験</h2>
+    <p>逆さに咲く花穂でおなじみのルピナスにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>藤を逆さにしたような花穂の形をじっくり観察してみる</li>
+      <li>思い描いていることを一つ、自由に想像してみる</li>
+      <li>まっすぐ立つように、姿勢を正してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ルピナスの花穂はどんな特徴がありますか？</div>
+        <div class="faq-a">藤の花房を逆さにしたような、下から上へ向かって咲き進む珍しい形が特徴です。「昇り藤」という別名でも呼ばれます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自由な発想を楽しみたい今日は、月九星やラッキーナンバーも気になるところ。開運カレンダーでは、その日の月九星とラッキーナンバーをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月20日、花穂を下から上へまっすぐ咲かせるルピナスは、見慣れた景色をひっくり返してみる面白さを教えてくれる花です。</p>
     <ul>
-      <li>ルピナスは春にまっすぐな花穂を咲かせる、4月20日の誕生花</li>
-      <li>花言葉は「想像力」、高みを目指す花姿に由来する</li>
-      <li>縦に伸びる力強い花穂と豊富な花色が魅力</li>
-      <li>日当たりの良い場所に、直接種をまいて育てたい</li>
+      <li>ルピナスはマメ科の植物で、春に藤を逆さにしたような花穂を咲かせる</li>
+      <li>「昇り藤」とも呼ばれる、まっすぐで凛とした印象の花である</li>
+      <li>花言葉は「想像力」。常識を裏返すような咲き方に由来するといわれる</li>
+      <li>想像力は、当たり前を疑い自由に発想を膨らませる姿勢を表す言葉ともいえる</li>
     </ul>
   </section>
 

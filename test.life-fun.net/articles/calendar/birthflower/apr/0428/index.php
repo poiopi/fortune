@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0428/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月28日の誕生花ローズマリーの花言葉・特徴・魅力をわかりやすく解説。「思い出」を象徴する香り高いハーブの意味を紹介します。">
+  <meta name="description" content="4月28日の誕生花ローズマリーの花言葉・特徴・魅力をわかりやすく解説。暮らしに寄り添うハーブが象徴する「思い出」というメッセージの意味を紹介します。">
   <title>4月28日の誕生花はローズマリー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ローズマリーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して淡青紫色の小花を咲かせます。シソ科の常緑低木で、香りのよいハーブとして親しまれています。"}},
-      {"@type":"Question","name":"ローズマリーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「思い出」という花言葉は、記憶力を高めるハーブとして古くから儀式にも用いられてきたことに由来すると言われています。"}},
-      {"@type":"Question","name":"ローズマリーはどのように活用できますか？","acceptedAnswer":{"@type":"Answer","text":"料理の風味付けやハーブティー、アロマオイル、香り袋など、幅広い用途で日常的に活用されています。"}}
+      {"@type":"Question","name":"ローズマリーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して淡青紫色の小花を咲かせます。シソ科の常緑低木で、ハーブとして広く利用されています。"}},
+      {"@type":"Question","name":"ローズマリーの花言葉「思い出」の由来は？","acceptedAnswer":{"@type":"Answer","text":"香りが記憶と強く結びつきやすいとされ、料理やアロマなど暮らしの中で繰り返し使われることで、特定の場面の記憶と結びつきやすいことに由来するといわれています。"}},
+      {"@type":"Question","name":"ローズマリーはどんな使われ方をしていますか？","acceptedAnswer":{"@type":"Answer","text":"料理の香りづけやアロマ、ハーブティーなど、暮らしのさまざまな場面で使われています。使い方は好みに合わせて選べます。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 28 · 誕生花</span>
     <h1>4月28日の誕生花はローズマリー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ローズマリーは、シソ科の常緑低木で、一年を通して淡青紫色の小花を咲かせる4月28日の誕生花です。花言葉は「思い出」。爽やかな香りを持つハーブです。</p>
+    <p class="art-lead">4月28日、キッチンの窓辺でそっと香るハーブに目を向ける頃。ローズマリーは、暮らしの中で使われるたびに、ある瞬間の記憶をそっと連れてきてくれる植物です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ローズマリー</dd>
     <dt>花言葉</dt><dd>思い出</dd>
     <dt>科名</dt><dd>シソ科</dd>
-    <dt>見頃</dt><dd>一年を通して</dd>
+    <dt>見頃</dt><dd>通年</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ローズマリーとは</a></li>
-      <li><a href="#meaning">ローズマリーが象徴する意味</a></li>
-      <li><a href="#charm">ローズマリーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月28日の誕生花として親しまれるローズマリー</a></li>
+      <li><a href="#story">香りが結ぶ、ローズマリーと暮らしの思い出</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ローズマリーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ローズマリーとは</h2>
-    <p>ローズマリーは、シソ科の常緑低木で、4月28日の誕生花として知られています。一年を通して淡い青紫色の小花を咲かせ、葉には清涼感のある香りがあることから、料理やアロマ、ハーブティーなど幅広く活用されるハーブとして親しまれています。</p>
-  </section>
+    <h2>4月28日の誕生花として親しまれるローズマリー</h2>
+    <p>ローズマリーは、シソ科の常緑低木です。一年を通して淡青紫色の小花を咲かせ、料理やアロマなど暮らしのさまざまな場面で使われるハーブとして親しまれています。花だけでなく葉や香りそのものが日々の生活に溶け込んでいる植物です。その身近さから、4月28日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ローズマリーが象徴する意味</h2>
-    <p>ローズマリーの花言葉は「思い出」です。ヨーロッパでは古くから記憶力を高めるハーブとして扱われ、結婚式や葬儀などの記憶に残る儀式にも用いられてきたことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ローズマリーの魅力</h2>
-    <p>ローズマリーの魅力は、一年を通して香りと花を楽しめる丈夫さと、清涼感のある爽やかな香りにあります。料理の風味付けから香り袋、アロマオイルまで、日々の暮らしに取り入れやすい実用性の高さも魅力です。4月28日生まれの方はもちろん、大切な思い出を分かち合いたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ローズマリーは日当たりと水はけの良い場所を好み、乾燥に強く丈夫に育ちます。過湿を嫌うため、水の与えすぎには注意が必要です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月28日生まれの方はもちろん、大切な思い出を分かち合いたい贈り物としてもローズマリーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ローズマリーはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して淡青紫色の小花を咲かせます。シソ科の常緑低木で、香りのよいハーブとして親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ローズマリーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「思い出」という花言葉は、記憶力を高めるハーブとして古くから儀式にも用いられてきたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ローズマリーはどのように活用できますか？</div>
-        <div class="faq-a">料理の風味付けやハーブティー、アロマオイル、香り袋など、幅広い用途で日常的に活用されています。</div>
+        <div class="faq-a">一年を通して淡青紫色の小花を咲かせます。シソ科の常緑低木で、ハーブとして広く利用されています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>香りが結ぶ、ローズマリーと暮らしの思い出</h2>
+    <p>ローズマリーは、花を鑑賞するためというより、暮らしの中で使うために育てられることが多いハーブです。肉料理の下ごしらえに数本添えたり、乾燥させてアロマとして焚いたり、お茶として煮出したり。使い方は人それぞれですが、共通しているのは、香りを嗅ぐたびにその場面の記憶がふっと呼び覚まされるということです。誰かと囲んだ食卓の香り、一人で過ごした静かな夜の香り。ローズマリーの香りは、そうした具体的な場面と結びつきやすく、時間が経ってから思いがけず記憶を連れてくることがあります。花そのものよりも、使うたびに積み重なっていく暮らしの記憶にこそ、この植物の本当の魅力があるのかもしれません。そんなところから、ローズマリーには「思い出」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ローズマリーの花言葉「思い出」の由来は？</div>
+        <div class="faq-a">香りが記憶と強く結びつきやすいとされ、料理やアロマなど暮らしの中で繰り返し使われることで、特定の場面の記憶と結びつきやすいことに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>何気ない香りや味が、ふとした瞬間に大切な記憶を連れてくることがあります。今日はそんな懐かしさを、しばらく心の中で味わってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ローズマリーから始める小さな体験</h2>
+    <p>暮らしの中で香りと共にあるローズマリーにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>ローズマリーの香りを確かめてみる</li>
+      <li>大切な思い出を一つ、心の中で振り返ってみる</li>
+      <li>淡青紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ローズマリーはどんな使われ方をしていますか？</div>
+        <div class="faq-a">料理の香りづけやアロマ、ハーブティーなど、暮らしのさまざまな場面で使われています。使い方は好みに合わせて選べます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">懐かしい記憶がよみがえる今日は、星座やラッキープレイスも確認してみませんか。開運カレンダーでは、その日の星座とラッキープレイスをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月28日、暮らしの中で香りと共にあるローズマリーは、何気ない瞬間が大切な記憶になっていくことを教えてくれる植物です。</p>
     <ul>
-      <li>ローズマリーは一年を通して淡青紫色の花を咲かせる、4月28日の誕生花</li>
-      <li>花言葉は「思い出」、記憶に残る儀式に用いられてきたことに由来する</li>
-      <li>爽やかな香りと幅広い実用性が魅力</li>
-      <li>日当たりと水はけの良い場所で、乾燥気味に育てたい</li>
+      <li>ローズマリーはシソ科の常緑低木で、一年を通して淡青紫色の小花を咲かせる</li>
+      <li>料理やアロマなど、暮らしのさまざまな場面で使われるハーブである</li>
+      <li>花言葉は「思い出」。香りと記憶が結びつきやすい性質に由来するといわれる</li>
+      <li>思い出は、何気ない瞬間が積み重なって大切な記憶になることを表す言葉ともいえる</li>
     </ul>
   </section>
 
