@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0510/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月10日の誕生花デルフィニウムの花言葉・特徴・魅力をわかりやすく解説。「陽気」を象徴する青や紫の花を穂状に咲かせる花の意味を紹介します。">
+  <meta name="description" content="5月10日の誕生花デルフィニウムの花言葉・特徴・魅力をわかりやすく解説。空を思わせる青紫の花が象徴する「陽気」というメッセージの意味を紹介します。">
   <title>5月10日の誕生花はデルフィニウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"デルフィニウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に青や紫の花を穂状に咲かせます。キンポウゲ科の多年草で、涼やかな印象を持つ花です。"}},
-      {"@type":"Question","name":"デルフィニウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「陽気」という花言葉は、青空を思わせる鮮やかな花色が、明るく晴れやかな気持ちを連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"デルフィニウムという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"つぼみの形がイルカ（ギリシャ語でデルフィス）に似ていることから、この名前が付けられたと言われています。"}}
+      {"@type":"Question","name":"デルフィニウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、青や紫の花を穂状に咲かせます。"}},
+      {"@type":"Question","name":"デルフィニウムの花言葉「陽気」の由来は？","acceptedAnswer":{"@type":"Answer","text":"まっすぐ空に向かって伸びる、明るく開放的な姿に由来するといわれています。"}},
+      {"@type":"Question","name":"デルフィニウムはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"庭植えや切り花として親しまれ、初夏の花壇を彩ります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 10 · 誕生花</span>
     <h1>5月10日の誕生花はデルフィニウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">デルフィニウムは、キンポウゲ科の多年草で、初夏に青や紫の花を穂状に咲かせる5月10日の誕生花です。花言葉は「陽気」。涼やかで凛とした印象の花です。</p>
+    <p class="art-lead">青や紫の花が空に向かって立ち上がる、初夏へ向かう5月。デルフィニウムが穂状に花を咲かせ始める頃です。今日の誕生花として、その澄んだ青に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">デルフィニウムとは</a></li>
-      <li><a href="#meaning">デルフィニウムが象徴する意味</a></li>
-      <li><a href="#charm">デルフィニウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月10日の誕生花として親しまれるデルフィニウム</a></li>
+      <li><a href="#story">空を映す青が広がる、デルフィニウムの明るさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、デルフィニウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>デルフィニウムとは</h2>
-    <p>デルフィニウムは、キンポウゲ科の多年草で、5月10日の誕生花として知られています。初夏になると、青や紫の花を穂状にまっすぐと咲かせ、涼やかで凛とした印象を庭にもたらします。</p>
-  </section>
+    <h2>5月10日の誕生花として親しまれるデルフィニウム</h2>
+    <p>デルフィニウムは、キンポウゲ科の多年草です。初夏になると、青や紫の花を茎に沿って穂状に咲かせ、庭植えや切り花として親しまれています。すらりと伸びる茎の先に連なる花の姿は、初夏の花壇を涼しげに彩ります。その澄んだ色合いから、5月10日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>デルフィニウムが象徴する意味</h2>
-    <p>デルフィニウムの花言葉は「陽気」です。青空を思わせる鮮やかな花色が、明るく晴れやかな気持ちを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>デルフィニウムの魅力</h2>
-    <p>デルフィニウムの魅力は、すっと伸びた花穂に連なる青や紫の花色の美しさにあります。切り花としても人気が高く、花束に涼やかな印象を添えてくれます。5月10日生まれの方はもちろん、明るい気持ちを届ける贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>デルフィニウムは日当たりと風通しの良い涼しい環境を好み、高温多湿には注意が必要です。支柱を立てると倒れにくくなります。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月10日生まれの方はもちろん、明るい気持ちを届ける贈り物としてもデルフィニウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">デルフィニウムはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に青や紫の花を穂状に咲かせます。キンポウゲ科の多年草で、涼やかな印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デルフィニウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「陽気」という花言葉は、青空を思わせる鮮やかな花色が、明るく晴れやかな気持ちを連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デルフィニウムという名前の由来は何ですか？</div>
-        <div class="faq-a">つぼみの形がイルカ（ギリシャ語でデルフィス）に似ていることから、この名前が付けられたと言われています。</div>
+        <div class="faq-a">初夏に、青や紫の花を穂状に咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>空を映す青が広がる、デルフィニウムの明るさ</h2>
+    <p>デルフィニウムが咲かせる青紫は、澄み切った初夏の空を思わせる色です。この色が生み出す印象は、晴れやかで明るく、見る人の気持ちをすっと開放的にしてくれるようなもの。茎に沿って連なるように咲く花の並びも、この花ならではの特徴です。まっすぐ空に向かって伸びる姿と、澄んだ青紫の色合い。この二つが重なり合うところから、デルフィニウムには「陽気」という花言葉が贈られているといわれています。明るさとは、まっすぐな姿勢を保ち続けることからも生まれるのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">デルフィニウムの花言葉「陽気」の由来は？</div>
+        <div class="faq-a">まっすぐ空に向かって伸びる、明るく開放的な姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>見上げるほどに、青はどこまでも澄んでいきます。その青を仰ぐたび、胸の奥から晴れやかな気持ちがどんどん膨らんでいきます。青空へ伸びる花のように、その弾む心もためらわず外へ広げていきましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、デルフィニウムから始める小さな体験</h2>
+    <p>澄んだ青紫をまとうデルフィニウムにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>青や紫の花を探して、初夏の庭や公園を歩いてみる</li>
+      <li>明るい色のものを身の回りに取り入れてみる</li>
+      <li>まっすぐ空に向かって伸びる花の姿を眺めてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">デルフィニウムはどんな場所でよく見られますか？</div>
+        <div class="faq-a">庭植えや切り花として親しまれ、初夏の花壇を彩ります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">澄んだ気持ちで過ごしたい今日は、吉日やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、その日が吉日かどうかとおすすめアイテムをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>空へ向かってためらわず伸びていく、その姿そのものが明るさの正体なのかもしれません。デルフィニウムはそれを、静かに体現しています。</p>
     <ul>
-      <li>デルフィニウムは初夏に穂状の花を咲かせる、5月10日の誕生花</li>
-      <li>花言葉は「陽気」、青空を思わせる花色に由来する</li>
-      <li>すっと伸びた花穂の美しさが魅力</li>
-      <li>涼しく風通しの良い環境でよく育つ</li>
+      <li>デルフィニウムはキンポウゲ科の多年草で、初夏に青や紫の花を穂状に咲かせる</li>
+      <li>澄んだ青紫色が空を思わせる、開放的な印象を持つ</li>
+      <li>花言葉は「陽気」。まっすぐ伸びる明るい姿に由来するとされる</li>
+      <li>明るさは騒がしさではなく、まっすぐな姿勢からも生まれるといえる</li>
     </ul>
   </section>
 

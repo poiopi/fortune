@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0501/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月1日の誕生花マーガレットの花言葉・特徴・魅力をわかりやすく解説。「秘めた愛」を象徴する白く清楚に咲く花の意味を紹介します。">
+  <meta name="description" content="5月1日の誕生花マーガレットの花言葉・特徴・魅力をわかりやすく解説。「秘めた愛」という花言葉に込められた意味と、白い花びらが持つ静かな魅力を紹介します。">
   <title>5月1日の誕生花はマーガレット｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マーガレットはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春を中心に白や淡い色の花を咲かせます。キク科の多年草で、清楚で親しみやすい印象を持つ花として親しまれています。"}},
-      {"@type":"Question","name":"マーガレットの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「秘めた愛」という花言葉は、可憐でありながら凛とした佇まいで咲く花の姿が、静かに秘めた想いを連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"マーガレットはなぜ恋占いに使われるのですか？","acceptedAnswer":{"@type":"Answer","text":"花びらを一枚ずつちぎりながら「好き、嫌い」を占う遊びは古くから親しまれており、放射状に並ぶ花びらの数の多さが占いに適していたためと言われています。"}}
+      {"@type":"Question","name":"マーガレットはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春を中心に、白や淡い色の花を咲かせます。キク科の多年草で、庭先や花壇で親しまれています。"}},
+      {"@type":"Question","name":"マーガレットの花言葉「秘めた愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一枚一枚が独立して並ぶ白い花びらの、静かで飾らない佇まいが、まだ言葉にしていない想いを連想させることに由来するといわれています。"}},
+      {"@type":"Question","name":"花占いのように使われることもあるのですか？","acceptedAnswer":{"@type":"Answer","text":"花びらを一枚ずつちぎって想いを確かめる遊びに使われることがあるといわれていますが、結果を絶対的なものと捉える必要はありません。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 1 · 誕生花</span>
     <h1>5月1日の誕生花はマーガレット<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マーガレットは、キク科の多年草で、春を中心に白や淡い色の花を咲かせる5月1日の誕生花です。花言葉は「秘めた愛」。清楚で親しみやすい印象の花です。</p>
+    <p class="art-lead">若葉の香る5月、公園や庭先で白い花びらを揺らすマーガレットが目にとまる季節です。今日の誕生花として、その清らかな白に込められた気持ちを見つめてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マーガレットとは</a></li>
-      <li><a href="#meaning">マーガレットが象徴する意味</a></li>
-      <li><a href="#charm">マーガレットの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月1日の誕生花として親しまれるマーガレット</a></li>
+      <li><a href="#story">白い花びらが揺れる、マーガレットの静かな気持ち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マーガレットから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マーガレットとは</h2>
-    <p>マーガレットは、キク科の多年草で、5月1日の誕生花として知られています。白や淡いピンクなど優しい色合いの花を、春を中心に次々と咲かせ、花びらの一枚一枚で恋占いをする花としても親しまれています。</p>
-  </section>
+    <h2>5月1日の誕生花として親しまれるマーガレット</h2>
+    <p>マーガレットは、キク科の多年草です。春を中心に、白や淡い色の花びらを一枚一枚独立させるように咲かせ、清楚で親しみやすい印象を持つ花として庭先や花壇に彩りを添えます。風に揺れる花びらの繊細さから、5月1日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マーガレットが象徴する意味</h2>
-    <p>マーガレットの花言葉は「秘めた愛」です。可憐でありながら凛とした佇まいで咲く花の姿が、表には出さない静かな想いを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マーガレットの魅力</h2>
-    <p>マーガレットの魅力は、清楚な花姿と、次々に花を咲かせる旺盛な開花期間の長さにあります。花壇や鉢植えでも育てやすく、明るい印象を庭にもたらしてくれます。5月1日生まれの方はもちろん、控えめながら深い想いを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マーガレットは日当たりと風通しの良い場所を好み、丈夫でよく育ちます。花がら摘みをこまめに行うことで、長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月1日生まれの方はもちろん、秘めた想いを伝える贈り物としてもマーガレットは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">マーガレットはいつ頃咲きますか？</div>
-        <div class="faq-a">春を中心に白や淡い色の花を咲かせます。キク科の多年草で、清楚で親しみやすい印象を持つ花として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マーガレットの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「秘めた愛」という花言葉は、可憐でありながら凛とした佇まいで咲く花の姿が、静かに秘めた想いを連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マーガレットはなぜ恋占いに使われるのですか？</div>
-        <div class="faq-a">花びらを一枚ずつちぎりながら「好き、嫌い」を占う遊びは古くから親しまれており、放射状に並ぶ花びらの数の多さが占いに適していたためと言われています。</div>
+        <div class="faq-a">春を中心に、白や淡い色の花を咲かせます。キク科の多年草で、庭先や花壇で親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白い花びらが揺れる、マーガレットの静かな気持ち</h2>
+    <p>白いマーガレットが風に揺れる景色には、どこか静かで澄んだ空気が漂います。白という色は、はっきりとした主張をしない代わりに、見る人の心をすっと落ち着かせる不思議な力を持っています。派手さはなくとも、そこにあるだけで空間をやわらかく照らすような、そんな印象を与えてくれる色です。マーガレットの花びらは、一枚一枚が独立して丸く並び、中心の黄色を静かに囲みます。飾り気のないその佇まいから、マーガレットには「秘めた愛」という花言葉が贈られているといわれています。まだ言葉にできていない気持ちも、恥ずかしいものではなく、静かに大切に育てている最中の宝物なのかもしれません。花びらを一枚ずつちぎって想いを確かめる花占いの遊びに使われることもあるといわれますが、その結果だけが答えというわけではなく、気持ちを見つめ直すきっかけの一つとして楽しまれてきました。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マーガレットの花言葉「秘めた愛」の由来は？</div>
+        <div class="faq-a">一枚一枚が独立して並ぶ白い花びらの、静かで飾らない佇まいが、まだ言葉にしていない想いを連想させることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かへの気持ちを、まだ言葉にできていない人もいるかもしれません。白い花びらのように、静かに育てているその想いは、それだけで十分に大切なものです。焦らず、自分のペースで温めていってください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マーガレットから始める小さな体験</h2>
+    <p>白い花びらとともにあるマーガレットにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白い花を一輪、部屋に飾ってみる</li>
+      <li>気になる誰かへの気持ちを、心の中でそっと言葉にしてみる</li>
+      <li>春の公園でマーガレットの群生を探して歩いてみる</li>
+      <li>淡い色の服や小物を選んでみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">花占いのように使われることもあるのですか？</div>
+        <div class="faq-a">花びらを一枚ずつちぎって想いを確かめる遊びに使われることがあるといわれていますが、結果を絶対的なものと捉える必要はありません。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">秘めた気持ちを大切にしたい今日は、星座やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、その日の星座とラッキーカラーをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>言葉にならないままの想いを、そっとしまっておいてもいいのではないか。マーガレットの白い花びらは、そんな問いを静かに投げかけてきます。</p>
     <ul>
-      <li>マーガレットは春に白や淡い色の花を咲かせる、5月1日の誕生花</li>
-      <li>花言葉は「秘めた愛」、静かに秘めた想いを連想させる花姿に由来する</li>
-      <li>清楚な花姿と長い開花期間が魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>マーガレットはキク科の多年草で、春を中心に白や淡い色の花を咲かせる</li>
+      <li>花びらが一枚ずつ独立して並ぶ、繊細な姿が特徴</li>
+      <li>花言葉は「秘めた愛」。まだ言葉にしていない、大切に育てている気持ちを表すとされる</li>
+      <li>秘めた想いは、焦らず自分のペースで育てていいものだといえる</li>
     </ul>
   </section>
 

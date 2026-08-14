@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0508/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月8日の誕生花カーネーション（赤）の花言葉・特徴・魅力をわかりやすく解説。「純愛」を象徴する鮮やかな赤い花の意味を紹介します。">
+  <meta name="description" content="5月8日の誕生花カーネーション（赤）の花言葉・特徴・魅力をわかりやすく解説。深い赤色が象徴する「純愛」というメッセージの意味を紹介します。">
   <title>5月8日の誕生花はカーネーション（赤）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カーネーション（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏にかけて鮮やかな赤い花を咲かせます。ナデシコ科の多年草で、情熱的な印象を持つ花です。"}},
-      {"@type":"Question","name":"カーネーション（赤）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「純愛」という花言葉は、深く鮮やかな赤色が、まっすぐで飾らない愛情を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"カーネーションが母の日の贈り物になったのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"アメリカで母親を亡くした女性が、母が好んでいた白いカーネーションを教会で配ったことが起源とされ、後に感謝を伝える花として世界中に広まりました。"}}
+      {"@type":"Question","name":"カーネーション（赤）はどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"ナデシコ科の多年草で、幾重にも重なる鮮やかな赤い花びらが特徴です。情熱的な印象を持つ花として親しまれています。"}},
+      {"@type":"Question","name":"カーネーション（赤）の花言葉「純愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"深く鮮やかな赤色が象徴する、飾らないまっすぐな愛情に由来するといわれています。"}},
+      {"@type":"Question","name":"カーネーション（赤）はどんな場面で贈られることが多いですか？","acceptedAnswer":{"@type":"Answer","text":"家族や大切な人への贈り物として選ばれることが多く、感謝や愛情を伝える花として親しまれています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 8 · 誕生花</span>
     <h1>5月8日の誕生花はカーネーション（赤）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カーネーション（赤）は、ナデシコ科の多年草で、鮮やかな赤い花を咲かせる5月8日の誕生花です。花言葉は「純愛」。情熱的な印象の花です。</p>
+    <p class="art-lead">春の盛りを過ぎ、初夏へと向かう5月。鮮やかな赤い花びらを幾重にも重ねるカーネーション（赤）が、贈り物として選ばれることも多い季節です。今日の誕生花として、その深い赤色に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>カーネーション（赤）</dd>
     <dt>花言葉</dt><dd>純愛</dd>
     <dt>科名</dt><dd>ナデシコ科</dd>
-    <dt>見頃</dt><dd>春〜初夏</dd>
+    <dt>見頃</dt><dd>春中心</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カーネーション（赤）とは</a></li>
-      <li><a href="#meaning">カーネーション（赤）が象徴する意味</a></li>
-      <li><a href="#charm">カーネーション（赤）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月8日の誕生花として親しまれるカーネーション（赤）</a></li>
+      <li><a href="#story">幾重にも重なる赤が語る、カーネーション（赤）の想い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カーネーション（赤）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カーネーション（赤）とは</h2>
-    <p>カーネーション（赤）は、ナデシコ科の多年草で、5月8日の誕生花として知られています。幾重にも重なる花びらを鮮やかな赤色に染め、母の日の贈り物としても広く親しまれている花です。</p>
-  </section>
+    <h2>5月8日の誕生花として親しまれるカーネーション（赤）</h2>
+    <p>カーネーション（赤）は、ナデシコ科の多年草です。幾重にも重なる鮮やかな赤い花びらを咲かせ、情熱的でありながら温かみも感じさせる花として親しまれています。家族や大切な人への贈り物として選ばれることも多く、想いを伝える花として長く愛されてきました。その深い赤色の美しさから、5月8日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カーネーション（赤）が象徴する意味</h2>
-    <p>カーネーション（赤）の花言葉は「純愛」です。深く鮮やかな赤色が、まっすぐで飾らない愛情を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カーネーション（赤）の魅力</h2>
-    <p>カーネーション（赤）の魅力は、幾重にも重なる花びらが生み出すボリューム感と、まっすぐに心へ届く赤色の美しさにあります。切り花として花持ちが良く、贈り物にも選ばれやすい花です。5月8日生まれの方はもちろん、まっすぐな愛情を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カーネーションは日当たりと風通しの良い場所を好み、丈夫でよく育ちます。花がら摘みを行うことで長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月8日生まれの方はもちろん、まっすぐな愛情を伝える贈り物としてもカーネーション（赤）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（赤）はいつ頃咲きますか？</div>
-        <div class="faq-a">春から初夏にかけて鮮やかな赤い花を咲かせます。ナデシコ科の多年草で、情熱的な印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（赤）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「純愛」という花言葉は、深く鮮やかな赤色が、まっすぐで飾らない愛情を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カーネーションが母の日の贈り物になったのはなぜですか？</div>
-        <div class="faq-a">アメリカで母親を亡くした女性が、母が好んでいた白いカーネーションを教会で配ったことが起源とされ、後に感謝を伝える花として世界中に広まりました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（赤）はどんな花ですか？</div>
+        <div class="faq-a">ナデシコ科の多年草で、幾重にも重なる鮮やかな赤い花びらが特徴です。情熱的な印象を持つ花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>幾重にも重なる赤が語る、カーネーション（赤）の想い</h2>
+    <p>深く鮮やかな赤色は、遠くからでも目を引く力を持っています。その色が生み出す印象は、情熱的でありながらどこか温かみのある、包み込むような存在感です。波打つように重なった花びらは、一枚だけでは表せない厚みと豊かさを花全体に与えています。この、深い赤色と幾重にも重なる花びらの組み合わせから、カーネーション（赤）には「純愛」という花言葉が贈られているといわれています。純愛という言葉は恋愛だけを指すものではなく、家族や友人への深い想いにも通じる、飾らない愛情のかたちを表しているとされています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（赤）の花言葉「純愛」の由来は？</div>
+        <div class="faq-a">深く鮮やかな赤色が象徴する、飾らないまっすぐな愛情に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>深い赤色には、言葉を超えて伝わる想いの強さがあります。花に託されたその想いは、届けた瞬間にまっすぐ相手の心へ届いていきます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カーネーション（赤）から始める小さな体験</h2>
+    <p>深い赤色をまとうカーネーション（赤）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>赤い花を一輪、大切な人に贈ってみる</li>
+      <li>感謝の気持ちを、今日は言葉にして伝えてみる</li>
+      <li>赤いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（赤）はどんな場面で贈られることが多いですか？</div>
+        <div class="faq-a">家族や大切な人への贈り物として選ばれることが多く、感謝や愛情を伝える花として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">大切な人を想う今日は、ラッキープレイスや年九星もあわせて確認してみませんか。開運カレンダーでは、その日のラッキープレイスと年九星をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>深い赤色に込められるのは、言葉を超えて届く、まっすぐな想い。カーネーション（赤）は、その想いを届ける勇気をそっと後押ししてくれます。</p>
     <ul>
-      <li>カーネーション（赤）は春から初夏に赤い花を咲かせる、5月8日の誕生花</li>
-      <li>花言葉は「純愛」、まっすぐな愛情を象徴する赤色に由来する</li>
-      <li>花びらのボリューム感と美しい赤色が魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>カーネーション（赤）はナデシコ科の多年草で、鮮やかな赤い花びらが幾重にも重なる</li>
+      <li>情熱的でありながら温かみも感じさせる色合いが特徴</li>
+      <li>花言葉は「純愛」。深い赤色が象徴する飾らない愛情に由来するとされる</li>
+      <li>純愛は恋愛に限らず、家族や友人への深い想いにも通じる言葉といえる</li>
     </ul>
   </section>
 

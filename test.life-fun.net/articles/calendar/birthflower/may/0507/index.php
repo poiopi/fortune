@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0507/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月7日の誕生花ナスタチウムの花言葉・特徴・魅力をわかりやすく解説。「勝利」を象徴する鮮やかな橙色の花の意味を紹介します。">
+  <meta name="description" content="5月7日の誕生花ナスタチウムの花言葉・特徴・魅力をわかりやすく解説。鮮やかな橙色の花が象徴する「勝利」というメッセージの意味を紹介します。">
   <title>5月7日の誕生花はナスタチウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ナスタチウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に鮮やかな橙色や黄色の花を咲かせます。ノウゼンハレン科の一年草で、丸い葉が特徴です。"}},
-      {"@type":"Question","name":"ナスタチウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「勝利」という花言葉は、丸い葉を盾に、鮮やかな花を血に染まった兜に見立てたヨーロッパの言い伝えに由来すると言われています。"}},
-      {"@type":"Question","name":"ナスタチウムは食べられると聞きましたが本当ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。花や葉にはピリッとした辛みがあり、サラダなどの彩りを兼ねた食用花（エディブルフラワー）としても利用されています。"}}
+      {"@type":"Question","name":"ナスタチウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に鮮やかな橙色や黄色の花を咲かせます。丸い葉も特徴的な植物です。"}},
+      {"@type":"Question","name":"ナスタチウムの花言葉「勝利」の由来は？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな色が放つ力強い印象に由来するといわれています。"}},
+      {"@type":"Question","name":"ナスタチウムはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"丸い葉が特徴的な一年草で、花や葉が食用にされることもあります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 7 · 誕生花</span>
     <h1>5月7日の誕生花はナスタチウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ナスタチウムは、ノウゼンハレン科の一年草で、夏に鮮やかな橙色や黄色の花を咲かせる5月7日の誕生花です。花言葉は「勝利」。丸い葉とともに爽やかな印象を与える花です。</p>
+    <p class="art-lead">丸い葉と鮮やかな橙色の花が印象的なナスタチウム。今日の誕生花として、その色が持つ力強さに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ナスタチウムとは</a></li>
-      <li><a href="#meaning">ナスタチウムが象徴する意味</a></li>
-      <li><a href="#charm">ナスタチウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月7日の誕生花として親しまれるナスタチウム</a></li>
+      <li><a href="#story">鮮やかな橙色が力を与える、ナスタチウムの色彩</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ナスタチウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ナスタチウムとは</h2>
-    <p>ナスタチウムは、ノウゼンハレン科の一年草で、5月7日の誕生花として知られています。夏になると鮮やかな橙色や黄色の花を咲かせ、丸い葉とともに爽やかな印象を庭にもたらします。</p>
-  </section>
+    <h2>5月7日の誕生花として親しまれるナスタチウム</h2>
+    <p>ナスタチウムは、ノウゼンハレン科の一年草です。夏になると鮮やかな橙色や黄色の花を咲かせ、丸い葉とともに爽やかな印象を与えます。花も葉も食用にされることがあり、鑑賞するだけでなく暮らしに取り入れて楽しまれてきた植物です。鮮やかな色彩の力強さから、5月7日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ナスタチウムが象徴する意味</h2>
-    <p>ナスタチウムの花言葉は「勝利」です。かつてヨーロッパで、丸い葉を盾に、鮮やかな花を血に染まった兜に見立てたことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ナスタチウムの魅力</h2>
-    <p>ナスタチウムの魅力は、鮮やかな橙色や黄色の花色と、蓮の葉に似た丸い葉のコントラストにあります。食用としても利用され、ピリッとした風味がサラダなどにも活用されています。5月7日生まれの方はもちろん、力強い勝利を願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ナスタチウムは日当たりの良い場所を好み、痩せた土地でもよく育つ丈夫な一年草です。こぼれ種でも増えます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月7日生まれの方はもちろん、力強い勝利を願う贈り物としてもナスタチウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ナスタチウムはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に鮮やかな橙色や黄色の花を咲かせます。ノウゼンハレン科の一年草で、丸い葉が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナスタチウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「勝利」という花言葉は、丸い葉を盾に、鮮やかな花を血に染まった兜に見立てたヨーロッパの言い伝えに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナスタチウムは食べられると聞きましたが本当ですか？</div>
-        <div class="faq-a">はい。花や葉にはピリッとした辛みがあり、サラダなどの彩りを兼ねた食用花（エディブルフラワー）としても利用されています。</div>
+        <div class="faq-a">夏に鮮やかな橙色や黄色の花を咲かせます。丸い葉も特徴的な植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>鮮やかな橙色が力を与える、ナスタチウムの色彩</h2>
+    <p>ナスタチウムの花が広げる橙色や黄色は、見る人の気持ちをぱっと明るくするような鮮やかさを持っています。派手すぎず、それでいてしっかりと目を引くこの色合いは、元気で力強い印象を与えてくれるのです。花の下に広がる丸い葉もまた、この植物ならではの特徴。葉の輪郭に沿って水玉が転がる様子を見たことがある人もいるかもしれません。こうした鮮やかな色と個性的な葉の組み合わせから、ナスタチウムには「勝利」という花言葉が贈られているといわれています。勝利には、誰かに競り勝つ場面もあれば、自分自身の迷いに打ち勝つ場面もあります。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ナスタチウムの花言葉「勝利」の由来は？</div>
+        <div class="faq-a">鮮やかな色が放つ力強い印象に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>鮮やかな橙色を目にすると、体の奥から力がわいてくるような感覚になります。動き出す前の高鳴りは、勝つか負けるかよりも、一歩を踏み出せるかどうかにかかっています。迷いを振り切って踏み出すその一歩が、何よりの前進になります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ナスタチウムから始める小さな体験</h2>
+    <p>鮮やかな色をまとうナスタチウムにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな橙色や黄色のものを身の回りに取り入れてみる</li>
+      <li>丸い形のものを一つ、意識して眺めてみる</li>
+      <li>今日、自分の中の小さな迷いに打ち勝ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ナスタチウムはどんな植物ですか？</div>
+        <div class="faq-a">丸い葉が特徴的な一年草で、花や葉が食用にされることもあります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分に打ち勝ちたい今日は、ラッキーナンバーやおすすめの行動もチェックしてみませんか。開運カレンダーでは、その日のラッキーナンバーとおすすめの行動をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>鮮やかな橙色を見た瞬間、心はふっと前を向きます。ナスタチウムが体現するのは、誰かに勝つことより自分の迷いを乗り越える強さです。</p>
     <ul>
-      <li>ナスタチウムは夏に鮮やかな花を咲かせる、5月7日の誕生花</li>
-      <li>花言葉は「勝利」、盾と兜に見立てた言い伝えに由来する</li>
-      <li>鮮やかな花色と丸い葉のコントラストが魅力</li>
-      <li>痩せた土地でもよく育つ丈夫な一年草</li>
+      <li>ナスタチウムはノウゼンハレン科の一年草で、夏に鮮やかな橙色や黄色の花を咲かせる</li>
+      <li>丸い葉が特徴で、花や葉が食用にされることもある</li>
+      <li>花言葉は「勝利」。鮮やかな色が放つ力強い印象に由来するとされる</li>
+      <li>勝利は、他者と競うことだけでなく自分の迷いを乗り越えることでも得られる</li>
     </ul>
   </section>
 

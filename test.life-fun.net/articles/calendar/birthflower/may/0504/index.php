@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0504/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月4日の誕生花シャクヤクの花言葉・特徴・魅力をわかりやすく解説。「恥じらい」を象徴する大輪でふんわりと咲く花の意味を紹介します。">
+  <meta name="description" content="5月4日の誕生花シャクヤクの花言葉・特徴・魅力をわかりやすく解説。ふんわりと開く大輪の花が象徴する「恥じらい」というメッセージの意味を紹介します。">
   <title>5月4日の誕生花はシャクヤク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シャクヤクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に大輪でふんわりとした花を咲かせます。ボタン科の多年草で、上品で華やかな印象を与える花です。"}},
-      {"@type":"Question","name":"シャクヤクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恥じらい」という花言葉は、幾重にも重なる花びらがふんわりと優しく開く姿に由来すると言われています。"}},
-      {"@type":"Question","name":"「立てば芍薬、座れば牡丹」とはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"すらりと伸びた茎に花をつけるシャクヤクと、枝ぶりよく咲くボタンの美しさを、女性の立ち姿・座り姿の美しさにたとえたことわざです。"}}
+      {"@type":"Question","name":"シャクヤクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に大輪の花を咲かせます。上品で華やかな花として親しまれています。"}},
+      {"@type":"Question","name":"シャクヤクの花言葉「恥じらい」の由来は？","acceptedAnswer":{"@type":"Answer","text":"丸く固い蕾が時間をかけて少しずつ開いていく、その控えめな咲き方に由来するといわれています。"}},
+      {"@type":"Question","name":"シャクヤクはどんな印象の花ですか？","acceptedAnswer":{"@type":"Answer","text":"大輪でふんわりとした花びらが幾重にも重なり、上品で華やかな印象を与えます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 4 · 誕生花</span>
     <h1>5月4日の誕生花はシャクヤク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シャクヤクは、ボタン科の多年草で、初夏に大輪でふんわりとした花を咲かせる5月4日の誕生花です。花言葉は「恥じらい」。上品で華やかな印象の花です。</p>
+    <p class="art-lead">丸く大きな蕾がふくらみ始める5月、初夏の訪れとともにシャクヤクが咲く季節が近づいてきます。今日の誕生花として、その花が開いていく様子に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シャクヤクとは</a></li>
-      <li><a href="#meaning">シャクヤクが象徴する意味</a></li>
-      <li><a href="#charm">シャクヤクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月4日の誕生花として親しまれるシャクヤク</a></li>
+      <li><a href="#story">幾重にも花びらが重なる、シャクヤクのふくよかな姿</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シャクヤクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シャクヤクとは</h2>
-    <p>シャクヤクは、ボタン科の多年草で、5月4日の誕生花として知られています。初夏になると大輪でふんわりとした花を咲かせ、「立てば芍薬、座れば牡丹」と称されるほど、優美な女性美を象徴する花として親しまれています。</p>
-  </section>
+    <h2>5月4日の誕生花として親しまれるシャクヤク</h2>
+    <p>シャクヤクは、ボタン科の多年草です。初夏になると、丸く固い蕾から大輪でふんわりとした花を咲かせ、上品で華やかな印象を与えます。幾重にも重なる花びらが作り出す豊かなボリューム感から、5月4日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シャクヤクが象徴する意味</h2>
-    <p>シャクヤクの花言葉は「恥じらい」です。幾重にも重なる花びらがふんわりと恥じらうように優しく開く姿に由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シャクヤクの魅力</h2>
-    <p>シャクヤクの魅力は、大輪でふんわりとした花びらが幾重にも重なり合う、上品で華やかな花姿にあります。切り花としても人気が高く、蕾から満開まで表情の変化を楽しめます。5月4日生まれの方はもちろん、上品な華やかさを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シャクヤクは日当たりと水はけの良い場所を好み、一度根付くと毎年花を咲かせる丈夫な植物です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月4日生まれの方はもちろん、上品な華やかさを伝える贈り物としてもシャクヤクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">シャクヤクはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に大輪でふんわりとした花を咲かせます。ボタン科の多年草で、上品で華やかな印象を与える花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シャクヤクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「恥じらい」という花言葉は、幾重にも重なる花びらがふんわりと優しく開く姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">「立てば芍薬、座れば牡丹」とはどういう意味ですか？</div>
-        <div class="faq-a">すらりと伸びた茎に花をつけるシャクヤクと、枝ぶりよく咲くボタンの美しさを、女性の立ち姿・座り姿の美しさにたとえたことわざです。</div>
+        <div class="faq-a">初夏に大輪の花を咲かせます。上品で華やかな花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>幾重にも花びらが重なる、シャクヤクのふくよかな姿</h2>
+    <p>シャクヤクの魅力は、蕾から花への変化の仕方にあります。丸く固く閉じていた蕾が、時間をかけてゆっくりとほどけるように開き、幾重にも重なった花びらがふんわりと大きく広がっていくのです。近づいて観察すると、開ききる前の少し下向きに垂れた蕾の姿も愛らしく見えます。この、少しずつ時間をかけて開いていく様子から、シャクヤクには「恥じらい」という花言葉が贈られているといわれています。急いで自分をさらけ出すのではなく、丁寧に少しずつ心を開いていく。そんな奥ゆかしさを感じさせる言葉です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シャクヤクの花言葉「恥じらい」の由来は？</div>
+        <div class="faq-a">丸く固い蕾が時間をかけて少しずつ開いていく、その控えめな咲き方に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>固く閉じていた蕾が、時間をかけてゆっくりとほどけていく。その丁寧な開き方は、自分を開くのに近道などいらないことを静かに伝えてくれます。ゆっくりで構いません。あなたのペースで、少しずつ心を開いていけば十分です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シャクヤクから始める小さな体験</h2>
+    <p>ゆっくりと花開くシャクヤクにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>蕾がゆっくり開いていく様子を、写真や実物で観察してみる</li>
+      <li>大きく華やかな色の花を一輪、部屋に飾ってみる</li>
+      <li>気持ちを急がず、今日は自分のペースで一つのことに取り組んでみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シャクヤクはどんな印象の花ですか？</div>
+        <div class="faq-a">大輪でふんわりとした花びらが幾重にも重なり、上品で華やかな印象を与えます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分のペースを大切にしたい今日は、今月の誕生石やラッキープレイスも確認してみませんか。開運カレンダーでは、今月の誕生石とその日のラッキープレイスをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>丸く固い蕾が、時間をかけて幾重にも花びらをほどいていく。シャクヤクが見せてくれるのは、急がず自分を開いていくという生き方。</p>
     <ul>
-      <li>シャクヤクは初夏に大輪の花を咲かせる、5月4日の誕生花</li>
-      <li>花言葉は「恥じらい」、幾重にも重なる花びらが優しく開く姿に由来する</li>
-      <li>上品で華やかな花姿が魅力</li>
-      <li>日当たりと水はけの良い場所でよく育つ</li>
+      <li>シャクヤクはボタン科の多年草で、初夏に大輪の花を咲かせる</li>
+      <li>丸く固い蕾が幾重にも重なった花びらへとゆっくり開いていく</li>
+      <li>花言葉は「恥じらい」。少しずつ開いていく蕾の姿に由来するとされる</li>
+      <li>自分を開くペースは人それぞれでよいものだといえる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0512/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月12日の誕生花アザミの花言葉・特徴・魅力をわかりやすく解説。「独立」を象徴するとげのある葉と紅紫色の花の意味を紹介します。">
+  <meta name="description" content="5月12日の誕生花アザミの花言葉・特徴・魅力をわかりやすく解説。凛と立つ紅紫色の花が象徴する「独立」というメッセージの意味を紹介します。">
   <title>5月12日の誕生花はアザミ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アザミはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏にかけて紅紫色の丸い花を咲かせます。キク科の多年草で、とげのある葉が特徴です。"}},
-      {"@type":"Question","name":"アザミの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「独立」という花言葉は、とげを持ちながらも凛と咲く姿が、誰にも媚びず自分の道を貫く強さを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"アザミはスコットランドの国花だと聞きましたが本当ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。とげのあるアザミが敵の侵入を防いだという伝説から、スコットランドでは国の象徴として大切にされています。"}}
+      {"@type":"Question","name":"アザミはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏にかけて、とげのある葉と紅紫色の丸い花を咲かせます。"}},
+      {"@type":"Question","name":"アザミの花言葉「独立」の由来は？","acceptedAnswer":{"@type":"Answer","text":"まっすぐ伸びる茎の先で凛と花を咲かせる、その堂々とした姿に由来するといわれています。"}},
+      {"@type":"Question","name":"アザミのとげにはどんな役割がありますか？","acceptedAnswer":{"@type":"Answer","text":"自分を守るための備えとして葉にとげを持つといわれています。花そのものは丸く柔らかな印象です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 12 · 誕生花</span>
     <h1>5月12日の誕生花はアザミ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アザミは、キク科の多年草で、とげのある葉と紅紫色の丸い花を咲かせる5月12日の誕生花です。花言葉は「独立」。凛とした強さを感じさせる花です。</p>
+    <p class="art-lead">初夏へ向かう5月、とげのある葉を広げながら凛と立つアザミが、道端や野原に姿を見せ始める頃です。今日の誕生花として、その凛とした佇まいに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アザミとは</a></li>
-      <li><a href="#meaning">アザミが象徴する意味</a></li>
-      <li><a href="#charm">アザミの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月12日の誕生花として親しまれるアザミ</a></li>
+      <li><a href="#story">とげと丸い花が示す、アザミの凛とした姿</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アザミから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アザミとは</h2>
-    <p>アザミは、キク科の多年草で、5月12日の誕生花として知られています。とげのある葉と紅紫色の丸い花が特徴で、初夏から夏にかけて咲き、野に凛とした存在感を放ちます。</p>
-  </section>
+    <h2>5月12日の誕生花として親しまれるアザミ</h2>
+    <p>アザミは、キク科の多年草です。とげのある葉と紅紫色の丸い花が特徴で、初夏から夏にかけて野原や道端で凛とした姿を見せます。まっすぐ伸びる茎の先に咲く花は、強さと柔らかさを併せ持つ独特の存在感を放ちます。その堂々とした佇まいから、5月12日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アザミが象徴する意味</h2>
-    <p>アザミの花言葉は「独立」です。とげを持ちながらも凛と咲く姿が、誰にも媚びず自分の道を貫く強さを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アザミの魅力</h2>
-    <p>アザミの魅力は、鋭いとげと丸く華やかな紅紫色の花のコントラストにあります。野趣あふれる姿でありながら、どこか気高さを感じさせる花です。5月12日生まれの方はもちろん、芯の強さを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アザミは日当たりの良い場所でよく育つ丈夫な植物で、特別な手入れをしなくても毎年花を咲かせます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月12日生まれの方はもちろん、芯の強さを伝える贈り物としてもアザミは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">アザミはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から夏にかけて紅紫色の丸い花を咲かせます。キク科の多年草で、とげのある葉が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザミの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「独立」という花言葉は、とげを持ちながらも凛と咲く姿が、誰にも媚びず自分の道を貫く強さを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザミはスコットランドの国花だと聞きましたが本当ですか？</div>
-        <div class="faq-a">はい。とげのあるアザミが敵の侵入を防いだという伝説から、スコットランドでは国の象徴として大切にされています。</div>
+        <div class="faq-a">初夏から夏にかけて、とげのある葉と紅紫色の丸い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>とげと丸い花が示す、アザミの凛とした姿</h2>
+    <p>アザミの面白さは、とげのある葉と丸く柔らかな花という、対照的な二つの表情を併せ持っているところにあります。花は筒状の小花が無数に集まって丸い形を作り、近づいてよく見ると意外なほど繊細な作りをしていることが分かります。一方の葉には自分を守るためのとげがあり、まっすぐ伸びる茎の先で花を凛と咲かせるのです。この、守る強さと咲く柔らかさを併せ持った姿から、アザミには「独立」という花言葉が贈られているといわれています。自分の軸をしっかり持つことは、周りとの関わりを閉ざすこととは違います。凛と立ちながらも、誰かと支え合うことは十分にできるものです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アザミの花言葉「独立」の由来は？</div>
+        <div class="faq-a">まっすぐ伸びる茎の先で凛と花を咲かせる、その堂々とした姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>とげのある葉が守るのは、丸く柔らかな花ではなく、実は自分自身の芯なのかもしれません。誰の手も借りずにまっすぐ立ち続けるアザミの姿は、静かな覚悟のようにも見えます。そのまっすぐな姿勢に、つい背筋を正したくなる人もいるでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アザミから始める小さな体験</h2>
+    <p>凛とした姿を見せるアザミにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>野原や道端でアザミを探して歩いてみる</li>
+      <li>自分の意見を、今日は一つはっきり伝えてみる</li>
+      <li>丸い形のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アザミのとげにはどんな役割がありますか？</div>
+        <div class="faq-a">自分を守るための備えとして葉にとげを持つといわれています。花そのものは丸く柔らかな印象です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分の軸を大切にしたい今日は、六曜やラッキーナンバーもあわせて確認してみませんか。開運カレンダーでは、その日の六曜とラッキーナンバーをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>とげを持ちながらも凛と咲く一輪。アザミが見せてくれるのは、誰にも頼らず自分の足で立つ強さ。</p>
     <ul>
-      <li>アザミは初夏から夏に紅紫色の花を咲かせる、5月12日の誕生花</li>
-      <li>花言葉は「独立」、とげを持ちながら凛と咲く強さに由来する</li>
-      <li>とげと花のコントラストが生む気高さが魅力</li>
-      <li>日当たりの良い場所で丈夫に育つ</li>
+      <li>アザミはキク科の多年草で、初夏から夏にかけて紅紫色の丸い花を咲かせる</li>
+      <li>とげのある葉と丸く柔らかな花という対照的な姿が特徴</li>
+      <li>花言葉は「独立」。まっすぐ伸びる凛とした姿に由来するとされる</li>
+      <li>独立は人との関わりを断つことではなく、自分の軸を持つことだといえる</li>
     </ul>
   </section>
 

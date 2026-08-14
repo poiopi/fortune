@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0511/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月11日の誕生花チューリップ（白）の花言葉・特徴・魅力をわかりやすく解説。「待ちわびて」を象徴する清楚な白い花の意味を紹介します。">
+  <meta name="description" content="5月11日の誕生花チューリップ（白）の花言葉・特徴・魅力をわかりやすく解説。静かに開く白い花びらが象徴する「待ちわびて」というメッセージの意味を紹介します。">
   <title>5月11日の誕生花はチューリップ（白）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"チューリップ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に清楚な白い花を咲かせます。ユリ科の球根植物で、シンプルで清らかな美しさが特徴です。"}},
-      {"@type":"Question","name":"チューリップ（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「待ちわびて」という花言葉は、凛とした白い花びらが静かに開く姿が、大切な誰かをひたむきに待つ心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"チューリップの花言葉は色によって違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい。チューリップは花色ごとに異なる花言葉を持ち、白は「待ちわびて」、赤は情熱的な愛、黄色は片思いなど、色によって表す想いが変わります。"}}
+      {"@type":"Question","name":"チューリップ（白）はどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"ユリ科の球根植物で、春に清楚な白い花を咲かせます。お椀型の花びらが開閉する姿が特徴です。"}},
+      {"@type":"Question","name":"チューリップ（白）の花言葉「待ちわびて」の由来は？","acceptedAnswer":{"@type":"Answer","text":"静かに開いたり閉じたりする白い花びらの姿に由来するといわれています。"}},
+      {"@type":"Question","name":"チューリップ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、清楚な白い花を咲かせます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 11 · 誕生花</span>
     <h1>5月11日の誕生花はチューリップ（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">チューリップ（白）は、ユリ科の球根植物で、春に清楚な白い花を咲かせる5月11日の誕生花です。花言葉は「待ちわびて」。シンプルで清らかな印象の花です。</p>
+    <p class="art-lead">春の盛りを彩ったチューリップが少しずつ見納めを迎える5月。白い花びらを閉じたり開いたりするチューリップ（白）が、静かな余韻を残す頃です。今日の誕生花として、その静けさに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">チューリップ（白）とは</a></li>
-      <li><a href="#meaning">チューリップ（白）が象徴する意味</a></li>
-      <li><a href="#charm">チューリップ（白）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月11日の誕生花として親しまれるチューリップ（白）</a></li>
+      <li><a href="#story">静かな白が包む、チューリップ（白）のたたずまい</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、チューリップ（白）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>チューリップ（白）とは</h2>
-    <p>チューリップ（白）は、ユリ科の球根植物で、5月11日の誕生花として知られています。春になると清楚な白い花を咲かせ、シンプルで清らかな美しさで多くの人に親しまれています。</p>
-  </section>
+    <h2>5月11日の誕生花として親しまれるチューリップ（白）</h2>
+    <p>チューリップ（白）は、ユリ科の球根植物です。春になると、お椀のような形の清らかな白い花を咲かせ、日の当たり方によって花びらが開いたり閉じたりする姿が知られています。多くの色を持つチューリップの中でも、白は静けさと清らかさを感じさせる色として親しまれています。その静かなたたずまいから、5月11日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>チューリップ（白）が象徴する意味</h2>
-    <p>チューリップ（白）の花言葉は「待ちわびて」です。凛とした白い花びらが静かに開く姿が、大切な誰かをひたむきに待つ心情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>チューリップ（白）の魅力</h2>
-    <p>チューリップ（白）の魅力は、無駄のないシンプルな花姿が持つ清らかな美しさにあります。他の色のチューリップと寄せ植えすることで、より一層引き立て役としても映えます。5月11日生まれの方はもちろん、静かな想いを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>チューリップは日当たりの良い場所を好む球根植物で、秋に球根を植えることで春に花を咲かせます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月11日生まれの方はもちろん、静かな想いを伝える贈り物としてもチューリップ（白）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">チューリップ（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に清楚な白い花を咲かせます。ユリ科の球根植物で、シンプルで清らかな美しさが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「待ちわびて」という花言葉は、凛とした白い花びらが静かに開く姿が、大切な誰かをひたむきに待つ心情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューリップの花言葉は色によって違いますか？</div>
-        <div class="faq-a">はい。チューリップは花色ごとに異なる花言葉を持ち、白は「待ちわびて」、赤は情熱的な愛、黄色は片思いなど、色によって表す想いが変わります。</div>
+        <div class="faq-a">春に、清楚な白い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>静かな白が包む、チューリップ（白）のたたずまい</h2>
+    <p>陽光を受けて柔らかく輝く白い花びらは、庭や花壇の中でひときわ静かな存在感を放ちます。白という色が生む印象は、はっきりとした主張ではなく、見る人の心をすっと落ち着かせるような清らかさです。お椀型の花びらは、光の当たり方や気温の変化によって開いたり閉じたりを繰り返し、ゆっくりとした時間の流れを感じさせます。この、静かに開閉を繰り返す姿から、チューリップ（白）には「待ちわびて」という花言葉が贈られているといわれています。何かを心待ちにする時間は、決して切ないだけのものではなく、静けさの中にある豊かな時間ともいえるのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（白）の花言葉「待ちわびて」の由来は？</div>
+        <div class="faq-a">静かに開いたり閉じたりする白い花びらの姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>白い花びらがゆっくり開く様子には、待つことの静けさが宿っています。何かを心待ちにする時間もまた、それ自体が豊かなものかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、チューリップ（白）から始める小さな体験</h2>
+    <p>静かに咲くチューリップ（白）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白いものを身の回りに取り入れてみる</li>
+      <li>楽しみにしていることを、心の中で思い浮かべてみる</li>
+      <li>花びらが開いたり閉じたりする様子を観察してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（白）はどんな花ですか？</div>
+        <div class="faq-a">ユリ科の球根植物で、春に清楚な白い花を咲かせます。お椀型の花びらが開閉する姿が特徴です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かな時間を大切にしたい今日は、星座や月九星もチェックしてみませんか。開運カレンダーでは、その日の星座と月九星をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>春の終わりに白い花びらが静かに開いたり閉じたりする季節、チューリップ（白）はそこに、待つ時間そのものの豊かさをそっと気づかせてくれます。</p>
     <ul>
-      <li>チューリップ（白）は春に白い花を咲かせる、5月11日の誕生花</li>
-      <li>花言葉は「待ちわびて」、静かに開く花姿が待つ心情を思わせることに由来する</li>
-      <li>シンプルで清らかな美しさが魅力</li>
-      <li>秋に球根を植えることで春に花を咲かせる</li>
+      <li>チューリップ（白）はユリ科の球根植物で、春に清楚な白い花を咲かせる</li>
+      <li>お椀型の花びらが開いたり閉じたりする姿が特徴</li>
+      <li>花言葉は「待ちわびて」。静かに開く白い花びらの姿に由来するとされる</li>
+      <li>何かを待つ時間もまた、それ自体に価値があるといえる</li>
     </ul>
   </section>
 

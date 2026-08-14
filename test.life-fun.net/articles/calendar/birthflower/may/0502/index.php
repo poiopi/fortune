@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0502/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月2日の誕生花シバザクラの花言葉・特徴・魅力をわかりやすく解説。「合意」を象徴する地面を一面に彩る花の意味を紹介します。">
+  <meta name="description" content="5月2日の誕生花シバザクラの花言葉・特徴・魅力をわかりやすく解説。地面を覆うように咲く姿が象徴する「合意」というメッセージの意味を紹介します。">
   <title>5月2日の誕生花はシバザクラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シバザクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に地面を覆うように小さな花を一面に咲かせます。ハナシノブ科の多年草で、可憐で華やかな絨毯のような景観をつくります。"}},
-      {"@type":"Question","name":"シバザクラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「合意」という花言葉は、多くの花が隙間なく咲きそろい一体感のある景観をつくる様子が、心を一つにする様子を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"シバザクラはなぜ観光地でも人気なのですか？","acceptedAnswer":{"@type":"Answer","text":"地面を覆うように群生し、一面をピンクや白に染める景観が壮観であることから、各地の花の名所として親しまれています。"}}
+      {"@type":"Question","name":"シバザクラは桜の仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、ハナシノブ科の植物で、バラ科のサクラとは異なる種類です。地面を覆うように咲く姿がサクラを連想させることから、この名前がついたといわれています。"}},
+      {"@type":"Question","name":"シバザクラの花言葉「合意」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一つ一つの小さな花が形を保ったまま寄り添い、地面一面に調和した景色を作り出す様子に由来するといわれています。"}},
+      {"@type":"Question","name":"シバザクラはいつ頃見頃を迎えますか？","acceptedAnswer":{"@type":"Answer","text":"春に地面を覆うように一面に咲きます。地域によって見頃の時期は多少前後します。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 2 · 誕生花</span>
     <h1>5月2日の誕生花はシバザクラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シバザクラは、ハナシノブ科の多年草で、春に地面を覆うように小さな花を一面に咲かせる5月2日の誕生花です。花言葉は「合意」。可憐で華やかな絨毯のような印象の花です。</p>
+    <p class="art-lead">地面いっぱいに小花が広がる5月、まるで一枚の絨毯のようにシバザクラが咲きそろう季節がやってきます。今日の誕生花として、その群生が生み出す景色に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シバザクラとは</a></li>
-      <li><a href="#meaning">シバザクラが象徴する意味</a></li>
-      <li><a href="#charm">シバザクラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月2日の誕生花として親しまれるシバザクラ</a></li>
+      <li><a href="#story">地面を埋め尽くす、シバザクラの小さな花の集合美</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シバザクラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シバザクラとは</h2>
-    <p>シバザクラは、ハナシノブ科の多年草で、5月2日の誕生花として知られています。芝のように地面を覆いながら広がり、春には小さな花を一面に咲かせて、まるで花の絨毯のような景観をつくり出します。</p>
-  </section>
+    <h2>5月2日の誕生花として親しまれるシバザクラ</h2>
+    <p>シバザクラは、ハナシノブ科の多年草です。名前にサクラとありますが、バラ科のサクラとは異なる植物で、春になると地面を這うように群生し、小さな花を一面に咲かせます。地表を覆うように広がる、絨毯のような華やかさから、5月2日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シバザクラが象徴する意味</h2>
-    <p>シバザクラの花言葉は「合意」です。多くの花が寄り添うように咲きそろい、隙間なく地面を覆う一体感のある姿が、心を一つにする様子を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シバザクラの魅力</h2>
-    <p>シバザクラの魅力は、群生することで生まれる一面のピンクや白の絨毯のような景観にあります。丈夫でグランドカバーとしても人気があり、斜面や庭先を華やかに彩ります。5月2日生まれの方はもちろん、心を一つにする願いを込めた贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シバザクラは日当たりの良い場所を好み、乾燥にも強く丈夫に育ちます。一度根付けば手間をかけずに毎年花を咲かせてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月2日生まれの方はもちろん、みんなの心を一つにする願いを込めた贈り物としてもシバザクラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シバザクラはいつ頃咲きますか？</div>
-        <div class="faq-a">春に地面を覆うように小さな花を一面に咲かせます。ハナシノブ科の多年草で、可憐で華やかな絨毯のような景観をつくります。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シバザクラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「合意」という花言葉は、多くの花が隙間なく咲きそろい一体感のある景観をつくる様子が、心を一つにする様子を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シバザクラはなぜ観光地でも人気なのですか？</div>
-        <div class="faq-a">地面を覆うように群生し、一面をピンクや白に染める景観が壮観であることから、各地の花の名所として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シバザクラは桜の仲間ですか？</div>
+        <div class="faq-a">いいえ、ハナシノブ科の植物で、バラ科のサクラとは異なる種類です。地面を覆うように咲く姿がサクラを連想させることから、この名前がついたといわれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>地面を埋め尽くす、シバザクラの小さな花の集合美</h2>
+    <p>シバザクラの面白さは、その群生の仕方にあります。一つ一つの花は五枚の花びらを持つ小さな花にすぎませんが、株全体が地表を這うように広がり、遠くから眺めると一枚の布や絨毯のように見えるのです。近づいてよく観察してみると、規則正しく並んだ五枚の花びらの整った形も見どころの一つ。この、無数の小さな個体が自分の形を保ちながら寄り添い、全体として一つの調和した景色を作り出す様子から、シバザクラには「合意」という花言葉が贈られているといわれています。多様な意見が一つにまとまり、大きな景色を作り上げていく様子を思わせる言葉です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シバザクラの花言葉「合意」の由来は？</div>
+        <div class="faq-a">一つ一つの小さな花が形を保ったまま寄り添い、地面一面に調和した景色を作り出す様子に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一つ一つは小さな花でも、集まれば大きな景色になる。そんな不思議さをシバザクラは教えてくれます。誰かと気持ちを一つに重ねたい日は、まず自分の気持ちを丁寧に伝えることから始めてみましょう。小さな声も、集まれば確かな形になっていきます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シバザクラから始める小さな体験</h2>
+    <p>地面いっぱいに広がるシバザクラにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>近所の公園や土手でシバザクラの群生を探して歩いてみる</li>
+      <li>家族や友人と、今日一つ何かを一緒に決めてみる</li>
+      <li>小さな花を一輪、間近でじっくり観察してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シバザクラはいつ頃見頃を迎えますか？</div>
+        <div class="faq-a">春に地面を覆うように一面に咲きます。地域によって見頃の時期は多少前後します。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かと気持ちを重ねたい今日は、六曜やおすすめの行動もチェックしてみませんか。開運カレンダーでは、その日の六曜とおすすめの行動をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一つひとつは小さな声にすぎなくても、寄り添えば大きな景色になる。シバザクラの群生が地面いっぱいに見せてくれるのは、そんな小さな声の集合美。</p>
     <ul>
-      <li>シバザクラは春に一面の花を咲かせる、5月2日の誕生花</li>
-      <li>花言葉は「合意」、花が寄り添って咲く一体感のある姿に由来する</li>
-      <li>群生でつくる絨毯のような景観が魅力</li>
-      <li>日当たりが良く乾燥に強い場所でよく育つ</li>
+      <li>シバザクラはハナシノブ科の多年草で、桜とは異なる種類の植物</li>
+      <li>春に地面を覆うように、無数の小さな花を一面に咲かせる</li>
+      <li>花言葉は「合意」。個々の花が集まって一つの景色を作る様子に由来するとされる</li>
+      <li>一人ひとりの気持ちが重なり合うことで、大きな調和が生まれるといえる</li>
     </ul>
   </section>
 

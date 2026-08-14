@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0516/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月16日の誕生花ゼラニウムの花言葉・特徴・魅力をわかりやすく解説。「真の友情」を象徴する長期間咲き続ける花の意味を紹介します。">
+  <meta name="description" content="5月16日の誕生花ゼラニウムの花言葉・特徴・魅力をわかりやすく解説。長く咲き続ける花が象徴する「真の友情」というメッセージの意味を紹介します。">
   <title>5月16日の誕生花はゼラニウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ゼラニウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から秋にかけて長期間、鮮やかな花を咲かせ続けます。フウロソウ科の多年草で、明るく親しみやすい印象の花です。"}},
-      {"@type":"Question","name":"ゼラニウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「真の友情」という花言葉は、長い期間にわたり途切れることなく花を咲かせ続ける様子が、変わらない友情の絆を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ゼラニウムには虫よけの効果があると聞きましたが本当ですか？","acceptedAnswer":{"@type":"Answer","text":"香りのあるゼラニウムの一部の品種には虫が嫌う成分が含まれているとされ、防虫効果を期待して育てられることがあります。"}}
+      {"@type":"Question","name":"ゼラニウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から秋にかけて、長期間にわたり鮮やかな花を咲かせ続けます。"}},
+      {"@type":"Question","name":"ゼラニウムの花言葉「真の友情」の由来は？","acceptedAnswer":{"@type":"Answer","text":"長く途切れずに咲き続ける姿に由来するといわれています。"}},
+      {"@type":"Question","name":"ゼラニウムはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"フウロソウ科の多年草で、南アフリカ原産です。乾燥に強く、鉢植えで育てやすい花として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 16 · 誕生花</span>
     <h1>5月16日の誕生花はゼラニウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ゼラニウムは、フウロソウ科の多年草で、春から秋にかけて長期間、鮮やかな花を咲かせ続ける5月16日の誕生花です。花言葉は「真の友情」。明るく親しみやすい印象の花です。</p>
+    <p class="art-lead">春から秋まで長く花を咲かせ続けるゼラニウムが、初夏に向かう5月も変わらず鉢の中で彩りを添えている頃です。今日の誕生花として、その息の長さに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ゼラニウムとは</a></li>
-      <li><a href="#meaning">ゼラニウムが象徴する意味</a></li>
-      <li><a href="#charm">ゼラニウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月16日の誕生花として親しまれるゼラニウム</a></li>
+      <li><a href="#story">季節を越えて咲き続ける、ゼラニウムの息の長さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ゼラニウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ゼラニウムとは</h2>
-    <p>ゼラニウムは、フウロソウ科の多年草で、5月16日の誕生花として知られています。春から秋にかけて長期間、鮮やかな花を咲かせ続け、明るく親しみやすい印象で庭やベランダを彩ります。</p>
-  </section>
+    <h2>5月16日の誕生花として親しまれるゼラニウム</h2>
+    <p>ゼラニウムは、フウロソウ科の多年草です。南アフリカ原産で乾燥に強く、鉢植えで育てやすい花として親しまれています。春から秋にかけて長期間、鮮やかな花を途切れることなく咲かせ続ける、息の長い植物です。その変わらぬ咲きぶりから、5月16日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ゼラニウムが象徴する意味</h2>
-    <p>ゼラニウムの花言葉は「真の友情」です。長い期間にわたり途切れることなく花を咲かせ続ける様子が、変わらない友情の絆を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ゼラニウムの魅力</h2>
-    <p>ゼラニウムの魅力は、鮮やかな花色と、長期間にわたり咲き続ける生命力の強さにあります。虫よけの効果があるとされる品種もあり、実用性と美しさを兼ね備えた花です。5月16日生まれの方はもちろん、変わらぬ友情を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ゼラニウムは日当たりと風通しの良い場所を好み、乾燥にも比較的強い丈夫な植物です。花がら摘みで長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月16日生まれの方はもちろん、変わらぬ友情を伝える贈り物としてもゼラニウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ゼラニウムはいつ頃咲きますか？</div>
-        <div class="faq-a">春から秋にかけて長期間、鮮やかな花を咲かせ続けます。フウロソウ科の多年草で、明るく親しみやすい印象の花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゼラニウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「真の友情」という花言葉は、長い期間にわたり途切れることなく花を咲かせ続ける様子が、変わらない友情の絆を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゼラニウムには虫よけの効果があると聞きましたが本当ですか？</div>
-        <div class="faq-a">香りのあるゼラニウムの一部の品種には虫が嫌う成分が含まれているとされ、防虫効果を期待して育てられることがあります。</div>
+        <div class="faq-a">春から秋にかけて、長期間にわたり鮮やかな花を咲かせ続けます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>季節を越えて咲き続ける、ゼラニウムの息の長さ</h2>
+    <p>ベランダや軒先の鉢植えで、季節が変わっても変わらず彩りを添え続けているのがゼラニウムです。春に咲き始めた花は、初夏、夏、そして秋になっても途切れることなく咲き続け、長い期間にわたって同じ場所に寄り添い続けます。乾燥に強く育てやすいという性質も、この息の長さを支える理由の一つです。品種によっては香りのある葉を持つものもあり、香りの好みには個人差があるため、それぞれのペースで楽しめるのも魅力です。この、長く途切れずに咲き続ける様子から、ゼラニウムには「真の友情」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ゼラニウムの花言葉「真の友情」の由来は？</div>
+        <div class="faq-a">長く途切れずに咲き続ける姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>春から秋まで途切れることなく花を咲かせ続けるゼラニウムは、まるで長く続く友情のようです。派手さより、変わらずそばにいてくれることこそが、何より心強い関係の証といえます。長く続く誰かとのつながりは、それだけで十分に誇れる宝物です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ゼラニウムから始める小さな体験</h2>
+    <p>長く咲き続けるゼラニウムにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>鉢植えの花に、今日は水をあげたり世話をしてみる</li>
+      <li>長く続いている人間関係に、感謝を伝えてみる</li>
+      <li>香りのある葉を、自分の好みに合わせてそっと確かめてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ゼラニウムはどんな植物ですか？</div>
+        <div class="faq-a">フウロソウ科の多年草で、南アフリカ原産です。乾燥に強く、鉢植えで育てやすい花として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">長く続く関係を大切にしたい今日は、年九星やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、その日の年九星とおすすめアイテムをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>春から秋まで、ゼラニウムは色を変えずに花を咲かせ続けます。季節が移り変わっても律義に咲き続けるその姿こそ、「真の友情」という花言葉がそのまま息づいているようです。</p>
     <ul>
-      <li>ゼラニウムは春から秋に長く花を咲かせる、5月16日の誕生花</li>
-      <li>花言葉は「真の友情」、咲き続ける生命力に由来する</li>
-      <li>鮮やかな花色と長い開花期間が魅力</li>
-      <li>日当たりが良く乾燥に強い場所でよく育つ</li>
+      <li>ゼラニウムはフウロソウ科の多年草で、春から秋にかけて長期間花を咲かせ続ける</li>
+      <li>南アフリカ原産で乾燥に強く、鉢植えで育てやすい</li>
+      <li>花言葉は「真の友情」。長く途切れずに咲き続ける姿に由来するとされる</li>
+      <li>真の友情は、派手さよりも変わらず続くことにこそ価値があるといえる</li>
     </ul>
   </section>
 

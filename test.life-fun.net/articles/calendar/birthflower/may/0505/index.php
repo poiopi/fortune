@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0505/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月5日の誕生花ハナショウブの花言葉・特徴・魅力をわかりやすく解説。「情熱」を象徴する紫や白の花を咲かせる和の花の意味を紹介します。">
+  <meta name="description" content="5月5日の誕生花ハナショウブの花言葉・特徴・魅力をわかりやすく解説。水辺に映える紫の花が象徴する「情熱」というメッセージの意味を紹介します。">
   <title>5月5日の誕生花はハナショウブ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハナショウブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に紫や白の花を咲かせます。アヤメ科の多年草で、和の趣がある花として親しまれています。"}},
-      {"@type":"Question","name":"ハナショウブの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「情熱」という花言葉は、すらりと伸びた茎の先に咲く、鮮やかで凛とした花の姿に由来すると言われています。"}},
-      {"@type":"Question","name":"ハナショウブとアヤメ、カキツバタの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"いずれもアヤメ科の花で見た目が似ていますが、花びらの模様や生育する環境（乾いた場所か水辺かなど）によって見分けられます。"}}
+      {"@type":"Question","name":"ハナショウブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に紫や白の花を咲かせます。水辺の景観に彩りを添える花として親しまれています。"}},
+      {"@type":"Question","name":"ハナショウブの花言葉「情熱」の由来は？","acceptedAnswer":{"@type":"Answer","text":"凛とした佇まいの奥に秘めた熱を感じさせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ハナショウブはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"水辺や湿地に群生することが多く、花菖蒲園などで鑑賞できます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 5 · 誕生花</span>
     <h1>5月5日の誕生花はハナショウブ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハナショウブは、アヤメ科の多年草で、初夏に紫や白の花を咲かせる5月5日の誕生花です。花言葉は「情熱」。和の趣がある花です。</p>
+    <p class="art-lead">水辺に紫や白の花が並ぶ、初夏の気配が近づく5月。ハナショウブが凛とした姿で咲き始める季節です。今日の誕生花として、その色が語る想いに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハナショウブとは</a></li>
-      <li><a href="#meaning">ハナショウブが象徴する意味</a></li>
-      <li><a href="#charm">ハナショウブの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月5日の誕生花として親しまれるハナショウブ</a></li>
+      <li><a href="#story">紫と白が水辺に映える、ハナショウブの情景</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハナショウブから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハナショウブとは</h2>
-    <p>ハナショウブは、アヤメ科の多年草で、5月5日の誕生花として知られています。初夏になると紫や白の花を咲かせ、こどもの日や端午の節句にも縁のある、和の趣を感じさせる花です。</p>
-  </section>
+    <h2>5月5日の誕生花として親しまれるハナショウブ</h2>
+    <p>ハナショウブは、アヤメ科の多年草です。初夏になると水辺や湿地で紫や白の花を咲かせ、和の趣を感じさせる姿で親しまれています。花菖蒲園などで群生する景色が広く知られ、季節の行事とともに語られることも多い花です。凛とした佇まいから、5月5日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハナショウブが象徴する意味</h2>
-    <p>ハナショウブの花言葉は「情熱」です。すらりと伸びた茎の先に咲く、鮮やかで凛とした花の姿に由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハナショウブの魅力</h2>
-    <p>ハナショウブの魅力は、紫や白の花びらに入る繊細な模様と、水辺に映える凛とした佇まいにあります。菖蒲園などで群生する景観も見応えがあります。5月5日生まれの方はもちろん、力強い想いを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハナショウブは湿り気のある土壌と日当たりを好み、水辺の環境でよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月5日生まれの方はもちろん、力強い想いを伝える贈り物としてもハナショウブは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ハナショウブはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に紫や白の花を咲かせます。アヤメ科の多年草で、和の趣がある花として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナショウブの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「情熱」という花言葉は、すらりと伸びた茎の先に咲く、鮮やかで凛とした花の姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナショウブとアヤメ、カキツバタの違いは何ですか？</div>
-        <div class="faq-a">いずれもアヤメ科の花で見た目が似ていますが、花びらの模様や生育する環境（乾いた場所か水辺かなど）によって見分けられます。</div>
+        <div class="faq-a">初夏に紫や白の花を咲かせます。水辺の景観に彩りを添える花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫と白が水辺に映える、ハナショウブの情景</h2>
+    <p>水辺に群生するハナショウブの紫と白は、周りの緑と対比するように鮮やかに映えます。紫という色は高貴で凛とした印象を与え、白はそこに清らかな静けさを添える色。二つの色が並ぶことで、水辺の景色全体がぐっと引き締まって見えるのです。直立する茎の先には大きく開いた花弁が広がり、風が吹くたびにゆっくりと揺れます。この、静かでいて存在感のある姿から、ハナショウブには「情熱」という花言葉が贈られているといわれています。情熱には、激しく燃え上がる形もあれば、内側でじっと保ち続ける形もあります。ハナショウブは、後者の静かな情熱を教えてくれる花です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナショウブの花言葉「情熱」の由来は？</div>
+        <div class="faq-a">凛とした佇まいの奥に秘めた熱を感じさせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>茎の先でまっすぐに咲く花は、静けさの奥で確かな熱を放っています。誰かを想う気持ちがふいにこみ上げてくる瞬間、その熱はまっすぐあなたの中を駆け抜けていきます。その静かな佇まいの奥で燃える熱は、あなたらしいまっすぐさの証といえます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハナショウブから始める小さな体験</h2>
+    <p>水辺に咲くハナショウブにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>紫や白の花を近くの水辺や庭園で探してみる</li>
+      <li>心の中で燃えている想いを、静かに見つめ直してみる</li>
+      <li>初夏に向かう空気の変化を感じながら散歩してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナショウブはどんな場所でよく見られますか？</div>
+        <div class="faq-a">水辺や湿地に群生することが多く、花菖蒲園などで鑑賞できます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かな情熱を燃やしたい今日は、星座やおすすめアイテムもチェックしてみませんか。開運カレンダーでは、その日の星座とおすすめアイテムをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>水辺に紫と白が並び立つ季節、ハナショウブはそこに、静かに燃え続ける情熱の色を添えます。</p>
     <ul>
-      <li>ハナショウブは初夏に紫や白の花を咲かせる、5月5日の誕生花</li>
-      <li>花言葉は「情熱」、凛とした花の姿に由来する</li>
-      <li>繊細な模様と水辺に映える佇まいが魅力</li>
-      <li>湿り気のある土壌と日当たりでよく育つ</li>
+      <li>ハナショウブはアヤメ科の多年草で、初夏に紫や白の花を咲かせる</li>
+      <li>水辺に群生し、和の趣を感じさせる姿で親しまれている</li>
+      <li>花言葉は「情熱」。凛とした佇まいの奥に秘めた熱を感じさせることに由来するとされる</li>
+      <li>情熱は、激しさだけでなく静かに燃え続ける強さとしても表れる</li>
     </ul>
   </section>
 

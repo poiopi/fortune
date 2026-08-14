@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0506/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月6日の誕生花ユズの花言葉・特徴・魅力をわかりやすく解説。「健康美」を象徴する白く香り高い花を咲かせる植物の意味を紹介します。">
+  <meta name="description" content="5月6日の誕生花ユズの花言葉・特徴・魅力をわかりやすく解説。爽やかな香りが象徴する「健康美」というメッセージの意味を紹介します。">
   <title>5月6日の誕生花はユズ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ユズの花はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白く香り高い花を咲かせます。ミカン科の常緑低木で、冬には果実が実ります。"}},
-      {"@type":"Question","name":"ユズの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「健康美」という花言葉は、冬至の柚子湯に使われるなど、古くから健康や無病息災を願う暮らしと結びついてきたことに由来すると言われています。"}},
-      {"@type":"Question","name":"なぜ冬至にユズ湯に入る習慣があるのですか？","acceptedAnswer":{"@type":"Answer","text":"「ゆず」と「融通」、「冬至」と「湯治」をかけた語呂合わせに加え、香り高い果実が邪気を払うと考えられてきたことに由来すると言われています。"}}
+      {"@type":"Question","name":"ユズはいつ頃花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白く香り高い花を咲かせます。よく知られる果実は冬に実ります。開花の時期と結実の時期は異なります。"}},
+      {"@type":"Question","name":"ユズの花言葉「健康美」の由来は？","acceptedAnswer":{"@type":"Answer","text":"香りや実りの豊かさが、内側から満ちる健やかな美しさを象徴するといわれていることに由来するとされています。"}},
+      {"@type":"Question","name":"ユズの香りはどんな場面で使われていますか？","acceptedAnswer":{"@type":"Answer","text":"料理の香りづけや入浴の際など、暮らしのさまざまな場面で使われています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 6 · 誕生花</span>
     <h1>5月6日の誕生花はユズ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ユズは、ミカン科の常緑低木で、初夏に白く香り高い花を咲かせる5月6日の誕生花です。花言葉は「健康美」。清々しく実り豊かな印象の植物です。</p>
+    <p class="art-lead">柑橘の白い花が咲き始める初夏へと向かう5月。ユズは、冬の実りだけでなく、この時期にひっそりと白い花を咲かせる植物でもあります。今日の誕生花として、その香りに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ユズとは</a></li>
-      <li><a href="#meaning">ユズが象徴する意味</a></li>
-      <li><a href="#charm">ユズの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月6日の誕生花として親しまれるユズ</a></li>
+      <li><a href="#story">香りが暮らしを彩る、ユズという植物</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ユズから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ユズとは</h2>
-    <p>ユズは、ミカン科の常緑低木で、5月6日の誕生花として知られています。初夏には白く香り高い花を咲かせ、冬になると爽やかな香りの果実を実らせる、季節の巡りを感じさせる植物です。</p>
-  </section>
+    <h2>5月6日の誕生花として親しまれるユズ</h2>
+    <p>ユズは、ミカン科の常緑低木です。冬に実る果実の香りでよく知られていますが、花もまた同じ木に咲きます。初夏になると白く香り高い花を咲かせ、開花の時期と果実が実る時期は異なる季節にあたります。花と実、二つの季節で楽しめる清々しく実り豊かな植物として、5月6日の誕生花に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ユズが象徴する意味</h2>
-    <p>ユズの花言葉は「健康美」です。冬至の柚子湯に用いられるなど、古くから健康や無病息災を願う暮らしと結びついてきたことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ユズの魅力</h2>
-    <p>ユズの魅力は、初夏の可憐な白い花と、冬に実る香り高い果実という、季節ごとに異なる表情を楽しめるところにあります。花も実も清々しい香りを持ち、暮らしに彩りを添えてくれます。5月6日生まれの方はもちろん、健やかな暮らしを願う贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ユズは日当たりの良い場所を好み、寒さにも比較的強い丈夫な木です。庭木としても育てやすく、実がなるまでには数年かかります。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月6日生まれの方はもちろん、健やかな暮らしを願う贈り物としてもユズは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユズの花はいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白く香り高い花を咲かせます。ミカン科の常緑低木で、冬には果実が実ります。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユズの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「健康美」という花言葉は、冬至の柚子湯に使われるなど、古くから健康や無病息災を願う暮らしと結びついてきたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">なぜ冬至にユズ湯に入る習慣があるのですか？</div>
-        <div class="faq-a">「ゆず」と「融通」、「冬至」と「湯治」をかけた語呂合わせに加え、香り高い果実が邪気を払うと考えられてきたことに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ユズはいつ頃花を咲かせますか？</div>
+        <div class="faq-a">初夏に白く香り高い花を咲かせます。よく知られる果実は冬に実ります。開花の時期と結実の時期は異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>香りが暮らしを彩る、ユズという植物</h2>
+    <p>ユズといえば、まず思い浮かぶのはその爽やかで清々しい柑橘の香りかもしれません。料理の香りづけに使われたり、冬至の頃には湯船に浮かべる習慣が各地で伝えられてきたりと、香りは季節の節目に暮らしを彩ってきました。この習慣に医学的な効果が保証されているわけではありませんが、香りに触れることで気持ちが軽くなると感じる人は少なくないでしょう。実は白く咲く花も同じ爽やかな香りを持っており、実だけでなく花もこの木の魅力の一つです。健やかさというものは外見だけで決まるものではなく、こうした暮らしの中の小さな習慣の積み重ねからも育まれるもの。そんなところから、ユズには「健康美」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユズの花言葉「健康美」の由来は？</div>
+        <div class="faq-a">香りや実りの豊かさが、内側から満ちる健やかな美しさを象徴するといわれていることに由来するとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>爽やかな香りは、それだけで気持ちを少し軽くしてくれます。深呼吸を一つするたびに、内側から健やかさが静かに満ちていきます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ユズから始める小さな体験</h2>
+    <p>香りとともにあるユズにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>ユズの香りを、料理やお茶などで感じてみる</li>
+      <li>白い花や白い小物を、身の回りに取り入れてみる</li>
+      <li>深呼吸して、爽やかな香りを想像してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユズの香りはどんな場面で使われていますか？</div>
+        <div class="faq-a">料理の香りづけや入浴の際など、暮らしのさまざまな場面で使われています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">香りを楽しみたい今日は、六曜やラッキーフードもあわせて確認してみませんか。開運カレンダーでは、その日の六曜とラッキーフードをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>香りだけで、内側から気持ちが整っていくことがあります。ユズはその感覚を通して、健やかさという花言葉を静かに伝えてくれます。</p>
     <ul>
-      <li>ユズは初夏に白い花を咲かせる、5月6日の誕生花</li>
-      <li>花言葉は「健康美」、無病息災を願う暮らしとの結びつきに由来する</li>
-      <li>季節ごとに異なる花と実の表情が魅力</li>
-      <li>日当たりの良い場所で育てやすい丈夫な木</li>
+      <li>ユズはミカン科の常緑低木で、初夏に白く香り高い花を咲かせる</li>
+      <li>よく知られる果実は冬に実る。開花期と結実期は異なる時期にあたる</li>
+      <li>花言葉は「健康美」。香りや実りの豊かさが内側から満ちる美しさを象徴するとされる</li>
+      <li>健やかな美しさは、外見だけでなく内面の充実からも育まれるといえる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0503/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月3日の誕生花フロックスの花言葉・特徴・魅力をわかりやすく解説。「温和」を象徴する房状に咲く花の意味を紹介します。">
+  <meta name="description" content="5月3日の誕生花フロックスの花言葉・特徴・魅力をわかりやすく解説。房状に寄り添って咲く姿が象徴する「温和」というメッセージの意味を紹介します。">
   <title>5月3日の誕生花はフロックス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フロックスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏にかけて房状の花を咲かせます。ハナシノブ科の多年草で、長い開花期間が特徴です。"}},
-      {"@type":"Question","name":"フロックスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「温和」という花言葉は、小花が寄り添うように穏やかにまとまって咲く姿が、優しい心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"フロックスという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ギリシャ語で「炎」を意味する言葉に由来するとされ、鮮やかな花色が燃える炎のように見えることにちなむと言われています。"}}
+      {"@type":"Question","name":"フロックスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏にかけて、房状にまとまった花を咲かせます。ハナシノブ科の多年草です。"}},
+      {"@type":"Question","name":"フロックスの花言葉「温和」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が互いに主張しすぎず、寄り添うように咲く姿に由来するといわれています。"}},
+      {"@type":"Question","name":"フロックスはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"庭植えや花壇でよく見られ、房状にまとまって咲く姿は初夏の庭を彩ります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 3 · 誕生花</span>
     <h1>5月3日の誕生花はフロックス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フロックスは、ハナシノブ科の多年草で、初夏から夏に房状の花を咲かせる5月3日の誕生花です。花言葉は「温和」。小花が寄り添って咲く穏やかな印象の花です。</p>
+    <p class="art-lead">新緑の香りに初夏の気配を感じ始める5月、房のように連なって咲くフロックスが少しずつ蕾をふくらませる頃です。今日の誕生花として、その寄り添う姿に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フロックスとは</a></li>
-      <li><a href="#meaning">フロックスが象徴する意味</a></li>
-      <li><a href="#charm">フロックスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月3日の誕生花として親しまれるフロックス</a></li>
+      <li><a href="#story">小さな花が寄り添う、フロックスの房のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フロックスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フロックスとは</h2>
-    <p>フロックスは、ハナシノブ科の多年草で、5月3日の誕生花として知られています。初夏から夏にかけて、小花が房状に集まった花を咲かせ、庭を明るく彩ります。</p>
-  </section>
+    <h2>5月3日の誕生花として親しまれるフロックス</h2>
+    <p>フロックスは、ハナシノブ科の多年草です。初夏から夏にかけて、茎の先に小さな花が房状にまとまって咲き、庭や花壇に柔らかな彩りを添えます。一輪では控えめな花も、寄り添って咲くことで存在感のある景色を作り出すことから、5月3日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フロックスが象徴する意味</h2>
-    <p>フロックスの花言葉は「温和」です。多くの小花が寄り添うように穏やかにまとまって咲く姿が、穏やかで優しい心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フロックスの魅力</h2>
-    <p>フロックスの魅力は、房状にまとまって咲く花のボリューム感と、長く続く開花期間にあります。花壇に植えると華やかさが長続きし、庭を賑やかに彩ってくれます。5月3日生まれの方はもちろん、穏やかな心を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フロックスは日当たりと風通しの良い場所を好み、丈夫でよく育ちます。花がら摘みを行うことで次々と花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月3日生まれの方はもちろん、穏やかな心を伝える贈り物としてもフロックスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">フロックスはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から夏にかけて房状の花を咲かせます。ハナシノブ科の多年草で、長い開花期間が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フロックスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「温和」という花言葉は、小花が寄り添うように穏やかにまとまって咲く姿が、優しい心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フロックスという名前の由来は何ですか？</div>
-        <div class="faq-a">ギリシャ語で「炎」を意味する言葉に由来するとされ、鮮やかな花色が燃える炎のように見えることにちなむと言われています。</div>
+        <div class="faq-a">初夏から夏にかけて、房状にまとまった花を咲かせます。ハナシノブ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>小さな花が寄り添う、フロックスの房のかたち</h2>
+    <p>フロックスの面白さは、その咲き方にあります。一輪一輪は五弁の小さな花にすぎませんが、茎の先に何十輪もが集まり、半球状にふっくらとした房を作ります。近づいてよく見ると、中心に向かって色合いがわずかに変化する花びらの並びも観察のしどころです。誰か一輪だけが目立とうとするのではなく、互いの形を保ちながら静かに寄り添う。そんな咲き方から、フロックスには「温和」という花言葉が贈られているといわれています。穏やかであることは弱さではなく、周りと調和できるしなやかな強さの表れなのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フロックスの花言葉「温和」の由来は？</div>
+        <div class="faq-a">小さな花が互いに主張しすぎず、寄り添うように咲く姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>何十もの小さな花が寄り添って、一つの大きな房になる。穏やかさもまた、静かに積み重なることで確かな強さになっていきます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フロックスから始める小さな体験</h2>
+    <p>寄り添って咲くフロックスにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>房状に咲く花を近くでじっくり眺めてみる</li>
+      <li>誰かの意見に、いつもより穏やかな気持ちで耳を傾けてみる</li>
+      <li>初夏の庭や公園を歩いて、咲き始めの蕾を探してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フロックスはどんな場所でよく見られますか？</div>
+        <div class="faq-a">庭植えや花壇でよく見られ、房状にまとまって咲く姿は初夏の庭を彩ります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">穏やかに過ごしたい今日は、ラッキーフードや月齢もあわせてチェックしてみませんか。開運カレンダーでは、その日のラッキーフードと月の満ち欠けをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>何十もの小さな花が身を寄せ合い、初夏の庭にふっくらとした房を作り上げる季節。フロックスはそこに、穏やかさという静かな強さを添えてくれます。</p>
     <ul>
-      <li>フロックスは初夏から夏に房状の花を咲かせる、5月3日の誕生花</li>
-      <li>花言葉は「温和」、小花が寄り添って咲く穏やかな姿に由来する</li>
-      <li>ボリューム感のある花姿と長い開花期間が魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>フロックスはハナシノブ科の多年草で、初夏から夏にかけて房状の花を咲かせる</li>
+      <li>小さな花が寄り添って半球状にまとまる姿が特徴</li>
+      <li>花言葉は「温和」。互いに寄り添って咲く様子に由来するとされる</li>
+      <li>穏やかさは、周囲と調和できるしなやかな強さともいえる</li>
     </ul>
   </section>
 

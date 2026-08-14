@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0515/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月15日の誕生花アヤメの花言葉・特徴・魅力をわかりやすく解説。「気まぐれ」を象徴する紫色の網目模様の花の意味を紹介します。">
+  <meta name="description" content="5月15日の誕生花アヤメの花言葉・特徴・魅力をわかりやすく解説。網目模様の花びらが象徴する「気まぐれ」というメッセージの意味を紹介します。">
   <title>5月15日の誕生花はアヤメ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アヤメはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に紫色の網目模様が入った花を咲かせます。アヤメ科の多年草で、凛とした気品を感じさせる花です。"}},
-      {"@type":"Question","name":"アヤメの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「気まぐれ」という花言葉は、花の色や模様が個体ごとに微妙に異なり、一つとして同じ表情がないことに由来すると言われています。"}},
-      {"@type":"Question","name":"「いずれアヤメかカキツバタ」とはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"どちらも美しく優劣がつけがたいことのたとえで、アヤメとカキツバタの花姿が非常によく似ていることに由来する故事成語です。"}}
+      {"@type":"Question","name":"アヤメはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、紫色の網目模様が入った花を咲かせます。"}},
+      {"@type":"Question","name":"アヤメの花言葉「気まぐれ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"個性的で予測できない、花びらの網目模様の表情に由来するといわれています。"}},
+      {"@type":"Question","name":"アヤメはどんな場所で見られますか？","acceptedAnswer":{"@type":"Answer","text":"乾いた草地などでも育つ植物で、初夏になると紫色の花を咲かせます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 15 · 誕生花</span>
     <h1>5月15日の誕生花はアヤメ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アヤメは、アヤメ科の多年草で、初夏に紫色の網目模様が入った花を咲かせる5月15日の誕生花です。花言葉は「気まぐれ」。凛とした気品を感じさせる花です。</p>
+    <p class="art-lead">初夏へ向かう5月、紫色の網目模様が入った花びらを広げるアヤメが、凛とした姿を見せ始める頃です。今日の誕生花として、その独特な模様に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アヤメとは</a></li>
-      <li><a href="#meaning">アヤメが象徴する意味</a></li>
-      <li><a href="#charm">アヤメの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月15日の誕生花として親しまれるアヤメ</a></li>
+      <li><a href="#story">網目模様が語る、アヤメの個性的な花びら</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アヤメから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アヤメとは</h2>
-    <p>アヤメは、アヤメ科の多年草で、5月15日の誕生花として知られています。初夏になると紫色の花びらに網目模様の入った花を咲かせ、凛とした気品を感じさせる姿で親しまれています。</p>
-  </section>
+    <h2>5月15日の誕生花として親しまれるアヤメ</h2>
+    <p>アヤメは、アヤメ科の多年草です。初夏になると、紫色の網目模様が入った花を咲かせ、凛とした気品を感じさせる姿で親しまれています。似た仲間の花と並んで語られることも多いですが、アヤメならではの模様や咲き方には独自の魅力があります。その個性的な花びらの表情から、5月15日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アヤメが象徴する意味</h2>
-    <p>アヤメの花言葉は「気まぐれ」です。花の色や模様が個体ごとに微妙に異なり、一つとして同じ表情がないことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アヤメの魅力</h2>
-    <p>アヤメの魅力は、花びらに入る繊細な網目模様と、すらりと伸びた姿が織りなす気品にあります。古くから文様や紋章のモチーフにも用いられてきた、日本人に馴染み深い花です。5月15日生まれの方はもちろん、凛とした美しさを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アヤメは日当たりの良い、やや乾いた場所を好みます。ハナショウブと異なり、多湿を嫌うため水はけの良い土壌が適しています。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月15日生まれの方はもちろん、凛とした美しさを伝える贈り物としてもアヤメは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">アヤメはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に紫色の網目模様が入った花を咲かせます。アヤメ科の多年草で、凛とした気品を感じさせる花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アヤメの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「気まぐれ」という花言葉は、花の色や模様が個体ごとに微妙に異なり、一つとして同じ表情がないことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">「いずれアヤメかカキツバタ」とはどういう意味ですか？</div>
-        <div class="faq-a">どちらも美しく優劣がつけがたいことのたとえで、アヤメとカキツバタの花姿が非常によく似ていることに由来する故事成語です。</div>
+        <div class="faq-a">初夏に、紫色の網目模様が入った花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>網目模様が語る、アヤメの個性的な花びら</h2>
+    <p>アヤメの花びらの付け根には、細かな網目模様が入っています。この模様こそが、アヤメを見分ける際の大きな見どころであり、近づいてよく観察すると、その繊細な線の入り方に一つ一つ微妙な違いがあることに気づかされます。紫色の彩りと相まって、どこか気まぐれで自由な表情を感じさせるのです。同じように見えて実は一つとして同じ模様がない、そんな個性豊かな咲き方から、アヤメには「気まぐれ」という花言葉が贈られているといわれています。予測できない表情の変化は、無責任さではなく、自由でしなやかな個性の表れといえるのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アヤメの花言葉「気まぐれ」の由来は？</div>
+        <div class="faq-a">個性的で予測できない、花びらの網目模様の表情に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>同じ模様が二つとない花びらのように、人の気持ちも日によって少しずつ違う表情を見せます。その時々の揺れ動きも、あなたらしさの一部として受け止めてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アヤメから始める小さな体験</h2>
+    <p>個性的な模様を持つアヤメにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>花びらの網目模様を近くでじっくり観察してみる</li>
+      <li>紫色のものを身の回りに取り入れてみる</li>
+      <li>いつもと違うことを一つ、気ままに試してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アヤメはどんな場所で見られますか？</div>
+        <div class="faq-a">乾いた草地などでも育つ植物で、初夏になると紫色の花を咲かせます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自由な気持ちで過ごしたい今日は、吉日やラッキープレイスもチェックしてみませんか。開運カレンダーでは、その日が吉日かどうかとラッキープレイスをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>日によって少しずつ違う顔を見せる網目模様は、気まぐれというより自由さの証ではないでしょうか。揺れ動く気持ちもまた、アヤメらしい個性の一部です。</p>
     <ul>
-      <li>アヤメは初夏に紫色の花を咲かせる、5月15日の誕生花</li>
-      <li>花言葉は「気まぐれ」、一つとして同じ表情がない花に由来する</li>
-      <li>網目模様と凛とした気品が魅力</li>
-      <li>日当たりが良くやや乾いた場所でよく育つ</li>
+      <li>アヤメはアヤメ科の多年草で、初夏に紫色の花を咲かせる</li>
+      <li>花びらの付け根に入る網目模様が特徴で、一つ一つ微妙に異なる</li>
+      <li>花言葉は「気まぐれ」。個性的で予測できない模様の表情に由来するとされる</li>
+      <li>気まぐれは無責任さではなく、自由でしなやかな個性の表れといえる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0513/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月13日の誕生花サツキの花言葉・特徴・魅力をわかりやすく解説。「几帳面」を象徴する鮮やかに咲く花木の意味を紹介します。">
+  <meta name="description" content="5月13日の誕生花サツキの花言葉・特徴・魅力をわかりやすく解説。丁寧に手入れされる庭木が象徴する「几帳面」というメッセージの意味を紹介します。">
   <title>5月13日の誕生花はサツキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サツキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に鮮やかな花を咲かせます。ツツジ科の常緑低木で、庭木としても親しまれています。"}},
-      {"@type":"Question","name":"サツキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「几帳面」という花言葉は、毎年決まった時期にきちんと花を咲かせる規則正しさに由来すると言われています。"}},
-      {"@type":"Question","name":"サツキとツツジの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"同じツツジ科の植物ですが、サツキはツツジよりも開花時期が遅く、葉や花がやや小ぶりであることが多いという違いがあります。"}}
+      {"@type":"Question","name":"サツキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、鮮やかな花を咲かせます。庭木や盆栽としても親しまれています。"}},
+      {"@type":"Question","name":"サツキの花言葉「几帳面」の由来は？","acceptedAnswer":{"@type":"Answer","text":"丁寧な手入れを重ねて咲きそろう姿に由来するといわれています。"}},
+      {"@type":"Question","name":"サツキはどのように育てられていますか？","acceptedAnswer":{"@type":"Answer","text":"庭木や盆栽として、花付きを整えるために丁寧に手入れされることが多い植物です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 13 · 誕生花</span>
     <h1>5月13日の誕生花はサツキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サツキは、ツツジ科の常緑低木で、初夏に鮮やかな花を咲かせる5月13日の誕生花です。花言葉は「几帳面」。庭木としても親しまれる清々しい印象の花木です。</p>
+    <p class="art-lead">初夏の庭先に鮮やかな花を咲かせる頃、丁寧に手入れされたサツキの植木が美しい姿を見せる季節です。今日の誕生花として、その丁寧な暮らしとの関わりに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サツキとは</a></li>
-      <li><a href="#meaning">サツキが象徴する意味</a></li>
-      <li><a href="#charm">サツキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月13日の誕生花として親しまれるサツキ</a></li>
+      <li><a href="#story">丁寧に手入れされる、サツキと暮らしの関わり</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サツキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サツキとは</h2>
-    <p>サツキは、ツツジ科の常緑低木で、5月13日の誕生花として知られています。初夏になると鮮やかな花を咲かせ、庭木や盆栽としても古くから親しまれてきた花木です。</p>
-  </section>
+    <h2>5月13日の誕生花として親しまれるサツキ</h2>
+    <p>サツキは、ツツジ科の常緑低木です。初夏になると鮮やかな花を咲かせ、庭木や盆栽としても親しまれています。一鉢一鉢が長い年月をかけて手入れされ、花付きの美しさを保っていることも、この植物ならではの特徴です。丁寧に育てられてきた姿から、5月13日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サツキが象徴する意味</h2>
-    <p>サツキの花言葉は「几帳面」です。毎年決まった時期にきちんと花を咲かせる規則正しさが、几帳面な性質を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サツキの魅力</h2>
-    <p>サツキの魅力は、鮮やかな花色と、丁寧に手入れされた樹形が織りなす端正な美しさにあります。盆栽仕立てにされることも多く、日本の庭園文化とも深く結びついています。5月13日生まれの方はもちろん、誠実さを伝える贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サツキは日当たりの良い場所を好み、丈夫で育てやすい常緑低木です。花後の剪定を行うことで美しい樹形を保てます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月13日生まれの方はもちろん、誠実さを伝える贈り物としてもサツキは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">サツキはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に鮮やかな花を咲かせます。ツツジ科の常緑低木で、庭木としても親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サツキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「几帳面」という花言葉は、毎年決まった時期にきちんと花を咲かせる規則正しさに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サツキとツツジの違いは何ですか？</div>
-        <div class="faq-a">同じツツジ科の植物ですが、サツキはツツジよりも開花時期が遅く、葉や花がやや小ぶりであることが多いという違いがあります。</div>
+        <div class="faq-a">初夏に、鮮やかな花を咲かせます。庭木や盆栽としても親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>丁寧に手入れされる、サツキと暮らしの関わり</h2>
+    <p>サツキは、庭木や盆栽として日常の暮らしの中に取り入れられることが多い植物です。毎年美しい花を咲かせるためには、時期を見極めて剪定をし、枝の伸び方を整えるといった、計画的で丁寧な手入れが欠かせません。こうした管理を積み重ねることで、初夏になると規則正しく花が咲きそろう美しい姿が生まれるのです。この、丁寧な手入れを重ねて咲きそろう様子から、サツキには「几帳面」という花言葉が贈られているといわれています。几帳面さは、心を込めた丁寧な積み重ねだといえるのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サツキの花言葉「几帳面」の由来は？</div>
+        <div class="faq-a">丁寧な手入れを重ねて咲きそろう姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>丁寧に手入れされた植木のように、日々の小さな積み重ねが確かな形を作っていきます。几帳面さは、心を込めた丁寧さの表れなのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サツキから始める小さな体験</h2>
+    <p>丁寧に手入れされるサツキにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>身の回りを一つ、丁寧に整えてみる</li>
+      <li>庭木や盆栽のサツキを近所で探してみる</li>
+      <li>いつもより少し丁寧に、今日の予定を整理してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サツキはどのように育てられていますか？</div>
+        <div class="faq-a">庭木や盆栽として、花付きを整えるために丁寧に手入れされることが多い植物です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">丁寧に過ごしたい今日は、おすすめの行動や今月の誕生石もチェックしてみませんか。開運カレンダーでは、その日のおすすめの行動と今月の誕生石をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>剪定という小さな手間を、季節ごとに丁寧に重ねていく。サツキが咲かせる花は、そうした地道な手入れの結晶といえます。</p>
     <ul>
-      <li>サツキは初夏に鮮やかな花を咲かせる、5月13日の誕生花</li>
-      <li>花言葉は「几帳面」、毎年規則正しく咲く様子に由来する</li>
-      <li>端正な樹形と鮮やかな花色が魅力</li>
-      <li>日当たりの良い場所で丈夫に育つ</li>
+      <li>サツキはツツジ科の常緑低木で、初夏に鮮やかな花を咲かせる</li>
+      <li>庭木や盆栽として、花付きを整えるために丁寧に手入れされる</li>
+      <li>花言葉は「几帳面」。丁寧な手入れを重ねて咲きそろう姿に由来するとされる</li>
+      <li>几帳面さは堅苦しさではなく、心を込めた丁寧な積み重ねだといえる</li>
     </ul>
   </section>
 

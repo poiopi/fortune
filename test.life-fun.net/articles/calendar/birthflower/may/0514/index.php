@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0514/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月14日の誕生花フクシアの花言葉・特徴・魅力をわかりやすく解説。「趣味の良さ」を象徴する釣鐘状に咲く花の意味を紹介します。">
+  <meta name="description" content="5月14日の誕生花フクシアの花言葉・特徴・魅力をわかりやすく解説。釣鐘のように揺れる花が象徴する「趣味の良さ」というメッセージの意味を紹介します。">
   <title>5月14日の誕生花はフクシア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フクシアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて釣鐘状の花を下向きに咲かせます。アカバナ科の低木で、優美で華やかな印象を持つ花です。"}},
-      {"@type":"Question","name":"フクシアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「趣味の良さ」という花言葉は、色の組み合わせが絶妙で洗練された佇まいを持つ花姿に由来すると言われています。"}},
-      {"@type":"Question","name":"フクシアはなぜ「貴婦人のイヤリング」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"下向きに垂れ下がって咲く花の形が、揺れるイヤリングのように見えることから、この愛称で呼ばれるようになりました。"}}
+      {"@type":"Question","name":"フクシアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、釣鐘状の花を下向きに咲かせます。鉢植えでも育てやすい花木です。"}},
+      {"@type":"Question","name":"フクシアの花言葉「趣味の良さ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"独特で愛らしい花の姿に由来するといわれています。"}},
+      {"@type":"Question","name":"フクシアの和名にはどんな意味がありますか？","acceptedAnswer":{"@type":"Answer","text":"「釣浮草」と呼ばれ、釣り糸に浮きがついた様子に花の形が似ていることに由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 14 · 誕生花</span>
     <h1>5月14日の誕生花はフクシア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フクシアは、アカバナ科の低木で、夏から秋にかけて釣鐘状の花を下向きに咲かせる5月14日の誕生花です。花言葉は「趣味の良さ」。優美で華やかな印象の花です。</p>
+    <p class="art-lead">釣鐘のような形の花を下向きに咲かせるフクシア。今日の誕生花として、その独特な姿とやわらかな名前の由来に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フクシアとは</a></li>
-      <li><a href="#meaning">フクシアが象徴する意味</a></li>
-      <li><a href="#charm">フクシアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月14日の誕生花として親しまれるフクシア</a></li>
+      <li><a href="#story">釣鐘のように揺れる、フクシアの愛らしい姿</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フクシアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フクシアとは</h2>
-    <p>フクシアは、アカバナ科の低木で、5月14日の誕生花として知られています。夏から秋にかけて釣鐘状の花を下向きに咲かせ、まるでイヤリングのような優美な姿で親しまれています。</p>
-  </section>
+    <h2>5月14日の誕生花として親しまれるフクシア</h2>
+    <p>フクシアは、アカバナ科の低木です。夏から秋にかけて釣鐘状の花を下向きに咲かせ、鉢植えでも育てやすい花木として親しまれています。和名は「釣浮草」といい、花の形にちなんで名づけられました。その独特で愛らしい姿から、5月14日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フクシアが象徴する意味</h2>
-    <p>フクシアの花言葉は「趣味の良さ」です。色の組み合わせが絶妙で、洗練された佇まいを持つ花姿に由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フクシアの魅力</h2>
-    <p>フクシアの魅力は、下向きに咲く釣鐘状の花が生み出す優美な揺れと、二色を組み合わせた繊細な色彩にあります。ハンギングバスケットに仕立てると、より一層その華やかさが引き立ちます。5月14日生まれの方はもちろん、洗練された印象を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フクシアは直射日光を避けた明るい半日陰を好み、涼しい環境でよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月14日生まれの方はもちろん、洗練された印象を伝える贈り物としてもフクシアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">フクシアはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋にかけて釣鐘状の花を下向きに咲かせます。アカバナ科の低木で、優美で華やかな印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フクシアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「趣味の良さ」という花言葉は、色の組み合わせが絶妙で洗練された佇まいを持つ花姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フクシアはなぜ「貴婦人のイヤリング」と呼ばれるのですか？</div>
-        <div class="faq-a">下向きに垂れ下がって咲く花の形が、揺れるイヤリングのように見えることから、この愛称で呼ばれるようになりました。</div>
+        <div class="faq-a">夏から秋にかけて、釣鐘状の花を下向きに咲かせます。鉢植えでも育てやすい花木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>釣鐘のように揺れる、フクシアの愛らしい姿</h2>
+    <p>フクシアの花は、花びらとがくが幾重にも重なり合い、まるで小さな提灯やイヤリングのように下向きに垂れ下がって咲きます。風が吹くたびにゆらゆらと揺れるその姿は、近づいて観察するほどに、色の組み合わせの妙や作りの細やかさに気づかされる花です。この、独特で個性的な花の形から、フクシアには「趣味の良さ」という花言葉が贈られているといわれています。趣味の良さとは、誰かと比べて測るものというより、自分だけの物差しで育てていくものといえるかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フクシアの花言葉「趣味の良さ」の由来は？</div>
+        <div class="faq-a">独特で愛らしい花の姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>風に揺れる釣鐘のような花は、下を向きながらも、どこか自信に満ちた佇まいをしています。自分らしい選び方やセンスは、誰かと比べて測るものというより、自分だけの物差しで育てていくものです。自分がいいと思えることを、そのまま大切にしていきましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フクシアから始める小さな体験</h2>
+    <p>釣鐘のように揺れるフクシアにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>釣鐘のように揺れる花の形を観察してみる</li>
+      <li>和名「釣浮草」の由来を調べてみる</li>
+      <li>自分らしいと思えるものを一つ選んでみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フクシアの和名にはどんな意味がありますか？</div>
+        <div class="faq-a">「釣浮草」と呼ばれ、釣り糸に浮きがついた様子に花の形が似ていることに由来するといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分らしさを大切にしたい今日は、ラッキーカラーや月齢もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーカラーと月の満ち欠けをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>下向きに咲く花にも、隠しきれない自信がにじむ。フクシアが体現するのは、誰とも比べない自分だけの好みという名のセンス。</p>
     <ul>
-      <li>フクシアは夏から秋に釣鐘状の花を咲かせる、5月14日の誕生花</li>
-      <li>花言葉は「趣味の良さ」、洗練された花姿に由来する</li>
-      <li>下向きに咲く優美な花と繊細な色彩が魅力</li>
-      <li>明るい半日陰の涼しい環境でよく育つ</li>
+      <li>フクシアはアカバナ科の低木で、夏から秋にかけて釣鐘状の花を下向きに咲かせる</li>
+      <li>和名は「釣浮草」。釣り糸の浮きに似た花の形に由来するといわれる</li>
+      <li>花言葉は「趣味の良さ」。独特で愛らしい花の姿に由来するとされる</li>
+      <li>趣味の良さは他人と比べるものではなく、自分らしさの表れといえる</li>
     </ul>
   </section>
 
