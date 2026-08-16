@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フクシアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、釣鐘状の花を下向きに咲かせます。鉢植えでも育てやすい花木です。"}},
+      {"@type":"Question","name":"フクシアの花はどんな形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"花びらとがくが幾重にも重なり、釣鐘のような形の花を下向きに咲かせます。風に揺れる姿が愛らしい花です。"}},
       {"@type":"Question","name":"フクシアの花言葉「趣味の良さ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"独特で愛らしい花の姿に由来するといわれています。"}},
       {"@type":"Question","name":"フクシアの和名にはどんな意味がありますか？","acceptedAnswer":{"@type":"Answer","text":"「釣浮草」と呼ばれ、釣り糸に浮きがついた様子に花の形が似ていることに由来するといわれています。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 14 · 誕生花</span>
     <h1>5月14日の誕生花はフクシア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">釣鐘のような形の花を下向きに咲かせるフクシア。今日の誕生花として、その独特な姿とやわらかな名前の由来に目を向けてみましょう。</p>
+    <p class="art-lead">釣鐘のような形の花を下向きに咲かせるフクシア。下向きに揺れるその花には、和名にも通じるやわらかな物語が隠れています。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フクシアはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋にかけて、釣鐘状の花を下向きに咲かせます。鉢植えでも育てやすい花木です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フクシアの花はどんな形をしていますか？</div>
+        <div class="faq-a">花びらとがくが幾重にも重なり、釣鐘のような形の花を下向きに咲かせます。風に揺れる姿が愛らしい花です。</div>
       </div>
     </div>
   </section>
@@ -221,7 +221,7 @@ ob_start();
 
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
-    <p>下向きに咲く花にも、隠しきれない自信がにじむ。フクシアが体現するのは、誰とも比べない自分だけの好みという名のセンス。</p>
+    <p>下向きに咲く花にも、隠しきれない自信がにじむ。そのひそやかな自信が、フクシアという花ならではのセンスを物語ります。</p>
     <ul>
       <li>フクシアはアカバナ科の低木で、夏から秋にかけて釣鐘状の花を下向きに咲かせる</li>
       <li>和名は「釣浮草」。釣り糸の浮きに似た花の形に由来するといわれる</li>

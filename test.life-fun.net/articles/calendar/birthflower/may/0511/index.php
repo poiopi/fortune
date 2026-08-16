@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"チューリップ（白）はどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"ユリ科の球根植物で、春に清楚な白い花を咲かせます。お椀型の花びらが開閉する姿が特徴です。"}},
+      {"@type":"Question","name":"チューリップ（白）はどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"ユリ科の球根植物で、春に清楚な白いお椀型の花を咲かせます。日の当たり方によって花びらが開いたり閉じたりする姿が特徴です。"}},
       {"@type":"Question","name":"チューリップ（白）の花言葉「待ちわびて」の由来は？","acceptedAnswer":{"@type":"Answer","text":"静かに開いたり閉じたりする白い花びらの姿に由来するといわれています。"}},
       {"@type":"Question","name":"チューリップ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、清楚な白い花を咲かせます。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 11 · 誕生花</span>
     <h1>5月11日の誕生花はチューリップ（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">春の盛りを彩ったチューリップが少しずつ見納めを迎える5月。白い花びらを閉じたり開いたりするチューリップ（白）が、静かな余韻を残す頃です。今日の誕生花として、その静けさに目を向けてみましょう。</p>
+    <p class="art-lead">春の盛りを彩ったチューリップが少しずつ見納めを迎える5月。白い花びらを閉じたり開いたりするチューリップ（白）が、静かな余韻を残す頃です。静かに開いては閉じる花びらが、季節の締めくくりをそっと物語っています。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に、清楚な白い花を咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（白）はどんな形の花を咲かせますか？</div>
+        <div class="faq-a">ユリ科の球根植物で、春に清楚な白いお椀型の花を咲かせます。日の当たり方によって花びらが開いたり閉じたりする姿が特徴です。</div>
       </div>
     </div>
   </section>
@@ -196,7 +196,7 @@ ob_start();
     <h2>🌼今日の誕生花からのメッセージ</h2>
     <div class="hana-message">
       <span class="hana-message-label">MESSAGE</span>
-      <p>白い花びらがゆっくり開く様子には、待つことの静けさが宿っています。何かを心待ちにする時間もまた、それ自体が豊かなものかもしれません。</p>
+      <p>白い花びらがゆっくり開く様子には、待つことの静けさが宿っています。何かを心待ちにする時間そのものが、あなたの心を潤す糧なのです。</p>
     </div>
   </section>
 
@@ -221,7 +221,7 @@ ob_start();
 
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
-    <p>春の終わりに白い花びらが静かに開いたり閉じたりする季節、チューリップ（白）はそこに、待つ時間そのものの豊かさをそっと気づかせてくれます。</p>
+    <p>春の終わりに白い花びらが静かに開いたり閉じたりする季節、チューリップ（白）はその開閉のリズムを通して、待つ時間の尊さをそっと示します。</p>
     <ul>
       <li>チューリップ（白）はユリ科の球根植物で、春に清楚な白い花を咲かせる</li>
       <li>お椀型の花びらが開いたり閉じたりする姿が特徴</li>

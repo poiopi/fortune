@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アザミはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏にかけて、とげのある葉と紅紫色の丸い花を咲かせます。"}},
+      {"@type":"Question","name":"アザミはどんな見た目をした花ですか？","acceptedAnswer":{"@type":"Answer","text":"キク科の多年草で、とげのある葉と紅紫色の丸い花が特徴です。まっすぐ伸びる茎の先に凛とした姿で咲きます。"}},
       {"@type":"Question","name":"アザミの花言葉「独立」の由来は？","acceptedAnswer":{"@type":"Answer","text":"まっすぐ伸びる茎の先で凛と花を咲かせる、その堂々とした姿に由来するといわれています。"}},
       {"@type":"Question","name":"アザミのとげにはどんな役割がありますか？","acceptedAnswer":{"@type":"Answer","text":"自分を守るための備えとして葉にとげを持つといわれています。花そのものは丸く柔らかな印象です。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 12 · 誕生花</span>
     <h1>5月12日の誕生花はアザミ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">初夏へ向かう5月、とげのある葉を広げながら凛と立つアザミが、道端や野原に姿を見せ始める頃です。今日の誕生花として、その凛とした佇まいに目を向けてみましょう。</p>
+    <p class="art-lead">初夏へ向かう5月、とげのある葉を広げながら凛と立つアザミが、道端や野原に姿を見せ始める頃です。そのとげの奥に、どんな柔らかさが隠れているのでしょうか。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザミはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から夏にかけて、とげのある葉と紅紫色の丸い花を咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アザミはどんな見た目をした花ですか？</div>
+        <div class="faq-a">キク科の多年草で、とげのある葉と紅紫色の丸い花が特徴です。まっすぐ伸びる茎の先に凛とした姿で咲きます。</div>
       </div>
     </div>
   </section>
@@ -221,7 +221,7 @@ ob_start();
 
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
-    <p>とげを持ちながらも凛と咲く一輪。アザミが見せてくれるのは、誰にも頼らず自分の足で立つ強さ。</p>
+    <p>とげを持ちながらも凛と咲く一輪。鋭いとげの奥をよく見ると、花びらはむしろ驚くほど柔らかく、優しい印象をたたえます。</p>
     <ul>
       <li>アザミはキク科の多年草で、初夏から夏にかけて紅紫色の丸い花を咲かせる</li>
       <li>とげのある葉と丸く柔らかな花という対照的な姿が特徴</li>

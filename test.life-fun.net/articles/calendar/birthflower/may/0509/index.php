@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カスミソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、無数の小さな白い花を霞のように咲かせます。"}},
+      {"@type":"Question","name":"カスミソウはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"ナデシコ科の植物で、無数の小さな白い花を霞のように咲かせます。繊細で優しい印象を持つ花として親しまれています。"}},
       {"@type":"Question","name":"カスミソウの花言葉「清楚」の由来は？","acceptedAnswer":{"@type":"Answer","text":"飾らない小さな花が集まって作る、控えめで繊細な美しさに由来するといわれています。"}},
       {"@type":"Question","name":"カスミソウは花束などでどのように使われていますか？","acceptedAnswer":{"@type":"Answer","text":"他の花を引き立てる役割で使われることが多いですが、カスミソウだけを集めた花束も人気があります。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 9 · 誕生花</span>
     <h1>5月9日の誕生花はカスミソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">初夏の気配が近づく5月、無数の小さな白い花が霞のように広がるカスミソウが引き立て役として選ばれる季節です。今日の誕生花として、その繊細な景色に目を向けてみましょう。</p>
+    <p class="art-lead">初夏の気配が近づく5月、無数の小さな白い花が霞のように広がるカスミソウが引き立て役として選ばれる季節です。脇役に徹するその花に、あなたはどんな美しさを見出すでしょうか。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カスミソウはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に、無数の小さな白い花を霞のように咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カスミソウはどんな植物ですか？</div>
+        <div class="faq-a">ナデシコ科の植物で、無数の小さな白い花を霞のように咲かせます。繊細で優しい印象を持つ花として親しまれています。</div>
       </div>
     </div>
   </section>

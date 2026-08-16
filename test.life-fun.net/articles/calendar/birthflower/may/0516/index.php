@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ゼラニウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から秋にかけて、長期間にわたり鮮やかな花を咲かせ続けます。"}},
+      {"@type":"Question","name":"ゼラニウムの葉には香りがあるのですか？","acceptedAnswer":{"@type":"Answer","text":"品種によっては、葉に香りがあります。香りの好みには個人差があるため、それぞれのペースで楽しめるのも魅力です。"}},
       {"@type":"Question","name":"ゼラニウムの花言葉「真の友情」の由来は？","acceptedAnswer":{"@type":"Answer","text":"長く途切れずに咲き続ける姿に由来するといわれています。"}},
       {"@type":"Question","name":"ゼラニウムはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"フウロソウ科の多年草で、南アフリカ原産です。乾燥に強く、鉢植えで育てやすい花として親しまれています。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 16 · 誕生花</span>
     <h1>5月16日の誕生花はゼラニウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">春から秋まで長く花を咲かせ続けるゼラニウムが、初夏に向かう5月も変わらず鉢の中で彩りを添えている頃です。今日の誕生花として、その息の長さに目を向けてみましょう。</p>
+    <p class="art-lead">春から秋まで長く花を咲かせ続けるゼラニウムが、初夏に向かう5月も変わらず鉢の中で彩りを添えている頃です。途切れることなく咲き続けるその姿に、あなたはどんな言葉を重ねますか。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゼラニウムはいつ頃咲きますか？</div>
-        <div class="faq-a">春から秋にかけて、長期間にわたり鮮やかな花を咲かせ続けます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ゼラニウムの葉には香りがあるのですか？</div>
+        <div class="faq-a">品種によっては、葉に香りがあります。香りの好みには個人差があるため、それぞれのペースで楽しめるのも魅力です。</div>
       </div>
     </div>
   </section>
@@ -221,7 +221,7 @@ ob_start();
 
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
-    <p>春から秋まで、ゼラニウムは色を変えずに花を咲かせ続けます。季節が移り変わっても律義に咲き続けるその姿こそ、「真の友情」という花言葉がそのまま息づいているようです。</p>
+    <p>春から秋まで、ゼラニウムは色を変えずに花を咲かせ続けます。その息の長い咲きぶりは、暮らしの中で長く大切にしたいものを、そっと思い起こさせます。</p>
     <ul>
       <li>ゼラニウムはフウロソウ科の多年草で、春から秋にかけて長期間花を咲かせ続ける</li>
       <li>南アフリカ原産で乾燥に強く、鉢植えで育てやすい</li>

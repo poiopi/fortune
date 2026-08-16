@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マーガレットはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春を中心に、白や淡い色の花を咲かせます。キク科の多年草で、庭先や花壇で親しまれています。"}},
+      {"@type":"Question","name":"マーガレットはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"白や淡い色の花びらを一枚一枚独立させるように咲かせます。中心の黄色を囲むように広がる姿が特徴です。"}},
       {"@type":"Question","name":"マーガレットの花言葉「秘めた愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一枚一枚が独立して並ぶ白い花びらの、静かで飾らない佇まいが、まだ言葉にしていない想いを連想させることに由来するといわれています。"}},
       {"@type":"Question","name":"花占いのように使われることもあるのですか？","acceptedAnswer":{"@type":"Answer","text":"花びらを一枚ずつちぎって想いを確かめる遊びに使われることがあるといわれていますが、結果を絶対的なものと捉える必要はありません。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 1 · 誕生花</span>
     <h1>5月1日の誕生花はマーガレット<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">若葉の香る5月、公園や庭先で白い花びらを揺らすマーガレットが目にとまる季節です。今日の誕生花として、その清らかな白に込められた気持ちを見つめてみましょう。</p>
+    <p class="art-lead">若葉の香る5月、公園や庭先で白い花びらを揺らすマーガレットが目にとまる季節です。清らかな白い花びらの奥には、まだ言葉にならない気持ちが静かに息づいています。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マーガレットはいつ頃咲きますか？</div>
-        <div class="faq-a">春を中心に、白や淡い色の花を咲かせます。キク科の多年草で、庭先や花壇で親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マーガレットはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">白や淡い色の花びらを一枚一枚独立させるように咲かせます。中心の黄色を囲むように広がる姿が特徴です。</div>
       </div>
     </div>
   </section>

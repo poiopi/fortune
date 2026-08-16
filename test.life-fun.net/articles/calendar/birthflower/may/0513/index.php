@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サツキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、鮮やかな花を咲かせます。庭木や盆栽としても親しまれています。"}},
+      {"@type":"Question","name":"サツキはツツジ科の植物ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、ツツジ科の常緑低木です。庭木や盆栽として、丁寧に手入れされながら育てられています。"}},
       {"@type":"Question","name":"サツキの花言葉「几帳面」の由来は？","acceptedAnswer":{"@type":"Answer","text":"丁寧な手入れを重ねて咲きそろう姿に由来するといわれています。"}},
       {"@type":"Question","name":"サツキはどのように育てられていますか？","acceptedAnswer":{"@type":"Answer","text":"庭木や盆栽として、花付きを整えるために丁寧に手入れされることが多い植物です。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 13 · 誕生花</span>
     <h1>5月13日の誕生花はサツキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">初夏の庭先に鮮やかな花を咲かせる頃、丁寧に手入れされたサツキの植木が美しい姿を見せる季節です。今日の誕生花として、その丁寧な暮らしとの関わりに目を向けてみましょう。</p>
+    <p class="art-lead">初夏の庭先に鮮やかな花を咲かせる頃、丁寧に手入れされたサツキの植木が美しい姿を見せる季節です。一つ一つの花付きに宿る、丁寧な手間の積み重ね。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サツキはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に、鮮やかな花を咲かせます。庭木や盆栽としても親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サツキはツツジ科の植物ですか？</div>
+        <div class="faq-a">はい、ツツジ科の常緑低木です。庭木や盆栽として、丁寧に手入れされながら育てられています。</div>
       </div>
     </div>
   </section>

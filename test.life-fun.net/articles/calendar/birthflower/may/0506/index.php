@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ユズはいつ頃花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白く香り高い花を咲かせます。よく知られる果実は冬に実ります。開花の時期と結実の時期は異なります。"}},
+      {"@type":"Question","name":"ユズの花と実は、同じ季節にできるのですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、花は初夏に、よく知られる果実は冬に実ります。開花の時期と結実の時期は異なる季節にあたります。"}},
       {"@type":"Question","name":"ユズの花言葉「健康美」の由来は？","acceptedAnswer":{"@type":"Answer","text":"香りや実りの豊かさが、内側から満ちる健やかな美しさを象徴するといわれていることに由来するとされています。"}},
       {"@type":"Question","name":"ユズの香りはどんな場面で使われていますか？","acceptedAnswer":{"@type":"Answer","text":"料理の香りづけや入浴の際など、暮らしのさまざまな場面で使われています。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 6 · 誕生花</span>
     <h1>5月6日の誕生花はユズ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">柑橘の白い花が咲き始める初夏へと向かう5月。ユズは、冬の実りだけでなく、この時期にひっそりと白い花を咲かせる植物でもあります。今日の誕生花として、その香りに目を向けてみましょう。</p>
+    <p class="art-lead">柑橘の白い花が咲き始める初夏へと向かう5月。ユズは、冬の実りだけでなく、この時期にひっそりと白い花を咲かせる植物でもあります。冬の実りとはまた違う、香り立つ季節の横顔がそこにあります。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユズはいつ頃花を咲かせますか？</div>
-        <div class="faq-a">初夏に白く香り高い花を咲かせます。よく知られる果実は冬に実ります。開花の時期と結実の時期は異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ユズの花と実は、同じ季節にできるのですか？</div>
+        <div class="faq-a">いいえ、花は初夏に、よく知られる果実は冬に実ります。開花の時期と結実の時期は異なる季節にあたります。</div>
       </div>
     </div>
   </section>

@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アヤメはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、紫色の網目模様が入った花を咲かせます。"}},
+      {"@type":"Question","name":"アヤメの花びらにはどんな模様がありますか？","acceptedAnswer":{"@type":"Answer","text":"花びらの付け根に、細かな網目模様が入ります。一つとして同じ模様がなく、個性的な表情を見せてくれます。"}},
       {"@type":"Question","name":"アヤメの花言葉「気まぐれ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"個性的で予測できない、花びらの網目模様の表情に由来するといわれています。"}},
       {"@type":"Question","name":"アヤメはどんな場所で見られますか？","acceptedAnswer":{"@type":"Answer","text":"乾いた草地などでも育つ植物で、初夏になると紫色の花を咲かせます。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 15 · 誕生花</span>
     <h1>5月15日の誕生花はアヤメ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">初夏へ向かう5月、紫色の網目模様が入った花びらを広げるアヤメが、凛とした姿を見せ始める頃です。今日の誕生花として、その独特な模様に目を向けてみましょう。</p>
+    <p class="art-lead">初夏へ向かう5月、紫色の網目模様が入った花びらを広げるアヤメが、凛とした姿を見せ始める頃です。一つとして同じ模様のない網目に、この花だけの表情が浮かび上がります。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アヤメはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に、紫色の網目模様が入った花を咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アヤメの花びらにはどんな模様がありますか？</div>
+        <div class="faq-a">花びらの付け根に、細かな網目模様が入ります。一つとして同じ模様がなく、個性的な表情を見せてくれます。</div>
       </div>
     </div>
   </section>

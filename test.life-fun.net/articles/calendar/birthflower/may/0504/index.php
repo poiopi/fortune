@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シャクヤクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に大輪の花を咲かせます。上品で華やかな花として親しまれています。"}},
+      {"@type":"Question","name":"シャクヤクは何科の植物ですか？","acceptedAnswer":{"@type":"Answer","text":"ボタン科の多年草です。丸く固い蕾から、大輪でふんわりとした花を咲かせます。上品で華やかな印象を持つ花として親しまれています。"}},
       {"@type":"Question","name":"シャクヤクの花言葉「恥じらい」の由来は？","acceptedAnswer":{"@type":"Answer","text":"丸く固い蕾が時間をかけて少しずつ開いていく、その控えめな咲き方に由来するといわれています。"}},
       {"@type":"Question","name":"シャクヤクはどんな印象の花ですか？","acceptedAnswer":{"@type":"Answer","text":"大輪でふんわりとした花びらが幾重にも重なり、上品で華やかな印象を与えます。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 4 · 誕生花</span>
     <h1>5月4日の誕生花はシャクヤク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">丸く大きな蕾がふくらみ始める5月、初夏の訪れとともにシャクヤクが咲く季節が近づいてきます。今日の誕生花として、その花が開いていく様子に目を向けてみましょう。</p>
+    <p class="art-lead">丸く大きな蕾がふくらみ始める5月、初夏の訪れとともにシャクヤクが咲く季節が近づいてきます。その蕾は、いつ、どんな表情でほどけていくのでしょうか。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シャクヤクはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に大輪の花を咲かせます。上品で華やかな花として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シャクヤクは何科の植物ですか？</div>
+        <div class="faq-a">ボタン科の多年草です。丸く固い蕾から、大輪でふんわりとした花を咲かせます。上品で華やかな印象を持つ花として親しまれています。</div>
       </div>
     </div>
   </section>
@@ -221,7 +221,7 @@ ob_start();
 
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
-    <p>丸く固い蕾が、時間をかけて幾重にも花びらをほどいていく。シャクヤクが見せてくれるのは、急がず自分を開いていくという生き方。</p>
+    <p>丸く固い蕾が、時間をかけて幾重にも花びらをほどいていく。その一枚一枚をほどく歩みこそが、シャクヤクだけの静かな流儀です。</p>
     <ul>
       <li>シャクヤクはボタン科の多年草で、初夏に大輪の花を咲かせる</li>
       <li>丸く固い蕾が幾重にも重なった花びらへとゆっくり開いていく</li>

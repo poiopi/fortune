@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ナスタチウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に鮮やかな橙色や黄色の花を咲かせます。丸い葉も特徴的な植物です。"}},
+      {"@type":"Question","name":"ナスタチウムにはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな橙色や黄色の花を咲かせ、丸い葉とともに爽やかな印象を与えます。"}},
       {"@type":"Question","name":"ナスタチウムの花言葉「勝利」の由来は？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな色が放つ力強い印象に由来するといわれています。"}},
       {"@type":"Question","name":"ナスタチウムはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"丸い葉が特徴的な一年草で、花や葉が食用にされることもあります。"}}
     ]
@@ -139,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 7 · 誕生花</span>
     <h1>5月7日の誕生花はナスタチウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">丸い葉と鮮やかな橙色の花が印象的なナスタチウム。今日の誕生花として、その色が持つ力強さに目を向けてみましょう。</p>
+    <p class="art-lead">丸い葉と鮮やかな橙色の花が印象的なナスタチウム。見る人の心をぱっと明るくする、その鮮やかな存在感。</p>
   </div>
 
   <dl class="basic-info">
@@ -174,8 +174,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナスタチウムはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に鮮やかな橙色や黄色の花を咲かせます。丸い葉も特徴的な植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ナスタチウムにはどんな特徴がありますか？</div>
+        <div class="faq-a">鮮やかな橙色や黄色の花を咲かせ、丸い葉とともに爽やかな印象を与えます。</div>
       </div>
     </div>
   </section>
