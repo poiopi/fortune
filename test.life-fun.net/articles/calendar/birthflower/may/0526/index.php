@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0526/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月26日の誕生花テマリバナの花言葉・特徴・魅力をわかりやすく解説。「誓い」を象徴する手毬のような丸い花の意味を紹介します。">
+  <meta name="description" content="5月26日の誕生花テマリバナの花言葉・特徴・魅力をわかりやすく解説。「誓い」という花言葉に込められた意味と、手毬のように丸くまとまって咲く花姿を紹介します。">
   <title>5月26日の誕生花はテマリバナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"テマリバナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に手毬のような丸い形の白い花を咲かせます。スイカズラ科の落葉低木です。"}},
-      {"@type":"Question","name":"テマリバナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「誓い」という花言葉は、無数の小花がまとまり合って一つの丸い花房をつくる姿が、心を一つに結ぶ約束を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"テマリバナとアジサイはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらも丸い花房をつくりますが、テマリバナは落葉低木でアジサイより開花時期が早く、花房の形もより球形に近いという違いがあります。"}}
+      {"@type":"Question","name":"テマリバナとアジサイはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらも丸くまとまって咲きますが、テマリバナは手毬のように球状にまとまるのに対し、アジサイは房状に広がって咲く点で異なります。分類上も別の植物です。"}},
+      {"@type":"Question","name":"テマリバナの花言葉「誓い」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が寄り集まって一つの丸いかたちをつくる咲き方が、小さな約束の積み重ねを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"テマリバナはどんな場所で育てられていますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い花を咲かせる落葉低木で、ボリューム感のある咲きぶりから庭木や公園樹として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 26 · 誕生花</span>
     <h1>5月26日の誕生花はテマリバナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">テマリバナは、スイカズラ科の落葉低木で、初夏に手毬のような丸い形の白い花を咲かせる5月26日の誕生花です。花言葉は「誓い」。</p>
+    <p class="art-lead">枝先いっぱいに広がる、真っ白な手毬。テマリバナは、無数の小花が寄り集まって一つの丸をかたちづくる、初夏の庭木です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">テマリバナとは</a></li>
-      <li><a href="#meaning">テマリバナが象徴する意味</a></li>
-      <li><a href="#charm">テマリバナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月26日の誕生花として親しまれるテマリバナ</a></li>
+      <li><a href="#story">丸くまとまって咲く、テマリバナの手毬のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、テマリバナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>テマリバナとは</h2>
-    <p>テマリバナは、スイカズラ科の落葉低木で、5月26日の誕生花として知られています。初夏になると手毬のような丸い形の白い花を咲かせ、その愛らしい姿から「オオデマリ」とも呼ばれ親しまれています。</p>
-  </section>
+    <h2>5月26日の誕生花として親しまれるテマリバナ</h2>
+    <p>テマリバナは、スイカズラ科の落葉低木です。初夏になると、手毬のような丸い形の白い花を枝いっぱいに咲かせます。ボリューム感のある咲きぶりから庭木としても親しまれ、5月26日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>テマリバナが象徴する意味</h2>
-    <p>テマリバナの花言葉は「誓い」です。無数の小花がまとまり合って一つの丸い花房をつくる姿が、心を一つに結ぶ約束を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>テマリバナの魅力</h2>
-    <p>テマリバナの魅力は、手毬を思わせる丸くふんわりとした花房と、初夏の緑に映える清らかな白色にあります。庭木として植えると、季節を告げる印象的な景観をつくり出します。5月26日生まれの方はもちろん、変わらぬ約束を伝える贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>テマリバナは日当たりから半日陰まで幅広い環境で育つ、丈夫な落葉低木です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月26日生まれの方はもちろん、変わらぬ約束を伝える贈り物としてもテマリバナは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">テマリバナはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に手毬のような丸い形の白い花を咲かせます。スイカズラ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">テマリバナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「誓い」という花言葉は、無数の小花がまとまり合って一つの丸い花房をつくる姿が、心を一つに結ぶ約束を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">テマリバナとアジサイはどう違いますか？</div>
-        <div class="faq-a">どちらも丸い花房をつくりますが、テマリバナは落葉低木でアジサイより開花時期が早く、花房の形もより球形に近いという違いがあります。</div>
+        <div class="faq-a">どちらも丸くまとまって咲きますが、テマリバナは手毬のように球状にまとまるのに対し、アジサイは房状に広がって咲く点で異なります。分類上も別の植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>丸くまとまって咲く、テマリバナの手毬のかたち</h2>
+    <p>枝先いっぱいに、真っ白な小花が幾つも寄り集まり、まるで手毬のような丸いかたちをつくるのがテマリバナです。一つひとつの花は控えめでも、集まることでボリューム感のある存在感を放ち、初夏の庭木として親しまれています。丸く寄り添うように咲くその姿は、しばしばアジサイと見間違えられますが、テマリバナは房状ではなく手毬状にまとまって咲く点で異なる植物です。この、寄り集まって一つの形をつくる咲き方から、テマリバナには「誓い」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">テマリバナの花言葉「誓い」の由来は？</div>
+        <div class="faq-a">小さな花が寄り集まって一つの丸いかたちをつくる咲き方が、小さな約束の積み重ねを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>枝先いっぱいに、真っ白な手毬が今日も静かに揺れています。小さな花が寄り集まって一つの丸をかたちづくるテマリバナのように、日々の小さな積み重ねこそが、変わらない関係をつくっていくのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、テマリバナから始める小さな体験</h2>
+    <p>丸く寄り添って咲く姿に背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>手毬のような丸い花をじっくり観察してみる</li>
+      <li>大切な人との約束を一つ、心の中で確かめてみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">テマリバナはどんな場所で育てられていますか？</div>
+        <div class="faq-a">初夏に白い花を咲かせる落葉低木で、ボリューム感のある咲きぶりから庭木や公園樹として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">変わらぬ約束を大切にしたい今日は、月齢や年九星もあわせて確認してみませんか。開運カレンダーでは、その日の月の満ち欠けと年九星をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな花が寄り添って一つの丸をつくる様子は、些細な積み重ねが確かな形になっていく過程を思わせます。</p>
     <ul>
-      <li>テマリバナは初夏に手毬形の白い花を咲かせる、5月26日の誕生花</li>
-      <li>花言葉は「誓い」、心を一つに結ぶ花房の姿に由来する</li>
-      <li>ふんわりとした花房と清らかな白色が魅力</li>
-      <li>幅広い環境で育つ丈夫な落葉低木</li>
+      <li>テマリバナはスイカズラ科の落葉低木で、初夏に手毬のような丸い花を咲かせる、5月26日の誕生花</li>
+      <li>花言葉は「誓い」。小さな花が寄り集まって丸をつくる咲き方に由来するとされる</li>
+      <li>ボリューム感のある白い花のまとまりが魅力</li>
+      <li>アジサイと似ているが、手毬状にまとまって咲く点で異なる植物</li>
     </ul>
   </section>
 

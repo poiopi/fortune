@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0529/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月29日の誕生花ノバラの花言葉・特徴・魅力をわかりやすく解説。「新しい旅立ち」を象徴する白や淡紅色の素朴な花の意味を紹介します。">
+  <meta name="description" content="5月29日の誕生花ノバラの花言葉・特徴・魅力をわかりやすく解説。「新しい旅立ち」という花言葉に込められた意味と、野に咲く素朴な白や淡紅色の花姿を紹介します。">
   <title>5月29日の誕生花はノバラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ノバラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白や淡紅色の素朴な花を咲かせます。バラ科の落葉低木で、野生のバラとして親しまれています。"}},
-      {"@type":"Question","name":"ノバラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「新しい旅立ち」という花言葉は、人の手を借りずとも野に力強く根を張り、自ら花を咲かせる姿に由来すると言われています。"}},
-      {"@type":"Question","name":"ノバラは今のバラの品種と関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ノバラは野生種のバラで、現在栽培されている多くの園芸品種のバラの原種・交配親として重要な役割を果たしてきました。"}}
+      {"@type":"Question","name":"ノバラはどのように利用されていますか？","acceptedAnswer":{"@type":"Answer","text":"秋につける赤い実はローズヒップと呼ばれ、ハーブティーなどに利用されることで知られています。花はバラの原種の一つとしても親しまれています。"}},
+      {"@type":"Question","name":"ノバラの花言葉「新しい旅立ち」の由来は？","acceptedAnswer":{"@type":"Answer","text":"花が終わったあとに赤い実を結び、次の季節へと姿を変えていく移り変わりが、新しい旅立ちを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ノバラはどんな場所に咲く花ですか？","acceptedAnswer":{"@type":"Answer","text":"野山や道端など、自然の中に素朴に咲く、バラ科の落葉低木です。園芸品種のバラの原種の一つとされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 29 · 誕生花</span>
     <h1>5月29日の誕生花はノバラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ノバラは、バラ科の落葉低木で、初夏に白や淡紅色の素朴な花を咲かせる5月29日の誕生花です。花言葉は「新しい旅立ち」。野生のバラです。</p>
+    <p class="art-lead">野の道を歩いていると、素朴な白や淡紅色の花にふと出会うことがあります。秋になれば赤い実を結び、ハーブティーとしても親しまれる——それがノバラです。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ノバラとは</a></li>
-      <li><a href="#meaning">ノバラが象徴する意味</a></li>
-      <li><a href="#charm">ノバラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月29日の誕生花として親しまれるノバラ</a></li>
+      <li><a href="#story">野に咲く白と淡紅、ノバラが見せる素朴な色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ノバラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ノバラとは</h2>
-    <p>ノバラは、バラ科の落葉低木で、5月29日の誕生花として知られています。初夏になると白や淡紅色の素朴な花を咲かせる野生のバラで、飾らない自然な美しさから多くの人に愛されています。</p>
-  </section>
+    <h2>5月29日の誕生花として親しまれるノバラ</h2>
+    <p>ノバラは、バラ科の落葉低木です。初夏になると、白や淡い紅色の素朴な花を野に咲かせる、野生のバラです。秋には赤い実をつけることでも知られ、5月29日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ノバラが象徴する意味</h2>
-    <p>ノバラの花言葉は「新しい旅立ち」です。人の手を借りずとも野に力強く根を張り、自ら花を咲かせる姿が、新たな一歩を踏み出す姿を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ノバラの魅力</h2>
-    <p>ノバラの魅力は、園芸品種のバラとは異なる、素朴で飾らない自然な美しさにあります。秋には赤い実をつけ、季節ごとに異なる表情を見せてくれます。5月29日生まれの方はもちろん、新たな門出を祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ノバラは日当たりの良い場所でよく育つ丈夫な低木で、特別な手入れをしなくても毎年花を咲かせます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月29日生まれの方はもちろん、新たな門出を祝う贈り物としてもノバラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノバラはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白や淡紅色の素朴な花を咲かせます。バラ科の落葉低木で、野生のバラとして親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノバラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「新しい旅立ち」という花言葉は、人の手を借りずとも野に力強く根を張り、自ら花を咲かせる姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノバラは今のバラの品種と関係がありますか？</div>
-        <div class="faq-a">はい。ノバラは野生種のバラで、現在栽培されている多くの園芸品種のバラの原種・交配親として重要な役割を果たしてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ノバラはどのように利用されていますか？</div>
+        <div class="faq-a">秋につける赤い実はローズヒップと呼ばれ、ハーブティーなどに利用されることで知られています。花はバラの原種の一つとしても親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>野に咲く白と淡紅、ノバラが見せる素朴な色</h2>
+    <p>野の道端に、飾り気のない白や淡い紅色の花をひっそりと咲かせるのがノバラです。園芸品種のバラのような華やかさはありませんが、その分だけ、風景に自然と溶け込むような素朴な美しさがあります。花が終わった秋には赤い実をつけ、ローズヒップと呼ばれるこの実はハーブティーなどに利用されることでも知られています。花から実へと姿を変えながら季節をめぐるこの移り変わりから、ノバラには「新しい旅立ち」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ノバラの花言葉「新しい旅立ち」の由来は？</div>
+        <div class="faq-a">花が終わったあとに赤い実を結び、次の季節へと姿を変えていく移り変わりが、新しい旅立ちを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>何かを終わらせることは、何かを裏切ることではありません。野に咲く素朴な花が、やがて赤い実を結んで新しい命をつなぐように、旅立ちもまた、次へと続いていくための自然な移り変わりなのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ノバラから始める小さな体験</h2>
+    <p>野に咲く素朴な花に背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>野に咲く素朴な白や淡紅色の花を探してみる</li>
+      <li>秋にはローズヒップを使ったハーブティーを試してみる</li>
+      <li>新しく始めたいことを一つ紙に書いてみる</li>
+      <li>野山を歩いて自然の中で過ごす時間を作る</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ノバラはどんな場所に咲く花ですか？</div>
+        <div class="faq-a">野山や道端など、自然の中に素朴に咲く、バラ科の落葉低木です。園芸品種のバラの原種の一つとされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">新しい一歩を踏み出したい今日は、ラッキーフードや星座もチェックしてみませんか。開運カレンダーでは、その日のラッキーフードと星座をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>野に咲く素朴な花から秋の赤い実へと移り変わっていく道のりは、旅立ちが終わりではなく続きであることを静かに物語っています。</p>
     <ul>
-      <li>ノバラは初夏に素朴な花を咲かせる、5月29日の誕生花</li>
-      <li>花言葉は「新しい旅立ち」、力強く自生する姿に由来する</li>
-      <li>飾らない自然な美しさと季節ごとの表情が魅力</li>
-      <li>日当たりの良い場所で丈夫に育つ</li>
+      <li>ノバラはバラ科の落葉低木で、初夏に白や淡紅色の花を咲かせる、5月29日の誕生花</li>
+      <li>花言葉は「新しい旅立ち」。花から実へと姿を変える移り変わりに由来するとされる</li>
+      <li>飾り気のない素朴な美しさと、野に咲く自然な佇まいが魅力</li>
+      <li>秋の赤い実はローズヒップと呼ばれ、ハーブティーなどに利用される</li>
     </ul>
   </section>
 

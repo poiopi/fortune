@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0520/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月20日の誕生花セントポーリアの花言葉・特徴・魅力をわかりやすく解説。「はぐくむ愛」を象徴する一年を通して咲き続ける花の意味を紹介します。">
+  <meta name="description" content="5月20日の誕生花セントポーリアの花言葉・特徴・魅力をわかりやすく解説。「はぐくむ愛」という花言葉に込められた意味と、一年を通して咲き続ける花の魅力を紹介します。">
   <title>5月20日の誕生花はセントポーリア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"セントポーリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して小さな花を咲かせ続けます。イワタバコ科の多年草で、愛らしく親しみやすい印象を持つ花です。"}},
-      {"@type":"Question","name":"セントポーリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「はぐくむ愛」という花言葉は、一年を通して絶えず花を咲かせ続ける様子が、変わらず注がれる愛情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"セントポーリアはなぜ「アフリカスミレ」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"アフリカ原産で、花姿がスミレに似ていることから、この愛称で呼ばれるようになりました。"}}
+      {"@type":"Question","name":"セントポーリアは家庭でどのように楽しまれていますか？","acceptedAnswer":{"@type":"Answer","text":"コンパクトな鉢植えとして室内の窓辺に置かれることが多く、季節を問わず花を楽しめる観葉植物として親しまれています。"}},
+      {"@type":"Question","name":"セントポーリアの花言葉「はぐくむ愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一年を通して絶えず花を咲かせ続ける様子が、変わらず寄り添い続ける愛情の豊かさを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"セントポーリアはなぜ「アフリカスミレ」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"アフリカ原産で、花の姿がスミレに似ていることから、この愛称で呼ばれるようになったといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 20 · 誕生花</span>
     <h1>5月20日の誕生花はセントポーリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">セントポーリアは、イワタバコ科の多年草で、一年を通して小さな花を咲かせ続ける5月20日の誕生花です。花言葉は「はぐくむ愛」。愛らしく親しみやすい印象の花です。</p>
+    <p class="art-lead">窓辺の鉢の中で、小さな花が途切れることなく咲き続けている。そんな景色に癒やされたことがある人も多いのではないでしょうか。セントポーリアは、一年を通して花を絶やさない、室内で育つ小さな植物です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>セントポーリア</dd>
     <dt>花言葉</dt><dd>はぐくむ愛</dd>
     <dt>科名</dt><dd>イワタバコ科</dd>
-    <dt>見頃</dt><dd>周年</dd>
+    <dt>見頃</dt><dd>一年を通して</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">セントポーリアとは</a></li>
-      <li><a href="#meaning">セントポーリアが象徴する意味</a></li>
-      <li><a href="#charm">セントポーリアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月20日の誕生花として親しまれるセントポーリア</a></li>
+      <li><a href="#story">一年を通して咲き続ける、セントポーリアとの暮らし</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、セントポーリアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>セントポーリアとは</h2>
-    <p>セントポーリアは、イワタバコ科の多年草で、5月20日の誕生花として知られています。一年を通して小さな花を咲かせ続け、室内でも育てやすいことから「アフリカスミレ」とも呼ばれ親しまれています。</p>
-  </section>
+    <h2>5月20日の誕生花として親しまれるセントポーリア</h2>
+    <p>セントポーリアは、イワタバコ科の多年草です。一年を通して小さな花を咲かせ続け、愛らしく親しみやすい印象から「アフリカスミレ」の愛称でも親しまれています。室内でも育てやすく、5月20日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>セントポーリアが象徴する意味</h2>
-    <p>セントポーリアの花言葉は「はぐくむ愛」です。一年を通して絶えず花を咲かせ続ける様子が、変わらず注がれる愛情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>セントポーリアの魅力</h2>
-    <p>セントポーリアの魅力は、コンパクトな株に愛らしい花を絶えず咲かせ続ける、育てる喜びを感じさせるところにあります。室内園芸の代表的な花として、幅広い世代に親しまれています。5月20日生まれの方はもちろん、育まれる愛情を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>セントポーリアは直射日光を避けた明るい室内で、乾燥気味に管理すると長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月20日生まれの方はもちろん、育まれる愛情を伝える贈り物としてもセントポーリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">セントポーリアはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して小さな花を咲かせ続けます。イワタバコ科の多年草で、愛らしく親しみやすい印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">セントポーリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「はぐくむ愛」という花言葉は、一年を通して絶えず花を咲かせ続ける様子が、変わらず注がれる愛情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">セントポーリアはなぜ「アフリカスミレ」と呼ばれるのですか？</div>
-        <div class="faq-a">アフリカ原産で、花姿がスミレに似ていることから、この愛称で呼ばれるようになりました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">セントポーリアは家庭でどのように楽しまれていますか？</div>
+        <div class="faq-a">コンパクトな鉢植えとして室内の窓辺に置かれることが多く、季節を問わず花を楽しめる観葉植物として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>一年を通して咲き続ける、セントポーリアとの暮らし</h2>
+    <p>窓辺やデスクの片隅に置かれたセントポーリアは、特別な手間をかけなくても、いつの間にか次の蕾をつけていることに気づかせてくれます。一般的な観葉植物と同様、明るい室内で管理されることが多いといわれ、一年を通して花を絶やさず楽しめるのが魅力です。毎日の暮らしの中に、絶えず何かを育てている感覚があるというのは、それだけで心を支えてくれるものかもしれません。この、途切れることなく花を咲かせ続ける姿から、セントポーリアには「はぐくむ愛」という花言葉が贈られているといわれています。それは一方的に尽くすことではなく、変わらず寄り添い続けることの豊かさを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">セントポーリアの花言葉「はぐくむ愛」の由来は？</div>
+        <div class="faq-a">一年を通して絶えず花を咲かせ続ける様子が、変わらず寄り添い続ける愛情の豊かさを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>窓辺の小さな鉢の中で、今日も新しい蕾がふくらんでいます。セントポーリアが無理なく花を咲かせ続けるように、ちょうどいい距離感を保ちながら大切な人と関わる方法もあります。力を抜いた優しさのほうが、案外長く誰かのそばに残り続けるものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、セントポーリアから始める小さな体験</h2>
+    <p>絶えず花を咲かせ続けるセントポーリアにならって、今日はこんな体験から始めてみませんか。</p>
+    <ul class="exp-list">
+      <li>一年を通して咲く鉢植えの花を育ててみる</li>
+      <li>大切な人を気遣う小さな行動を一つしてみる</li>
+      <li>小さな花を部屋に飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">セントポーリアはなぜ「アフリカスミレ」と呼ばれるのですか？</div>
+        <div class="faq-a">アフリカ原産で、花の姿がスミレに似ていることから、この愛称で呼ばれるようになったといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かをそっと支えたい今日は、今月の誕生石やラッキーナンバーもあわせて確認してみませんか。開運カレンダーでは、今月の誕生石とその日のラッキーナンバーをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>窓辺の鉢の中で、今日も途切れることなく次の蕾がふくらんでいます。誰かを想う気持ちも、こんなふうに大げさにならず、静かに続いていくものなのかもしれません。</p>
     <ul>
-      <li>セントポーリアは一年を通して花を咲かせる、5月20日の誕生花</li>
-      <li>花言葉は「はぐくむ愛」、絶えず咲き続ける様子に由来する</li>
-      <li>愛らしい花を育てる喜びが魅力</li>
-      <li>明るい室内で乾燥気味に管理するとよく育つ</li>
+      <li>セントポーリアはイワタバコ科の多年草で、一年を通して花を咲かせ続ける、5月20日の誕生花</li>
+      <li>花言葉は「はぐくむ愛」。途切れず咲き続ける姿に由来するとされる</li>
+      <li>室内でも育てやすく、暮らしの中に取り入れやすいのが魅力</li>
+      <li>「アフリカスミレ」の愛称でも親しまれている</li>
     </ul>
   </section>
 

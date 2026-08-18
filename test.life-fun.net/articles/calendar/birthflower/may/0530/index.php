@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0530/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月30日の誕生花スカビオサの花言葉・特徴・魅力をわかりやすく解説。「決心」を象徴する繊細に咲く花の意味を紹介します。">
+  <meta name="description" content="5月30日の誕生花スカビオサの花言葉・特徴・魅力をわかりやすく解説。「決心」という花言葉に込められた意味と、初夏から秋まで長く咲き続ける繊細な花姿を紹介します。">
   <title>5月30日の誕生花はスカビオサ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スカビオサはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から秋にかけて繊細な花を咲かせます。スイカズラ科の植物で、控えめで上品な印象を持つ花です。"}},
-      {"@type":"Question","name":"スカビオサの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「決心」という花言葉は、細い茎の先で風に揺れながらも、まっすぐに花を咲かせ続ける姿が、揺るがない決意を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"スカビオサはなぜ「マツムシソウ」とも呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"秋にマツムシが鳴く頃に咲くことから、日本では古くから「マツムシソウ」の名前で親しまれてきました。"}}
+      {"@type":"Question","name":"スカビオサはどれくらいの期間、花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から秋にかけて、長い期間にわたって次々と花を咲かせ続けます。"}},
+      {"@type":"Question","name":"スカビオサの花言葉「決心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一つひとつの花が長く咲き続ける粘り強さが、静かに固められた決意を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"スカビオサはどんな環境でよく育ちますか？","acceptedAnswer":{"@type":"Answer","text":"日当たりのよい場所を好む、スイカズラ科の植物です。切り花としても長く楽しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 30 · 誕生花</span>
     <h1>5月30日の誕生花はスカビオサ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スカビオサは、スイカズラ科の植物で、初夏から秋に繊細な花を咲かせる5月30日の誕生花です。花言葉は「決心」。控えめで上品な印象の花です。</p>
+    <p class="art-lead">繊細な花びらが、風に揺れながらもどこか凛としています。スカビオサは、初夏から秋にかけて長く咲き続ける、控えめで上品な花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スカビオサとは</a></li>
-      <li><a href="#meaning">スカビオサが象徴する意味</a></li>
-      <li><a href="#charm">スカビオサの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月30日の誕生花として親しまれるスカビオサ</a></li>
+      <li><a href="#story">風にそよぐ繊細な花びら、スカビオサの形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スカビオサから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スカビオサとは</h2>
-    <p>スカビオサは、スイカズラ科の植物で、5月30日の誕生花として知られています。初夏から秋にかけて繊細な花を咲かせ、控えめで上品な印象から「マツムシソウ」の名でも親しまれています。</p>
-  </section>
+    <h2>5月30日の誕生花として親しまれるスカビオサ</h2>
+    <p>スカビオサは、スイカズラ科の植物です。初夏から秋にかけて、繊細で上品な花を長く咲かせ続けます。控えめながらも凛とした佇まいから、5月30日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スカビオサが象徴する意味</h2>
-    <p>スカビオサの花言葉は「決心」です。細い茎の先で風に揺れながらも、まっすぐに花を咲かせ続ける姿が、揺るがない決意を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スカビオサの魅力</h2>
-    <p>スカビオサの魅力は、繊細な花びらと落ち着いた色合いが織りなす、上品で奥ゆかしい美しさにあります。切り花としても人気があり、長く咲き続けることから花壇にも重宝されます。5月30日生まれの方はもちろん、揺るがない決意を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スカビオサは日当たりと水はけの良い場所を好み、丈夫でよく育ちます。花がら摘みで長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月30日生まれの方はもちろん、揺るがない決意を伝える贈り物としてもスカビオサは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スカビオサはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から秋にかけて繊細な花を咲かせます。スイカズラ科の植物で、控えめで上品な印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スカビオサの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「決心」という花言葉は、細い茎の先で風に揺れながらも、まっすぐに花を咲かせ続ける姿が、揺るがない決意を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スカビオサはなぜ「マツムシソウ」とも呼ばれるのですか？</div>
-        <div class="faq-a">秋にマツムシが鳴く頃に咲くことから、日本では古くから「マツムシソウ」の名前で親しまれてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スカビオサはどれくらいの期間、花を楽しめますか？</div>
+        <div class="faq-a">初夏から秋にかけて、長い期間にわたって次々と花を咲かせ続けます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>風にそよぐ繊細な花びら、スカビオサの形</h2>
+    <p>繊細な花びらを幾重にも重ね、風にそよぎながらもどこか凛とした佇まいを見せるのがスカビオサです。中心部がふっくらと盛り上がった独特の形をしており、初夏から秋にかけて長い間、次々と花を咲かせ続けます。派手さはなくとも、ひとつひとつの花が長く咲き続けるその粘り強さから、スカビオサには「決心」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スカビオサの花言葉「決心」の由来は？</div>
+        <div class="faq-a">一つひとつの花が長く咲き続ける粘り強さが、静かに固められた決意を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>繊細な花びらの奥に、静かな芯の強さが宿っています。風に揺れながらも凛とした花びらを保つスカビオサのように、静かな時間の中でこそ、本当の覚悟は育っていくものなのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スカビオサから始める小さな体験</h2>
+    <p>凛と咲き続ける姿に背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>繊細な花をじっくり観察してみる</li>
+      <li>迷っていたことを一つ、今日決めてみる</li>
+      <li>控えめで上品なものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スカビオサはどんな環境でよく育ちますか？</div>
+        <div class="faq-a">日当たりのよい場所を好む、スイカズラ科の植物です。切り花としても長く楽しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かに心を定めたい今日は、おすすめアイテムやラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、その日のおすすめアイテムとラッキープレイスをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>派手ではないけれど凛と咲き続けるスカビオサを見ると、静かな決意にも十分な強さがあるのだと気づかされます。</p>
     <ul>
-      <li>スカビオサは初夏から秋に繊細な花を咲かせる、5月30日の誕生花</li>
-      <li>花言葉は「決心」、揺るがない決意を思わせる花姿に由来する</li>
-      <li>上品で奥ゆかしい花色と長い開花期間が魅力</li>
-      <li>日当たりと水はけの良い場所でよく育つ</li>
+      <li>スカビオサはスイカズラ科の植物で、初夏から秋にかけて花を咲かせ続ける、5月30日の誕生花</li>
+      <li>花言葉は「決心」。長く咲き続ける粘り強さに由来するとされる</li>
+      <li>繊細な花びらと、控えめながら凛とした佇まいが魅力</li>
+      <li>切り花としても長く楽しまれている</li>
     </ul>
   </section>
 

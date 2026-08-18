@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0528/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月28日の誕生花ハナアオイの花言葉・特徴・魅力をわかりやすく解説。「ゆれる心」を象徴する風に揺れる淡紫色の花の意味を紹介します。">
+  <meta name="description" content="5月28日の誕生花ハナアオイの花言葉・特徴・魅力をわかりやすく解説。「ゆれる心」という花言葉に込められた意味と、風に揺れる淡い紫色の花姿を紹介します。">
   <title>5月28日の誕生花はハナアオイ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハナアオイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に淡紫色の花を咲かせます。アオイ科の多年草で、風に揺れる柔らかな花姿が特徴です。"}},
-      {"@type":"Question","name":"ハナアオイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ゆれる心」という花言葉は、薄く柔らかな花びらが風に揺れる様子が、揺れ動く繊細な心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ハナアオイはハイビスカスの仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。同じアオイ科の植物で、花の形にも共通した特徴が見られます。"}}
+      {"@type":"Question","name":"ハナアオイとタチアオイはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらもアオイ科ですが、ハナアオイは淡い紫色の花を多年草としてつけるのに対し、タチアオイは背の高い茎に沿って大輪の花を咲かせる点で異なります。"}},
+      {"@type":"Question","name":"ハナアオイの花言葉「ゆれる心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"風が吹くたびに淡い紫色の花びらがゆらゆらと揺れる姿が、揺れ動く気持ちを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ハナアオイはどこが原産の花ですか？","acceptedAnswer":{"@type":"Answer","text":"ヨーロッパ原産の植物で、アオイに似た花の形が名前の由来になったといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 28 · 誕生花</span>
     <h1>5月28日の誕生花はハナアオイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハナアオイは、アオイ科の多年草で、夏に淡紫色の花を咲かせる5月28日の誕生花です。花言葉は「ゆれる心」。</p>
+    <p class="art-lead">ヨーロッパの野に広がる淡い紫色は、遠くから見るとアオイの花畑のようにも映るといいます。ハナアオイは、その名の通りアオイに似た花姿を持つ、夏に咲く植物です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハナアオイとは</a></li>
-      <li><a href="#meaning">ハナアオイが象徴する意味</a></li>
-      <li><a href="#charm">ハナアオイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月28日の誕生花として親しまれるハナアオイ</a></li>
+      <li><a href="#story">淡い紫が揺れる、ハナアオイの色合い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハナアオイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハナアオイとは</h2>
-    <p>ハナアオイは、アオイ科の多年草で、5月28日の誕生花として知られています。夏になると淡紫色の花を咲かせ、風にそよぐ柔らかな花びらが涼しげな印象を与えます。</p>
-  </section>
+    <h2>5月28日の誕生花として親しまれるハナアオイ</h2>
+    <p>ハナアオイは、アオイ科の多年草です。夏になると、アオイに似た淡い紫色の花を咲かせるヨーロッパ原産の植物です。その名の由来となった花姿から、5月28日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハナアオイが象徴する意味</h2>
-    <p>ハナアオイの花言葉は「ゆれる心」です。薄く柔らかな花びらが風に揺れる様子が、揺れ動く繊細な心情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハナアオイの魅力</h2>
-    <p>ハナアオイの魅力は、淡紫色の柔らかな花色と、風に揺れる軽やかな花姿にあります。すっと伸びた草丈が庭にリズムを生み、夏らしい涼やかさを添えてくれます。5月28日生まれの方はもちろん、揺れ動く想いを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハナアオイは日当たりの良い場所を好み、丈夫でよく育つ多年草です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月28日生まれの方はもちろん、揺れ動く想いを伝える贈り物としてもハナアオイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナアオイはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に淡紫色の花を咲かせます。アオイ科の多年草で、風に揺れる柔らかな花姿が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナアオイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「ゆれる心」という花言葉は、薄く柔らかな花びらが風に揺れる様子が、揺れ動く繊細な心情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナアオイはハイビスカスの仲間ですか？</div>
-        <div class="faq-a">はい。同じアオイ科の植物で、花の形にも共通した特徴が見られます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ハナアオイとタチアオイはどう違いますか？</div>
+        <div class="faq-a">どちらもアオイ科ですが、ハナアオイは淡い紫色の花を多年草としてつけるのに対し、タチアオイは背の高い茎に沿って大輪の花を咲かせる点で異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>淡い紫が揺れる、ハナアオイの色合い</h2>
+    <p>淡い紫色の花びらを、風が吹くたびにゆらゆらと揺らすのがハナアオイです。この色合いは強く主張することなく、けれど確かな存在感を持って周囲の緑に映えます。アオイに似た花の形からその名がついたといわれ、ヨーロッパ生まれのこの花は、揺れながらも決してしおれることのない、しなやかな咲き方を見せます。この、風に揺れながらも咲き続ける様子から、ハナアオイには「ゆれる心」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナアオイの花言葉「ゆれる心」の由来は？</div>
+        <div class="faq-a">風が吹くたびに淡い紫色の花びらがゆらゆらと揺れる姿が、揺れ動く気持ちを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心が揺れることを、弱さだと感じてしまう瞬間があります。風に吹かれるたびに揺れるハナアオイの淡い紫色は、しなやかであることの美しさを静かに映し出しているようです。揺れながらも咲き続けるその姿に、心が定まらない日があってもいいのだと、そっと肯定されているように感じられます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハナアオイから始める小さな体験</h2>
+    <p>風にゆれる淡い色合いに背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>淡紫色の花を探して観察してみる</li>
+      <li>アオイとの花の形の似ているところを見比べてみる</li>
+      <li>揺れ動く気持ちを一つ、そのまま認めてみる</li>
+      <li>淡い紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナアオイはどこが原産の花ですか？</div>
+        <div class="faq-a">ヨーロッパ原産の植物で、アオイに似た花の形が名前の由来になったといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">揺れ動く心を受け止めたい今日は、今月の誕生石や月九星もあわせて確認してみませんか。開運カレンダーでは、今月の誕生石とその日の月九星をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>風にたおやかに揺れる淡い紫色を見ていると、心が定まらない日があってもいいのだと思えてきます。</p>
     <ul>
-      <li>ハナアオイは夏に淡紫色の花を咲かせる、5月28日の誕生花</li>
-      <li>花言葉は「ゆれる心」、風に揺れる花びらに由来する</li>
-      <li>柔らかな花色と軽やかな花姿が魅力</li>
-      <li>日当たりの良い場所で丈夫に育つ</li>
+      <li>ハナアオイはアオイ科の多年草で、夏に淡い紫色の花を咲かせる、5月28日の誕生花</li>
+      <li>花言葉は「ゆれる心」。風に揺れながらも咲き続ける姿に由来するとされる</li>
+      <li>アオイに似た花の形と、しなやかな咲き方が魅力</li>
+      <li>ヨーロッパ原産で、タチアオイとは異なる植物</li>
     </ul>
   </section>
 

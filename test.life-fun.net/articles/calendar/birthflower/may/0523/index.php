@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0523/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月23日の誕生花タイムの花言葉・特徴・魅力をわかりやすく解説。「活発」を象徴する爽やかな香りを持つハーブの意味を紹介します。">
+  <meta name="description" content="5月23日の誕生花タイムの花言葉・特徴・魅力をわかりやすく解説。「活発」という花言葉に込められた意味と、暮らしの中で親しまれてきたハーブとしての魅力を紹介します。">
   <title>5月23日の誕生花はタイム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"タイムはいつ頃花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に小さな花を咲かせます。シソ科の常緑小低木で、爽やかな香りと素朴な佇まいが特徴のハーブです。"}},
-      {"@type":"Question","name":"タイムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「活発」という花言葉は、地面を這うように旺盛に茂り、生き生きと育つ姿に由来すると言われています。"}},
-      {"@type":"Question","name":"タイムはどんな料理に使われますか？","acceptedAnswer":{"@type":"Answer","text":"肉料理や魚料理の臭み消し、煮込み料理の香り付けなどに広く使われ、爽やかな香りが料理を引き立ててくれます。"}}
+      {"@type":"Question","name":"タイムはどのように暮らしの中で使われていますか？","acceptedAnswer":{"@type":"Answer","text":"刻んだ葉を肉料理の香り付けや臭み消しとして加えるなど、料理に取り入れられてきたハーブとして知られています。"}},
+      {"@type":"Question","name":"タイムの花言葉「活発」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな体で爽やかな香りをしっかりと放ち、暮らしの中で生き生きと活用されてきたことに由来するといわれています。"}},
+      {"@type":"Question","name":"タイムはどんな環境で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりのよい場所を好む、初夏に小さな花を咲かせるシソ科の常緑小低木です。鉢植えでも育てやすいハーブとして親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 23 · 誕生花</span>
     <h1>5月23日の誕生花はタイム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">タイムは、シソ科の常緑小低木で、初夏に小さな花を咲かせる5月23日の誕生花です。花言葉は「活発」。爽やかな香りと素朴な佇まいが特徴のハーブです。</p>
+    <p class="art-lead">刻んだ葉をひとつまみ料理に添えると、爽やかな香りがふわりと立ちのぼります。タイムは、そんな暮らしの中で古くから使われてきた、初夏に小さな花を咲かせるハーブです。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">タイムとは</a></li>
-      <li><a href="#meaning">タイムが象徴する意味</a></li>
-      <li><a href="#charm">タイムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月23日の誕生花として親しまれるタイム</a></li>
+      <li><a href="#story">刻んで、煮出して。タイムが寄り添う暮らしの場面</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、タイムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>タイムとは</h2>
-    <p>タイムは、シソ科の常緑小低木で、5月23日の誕生花として知られています。初夏になると小さな花を咲かせるハーブで、爽やかな香りと素朴な佇まいから、料理やガーデニングに幅広く利用されています。</p>
-  </section>
+    <h2>5月23日の誕生花として親しまれるタイム</h2>
+    <p>タイムは、シソ科の常緑小低木です。初夏になると小さな花を咲かせるハーブとして知られ、爽やかな香りと素朴な佇まいが特徴です。料理や暮らしの中で親しまれてきたことから、5月23日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>タイムが象徴する意味</h2>
-    <p>タイムの花言葉は「活発」です。地面を這うように旺盛に茂り、生き生きと育つ姿に由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>タイムの魅力</h2>
-    <p>タイムの魅力は、小さな花と葉から漂う爽やかな香り、そして丈夫でよく茂る生命力にあります。グランドカバーやハーブガーデンの定番として、庭に爽やかな彩りを添えてくれます。5月23日生まれの方はもちろん、元気を届ける贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>タイムは日当たりと水はけの良い場所を好み、乾燥に強く丈夫に育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月23日生まれの方はもちろん、元気を届ける贈り物としてもタイムは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タイムはいつ頃花を咲かせますか？</div>
-        <div class="faq-a">初夏に小さな花を咲かせます。シソ科の常緑小低木で、爽やかな香りと素朴な佇まいが特徴のハーブです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タイムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「活発」という花言葉は、地面を這うように旺盛に茂り、生き生きと育つ姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タイムはどんな料理に使われますか？</div>
-        <div class="faq-a">肉料理や魚料理の臭み消し、煮込み料理の香り付けなどに広く使われ、爽やかな香りが料理を引き立ててくれます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">タイムはどのように暮らしの中で使われていますか？</div>
+        <div class="faq-a">刻んだ葉を肉料理の香り付けや臭み消しとして加えるなど、料理に取り入れられてきたハーブとして知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>刻んで、煮出して。タイムが寄り添う暮らしの場面</h2>
+    <p>刻んだタイムの葉をひとつまみ料理に加えると、爽やかな香りがふわりと立ちのぼります。ハーブとして古くから親しまれてきたタイムは、肉料理の臭み消しや、香り付けとして食卓に取り入れられてきました。台所の片隅に鉢を置いておけば、必要なときにさっと手を伸ばせる、暮らしに寄り添う存在でもあります。こうした、日常の中で気軽に取り入れられる爽やかさと、小さな体でしっかり香りを放つ生命力から、タイムには「活発」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タイムの花言葉「活発」の由来は？</div>
+        <div class="faq-a">小さな体で爽やかな香りをしっかりと放ち、暮らしの中で生き生きと活用されてきたことに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>じっとしているだけでは、気持ちは晴れないことがあります。刻んだ葉から立ちのぼる爽やかな香りのように、体を少し動かすだけで、心は驚くほど軽くなるものです。小さな一歩を踏み出す勇気は、案外すぐそばにあるのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、タイムから始める小さな体験</h2>
+    <p>爽やかな香りに背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>ハーブとしてのタイムの香りを確かめてみる</li>
+      <li>体を動かして気分をリフレッシュしてみる</li>
+      <li>爽やかな香りのものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タイムはどんな環境で育てやすいですか？</div>
+        <div class="faq-a">日当たりのよい場所を好む、初夏に小さな花を咲かせるシソ科の常緑小低木です。鉢植えでも育てやすいハーブとして親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">軽やかに動き出したい今日は、おすすめの行動やラッキーフードもチェックしてみませんか。開運カレンダーでは、その日のおすすめの行動とラッキーフードをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>爽やかな香りを吸い込むと、体がひとりでに軽く弾みだすような気がしてきます。</p>
     <ul>
-      <li>タイムは初夏に小さな花を咲かせる、5月23日の誕生花</li>
-      <li>花言葉は「活発」、旺盛に茂り生き生きと育つ姿に由来する</li>
+      <li>タイムはシソ科の常緑小低木で、初夏に小さな花を咲かせる、5月23日の誕生花</li>
+      <li>花言葉は「活発」。暮らしの中で生き生きと使われてきたことに由来するとされる</li>
       <li>爽やかな香りと素朴な佇まいが魅力</li>
-      <li>日当たりが良く乾燥に強い場所でよく育つ</li>
+      <li>料理の香り付けや臭み消しとして親しまれてきたハーブ</li>
     </ul>
   </section>
 

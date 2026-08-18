@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0519/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月19日の誕生花ブライダルベールの花言葉・特徴・魅力をわかりやすく解説。「幸福」を象徴する白い小花を無数に咲かせる花の意味を紹介します。">
+  <meta name="description" content="5月19日の誕生花ブライダルベールの花言葉・特徴・魅力をわかりやすく解説。「幸福」という花言葉に込められた意味と、無数に咲く白い小花の繊細な美しさを紹介します。">
   <title>5月19日の誕生花はブライダルベール｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ブライダルベールはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から秋にかけて白い小花を無数に咲かせます。ツユクサ科の多年草で、繊細な印象を持つ花です。"}},
-      {"@type":"Question","name":"ブライダルベールの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「幸福」という花言葉は、純白の小花が無数に群れ咲く様子が、幸せに満ちた門出を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ブライダルベールという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"無数の白い小花が広がって咲く姿が、花嫁が身につけるベールのように見えることから、この名前が付けられたと言われています。"}}
+      {"@type":"Question","name":"ブライダルベールという名前の由来は？","acceptedAnswer":{"@type":"Answer","text":"無数の白い小花が広がって咲く姿が、花嫁の身につけるベールのように見えることから、この名前が付けられたといわれています。"}},
+      {"@type":"Question","name":"ブライダルベールの花言葉「幸福」の由来は？","acceptedAnswer":{"@type":"Answer","text":"無数の白い小花が集まって咲く様子が、小さな喜びの積み重ねがもたらす満ち足りた幸福を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ブライダルベールはどんな飾り方が楽しまれていますか？","acceptedAnswer":{"@type":"Answer","text":"細い茎がしなやかに垂れることから、吊り鉢やハンギングバスケットに仕立てて、部屋や庭を軽やかに彩る飾り方が楽しまれています。"}}
     ]
   }
   </script>
@@ -129,14 +139,13 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 19 · 誕生花</span>
     <h1>5月19日の誕生花はブライダルベール<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ブライダルベールは、ツユクサ科の多年草で、白い小花を無数に咲かせる5月19日の誕生花です。花言葉は「幸福」。繊細な印象の花です。</p>
+    <p class="art-lead">細い茎の先に、白い小花が霧のように広がって咲く時期を迎えました。ブライダルベールは、一輪一輪は控えめでも、集まることで空間をふわりと満たしていきます。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ブライダルベール</dd>
     <dt>花言葉</dt><dd>幸福</dd>
     <dt>科名</dt><dd>ツユクサ科</dd>
-    <dt>見頃</dt><dd>春〜秋</dd>
   </dl>
 
   <?php
@@ -150,66 +159,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ブライダルベールとは</a></li>
-      <li><a href="#meaning">ブライダルベールが象徴する意味</a></li>
-      <li><a href="#charm">ブライダルベールの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月19日の誕生花として親しまれるブライダルベール</a></li>
+      <li><a href="#story">白いレースのカーテンのように、ブライダルベールが満たす景色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ブライダルベールから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ブライダルベールとは</h2>
-    <p>ブライダルベールは、ツユクサ科の多年草で、5月19日の誕生花として知られています。白い小花を無数に咲かせ、その姿が花嫁のベールを思わせることから、この名前で親しまれています。</p>
-  </section>
+    <h2>5月19日の誕生花として親しまれるブライダルベール</h2>
+    <p>ブライダルベールは、ツユクサ科の多年草です。細い茎から無数の白い小花を咲かせ、繊細で軽やかな印象を与えます。吊り鉢やハンギングバスケットに仕立てられることが多く、5月19日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ブライダルベールが象徴する意味</h2>
-    <p>ブライダルベールの花言葉は「幸福」です。純白の小花が無数に群れ咲く様子が、幸せに満ちた門出を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ブライダルベールの魅力</h2>
-    <p>ブライダルベールの魅力は、細い茎から無数に咲く白い小花が生み出す、軽やかでロマンチックな雰囲気にあります。ハンギングバスケットや吊り鉢に仕立てると、その繊細さがより一層引き立ちます。5月19日生まれの方はもちろん、幸せな門出を祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ブライダルベールは明るい日陰でも育つ丈夫な植物で、乾燥にもある程度耐えます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月19日生まれの方はもちろん、幸せな門出を祝う贈り物としてもブライダルベールは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブライダルベールはいつ頃咲きますか？</div>
-        <div class="faq-a">春から秋にかけて白い小花を無数に咲かせます。ツユクサ科の多年草で、繊細な印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブライダルベールの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「幸福」という花言葉は、純白の小花が無数に群れ咲く様子が、幸せに満ちた門出を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブライダルベールという名前の由来は何ですか？</div>
-        <div class="faq-a">無数の白い小花が広がって咲く姿が、花嫁が身につけるベールのように見えることから、この名前が付けられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブライダルベールという名前の由来は？</div>
+        <div class="faq-a">無数の白い小花が広がって咲く姿が、花嫁の身につけるベールのように見えることから、この名前が付けられたといわれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白いレースのカーテンのように、ブライダルベールが満たす景色</h2>
+    <p>白いレースのカーテンのように、細い茎から無数の白い小花がふわりと垂れ下がる様子は、一輪ずつを目で追うよりも、群れ全体を眺めたときにこそその美しさが際立ちます。一つひとつの花は決して大きくありませんが、数え切れないほど集まることで、空間全体をやわらかな白で満たしていくのです。この、無数の小花が織りなす満ち足りた景色から、ブライダルベールには「幸福」という花言葉が贈られているといわれています。幸福とは、大きな出来事だけがもたらすものではなく、こうした小さな積み重ねの中にも静かに存在しているのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ブライダルベールの花言葉「幸福」の由来は？</div>
+        <div class="faq-a">無数の白い小花が集まって咲く様子が、小さな喜びの積み重ねがもたらす満ち足りた幸福を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>無数の白い小花が、今日もふわりと風に揺れています。小さな花が集まって一つの景色をつくるように、幸福もまた、ささやかな瞬間の積み重ねでできているのかもしれません。見過ごしていた小さな喜びは、きっとまだそこに、静かに残っています。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ブライダルベールから始める小さな体験</h2>
+    <p>無数の小花が生む景色にならって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>無数の白い小花をじっくり観察してみる</li>
+      <li>今日の小さな幸せを一つ見つけてみる</li>
+      <li>白い小さな花を束にして飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ブライダルベールはどんな飾り方が楽しまれていますか？</div>
+        <div class="faq-a">細い茎がしなやかに垂れることから、吊り鉢やハンギングバスケットに仕立てて、部屋や庭を軽やかに彩る飾り方が楽しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">満ち足りた幸福感に包まれたい今日は、月齢やおすすめアイテムもチェックしてみませんか。開運カレンダーでは、その日の月の満ち欠けとおすすめアイテムをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>茎いっぱいに広がる白い小花を眺めていると、幸福とは大きな出来事の到来を待つものではなく、日々の中にすでに散らばっているものなのだと感じられます。</p>
     <ul>
-      <li>ブライダルベールは春から秋に白い小花を咲かせる、5月19日の誕生花</li>
-      <li>花言葉は「幸福」、幸せな門出を思わせる花姿に由来する</li>
-      <li>無数の小花が生み出すロマンチックな雰囲気が魅力</li>
-      <li>明るい日陰でも育つ丈夫な植物</li>
+      <li>ブライダルベールはツユクサ科の多年草で、細い茎に白い小花を無数に咲かせる、5月19日の誕生花</li>
+      <li>花言葉は「幸福」。小さな花の積み重ねが満ち足りた景色をつくることに由来するとされる</li>
+      <li>群れ咲く姿全体を眺めたときに際立つ、繊細な美しさが魅力</li>
+      <li>吊り鉢やハンギングバスケットなど、軽やかな飾り方が楽しまれている</li>
     </ul>
   </section>
 

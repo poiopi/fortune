@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0517/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月17日の誕生花ベロニカの花言葉・特徴・魅力をわかりやすく解説。「忠実」を象徴する細長い花穂を咲かせる花の意味を紹介します。">
+  <meta name="description" content="5月17日の誕生花ベロニカの花言葉・特徴・魅力をわかりやすく解説。「忠実」という花言葉に込められた意味と、まっすぐに伸びる花穂の涼やかな美しさを紹介します。">
   <title>5月17日の誕生花はベロニカ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ベロニカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に細長い花穂を咲かせます。オオバコ科の多年草で、爽やかで涼しげな印象を持つ花です。"}},
-      {"@type":"Question","name":"ベロニカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「忠実」という花言葉は、まっすぐに伸びた花穂が、一途に信念を貫く姿を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ベロニカという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"聖女ベロニカの名前にちなむとされ、キリスト教にまつわる言い伝えが花名の由来になったと言われています。"}}
+      {"@type":"Question","name":"ベロニカはどんな科に分類される植物ですか？","acceptedAnswer":{"@type":"Answer","text":"オオバコ科の多年草に分類されます。初夏になると細長い花穂を伸ばし、小さな花を密に連ねて咲かせる、涼しげな印象の花です。"}},
+      {"@type":"Question","name":"ベロニカの花言葉「忠実」の由来は？","acceptedAnswer":{"@type":"Answer","text":"風が吹いてもたわむことなく、まっすぐに伸び続ける花穂の姿が、決めたことを静かに守り抜く在り方を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ベロニカを贈り物にするのはどんな時に向いていますか？","acceptedAnswer":{"@type":"Answer","text":"「忠実」という花言葉から、変わらぬ信頼や誠実な気持ちを伝えたい場面の贈り物に向いているといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 17 · 誕生花</span>
     <h1>5月17日の誕生花はベロニカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ベロニカは、オオバコ科の多年草で、初夏に細長い花穂を咲かせる5月17日の誕生花です。花言葉は「忠実」。爽やかで涼しげな印象の花です。</p>
+    <p class="art-lead">青空へ向かって、細く涼やかな花穂がまっすぐに伸びる季節になりました。ベロニカは、小さな花を穂状に連ねながら、風が吹いてもぶれることなく前を向いて咲き続けます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ベロニカとは</a></li>
-      <li><a href="#meaning">ベロニカが象徴する意味</a></li>
-      <li><a href="#charm">ベロニカの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月17日の誕生花として親しまれるベロニカ</a></li>
+      <li><a href="#story">まっすぐ伸びる花穂が語る、ベロニカの忠実さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ベロニカから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ベロニカとは</h2>
-    <p>ベロニカは、オオバコ科の多年草で、5月17日の誕生花として知られています。初夏になると細長い花穂をまっすぐに伸ばし、爽やかで涼しげな印象を庭にもたらします。</p>
-  </section>
+    <h2>5月17日の誕生花として親しまれるベロニカ</h2>
+    <p>ベロニカは、オオバコ科の多年草です。初夏になると、細長い花穂に小さな花を密に連ねて咲かせ、爽やかで涼しげな印象を与えます。すっと伸びた花穂が風にそよぐ姿は、公園の花壇や道端でもよく見かけられ、5月17日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ベロニカが象徴する意味</h2>
-    <p>ベロニカの花言葉は「忠実」です。まっすぐに伸びた花穂が、一途に信念を貫く姿を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ベロニカの魅力</h2>
-    <p>ベロニカの魅力は、まっすぐに伸びる花穂の凛とした美しさと、青や紫を中心とした涼やかな花色にあります。花壇に高さを出すアクセントとしても重宝されます。5月17日生まれの方はもちろん、変わらぬ忠誠を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ベロニカは日当たりと水はけの良い場所を好み、丈夫でよく育つ多年草です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月17日生まれの方はもちろん、変わらぬ忠誠を伝える贈り物としてもベロニカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベロニカはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に細長い花穂を咲かせます。オオバコ科の多年草で、爽やかで涼しげな印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベロニカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「忠実」という花言葉は、まっすぐに伸びた花穂が、一途に信念を貫く姿を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベロニカという名前の由来は何ですか？</div>
-        <div class="faq-a">聖女ベロニカの名前にちなむとされ、キリスト教にまつわる言い伝えが花名の由来になったと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ベロニカはどんな科に分類される植物ですか？</div>
+        <div class="faq-a">オオバコ科の多年草に分類されます。初夏になると細長い花穂を伸ばし、小さな花を密に連ねて咲かせる、涼しげな印象の花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>まっすぐ伸びる花穂が語る、ベロニカの忠実さ</h2>
+    <p>目を凝らすと、ベロニカの花穂には米粒ほどの小さな花が隙間なく並んでいることに気づきます。一本の茎から幾つもの花穂が伸び、それぞれがまっすぐ上を向いて姿勢を崩さない様子は、群れの中にいながらも自分の軸を保っているようにも見えます。爽やかな青紫の色合いも、涼しさとともに凛とした佇まいを添えています。風が吹いてもたわむことのないこの姿から、ベロニカには「忠実」という花言葉が贈られているといわれています。決められた約束を、誰に見られていなくても静かに守り続ける。そんな在り方を、この花穂は静かに教えてくれているのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベロニカの花言葉「忠実」の由来は？</div>
+        <div class="faq-a">風が吹いてもたわむことなく、まっすぐに伸び続ける花穂の姿が、決めたことを静かに守り抜く在り方を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰にも見られていない時間にこそ、その人の本当の姿が表れるといわれます。ベロニカの花穂がまっすぐ伸び続けるように、小さな約束を守り続けることは、決して当たり前のことではありません。今日交わす言葉のひとつが、これからの信頼を静かに育てていくのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ベロニカから始める小さな体験</h2>
+    <p>花穂の涼やかさに背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>細長い花穂をじっくり観察してみる</li>
+      <li>約束したことを一つ、きちんと守ってみる</li>
+      <li>爽やかな色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベロニカを贈り物にするのはどんな時に向いていますか？</div>
+        <div class="faq-a">「忠実」という花言葉から、変わらぬ信頼や誠実な気持ちを伝えたい場面の贈り物に向いているといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かに信頼を寄せたい今日は、六曜やラッキープレイスもチェックしてみませんか。開運カレンダーでは、その日の六曜とラッキープレイスをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>風がどれだけ吹いても姿勢を崩さないベロニカの花穂の潔さは、誰にも見られていない場面でこそ律儀でありたいと思わせてくれます。</p>
     <ul>
-      <li>ベロニカは初夏に細長い花穂を咲かせる、5月17日の誕生花</li>
-      <li>花言葉は「忠実」、まっすぐ伸びる花穂に由来する</li>
-      <li>凛とした花穂と涼やかな花色が魅力</li>
-      <li>日当たりと水はけの良い場所でよく育つ</li>
+      <li>ベロニカはオオバコ科の多年草で、初夏に細長い花穂を咲かせる、5月17日の誕生花</li>
+      <li>花言葉は「忠実」。まっすぐ伸び続ける花穂の姿に由来するとされる</li>
+      <li>密に並ぶ小さな花と涼やかな色合いが魅力</li>
+      <li>変わらぬ信頼を伝えたい場面の贈り物にも向いている</li>
     </ul>
   </section>
 
