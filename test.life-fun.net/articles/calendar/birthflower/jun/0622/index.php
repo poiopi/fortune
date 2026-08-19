@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0622/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月22日の誕生花アマリリスの花言葉・特徴・魅力をわかりやすく解説。「プライド」を象徴する大輪でラッパ状の花の意味を紹介します。">
+  <meta name="description" content="6月22日の誕生花アマリリスの花言葉・特徴・魅力をわかりやすく解説。大輪でラッパ状の花を咲かせる、ヒガンバナ科「プライド」の花を紹介します。">
   <title>6月22日の誕生花はアマリリス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アマリリスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に大輪でラッパ状の花を咲かせます。ヒガンバナ科の球根植物です。"}},
-      {"@type":"Question","name":"アマリリスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「プライド」という花言葉は、大輪の花をまっすぐに堂々と咲かせる姿が誇り高さを連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"アマリリスはどんな花色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤や白、ピンクなど多彩な花色があり、品種によって咲き方や大きさも異なります。"}}
+      {"@type":"Question","name":"アマリリスはなぜ存在感があると言われるのですか？","acceptedAnswer":{"@type":"Answer","text":"初夏に大輪のラッパ状の花を咲かせる球根植物で、堂々とした華やかさが空間に存在感をもたらします。"}},
+      {"@type":"Question","name":"アマリリスの花言葉「プライド」の由来は？","acceptedAnswer":{"@type":"Answer","text":"大輪の花がまっすぐに顔を上げて咲く、堂々とした咲きぶりに由来すると伝えられています。"}},
+      {"@type":"Question","name":"アマリリスはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"鉢植えで室内を彩ったり、切り花として飾ったりと、一輪でも存在感を放つ花として楽しめます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 22 · 誕生花</span>
     <h1>6月22日の誕生花はアマリリス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アマリリスは、ヒガンバナ科の球根植物で、初夏に大輪でラッパ状の花を咲かせる6月22日の誕生花です。花言葉は「プライド」。堂々とした華やかさを持つ花です。</p>
+    <p class="art-lead">大きく開いたラッパ状の花が、まっすぐにこちらを見つめるように咲いています。アマリリスは、大きな球根からひと際目を引く花を咲かせる、ヒガンバナ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アマリリスとは</a></li>
-      <li><a href="#meaning">アマリリスが象徴する意味</a></li>
-      <li><a href="#charm">アマリリスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月22日の誕生花として親しまれるアマリリス</a></li>
+      <li><a href="#story">まっすぐに顔を上げる、アマリリスの咲きぶり</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アマリリスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アマリリスとは</h2>
-    <p>アマリリスは、ヒガンバナ科の球根植物で、6月22日の誕生花として知られています。初夏になると大輪でラッパ状の花を咲かせ、堂々とした華やかさで存在感を放つ花です。</p>
-  </section>
+    <h2>6月22日の誕生花として親しまれるアマリリス</h2>
+    <p>アマリリスは、ヒガンバナ科の球根植物です。初夏になると大輪でラッパ状の花を咲かせ、堂々とした華やかさで存在感を放ちます。一輪でも空間を印象づける力を持つことから、6月22日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アマリリスが象徴する意味</h2>
-    <p>アマリリスの花言葉は「プライド」です。大輪の花をまっすぐに堂々と咲かせる姿が、自信に満ちた誇り高さを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アマリリスの魅力</h2>
-    <p>アマリリスの魅力は、大きく開いたラッパ状の花びらが放つ華やかな存在感と、赤や白、ピンクなど多彩な花色にあります。一輪だけでも十分に空間を彩り、贈り物としても人気の高い花です。6月22日生まれの方はもちろん、堂々とした自信を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アマリリスは日当たりの良い場所を好み、球根植物のため休眠期には水やりを控えて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月22日生まれの方はもちろん、堂々とした自信を届けたい贈り物としてもアマリリスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリリスはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に大輪でラッパ状の花を咲かせます。ヒガンバナ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリリスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「プライド」という花言葉は、大輪の花をまっすぐに堂々と咲かせる姿が誇り高さを連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリリスはどんな花色がありますか？</div>
-        <div class="faq-a">赤や白、ピンクなど多彩な花色があり、品種によって咲き方や大きさも異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アマリリスはなぜ存在感があると言われるのですか？</div>
+        <div class="faq-a">初夏に大輪のラッパ状の花を咲かせる球根植物で、堂々とした華やかさが空間に存在感をもたらします。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>まっすぐに顔を上げる、アマリリスの咲きぶり</h2>
+    <p>アマリリスの花は、大きく開いたラッパのような形をして、迷いなくまっすぐな方向を見据えるように咲きます。一輪の大きさが際立つため、周りにどんな花があっても、視線は自然とアマリリスに引き寄せられます。うつむくことなく胸を張るように咲くその姿は、自分の魅力を隠さず示しているようにも見えます。堂々とした佇まいで周囲を惹きつけるその咲きぶりから、アマリリスには「プライド」という花言葉が添えられたと伝えられています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アマリリスの花言葉「プライド」の由来は？</div>
+        <div class="faq-a">大輪の花がまっすぐに顔を上げて咲く、堂々とした咲きぶりに由来すると伝えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分に自信を持つことは、決してわがままなことではありません。アマリリスの花は、誰かと比べるためではなく、ただ自分らしくまっすぐに咲いています。今日は、自分の良いところを一つ、声に出して認めてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アマリリスから始める小さな体験</h2>
+    <p>大輪のアマリリスを思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>大輪のラッパ状の花をじっくり観察してみる</li>
+      <li>自分の長所を一つ、声に出して認めてみる</li>
+      <li>堂々とした振る舞いを意識して過ごしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アマリリスはどんな楽しみ方がありますか？</div>
+        <div class="faq-a">鉢植えで室内を彩ったり、切り花として飾ったりと、一輪でも存在感を放つ花として楽しめます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分の良いところを認めたい今日は、星座や月齢・月相もあわせて確認してみませんか。開運カレンダーでは、星座占いと今日の月の満ち欠けを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>まっすぐに顔を上げて咲くアマリリスの姿は、自分を認めることもまた大切な強さのひとつです。</p>
     <ul>
-      <li>アマリリスは初夏に大輪の花を咲かせる、6月22日の誕生花</li>
-      <li>花言葉は「プライド」、堂々と咲く花姿に由来する</li>
-      <li>華やかな存在感と多彩な花色が魅力</li>
-      <li>日当たりの良い場所で、休眠期は水やりを控える</li>
+      <li>アマリリスはヒガンバナ科の球根植物で、初夏に大輪の花を咲かせる、6月22日の誕生花</li>
+      <li>花言葉は「プライド」。堂々とした咲きぶりに由来するとされる</li>
+      <li>一輪でも空間を印象づける存在感が魅力</li>
+      <li>鉢植えや切り花としてさまざまに楽しめる</li>
     </ul>
   </section>
 

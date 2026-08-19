@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0613/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月13日の誕生花クチナシの花言葉・特徴・魅力をわかりやすく解説。「洗練」を象徴する芳醇な香りの白い花の意味を紹介します。">
+  <meta name="description" content="6月13日の誕生花クチナシの花言葉・特徴・魅力をわかりやすく解説。芳醇な香りを放つ白い花に込められた「洗練」の意味を紹介します。">
   <title>6月13日の誕生花はクチナシ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クチナシはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い花を咲かせ、芳醇な香りを放ちます。アカネ科の常緑低木です。"}},
-      {"@type":"Question","name":"クチナシの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「洗練」という花言葉は、純白の花びらと上品な香りが無駄のない洗練された美しさを感じさせることに由来すると言われています。"}},
-      {"@type":"Question","name":"クチナシはなぜ香りが良いことで知られていますか？","acceptedAnswer":{"@type":"Answer","text":"世界三大香木のひとつに数えられるほど濃密で甘い香りを放つことから、古くから香りの良い花として親しまれています。"}}
+      {"@type":"Question","name":"クチナシはどんな香りの花ですか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い花を咲かせ、芳醇な香りを放つ、アカネ科の常緑低木です。"}},
+      {"@type":"Question","name":"クチナシの花言葉『洗練』はどこに由来しますか？","acceptedAnswer":{"@type":"Answer","text":"白い花と芳醇な香りが醸し出す、清らかで気品ある印象が、「洗練」という花言葉として定着したと考えられています。"}},
+      {"@type":"Question","name":"クチナシはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"白い花を咲かせます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 13 · 誕生花</span>
     <h1>6月13日の誕生花はクチナシ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クチナシは、アカネ科の常緑低木で、初夏に白い花を咲かせ芳醇な香りを放つ6月13日の誕生花です。花言葉は「洗練」。清らかで気品ある印象の花です。</p>
+    <p class="art-lead">夕暮れ、どこからともなく甘く濃厚な香りが漂ってきます。クチナシは、初夏に白い花を咲かせる、アカネ科の常緑低木です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クチナシとは</a></li>
-      <li><a href="#meaning">クチナシが象徴する意味</a></li>
-      <li><a href="#charm">クチナシの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月13日の誕生花として親しまれるクチナシ</a></li>
+      <li><a href="#story">芳醇な香りが漂う、クチナシの気品</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クチナシから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クチナシとは</h2>
-    <p>クチナシは、アカネ科の常緑低木で、6月13日の誕生花として知られています。初夏になると白い花を咲かせて芳醇な香りを放ち、清らかで気品ある印象を漂わせる花です。</p>
-  </section>
+    <h2>6月13日の誕生花として親しまれるクチナシ</h2>
+    <p>クチナシは、アカネ科の常緑低木です。初夏になると白い花を咲かせ、芳醇な香りを放ちます。清らかで気品ある印象を与えるその姿から、6月13日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クチナシが象徴する意味</h2>
-    <p>クチナシの花言葉は「洗練」です。純白の花びらと上品な香りが、無駄のない洗練された美しさを感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クチナシの魅力</h2>
-    <p>クチナシの魅力は、純白の花びらが放つ濃密で甘い香りと、艶やかな緑の葉とのコントラストにあります。「世界三大香木」のひとつにも数えられ、香りの良さで古くから親しまれてきました。6月13日生まれの方はもちろん、洗練された印象を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クチナシは日当たりから半日陰を好み、酸性の土壌でよく育つため専用の培養土を使うとよいでしょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月13日生まれの方はもちろん、洗練された印象を届けたい贈り物としてもクチナシは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クチナシはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白い花を咲かせ、芳醇な香りを放ちます。アカネ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クチナシの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「洗練」という花言葉は、純白の花びらと上品な香りが無駄のない洗練された美しさを感じさせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クチナシはなぜ香りが良いことで知られていますか？</div>
-        <div class="faq-a">世界三大香木のひとつに数えられるほど濃密で甘い香りを放つことから、古くから香りの良い花として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クチナシはどんな香りの花ですか？</div>
+        <div class="faq-a">初夏に白い花を咲かせ、芳醇な香りを放つ、アカネ科の常緑低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>芳醇な香りが漂う、クチナシの気品</h2>
+    <p>クチナシの存在に気づくのは、姿を見つける前に香りが届くことのほうが多いかもしれません。特に夕暮れどきや湿度の高い日には、その甘く濃厚な香りが遠くまで漂い、通りすがりの人の足を止めさせます。花そのものは純白で厚みのある花びらを持ち、香りの強さに見合うだけの存在感を放っています。飾り立てず、香りと白い花だけで人の記憶に残る印象を作るその在り方は、無駄を削ぎ落とした洗練の一つの形と言えるかもしれません。余計な飾りを持たずに白さと香りだけで人の記憶に残るその在り方が、「洗練」という花言葉として受け継がれてきました。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クチナシの花言葉「洗練」はどこに由来しますか？</div>
+        <div class="faq-a">白い花と芳醇な香りが醸し出す、清らかで気品ある印象が、「洗練」という花言葉として定着したと考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>姿を見つける前に香りが届くクチナシ。澄んだ気持ちで自分を磨きたくなるのは、この花の気品に触れたときかもしれません。今日、身の回りのものを一つだけ選び、いつもより丁寧に手をかけてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クチナシから始める小さな体験</h2>
+    <p>香りと白さで気品を放つクチナシにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>芳醇な香りを深呼吸で味わってみる</li>
+      <li>白い花を一輪、部屋に飾ってみる</li>
+      <li>身の回りを一つ、丁寧に整えてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クチナシはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">白い花を咲かせます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">身の回りを整えたい今日は、今月の誕生石やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、今月の誕生石と今日のラッキーカラーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>芳醇な香りを漂わせるクチナシの佇まいは、澄んだ気持ちで自分を磨く心地よさを運んできます。</p>
     <ul>
-      <li>クチナシは初夏に白い花を咲かせる、6月13日の誕生花</li>
-      <li>花言葉は「洗練」、純白の花びらと上品な香りに由来する</li>
-      <li>濃密で甘い香りと艶やかな葉のコントラストが魅力</li>
-      <li>日当たりから半日陰、酸性土壌でよく育つ</li>
+      <li>クチナシはアカネ科の常緑低木で、白い花を咲かせる、6月13日の誕生花</li>
+      <li>花言葉は「洗練」。白さと香りが両立する気品ある印象に結びつけられているとされる</li>
+      <li>夕暮れどきに遠くまで届く、芳醇な香りが魅力</li>
+      <li>厚みのある純白の花びらが特徴</li>
     </ul>
   </section>
 

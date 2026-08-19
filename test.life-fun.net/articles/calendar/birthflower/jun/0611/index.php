@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0611/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月11日の誕生花ガクアジサイの花言葉・特徴・魅力をわかりやすく解説。「素直」を象徴する額縁のような形の花の意味を紹介します。">
+  <meta name="description" content="6月11日の誕生花ガクアジサイの花言葉・特徴・魅力をわかりやすく解説。梅雨時に咲く額縁のような花に込められた「素直」の意味を紹介します。">
   <title>6月11日の誕生花はガクアジサイ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ガクアジサイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"梅雨の時期に額縁のような形の花を咲かせます。アジサイ科の落葉低木です。"}},
-      {"@type":"Question","name":"ガクアジサイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「素直」という花言葉は、額縁のような装飾花がまっすぐに縁取る飾らない咲き方に由来すると言われています。"}},
-      {"@type":"Question","name":"ガクアジサイと一般的なアジサイはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"ガクアジサイは中心の花を額縁状の装飾花が囲む原種に近い咲き方で、丸く集まって咲く一般的なアジサイとは花の形が異なります。"}}
+      {"@type":"Question","name":"ガクアジサイはどんな時期に咲く花ですか？","acceptedAnswer":{"@type":"Answer","text":"梅雨時に花を咲かせる、アジサイ科の落葉低木です。"}},
+      {"@type":"Question","name":"ガクアジサイの花言葉『素直』はどこに由来しますか？","acceptedAnswer":{"@type":"Answer","text":"飾り気のない額縁のような花の姿が、ありのままを映す「素直」という言葉と重なり合うとされています。"}},
+      {"@type":"Question","name":"ガクアジサイと一般的なアジサイはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"中央の小さな花の周りを、額縁のように大きな装飾花が縁取っている点が特徴とされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 11 · 誕生花</span>
     <h1>6月11日の誕生花はガクアジサイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ガクアジサイは、アジサイ科の落葉低木で、梅雨時に額縁のような形の花を咲かせる6月11日の誕生花です。花言葉は「素直」。しっとりとした情緒を持つ花です。</p>
+    <p class="art-lead">雨に濡れた葉の間から、額縁のような形の花が静かに顔を出します。ガクアジサイは、梅雨の時期に咲く、アジサイ科の落葉低木です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ガクアジサイとは</a></li>
-      <li><a href="#meaning">ガクアジサイが象徴する意味</a></li>
-      <li><a href="#charm">ガクアジサイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月11日の誕生花として親しまれるガクアジサイ</a></li>
+      <li><a href="#story">梅雨に映える、ガクアジサイの飾らなさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ガクアジサイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ガクアジサイとは</h2>
-    <p>ガクアジサイは、アジサイ科の落葉低木で、6月11日の誕生花として知られています。梅雨の時期になると額縁のような形の花を咲かせ、しっとりとした雨の季節に彩りを添える花です。</p>
-  </section>
+    <h2>6月11日の誕生花として親しまれるガクアジサイ</h2>
+    <p>ガクアジサイは、アジサイ科の落葉低木です。梅雨時になると、額縁のような形をした花を咲かせます。雨の多い季節を彩る飾らない美しさから、6月11日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ガクアジサイが象徴する意味</h2>
-    <p>ガクアジサイの花言葉は「素直」です。中心の小さな花を額縁のような装飾花がまっすぐに縁取る飾らない咲き方が、素直な心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ガクアジサイの魅力</h2>
-    <p>ガクアジサイの魅力は、中心に集まる本来の花と、それを囲む額縁のような装飾花が生み出す独特の造形美にあります。日本に自生する原種のアジサイとしても知られ、和の情緒を感じさせます。6月11日生まれの方はもちろん、素直な気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ガクアジサイは半日陰でも育ち、乾燥に弱いため土が乾かないようこまめに水を与えるとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月11日生まれの方はもちろん、素直な気持ちを伝えたい贈り物としてもガクアジサイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイはいつ頃咲きますか？</div>
-        <div class="faq-a">梅雨の時期に額縁のような形の花を咲かせます。アジサイ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「素直」という花言葉は、額縁のような装飾花がまっすぐに縁取る飾らない咲き方に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイと一般的なアジサイはどう違いますか？</div>
-        <div class="faq-a">ガクアジサイは中心の花を額縁状の装飾花が囲む原種に近い咲き方で、丸く集まって咲く一般的なアジサイとは花の形が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイはどんな時期に咲く花ですか？</div>
+        <div class="faq-a">梅雨時に花を咲かせる、アジサイ科の落葉低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>梅雨に映える、ガクアジサイの飾らなさ</h2>
+    <p>雨続きの日々の中で、ガクアジサイは中央に小さな花を集め、その周りを大きな装飾花がぐるりと縁取るように咲かせます。その形はまるで一枚の絵を囲む額縁のようで、飾り立てすぎない構図が却って印象に残ります。派手な演出を持たず、雨に濡れてもそのままの姿を見せ続ける様子は、余計な取り繕いをしない在り方を思わせます。雨に打たれても取り繕わず、そのままの形を見せ続ける様子が、「素直」という花言葉の由来になったとされています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイの花言葉「素直」はどこに由来しますか？</div>
+        <div class="faq-a">飾り気のない額縁のような花の姿が、ありのままを映す「素直」という言葉と重なり合うとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>雨に濡れても取り繕わず、そのままの姿を見せ続けるガクアジサイ。飾らない気持ちをそのまま出したくなる瞬間は、誰にでも訪れます。ありのままでいることは、案外、大きな強さを必要とする選択です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ガクアジサイから始める小さな体験</h2>
+    <p>飾らずに咲くガクアジサイにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>額縁のような形の花をじっくり観察してみる</li>
+      <li>梅雨の合間、雨上がりの景色を眺めてみる</li>
+      <li>思っていることを一つ、素直に言葉にしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ガクアジサイと一般的なアジサイはどう違いますか？</div>
+        <div class="faq-a">中央の小さな花の周りを、額縁のように大きな装飾花が縁取っている点が特徴とされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">素直な気持ちを言葉にしたい今日は、六曜やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、その日の六曜とおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>梅雨の合間に額縁のような花を咲かせるガクアジサイは、飾らない気持ちを見せてもいいと思わせてくれます。</p>
     <ul>
-      <li>ガクアジサイは梅雨時に額縁状の花を咲かせる、6月11日の誕生花</li>
-      <li>花言葉は「素直」、飾らない咲き方に由来する</li>
-      <li>装飾花が生み出す独特の造形美が魅力</li>
-      <li>半日陰でも育ち、乾燥に弱いためこまめな水やりが必要</li>
+      <li>ガクアジサイはアジサイ科の落葉低木で、梅雨時に花を咲かせる、6月11日の誕生花</li>
+      <li>花言葉は「素直」。飾らない額縁のような花の姿に結びつけられているとされる</li>
+      <li>中央の小花と大きな装飾花が作る、額縁のような形が魅力</li>
+      <li>雨の多い季節を彩る、日本らしい風情を持つ花</li>
     </ul>
   </section>
 

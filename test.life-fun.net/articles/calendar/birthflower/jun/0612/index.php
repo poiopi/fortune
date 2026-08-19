@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0612/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月12日の誕生花ベロペロネの花言葉・特徴・魅力をわかりやすく解説。「究極の美」を象徴するエビのような形の苞の意味を紹介します。">
+  <meta name="description" content="6月12日の誕生花ベロペロネの花言葉・特徴・魅力をわかりやすく解説。和名コエビソウ、エビのような苞に込められた「究極の美」の意味を紹介します。">
   <title>6月12日の誕生花はベロペロネ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ベロペロネはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通してエビのような形の苞をつけます。キツネノマゴ科の常緑低木です。"}},
-      {"@type":"Question","name":"ベロペロネの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「究極の美」という花言葉は、長期間美しい姿を保ち続ける生命力に由来すると言われています。"}},
-      {"@type":"Question","name":"ベロペロネはどんな場所で育てられますか？","acceptedAnswer":{"@type":"Answer","text":"観葉植物として人気があり、室内の日当たりの良い場所で鉢植えとして育てられることが多い花です。"}}
+      {"@type":"Question","name":"ベロペロネの和名は何ですか？","acceptedAnswer":{"@type":"Answer","text":"和名は「コエビソウ」です。エビのような形の苞が特徴的なことに由来すると考えられています。"}},
+      {"@type":"Question","name":"ベロペロネの花言葉『究極の美』はどこに由来しますか？","acceptedAnswer":{"@type":"Answer","text":"朱や黄に色づく苞の鮮やかさが、他に類を見ない造形の面白さとして「究極の美」という言葉を導いたようです。"}},
+      {"@type":"Question","name":"ベロペロネは一年中花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通してエビのような形の苞をつける植物として知られています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 12 · 誕生花</span>
     <h1>6月12日の誕生花はベロペロネ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ベロペロネは、キツネノマゴ科の常緑低木で、一年を通してエビのような形の苞をつける6月12日の誕生花です。花言葉は「究極の美」。ユニークな姿が印象的な花です。</p>
+    <p class="art-lead">枝先に連なる苞が、まるでエビの殻のように重なり合っています。ベロペロネは、その独特な形から和名を「コエビソウ」という、キツネノマゴ科の常緑低木です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ベロペロネ</dd>
     <dt>花言葉</dt><dd>究極の美</dd>
     <dt>科名</dt><dd>キツネノマゴ科</dd>
-    <dt>見頃</dt><dd>通年</dd>
+    <dt>見頃</dt><dd>周年</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ベロペロネとは</a></li>
-      <li><a href="#meaning">ベロペロネが象徴する意味</a></li>
-      <li><a href="#charm">ベロペロネの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月12日の誕生花として親しまれるベロペロネ</a></li>
+      <li><a href="#story">エビ形の苞が見せる、ベロペロネの美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ベロペロネから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ベロペロネとは</h2>
-    <p>ベロペロネは、キツネノマゴ科の常緑低木で、6月12日の誕生花として知られています。一年を通してエビのような形の苞をつけ、他にはないユニークな姿を長く楽しめる花です。</p>
-  </section>
+    <h2>6月12日の誕生花として親しまれるベロペロネ</h2>
+    <p>ベロペロネは、キツネノマゴ科の常緑低木です。一年を通してエビのような形の苞をつけ、和名は「コエビソウ」といいます。朱色や黄色の苞が特徴的なその姿から、6月12日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ベロペロネが象徴する意味</h2>
-    <p>ベロペロネの花言葉は「究極の美」です。次々と苞をつけながら長期間美しい姿を保ち続ける生命力が、揺るぎない美しさの象徴とされることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ベロペロネの魅力</h2>
-    <p>ベロペロネの魅力は、エビの尾のように曲がった苞が連なる独特の形と、季節を問わず楽しめる開花期間の長さにあります。観葉植物としても親しまれ、室内に個性的な彩りを添えてくれます。6月12日生まれの方はもちろん、長く続く美しさを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ベロペロネは日当たりを好み、寒さにやや弱いため冬場は室内の暖かい場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月12日生まれの方はもちろん、長く続く美しさを届けたい贈り物としてもベロペロネは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベロペロネはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通してエビのような形の苞をつけます。キツネノマゴ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベロペロネの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「究極の美」という花言葉は、長期間美しい姿を保ち続ける生命力に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベロペロネはどんな場所で育てられますか？</div>
-        <div class="faq-a">観葉植物として人気があり、室内の日当たりの良い場所で鉢植えとして育てられることが多い花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ベロペロネの和名は何ですか？</div>
+        <div class="faq-a">和名は「コエビソウ」です。エビのような形の苞が特徴的なことに由来すると考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>エビ形の苞が見せる、ベロペロネの美しさ</h2>
+    <p>ベロペロネの見どころは、花そのものよりも、その花を包む苞の形にあります。重なり合った苞が弓なりに垂れ下がる様子は、エビの殻を思わせるユニークな造形で、和名の「コエビソウ」もそこから来ていると考えられています。朱色や黄色に染まった苞の連なりは、一つひとつの色合いに微妙な違いがあり、光の当たり方によっても印象が変わります。花としての華やかさとは少し違う、造形そのものの面白さが際立つ植物です。他のどんな花にも似ていない、この造形だけが放つ存在感が、「究極の美」という言葉に行き着いたと言われています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベロペロネの花言葉「究極の美」はどこに由来しますか？</div>
+        <div class="faq-a">朱や黄に色づく苞の鮮やかさが、他に類を見ない造形の面白さとして「究極の美」という言葉を導いたようです。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>エビのような形の苞を、誰に似せるでもなく咲かせ続けるベロペロネ。飾らない自分の姿を認めてもらいたい気持ちは、決して弱さではありません。ありのままでいることを選ぶ強さが、この花にはあります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ベロペロネから始める小さな体験</h2>
+    <p>ありのままの形で美しさを見せるベロペロネにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>エビのような形の苞をじっくり観察してみる</li>
+      <li>エビに似た苞の形と「コエビソウ」という和名を見比べてみる</li>
+      <li>ありのままの自分を誰かに見せてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベロペロネは一年中花を楽しめますか？</div>
+        <div class="faq-a">一年を通してエビのような形の苞をつける植物として知られています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">ありのままの自分を出したい今日は、ラッキーナンバーや年九星もあわせて確認してみませんか。開運カレンダーでは、今日のラッキーナンバーと今年の九星を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>朱や黄に色づく苞を持つベロペロネは、飾らない姿のままで放つ美しさを思い出させてくれます。</p>
     <ul>
-      <li>ベロペロネは一年を通してエビ形の苞をつける、6月12日の誕生花</li>
-      <li>花言葉は「究極の美」、長く美しさを保つ生命力に由来する</li>
-      <li>ユニークな苞の形と長い開花期間が魅力</li>
-      <li>日当たりを好み、寒さにはやや弱い</li>
+      <li>ベロペロネはキツネノマゴ科の常緑低木で、エビ形の苞を持つ、6月12日の誕生花</li>
+      <li>花言葉は「究極の美」。朱や黄の苞の鮮やかさに結びつけられているとされる</li>
+      <li>和名は「コエビソウ」。エビの殻を思わせる独特な造形が魅力</li>
+      <li>一年を通して苞をつけ続ける丈夫さを持つ</li>
     </ul>
   </section>
 

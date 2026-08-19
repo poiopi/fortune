@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0617/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月17日の誕生花ベニバナの花言葉・特徴・魅力をわかりやすく解説。「化粧」を象徴するオレンジがかった赤い花の意味を紹介します。">
+  <meta name="description" content="6月17日の誕生花ベニバナの花言葉・特徴・魅力をわかりやすく解説。夏にオレンジがかった赤い花を咲かせる、キク科「化粧」の花を紹介します。">
   <title>6月17日の誕生花はベニバナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ベニバナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にオレンジがかった赤い花を咲かせます。キク科の一年草です。"}},
-      {"@type":"Question","name":"ベニバナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「化粧」という花言葉は、花から採れる紅色の色素が口紅や頬紅などの原料として使われてきたことに由来すると言われています。"}},
-      {"@type":"Question","name":"ベニバナはどんな用途で使われてきましたか？","acceptedAnswer":{"@type":"Answer","text":"染料や食用油の原料として古くから利用され、暮らしに欠かせない植物として親しまれてきました。"}}
+      {"@type":"Question","name":"ベニバナはどのように利用されてきた花ですか？","acceptedAnswer":{"@type":"Answer","text":"夏にオレンジがかった赤い花を咲かせる一年草で、染料としても知られています。鮮やかな色合いが古くから重宝されてきました。"}},
+      {"@type":"Question","name":"ベニバナの花言葉「化粧」の由来は？","acceptedAnswer":{"@type":"Answer","text":"花びらの鮮やかな赤が染料として使われ、人の装いを彩ってきたことになぞらえて生まれたとされています。"}},
+      {"@type":"Question","name":"ベニバナはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"畑一面に咲く様子を眺めたり、ドライフラワーや染料として活用したりと、色そのものを楽しめる花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 17 · 誕生花</span>
     <h1>6月17日の誕生花はベニバナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ベニバナは、キク科の一年草で、夏にオレンジがかった赤い花を咲かせる6月17日の誕生花です。花言葉は「化粧」。染料としても知られる花です。</p>
+    <p class="art-lead">夏の日差しの下、オレンジがかった赤い花が畑一面に広がる光景があります。ベニバナは、染料としても知られる、キク科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ベニバナとは</a></li>
-      <li><a href="#meaning">ベニバナが象徴する意味</a></li>
-      <li><a href="#charm">ベニバナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月17日の誕生花として親しまれるベニバナ</a></li>
+      <li><a href="#story">鮮やかな赤が装いを彩る、夏のベニバナ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ベニバナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ベニバナとは</h2>
-    <p>ベニバナは、キク科の一年草で、6月17日の誕生花として知られています。夏になるとオレンジがかった赤い花を咲かせ、古くから染料としても利用されてきた花です。</p>
-  </section>
+    <h2>6月17日の誕生花として親しまれるベニバナ</h2>
+    <p>ベニバナは、キク科の一年草です。夏になるとオレンジがかった赤い花を咲かせ、古くから染料としても知られてきました。鮮やかな色合いが人々の暮らしを彩ってきたことから、6月17日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ベニバナが象徴する意味</h2>
-    <p>ベニバナの花言葉は「化粧」です。花から採れる紅色の色素が、口紅や頬紅などの化粧品の原料として古くから用いられてきたことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ベニバナの魅力</h2>
-    <p>ベニバナの魅力は、鮮やかなオレンジ色から赤色へと変化していく花の色合いと、染料や食用油の原料としても活用される実用性の高さにあります。歴史的にも人々の暮らしを彩ってきた花です。6月17日生まれの方はもちろん、彩りを添えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ベニバナは日当たりと水はけの良い場所を好み、乾燥に強いためあまり手をかけずに育てられます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月17日生まれの方はもちろん、彩りを添えたい贈り物としてもベニバナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベニバナはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にオレンジがかった赤い花を咲かせます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベニバナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「化粧」という花言葉は、花から採れる紅色の色素が口紅や頬紅などの原料として使われてきたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベニバナはどんな用途で使われてきましたか？</div>
-        <div class="faq-a">染料や食用油の原料として古くから利用され、暮らしに欠かせない植物として親しまれてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ベニバナはどのように利用されてきた花ですか？</div>
+        <div class="faq-a">夏にオレンジがかった赤い花を咲かせる一年草で、染料としても知られています。鮮やかな色合いが古くから重宝されてきました。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>鮮やかな赤が装いを彩る、夏のベニバナ</h2>
+    <p>畑一面に広がるベニバナのオレンジがかった赤は、夏の光を受けてひときわ鮮やかに映えます。この色は見る人の頬をぱっと明るく照らすような力を持ち、どこか身なりを整えて出かけたくなる気持ちを呼び起こします。花びらから染料が取られてきたことでも知られるベニバナは、色そのものが人の暮らしと深く結びついてきた花です。鮮やかな赤が装いを彩る様子になぞらえて、ベニバナには「化粧」という花言葉が添えられたとされています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベニバナの花言葉「化粧」の由来は？</div>
+        <div class="faq-a">花びらの鮮やかな赤が染料として使われ、人の装いを彩ってきたことになぞらえて生まれたとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>鏡の前で身支度を整えるとき、少しだけ丁寧になれる瞬間があります。ベニバナの鮮やかな赤も、誰かに見られるためというより、自分自身の気持ちを引き締めるための色なのかもしれません。今日は、いつもより少しだけ丁寧に、身の回りを整えてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ベニバナから始める小さな体験</h2>
+    <p>オレンジがかった赤の花を思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>オレンジがかった赤い花を探してみる</li>
+      <li>鏡の前で、身だしなみを一つ整えてみる</li>
+      <li>赤系の色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベニバナはどんな楽しみ方がありますか？</div>
+        <div class="faq-a">畑一面に咲く様子を眺めたり、ドライフラワーや染料として活用したりと、色そのものを楽しめる花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">身だしなみを整えて出かけたい今日は、吉日やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、その日の吉日とラッキーカラーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>夏の日差しを受けて鮮やかに咲くベニバナの色が語るのは、身なりを整えることもまた自分への小さな心遣いだということ。</p>
     <ul>
-      <li>ベニバナは夏にオレンジがかった赤い花を咲かせる、6月17日の誕生花</li>
-      <li>花言葉は「化粧」、化粧品の原料に使われてきた歴史に由来する</li>
-      <li>色合いの変化と染料としての実用性が魅力</li>
-      <li>日当たりと水はけの良い場所でよく育つ</li>
+      <li>ベニバナはキク科の一年草で、夏にオレンジがかった赤い花を咲かせる、6月17日の誕生花</li>
+      <li>花言葉は「化粧」。染料として使われてきた鮮やかな赤に由来するとされる</li>
+      <li>古くから染料として利用されてきた</li>
+      <li>畑の景観や切り花、ドライフラワーとして楽しめる</li>
     </ul>
   </section>
 

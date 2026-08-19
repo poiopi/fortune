@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0626/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月26日の誕生花レッドクローバーの花言葉・特徴・魅力をわかりやすく解説。「勤勉」を象徴する赤紫色の丸い花の意味を紹介します。">
+  <meta name="description" content="6月26日の誕生花レッドクローバーの花言葉・特徴・魅力をわかりやすく解説。赤紫色の丸い花を咲かせる、マメ科「勤勉」の花を紹介します。">
   <title>6月26日の誕生花はレッドクローバー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"レッドクローバーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に赤紫色の丸い花を咲かせます。マメ科の多年草で、アカツメクサとも呼ばれます。"}},
-      {"@type":"Question","name":"レッドクローバーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「勤勉」という花言葉は、牧草地などで群生しながらたくましく育つ性質に由来すると言われています。"}},
-      {"@type":"Question","name":"レッドクローバーはどんな用途で使われますか？","acceptedAnswer":{"@type":"Answer","text":"牧草として利用されるほか、ハーブティーの原料としても親しまれています。"}}
+      {"@type":"Question","name":"レッドクローバーとシロツメクサは同じ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"レッドクローバーはアカツメクサの別名で、白い花を咲かせるシロツメクサとは別の植物です。花の色で見分けることができます。"}},
+      {"@type":"Question","name":"レッドクローバーの花言葉「勤勉」の由来は？","acceptedAnswer":{"@type":"Answer","text":"派手さを求めず、道端や野原で地道に咲き続ける赤紫色の花の姿に由来すると伝えられています。"}},
+      {"@type":"Question","name":"レッドクローバーはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"マメ科の多年草で、赤紫色の丸い花を咲かせます。道端や野原に自生し、飼料や蜜源植物としても利用されてきました。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 26 · 誕生花</span>
     <h1>6月26日の誕生花はレッドクローバー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">レッドクローバーは、マメ科の多年草で、初夏に赤紫色の丸い花を咲かせる6月26日の誕生花です。花言葉は「勤勉」。アカツメクサとも呼ばれる花です。</p>
+    <p class="art-lead">道端や野原に、赤紫色の丸い花がぽつぽつと顔を出しています。レッドクローバーは、目立たない場所でも地道に花を咲かせ続ける、マメ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">レッドクローバーとは</a></li>
-      <li><a href="#meaning">レッドクローバーが象徴する意味</a></li>
-      <li><a href="#charm">レッドクローバーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月26日の誕生花として親しまれるレッドクローバー</a></li>
+      <li><a href="#story">赤紫色が語る、レッドクローバーの地道さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、レッドクローバーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>レッドクローバーとは</h2>
-    <p>レッドクローバーは、マメ科の多年草で、6月26日の誕生花として知られています。初夏になると赤紫色の丸い花を咲かせ、アカツメクサの別名でも親しまれている花です。</p>
-  </section>
+    <h2>6月26日の誕生花として親しまれるレッドクローバー</h2>
+    <p>レッドクローバーは、マメ科の多年草です。初夏に赤紫色の丸い花を咲かせ、アカツメクサの別名でも知られています。目立たない場所でも力強く育つことから、6月26日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>レッドクローバーが象徴する意味</h2>
-    <p>レッドクローバーの花言葉は「勤勉」です。牧草地などで群生しながらたくましく育つ性質が、こつこつと努力を重ねる勤勉さを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>レッドクローバーの魅力</h2>
-    <p>レッドクローバーの魅力は、赤紫色の丸くふんわりとした花が群生して咲く素朴な美しさと、牧草としても利用される生命力の強さにあります。ハーブティーの原料としても親しまれています。6月26日生まれの方はもちろん、努力を称えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>レッドクローバーは日当たりの良い場所を好み、丈夫な性質のため特別な手入れをしなくてもよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月26日生まれの方はもちろん、努力を称えたい贈り物としてもレッドクローバーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レッドクローバーはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に赤紫色の丸い花を咲かせます。マメ科の多年草で、アカツメクサとも呼ばれます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レッドクローバーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「勤勉」という花言葉は、牧草地などで群生しながらたくましく育つ性質に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レッドクローバーはどんな用途で使われますか？</div>
-        <div class="faq-a">牧草として利用されるほか、ハーブティーの原料としても親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">レッドクローバーとシロツメクサは同じ植物ですか？</div>
+        <div class="faq-a">レッドクローバーはアカツメクサの別名で、白い花を咲かせるシロツメクサとは別の植物です。花の色で見分けることができます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>赤紫色が語る、レッドクローバーの地道さ</h2>
+    <p>レッドクローバーの赤紫色は、華やかに際立つ色ではなく、野原の緑に馴染みながらそっと存在を主張する、控えめな色合いです。この色は道端や野原のような何気ない場所でこそ映え、飾らない実直さを感じさせます。丸く集まった花房は、一つひとつが小さくても、群れて咲くことで確かな景色をつくり出します。派手さを求めず、同じ場所で地道に咲き続けるその姿から、レッドクローバーには「勤勉」という花言葉が根づいていったと伝えられています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">レッドクローバーの花言葉「勤勉」の由来は？</div>
+        <div class="faq-a">派手さを求めず、道端や野原で地道に咲き続ける赤紫色の花の姿に由来すると伝えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>根を詰めて頑張り続けることだけが、地道さの証というわけではありません。レッドクローバーは、休むことなく働くというより、同じ場所で無理なく咲き続けています。今日は、自分のペースでこつこつ取り組めることを一つ、見つけてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、レッドクローバーから始める小さな体験</h2>
+    <p>野原に咲くレッドクローバーを思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>赤紫色の丸い花を野や道端で探してみる</li>
+      <li>今日、地道に取り組めることを一つ決めてみる</li>
+      <li>赤紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">レッドクローバーはどんな花ですか？</div>
+        <div class="faq-a">マメ科の多年草で、赤紫色の丸い花を咲かせます。道端や野原に自生し、飼料や蜜源植物としても利用されてきました。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">こつこつ積み重ねる一日にしたい今日は、六曜やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、その日の六曜とおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>道端で地道に咲き続けるレッドクローバーの姿は、無理をしないこつこつの積み重ねにこそ価値があると教えてくれます。</p>
     <ul>
-      <li>レッドクローバーは初夏に赤紫色の花を咲かせる、6月26日の誕生花</li>
-      <li>花言葉は「勤勉」、たくましく群生して育つ性質に由来する</li>
-      <li>素朴な美しさと生命力の強さが魅力</li>
-      <li>日当たりの良い場所で丈夫に育つ</li>
+      <li>レッドクローバーはマメ科の多年草で、赤紫色の丸い花を咲かせる、6月26日の誕生花</li>
+      <li>花言葉は「勤勉」。道端で地道に咲き続ける姿に由来するとされる</li>
+      <li>アカツメクサの別名で、シロツメクサとは別の植物</li>
+      <li>飼料や蜜源植物としても利用されてきた</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0608/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月8日の誕生花レースフラワーの花言葉・特徴・魅力をわかりやすく解説。「優雅なたしなみ」を象徴する繊細な白い花の意味を紹介します。">
+  <meta name="description" content="6月8日の誕生花レースフラワーの花言葉・特徴・魅力をわかりやすく解説。レース模様のような繊細な白い花に込められた「優雅なたしなみ」の意味を紹介します。">
   <title>6月8日の誕生花はレースフラワー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"レースフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏にレースのような繊細な白い花を咲かせます。セリ科の一年草です。"}},
-      {"@type":"Question","name":"レースフラワーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「優雅なたしなみ」という花言葉は、繊細に広がる白い小花の集まりがレース編みのような上品さを感じさせることに由来すると言われています。"}},
-      {"@type":"Question","name":"レースフラワーは花束にどう使われますか？","acceptedAnswer":{"@type":"Answer","text":"白く繊細な花姿が他の花を引き立てるため、ブーケやアレンジメントのアクセントとしてよく使われます。"}}
+      {"@type":"Question","name":"レースフラワーはどんな花の形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が集まり、レースのような繊細な模様を作る、セリ科の一年草です。"}},
+      {"@type":"Question","name":"レースフラワーの花言葉『優雅なたしなみ』はどこに由来しますか？","acceptedAnswer":{"@type":"Answer","text":"繊細なレース模様を思わせる花の集まり方が、控えめで品のある振る舞いを連想させ、「優雅なたしなみ」という花言葉になったといわれています。"}},
+      {"@type":"Question","name":"レースフラワーはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"白い、レースのような繊細な花を咲かせます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 8 · 誕生花</span>
     <h1>6月8日の誕生花はレースフラワー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">レースフラワーは、セリ科の一年草で、初夏にレースのような繊細な白い花を咲かせる6月8日の誕生花です。花言葉は「優雅なたしなみ」。上品な佇まいの花です。</p>
+    <p class="art-lead">小さな白い花が幾重にも重なり、繊細なレース編みのような模様を空へ広げています。レースフラワーは、初夏に咲くセリ科の一年草です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">レースフラワーとは</a></li>
-      <li><a href="#meaning">レースフラワーが象徴する意味</a></li>
-      <li><a href="#charm">レースフラワーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月8日の誕生花として親しまれるレースフラワー</a></li>
+      <li><a href="#story">繊細な白が編む、初夏のレースフラワー</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、レースフラワーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>レースフラワーとは</h2>
-    <p>レースフラワーは、セリ科の一年草で、6月8日の誕生花として知られています。初夏になるとレースのように繊細な白い花を咲かせ、その名の通り優雅な佇まいを見せる花です。</p>
-  </section>
+    <h2>6月8日の誕生花として親しまれるレースフラワー</h2>
+    <p>レースフラワーは、セリ科の一年草です。初夏になると、レースのような繊細な白い花を咲かせます。細やかな花の集まりが作り出す上品な印象から、6月8日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>レースフラワーが象徴する意味</h2>
-    <p>レースフラワーの花言葉は「優雅なたしなみ」です。繊細に広がる白い小花の集まりが、レース編みのような上品さを感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>レースフラワーの魅力</h2>
-    <p>レースフラワーの魅力は、細かな小花が集まって作り出す繊細なレース模様と、他の花を引き立てる白く優しい色合いにあります。花束のアクセントとしても人気で、控えめながらも上品な存在感を放ちます。6月8日生まれの方はもちろん、上品な印象を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>レースフラワーは日当たりと風通しの良い場所を好み、過湿を避けて育てるとよく花を咲かせます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月8日生まれの方はもちろん、上品な印象を届けたい贈り物としてもレースフラワーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レースフラワーはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏にレースのような繊細な白い花を咲かせます。セリ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レースフラワーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「優雅なたしなみ」という花言葉は、繊細に広がる白い小花の集まりがレース編みのような上品さを感じさせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レースフラワーは花束にどう使われますか？</div>
-        <div class="faq-a">白く繊細な花姿が他の花を引き立てるため、ブーケやアレンジメントのアクセントとしてよく使われます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">レースフラワーはどんな花の形をしていますか？</div>
+        <div class="faq-a">小さな花が集まり、レースのような繊細な模様を作る、セリ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>繊細な白が編む、初夏のレースフラワー</h2>
+    <p>初夏の風にそよぐレースフラワーは、無数の小さな花が集まって、まるで手編みのレースのような模様を空に広げます。一つひとつの花は控えめな大きさですが、これだけの数が寄り集まることで、遠目にはふんわりとした白いドーム状の姿になります。近くで見れば、その細やかな並び方には偶然とは思えない緻密さがあり、丁寧に組み上げられた手仕事のようにも映ります。静かに整った姿を保ち続けるこの咲き方こそが、「優雅なたしなみ」という言葉として受け止められています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">レースフラワーの花言葉「優雅なたしなみ」はどこに由来しますか？</div>
+        <div class="faq-a">繊細なレース模様を思わせる花の集まり方が、控えめで品のある振る舞いを連想させ、「優雅なたしなみ」という花言葉になったといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>無数の小さな花が集まって、静かな美しさを作り上げるレースフラワー。丁寧なたしなみを大切にしたい気持ちは、華やかさを競うことよりも、細部への気配りに表れます。誰も見ていない場所での振る舞いにこそ、その人らしさが宿るのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、レースフラワーから始める小さな体験</h2>
+    <p>細やかに美しさを積み重ねるレースフラワーにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>レースのような繊細な花をじっくり観察してみる</li>
+      <li>身のこなしを一つ、丁寧に整えてみる</li>
+      <li>白い花を飾って気持ちを整えてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">レースフラワーはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">白い、レースのような繊細な花を咲かせます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">身のこなしを整えたい今日は、吉日や星座もあわせて確認してみませんか。開運カレンダーでは、その日の吉日と星座占いを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>レースのように繊細な花を咲かせるレースフラワーの姿からは、丁寧な振る舞いのしなやかさが感じられます。</p>
     <ul>
-      <li>レースフラワーは初夏に繊細な白い花を咲かせる、6月8日の誕生花</li>
-      <li>花言葉は「優雅なたしなみ」、レース模様のような花姿に由来する</li>
-      <li>繊細な小花が織りなす上品な美しさが魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>レースフラワーはセリ科の一年草で、初夏に白い花を咲かせる、6月8日の誕生花</li>
+      <li>花言葉は「優雅なたしなみ」。繊細なレース模様を思わせる姿に結びつけられているとされる</li>
+      <li>無数の小花が集まって作る、ドーム状の上品な咲き方が魅力</li>
+      <li>近くで見ると緻密な花の並びが確かめられる</li>
     </ul>
   </section>
 

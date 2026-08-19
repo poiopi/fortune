@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0628/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月28日の誕生花ツルハナナスの花言葉・特徴・魅力をわかりやすく解説。「ほほえみ」を象徴する色を変える花の意味を紹介します。">
+  <meta name="description" content="6月28日の誕生花ツルハナナスの花言葉・特徴・魅力をわかりやすく解説。紫から白へと色を変える花を咲かせる、ナス科「ほほえみ」の花を紹介します。">
   <title>6月28日の誕生花はツルハナナス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ツルハナナスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に紫から白へ色を変える花を咲かせます。ナス科のつる性低木です。"}},
-      {"@type":"Question","name":"ツルハナナスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ほほえみ」という花言葉は、紫から白へと花の色が優しく変化していく様子に由来すると言われています。"}},
-      {"@type":"Question","name":"ツルハナナスはどのように育てるとよいですか？","acceptedAnswer":{"@type":"Answer","text":"つる性のため、フェンスや支柱に誘引しながら育てると美しい景観を楽しめます。"}}
+      {"@type":"Question","name":"ツルハナナスの花色はどのように変化しますか？","acceptedAnswer":{"@type":"Answer","text":"咲き始めは紫色をしていますが、時間の経過とともに白へと色を変えていきます。夏から秋にかけて、この変化を楽しめる花です。"}},
+      {"@type":"Question","name":"ツルハナナスの花言葉「ほほえみ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"紫から白へと色を和らげながら咲き進む変化が、表情がやわらぐ様子を思わせることに由来するとされています。"}},
+      {"@type":"Question","name":"ツルハナナスはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"つるを伸ばす性質を生かして、フェンスやトレリスに這わせて育てると、紫から白への色の変化を長く楽しめます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 28 · 誕生花</span>
     <h1>6月28日の誕生花はツルハナナス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ツルハナナスは、ナス科のつる性低木で、夏から秋に紫から白へ色を変える花を咲かせる6月28日の誕生花です。花言葉は「ほほえみ」。移ろう表情が魅力の花です。</p>
+    <p class="art-lead">つるを伸ばした先で、紫の花がやがて白へと色を変えていきます。ツルハナナスは、夏から秋にかけて紫から白へと色を変える、ナス科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ツルハナナスとは</a></li>
-      <li><a href="#meaning">ツルハナナスが象徴する意味</a></li>
-      <li><a href="#charm">ツルハナナスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月28日の誕生花として親しまれるツルハナナス</a></li>
+      <li><a href="#story">紫から白へ、和らいでいく色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ツルハナナスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ツルハナナスとは</h2>
-    <p>ツルハナナスは、ナス科のつる性低木で、6月28日の誕生花として知られています。夏から秋になると紫から白へと色を変えながら花を咲かせ、移ろう表情が印象的な花です。</p>
-  </section>
+    <h2>6月28日の誕生花として親しまれるツルハナナス</h2>
+    <p>ツルハナナスは、ナス科のつる性低木です。夏から秋にかけて花を咲かせ、紫から白へと色を変えていく姿が特徴です。時間とともに表情を変えるその咲きぶりから、6月28日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ツルハナナスが象徴する意味</h2>
-    <p>ツルハナナスの花言葉は「ほほえみ」です。紫から白へと花の色が優しく変化していく様子が、柔らかなほほえみを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ツルハナナスの魅力</h2>
-    <p>ツルハナナスの魅力は、紫色で咲き始めた花が徐々に白く色を変えていく移ろいの美しさと、つるを伸ばしながら次々と花を咲かせる旺盛さにあります。フェンスやアーチに這わせると華やかな景観を作ってくれます。6月28日生まれの方はもちろん、柔らかな想いを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ツルハナナスは日当たりの良い場所を好み、つるが伸びるため支柱やフェンスに誘引しながら育てるとよいでしょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月28日生まれの方はもちろん、柔らかな想いを届けたい贈り物としてもツルハナナスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツルハナナスはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に紫から白へ色を変える花を咲かせます。ナス科のつる性低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツルハナナスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「ほほえみ」という花言葉は、紫から白へと花の色が優しく変化していく様子に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツルハナナスはどのように育てるとよいですか？</div>
-        <div class="faq-a">つる性のため、フェンスや支柱に誘引しながら育てると美しい景観を楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ツルハナナスの花色はどのように変化しますか？</div>
+        <div class="faq-a">咲き始めは紫色をしていますが、時間の経過とともに白へと色を変えていきます。夏から秋にかけて、この変化を楽しめる花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫から白へ、和らいでいく色</h2>
+    <p>ツルハナナスの花は、咲き始めのころは涼しげな紫をまとい、時間をかけてゆっくりと白へと表情を変えていきます。この移ろう色合いは、一つの花の中に二つの表情を見せてくれるようで、見るたびに違う印象を受け取ることができます。つるを伸ばしながら次々と花をつけていくその姿は、控えめでありながらも絶えず変化を続ける柔らかさを感じさせます。紫から白へと色を和らげながら咲き進むその変化から、ツルハナナスには「ほほえみ」という花言葉で呼ばれるようになったとされています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ツルハナナスの花言葉「ほほえみ」の由来は？</div>
+        <div class="faq-a">紫から白へと色を和らげながら咲き進む変化が、表情がやわらぐ様子を思わせることに由来するとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>表情がふっとやわらぐ瞬間は、自分では気づきにくいものです。ツルハナナスの花が紫から白へと色を和らげていくように、心もまた少しずつ変化していくものなのかもしれません。誰かのささやかな笑顔に、こちらまで心がゆるむこともあります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ツルハナナスから始める小さな体験</h2>
+    <p>紫から白へ移り変わるツルハナナスを思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>紫から白へ色が変わる花を探して観察してみる</li>
+      <li>今日は誰かに、ほほえみを一つ向けてみる</li>
+      <li>色の変化を楽しみながらつる性植物を育ててみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ツルハナナスはどんな楽しみ方がありますか？</div>
+        <div class="faq-a">つるを伸ばす性質を生かして、フェンスやトレリスに這わせて育てると、紫から白への色の変化を長く楽しめます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かにほほえみを向けたい今日は、ラッキーカラーや今月の誕生石もあわせて確認してみませんか。開運カレンダーでは、今日のラッキーカラーと今月の誕生石を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>紫から白へとゆっくり色を変えていくツルハナナスの姿こそ、変化することもまた自然なやわらかさだという何よりの証です。</p>
     <ul>
-      <li>ツルハナナスは夏から秋に色を変える花を咲かせる、6月28日の誕生花</li>
-      <li>花言葉は「ほほえみ」、花色が優しく変化する様子に由来する</li>
-      <li>移ろう花色と旺盛なつるの伸びが魅力</li>
-      <li>日当たりを好み、支柱やフェンスへの誘引が必要</li>
+      <li>ツルハナナスはナス科のつる性低木で、夏から秋にかけて花を咲かせる、6月28日の誕生花</li>
+      <li>花言葉は「ほほえみ」。紫から白へ色を和らげながら咲き進む変化に由来するとされる</li>
+      <li>つるを伸ばしながら次々と花をつける</li>
+      <li>フェンスやトレリスに這わせて育てられる</li>
     </ul>
   </section>
 

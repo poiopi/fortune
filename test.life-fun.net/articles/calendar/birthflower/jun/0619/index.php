@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0619/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月19日の誕生花アリウムの花言葉・特徴・魅力をわかりやすく解説。「正しい主張」を象徴する球状に咲く花の意味を紹介します。">
+  <meta name="description" content="6月19日の誕生花アリウムの花言葉・特徴・魅力をわかりやすく解説。高く伸びた花茎の先に小花が球状に咲く、ヒガンバナ科「正しい主張」の花を紹介します。">
   <title>6月19日の誕生花はアリウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アリウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に高く伸びた花茎の先に球状の小花を咲かせます。ヒガンバナ科の球根植物です。"}},
-      {"@type":"Question","name":"アリウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「正しい主張」という花言葉は、高く伸びた茎の先で堂々と咲く球状の花姿に由来すると言われています。"}},
-      {"@type":"Question","name":"アリウムはネギの仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。アリウムはネギ属に分類される植物で、観賞用として品種改良されたものが花壇などで親しまれています。"}}
+      {"@type":"Question","name":"アリウムはどんな姿の花ですか？","acceptedAnswer":{"@type":"Answer","text":"初夏、高く伸びた花茎の先に小さな花が球状に集まって咲く、ヒガンバナ科の球根植物です。他にはない印象的な姿を見せます。"}},
+      {"@type":"Question","name":"アリウムの花言葉「正しい主張」の由来は？","acceptedAnswer":{"@type":"Answer","text":"まっすぐに伸びた茎の先で、小花が集まってはっきりとした存在感を示す姿に由来すると言われています。"}},
+      {"@type":"Question","name":"アリウムはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"花壇や庭のアクセントとして植えたり、ドライフラワーとして長く楽しんだりと、ユニークな形を生かした楽しみ方ができます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 19 · 誕生花</span>
     <h1>6月19日の誕生花はアリウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アリウムは、ヒガンバナ科の球根植物で、初夏に球状の小花を咲かせる6月19日の誕生花です。花言葉は「正しい主張」。ユニークで印象に残る花です。</p>
+    <p class="art-lead">初夏の庭で、まっすぐに伸びた花茎の先に、小さな花が集まって丸い塊をつくっています。アリウムは、高く伸びた花茎の先に小花が球状に集まって咲く、ヒガンバナ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アリウムとは</a></li>
-      <li><a href="#meaning">アリウムが象徴する意味</a></li>
-      <li><a href="#charm">アリウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月19日の誕生花として親しまれるアリウム</a></li>
+      <li><a href="#story">まっすぐな茎に見る、初夏のアリウム</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アリウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アリウムとは</h2>
-    <p>アリウムは、ヒガンバナ科の球根植物で、6月19日の誕生花として知られています。初夏になると高く伸びた花茎の先に小花が球状に集まって咲き、ユニークで印象に残る姿を見せる花です。</p>
-  </section>
+    <h2>6月19日の誕生花として親しまれるアリウム</h2>
+    <p>アリウムは、ヒガンバナ科の球根植物です。初夏になると、高く伸びた花茎の先に小花が集まって球状に咲き、ユニークで印象的な姿を見せます。他の花にはない存在感から、6月19日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アリウムが象徴する意味</h2>
-    <p>アリウムの花言葉は「正しい主張」です。すらりと高く伸びた茎の先で堂々と咲く球状の花姿が、まっすぐに自分の考えを伝える強さを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アリウムの魅力</h2>
-    <p>アリウムの魅力は、小さな花が集まって作る球体のフォルムと、他の植物にはない存在感のあるシルエットにあります。花壇の中でひときわ目を引くアクセントとしても人気です。6月19日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アリウムは日当たりと水はけの良い場所を好み、球根植物のため過湿を避けて育てるとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月19日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物としてもアリウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アリウムはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に高く伸びた花茎の先に球状の小花を咲かせます。ヒガンバナ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アリウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「正しい主張」という花言葉は、高く伸びた茎の先で堂々と咲く球状の花姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アリウムはネギの仲間ですか？</div>
-        <div class="faq-a">はい。アリウムはネギ属に分類される植物で、観賞用として品種改良されたものが花壇などで親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アリウムはどんな姿の花ですか？</div>
+        <div class="faq-a">初夏、高く伸びた花茎の先に小さな花が球状に集まって咲く、ヒガンバナ科の球根植物です。他にはない印象的な姿を見せます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>まっすぐな茎に見る、初夏のアリウム</h2>
+    <p>アリウムの花茎は、他の草花を見下ろすように高くまっすぐ伸び、その先端で小さな花たちが寄り集まって、まるい塊をつくります。一本一本の花は控えめでも、集まることで揺るぎない存在感を放つのが、この花の面白いところです。風に吹かれても倒れることなく、茎をぴんと張ったまま立ち続ける姿は、意見を曲げない強さすら感じさせます。まっすぐに伸びた茎の先で自分の姿をはっきりと示すその佇まいから、アリウムには「正しい主張」という花言葉が生まれたと語り継がれてきました。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アリウムの花言葉「正しい主張」の由来は？</div>
+        <div class="faq-a">まっすぐに伸びた茎の先で、小花が集まってはっきりとした存在感を示す姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分の意見を口にするのは、勇気がいることです。アリウムは、茎をまっすぐに伸ばし、誰に遠慮するでもなく自分の姿を示し続けます。今日は、心の中にある考えを一つ、はっきりとした言葉にしてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アリウムから始める小さな体験</h2>
+    <p>堂々と立つアリウムを思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>球状に集まって咲く小花をじっくり観察してみる</li>
+      <li>自分の考えを一つ、はっきり言葉にしてみる</li>
+      <li>ユニークな形のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アリウムはどんな楽しみ方がありますか？</div>
+        <div class="faq-a">花壇や庭のアクセントとして植えたり、ドライフラワーとして長く楽しんだりと、ユニークな形を生かした楽しみ方ができます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分の考えをまっすぐ伝えたい今日は、年九星やラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、今年の九星とおすすめの場所を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>高く伸びた茎の先で堂々と咲くアリウムの姿を見ていると、自分の考えをまっすぐ示すことの大切さに気づかされます。</p>
     <ul>
-      <li>アリウムは初夏に球状の花を咲かせる、6月19日の誕生花</li>
-      <li>花言葉は「正しい主張」、堂々と咲く花姿に由来する</li>
-      <li>球体のフォルムとユニークな存在感が魅力</li>
-      <li>日当たりと水はけの良い場所でよく育つ</li>
+      <li>アリウムはヒガンバナ科の球根植物で、初夏に球状の花を咲かせる、6月19日の誕生花</li>
+      <li>花言葉は「正しい主張」。まっすぐ伸びた茎の先で存在感を示す姿に由来するとされる</li>
+      <li>ユニークで印象に残る姿が魅力</li>
+      <li>花壇やドライフラワーとしてさまざまに楽しめる</li>
     </ul>
   </section>
 

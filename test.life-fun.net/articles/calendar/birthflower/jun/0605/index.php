@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0605/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月5日の誕生花シランの花言葉・特徴・魅力をわかりやすく解説。「希望」を象徴する紫紅色の花を咲かせる花の意味を紹介します。">
+  <meta name="description" content="6月5日の誕生花シランの花言葉・特徴・魅力をわかりやすく解説。丈夫に咲き続ける紫紅色の花に込められた「希望」の意味を紹介します。">
   <title>6月5日の誕生花はシラン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シランはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に紫紅色の花を咲かせます。ラン科の多年草で、丈夫で育てやすい花です。"}},
-      {"@type":"Question","name":"シランの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「希望」という花言葉は、厳しい寒さを越えて毎年花を咲かせる生命力の強さに由来すると言われています。"}},
-      {"@type":"Question","name":"シランは初心者でも育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"はい。ラン科の中でも特に丈夫で、庭植えでも手軽に育てられることから初心者にも親しまれています。"}}
+      {"@type":"Question","name":"シランはどんな環境で育つ花ですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすい性質を持つ、ラン科の多年草です。日当たりの良い場所であれば比較的よく育ちます。"}},
+      {"@type":"Question","name":"シランの花言葉『希望』の由来は？","acceptedAnswer":{"@type":"Answer","text":"厳しい環境でも毎年変わらず花を咲かせる丈夫さが、先の見えない状況でも歩みを止めない「希望」の象徴として親しまれています。"}},
+      {"@type":"Question","name":"シランは初心者でも育てやすい花ですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすい花として位置づけられており、ラン科の中でも比較的扱いやすいとされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 5 · 誕生花</span>
     <h1>6月5日の誕生花はシラン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シランは、ラン科の多年草で、春に紫紅色の花を咲かせる6月5日の誕生花です。花言葉は「希望」。丈夫で育てやすい花です。</p>
+    <p class="art-lead">庭の片隅、あまり手をかけていない場所にも、紫紅色の花がすっと立ち上がっています。シランは、丈夫で育てやすいことで知られる、ラン科の多年草です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シランとは</a></li>
-      <li><a href="#meaning">シランが象徴する意味</a></li>
-      <li><a href="#charm">シランの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月5日の誕生花として親しまれるシラン</a></li>
+      <li><a href="#story">紫紅色が語る、シランの丈夫な希望</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シランから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シランとは</h2>
-    <p>シランは、ラン科の多年草で、6月5日の誕生花として知られています。春になると紫紅色の花を咲かせ、ラン科の中でも丈夫で育てやすい、親しみやすい花です。</p>
-  </section>
+    <h2>6月5日の誕生花として親しまれるシラン</h2>
+    <p>シランは、ラン科の多年草です。紫紅色の花を咲かせ、丈夫で育てやすい性質を持つことで知られています。ラン科の植物の中でも手をかけずに育つその強さから、6月5日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シランが象徴する意味</h2>
-    <p>シランの花言葉は「希望」です。厳しい寒さを越えて毎年春に花を咲かせる生命力の強さが、明るい未来への希望を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シランの魅力</h2>
-    <p>シランの魅力は、上品な紫紅色の花びらと、ラン科でありながら手軽に育てられる親しみやすさにあります。庭植えでも群生して咲く姿は見応えがあり、初心者にも人気の花です。6月5日生まれの方はもちろん、未来への希望を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シランは日当たりから半日陰まで幅広い環境に適応し、寒さにも強いため庭植えでも育てやすい花です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月5日生まれの方はもちろん、未来への希望を届けたい贈り物としてもシランは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シランはいつ頃咲きますか？</div>
-        <div class="faq-a">春に紫紅色の花を咲かせます。ラン科の多年草で、丈夫で育てやすい花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シランの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「希望」という花言葉は、厳しい寒さを越えて毎年花を咲かせる生命力の強さに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シランは初心者でも育てやすいですか？</div>
-        <div class="faq-a">はい。ラン科の中でも特に丈夫で、庭植えでも手軽に育てられることから初心者にも親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シランはどんな環境で育つ花ですか？</div>
+        <div class="faq-a">丈夫で育てやすい性質を持つ、ラン科の多年草です。日当たりの良い場所であれば比較的よく育ちます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫紅色が語る、シランの丈夫な希望</h2>
+    <p>華やかなラン科の花というと、手入れの難しい印象を持つ人も多いかもしれません。しかしシランは、その中でも特に丈夫で、多少手をかけなくても毎年紫紅色の花を咲かせ続けます。花びらの奥に覗く色の濃淡は、遠くから見る印象よりもずっと繊細で、近づくほどに新しい表情が見えてきます。目立った世話をしなくても、季節が巡ればまた花を咲かせるこの丈夫さは、先の見えない状況でも歩みを止めない生命力そのものです。手をかけずとも季節ごとに花を返してくれるその丈夫さが、「希望」という一語につながっているとされています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シランの花言葉「希望」の由来は？</div>
+        <div class="faq-a">厳しい環境でも毎年変わらず花を咲かせる丈夫さが、先の見えない状況でも歩みを止めない「希望」の象徴として親しまれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>手をかけずとも季節が巡れば花を返してくれるシランは、先の見えない状況でも前を向く気持ちを支えてくれる存在です。支えにしてきたものを、今日は静かに胸の内で数えてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シランから始める小さな体験</h2>
+    <p>手をかけずとも咲き続けるシランにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>紫紅色の花を探して観察してみる</li>
+      <li>今、心の支えにしていることを一つ思い浮かべてみる</li>
+      <li>育てやすい植物を一つ、身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シランは初心者でも育てやすい花ですか？</div>
+        <div class="faq-a">丈夫で育てやすい花として位置づけられており、ラン科の中でも比較的扱いやすいとされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心の支えを確かめたい今日は、星座やラッキーフードもあわせて見てみませんか。開運カレンダーでは、星座占いと今日のラッキーフードを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>紫紅色の花を静かに咲かせ続けるシランの姿には、先の見えない状況でも歩みを止めない強さが宿っています。</p>
     <ul>
-      <li>シランは春に紫紅色の花を咲かせる、6月5日の誕生花</li>
-      <li>花言葉は「希望」、寒さを越えて咲く生命力に由来する</li>
-      <li>上品な花色とラン科ながら育てやすい親しみやすさが魅力</li>
-      <li>幅広い環境に適応し、寒さにも強い</li>
+      <li>シランはラン科の多年草で、紫紅色の花を咲かせる、6月5日の誕生花</li>
+      <li>花言葉は「希望」。丈夫に育ち続ける性質に結びつけられているとされる</li>
+      <li>手をかけずとも季節が巡れば花を咲かせる、丈夫さが魅力</li>
+      <li>ラン科の中でも比較的育てやすい花とされる</li>
     </ul>
   </section>
 
