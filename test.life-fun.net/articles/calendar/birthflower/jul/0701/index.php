@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0701/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月1日の誕生花ベゴニア（赤）の花言葉・特徴・魅力をわかりやすく解説。「大切な思い出」を象徴する一年中赤い花を咲かせる姿の意味を紹介します。">
+  <meta name="description" content="7月1日の誕生花ベゴニア（赤）の花言葉・特徴・魅力をわかりやすく解説。植物収集家べゴン総督の名を受け継ぎ、一年を通して赤い花を咲かせ続けるシュウカイドウ科の花を紹介します。">
   <title>7月1日の誕生花はベゴニア（赤）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ベゴニア（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して赤い花を咲かせます。シュウカイドウ科の多年草です。"}},
-      {"@type":"Question","name":"ベゴニア（赤）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して途切れず赤い花を咲かせ続ける姿が、色あせることのない大切な思い出を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ベゴニアには多くの品種がありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ベゴニア（赤）は、数千種ともいわれる豊富な品種を持つシュウカイドウ科の中の一つで、四季咲き性の強さが特徴です。"}}
+      {"@type":"Question","name":"ベゴニア（赤）はどんな季節に楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して赤い花を咲かせるため、季節を問わず楽しむことができます。シュウカイドウ科の多年草です。"}},
+      {"@type":"Question","name":"ベゴニア（赤）の花言葉『大切な思い出』にはどんな意味がありますか？","acceptedAnswer":{"@type":"Answer","text":"色あせることなく季節を問わず赤い花を咲かせ続ける姿が、時が経っても薄れない大切な思い出を連想させることに由来すると言われています。楽しい記憶に限らず、心に残るあらゆる思い出を指すとされています。"}},
+      {"@type":"Question","name":"ベゴニアの葉にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"ハート形をした葉は左右非対称になっているのが特徴で、花だけでなく葉の形にも個性が表れています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 1 · 誕生花</span>
     <h1>7月1日の誕生花はベゴニア（赤）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ベゴニア（赤）は、シュウカイドウ科の多年草で、一年を通して赤い花を途切れることなく咲かせ続け、艶やかな花色が印象に残る花です。花言葉は「大切な思い出」。一年を通して赤い花を咲かせ続ける花です。</p>
+    <p class="art-lead">窓辺の鉢に、深紅の花びらが一つ、また一つと開いていきます。ベゴニア（赤）は季節を選ばず、いつ訪れてもこの鮮やかな赤に出会える花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ベゴニア（赤）とは</a></li>
-      <li><a href="#meaning">ベゴニア（赤）が象徴する意味</a></li>
-      <li><a href="#charm">ベゴニア（赤）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月1日の誕生花として親しまれるベゴニア（赤）</a></li>
+      <li><a href="#story">赤色がまっすぐに語る、ベゴニアの飾らない魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ベゴニア（赤）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ベゴニア（赤）とは</h2>
-    <p>ベゴニア（赤）は、シュウカイドウ科の多年草で、7月1日の誕生花として知られています。一年を通して赤い花を途切れることなく咲かせ続け、艶やかな花色が印象に残る花です。</p>
-  </section>
+    <h2>7月1日の誕生花として親しまれるベゴニア（赤）</h2>
+    <p>ベゴニア（赤）は、シュウカイドウ科の多年草です。一年を通して途切れることなく赤い花を咲かせ続け、艶やかな花色が印象に残ります。名前は植物収集に携わった総督べゴンにちなむといわれ、左右非対称のハート型の葉も特徴です。一年中花をつけるため特定の季節に限られた花ではありませんが、その変わらぬ赤さから7月1日の誕生花としても親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ベゴニア（赤）が象徴する意味</h2>
-    <p>ベゴニア（赤）の花言葉は「大切な思い出」です。一年を通して途切れず赤い花を咲かせ続ける姿が、色あせることのない大切な思い出を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ベゴニア（赤）の魅力</h2>
-    <p>ベゴニア（赤）の魅力は、一年を通して途切れることなく赤い花を楽しめる開花期間の長さと、艶やかな花色の美しさにあります。四季を問わず花を楽しめる、贈り物にも重宝される花です。7月1日生まれの方はもちろん、大切な思い出を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ベゴニアは明るい日陰を好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月1日生まれの方はもちろん、大切な思い出を伝えたい贈り物としてもベゴニア（赤）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（赤）はいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して赤い花を咲かせます。シュウカイドウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（赤）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">一年を通して途切れず赤い花を咲かせ続ける姿が、色あせることのない大切な思い出を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベゴニアには多くの品種がありますか？</div>
-        <div class="faq-a">はい。ベゴニア（赤）は、数千種ともいわれる豊富な品種を持つシュウカイドウ科の中の一つで、四季咲き性の強さが特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（赤）はどんな季節に楽しめますか？</div>
+        <div class="faq-a">一年を通して赤い花を咲かせるため、季節を問わず楽しむことができます。シュウカイドウ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>赤色がまっすぐに語る、ベゴニアの飾らない魅力</h2>
+    <p>鉢いっぱいに咲くベゴニア（赤）の花は、混じりけのない赤色をそのまま見せてきます。淡いピンクでも深紅でもなく、まっすぐな赤だけをまとうその姿には、駆け引きのない素直さが宿っているように映ります。左右非対称に整ったハート型の葉の陰からのぞく花びらは、その控えめな佇まいのまま、自然と視線を集めていきます。この花の名前は、植物収集に携わった総督べゴンにちなんで付けられたと伝えられており、一人の人物の情熱がそのまま花の名前として今も残り続けているのです。「大切な思い出」という花言葉は、飾ることなくただ赤いままでい続けるこの花の姿勢と、どこか響き合っているようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（赤）の花言葉『大切な思い出』にはどんな意味がありますか？</div>
+        <div class="faq-a">色あせることなく季節を問わず赤い花を咲かせ続ける姿が、時が経っても薄れない大切な思い出を連想させることに由来すると言われています。楽しい記憶に限らず、心に残るあらゆる思い出を指すとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>混じりけのない赤だけをまとい、一年を通して同じ色を咲かせ続けるベゴニア。取り繕う言葉を重ねるより、その揺るがない一色のように飾らないひと言を、誰かに手渡してみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ベゴニア（赤）から始める小さな体験</h2>
+    <p>飾らない赤を見せてくれるベゴニア（赤）にならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>艶やかな赤い花びらをじっくり観察してみる</li>
+      <li>名の由来となったべゴン総督という人物に思いを馳せてみる</li>
+      <li>赤いものを身の回りに一つ取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベゴニアの葉にはどんな特徴がありますか？</div>
+        <div class="faq-a">ハート形をした葉は左右非対称になっているのが特徴で、花だけでなく葉の形にも個性が表れています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分らしい赤を選んだ今日は、星座やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、星座占いとおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>季節を問わず変わらぬ姿を保ち続けるベゴニアは、変わらずにいることそのものの尊さを、静かに伝えてくれます。</p>
     <ul>
-      <li>ベゴニア（赤）は一年を通して赤い花を咲かせる、7月1日の誕生花</li>
-      <li>花言葉は「大切な思い出」、色あせない花期の長さに由来する</li>
-      <li>艶やかな花色と長い開花期間が魅力</li>
-      <li>明るい日陰で、多湿を避けて水はけの良い土を好む</li>
+      <li>ベゴニア（赤）は一年を通して赤い花を咲かせる、シュウカイドウ科の多年草で、7月1日の誕生花</li>
+      <li>花言葉は「大切な思い出」。色あせない赤さが、時を経ても薄れない記憶を思わせるとされる</li>
+      <li>名前は植物収集に携わった総督べゴンにちなむとされる</li>
+      <li>左右非対称のハート型の葉も特徴の一つ</li>
     </ul>
   </section>
 

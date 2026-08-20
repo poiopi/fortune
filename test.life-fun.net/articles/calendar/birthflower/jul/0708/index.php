@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0708/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月8日の誕生花クロユリの花言葉・特徴・魅力をわかりやすく解説。「恋の魔術」を象徴する神秘的な暗紫褐色の花の意味を紹介します。">
+  <meta name="description" content="7月8日の誕生花クロユリの花言葉・特徴・魅力をわかりやすく解説。暗紫褐色の花びらが妖しく魅了する、夏に咲くユリ科の多年草を紹介します。">
   <title>7月8日の誕生花はクロユリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クロユリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に暗紫褐色の花を咲かせます。ユリ科の多年草です。"}},
-      {"@type":"Question","name":"クロユリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"暗紫褐色という珍しい花色と独特の香りが、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"クロユリにはどんな伝説がありますか？","acceptedAnswer":{"@type":"Answer","text":"アイヌや日本各地に、この花を手にした者の恋が叶うといった言い伝えが残されています。"}}
+      {"@type":"Question","name":"クロユリはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏に暗紫褐色の花を咲かせます。ユリ科の多年草です。"}},
+      {"@type":"Question","name":"クロユリの花言葉『恋の魔術』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"暗紫褐色という珍しい花色が、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"クロユリはどんな印象を持つ花ですか？","acceptedAnswer":{"@type":"Answer","text":"神秘的で少し妖艶な印象を与えるとされる花です。他の花にはあまり見られない暗紫褐色が特徴です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 8 · 誕生花</span>
     <h1>7月8日の誕生花はクロユリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クロユリは、ユリ科の多年草で、夏になると暗紫褐色の花を咲かせ、他に類を見ない花色が神秘的で少し妖艶な印象を漂わせる花です。花言葉は「恋の魔術」。神秘的で妖艶な印象を漂わせる花です。</p>
+    <p class="art-lead">他ではなかなか出会えない暗紫褐色の花びらが、夏の草むらに咲いています。クロユリは、その色だけで人の想像力をかき立ててしまう花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クロユリとは</a></li>
-      <li><a href="#meaning">クロユリが象徴する意味</a></li>
-      <li><a href="#charm">クロユリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月8日の誕生花として親しまれるクロユリ</a></li>
+      <li><a href="#story">暗紫褐色が誘う、クロユリの妖しい魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クロユリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クロユリとは</h2>
-    <p>クロユリは、ユリ科の多年草で、7月8日の誕生花として知られています。夏になると暗紫褐色の花を咲かせ、他に類を見ない花色が神秘的で少し妖艶な印象を漂わせる花です。</p>
-  </section>
+    <h2>7月8日の誕生花として親しまれるクロユリ</h2>
+    <p>クロユリは、ユリ科の多年草です。夏になると、暗紫褐色の花を咲かせます。神秘的で少し妖艶な印象を与えるとされるこの花は、7月8日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クロユリが象徴する意味</h2>
-    <p>クロユリの花言葉は「恋の魔術」です。暗紫褐色という珍しい花色と独特の香りが、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クロユリの魅力</h2>
-    <p>クロユリの魅力は、他に類を見ない暗紫褐色の花色と、高山に咲く花ならではの神秘的な存在感にあります。アイヌをはじめ各地に伝わる伝説とともに語り継がれてきた花です。7月8日生まれの方はもちろん、特別な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クロユリは涼しく湿り気のある環境を好み、夏の直射日光を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月8日生まれの方はもちろん、特別な想いを伝えたい贈り物としてもクロユリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロユリはいつ頃咲きますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロユリはどんな色の花を咲かせますか？</div>
         <div class="faq-a">夏に暗紫褐色の花を咲かせます。ユリ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロユリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">暗紫褐色という珍しい花色と独特の香りが、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロユリにはどんな伝説がありますか？</div>
-        <div class="faq-a">アイヌや日本各地に、この花を手にした者の恋が叶うといった言い伝えが残されています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>暗紫褐色が誘う、クロユリの妖しい魅力</h2>
+    <p>クロユリの花びらは、黒に近い暗紫褐色をしており、日の光の角度によって紫にも褐色にも見える不思議な色合いを見せます。一般的な花のような明るさとは対照的に、影を帯びたその色は見る人の視線を静かに引き寄せ、離しません。華やかさで飾ることをせず、むしろ控えめな色でありながら強い印象を残すというところに、この花ならではの神秘性が宿っています。理屈では説明しきれないこの引力にこそ、「恋の魔術」という言葉がふさわしいのではないでしょうか。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クロユリの花言葉『恋の魔術』の由来は何ですか？</div>
+        <div class="faq-a">暗紫褐色という珍しい花色が、人の心を惹きつける神秘的な魔力を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>クロユリの花びらは黒に近い暗紫褐色をしていて、日の光の角度によって紫にも褐色にも見えます。静けさをまとったまま、なぜか視線を引き寄せる、そんな不思議な引力を持っています。理由の説明できない心の動きを、今日はそっと見つめていたい気がします。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クロユリから始める小さな体験</h2>
+    <p>暗紫褐色の花びらを咲かせるクロユリにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>暗紫褐色の花びらをじっくり観察してみる</li>
+      <li>誰かに惹かれた瞬間を思い出してみる</li>
+      <li>少し神秘的な雰囲気を装いに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クロユリはどんな印象を持つ花ですか？</div>
+        <div class="faq-a">神秘的で少し妖艶な印象を与えるとされる花です。他の花にはあまり見られない暗紫褐色が特徴です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">神秘的な魅力に惹かれた今日は、ラッキーカラーやおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、ラッキーカラーとおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>説明しきれない引力をまとうクロユリの暗紫褐色は、理屈という物差しでは測れない心の動きを静かに映し出す鏡なのだ。</p>
     <ul>
-      <li>クロユリは夏に暗紫褐色の花を咲かせる、7月8日の誕生花</li>
-      <li>花言葉は「恋の魔術」、珍しい花色と香りに由来する</li>
-      <li>他に類を見ない神秘的な花色が魅力</li>
-      <li>涼しく湿り気のある環境で、夏の直射日光を避けることが必要</li>
+      <li>クロユリは夏に暗紫褐色の花を咲かせる、ユリ科の多年草で、7月8日の誕生花</li>
+      <li>花言葉は「恋の魔術」。珍しい花色が人の心を惹きつける神秘的な魔力に由来するとされる</li>
+      <li>神秘的で少し妖艶な印象を与えるとされる</li>
+      <li>他の花にはあまり見られない色合いが魅力</li>
     </ul>
   </section>
 

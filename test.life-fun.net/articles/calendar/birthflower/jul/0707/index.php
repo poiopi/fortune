@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0707/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月7日の誕生花ヒオウギの花言葉・特徴・魅力をわかりやすく解説。「静かな愛」を象徴する扇のような葉と個性的な花模様の意味を紹介します。">
+  <meta name="description" content="7月7日の誕生花ヒオウギの花言葉・特徴・魅力をわかりやすく解説。オレンジ色に赤い斑点が散る、夏を彩るアヤメ科の花を紹介します。">
   <title>7月7日の誕生花はヒオウギ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒオウギはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にオレンジ色に赤い斑点の入った花を咲かせます。アヤメ科の多年草です。"}},
-      {"@type":"Question","name":"ヒオウギの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一日でしぼんでしまう儚い花の姿が、静かに寄り添う変わらぬ愛を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヒオウギという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"扇状に広がる葉の形が、檜（ひのき）で作られた扇「檜扇（ひおうぎ）」に似ていることから名付けられたとされています。"}}
+      {"@type":"Question","name":"ヒオウギの花にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"オレンジ色の地に赤い斑点が散った、個性的な模様を持つのが特徴です。アヤメ科の多年草です。"}},
+      {"@type":"Question","name":"ヒオウギの花言葉『静かな愛』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"声高に主張することのない落ち着いた色合いでありながら、確かな存在感を放つ咲き方が、静かに寄り添う愛のかたちを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"ヒオウギの花はどんな色をしていますか？","acceptedAnswer":{"@type":"Answer","text":"オレンジ色の地に赤い斑点が入った、他にはない個性的な色合いをしています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 7 · 誕生花</span>
     <h1>7月7日の誕生花はヒオウギ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒオウギは、アヤメ科の多年草で、夏になるとオレンジ色に赤い斑点の入った花を咲かせ、扇のように広がる葉とともに個性的な存在感を放つ花です。花言葉は「静かな愛」。扇のような葉を広げる個性的な花です。</p>
+    <p class="art-lead">夏の日差しの中に、オレンジ色の地に赤い斑点が散った花がひとつ咲いています。ヒオウギは、他ではあまり見かけない模様を持つ、アヤメ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒオウギとは</a></li>
-      <li><a href="#meaning">ヒオウギが象徴する意味</a></li>
-      <li><a href="#charm">ヒオウギの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月7日の誕生花として親しまれるヒオウギ</a></li>
+      <li><a href="#story">オレンジに散る赤い斑点、ヒオウギの個性的な色彩</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒオウギから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒオウギとは</h2>
-    <p>ヒオウギは、アヤメ科の多年草で、7月7日の誕生花として知られています。夏になるとオレンジ色に赤い斑点の入った花を咲かせ、扇のように広がる葉とともに個性的な存在感を放つ花です。</p>
-  </section>
+    <h2>7月7日の誕生花として親しまれるヒオウギ</h2>
+    <p>ヒオウギは、アヤメ科の多年草です。夏になると、オレンジ色に赤い斑点の入った花を咲かせます。他にはない個性的な色合いを持つこの花は、7月7日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒオウギが象徴する意味</h2>
-    <p>ヒオウギの花言葉は「静かな愛」です。一日でしぼんでしまう儚い花の姿が、静かに寄り添う変わらぬ愛を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒオウギの魅力</h2>
-    <p>ヒオウギの魅力は、オレンジ色に赤い斑点が入った個性的な花模様と、扇のように広がる葉の美しさにあります。扇のような葉の形から、縁起の良い花としても親しまれています。7月7日生まれの方はもちろん、静かな愛を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒオウギは日当たりと水はけの良い場所を好み、乾燥に強いため過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月7日生まれの方はもちろん、静かな愛を伝えたい贈り物としてもヒオウギは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒオウギはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にオレンジ色に赤い斑点の入った花を咲かせます。アヤメ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒオウギの花言葉の由来は何ですか？</div>
-        <div class="faq-a">一日でしぼんでしまう儚い花の姿が、静かに寄り添う変わらぬ愛を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒオウギという名前の由来は何ですか？</div>
-        <div class="faq-a">扇状に広がる葉の形が、檜（ひのき）で作られた扇「檜扇（ひおうぎ）」に似ていることから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヒオウギの花にはどんな特徴がありますか？</div>
+        <div class="faq-a">オレンジ色の地に赤い斑点が散った、個性的な模様を持つのが特徴です。アヤメ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>オレンジに散る赤い斑点、ヒオウギの個性的な色彩</h2>
+    <p>ヒオウギの花びらは、鮮やかなオレンジ色の地に赤い斑点が散らばるという、ほかの花にはあまり見られない模様を持っています。均一な色ではなく、一つひとつ配置の違う斑点があることで、同じ花でも見るたびに違った表情に映るのが特徴です。この個性的な色合いは、夏の強い日差しの中でもひときわ目を引く存在感を放ちます。「静かな愛」という花言葉は、一つとして同じ配置のない斑点を静かにまとうこの花の咲き方そのものを映しているのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒオウギの花言葉『静かな愛』の由来は何ですか？</div>
+        <div class="faq-a">声高に主張することのない落ち着いた色合いでありながら、確かな存在感を放つ咲き方が、静かに寄り添う愛のかたちを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>ヒオウギの花びらには、鮮やかなオレンジの地に赤い斑点が一つひとつ違う配置で散っています。均一に整えられた模様ではないからこそ、同じ花でも見るたびに違う表情を見せてくれます。静かな眼差しのまま、大切な想いを誰かに届けてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒオウギから始める小さな体験</h2>
+    <p>個性的な色合いを見せるヒオウギにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>オレンジ色に散った赤い斑点をじっくり観察してみる</li>
+      <li>静かに誰かを想う時間を持ってみる</li>
+      <li>オレンジ色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒオウギの花はどんな色をしていますか？</div>
+        <div class="faq-a">オレンジ色の地に赤い斑点が入った、他にはない個性的な色合いをしています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かな想いを確かめたい今日は、今月の誕生石や星座もあわせて確認してみませんか。開運カレンダーでは、今月の誕生石と星座占いを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一つひとつ配置の違う斑点をまとうヒオウギの色模様は、見るたびに新しい表情を残してくれます。</p>
     <ul>
-      <li>ヒオウギは夏にオレンジ色の花を咲かせる、7月7日の誕生花</li>
-      <li>花言葉は「静かな愛」、一日で咲き終わる儚さに由来する</li>
-      <li>個性的な花模様と扇のような葉が魅力</li>
-      <li>日当たりと水はけの良い場所で、過湿を避けることが必要</li>
+      <li>ヒオウギは夏にオレンジ色に赤い斑点の入った花を咲かせる、アヤメ科の多年草で、7月7日の誕生花</li>
+      <li>花言葉は「静かな愛」。落ち着いた色合いでありながら確かな存在感を放つ咲き方に由来するとされる</li>
+      <li>他にはない個性的な色合いを持つのが特徴</li>
+      <li>声高に主張しない、静かな咲き方が魅力</li>
     </ul>
   </section>
 

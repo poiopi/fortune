@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0703/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月3日の誕生花バラ（ピンク）の花言葉・特徴・魅力をわかりやすく解説。「感銘」を象徴する優しいピンク色の花びらの意味を紹介します。">
+  <meta name="description" content="7月3日の誕生花バラ（ピンク）の花言葉・特徴・魅力をわかりやすく解説。幾重にも重なる花びらが優しいピンクの気品を語る、バラ科の花を紹介します。">
   <title>7月3日の誕生花はバラ（ピンク）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バラ（ピンク）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"優しい印象のピンク色の花を咲かせます。バラ科の落葉低木です。"}},
-      {"@type":"Question","name":"バラ（ピンク）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"優しく上品なピンク色の花姿が、見る人の心に深い印象を残すことに由来すると言われています。"}},
-      {"@type":"Question","name":"バラの花色によって花言葉は変わりますか？","acceptedAnswer":{"@type":"Answer","text":"はい。バラは色によって花言葉が異なり、ピンクのバラには「感銘」のほか「上品」といった意味も込められています。"}}
+      {"@type":"Question","name":"バラ（ピンク）はどんな花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"優しい印象のピンク色の花を、幾重にも重なる花びらとともに咲かせます。バラ科の落葉低木です。"}},
+      {"@type":"Question","name":"バラ（ピンク）の花言葉『感銘』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"優しく上品なピンク色の花姿が、見る人の心に深い印象を残すことに由来すると言われています。"}},
+      {"@type":"Question","name":"バラ（ピンク）はどんな香りを持ちますか？","acceptedAnswer":{"@type":"Answer","text":"同じバラの仲間は、幾重にも重なる花びらから芳香を漂わせるとされ、色とともに華やかさと気品を演出しています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 3 · 誕生花</span>
     <h1>7月3日の誕生花はバラ（ピンク）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バラ（ピンク）は、バラ科の落葉低木で、優しい印象のピンク色の花びらを幾重にも重ねて咲かせ、上品で華やかな存在感を放つ花です。花言葉は「感銘」。優しい印象の花びらを重ねて咲く花です。</p>
+    <p class="art-lead">幾重にも重なった花びらの隙間から、優しいピンク色がこぼれ出しています。バラ（ピンク）は、その柔らかな色合いだけで、見る人の心をふっと和らげてしまう花です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>バラ（ピンク）</dd>
     <dt>花言葉</dt><dd>感銘</dd>
     <dt>科名</dt><dd>バラ科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バラ（ピンク）とは</a></li>
-      <li><a href="#meaning">バラ（ピンク）が象徴する意味</a></li>
-      <li><a href="#charm">バラ（ピンク）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月3日の誕生花として親しまれるバラ（ピンク）</a></li>
+      <li><a href="#story">幾重にも重なるピンクが、静かな感動を運ぶ理由</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バラ（ピンク）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バラ（ピンク）とは</h2>
-    <p>バラ（ピンク）は、バラ科の落葉低木で、7月3日の誕生花として知られています。優しい印象のピンク色の花びらを幾重にも重ねて咲かせ、上品で華やかな存在感を放つ花です。</p>
-  </section>
+    <h2>7月3日の誕生花として親しまれるバラ（ピンク）</h2>
+    <p>バラ（ピンク）は、バラ科の落葉低木です。優しい印象のピンク色の花を咲かせ、同じバラの仲間は初夏を中心に幾重にも重なる花びらから芳香を漂わせ、華やかさと気品を兼ね備えた花として知られています。その中でも柔らかなピンク色をまとう品種が、7月3日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バラ（ピンク）が象徴する意味</h2>
-    <p>バラ（ピンク）の花言葉は「感銘」です。優しく上品なピンク色の花姿が、見る人の心に深い印象を残すことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バラ（ピンク）の魅力</h2>
-    <p>バラ（ピンク）の魅力は、優しい色合いの花びらが幾重にも重なる華やかさと、気品ある香りにあります。色によって花言葉が異なるバラの中でも、優しさを表す色として親しまれています。7月3日生まれの方はもちろん、感謝の気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バラは日当たりと風通しの良い場所を好み、こまめな剪定を行うと管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月3日生まれの方はもちろん、感謝の気持ちを伝えたい贈り物としてもバラ（ピンク）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（ピンク）はいつ頃咲きますか？</div>
-        <div class="faq-a">優しい印象のピンク色の花を咲かせます。バラ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（ピンク）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">優しく上品なピンク色の花姿が、見る人の心に深い印象を残すことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラの花色によって花言葉は変わりますか？</div>
-        <div class="faq-a">はい。バラは色によって花言葉が異なり、ピンクのバラには「感銘」のほか「上品」といった意味も込められています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（ピンク）はどんな花を咲かせますか？</div>
+        <div class="faq-a">優しい印象のピンク色の花を、幾重にも重なる花びらとともに咲かせます。バラ科の落葉低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>幾重にも重なるピンクが、静かな感動を運ぶ理由</h2>
+    <p>バラ（ピンク）の花びらは、外側から中心に向かって幾重にも重なり合い、奥に進むほど色の濃淡が微妙に変化していきます。強すぎず、けれど確かに存在感のあるこのピンク色は、見る人の心にじんわりと余韻を残す色合いです。派手さで惹きつけるのではなく、重なり合った花びらの奥行きそのものが、静かな驚きを連れてくるように感じられます。声を大きくしなくても伝わる、この穏やかな存在感こそが「感銘」という花言葉の正体なのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（ピンク）の花言葉『感銘』の由来は何ですか？</div>
+        <div class="faq-a">優しく上品なピンク色の花姿が、見る人の心に深い印象を残すことに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かのひと言に、思いのほか長く心を掴まれてしまった経験はありませんか。バラ（ピンク）の花びらが幾重にも重なりながら静かな色の奥行きを作るように、感動もまた、重なり合って初めて深まるものです。心が動いた瞬間は、急がず時間をかけて味わってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バラ（ピンク）から始める小さな体験</h2>
+    <p>幾重にも重なるピンクをまとうバラ（ピンク）にならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ピンク色の花びらの重なりをじっくり観察してみる</li>
+      <li>心が動いた瞬間を一つ、誰かに伝えてみる</li>
+      <li>優しいピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（ピンク）はどんな香りを持ちますか？</div>
+        <div class="faq-a">同じバラの仲間は、幾重にも重なる花びらから芳香を漂わせるとされ、色とともに華やかさと気品を演出しています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心が動いた出来事を大切にしたい今日は、吉日やラッキーナンバーもあわせて確認してみませんか。開運カレンダーでは、吉日とラッキーナンバーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>幾重にも重なる花びらの奥行きが静かな余韻を残すバラ（ピンク）には、声を張らなくても伝わる確かな感動があります。</p>
     <ul>
-      <li>バラ（ピンク）は優しいピンク色の花を咲かせる、7月3日の誕生花</li>
-      <li>花言葉は「感銘」、優しく上品な花姿に由来する</li>
-      <li>幾重にも重なる花びらと気品ある香りが魅力</li>
-      <li>日当たりと風通しの良い場所で、こまめな剪定が必要</li>
+      <li>バラ（ピンク）は優しいピンク色の花を幾重にも重ねて咲かせる、バラ科の落葉低木で、7月3日の誕生花</li>
+      <li>花言葉は「感銘」。優しく上品な花姿が心に深い印象を残すことに由来するとされる</li>
+      <li>同じバラの仲間は幾重にも重なる花びらから芳香を漂わせ、華やかさと気品を兼ね備える</li>
+      <li>派手さではなく、色の重なりそのものが持つ静かな存在感が魅力</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0706/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月6日の誕生花トキソウの花言葉・特徴・魅力をわかりやすく解説。「つつましやか」を象徴する朱鷺の羽を思わせる淡紅色の花の意味を紹介します。">
+  <meta name="description" content="7月6日の誕生花トキソウの花言葉・特徴・魅力をわかりやすく解説。朱鷺の羽の色に見立てられた、初夏に咲く淡紅色のラン科の花を紹介します。">
   <title>7月6日の誕生花はトキソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"トキソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に淡紅色の花を咲かせます。ラン科の多年草です。"}},
-      {"@type":"Question","name":"トキソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さく控えめに咲く淡紅色の花姿が、つつましやかな奥ゆかしさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"トキソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の色合いが、鳥の朱鷺（トキ）の羽の色に似ていることから名付けられたとされています。"}}
+      {"@type":"Question","name":"トキソウはどんな科に属する花ですか？","acceptedAnswer":{"@type":"Answer","text":"ラン科の多年草です。初夏になると、朱鷺の羽を思わせる淡紅色の花を咲かせます。"}},
+      {"@type":"Question","name":"トキソウの花言葉『つつましやか』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さく控えめに咲く淡紅色の花姿が、つつましやかな奥ゆかしさを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"トキソウという名前はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"花の色合いが、鳥の朱鷺（トキ）の羽の色に似ていることから名付けられたとされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 6 · 誕生花</span>
     <h1>7月6日の誕生花はトキソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">トキソウは、ラン科の多年草で、初夏になると朱鷺の羽を思わせる淡紅色の花を咲かせ、湿地にひっそりと佇む可憐な花です。花言葉は「つつましやか」。朱鷺の羽を思わせる淡紅色の花です。</p>
+    <p class="art-lead">朱鷺の羽を思わせる淡い紅色の花が、初夏の風にそっと揺れています。トキソウという名前には、その色合いをそのまま鳥に重ねた人の眼差しが残っています。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">トキソウとは</a></li>
-      <li><a href="#meaning">トキソウが象徴する意味</a></li>
-      <li><a href="#charm">トキソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月6日の誕生花として親しまれるトキソウ</a></li>
+      <li><a href="#story">朱鷺の羽から名付けられた、トキソウの控えめな色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、トキソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>トキソウとは</h2>
-    <p>トキソウは、ラン科の多年草で、7月6日の誕生花として知られています。初夏になると朱鷺の羽を思わせる淡紅色の花を咲かせ、湿地にひっそりと佇む可憐な花です。</p>
-  </section>
+    <h2>7月6日の誕生花として親しまれるトキソウ</h2>
+    <p>トキソウは、ラン科の多年草です。初夏になると、淡紅色の花を咲かせます。この花の色合いが朱鷺の羽を思わせることから名付けられたとされ、7月6日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>トキソウが象徴する意味</h2>
-    <p>トキソウの花言葉は「つつましやか」です。小さく控えめに咲く淡紅色の花姿が、つつましやかな奥ゆかしさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>トキソウの魅力</h2>
-    <p>トキソウの魅力は、朱鷺の羽を思わせる優しい淡紅色と、湿地にひっそりと咲く可憐な佇まいにあります。湿地に咲く可憐な山野草として、古くから愛されてきました。7月6日生まれの方はもちろん、控えめな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>トキソウは湿り気のある用土を好み、直射日光を避けた明るい場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月6日生まれの方はもちろん、控えめな想いを伝えたい贈り物としてもトキソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トキソウはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に淡紅色の花を咲かせます。ラン科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トキソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さく控えめに咲く淡紅色の花姿が、つつましやかな奥ゆかしさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トキソウという名前の由来は何ですか？</div>
-        <div class="faq-a">花の色合いが、鳥の朱鷺（トキ）の羽の色に似ていることから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">トキソウはどんな科に属する花ですか？</div>
+        <div class="faq-a">ラン科の多年草です。初夏になると、朱鷺の羽を思わせる淡紅色の花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>朱鷺の羽から名付けられた、トキソウの控えめな色</h2>
+    <p>トキソウという名前は、この花が咲かせる淡紅色が、鳥の朱鷺の羽の色に似ていることに由来するといわれています。実在する生き物の色を花の名前にそのまま重ねるところに、この花ならではの名付けの物語があります。誰かに気づかれることを求めず、自分のペースで静かに咲き続ける——それが「つつましやか」という花言葉にふさわしいトキソウの生き方。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">トキソウの花言葉『つつましやか』の由来は何ですか？</div>
+        <div class="faq-a">小さく控えめに咲く淡紅色の花姿が、つつましやかな奥ゆかしさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>トキソウの淡紅色は、鳥の朱鷺の羽の色にそのまま重ねられたのだといわれています。小さく咲くこの花は、自分のペースで静かに咲き続けます。目立たない場所で咲く花の姿に、今日はどんな自分を重ねてみますか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、トキソウから始める小さな体験</h2>
+    <p>淡紅色の花をひっそりと咲かせるトキソウにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>淡紅色の花をじっくり観察してみる</li>
+      <li>朱鷺という鳥について少し調べてみる</li>
+      <li>控えめだけど心のこもった行動を一つしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">トキソウという名前はどこから来ていますか？</div>
+        <div class="faq-a">花の色合いが、鳥の朱鷺（トキ）の羽の色に似ていることから名付けられたとされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">控えめな想いを届けたい今日は、月九星やラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、月九星とラッキープレイスを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>朱鷺の羽の色をそのままに受け継いだトキソウの控えめな咲き方は、大きな声を上げなくても心に残る魅力があることを教えてくれているのではないだろうか。</p>
     <ul>
-      <li>トキソウは初夏に淡紅色の花を咲かせる、7月6日の誕生花</li>
-      <li>花言葉は「つつましやか」、控えめに咲く花姿に由来する</li>
-      <li>朱鷺の羽を思わせる優しい色合いが魅力</li>
-      <li>湿り気のある用土で、直射日光を避けることが必要</li>
+      <li>トキソウは初夏に淡紅色の花を咲かせる、ラン科の多年草で、7月6日の誕生花</li>
+      <li>花言葉は「つつましやか」。小さく控えめに咲く花姿に由来するとされる</li>
+      <li>花の色合いが朱鷺の羽を思わせることから名付けられたとされる</li>
+      <li>大きく主張せず、自分のペースで咲き続ける佇まいが魅力</li>
     </ul>
   </section>
 

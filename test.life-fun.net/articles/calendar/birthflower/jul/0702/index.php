@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0702/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月2日の誕生花カラー（白）の花言葉・特徴・魅力をわかりやすく解説。「歓喜」を象徴する初夏に咲く白い苞の花の意味を紹介します。">
+  <meta name="description" content="7月2日の誕生花カラー（白）の花言葉・特徴・魅力をわかりやすく解説。らっぱ状に開く白い苞を初夏に咲かせる、清らかな印象のサトイモ科の花を紹介します。">
   <title>7月2日の誕生花はカラー（白）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カラー（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い苞に包まれた花を咲かせます。サトイモ科の多年草です。"}},
-      {"@type":"Question","name":"カラー（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"純白の花姿が持つ清らかさと、初夏に凛と咲く姿が、喜びに満ちた清々しい気持ちを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"カラーはどんな場面で使われますか？","acceptedAnswer":{"@type":"Answer","text":"純白で気品ある姿から、結婚式のブーケなど華やかな場面の花としても人気です。"}}
+      {"@type":"Question","name":"カラー（白）はどんな花の形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"らっぱのように巻かれた一枚の白い苞が、茎の先でゆるやかに開きます。初夏に見頃を迎えるサトイモ科の多年草です。"}},
+      {"@type":"Question","name":"カラー（白）の花言葉『歓喜』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"純白の花姿が持つ清らかさと、初夏に凛と咲く姿が、喜びに満ちた清々しい気持ちを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"カラー（白）の苞にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"らっぱのように巻かれた一枚の白い苞が、茎の先でゆるやかに開いていきます。清楚で洗練された印象を与える花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 2 · 誕生花</span>
     <h1>7月2日の誕生花はカラー（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カラー（白）は、サトイモ科の多年草で、初夏になると白い苞に包まれた花をすっと伸びた茎の先に咲かせ、清楚で気品ある佇まいを見せる花です。花言葉は「歓喜」。清らかで気品ある苞を咲かせる花です。</p>
+    <p class="art-lead">すっと伸びた茎の先で、白い苞がらっぱのようにゆっくりと開いていきます。カラー（白）は、飾りけのない一枚の白さで初夏の空気を静かに満たす花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カラー（白）とは</a></li>
-      <li><a href="#meaning">カラー（白）が象徴する意味</a></li>
-      <li><a href="#charm">カラー（白）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月2日の誕生花として親しまれるカラー（白）</a></li>
+      <li><a href="#story">らっぱ状に開く、カラーの静かな喜びの表現</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カラー（白）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カラー（白）とは</h2>
-    <p>カラー（白）は、サトイモ科の多年草で、7月2日の誕生花として知られています。初夏になると白い苞に包まれた花をすっと伸びた茎の先に咲かせ、清楚で気品ある佇まいを見せる花です。</p>
-  </section>
+    <h2>7月2日の誕生花として親しまれるカラー（白）</h2>
+    <p>カラー（白）は、サトイモ科の多年草です。初夏になると、らっぱ状に開く白い苞に包まれた花を茎の先に咲かせます。同じ仲間のカラーは清楚で洗練された印象を与える花として知られ、その中でも白い品種は7月2日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カラー（白）が象徴する意味</h2>
-    <p>カラー（白）の花言葉は「歓喜」です。純白の花姿が持つ清らかさと、初夏に凛と咲く姿が、喜びに満ちた清々しい気持ちを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カラー（白）の魅力</h2>
-    <p>カラー（白）の魅力は、白い苞が持つ清楚な美しさと、すっと伸びた茎が生み出す気品ある佇まいにあります。結婚式のブーケなど、晴れやかな場面を彩る花としても親しまれています。7月2日生まれの方はもちろん、喜びを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カラーは日当たりと多湿を好み、生育期は水を切らさないよう管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月2日生まれの方はもちろん、喜びを伝えたい贈り物としてもカラー（白）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カラー（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白い苞に包まれた花を咲かせます。サトイモ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カラー（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">純白の花姿が持つ清らかさと、初夏に凛と咲く姿が、喜びに満ちた清々しい気持ちを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カラーはどんな場面で使われますか？</div>
-        <div class="faq-a">純白で気品ある姿から、結婚式のブーケなど華やかな場面の花としても人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カラー（白）はどんな花の形をしていますか？</div>
+        <div class="faq-a">らっぱのように巻かれた一枚の白い苞が、茎の先でゆるやかに開きます。初夏に見頃を迎えるサトイモ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>らっぱ状に開く、カラーの静かな喜びの表現</h2>
+    <p>カラーの花は、一枚の苞がくるりと巻かれながら、らっぱの形にゆっくりと開いていきます。花びらのように見えるこの苞は、白い品種の場合、清潔感のある巻かれた形と、開いたあとのしなやかな曲線の両方を見せてくれるのが魅力です。「歓喜」という花言葉を持つこの花は、静かな喜びをそのまま形にしたような佇まいをしています。すっと伸びた茎の先端で完成するその白い曲線は、静かにそこにあるだけで満ち足りて見えます。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カラー（白）の花言葉『歓喜』の由来は何ですか？</div>
+        <div class="faq-a">純白の花姿が持つ清らかさと、初夏に凛と咲く姿が、喜びに満ちた清々しい気持ちを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>嬉しいことがあったなら、飾らない言葉でそのまま誰かに伝えてみませんか。カラー（白）の苞が、らっぱの形へと静かに広がっていくように、素直に出した喜びのほうが、案外まっすぐ相手に届くものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カラー（白）から始める小さな体験</h2>
+    <p>白い苞がまっすぐに開いていくカラー（白）にならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>らっぱ状に開く白い苞をじっくり観察してみる</li>
+      <li>白いものを身の回りに一つ取り入れてみる</li>
+      <li>清々しい初夏の空気を感じながら深呼吸してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カラー（白）の苞にはどんな特徴がありますか？</div>
+        <div class="faq-a">らっぱのように巻かれた一枚の白い苞が、茎の先でゆるやかに開いていきます。清楚で洗練された印象を与える花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">白い苞がまっすぐに開く今日は、六曜やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、六曜とラッキーカラーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>『歓喜』という花言葉をまとったカラーの白は、飾ることなく、それだけで初夏の空気を清らかに染め上げてしまう。</p>
     <ul>
-      <li>カラー（白）は初夏に白い苞を咲かせる、7月2日の誕生花</li>
-      <li>花言葉は「歓喜」、清らかに咲く姿に由来する</li>
-      <li>清楚な苞の美しさと気品ある佇まいが魅力</li>
-      <li>日当たりと多湿を好み、生育期は水を切らさないことが必要</li>
+      <li>カラー（白）は初夏にらっぱ状の白い苞を咲かせる、サトイモ科の多年草で、7月2日の誕生花</li>
+      <li>花言葉は「歓喜」。純白の花姿が持つ清らかさに由来するとされる</li>
+      <li>同じ仲間のカラーは清楚で洗練された印象を与える花として知られる</li>
+      <li>一枚の苞がくるりと巻かれながら開いていく姿が特徴的</li>
     </ul>
   </section>
 
