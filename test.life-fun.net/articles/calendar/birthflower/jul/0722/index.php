@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0722/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月22日の誕生花ナツツバキの花言葉・特徴・魅力をわかりやすく解説。「気品」を象徴する一日で散る白い花の意味を紹介します。">
+  <meta name="description" content="7月22日の誕生花ナツツバキの花言葉・特徴・魅力をわかりやすく解説。初夏に白い花を咲かせ一日で散る、ツバキ科の花木を紹介します。">
   <title>7月22日の誕生花はナツツバキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ナツツバキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い花を咲かせ一日で散ります。ツバキ科の落葉高木です。"}},
-      {"@type":"Question","name":"ナツツバキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一日だけ咲いて静かに散っていく潔い花の姿が、凛とした気品を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ナツツバキはお寺でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"はい。夏椿とも呼ばれ、寺院の庭園に植えられることが多く「沙羅の木」として親しまれています。"}}
+      {"@type":"Question","name":"ナツツバキの花はどのように散りますか？","acceptedAnswer":{"@type":"Answer","text":"朝に咲いた白い花が、その日のうちに一日で散ります。ツバキ科の落葉高木です。"}},
+      {"@type":"Question","name":"ナツツバキの花言葉『気品』はどこから来ているのですか？","acceptedAnswer":{"@type":"Answer","text":"一日で散るまで花びらの形を崩さず保ち続ける、乱れのない咲き方が、この花言葉と結びついてきたといわれています。"}},
+      {"@type":"Question","name":"ナツツバキは椿と同じ時期に咲きますか？","acceptedAnswer":{"@type":"Answer","text":"ツバキ科ですが、冬から春に咲く一般的な椿とは異なり、初夏に花を咲かせ一日で散ります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 22 · 誕生花</span>
     <h1>7月22日の誕生花はナツツバキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ナツツバキは、ツバキ科の落葉高木で、初夏になると白い花を咲かせ、一日で潔く散っていく儚い美しさを持つ花木です。花言葉は「気品」。一日で潔く散る儚い花木です。</p>
+    <p class="art-lead">朝に開いた白い花が、夕方には静かに地面へと落ちています。ナツツバキは、一日という短い時間の中で咲き切る花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ナツツバキとは</a></li>
-      <li><a href="#meaning">ナツツバキが象徴する意味</a></li>
-      <li><a href="#charm">ナツツバキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月22日の誕生花として親しまれるナツツバキ</a></li>
+      <li><a href="#story">一日で散る潔さに宿る、ナツツバキの気品</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ナツツバキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ナツツバキとは</h2>
-    <p>ナツツバキは、ツバキ科の落葉高木で、7月22日の誕生花として知られています。初夏になると白い花を咲かせ、一日で潔く散っていく儚い美しさを持つ花木です。</p>
-  </section>
+    <h2>7月22日の誕生花として親しまれるナツツバキ</h2>
+    <p>ナツツバキは、ツバキ科の落葉高木です。初夏に白い花を咲かせ、一日で散ります。7月22日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ナツツバキが象徴する意味</h2>
-    <p>ナツツバキの花言葉は「気品」です。一日だけ咲いて静かに散っていく潔い花の姿が、凛とした気品を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ナツツバキの魅力</h2>
-    <p>ナツツバキの魅力は、純白の花びらが持つ気品ある美しさと、一日で潔く散っていく儚さにあります。寺院の庭園にも植えられ、静かな佇まいで親しまれています。7月22日生まれの方はもちろん、気品ある想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ナツツバキは半日陰を好み、乾燥を嫌うため適度な湿り気を保って管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月22日生まれの方はもちろん、気品ある想いを伝えたい贈り物としてもナツツバキは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナツツバキはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白い花を咲かせ一日で散ります。ツバキ科の落葉高木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナツツバキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">一日だけ咲いて静かに散っていく潔い花の姿が、凛とした気品を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナツツバキはお寺でよく見られますか？</div>
-        <div class="faq-a">はい。夏椿とも呼ばれ、寺院の庭園に植えられることが多く「沙羅の木」として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ナツツバキの花はどのように散りますか？</div>
+        <div class="faq-a">朝に咲いた白い花が、その日のうちに一日で散ります。ツバキ科の落葉高木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>一日で散る潔さに宿る、ナツツバキの気品</h2>
+    <p>ナツツバキが花を咲かせるのは初夏のわずかな期間で、しかも一輪の命はたった一日しか続きません。朝に開いた白い花びらは、形を崩すことなく夕方を迎え、そのまま静かに地面へ落ちていきます。散る瞬間まで乱れを見せないこの咲き方から、『気品』という花言葉が生まれたとされています。椿の仲間ではあるものの、一般的な椿が冬から春に咲くのに対し、ナツツバキは初夏に一日だけの花を咲かせる点が、この木ならではの個性です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ナツツバキの花言葉『気品』はどこから来ているのですか？</div>
+        <div class="faq-a">一日で散るまで花びらの形を崩さず保ち続ける、乱れのない咲き方が、この花言葉と結びついてきたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一日という短い時間の中にも、丁寧に生きることはできます。今日という日を、始まりから終わりまで大切に見届けてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ナツツバキから始める小さな体験</h2>
+    <p>一日という短い時間に花を咲かせきるナツツバキにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い花が一日で散る様子を想像してみる</li>
+      <li>気品のある振る舞いを一つ意識してみる</li>
+      <li>儚さの中にある美しさを見つけてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ナツツバキは椿と同じ時期に咲きますか？</div>
+        <div class="faq-a">ツバキ科ですが、冬から春に咲く一般的な椿とは異なり、初夏に花を咲かせ一日で散ります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">短い時間の中にある美しさに気づきたい今日は、今月の誕生石やラッキーナンバーもあわせて確認してみませんか。開運カレンダーでは、今月の誕生石とラッキーナンバーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>散る瞬間まで花びらの形を崩さないその咲き方こそ、気品という言葉の本当の意味なのかもしれない。</p>
     <ul>
-      <li>ナツツバキは初夏に白い花を咲かせ一日で散る、7月22日の誕生花</li>
-      <li>花言葉は「気品」、潔く散る花姿に由来する</li>
-      <li>純白の花びらの気品ある美しさが魅力</li>
-      <li>半日陰で、適度な湿り気を保つことが必要</li>
+      <li>ナツツバキは初夏に白い花を咲かせ一日で散る、ツバキ科の落葉高木で、7月22日の誕生花</li>
+      <li>花言葉は「気品」。一日で散るまで形を崩さない咲き方と結びついてきたとされる</li>
+      <li>冬から春に咲く一般的な椿とは異なり、初夏に花を咲かせる</li>
+      <li>一日限りで散る儚さと気高さが魅力</li>
     </ul>
   </section>
 

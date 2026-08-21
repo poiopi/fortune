@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0718/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月18日の誕生花ゲッカビジンの花言葉・特徴・魅力をわかりやすく解説。「ただ一度の恋」を象徴する一晩だけ咲く大輪の白い花の意味を紹介します。">
+  <meta name="description" content="7月18日の誕生花ゲッカビジンの花言葉・特徴・魅力をわかりやすく解説。夏の夜に大輪の白い花を一晩だけ咲かせる、サボテン科の花を紹介します。">
   <title>7月18日の誕生花はゲッカビジン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ゲッカビジンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏の夜に大輪の白い花を一晩だけ咲かせます。サボテン科の多年草です。"}},
-      {"@type":"Question","name":"ゲッカビジンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一夜限りで大輪の花を咲かせて散っていく儚さが、二度と巡り合えないただ一度の恋を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ゲッカビジンはなぜ一晩しか咲かないのですか？","acceptedAnswer":{"@type":"Answer","text":"夜に咲いて受粉を終えると翌朝にはしぼんでしまう性質を持ち、その儚さが「ただ一度の恋」という花言葉につながっています。"}}
+      {"@type":"Question","name":"ゲッカビジンはどのように花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏の夜に大輪の白い花を一晩だけ咲かせます。サボテン科の多年草です。"}},
+      {"@type":"Question","name":"ゲッカビジンはなぜ『ただ一度の恋』という花言葉になったのですか？","acceptedAnswer":{"@type":"Answer","text":"大輪の白い花が一晩だけしか咲かないという、二度と同じ姿には出会えない一度限りの美しさが、『ただ一度の恋』という花言葉として語り継がれてきました。"}}
     ]
   }
   </script>
@@ -129,14 +138,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 18 · 誕生花</span>
     <h1>7月18日の誕生花はゲッカビジン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ゲッカビジンは、サボテン科の多年草で、夏の夜になると大輪の白い花を一晩だけ咲かせ、はかなくも幻想的な印象を残す花です。花言葉は「ただ一度の恋」。一夜限りの大輪を咲かせる花です。</p>
+    <p class="art-lead">夏の夜、闇の中に大きな白い花がひっそりと開いていきます。ゲッカビジンは、一輪をたった一晩だけのために咲かせる、幻想的な花です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ゲッカビジン</dd>
     <dt>花言葉</dt><dd>ただ一度の恋</dd>
     <dt>科名</dt><dd>サボテン科</dd>
-    <dt>見頃</dt><dd>夏</dd>
+    <dt>見頃</dt><dd>夏（夜）</dd>
   </dl>
 
   <?php
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ゲッカビジンとは</a></li>
-      <li><a href="#meaning">ゲッカビジンが象徴する意味</a></li>
-      <li><a href="#charm">ゲッカビジンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月18日の誕生花として親しまれるゲッカビジン</a></li>
+      <li><a href="#story">たった一晩の大輪に込められた、ゲッカビジンの美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ゲッカビジンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ゲッカビジンとは</h2>
-    <p>ゲッカビジンは、サボテン科の多年草で、7月18日の誕生花として知られています。夏の夜になると大輪の白い花を一晩だけ咲かせ、はかなくも幻想的な印象を残す花です。</p>
-  </section>
+    <h2>7月18日の誕生花として親しまれるゲッカビジン</h2>
+    <p>ゲッカビジンは、サボテン科の多年草です。夏の夜に大輪の白い花を一晩だけ咲かせます。はかなくも幻想的な印象を持つこの花は、7月18日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ゲッカビジンが象徴する意味</h2>
-    <p>ゲッカビジンの花言葉は「ただ一度の恋」です。一夜限りで大輪の花を咲かせて散っていく儚さが、二度と巡り合えないただ一度の恋を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ゲッカビジンの魅力</h2>
-    <p>ゲッカビジンの魅力は、月明かりの下でただ一晩だけ咲く大輪の白い花と、甘く芳醇な香りが生み出す幻想的な雰囲気にあります。一夜限りの開花を待つ楽しみとして、多くの人に親しまれています。7月18日生まれの方はもちろん、特別な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ゲッカビジンは明るい日陰を好み、寒さに弱いため冬は室内で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月18日生まれの方はもちろん、特別な想いを伝えたい贈り物としてもゲッカビジンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゲッカビジンはいつ頃咲きますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ゲッカビジンはどのように花を咲かせますか？</div>
         <div class="faq-a">夏の夜に大輪の白い花を一晩だけ咲かせます。サボテン科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゲッカビジンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">一夜限りで大輪の花を咲かせて散っていく儚さが、二度と巡り合えないただ一度の恋を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゲッカビジンはなぜ一晩しか咲かないのですか？</div>
-        <div class="faq-a">夜に咲いて受粉を終えると翌朝にはしぼんでしまう性質を持ち、その儚さが「ただ一度の恋」という花言葉につながっています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>たった一晩の大輪に込められた、ゲッカビジンの美しさ</h2>
+    <p>日が沈んでからゆっくりと花びらを開き始めるゲッカビジンは、夜が明ける前にはもう静かに閉じてしまいます。大輪の白い花がこの姿を見せるのは、そのたった一晩だけです。同じ花を二度は見られない、その一度きりの巡り合わせが、『ただ一度の恋』という花言葉の土台になったといわれています。繰り返せないからこそ心に刻まれる瞬間があることを、この花は静かに教えてくれます。この一夜限りの潔さこそ、ゲッカビジンを特別な花にしています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ゲッカビジンはなぜ『ただ一度の恋』という花言葉になったのですか？</div>
+        <div class="faq-a">大輪の白い花が一晩だけしか咲かないという、二度と同じ姿には出会えない一度限りの美しさが、『ただ一度の恋』という花言葉として語り継がれてきました。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>ゲッカビジンが夜の間だけ大輪を咲かせきるように、限られた時間の中身は、過ごし方ひとつで深みを増していきます。今この瞬間を、丁寧に味わってみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ゲッカビジンから始める小さな体験</h2>
+    <p>夏の夜に一晩だけ大輪を咲かせるゲッカビジンにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>夜、大輪の白い花が咲く瞬間を待ってみる</li>
+      <li>今この瞬間を大切に過ごしてみる</li>
+      <li>一晩だけ咲く花のはかなさに思いを馳せてみる</li>
+    </ul>
+
+    <p class="cta-lead">かけがえのない瞬間を大切にしたい今日は、六曜やラッキーフードもあわせて確認してみませんか。開運カレンダーでは、六曜とラッキーフードを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>二度と同じ姿には出会えないという事実が、一輪の花をこれほどまでに美しく見せているのだろう。</p>
     <ul>
-      <li>ゲッカビジンは夏の夜に大輪の花を一晩だけ咲かせる、7月18日の誕生花</li>
-      <li>花言葉は「ただ一度の恋」、一夜限りで散る儚さに由来する</li>
-      <li>月明かりに咲く幻想的な白い花と香りが魅力</li>
-      <li>明るい日陰で、冬は室内での管理が必要</li>
+      <li>ゲッカビジンは夏の夜に大輪の白い花を一晩だけ咲かせる、サボテン科の多年草で、7月18日の誕生花</li>
+      <li>花言葉は「ただ一度の恋」。一晩限りで咲き終わる姿がこの花言葉と結びついてきたとされる</li>
+      <li>はかなくも幻想的な印象を持つ花として知られる</li>
+      <li>一度きりだからこそ心に残る美しさが魅力</li>
     </ul>
   </section>
 

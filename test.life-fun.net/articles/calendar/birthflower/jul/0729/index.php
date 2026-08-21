@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0729/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月29日の誕生花エキザカムの花言葉・特徴・魅力をわかりやすく解説。「愛の告白」を象徴する涼しげな紫色の小花の意味を紹介します。">
+  <meta name="description" content="7月29日の誕生花エキザカムの花言葉・特徴・魅力をわかりやすく解説。夏に紫色の小花をたくさん咲かせる、涼しげな印象のリンドウ科の一年草を紹介します。">
   <title>7月29日の誕生花はエキザカム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"エキザカムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に紫色の小花をたくさん咲かせます。リンドウ科の一年草です。"}},
-      {"@type":"Question","name":"エキザカムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな紫色の花が株いっぱいに咲きそろい、素直な想いをそっと語りかけるような姿が、愛の告白を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"エキザカムはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"小花からは甘く優しい香りが漂い、鉢植えとして室内でも楽しまれています。"}}
+      {"@type":"Question","name":"エキザカムはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"紫色の小花をたくさん咲かせる、リンドウ科の一年草です。涼しげな印象を持つ花とされています。"}},
+      {"@type":"Question","name":"エキザカムの花言葉『愛の告白』にはどんな意味が込められていますか？","acceptedAnswer":{"@type":"Answer","text":"紫の小花が寄り添うように咲く、飾らない佇まいが、この花言葉の由来と言われています。押しつけがましくなく、そっと気持ちを伝える花とされています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 29 · 誕生花</span>
     <h1>7月29日の誕生花はエキザカム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">エキザカムは、リンドウ科の一年草で、夏になると紫色の小花を株いっぱいに咲かせ、涼しげで甘い香りを漂わせる花です。花言葉は「愛の告白」。涼しげな紫の小花をたくさん咲かせる花です。</p>
+    <p class="art-lead">小さな紫の花が寄り添うように連なって咲きます。エキザカムは、その涼やかな彩りで夏の庭にひとときの清涼感を運ぶ花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">エキザカムとは</a></li>
-      <li><a href="#meaning">エキザカムが象徴する意味</a></li>
-      <li><a href="#charm">エキザカムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月29日の誕生花として親しまれるエキザカム</a></li>
+      <li><a href="#story">紫の彩りが伝える、エキザカムの飾らない告白</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、エキザカムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>エキザカムとは</h2>
-    <p>エキザカムは、リンドウ科の一年草で、7月29日の誕生花として知られています。夏になると紫色の小花を株いっぱいに咲かせ、涼しげで甘い香りを漂わせる花です。</p>
-  </section>
+    <h2>7月29日の誕生花として親しまれるエキザカム</h2>
+    <p>エキザカムは、リンドウ科の一年草です。夏に紫色の小花をたくさん咲かせます。7月29日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>エキザカムが象徴する意味</h2>
-    <p>エキザカムの花言葉は「愛の告白」です。小さな紫色の花が株いっぱいに咲きそろい、素直な想いをそっと語りかけるような姿が、愛の告白を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>エキザカムの魅力</h2>
-    <p>エキザカムの魅力は、株いっぱいに咲きそろう涼しげな紫色の小花と、甘く優しい香りにあります。鉢植えとして室内でも育てやすく、贈り物にも人気の花です。7月29日生まれの方はもちろん、想いを告白したい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>エキザカムは日当たりを好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月29日生まれの方はもちろん、想いを告白したい贈り物としてもエキザカムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">エキザカムはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に紫色の小花をたくさん咲かせます。リンドウ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">エキザカムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな紫色の花が株いっぱいに咲きそろい、素直な想いをそっと語りかけるような姿が、愛の告白を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">エキザカムはどんな香りがしますか？</div>
-        <div class="faq-a">小花からは甘く優しい香りが漂い、鉢植えとして室内でも楽しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">エキザカムはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">紫色の小花をたくさん咲かせる、リンドウ科の一年草です。涼しげな印象を持つ花とされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫の彩りが伝える、エキザカムの飾らない告白</h2>
+    <p>エキザカムの花は、淡い紫色の小さな花びらをいくつも重ねるようにして咲きます。一つひとつは控えめでも、群れて咲くことでその紫は涼しげな存在感を放ち、見る人の目を静かに引き寄せます。飾り立てることのない素朴な色合いだからこそ、かえって心に残るという声も少なくありません。この、飾らないままにじんわりと伝わってくる紫の印象が、『愛の告白』という花言葉の背景にあると言われています。声高に語らずとも、色そのものが気持ちを語ってくれることがあるのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">エキザカムの花言葉『愛の告白』にはどんな意味が込められていますか？</div>
+        <div class="faq-a">紫の小花が寄り添うように咲く、飾らない佇まいが、この花言葉の由来と言われています。押しつけがましくなく、そっと気持ちを伝える花とされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>言葉にするのは少し照れくさいけれど、飾らずそのまま伝えてみたい気持ちが今日はあるのではないでしょうか。紫の小さな花が寄り添って咲くように、飾り立てない言葉のほうが、案外まっすぐ届くものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、エキザカムから始める小さな体験</h2>
+    <p>紫色の小さな花を静かに咲かせるエキザカムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の小花が集まって咲く様子をじっくり観察してみる</li>
+      <li>伝えたい気持ちを一つ、素直な言葉にしてみる</li>
+      <li>涼しげな紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">素直な気持ちを伝えたい今日は、ラッキーフードや今月の誕生石もあわせて確認してみませんか。開運カレンダーでは、ラッキーフードと今月の誕生石を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>声高に語らずとも、紫の小花が寄り添って咲く姿がそのまま伝えたい気持ちを語ってくれる。</p>
     <ul>
-      <li>エキザカムは夏に紫色の小花を咲かせる、7月29日の誕生花</li>
-      <li>花言葉は「愛の告白」、そっと語りかけるような花姿に由来する</li>
-      <li>涼しげな紫色の小花と甘い香りが魅力</li>
-      <li>日当たりを好み、多湿を避けることが必要</li>
+      <li>エキザカムは夏に紫色の小花をたくさん咲かせる、リンドウ科の一年草で、7月29日の誕生花</li>
+      <li>花言葉は「愛の告白」。飾らない紫の佇まいと結びついてきたとされる</li>
+      <li>一つひとつは控えめでも、群れて咲くことで涼しげな存在感を放つ点が特徴</li>
+      <li>素朴で涼やかな色合いが魅力</li>
     </ul>
   </section>
 

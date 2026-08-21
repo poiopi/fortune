@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0726/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月26日の誕生花ヤマトナデシコの花言葉・特徴・魅力をわかりやすく解説。「すてきな予感」を象徴する繊細に咲く花びらの意味を紹介します。">
+  <meta name="description" content="7月26日の誕生花ヤマトナデシコの花言葉・特徴・魅力をわかりやすく解説。夏に繊細な花を咲かせる、ナデシコ科の花を紹介します。">
   <title>7月26日の誕生花はヤマトナデシコ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヤマトナデシコはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に繊細な花を咲かせます。ナデシコ科の多年草です。"}},
-      {"@type":"Question","name":"ヤマトナデシコの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"繊細ながらも凛と咲く花姿が、これから訪れる素敵な出来事への予感を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヤマトナデシコという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"清楚で凛とした美しさを持つことから、古くから日本女性の美称として用いられてきました。"}}
+      {"@type":"Question","name":"ヤマトナデシコという名前は何を意味しますか？","acceptedAnswer":{"@type":"Answer","text":"日本女性の美称としても使われる呼び名です。ナデシコ科の多年草で、夏に繊細な花を咲かせます。"}},
+      {"@type":"Question","name":"ヤマトナデシコの花言葉『すてきな予感』はどこから来ているのですか？","acceptedAnswer":{"@type":"Answer","text":"細かく裂けた花びらの繊細な美しさに、良いことが起こりそうな気配を感じ取ったことが、この花言葉と結びついてきたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 26 · 誕生花</span>
     <h1>7月26日の誕生花はヤマトナデシコ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヤマトナデシコは、ナデシコ科の多年草で、夏になると繊細な花を咲かせ、清楚で凛とした佇まいから日本女性の美称にも使われてきた花です。花言葉は「すてきな予感」。日本女性の美称にも使われる花です。</p>
+    <p class="art-lead">細く裂けた花びらが、風にふるえるように揺れています。ヤマトナデシコは、繊細な姿を持つ夏の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヤマトナデシコとは</a></li>
-      <li><a href="#meaning">ヤマトナデシコが象徴する意味</a></li>
-      <li><a href="#charm">ヤマトナデシコの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月26日の誕生花として親しまれるヤマトナデシコ</a></li>
+      <li><a href="#story">夏に揺れる、ヤマトナデシコの繊細な花びら</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヤマトナデシコから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヤマトナデシコとは</h2>
-    <p>ヤマトナデシコは、ナデシコ科の多年草で、7月26日の誕生花として知られています。夏になると繊細な花を咲かせ、清楚で凛とした佇まいから日本女性の美称にも使われてきた花です。</p>
-  </section>
+    <h2>7月26日の誕生花として親しまれるヤマトナデシコ</h2>
+    <p>ヤマトナデシコは、ナデシコ科の多年草です。夏に繊細な花を咲かせ、日本女性の美称にも使われる花として知られています。7月26日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヤマトナデシコが象徴する意味</h2>
-    <p>ヤマトナデシコの花言葉は「すてきな予感」です。繊細ながらも凛と咲く花姿が、これから訪れる素敵な出来事への予感を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヤマトナデシコの魅力</h2>
-    <p>ヤマトナデシコの魅力は、花びらの縁が細かく切れ込んだ繊細な花の形と、清楚で控えめな美しさにあります。秋の七草のひとつにも数えられる、日本古来の花です。7月26日生まれの方はもちろん、素敵な未来を願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヤマトナデシコは日当たりと水はけの良い場所を好み、蒸れを避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月26日生まれの方はもちろん、素敵な未来を願う贈り物としてもヤマトナデシコは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマトナデシコはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に繊細な花を咲かせます。ナデシコ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマトナデシコの花言葉の由来は何ですか？</div>
-        <div class="faq-a">繊細ながらも凛と咲く花姿が、これから訪れる素敵な出来事への予感を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマトナデシコという名前の由来は何ですか？</div>
-        <div class="faq-a">清楚で凛とした美しさを持つことから、古くから日本女性の美称として用いられてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマトナデシコという名前は何を意味しますか？</div>
+        <div class="faq-a">日本女性の美称としても使われる呼び名です。ナデシコ科の多年草で、夏に繊細な花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏に揺れる、ヤマトナデシコの繊細な花びら</h2>
+    <p>先端が細かく裂けたレースのような花びらは、ヤマトナデシコならではの繊細な作りです。風が吹くたびに輪郭が小さく揺れ、近づいてよく見るほどに緻密な美しさに気づかされます。古くから日本女性の美称として使われてきた「大和撫子」という呼び名も、この控えめで芯のある佇まいと重ねられてきたと考えられます。細やかさの中に、これから何か良いことが起こりそうな気配を感じ取ったことから、『すてきな予感』という花言葉が生まれたのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマトナデシコの花言葉『すてきな予感』はどこから来ているのですか？</div>
+        <div class="faq-a">細かく裂けた花びらの繊細な美しさに、良いことが起こりそうな気配を感じ取ったことが、この花言葉と結びついてきたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>細かく裂けた花びらが、風にふれるたびに小さな陰影を作ります。目には見えにくい繊細な変化の中にこそ、良い兆しは潜んでいるものです。そんな小さな予感を、まずは自分の中でそっと育ててみたいところです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヤマトナデシコから始める小さな体験</h2>
+    <p>繊細な花びらを揺らすヤマトナデシコにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>繊細な花びらをじっくり観察してみる</li>
+      <li>控えめだけど芯のある振る舞いを一つ意識してみる</li>
+      <li>「大和撫子」という言葉の意味を調べてみる</li>
+    </ul>
+
+    <p class="cta-lead">静かな期待に胸をときめかせたい今日は、ラッキーフードやおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、ラッキーフードとおすすめの行動を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>細やかに裂けた花びらの繊細さは、近づいて見なければ気づけない美しさを教えてくれる。</p>
     <ul>
-      <li>ヤマトナデシコは夏に繊細な花を咲かせる、7月26日の誕生花</li>
-      <li>花言葉は「すてきな予感」、凛と咲く花姿に由来する</li>
-      <li>花びらの縁が細かく切れ込んだ繊細な形が魅力</li>
-      <li>日当たりと水はけの良い場所で、蒸れを避けることが必要</li>
+      <li>ヤマトナデシコは夏に繊細な花を咲かせる、ナデシコ科の多年草で、7月26日の誕生花</li>
+      <li>花言葉は「すてきな予感」。繊細な花びらの美しさと良い気配が結びついてきたとされる</li>
+      <li>日本女性の美称としても使われる呼び名を持つ</li>
+      <li>細かく裂けた花びらが揺れる繊細な姿が魅力</li>
     </ul>
   </section>
 
