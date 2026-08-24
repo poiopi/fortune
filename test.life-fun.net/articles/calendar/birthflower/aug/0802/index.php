@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0802/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月2日の誕生花ペチュニアの花言葉・特徴・魅力をわかりやすく解説。「心和らぐ」を象徴するラッパ状の花の意味を紹介します。">
+  <meta name="description" content="8月2日の誕生花ペチュニアの花言葉・特徴・魅力をわかりやすく解説。ラッパ状の花を春から秋まで咲かせ続ける植物の意味を紹介します。">
   <title>8月2日の誕生花はペチュニア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ペチュニアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から秋にかけてラッパ状の花を長期間咲かせ続けます。ナス科の一年草です。"}},
-      {"@type":"Question","name":"ペチュニアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"次々と途切れることなく花を咲かせ続ける姿が、見る人の心を穏やかに和ませることに由来すると言われています。"}},
-      {"@type":"Question","name":"ペチュニアはどんな場所でよく育ちますか？","acceptedAnswer":{"@type":"Answer","text":"日当たりが良く、雨が直接当たらない軒下やベランダなどでよく育ちます。長期間花を咲かせ続けるため、花壇の主役としても人気です。"}}
+      {"@type":"Question","name":"ペチュニアはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"花びらの先が広がったラッパのような形の花を咲かせます。春から秋にかけて長く咲き続ける、ナス科の一年草です。"}},
+      {"@type":"Question","name":"ペチュニアの花言葉『心和らぐ』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"途切れることなく花を咲かせ続ける穏やかで賑やかな姿が、見る人の心を和ませることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 2 · 誕生花</span>
     <h1>8月2日の誕生花はペチュニア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ペチュニアは、ナス科の一年草で、春から秋にかけてラッパ状の花を長期間咲かせ続け、明るく賑やかな印象を与える花です。花言葉は「心和らぐ」。明るく賑やかな花です。</p>
+    <p class="art-lead">鉢植えの中で、途切れることなく花が咲き続けている。今日が終わればまた明日、同じ場所に新しい花が開く。ペチュニアは、その粘り強さで8月2日という一日を静かに満たす花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ペチュニアとは</a></li>
-      <li><a href="#meaning">ペチュニアが象徴する意味</a></li>
-      <li><a href="#charm">ペチュニアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月2日の誕生花として親しまれるペチュニア</a></li>
+      <li><a href="#story">ラッパ状の花びらが咲かせる、賑やかな時間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ペチュニアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ペチュニアとは</h2>
-    <p>ペチュニアは、ナス科の一年草で、8月2日の誕生花として知られています。春から秋にかけてラッパ状の花を長期間咲かせ続け、明るく賑やかな印象を与える花です。</p>
-  </section>
+    <h2>8月2日の誕生花として親しまれるペチュニア</h2>
+    <p>ペチュニアは、ナス科の一年草です。春から秋という長い期間、ラッパ状の花を次々と咲かせ続けます。一つひとつの花が短命なのではなく、絶え間なく新しい花が入れ替わり咲くことで、いつ見ても満開のような印象を保つのが特徴です。この息の長い開花サイクルを持つ植物が、8月2日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ペチュニアが象徴する意味</h2>
-    <p>ペチュニアの花言葉は「心和らぐ」です。次々と途切れることなく花を咲かせ続ける姿が、見る人の心を穏やかに和ませることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ペチュニアの魅力</h2>
-    <p>ペチュニアの魅力は、春から秋まで長期間にわたって咲き続ける丈夫さと、ラッパ状の花が寄り添うように咲きそろう賑やかさにあります。花壇やハンギングバスケットを彩る定番の花として親しまれています。8月2日生まれの方はもちろん、心和らぐひとときを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ペチュニアは日当たりを好み、雨に当たると傷みやすいため軒下など雨よけのある場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月2日生まれの方はもちろん、心和らぐひとときを届けたい贈り物としてもペチュニアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペチュニアはいつ頃咲きますか？</div>
-        <div class="faq-a">春から秋にかけてラッパ状の花を長期間咲かせ続けます。ナス科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペチュニアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">次々と途切れることなく花を咲かせ続ける姿が、見る人の心を穏やかに和ませることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペチュニアはどんな場所でよく育ちますか？</div>
-        <div class="faq-a">日当たりが良く、雨が直接当たらない軒下やベランダなどでよく育ちます。長期間花を咲かせ続けるため、花壇の主役としても人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ペチュニアはどんな形の花を咲かせますか？</div>
+        <div class="faq-a">花びらの先が広がったラッパのような形の花を咲かせます。春から秋にかけて長く咲き続ける、ナス科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>ラッパ状の花びらが咲かせる、賑やかな時間</h2>
+    <p>ペチュニアの花をよく見ると、花びらが継ぎ目なく融合し、一つの大きなラッパのような筒状に広がっている。この形が、次々と重なるように咲く姿を賑やかに見せる理由の一つだ。一輪だけを見ればシンプルな形だが、鉢いっぱいに咲きそろうと、まるで小さな合唱のように賑やかな景色を作り出す。途切れることなく次の花が開き続けるその粘り強さは、見る人の気持ちをふっと緩ませる力を持っている。花言葉「心和らぐ」は、この絶え間ない開花が生む、穏やかで賑やかな時間から生まれたのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ペチュニアの花言葉『心和らぐ』にはどんな由来がありますか？</div>
+        <div class="faq-a">途切れることなく花を咲かせ続ける穏やかで賑やかな姿が、見る人の心を和ませることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>素通りしがちなものほど、立ち止まって眺めると発見がある。花びらの形もその一つだ。賑やかさは、近づいて初めて見つかるものらしい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ペチュニアから始める小さな体験</h2>
+    <p>ラッパ状の花を絶え間なく咲かせ続けるペチュニアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ラッパ状の花びらの形をじっくり観察してみる</li>
+      <li>長く咲き続ける花のように、穏やかな気持ちを保ってみる</li>
+      <li>明るい色の花を身の回りに置いてみる</li>
+    </ul>
+
+    <p class="cta-lead">心和らぐ一日を過ごしたい方は、今日のおすすめの行動もあわせてチェックしてみませんか。開運カレンダーでは、六曜とおすすめの行動を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>途切れることなく次の花へとつながっていく、その粘り強さがペチュニアの心和らぐ賑やかさを生んでいる。</p>
     <ul>
-      <li>ペチュニアは春から秋にラッパ状の花を咲かせ続ける、8月2日の誕生花</li>
-      <li>花言葉は「心和らぐ」、咲き続ける姿に由来する</li>
-      <li>明るく賑やかな花色と長い開花期間が魅力</li>
-      <li>日当たりを好み、雨よけのある場所でよく育つ</li>
+      <li>ペチュニアは春から秋にラッパ状の花を咲かせ続ける、ナス科の一年草で、8月2日の誕生花</li>
+      <li>花言葉は「心和らぐ」。絶え間なく咲き続ける穏やかな姿に由来するとされる</li>
+      <li>五枚の花びらが融合したラッパ状の花の形が特徴</li>
+      <li>鉢いっぱいに咲きそろう賑やかな景色が魅力</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0802');
 ?>
+</content>

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0809/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月9日の誕生花ベルガモットの花言葉・特徴・魅力をわかりやすく解説。「いちずな愛」を象徴する独特な花の意味を紹介します。">
+  <meta name="description" content="8月9日の誕生花ベルガモットの花言葉・特徴・魅力をわかりやすく解説。独特な形の花を咲かせる夏のハーブの意味を紹介します。">
   <title>8月9日の誕生花はベルガモット｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ベルガモットはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に独特な形の花を咲かせます。シソ科の多年草のハーブです。"}},
-      {"@type":"Question","name":"ベルガモットの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらが放射状に伸びる独特な花姿が、まっすぐに一途な想いを貫く愛の形を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ベルガモットはハーブティーにも使われますか？","acceptedAnswer":{"@type":"Answer","text":"はい。爽やかな香りを持つことから、アールグレイなどの香り付けやハーブティーに利用されています。"}}
+      {"@type":"Question","name":"ベルガモットはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"細い花びらが放射状に伸びる、独特な形の花を咲かせます。夏に見頃を迎える、シソ科の多年草のハーブです。"}},
+      {"@type":"Question","name":"ベルガモットの花言葉『いちずな愛』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"花びらが放射状にまっすぐ伸びる独特な花姿が、一途な想いを貫く愛の形を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 9 · 誕生花</span>
     <h1>8月9日の誕生花はベルガモット<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ベルガモットは、シソ科の多年草で、夏になると独特な形の花を咲かせる、爽やかな香りが魅力のハーブです。花言葉は「いちずな愛」。爽やかで個性的な花です。</p>
+    <p class="art-lead">紅茶の香り付けとして名前を知る人は多くても、その花の姿を思い浮かべられる人は少ないかもしれない。8月9日の誕生花ベルガモットは、独特な形の花を咲かせる夏のハーブだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ベルガモットとは</a></li>
-      <li><a href="#meaning">ベルガモットが象徴する意味</a></li>
-      <li><a href="#charm">ベルガモットの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月9日の誕生花として親しまれるベルガモット</a></li>
+      <li><a href="#story">ハーブとして愛される、一途な花の形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ベルガモットから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ベルガモットとは</h2>
-    <p>ベルガモットは、シソ科の多年草で、8月9日の誕生花として知られています。夏になると独特な形の花を咲かせる、爽やかな香りが魅力のハーブです。</p>
-  </section>
+    <h2>8月9日の誕生花として親しまれるベルガモット</h2>
+    <p>ベルガモットは、シソ科の多年草です。夏になると、独特な形の花を咲かせます。ハーブとして親しまれているこの植物は、花そのものよりも香りで知られることが多く、その姿にはあまり注目が集まりません。この花が、8月9日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ベルガモットが象徴する意味</h2>
-    <p>ベルガモットの花言葉は「いちずな愛」です。花びらが放射状に伸びる独特な花姿が、まっすぐに一途な想いを貫く愛の形を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ベルガモットの魅力</h2>
-    <p>ベルガモットの魅力は、細い花びらが四方に広がる個性的な花姿と、爽やかな柑橘系の香りにあります。ハーブティーの香り付けとしても親しまれている植物です。8月9日生まれの方はもちろん、いちずな愛を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ベルガモットは日当たりから半日陰を好み、乾燥に弱いため水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月9日生まれの方はもちろん、いちずな愛を伝えたい贈り物としてもベルガモットは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベルガモットはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に独特な形の花を咲かせます。シソ科の多年草のハーブです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベルガモットの花言葉の由来は何ですか？</div>
-        <div class="faq-a">花びらが放射状に伸びる独特な花姿が、まっすぐに一途な想いを貫く愛の形を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベルガモットはハーブティーにも使われますか？</div>
-        <div class="faq-a">はい。爽やかな香りを持つことから、アールグレイなどの香り付けやハーブティーに利用されています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ベルガモットはどんな形の花を咲かせますか？</div>
+        <div class="faq-a">細い花びらが放射状に伸びる、独特な形の花を咲かせます。夏に見頃を迎える、シソ科の多年草のハーブです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>ハーブとして愛される、一途な花の形</h2>
+    <p>ベルガモットの花をよく見ると、細い花びらが一点から放射状に伸び、まとまりながらも一本一本の存在を主張している。この形は、ハーブティーとして名前を知られる姿からは想像しにくいかもしれない。暮らしの中では香り付けとして活躍することが多いこの植物だが、花そのものが持つ、まっすぐに外へ向かって伸びる花びらの姿には、迷いのなさが表れている。花言葉「いちずな愛」は、この放射状にまっすぐ伸びる花びらの形から生まれたと言われている。香りだけでなく、姿にも一途さが宿っている花だ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベルガモットの花言葉『いちずな愛』にはどんな由来がありますか？</div>
+        <div class="faq-a">花びらが放射状にまっすぐ伸びる独特な花姿が、一途な想いを貫く愛の形を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>まっすぐに気持ちを向けることは、時に勇気がいる。飾らない想いほど、案外遠くまで届くものだ。大切な人へ向ける一途な気持ちを、一つだけ心に留めておきたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ベルガモットから始める小さな体験</h2>
+    <p>細い花びらをまっすぐ放射状に伸ばして咲くベルガモットにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>独特な形の花びらをじっくり観察してみる</li>
+      <li>ハーブとしての使われ方を調べてみる</li>
+      <li>一途な気持ちを一つ、大切な人に向けてみる</li>
+    </ul>
+
+    <p class="cta-lead">一途な想いを届けたい一日は、今日のおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、おすすめアイテムとラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>放射状に伸びる花びらの形にも、ベルガモットの一途さは表れている。</p>
     <ul>
-      <li>ベルガモットは夏に独特な形の花を咲かせる、8月9日の誕生花</li>
-      <li>花言葉は「いちずな愛」、まっすぐ伸びる花姿に由来する</li>
-      <li>放射状の花びらと爽やかな香りが魅力</li>
-      <li>日当たりから半日陰を好み、水切れに注意する</li>
+      <li>ベルガモットは夏に独特な形の花を咲かせる、シソ科の多年草のハーブで、8月9日の誕生花</li>
+      <li>花言葉は「いちずな愛」。まっすぐ伸びる花びらの形に由来するとされる</li>
+      <li>ハーブティーの香り付けとしても親しまれている</li>
+      <li>花よりも香りで知られることが多いのも特徴</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0809');
 ?>
+</content>

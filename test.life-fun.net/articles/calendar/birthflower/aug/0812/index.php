@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0812/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月12日の誕生花バーベナの花言葉・特徴・魅力をわかりやすく解説。「魔力」を象徴する可憐な花房の意味を紹介します。">
+  <meta name="description" content="8月12日の誕生花バーベナの花言葉・特徴・魅力をわかりやすく解説。小さな花が寄り添うように集まって咲く花房の意味を紹介します。">
   <title>8月12日の誕生花はバーベナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バーベナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に小花が集まった花房を長期間咲かせます。クマツヅラ科の植物です。"}},
-      {"@type":"Question","name":"バーベナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が集まって咲きそろう可憐な姿が、見る人の心を惹きつけて離さない不思議な魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"バーベナはどのくらいの期間花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に、初夏から秋にかけて長期間にわたって花を咲かせ続けます。"}}
+      {"@type":"Question","name":"バーベナはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が集まり、丸みのある花房を作って咲きます。夏を中心に長期間咲き続ける、クマツヅラ科の植物です。"}},
+      {"@type":"Question","name":"バーベナの花言葉『魔力』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が集まって咲きそろう可憐な姿が、見る人の心を惹きつけて離さない不思議な魅力を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 12 · 誕生花</span>
     <h1>8月12日の誕生花はバーベナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バーベナは、クマツヅラ科の植物で、夏を中心に小花が集まった花房を長期間咲かせ、明るく可憐な印象を与える花です。花言葉は「魔力」。明るく可憐な花です。</p>
+    <p class="art-lead">一輪では控えめでも、集まれば強い引力を持つ花がある。バーベナは、小さな花が寄り添って咲く花房で、8月12日の夏の花壇に不思議な魅力を添える。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バーベナとは</a></li>
-      <li><a href="#meaning">バーベナが象徴する意味</a></li>
-      <li><a href="#charm">バーベナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月12日の誕生花として親しまれるバーベナ</a></li>
+      <li><a href="#story">寄り添う小花が生む、不思議な引力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バーベナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バーベナとは</h2>
-    <p>バーベナは、クマツヅラ科の植物で、8月12日の誕生花として知られています。夏を中心に小花が集まった花房を長期間咲かせ、明るく可憐な印象を与える花です。</p>
-  </section>
+    <h2>8月12日の誕生花として親しまれるバーベナ</h2>
+    <p>バーベナは、クマツヅラ科の植物です。夏を中心に、小花が集まった花房を長期間咲かせ続けます。一つひとつの花は小さくても、まとまって咲くことで明るく可憐な印象を作り出し、長い開花期間を通して花壇を彩ります。この花が、8月12日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バーベナが象徴する意味</h2>
-    <p>バーベナの花言葉は「魔力」です。小さな花が集まって咲きそろう可憐な姿が、見る人の心を惹きつけて離さない不思議な魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バーベナの魅力</h2>
-    <p>バーベナの魅力は、小さな花が丸く集まって咲く可憐な花房と、次々と長期間にわたって咲き続ける丈夫さにあります。花壇や寄せ植えを彩る定番の花として親しまれています。8月12日生まれの方はもちろん、人を惹きつける想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バーベナは日当たりを好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月12日生まれの方はもちろん、人を惹きつける想いを伝えたい贈り物としてもバーベナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バーベナはいつ頃咲きますか？</div>
-        <div class="faq-a">夏を中心に小花が集まった花房を長期間咲かせます。クマツヅラ科の植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バーベナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな花が集まって咲きそろう可憐な姿が、見る人の心を惹きつけて離さない不思議な魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バーベナはどのくらいの期間花を楽しめますか？</div>
-        <div class="faq-a">夏を中心に、初夏から秋にかけて長期間にわたって花を咲かせ続けます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">バーベナはどんな咲き方をしますか？</div>
+        <div class="faq-a">小さな花が集まり、丸みのある花房を作って咲きます。夏を中心に長期間咲き続ける、クマツヅラ科の植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>寄り添う小花が生む、不思議な引力</h2>
+    <p>バーベナの花房を近くで見ると、小さな花が一つひとつ寄り添うように集まり、全体で一つの丸い形を作り上げているのがわかる。一輪では埋もれてしまいそうな小ささでも、群れて咲くことで確かな存在感を生み出す――この集合の力こそが、バーベナという花の面白さだ。遠くから見ると単純な色の塊のように映るが、近づくほどに一つひとつの花の輪郭が見えてくる。花言葉「魔力」は、この不思議な引力、つまり離れて見ても近づいて見ても人の目を離さない力から生まれたと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バーベナの花言葉『魔力』にはどんな由来がありますか？</div>
+        <div class="faq-a">小さな花が集まって咲きそろう可憐な姿が、見る人の心を惹きつけて離さない不思議な魅力を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一人では小さな力でも、寄り添うことで大きな存在感になることがある。誰かと力を合わせる場面を、ふと思い浮かべてみる。集まることで生まれる魅力は、確かにある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バーベナから始める小さな体験</h2>
+    <p>小さな花を寄り添わせて花房を作るバーベナにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>小花が集まって咲く花房をじっくり観察してみる</li>
+      <li>明るい色のものを身の回りに取り入れてみる</li>
+      <li>誰かを惹きつける自分らしい魅力を一つ考えてみる</li>
+    </ul>
+
+    <p class="cta-lead">人を惹きつける一日にしたい方は、今日のラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、ラッキープレイスとおすすめのアイテムを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな花が寄り添って一つの形を作り上げること、それ自体がバーベナの魔力なのかもしれない。</p>
     <ul>
-      <li>バーベナは夏に小花が集まった花房を咲かせる、8月12日の誕生花</li>
-      <li>花言葉は「魔力」、人を惹きつける花姿に由来する</li>
-      <li>可憐な花房と長い開花期間が魅力</li>
-      <li>日当たりを好み、水はけの良い土でよく育つ</li>
+      <li>バーベナは夏を中心に小花が集まった花房を咲かせる、クマツヅラ科の植物で、8月12日の誕生花</li>
+      <li>花言葉は「魔力」。人を惹きつける不思議な魅力に由来するとされる</li>
+      <li>一輪ずつは小さくても、集まることで存在感を放つのが特徴</li>
+      <li>長期間にわたって咲き続けるのも魅力</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0812');
 ?>
+</content>

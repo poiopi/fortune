@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0806/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月6日の誕生花ヤマユリの花言葉・特徴・魅力をわかりやすく解説。「威厳」を象徴する大輪の白い花の意味を紹介します。">
+  <meta name="description" content="8月6日の誕生花ヤマユリの花言葉・特徴・魅力をわかりやすく解説。大輪の白い花から強く香り立つ花の意味を紹介します。">
   <title>8月6日の誕生花はヤマユリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヤマユリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に大輪の白い花を咲かせます。強い香りが特徴のユリ科の多年草です。"}},
-      {"@type":"Question","name":"ヤマユリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"山野に大輪の花を咲かせ、強い香りを放ちながらも堂々とした花姿が、揺るぎない威厳を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヤマユリはどのくらいの大きさの花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"ユリの中でも特に大輪で、花径20cmを超えることもあります。強い香りも特徴の一つです。"}}
+      {"@type":"Question","name":"ヤマユリはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"強く甘い香りを漂わせるのが特徴です。夏に大輪の白い花を咲かせる、ユリ科の多年草です。"}},
+      {"@type":"Question","name":"ヤマユリの花言葉『威厳』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"大輪の花と強い香りが合わさって生まれる、揺るぎない存在感に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 6 · 誕生花</span>
     <h1>8月6日の誕生花はヤマユリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヤマユリは、ユリ科の多年草で、夏になると大輪の白い花を咲かせる、強い香りと堂々とした存在感を放つ花です。花言葉は「威厳」。堂々とした存在感のある花です。</p>
+    <p class="art-lead">香りが先に届き、姿はあとからついてくる。そんな出会い方をする花が、ヤマユリだ。大輪の白い花が、強い香りとともに8月6日を堂々と包み込む。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヤマユリとは</a></li>
-      <li><a href="#meaning">ヤマユリが象徴する意味</a></li>
-      <li><a href="#charm">ヤマユリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月6日の誕生花として親しまれるヤマユリ</a></li>
+      <li><a href="#story">大輪から放たれる香りの、威厳という存在感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヤマユリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヤマユリとは</h2>
-    <p>ヤマユリは、ユリ科の多年草で、8月6日の誕生花として知られています。夏になると大輪の白い花を咲かせる、強い香りと堂々とした存在感を放つ花です。</p>
-  </section>
+    <h2>8月6日の誕生花として親しまれるヤマユリ</h2>
+    <p>ヤマユリは、ユリ科の多年草です。夏になると、大輪の白い花を咲かせます。ユリの中でも屈指の大きさを誇る花は、強い香りを放つことでも知られ、離れた場所からでもその存在に気づかせます。この堂々とした花が、8月6日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヤマユリが象徴する意味</h2>
-    <p>ヤマユリの花言葉は「威厳」です。山野に大輪の花を咲かせ、強い香りを放ちながらも堂々とした花姿が、揺るぎない威厳を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヤマユリの魅力</h2>
-    <p>ヤマユリの魅力は、ユリの中でも屈指の大輪を誇る花と、あたり一面に漂う強い香りにあります。日本原産のユリの代表格として、古くから親しまれてきました。8月6日生まれの方はもちろん、威厳ある想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヤマユリは半日陰を好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月6日生まれの方はもちろん、威厳ある想いを伝えたい贈り物としてもヤマユリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマユリはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に大輪の白い花を咲かせます。強い香りが特徴のユリ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマユリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">山野に大輪の花を咲かせ、強い香りを放ちながらも堂々とした花姿が、揺るぎない威厳を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマユリはどのくらいの大きさの花を咲かせますか？</div>
-        <div class="faq-a">ユリの中でも特に大輪で、花径20cmを超えることもあります。強い香りも特徴の一つです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマユリはどんな香りがしますか？</div>
+        <div class="faq-a">強く甘い香りを漂わせるのが特徴です。夏に大輪の白い花を咲かせる、ユリ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>大輪から放たれる香りの、威厳という存在感</h2>
+    <p>ヤマユリの香りは、姿が見える前から届くことがある。山道を歩いていて、ふと強く甘い香りに気づき、辺りを見回すとその先に白い大輪が咲いている――そんな出会い方をする花だ。姿より先に気配で知らせるという点で、この花は控えめでありながら堂々としている。花言葉「威厳」は、この大きな花と強い香りが合わさって生まれる、揺るぎない存在感から名付けられたのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマユリの花言葉『威厳』にはどんな由来がありますか？</div>
+        <div class="faq-a">大輪の花と強い香りが合わさって生まれる、揺るぎない存在感に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>香りは、姿よりも先に相手に届くことがある。今日は、言葉にする前の気配や雰囲気を一つ大切にしてみよう。存在感というものは、大きな声よりも静かな佇まいの中にこそ宿るものらしい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヤマユリから始める小さな体験</h2>
+    <p>大輪の花から強い香りを放つヤマユリにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>大輪の白い花をじっくり観察してみる</li>
+      <li>強い香りを意識して深呼吸してみる</li>
+      <li>堂々とした振る舞いを一つ意識してみる</li>
+    </ul>
+
+    <p class="cta-lead">堂々とした一日を過ごしたい方は、今日の月齢・月相もあわせて確認してみませんか。開運カレンダーでは、月齢・月相と星座を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>姿より先に届く香りにこそ、ヤマユリの堂々とした存在感が表れている。</p>
     <ul>
-      <li>ヤマユリは夏に大輪の白い花を咲かせる、8月6日の誕生花</li>
-      <li>花言葉は「威厳」、堂々とした花姿に由来する</li>
-      <li>大輪の花と強い香りが魅力</li>
-      <li>半日陰を好み、水はけの良い土でよく育つ</li>
+      <li>ヤマユリは夏に大輪の白い花を咲かせる、ユリ科の多年草で、8月6日の誕生花</li>
+      <li>花言葉は「威厳」。大輪の花と強い香りが生む存在感に由来するとされる</li>
+      <li>ユリの中でも屈指の大きさを誇る花が特徴</li>
+      <li>離れた場所からでも気づく強い香りが魅力</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0806');
 ?>
+</content>

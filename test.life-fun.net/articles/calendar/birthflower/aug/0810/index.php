@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0810/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月10日の誕生花アマリネの花言葉・特徴・魅力をわかりやすく解説。「魅惑的」を象徴する華やかな花の意味を紹介します。">
+  <meta name="description" content="8月10日の誕生花アマリネの花言葉・特徴・魅力をわかりやすく解説。アマリリスとネリネの交配種、その名前の由来を紹介します。">
   <title>8月10日の誕生花はアマリネ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アマリネはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋にユリに似た華やかな花を咲かせます。ヒガンバナ科の球根植物です。"}},
-      {"@type":"Question","name":"アマリネの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ユリを思わせる優雅な花姿でありながら、独自の華やかさを放つ個性が、人を惹きつける魅惑的な魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アマリネはどんな花を交配して生まれましたか？","acceptedAnswer":{"@type":"Answer","text":"アマリリスとネリネを交配して生まれた花で、両方の特徴を受け継いだ優雅な花姿が魅力です。"}}
+      {"@type":"Question","name":"アマリネという名前はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"アマリリスとネリネを交配して生まれた花で、名前は両者を組み合わせたものです。秋にユリに似た花を咲かせる、ヒガンバナ科の球根植物です。"}},
+      {"@type":"Question","name":"アマリネの花言葉『魅惑的』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"ユリを思わせる優雅な花姿でありながら独自の華やかさを放つ個性が、人を惹きつける魅力を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 10 · 誕生花</span>
     <h1>8月10日の誕生花はアマリネ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アマリネは、ヒガンバナ科の球根植物で、秋になるとユリに似た華やかな花を咲かせる、上品で人を惹きつける魅力を放つ花です。花言葉は「魅惑的」。上品で華やかな花です。</p>
+    <p class="art-lead">アマリリスとネリネ、二つの花の名前を組み合わせた植物がある。アマリネという名のその花は、掛け合わせならではの華やかさを持ち、8月10日の誕生花に選ばれている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,67 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アマリネとは</a></li>
-      <li><a href="#meaning">アマリネが象徴する意味</a></li>
-      <li><a href="#charm">アマリネの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月10日の誕生花として親しまれるアマリネ</a></li>
+      <li><a href="#story">アマリリスとネリネが出会う、魅惑のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アマリネから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アマリネとは</h2>
-    <p>アマリネは、ヒガンバナ科の球根植物で、8月10日の誕生花として知られています。秋になるとユリに似た華やかな花を咲かせる、上品で人を惹きつける魅力を放つ花です。</p>
-  </section>
+    <h2>8月10日の誕生花として親しまれるアマリネ</h2>
+    <p>アマリネは、ヒガンバナ科の球根植物です。見頃は秋で、ユリに似た華やかな花を咲かせます。アマリリスとネリネの交配種であり、名前はその二つを組み合わせたものです。紫やピンクの花には芳香もあるとされています。この個性的な出自を持つ花が、8月10日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アマリネが象徴する意味</h2>
-    <p>アマリネの花言葉は「魅惑的」です。ユリを思わせる優雅な花姿でありながら、独自の華やかさを放つ個性が、人を惹きつける魅惑的な魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アマリネの魅力</h2>
-    <p>アマリネの魅力は、アマリリスとネリネを交配して生まれた花ならではの、優雅さと華やかさを併せ持つ花姿にあります。切り花にしても花持ちが良く、長く楽しめる花です。8月10日生まれの方はもちろん、魅惑的な魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アマリネは日当たりを好み、球根植物のため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月10日生まれの方はもちろん、魅惑的な魅力を伝えたい贈り物としてもアマリネは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリネはいつ頃咲きますか？</div>
-        <div class="faq-a">秋にユリに似た華やかな花を咲かせます。ヒガンバナ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリネの花言葉の由来は何ですか？</div>
-        <div class="faq-a">ユリを思わせる優雅な花姿でありながら、独自の華やかさを放つ個性が、人を惹きつける魅惑的な魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アマリネはどんな花を交配して生まれましたか？</div>
-        <div class="faq-a">アマリリスとネリネを交配して生まれた花で、両方の特徴を受け継いだ優雅な花姿が魅力です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アマリネという名前はどこから来ていますか？</div>
+        <div class="faq-a">アマリリスとネリネを交配して生まれた花で、名前は両者を組み合わせたものです。秋にユリに似た花を咲かせる、ヒガンバナ科の球根植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>アマリリスとネリネが出会う、魅惑のかたち</h2>
+    <p>アマリネという名前を初めて聞くと、その響きから何の花なのか想像がつきにくいかもしれない。実はこれは、アマリリスとネリネという二つの花を掛け合わせて生まれた交配種で、名前もその二つの合わせ技だ。花の姿はユリを思わせる優雅さを持ちながら、どこかネリネらしい繊細さも感じさせる。紫やピンクの花びらには芳香もあると言われ、姿だけでなく香りでも印象を残す。二つの異なる花の個性が一つの姿に溶け合っているという点が、この花の最大の面白さだろう。花言葉「魅惑的」は、この掛け合わせならではの、どこか掴みどころのない独自の華やかさから生まれたのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アマリネの花言葉『魅惑的』にはどんな由来がありますか？</div>
+        <div class="faq-a">ユリを思わせる優雅な花姿でありながら独自の華やかさを放つ個性が、人を惹きつける魅力を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>二つの異なるものが組み合わさると、思いがけない魅力が生まれることがある。単体では見えなかった個性が、掛け合わせによって初めて姿を現す。自分の中にある意外な一面を、そっと眺めてみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アマリネから始める小さな体験</h2>
+    <p>二つの花の個性を一身に受け継いで咲くアマリネにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ユリに似た花の形をじっくり観察してみる</li>
+      <li>アマリリスとネリネ、それぞれの花の面影を探してみる</li>
+      <li>紫やピンクの花の香りを確かめてみる</li>
+      <li>「魅惑的」という言葉から連想するものを考えてみる</li>
+    </ul>
+
+    <p class="cta-lead">魅惑的な一日を過ごしたい方は、今月の誕生石もあわせて確認してみませんか。開運カレンダーでは、誕生石と星座を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>二つの花の個性が一つの姿に溶け合うところに、アマリネの魅惑的な魅力がある。</p>
     <ul>
-      <li>アマリネは秋にユリに似た花を咲かせる、8月10日の誕生花</li>
-      <li>花言葉は「魅惑的」、上品な花姿に由来する</li>
-      <li>アマリリスとネリネの魅力を併せ持つ花</li>
-      <li>日当たりを好み、水はけの良い土でよく育つ</li>
+      <li>アマリネは秋にユリに似た花を咲かせる、ヒガンバナ科の球根植物で、8月10日の誕生花</li>
+      <li>花言葉は「魅惑的」。二つの花を掛け合わせた独自の華やかさに由来するとされる</li>
+      <li>アマリリスとネリネの交配種で、名前もその合わせ技</li>
+      <li>紫やピンクの花には芳香もあるとされる</li>
     </ul>
   </section>
 
@@ -260,3 +270,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0810');
 ?>
+</content>

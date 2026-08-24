@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0804/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月4日の誕生花カノコユリの花言葉・特徴・魅力をわかりやすく解説。「格調」を象徴する鹿の子模様の花の意味を紹介します。">
+  <meta name="description" content="8月4日の誕生花カノコユリの花言葉・特徴・魅力をわかりやすく解説。ピンク地に鹿の子模様が浮かぶ格調高い花の意味を紹介します。">
   <title>8月4日の誕生花はカノコユリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カノコユリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にピンク地に鹿の子模様の花を咲かせます。ユリ科の多年草です。"}},
-      {"@type":"Question","name":"カノコユリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"鹿の子絞りの着物を思わせる上品な模様の花びらが、気高く格式のある美しさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"カノコユリという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらに浮かぶ模様が、絞り染めの一種である「鹿の子絞り」に似ていることから名付けられたとされています。"}}
+      {"@type":"Question","name":"カノコユリの花にはどんな模様がありますか？","acceptedAnswer":{"@type":"Answer","text":"ピンク地の花びらに、小さな斑点が規則正しく散りばめられた鹿の子模様が浮かびます。夏に大輪の花を咲かせる、ユリ科の多年草です。"}},
+      {"@type":"Question","name":"カノコユリの花言葉『格調』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"鹿の子絞りを思わせる上品な模様の花びらが、気高く格式のある美しさを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 4 · 誕生花</span>
     <h1>8月4日の誕生花はカノコユリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カノコユリは、ユリ科の多年草で、夏になるとピンク地に鹿の子模様の花を咲かせる、華やかで気品ある印象を放つ花です。花言葉は「格調」。華やかで気品ある花です。</p>
+    <p class="art-lead">着物の鹿の子絞りに似た模様を、花びらにまとう植物がある。カノコユリ、8月4日を彩るその花は、繊細な模様と大輪の華やかさを併せ持つ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カノコユリとは</a></li>
-      <li><a href="#meaning">カノコユリが象徴する意味</a></li>
-      <li><a href="#charm">カノコユリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月4日の誕生花として親しまれるカノコユリ</a></li>
+      <li><a href="#story">鹿の子模様が語る、気品という美意識</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カノコユリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カノコユリとは</h2>
-    <p>カノコユリは、ユリ科の多年草で、8月4日の誕生花として知られています。夏になるとピンク地に鹿の子模様の花を咲かせる、華やかで気品ある印象を放つ花です。</p>
-  </section>
+    <h2>8月4日の誕生花として親しまれるカノコユリ</h2>
+    <p>カノコユリは、ユリ科の多年草です。夏になると、ピンク地に鹿の子模様の花を咲かせます。花びらが大きく反り返って咲く姿は、大輪のユリらしい華やかさを持ちながら、模様の細やかさが上品な印象を加えています。この気品ある花が、8月4日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カノコユリが象徴する意味</h2>
-    <p>カノコユリの花言葉は「格調」です。鹿の子絞りの着物を思わせる上品な模様の花びらが、気高く格式のある美しさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カノコユリの魅力</h2>
-    <p>カノコユリの魅力は、花びらに広がる鹿の子模様の繊細な美しさと、大きく反り返って咲く華やかな花姿にあります。日本原産のユリとして、古くから観賞用に親しまれてきました。8月4日生まれの方はもちろん、格調高い想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カノコユリは半日陰を好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月4日生まれの方はもちろん、格調高い想いを伝えたい贈り物としてもカノコユリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カノコユリはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にピンク地に鹿の子模様の花を咲かせます。ユリ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カノコユリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">鹿の子絞りの着物を思わせる上品な模様の花びらが、気高く格式のある美しさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カノコユリという名前の由来は何ですか？</div>
-        <div class="faq-a">花びらに浮かぶ模様が、絞り染めの一種である「鹿の子絞り」に似ていることから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カノコユリの花にはどんな模様がありますか？</div>
+        <div class="faq-a">ピンク地の花びらに、小さな斑点が規則正しく散りばめられた鹿の子模様が浮かびます。夏に大輪の花を咲かせる、ユリ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>鹿の子模様が語る、気品という美意識</h2>
+    <p>カノコユリの花びらを近くで見ると、淡いピンクの地に、小さな斑点が規則正しく散りばめられているのがわかる。この模様は、地色のピンクと斑点の対比によって、控えめながらも独特の華やかさを生み出している。単色で咲く花とは違い、地色と模様という二つの要素が織りなす繊細な美しさが、この花の格を一段引き上げている。花言葉「格調」は、この模様が生む上品さと、大輪ならではの華やかさが重なり合って生まれたのだろう。派手さで人目を引くのではなく、細部の美しさで印象を残す花だ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カノコユリの花言葉『格調』にはどんな由来がありますか？</div>
+        <div class="faq-a">鹿の子絞りを思わせる上品な模様の花びらが、気高く格式のある美しさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>細部にまで気を配ることは、それだけで佇まいを変える。小さな模様一つが花全体の印象を決めるように、細やかさは全体を作る力を持っている。丁寧な所作を一つ選んで、静かに実践してみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カノコユリから始める小さな体験</h2>
+    <p>ピンク地に鹿の子模様を浮かべて咲くカノコユリにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>鹿の子模様の花びらをじっくり観察してみる</li>
+      <li>少し背筋を伸ばして、丁寧な所作を意識してみる</li>
+      <li>ピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">気品ある一日を過ごしたい方は、今日の星座もあわせて確認してみませんか。開運カレンダーでは、星座と吉日を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>地色と模様、二つの要素が重なり合うことで生まれる繊細さこそが、カノコユリの格調を作り上げている。</p>
     <ul>
-      <li>カノコユリは夏に鹿の子模様の花を咲かせる、8月4日の誕生花</li>
-      <li>花言葉は「格調」、上品な模様に由来する</li>
-      <li>ピンク地に広がる鹿の子模様が魅力</li>
-      <li>半日陰を好み、水はけの良い土でよく育つ</li>
+      <li>カノコユリは夏にピンク地の鹿の子模様の花を咲かせる、ユリ科の多年草で、8月4日の誕生花</li>
+      <li>花言葉は「格調」。上品な模様が生む気高さに由来するとされる</li>
+      <li>絞り染めに似た模様が名前の由来</li>
+      <li>大輪ながら繊細な美しさを併せ持つのが魅力</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0804');
 ?>
+</content>

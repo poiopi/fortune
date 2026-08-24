@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0811/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月11日の誕生花グラジオラスの花言葉・特徴・魅力をわかりやすく解説。「たゆまぬ努力」を象徴する堂々とした花の意味を紹介します。">
+  <meta name="description" content="8月11日の誕生花グラジオラスの花言葉・特徴・魅力をわかりやすく解説。高く伸びた花茎に次々と花を咲かせる植物の意味を紹介します。">
   <title>8月11日の誕生花はグラジオラス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"グラジオラスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に高く伸びた花茎に沿って次々と花を咲かせます。アヤメ科の球根植物です。"}},
-      {"@type":"Question","name":"グラジオラスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"下から上へと一つひとつ着実に花を咲かせ続けていく姿が、こつこつと積み重ねる努力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"グラジオラスという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"葉が剣（ラテン語でグラディウス）に似ていることから名付けられたとされています。"}}
+      {"@type":"Question","name":"グラジオラスはどのように花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"高く伸びた花茎に沿って、下から順番に花を咲かせていきます。夏に見頃を迎える、アヤメ科の球根植物です。"}},
+      {"@type":"Question","name":"グラジオラスの花言葉『たゆまぬ努力』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"下から上へと一つひとつ着実に花を咲かせ続けていく姿が、こつこつと積み重ねる努力を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 11 · 誕生花</span>
     <h1>8月11日の誕生花はグラジオラス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">グラジオラスは、アヤメ科の球根植物で、夏になると高く伸びた花茎に沿って次々と花を咲かせ、華やかで堂々とした印象を与える花です。花言葉は「たゆまぬ努力」。華やかで堂々とした花です。</p>
+    <p class="art-lead">一本の茎に、下から上へと順番に花を咲かせていく。急がず、着実に。グラジオラスが、8月11日にそんな姿を見せてくれる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">グラジオラスとは</a></li>
-      <li><a href="#meaning">グラジオラスが象徴する意味</a></li>
-      <li><a href="#charm">グラジオラスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月11日の誕生花として親しまれるグラジオラス</a></li>
+      <li><a href="#story">花茎を昇る花々が刻む、たゆまぬ努力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、グラジオラスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>グラジオラスとは</h2>
-    <p>グラジオラスは、アヤメ科の球根植物で、8月11日の誕生花として知られています。夏になると高く伸びた花茎に沿って次々と花を咲かせ、華やかで堂々とした印象を与える花です。</p>
-  </section>
+    <h2>8月11日の誕生花として親しまれるグラジオラス</h2>
+    <p>グラジオラスは、アヤメ科の球根植物です。夏になると、高く伸びた花茎に沿って次々と花を咲かせます。一度に全ての花が開くのではなく、下の方から順番に咲き上がっていくのが特徴で、華やかで堂々とした印象を与えます。この花が、8月11日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>グラジオラスが象徴する意味</h2>
-    <p>グラジオラスの花言葉は「たゆまぬ努力」です。下から上へと一つひとつ着実に花を咲かせ続けていく姿が、こつこつと積み重ねる努力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>グラジオラスの魅力</h2>
-    <p>グラジオラスの魅力は、まっすぐに高く伸びた花茎に沿って咲きそろう花の華やかさと、剣のような葉が持つ凛とした佇まいにあります。夏を代表する切り花として親しまれています。8月11日生まれの方はもちろん、たゆまぬ努力をたたえたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>グラジオラスは日当たりを好み、球根植物のため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月11日生まれの方はもちろん、たゆまぬ努力をたたえたい贈り物としてもグラジオラスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グラジオラスはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に高く伸びた花茎に沿って次々と花を咲かせます。アヤメ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グラジオラスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">下から上へと一つひとつ着実に花を咲かせ続けていく姿が、こつこつと積み重ねる努力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グラジオラスという名前の由来は何ですか？</div>
-        <div class="faq-a">葉が剣（ラテン語でグラディウス）に似ていることから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">グラジオラスはどのように花を咲かせますか？</div>
+        <div class="faq-a">高く伸びた花茎に沿って、下から順番に花を咲かせていきます。夏に見頃を迎える、アヤメ科の球根植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>花茎を昇る花々が刻む、たゆまぬ努力</h2>
+    <p>グラジオラスの花茎を見ていると、一番下の花が咲いている頃、上の方のつぼみはまだ固く閉じている。時間が経つにつれて、その一つひとつが順番に開いていき、最後にはてっぺんまで花で埋め尽くされる。一気に咲き誇るのではなく、一つずつ着実に、決して急がずに花を咲かせ続けていくその過程には、飾らない誠実さがある。高く伸びる茎が、この着実な咲き方をより堂々と見せている。花言葉「たゆまぬ努力」は、この下から上へと積み重なっていく咲き方から生まれたと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">グラジオラスの花言葉『たゆまぬ努力』にはどんな由来がありますか？</div>
+        <div class="faq-a">下から上へと一つひとつ着実に花を咲かせ続けていく姿が、こつこつと積み重ねる努力を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>積み重ねは、一気に形にはならない。グラジオラスは、それを下から順に、急がず教えてくれる。小さな一歩を一つ、確実に踏み出してみる。焦らず進めば、いずれ上まで届く。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、グラジオラスから始める小さな体験</h2>
+    <p>花茎に沿って一つずつ着実に花を咲かせるグラジオラスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>花茎に沿って次々と花が咲く様子をじっくり観察してみる</li>
+      <li>今日、小さな努力を一つ積み重ねてみる</li>
+      <li>堂々とした姿勢を意識して過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">こつこつと積み重ねたい一日は、今日の年九星・月九星もあわせて確認してみませんか。開運カレンダーでは、年九星と月九星を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一気にではなく一つずつ、順番に咲き上がっていく――それがグラジオラスの努力の形だ。</p>
     <ul>
-      <li>グラジオラスは夏に花茎に沿って花を咲かせる、8月11日の誕生花</li>
-      <li>花言葉は「たゆまぬ努力」、着実に咲く花姿に由来する</li>
-      <li>高く伸びる花茎と華やかさが魅力</li>
-      <li>日当たりを好み、水はけの良い土でよく育つ</li>
+      <li>グラジオラスは夏に花茎に沿って花を咲かせる、アヤメ科の球根植物で、8月11日の誕生花</li>
+      <li>花言葉は「たゆまぬ努力」。下から順に咲き上がる着実な姿に由来するとされる</li>
+      <li>高く伸びる花茎と剣のような葉が特徴</li>
+      <li>一度に咲かず、時間をかけて咲き続けるのが魅力</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0811');
 ?>
+</content>
