@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ベルガモットはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"細い花びらが放射状に伸びる、独特な形の花を咲かせます。夏に見頃を迎える、シソ科の多年草のハーブです。"}},
+      {"@type":"Question","name":"ベルガモットはどんな植物として親しまれていますか？","acceptedAnswer":{"@type":"Answer","text":"ハーブとして親しまれています。夏に独特な形の花を咲かせる、シソ科の多年草です。"}},
       {"@type":"Question","name":"ベルガモットの花言葉『いちずな愛』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"花びらが放射状にまっすぐ伸びる独特な花姿が、一途な想いを貫く愛の形を象徴することに由来すると言われています。"}}
     ]
   }
@@ -173,8 +173,8 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベルガモットはどんな形の花を咲かせますか？</div>
-        <div class="faq-a">細い花びらが放射状に伸びる、独特な形の花を咲かせます。夏に見頃を迎える、シソ科の多年草のハーブです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ベルガモットはどんな植物として親しまれていますか？</div>
+        <div class="faq-a">ハーブとして親しまれています。夏に独特な形の花を咲かせる、シソ科の多年草です。</div>
       </div>
     </div>
   </section>

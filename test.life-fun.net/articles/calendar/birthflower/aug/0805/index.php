@@ -100,7 +100,7 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ルリタマアザミはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"瑠璃色の小花が集まり、球状に咲きそろいます。夏に見頃を迎える、キク科の多年草です。"}},
+      {"@type":"Question","name":"ルリタマアザミはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"瑠璃色の小花が集まり、球状に咲きそろいます。夏に見頃を迎える、キク科の多年草です。"}},
       {"@type":"Question","name":"ルリタマアザミの花言葉『権威』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉に守られながら気高く咲く瑠璃色の球状花が、揺るがない威厳を象徴することに由来すると言われています。"}}
     ]
   }
@@ -173,7 +173,7 @@ ob_start();
 
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルリタマアザミはどんな形の花を咲かせますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ルリタマアザミはどんな色の花を咲かせますか？</div>
         <div class="faq-a">瑠璃色の小花が集まり、球状に咲きそろいます。夏に見頃を迎える、キク科の多年草です。</div>
       </div>
     </div>

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0824/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月24日の誕生花ハイビスカスの花言葉・特徴・魅力をわかりやすく解説。「繊細な美」を象徴する南国的な花の意味を紹介します。">
+  <meta name="description" content="8月24日の誕生花ハイビスカスの花言葉・特徴・魅力をわかりやすく解説。情熱的な大輪の奥に潜む、繊細な美の意味を紹介します。">
   <title>8月24日の誕生花はハイビスカス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハイビスカスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に大輪の花を次々と咲かせます。アオイ科の常緑低木です。"}},
-      {"@type":"Question","name":"ハイビスカスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"情熱的な花色の奥に、薄く繊細な花びらが重なり合う儚い美しさを秘めていることが、繊細な美を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ハイビスカスの花は何日くらい咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一つの花は一日でしぼむ一日花ですが、次々と新しい花を咲かせるため、夏の間長く楽しむことができます。"}}
+      {"@type":"Question","name":"ハイビスカスはどのくらいの期間、花を咲かせ続けますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に、大輪の花を次々と咲かせ続けます。南国的で情熱的な印象を持つ、アオイ科の常緑低木です。"}},
+      {"@type":"Question","name":"ハイビスカスの花言葉『繊細な美』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"情熱的で大輪の花姿の内側に潜む、薄く繊細な花びらの質感を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 24 · 誕生花</span>
     <h1>8月24日の誕生花はハイビスカス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハイビスカスは、アオイ科の常緑低木で、夏を中心に大輪の花を次々と咲かせる、南国的で情熱的な印象を与える花木です。花言葉は「繊細な美」。南国的で情熱的な花です。</p>
+    <p class="art-lead">大輪の花が、今日も一輪、また一輪と途切れることなく咲いていく。そんな勢いの奥に、繊細な表情がそっと隠れているのが、ハイビスカスの奥深さだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハイビスカスとは</a></li>
-      <li><a href="#meaning">ハイビスカスが象徴する意味</a></li>
-      <li><a href="#charm">ハイビスカスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月24日の誕生花として親しまれるハイビスカス</a></li>
+      <li><a href="#story">次々と咲く大輪の奥にある、繊細な一枚一枚</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハイビスカスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハイビスカスとは</h2>
-    <p>ハイビスカスは、アオイ科の常緑低木で、8月24日の誕生花として知られています。夏を中心に大輪の花を次々と咲かせる、南国的で情熱的な印象を与える花木です。</p>
-  </section>
+    <h2>8月24日の誕生花として親しまれるハイビスカス</h2>
+    <p>ハイビスカスは、アオイ科の常緑低木です。夏を中心に、大輪の花を次々と咲かせます。南国的で情熱的な印象を持つ花姿が魅力です。この尽きることのない勢いを持つ花が、8月24日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハイビスカスが象徴する意味</h2>
-    <p>ハイビスカスの花言葉は「繊細な美」です。情熱的な花色の奥に、薄く繊細な花びらが重なり合う儚い美しさを秘めていることが、繊細な美を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハイビスカスの魅力</h2>
-    <p>ハイビスカスの魅力は、南国を思わせる鮮やかな花色と、一日花でありながら次々と途切れることなく咲き続ける生命力にあります。夏の庭やリゾート気分を演出する花として親しまれています。8月24日生まれの方はもちろん、繊細な美しさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハイビスカスは日当たりと高温を好み、寒さに弱いため冬は室内で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月24日生まれの方はもちろん、繊細な美しさを伝えたい贈り物としてもハイビスカスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハイビスカスはいつ頃咲きますか？</div>
-        <div class="faq-a">夏を中心に大輪の花を次々と咲かせます。アオイ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハイビスカスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">情熱的な花色の奥に、薄く繊細な花びらが重なり合う儚い美しさを秘めていることが、繊細な美を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハイビスカスの花は何日くらい咲きますか？</div>
-        <div class="faq-a">一つの花は一日でしぼむ一日花ですが、次々と新しい花を咲かせるため、夏の間長く楽しむことができます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ハイビスカスはどのくらいの期間、花を咲かせ続けますか？</div>
+        <div class="faq-a">夏を中心に、大輪の花を次々と咲かせ続けます。南国的で情熱的な印象を持つ、アオイ科の常緑低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>次々と咲く大輪の奥にある、繊細な一枚一枚</h2>
+    <p>ハイビスカスは、一輪の花の寿命こそ短いが、その分、次から次へと新しい花を咲かせ続ける。途切れることのないその勢いは、南国の日差しにも負けない情熱的な印象を放つ。しかし、大きく開いた花びらを一枚だけ手に取ってみると、そこには思いのほか薄く繊細な質感が広がっている。堂々とした大輪の姿の奥に、壊れやすいほど繊細な部分が隠れている。それは矛盾ではなく、一つの花が持つ二つの表情と言った方が近いだろう。花言葉「繊細な美」は、この情熱的な花姿の内側に潜む、薄く儚い花びらの質感から生まれたと言われている。華やかさだけを見て通り過ぎてしまうと、この繊細さにはなかなか気づけない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハイビスカスの花言葉『繊細な美』にはどんな由来がありますか？</div>
+        <div class="faq-a">情熱的で大輪の花姿の内側に潜む、薄く繊細な花びらの質感を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>堂々として見える人ほど、内側に繊細な部分を持っていることがある。そんなときは、華やかな表情の奥にある柔らかな部分にも、目を向けてみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハイビスカスから始める小さな体験</h2>
+    <p>大輪の花を、次々と途切れなく咲かせていくハイビスカスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>大輪の花が次々と咲く様子をじっくり観察してみる</li>
+      <li>華やかさの中にある繊細な部分を一つ見つけてみる</li>
+      <li>南国を思わせる色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">華やかさの奥にある自分らしさを大切にしたい日は、今日の六曜も確認してみませんか。開運カレンダーでは、六曜とおすすめアイテムを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>大輪の勢いに目を奪われるほど、花びら一枚の薄さを見落としやすい。</p>
     <ul>
-      <li>ハイビスカスは夏に大輪の花を次々と咲かせる、8月24日の誕生花</li>
-      <li>花言葉は「繊細な美」、儚い花びらに由来する</li>
-      <li>南国的な花色と力強い生命力が魅力</li>
-      <li>日当たりと高温を好み、寒さに弱い</li>
+      <li>ハイビスカスは夏を中心に大輪の花を次々と咲かせる、アオイ科の常緑低木で、8月24日の誕生花</li>
+      <li>花言葉は「繊細な美」。花びらの薄く繊細な質感に由来すると言われる</li>
+      <li>南国的で情熱的な印象を放つ</li>
+      <li>華やかさの奥に繊細な一面を持つ</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0822/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月22日の誕生花ジャノメギクの花言葉・特徴・魅力をわかりやすく解説。「せつない喜び」を象徴する蛇の目模様の花の意味を紹介します。">
+  <meta name="description" content="8月22日の誕生花ジャノメギクの花言葉・特徴・魅力をわかりやすく解説。花びらに浮かぶ蛇の目模様がにじませる、せつない喜びの意味を紹介します。">
   <title>8月22日の誕生花はジャノメギク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ジャノメギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から秋に蛇の目模様の花を咲かせます。キク科の一年草です。"}},
-      {"@type":"Question","name":"ジャノメギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらの根元に浮かぶ蛇の目模様が、喜びの中にもどこか切なさを感じさせる複雑な心情を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ジャノメギクという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらの根元に浮かぶ丸い模様が、和傘の「蛇の目模様」に似ていることから名付けられたとされています。"}}
+      {"@type":"Question","name":"ジャノメギクの花びらにはどんな模様がありますか？","acceptedAnswer":{"@type":"Answer","text":"蛇の目のような模様が花びらに浮かびます。初夏から秋にかけて長く咲き続ける、キク科の一年草です。"}},
+      {"@type":"Question","name":"ジャノメギクの花言葉『せつない喜び』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"控えめながら印象に残る蛇の目模様の花姿が、切なさの中にふと差し込む喜びを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 22 · 誕生花</span>
     <h1>8月22日の誕生花はジャノメギク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ジャノメギクは、キク科の一年草で、初夏から秋にかけて蛇の目模様の花を咲かせる、可憐さの中に切なさを秘めた印象を放つ花です。花言葉は「せつない喜び」。可憐で個性的な花です。</p>
+    <p class="art-lead">花びらの中心に、蛇の目のような模様がふわりと浮かぶ。その静かな余韻は、ジャノメギクだけが残せるものなのかもしれない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ジャノメギクとは</a></li>
-      <li><a href="#meaning">ジャノメギクが象徴する意味</a></li>
-      <li><a href="#charm">ジャノメギクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月22日の誕生花として親しまれるジャノメギク</a></li>
+      <li><a href="#story">蛇の目模様がにじませる、せつなさと喜びの境目</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ジャノメギクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ジャノメギクとは</h2>
-    <p>ジャノメギクは、キク科の一年草で、8月22日の誕生花として知られています。初夏から秋にかけて蛇の目模様の花を咲かせる、可憐さの中に切なさを秘めた印象を放つ花です。</p>
-  </section>
+    <h2>8月22日の誕生花として親しまれるジャノメギク</h2>
+    <p>ジャノメギクは、キク科の一年草です。初夏から秋にかけて、花びらに蛇の目のような模様を浮かべた花を咲かせます。長い期間にわたって咲き続けることも、この花の特徴の一つです。この印象的な模様を持つ花が、8月22日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ジャノメギクが象徴する意味</h2>
-    <p>ジャノメギクの花言葉は「せつない喜び」です。花びらの根元に浮かぶ蛇の目模様が、喜びの中にもどこか切なさを感じさせる複雑な心情を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ジャノメギクの魅力</h2>
-    <p>ジャノメギクの魅力は、花びらの中心に浮かぶくっきりとした蛇の目模様の個性的な美しさにあります。初夏から秋まで長期間にわたって花壇を彩る、丈夫で育てやすい花です。8月22日生まれの方はもちろん、せつない喜びを分かち合いたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ジャノメギクは日当たりを好み、こぼれ種でもよく増えるため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月22日生まれの方はもちろん、せつない喜びを分かち合いたい贈り物としてもジャノメギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジャノメギクはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から秋に蛇の目模様の花を咲かせます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジャノメギクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">花びらの根元に浮かぶ蛇の目模様が、喜びの中にもどこか切なさを感じさせる複雑な心情を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジャノメギクという名前の由来は何ですか？</div>
-        <div class="faq-a">花びらの根元に浮かぶ丸い模様が、和傘の「蛇の目模様」に似ていることから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ジャノメギクの花びらにはどんな模様がありますか？</div>
+        <div class="faq-a">蛇の目のような模様が花びらに浮かびます。初夏から秋にかけて長く咲き続ける、キク科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>蛇の目模様がにじませる、せつなさと喜びの境目</h2>
+    <p>ジャノメギクの花びらを近くで見ると、中心のあたりにふっと蛇の目のような模様が浮かんでいることに気づく。派手さで目を引く花ではないが、じっと見つめるほどに引き込まれる、静かな存在感を持っている。初夏から秋まで長く咲き続けるところにも、一時の華やかさでは終わらない奥行きが感じられる。花言葉「せつない喜び」は、この控えめでありながら印象に残る蛇の目模様の花姿から生まれたと言われている。悲しみそのものを表すのではなく、切なさの奥にふと差し込む小さな喜びのような、複雑に絡み合った心の動きを映しているのだろう。じっと見つめた者だけが気づける、そんな静かな表情を秘めた花である。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ジャノメギクの花言葉『せつない喜び』にはどんな由来がありますか？</div>
+        <div class="faq-a">控えめながら印象に残る蛇の目模様の花姿が、切なさの中にふと差し込む喜びを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>切ない気持ちと嬉しい気持ちが、同じ胸の中に同居することがある。そんな日は、その両方をそのまま静かに味わってみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ジャノメギクから始める小さな体験</h2>
+    <p>花びらに浮かぶ、蛇の目のような模様を持つジャノメギクにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>蛇の目模様の花びらをじっくり観察してみる</li>
+      <li>切ないけれど嬉しい気持ちを一つ心の中で味わってみる</li>
+      <li>花の模様をスケッチしたり写真に撮ってみる</li>
+    </ul>
+
+    <p class="cta-lead">静かな気持ちに浸りたい日は、今日のラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、ラッキープレイスと月齢・月相を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>派手さのない模様ほど、見つめるうちに離れがたくなるものだ。</p>
     <ul>
-      <li>ジャノメギクは初夏から秋に蛇の目模様の花を咲かせる、8月22日の誕生花</li>
-      <li>花言葉は「せつない喜び」、複雑な模様に由来する</li>
-      <li>蛇の目模様の個性的な美しさが魅力</li>
-      <li>日当たりを好み、こぼれ種でよく増える</li>
+      <li>ジャノメギクは初夏から秋に蛇の目模様の花を咲かせる、キク科の一年草で、8月22日の誕生花</li>
+      <li>花言葉は「せつない喜び」。控えめで印象的な模様に由来すると言われる</li>
+      <li>初夏から秋まで長い期間咲き続ける</li>
+      <li>花びらに浮かぶ独特な模様が静かな存在感を放つ</li>
     </ul>
   </section>
 

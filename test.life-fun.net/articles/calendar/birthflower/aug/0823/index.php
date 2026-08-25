@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0823/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月23日の誕生花ナツスミレの花言葉・特徴・魅力をわかりやすく解説。「秘密」を象徴する控えめで可憐な花の意味を紹介します。">
+  <meta name="description" content="8月23日の誕生花ナツスミレの花言葉・特徴・魅力をわかりやすく解説。「トレニア」というもう一つの名前に隠れた、秘密の意味を紹介します。">
   <title>8月23日の誕生花はナツスミレ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ナツスミレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に控えめで可憐な花を咲かせます。アゼナ科の一年草です。"}},
-      {"@type":"Question","name":"ナツスミレの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"スミレに似た小さく控えめな花を、目立たぬようにそっと咲かせる奥ゆかしい姿が、胸の内に秘めた想いを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ナツスミレとトレニアは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。ナツスミレはトレニアの和名で、同じ花を指します。スミレに似た花姿から、この和名が付けられました。"}}
+      {"@type":"Question","name":"ナツスミレはスミレの仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、ナツスミレはアゼナ科の植物で、スミレ科の本来の菫とは異なります。「トレニア」という洋名でも親しまれ、夏に控えめで可憐な花を咲かせます。"}},
+      {"@type":"Question","name":"ナツスミレの花言葉『秘密』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"控えめな花姿の奥に「トレニア」というもう一つの名前を持つ二面性が、秘密めいた印象を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 23 · 誕生花</span>
     <h1>8月23日の誕生花はナツスミレ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ナツスミレは、アゼナ科の一年草で、夏になると控えめで可憐な花を咲かせる、静かな奥ゆかしさを感じさせる花です。花言葉は「秘密」。控えめで可憐な花です。</p>
+    <p class="art-lead">夏に咲くその花は、一見素朴で控えめに見えて、実はもう一つの名前をそっと隠し持っている。8月23日生まれの人へ、ナツスミレはそっと「トレニア」というもう一つの顔を差し出す。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ナツスミレとは</a></li>
-      <li><a href="#meaning">ナツスミレが象徴する意味</a></li>
-      <li><a href="#charm">ナツスミレの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月23日の誕生花として親しまれるナツスミレ</a></li>
+      <li><a href="#story">『トレニア』というもう一つの名前に隠れた花の顔</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ナツスミレから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ナツスミレとは</h2>
-    <p>ナツスミレは、アゼナ科の一年草で、8月23日の誕生花として知られています。夏になると控えめで可憐な花を咲かせる、静かな奥ゆかしさを感じさせる花です。</p>
-  </section>
+    <h2>8月23日の誕生花として親しまれるナツスミレ</h2>
+    <p>ナツスミレは、アゼナ科の一年草です。夏になると、控えめで可憐な花を咲かせます。「ナツスミレ」という和名を持ちますが、スミレ科の本来の菫とは異なる植物で、「トレニア」という洋名でも親しまれています。この二つの名前を持つ花が、8月23日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ナツスミレが象徴する意味</h2>
-    <p>ナツスミレの花言葉は「秘密」です。スミレに似た小さく控えめな花を、目立たぬようにそっと咲かせる奥ゆかしい姿が、胸の内に秘めた想いを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ナツスミレの魅力</h2>
-    <p>ナツスミレの魅力は、暑さに負けず夏の間じゅう咲き続ける丈夫さと、スミレを思わせる控えめで可憐な花姿にあります。花壇の縁取りや寄せ植えにも人気の花です。8月23日生まれの方はもちろん、秘めた想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ナツスミレは半日陰を好み、暑さには強いものの乾燥に弱いため水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月23日生まれの方はもちろん、秘めた想いを伝えたい贈り物としてもナツスミレは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナツスミレはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に控えめで可憐な花を咲かせます。アゼナ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナツスミレの花言葉の由来は何ですか？</div>
-        <div class="faq-a">スミレに似た小さく控えめな花を、目立たぬようにそっと咲かせる奥ゆかしい姿が、胸の内に秘めた想いを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナツスミレとトレニアは同じ花ですか？</div>
-        <div class="faq-a">はい。ナツスミレはトレニアの和名で、同じ花を指します。スミレに似た花姿から、この和名が付けられました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ナツスミレはスミレの仲間ですか？</div>
+        <div class="faq-a">いいえ、ナツスミレはアゼナ科の植物で、スミレ科の本来の菫とは異なります。「トレニア」という洋名でも親しまれ、夏に控えめで可憐な花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>『トレニア』というもう一つの名前に隠れた花の顔</h2>
+    <p>ナツスミレという名前を聞くと、多くの人はスミレの仲間を思い浮かべるかもしれない。しかしこの花は、スミレ科ではなくアゼナ科に属する、まったく別の植物である。夏に控えめで可憐な花を咲かせるこの花には、「トレニア」という洋名もある。一つの花に、和名と洋名という二つの呼び名が存在し、どちらの顔で呼ぶかによって印象が少しずつ違って見えてくる。花言葉「秘密」は、この控えめな花姿の奥にもう一つの名前を隠し持つ二面性から生まれたと言われている。誰もが知っているようで、実はよく知らない一面を持つ。それが、この花の奥ゆかしさなのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ナツスミレの花言葉『秘密』にはどんな由来がありますか？</div>
+        <div class="faq-a">控えめな花姿の奥に「トレニア」というもう一つの名前を持つ二面性が、秘密めいた印象を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰にも話さず、自分の中だけでそっと抱えている気持ちがある。その気持ちを、今日は大切にしまったまま静かに過ごしてみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ナツスミレから始める小さな体験</h2>
+    <p>控えめに咲く花に、「トレニア」という別の顔が隠れているナツスミレにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>控えめで可憐な花をじっくり観察してみる</li>
+      <li>「トレニア」というもう一つの名前を調べてみる</li>
+      <li>心の中にそっとしまっている気持ちを一つ思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">そっと心にしまっておきたい一日は、今日のラッキーフードも見てみませんか。開運カレンダーでは、ラッキーフードとラッキーナンバーを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一つの花に、二つの名前。その距離感が、この花の奥ゆかしさを作っている。</p>
     <ul>
-      <li>ナツスミレは夏に控えめで可憐な花を咲かせる、8月23日の誕生花</li>
-      <li>花言葉は「秘密」、奥ゆかしい花姿に由来する</li>
-      <li>スミレに似た可憐さが魅力</li>
-      <li>半日陰を好み、水切れに注意する</li>
+      <li>ナツスミレは夏に控えめで可憐な花を咲かせる、アゼナ科の一年草で、8月23日の誕生花</li>
+      <li>花言葉は「秘密」。もう一つの名前を持つ二面性に由来すると言われる</li>
+      <li>「トレニア」という洋名でも親しまれる</li>
+      <li>スミレ科の本来の菫とは異なる植物</li>
     </ul>
   </section>
 

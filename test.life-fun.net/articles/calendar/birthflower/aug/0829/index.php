@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クルクマはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にピンク色の苞が幾重にも重なった花を咲かせます。ショウガ科の多年草です。"}},
-      {"@type":"Question","name":"クルクマの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"重なり合う苞が一つの花姿を作り上げるように咲く様子が、人と人とを結びつける不思議な縁を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"クルクマのピンク色の部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。ピンク色の部分は「苞」と呼ばれる葉が変化した部分で、その中に小さな本当の花が咲いています。"}}
+      {"@type":"Question","name":"クルクマのピンク色の部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。ピンク色に見える部分は苞と呼ばれる部分で、幾重にも重なり合うように咲きます。その内側に小さな花をつける、ショウガ科の多年草です。"}},
+      {"@type":"Question","name":"クルクマの花言葉『縁』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"幾重にも重なり合う苞が一つの花姿を作り上げていく様子が、人と人との思いがけないつながりを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 29 · 誕生花</span>
     <h1>8月29日の誕生花はクルクマ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クルクマは、ショウガ科の多年草で、夏になるとピンク色の苞が幾重にも重なった花を咲かせる、エキゾチックで涼やかな印象を与える花です。花言葉は「縁」。エキゾチックで涼やかな花です。</p>
+    <p class="art-lead">夏の日差しの中、ピンク色の苞が幾重にも折り重なって、塔のような花姿を作り上げていく。一枚だけでは目立たない苞も、幾重にも連なることで独特の存在感を放つようになる。こうして重なり合う姿から、8月29日の誕生花クルクマには『縁』という花言葉が託されている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クルクマとは</a></li>
-      <li><a href="#meaning">クルクマが象徴する意味</a></li>
-      <li><a href="#charm">クルクマの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月29日の誕生花として親しまれるクルクマ</a></li>
+      <li><a href="#story">幾重に重なる苞が教える、思いがけない縁のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クルクマから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クルクマとは</h2>
-    <p>クルクマは、ショウガ科の多年草で、8月29日の誕生花として知られています。夏になるとピンク色の苞が幾重にも重なった花を咲かせる、エキゾチックで涼やかな印象を与える花です。</p>
-  </section>
+    <h2>8月29日の誕生花として親しまれるクルクマ</h2>
+    <p>クルクマは、ショウガ科の多年草です。夏になると、ピンク色の苞が幾重にも重なり合った花を咲かせます。エキゾチックで涼やかな印象を持つその姿が、8月29日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クルクマが象徴する意味</h2>
-    <p>クルクマの花言葉は「縁」です。重なり合う苞が一つの花姿を作り上げるように咲く様子が、人と人とを結びつける不思議な縁を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クルクマの魅力</h2>
-    <p>クルクマの魅力は、蓮の花を思わせる幾重にも重なったピンク色の苞と、暑い夏に涼やかさを届けるエキゾチックな佇まいにあります。切り花としても夏の贈り物に人気です。8月29日生まれの方はもちろん、大切な縁を結びたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クルクマは日当たりから半日陰を好み、高温多湿の環境で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月29日生まれの方はもちろん、大切な縁を結びたい贈り物としてもクルクマは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クルクマはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にピンク色の苞が幾重にも重なった花を咲かせます。ショウガ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クルクマの花言葉の由来は何ですか？</div>
-        <div class="faq-a">重なり合う苞が一つの花姿を作り上げるように咲く様子が、人と人とを結びつける不思議な縁を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">クルクマのピンク色の部分は花びらですか？</div>
-        <div class="faq-a">いいえ。ピンク色の部分は「苞」と呼ばれる葉が変化した部分で、その中に小さな本当の花が咲いています。</div>
+        <div class="faq-a">いいえ。ピンク色に見える部分は苞と呼ばれる部分で、幾重にも重なり合うように咲きます。その内側に小さな花をつける、ショウガ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>幾重に重なる苞が教える、思いがけない縁のかたち</h2>
+    <p>クルクマの花のように見える部分は、実は苞と呼ばれる葉が変化した部位で、その内側に小さな本当の花を守るように咲かせている。一枚の苞だけを見ればささやかな存在だが、幾重にも重なり合うことで、全体としては塔のような立体感のある花姿が生まれる。この重なりの一枚一枚を、じっくり眺めてみると面白い。花言葉「縁」は、いくつもの苞が寄り重なって一つの姿を作り上げていく様子に由来すると言われている。誰かと誰かがふとした瞬間に結びつくように、この花も一枚だけでは完成しない。今日出会う人やものとの縁も、思いがけないところから重なり始めているのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クルクマの花言葉『縁』にはどんな由来がありますか？</div>
+        <div class="faq-a">幾重にも重なり合う苞が一つの花姿を作り上げていく様子が、人と人との思いがけないつながりを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>重なり合う苞をよく見ると、一枚一枚は控えめでも、集まることで思いがけない存在感を生み出している。人との縁も同じように、些細なやり取りが積み重なって、ふと大きな意味を持ち始めることがある。今日誰かと交わす短い言葉のひとつが、後から振り返って大切な重なりになっているかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クルクマから始める小さな体験</h2>
+    <p>幾重にも重なる苞が、静かに一つの花姿を作り上げていくクルクマにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>幾重にも重なる苞をじっくり観察してみる</li>
+      <li>人とのつながりを一つ大切に思い返してみる</li>
+      <li>ピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">思いがけないつながりを感じたい一日は、今日の吉日もあわせて確認してみませんか。開運カレンダーでは、吉日とラッキーナンバーを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな苞が幾重にも重なるだけで、ここまで印象深い花姿が生まれる。</p>
     <ul>
-      <li>クルクマは夏にピンク色の苞を咲かせる、8月29日の誕生花</li>
-      <li>花言葉は「縁」、重なり合う苞に由来する</li>
-      <li>エキゾチックな花姿と涼やかさが魅力</li>
-      <li>日当たりから半日陰を好み、高温多湿を好む</li>
+      <li>クルクマは夏にピンク色の苞が幾重にも重なる花を咲かせる、ショウガ科の多年草で、8月29日の誕生花</li>
+      <li>花言葉は「縁」。苞が幾重にも重なり合う姿に由来すると言われる</li>
+      <li>エキゾチックで涼やかな印象を持つ</li>
+      <li>一枚だけでは目立たない苞も、重なることで存在感を増す</li>
     </ul>
   </section>
 

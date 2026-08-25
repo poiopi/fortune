@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0817/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月17日の誕生花タッセルフラワーの花言葉・特徴・魅力をわかりやすく解説。「感性」を象徴する房状の花の意味を紹介します。">
+  <meta name="description" content="8月17日の誕生花タッセルフラワーの花言葉・特徴・魅力をわかりやすく解説。房状に垂れる赤い花が見せる、繊細な感性の意味を紹介します。">
   <title>8月17日の誕生花はタッセルフラワー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"タッセルフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に房状の赤い花を咲かせます。キク科の一年草です。"}},
-      {"@type":"Question","name":"タッセルフラワーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらを持たず、房状の細い花が繊細に集まって咲く独特な姿が、鋭く豊かな感性を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"タッセルフラワーという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"房状に咲く花の姿が、洋服などの装飾に使われる「タッセル（房飾り）」に似ていることから名付けられたとされています。"}}
+      {"@type":"Question","name":"タッセルフラワーの花はどんな形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"房状にまとまった赤い花を咲かせます。房飾りのような独特な形が特徴で、夏に見頃を迎えるキク科の一年草です。"}},
+      {"@type":"Question","name":"タッセルフラワーの花言葉『感性』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"房状に垂れる繊細な赤い花の姿が、細やかな心の動きに気づく感性を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 17 · 誕生花</span>
     <h1>8月17日の誕生花はタッセルフラワー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">タッセルフラワーは、キク科の一年草で、夏になると房状の赤い花を咲かせる、繊細で個性的な印象を放つ花です。花言葉は「感性」。繊細で個性的な花です。</p>
+    <p class="art-lead">赤い糸を束ねたような花が、風が吹くたびにふるりと揺れる。タッセルフラワーは、8月17日という日にふさわしい繊細な揺れを、風の中で見せてくれる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">タッセルフラワーとは</a></li>
-      <li><a href="#meaning">タッセルフラワーが象徴する意味</a></li>
-      <li><a href="#charm">タッセルフラワーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月17日の誕生花として親しまれるタッセルフラワー</a></li>
+      <li><a href="#story">房のように垂れる赤が映す、繊細な心の揺れ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、タッセルフラワーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>タッセルフラワーとは</h2>
-    <p>タッセルフラワーは、キク科の一年草で、8月17日の誕生花として知られています。夏になると房状の赤い花を咲かせる、繊細で個性的な印象を放つ花です。</p>
-  </section>
+    <h2>8月17日の誕生花として親しまれるタッセルフラワー</h2>
+    <p>タッセルフラワーは、キク科の一年草です。夏になると房状の赤い花を咲かせます。房飾りのように連なって垂れ下がる、独特な花の形が特徴です。この繊細な姿の花が、8月17日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>タッセルフラワーが象徴する意味</h2>
-    <p>タッセルフラワーの花言葉は「感性」です。花びらを持たず、房状の細い花が繊細に集まって咲く独特な姿が、鋭く豊かな感性を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>タッセルフラワーの魅力</h2>
-    <p>タッセルフラワーの魅力は、房飾り（タッセル）を思わせる細く繊細な花姿と、鮮やかな赤色が生み出す独特の存在感にあります。ドライフラワーとしても楽しめる花です。8月17日生まれの方はもちろん、豊かな感性を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>タッセルフラワーは日当たりを好み、乾燥に強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月17日生まれの方はもちろん、豊かな感性を伝えたい贈り物としてもタッセルフラワーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タッセルフラワーはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に房状の赤い花を咲かせます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タッセルフラワーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">花びらを持たず、房状の細い花が繊細に集まって咲く独特な姿が、鋭く豊かな感性を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タッセルフラワーという名前の由来は何ですか？</div>
-        <div class="faq-a">房状に咲く花の姿が、洋服などの装飾に使われる「タッセル（房飾り）」に似ていることから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">タッセルフラワーの花はどんな形をしていますか？</div>
+        <div class="faq-a">房状にまとまった赤い花を咲かせます。房飾りのような独特な形が特徴で、夏に見頃を迎えるキク科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>房のように垂れる赤が映す、繊細な心の揺れ</h2>
+    <p>タッセルフラワーの花は、一輪でどっしりと構えるタイプではない。細い赤色が幾筋も垂れ下がり、房飾りのようにまとまって咲く。その一本一本は頼りなく見えるほど繊細で、風が吹くたびにふるふると揺れる。まとまって初めて存在感を持つのに、一本一本の繊細さは失われない。そんな二つの表情を併せ持つ花だ。花言葉「感性」は、この房状に垂れる繊細な花の姿から生まれたと言われている。大きく主張する花ではないが、目を凝らすほどに細やかな表情が見えてくる。そこには、ふとした心の動きにそっと気づくような感覚が重なる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タッセルフラワーの花言葉『感性』にはどんな由来がありますか？</div>
+        <div class="faq-a">房状に垂れる繊細な赤い花の姿が、細やかな心の動きに気づく感性を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心の中でふと揺れた小さな感覚に、今日は少しだけ目を向けてみる。うまく言葉にできたかどうかより、気づけたこと自体に意味がある。タッセルフラワーの細やかな花びらのように、その揺れを大切に抱えてみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、タッセルフラワーから始める小さな体験</h2>
+    <p>房状に垂れる赤い花が、繊細な表情を見せるタッセルフラワーにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>房状に咲く赤い花をじっくり観察してみる</li>
+      <li>心に浮かんだ小さな感覚を一つ言葉にしてみる</li>
+      <li>赤色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">細やかな感覚を大切にしたい一日は、今日のおすすめアイテムも覗いてみませんか。開運カレンダーでは、おすすめアイテムとラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>揺れることを恐れない花びらが、繊細さという強さを教えてくれる。</p>
     <ul>
-      <li>タッセルフラワーは夏に房状の赤い花を咲かせる、8月17日の誕生花</li>
-      <li>花言葉は「感性」、繊細な花姿に由来する</li>
-      <li>房飾りのような独特な花姿が魅力</li>
-      <li>日当たりを好み、乾燥に強い</li>
+      <li>タッセルフラワーは夏に房状の赤い花を咲かせる、キク科の一年草で、8月17日の誕生花</li>
+      <li>花言葉は「感性」。房状に垂れる繊細な花姿に由来すると言われる</li>
+      <li>房飾りのような独特な花の形が魅力</li>
+      <li>一本一本の繊細さとまとまった時の存在感を併せ持つ</li>
     </ul>
   </section>
 

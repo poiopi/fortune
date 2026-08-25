@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スパティフィラムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して白い苞を咲かせます。サトイモ科の多年草です。"}},
-      {"@type":"Question","name":"スパティフィラムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"汚れのない純白の苞が静かに凛と咲く姿が、澄み渡った清らかな心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"スパティフィラムは室内でも育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"はい。日陰にも比較的強く、空気清浄効果もあるとされることから、室内で育てる観葉植物として人気があります。"}}
+      {"@type":"Question","name":"スパティフィラムはどんな季節に花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"特定の季節に限らず、一年を通して白い苞を咲かせ続ける、サトイモ科の多年草です。"}},
+      {"@type":"Question","name":"スパティフィラムの花言葉『清らかな心』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"汚れのない白い苞が、季節を問わず静かに咲き続ける姿が、澄んでいく心のありようを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -132,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 31 · 誕生花</span>
     <h1>8月31日の誕生花はスパティフィラム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スパティフィラムは、サトイモ科の多年草で、一年を通して白い苞を咲かせる、清潔感のある落ち着いた印象を持つ植物です。花言葉は「清らかな心」。清潔感のある落ち着いた花です。</p>
+    <p class="art-lead">白い苞が、季節を問わず静かに咲き続けている。時が流れても変わらないその佇まいに、凛とした清潔感が宿る。『清らかな心』という花言葉は、8月31日の誕生花スパティフィラムが咲かせるその白さから生まれた。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スパティフィラムとは</a></li>
-      <li><a href="#meaning">スパティフィラムが象徴する意味</a></li>
-      <li><a href="#charm">スパティフィラムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月31日の誕生花として親しまれるスパティフィラム</a></li>
+      <li><a href="#story">変わらぬ白さが、静かに映す清らかな心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スパティフィラムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スパティフィラムとは</h2>
-    <p>スパティフィラムは、サトイモ科の多年草で、8月31日の誕生花として知られています。一年を通して白い苞を咲かせる、清潔感のある落ち着いた印象を持つ植物です。</p>
-  </section>
+    <h2>8月31日の誕生花として親しまれるスパティフィラム</h2>
+    <p>スパティフィラムは、サトイモ科の多年草です。一年を通して、白い苞を咲かせ続けます。季節に左右されないその姿は、清潔感のある落ち着いた印象を与え、8月31日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スパティフィラムが象徴する意味</h2>
-    <p>スパティフィラムの花言葉は「清らかな心」です。汚れのない純白の苞が静かに凛と咲く姿が、澄み渡った清らかな心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スパティフィラムの魅力</h2>
-    <p>スパティフィラムの魅力は、光沢のある濃い緑の葉とすっと伸びる白い苞が織りなす、清潔感のある美しさにあります。空気清浄効果を持つ観葉植物としても人気の高い花です。8月31日生まれの方はもちろん、清らかな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スパティフィラムは明るい日陰を好み、乾燥に弱いため水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月31日生まれの方はもちろん、清らかな想いを伝えたい贈り物としてもスパティフィラムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して白い苞を咲かせます。サトイモ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">汚れのない純白の苞が静かに凛と咲く姿が、澄み渡った清らかな心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムは室内でも育てやすいですか？</div>
-        <div class="faq-a">はい。日陰にも比較的強く、空気清浄効果もあるとされることから、室内で育てる観葉植物として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムはどんな季節に花を咲かせますか？</div>
+        <div class="faq-a">特定の季節に限らず、一年を通して白い苞を咲かせ続ける、サトイモ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>変わらぬ白さが、静かに映す清らかな心</h2>
+    <p>スパティフィラムの白は、華やかに主張する白ではない。すっと伸びた茎の先に、静かに、けれど確かな存在感を持って咲く。その白さは季節が移り変わっても変わることがなく、いつ見ても同じ落ち着きをたたえている。清潔感のあるこの佇まいは、見る人の心まで静かに整えてくれるように感じられる。花言葉「清らかな心」は、汚れのない白い苞が、澄んでいく心のありようを映していることに由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スパティフィラムの花言葉『清らかな心』にはどんな由来がありますか？</div>
+        <div class="faq-a">汚れのない白い苞が、季節を問わず静かに咲き続ける姿が、澄んでいく心のありようを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>白は、何も加えないままで、静かな強さを持っている。心もまた、飾らないままの状態が一番澄んでいることがある。今日、身の回りをほんの少し整えるだけで、その静けさに触れられる一日になる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スパティフィラムから始める小さな体験</h2>
+    <p>季節を問わず白い苞を咲かせ続けるスパティフィラムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い苞をじっくり観察してみる</li>
+      <li>身の回りを一つ、清らかに整えてみる</li>
+      <li>静かで落ち着いた時間を過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">静かな一日を過ごしたい日は、今日の星座も覗いてみませんか。開運カレンダーでは、星座とラッキーフードを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>季節に流されず、変わらず咲き続ける白い苞が、この花の静けさをそのまま表している。</p>
     <ul>
-      <li>スパティフィラムは一年を通して白い苞を咲かせる、8月31日の誕生花</li>
-      <li>花言葉は「清らかな心」、純白の苞に由来する</li>
-      <li>清潔感のある落ち着いた美しさが魅力</li>
-      <li>明るい日陰を好み、水切れに注意する</li>
+      <li>スパティフィラムは一年を通して白い苞を咲かせる、サトイモ科の多年草で、8月31日の誕生花</li>
+      <li>花言葉は「清らかな心」。汚れのない白い苞に由来すると言われる</li>
+      <li>季節を問わず変わらない、清潔感のある落ち着いた佇まい</li>
+      <li>静かで澄んだ心を思い出させてくれる存在</li>
     </ul>
   </section>
 
