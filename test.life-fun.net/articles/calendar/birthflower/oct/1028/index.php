@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヤハズカヅラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に黄色い花を咲かせます。キツネノマゴ科のつる性植物です。"}},
-      {"@type":"Question","name":"ヤハズカヅラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"黄色い花の中心にある模様が瞳のように見えることから、美しい瞳を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヤハズカヅラの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"葉の形が矢筈（矢の弓につがえる部分）に似ていることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"ヤハズカヅラの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"名前の由来ははっきり分かっていませんが、つるを伸ばしながら生育し、夏に黄色い花を咲かせる植物として親しまれています。"}},
+      {"@type":"Question","name":"ヤハズカヅラの「美しい瞳」という花言葉は、どのようにして生まれたのですか？","acceptedAnswer":{"@type":"Answer","text":"黄色い花がじっと見つめてくるような鮮やかさを放つことから、美しい瞳を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 28 · 誕生花</span>
     <h1>10月28日の誕生花はヤハズカヅラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヤハズカヅラは、キツネノマゴ科のつる性植物で、夏に黄色い花を咲かせる、愛らしく可憐な印象を持つ花です。花言葉は「美しい瞳」。愛らしく可憐な花です。</p>
+    <p class="art-lead">鮮やかな黄色い花が、まるで誰かに見つめられているように咲く。ヤハズカヅラは、そんな印象的な花の一つだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヤハズカヅラとは</a></li>
-      <li><a href="#meaning">ヤハズカヅラが象徴する意味</a></li>
-      <li><a href="#charm">ヤハズカヅラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月28日の誕生花として親しまれるヤハズカヅラ</a></li>
+      <li><a href="#story">鮮やかな黄色い花が語る、美しい瞳のまなざし</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヤハズカヅラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヤハズカヅラとは</h2>
-    <p>ヤハズカヅラは、キツネノマゴ科のつる性植物で、10月28日の誕生花として知られています。夏に黄色い花を咲かせる、愛らしく可憐な印象を持つ花です。</p>
-  </section>
+    <h2>10月28日の誕生花として親しまれるヤハズカヅラ</h2>
+    <p>ヤハズカヅラは、キツネノマゴ科のつる性植物。10月28日の誕生花として、この時期に親しまれている。夏になると鮮やかな黄色い花を咲かせ、つるを伸ばしながらフェンスや支柱に絡みつくように育つ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヤハズカヅラが象徴する意味</h2>
-    <p>ヤハズカヅラの花言葉は「美しい瞳」です。黄色い花の中心にある模様が瞳のように見えることから、美しい瞳を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヤハズカヅラの魅力</h2>
-    <p>ヤハズカヅラの魅力は、黄色い花が持つ愛らしく可憐な美しさと、つるを伸ばしながら愛らしく咲く佇まいにあります。10月28日生まれの方はもちろん、見つめ合う想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヤハズカヅラは日当たりを好み、つるをフェンスや支柱に這わせながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月28日生まれの方はもちろん、見つめ合う想いを伝えたい贈り物としてもヤハズカヅラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤハズカヅラはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に黄色い花を咲かせます。キツネノマゴ科のつる性植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤハズカヅラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">黄色い花の中心にある模様が瞳のように見えることから、美しい瞳を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ヤハズカヅラの名前の由来は何ですか？</div>
-        <div class="faq-a">葉の形が矢筈（矢の弓につがえる部分）に似ていることから、この名前がつけられたと言われています。</div>
+        <div class="faq-a">名前の由来ははっきり分かっていませんが、つるを伸ばしながら生育し、夏に黄色い花を咲かせる植物として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>鮮やかな黄色い花が語る、美しい瞳のまなざし</h2>
+    <p>ヤハズカヅラの黄色い花をよく見ると、その鮮やかな色合いがまっすぐにこちらへ迫ってくるように感じられる。つるを伸ばしながら次々と花を咲かせていくその様子は、一度目が合うと逸らせなくなるような、じっと見つめられているかのような印象を残す。一度視線が絡んだら離れられなくなるような、その鮮やかな色合い。それが、美しい瞳と呼ばれてきた由来だと伝えられている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤハズカヅラの「美しい瞳」という花言葉は、どのようにして生まれたのですか？</div>
+        <div class="faq-a">黄色い花がじっと見つめてくるような鮮やかさを放つことから、美しい瞳を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>見つめられているような気配を感じさせるヤハズカヅラの黄色い花。誰かに、まっすぐ意識を向けることの大切さに、今日はふと気づかされる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヤハズカヅラから始める小さな体験</h2>
+    <p>鮮やかな黄色い花を咲かせながらつるを伸ばすヤハズカヅラにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>黄色い花をじっくり見つめてみる</li>
+      <li>誰かの瞳の美しさに今日は少し目を向けてみる</li>
+      <li>つる性の植物の伸びる様子を観察してみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かの瞳に想いを馳せたい日は、今日の星座占いも確認してみませんか。開運カレンダーでは、毎日の星座運勢とあわせてラッキーカラーも届けています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>つるを伸ばしながら咲く鮮やかな黄色が、見る人の記憶に強く残っていく。</p>
     <ul>
-      <li>ヤハズカヅラは黄色い花を咲かせる、10月28日の誕生花</li>
-      <li>花言葉は「美しい瞳」、瞳のように見える花の中心に由来する</li>
-      <li>つるを伸ばしながら愛らしく咲く佇まいが魅力</li>
-      <li>日当たりを好み、つるをフェンスや支柱に這わせながら管理するとよく育ちます</li>
+      <li>ヤハズカヅラは夏に黄色い花を咲かせる、キツネノマゴ科のつる性植物で、10月28日の誕生花</li>
+      <li>花言葉は「美しい瞳」。じっと見つめてくるような黄色い花の鮮やかさに由来すると言われる</li>
+      <li>つるを伸ばしながら生育し、夏に黄色い花を咲かせる植物</li>
+      <li>誰かの瞳の美しさに目を向けたい日に寄り添う花</li>
     </ul>
   </section>
 

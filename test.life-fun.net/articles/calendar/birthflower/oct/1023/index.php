@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ダリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に多彩な花形で咲きます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ダリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"多彩な花形で華やかに咲きそろう姿が、洗練されたエレガントな美しさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ダリアにはどんな花形がありますか？","acceptedAnswer":{"@type":"Answer","text":"丸弁咲きやポンポン咲きなど多彩な花形があり、品種によって異なる表情を楽しめます。"}}
+      {"@type":"Question","name":"ダリアの花形にはどんな種類がありますか？","acceptedAnswer":{"@type":"Answer","text":"品種によって花形が大きく異なり、多彩な表情を楽しめます。"}},
+      {"@type":"Question","name":"ダリアの花言葉「エレガント」にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"多彩な花形で華やかに咲きそろう姿が、洗練されたエレガントな美しさを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 23 · 誕生花</span>
     <h1>10月23日の誕生花はダリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ダリアは、キク科の多年草で、夏から秋に多彩な花形で咲く、華やかで存在感のある印象を持つ花です。花言葉は「エレガント」。華やかで存在感のある花です。</p>
+    <p class="art-lead">一つの花にどれほどの花びらが詰まっているのか、数えたくなる花がある。夏から秋にかけて多彩な花形を見せるダリアは、10月23日の誕生花である。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ダリアとは</a></li>
-      <li><a href="#meaning">ダリアが象徴する意味</a></li>
-      <li><a href="#charm">ダリアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月23日の誕生花として親しまれるダリア</a></li>
+      <li><a href="#story">多彩な花形が描く、洗練された表情</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ダリアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ダリアとは</h2>
-    <p>ダリアは、キク科の多年草で、10月23日の誕生花として知られています。夏から秋に多彩な花形で咲く、華やかで存在感のある印象を持つ花です。</p>
-  </section>
+    <h2>10月23日の誕生花として親しまれるダリア</h2>
+    <p>ダリアは、キク科の多年草。10月23日の誕生花として、この時期に親しまれている。夏から秋にかけて花を咲かせ、多彩な花形が特徴だ。一つの植物でありながら、これほど多彩な表情を見せる花は珍しく、華やかで存在感のある印象を与える花でもある。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ダリアが象徴する意味</h2>
-    <p>ダリアの花言葉は「エレガント」です。多彩な花形で華やかに咲きそろう姿が、洗練されたエレガントな美しさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ダリアの魅力</h2>
-    <p>ダリアの魅力は、多彩な花形の花が持つ華やかで存在感のある美しさと、幾重にも重なる花びらが生む豪華さにあります。10月23日生まれの方はもちろん、洗練された想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ダリアは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月23日生まれの方はもちろん、洗練された想いを伝えたい贈り物としてもダリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ダリアはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に多彩な花形で咲きます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ダリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">多彩な花形で華やかに咲きそろう姿が、洗練されたエレガントな美しさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ダリアにはどんな花形がありますか？</div>
-        <div class="faq-a">丸弁咲きやポンポン咲きなど多彩な花形があり、品種によって異なる表情を楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ダリアの花形にはどんな種類がありますか？</div>
+        <div class="faq-a">品種によって花形が大きく異なり、多彩な表情を楽しめます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>多彩な花形が描く、洗練された表情</h2>
+    <p>夏の終わりから秋にかけて、ダリアの花は次々と新しい表情を見せながら咲き継いでいく。同じ株からでも、花びらの重なり方や大きさによってまったく違う印象を与えることがあり、見る人を飽きさせない。一輪ごとに違う顔を見せながらも気品を失わない、その佇まいは、エレガントという花言葉そのものだと言われている。決まった形にとらわれない自由さもまた、ダリアらしい魅力の一つだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ダリアの花言葉「エレガント」にはどんな由来がありますか？</div>
+        <div class="faq-a">多彩な花形で華やかに咲きそろう姿が、洗練されたエレガントな美しさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一つの型に収まらず咲き続けるダリアのように、自分らしい洗練の形を今日は自分なりに表現してみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ダリアから始める小さな体験</h2>
+    <p>多彩な花形で咲きそろうダリアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>多彩な花形をじっくり観察してみる</li>
+      <li>華やかさを意識した装いを一つ選んでみる</li>
+      <li>存在感のある一輪を飾ってみる</li>
+    </ul>
+
+    <p class="cta-lead">洗練された自分を演出したい日は、今日のおすすめアイテムを覗いてみませんか。開運カレンダーでは、その日ごとのおすすめアイテムも紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>同じ株からでも違う表情を見せる花形が、自分らしさの多面性を思い出させてくれる。</p>
     <ul>
-      <li>ダリアは多彩な花形の花を咲かせる、10月23日の誕生花</li>
-      <li>花言葉は「エレガント」、多彩な花形で華やかに咲く姿に由来する</li>
-      <li>幾重にも重なる花びらが生む豪華さが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>ダリアは夏から秋に多彩な花形で咲く、キク科の多年草で、10月23日の誕生花</li>
+      <li>花言葉は「エレガント」。多彩な花形で華やかに咲く姿に由来すると言われる</li>
+      <li>品種によって花形が大きく異なり、多彩な表情を見せる</li>
+      <li>自分らしい洗練を意識したい日に寄り添う花</li>
     </ul>
   </section>
 

@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"パイナップルリリーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にパイナップルに似た形の花穂を咲かせます。キジカクシ科の球根植物です。"}},
-      {"@type":"Question","name":"パイナップルリリーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花穂の先までびっしりと整然と花をつける姿が、隙のない完璧さを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"パイナップルリリーの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花穂の形がパイナップルの果実に似ていることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"パイナップルリリーの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花穂の形がパイナップルの果実に似ていることから、この名前がつけられたと言われています。"}},
+      {"@type":"Question","name":"パイナップルリリーはどんな花色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤やピンク、黄など、株によってさまざまな花色があります。学名は「ユーコミス」です。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 5 · 誕生花</span>
     <h1>10月5日の誕生花はパイナップルリリー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">パイナップルリリーは、キジカクシ科の球根植物で、夏にパイナップルに似た形の花穂を咲かせる、個性的でユニークな印象を持つ花です。花言葉は「完璧」。個性的な花です。</p>
+    <p class="art-lead">南国の果物を連想させる、ユニークな形の花がある。パイナップルの実にそっくりな花穂を持つパイナップルリリーは、見た目のインパクトだけでなく、その学名にも独自の物語を持つ10月5日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,52 +159,19 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">パイナップルリリーとは</a></li>
-      <li><a href="#meaning">パイナップルリリーが象徴する意味</a></li>
-      <li><a href="#charm">パイナップルリリーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月5日の誕生花として親しまれるパイナップルリリー</a></li>
+      <li><a href="#story">隙のない花穂が生み出す、完璧な造形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、パイナップルリリーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>パイナップルリリーとは</h2>
-    <p>パイナップルリリーは、キジカクシ科の球根植物で、10月5日の誕生花として知られています。夏にパイナップルに似た形の花穂を咲かせる、個性的でユニークな印象を持つ花です。</p>
-  </section>
+    <h2>10月5日の誕生花として親しまれるパイナップルリリー</h2>
+    <p>パイナップルリリーは、キジカクシ科の球根植物。夏になると、その名の通りパイナップルの果実によく似た形の花穂を咲かせる。学名は「ユーコミス」と呼ばれ、花色は赤やピンク、黄など株によってさまざまな表情を見せる。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>パイナップルリリーが象徴する意味</h2>
-    <p>パイナップルリリーの花言葉は「完璧」です。花穂の先までびっしりと整然と花をつける姿が、隙のない完璧さを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>パイナップルリリーの魅力</h2>
-    <p>パイナップルリリーの魅力は、個性的な花穂が持つ個性的な美しさと、花穂の先まで整然と並ぶ花の美しさにあります。10月5日生まれの方はもちろん、完璧な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>パイナップルリリーは日当たりを好み、球根植物のため過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月5日生まれの方はもちろん、完璧な想いを伝えたい贈り物としてもパイナップルリリーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パイナップルリリーはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にパイナップルに似た形の花穂を咲かせます。キジカクシ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パイナップルリリーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">花穂の先までびっしりと整然と花をつける姿が、隙のない完璧さを思わせることに由来すると言われています。</div>
-      </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">パイナップルリリーの名前の由来は何ですか？</div>
         <div class="faq-a">花穂の形がパイナップルの果実に似ていることから、この名前がつけられたと言われています。</div>
@@ -203,13 +179,46 @@ ob_start();
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>隙のない花穂が生み出す、完璧な造形</h2>
+    <p>パイナップルリリーの花穂は、下から上まで小花を規則正しく並べたような整然とした形をしている。その頂点には葉のような苞が冠のように乗り、果実のパイナップルそのものを思わせる姿を作り出す。苞は幾重にも重なり合いながらも一枚ずつが同じ角度を保つように連なり、小花もまた等間隔に並んで、まるで設計図があるかのような規則性を感じさせる。一つとして乱れのないその整然とした造形が、花言葉「完璧」の由来になったと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">パイナップルリリーはどんな花色がありますか？</div>
+        <div class="faq-a">赤やピンク、黄など、株によってさまざまな花色があります。学名は「ユーコミス」です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>隙のない美しさを追い求める姿勢は、それ自体が一つの強さだ。パイナップルリリーの整然とした花穂は、妥協のない理想を追いかける心を映しているようだ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、パイナップルリリーから始める小さな体験</h2>
+    <p>隙なく整った花穂を咲かせるパイナップルリリーにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>パイナップルに似た花穂の形をじっくり観察してみる</li>
+      <li>完璧を求めすぎていないか、少し立ち止まって考えてみる</li>
+      <li>赤やピンク、黄など好きな花色を一つ選んでみる</li>
+    </ul>
+
+    <p class="cta-lead">理想の形を追い求めたい日は、今日のおすすめアイテムもチェックしてみませんか。開運カレンダーでは、日々のおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>パイナップルの実を思わせる整然とした花穂は、妥協のない美しさの象徴だ。</p>
     <ul>
-      <li>パイナップルリリーは個性的な花穂を咲かせる、10月5日の誕生花</li>
-      <li>花言葉は「完璧」、整然と咲く花穂の姿に由来する</li>
-      <li>花穂の先まで整然と並ぶ花の美しさが魅力</li>
-      <li>日当たりを好み、球根植物のため過湿を避けて管理するとよく育ちます</li>
+      <li>パイナップルリリーは夏に個性的な花穂を咲かせる、キジカクシ科の球根植物で、10月5日の誕生花</li>
+      <li>花言葉は「完璧」。整然と並ぶ花穂の造形に由来すると言われる</li>
+      <li>学名は「ユーコミス」。花色は赤やピンク、黄など多彩</li>
+      <li>妥協のない美しさを追い求めたい日に寄り添う花</li>
     </ul>
   </section>
 

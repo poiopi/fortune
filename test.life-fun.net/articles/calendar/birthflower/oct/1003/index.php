@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ミセバヤはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紅色の小花を集めて咲かせます。ベンケイソウ科の多年草です。"}},
-      {"@type":"Question","name":"ミセバヤの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ミセバヤはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"淡紅色の小花が集まる可憐な姿を活かして、小さな鉢植えとして玄関先や窓辺に飾るのがおすすめです。"}}
+      {"@type":"Question","name":"ミセバヤはどんな咲き方をする花ですか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紅色の小花を寄り添うように集めて咲かせます。ベンケイソウ科の多年草です。"}},
+      {"@type":"Question","name":"ミセバヤの花言葉「憧れ」にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 3 · 誕生花</span>
     <h1>10月3日の誕生花はミセバヤ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ミセバヤは、ベンケイソウ科の多年草で、秋に淡紅色の小花を集めて咲かせる、可憐で儚げな印象を持つ花です。花言葉は「憧れ」。可憐で儚げな花です。</p>
+    <p class="art-lead">小さな花が身を寄せ合うようにして咲く姿を見ると、なぜか胸の奥がきゅっとなる。10月3日の誕生花ミセバヤは、そんな儚さと愛らしさを併せ持つ花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ミセバヤとは</a></li>
-      <li><a href="#meaning">ミセバヤが象徴する意味</a></li>
-      <li><a href="#charm">ミセバヤの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月3日の誕生花として親しまれるミセバヤ</a></li>
+      <li><a href="#story">群れて咲く小花に見る、憧れの視線</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ミセバヤから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ミセバヤとは</h2>
-    <p>ミセバヤは、ベンケイソウ科の多年草で、10月3日の誕生花として知られています。秋に淡紅色の小花を集めて咲かせる、可憐で儚げな印象を持つ花です。</p>
-  </section>
+    <h2>10月3日の誕生花として親しまれるミセバヤ</h2>
+    <p>ミセバヤは、ベンケイソウ科の多年草。秋になると、小さな淡紅色の花を寄せ集めるようにして咲かせる。一つ一つは控えめな大きさだが、集まることで愛らしいまとまりを作り出す。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ミセバヤが象徴する意味</h2>
-    <p>ミセバヤの花言葉は「憧れ」です。淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ミセバヤの魅力</h2>
-    <p>ミセバヤの魅力は、淡紅色の花が持つ可憐で儚げな美しさと、小花が寄り添うように集まる愛らしい花姿にあります。10月3日生まれの方はもちろん、憧れの気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ミセバヤは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月3日生まれの方はもちろん、憧れの気持ちを伝えたい贈り物としてもミセバヤは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に淡紅色の小花を集めて咲かせます。ベンケイソウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤの花言葉の由来は何ですか？</div>
-        <div class="faq-a">淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">淡紅色の小花が集まる可憐な姿を活かして、小さな鉢植えとして玄関先や窓辺に飾るのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤはどんな咲き方をする花ですか？</div>
+        <div class="faq-a">秋に淡紅色の小花を寄り添うように集めて咲かせます。ベンケイソウ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>群れて咲く小花に見る、憧れの視線</h2>
+    <p>秋が深まるにつれ、ミセバヤの茎の先には小さな淡紅色の花が次々と集まりはじめる。一輪だけでは頼りなく見えるほど小さな花も、寄り添って咲くことで一つの塊のような愛らしさを生み出す。まるで、遠くから見つめ続けることでようやく形になる想いのようだ。花言葉「憧れ」は、この寄り添うように咲く姿に由来すると言われている。近くにいなくても、心を寄せ続けることはできる——そんなことを思わせてくれる花だ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミセバヤの花言葉「憧れ」にはどんな由来がありますか？</div>
+        <div class="faq-a">淡紅色の小花が寄り添うように集まって咲く姿が、遠くから見つめる憧れの気持ちを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>遠くにいてもいい。心の中でそっと思い続けることも、確かな優しさの形だ。ミセバヤの寄り添うような花姿は、そんな静かな想いを映しているのかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ミセバヤから始める小さな体験</h2>
+    <p>寄り添うように咲くミセバヤにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>小さな花が集まって咲く様子をじっくり眺めてみる</li>
+      <li>淡紅色のものを身の回りに取り入れてみる</li>
+      <li>心の中で憧れている物事を一つ思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">静かに誰かを想いたい夜は、今日の月齢もチェックしてみませんか。開運カレンダーでは、日々の月齢や月相も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな花が寄り添って咲くミセバヤは、静かな想いの強さを教えてくれる。</p>
     <ul>
-      <li>ミセバヤは淡紅色の花を咲かせる、10月3日の誕生花</li>
-      <li>花言葉は「憧れ」、寄り添うように咲く花姿に由来する</li>
-      <li>小花が寄り添うように集まる愛らしい花姿が魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>ミセバヤは秋に淡紅色の小花を集めて咲かせる、ベンケイソウ科の多年草で、10月3日の誕生花</li>
+      <li>花言葉は「憧れ」。寄り添うように咲く花姿に由来すると言われる</li>
+      <li>一つ一つは小さいが、集まることで愛らしいまとまりを作る</li>
+      <li>遠くから誰かを想い続けたい日に寄り添う花</li>
     </ul>
   </section>
 

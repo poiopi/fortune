@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ホテイアオイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に淡紫色の花を咲かせます。ミズアオイ科の水生多年草です。"}},
-      {"@type":"Question","name":"ホテイアオイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"水面に淡紫色の花を浮かべるように咲かせる姿が、さりげない好意を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ホテイアオイはどこで育てられますか？","acceptedAnswer":{"@type":"Answer","text":"水生植物のため、池や睡蓮鉢などの水辺で育てられます。"}}
+      {"@type":"Question","name":"ホテイアオイはどこで育てられますか？","acceptedAnswer":{"@type":"Answer","text":"水生植物のため、池や睡蓮鉢などの水辺で育てられます。"}},
+      {"@type":"Question","name":"ホテイアオイの花言葉「好意」の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"水面に淡紫色の花をそっと浮かべるように咲かせる姿が、さりげない好意を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 6 · 誕生花</span>
     <h1>10月6日の誕生花はホテイアオイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ホテイアオイは、ミズアオイ科の水生多年草で、夏に淡紫色の花を咲かせる、涼しげで可憐な印象を持つ花です。花言葉は「好意」。涼しげで可憐な花です。</p>
+    <p class="art-lead">水面にふわりと浮かびながら花を咲かせる植物があると聞いたら、想像がつくだろうか。ホテイアオイは、そんな不思議な生態を持つ10月6日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,52 +159,19 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ホテイアオイとは</a></li>
-      <li><a href="#meaning">ホテイアオイが象徴する意味</a></li>
-      <li><a href="#charm">ホテイアオイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月6日の誕生花として親しまれるホテイアオイ</a></li>
+      <li><a href="#story">水面を彩る、淡紫色のやさしい好意</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ホテイアオイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ホテイアオイとは</h2>
-    <p>ホテイアオイは、ミズアオイ科の水生多年草で、10月6日の誕生花として知られています。夏に淡紫色の花を咲かせる、涼しげで可憐な印象を持つ花です。</p>
-  </section>
+    <h2>10月6日の誕生花として親しまれるホテイアオイ</h2>
+    <p>ホテイアオイは、ミズアオイ科の水生多年草。夏になると、水面に浮かんだ株の中心から淡紫色の花を咲かせる。根を土に張らず、水に浮きながら育つという珍しい性質を持つ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ホテイアオイが象徴する意味</h2>
-    <p>ホテイアオイの花言葉は「好意」です。水面に淡紫色の花を浮かべるように咲かせる姿が、さりげない好意を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ホテイアオイの魅力</h2>
-    <p>ホテイアオイの魅力は、淡紫色の花が持つ涼しげで可憐な美しさと、水面に浮かぶように咲く花姿にあります。10月6日生まれの方はもちろん、さりげない好意を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ホテイアオイは日当たりの良い水辺を好み、水を切らさないように管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月6日生まれの方はもちろん、さりげない好意を伝えたい贈り物としてもホテイアオイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホテイアオイはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に淡紫色の花を咲かせます。ミズアオイ科の水生多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホテイアオイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">水面に淡紫色の花を浮かべるように咲かせる姿が、さりげない好意を思わせることに由来すると言われています。</div>
-      </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ホテイアオイはどこで育てられますか？</div>
         <div class="faq-a">水生植物のため、池や睡蓮鉢などの水辺で育てられます。</div>
@@ -203,13 +179,46 @@ ob_start();
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>水面を彩る、淡紫色のやさしい好意</h2>
+    <p>ホテイアオイの花は、鮮やかというよりもどこか控えめな淡紫色をしている。強く自己主張するのではなく、水面という開けた場所にそっと色を添えるような咲き方だ。中心に入る黄色い模様が、淡い紫の中でほのかなアクセントになっている。この、押しつけがましくない優しい色合いが、花言葉「好意」の由来になっていると言われている。誰かへの気持ちを伝えるとき、必ずしも激しさは必要ない。そっと寄り添うような色にも、確かな想いは宿っている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ホテイアオイの花言葉「好意」の由来は何ですか？</div>
+        <div class="faq-a">水面に淡紫色の花をそっと浮かべるように咲かせる姿が、さりげない好意を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>胸の中にしまっている小さな好意を、今日は少しだけ言葉や態度に乗せてみる。ホテイアオイの淡い紫色は、そんな控えめな一歩を後押ししてくれるように咲いている。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ホテイアオイから始める小さな体験</h2>
+    <p>水面にそっと花を咲かせるホテイアオイにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>水に浮かぶ植物をじっくり観察してみる</li>
+      <li>気になる人へのちょっとした好意を、態度で表してみる</li>
+      <li>淡紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かに気持ちを伝えたい日は、今日のラッキープレイスもチェックしてみませんか。開運カレンダーでは、日々のラッキープレイスも紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>水面にそっと浮かぶホテイアオイの花は、控えめながらも確かな好意の形を見せてくれる。</p>
     <ul>
-      <li>ホテイアオイは淡紫色の花を咲かせる、10月6日の誕生花</li>
-      <li>花言葉は「好意」、水面にそっと咲く花姿に由来する</li>
-      <li>水面に浮かぶように咲く花姿が魅力</li>
-      <li>日当たりの良い水辺を好み、水を切らさないように管理するとよく育ちます</li>
+      <li>ホテイアオイは夏に淡紫色の花を咲かせる、ミズアオイ科の水生多年草で、10月6日の誕生花</li>
+      <li>花言葉は「好意」。水面にそっと咲く花姿に由来すると言われる</li>
+      <li>根を張らず水に浮きながら育つ、珍しい性質を持つ</li>
+      <li>誰かに素直な思いを伝えたい日に寄り添う花</li>
     </ul>
   </section>
 

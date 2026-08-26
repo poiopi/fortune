@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"センニチコウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に丸い形の花を長期間咲かせ続け、色褪せにくいのが特徴です。ヒユ科の一年草です。"}},
-      {"@type":"Question","name":"センニチコウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"色褪せにくく、長期間咲き続ける花の性質が、色あせない永遠を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"センニチコウはドライフラワーにもできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。花色が褪せにくいため、ドライフラワーとしても長く楽しまれています。"}}
+      {"@type":"Question","name":"センニチコウはいつ頃から咲き始めますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて丸い形の花を長期間咲かせ続けます。ヒユ科の一年草です。"}},
+      {"@type":"Question","name":"センニチコウの花言葉「不朽」はどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"長期間色褪せずに咲き続ける性質が、色あせない永遠を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 1 · 誕生花</span>
     <h1>10月1日の誕生花はセンニチコウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">センニチコウは、ヒユ科の一年草で、夏から秋に丸い形の花を長期間咲かせ続ける、色褪せにくく素朴で可愛らしい印象を持つ花です。花言葉は「不朽」。素朴で可愛らしい花です。</p>
+    <p class="art-lead">十月に入っても、庭先にはまだ夏の名残がふわりと漂う。そんな季節の境目で、丸い形の花をいくつも咲かせ続けているのがセンニチコウだ。真夏から途切れることなく、ずっと同じ色のまま咲き続けている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">センニチコウとは</a></li>
-      <li><a href="#meaning">センニチコウが象徴する意味</a></li>
-      <li><a href="#charm">センニチコウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月1日の誕生花として親しまれるセンニチコウ</a></li>
+      <li><a href="#story">夏から居座り続ける、色褪せない花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、センニチコウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>センニチコウとは</h2>
-    <p>センニチコウは、ヒユ科の一年草で、10月1日の誕生花として知られています。夏から秋に丸い形の花を長期間咲かせ続ける、色褪せにくく素朴で可愛らしい印象を持つ花です。</p>
-  </section>
+    <h2>10月1日の誕生花として親しまれるセンニチコウ</h2>
+    <p>センニチコウは、ヒユ科の一年草。夏の盛りに咲き始めた丸い花が、季節が進んでもなお色を落とさずに咲き続けている。素朴で可愛らしい丸弁の集合体が茎の先にちょこんと乗るような姿は、道端や庭先でもよく見かける。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>センニチコウが象徴する意味</h2>
-    <p>センニチコウの花言葉は「不朽」です。色褪せにくく、長期間咲き続ける花の性質が、色あせない永遠を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>センニチコウの魅力</h2>
-    <p>センニチコウの魅力は、色褪せない花が持つ素朴で可愛らしい美しさと、小さな花が寄り添うように咲く愛らしい花姿にあります。10月1日生まれの方はもちろん、色あせない想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>センニチコウは日当たりを好み、種まきや苗の植え付けから育てやすく、水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月1日生まれの方はもちろん、色あせない想いを伝えたい贈り物としてもセンニチコウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">センニチコウはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に丸い形の花を長期間咲かせ続け、色褪せにくいのが特徴です。ヒユ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">センニチコウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">色褪せにくく、長期間咲き続ける花の性質が、色あせない永遠を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">センニチコウはドライフラワーにもできますか？</div>
-        <div class="faq-a">はい。花色が褪せにくいため、ドライフラワーとしても長く楽しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">センニチコウはいつ頃から咲き始めますか？</div>
+        <div class="faq-a">夏から秋にかけて丸い形の花を長期間咲かせ続けます。ヒユ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏から居座り続ける、色褪せない花</h2>
+    <p>他の夏の花々が次第に姿を消していく中、センニチコウだけは涼しくなり始めた空気の中でも変わらず同じ色で咲き続けている。淡いピンクや白、赤紫など花色はいくつかあるが、共通しているのはその色合いが驚くほど長持ちすること。実際にはこの丸い部分は花弁ではなく苞（ほう）と呼ばれる部分で、色素が壊れにくいことが、褪せない色の理由になっているという。花言葉「不朽」は、まさにこの色褪せなさに由来すると言われている。移り変わる季節の中で、変わらないままでいられるものがあるということ自体が、どこか心強く感じられる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">センニチコウの花言葉「不朽」はどんな由来がありますか？</div>
+        <div class="faq-a">長期間色褪せずに咲き続ける性質が、色あせない永遠を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>何年経っても色褪せない花のように、大切な人への想いもそのままの強さで抱き続けていたい。センニチコウは、そんな一途な心をそっと後押ししてくれる花だ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、センニチコウから始める小さな体験</h2>
+    <p>色褪せない丸い花にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>丸い形の花をじっくり眺めてみる</li>
+      <li>長く大切に使っているものを一つ手入れしてみる</li>
+      <li>色褪せない思い出を一つ振り返ってみる</li>
+    </ul>
+
+    <p class="cta-lead">変わらない色に惹かれた日は、今日のラッキーカラーもチェックしてみませんか。開運カレンダーでは、毎日のラッキーカラーやラッキーナンバーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>季節が移り変わっても、センニチコウの丸い花だけは同じ表情で咲き続けている。</p>
     <ul>
-      <li>センニチコウは色褪せない花を咲かせる、10月1日の誕生花</li>
-      <li>花言葉は「不朽」、色褪せない花の性質に由来する</li>
-      <li>小さな花が寄り添うように咲く愛らしい花姿が魅力</li>
-      <li>日当たりを好み、種まきや苗の植え付けから育てやすく、水切れに注意して管理するとよく育ちます</li>
+      <li>センニチコウは夏から秋にかけて丸い花を長期間咲かせ続ける、ヒユ科の一年草で、10月1日の誕生花</li>
+      <li>花言葉は「不朽」。色褪せにくい花の性質に由来すると言われる</li>
+      <li>苞と呼ばれる部分が色素を保持しやすく、長く同じ色を保つとされる</li>
+      <li>変わらない想いを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

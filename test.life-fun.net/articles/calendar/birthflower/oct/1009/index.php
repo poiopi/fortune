@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ユーチャリスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"清楚な白い花を咲かせます。ヒガンバナ科の多年草です。"}},
-      {"@type":"Question","name":"ユーチャリスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"清楚な白い花びらが持つ汚れのない美しさが、清らかな心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ユーチャリスはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"清楚な白い花姿を活かして、室内のシンプルなインテリアと合わせて飾るのがおすすめです。"}}
+      {"@type":"Question","name":"ユーチャリスの別名は何ですか？","acceptedAnswer":{"@type":"Answer","text":"別名は「アマゾンリリー」と呼ばれています。清楚な白い花を咲かせます。"}},
+      {"@type":"Question","name":"ユーチャリスはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"甘く上品な香りがあり、結婚式のブーケにも使われるほど親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 9 · 誕生花</span>
     <h1>10月9日の誕生花はユーチャリス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ユーチャリスは、ヒガンバナ科の多年草で、清楚な白い花を咲かせる、気品ある印象を持つ花です。花言葉は「清い心」。気品ある花です。</p>
+    <p class="art-lead">純白の花びらから、ふわりと甘い香りが漂う。結婚式のブーケにもよく使われるというその花は、見た目の清らかさだけでなく、香りにも気品を漂わせている。10月9日の誕生花ユーチャリスは、そんな静かな存在感を持つ花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ユーチャリスとは</a></li>
-      <li><a href="#meaning">ユーチャリスが象徴する意味</a></li>
-      <li><a href="#charm">ユーチャリスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月9日の誕生花として親しまれるユーチャリス</a></li>
+      <li><a href="#story">汚れを知らない白と、ほのかな甘い香り</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ユーチャリスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ユーチャリスとは</h2>
-    <p>ユーチャリスは、ヒガンバナ科の多年草で、10月9日の誕生花として知られています。清楚な白い花を咲かせる、気品ある印象を持つ花です。</p>
-  </section>
+    <h2>10月9日の誕生花として親しまれるユーチャリス</h2>
+    <p>ユーチャリスは、ヒガンバナ科の多年草。別名「アマゾンリリー」とも呼ばれ、清楚な白い花を咲かせる。甘く上品な香りを持つことでも知られ、結婚式のブーケなど特別な場面の花として使われることも多い。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ユーチャリスが象徴する意味</h2>
-    <p>ユーチャリスの花言葉は「清い心」です。清楚な白い花びらが持つ汚れのない美しさが、清らかな心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ユーチャリスの魅力</h2>
-    <p>ユーチャリスの魅力は、清楚な白い花が持つ気品ある美しさと、純白の花びらが放つ清らかな輝きにあります。10月9日生まれの方はもちろん、清らかな心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ユーチャリスは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月9日生まれの方はもちろん、清らかな心を伝えたい贈り物としてもユーチャリスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユーチャリスはいつ頃咲きますか？</div>
-        <div class="faq-a">清楚な白い花を咲かせます。ヒガンバナ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユーチャリスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">清楚な白い花びらが持つ汚れのない美しさが、清らかな心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユーチャリスはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">清楚な白い花姿を活かして、室内のシンプルなインテリアと合わせて飾るのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ユーチャリスの別名は何ですか？</div>
+        <div class="faq-a">別名は「アマゾンリリー」と呼ばれています。清楚な白い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>汚れを知らない白と、ほのかな甘い香り</h2>
+    <p>ユーチャリスの花びらは、混じり気のない純粋な白をしている。派手さはなく、しかし目を引く清潔感のある佇まいだ。そこに加わるのが、ほのかに甘い香り。視覚だけでなく嗅覚にも清らかさを感じさせるこの組み合わせが、結婚式のブーケなど特別な瞬間に選ばれる理由の一つになっているのだろう。この汚れのない白さと香りの気品が、花言葉「清い心」の由来になっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユーチャリスはどんな香りがしますか？</div>
+        <div class="faq-a">甘く上品な香りがあり、結婚式のブーケにも使われるほど親しまれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>周りの色にどれだけ囲まれても、自分の中心にある白さだけは保ち続けたい。ユーチャリスの純白の花びらは、そんな揺るがない芯の在り方を思わせてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ユーチャリスから始める小さな体験</h2>
+    <p>汚れのない白さで咲くユーチャリスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い花の清らかな佇まいをじっくり眺めてみる</li>
+      <li>甘い香りのする花を探して、そっと香りを楽しんでみる</li>
+      <li>何にも染まらない自分らしさを一つ大切にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分らしい心を保ちたい日は、今日のラッキーナンバーもチェックしてみませんか。開運カレンダーでは、日々のラッキーナンバーも紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>純白の花びらと甘い香りを併せ持つユーチャリスは、染まらない心の美しさを教えてくれる。</p>
     <ul>
-      <li>ユーチャリスは清楚な白い花を咲かせる、10月9日の誕生花</li>
-      <li>花言葉は「清い心」、汚れのない白い花びらに由来する</li>
-      <li>純白の花びらが放つ清らかな輝きが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>ユーチャリスは清楚な白い花を咲かせる、ヒガンバナ科の多年草で、10月9日の誕生花</li>
+      <li>花言葉は「清い心」。汚れのない白さに由来すると言われる</li>
+      <li>別名は「アマゾンリリー」。甘い香りを持ち結婚式のブーケにも使われる</li>
+      <li>誰にも染まらない自分の心を保ちたい日に寄り添う花</li>
     </ul>
   </section>
 

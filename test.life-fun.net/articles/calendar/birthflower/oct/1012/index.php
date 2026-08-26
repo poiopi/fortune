@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キブネギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に楚々とした花を咲かせます。キンポウゲ科の多年草です。"}},
-      {"@type":"Question","name":"キブネギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"楚々とした花が風にそよぐように咲く姿が、繊細で揺れ動く心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"キブネギクという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"京都の貴船地方に多く見られたことから、貴船菊（キブネギク）と呼ばれるようになったと言われています。"}}
+      {"@type":"Question","name":"キブネギクという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"京都の貴船地方に多く見られたことから、貴船菊（キブネギク）と呼ばれるようになったと言われています。"}},
+      {"@type":"Question","name":"キブネギクの花言葉「多感なとき」にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"楚々とした花が風にそよぐように咲く姿が、繊細で揺れ動く心情を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 12 · 誕生花</span>
     <h1>10月12日の誕生花はキブネギク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キブネギクは、キンポウゲ科の多年草で、秋に楚々とした花を咲かせる、貴船菊とも呼ばれる清らかで奥ゆかしい印象を持つ花です。花言葉は「多感なとき」。清らかで奥ゆかしい花です。</p>
+    <p class="art-lead">京都の貴船地方にちなんで名付けられたという花がある。秋風にほっそりと揺れながら咲くその姿は、どこか繊細で、見る人の心も一緒に揺さぶられるようだ。10月12日の誕生花キブネギクは、そんな花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,52 +159,19 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キブネギクとは</a></li>
-      <li><a href="#meaning">キブネギクが象徴する意味</a></li>
-      <li><a href="#charm">キブネギクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月12日の誕生花として親しまれるキブネギク</a></li>
+      <li><a href="#story">秋風に揺れる楚々とした姿と、揺れ動く心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キブネギクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キブネギクとは</h2>
-    <p>キブネギクは、キンポウゲ科の多年草で、10月12日の誕生花として知られています。秋に楚々とした花を咲かせる、貴船菊とも呼ばれる清らかで奥ゆかしい印象を持つ花です。</p>
-  </section>
+    <h2>10月12日の誕生花として親しまれるキブネギク</h2>
+    <p>キブネギクは、キンポウゲ科の多年草で、「貴船菊」とも呼ばれている。秋になると、楚々とした佇まいの花を咲かせる。派手さはないが、その分どこか繊細で奥ゆかしい印象を与える。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キブネギクが象徴する意味</h2>
-    <p>キブネギクの花言葉は「多感なとき」です。楚々とした花が風にそよぐように咲く姿が、繊細で揺れ動く心情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キブネギクの魅力</h2>
-    <p>キブネギクの魅力は、楚々とした花が持つ清らかで奥ゆかしい美しさと、風にそよぐように咲く繊細な佇まいにあります。10月12日生まれの方はもちろん、揺れ動く繊細な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キブネギクは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月12日生まれの方はもちろん、揺れ動く繊細な想いを伝えたい贈り物としてもキブネギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キブネギクはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に楚々とした花を咲かせます。キンポウゲ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キブネギクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">楚々とした花が風にそよぐように咲く姿が、繊細で揺れ動く心情を思わせることに由来すると言われています。</div>
-      </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">キブネギクという名前の由来は何ですか？</div>
         <div class="faq-a">京都の貴船地方に多く見られたことから、貴船菊（キブネギク）と呼ばれるようになったと言われています。</div>
@@ -203,13 +179,46 @@ ob_start();
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>秋風に揺れる楚々とした姿と、揺れ動く心</h2>
+    <p>キブネギクの花は、細く伸びた茎の先で、秋風が吹くたびにゆらゆらと揺れる。その揺れ方には、どこか頼りなさと繊細さが同居しているように見える。季節が夏から秋へと移り変わる時期に咲くこの花は、まさに移ろいの中にある存在だ。ふとしたことで気持ちが揺れ動いてしまう、そんな多感な時期の心情が、この花の姿に重ねられてきたのかもしれない。花言葉「多感なとき」は、この繊細な揺れ方に由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キブネギクの花言葉「多感なとき」にはどんな由来がありますか？</div>
+        <div class="faq-a">楚々とした花が風にそよぐように咲く姿が、繊細で揺れ動く心情を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心が揺れることは、決して弱さではない。むしろ、いろいろなことを敏感に感じ取れている証だ。キブネギクの繊細な揺れ方は、そんな心のあり方をそっと肯定してくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キブネギクから始める小さな体験</h2>
+    <p>秋風に楚々と揺れるキブネギクにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>楚々とした花の佇まいをじっくり眺めてみる</li>
+      <li>「貴船菊」という別名の由来について調べてみる</li>
+      <li>今日感じた小さな心の揺れを一つ言葉にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">揺れ動く心を大切にしたい日は、今日のラッキーフードもチェックしてみませんか。開運カレンダーでは、日々のラッキーフードも紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>秋風に楚々と揺れるキブネギクは、繊細な心のあり方をそのまま受け止めてくれる花だ。</p>
     <ul>
-      <li>キブネギクは楚々とした花を咲かせる、10月12日の誕生花</li>
-      <li>花言葉は「多感なとき」、風にそよぐ楚々とした花姿に由来する</li>
-      <li>風にそよぐように咲く繊細な佇まいが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>キブネギクは秋に楚々とした花を咲かせる、キンポウゲ科の多年草で、10月12日の誕生花</li>
+      <li>花言葉は「多感なとき」。風にそよぐ繊細な花姿に由来すると言われる</li>
+      <li>「貴船菊」という別名を持ち、京都の貴船地方にちなむと言われる</li>
+      <li>揺れ動く心のまま、素直に感じていたい日に寄り添う花</li>
     </ul>
   </section>
 

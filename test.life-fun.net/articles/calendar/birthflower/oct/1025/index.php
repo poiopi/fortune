@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヘレニウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にオレンジ色の花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ヘレニウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"オレンジ色の花が惜しみなく咲き広がる姿が、おおらかで寛容な心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヘレニウムはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"オレンジ色の明るい花姿を活かして、秋らしい雰囲気の花壇や庭に植えるのがおすすめです。"}}
+      {"@type":"Question","name":"ヘレニウムはどのくらいの期間咲き続けますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、鮮やかなオレンジ色の花を次々と咲かせるキク科の多年草です。"}},
+      {"@type":"Question","name":"ヘレニウムはどんな姿に「寛容」の由来があると言われていますか？","acceptedAnswer":{"@type":"Answer","text":"オレンジ色の花が惜しみなく咲き広がる姿が、おおらかで寛容な心を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 25 · 誕生花</span>
     <h1>10月25日の誕生花はヘレニウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヘレニウムは、キク科の多年草で、夏から秋にオレンジ色の花を咲かせる、明るくおおらかな印象を持つ花です。花言葉は「寛容」。明るくおおらかな花です。</p>
+    <p class="art-lead">秋の花壇に、明るいオレンジ色が広がる時期がある。ヘレニウムは、そんな季節に咲く、10月25日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヘレニウムとは</a></li>
-      <li><a href="#meaning">ヘレニウムが象徴する意味</a></li>
-      <li><a href="#charm">ヘレニウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月25日の誕生花として親しまれるヘレニウム</a></li>
+      <li><a href="#story">咲き続けるオレンジの花にみる、寛容という心の広さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヘレニウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヘレニウムとは</h2>
-    <p>ヘレニウムは、キク科の多年草で、10月25日の誕生花として知られています。夏から秋にオレンジ色の花を咲かせる、明るくおおらかな印象を持つ花です。</p>
-  </section>
+    <h2>10月25日の誕生花として親しまれるヘレニウム</h2>
+    <p>ヘレニウムは、キク科の多年草。10月25日の誕生花として、この時期に親しまれている。夏から秋にかけて長く花を咲かせ続け、鮮やかなオレンジ色の花びらが花壇全体を明るく彩る。次々と花を咲かせるその生命力の強さも、この植物の大きな魅力の一つだ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヘレニウムが象徴する意味</h2>
-    <p>ヘレニウムの花言葉は「寛容」です。オレンジ色の花が惜しみなく咲き広がる姿が、おおらかで寛容な心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヘレニウムの魅力</h2>
-    <p>ヘレニウムの魅力は、オレンジ色の花が持つ明るくおおらかな美しさと、花びらが幾重にも咲き広がる豊かな表情にあります。10月25日生まれの方はもちろん、おおらかな心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヘレニウムは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月25日生まれの方はもちろん、おおらかな心を伝えたい贈り物としてもヘレニウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘレニウムはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋にオレンジ色の花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘレニウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">オレンジ色の花が惜しみなく咲き広がる姿が、おおらかで寛容な心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘレニウムはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">オレンジ色の明るい花姿を活かして、秋らしい雰囲気の花壇や庭に植えるのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヘレニウムはどのくらいの期間咲き続けますか？</div>
+        <div class="faq-a">夏から秋にかけて、鮮やかなオレンジ色の花を次々と咲かせるキク科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>咲き続けるオレンジの花にみる、寛容という心の広さ</h2>
+    <p>夏の暑さが和らぎ始める頃になっても、ヘレニウムは惜しむことなく次々と花を咲かせていく。一つの花が終わっても、次から次へと新しい花が開き、花壇全体をオレンジ色で満たしていく。一輪の終わりを惜しまず、次の一輪へと場所を譲っていく。だからこそ、寛容という花言葉がこの花にはふさわしいと言われている。誰かの違いを受け入れる広い心もまた、こうして少しずつ育っていくものなのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヘレニウムはどんな姿に「寛容」の由来があると言われていますか？</div>
+        <div class="faq-a">オレンジ色の花が惜しみなく咲き広がる姿が、おおらかで寛容な心を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>オレンジ色の花を惜しみなく咲かせるヘレニウムのように、誰かの違いを、広い心でそっと受け止めてみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヘレニウムから始める小さな体験</h2>
+    <p>オレンジ色の花を惜しみなく咲かせるヘレニウムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>オレンジ色の花をじっくり眺めてみる</li>
+      <li>誰かの違いを受け止めてみる</li>
+      <li>温かみのある色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">広い心で物事を受け止めたい日は、今年の年九星も覗いてみませんか。開運カレンダーでは、年九星や月九星もあわせて紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一つの花にとどまらず咲き続ける姿が、寛容という心の広さを映し出している。</p>
     <ul>
-      <li>ヘレニウムはオレンジ色の花を咲かせる、10月25日の誕生花</li>
-      <li>花言葉は「寛容」、惜しみなく咲き広がる花姿に由来する</li>
-      <li>花びらが幾重にも咲き広がる豊かな表情が魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>ヘレニウムは夏から秋にオレンジ色の花を咲かせる、キク科の多年草で、10月25日の誕生花</li>
+      <li>花言葉は「寛容」。惜しみなく咲き広がる花姿に由来すると言われる</li>
+      <li>次々と花を咲かせ続ける生命力の強さを持つ</li>
+      <li>広い心で物事を受け止めたい日に寄り添う花</li>
     </ul>
   </section>
 

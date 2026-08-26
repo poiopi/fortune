@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハギはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に小さな紅紫色の花を枝垂れるように咲かせます。マメ科の落葉低木です。"}},
-      {"@type":"Question","name":"ハギの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"枝垂れながらも次々と紅紫色の花を咲かせ続ける姿が、控えめでありながら前向きに想いを重ねる恋心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ハギは秋の七草に入りますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ハギは秋の七草の一つに数えられる、日本古来から親しまれてきた花です。"}}
+      {"@type":"Question","name":"ハギは秋の七草に入りますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ハギは秋の七草の一つに数えられる、日本古来から親しまれてきた花です。"}},
+      {"@type":"Question","name":"ハギの花言葉「前向きな恋」にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"枝垂れながらも次々と紅紫色の花を咲かせ続ける姿が、控えめでありながら前向きに想いを重ねる恋心を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 7 · 誕生花</span>
     <h1>10月7日の誕生花はハギ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハギは、マメ科の落葉低木で、秋に小さな紅紫色の花を枝垂れるように咲かせる、儚く風雅な印象を持つ花です。秋の七草の一つに数えられています。花言葉は「前向きな恋」。儚く風雅な花です。</p>
+    <p class="art-lead">風が吹くたびに、しなやかな枝がふわりと揺れる。その先についた小さな紅紫色の花もまた、静かに揺れながら秋の訪れを告げている。10月7日の誕生花ハギは、秋の七草にも数えられる、古くから愛されてきた花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,52 +159,19 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハギとは</a></li>
-      <li><a href="#meaning">ハギが象徴する意味</a></li>
-      <li><a href="#charm">ハギの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月7日の誕生花として親しまれるハギ</a></li>
+      <li><a href="#story">枝垂れながらも咲き続ける、前向きな恋心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハギから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハギとは</h2>
-    <p>ハギは、マメ科の落葉低木で、10月7日の誕生花として知られています。秋に小さな紅紫色の花を枝垂れるように咲かせる、儚く風雅な印象を持つ花です。秋の七草の一つに数えられています。</p>
-  </section>
+    <h2>10月7日の誕生花として親しまれるハギ</h2>
+    <p>ハギは、マメ科の落葉低木。秋になると、細くしなやかな枝いっぱいに、小さな紅紫色の花を次々と咲かせる。枝垂れるように咲くその姿から、風流な花として古くから親しまれ、秋の七草の一つにも数えられている。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハギが象徴する意味</h2>
-    <p>ハギの花言葉は「前向きな恋」です。枝垂れながらも次々と紅紫色の花を咲かせ続ける姿が、控えめでありながら前向きに想いを重ねる恋心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハギの魅力</h2>
-    <p>ハギの魅力は、紅紫色の花が持つ儚く風雅な美しさと、秋の七草として親しまれてきた歴史にあります。10月7日生まれの方はもちろん、前向きな恋心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハギは日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月7日生まれの方はもちろん、前向きな恋心を伝えたい贈り物としてもハギは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハギはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に小さな紅紫色の花を枝垂れるように咲かせます。マメ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハギの花言葉の由来は何ですか？</div>
-        <div class="faq-a">枝垂れながらも次々と紅紫色の花を咲かせ続ける姿が、控えめでありながら前向きに想いを重ねる恋心を象徴することに由来すると言われています。</div>
-      </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ハギは秋の七草に入りますか？</div>
         <div class="faq-a">はい。ハギは秋の七草の一つに数えられる、日本古来から親しまれてきた花です。</div>
@@ -203,13 +179,46 @@ ob_start();
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>枝垂れながらも咲き続ける、前向きな恋心</h2>
+    <p>ハギの枝は、花の重みでしなやかに垂れ下がる。一見すると弱々しく見えるその姿だが、花は一つ枯れてもまた次の花を咲かせ、秋の間じゅう途切れることなく咲き続ける。控えめに枝垂れながらも、決して咲くことをやめない——そんな粘り強さが、花言葉「前向きな恋」の由来になっていると言われている。恥ずかしさや遠慮を抱えながらも、それでも想いを重ね続けようとする姿勢は、どこか人の恋心にも重なるところがある。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハギの花言葉「前向きな恋」にはどんな由来がありますか？</div>
+        <div class="faq-a">枝垂れながらも次々と紅紫色の花を咲かせ続ける姿が、控えめでありながら前向きに想いを重ねる恋心を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>恥ずかしさを抱えたままでも、一歩を踏み出すことはできる。しなやかに枝垂れながら咲き続けるハギの花は、そんな不器用な前向きさを静かに肯定してくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハギから始める小さな体験</h2>
+    <p>枝垂れながらも咲き続けるハギにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>枝垂れるように咲く紅紫色の花をじっくり眺めてみる</li>
+      <li>秋の七草について調べてみる</li>
+      <li>気になる人に、小さな一歩を踏み出してみる</li>
+    </ul>
+
+    <p class="cta-lead">小さな一歩を踏み出したい日は、今日の月九星もチェックしてみませんか。開運カレンダーでは、月九星や吉日を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>しなやかに枝垂れながらも咲き続けるハギは、控えめな中にある前向きさを教えてくれる。</p>
     <ul>
-      <li>ハギは紅紫色の花を咲かせる、10月7日の誕生花</li>
-      <li>花言葉は「前向きな恋」、枝垂れながら咲き続ける花姿に由来する</li>
-      <li>秋の七草として親しまれてきた歴史が魅力</li>
-      <li>日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます</li>
+      <li>ハギは秋に紅紫色の花を枝垂れるように咲かせる、マメ科の落葉低木で、10月7日の誕生花</li>
+      <li>花言葉は「前向きな恋」。咲き続ける花の粘り強さに由来すると言われる</li>
+      <li>秋の七草の一つとして、古くから親しまれてきた</li>
+      <li>恥ずかしさの中にも前を向く強さが欲しい日に寄り添う花</li>
     </ul>
   </section>
 

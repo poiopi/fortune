@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キンモクセイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に小さな橙色の花を無数に咲かせ、甘く強い香りを漂わせます。モクセイ科の常緑小高木です。"}},
-      {"@type":"Question","name":"キンモクセイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"毎年秋になると変わらず甘い香りを漂わせる姿が、色あせない変わらぬ魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"キンモクセイはなぜ香りが強いのですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花を無数に咲かせる性質があり、その一つひとつの香りが重なり合うことで、遠くまで届く強い芳香になると言われています。"}}
+      {"@type":"Question","name":"キンモクセイはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"甘く強い香りを漂わせ、遠くにいてもその存在に気づくほど印象的な香りとして知られています。"}},
+      {"@type":"Question","name":"キンモクセイはどうして「変わらぬ魅力」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"毎年同じ時期に同じ香りを漂わせる姿が、色あせることのない変わらぬ魅力を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 18 · 誕生花</span>
     <h1>10月18日の誕生花はキンモクセイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キンモクセイは、モクセイ科の常緑小高木で、秋に小さな橙色の花を無数に咲かせ、甘く強い香りを漂わせる、秋の訪れを告げる印象的な花木です。花言葉は「変わらぬ魅力」。秋の訪れを告げる花です。</p>
+    <p class="art-lead">季節の変わり目を、香りで教えてくれる木がある。キンモクセイは、10月18日の誕生花として、秋の訪れを甘い香りで知らせてくれる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キンモクセイとは</a></li>
-      <li><a href="#meaning">キンモクセイが象徴する意味</a></li>
-      <li><a href="#charm">キンモクセイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月18日の誕生花として親しまれるキンモクセイ</a></li>
+      <li><a href="#story">毎年変わらず香る橙色の花が教える、変わらぬ魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キンモクセイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キンモクセイとは</h2>
-    <p>キンモクセイは、モクセイ科の常緑小高木で、10月18日の誕生花として知られています。秋に小さな橙色の花を無数に咲かせ、甘く強い香りを漂わせる、秋の訪れを告げる印象的な花木です。</p>
-  </section>
+    <h2>10月18日の誕生花として親しまれるキンモクセイ</h2>
+    <p>キンモクセイは、モクセイ科の常緑小高木。10月18日の誕生花として、この時期に親しまれている。秋になると枝いっぱいに小さな橙色の花を無数に咲かせ、姿を見る前に甘い香りでその存在を知らせてくれる。一年を通して緑の葉を茂らせる常緑樹でありながら、花を咲かせるのはこの短い季節だけという特別な花木でもある。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キンモクセイが象徴する意味</h2>
-    <p>キンモクセイの花言葉は「変わらぬ魅力」です。毎年秋になると変わらず甘い香りを漂わせる姿が、色あせない変わらぬ魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キンモクセイの魅力</h2>
-    <p>キンモクセイの魅力は、橙色の花が持つ秋の訪れを感じさせる美しさと、小さな花が無数に咲きそろう華やかさにあります。10月18日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キンモクセイは日当たりの良い場所を好み、庭木として植栽し、剪定をしながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月18日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物としてもキンモクセイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンモクセイはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に小さな橙色の花を無数に咲かせ、甘く強い香りを漂わせます。モクセイ科の常緑小高木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンモクセイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">毎年秋になると変わらず甘い香りを漂わせる姿が、色あせない変わらぬ魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンモクセイはなぜ香りが強いのですか？</div>
-        <div class="faq-a">小さな花を無数に咲かせる性質があり、その一つひとつの香りが重なり合うことで、遠くまで届く強い芳香になると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キンモクセイはどんな香りがしますか？</div>
+        <div class="faq-a">甘く強い香りを漂わせ、遠くにいてもその存在に気づくほど印象的な香りとして知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>毎年変わらず香る橙色の花が教える、変わらぬ魅力</h2>
+    <p>夜風が涼しくなり始める頃、どこからともなく甘い香りが漂ってくる。キンモクセイは、毎年決まってこの時期になると同じ香りを届けてくれる花木だ。姿は年々少しずつ変化しても、香りだけは何年経っても変わらない。この安定した季節の合図こそが、色あせることのない「変わらぬ魅力」という花言葉の由来なのだろう。移り変わる季節の中で、変わらないものがあるという安心感は、思いのほか心強いものだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キンモクセイはどうして「変わらぬ魅力」と呼ばれるのですか？</div>
+        <div class="faq-a">毎年同じ時期に同じ香りを漂わせる姿が、色あせることのない変わらぬ魅力を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>毎年変わらず甘い香りを届けるキンモクセイのように、変わらないでいたい自分の一面を、今日はあらためて大切にしてみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キンモクセイから始める小さな体験</h2>
+    <p>毎年変わらず甘い香りを届けるキンモクセイにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>甘く強い香りを深呼吸で感じてみる</li>
+      <li>橙色の小さな花を探して観察してみる</li>
+      <li>変わらないでいたい自分の一面を一つ思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">変わらない魅力に触れたい日は、今日のラッキーカラーも確認してみませんか。開運カレンダーでは、日替わりのラッキーカラーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>毎年変わらず漂う甘い香りが、色あせない魅力という安心感を感じさせてくれる。</p>
     <ul>
-      <li>キンモクセイは橙色の花を咲かせる、10月18日の誕生花</li>
-      <li>花言葉は「変わらぬ魅力」、毎年変わらず香る花姿に由来する</li>
-      <li>小さな花が無数に咲きそろう華やかさが魅力</li>
-      <li>日当たりの良い場所を好み、庭木として植栽し、剪定をしながら管理するとよく育ちます</li>
+      <li>キンモクセイは秋に橙色の花を無数に咲かせる、モクセイ科の常緑小高木で、10月18日の誕生花</li>
+      <li>花言葉は「変わらぬ魅力」、毎年同じ香りを届ける姿に由来すると言われる</li>
+      <li>姿より先に甘く強い香りでその存在を知らせる</li>
+      <li>変わらない自分の魅力を大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

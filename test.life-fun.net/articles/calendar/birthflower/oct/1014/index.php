@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オンシジウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"小さな黄色い花を房状にたくさん咲かせます。ラン科の洋ランです。"}},
-      {"@type":"Question","name":"オンシジウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな黄色い花が蝶のように舞う軽やかな姿が、明るく穏やかな気立ての良さを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"オンシジウムはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"蝶が舞うような軽やかな花姿を活かして、お祝いの贈り物やリビングの装飾に飾るのがおすすめです。"}}
+      {"@type":"Question","name":"オンシジウムはどんな花色をしていますか？","acceptedAnswer":{"@type":"Answer","text":"小さな黄色い花を房状にたくさん咲かせます。ラン科の洋ランです。"}},
+      {"@type":"Question","name":"オンシジウムの花言葉「気だての良さ」にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"小さな黄色い花が蝶のように舞う軽やかな姿が、明るく穏やかな気立ての良さを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 14 · 誕生花</span>
     <h1>10月14日の誕生花はオンシジウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オンシジウムは、ラン科の洋ランで、小さな黄色い花を房状にたくさん咲かせる、蝶が舞うような印象を持つ花です。花言葉は「気だての良さ」。蝶が舞うような花です。</p>
+    <p class="art-lead">花瓶に一輪挿すと、まるで蝶の群れが舞っているように見えることがある。小さな黄色い花をいくつも連ねて咲くオンシジウムは、そんな軽やかな錯覚を生む10月14日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オンシジウムとは</a></li>
-      <li><a href="#meaning">オンシジウムが象徴する意味</a></li>
-      <li><a href="#charm">オンシジウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月14日の誕生花として親しまれるオンシジウム</a></li>
+      <li><a href="#story">蝶のように舞う、黄色い花房の優しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オンシジウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オンシジウムとは</h2>
-    <p>オンシジウムは、ラン科の洋ランで、10月14日の誕生花として知られています。小さな黄色い花を房状にたくさん咲かせる、蝶が舞うような印象を持つ花です。</p>
-  </section>
+    <h2>10月14日の誕生花として親しまれるオンシジウム</h2>
+    <p>オンシジウムは、ラン科の洋ランで、小さな黄色い花を房状にたくさん咲かせる。一つ一つの花の形が羽を広げた蝶に似ていることから、遠目に見ると本物の蝶が群れて舞っているような印象を与える。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オンシジウムが象徴する意味</h2>
-    <p>オンシジウムの花言葉は「気だての良さ」です。小さな黄色い花が蝶のように舞う軽やかな姿が、明るく穏やかな気立ての良さを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オンシジウムの魅力</h2>
-    <p>オンシジウムの魅力は、黄色い花が持つ蝶が舞うような美しさと、小花が房状に連なって咲く軽やかさにあります。10月14日生まれの方はもちろん、穏やかで優しい気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オンシジウムは明るい日陰を好み、風通しよく乾燥気味に管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月14日生まれの方はもちろん、穏やかで優しい気持ちを伝えたい贈り物としてもオンシジウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オンシジウムはいつ頃咲きますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オンシジウムはどんな花色をしていますか？</div>
         <div class="faq-a">小さな黄色い花を房状にたくさん咲かせます。ラン科の洋ランです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オンシジウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな黄色い花が蝶のように舞う軽やかな姿が、明るく穏やかな気立ての良さを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オンシジウムはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">蝶が舞うような軽やかな花姿を活かして、お祝いの贈り物やリビングの装飾に飾るのがおすすめです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>蝶のように舞う、黄色い花房の優しさ</h2>
+    <p>オンシジウムの一つ一つの花をよく見ると、上下に大きく開いた花びらが蝶の羽のような形をしている。それが房状にいくつも連なることで、まるで黄色い蝶の群れが枝先に留まっているかのような光景を作り出す。派手に自己主張するというより、周りに軽やかな明るさをそっと振りまくような咲き方だ。誰か一輪だけが目立つのではなく、たくさんの花が同じように優しく咲きそろう様子が、花言葉「気だての良さ」の由来になっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オンシジウムの花言葉「気だての良さ」にはどんな由来がありますか？</div>
+        <div class="faq-a">小さな黄色い花が蝶のように舞う軽やかな姿が、明るく穏やかな気立ての良さを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>特別な誰かにだけでなく、目の前にいる人みんなに同じ優しさを分けてあげたい。オンシジウムの黄色い花房は、そんな分け隔てのない優しさの形を見せてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オンシジウムから始める小さな体験</h2>
+    <p>蝶のように舞うオンシジウムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>蝶が舞うような花の姿をじっくり観察してみる</li>
+      <li>身近な人に、今日一つ優しい言葉をかけてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">分け隔てない優しさを届けたい日は、今日のラッキーカラーもチェックしてみませんか。開運カレンダーでは、毎日のラッキーカラーや星座運勢もあわせて紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>蝶のように舞うオンシジウムの黄色い花房は、誰にでも分け隔てなく届く優しさを見せてくれる。</p>
     <ul>
-      <li>オンシジウムは黄色い花を咲かせる、10月14日の誕生花</li>
-      <li>花言葉は「気だての良さ」、蝶のように舞う軽やかな花姿に由来する</li>
-      <li>小花が房状に連なって咲く軽やかさが魅力</li>
-      <li>明るい日陰を好み、風通しよく乾燥気味に管理するとよく育ちます</li>
+      <li>オンシジウムは小さな黄色い花を房状に咲かせる、ラン科の洋ランで、10月14日の誕生花</li>
+      <li>花言葉は「気だての良さ」。蝶のように舞う軽やかな花姿に由来すると言われる</li>
+      <li>一輪一輪が蝶の羽のような形をしている</li>
+      <li>誰にでも分け隔てなく優しくありたい日に寄り添う花</li>
     </ul>
   </section>
 

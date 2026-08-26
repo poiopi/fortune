@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"モミジアオイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に大輪の赤い花を咲かせます。アオイ科の多年草です。"}},
-      {"@type":"Question","name":"モミジアオイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"大輪の花が大きく開いて周囲を包み込むように咲く姿が、優しい思いやりの心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"モミジアオイの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"葉の形がもみじに似ていることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"モミジアオイの葉はどんな形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"切れ込みが深く、紅葉の「もみじ」の葉によく似た形をしており、それが名前の由来になったと言われています。"}},
+      {"@type":"Question","name":"モミジアオイはどんな姿に「思いやり」の由来があると言われていますか？","acceptedAnswer":{"@type":"Answer","text":"大輪の花が大きく開いて周囲を包み込むように咲く姿が、優しい思いやりの心を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 21 · 誕生花</span>
     <h1>10月21日の誕生花はモミジアオイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">モミジアオイは、アオイ科の多年草で、夏に大輪の赤い花を咲かせる、葉がもみじに似た情熱的で存在感のある印象を持つ花です。花言葉は「思いやり」。情熱的で存在感のある花です。</p>
+    <p class="art-lead">赤という色だけで、これほど強い印象を残す花は少ない。それが、10月21日の誕生花モミジアオイの、大輪の花に宿る力かもしれない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">モミジアオイとは</a></li>
-      <li><a href="#meaning">モミジアオイが象徴する意味</a></li>
-      <li><a href="#charm">モミジアオイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月21日の誕生花として親しまれるモミジアオイ</a></li>
+      <li><a href="#story">大輪の赤い花が包み込むように咲く、思いやりの姿</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、モミジアオイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>モミジアオイとは</h2>
-    <p>モミジアオイは、アオイ科の多年草で、10月21日の誕生花として知られています。夏に大輪の赤い花を咲かせる、葉がもみじに似た情熱的で存在感のある印象を持つ花です。</p>
-  </section>
+    <h2>10月21日の誕生花として親しまれるモミジアオイ</h2>
+    <p>モミジアオイは、アオイ科の多年草。10月21日の誕生花として、この時期に親しまれている。夏になると大輪の赤い花を咲かせ、その存在感は庭先でもひときわ目を引く。名前の由来になった、切れ込みの深い葉の形も特徴的で、紅葉の「もみじ」とは異なる植物でありながら、よく似た葉の姿からこの名がつけられたと言われている。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>モミジアオイが象徴する意味</h2>
-    <p>モミジアオイの花言葉は「思いやり」です。大輪の花が大きく開いて周囲を包み込むように咲く姿が、優しい思いやりの心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>モミジアオイの魅力</h2>
-    <p>モミジアオイの魅力は、大輪の赤い花が持つ情熱的で存在感のある美しさと、もみじに似た葉が添える涼やかな彩りにあります。10月21日生まれの方はもちろん、優しい思いやりを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>モミジアオイは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月21日生まれの方はもちろん、優しい思いやりを伝えたい贈り物としてもモミジアオイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モミジアオイはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に大輪の赤い花を咲かせます。アオイ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モミジアオイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">大輪の花が大きく開いて周囲を包み込むように咲く姿が、優しい思いやりの心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モミジアオイの名前の由来は何ですか？</div>
-        <div class="faq-a">葉の形がもみじに似ていることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">モミジアオイの葉はどんな形をしていますか？</div>
+        <div class="faq-a">切れ込みが深く、紅葉の「もみじ」の葉によく似た形をしており、それが名前の由来になったと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>大輪の赤い花が包み込むように咲く、思いやりの姿</h2>
+    <p>モミジアオイの花をよく観察すると、大きく花びらが開き、まるで両手を広げて何かを包み込もうとしているような形をしている。一輪でも十分な存在感を放つその花は、控えめに寄り添うのではなく、正面から相手を受け止めるような咲き方だ。誰かをそっと抱きとめるようなその花姿こそが、思いやりという花言葉につながっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">モミジアオイはどんな姿に「思いやり」の由来があると言われていますか？</div>
+        <div class="faq-a">大輪の花が大きく開いて周囲を包み込むように咲く姿が、優しい思いやりの心を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>大輪の花で周囲を包み込むように咲くモミジアオイの姿には、さりげない優しさの形が映っている。その優しさを、今日は誰かにそっと差し出してみるのもいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、モミジアオイから始める小さな体験</h2>
+    <p>大輪の花で周囲を包み込むように咲くモミジアオイにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>もみじに似た葉の形をじっくり観察してみる</li>
+      <li>大輪の赤い花を写真や実物で眺めてみる</li>
+      <li>身近な人へのさりげない気遣いを一つしてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かへの思いやりを形にしたい日は、今日のラッキーフードも覗いてみませんか。開運カレンダーでは、日替わりのラッキーフードを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>大きく花開く姿は、遠慮なく気持ちを差し出すことの尊さを教えてくれる。</p>
     <ul>
-      <li>モミジアオイは大輪の赤い花を咲かせる、10月21日の誕生花</li>
-      <li>花言葉は「思いやり」、大きく開いて包み込むような花姿に由来する</li>
-      <li>もみじに似た葉が添える涼やかな彩りが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>モミジアオイは大輪の赤い花を咲かせる、アオイ科の多年草で、10月21日の誕生花</li>
+      <li>花言葉は「思いやり」。大きく開いて包み込むような花姿に由来すると言われる</li>
+      <li>切れ込みの深い、もみじに似た葉の形が名前の由来</li>
+      <li>さりげない優しさを届けたい日に寄り添う花</li>
     </ul>
   </section>
 

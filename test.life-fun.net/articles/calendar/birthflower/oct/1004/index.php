@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ポットマムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"鉢植え用に改良された、コンパクトな小輪の花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ポットマムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"コンパクトにまとまりながらも凛と咲く菊の姿が、清らかで気高い心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ポットマムは普通の菊と違いますか？","acceptedAnswer":{"@type":"Answer","text":"鉢植え用にコンパクトに改良された品種で、庭植えの菊に比べて小さくまとまった草姿が特徴です。"}}
+      {"@type":"Question","name":"ポットマムは庭植えの菊と何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"鉢植え用にコンパクトに改良された品種とされ、庭植えの菊に比べて小さくまとまった草姿が特徴です。"}},
+      {"@type":"Question","name":"ポットマムの花言葉「高潔」の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"コンパクトにまとまりながらも凛と咲く菊の姿が、清らかで気高い心を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 4 · 誕生花</span>
     <h1>10月4日の誕生花はポットマム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ポットマムは、キク科の多年草で、鉢植え用に改良された、コンパクトな小輪の花を咲かせる、端正でまとまりのある印象を持つ花です。花言葉は「高潔」。端正な花です。</p>
+    <p class="art-lead">玄関先やベランダに置かれた小さな鉢植えの中で、きゅっとまとまって咲く菊を見かけたことはないだろうか。10月4日の誕生花ポットマムは、その名の通り鉢の中で美しさを完成させる花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ポットマムとは</a></li>
-      <li><a href="#meaning">ポットマムが象徴する意味</a></li>
-      <li><a href="#charm">ポットマムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月4日の誕生花として親しまれるポットマム</a></li>
+      <li><a href="#story">限られた鉢の中でまとまる、凛とした美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ポットマムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ポットマムとは</h2>
-    <p>ポットマムは、キク科の多年草で、10月4日の誕生花として知られています。鉢植え用に改良された、コンパクトな小輪の花を咲かせる、端正でまとまりのある印象を持つ花です。</p>
-  </section>
+    <h2>10月4日の誕生花として親しまれるポットマム</h2>
+    <p>ポットマムは、キク科の多年草。鉢植えで育てやすいように改良された品種で、コンパクトな草姿に小輪の花をたくさん咲かせる。庭に大きく広がる菊とは違い、限られたスペースの中で凛とまとまりよく咲く姿が特徴だ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ポットマムが象徴する意味</h2>
-    <p>ポットマムの花言葉は「高潔」です。コンパクトにまとまりながらも凛と咲く菊の姿が、清らかで気高い心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ポットマムの魅力</h2>
-    <p>ポットマムの魅力は、コンパクトな菊の花が持つ端正な美しさと、小輪の花がまとまって咲く愛らしい草姿にあります。10月4日生まれの方はもちろん、気高く清らかな心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ポットマムは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月4日生まれの方はもちろん、気高く清らかな心を伝えたい贈り物としてもポットマムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポットマムはいつ頃咲きますか？</div>
-        <div class="faq-a">鉢植え用に改良された、コンパクトな小輪の花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポットマムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">コンパクトにまとまりながらも凛と咲く菊の姿が、清らかで気高い心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポットマムは普通の菊と違いますか？</div>
-        <div class="faq-a">鉢植え用にコンパクトに改良された品種で、庭植えの菊に比べて小さくまとまった草姿が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ポットマムは庭植えの菊と何が違いますか？</div>
+        <div class="faq-a">鉢植え用にコンパクトに改良された品種とされ、庭植えの菊に比べて小さくまとまった草姿が特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>限られた鉢の中でまとまる、凛とした美しさ</h2>
+    <p>ポットマムの魅力は、その名の通り鉢という限られた空間の中で完結する美しさにある。茎を大きく伸ばすことなく、小輪の花を密に咲かせることで、こんもりとした一つの塊のような草姿を作り出す。手のひらに収まるほどの鉢の中でも、その姿は決して窮屈そうに見えない。むしろ、限られた条件の中で自分なりのバランスを保っているようにさえ映る。花言葉「高潔」は、この凛としたまとまりの良さに由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ポットマムの花言葉「高潔」の由来は何ですか？</div>
+        <div class="faq-a">コンパクトにまとまりながらも凛と咲く菊の姿が、清らかで気高い心を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>周囲の大きさに合わせるのではなく、自分の身の丈で整った形を保つ。ポットマムのまとまりある佇まいは、そんな静かな芯の強さを思わせる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ポットマムから始める小さな体験</h2>
+    <p>限られた鉢の中で美しく咲くポットマムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>鉢植えの花を一つ丁寧に育ててみる</li>
+      <li>小さくまとまりのある美しさに目を向けてみる</li>
+      <li>背筋を伸ばして一日を過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分の芯を整えたい日は、今日のおすすめの行動もチェックしてみませんか。開運カレンダーでは、毎日のおすすめ行動やアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな鉢の中で凛と咲くポットマムは、まとまりの中にある強さを教えてくれる。</p>
     <ul>
-      <li>ポットマムはコンパクトな菊の花を咲かせる、10月4日の誕生花</li>
-      <li>花言葉は「高潔」、凛とまとまり咲く姿に由来する</li>
-      <li>小輪の花がまとまって咲く愛らしい草姿が魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>ポットマムは鉢植え用に改良された、キク科の多年草で、10月4日の誕生花</li>
+      <li>花言葉は「高潔」。凛とまとまり咲く姿に由来すると言われる</li>
+      <li>小輪の花をこんもりとまとまりよく咲かせる草姿が特徴</li>
+      <li>静かに自分の芯を保ちたい日に寄り添う花</li>
     </ul>
   </section>
 

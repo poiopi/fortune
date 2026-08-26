@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クッションマムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"こんもりとした草姿に小輪の花をたくさん咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"クッションマムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"こんもりとした草姿で自らを支えるように咲く花の姿が、しっかりとした自立心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"クッションマムの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"クッションのようにこんもりと丸くまとまった草姿から、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"クッションマムはどんな花色がありますか？","acceptedAnswer":{"@type":"Answer","text":"白や赤など、豊富な花色があります。小輪の花をたくさん咲かせるキク科の多年草です。"}},
+      {"@type":"Question","name":"クッションマムという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"クッション（針山）のようにこんもりと丸くまとまった草姿から、この名前がつけられたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 11 · 誕生花</span>
     <h1>10月11日の誕生花はクッションマム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クッションマムは、キク科の多年草で、こんもりとした草姿に小輪の花をたくさん咲かせる、愛らしくにぎやかな印象を持つ花です。花言葉は「自立心」。愛らしくにぎやかな花です。</p>
+    <p class="art-lead">裁縫箱の中に収まる、ふっくらとした丸い針山。そんな形を思い出させる花が、庭先や店先に並ぶことがある。小さな花が寄り集まって咲くクッションマムは、10月11日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クッションマムとは</a></li>
-      <li><a href="#meaning">クッションマムが象徴する意味</a></li>
-      <li><a href="#charm">クッションマムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月11日の誕生花として親しまれるクッションマム</a></li>
+      <li><a href="#story">針山のような姿に見る、自分だけで立つ強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クッションマムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クッションマムとは</h2>
-    <p>クッションマムは、キク科の多年草で、10月11日の誕生花として知られています。こんもりとした草姿に小輪の花をたくさん咲かせる、愛らしくにぎやかな印象を持つ花です。</p>
-  </section>
+    <h2>10月11日の誕生花として親しまれるクッションマム</h2>
+    <p>クッションマムは、キク科の多年草。こんもりとした草姿に、小輪の花を密集させるようにたくさん咲かせる。花色は白や赤など豊富で、丸くまとまった全体の形が特徴的だ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クッションマムが象徴する意味</h2>
-    <p>クッションマムの花言葉は「自立心」です。こんもりとした草姿で自らを支えるように咲く花の姿が、しっかりとした自立心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クッションマムの魅力</h2>
-    <p>クッションマムの魅力は、小輪の花が持つ愛らしくにぎやかな美しさと、こんもりと丸くまとまる可憐な草姿にあります。10月11日生まれの方はもちろん、しっかりとした自立心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クッションマムは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月11日生まれの方はもちろん、しっかりとした自立心を伝えたい贈り物としてもクッションマムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クッションマムはいつ頃咲きますか？</div>
-        <div class="faq-a">こんもりとした草姿に小輪の花をたくさん咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クッションマムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">こんもりとした草姿で自らを支えるように咲く花の姿が、しっかりとした自立心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クッションマムの名前の由来は何ですか？</div>
-        <div class="faq-a">クッションのようにこんもりと丸くまとまった草姿から、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クッションマムはどんな花色がありますか？</div>
+        <div class="faq-a">白や赤など、豊富な花色があります。小輪の花をたくさん咲かせるキク科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>針山のような姿に見る、自分だけで立つ強さ</h2>
+    <p>クッションマムという名前は、裁縫道具の針山（クッション）に似た、丸くこんもりとした草姿に由来すると言われている。小さな花が一つひとつ独立して咲きながらも、全体としては互いに支え合うように一つの丸い形を作り出す。誰か一輪に頼るのではなく、それぞれが自分の場所でしっかりと咲くことで、全体のまとまりが生まれる。この、自分の足で立ちながら調和する姿が、花言葉「自立心」の由来になっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クッションマムという名前の由来は何ですか？</div>
+        <div class="faq-a">クッション（針山）のようにこんもりと丸くまとまった草姿から、この名前がつけられたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分の力で立ち続けること。クッションマムのこんもりとまとまった花姿は、そんな確かな自立心を静かに映し出している。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クッションマムから始める小さな体験</h2>
+    <p>こんもりとまとまって咲くクッションマムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>こんもりとした草姿をじっくり観察してみる</li>
+      <li>一人でやり遂げたいことを一つ決めてみる</li>
+      <li>白や赤など好きな花色を一つ選んでみる</li>
+    </ul>
+
+    <p class="cta-lead">自分の足で立ちたい日は、今日の吉日情報もチェックしてみませんか。開運カレンダーでは、日々の吉日を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>針山のようにこんもりとまとまって咲くクッションマムは、自立と調和を同時に見せてくれる。</p>
     <ul>
-      <li>クッションマムは小輪の花を咲かせる、10月11日の誕生花</li>
-      <li>花言葉は「自立心」、こんもりと自らを支えて咲く姿に由来する</li>
-      <li>こんもりと丸くまとまる可憐な草姿が魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>クッションマムはこんもりとした草姿に小輪の花を咲かせる、キク科の多年草で、10月11日の誕生花</li>
+      <li>花言葉は「自立心」。針山のような草姿に由来すると言われる</li>
+      <li>花色は白や赤など豊富で、まとまりのある美しさが魅力</li>
+      <li>誰かに頼らず自分の足で立ちたい日に寄り添う花</li>
     </ul>
   </section>
 
