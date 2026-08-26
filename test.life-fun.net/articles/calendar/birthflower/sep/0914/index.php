@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0914/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月14日の誕生花ホトトギスの花言葉・特徴・魅力をわかりやすく解説。「熟練」を象徴する紫の斑点模様の花の意味を紹介します。">
+  <meta name="description" content="9月14日の誕生花ホトトギスの花言葉・特徴・魅力をわかりやすく解説。「熟練」を象徴する紫の斑点の意味を紹介します。">
   <title>9月14日の誕生花はホトトギス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ホトトギスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に紫色の斑点模様の花を咲かせます。ユリ科の多年草です。"}},
-      {"@type":"Question","name":"ホトトギスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一つ一つ丁寧に描かれたような紫色の斑点模様を花びらいっぱいに咲かせる繊細な花姿が、長い年月をかけて磨かれた熟練の技を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ホトトギスという名前は鳥と関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。花びらの斑点模様が鳥のホトトギスの胸の羽の模様に似ていることから名付けられたと言われています。"}}
+      {"@type":"Question","name":"ホトトギスはどんな場所に生えている花ですか？","acceptedAnswer":{"@type":"Answer","text":"山野の半日陰や林縁など、直射日光を避けた湿り気のある場所を好んで自生します。秋に紫色の斑点模様の花を咲かせるユリ科の多年草です。"}},
+      {"@type":"Question","name":"ホトトギスの花言葉『熟練』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"花びらに広がる、幾重にも重なったような紫の斑点模様に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 14 · 誕生花</span>
     <h1>9月14日の誕生花はホトトギス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ホトトギスは、ユリ科の多年草で、秋に紫色の斑点模様の花を咲かせる、個性的な印象を与える花です。花言葉は「熟練」。個性的な花です。</p>
+    <p class="art-lead">花びらいっぱいに散らばる紫の斑点が、他のどの花とも違う個性を放っている。一目見たら忘れられないこの模様の主が、9月14日の誕生花ホトトギスだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ホトトギスとは</a></li>
-      <li><a href="#meaning">ホトトギスが象徴する意味</a></li>
-      <li><a href="#charm">ホトトギスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月14日の誕生花として親しまれるホトトギス</a></li>
+      <li><a href="#story">紫の斑点が刻む、積み重ねの証</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ホトトギスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ホトトギスとは</h2>
-    <p>ホトトギスは、ユリ科の多年草で、9月14日の誕生花として知られています。秋に紫色の斑点模様の花を咲かせる、個性的な印象を与える花です。</p>
-  </section>
+    <h2>9月14日の誕生花として親しまれるホトトギス</h2>
+    <p>ホトトギスは、ユリ科の多年草です。秋になると、紫色の斑点模様が広がる花を咲かせます。鳥のホトトギスの羽の模様に似ていることからこの名がついたと言われ、9月14日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ホトトギスが象徴する意味</h2>
-    <p>ホトトギスの花言葉は「熟練」です。一つ一つ丁寧に描かれたような紫色の斑点模様を花びらいっぱいに咲かせる繊細な花姿が、長い年月をかけて磨かれた熟練の技を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ホトトギスの魅力</h2>
-    <p>ホトトギスの魅力は、鳥のホトトギスの羽の模様に似た個性的な斑点模様と、秋の日陰にひっそりと咲く風情ある佇まいにあります。9月14日生まれの方はもちろん、積み重ねた努力を称えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ホトトギスは半日陰を好み、乾燥を嫌うため湿り気のある土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月14日生まれの方はもちろん、積み重ねた努力を称えたい贈り物としてもホトトギスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホトトギスはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に紫色の斑点模様の花を咲かせます。ユリ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホトトギスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">一つ一つ丁寧に描かれたような紫色の斑点模様を花びらいっぱいに咲かせる繊細な花姿が、長い年月をかけて磨かれた熟練の技を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホトトギスという名前は鳥と関係がありますか？</div>
-        <div class="faq-a">はい。花びらの斑点模様が鳥のホトトギスの胸の羽の模様に似ていることから名付けられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ホトトギスはどんな場所に生えている花ですか？</div>
+        <div class="faq-a">山野の半日陰や林縁など、直射日光を避けた湿り気のある場所を好んで自生します。秋に紫色の斑点模様の花を咲かせるユリ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫の斑点が刻む、積み重ねの証</h2>
+    <p>ホトトギスの花びらを近くで見ると、一枚一枚に細かい紫の斑点が散らばっている。均一な色ではなく、濃淡や大きさの異なる点が重なり合うことで、複雑で味わい深い模様を作り出している。この模様は、一度に描かれたものではなく、何層にも色が重なってできたかのような奥行きを感じさせる。派手さよりも、じっくりと見るほどに味わいが増す個性だ。花言葉「熟練」は、この一つひとつ丁寧に積み重ねられたような斑点模様に由来すると言われている。時間をかけて磨かれたものが持つ独特の深みが、この花にはある。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ホトトギスの花言葉『熟練』にはどんな由来がありますか？</div>
+        <div class="faq-a">花びらに広がる、幾重にも重なったような紫の斑点模様に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>積み重ねてきた経験は、目に見えなくても確かに自分の中に残っている。派手な結果として表れなくても、それは十分な自信の土台になる。続けてきたことの重み、それを今日は静かに感じ取れる気がする。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ホトトギスから始める小さな体験</h2>
+    <p>紫の斑点模様を丁寧に重ねて咲かせるホトトギスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の斑点模様をじっくり観察してみる</li>
+      <li>長く続けてきたことを一つ振り返ってみる</li>
+      <li>個性的だと思う自分の一面を大切にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">積み重ねてきたことを振り返りたい日は、今日の星座も見てみませんか。開運カレンダーでは、星座とラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>斑点模様を一つひとつ数えたくなるほど、この花は見るほどに味わいが増していく。それこそが「熟練」の証だ。</p>
     <ul>
-      <li>ホトトギスは秋に斑点模様の花を咲かせる、9月14日の誕生花</li>
-      <li>花言葉は「熟練」、繊細な斑点模様に由来する</li>
-      <li>個性的な斑点模様が魅力</li>
-      <li>半日陰を好み、乾燥を嫌う</li>
+      <li>ホトトギスは秋に紫色の斑点模様の花を咲かせる、ユリ科の多年草で、9月14日の誕生花</li>
+      <li>花言葉は「熟練」。幾重にも重なる斑点模様に由来すると言われる</li>
+      <li>鳥のホトトギスの羽の模様に似ていることが名前の由来</li>
+      <li>個性的な模様がじっくり見るほど味わいを増す</li>
     </ul>
   </section>
 

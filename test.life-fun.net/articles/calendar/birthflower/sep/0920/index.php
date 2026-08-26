@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ケーププリムローズはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏にラッパ状の花を次々と咲かせます。イワタバコ科の多年草です。"}},
-      {"@type":"Question","name":"ケーププリムローズの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"次々と絶えることなくラッパ状の花を咲かせ続ける素直な花姿が、飾らない真実を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ケーププリムローズは室内で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"はい。強い直射日光を避ければ室内の明るい場所でも育てやすく、鉢植えとして人気があります。"}}
+      {"@type":"Question","name":"ケーププリムローズには別名がありますか？","acceptedAnswer":{"@type":"Answer","text":"はい、「ストレプトカーパス」という別名があります。南アフリカ原産で、豊富な花色を持つことでも知られています。"}},
+      {"@type":"Question","name":"ケーププリムローズの花言葉『真実』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"次々と偽りなく花を咲かせ続けるその姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 20 · 誕生花</span>
     <h1>9月20日の誕生花はケーププリムローズ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ケーププリムローズは、イワタバコ科の多年草で、初夏にラッパ状の花を次々と咲かせる、素直でやさしい印象を与える花です。花言葉は「真実」。素直でやさしい花です。</p>
+    <p class="art-lead">一つの花が終わればまた次の花が咲く。途切れることなく咲き続けるその姿は、9月20日の誕生花ケーププリムローズの持ち味と言える。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,67 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ケーププリムローズとは</a></li>
-      <li><a href="#meaning">ケーププリムローズが象徴する意味</a></li>
-      <li><a href="#charm">ケーププリムローズの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月20日の誕生花として親しまれるケーププリムローズ</a></li>
+      <li><a href="#story">咲き続ける花が語る、揺るがない真実</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ケーププリムローズから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ケーププリムローズとは</h2>
-    <p>ケーププリムローズは、イワタバコ科の多年草で、9月20日の誕生花として知られています。初夏にラッパ状の花を次々と咲かせる、素直でやさしい印象を与える花です。</p>
-  </section>
+    <h2>9月20日の誕生花として親しまれるケーププリムローズ</h2>
+    <p>ケーププリムローズは、イワタバコ科の多年草です。初夏になると、ラッパ状の花を次々と咲かせます。別名「ストレプトカーパス」としても知られ、9月20日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ケーププリムローズが象徴する意味</h2>
-    <p>ケーププリムローズの花言葉は「真実」です。次々と絶えることなくラッパ状の花を咲かせ続ける素直な花姿が、飾らない真実を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ケーププリムローズの魅力</h2>
-    <p>ケーププリムローズの魅力は、ビロードのような葉と、ラッパ状に開く花が長期間途切れずに咲き続ける生命力にあります。室内でも育てやすい花です。 9月20日生まれの方はもちろん、偽りのない想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ケーププリムローズは明るい日陰を好み、直射日光を嫌うため風通しの良い場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月20日生まれの方はもちろん、偽りのない想いを伝えたい贈り物としてもケーププリムローズは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ケーププリムローズはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏にラッパ状の花を次々と咲かせます。イワタバコ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ケーププリムローズの花言葉の由来は何ですか？</div>
-        <div class="faq-a">次々と絶えることなくラッパ状の花を咲かせ続ける素直な花姿が、飾らない真実を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ケーププリムローズは室内で育てやすいですか？</div>
-        <div class="faq-a">はい。強い直射日光を避ければ室内の明るい場所でも育てやすく、鉢植えとして人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ケーププリムローズには別名がありますか？</div>
+        <div class="faq-a">はい、「ストレプトカーパス」という別名があります。南アフリカ原産で、豊富な花色を持つことでも知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>咲き続ける花が語る、揺るがない真実</h2>
+    <p>ケーププリムローズの花は、ラッパのような形をしていて、次から次へと途切れることなく咲き続ける。一つの花が終わると、また新しい花が顔を出す。その様子を観察していると、まるで絶えず何かを語りかけてくるようにも見える。別名「ストレプトカーパス」としても知られ、南アフリカ生まれのこの花は、豊富な花色で私たちを楽しませてくれる。花言葉「真実」は、次々と偽りなく花を咲かせ続けるその姿に由来すると言われている。取り繕うことなく、ありのままの自分を表現し続ける。そんな在り方を、この花は静かに体現しているのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ケーププリムローズの花言葉『真実』にはどんな由来がありますか？</div>
+        <div class="faq-a">次々と偽りなく花を咲かせ続けるその姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>無理に取り繕わなくても、本当の自分のままで十分価値がある。次々と花を咲かせるケーププリムローズが、そう語りかけてくる気がする。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ケーププリムローズから始める小さな体験</h2>
+    <p>途切れることなく花を咲かせ続けるケーププリムローズにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ラッパ状の花の形をじっくり観察してみる</li>
+      <li>別名「ストレプトカーパス」について調べてみる</li>
+      <li>本当の気持ちを一つ、正直に言葉にしてみる</li>
+      <li>豊富な花色を見比べてみる</li>
+    </ul>
+
+    <p class="cta-lead">正直な自分でいたい日は、今日のラッキープレイスも見てみませんか。開運カレンダーでは、ラッキープレイスと星座を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「真実」という花言葉を持つケーププリムローズは、次々と花を咲かせながら、豊富な花色で私たちを楽しませてくれる。</p>
     <ul>
-      <li>ケーププリムローズは初夏にラッパ状の花を咲かせる、9月20日の誕生花</li>
-      <li>花言葉は「真実」、咲き続ける素直な花姿に由来する</li>
-      <li>咲き続ける生命力が魅力</li>
-      <li>明るい日陰を好み、直射日光を嫌う</li>
+      <li>ケーププリムローズは初夏にラッパ状の花を次々と咲かせる、イワタバコ科の多年草で、9月20日の誕生花</li>
+      <li>花言葉は「真実」。偽りなく咲き続ける姿に由来すると言われる</li>
+      <li>別名「ストレプトカーパス」としても知られている</li>
+      <li>ありのままの自分を表現し続ける在り方を映す花</li>
     </ul>
   </section>
 

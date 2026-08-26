@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0925/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月25日の誕生花ノコンギクの花言葉・特徴・魅力をわかりやすく解説。「質素」を象徴する淡紫色の花の意味を紹介します。">
+  <meta name="description" content="9月25日の誕生花ノコンギクの花言葉・特徴・魅力をわかりやすく解説。「質素」を象徴する秋の野菊の意味を紹介します。">
   <title>9月25日の誕生花はノコンギク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ノコンギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紫色の花をひっそりと咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ノコンギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"華美な装いを持たず、野山にひっそりと淡紫色の花を咲かせる素朴な花姿が、飾らない質素な心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ノコンギクとヨメナはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらもよく似た野菊ですが、ノコンギクは冠毛（種の綿毛）がやや長い点で見分けられます。"}}
+      {"@type":"Question","name":"ノコンギクはどの季節によく見られますか？","acceptedAnswer":{"@type":"Answer","text":"秋になると、淡紫色の花を咲かせます。道端など、身近な場所でひっそりと咲く素朴な野菊です。"}},
+      {"@type":"Question","name":"ノコンギクの花言葉『質素』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"道端など身近な場所にひっそりと咲き、飾り気のない素朴な姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 25 · 誕生花</span>
     <h1>9月25日の誕生花はノコンギク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ノコンギクは、キク科の多年草で、秋に淡紫色の花をひっそりと咲かせる、素朴な印象を持つ花です。花言葉は「質素」。素朴な花です。</p>
+    <p class="art-lead">道端でひっそりと、淡い紫の花が揺れている。誰に気づかれなくても静かに咲き続ける、それが9月25日の誕生花ノコンギクだと気づく人は、案外少ないのかもしれない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ノコンギクとは</a></li>
-      <li><a href="#meaning">ノコンギクが象徴する意味</a></li>
-      <li><a href="#charm">ノコンギクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月25日の誕生花として親しまれるノコンギク</a></li>
+      <li><a href="#story">道端に咲く質素な野菊の魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ノコンギクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ノコンギクとは</h2>
-    <p>ノコンギクは、キク科の多年草で、9月25日の誕生花として知られています。秋に淡紫色の花をひっそりと咲かせる、素朴な印象を持つ花です。</p>
-  </section>
+    <h2>9月25日の誕生花として親しまれるノコンギク</h2>
+    <p>ノコンギクは、キク科の多年草です。秋になると、淡紫色の花を咲かせます。素朴な野菊の一つとして親しまれ、9月25日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ノコンギクが象徴する意味</h2>
-    <p>ノコンギクの花言葉は「質素」です。華美な装いを持たず、野山にひっそりと淡紫色の花を咲かせる素朴な花姿が、飾らない質素な心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ノコンギクの魅力</h2>
-    <p>ノコンギクの魅力は、淡い紫色の花びらが持つ控えめな美しさと、日本の秋の野山に自然に溶け込む素朴な佇まいにあります。9月25日生まれの方はもちろん、飾らない想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ノコンギクは日当たりから半日陰を好み、丈夫で育てやすいためやせた土地でも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月25日生まれの方はもちろん、飾らない想いを伝えたい贈り物としてもノコンギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノコンギクはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に淡紫色の花をひっそりと咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノコンギクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">華美な装いを持たず、野山にひっそりと淡紫色の花を咲かせる素朴な花姿が、飾らない質素な心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノコンギクとヨメナはどう違いますか？</div>
-        <div class="faq-a">どちらもよく似た野菊ですが、ノコンギクは冠毛（種の綿毛）がやや長い点で見分けられます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ノコンギクはどの季節によく見られますか？</div>
+        <div class="faq-a">秋になると、淡紫色の花を咲かせます。道端など、身近な場所でひっそりと咲く素朴な野菊です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>道端に咲く質素な野菊の魅力</h2>
+    <p>ノコンギクの花は、淡い紫色をしていて、決して目立つ色ではない。秋の野原や道端で、他の草花に混じるようにひっそりと咲いている。派手な色でも大きな花でもないため、気づかずに通り過ぎてしまう人も多いかもしれない。しかし、足を止めてよく見ると、その素朴な淡紫色には、飾らないからこその温かみがある。花言葉「質素」は、この控えめで飾り気のない咲き方に由来すると言われている。特別なものでなくても、日々の暮らしの中には、ノコンギクのようなありがたさがひっそりと存在しているのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ノコンギクの花言葉『質素』にはどんな由来がありますか？</div>
+        <div class="faq-a">道端など身近な場所にひっそりと咲き、飾り気のない素朴な姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>特別なことがなくても、いつもの日常はそれだけで十分にありがたい。道端でひっそり咲くノコンギクが、そのことに静かに気づかせてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ノコンギクから始める小さな体験</h2>
+    <p>道端でひっそりと咲くノコンギクにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>道端に咲く素朴な野菊を、何気なく眺めてみる</li>
+      <li>質素だけれど大切にしていることを一つ思い浮かべてみる</li>
+      <li>いつもの暮らしの中にある、ありがたさを一つ見つけてみる</li>
+    </ul>
+
+    <p class="cta-lead">いつもの暮らしに感謝したい日は、今日の月九星もチェックしてみませんか。開運カレンダーでは、月九星と吉日を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>道端でひっそりと咲くノコンギクは、決して目立つ花ではないが、秋の風景に欠かせない存在だ。</p>
     <ul>
-      <li>ノコンギクは秋に淡紫色の花を咲かせる、9月25日の誕生花</li>
-      <li>花言葉は「質素」、素朴に咲く花姿に由来する</li>
-      <li>控えめな美しさが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすい</li>
+      <li>ノコンギクは秋に淡紫色の花を咲かせる、キク科の多年草で、9月25日の誕生花</li>
+      <li>花言葉は「質素」。控えめで飾り気のない咲き方に由来すると言われる</li>
+      <li>素朴な野菊の一つとして親しまれている</li>
+      <li>日々の暮らしの中にあるありがたさに気づかせてくれる花</li>
     </ul>
   </section>
 

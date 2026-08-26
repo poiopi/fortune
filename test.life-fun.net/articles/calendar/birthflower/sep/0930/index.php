@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コルチカムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に、葉のない状態で薄紫の花を咲かせます。イヌサフラン科の球根植物です。"}},
-      {"@type":"Question","name":"コルチカムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"コルチカムはサフランと同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。花の姿はよく似ていますが、コルチカムはイヌサフラン科、サフランはアヤメ科に属する別の植物です。"}}
+      {"@type":"Question","name":"コルチカムはどんな姿で花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"葉のない状態で、薄紫の花だけを地面からすっと咲かせます。静かで少し不思議な印象を持つ花です。"}},
+      {"@type":"Question","name":"コルチカムの花言葉『永遠』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"葉のない状態でも変わらず花を咲かせ続ける姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -132,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 30 · 誕生花</span>
     <h1>9月30日の誕生花はコルチカム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コルチカムは、イヌサフラン科の球根植物で、秋、葉のない状態で薄紫の花を咲かせる、静かで少し不思議な印象を持つ花です。花言葉は「永遠」。静かで少し不思議な花です。</p>
+    <p class="art-lead">秋が深まる頃、葉を持たないまま、薄紫の花だけが地面からすっと立ち上がる。その静かで少し不思議な佇まいこそ、9月30日の誕生花コルチカムの持ち味。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コルチカムとは</a></li>
-      <li><a href="#meaning">コルチカムが象徴する意味</a></li>
-      <li><a href="#charm">コルチカムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月30日の誕生花として親しまれるコルチカム</a></li>
+      <li><a href="#story">葉のない静けさが咲かせる、永遠のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、コルチカムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コルチカムとは</h2>
-    <p>コルチカムは、イヌサフラン科の球根植物で、9月30日の誕生花として知られています。秋、葉のない状態で薄紫の花を咲かせる、静かで少し不思議な印象を持つ花です。</p>
-  </section>
+    <h2>9月30日の誕生花として親しまれるコルチカム</h2>
+    <p>コルチカムは、イヌサフラン科の球根植物です。秋になると、葉のない状態で薄紫の花を咲かせます。静かで少し不思議な印象を持つ花として親しまれ、9月30日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>コルチカムが象徴する意味</h2>
-    <p>コルチカムの花言葉は「永遠」です。葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>コルチカムの魅力</h2>
-    <p>コルチカムの魅力は、葉のない静けさの中でひっそりと咲く薄紫色の花の神秘的な美しさと、秋の訪れを静かに告げる佇まいにあります。9月30日生まれの方はもちろん、変わらない永遠の想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>コルチカムは日当たりから半日陰を好み、球根植物のため過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月30日生まれの方はもちろん、変わらない永遠の想いを伝えたい贈り物としてもコルチカムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に、葉のない状態で薄紫の花を咲かせます。イヌサフラン科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">葉を持たないまま、地面から直接薄紫色の花だけを咲かせる不思議な花姿が、季節を超えて変わらぬ永遠を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コルチカムはサフランと同じ花ですか？</div>
-        <div class="faq-a">いいえ。花の姿はよく似ていますが、コルチカムはイヌサフラン科、サフランはアヤメ科に属する別の植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">コルチカムはどんな姿で花を咲かせますか？</div>
+        <div class="faq-a">葉のない状態で、薄紫の花だけを地面からすっと咲かせます。静かで少し不思議な印象を持つ花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>葉のない静けさが咲かせる、永遠のかたち</h2>
+    <p>秋が深まる頃、コルチカムは葉を持たないまま、地面から薄紫の花だけをすっと咲かせる。花と葉が同じ時期に揃わないというその咲き方は、季節が移り変わっていく中でもひときわ目を引く。周りの草木が葉を茂らせ、少しずつ色を変えていく季節に、コルチカムだけが花だけの姿で静かに存在を示す。この、季節の流れから少し外れたような佇まいに、不思議と目を奪われる。葉がなくても、花は変わらず咲き続ける――その事実に、花言葉「永遠」は由来すると言われている。季節から少し外れたような佇まいのまま、変わらぬ強さを静かに咲かせている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コルチカムの花言葉『永遠』にはどんな由来がありますか？</div>
+        <div class="faq-a">葉のない状態でも変わらず花を咲かせ続ける姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>葉もないまま、薄紫の花だけがすっと立つ。何かを失っても、大切なものは形を変えながら続いていく。コルチカムの姿にあるのは、変わらずにあり続けることの静かな強さ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、コルチカムから始める小さな体験</h2>
+    <p>葉のない状態で薄紫の花を咲かせるコルチカムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>葉のない状態で咲く花の姿をじっくり観察してみる</li>
+      <li>薄紫色のものを身の回りに取り入れてみる</li>
+      <li>変わらずにいたい気持ちを一つ、静かに確かめてみる</li>
+    </ul>
+
+    <p class="cta-lead">変わらない何かを大切にしたい日は、今日の月齢もあわせて覗いてみませんか。開運カレンダーでは、月齢・月相と今月の誕生石を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>葉もないまま咲き続けるこの花に、何を見るだろうか。</p>
     <ul>
-      <li>コルチカムは秋に薄紫の花を咲かせる、9月30日の誕生花</li>
-      <li>花言葉は「永遠」、葉のないまま咲く花姿に由来する</li>
-      <li>神秘的な美しさが魅力</li>
-      <li>日当たりから半日陰を好み、過湿を避ける</li>
+      <li>コルチカムは秋、葉のない状態で薄紫の花を咲かせる、イヌサフラン科の球根植物で、9月30日の誕生花</li>
+      <li>花言葉は「永遠」。葉がなくても咲き続ける姿に由来すると言われる</li>
+      <li>静かで少し不思議な印象を持つ花</li>
+      <li>変わらずにいたい気持ちをそっと思い出させる存在</li>
     </ul>
   </section>
 

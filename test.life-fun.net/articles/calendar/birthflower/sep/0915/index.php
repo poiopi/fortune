@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0915/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月15日の誕生花ヨメナの花言葉・特徴・魅力をわかりやすく解説。「秘めた美しさ」を象徴する淡紫色の花の意味を紹介します。">
+  <meta name="description" content="9月15日の誕生花ヨメナの花言葉・特徴・魅力をわかりやすく解説。「秘めた美しさ」を象徴する淡紫の野菊の意味を紹介します。">
   <title>9月15日の誕生花はヨメナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヨメナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紫色の花をひっそりと咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ヨメナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"華やかさを主張することなく、野辺にひっそりと淡紫色の花を咲かせる素朴な花姿が、内に秘めた美しさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヨメナは食用にもなりますか？","acceptedAnswer":{"@type":"Answer","text":"はい。若菜は古くから山菜として食用にされ、春の若葉は「嫁菜飯」などにも利用されてきました。"}}
+      {"@type":"Question","name":"ヨメナはどんな性質を持つ花として知られていますか？","acceptedAnswer":{"@type":"Answer","text":"秋の野にひっそりと咲く、素朴な野菊の一種として知られています。目立たないながらも、凛とした佇まいを持つと言われています。"}},
+      {"@type":"Question","name":"ヨメナの花言葉『秘めた美しさ』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"秋の野にひっそりと咲き、目立たないながらも凛とした美しさを持つ、そんな控えめな姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 15 · 誕生花</span>
     <h1>9月15日の誕生花はヨメナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヨメナは、キク科の多年草で、秋に淡紫色の花をひっそりと咲かせる、控えめで慎ましい印象を持つ花です。花言葉は「秘めた美しさ」。控えめで慎ましい花です。</p>
+    <p class="art-lead">秋の野に、ひっそりと淡い紫色の花が咲いている。目立たず、けれど確かにそこにある美しさ——それがヨメナ、9月15日の誕生花である。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヨメナとは</a></li>
-      <li><a href="#meaning">ヨメナが象徴する意味</a></li>
-      <li><a href="#charm">ヨメナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月15日の誕生花として親しまれるヨメナ</a></li>
+      <li><a href="#story">淡い紫が語る、秘めた美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヨメナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヨメナとは</h2>
-    <p>ヨメナは、キク科の多年草で、9月15日の誕生花として知られています。秋に淡紫色の花をひっそりと咲かせる、控えめで慎ましい印象を持つ花です。</p>
-  </section>
+    <h2>9月15日の誕生花として親しまれるヨメナ</h2>
+    <p>ヨメナは、キク科の多年草です。秋になると、淡紫色の花を咲かせます。素朴な野菊の一つとして親しまれ、9月15日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヨメナが象徴する意味</h2>
-    <p>ヨメナの花言葉は「秘めた美しさ」です。華やかさを主張することなく、野辺にひっそりと淡紫色の花を咲かせる素朴な花姿が、内に秘めた美しさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヨメナの魅力</h2>
-    <p>ヨメナの魅力は、淡い紫色の花びらが持つ控えめな上品さと、日本の秋の野山に自然に溶け込む素朴な佇まいにあります。9月15日生まれの方はもちろん、内に秘めた美しさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヨメナは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月15日生まれの方はもちろん、内に秘めた美しさを伝えたい贈り物としてもヨメナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヨメナはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に淡紫色の花をひっそりと咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヨメナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">華やかさを主張することなく、野辺にひっそりと淡紫色の花を咲かせる素朴な花姿が、内に秘めた美しさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヨメナは食用にもなりますか？</div>
-        <div class="faq-a">はい。若菜は古くから山菜として食用にされ、春の若葉は「嫁菜飯」などにも利用されてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヨメナはどんな性質を持つ花として知られていますか？</div>
+        <div class="faq-a">秋の野にひっそりと咲く、素朴な野菊の一種として知られています。目立たないながらも、凛とした佇まいを持つと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>淡い紫が語る、秘めた美しさ</h2>
+    <p>ヨメナの花びらは、白でも本格的な紫でもない、淡く優しい色合いをしている。派手に自己主張するでもなく、秋の野の中に静かに溶け込むように咲く。しかし目を凝らして見ると、その淡い紫には、落ち着いた気品が宿っている。声高に美しさを誇示するのではなく、気づいた人にだけそっと伝わる美しさ。それは「秘めた美しさ」という花言葉そのものだ。控えめであることは、決して魅力の欠如ではない。むしろ、静かであるからこそ、見つけたときの喜びが大きくなる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヨメナの花言葉『秘めた美しさ』にはどんな由来がありますか？</div>
+        <div class="faq-a">秋の野にひっそりと咲き、目立たないながらも凛とした美しさを持つ、そんな控えめな姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰にでも見せるものではない、そっと胸の内にしまっておきたい想いがある。ヨメナの淡い紫は、そんな心の内側に灯る、静かな明かりに似ている。今日はその明かりを、誰かに見せなくてもいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヨメナから始める小さな体験</h2>
+    <p>秋の野にひっそりと淡紫色の花を咲かせるヨメナにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ひっそり咲く淡紫色の野菊を、そっと探してみる</li>
+      <li>心の中にそっとしまっている想いを一つ思い出してみる</li>
+      <li>誰にも言わずに、自分だけの静かな時間を持ってみる</li>
+    </ul>
+
+    <p class="cta-lead">そっと心にしまっておきたい日は、今日の吉日もあわせて確認してみませんか。開運カレンダーでは、吉日とラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>淡い紫色の中に、そっとしまわれた美しさ。それがヨメナという花の在り方だ。</p>
     <ul>
-      <li>ヨメナは秋に淡紫色の花を咲かせる、9月15日の誕生花</li>
-      <li>花言葉は「秘めた美しさ」、控えめに咲く花姿に由来する</li>
-      <li>控えめな上品さが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすい</li>
+      <li>ヨメナは秋に淡紫色の花を咲かせる、キク科の多年草で、9月15日の誕生花</li>
+      <li>花言葉は「秘めた美しさ」。控えめで飾らない咲き方に由来すると言われる</li>
+      <li>素朴な野菊の一つとして親しまれている</li>
+      <li>目立たなくても、静かに輝く美しさを持つ花</li>
     </ul>
   </section>
 

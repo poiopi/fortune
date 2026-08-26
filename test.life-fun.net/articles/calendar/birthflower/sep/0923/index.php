@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0923/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月23日の誕生花サガギクの花言葉・特徴・魅力をわかりやすく解説。「フェミニン」を象徴する優雅に垂れる花びらの意味を紹介します。">
+  <meta name="description" content="9月23日の誕生花サガギクの花言葉・特徴・魅力をわかりやすく解説。「フェミニン」を象徴する京の古典菊の意味を紹介します。">
   <title>9月23日の誕生花はサガギク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サガギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に細く優雅な花びらを咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"サガギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細く繊細な花びらが糸のように優雅に垂れて咲く上品な花姿が、しなやかで女性らしい魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"サガギクとはどんな菊ですか？","acceptedAnswer":{"@type":"Answer","text":"京都・嵯峨地方で古くから育てられてきた古典菊の一種で、細く優雅に垂れる花びらが特徴です。"}}
+      {"@type":"Question","name":"『京の古典菊』とは、どのような菊を指しますか？","acceptedAnswer":{"@type":"Answer","text":"京都で古くから育まれ、受け継がれてきた菊の総称です。サガギクは、その中でも細く優雅な花びらを持つ品種として知られています。"}},
+      {"@type":"Question","name":"サガギクの花言葉『フェミニン』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"細く優雅な花びらが持つ、しなやかで上品な佇まいに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 23 · 誕生花</span>
     <h1>9月23日の誕生花はサガギク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サガギクは、キク科の多年草で、秋に細く優雅な花びらを咲かせる、優雅な印象を漂わせる花です。花言葉は「フェミニン」。優雅な花です。</p>
+    <p class="art-lead">細く優雅な花びらが、幾重にも重なって咲く。京の伝統が育んだその気品が、9月23日の誕生花サガギクを彩っている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サガギクとは</a></li>
-      <li><a href="#meaning">サガギクが象徴する意味</a></li>
-      <li><a href="#charm">サガギクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月23日の誕生花として親しまれるサガギク</a></li>
+      <li><a href="#story">京の古典菊が纏う、フェミニンな気品</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サガギクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サガギクとは</h2>
-    <p>サガギクは、キク科の多年草で、9月23日の誕生花として知られています。秋に細く優雅な花びらを咲かせる、優雅な印象を漂わせる花です。</p>
-  </section>
+    <h2>9月23日の誕生花として親しまれるサガギク</h2>
+    <p>サガギクは、キク科の多年草です。秋になると、細く優雅な花びらを咲かせます。「京の古典菊」の一つとして親しまれ、9月23日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サガギクが象徴する意味</h2>
-    <p>サガギクの花言葉は「フェミニン」です。細く繊細な花びらが糸のように優雅に垂れて咲く上品な花姿が、しなやかで女性らしい魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サガギクの魅力</h2>
-    <p>サガギクの魅力は、糸のように細く繊細な花びらが幾重にも重なって咲く優雅さと、古くから受け継がれてきた京の古典菊としての気品にあります。9月23日生まれの方はもちろん、しなやかな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サガギクは日当たりを好み、過湿を嫌うため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月23日生まれの方はもちろん、しなやかな想いを伝えたい贈り物としてもサガギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サガギクはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に細く優雅な花びらを咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サガギクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">細く繊細な花びらが糸のように優雅に垂れて咲く上品な花姿が、しなやかで女性らしい魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サガギクとはどんな菊ですか？</div>
-        <div class="faq-a">京都・嵯峨地方で古くから育てられてきた古典菊の一種で、細く優雅に垂れる花びらが特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">『京の古典菊』とは、どのような菊を指しますか？</div>
+        <div class="faq-a">京都で古くから育まれ、受け継がれてきた菊の総称です。サガギクは、その中でも細く優雅な花びらを持つ品種として知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>京の古典菊が纏う、フェミニンな気品</h2>
+    <p>サガギクの花びらは、他の菊と比べても際立って細く、繊細な糸のような姿をしている。「京の古典菊」の一つとして、京都で古くから大切に育まれ、受け継がれてきた品種だ。一枚一枚の花びらをよく見ると、繊細でありながらも凛とした強さを感じさせる。派手な華やかさとは違う、静かな気品がそこにはある。花言葉「フェミニン」は、この細く優雅な花びらが持つ、しなやかで上品な佇まいに由来すると言われている。上品さとは、決して飾り立てることではなく、細やかな心配りの積み重ねから生まれるものなのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サガギクの花言葉『フェミニン』にはどんな由来がありますか？</div>
+        <div class="faq-a">細く優雅な花びらが持つ、しなやかで上品な佇まいに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>細やかな心配りの積み重ねこそが、本当の上品さなのかもしれない。糸のように繊細な花びらを持つサガギクは、その静かな手本だ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サガギクから始める小さな体験</h2>
+    <p>細く優雅な花びらを咲かせるサガギクにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>細く優雅な花びらをじっくり観察してみる</li>
+      <li>自分なりの上品さについて考えてみる</li>
+      <li>古くから伝わるものについて少し調べてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分らしい上品さを意識したい日は、今日のおすすめアイテムも見てみませんか。開運カレンダーでは、おすすめアイテムと六曜を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>細く繊細な花びらと、京の歴史が育んだ気品。それがサガギクという花の魅力である。</p>
     <ul>
-      <li>サガギクは秋に優雅な花びらを咲かせる、9月23日の誕生花</li>
-      <li>花言葉は「フェミニン」、優雅に垂れる花びらに由来する</li>
-      <li>糸のように優雅な花びらが魅力</li>
-      <li>日当たりを好み、過湿を嫌う</li>
+      <li>サガギクは秋に細く優雅な花びらを咲かせる、キク科の多年草で、9月23日の誕生花</li>
+      <li>花言葉は「フェミニン」。しなやかで上品な花びらの佇まいに由来すると言われる</li>
+      <li>「京の古典菊」の一つとして受け継がれてきた</li>
+      <li>静かな気品を映す花</li>
     </ul>
   </section>
 

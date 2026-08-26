@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バタフライブッシュはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に房状の花を咲かせ、蝶を誘います。ゴマノハグサ科の落葉低木です。"}},
-      {"@type":"Question","name":"バタフライブッシュの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"甘い香りを放ちながら房状に咲き誇り、蝶を次々と呼び寄せる花姿が、人を惹きつけてやまない魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"バタフライブッシュに蝶が集まるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"甘い香りの蜜を豊富に含むため、蝶をはじめとする多くの昆虫を引き寄せることで知られています。"}}
+      {"@type":"Question","name":"バタフライブッシュの花はどんな形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が穂状に連なり、円錐形の房になって咲きます。和名の「フサフジウツギ」も、この房状の花姿にちなんでいます。"}},
+      {"@type":"Question","name":"バタフライブッシュの花言葉『魅力』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が房になって集まり、甘い香りとともに蝶を引き寄せる、この花ならではの引力に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 4 · 誕生花</span>
     <h1>9月4日の誕生花はバタフライブッシュ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バタフライブッシュは、ゴマノハグサ科の落葉低木で、夏に房状の花を咲かせ、蝶を誘う、華やかで人を惹きつける印象を放つ花です。花言葉は「魅力」。華やかで人を惹きつける花です。</p>
+    <p class="art-lead">甘い香りに誘われて、蝶がひらひらと舞い降りてくる。小さな花が房になって集まる姿は、遠くからでも人の目を引く。9月4日の誕生花バタフライブッシュは、そんな引力を持つ花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バタフライブッシュとは</a></li>
-      <li><a href="#meaning">バタフライブッシュが象徴する意味</a></li>
-      <li><a href="#charm">バタフライブッシュの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月4日の誕生花として親しまれるバタフライブッシュ</a></li>
+      <li><a href="#story">小さな花が集まって咲く、房のかたちの引力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バタフライブッシュから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バタフライブッシュとは</h2>
-    <p>バタフライブッシュは、ゴマノハグサ科の落葉低木で、9月4日の誕生花として知られています。夏に房状の花を咲かせ、蝶を誘う、華やかで人を惹きつける印象を放つ花です。</p>
-  </section>
+    <h2>9月4日の誕生花として親しまれるバタフライブッシュ</h2>
+    <p>バタフライブッシュは、ゴマノハグサ科の落葉低木です。夏になると、房状に集まった花を咲かせ、その甘い香りで蝶を誘います。和名は「フサフジウツギ」といい、多彩な花色でも知られ、9月4日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バタフライブッシュが象徴する意味</h2>
-    <p>バタフライブッシュの花言葉は「魅力」です。甘い香りを放ちながら房状に咲き誇り、蝶を次々と呼び寄せる花姿が、人を惹きつけてやまない魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バタフライブッシュの魅力</h2>
-    <p>バタフライブッシュの魅力は、紫やピンクの房状の花が枝いっぱいに咲きそろう華やかさと、蝶が集まる庭を演出できることにあります。夏の庭木としても人気です。 9月4日生まれの方はもちろん、尽きない魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バタフライブッシュは日当たりを好み、丈夫で育てやすいため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月4日生まれの方はもちろん、尽きない魅力を伝えたい贈り物としてもバタフライブッシュは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バタフライブッシュはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に房状の花を咲かせ、蝶を誘います。ゴマノハグサ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バタフライブッシュの花言葉の由来は何ですか？</div>
-        <div class="faq-a">甘い香りを放ちながら房状に咲き誇り、蝶を次々と呼び寄せる花姿が、人を惹きつけてやまない魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バタフライブッシュに蝶が集まるのはなぜですか？</div>
-        <div class="faq-a">甘い香りの蜜を豊富に含むため、蝶をはじめとする多くの昆虫を引き寄せることで知られています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">バタフライブッシュの花はどんな形をしていますか？</div>
+        <div class="faq-a">小さな花が穂状に連なり、円錐形の房になって咲きます。和名の「フサフジウツギ」も、この房状の花姿にちなんでいます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>小さな花が集まって咲く、房のかたちの引力</h2>
+    <p>バタフライブッシュの花は、一つひとつを見るとごく小さい。けれどそれが幾重にも集まり、円錐形の房になって咲くと、遠目にも見過ごせない存在感を放つ。この房状の形が、甘い香りと合わさって、蝶を次々と呼び寄せる。和名の「フサフジウツギ」も、この房のように集まって咲く様子から名づけられたのだろう。花色も紫やピンク、白と幅広く、集まって咲くからこそ生まれる色の重なりも見どころのひとつだ。花言葉「魅力」は、一つひとつは控えめでも、集まることで大きな引力を持つこの花の性質そのものを表しているように思える。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バタフライブッシュの花言葉『魅力』にはどんな由来がありますか？</div>
+        <div class="faq-a">小さな花が房になって集まり、甘い香りとともに蝶を引き寄せる、この花ならではの引力に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かを惹きつける力は、大きな一つの魅力よりも、小さな良さの積み重ねから生まれることが多い。誰かに気づいてもらう前に、まず自分で見つけておきたい、そのささやかな魅力。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バタフライブッシュから始める小さな体験</h2>
+    <p>房状に集まって咲き、甘い香りで蝶を誘うバタフライブッシュにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>房状に集まって咲く花の形をじっくり観察してみる</li>
+      <li>和名「フサフジウツギ」の由来について調べてみる</li>
+      <li>蝶が訪れる花を探してみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かを惹きつける魅力を意識したい日は、今日の吉日もチェックしてみませんか。開運カレンダーでは、吉日とラッキーフードを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「魅力」とは何かと問われたら、房になって咲くこの花の姿を思い出したい。</p>
     <ul>
-      <li>バタフライブッシュは夏に房状の花を咲かせる、9月4日の誕生花</li>
-      <li>花言葉は「魅力」、蝶を惹きつける花姿に由来する</li>
-      <li>華やかな房状の花と蝶を呼ぶ佇まいが魅力</li>
-      <li>日当たりを好み、丈夫で育てやすい</li>
+      <li>バタフライブッシュは夏に房状の花を咲かせる、ゴマノハグサ科の落葉低木で、9月4日の誕生花</li>
+      <li>花言葉は「魅力」。房になって蝶を引き寄せる花の性質に由来すると言われる</li>
+      <li>和名は「フサフジウツギ」、甘い香りと多彩な花色も特徴</li>
+      <li>小さな花の集まりが大きな存在感を生む姿が印象的</li>
     </ul>
   </section>
 

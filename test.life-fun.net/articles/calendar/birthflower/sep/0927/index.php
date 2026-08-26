@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フウセンカズラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に小さな花を咲かせた後、風船のような実をつけます。ムクロジ科のつる性一年草です。"}},
-      {"@type":"Question","name":"フウセンカズラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"つるを自由に伸ばしながら風船のような可愛らしい実を軽やかにつける花姿が、何ものにも縛られない自由な心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"フウセンカズラの風船のような実は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花が咲いた後にできる袋状の果実で、中には黒い種子が入っています。ハート型の模様がある種子としても知られています。"}}
+      {"@type":"Question","name":"フウセンカズラの種にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"風船のような実の中にある種には、白いハート模様が浮かんでいます。子どもの遊び道具としても親しまれてきました。"}},
+      {"@type":"Question","name":"フウセンカズラの花言葉『自由な心』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"つるを自由に伸ばし、風船のような実をつける姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +138,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 27 · 誕生花</span>
     <h1>9月27日の誕生花はフウセンカズラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フウセンカズラは、ムクロジ科のつる性一年草で、夏に小さな花を咲かせた後、風船のような実をつける、遊び心のある可愛らしい印象を与える植物です。花言葉は「自由な心」。遊び心のある可愛らしい植物です。</p>
+    <p class="art-lead">風船のように軽やかにふくらんだ実が、つるの先で揺れている。それこそ、9月27日の誕生花フウセンカズラの遊び心。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>フウセンカズラ</dd>
     <dt>花言葉</dt><dd>自由な心</dd>
     <dt>科名</dt><dd>ムクロジ科</dd>
-    <dt>見頃</dt><dd>夏</dd>
+    <dt>見頃</dt><dd>夏〜秋</dd>
   </dl>
 
   <?php
@@ -150,66 +159,67 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フウセンカズラとは</a></li>
-      <li><a href="#meaning">フウセンカズラが象徴する意味</a></li>
-      <li><a href="#charm">フウセンカズラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月27日の誕生花として親しまれるフウセンカズラ</a></li>
+      <li><a href="#story">風船の実に隠れた、自由な心のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フウセンカズラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フウセンカズラとは</h2>
-    <p>フウセンカズラは、ムクロジ科のつる性一年草で、9月27日の誕生花として知られています。夏に小さな花を咲かせた後、風船のような実をつける、遊び心のある可愛らしい印象を与える植物です。</p>
-  </section>
+    <h2>9月27日の誕生花として親しまれるフウセンカズラ</h2>
+    <p>フウセンカズラは、ムクロジ科のつる性一年草です。夏に花を咲かせたあと、風船のような実をつけます。種に白いハート模様があることでも知られ、9月27日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フウセンカズラが象徴する意味</h2>
-    <p>フウセンカズラの花言葉は「自由な心」です。つるを自由に伸ばしながら風船のような可愛らしい実を軽やかにつける花姿が、何ものにも縛られない自由な心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フウセンカズラの魅力</h2>
-    <p>フウセンカズラの魅力は、目立たない小さな花の後にできる風船のような実の愛らしさと、つるを伸ばして自由に育つグリーンカーテンとしての人気にあります。9月27日生まれの方はもちろん、自由な心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フウセンカズラは日当たりを好み、丈夫でつるを伸ばしやすいため支柱を立てて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月27日生まれの方はもちろん、自由な心を伝えたい贈り物としてもフウセンカズラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フウセンカズラはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に小さな花を咲かせた後、風船のような実をつけます。ムクロジ科のつる性一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フウセンカズラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">つるを自由に伸ばしながら風船のような可愛らしい実を軽やかにつける花姿が、何ものにも縛られない自由な心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フウセンカズラの風船のような実は何ですか？</div>
-        <div class="faq-a">花が咲いた後にできる袋状の果実で、中には黒い種子が入っています。ハート型の模様がある種子としても知られています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フウセンカズラの種にはどんな特徴がありますか？</div>
+        <div class="faq-a">風船のような実の中にある種には、白いハート模様が浮かんでいます。子どもの遊び道具としても親しまれてきました。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>風船の実に隠れた、自由な心のかたち</h2>
+    <p>フウセンカズラは、夏に小さな花を咲かせた後、風船のようにふくらんだ実をつける。この実を軽く振ると、中の種がころころと音を立てる。子どもの遊び道具としても親しまれてきた、遊び心のある植物だ。実を割ってみると、中の種には白いハート模様が浮かんでいて、見つけた人を思わず笑顔にさせる。つるを自由に伸ばしながら育ち、風船のような実を軽やかにつける、その気ままな姿に花言葉「自由な心」は由来すると言われている。肩の力を抜いて、気ままに過ごす時間があってもいい。フウセンカズラは、そんなことをそっと教えてくれる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フウセンカズラの花言葉『自由な心』にはどんな由来がありますか？</div>
+        <div class="faq-a">つるを自由に伸ばし、風船のような実をつける姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>常に気を張っていなくてもいい。風船のように軽やかな実をつけるフウセンカズラの姿を見ていると、肩の力を抜くことの心地よさが伝わってくる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フウセンカズラから始める小さな体験</h2>
+    <p>風船のような実をつけるフウセンカズラにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>風船のような実をじっくり観察してみる</li>
+      <li>種の白いハート模様を探してみる</li>
+      <li>自由な時間を少し作ってみる</li>
+      <li>遊び心を持って、いつもと違うことを一つしてみる</li>
+    </ul>
+
+    <p class="cta-lead">肩の力を抜いて過ごしたい日は、今日のラッキーフードもあわせて確認してみませんか。開運カレンダーでは、ラッキーフードと月齢・月相を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>軽やかな風船の実と、種に宿る小さなハート。フウセンカズラの遊び心が、そこに詰まっている。</p>
     <ul>
-      <li>フウセンカズラは夏に風船のような実を咲かせる、9月27日の誕生花</li>
-      <li>花言葉は「自由な心」、自由に伸びるつるに由来する</li>
-      <li>風船のような実の愛らしさが魅力</li>
-      <li>日当たりを好み、つるを伸ばしやすい</li>
+      <li>フウセンカズラは夏に花を咲かせたあと風船のような実をつける、ムクロジ科のつる性一年草で、9月27日の誕生花</li>
+      <li>花言葉は「自由な心」。つるを自由に伸ばし、風船のような実をつける姿に由来すると言われる</li>
+      <li>種には白いハート模様があり、子どもの遊びにも親しまれてきた</li>
+      <li>肩の力を抜くことの心地よさを教えてくれる花</li>
     </ul>
   </section>
 

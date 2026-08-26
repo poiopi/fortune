@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0918/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月18日の誕生花サルビア（紫）の花言葉・特徴・魅力をわかりやすく解説。「尊敬」を象徴する紫色の花の意味を紹介します。">
+  <meta name="description" content="9月18日の誕生花サルビア（紫）の花言葉・特徴・魅力をわかりやすく解説。「尊敬」を象徴する紫の花穂の意味を紹介します。">
   <title>9月18日の誕生花はサルビア（紫）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サルビア（紫）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に紫色の花を穂状に咲かせます。シソ科の植物です。"}},
-      {"@type":"Question","name":"サルビア（紫）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"まっすぐに伸びた茎の先で、紫色の花を凛と穂状に咲かせ続ける気品ある花姿が、心からの尊敬の念を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"サルビア（紫）と赤いサルビアは花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい。同じサルビアでも花の色によって花言葉が異なり、紫色は「尊敬」、赤色は「燃ゆる想い」とされています。"}}
+      {"@type":"Question","name":"サルビア（紫）はいつ頃、花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"夏の終わりから秋にかけて、紫色の花穂を長く楽しむことができます。"}},
+      {"@type":"Question","name":"サルビア（紫）の花言葉『尊敬』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"紫の花穂がまっすぐに、姿勢を正すように立ち並んで咲く様子に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 18 · 誕生花</span>
     <h1>9月18日の誕生花はサルビア（紫）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サルビア（紫）は、シソ科の植物で、夏から秋に紫色の花を穂状に咲かせる、気品ある印象を放つ花です。花言葉は「尊敬」。気品ある花です。</p>
+    <p class="art-lead">紫の花穂が、まっすぐに姿勢を正すように立ち並ぶ。その凛とした姿を、9月18日の誕生花サルビア（紫）は見せてくれる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サルビア（紫）とは</a></li>
-      <li><a href="#meaning">サルビア（紫）が象徴する意味</a></li>
-      <li><a href="#charm">サルビア（紫）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月18日の誕生花として親しまれるサルビア（紫）</a></li>
+      <li><a href="#story">まっすぐに立つ紫の花穂と、尊敬のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サルビア（紫）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サルビア（紫）とは</h2>
-    <p>サルビア（紫）は、シソ科の植物で、9月18日の誕生花として知られています。夏から秋に紫色の花を穂状に咲かせる、気品ある印象を放つ花です。</p>
-  </section>
+    <h2>9月18日の誕生花として親しまれるサルビア（紫）</h2>
+    <p>サルビア（紫）は、シソ科の植物です。夏から秋にかけて、紫色の花を穂状に咲かせます。凛とした佇まいを持つ花として親しまれ、9月18日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サルビア（紫）が象徴する意味</h2>
-    <p>サルビア（紫）の花言葉は「尊敬」です。まっすぐに伸びた茎の先で、紫色の花を凛と穂状に咲かせ続ける気品ある花姿が、心からの尊敬の念を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サルビア（紫）の魅力</h2>
-    <p>サルビア（紫）の魅力は、赤いサルビアとは異なる落ち着いた紫色の気品と、夏から秋まで長く咲き続ける丈夫さにあります。9月18日生まれの方はもちろん、心からの尊敬を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サルビア（紫）は日当たりを好み、暑さに強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月18日生まれの方はもちろん、心からの尊敬を伝えたい贈り物としてもサルビア（紫）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルビア（紫）はいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に紫色の花を穂状に咲かせます。シソ科の植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルビア（紫）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">まっすぐに伸びた茎の先で、紫色の花を凛と穂状に咲かせ続ける気品ある花姿が、心からの尊敬の念を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルビア（紫）と赤いサルビアは花言葉が違いますか？</div>
-        <div class="faq-a">はい。同じサルビアでも花の色によって花言葉が異なり、紫色は「尊敬」、赤色は「燃ゆる想い」とされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サルビア（紫）はいつ頃、花を楽しめますか？</div>
+        <div class="faq-a">夏の終わりから秋にかけて、紫色の花穂を長く楽しむことができます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>まっすぐに立つ紫の花穂と、尊敬のかたち</h2>
+    <p>夏の終わりから秋にかけて、サルビア（紫）の紫色の花穂がまっすぐに立ち並ぶ。同じサルビアの仲間の中でも、紫色にはどこか落ち着いた、凛とした佇まいがある。姿勢を正すように咲くその花穂は、見る人に自然と背筋を伸ばさせるような静かな力を持っている。花言葉「尊敬」は、この真っ直ぐに立つ花穂の姿に由来すると言われている。誰かを敬うということは、大げさな言葉や態度で示すものではなく、こうした静かな佇まいの中にこそ表れるのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サルビア（紫）の花言葉『尊敬』にはどんな由来がありますか？</div>
+        <div class="faq-a">紫の花穂がまっすぐに、姿勢を正すように立ち並んで咲く様子に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>声に出さなくても、心の中で誰かに深く頭を下げたくなる瞬間がある。紫の花穂がまっすぐに立つサルビア（紫）は、そんな静かな敬意の姿に似ている。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サルビア（紫）から始める小さな体験</h2>
+    <p>紫の花穂をまっすぐに咲かせるサルビア（紫）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の花穂をじっくり観察してみる</li>
+      <li>尊敬している人を一人、思い浮かべてみる</li>
+      <li>紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かへの敬意を形にしたい日は、今日の年九星も覗いてみませんか。開運カレンダーでは、年九星とラッキーフードを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>夏の終わりから秋にかけて、紫の花穂がまっすぐに立ち並ぶ。その凛とした姿こそ、サルビア（紫）の一番の魅力だ。</p>
     <ul>
-      <li>サルビア（紫）は夏から秋に紫色の花を咲かせる、9月18日の誕生花</li>
-      <li>花言葉は「尊敬」、気品ある花姿に由来する</li>
-      <li>落ち着いた紫色の気品が魅力</li>
-      <li>日当たりを好み、暑さに強い</li>
+      <li>サルビア（紫）は夏から秋に紫色の花を穂状に咲かせる、シソ科の植物で、9月18日の誕生花</li>
+      <li>花言葉は「尊敬」。まっすぐに立つ花穂の姿に由来すると言われる</li>
+      <li>凛とした佇まいを持つ花</li>
+      <li>静かな敬意の在り方を教えてくれる花</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0929/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月29日の誕生花アキノノゲシの花言葉・特徴・魅力をわかりやすく解説。「クールな恋」を象徴する淡い黄色の花の意味を紹介します。">
+  <meta name="description" content="9月29日の誕生花アキノノゲシの花言葉・特徴・魅力をわかりやすく解説。「クールな恋」を象徴する淡い黄色の野草の意味を紹介します。">
   <title>9月29日の誕生花はアキノノゲシ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アキノノゲシはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡い黄色の花を控えめに咲かせます。キク科の一年草・越年草です。"}},
-      {"@type":"Question","name":"アキノノゲシの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"淡い黄色の花を主張しすぎることなく静かに咲かせる涼しげな花姿が、熱くなりすぎないクールな恋心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アキノノゲシはレタスの仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。キク科の植物で、若い葉は食用にもなることからレタスに似た仲間として知られています。"}}
+      {"@type":"Question","name":"アキノノゲシの花はどんな色をしていますか？","acceptedAnswer":{"@type":"Answer","text":"秋の野に、淡い黄色の花を咲かせます。派手さのない、素朴で落ち着いた色合いです。"}},
+      {"@type":"Question","name":"アキノノゲシの花言葉『クールな恋』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"誰かと程よい距離を保ちながら咲く、淡い黄色の花の佇まいに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 29 · 誕生花</span>
     <h1>9月29日の誕生花はアキノノゲシ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アキノノゲシは、キク科の一年草・越年草で、秋に淡い黄色の花を控えめに咲かせる、涼しげで控えめな印象を漂わせる花です。花言葉は「クールな恋」。涼しげで控えめな花です。</p>
+    <p class="art-lead">秋の野に、淡い黄色の花がひっそりと咲いている。誰とも近づきすぎず、ほどよい距離を保って咲く。それが、9月29日の誕生花アキノノゲシの姿だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アキノノゲシとは</a></li>
-      <li><a href="#meaning">アキノノゲシが象徴する意味</a></li>
-      <li><a href="#charm">アキノノゲシの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月29日の誕生花として親しまれるアキノノゲシ</a></li>
+      <li><a href="#story">淡い黄色が保つ、クールな恋の距離感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アキノノゲシから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アキノノゲシとは</h2>
-    <p>アキノノゲシは、キク科の一年草・越年草で、9月29日の誕生花として知られています。秋に淡い黄色の花を控えめに咲かせる、涼しげで控えめな印象を漂わせる花です。</p>
-  </section>
+    <h2>9月29日の誕生花として親しまれるアキノノゲシ</h2>
+    <p>アキノノゲシは、キク科の一年草・越年草です。秋になると、淡い黄色の花を咲かせます。飾らない素朴な野草として親しまれ、9月29日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アキノノゲシが象徴する意味</h2>
-    <p>アキノノゲシの花言葉は「クールな恋」です。淡い黄色の花を主張しすぎることなく静かに咲かせる涼しげな花姿が、熱くなりすぎないクールな恋心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アキノノゲシの魅力</h2>
-    <p>アキノノゲシの魅力は、淡い黄色の花びらが持つ涼しげな清潔感と、秋の野原に自然に溶け込む素朴な佇まいにあります。9月29日生まれの方はもちろん、落ち着いた想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アキノノゲシは日当たりを好み、丈夫で育てやすいためやせた土地でも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月29日生まれの方はもちろん、落ち着いた想いを伝えたい贈り物としてもアキノノゲシは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アキノノゲシはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に淡い黄色の花を控えめに咲かせます。キク科の一年草・越年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アキノノゲシの花言葉の由来は何ですか？</div>
-        <div class="faq-a">淡い黄色の花を主張しすぎることなく静かに咲かせる涼しげな花姿が、熱くなりすぎないクールな恋心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アキノノゲシはレタスの仲間ですか？</div>
-        <div class="faq-a">はい。キク科の植物で、若い葉は食用にもなることからレタスに似た仲間として知られています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アキノノゲシの花はどんな色をしていますか？</div>
+        <div class="faq-a">秋の野に、淡い黄色の花を咲かせます。派手さのない、素朴で落ち着いた色合いです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>淡い黄色が保つ、クールな恋の距離感</h2>
+    <p>秋の野原に、アキノノゲシの花はひっそりと顔を出す。花びらは淡い黄色で、周囲の緑や枯れ始めた草の色にすっと馴染み、遠くから目立つことを好まない。近づいてよく見ると、キク科らしい細い花びらが並び、素朴でありながら整った形をしている。群れて咲き誇るというより、一つ一つが距離を保ちながら咲いているように見える。この、寄り添いすぎない淡い黄色の佇まいから、花言葉「クールな恋」は生まれたと言われている。誰かを想う気持ちにも、程よい距離という選び方がある。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アキノノゲシの花言葉『クールな恋』にはどんな由来がありますか？</div>
+        <div class="faq-a">誰かと程よい距離を保ちながら咲く、淡い黄色の花の佇まいに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>程よい距離を保ちながら、誰かを想う気持ちを大切にする。アキノノゲシの淡い黄色は、そうした穏やかな恋のかたちをそっと伝えている。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アキノノゲシから始める小さな体験</h2>
+    <p>淡い黄色の花を静かに咲かせるアキノノゲシにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>淡い黄色の花を探して観察してみる</li>
+      <li>落ち着いて物事を見つめる時間を少し持ってみる</li>
+      <li>野に咲く花のような、飾らない時間を過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かとの程よい距離を保ちたい日は、今日のラッキーカラーも覗いてみませんか。開運カレンダーでは、ラッキーカラーと星座を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>秋の野にひっそり咲く、淡い黄色の花。</p>
     <ul>
-      <li>アキノノゲシは秋に淡い黄色の花を咲かせる、9月29日の誕生花</li>
-      <li>花言葉は「クールな恋」、控えめに咲く花姿に由来する</li>
-      <li>涼しげな清潔感が魅力</li>
-      <li>日当たりを好み、丈夫で育てやすい</li>
+      <li>アキノノゲシは秋に淡い黄色の花を咲かせる、キク科の一年草・越年草で、9月29日の誕生花</li>
+      <li>花言葉は「クールな恋」。程よい距離を保ちながら咲く姿に由来すると言われる</li>
+      <li>素朴で控えめな野草として親しまれている</li>
+      <li>心地よい距離感を保つことの大切さを思わせる花</li>
     </ul>
   </section>
 

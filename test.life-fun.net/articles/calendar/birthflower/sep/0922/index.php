@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0922/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月22日の誕生花クジャクソウの花言葉・特徴・魅力をわかりやすく解説。「一目惚れ」を象徴するたくさんの小さな花の意味を紹介します。">
+  <meta name="description" content="9月22日の誕生花クジャクソウの花言葉・特徴・魅力をわかりやすく解説。「一目惚れ」を象徴する秋の小花の意味を紹介します。">
   <title>9月22日の誕生花はクジャクソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クジャクソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に小さな花をたくさん咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"クジャクソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花を一斉にたくさん咲かせ、見る人の目を瞬時に惹きつける華やかな花姿が、一目惚れの高揚感を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"クジャクソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小花が枝いっぱいに広がって咲く様子が、孔雀が羽を広げた姿に似ていることに由来すると言われています。"}}
+      {"@type":"Question","name":"クジャクソウという名前や『宿根アスター』という別名には、どんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が群れて咲く華やかな様子が孔雀の羽を思わせることから「クジャクソウ」と呼ばれ、毎年同じ根から花を咲かせる性質から「宿根アスター」とも呼ばれると言われています。"}},
+      {"@type":"Question","name":"クジャクソウの花言葉『一目惚れ』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が一斉に咲きそろい、目に留まった瞬間にぱっと心を惹きつける姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 22 · 誕生花</span>
     <h1>9月22日の誕生花はクジャクソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クジャクソウは、キク科の多年草で、秋に小さな花をたくさん咲かせる、華やかで愛らしい印象を与える花です。花言葉は「一目惚れ」。華やかで愛らしい花です。</p>
+    <p class="art-lead">小さな花が群れとなって咲きそろう瞬間、思わず目を奪われる。その主役こそ、9月22日の誕生花クジャクソウにほかならない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クジャクソウとは</a></li>
-      <li><a href="#meaning">クジャクソウが象徴する意味</a></li>
-      <li><a href="#charm">クジャクソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月22日の誕生花として親しまれるクジャクソウ</a></li>
+      <li><a href="#story">宿根アスターという名が導く、一目惚れの瞬間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クジャクソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クジャクソウとは</h2>
-    <p>クジャクソウは、キク科の多年草で、9月22日の誕生花として知られています。秋に小さな花をたくさん咲かせる、華やかで愛らしい印象を与える花です。</p>
-  </section>
+    <h2>9月22日の誕生花として親しまれるクジャクソウ</h2>
+    <p>クジャクソウは、キク科の多年草です。秋になると、小さな花をたくさん咲かせます。「宿根アスター」とも呼ばれる別名を持ち、9月22日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クジャクソウが象徴する意味</h2>
-    <p>クジャクソウの花言葉は「一目惚れ」です。小さな花を一斉にたくさん咲かせ、見る人の目を瞬時に惹きつける華やかな花姿が、一目惚れの高揚感を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クジャクソウの魅力</h2>
-    <p>クジャクソウの魅力は、無数の小花が株いっぱいに咲きそろう華やかさと、孔雀の羽を思わせるような広がりのある花姿にあります。9月22日生まれの方はもちろん、一目で惹かれた想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クジャクソウは日当たりを好み、丈夫で育てやすいため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月22日生まれの方はもちろん、一目で惹かれた想いを伝えたい贈り物としてもクジャクソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クジャクソウはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に小さな花をたくさん咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クジャクソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな花を一斉にたくさん咲かせ、見る人の目を瞬時に惹きつける華やかな花姿が、一目惚れの高揚感を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クジャクソウという名前の由来は何ですか？</div>
-        <div class="faq-a">小花が枝いっぱいに広がって咲く様子が、孔雀が羽を広げた姿に似ていることに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クジャクソウという名前や『宿根アスター』という別名には、どんな由来がありますか？</div>
+        <div class="faq-a">小さな花が群れて咲く華やかな様子が孔雀の羽を思わせることから「クジャクソウ」と呼ばれ、毎年同じ根から花を咲かせる性質から「宿根アスター」とも呼ばれると言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>宿根アスターという名が導く、一目惚れの瞬間</h2>
+    <p>クジャクソウには「宿根アスター」という別名がある。同じ根から毎年花を咲かせる性質を指す「宿根」という言葉に由来すると言われている。一方で「クジャクソウ」という和名は、小さな花が群れて咲く華やかな様子が、孔雀が羽を広げた姿を思わせることに由来すると言われている。秋になると、キク科らしい小さな花をいくつも咲かせ、庭先を一気ににぎやかにしてくれる。この、群れて咲いた瞬間にぱっと目を引く華やかさに、花言葉「一目惚れ」は由来すると言われている。理屈より先に心が動く、そんな瞬間の尊さに、あなたはいつ気づくだろうか。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クジャクソウの花言葉『一目惚れ』にはどんな由来がありますか？</div>
+        <div class="faq-a">小さな花が一斉に咲きそろい、目に留まった瞬間にぱっと心を惹きつける姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>理屈より先に、心がふっと動く瞬間がある。小さな花が群れて咲くクジャクソウを見ていると、そんな直感を信じてみたくなる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クジャクソウから始める小さな体験</h2>
+    <p>小さな花を群れで咲かせるクジャクソウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>小さな花がたくさん集まって咲く様子をじっくり観察してみる</li>
+      <li>直感的に惹かれたものを一つ大切にしてみる</li>
+      <li>宿根アスターという別名について調べてみる</li>
+    </ul>
+
+    <p class="cta-lead">心惹かれる出会いを大切にしたい日は、今日のラッキーナンバーも確認してみませんか。開運カレンダーでは、ラッキーナンバーと今月の誕生石を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな花が群れとなって咲き誇るクジャクソウは、秋の庭先を一気に華やかにしてくれる存在だ。</p>
     <ul>
-      <li>クジャクソウは秋に小さな花を咲かせる、9月22日の誕生花</li>
-      <li>花言葉は「一目惚れ」、一斉に咲く華やかさに由来する</li>
-      <li>華やかに咲きそろう花姿が魅力</li>
-      <li>日当たりを好み、丈夫で育てやすい</li>
+      <li>クジャクソウは秋に小さな花をたくさん咲かせる、キク科の多年草で、9月22日の誕生花</li>
+      <li>花言葉は「一目惚れ」。群れて咲きそろう華やかさに由来すると言われる</li>
+      <li>「宿根アスター」とも呼ばれる別名を持つ</li>
+      <li>理屈より先に心が動く瞬間の尊さを教えてくれる花</li>
     </ul>
   </section>
 

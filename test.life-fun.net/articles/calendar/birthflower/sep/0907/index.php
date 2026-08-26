@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0907/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月7日の誕生花ソバの花言葉・特徴・魅力をわかりやすく解説。「愛らしさ」を象徴する白い小花の意味を紹介します。">
+  <meta name="description" content="9月7日の誕生花ソバの花言葉・特徴・魅力をわかりやすく解説。「愛らしさ」を象徴する白い花の意味を紹介します。">
   <title>9月7日の誕生花はソバ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ソバはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に白い小花を一面に咲かせます。タデ科の一年草です。"}},
-      {"@type":"Question","name":"ソバの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな白い花を一面に咲かせ、実りとして人々の暮らしを支えてきた素朴な花姿が、飾らない愛らしさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ソバの花からどうやって蕎麦ができるのですか？","acceptedAnswer":{"@type":"Answer","text":"ソバの花が咲いた後にできる種子を収穫し、製粉することで蕎麦粉になります。"}}
+      {"@type":"Question","name":"ソバの花はどんな実になりますか？","acceptedAnswer":{"@type":"Answer","text":"白く小さな花が咲いたあとに実る種子が製粉され、私たちがよく口にする蕎麦になります。秋に花を咲かせるタデ科の一年草です。"}},
+      {"@type":"Question","name":"ソバの花言葉『愛らしさ』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"飾り気のない小さな白い花が、日々の暮らしの中の食文化と結びついていることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 7 · 誕生花</span>
     <h1>9月7日の誕生花はソバ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ソバは、タデ科の一年草で、秋に白い小花を一面に咲かせる、素朴で愛らしい印象を持つ花です。花言葉は「愛らしさ」。素朴で愛らしい花です。</p>
+    <p class="art-lead">食卓でおなじみのあの味の元をたどると、白く小さな花にたどり着く。畑いっぱいに咲く様子は、まるで白い霧がかかったようだ。この花の名はソバ、9月7日の誕生花である。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ソバとは</a></li>
-      <li><a href="#meaning">ソバが象徴する意味</a></li>
-      <li><a href="#charm">ソバの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月7日の誕生花として親しまれるソバ</a></li>
+      <li><a href="#story">食卓とつながる花が見せる、飾らない愛らしさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ソバから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ソバとは</h2>
-    <p>ソバは、タデ科の一年草で、9月7日の誕生花として知られています。秋に白い小花を一面に咲かせる、素朴で愛らしい印象を持つ花です。</p>
-  </section>
+    <h2>9月7日の誕生花として親しまれるソバ</h2>
+    <p>ソバは、タデ科の一年草です。秋になると、白く小さな花を無数に咲かせます。実が蕎麦として親しまれていることでもよく知られ、9月7日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ソバが象徴する意味</h2>
-    <p>ソバの花言葉は「愛らしさ」です。小さな白い花を一面に咲かせ、実りとして人々の暮らしを支えてきた素朴な花姿が、飾らない愛らしさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ソバの魅力</h2>
-    <p>ソバの魅力は、白く小さな花が一面に群れ咲く素朴な美しさと、実が蕎麦として食卓を彩る身近さにあります。9月7日生まれの方はもちろん、飾らない愛らしさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ソバは日当たりを好み、やせた土地でも育つほど丈夫なため水はけの良い場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月7日生まれの方はもちろん、飾らない愛らしさを伝えたい贈り物としてもソバは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ソバはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に白い小花を一面に咲かせます。タデ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ソバの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな白い花を一面に咲かせ、実りとして人々の暮らしを支えてきた素朴な花姿が、飾らない愛らしさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ソバの花からどうやって蕎麦ができるのですか？</div>
-        <div class="faq-a">ソバの花が咲いた後にできる種子を収穫し、製粉することで蕎麦粉になります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ソバの花はどんな実になりますか？</div>
+        <div class="faq-a">白く小さな花が咲いたあとに実る種子が製粉され、私たちがよく口にする蕎麦になります。秋に花を咲かせるタデ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>食卓とつながる花が見せる、飾らない愛らしさ</h2>
+    <p>ソバの花は、一つひとつがとても小さい。白い花びらが集まって咲く様子は、畑を遠目に見ると霧がかかったようにも映る。この花が実を結ぶと、それが製粉されて、私たちが日々の食卓で親しんでいる蕎麦になる。花を愛でるためだけの存在ではなく、暮らしの中に自然と溶け込んでいるところに、この花らしさがある。飾り立てることのない、素朴な白い花の姿は、花言葉「愛らしさ」がよく似合う。特別な華やかさではなく、日常のそばにあるからこそ感じられる愛らしさだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ソバの花言葉『愛らしさ』にはどんな由来がありますか？</div>
+        <div class="faq-a">飾り気のない小さな白い花が、日々の暮らしの中の食文化と結びついていることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>特別なことをしなくても、日常の中にはすでに愛らしいものがたくさんある。今日食べるものや、いつもの景色を、少しだけ丁寧に味わってみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ソバから始める小さな体験</h2>
+    <p>小さな白い花を無数に咲かせ、暮らしの中で親しまれてきたソバにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い小花が集まって咲く様子をじっくり観察してみる</li>
+      <li>蕎麦を一杯、味わってみる</li>
+      <li>飾らない自分らしさを一つ大切にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">暮らしの中の小さな愛らしさに気づきたい日は、今月の誕生石も見てみませんか。開運カレンダーでは、今月の誕生石と六曜を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>花よりも先に蕎麦を思い浮かべる人も多いだろうが、その素朴な白い花にこそ「愛らしさ」が宿っている。</p>
     <ul>
-      <li>ソバは秋に白い小花を咲かせる、9月7日の誕生花</li>
-      <li>花言葉は「愛らしさ」、実りを支える花姿に由来する</li>
-      <li>一面に咲く素朴な美しさが魅力</li>
-      <li>日当たりを好み、やせた土地でも育つ</li>
+      <li>ソバは秋に白い小花を咲かせる、タデ科の一年草で、9月7日の誕生花</li>
+      <li>花言葉は「愛らしさ」。飾り気のない花と暮らしとのつながりに由来すると言われる</li>
+      <li>実は製粉され、蕎麦として日々の食卓に親しまれている</li>
+      <li>華やかさではなく、日常に寄り添う素朴さが魅力</li>
     </ul>
   </section>
 

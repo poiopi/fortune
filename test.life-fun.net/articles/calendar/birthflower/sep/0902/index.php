@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0902/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月2日の誕生花キクの花言葉・特徴・魅力をわかりやすく解説。「信頼」を象徴する多彩な花形の花の意味を紹介します。">
+  <meta name="description" content="9月2日の誕生花キクの花言葉・特徴・魅力をわかりやすく解説。「信頼」を象徴する気品ある花の意味を紹介します。">
   <title>9月2日の誕生花はキク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に多彩な花形と色の花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"キクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"古くから日本の伝統文化に根差し、季節が巡っても変わらず美しく咲き続ける姿が、揺るぎない信頼を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"キクにはどんな種類がありますか？","acceptedAnswer":{"@type":"Answer","text":"大輪の一輪菊から小さな花をたくさん咲かせる小菊まで、花形や大きさの異なる多彩な品種があります。"}}
+      {"@type":"Question","name":"キクはどんな花の形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"幾重にも花びらが重なる、丸く気品のある花形が特徴です。色や形の異なる品種が数多く存在します。"}},
+      {"@type":"Question","name":"キクの花言葉『信頼』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"季節の移ろいに合わせて着実に花開き、古くから日本の伝統文化に根差した気品ある花として大切にされてきたことに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 2 · 誕生花</span>
     <h1>9月2日の誕生花はキク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キクは、キク科の多年草で、秋に多彩な花形と色の花を咲かせる、気品ある印象を漂わせる花です。花言葉は「信頼」。気品ある花です。</p>
+    <p class="art-lead">夏の名残がまだ肌に残る頃、少しずつ空気が澄んでくる。そんな季節の変わり目に静かに咲き始めるキクを、9月2日は誕生花に持つ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キクとは</a></li>
-      <li><a href="#meaning">キクが象徴する意味</a></li>
-      <li><a href="#charm">キクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月2日の誕生花として親しまれるキク</a></li>
+      <li><a href="#story">夏から秋へ、移ろう空気の中で深まる信頼</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キクとは</h2>
-    <p>キクは、キク科の多年草で、9月2日の誕生花として知られています。秋に多彩な花形と色の花を咲かせる、気品ある印象を漂わせる花です。</p>
-  </section>
+    <h2>9月2日の誕生花として親しまれるキク</h2>
+    <p>キクは、キク科の多年草です。秋になると、幾重にも花びらを重ねた花を、多彩な形と色で咲かせます。日本の伝統文化に根差した気品ある花として古くから親しまれ、9月2日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キクが象徴する意味</h2>
-    <p>キクの花言葉は「信頼」です。古くから日本の伝統文化に根差し、季節が巡っても変わらず美しく咲き続ける姿が、揺るぎない信頼を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キクの魅力</h2>
-    <p>キクの魅力は、一輪咲きから小菊まで多彩な花形と、凛とした気品ある佇まいにあります。日本の秋を代表する花として、古くから親しまれています。 9月2日生まれの方はもちろん、揺るぎない信頼の想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キクは日当たりと風通しの良い場所を好み、過湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月2日生まれの方はもちろん、揺るぎない信頼の想いを伝えたい贈り物としてもキクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キクはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に多彩な花形と色の花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">古くから日本の伝統文化に根差し、季節が巡っても変わらず美しく咲き続ける姿が、揺るぎない信頼を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キクにはどんな種類がありますか？</div>
-        <div class="faq-a">大輪の一輪菊から小さな花をたくさん咲かせる小菊まで、花形や大きさの異なる多彩な品種があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キクはどんな花の形をしていますか？</div>
+        <div class="faq-a">幾重にも花びらが重なる、丸く気品のある花形が特徴です。色や形の異なる品種が数多く存在します。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏から秋へ、移ろう空気の中で深まる信頼</h2>
+    <p>夏の強い日差しが少しずつ和らいでいく頃、キクは静かに蕾をふくらませ始める。気温が下がり、空気が澄んでいくのに合わせるように、花びらは幾重にも重なりながら開いていく。この移ろいの中でゆっくりと咲く姿は、慌ただしさとは無縁だ。花の形は品種によって実にさまざまで、丸く整ったものもあれば、糸のように繊細に裂けたものもある。それでもどれも共通して、気品を感じさせる佇まいを持つ。花言葉「信頼」は、この季節の移ろいに逆らわず、着実に花開いていく姿から生まれたのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キクの花言葉『信頼』にはどんな由来がありますか？</div>
+        <div class="faq-a">季節の移ろいに合わせて着実に花開き、古くから日本の伝統文化に根差した気品ある花として大切にされてきたことに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>積み重ねてきた時間は、静かに人を支える土台になる。急がずに続けてきたことがあるなら、それはもう十分に誇っていい。焦らず重ねてきたその歩みを、今日は少し振り返ってみようか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キクから始める小さな体験</h2>
+    <p>季節の移ろいに合わせて静かに花開くキクにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>多彩な花形のキクを探して観察してみる</li>
+      <li>自分が大切にしている習慣を一つ振り返ってみる</li>
+      <li>秋の空気を感じながら少し外を歩いてみる</li>
+    </ul>
+
+    <p class="cta-lead">季節の移ろいを感じながら過ごしたい日は、今日の月齢もあわせてチェックしてみませんか。開運カレンダーでは、月齢・月相とおすすめアイテムを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>急がず、季節の歩みに合わせて花開いていくキク。そこに寄り添うのは、「信頼」というゆるぎない一言。</p>
     <ul>
-      <li>キクは秋に色とりどりの花を咲かせる、9月2日の誕生花</li>
-      <li>花言葉は「信頼」、変わらず咲き続ける姿に由来する</li>
-      <li>多彩な花形と気品が魅力</li>
-      <li>日当たりと風通しの良い場所を好み、過湿を避ける</li>
+      <li>キクは秋に多彩な花形と色で咲く、キク科の多年草で、9月2日の誕生花</li>
+      <li>花言葉は「信頼」。季節の移ろいに合わせて着実に咲く姿に由来すると言われる</li>
+      <li>日本の伝統文化に根差した気品ある花として古くから親しまれてきた</li>
+      <li>積み重ねてきた時間を静かに誇らせてくれる存在</li>
     </ul>
   </section>
 
