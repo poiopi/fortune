@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マリーゴールドはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に橙黄色の花を長期間咲かせ続けます。キク科の一年草です。"}},
-      {"@type":"Question","name":"マリーゴールドの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて長期間橙黄色の花を咲かせ続ける姿が、揺るがない信頼を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"マリーゴールドはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすく、花壇や鉢植え、コンパニオンプランツとしても幅広く利用されています。"}}
+      {"@type":"Question","name":"マリーゴールドの見頃はいつ頃まで続きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に咲き始め、涼しくなるにつれて花数は徐々に減っていきます。11月の終わりごろは、そのシーズンもそろそろ締めくくりを迎える時期です。"}},
+      {"@type":"Question","name":"マリーゴールドの花言葉「信頼」はどのような由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"橙黄色の花を、季節をまたいでもなお咲かせ続ける粘り強さが、揺るがない信頼の象徴とされたことに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 29 · 誕生花</span>
     <h1>11月29日の誕生花はマリーゴールド<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マリーゴールドは、キク科の一年草で、夏から秋に橙黄色の花を長期間咲かせ続ける、明るく元気な印象を持つ花です。花言葉は「信頼」。明るい花です。</p>
+    <p class="art-lead">橙黄色の花が、晩秋の陽射しの中でなお咲き残っている。マリーゴールドは夏の初めから休みなく咲き続けてきたキク科の一年草で、11月29日を迎えてもなお、その名残を花壇に留めている株がある。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マリーゴールドとは</a></li>
-      <li><a href="#meaning">マリーゴールドが象徴する意味</a></li>
-      <li><a href="#charm">マリーゴールドの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月29日の誕生花として親しまれるマリーゴールド</a></li>
+      <li><a href="#story">夏の彩りが、晩秋の今も名残を見せる</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マリーゴールドから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マリーゴールドとは</h2>
-    <p>マリーゴールドは、キク科の一年草で、11月29日の誕生花として知られています。夏から秋に橙黄色の花を長期間咲かせ続ける、明るく元気な印象を持つ花です。</p>
-  </section>
+    <h2>11月29日の誕生花として親しまれるマリーゴールド</h2>
+    <p>マリーゴールドは、キク科の一年草として知られる、11月29日の誕生花です。夏から秋にかけて、橙黄色の花を息長く咲かせることから、明るく元気な印象を持つ花として親しまれています。花言葉は「信頼」。11月29日は、その開花シーズンが終盤へ近づく時期にあたります。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マリーゴールドが象徴する意味</h2>
-    <p>マリーゴールドの花言葉は「信頼」です。夏から秋にかけて長期間橙黄色の花を咲かせ続ける姿が、揺るがない信頼を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マリーゴールドの魅力</h2>
-    <p>マリーゴールドの魅力は、橙黄色の花が持つ明るく元気な印象と、長期間咲き続ける丈夫さにあります。11月29日生まれの方はもちろん、信頼の想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マリーゴールドは日当たりの良い場所を好み、こまめな水やりを心がけると長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月29日生まれの方はもちろん、信頼の想いを伝えたい贈り物としてもマリーゴールドは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マリーゴールドはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に橙黄色の花を長期間咲かせ続けます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マリーゴールドの花言葉の由来は何ですか？</div>
-        <div class="faq-a">夏から秋にかけて長期間橙黄色の花を咲かせ続ける姿が、揺るがない信頼を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マリーゴールドはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">丈夫で育てやすく、花壇や鉢植え、コンパニオンプランツとしても幅広く利用されています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マリーゴールドの見頃はいつ頃まで続きますか？</div>
+        <div class="faq-a">夏に咲き始め、涼しくなるにつれて花数は徐々に減っていきます。11月の終わりごろは、そのシーズンもそろそろ締めくくりを迎える時期です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏の彩りが、晩秋の今も名残を見せる</h2>
+    <p>庭先やプランターの隅に、橙黄色の花がぽつりぽつりと残っている。真夏の盛りに咲き始めたマリーゴールドは、季節が進み気温が下がってきた今も、すぐにはその花を手放そうとしない。キク科の一年草であるこの花は、一つの株が長い期間にわたって新しい花をつけ続ける性質を持ち、初夏から数えて幾月もの間、絶え間なく彩りを保ち続けてきた。次々と花が入れ替わりながらも、株全体としては咲き続けているこの根気強さは、一度交わした約束を守り抜く誠実さにも似ている。「信頼」という花言葉は、そうした咲きぶりから生まれたのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マリーゴールドの花言葉「信頼」はどのような由来がありますか？</div>
+        <div class="faq-a">橙黄色の花を、季節をまたいでもなお咲かせ続ける粘り強さが、揺るがない信頼の象徴とされたことに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今日という一日も、これまで積み重ねてきた小さな約束の続きにある。誰かに向けた信頼は、一度の言葉より、重ねてきた時間の分だけ厚みを増していく。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マリーゴールドから始める小さな体験</h2>
+    <p>橙色の花をずっと咲かせてきたマリーゴールドのように、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>橙黄色の花の色をじっくり眺めてみる</li>
+      <li>信頼している人に、感謝の気持ちを伝えてみる</li>
+      <li>約束したことを一つ、きちんと守ってみる</li>
+    </ul>
+
+    <p class="cta-lead">今日がどんな運気の巡りにあるか気になる方は、開運カレンダーで月齢もあわせて確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>信頼という言葉は、一度の約束より、重ねてきた日々の中でこそ育っていくのかもしれない。マリーゴールドは、そんなことをそっと教えてくれる花だ。</p>
     <ul>
-      <li>マリーゴールドは夏から秋に橙黄色の花を咲かせ続ける、11月29日の誕生花</li>
-      <li>花言葉は「信頼」、長期間咲き続ける姿に由来する</li>
-      <li>明るく元気な印象と丈夫さが魅力</li>
-      <li>日当たりの良い場所を好み、こまめな水やりを心がけると長く花を楽しめます</li>
+      <li>マリーゴールドは、キク科の一年草で、夏から秋にかけて橙色の花を絶やさず咲き続ける、11月29日の誕生花</li>
+      <li>花言葉は「信頼」。幾月もの間、花を絶やすことなく咲きつづけたその芯の強さに由来すると言われる</li>
+      <li>地域や環境によっては、11月29日時点ですでに花を終えている場合もあります</li>
+      <li>橙黄色の花のように、信頼をコツコツと育てていきたい日に、寄り添ってくれる花です</li>
     </ul>
   </section>
 

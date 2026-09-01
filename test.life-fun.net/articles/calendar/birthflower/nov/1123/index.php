@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1123/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月23日の誕生花バラ（白）の花言葉・特徴・魅力をわかりやすく解説。「よみがえる愛」を象徴する白い花の意味を紹介します。">
+  <meta name="description" content="11月23日の誕生花バラ（白）の花言葉・特徴・魅力をわかりやすく解説。「よみがえる愛」を象徴する清らかな白い花を咲かせる落葉低木の意味を紹介します。">
   <title>11月23日の誕生花はバラ（白）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バラ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"清らかな白い花を咲かせます。バラ科の落葉低木です。"}},
-      {"@type":"Question","name":"バラ（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"清らかな白い花びらが咲きそろう姿が、色褪せない愛がよみがえる様子を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"白いバラにはどんな花言葉がありますか？","acceptedAnswer":{"@type":"Answer","text":"「よみがえる愛」のほか、「純潔」や「あなたを尊敬します」といった意味も込められています。"}}
+      {"@type":"Question","name":"バラ（白）はどんな花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"幾重にも重なる清らかな白い花びらを持つ、バラ科の落葉低木です。芳香を漂わせながら華やかに咲きます。"}},
+      {"@type":"Question","name":"バラ（白）の花言葉「よみがえる愛」は何に由来していますか？","acceptedAnswer":{"@type":"Answer","text":"何ものにも染まっていない白という色が、失われた想いの回帰を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 23 · 誕生花</span>
     <h1>11月23日の誕生花はバラ（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バラ（白）は、バラ科の落葉低木で、清らかな白い花を咲かせる、清らかで気高い印象を持つ花です。花言葉は「よみがえる愛」。気高い花です。</p>
+    <p class="art-lead">結婚式のブーケや記念日の贈り物に、白いバラを選んだ経験がある人もいるだろう。バラ科の落葉低木であるこの花の見頃は初夏が中心だが、幾重にも重なる純白の花びらが思わせる清らかさは、11月23日という一日にもよく似合う。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>バラ（白）</dd>
     <dt>花言葉</dt><dd>よみがえる愛</dd>
     <dt>科名</dt><dd>バラ科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>初夏</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バラ（白）とは</a></li>
-      <li><a href="#meaning">バラ（白）が象徴する意味</a></li>
-      <li><a href="#charm">バラ（白）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月23日の誕生花として親しまれるバラ（白）</a></li>
+      <li><a href="#story">白という色に宿る、静けさと気高さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バラ（白）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バラ（白）とは</h2>
-    <p>バラ（白）は、バラ科の落葉低木で、11月23日の誕生花として知られています。清らかな白い花を咲かせる、清らかで気高い印象を持つ花です。</p>
-  </section>
+    <h2>11月23日の誕生花として親しまれるバラ（白）</h2>
+    <p>バラ（白）は、バラ科の落葉低木として知られる、11月23日の誕生花です。花が咲くのは初夏が中心ですが、幾重にも重なる清らかな白い花びらにちなみ、よみがえる愛を象徴する花としてこの日に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バラ（白）が象徴する意味</h2>
-    <p>バラ（白）の花言葉は「よみがえる愛」です。清らかな白い花びらが咲きそろう姿が、色褪せない愛がよみがえる様子を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バラ（白）の魅力</h2>
-    <p>バラ（白）の魅力は、幾重にも重なる白い花びらが持つ清らかな美しさと、気高く咲きそろう凛とした佇まいにあります。11月23日生まれの方はもちろん、よみがえる愛を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バラは日当たりと風通しの良い場所を好み、こまめな剪定を行うと管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月23日生まれの方はもちろん、よみがえる愛を伝えたい贈り物としてもバラ（白）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">清らかな白い花を咲かせます。バラ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">清らかな白い花びらが咲きそろう姿が、色褪せない愛がよみがえる様子を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">白いバラにはどんな花言葉がありますか？</div>
-        <div class="faq-a">「よみがえる愛」のほか、「純潔」や「あなたを尊敬します」といった意味も込められています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（白）はどんな花を咲かせますか？</div>
+        <div class="faq-a">幾重にも重なる清らかな白い花びらを持つ、バラ科の落葉低木です。芳香を漂わせながら華やかに咲きます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白という色に宿る、静けさと気高さ</h2>
+    <p>純白の花びらが幾重にも重なって開くと、そこには他の色にはない静けさと気高さが漂う。バラ科の落葉低木であるバラが花を咲かせるのは初夏が中心で、香り高い花びらを幾重にも重ねながら、華やかさと気品を兼ね備えた姿を見せる。白という色は、何かで染まる前の潔白さや、一度失われたものが元の姿に戻る様子を思わせることがある。この清らかな白さが、「よみがえる愛」という花言葉が生まれた理由になっている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（白）の花言葉「よみがえる愛」は何に由来していますか？</div>
+        <div class="faq-a">何ものにも染まっていない白という色が、失われた想いの回帰を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>白いバラの香りには、遠ざかっていた記憶をそっと呼び戻す力がある。ふと思い出した誰かの顔を、今日はやさしく思い浮かべてみる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バラ（白）から始める小さな体験</h2>
+    <p>幾重にも重なる白い花びらを清らかに咲かせるバラ（白）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>幾重にも重なる白い花びらを、光にかざしてじっくり眺めてみる</li>
+      <li>白い花の清らかな香りを、そっと想像してみる</li>
+      <li>大切だった気持ちを一つ、思い出してみる</li>
+    </ul>
+
+    <p class="cta-lead">気持ちを新たに一日を始めたい日は、開運カレンダーで今日のラッキーフードもチェックしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤いバラが情熱を語るなら、白いバラは静けさの中の気高さを語る。</p>
     <ul>
-      <li>バラ（白）は清らかな白い花を咲かせる、11月23日の誕生花</li>
-      <li>花言葉は「よみがえる愛」、咲きそろう清らかな白い花びらに由来する</li>
-      <li>幾重にも重なる花びらの気高い美しさが魅力</li>
-      <li>日当たりと風通しの良い場所を好み、こまめな剪定を行うと管理するとよく育ちます</li>
+      <li>バラ（白）は、バラ科の落葉低木で、幾重にも重なる清らかな白い花を咲かせる、11月23日の誕生花</li>
+      <li>花言葉は「よみがえる愛」。何にも染まらないまっさらな白さに由来すると言われる</li>
+      <li>花が咲くのは初夏が中心だが、その清らかな白さにちなんでこの日の誕生花に選ばれている</li>
+      <li>遠ざかっていた想いに、そっと向き合いたい日に寄り添う花</li>
     </ul>
   </section>
 

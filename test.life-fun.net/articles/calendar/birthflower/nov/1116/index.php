@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1116/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月16日の誕生花ワレモコウの花言葉・特徴・魅力をわかりやすく解説。「変化」を象徴する暗紅色の花の意味を紹介します。">
+  <meta name="description" content="11月16日の誕生花ワレモコウの花言葉・特徴・魅力をわかりやすく解説。「変化」を象徴する秋に暗紅色の穂を咲かせる多年草の意味を紹介します。">
   <title>11月16日の誕生花はワレモコウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ワレモコウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に暗紅色の小さな穂状の花を咲かせます。バラ科の多年草です。"}},
-      {"@type":"Question","name":"ワレモコウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋に暗紅色の穂状の花を咲かせ、季節の移ろいとともに趣を変えていく渋い佇まいが、変化を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ワレモコウはどんな場所で見られますか？","acceptedAnswer":{"@type":"Answer","text":"山野の草地に自生し、秋の茶花や生け花にも渋い風情を添える花として親しまれています。"}}
+      {"@type":"Question","name":"ワレモコウの花はどんな色をしていますか？","acceptedAnswer":{"@type":"Answer","text":"暗紅色の小さな花が穂状に集まって咲きます。バラ科の多年草です。"}},
+      {"@type":"Question","name":"ワレモコウの花言葉「変化」はなぜこの花についたのですか？","acceptedAnswer":{"@type":"Answer","text":"地味な色合いから少しずつ移り変わっていく穂の様子が、変化という言葉に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 16 · 誕生花</span>
     <h1>11月16日の誕生花はワレモコウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ワレモコウは、バラ科の多年草で、秋に暗紅色の小さな穂状の花を咲かせる、渋く落ち着いた印象を持つ花です。花言葉は「変化」。渋みのある花です。</p>
+    <p class="art-lead">紅葉が進む野原の片隅で、暗紅色の小さな穂が風に揺れているのを見かけることがある——そんな光景に出会うのが、11月16日という日だ。バラ科の多年草、ワレモコウは地味ながら味わい深い秋の代表格である。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ワレモコウとは</a></li>
-      <li><a href="#meaning">ワレモコウが象徴する意味</a></li>
-      <li><a href="#charm">ワレモコウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月16日の誕生花として親しまれるワレモコウ</a></li>
+      <li><a href="#story">枯れゆく野に残る、暗紅色の穂</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ワレモコウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ワレモコウとは</h2>
-    <p>ワレモコウは、バラ科の多年草で、11月16日の誕生花として知られています。秋に暗紅色の小さな穂状の花を咲かせ、渋く落ち着いた秋の印象を与える花です。</p>
-  </section>
+    <h2>11月16日の誕生花として親しまれるワレモコウ</h2>
+    <p>ワレモコウは、バラ科の多年草として知られる、11月16日の誕生花です。秋になると暗紅色の小さな穂状の花を咲かせ、周囲が枯れ色を帯びていくなかで渋い存在感を放ちます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ワレモコウが象徴する意味</h2>
-    <p>ワレモコウの花言葉は「変化」です。秋に暗紅色の穂状の花を咲かせ、季節の移ろいとともに趣を変えていく渋い佇まいが、変化を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ワレモコウの魅力</h2>
-    <p>ワレモコウの魅力は、暗紅色の穂状の花が持つ渋い美しさと、季節の移ろいとともに表情を変える趣深さにあります。11月16日生まれの方はもちろん、移りゆく想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ワレモコウは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月16日生まれの方はもちろん、移りゆく想いを伝えたい贈り物としてもワレモコウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ワレモコウはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に暗紅色の小さな穂状の花を咲かせます。バラ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ワレモコウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋に暗紅色の穂状の花を咲かせ、季節の移ろいとともに趣を変えていく渋い佇まいが、変化を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ワレモコウはどんな場所で見られますか？</div>
-        <div class="faq-a">山野の草地に自生し、秋の茶花や生け花にも渋い風情を添える花として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ワレモコウの花はどんな色をしていますか？</div>
+        <div class="faq-a">暗紅色の小さな花が穂状に集まって咲きます。バラ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>枯れゆく野に残る、暗紅色の穂</h2>
+    <p>秋が深まる野原に立つと、暗紅色の小さな穂が風に揺れているのを見かけることがある。バラ科の多年草、ワレモコウが花を咲かせるのはこの時期で、周囲の草木が色を失っていくなかで、渋く落ち着いた色合いだけがひっそりと存在感を放つ。派手さのない小さな一輪だが、よく見ると穂には無数の粒がびっしりと並び、少しずつ色づき方を変えている。この目立たないながら着実に移り変わっていく様子に、「変化」という花言葉は由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ワレモコウの花言葉「変化」はなぜこの花についたのですか？</div>
+        <div class="faq-a">地味な色合いから少しずつ移り変わっていく穂の様子が、変化という言葉に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>気づかないうちに、人の心は少しずつ形を変えていく。静かな変化にも、確かな前進としての価値がある。今日という日を、そんな移ろいの記録として心に留めておきたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ワレモコウから始める小さな体験</h2>
+    <p>地味な色合いから少しずつ移ろっていくワレモコウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>穂状の花の色や形をじっくり観察してみる</li>
+      <li>少しずつ変わってきた自分に気づいてみる</li>
+      <li>秋の空気の移ろいを感じながら過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">小さな変化のサインを見逃したくない日は、開運カレンダーで今日の六曜も確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>地味に見えて、実はどこか惹きつけられる——暗紅色の穂に、そんな不思議な魅力はないだろうか。</p>
     <ul>
-      <li>ワレモコウは秋に暗紅色の穂状の花を咲かせる、11月16日の誕生花</li>
-      <li>花言葉は「変化」、季節とともに趣を変える渋い佇まいに由来する</li>
-      <li>暗紅色の穂状の花が持つ渋い美しさが魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ワレモコウは、バラ科の多年草で、秋に暗紅色の小さな穂状の花を咲かせる、11月16日の誕生花</li>
+      <li>花言葉は「変化」。目立たないながら着実に移り変わる姿に由来すると言われる</li>
+      <li>周囲が枯れ色を帯びていくなかで、渋く落ち着いた存在感を放つ</li>
+      <li>静かな変化を受け入れたい日に寄り添う花</li>
     </ul>
   </section>
 

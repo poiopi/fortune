@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1115/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月15日の誕生花モレアの花言葉・特徴・魅力をわかりやすく解説。「豊かな感性」を象徴する繊細な花の意味を紹介します。">
+  <meta name="description" content="11月15日の誕生花モレアの花言葉・特徴・魅力をわかりやすく解説。「豊かな感性」を象徴するアヤメに似た花を次々に咲かせる多年草の意味を紹介します。">
   <title>11月15日の誕生花はモレア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"モレアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏にアヤメに似た花を咲かせます。アヤメ科の多年草です。"}},
-      {"@type":"Question","name":"モレアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"初夏にアヤメを思わせる繊細な花を咲かせる姿が、豊かな感性を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"モレアはアヤメとどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"見た目はアヤメによく似ていますが、モレアは南アフリカ原産で、一日花を次々に咲かせる点が特徴です。"}}
+      {"@type":"Question","name":"モレアとはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"アヤメ科の多年草で、アヤメによく似た花を初夏に咲かせます。アフリカ原産の植物です。"}},
+      {"@type":"Question","name":"モレアの花言葉「豊かな感性」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"同じ表情を繰り返さず、その時々で違う印象を残していく、この花特有の咲きぶりに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 15 · 誕生花</span>
     <h1>11月15日の誕生花はモレア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">モレアは、アヤメ科の多年草で、初夏にアヤメに似た花を咲かせる、繊細で感性豊かな印象を持つ花です。花言葉は「豊かな感性」。繊細な花です。</p>
+    <p class="art-lead">「豊かな感性」。モレアに添えられたこの花言葉は、一日ごとに表情を変えながら次々と花開く、その移ろいやすい咲き方によく表れている。アヤメ科の多年草で、花の盛りは初夏を迎えるものの、この繊細な咲き方が、11月15日という一日に息づいている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">モレアとは</a></li>
-      <li><a href="#meaning">モレアが象徴する意味</a></li>
-      <li><a href="#charm">モレアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月15日の誕生花として親しまれるモレア</a></li>
+      <li><a href="#story">アヤメに似て、アヤメでない花のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、モレアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>モレアとは</h2>
-    <p>モレアは、アヤメ科の多年草で、11月15日の誕生花として知られています。初夏にアヤメに似た花を咲かせる、繊細で感性豊かな印象を持つ花です。</p>
-  </section>
+    <h2>11月15日の誕生花として親しまれるモレア</h2>
+    <p>モレアは、アヤメ科の多年草として知られる、11月15日の誕生花です。花が咲くのは初夏ですが、アヤメを思わせる繊細な花姿にちなみ、感性を象徴する花としてこの日に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>モレアが象徴する意味</h2>
-    <p>モレアの花言葉は「豊かな感性」です。初夏にアヤメを思わせる繊細な花を咲かせる姿が、豊かな感性を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>モレアの魅力</h2>
-    <p>モレアの魅力は、アヤメを思わせる繊細な花姿と、次々に花を咲かせ続ける瑞々しい生命力にあります。11月15日生まれの方はもちろん、豊かな感性を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>モレアは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月15日生まれの方はもちろん、豊かな感性を伝えたい贈り物としてもモレアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モレアはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏にアヤメに似た花を咲かせます。アヤメ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モレアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">初夏にアヤメを思わせる繊細な花を咲かせる姿が、豊かな感性を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モレアはアヤメとどう違いますか？</div>
-        <div class="faq-a">見た目はアヤメによく似ていますが、モレアは南アフリカ原産で、一日花を次々に咲かせる点が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">モレアとはどんな植物ですか？</div>
+        <div class="faq-a">アヤメ科の多年草で、アヤメによく似た花を初夏に咲かせます。アフリカ原産の植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>アヤメに似て、アヤメでない花のかたち</h2>
+    <p>モレアの花は、三枚の大きな花びらが放射状に開き、遠目にはアヤメとよく似た印象を与える。近づいてよく見ると、花びらの付け根に入る細かな模様や、中心からのぞく小さな突起など、アヤメにはない繊細なつくりに気づく。アヤメ科の多年草であるモレアが花を咲かせるのは初夏で、一つの花は一日ほどで萎み、次々と新しいつぼみに入れ替わっていく。この移ろいやすく、それでいて丁寧に姿を変えていく咲き方が、「豊かな感性」という花言葉によく合う。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">モレアの花言葉「豊かな感性」はどのように結びついていますか？</div>
+        <div class="faq-a">同じ表情を繰り返さず、その時々で違う印象を残していく、この花特有の咲きぶりに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かの表情のわずかな変化に気づいたなら、それはあなたの中で繊細な感受性が静かに働いている証拠だ。今日感じた小さな心の揺れを、大切に覚えておこう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、モレアから始める小さな体験</h2>
+    <p>近づくたびに新しい表情を見せてくれるモレアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>アヤメに似た花の形をじっくり見比べてみる</li>
+      <li>青紫や橙、黄色といったモレアの花色を、今日の装いや持ち物に取り入れてみる</li>
+      <li>美しいと感じたものを一つ、書き留めてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分自身の内面をもっと知りたい日は、開運カレンダーで今年の星座の傾向もあわせてチェックしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一日で表情を変え、また新しく咲く。そんな繊細な咲き方をする花が、ほかにあるだろうか。</p>
     <ul>
-      <li>モレアは初夏にアヤメに似た花を咲かせる、11月15日の誕生花</li>
-      <li>花言葉は「豊かな感性」、繊細な花姿に由来する</li>
-      <li>次々に花を咲かせ続ける瑞々しい生命力が魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>モレアは、アヤメ科の多年草で、アヤメに似た花を次々に咲かせる、11月15日の誕生花</li>
+      <li>花言葉は「豊かな感性」。次々と表情を変える花のうつろいに由来すると言われる</li>
+      <li>花が咲くのは初夏だが、その花姿にちなんでこの日の誕生花に選ばれている</li>
+      <li>小さな心の動きを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

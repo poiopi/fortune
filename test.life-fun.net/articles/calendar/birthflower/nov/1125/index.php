@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1125/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月25日の誕生花コチョウランの花言葉・特徴・魅力をわかりやすく解説。「永久の愛」を象徴する優雅な花の意味を紹介します。">
+  <meta name="description" content="11月25日の誕生花コチョウランの花言葉・特徴・魅力をわかりやすく解説。「永久の愛」を象徴する一年を通して咲き続けるランの意味を紹介します。">
   <title>11月25日の誕生花はコチョウラン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コチョウランはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して蝶が舞うような花を長期間咲かせ続けます。ラン科の着生植物です。"}},
-      {"@type":"Question","name":"コチョウランの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して蝶が舞うような花を長く咲かせ続ける姿が、永久に変わらない愛を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"コチョウランはどんな場面で贈られることが多いですか？","acceptedAnswer":{"@type":"Answer","text":"花が長く咲き続けることから、開店祝いや就任祝いなど、お祝いの贈り物として人気です。"}}
+      {"@type":"Question","name":"コチョウランはどのくらいの期間花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して花を咲かせ続ける、ラン科の着生植物です。優雅で気品ある印象を持ちます。"}},
+      {"@type":"Question","name":"コチョウランの花言葉「永久の愛」はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"いつ見ても同じ表情で出迎えてくれる、その安定した美しさに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 25 · 誕生花</span>
     <h1>11月25日の誕生花はコチョウラン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コチョウランは、ラン科の着生植物で、一年を通して蝶が舞うような花を長期間咲かせ続ける、優雅で気品ある印象を持つ花です。花言葉は「永久の愛」。優雅な花です。</p>
+    <p class="art-lead">開店祝いや就任祝いの贈り物として、コチョウランを目にしたことがある人は多いだろう。ラン科の着生植物であるこの花に「永久の愛」という花言葉を授けたのは、蝶が羽を広げたような花びらの形を一年を通して崩さない、その揺るぎない強さだ。11月25日を彩る、変わらぬ一輪。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>コチョウラン</dd>
     <dt>花言葉</dt><dd>永久の愛</dd>
     <dt>科名</dt><dd>ラン科</dd>
-    <dt>見頃</dt><dd>通年</dd>
+    <dt>見頃</dt><dd>周年（一年中）</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コチョウランとは</a></li>
-      <li><a href="#meaning">コチョウランが象徴する意味</a></li>
-      <li><a href="#charm">コチョウランの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月25日の誕生花として親しまれるコチョウラン</a></li>
+      <li><a href="#story">蝶が羽を広げたような、花びらの構造美</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、コチョウランから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コチョウランとは</h2>
-    <p>コチョウランは、ラン科の着生植物で、11月25日の誕生花として知られています。一年を通して蝶が舞うような花を長期間咲かせ続ける、優雅で気品ある印象を持つ花です。</p>
-  </section>
+    <h2>11月25日の誕生花として親しまれるコチョウラン</h2>
+    <p>コチョウランは、ラン科の着生植物として知られる、11月25日の誕生花です。一年を通して蝶が舞うような花を長期間咲かせ続ける、優雅で気品ある印象を持つ花です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>コチョウランが象徴する意味</h2>
-    <p>コチョウランの花言葉は「永久の愛」です。一年を通して蝶が舞うような花を長く咲かせ続ける姿が、永久に変わらない愛を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>コチョウランの魅力</h2>
-    <p>コチョウランの魅力は、蝶が舞うような優雅な花姿と、長期間咲き続ける気品ある存在感にあります。11月25日生まれの方はもちろん、永久の愛を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>コチョウランは明るい室内を好み、風通しのよい環境で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月25日生まれの方はもちろん、永久の愛を伝えたい贈り物としてもコチョウランは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウランはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して蝶が舞うような花を長期間咲かせ続けます。ラン科の着生植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウランの花言葉の由来は何ですか？</div>
-        <div class="faq-a">一年を通して蝶が舞うような花を長く咲かせ続ける姿が、永久に変わらない愛を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コチョウランはどんな場面で贈られることが多いですか？</div>
-        <div class="faq-a">花が長く咲き続けることから、開店祝いや就任祝いなど、お祝いの贈り物として人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">コチョウランはどのくらいの期間花を咲かせますか？</div>
+        <div class="faq-a">一年を通して花を咲かせ続ける、ラン科の着生植物です。優雅で気品ある印象を持ちます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>蝶が羽を広げたような、花びらの構造美</h2>
+    <p>コチョウランの花をよく見ると、上下に大きく開いた花びらが左右対称に広がり、まるで蝶が羽を大きく広げて止まっているかのような形をしていることに気づく。花の中心には唇弁と呼ばれる小さな突起状の花びらがあり、これがちょうど蝶の胴体のように収まっている。ラン科の着生植物であるコチョウランは、樹木や岩に根を張って育ち、この蝶のかたちをした一輪をほとんど崩すことなく長期間保ち続ける性質も持つ。姿を変えず咲き続けるこの蝶の形こそが、「永久の愛」という花言葉に重なっている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コチョウランの花言葉「永久の愛」はどこから来ていますか？</div>
+        <div class="faq-a">いつ見ても同じ表情で出迎えてくれる、その安定した美しさに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>形を変えずにいられる強さは、実は日々の小さな積み重ねの上に成り立っている。今日は大切な人への想いを、そっと胸に留めてみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、コチョウランから始める小さな体験</h2>
+    <p>一年を通して変わらず咲き続けるコチョウランにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>蝶が舞うような花の形をじっくり観察してみる</li>
+      <li>長く大切にしている想いを一つ、心の中で確かめてみる</li>
+      <li>いつも変わらず咲き続ける花に、そっと目を向けてみる</li>
+    </ul>
+
+    <p class="cta-lead">今年一年の運気の流れが気になる日は、開運カレンダーで年九星も確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>蝶のかたちを、少しも崩さずに保ち続ける。それがコチョウランの静かな強さである。</p>
     <ul>
-      <li>コチョウランは一年を通して蝶のような花を咲かせ続ける、11月25日の誕生花</li>
-      <li>花言葉は「永久の愛」、長く咲き続ける姿に由来する</li>
-      <li>蝶が舞うような優雅な花姿が魅力</li>
-      <li>明るい室内を好み、風通しのよい環境で管理するとよく育ちます</li>
+      <li>コチョウランは、ラン科の着生植物で、蝶が羽を広げたような花を一年を通して咲かせ続ける、11月25日の誕生花</li>
+      <li>花言葉は「永久の愛」。一年を通して同じ姿で咲き続ける、揺るがない花の強さに由来すると言われる</li>
+      <li>優雅で気品ある印象を、長期間にわたって保ち続ける</li>
+      <li>変わらない想いを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

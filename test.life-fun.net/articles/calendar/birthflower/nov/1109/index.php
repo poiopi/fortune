@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1109/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月9日の誕生花ムラサキシキブの花言葉・特徴・魅力をわかりやすく解説。「才媛」を象徴する淡紫色の花の意味を紹介します。">
+  <meta name="description" content="11月9日の誕生花ムラサキシキブの花言葉・特徴・魅力をわかりやすく解説。「才媛」を象徴する紫の実をつける落葉低木の意味を紹介します。">
   <title>11月9日の誕生花はムラサキシキブ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ムラサキシキブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に淡紫色の花を咲かせ、秋には紫の実をつけます。シソ科の落葉低木です。"}},
-      {"@type":"Question","name":"ムラサキシキブの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夏に淡い紫の花を咲かせ、秋には上品な紫の実を結ぶ奥ゆかしい姿が、教養高い才媛を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ムラサキシキブの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"紫の実が連なる上品な姿が、平安時代の女流作家・紫式部を連想させることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"ムラサキシキブの紫の実はいつ頃見られますか？","acceptedAnswer":{"@type":"Answer","text":"秋に紫の実をつけます。花は夏に淡紫色で咲きます。"}},
+      {"@type":"Question","name":"ムラサキシキブの花言葉「才媛」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"夏に静かに咲き、秋に鮮やかな紫の実を結ぶ落ち着いた佇まいが、才媛という花言葉に重ねられてきたと言われています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 9 · 誕生花</span>
     <h1>11月9日の誕生花はムラサキシキブ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ムラサキシキブは、シソ科の落葉低木で、夏に淡紫色の花を咲かせ、秋には紫の実をつける、上品で知的な印象を持つ花です。花言葉は「才媛」。上品な花です。</p>
+    <p class="art-lead">紅葉が進む晩秋の庭先で、鮮やかな紫の粒が目に留まることがある。夏に咲いた花のあとにこの時期紫の実をつけるシソ科の落葉低木、ムラサキシキブが、11月9日の誕生花に数えられている。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ムラサキシキブ</dd>
     <dt>花言葉</dt><dd>才媛</dd>
     <dt>科名</dt><dd>シソ科</dd>
-    <dt>見頃</dt><dd>夏（花）／秋（実）</dd>
+    <dt>見頃</dt><dd>秋（実）</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ムラサキシキブとは</a></li>
-      <li><a href="#meaning">ムラサキシキブが象徴する意味</a></li>
-      <li><a href="#charm">ムラサキシキブの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月9日の誕生花として親しまれるムラサキシキブ</a></li>
+      <li><a href="#story">粒立つ紫が語る、控えめな贅沢</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ムラサキシキブから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ムラサキシキブとは</h2>
-    <p>ムラサキシキブは、シソ科の落葉低木で、11月9日の誕生花として知られています。夏に淡紫色の花を咲かせ、秋には紫の実をつける、上品で知的な印象を持つ植物です。</p>
-  </section>
+    <h2>11月9日の誕生花として親しまれるムラサキシキブ</h2>
+    <p>ムラサキシキブは、シソ科の落葉低木として知られる、11月9日の誕生花です。11月には、夏に咲いた淡紫色の花に代わって、紫の実が枝いっぱいに色づく姿で親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ムラサキシキブが象徴する意味</h2>
-    <p>ムラサキシキブの花言葉は「才媛」です。夏に淡い紫の花を咲かせ、秋には上品な紫の実を結ぶ奥ゆかしい姿が、教養高い才媛を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ムラサキシキブの魅力</h2>
-    <p>ムラサキシキブの魅力は、夏の淡い紫の花から秋の上品な紫の実へと移ろう表情の豊かさと、落ち着いた気品にあります。11月9日生まれの方はもちろん、知的な魅力を伝えたい贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ムラサキシキブは日当たりから半日陰を好み、剪定を行いながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月9日生まれの方はもちろん、知的な魅力を伝えたい贈り物としてもムラサキシキブは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキシキブはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に淡紫色の花を咲かせ、秋には紫の実をつけます。シソ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキシキブの花言葉の由来は何ですか？</div>
-        <div class="faq-a">夏に淡い紫の花を咲かせ、秋には上品な紫の実を結ぶ奥ゆかしい姿が、教養高い才媛を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキシキブの名前の由来は何ですか？</div>
-        <div class="faq-a">紫の実が連なる上品な姿が、平安時代の女流作家・紫式部を連想させることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ムラサキシキブの紫の実はいつ頃見られますか？</div>
+        <div class="faq-a">秋に紫の実をつけます。花は夏に淡紫色で咲きます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>粒立つ紫が語る、控えめな贅沢</h2>
+    <p>ムラサキシキブの実は、直径数ミリほどの小さな粒が、茎に沿って規則正しく連なって色づく。一粒ずつは控えめな大きさでも、紫という色の濃さがそれを補って余りあるほど目を引く存在感を持つ。庭木として植えられることも多いが、花よりも実の観賞価値の高さで知られる植物でもある。夏の間はほとんど気に留められないほど地味な淡紫色の花を咲かせるだけで、目立った動きを見せない。夏の間に静かに力を蓄え、涼しくなった頃にようやくその実力を発揮する。この落ち着いた佇まいと確かな存在感の両立を、人々は古くから「才媛」の言葉に重ねてきたのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ムラサキシキブの花言葉「才媛」はどのように結びついていますか？</div>
+        <div class="faq-a">夏に静かに咲き、秋に鮮やかな紫の実を結ぶ落ち着いた佇まいが、才媛という花言葉に重ねられてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>紫という色に心惹かれる日は、目立つことより、自分の内側を整えることに気持ちが向いているのかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ムラサキシキブから始める小さな体験</h2>
+    <p>夏に静かに咲き、秋に紫の実を結ぶムラサキシキブにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の実をじっくり観察してみる</li>
+      <li>静かに取り組んでいることを一つ、丁寧に続けてみる</li>
+      <li>紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分の傾向をじっくり見つめたい日は、開運カレンダーで今年の九星も確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>夏に静かに咲き、秋に色づくこの紫の実こそ、内に秘めた力が実を結ぶ瞬間そのものだ。</p>
     <ul>
-      <li>ムラサキシキブは夏に淡紫色の花、秋に紫の実をつける、11月9日の誕生花</li>
-      <li>花言葉は「才媛」、上品な紫の実を結ぶ奥ゆかしい姿に由来する</li>
-      <li>花から実へと移ろう表情の豊かさが魅力</li>
-      <li>日当たりから半日陰を好み、剪定を行いながら管理するとよく育ちます</li>
+      <li>ムラサキシキブは、シソ科の落葉低木で、秋に紫の実をつける、11月9日の誕生花</li>
+      <li>花言葉は「才媛」。静かに力を蓄え、実を結ぶ姿に由来すると言われる</li>
+      <li>花は夏に淡紫色で咲き、秋には鮮やかな紫の実に変わる</li>
+      <li>内に秘めた知性や才能を静かに磨きたい日に寄り添う花</li>
     </ul>
   </section>
 

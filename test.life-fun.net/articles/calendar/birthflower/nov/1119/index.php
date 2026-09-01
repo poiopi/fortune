@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1119/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月19日の誕生花ペリストロフェの花言葉・特徴・魅力をわかりやすく解説。「不思議」を象徴する赤紫色の花の意味を紹介します。">
+  <meta name="description" content="11月19日の誕生花ペリストロフェの花言葉・特徴・魅力をわかりやすく解説。「不思議」を象徴する赤紫の小花をほぼ一年中咲かせる常緑多年草の意味を紹介します。">
   <title>11月19日の誕生花はペリストロフェ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ペリストロフェはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"赤紫色の小花を咲かせます。キツネノマゴ科の多年草です。"}},
-      {"@type":"Question","name":"ペリストロフェの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"赤紫色の小花がひっそりと個性的な姿で咲くことが、どこか不思議な魅力を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ペリストロフェはどんな場所で育てるのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"明るい日陰を好むため、直射日光を避けた室内やベランダで育てるのがおすすめです。"}}
+      {"@type":"Question","name":"ペリストロフェはどのくらいの期間花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"ほぼ一年を通して花を咲かせ続ける、インドネシア原産の常緑多年草です。"}},
+      {"@type":"Question","name":"ペリストロフェの花言葉「不思議」はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"ひとことでは言い当てにくい、微妙な色合いそのものが人の記憶に残ることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 19 · 誕生花</span>
     <h1>11月19日の誕生花はペリストロフェ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ペリストロフェは、キツネノマゴ科の多年草で、赤紫色の小花を咲かせる、どこか不思議で個性的な印象を持つ花です。花言葉は「不思議」。個性的な花です。</p>
+    <p class="art-lead">赤紫の小さな花が、季節を問わず庭先に咲き続けているのを見かけることがある。キツネノマゴ科の常緑多年草、ペリストロフェは、この息の長い咲き方こそ、11月19日にふさわしい。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ペリストロフェ</dd>
     <dt>花言葉</dt><dd>不思議</dd>
     <dt>科名</dt><dd>キツネノマゴ科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>周年（ほぼ一年中）</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ペリストロフェとは</a></li>
-      <li><a href="#meaning">ペリストロフェが象徴する意味</a></li>
-      <li><a href="#charm">ペリストロフェの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月19日の誕生花として親しまれるペリストロフェ</a></li>
+      <li><a href="#story">赤でも紫でもない、名づけにくい色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ペリストロフェから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ペリストロフェとは</h2>
-    <p>ペリストロフェは、キツネノマゴ科の多年草で、11月19日の誕生花として知られています。赤紫色の小花を咲かせる、どこか不思議で個性的な印象を持つ花です。</p>
-  </section>
+    <h2>11月19日の誕生花として親しまれるペリストロフェ</h2>
+    <p>ペリストロフェは、キツネノマゴ科の常緑多年草として知られる、11月19日の誕生花です。赤紫色の小さな花をほぼ一年を通して咲かせ続ける、インドネシア原産の植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ペリストロフェが象徴する意味</h2>
-    <p>ペリストロフェの花言葉は「不思議」です。赤紫色の小花がひっそりと個性的な姿で咲くことが、どこか不思議な魅力を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ペリストロフェの魅力</h2>
-    <p>ペリストロフェの魅力は、赤紫色の小花が持つ独特な色合いと、他にはない個性的な佇まいにあります。11月19日生まれの方はもちろん、不思議な魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ペリストロフェは明るい日陰を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月19日生まれの方はもちろん、不思議な魅力を伝えたい贈り物としてもペリストロフェは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペリストロフェはいつ頃咲きますか？</div>
-        <div class="faq-a">赤紫色の小花を咲かせます。キツネノマゴ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペリストロフェの花言葉の由来は何ですか？</div>
-        <div class="faq-a">赤紫色の小花がひっそりと個性的な姿で咲くことが、どこか不思議な魅力を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペリストロフェはどんな場所で育てるのがおすすめですか？</div>
-        <div class="faq-a">明るい日陰を好むため、直射日光を避けた室内やベランダで育てるのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ペリストロフェはどのくらいの期間花を咲かせますか？</div>
+        <div class="faq-a">ほぼ一年を通して花を咲かせ続ける、インドネシア原産の常緑多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>赤でも紫でもない、名づけにくい色</h2>
+    <p>赤紫という色は、赤とも紫とも言い切れない、どっちつかずの濃さを帯びている。キツネノマゴ科の常緑多年草、ペリストロフェの花はまさにこの色合いで、庭のあちこちでひっそりと咲いているのを見かけることがある。強すぎず、かといって沈んでもいない、この説明のしづらい色合いこそが、見た人にどこか腑に落ちない印象を残す。なぜこの色にこれほど目が留まるのか、理由をうまく言葉にできない。この色そのものが持つ言い表せなさが、「不思議」という花言葉に表れている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ペリストロフェの花言葉「不思議」はどこから来ていますか？</div>
+        <div class="faq-a">ひとことでは言い当てにくい、微妙な色合いそのものが人の記憶に残ることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>赤紫という色には、どこか秘めた情熱を感じさせるものがある。季節を問わず途切れなく続くその生命力を、日々の小さな習慣に重ねて眺めてみるのも面白い。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ペリストロフェから始める小さな体験</h2>
+    <p>見れば見るほど言葉にしがたくなる、この赤紫の色合いにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤紫色の小さな花をじっくり観察してみる</li>
+      <li>季節を問わず続けている自分の習慣を、一つ見つめ直してみる</li>
+      <li>身近な「ふしぎ」を一つ探してみる</li>
+    </ul>
+
+    <p class="cta-lead">ふしぎな巡り合わせを楽しみたい日は、開運カレンダーで今日のラッキーナンバーも見てみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤紫という、名づけにくい色そのものが、この花の一番の個性なのかもしれない。</p>
     <ul>
-      <li>ペリストロフェは赤紫色の小花を咲かせる、11月19日の誕生花</li>
-      <li>花言葉は「不思議」、ひっそりと個性的に咲く姿に由来する</li>
-      <li>独特な色合いが生む個性的な佇まいが魅力</li>
-      <li>明るい日陰を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ペリストロフェは、キツネノマゴ科の常緑多年草で、赤紫色の小花を咲かせる、11月19日の誕生花</li>
+      <li>花言葉は「不思議」。はっきりと名前をつけられない、この花ならではの色の魅力に由来すると言われる</li>
+      <li>インドネシア原産で、ほぼ一年を通して花を咲かせ続ける</li>
+      <li>言葉にしきれない印象を大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

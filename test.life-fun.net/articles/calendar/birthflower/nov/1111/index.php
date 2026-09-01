@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1111/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月11日の誕生花チャノキの花言葉・特徴・魅力をわかりやすく解説。「向上心」を象徴する白い花の意味を紹介します。">
+  <meta name="description" content="11月11日の誕生花チャノキの花言葉・特徴・魅力をわかりやすく解説。「向上心」を象徴する茶の原料として知られる常緑低木の意味を紹介します。">
   <title>11月11日の誕生花はチャノキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"チャノキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋から冬に白い花を咲かせます。ツバキ科の常緑低木です。"}},
-      {"@type":"Question","name":"チャノキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋から冬という厳しい季節にも白い花を咲かせ、茶として日々の暮らしに寄り添ってきた歴史が、絶えず高みを目指す向上心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"チャノキはどんな用途で親しまれていますか？","acceptedAnswer":{"@type":"Answer","text":"葉が緑茶や烏龍茶、紅茶など様々なお茶の原料として古くから親しまれています。"}}
+      {"@type":"Question","name":"チャノキとはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"ツバキ科の常緑低木で、秋から冬に白い花を咲かせます。茶の原料として知られています。"}},
+      {"@type":"Question","name":"チャノキの花言葉「向上心」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"目立たない花の奥で静かに力を蓄え、お茶として役立てられていく過程が、向上心という花言葉に重ねられてきたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 11 · 誕生花</span>
     <h1>11月11日の誕生花はチャノキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">チャノキは、ツバキ科の常緑低木で、秋から冬に白い花を咲かせる、実直で凛とした印象を持つ花です。花言葉は「向上心」。実直な花です。</p>
+    <p class="art-lead">肌寒さが増すこの時期、白い花をひっそりと咲かせる木がある。ツバキ科の常緑低木、チャノキが11月11日の誕生花に数えられる理由の一つは、私たちが日々口にするお茶の原料でもあるという身近さにある。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">チャノキとは</a></li>
-      <li><a href="#meaning">チャノキが象徴する意味</a></li>
-      <li><a href="#charm">チャノキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月11日の誕生花として親しまれるチャノキ</a></li>
+      <li><a href="#story">花の奥に息づく、一杯のお茶の時間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、チャノキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>チャノキとは</h2>
-    <p>チャノキは、ツバキ科の常緑低木で、11月11日の誕生花として知られています。秋から冬に白い花を咲かせる、茶の原料として知られる実直で凛とした印象を持つ植物です。</p>
-  </section>
+    <h2>11月11日の誕生花として親しまれるチャノキ</h2>
+    <p>チャノキは、ツバキ科の常緑低木として知られる、11月11日の誕生花です。秋から冬に白い花を咲かせる、茶の原料として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>チャノキが象徴する意味</h2>
-    <p>チャノキの花言葉は「向上心」です。秋から冬という厳しい季節にも白い花を咲かせ、茶として日々の暮らしに寄り添ってきた歴史が、絶えず高みを目指す向上心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>チャノキの魅力</h2>
-    <p>チャノキの魅力は、寒い季節にも凛と咲く白い花の実直さと、古くから暮らしに寄り添ってきた身近な存在感にあります。11月11日生まれの方はもちろん、向上心を伝えたい贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>チャノキは日当たりから半日陰を好み、剪定を行いながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月11日生まれの方はもちろん、向上心を伝えたい贈り物としてもチャノキは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チャノキはいつ頃咲きますか？</div>
-        <div class="faq-a">秋から冬に白い花を咲かせます。ツバキ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チャノキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋から冬という厳しい季節にも白い花を咲かせ、茶として日々の暮らしに寄り添ってきた歴史が、絶えず高みを目指す向上心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チャノキはどんな用途で親しまれていますか？</div>
-        <div class="faq-a">葉が緑茶や烏龍茶、紅茶など様々なお茶の原料として古くから親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">チャノキとはどんな植物ですか？</div>
+        <div class="faq-a">ツバキ科の常緑低木で、秋から冬に白い花を咲かせます。茶の原料として知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>花の奥に息づく、一杯のお茶の時間</h2>
+    <p>チャノキが白い花を咲かせるのは、多くの植物が枯れ支度を始める秋から冬にかけてである。目立つ場所に植えられることは少なく、花そのものに気づかれないまま季節が過ぎていくことも多い。しかしこの木の本当の役割は、花よりもむしろ葉にある。丁寧に摘まれた葉が、私たちの毎日に欠かせない一杯のお茶へと姿を変える。地味に見える花の奥で、静かに力を蓄えていくその過程が、「向上心」という花言葉に重なる。着実に積み重ねる姿勢を思わせる木である。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">チャノキの花言葉「向上心」はどのように結びついていますか？</div>
+        <div class="faq-a">目立たない花の奥で静かに力を蓄え、お茶として役立てられていく過程が、向上心という花言葉に重ねられてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>小さな一歩を積み重ねておきたいのは、大きな変化を急いで起こそうとするほど、かえって長続きしなくなるからだ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、チャノキから始める小さな体験</h2>
+    <p>地味な花の奥で静かに力を蓄えるチャノキにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い花をじっくり観察してみる</li>
+      <li>お茶を淹れて、ゆっくりと味わってみる</li>
+      <li>今よりも少し成長できることを一つ、行動に移してみる</li>
+    </ul>
+
+    <p class="cta-lead">夜空を見上げたくなる日は、開運カレンダーで今日の月齢もチェックしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>日々の積み重ねの大切さは、地味な花の奥で静かに力を蓄えるチャノキの姿にこそ表れている。</p>
     <ul>
-      <li>チャノキは秋から冬に白い花を咲かせる、11月11日の誕生花</li>
-      <li>花言葉は「向上心」、厳しい季節にも咲き続ける姿に由来する</li>
-      <li>お茶の原料として暮らしに寄り添ってきた身近さが魅力</li>
-      <li>日当たりから半日陰を好み、剪定を行いながら管理するとよく育ちます</li>
+      <li>チャノキは、ツバキ科の常緑低木で、秋から冬に白い花を咲かせる、11月11日の誕生花</li>
+      <li>花言葉は「向上心」。花の奥で静かに力を蓄える様子に由来すると言われる</li>
+      <li>茶の原料として知られ、日々のお茶にもつながる植物</li>
+      <li>一歩ずつ自分を高めていきたい日に寄り添う花</li>
     </ul>
   </section>
 

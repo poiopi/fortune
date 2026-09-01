@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1127/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月27日の誕生花クロッサンドラの花言葉・特徴・魅力をわかりやすく解説。「内面の美」を象徴するオレンジ色の花の意味を紹介します。">
+  <meta name="description" content="11月27日の誕生花クロッサンドラの花言葉・特徴・魅力をわかりやすく解説。「内面の美」を象徴するオレンジ色の花を咲かせる常緑低木の意味を紹介します。">
   <title>11月27日の誕生花はクロッサンドラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クロッサンドラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にオレンジ色の花を咲かせます。キツネノマゴ科の常緑低木です。"}},
-      {"@type":"Question","name":"クロッサンドラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夏に鮮やかなオレンジ色の花を咲かせながらも控えめに佇む姿が、内面に秘めた美しさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"クロッサンドラはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかなオレンジ色を活かして、明るい室内やベランダの鉢植えとして楽しまれています。"}}
+      {"@type":"Question","name":"クロッサンドラの和名にはどんな意味がありますか？","acceptedAnswer":{"@type":"Answer","text":"和名は「ジョウゴバナ」で、房飾りのような雄しべの姿が名前の由来とされています。"}},
+      {"@type":"Question","name":"クロッサンドラの花言葉「内面の美」はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"外側の鮮やかな色合いと、近づいて初めて気づく雄しべの繊細なつくりとの対比が、内面の美という花言葉を思わせるとされています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 27 · 誕生花</span>
     <h1>11月27日の誕生花はクロッサンドラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クロッサンドラは、キツネノマゴ科の常緑低木で、夏にオレンジ色の花を咲かせる、鮮やかで奥ゆかしい印象を持つ花です。花言葉は「内面の美」。奥ゆかしい花です。</p>
+    <p class="art-lead">鮮やかな色の奥に隠れた繊細さに、気づいたことはあるだろうか。キツネノマゴ科の常緑低木クロッサンドラは、夏にオレンジ色の花を咲かせ、その奥に房飾りのような細い雄しべを潜ませる。11月27日に添えられた「内面の美」という花言葉は、この小さな対比のことだったのかもしれない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クロッサンドラとは</a></li>
-      <li><a href="#meaning">クロッサンドラが象徴する意味</a></li>
-      <li><a href="#charm">クロッサンドラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月27日の誕生花として親しまれるクロッサンドラ</a></li>
+      <li><a href="#story">オレンジ色の奥に隠れた、房飾りの雄しべ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クロッサンドラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クロッサンドラとは</h2>
-    <p>クロッサンドラは、キツネノマゴ科の常緑低木で、11月27日の誕生花として知られています。夏にオレンジ色の花を咲かせる、鮮やかで奥ゆかしい印象を持つ花です。</p>
-  </section>
+    <h2>11月27日の誕生花として親しまれるクロッサンドラ</h2>
+    <p>クロッサンドラは、キツネノマゴ科の常緑低木として知られる、11月27日の誕生花です。花が咲くのは夏ですが、鮮やかなオレンジ色の花姿にちなみ、内面の美を象徴する花としてこの日に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クロッサンドラが象徴する意味</h2>
-    <p>クロッサンドラの花言葉は「内面の美」です。夏に鮮やかなオレンジ色の花を咲かせながらも控えめに佇む姿が、内面に秘めた美しさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クロッサンドラの魅力</h2>
-    <p>クロッサンドラの魅力は、オレンジ色の花が持つ鮮やかな美しさと、控えめに咲く奥ゆかしい佇まいにあります。11月27日生まれの方はもちろん、内面の美しさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クロッサンドラは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月27日生まれの方はもちろん、内面の美しさを伝えたい贈り物としてもクロッサンドラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッサンドラはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にオレンジ色の花を咲かせます。キツネノマゴ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッサンドラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">夏に鮮やかなオレンジ色の花を咲かせながらも控えめに佇む姿が、内面に秘めた美しさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッサンドラはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">鮮やかなオレンジ色を活かして、明るい室内やベランダの鉢植えとして楽しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロッサンドラの和名にはどんな意味がありますか？</div>
+        <div class="faq-a">和名は「ジョウゴバナ」で、房飾りのような雄しべの姿が名前の由来とされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>オレンジ色の奥に隠れた、房飾りの雄しべ</h2>
+    <p>鮮やかなオレンジ色の花びらが目を引くクロッサンドラだが、よく見るとその奥に房飾りのような細い雄しべが隠れている。キツネノマゴ科の常緑低木であるクロッサンドラが花を咲かせるのは夏で、和名の「ジョウゴバナ」もこの雄しべの姿にちなんで名づけられたとされる。オレンジという色は遠くからでも目を引く華やかさを持つが、この花の本当の見どころは、近づいてはじめて気づく雄しべの繊細なつくりにある。この外側の華やかさと内側の繊細さの対比が、「内面の美」という花言葉を思わせる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クロッサンドラの花言葉「内面の美」はどこから来ていますか？</div>
+        <div class="faq-a">外側の鮮やかな色合いと、近づいて初めて気づく雄しべの繊細なつくりとの対比が、内面の美という花言葉を思わせるとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>鮮やかなオレンジの花びらの奥に、房飾りのような雄しべがそっと隠れている。目に映る華やかさの奥にある心の美しさに、今日は目を向けてみる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クロッサンドラから始める小さな体験</h2>
+    <p>華やかさの奥に繊細さを秘めるクロッサンドラにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>オレンジ色の花びらをじっくり観察してみる</li>
+      <li>誰かの内面の魅力に、今日は目を向けてみる</li>
+      <li>自分の心の中にある美しさを一つ、見つめ直してみる</li>
+    </ul>
+
+    <p class="cta-lead">自分を彩るものを見つけたい日は、開運カレンダーで今月の誕生石もチェックしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>遠くから見た華やかさより、近づいて気づく繊細さのほうが、この花には似合う。</p>
     <ul>
-      <li>クロッサンドラは夏にオレンジ色の花を咲かせる、11月27日の誕生花</li>
-      <li>花言葉は「内面の美」、控えめに咲く姿に由来する</li>
-      <li>鮮やかなオレンジ色と奥ゆかしい佇まいが魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>クロッサンドラは、キツネノマゴ科の常緑低木で、夏に鮮やかなオレンジ色の花を咲かせる、11月27日の誕生花</li>
+      <li>花言葉は「内面の美」。外側の華やかさと内側の繊細さの対比に由来すると言われる</li>
+      <li>和名は「ジョウゴバナ」。房飾りのような雄しべの姿が名前の由来</li>
+      <li>外見だけでなく心の美しさを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 
