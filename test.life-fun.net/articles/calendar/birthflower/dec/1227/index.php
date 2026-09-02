@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1227/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月27日の誕生花ヒイラギの花言葉・特徴・魅力をわかりやすく解説。「先見性」を象徴する凛とした木の意味を紹介します。">
+  <meta name="description" content="12月27日の誕生花ヒイラギの花言葉・特徴・魅力をわかりやすく解説。「先見性」を象徴する、とげと香りの対比を紹介します。">
   <title>12月27日の誕生花はヒイラギ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒイラギはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"晩秋から冬に小さな白い花を咲かせ、甘い香りを放ちます。モクセイ科の常緑小高木です。"}},
-      {"@type":"Question","name":"ヒイラギの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉で身を守りながら、寒さの厳しい季節を見越して花を咲かせる姿が、先を見通す力を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ヒイラギはなぜ魔除けとされていますか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉が邪気を払うと考えられ、節分や正月飾りに用いられる魔除けの木として親しまれています。"}}
+      {"@type":"Question","name":"ヒイラギの葉のとげには、どんな役割があると考えられていますか？","acceptedAnswer":{"@type":"Answer","text":"鋭いとげのある葉が邪気を払うと考えられ、古くから魔除けとして節分や正月飾りに用いられてきました。"}},
+      {"@type":"Question","name":"ヒイラギはなぜ年中行事と結びつけられることが多いのですか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉が邪気を払うと考えられてきたことから、節分の飾りや正月飾りなど、季節の節目の行事に用いられることが多いためです。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 27 · 誕生花</span>
     <h1>12月27日の誕生花はヒイラギ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒイラギは、モクセイ科の常緑小高木で、晩秋から冬に小さな白い花を咲かせ、甘い香りを放つ、凛として力強い印象を持つ花です。花言葉は「先見性」。凛とした花です。</p>
+    <p class="art-lead">とげのある葉のあいだから、小さな白い花が甘い香りを漂わせている。ヒイラギは、モクセイ科の常緑小高木で、鋭さと甘さという相反する印象を、一本の木の中に同居させている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒイラギとは</a></li>
-      <li><a href="#meaning">ヒイラギが象徴する意味</a></li>
-      <li><a href="#charm">ヒイラギの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月27日の誕生花として親しまれるヒイラギ</a></li>
+      <li><a href="#story">とげと香り、ヒイラギが持つ二つの顔</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒイラギから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒイラギとは</h2>
-    <p>ヒイラギは、モクセイ科の常緑小高木で、12月27日の誕生花として知られています。晩秋から冬に小さな白い花を咲かせ、甘い香りを放つ、凛として力強い印象を持つ花です。</p>
-  </section>
+    <h2>12月27日の誕生花として親しまれるヒイラギ</h2>
+    <p>ヒイラギは、モクセイ科の常緑小高木で、12月27日の誕生花として知られています。晩秋から冬にかけて小さな白い花を咲かせ、甘い香りを放つ一方で、葉の縁にとげを持つ植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒイラギが象徴する意味</h2>
-    <p>ヒイラギの花言葉は「先見性」です。とげのある葉で身を守りながら、寒さの厳しい季節を見越して花を咲かせる姿が、先を見通す力を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒイラギの魅力</h2>
-    <p>ヒイラギの魅力は、とげのある葉の凛とした佇まいと、晩秋から冬にかけて漂う甘く上品な香りにあります。12月27日生まれの方はもちろん、先を見通す想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒイラギは日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月27日生まれの方はもちろん、先を見通す想いを伝えたい贈り物としてもヒイラギは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギはいつ頃咲きますか？</div>
-        <div class="faq-a">晩秋から冬に小さな白い花を咲かせ、甘い香りを放ちます。モクセイ科の常緑小高木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギの花言葉の由来は何ですか？</div>
-        <div class="faq-a">とげのある葉で身を守りながら、寒さの厳しい季節を見越して花を咲かせる姿が、先を見通す力を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギはなぜ魔除けとされていますか？</div>
-        <div class="faq-a">とげのある葉が邪気を払うと考えられ、節分や正月飾りに用いられる魔除けの木として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギの葉のとげには、どんな役割があると考えられていますか？</div>
+        <div class="faq-a">鋭いとげのある葉が邪気を払うと考えられ、古くから魔除けとして節分や正月飾りに用いられてきました。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>とげと香り、ヒイラギが持つ二つの顔</h2>
+    <p>ヒイラギの葉は、縁にいくつもの鋭いとげを持ち、触れれば痛みを感じるほどの硬さを備えている。その厳めしい姿から、古くから邪気を寄せつけない木として、節分や正月飾りに用いられてきたと言われている。ところが同じ木に咲く花は、その葉の印象とはまるで違い、小さく白く控えめで、あたりに甘い香りをそっと漂わせる。とげという武装と、香りという柔らかさ。この二つがひとつの木に同居しているところに、ヒイラギという植物の面白さがある。晩秋から冬にかけて花を咲かせるこの時期は、一年の終わりを見据えて備えを始める季節とも重なり、花言葉「先見性」は、とげで身を守りながら静かに次の季節へ備えるこの姿を見立てた言葉なのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギはなぜ年中行事と結びつけられることが多いのですか？</div>
+        <div class="faq-a">とげのある葉が邪気を払うと考えられてきたことから、節分の飾りや正月飾りなど、季節の節目の行事に用いられることが多いためです。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分を守る備えと、誰かに向ける優しさは、両方とも同じ人の中に存在していい。強さと柔らかさは、決して矛盾しない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒイラギから始める小さな体験</h2>
+    <p>とげと香り、二つの顔を持つこの木にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>甘い香りのする白い花を、そっと探してみる</li>
+      <li>先を見据えた小さな備えを、一つしてみる</li>
+      <li>とげのある葉の力強さを、観察してみる</li>
+    </ul>
+
+    <p class="cta-lead">今日はどんな一日になりそうか気になったら、開運カレンダーで六曜も覗いてみてください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>強さと優しさを併せ持つ姿は、一年の節目にふさわしい佇まいでもある。</p>
     <ul>
-      <li>ヒイラギは晩秋から冬に小さな白い花を咲かせ、甘い香りを放つ、12月27日の誕生花</li>
-      <li>花言葉は「先見性」、とげのある葉と香りに由来する</li>
-      <li>とげのある葉で邪気を払う、魔除けの木として親しまれる存在</li>
-      <li>日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ヒイラギは、モクセイ科の常緑小高木で、晩秋から冬に白い花を咲かせ甘い香りを放つ、12月27日の誕生花</li>
+      <li>花言葉は「先見性」。とげで身を守りながら次の季節に備える姿に由来すると言われる</li>
+      <li>とげのある葉は魔除けとして親しまれてきたが、科学的に立証された効果ではなく、あくまで言い伝えとして楽しみたい</li>
+      <li>触れると痛みを感じるとげを持つため、扱う際は葉に直接触れすぎないよう気をつけたい</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-27'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1227'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-27');
+echo autoLink($html, 'birthflower-dec-1227');
 ?>

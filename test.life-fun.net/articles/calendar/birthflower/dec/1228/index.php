@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1228/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月28日の誕生花ストロベリーキャンドルの花言葉・特徴・魅力をわかりやすく解説。「善良」を象徴する愛らしい花の意味を紹介します。">
+  <meta name="description" content="12月28日の誕生花ストロベリーキャンドルの花言葉・特徴・魅力をわかりやすく解説。「善良」を象徴する、苺に見立てられた花の形を紹介します。">
   <title>12月28日の誕生花はストロベリーキャンドル｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ストロベリーキャンドルはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に苺のような形をした赤い花を咲かせます。マメ科の一年草です。"}},
-      {"@type":"Question","name":"ストロベリーキャンドルの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"苺を思わせる愛らしい形の花を素直にまっすぐ咲かせる姿が、飾り気のない善良な心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ストロベリーキャンドルという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の形と色が苺（ストロベリー）のキャンドルのように見えることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"ストロベリーキャンドルという名前は、どのように付けられたのですか？","acceptedAnswer":{"@type":"Answer","text":"赤く色づいた花全体の形と色が、苺（ストロベリー）のキャンドルのように見えることから、この名前が付けられたと言われています。"}},
+      {"@type":"Question","name":"ストロベリーキャンドルの花言葉「善良」には、どのような背景があるのでしょうか？","acceptedAnswer":{"@type":"Answer","text":"見た目の通り、飾らずまっすぐに咲く素朴な花の姿が、裏表のない善良な心を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 28 · 誕生花</span>
     <h1>12月28日の誕生花はストロベリーキャンドル<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ストロベリーキャンドルは、マメ科の一年草で、初夏に苺のような形をした赤い花を咲かせる、愛らしく素朴な印象を持つ花です。花言葉は「善良」。愛らしい花です。</p>
+    <p class="art-lead">遠くから見ると、赤い苺がそのまま茎の先に実っているように見える。ストロベリーキャンドルは、マメ科の一年草で、花の形が果物の苺を思わせることからこの名前で呼ばれるようになった。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ストロベリーキャンドルとは</a></li>
-      <li><a href="#meaning">ストロベリーキャンドルが象徴する意味</a></li>
-      <li><a href="#charm">ストロベリーキャンドルの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月28日の誕生花として親しまれるストロベリーキャンドル</a></li>
+      <li><a href="#story">苺に見立てられた、ストロベリーキャンドルの花の形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ストロベリーキャンドルから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ストロベリーキャンドルとは</h2>
-    <p>ストロベリーキャンドルは、マメ科の一年草で、12月28日の誕生花として知られています。初夏に苺のような形をした赤い花を咲かせる、愛らしく素朴な印象を持つ花です。</p>
-  </section>
+    <h2>12月28日の誕生花として親しまれるストロベリーキャンドル</h2>
+    <p>ストロベリーキャンドルは、マメ科の一年草で、12月28日の誕生花として知られています。小さな赤い花が集まって咲き、その姿全体が苺のような形を作り出す植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ストロベリーキャンドルが象徴する意味</h2>
-    <p>ストロベリーキャンドルの花言葉は「善良」です。苺を思わせる愛らしい形の花を素直にまっすぐ咲かせる姿が、飾り気のない善良な心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ストロベリーキャンドルの魅力</h2>
-    <p>ストロベリーキャンドルの魅力は、苺のキャンドルのような愛らしい花の形と、群れて咲く素朴で優しい雰囲気にあります。12月28日生まれの方はもちろん、飾らない善良な心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ストロベリーキャンドルは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月28日生まれの方はもちろん、飾らない善良な心を伝えたい贈り物としてもストロベリーキャンドルは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストロベリーキャンドルはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に苺のような形をした赤い花を咲かせます。マメ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストロベリーキャンドルの花言葉の由来は何ですか？</div>
-        <div class="faq-a">苺を思わせる愛らしい形の花を素直にまっすぐ咲かせる姿が、飾り気のない善良な心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ストロベリーキャンドルという名前の由来は何ですか？</div>
-        <div class="faq-a">花の形と色が苺（ストロベリー）のキャンドルのように見えることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ストロベリーキャンドルという名前は、どのように付けられたのですか？</div>
+        <div class="faq-a">赤く色づいた花全体の形と色が、苺（ストロベリー）のキャンドルのように見えることから、この名前が付けられたと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>苺に見立てられた、ストロベリーキャンドルの花の形</h2>
+    <p>ストロベリーキャンドルの花は、実際には小さな花が密集して一つの塊を作っているのだが、離れて眺めると、その塊全体がまるで一つの果実のように見える。赤く色づいた円錐形の姿は、名前の通り苺そのものを連想させ、実際に果物が実っているのかと見間違えてしまう人も少なくない。近づいてよく観察すると、それが小さな花の集まりであることに気づき、遠目の見立てと近くで見る事実とのあいだにある落差が、この植物ならではの面白さを生んでいる。もちろん食用の苺とは全く別の植物であり、味わうためのものではないが、その見立ての妙こそがこの花の魅力だ。花言葉「善良」は、飾らずまっすぐに、見た目通りの素直な姿で咲くこの花のあり方そのままの表現だろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ストロベリーキャンドルの花言葉「善良」には、どのような背景があるのでしょうか？</div>
+        <div class="faq-a">見た目の通り、飾らずまっすぐに咲く素朴な花の姿が、裏表のない善良な心を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>見た目と中身が一致していることは、それだけで信頼につながる。飾らずまっすぐでいることが、案外一番の魅力になる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ストロベリーキャンドルから始める小さな体験</h2>
+    <p>苺に見立てられる、この愛らしい形にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>苺のような花の形を、じっくり観察してみる</li>
+      <li>素朴な優しさを、今日は一つ誰かに向けてみる</li>
+      <li>赤い色のものを、身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日の背中を押してくれる数字が気になったら、開運カレンダーのラッキーナンバーもチェックしてみてください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>見た目と中身が一致していることは、静かな信頼を生む。</p>
     <ul>
-      <li>ストロベリーキャンドルは初夏に苺のような形をした赤い花を咲かせる、12月28日の誕生花</li>
-      <li>花言葉は「善良」、苺のような花の形に由来する</li>
-      <li>苺のキャンドルを思わせる、愛らしい花の形が魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ストロベリーキャンドルは、マメ科の一年草で、苺のような形の赤い花を咲かせる、12月28日の誕生花</li>
+      <li>花言葉は「善良」。飾らずまっすぐな花の姿に由来すると言われる</li>
+      <li>見頃は初夏。12月時点では開花期からは離れた季節にあたる点に留意したい</li>
+      <li>苺に似た愛らしい形をしているが、実際の苺（食用）とは異なる植物である点に注意したい</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-28'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1228'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-28');
+echo autoLink($html, 'birthflower-dec-1228');
 ?>

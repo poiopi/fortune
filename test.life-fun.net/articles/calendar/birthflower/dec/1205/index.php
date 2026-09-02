@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1205/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月5日の誕生花アザレア（赤）の花言葉・特徴・魅力をわかりやすく解説。「自制心」を象徴する華やかな花の意味を紹介します。">
+  <meta name="description" content="12月5日の誕生花アザレア（赤）の花言葉・特徴・魅力をわかりやすく解説。「自制心」を象徴する燃えるように鮮やかな赤い花の意味を紹介します。">
   <title>12月5日の誕生花はアザレア（赤）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アザレア（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鮮やかな赤い花を株いっぱいに咲かせます。ツツジ科の常緑低木です。"}},
-      {"@type":"Question","name":"アザレア（赤）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"情熱的な赤い花を株いっぱいに咲かせながらも、決められた季節にだけ咲く姿が、感情をコントロールする自制心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"アザレアとツツジはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"アザレアは西洋で品種改良されたツツジの仲間の総称で、花付きの良さや花色の鮮やかさに特徴があります。"}}
+      {"@type":"Question","name":"アザレア（赤）は、冬の間はどんな姿をしていますか？","acceptedAnswer":{"@type":"Answer","text":"常緑低木のため、冬でも葉を落とさず緑を保ちます。花が咲くのは春で、12月はその花期を待つ、静かな時期にあたります。"}},
+      {"@type":"Question","name":"アザレア（赤）の花言葉「自制心」は、何を表しているのですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな赤い花を株いっぱいに咲かせる情熱的な印象と、その花を一年のうち限られた季節だけに咲かせる性質とが重なり、「自制心」という花言葉が生まれたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 5 · 誕生花</span>
     <h1>12月5日の誕生花はアザレア（赤）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アザレア（赤）は、ツツジ科の常緑低木で、春に鮮やかな赤い花を株いっぱいに咲かせる、華やかで情熱的な印象を持つ花です。花言葉は「自制心」。華やかな花です。</p>
+    <p class="art-lead">燃えるような赤い花が、株いっぱいに咲きこぼれる季節がやってくる。ツツジ科の常緑低木、アザレア（赤）は、そんな鮮烈な赤をまとう花だが、開花は春で、12月5日はまだその日を静かに待つ時期にあたる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アザレア（赤）とは</a></li>
-      <li><a href="#meaning">アザレア（赤）が象徴する意味</a></li>
-      <li><a href="#charm">アザレア（赤）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月5日の誕生花として親しまれるアザレア（赤）</a></li>
+      <li><a href="#story">内に秘めた赤が、静かに春を待つ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アザレア（赤）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アザレア（赤）とは</h2>
-    <p>アザレア（赤）は、ツツジ科の常緑低木で、12月5日の誕生花として知られています。春に鮮やかな赤い花を株いっぱいに咲かせる、華やかで情熱的な印象を持つ花です。</p>
-  </section>
+    <h2>12月5日の誕生花として親しまれるアザレア（赤）</h2>
+    <p>アザレア（赤）は、ツツジ科の常緑低木で、12月5日の誕生花として知られています。花が咲くのは春で、株いっぱいに鮮やかな赤い花をまとまりよく咲かせるのが特徴です。12月5日の時点ではまだ花期を迎えておらず、常緑の葉が冬の間も静かに緑を保ち続けています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アザレア（赤）が象徴する意味</h2>
-    <p>アザレア（赤）の花言葉は「自制心」です。情熱的な赤い花を株いっぱいに咲かせながらも、決められた季節にだけ咲く姿が、感情をコントロールする自制心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アザレア（赤）の魅力</h2>
-    <p>アザレア（赤）の魅力は、株全体を覆うように咲きそろう赤い花の華やかさと、力強い存在感にあります。12月5日生まれの方はもちろん、凛とした想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アザレア（赤）は半日陰を好み、水はけのよい酸性の土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月5日生まれの方はもちろん、凛とした想いを伝えたい贈り物としてもアザレア（赤）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザレア（赤）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に鮮やかな赤い花を株いっぱいに咲かせます。ツツジ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザレア（赤）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">情熱的な赤い花を株いっぱいに咲かせながらも、決められた季節にだけ咲く姿が、感情をコントロールする自制心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アザレアとツツジはどう違いますか？</div>
-        <div class="faq-a">アザレアは西洋で品種改良されたツツジの仲間の総称で、花付きの良さや花色の鮮やかさに特徴があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アザレア（赤）は、冬の間はどんな姿をしていますか？</div>
+        <div class="faq-a">常緑低木のため、冬でも葉を落とさず緑を保ちます。花が咲くのは春で、12月はその花期を待つ、静かな時期にあたります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>内に秘めた赤が、静かに春を待つ</h2>
+    <p>アザレア（赤）の花は、咲けば株全体を覆うほど華やかだが、その勢いのままに一年中咲き続けるわけではない。冬の間はじっと葉だけをまとい、鮮やかな赤を内側に秘めたまま、春が来るのをひたすら待つ。この「今は咲かせない」という静けさこそが、花言葉「自制心」の背景にあるのかもしれない。情熱をすぐに表に出すのではなく、しかるべき時までじっくり温めておく——そんな静けさもまた、強さの一つのかたちなのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アザレア（赤）の花言葉「自制心」は、何を表しているのですか？</div>
+        <div class="faq-a">鮮やかな赤い花を株いっぱいに咲かせる情熱的な印象と、その花を一年のうち限られた季節だけに咲かせる性質とが重なり、「自制心」という花言葉が生まれたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>情熱は、いつも外に向かって放たれるとは限らない。声を上げない代わりに、深いところで静かに燃え続けることもある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アザレア（赤）から始める小さな体験</h2>
+    <p>内に秘めた赤がやがて咲くように、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤い花が株いっぱいに咲く様子を、思い浮かべてみる</li>
+      <li>高ぶった気持ちを一度、深呼吸で落ち着けてみる</li>
+      <li>情熱を内に秘めたまま、静かに行動してみる</li>
+    </ul>
+
+    <p class="cta-lead">今年の運気の傾向を知りたいときは、開運カレンダーで年九星もあわせて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤い花は、いつか咲く日のために、今は静かに力を蓄えている。</p>
     <ul>
-      <li>アザレア（赤）は春に鮮やかな赤い花を株いっぱいに咲かせる、12月5日の誕生花</li>
-      <li>花言葉は「自制心」、季節にだけ咲く姿に由来する</li>
-      <li>株いっぱいに咲く鮮やかな赤い花が魅力</li>
-      <li>半日陰を好み、水はけのよい酸性の土で管理するとよく育ちます</li>
+      <li>アザレア（赤）は、ツツジ科の常緑低木で、春に鮮やかな赤い花を株いっぱいに咲かせる、12月5日の誕生花</li>
+      <li>花言葉は「自制心」。情熱を内に秘めて時を待つ性質に由来すると言われる</li>
+      <li>開花期は春で、12月5日の時点ではまだ花が咲いていない点に注意</li>
+      <li>燃えるような赤も、開花までは静けさをまとっている</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-05'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1205'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-05');
+echo autoLink($html, 'birthflower-dec-1205');
 ?>

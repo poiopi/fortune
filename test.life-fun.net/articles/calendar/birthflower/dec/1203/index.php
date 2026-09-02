@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1203/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月3日の誕生花ツワブキの花言葉・特徴・魅力をわかりやすく解説。「心づかい」を象徴する温かみのある花の意味を紹介します。">
+  <meta name="description" content="12月3日の誕生花ツワブキの花言葉・特徴・魅力をわかりやすく解説。「心づかい」を象徴する艶やかな葉と黄色い花の意味を紹介します。">
   <title>12月3日の誕生花はツワブキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ツワブキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋から冬に黄色い花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ツワブキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の少ない寒い季節に、艶やかな葉とともにそっと黄色い花を咲かせる姿が、さりげない思いやりを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ツワブキの葉にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"厚みがあり艶のある丸い葉が特徴で、花のない時期も観葉植物として楽しめます。"}}
+      {"@type":"Question","name":"ツワブキの葉が艶やかに見えるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"厚みのある葉の表面にワックス質の層があり、光を受けると艶やかに輝いて見えます。この葉は一年を通して楽しむことができ、庭の彩りとしても親しまれています。"}},
+      {"@type":"Question","name":"なぜツワブキの花言葉は「心づかい」なのですか？","acceptedAnswer":{"@type":"Answer","text":"他の花が少なくなる季節にあえて咲き、庭に彩りを添えてくれる姿が、さりげない気遣いを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 3 · 誕生花</span>
     <h1>12月3日の誕生花はツワブキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ツワブキは、キク科の多年草で、秋から冬に黄色い花を咲かせる、温かみのある印象を持つ花です。花言葉は「心づかい」。温かみのある花です。</p>
+    <p class="art-lead">冷え込みが増す庭先で、艶やかな緑の葉を押しのけるようにして、黄色い花が顔を出す。ツワブキは、秋から冬にかけて花を咲かせるキク科の多年草で、12月3日はちょうどその盛りにあたる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ツワブキとは</a></li>
-      <li><a href="#meaning">ツワブキが象徴する意味</a></li>
-      <li><a href="#charm">ツワブキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月3日の誕生花として親しまれるツワブキ</a></li>
+      <li><a href="#story">寒さが増すほど、鮮やかに咲く黄色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ツワブキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ツワブキとは</h2>
-    <p>ツワブキは、キク科の多年草で、12月3日の誕生花として知られています。秋から冬に黄色い花を咲かせる、温かみのある印象を持つ花です。</p>
-  </section>
+    <h2>12月3日の誕生花として親しまれるツワブキ</h2>
+    <p>ツワブキは、キク科の多年草で、12月3日の誕生花として知られています。秋から冬にかけて黄色い花を咲かせ、艶のある濃い緑の葉との対比が印象的な植物です。12月3日は、ちょうどその花が見頃を迎えている時期にあたり、寒さの増す庭先に彩りを添えてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ツワブキが象徴する意味</h2>
-    <p>ツワブキの花言葉は「心づかい」です。花の少ない寒い季節に、艶やかな葉とともにそっと黄色い花を咲かせる姿が、さりげない思いやりを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ツワブキの魅力</h2>
-    <p>ツワブキの魅力は、冬枯れの庭を彩る黄色い花と、一年を通して楽しめる艶のある葉の美しさにあります。12月3日生まれの方はもちろん、さりげない心づかいを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ツワブキは半日陰でも育ち、乾燥に強く丈夫に育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月3日生まれの方はもちろん、さりげない心づかいを伝えたい贈り物としてもツワブキは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツワブキはいつ頃咲きますか？</div>
-        <div class="faq-a">秋から冬に黄色い花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツワブキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">花の少ない寒い季節に、艶やかな葉とともにそっと黄色い花を咲かせる姿が、さりげない思いやりを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツワブキの葉にはどんな特徴がありますか？</div>
-        <div class="faq-a">厚みがあり艶のある丸い葉が特徴で、花のない時期も観葉植物として楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ツワブキの葉が艶やかに見えるのはなぜですか？</div>
+        <div class="faq-a">厚みのある葉の表面にワックス質の層があり、光を受けると艶やかに輝いて見えます。この葉は一年を通して楽しむことができ、庭の彩りとしても親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>寒さが増すほど、鮮やかに咲く黄色</h2>
+    <p>他の草花が枯れ、庭が静かに冬支度を終えていく中で、ツワブキの黄色い花はむしろこれからが本番だ。艶やかな葉が一年中緑を保つ一方で、花は秋から冬という限られた季節にだけ姿を見せる。寒さが深まるほどその黄色は際立ち、まわりの静けさとの対比で、ひときわ目を引く存在になる。花言葉「心づかい」は、そんな季節を選んで咲く花の、ひそやかな優しさを言い当てているのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">なぜツワブキの花言葉は「心づかい」なのですか？</div>
+        <div class="faq-a">他の花が少なくなる季節にあえて咲き、庭に彩りを添えてくれる姿が、さりげない気遣いを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>寒さが増すほど、その黄色はかえって鮮やかに映える。他の花が姿を消す季節にあえて咲くように、気遣いは目立たない瞬間にこそ光るものだ。小さな気遣いを一つ、今日はそっと誰かに向けてみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ツワブキから始める小さな体験</h2>
+    <p>寒さの中で咲く花の心づかいにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>黄色い花と艶やかな葉を、じっくり見比べてみる</li>
+      <li>さりげない気遣いを一つ、誰かにしてみる</li>
+      <li>冬の景色の中に咲く花を、探してみる</li>
+    </ul>
+
+    <p class="cta-lead">今日の運気の流れが気になる方は、開運カレンダーで月齢や月相もチェックしてみましょう。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>艶やかな葉と黄色い花、その対比の中に季節の心づかいが見える。</p>
     <ul>
-      <li>ツワブキは秋から冬に黄色い花を咲かせる、12月3日の誕生花</li>
-      <li>花言葉は「心づかい」、寒い季節に咲く姿に由来する</li>
-      <li>艶のある葉と、寒い季節に咲く黄色い花が魅力</li>
-      <li>半日陰でも育ち、乾燥に強く丈夫に育ちます</li>
+      <li>ツワブキは、キク科の多年草で、秋から冬にかけて黄色い花を咲かせる、12月3日の誕生花</li>
+      <li>花言葉は「心づかい」。他の花が少ない季節にあえて咲く姿に由来すると言われる</li>
+      <li>艶のある葉が特徴で、花のない時期も庭の彩りとして楽しめる</li>
+      <li>静けさが増す庭に、さりげない黄色が彩りを添えてくれる</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-03'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1203'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-03');
+echo autoLink($html, 'birthflower-dec-1203');
 ?>

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1221/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月21日の誕生花ニオイバンマツリの花言葉・特徴・魅力をわかりやすく解説。「青春の喜び」を象徴する香り高い花の意味を紹介します。">
+  <meta name="description" content="12月21日の誕生花ニオイバンマツリの花言葉・特徴・魅力をわかりやすく解説。「青春の喜び」を象徴する、紫から白へ移ろう花色を紹介します。">
   <title>12月21日の誕生花はニオイバンマツリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ニオイバンマツリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に紫から白へ色を変える花を咲かせます。ナス科の常緑低木です。"}},
-      {"@type":"Question","name":"ニオイバンマツリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"咲き始めの紫色から次第に白へと色を変えながら香りを放つ移ろいやすい姿が、瑞々しい青春のときめきを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ニオイバンマツリの花色はなぜ変化するのですか？","acceptedAnswer":{"@type":"Answer","text":"咲き始めは紫色で、日が経つにつれて色素が抜けて白色へと変化していくためです。"}}
+      {"@type":"Question","name":"ニオイバンマツリという名前には、どんな意味がありますか？","acceptedAnswer":{"@type":"Answer","text":"強く甘い香りを放つことと、外国から渡ってきた花木であることから、この名前がつけられたと言われています。"}},
+      {"@type":"Question","name":"ニオイバンマツリの花はなぜ紫から白へ色が変わるのですか？","acceptedAnswer":{"@type":"Answer","text":"咲き始めは紫色の色素が濃く出ていますが、日が経つにつれて色素が徐々に抜けていき、最終的に白色へと変化していくためです。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 21 · 誕生花</span>
     <h1>12月21日の誕生花はニオイバンマツリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ニオイバンマツリは、ナス科の常緑低木で、初夏に紫から白へ色を変える花を咲かせる、香り高く華やかな印象を持つ花です。花言葉は「青春の喜び」。香り高い花です。</p>
+    <p class="art-lead">一つの木に、紫の花と白い花が同時に咲く瞬間がある。ニオイバンマツリは、ナス科の常緑低木で、一つひとつの花が時間とともに紫から白へと色を変えていく、移ろいの姿を見せる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ニオイバンマツリとは</a></li>
-      <li><a href="#meaning">ニオイバンマツリが象徴する意味</a></li>
-      <li><a href="#charm">ニオイバンマツリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月21日の誕生花として親しまれるニオイバンマツリ</a></li>
+      <li><a href="#story">紫から白へ、ニオイバンマツリが見せる花色の移ろい</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ニオイバンマツリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ニオイバンマツリとは</h2>
-    <p>ニオイバンマツリは、ナス科の常緑低木で、12月21日の誕生花として知られています。初夏に紫から白へ色を変える花を咲かせる、香り高く華やかな印象を持つ花です。</p>
-  </section>
+    <h2>12月21日の誕生花として親しまれるニオイバンマツリ</h2>
+    <p>ニオイバンマツリは、ナス科の常緑低木で、12月21日の誕生花として知られています。香り高い花を咲かせ、その花色が紫から白へと変化していく、珍しい性質を持つ植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ニオイバンマツリが象徴する意味</h2>
-    <p>ニオイバンマツリの花言葉は「青春の喜び」です。咲き始めの紫色から次第に白へと色を変えながら香りを放つ移ろいやすい姿が、瑞々しい青春のときめきを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ニオイバンマツリの魅力</h2>
-    <p>ニオイバンマツリの魅力は、紫から白へと日々変化していく花色と、あたり一面に漂う甘い香りにあります。12月21日生まれの方はもちろん、みずみずしい喜びを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ニオイバンマツリは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月21日生まれの方はもちろん、みずみずしい喜びを伝えたい贈り物としてもニオイバンマツリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニオイバンマツリはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に紫から白へ色を変える花を咲かせます。ナス科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニオイバンマツリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">咲き始めの紫色から次第に白へと色を変えながら香りを放つ移ろいやすい姿が、瑞々しい青春のときめきを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニオイバンマツリの花色はなぜ変化するのですか？</div>
-        <div class="faq-a">咲き始めは紫色で、日が経つにつれて色素が抜けて白色へと変化していくためです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ニオイバンマツリという名前には、どんな意味がありますか？</div>
+        <div class="faq-a">強く甘い香りを放つことと、外国から渡ってきた花木であることから、この名前がつけられたと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫から白へ、ニオイバンマツリが見せる花色の移ろい</h2>
+    <p>ニオイバンマツリの花は、咲き始めは深い紫色をしているが、日を追うごとに色素が抜け落ちていき、やがて白色へと変わっていく。一つの株に、咲いたばかりの紫の花と、咲き終わりに近い白い花が同時に並ぶことも珍しくなく、その様子はまるで、一枝の中に時間の経過そのものが刻まれているかのようだ。色が変わっても花の香りは変わらず甘く漂い続け、視覚と嗅覚の両方で移ろいを味わえるところにこの花の面白さがある。花言葉「青春の喜び」は、この移ろいゆく花色の姿が、瑞々しく変化していく心の様子と重なることから生まれた言葉なのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ニオイバンマツリの花はなぜ紫から白へ色が変わるのですか？</div>
+        <div class="faq-a">咲き始めは紫色の色素が濃く出ていますが、日が経つにつれて色素が徐々に抜けていき、最終的に白色へと変化していくためです。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>昨日と今日で、心の色合いが少し違って見えることがある。その移ろいそのものを、そのまま受け止めてみると、案外心地よく感じられるものだ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ニオイバンマツリから始める小さな体験</h2>
+    <p>紫から白へ色を変えながら香り続けるこの花にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫から白へ変わる花の色を、じっくり観察してみる</li>
+      <li>花の香りを、そっと想像してみる</li>
+      <li>昨日と今日で変わった気持ちを、振り返ってみる</li>
+    </ul>
+
+    <p class="cta-lead">月の満ち欠けが気になる方は、開運カレンダーで月齢や月相も確認してみましょう。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>色が変わっていく過程そのものにも、見つめる価値がある。</p>
     <ul>
-      <li>ニオイバンマツリは初夏に紫から白へ色を変える花を咲かせる、12月21日の誕生花</li>
-      <li>花言葉は「青春の喜び」、花色が移ろう姿に由来する</li>
-      <li>紫から白へと花色が移ろう、香り高く瑞々しい花</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ニオイバンマツリは、ナス科の常緑低木で、紫から白へ花色を変える花を咲かせる、12月21日の誕生花</li>
+      <li>花言葉は「青春の喜び」。移ろいゆく花色の姿に由来すると言われる</li>
+      <li>見頃は初夏。12月時点では開花期からは離れた季節にあたる点に留意したい</li>
+      <li>一枝の中に紫と白が同居する姿は、時間の経過そのものを映しているようにも見える</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-21'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1221'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-21');
+echo autoLink($html, 'birthflower-dec-1221');
 ?>

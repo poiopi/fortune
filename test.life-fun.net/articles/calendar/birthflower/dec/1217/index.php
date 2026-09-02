@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1217/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月17日の誕生花キルタンサスの花言葉・特徴・魅力をわかりやすく解説。「ロマンティック」を象徴する優しい花の意味を紹介します。">
+  <meta name="description" content="12月17日の誕生花キルタンサスの花言葉・特徴・魅力をわかりやすく解説。「ロマンティック」を象徴する甘い香りの下向きに咲く花の意味を紹介します。">
   <title>12月17日の誕生花はキルタンサス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キルタンサスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"筒状の花を下向きに咲かせます。ヒガンバナ科の多年草です。"}},
-      {"@type":"Question","name":"キルタンサスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"うつむくように筒状の花を下向きに咲かせる、控えめで優しい姿が、静かに寄り添うようなロマンティックな気持ちを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"キルタンサスはどんな花の形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"細長い筒状の花を下向きに咲かせるのが特徴で、うつむくような優しい印象を与えます。"}}
+      {"@type":"Question","name":"キルタンサスの花には、どんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"乳白色や黄色など、株によって色合いが異なり、さまざまな表情を楽しめます。"}},
+      {"@type":"Question","name":"キルタンサスの香りには、どんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"甘さを感じる香りが特徴で、下向きに咲く花に顔を近づけると、ふんわりと漂ってきます。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 17 · 誕生花</span>
     <h1>12月17日の誕生花はキルタンサス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キルタンサスは、ヒガンバナ科の多年草で、筒状の花を下向きに咲かせる、優しく穏やかな印象を持つ花です。花言葉は「ロマンティック」。優しい花です。</p>
+    <p class="art-lead">そっと俯くように咲く花から、甘い香りがふわりと漂う。キルタンサスは、ヒガンバナ科の多年草で、乳白色や黄色など、株によって異なる色合いの花を咲かせる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キルタンサスとは</a></li>
-      <li><a href="#meaning">キルタンサスが象徴する意味</a></li>
-      <li><a href="#charm">キルタンサスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月17日の誕生花として親しまれるキルタンサス</a></li>
+      <li><a href="#story">俯きながら香りを届ける、キルタンサスの咲き方</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キルタンサスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キルタンサスとは</h2>
-    <p>キルタンサスは、ヒガンバナ科の多年草で、12月17日の誕生花として知られています。筒状の花を下向きに咲かせる、優しく穏やかな印象を持つ花です。</p>
-  </section>
+    <h2>12月17日の誕生花として親しまれるキルタンサス</h2>
+    <p>キルタンサスは、ヒガンバナ科の多年草で、12月17日の誕生花として知られています。筒状の花を下向きに咲かせ、乳白色や黄色など、株によって異なる色合いを見せてくれます。甘い香りを持つことでも知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キルタンサスが象徴する意味</h2>
-    <p>キルタンサスの花言葉は「ロマンティック」です。うつむくように筒状の花を下向きに咲かせる、控えめで優しい姿が、静かに寄り添うようなロマンティックな気持ちを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キルタンサスの魅力</h2>
-    <p>キルタンサスの魅力は、うつむき加減に咲く筒状の花と、優しく穏やかな雰囲気にあります。12月17日生まれの方はもちろん、ロマンティックな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キルタンサスは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月17日生まれの方はもちろん、ロマンティックな想いを伝えたい贈り物としてもキルタンサスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キルタンサスはいつ頃咲きますか？</div>
-        <div class="faq-a">筒状の花を下向きに咲かせます。ヒガンバナ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キルタンサスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">うつむくように筒状の花を下向きに咲かせる、控えめで優しい姿が、静かに寄り添うようなロマンティックな気持ちを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キルタンサスはどんな花の形をしていますか？</div>
-        <div class="faq-a">細長い筒状の花を下向きに咲かせるのが特徴で、うつむくような優しい印象を与えます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キルタンサスの花には、どんな色がありますか？</div>
+        <div class="faq-a">乳白色や黄色など、株によって色合いが異なり、さまざまな表情を楽しめます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>俯きながら香りを届ける、キルタンサスの咲き方</h2>
+    <p>キルタンサスの花は、上を向いて誇らしげに咲くのではなく、静かに俯くように咲く。筒状に伸びた花の先が、まるで誰かにそっと耳打ちするかのような角度で下を向く姿は、控えめでありながらどこか印象的だ。近づいてみると、花からはほのかに甘い香りが漂ってくる。乳白色や黄色など、株によって異なる色合いも、この花の楽しみの一つになっている。俯きながらも香りでその存在を伝えるような佇まいに、花言葉「ロマンティック」という言葉がそっと重ねられているのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キルタンサスの香りには、どんな特徴がありますか？</div>
+        <div class="faq-a">甘さを感じる香りが特徴で、下向きに咲く花に顔を近づけると、ふんわりと漂ってきます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かのことを、声に出さずそっと想う時間がある。それは恋愛に限った感情ではなく、家族や友人、大切な人を静かに気にかける気持ちでもある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キルタンサスから始める小さな体験</h2>
+    <p>俯きながらも香りで存在を伝えるこの花にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>下向きに咲く花の姿を、そっと見上げてみる</li>
+      <li>大切な人を、静かに思い浮かべてみる</li>
+      <li>控えめな優しさを、今日は一つ伝えてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日にふさわしい色を知りたくなったら、開運カレンダーのラッキーカラーも見てみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ふとした瞬間に香ってきた匂いが、忘れていた記憶をそっと呼び覚ますことがある。</p>
     <ul>
-      <li>キルタンサスは筒状の花を下向きに咲かせる、12月17日の誕生花</li>
-      <li>花言葉は「ロマンティック」、下向きに咲く優しい姿に由来する</li>
-      <li>下向きに咲く筒状の花が生む、優しく穏やかな印象</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>キルタンサスは、ヒガンバナ科の多年草で、下向きに咲く筒状の花を持つ、12月17日の誕生花</li>
+      <li>花言葉は「ロマンティック」。俯きながらも香りで存在を伝える佇まいに由来すると言われる</li>
+      <li>花色は乳白色や黄色など株によって多彩。甘い香りも大きな特徴の一つ</li>
+      <li>好きな香りを一つ身にまとって出かけるだけで、今日という日が少し特別になるかもしれない</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-17'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1217'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-17');
+echo autoLink($html, 'birthflower-dec-1217');
 ?>

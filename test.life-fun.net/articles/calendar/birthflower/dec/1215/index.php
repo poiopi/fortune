@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1215/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月15日の誕生花オドントグロッサムの花言葉・特徴・魅力をわかりやすく解説。「特別」を象徴する個性的な花の意味を紹介します。">
+  <meta name="description" content="12月15日の誕生花オドントグロッサムの花言葉・特徴・魅力をわかりやすく解説。「特別」を象徴する複雑な模様が魅力の花の意味を紹介します。">
   <title>12月15日の誕生花はオドントグロッサム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オドントグロッサムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"複雑な模様の花を咲かせます。ラン科の洋ランです。"}},
-      {"@type":"Question","name":"オドントグロッサムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ほかの花にはない複雑で個性的な模様の花を咲かせる姿が、かけがえのない特別な存在であることを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"オドントグロッサムはどんな模様の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"花びらに斑点や縞のような複雑な模様が入るのが特徴で、株ごとに異なる表情を楽しめます。"}}
+      {"@type":"Question","name":"オドントグロッサムの花には、どんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"花びらに斑点や縞のような複雑な模様が入るのが特徴で、株ごとに異なる表情を楽しめます。"}},
+      {"@type":"Question","name":"オドントグロッサムが「彗星蘭」と呼ばれるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"尾を引くように広がる模様が、彗星が夜空を横切る姿を思わせることから、そう呼ばれるようになったといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 15 · 誕生花</span>
     <h1>12月15日の誕生花はオドントグロッサム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オドントグロッサムは、ラン科の洋ランで、複雑な模様の花を咲かせる、個性的で華やかな印象を持つ花です。花言葉は「特別」。個性的な花です。</p>
+    <p class="art-lead">花びらに細かな斑紋が広がり、一株ごとに違う表情を見せる。オドントグロッサムは、ラン科の洋ランで、12月から2月にかけて花期を迎える。12月15日は、その花期のちょうど入り口にあたる頃だ。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>オドントグロッサム</dd>
     <dt>花言葉</dt><dd>特別</dd>
     <dt>科名</dt><dd>ラン科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>冬（12月〜2月）</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オドントグロッサムとは</a></li>
-      <li><a href="#meaning">オドントグロッサムが象徴する意味</a></li>
-      <li><a href="#charm">オドントグロッサムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月15日の誕生花として親しまれるオドントグロッサム</a></li>
+      <li><a href="#story">複雑な模様と「彗星蘭」という名前が語るもの</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オドントグロッサムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オドントグロッサムとは</h2>
-    <p>オドントグロッサムは、ラン科の洋ランで、12月15日の誕生花として知られています。複雑な模様の花を咲かせる、個性的で華やかな印象を持つ花です。</p>
-  </section>
+    <h2>12月15日の誕生花として親しまれるオドントグロッサム</h2>
+    <p>オドントグロッサムは、ラン科の洋ランで、12月15日の誕生花として知られています。12月から2月にかけてが花期の目安とされ、12月15日はその花期が始まったばかりの頃にあたります。複雑な模様の花を咲かせることで知られ、株ごとに異なる表情を見せてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オドントグロッサムが象徴する意味</h2>
-    <p>オドントグロッサムの花言葉は「特別」です。ほかの花にはない複雑で個性的な模様の花を咲かせる姿が、かけがえのない特別な存在であることを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オドントグロッサムの魅力</h2>
-    <p>オドントグロッサムの魅力は、複雑で繊細な模様の花びらと、ほかに類を見ない個性的な花姿にあります。12月15日生まれの方はもちろん、特別な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オドントグロッサムは明るい室内を好み、風通しのよい環境で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月15日生まれの方はもちろん、特別な想いを伝えたい贈り物としてもオドントグロッサムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オドントグロッサムはいつ頃咲きますか？</div>
-        <div class="faq-a">複雑な模様の花を咲かせます。ラン科の洋ランです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オドントグロッサムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">ほかの花にはない複雑で個性的な模様の花を咲かせる姿が、かけがえのない特別な存在であることを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オドントグロッサムはどんな模様の花を咲かせますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オドントグロッサムの花には、どんな特徴がありますか？</div>
         <div class="faq-a">花びらに斑点や縞のような複雑な模様が入るのが特徴で、株ごとに異なる表情を楽しめます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>複雑な模様と「彗星蘭」という名前が語るもの</h2>
+    <p>冬の澄んだ空気の中に、オドントグロッサムの花がそっと開いていく。12月から2月という寒い季節に花期を迎えるこの花は、多くの植物が休む冬にこそ、複雑で華やかな模様を広げる。花びらに刻まれた斑点や縞模様は、一株として同じものがなく、それぞれに違う表情を見せる。そんな尾を引くような模様の連なりが、夜空を横切る彗星を思わせることから、オドントグロッサムには「彗星蘭」という別名がついたといわれている。花言葉「特別」は、ほかに二つとない模様を持つこの花の個性そのものを表しているのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オドントグロッサムが「彗星蘭」と呼ばれるのはなぜですか？</div>
+        <div class="faq-a">尾を引くように広がる模様が、彗星が夜空を横切る姿を思わせることから、そう呼ばれるようになったといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分にしか見えていない景色や感じ方が、きっと誰にでもある。それは、ありのままの姿ですでにその人らしさとして十分に価値のあるものだ。今日はそんな、自分だけの視点をそっと大切にしてみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オドントグロッサムから始める小さな体験</h2>
+    <p>複雑な模様を纏うこの花にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>複雑な模様を、じっくり観察してみる</li>
+      <li>自分らしい個性を一つ、見つめ直してみる</li>
+      <li>他とは違う視点を、今日は大切にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日という日の運気が気になったら、開運カレンダーで六曜も確かめてみてください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「特別」という言葉は、誰かより優れているという意味だけではない。ただ自分らしくあることも、十分に特別な日常の一場面になる。</p>
     <ul>
-      <li>オドントグロッサムは複雑な模様の花を咲かせる、12月15日の誕生花</li>
-      <li>花言葉は「特別」、複雑で個性的な模様に由来する</li>
-      <li>複雑で個性的な模様の花が、ひとつひとつ違う表情を見せる</li>
-      <li>明るい室内を好み、風通しのよい環境で管理するとよく育ちます</li>
+      <li>オドントグロッサムは、ラン科の洋ランで、複雑な模様の花を咲かせる、12月15日の誕生花</li>
+      <li>花言葉は「特別」。ほかに類を見ない個性的な模様に由来すると言われる</li>
+      <li>花期の目安は12月から2月。12月15日はその花期が始まったばかりの頃にあたる</li>
+      <li>帰り道にふと目に留まった何気ない景色も、自分にとっては特別な一コマかもしれない</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-15'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1215'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-15');
+echo autoLink($html, 'birthflower-dec-1215');
 ?>

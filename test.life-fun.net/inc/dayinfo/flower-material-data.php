@@ -8031,8 +8031,8 @@ const FLOWER_MATERIAL_CARDS = [
 
     // 12-24
     'シンビジューム' => [
-        'primaryType'   => 'season',
-        'secondaryType' => 'shape',
+        'primaryType'   => 'shape',
+        'secondaryType' => 'season',
         'shortageLevel' => null,
         'hook'          => '冬から春、房状の花を長く咲かせる',
         'observations'  => [
