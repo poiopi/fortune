@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フリージア（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、甘く上品な香りとともに黄色い花を咲かせます。球根から育つ、春を代表する花のひとつです。"}},
-      {"@type":"Question","name":"フリージア（黄）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「純愛」という花言葉は、澄んだ黄色の花色とまっすぐ伸びる茎の姿が、一途な愛情を思わせることに由来するとされています。"}},
-      {"@type":"Question","name":"フリージアには黄色以外の色もありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。フリージアは白や紫など色によって花言葉が異なり、黄色は「純愛」を表すとされています。"}}
+      {"@type":"Question","name":"フリージア（黄）はいつ頃香りが強くなりますか？","acceptedAnswer":{"@type":"Answer","text":"早春、花が開き始める頃から香りが強くなります。日中の暖かい時間帯に、特に香りを感じやすいといわれています。"}},
+      {"@type":"Question","name":"フリージア（黄）の花言葉「純愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"香り高くまっすぐに伸びる姿が、飾り気のない素直な気持ちを連想させることに由来するといわれています。"}},
+      {"@type":"Question","name":"香りが苦手な場合はどう楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"香りの感じ方には個人差があります。無理に近づけず、少し離れた場所に飾って楽しむのもよい方法です。"}}
     ]
   }
   </script>
@@ -107,7 +117,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"2月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/"},
-      {"@type":"ListItem","position":6,"name":"2月1日の誕生花（フリージア）とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/0201/"}
+      {"@type":"ListItem","position":6,"name":"2月1日の誕生花（フリージア（黄））とは","item":"https://life-fun.net/articles/calendar/birthflower/feb/0201/"}
     ]
   }
   </script>
@@ -123,20 +133,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/feb/">2月の誕生花とは</a><span>›</span>2月1日の誕生花（フリージア）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/feb/">2月の誕生花とは</a><span>›</span>2月1日の誕生花（フリージア（黄））とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">FEBRUARY 1 · 誕生花</span>
     <h1>2月1日の誕生花はフリージア（黄）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フリージア（黄）は、アヤメ科の球根植物で、春に香りのよい黄色い花を咲かせる2月1日の誕生花です。花言葉は「純愛」。可憐な香りとともに春の訪れを告げる花です。</p>
+    <p class="art-lead">1月から2月へ、季節はまだ肌寒い早春。そんな中で穂状に連なり、甘く優しい香りを漂わせるのがフリージア（黄）です。今日の誕生花として、その香りにまつわる物語を少しだけのぞいてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>フリージア（黄）</dd>
     <dt>花言葉</dt><dd>純愛</dd>
     <dt>科名</dt><dd>アヤメ科</dd>
-    <dt>見頃</dt><dd>春</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フリージア（黄）とは</a></li>
-      <li><a href="#meaning">フリージア（黄）が象徴する意味</a></li>
-      <li><a href="#charm">フリージア（黄）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">甘い香りを穂状に届ける、フリージア（黄）の姿</a></li>
+      <li><a href="#story">2月1日、フリージア（黄）の香りが教えてくれること</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フリージア（黄）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フリージア（黄）とは</h2>
-    <p>フリージア（黄）は、アヤメ科の球根植物で、2月1日の誕生花として知られています。春になると甘く上品な香りを漂わせながら、鮮やかな黄色い花を茎の先にいくつも咲かせ、切り花としても長く親しまれています。</p>
-  </section>
+    <h2>甘い香りを穂状に届ける、フリージア（黄）の姿</h2>
+    <p>フリージア（黄）は、アヤメ科の球根植物です。早春になると、まっすぐ伸びた茎に沿って黄色い花が並んで咲き、あたりに甘く爽やかな香りを漂わせます。同じ仲間のフリージアは色によって花言葉が異なりますが、いずれも早春に香りの良い花を咲かせ、春の訪れを告げる花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フリージア（黄）が象徴する意味</h2>
-    <p>フリージア（黄）の花言葉は「純愛」です。飾り気のない澄んだ黄色の花色と、まっすぐに伸びる茎の姿が、一途で純粋な愛情を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フリージア（黄）の魅力</h2>
-    <p>フリージア（黄）の魅力は、なんといってもその香りの良さです。花束やアレンジメントに使われることも多く、春の訪れを感じさせる明るい黄色は、贈られた人の気持ちを軽やかにしてくれます。2月1日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フリージア（黄）は球根植物のため、水はけの良い土に植え、生育期はしっかりと水を与えつつ、休眠期は乾燥気味に管理するのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月1日生まれの方はもちろん、まっすぐな愛情を伝えたい贈り物としてもフリージア（黄）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フリージア（黄）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に、甘く上品な香りとともに黄色い花を咲かせます。球根から育つ、春を代表する花のひとつです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フリージア（黄）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「純愛」という花言葉は、澄んだ黄色の花色とまっすぐ伸びる茎の姿が、一途な愛情を思わせることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フリージアには黄色以外の色もありますか？</div>
-        <div class="faq-a">はい。フリージアは白や紫など色によって花言葉が異なり、黄色は「純愛」を表すとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フリージア（黄）はいつ頃香りが強くなりますか？</div>
+        <div class="faq-a">早春、花が開き始める頃から香りが強くなります。日中の暖かい時間帯に、特に香りを感じやすいといわれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月1日、フリージア（黄）の香りが教えてくれること</h2>
+    <p>フリージア（黄）の魅力は、なんといってもその香りにあります。甘さの中にどこかすっきりとした爽やかさを含む香りは、部屋に一輪飾るだけで空気ごと入れ替わったような気持ちにさせてくれます。香水や芳香剤の香りづけにも使われるほど、暮らしの中で親しまれてきた香りです。花そのものは、まっすぐな茎に沿って黄色い花が連なって咲く、すっきりとした佇まい。その香りとまっすぐな姿から、フリージア（黄）には「純愛」という花言葉が贈られてきたといわれています。飾り気のない、まっすぐな気持ちを象徴する言葉として受け取られてきました。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フリージア（黄）の花言葉「純愛」の由来は？</div>
+        <div class="faq-a">香り高くまっすぐに伸びる姿が、飾り気のない素直な気持ちを連想させることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>甘い香りを深く吸い込むと、こわばっていた気持ちがふっとゆるむ瞬間があります。今日は、そんな小さな香りの力を借りて、心の中を少しだけ晴れやかにしてみませんか。難しく考えなくても、香りはただそこにあるだけで、あなたの気分を静かに変えてくれるかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フリージア（黄）から始める小さな体験</h2>
+    <p>香り高いフリージア（黄）にあやかって、今日はこんな小さな体験から始めてみるのもおすすめです。</p>
+    <ul class="exp-list">
+      <li>黄色いフリージアを一輪、机の上に飾ってみる</li>
+      <li>花に鼻を近づけて香りを確かめてみる</li>
+      <li>黄色の小物を身につけて出かけてみる</li>
+      <li>春の訪れを感じる香りを深呼吸で味わう</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">香りが苦手な場合はどう楽しめますか？</div>
+        <div class="faq-a">香りの感じ方には個人差があります。無理に近づけず、少し離れた場所に飾って楽しむのもよい方法です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">こんな小さな体験と合わせて、今日の六曜も覗いてみると、香りに包まれた一日がさらに心地よく感じられるかもしれません。開運カレンダーでは、六曜や月齢などその日ならではの情報もあわせて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>フリージア（黄）は、甘い香りを通して素直な気持ちを思い出させてくれる、2月の始まりにふさわしい誕生花です。</p>
     <ul>
-      <li>フリージア（黄）は春に香りのよい黄色い花を咲かせる、2月1日の誕生花</li>
-      <li>花言葉は「純愛」、一途で純粋な愛情を象徴する花とされる</li>
-      <li>甘く上品な香りが魅力で、花束やアレンジメントにも人気</li>
-      <li>球根植物のため、休眠期は乾燥気味に管理したい</li>
+      <li>フリージア（黄）はアヤメ科の球根植物で、早春に黄色い花を穂状に咲かせる</li>
+      <li>甘く爽やかな香りが特徴で、香水などにも使われるほど暮らしに親しまれてきた</li>
+      <li>花言葉は「純愛」。まっすぐな姿と香りから、飾り気のない気持ちを象徴するとされる</li>
+      <li>香りの感じ方には個人差があるため、無理せず自分に合った距離で楽しみたい</li>
     </ul>
   </section>
 

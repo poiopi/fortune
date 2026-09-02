@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0616/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月16日の誕生花カンパニュラの花言葉・特徴・魅力をわかりやすく解説。「望み」を象徴する釣鐘形の花の意味を紹介します。">
+  <meta name="description" content="6月16日の誕生花カンパニュラの花言葉・特徴・魅力をわかりやすく解説。初夏に釣鐘形の花を咲かせる、キキョウ科「望み」の花を紹介します。">
   <title>6月16日の誕生花はカンパニュラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カンパニュラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に釣鐘形の花を咲かせます。キキョウ科の多年草です。"}},
-      {"@type":"Question","name":"カンパニュラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「望み」という花言葉は、釣鐘のような花が上を向いて咲く姿が、希望や願いを託す様子を連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"カンパニュラという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ラテン語で「小さな鐘」を意味する言葉に由来し、釣鐘形の花の形にちなんで名付けられたと言われています。"}}
+      {"@type":"Question","name":"カンパニュラはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"初夏に釣鐘形の花を咲かせる、キキョウ科の多年草です。涼やかで優しい印象を持つことから、庭先や鉢植えでも親しまれています。"}},
+      {"@type":"Question","name":"カンパニュラの花言葉「望み」の由来は？","acceptedAnswer":{"@type":"Answer","text":"釣鐘のような花がわずかに揺れる姿が、心の奥にある願いごとを揺り動かすように見えることから生まれたと伝えられています。"}},
+      {"@type":"Question","name":"カンパニュラはどんな場所で楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"鉢植えとして玄関先に置いたり、庭に群生させたりと、涼やかな雰囲気を楽しめる花です。切り花としてもよく利用されます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 16 · 誕生花</span>
     <h1>6月16日の誕生花はカンパニュラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カンパニュラは、キキョウ科の多年草で、初夏に釣鐘形の花を咲かせる6月16日の誕生花です。花言葉は「望み」。優しく涼やかな印象の花です。</p>
+    <p class="art-lead">初夏の庭に、うつむきがちな釣鐘形の花がいくつも揺れ始めます。カンパニュラは、風が吹くたびに小さく音を立てそうな軽やかさをまとう、キキョウ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カンパニュラとは</a></li>
-      <li><a href="#meaning">カンパニュラが象徴する意味</a></li>
-      <li><a href="#charm">カンパニュラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月16日の誕生花として親しまれるカンパニュラ</a></li>
+      <li><a href="#story">風に揺れて望みを映す、初夏のカンパニュラ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カンパニュラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カンパニュラとは</h2>
-    <p>カンパニュラは、キキョウ科の多年草で、6月16日の誕生花として知られています。初夏になると釣鐘形の花を咲かせ、優しく涼やかな印象を漂わせる花です。</p>
-  </section>
+    <h2>6月16日の誕生花として親しまれるカンパニュラ</h2>
+    <p>カンパニュラは、キキョウ科の多年草です。初夏になると、釣鐘のような形の花を茎の先にいくつも咲かせ、優しく涼やかな印象を庭にもたらします。西洋では長く親しまれてきた花のひとつで、6月16日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カンパニュラが象徴する意味</h2>
-    <p>カンパニュラの花言葉は「望み」です。釣鐘のような形の花が上を向いて咲く姿が、未来への希望や願いを託す様子を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カンパニュラの魅力</h2>
-    <p>カンパニュラの魅力は、釣鐘形のかわいらしい花が茎いっぱいに連なって咲く可憐さと、涼やかな青紫や白の花色にあります。鉢植えや花壇に群生させると、優しい雰囲気を演出してくれます。6月16日生まれの方はもちろん、願いを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カンパニュラは日当たりと風通しの良い場所を好み、高温多湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月16日生まれの方はもちろん、願いを届けたい贈り物としてもカンパニュラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンパニュラはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に釣鐘形の花を咲かせます。キキョウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンパニュラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「望み」という花言葉は、釣鐘のような花が上を向いて咲く姿が、希望や願いを託す様子を連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンパニュラという名前の由来は何ですか？</div>
-        <div class="faq-a">ラテン語で「小さな鐘」を意味する言葉に由来し、釣鐘形の花の形にちなんで名付けられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カンパニュラはどんな植物ですか？</div>
+        <div class="faq-a">初夏に釣鐘形の花を咲かせる、キキョウ科の多年草です。涼やかで優しい印象を持つことから、庭先や鉢植えでも親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>風に揺れて望みを映す、初夏のカンパニュラ</h2>
+    <p>風が抜けるたびに、カンパニュラの花はわずかに揺れて、涼やかな音を立てそうな気配を見せます。初夏はまだ夏の暑さに至らない、期待と少しの不安が入り混じる季節です。カンパニュラはそんな時期にふさわしく、うつむき加減に咲きながらも、茎をまっすぐに伸ばして立ち続ける花です。釣鐘のような花の形は、まるで何かを静かに知らせようとしているようにも見えます。心の奥にそっとしまわれた願いごとを揺り動かすようなその姿から、カンパニュラには「望み」という花言葉が結びついたと伝えられています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カンパニュラの花言葉「望み」の由来は？</div>
+        <div class="faq-a">釣鐘のような花がわずかに揺れる姿が、心の奥にある願いごとを揺り動かすように見えることから生まれたと伝えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>叶うかどうかわからないことを、それでも胸の奥にしまっている人は多いはずです。カンパニュラの花は、うつむきながらも茎をまっすぐに伸ばし、風に揺れることを恐れません。声に出さない願いごとも、揺れながら少しずつ育っていくものなのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カンパニュラから始める小さな体験</h2>
+    <p>涼やかに揺れるカンパニュラを眺めながら、こんな時間を取り入れてみるのはいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>釣鐘形の花をじっくり観察してみる</li>
+      <li>叶えたいことを一つ、紙に書き出してみる</li>
+      <li>涼やかな色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カンパニュラはどんな場所で楽しめますか？</div>
+        <div class="faq-a">鉢植えとして玄関先に置いたり、庭に群生させたりと、涼やかな雰囲気を楽しめる花です。切り花としてもよく利用されます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心の中の望みを見つめ直したい今日は、月齢・月相やラッキーナンバーもあわせて確認してみませんか。開運カレンダーでは、今日の月の満ち欠けとラッキーナンバーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>うつむきながらも茎を伸ばし続けるカンパニュラの姿は、声にならない願いごともまた大切にしていいのだと気づかせてくれます。</p>
     <ul>
-      <li>カンパニュラは初夏に釣鐘形の花を咲かせる、6月16日の誕生花</li>
-      <li>花言葉は「望み」、上を向いて咲く花姿に由来する</li>
-      <li>可憐な花と涼やかな花色が魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>カンパニュラはキキョウ科の多年草で、初夏に釣鐘形の花を咲かせる、6月16日の誕生花</li>
+      <li>花言葉は「望み」。釣鐘形の花が揺れる姿に由来するとされる</li>
+      <li>涼やかで優しい印象が魅力</li>
+      <li>鉢植え・庭・切り花などさまざまな場所で楽しめる</li>
     </ul>
   </section>
 

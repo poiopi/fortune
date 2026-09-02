@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0717/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月17日の誕生花アメリカデイコの花言葉・特徴・魅力をわかりやすく解説。「夢の力」を象徴する南国的な赤い花の意味を紹介します。">
+  <meta name="description" content="7月17日の誕生花アメリカデイコの花言葉・特徴・魅力をわかりやすく解説。夏に赤い花を咲かせる、南国的な雰囲気を持つマメ科の花木を紹介します。">
   <title>7月17日の誕生花はアメリカデイコ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アメリカデイコはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に赤い花を咲かせます。マメ科の落葉高木です。"}},
-      {"@type":"Question","name":"アメリカデイコの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"燃えるように鮮やかな赤い花が枝いっぱいに咲く力強い姿が、夢を実現させる力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アメリカデイコはどこでよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"沖縄県の県花としても知られ、温暖な地域の街路樹や公園木として親しまれています。"}}
+      {"@type":"Question","name":"アメリカデイコはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏に赤い花を咲かせる、マメ科の落葉高木です。南国的な雰囲気を持つ花木として知られています。"}},
+      {"@type":"Question","name":"アメリカデイコの花言葉『夢の力』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夏空の下で高木いっぱいに咲く赤い花の情熱的な色合いは、心に抱く夢や願いのエネルギーを思わせ、『夢の力』という花言葉の由来になったといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 17 · 誕生花</span>
     <h1>7月17日の誕生花はアメリカデイコ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アメリカデイコは、マメ科の落葉高木で、夏になると赤い花を枝いっぱいに咲かせ、南国的な雰囲気を漂わせる花木です。花言葉は「夢の力」。南国的な雰囲気を漂わせる花木です。</p>
+    <p class="art-lead">夏空の下、燃えるような赤い花が高木いっぱいに咲き誇っています。アメリカデイコは、南国を思わせる情熱的な佇まいで夏を彩る花木です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アメリカデイコとは</a></li>
-      <li><a href="#meaning">アメリカデイコが象徴する意味</a></li>
-      <li><a href="#charm">アメリカデイコの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月17日の誕生花として親しまれるアメリカデイコ</a></li>
+      <li><a href="#story">燃えるような赤が運ぶ、アメリカデイコの夢</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アメリカデイコから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アメリカデイコとは</h2>
-    <p>アメリカデイコは、マメ科の落葉高木で、7月17日の誕生花として知られています。夏になると赤い花を枝いっぱいに咲かせ、南国的な雰囲気を漂わせる花木です。</p>
-  </section>
+    <h2>7月17日の誕生花として親しまれるアメリカデイコ</h2>
+    <p>アメリカデイコは、マメ科の落葉高木です。夏に赤い花を咲かせ、南国的な雰囲気を持つ花木として知られています。7月17日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アメリカデイコが象徴する意味</h2>
-    <p>アメリカデイコの花言葉は「夢の力」です。燃えるように鮮やかな赤い花が枝いっぱいに咲く力強い姿が、夢を実現させる力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アメリカデイコの魅力</h2>
-    <p>アメリカデイコの魅力は、南国を思わせる鮮やかな赤い花色と、枝いっぱいに咲き誇る大胆な存在感にあります。沖縄県の県花として、南国の暮らしに根付いています。7月17日生まれの方はもちろん、夢を応援したい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アメリカデイコは日当たりを好み、寒さにやや弱いため温暖な場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月17日生まれの方はもちろん、夢を応援したい贈り物としてもアメリカデイコは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アメリカデイコはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に赤い花を咲かせます。マメ科の落葉高木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アメリカデイコの花言葉の由来は何ですか？</div>
-        <div class="faq-a">燃えるように鮮やかな赤い花が枝いっぱいに咲く力強い姿が、夢を実現させる力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アメリカデイコはどこでよく見られますか？</div>
-        <div class="faq-a">沖縄県の県花としても知られ、温暖な地域の街路樹や公園木として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アメリカデイコはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">夏に赤い花を咲かせる、マメ科の落葉高木です。南国的な雰囲気を持つ花木として知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>燃えるような赤が運ぶ、アメリカデイコの夢</h2>
+    <p>マメ科の落葉高木であるアメリカデイコは、夏になると高木いっぱいに赤い花を広げ、南国を訪れたような開放感を運んできます。青空との対比の中でひときわ鮮烈に映るその赤は、遠くからでも自然と目を引きつけます。この情熱的な色合いから『夢の力』という花言葉が生まれたと考える人もいるでしょう。信じ続ける気持ちが、いつか形になっていく――そんな連想を誘う色なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アメリカデイコの花言葉『夢の力』の由来は何ですか？</div>
+        <div class="faq-a">夏空の下で高木いっぱいに咲く赤い花の情熱的な色合いは、心に抱く夢や願いのエネルギーを思わせ、『夢の力』という花言葉の由来になったといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心の奥にしまったままの夢はありませんか。声に出すことも、紙に書き出すことも、夢を育てる小さな一歩になります。今日は、その夢を少しだけ外に出してみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アメリカデイコから始める小さな体験</h2>
+    <p>夏空の下で赤い花を咲かせるアメリカデイコにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤い花をじっくり観察してみる</li>
+      <li>今、心に描いている夢を一つ紙に書いてみる</li>
+      <li>南国を思わせる色や香りを取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">心に描いた夢を信じたい今日は、年九星やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、年九星とおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>夏空に向かって赤い花を咲かせ続ける姿は、夢を信じ抜く強さそのものなのかもしれない。</p>
     <ul>
-      <li>アメリカデイコは夏に赤い花を咲かせる、7月17日の誕生花</li>
-      <li>花言葉は「夢の力」、力強く咲き誇る花姿に由来する</li>
-      <li>南国的な鮮やかな赤い花色が魅力</li>
-      <li>日当たりを好み、寒さにやや弱い</li>
+      <li>アメリカデイコは夏に赤い花を咲かせる、マメ科の落葉高木で、7月17日の誕生花</li>
+      <li>花言葉は「夢の力」。情熱的な赤い色合いが夢や願いのエネルギーと重ねられてきたとされる</li>
+      <li>南国的な雰囲気を持つ花木として知られる</li>
+      <li>高木いっぱいに咲く鮮烈な赤が魅力</li>
     </ul>
   </section>
 

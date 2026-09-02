@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0425/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月25日の誕生花モッコウバラの花言葉・特徴・魅力をわかりやすく解説。「初恋」を象徴するトゲのないつるバラの意味を紹介します。">
+  <meta name="description" content="4月25日の誕生花モッコウバラの花言葉・特徴・魅力をわかりやすく解説。房状にたくさん咲きこぼれる小輪の花が象徴する「初恋」の意味を紹介します。">
   <title>4月25日の誕生花はモッコウバラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"モッコウバラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小輪の花を房状にたくさん咲かせます。バラ科のつる性低木で、トゲがほとんどないのが特徴です。"}},
-      {"@type":"Question","name":"モッコウバラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「初恋」という花言葉は、棘のない優しい枝に控えめに咲きこぼれる花の様子に由来すると言われています。"}},
-      {"@type":"Question","name":"モッコウバラは育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"はい。トゲが少なく丈夫なため、初めてつるバラを育てる方にもおすすめの品種です。"}}
+      {"@type":"Question","name":"モッコウバラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小輪の花を房状にたくさん咲かせます。バラ科のつる性低木で、たくさんの花を咲かせる姿が特徴です。"}},
+      {"@type":"Question","name":"モッコウバラの花言葉「初恋」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が一斉に房状に咲きこぼれる様子が、胸がきゅんとするような、まだ何色にも染まっていない初々しい気持ちを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"モッコウバラと一般的なバラの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"モッコウバラはつる性で、棘がほとんどないことが多いとされる点が、棘のある一般的なバラとは異なる特徴です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 25 · 誕生花</span>
     <h1>4月25日の誕生花はモッコウバラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">モッコウバラは、バラ科のつる性低木で、春に小輪の花を房状にたくさん咲かせる4月25日の誕生花です。花言葉は「初恋」。清々しい印象の花です。</p>
+    <p class="art-lead">4月25日、小さな花が房状に咲きこぼれる頃。モッコウバラは、棘を持たないやわらかな咲き方で、胸がきゅんとするようなときめきを思い出させてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">モッコウバラとは</a></li>
-      <li><a href="#meaning">モッコウバラが象徴する意味</a></li>
-      <li><a href="#charm">モッコウバラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月25日の誕生花として親しまれるモッコウバラ</a></li>
+      <li><a href="#story">咲きこぼれる小花が伝える、モッコウバラの初恋</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、モッコウバラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>モッコウバラとは</h2>
-    <p>モッコウバラは、バラ科のつる性低木で、4月25日の誕生花として知られています。トゲがほとんどなく育てやすいつるバラとして人気があり、小輪の花を株いっぱいに咲かせ、フェンスやアーチを優しく彩ります。</p>
-  </section>
+    <h2>4月25日の誕生花として親しまれるモッコウバラ</h2>
+    <p>モッコウバラは、バラ科のつる性低木です。春になると、小輪の花を房状にたくさん咲かせます。一般的なバラと違って棘がほとんどないことが多いとされ、フェンスや壁面を優しく覆うように育つことから、庭木としても親しまれています。この愛らしい咲き方から、4月25日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>モッコウバラが象徴する意味</h2>
-    <p>モッコウバラの花言葉は「初恋」です。棘のない優しい枝ぶりに、無数の小さな花が控えめに咲きこぼれる様子が、まだ言葉にならない初々しい恋心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>モッコウバラの魅力</h2>
-    <p>モッコウバラの魅力は、株全体を覆うように咲く小輪の花が作り出す、清々しく華やかな景観にあります。トゲが少なく丈夫で育てやすいことから、初めてつるバラを育てる方にも選ばれる花です。4月25日生まれの方はもちろん、初々しい想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>モッコウバラは日当たりの良い場所を好み、丈夫で育てやすいつるバラです。フェンスやアーチに誘引しながら、伸びた枝を整理して育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月25日生まれの方はもちろん、初々しい想いを届けたい贈り物としてもモッコウバラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">モッコウバラはいつ頃咲きますか？</div>
-        <div class="faq-a">春に小輪の花を房状にたくさん咲かせます。バラ科のつる性低木で、トゲがほとんどないのが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モッコウバラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「初恋」という花言葉は、棘のない優しい枝に控えめに咲きこぼれる花の様子に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">モッコウバラは育てやすいですか？</div>
-        <div class="faq-a">はい。トゲが少なく丈夫なため、初めてつるバラを育てる方にもおすすめの品種です。</div>
+        <div class="faq-a">春に小輪の花を房状にたくさん咲かせます。バラ科のつる性低木で、たくさんの花を咲かせる姿が特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>咲きこぼれる小花が伝える、モッコウバラの初恋</h2>
+    <p>バラといえば、大きな一輪が堂々と咲く姿を思い浮かべる人が多いかもしれません。しかしモッコウバラは違います。小さな花が房になって、数えきれないほどたくさん、あふれるように咲きこぼれるのがこの花の持ち味です。しかもその花には、多くのバラが持つ鋭い棘がほとんどありません。守りを固めるような硬さを持たず、ただ無防備に、たくさんの花を惜しみなく咲かせる。その姿は、まだ誰かを守ろうとも構えようともしていない、素直でまっすぐな気持ちに似ています。一輪一輪は小さくても、集まればあふれるほどの華やかさになる。そんな咲きこぼれるような愛らしさから、モッコウバラには「初恋」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">モッコウバラの花言葉「初恋」の由来は？</div>
+        <div class="faq-a">小さな花が一斉に房状に咲きこぼれる様子が、胸がきゅんとするような、まだ何色にも染まっていない初々しい気持ちを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>まっすぐで飾らない気持ちには、それだけで人の心を動かす力があります。今日はふと胸がきゅんとするような瞬間を、大切に受け止めてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、モッコウバラから始める小さな体験</h2>
+    <p>棘を持たずに房状の花を咲かせるモッコウバラにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>房状にたくさん咲く小輪の花を探してみる</li>
+      <li>初恋の記憶をそっと思い出してみる</li>
+      <li>小さな花をまとめて飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">モッコウバラと一般的なバラの違いは何ですか？</div>
+        <div class="faq-a">モッコウバラはつる性で、棘がほとんどないことが多いとされる点が、棘のある一般的なバラとは異なる特徴です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">胸がきゅんとするときめきを大切にしたい今日は、ラッキーナンバーや月齢・月相も参考にしてみませんか。開運カレンダーでは、その日のラッキーナンバーと月齢・月相をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月25日、棘を持たず房状にたくさん咲きこぼれるモッコウバラは、まだ何色にも染まっていない初々しい気持ちを思い出させてくれる花です。</p>
     <ul>
-      <li>モッコウバラは春に小輪の花を房状に咲かせる、4月25日の誕生花</li>
-      <li>花言葉は「初恋」、控えめに咲きこぼれる花姿に由来する</li>
-      <li>株全体を覆う清々しく華やかな景観が魅力</li>
-      <li>日当たりの良い場所で、フェンスなどに誘引して育てたい</li>
+      <li>モッコウバラはバラ科のつる性低木で、春に小輪の花を房状に咲かせる</li>
+      <li>棘がほとんどないとされ、庭木としても親しまれている花である</li>
+      <li>花言葉は「初恋」。無防備にたくさん咲きこぼれる姿に由来するといわれる</li>
+      <li>初恋は、まだ何色にも染まっていない初々しい気持ちを表す言葉ともいえる</li>
     </ul>
   </section>
 

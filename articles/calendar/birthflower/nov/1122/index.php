@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1122/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月22日の誕生花ワビスケの花言葉・特徴・魅力をわかりやすく解説。「簡素」を象徴する侘びた風情の花の意味を紹介します。">
+  <meta name="description" content="11月22日の誕生花ワビスケの花言葉・特徴・魅力をわかりやすく解説。「簡素」を象徴する侘びた風情を持つ常緑低木の意味を紹介します。">
   <title>11月22日の誕生花はワビスケ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ワビスケはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から早春に小輪の花を咲かせます。ツバキ科の常緑低木です。"}},
-      {"@type":"Question","name":"ワビスケの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"冬から早春に小輪の花を控えめに咲かせる侘びた風情が、飾らない簡素さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ワビスケとツバキの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"ワビスケは花が小輪で、雄しべが退化しているためほとんど実をつけない点がツバキと異なります。"}}
+      {"@type":"Question","name":"ワビスケとツバキはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"ワビスケは花が小輪で雄しべが退化しているため、ほとんど実をつけない点がツバキと異なります。"}},
+      {"@type":"Question","name":"ワビスケの花言葉「簡素」はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"多くを語らず、一輪だけでそっと心に残る、その気取らない咲き方に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 22 · 誕生花</span>
     <h1>11月22日の誕生花はワビスケ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ワビスケは、ツバキ科の常緑低木で、冬から早春に小輪の花を咲かせる、簡素で奥ゆかしい印象を持つ花です。花言葉は「簡素」。奥ゆかしい花です。</p>
+    <p class="art-lead">飾り気のない小さな花に、なぜ心を動かされるのだろう。ツバキ科の常緑低木ワビスケは、冬から早春にかけてひっそりと花を咲かせる椿で、その控えめな佇まいがそのまま「簡素」という花言葉になった。11月22日は、そんな引き算の美しさを思う一日でもある。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ワビスケとは</a></li>
-      <li><a href="#meaning">ワビスケが象徴する意味</a></li>
-      <li><a href="#charm">ワビスケの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月22日の誕生花として親しまれるワビスケ</a></li>
+      <li><a href="#story">簡素の中にある、小さな造形美</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ワビスケから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ワビスケとは</h2>
-    <p>ワビスケは、ツバキ科の常緑低木で、11月22日の誕生花として知られています。冬から早春に小輪の花を咲かせる、侘びた風情を持つ茶花です。</p>
-  </section>
+    <h2>11月22日の誕生花として親しまれるワビスケ</h2>
+    <p>ワビスケは、ツバキ科の常緑低木として知られる、11月22日の誕生花です。花が咲くのは冬から早春ですが、小輪で控えめな花姿にちなみ、簡素を象徴する花としてこの日に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ワビスケが象徴する意味</h2>
-    <p>ワビスケの花言葉は「簡素」です。冬から早春に小輪の花を控えめに咲かせる侘びた風情が、飾らない簡素さを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ワビスケの魅力</h2>
-    <p>ワビスケの魅力は、小輪ながら凛と咲く控えめな美しさと、茶花として愛されてきた侘びた風情にあります。11月22日生まれの方はもちろん、簡素な美意識を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ワビスケは日当たりから半日陰を好み、剪定を行いながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月22日生まれの方はもちろん、簡素な美意識を伝えたい贈り物としてもワビスケは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ワビスケはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から早春に小輪の花を咲かせます。ツバキ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ワビスケの花言葉の由来は何ですか？</div>
-        <div class="faq-a">冬から早春に小輪の花を控えめに咲かせる侘びた風情が、飾らない簡素さを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ワビスケとツバキの違いは何ですか？</div>
-        <div class="faq-a">ワビスケは花が小輪で、雄しべが退化しているためほとんど実をつけない点がツバキと異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ワビスケとツバキはどう違いますか？</div>
+        <div class="faq-a">ワビスケは花が小輪で雄しべが退化しているため、ほとんど実をつけない点がツバキと異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>簡素の中にある、小さな造形美</h2>
+    <p>ワビスケの花は、一般的な椿と比べてひとまわり小さく、花びらの数も少ないため、どこか簡素な印象を与える。近づいて見ると、雄しべが退化して小さくまとまっており、これが実をほとんどつけない理由にもなっている。ツバキ科の常緑低木であるワビスケが花を咲かせるのは冬から早春で、茶室の床の間に一輪だけ活けられることも多い。この飾り立てない小さな花の佇まいが、「簡素」という花言葉の由来になっている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ワビスケの花言葉「簡素」はどこから来ていますか？</div>
+        <div class="faq-a">多くを語らず、一輪だけでそっと心に残る、その気取らない咲き方に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>飾りを削ぎ落としたところに、かえって心を打つ静けさが残ることがある。今日は静かな時間を、少し多めに取ってみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ワビスケから始める小さな体験</h2>
+    <p>飾り気のない小輪の花を静かに咲かせるワビスケにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>小輪の花の静かなたたずまいをじっくり眺めてみる</li>
+      <li>茶道の文化について調べてみる</li>
+      <li>身の回りのものを一つ、シンプルに整えてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日が特別な日かどうか気になるときは、開運カレンダーで吉日情報もチェックしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さく、飾らないこと。それがワビスケの魅力を、かえって際立たせている。</p>
     <ul>
-      <li>ワビスケは冬から早春に小輪の花を咲かせる、11月22日の誕生花</li>
-      <li>花言葉は「簡素」、控えめに咲く侘びた風情に由来する</li>
-      <li>茶花として愛されてきた侘びた風情が魅力</li>
-      <li>日当たりから半日陰を好み、剪定を行いながら管理するとよく育ちます</li>
+      <li>ワビスケは、ツバキ科の常緑低木で、冬から早春に小輪の花を咲かせる、11月22日の誕生花</li>
+      <li>花言葉は「簡素」。飾らず慎ましく咲くその小輪の花姿に由来すると言われる</li>
+      <li>花が咲くのは冬から早春だが、その簡素な佇まいにちなんでこの日の誕生花に選ばれている</li>
+      <li>飾らないシンプルさを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

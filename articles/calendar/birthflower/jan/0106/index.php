@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カーネーションの色によって花言葉は違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、ピンクは「熱愛」を表すとされています。"}},
-      {"@type":"Question","name":"カーネーション（ピンク）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「熱愛」という花言葉は、幾重にも重なる花びらが生み出す華やかさと鮮やかなピンク色に由来するとされています。"}},
-      {"@type":"Question","name":"カーネーションはなぜ贈り物によく選ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"優しい花姿と豊富な色合いから、感謝や愛情を伝える贈り物として古くから親しまれてきました。"}}
+      {"@type":"Question","name":"カーネーション（ピンク）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"カーネーションは春を中心に花を咲かせます。切り花としては一年を通して花屋などで見かけることができます。"}},
+      {"@type":"Question","name":"カーネーション（ピンク）の花言葉「熱愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"幾重にも重なる花びらが持つ温かみのある印象から、まっすぐで熱い想いを表す「熱愛」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 6 · 誕生花</span>
     <h1>1月6日の誕生花はカーネーション（ピンク）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カーネーション（ピンク）は、幾重にも重なる花びらが特徴の1月6日の誕生花です。花言葉は「熱愛」。優しい印象のピンク色が魅力です。</p>
+    <p class="art-lead">年始の挨拶回りもひと段落する1月6日。花屋の店先では、幾重にも花びらを重ねたカーネーション（ピンク）が優しい表情を見せています。今日はその重なりに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>カーネーション（ピンク）</dd>
     <dt>花言葉</dt><dd>熱愛</dd>
     <dt>科名</dt><dd>ナデシコ科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>春</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カーネーション（ピンク）とは</a></li>
-      <li><a href="#meaning">カーネーション（ピンク）が象徴する意味</a></li>
-      <li><a href="#charm">カーネーション（ピンク）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">幾重にも重なる、カーネーション（ピンク）の優しい花びら</a></li>
+      <li><a href="#story">1月6日、ピンクの花びらが伝える熱い想い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カーネーション（ピンク）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カーネーション（ピンク）とは</h2>
-    <p>カーネーション（ピンク）は、ナデシコ科の多年草で、1月6日の誕生花として知られています。幾重にも重なる花びらが咲かせる優しいピンク色の花で、母の日の贈り物としても広く親しまれています。</p>
-  </section>
+    <h2>幾重にも重なる、カーネーション（ピンク）の優しい花びら</h2>
+    <p>カーネーション（ピンク）は、ナデシコ科の多年草です。幾重にも重なる花びらが特徴で、同じ仲間のカーネーションは春を中心に花を咲かせ、母の日にも親しまれる温かみのある花として知られています。ピンク色の花びらが幾重にも重なり合う様子は、見る人に柔らかな印象を与えます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カーネーション（ピンク）が象徴する意味</h2>
-    <p>カーネーション（ピンク）の花言葉は「熱愛」です。幾重にも重なり合う花びらが生み出す華やかさと、鮮やかなピンク色から、深く熱い想いを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カーネーション（ピンク）の魅力</h2>
-    <p>カーネーション（ピンク）の魅力は、幾重にも重なる花びらが作る優しく柔らかな印象と、見る人の心を和ませるピンク色にあります。花束やアレンジメントの定番としても長く愛されている花です。1月6日生まれの方はもちろん、熱い想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カーネーションは日当たりと風通しの良い場所を好み、過湿を嫌うため、水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月6日生まれの方はもちろん、熱い想いを伝えたい贈り物としてもカーネーションは定番の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カーネーションの色によって花言葉は違いますか？</div>
-        <div class="faq-a">はい、色によって花言葉が異なり、ピンクは「熱愛」を表すとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（ピンク）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「熱愛」という花言葉は、幾重にも重なる花びらが生み出す華やかさと鮮やかなピンク色に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カーネーションはなぜ贈り物によく選ばれるのですか？</div>
-        <div class="faq-a">優しい花姿と豊富な色合いから、感謝や愛情を伝える贈り物として古くから親しまれてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（ピンク）はいつ頃咲きますか？</div>
+        <div class="faq-a">カーネーションは春を中心に花を咲かせます。切り花としては一年を通して花屋などで見かけることができます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月6日、ピンクの花びらが伝える熱い想い</h2>
+    <p>重なり合う花びらの一枚一枚をよく見ると、決して均一ではなく、微妙に濃淡の違うピンク色をしていることに気づきます。この重なりの豊かさが、カーネーションならではの優しい存在感を生み出しているのでしょう。年始の挨拶回りもひと段落する頃、誰かへの感謝の気持ちを、こうした花に託して伝えたくなる人もいるかもしれません。花言葉は「熱愛」。幾重にも重なる花びらの奥にある、まっすぐで温かい想いを表す言葉として親しまれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カーネーション（ピンク）の花言葉「熱愛」の由来は？</div>
+        <div class="faq-a">幾重にも重なる花びらが持つ温かみのある印象から、まっすぐで熱い想いを表す「熱愛」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>言葉にするのが少し照れくさい気持ちも、今日は素直に伝えてみませんか。カーネーションの花びらのように、想いは重ねるほど優しく、深くなっていきます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カーネーション（ピンク）から始める小さな体験</h2>
+    <p>贈り物として親しまれてきたカーネーションにあやかって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>ピンクのカーネーションを一輪、誰かに贈ってみる</li>
+      <li>花びらの重なりを数えながらじっくり観察してみる</li>
+      <li>大切な人へ、温かい言葉を一つ伝えてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かへの想いを届けた今日は、自分自身の運気の流れも確認してみませんか。開運カレンダーでは、日々のラッキーカラーもわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>カーネーション（ピンク）は、幾重にも重なる花びらで温かい想いを伝える、1月6日らしい誕生花です。</p>
     <ul>
-      <li>カーネーション（ピンク）は幾重にも花びらが重なる、1月6日の誕生花</li>
-      <li>花言葉は「熱愛」、深く熱い想いを象徴する花とされる</li>
-      <li>優しく柔らかな花姿が魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>カーネーション（ピンク）はナデシコ科の多年草で、幾重にも重なる花びらが特徴</li>
+      <li>同じ仲間のカーネーションは春を中心に咲き、母の日でも親しまれている</li>
+      <li>花言葉は「熱愛」。まっすぐで温かい想いを象徴する言葉とされる</li>
+      <li>贈り物として、感謝や愛情を伝える機会にもふさわしい花</li>
     </ul>
   </section>
 

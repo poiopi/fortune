@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ジニア・リネアリスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"細い葉が特徴で、夏から秋に小輪の花を咲かせます。キク科の一年草です。"}},
-      {"@type":"Question","name":"ジニア・リネアリスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細い葉と小輪の花が寄り添うように咲きそろう姿が、変わらぬ友情を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ジニア・リネアリスは普通のジニアと違いますか？","acceptedAnswer":{"@type":"Answer","text":"細い葉と小輪の花が特徴で、大輪の花を咲かせる一般的なジニアとは異なる、繊細な印象を持つ品種です。"}}
+      {"@type":"Question","name":"ジニア・リネアリスはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"細い葉が特徴のキク科の一年草で、夏から秋にかけて小輪の花をいくつも咲かせます。"}},
+      {"@type":"Question","name":"ジニア・リネアリスはどうして「友情」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"細い葉と小輪の花が寄り添うように咲きそろう姿が、変わらぬ友情を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 22 · 誕生花</span>
     <h1>10月22日の誕生花はジニア・リネアリス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ジニア・リネアリスは、キク科の一年草で、細い葉が特徴で、夏から秋に小輪の花を咲かせる、繊細で親しみやすい印象を持つ花です。花言葉は「友情」。繊細で親しみやすい花です。</p>
+    <p class="art-lead">細い葉の間から、小さな花がいくつも顔を出す。ジニア・リネアリスは、夏から秋にかけてそんな姿を見せる、10月22日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ジニア・リネアリスとは</a></li>
-      <li><a href="#meaning">ジニア・リネアリスが象徴する意味</a></li>
-      <li><a href="#charm">ジニア・リネアリスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月22日の誕生花として親しまれるジニア・リネアリス</a></li>
+      <li><a href="#story">細い葉に寄り添う小輪の花が紡ぐ、友情のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ジニア・リネアリスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ジニア・リネアリスとは</h2>
-    <p>ジニア・リネアリスは、キク科の一年草で、10月22日の誕生花として知られています。細い葉が特徴で、夏から秋に小輪の花を咲かせる、繊細で親しみやすい印象を持つ花です。</p>
-  </section>
+    <h2>10月22日の誕生花として親しまれるジニア・リネアリス</h2>
+    <p>ジニア・リネアリスは、キク科の一年草。10月22日の誕生花として、この時期に親しまれている。細く伸びる葉が特徴で、その間から小輪の花をいくつも咲かせる。大輪の花を咲かせる一般的なジニアとは違い、線のように細い葉と控えめな花の大きさが、繊細で親しみやすい印象を生んでいる花だ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ジニア・リネアリスが象徴する意味</h2>
-    <p>ジニア・リネアリスの花言葉は「友情」です。細い葉と小輪の花が寄り添うように咲きそろう姿が、変わらぬ友情を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ジニア・リネアリスの魅力</h2>
-    <p>ジニア・リネアリスの魅力は、小輪の花が持つ繊細で親しみやすい美しさと、細い葉が添える軽やかな草姿にあります。10月22日生まれの方はもちろん、変わらぬ友情を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ジニア・リネアリスは日当たりを好み、種まきや苗の植え付けから育てやすく、水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月22日生まれの方はもちろん、変わらぬ友情を伝えたい贈り物としてもジニア・リネアリスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジニア・リネアリスはいつ頃咲きますか？</div>
-        <div class="faq-a">細い葉が特徴で、夏から秋に小輪の花を咲かせます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジニア・リネアリスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">細い葉と小輪の花が寄り添うように咲きそろう姿が、変わらぬ友情を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジニア・リネアリスは普通のジニアと違いますか？</div>
-        <div class="faq-a">細い葉と小輪の花が特徴で、大輪の花を咲かせる一般的なジニアとは異なる、繊細な印象を持つ品種です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ジニア・リネアリスはどんな花ですか？</div>
+        <div class="faq-a">細い葉が特徴のキク科の一年草で、夏から秋にかけて小輪の花をいくつも咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>細い葉に寄り添う小輪の花が紡ぐ、友情のかたち</h2>
+    <p>夏の盛りから秋にかけて、ジニア・リネアリスの花は次々と咲き継ぎ、細い葉の間にいくつもの小輪が寄り添うように並ぶ。一輪一輪は決して大きくないが、隣り合って咲くことで互いを引き立て合っているように見える。一本だけでは見過ごされがちな小さな花も、仲間と並んで咲くことで確かな存在感を放つようになる。友情という花言葉は、こうして寄り添いながら互いを引き立て合う、その咲き方に由来すると言われている。派手さはないけれど、そばにいてくれる存在の心強さを思い出させてくれる花だ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ジニア・リネアリスはどうして「友情」と呼ばれるのですか？</div>
+        <div class="faq-a">細い葉と小輪の花が寄り添うように咲きそろう姿が、変わらぬ友情を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>細い葉の間で寄り添うように咲くジニア・リネアリスの花には、変わらない関係の心強さが映っている。今日は、気の置けない仲間との時間を少し意識してみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ジニア・リネアリスから始める小さな体験</h2>
+    <p>小さな花が寄り添うように咲くジニア・リネアリスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>細い葉と小輪の花のバランスをじっくり観察してみる</li>
+      <li>友人に感謝の気持ちを伝えてみる</li>
+      <li>小さな花をいくつか集めて飾ってみる</li>
+    </ul>
+
+    <p class="cta-lead">友との時間を大切にしたい日は、今日のラッキーナンバーも確認してみませんか。開運カレンダーでは、毎日のラッキーナンバーを発信しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>隣り合って咲く小さな花は、一つでは出せない華やかさを見せてくれる。</p>
     <ul>
-      <li>ジニア・リネアリスは小輪の花を咲かせる、10月22日の誕生花</li>
-      <li>花言葉は「友情」、寄り添うように咲きそろう花姿に由来する</li>
-      <li>細い葉が添える軽やかな草姿が魅力</li>
-      <li>日当たりを好み、種まきや苗の植え付けから育てやすく、水切れに注意して管理するとよく育ちます</li>
+      <li>ジニア・リネアリスは夏から秋に小輪の花を咲かせる、キク科の一年草で、10月22日の誕生花</li>
+      <li>花言葉は「友情」。小さな花が寄り添って咲きそろう姿に由来すると言われる</li>
+      <li>細く線のように伸びる葉が、繊細な印象を添える</li>
+      <li>気の置けない仲間との時間を大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

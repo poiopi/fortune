@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0609/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月9日の誕生花ゴデチアの花言葉・特徴・魅力をわかりやすく解説。「不変の愛」を象徴する薄紙のような花びらの花の意味を紹介します。">
+  <meta name="description" content="6月9日の誕生花ゴデチアの花言葉・特徴・魅力をわかりやすく解説。薄紙のような花びらに込められた「不変の愛」の意味を紹介します。">
   <title>6月9日の誕生花はゴデチア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ゴデチアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に薄紙のような質感の花びらの花を咲かせます。アカバナ科の一年草です。"}},
-      {"@type":"Question","name":"ゴデチアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「不変の愛」という花言葉は、薄い花びらでもしっかりと形を保って咲き続ける姿に由来すると言われています。"}},
-      {"@type":"Question","name":"ゴデチアはどんな場所で楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"花壇に群生させて咲かせるほか、切り花としても人気があり、室内でも楽しめます。"}}
+      {"@type":"Question","name":"ゴデチアはどんな花びらの質感ですか？","acceptedAnswer":{"@type":"Answer","text":"薄紙のような繊細な質感の花びらを持つ、アカバナ科の一年草です。"}},
+      {"@type":"Question","name":"ゴデチアの花言葉『不変の愛』の由来は？","acceptedAnswer":{"@type":"Answer","text":"薄く繊細な花びらでありながら最後まで形を崩さずに咲き続ける様子が、「不変の愛」という花言葉の背景にあると伝えられています。"}},
+      {"@type":"Question","name":"ゴデチアはどんな科に属する植物ですか？","acceptedAnswer":{"@type":"Answer","text":"アカバナ科の一年草です。初夏に薄紙のような質感の花びらの花を咲かせます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 9 · 誕生花</span>
     <h1>6月9日の誕生花はゴデチア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ゴデチアは、アカバナ科の一年草で、初夏に薄紙のような質感の花びらの花を咲かせる6月9日の誕生花です。花言葉は「不変の愛」。繊細で華やかな花です。</p>
+    <p class="art-lead">風にふれるだけでかすかに揺れる、薄紙のような花びら。ゴデチアは、そんな繊細な質感を持つ、アカバナ科の一年草です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ゴデチアとは</a></li>
-      <li><a href="#meaning">ゴデチアが象徴する意味</a></li>
-      <li><a href="#charm">ゴデチアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月9日の誕生花として親しまれるゴデチア</a></li>
+      <li><a href="#story">薄紙のような花びらが持つ、ゴデチアの静けさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ゴデチアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ゴデチアとは</h2>
-    <p>ゴデチアは、アカバナ科の一年草で、6月9日の誕生花として知られています。初夏になると薄紙のような質感の花びらを持つ花を咲かせ、繊細でありながら華やかな印象を与える花です。</p>
-  </section>
+    <h2>6月9日の誕生花として親しまれるゴデチア</h2>
+    <p>ゴデチアは、アカバナ科の一年草です。初夏になると、薄紙のような質感を持つ花びらの花を咲かせます。繊細でありながら形を保ち続けるその佇まいから、6月9日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ゴデチアが象徴する意味</h2>
-    <p>ゴデチアの花言葉は「不変の愛」です。薄い花びらでありながらしっかりと形を保って咲き続ける姿が、変わらぬ愛情の象徴とされることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ゴデチアの魅力</h2>
-    <p>ゴデチアの魅力は、薄紙のように繊細な質感の花びらが幾重にも重なって咲く華やかさと、次々に花を咲かせる旺盛な開花力にあります。花壇や切り花として彩りを添えてくれる花です。6月9日生まれの方はもちろん、変わらぬ愛を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ゴデチアは日当たりの良い場所を好み、過湿に弱いため水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月9日生まれの方はもちろん、変わらぬ愛を伝えたい贈り物としてもゴデチアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に薄紙のような質感の花びらの花を咲かせます。アカバナ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「不変の愛」という花言葉は、薄い花びらでもしっかりと形を保って咲き続ける姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアはどんな場所で楽しめますか？</div>
-        <div class="faq-a">花壇に群生させて咲かせるほか、切り花としても人気があり、室内でも楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアはどんな花びらの質感ですか？</div>
+        <div class="faq-a">薄紙のような繊細な質感の花びらを持つ、アカバナ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>薄紙のような花びらが持つ、ゴデチアの静けさ</h2>
+    <p>六月に入り、周りの花々が次々に勢いを増していく中で、ゴデチアは物静かに、けれど途切れることなく花をつけ続けます。初夏という限られた季節を、慌てず同じ調子で咲き通すその姿には、移ろいの速さに流されない芯の強さが感じられます。花びらは光にかざすと透けて見えるほど薄く、手仕事で漉いた紙を思わせる質感を持ちますが、強い風に揺れても花としての形を最後まで崩しません。季節が慌ただしく移り変わっていく中でも変わらぬ調子で咲き続けるこの様子から、ゴデチアには「不変の愛」という花言葉が結びついたと伝えられています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアの花言葉「不変の愛」の由来は？</div>
+        <div class="faq-a">薄く繊細な花びらでありながら最後まで形を崩さずに咲き続ける様子が、「不変の愛」という花言葉の背景にあると伝えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>薄い花びらでありながら、最後まで形を崩さないゴデチア。変わらない気持ちをそっと確かめたいとき、この花の佇まいはよい手がかりになります。変わらずにいる誰かとの時間を、今日はふと思い出してみる。それだけで十分かもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ゴデチアから始める小さな体験</h2>
+    <p>薄くても揺るがないゴデチアにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>薄紙のような質感の花びらをじっくり観察してみる</li>
+      <li>変わらず大切にしている関係を一つ思い浮かべてみる</li>
+      <li>繊細な質感のものに触れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ゴデチアはどんな科に属する植物ですか？</div>
+        <div class="faq-a">アカバナ科の一年草です。初夏に薄紙のような質感の花びらの花を咲かせます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">大切な関係を思い浮かべたい今日は、今月の誕生石やおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、今月の誕生石とおすすめの行動を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>薄紙のような花びらを持つゴデチアは、変わらずにいることが持つ静かな力を教えてくれます。</p>
     <ul>
-      <li>ゴデチアは初夏に薄紙質の花びらの花を咲かせる、6月9日の誕生花</li>
-      <li>花言葉は「不変の愛」、形を保って咲き続ける花姿に由来する</li>
-      <li>繊細な質感と旺盛な開花力による華やかさが魅力</li>
-      <li>日当たりが良く水はけの良い場所でよく育つ</li>
+      <li>ゴデチアはアカバナ科の一年草で、薄紙のような花びらを咲かせる、6月9日の誕生花</li>
+      <li>花言葉は「不変の愛」。繊細でも形を保ち続ける姿に結びつけられているとされる</li>
+      <li>光にかざすと透けるほど薄い花びらの質感が魅力</li>
+      <li>見た目の繊細さと丈夫さのギャップが特徴</li>
     </ul>
   </section>
 

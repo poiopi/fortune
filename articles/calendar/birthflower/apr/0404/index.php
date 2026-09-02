@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0404/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月4日の誕生花トリテリアの花言葉・特徴・魅力をわかりやすく解説。「耐える愛」を象徴する星形の花の意味を紹介します。">
+  <meta name="description" content="4月4日の誕生花トリテリアの花言葉・特徴・魅力をわかりやすく解説。「耐える愛」を象徴する星形の花、ヒメアガパンサスの意味を紹介します。">
   <title>4月4日の誕生花はトリテリア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"トリテリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に星形の小花を咲かせます。キジカクシ科の球根植物で、切り花としても楽しまれています。"}},
-      {"@type":"Question","name":"トリテリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「耐える愛」という花言葉は、細い花茎がまっすぐに立ち、花を咲かせ続ける姿に由来すると言われています。"}},
-      {"@type":"Question","name":"トリテリアはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりと水はけの良い場所を好みます。秋に球根を植えることで、初夏に花を咲かせます。"}}
+      {"@type":"Question","name":"トリテリアは4月に花を見ることができますか？","acceptedAnswer":{"@type":"Answer","text":"トリテリアの開花期は初夏です。4月の誕生花として親しまれていますが、実際に花が咲くのは初夏の頃になります。"}},
+      {"@type":"Question","name":"トリテリアの花言葉「耐える愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"地中の球根が時間をかけて力を蓄え、初夏になってようやく星形の花を咲かせる、じっくりとした成長の過程に由来するといわれています。"}},
+      {"@type":"Question","name":"トリテリアとアガパンサスは同じ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"花姿がよく似ていることから「ヒメアガパンサス」とも呼ばれますが、トリテリアとアガパンサスは異なる種類の植物です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 4 · 誕生花</span>
     <h1>4月4日の誕生花はトリテリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">トリテリアは、キジカクシ科の球根植物で、初夏に星形の花を咲かせる4月4日の誕生花です。花言葉は「耐える愛」。すっと伸びた花茎が凛とした印象を与える花です。</p>
+    <p class="art-lead">4月4日、新しい環境にもまだ慣れきらないこの時期。実際に花開くのは少し先だとしても、星形の花を静かに待つトリテリアは、じっと想いを持ち続けることの強さを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">トリテリアとは</a></li>
-      <li><a href="#meaning">トリテリアが象徴する意味</a></li>
-      <li><a href="#charm">トリテリアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月4日の誕生花として親しまれるトリテリア</a></li>
+      <li><a href="#story">星形の花が語る、トリテリアの耐える愛</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、トリテリアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>トリテリアとは</h2>
-    <p>トリテリアは、キジカクシ科の球根植物で、4月4日の誕生花として知られています。細く伸びた花茎の先に、星形をした小花を放射状に咲かせる姿が特徴で、切り花としても楽しまれています。</p>
-  </section>
+    <h2>4月4日の誕生花として親しまれるトリテリア</h2>
+    <p>トリテリアは、キジカクシ科の球根植物です。実際に星形の花を咲かせるのは初夏の頃ですが、4月4日の誕生花として親しまれています。細い花茎の先に放射状に開く星形の花姿がアガパンサスによく似ていることから、「ヒメアガパンサス」とも呼ばれています。今日はまだ花を見ることができなくても、その姿を思い浮かべながら過ごしてみるのも良いかもしれません。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>トリテリアが象徴する意味</h2>
-    <p>トリテリアの花言葉は「耐える愛」です。細い花茎が風に揺れながらもまっすぐに立ち、星形の花を咲かせ続ける姿が、じっと想いを持ち続ける強さを感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>トリテリアの魅力</h2>
-    <p>トリテリアの魅力は、星をちりばめたような可憐な花姿と、涼しげな立ち姿にあります。花壇にすっと伸びるシルエットは、他の花との組み合わせにも映えます。4月4日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>トリテリアは日当たりの良い場所を好み、秋に球根を植えて育てるのが一般的です。水はけの良い土壌で育てると、初夏にすっと伸びた花茎が花を咲かせてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月4日生まれの方はもちろん、変わらぬ想いを届けたい贈り物としてもトリテリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トリテリアはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に星形の小花を咲かせます。キジカクシ科の球根植物で、切り花としても楽しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トリテリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「耐える愛」という花言葉は、細い花茎がまっすぐに立ち、花を咲かせ続ける姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トリテリアはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりと水はけの良い場所を好みます。秋に球根を植えることで、初夏に花を咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">トリテリアは4月に花を見ることができますか？</div>
+        <div class="faq-a">トリテリアの開花期は初夏です。4月の誕生花として親しまれていますが、実際に花が咲くのは初夏の頃になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>星形の花が語る、トリテリアの耐える愛</h2>
+    <p>トリテリアの花は、細く伸びた花茎の先に、星をちりばめたような小花を放射状に咲かせます。一輪ずつは控えめでも、いくつも集まることで涼しげな存在感を放つのが特徴です。花姿がアガパンサスに似ていることから「ヒメアガパンサス」とも呼ばれますが、アガパンサスとは別の種類の植物です。花が咲くまでには、地中の球根がじっくりと力を蓄える時間が必要で、その静かな準備期間があってこそ、初夏に星形の花を咲かせることができます。そんな、すぐには結果が見えなくても地道に力を蓄え続ける姿から、トリテリアには「耐える愛」という花言葉が贈られているといわれています。この言葉は、焦らず待つことそのものが、想いを育てる時間になり得ることを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">トリテリアの花言葉「耐える愛」の由来は？</div>
+        <div class="faq-a">地中の球根が時間をかけて力を蓄え、初夏になってようやく星形の花を咲かせる、じっくりとした成長の過程に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>時間をかけて積み重ねてきたものは、静かに力へと変わっていきます。自分のペースを信じてじっくりと物事に向き合うことこそ、今日という日にふさわしい過ごし方です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、トリテリアから始める小さな体験</h2>
+    <p>時間をかけて星形の花を咲かせるトリテリアにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>星形の花を探して観察してみる</li>
+      <li>アガパンサスとの花姿の似ているところを見比べてみる</li>
+      <li>我慢強く続けていることを一つ思い浮かべてみる</li>
+      <li>球根植物を育てて、成長を気長に見守ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">トリテリアとアガパンサスは同じ植物ですか？</div>
+        <div class="faq-a">花姿がよく似ていることから「ヒメアガパンサス」とも呼ばれますが、トリテリアとアガパンサスは異なる種類の植物です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">じっくり待つ今日は、月九星やおすすめの行動もヒントになるかもしれません。開運カレンダーでは、その日の月九星とおすすめの行動をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月4日、じっくりと時間をかけて星形の花を咲かせるトリテリアは、焦らず待つことの価値を教えてくれる花です。</p>
     <ul>
-      <li>トリテリアは初夏に星形の花を咲かせる、4月4日の誕生花</li>
-      <li>花言葉は「耐える愛」、まっすぐに立ち咲き続ける姿に由来する</li>
-      <li>星をちりばめたような可憐な花姿と涼しげな立ち姿が魅力</li>
-      <li>日当たりと水はけの良い場所で、秋植えの球根として育てたい</li>
+      <li>トリテリアはキジカクシ科の球根植物で、実際の開花期は初夏にあたる</li>
+      <li>星形の花姿がアガパンサスに似ることから「ヒメアガパンサス」とも呼ばれる</li>
+      <li>花言葉は「耐える愛」。じっくりと力を蓄えて花を咲かせる過程に由来するといわれる</li>
+      <li>耐える愛は、焦らず待つことが想いを育てる時間になることを表す言葉ともいえる</li>
     </ul>
   </section>
 

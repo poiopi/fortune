@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0206/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月6日の誕生花ビワの花言葉・特徴・魅力をわかりやすく解説。「愛の記憶」を象徴する冬に咲く花木の意味を紹介します。">
+  <meta name="description" content="2月6日の誕生花ビワの花言葉・特徴・魅力をわかりやすく解説。「愛の記憶」を象徴する冬に咲く花の意味を紹介します。">
   <title>2月6日の誕生花はビワ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ビワはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に、目立たない白い小花を咲かせます。そこから実が育ち、初夏には果実として味わえます。"}},
-      {"@type":"Question","name":"ビワの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛の記憶」という花言葉は、地味ながらも確実に実を結ぶ花の姿が、大切な思い出を静かに育む様子に重ねられたことに由来するとされています。"}},
-      {"@type":"Question","name":"ビワの花はいつ咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に白い小花を咲かせ、そこから初夏にかけて実をつけます。花が咲く時期と実がなる時期が異なる果樹です。"}}
+      {"@type":"Question","name":"ビワの花はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に白い小さな花を咲かせます。目立たない花のため、見過ごされやすいといわれています。"}},
+      {"@type":"Question","name":"ビワの花言葉「愛の記憶」の由来は？","acceptedAnswer":{"@type":"Answer","text":"冬にひっそりと咲いた花が、時間をかけて初夏の実を結ぶという移ろいに由来するといわれています。目立たなくても育まれていく思いを象徴する言葉とされています。"}},
+      {"@type":"Question","name":"ビワの葉には効能があるといわれていますが本当ですか？","acceptedAnswer":{"@type":"Answer","text":"ビワの葉は古くから民間療法で用いられてきたといわれていますが、医学的な効能については断定できません。健康に関することは専門家に相談することをおすすめします。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 6 · 誕生花</span>
     <h1>2月6日の誕生花はビワ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ビワは、バラ科の常緑高木で、冬に白い小花を咲かせる2月6日の誕生花です。花言葉は「愛の記憶」。地味ながらも確かな実りを約束する花です。</p>
+    <p class="art-lead">寒さの続く2月6日。多くの花が咲くのを待つこの時期に、ひっそりと白い花を咲かせているのがビワです。今日はその静かな冬の景色に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ビワとは</a></li>
-      <li><a href="#meaning">ビワが象徴する意味</a></li>
-      <li><a href="#charm">ビワの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">冬にひっそりと咲く、ビワの花の景色</a></li>
+      <li><a href="#story">2月6日、ビワが結ぶ花と実の季節</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ビワから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ビワとは</h2>
-    <p>ビワは、バラ科の常緑高木で、2月6日の誕生花として知られています。冬の寒い時期に、目立たない白い小花をひっそりと咲かせ、そこから初夏にかけて甘い果実を実らせる果樹です。</p>
-  </section>
+    <h2>冬にひっそりと咲く、ビワの花の景色</h2>
+    <p>ビワは、バラ科の常緑高木です。冬になると、目立たない白い小花を咲かせます。多くの花が姿を潜めるこの季節に、静かに花を開くその姿は、注意深く見なければ気づかないほど控えめです。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ビワが象徴する意味</h2>
-    <p>ビワの花言葉は「愛の記憶」です。地味で目立たない花でありながら、時間をかけて確かな実りへとつながっていくその姿が、大切な思い出を静かに育む愛情に重ねられたことに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ビワの魅力</h2>
-    <p>ビワの魅力は、寒い冬にも花を咲かせる生命力と、初夏に実る甘い果実の恵みにあります。花は控えめですが、常緑の葉と相まって一年を通して庭に落ち着いた存在感を与えてくれます。2月6日生まれの方はもちろん、大切な思い出を届けたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ビワは日当たりと水はけの良い場所を好み、寒さにもある程度強い一方、若木のうちは霜よけをすると安心して育てられます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月6日生まれの方はもちろん、大切な記憶や思い出を伝えたい贈り物としてもビワは意味のある花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビワはいつ頃咲きますか？</div>
-        <div class="faq-a">冬に、目立たない白い小花を咲かせます。そこから実が育ち、初夏には果実として味わえます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビワの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「愛の記憶」という花言葉は、地味ながらも確実に実を結ぶ花の姿が、大切な思い出を静かに育む様子に重ねられたことに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビワの花はいつ咲きますか？</div>
-        <div class="faq-a">冬に白い小花を咲かせ、そこから初夏にかけて実をつけます。花が咲く時期と実がなる時期が異なる果樹です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ビワの花はいつ頃咲きますか？</div>
+        <div class="faq-a">冬に白い小さな花を咲かせます。目立たない花のため、見過ごされやすいといわれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月6日、ビワが結ぶ花と実の季節</h2>
+    <p>ビワの面白さは、花と実の間にある大きな時間差にあります。冬にひっそりと咲いた白い花は、多くの人の目に留まることなく静かに散っていきます。けれどもその花が結んだ実りは、初夏になって黄金色の甘い果実として姿を現します。花よりも実の記憶の方が強く残りやすい、そんな時間差のある植物だといえるでしょう。冬から初夏へと移り変わる季節の流れの中で、静かに実を育て続けるこの姿から、ビワには「愛の記憶」という花言葉が贈られてきたといわれています。目立たなくても、時間をかけて育まれていく思いを象徴する言葉なのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ビワの花言葉「愛の記憶」の由来は？</div>
+        <div class="faq-a">冬にひっそりと咲いた花が、時間をかけて初夏の実を結ぶという移ろいに由来するといわれています。目立たなくても育まれていく思いを象徴する言葉とされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>静かに積み重ねてきた時間は、いつかちゃんと実を結びます。今日は、大切な思い出や気持ちをそっと心の中で温めてみませんか。時間が経ってから、その愛おしさにふと気づく瞬間がきっとあります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ビワから始める小さな体験</h2>
+    <p>冬に静かに咲き、初夏に実を結ぶビワにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>ビワの木や実を見かけたら花の季節を想像してみる</li>
+      <li>大切な人との思い出を一つ書き留めてみる</li>
+      <li>白い小さなものに目を向けて季節の変化に気づく</li>
+      <li>実りを待つように、今日は焦らず過ごしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ビワの葉には効能があるといわれていますが本当ですか？</div>
+        <div class="faq-a">ビワの葉は古くから民間療法で用いられてきたといわれていますが、医学的な効能については断定できません。健康に関することは専門家に相談することをおすすめします。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">大切な思い出をそっと振り返れた今日は、ラッキーアイテムもあわせてチェックしてみませんか。開運カレンダーでは、その日のラッキーアイテムやラッキーカラーも確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>冬に咲いた花が初夏の実へと変わるまで、ビワは2月6日という一日をゆっくりと見守り続けています。</p>
     <ul>
-      <li>ビワは冬に白い小花を咲かせる、2月6日の誕生花</li>
-      <li>花言葉は「愛の記憶」、静かに育まれる思い出を象徴する</li>
-      <li>初夏に実る甘い果実と、常緑の葉が魅力の果樹</li>
-      <li>日当たりと水はけの良い場所で、若木は霜よけをして育てたい</li>
+      <li>ビワはバラ科の常緑高木で、冬に目立たない白い花を咲かせる</li>
+      <li>花のあと、初夏には黄金色の甘い実をつける</li>
+      <li>花言葉は「愛の記憶」。時間をかけて育まれる思いを象徴するとされる</li>
+      <li>葉の民間療法的な利用は知られているが、医学的な効能は断定できない</li>
     </ul>
   </section>
 

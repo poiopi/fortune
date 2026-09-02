@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0903/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月3日の誕生花ケイトウの花言葉・特徴・魅力をわかりやすく解説。「色あせぬ恋」を象徴する鶏のとさかに似た花の意味を紹介します。">
+  <meta name="description" content="9月3日の誕生花ケイトウの花言葉・特徴・魅力をわかりやすく解説。「色あせぬ恋」を象徴する力強い花の意味を紹介します。">
   <title>9月3日の誕生花はケイトウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ケイトウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に鶏のとさかに似た形の花を咲かせます。ヒユ科の一年草です。"}},
-      {"@type":"Question","name":"ケイトウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな色合いを保ったまま長期間咲き続ける丈夫な花姿が、色あせることのない変わらぬ恋心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ケイトウの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の形が鶏のとさかに似ていることから「鶏頭（ケイトウ）」と名付けられたと言われています。"}}
+      {"@type":"Question","name":"ケイトウの花はどんな形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"鶏のとさかに似た、波打つような独特の凹凸を持つ花を咲かせます。夏から秋にかけて力強く鮮やかな印象を放ちます。"}},
+      {"@type":"Question","name":"ケイトウの花言葉『色あせぬ恋』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"花持ちがよく、鮮やかな色を長く保ち続ける性質に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 3 · 誕生花</span>
     <h1>9月3日の誕生花はケイトウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ケイトウは、ヒユ科の一年草で、夏から秋に鶏のとさかに似た形の花を咲かせ、力強く鮮やかな印象を与える花です。花言葉は「色あせぬ恋」。力強く鮮やかな花です。</p>
+    <p class="art-lead">赤い炎のようなかたまりが、風にも負けずまっすぐ立っている。近づいてよく見ると、それは鶏のとさかによく似た花びらの集まりだ。9月3日の誕生花は、このケイトウである。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ケイトウとは</a></li>
-      <li><a href="#meaning">ケイトウが象徴する意味</a></li>
-      <li><a href="#charm">ケイトウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月3日の誕生花として親しまれるケイトウ</a></li>
+      <li><a href="#story">波打つ花の形が示す、揺るがない強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ケイトウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ケイトウとは</h2>
-    <p>ケイトウは、ヒユ科の一年草で、9月3日の誕生花として知られています。夏から秋に鶏のとさかに似た形の花を咲かせ、力強く鮮やかな印象を与える花です。</p>
-  </section>
+    <h2>9月3日の誕生花として親しまれるケイトウ</h2>
+    <p>ケイトウは、ヒユ科の一年草です。夏から秋にかけて、鶏のとさかによく似た形の花を咲かせます。力強く鮮やかな印象を与える花として知られ、9月3日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ケイトウが象徴する意味</h2>
-    <p>ケイトウの花言葉は「色あせぬ恋」です。鮮やかな色合いを保ったまま長期間咲き続ける丈夫な花姿が、色あせることのない変わらぬ恋心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ケイトウの魅力</h2>
-    <p>ケイトウの魅力は、鶏のとさかを思わせる個性的な花の形と、燃えるような鮮やかな色合いにあります。花壇や切り花として長く楽しめる丈夫さも魅力です。 9月3日生まれの方はもちろん、色あせぬ想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ケイトウは日当たりを好み、暑さに強いため乾燥気味の土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月3日生まれの方はもちろん、色あせぬ想いを伝えたい贈り物としてもケイトウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ケイトウはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に鶏のとさかに似た形の花を咲かせます。ヒユ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ケイトウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">鮮やかな色合いを保ったまま長期間咲き続ける丈夫な花姿が、色あせることのない変わらぬ恋心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ケイトウの名前の由来は何ですか？</div>
-        <div class="faq-a">花の形が鶏のとさかに似ていることから「鶏頭（ケイトウ）」と名付けられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ケイトウの花はどんな形をしていますか？</div>
+        <div class="faq-a">鶏のとさかに似た、波打つような独特の凹凸を持つ花を咲かせます。夏から秋にかけて力強く鮮やかな印象を放ちます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>波打つ花の形が示す、揺るがない強さ</h2>
+    <p>ケイトウの花をじっと見つめると、その凹凸の細かさに驚かされる。ひだが幾重にも折り重なり、まるで小さな波が固まったような質感を持つ。この独特の形は、鶏のとさかによく似ていることからその名がついたと言われている。見た目のインパクトだけでなく、花としての存在感も強く、夏の終わりから秋にかけて、色あせることなく長く咲き続ける。花言葉「色あせぬ恋」は、この花持ちの良さと、鮮やかな色を保ち続ける姿から生まれたと言われている。時間が経っても変わらないものへの憧れが、この花には重なる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ケイトウの花言葉『色あせぬ恋』にはどんな由来がありますか？</div>
+        <div class="faq-a">花持ちがよく、鮮やかな色を長く保ち続ける性質に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>長く続いていくものの多くは、派手な出来事よりも、変わらず続けられた小さな積み重ねでできている。今日、大切にしたい気持ちがあるなら、それを一度、自分の言葉にしてみるといい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ケイトウから始める小さな体験</h2>
+    <p>鶏のとさかに似た花を力強く咲かせるケイトウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>とさかに似た花の形をじっくり観察してみる</li>
+      <li>長く大切にしたい気持ちを一つ、言葉にしてみる</li>
+      <li>力強い色合いのものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">変わらない気持ちを大事にしたい一日は、今日の星座も確認してみませんか。開運カレンダーでは、星座とラッキーナンバーを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>波打つ花の形をよく見ると、色あせぬ強さの理由が見えてくる。</p>
     <ul>
-      <li>ケイトウは夏から秋にとさか状の花を咲かせる、9月3日の誕生花</li>
-      <li>花言葉は「色あせぬ恋」、色あせない鮮やかさに由来する</li>
-      <li>鮮やかな色合いと丈夫さが魅力</li>
-      <li>日当たりを好み、暑さに強い</li>
+      <li>ケイトウは夏から秋に鶏のとさかに似た花を咲かせる、ヒユ科の一年草で、9月3日の誕生花</li>
+      <li>花言葉は「色あせぬ恋」。花持ちのよさと鮮やかな色を保つ性質に由来すると言われる</li>
+      <li>力強く鮮やかな印象を放つ、存在感のある花</li>
+      <li>長く咲き続ける姿が、変わらない気持ちの象徴とされる</li>
     </ul>
   </section>
 

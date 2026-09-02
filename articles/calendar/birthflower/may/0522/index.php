@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0522/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月22日の誕生花カモミールの花言葉・特徴・魅力をわかりやすく解説。「癒し」を象徴する白い花びらと黄色い中心を持つ花の意味を紹介します。">
+  <meta name="description" content="5月22日の誕生花カモミールの花言葉・特徴・魅力をわかりやすく解説。「癒し」という花言葉に込められた意味と、白と黄色の素朴で愛らしい花の色合いを紹介します。">
   <title>5月22日の誕生花はカモミール｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カモミールはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い花びらと黄色い中心を持つ小花を咲かせます。キク科の植物で、優しく穏やかな印象を与える花です。"}},
-      {"@type":"Question","name":"カモミールの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「癒し」という花言葉は、優しい香りと穏やかな花姿が、心を落ち着かせるやすらぎの時間を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"カモミールはハーブティー以外にも使われますか？","acceptedAnswer":{"@type":"Answer","text":"はい。リラックス効果が期待できることから、アロマオイルや入浴剤、スキンケア用品など幅広い用途で利用されています。"}}
+      {"@type":"Question","name":"カモミールはどんな科に分類される植物ですか？","acceptedAnswer":{"@type":"Answer","text":"キク科の植物に分類されます。初夏になると、白い花びらと黄色い中心を持つ小さな花を咲かせ、りんごに似た香りをまとうことでも知られています。"}},
+      {"@type":"Question","name":"カモミールの花言葉「癒し」の由来は？","acceptedAnswer":{"@type":"Answer","text":"白と黄色の素朴な色合いと、穏やかな佇まいが、見る人の心をそっと和らげることに由来するといわれています。"}},
+      {"@type":"Question","name":"カモミールはどんな場面で育てられていますか？","acceptedAnswer":{"@type":"Answer","text":"花壇や鉢植えとして、白と黄色のやさしい色合いを楽しむために育てられることが多い花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 22 · 誕生花</span>
     <h1>5月22日の誕生花はカモミール<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カモミールは、キク科の植物で、初夏に白い花びらと黄色い中心を持つ小花を咲かせる5月22日の誕生花です。花言葉は「癒し」。優しく穏やかな印象を与える花です。</p>
+    <p class="art-lead">白い花びらの真ん中に、小さな黄色い光を灯したような花が、初夏の庭のあちこちで揺れています。りんごに似た甘い香りをまとうこの花は、カモミールという名で親しまれています。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カモミールとは</a></li>
-      <li><a href="#meaning">カモミールが象徴する意味</a></li>
-      <li><a href="#charm">カモミールの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月22日の誕生花として親しまれるカモミール</a></li>
+      <li><a href="#story">白と黄色が生む、カモミールのやさしい表情</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カモミールから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カモミールとは</h2>
-    <p>カモミールは、キク科の植物で、5月22日の誕生花として知られています。初夏になると白い花びらと黄色い中心を持つ小花を咲かせ、リンゴに似た優しい香りでハーブティーとしても親しまれています。</p>
-  </section>
+    <h2>5月22日の誕生花として親しまれるカモミール</h2>
+    <p>カモミールは、キク科の植物です。初夏になると、白い花びらと黄色い中心を持つ小さな花を、りんごに似た香りとともに咲かせます。素朴で親しみやすい印象から、5月22日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カモミールが象徴する意味</h2>
-    <p>カモミールの花言葉は「癒し」です。優しい香りと穏やかな花姿が、心を落ち着かせるやすらぎの時間を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カモミールの魅力</h2>
-    <p>カモミールの魅力は、可憐な花姿とリンゴに似た優しい香りにあります。ハーブとして古くから薬草やお茶に利用され、暮らしに癒しをもたらしてくれる植物です。5月22日生まれの方はもちろん、心安らぐひとときを届ける贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カモミールは日当たりの良い場所を好み、丈夫でよく育ちます。こぼれ種でも自然に増えることがあります。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月22日生まれの方はもちろん、心安らぐひとときを届ける贈り物としてもカモミールは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カモミールはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白い花びらと黄色い中心を持つ小花を咲かせます。キク科の植物で、優しく穏やかな印象を与える花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カモミールの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「癒し」という花言葉は、優しい香りと穏やかな花姿が、心を落ち着かせるやすらぎの時間を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カモミールはハーブティー以外にも使われますか？</div>
-        <div class="faq-a">はい。リラックス効果が期待できることから、アロマオイルや入浴剤、スキンケア用品など幅広い用途で利用されています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カモミールはどんな科に分類される植物ですか？</div>
+        <div class="faq-a">キク科の植物に分類されます。初夏になると、白い花びらと黄色い中心を持つ小さな花を咲かせ、りんごに似た香りをまとうことでも知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白と黄色が生む、カモミールのやさしい表情</h2>
+    <p>白い花びらが放射状に並び、その真ん中に小さな黄色い光が灯ったような愛らしい表情を見せるのが、カモミールです。この白と黄色の組み合わせは、派手さはないものの、見る人の気持ちをふっと和らげるような、柔らかな印象を与えてくれます。強く主張することのない、控えめで素朴な色合いだからこそ、身構えずに眺めていられるのかもしれません。こうした穏やかな色彩と佇まいから、カモミールには「癒し」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カモミールの花言葉「癒し」の由来は？</div>
+        <div class="faq-a">白と黄色の素朴な色合いと、穏やかな佇まいが、見る人の心をそっと和らげることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>疲れがたまっていることに、自分では気づきにくい時があります。白と黄色の小さな花がふんわりと香るように、心もまた、ゆっくりとほどけていく時間を必要としているのかもしれません。今日はそんな時間を、少しだけ自分に贈ってみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カモミールから始める小さな体験</h2>
+    <p>やさしい色合いに背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>白と黄色の小花をじっくり観察してみる</li>
+      <li>自分を癒す時間を少し作ってみる</li>
+      <li>穏やかな気持ちでほっと一息つく時間を作る</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カモミールはどんな場面で育てられていますか？</div>
+        <div class="faq-a">花壇や鉢植えとして、白と黄色のやさしい色合いを楽しむために育てられることが多い花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">ほっとひと息つきたい今日は、吉日やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、その日が吉日かどうかとラッキーカラーをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>白と黄色の素朴な色合いを見ているだけで、肩の力がふっと抜けていくことがあります。</p>
     <ul>
-      <li>カモミールは初夏に白い小花を咲かせる、5月22日の誕生花</li>
-      <li>花言葉は「癒し」、心を落ち着かせるやすらぎに由来する</li>
-      <li>優しい香りと可憐な花姿が魅力</li>
-      <li>日当たりの良い場所で丈夫に育つ</li>
+      <li>カモミールはキク科の植物で、初夏に白と黄色の小花を咲かせる、5月22日の誕生花</li>
+      <li>花言葉は「癒し」。穏やかな色合いと佇まいに由来するとされる</li>
+      <li>りんごに似た香りと、控えめで素朴な色合いが魅力</li>
+      <li>花壇や鉢植えで、その色合いを楽しむために育てられている</li>
     </ul>
   </section>
 

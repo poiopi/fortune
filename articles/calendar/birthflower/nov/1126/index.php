@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1126/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月26日の誕生花シーマンニアの花言葉・特徴・魅力をわかりやすく解説。「栄華」を象徴する釣り鐘型の花の意味を紹介します。">
+  <meta name="description" content="11月26日の誕生花シーマンニアの花言葉・特徴・魅力をわかりやすく解説。「栄華」を象徴する釣り鐘型の花を咲かせる多年草の意味を紹介します。">
   <title>11月26日の誕生花はシーマンニア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シーマンニアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に釣り鐘型の花を咲かせます。イワタバコ科の多年草です。"}},
-      {"@type":"Question","name":"シーマンニアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夏に釣り鐘型の花を華やかに咲かせる姿が、栄華を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"シーマンニアはどんな場所で育てるのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"明るい日陰を好むため、直射日光を避けた室内で育てるのがおすすめです。"}}
+      {"@type":"Question","name":"シーマンニアの英名にはどんな意味がありますか？","acceptedAnswer":{"@type":"Answer","text":"英名は「ボリビアンサンセット」で、南米原産のオレンジや赤の花色に由来すると考えられています。"}},
+      {"@type":"Question","name":"シーマンニアの花言葉「栄華」はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"オレンジ色の花が房になって一斉に咲きそろう、その華やかな景色があるとされています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 26 · 誕生花</span>
     <h1>11月26日の誕生花はシーマンニア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シーマンニアは、イワタバコ科の多年草で、夏に釣り鐘型の花を咲かせる、華やかで気品ある印象を持つ花です。花言葉は「栄華」。華やかな花です。</p>
+    <p class="art-lead">夏、南米の夕焼けを思わせるオレンジ色の花が、釣り鐘のような形で房状に連なって咲く。イワタバコ科の多年草シーマンニアである。房状に咲きそろうこの夏の景色は、11月26日にも「栄華」の二文字を思い出させる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シーマンニアとは</a></li>
-      <li><a href="#meaning">シーマンニアが象徴する意味</a></li>
-      <li><a href="#charm">シーマンニアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月26日の誕生花として親しまれるシーマンニア</a></li>
+      <li><a href="#story">釣り鐘の中に灯る、南米の夕焼け</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シーマンニアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シーマンニアとは</h2>
-    <p>シーマンニアは、イワタバコ科の多年草で、11月26日の誕生花として知られています。夏に釣り鐘型の花を咲かせる、華やかで気品ある印象を持つ花です。</p>
-  </section>
+    <h2>11月26日の誕生花として親しまれるシーマンニア</h2>
+    <p>シーマンニアは、イワタバコ科の多年草として知られる、11月26日の誕生花です。花が咲くのは夏ですが、釣り鐘型の鮮やかな花姿にちなみ、栄華を象徴する花としてこの日に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シーマンニアが象徴する意味</h2>
-    <p>シーマンニアの花言葉は「栄華」です。夏に釣り鐘型の花を華やかに咲かせる姿が、栄華を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シーマンニアの魅力</h2>
-    <p>シーマンニアの魅力は、釣り鐘型の花が持つ華やかな存在感と、株いっぱいに咲きそろう豊かな印象にあります。11月26日生まれの方はもちろん、栄華の想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シーマンニアは明るい日陰を好み、水を好むため土を乾かさないように管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月26日生まれの方はもちろん、栄華の想いを伝えたい贈り物としてもシーマンニアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シーマンニアはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に釣り鐘型の花を咲かせます。イワタバコ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シーマンニアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">夏に釣り鐘型の花を華やかに咲かせる姿が、栄華を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シーマンニアはどんな場所で育てるのがおすすめですか？</div>
-        <div class="faq-a">明るい日陰を好むため、直射日光を避けた室内で育てるのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シーマンニアの英名にはどんな意味がありますか？</div>
+        <div class="faq-a">英名は「ボリビアンサンセット」で、南米原産のオレンジや赤の花色に由来すると考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>釣り鐘の中に灯る、南米の夕焼け</h2>
+    <p>釣り鐘のような形をした花が、房状に垂れ下がって咲くのが、シーマンニアの特徴だ。イワタバコ科の多年草であるシーマンニアが花を咲かせるのは夏で、オレンジや赤の鮮やかな花色は、南米の夕焼けを思わせることから英名で「ボリビアンサンセット」と呼ばれている。南米原産のこの花が一斉に咲きそろう様子は、遠目にも華やかで存在感がある。この一面に咲きそろう豪華な咲きぶりが、「栄華」という花言葉の背景にあるとされる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シーマンニアの花言葉「栄華」はどこから来ていますか？</div>
+        <div class="faq-a">オレンジ色の花が房になって一斉に咲きそろう、その華やかな景色があるとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>釣り鐘のような花が一斉に咲く姿は、積み重ねてきた時間がふいに実を結ぶ瞬間を思わせる。地道に続けてきたことを、今日は一つ思い返してみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シーマンニアから始める小さな体験</h2>
+    <p>釣り鐘型の花を華やかに咲かせるシーマンニアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>釣り鐘型の花の形をじっくり観察してみる</li>
+      <li>これまで積み重ねてきたことを一つ、振り返ってみる</li>
+      <li>誰かの成功や幸せを、今日は一つ祝ってみる</li>
+    </ul>
+
+    <p class="cta-lead">今月の運気の傾向を知りたい日は、開運カレンダーで月九星もあわせて確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>南米の夕焼けを思わせる色合いに、この花の華やかさが凝縮されている。</p>
     <ul>
-      <li>シーマンニアは夏に釣り鐘型の花を咲かせる、11月26日の誕生花</li>
-      <li>花言葉は「栄華」、華やかに咲く釣り鐘型の花に由来する</li>
-      <li>株いっぱいに咲きそろう豊かな印象が魅力</li>
-      <li>明るい日陰を好み、水を好むため土を乾かさないように管理するとよく育ちます</li>
+      <li>シーマンニアは、イワタバコ科の多年草で、夏に釣り鐘型のオレンジや赤の花を咲かせる、11月26日の誕生花</li>
+      <li>花言葉は「栄華」。積み重ねた時間が実を結ぶように、花が一斉に咲き誇ることに由来すると言われる</li>
+      <li>英名は「ボリビアンサンセット」。南米原産の植物</li>
+      <li>これまでの積み重ねを実感したい日に寄り添う花</li>
     </ul>
   </section>
 

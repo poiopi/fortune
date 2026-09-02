@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オキザリスはなぜ夜に花を閉じるのですか？","acceptedAnswer":{"@type":"Answer","text":"光に反応して開閉する性質があり、夜間や曇りの日には花を閉じるとされています。"}},
-      {"@type":"Question","name":"オキザリスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「ひたむきな愛」という花言葉は、日が昇るたびに花を開き律儀に繰り返す姿に由来するとされています。"}},
-      {"@type":"Question","name":"オキザリスは育てやすい花ですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすく、初心者でも扱いやすい植物として人気があります。"}}
+      {"@type":"Question","name":"オキザリスの花はいつ開いていますか？","acceptedAnswer":{"@type":"Answer","text":"オキザリスの花は日中に開き、夜になると閉じます。この開閉のリズムを繰り返すのが特徴です。"}},
+      {"@type":"Question","name":"オキザリスの花言葉「ひたむきな愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"日中に開き夜には閉じる、そのリズムを毎日変わらず繰り返す姿から「ひたむきな愛」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 16 · 誕生花</span>
     <h1>1月16日の誕生花はオキザリス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オキザリスは、日中に開き夜には閉じる1月16日の誕生花です。花言葉は「ひたむきな愛」。小さく可憐な花です。</p>
+    <p class="art-lead">正月気分もすっかり落ち着いた1月16日。日が昇れば花を開き、日が沈めば静かに閉じる。そんな規則正しいリズムを持つオキザリスを、今日は紹介します。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>オキザリス</dd>
     <dt>花言葉</dt><dd>ひたむきな愛</dd>
     <dt>科名</dt><dd>カタバミ科</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>見頃</dt><dd>日中（開閉に日周性あり）</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オキザリスとは</a></li>
-      <li><a href="#meaning">オキザリスが象徴する意味</a></li>
-      <li><a href="#charm">オキザリスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">日中だけ開く、オキザリスの規則正しさ</a></li>
+      <li><a href="#story">1月16日、オキザリスが教える一途なリズム</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オキザリスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オキザリスとは</h2>
-    <p>オキザリスは、カタバミ科の多年草で、1月16日の誕生花として知られています。日中に花を開き、夜には閉じるという特徴的な性質を持つ、小さく可憐な花です。</p>
-  </section>
+    <h2>日中だけ開く、オキザリスの規則正しさ</h2>
+    <p>オキザリスは、カタバミ科の多年草です。小さく可憐な花を咲かせますが、その花には他にはない特徴があります。日中にだけ花を開き、夜になると静かに閉じるのです。日々変わらず同じリズムを繰り返す、規則正しい植物として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オキザリスが象徴する意味</h2>
-    <p>オキザリスの花言葉は「ひたむきな愛」です。日が昇るたびに花を開き、律儀に繰り返すその姿から、変わらず一途に想い続ける心を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オキザリスの魅力</h2>
-    <p>オキザリスの魅力は、日の光に合わせて開閉する愛らしい習性と、小さいながらも存在感のある花姿にあります。鉢植えやグラウンドカバーとしても育てやすく、日々の変化を楽しませてくれます。1月16日生まれの方はもちろん、ひたむきな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オキザリスは日当たりの良い場所を好み、丈夫で育てやすく、土の表面が乾いたら水を与える程度で十分育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月16日生まれの方はもちろん、ひたむきな想いを伝えたい贈り物としてもオキザリスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オキザリスはなぜ夜に花を閉じるのですか？</div>
-        <div class="faq-a">光に反応して開閉する性質があり、夜間や曇りの日には花を閉じるとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オキザリスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「ひたむきな愛」という花言葉は、日が昇るたびに花を開き律儀に繰り返す姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オキザリスは育てやすい花ですか？</div>
-        <div class="faq-a">丈夫で育てやすく、初心者でも扱いやすい植物として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オキザリスの花はいつ開いていますか？</div>
+        <div class="faq-a">オキザリスの花は日中に開き、夜になると閉じます。この開閉のリズムを繰り返すのが特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月16日、オキザリスが教える一途なリズム</h2>
+    <p>オキザリスの花を朝と夕方に見比べてみると、その違いに驚くかもしれません。同じ一輪の花が、日が昇れば開き、日が沈めば閉じる。この動きを毎日律儀に繰り返す姿は、決して大げさではないけれど、一つのことを丁寧に続ける強さを感じさせます。小正月を過ぎ、新しい年の日常がすっかり本調子になる1月16日。派手さはなくても、変わらず続けることの尊さに目を向けてみるのも良い日かもしれません。花言葉は「ひたむきな愛」。同じリズムを繰り返し続ける、その一途さから生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オキザリスの花言葉「ひたむきな愛」の由来は？</div>
+        <div class="faq-a">日中に開き夜には閉じる、そのリズムを毎日変わらず繰り返す姿から「ひたむきな愛」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>毎日同じことを続けるのは、地味に見えて実はとても強いことです。今日も変わらず取り組んでいることがあるなら、それはあなたのひたむきさの証です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オキザリスから始める小さな体験</h2>
+    <p>同じリズムを繰り返すオキザリスにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>花が開いている時間帯を意識して観察してみる</li>
+      <li>一つのことに集中して取り組む時間を作ってみる</li>
+      <li>朝と夜とで、気持ちの変化を感じてみる</li>
+    </ul>
+
+    <p class="cta-lead">一つのことにじっくり向き合った今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、日々の吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>オキザリスは、日々変わらぬリズムでひたむきさを教えてくれる、1月16日らしい誕生花です。</p>
     <ul>
-      <li>オキザリスは日中に開き夜に閉じる、1月16日の誕生花</li>
-      <li>花言葉は「ひたむきな愛」、一途な想いを象徴する花とされる</li>
-      <li>光に合わせて開閉する愛らしい習性が魅力</li>
-      <li>丈夫で育てやすい</li>
+      <li>オキザリスはカタバミ科の多年草で、日中に開き夜には閉じる花を咲かせる</li>
+      <li>小さく可憐でありながら、規則正しい開閉のリズムが特徴</li>
+      <li>花言葉は「ひたむきな愛」。変わらず続ける一途さを象徴する言葉とされる</li>
+      <li>食用のカタバミ類とは別に扱われる観賞用の植物として親しまれている</li>
     </ul>
   </section>
 

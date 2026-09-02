@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1226/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月26日の誕生花リュウノヒゲの花言葉・特徴・魅力をわかりやすく解説。「天才的」を象徴する趣のある植物の意味を紹介します。">
+  <meta name="description" content="12月26日の誕生花リュウノヒゲの花言葉・特徴・魅力をわかりやすく解説。「天才的」を象徴する、見つけにくい瑠璃色の実を紹介します。">
   <title>12月26日の誕生花はリュウノヒゲ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"リュウノヒゲはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に薄紫の小花を咲かせ、冬には瑠璃色の実をつけます。キジカクシ科の多年草です。"}},
-      {"@type":"Question","name":"リュウノヒゲの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"目立たない夏の小花のあとに、誰も予想しないほど鮮やかな瑠璃色の実をつける意外性が、隠れた才能を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"リュウノヒゲの瑠璃色の実はいつ見られますか？","acceptedAnswer":{"@type":"Answer","text":"夏に咲いた薄紫の小花が実を結び、冬になると宝石のような瑠璃色の実として姿を現します。"}}
+      {"@type":"Question","name":"リュウノヒゲの瑠璃色の実は、なぜ見つけにくいのですか？","acceptedAnswer":{"@type":"Answer","text":"地面近くに茂る細い葉の陰に隠れるように実をつけるため、気をつけて探さないと見過ごしてしまうことが多いためです。"}},
+      {"@type":"Question","name":"リュウノヒゲの花言葉「天才的」という言葉には、どんな理由があるのでしょうか？","acceptedAnswer":{"@type":"Answer","text":"目立たない葉陰にひそみながら、見つけた人を驚かせるほど鮮やかな瑠璃色の実をつける意外性が、隠れた才能を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 26 · 誕生花</span>
     <h1>12月26日の誕生花はリュウノヒゲ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">リュウノヒゲは、キジカクシ科の多年草で、夏に薄紫の小花を咲かせ、冬には瑠璃色の実をつける、静かで趣のある印象を持つ花です。花言葉は「天才的」。趣のある花です。</p>
+    <p class="art-lead">リュウノヒゲは、キジカクシ科の多年草だ。地面近くの細い葉に隠れて、小さな瑠璃色の実がそっと実り、気づかれないまま通り過ぎてしまう人も多いほど、その姿は控えめだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">リュウノヒゲとは</a></li>
-      <li><a href="#meaning">リュウノヒゲが象徴する意味</a></li>
-      <li><a href="#charm">リュウノヒゲの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月26日の誕生花として親しまれるリュウノヒゲ</a></li>
+      <li><a href="#story">見つけたときだけ輝く、リュウノヒゲの瑠璃色の実</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、リュウノヒゲから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>リュウノヒゲとは</h2>
-    <p>リュウノヒゲは、キジカクシ科の多年草で、12月26日の誕生花として知られています。夏に薄紫の小花を咲かせ、冬には瑠璃色の実をつける、静かで趣のある印象を持つ花です。</p>
-  </section>
+    <h2>12月26日の誕生花として親しまれるリュウノヒゲ</h2>
+    <p>リュウノヒゲは、キジカクシ科の多年草で、12月26日の誕生花として知られています。夏には目立たない薄紫の小花を咲かせ、冬になると葉の陰に瑠璃色の実をつける植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>リュウノヒゲが象徴する意味</h2>
-    <p>リュウノヒゲの花言葉は「天才的」です。目立たない夏の小花のあとに、誰も予想しないほど鮮やかな瑠璃色の実をつける意外性が、隠れた才能を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>リュウノヒゲの魅力</h2>
-    <p>リュウノヒゲの魅力は、地味な葉陰にひそむ夏の小花と、冬に見せる思いがけない瑠璃色の実の対比にあります。12月26日生まれの方はもちろん、隠れた才能への想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>リュウノヒゲは半日陰でも育ち、乾燥に強く丈夫に育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月26日生まれの方はもちろん、隠れた才能への想いを伝えたい贈り物としてもリュウノヒゲは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リュウノヒゲはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に薄紫の小花を咲かせ、冬には瑠璃色の実をつけます。キジカクシ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リュウノヒゲの花言葉の由来は何ですか？</div>
-        <div class="faq-a">目立たない夏の小花のあとに、誰も予想しないほど鮮やかな瑠璃色の実をつける意外性が、隠れた才能を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リュウノヒゲの瑠璃色の実はいつ見られますか？</div>
-        <div class="faq-a">夏に咲いた薄紫の小花が実を結び、冬になると宝石のような瑠璃色の実として姿を現します。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">リュウノヒゲの瑠璃色の実は、なぜ見つけにくいのですか？</div>
+        <div class="faq-a">地面近くに茂る細い葉の陰に隠れるように実をつけるため、気をつけて探さないと見過ごしてしまうことが多いためです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>見つけたときだけ輝く、リュウノヒゲの瑠璃色の実</h2>
+    <p>リュウノヒゲの葉は、地面を覆うように細く茂り、一見しただけではただの下草にしか見えない。けれど冬になると、その葉をそっとかき分けた先に、小さな瑠璃色の実が隠れていることがある。派手に目立つ場所に実をつけるのではなく、地面近くの目立たない場所にひっそりと実るため、知らずに通り過ぎてしまう人も少なくない。逆に言えば、足を止めてしゃがみ込み、葉の間を丁寧に探した人だけが、この宝石のような瑠璃色に出会うことができる。夏に咲く薄紫の小花はさらに目立たず、多くの人の記憶に残らないまま季節が過ぎていくが、その静かな時間の先に、この鮮やかな実が待っている。花言葉「天才的」は、目立たない場所にひそみながら、見つけた人だけを驚かせるこの意外性に由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">リュウノヒゲの花言葉「天才的」という言葉には、どんな理由があるのでしょうか？</div>
+        <div class="faq-a">目立たない葉陰にひそみながら、見つけた人を驚かせるほど鮮やかな瑠璃色の実をつける意外性が、隠れた才能を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>静かな場所でひっそりと積み重ねてきた時間には、丁寧に見てくれる人にだけわかる確かな価値がある。目立たない努力ほど、いつか誰かの目にしっかりと留まるものだ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、リュウノヒゲから始める小さな体験</h2>
+    <p>地面近くで静かに輝くこの実にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>瑠璃色の実を探して、静かに観察してみる</li>
+      <li>気づかれにくい自分の得意なことを、一つ思い出してみる</li>
+      <li>地道な積み重ねを、今日も大切にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日の運気を支えてくれる持ち物が気になったら、開運カレンダーのおすすめアイテムも見てみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>見つけようとしなければ出会えないものにも、確かな価値がある。</p>
     <ul>
-      <li>リュウノヒゲは夏に薄紫の小花を咲かせ、冬には瑠璃色の実をつける、12月26日の誕生花</li>
-      <li>花言葉は「天才的」、意外性のある瑠璃色の実に由来する</li>
-      <li>夏の小花から冬の瑠璃色の実へ、季節ごとに違う表情を見せる</li>
-      <li>半日陰でも育ち、乾燥に強く丈夫に育ちます</li>
+      <li>リュウノヒゲは、キジカクシ科の多年草で、夏に目立たない小花を、冬に瑠璃色の実をつける、12月26日の誕生花</li>
+      <li>花言葉は「天才的」。葉陰にひそむ実の意外性に由来すると言われる</li>
+      <li>見頃（実）は冬。夏の開花期とは異なり、冬に見られるのは実の姿である点に留意したい</li>
+      <li>天才的という言葉は、特定の誰かだけでなく、誰の中にも眠る隠れた力を指していると捉えたい</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-26'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1226'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-26');
+echo autoLink($html, 'birthflower-dec-1226');
 ?>

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0227/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月27日の誕生花ミルトニアの花言葉・特徴・魅力をわかりやすく解説。「愛の訪れ」を象徴する洋ランの花の意味を紹介します。">
+  <meta name="description" content="2月27日の誕生花ミルトニアの花言葉・特徴・魅力をわかりやすく解説。「愛の訪れ」を象徴する、パンジーに似た顔を持つ洋ランの意味を紹介します。">
   <title>2月27日の誕生花はミルトニア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ミルトニアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"品種によって開花時期は異なりますが、パンジーに似た形の花を咲かせる洋ランです。"}},
-      {"@type":"Question","name":"ミルトニアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛の訪れ」という花言葉は、パンジーに似た愛らしい花姿がふとした瞬間に訪れる恋を思わせることに由来するとされています。"}},
-      {"@type":"Question","name":"ミルトニアはどうしてパンジーに似ているのですか？","acceptedAnswer":{"@type":"Answer","text":"花びらの形や模様がパンジーに似ていることから「パンジーオーキッド」とも呼ばれています。"}}
+      {"@type":"Question","name":"ミルトニアはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"ラン科の洋ランで、南米原産の着生ランです。パンジーによく似た花の形が特徴で、洋ランの中でも親しみやすい印象を持たれています。"}},
+      {"@type":"Question","name":"ミルトニアの花言葉「愛の訪れ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"パンジーに似た親しみやすい花の姿が、見る人の心をふっと和ませることに由来するといわれています。ふとした瞬間に心が近づく様子を象徴する言葉とされます。"}},
+      {"@type":"Question","name":"「愛の訪れ」とはどんな意味ですか？","acceptedAnswer":{"@type":"Answer","text":"運命的な出会いに限らず、身近な人との心の距離がふっと縮まる瞬間も含むといわれています。日常の中の小さな心の動きとして捉えられることもあります。"}}
     ]
   }
   </script>
@@ -129,13 +139,13 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 27 · 誕生花</span>
     <h1>2月27日の誕生花はミルトニア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ミルトニアは、ラン科の洋ランで、パンジーに似た形の花を咲かせる2月27日の誕生花です。花言葉は「愛の訪れ」。愛らしい花姿が魅力の花です。</p>
+    <p class="art-lead">パンジーによく似た顔を持つ、南米生まれのミルトニア。2月27日の誕生花に選ばれたこの花は、親しみやすい花の姿に心が近づく訪れを宿しています。今日はその懐かしいような顔立ちに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ミルトニア</dd>
     <dt>花言葉</dt><dd>愛の訪れ</dd>
-    <dt>科名</dt><dd>ラン科</dd>
+    <dt>科名</dt><dd>ラン科（洋ラン）</dd>
     <dt>見頃</dt><dd>-</dd>
   </dl>
 
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ミルトニアとは</a></li>
-      <li><a href="#meaning">ミルトニアが象徴する意味</a></li>
-      <li><a href="#charm">ミルトニアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">パンジーに似た顔を持つ、南米生まれのミルトニア</a></li>
+      <li><a href="#story">2月27日、ミルトニアの「パンジーに似た顔」が運ぶ訪れ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ミルトニアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ミルトニアとは</h2>
-    <p>ミルトニアは、ラン科の洋ランで、2月27日の誕生花として知られています。花びらの形や模様がパンジーによく似ていることから「パンジーオーキッド」とも呼ばれ、愛らしい花姿で親しまれています。</p>
-  </section>
+    <h2>パンジーに似た顔を持つ、南米生まれのミルトニア</h2>
+    <p>ミルトニアは、ラン科の洋ランです。南米を原産とする着生ランで、木や岩に根を張って育ちます。その花の姿はまるでパンジーのようで、見る人に親しみやすい印象を与えてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ミルトニアが象徴する意味</h2>
-    <p>ミルトニアの花言葉は「愛の訪れ」です。パンジーを思わせる愛らしい花姿が、ふとした瞬間に訪れる恋の予感を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ミルトニアの魅力</h2>
-    <p>ミルトニアの魅力は、洋ランらしい上品さと、パンジーに似た親しみやすい花姿の組み合わせにあります。鉢植えとして室内でも育てやすく、贈り物としても人気の高い花です。2月27日生まれの方はもちろん、新しい愛の訪れを願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ミルトニアは、直射日光を避けた明るい場所で、風通しよく管理するのがおすすめです。乾燥に弱いため、こまめな水やりを心がけましょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月27日生まれの方はもちろん、新しい愛の訪れを願う贈り物としてもミルトニアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミルトニアはいつ頃咲きますか？</div>
-        <div class="faq-a">品種によって開花時期は異なりますが、パンジーに似た形の花を咲かせる洋ランです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミルトニアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「愛の訪れ」という花言葉は、パンジーに似た愛らしい花姿がふとした瞬間に訪れる恋を思わせることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミルトニアはどうしてパンジーに似ているのですか？</div>
-        <div class="faq-a">花びらの形や模様がパンジーに似ていることから「パンジーオーキッド」とも呼ばれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ミルトニアはどんな花ですか？</div>
+        <div class="faq-a">ラン科の洋ランで、南米原産の着生ランです。パンジーによく似た花の形が特徴で、洋ランの中でも親しみやすい印象を持たれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月27日、ミルトニアの「パンジーに似た顔」が運ぶ訪れ</h2>
+    <p>ミルトニアの花をひと目見ると、多くの人がまず思い浮かべるのは、身近な花壇でもよく見かけるパンジーの顔でしょう。実際にミルトニアは、その花の形から「パンジーオーキッド」という別名でも呼ばれています。異国の地、南米で育つ着生ランでありながら、どこか見覚えのある顔をしている。その懐かしさにも似た親しみやすさが、初めて出会う人の心をふっと和ませてくれます。よく知る誰かに似た顔を街で見かけて、思わず立ち止まってしまうような感覚。そんな、ふとした瞬間に心が近づいていく様子から、ミルトニアには「愛の訪れ」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミルトニアの花言葉「愛の訪れ」の由来は？</div>
+        <div class="faq-a">パンジーに似た親しみやすい花の姿が、見る人の心をふっと和ませることに由来するといわれています。ふとした瞬間に心が近づく様子を象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに似ていると感じる出会いには、不思議な安心感があります。今日は、そんな小さな親しみの気持ちを大切にしてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ミルトニアから始める小さな体験</h2>
+    <p>パンジーに似た顔で心を近づけるミルトニアにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>パンジーに似た形の花を探して見比べてみる</li>
+      <li>気になっている人に、そっと気持ちを伝えてみる</li>
+      <li>「パンジーオーキッド」という別名の響きを声に出してみる</li>
+      <li>誰かの訪れを楽しみに待ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">「愛の訪れ」とはどんな意味ですか？</div>
+        <div class="faq-a">運命的な出会いに限らず、身近な人との心の距離がふっと縮まる瞬間も含むといわれています。日常の中の小さな心の動きとして捉えられることもあります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かの訪れをそっと待てた今日は、今日のラッキーカラーにも目を留めてみませんか。開運カレンダーでは、その日のラッキーカラーや吉日も確かめられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月27日、パンジーに似た顔で心を和ませるミルトニアは、ふとした親しみの尊さを教えてくれる花です。</p>
     <ul>
-      <li>ミルトニアはパンジーに似た花を咲かせる洋ラン、2月27日の誕生花</li>
-      <li>花言葉は「愛の訪れ」、ふとした恋の予感を象徴する</li>
-      <li>洋ランの上品さと親しみやすい花姿の両立が魅力</li>
-      <li>明るい場所で風通しよく、乾燥に注意して育てたい</li>
+      <li>ミルトニアはラン科の洋ランで、南米原産の着生ランとして知られる</li>
+      <li>パンジーに似た花の形から「パンジーオーキッド」とも呼ばれる</li>
+      <li>花言葉は「愛の訪れ」。ふとした瞬間に心が近づく様子を象徴するとされる</li>
+      <li>運命的な出会いに限らず、身近な心の距離が縮まる瞬間も表すといわれる</li>
     </ul>
   </section>
 

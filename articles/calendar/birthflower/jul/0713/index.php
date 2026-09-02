@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0713/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月13日の誕生花ニチニチソウの花言葉・特徴・魅力をわかりやすく解説。「甘い思い出」を象徴する毎日花を咲き替える姿の意味を紹介します。">
+  <meta name="description" content="7月13日の誕生花ニチニチソウの花言葉・特徴・魅力をわかりやすく解説。日々花を咲き替える姿が名の由来となった、マダガスカル生まれのキョウチクトウ科の花を紹介します。">
   <title>7月13日の誕生花はニチニチソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ニチニチソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて次々と花を咲き替えます。キョウチクトウ科の一年草です。"}},
-      {"@type":"Question","name":"ニチニチソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"毎日花を咲き替えながら絶えず彩りを添え続ける姿が、日々積み重なる甘く温かな思い出を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ニチニチソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一日花でありながら次々と花を咲き替え、毎日花が絶えないことから「日々草」と名付けられたとされています。"}}
+      {"@type":"Question","name":"ニチニチソウはどんな咲き方をする花ですか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、次々と花を咲き替えます。キョウチクトウ科の一年草です。"}},
+      {"@type":"Question","name":"ニチニチソウの花言葉『甘い思い出』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"毎日花を咲き替えながら絶えず彩りを添え続ける姿が、日々積み重なる甘く温かな思い出を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"ニチニチソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"日々花を咲き替える姿が、名前の由来になっているといわれています。マダガスカル原産で、薬草としても知られています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 13 · 誕生花</span>
     <h1>7月13日の誕生花はニチニチソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ニチニチソウは、キョウチクトウ科の一年草で、夏から秋にかけて次々と花を咲き替え、明るく元気な印象を長い間楽しませてくれる花です。花言葉は「甘い思い出」。毎日花を咲き替える元気な花です。</p>
+    <p class="art-lead">昨日咲いた花が萎れる頃、もう次の花がそっと開き始めています。ニチニチソウは、夏から秋まで、絶えることなく花を咲き替え続ける花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ニチニチソウとは</a></li>
-      <li><a href="#meaning">ニチニチソウが象徴する意味</a></li>
-      <li><a href="#charm">ニチニチソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月13日の誕生花として親しまれるニチニチソウ</a></li>
+      <li><a href="#story">夏から秋へ、日々咲き替えるニチニチソウの歩み</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ニチニチソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ニチニチソウとは</h2>
-    <p>ニチニチソウは、キョウチクトウ科の一年草で、7月13日の誕生花として知られています。夏から秋にかけて次々と花を咲き替え、明るく元気な印象を長い間楽しませてくれる花です。</p>
-  </section>
+    <h2>7月13日の誕生花として親しまれるニチニチソウ</h2>
+    <p>ニチニチソウは、キョウチクトウ科の一年草です。夏から秋にかけて次々と花を咲き替え、日々咲く姿がそのまま名前の由来になったといわれています。マダガスカル原産とされるこの花は、7月13日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ニチニチソウが象徴する意味</h2>
-    <p>ニチニチソウの花言葉は「甘い思い出」です。毎日花を咲き替えながら絶えず彩りを添え続ける姿が、日々積み重なる甘く温かな思い出を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ニチニチソウの魅力</h2>
-    <p>ニチニチソウの魅力は、夏から秋にかけて次々と花を咲き替える開花期間の長さと、明るく元気な花色の豊富さにあります。暑さに強く花壇を長く彩る、夏の定番の花として親しまれています。7月13日生まれの方はもちろん、甘い思い出を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ニチニチソウは日当たりと乾燥した環境を好み、過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月13日生まれの方はもちろん、甘い思い出を伝えたい贈り物としてもニチニチソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニチニチソウはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋にかけて次々と花を咲き替えます。キョウチクトウ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニチニチソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">毎日花を咲き替えながら絶えず彩りを添え続ける姿が、日々積み重なる甘く温かな思い出を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニチニチソウという名前の由来は何ですか？</div>
-        <div class="faq-a">一日花でありながら次々と花を咲き替え、毎日花が絶えないことから「日々草」と名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ニチニチソウはどんな咲き方をする花ですか？</div>
+        <div class="faq-a">夏から秋にかけて、次々と花を咲き替えます。キョウチクトウ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏から秋へ、日々咲き替えるニチニチソウの歩み</h2>
+    <p>ニチニチソウは、夏の始まりから秋の気配が漂うまでの長い期間、一日ごとに花を咲き替えながら咲き続けます。一つの花の寿命は短くても、次から次へと新しい花が開くため、株全体としては途切れることなく彩りを保ち続けるのが特徴です。季節が移り変わっていく中で、暑さの厳しい盛夏も、涼しさが増す初秋も、変わらず同じペースで花を咲かせ続ける姿には、静かな粘り強さが感じられます。積み重ねた一日一日が、そのまま花として残っていく――そんな咲き方をする花に、甘い記憶を重ねたくなる人は多いのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ニチニチソウの花言葉『甘い思い出』の由来は何ですか？</div>
+        <div class="faq-a">毎日花を咲き替えながら絶えず彩りを添え続ける姿が、日々積み重なる甘く温かな思い出を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>夏の初めから秋の気配が漂うまで、一日ごとに花を咲き替えながら途切れることなく彩りを保ち続けるニチニチソウのように、平凡に見える一日も積み重なればいつか確かな思い出になります。この一日を、少しだけ丁寧に過ごしてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ニチニチソウから始める小さな体験</h2>
+    <p>毎日花を咲き替えるニチニチソウにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>次々と咲き替わる花を毎日観察してみる</li>
+      <li>今日一日を大切にする気持ちを持ってみる</li>
+      <li>明るい色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ニチニチソウという名前の由来は何ですか？</div>
+        <div class="faq-a">日々花を咲き替える姿が、名前の由来になっているといわれています。マダガスカル原産で、薬草としても知られています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">一日一日を大切に過ごしたい今日は、ラッキーフードや星座もあわせて確認してみませんか。開運カレンダーでは、ラッキーフードと星座占いを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>夏から秋まで毎日花を咲き替えるニチニチソウの姿は、積み重ねた一日一日がそのまま形になることを教えているようです。</p>
     <ul>
-      <li>ニチニチソウは夏から秋に花を咲き替える、7月13日の誕生花</li>
-      <li>花言葉は「甘い思い出」、日々咲き替える姿に由来する</li>
-      <li>長い開花期間と豊富な花色が魅力</li>
-      <li>日当たりと乾燥した環境で、過湿を避けることが必要</li>
+      <li>ニチニチソウは夏から秋にかけて次々と花を咲き替える、キョウチクトウ科の一年草で、7月13日の誕生花</li>
+      <li>花言葉は「甘い思い出」。毎日花を咲き替えながら彩りを添え続ける姿に由来するとされる</li>
+      <li>日々咲く姿がそのまま名前の由来になったといわれる</li>
+      <li>マダガスカル原産で、薬草としても知られる</li>
     </ul>
   </section>
 

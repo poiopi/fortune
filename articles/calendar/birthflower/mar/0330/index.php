@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0330/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月30日の誕生花ゲッケイジュの花言葉・特徴・魅力をわかりやすく解説。「栄誉と勝利」を象徴する栄誉を象徴する花木の意味を紹介します。">
+  <meta name="description" content="3月30日の誕生花ゲッケイジュの花言葉・特徴・魅力をわかりやすく解説。「栄誉と勝利」を象徴する、常緑高木の意味を紹介します。">
   <title>3月30日の誕生花はゲッケイジュ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ゲッケイジュはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小さな黄白色の花を咲かせます。クスノキ科の常緑高木で、香り高い葉はローリエとして料理にも使われます。"}},
-      {"@type":"Question","name":"ゲッケイジュの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「栄誉と勝利」という花言葉は、古代ギリシャで競技や詩の優勝者に月桂樹の枝を編んだ冠を授ける習慣があったことに由来すると言われています。"}},
-      {"@type":"Question","name":"ゲッケイジュの葉は料理に使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい。「ローリエ（ベイリーフ）」として、煮込み料理やスープの香りづけに広く使われている香辛料です。乾燥させることで香りが増すとされています。"}}
+      {"@type":"Question","name":"ゲッケイジュはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小さな黄白色の花を咲かせます。クスノキ科の常緑高木で、一年を通して葉を茂らせる木です。"}},
+      {"@type":"Question","name":"ゲッケイジュの花言葉「栄誉と勝利」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一年を通して葉を茂らせる常緑高木として、古くから栄誉の象徴とされてきたことに由来するといわれています。"}},
+      {"@type":"Question","name":"ゲッケイジュはどんな木ですか？","acceptedAnswer":{"@type":"Answer","text":"クスノキ科の常緑高木で、一年を通して葉を茂らせます。古くから栄誉の象徴とされてきた格式高い木として知られています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 30 · 誕生花</span>
     <h1>3月30日の誕生花はゲッケイジュ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ゲッケイジュは、クスノキ科の常緑高木で、春に小さな黄白色の花を咲かせる3月30日の誕生花です。花言葉は「栄誉と勝利」。格式高い花木です。</p>
+    <p class="art-lead">春、控えめな黄白色の花をそっと咲かせるゲッケイジュ。3月30日の誕生花に選ばれたこの木は、静かに積み重ねてきた努力の尊さを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ゲッケイジュとは</a></li>
-      <li><a href="#meaning">ゲッケイジュが象徴する意味</a></li>
-      <li><a href="#charm">ゲッケイジュの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月30日の誕生花として親しまれるゲッケイジュ</a></li>
+      <li><a href="#story">控えめな黄白色が語る、ゲッケイジュの栄誉</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ゲッケイジュから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ゲッケイジュとは</h2>
-    <p>ゲッケイジュは、クスノキ科の常緑高木で、3月30日の誕生花として知られています。「月桂樹」と書き、香り高い葉は「ローリエ（ベイリーフ）」として煮込み料理などの香辛料に使われるほか、古代ギリシャでは勝者を称える月桂冠の材料としても用いられてきました。</p>
-  </section>
+    <h2>3月30日の誕生花として親しまれるゲッケイジュ</h2>
+    <p>ゲッケイジュは、クスノキ科の常緑高木です。春になると、目立たない小さな黄白色の花をそっと咲かせます。常緑高木として一年を通して葉を茂らせ、古くから栄誉の象徴とされてきた格式高い木としても知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ゲッケイジュが象徴する意味</h2>
-    <p>ゲッケイジュの花言葉は「栄誉と勝利」です。古代ギリシャの神アポロンにゆかりのある木とされ、競技や詩の優勝者に月桂樹の枝を編んだ冠を授ける習慣があったことに由来すると言われています。現在も勝利や栄光の象徴として世界中で親しまれています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ゲッケイジュの魅力</h2>
-    <p>ゲッケイジュの魅力は、一年中つやのある緑の葉を茂らせる常緑樹らしい力強さと、料理にも活用できる実用性を兼ね備えているところです。花は控えめですが、葉の芳香は古くから人々を魅了し続けてきました。3月30日生まれの方はもちろん、努力の末の栄誉を称える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ゲッケイジュは日当たりと水はけの良い場所を好み、丈夫で育てやすい木です。葉を収穫する場合は、乾燥させてから料理に使うと香りが長持ちします。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月30日生まれの方はもちろん、努力の末の栄誉を称えたい贈り物としてもゲッケイジュは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ゲッケイジュはいつ頃咲きますか？</div>
-        <div class="faq-a">春に小さな黄白色の花を咲かせます。クスノキ科の常緑高木で、香り高い葉はローリエとして料理にも使われます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゲッケイジュの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「栄誉と勝利」という花言葉は、古代ギリシャで競技や詩の優勝者に月桂樹の枝を編んだ冠を授ける習慣があったことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ゲッケイジュの葉は料理に使えますか？</div>
-        <div class="faq-a">はい。「ローリエ（ベイリーフ）」として、煮込み料理やスープの香りづけに広く使われている香辛料です。乾燥させることで香りが増すとされています。</div>
+        <div class="faq-a">春に小さな黄白色の花を咲かせます。クスノキ科の常緑高木で、一年を通して葉を茂らせる木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>控えめな黄白色が語る、ゲッケイジュの栄誉</h2>
+    <p>春の陽気が満ちてくる頃、ゲッケイジュの枝先には小さな黄白色の花がそっと顔を出します。桜のように華やかに人目を引く花ではありませんが、季節が移ろうたびに、変わらずそこに花を咲かせ続けます。ゲッケイジュはクスノキ科の常緑高木で、冬でも葉を落とすことなく、一年を通して緑を保ち続ける木でもあります。控えめな花と、一年中変わらない葉の姿。その二つが合わさって、古くから栄誉の象徴とされてきた格式高い木として位置づけられてきました。そんな佇まいから、ゲッケイジュには「栄誉と勝利」という花言葉が贈られているといわれています。この言葉が指す勝利とは、誰かを打ち負かすことだけを意味するのではなく、地道に積み重ねてきた努力が、静かに報われる瞬間のことでもあるのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ゲッケイジュの花言葉「栄誉と勝利」の由来は？</div>
+        <div class="faq-a">一年を通して葉を茂らせる常緑高木として、古くから栄誉の象徴とされてきたことに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>積み重ねてきた努力は、目立たないところでも確かに実を結んでいきます。今日は、これまで続けてきたことを一つ思い出して、自分自身をそっとねぎらってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ゲッケイジュから始める小さな体験</h2>
+    <p>控えめな黄白色の花を咲かせるゲッケイジュにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>小さな黄白色の花を探して観察してみる</li>
+      <li>これまで積み重ねてきた努力を一つ振り返ってみる</li>
+      <li>目立たないけれど大切なものを、身の回りで見つけてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ゲッケイジュはどんな木ですか？</div>
+        <div class="faq-a">クスノキ科の常緑高木で、一年を通して葉を茂らせます。古くから栄誉の象徴とされてきた格式高い木として知られています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">積み重ねてきた努力に思いを馳せた今日は、星座や年九星もあわせて確認してみませんか。開運カレンダーでは、その日の星座や年九星もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月30日、控えめな黄白色の花を咲かせるゲッケイジュは、静かに積み重ねてきた努力が報われることを教えてくれる木です。</p>
     <ul>
-      <li>ゲッケイジュは春に小さな黄白色の花を咲かせる、3月30日の誕生花</li>
-      <li>花言葉は「栄誉と勝利」、古代ギリシャの月桂冠の習慣に由来する</li>
-      <li>つやのある常緑の葉と香辛料としての実用性が魅力</li>
-      <li>日当たりの良い場所で、丈夫な性質を活かして育てたい</li>
+      <li>ゲッケイジュはクスノキ科の常緑高木で、春に小さな黄白色の花を咲かせる</li>
+      <li>一年を通して葉を茂らせ、古くから栄誉の象徴とされてきた格式高い木</li>
+      <li>花言葉は「栄誉と勝利」。地道な努力が静かに報われることを表す言葉ともいわれる</li>
+      <li>目立たない花と変わらぬ葉の姿が、積み重ねの尊さを静かに教えてくれる</li>
     </ul>
   </section>
 

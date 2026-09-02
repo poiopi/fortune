@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0131/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月31日の誕生花ウメ（白）の花言葉・特徴・魅力をわかりやすく解説。「澄んだ心」を象徴する早春の花木の意味を紹介します。">
+  <meta name="description" content="1月31日の誕生花ウメ（白）の花言葉・特徴・魅力をわかりやすく解説。「澄んだ心」を象徴する花の意味を紹介します。">
   <title>1月31日の誕生花はウメ（白）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ウメ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、まだ寒さの残る時期に白い花を咲かせます。"}},
-      {"@type":"Question","name":"ウメ（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。"}},
-      {"@type":"Question","name":"白いウメと紅いウメは花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。"}}
+      {"@type":"Question","name":"ウメ（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、まだ寒さの残る時期に白い花を咲かせます。他の花に先駆けて咲くことでも知られています。"}},
+      {"@type":"Question","name":"ウメ（白）の花言葉「澄んだ心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"寒さの中でも汚れなく白く咲く姿に由来するといわれています。同じウメでも紅色の花とは花言葉が異なります。"}}
     ]
   }
   </script>
@@ -110,7 +116,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月31日の誕生花（ウメ）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0131/"}
+      {"@type":"ListItem","position":6,"name":"1月31日の誕生花（ウメ（白））とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0131/"}
     ]
   }
   </script>
@@ -126,13 +132,13 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月31日の誕生花（ウメ）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月31日の誕生花（ウメ（白））とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 31 · 誕生花</span>
     <h1>1月31日の誕生花はウメ（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ウメ（白）は、早春に白い花を咲かせる1月31日の誕生花です。花言葉は「澄んだ心」。清楚で凛とした印象の花です。</p>
+    <p class="art-lead">1月最後の日、1月31日。ウメ（白）は、他の花に先駆けて早春に白く咲き、香り高い花を咲かせる花木です。今日はその澄んだ姿を紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ウメ（白）とは</a></li>
-      <li><a href="#meaning">ウメ（白）が象徴する意味</a></li>
-      <li><a href="#charm">ウメ（白）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">早春、他の花に先駆けて咲くウメ（白）の姿</a></li>
+      <li><a href="#story">1月31日、ウメ（白）が伝える澄んだ心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ウメ（白）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ウメ（白）とは</h2>
-    <p>ウメ（白）は、バラ科の落葉高木で、1月31日の誕生花として知られています。早春、まだ寒さの残る中で白く清楚な花を咲かせ、凛とした美しさから古くから日本で愛されてきた花木です。</p>
-  </section>
+    <h2>早春、他の花に先駆けて咲くウメ（白）の姿</h2>
+    <p>ウメ（白）は、バラ科の落葉高木です。早春になると、他の花に先駆けて白い花を咲かせ、あたりに香りを漂わせます。清らかで凛とした印象を与える花として、古くから日本で親しまれてきました。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ウメ（白）が象徴する意味</h2>
-    <p>ウメ（白）の花言葉は「澄んだ心」です。寒さの中でも汚れなく白く咲くその姿から、清らかで澄んだ心を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ウメ（白）の魅力</h2>
-    <p>ウメ（白）の魅力は、凛とした佇まいで咲く白い花と、あたりに漂うほのかな香りにあります。庭木や盆栽としても長く親しまれ、早春の訪れを清らかに告げてくれます。1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ウメ（白）は日当たりの良い場所を好み、乾燥に強い一方、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月31日生まれの方はもちろん、澄んだ心を伝えたい贈り物としてもウメ（白）は人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">早春、まだ寒さの残る時期に白い花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「澄んだ心」という花言葉は、寒さの中でも汚れなく白く咲く姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">白いウメと紅いウメは花言葉が違いますか？</div>
-        <div class="faq-a">はい、色によって花言葉が異なり、白は「澄んだ心」を表すとされています。</div>
+        <div class="faq-a">早春、まだ寒さの残る時期に白い花を咲かせます。他の花に先駆けて咲くことでも知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月31日、ウメ（白）が伝える澄んだ心</h2>
+    <p>他の花がまだ蕾のうちから、ウメ（白）はいち早く白い花を咲かせます。それは競うためではなく、自分の季節が来たことを静かに知らせているだけなのかもしれません。1月31日、1月の締めくくりとなるこの日は、慌ただしかった一か月を振り返り、心を静める時間を持つのにふさわしい日です。花言葉は「澄んだ心」。寒さの中でも汚れなく白く咲く姿から生まれた言葉だといわれています。なお、同じウメでも紅色の花とは花言葉が異なります。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ウメ（白）の花言葉「澄んだ心」の由来は？</div>
+        <div class="faq-a">寒さの中でも汚れなく白く咲く姿に由来するといわれています。同じウメでも紅色の花とは花言葉が異なります。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一年で最も寒さの厳しいこの時期だからこそ、静かに澄んだ心で過ごせる瞬間があります。今日は、心の中を少しだけ整理して、すっきりとした気持ちで新しい月を迎えてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ウメ（白）から始める小さな体験</h2>
+    <p>他の花に先駆けて白く咲くウメ（白）にあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白い梅の花を探して見に行ってみる</li>
+      <li>心を静める時間を少し作ってみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">心を静めて過ごせた今日は、運気の流れも一緒にチェックしてみませんか。開運カレンダーでは、六曜や月齢もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ウメ（白）は、寒さの中で凛と咲く姿を通して、澄んだ心で過ごすことの大切さを教えてくれる誕生花です。</p>
     <ul>
-      <li>ウメ（白）は早春に白い花を咲かせる、1月31日の誕生花</li>
-      <li>花言葉は「澄んだ心」、清らかさを象徴する花とされる</li>
-      <li>凛とした佇まいとほのかな香りが魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>ウメ（白）はバラ科の落葉高木で、早春に他の花に先駆けて白い花を咲かせる</li>
+      <li>香り高く、清らかで凛とした印象を与える花として親しまれてきた</li>
+      <li>花言葉は「澄んだ心」。寒さの中で汚れなく白く咲く姿に由来するといわれている</li>
+      <li>同じウメでも紅色の花とは花言葉が異なる</li>
     </ul>
   </section>
 

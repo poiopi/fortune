@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0322/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月22日の誕生花ユキヤナギの花言葉・特徴・魅力をわかりやすく解説。「殊勝」を象徴する雪のように咲く花の意味を紹介します。">
+  <meta name="description" content="3月22日の誕生花ユキヤナギの花言葉・特徴・魅力をわかりやすく解説。「殊勝」を象徴する、雪のように白い小花を咲かせる花木の意味を紹介します。">
   <title>3月22日の誕生花はユキヤナギ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ユキヤナギはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に細い枝に沿って白い小花を咲かせます。バラ科の落葉低木で、雪が積もったような花姿が特徴です。"}},
-      {"@type":"Question","name":"ユキヤナギの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「殊勝」という花言葉は、細やかな小花を一つひとつ丁寧に咲かせていく控えめな姿が、けなげで感心な心がけを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ユキヤナギという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"柳のようにしなやかに枝垂れる細い枝に、雪が積もったかのような白い小花を咲かせる姿からこの名がつけられました。バラ科ですがヤナギに似た枝ぶりが特徴です。"}}
+      {"@type":"Question","name":"ユキヤナギはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に白い小花を雪のように咲かせます。ちょうど3月頃から見頃を迎える花木です。"}},
+      {"@type":"Question","name":"ユキヤナギの花言葉「殊勝」の由来は？","acceptedAnswer":{"@type":"Answer","text":"控えめな小花が、無数に集まってひたむきに咲く姿に由来するといわれています。"}},
+      {"@type":"Question","name":"ユキヤナギと似た花木はありますか？","acceptedAnswer":{"@type":"Answer","text":"同じように白い小花を咲かせるコデマリなどと見た目が似ていますが、それぞれ異なる特徴を持つ植物といわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 22 · 誕生花</span>
     <h1>3月22日の誕生花はユキヤナギ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ユキヤナギは、バラ科の落葉低木で、春に細い枝に沿って白い小花を雪のように咲かせる3月22日の誕生花です。花言葉は「殊勝」。清らかで軽やかな花です。</p>
+    <p class="art-lead">細い枝に沿って雪のように白い花を咲かせるユキヤナギ。3月22日の誕生花に選ばれたこの花木は、ひたむきに咲く姿で心を打ちます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ユキヤナギとは</a></li>
-      <li><a href="#meaning">ユキヤナギが象徴する意味</a></li>
-      <li><a href="#charm">ユキヤナギの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月22日の誕生花として親しまれるユキヤナギ</a></li>
+      <li><a href="#story">雪のように咲く、ユキヤナギとひたむきな春</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ユキヤナギから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ユキヤナギとは</h2>
-    <p>ユキヤナギは、バラ科の落葉低木で、3月22日の誕生花として知られています。柳のようにしなやかに枝垂れる細い枝いっぱいに、雪が積もったかのような白い小花を咲かせることからこの名がつけられ、春の訪れを告げる庭木として広く親しまれています。</p>
-  </section>
+    <h2>3月22日の誕生花として親しまれるユキヤナギ</h2>
+    <p>ユキヤナギは、バラ科の落葉低木です。春になると、細い枝に沿って白い小花をびっしりと咲かせます。その姿はまるで、枝に雪が積もったかのように見えることから、この名がつけられたといわれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ユキヤナギが象徴する意味</h2>
-    <p>ユキヤナギの花言葉は「殊勝」です。細やかな小花を一つひとつ丁寧に咲かせていく控えめな姿が、けなげで感心な心がけを思わせることに由来すると言われています。「愛らしさ」「気まま」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ユキヤナギの魅力</h2>
-    <p>ユキヤナギの魅力は、風にそよぐしなやかな枝と、雪が積もったように咲く無数の小花が織りなす軽やかな美しさにあります。切り花としても人気が高く、生け花やフラワーアレンジメントの枝物として、他の花との組み合わせを引き立ててくれます。3月22日生まれの方はもちろん、控えめながらも心のこもった想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ユキヤナギは日当たりの良い場所を好み、丈夫で育てやすい花木です。花が終わった後に古い枝を整理するように剪定すると、翌年も美しい花付きを楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月22日生まれの方はもちろん、控えめながらも心のこもった想いを届けたい贈り物としてもユキヤナギは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギはいつ頃咲きますか？</div>
-        <div class="faq-a">春に細い枝に沿って白い小花を咲かせます。バラ科の落葉低木で、雪が積もったような花姿が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「殊勝」という花言葉は、細やかな小花を一つひとつ丁寧に咲かせていく控えめな姿が、けなげで感心な心がけを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギという名前の由来は何ですか？</div>
-        <div class="faq-a">柳のようにしなやかに枝垂れる細い枝に、雪が積もったかのような白い小花を咲かせる姿からこの名がつけられました。バラ科ですがヤナギに似た枝ぶりが特徴です。</div>
+        <div class="faq-a">春に白い小花を雪のように咲かせます。ちょうど3月頃から見頃を迎える花木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>雪のように咲く、ユキヤナギとひたむきな春</h2>
+    <p>しなやかにしだれる細い枝いっぱいに、白い小花が連なって咲くユキヤナギの姿は、風が吹くたびにさらさらと揺れて、雪の粉が舞っているようにも見えます。決して大輪の花ではなく、一つひとつは控えめな小花ですが、無数に集まることで、誰の目にも留まる存在感を生み出しています。その控えめでありながら精一杯咲く姿から、「殊勝」という花言葉が生まれたといわれています。殊勝とは、誰かを見下すような評価の言葉ではなく、ひたむきに頑張る姿への、素直な敬意を表す言葉です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギの花言葉「殊勝」の由来は？</div>
+        <div class="faq-a">控えめな小花が、無数に集まってひたむきに咲く姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>目立たなくても、ひたむきに頑張っている姿には、確かな美しさがあります。今日は、そんな誰かの頑張りに、ひとこと労いの言葉をかけてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ユキヤナギから始める小さな体験</h2>
+    <p>雪のように白い花を咲かせるユキヤナギにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>雪のように咲く白い小花を探してみる</li>
+      <li>控えめに頑張っている誰かを、ひとこと労ってみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユキヤナギと似た花木はありますか？</div>
+        <div class="faq-a">同じように白い小花を咲かせるコデマリなどと見た目が似ていますが、それぞれ異なる特徴を持つ植物といわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">雪のように連なる白い小花に、けなげな頑張りを重ねた今日は、ラッキーカラーやラッキーアイテム、吉日もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーカラーやラッキーアイテム、吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月22日、雪のように白い小花を咲かせるユキヤナギは、ひたむきに頑張る姿の美しさを教えてくれる花です。</p>
     <ul>
-      <li>ユキヤナギは春に白い小花を雪のように咲かせる、3月22日の誕生花</li>
-      <li>花言葉は「殊勝」、控えめに咲く小花の姿に由来する</li>
-      <li>しなやかな枝と軽やかな花姿が魅力</li>
-      <li>花後の剪定で古い枝を整理しながら育てたい</li>
+      <li>ユキヤナギはバラ科の落葉低木で、春に白い小花を雪のように咲かせる</li>
+      <li>控えめな小花が集まることで生まれる存在感が魅力</li>
+      <li>花言葉は「殊勝」。ひたむきに咲く姿に由来するといわれる</li>
+      <li>コデマリなど似た花木と混同されることもある</li>
     </ul>
   </section>
 

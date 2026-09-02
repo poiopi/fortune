@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0329/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月29日の誕生花イカリソウの花言葉・特徴・魅力をわかりやすく解説。「束縛」を象徴するユニークな形の山野草の意味を紹介します。">
+  <meta name="description" content="3月29日の誕生花イカリソウの花言葉・特徴・魅力をわかりやすく解説。「束縛」を象徴する、船の錨に似た形の花の意味を紹介します。">
   <title>3月29日の誕生花はイカリソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"イカリソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に船の錨に似た形の花を咲かせます。メギ科の多年草で、山地の林の中などに自生する山野草です。"}},
-      {"@type":"Question","name":"イカリソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「束縛」という花言葉は、錨のような特徴的な花の形が、船を一箇所につなぎとめる姿と重なることに由来すると言われています。"}},
-      {"@type":"Question","name":"イカリソウは薬草としても使われるのですか？","acceptedAnswer":{"@type":"Answer","text":"はい。古くから漢方の世界で滋養強壮に用いられてきた歴史があり、力強さを象徴する山野草としても知られています。"}}
+      {"@type":"Question","name":"イカリソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に船の錨に似た形の花を咲かせます。メギ科の多年草で、山野草として身近な野山で見かけられる花です。"}},
+      {"@type":"Question","name":"イカリソウの花言葉「束縛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一度根付いた場所を離れず、毎年同じ場所で花を咲かせる性質に由来するといわれています。強い結びつきや愛着を表す言葉としても受け取れます。"}},
+      {"@type":"Question","name":"イカリソウはどこで見られますか？","acceptedAnswer":{"@type":"Answer","text":"山野草として、身近な野山で見かけられることがあります。暮らしに寄り添う花として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 29 · 誕生花</span>
     <h1>3月29日の誕生花はイカリソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">イカリソウは、メギ科の多年草で、春に船の錨に似た花を咲かせる3月29日の誕生花です。花言葉は「束縛」。ユニークで愛らしい山野草です。</p>
+    <p class="art-lead">春の野山で、船の錨に似た形の花をそっと咲かせるイカリソウ。3月29日の誕生花に選ばれたこの花は、離れられない結びつきについて考えるきっかけをくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">イカリソウとは</a></li>
-      <li><a href="#meaning">イカリソウが象徴する意味</a></li>
-      <li><a href="#charm">イカリソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月29日の誕生花として親しまれるイカリソウ</a></li>
+      <li><a href="#story">錨に似た形が語る、イカリソウの束縛</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、イカリソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>イカリソウとは</h2>
-    <p>イカリソウは、メギ科の多年草で、3月29日の誕生花として知られています。花の後方に伸びる4本の距（きょ）が船の錨（いかり）のような形をしていることからこの名がつけられ、山地の林の中などに自生する日本の山野草です。</p>
-  </section>
+    <h2>3月29日の誕生花として親しまれるイカリソウ</h2>
+    <p>イカリソウは、メギ科の多年草です。春になると、船の錨によく似た形の花を咲かせます。山野に自生する「山野草」として位置づけられ、身近な野山を歩けば出会えることもある、暮らしに寄り添う花だといえます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>イカリソウが象徴する意味</h2>
-    <p>イカリソウの花言葉は「束縛」です。錨のような特徴的な花の形が、船を一箇所につなぎとめる姿と重なることに由来すると言われています。一方で漢方の世界では古くから滋養強壮に用いられてきた歴史もあり、力強さを象徴する花でもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>イカリソウの魅力</h2>
-    <p>イカリソウの魅力は、他に類を見ないユニークな錨形の花姿と、うつむき加減に咲く可憐さが同居しているところにあります。林床の半日陰でひっそりと咲く姿は、山野草ならではの奥ゆかしい美しさを感じさせてくれます。3月29日生まれの方はもちろん、強く心をつなぎとめる想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>イカリソウは半日陰で腐植質に富んだ土を好み、乾燥を避けて育てるのがおすすめです。山野草として、庭の木陰や鉢植えでも涼しげな雰囲気を楽しむことができます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月29日生まれの方はもちろん、強く心をつなぎとめる想いを届けたい贈り物としてもイカリソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">イカリソウはいつ頃咲きますか？</div>
-        <div class="faq-a">春に船の錨に似た形の花を咲かせます。メギ科の多年草で、山地の林の中などに自生する山野草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">イカリソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「束縛」という花言葉は、錨のような特徴的な花の形が、船を一箇所につなぎとめる姿と重なることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">イカリソウは薬草としても使われるのですか？</div>
-        <div class="faq-a">はい。古くから漢方の世界で滋養強壮に用いられてきた歴史があり、力強さを象徴する山野草としても知られています。</div>
+        <div class="faq-a">春に船の錨に似た形の花を咲かせます。メギ科の多年草で、山野草として身近な野山で見かけられる花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>錨に似た形が語る、イカリソウの束縛</h2>
+    <p>イカリソウの花をよく見ると、上向きに反り返った距（きょ）が、まるで船の錨のように伸びているのがわかります。この独特な形は、他の花にはなかなか見られない面白さがあり、じっと見つめていると、思わず引き込まれてしまうほどです。花の色は白や淡い紫、ピンクなど株によって少しずつ違いがあり、同じ「錨」の形でも一つひとつの表情が異なります。観察するときは、花の下向きに垂れた姿勢と、そこから伸びる細い距の角度に注目してみると、より面白さが際立ちます。メギ科の多年草として、春の野山にひっそりと根を張り、毎年同じ場所で花を咲かせるその姿は、一度根付いた場所を離れない植物らしい佇まいでもあります。そんな性質から、イカリソウには「束縛」という花言葉が贈られているといわれています。この言葉は、必ずしも息苦しさだけを意味するものではないでしょう。離れがたいほど強く結びついた関係や、根を張った場所への愛着など、簡単には手放せない大切な繋がりを表しているとも受け取れます。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">イカリソウの花言葉「束縛」の由来は？</div>
+        <div class="faq-a">一度根付いた場所を離れず、毎年同じ場所で花を咲かせる性質に由来するといわれています。強い結びつきや愛着を表す言葉としても受け取れます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>強く結びついているからこそ、簡単には手放せないものがあります。今日は、自分にとって本当に大切な繋がりが何なのか、そっと心の中で確かめてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、イカリソウから始める小さな体験</h2>
+    <p>船の錨のような形の花を咲かせるイカリソウにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>錨に似た形の花をじっくり観察してみる</li>
+      <li>自分を縛っている習慣や考え方を一つ見つめ直してみる</li>
+      <li>野山を歩いて山野草を探してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">イカリソウはどこで見られますか？</div>
+        <div class="faq-a">山野草として、身近な野山で見かけられることがあります。暮らしに寄り添う花として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">錨のように根を張る強さに気づけた今日は、六曜やラッキーナンバーもあわせて確認してみませんか。開運カレンダーでは、その日の六曜やラッキーナンバーもまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月29日、船の錨に似た形の花を咲かせるイカリソウは、簡単には手放せない結びつきの尊さを教えてくれる花です。</p>
     <ul>
-      <li>イカリソウは春に錨のような形の花を咲かせる、3月29日の誕生花</li>
-      <li>花言葉は「束縛」、船をつなぎとめる錨の形に由来する</li>
-      <li>ユニークな花の造形とうつむき加減の可憐さが魅力</li>
-      <li>半日陰の腐植質に富んだ土で、乾燥を避けて育てたい</li>
+      <li>イカリソウはメギ科の多年草で、春に船の錨に似た形の花を咲かせる</li>
+      <li>山野草として位置づけられ、身近な野山で見かけられる、暮らしに寄り添う花</li>
+      <li>花言葉は「束縛」。一度根付いた場所を離れない性質に由来するといわれる</li>
+      <li>束縛は息苦しさだけでなく、簡単には手放せない結びつきの深さも表す言葉といえる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0723/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月23日の誕生花ツリガネソウの花言葉・特徴・魅力をわかりやすく解説。「思い出」を象徴する釣り鐘型に咲く花の意味を紹介します。">
+  <meta name="description" content="7月23日の誕生花ツリガネソウの花言葉・特徴・魅力をわかりやすく解説。初夏に釣り鐘型の花を咲かせる、キキョウ科の花を紹介します。">
   <title>7月23日の誕生花はツリガネソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ツリガネソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に釣り鐘型の花を咲かせます。キキョウ科の多年草です。"}},
-      {"@type":"Question","name":"ツリガネソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"釣り鐘のように下向きに咲く花が、静かに揺れながら遠い日の記憶を呼び起こすことに由来すると言われています。"}},
-      {"@type":"Question","name":"ツリガネソウはヨーロッパでも親しまれていますか？","acceptedAnswer":{"@type":"Answer","text":"はい。カンパニュラの仲間として、ヨーロッパでは庭園や花壇の定番として古くから親しまれています。"}}
+      {"@type":"Question","name":"ツリガネソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"釣鐘のような花の形が、名前の由来になったと考えられています。キキョウ科の多年草で、初夏に花を咲かせます。"}},
+      {"@type":"Question","name":"ツリガネソウはなぜ『思い出』という花言葉になったのですか？","acceptedAnswer":{"@type":"Answer","text":"音を鳴らすことのない静かな鐘のような花の形から、心の奥にそっと残り続ける記憶になぞらえられ、『思い出』という花言葉として親しまれてきたようです。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 23 · 誕生花</span>
     <h1>7月23日の誕生花はツリガネソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ツリガネソウは、キキョウ科の多年草で、初夏になると釣り鐘型の花を咲かせ、風にゆれる愛らしい佇まいが印象的な花です。花言葉は「思い出」。釣り鐘のような形で咲く花です。</p>
+    <p class="art-lead">うつむくように咲く花の形が、小さな鐘を思わせます。ツリガネソウは、その姿から名前をもらった初夏の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ツリガネソウとは</a></li>
-      <li><a href="#meaning">ツリガネソウが象徴する意味</a></li>
-      <li><a href="#charm">ツリガネソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月23日の誕生花として親しまれるツリガネソウ</a></li>
+      <li><a href="#story">釣鐘のかたちが伝える、ツリガネソウという名前の由来</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ツリガネソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ツリガネソウとは</h2>
-    <p>ツリガネソウは、キキョウ科の多年草で、7月23日の誕生花として知られています。初夏になると釣り鐘型の花を咲かせ、風にゆれる愛らしい佇まいが印象的な花です。</p>
-  </section>
+    <h2>7月23日の誕生花として親しまれるツリガネソウ</h2>
+    <p>ツリガネソウは、キキョウ科の多年草です。初夏に釣り鐘型の花を咲かせます。7月23日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ツリガネソウが象徴する意味</h2>
-    <p>ツリガネソウの花言葉は「思い出」です。釣り鐘のように下向きに咲く花が、静かに揺れながら遠い日の記憶を呼び起こすことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ツリガネソウの魅力</h2>
-    <p>ツリガネソウの魅力は、釣り鐘のような愛らしい花の形と、初夏の風にゆれる控えめな佇まいにあります。カンパニュラの仲間として、ヨーロッパでも古くから愛されてきました。7月23日生まれの方はもちろん、大切な思い出を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ツリガネソウは日当たりから半日陰を好み、水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月23日生まれの方はもちろん、大切な思い出を伝えたい贈り物としてもツリガネソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツリガネソウはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に釣り鐘型の花を咲かせます。キキョウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツリガネソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">釣り鐘のように下向きに咲く花が、静かに揺れながら遠い日の記憶を呼び起こすことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツリガネソウはヨーロッパでも親しまれていますか？</div>
-        <div class="faq-a">はい。カンパニュラの仲間として、ヨーロッパでは庭園や花壇の定番として古くから親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ツリガネソウという名前の由来は何ですか？</div>
+        <div class="faq-a">釣鐘のような花の形が、名前の由来になったと考えられています。キキョウ科の多年草で、初夏に花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>釣鐘のかたちが伝える、ツリガネソウという名前の由来</h2>
+    <p>キキョウ科の多年草であるツリガネソウは、初夏になるとうつむくように下向きの花を咲かせます。覗き込むと、花びらの先端が丸みを帯びて広がり、寺院の軒先に吊るされた小さな釣鐘によく似た輪郭を描いていて、名前もこの形に由来すると考えられています。音を鳴らすことのない静かな鐘は、遠くへ響く代わりに、見た人の記憶の奥にそっと残っていくような佇まいをしています。この、静かに心にとどまり続ける印象が、『思い出』という花言葉につながったのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ツリガネソウはなぜ『思い出』という花言葉になったのですか？</div>
+        <div class="faq-a">音を鳴らすことのない静かな鐘のような花の形から、心の奥にそっと残り続ける記憶になぞらえられ、『思い出』という花言葉として親しまれてきたようです。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>釣鐘の形をした花は、音を鳴らすことなく静かにそこにあります。大切な思い出も、声高に語らずとも、心の中でずっと存在し続けているものです。ふと浮かんだ記憶は、無理に手放さずそっと心にとどめておくだけでいいのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ツリガネソウから始める小さな体験</h2>
+    <p>釣鐘のような形の花を咲かせるツリガネソウにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>釣鐘型の花をじっくり観察してみる</li>
+      <li>大切な思い出を一つ、心の中で振り返ってみる</li>
+      <li>初夏の風を感じながらゆっくり過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">大切な思い出をそっと振り返りたい今日は、六曜や月齢・月相もあわせて確認してみませんか。開運カレンダーでは、六曜と月齢・月相を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>音を鳴らさない釣鐘の形は、声高に語らずとも心に残り続けるものがあることを教えてくれる。</p>
     <ul>
-      <li>ツリガネソウは初夏に釣り鐘型の花を咲かせる、7月23日の誕生花</li>
-      <li>花言葉は「思い出」、下向きに揺れる花姿に由来する</li>
-      <li>釣り鐘のような愛らしい花の形が魅力</li>
-      <li>日当たりから半日陰で、水はけの良い土を好む</li>
+      <li>ツリガネソウは初夏に釣り鐘型の花を咲かせる、キキョウ科の多年草で、7月23日の誕生花</li>
+      <li>花言葉は「思い出」。静かな釣鐘のような花の形が記憶のイメージと重ねられてきたとされる</li>
+      <li>花の形が釣鐘に似ていることが名前の由来とされる</li>
+      <li>下向きに咲く控えめな佇まいが魅力</li>
     </ul>
   </section>
 

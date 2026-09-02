@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アングレカムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に星形の白い花を咲かせ、夜になると強い芳香を放ちます。ラン科の着生植物です。"}},
-      {"@type":"Question","name":"アングレカムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白く星形に咲く花の清らかな姿が、汚れのない清純さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アングレカムはなぜ夜に香るのですか？","acceptedAnswer":{"@type":"Answer","text":"夜間に活動する蛾を引き寄せて受粉を助けてもらうため、夜になると強い芳香を放つと言われています。"}}
+      {"@type":"Question","name":"アングレカムはいつ頃香りが強くなりますか？","acceptedAnswer":{"@type":"Answer","text":"夜になり周囲が暗くなるにつれて、香りが強まっていくといわれています。日中よりも夜に存在感を放つ、少し珍しい性質を持つ花です。"}},
+      {"@type":"Question","name":"アングレカムはなぜ「清純」という花言葉を持つのですか？","acceptedAnswer":{"@type":"Answer","text":"星形に開く花びらの汚れのない色合いが、清らかで穢れのない心を思わせることから、この花言葉がついたと考えられています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 29 · 誕生花</span>
     <h1>10月29日の誕生花はアングレカム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アングレカムは、ラン科の着生植物で、冬に星形の白い花を咲かせ、夜になると強い芳香を放つ、神秘的な印象を持つ花です。花言葉は「清純」。神秘的な花です。</p>
+    <p class="art-lead">日が沈み、あたりが静まり返った頃。ラン科の着生植物であるアングレカムは、そんな時間にこそ強く香りを放つという、少し変わった性質を持つ。10月29日の誕生花として親しまれているのは、光ではなく闇の中でこそ輝きを増す、そんな花。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アングレカムとは</a></li>
-      <li><a href="#meaning">アングレカムが象徴する意味</a></li>
-      <li><a href="#charm">アングレカムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月29日の誕生花として親しまれるアングレカム</a></li>
+      <li><a href="#story">夜になるほど際立つ、白い花の静かな香り</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アングレカムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アングレカムとは</h2>
-    <p>アングレカムは、ラン科の着生植物で、10月29日の誕生花として知られています。冬に星形の白い花を咲かせ、夜になると強い芳香を放つ、神秘的な印象を持つ花です。</p>
-  </section>
+    <h2>10月29日の誕生花として親しまれるアングレカム</h2>
+    <p>アングレカムは、ラン科の着生植物として知られる、10月29日の誕生花です。冬になると星形の白い花を咲かせ、夜になると強い芳香を放つことで知られており、その姿と香りの両方から神秘的な印象を持たれることが多い花です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アングレカムが象徴する意味</h2>
-    <p>アングレカムの花言葉は「清純」です。白く星形に咲く花の清らかな姿が、汚れのない清純さを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アングレカムの魅力</h2>
-    <p>アングレカムの魅力は、星形の白い花が持つ神秘的な美しさと、夜になると強まる芳しい香りにあります。10月29日生まれの方はもちろん、清らかな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アングレカムは明るい日陰を好み、風通しよく乾燥気味に管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月29日生まれの方はもちろん、清らかな想いを伝えたい贈り物としてもアングレカムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アングレカムはいつ頃咲きますか？</div>
-        <div class="faq-a">冬に星形の白い花を咲かせ、夜になると強い芳香を放ちます。ラン科の着生植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アングレカムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">白く星形に咲く花の清らかな姿が、汚れのない清純さを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アングレカムはなぜ夜に香るのですか？</div>
-        <div class="faq-a">夜間に活動する蛾を引き寄せて受粉を助けてもらうため、夜になると強い芳香を放つと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アングレカムはいつ頃香りが強くなりますか？</div>
+        <div class="faq-a">夜になり周囲が暗くなるにつれて、香りが強まっていくといわれています。日中よりも夜に存在感を放つ、少し珍しい性質を持つ花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夜になるほど際立つ、白い花の静かな香り</h2>
+    <p>アングレカムの香りは、控えめでありながらどこか凛とした気配を漂わせる。強く主張するわけではないのに、一度気づくと忘れられない、そんな香りだ。仕事や用事に追われて慌ただしく過ぎていく一日の中で、ふと窓の外の暗さに気づく瞬間があるように、この花の香りもまた、静けさが訪れて初めて存在感を強める。星形に開く花びらと、他の植物に寄り添うように育つラン科の着生植物としての性質が、その神秘的な印象をいっそう際立たせている。香りだけでなく、あたりが寝静まった夜にひっそりと存在感を放つという奥ゆかしさが、静かな清らかさとして受け取られ、「清純」という花言葉につながったのではないだろうか。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アングレカムはなぜ「清純」という花言葉を持つのですか？</div>
+        <div class="faq-a">星形に開く花びらの汚れのない色合いが、清らかで穢れのない心を思わせることから、この花言葉がついたと考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>周りにどんな香りや色があっても、自分の内側にある静かな清らかさだけは保っていたい。誰も見ていない夜にこそ強く香るアングレカムのように、人知れず抱き続ける、揺るがない純粋さ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アングレカムから始める小さな体験</h2>
+    <p>夜にこそ香りを強める、そんなアングレカムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>夜に香る花について調べてみる</li>
+      <li>星形の花をじっくり観察してみる</li>
+      <li>静かな夜の時間を大切に過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">静かな夜に浸りたい日は、今夜の月齢もあわせてのぞいてみませんか。開運カレンダーでは、日々の月の満ち欠けもお届けしています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>夜だけに強く香るという特別な性質こそ、アングレカムというひとつの花の物語そのものだ。</p>
     <ul>
-      <li>アングレカムは星形の白い花を咲かせる、10月29日の誕生花</li>
-      <li>花言葉は「清純」、白く星形に咲く清らかな花姿に由来する</li>
-      <li>夜になると強まる芳しい香りが魅力</li>
-      <li>明るい日陰を好み、風通しよく乾燥気味に管理するとよく育ちます</li>
+      <li>アングレカムはラン科の着生植物で、冬に星形の白い花を咲かせる、10月29日の誕生花</li>
+      <li>花言葉は「清純」。夜にひっそりと香る奥ゆかしさに由来すると言われる</li>
+      <li>夜になると強い芳香を放つことで知られ、神秘的な印象を持つ</li>
+      <li>何にも染まらない静かな清らかさを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

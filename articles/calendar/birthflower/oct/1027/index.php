@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バラ（ニコル）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"優雅な花形が魅力の品種で、上品な印象の花を咲かせます。バラ科の落葉低木です。"}},
-      {"@type":"Question","name":"バラ（ニコル）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"優雅に幾重にも重なる花びらが放つ上品な佇まいが、尽きせぬ魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"バラの品種によって花言葉は変わりますか？","acceptedAnswer":{"@type":"Answer","text":"はい。バラは色や品種によって花言葉が異なり、ニコルには「魅力」のほか上品さを表す意味も込められています。"}}
+      {"@type":"Question","name":"バラ（ニコル）はどんな品種ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらが幾重にも重なり合う優雅な花形が特徴の、上品な印象を持つバラの品種です。"}},
+      {"@type":"Question","name":"バラ（ニコル）の「魅力」という花言葉は、どのようにして生まれたのですか？","acceptedAnswer":{"@type":"Answer","text":"幾重にも重なる花びらが放つ上品な佇まいが、尽きせぬ魅力を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 27 · 誕生花</span>
     <h1>10月27日の誕生花はバラ（ニコル）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バラ（ニコル）は、バラ科の落葉低木で、優雅な花形が魅力の品種で、上品な印象を持つ花です。花言葉は「魅力」。上品な花です。</p>
+    <p class="art-lead">幾重にも重なる花びらを持つ花には、思わず見入ってしまう美しさがある。優雅な花形で知られるバラ（ニコル）を、10月27日の誕生花に選んでみてはどうだろうか。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バラ（ニコル）とは</a></li>
-      <li><a href="#meaning">バラ（ニコル）が象徴する意味</a></li>
-      <li><a href="#charm">バラ（ニコル）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月27日の誕生花として親しまれるバラ（ニコル）</a></li>
+      <li><a href="#story">幾重にも重なる花びらが放つ、尽きせぬ魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バラ（ニコル）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バラ（ニコル）とは</h2>
-    <p>バラ（ニコル）は、バラ科の落葉低木で、10月27日の誕生花として知られています。優雅な花形が魅力の品種で、上品な印象を持つ花です。</p>
-  </section>
+    <h2>10月27日の誕生花として親しまれるバラ（ニコル）</h2>
+    <p>バラ（ニコル）は、バラ科の落葉低木。10月27日の誕生花として、この時期に親しまれている品種だ。花びらが幾重にも重なり合う優雅な花形が特徴で、その重なりの多さが一輪だけでも十分な華やかさを生み出している。バラらしい芳香をまといながら咲く、上品な印象の花である。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バラ（ニコル）が象徴する意味</h2>
-    <p>バラ（ニコル）の花言葉は「魅力」です。優雅に幾重にも重なる花びらが放つ上品な佇まいが、尽きせぬ魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バラ（ニコル）の魅力</h2>
-    <p>バラ（ニコル）の魅力は、優雅な花形のバラが持つ上品な美しさと、幾重にも重なる花びらが生む気品ある表情にあります。10月27日生まれの方はもちろん、尽きせぬ魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バラは日当たりと風通しの良い場所を好み、こまめな剪定を行うと管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月27日生まれの方はもちろん、尽きせぬ魅力を伝えたい贈り物としてもバラ（ニコル）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（ニコル）はいつ頃咲きますか？</div>
-        <div class="faq-a">優雅な花形が魅力の品種で、上品な印象の花を咲かせます。バラ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラ（ニコル）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">優雅に幾重にも重なる花びらが放つ上品な佇まいが、尽きせぬ魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バラの品種によって花言葉は変わりますか？</div>
-        <div class="faq-a">はい。バラは色や品種によって花言葉が異なり、ニコルには「魅力」のほか上品さを表す意味も込められています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（ニコル）はどんな品種ですか？</div>
+        <div class="faq-a">花びらが幾重にも重なり合う優雅な花形が特徴の、上品な印象を持つバラの品種です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>幾重にも重なる花びらが放つ、尽きせぬ魅力</h2>
+    <p>バラ（ニコル）の花を一枚ずつ数えてみると、想像していたよりもずっと多くの花びらが、中心に向かって規則正しく重なっていることに気づく。一枚だけでは味わえない奥行きが、幾重にも折り重なることで生まれている。数えきれないほどの花びらが折り重なり、そこから上品な芳香が漂う。尽きせぬ魅力という花言葉は、この芳香から生まれたのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バラ（ニコル）の「魅力」という花言葉は、どのようにして生まれたのですか？</div>
+        <div class="faq-a">幾重にも重なる花びらが放つ上品な佇まいが、尽きせぬ魅力を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>幾重にも花びらを重ねて咲くバラ（ニコル）のように、積み重ねてきた自分の魅力に、今日はそっと自信を持ってみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バラ（ニコル）から始める小さな体験</h2>
+    <p>幾重にも花びらを重ねて咲くバラ（ニコル）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>花びらの重なりをじっくり数えてみる</li>
+      <li>バラの香りを深呼吸で感じてみる</li>
+      <li>自分の好きなところを一つ紙に書き出してみる</li>
+    </ul>
+
+    <p class="cta-lead">自分らしい魅力を輝かせたい日は、今月の誕生石を覗いてみませんか。開運カレンダーでは、月ごとの誕生石も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>重なり合う花びらの一枚一枚が、積み重ねてきた時間の厚みを物語っている。</p>
     <ul>
-      <li>バラ（ニコル）は優雅な花形のバラを咲かせる、10月27日の誕生花</li>
-      <li>花言葉は「魅力」、優雅に重なる花びらに由来する</li>
-      <li>幾重にも重なる花びらが生む気品ある表情が魅力</li>
-      <li>バラは日当たりと風通しの良い場所を好み、こまめな剪定を行うと管理するとよく育ちます</li>
+      <li>バラ（ニコル）は優雅な花形を持つ、バラ科の落葉低木で、10月27日の誕生花</li>
+      <li>花言葉は「魅力」。幾重にも重なる花びらの佇まいに由来すると言われる</li>
+      <li>幾重にも重なる花びらと上品な芳香を併せ持ち、一輪でも存在感を放つ</li>
+      <li>自分らしい魅力に自信を持ちたい日に寄り添う花</li>
     </ul>
   </section>
 

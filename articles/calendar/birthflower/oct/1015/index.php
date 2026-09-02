@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フジバカマはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紫色の小花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"フジバカマの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"淡紫色の小花が控えめに寄り添って咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"フジバカマは秋の七草に入りますか？","acceptedAnswer":{"@type":"Answer","text":"はい。フジバカマは秋の七草の一つに数えられる、日本古来から親しまれてきた花です。"}}
+      {"@type":"Question","name":"フジバカマはどんな場所で見られますか？","acceptedAnswer":{"@type":"Answer","text":"日当たりのよい野原や川原などに自生し、公園や庭でも育てられています。"}},
+      {"@type":"Question","name":"フジバカマの花言葉「用心深い」の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"淡紫色の小花が控えめに、様子をうかがうように咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 15 · 誕生花</span>
     <h1>10月15日の誕生花はフジバカマ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フジバカマは、キク科の多年草で、秋に淡紫色の小花を咲かせる、奥ゆかしい印象を持つ花です。秋の七草の一つに数えられています。花言葉は「用心深い」。奥ゆかしい花です。</p>
+    <p class="art-lead">10月も半ばを過ぎると、野山ではひときわ淡い色の花が目につくようになる。10月15日の誕生花は、そんな晩秋の気配とともに咲くフジバカマである。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フジバカマとは</a></li>
-      <li><a href="#meaning">フジバカマが象徴する意味</a></li>
-      <li><a href="#charm">フジバカマの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月15日の誕生花として親しまれるフジバカマ</a></li>
+      <li><a href="#story">淡紫色の小花が告げる、秋の深まりと慎重な心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フジバカマから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フジバカマとは</h2>
-    <p>フジバカマは、キク科の多年草で、10月15日の誕生花として知られています。秋に淡紫色の小花を咲かせる、奥ゆかしい印象を持つ花です。秋の七草の一つに数えられています。</p>
-  </section>
+    <h2>10月15日の誕生花として親しまれるフジバカマ</h2>
+    <p>フジバカマは、キク科の多年草。10月15日の誕生花として、この時期に親しまれている。茎の先に淡紫色の小さな花が集まって咲き、一つひとつは控えめでも、群れになることでほのかな存在感を放つ。日本では秋の七草の一つに数えられ、古くから親しまれてきた花でもある。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フジバカマが象徴する意味</h2>
-    <p>フジバカマの花言葉は「用心深い」です。淡紫色の小花が控えめに寄り添って咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フジバカマの魅力</h2>
-    <p>フジバカマの魅力は、淡紫色の花が持つ奥ゆかしい美しさと、秋の七草として親しまれてきた歴史にあります。10月15日生まれの方はもちろん、深い想いをそっと伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フジバカマは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月15日生まれの方はもちろん、深い想いをそっと伝えたい贈り物としてもフジバカマは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フジバカマはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に淡紫色の小花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フジバカマの花言葉の由来は何ですか？</div>
-        <div class="faq-a">淡紫色の小花が控えめに寄り添って咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フジバカマは秋の七草に入りますか？</div>
-        <div class="faq-a">はい。フジバカマは秋の七草の一つに数えられる、日本古来から親しまれてきた花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フジバカマはどんな場所で見られますか？</div>
+        <div class="faq-a">日当たりのよい野原や川原などに自生し、公園や庭でも育てられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>淡紫色の小花が告げる、秋の深まりと慎重な心</h2>
+    <p>10月も半ばを過ぎると、朝晩の空気に冷たさが混じり始める。フジバカマの花は、ちょうどこの時期に咲きそろい、夏から秋への移ろいをそっと知らせてくれる。派手な花色ではないからこそ、気づいた人だけがその変化を受け取れるような、静かな咲き方だ。この控えめで様子をうかがうような佇まいが、花言葉「用心深い」の由来になっていると言われている。物事を急がず、確かめながら進める姿勢もまた、一つの強さだと教えてくれるようだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フジバカマの花言葉「用心深い」の由来は何ですか？</div>
+        <div class="faq-a">淡紫色の小花が控えめに、様子をうかがうように咲く姿が、慎重で用心深い心を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>フジバカマの淡い花色を見ていると、急がず一歩ずつ確かめながら進んでみたくなる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フジバカマから始める小さな体験</h2>
+    <p>淡紫色の小花を静かに咲かせるフジバカマにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>淡紫色の小花をじっくり観察してみる</li>
+      <li>ハギ以外の秋の七草（オミナエシ・キキョウ等）についても調べてみる</li>
+      <li>一つの決断を慌てずゆっくり考えてみる</li>
+    </ul>
+
+    <p class="cta-lead">落ち着いて物事を進めたい日は、今日の吉日もあわせて確認してみませんか。開運カレンダーでは、毎日の吉日や六曜を発信しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>群れてこそ気づかれる淡紫色の小花の姿が、慌てず確かめながら進む慎重さの美しさを教えてくれる。</p>
     <ul>
-      <li>フジバカマは淡紫色の花を咲かせる、10月15日の誕生花</li>
-      <li>花言葉は「用心深い」、控えめに寄り添って咲く花姿に由来する</li>
-      <li>秋の七草として親しまれてきた歴史が魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>フジバカマは秋に淡紫色の小花を咲かせる、キク科の多年草で、10月15日の誕生花</li>
+      <li>花言葉は「用心深い」。控えめに様子をうかがうように咲く花姿に由来すると言われる</li>
+      <li>秋の七草の一つに数えられ、日本で古くから親しまれてきた</li>
+      <li>物事を慎重に進めたい日に寄り添う花</li>
     </ul>
   </section>
 

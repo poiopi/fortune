@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0926/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月26日の誕生花マンジュシャゲの花言葉・特徴・魅力をわかりやすく解説。「感謝」を象徴する赤い花の意味を紹介します。">
+  <meta name="description" content="9月26日の誕生花マンジュシャゲの花言葉・特徴・魅力をわかりやすく解説。「感謝」を象徴する彼岸に咲く赤い花の意味を紹介します。">
   <title>9月26日の誕生花はマンジュシャゲ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マンジュシャゲはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋の彼岸の頃、葉のない状態で赤い花を咲かせます。ヒガンバナ科の多年草です。"}},
-      {"@type":"Question","name":"マンジュシャゲの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋の彼岸の頃、葉のない状態でまっすぐに茎を伸ばし、鮮やかな赤い花を咲かせる印象的な花姿が、先祖への感謝の気持ちを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"マンジュシャゲはなぜ葉のない状態で咲くのですか？","acceptedAnswer":{"@type":"Answer","text":"花が咲き終わった後に葉が出てくる性質を持つため、開花時期には葉が見られないのが特徴です。"}}
+      {"@type":"Question","name":"マンジュシャゲはどのような時期に咲く花ですか？","acceptedAnswer":{"@type":"Answer","text":"秋の彼岸の頃に、赤い花を咲かせます。先祖を思う彼岸の時期と重なって咲くことでも知られています。"}},
+      {"@type":"Question","name":"マンジュシャゲの花言葉『感謝』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"先祖を思う彼岸の時期と重なって咲く、そのめぐり合わせに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +138,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 26 · 誕生花</span>
     <h1>9月26日の誕生花はマンジュシャゲ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マンジュシャゲは、ヒガンバナ科の多年草で、秋の彼岸の頃、葉のない状態で赤い花を咲かせる、鮮烈な印象を放つ花です。花言葉は「感謝」。鮮烈な花です。</p>
+    <p class="art-lead">秋の彼岸が近づく頃、示し合わせたように赤い花が咲き始める。その主役は、9月26日の誕生花マンジュシャゲにほかならない。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>マンジュシャゲ</dd>
     <dt>花言葉</dt><dd>感謝</dd>
     <dt>科名</dt><dd>ヒガンバナ科</dd>
-    <dt>見頃</dt><dd>秋（彼岸の頃）</dd>
+    <dt>見頃</dt><dd>秋</dd>
   </dl>
 
   <?php
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マンジュシャゲとは</a></li>
-      <li><a href="#meaning">マンジュシャゲが象徴する意味</a></li>
-      <li><a href="#charm">マンジュシャゲの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月26日の誕生花として親しまれるマンジュシャゲ</a></li>
+      <li><a href="#story">彼岸に咲く赤い花と、感謝のめぐり合わせ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マンジュシャゲから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マンジュシャゲとは</h2>
-    <p>マンジュシャゲは、ヒガンバナ科の多年草で、9月26日の誕生花として知られています。秋の彼岸の頃、葉のない状態で赤い花を咲かせる、鮮烈な印象を放つ花です。</p>
-  </section>
+    <h2>9月26日の誕生花として親しまれるマンジュシャゲ</h2>
+    <p>マンジュシャゲは、ヒガンバナ科の多年草です。秋の彼岸の頃になると、赤い花を咲かせます。彼岸の時期と重なって咲く花として知られ、9月26日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マンジュシャゲが象徴する意味</h2>
-    <p>マンジュシャゲの花言葉は「感謝」です。秋の彼岸の頃、葉のない状態でまっすぐに茎を伸ばし、鮮やかな赤い花を咲かせる印象的な花姿が、先祖への感謝の気持ちを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マンジュシャゲの魅力</h2>
-    <p>マンジュシャゲの魅力は、燃えるような赤色の花びらが放射状に広がる鮮烈な美しさと、秋の彼岸を告げる季節感のある佇まいにあります。彼岸花とも呼ばれます。 9月26日生まれの方はもちろん、感謝の気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マンジュシャゲは日当たりから半日陰を好み、球根植物のため過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月26日生まれの方はもちろん、感謝の気持ちを伝えたい贈り物としてもマンジュシャゲは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンジュシャゲはいつ頃咲きますか？</div>
-        <div class="faq-a">秋の彼岸の頃、葉のない状態で赤い花を咲かせます。ヒガンバナ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンジュシャゲの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋の彼岸の頃、葉のない状態でまっすぐに茎を伸ばし、鮮やかな赤い花を咲かせる印象的な花姿が、先祖への感謝の気持ちを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンジュシャゲはなぜ葉のない状態で咲くのですか？</div>
-        <div class="faq-a">花が咲き終わった後に葉が出てくる性質を持つため、開花時期には葉が見られないのが特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マンジュシャゲはどのような時期に咲く花ですか？</div>
+        <div class="faq-a">秋の彼岸の頃に、赤い花を咲かせます。先祖を思う彼岸の時期と重なって咲くことでも知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>彼岸に咲く赤い花と、感謝のめぐり合わせ</h2>
+    <p>マンジュシャゲは、秋の彼岸の頃になると、まるで示し合わせたかのように赤い花を咲かせる。彼岸は、古くから先祖を思い、感謝を伝える時期とされてきた。その時期にぴったりと重なって咲くことから、マンジュシャゲはこの季節の行事と深く結びついた花として知られている。鮮やかな赤い花は、遠くからでもよく目立ち、彼岸の景色に彩りを添えてきた。花言葉「感謝」は、先祖を思う彼岸の時期と重なって咲く、そのめぐり合わせに由来すると言われている。誰かを思う気持ちは、言葉にしなくても、こうした季節のめぐりの中で静かに伝わっていくのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マンジュシャゲの花言葉『感謝』にはどんな由来がありますか？</div>
+        <div class="faq-a">先祖を思う彼岸の時期と重なって咲く、そのめぐり合わせに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かを思う気持ちは、言葉にしなくても伝わることがある。彼岸の頃に赤く咲くマンジュシャゲを見ていると、大切な人への感謝が静かにこみ上げてくる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マンジュシャゲから始める小さな体験</h2>
+    <p>彼岸の頃に赤い花を咲かせるマンジュシャゲにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>お墓参りや先祖を思う時間を少し持ってみる</li>
+      <li>赤い花をじっくり観察してみる</li>
+      <li>日頃お世話になっている人に感謝を伝えてみる</li>
+    </ul>
+
+    <p class="cta-lead">大切な人への感謝を伝えたい日は、今月の誕生石も見てみませんか。開運カレンダーでは、今月の誕生石とおすすめの行動を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>なぜこの花は、彼岸の頃にだけ姿を見せるのだろうか。マンジュシャゲは、そんな不思議さと静けさをあわせ持つ花だ。</p>
     <ul>
-      <li>マンジュシャゲは秋の彼岸の頃に赤い花を咲かせる、9月26日の誕生花</li>
-      <li>花言葉は「感謝」、印象的な花姿に由来する</li>
-      <li>鮮烈な赤色の美しさが魅力</li>
-      <li>日当たりから半日陰を好み、過湿を避ける</li>
+      <li>マンジュシャゲは秋の彼岸の頃に赤い花を咲かせる、ヒガンバナ科の多年草で、9月26日の誕生花</li>
+      <li>花言葉は「感謝」。彼岸の時期と重なって咲くめぐり合わせに由来すると言われる</li>
+      <li>先祖を思う彼岸の季節と深く結びついた花</li>
+      <li>言葉にしなくても伝わる気持ちを映す花</li>
     </ul>
   </section>
 

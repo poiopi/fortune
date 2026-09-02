@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0827/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月27日の誕生花タンジーの花言葉・特徴・魅力をわかりやすく解説。「不滅」を象徴する黄色い花の意味を紹介します。">
+  <meta name="description" content="8月27日の誕生花タンジーの花言葉・特徴・魅力をわかりやすく解説。ボタンのような黄色い花が保ち続ける、不滅の意味を紹介します。">
   <title>8月27日の誕生花はタンジー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"タンジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に黄色いボタンのような形の花を咲かせます。キク科の多年草のハーブです。"}},
-      {"@type":"Question","name":"タンジーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらを持たず、黄色い小さな球状の花を密集させて咲かせる強い生命力が、色あせることのない不滅の存在を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"タンジーはどんな用途で使われてきましたか？","acceptedAnswer":{"@type":"Answer","text":"独特の強い香りを持つことから、古くから防虫効果のあるハーブとして利用されてきました。"}}
+      {"@type":"Question","name":"タンジーの花はどんな形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"ボタンのような丸い形をした黄色い花を咲かせます。夏に見頃を迎える、キク科の多年草のハーブです。"}},
+      {"@type":"Question","name":"タンジーの花言葉『不滅』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"形を崩さず咲き続ける、ボタンのような黄色い花の姿が、色褪せない揺るぎない強さを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 27 · 誕生花</span>
     <h1>8月27日の誕生花はタンジー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">タンジーは、キク科の多年草で、夏になると黄色いボタンのような形の花を咲かせるハーブです。花言葉は「不滅」。個性的で力強い花です。</p>
+    <p class="art-lead">小さなボタンを並べたような黄色い花が、夏の庭にきっぱりとした彩りを添える。夏の終わりが近づく8月27日も、タンジーの黄色は少しも揺るがない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">タンジーとは</a></li>
-      <li><a href="#meaning">タンジーが象徴する意味</a></li>
-      <li><a href="#charm">タンジーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月27日の誕生花として親しまれるタンジー</a></li>
+      <li><a href="#story">丸くまとまった黄色が守り続ける、揺るがない強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、タンジーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>タンジーとは</h2>
-    <p>タンジーは、キク科の多年草で、8月27日の誕生花として知られています。夏になると黄色いボタンのような形の花を咲かせるハーブです。</p>
-  </section>
+    <h2>8月27日の誕生花として親しまれるタンジー</h2>
+    <p>タンジーは、キク科の多年草です。夏になると、ボタンのような形の黄色い花を咲かせます。古くからハーブとして親しまれてきた植物で、丸くまとまった花の形が印象的です。この揺るぎない存在感を持つ花が、8月27日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>タンジーが象徴する意味</h2>
-    <p>タンジーの花言葉は「不滅」です。花びらを持たず、黄色い小さな球状の花を密集させて咲かせる強い生命力が、色あせることのない不滅の存在を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>タンジーの魅力</h2>
-    <p>タンジーの魅力は、ボタンを並べたようなユニークな形の黄色い花と、独特の強い香りにあります。古くから防虫効果のあるハーブとしても利用されてきました。8月27日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>タンジーは日当たりを好み、丈夫で育てやすいため過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月27日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物としてもタンジーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タンジーはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に黄色いボタンのような形の花を咲かせます。キク科の多年草のハーブです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タンジーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">花びらを持たず、黄色い小さな球状の花を密集させて咲かせる強い生命力が、色あせることのない不滅の存在を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タンジーはどんな用途で使われてきましたか？</div>
-        <div class="faq-a">独特の強い香りを持つことから、古くから防虫効果のあるハーブとして利用されてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">タンジーの花はどんな形をしていますか？</div>
+        <div class="faq-a">ボタンのような丸い形をした黄色い花を咲かせます。夏に見頃を迎える、キク科の多年草のハーブです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>丸くまとまった黄色が守り続ける、揺るがない強さ</h2>
+    <p>タンジーの花は、花びらを大きく広げるタイプではなく、小さな粒が寄り集まって、ボタンのように丸くまとまって咲く。一つ一つの輪郭がはっきりしていて、風に揺れてもその形が崩れることはあまりない。古くからハーブとして暮らしに取り入れられてきたのも、この飾り気のない、しっかりとした佇まいと無関係ではないだろう。花言葉「不滅」は、この形を崩さず咲き続ける黄色いボタンのような花姿から生まれたと言われている。それは死や永遠を語る大げさな言葉ではなく、日々の暮らしの中で静かに保たれ続ける、揺るぎない強さに近いものだ。夏の日差しの下でも色あせることなく咲く黄色は、見る人にちょっとした安心感を与えてくれる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タンジーの花言葉『不滅』にはどんな由来がありますか？</div>
+        <div class="faq-a">形を崩さず咲き続ける、ボタンのような黄色い花の姿が、色褪せない揺るぎない強さを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>揺るぎない強さは、大きな主張よりも、日々を丁寧に積み重ねることから生まれる。いつもと変わらない当たり前の時間を、少し大切に過ごしてみよう。今日という一日も、その積み重ねの一つになる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、タンジーから始める小さな体験</h2>
+    <p>ボタンのような形の黄色い花を咲かせる、夏のハーブでもあるタンジーにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ボタンのような形の花をじっくり観察してみる</li>
+      <li>ハーブとしての使われ方を調べてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">地に足のついた一日を過ごしたい方は、今日のおすすめの行動も覗いてみませんか。開運カレンダーでは、おすすめの行動とラッキーフードを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>形を崩さず咲き続ける花は、それだけで見る人に安心感を与える。</p>
     <ul>
-      <li>タンジーは夏に黄色いボタン状の花を咲かせる、8月27日の誕生花</li>
-      <li>花言葉は「不滅」、強い生命力に由来する</li>
-      <li>ボタンのような独特な花姿が魅力</li>
-      <li>日当たりを好み、丈夫で育てやすい</li>
+      <li>タンジーは夏にボタンのような形の黄色い花を咲かせる、キク科の多年草で、8月27日の誕生花</li>
+      <li>花言葉は「不滅」。形を崩さず咲き続ける花姿に由来すると言われる</li>
+      <li>古くからハーブとして暮らしに親しまれてきた</li>
+      <li>丸くまとまった黄色い花姿が揺るぎない印象を与える</li>
     </ul>
   </section>
 

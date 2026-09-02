@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0731/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月31日の誕生花ビヨウヤナギの花言葉・特徴・魅力をわかりやすく解説。「気高さ」を象徴する放射状に広がる黄金色の雄しべの意味を紹介します。">
+  <meta name="description" content="7月31日の誕生花ビヨウヤナギの花言葉・特徴・魅力をわかりやすく解説。初夏に黄色い雄しべが目立つ花を咲かせる、オトギリソウ科の半落葉低木を紹介します。">
   <title>7月31日の誕生花はビヨウヤナギ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ビヨウヤナギはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に黄色い雄しべが目立つ花を咲かせます。オトギリソウ科の半落葉低木です。"}},
-      {"@type":"Question","name":"ビヨウヤナギの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細く長い金色の雄しべが放射状に広がる華やかな花姿が、凛とした気高さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ビヨウヤナギという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"美しい花を咲かせ、葉が柳に似ていることから「美容柳（びようやなぎ）」と名付けられたとされています。"}}
+      {"@type":"Question","name":"ビヨウヤナギの花はどのような姿で咲きますか？","acceptedAnswer":{"@type":"Answer","text":"黄色い雄しべが目立つ、印象的な花の姿を咲かせます。初夏に花を咲かせる、オトギリソウ科の半落葉低木です。"}},
+      {"@type":"Question","name":"ビヨウヤナギの花言葉『気高さ』にはどんな意味が込められていますか？","acceptedAnswer":{"@type":"Answer","text":"黄色い雄しべがまっすぐに伸び、放射状に広がる整った花の姿が、堂々として気高い印象と結びついてきたと言われています。"}}
     ]
   }
   </script>
@@ -132,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 31 · 誕生花</span>
     <h1>7月31日の誕生花はビヨウヤナギ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ビヨウヤナギは、オトギリソウ科の半落葉低木で、初夏になると黄色い雄しべが目立つ花を咲かせ、柳のようにしなやかな葉とともに気高い印象を漂わせる花木です。花言葉は「気高さ」。黄金色の雄しべが華やかな花木です。</p>
+    <p class="art-lead">細い雄しべが放射状に広がり、まるで小さな光の粒をまとったように咲きます。ビヨウヤナギは、その凛とした花の形で初夏を彩る花木です。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ビヨウヤナギとは</a></li>
-      <li><a href="#meaning">ビヨウヤナギが象徴する意味</a></li>
-      <li><a href="#charm">ビヨウヤナギの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月31日の誕生花として親しまれるビヨウヤナギ</a></li>
+      <li><a href="#story">放射状に広がる雄しべが物語る、ビヨウヤナギの気高さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ビヨウヤナギから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ビヨウヤナギとは</h2>
-    <p>ビヨウヤナギは、オトギリソウ科の半落葉低木で、7月31日の誕生花として知られています。初夏になると黄色い雄しべが目立つ花を咲かせ、柳のようにしなやかな葉とともに気高い印象を漂わせる花木です。</p>
-  </section>
+    <h2>7月31日の誕生花として親しまれるビヨウヤナギ</h2>
+    <p>ビヨウヤナギは、オトギリソウ科の半落葉低木です。初夏に黄色い雄しべが目立つ花を咲かせます。7月31日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ビヨウヤナギが象徴する意味</h2>
-    <p>ビヨウヤナギの花言葉は「気高さ」です。細く長い金色の雄しべが放射状に広がる華やかな花姿が、凛とした気高さを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ビヨウヤナギの魅力</h2>
-    <p>ビヨウヤナギの魅力は、花びらから放射状に伸びる黄金色の雄しべの華やかさと、柳のようにしなやかな葉のコントラストにあります。刈り込みにも強く、庭木や生垣としても親しまれています。7月31日生まれの方はもちろん、気高い想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ビヨウヤナギは日当たりを好み、丈夫で刈り込みにも強いため管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月31日生まれの方はもちろん、気高い想いを伝えたい贈り物としてもビヨウヤナギは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビヨウヤナギはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に黄色い雄しべが目立つ花を咲かせます。オトギリソウ科の半落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビヨウヤナギの花言葉の由来は何ですか？</div>
-        <div class="faq-a">細く長い金色の雄しべが放射状に広がる華やかな花姿が、凛とした気高さを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビヨウヤナギという名前の由来は何ですか？</div>
-        <div class="faq-a">美しい花を咲かせ、葉が柳に似ていることから「美容柳（びようやなぎ）」と名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ビヨウヤナギの花はどのような姿で咲きますか？</div>
+        <div class="faq-a">黄色い雄しべが目立つ、印象的な花の姿を咲かせます。初夏に花を咲かせる、オトギリソウ科の半落葉低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>放射状に広がる雄しべが物語る、ビヨウヤナギの気高さ</h2>
+    <p>ビヨウヤナギの花は、細く長い黄色の雄しべが花びらの中心から放射状に伸び、まるで光の筋を放っているかのような姿を見せます。他の花に比べて雄しべそのものが主役のように際立つ、珍しい形といえるでしょう。じっと目を凝らすと、その一本一本がまっすぐに伸び、乱れることなく整然と並んでいるのがわかります。この、まっすぐに凛と伸びる雄しべの佇まいが、堂々として気高い印象を生み、『気高さ』という花言葉に結びついてきたと言われています。誰かと比べて誇るのではなく、自分の姿勢をまっすぐに保つことこそが、気高さの本質なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ビヨウヤナギの花言葉『気高さ』にはどんな意味が込められていますか？</div>
+        <div class="faq-a">黄色い雄しべがまっすぐに伸び、放射状に広がる整った花の姿が、堂々として気高い印象と結びついてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>背筋を伸ばして立つこと。それだけで、今日という一日の印象は変わります。堂々とした姿勢は、誰かに見せるためのものではなく、自分自身への静かな約束です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ビヨウヤナギから始める小さな体験</h2>
+    <p>黄色い雄しべを凛と広げて咲くビヨウヤナギにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>黄色い雄しべの目立つ花をじっくり観察してみる</li>
+      <li>堂々とした振る舞いを一つ意識してみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">堂々とした自分でありたい今日は、吉日や星座もあわせて確認してみませんか。開運カレンダーでは、吉日と星座占いを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>放射状に伸びる黄色い雄しべの一本一本が、まっすぐな姿勢の気高さを物語っている。</p>
     <ul>
-      <li>ビヨウヤナギは初夏に黄色い雄しべが目立つ花を咲かせる、7月31日の誕生花</li>
-      <li>花言葉は「気高さ」、放射状に広がる雄しべに由来する</li>
-      <li>黄金色の雄しべと柳のような葉のコントラストが魅力</li>
-      <li>日当たりを好み、刈り込みにも強い丈夫な花木</li>
+      <li>ビヨウヤナギは初夏に黄色い雄しべが目立つ花を咲かせる、オトギリソウ科の半落葉低木で、7月31日の誕生花</li>
+      <li>花言葉は「気高さ」。まっすぐに伸びる雄しべの佇まいと結びついてきたとされる</li>
+      <li>雄しべそのものが主役のように際立つ、珍しい花の形が特徴</li>
+      <li>整然と並ぶ放射状の雄しべが魅力</li>
     </ul>
   </section>
 

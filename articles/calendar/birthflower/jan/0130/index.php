@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0130/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月30日の誕生花サクラソウの花言葉・特徴・魅力をわかりやすく解説。「忠実」を象徴する可憐な花の意味を紹介します。">
+  <meta name="description" content="1月30日の誕生花サクラソウの花言葉・特徴・魅力をわかりやすく解説。「忠実」を象徴する花の意味を紹介します。">
   <title>1月30日の誕生花はサクラソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サクラソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、桜に似た小さな花を房状に咲かせます。"}},
-      {"@type":"Question","name":"サクラソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「忠実」という花言葉は、毎年変わらず同じ場所に花を咲かせる律儀な姿に由来するとされています。"}},
-      {"@type":"Question","name":"サクラソウと桜は関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"植物として直接の関係はありませんが、花の形が桜に似ていることからこの名がつけられました。"}}
+      {"@type":"Question","name":"サクラソウはサクラと同じ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、異なります。サクラソウはサクラソウ科、サクラはバラ科の植物で、花の姿が似ていることから名づけられたと考えられています。"}},
+      {"@type":"Question","name":"サクラソウの花言葉「忠実」の由来は？","acceptedAnswer":{"@type":"Answer","text":"房になって寄り添いながら、変わらず咲き続ける姿に由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 30 · 誕生花</span>
     <h1>1月30日の誕生花はサクラソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サクラソウは、桜に似た小さな花を房状に咲かせる1月30日の誕生花です。花言葉は「忠実」。可憐で優しい印象の花です。</p>
+    <p class="art-lead">桜に似た小さな花を房になって咲かせるのが、1月30日の誕生花サクラソウです。名前に「桜」とありますが、実際のサクラとは異なる科の植物として知られています。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サクラソウとは</a></li>
-      <li><a href="#meaning">サクラソウが象徴する意味</a></li>
-      <li><a href="#charm">サクラソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">桜に似た花が房になる、サクラソウの姿</a></li>
+      <li><a href="#story">1月30日、房になって咲くサクラソウが伝える忠実さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サクラソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サクラソウとは</h2>
-    <p>サクラソウは、サクラソウ科の多年草で、1月30日の誕生花として知られています。春に桜に似た小さな花を房状に咲かせ、その可憐で優しい印象から古くから日本で親しまれてきた花です。</p>
-  </section>
+    <h2>桜に似た花が房になる、サクラソウの姿</h2>
+    <p>サクラソウは、サクラソウ科の多年草です。春になると、桜の花によく似た小さな花を房状にまとめて咲かせます。名前に「桜」とありますが、実際のサクラ（バラ科）とは異なる科に属する植物で、姿が似ていることから名づけられたと考えられています。可憐で優しい印象を持つ花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サクラソウが象徴する意味</h2>
-    <p>サクラソウの花言葉は「忠実」です。毎年変わらず同じ場所に花を咲かせるその律儀な姿から、変わらぬ誠実さや忠実さを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サクラソウの魅力</h2>
-    <p>サクラソウの魅力は、桜を思わせる愛らしい花が房状に連なって咲く可憐さと、優しい色合いにあります。鉢植えや庭植えでも育てやすく、春の訪れを穏やかに告げてくれます。1月30日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サクラソウは半日陰を好み、乾燥を嫌うため、土が乾ききる前に水を与えるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月30日生まれの方はもちろん、変わらぬ想いを伝えたい贈り物としてもサクラソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サクラソウはいつ頃咲きますか？</div>
-        <div class="faq-a">春に、桜に似た小さな花を房状に咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サクラソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「忠実」という花言葉は、毎年変わらず同じ場所に花を咲かせる律儀な姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サクラソウと桜は関係がありますか？</div>
-        <div class="faq-a">植物として直接の関係はありませんが、花の形が桜に似ていることからこの名がつけられました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サクラソウはサクラと同じ植物ですか？</div>
+        <div class="faq-a">いいえ、異なります。サクラソウはサクラソウ科、サクラはバラ科の植物で、花の姿が似ていることから名づけられたと考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月30日、房になって咲くサクラソウが伝える忠実さ</h2>
+    <p>一輪だけでなく、房になってまとまって咲くサクラソウの花は、一つひとつが支え合うようにして咲いています。毎年変わらず同じ場所で花を咲かせ続けるその姿は、静かに、しかし確かに続けられている約束事のようにも見えます。1月30日、1月ももうすぐ終わりを迎えるこの時期に、これまで長く続けてきた習慣や約束を、あらためて大切にしてみるのも良さそうです。花言葉は「忠実」。房になって寄り添いながら、変わらず咲き続ける姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サクラソウの花言葉「忠実」の由来は？</div>
+        <div class="faq-a">房になって寄り添いながら、変わらず咲き続ける姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>変わらず続けてきたことには、それだけで価値があります。今日は、これまで大切にしてきた想いや習慣を、もう一度そっと胸に留めてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サクラソウから始める小さな体験</h2>
+    <p>房になって寄り添うように咲くサクラソウにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>桜に似た小さな花を房ごと観察してみる</li>
+      <li>長く続けている習慣を一つ大切にしてみる</li>
+      <li>優しい気持ちで今日一日を過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">変わらぬ想いを大切にできた今日は、運気の流れもあわせて確かめてみませんか。開運カレンダーでは、日々の吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>サクラソウは、房になって寄り添う花を通して、変わらぬ想いを大切にすることの意味を教えてくれる誕生花です。</p>
     <ul>
-      <li>サクラソウは春に桜に似た花を咲かせる、1月30日の誕生花</li>
-      <li>花言葉は「忠実」、変わらぬ誠実さを象徴する花とされる</li>
-      <li>房状に咲く可憐で優しい花姿が魅力</li>
-      <li>乾燥を嫌うため、半日陰で育てたい</li>
+      <li>サクラソウはサクラソウ科の多年草で、春に桜に似た小さな花を房状に咲かせる（本来の見頃は春で、1月30日時点では花は咲いていない）</li>
+      <li>名前に「桜」とあるが、サクラ（バラ科）とは異なる科の植物</li>
+      <li>花言葉は「忠実」。房になって寄り添いながら咲き続ける姿に由来するといわれている</li>
+      <li>可憐で優しい印象を持つ花として親しまれている</li>
     </ul>
   </section>
 
@@ -225,7 +231,7 @@ ob_start();
   $prevUrl   = '/articles/calendar/birthflower/jan/0129/';
   $prevTitle = '1月29日の誕生花（スミレ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0131/';
-  $nextTitle = '1月31日の誕生花（ウメ）とは';
+  $nextTitle = '1月31日の誕生花（ウメ（白））とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1207/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月7日の誕生花ダイモンジソウの花言葉・特徴・魅力をわかりやすく解説。「自由」を象徴する個性的な花の意味を紹介します。">
+  <meta name="description" content="12月7日の誕生花ダイモンジソウの花言葉・特徴・魅力をわかりやすく解説。「自由」を象徴する「大」の字に似た個性的な花の意味を紹介します。">
   <title>12月7日の誕生花はダイモンジソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ダイモンジソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に「大」の字に似た形の花を咲かせます。ユキノシタ科の多年草です。"}},
-      {"@type":"Question","name":"ダイモンジソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらの形が「大」の字に似て、決まった型にとらわれないユニークな咲き方をする姿が、自由な発想を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ダイモンジソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらの形が漢字の「大」の字に似て見えることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"ダイモンジソウという名前は、何に由来しているのですか？","acceptedAnswer":{"@type":"Answer","text":"花びらの形が漢字の「大」の字に似ていることから、この名前が付けられたと言われています。5枚の花びらのうち下の2枚が長く伸びる姿が、その由来と考えられています。"}},
+      {"@type":"Question","name":"ダイモンジソウの花言葉「自由」は、どのように結びついているのですか？","acceptedAnswer":{"@type":"Answer","text":"整った左右対称の形にとらわれず、独自の「大」の字のような形で咲く姿が、型にはまらない自由さを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 7 · 誕生花</span>
     <h1>12月7日の誕生花はダイモンジソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ダイモンジソウは、ユキノシタ科の多年草で、秋に「大」の字に似た形の花を咲かせる、個性的で軽やかな印象を持つ花です。花言葉は「自由」。個性的な花です。</p>
+    <p class="art-lead">漢字の「大」の字によく似た花——ダイモンジソウは、その名の通りの姿を持つ、ユキノシタ科の多年草だ。花が咲くのは秋で、12月7日はすでにその見頃を終えた頃にあたる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ダイモンジソウとは</a></li>
-      <li><a href="#meaning">ダイモンジソウが象徴する意味</a></li>
-      <li><a href="#charm">ダイモンジソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月7日の誕生花として親しまれるダイモンジソウ</a></li>
+      <li><a href="#story">花びらが描く、「大」の字のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ダイモンジソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ダイモンジソウとは</h2>
-    <p>ダイモンジソウは、ユキノシタ科の多年草で、12月7日の誕生花として知られています。秋に「大」の字に似た形の花を咲かせる、個性的で軽やかな印象を持つ花です。</p>
-  </section>
+    <h2>12月7日の誕生花として親しまれるダイモンジソウ</h2>
+    <p>ダイモンジソウは、ユキノシタ科の多年草で、12月7日の誕生花として知られています。秋になると、漢字の「大」の字によく似た形の花を咲かせるのが特徴です。12月7日の時点では、その花期をすでに終えている頃にあたりますが、山野草として静かな人気を集めている植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ダイモンジソウが象徴する意味</h2>
-    <p>ダイモンジソウの花言葉は「自由」です。花びらの形が「大」の字に似て、決まった型にとらわれないユニークな咲き方をする姿が、自由な発想を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ダイモンジソウの魅力</h2>
-    <p>ダイモンジソウの魅力は、「大」の字を描くような花びらの形と、ほかにはないユニークな面白さにあります。12月7日生まれの方はもちろん、自由な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ダイモンジソウは明るい日陰を好み、乾燥させすぎないよう管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月7日生まれの方はもちろん、自由な想いを伝えたい贈り物としてもダイモンジソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ダイモンジソウはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に「大」の字に似た形の花を咲かせます。ユキノシタ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ダイモンジソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">花びらの形が「大」の字に似て、決まった型にとらわれないユニークな咲き方をする姿が、自由な発想を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ダイモンジソウという名前の由来は何ですか？</div>
-        <div class="faq-a">花びらの形が漢字の「大」の字に似て見えることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ダイモンジソウという名前は、何に由来しているのですか？</div>
+        <div class="faq-a">花びらの形が漢字の「大」の字に似ていることから、この名前が付けられたと言われています。5枚の花びらのうち下の2枚が長く伸びる姿が、その由来と考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>花びらが描く、「大」の字のかたち</h2>
+    <p>ダイモンジソウの花をよく見ると、5枚ある花びらのうち下の2枚だけが長く伸び、まるで漢字の「大」を描いているように見える。この独特な形は、他の花にはあまり見られない個性で、規則正しい左右対称よりも、少し崩れたバランスの面白さがある。型にはまらないその咲き方は、花言葉「自由」にもよく重なる。決まった形に収まろうとせず、自分らしいかたちで咲く——そんな姿勢を、この花は静かに体現しているように見える。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ダイモンジソウの花言葉「自由」は、どのように結びついているのですか？</div>
+        <div class="faq-a">整った左右対称の形にとらわれず、独自の「大」の字のような形で咲く姿が、型にはまらない自由さを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>整った左右対称の形だけが、美しいとは限らない。少しゆがんだ線の中に、思いがけない個性が顔をのぞかせることもある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ダイモンジソウから始める小さな体験</h2>
+    <p>「大」の字を描く花びらにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>「大」の字に似た花の形を、じっくり観察してみる</li>
+      <li>自分らしい形を、一つ探してみる</li>
+      <li>型にはまらない自由な発想を、今日は大切にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日どんな行動を意識するとよいかは、開運カレンダーのおすすめの行動が参考になるかもしれません。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>少し崩れた「大」の字の形が、かえって独特の存在感を放っている。</p>
     <ul>
-      <li>ダイモンジソウは秋に「大」の字に似た形の花を咲かせる、12月7日の誕生花</li>
-      <li>花言葉は「自由」、型にとらわれない花の形に由来する</li>
-      <li>「大」の字に似た花の形が特徴的な、個性豊かな花</li>
-      <li>明るい日陰を好み、乾燥させすぎないよう管理するとよく育ちます</li>
+      <li>ダイモンジソウは、ユキノシタ科の多年草で、秋に「大」の字に似た花を咲かせる、12月7日の誕生花</li>
+      <li>花言葉は「自由」。型にはまらない花の形に由来すると言われる</li>
+      <li>開花期は秋で、12月7日の時点ではすでに花期を終えていることが多い点に注意</li>
+      <li>型にはまらない「大」の字の花が、自分らしさを探すヒントをくれる</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-07'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1207'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-07');
+echo autoLink($html, 'birthflower-dec-1207');
 ?>

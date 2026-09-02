@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"トーチリリーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に松明のような形の花穂を咲かせます。ツルボラン科の多年草です。"}},
-      {"@type":"Question","name":"トーチリリーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"松明のように燃え立つ花穂の姿が、燃えるような恋心とその痛みを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"トーチリリーの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"松明（トーチ）のような形の花穂を咲かせることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"トーチリリーの和名は何ですか？","acceptedAnswer":{"@type":"Answer","text":"和名は「赤熊百合」と呼ばれています。夏に松明のような形の花穂を咲かせます。"}},
+      {"@type":"Question","name":"トーチリリーはなぜ「トーチ」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"松明（トーチ）のような形の花穂を咲かせることから、この名前がつけられたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 8 · 誕生花</span>
     <h1>10月8日の誕生花はトーチリリー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">トーチリリーは、ツルボラン科の多年草で、夏に松明のような形の花穂を咲かせる、力強く情熱的な印象を持つ花です。花言葉は「恋の痛み」。力強く情熱的な花です。</p>
+    <p class="art-lead">炎のように鮮やかな花穂が、まっすぐに空へ向かって伸びている。トーチ（松明）の名を持つこの花は、燃えるような情熱と、その裏にある痛みの両方を抱えた10月8日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">トーチリリーとは</a></li>
-      <li><a href="#meaning">トーチリリーが象徴する意味</a></li>
-      <li><a href="#charm">トーチリリーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月8日の誕生花として親しまれるトーチリリー</a></li>
+      <li><a href="#story">色を変えながら燃え上がる、松明のような花穂</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、トーチリリーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>トーチリリーとは</h2>
-    <p>トーチリリーは、ツルボラン科の多年草で、10月8日の誕生花として知られています。夏に松明のような形の花穂を咲かせる、力強く情熱的な印象を持つ花です。</p>
-  </section>
+    <h2>10月8日の誕生花として親しまれるトーチリリー</h2>
+    <p>トーチリリーは、ツルボラン科の多年草。夏になると、松明のような形をした花穂をまっすぐに咲かせる。和名は「赤熊百合」と呼ばれている。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>トーチリリーが象徴する意味</h2>
-    <p>トーチリリーの花言葉は「恋の痛み」です。松明のように燃え立つ花穂の姿が、燃えるような恋心とその痛みを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>トーチリリーの魅力</h2>
-    <p>トーチリリーの魅力は、松明のような花穂が持つ力強く情熱的な美しさと、花穂が真っ直ぐに立ち上がる堂々とした姿にあります。10月8日生まれの方はもちろん、燃えるような恋心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>トーチリリーは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月8日生まれの方はもちろん、燃えるような恋心を伝えたい贈り物としてもトーチリリーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トーチリリーはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に松明のような形の花穂を咲かせます。ツルボラン科の多年草です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">トーチリリーの和名は何ですか？</div>
+        <div class="faq-a">和名は「赤熊百合」と呼ばれています。夏に松明のような形の花穂を咲かせます。</div>
       </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="story">
+    <h2>色を変えながら燃え上がる、松明のような花穂</h2>
+    <p>トーチリリーという名前は、その花穂の形が松明（トーチ）に似ていることに由来すると言われている。特徴的なのは、花が咲き進むにつれて色が変化していくことだ。つぼみの頃はオレンジ色をしているが、下から順に咲き上がるにつれて、徐々に黄色へと移り変わっていく。一本の花穂の中に、燃え盛る炎のようなグラデーションが生まれる。この色の変化にこそ、花言葉「恋の痛み」の由来があると言われている。燃えるような情熱の色から、静かな黄色へ——想いの温度が移り変わっていく様子が重ねられているのかもしれない。</p>
+
+    <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トーチリリーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">松明のように燃え立つ花穂の姿が、燃えるような恋心とその痛みを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">トーチリリーの名前の由来は何ですか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">トーチリリーはなぜ「トーチ」と呼ばれるのですか？</div>
         <div class="faq-a">松明（トーチ）のような形の花穂を咲かせることから、この名前がつけられたと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>想いの中には、喜びだけでなく痛みが含まれていることもある。トーチリリーの燃えるような花穂は、その痛みごと誰かを想う強さを映している。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、トーチリリーから始める小さな体験</h2>
+    <p>色を変えながら燃え上がるトーチリリーにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>松明のような形の花穂をじっくり観察してみる</li>
+      <li>心の痛みを否定せず、そのまま受け止めてみる</li>
+      <li>オレンジから黄色へ移り変わる花色の変化を眺めてみる</li>
+    </ul>
+
+    <p class="cta-lead">強い想いを見つめ直したい日は、今月の誕生石もチェックしてみませんか。開運カレンダーでは、月ごとの誕生石も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>オレンジから黄色へと色を変えながら燃え上がるトーチリリーは、想いの強さと痛みを同時に映し出す。</p>
     <ul>
-      <li>トーチリリーは松明のような花穂を咲かせる、10月8日の誕生花</li>
-      <li>花言葉は「恋の痛み」、松明のように燃え立つ花穂に由来する</li>
-      <li>花穂が真っ直ぐに立ち上がる堂々とした姿が魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>トーチリリーは夏に松明のような花穂を咲かせる、ツルボラン科の多年草で、10月8日の誕生花</li>
+      <li>花言葉は「恋の痛み」。咲き進むごとに色を変える花穂に由来すると言われる</li>
+      <li>和名は「赤熊百合」。花色はオレンジから黄色へ移り変わる</li>
+      <li>痛みも含めて誰かを強く想いたい日に寄り添う花</li>
     </ul>
   </section>
 

@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ムラサキツユクサはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏にかけて、朝に咲いて夕方にはしぼむ紫色の花を咲かせます。ツユクサ科の多年草です。"}},
-      {"@type":"Question","name":"ムラサキツユクサの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"朝に咲いて夕方には静かにしぼむ、一日限りの潔い花姿が、大切なものを慈しみ貴ぶ心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ムラサキツユクサの花はどのくらいの時間咲いていますか？","acceptedAnswer":{"@type":"Answer","text":"朝に開花し、夕方には閉じてしまう一日花です。日々新しい花を次々と咲かせます。"}}
+      {"@type":"Question","name":"ムラサキツユクサの花はどんな色に見えますか？","acceptedAnswer":{"@type":"Answer","text":"青みを帯びた涼しげな紫色の花を咲かせ、朝の光の中でひときわ爽やかな印象を放ちます。理科の授業の観察教材としても親しまれているツユクサ科の多年草です。"}},
+      {"@type":"Question","name":"ムラサキツユクサの花言葉『貴ぶ』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"朝に咲いて夕方には静かにしぼむ、一日限りの潔い花姿が、大切なものを慈しみ貴ぶ心を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 1 · 誕生花</span>
     <h1>9月1日の誕生花はムラサキツユクサ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ムラサキツユクサは、ツユクサ科の多年草で、初夏から夏にかけて、朝に咲いて夕方にはしぼむ紫色の花を咲かせる、儚くも気品ある印象を放つ花です。花言葉は「貴ぶ」。儚くも気品ある花です。</p>
+    <p class="art-lead">朝の光の中に、淡い紫の花がひとつ咲いている。夕方にはもうしぼんでしまうと知っていて、なお目を引かれる一日花——ムラサキツユクサが、9月1日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ムラサキツユクサとは</a></li>
-      <li><a href="#meaning">ムラサキツユクサが象徴する意味</a></li>
-      <li><a href="#charm">ムラサキツユクサの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月1日の誕生花として親しまれるムラサキツユクサ</a></li>
+      <li><a href="#story">一日で終わる紫が、静かに教える貴さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ムラサキツユクサから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ムラサキツユクサとは</h2>
-    <p>ムラサキツユクサは、ツユクサ科の多年草で、9月1日の誕生花として知られています。初夏から夏にかけて、朝に咲いて夕方にはしぼむ紫色の花を咲かせる、儚くも気品ある印象を放つ花です。</p>
-  </section>
+    <h2>9月1日の誕生花として親しまれるムラサキツユクサ</h2>
+    <p>ムラサキツユクサは、ツユクサ科の多年草です。初夏から夏にかけて、朝に咲いて夕方には静かにしぼむ紫色の花をつけます。朝露をまとって咲く姿がその名の由来とされ、理科の観察教材としても使われることから、9月1日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ムラサキツユクサが象徴する意味</h2>
-    <p>ムラサキツユクサの花言葉は「貴ぶ」です。朝に咲いて夕方には静かにしぼむ、一日限りの潔い花姿が、大切なものを慈しみ貴ぶ心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ムラサキツユクサの魅力</h2>
-    <p>ムラサキツユクサの魅力は、紫色の繊細な花びらと、毎朝新しい花を次々と咲かせる清々しさにあります。一日花でありながら、途切れることなく咲き続ける生命力も魅力です。 9月1日生まれの方はもちろん、大切な人を慈しみ貴ぶ想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ムラサキツユクサは日当たりから半日陰を好み、乾燥に弱いため水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月1日生まれの方はもちろん、大切な人を慈しみ貴ぶ想いを伝えたい贈り物としてもムラサキツユクサは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキツユクサはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から夏にかけて、朝に咲いて夕方にはしぼむ紫色の花を咲かせます。ツユクサ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキツユクサの花言葉の由来は何ですか？</div>
-        <div class="faq-a">朝に咲いて夕方には静かにしぼむ、一日限りの潔い花姿が、大切なものを慈しみ貴ぶ心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムラサキツユクサの花はどのくらいの時間咲いていますか？</div>
-        <div class="faq-a">朝に開花し、夕方には閉じてしまう一日花です。日々新しい花を次々と咲かせます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ムラサキツユクサの花はどんな色に見えますか？</div>
+        <div class="faq-a">青みを帯びた涼しげな紫色の花を咲かせ、朝の光の中でひときわ爽やかな印象を放ちます。理科の授業の観察教材としても親しまれているツユクサ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>一日で終わる紫が、静かに教える貴さ</h2>
+    <p>ムラサキツユクサの紫は、朝の光をまとうと少し青みがかって見え、日が傾くころには影のように深くなる。派手さのない、けれど目が離せない色だ。この紫が視界に入ると、なぜか足を止めて確かめたくなる。花そのものはひとつひとつが小さく、三枚の花びらがゆるやかに開くだけの簡素なつくりだが、朝に咲いて夕方には静かに姿を消してしまう。一日しか咲かないというその潔さが、花言葉「貴ぶ」に重なる。限りある時間だからこそ、そこにあるものを丁寧に扱いたくなるのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ムラサキツユクサの花言葉『貴ぶ』にはどんな由来がありますか？</div>
+        <div class="faq-a">朝に咲いて夕方には静かにしぼむ、一日限りの潔い花姿が、大切なものを慈しみ貴ぶ心を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>限りある時間の中で、何を大切にするかを選ぶのは自分自身だ。今日という一日も、明日になれば同じようには戻ってこない。目の前にあるものへ、少しだけ丁寧なまなざしを向けてみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ムラサキツユクサから始める小さな体験</h2>
+    <p>朝に咲いて夕方にはしぼむムラサキツユクサにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の花を探して野や庭を歩いてみる</li>
+      <li>朝露をまとった花の姿を想像してみる</li>
+      <li>大切にしている人を静かに思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">限りある一日をどう過ごすか迷ったときは、今日の六曜も参考にしてみませんか。開運カレンダーでは、六曜とラッキーカラーを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「貴ぶ」——ムラサキツユクサの花言葉は、一日だけ咲いて静かに散っていく、その潔い一生に宿っている。</p>
     <ul>
-      <li>ムラサキツユクサは初夏から夏に紫色の花を咲かせる、9月1日の誕生花</li>
-      <li>花言葉は「貴ぶ」、一日で咲いてしぼむ潔い花姿に由来する</li>
-      <li>儚さと気品が魅力</li>
-      <li>日当たりから半日陰を好み、乾燥に弱い</li>
+      <li>ムラサキツユクサは初夏から夏に紫色の花を咲かせる、ツユクサ科の多年草で、9月1日の誕生花</li>
+      <li>花言葉は「貴ぶ」。一日で咲いてしぼむ潔い花姿に由来すると言われる</li>
+      <li>朝露をまとって咲く姿が名前の由来とされ、理科の観察教材としても親しまれる</li>
+      <li>限りある時間だからこそ、目の前のものを大切にしたくなる花</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0122/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月22日の誕生花リカステの花言葉・特徴・魅力をわかりやすく解説。「快活」を象徴する大輪の洋ランの意味を紹介します。">
+  <meta name="description" content="1月22日の誕生花リカステの花言葉・特徴・魅力をわかりやすく解説。「快活」を象徴する花の意味を紹介します。">
   <title>1月22日の誕生花はリカステ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"リカステはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、大輪の花を咲かせます。"}},
-      {"@type":"Question","name":"リカステの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「快活」という花言葉は、すっきりと整った花びらと明るい色合いの花姿に由来するとされています。"}},
-      {"@type":"Question","name":"リカステはどんな環境で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"直射日光を避けた明るい場所を好み、乾燥気味に管理すると育てやすい洋ランです。"}}
+      {"@type":"Question","name":"リカステはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に大輪の花を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。"}},
+      {"@type":"Question","name":"リカステの花言葉「快活」の由来は？","acceptedAnswer":{"@type":"Answer","text":"桃や黄、緑など彩り豊かな色合いを持つ大輪の花が、生き生きとした表情を見せることに由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 22 · 誕生花</span>
     <h1>1月22日の誕生花はリカステ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">リカステは、大輪の花を咲かせる1月22日の誕生花です。花言葉は「快活」。すっきりと整った花びらが特徴の洋ランです。</p>
+    <p class="art-lead">寒さの底にある1月22日。思い浮かべたいのが、中南米の高地に咲くリカステです。桃や黄、緑と彩り豊かな大輪の花を咲かせる、洋ランの仲間です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">リカステとは</a></li>
-      <li><a href="#meaning">リカステが象徴する意味</a></li>
-      <li><a href="#charm">リカステの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">彩り豊かな大輪、リカステの姿</a></li>
+      <li><a href="#story">1月22日、リカステの彩り豊かな大輪が伝える快活さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、リカステから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>リカステとは</h2>
-    <p>リカステは、ラン科の洋ランで、1月22日の誕生花として知られています。春に大輪の花を咲かせ、その整った花姿から洋ランの中でも人気の高い品種です。</p>
-  </section>
+    <h2>彩り豊かな大輪、リカステの姿</h2>
+    <p>リカステは、ラン科の洋ランです。春になると、桃や黄、緑など多彩な色合いの大輪の花を咲かせます。原産地は中南米の高地とされ、標高の高い涼しい環境で育つ花として知られています。花びらの色や模様には個体差があり、一輪ごとの表情の違いを楽しめるのも魅力です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>リカステが象徴する意味</h2>
-    <p>リカステの花言葉は「快活」です。すっきりと整った花びらと、明るい色合いの花姿から、明るく生き生きとした印象を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>リカステの魅力</h2>
-    <p>リカステの魅力は、大輪で存在感のある花姿と、すっきりとした花びらの美しさにあります。洋ランならではの気品を保ちながらも、明るく親しみやすい印象を与えてくれます。1月22日生まれの方はもちろん、明るい気持ちを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>リカステは直射日光を避けた明るい場所を好み、乾燥気味に管理するのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月22日生まれの方はもちろん、明るい気持ちを届けたい贈り物としてもリカステは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">リカステはいつ頃咲きますか？</div>
-        <div class="faq-a">春に、大輪の花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リカステの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「快活」という花言葉は、すっきりと整った花びらと明るい色合いの花姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リカステはどんな環境で育てやすいですか？</div>
-        <div class="faq-a">直射日光を避けた明るい場所を好み、乾燥気味に管理すると育てやすい洋ランです。</div>
+        <div class="faq-a">春に大輪の花を咲かせます。誕生花としては1月ですが、実際に花が咲くのは春の時期になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月22日、リカステの彩り豊かな大輪が伝える快活さ</h2>
+    <p>大きく花びらを広げるリカステの姿には、ためらいがありません。一枚一枚の花びらが大胆に開き切り、その堂々としたシルエットは、離れた場所からでも一目でわかるほどの存在感を放ちます。1月22日、寒さの厳しいこの時期は、気持ちも縮こまりがちになるかもしれません。そんな時こそ、リカステの大きく開いた姿を思い浮かべて、身体も気持ちも伸びやかに広げてみるのも良さそうです。花言葉は「快活」。彩り豊かな大輪が咲かせる、生き生きとした表情から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">リカステの花言葉「快活」の由来は？</div>
+        <div class="faq-a">桃や黄、緑など彩り豊かな色合いを持つ大輪の花が、生き生きとした表情を見せることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>気持ちが沈みがちな時こそ、明るい色や元気の出るものに目を向けてみると、少しずつ心が軽くなっていくものです。今日は、あなたの心を弾ませてくれるものを一つ探してみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、リカステから始める小さな体験</h2>
+    <p>彩り豊かな大輪を咲かせるリカステにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>大輪の花を見つけてその大きさを実感してみる</li>
+      <li>今日一日を明るい気持ちで過ごしてみる</li>
+      <li>元気の出る色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">明るい気持ちで過ごせた今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、六曜や月齢もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>リカステは、彩り豊かな大輪の花を通して、明るく生き生きとした気持ちの大切さを教えてくれる誕生花です。</p>
     <ul>
-      <li>リカステは春に大輪の花を咲かせる、1月22日の誕生花</li>
-      <li>花言葉は「快活」、明るく生き生きとした印象を象徴する花とされる</li>
-      <li>整った花姿と気品が魅力</li>
-      <li>乾燥気味に管理して育てたい</li>
+      <li>リカステはラン科の洋ランで、春に大輪の花を咲かせる（本来の見頃は春で、1月22日時点では花は咲いていない）</li>
+      <li>花色は桃や黄、緑など多彩で、一輪ごとに異なる表情を持つ</li>
+      <li>原産地は中南米の高地とされる</li>
+      <li>花言葉は「快活」。彩り豊かな大輪が見せる生き生きとした表情に由来するといわれている</li>
     </ul>
   </section>
 

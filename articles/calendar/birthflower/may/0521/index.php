@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0521/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月21日の誕生花スノーフレークの花言葉・特徴・魅力をわかりやすく解説。「記憶」を象徴する鈴のような白い花の意味を紹介します。">
+  <meta name="description" content="5月21日の誕生花スノーフレークの花言葉・特徴・魅力をわかりやすく解説。「記憶」という花言葉に込められた意味と、うつむいて咲く鈴形の白い花の可憐さを紹介します。">
   <title>5月21日の誕生花はスノーフレーク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スノーフレークはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鈴のような白い花を咲かせます。ヒガンバナ科の球根植物で、スズランに似た可憐な印象を持つ花です。"}},
-      {"@type":"Question","name":"スノーフレークの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「記憶」という花言葉は、うつむき加減にそっと咲く白い花が、静かに心にとどめておきたい大切な思い出を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"スノーフレークとスズランはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"花姿がよく似ていますが、スノーフレークは花びらの先端に緑色の斑点があり、スズランよりも花が大きい点で見分けられます。"}}
+      {"@type":"Question","name":"スノーフレークとスズランはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"花姿がよく似ていますが、スノーフレークは花びらの先端に緑色の斑点があり、スズランよりも花全体がひとまわり大きい点で見分けられます。学名も異なる別の植物です。"}},
+      {"@type":"Question","name":"スノーフレークの花言葉「記憶」の由来は？","acceptedAnswer":{"@type":"Answer","text":"うつむき加減にそっと咲く白い花の姿が、静かに心にとどめておきたい大切な思い出を象徴することに由来するといわれています。"}},
+      {"@type":"Question","name":"スノーフレークはどんな環境でよく育ちますか？","acceptedAnswer":{"@type":"Answer","text":"日当たりから半日陰まで幅広い環境に適応し、植えっぱなしでも毎年花を咲かせる丈夫な球根植物です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 21 · 誕生花</span>
     <h1>5月21日の誕生花はスノーフレーク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スノーフレークは、ヒガンバナ科の球根植物で、春に鈴のような白い花を咲かせる5月21日の誕生花です。花言葉は「記憶」。スズランに似た可憐な印象の花です。</p>
+    <p class="art-lead">しんと静まり返った春先の庭に、うつむいて咲く白い花が揺れています。スノーフレークは、鈴のような小さな花をひとつずつ丁寧に、そっと下向きに咲かせる球根植物です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スノーフレークとは</a></li>
-      <li><a href="#meaning">スノーフレークが象徴する意味</a></li>
-      <li><a href="#charm">スノーフレークの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月21日の誕生花として親しまれるスノーフレーク</a></li>
+      <li><a href="#story">しんと咲く鈴形の花、スノーフレークが抱く記憶</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スノーフレークから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スノーフレークとは</h2>
-    <p>スノーフレークは、ヒガンバナ科の球根植物で、5月21日の誕生花として知られています。春になると鈴のような形の白い花を咲かせ、スズランに似た可憐な印象で親しまれています。</p>
-  </section>
+    <h2>5月21日の誕生花として親しまれるスノーフレーク</h2>
+    <p>スノーフレークは、ヒガンバナ科の球根植物です。春になると鈴のような形をした白い花を咲かせ、うつむき加減の可憐な姿で親しまれています。植えっぱなしでも毎年花を咲かせる丈夫さから庭先でもよく見られ、5月21日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スノーフレークが象徴する意味</h2>
-    <p>スノーフレークの花言葉は「記憶」です。うつむき加減にそっと咲く白い花が、静かに心にとどめておきたい大切な思い出を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スノーフレークの魅力</h2>
-    <p>スノーフレークの魅力は、鈴形の花びらの先端に入る緑色の斑点と、うつむいて咲く控えめな美しさにあります。群生させると春の庭に清らかな雰囲気を添えてくれます。5月21日生まれの方はもちろん、大切な思い出を伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スノーフレークは日当たりから半日陰まで幅広い環境で育つ丈夫な球根植物です。植えっぱなしでも毎年花を咲かせます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月21日生まれの方はもちろん、大切な思い出を伝える贈り物としてもスノーフレークは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークはいつ頃咲きますか？</div>
-        <div class="faq-a">春に鈴のような白い花を咲かせます。ヒガンバナ科の球根植物で、スズランに似た可憐な印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「記憶」という花言葉は、うつむき加減にそっと咲く白い花が、静かに心にとどめておきたい大切な思い出を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">スノーフレークとスズランはどう違いますか？</div>
-        <div class="faq-a">花姿がよく似ていますが、スノーフレークは花びらの先端に緑色の斑点があり、スズランよりも花が大きい点で見分けられます。</div>
+        <div class="faq-a">花姿がよく似ていますが、スノーフレークは花びらの先端に緑色の斑点があり、スズランよりも花全体がひとまわり大きい点で見分けられます。学名も異なる別の植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>しんと咲く鈴形の花、スノーフレークが抱く記憶</h2>
+    <p>しんと静まり返った庭先で、スノーフレークはうつむくように鈴形の花を一つ、また一つと咲かせていきます。花びらの先端に添えられた小さな緑の斑点は、まるで誰かに宛てたしるしのように控えめに輝いています。声高に自分を主張することのない、この静かな咲き方には、大切なものをそっとしまい込むような雰囲気が漂います。うつむき加減にそっと咲く白い花が、心にとどめておきたい思い出を象徴することから、スノーフレークには「記憶」という花言葉が贈られているといわれています。忘れたくない瞬間は、大声で語らなくても、こうして静かに心の中に息づいているのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークの花言葉「記憶」の由来は？</div>
+        <div class="faq-a">うつむき加減にそっと咲く白い花の姿が、静かに心にとどめておきたい大切な思い出を象徴することに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>ふとした瞬間に、忘れていたはずの記憶がよみがえることがあります。それは無理に思い出そうとしなくても、大切なものは心のどこかにきちんと残っているという証なのかもしれません。懐かしい記憶はどこにも消えず、ただ静かに、思い出される時を待っているだけなのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スノーフレークから始める小さな体験</h2>
+    <p>うつむいて咲く花の静けさにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>鈴のような形の白い花を探して観察してみる</li>
+      <li>大切な思い出を一つ、心の中で振り返ってみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スノーフレークはどんな環境でよく育ちますか？</div>
+        <div class="faq-a">日当たりから半日陰まで幅広い環境に適応し、植えっぱなしでも毎年花を咲かせる丈夫な球根植物です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">大切な記憶に想いを馳せたい今日は、六曜や月九星もチェックしてみませんか。開運カレンダーでは、その日の六曜と月九星をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>うつむいて咲くスノーフレークの花をそっと覗き込むと、声高に語られることのない思い出ほど、心の奥に長く留まり続けるのかもしれないと感じます。</p>
     <ul>
-      <li>スノーフレークは春に鈴形の白い花を咲かせる、5月21日の誕生花</li>
-      <li>花言葉は「記憶」、うつむいて咲く控えめな花姿に由来する</li>
-      <li>花びら先端の緑の斑点と可憐さが魅力</li>
-      <li>幅広い環境で育つ丈夫な球根植物</li>
+      <li>スノーフレークはヒガンバナ科の球根植物で、春にうつむいて咲く白い花を咲かせる、5月21日の誕生花</li>
+      <li>花言葉は「記憶」。静かに咲く花姿が大切な思い出を象徴するとされる</li>
+      <li>花びら先端の緑の斑点と、控えめな美しさが魅力</li>
+      <li>スズランとは別種で、斑点や花の大きさで見分けられる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0908/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月8日の誕生花ヤツシロソウの花言葉・特徴・魅力をわかりやすく解説。「従順」を象徴する青紫色の花の意味を紹介します。">
+  <meta name="description" content="9月8日の誕生花ヤツシロソウの花言葉・特徴・魅力をわかりやすく解説。「従順」を象徴する青紫の花の意味を紹介します。">
   <title>9月8日の誕生花はヤツシロソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヤツシロソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に青紫色の花を咲かせます。キキョウ科の多年草です。"}},
-      {"@type":"Question","name":"ヤツシロソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"風に揺れながらも茎をしなやかに保ち、青紫色の花を静かに咲かせる花姿が、素直で従順な心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヤツシロソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"熊本県八代地方で発見されたことに由来すると言われています。"}}
+      {"@type":"Question","name":"ヤツシロソウは珍しい花なのですか？","acceptedAnswer":{"@type":"Answer","text":"はい。自生地の減少により数が少なくなっており、絶滅が心配されている希少な花です。夏に涼しげな青紫色の花を咲かせるキキョウ科の多年草です。"}},
+      {"@type":"Question","name":"ヤツシロソウの花言葉『従順』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"周囲に静かに寄り添いながら咲く、澄んだ青紫の花の穏やかな佇まいに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 8 · 誕生花</span>
     <h1>9月8日の誕生花はヤツシロソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヤツシロソウは、キキョウ科の多年草で、夏に青紫色の花を咲かせる、素直でしなやかな印象を漂わせる花です。花言葉は「従順」。素直でしなやかな花です。</p>
+    <p class="art-lead">夏の終わり、澄んだ青紫の花が、風にそっと揺れている。数を減らしつつあるこの花に出会えたなら、それは静かな幸運かもしれない。ヤツシロソウ、それが9月8日の誕生花の名だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヤツシロソウとは</a></li>
-      <li><a href="#meaning">ヤツシロソウが象徴する意味</a></li>
-      <li><a href="#charm">ヤツシロソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月8日の誕生花として親しまれるヤツシロソウ</a></li>
+      <li><a href="#story">澄んだ青紫が語る、静かに寄り添う心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヤツシロソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヤツシロソウとは</h2>
-    <p>ヤツシロソウは、キキョウ科の多年草で、9月8日の誕生花として知られています。夏に青紫色の花を咲かせる、素直でしなやかな印象を漂わせる花です。</p>
-  </section>
+    <h2>9月8日の誕生花として親しまれるヤツシロソウ</h2>
+    <p>ヤツシロソウは、キキョウ科の多年草です。夏になると、青紫色の花を咲かせます。熊本県八代市で見つかったことがその名の由来とされ、9月8日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヤツシロソウが象徴する意味</h2>
-    <p>ヤツシロソウの花言葉は「従順」です。風に揺れながらも茎をしなやかに保ち、青紫色の花を静かに咲かせる花姿が、素直で従順な心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヤツシロソウの魅力</h2>
-    <p>ヤツシロソウの魅力は、澄んだ青紫色の花が寄り添うように咲く清らかさと、涼やかな夏の花壇によく映える佇まいにあります。9月8日生まれの方はもちろん、素直な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヤツシロソウは日当たりから半日陰を好み、夏の高温多湿を嫌うため風通しの良い場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月8日生まれの方はもちろん、素直な想いを伝えたい贈り物としてもヤツシロソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤツシロソウはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に青紫色の花を咲かせます。キキョウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤツシロソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">風に揺れながらも茎をしなやかに保ち、青紫色の花を静かに咲かせる花姿が、素直で従順な心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤツシロソウという名前の由来は何ですか？</div>
-        <div class="faq-a">熊本県八代地方で発見されたことに由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヤツシロソウは珍しい花なのですか？</div>
+        <div class="faq-a">はい。自生地の減少により数が少なくなっており、絶滅が心配されている希少な花です。夏に涼しげな青紫色の花を咲かせるキキョウ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>澄んだ青紫が語る、静かに寄り添う心</h2>
+    <p>ヤツシロソウの青紫は、キキョウの花に似ながらも、どこか涼やかで澄んだ印象を持つ。強く自己主張するような色ではなく、周囲の緑の中に静かに溶け込みながら、それでいて確かな存在感を放つ。この落ち着いた色合いが、素直に人の心へ寄り添うような印象を与えるのかもしれない。名前の由来となった熊本県八代市で見つかって以来、今では数を減らしつつある希少な花としても知られている。花言葉「従順」は、この澄んだ青紫の花が、周囲の環境に静かに寄り添いながら咲く姿から生まれたと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤツシロソウの花言葉『従順』にはどんな由来がありますか？</div>
+        <div class="faq-a">周囲に静かに寄り添いながら咲く、澄んだ青紫の花の穏やかな佇まいに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かの言葉に耳を傾けることは、自分を失うこととは違う。素直な気持ちで人と向き合えたとき、思いがけないつながりが生まれることもある。そんな柔らかさを心にとどめておくと、今日という日が少し変わるだろう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヤツシロソウから始める小さな体験</h2>
+    <p>澄んだ青紫の花を静かに咲かせるヤツシロソウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>青紫色の花を探して観察してみる</li>
+      <li>名の由来となった熊本県八代市の場所を地図で探してみる</li>
+      <li>誰かの言葉に素直に耳を傾けてみる</li>
+    </ul>
+
+    <p class="cta-lead">素直な気持ちで一日を過ごしたい日は、今日のおすすめアイテムも確認してみませんか。開運カレンダーでは、おすすめアイテムと星座を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>熊本の地で見つかり、今では数を減らしつつあるヤツシロソウ。その澄んだ青紫は、静かに、けれど確かに人の記憶に残る色だ。</p>
     <ul>
-      <li>ヤツシロソウは夏に青紫色の花を咲かせる、9月8日の誕生花</li>
-      <li>花言葉は「従順」、しなやかに咲く花姿に由来する</li>
-      <li>澄んだ青紫色の清らかさが魅力</li>
-      <li>日当たりから半日陰を好み、高温多湿を嫌う</li>
+      <li>ヤツシロソウは夏に青紫色の花を咲かせる、キキョウ科の多年草で、9月8日の誕生花</li>
+      <li>花言葉は「従順」。周囲に静かに寄り添いながら咲く姿に由来すると言われる</li>
+      <li>熊本県八代市で見つかったことが名前の由来とされる</li>
+      <li>数を減らしつつある希少な花としても知られる</li>
     </ul>
   </section>
 

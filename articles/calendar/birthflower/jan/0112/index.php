@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カンツバキはなぜ「寒椿」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"冬の寒い時期に花を咲かせることから、寒椿という別名で親しまれています。"}},
-      {"@type":"Question","name":"カンツバキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「謙譲」という花言葉は、派手さを抑えた控えめな花姿に由来するとされています。"}},
-      {"@type":"Question","name":"カンツバキとツバキは違う花ですか？","acceptedAnswer":{"@type":"Answer","text":"カンツバキはツバキとサザンカの交配によって生まれたとされる園芸品種で、冬に咲く点が特徴です。"}}
+      {"@type":"Question","name":"カンツバキと普通のツバキは違う花ですか？","acceptedAnswer":{"@type":"Answer","text":"カンツバキは冬に花を咲かせる品種で「寒椿」とも呼ばれます。開花期が異なる通常のツバキとは区別して考えられています。"}},
+      {"@type":"Question","name":"カンツバキの花言葉「謙譲」の由来は？","acceptedAnswer":{"@type":"Answer","text":"寒さの中で控えめに、けれど確かに花を咲かせ続ける姿から「謙譲」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 12 · 誕生花</span>
     <h1>1月12日の誕生花はカンツバキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カンツバキは、冬に赤い花を咲かせる1月12日の誕生花です。花言葉は「謙譲」。寒椿とも呼ばれる花木です。</p>
+    <p class="art-lead">成人の日を控えた1月12日。庭木の陰で、つややかな葉を背に赤い花を咲かせているのがカンツバキです。寒椿とも呼ばれるこの花木を、今日は静かに眺めてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カンツバキとは</a></li>
-      <li><a href="#meaning">カンツバキが象徴する意味</a></li>
-      <li><a href="#charm">カンツバキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">冬に咲く赤、カンツバキという花木</a></li>
+      <li><a href="#story">1月12日、カンツバキが咲かせる控えめな赤</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カンツバキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カンツバキとは</h2>
-    <p>カンツバキは、ツバキ科の常緑低木で、1月12日の誕生花として知られています。冬に赤い花を咲かせることから「寒椿」とも呼ばれ、寒さの中でも彩りを添えてくれる花木です。</p>
-  </section>
+    <h2>冬に咲く赤、カンツバキという花木</h2>
+    <p>カンツバキは、ツバキ科の常緑低木で「寒椿」とも呼ばれます。名前の通り、寒さの厳しい冬に赤い花を咲かせる花木です。他の多くの花が休む時期にあえて花を開くその姿は、力強さと静けさを併せ持っています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カンツバキが象徴する意味</h2>
-    <p>カンツバキの花言葉は「謙譲」です。派手さを抑えた控えめな花姿から、へりくだる心や謙虚さを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カンツバキの魅力</h2>
-    <p>カンツバキの魅力は、冬の寒さの中で凛と咲く赤い花と、艶やかな緑の葉との対比にあります。生垣や庭木としても人気が高く、冬の景色に落ち着いた彩りを添えてくれます。1月12日生まれの方はもちろん、謙虚な心を伝えたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カンツバキは日当たりから半日陰まで幅広く育ち、丈夫で育てやすい花木です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月12日生まれの方はもちろん、謙虚な心を伝えたい贈り物としてもカンツバキは親しまれています。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンツバキはなぜ「寒椿」と呼ばれるのですか？</div>
-        <div class="faq-a">冬の寒い時期に花を咲かせることから、寒椿という別名で親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンツバキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「謙譲」という花言葉は、派手さを抑えた控えめな花姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンツバキとツバキは違う花ですか？</div>
-        <div class="faq-a">カンツバキはツバキとサザンカの交配によって生まれたとされる園芸品種で、冬に咲く点が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カンツバキと普通のツバキは違う花ですか？</div>
+        <div class="faq-a">カンツバキは冬に花を咲かせる品種で「寒椿」とも呼ばれます。開花期が異なる通常のツバキとは区別して考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月12日、カンツバキが咲かせる控えめな赤</h2>
+    <p>カンツバキの花は、椿の仲間らしくつややかな葉を背景に、赤い花びらを一枚一枚静かに開いていきます。派手に群れて咲くというより、一輪一輪がそっと存在を主張するような咲き方です。成人の日を控えたこの時期、周囲の華やかさに合わせるのではなく、自分のペースで静かに咲くカンツバキの姿には、どこか学ぶところがあるように思えます。花言葉は「謙譲」。目立つことよりも、控えめに、けれど確かに咲き続けるその姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カンツバキの花言葉「謙譲」の由来は？</div>
+        <div class="faq-a">寒さの中で控えめに、けれど確かに花を咲かせ続ける姿から「謙譲」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かと張り合わなくても、あなたのペースで積み重ねてきたことは、ちゃんと誰かに届いています。今日は焦らず、いつも通りの自分でいてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カンツバキから始める小さな体験</h2>
+    <p>控えめに咲き続けるカンツバキにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>冬に咲く赤い椿を探して観察してみる</li>
+      <li>自分の手柄を誰かに譲ってみる</li>
+      <li>赤いものを一つ、身の回りに置いてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分のペースを大切にした今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、日々のラッキーカラーもわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>カンツバキは、寒さの中で控えめに、けれど確かに咲き続ける、1月12日らしい誕生花です。</p>
     <ul>
-      <li>カンツバキは冬に赤い花を咲かせる、1月12日の誕生花</li>
-      <li>花言葉は「謙譲」、控えめな心を象徴する花とされる</li>
-      <li>艶やかな葉との対比が美しい</li>
-      <li>丈夫で育てやすい花木</li>
+      <li>カンツバキはツバキ科の常緑低木で「寒椿」とも呼ばれ、冬に赤い花を咲かせる</li>
+      <li>他の花が休む時期にあえて花を開く、力強さと静けさを併せ持つ花木</li>
+      <li>花言葉は「謙譲」。控えめに咲き続ける姿を象徴する言葉とされる</li>
+      <li>開花期の異なる通常のツバキとは区別して考えられている</li>
     </ul>
   </section>
 

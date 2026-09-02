@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1214/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月14日の誕生花ナンテンの花言葉・特徴・魅力をわかりやすく解説。「ますます幸せ」を象徴する縁起の良い木の意味を紹介します。">
+  <meta name="description" content="12月14日の誕生花ナンテンの花言葉・特徴・魅力をわかりやすく解説。「ますます幸せ」を象徴する赤い実が縁起の良い花の意味を紹介します。">
   <title>12月14日の誕生花はナンテン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ナンテンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い小花を咲かせ、冬に赤い実をつけます。メギ科の常緑低木です。"}},
-      {"@type":"Question","name":"ナンテンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「難を転じる」という語呂合わせとともに、冬に赤い実をたくさんつける豊かな姿が、幸せがますます重なっていくことを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ナンテンはなぜ縁起が良いとされていますか？","acceptedAnswer":{"@type":"Answer","text":"「難を転じる」という語呂合わせから、古くから縁起の良い木として庭木やお正月の飾りに用いられています。"}}
+      {"@type":"Question","name":"ナンテンの赤い実は、食べても大丈夫なのですか？","acceptedAnswer":{"@type":"Answer","text":"ナンテンの実には毒性があるとされており、口にすることは避けるべきとされています。縁起物として飾って楽しむ植物として親しまれています。"}},
+      {"@type":"Question","name":"ナンテンの花言葉「ますます幸せ」は、どのような言い伝えに基づいていますか？","acceptedAnswer":{"@type":"Answer","text":"「難を転じて福となす」という語呂合わせから、災いを幸運に変える縁起の良い木として親しまれてきたことに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 14 · 誕生花</span>
     <h1>12月14日の誕生花はナンテン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ナンテンは、メギ科の常緑低木で、初夏に白い小花を咲かせ、冬に赤い実をつける、縁起が良く華やかな印象を持つ花です。花言葉は「ますます幸せ」。縁起の良い花です。</p>
+    <p class="art-lead">お正月飾りの中で、赤い実をつけた枝を見かけることは少なくない。ナンテンは、そんな冬の縁起物として親しまれる、メギ科の常緑低木だ。花が咲くのは初夏だが、12月14日の今、枝を彩っているのは、真っ赤に色づいた実のほうである。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ナンテン</dd>
     <dt>花言葉</dt><dd>ますます幸せ</dd>
     <dt>科名</dt><dd>メギ科</dd>
-    <dt>見頃</dt><dd>初夏（花）／冬（実）</dd>
+    <dt>見頃</dt><dd>冬（実）</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ナンテンとは</a></li>
-      <li><a href="#meaning">ナンテンが象徴する意味</a></li>
-      <li><a href="#charm">ナンテンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月14日の誕生花として親しまれるナンテン</a></li>
+      <li><a href="#story">「難を転じる」に込められた、年の瀬の願い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ナンテンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ナンテンとは</h2>
-    <p>ナンテンは、メギ科の常緑低木で、12月14日の誕生花として知られています。初夏に白い小花を咲かせ、冬に赤い実をつける、縁起が良く華やかな印象を持つ花です。</p>
-  </section>
+    <h2>12月14日の誕生花として親しまれるナンテン</h2>
+    <p>ナンテンは、メギ科の常緑低木で、12月14日の誕生花として知られています。白い小さな花を咲かせるのは初夏で、12月のこの時期に枝を彩っているのは、花ではなく真っ赤に色づいた実です。「難を転じる」という語呂合わせから、古くより縁起の良い木として、お正月の飾りなどに用いられてきました。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ナンテンが象徴する意味</h2>
-    <p>ナンテンの花言葉は「ますます幸せ」です。「難を転じる」という語呂合わせとともに、冬に赤い実をたくさんつける豊かな姿が、幸せがますます重なっていくことを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ナンテンの魅力</h2>
-    <p>ナンテンの魅力は、初夏の清楚な白い花と、冬に鈴なりに実る赤い実が織りなす表情の変化にあります。12月14日生まれの方はもちろん、ますます幸せを願う想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ナンテンは半日陰でも育ち、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月14日生まれの方はもちろん、ますます幸せを願う想いを伝えたい贈り物としてもナンテンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナンテンはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白い小花を咲かせ、冬に赤い実をつけます。メギ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナンテンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「難を転じる」という語呂合わせとともに、冬に赤い実をたくさんつける豊かな姿が、幸せがますます重なっていくことを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ナンテンはなぜ縁起が良いとされていますか？</div>
-        <div class="faq-a">「難を転じる」という語呂合わせから、古くから縁起の良い木として庭木やお正月の飾りに用いられています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ナンテンの赤い実は、食べても大丈夫なのですか？</div>
+        <div class="faq-a">ナンテンの実には毒性があるとされており、口にすることは避けるべきとされています。縁起物として飾って楽しむ植物として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>「難を転じる」に込められた、年の瀬の願い</h2>
+    <p>一年の終わりが近づくこの時期、赤く色づいたナンテンの実を見かける機会が増える。「南天」という名前が「難転」に通じることから、災いを幸運に転じる縁起木として、古くから庭木やお正月飾りに用いられてきた。実際に花を咲かせるのは初夏だが、冬に主役となるのはその後にできる赤い実のほうだ。一年を振り返り、次の年への願いを込めるこの季節に、赤い実は静かな希望の色を灯してくれる。花言葉「ますます幸せ」には、そうした年の瀬ならではの願いが、そっと重ねられている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ナンテンの花言葉「ますます幸せ」は、どのような言い伝えに基づいていますか？</div>
+        <div class="faq-a">「難を転じて福となす」という語呂合わせから、災いを幸運に変える縁起の良い木として親しまれてきたことに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一年の終わりに赤い実を見つけたなら、それはこれからの幸運の兆しかもしれない。これからもっと良くなると、静かに信じてみる——そんな年の瀬もいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ナンテンから始める小さな体験</h2>
+    <p>赤い実に込められた願いにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤い実をつけたナンテンを探して、縁起を担いでみる</li>
+      <li>「難を転じる」という言葉の由来を、調べてみる</li>
+      <li>今ある幸せに、一つ気づいてみる</li>
+    </ul>
+
+    <p class="cta-lead">年の瀬の運気の流れが気になる方は、開運カレンダーで吉日もあわせて調べてみてください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤い実に込められた「難を転じる」の願いが、年の瀬の空気に静かに寄り添う。</p>
     <ul>
-      <li>ナンテンは初夏に白い小花を咲かせ、冬に赤い実をつける、12月14日の誕生花</li>
-      <li>花言葉は「ますます幸せ」、語呂合わせと赤い実に由来する</li>
-      <li>初夏の白い花と冬の赤い実、縁起の良さで親しまれる木</li>
-      <li>半日陰でも育ち、水はけのよい土で管理するとよく育ちます</li>
+      <li>ナンテンは、メギ科の常緑低木で、冬に赤い実をつける、12月14日の誕生花</li>
+      <li>花言葉は「ますます幸せ」。「難を転じる」という語呂合わせに由来すると言われる</li>
+      <li>開花は初夏で、冬に見られるのは花ではなく結実期の赤い実にあたる</li>
+      <li>赤い実と語呂合わせ、二重の縁起が今日を後押しする</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-14'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1214'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-14');
+echo autoLink($html, 'birthflower-dec-1214');
 ?>

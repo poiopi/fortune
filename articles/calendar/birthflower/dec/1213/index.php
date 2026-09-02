@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1213/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月13日の誕生花カトレアの花言葉・特徴・魅力をわかりやすく解説。「優雅な女性」を象徴する華やかな花の意味を紹介します。">
+  <meta name="description" content="12月13日の誕生花カトレアの花言葉・特徴・魅力をわかりやすく解説。「優雅な女性」を象徴する大輪で華やかな花の意味を紹介します。">
   <title>12月13日の誕生花はカトレア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カトレアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して大輪で華やかな花を咲かせます。ラン科の着生植物です。"}},
-      {"@type":"Question","name":"カトレアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「蘭の女王」とも称される大輪で豪華な花を咲かせる姿が、気品にあふれた優雅な女性を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"カトレアはなぜ「蘭の女王」と呼ばれますか？","acceptedAnswer":{"@type":"Answer","text":"大輪で華やかな花を咲かせ、洋ランの中でも豪華な存在感を放つことから、そう称されるようになったと言われています。"}}
+      {"@type":"Question","name":"カトレアの「着生植物」とは、どのような育ち方をする植物ですか？","acceptedAnswer":{"@type":"Answer","text":"土に根を張るのではなく、木の幹や岩の表面に根を張りついて育つ植物のことです。空気中の水分や養分を取り込みながら生育する性質を持っています。"}},
+      {"@type":"Question","name":"カトレアの花言葉「優雅な女性」は、何に由来すると言われていますか？","acceptedAnswer":{"@type":"Answer","text":"季節を問わず大輪で華やかな花を咲かせ続ける、凛とした佇まいに由来すると言われています。外見の華やかさだけでなく、内面から滲み出る気品を表す言葉です。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 13 · 誕生花</span>
     <h1>12月13日の誕生花はカトレア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カトレアは、ラン科の着生植物で、一年を通して大輪で華やかな花を咲かせる、華やかで気品ある印象を持つ花です。花言葉は「優雅な女性」。華やかな花です。</p>
+    <p class="art-lead">大輪の花びらが幾重にも波打ちながら開く——カトレアは、一年を通してそんな華やかさを保つ、ラン科の着生植物だ。木や岩に根を張って育つ独特な生態を持ち、12月13日も、その存在感は変わらない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カトレアとは</a></li>
-      <li><a href="#meaning">カトレアが象徴する意味</a></li>
-      <li><a href="#charm">カトレアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月13日の誕生花として親しまれるカトレア</a></li>
+      <li><a href="#story">一年を通して咲き続ける、大輪の存在感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カトレアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カトレアとは</h2>
-    <p>カトレアは、ラン科の着生植物で、12月13日の誕生花として知られています。一年を通して大輪で華やかな花を咲かせる、華やかで気品ある印象を持つ花です。</p>
-  </section>
+    <h2>12月13日の誕生花として親しまれるカトレア</h2>
+    <p>カトレアは、ラン科の着生植物で、12月13日の誕生花として知られています。一年を通して大輪で華やかな花を咲かせる性質を持ち、季節を問わず楽しめることから、贈り物やお祝いの席の花としても人気があります。着生植物であるため、木や岩に根を張って育つという、独特な生態も特徴の一つです。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カトレアが象徴する意味</h2>
-    <p>カトレアの花言葉は「優雅な女性」です。「蘭の女王」とも称される大輪で豪華な花を咲かせる姿が、気品にあふれた優雅な女性を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カトレアの魅力</h2>
-    <p>カトレアの魅力は、大輪で豪華な花姿と、蘭の女王と称されるにふさわしい気品ある存在感にあります。12月13日生まれの方はもちろん、優雅な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カトレアは明るい室内を好み、風通しのよい環境で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月13日生まれの方はもちろん、優雅な想いを伝えたい贈り物としてもカトレアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カトレアはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して大輪で華やかな花を咲かせます。ラン科の着生植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カトレアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「蘭の女王」とも称される大輪で豪華な花を咲かせる姿が、気品にあふれた優雅な女性を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カトレアはなぜ「蘭の女王」と呼ばれますか？</div>
-        <div class="faq-a">大輪で華やかな花を咲かせ、洋ランの中でも豪華な存在感を放つことから、そう称されるようになったと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カトレアの「着生植物」とは、どのような育ち方をする植物ですか？</div>
+        <div class="faq-a">土に根を張るのではなく、木の幹や岩の表面に根を張りついて育つ植物のことです。空気中の水分や養分を取り込みながら生育する性質を持っています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>一年を通して咲き続ける、大輪の存在感</h2>
+    <p>カトレアの花びらは、幾重にも波打ちながら大きく開き、他のどんな花とも違う独特の華やかさを放つ。季節を限らず一年を通して咲くその性質は、いつ出会っても変わらない存在感を約束してくれる。この花に「優雅な女性」という花言葉が付けられた背景には、単なる外見の華やかさだけでなく、季節に左右されず自分らしい美しさを保ち続ける、凛とした佇まいが、そのまま花言葉に映し出されているように思える。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カトレアの花言葉「優雅な女性」は、何に由来すると言われていますか？</div>
+        <div class="faq-a">季節を問わず大輪で華やかな花を咲かせ続ける、凛とした佇まいに由来すると言われています。外見の華やかさだけでなく、内面から滲み出る気品を表す言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>忙しない毎日の中でも、丁寧な言葉づかいや所作を選ぶ人がいる。そうした小さな積み重ねが、時間をかけて似合う表情をつくっていく。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カトレアから始める小さな体験</h2>
+    <p>一年中咲き続ける花の凛とした姿にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>大輪の花の華やかさを、じっくり眺めてみる</li>
+      <li>凛とした佇まいを、今日は一つ意識してみる</li>
+      <li>一年を通して楽しめる存在を、身の回りに置いてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日一日の過ごし方の目安が欲しいときは、開運カレンダーの六曜も参考にしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>気分が沈む日にも、あえて華やかな服を選んでみるのもいい。</p>
     <ul>
-      <li>カトレアは一年を通して大輪で華やかな花を咲かせる、12月13日の誕生花</li>
-      <li>花言葉は「優雅な女性」、豪華で気品ある花姿に由来する</li>
-      <li>大輪で華やかな花を咲かせる、蘭の女王と称される存在感</li>
-      <li>明るい室内を好み、風通しのよい環境で管理するとよく育ちます</li>
+      <li>カトレアは、ラン科の着生植物で、一年を通して大輪で華やかな花を咲かせる、12月13日の誕生花</li>
+      <li>花言葉は「優雅な女性」。季節に左右されない凛とした佇まいに由来すると言われる</li>
+      <li>木や岩に根を張って育つ、着生植物という独特な生態を持つ</li>
+      <li>何色にも染まらない、その人らしい佇まいに惹かれる</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-13'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1213'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-13');
+echo autoLink($html, 'birthflower-dec-1213');
 ?>

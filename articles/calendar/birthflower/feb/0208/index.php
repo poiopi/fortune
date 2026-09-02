@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0208/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月8日の誕生花ハナシノブの花言葉・特徴・魅力をわかりやすく解説。「野生美」を象徴する初夏に咲く花の意味を紹介します。">
+  <meta name="description" content="2月8日の誕生花ハナシノブの花言葉・特徴・魅力をわかりやすく解説。「野生美」を象徴する、九州の山にだけ咲く青紫の花の意味を紹介します。">
   <title>2月8日の誕生花はハナシノブ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハナシノブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に、青紫色の花を咲かせます。すらりと伸びた茎に、涼しげな花を咲かせる多年草です。"}},
-      {"@type":"Question","name":"ハナシノブの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「野生美」という花言葉は、自然の中でのびのびと咲くその素朴で力強い花姿に由来するとされています。"}},
-      {"@type":"Question","name":"ハナシノブはどこに自生していますか？","acceptedAnswer":{"@type":"Answer","text":"日本では一部の山地や高原などに自生が見られる、青紫色の花を咲かせる希少な多年草です。"}}
+      {"@type":"Question","name":"ハナシノブはどこでも見られる花ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、日本では九州の一部の山地草原にのみ自生する希少な花です。絶滅が危惧されており、野草園などで保護・栽培されています。"}},
+      {"@type":"Question","name":"ハナシノブの花言葉「野生美」の由来は？","acceptedAnswer":{"@type":"Answer","text":"人の手が入りにくい自然の中で、のびのびと咲く飾らない姿に由来するといわれています。洗練とは違う、素朴で力強い美しさを表す言葉です。"}},
+      {"@type":"Question","name":"ハナシノブを見に行くにはどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"自生地は限られているため、保護のために公開されている野草園や植物園などで観察するのがおすすめです。訪れる際は採取をせず、そっと見守りましょう。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 8 · 誕生花</span>
     <h1>2月8日の誕生花はハナシノブ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハナシノブは、ハナシノブ科の多年草で、初夏に青紫色の花を咲かせる2月8日の誕生花です。花言葉は「野生美」。自然の中でのびやかに咲く花です。</p>
+    <p class="art-lead">2月8日に割り当てられているのは、九州の限られた山地にだけひっそりと咲く、青紫色のハナシノブです。まだ寒さの残るこの時期に、遠い初夏の野の姿へ思いを馳せてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハナシノブとは</a></li>
-      <li><a href="#meaning">ハナシノブが象徴する意味</a></li>
-      <li><a href="#charm">ハナシノブの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">九州の山にだけ咲く、ハナシノブの青紫色</a></li>
+      <li><a href="#story">2月8日とハナシノブの青紫が重なるとき</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハナシノブから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハナシノブとは</h2>
-    <p>ハナシノブは、ハナシノブ科の多年草で、2月8日の誕生花として知られています。初夏になると、すらりと伸びた茎の先に青紫色の涼しげな花を咲かせる、素朴で野性味のある花です。</p>
-  </section>
+    <h2>九州の山にだけ咲く、ハナシノブの青紫色</h2>
+    <p>ハナシノブは、ハナシノブ科の多年草です。初夏になると、すらりと伸びた茎の先に青紫色の涼しげな花を咲かせますが、その姿を見られる場所は多くありません。日本では九州の限られた山地草原にのみ自生し、現在は絶滅が危惧される希少な花として、保護のため野草園などで大切に育てられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハナシノブが象徴する意味</h2>
-    <p>ハナシノブの花言葉は「野生美」です。人の手が入りにくい自然の中でのびのびと咲くその姿が、飾らない力強い美しさを思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハナシノブの魅力</h2>
-    <p>ハナシノブの魅力は、涼しげな青紫色の花と、自然のままの素朴な佇まいにあります。派手さはなくとも、見る人の心を落ち着かせる清涼感があり、初夏の庭にすっと馴染む花です。2月8日生まれの方はもちろん、自然体の魅力を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハナシノブは、日当たりと水はけの良い場所を好み、夏の乾燥や強い直射日光を避けて育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月8日生まれの方はもちろん、飾らない魅力を伝えたい贈り物としてもハナシノブは意味のある花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナシノブはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に、青紫色の花を咲かせます。すらりと伸びた茎に、涼しげな花を咲かせる多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナシノブの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「野生美」という花言葉は、自然の中でのびのびと咲くその素朴で力強い花姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナシノブはどこに自生していますか？</div>
-        <div class="faq-a">日本では一部の山地や高原などに自生が見られる、青紫色の花を咲かせる希少な多年草です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ハナシノブはどこでも見られる花ですか？</div>
+        <div class="faq-a">いいえ、日本では九州の一部の山地草原にのみ自生する希少な花です。絶滅が危惧されており、野草園などで保護・栽培されています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月8日とハナシノブの青紫が重なるとき</h2>
+    <p>誰にも踏み荒らされない山あいの草原で、他の何色にも染まらずに咲く青紫色。ハナシノブのその色は、人の手が入りにくい自然の中だからこそ保たれてきた、静かな野性味を感じさせます。飾り立てることのない、ありのままの色合いです。派手さで人目を引くのではなく、そこにひっそりとあり続けることで存在感を放つ花だといえるでしょう。野草園で守られながら咲き続けるその青紫は、失われかけた景色を今に伝える色でもあります。この飾らない色合いと、自生地でのびのびと育つ姿から、ハナシノブには「野生美」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナシノブの花言葉「野生美」の由来は？</div>
+        <div class="faq-a">人の手が入りにくい自然の中で、のびのびと咲く飾らない姿に由来するといわれています。洗練とは違う、素朴で力強い美しさを表す言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに合わせて自分を整えすぎていないか、今日はふと立ち止まって確かめてみてください。飾らないままのあなたにも、ちゃんと魅力があります。無理に洗練させようとせず、素のままの自分を少しだけ表に出してみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハナシノブから始める小さな体験</h2>
+    <p>自然の中でありのままに咲くハナシノブにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>青紫色の花を野や庭で探してみる</li>
+      <li>飾らないありのままの自分を意識してみる</li>
+      <li>自然の中を少し歩いて風を感じる</li>
+      <li>気取らない服装で一日を過ごしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナシノブを見に行くにはどうすればいいですか？</div>
+        <div class="faq-a">自生地は限られているため、保護のために公開されている野草園や植物園などで観察するのがおすすめです。訪れる際は採取をせず、そっと見守りましょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">気取らない一日を過ごせたなら、今日は月の満ち欠けにも目を向けてみてください。開運カレンダーでは、月齢をはじめとした、その日ごとの運気の移り変わりを確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月8日、九州の山にだけ静かに咲くハナシノブは、飾らないことの強さを教えてくれる花です。</p>
     <ul>
-      <li>ハナシノブは初夏に青紫色の花を咲かせる、2月8日の誕生花</li>
-      <li>花言葉は「野生美」、自然の中で咲く力強い美しさを象徴する</li>
-      <li>涼しげな花色と素朴な佇まいが魅力</li>
-      <li>日当たりと水はけの良い場所で、夏の乾燥を避けて育てたい</li>
+      <li>ハナシノブはハナシノブ科の多年草で、初夏に青紫色の花を咲かせる</li>
+      <li>日本では九州の限られた山地草原にのみ自生する希少な花</li>
+      <li>花言葉は「野生美」。自然のままの飾らない美しさを象徴する</li>
+      <li>絶滅危惧種として、野草園などで保護・栽培されている</li>
     </ul>
   </section>
 

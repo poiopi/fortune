@@ -83,9 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
-  .article-nav-comingsoon{opacity:.55;cursor:default}
-  .article-nav-comingsoon:hover{border-color:var(--border)}
-  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -93,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シネラリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春に色鮮やかな花を株いっぱいに咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"シネラリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"冬から春に色鮮やかな花を株いっぱいに咲かせ続ける賑やかな姿が、いつも陽気な明るさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"シネラリアはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"色鮮やかな花が株いっぱいに咲くため、冬から春の玄関先や室内を彩る鉢植えとして人気です。"}}
+      {"@type":"Question","name":"シネラリアは11月30日の時点でもう花を咲かせていますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、シネラリアの開花期は冬から春にかけてです。11月30日ごろはまだ苗が育っている時期で、たくさんの花が咲きそろうのはもう少し先になります。"}},
+      {"@type":"Question","name":"シネラリアの花言葉「いつも陽気」はどのような由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"様々な色の花が一つの株にまとまって咲く姿が、そのまま明るい陽気さを表していると考えられています。"}}
     ]
   }
   </script>
@@ -132,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 30 · 誕生花</span>
     <h1>11月30日の誕生花はシネラリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シネラリアは、キク科の多年草で、冬から春に色鮮やかな花を株いっぱいに咲かせる、賑やかで華やかな印象を持つ花です。花言葉は「いつも陽気」。賑やかな花です。</p>
+    <p class="art-lead">園芸店の店先に並ぶ苗のラベルには、いくつもの色が重なり合う花の写真が添えられている。シネラリアは冬から春にかけて、一株いっぱいに賑やかな花を咲かせるキク科の多年草で、11月30日はまだ、その花期を待つ時期にあたる。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シネラリアとは</a></li>
-      <li><a href="#meaning">シネラリアが象徴する意味</a></li>
-      <li><a href="#charm">シネラリアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月30日の誕生花として親しまれるシネラリア</a></li>
+      <li><a href="#story">これから咲く色が、賑やかな春を約束している</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シネラリアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シネラリアとは</h2>
-    <p>シネラリアは、キク科の多年草で、11月30日の誕生花として知られています。冬から春に色鮮やかな花を株いっぱいに咲かせる、賑やかで華やかな印象を持つ花です。</p>
-  </section>
+    <h2>11月30日の誕生花として親しまれるシネラリア</h2>
+    <p>シネラリアは、キク科の多年草として知られる、11月30日の誕生花です。冬から春にかけて、色鮮やかな花を一株にたくさん咲かせ、賑やかで華やかな印象を与えることで親しまれています。花言葉は「いつも陽気」。11月30日の時点では、まだ苗や蕾の状態で、花そのものはこれから先の季節に見頃を迎えます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シネラリアが象徴する意味</h2>
-    <p>シネラリアの花言葉は「いつも陽気」です。冬から春に色鮮やかな花を株いっぱいに咲かせ続ける賑やかな姿が、いつも陽気な明るさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シネラリアの魅力</h2>
-    <p>シネラリアの魅力は、株いっぱいに咲きそろう色鮮やかな花が生む賑やかさと、寒い季節を明るく彩る華やかさにあります。11月30日生まれの方はもちろん、いつも陽気な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シネラリアは日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月30日生まれの方はもちろん、いつも陽気な想いを伝えたい贈り物としてもシネラリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シネラリアはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春に色鮮やかな花を株いっぱいに咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シネラリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">冬から春に色鮮やかな花を株いっぱいに咲かせ続ける賑やかな姿が、いつも陽気な明るさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シネラリアはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">色鮮やかな花が株いっぱいに咲くため、冬から春の玄関先や室内を彩る鉢植えとして人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シネラリアは11月30日の時点でもう花を咲かせていますか？</div>
+        <div class="faq-a">いいえ、シネラリアの開花期は冬から春にかけてです。11月30日ごろはまだ苗が育っている時期で、たくさんの花が咲きそろうのはもう少し先になります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>これから咲く色が、賑やかな春を約束している</h2>
+    <p>赤、ピンク、紫、白——シネラリアの花は、一株の中に何色もの花をひしめかせるように咲かせることで知られている。まだ蕾も固い11月30日の今は、鉢の中で静かに準備を進めている時期だが、やがて株全体に広がるその色の数々は、見る人の心を華やかに賑わせる。キク科の多年草であるこの花は、一輪ずつの控えめさより、群れて咲く賑やかさを持ち味とする植物だ。「いつも陽気」という花言葉には、この一株で何色もの色が肩を並べて咲きそろう賑やかさが重なっているのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シネラリアの花言葉「いつも陽気」はどのような由来がありますか？</div>
+        <div class="faq-a">様々な色の花が一つの株にまとまって咲く姿が、そのまま明るい陽気さを表していると考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>元気でいることに、理由はいらない。ただ、そこにいるだけで場が明るくなる人もいる。今日はそんな存在でいられたら、それでいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シネラリアから始める小さな体験</h2>
+    <p>これから咲く色を楽しみに待つように、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>色とりどりの花が集まって咲く様子をじっくり眺めてみる</li>
+      <li>身の回りを明るい色で彩ってみる</li>
+      <li>誰かに元気な挨拶を一つ、投げかけてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日の運勢をもっと深く知りたいなら、開運カレンダーで九星もあわせて確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>花はまだ先でも、シネラリアという名前を知っておくだけで、これからの季節が少し楽しみになる。</p>
     <ul>
-      <li>シネラリアは冬から春に色鮮やかな花を株いっぱいに咲かせる、11月30日の誕生花</li>
-      <li>花言葉は「いつも陽気」、賑やかに咲き続ける姿に由来する</li>
-      <li>寒い季節を明るく彩る華やかさが魅力</li>
-      <li>日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>シネラリアは、キク科の多年草で、冬から春にかけて賑やかな彩りの花を咲かせる、11月30日の誕生花</li>
+      <li>花言葉は「いつも陽気」。一株にたくさんの色が寄り添って咲く華やかさに由来すると言われる</li>
+      <li>開花期は冬から春で、11月30日の時点ではまだ花が咲いていないことが多い点に注意</li>
+      <li>どんな日も明るい気持ちを持ち続けたい人に、寄り添ってくれる花です</li>
     </ul>
   </section>
 

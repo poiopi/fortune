@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ノボタンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に紫色の花を咲かせます。ノボタン科の常緑低木です。"}},
-      {"@type":"Question","name":"ノボタンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"紫色の花が自然のままの姿で咲く素朴な佇まいが、飾らないナチュラルさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ノボタンはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"紫色の素朴な花姿を活かして、ナチュラルテイストの庭やベランダに飾るのがおすすめです。"}}
+      {"@type":"Question","name":"ノボタンは一年を通してどんな姿をしていますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて紫色の花を咲かせ、素朴な花びらの質感が印象的な常緑低木です。"}},
+      {"@type":"Question","name":"ノボタンはなぜ「ナチュラル」という花言葉を持つのですか？","acceptedAnswer":{"@type":"Answer","text":"紫色の花が自然のままの姿で咲く、飾らない素朴な佇まいに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 20 · 誕生花</span>
     <h1>10月20日の誕生花はノボタン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ノボタンは、ノボタン科の常緑低木で、夏から秋に紫色の花を咲かせる、素朴でナチュラルな印象を持つ花です。花言葉は「ナチュラル」。素朴でナチュラルな花です。</p>
+    <p class="art-lead">夏の終わりから秋にかけて、紫色の花が静かに存在感を放つ季節がある。10月20日の誕生花ノボタンは、そんな移ろいの中でひっそりと花を開く。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ノボタンとは</a></li>
-      <li><a href="#meaning">ノボタンが象徴する意味</a></li>
-      <li><a href="#charm">ノボタンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月20日の誕生花として親しまれるノボタン</a></li>
+      <li><a href="#story">紫色の花が保ち続ける、飾らない自然体の美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ノボタンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ノボタンとは</h2>
-    <p>ノボタンは、ノボタン科の常緑低木で、10月20日の誕生花として知られています。夏から秋に紫色の花を咲かせる、素朴でナチュラルな印象を持つ花です。</p>
-  </section>
+    <h2>10月20日の誕生花として親しまれるノボタン</h2>
+    <p>ノボタンは、ノボタン科の常緑低木。10月20日の誕生花として、この時期に親しまれている。夏から秋にかけて紫色の花を咲かせ、一年を通して緑の葉を絶やさない生命力の強さも特徴の一つだ。派手な装飾のない、素朴な花びらの質感がかえって印象に残る花でもある。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ノボタンが象徴する意味</h2>
-    <p>ノボタンの花言葉は「ナチュラル」です。紫色の花が自然のままの姿で咲く素朴な佇まいが、飾らないナチュラルさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ノボタンの魅力</h2>
-    <p>ノボタンの魅力は、紫色の花が持つ素朴でナチュラルな美しさと、紫色の花びらが持つ柔らかな風合いにあります。10月20日生まれの方はもちろん、飾らない自然な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ノボタンは日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月20日生まれの方はもちろん、飾らない自然な想いを伝えたい贈り物としてもノボタンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノボタンはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に紫色の花を咲かせます。ノボタン科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノボタンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">紫色の花が自然のままの姿で咲く素朴な佇まいが、飾らないナチュラルさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ノボタンはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">紫色の素朴な花姿を活かして、ナチュラルテイストの庭やベランダに飾るのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ノボタンは一年を通してどんな姿をしていますか？</div>
+        <div class="faq-a">夏から秋にかけて紫色の花を咲かせ、素朴な花びらの質感が印象的な常緑低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫色の花が保ち続ける、飾らない自然体の美しさ</h2>
+    <p>夏の盛りが過ぎ、少しずつ空気が涼しくなる頃、ノボタンの紫色の花は変わらず花を開き続けている。特別に手をかけているわけではないのに、自然のままの姿で花を開き続けるその様子は、飾り立てることのない強さを感じさせる。作り込まれていない、自然のままの花姿が、花言葉「ナチュラル」の由来だと考えられている。季節が移ろっても変わらないその佇まいは、気取らず過ごすことの心地よさを教えてくれる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ノボタンはなぜ「ナチュラル」という花言葉を持つのですか？</div>
+        <div class="faq-a">紫色の花が自然のままの姿で咲く、飾らない素朴な佇まいに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>常緑の葉の中で気負わず自然に花を開くノボタンのように、飾らないありのままの自分で今日を過ごしてみる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ノボタンから始める小さな体験</h2>
+    <p>自然のままの姿で紫色の花を咲かせるノボタンにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の花をじっくり観察してみる</li>
+      <li>気取らない自然体の服装や振る舞いを試してみる</li>
+      <li>一年を通して緑を保つ植物の力強さについて考えてみる</li>
+    </ul>
+
+    <p class="cta-lead">飾らない自分で過ごしたい日は、今日のおすすめの行動も確認してみませんか。開運カレンダーでは、毎日のおすすめ行動を発信しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>特別な手をかけずとも自然に咲き続ける紫色の花が、気取らない心地よさを運んでくる。</p>
     <ul>
-      <li>ノボタンは紫色の花を咲かせる、10月20日の誕生花</li>
-      <li>花言葉は「ナチュラル」、自然のままの素朴な花姿に由来する</li>
-      <li>紫色の花びらが持つ柔らかな風合いが魅力</li>
-      <li>日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます</li>
+      <li>ノボタンは夏から秋に紫色の花を咲かせる、ノボタン科の常緑低木で、10月20日の誕生花</li>
+      <li>花言葉は「ナチュラル」。自然のままの素朴な花姿に由来すると言われる</li>
+      <li>一年を通して緑の葉を絶やさない力強さを持つ</li>
+      <li>気取らず自然体で過ごしたい日に寄り添う花</li>
     </ul>
   </section>
 

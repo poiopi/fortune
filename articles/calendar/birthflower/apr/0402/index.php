@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0402/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月2日の誕生花デイジーの花言葉・特徴・魅力をわかりやすく解説。「無垢」を象徴する素朴な花の意味を紹介します。">
+  <meta name="description" content="4月2日の誕生花デイジーの花言葉・特徴・魅力をわかりやすく解説。「無垢」を象徴する素朴で可愛らしい花の意味を紹介します。">
   <title>4月2日の誕生花はデイジー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"デイジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春を中心に、白い花びらに黄色い中心を持つ花を咲かせます。キク科の多年草で、丈夫で育てやすい花です。"}},
-      {"@type":"Question","name":"デイジーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「無垢」という花言葉は、飾り気のないシンプルな花姿が、汚れのない純粋な心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"デイジーという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"英語で「day's eye（1日の目）」に由来するとされ、朝に花を開き夕方に閉じる様子を太陽になぞらえたと言われています。"}}
+      {"@type":"Question","name":"デイジーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春を中心に、小さく可愛らしい花を次々と咲かせます。キク科の多年草で、素朴で親しみやすい印象の花です。"}},
+      {"@type":"Question","name":"デイジーの花言葉「無垢」の由来は？","acceptedAnswer":{"@type":"Answer","text":"飾り気のない素朴な花姿で、まっすぐに咲き続ける様子が、着飾らなくても十分に魅力的でいられる素直さを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"デイジーはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"道端や庭先、花壇など身近な場所で見かけることの多い、親しみやすい花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 2 · 誕生花</span>
     <h1>4月2日の誕生花はデイジー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">デイジーは、キク科の多年草で、春を中心に小さく可愛らしい花を咲かせる4月2日の誕生花です。花言葉は「無垢」。素朴で親しみやすい印象の花です。</p>
+    <p class="art-lead">4月2日、新生活の慌ただしさがふと落ち着き始める頃。小さく可愛らしい花を素朴に咲かせるデイジーは、飾らないそのままの自分でいたい気持ちをそっと思い出させてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">デイジーとは</a></li>
-      <li><a href="#meaning">デイジーが象徴する意味</a></li>
-      <li><a href="#charm">デイジーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月2日の誕生花として親しまれるデイジー</a></li>
+      <li><a href="#story">小さな花姿が語る、デイジーの無垢</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、デイジーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>デイジーとは</h2>
-    <p>デイジーは、キク科の多年草で、4月2日の誕生花として知られています。白い花びらに黄色い中心を持つシンプルな花姿で、ヨーロッパでは古くから野に咲く身近な花として親しまれ、日本でも花壇や鉢植えに広く使われています。</p>
-  </section>
+    <h2>4月2日の誕生花として親しまれるデイジー</h2>
+    <p>デイジーは、キク科の多年草です。春を中心に、小さく可愛らしい花を次々と咲かせます。飾り気のない素朴な花姿は、道端や庭先でふと目に留まるような親しみやすさを持ち、世界中で古くから愛されてきました。4月2日の誕生花として、そのまっすぐな佇まいが重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>デイジーが象徴する意味</h2>
-    <p>デイジーの花言葉は「無垢」です。飾り気のないシンプルな花姿と、素朴に咲く様子が、汚れのない純粋な心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>デイジーの魅力</h2>
-    <p>デイジーの魅力は、小さくても存在感のある花姿と、次々に花を咲かせる丈夫さにあります。品種によって一重咲きから八重咲きまであり、寄せ植えのアクセントとしても人気です。4月2日生まれの方はもちろん、素直な気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>デイジーは日当たりの良い場所を好み、花がら摘みをこまめに行うことで長く花を楽しめます。過湿を避け、水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月2日生まれの方はもちろん、素直な気持ちを届けたい贈り物としてもデイジーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">デイジーはいつ頃咲きますか？</div>
-        <div class="faq-a">春を中心に、白い花びらに黄色い中心を持つ花を咲かせます。キク科の多年草で、丈夫で育てやすい花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デイジーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「無垢」という花言葉は、飾り気のないシンプルな花姿が、汚れのない純粋な心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デイジーという名前の由来は何ですか？</div>
-        <div class="faq-a">英語で「day's eye（1日の目）」に由来するとされ、朝に花を開き夕方に閉じる様子を太陽になぞらえたと言われています。</div>
+        <div class="faq-a">春を中心に、小さく可愛らしい花を次々と咲かせます。キク科の多年草で、素朴で親しみやすい印象の花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>小さな花姿が語る、デイジーの無垢</h2>
+    <p>デイジーの花をよく見ると、小さな花びらが一枚一枚まっすぐに開き、中心に向かって規則正しく並んでいることに気づきます。凝った作りではないのに、その素朴な整い方にどこか惹きつけられるのは、飾り立てなくても美しいものがあると教えてくれるからかもしれません。花びらの数を数えてみたり、開ききる前のつぼみの丸みを観察してみたりすると、シンプルな花姿の中にも小さな発見があります。キク科の多年草として、次々と花を咲かせ続ける丈夫さも持ち合わせています。そんな、飾らずにまっすぐ咲く姿から、デイジーには「無垢」という花言葉が贈られているといわれています。この言葉は、汚れのなさというよりも、着飾らなくても十分に魅力的でいられるという素直な強さを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">デイジーの花言葉「無垢」の由来は？</div>
+        <div class="faq-a">飾り気のない素朴な花姿で、まっすぐに咲き続ける様子が、着飾らなくても十分に魅力的でいられる素直さを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>背伸びをして誰かに合わせるよりも、ありのままの自分でいるときのほうが、案外心地よく過ごせるものです。そんな飾らない時間を、今日は少しだけ自分のために用意してみるのもいいかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、デイジーから始める小さな体験</h2>
+    <p>小さく可愛らしい花を次々と咲かせるデイジーにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>小さく可愛らしい花を探して観察してみる</li>
+      <li>飾らない気持ちを一つ、素直に言葉にしてみる</li>
+      <li>素朴なものに目を向けて過ごしてみる</li>
+      <li>春に群れ咲くデイジーを探して、季節の気配を感じてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">デイジーはどんな場所でよく見られますか？</div>
+        <div class="faq-a">道端や庭先、花壇など身近な場所で見かけることの多い、親しみやすい花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">素直な気持ちを大切にしたい今日は、ラッキーナンバーやおすすめの行動も気になるところ。開運カレンダーなら、その日のラッキーナンバーとおすすめの行動をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月2日、飾らずにまっすぐ咲くデイジーは、ありのままの自分でいることの心地よさを教えてくれる花です。</p>
     <ul>
-      <li>デイジーは春に白く可愛らしい花を咲かせる、4月2日の誕生花</li>
-      <li>花言葉は「無垢」、飾り気のない花姿に由来する</li>
-      <li>小さくても存在感のある花姿と丈夫さが魅力</li>
-      <li>日当たりの良い場所で、花がら摘みをしながら育てたい</li>
+      <li>デイジーはキク科の多年草で、春を中心に小さく可愛らしい花を次々と咲かせる</li>
+      <li>飾り気のない素朴な花姿が、身近な場所で親しまれている</li>
+      <li>花言葉は「無垢」。着飾らずに咲き続ける姿に由来するといわれる</li>
+      <li>無垢は、飾らなくても十分に魅力的でいられる素直な強さを表す言葉ともいえる</li>
     </ul>
   </section>
 

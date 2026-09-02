@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0721/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月21日の誕生花アサガオの花言葉・特徴・魅力をわかりやすく解説。「淡い恋」を象徴する夏の朝に咲くラッパ状の花の意味を紹介します。">
+  <meta name="description" content="7月21日の誕生花アサガオの花言葉・特徴・魅力をわかりやすく解説。夏の朝に咲いて昼にはしぼむ、ヒルガオ科のつる性一年草を紹介します。">
   <title>7月21日の誕生花はアサガオ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アサガオはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏の朝に咲いて昼にはしぼみます。ヒルガオ科のつる性一年草です。"}},
-      {"@type":"Question","name":"アサガオの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"朝のわずかな時間だけ咲いてしぼんでしまう儚い花の姿が、まだ実らぬ淡い恋心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アサガオはなぜ朝しか咲かないのですか？","acceptedAnswer":{"@type":"Answer","text":"日没後の暗い時間の長さに反応して開花する性質を持ち、夏の短い夜が明けるとともに花開くためとされています。"}}
+      {"@type":"Question","name":"アサガオはいつ頃花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏の朝に咲いて昼にはしぼみます。ヒルガオ科のつる性一年草です。"}},
+      {"@type":"Question","name":"アサガオの花言葉『淡い恋』には、どんな意味が込められていますか？","acceptedAnswer":{"@type":"Answer","text":"朝に大きく開いてもすぐにしぼんでしまう、控えめで儚い咲き方は、芽生えたばかりの淡い気持ちを思わせることから、『淡い恋』という花言葉を生んだのでしょう。"}}
     ]
   }
   </script>
@@ -129,14 +138,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 21 · 誕生花</span>
     <h1>7月21日の誕生花はアサガオ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アサガオは、ヒルガオ科のつる性一年草で、夏の朝になると涼やかなラッパ状の花を咲かせ、昼にはしぼんでしまう儚さが夏の風物詩となっている花です。花言葉は「淡い恋」。夏の朝を涼やかに彩る花です。</p>
+    <p class="art-lead">つるの先で、ラッパのような形をした花が涼しげに開いています。アサガオは、夏の朝のひとときだけ姿を見せる花です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>アサガオ</dd>
     <dt>花言葉</dt><dd>淡い恋</dd>
     <dt>科名</dt><dd>ヒルガオ科</dd>
-    <dt>見頃</dt><dd>夏</dd>
+    <dt>見頃</dt><dd>夏（朝）</dd>
   </dl>
 
   <?php
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アサガオとは</a></li>
-      <li><a href="#meaning">アサガオが象徴する意味</a></li>
-      <li><a href="#charm">アサガオの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月21日の誕生花として親しまれるアサガオ</a></li>
+      <li><a href="#story">夏の朝を涼やかに彩る、アサガオのラッパ形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アサガオから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アサガオとは</h2>
-    <p>アサガオは、ヒルガオ科のつる性一年草で、7月21日の誕生花として知られています。夏の朝になると涼やかなラッパ状の花を咲かせ、昼にはしぼんでしまう儚さが夏の風物詩となっている花です。</p>
-  </section>
+    <h2>7月21日の誕生花として親しまれるアサガオ</h2>
+    <p>アサガオは、ヒルガオ科のつる性一年草です。夏の朝に咲いて昼にはしぼむ、涼やかなラッパ状の花を咲かせます。7月21日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アサガオが象徴する意味</h2>
-    <p>アサガオの花言葉は「淡い恋」です。朝のわずかな時間だけ咲いてしぼんでしまう儚い花の姿が、まだ実らぬ淡い恋心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アサガオの魅力</h2>
-    <p>アサガオの魅力は、夏の早朝、涼やかなラッパ状の花が一斉に咲きそろう爽やかな美しさにあります。夏休みの観察日記でもおなじみの、日本の夏を代表する花です。7月21日生まれの方はもちろん、淡い恋心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アサガオは日当たりを好み、つるを伸ばすため支柱やネットを立てて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月21日生まれの方はもちろん、淡い恋心を伝えたい贈り物としてもアサガオは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アサガオはいつ頃咲きますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アサガオはいつ頃花を咲かせますか？</div>
         <div class="faq-a">夏の朝に咲いて昼にはしぼみます。ヒルガオ科のつる性一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アサガオの花言葉の由来は何ですか？</div>
-        <div class="faq-a">朝のわずかな時間だけ咲いてしぼんでしまう儚い花の姿が、まだ実らぬ淡い恋心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アサガオはなぜ朝しか咲かないのですか？</div>
-        <div class="faq-a">日没後の暗い時間の長さに反応して開花する性質を持ち、夏の短い夜が明けるとともに花開くためとされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏の朝を涼やかに彩る、アサガオのラッパ形</h2>
+    <p>アサガオの花は、つるの先で漏斗のように大きく開き、縁がくるりと外側に反り返るラッパ形をしています。その涼しげな輪郭は、暑さの厳しい夏の朝にひとときの清涼感を運んできますが、日が高くなる頃にはもうしぼんでしまいます。開いてすぐに閉じてしまう、この控えめな咲き方に『淡い恋』という言葉がふさわしいと考える人は多いようです。強く主張しない、芽生えたばかりの気持ちにも、確かな美しさが宿っているのでしょう。ヒルガオ科のつる性一年草として、この花は明日の朝もまた新しい一輪を咲かせます。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アサガオの花言葉『淡い恋』には、どんな意味が込められていますか？</div>
+        <div class="faq-a">朝に大きく開いてもすぐにしぼんでしまう、控えめで儚い咲き方は、芽生えたばかりの淡い気持ちを思わせることから、『淡い恋』という花言葉を生んだのでしょう。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>まだ言葉にできていない気持ちは、無理に急いで形にしなくてもいいのかもしれません。芽生えたばかりの想いには、それにふさわしい時間の流れ方があります。その気持ちをそっとそのままにしておくことも、今の自分に合ったやり方なのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アサガオから始める小さな体験</h2>
+    <p>夏の朝にラッパ形の花を咲かせるアサガオにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>朝のうちにラッパ状の花をじっくり観察してみる</li>
+      <li>芽生えたばかりの気持ちを、そっと大切にしてみる</li>
+      <li>涼やかな朝の空気を感じながら深呼吸してみる</li>
+    </ul>
+
+    <p class="cta-lead">芽生えたばかりの気持ちを大切にしたい今日は、月九星やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、月九星とラッキーカラーを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>朝にしか開かないラッパ形の花は、控えめだからこそ美しい気持ちのあり方を映しているのかもしれない。</p>
     <ul>
-      <li>アサガオは夏の朝に咲いて昼にしぼむ、7月21日の誕生花</li>
-      <li>花言葉は「淡い恋」、わずかな時間だけ咲く儚さに由来する</li>
-      <li>涼やかなラッパ状の花が一斉に咲く美しさが魅力</li>
-      <li>日当たりを好み、支柱やネットが必要</li>
+      <li>アサガオは夏の朝に咲いて昼にはしぼむ、ヒルガオ科のつる性一年草で、7月21日の誕生花</li>
+      <li>花言葉は「淡い恋」。控えめで儚い咲き方が芽生えたばかりの気持ちと重ねられてきたとされる</li>
+      <li>涼やかなラッパ状の花びらが特徴</li>
+      <li>朝のひとときだけの咲き姿が魅力</li>
     </ul>
   </section>
 

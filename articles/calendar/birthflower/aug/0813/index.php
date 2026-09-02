@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0813/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月13日の誕生花ルドベキアの花言葉・特徴・魅力をわかりやすく解説。「正義」を象徴する力強い花の意味を紹介します。">
+  <meta name="description" content="8月13日の誕生花ルドベキアの花言葉・特徴・魅力をわかりやすく解説。黄色い花びらと黒っぽい中心がくっきりと対比する花の意味を紹介します。">
   <title>8月13日の誕生花はルドベキア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ルドベキアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に黄色い花びらと黒っぽい中心を持つ花を咲かせます。キク科の植物です。"}},
-      {"@type":"Question","name":"ルドベキアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"黒く引き締まった中心を貫くように放射状に伸びる黄色い花びらの凛とした姿が、揺るがない正義感を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ルドベキアは暑さに強い花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。真夏の強い日差しの中でも花を咲かせ続ける、暑さに強い花として知られています。"}}
+      {"@type":"Question","name":"ルドベキアはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"黄色い花びらと黒っぽい中心を持つ花を咲かせます。夏に見頃を迎える、キク科の植物です。"}},
+      {"@type":"Question","name":"ルドベキアの花言葉『正義』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"黒く引き締まった中心を貫くように放射状に伸びる黄色い花びらの凛とした姿が、揺るがない正義感を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 13 · 誕生花</span>
     <h1>8月13日の誕生花はルドベキア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ルドベキアは、キク科の植物で、夏になると黄色い花びらと黒っぽい中心を持つ花を咲かせ、力強く明るい印象を与える花です。花言葉は「正義」。力強く明るい花です。</p>
+    <p class="art-lead">黄色と黒、はっきりとした色の対比が視線を引きつける。ルドベキアは、その迷いのないコントラストで8月13日の夏を彩る。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ルドベキアとは</a></li>
-      <li><a href="#meaning">ルドベキアが象徴する意味</a></li>
-      <li><a href="#charm">ルドベキアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月13日の誕生花として親しまれるルドベキア</a></li>
+      <li><a href="#story">黄と黒のコントラストが伝える、まっすぐな強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ルドベキアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ルドベキアとは</h2>
-    <p>ルドベキアは、キク科の植物で、8月13日の誕生花として知られています。夏になると黄色い花びらと黒っぽい中心を持つ花を咲かせ、力強く明るい印象を与える花です。</p>
-  </section>
+    <h2>8月13日の誕生花として親しまれるルドベキア</h2>
+    <p>ルドベキアは、キク科の植物です。夏になると、黄色い花びらと黒っぽい中心を持つ花を咲かせます。中心の濃い色を囲むように黄色い花びらが放射状に広がる姿は、力強く明るい夏の印象を体現しています。この花が、8月13日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ルドベキアが象徴する意味</h2>
-    <p>ルドベキアの花言葉は「正義」です。黒く引き締まった中心を貫くように放射状に伸びる黄色い花びらの凛とした姿が、揺るがない正義感を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ルドベキアの魅力</h2>
-    <p>ルドベキアの魅力は、鮮やかな黄色い花びらと黒っぽい中心が織りなすコントラストと、暑さに負けず咲き続ける丈夫さにあります。夏の花壇を力強く彩る花として親しまれています。8月13日生まれの方はもちろん、正義感あふれる想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ルドベキアは日当たりを好み、暑さや乾燥に強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月13日生まれの方はもちろん、正義感あふれる想いを伝えたい贈り物としてもルドベキアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルドベキアはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に黄色い花びらと黒っぽい中心を持つ花を咲かせます。キク科の植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルドベキアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">黒く引き締まった中心を貫くように放射状に伸びる黄色い花びらの凛とした姿が、揺るがない正義感を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルドベキアは暑さに強い花ですか？</div>
-        <div class="faq-a">はい。真夏の強い日差しの中でも花を咲かせ続ける、暑さに強い花として知られています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ルドベキアはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">黄色い花びらと黒っぽい中心を持つ花を咲かせます。夏に見頃を迎える、キク科の植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>黄と黒のコントラストが伝える、まっすぐな強さ</h2>
+    <p>ルドベキアの花を見ると、まず目に入るのは中心の黒っぽい部分と、それを囲む黄色い花びらの、迷いのないコントラストだ。曖昧な色合いではなく、はっきりと二つの色が向き合うことで、この花は遠くからでもすぐにそれとわかる強さを持つ。花びらは中心から放射状に整然と広がり、その規則正しさも黄と黒の対比をより際立たせている。派手さの中に、どこか筋の通った印象を感じさせるのは、この色の組み合わせがあるからだろう。花言葉「正義」は、この曖昧さのないくっきりとした色のコントラストから生まれたと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ルドベキアの花言葉『正義』にはどんな由来がありますか？</div>
+        <div class="faq-a">黒く引き締まった中心を貫くように放射状に伸びる黄色い花びらの凛とした姿が、揺るがない正義感を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>はっきりとした色には、はっきりとした気持ちが宿るものらしい。自分の中にある「これだけは譲れない」を、静かに確かめてみる。はっきりさせることも、時には強さになる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ルドベキアから始める小さな体験</h2>
+    <p>黄色い花びらと黒い中心をくっきりと際立たせて咲くルドベキアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>黄色と黒のコントラストをじっくり観察してみる</li>
+      <li>自分なりの「正しさ」について静かに考えてみる</li>
+      <li>力強く一日を過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">まっすぐな一日を過ごしたい方は、今日のおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、おすすめの行動と六曜を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>曖昧さを残さない黄と黒のコントラストが、ルドベキアのまっすぐな強さを物語っている。</p>
     <ul>
-      <li>ルドベキアは夏に黄色い花を咲かせる、8月13日の誕生花</li>
-      <li>花言葉は「正義」、凛とした花姿に由来する</li>
-      <li>黄色い花びらと黒い中心のコントラストが魅力</li>
-      <li>日当たりを好み、暑さや乾燥に強い</li>
+      <li>ルドベキアは夏に黄色い花びらと黒っぽい中心を持つ花を咲かせる、キク科の植物で、8月13日の誕生花</li>
+      <li>花言葉は「正義」。くっきりとした色のコントラストに由来するとされる</li>
+      <li>放射状に広がる整然とした花びらの並びが特徴</li>
+      <li>力強く明るい夏の印象を体現するのが魅力</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0813');
 ?>
+</content>

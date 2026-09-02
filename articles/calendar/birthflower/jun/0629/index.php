@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0629/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月29日の誕生花ペラルゴニウムの花言葉・特徴・魅力をわかりやすく解説。「あでやか」を象徴する華やかな花の意味を紹介します。">
+  <meta name="description" content="6月29日の誕生花ペラルゴニウムの花言葉・特徴・魅力をわかりやすく解説。南アフリカ生まれで、初夏に華やかな花を次々と咲かせるフウロソウ科の花を紹介します。">
   <title>6月29日の誕生花はペラルゴニウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ペラルゴニウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に華やかな花を咲かせます。フウロソウ科の多年草です。"}},
-      {"@type":"Question","name":"ペラルゴニウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「あでやか」という花言葉は、幾重にも重なる花びらが作り出す華やかで色鮮やかな花姿に由来すると言われています。"}},
-      {"@type":"Question","name":"ペラルゴニウムとゼラニウムは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"ペラルゴニウムはゼラニウムの仲間に分類される植物で、広い意味でゼラニウムと呼ばれることもあります。"}}
+      {"@type":"Question","name":"ペラルゴニウムはどんな科の植物ですか？","acceptedAnswer":{"@type":"Answer","text":"フウロソウ科の多年草です。南アフリカを原産とし、初夏になると華やかな花を次々に咲かせます。"}},
+      {"@type":"Question","name":"ペラルゴニウムの花言葉「あでやか」はどう受け止めるとよいですか？","acceptedAnswer":{"@type":"Answer","text":"赤やピンクなど華やかな花色を次々と咲かせる姿から、「あでやか」という花言葉で呼ばれるようになったといわれています。人目を引く華やかさだけでなく、初夏の庭にいきいきとした彩りを添える存在として親しまれています。"}},
+      {"@type":"Question","name":"ペラルゴニウムの和名にはどんな意味がありますか？","acceptedAnswer":{"@type":"Answer","text":"和名は「夏咲天竺葵」です。初夏に花を咲かせる性質にちなんだ名前だといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 29 · 誕生花</span>
     <h1>6月29日の誕生花はペラルゴニウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ペラルゴニウムは、フウロソウ科の多年草で、初夏に華やかな花を咲かせる6月29日の誕生花です。花言葉は「あでやか」。色鮮やかで存在感のある花です。</p>
+    <p class="art-lead">庭先やベランダの鉢に、赤やピンクの花房がいくつも顔をのぞかせる季節になりました。ペラルゴニウムは、南アフリカ生まれで、初夏になると華やかな花を次々と咲かせる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ペラルゴニウムとは</a></li>
-      <li><a href="#meaning">ペラルゴニウムが象徴する意味</a></li>
-      <li><a href="#charm">ペラルゴニウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月29日の誕生花として親しまれるペラルゴニウム</a></li>
+      <li><a href="#story">初夏に咲き誇る、ペラルゴニウムの晴れやかな装い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ペラルゴニウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ペラルゴニウムとは</h2>
-    <p>ペラルゴニウムは、フウロソウ科の多年草で、6月29日の誕生花として知られています。初夏になると華やかな花を咲かせ、その名の通りあでやかな存在感を放つ花です。</p>
-  </section>
+    <h2>6月29日の誕生花として親しまれるペラルゴニウム</h2>
+    <p>ペラルゴニウムは、フウロソウ科の多年草です。初夏になると、赤やピンク、白など多彩な色の花を次々に咲かせます。和名は「夏咲天竺葵」といい、南アフリカを原産とする花です。この華やかな花色の豊かさから、6月29日の誕生花に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ペラルゴニウムが象徴する意味</h2>
-    <p>ペラルゴニウムの花言葉は「あでやか」です。幾重にも重なる花びらが作り出す華やかで色鮮やかな花姿が、その花言葉の由来と言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ペラルゴニウムの魅力</h2>
-    <p>ペラルゴニウムの魅力は、大きく華やかに咲く花と、赤やピンク、白など豊富な花色のバリエーションにあります。ゼラニウムの仲間としても知られ、鉢植えで長く花を楽しめる花です。6月29日生まれの方はもちろん、華やかな印象を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ペラルゴニウムは日当たりと風通しの良い場所を好み、過湿を避けて育てると花を長く楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月29日生まれの方はもちろん、華やかな印象を届けたい贈り物としてもペラルゴニウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペラルゴニウムはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に華やかな花を咲かせます。フウロソウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペラルゴニウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「あでやか」という花言葉は、幾重にも重なる花びらが作り出す華やかで色鮮やかな花姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ペラルゴニウムとゼラニウムは同じ花ですか？</div>
-        <div class="faq-a">ペラルゴニウムはゼラニウムの仲間に分類される植物で、広い意味でゼラニウムと呼ばれることもあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ペラルゴニウムはどんな科の植物ですか？</div>
+        <div class="faq-a">フウロソウ科の多年草です。南アフリカを原産とし、初夏になると華やかな花を次々に咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>初夏に咲き誇る、ペラルゴニウムの晴れやかな装い</h2>
+    <p>庭先やベランダの鉢に、赤やピンクの花房がいくつも顔をのぞかせる季節になりました。ペラルゴニウムは、初夏の訪れとともに次々と蕾をほどき、色とりどりの花を咲かせていきます。一輪だけでも十分に華やかですが、株いっぱいに花をつけたその姿は、初夏の光を受けていっそう晴れやかに映ります。南アフリカで生まれたこの花は、日本の庭先でも臆することなく色を主張し、周囲の緑を明るく引き立てます。数ある花色の中からどれを選んでも、その場をぱっと明るく染めてしまうような存在感を放つことから、ペラルゴニウムには「あでやか」という花言葉がつけられているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ペラルゴニウムの花言葉「あでやか」はどう受け止めるとよいですか？</div>
+        <div class="faq-a">赤やピンクなど華やかな花色を次々と咲かせる姿から、「あでやか」という花言葉で呼ばれるようになったといわれています。人目を引く華やかさだけでなく、初夏の庭にいきいきとした彩りを添える存在として親しまれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かの視線を意識しすぎると、かえって自分らしさを見失ってしまうことがあります。ペラルゴニウムが物怖じせずに次々と花を咲かせるように、今日はいつもより少しだけ自分の好きな色や形を選んでみると、心まで晴れやかになるかもしれません。装いや持ち物のちょっとした選択が、一日の気分を変えるきっかけになりそうです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ペラルゴニウムから始める小さな体験</h2>
+    <p>華やかに咲くペラルゴニウムを思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>華やかな花を探して写真に撮ってみる</li>
+      <li>和名「夏咲天竺葵」の由来について調べてみる</li>
+      <li>多彩な花色を見比べてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ペラルゴニウムの和名にはどんな意味がありますか？</div>
+        <div class="faq-a">和名は「夏咲天竺葵」です。初夏に花を咲かせる性質にちなんだ名前だといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">はなやかな一歩を踏み出したい今日は、ラッキーナンバーや月齢・月相もあわせて確認してみませんか。開運カレンダーでは、今日のラッキーナンバーと月の満ち欠けを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤やピンク、白と、色とりどりの花房を次々に咲かせるペラルゴニウムの姿には、遠慮のない華やかさそのものが宿っています。</p>
     <ul>
-      <li>ペラルゴニウムは初夏に華やかな花を咲かせる、6月29日の誕生花</li>
-      <li>花言葉は「あでやか」、華やかな花姿に由来する</li>
-      <li>豊富な花色のバリエーションが魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>ペラルゴニウムはフウロソウ科の多年草で、初夏に華やかな花を咲かせる、6月29日の誕生花</li>
+      <li>花言葉は「あでやか」。色とりどりの花を次々と咲かせる姿に由来するとされる</li>
+      <li>和名は「夏咲天竺葵」、南アフリカを原産とする</li>
+      <li>花色は赤やピンク、白など多彩</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0601/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月1日の誕生花クレマチスの花言葉・特徴・魅力をわかりやすく解説。「策略」を象徴するつる性の大輪の花の意味を紹介します。">
+  <meta name="description" content="6月1日の誕生花クレマチスの花言葉・特徴・魅力をわかりやすく解説。つるを伸ばしながら大輪の花を咲かせる、キンポウゲ科「策略」の花を紹介します。">
   <title>6月1日の誕生花はクレマチス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クレマチスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏に大輪の花を咲かせます。キンポウゲ科のつる性多年草で、つる性植物の女王とも称される花です。"}},
-      {"@type":"Question","name":"クレマチスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「策略」という花言葉は、つるを巧みに絡みつかせながら伸びる生育の仕方が、知恵を巡らせる様子を連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"クレマチスが「つる性植物の女王」と呼ばれるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"大輪で優美な花を咲かせながら、つるを伸ばして力強く生育する姿がその名にふさわしいとされているためです。"}}
+      {"@type":"Question","name":"クレマチスはどのように育つ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"他の植物やフェンスに巻きつきながらつるを伸ばし、春から初夏にかけて大輪の花を咲かせる、キンポウゲ科のつる性多年草です。"}},
+      {"@type":"Question","name":"クレマチスの花言葉『策略』の由来は？","acceptedAnswer":{"@type":"Answer","text":"つるを巧みに絡みつかせながら伸びていく生育の仕方が、目的に向かって知恵を巡らせる様子を連想させることに由来すると言われています。"}},
+      {"@type":"Question","name":"クレマチスは庭のどんな場所で楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"アーチやフェンスに這わせて庭を彩ったり、切り花として飾ったりと、さまざまな場所で楽しめる花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 1 · 誕生花</span>
     <h1>6月1日の誕生花はクレマチス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クレマチスは、キンポウゲ科のつる性多年草で、春から初夏に大輪の花を咲かせる6月1日の誕生花です。花言葉は「策略」。つる性植物の女王と称される優美な花です。</p>
+    <p class="art-lead">六月に入ると、庭のフェンスや支柱に絡みついたつるの先で、大輪の花がひらき始めます。クレマチスは、初夏の光を受けてつるを大きく伸ばす、キンポウゲ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クレマチスとは</a></li>
-      <li><a href="#meaning">クレマチスが象徴する意味</a></li>
-      <li><a href="#charm">クレマチスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月1日の誕生花として親しまれるクレマチス</a></li>
+      <li><a href="#story">つるが伸びるほどに際立つ、初夏のクレマチス</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クレマチスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クレマチスとは</h2>
-    <p>クレマチスは、キンポウゲ科のつる性多年草で、6月1日の誕生花として知られています。春から初夏になると大輪の花を咲かせ、つるを伸ばしながら巻きついて成長する姿から「つる性植物の女王」とも称される、優美な花です。</p>
-  </section>
+    <h2>6月1日の誕生花として親しまれるクレマチス</h2>
+    <p>クレマチスは、キンポウゲ科のつる性多年草です。他の植物やフェンスに巻きつきながらつるを伸ばし、春から初夏にかけて大輪の花を咲かせます。その堂々とした咲きぶりから「つる性植物の女王」とも称され、6月1日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クレマチスが象徴する意味</h2>
-    <p>クレマチスの花言葉は「策略」です。つるを他の植物やフェンスに巧みに絡みつかせながら伸びていく生育の仕方が、目的に向かって知恵を巡らせる様子を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クレマチスの魅力</h2>
-    <p>クレマチスの魅力は、大輪ながら繊細な花びらと、つる性ならではのしなやかな伸び方にあります。アーチやフェンスに這わせれば庭を華やかに彩り、切り花としても存在感を放ちます。6月1日生まれの方はもちろん、優美な印象を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クレマチスは日当たりと風通しの良い場所を好み、根元を涼しく保つよう株元を覆うと元気に育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月1日生まれの方はもちろん、優美な印象を届けたい贈り物としてもクレマチスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クレマチスはいつ頃咲きますか？</div>
-        <div class="faq-a">春から初夏に大輪の花を咲かせます。キンポウゲ科のつる性多年草で、つる性植物の女王とも称される花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クレマチスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「策略」という花言葉は、つるを巧みに絡みつかせながら伸びる生育の仕方が、知恵を巡らせる様子を連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クレマチスが「つる性植物の女王」と呼ばれるのはなぜですか？</div>
-        <div class="faq-a">大輪で優美な花を咲かせながら、つるを伸ばして力強く生育する姿がその名にふさわしいとされているためです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クレマチスはどのように育つ植物ですか？</div>
+        <div class="faq-a">他の植物やフェンスに巻きつきながらつるを伸ばし、春から初夏にかけて大輪の花を咲かせる、キンポウゲ科のつる性多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>つるが伸びるほどに際立つ、初夏のクレマチス</h2>
+    <p>六月に差し込む光の中で、クレマチスのつるは日ごとに伸び、蕾をふくらませていきます。他の花が咲き急ぐ気配を見せる季節に、クレマチスは支えになるものを探しながら、じっくりと歩みを進める植物です。そうしてたどり着いた先で開くのが、優美な大輪の花。花びらの一枚一枚が大きく開き切ったときの姿は、静かな迫力すら感じさせます。つるを巧みに絡みつかせながら伸びていくこの生育の仕方が、目的に向かって知恵を巡らせる様子を連想させることから、クレマチスには「策略」という花言葉が贈られていると言われています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クレマチスの花言葉「策略」の由来は？</div>
+        <div class="faq-a">つるを巧みに絡みつかせながら伸びていく生育の仕方が、目的に向かって知恵を巡らせる様子を連想させることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>つるを支えに絡めながら、時間をかけて大輪へとたどり着くクレマチス。堂々とした美しさに憧れる気持ちは、誰の胸にも少なからずあるものです。急がず、けれど歩みを止めない。そんな在り方の手本のような花です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クレマチスから始める小さな体験</h2>
+    <p>つるを伸ばして大輪を咲かせるクレマチスにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>大輪の花を見つけてじっくり観察してみる</li>
+      <li>つるを伸ばすように、新しい方向へ一歩踏み出してみる</li>
+      <li>優美だと感じるものを一つ、身の回りに置いてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クレマチスは庭のどんな場所で楽しめますか？</div>
+        <div class="faq-a">アーチやフェンスに這わせて庭を彩ったり、切り花として飾ったりと、さまざまな場所で楽しめる花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">遠回りに見えても着実な一歩を選びたい今日は、六曜やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、その日の六曜と今日のラッキーカラーをまとめて紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>支えを見つけながら大輪を咲かせるクレマチスの姿は、遠回りに見える道のりの先にある実りを想像させます。</p>
     <ul>
-      <li>クレマチスは春から初夏に大輪の花を咲かせる、6月1日の誕生花</li>
-      <li>花言葉は「策略」、つるを絡みつかせながら伸びる生育に由来する</li>
-      <li>つる性植物の女王と称される優美な姿が魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>クレマチスはキンポウゲ科のつる性多年草で、春から初夏に大輪を咲かせる、6月1日の誕生花</li>
+      <li>花言葉は「策略」。つるが巧みに伸びる生育に由来するとされる</li>
+      <li>つる性植物の女王と称される優美な佇まいが魅力</li>
+      <li>アーチやフェンス、切り花などさまざまな場所で楽しめる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0913/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月13日の誕生花ランタナの花言葉・特徴・魅力をわかりやすく解説。「協力」を象徴する色を変える花の意味を紹介します。">
+  <meta name="description" content="9月13日の誕生花ランタナの花言葉・特徴・魅力をわかりやすく解説。「協力」を象徴する七変化の花の意味を紹介します。">
   <title>9月13日の誕生花はランタナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ランタナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に、咲きながら少しずつ色を変えていきます。クマツヅラ科の常緑低木です。"}},
-      {"@type":"Question","name":"ランタナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が集まって一つの花房を作り、咲き進むにつれて色を変えながら共に咲きそろう花姿が、力を合わせて助け合う協力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ランタナが「七変化」と呼ばれるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"咲き始めから満開になるまでの間に花の色が少しずつ変化していくことから、その名で呼ばれています。"}}
+      {"@type":"Question","name":"ランタナが『七変化』と呼ばれるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"一つの房の中で花の色が咲き進むにつれて変わっていく性質から、「七変化」という別名で呼ばれていると言われています。"}},
+      {"@type":"Question","name":"ランタナの花言葉『協力』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"一つの房の中で色の違う花が同時に咲き、力を合わせるように一つの景色を作り出す姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +138,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 13 · 誕生花</span>
     <h1>9月13日の誕生花はランタナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ランタナは、クマツヅラ科の常緑低木で、夏を中心に、咲きながら少しずつ色を変える、愛らしい印象を持つ花です。花言葉は「協力」。愛らしい花です。</p>
+    <p class="art-lead">一つの房の中に、黄色とオレンジ、ピンクが同居している。まるで一つの花が何度も色を変えたかのような不思議な咲き方——それがランタナ、9月13日の誕生花である。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ランタナ</dd>
     <dt>花言葉</dt><dd>協力</dd>
     <dt>科名</dt><dd>クマツヅラ科</dd>
-    <dt>見頃</dt><dd>夏</dd>
+    <dt>見頃</dt><dd>夏〜秋</dd>
   </dl>
 
   <?php
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ランタナとは</a></li>
-      <li><a href="#meaning">ランタナが象徴する意味</a></li>
-      <li><a href="#charm">ランタナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月13日の誕生花として親しまれるランタナ</a></li>
+      <li><a href="#story">七変化という名前が語る、色とりどりの協力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ランタナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ランタナとは</h2>
-    <p>ランタナは、クマツヅラ科の常緑低木で、9月13日の誕生花として知られています。夏を中心に、咲きながら少しずつ色を変える、愛らしい印象を持つ花です。</p>
-  </section>
+    <h2>9月13日の誕生花として親しまれるランタナ</h2>
+    <p>ランタナは、クマツヅラ科の常緑低木です。夏を中心に、色を変えながら花を咲かせます。「七変化」とも呼ばれる別名を持つことでも知られ、9月13日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ランタナが象徴する意味</h2>
-    <p>ランタナの花言葉は「協力」です。小さな花が集まって一つの花房を作り、咲き進むにつれて色を変えながら共に咲きそろう花姿が、力を合わせて助け合う協力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ランタナの魅力</h2>
-    <p>ランタナの魅力は、一つの花房の中で色が移り変わっていく七変化と呼ばれる愛らしさと、暑さに負けず長く咲き続ける丈夫さにあります。9月13日生まれの方はもちろん、力を合わせたい想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ランタナは日当たりを好み、暑さと乾燥に強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月13日生まれの方はもちろん、力を合わせたい想いを伝えたい贈り物としてもランタナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ランタナはいつ頃咲きますか？</div>
-        <div class="faq-a">夏を中心に、咲きながら少しずつ色を変えていきます。クマツヅラ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ランタナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな花が集まって一つの花房を作り、咲き進むにつれて色を変えながら共に咲きそろう花姿が、力を合わせて助け合う協力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ランタナが「七変化」と呼ばれるのはなぜですか？</div>
-        <div class="faq-a">咲き始めから満開になるまでの間に花の色が少しずつ変化していくことから、その名で呼ばれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ランタナが『七変化』と呼ばれるのはなぜですか？</div>
+        <div class="faq-a">一つの房の中で花の色が咲き進むにつれて変わっていく性質から、「七変化」という別名で呼ばれていると言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>七変化という名前が語る、色とりどりの協力</h2>
+    <p>ランタナには「七変化」という、実によく特徴を捉えた別名がある。咲き始めは黄色っぽかった花が、時間が経つにつれてオレンジやピンクへと変わっていく。しかも、一つの房の中に異なる色の花が同時に咲いているため、まるでいくつもの色が力を合わせて一つの景色を作っているように見える。単独の花の変化ではなく、色の違う花たちが集まって一つの房を彩る、その様子は「協力」という花言葉によく似合う。それぞれの色が違っていても、房全体としては一つの美しい景色になる。違いがあることが、むしろ豊かさにつながっている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ランタナの花言葉『協力』にはどんな由来がありますか？</div>
+        <div class="faq-a">一つの房の中で色の違う花が同時に咲き、力を合わせるように一つの景色を作り出す姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>違う考えや個性を持つ人同士が力を合わせると、一人では作れない景色が生まれる。今日、誰かと一緒に探してみたい、そんな景色の続き。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ランタナから始める小さな体験</h2>
+    <p>色とりどりの花が一つの房に集まって咲くランタナにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>色が変わっていく花の様子をじっくり観察してみる</li>
+      <li>協力できることを一つ、周りの人に申し出てみる</li>
+      <li>自分の中の変化を一つ、前向きに受け入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かと力を合わせたい日は、今日の六曜もあわせて確認してみませんか。開運カレンダーでは、六曜と年九星を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「七変化」という別名を持つランタナは、一つの房の中に黄色、オレンジ、ピンクと、異なる色を同時に咲かせる。</p>
     <ul>
-      <li>ランタナは夏に色を変える花を咲かせる、9月13日の誕生花</li>
-      <li>花言葉は「協力」、色を変えながら咲く花姿に由来する</li>
-      <li>色が移り変わる愛らしさが魅力</li>
-      <li>日当たりを好み、暑さと乾燥に強い</li>
+      <li>ランタナは夏を中心に色を変えながら咲く、クマツヅラ科の常緑低木で、9月13日の誕生花</li>
+      <li>花言葉は「協力」。色の違う花が一つの房で力を合わせる姿に由来すると言われる</li>
+      <li>「七変化」とも呼ばれる別名を持つ</li>
+      <li>違いを持ち寄ることで生まれる豊かさを感じさせる花</li>
     </ul>
   </section>
 

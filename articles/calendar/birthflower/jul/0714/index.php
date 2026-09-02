@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0714/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月14日の誕生花ハナトラノオの花言葉・特徴・魅力をわかりやすく解説。「素直さ」を象徴する虎の尾のような花穂の意味を紹介します。">
+  <meta name="description" content="7月14日の誕生花ハナトラノオの花言葉・特徴・魅力をわかりやすく解説。虎の尾に似た花穂を夏から秋に咲かせる、シソ科の花を紹介します。">
   <title>7月14日の誕生花はハナトラノオ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハナトラノオはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に虎の尾のような形の花穂を咲かせます。シソ科の多年草です。"}},
-      {"@type":"Question","name":"ハナトラノオの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"まっすぐに伸びた花穂に規則正しく花を咲かせる姿が、飾らない素直さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ハナトラノオという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花穂の形が虎の尾に似ていることから名付けられたとされ、花を押すと横に動くことから「オルガンの木」とも呼ばれます。"}}
+      {"@type":"Question","name":"ハナトラノオはどんな時期に花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、虎の尾のような形の花穂を咲かせます。シソ科の多年草です。"}},
+      {"@type":"Question","name":"ハナトラノオの花言葉『素直さ』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"まっすぐに伸びた花穂に規則正しく花を咲かせる姿が、飾らない素直さを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"ハナトラノオという名前はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"花穂の形が虎の尾に似ていることから名付けられたとされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 14 · 誕生花</span>
     <h1>7月14日の誕生花はハナトラノオ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハナトラノオは、シソ科の多年草で、夏から秋になると虎の尾のような形の花穂をまっすぐに伸ばし、規則正しく並んで咲く姿が印象的な花です。花言葉は「素直さ」。虎の尾のような花穂を伸ばす花です。</p>
+    <p class="art-lead">まっすぐに伸びた花穂に、小さな花が規則正しく並んで咲いています。ハナトラノオという名前は、その姿を虎の尾に見立てたところから生まれました。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハナトラノオとは</a></li>
-      <li><a href="#meaning">ハナトラノオが象徴する意味</a></li>
-      <li><a href="#charm">ハナトラノオの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月14日の誕生花として親しまれるハナトラノオ</a></li>
+      <li><a href="#story">虎の尾に見立てられた、ハナトラノオの規則正しい花穂</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハナトラノオから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハナトラノオとは</h2>
-    <p>ハナトラノオは、シソ科の多年草で、7月14日の誕生花として知られています。夏から秋になると虎の尾のような形の花穂をまっすぐに伸ばし、規則正しく並んで咲く姿が印象的な花です。</p>
-  </section>
+    <h2>7月14日の誕生花として親しまれるハナトラノオ</h2>
+    <p>ハナトラノオは、シソ科の多年草です。夏から秋にかけて、虎の尾のような形の花穂を咲かせます。この花穂の形が名前の由来になったと考えられており、7月14日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハナトラノオが象徴する意味</h2>
-    <p>ハナトラノオの花言葉は「素直さ」です。まっすぐに伸びた花穂に規則正しく花を咲かせる姿が、飾らない素直さを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハナトラノオの魅力</h2>
-    <p>ハナトラノオの魅力は、まっすぐに伸びる花穂に規則正しく並んで咲く花の姿と、丈夫で群生する育てやすさにあります。群生して咲く様子が花壇や切り花としても人気です。7月14日生まれの方はもちろん、素直な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハナトラノオは日当たりの良い場所を好み、地下茎で増えるため広がりすぎに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月14日生まれの方はもちろん、素直な想いを伝えたい贈り物としてもハナトラノオは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナトラノオはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に虎の尾のような形の花穂を咲かせます。シソ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナトラノオの花言葉の由来は何ですか？</div>
-        <div class="faq-a">まっすぐに伸びた花穂に規則正しく花を咲かせる姿が、飾らない素直さを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナトラノオという名前の由来は何ですか？</div>
-        <div class="faq-a">花穂の形が虎の尾に似ていることから名付けられたとされ、花を押すと横に動くことから「オルガンの木」とも呼ばれます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ハナトラノオはどんな時期に花を咲かせますか？</div>
+        <div class="faq-a">夏から秋にかけて、虎の尾のような形の花穂を咲かせます。シソ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>虎の尾に見立てられた、ハナトラノオの規則正しい花穂</h2>
+    <p>ハナトラノオという名前は、まっすぐに伸びた花穂に小さな花が規則正しく並んで咲く姿を、虎の尾に見立てたことに由来するといわれています。実際に花穂を眺めると、小さな花が整然と連なっており、自然が作ったとは思えないほど秩序だった印象を受けます。飾り立てることなく、ただまっすぐに並ぶその咲き方は、シソ科らしい素直な佇まいを感じさせます。虎の尾に見立てられた花穂は、今日もまっすぐ天に向かって伸び、規則正しく小さな花を咲かせ続けています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナトラノオの花言葉『素直さ』の由来は何ですか？</div>
+        <div class="faq-a">まっすぐに伸びた花穂に規則正しく花を咲かせる姿が、飾らない素直さを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>取り繕った言葉より、素のままの自分の言葉で誰かと向き合ってみませんか。ハナトラノオの花穂がまっすぐに伸び、規則正しく花を並べていくように、素のままの姿勢そのものに、まっすぐな美しさが宿っているのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハナトラノオから始める小さな体験</h2>
+    <p>虎の尾のような花穂を伸ばすハナトラノオにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>虎の尾のような花穂の形をじっくり観察してみる</li>
+      <li>飾らない自分の言葉で、今日は話してみる</li>
+      <li>花穂の並び方を数えてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナトラノオという名前はどこから来ていますか？</div>
+        <div class="faq-a">花穂の形が虎の尾に似ていることから名付けられたとされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">素のままの自分で過ごしたい今日は、ラッキープレイスや六曜もあわせて確認してみませんか。開運カレンダーでは、ラッキープレイスと六曜を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>飾らずまっすぐに並ぶこの花の姿こそ、素直であることの美しさそのものだ。</p>
     <ul>
-      <li>ハナトラノオは夏から秋に虎の尾のような花穂を咲かせる、7月14日の誕生花</li>
-      <li>花言葉は「素直さ」、まっすぐに伸びる花穂に由来する</li>
-      <li>規則正しく並んで咲く花の姿が魅力</li>
-      <li>日当たりの良い場所で、地下茎の広がりに注意が必要</li>
+      <li>ハナトラノオは夏から秋にかけて虎の尾のような花穂を咲かせる、シソ科の多年草で、7月14日の誕生花</li>
+      <li>花言葉は「素直さ」。まっすぐに伸びた花穂に規則正しく花を咲かせる姿に由来するとされる</li>
+      <li>花穂の形が虎の尾に似ていることから名付けられたとされる</li>
+      <li>飾らずまっすぐに並ぶ咲き方が魅力</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0222/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月22日の誕生花ビオラの花言葉・特徴・魅力をわかりやすく解説。「誠実」を象徴する秋から春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月22日の誕生花ビオラの花言葉・特徴・魅力をわかりやすく解説。「誠実」を象徴する、秋から春まで途切れず咲き続ける花の意味を紹介します。">
   <title>2月22日の誕生花はビオラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ビオラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋から春にかけて、小輪の花をたくさん咲かせます。寒さの中でも長く花を楽しめる一年草です。"}},
-      {"@type":"Question","name":"ビオラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「誠実」という花言葉は、長い期間にわたり変わらず花を咲かせ続ける律儀な性質に由来するとされています。"}},
-      {"@type":"Question","name":"ビオラとパンジーはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらもスミレ科の仲間ですが、ビオラはパンジーより花が小ぶりで、たくさんの花を咲かせる点が特徴です。"}}
+      {"@type":"Question","name":"ビオラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋から春にかけて見頃を迎えます。長い期間、休むことなく花を咲かせ続けるのが特徴です。"}},
+      {"@type":"Question","name":"ビオラの花言葉「誠実」の由来は？","acceptedAnswer":{"@type":"Answer","text":"秋から春まで長期間、途切れることなく花を咲かせ続ける性質に由来するといわれています。地道に咲き続ける姿が、変わらぬ誠実さを連想させるとされます。"}},
+      {"@type":"Question","name":"ビオラとパンジーはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"花の大きさや咲き方に違いがあるとされますが、明確な線引きは曖昧ともいわれています。どちらも秋から春にかけて楽しめる花として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 22 · 誕生花</span>
     <h1>2月22日の誕生花はビオラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ビオラは、スミレ科の一年草で、秋から春にかけて小輪の花をたくさん咲かせる2月22日の誕生花です。花言葉は「誠実」。長く咲き続ける健気な花です。</p>
+    <p class="art-lead">秋から春まで、途切れることなく花を咲かせ続けるビオラ。2月22日の誕生花に選ばれたこの花は、控えめな一輪の中に変わらない誠実さを秘めています。今日はその咲き続ける姿に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ビオラとは</a></li>
-      <li><a href="#meaning">ビオラが象徴する意味</a></li>
-      <li><a href="#charm">ビオラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">秋から春まで、途切れず咲き続けるビオラ</a></li>
+      <li><a href="#story">2月22日、ビオラの花が語る「途切れない」という誠実さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ビオラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ビオラとは</h2>
-    <p>ビオラは、スミレ科の一年草で、2月22日の誕生花として知られています。秋から春にかけての長い期間、小輪の花を次々と咲かせ続け、花壇や寄せ植えの主役として親しまれています。</p>
-  </section>
+    <h2>秋から春まで、途切れず咲き続けるビオラ</h2>
+    <p>ビオラは、スミレ科の一年草です。秋から春にかけて、小さな花を次々と咲かせ続けます。パンジーによく似た花ですが、一輪あたりのサイズはひとまわり小さく、その分数多くの花を絶え間なく咲かせることで、花壇や鉢の中にしっかりとした存在感を作ります。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ビオラが象徴する意味</h2>
-    <p>ビオラの花言葉は「誠実」です。寒さの中でも変わらず花を咲かせ続ける、その律儀で誠実な性質に由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ビオラの魅力</h2>
-    <p>ビオラの魅力は、小さな花ながらも豊富なカラーバリエーションと、長期間にわたる花持ちの良さにあります。寒さが厳しい季節にも花壇を明るく彩ってくれる、頼もしい存在です。2月22日生まれの方はもちろん、誠実な気持ちを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ビオラは日当たりの良い場所を好み、水切れに注意しながら育てるのがおすすめです。こまめに花がらを摘むことで、長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月22日生まれの方はもちろん、誠実な気持ちを伝えたい贈り物としてもビオラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ビオラはいつ頃咲きますか？</div>
-        <div class="faq-a">秋から春にかけて、小輪の花をたくさん咲かせます。寒さの中でも長く花を楽しめる一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビオラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「誠実」という花言葉は、長い期間にわたり変わらず花を咲かせ続ける律儀な性質に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビオラとパンジーはどう違いますか？</div>
-        <div class="faq-a">どちらもスミレ科の仲間ですが、ビオラはパンジーより花が小ぶりで、たくさんの花を咲かせる点が特徴です。</div>
+        <div class="faq-a">秋から春にかけて見頃を迎えます。長い期間、休むことなく花を咲かせ続けるのが特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月22日、ビオラの花が語る「途切れない」という誠実さ</h2>
+    <p>ビオラの一番の魅力は、実は一輪だけを見ているだけでは気づきにくいかもしれません。小さな花はどれも控えめで、単体では大きく主張することはありません。けれど秋から春という長い季節を通して、途切れることなく次々と花をつけ続ける。その積み重ねが、気づけばしっかりとした存在感を作り上げているのです。一輪一輪では小さくても、休まず咲き続ける姿は、まるで一度交わした約束を淡々と守り続ける人のよう。こうした「変わらず咲き続ける」という性質から、ビオラには「誠実」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ビオラの花言葉「誠実」の由来は？</div>
+        <div class="faq-a">秋から春まで長期間、途切れることなく花を咲かせ続ける性質に由来するといわれています。地道に咲き続ける姿が、変わらぬ誠実さを連想させるとされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>きちんと守り続けていることが一つでもあるなら、それはとても価値のあることです。今日は、その積み重ねにあらためて目を向けてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ビオラから始める小さな体験</h2>
+    <p>秋から春まで咲き続けるビオラにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>長く咲き続けるビオラの鉢を育ててみる、または見つけてみる</li>
+      <li>誠実に向き合っていることを一つ思い浮かべてみる</li>
+      <li>小さな約束を一つ、きちんと守ってみる</li>
+      <li>寒い季節でも咲く花を探して歩いてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ビオラとパンジーはどう違いますか？</div>
+        <div class="faq-a">花の大きさや咲き方に違いがあるとされますが、明確な線引きは曖昧ともいわれています。どちらも秋から春にかけて楽しめる花として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">小さな約束を一つ守れた今日は、それが吉日にあたるかどうかも見てみませんか。開運カレンダーでは、その日の吉日やラッキーアイテムもあわせて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月22日、途切れることなく咲き続けるビオラは、静かな誠実さを教えてくれる花です。</p>
     <ul>
-      <li>ビオラは秋から春に小輪の花をたくさん咲かせる、2月22日の誕生花</li>
-      <li>花言葉は「誠実」、長く咲き続ける律儀な姿を象徴する</li>
-      <li>豊富なカラーバリエーションと花持ちの良さが魅力</li>
-      <li>日当たりの良い場所で水切れに注意し、花がら摘みで育てたい</li>
+      <li>ビオラはスミレ科の一年草で、秋から春にかけて小さな花を次々と咲かせる</li>
+      <li>一輪では控えめでも、途切れず咲き続けることで確かな存在感を作る</li>
+      <li>花言葉は「誠実」。変わらず咲き続ける姿を象徴するとされる</li>
+      <li>パンジーとよく似ているが、花の大きさや咲き方に違いがあるとされる</li>
     </ul>
   </section>
 

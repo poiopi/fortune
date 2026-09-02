@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1105/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月5日の誕生花デンファレの花言葉・特徴・魅力をわかりやすく解説。「お似合い」を象徴する涼しげな洋ランの意味を紹介します。">
+  <meta name="description" content="11月5日の誕生花デンファレの花言葉・特徴・魅力をわかりやすく解説。「お似合い」を象徴する房状に咲く涼しげな洋ランの意味を紹介します。">
   <title>11月5日の誕生花はデンファレ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"デンファレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に涼しげな花を房状にたくさん咲かせます。ラン科の洋ランです。"}},
-      {"@type":"Question","name":"デンファレの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"涼しげな花を房状にたくさん咲かせ、寄り添うように連なる姿が、互いにお似合いな様子を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"デンファレはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"涼しげな花姿を活かして、夏場のインテリアや贈り物のアレンジメントに人気です。"}}
+      {"@type":"Question","name":"デンファレという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"デンドロビウム・ファレノプシスの略で、この名前がつけられたと言われています。"}},
+      {"@type":"Question","name":"デンファレの花言葉「お似合い」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"房状に寄り添いながらも、一つひとつ違う表情を見せる花の様子が、お似合いという花言葉に重ねられてきたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 5 · 誕生花</span>
     <h1>11月5日の誕生花はデンファレ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">デンファレは、ラン科の洋ランで、夏に涼しげな花を房状にたくさん咲かせる、爽やかな印象を持つ花です。花言葉は「お似合い」。涼しげな花です。</p>
+    <p class="art-lead">房のようにいくつもの花が連なって咲く姿には、見る人を涼やかな気持ちにさせる涼しさがある。ラン科の洋ラン、デンファレが11月5日の誕生花に選ばれたのは、この涼やかな印象ゆえだろう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">デンファレとは</a></li>
-      <li><a href="#meaning">デンファレが象徴する意味</a></li>
-      <li><a href="#charm">デンファレの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月5日の誕生花として親しまれるデンファレ</a></li>
+      <li><a href="#story">房になって連なる、涼やかな花のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、デンファレから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>デンファレとは</h2>
-    <p>デンファレは、ラン科の洋ランで、11月5日の誕生花として知られています。夏に涼しげな花を房状にたくさん咲かせる、爽やかな印象を持つ花です。</p>
-  </section>
+    <h2>11月5日の誕生花として親しまれるデンファレ</h2>
+    <p>デンファレは、ラン科の洋ランとして知られる、11月5日の誕生花です。房状にたくさんの花を咲かせる、涼しげな印象を持つ花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>デンファレが象徴する意味</h2>
-    <p>デンファレの花言葉は「お似合い」です。涼しげな花を房状にたくさん咲かせ、寄り添うように連なる姿が、互いにお似合いな様子を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>デンファレの魅力</h2>
-    <p>デンファレの魅力は、房状に連なる花が生む涼しげな美しさと、洋ランならではの上品な花姿にあります。11月5日生まれの方はもちろん、お似合いの相手への贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>デンファレは明るい日陰を好み、風通しのよい環境で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月5日生まれの方はもちろん、お似合いの相手への贈り物としてもデンファレは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デンファレはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に涼しげな花を房状にたくさん咲かせます。ラン科の洋ランです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デンファレの花言葉の由来は何ですか？</div>
-        <div class="faq-a">涼しげな花を房状にたくさん咲かせ、寄り添うように連なる姿が、互いにお似合いな様子を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">デンファレはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">涼しげな花姿を活かして、夏場のインテリアや贈り物のアレンジメントに人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">デンファレという名前の由来は何ですか？</div>
+        <div class="faq-a">デンドロビウム・ファレノプシスの略で、この名前がつけられたと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>房になって連なる、涼やかな花のかたち</h2>
+    <p>デンファレの魅力は、一輪だけでは語れない。ピンクや白の花が茎の先に房状に連なり、いくつもの花が寄り添うようにして咲く姿にこそ、この花らしさがある。一本の茎に並んだ花を見比べると、それぞれ少しずつ角度も開き方も違っていて、決して同じ表情の花が並んでいるわけではないことに気づく。似ているようでいて、実はそれぞれに個性がある。この寄り添いながらも一つひとつが違う様子が、「お似合い」という花言葉に重なって見えてくる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">デンファレの花言葉「お似合い」はどのように結びついていますか？</div>
+        <div class="faq-a">房状に寄り添いながらも、一つひとつ違う表情を見せる花の様子が、お似合いという花言葉に重ねられてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一緒にいるだけで自然と歩調が揃っていく相手と過ごす時間は、それだけで十分に心地よいものだ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、デンファレから始める小さな体験</h2>
+    <p>房状に連なって咲くデンファレにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>房状に咲く花の連なりをじっくり観察してみる</li>
+      <li>誰かと似合う色や雰囲気を探してみる</li>
+      <li>涼しげな印象のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かとの相性が気になる日は、開運カレンダーで星座の欄ものぞいてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>寄り添いながらも一つひとつ違う表情を持つこの花のような関係が、身近にもあるだろうか。</p>
     <ul>
-      <li>デンファレは夏に涼しげな花を房状に咲かせる、11月5日の誕生花</li>
-      <li>花言葉は「お似合い」、寄り添うように連なって咲く姿に由来する</li>
-      <li>房状に連なる花が生む涼しげな美しさが魅力</li>
-      <li>明るい日陰を好み、風通しのよい環境で管理するとよく育ちます</li>
+      <li>デンファレは、ラン科の洋ランで、房状に花を咲かせる、11月5日の誕生花</li>
+      <li>花言葉は「お似合い」。寄り添いながらも一つひとつ違う花の様子に由来すると言われる</li>
+      <li>名前はデンドロビウム・ファレノプシスの略で、花色はピンクや白など</li>
+      <li>誰かと自然に馴染む心地よさを感じたい日に寄り添う花</li>
     </ul>
   </section>
 

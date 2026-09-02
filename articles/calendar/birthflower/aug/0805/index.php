@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0805/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月5日の誕生花ルリタマアザミの花言葉・特徴・魅力をわかりやすく解説。「権威」を象徴する瑠璃色の球状花の意味を紹介します。">
+  <meta name="description" content="8月5日の誕生花ルリタマアザミの花言葉・特徴・魅力をわかりやすく解説。瑠璃色の球体が凛と立ち上がる花の意味を紹介します。">
   <title>8月5日の誕生花はルリタマアザミ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ルリタマアザミはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に瑠璃色の球状の花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ルリタマアザミの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉に守られながら気高く咲く瑠璃色の球状花が、揺るがない権威や威厳を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ルリタマアザミはドライフラワーに向いていますか？","acceptedAnswer":{"@type":"Answer","text":"はい。花色や形が咲いた後も崩れにくく、ドライフラワーとして長く楽しめる花として人気です。"}}
+      {"@type":"Question","name":"ルリタマアザミはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"瑠璃色の小花が集まり、球状に咲きそろいます。夏に見頃を迎える、キク科の多年草です。"}},
+      {"@type":"Question","name":"ルリタマアザミの花言葉『権威』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉に守られながら気高く咲く瑠璃色の球状花が、揺るがない威厳を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 5 · 誕生花</span>
     <h1>8月5日の誕生花はルリタマアザミ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ルリタマアザミは、キク科の多年草で、夏になると瑠璃色の球状の花を咲かせる、凛とした存在感を放つ花です。花言葉は「権威」。凛とした存在感のある花です。</p>
+    <p class="art-lead">アザミの仲間でありながら、この花は丸く整った瑠璃色の球体を咲かせる。とげのある葉に守られながら、まっすぐ天を目指す茎の先で。ルリタマアザミが、8月5日にその凛とした姿を見せる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ルリタマアザミとは</a></li>
-      <li><a href="#meaning">ルリタマアザミが象徴する意味</a></li>
-      <li><a href="#charm">ルリタマアザミの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月5日の誕生花として親しまれるルリタマアザミ</a></li>
+      <li><a href="#story">瑠璃色の球体に宿る、揺るがない威厳</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ルリタマアザミから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ルリタマアザミとは</h2>
-    <p>ルリタマアザミは、キク科の多年草で、8月5日の誕生花として知られています。夏になると瑠璃色の球状の花を咲かせる、凛とした存在感を放つ花です。</p>
-  </section>
+    <h2>8月5日の誕生花として親しまれるルリタマアザミ</h2>
+    <p>ルリタマアザミは、キク科の多年草です。夏になると、瑠璃色の球状の花を咲かせます。アザミの仲間らしいとげのある葉に守られながら、まっすぐに伸びた茎の先で丸く咲きそろう姿は、独特なシルエットとして目を引きます。この個性的な花が、8月5日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ルリタマアザミが象徴する意味</h2>
-    <p>ルリタマアザミの花言葉は「権威」です。とげのある葉に守られながら気高く咲く瑠璃色の球状花が、揺るがない権威や威厳を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ルリタマアザミの魅力</h2>
-    <p>ルリタマアザミの魅力は、金平糖のように丸く集まった瑠璃色の花と、アザミらしい鋭い葉が生み出す独特の存在感にあります。ドライフラワーとしても長く楽しめる花です。8月5日生まれの方はもちろん、揺るがない敬意を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ルリタマアザミは日当たりを好み、乾燥に強いため過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月5日生まれの方はもちろん、揺るがない敬意を伝えたい贈り物としてもルリタマアザミは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルリタマアザミはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に瑠璃色の球状の花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルリタマアザミの花言葉の由来は何ですか？</div>
-        <div class="faq-a">とげのある葉に守られながら気高く咲く瑠璃色の球状花が、揺るがない権威や威厳を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルリタマアザミはドライフラワーに向いていますか？</div>
-        <div class="faq-a">はい。花色や形が咲いた後も崩れにくく、ドライフラワーとして長く楽しめる花として人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ルリタマアザミはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">瑠璃色の小花が集まり、球状に咲きそろいます。夏に見頃を迎える、キク科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>瑠璃色の球体に宿る、揺るがない威厳</h2>
+    <p>ルリタマアザミの花は、金平糖にも似た小さな突起を無数に持つ球体として咲く。一つひとつは小さな花の集まりだが、遠目には一つの完璧な球のように見える、その計算されたような形の完成度が面白い。とげのある葉に守られながら、茎はまっすぐに天を目指して伸び、その先端で丸く咲く姿は、揺るがない意志のようにも映る。花言葉「権威」は、この直立した茎と、崩れることのない球形の組み合わせから生まれたのだろう。丸くまとまっているからこそ、かえって強さが際立つという逆説がここにはある。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ルリタマアザミの花言葉『権威』にはどんな由来がありますか？</div>
+        <div class="faq-a">とげのある葉に守られながら気高く咲く瑠璃色の球状花が、揺るがない威厳を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>丸くまとまった形は、時にどんな鋭さよりも強さを感じさせる。今日は、静かに背筋を伸ばす時間を一つ、意識してみよう。凛とした姿勢は、そっと保つだけで十分に伝わるものだ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ルリタマアザミから始める小さな体験</h2>
+    <p>瑠璃色の球体を凛と掲げて咲くルリタマアザミにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>瑠璃色の球状の花をじっくり観察してみる</li>
+      <li>凛とした姿勢を意識して過ごしてみる</li>
+      <li>青色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">揺るがない一日にしたい方は、今日のラッキーナンバーもあわせて確認してみませんか。開運カレンダーでは、ラッキーナンバーとラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>崩れることのない丸い球形の中に、ルリタマアザミの揺るがない強さが宿る。</p>
     <ul>
-      <li>ルリタマアザミは夏に瑠璃色の球状の花を咲かせる、8月5日の誕生花</li>
-      <li>花言葉は「権威」、凛とした花姿に由来する</li>
-      <li>金平糖のような瑠璃色の花が魅力</li>
-      <li>日当たりを好み、乾燥に強い</li>
+      <li>ルリタマアザミは夏に瑠璃色の球状の花を咲かせる、キク科の多年草で、8月5日の誕生花</li>
+      <li>花言葉は「権威」。まっすぐな茎と崩れない球形に由来するとされる</li>
+      <li>とげのある葉に守られながら咲く独特なシルエットが特徴</li>
+      <li>金平糖のような小さな突起が集まった球体が魅力</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0805');
 ?>
+</content>

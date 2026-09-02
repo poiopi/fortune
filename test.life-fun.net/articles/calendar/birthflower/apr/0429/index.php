@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0429/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月29日の誕生花ミヤコグサの花言葉・特徴・魅力をわかりやすく解説。「きまぐれな心」を象徴する身近な野の花の意味を紹介します。">
+  <meta name="description" content="4月29日の誕生花ミヤコグサの花言葉・特徴・魅力をわかりやすく解説。「きまぐれな心」という花言葉に込められた意味と、春から夏へ長く続く黄色い花の魅力を紹介します。">
   <title>4月29日の誕生花はミヤコグサ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ミヤコグサはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から夏にかけて黄色い花を咲かせます。マメ科の多年草で、道端や河原に自生する身近な野草です。"}},
-      {"@type":"Question","name":"ミヤコグサの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「きまぐれな心」という花言葉は、花の咲き方や向きがそれぞれ自由に咲く様子に由来すると言われています。"}},
-      {"@type":"Question","name":"ミヤコグサはどんな場所に咲いていますか？","acceptedAnswer":{"@type":"Answer","text":"道端や河原、芝生の間など、身近な場所によく自生しています。丈夫で環境を選ばず育つ野草です。"}}
+      {"@type":"Question","name":"ミヤコグサはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"マメ科の多年草で、春から夏にかけて鮮やかな黄色い花を咲かせます。開花期間が長く続くのも特徴です。"}},
+      {"@type":"Question","name":"ミヤコグサの花言葉「きまぐれな心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"決まった時期だけでなく、春から夏という長い期間にわたって黄色い花を咲かせ続ける様子が、移ろいやすい心情を連想させることに由来するといわれています。"}},
+      {"@type":"Question","name":"ミヤコグサはどのくらいの期間、花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"春から夏にかけて、比較的長い期間花を咲かせ続けます。一年のうちで黄色い花を楽しめる期間が長いのも特徴です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 29 · 誕生花</span>
     <h1>4月29日の誕生花はミヤコグサ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ミヤコグサは、マメ科の多年草で、春から夏に黄色い花を咲かせる4月29日の誕生花です。花言葉は「きまぐれな心」。身近な野の花です。</p>
+    <p class="art-lead">足元に目を落とすと、黄色い小さな花がひょいと顔を出している。4月29日の誕生花ミヤコグサは、そんな気ままな咲き方で春から夏を彩る花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ミヤコグサとは</a></li>
-      <li><a href="#meaning">ミヤコグサが象徴する意味</a></li>
-      <li><a href="#charm">ミヤコグサの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月29日の誕生花として親しまれるミヤコグサ</a></li>
+      <li><a href="#story">気ままに色づく、ミヤコグサの黄色い日々</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ミヤコグサから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ミヤコグサとは</h2>
-    <p>ミヤコグサは、マメ科の多年草で、4月29日の誕生花として知られています。道端や河原などに自生し、蝶の形に似た小さな黄色い花をいくつか房状に咲かせる、日本各地でよく見かける野草です。</p>
-  </section>
+    <h2>4月29日の誕生花として親しまれるミヤコグサ</h2>
+    <p>ミヤコグサは、マメ科の多年草です。春から夏にかけて、黄色い小さな花を長い期間にわたって咲かせ続けます。一日だけでなく季節をまたいで顔を出し続けるその気ままさから、4月29日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ミヤコグサが象徴する意味</h2>
-    <p>ミヤコグサの花言葉は「きまぐれな心」です。同じ株の中でも花の咲き方や向きがそれぞれ違って自由に咲く様子が、移ろいやすく捉えどころのない心情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ミヤコグサの魅力</h2>
-    <p>ミヤコグサの魅力は、身近な場所に自生する飾らない素朴さと、鮮やかな黄色の花が咲き広がる愛らしさにあります。芝生の間などに群生する様子は、気取らない野の花ならではの魅力です。4月29日生まれの方はもちろん、自由な心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ミヤコグサは日当たりの良い場所を好み、丈夫で環境を選ばず育ちます。特別な手入れをしなくても、こぼれ種で自然に増えていきます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月29日生まれの方はもちろん、自由な心を届けたい贈り物としてもミヤコグサは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミヤコグサはいつ頃咲きますか？</div>
-        <div class="faq-a">春から夏にかけて黄色い花を咲かせます。マメ科の多年草で、道端や河原に自生する身近な野草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミヤコグサの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「きまぐれな心」という花言葉は、花の咲き方や向きがそれぞれ自由に咲く様子に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミヤコグサはどんな場所に咲いていますか？</div>
-        <div class="faq-a">道端や河原、芝生の間など、身近な場所によく自生しています。丈夫で環境を選ばず育つ野草です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ミヤコグサはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">マメ科の多年草で、春から夏にかけて鮮やかな黄色い花を咲かせます。開花期間が長く続くのも特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>気ままに色づく、ミヤコグサの黄色い日々</h2>
+    <p>黄色という色には、見る人の気持ちをふっと引き上げるような明るさがあります。ミヤコグサの花はまさにその黄色を、一年のうちでも春から夏という長い期間にわたって咲かせ続けます。今日はここ、明日はあちらと、決まった一瞬だけでなく季節をまたいで顔を出す咲き方は、移り気というより、そのときどきに正直であろうとしているようにも見えます。マメ科の多年草であるミヤコグサは、毎年同じ場所で世代を重ねながら、その黄色を絶やすことなく咲かせ続けます。そんな咲き方から、ミヤコグサには「きまぐれな心」という花言葉が贈られているといわれています。気持ちが揺れ動くことは、そのときどきの自分に正直である証といえるのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミヤコグサの花言葉「きまぐれな心」の由来は？</div>
+        <div class="faq-a">決まった時期だけでなく、春から夏という長い期間にわたって黄色い花を咲かせ続ける様子が、移ろいやすい心情を連想させることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今日の気分と、昨日の気分がまるで違うことがあります。ミヤコグサが季節のうつろいとともに、あちこちで違う顔を見せて咲くように、心もそのときどきで色を変えてかまいません。今この瞬間、素直に感じていることを、そのまま大切にしてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ミヤコグサから始める小さな体験</h2>
+    <p>春から夏へと季節をまたいで気ままに咲き続けるミヤコグサにならって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>黄色い花を野や道端で探してみる</li>
+      <li>今の気分に素直に従って過ごしてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミヤコグサはどのくらいの期間、花を楽しめますか？</div>
+        <div class="faq-a">春から夏にかけて、比較的長い期間花を咲かせ続けます。一年のうちで黄色い花を楽しめる期間が長いのも特徴です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">移り変わる気持ちのままに過ごしたい今日は、六曜やおすすめアイテムも参考にしてみませんか。開運カレンダーでは、その日の六曜とおすすめアイテムをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>季節をまたいで気ままに黄色を咲かせ続けるミヤコグサの姿は、心の揺れ動きをそのまま受け止めていいのだと静かに伝えてくれます。</p>
     <ul>
-      <li>ミヤコグサは春から夏に黄色い花を咲かせる、4月29日の誕生花</li>
-      <li>花言葉は「きまぐれな心」、自由に咲く花の様子に由来する</li>
-      <li>身近な場所に咲く飾らない素朴さが魅力</li>
-      <li>日当たりの良い場所で、手間をかけずに育つ</li>
+      <li>ミヤコグサはマメ科の多年草で、春から夏にかけて黄色い花を咲かせる</li>
+      <li>開花の期間が長く、季節をまたいで花を楽しめるのが特徴</li>
+      <li>花言葉は「きまぐれな心」。移ろいやすい心情に由来するといわれる</li>
+      <li>移り変わる気持ちも、そのときどきの自分らしさとして受け止めていい</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0618/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月18日の誕生花サギソウの花言葉・特徴・魅力をわかりやすく解説。「夢想」を象徴する白鷺のような形の花の意味を紹介します。">
+  <meta name="description" content="6月18日の誕生花サギソウの花言葉・特徴・魅力をわかりやすく解説。白鷺が羽を広げたような形の花を咲かせる、ラン科「夢想」の花を紹介します。">
   <title>6月18日の誕生花はサギソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サギソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に白鷺が羽を広げたような形の花を咲かせます。ラン科の多年草です。"}},
-      {"@type":"Question","name":"サギソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「夢想」という花言葉は、今にも飛び立ちそうな鷺の姿を思わせる花の形が、幻想的な情景を連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"サギソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の形が羽を広げて飛ぶ白鷺の姿に似ていることから、この名前が付けられたと言われています。"}}
+      {"@type":"Question","name":"サギソウの名前の由来は？","acceptedAnswer":{"@type":"Answer","text":"花の形が、羽を広げて飛ぶ白鷺の姿に似ていることから名付けられたと考えられています。"}},
+      {"@type":"Question","name":"サギソウの花言葉「夢想」の由来は？","acceptedAnswer":{"@type":"Answer","text":"白鷺が羽ばたく一瞬をとらえたような繊細な花の姿が、現実離れした美しい情景を思い描かせることに由来するといわれています。"}},
+      {"@type":"Question","name":"サギソウはどんな場所で楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"鉢植えとして育てられることが多く、繊細な花の形を間近で観察したり、切り花として飾ったりして楽しめます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 18 · 誕生花</span>
     <h1>6月18日の誕生花はサギソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サギソウは、ラン科の多年草で、夏に白鷺が羽を広げたような形の花を咲かせる6月18日の誕生花です。花言葉は「夢想」。繊細で清らかな印象の花です。</p>
+    <p class="art-lead">花びらが細かく切れ込みながら大きく広がり、白鷺が今にも羽ばたきそうな姿を見せています。サギソウは、白鷺が羽を広げたような、繊細で清らかな印象のラン科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サギソウとは</a></li>
-      <li><a href="#meaning">サギソウが象徴する意味</a></li>
-      <li><a href="#charm">サギソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月18日の誕生花として親しまれるサギソウ</a></li>
+      <li><a href="#story">白鷺の翼に重なる、夏のサギソウ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サギソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サギソウとは</h2>
-    <p>サギソウは、ラン科の多年草で、6月18日の誕生花として知られています。夏になると白鷺が羽を広げたような形の花を咲かせ、繊細で清らかな印象を漂わせる花です。</p>
-  </section>
+    <h2>6月18日の誕生花として親しまれるサギソウ</h2>
+    <p>サギソウは、ラン科の多年草です。夏になると、白鷺が羽を広げたような繊細な形の花を咲かせ、その清らかな姿から多くの愛好家に親しまれてきました。名前も花の姿にちなんで付けられたとされ、6月18日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サギソウが象徴する意味</h2>
-    <p>サギソウの花言葉は「夢想」です。今にも飛び立ちそうな鷺の姿を思わせる花の形が、夢見るような幻想的な情景を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サギソウの魅力</h2>
-    <p>サギソウの魅力は、白鷺が羽ばたく瞬間を切り取ったかのような繊細で優美な花の形にあります。湿地に自生する希少な花としても知られ、その清らかな姿は見る人を惹きつけます。6月18日生まれの方はもちろん、幻想的な美しさを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サギソウは湿地を好む植物のため、乾燥させないよう水を切らさないように管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月18日生まれの方はもちろん、幻想的な美しさを届けたい贈り物としてもサギソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サギソウはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に白鷺が羽を広げたような形の花を咲かせます。ラン科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サギソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「夢想」という花言葉は、今にも飛び立ちそうな鷺の姿を思わせる花の形が、幻想的な情景を連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サギソウという名前の由来は何ですか？</div>
-        <div class="faq-a">花の形が羽を広げて飛ぶ白鷺の姿に似ていることから、この名前が付けられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サギソウの名前の由来は？</div>
+        <div class="faq-a">花の形が、羽を広げて飛ぶ白鷺の姿に似ていることから名付けられたと考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白鷺の翼に重なる、夏のサギソウ</h2>
+    <p>サギソウの花びらは、細かく切れ込みながら左右に大きく広がり、今まさに飛び立とうとする白鷺の翼のような形をつくります。じっと見つめていると、その花姿の向こうに、白い鳥が羽ばたく瞬間が浮かび上がってくるようです。この繊細で清らかな姿は、現実にはいない光景をまぶたの裏に描き出す力を持っています。羽ばたく直前の一瞬をとらえたようなその花姿から、サギソウには「夢想」という花言葉が贈られるようになったと考えられています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サギソウの花言葉「夢想」の由来は？</div>
+        <div class="faq-a">白鷺が羽ばたく一瞬をとらえたような繊細な花の姿が、現実離れした美しい情景を思い描かせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>目を閉じると、行ったことのない景色が浮かんでくることがあります。サギソウの花は、そんな想像の翼を広げることを、そっと後押ししてくれるようです。今この瞬間にいながら、心だけは少し遠くへ羽ばたかせてみるのもいいものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サギソウから始める小さな体験</h2>
+    <p>白鷺のような花の姿から、こんな時間を持ってみませんか。</p>
+    <ul class="exp-list">
+      <li>白鷺が羽を広げたような花の形をじっくり観察してみる</li>
+      <li>思い描いていることを一つ、自由に想像してみる</li>
+      <li>繊細な白い花を部屋に飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サギソウはどんな場所で楽しめますか？</div>
+        <div class="faq-a">鉢植えとして育てられることが多く、繊細な花の形を間近で観察したり、切り花として飾ったりして楽しめます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">想像の世界にひととき浸りたい今日は、月九星やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、今月の九星とおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>白鷺が羽ばたく一瞬を写しとったようなサギソウを見ていると、想像することもまた心を自由にする力になるのだと感じます。</p>
     <ul>
-      <li>サギソウは夏に白鷺のような形の花を咲かせる、6月18日の誕生花</li>
-      <li>花言葉は「夢想」、飛び立つ鷺を思わせる花姿に由来する</li>
-      <li>繊細で清らかな優美さが魅力</li>
-      <li>湿地を好み、水を切らさない管理が必要</li>
+      <li>サギソウはラン科の多年草で、夏に白鷺のような形の花を咲かせる、6月18日の誕生花</li>
+      <li>花言葉は「夢想」。羽ばたく白鷺を思わせる花の姿に由来するとされる</li>
+      <li>名前も花の姿にちなんで付けられたと考えられている</li>
+      <li>鉢植えや切り花として、繊細な花の形を楽しめる</li>
     </ul>
   </section>
 

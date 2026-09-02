@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ボタンヅルはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に白い小花を咲かせます。キンポウゲ科のつる性多年草です。"}},
-      {"@type":"Question","name":"ボタンヅルの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"つる性の茎に白い小花を静かに咲かせる姿が、穏やかなひとときの休息を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ボタンヅルの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"葉の形が牡丹（ボタン）に似ていることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"ボタンヅルの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"名前の由来ははっきり分かっていませんが、つるを伸ばして広がるように生育し、野山に自生する植物として親しまれています。"}},
+      {"@type":"Question","name":"ボタンヅルはどんな理由で「休息」と呼ばれていますか？","acceptedAnswer":{"@type":"Answer","text":"つる性の茎に白い小花を静かに咲かせる、ゆっくりとしたペースの姿が、穏やかな休息のひとときを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 26 · 誕生花</span>
     <h1>10月26日の誕生花はボタンヅル<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ボタンヅルは、キンポウゲ科のつる性多年草で、夏から秋に白い小花を咲かせる、素朴でつつましい印象を持つ花です。花言葉は「休息」。素朴でつつましい花です。</p>
+    <p class="art-lead">つるを伸ばしながら、控えめに白い花を咲かせる植物がある。10月26日の誕生花ボタンヅルは、夏から秋にかけてそんな姿を見せてくれる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ボタンヅルとは</a></li>
-      <li><a href="#meaning">ボタンヅルが象徴する意味</a></li>
-      <li><a href="#charm">ボタンヅルの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月26日の誕生花として親しまれるボタンヅル</a></li>
+      <li><a href="#story">つるに揺れる白い小花がもたらす、束の間の休息</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ボタンヅルから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ボタンヅルとは</h2>
-    <p>ボタンヅルは、キンポウゲ科のつる性多年草で、10月26日の誕生花として知られています。夏から秋に白い小花を咲かせる、素朴でつつましい印象を持つ花です。</p>
-  </section>
+    <h2>10月26日の誕生花として親しまれるボタンヅル</h2>
+    <p>ボタンヅルは、キンポウゲ科のつる性多年草。10月26日の誕生花として、この時期に親しまれている。夏から秋にかけて、細いつるを伸ばしながら白い小花を無数に咲かせる。つるを伸ばして広がるように生育しながら、野山に自生する植物だ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ボタンヅルが象徴する意味</h2>
-    <p>ボタンヅルの花言葉は「休息」です。つる性の茎に白い小花を静かに咲かせる姿が、穏やかなひとときの休息を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ボタンヅルの魅力</h2>
-    <p>ボタンヅルの魅力は、白い小花が持つ素朴でつつましい美しさと、つるを伸ばしながら静かに咲く佇まいにあります。10月26日生まれの方はもちろん、穏やかな癒やしを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ボタンヅルは日当たりを好み、つるを支柱に這わせながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月26日生まれの方はもちろん、穏やかな癒やしを伝えたい贈り物としてもボタンヅルは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ボタンヅルはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に白い小花を咲かせます。キンポウゲ科のつる性多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ボタンヅルの花言葉の由来は何ですか？</div>
-        <div class="faq-a">つる性の茎に白い小花を静かに咲かせる姿が、穏やかなひとときの休息を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ボタンヅルの名前の由来は何ですか？</div>
-        <div class="faq-a">葉の形が牡丹（ボタン）に似ていることから、この名前がつけられたと言われています。</div>
+        <div class="faq-a">名前の由来ははっきり分かっていませんが、つるを伸ばして広がるように生育し、野山に自生する植物として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>つるに揺れる白い小花がもたらす、束の間の休息</h2>
+    <p>夏から秋にかけて、ボタンヅルはつるを伸ばしながら、周囲の木や柵に絡みついて広がっていく。派手に主張することなく、白い小花を静かに咲かせるその姿には、急ぐ様子がまるでない。一気に伸びようとせず、少しずつ時間をかけて歩みを進める。そんなボタンヅルの生き方には、休息という言葉がよく似合うと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ボタンヅルはどんな理由で「休息」と呼ばれていますか？</div>
+        <div class="faq-a">つる性の茎に白い小花を静かに咲かせる、ゆっくりとしたペースの姿が、穏やかな休息のひとときを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>つるを伸ばしながら静かに花を咲かせるボタンヅルの姿には、急がず過ごす時間の豊かさが映っている。ひと息ついて、心も体もゆるめてみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ボタンヅルから始める小さな体験</h2>
+    <p>つるを伸ばしながらゆっくり花を咲かせるボタンヅルにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>つるを伸ばして咲く花の姿をじっくり観察してみる</li>
+      <li>何もしない時間を今日少し作ってみる</li>
+      <li>白い小花を探して歩いてみる</li>
+    </ul>
+
+    <p class="cta-lead">ゆっくり休みたい日は、今日の六曜も確認してみませんか。開運カレンダーでは、毎日の六曜や吉日を発信しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>時間をかけてゆっくり伸びるつるの姿が、休むことの価値を静かに語りかけてくる。</p>
     <ul>
-      <li>ボタンヅルは白い小花を咲かせる、10月26日の誕生花</li>
-      <li>花言葉は「休息」、静かに咲く白い小花に由来する</li>
-      <li>つるを伸ばしながら静かに咲く佇まいが魅力</li>
-      <li>日当たりを好み、つるを支柱に這わせながら管理するとよく育ちます</li>
+      <li>ボタンヅルは夏から秋に白い小花を咲かせる、キンポウゲ科のつる性多年草で、10月26日の誕生花</li>
+      <li>花言葉は「休息」。ゆっくりと伸びるつるの姿に由来すると言われる</li>
+      <li>つるを伸ばして広がるように生育しながら、野山に自生する</li>
+      <li>ひと息ついて心も体も緩めたい日に寄り添う花</li>
     </ul>
   </section>
 

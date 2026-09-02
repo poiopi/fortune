@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0306/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月6日の誕生花アネモネの花言葉・特徴・魅力をわかりやすく解説。「はかない恋」を象徴する華やかではかない花の意味を紹介します。">
+  <meta name="description" content="3月6日の誕生花アネモネの花言葉・特徴・魅力をわかりやすく解説。「はかない恋」を象徴する、色鮮やかに咲く花の意味を紹介します。">
   <title>3月6日の誕生花はアネモネ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アネモネはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春から春にかけて、一重や八重の色鮮やかな花を咲かせます。キンポウゲ科の多年草で、切り花としても人気があります。"}},
-      {"@type":"Question","name":"アネモネの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「はかない恋」という花言葉は、風が吹くと花びらが散りやすいその繊細さが、移ろいやすい恋心に重ねられたことに由来すると言われています。"}},
-      {"@type":"Question","name":"アネモネという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ギリシャ語で「風」を意味する「アネモス」が語源とされ、英語でも「windflower（風の花）」と呼ばれています。"}}
+      {"@type":"Question","name":"アネモネはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春から春にかけて見頃を迎えます。一重や八重の色鮮やかな花を咲かせ、風に揺れる姿が印象的です。"}},
+      {"@type":"Question","name":"アネモネの花言葉「はかない恋」の由来は？","acceptedAnswer":{"@type":"Answer","text":"色鮮やかに咲きながらも花期が短く、風に花びらを散らせていく咲き方に由来するといわれています。"}},
+      {"@type":"Question","name":"アネモネには毒性がありますか？","acceptedAnswer":{"@type":"Answer","text":"全草に毒性成分を含むといわれているため、切り花や観賞用として楽しみ、口にしたり樹液に触れすぎたりしないよう注意が必要です。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 6 · 誕生花</span>
     <h1>3月6日の誕生花はアネモネ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アネモネは、キンポウゲ科の多年草で、早春から春にかけて色鮮やかな花を咲かせる3月6日の誕生花です。花言葉は「はかない恋」。華やかさとはかなさを併せ持つ花です。</p>
+    <p class="art-lead">一重や八重の色鮮やかな花を咲かせるアネモネ。3月6日の誕生花に選ばれたこの花は、華やかさとはかなさを併せ持つ、独特の魅力を放っています。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>アネモネ</dd>
     <dt>花言葉</dt><dd>はかない恋</dd>
     <dt>科名</dt><dd>キンポウゲ科</dd>
-    <dt>見頃</dt><dd>早春から春</dd>
+    <dt>見頃</dt><dd>早春〜春</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アネモネとは</a></li>
-      <li><a href="#meaning">アネモネが象徴する意味</a></li>
-      <li><a href="#charm">アネモネの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">一重と八重、アネモネが咲かせる色鮮やかな花</a></li>
+      <li><a href="#story">3月6日、アネモネが教える、はかなさの中の美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アネモネから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アネモネとは</h2>
-    <p>アネモネは、キンポウゲ科の多年草で、3月6日の誕生花として知られています。ギリシャ語で「風」を意味する「アネモス」が語源とされ、和名は「牡丹一華（ボタンイチゲ）」。一重咲きや八重咲きなど、色も咲き方も豊富なバリエーションを持つ花です。</p>
-  </section>
+    <h2>一重と八重、アネモネが咲かせる色鮮やかな花</h2>
+    <p>アネモネは、キンポウゲ科の多年草です。早春から春にかけて、一重や八重の色鮮やかな花を咲かせます。赤・紫・白など多彩な色合いがあり、風にそよぐ花びらの繊細さと、はっとするような華やかさをあわせ持つ花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アネモネが象徴する意味</h2>
-    <p>アネモネの花言葉は「はかない恋」です。風が吹くと花びらが散りやすいことから「風の花（windflower）」とも呼ばれ、その繊細さが移ろいやすい恋心と重ねられたことに由来すると言われています。花色によっても「期待」「薄れゆく愛」など異なる花言葉が添えられます。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アネモネの魅力</h2>
-    <p>アネモネの魅力は、ビロードのような質感の花びらが放つ濃密な色彩と、風にそよぐ繊細な佇まいにあります。切り花としても人気が高く、蕾から満開まで表情が変化していく過程を楽しめるのも魅力のひとつです。3月6日生まれの方はもちろん、繊細な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アネモネは日当たりと水はけの良い場所を好み、球根を浅めに植えて育てるのがおすすめです。多湿を嫌うため、雨の当たりにくい場所での栽培が向いています。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月6日生まれの方はもちろん、繊細で移ろいやすい心を届けたい贈り物としてもアネモネは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">アネモネはいつ頃咲きますか？</div>
-        <div class="faq-a">早春から春にかけて、一重や八重の色鮮やかな花を咲かせます。キンポウゲ科の多年草で、切り花としても人気があります。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アネモネの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「はかない恋」という花言葉は、風が吹くと花びらが散りやすいその繊細さが、移ろいやすい恋心に重ねられたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アネモネという名前の由来は何ですか？</div>
-        <div class="faq-a">ギリシャ語で「風」を意味する「アネモス」が語源とされ、英語でも「windflower（風の花）」と呼ばれています。</div>
+        <div class="faq-a">早春から春にかけて見頃を迎えます。一重や八重の色鮮やかな花を咲かせ、風に揺れる姿が印象的です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月6日、アネモネが教える、はかなさの中の美しさ</h2>
+    <p>アネモネの花は、咲いている期間が決して長くはありません。色鮮やかに咲き誇ったかと思うと、風が吹くたびに花びらをはらはらと落としていきます。その儚さは寂しさというより、咲いている今この瞬間の美しさをより際立たせているようにも感じられます。散り際の潔さと、咲いているあいだの華やかさ――その両方を持つ姿から、アネモネには「はかない恋」という花言葉が贈られてきたといわれています。すぐに終わってしまうものだからこそ美しい、そんな感覚は、恋に限らずさまざまな出来事にも当てはまるのかもしれません。3月という別れと出会いが重なる季節に、過ぎ去った時間の美しさをそっと思い出させてくれる花です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アネモネの花言葉「はかない恋」の由来は？</div>
+        <div class="faq-a">色鮮やかに咲きながらも花期が短く、風に花びらを散らせていく咲き方に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>終わりがあるからこそ、今この瞬間が美しく見えることがあります。今日は目の前の時間を、少し大切に味わってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アネモネから始める小さな体験</h2>
+    <p>色鮮やかな花を咲かせるアネモネにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>一重と八重、それぞれの花の咲き方を見比べてみる</li>
+      <li>過ぎ去った出来事を、そっと振り返ってみる</li>
+      <li>色鮮やかな花を一輪飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アネモネには毒性がありますか？</div>
+        <div class="faq-a">全草に毒性成分を含むといわれているため、切り花や観賞用として楽しみ、口にしたり樹液に触れすぎたりしないよう注意が必要です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">過ぎ去った時間をそっと振り返れた今日は、月の満ち欠けやラッキーカラーも確認してみませんか。開運カレンダーでは、その日の月齢やラッキーカラーもあわせて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月6日、一重と八重で色鮮やかに咲くアネモネは、はかなさの中にこそ美しさが宿ることを教えてくれる花です。</p>
     <ul>
-      <li>アネモネは早春から春に色鮮やかな花を咲かせる、3月6日の誕生花</li>
-      <li>花言葉は「はかない恋」、風に花びらが散る繊細さに由来する</li>
-      <li>ビロードのような質感の花びらと豊富な色のバリエーションが魅力</li>
-      <li>水はけの良い場所で、多湿を避けて育てたい</li>
+      <li>アネモネはキンポウゲ科の多年草で、早春から春に一重や八重の花を咲かせる</li>
+      <li>花期の短さと華やかさが、はかなさと美しさを併せ持つ印象を作る</li>
+      <li>花言葉は「はかない恋」。咲いている瞬間の美しさを象徴するといわれる</li>
+      <li>全草に毒性があるとされ、観賞用として楽しむのが基本</li>
     </ul>
   </section>
 

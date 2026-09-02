@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0828/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月28日の誕生花オイランソウの花言葉・特徴・魅力をわかりやすく解説。「同意」を象徴する房状の花の意味を紹介します。">
+  <meta name="description" content="8月28日の誕生花オイランソウの花言葉・特徴・魅力をわかりやすく解説。房状に寄り添って咲く花が教える、同意の意味を紹介します。">
   <title>8月28日の誕生花はオイランソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オイランソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏に房状の花を咲かせます。ハナシノブ科の多年草です。"}},
-      {"@type":"Question","name":"オイランソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が寄り添うように集まって房状に咲きそろう姿が、心を一つにして頷き合う調和や同意を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"オイランソウとフロックスは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。オイランソウはフロックスの和名で、同じ花を指します。華やかな花姿から花魁草と名付けられたとされています。"}}
+      {"@type":"Question","name":"オイランソウとフロックスは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、同じ花です。オイランソウはフロックスの和名で、初夏から夏にかけて房状にまとまった花を咲かせる、ハナシノブ科の多年草です。"}},
+      {"@type":"Question","name":"オイランソウの花言葉『同意』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"房状にまとまり、隣り合う花同士が寄り添うように咲く姿が、穏やかにうなずき合う心地よさを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 28 · 誕生花</span>
     <h1>8月28日の誕生花はオイランソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オイランソウは、ハナシノブ科の多年草で、初夏から夏にかけて房状の花を咲かせる、華やかで賑やかな印象を放つ花です。花言葉は「同意」。華やかで賑やかな花です。</p>
+    <p class="art-lead">房状にまとまって咲くその花には、和と洋、二つの名前がある。その二面性を柔らかく受け止めてくれる花が、オイランソウだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オイランソウとは</a></li>
-      <li><a href="#meaning">オイランソウが象徴する意味</a></li>
-      <li><a href="#charm">オイランソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月28日の誕生花として親しまれるオイランソウ</a></li>
+      <li><a href="#story">房状に寄り添う花が教える、うなずき合う心地よさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オイランソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オイランソウとは</h2>
-    <p>オイランソウは、ハナシノブ科の多年草で、8月28日の誕生花として知られています。初夏から夏にかけて房状の花を咲かせる、華やかで賑やかな印象を放つ花です。</p>
-  </section>
+    <h2>8月28日の誕生花として親しまれるオイランソウ</h2>
+    <p>オイランソウは、ハナシノブ科の多年草です。初夏から夏にかけて、房状にまとまった花を咲かせます。「フロックス」の和名としても知られ、和名と洋名、二つの呼び名を持つことがこの花の特徴の一つです。この房状に咲く花が、8月28日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オイランソウが象徴する意味</h2>
-    <p>オイランソウの花言葉は「同意」です。小さな花が寄り添うように集まって房状に咲きそろう姿が、心を一つにして頷き合う調和や同意を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オイランソウの魅力</h2>
-    <p>オイランソウの魅力は、小花が集まって咲く房状の花姿が生み出す華やかさと、甘く優しい香りにあります。花壇を賑やかに彩る夏の定番花として親しまれています。8月28日生まれの方はもちろん、心からの同意を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オイランソウは日当たりを好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月28日生まれの方はもちろん、心からの同意を伝えたい贈り物としてもオイランソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オイランソウはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から夏に房状の花を咲かせます。ハナシノブ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オイランソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな花が寄り添うように集まって房状に咲きそろう姿が、心を一つにして頷き合う調和や同意を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">オイランソウとフロックスは同じ花ですか？</div>
-        <div class="faq-a">はい。オイランソウはフロックスの和名で、同じ花を指します。華やかな花姿から花魁草と名付けられたとされています。</div>
+        <div class="faq-a">はい、同じ花です。オイランソウはフロックスの和名で、初夏から夏にかけて房状にまとまった花を咲かせる、ハナシノブ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>房状に寄り添う花が教える、うなずき合う心地よさ</h2>
+    <p>オイランソウの花は、一輪だけで完結するのではなく、いくつもの小花が房状に寄り集まって咲く。一つ一つの花はそれほど大きくないが、寄り添うように咲きそろうことで、全体として豊かな存在感が生まれる。「フロックス」という洋名を持ち合わせているのも興味深い点で、和名と洋名、二つの呼び方がこの一つの花を彩っている。花言葉「同意」は、この房状にまとまり、隣り合う花同士が寄り添うように咲く姿から生まれたと言われている。それは自分の意見を捨てて誰かに合わせることではなく、それぞれの花が自分の形を保ったまま、隣と穏やかに寄り添っている在り方に近い。一輪ずつは小さくても、集まることで生まれる調和が、この花の見どころだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オイランソウの花言葉『同意』にはどんな由来がありますか？</div>
+        <div class="faq-a">房状にまとまり、隣り合う花同士が寄り添うように咲く姿が、穏やかにうなずき合う心地よさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分の考えを持ったまま、誰かの意見にも素直にうなずくことができる人がいる。そういう柔らかな在り方は、無理に相手に合わせることとは違う、もう一つの受け止め方だ。今日出会う誰かの意見にも、まずは一度、素直にうなずいてみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オイランソウから始める小さな体験</h2>
+    <p>房状に咲く花に、「フロックス」という和の名がついているオイランソウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>房状に咲く花をじっくり観察してみる</li>
+      <li>「フロックス」というもう一つの名前を調べてみる</li>
+      <li>誰かの意見に素直にうなずいてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かと穏やかに過ごしたい一日は、今日の月齢・月相も見てみませんか。開運カレンダーでは、月齢・月相とラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな花が寄り添って咲くだけで、景色はぐっと豊かになる。</p>
     <ul>
-      <li>オイランソウは初夏から夏に房状の花を咲かせる、8月28日の誕生花</li>
-      <li>花言葉は「同意」、寄り添う花姿に由来する</li>
-      <li>房状に集まる花と優しい香りが魅力</li>
-      <li>日当たりを好み、水はけの良い土でよく育つ</li>
+      <li>オイランソウは初夏から夏に房状の花を咲かせる、ハナシノブ科の多年草で、8月28日の誕生花</li>
+      <li>花言葉は「同意」。花同士が寄り添うように咲く姿に由来すると言われる</li>
+      <li>「フロックス」の和名としても親しまれる</li>
+      <li>一輪ずつは小さくても集まることで豊かな存在感を持つ</li>
     </ul>
   </section>
 

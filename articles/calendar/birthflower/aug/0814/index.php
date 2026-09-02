@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0814/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月14日の誕生花サルビア（赤）の花言葉・特徴・魅力をわかりやすく解説。「燃ゆる想い」を象徴する鮮やかな赤い花の意味を紹介します。">
+  <meta name="description" content="8月14日の誕生花サルビア（赤）の花言葉・特徴・魅力をわかりやすく解説。燃えるような赤がまっすぐ天へと伸びる花の意味を紹介します。">
   <title>8月14日の誕生花はサルビア（赤）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サルビア（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に鮮やかな赤い花を穂状に咲かせます。シソ科の植物です。"}},
-      {"@type":"Question","name":"サルビア（赤）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"燃えるような赤色の花を穂状に咲かせ続ける情熱的な花姿が、胸の内に燃え上がる熱い想いを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"サルビアには赤以外の色もありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。青紫やピンク、白など、赤以外にもさまざまな色の品種があります。中でも赤は最も親しまれている色です。"}}
+      {"@type":"Question","name":"サルビア（赤）はいつ頃まで花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、鮮やかな赤い花を穂状に咲かせ続けます。シソ科の植物です。"}},
+      {"@type":"Question","name":"サルビア（赤）の花言葉『燃ゆる想い』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"燃えるような赤色の花を穂状に咲かせ続ける情熱的な花姿が、胸の内に燃え上がる熱い想いを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"サルビアには赤以外の色もありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。同じサルビアの仲間には、紫の花を咲かせる品種もあります。中でも赤は、力強く情熱的な印象で親しまれている色です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 14 · 誕生花</span>
     <h1>8月14日の誕生花はサルビア（赤）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サルビア（赤）は、シソ科の植物で、夏から秋になると鮮やかな赤い花を穂状に咲かせる、情熱的な印象を放つ花です。花言葉は「燃ゆる想い」。情熱的な花です。</p>
+    <p class="art-lead">赤という色に、これほどためらいのない花がある。サルビア（赤）は、燃えるような赤を穂状にまとめて、8月14日にまっすぐ天へと伸びる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,70 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サルビア（赤）とは</a></li>
-      <li><a href="#meaning">サルビア（赤）が象徴する意味</a></li>
-      <li><a href="#charm">サルビア（赤）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月14日の誕生花として親しまれるサルビア（赤）</a></li>
+      <li><a href="#story">天へ伸びる赤が灯す、心の中の炎</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サルビア（赤）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サルビア（赤）とは</h2>
-    <p>サルビア（赤）は、シソ科の植物で、8月14日の誕生花として知られています。夏から秋になると鮮やかな赤い花を穂状に咲かせる、情熱的な印象を放つ花です。</p>
-  </section>
+    <h2>8月14日の誕生花として親しまれるサルビア（赤）</h2>
+    <p>サルビア（赤）は、シソ科の植物です。夏から秋にかけて、鮮やかな赤い花を穂状に咲かせます。花は下から上へとまっすぐ伸びるように連なって咲き、独特な花の姿を作り出します。この情熱的な花が、8月14日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サルビア（赤）が象徴する意味</h2>
-    <p>サルビア（赤）の花言葉は「燃ゆる想い」です。燃えるような赤色の花を穂状に咲かせ続ける情熱的な花姿が、胸の内に燃え上がる熱い想いを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サルビア（赤）の魅力</h2>
-    <p>サルビア（赤）の魅力は、燃えるような鮮やかな赤色と、花穂に沿って次々と咲きそろう力強さにあります。夏から秋の花壇を彩る定番の花として親しまれています。8月14日生まれの方はもちろん、燃ゆる想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サルビア（赤）は日当たりを好み、暑さに強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月14日生まれの方はもちろん、燃ゆる想いを伝えたい贈り物としてもサルビア（赤）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルビア（赤）はいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に鮮やかな赤い花を穂状に咲かせます。シソ科の植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルビア（赤）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">燃えるような赤色の花を穂状に咲かせ続ける情熱的な花姿が、胸の内に燃え上がる熱い想いを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルビアには赤以外の色もありますか？</div>
-        <div class="faq-a">はい。青紫やピンク、白など、赤以外にもさまざまな色の品種があります。中でも赤は最も親しまれている色です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サルビア（赤）はいつ頃まで花を楽しめますか？</div>
+        <div class="faq-a">夏から秋にかけて、鮮やかな赤い花を穂状に咲かせ続けます。シソ科の植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>天へ伸びる赤が灯す、心の中の炎</h2>
+    <p>サルビア（赤）の赤は、ためらいのない赤だ。淡さも、くすみも持たない、まっすぐで濃い色が、細長い花穂に沿って一段ずつ積み重なるように咲いていく。その姿は、下から燃え上がる炎が、少しずつ上へと勢いを増していく様子にも似ている。一輪だけでも目を引く色だが、穂状にまとまることで、その強さはさらに増幅される。花言葉「燃ゆる想い」は、この途切れることなく上へ伸び続ける赤い炎のような姿から生まれたと言われている。まっすぐに伸びる花の姿は、内に秘めた熱を隠さずに表しているようにも見える。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サルビア（赤）の花言葉『燃ゆる想い』にはどんな由来がありますか？</div>
+        <div class="faq-a">燃えるような赤色の花を穂状に咲かせ続ける情熱的な花姿が、胸の内に燃え上がる熱い想いを象徴することに由来すると言われています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サルビアには赤以外の色もありますか？</div>
+        <div class="faq-a">はい。同じサルビアの仲間には、紫の花を咲かせる品種もあります。中でも赤は、力強く情熱的な印象で親しまれている色です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心の奥にある想いは、言葉にして初めて誰かに届く。そっとしまっていた気持ちを、自分の言葉にしてみる。まっすぐに伸びる赤い花のように、素直な表現には力がある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サルビア（赤）から始める小さな体験</h2>
+    <p>赤い花を穂のようにまとめて天へ伸ばすサルビア（赤）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな赤い花をじっくり観察してみる</li>
+      <li>心の奥にある想いを一つ、言葉にしてみる</li>
+      <li>赤色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">心の中の想いを大切にしたい一日は、今日のラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、ラッキーカラーと月齢・月相を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>下から上へと燃え上がるように咲き続ける赤い穂こそ、サルビア（赤）の燃ゆる想いを体現している。</p>
     <ul>
-      <li>サルビア（赤）は夏から秋に赤い花を咲かせる、8月14日の誕生花</li>
-      <li>花言葉は「燃ゆる想い」、燃えるような花色に由来する</li>
-      <li>鮮やかな赤色と穂状に咲く花姿が魅力</li>
-      <li>日当たりを好み、暑さに強い</li>
+      <li>サルビア（赤）は夏から秋に赤い花を穂状に咲かせる、シソ科の植物で、8月14日の誕生花</li>
+      <li>花言葉は「燃ゆる想い」。まっすぐ伸びる赤い花穂に由来するとされる</li>
+      <li>下から上へと連なって咲く独特な花の姿が特徴</li>
+      <li>ためらいのない鮮やかな赤色が魅力</li>
     </ul>
   </section>
 
@@ -260,3 +274,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0814');
 ?>
+</content>

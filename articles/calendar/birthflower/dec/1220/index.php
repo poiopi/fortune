@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1220/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月20日の誕生花ツルウメモドキの花言葉・特徴・魅力をわかりやすく解説。「開運」を象徴する縁起の良い実の意味を紹介します。">
+  <meta name="description" content="12月20日の誕生花ツルウメモドキの花言葉・特徴・魅力をわかりやすく解説。「開運」を象徴する、実が弾ける瞬間の造形を紹介します。">
   <title>12月20日の誕生花はツルウメモドキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ツルウメモドキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に実が弾けて赤い種をのぞかせます。ニシキギ科のつる性落葉低木です。"}},
-      {"@type":"Question","name":"ツルウメモドキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"熟した実が弾けて中から鮮やかな赤い種が姿を現す様子が、閉じていたものが開いていく開運の兆しを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ツルウメモドキはどんな用途で使われますか？","acceptedAnswer":{"@type":"Answer","text":"実つきの枝が縁起物とされ、リースや正月飾りなどの装飾に用いられることが多い植物です。"}}
+      {"@type":"Question","name":"ツルウメモドキの実は、どのようにして赤い種を見せるのですか？","acceptedAnswer":{"@type":"Answer","text":"熟した実の黄色い果皮が4つほどに裂けて開き、中に包まれていた鮮やかな赤い種があらわれます。"}},
+      {"@type":"Question","name":"ツルウメモドキの花言葉「開運」には、どのような意味が込められていますか？","acceptedAnswer":{"@type":"Answer","text":"閉じていた黄色い果皮が裂けて開き、中の赤い種があらわれる変化の様子が、運が開けていく兆しを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 20 · 誕生花</span>
     <h1>12月20日の誕生花はツルウメモドキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ツルウメモドキは、ニシキギ科のつる性落葉低木で、秋に実が弾けて赤い種をのぞかせる、縁起が良く華やかな印象を持つ花です。花言葉は「開運」。縁起の良い花です。</p>
+    <p class="art-lead">黄色い果皮が縦に裂けて、内側に隠れていた鮮やかな赤い種があらわれる瞬間がある。ツルウメモドキは、ニシキギ科のつる性落葉低木だ。この実が弾ける造形にこそ、この植物ならではの見どころがある。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ツルウメモドキとは</a></li>
-      <li><a href="#meaning">ツルウメモドキが象徴する意味</a></li>
-      <li><a href="#charm">ツルウメモドキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月20日の誕生花として親しまれるツルウメモドキ</a></li>
+      <li><a href="#story">実が弾ける、その一瞬に宿るツルウメモドキの造形美</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ツルウメモドキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ツルウメモドキとは</h2>
-    <p>ツルウメモドキは、ニシキギ科のつる性落葉低木で、12月20日の誕生花として知られています。秋に実が弾けて赤い種をのぞかせる、縁起が良く華やかな印象を持つ花です。</p>
-  </section>
+    <h2>12月20日の誕生花として親しまれるツルウメモドキ</h2>
+    <p>ツルウメモドキは、ニシキギ科のつる性落葉低木で、12月20日の誕生花として知られています。熟すと黄色い果皮が裂けて、中から鮮やかな赤い種が顔をのぞかせる、独特な実のなり方をする植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ツルウメモドキが象徴する意味</h2>
-    <p>ツルウメモドキの花言葉は「開運」です。熟した実が弾けて中から鮮やかな赤い種が姿を現す様子が、閉じていたものが開いていく開運の兆しを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ツルウメモドキの魅力</h2>
-    <p>ツルウメモドキの魅力は、黄色い果皮が弾けて赤い種がのぞく秋ならではの色の対比と、縁起物としての華やかさにあります。12月20日生まれの方はもちろん、開運の願いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ツルウメモドキは日当たりの良い場所を好み、支柱やフェンスに絡ませて育てます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月20日生まれの方はもちろん、開運の願いを伝えたい贈り物としてもツルウメモドキは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツルウメモドキはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に実が弾けて赤い種をのぞかせます。ニシキギ科のつる性落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツルウメモドキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">熟した実が弾けて中から鮮やかな赤い種が姿を現す様子が、閉じていたものが開いていく開運の兆しを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツルウメモドキはどんな用途で使われますか？</div>
-        <div class="faq-a">実つきの枝が縁起物とされ、リースや正月飾りなどの装飾に用いられることが多い植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ツルウメモドキの実は、どのようにして赤い種を見せるのですか？</div>
+        <div class="faq-a">熟した実の黄色い果皮が4つほどに裂けて開き、中に包まれていた鮮やかな赤い種があらわれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>実が弾ける、その一瞬に宿るツルウメモドキの造形美</h2>
+    <p>ツルウメモドキの実は、はじめ黄色い果皮に包まれたまま、ただの丸い粒として枝先にぶら下がっている。熟す頃になると、その果皮が四方に裂けて開き、内側に隠れていた赤い種が姿をあらわす。閉じていたものが開き、隠れていたものが見えるようになる、この変化の瞬間こそがツルウメモドキという植物の面白さだ。よく見ると、裂けた果皮の内側は果肉のような質感を持ち、外側の黄色と内側の赤という色の対比も鮮やかに映る。つる状に伸びる枝に、いくつもの実がこの姿で連なる様子は、遠目にも近くで見ても、それぞれ違う表情を見せてくれる。花言葉「開運」は、閉ざされていたものが開く、この造形の変化を映した名付けなのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ツルウメモドキの花言葉「開運」には、どのような意味が込められていますか？</div>
+        <div class="faq-a">閉じていた黄色い果皮が裂けて開き、中の赤い種があらわれる変化の様子が、運が開けていく兆しを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>閉じていたものが、ある日突然ひらく瞬間がある。変わらないように見えていた毎日にも、そんな小さな転換点は静かに近づいているのかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ツルウメモドキから始める小さな体験</h2>
+    <p>実が弾けて赤い種がのぞく、この移り変わりにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>実が弾けて種がのぞく様子を、思い浮かべてみる</li>
+      <li>つる状に伸びる枝ぶりを、じっくり眺めてみる</li>
+      <li>黄色と赤、対照的な色の組み合わせを探してみる</li>
+    </ul>
+
+    <p class="cta-lead">今日の心の動きが気になるときは、開運カレンダーで星座の運勢もあわせてご覧ください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>閉じていたものが開く瞬間には、思いがけない発見が宿っている。</p>
     <ul>
-      <li>ツルウメモドキは秋に実が弾けて赤い種をのぞかせる、12月20日の誕生花</li>
-      <li>花言葉は「開運」、実が弾ける姿に由来する</li>
-      <li>実が弾けて赤い種をのぞかせる、秋ならではの華やかな姿</li>
-      <li>日当たりの良い場所を好み、支柱やフェンスに絡ませて育てます</li>
+      <li>ツルウメモドキは、ニシキギ科のつる性落葉低木で、実が弾けて赤い種をのぞかせる、12月20日の誕生花</li>
+      <li>花言葉は「開運」。閉じた果皮が開く変化の姿に由来すると言われる</li>
+      <li>見頃（実）は秋。12月時点では実の時期からやや離れている可能性がある点に留意したい</li>
+      <li>黄色と赤が織りなす対比は、つる性の枝にいくつも連なって独特の景色を作る</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-20'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1220'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-20');
+echo autoLink($html, 'birthflower-dec-1220');
 ?>

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0610/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月10日の誕生花ラベンダーの花言葉・特徴・魅力をわかりやすく解説。「疑問・鎮静」を象徴する爽やかな香りの花の意味を紹介します。">
+  <meta name="description" content="6月10日の誕生花ラベンダーの花言葉・特徴・魅力をわかりやすく解説。紫の花穂と爽やかな香りに込められた「疑問・鎮静」の意味を紹介します。">
   <title>6月10日の誕生花はラベンダー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ラベンダーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏から夏に紫色の花穂を咲かせます。シソ科の常緑小低木で、爽やかな香りが特徴です。"}},
-      {"@type":"Question","name":"ラベンダーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「疑問」「鎮静」という花言葉は、心を落ち着かせる香りが緊張をほどき、静かに自分と向き合う時間を与えることに由来すると言われています。"}},
-      {"@type":"Question","name":"ラベンダーはどんな用途で使われますか？","acceptedAnswer":{"@type":"Answer","text":"香りを生かしてアロマやポプリ、ハーブティーなど、暮らしの中で幅広く活用されています。"}}
+      {"@type":"Question","name":"ラベンダーはどんな香りの花ですか？","acceptedAnswer":{"@type":"Answer","text":"紫色の花穂から爽やかな香りを漂わせる、シソ科の常緑小低木です。"}},
+      {"@type":"Question","name":"ラベンダーの花言葉『疑問・鎮静』はどこに由来しますか？","acceptedAnswer":{"@type":"Answer","text":"香りが心を落ち着かせると考えられてきたことに由来すると言われています。"}},
+      {"@type":"Question","name":"ラベンダーはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"紫色の花穂を咲かせます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 10 · 誕生花</span>
     <h1>6月10日の誕生花はラベンダー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ラベンダーは、シソ科の常緑小低木で、初夏から夏に紫色の花穂を咲かせる6月10日の誕生花です。花言葉は「疑問・鎮静」。癒しと安らぎを感じさせる花です。</p>
+    <p class="art-lead">風が吹くたびに、紫の花穂から爽やかな香りが漂ってきます。ラベンダーは、シソ科の常緑小低木で、香りとともに親しまれてきた植物です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ラベンダーとは</a></li>
-      <li><a href="#meaning">ラベンダーが象徴する意味</a></li>
-      <li><a href="#charm">ラベンダーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月10日の誕生花として親しまれるラベンダー</a></li>
+      <li><a href="#story">香りが運ぶ、ラベンダーの静けさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ラベンダーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ラベンダーとは</h2>
-    <p>ラベンダーは、シソ科の常緑小低木で、6月10日の誕生花として知られています。初夏から夏になると紫色の花穂を咲かせ、爽やかな香りを漂わせながら癒しと安らぎを感じさせる花です。</p>
-  </section>
+    <h2>6月10日の誕生花として親しまれるラベンダー</h2>
+    <p>ラベンダーは、シソ科の常緑小低木です。初夏から夏にかけて紫色の花穂を咲かせ、爽やかな香りを漂わせます。癒しと安らぎを感じさせる植物として、6月10日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ラベンダーが象徴する意味</h2>
-    <p>ラベンダーの花言葉は「疑問」「鎮静」です。心を落ち着かせる香りが緊張をほどき、静かに自分自身と向き合う時間を与えてくれることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ラベンダーの魅力</h2>
-    <p>ラベンダーの魅力は、紫の花穂が織りなす美しい群生と、心を穏やかにする爽やかな香りにあります。ハーブとしてもポプリやアロマなど幅広く活用され、暮らしに癒しを添える花です。6月10日生まれの方はもちろん、安らぎを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ラベンダーは日当たりと風通しの良い場所を好み、高温多湿に弱いため蒸れないよう管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月10日生まれの方はもちろん、安らぎを届けたい贈り物としてもラベンダーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラベンダーはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏から夏に紫色の花穂を咲かせます。シソ科の常緑小低木で、爽やかな香りが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラベンダーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「疑問」「鎮静」という花言葉は、心を落ち着かせる香りが緊張をほどき、静かに自分と向き合う時間を与えることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラベンダーはどんな用途で使われますか？</div>
-        <div class="faq-a">香りを生かしてアロマやポプリ、ハーブティーなど、暮らしの中で幅広く活用されています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ラベンダーはどんな香りの花ですか？</div>
+        <div class="faq-a">紫色の花穂から爽やかな香りを漂わせる、シソ科の常緑小低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>香りが運ぶ、ラベンダーの静けさ</h2>
+    <p>ラベンダーの魅力は、目で見る前に香りで気づかされることが多い点にあります。紫色の花穂に近づくと、爽やかな香りがふわりと鼻先をかすめ、それだけで少し肩の力が抜けるような感覚を覚える人も少なくありません。この香りは、香水や入浴剤など暮らしの中のさまざまな場面に取り入れられており、人々が古くから心地よさを求めてきた証でもあります。答えの出ない問いを抱えているときほど、こうした香りに包まれる時間が、心を落ち着ける助けになるとも言われています。香りに包まれるひとときが心を落ち着かせてくれるという実感が、「疑問・鎮静」という花言葉の背景にあるようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ラベンダーの花言葉「疑問・鎮静」はどこに由来しますか？</div>
+        <div class="faq-a">香りが心を落ち着かせると考えられてきたことに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>香りに包まれると、心の中の疑問がすっと静まっていく。そんな経験に覚えはありませんか。答えの出ない問いを抱えているときほど、立ち止まって深呼吸する時間が助けになります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ラベンダーから始める小さな体験</h2>
+    <p>香りとともに心を静めるラベンダーにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の花穂の香りを確かめてみる</li>
+      <li>心を落ち着かせる時間を少し作ってみる</li>
+      <li>爽やかな香りのアイテムでリフレッシュしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ラベンダーはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">紫色の花穂を咲かせます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心を落ち着けたい今日は、ラッキープレイスや月齢・月相もあわせてチェックしてみませんか。開運カレンダーでは、おすすめの場所と今日の月の満ち欠けを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>紫の香りに包まれるラベンダーのそばでは、心がすっとほどけていくのを感じます。</p>
     <ul>
-      <li>ラベンダーは初夏から夏に紫の花穂を咲かせる、6月10日の誕生花</li>
-      <li>花言葉は「疑問」「鎮静」、心を落ち着かせる香りに由来する</li>
-      <li>美しい群生と癒しの香りが魅力</li>
-      <li>日当たりと風通しの良い場所でよく育つ</li>
+      <li>ラベンダーはシソ科の常緑小低木で、紫の花穂を咲かせる、6月10日の誕生花</li>
+      <li>花言葉は「疑問・鎮静」。香りが心を落ち着けるという印象に結びついているとされる</li>
+      <li>紫色の花穂と爽やかな香りが魅力</li>
+      <li>香水や入浴剤など、暮らしの中で広く取り入れられている</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0704/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月4日の誕生花ハナギボシの花言葉・特徴・魅力をわかりやすく解説。「沈静」を象徴する夏に咲く紫や白の花穂の意味を紹介します。">
+  <meta name="description" content="7月4日の誕生花ハナギボシの花言葉・特徴・魅力をわかりやすく解説。夏にひっそりと紫や白の花を咲かせる、キジカクシ科の多年草を紹介します。">
   <title>7月4日の誕生花はハナギボシ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハナギボシはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に紫や白の花を咲かせます。キジカクシ科の多年草です。"}},
-      {"@type":"Question","name":"ハナギボシの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"涼しげな花色と落ち着いた佇まいが、心を静かに鎮める穏やかさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ハナギボシはどんな場所に植えられますか？","acceptedAnswer":{"@type":"Answer","text":"日陰でも育てやすいため、庭園の下草や鉢植えとして親しまれています。"}}
+      {"@type":"Question","name":"ハナギボシはギボウシの仲間なのですか？","acceptedAnswer":{"@type":"Answer","text":"はい。キジカクシ科に属し、ギボウシの仲間として知られています。夏に紫や白の花を咲かせます。"}},
+      {"@type":"Question","name":"ハナギボシの花言葉『沈静』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"涼しげな花色と落ち着いた佇まいが、心を静かに鎮める穏やかさを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"ハナギボシはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"紫や白の、落ち着いた色合いの花を咲かせます。夏に見頃を迎えます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 4 · 誕生花</span>
     <h1>7月4日の誕生花はハナギボシ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハナギボシは、キジカクシ科の多年草で、夏になると紫や白の花を茎の先に咲かせ、大きな葉とともに落ち着いた雰囲気を漂わせる花です。花言葉は「沈静」。涼やかな花色で夏を彩る花です。</p>
+    <p class="art-lead">紫や白の花が、夏の合間にひっそりと顔をのぞかせています。ハナギボシは、夏の喧騒から少し離れた場所で静かに咲く、キジカクシ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハナギボシとは</a></li>
-      <li><a href="#meaning">ハナギボシが象徴する意味</a></li>
-      <li><a href="#charm">ハナギボシの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月4日の誕生花として親しまれるハナギボシ</a></li>
+      <li><a href="#story">夏の合間に、静かに咲くハナギボシ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハナギボシから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハナギボシとは</h2>
-    <p>ハナギボシは、キジカクシ科の多年草で、7月4日の誕生花として知られています。夏になると紫や白の花を茎の先に咲かせ、大きな葉とともに落ち着いた雰囲気を漂わせる花です。</p>
-  </section>
+    <h2>7月4日の誕生花として親しまれるハナギボシ</h2>
+    <p>ハナギボシは、キジカクシ科の多年草でギボウシの仲間です。夏になると、紫や白の花を咲かせます。落ち着いた色合いの花を咲かせるこの姿から、7月4日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハナギボシが象徴する意味</h2>
-    <p>ハナギボシの花言葉は「沈静」です。涼しげな花色と落ち着いた佇まいが、心を静かに鎮める穏やかさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハナギボシの魅力</h2>
-    <p>ハナギボシの魅力は、紫や白の涼やかな花色と、大きな葉が織りなす落ち着いた佇まいにあります。日陰でも育てやすく、庭園の下草として日本の暮らしに根付いています。7月4日生まれの方はもちろん、穏やかな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハナギボシは半日陰を好み、乾燥を避けて適度な湿り気を保つと管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月4日生まれの方はもちろん、穏やかな想いを伝えたい贈り物としてもハナギボシは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナギボシはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に紫や白の花を咲かせます。キジカクシ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナギボシの花言葉の由来は何ですか？</div>
-        <div class="faq-a">涼しげな花色と落ち着いた佇まいが、心を静かに鎮める穏やかさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナギボシはどんな場所に植えられますか？</div>
-        <div class="faq-a">日陰でも育てやすいため、庭園の下草や鉢植えとして親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ハナギボシはギボウシの仲間なのですか？</div>
+        <div class="faq-a">はい。キジカクシ科に属し、ギボウシの仲間として知られています。夏に紫や白の花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏の合間に、静かに咲くハナギボシ</h2>
+    <p>夏本番を迎える頃、庭では多くの植物が旺盛に生い茂りますが、ハナギボシはそうした季節の中でも、紫や白の落ち着いた色合いの花を静かに咲かせます。周囲が生命力にあふれる季節だからこそ、この花の穏やかな色合いは一段と際立ち、涼を運ぶような静けさを漂わせます。ギボウシの仲間として知られるこの花は、夏の暑さの中でも足元でひっそりと咲き続け、喧騒から一歩離れた場所に自分の時間を持っているようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナギボシの花言葉『沈静』の由来は何ですか？</div>
+        <div class="faq-a">涼しげな花色と落ち着いた佇まいが、心を静かに鎮める穏やかさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>分刻みの予定に追われていると、ふと足を止めたくなる瞬間が訪れます。ハナギボシが夏の旺盛な緑の中で紫や白の花をひっそりと静かに咲かせるように、目立たない場所にも、自分だけの静けさはちゃんと息づいているものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハナギボシから始める小さな体験</h2>
+    <p>紫や白の花をひっそりと咲かせるハナギボシにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫や白の花をじっくり観察してみる</li>
+      <li>静かな時間を意識してつくってみる</li>
+      <li>深呼吸をして心を落ち着けてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナギボシはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">紫や白の、落ち着いた色合いの花を咲かせます。夏に見頃を迎えます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かな時間を過ごしたい今日は、月齢・月相やおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、月齢・月相とおすすめの行動を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>『沈静』という花言葉を持つハナギボシは、涼しげな色合いと落ち着いた佇まいで、見る人の心をそっと鎮めてくれる花である。</p>
     <ul>
-      <li>ハナギボシは夏に紫や白の花を咲かせる、7月4日の誕生花</li>
-      <li>花言葉は「沈静」、涼しげで落ち着いた佇まいに由来する</li>
-      <li>涼やかな花色と大きな葉の落ち着いた雰囲気が魅力</li>
-      <li>半日陰で、適度な湿り気を保つことが必要</li>
+      <li>ハナギボシは夏に紫や白の花を咲かせる、キジカクシ科の多年草でギボウシの仲間、7月4日の誕生花</li>
+      <li>花言葉は「沈静」。涼しげな花色と落ち着いた佇まいに由来するとされる</li>
+      <li>落ち着いた色合いの花を咲かせるのが特徴</li>
+      <li>喧騒から少し距離を置くような静けさが魅力</li>
     </ul>
   </section>
 

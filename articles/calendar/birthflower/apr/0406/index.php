@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0406/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月6日の誕生花スオウバナの花言葉・特徴・魅力をわかりやすく解説。「豊かな生活」を象徴する紅紫色の花木の意味を紹介します。">
+  <meta name="description" content="4月6日の誕生花スオウバナの花言葉・特徴・魅力をわかりやすく解説。「豊かな生活」を象徴する紅紫色の花木、ハナズオウの意味を紹介します。">
   <title>4月6日の誕生花はスオウバナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スオウバナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に紅紫色の花を枝いっぱいに咲かせます。マメ科の落葉低木で、ハナズオウの別名でも親しまれています。"}},
-      {"@type":"Question","name":"スオウバナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「豊かな生活」という花言葉は、枝いっぱいに隙間なく咲き誇る花の様子に由来すると言われています。"}},
-      {"@type":"Question","name":"スオウバナはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"葉が開くよりも先に、枝や幹に直接寄り添うように紅紫色の小花を咲かせるのが特徴です。"}}
+      {"@type":"Question","name":"スオウバナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、紅紫色の花を枝いっぱいに咲かせます。マメ科の落葉低木で、「ハナズオウ」の別名でも親しまれています。"}},
+      {"@type":"Question","name":"スオウバナの花言葉「豊かな生活」の由来は？","acceptedAnswer":{"@type":"Answer","text":"葉が茂る前の枝いっぱいに紅紫色の花が隙間なく咲き誇る、満ち足りた景観に由来するといわれています。"}},
+      {"@type":"Question","name":"スオウバナとハナズオウは違う花ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、スオウバナとハナズオウは同じ花を指す別名同士で、異なる植物ではありません。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 6 · 誕生花</span>
     <h1>4月6日の誕生花はスオウバナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スオウバナは、マメ科の落葉低木で、春に紅紫色の花を枝いっぱいに咲かせる4月6日の誕生花です。花言葉は「豊かな生活」。ハナズオウの別名でも親しまれています。</p>
+    <p class="art-lead">4月6日、桜が散り始め新緑への準備が進む頃。枝いっぱいに紅紫色の花をまとうスオウバナは、今ある暮らしの豊かさにふと気づかせてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スオウバナとは</a></li>
-      <li><a href="#meaning">スオウバナが象徴する意味</a></li>
-      <li><a href="#charm">スオウバナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月6日の誕生花として親しまれるスオウバナ</a></li>
+      <li><a href="#story">紅紫色が語る、スオウバナの豊かな生活</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スオウバナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スオウバナとは</h2>
-    <p>スオウバナは、マメ科の落葉低木で、4月6日の誕生花として知られています。ハナズオウの別名でも呼ばれ、葉が開くよりも先に、枝や幹に直接寄り添うように紅紫色の小花をびっしりと咲かせるのが特徴です。</p>
-  </section>
+    <h2>4月6日の誕生花として親しまれるスオウバナ</h2>
+    <p>スオウバナは、マメ科の落葉低木です。春になると、枝いっぱいに紅紫色の花を咲かせます。「ハナズオウ」という別名でも呼ばれ、同じ花を指す二つの呼び名として親しまれています。4月6日の誕生花として、その染まるような紅紫色の景観が重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スオウバナが象徴する意味</h2>
-    <p>スオウバナの花言葉は「豊かな生活」です。枝いっぱいに隙間なく咲き誇る花の様子が、満ち足りた実り豊かな暮らしを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スオウバナの魅力</h2>
-    <p>スオウバナの魅力は、枝や幹に直接花をまとうように咲く、他にはない独特な咲き方にあります。まだ緑の葉がない時期に鮮やかな紅紫色が枝を染める様子は、春の庭に強い印象を残してくれます。4月6日生まれの方はもちろん、豊かな暮らしを願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スオウバナは日当たりの良い場所を好み、丈夫で育てやすい花木です。開花後に伸びすぎた枝を整理する程度の剪定で、翌年も花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月6日生まれの方はもちろん、豊かな暮らしを願う贈り物としてもスオウバナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">スオウバナはいつ頃咲きますか？</div>
-        <div class="faq-a">春に紅紫色の花を枝いっぱいに咲かせます。マメ科の落葉低木で、ハナズオウの別名でも親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スオウバナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「豊かな生活」という花言葉は、枝いっぱいに隙間なく咲き誇る花の様子に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スオウバナはどんな咲き方をしますか？</div>
-        <div class="faq-a">葉が開くよりも先に、枝や幹に直接寄り添うように紅紫色の小花を咲かせるのが特徴です。</div>
+        <div class="faq-a">春に、紅紫色の花を枝いっぱいに咲かせます。マメ科の落葉低木で、「ハナズオウ」の別名でも親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紅紫色が語る、スオウバナの豊かな生活</h2>
+    <p>スオウバナが咲く頃、枝の一本一本が隙間なく紅紫色に染まり、まるで枝そのものが色を持ったかのような景観が広がります。まだ葉が茂る前の裸の枝に、これほどまでに密に花がつくのは他にあまり例がなく、その色の密度が見る人に満ち足りた印象を与えます。決して派手すぎず、それでいて力強い紅紫色は、豊かさというものが静かに、しかし確かに存在していることを思わせます。マメ科の落葉低木として、庭木としても親しまれてきました。そんな、隙間なく咲き誇る紅紫色の豊かさから、スオウバナには「豊かな生活」という花言葉が贈られているといわれています。この言葉は、特別な出来事がなくても、日々の暮らしそのものが満たされているという感覚を表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スオウバナの花言葉「豊かな生活」の由来は？</div>
+        <div class="faq-a">葉が茂る前の枝いっぱいに紅紫色の花が隙間なく咲き誇る、満ち足りた景観に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今すでに手にしているものへそっと目を向けてみると、案外満ち足りた景色が広がっていることに気づきます。今日は、そんな暮らしの豊かさをじっくり感じ取ってみたい日です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スオウバナから始める小さな体験</h2>
+    <p>枝いっぱいに紅紫色の花をまとうスオウバナにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>枝いっぱいに咲く紅紫色の花を探してみる</li>
+      <li>今の暮らしの中で恵まれていることを一つ書き出してみる</li>
+      <li>別名を持つ花を調べて、呼び方の違いを知ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スオウバナとハナズオウは違う花ですか？</div>
+        <div class="faq-a">いいえ、スオウバナとハナズオウは同じ花を指す別名同士で、異なる植物ではありません。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">満ち足りた気持ちで過ごしたい今日は、ラッキーフードや年九星も気になるところ。開運カレンダーでは、その日のラッキーフードと年九星をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月6日、枝いっぱいに紅紫色をまとうスオウバナは、今ある暮らしの豊かさに気づかせてくれる花です。</p>
     <ul>
-      <li>スオウバナは春に紅紫色の花を咲かせる、4月6日の誕生花</li>
-      <li>花言葉は「豊かな生活」、隙間なく咲き誇る花に由来する</li>
-      <li>枝や幹に直接花をまとう独特な咲き方が魅力</li>
-      <li>日当たりの良い場所で、花後の軽い剪定で育てたい</li>
+      <li>スオウバナはマメ科の落葉低木で、春に紅紫色の花を枝いっぱいに咲かせる</li>
+      <li>「ハナズオウ」という別名でも呼ばれる、同じ花を指す呼び名を持つ</li>
+      <li>花言葉は「豊かな生活」。隙間なく咲き誇る満ち足りた景観に由来するといわれる</li>
+      <li>豊かな生活は、今すでにある暮らしの満たされた感覚を表す言葉ともいえる</li>
     </ul>
   </section>
 

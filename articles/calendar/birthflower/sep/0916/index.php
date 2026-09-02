@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0916/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月16日の誕生花アスクレピアスの花言葉・特徴・魅力をわかりやすく解説。「移り気」を象徴するオレンジ色の小花の意味を紹介します。">
+  <meta name="description" content="9月16日の誕生花アスクレピアスの花言葉・特徴・魅力をわかりやすく解説。「移り気」を象徴するオレンジと黄色の小花の意味を紹介します。">
   <title>9月16日の誕生花はアスクレピアス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アスクレピアスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にオレンジや黄色の小花を集めて咲かせます。キョウチクトウ科の多年草です。"}},
-      {"@type":"Question","name":"アスクレピアスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"オレンジや黄色など複数の色合いを持つ小花が一つの株に集まって咲く変化に富んだ花姿が、移ろいやすい心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アスクレピアスにはどんな別名がありますか？","acceptedAnswer":{"@type":"Answer","text":"「トウワタ」という和名でも呼ばれ、蝶が集まる花として庭木にも用いられています。"}}
+      {"@type":"Question","name":"アスクレピアスの花はどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"オレンジや黄色の小さな花が、いくつも集まって房のように咲きます。単色ではなく、複数の色合いが同居するユニークな咲き方が特徴です。"}},
+      {"@type":"Question","name":"アスクレピアスの花言葉『移り気』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"オレンジや黄色の小花が集まって咲き、色合いが複雑に入り混じって見える様子に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 16 · 誕生花</span>
     <h1>9月16日の誕生花はアスクレピアス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アスクレピアスは、キョウチクトウ科の多年草で、夏にオレンジや黄色の小花を集めて咲かせる、個性的で目を引く印象を放つ花です。花言葉は「移り気」。個性的で目を引く花です。</p>
+    <p class="art-lead">一つの房の中に、オレンジと黄色が入り混じって咲く。気まぐれにも見えるその色合いを持つのが、9月16日の誕生花アスクレピアスだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アスクレピアスとは</a></li>
-      <li><a href="#meaning">アスクレピアスが象徴する意味</a></li>
-      <li><a href="#charm">アスクレピアスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月16日の誕生花として親しまれるアスクレピアス</a></li>
+      <li><a href="#story">移ろう色が教える、気まぐれの魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アスクレピアスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アスクレピアスとは</h2>
-    <p>アスクレピアスは、キョウチクトウ科の多年草で、9月16日の誕生花として知られています。夏にオレンジや黄色の小花を集めて咲かせる、個性的で目を引く印象を放つ花です。</p>
-  </section>
+    <h2>9月16日の誕生花として親しまれるアスクレピアス</h2>
+    <p>アスクレピアスは、キョウチクトウ科の多年草です。夏になると、オレンジや黄色の小花が集まって咲きます。ユニークな咲き方を持つ花として知られ、9月16日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アスクレピアスが象徴する意味</h2>
-    <p>アスクレピアスの花言葉は「移り気」です。オレンジや黄色など複数の色合いを持つ小花が一つの株に集まって咲く変化に富んだ花姿が、移ろいやすい心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アスクレピアスの魅力</h2>
-    <p>アスクレピアスの魅力は、鮮やかなオレンジ色を中心とした小花が集まって咲くユニークな花姿と、蝶を誘う存在感にあります。切り花としても人気です。 9月16日生まれの方はもちろん、移ろいゆく想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アスクレピアスは日当たりを好み、乾燥に強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月16日生まれの方はもちろん、移ろいゆく想いを伝えたい贈り物としてもアスクレピアスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アスクレピアスはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にオレンジや黄色の小花を集めて咲かせます。キョウチクトウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アスクレピアスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">オレンジや黄色など複数の色合いを持つ小花が一つの株に集まって咲く変化に富んだ花姿が、移ろいやすい心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アスクレピアスにはどんな別名がありますか？</div>
-        <div class="faq-a">「トウワタ」という和名でも呼ばれ、蝶が集まる花として庭木にも用いられています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アスクレピアスの花はどんな咲き方をしますか？</div>
+        <div class="faq-a">オレンジや黄色の小さな花が、いくつも集まって房のように咲きます。単色ではなく、複数の色合いが同居するユニークな咲き方が特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>移ろう色が教える、気まぐれの魅力</h2>
+    <p>アスクレピアスの花は、オレンジと黄色が入り混じった小さな花が、いくつも集まって房のように咲く。一つひとつの色合いは、見るたびに少しずつ違う表情を見せる。単色で統一された花とは違い、複数の色が同居する姿は、どこか気まぐれな印象を与える。花言葉「移り気」は、そんな色合いの変化や、集まって咲く独特の姿から来ていると言われている。ただし、この移り気さは、決して不誠実さを意味するものではない。むしろ、一つの表情に縛られない自由さとして受け止めることもできる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アスクレピアスの花言葉『移り気』にはどんな由来がありますか？</div>
+        <div class="faq-a">オレンジや黄色の小花が集まって咲き、色合いが複雑に入り混じって見える様子に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心はいつも一定ではない。オレンジと黄色が入り混じって咲くアスクレピアスのように、揺れ動く気分もまた、自分らしさの一部なのだろう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アスクレピアスから始める小さな体験</h2>
+    <p>オレンジと黄色の小花を集めて咲くアスクレピアスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>小花が集まって咲く様子をじっくり観察してみる</li>
+      <li>今日の気分を一つ、素直に書き出してみる</li>
+      <li>オレンジや黄色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">気分の揺れも自分らしさとして受け止めたい日は、今日のラッキーカラーも見てみませんか。開運カレンダーでは、ラッキーカラーとおすすめアイテムを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「移り気」という花言葉は、決して悪い意味ばかりではない。オレンジと黄色が入り混じって咲くアスクレピアスを見ていると、そう思えてくる。</p>
     <ul>
-      <li>アスクレピアスは夏にオレンジや黄色の小花を咲かせる、9月16日の誕生花</li>
-      <li>花言葉は「移り気」、集まって咲く花姿に由来する</li>
-      <li>ユニークな花姿が魅力</li>
-      <li>日当たりを好み、乾燥に強い</li>
+      <li>アスクレピアスは夏にオレンジや黄色の小花が集まって咲く、キョウチクトウ科の多年草で、9月16日の誕生花</li>
+      <li>花言葉は「移り気」。集まって咲く色合いの変化に由来すると言われる</li>
+      <li>ユニークな咲き方を持つ花として知られている</li>
+      <li>揺れ動く気分もまた、自分らしさの一部と教えてくれる花</li>
     </ul>
   </section>
 

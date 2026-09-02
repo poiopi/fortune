@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0215/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月15日の誕生花サンシュユの花言葉・特徴・魅力をわかりやすく解説。「永遠」を象徴する早春に咲く花木の意味を紹介します。">
+  <meta name="description" content="2月15日の誕生花サンシュユの花言葉・特徴・魅力をわかりやすく解説。「永遠」を象徴する、早春に枝いっぱいに咲く黄色い花木の意味を紹介します。">
   <title>2月15日の誕生花はサンシュユ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サンシュユはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に、黄色い小花を枝いっぱいに咲かせます。まだ他の花木が芽吹く前に、いち早く花を咲かせる花木です。"}},
-      {"@type":"Question","name":"サンシュユの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「永遠」という花言葉は、枝いっぱいに黄色い花を咲かせ続ける生命力に由来するとされています。"}},
-      {"@type":"Question","name":"サンシュユは何のために植えられますか？","acceptedAnswer":{"@type":"Answer","text":"早春に黄色い花を枝いっぱいに咲かせるため庭木として親しまれ、秋には赤い実もつけます。"}}
+      {"@type":"Question","name":"サンシュユはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に見頃を迎えます。葉に先駆けて、黄色い小花を枝いっぱいに咲かせる花木です。"}},
+      {"@type":"Question","name":"サンシュユの花言葉「永遠」の由来は？","acceptedAnswer":{"@type":"Answer","text":"毎年変わらず早春に咲き、季節の訪れを告げ続けるその律儀な姿に由来するといわれています。変わらないことへの安心感を象徴する言葉です。"}},
+      {"@type":"Question","name":"サンシュユは他の黄色い早春の花木と同じですか？","acceptedAnswer":{"@type":"Answer","text":"マンサクなど、同じ時期に黄色い花を咲かせる花木は他にもありますが、それぞれ科や特徴が異なります。混同しないよう、花や枝の様子で見分けるとよいでしょう。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 15 · 誕生花</span>
     <h1>2月15日の誕生花はサンシュユ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サンシュユは、ミズキ科の落葉高木で、早春に黄色い小花を枝いっぱいに咲かせる2月15日の誕生花です。花言葉は「永遠」。春の訪れをいち早く告げる花木です。</p>
+    <p class="art-lead">早春、まだ肌寒さの残る枝いっぱいに、黄色い小花をあふれさせて咲くサンシュユ。2月15日の誕生花に選ばれたこの花は、季節に先駆けて春の気配を伝えます。今日はその力強さに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サンシュユとは</a></li>
-      <li><a href="#meaning">サンシュユが象徴する意味</a></li>
-      <li><a href="#charm">サンシュユの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">早春の枝を彩る、サンシュユの黄色い小花</a></li>
+      <li><a href="#story">2月15日、サンシュユが告げる変わらない季節の約束</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サンシュユから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サンシュユとは</h2>
-    <p>サンシュユは、ミズキ科の落葉高木で、2月15日の誕生花として知られています。早春、まだ葉が出る前の枝に、小さな黄色い花を無数に咲かせ、遠目にも黄金色に輝いて見える花木です。</p>
-  </section>
+    <h2>早春の枝を彩る、サンシュユの黄色い小花</h2>
+    <p>サンシュユは、ミズキ科の落葉高木です。早春になると、葉が茂るより先に、黄色い小花を枝いっぱいに咲かせます。一つ一つの花は小さくても、枝全体を覆うように咲くその姿は、遠くからでもよく目立ちます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サンシュユが象徴する意味</h2>
-    <p>サンシュユの花言葉は「永遠」です。毎年変わらず枝いっぱいに花を咲かせ続けるその力強い生命力が、途切れることのない永遠の思いを象徴するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サンシュユの魅力</h2>
-    <p>サンシュユの魅力は、他の花木に先駆けて咲く早春の華やかさと、秋にできる赤い実の対比にあります。「春黄金花（はるこがねばな）」とも呼ばれ、庭木や公園樹として親しまれています。2月15日生まれの方はもちろん、変わらぬ想いを届けたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サンシュユは日当たりと水はけの良い場所を好み、丈夫で育てやすい花木です。植え付け後は特別な手間をかけなくても、毎年花を咲かせてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月15日生まれの方はもちろん、変わらない想いを伝えたい贈り物としてもサンシュユは意味のある花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">サンシュユはいつ頃咲きますか？</div>
-        <div class="faq-a">早春に、黄色い小花を枝いっぱいに咲かせます。まだ他の花木が芽吹く前に、いち早く花を咲かせる花木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サンシュユの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「永遠」という花言葉は、枝いっぱいに黄色い花を咲かせ続ける生命力に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サンシュユは何のために植えられますか？</div>
-        <div class="faq-a">早春に黄色い花を枝いっぱいに咲かせるため庭木として親しまれ、秋には赤い実もつけます。</div>
+        <div class="faq-a">早春に見頃を迎えます。葉に先駆けて、黄色い小花を枝いっぱいに咲かせる花木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月15日、サンシュユが告げる変わらない季節の約束</h2>
+    <p>まだ寒さの抜けきらない早春の景色の中で、サンシュユの枝だけが一足先に黄色く色づく光景は、毎年変わらず訪れる季節の約束のようなものです。冬から春への移り変わりは年によって早かったり遅かったりしますが、サンシュユが咲けば、確かに春が近づいているのだと感じられます。一つ一つの花は小さくても、枝全体を覆うほどに咲き揃うことで、遠くからでもはっきりと季節の変化を伝えてくれる存在です。毎年同じように、変わらずこの時期に咲き続けるその律儀さは、どこか安心感を与えてくれます。この毎年変わらず早春を告げる姿から、サンシュユには「永遠」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サンシュユの花言葉「永遠」の由来は？</div>
+        <div class="faq-a">毎年変わらず早春に咲き、季節の訪れを告げ続けるその律儀な姿に由来するといわれています。変わらないことへの安心感を象徴する言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>変わらずにいてくれるものの存在は、当たり前のようでいて、実はとても心強いものです。今日は、あなたにとって変わらずそばにあるものを一つ思い浮かべてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サンシュユから始める小さな体験</h2>
+    <p>毎年変わらず早春を告げるサンシュユにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>黄色い小花が枝いっぱいに咲く木を探してみる</li>
+      <li>ずっと変わらずにいたいものを一つ思い浮かべてみる</li>
+      <li>早春の光の中を散歩してみる</li>
+      <li>黄色いものを一つ、身の回りに置いてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サンシュユは他の黄色い早春の花木と同じですか？</div>
+        <div class="faq-a">マンサクなど、同じ時期に黄色い花を咲かせる花木は他にもありますが、それぞれ科や特徴が異なります。混同しないよう、花や枝の様子で見分けるとよいでしょう。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">変わらないものの存在に気づけた今日。ふとした瞬間に、ラッキーカラーも意識してみてはいかがでしょうか。開運カレンダーでは、その日のラッキーカラーや月齢も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月15日、早春の枝いっぱいに黄色を咲かせるサンシュユは、変わらないことの心強さを教えてくれます。</p>
     <ul>
-      <li>サンシュユは早春に黄色い小花を枝いっぱいに咲かせる、2月15日の誕生花</li>
-      <li>花言葉は「永遠」、途切れない生命力を象徴する</li>
-      <li>「春黄金花」とも呼ばれる華やかな早春の花木</li>
-      <li>日当たりと水はけの良い場所で、丈夫で育てやすい</li>
+      <li>サンシュユはミズキ科の落葉高木で、早春に黄色い小花を枝いっぱいに咲かせる</li>
+      <li>一つ一つは小さくても、枝全体を覆うように咲き季節の訪れを伝える</li>
+      <li>花言葉は「永遠」。毎年変わらず咲き続ける律儀さを象徴するとされる</li>
+      <li>マンサクなど他の早春の黄色い花木とは、科や特徴が異なる</li>
     </ul>
   </section>
 

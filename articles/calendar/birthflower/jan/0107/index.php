@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アッツザクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春から初夏にかけて、桜に似た小さな花を咲かせます。"}},
-      {"@type":"Question","name":"アッツザクラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛を待つ」という花言葉は、小さく可憐な花が控えめに咲く姿に由来するとされています。"}},
-      {"@type":"Question","name":"アッツザクラは桜の仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"名前に「サクラ」とありますが桜の仲間ではなく、花の形が桜に似ていることからこの名がつけられました。"}}
+      {"@type":"Question","name":"アッツザクラは本物のサクラの仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"アッツザクラはキンバイザサ科の植物で、バラ科の実際のサクラとは異なる種類です。花の形が似ていることから名付けられたとされています。"}},
+      {"@type":"Question","name":"アッツザクラの花言葉「愛を待つ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"開花までの時間をじっくりと過ごす植物の性質から、待つことの大切さを表す「愛を待つ」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 7 · 誕生花</span>
     <h1>1月7日の誕生花はアッツザクラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アッツザクラは、桜に似た小さく可憐な花を咲かせる1月7日の誕生花です。花言葉は「愛を待つ」。</p>
+    <p class="art-lead">七草がゆで一年の無病息災を願う人日の節句、1月7日。桜によく似た小さな花をつけるアッツザクラは、まだ遠い春の気配を先取りするように、その名にサクラを冠しています。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アッツザクラとは</a></li>
-      <li><a href="#meaning">アッツザクラが象徴する意味</a></li>
-      <li><a href="#charm">アッツザクラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">桜に似た、アッツザクラの可憐な花びら</a></li>
+      <li><a href="#story">1月7日、アッツザクラが待つ春という約束</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アッツザクラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アッツザクラとは</h2>
-    <p>アッツザクラは、キンバイザサ科の多年草で、1月7日の誕生花として知られています。春から初夏にかけて、桜に似た小さく可憐な花を咲かせることからこの名がつけられました。</p>
-  </section>
+    <h2>桜に似た、アッツザクラの可憐な花びら</h2>
+    <p>アッツザクラは、キンバイザサ科の多年草です。春から初夏にかけて、桜によく似た小さく可憐な花を咲かせます。実際のサクラとは科が異なる植物ですが、花びらの形や色合いがよく似ていることから、この名前で呼ばれるようになったといわれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アッツザクラが象徴する意味</h2>
-    <p>アッツザクラの花言葉は「愛を待つ」です。小さく可憐な花が控えめに咲く姿から、静かに想いを寄せる気持ちを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アッツザクラの魅力</h2>
-    <p>アッツザクラの魅力は、桜を思わせる愛らしい花姿と、鉢植えでも育てやすいコンパクトなサイズにあります。花壇や寄せ植えにもよく使われ、春から初夏の庭を可憐に彩ってくれます。1月7日生まれの方はもちろん、静かな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アッツザクラは日当たりの良い場所を好み、丈夫で育てやすく、土の表面が乾いたら水を与える程度で十分育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月7日生まれの方はもちろん、静かな想いを伝えたい贈り物としてもアッツザクラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラはいつ頃咲きますか？</div>
-        <div class="faq-a">春から初夏にかけて、桜に似た小さな花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「愛を待つ」という花言葉は、小さく可憐な花が控えめに咲く姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラは桜の仲間ですか？</div>
-        <div class="faq-a">名前に「サクラ」とありますが桜の仲間ではなく、花の形が桜に似ていることからこの名がつけられました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラは本物のサクラの仲間ですか？</div>
+        <div class="faq-a">アッツザクラはキンバイザサ科の植物で、バラ科の実際のサクラとは異なる種類です。花の形が似ていることから名付けられたとされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月7日、アッツザクラが待つ春という約束</h2>
+    <p>アッツザクラの花びらをよく見ると、桜の花びらのように先端がわずかにくぼんだ、丸みのある形をしています。花の季節である春から初夏にはまだ遠い1月7日。今、目の前に花はなくても、その姿を思い描きながら春を待つ時間もまた、悪くないものです。七草がゆで一年の無病息災を願うこの日、ゆっくりと季節がめぐるのを待つ姿勢は、アッツザクラの花言葉とも重なるところがあるのかもしれません。花言葉は「愛を待つ」。花開くまでの静かな時間を大切にする、そんな気持ちが込められた言葉です。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アッツザクラの花言葉「愛を待つ」の由来は？</div>
+        <div class="faq-a">開花までの時間をじっくりと過ごす植物の性質から、待つことの大切さを表す「愛を待つ」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>待つことは、何もしていない時間ではありません。心の中で静かに準備を続けている時間です。今日は焦らず、その時間そのものを大切にしてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アッツザクラから始める小さな体験</h2>
+    <p>花開くまでの時間をゆっくり過ごすアッツザクラにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>桜に似た小さな花を探して観察してみる</li>
+      <li>待っている時間そのものを大切にしてみる</li>
+      <li>誰かを想いながら、ゆっくりお茶の時間を過ごす</li>
+    </ul>
+
+    <p class="cta-lead">静かな時間を過ごした今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、今日の六曜や吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>アッツザクラは、花開くまでの時間を大切に過ごす、1月7日らしい誕生花です。</p>
     <ul>
-      <li>アッツザクラは桜に似た花を咲かせる、1月7日の誕生花</li>
-      <li>花言葉は「愛を待つ」、静かな想いを象徴する花とされる</li>
-      <li>可憐な花姿とコンパクトなサイズが魅力</li>
-      <li>丈夫で育てやすい</li>
+      <li>アッツザクラはキンバイザサ科の多年草で、春から初夏に桜に似た花を咲かせる</li>
+      <li>実際のサクラ（バラ科）とは異なる植物だが、花の形がよく似ている</li>
+      <li>花言葉は「愛を待つ」。花開くまでの時間を大切にする気持ちを象徴する</li>
+      <li>1月7日は七草がゆで無病息災を願う人日の節句でもある</li>
     </ul>
   </section>
 

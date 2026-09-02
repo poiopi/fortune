@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヤマスゲとはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"山野に自生する、素朴で控えめな印象の草花です。"}},
-      {"@type":"Question","name":"ヤマスゲの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"山野でひっそりと自生し、厳しい環境でも力強く育つ姿が、辛抱強い忍耐を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ヤマスゲはどんな場所に自生していますか？","acceptedAnswer":{"@type":"Answer","text":"山野にひっそりと自生し、素朴で控えめな姿で親しまれている草花です。"}}
+      {"@type":"Question","name":"ヤマスゲの別名は何ですか？","acceptedAnswer":{"@type":"Answer","text":"リュウノヒゲという別名で呼ばれ、細い葉が地面を覆うように茂る常緑の植物です。"}},
+      {"@type":"Question","name":"ヤマスゲの花言葉「忍耐」にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"山野でひっそりと自生し、厳しい環境でも根を張り続けるたくましい姿が、辛抱強い忍耐を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 16 · 誕生花</span>
     <h1>10月16日の誕生花はヤマスゲ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヤマスゲは、山野に自生する、素朴で控えめな印象を持つ10月16日の誕生花です。花言葉は「忍耐」。素朴で控えめな花です。</p>
+    <p class="art-lead">万葉集にも名前が登場する植物は、意外と身近に存在している。10月16日の誕生花ヤマスゲは、別名リュウノヒゲとも呼ばれ、古くから日本の暮らしに寄り添ってきた。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヤマスゲとは</a></li>
-      <li><a href="#meaning">ヤマスゲが象徴する意味</a></li>
-      <li><a href="#charm">ヤマスゲの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月16日の誕生花として親しまれるヤマスゲ</a></li>
+      <li><a href="#story">リュウノヒゲとも呼ばれるヤマスゲが、暮らしに添える静けさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヤマスゲから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヤマスゲとは</h2>
-    <p>ヤマスゲは、10月16日の誕生花として知られている植物です。山野に自生する、素朴で控えめな印象を持つ草花です。</p>
-  </section>
+    <h2>10月16日の誕生花として親しまれるヤマスゲ</h2>
+    <p>ヤマスゲは、キジカクシ科ジャノヒゲ属の常緑多年草。10月16日の誕生花として、この時期に親しまれている。山野にひっそりと自生し、古くは万葉集にもその名が詠まれたと伝わる、日本人にとって馴染み深い植物の一つだ。別名は「リュウノヒゲ」といい、細い葉が地面を覆うように茂る姿が特徴的とされている。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヤマスゲが象徴する意味</h2>
-    <p>ヤマスゲの花言葉は「忍耐」です。山野でひっそりと自生し、厳しい環境でも力強く育つ姿が、辛抱強い忍耐を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヤマスゲの魅力</h2>
-    <p>ヤマスゲの魅力は、山野の草花が持つ素朴で控えめな美しさと、山野にひっそりと自生するたくましさにあります。10月16日生まれの方はもちろん、辛抱強い想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヤマスゲは明るい場所を好み、土の表面が乾いたら水を与える程度の管理でよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月16日生まれの方はもちろん、辛抱強い想いを伝えたい贈り物としてもヤマスゲは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマスゲとはどんな花ですか？</div>
-        <div class="faq-a">山野に自生する、素朴で控えめな印象の草花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマスゲの花言葉の由来は何ですか？</div>
-        <div class="faq-a">山野でひっそりと自生し、厳しい環境でも力強く育つ姿が、辛抱強い忍耐を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤマスゲはどんな場所に自生していますか？</div>
-        <div class="faq-a">山野にひっそりと自生し、素朴で控えめな姿で親しまれている草花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマスゲの別名は何ですか？</div>
+        <div class="faq-a">リュウノヒゲという別名で呼ばれ、細い葉が地面を覆うように茂る常緑の植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>リュウノヒゲとも呼ばれるヤマスゲが、暮らしに添える静けさ</h2>
+    <p>ヤマスゲは、人目につきにくい山野の中でひっそりと自生し続けている植物だ。派手に咲き誇るわけではなく、同じ場所に根を下ろしたまま、幾年もの月日をじっと重ねていく。万葉集にもその名が詠まれたと伝わるほど、はるか昔から日本人の暮らしのそばにあり続けてきた歴史も持つ。別名の「リュウノヒゲ」という呼び名にも、粘り強く生き続けるその姿が重ねられているようだ。誰に気づかれることがなくとも、じっと同じ場所であり続けるその佇まいが、花言葉「忍耐」の由来になっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤマスゲの花言葉「忍耐」にはどんな由来がありますか？</div>
+        <div class="faq-a">山野でひっそりと自生し、厳しい環境でも根を張り続けるたくましい姿が、辛抱強い忍耐を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>山野でじっと時を重ねるヤマスゲの姿には、待つことそのものを楽しむ強さがある。今日は、焦らずじっくり機会を待ってみたい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヤマスゲから始める小さな体験</h2>
+    <p>山野で静かに根を張るヤマスゲにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>目立たない場所に咲く花を探してみる</li>
+      <li>焦らずじっくり待つ時間を大切にしてみる</li>
+      <li>万葉集にも詠まれた、リュウノヒゲという別名を思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">じっくり機会を待ちたい日は、今日の月九星も覗いてみませんか。開運カレンダーでは、月ごとの運気の流れも紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>山野でひっそり根を張り続ける佇まいが、急がず機会を待つ忍耐強さを静かに示している。</p>
     <ul>
-      <li>ヤマスゲは山野に自生する、素朴で控えめな印象を持つ10月16日の誕生花</li>
-      <li>花言葉は「忍耐」、厳しい環境でも力強く育つ姿に由来する</li>
-      <li>山野にひっそりと自生するたくましさが魅力</li>
-      <li>明るい場所を好み、土の表面が乾いたら水を与える程度の管理でよく育ちます</li>
+      <li>ヤマスゲは山野に自生する、キジカクシ科ジャノヒゲ属の常緑多年草で、10月16日の誕生花</li>
+      <li>花言葉は「忍耐」。厳しい環境でも根を張り続ける姿に由来すると言われる</li>
+      <li>別名は「リュウノヒゲ」。万葉集にも詠まれた古い歴史を持つ</li>
+      <li>じっと機会を待ちたい日に寄り添う花</li>
     </ul>
   </section>
 

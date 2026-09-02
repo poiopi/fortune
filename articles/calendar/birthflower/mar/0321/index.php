@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0321/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月21日の誕生花チューリップ（赤）の花言葉・特徴・魅力をわかりやすく解説。「恋の告白」を象徴する情熱を象徴する花の意味を紹介します。">
+  <meta name="description" content="3月21日の誕生花チューリップ（赤）の花言葉・特徴・魅力をわかりやすく解説。「恋の告白」を象徴する、まっすぐな赤色の花の意味を紹介します。">
   <title>3月21日の誕生花はチューリップ（赤）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"チューリップ（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鮮やかな赤い花を咲かせます。ユリ科の球根植物で、秋に球根を植えて春の開花を待つのが一般的です。"}},
-      {"@type":"Question","name":"チューリップ（赤）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「恋の告白」という花言葉は、鮮烈な赤い花色が燃えるような情熱を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"チューリップは色によって花言葉が違うのですか？","acceptedAnswer":{"@type":"Answer","text":"はい。チューリップ全体には「思いやり」という花言葉がありますが、赤は「恋の告白」、黄色は「正直」など、色ごとに異なる花言葉が添えられているのが特徴です。"}}
+      {"@type":"Question","name":"チューリップ（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鮮やかな赤い花を咲かせます。ちょうど3月頃から見頃を迎える、球根植物です。"}},
+      {"@type":"Question","name":"チューリップ（赤）の花言葉「恋の告白」の由来は？","acceptedAnswer":{"@type":"Answer","text":"他の色に比べても力強く、まっすぐな印象を放つ赤色の花に由来するといわれています。"}},
+      {"@type":"Question","name":"チューリップにはさまざまな色がありますが、赤色にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"数あるチューリップの色の中でも、赤はもっとも力強くまっすぐな印象を持つ色とされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 21 · 誕生花</span>
     <h1>3月21日の誕生花はチューリップ（赤）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">チューリップ（赤）は、ユリ科の球根植物で、春に鮮やかな赤い花を咲かせる3月21日の誕生花です。花言葉は「恋の告白」。情熱的な花です。</p>
+    <p class="art-lead">春の花壇にひときわ力強く咲くチューリップ（赤）。3月21日の誕生花に選ばれたこの花は、まっすぐな気持ちを伝える勇気を教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">チューリップ（赤）とは</a></li>
-      <li><a href="#meaning">チューリップ（赤）が象徴する意味</a></li>
-      <li><a href="#charm">チューリップ（赤）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月21日の誕生花として親しまれるチューリップ（赤）</a></li>
+      <li><a href="#story">春が深まる頃に咲く、チューリップ（赤）のまっすぐな季節</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、チューリップ（赤）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>チューリップ（赤）とは</h2>
-    <p>チューリップ（赤）は、ユリ科の球根植物で、3月21日の誕生花として知られています。中央アジア原産で、オランダでの品種改良により世界中に広まった春の代表的な花です。丸みを帯びた花びらが優雅に開く姿は、花壇や切り花として世界中で愛されています。</p>
-  </section>
+    <h2>3月21日の誕生花として親しまれるチューリップ（赤）</h2>
+    <p>チューリップ（赤）は、ユリ科の球根植物です。春になると、鮮やかな赤い花を咲かせます。数あるチューリップの色の中でも、赤はもっとも力強く、まっすぐな印象を放つ色合いです。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>チューリップ（赤）が象徴する意味</h2>
-    <p>チューリップ（赤）の花言葉は「恋の告白」です。鮮烈な赤い花色が燃えるような情熱を象徴することから、まっすぐな愛の告白を表す花言葉がつけられたと言われています。チューリップ全体には「思いやり」という花言葉もあり、色によって意味合いが異なります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>チューリップ（赤）の魅力</h2>
-    <p>チューリップ（赤）の魅力は、なんといってもその鮮やかで力強い赤の花色と、すっきりとしたフォルムにあります。並んで咲く花壇はもちろん、一輪だけでも堂々とした存在感を放ち、春の訪れを誰よりも華やかに告げてくれる花です。3月21日生まれの方はもちろん、まっすぐな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>チューリップ（赤）は日当たりと水はけの良い場所を好み、秋に球根を植えて春の開花を待つのが一般的な育て方です。花後は葉を残しておくことで、翌年のための栄養を球根に蓄えられます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月21日生まれの方はもちろん、まっすぐな想いを届けたい贈り物としてもチューリップ（赤）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">チューリップ（赤）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に鮮やかな赤い花を咲かせます。ユリ科の球根植物で、秋に球根を植えて春の開花を待つのが一般的です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（赤）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「恋の告白」という花言葉は、鮮烈な赤い花色が燃えるような情熱を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューリップは色によって花言葉が違うのですか？</div>
-        <div class="faq-a">はい。チューリップ全体には「思いやり」という花言葉がありますが、赤は「恋の告白」、黄色は「正直」など、色ごとに異なる花言葉が添えられているのが特徴です。</div>
+        <div class="faq-a">春に鮮やかな赤い花を咲かせます。ちょうど3月頃から見頃を迎える、球根植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>春が深まる頃に咲く、チューリップ（赤）のまっすぐな季節</h2>
+    <p>チューリップ（赤）が花を咲かせるのは、梅や河津桜といった早春の花が咲き終わり、春がいよいよ深まっていく時期です。冬の寒さの中、土の中の球根はじっと力を蓄え、気温が上がり始めるとともに芽を伸ばし、まっすぐな一輪の花を咲かせます。寒さを越えてためらうことなく芽吹き、季節を追うように育っていくその過程は、遠くからでも見つけられるほど力強い赤色の花びらにも重なって見えます。飾らず、まっすぐに咲くその姿から、「恋の告白」という花言葉が生まれたといわれています。告白という言葉は、恋愛の場面だけに使うものではありません。誰かに素直な気持ちを伝えたいと思う、すべての瞬間に通じる言葉なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップ（赤）の花言葉「恋の告白」の由来は？</div>
+        <div class="faq-a">他の色に比べても力強く、まっすぐな印象を放つ赤色の花に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>まっすぐな気持ちは、まっすぐに伝えるからこそ届きます。今日は、伝えたいと思っていたことを、素直な言葉にしてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、チューリップ（赤）から始める小さな体験</h2>
+    <p>まっすぐな赤色を咲かせるチューリップ（赤）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな赤いチューリップを見つけて写真に撮ってみる</li>
+      <li>伝えたい気持ちを一つ、素直な言葉にしてみる</li>
+      <li>赤いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">チューリップにはさまざまな色がありますが、赤色にはどんな特徴がありますか？</div>
+        <div class="faq-a">数あるチューリップの色の中でも、赤はもっとも力強くまっすぐな印象を持つ色とされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">まっすぐな赤色に伝えたい気持ちを重ねた今日は、ラッキーカラーやラッキーアイテムもあわせて確認してみませんか。開運カレンダーでは、その日のラッキーカラーやラッキーアイテムもまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月21日、春の景色の中でひときわ力強く咲くチューリップ（赤）は、素直な気持ちを伝える勇気を教えてくれる花です。</p>
     <ul>
-      <li>チューリップ（赤）は春に鮮やかな赤い花を咲かせる、3月21日の誕生花</li>
-      <li>花言葉は「恋の告白」、燃えるような赤い花色に由来する</li>
-      <li>堂々とした存在感とすっきりとしたフォルムが魅力</li>
-      <li>秋に球根を植え、花後は葉を残して育てたい</li>
+      <li>チューリップ（赤）はユリ科の球根植物で、春に鮮やかな赤い花を咲かせる</li>
+      <li>数ある色の中でも、赤はまっすぐで力強い印象を放つ</li>
+      <li>花言葉は「恋の告白」。飾らずまっすぐな色合いに由来するといわれる</li>
+      <li>告白は恋愛に限らず、素直な気持ちを伝えるすべての場面に通じる言葉</li>
     </ul>
   </section>
 

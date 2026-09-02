@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヨウラクソウとはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"垂れ下がるように連なって咲く、装飾的な印象の花です。"}},
-      {"@type":"Question","name":"ヨウラクソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"垂れ下がるように連なって咲く花が、届かぬ想いを一途に垂らし続ける片想いの心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヨウラクソウの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"仏具の瓔珞（ようらく）のように連なって咲く花姿から、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"ヨウラクソウの英名の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細い茎がしなりながら花を垂らす様子が釣り竿に似ていることから、「天使の釣り竿」という英名がつけられたと言われています。"}},
+      {"@type":"Question","name":"ヨウラクソウはなぜ「片想い」という花言葉を持つのですか？","acceptedAnswer":{"@type":"Answer","text":"垂れ下がって連なる花が、届きそうで届かない距離を保ちながら咲く姿が、一途な片想いの心を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 17 · 誕生花</span>
     <h1>10月17日の誕生花はヨウラクソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヨウラクソウは、垂れ下がるように連なって咲く、装飾的な印象を持つ10月17日の誕生花です。花言葉は「片想い」。装飾的な花です。</p>
+    <p class="art-lead">垂れ下がるように連なって咲く花には、独特のリズムがある。10月17日の誕生花であるヨウラクソウは、そんな装飾的な花姿を持つ一輪。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヨウラクソウとは</a></li>
-      <li><a href="#meaning">ヨウラクソウが象徴する意味</a></li>
-      <li><a href="#charm">ヨウラクソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月17日の誕生花として親しまれるヨウラクソウ</a></li>
+      <li><a href="#story">垂れ下がって連なる花姿が映す、届かない想いのかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヨウラクソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヨウラクソウとは</h2>
-    <p>ヨウラクソウは、10月17日の誕生花として知られている植物です。垂れ下がるように連なって咲く、装飾的な印象を持つ花です。</p>
-  </section>
+    <h2>10月17日の誕生花として親しまれるヨウラクソウ</h2>
+    <p>ヨウラクソウは、10月17日の誕生花として知られる植物だ。細い茎から花が垂れ下がるように連なって咲き、まるで装身具を下げたような装飾的な印象を与える。英語では「エンジェルズ・フィッシングロッド（天使の釣り竿）」とも呼ばれ、繊細な茎のしなり方が釣り竿を思わせることに由来すると言われている。花色は紫やピンク、白など多彩で、咲き分ける表情も楽しめる花だ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヨウラクソウが象徴する意味</h2>
-    <p>ヨウラクソウの花言葉は「片想い」です。垂れ下がるように連なって咲く花が、届かぬ想いを一途に垂らし続ける片想いの心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヨウラクソウの魅力</h2>
-    <p>ヨウラクソウの魅力は、連なり咲く花が持つ装飾的な美しさと、仏具の瓔珞を思わせる優美な佇まいにあります。10月17日生まれの方はもちろん、一途な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヨウラクソウは明るい場所を好み、土の表面が乾いたら水を与える程度の管理でよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月17日生まれの方はもちろん、一途な想いを伝えたい贈り物としてもヨウラクソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヨウラクソウとはどんな花ですか？</div>
-        <div class="faq-a">垂れ下がるように連なって咲く、装飾的な印象の花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヨウラクソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">垂れ下がるように連なって咲く花が、届かぬ想いを一途に垂らし続ける片想いの心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヨウラクソウの名前の由来は何ですか？</div>
-        <div class="faq-a">仏具の瓔珞（ようらく）のように連なって咲く花姿から、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヨウラクソウの英名の由来は何ですか？</div>
+        <div class="faq-a">細い茎がしなりながら花を垂らす様子が釣り竿に似ていることから、「天使の釣り竿」という英名がつけられたと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>垂れ下がって連なる花姿が映す、届かない想いのかたち</h2>
+    <p>ヨウラクソウの花をよく見ると、一つの茎に小さな花がいくつも連なり、風が吹くたびに揺れながら垂れ下がっている。しなる茎の先で花が揺れる様子は釣り糸を垂らしているようで、英名「天使の釣り竿」という呼び名にもその印象が重ねられている。垂れ下がった花が地面に届きそうで届かない、その絶妙な距離感が、叶わない想いを一途に抱き続ける片想いの心を思わせることに由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヨウラクソウはなぜ「片想い」という花言葉を持つのですか？</div>
+        <div class="faq-a">垂れ下がって連なる花が、届きそうで届かない距離を保ちながら咲く姿が、一途な片想いの心を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>垂れ下がりながら静かに咲くヨウラクソウの花には、言葉にならない想いを抱え続ける美しさが宿っている。胸の内にそっとしまった気持ちにも、確かな価値がある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヨウラクソウから始める小さな体験</h2>
+    <p>垂れ下がりながら静かに咲くヨウラクソウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>垂れ下がって連なる花の姿をじっくり観察してみる</li>
+      <li>言葉にできない想いを日記に書き留めてみる</li>
+      <li>紫やピンク、白など好きな花色を一つ選んでみる</li>
+    </ul>
+
+    <p class="cta-lead">届かない想いにそっと寄り添いたい日は、今日の星座占いを覗いてみませんか。開運カレンダーでは、毎日の星座の運勢を届けています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>垂れ下がりながら届きそうで届かない花の姿が、一途な片想いの尊さを映し出している。</p>
     <ul>
       <li>ヨウラクソウは垂れ下がるように連なって咲く、装飾的な印象を持つ10月17日の誕生花</li>
-      <li>花言葉は「片想い」、垂れ下がって咲く一途な花姿に由来する</li>
-      <li>仏具の瓔珞を思わせる優美な佇まいが魅力</li>
-      <li>明るい場所を好み、土の表面が乾いたら水を与える程度の管理でよく育ちます</li>
+      <li>花言葉は「片想い」。届きそうで届かない花の距離感に由来すると言われる</li>
+      <li>垂れ下がって連なる花姿が、英名「天使の釣り竿」の由来になっている</li>
+      <li>静かな想いを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

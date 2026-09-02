@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1209/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月9日の誕生花カンガルーポーの花言葉・特徴・魅力をわかりやすく解説。「不思議」を象徴するユニークな花の意味を紹介します。">
+  <meta name="description" content="12月9日の誕生花カンガルーポーの花言葉・特徴・魅力をわかりやすく解説。「不思議」を象徴する独特な筒状の花の意味を紹介します。">
   <title>12月9日の誕生花はカンガルーポー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カンガルーポーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"独特な筒状の花を咲かせます。ハエモドルム科の多年草です。"}},
-      {"@type":"Question","name":"カンガルーポーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"産毛に覆われた筒状の花が動物の前脚のような独特な形をしている姿が、見る人を惹きつける不思議さを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"カンガルーポーという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"産毛に覆われた筒状の花の形がカンガルーの前脚に似ていることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"カンガルーポーという名前は、どこから来ているのですか？","acceptedAnswer":{"@type":"Answer","text":"花の形が、カンガルーの前足に似ていることから名付けられたと言われています。筒状の花が並ぶ独特な姿が、その由来をよく物語っています。"}},
+      {"@type":"Question","name":"カンガルーポーの花言葉「不思議」は、何に由来すると言われていますか？","acceptedAnswer":{"@type":"Answer","text":"カンガルーの前足に似た独特な形が、見る人に不思議な印象を与えることに由来すると言われています。理解しがたさというより、見慣れないものへの興味や驚きを表す言葉です。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 9 · 誕生花</span>
     <h1>12月9日の誕生花はカンガルーポー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カンガルーポーは、ハエモドルム科の多年草で、独特な筒状の花を咲かせる、個性的でユニークな印象を持つ花です。花言葉は「不思議」。ユニークな花です。</p>
+    <p class="art-lead">筒状に伸びた花が、細かな毛をまとって並ぶ。カンガルーポーは、その姿がカンガルーの前足に似ていることから名付けられた、ハエモドルム科の多年草だ。赤や黄など多彩な色合いで、切り花としても親しまれている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カンガルーポーとは</a></li>
-      <li><a href="#meaning">カンガルーポーが象徴する意味</a></li>
-      <li><a href="#charm">カンガルーポーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月9日の誕生花として親しまれるカンガルーポー</a></li>
+      <li><a href="#story">カンガルーの前足に似た、不思議な花のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カンガルーポーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カンガルーポーとは</h2>
-    <p>カンガルーポーは、ハエモドルム科の多年草で、12月9日の誕生花として知られています。独特な筒状の花を咲かせる、個性的でユニークな印象を持つ花です。</p>
-  </section>
+    <h2>12月9日の誕生花として親しまれるカンガルーポー</h2>
+    <p>カンガルーポーは、ハエモドルム科の多年草で、12月9日の誕生花として知られています。筒状の独特な花を咲かせ、その形がカンガルーの前足に似ていることから、この名前が付けられたと言われています。花色は赤や黄など多彩で、見る人の目を引く個性的な佇まいを持つ植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カンガルーポーが象徴する意味</h2>
-    <p>カンガルーポーの花言葉は「不思議」です。産毛に覆われた筒状の花が動物の前脚のような独特な形をしている姿が、見る人を惹きつける不思議さを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カンガルーポーの魅力</h2>
-    <p>カンガルーポーの魅力は、動物の前脚を思わせる筒状の花の形と、ほかに類を見ないユニークな存在感にあります。12月9日生まれの方はもちろん、不思議な魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カンガルーポーは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月9日生まれの方はもちろん、不思議な魅力を伝えたい贈り物としてもカンガルーポーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンガルーポーはいつ頃咲きますか？</div>
-        <div class="faq-a">独特な筒状の花を咲かせます。ハエモドルム科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンガルーポーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">産毛に覆われた筒状の花が動物の前脚のような独特な形をしている姿が、見る人を惹きつける不思議さを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンガルーポーという名前の由来は何ですか？</div>
-        <div class="faq-a">産毛に覆われた筒状の花の形がカンガルーの前脚に似ていることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カンガルーポーという名前は、どこから来ているのですか？</div>
+        <div class="faq-a">花の形が、カンガルーの前足に似ていることから名付けられたと言われています。筒状の花が並ぶ独特な姿が、その由来をよく物語っています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>カンガルーの前足に似た、不思議な花のかたち</h2>
+    <p>カンガルーポーの花を初めて見ると、多くの人がその形の奇妙さに驚く。筒状に伸びた花が、細かな毛に覆われながら並ぶ姿は、たしかに小さな動物の前足を思わせる。この独特な形は、他の花にはあまり見られない個性であり、見慣れないからこそ、じっくり観察したくなる魅力を持っている。花言葉「不思議」は、理解しがたいものとして距離を置く言葉ではなく、見慣れないものへの純粋な好奇心を表す言葉として受け取りたい。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カンガルーポーの花言葉「不思議」は、何に由来すると言われていますか？</div>
+        <div class="faq-a">カンガルーの前足に似た独特な形が、見る人に不思議な印象を与えることに由来すると言われています。理解しがたさというより、見慣れないものへの興味や驚きを表す言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>赤や黄色に染まった花が、まっすぐ天に向かって伸びている。誰の真似でもない、その堂々とした色使いに目を奪われる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カンガルーポーから始める小さな体験</h2>
+    <p>不思議な花のかたちにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>独特な筒状の花の形を、じっくり観察してみる</li>
+      <li>不思議に感じたことを一つ、素直に調べてみる</li>
+      <li>見慣れない景色や物事に、目を向けてみる</li>
+    </ul>
+
+    <p class="cta-lead">今月の自分に合うお守りを探しているなら、開運カレンダーの今月の誕生石も覗いてみてください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>変わった形の花束は、渡す瞬間に自然と会話が生まれる。</p>
     <ul>
-      <li>カンガルーポーは独特な筒状の花を咲かせる、12月9日の誕生花</li>
-      <li>花言葉は「不思議」、独特な花の形に由来する</li>
-      <li>動物の前脚を思わせる、独特な形の花が魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>カンガルーポーは、ハエモドルム科の多年草で、独特な筒状の花を咲かせる、12月9日の誕生花</li>
+      <li>花言葉は「不思議」。カンガルーの前足に似た個性的な形に由来すると言われる</li>
+      <li>花色は赤や黄など多彩で、切り花としても親しまれている</li>
+      <li>細い管のような花びらの先端を、そっと指でなぞってみたくなる</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-09'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1209'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-09');
+echo autoLink($html, 'birthflower-dec-1209');
 ?>

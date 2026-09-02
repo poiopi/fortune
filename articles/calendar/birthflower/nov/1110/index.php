@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1110/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月10日の誕生花コダチベゴニアの花言葉・特徴・魅力をわかりやすく解説。「無邪気」を象徴する房状の花の意味を紹介します。">
+  <meta name="description" content="11月10日の誕生花コダチベゴニアの花言葉・特徴・魅力をわかりやすく解説。「無邪気」を象徴する房状の花を咲かせる木立性ベゴニアの意味を紹介します。">
   <title>11月10日の誕生花はコダチベゴニア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コダチベゴニアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に房状の花を咲かせます。シュウカイドウ科の多年草です。"}},
-      {"@type":"Question","name":"コダチベゴニアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて房状の花を屈託なく咲かせ続ける姿が、無邪気な明るさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"コダチベゴニアは通常のベゴニアと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"茎が木のように木質化して立ち上がる木立性が特徴で、鉢植えでも存在感のある草姿を楽しめます。"}}
+      {"@type":"Question","name":"コダチベゴニアはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"シュウカイドウ科の多年草で、夏から秋に房状の花を咲かせる木立性のベゴニアです。"}},
+      {"@type":"Question","name":"コダチベゴニアの花言葉「無邪気」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて途切れず咲き続ける花房の賑やかさが、無邪気という花言葉に重ねられてきたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 10 · 誕生花</span>
     <h1>11月10日の誕生花はコダチベゴニア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コダチベゴニアは、シュウカイドウ科の多年草で、夏から秋に房状の花を咲かせる、無邪気で愛らしい印象を持つ花です。花言葉は「無邪気」。愛らしい花です。</p>
+    <p class="art-lead">夏の終わりから秋にかけて、房のように連なる花を次々と咲かせる植物がある。シュウカイドウ科の多年草、コダチベゴニアの尽きない賑やかさが、11月10日の誕生花としての顔にもなっている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コダチベゴニアとは</a></li>
-      <li><a href="#meaning">コダチベゴニアが象徴する意味</a></li>
-      <li><a href="#charm">コダチベゴニアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月10日の誕生花として親しまれるコダチベゴニア</a></li>
+      <li><a href="#story">夏から秋へ、途切れず連なる花房</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、コダチベゴニアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コダチベゴニアとは</h2>
-    <p>コダチベゴニアは、シュウカイドウ科の多年草で、11月10日の誕生花として知られています。夏から秋に房状の花を咲かせる、無邪気で愛らしい印象を持つ木立性のベゴニアです。</p>
-  </section>
+    <h2>11月10日の誕生花として親しまれるコダチベゴニア</h2>
+    <p>コダチベゴニアは、シュウカイドウ科の多年草として知られる、11月10日の誕生花です。夏から秋に房状の花を咲かせる、木立性のベゴニアとして親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>コダチベゴニアが象徴する意味</h2>
-    <p>コダチベゴニアの花言葉は「無邪気」です。夏から秋にかけて房状の花を屈託なく咲かせ続ける姿が、無邪気な明るさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>コダチベゴニアの魅力</h2>
-    <p>コダチベゴニアの魅力は、房状に集まって咲く花が生む愛らしさと、木立性ならではの存在感のある草姿にあります。11月10日生まれの方はもちろん、無邪気な明るさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>コダチベゴニアは明るい日陰を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月10日生まれの方はもちろん、無邪気な明るさを伝えたい贈り物としてもコダチベゴニアは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コダチベゴニアはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に房状の花を咲かせます。シュウカイドウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コダチベゴニアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">夏から秋にかけて房状の花を屈託なく咲かせ続ける姿が、無邪気な明るさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コダチベゴニアは通常のベゴニアと何が違いますか？</div>
-        <div class="faq-a">茎が木のように木質化して立ち上がる木立性が特徴で、鉢植えでも存在感のある草姿を楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">コダチベゴニアはどんな植物ですか？</div>
+        <div class="faq-a">シュウカイドウ科の多年草で、夏から秋に房状の花を咲かせる木立性のベゴニアです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏から秋へ、途切れず連なる花房</h2>
+    <p>コダチベゴニアの花は、一つ咲いて終わりというわけではない。夏の盛りから秋が深まる今の時期まで、房状に連なった花が次々と姿を見せ続ける。木立性という名の通り、茎がしっかりと立ち上がり、そこから伸びる花房は、まるで子どもが夢中で遊び続けるときのような、尽きない勢いを感じさせる。一つの花が終わっても、また次の花が顔を出す。そのてらいのない賑やかさが、「無邪気」という花言葉に重なって見える。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コダチベゴニアの花言葉「無邪気」はどのように結びついていますか？</div>
+        <div class="faq-a">夏から秋にかけて途切れず咲き続ける花房の賑やかさが、無邪気という花言葉に重ねられてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>楽しいと感じる前に理由を探してしまう大人だからこそ、その手前にある単純な気持ちを、今日は少しだけ思い出してみる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、コダチベゴニアから始める小さな体験</h2>
+    <p>夏から秋へ途切れず花房を咲かせるコダチベゴニアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>房状に連なる花をじっくり眺めてみる</li>
+      <li>素直な気持ちを一つ、そのまま言葉にしてみる</li>
+      <li>何かを無邪気に楽しんでみる時間を作る</li>
+    </ul>
+
+    <p class="cta-lead">気分を上げるきっかけが欲しい日は、開運カレンダーでおすすめアイテムも見てみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>途切れることなく夏から秋へ花を咲かせ続けるこの姿ほど、素直に楽しむことの心地よさを物語るものはないかもしれない。</p>
     <ul>
-      <li>コダチベゴニアは夏から秋に房状の花を咲かせる、11月10日の誕生花</li>
-      <li>花言葉は「無邪気」、屈託なく咲かせ続ける姿に由来する</li>
-      <li>木立性ならではの存在感のある草姿が魅力</li>
-      <li>明るい日陰を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>コダチベゴニアは、シュウカイドウ科の多年草で、夏から秋に房状の花を咲かせる、11月10日の誕生花</li>
+      <li>花言葉は「無邪気」。途切れず咲き続ける花房の賑やかさに由来すると言われる</li>
+      <li>木立性のベゴニアで、次々と花が咲き続けるのが特徴</li>
+      <li>素直な気持ちで楽しみたい日に寄り添う花</li>
     </ul>
   </section>
 

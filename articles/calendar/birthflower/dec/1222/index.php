@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1222/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月22日の誕生花クチベニスイセンの花言葉・特徴・魅力をわかりやすく解説。「詩人」を象徴する清楚な花の意味を紹介します。">
+  <meta name="description" content="12月22日の誕生花クチベニスイセンの花言葉・特徴・魅力をわかりやすく解説。「詩人」を象徴する、白と紅の縁取りが織りなす対比を紹介します。">
   <title>12月22日の誕生花はクチベニスイセン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クチベニスイセンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"白い花びらに紅色の縁取りが入った花を咲かせます。ヒガンバナ科の球根植物です。"}},
-      {"@type":"Question","name":"クチベニスイセンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白い花びらに紅をさしたような気品ある縁取りが入る繊細な花姿が、豊かな感受性を持つ詩人を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"クチベニスイセンという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白い花びらの縁に紅色が入る様子が、口紅をさしたように見えることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"クチベニスイセンの花びらは、どのような色の組み合わせをしていますか？","acceptedAnswer":{"@type":"Answer","text":"白を基調とした花びらの縁に紅色の線が入るという、印象的な色の組み合わせをしています。"}},
+      {"@type":"Question","name":"クチベニスイセンの花言葉「詩人」は、どのような花の姿から名付けられたのでしょうか？","acceptedAnswer":{"@type":"Answer","text":"白い花びらの縁にだけ紅色の線が入る、控えめでありながら印象的な花の姿が、繊細な感受性を持つ詩人を思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 22 · 誕生花</span>
     <h1>12月22日の誕生花はクチベニスイセン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クチベニスイセンは、ヒガンバナ科の球根植物で、白い花びらに紅色の縁取りが入った花を咲かせる、清楚で気品ある印象を持つ花です。花言葉は「詩人」。清楚な花です。</p>
+    <p class="art-lead">クチベニスイセンは、ヒガンバナ科の球根植物である。白い花びらの縁だけに、紅色の線がすっと引かれ、その対比が静かな存在感を生み出している。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クチベニスイセンとは</a></li>
-      <li><a href="#meaning">クチベニスイセンが象徴する意味</a></li>
-      <li><a href="#charm">クチベニスイセンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月22日の誕生花として親しまれるクチベニスイセン</a></li>
+      <li><a href="#story">白と紅、クチベニスイセンが描く輪郭の対比</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クチベニスイセンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クチベニスイセンとは</h2>
-    <p>クチベニスイセンは、ヒガンバナ科の球根植物で、12月22日の誕生花として知られています。白い花びらに紅色の縁取りが入った花を咲かせる、清楚で気品ある印象を持つ花です。</p>
-  </section>
+    <h2>12月22日の誕生花として親しまれるクチベニスイセン</h2>
+    <p>クチベニスイセンは、ヒガンバナ科の球根植物で、12月22日の誕生花として知られています。白い花びらの縁に紅色の線が入った、印象的な模様を持つ花です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クチベニスイセンが象徴する意味</h2>
-    <p>クチベニスイセンの花言葉は「詩人」です。白い花びらに紅をさしたような気品ある縁取りが入る繊細な花姿が、豊かな感受性を持つ詩人を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クチベニスイセンの魅力</h2>
-    <p>クチベニスイセンの魅力は、白い花びらに紅色の縁取りが入る繊細な美しさと、口紅を思わせる気品にあります。12月22日生まれの方はもちろん、詩的な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クチベニスイセンは日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月22日生まれの方はもちろん、詩的な想いを伝えたい贈り物としてもクチベニスイセンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クチベニスイセンはいつ頃咲きますか？</div>
-        <div class="faq-a">白い花びらに紅色の縁取りが入った花を咲かせます。ヒガンバナ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クチベニスイセンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">白い花びらに紅をさしたような気品ある縁取りが入る繊細な花姿が、豊かな感受性を持つ詩人を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クチベニスイセンという名前の由来は何ですか？</div>
-        <div class="faq-a">白い花びらの縁に紅色が入る様子が、口紅をさしたように見えることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クチベニスイセンの花びらは、どのような色の組み合わせをしていますか？</div>
+        <div class="faq-a">白を基調とした花びらの縁に紅色の線が入るという、印象的な色の組み合わせをしています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白と紅、クチベニスイセンが描く輪郭の対比</h2>
+    <p>クチベニスイセンの花びらは、地の色である白がほとんどを占めているが、その一番外側の縁にだけ、紅色の細い線がくっきりと入る。中心部から縁へと視線を移していくと、色の変化は唐突に、しかし正確な輪郭を描いて現れる。この境界のはっきりとした対比は、花全体をぼんやり眺めているだけでは気づきにくく、近づいて縁取りそのものに目を凝らしたときに初めて存在感を放つ。派手さで人を惹きつけるのではなく、細部に宿る繊細な線が静かに語りかけてくるような花姿だ。花言葉「詩人」は、この控えめでありながら確かな輪郭を持つ佇まいが、言葉を慎重に選ぶ詩人の感性を思わせることから、この名がついたと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クチベニスイセンの花言葉「詩人」は、どのような花の姿から名付けられたのでしょうか？</div>
+        <div class="faq-a">白い花びらの縁にだけ紅色の線が入る、控えめでありながら印象的な花の姿が、繊細な感受性を持つ詩人を思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>大きな身振りではなく、ほんの一筋の色で気持ちを伝えられることがある。細部にこそ、その人らしさが表れるものかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クチベニスイセンから始める小さな体験</h2>
+    <p>白と紅、その繊細な境界を持つこの花にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い花びらと紅色の縁取りを、じっくり見比べてみる</li>
+      <li>心に浮かんだ思いを、言葉にしてみる</li>
+      <li>身の回りにある、細部の色の組み合わせを探してみる</li>
+    </ul>
+
+    <p class="cta-lead">今月を支えてくれる石が気になる方は、開運カレンダーの誕生石もあわせて覗いてみてください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>細部にこそ、その花だけの表情が宿っている。</p>
     <ul>
-      <li>クチベニスイセンは白い花びらに紅色の縁取りが入った花を咲かせる、12月22日の誕生花</li>
-      <li>花言葉は「詩人」、紅色の縁取りに由来する</li>
-      <li>白い花びらに紅色の縁取りが入る、口紅のように気品ある花</li>
-      <li>日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます</li>
+      <li>クチベニスイセンは、ヒガンバナ科の球根植物で、白い花びらに紅色の縁取りが入る、12月22日の誕生花</li>
+      <li>花言葉は「詩人」。縁取りに宿る繊細な対比に由来すると言われる</li>
+      <li>具体的な開花時期は明らかになっていないため、特定の季節に断定せず楽しみたい花</li>
+      <li>名前の通り紅をさしたような縁取りに見えるが、実際の化粧ではなく花びら自体が持つ自然な色合い</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-22'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1222'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-22');
+echo autoLink($html, 'birthflower-dec-1222');
 ?>

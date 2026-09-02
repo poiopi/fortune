@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0720/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月20日の誕生花ルコウソウの花言葉・特徴・魅力をわかりやすく解説。「繊細な愛」を象徴する羽毛のような葉と星形の花の意味を紹介します。">
+  <meta name="description" content="7月20日の誕生花ルコウソウの花言葉・特徴・魅力をわかりやすく解説。夏に星形の赤い花を咲かせる、ヒルガオ科のつる性一年草を紹介します。">
   <title>7月20日の誕生花はルコウソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ルコウソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に星形の赤い花を咲かせます。ヒルガオ科のつる性一年草です。"}},
-      {"@type":"Question","name":"ルコウソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細く繊細に切れ込んだ葉と小さな星形の花が織りなす繊細な佇まいが、そのまま繊細な愛を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ルコウソウはどんな場所で楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"つるを伸ばして生長するため、フェンスやトレリスに這わせるグリーンカーテンとしても人気です。"}}
+      {"@type":"Question","name":"ルコウソウはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"星形をした赤い花を咲かせます。ヒルガオ科のつる性一年草です。"}},
+      {"@type":"Question","name":"ルコウソウの花言葉『繊細な愛』はどのようにして生まれたのですか？","acceptedAnswer":{"@type":"Answer","text":"花びらが尖った星形に開く、細やかで繊細な花の作りが、この花言葉と結びついてきたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 20 · 誕生花</span>
     <h1>7月20日の誕生花はルコウソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ルコウソウは、ヒルガオ科のつる性一年草で、夏になると星形の赤い花を咲かせ、羽毛のように細かく切れ込んだ葉とともに繊細な印象を与える花です。花言葉は「繊細な愛」。羽毛のような葉を持つ繊細な花です。</p>
+    <p class="art-lead">細いつるの先に、小さな星形の花がひとつ、風に揺れています。ルコウソウは、その繊細な佇まいで夏の垣根を彩る花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ルコウソウとは</a></li>
-      <li><a href="#meaning">ルコウソウが象徴する意味</a></li>
-      <li><a href="#charm">ルコウソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月20日の誕生花として親しまれるルコウソウ</a></li>
+      <li><a href="#story">つるを伝って咲く、ルコウソウの星形の花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ルコウソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ルコウソウとは</h2>
-    <p>ルコウソウは、ヒルガオ科のつる性一年草で、7月20日の誕生花として知られています。夏になると星形の赤い花を咲かせ、羽毛のように細かく切れ込んだ葉とともに繊細な印象を与える花です。</p>
-  </section>
+    <h2>7月20日の誕生花として親しまれるルコウソウ</h2>
+    <p>ルコウソウは、ヒルガオ科のつる性一年草です。夏に星形の赤い花を咲かせます。7月20日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ルコウソウが象徴する意味</h2>
-    <p>ルコウソウの花言葉は「繊細な愛」です。細く繊細に切れ込んだ葉と小さな星形の花が織りなす繊細な佇まいが、そのまま繊細な愛を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ルコウソウの魅力</h2>
-    <p>ルコウソウの魅力は、羽毛のように細かく切れ込んだ葉の繊細さと、その中に咲く小さな星形の赤い花のコントラストにあります。グリーンカーテンとしても人気の、涼を呼ぶ花です。7月20日生まれの方はもちろん、繊細な愛を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ルコウソウは日当たりを好み、つるを伸ばすため支柱を立てて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月20日生まれの方はもちろん、繊細な愛を伝えたい贈り物としてもルコウソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルコウソウはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に星形の赤い花を咲かせます。ヒルガオ科のつる性一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルコウソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">細く繊細に切れ込んだ葉と小さな星形の花が織りなす繊細な佇まいが、そのまま繊細な愛を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルコウソウはどんな場所で楽しめますか？</div>
-        <div class="faq-a">つるを伸ばして生長するため、フェンスやトレリスに這わせるグリーンカーテンとしても人気です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ルコウソウはどんな形の花を咲かせますか？</div>
+        <div class="faq-a">星形をした赤い花を咲かせます。ヒルガオ科のつる性一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>つるを伝って咲く、ルコウソウの星形の花</h2>
+    <p>糸のように細いつるを伝って、ルコウソウの花は一つひとつ独立した星形の姿で咲いていきます。花びらの先端が尖った五角形に開くその形は、小さくても十分な存在感を放ち、垣根や支柱のまわりに赤い星を点々とちりばめていきます。この繊細な作りにふさわしい言葉として、『繊細な愛』という花言葉が語り継がれてきました。支柱に絡みながら夏の間咲き続けるその粘り強さは、可憐な花の印象とは対照的な一面と言えるでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ルコウソウの花言葉『繊細な愛』はどのようにして生まれたのですか？</div>
+        <div class="faq-a">花びらが尖った星形に開く、細やかで繊細な花の作りが、この花言葉と結びついてきたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>ルコウソウは、細いつるを頼りに、小さな星形の花をひとつずつ丁寧に咲かせていきます。目立たないところにまで行き届く、その丁寧な気遣いこそが、静かな愛情の形です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ルコウソウから始める小さな体験</h2>
+    <p>つるを伝って星形の花を咲かせるルコウソウにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>星形の赤い花をじっくり観察してみる</li>
+      <li>つるが伸びていく様子を見守ってみる</li>
+      <li>繊細な気配りを一つ、誰かにしてみる</li>
+    </ul>
+
+    <p class="cta-lead">繊細な気持ちにそっと寄り添いたい今日は、星座やおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、星座とおすすめの行動を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>細いつるに支えられながら咲く星形の花は、繊細さと強さが同居できることを教えてくれる。</p>
     <ul>
-      <li>ルコウソウは夏に星形の赤い花を咲かせる、7月20日の誕生花</li>
-      <li>花言葉は「繊細な愛」、細く切れ込んだ葉の繊細さに由来する</li>
-      <li>羽毛のような葉と小さな花のコントラストが魅力</li>
-      <li>日当たりを好み、つるを伸ばすため支柱が必要</li>
+      <li>ルコウソウは夏に星形の赤い花を咲かせる、ヒルガオ科のつる性一年草で、7月20日の誕生花</li>
+      <li>花言葉は「繊細な愛」。尖った星形に開く細やかな花の作りと結びついてきたとされる</li>
+      <li>細いつるを伝って点々と咲く姿が特徴</li>
+      <li>繊細でありながら支柱に絡み続ける強さが魅力</li>
     </ul>
   </section>
 

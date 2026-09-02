@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0602/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月2日の誕生花シャクナゲの花言葉・特徴・魅力をわかりやすく解説。「警戒心」を象徴する豪華な花房を咲かせる花の意味を紹介します。">
+  <meta name="description" content="6月2日の誕生花シャクナゲの花言葉・特徴・魅力をわかりやすく解説。大きな花房を咲かせるツツジ科の花に込められた「警戒心」の意味を紹介します。">
   <title>6月2日の誕生花はシャクナゲ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シャクナゲはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に大きな花房をまとめて咲かせます。ツツジ科の常緑低木で、花木の女王とも称される花です。"}},
-      {"@type":"Question","name":"シャクナゲの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「警戒心」という花言葉は、厳しい環境にも根を張って育つ強さが、身構えるような凛とした姿を連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"シャクナゲが「花木の女王」と呼ばれるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"常緑の艶やかな葉と豪華で気品あふれる大きな花房を咲かせる存在感が、その名にふさわしいとされているためです。"}}
+      {"@type":"Question","name":"シャクナゲの名前『石南花』の由来は？","acceptedAnswer":{"@type":"Answer","text":"シャクナゲという名前は「石南花」の音読みに由来するとされ、大きな花房を咲かせるツツジ科の常緑低木です。"}},
+      {"@type":"Question","name":"シャクナゲの花言葉『警戒心』の由来は？","acceptedAnswer":{"@type":"Answer","text":"堂々とした花房の存在感が、油断のない構えを思わせることから、「警戒心」という花言葉で呼ばれるようになったとされています。"}},
+      {"@type":"Question","name":"シャクナゲはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"赤やピンク、白など多彩な花色があり、品種によって印象が大きく異なります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 2 · 誕生花</span>
     <h1>6月2日の誕生花はシャクナゲ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シャクナゲは、ツツジ科の常緑低木で、春に大きな花房を咲かせる6月2日の誕生花です。花言葉は「警戒心」。花木の女王と称される気品ある花です。</p>
+    <p class="art-lead">大きな花房がひとかたまりになって咲くと、枝先が一気に華やぎます。シャクナゲは、そんな存在感のある花を咲かせる、ツツジ科の常緑低木です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シャクナゲとは</a></li>
-      <li><a href="#meaning">シャクナゲが象徴する意味</a></li>
-      <li><a href="#charm">シャクナゲの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月2日の誕生花として親しまれるシャクナゲ</a></li>
+      <li><a href="#story">花房の大きさが物語る、シャクナゲの存在感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シャクナゲから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シャクナゲとは</h2>
-    <p>シャクナゲは、ツツジ科の常緑低木で、6月2日の誕生花として知られています。春になると大きな花房をまとめて咲かせ、豪華で気品あふれる佇まいから「花木の女王」とも称される花です。</p>
-  </section>
+    <h2>6月2日の誕生花として親しまれるシャクナゲ</h2>
+    <p>シャクナゲは、ツツジ科の常緑低木です。名前は「石南花」の音読みに由来するとされ、赤やピンク、白など多彩な花色を持つことでも知られています。その堂々とした花房の姿から、6月2日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シャクナゲが象徴する意味</h2>
-    <p>シャクナゲの花言葉は「警戒心」です。険しい高山や崖地といった厳しい環境にも根を張って育つ強さが、周囲に対して身構えるような凛とした姿を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シャクナゲの魅力</h2>
-    <p>シャクナゲの魅力は、常緑の艶やかな葉と、そこに咲く大きな花房のコントラストにあります。一本でも十分な存在感を放ち、庭木としても親しまれています。6月2日生まれの方はもちろん、気品ある印象を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シャクナゲは半日陰の涼しい環境を好み、乾燥を嫌うため土の乾き具合を見ながら水やりするとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月2日生まれの方はもちろん、気品ある印象を届けたい贈り物としてもシャクナゲは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シャクナゲはいつ頃咲きますか？</div>
-        <div class="faq-a">春に大きな花房をまとめて咲かせます。ツツジ科の常緑低木で、花木の女王とも称される花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シャクナゲの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「警戒心」という花言葉は、厳しい環境にも根を張って育つ強さが、身構えるような凛とした姿を連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シャクナゲが「花木の女王」と呼ばれるのはなぜですか？</div>
-        <div class="faq-a">常緑の艶やかな葉と豪華で気品あふれる大きな花房を咲かせる存在感が、その名にふさわしいとされているためです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シャクナゲの名前「石南花」の由来は？</div>
+        <div class="faq-a">シャクナゲという名前は「石南花」の音読みに由来するとされ、大きな花房を咲かせるツツジ科の常緑低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>花房の大きさが物語る、シャクナゲの存在感</h2>
+    <p>一輪ずつではなく、いくつもの花が寄り添うように集まって咲くのが、シャクナゲの花房です。小さな花では作れない大きさと重みを、この集まり方が生み出しています。花びらの縁を近づけてよく見ると、一つひとつの花には繊細な質感があり、遠目の力強さとはまた違う表情が見えてきます。赤・ピンク・白と色の幅も広く、同じ株でも咲く場所によって印象が変わることもあります。そうした堂々とした佇まいと、油断なく構えるような濃い花色の存在感が結びつき、シャクナゲには「警戒心」という花言葉が贈られてきたと言われています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シャクナゲの花言葉「警戒心」の由来は？</div>
+        <div class="faq-a">堂々とした花房の存在感が、油断のない構えを思わせることから、「警戒心」という花言葉で呼ばれるようになったとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>花房がひとまとまりに咲くまで、シャクナゲはじっくりと蕾を育てます。油断せず心を引き締めておくことは、自分や大切な人を守る知恵でもあります。気になっていたことがあるなら、今日はそれを一つ、丁寧に見直す時間にしてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シャクナゲから始める小さな体験</h2>
+    <p>大きな花房が持つ存在感にならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>大きな花房をじっくり観察してみる</li>
+      <li>「石南花」という漢字表記を実際に書いてみる</li>
+      <li>多彩な花色を見比べてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シャクナゲはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">赤やピンク、白など多彩な花色があり、品種によって印象が大きく異なります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">気を引き締めて一日を過ごしたい今日は、吉日やおすすめの行動もチェックしてみませんか。開運カレンダーでは、その日の吉日とおすすめの行動をあわせて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>大きな花房を丁寧に咲かせるシャクナゲの姿は、気を抜かず物事へ向き合う心構えを映し出します。</p>
     <ul>
-      <li>シャクナゲは春に大きな花房を咲かせる、6月2日の誕生花</li>
-      <li>花言葉は「警戒心」、厳しい環境で育つ強さに由来する</li>
-      <li>花木の女王と称される豪華で気品ある姿が魅力</li>
-      <li>半日陰の涼しい環境でよく育つ</li>
+      <li>シャクナゲはツツジ科の常緑低木で、大きな花房を咲かせる、6月2日の誕生花</li>
+      <li>花言葉は「警戒心」。堂々とした存在感と結びつけて語られてきたとされる</li>
+      <li>赤・ピンク・白など多彩な花色が魅力</li>
+      <li>名前は「石南花」の音読みに由来するとされる</li>
     </ul>
   </section>
 

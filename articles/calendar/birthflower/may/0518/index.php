@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0518/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月18日の誕生花ジギタリスの花言葉・特徴・魅力をわかりやすく解説。「純愛」を象徴する釣鐘形の花を連ねて咲かせる花の意味を紹介します。">
+  <meta name="description" content="5月18日の誕生花ジギタリスの花言葉・特徴・魅力をわかりやすく解説。「純愛」という花言葉に込められた意味と、花茎に沿って連なる釣鐘形の花の美しさを紹介します。">
   <title>5月18日の誕生花はジギタリス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ジギタリスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に釣鐘形の花を花茎に沿って咲かせます。オオバコ科の多年草で、まっすぐ伸びる姿が印象的です。"}},
-      {"@type":"Question","name":"ジギタリスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「純愛」という花言葉は、花茎に沿って規則正しく咲く釣鐘形の花が、まっすぐで純粋な愛情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ジギタリスは薬にもなると聞きましたが本当ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。ジギタリスの葉は強心配糖体を含み、かつて心臓病の薬として用いられた歴史がありますが、全草に強い毒性があるため取り扱いには注意が必要です。"}}
+      {"@type":"Question","name":"ジギタリスはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"釣鐘のような形をした花を、花茎に沿って下から上へ規則正しく連ねて咲かせます。オオバコ科の多年草です。"}},
+      {"@type":"Question","name":"ジギタリスの花言葉「純愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"花茎に沿って規則正しく連なる釣鐘形の花が、まっすぐで純粋な愛情を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ジギタリスは薬としても知られているのですか？","acceptedAnswer":{"@type":"Answer","text":"かつて心臓の薬として研究に用いられた歴史がある植物として知られています。ただし取り扱いには専門的な知識が必要とされ、観賞用として楽しむのが基本です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 18 · 誕生花</span>
     <h1>5月18日の誕生花はジギタリス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ジギタリスは、オオバコ科の多年草で、初夏に釣鐘形の花を花茎に沿って咲かせる5月18日の誕生花です。花言葉は「純愛」。まっすぐ伸びる姿が印象的な花です。</p>
+    <p class="art-lead">花壇の奥で、釣鐘形の花が背の高い茎に沿って連なる季節です。ジギタリスは、下から上へと順に花を咲かせながら、静かに天を目指すように伸びていきます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ジギタリスとは</a></li>
-      <li><a href="#meaning">ジギタリスが象徴する意味</a></li>
-      <li><a href="#charm">ジギタリスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月18日の誕生花として親しまれるジギタリス</a></li>
+      <li><a href="#story">空に向かって連なる鐘のような花、ジギタリスのまっすぐな想い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ジギタリスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ジギタリスとは</h2>
-    <p>ジギタリスは、オオバコ科の多年草で、5月18日の誕生花として知られています。初夏になると釣鐘形の花を花茎に沿って連ね、まっすぐ伸びる姿で存在感を放ちます。</p>
-  </section>
+    <h2>5月18日の誕生花として親しまれるジギタリス</h2>
+    <p>ジギタリスは、オオバコ科の多年草です。初夏になると、釣鐘のような形をした花を花茎に沿って連ね、まっすぐに伸びる姿で存在感を放ちます。庭の背景や花壇の奥に植えられることが多く、5月18日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ジギタリスが象徴する意味</h2>
-    <p>ジギタリスの花言葉は「純愛」です。花茎に沿って規則正しく咲く釣鐘形の花が、まっすぐで純粋な愛情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ジギタリスの魅力</h2>
-    <p>ジギタリスの魅力は、すっと伸びた花茎に連なる釣鐘形の花が生み出す、リズミカルで華やかな存在感にあります。花壇の背景に植えると立体感が生まれます。5月18日生まれの方はもちろん、まっすぐな想いを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ジギタリスは半日陰でも育つ丈夫な多年草ですが、全草に毒性があるため、育てる際は取り扱いに注意が必要です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月18日生まれの方はもちろん、まっすぐな想いを伝える贈り物としてもジギタリスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジギタリスはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に釣鐘形の花を花茎に沿って咲かせます。オオバコ科の多年草で、まっすぐ伸びる姿が印象的です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジギタリスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「純愛」という花言葉は、花茎に沿って規則正しく咲く釣鐘形の花が、まっすぐで純粋な愛情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジギタリスは薬にもなると聞きましたが本当ですか？</div>
-        <div class="faq-a">はい。ジギタリスの葉は強心配糖体を含み、かつて心臓病の薬として用いられた歴史がありますが、全草に強い毒性があるため取り扱いには注意が必要です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ジギタリスはどんな形の花を咲かせますか？</div>
+        <div class="faq-a">釣鐘のような形をした花を、花茎に沿って下から上へ規則正しく連ねて咲かせます。オオバコ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>空に向かって連なる鐘のような花、ジギタリスのまっすぐな想い</h2>
+    <p>空に向かって連なる鐘のような花は、下のほうから順に開いていき、上部にはまだつぼみが残ったまま下では花が咲き終わる、ということも珍しくありません。一本の茎の中に、開花のさまざまな段階が同居しているのです。その規則正しい並びと、迷いなく上へ伸びていく姿には、寄り道をしない一途さが感じられます。花茎に沿って連なる釣鐘形の花が、まっすぐで純粋な愛情を思わせることから、ジギタリスには「純愛」という花言葉が贈られているといわれています。伝えたい気持ちがあるなら、遠回りせずにまっすぐ届けていい。そんな後押しをしてくれる花なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ジギタリスの花言葉「純愛」の由来は？</div>
+        <div class="faq-a">花茎に沿って規則正しく連なる釣鐘形の花が、まっすぐで純粋な愛情を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>気持ちを伝えることをためらってしまう瞬間は、誰にでもあります。けれど遠回りした言葉より、まっすぐな一言のほうが、案外相手の心に残るものです。背筋を伸ばしてまっすぐに立つジギタリスのように、飾らない言葉こそが、一番遠くまで届くのかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ジギタリスから始める小さな体験</h2>
+    <p>凛と伸びる花姿にならって、今日はこんな体験から始めてみませんか。</p>
+    <ul class="exp-list">
+      <li>釣鐘形の花が並ぶ様子をじっくり観察してみる</li>
+      <li>伝えたい気持ちを一つ、素直な言葉にしてみる</li>
+      <li>まっすぐ姿勢を正して過ごしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ジギタリスは薬としても知られているのですか？</div>
+        <div class="faq-a">かつて心臓の薬として研究に用いられた歴史がある植物として知られています。ただし取り扱いには専門的な知識が必要とされ、観賞用として楽しむのが基本です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">まっすぐな想いを届けたい今日は、ラッキーナンバーや星座もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーナンバーと星座をまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>下から花を咲かせながら迷わず天へ伸びていくジギタリスの姿を前にすると、遠回りしてまで気持ちを隠す理由が、果たしてあるでしょうか。</p>
     <ul>
-      <li>ジギタリスは初夏に釣鐘形の花を咲かせる、5月18日の誕生花</li>
-      <li>花言葉は「純愛」、規則正しく咲く花姿に由来する</li>
-      <li>まっすぐ伸びる花茎の存在感が魅力</li>
-      <li>半日陰でも育つが毒性があるため取り扱いに注意</li>
+      <li>ジギタリスはオオバコ科の多年草で、初夏に釣鐘形の花を花茎に沿って咲かせる、5月18日の誕生花</li>
+      <li>花言葉は「純愛」。規則正しく連なる花姿に由来するとされる</li>
+      <li>下から順に咲き上がる、迷いのない伸び方が魅力</li>
+      <li>かつて薬用植物として研究された歴史も持つ</li>
     </ul>
   </section>
 

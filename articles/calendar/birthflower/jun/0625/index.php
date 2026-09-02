@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0625/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月25日の誕生花アガパンサスの花言葉・特徴・魅力をわかりやすく解説。「愛の始まり」を象徴する涼しげな紫や白の花の意味を紹介します。">
+  <meta name="description" content="6月25日の誕生花アガパンサスの花言葉・特徴・魅力をわかりやすく解説。花茎の先に紫や白の小花が球状に集まって咲く、ヒガンバナ科「愛の始まり」の花を紹介します。">
   <title>6月25日の誕生花はアガパンサス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アガパンサスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にすらりと伸びた花茎の先に紫や白の小花を咲かせます。ヒガンバナ科の多年草です。"}},
-      {"@type":"Question","name":"アガパンサスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「愛の始まり」という花言葉は、ギリシャ語で「愛の花」を意味する名前と、小花が寄り添うように咲く姿に由来すると言われています。"}},
-      {"@type":"Question","name":"アガパンサスは育てやすい花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。丈夫な性質で一度植えると毎年花を咲かせるため、初心者にも育てやすい花とされています。"}}
+      {"@type":"Question","name":"アガパンサスはどんな姿の花ですか？","acceptedAnswer":{"@type":"Answer","text":"夏、すらりと伸びた花茎の先に紫や白の小花が球状に集まって咲く、ヒガンバナ科の多年草です。涼しげで気品ある印象を与えます。"}},
+      {"@type":"Question","name":"アガパンサスの花言葉「愛の始まり」の由来は？","acceptedAnswer":{"@type":"Answer","text":"すらりと伸びた花茎の先で小花が集まっていく姿が、これから何かが育っていく予感を思わせることに由来するとされています。"}},
+      {"@type":"Question","name":"アガパンサスの花の色にはどんな種類がありますか？","acceptedAnswer":{"@type":"Answer","text":"紫や白の花を咲かせることが多く、涼しげな印象から夏の庭でよく利用されています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 25 · 誕生花</span>
     <h1>6月25日の誕生花はアガパンサス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アガパンサスは、ヒガンバナ科の多年草で、夏に紫や白の小花が球状に集まって咲く6月25日の誕生花です。花言葉は「愛の始まり」。涼しげで気品ある花です。</p>
+    <p class="art-lead">すらりと伸びた花茎の先で、小さな花が寄り集まって涼しげな球をつくっています。アガパンサスは、紫や白の小花が球状に集まって咲く、涼しげな印象のヒガンバナ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アガパンサスとは</a></li>
-      <li><a href="#meaning">アガパンサスが象徴する意味</a></li>
-      <li><a href="#charm">アガパンサスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月25日の誕生花として親しまれるアガパンサス</a></li>
+      <li><a href="#story">伸びゆく花茎に宿る、始まりの予感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アガパンサスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アガパンサスとは</h2>
-    <p>アガパンサスは、ヒガンバナ科の多年草で、6月25日の誕生花として知られています。夏になるとすらりと伸びた花茎の先に紫や白の小花が球状に集まって咲き、涼しげで気品ある印象を与える花です。</p>
-  </section>
+    <h2>6月25日の誕生花として親しまれるアガパンサス</h2>
+    <p>アガパンサスは、ヒガンバナ科の多年草です。夏になると、すらりと伸びた花茎の先に紫や白の小花が球状に集まって咲き、涼しげで気品ある印象を与えます。夏の庭を象徴する花として、6月25日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アガパンサスが象徴する意味</h2>
-    <p>アガパンサスの花言葉は「愛の始まり」です。ギリシャ語で「愛の花」を意味する名前を持ち、小花が寄り添うように咲く姿が、これから育まれる愛の予感を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アガパンサスの魅力</h2>
-    <p>アガパンサスの魅力は、すらりと伸びた花茎の先に集まって咲く小花の涼しげな美しさと、紫や白の上品な色合いにあります。夏の庭に清涼感を添える花として人気です。6月25日生まれの方はもちろん、新しい愛の始まりを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アガパンサスは日当たりの良い場所を好み、丈夫で育てやすく、一度植えると毎年花を咲かせてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月25日生まれの方はもちろん、新しい愛の始まりを伝えたい贈り物としてもアガパンサスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アガパンサスはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にすらりと伸びた花茎の先に紫や白の小花を咲かせます。ヒガンバナ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アガパンサスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「愛の始まり」という花言葉は、ギリシャ語で「愛の花」を意味する名前と、小花が寄り添うように咲く姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アガパンサスは育てやすい花ですか？</div>
-        <div class="faq-a">はい。丈夫な性質で一度植えると毎年花を咲かせるため、初心者にも育てやすい花とされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アガパンサスはどんな姿の花ですか？</div>
+        <div class="faq-a">夏、すらりと伸びた花茎の先に紫や白の小花が球状に集まって咲く、ヒガンバナ科の多年草です。涼しげで気品ある印象を与えます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>伸びゆく花茎に宿る、始まりの予感</h2>
+    <p>アガパンサスの花茎は、迷いなくまっすぐ天に向かって伸び、その先端で小さな花たちが寄り集まって、涼やかな球をつくります。一つひとつの花が控えめに開きながらも、集まることで確かな存在感を生み出す様子は、これから育っていく何かの予感を感じさせます。すっと伸びた茎の姿は凛としていて、まだ何も始まっていないのに、期待だけが先に膨らんでいくような気配をまとっています。何かが芽生えていく手前の静けさを思わせるその佇まいから、アガパンサスには「愛の始まり」という花言葉が託されるようになったとされています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アガパンサスの花言葉「愛の始まり」の由来は？</div>
+        <div class="faq-a">すらりと伸びた花茎の先で小花が集まっていく姿が、これから何かが育っていく予感を思わせることに由来するとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>始まったばかりの関係は、まだ形がはっきりしないぶん、期待も不安も入り混じるものです。アガパンサスが花茎を伸ばして小花を集めていく姿は、そんな始まりの時間そのものを映しているようにも見えます。焦らずに育てていく先にこそ、確かな形が見えてくるものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アガパンサスから始める小さな体験</h2>
+    <p>すらりと伸びるアガパンサスを思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>球状に集まって咲く小花をじっくり観察してみる</li>
+      <li>新しく始まった関係を一つ、大切にしてみる</li>
+      <li>涼しげな紫や白のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アガパンサスの花の色にはどんな種類がありますか？</div>
+        <div class="faq-a">紫や白の花を咲かせることが多く、涼しげな印象から夏の庭でよく利用されています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">新しい関係を大切に育てたい今日は、月九星やラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、今月の九星とおすすめの場所を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>すらりと伸びた花茎の先で小花を集めていくアガパンサスの姿には、始まりの時間を焦らず育てる大切さが宿っています。</p>
     <ul>
-      <li>アガパンサスは夏に紫や白の小花を咲かせる、6月25日の誕生花</li>
-      <li>花言葉は「愛の始まり」、愛の花を意味する名前に由来する</li>
-      <li>涼しげで気品ある花姿が魅力</li>
-      <li>日当たりの良い場所で丈夫に育つ</li>
+      <li>アガパンサスはヒガンバナ科の多年草で、夏に球状の花を咲かせる、6月25日の誕生花</li>
+      <li>花言葉は「愛の始まり」。花茎が伸び小花が集まっていく姿に由来するとされる</li>
+      <li>紫や白の涼しげな花色が魅力</li>
+      <li>夏の庭を彩る花として親しまれている</li>
     </ul>
   </section>
 

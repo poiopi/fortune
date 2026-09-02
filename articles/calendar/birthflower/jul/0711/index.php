@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0711/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月11日の誕生花インパチェンスの花言葉・特徴・魅力をわかりやすく解説。「鮮やかな人」を象徴する株一面に咲く鮮やかな花の意味を紹介します。">
+  <meta name="description" content="7月11日の誕生花インパチェンスの花言葉・特徴・魅力をわかりやすく解説。株一面に鮮やかな彩りを咲かせる、夏のツリフネソウ科の花を紹介します。">
   <title>7月11日の誕生花はインパチェンス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"インパチェンスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に鮮やかな色の花を株一面に咲かせます。ツリフネソウ科の一年草です。"}},
-      {"@type":"Question","name":"インパチェンスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"株一面を鮮やかな色の花で埋め尽くすほど賑やかに咲き続ける姿が、周囲を明るく彩る鮮やかな人柄を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"インパチェンスはどんな場所でよく見かけますか？","acceptedAnswer":{"@type":"Answer","text":"日陰でも花付きが良いため、公園の花壇や庭の日陰スペースの彩りとして広く利用されています。"}}
+      {"@type":"Question","name":"インパチェンスはどのくらいの期間花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に長期間、鮮やかな色の花を株一面に咲かせ続けます。ツリフネソウ科の一年草です。"}},
+      {"@type":"Question","name":"インパチェンスの花言葉『鮮やかな人』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"株一面を鮮やかな色の花で埋め尽くすほど賑やかに咲き続ける姿が、周囲を明るく彩る鮮やかな人柄を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"インパチェンスはどのように咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏を中心に長期間、鮮やかな色の花を株一面に咲かせ続けます。賑やかで華やかな印象を与える花です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 11 · 誕生花</span>
     <h1>7月11日の誕生花はインパチェンス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">インパチェンスは、ツリフネソウ科の一年草で、夏を中心に鮮やかな色の花を株一面に咲かせ続け、賑やかで華やかな彩りを長く楽しませてくれる花です。花言葉は「鮮やかな人」。株一面を彩る賑やかな花です。</p>
+    <p class="art-lead">小さな株一面が、鮮やかな色の花で埋め尽くされています。インパチェンスは、一つひとつは小さくても、集まることで賑やかな存在感を放つ花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">インパチェンスとは</a></li>
-      <li><a href="#meaning">インパチェンスが象徴する意味</a></li>
-      <li><a href="#charm">インパチェンスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月11日の誕生花として親しまれるインパチェンス</a></li>
+      <li><a href="#story">株一面を染める鮮やかさ、インパチェンスの賑わい</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、インパチェンスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>インパチェンスとは</h2>
-    <p>インパチェンスは、ツリフネソウ科の一年草で、7月11日の誕生花として知られています。夏を中心に鮮やかな色の花を株一面に咲かせ続け、賑やかで華やかな彩りを長く楽しませてくれる花です。</p>
-  </section>
+    <h2>7月11日の誕生花として親しまれるインパチェンス</h2>
+    <p>インパチェンスは、ツリフネソウ科の一年草です。夏を中心に長期間、鮮やかな色の花を株一面に咲かせます。賑やかで華やかな印象を与えるとされるこの花は、7月11日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>インパチェンスが象徴する意味</h2>
-    <p>インパチェンスの花言葉は「鮮やかな人」です。株一面を鮮やかな色の花で埋め尽くすほど賑やかに咲き続ける姿が、周囲を明るく彩る鮮やかな人柄を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>インパチェンスの魅力</h2>
-    <p>インパチェンスの魅力は、株いっぱいに咲き誇る鮮やかな花色と、夏の間長く楽しめる開花期間の長さにあります。日陰の庭を明るく彩る花として、世界中で親しまれています。7月11日生まれの方はもちろん、元気を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>インパチェンスは半日陰を好み、乾燥に弱いため水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月11日生まれの方はもちろん、元気を届けたい贈り物としてもインパチェンスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">インパチェンスはいつ頃咲きますか？</div>
-        <div class="faq-a">夏を中心に鮮やかな色の花を株一面に咲かせます。ツリフネソウ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">インパチェンスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">株一面を鮮やかな色の花で埋め尽くすほど賑やかに咲き続ける姿が、周囲を明るく彩る鮮やかな人柄を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">インパチェンスはどんな場所でよく見かけますか？</div>
-        <div class="faq-a">日陰でも花付きが良いため、公園の花壇や庭の日陰スペースの彩りとして広く利用されています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">インパチェンスはどのくらいの期間花を楽しめますか？</div>
+        <div class="faq-a">夏を中心に長期間、鮮やかな色の花を株一面に咲かせ続けます。ツリフネソウ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>株一面を染める鮮やかさ、インパチェンスの賑わい</h2>
+    <p>インパチェンスは、一つひとつの花はそれほど大きくないものの、株全体を覆うように鮮やかな色の花を次々と咲かせ続けます。夏の間、長期にわたって途切れることなく花をつけ続けるため、庭や花壇に植えられると、その場所全体が鮮やかな彩りで満たされていきます。一つひとつの花の可憐さと、集まったときの賑やかさという二つの魅力を併せ持つのが、この花の特徴です。「鮮やかな人」とはまさに、一つの存在が周囲全体を華やかに染めていく、この花のような人のことをいうのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">インパチェンスの花言葉『鮮やかな人』の由来は何ですか？</div>
+        <div class="faq-a">株一面を鮮やかな色の花で埋め尽くすほど賑やかに咲き続ける姿が、周囲を明るく彩る鮮やかな人柄を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一つの小さな存在が、気づけば周り全体を明るく染めていた――そんな場面を見たことはありませんか。インパチェンスは株一面を鮮やかな色の花で埋め尽くすほど、夏の間中咲き続けます。自分の魅力も、抑え込まず思い切って広げてみると、周囲を鮮やかに変えるかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、インパチェンスから始める小さな体験</h2>
+    <p>株一面を鮮やかに彩るインパチェンスにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>株一面に咲く鮮やかな花をじっくり観察してみる</li>
+      <li>賑やかで楽しい時間を誰かと過ごしてみる</li>
+      <li>鮮やかな色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">インパチェンスはどのように咲きますか？</div>
+        <div class="faq-a">夏を中心に長期間、鮮やかな色の花を株一面に咲かせ続けます。賑やかで華やかな印象を与える花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分の魅力を発揮したい今日は、ラッキーナンバーや月九星もあわせて確認してみませんか。開運カレンダーでは、ラッキーナンバーと月九星を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな花が集まって株全体を彩るインパチェンスの姿は、一つの存在が周囲をどれほど明るく変えられるかを物語っています。</p>
     <ul>
-      <li>インパチェンスは夏を中心に鮮やかな花を咲かせる、7月11日の誕生花</li>
-      <li>花言葉は「鮮やかな人」、株一面を彩る賑やかさに由来する</li>
-      <li>長く楽しめる開花期間と鮮やかな花色が魅力</li>
-      <li>半日陰で、水切れに注意することが必要</li>
+      <li>インパチェンスは夏を中心に鮮やかな色の花を株一面に咲かせる、ツリフネソウ科の一年草で、7月11日の誕生花</li>
+      <li>花言葉は「鮮やかな人」。株一面を彩る賑やかな咲き方に由来するとされる</li>
+      <li>賑やかで華やかな印象を与えるとされる</li>
+      <li>一つひとつは小さくても、集まることで確かな存在感を放つ</li>
     </ul>
   </section>
 

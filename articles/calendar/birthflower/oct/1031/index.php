@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"タマスダレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に白い花を咲かせます。ヒガンバナ科の多年草です。"}},
-      {"@type":"Question","name":"タマスダレの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白い花びらが汚れなく咲きそろう姿が、清らかな潔白さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"タマスダレの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白い花が集まって咲く様子が、玉を連ねたすだれのように見えることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"タマスダレはどんな科に属する植物ですか？","acceptedAnswer":{"@type":"Answer","text":"ヒガンバナ科に属する多年草です。夏から秋にかけて、白い花を咲かせます。"}},
+      {"@type":"Question","name":"タマスダレの花言葉「潔白」の由来を教えてください。","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、汚れのない白い花を咲かせる姿が、清らかで穢れのない印象を象徴していると考えられています。"}}
     ]
   }
   </script>
@@ -132,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 31 · 誕生花</span>
     <h1>10月31日の誕生花はタマスダレ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">タマスダレは、ヒガンバナ科の多年草で、夏から秋に白い花を咲かせる、清らかで潔白な印象を持つ花です。花言葉は「潔白」。清らかで潔白な花です。</p>
+    <p class="art-lead">夏の暑さがようやく和らぎ、朝夕に少し肌寒さを感じ始める頃。庭先にふと白い花が咲いているのに気づくことがある。ヒガンバナ科の多年草であるタマスダレは、夏から秋にかけて、そんな季節の変わり目にひっそりと花を咲かせる。10月31日の誕生花として名を連ねるのは、季節が静かに移ろう時期に寄り添う花だからである。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">タマスダレとは</a></li>
-      <li><a href="#meaning">タマスダレが象徴する意味</a></li>
-      <li><a href="#charm">タマスダレの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月31日の誕生花として親しまれるタマスダレ</a></li>
+      <li><a href="#story">夏の余韻に咲く、白く清らかな花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、タマスダレから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>タマスダレとは</h2>
-    <p>タマスダレは、ヒガンバナ科の多年草で、10月31日の誕生花として知られています。夏から秋に白い花を咲かせる、清らかで潔白な印象を持つ花です。</p>
-  </section>
+    <h2>10月31日の誕生花として親しまれるタマスダレ</h2>
+    <p>タマスダレは、ヒガンバナ科の多年草として知られる、10月31日の誕生花です。夏から秋にかけて、白く清らかな花を咲かせることで親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>タマスダレが象徴する意味</h2>
-    <p>タマスダレの花言葉は「潔白」です。白い花びらが汚れなく咲きそろう姿が、清らかな潔白さを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>タマスダレの魅力</h2>
-    <p>タマスダレの魅力は、白い花が持つ清らかで潔白な美しさと、群れて咲きそろう楚々とした佇まいにあります。10月31日生まれの方はもちろん、清らかな潔白さを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>タマスダレは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月31日生まれの方はもちろん、清らかな潔白さを伝えたい贈り物としてもタマスダレは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タマスダレはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に白い花を咲かせます。ヒガンバナ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タマスダレの花言葉の由来は何ですか？</div>
-        <div class="faq-a">白い花びらが汚れなく咲きそろう姿が、清らかな潔白さを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タマスダレの名前の由来は何ですか？</div>
-        <div class="faq-a">白い花が集まって咲く様子が、玉を連ねたすだれのように見えることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">タマスダレはどんな科に属する植物ですか？</div>
+        <div class="faq-a">ヒガンバナ科に属する多年草です。夏から秋にかけて、白い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏の余韻に咲く、白く清らかな花</h2>
+    <p>夏の暑さがようやく和らぎ、風にどこか秋の気配が混じり始める頃。タマスダレは、そんな季節の境目を選ぶかのように、白い花を咲かせる。夏から秋へと移ろう時間の中で咲き続けるヒガンバナ科の多年草として、その白さは一つの季節が終わり、次の季節が始まる合図のようにも映る。すっと伸びた茎の先に開く花びらの澄んだ白さは、飾り気のない美しさを感じさせる。季節の境目にひっそりと寄り添うように、静かに咲き続けるその律儀な佇まいが、「潔白」という花言葉の由来になっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タマスダレの花言葉「潔白」の由来を教えてください。</div>
+        <div class="faq-a">夏から秋にかけて、汚れのない白い花を咲かせる姿が、清らかで穢れのない印象を象徴していると考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに見せる前に、自分の中にある気持ちを一度きちんと見つめてみる。タマスダレの白さのように、隠しごとのない澄んだ心でいられたら、どんなに軽やかだろうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、タマスダレから始める小さな体験</h2>
+    <p>夏から秋へ、静かに白い花を咲かせ続けるタマスダレにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い花をじっくり眺めてみる</li>
+      <li>正直な気持ちを一つ誰かに伝えてみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">月をまたいで気持ちを切り替えたい日は、今月の誕生石にも目を向けてみませんか。開運カレンダーでは、月ごとの誕生石の意味もお届けしています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>涼しくなり始めた風の中でも、タマスダレの白さは揺らがない。飾らずにまっすぐ咲き続けるその姿を、今日はゆっくり眺めてみたい。</p>
     <ul>
-      <li>タマスダレは白い花を咲かせる、10月31日の誕生花</li>
-      <li>花言葉は「潔白」、汚れなく咲きそろう白い花びらに由来する</li>
-      <li>群れて咲きそろう楚々とした佇まいが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>タマスダレはヒガンバナ科の多年草で、夏から秋に白い花を咲かせる、10月31日の誕生花</li>
+      <li>花言葉は「潔白」。季節の境目にひっそりと咲き続ける律儀な佇まいに由来すると言われる</li>
+      <li>汚れのない白い花を咲かせる、清らかで飾らない姿が魅力</li>
+      <li>何も隠さず、澄んだ気持ちでいたい日に寄り添う花</li>
     </ul>
   </section>
 

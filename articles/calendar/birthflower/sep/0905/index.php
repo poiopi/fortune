@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0905/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月5日の誕生花オミナエシの花言葉・特徴・魅力をわかりやすく解説。「美人」を象徴する黄色い小花の意味を紹介します。">
+  <meta name="description" content="9月5日の誕生花オミナエシの花言葉・特徴・魅力をわかりやすく解説。「美人」を象徴する秋の七草の意味を紹介します。">
   <title>9月5日の誕生花はオミナエシ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オミナエシはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に黄色い小花を傘状に咲かせます。オミナエシ科の多年草です。"}},
-      {"@type":"Question","name":"オミナエシの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細い茎の先で黄色い小花を控えめに咲かせる奥ゆかしい花姿が、内に秘めた美しさを持つ人を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"オミナエシは秋の七草の一つですか？","acceptedAnswer":{"@type":"Answer","text":"はい。ハギ・キキョウ・クズなどとともに秋の七草の一つに数えられ、古くから日本の秋を彩る植物として親しまれてきました。"}}
+      {"@type":"Question","name":"オミナエシはなぜ秋の七草に数えられているのですか？","acceptedAnswer":{"@type":"Answer","text":"秋を代表する野の花として古くから親しまれてきたことから、秋の七草の一つに数えられていると言われています。"}},
+      {"@type":"Question","name":"オミナエシの花言葉『美人』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"控えめでありながら、秋の野で確かな存在感を放つ黄色い花の姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 5 · 誕生花</span>
     <h1>9月5日の誕生花はオミナエシ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オミナエシは、オミナエシ科の多年草で、秋に黄色い小花を傘状に咲かせる、奥ゆかしい印象を持つ花です。花言葉は「美人」。奥ゆかしい花です。</p>
+    <p class="art-lead">野の道端に、黄色い小花がふわりと傘のように広がっている。派手さはないのに、なぜか目に留まる——秋の七草にも数えられるオミナエシが、9月5日の誕生花である。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オミナエシとは</a></li>
-      <li><a href="#meaning">オミナエシが象徴する意味</a></li>
-      <li><a href="#charm">オミナエシの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月5日の誕生花として親しまれるオミナエシ</a></li>
+      <li><a href="#story">秋の七草に数えられる、控えめな黄色の存在感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オミナエシから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オミナエシとは</h2>
-    <p>オミナエシは、オミナエシ科の多年草で、9月5日の誕生花として知られています。秋に黄色い小花を傘状に咲かせる、奥ゆかしい印象を持つ花です。</p>
-  </section>
+    <h2>9月5日の誕生花として親しまれるオミナエシ</h2>
+    <p>オミナエシは、オミナエシ科の多年草です。秋になると、黄色い小花を傘状に咲かせます。秋の七草の一つとして古くから親しまれてきた花で、9月5日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オミナエシが象徴する意味</h2>
-    <p>オミナエシの花言葉は「美人」です。細い茎の先で黄色い小花を控えめに咲かせる奥ゆかしい花姿が、内に秘めた美しさを持つ人を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オミナエシの魅力</h2>
-    <p>オミナエシの魅力は、黄色い小花が傘状に集まって咲く繊細さと、秋の七草の一つとして古くから和歌にも詠まれてきた奥ゆかしさにあります。9月5日生まれの方はもちろん、内に秘めた美しさを称えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オミナエシは日当たりを好み、乾燥にも比較的強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月5日生まれの方はもちろん、内に秘めた美しさを称えたい贈り物としてもオミナエシは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オミナエシはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に黄色い小花を傘状に咲かせます。オミナエシ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オミナエシの花言葉の由来は何ですか？</div>
-        <div class="faq-a">細い茎の先で黄色い小花を控えめに咲かせる奥ゆかしい花姿が、内に秘めた美しさを持つ人を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オミナエシは秋の七草の一つですか？</div>
-        <div class="faq-a">はい。ハギ・キキョウ・クズなどとともに秋の七草の一つに数えられ、古くから日本の秋を彩る植物として親しまれてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オミナエシはなぜ秋の七草に数えられているのですか？</div>
+        <div class="faq-a">秋を代表する野の花として古くから親しまれてきたことから、秋の七草の一つに数えられていると言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>秋の七草に数えられる、控えめな黄色の存在感</h2>
+    <p>秋の七草といえば、萩や桔梗などの名が挙がることが多いが、オミナエシもまたその一つに数えられている。派手な大輪の花ではなく、小さな黄色い花が傘のように集まって咲く、控えめな佇まいの花だ。それでも、秋の野を歩けばふと目に留まるのは、その黄色が周囲の緑や枯れ色の中でよく映えるからだろう。行事や暦の中で大切にされてきたのは、こうした主張しすぎない美しさだったのかもしれない。花言葉「美人」は、この控えめでありながら確かな存在感を放つ姿に由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オミナエシの花言葉『美人』にはどんな由来がありますか？</div>
+        <div class="faq-a">控えめでありながら、秋の野で確かな存在感を放つ黄色い花の姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>目立つことだけが、美しさの条件ではない。静かに、けれど確かにそこにある佇まいにも、人を惹きつける力がある。控えめな自分の良さを、今日は一つ認めてあげるのもいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オミナエシから始める小さな体験</h2>
+    <p>秋の七草の一つとして親しまれてきたオミナエシにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>黄色い小花が集まって咲く様子をじっくり観察してみる</li>
+      <li>秋の七草について少し調べてみる</li>
+      <li>控えめだけれど大切にしている自分の一面を思い浮かべてみる</li>
+    </ul>
+
+    <p class="cta-lead">控えめな美しさを大切にしたい日は、今日の年九星もあわせて見てみませんか。開運カレンダーでは、年九星とおすすめの行動を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>秋の七草に数えられながらも、決して目立とうとしないオミナエシ。控えめであることもまた美しさなのだと、この花は教えてくれているのではないだろうか。</p>
     <ul>
-      <li>オミナエシは秋に黄色い小花を咲かせる、9月5日の誕生花</li>
-      <li>花言葉は「美人」、控えめに咲く花姿に由来する</li>
-      <li>黄色い小花の奥ゆかしさが魅力</li>
-      <li>日当たりを好み、乾燥にも比較的強い</li>
+      <li>オミナエシは秋に黄色い小花を傘状に咲かせる、オミナエシ科の多年草で、9月5日の誕生花</li>
+      <li>花言葉は「美人」。控えめでありながら確かな存在感を放つ姿に由来すると言われる</li>
+      <li>秋の七草の一つとして古くから親しまれてきた</li>
+      <li>主張しすぎない美しさが、この花いちばんの魅力</li>
     </ul>
   </section>
 

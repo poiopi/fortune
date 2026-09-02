@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マンサクの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"早春に他の花より先駆けて咲くことから「まず咲く」が転じたという説や、枝いっぱいに花をつける様子から「豊年満作」に由来するという説があります。"}},
-      {"@type":"Question","name":"マンサクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「新鮮」という花言葉は、他のどの花よりも早く芽吹き花開く、みずみずしい印象に由来するとされています。"}},
-      {"@type":"Question","name":"マンサクはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"代表的なのは黄色ですが、赤やオレンジ色の品種もあります。"}}
+      {"@type":"Question","name":"マンサクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、他の多くの花に先駆けて花を咲かせます。地域によっては1月頃から咲き始めることもあります。"}},
+      {"@type":"Question","name":"マンサクの花言葉「新鮮」の由来は？","acceptedAnswer":{"@type":"Answer","text":"他の花に先駆けて、いち早く春の訪れを告げる姿から「新鮮」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 13 · 誕生花</span>
     <h1>1月13日の誕生花はマンサク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マンサクは、他の花に先駆けて咲く1月13日の誕生花です。花言葉は「新鮮」。細く縮れた独特な花びらが特徴です。</p>
+    <p class="art-lead">成人の日を目前に控えた1月13日。まだ寒さの厳しい枝先で、誰よりも早くリボン状の花びらをほどくのがマンサクです。今日はそのひと足早い春の気配を紹介します。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マンサクとは</a></li>
-      <li><a href="#meaning">マンサクが象徴する意味</a></li>
-      <li><a href="#charm">マンサクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">他花に先駆けて咲く、マンサクのリボン</a></li>
+      <li><a href="#story">1月13日、マンサクが運んでくる新鮮な気配</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マンサクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マンサクとは</h2>
-    <p>マンサクは、マンサク科の落葉小高木で、1月13日の誕生花として知られています。早春、他の花に先駆けて、細長いリボン状の花びらを持つ黄色い花を咲かせ、春の訪れをいち早く告げる花木として知られています。</p>
-  </section>
+    <h2>他花に先駆けて咲く、マンサクのリボン</h2>
+    <p>マンサクは、マンサク科の落葉小高木です。早春、まだ他の花が眠っている時期に、細長いリボン状の花びらを持つ花を咲かせます。「まず咲く」が転じて名付けられたともいわれ、春を告げる先駆けの花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マンサクが象徴する意味</h2>
-    <p>マンサクの花言葉は「新鮮」です。他のどの花よりも早く芽吹き花開くその姿から、みずみずしい新鮮さや新しい季節の始まりを象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マンサクの魅力</h2>
-    <p>マンサクの魅力は、細く縮れたリボンのような独特な花びらの形と、他に先駆けて咲く新鮮な印象にあります。まだ寒さの残る時期に咲く姿は、新しい季節の訪れを予感させてくれます。1月13日生まれの方はもちろん、新鮮な始まりを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マンサクは日当たりの良い場所を好み、乾燥しすぎない程度に土の湿り気を保つのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月13日生まれの方はもちろん、新しい始まりを届けたい贈り物としてもマンサクは人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンサクの名前の由来は何ですか？</div>
-        <div class="faq-a">早春に他の花より先駆けて咲くことから「まず咲く」が転じたという説や、枝いっぱいに花をつける様子から「豊年満作」に由来するという説があります。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンサクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「新鮮」という花言葉は、他のどの花よりも早く芽吹き花開く、みずみずしい印象に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンサクはどんな色の花を咲かせますか？</div>
-        <div class="faq-a">代表的なのは黄色ですが、赤やオレンジ色の品種もあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マンサクはいつ頃咲きますか？</div>
+        <div class="faq-a">早春、他の多くの花に先駆けて花を咲かせます。地域によっては1月頃から咲き始めることもあります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月13日、マンサクが運んでくる新鮮な気配</h2>
+    <p>マンサクの花びらは、まっすぐではなく細く縮れたリボンのような形をしていて、風に揺れるたびに独特の動きを見せます。他の花木がまだ固く芽を閉じている時期に、いち早くほどけるように咲くその姿は、周囲にひと足早い季節の変化を知らせてくれます。成人の日を迎える頃、新しい一歩を踏み出す人にとっても、マンサクの姿は励みになるかもしれません。花言葉は「新鮮」。誰よりも先に春の気配を届けるその働きから生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マンサクの花言葉「新鮮」の由来は？</div>
+        <div class="faq-a">他の花に先駆けて、いち早く春の訪れを告げる姿から「新鮮」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>新しいことを始めるのに、遅すぎるということはありません。マンサクが誰よりも先に動き出すように、今日から小さな一歩を踏み出してみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マンサクから始める小さな体験</h2>
+    <p>誰よりも先に春を告げるマンサクにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>細長いリボン状の花びらを探して観察してみる</li>
+      <li>誰よりも先に、小さな一歩を踏み出してみる</li>
+      <li>新鮮な気持ちで今日一日を始めてみる</li>
+    </ul>
+
+    <p class="cta-lead">新しい一歩を踏み出した今日は、運気の流れもあわせて確認してみませんか。開運カレンダーでは、日々の吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>マンサクは、他の花に先駆けて春の気配を届ける、1月13日らしい誕生花です。</p>
     <ul>
-      <li>マンサクは春に先駆けて咲く、1月13日の誕生花</li>
-      <li>花言葉は「新鮮」、みずみずしい新しさを象徴する花とされる</li>
-      <li>独特なリボン状の花びらが魅力</li>
-      <li>日当たりの良い場所で、適度な湿り気を保って育てたい</li>
+      <li>マンサクはマンサク科の落葉小高木で、早春に細長いリボン状の花びらの花を咲かせる</li>
+      <li>他の花に先駆けて春を告げる、先駆けの花として親しまれている</li>
+      <li>花言葉は「新鮮」。いち早く季節の変化を届ける姿を象徴する言葉とされる</li>
+      <li>風に揺れる独特の花びらの動きも観察のポイント</li>
     </ul>
   </section>
 

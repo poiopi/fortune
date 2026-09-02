@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0531/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月31日の誕生花キショウブの花言葉・特徴・魅力をわかりやすく解説。「消息」を象徴する水辺に咲く黄色い花の意味を紹介します。">
+  <meta name="description" content="5月31日の誕生花キショウブの花言葉・特徴・魅力をわかりやすく解説。「消息」という花言葉に込められた意味と、水辺に鮮やかに咲く黄色い花姿を紹介します。">
   <title>5月31日の誕生花はキショウブ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キショウブはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。"}},
-      {"@type":"Question","name":"キショウブの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"キショウブとハナショウブはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。"}}
+      {"@type":"Question","name":"キショウブはどんな環境で育つ花ですか？","acceptedAnswer":{"@type":"Answer","text":"水辺や湿地を好む、アヤメ科の多年草です。初夏になると鮮やかな黄色の花を水辺に咲かせます。"}},
+      {"@type":"Question","name":"キショウブの花言葉「消息」の由来は？","acceptedAnswer":{"@type":"Answer","text":"水辺で遠くからでも目を引く鮮やかな黄色の花が、離れた場所からも届く便りを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"キショウブは日本にもともとあった花ですか？","acceptedAnswer":{"@type":"Answer","text":"ヨーロッパ原産の植物で、日本には観賞用として持ち込まれたのち、各地の水辺に定着したといわれています。地域によっては要注意外来生物として扱われる場合もあります。"}}
     ]
   }
   </script>
@@ -132,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 31 · 誕生花</span>
     <h1>5月31日の誕生花はキショウブ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キショウブは、アヤメ科の多年草で、初夏に黄色い花を水辺に咲かせる5月31日の誕生花です。花言葉は「消息」。凛とした印象の花です。</p>
+    <p class="art-lead">水辺に立つと、鮮やかな黄色が水面に映り込んでいるのが目に留まります。キショウブは、そんな水辺を彩る、初夏に咲くアヤメ科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キショウブとは</a></li>
-      <li><a href="#meaning">キショウブが象徴する意味</a></li>
-      <li><a href="#charm">キショウブの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月31日の誕生花として親しまれるキショウブ</a></li>
+      <li><a href="#story">水辺に映える、キショウブの凛とした黄色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キショウブから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キショウブとは</h2>
-    <p>キショウブは、アヤメ科の多年草で、5月31日の誕生花として知られています。初夏になると黄色い花を水辺に咲かせ、凛とした佇まいで水辺の景色を明るく彩ります。</p>
-  </section>
+    <h2>5月31日の誕生花として親しまれるキショウブ</h2>
+    <p>キショウブは、アヤメ科の多年草です。初夏になると、水辺に鮮やかな黄色の花を咲かせ、凛とした印象を与えます。その存在感のある美しさから、5月31日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キショウブが象徴する意味</h2>
-    <p>キショウブの花言葉は「消息」です。水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キショウブの魅力</h2>
-    <p>キショウブの魅力は、水辺に映える鮮やかな黄色の花と、すらりと伸びた葉が織りなす涼やかな景観にあります。池のほとりや湿地に群生する姿は、初夏の風物詩として親しまれています。5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キショウブは湿地や水辺を好む丈夫な植物で、水を張った環境でもよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月31日生まれの方はもちろん、大切な人からの便りを願う贈り物としてもキショウブは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に黄色い花を水辺に咲かせます。アヤメ科の多年草で、凛とした印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「消息」という花言葉は、水辺にすっと立つ姿が、遠く離れた場所からの便りを待つ心情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キショウブとハナショウブはどう違いますか？</div>
-        <div class="faq-a">同じアヤメ科の植物ですが、キショウブは黄色い花を咲かせ、ハナショウブより湿地を好むなど生育環境が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">キショウブはどんな環境で育つ花ですか？</div>
+        <div class="faq-a">水辺や湿地を好む、アヤメ科の多年草です。初夏になると鮮やかな黄色の花を水辺に咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>水辺に映える、キショウブの凛とした黄色</h2>
+    <p>水辺に、鮮やかな黄色の花を凛と咲かせるのがキショウブです。緑の水面や葉の中で、この黄色はひときわ目を引き、遠くからでもすぐにそれとわかるほどの存在感を放ちます。すらりと伸びた花茎の先で風にも動じず咲き続ける姿は、静かな強さを感じさせます。この、遠くまで届く鮮やかな色合いから、キショウブには「消息」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キショウブの花言葉「消息」の由来は？</div>
+        <div class="faq-a">水辺で遠くからでも目を引く鮮やかな黄色の花が、離れた場所からも届く便りを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>消息とは、心配な知らせだけを指す言葉ではありません。水辺に鮮やかな黄色を灯すキショウブのように、変わらず元気でいるという便りも、誰かをほっとさせる大切な消息の一つです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キショウブから始める小さな体験</h2>
+    <p>水辺に映える鮮やかな黄色に背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>水辺に咲く黄色い花を探してみる</li>
+      <li>離れている誰かに、一つ便りを送ってみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キショウブは日本にもともとあった花ですか？</div>
+        <div class="faq-a">ヨーロッパ原産の植物で、日本には観賞用として持ち込まれたのち、各地の水辺に定着したといわれています。地域によっては要注意外来生物として扱われる場合もあります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">遠くの誰かを想いたい今日は、六曜や今月の誕生石もチェックしてみませんか。開運カレンダーでは、その日の六曜と今月の誕生石をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>水辺に凛と立つ黄色い花を見送るように眺めていると、遠くの誰かの近況もふとした瞬間に思い出したくなるものです。</p>
     <ul>
-      <li>キショウブは初夏に黄色い花を咲かせる、5月31日の誕生花</li>
-      <li>花言葉は「消息」、便りを待つ心情を思わせる花姿に由来する</li>
-      <li>水辺に映える鮮やかな黄色と涼やかな景観が魅力</li>
-      <li>湿地や水辺を好む丈夫な植物</li>
+      <li>キショウブはアヤメ科の多年草で、初夏に水辺で黄色の花を咲かせる、5月31日の誕生花</li>
+      <li>花言葉は「消息」。遠くまで届く鮮やかな色合いに由来するとされる</li>
+      <li>水辺で目を引く鮮やかな黄色と、凛とした佇まいが魅力</li>
+      <li>ヨーロッパ原産で、日本の水辺に定着した植物</li>
     </ul>
   </section>
 

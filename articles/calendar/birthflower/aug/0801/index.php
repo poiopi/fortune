@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0801/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月1日の誕生花ヒメユリの花言葉・特徴・魅力をわかりやすく解説。「甘美」を象徴する鮮やかな朱色の花の意味を紹介します。">
+  <meta name="description" content="8月1日の誕生花ヒメユリの花言葉・特徴・魅力をわかりやすく解説。小ぶりながら鮮やかな朱色で凛と咲く花の意味を紹介します。">
   <title>8月1日の誕生花はヒメユリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒメユリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に小ぶりで鮮やかな朱色の花を咲かせます。ユリ科の多年草です。"}},
-      {"@type":"Question","name":"ヒメユリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小ぶりながらも鮮やかな朱色で咲き誇る可憐な花姿が、甘く心惹かれる魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヒメユリは他のユリと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"一般的なユリより小ぶりで、花びらが大きく反り返らずに咲くのが特徴です。可憐で凛とした印象を持つ花として親しまれています。"}}
+      {"@type":"Question","name":"ヒメユリはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"小ぶりな花びらに、鮮やかな朱色をまとって咲きます。夏に見頃を迎える、ユリ科の多年草です。"}},
+      {"@type":"Question","name":"ヒメユリの花言葉『甘美』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"小ぶりながらも鮮やかな朱色で咲き誇る花姿が、見る人の心に甘く強い印象を残すことに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 1 · 誕生花</span>
     <h1>8月1日の誕生花はヒメユリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒメユリは、ユリ科の多年草で、夏になると小ぶりで鮮やかな朱色の花を咲かせ、可憐で凛とした印象を漂わせる花です。花言葉は「甘美」。可憐で凛とした花です。</p>
+    <p class="art-lead">夏の光を浴びて、小さな花びらが鮮やかな朱色に染まる。控えめな大きさでありながら、その色は驚くほど鮮烈だ。8月1日の誕生花はヒメユリ。8月の幕開けを、凛とした一輪が飾る。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒメユリとは</a></li>
-      <li><a href="#meaning">ヒメユリが象徴する意味</a></li>
-      <li><a href="#charm">ヒメユリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月1日の誕生花として親しまれるヒメユリ</a></li>
+      <li><a href="#story">小ぶりな花に宿る、朱色の甘さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒメユリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒメユリとは</h2>
-    <p>ヒメユリは、ユリ科の多年草で、8月1日の誕生花として知られています。夏になると小ぶりで鮮やかな朱色の花を咲かせ、可憐で凛とした印象を漂わせる花です。</p>
-  </section>
+    <h2>8月1日の誕生花として親しまれるヒメユリ</h2>
+    <p>ヒメユリは、ユリ科の多年草です。夏になると、小ぶりながら鮮やかな朱色の花を咲かせます。大輪のユリのような華やかさとは違い、可憐でありながらどこか凛とした印象を漂わせる花として、8月1日の誕生花に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒメユリが象徴する意味</h2>
-    <p>ヒメユリの花言葉は「甘美」です。小ぶりながらも鮮やかな朱色で咲き誇る可憐な花姿が、甘く心惹かれる魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒメユリの魅力</h2>
-    <p>ヒメユリの魅力は、大輪のユリとは違う、小ぶりで可憐な花姿と鮮やかな朱色のコントラストにあります。すらりと伸びた茎の先に凛と咲く姿は、控えめながらも存在感を放ちます。8月1日生まれの方はもちろん、甘く心惹かれる想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒメユリは日当たりと風通しの良い場所を好み、多湿を避けて水はけの良い土で育てるとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月1日生まれの方はもちろん、甘く心惹かれる想いを伝えたい贈り物としてもヒメユリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒメユリはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に小ぶりで鮮やかな朱色の花を咲かせます。ユリ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒメユリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小ぶりながらも鮮やかな朱色で咲き誇る可憐な花姿が、甘く心惹かれる魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒメユリは他のユリと何が違いますか？</div>
-        <div class="faq-a">一般的なユリより小ぶりで、花びらが大きく反り返らずに咲くのが特徴です。可憐で凛とした印象を持つ花として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヒメユリはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">小ぶりな花びらに、鮮やかな朱色をまとって咲きます。夏に見頃を迎える、ユリ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>小ぶりな花に宿る、朱色の甘さ</h2>
+    <p>ヒメユリの朱色は、燃えるような赤でも、淡く儚いオレンジでもない。日が傾きかけた頃の空によく似た、深みのある朱色だ。小ぶりな花びらがその色を一身にまとい、群れて咲くわけでもなく、一輪一輪が独立して主張するように咲く。大輪のユリが放つ華やかさとは対照的に、ヒメユリの魅力は控えめな大きさの中に凝縮された色の濃さにある。花言葉「甘美」は、この朱色が見る人の心に残す、甘く強い印象から生まれたと言われている。甘さとは、必ずしも大きさや華やかさに比例するものではない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒメユリの花言葉『甘美』にはどんな由来がありますか？</div>
+        <div class="faq-a">小ぶりながらも鮮やかな朱色で咲き誇る花姿が、見る人の心に甘く強い印象を残すことに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>遠目にもすぐそれとわかる色がある。ヒメユリの朱色は、まさにそれだ。控えめな大きさでも、色の濃さがあれば印象は十分に残る。自分らしい一色を、堂々とまとってみるのもいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒメユリから始める小さな体験</h2>
+    <p>小さな体に鮮やかな朱色を宿すヒメユリにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな朱色の花をじっくり観察してみる</li>
+      <li>凛とした佇まいを意識して過ごしてみる</li>
+      <li>朱色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">甘やかな魅力に一日中包まれていたい日は、今日のラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、ラッキーカラーとラッキーフードを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな花びらに凝縮された朱色の濃さこそ、ヒメユリの甘美さを支えている。</p>
     <ul>
-      <li>ヒメユリは夏に小ぶりで鮮やかな朱色の花を咲かせる、8月1日の誕生花</li>
-      <li>花言葉は「甘美」、可憐な花姿に由来する</li>
-      <li>小ぶりながら鮮やかな朱色が魅力</li>
-      <li>日当たりと風通しの良い場所を好む</li>
+      <li>ヒメユリは夏に小ぶりで鮮やかな朱色の花を咲かせる、ユリ科の多年草で、8月1日の誕生花</li>
+      <li>花言葉は「甘美」。朱色が残す甘く強い印象に由来するとされる</li>
+      <li>可憐でありながら凛とした佇まいが魅力</li>
+      <li>大輪のユリとは異なる、控えめな大きさの中の色の濃さが特徴</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0801');
 ?>
+</content>

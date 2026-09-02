@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1114/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月14日の誕生花シクラメン（赤）の花言葉・特徴・魅力をわかりやすく解説。「はにかみ」を象徴する赤い花の意味を紹介します。">
+  <meta name="description" content="11月14日の誕生花シクラメン（赤）の花言葉・特徴・魅力をわかりやすく解説。「はにかみ」を象徴する反り返った赤い花びらが特徴の花の意味を紹介します。">
   <title>11月14日の誕生花はシクラメン（赤）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シクラメン（赤）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春に赤い花を咲かせます。サクラソウ科の多年草です。"}},
-      {"@type":"Question","name":"シクラメン（赤）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらが後ろに反り返るように恥じらいながら咲く姿が、はにかみを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"シクラメン（赤）はどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて長く花を楽しめるため、日当たりのよい室内で飾るのがおすすめです。"}}
+      {"@type":"Question","name":"シクラメン（赤）はいつ頃花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて花を咲かせます。11月はまだ花の時期の前にあたります。"}},
+      {"@type":"Question","name":"シクラメン（赤）の花言葉「はにかみ」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"反り返る花びらの内側にこもるような赤い色合いが、恥じらいを含んだ印象を連想させることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 14 · 誕生花</span>
     <h1>11月14日の誕生花はシクラメン（赤）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シクラメン（赤）は、サクラソウ科の多年草で、冬から春に赤い花を咲かせる、はにかむような可憐な印象を持つ花です。花言葉は「はにかみ」。可憐な花です。</p>
+    <p class="art-lead">反り返るように咲く赤い花びらには、少し照れているような愛らしさがある。サクラソウ科の多年草であるシクラメン（赤）が、11月14日の誕生花としてこの表情を届けている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シクラメン（赤）とは</a></li>
-      <li><a href="#meaning">シクラメン（赤）が象徴する意味</a></li>
-      <li><a href="#charm">シクラメン（赤）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月14日の誕生花として親しまれるシクラメン（赤）</a></li>
+      <li><a href="#story">反り返る花びらに映る、はにかんだ赤</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シクラメン（赤）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シクラメン（赤）とは</h2>
-    <p>シクラメン（赤）は、サクラソウ科の多年草で、11月14日の誕生花として知られています。冬から春に赤い花を咲かせる、はにかむような可憐な印象を持つ花です。</p>
-  </section>
+    <h2>11月14日の誕生花として親しまれるシクラメン（赤）</h2>
+    <p>シクラメン（赤）は、サクラソウ科の多年草として知られる、11月14日の誕生花です。花びらが反り返るように咲く、赤い花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シクラメン（赤）が象徴する意味</h2>
-    <p>シクラメン（赤）の花言葉は「はにかみ」です。花びらが後ろに反り返るように恥じらいながら咲く姿が、はにかみを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シクラメン（赤）の魅力</h2>
-    <p>シクラメン（赤）の魅力は、反り返る花びらが生む可憐な佇まいと、冬から春にかけて長く咲き続ける鮮やかな赤にあります。11月14日生まれの方はもちろん、恥じらいの想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シクラメンは涼しく明るい場所を好み、水の与えすぎに注意しながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月14日生まれの方はもちろん、恥じらいの想いを伝えたい贈り物としてもシクラメン（赤）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）はいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春に赤い花を咲かせます。サクラソウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">花びらが後ろに反り返るように恥じらいながら咲く姿が、はにかみを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）はどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">冬から春にかけて長く花を楽しめるため、日当たりのよい室内で飾るのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）はいつ頃花を咲かせますか？</div>
+        <div class="faq-a">冬から春にかけて花を咲かせます。11月はまだ花の時期の前にあたります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>反り返る花びらに映る、はにかんだ赤</h2>
+    <p>シクラメンの花は、下向きに垂れた花の先で、花びらだけがくるりと反り返るという独特の咲き方をする。この赤い品種の場合、反り返った花びらの内側にこもるような赤が、どこか恥じらいを含んだ表情に見える。まっすぐこちらを向くのではなく、少し顔を伏せながらも色は鮮やかに主張する。その控えめでありながら印象的な佇まいが、恥ずかしがりながらも気持ちは隠しきれない様子を思わせ、「はにかみ」という花言葉に重なる。花の時期は冬から春で、今のこの時期はまだその前にあたるが、花を待つ時間もまた、はにかみに似た小さな高揚感を含んでいる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シクラメン（赤）の花言葉「はにかみ」はどのように結びついていますか？</div>
+        <div class="faq-a">反り返る花びらの内側にこもるような赤い色合いが、恥じらいを含んだ印象を連想させることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに気持ちを見透かされて、思わず顔を伏せたくなるような照れくささも、今日はそのまま受け止めてみる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シクラメン（赤）から始める小さな体験</h2>
+    <p>反り返る花びらに赤を宿すシクラメン（赤）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤い花びらの色をじっくり眺めてみる</li>
+      <li>照れくさい気持ちを、今日は素直に表現してみる</li>
+      <li>赤いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">気持ちを落ち着けたい日は、開運カレンダーで今月の誕生石にも目を向けてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>隠しきれない気持ちの愛らしさ、それが反り返る赤い花びらに宿っている。</p>
     <ul>
-      <li>シクラメン（赤）は冬から春に赤い花を咲かせる、11月14日の誕生花</li>
-      <li>花言葉は「はにかみ」、後ろに反り返って咲く花びらの姿に由来する</li>
-      <li>反り返る花びらが生む可憐な佇まいが魅力</li>
-      <li>涼しく明るい場所を好み、水の与えすぎに注意しながら管理するとよく育ちます</li>
+      <li>シクラメン（赤）は、サクラソウ科の多年草で、花びらが反り返るように咲く、11月14日の誕生花</li>
+      <li>花言葉は「はにかみ」。反り返る花びらに宿る控えめな赤に由来すると言われる</li>
+      <li>花の時期は冬から春で、11月はその手前にあたる</li>
+      <li>恥ずかしさをそっと受け止めたい日に寄り添う花</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0826/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月26日の誕生花アンモビウムの花言葉・特徴・魅力をわかりやすく解説。「固い約束」を象徴する白い花の意味を紹介します。">
+  <meta name="description" content="8月26日の誕生花アンモビウムの花言葉・特徴・魅力をわかりやすく解説。乾いても色褪せない白い花が象徴する、固い約束の意味を紹介します。">
   <title>8月26日の誕生花はアンモビウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アンモビウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏にカサカサとした質感の白い花を咲かせます。キク科の一年草です。"}},
-      {"@type":"Question","name":"アンモビウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"咲いた後も形や色をほとんど変えずに保ち続ける丈夫な花びらが、揺るがない固い約束を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アンモビウムはなぜドライフラワーに向いていますか？","acceptedAnswer":{"@type":"Answer","text":"花びらがもともと紙のような質感を持っているため、乾燥させても色や形が崩れにくく、長く楽しめるからです。"}}
+      {"@type":"Question","name":"アンモビウムはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"初夏にカサカサとした質感の白い花を咲かせる、キク科の一年草です。ドライフラワー向きの花として親しまれています。"}},
+      {"@type":"Question","name":"アンモビウムの花言葉『固い約束』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"時間が経って乾いても色褪せない白い花の在り方が、変わらず守られる約束を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 26 · 誕生花</span>
     <h1>8月26日の誕生花はアンモビウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アンモビウムは、キク科の一年草で、初夏になるとカサカサとした質感の白い花を咲かせる、素朴で誠実な印象を放つ花です。花言葉は「固い約束」。素朴で誠実な花です。</p>
+    <p class="art-lead">生花のまま乾いても、姿も白さもほとんど変わらない花がある。変わらない白さこそ、アンモビウムが見せてくれる、色褪せない強さの証だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アンモビウムとは</a></li>
-      <li><a href="#meaning">アンモビウムが象徴する意味</a></li>
-      <li><a href="#charm">アンモビウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月26日の誕生花として親しまれるアンモビウム</a></li>
+      <li><a href="#story">乾いても変わらない白さが約束する、色褪せない強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アンモビウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アンモビウムとは</h2>
-    <p>アンモビウムは、キク科の一年草で、8月26日の誕生花として知られています。初夏になるとカサカサとした質感の白い花を咲かせる、素朴で誠実な印象を放つ花です。</p>
-  </section>
+    <h2>8月26日の誕生花として親しまれるアンモビウム</h2>
+    <p>アンモビウムは、キク科の一年草です。初夏になると、カサカサとした質感の白い花を咲かせます。誕生花は生まれた日と花を結びつける文化であり、実際の開花期とは必ずしも一致しません。ドライフラワーに向く花として親しまれるこの花が、8月26日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アンモビウムが象徴する意味</h2>
-    <p>アンモビウムの花言葉は「固い約束」です。咲いた後も形や色をほとんど変えずに保ち続ける丈夫な花びらが、揺るがない固い約束を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アンモビウムの魅力</h2>
-    <p>アンモビウムの魅力は、紙のようにカサカサとした独特の質感を持つ白い花びらと、咲いた後も長く美しさを保つ丈夫さにあります。ドライフラワーとして特に人気の高い花です。8月26日生まれの方はもちろん、固い約束を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アンモビウムは日当たりを好み、乾燥に強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月26日生まれの方はもちろん、固い約束を伝えたい贈り物としてもアンモビウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンモビウムはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏にカサカサとした質感の白い花を咲かせます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンモビウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">咲いた後も形や色をほとんど変えずに保ち続ける丈夫な花びらが、揺るがない固い約束を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンモビウムはなぜドライフラワーに向いていますか？</div>
-        <div class="faq-a">花びらがもともと紙のような質感を持っているため、乾燥させても色や形が崩れにくく、長く楽しめるからです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アンモビウムはどんな花ですか？</div>
+        <div class="faq-a">初夏にカサカサとした質感の白い花を咲かせる、キク科の一年草です。ドライフラワー向きの花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>乾いても変わらない白さが約束する、色褪せない強さ</h2>
+    <p>アンモビウムの花びらは、咲いている時から、すでにカサカサとした乾いたような質感を持っている。生花のうちからそうであるからこそ、時間が経って本当に乾いても、姿や白さがほとんど変わらない。多くの花が乾くと色を失い、しおれてしまう中で、この花は乾いてからも凛とした白さを保ち続ける。ドライフラワーとして長く飾られるのも、この変わらない性質があってこそだ。花言葉「固い約束」は、この時間が経っても色褪せない白い花の在り方から生まれたと言われている。約束もまた、交わした瞬間だけでなく、時間が経ってからも変わらず守られてこそ意味を持つ。乾いても失われない白さは、そんな在り方をそっと映しているようにも見える。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アンモビウムの花言葉『固い約束』にはどんな由来がありますか？</div>
+        <div class="faq-a">時間が経って乾いても色褪せない白い花の在り方が、変わらず守られる約束を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かと交わした約束を、今日は一つ思い出してみよう。時間が経っても変わらず大切にしたいことに、そっと目を向けてみる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アンモビウムから始める小さな体験</h2>
+    <p>カサカサとした質感の白い花が、ドライフラワーとして長く残るアンモビウムにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>カサカサとした質感の白い花をじっくり観察してみる</li>
+      <li>ドライフラワーとして花を飾ってみる</li>
+      <li>大切にしたい約束を一つ心の中で確認してみる</li>
+    </ul>
+
+    <p class="cta-lead">変わらない約束を大切にしたい一日は、今日のラッキーカラーも確認してみませんか。開運カレンダーでは、ラッキーカラーと吉日を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>乾いても変わらない白さは、時間の経過に対するささやかな抵抗のようにも見える。</p>
     <ul>
-      <li>アンモビウムは初夏に白い花を咲かせる、8月26日の誕生花</li>
-      <li>花言葉は「固い約束」、色あせない花びらに由来する</li>
-      <li>紙のような質感と丈夫さが魅力</li>
-      <li>日当たりを好み、乾燥に強い</li>
+      <li>アンモビウムは初夏にカサカサとした質感の白い花を咲かせる、キク科の一年草で、8月26日の誕生花</li>
+      <li>花言葉は「固い約束」。色褪せない白い花の在り方に由来すると言われる</li>
+      <li>ドライフラワーに向く花として親しまれる</li>
+      <li>乾いても姿や白さがほとんど変わらない</li>
     </ul>
   </section>
 

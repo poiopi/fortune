@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0316/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月16日の誕生花ビジョナデシコの花言葉・特徴・魅力をわかりやすく解説。「清い愛」を象徴する気品ある花の意味を紹介します。">
+  <meta name="description" content="3月16日の誕生花ビジョナデシコの花言葉・特徴・魅力をわかりやすく解説。「清い愛」を象徴する、「美女撫子」とも呼ばれる華やかな花の意味を紹介します。">
   <title>3月16日の誕生花はビジョナデシコ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ビジョナデシコはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に華やかな花を咲かせます。ナデシコ科の多年草で、英名は「スイートウィリアム」と呼ばれています。"}},
-      {"@type":"Question","name":"ビジョナデシコの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「清い愛」という花言葉は、素朴でありながら気品を感じさせる花姿が、飾らない純粋な愛情を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ビジョナデシコという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"漢字で「美女撫子」と書き、小花が集まって咲く愛らしい花姿から名づけられたとされています。絞りや覆輪など模様の入った花色も特徴です。"}}
+      {"@type":"Question","name":"ビジョナデシコはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に華やかな花を咲かせます。3月16日は誕生花として定められている日で、実際の開花期とは異なります。"}},
+      {"@type":"Question","name":"ビジョナデシコの花言葉「清い愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"華やかな花姿の奥にある、飾らない誠実さを感じさせる佇まいに由来するといわれています。"}},
+      {"@type":"Question","name":"ビジョナデシコという名前はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"「美女撫子」という別名が示す通り、華やかな花姿を美しい女性にたとえたことに由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 16 · 誕生花</span>
     <h1>3月16日の誕生花はビジョナデシコ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ビジョナデシコは、ナデシコ科の多年草で、初夏に華やかな花を咲かせる3月16日の誕生花です。花言葉は「清い愛」。美女撫子とも呼ばれる愛らしい花です。</p>
+    <p class="art-lead">「美女撫子」の別名を持ち、華やかな花を咲かせるビジョナデシコ。3月16日の誕生花に選ばれたこの花は、華やかさの奥に澄んだ誠実さを秘めています。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ビジョナデシコとは</a></li>
-      <li><a href="#meaning">ビジョナデシコが象徴する意味</a></li>
-      <li><a href="#charm">ビジョナデシコの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月16日の誕生花として親しまれるビジョナデシコ</a></li>
+      <li><a href="#story">「美女撫子」の名が語る、ビジョナデシコの奥行き</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ビジョナデシコから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ビジョナデシコとは</h2>
-    <p>ビジョナデシコは、ナデシコ科の多年草で、3月16日の誕生花として知られています。漢字で「美女撫子」と書き、英名は「スイートウィリアム」。小花が集まって手まりのように咲く姿と、絞りや覆輪など模様の入った花色のバリエーションが特徴です。</p>
-  </section>
+    <h2>3月16日の誕生花として親しまれるビジョナデシコ</h2>
+    <p>ビジョナデシコは、ナデシコ科の多年草です。初夏になると、華やかな花を咲かせます。「美女撫子」という別名でも親しまれ、その名の通り、目を引く華やかさを持つ花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ビジョナデシコが象徴する意味</h2>
-    <p>ビジョナデシコの花言葉は「清い愛」です。素朴でありながら気品を感じさせる花姿が、飾らない純粋な愛情を思わせることに由来すると言われています。「大胆」「才能」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ビジョナデシコの魅力</h2>
-    <p>ビジョナデシコの魅力は、小花が密集して作る手まりのようなボリューム感と、模様の入った個性的な花色のバリエーションにあります。花壇や切り花として長く楽しまれ、日本のナデシコとはまた違った華やかさを持つ花です。3月16日生まれの方はもちろん、清らかな愛情を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ビジョナデシコは日当たりと風通しの良い場所を好み、水はけの良い土で育てるのがおすすめです。花がら摘みをこまめに行うことで、次々と花を咲かせ続けてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月16日生まれの方はもちろん、清らかな愛情を届けたい贈り物としてもビジョナデシコは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ビジョナデシコはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に華やかな花を咲かせます。ナデシコ科の多年草で、英名は「スイートウィリアム」と呼ばれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビジョナデシコの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「清い愛」という花言葉は、素朴でありながら気品を感じさせる花姿が、飾らない純粋な愛情を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ビジョナデシコという名前の由来は何ですか？</div>
-        <div class="faq-a">漢字で「美女撫子」と書き、小花が集まって咲く愛らしい花姿から名づけられたとされています。絞りや覆輪など模様の入った花色も特徴です。</div>
+        <div class="faq-a">初夏に華やかな花を咲かせます。3月16日は誕生花として定められている日で、実際の開花期とは異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>「美女撫子」の名が語る、ビジョナデシコの奥行き</h2>
+    <p>「美女撫子」という別名は、その華やかな花姿を美しい女性にたとえたことに由来するといわれています。とはいえ、この名前が示すものは、単なる見た目の評価だけではなさそうです。名前に込められた「美女」という言葉には、華やかさの奥にある芯の強さや、まっすぐな佇まいへの敬意も含まれているのではないでしょうか。ビジョナデシコの花言葉「清い愛」も、飾らない誠実さを感じさせる言葉です。華やかな見た目と、澄んだ花言葉――その組み合わせが、この花の奥行きを物語っているように思えます。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ビジョナデシコの花言葉「清い愛」の由来は？</div>
+        <div class="faq-a">華やかな花姿の奥にある、飾らない誠実さを感じさせる佇まいに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>華やかさと誠実さは、決して矛盾するものではありません。今日は、飾らない素直な気持ちで、大切な人と向き合ってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ビジョナデシコから始める小さな体験</h2>
+    <p>華やかに咲くビジョナデシコにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>華やかな花の姿を写真に撮ってみる</li>
+      <li>誰かへの気持ちを、下心なく素直に見つめ直してみる</li>
+      <li>別名の由来を調べてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ビジョナデシコという名前はどこから来ていますか？</div>
+        <div class="faq-a">「美女撫子」という別名が示す通り、華やかな花姿を美しい女性にたとえたことに由来するといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">「美女撫子」という名前の由来に心惹かれた今日は、六曜やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、その日の六曜やラッキーカラーもまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月16日、「美女撫子」の名で親しまれるビジョナデシコは、華やかさの奥にある誠実さを教えてくれる花です。</p>
     <ul>
-      <li>ビジョナデシコは初夏に華やかな花を咲かせる、3月16日の誕生花</li>
-      <li>花言葉は「清い愛」、素朴で気品ある花姿に由来する</li>
-      <li>手まりのようなボリューム感と個性的な花色の模様が魅力</li>
-      <li>水はけの良い場所で、花がら摘みをしながら育てたい</li>
+      <li>ビジョナデシコはナデシコ科の多年草で、初夏に華やかな花を咲かせる</li>
+      <li>「美女撫子」という別名は、華やかな花姿に由来するといわれる</li>
+      <li>花言葉は「清い愛」。飾らない誠実さを象徴するといわれる</li>
+      <li>華やかさと澄んだ心の両方を映す花</li>
     </ul>
   </section>
 

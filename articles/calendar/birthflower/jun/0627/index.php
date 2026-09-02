@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0627/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月27日の誕生花サンダーソニアの花言葉・特徴・魅力をわかりやすく解説。「祈り」を象徴する提灯のような形の花の意味を紹介します。">
+  <meta name="description" content="6月27日の誕生花サンダーソニアの花言葉・特徴・魅力をわかりやすく解説。提灯のような形の花を下向きに咲かせる、イヌサフラン科「祈り」の花を紹介します。">
   <title>6月27日の誕生花はサンダーソニア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サンダーソニアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に提灯のような形の花を下向きに咲かせます。イヌサフラン科の多年草です。"}},
-      {"@type":"Question","name":"サンダーソニアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「祈り」という花言葉は、うつむくように下向きに咲く花の姿が、静かに祈る様子を連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"サンダーソニアはどんな場面で使われますか？","acceptedAnswer":{"@type":"Answer","text":"独特の花姿からウエディングブーケやアレンジメントに取り入れられることがあります。"}}
+      {"@type":"Question","name":"サンダーソニアはどんな形の花ですか？","acceptedAnswer":{"@type":"Answer","text":"夏に咲く、提灯のような形をした花です。花を下向きに咲かせる独特の姿から、イヌサフラン科の中でも印象的な存在として知られています。"}},
+      {"@type":"Question","name":"サンダーソニアの花言葉「祈り」の由来は？","acceptedAnswer":{"@type":"Answer","text":"提灯のような形の花が下向きにひっそりと咲く姿が、何かを静かに願う仕草に重なることに由来するといわれています。"}},
+      {"@type":"Question","name":"サンダーソニアはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"切り花として飾ると、独特の提灯形の花を長く楽しめます。花束のアクセントとしても重宝されています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 27 · 誕生花</span>
     <h1>6月27日の誕生花はサンダーソニア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サンダーソニアは、イヌサフラン科の多年草で、夏に提灯のような形の花を下向きに咲かせる6月27日の誕生花です。花言葉は「祈り」。控えめで印象的な花です。</p>
+    <p class="art-lead">茎の先で、提灯のような形をした花が、うつむくように静かに咲いています。サンダーソニアは、提灯のような花姿が特徴の、イヌサフラン科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サンダーソニアとは</a></li>
-      <li><a href="#meaning">サンダーソニアが象徴する意味</a></li>
-      <li><a href="#charm">サンダーソニアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月27日の誕生花として親しまれるサンダーソニア</a></li>
+      <li><a href="#story">提灯のような花が灯す、静かな時間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サンダーソニアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サンダーソニアとは</h2>
-    <p>サンダーソニアは、イヌサフラン科の多年草で、6月27日の誕生花として知られています。夏になると提灯のような形の花を下向きに咲かせ、控えめながらも印象的な姿を見せる花です。</p>
-  </section>
+    <h2>6月27日の誕生花として親しまれるサンダーソニア</h2>
+    <p>サンダーソニアは、イヌサフラン科の多年草です。夏になると提灯のような形の花を下向きに咲かせ、その独特な姿から切り花としても人気を集めています。静かな存在感を持つ花として、6月27日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サンダーソニアが象徴する意味</h2>
-    <p>サンダーソニアの花言葉は「祈り」です。うつむくように下向きに咲く花の姿が、静かに手を合わせて祈る様子を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サンダーソニアの魅力</h2>
-    <p>サンダーソニアの魅力は、オレンジ色の提灯のような花が控えめに揺れる可憐さと、他の花にはない独特の形にあります。ウエディングブーケなどにも取り入れられ、静かな存在感を放ちます。6月27日生まれの方はもちろん、祈るような想いを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サンダーソニアは日当たりと水はけの良い場所を好み、球根植物のため過湿を避けて育てるとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月27日生まれの方はもちろん、祈るような想いを届けたい贈り物としてもサンダーソニアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サンダーソニアはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に提灯のような形の花を下向きに咲かせます。イヌサフラン科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サンダーソニアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「祈り」という花言葉は、うつむくように下向きに咲く花の姿が、静かに祈る様子を連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サンダーソニアはどんな場面で使われますか？</div>
-        <div class="faq-a">独特の花姿からウエディングブーケやアレンジメントに取り入れられることがあります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サンダーソニアはどんな形の花ですか？</div>
+        <div class="faq-a">夏に咲く、提灯のような形をした花です。花を下向きに咲かせる独特の姿から、イヌサフラン科の中でも印象的な存在として知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>提灯のような花が灯す、静かな時間</h2>
+    <p>サンダーソニアの花は、上ではなく下を向いて咲く、少し珍しい姿をしています。提灯のような丸みを帯びた形は、灯りをそっとともしているようにも見え、見る人の視線を自然と低いところへ導きます。うつむいて咲くその姿には、声高に語らない静けさがあり、じっと見つめていると、何かを胸の内で唱えているような気配すら感じられます。下向きに咲きながらも確かな存在感を放つその姿から、サンダーソニアには「祈り」という花言葉が結びついたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サンダーソニアの花言葉「祈り」の由来は？</div>
+        <div class="faq-a">提灯のような形の花が下向きにひっそりと咲く姿が、何かを静かに願う仕草に重なることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>願いごとは、声に出さなくても心の中で唱えるだけで意味を持つことがあります。サンダーソニアが下を向いて咲く姿は、そんな静かな時間によく似ています。誰かに見せるためではない、自分だけの願いごと。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サンダーソニアから始める小さな体験</h2>
+    <p>提灯のような花の姿を思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>提灯のような形の花をじっくり観察してみる</li>
+      <li>心の中で、静かに願い事を一つしてみる</li>
+      <li>下向きに咲く花の姿をそっと見上げてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サンダーソニアはどんな楽しみ方がありますか？</div>
+        <div class="faq-a">切り花として飾ると、独特の提灯形の花を長く楽しめます。花束のアクセントとしても重宝されています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">静かに願いを込めたい今日は、ラッキーフードや星座もあわせて確認してみませんか。開運カレンダーでは、今日のラッキーフードと星座占いを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>提灯のような形をして下向きに咲くサンダーソニアの姿は、声に出さない祈りにもまた意味があるのでしょう。</p>
     <ul>
-      <li>サンダーソニアは夏に提灯形の花を咲かせる、6月27日の誕生花</li>
-      <li>花言葉は「祈り」、下向きに咲く花姿に由来する</li>
-      <li>控えめで独特な花の形が魅力</li>
-      <li>日当たりと水はけの良い場所でよく育つ</li>
+      <li>サンダーソニアはイヌサフラン科の多年草で、夏に提灯形の花を咲かせる、6月27日の誕生花</li>
+      <li>花言葉は「祈り」。下向きに咲く静かな姿に由来するとされる</li>
+      <li>独特な形が切り花としても人気</li>
+      <li>うつむいて咲く控えめな存在感が魅力</li>
     </ul>
   </section>
 

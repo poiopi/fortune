@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クロッカス（紫）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に紫色の花を咲かせます。アヤメ科の球根植物です。"}},
-      {"@type":"Question","name":"クロッカス（紫）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"まだ寒さの残る早春にいち早く紫色の花を咲かせる力強さが、生命のエネルギーを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"クロッカスには紫以外の色もありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。紫のほかに黄色や白の花を咲かせる品種もあり、色によって花言葉が異なるとされています。"}}
+      {"@type":"Question","name":"クロッカス（紫）はどんな色や姿をしていますか？","acceptedAnswer":{"@type":"Answer","text":"紫色の花びらを持ち、地面から顔を出すように短い茎で咲く、アヤメ科の球根植物です。可憐な印象を持つとされています。"}},
+      {"@type":"Question","name":"クロッカス（紫）の花言葉にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"寒さの残る早春にいち早く花を咲かせる、その力強さそのものが、内側にたぎるエネルギーの象徴として捉えられたことに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 30 · 誕生花</span>
     <h1>10月30日の誕生花はクロッカス（紫）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クロッカス（紫）は、アヤメ科の球根植物で、早春に紫色の花を咲かせる、春の訪れを告げる力強くエネルギッシュな印象を持つ花です。花言葉は「エネルギー」。力強くエネルギッシュな花です。</p>
+    <p class="art-lead">まだ冷たさの残る地面から、小さく顔をのぞかせる紫の花びら。クロッカス（紫）は、アヤメ科の球根植物で、早春になるといち早く地上にその姿を見せる。10月30日の誕生花として名を連ねるこの花は、季節に先駆けて咲く力強さを、その色に宿している。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クロッカス（紫）とは</a></li>
-      <li><a href="#meaning">クロッカス（紫）が象徴する意味</a></li>
-      <li><a href="#charm">クロッカス（紫）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月30日の誕生花として親しまれるクロッカス（紫）</a></li>
+      <li><a href="#story">地面を彩る、紫という色の存在感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クロッカス（紫）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クロッカス（紫）とは</h2>
-    <p>クロッカス（紫）は、アヤメ科の球根植物で、10月30日の誕生花として知られています。早春に紫色の花を咲かせる、春の訪れを告げる力強くエネルギッシュな印象を持つ花です。</p>
-  </section>
+    <h2>10月30日の誕生花として親しまれるクロッカス（紫）</h2>
+    <p>クロッカス（紫）は、アヤメ科の球根植物として知られる、10月30日の誕生花です。早春になると紫色の花を咲かせ、まだ寒さの残る季節にいち早く春の訪れを告げる花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クロッカス（紫）が象徴する意味</h2>
-    <p>クロッカス（紫）の花言葉は「エネルギー」です。まだ寒さの残る早春にいち早く紫色の花を咲かせる力強さが、生命のエネルギーを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クロッカス（紫）の魅力</h2>
-    <p>クロッカス（紫）の魅力は、紫色の花が持つ力強くエネルギッシュな美しさと、早春の寒さの中でいち早く咲く生命力にあります。10月30日生まれの方はもちろん、力強いエネルギーを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クロッカス（紫）は日当たりを好み、球根植物のため過湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月30日生まれの方はもちろん、力強いエネルギーを伝えたい贈り物としてもクロッカス（紫）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（紫）はいつ頃咲きますか？</div>
-        <div class="faq-a">早春に紫色の花を咲かせます。アヤメ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（紫）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">まだ寒さの残る早春にいち早く紫色の花を咲かせる力強さが、生命のエネルギーを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカスには紫以外の色もありますか？</div>
-        <div class="faq-a">はい。紫のほかに黄色や白の花を咲かせる品種もあり、色によって花言葉が異なるとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（紫）はどんな色や姿をしていますか？</div>
+        <div class="faq-a">紫色の花びらを持ち、地面から顔を出すように短い茎で咲く、アヤメ科の球根植物です。可憐な印象を持つとされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>地面を彩る、紫という色の存在感</h2>
+    <p>景色がまだ茶色や灰色に沈む季節、そこに一輪だけ差し込む紫色は、驚くほど目を引く。クロッカス（紫）の紫は、静けさの中に力強さを感じさせる色だ。冷たい地面から、ふいに顔をのぞかせるように咲くその姿には、可憐でありながらどこか芯の強さが漂う。アヤメ科の球根植物として、他の花に先駆けて色を宿すその潔さが、内側から湧き上がる生命力の象徴として、「エネルギー」という花言葉に結びついたのではないだろうか。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（紫）の花言葉にはどんな由来がありますか？</div>
+        <div class="faq-a">寒さの残る早春にいち早く花を咲かせる、その力強さそのものが、内側にたぎるエネルギーの象徴として捉えられたことに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>静かに力を溜め込んだ末に、ふと表に現れる瞬間が誰にでもある。クロッカス（紫）の紫色は、そんな内側からあふれ出す力を、無理なく自然に感じさせてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クロッカス（紫）から始める小さな体験</h2>
+    <p>地面から顔を出すように紫の花を咲かせる、そんなクロッカス（紫）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>地面近くに顔を出す花を探してみる</li>
+      <li>紫色のものを身の回りに取り入れてみる</li>
+      <li>今、自分の中にあるエネルギーを一つ、行動に移してみる</li>
+    </ul>
+
+    <p class="cta-lead">湧き上がる力を行動に移したい日は、今日のおすすめの行動もチェックしてみませんか。開運カレンダーでは、日替わりのおすすめの行動もお届けしています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>寒さの中でも臆せず紫の色を放つ姿に、クロッカス（紫）らしさが凝縮されている。</p>
     <ul>
-      <li>クロッカス（紫）は紫色の花を咲かせる、10月30日の誕生花</li>
-      <li>花言葉は「エネルギー」、早春にいち早く咲く力強さに由来する</li>
-      <li>早春の寒さの中でいち早く咲く生命力が魅力</li>
-      <li>日当たりを好み、球根植物のため過湿を避けて管理するとよく育ちます</li>
+      <li>クロッカス（紫）はアヤメ科の球根植物で、早春に紫色の花を咲かせる、10月30日の誕生花</li>
+      <li>花言葉は「エネルギー」。寒さの中でいち早く花を咲かせる力強さに由来すると言われる</li>
+      <li>地面から顔を出すように咲く、可憐でありながら芯の強さを感じさせる花</li>
+      <li>内側から湧き上がる力を感じたい日に寄り添う花</li>
     </ul>
   </section>
 

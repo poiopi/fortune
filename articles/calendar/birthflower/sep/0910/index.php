@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0910/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月10日の誕生花タムラソウの花言葉・特徴・魅力をわかりやすく解説。「秘密」を象徴する棘のない紫の花の意味を紹介します。">
+  <meta name="description" content="9月10日の誕生花タムラソウの花言葉・特徴・魅力をわかりやすく解説。「秘密」を象徴する紫の花の意味を紹介します。">
   <title>9月10日の誕生花はタムラソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"タムラソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋にアザミに似た紫の花を咲かせます。棘のないキク科の多年草です。"}},
-      {"@type":"Question","name":"タムラソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"アザミによく似ながらも棘を持たず、静かに紫の花を咲かせる慎ましい花姿が、そっと胸に秘めた想いを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"タムラソウとアザミはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"花の姿はよく似ていますが、タムラソウには葉や茎に棘がないのが大きな違いです。"}}
+      {"@type":"Question","name":"タムラソウはアザミと同じ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"見た目はよく似ていますが、別の植物です。アザミと違って棘を持たないのが、タムラソウの特徴です。"}},
+      {"@type":"Question","name":"タムラソウの花言葉『秘密』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"アザミに似ながらも棘を持たず、控えめでありながら芯のある佇まいに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 10 · 誕生花</span>
     <h1>9月10日の誕生花はタムラソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">タムラソウは、キク科の多年草で、秋にアザミに似た紫の花を棘なく咲かせる、静かで慎ましい印象を持つ花です。花言葉は「秘密」。静かで慎ましい花です。</p>
+    <p class="art-lead">アザミによく似た紫の花が、秋の野に静かに立っている。近づいてみると、あの鋭い棘がどこにもないことに気づく。この花、タムラソウが9月10日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">タムラソウとは</a></li>
-      <li><a href="#meaning">タムラソウが象徴する意味</a></li>
-      <li><a href="#charm">タムラソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月10日の誕生花として親しまれるタムラソウ</a></li>
+      <li><a href="#story">棘のない紫が隠し持つ、静かな守り方</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、タムラソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>タムラソウとは</h2>
-    <p>タムラソウは、キク科の多年草で、9月10日の誕生花として知られています。秋にアザミに似た紫の花を棘なく咲かせる、静かで慎ましい印象を持つ花です。</p>
-  </section>
+    <h2>9月10日の誕生花として親しまれるタムラソウ</h2>
+    <p>タムラソウは、キク科の多年草です。秋になると、アザミによく似た紫の花を咲かせます。アザミとは違い棘を持たない植物として知られ、9月10日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>タムラソウが象徴する意味</h2>
-    <p>タムラソウの花言葉は「秘密」です。アザミによく似ながらも棘を持たず、静かに紫の花を咲かせる慎ましい花姿が、そっと胸に秘めた想いを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>タムラソウの魅力</h2>
-    <p>タムラソウの魅力は、アザミに似た凛とした花姿でありながら棘がなく、優しく親しみやすい佇まいにあります。9月10日生まれの方はもちろん、そっと秘めた想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>タムラソウは日当たりから半日陰を好み、乾燥にも比較的強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月10日生まれの方はもちろん、そっと秘めた想いを伝えたい贈り物としてもタムラソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タムラソウはいつ頃咲きますか？</div>
-        <div class="faq-a">秋にアザミに似た紫の花を咲かせます。棘のないキク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タムラソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">アザミによく似ながらも棘を持たず、静かに紫の花を咲かせる慎ましい花姿が、そっと胸に秘めた想いを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">タムラソウとアザミはどう違いますか？</div>
-        <div class="faq-a">花の姿はよく似ていますが、タムラソウには葉や茎に棘がないのが大きな違いです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">タムラソウはアザミと同じ植物ですか？</div>
+        <div class="faq-a">見た目はよく似ていますが、別の植物です。アザミと違って棘を持たないのが、タムラソウの特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>棘のない紫が隠し持つ、静かな守り方</h2>
+    <p>遠目に見ると、タムラソウはアザミとほとんど見分けがつかない。同じような紫色の花を、同じように茎の先に咲かせるからだ。けれど近づいて触れてみると、その違いにすぐ気づく。アザミにある鋭い棘が、タムラソウにはどこにもない。攻撃的な要素を持たないまま、それでも凛とした花の形を保っているところに、この花の面白さがある。棘で自分を守るのではなく、姿そのものでそっと存在を示す。花言葉「秘密」は、こうした控えめでありながら芯を持つ佇まいから生まれたのかもしれない。誰にでも打ち明けるわけではない、そっとしまっておきたい何かに似ている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">タムラソウの花言葉『秘密』にはどんな由来がありますか？</div>
+        <div class="faq-a">アザミに似ながらも棘を持たず、控えめでありながら芯のある佇まいに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに話す前に、自分の中で温めておきたい思いがあってもいい。すぐに言葉にしなくても、その気持ちは確かに存在している。そっとしまっておきたいことを、今日は大切にできるだろうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、タムラソウから始める小さな体験</h2>
+    <p>アザミに似ながらも棘を持たずに咲くタムラソウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>アザミに似た紫の花をじっくり観察してみる</li>
+      <li>大切にしていることを、そっと心の中にしまっておいてみる</li>
+      <li>棘のない優しさについて考えてみる</li>
+    </ul>
+
+    <p class="cta-lead">そっと胸にしまっておきたい気持ちがある日は、今日のおすすめの行動も見てみませんか。開運カレンダーでは、おすすめの行動とラッキーカラーを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>アザミによく似ていながら、棘を持たないというたった一つの違い。そこに隠された、静かな「秘密」。</p>
     <ul>
-      <li>タムラソウは秋に棘のない紫の花を咲かせる、9月10日の誕生花</li>
-      <li>花言葉は「秘密」、棘のない優しい花姿に由来する</li>
-      <li>棘のない優しい花姿が魅力</li>
-      <li>日当たりから半日陰を好み、乾燥にも比較的強い</li>
+      <li>タムラソウは秋にアザミに似た紫の花を咲かせる、キク科の多年草で、9月10日の誕生花</li>
+      <li>花言葉は「秘密」。棘を持たず控えめでありながら芯のある佇まいに由来すると言われる</li>
+      <li>アザミとよく似ているが、棘がないのが違い</li>
+      <li>静かに芯を保つ姿が印象的な花</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0124/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1月24日の誕生花ヒヤシンス（紫）の花言葉・特徴・魅力をわかりやすく解説。「優しくかわいい」を象徴する香り高い花の意味を紹介します。">
+  <meta name="description" content="1月24日の誕生花ヒヤシンス（紫）の花言葉・特徴・魅力をわかりやすく解説。「優しくかわいい」を象徴する花の意味を紹介します。">
   <title>1月24日の誕生花はヒヤシンス（紫）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒヤシンス（紫）はどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"甘く華やかな香りを漂わせ、室内でも春の訪れを感じさせてくれます。"}},
-      {"@type":"Question","name":"ヒヤシンス（紫）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「優しくかわいい」という花言葉は、穂状に密集して咲く紫の小花が織りなす柔らかな印象に由来するとされています。"}},
-      {"@type":"Question","name":"ヒヤシンスは水耕栽培できますか？","acceptedAnswer":{"@type":"Answer","text":"はい、水だけでも育てやすく、室内で手軽に花を楽しめる植物として人気があります。"}}
+      {"@type":"Question","name":"ヒヤシンス（紫）はどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"キジカクシ科の球根植物で、早春に紫色の花を穂状に咲かせます。香りのよさも特徴の一つですが、感じ方には個人差があります。"}},
+      {"@type":"Question","name":"ヒヤシンス（紫）の花言葉「優しくかわいい」の由来は？","acceptedAnswer":{"@type":"Answer","text":"穂状に連なって咲く紫の花の、控えめで柔らかな佇まいに由来するといわれています。色によって花言葉が異なる点も知っておきたいポイントです。"}}
     ]
   }
   </script>
@@ -107,7 +113,7 @@ ob_start();
       {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
       {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
       {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月24日の誕生花（ヒヤシンス）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0124/"}
+      {"@type":"ListItem","position":6,"name":"1月24日の誕生花（ヒヤシンス（紫））とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0124/"}
     ]
   }
   </script>
@@ -123,20 +129,20 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月24日の誕生花（ヒヤシンス）とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月24日の誕生花（ヒヤシンス（紫））とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 24 · 誕生花</span>
     <h1>1月24日の誕生花はヒヤシンス（紫）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒヤシンス（紫）は、香りのよい紫の花を穂状に咲かせる1月24日の誕生花です。花言葉は「優しくかわいい」。</p>
+    <p class="art-lead">まだ肌寒さの残る1月24日。ヒヤシンス（紫）は、穂状に連なる紫の花から、香り高い香りを漂わせる花です。今日はその柔らかな彩りを紹介します。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ヒヤシンス（紫）</dd>
     <dt>花言葉</dt><dd>優しくかわいい</dd>
     <dt>科名</dt><dd>キジカクシ科</dd>
-    <dt>見頃</dt><dd>春</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒヤシンス（紫）とは</a></li>
-      <li><a href="#meaning">ヒヤシンス（紫）が象徴する意味</a></li>
-      <li><a href="#charm">ヒヤシンス（紫）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">穂状に連なる、ヒヤシンス（紫）の香り高い紫</a></li>
+      <li><a href="#story">1月24日、紫のヒヤシンスが伝える優しくかわいいという言葉</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒヤシンス（紫）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒヤシンス（紫）とは</h2>
-    <p>ヒヤシンス（紫）は、キジカクシ科の球根植物で、1月24日の誕生花として知られています。春に香りのよい紫色の花を穂状に咲かせ、その華やかな香りと色合いから春を代表する花として親しまれています。</p>
-  </section>
+    <h2>穂状に連なる、ヒヤシンス（紫）の香り高い紫</h2>
+    <p>ヒヤシンス（紫）は、キジカクシ科の球根植物です。早春になると、紫色の花を穂状に連ねて咲かせ、あたりに香りを漂わせます。色ごとに花言葉が異なることも知られており、紫はその中でも柔らかく優しい印象を持つ色として親しまれています。なお、香りの感じ方には個人差があります。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒヤシンス（紫）が象徴する意味</h2>
-    <p>ヒヤシンス（紫）の花言葉は「優しくかわいい」です。穂状に密集して咲く紫の小花が織りなす柔らかな印象から、優しくかわいらしい魅力を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒヤシンス（紫）の魅力</h2>
-    <p>ヒヤシンス（紫）の魅力は、穂状にびっしりと咲く紫の花と、部屋中に広がる甘い香りにあります。水耕栽培でも楽しめる手軽さから、室内で春の訪れを感じさせてくれる花としても人気です。1月24日生まれの方はもちろん、優しい気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒヤシンス（紫）は日当たりの良い場所を好み、丈夫で植えっぱなしでも毎年花を咲かせやすい球根植物です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月24日生まれの方はもちろん、優しい気持ちを伝えたい贈り物としてもヒヤシンス（紫）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンス（紫）はどんな香りがしますか？</div>
-        <div class="faq-a">甘く華やかな香りを漂わせ、室内でも春の訪れを感じさせてくれます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンス（紫）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「優しくかわいい」という花言葉は、穂状に密集して咲く紫の小花が織りなす柔らかな印象に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンスは水耕栽培できますか？</div>
-        <div class="faq-a">はい、水だけでも育てやすく、室内で手軽に花を楽しめる植物として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンス（紫）はどんな花ですか？</div>
+        <div class="faq-a">キジカクシ科の球根植物で、早春に紫色の花を穂状に咲かせます。香りのよさも特徴の一つですが、感じ方には個人差があります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月24日、紫のヒヤシンスが伝える優しくかわいいという言葉</h2>
+    <p>紫は、赤と青、二つの色が混じり合ってできる色です。強すぎず、それでいて存在感のあるその色合いが、ヒヤシンス（紫）にやわらかな優しさを与えています。1月24日、まだ寒さの残るこの時期に、誰かの優しさに触れてほっとした経験がある人もいるかもしれません。花言葉は「優しくかわいい」。穂状に連なって咲く紫の花の、控えめで柔らかな佇まいから生まれた言葉だといわれています。なお、色によって花言葉が異なるため、他の色のヒヤシンスとは意味合いが異なります。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンス（紫）の花言葉「優しくかわいい」の由来は？</div>
+        <div class="faq-a">穂状に連なって咲く紫の花の、控えめで柔らかな佇まいに由来するといわれています。色によって花言葉が異なる点も知っておきたいポイントです。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>優しさは、大げさな言葉でなくても伝わります。今日は、誰かにかける言葉を少しだけ柔らかくしてみると、思いがけず温かい時間が生まれるかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒヤシンス（紫）から始める小さな体験</h2>
+    <p>紫の穂を連ねて咲くヒヤシンスにあやかって、今日はこんな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>紫のヒヤシンスの香りを確かめてみる</li>
+      <li>優しい言葉を一つ、誰かにかけてみる</li>
+      <li>紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かに優しさを届けられた今日は、運気の流れもあわせてチェックしてみませんか。開運カレンダーでは、日々の吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ヒヤシンス（紫）は、穂状に連なる柔らかな紫を通して、控えめな優しさの大切さを教えてくれる誕生花です。</p>
     <ul>
-      <li>ヒヤシンス（紫）は春に香り高い花を穂状に咲かせる、1月24日の誕生花</li>
-      <li>花言葉は「優しくかわいい」、柔らかな魅力を象徴する花とされる</li>
-      <li>甘い香りと紫の彩りが魅力</li>
-      <li>丈夫で植えっぱなしでも育てやすい</li>
+      <li>ヒヤシンス（紫）はキジカクシ科の球根植物で、早春に紫の花を穂状に咲かせる</li>
+      <li>香り高い香りも特徴だが、感じ方には個人差がある</li>
+      <li>花言葉は「優しくかわいい」。控えめで柔らかな佇まいに由来するといわれている</li>
+      <li>色によって花言葉が異なるため、他の色のヒヤシンスとは意味合いが異なる</li>
     </ul>
   </section>
 
@@ -225,7 +231,7 @@ ob_start();
   $prevUrl   = '/articles/calendar/birthflower/jan/0123/';
   $prevTitle = '1月23日の誕生花（オウバイ）とは';
   $nextUrl   = '/articles/calendar/birthflower/jan/0125/';
-  $nextTitle = '1月25日の誕生花（チューリップ）とは';
+  $nextTitle = '1月25日の誕生花（チューリップ（黄））とは';
   $listUrl   = '/articles/calendar/birthflower/jan/';
   $listTitle = '1月の誕生花一覧';
   require __DIR__.'/../../../../../inc/article-nav.php';

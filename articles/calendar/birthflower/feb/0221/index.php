@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0221/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月21日の誕生花ウメ（紅）の花言葉・特徴・魅力をわかりやすく解説。「忠実」を象徴する早春に咲く花木の意味を紹介します。">
+  <meta name="description" content="2月21日の誕生花ウメ（紅）の花言葉・特徴・魅力をわかりやすく解説。「忠実」を象徴する、縁起の良い紅色の花の意味を紹介します。">
   <title>2月21日の誕生花はウメ（紅）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ウメ（紅）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、まだ寒さの残る時期に紅色の花を咲かせます。"}},
-      {"@type":"Question","name":"ウメ（紅）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「忠実」という花言葉は、毎年変わらず同じ時期に花を咲かせる律儀な性質に由来するとされています。"}},
-      {"@type":"Question","name":"紅いウメと白いウメは花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色によって花言葉が異なり、紅は「忠実」を表すとされています。"}}
+      {"@type":"Question","name":"ウメ（紅）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に見頃を迎えます。紅色の花を咲かせ、まだ寒さの残る景色を華やかに彩ります。"}},
+      {"@type":"Question","name":"ウメ（紅）の花言葉「忠実」の由来は？","acceptedAnswer":{"@type":"Answer","text":"毎年変わらず早春に咲き、長く行事や暮らしの節目に寄り添ってきた律儀な姿に由来するといわれています。変わらず続く誠実さを象徴する言葉です。"}},
+      {"@type":"Question","name":"ウメ（紅）とウメ（白）は花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、同じウメでも花色によって贈られている花言葉は異なるとされています。それぞれの色が持つ印象の違いによるものと考えられています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 21 · 誕生花</span>
     <h1>2月21日の誕生花はウメ（紅）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ウメ（紅）は、バラ科の落葉高木で、早春に紅色の花を咲かせる2月21日の誕生花です。花言葉は「忠実」。華やかで縁起の良い花です。</p>
+    <p class="art-lead">紅色に染まり、古くから縁起の良い花として親しまれてきたウメ（紅）。2月21日の誕生花に選ばれたこの花は、日本の暦や行事とも深く結びついています。今日はその華やかな色に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ウメ（紅）とは</a></li>
-      <li><a href="#meaning">ウメ（紅）が象徴する意味</a></li>
-      <li><a href="#charm">ウメ（紅）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">早春に咲く、ウメ（紅）の紅色</a></li>
+      <li><a href="#story">2月21日、ウメ（紅）と暦が結びつく縁起の意味</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ウメ（紅）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ウメ（紅）とは</h2>
-    <p>ウメ（紅）は、バラ科の落葉高木で、2月21日の誕生花として知られています。早春、まだ寒さの残る中で紅色の花を咲かせ、その華やかな色合いから縁起の良い花木として古くから親しまれています。</p>
-  </section>
+    <h2>早春に咲く、ウメ（紅）の紅色</h2>
+    <p>ウメ（紅）は、バラ科の落葉高木です。早春になると、紅色の花を咲かせ、まだ寒さの残る景色を華やかに彩ります。古くから縁起の良い花として位置づけられ、行事や贈り物の場面でも親しまれてきました。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ウメ（紅）が象徴する意味</h2>
-    <p>ウメ（紅）の花言葉は「忠実」です。毎年欠かすことなく同じ時期に花を咲かせるその律儀な性質が、変わらぬ忠実さを思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ウメ（紅）の魅力</h2>
-    <p>ウメ（紅）の魅力は、寒さの残る景色にひときわ鮮やかな彩りを添える紅色の花にあります。庭木や盆栽としても長く愛され、早春の訪れを華やかに告げてくれます。2月21日生まれの方はもちろん、変わらぬ誠実さを伝えたい贈り物にもふさわしい花木です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ウメ（紅）は日当たりの良い場所を好み、乾燥に強い一方、過湿を嫌うため水はけの良い土で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月21日生まれの方はもちろん、変わらぬ誠実さを伝えたい贈り物としてもウメ（紅）は人気の花木です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ウメ（紅）はいつ頃咲きますか？</div>
-        <div class="faq-a">早春、まだ寒さの残る時期に紅色の花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ウメ（紅）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「忠実」という花言葉は、毎年変わらず同じ時期に花を咲かせる律儀な性質に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">紅いウメと白いウメは花言葉が違いますか？</div>
-        <div class="faq-a">はい、色によって花言葉が異なり、紅は「忠実」を表すとされています。</div>
+        <div class="faq-a">早春に見頃を迎えます。紅色の花を咲かせ、まだ寒さの残る景色を華やかに彩ります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月21日、ウメ（紅）と暦が結びつく縁起の意味</h2>
+    <p>ウメは、桜が主役になるよりも前から、日本の暦や年中行事の中で大切にされてきた花です。新春の訪れを祝う場面や、縁起物として飾られる場面で、紅色のウメが選ばれることも少なくありません。松や竹と並んで、古くからおめでたい取り合わせとされてきたのも、寒さの中で真っ先に花を咲かせるその力強さと、紅色が持つ華やかさによるものでしょう。行事の中で繰り返し選ばれ続けてきたということは、それだけ長く人々の暮らしに寄り添ってきた証でもあります。毎年変わらず同じ時期に咲き、同じように人々の暮らしの節目を彩り続ける。その律儀な姿から、ウメ（紅）には「忠実」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ウメ（紅）の花言葉「忠実」の由来は？</div>
+        <div class="faq-a">毎年変わらず早春に咲き、長く行事や暮らしの節目に寄り添ってきた律儀な姿に由来するといわれています。変わらず続く誠実さを象徴する言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>長く続けている約束や習慣は、当たり前のようでいて、実は簡単なことではありません。今日は、そうした一つ一つを大切に思う時間を作ってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ウメ（紅）から始める小さな体験</h2>
+    <p>紅色で縁起を運ぶウメ（紅）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>紅色の梅の花を探して見に行ってみる</li>
+      <li>長く続けている約束や習慣を一つ大切にしてみる</li>
+      <li>縁起物を一つ身の回りに置いてみる</li>
+      <li>誰かに対する変わらない気持ちを言葉にしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ウメ（紅）とウメ（白）は花言葉が違いますか？</div>
+        <div class="faq-a">はい、同じウメでも花色によって贈られている花言葉は異なるとされています。それぞれの色が持つ印象の違いによるものと考えられています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">変わらない気持ちを言葉にできた今日。今日という日の六曜も、ついでに確かめてみませんか。開運カレンダーでは、その日の六曜や吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月21日、紅色に咲き縁起を運ぶウメ（紅）は、変わらず続く誠実さを教えてくれる花です。</p>
     <ul>
-      <li>ウメ（紅）は早春に紅色の花を咲かせる、2月21日の誕生花</li>
-      <li>花言葉は「忠実」、毎年変わらぬ律儀な姿を象徴する</li>
-      <li>華やかな紅色と縁起の良さが魅力</li>
-      <li>過湿を嫌うため、水はけの良い土で育てたい</li>
+      <li>ウメ（紅）はバラ科の落葉高木で、早春に紅色の花を咲かせる</li>
+      <li>古くから縁起の良い花として、行事や暮らしの節目で親しまれてきた</li>
+      <li>花言葉は「忠実」。変わらず続く誠実さを象徴するとされる</li>
+      <li>ウメ（白）とは花色によって贈られている花言葉が異なるとされる</li>
     </ul>
   </section>
 

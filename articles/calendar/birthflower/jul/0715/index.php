@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0715/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月15日の誕生花カンナの花言葉・特徴・魅力をわかりやすく解説。「尊敬」を象徴する大きく鮮やかな花の意味を紹介します。">
+  <meta name="description" content="7月15日の誕生花カンナの花言葉・特徴・魅力をわかりやすく解説。夏から秋に大きく鮮やかな花を咲かせる、カンナ科の花を紹介します。">
   <title>7月15日の誕生花はカンナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カンナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋に大きく鮮やかな花を咲かせます。カンナ科の多年草です。"}},
-      {"@type":"Question","name":"カンナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"大きく堂々とした花姿が、相手への深い尊敬の念を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"カンナは暑さに強い花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。真夏の強い日差しの中でも力強く花を咲かせ続ける、暑さに強い花として知られています。"}}
+      {"@type":"Question","name":"カンナはどのような印象を与える花ですか？","acceptedAnswer":{"@type":"Answer","text":"大きく鮮やかな花を咲かせることから、情熱的でエネルギッシュな印象を与えるといわれています。夏から秋にかけて咲き続けるカンナ科の多年草です。"}},
+      {"@type":"Question","name":"カンナの花言葉『尊敬』には、どんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"堂々とした大きな花が周囲の視線を集める姿は、誰かを称える気持ちの表れとして『尊敬』という花言葉に結びついたと考えられています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 15 · 誕生花</span>
     <h1>7月15日の誕生花はカンナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カンナは、カンナ科の多年草で、夏から秋になると大きく鮮やかな花を咲かせ、情熱的でエネルギッシュな存在感を放つ花です。花言葉は「尊敬」。情熱的でエネルギッシュな花です。</p>
+    <p class="art-lead">大きな花びらが、燃えるような鮮やかさをたたえて夏の陽射しの中に立っています。カンナは、その堂々とした彩りで夏から秋の景色を彩る花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カンナとは</a></li>
-      <li><a href="#meaning">カンナが象徴する意味</a></li>
-      <li><a href="#charm">カンナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月15日の誕生花として親しまれるカンナ</a></li>
+      <li><a href="#story">夏の陽射しに負けない、カンナの鮮やかな彩り</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カンナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カンナとは</h2>
-    <p>カンナは、カンナ科の多年草で、7月15日の誕生花として知られています。夏から秋になると大きく鮮やかな花を咲かせ、情熱的でエネルギッシュな存在感を放つ花です。</p>
-  </section>
+    <h2>7月15日の誕生花として親しまれるカンナ</h2>
+    <p>カンナは、カンナ科の多年草です。夏から秋にかけて、大きく鮮やかな花を咲かせます。情熱的でエネルギッシュな印象を与えるこの花は、7月15日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カンナが象徴する意味</h2>
-    <p>カンナの花言葉は「尊敬」です。大きく堂々とした花姿が、相手への深い尊敬の念を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カンナの魅力</h2>
-    <p>カンナの魅力は、夏の日差しにも負けない大きく鮮やかな花色と、堂々とした草姿が生み出す存在感にあります。夏の公園や花壇を彩る、力強い花として親しまれています。7月15日生まれの方はもちろん、尊敬の気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カンナは日当たりを好み、暑さに強いため水を好む性質を踏まえて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月15日生まれの方はもちろん、尊敬の気持ちを伝えたい贈り物としてもカンナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンナはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋に大きく鮮やかな花を咲かせます。カンナ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">大きく堂々とした花姿が、相手への深い尊敬の念を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カンナは暑さに強い花ですか？</div>
-        <div class="faq-a">はい。真夏の強い日差しの中でも力強く花を咲かせ続ける、暑さに強い花として知られています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カンナはどのような印象を与える花ですか？</div>
+        <div class="faq-a">大きく鮮やかな花を咲かせることから、情熱的でエネルギッシュな印象を与えるといわれています。夏から秋にかけて咲き続けるカンナ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏の陽射しに負けない、カンナの鮮やかな彩り</h2>
+    <p>カンナの花が放つ色合いは、夏の強い陽射しの中でもひときわ目を引きます。大きく開いた花びらが群れをなして咲く姿は、遠くから見てもそれとわかるほどの存在感を放ち、通り過ぎる人の視線を自然と引き寄せます。この際立った印象が、称えたい気持ちと重ねられ、『尊敬』という花言葉に結びついてきたのかもしれません。誰かの頑張りに心を動かされたとき、言葉より先に視線を奪うような堂々とした佇まいが、その気持ちを代弁してくれることもあるでしょう。カンナ科の多年草として、この花は夏から秋にかけて変わらぬ彩りを咲かせ続けています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カンナの花言葉『尊敬』には、どんな由来がありますか？</div>
+        <div class="faq-a">堂々とした大きな花が周囲の視線を集める姿は、誰かを称える気持ちの表れとして『尊敬』という花言葉に結びついたと考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かの努力に、素直に心を動かされる瞬間があります。称えたい気持ちを持ったなら、遠慮せずそのまま言葉にして届けてみましょう。まっすぐな称賛ほど、相手の胸に深く届くものです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カンナから始める小さな体験</h2>
+    <p>大きく鮮やかな花を咲かせるカンナにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>大きく鮮やかな花をじっくり観察してみる</li>
+      <li>尊敬する人に、感謝の気持ちを一つ伝えてみる</li>
+      <li>情熱的な色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">感謝や敬意を伝えたい今日は、ラッキーカラーや今月の誕生石もあわせて確認してみませんか。開運カレンダーでは、ラッキーカラーと今月の誕生石を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>視線を奪うほどの堂々とした彩りは、誰かを称える気持ちの表れ方の一つなのだろう。</p>
     <ul>
-      <li>カンナは夏から秋に大きく鮮やかな花を咲かせる、7月15日の誕生花</li>
-      <li>花言葉は「尊敬」、堂々とした花姿に由来する</li>
-      <li>夏の日差しに負けない鮮やかな花色が魅力</li>
-      <li>日当たりを好み、暑さに強い</li>
+      <li>カンナは夏から秋にかけて大きく鮮やかな花を咲かせる、カンナ科の多年草で、7月15日の誕生花</li>
+      <li>花言葉は「尊敬」。堂々とした花姿が誰かを称える気持ちと重ねられてきたとされる</li>
+      <li>情熱的でエネルギッシュな印象を与える花として知られる</li>
+      <li>大きく鮮やかな彩りが魅力</li>
     </ul>
   </section>
 

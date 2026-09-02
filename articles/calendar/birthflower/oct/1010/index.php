@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"シオンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紫色の花を株いっぱいに咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"シオンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"株いっぱいに咲く淡紫色の花が、過ぎ去った日々をしみじみと思い出させることに由来すると言われています。"}},
-      {"@type":"Question","name":"シオンはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"淡紫色の落ち着いた花姿を活かして、和の雰囲気を持つ空間に飾るのがおすすめです。"}}
+      {"@type":"Question","name":"シオンはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"秋に淡紫色の花を株いっぱいに咲かせます。キク科の多年草です。"}},
+      {"@type":"Question","name":"シオンの花言葉「追想」の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"株いっぱいに咲く淡紫色の花が、過ぎ去った日々をしみじみと思い出させることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 10 · 誕生花</span>
     <h1>10月10日の誕生花はシオン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">シオンは、キク科の多年草で、秋に淡紫色の花を株いっぱいに咲かせる、しっとりと落ち着いた印象を持つ花です。花言葉は「追想」。しっとりと落ち着いた花です。</p>
+    <p class="art-lead">秋が深まるころ、庭の片隅で淡い紫色の花が静かに咲きそろう。派手さはないけれど、どこか懐かしさを誘うその佇まいが、10月10日の誕生花シオンの魅力だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">シオンとは</a></li>
-      <li><a href="#meaning">シオンが象徴する意味</a></li>
-      <li><a href="#charm">シオンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月10日の誕生花として親しまれるシオン</a></li>
+      <li><a href="#story">株いっぱいの淡紫色が呼び起こす、静かな記憶</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、シオンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>シオンとは</h2>
-    <p>シオンは、キク科の多年草で、10月10日の誕生花として知られています。秋に淡紫色の花を株いっぱいに咲かせる、しっとりと落ち着いた印象を持つ花です。</p>
-  </section>
+    <h2>10月10日の誕生花として親しまれるシオン</h2>
+    <p>シオンは、キク科の多年草。秋になると、株全体を覆うように淡紫色の花をたくさん咲かせる。一つ一つの花は控えめだが、株いっぱいに咲きそろう様子は、しっとりとした落ち着きを感じさせる。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>シオンが象徴する意味</h2>
-    <p>シオンの花言葉は「追想」です。株いっぱいに咲く淡紫色の花が、過ぎ去った日々をしみじみと思い出させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>シオンの魅力</h2>
-    <p>シオンの魅力は、淡紫色の花が持つしっとりと落ち着いた美しさと、株いっぱいに咲きそろう奥ゆかしい佇まいにあります。10月10日生まれの方はもちろん、懐かしい想い出を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>シオンは日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月10日生まれの方はもちろん、懐かしい想い出を伝えたい贈り物としてもシオンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シオンはいつ頃咲きますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">シオンはどんな咲き方をしますか？</div>
         <div class="faq-a">秋に淡紫色の花を株いっぱいに咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シオンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">株いっぱいに咲く淡紫色の花が、過ぎ去った日々をしみじみと思い出させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">シオンはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">淡紫色の落ち着いた花姿を活かして、和の雰囲気を持つ空間に飾るのがおすすめです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>株いっぱいの淡紫色が呼び起こす、静かな記憶</h2>
+    <p>シオンの花が咲きそろう様子を眺めていると、なぜか過ぎ去った時間のことを思い出す人が多いという。淡い紫という色そのものが持つ落ち着きに加え、一輪だけでなく株全体で静かに咲く様子が、懐かしさを誘う雰囲気を作り出しているのかもしれない。この、しみじみとした情緒が、花言葉「追想」の由来になっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">シオンの花言葉「追想」の由来は何ですか？</div>
+        <div class="faq-a">株いっぱいに咲く淡紫色の花が、過ぎ去った日々をしみじみと思い出させることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>時には立ち止まって、過ぎ去った日々を静かに振り返る時間があってもいい。シオンの淡い紫色は、そんな穏やかな追想のひとときにそっと寄り添ってくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、シオンから始める小さな体験</h2>
+    <p>株いっぱいに静かに咲くシオンにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>淡紫色の花が咲き誇る様子をじっくり眺めてみる</li>
+      <li>懐かしい思い出を一つ、静かに振り返ってみる</li>
+      <li>落ち着いた時間をゆっくり過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">懐かしい記憶に浸りたい日は、今日の星座占いもチェックしてみませんか。開運カレンダーでは、日々の星座運勢も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>株いっぱいに咲きそろうシオンの淡紫色は、静かな追想のひとときを誘う。</p>
     <ul>
-      <li>シオンは淡紫色の花を咲かせる、10月10日の誕生花</li>
-      <li>花言葉は「追想」、株いっぱいに咲く花姿に由来する</li>
-      <li>株いっぱいに咲きそろう奥ゆかしい佇まいが魅力</li>
-      <li>日当たりから半日陰を好み、丈夫で育てやすいため特別な手入れをせずとも管理するとよく育ちます</li>
+      <li>シオンは秋に淡紫色の花を株いっぱいに咲かせる、キク科の多年草で、10月10日の誕生花</li>
+      <li>花言葉は「追想」。しみじみとした花の佇まいに由来すると言われる</li>
+      <li>一輪ずつは控えめだが、株全体で落ち着いた印象を生み出す</li>
+      <li>懐かしい記憶にそっと浸りたい日に寄り添う花</li>
     </ul>
   </section>
 

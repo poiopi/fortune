@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0917/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月17日の誕生花チューベローズの花言葉・特徴・魅力をわかりやすく解説。「危険な楽しみ」を象徴する夜に香る白い花の意味を紹介します。">
+  <meta name="description" content="9月17日の誕生花チューベローズの花言葉・特徴・魅力をわかりやすく解説。「危険な楽しみ」を象徴する夜香る白い花の意味を紹介します。">
   <title>9月17日の誕生花はチューベローズ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"チューベローズはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に白い花を穂状に咲かせ、夜に強く甘い香りを放ちます。キジカクシ科の多年草です。"}},
-      {"@type":"Question","name":"チューベローズの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"昼よりも夜に一段と強く甘い香りを漂わせ、人を惹きつけてやまない花姿が、後を引くような危険な楽しみを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"チューベローズは香水にも使われますか？","acceptedAnswer":{"@type":"Answer","text":"はい。夜に強く香る甘い芳香が知られ、高級香水の原料として世界中で用いられています。"}}
+      {"@type":"Question","name":"チューベローズはどんな花の形をしていますか？","acceptedAnswer":{"@type":"Answer","text":"白い小さな花が、穂のように縦に連なって咲きます。この花穂全体から、夜になるとひときわ強い香りが漂います。"}},
+      {"@type":"Question","name":"チューベローズの花言葉『危険な楽しみ』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"この昼と夜で表情を変える官能的な香りに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 17 · 誕生花</span>
     <h1>9月17日の誕生花はチューベローズ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">チューベローズは、キジカクシ科の多年草で、夏に白い花を穂状に咲かせ、夜に強く甘い香りを放つ、官能的で気品ある印象を持つ花です。花言葉は「危険な楽しみ」。官能的で気品ある花です。</p>
+    <p class="art-lead">昼間は静かにたたずみ、夜になると一変して強く香り出す。そんな二つの顔を持つ花、それが9月17日の誕生花チューベローズだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">チューベローズとは</a></li>
-      <li><a href="#meaning">チューベローズが象徴する意味</a></li>
-      <li><a href="#charm">チューベローズの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月17日の誕生花として親しまれるチューベローズ</a></li>
+      <li><a href="#story">夜に強まる香りが導く、危険な楽しみ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、チューベローズから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>チューベローズとは</h2>
-    <p>チューベローズは、キジカクシ科の多年草で、9月17日の誕生花として知られています。夏に白い花を穂状に咲かせ、夜に強く甘い香りを放つ、官能的で気品ある印象を持つ花です。</p>
-  </section>
+    <h2>9月17日の誕生花として親しまれるチューベローズ</h2>
+    <p>チューベローズは、キジカクシ科の多年草です。夏になると、白い花を穂状に咲かせます。夜に強く甘い香りを放つことで知られ、9月17日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>チューベローズが象徴する意味</h2>
-    <p>チューベローズの花言葉は「危険な楽しみ」です。昼よりも夜に一段と強く甘い香りを漂わせ、人を惹きつけてやまない花姿が、後を引くような危険な楽しみを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>チューベローズの魅力</h2>
-    <p>チューベローズの魅力は、純白の花が穂状に連なって咲く気品ある佇まいと、夜になるほど濃くなる甘美な香りにあります。香水の原料としても知られています。 9月17日生まれの方はもちろん、心惹かれる想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>チューベローズは日当たりを好み、寒さに弱いため冬は暖かい場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月17日生まれの方はもちろん、心惹かれる想いを伝えたい贈り物としてもチューベローズは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューベローズはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に白い花を穂状に咲かせ、夜に強く甘い香りを放ちます。キジカクシ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューベローズの花言葉の由来は何ですか？</div>
-        <div class="faq-a">昼よりも夜に一段と強く甘い香りを漂わせ、人を惹きつけてやまない花姿が、後を引くような危険な楽しみを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">チューベローズは香水にも使われますか？</div>
-        <div class="faq-a">はい。夜に強く香る甘い芳香が知られ、高級香水の原料として世界中で用いられています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">チューベローズはどんな花の形をしていますか？</div>
+        <div class="faq-a">白い小さな花が、穂のように縦に連なって咲きます。この花穂全体から、夜になるとひときわ強い香りが漂います。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夜に強まる香りが導く、危険な楽しみ</h2>
+    <p>チューベローズの香りは、昼よりも夜に強くなる。白い花穂が静かに立つその姿からは想像できないほど、甘く濃厚な香りが夜の空気に広がっていく。一度香ると忘れられないと言われるほど、印象に残る香りを持つ花だ。夜だけ強く香るという特性は、どこか秘密めいた魅力を感じさせる。花言葉「危険な楽しみ」は、この昼と夜で表情を変える官能的な香りに由来すると言われている。誰かに見られていない時間だからこそ、人は少しの背徳感のような楽しみに気づくのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">チューベローズの花言葉『危険な楽しみ』にはどんな由来がありますか？</div>
+        <div class="faq-a">この昼と夜で表情を変える官能的な香りに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰にも気づかれない場所で、静かに高まっていく気持ちがある。夜にこそ強く香るチューベローズは、そんな内に秘めた高揚感を教えてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、チューベローズから始める小さな体験</h2>
+    <p>夜に強く香りを放つチューベローズにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>夜に香る花について調べてみる</li>
+      <li>穂状に咲く花の形をじっくり観察してみる</li>
+      <li>甘い香りのするものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">夜の時間を少し特別に過ごしたい日は、今日の月齢もあわせて確認してみませんか。開運カレンダーでは、月齢・月相とラッキーナンバーを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>夜になるとなぜ、香りはこれほど強くなるのだろうか。チューベローズの花穂は、その謎めいた魅力を今日も静かに放っている。</p>
     <ul>
-      <li>チューベローズは夏に香り高い白い花を咲かせる、9月17日の誕生花</li>
-      <li>花言葉は「危険な楽しみ」、夜に強く香る花姿に由来する</li>
-      <li>気品ある佇まいと香りが魅力</li>
-      <li>日当たりを好み、寒さに弱い</li>
+      <li>チューベローズは夏に白い花を穂状に咲かせる、キジカクシ科の多年草で、9月17日の誕生花</li>
+      <li>花言葉は「危険な楽しみ」。夜に強まる官能的な香りに由来すると言われる</li>
+      <li>昼と夜で異なる表情を見せる花</li>
+      <li>誰にも見られない時間の楽しみをそっと教えてくれる花</li>
     </ul>
   </section>
 

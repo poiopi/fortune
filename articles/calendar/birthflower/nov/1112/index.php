@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1112/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月12日の誕生花グミの花言葉・特徴・魅力をわかりやすく解説。「心の純潔」を象徴する小さな花の意味を紹介します。">
+  <meta name="description" content="11月12日の誕生花グミの花言葉・特徴・魅力をわかりやすく解説。「心の純潔」を象徴する赤い実をつける落葉低木の意味を紹介します。">
   <title>11月12日の誕生花はグミ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"グミはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小さな花を咲かせ、初夏には赤い実をつけます。グミ科の落葉低木です。"}},
-      {"@type":"Question","name":"グミの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"春に小さく清らかな花を咲かせ、初夏には赤い実を実らせる素直な生育の姿が、心の純潔を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"グミはどんな場所に植えるのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすいため、庭木や生垣、初夏の実を楽しむ果樹として植えられることが多い植物です。"}}
+      {"@type":"Question","name":"グミの花や実はいつ頃見られますか？","acceptedAnswer":{"@type":"Answer","text":"春に小さな花を咲かせ、初夏に赤い実をつけます。11月はどちらの時期でもありません。"}},
+      {"@type":"Question","name":"グミの花言葉「心の純潔」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"春の花から初夏の赤い実へと、まっすぐに実を結んでいく過程が、心の純潔という花言葉に重ねられてきたと言われています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 12 · 誕生花</span>
     <h1>11月12日の誕生花はグミ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">グミは、グミ科の落葉低木で、春に小さな花を咲かせ、初夏には赤い実をつける、純朴で素直な印象を持つ花です。花言葉は「心の純潔」。純朴な花です。</p>
+    <p class="art-lead">グミ科の落葉低木であるグミは、春に小さな花を咲かせ、初夏に赤い実をつける。11月のいまはどちらの季節でもないが、その分、実がなる日を心の中で思い描いてみるのも悪くない。グミは、そんな待つ楽しみを教えてくれる、11月12日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>グミ</dd>
     <dt>花言葉</dt><dd>心の純潔</dd>
     <dt>科名</dt><dd>グミ科</dd>
-    <dt>見頃</dt><dd>春（花）／初夏（実）</dd>
+    <dt>見頃</dt><dd>春〜初夏</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">グミとは</a></li>
-      <li><a href="#meaning">グミが象徴する意味</a></li>
-      <li><a href="#charm">グミの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月12日の誕生花として親しまれるグミ</a></li>
+      <li><a href="#story">まだ見ぬ赤い実を、思い描く時間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、グミから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>グミとは</h2>
-    <p>グミは、グミ科の落葉低木で、11月12日の誕生花として知られています。春に小さな花を咲かせ、初夏には赤い実をつける、純朴で素直な印象を持つ植物です。</p>
-  </section>
+    <h2>11月12日の誕生花として親しまれるグミ</h2>
+    <p>グミは、グミ科の落葉低木として知られる、11月12日の誕生花です。春に小さな花を咲かせ、初夏には赤い実をつける植物として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>グミが象徴する意味</h2>
-    <p>グミの花言葉は「心の純潔」です。春に小さく清らかな花を咲かせ、初夏には赤い実を実らせる素直な生育の姿が、心の純潔を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>グミの魅力</h2>
-    <p>グミの魅力は、春に咲く小さく清らかな花と、初夏に実る赤い実が生む素朴な味わい深さにあります。11月12日生まれの方はもちろん、純粋な想いを伝えたい贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>グミは日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月12日生まれの方はもちろん、純粋な想いを伝えたい贈り物としてもグミは人気の植物です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グミはいつ頃咲きますか？</div>
-        <div class="faq-a">春に小さな花を咲かせ、初夏には赤い実をつけます。グミ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グミの花言葉の由来は何ですか？</div>
-        <div class="faq-a">春に小さく清らかな花を咲かせ、初夏には赤い実を実らせる素直な生育の姿が、心の純潔を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グミはどんな場所に植えるのがおすすめですか？</div>
-        <div class="faq-a">丈夫で育てやすいため、庭木や生垣、初夏の実を楽しむ果樹として植えられることが多い植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">グミの花や実はいつ頃見られますか？</div>
+        <div class="faq-a">春に小さな花を咲かせ、初夏に赤い実をつけます。11月はどちらの時期でもありません。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>まだ見ぬ赤い実を、思い描く時間</h2>
+    <p>グミの赤い実は、今のこの時期には見ることができない。花が咲くのは春、実がなるのは初夏で、11月はそのどちらでもない、いわば静かな充電期間にあたる。けれど、こうして実際には目にできない時期だからこそ、赤い実の色を想像する楽しみがある。小さな花から始まり、やがて赤く色づいていく過程を思い浮かべると、今は見えない時間にも意味が宿っているように感じられる。まっすぐに実を結ぶまでの過程は、混じりけのない「心の純潔」という花言葉と静かに重なる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">グミの花言葉「心の純潔」はどのように結びついていますか？</div>
+        <div class="faq-a">春の花から初夏の赤い実へと、まっすぐに実を結んでいく過程が、心の純潔という花言葉に重ねられてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>結果がすぐに見えない時間の中でも、まっすぐな気持ちを保てているだろうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、グミから始める小さな体験</h2>
+    <p>まだ見ぬ赤い実を静かに育てるグミにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤い実を思い浮かべながら、素直な気持ちで過ごしてみる</li>
+      <li>小さなものに込められた美しさに目を向けてみる</li>
+      <li>曇りのない、まっすぐな言葉を一つ誰かに伝えてみる</li>
+    </ul>
+
+    <p class="cta-lead">特別な数字を意識したい日は、開運カレンダーで今日のラッキーナンバーも覗いてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>今は見えない赤い実を思い描く時間もまた、まっすぐな気持ちを育てる糧になっているのではないか。</p>
     <ul>
-      <li>グミは春に小さな花、初夏に赤い実をつける、11月12日の誕生花</li>
-      <li>花言葉は「心の純潔」、素直な生育の姿に由来する</li>
-      <li>花から実へ移ろう素朴な味わい深さが魅力</li>
-      <li>日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます</li>
+      <li>グミは、グミ科の落葉低木で、春に花を咲かせ初夏に赤い実をつける、11月12日の誕生花</li>
+      <li>花言葉は「心の純潔」。まっすぐに実を結ぶまでの過程に由来すると言われる</li>
+      <li>11月は花も実も見られない時期だが、その分実りを想像する楽しみがある</li>
+      <li>汚れのない、まっすぐな気持ちを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

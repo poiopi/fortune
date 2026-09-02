@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0310/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月10日の誕生花レンギョウの花言葉・特徴・魅力をわかりやすく解説。「集中力」を象徴する早春を彩る花木の意味を紹介します。">
+  <meta name="description" content="3月10日の誕生花レンギョウの花言葉・特徴・魅力をわかりやすく解説。「集中力」を象徴する、葉より先に咲く黄色い花の意味を紹介します。">
   <title>3月10日の誕生花はレンギョウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"レンギョウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、葉が芽吹くより先に黄色い花を枝いっぱいに咲かせます。モクセイ科の落葉低木で、春を告げる花木として親しまれています。"}},
-      {"@type":"Question","name":"レンギョウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「集中力」という花言葉は、枝の一本一本に無数の花を隙間なく咲かせる密度の高さが、ひとつのことに力を注ぐ集中した姿を連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"レンギョウはどんな場所で見られますか？","acceptedAnswer":{"@type":"Answer","text":"丈夫で育てやすいことから、日本各地の公園や庭木、生け垣として広く植えられています。垂れ下がる枝ぶりも観賞のポイントです。"}}
+      {"@type":"Question","name":"レンギョウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に見頃を迎えます。葉より先に黄色い花を枝いっぱいに咲かせ、鮮やかな景色を作り出します。"}},
+      {"@type":"Question","name":"レンギョウの花言葉「集中力」の由来は？","acceptedAnswer":{"@type":"Answer","text":"葉が出る前に、黄色い花だけが枝いっぱいに並んで咲く、その潔い姿に由来するといわれています。"}},
+      {"@type":"Question","name":"レンギョウは他の黄色い花木と似ていますか？","acceptedAnswer":{"@type":"Answer","text":"同じく早春に黄色い花を咲かせるサンシュユなどと似た印象を持たれることがありますが、科や花の形は異なる植物です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 10 · 誕生花</span>
     <h1>3月10日の誕生花はレンギョウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">レンギョウは、モクセイ科の落葉低木で、早春に葉より先に黄色い花を枝いっぱいに咲かせる3月10日の誕生花です。花言葉は「集中力」。明るく力強い印象の花木です。</p>
+    <p class="art-lead">葉より先に、枝いっぱいの黄色を咲かせるレンギョウ。3月10日の誕生花に選ばれたこの花木は、一点に意識を定める力を思い出させてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">レンギョウとは</a></li>
-      <li><a href="#meaning">レンギョウが象徴する意味</a></li>
-      <li><a href="#charm">レンギョウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">葉より先に咲きそろう、レンギョウの鮮やかな黄色</a></li>
+      <li><a href="#story">3月10日、レンギョウの黄色が引き出す、澄んだ集中力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、レンギョウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>レンギョウとは</h2>
-    <p>レンギョウは、モクセイ科の落葉低木で、3月10日の誕生花として知られています。葉が芽吹く前の枝いっぱいに鮮やかな黄色い花を咲かせる姿が特徴で、日本各地の公園や庭木として広く植えられている春を代表する花木のひとつです。</p>
-  </section>
+    <h2>葉より先に咲きそろう、レンギョウの鮮やかな黄色</h2>
+    <p>レンギョウは、モクセイ科の落葉低木です。早春、まだ葉が出る前に、黄色い花を枝いっぱいに咲かせます。葉のない枝に花だけがびっしりと並ぶ姿は華やかで、春の訪れを告げる花木として庭先や公園でよく見かけられます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>レンギョウが象徴する意味</h2>
-    <p>レンギョウの花言葉は「集中力」です。枝の一本一本に無数の花を隙間なく咲かせる密度の高さが、ひとつのことに向かって力を注ぐ集中した姿を連想させることに由来すると言われています。「豊かな希望」「期待」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>レンギョウの魅力</h2>
-    <p>レンギョウの魅力は、まだ肌寒い季節に太陽のような黄色で庭を明るく彩ってくれるところです。垂れ下がる枝ぶりも美しく、生け垣や庭木として植えられるほか、切り花として室内で春を先取りする楽しみ方もできます。3月10日生まれの方はもちろん、これから何かに打ち込む人への贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>レンギョウは日当たりの良い場所を好み、丈夫で育てやすい花木です。花が終わった後の早い時期に剪定を行うことで、翌年も花付きよく育てることができます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月10日生まれの方はもちろん、これから何かに集中して取り組む人への贈り物としてもレンギョウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">レンギョウはいつ頃咲きますか？</div>
-        <div class="faq-a">早春、葉が芽吹くより先に黄色い花を枝いっぱいに咲かせます。モクセイ科の落葉低木で、春を告げる花木として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レンギョウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「集中力」という花言葉は、枝の一本一本に無数の花を隙間なく咲かせる密度の高さが、ひとつのことに力を注ぐ集中した姿を連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">レンギョウはどんな場所で見られますか？</div>
-        <div class="faq-a">丈夫で育てやすいことから、日本各地の公園や庭木、生け垣として広く植えられています。垂れ下がる枝ぶりも観賞のポイントです。</div>
+        <div class="faq-a">早春に見頃を迎えます。葉より先に黄色い花を枝いっぱいに咲かせ、鮮やかな景色を作り出します。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月10日、レンギョウの黄色が引き出す、澄んだ集中力</h2>
+    <p>レンギョウの花が咲くとき、枝にはまだ葉が出そろっていません。余計なものが何もない枝に、黄色い花だけがまっすぐに並ぶ姿は、他のことに気を取られず一つのことに向き合っているようにも見えます。葉というにぎやかさを持たないからこそ際立つ、花そのものの存在感――その潔さから、レンギョウには「集中力」という花言葉が贈られてきたといわれています。何かに集中したいとき、周りの情報を減らし、目の前の一点だけを見つめることが助けになる場合があります。レンギョウの咲き方は、そんな引き算の力を思い出させてくれるようです。新年度を控えたこの時期、取り組みたいことを一つに絞ってみるのも良さそうです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">レンギョウの花言葉「集中力」の由来は？</div>
+        <div class="faq-a">葉が出る前に、黄色い花だけが枝いっぱいに並んで咲く、その潔い姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>余計なものを手放すと、一点がくっきり見えてきます。今日は目の前のことに、まっすぐ向き合ってみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、レンギョウから始める小さな体験</h2>
+    <p>葉より先に黄色い花を咲かせるレンギョウにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>葉より先に咲く黄色い花を探して観察してみる</li>
+      <li>今日取り組みたいことを一つに絞ってみる</li>
+      <li>黄色いものを身の回りに置いて気持ちを引き締める</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">レンギョウは他の黄色い花木と似ていますか？</div>
+        <div class="faq-a">同じく早春に黄色い花を咲かせるサンシュユなどと似た印象を持たれることがありますが、科や花の形は異なる植物です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">一点に意識を定められた今日は、ラッキーカラーやラッキーアイテムもあわせて確認してみませんか。開運カレンダーでは、その日のラッキーカラーやラッキーアイテムをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月10日、葉より先に黄色い花を咲かせるレンギョウは、余計なものを手放して一点に向き合う集中力を教えてくれる花木です。</p>
     <ul>
-      <li>レンギョウは早春に黄色い花を枝いっぱいに咲かせる、3月10日の誕生花</li>
-      <li>花言葉は「集中力」、隙間なく咲く花の密度の高さに由来する</li>
-      <li>太陽のような黄色と垂れ下がる枝ぶりが魅力</li>
-      <li>花後すぐの剪定を心がけ、丈夫な性質を活かして育てたい</li>
+      <li>レンギョウはモクセイ科の落葉低木で、早春に葉より先に黄色い花を枝いっぱいに咲かせる</li>
+      <li>葉のない枝に花だけが並ぶ潔い姿が、集中力を連想させる</li>
+      <li>花言葉は「集中力」。一点に意識を定める力を象徴するといわれる</li>
+      <li>同じく早春に咲くサンシュユなどと似た印象を持たれることがあるが、異なる植物</li>
     </ul>
   </section>
 

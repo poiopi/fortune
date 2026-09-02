@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ベゴニア（白）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して白い花を咲かせ続けます。シュウカイドウ科の多年草です。"}},
-      {"@type":"Question","name":"ベゴニア（白）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して絶えることなく白い花を咲かせ続けるやさしい花姿が、思いやりに満ちた親切な心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ベゴニア（白）は室内でも育てられますか？","acceptedAnswer":{"@type":"Answer","text":"はい。強い直射日光を避ければ室内でも育てやすく、鉢植えとして親しまれています。"}}
+      {"@type":"Question","name":"ベゴニア（白）はどんな季節に花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"特定の季節に限らず、一年を通して白い花を咲かせ続けます。艶やかな花びらが華やかな印象を与えるシュウカイドウ科の多年草です。"}},
+      {"@type":"Question","name":"ベゴニア（白）の花言葉『親切』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"季節を問わず一年を通して咲き続け、変わらず静かに寄り添う白い花の姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 9 · 誕生花</span>
     <h1>9月9日の誕生花はベゴニア（白）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ベゴニア（白）は、シュウカイドウ科の多年草で、一年を通して白い花を咲かせ続ける、清らかでやさしい印象を放つ花です。花言葉は「親切」。清らかでやさしい花です。</p>
+    <p class="art-lead">一年を通して咲き続ける白い花びらが、季節を選ばずそっと寄り添っている。特別な時期を待たずに手を差し伸べてくれるような、9月9日の誕生花ベゴニア（白）を紹介したい。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ベゴニア（白）とは</a></li>
-      <li><a href="#meaning">ベゴニア（白）が象徴する意味</a></li>
-      <li><a href="#charm">ベゴニア（白）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月9日の誕生花として親しまれるベゴニア（白）</a></li>
+      <li><a href="#story">一年中変わらない白が、そっと差し伸べる手</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ベゴニア（白）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ベゴニア（白）とは</h2>
-    <p>ベゴニア（白）は、シュウカイドウ科の多年草で、9月9日の誕生花として知られています。一年を通して白い花を咲かせ続ける、清らかでやさしい印象を放つ花です。</p>
-  </section>
+    <h2>9月9日の誕生花として親しまれるベゴニア（白）</h2>
+    <p>ベゴニア（白）は、シュウカイドウ科の多年草です。一年を通して、白い花を咲かせ続けます。季節を問わず日常生活の中に取り入れやすい花として親しまれ、9月9日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ベゴニア（白）が象徴する意味</h2>
-    <p>ベゴニア（白）の花言葉は「親切」です。一年を通して絶えることなく白い花を咲かせ続けるやさしい花姿が、思いやりに満ちた親切な心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ベゴニア（白）の魅力</h2>
-    <p>ベゴニア（白）の魅力は、清らかな白い花びらが一年中途切れることなく咲き続ける生命力と、やさしい印象を漂わせる佇まいにあります。9月9日生まれの方はもちろん、思いやりの心を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ベゴニア（白）は明るい日陰を好み、多湿を嫌うため風通しの良い場所で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月9日生まれの方はもちろん、思いやりの心を伝えたい贈り物としてもベゴニア（白）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（白）はいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して白い花を咲かせ続けます。シュウカイドウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（白）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">一年を通して絶えることなく白い花を咲かせ続けるやさしい花姿が、思いやりに満ちた親切な心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（白）は室内でも育てられますか？</div>
-        <div class="faq-a">はい。強い直射日光を避ければ室内でも育てやすく、鉢植えとして親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（白）はどんな季節に花を咲かせますか？</div>
+        <div class="faq-a">特定の季節に限らず、一年を通して白い花を咲かせ続けます。艶やかな花びらが華やかな印象を与えるシュウカイドウ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>一年中変わらない白が、そっと差し伸べる手</h2>
+    <p>ベゴニア（白）の花びらは、艶やかでありながら、決して主張しすぎることのない白色をしている。季節によって咲いたり咲かなかったりするのではなく、一年を通して咲き続けるという性質が、この花にどこか安心感を与えている。いつ訪ねても、変わらずそこに咲いていてくれる。そんな存在は、日常の中で意外と貴重だ。艶やかな花びらの華やかさと、変わらず咲き続ける穏やかさが同居しているところに、この花の魅力がある。花言葉「親切」は、季節を問わず静かに寄り添い続けるこの白い花の姿から生まれたのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ベゴニア（白）の花言葉『親切』にはどんな由来がありますか？</div>
+        <div class="faq-a">季節を問わず一年を通して咲き続け、変わらず静かに寄り添う白い花の姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>親切というのは、大きな行動である必要はない。誰かのそばに変わらずいる、それだけでも十分に優しさになる。今日は、いつも通りの小さな気遣いを大切にする。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ベゴニア（白）から始める小さな体験</h2>
+    <p>一年を通して白い花を咲かせ続けるベゴニア（白）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い花びらの艶やかさをじっくり観察してみる</li>
+      <li>誰かに親切にできることを一つしてみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かに優しくしたい日は、今日のラッキーナンバーもチェックしてみませんか。開運カレンダーでは、ラッキーナンバーと吉日を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>季節を問わず変わらず咲き続けるという、ただそれだけのことが、「親切」という花言葉につながっている。</p>
     <ul>
-      <li>ベゴニア（白）は一年を通してに白い花を咲かせる、9月9日の誕生花</li>
-      <li>花言葉は「親切」、咲き続ける花姿に由来する</li>
-      <li>一年中咲き続ける生命力が魅力</li>
-      <li>明るい日陰を好み、多湿を嫌う</li>
+      <li>ベゴニア（白）は一年を通して白い花を咲かせる、シュウカイドウ科の多年草で、9月9日の誕生花</li>
+      <li>花言葉は「親切」。季節を問わず変わらず寄り添う姿に由来すると言われる</li>
+      <li>艶やかな花びらが華やかな印象を与える</li>
+      <li>日常生活の中に自然と取り入れやすい花</li>
     </ul>
   </section>
 

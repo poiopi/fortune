@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0305/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月5日の誕生花オランダアヤメの花言葉・特徴・魅力をわかりやすく解説。「メッセージ」を象徴する凛とした花の意味を紹介します。">
+  <meta name="description" content="3月5日の誕生花オランダアヤメの花言葉・特徴・魅力をわかりやすく解説。「メッセージ」を象徴する、春に凛と咲く花の意味を紹介します。">
   <title>3月5日の誕生花はオランダアヤメ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オランダアヤメはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に凛とした花を咲かせます。アヤメ科の球根植物で、切り花としても人気の高い花です。"}},
-      {"@type":"Question","name":"オランダアヤメの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「メッセージ」という花言葉は、すっと伸びた茎の先に凛と咲く花姿が、想いをまっすぐ届ける様子に重ねられたことに由来すると言われています。"}},
-      {"@type":"Question","name":"オランダアヤメはなぜ「ダッチアイリス」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"オランダで品種改良が盛んに行われ、洗練された花色や花形を持つ系統が数多く生み出されたことから、この名で呼ばれるようになったとされています。"}}
+      {"@type":"Question","name":"オランダアヤメはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に見頃を迎えます。すらりと伸びた茎の先に、凛とした花を咲かせてくれます。"}},
+      {"@type":"Question","name":"オランダアヤメの花言葉「メッセージ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"多くを語らずとも凛とした姿で語りかけてくるような、飾らない花の佇まいに由来するといわれています。"}},
+      {"@type":"Question","name":"オランダアヤメは日本のアヤメと同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、オランダアヤメは日本在来のアヤメとは異なる球根植物です。「ダッチアイリス」とも呼ばれ、切り花として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 5 · 誕生花</span>
     <h1>3月5日の誕生花はオランダアヤメ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オランダアヤメは、アヤメ科の球根植物で、春に凛とした花を咲かせる3月5日の誕生花です。花言葉は「メッセージ」。ダッチアイリスとも呼ばれる知的な印象の花です。</p>
+    <p class="art-lead">春の花壇に凛とした一輪を咲かせるオランダアヤメ。3月5日の誕生花に選ばれたこの花は、静かな佇まいの中に、伝えたい思いを運んでくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オランダアヤメとは</a></li>
-      <li><a href="#meaning">オランダアヤメが象徴する意味</a></li>
-      <li><a href="#charm">オランダアヤメの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">春に凛と咲く、オランダアヤメの一輪</a></li>
+      <li><a href="#story">3月5日、オランダアヤメが運ぶ、静かなメッセージ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オランダアヤメから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オランダアヤメとは</h2>
-    <p>オランダアヤメは、アヤメ科の球根植物で、3月5日の誕生花として知られています。英名「ダッチアイリス」の名の通りオランダで品種改良が進み、青紫や黄、白など洗練された花色を持つことから、切り花としても世界中で親しまれています。</p>
-  </section>
+    <h2>春に凛と咲く、オランダアヤメの一輪</h2>
+    <p>オランダアヤメは、アヤメ科の球根植物です。春になると、すらりと伸びた茎の先に、凛とした花を咲かせます。「ダッチアイリス」という別名でも呼ばれ、切り花としても人気のある花です。すっきりとした花姿は、飾らない美しさを感じさせてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オランダアヤメが象徴する意味</h2>
-    <p>オランダアヤメの花言葉は「メッセージ」です。すっと伸びた茎の先に凛と咲く花姿が、大切な想いをまっすぐ届ける様子に重ねられたことに由来すると言われています。「知恵」「使者」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オランダアヤメの魅力</h2>
-    <p>オランダアヤメの魅力は、細く伸びやかな葉と茎の先に咲く、シャープで洗練された花姿にあります。日本アヤメよりも花持ちがよく、花束やアレンジメントの主役としても重宝される存在です。3月5日生まれの方はもちろん、大切な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オランダアヤメは日当たりと水はけの良い場所を好み、球根を浅めに植えて育てるのがおすすめです。過湿を嫌うため、水の与えすぎには注意が必要です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月5日生まれの方はもちろん、大切な想いを届けたい贈り物としてもオランダアヤメは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">オランダアヤメはいつ頃咲きますか？</div>
-        <div class="faq-a">春に凛とした花を咲かせます。アヤメ科の球根植物で、切り花としても人気の高い花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オランダアヤメの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「メッセージ」という花言葉は、すっと伸びた茎の先に凛と咲く花姿が、想いをまっすぐ届ける様子に重ねられたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オランダアヤメはなぜ「ダッチアイリス」と呼ばれるのですか？</div>
-        <div class="faq-a">オランダで品種改良が盛んに行われ、洗練された花色や花形を持つ系統が数多く生み出されたことから、この名で呼ばれるようになったとされています。</div>
+        <div class="faq-a">春に見頃を迎えます。すらりと伸びた茎の先に、凛とした花を咲かせてくれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月5日、オランダアヤメが運ぶ、静かなメッセージ</h2>
+    <p>オランダアヤメの花は、多くを語らず、ただ静かに一輪、凛と咲きます。けれどその佇まいには、言葉以上に何かを伝えてくるような力強さがあります。飾らないまっすぐな姿が、見る人の心に自然と語りかけてくる――そんな印象から、オランダアヤメには「メッセージ」という花言葉が贈られてきたといわれています。伝えたい思いがあっても、うまく言葉にならないことは誰にでもあるものです。そんなとき、まずは静かに佇むこの花のように、一度立ち止まって気持ちを整理してみると、伝えたいことが自然とまとまっていくのかもしれません。また、この花が「ダッチアイリス」という別名を持つように、同じものでも呼び方は一つとは限りません。伝え方も一つに縛られる必要はないのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オランダアヤメの花言葉「メッセージ」の由来は？</div>
+        <div class="faq-a">多くを語らずとも凛とした姿で語りかけてくるような、飾らない花の佇まいに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>静かな佇まいにも、言葉以上に伝わる力があります。今日はその佇まいを見習って、飾らない一言を大切な人に届けてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オランダアヤメから始める小さな体験</h2>
+    <p>凛とした花を咲かせるオランダアヤメにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>凛とした花の姿をじっくり観察してみる</li>
+      <li>伝えたいことを一つ、手紙やメッセージにしてみる</li>
+      <li>別名を持つ花を調べて、呼び方の違いを知ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オランダアヤメは日本のアヤメと同じ花ですか？</div>
+        <div class="faq-a">いいえ、オランダアヤメは日本在来のアヤメとは異なる球根植物です。「ダッチアイリス」とも呼ばれ、切り花として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">伝えたい気持ちが少しまとまった今日は、六曜や吉日の暦もあわせて眺めてみませんか。開運カレンダーでは、その日の六曜や吉日もあわせて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月5日、凛とした一輪で静かに語りかけるオランダアヤメは、飾らない言葉の届け方を教えてくれる花です。</p>
     <ul>
-      <li>オランダアヤメは春に凛とした花を咲かせる、3月5日の誕生花</li>
-      <li>花言葉は「メッセージ」、まっすぐ伸びる花姿に由来する</li>
-      <li>シャープで洗練された花姿と花持ちの良さが魅力</li>
-      <li>水はけの良い場所で、過湿に注意しながら育てたい</li>
+      <li>オランダアヤメはアヤメ科の球根植物で、春に凛とした花を咲かせる</li>
+      <li>「ダッチアイリス」とも呼ばれ、切り花として親しまれている</li>
+      <li>花言葉は「メッセージ」。飾らない佇まいで語りかける印象に由来するといわれる</li>
+      <li>日本在来のアヤメとは異なる植物として扱われる</li>
     </ul>
   </section>
 

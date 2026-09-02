@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0727/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月27日の誕生花ホオズキの花言葉・特徴・魅力をわかりやすく解説。「笑顔」を象徴する提灯のようなオレンジ色の実の意味を紹介します。">
+  <meta name="description" content="7月27日の誕生花ホオズキの花言葉・特徴・魅力をわかりやすく解説。夏に白い小花を咲かせる、ナス科の花を紹介します。">
   <title>7月27日の誕生花はホオズキ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ホオズキはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に白い小花を咲かせ、秋にはオレンジ色の提灯状の実をつけます。ナス科の多年草です。"}},
-      {"@type":"Question","name":"ホオズキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"オレンジ色に色づく提灯のような実が灯りのように明るく親しみやすい様子から、思わずこぼれる笑顔を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ホオズキはお祭りとも関係がありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。東京・浅草寺の「ほおずき市」をはじめ、夏の風物詩として日本各地の祭りで親しまれています。"}}
+      {"@type":"Question","name":"ホオズキはどんな花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏に白い小花を咲かせます。ナス科の多年草で、素朴な印象を持つ花です。"}},
+      {"@type":"Question","name":"ホオズキの花言葉『笑顔』はどのようにして生まれたのですか？","acceptedAnswer":{"@type":"Answer","text":"素朴な白い小花と、後に実る愛らしい提灯形の実の両方が、見る人を思わずほころばせる魅力を持つことから、この花言葉と結びついてきたといわれています。"}},
+      {"@type":"Question","name":"ホオズキの実はいつ頃色づきますか？","acceptedAnswer":{"@type":"Answer","text":"実がオレンジ色に色づくのは秋です。7月に咲く白い小花とは異なる季節に育ちます。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 27 · 誕生花</span>
     <h1>7月27日の誕生花はホオズキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ホオズキは、ナス科の多年草で、夏に白い小花を咲かせたのち、秋にはオレンジ色の提灯状の実をつけ、素朴で郷愁を誘う花です。花言葉は「笑顔」。提灯のような実をつける懐かしい植物です。</p>
+    <p class="art-lead">小さな白い花の奥に、これから色づく提灯形の実の気配が感じられます。ホオズキは、夏の花から始まり秋の実へとつながる時間を持つ植物です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ホオズキ</dd>
     <dt>花言葉</dt><dd>笑顔</dd>
     <dt>科名</dt><dd>ナス科</dd>
-    <dt>見頃</dt><dd>夏</dd>
+    <dt>見頃</dt><dd>夏（実は秋）</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ホオズキとは</a></li>
-      <li><a href="#meaning">ホオズキが象徴する意味</a></li>
-      <li><a href="#charm">ホオズキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月27日の誕生花として親しまれるホオズキ</a></li>
+      <li><a href="#story">白い小花から実へ、ホオズキが結ぶ夏から秋への時間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ホオズキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ホオズキとは</h2>
-    <p>ホオズキは、ナス科の多年草で、7月27日の誕生花として知られています。夏に白い小花を咲かせたのち、秋にはオレンジ色の提灯状の実をつけ、素朴で郷愁を誘う花です。</p>
-  </section>
+    <h2>7月27日の誕生花として親しまれるホオズキ</h2>
+    <p>ホオズキは、ナス科の多年草です。夏に白い小花を咲かせ、素朴で郷愁を誘う印象を持つ植物として知られています。7月27日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ホオズキが象徴する意味</h2>
-    <p>ホオズキの花言葉は「笑顔」です。オレンジ色に色づく提灯のような実が灯りのように明るく親しみやすい様子から、思わずこぼれる笑顔を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ホオズキの魅力</h2>
-    <p>ホオズキの魅力は、オレンジ色に色づく提灯のような実の愛らしさと、夏祭りを彩る懐かしく素朴な佇まいにあります。夏祭りの「ほおずき市」など、日本の夏の風物詩として親しまれています。7月27日生まれの方はもちろん、笑顔を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ホオズキは日当たりから半日陰を好み、地下茎で増えるため広がりすぎに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月27日生まれの方はもちろん、笑顔を届けたい贈り物としてもホオズキは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホオズキはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に白い小花を咲かせ、秋にはオレンジ色の提灯状の実をつけます。ナス科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホオズキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">オレンジ色に色づく提灯のような実が灯りのように明るく親しみやすい様子から、思わずこぼれる笑顔を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホオズキはお祭りとも関係がありますか？</div>
-        <div class="faq-a">はい。東京・浅草寺の「ほおずき市」をはじめ、夏の風物詩として日本各地の祭りで親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ホオズキはどんな花を咲かせますか？</div>
+        <div class="faq-a">夏に白い小花を咲かせます。ナス科の多年草で、素朴な印象を持つ花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白い小花から実へ、ホオズキが結ぶ夏から秋への時間</h2>
+    <p>ホオズキの魅力は、夏に咲く白くて素朴な小花からは想像しにくいほど、その後の変化が大きいところにあります。花が咲き終えたあと萼が少しずつ膨らみながら袋状になり、秋を迎える頃にはオレンジ色に色づいた提灯のような実へと育っていきます。この一つの株の中で起こる大きな変化にこそ、ホオズキという植物のいちばんの見どころがあるといえるでしょう。素朴な白い小花も、後から実る愛らしい実も、どちらも見る人の顔をほころばせる力を持っていて、この魅力が『笑顔』という花言葉として受け継がれてきたようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ホオズキの花言葉『笑顔』はどのようにして生まれたのですか？</div>
+        <div class="faq-a">素朴な白い小花と、後に実る愛らしい提灯形の実の両方が、見る人を思わずほころばせる魅力を持つことから、この花言葉と結びついてきたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>白い小花は、やがて時間をかけてオレンジ色の実へと育っていきます。飾らない笑顔にも、見る人の心をゆっくりとほどいていく確かな力があります。今日は、気取らない自然な笑顔を、誰かに向けてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ホオズキから始める小さな体験</h2>
+    <p>夏に白い花を咲かせ、秋には実を結ぶホオズキにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い小花を探して観察してみる</li>
+      <li>秋に実る提灯状の実を思い浮かべてみる</li>
+      <li>素朴な笑顔を一つ、誰かに向けてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ホオズキの実はいつ頃色づきますか？</div>
+        <div class="faq-a">実がオレンジ色に色づくのは秋です。7月に咲く白い小花とは異なる季節に育ちます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">飾らない笑顔を届けたい今日は、ラッキープレイスや月九星もあわせて確認してみませんか。開運カレンダーでは、ラッキープレイスと月九星を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>白い花から始まり提灯形の実へと姿を変えるその一続きの時間が、笑顔という言葉の温かさを物語っている。</p>
     <ul>
-      <li>ホオズキは秋にオレンジ色の実をつける、7月27日の誕生花</li>
-      <li>花言葉は「笑顔」、灯りのように明るい実の様子に由来する</li>
-      <li>提灯のような実の愛らしさが魅力</li>
-      <li>日当たりから半日陰で、地下茎の広がりに注意が必要</li>
+      <li>ホオズキは夏に白い小花を咲かせる、ナス科の多年草で、7月27日の誕生花</li>
+      <li>花言葉は「笑顔」。素朴な花と愛らしい実の両方が人をほころばせる魅力と結びついてきたとされる</li>
+      <li>実がオレンジ色に色づくのは秋で、開花期の夏とは異なる</li>
+      <li>素朴で郷愁を誘う印象が魅力</li>
     </ul>
   </section>
 

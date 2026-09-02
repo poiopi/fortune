@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バンダはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな青紫系の花を咲かせます。ラン科の洋ランです。"}},
-      {"@type":"Question","name":"バンダの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな青紫系の花が軽やかに房を連ねて咲く姿が、軽快な明るさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"バンダはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな花色を活かして、明るいリビングなどの目を引く場所に飾るのがおすすめです。"}}
+      {"@type":"Question","name":"バンダの和名は何ですか？","acceptedAnswer":{"@type":"Answer","text":"和名は「ヒスイラン」と呼ばれています。東南アジア原産のラン科の洋ランです。"}},
+      {"@type":"Question","name":"バンダの花言葉「軽快」の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな青紫系の花が軽やかに房を連ねて咲く姿が、軽快な明るさを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 13 · 誕生花</span>
     <h1>10月13日の誕生花はバンダ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バンダは、ラン科の洋ランで、鮮やかな青紫系の花を咲かせる、華やかで気品ある印象を持つ花です。花言葉は「軽快」。華やかで気品ある花です。</p>
+    <p class="art-lead">東南アジアの熱気を纏うように、鮮やかな青紫色の花を咲かせる植物がある。和名は「ヒスイラン」。宝石さながらの存在感を放つこの花が、10月13日の誕生花バンダだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バンダとは</a></li>
-      <li><a href="#meaning">バンダが象徴する意味</a></li>
-      <li><a href="#charm">バンダの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月13日の誕生花として親しまれるバンダ</a></li>
+      <li><a href="#story">宝石のような青紫が放つ、軽やかな存在感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バンダから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バンダとは</h2>
-    <p>バンダは、ラン科の洋ランで、10月13日の誕生花として知られています。鮮やかな青紫系の花を咲かせる、華やかで気品ある印象を持つ花です。</p>
-  </section>
+    <h2>10月13日の誕生花として親しまれるバンダ</h2>
+    <p>バンダは、ラン科の洋ラン。和名は「ヒスイラン」と呼ばれ、東南アジア原産の植物として知られている。土に根を張るのではなく、気根と呼ばれる根を空気中に伸ばして育つ、ユニークな性質を持つ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バンダが象徴する意味</h2>
-    <p>バンダの花言葉は「軽快」です。鮮やかな青紫系の花が軽やかに房を連ねて咲く姿が、軽快な明るさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バンダの魅力</h2>
-    <p>バンダの魅力は、青紫系の花が持つ華やかで気品ある美しさと、房状に連なって咲く洋ランならではの存在感にあります。10月13日生まれの方はもちろん、軽やかな明るさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バンダは明るい日陰を好み、風通しよく乾燥気味に管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月13日生まれの方はもちろん、軽やかな明るさを伝えたい贈り物としてもバンダは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バンダはいつ頃咲きますか？</div>
-        <div class="faq-a">鮮やかな青紫系の花を咲かせます。ラン科の洋ランです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バンダの花言葉の由来は何ですか？</div>
-        <div class="faq-a">鮮やかな青紫系の花が軽やかに房を連ねて咲く姿が、軽快な明るさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バンダはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">鮮やかな花色を活かして、明るいリビングなどの目を引く場所に飾るのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">バンダの和名は何ですか？</div>
+        <div class="faq-a">和名は「ヒスイラン」と呼ばれています。東南アジア原産のラン科の洋ランです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>宝石のような青紫が放つ、軽やかな存在感</h2>
+    <p>バンダの花色は、宝石のヒスイにたとえられるほど鮮やかな青紫色をしている。しかしその鮮やかさは、重厚で威圧的な印象ではなく、どこか軽やかで爽やかな空気を纏っている。気根を空中に伸ばしてたくましく育つ生命力も、この花の身軽さを裏付けているようだ。しっかりとした個性を持ちながらも、決して重く見せない——そのバランス感覚が、花言葉「軽快」の由来になっていると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バンダの花言葉「軽快」の由来は何ですか？</div>
+        <div class="faq-a">鮮やかな青紫系の花が軽やかに房を連ねて咲く姿が、軽快な明るさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>力を入れすぎず、身軽な気持ちで一日を過ごしてみる。バンダの鮮やかな青紫色は、そんな軽やかさを思い出させてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バンダから始める小さな体験</h2>
+    <p>鮮やかな青紫で軽やかに咲くバンダにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな青紫系の花をじっくり観察してみる</li>
+      <li>気負わず身軽に過ごせる時間を今日一つ作ってみる</li>
+      <li>気根を伸ばしてたくましく育つ姿を想像してみる</li>
+    </ul>
+
+    <p class="cta-lead">軽やかな気持ちで過ごしたい日は、今年の年九星もチェックしてみませんか。開運カレンダーでは、年九星や月九星も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>宝石のヒスイを思わせるバンダの青紫色は、軽やかでたくましい生命力を映し出す。</p>
     <ul>
-      <li>バンダは青紫系の花を咲かせる、10月13日の誕生花</li>
-      <li>花言葉は「軽快」、軽やかに房を連ねて咲く花姿に由来する</li>
-      <li>房状に連なって咲く洋ランならではの存在感が魅力</li>
-      <li>明るい日陰を好み、風通しよく乾燥気味に管理するとよく育ちます</li>
+      <li>バンダは鮮やかな青紫系の花を咲かせる、ラン科の洋ランで、10月13日の誕生花</li>
+      <li>花言葉は「軽快」。軽やかに房を連ねて咲く花姿に由来すると言われる</li>
+      <li>和名は「ヒスイラン」。気根を伸ばして育つ東南アジア原産の植物</li>
+      <li>気負わず軽やかに毎日を楽しみたい日に寄り添う花</li>
     </ul>
   </section>
 

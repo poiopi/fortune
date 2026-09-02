@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0304/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月4日の誕生花ヒヤシンス（ピンク）の花言葉・特徴・魅力をわかりやすく解説。「勝負」を象徴する香り高い花の意味を紹介します。">
+  <meta name="description" content="3月4日の誕生花ヒヤシンス（ピンク）の花言葉・特徴・魅力をわかりやすく解説。「勝負」を象徴する、香り高いピンクの花が穂状に咲く花の意味を紹介します。">
   <title>3月4日の誕生花はヒヤシンス（ピンク）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒヤシンス（ピンク）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に香りのよいピンクの花を穂状に咲かせます。キジカクシ科の球根植物で、水栽培でも人気の花です。"}},
-      {"@type":"Question","name":"ヒヤシンス（ピンク）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「勝負」という花言葉は、ピンクが持つ活発で情熱的な印象が、挑戦への意気込みと結びつけられたことに由来すると言われています。"}},
-      {"@type":"Question","name":"ヒヤシンスは色によって花言葉が違うのですか？","acceptedAnswer":{"@type":"Answer","text":"はい。ヒヤシンス全体には「初々しい愛」「スポーツ」といった花言葉があり、さらに色ごとに異なる花言葉が添えられているのが特徴です。"}}
+      {"@type":"Question","name":"ヒヤシンス（ピンク）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に見頃を迎えます。香りのよいピンクの花を穂状に連ねて咲かせ、春の訪れを告げてくれます。"}},
+      {"@type":"Question","name":"ヒヤシンス（ピンク）の花言葉「勝負」の由来は？","acceptedAnswer":{"@type":"Answer","text":"穂状に連なって凛と咲く花の姿と、強く香る存在感に由来するといわれています。自分自身の迷いに挑む気持ちを象徴する言葉ともされます。"}},
+      {"@type":"Question","name":"ヒヤシンスは色によって花言葉が違いますか？","acceptedAnswer":{"@type":"Answer","text":"はい、色ごとに異なる花言葉が伝えられているといわれています。ピンクの花言葉は「勝負」とされ、他の色とは印象の異なる言葉が添えられています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 4 · 誕生花</span>
     <h1>3月4日の誕生花はヒヤシンス（ピンク）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒヤシンス（ピンク）は、キジカクシ科の球根植物で、春に香りのよいピンクの花を穂状に咲かせる3月4日の誕生花です。花言葉は「勝負」。華やかで力強い印象の花です。</p>
+    <p class="art-lead">香り高いピンクの花を穂のように連ねて咲かせるヒヤシンス（ピンク）。3月4日の誕生花に選ばれたこの花は、鮮やかな色合いで気持ちを引き締めてくれます。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ヒヤシンス（ピンク）</dd>
     <dt>花言葉</dt><dd>勝負</dd>
     <dt>科名</dt><dd>キジカクシ科</dd>
-    <dt>見頃</dt><dd>春</dd>
+    <dt>見頃</dt><dd>早春</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒヤシンス（ピンク）とは</a></li>
-      <li><a href="#meaning">ヒヤシンス（ピンク）が象徴する意味</a></li>
-      <li><a href="#charm">ヒヤシンス（ピンク）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">穂状に連なる、ヒヤシンス（ピンク）の香りと彩り</a></li>
+      <li><a href="#story">3月4日、ヒヤシンス（ピンク）が示す、挑む気持ちの色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒヤシンス（ピンク）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒヤシンス（ピンク）とは</h2>
-    <p>ヒヤシンス（ピンク）は、キジカクシ科の球根植物で、3月4日の誕生花として知られています。水栽培でも楽しめる花として広く知られ、太い花茎に小花が密集して咲く穂状の花姿と、部屋いっぱいに広がる甘い香りが特徴です。</p>
-  </section>
+    <h2>穂状に連なる、ヒヤシンス（ピンク）の香りと彩り</h2>
+    <p>ヒヤシンス（ピンク）は、キジカクシ科の球根植物です。春になると、香りのよいピンクの花を穂のように連ねて咲かせます。同じ種であるヒヤシンスは、早春に香り高い花を穂状に咲かせ、春の訪れを告げる華やかな花として古くから親しまれてきました。中でもピンクの花は、可憐さと華やかさをあわせ持つ色合いとして人気があります。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒヤシンス（ピンク）が象徴する意味</h2>
-    <p>ヒヤシンス（ピンク）の花言葉は「勝負」です。ヒヤシンス全体には「初々しい愛」「スポーツ」といった花言葉もあり、色によって意味が異なるとされています。ピンクの持つ活発で情熱的な印象が、勝負への意気込みと結びつけられたと考えられています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒヤシンス（ピンク）の魅力</h2>
-    <p>ヒヤシンス（ピンク）の魅力は、なんといってもその華やかな香りと、密集して咲く花の存在感です。水栽培なら室内でも手軽に開花の過程を楽しむことができ、球根から芽が伸び、蕾がふくらんでいく様子は春を待つ楽しみのひとつです。3月4日生まれの方はもちろん、新しい挑戦を応援する贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒヤシンス（ピンク）は日当たりの良い場所を好み、水栽培の場合は根が浸る程度の水を保ちながら育てるのがおすすめです。花が終わった後は花茎を切り、葉を残しておくことで球根に栄養を蓄えられます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月4日生まれの方はもちろん、これから何かに挑む人への贈り物としてもヒヤシンス（ピンク）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンス（ピンク）はいつ頃咲きますか？</div>
-        <div class="faq-a">春に香りのよいピンクの花を穂状に咲かせます。キジカクシ科の球根植物で、水栽培でも人気の花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンス（ピンク）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「勝負」という花言葉は、ピンクが持つ活発で情熱的な印象が、挑戦への意気込みと結びつけられたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンスは色によって花言葉が違うのですか？</div>
-        <div class="faq-a">はい。ヒヤシンス全体には「初々しい愛」「スポーツ」といった花言葉があり、さらに色ごとに異なる花言葉が添えられているのが特徴です。</div>
+        <div class="faq-a">早春に見頃を迎えます。香りのよいピンクの花を穂状に連ねて咲かせ、春の訪れを告げてくれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月4日、ヒヤシンス（ピンク）が示す、挑む気持ちの色</h2>
+    <p>穂状に連なって咲くヒヤシンス（ピンク）の花を眺めていると、一つひとつの花が競うように背筋を伸ばして並んでいるように見えることがあります。凛としたピンクの連なりと、あたりに漂う強い香り――その存在感のある咲き方から、ヒヤシンス（ピンク）には「勝負」という花言葉が贈られてきたといわれています。ここでいう勝負とは、誰かを打ち負かすことだけを指すのではなく、自分自身の中にある迷いに挑む気持ちも含まれているのかもしれません。ピンク色が持つ華やかさは、人前に立つ勇気や、一歩を踏み出す高揚感を後押ししてくれるようです。3月に入り、新しい環境への一歩を意識し始めるこの時期、香り高いピンクの花に背中を押してもらうのも良さそうです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンス（ピンク）の花言葉「勝負」の由来は？</div>
+        <div class="faq-a">穂状に連なって凛と咲く花の姿と、強く香る存在感に由来するといわれています。自分自身の迷いに挑む気持ちを象徴する言葉ともされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>挑みたい気持ちがあるなら、今日はその一歩を後押ししてもらいましょう。ピンクの香りが、静かに背中を押してくれるはずです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒヤシンス（ピンク）から始める小さな体験</h2>
+    <p>香り高いピンクの花を咲かせるヒヤシンス（ピンク）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>ピンクのヒヤシンスの香りを確かめてみる</li>
+      <li>今日挑みたいことを一つ決めてみる</li>
+      <li>ピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒヤシンスは色によって花言葉が違いますか？</div>
+        <div class="faq-a">はい、色ごとに異なる花言葉が伝えられているといわれています。ピンクの花言葉は「勝負」とされ、他の色とは印象の異なる言葉が添えられています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">挑む気持ちが芽生えた今日は、六曜や月九星も確認してみませんか。開運カレンダーでは、その日の六曜や月九星もあわせて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月4日、香り高いピンクの花を穂状に連ねるヒヤシンス（ピンク）は、自分自身に挑む勇気を後押ししてくれる花です。</p>
     <ul>
-      <li>ヒヤシンス（ピンク）は春に香り高い花を穂状に咲かせる、3月4日の誕生花</li>
-      <li>花言葉は「勝負」、ピンクの活発で情熱的な印象に由来する</li>
-      <li>甘い香りと密集して咲く華やかな花姿が魅力</li>
-      <li>水栽培でも育てやすく、花後は葉を残して球根を育てたい</li>
+      <li>ヒヤシンス（ピンク）はキジカクシ科の球根植物で、早春に香り高いピンクの花を穂状に咲かせる</li>
+      <li>凛とした咲き方と強い香りが、挑む気持ちを連想させる</li>
+      <li>花言葉は「勝負」。自分自身の迷いに挑む気持ちを象徴するともいわれる</li>
+      <li>花の色によって異なる花言葉が伝えられている</li>
     </ul>
   </section>
 

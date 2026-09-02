@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0820/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月20日の誕生花ヒソップの花言葉・特徴・魅力をわかりやすく解説。「きれい好き」を象徴する青紫色の花穂の意味を紹介します。">
+  <meta name="description" content="8月20日の誕生花ヒソップの花言葉・特徴・魅力をわかりやすく解説。すっと伸びる青紫色の花穂が誘う、身の回りを整えたくなる清々しさの意味を紹介します。">
   <title>8月20日の誕生花はヒソップ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒソップはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に青紫色の花穂を咲かせます。シソ科の多年草のハーブです。"}},
-      {"@type":"Question","name":"ヒソップの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"古くから浄めのハーブとして用いられてきた清らかな性質が、清潔で几帳面な印象を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヒソップは何に使われるハーブですか？","acceptedAnswer":{"@type":"Answer","text":"料理の香り付けやハーブティー、ポプリなどに幅広く利用されています。古くは浄めの植物としても用いられてきました。"}}
+      {"@type":"Question","name":"ヒソップはどんな花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏に青紫色の花穂を咲かせます。シソ科の多年草で、古くからハーブとして親しまれています。"}},
+      {"@type":"Question","name":"ヒソップの花言葉『きれい好き』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"乱れなく連なって咲く青紫色の花穂の姿が、身の回りを整えたくなる清々しさを象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 20 · 誕生花</span>
     <h1>8月20日の誕生花はヒソップ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒソップは、シソ科の多年草で、夏になると青紫色の花穂を咲かせる、清潔感のある印象を持つハーブです。花言葉は「きれい好き」。清潔感のある花です。</p>
+    <p class="art-lead">青紫の穂が、すっと背筋を伸ばすように立ち並ぶ。その清々しい佇まいこそ、夏のハーブ・ヒソップならではの持ち味だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒソップとは</a></li>
-      <li><a href="#meaning">ヒソップが象徴する意味</a></li>
-      <li><a href="#charm">ヒソップの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月20日の誕生花として親しまれるヒソップ</a></li>
+      <li><a href="#story">青紫の穂が呼び覚ます、身の回りを整えたい気持ち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒソップから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒソップとは</h2>
-    <p>ヒソップは、シソ科の多年草で、8月20日の誕生花として知られています。夏になると青紫色の花穂を咲かせる、清潔感のある印象を持つハーブです。</p>
-  </section>
+    <h2>8月20日の誕生花として親しまれるヒソップ</h2>
+    <p>ヒソップは、シソ科の多年草です。夏になると、青紫色の花穂を咲かせます。古くからハーブとして親しまれてきた植物で、すっと伸びる穂状の花姿が印象的です。この清々しい花が、8月20日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒソップが象徴する意味</h2>
-    <p>ヒソップの花言葉は「きれい好き」です。古くから浄めのハーブとして用いられてきた清らかな性質が、清潔で几帳面な印象を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒソップの魅力</h2>
-    <p>ヒソップの魅力は、すらりと伸びた茎に沿って咲く青紫色の花穂の涼やかさと、清涼感のある香りにあります。ハーブとして料理や香り付けにも活用されています。8月20日生まれの方はもちろん、清らかな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒソップは日当たりを好み、乾燥に強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月20日生まれの方はもちろん、清らかな想いを伝えたい贈り物としてもヒソップは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒソップはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に青紫色の花穂を咲かせます。シソ科の多年草のハーブです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒソップの花言葉の由来は何ですか？</div>
-        <div class="faq-a">古くから浄めのハーブとして用いられてきた清らかな性質が、清潔で几帳面な印象を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒソップは何に使われるハーブですか？</div>
-        <div class="faq-a">料理の香り付けやハーブティー、ポプリなどに幅広く利用されています。古くは浄めの植物としても用いられてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヒソップはどんな花を咲かせますか？</div>
+        <div class="faq-a">夏に青紫色の花穂を咲かせます。シソ科の多年草で、古くからハーブとして親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>青紫の穂が呼び覚ます、身の回りを整えたい気持ち</h2>
+    <p>ヒソップの花は、一つ一つは小さいながら、茎に沿ってまっすぐに連なり、穂の形にまとまって咲く。その並び方には乱れがなく、見ているだけで背筋がすっと伸びるような清々しさがある。ハーブとして暮らしに取り入れられてきたのも、この整った佇まいと無関係ではないだろう。花言葉「きれい好き」は、この乱れなく連なって咲く青紫色の花穂の姿から生まれたと言われている。それは几帳面さを人に強いる言葉ではなく、身の回りを少しだけ整えたくなる、穏やかな気持ちに近いものだ。すっと立ち並ぶ花穂を眺めていると、散らかった部屋の片隅がふと気になってくる、そんな不思議な力を持っている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒソップの花言葉『きれい好き』にはどんな由来がありますか？</div>
+        <div class="faq-a">乱れなく連なって咲く青紫色の花穂の姿が、身の回りを整えたくなる清々しさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>すっと伸びる花穂を見ていると身の回りを整えたくなるので、今日はその気持ちに素直に従って、目についた小さな乱れを一つだけ直してみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒソップから始める小さな体験</h2>
+    <p>青紫色の花穂を咲かせる、夏のハーブにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>青紫色の花穂をじっくり観察してみる</li>
+      <li>ハーブとしての使われ方を調べてみる</li>
+      <li>身の回りを一つきれいに整えてみる</li>
+    </ul>
+
+    <p class="cta-lead">身の回りを整えたい一日は、今日の吉日もあわせて確認してみませんか。開運カレンダーでは、吉日とおすすめの行動を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>背筋の伸びた花穂を見ていると、自然と部屋の乱れが気になってくる。</p>
     <ul>
-      <li>ヒソップは夏に青紫色の花穂を咲かせる、8月20日の誕生花</li>
-      <li>花言葉は「きれい好き」、清らかな性質に由来する</li>
-      <li>涼やかな花穂と清涼感のある香りが魅力</li>
-      <li>日当たりを好み、乾燥に強い</li>
+      <li>ヒソップは夏に青紫色の花穂を咲かせる、シソ科の多年草で、8月20日の誕生花</li>
+      <li>花言葉は「きれい好き」。乱れなく連なる花穂の姿に由来すると言われる</li>
+      <li>古くからハーブとして暮らしに親しまれてきた</li>
+      <li>すっと伸びる整った花姿が清々しい印象を与える</li>
     </ul>
   </section>
 

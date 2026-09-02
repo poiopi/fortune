@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0416/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月16日の誕生花ライラックの花言葉・特徴・魅力をわかりやすく解説。「淡い恋心」を象徴する香り高い花木の意味を紹介します。">
+  <meta name="description" content="4月16日の誕生花ライラックの花言葉・特徴・魅力をわかりやすく解説。房状に咲く紫や白の花が甘い香りを漂わせる「淡い恋心」を象徴する花木の意味を紹介します。">
   <title>4月16日の誕生花はライラック｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ライラックはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に紫や白の小花を房状に咲かせます。モクセイ科の落葉低木で、甘い香りが特徴です。"}},
-      {"@type":"Question","name":"ライラックの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「淡い恋心」という花言葉は、優しい香りとほのかな色合いで咲く花が、控えめな恋心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ライラックはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりが良く水はけの良い場所を好みます。寒さには強いものの、夏の高温多湿はやや苦手とします。"}}
+      {"@type":"Question","name":"ライラックはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に紫や白の小花を房状に咲かせ、甘い香りを漂わせます。モクセイ科の落葉低木で、優しく上品な印象の花木として親しまれています。"}},
+      {"@type":"Question","name":"ライラックの花言葉「淡い恋心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が集まって房になり、遠くまで甘い香りを届ける様子が、まだ言葉にできない淡い恋の気持ちを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ライラックの香りにはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"甘く上品な香りが特徴で、香水の香料としても使われることがあります。香りの感じ方には個人差があります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 16 · 誕生花</span>
     <h1>4月16日の誕生花はライラック<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ライラックは、モクセイ科の落葉低木で、春に紫や白の小花を房状に咲かせる4月16日の誕生花です。花言葉は「淡い恋心」。優しく上品な印象の花木です。</p>
+    <p class="art-lead">4月16日、風がふと甘い香りを運んでくる頃。紫や白の小花を房状に咲かせるライラックは、言葉にする前のほのかな気持ちをそっと代弁してくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ライラックとは</a></li>
-      <li><a href="#meaning">ライラックが象徴する意味</a></li>
-      <li><a href="#charm">ライラックの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月16日の誕生花として親しまれるライラック</a></li>
+      <li><a href="#story">甘い香りに宿る、ライラックの淡い恋心</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ライラックから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ライラックとは</h2>
-    <p>ライラックは、モクセイ科の落葉低木で、4月16日の誕生花として知られています。小さな花が円錐状に密集して咲き、甘く優しい香りを漂わせることから、ヨーロッパをはじめ世界中で春を代表する花木として愛されています。</p>
-  </section>
+    <h2>4月16日の誕生花として親しまれるライラック</h2>
+    <p>どこからともなく漂ってくる甘い香りに、ふと足を止めたことはないでしょうか。ライラックは、モクセイ科の落葉低木です。春になると紫や白の小花を房状にたくさん咲かせ、その香りは花よりも先に人の心へ届くことがあります。優しく上品な印象を持つこの花木は、4月16日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ライラックが象徴する意味</h2>
-    <p>ライラックの花言葉は「淡い恋心」です。優しい香りとともにほのかな色合いで咲く花の姿が、まだ打ち明けられずにいる控えめな恋心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ライラックの魅力</h2>
-    <p>ライラックの魅力は、紫や白の花房が織りなす優雅な色合いと、周囲に広がる甘く上品な香りにあります。花束や香水の題材としても古くから親しまれ、五月祭など欧米の春の行事とも縁の深い花です。4月16日生まれの方はもちろん、控えめな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ライラックは日当たりの良い場所を好み、寒さに強い一方で夏の高温多湿はやや苦手とします。水はけの良い土壌で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月16日生まれの方はもちろん、控えめな想いを届けたい贈り物としてもライラックは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ライラックはいつ頃咲きますか？</div>
-        <div class="faq-a">春に紫や白の小花を房状に咲かせます。モクセイ科の落葉低木で、甘い香りが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ライラックの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「淡い恋心」という花言葉は、優しい香りとほのかな色合いで咲く花が、控えめな恋心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ライラックはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりが良く水はけの良い場所を好みます。寒さには強いものの、夏の高温多湿はやや苦手とします。</div>
+        <div class="faq-a">春に紫や白の小花を房状に咲かせ、甘い香りを漂わせます。モクセイ科の落葉低木で、優しく上品な印象の花木として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>甘い香りに宿る、ライラックの淡い恋心</h2>
+    <p>ライラックの香りは、姿を見つける前に届くことが少なくありません。風向きがふと変わった瞬間、どこかで咲いているらしいと気づかされる。そんな、はっきりとした形を持たないまま伝わってくる感覚が、この花の魅力の一つです。房になって咲く一つひとつの小花は決して大きくはなく、遠目には全体の輪郭で存在を示します。まだ言葉になりきらない、輪郭のぼんやりとした気持ちに近いところがあるのかもしれません。相手に気づかれるかどうかもわからないまま、それでも確かに香りを漂わせ続けるライラックには、「淡い恋心」という花言葉が贈られているといわれています。想いの成就を約束する言葉ではなく、まだ形になる前の、ふわりとした気持ちそのものを表しているのでしょう。暮らしの中では、香水や庭木としても長く親しまれてきました。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ライラックの花言葉「淡い恋心」の由来は？</div>
+        <div class="faq-a">小さな花が集まって房になり、遠くまで甘い香りを届ける様子が、まだ言葉にできない淡い恋の気持ちを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>形になりきらない気持ちを、無理に言葉へ変換しなくていい日もあります。ただ胸の奥がふわりと温かくなる、その感覚を今日は静かに味わってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ライラックから始める小さな体験</h2>
+    <p>房状に咲いて甘い香りを漂わせるライラックにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>房状に咲く花の香りを確かめてみる</li>
+      <li>気になっている人のことを、そっと思い浮かべてみる</li>
+      <li>紫や白のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ライラックの香りにはどんな特徴がありますか？</div>
+        <div class="faq-a">甘く上品な香りが特徴で、香水の香料としても使われることがあります。香りの感じ方には個人差があります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">胸がふわりと温かくなる今日は、ラッキーカラーや六曜も参考にしてみませんか。開運カレンダーでは、その日のラッキーカラーと六曜をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月16日、姿より先に甘い香りで存在を伝えるライラックは、言葉になる前の気持ちをそのまま抱きしめてもいいのだと教えてくれる花です。</p>
     <ul>
-      <li>ライラックは春に紫や白の花房を咲かせる、4月16日の誕生花</li>
-      <li>花言葉は「淡い恋心」、控えめな色合いと香りに由来する</li>
-      <li>優雅な花色と甘く上品な香りが魅力</li>
-      <li>日当たりが良く、水はけの良い場所で育てたい</li>
+      <li>ライラックはモクセイ科の落葉低木で、春に紫や白の小花を房状に咲かせる</li>
+      <li>甘い香りを漂わせる、優しく上品な印象の花木として親しまれている</li>
+      <li>花言葉は「淡い恋心」。香りが遠くまで届く様子に由来するといわれる</li>
+      <li>淡い恋心は、まだ形になりきらないほのかな気持ちを表す言葉ともいえる</li>
     </ul>
   </section>
 

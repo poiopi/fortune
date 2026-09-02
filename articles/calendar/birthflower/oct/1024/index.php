@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"パボニアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"独特な形の赤い花を咲かせます。アオイ科の常緑低木です。"}},
-      {"@type":"Question","name":"パボニアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"独特な形の赤い花がゆったりと開く姿が、心が安らぐ安堵の気持ちを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"パボニアはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"独特な形の赤い花を活かして、個性的な観葉植物として室内に飾るのがおすすめです。"}}
+      {"@type":"Question","name":"パボニアはどんな花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"独特な形の花びらを持つ、赤い花を咲かせるアオイ科の常緑低木です。"}},
+      {"@type":"Question","name":"パボニアはどんな理由で「安堵」と呼ばれていますか？","acceptedAnswer":{"@type":"Answer","text":"独特な形の赤い花がゆったりと開く姿が、心が安らぐ安堵の気持ちを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 24 · 誕生花</span>
     <h1>10月24日の誕生花はパボニア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">パボニアは、アオイ科の常緑低木で、独特な形の赤い花を咲かせる、個性的で穏やかな印象を持つ花です。花言葉は「安堵」。個性的で穏やかな花です。</p>
+    <p class="art-lead">見たことのない形の花に出会うと、記憶に残りやすい。独特な形の赤い花を咲かせるパボニアも、そんな10月24日の誕生花の一つ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">パボニアとは</a></li>
-      <li><a href="#meaning">パボニアが象徴する意味</a></li>
-      <li><a href="#charm">パボニアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月24日の誕生花として親しまれるパボニア</a></li>
+      <li><a href="#story">独特な形の赤い花が運ぶ、ほっとする安堵の時間</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、パボニアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>パボニアとは</h2>
-    <p>パボニアは、アオイ科の常緑低木で、10月24日の誕生花として知られています。独特な形の赤い花を咲かせる、個性的で穏やかな印象を持つ花です。</p>
-  </section>
+    <h2>10月24日の誕生花として親しまれるパボニア</h2>
+    <p>パボニアは、アオイ科の常緑低木。10月24日の誕生花として、この時期に親しまれている。独特な形をした赤い花を咲かせるのが特徴で、その花姿は他のアオイ科の花とは一線を画す印象を与える。一年を通して緑の葉を保つ丈夫さも、この植物の魅力の一つだ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>パボニアが象徴する意味</h2>
-    <p>パボニアの花言葉は「安堵」です。独特な形の赤い花がゆったりと開く姿が、心が安らぐ安堵の気持ちを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>パボニアの魅力</h2>
-    <p>パボニアの魅力は、独特な形の赤い花が持つ個性的で穏やかな美しさと、赤い花びらがゆったりと開く柔らかな表情にあります。10月24日生まれの方はもちろん、安らぎの気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>パボニアは日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月24日生まれの方はもちろん、安らぎの気持ちを伝えたい贈り物としてもパボニアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パボニアはいつ頃咲きますか？</div>
-        <div class="faq-a">独特な形の赤い花を咲かせます。アオイ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パボニアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">独特な形の赤い花がゆったりと開く姿が、心が安らぐ安堵の気持ちを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パボニアはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">独特な形の赤い花を活かして、個性的な観葉植物として室内に飾るのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">パボニアはどんな花を咲かせますか？</div>
+        <div class="faq-a">独特な形の花びらを持つ、赤い花を咲かせるアオイ科の常緑低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>独特な形の赤い花が運ぶ、ほっとする安堵の時間</h2>
+    <p>パボニアの花をよく見ると、独特な形をした花びらが、まるで肩の力を抜いてくつろいでいるかのような表情を見せている。緊張感のある咲き方をする花が多い中で、この佇まいはどこかリラックスした印象を与える。肩の力を抜いたように緩やかに開くその花姿が、ほっとひと息つける安堵という花言葉を思わせると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">パボニアはどんな理由で「安堵」と呼ばれていますか？</div>
+        <div class="faq-a">独特な形の赤い花がゆったりと開く姿が、心が安らぐ安堵の気持ちを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今日は、肩の力をふっと抜いて過ごしてみたい。花びらをゆったりと開くパボニアの姿が、その先にこそ本当の安心があることを教えてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、パボニアから始める小さな体験</h2>
+    <p>花びらをゆったりと開くパボニアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>独特な形の花をじっくり観察してみる</li>
+      <li>深呼吸をして肩の力を抜いてみる</li>
+      <li>赤色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">心を落ち着けたい夜は、今日の月齢も確認してみませんか。開運カレンダーでは、日々の月齢や月相も届けています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>他とは違う開き方をする花びらが、くつろぎという新しい美しさの形を見せてくれる。</p>
     <ul>
-      <li>パボニアは独特な形の赤い花を咲かせる、10月24日の誕生花</li>
-      <li>花言葉は「安堵」、ゆったりと開く花姿に由来する</li>
-      <li>赤い花びらがゆったりと開く柔らかな表情が魅力</li>
-      <li>日当たりの良い場所を好み、剪定を行いながら管理するとよく育ちます</li>
+      <li>パボニアは独特な形の赤い花を咲かせる、アオイ科の常緑低木で、10月24日の誕生花</li>
+      <li>花言葉は「安堵」。ゆったりとくつろぐような花の佇まいに由来すると言われる</li>
+      <li>一年を通して緑の葉を保つ丈夫さを持つ</li>
+      <li>ほっと肩の力を抜きたい日に寄り添う花</li>
     </ul>
   </section>
 

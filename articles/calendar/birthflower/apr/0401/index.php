@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0401/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月1日の誕生花クロッカス（黄）の花言葉・特徴・魅力をわかりやすく解説。「切望」を象徴する春を告げる花の意味を紹介します。">
+  <meta name="description" content="4月1日の誕生花クロッカス（黄）の花言葉・特徴・魅力をわかりやすく解説。「切望」を象徴する早春に地面から顔を出す黄色い花の意味を紹介します。">
   <title>4月1日の誕生花はクロッカス（黄）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"クロッカス（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、雪解けの頃から鮮やかな黄色の花を咲かせます。アヤメ科の球根植物で、春を告げる花として親しまれています。"}},
-      {"@type":"Question","name":"クロッカス（黄）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「切望」という花言葉は、長い冬の終わりを待ちわびるように、いち早く花を咲かせる姿に由来すると言われています。"}},
-      {"@type":"Question","name":"クロッカスにはどんな色の花がありますか？","acceptedAnswer":{"@type":"Answer","text":"黄色のほか、紫や白の花を咲かせる品種もあります。色によって花言葉が異なる場合があります。"}}
+      {"@type":"Question","name":"クロッカス（黄）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"まだ肌寒さの残る早春、地面近くから顔を出すようにして鮮やかな黄色の花を咲かせます。アヤメ科の球根植物で、春の訪れをいち早く告げる花として親しまれています。"}},
+      {"@type":"Question","name":"クロッカス（黄）の花言葉「切望」の由来は？","acceptedAnswer":{"@type":"Answer","text":"冬の名残がある早春に、他の花に先駆けて地面から顔を出し花を咲かせる姿が、待ち望んでいたものへ真っ先に手を伸ばす様子に重ねられたことに由来するといわれています。"}},
+      {"@type":"Question","name":"クロッカスにはどんな色の花がありますか？","acceptedAnswer":{"@type":"Answer","text":"黄色のほか、紫や白の花を咲かせる品種もあり、色によって花言葉が異なります。クロッカス（黄）の花言葉は「切望」です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 1 · 誕生花</span>
     <h1>4月1日の誕生花はクロッカス（黄）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">クロッカス（黄）は、アヤメ科の球根植物で、早春に鮮やかな黄色の花を咲かせる4月1日の誕生花です。花言葉は「切望」。春の訪れを真っ先に告げる、待ち焦がれる想いを感じさせる花です。</p>
+    <p class="art-lead">4月がはじまる日、4月1日。まだ肌寒さの残る地面から真っ先に顔を出す黄色い花、クロッカス（黄）は、待ち望んでいたものへ手を伸ばす瞬間の高鳴りを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">クロッカス（黄）とは</a></li>
-      <li><a href="#meaning">クロッカス（黄）が象徴する意味</a></li>
-      <li><a href="#charm">クロッカス（黄）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月1日の誕生花として親しまれるクロッカス（黄）</a></li>
+      <li><a href="#story">黄色が語る、クロッカス（黄）の切望</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、クロッカス（黄）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>クロッカス（黄）とは</h2>
-    <p>クロッカス（黄）は、アヤメ科の球根植物で、4月1日の誕生花として知られています。地表すれすれに小さな花を咲かせ、まだ肌寒さの残る早春にいち早く彩りを届けることから、春を告げる花として世界中で親しまれています。黄色い花びらの中心に見えるオレンジ色の雌しべも印象的です。</p>
-  </section>
+    <h2>4月1日の誕生花として親しまれるクロッカス（黄）</h2>
+    <p>クロッカス（黄）は、アヤメ科の球根植物です。まだ雪や霜の気配が残る早春、地面すれすれのところから顔を出すようにして、鮮やかな黄色の花を咲かせます。他の花に先駆けて咲くその姿から、春の訪れをいち早く告げる花として親しまれています。4月1日、新しい年度や新生活が動き出すこの日に、この花が誕生花として重なっているのも、どこか象徴的です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>クロッカス（黄）が象徴する意味</h2>
-    <p>クロッカス（黄）の花言葉は「切望」です。長い冬の終わりを待ちわびるように、地面から顔を出してすぐに花を咲かせる姿が、待ち望んでいたものへの強い想いを重ねられたことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>クロッカス（黄）の魅力</h2>
-    <p>クロッカス（黄）の魅力は、他の花に先駆けて咲く小さくも力強い花姿にあります。群生させると黄色い絨毯のように地面を彩り、庭やプランターに春一番の明るさを添えてくれます。4月1日生まれの方はもちろん、新しい季節の始まりを祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>クロッカス（黄）は日当たりの良い場所を好み、秋に球根を植えて育てるのが一般的です。過湿に弱いため、水はけの良い土壌で育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月1日生まれの方はもちろん、新しい一歩を踏み出す人への贈り物としてもクロッカス（黄）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">クロッカス（黄）はいつ頃咲きますか？</div>
-        <div class="faq-a">早春、雪解けの頃から鮮やかな黄色の花を咲かせます。アヤメ科の球根植物で、春を告げる花として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（黄）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">「切望」という花言葉は、長い冬の終わりを待ちわびるように、いち早く花を咲かせる姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">クロッカスにはどんな色の花がありますか？</div>
-        <div class="faq-a">黄色のほか、紫や白の花を咲かせる品種もあります。色によって花言葉が異なる場合があります。</div>
+        <div class="faq-a">まだ肌寒さの残る早春、地面近くから顔を出すようにして鮮やかな黄色の花を咲かせます。アヤメ科の球根植物で、春の訪れをいち早く告げる花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>黄色が語る、クロッカス（黄）の切望</h2>
+    <p>まだ冷たい風が吹く早春の朝、土の中でじっと力を蓄えていたクロッカス（黄）が、地面をそっと押し上げるようにして芽を出します。そこから花が開くまでの早さは、まるで待ちきれない気持ちがそのまま形になったかのようです。冬の名残がある景色の中で、黄色い花びらだけが一足先に春の色を灯していきます。アヤメ科の球根植物として、毎年同じ場所で花を咲かせ続けるたくましさも持ち合わせています。そんな、待ち望んでいたものへ真っ先に手を伸ばすような姿から、クロッカス（黄）には「切望」という花言葉が贈られているといわれています。この言葉は、何かを強く願う気持ちそのものよりも、その気持ちを行動に移す最初の一歩に近いのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカス（黄）の花言葉「切望」の由来は？</div>
+        <div class="faq-a">冬の名残がある早春に、他の花に先駆けて地面から顔を出し花を咲かせる姿が、待ち望んでいたものへ真っ先に手を伸ばす様子に重ねられたことに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心の奥でずっと温めてきた望みは、行動に移した瞬間から現実に近づいていきます。今日は、その最初の一歩を自分の手で踏み出してみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、クロッカス（黄）から始める小さな体験</h2>
+    <p>早春の地面から真っ先に顔を出すクロッカス（黄）にあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>地面近くに顔を出す黄色い花を探して春の気配を感じてみる</li>
+      <li>心待ちにしていることを一つ、紙に書き出してみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">クロッカスにはどんな色の花がありますか？</div>
+        <div class="faq-a">黄色のほか、紫や白の花を咲かせる品種もあり、色によって花言葉が異なります。クロッカス（黄）の花言葉は「切望」です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">手を伸ばしたその先に何があるのか気になる今日は、星座やラッキーカラーもあわせて確認してみませんか。開運カレンダーでは、その日の星座やラッキーカラーもまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月1日、地面から真っ先に顔を出す黄色いクロッカス（黄）は、待ち望んでいたものへ手を伸ばす最初の一歩を教えてくれる花です。</p>
     <ul>
-      <li>クロッカス（黄）は早春に黄色い花を咲かせる、4月1日の誕生花</li>
-      <li>花言葉は「切望」、春を待ちわびる想いに由来する</li>
-      <li>他の花に先駆けて咲く力強さと明るい花色が魅力</li>
-      <li>日当たりと水はけの良い場所で、秋植えの球根として育てたい</li>
+      <li>クロッカス（黄）はアヤメ科の球根植物で、早春に地面近くから顔を出すように黄色い花を咲かせる</li>
+      <li>他の花に先駆けて咲く姿から、春の訪れをいち早く告げる花として親しまれている</li>
+      <li>花言葉は「切望」。待ち望んでいたものへ真っ先に手を伸ばす姿に由来するといわれる</li>
+      <li>切望は、願う気持ちを行動に移す最初の一歩を表す言葉ともいえる</li>
     </ul>
   </section>
 

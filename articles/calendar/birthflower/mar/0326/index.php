@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0326/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月26日の誕生花プリムラ・オブコニカの花言葉・特徴・魅力をわかりやすく解説。「神秘な心」を象徴する柔らかく咲く花の意味を紹介します。">
+  <meta name="description" content="3月26日の誕生花プリムラ・オブコニカの花言葉・特徴・魅力をわかりやすく解説。「神秘な心」を象徴する、色とりどりに咲き続ける花の意味を紹介します。">
   <title>3月26日の誕生花はプリムラ・オブコニカ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"プリムラ・オブコニカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、色とりどりの花を長期間咲かせます。サクラソウ科の多年草で、柔らかな花びらの重なりが特徴です。"}},
-      {"@type":"Question","name":"プリムラ・オブコニカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「神秘な心」という花言葉は、ふんわりと重なる花びらが、内に秘めた奥深い心の世界を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"プリムラ・オブコニカを扱う際に注意することはありますか？","acceptedAnswer":{"@type":"Answer","text":"葉の表面にある産毛に触れると、まれに肌がかぶれることがあるとされています。手入れの際は手袋を使用するなど、直接触れすぎないよう注意すると安心です。"}}
+      {"@type":"Question","name":"プリムラ・オブコニカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて花を咲かせます。ちょうど3月頃も見頃が続く花です。"}},
+      {"@type":"Question","name":"プリムラ・オブコニカの花言葉「神秘な心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"冬から春まで、色とりどりに咲き続ける、捉えどころのない魅力に由来するといわれています。"}},
+      {"@type":"Question","name":"プリムラ・オブコニカにはどんな色がありますか？","acceptedAnswer":{"@type":"Answer","text":"色とりどりの花を咲かせます。同じ鉢の中でも複数の色合いを楽しめることがあるといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 26 · 誕生花</span>
     <h1>3月26日の誕生花はプリムラ・オブコニカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">プリムラ・オブコニカは、サクラソウ科の多年草で、冬から春に色とりどりの花を咲かせる3月26日の誕生花です。花言葉は「神秘な心」。柔らかな印象の花です。</p>
+    <p class="art-lead">冬から春まで色とりどりに咲き続けるプリムラ・オブコニカ。3月26日の誕生花に選ばれたこの花は、言葉にしきれない不思議な魅力を秘めています。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>プリムラ・オブコニカ</dd>
     <dt>花言葉</dt><dd>神秘な心</dd>
     <dt>科名</dt><dd>サクラソウ科</dd>
-    <dt>見頃</dt><dd>冬から春</dd>
+    <dt>見頃</dt><dd>冬〜春</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">プリムラ・オブコニカとは</a></li>
-      <li><a href="#meaning">プリムラ・オブコニカが象徴する意味</a></li>
-      <li><a href="#charm">プリムラ・オブコニカの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月26日の誕生花として親しまれるプリムラ・オブコニカ</a></li>
+      <li><a href="#story">色とりどりに咲き続ける、プリムラ・オブコニカの不思議さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、プリムラ・オブコニカから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>プリムラ・オブコニカとは</h2>
-    <p>プリムラ・オブコニカは、サクラソウ科の多年草で、3月26日の誕生花として知られています。中国原産で、幾重にも重なる花びらが柔らかな房を作って咲き、ピンクや紫、白など優しい色合いのバリエーションが豊富な冬から春の花壇の定番です。</p>
-  </section>
+    <h2>3月26日の誕生花として親しまれるプリムラ・オブコニカ</h2>
+    <p>プリムラ・オブコニカは、サクラソウ科の多年草です。冬から春にかけて、色とりどりの花を長く咲かせ続けます。一つの鉢の中に何色もの花が並ぶ姿は、見ているだけで気持ちが華やぎます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>プリムラ・オブコニカが象徴する意味</h2>
-    <p>プリムラ・オブコニカの花言葉は「神秘な心」です。ふんわりとした花びらの重なりが、内に秘めた奥深い心の世界を思わせることに由来すると言われています。プリムラの仲間全般には「青春の喜び」といった花言葉もあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>プリムラ・オブコニカの魅力</h2>
-    <p>プリムラ・オブコニカの魅力は、幾重にも重なった花びらが生み出す柔らかなボリューム感と、長期間にわたって咲き続ける花持ちの良さにあります。冬の寒さの中でも次々と花を咲かせ続け、玄関先やベランダを明るく彩ってくれます。3月26日生まれの方はもちろん、奥深い想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>プリムラ・オブコニカは日当たりの良い場所を好みますが、葉の産毛に触れるとかぶれることがあるとされているため、手入れの際は手袋を使うなど注意すると安心です。水はけの良い土で、花がら摘みをこまめに行うと長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月26日生まれの方はもちろん、奥深い想いを届けたい贈り物としてもプリムラ・オブコニカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">プリムラ・オブコニカはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、色とりどりの花を長期間咲かせます。サクラソウ科の多年草で、柔らかな花びらの重なりが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・オブコニカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「神秘な心」という花言葉は、ふんわりと重なる花びらが、内に秘めた奥深い心の世界を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・オブコニカを扱う際に注意することはありますか？</div>
-        <div class="faq-a">葉の表面にある産毛に触れると、まれに肌がかぶれることがあるとされています。手入れの際は手袋を使用するなど、直接触れすぎないよう注意すると安心です。</div>
+        <div class="faq-a">冬から春にかけて花を咲かせます。ちょうど3月頃も見頃が続く花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>色とりどりに咲き続ける、プリムラ・オブコニカの不思議さ</h2>
+    <p>寒さの残る冬から、暖かさが増していく春まで、長い期間にわたって咲き続けるプリムラ・オブコニカ。一つの季節に集中して咲くのではなく、季節の移ろいをまたいで花を絶やさない、その息の長さが特徴的です。色とりどりの花が入れ替わりながら咲く様子は、はっきりと言葉にしにくい、どこか不思議な魅力を持っています。この捉えどころのなさから、「神秘な心」という花言葉が生まれたといわれています。神秘というのは、大げさな意味を持つ言葉ではなく、言葉にしきれない感覚を大切にする、そんな心の在り方を指しているのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・オブコニカの花言葉「神秘な心」の由来は？</div>
+        <div class="faq-a">冬から春まで、色とりどりに咲き続ける、捉えどころのない魅力に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心の中に咲く感覚は、色とりどりの花のように、一つひとつ違う表情をしています。今日は、そんな自分の中の不思議な感覚を、そっと大切にしてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、プリムラ・オブコニカから始める小さな体験</h2>
+    <p>色とりどりに咲き続けるプリムラ・オブコニカにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>色とりどりのプリムラ・オブコニカから気になる一鉢を選んでみる</li>
+      <li>自分の中の言葉にしにくい感覚を、一つ書き出してみる</li>
+      <li>お気に入りの色の花を飾ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・オブコニカにはどんな色がありますか？</div>
+        <div class="faq-a">色とりどりの花を咲かせます。同じ鉢の中でも複数の色合いを楽しめることがあるといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">色とりどりの一鉢に言葉にしにくい感覚を覚えた今日は、六曜や月齢、吉日もあわせて確認してみませんか。開運カレンダーでは、その日の六曜や月齢、吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月26日、冬から春まで色とりどりに咲き続けるプリムラ・オブコニカは、言葉にしきれない感覚を大切にする心を教えてくれる花です。</p>
     <ul>
-      <li>プリムラ・オブコニカは冬から春に色とりどりの花を咲かせる、3月26日の誕生花</li>
-      <li>花言葉は「神秘な心」、重なる花びらが奥深い心を思わせることに由来する</li>
-      <li>柔らかなボリューム感と長い花持ちが魅力</li>
-      <li>日当たりの良い場所で、葉に直接触れすぎないよう注意して育てたい</li>
+      <li>プリムラ・オブコニカはサクラソウ科の多年草で、冬から春にかけて花を咲かせ続ける</li>
+      <li>色とりどりの花が入れ替わりながら咲く、捉えどころのない魅力を持つ</li>
+      <li>花言葉は「神秘な心」。言葉にしきれない感覚に由来するといわれる</li>
+      <li>一つの季節にとどまらず、長く花を咲かせ続ける</li>
     </ul>
   </section>
 

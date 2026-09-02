@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0315/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月15日の誕生花ヤグルマソウの花言葉・特徴・魅力をわかりやすく解説。「繊細」を象徴する奥ゆかしい山野草の意味を紹介します。">
+  <meta name="description" content="3月15日の誕生花ヤグルマソウの花言葉・特徴・魅力をわかりやすく解説。「繊細」を象徴する、白く小さな花と矢車のような葉を持つ山野草の意味を紹介します。">
   <title>3月15日の誕生花はヤグルマソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヤグルマソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い小花を穂状に咲かせます。ユキノシタ科の多年草で、大きく広がる葉の形が特徴的な山野草です。"}},
-      {"@type":"Question","name":"ヤグルマソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「繊細」という花言葉は、細かく集まって咲く花や、繊細な形をした葉の佇まいが細やかな心配りを感じさせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ヤグルマソウという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"5枚の大きな葉が矢車のように放射状に広がる姿からこの名がつけられました。花よりも葉の造形美で楽しまれることも多い山野草です。"}}
+      {"@type":"Question","name":"ヤグルマソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い小さな花を穂状に咲かせます。3月15日は誕生花として定められている日で、実際の開花期とは異なります。"}},
+      {"@type":"Question","name":"ヤグルマソウの花言葉「繊細」の由来は？","acceptedAnswer":{"@type":"Answer","text":"大きく広がる葉に対して、白く小さな花が壊れそうなほど繊細なつくりをしていることに由来するといわれています。"}},
+      {"@type":"Question","name":"ヤグルマソウという名前の由来は？","acceptedAnswer":{"@type":"Answer","text":"5枚前後の大きな葉が矢車のように放射状に広がる姿から、この名がつけられたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 15 · 誕生花</span>
     <h1>3月15日の誕生花はヤグルマソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヤグルマソウは、ユキノシタ科の多年草で、初夏に白い小花を咲かせる3月15日の誕生花です。花言葉は「繊細」。落ち着いた奥ゆかしい印象の花です。</p>
+    <p class="art-lead">深山にひっそりと自生し、白く小さな花を咲かせるヤグルマソウ。3月15日の誕生花に選ばれたこの山野草は、見過ごしてしまいそうなほど繊細な魅力を秘めています。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヤグルマソウとは</a></li>
-      <li><a href="#meaning">ヤグルマソウが象徴する意味</a></li>
-      <li><a href="#charm">ヤグルマソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月15日の誕生花として親しまれるヤグルマソウ</a></li>
+      <li><a href="#story">白く小さな花が語る、ヤグルマソウの繊細さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヤグルマソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヤグルマソウとは</h2>
-    <p>ヤグルマソウは、ユキノシタ科の多年草で、3月15日の誕生花として知られています。5枚の大きな葉が矢車のように放射状に広がる特徴的な葉姿からこの名がつけられ、山地の湿った林の中などに自生する日本の山野草です。</p>
-  </section>
+    <h2>3月15日の誕生花として親しまれるヤグルマソウ</h2>
+    <p>ヤグルマソウは、ユキノシタ科の多年草です。深山の湿った場所にひっそりと自生し、初夏になると白い小さな花を穂のように咲かせます。大きく広がる葉が矢車に似ることから、この名がつけられたといわれています。華やかさよりも素朴な佇まいが魅力の、奥ゆかしい山野草です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヤグルマソウが象徴する意味</h2>
-    <p>ヤグルマソウの花言葉は「繊細」です。小さな花が細かく集まって穂状に咲く様子や、繊細な形をした葉の佇まいが、細やかな心配りを感じさせることに由来すると言われています。落ち着いた雰囲気を持つ山野草らしい花言葉です。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヤグルマソウの魅力</h2>
-    <p>ヤグルマソウの魅力は、花そのものよりもまず、矢車のように大きく広がる印象的な葉の形にあります。初夏には葉の間から花茎を伸ばし、白く細かな花を穂状に咲かせ、和の趣あふれる庭園や山野草の寄せ植えに深みを与えてくれます。3月15日生まれの方はもちろん、繊細な心配りを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヤグルマソウは半日陰で湿り気のある場所を好み、乾燥を避けて育てるのがおすすめです。山野草として、鉢植えでも庭植えでも涼しげな雰囲気を楽しむことができます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月15日生まれの方はもちろん、繊細な心配りを届けたい贈り物としてもヤグルマソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ヤグルマソウはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白い小花を穂状に咲かせます。ユキノシタ科の多年草で、大きく広がる葉の形が特徴的な山野草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤグルマソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「繊細」という花言葉は、細かく集まって咲く花や、繊細な形をした葉の佇まいが細やかな心配りを感じさせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヤグルマソウという名前の由来は何ですか？</div>
-        <div class="faq-a">5枚の大きな葉が矢車のように放射状に広がる姿からこの名がつけられました。花よりも葉の造形美で楽しまれることも多い山野草です。</div>
+        <div class="faq-a">初夏に白い小さな花を穂状に咲かせます。3月15日は誕生花として定められている日で、実際の開花期とは異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白く小さな花が語る、ヤグルマソウの繊細さ</h2>
+    <p>ヤグルマソウの花は、真っ白というより、どこか控えめな白色をしています。大きく矢車状に広がる葉に比べると、花そのものは驚くほど小さく、うっかりすると見過ごしてしまうほどです。けれど近づいてよく見ると、その白い花は一つひとつが細かく、壊れそうなほど繊細なつくりをしていることに気づきます。強く自己主張しない、控えめな白の存在感――そこから「繊細」という花言葉が生まれたといわれています。似た名を持つヤグルマギクとは別の植物ですが、どちらも小さな花に目を凝らして初めて気づく美しさを持っている点は共通しているのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤグルマソウの花言葉「繊細」の由来は？</div>
+        <div class="faq-a">大きく広がる葉に対して、白く小さな花が壊れそうなほど繊細なつくりをしていることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>見過ごしてしまいそうなほど小さなものにこそ、大切な繊細さが宿っています。今日は身の回りの小さなものを、少し丁寧に扱ってみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヤグルマソウから始める小さな体験</h2>
+    <p>白く小さな花を咲かせるヤグルマソウにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>白い小さな花を探して観察してみる</li>
+      <li>矢車に似た葉の形をじっくり観察してみる</li>
+      <li>繊細な作業を一つ、丁寧にこなしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヤグルマソウという名前の由来は？</div>
+        <div class="faq-a">5枚前後の大きな葉が矢車のように放射状に広がる姿から、この名がつけられたといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">矢車のように広がる葉の存在感に目を留めた今日は、星座や吉日の巡りもあわせて確認してみませんか。開運カレンダーでは、その日の星座や吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月15日、白く小さな花に繊細さを宿すヤグルマソウは、見過ごしがちなものにこそ美しさがあることを教えてくれる花です。</p>
     <ul>
-      <li>ヤグルマソウは初夏に白い小花を咲かせる、3月15日の誕生花</li>
-      <li>花言葉は「繊細」、細やかに咲く花と葉の佇まいに由来する</li>
-      <li>矢車のように広がる印象的な葉の造形美が魅力</li>
-      <li>半日陰の湿り気のある場所で、乾燥を避けて育てたい</li>
+      <li>ヤグルマソウはユキノシタ科の多年草で、初夏に白い小さな花を穂状に咲かせる</li>
+      <li>矢車のように大きく広がる葉が名前の由来</li>
+      <li>花言葉は「繊細」。壊れそうなほど繊細な花のつくりを象徴するといわれる</li>
+      <li>深山の湿った場所に自生する、素朴な山野草</li>
     </ul>
   </section>
 

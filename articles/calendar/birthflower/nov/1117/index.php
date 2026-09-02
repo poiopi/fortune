@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1117/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月17日の誕生花ネリネの花言葉・特徴・魅力をわかりやすく解説。「再生」を象徴するきらめく花びらの意味を紹介します。">
+  <meta name="description" content="11月17日の誕生花ネリネの花言葉・特徴・魅力をわかりやすく解説。「再生」を象徴する光にきらめく花びらを持つ球根植物の意味を紹介します。">
   <title>11月17日の誕生花はネリネ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ネリネはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋にきらめく花びらの花を咲かせます。ヒガンバナ科の球根植物です。"}},
-      {"@type":"Question","name":"ネリネの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋の光を受けてきらめく花びらが、まるで生まれ変わるように輝く姿から、再生を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ネリネはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"光を受けてきらめく花姿を活かして、日の当たる室内や切り花のアレンジメントで楽しまれています。"}}
+      {"@type":"Question","name":"ネリネが「ダイヤモンドリリー」と呼ばれるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"光を受けた花びらがきらめいて見えることから、そう呼ばれるようになったと言われています。"}},
+      {"@type":"Question","name":"ネリネの花言葉「再生」の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夏の間は姿を見せず、秋になって突然花を咲かせる劇的な現れ方が、再生という花言葉に結びついていると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 17 · 誕生花</span>
     <h1>11月17日の誕生花はネリネ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ネリネは、ヒガンバナ科の球根植物で、秋、光を受けてきらめく花びらの花を咲かせる、華やかな印象を持つ花です。花言葉は「再生」。華やかな花です。</p>
+    <p class="art-lead">秋の澄んだ空気の中で、光を受けてきらめく花びらが目を引くことがある。この「ダイヤモンドリリー」の愛称を持つヒガンバナ科の球根植物こそ、ネリネ、11月17日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ネリネとは</a></li>
-      <li><a href="#meaning">ネリネが象徴する意味</a></li>
-      <li><a href="#charm">ネリネの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月17日の誕生花として親しまれるネリネ</a></li>
+      <li><a href="#story">秋にだけ現れる、光の花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ネリネから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ネリネとは</h2>
-    <p>ネリネは、ヒガンバナ科の球根植物で、11月17日の誕生花として知られています。秋、光を受けてきらめく花びらの花を咲かせる、ダイヤモンドリリーとも呼ばれる華やかな花です。</p>
-  </section>
+    <h2>11月17日の誕生花として親しまれるネリネ</h2>
+    <p>ネリネは、ヒガンバナ科の球根植物として知られる、11月17日の誕生花です。秋、光を受けてきらめく花びらの花を咲かせ、「ダイヤモンドリリー」という愛称でも親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ネリネが象徴する意味</h2>
-    <p>ネリネの花言葉は「再生」です。秋の光を受けてきらめく花びらが、まるで生まれ変わるように輝く姿から、再生を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ネリネの魅力</h2>
-    <p>ネリネの魅力は、光を受けてきらめく花びらが生む華やかな輝きと、ダイヤモンドリリーと呼ばれるにふさわしい存在感にあります。11月17日生まれの方はもちろん、再生の想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ネリネは日当たりの良い場所を好み、休眠期は乾燥気味に管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月17日生まれの方はもちろん、再生の想いを伝えたい贈り物としてもネリネは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ネリネはいつ頃咲きますか？</div>
-        <div class="faq-a">秋にきらめく花びらの花を咲かせます。ヒガンバナ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ネリネの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋の光を受けてきらめく花びらが、まるで生まれ変わるように輝く姿から、再生を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ネリネはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">光を受けてきらめく花姿を活かして、日の当たる室内や切り花のアレンジメントで楽しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ネリネが「ダイヤモンドリリー」と呼ばれるのはなぜですか？</div>
+        <div class="faq-a">光を受けた花びらがきらめいて見えることから、そう呼ばれるようになったと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>秋にだけ現れる、光の花</h2>
+    <p>秋の澄んだ光の下で、花びらに細かなラメを散らしたようにきらめく花がある。ヒガンバナ科の球根植物、ネリネはこの時期に咲き、光の当たり方によって表情を変える華やかな花姿から「ダイヤモンドリリー」とも呼ばれている。夏の間は地上に姿を見せず、秋になって急に茎を伸ばし花を咲かせるという生態も特徴的で、まるで新しい季節に合わせて生まれ変わったかのような印象を与える。地上から一度姿を消し、また戻ってくるこの生態こそが、「再生」という花言葉の由来とされている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ネリネの花言葉「再生」の由来は何ですか？</div>
+        <div class="faq-a">夏の間は姿を見せず、秋になって突然花を咲かせる劇的な現れ方が、再生という花言葉に結びついていると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>新しい自分に生まれ変わるとき、人は必ずしも大きな決意を必要としない。今日、心のどこかで静かに始まっていることに、気づいているだろうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ネリネから始める小さな体験</h2>
+    <p>夏の間は姿を隠し、秋に一気に花開くネリネにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>光にきらめく花びらをじっくり観察してみる</li>
+      <li>「ダイヤモンドリリー」という別名について調べてみる</li>
+      <li>新しく始めたいことを一つ、思い描いてみる</li>
+    </ul>
+
+    <p class="cta-lead">新しい一歩を踏み出したい日は、開運カレンダーで月の満ち欠けもあわせて見てみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>秋の光にきらめく花びらは、この花が「再生」の象徴とされてきた理由をそのまま映し出している。</p>
     <ul>
-      <li>ネリネは秋にきらめく花びらの花を咲かせる、11月17日の誕生花</li>
-      <li>花言葉は「再生」、光を受けて輝く花びらの姿に由来する</li>
-      <li>ダイヤモンドリリーとも呼ばれる華やかな輝きが魅力</li>
-      <li>日当たりの良い場所を好み、休眠期は乾燥気味に管理するとよく育ちます</li>
+      <li>ネリネは、ヒガンバナ科の球根植物で、秋に光を受けてきらめく花を咲かせる、11月17日の誕生花</li>
+      <li>花言葉は「再生」。夏の間見えなかった花が、秋にまた新しく顔を出すことに由来すると言われる</li>
+      <li>「ダイヤモンドリリー」という華やかな愛称でも知られる</li>
+      <li>新しい自分へ踏み出したい日に寄り添う花</li>
     </ul>
   </section>
 

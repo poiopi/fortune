@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オレンジコスモスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋にオレンジ色のコスモスに似た花を咲かせます。キク科の一年草です。"}},
-      {"@type":"Question","name":"オレンジコスモスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかなオレンジ色の花が野に咲くコスモスを思わせる、飾らない自然な美しさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"オレンジコスモスは普通のコスモスと同じですか？","acceptedAnswer":{"@type":"Answer","text":"コスモスに似た花を咲かせる仲間ですが、鮮やかなオレンジ色が特徴で、通常のコスモスとは印象が異なります。"}}
+      {"@type":"Question","name":"オレンジコスモスは普通のコスモスと同じ品種ですか？","acceptedAnswer":{"@type":"Answer","text":"コスモスに似た花を咲かせますが、鮮やかなオレンジ色が特徴で、一般的なコスモスとは異なる印象を持つとされています。"}},
+      {"@type":"Question","name":"オレンジコスモスの花言葉「野生美」の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかなオレンジ色の花が野に咲くような、飾らない自然の美しさを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">OCTOBER 2 · 誕生花</span>
     <h1>10月2日の誕生花はオレンジコスモス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オレンジコスモスは、キク科の一年草で、秋にオレンジ色のコスモスに似た花を咲かせる、生き生きとした野性的な印象を持つ花です。花言葉は「野生美」。生き生きとした花です。</p>
+    <p class="art-lead">秋の澄んだ空気の中、畑の片隅や道端にオレンジ色の花が揺れているのを見かけることがある。ふつうのコスモスとは違う、力強いオレンジの色みを纏ったこの花が、10月2日の誕生花オレンジコスモスだ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オレンジコスモスとは</a></li>
-      <li><a href="#meaning">オレンジコスモスが象徴する意味</a></li>
-      <li><a href="#charm">オレンジコスモスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">10月2日の誕生花として親しまれるオレンジコスモス</a></li>
+      <li><a href="#story">飾らない秋の畑で目を引くオレンジ色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オレンジコスモスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オレンジコスモスとは</h2>
-    <p>オレンジコスモスは、キク科の一年草で、10月2日の誕生花として知られています。秋にオレンジ色のコスモスに似た花を咲かせる、生き生きとした野性的な印象を持つ花です。</p>
-  </section>
+    <h2>10月2日の誕生花として親しまれるオレンジコスモス</h2>
+    <p>オレンジコスモスは、キク科の一年草。秋になるとコスモスによく似た形の花を、鮮やかなオレンジ色で咲かせる。細く伸びた茎の先で揺れる姿は、一般的なピンクや白のコスモス畑とはまた違った、力強い印象を放つ。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オレンジコスモスが象徴する意味</h2>
-    <p>オレンジコスモスの花言葉は「野生美」です。鮮やかなオレンジ色の花が野に咲くコスモスを思わせる、飾らない自然な美しさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オレンジコスモスの魅力</h2>
-    <p>オレンジコスモスの魅力は、鮮やかなオレンジ色の花が持つ生き生きとした美しさと、コスモスに似た花姿が漂わせる秋らしい風情にあります。10月2日生まれの方はもちろん、自由でいきいきとした魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オレンジコスモスは日当たりを好み、種まきや苗の植え付けから育てやすく、水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>10月2日生まれの方はもちろん、自由でいきいきとした魅力を伝えたい贈り物としてもオレンジコスモスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オレンジコスモスはいつ頃咲きますか？</div>
-        <div class="faq-a">秋にオレンジ色のコスモスに似た花を咲かせます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オレンジコスモスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">鮮やかなオレンジ色の花が野に咲くコスモスを思わせる、飾らない自然な美しさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オレンジコスモスは普通のコスモスと同じですか？</div>
-        <div class="faq-a">コスモスに似た花を咲かせる仲間ですが、鮮やかなオレンジ色が特徴で、通常のコスモスとは印象が異なります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オレンジコスモスは普通のコスモスと同じ品種ですか？</div>
+        <div class="faq-a">コスモスに似た花を咲かせますが、鮮やかなオレンジ色が特徴で、一般的なコスモスとは異なる印象を持つとされています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>飾らない秋の畑で目を引くオレンジ色</h2>
+    <p>夏の花々が姿を消し始める頃、秋の畑にはコスモスの仲間が主役として咲き始める。その中でもオレンジコスモスは、控えめなピンクや白とは一線を画す、燃えるようなオレンジ色で自己主張する。園芸品種でありながら、その色合いにはどこか野に咲く花のような、飾らない力強さがある。花言葉「野生美」は、この気取らない鮮やかさに由来すると言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オレンジコスモスの花言葉「野生美」の由来は何ですか？</div>
+        <div class="faq-a">鮮やかなオレンジ色の花が野に咲くような、飾らない自然の美しさを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>周りに染まらず、自分らしい色を貫く強さ。オレンジコスモスの鮮やかな一輪は、そんな飾らない自分でいることの心地よさを教えてくれる。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オレンジコスモスから始める小さな体験</h2>
+    <p>気取らないオレンジ色の花にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>秋の風景の中でオレンジ色の花を探してみる</li>
+      <li>コスモスに似た花の形をじっくり観察してみる</li>
+      <li>気取らない自然体の自分を少し出してみる</li>
+    </ul>
+
+    <p class="cta-lead">気取らない自分でいたい日は、今日の六曜も確認してみませんか。開運カレンダーでは、日々の六曜や吉日を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>秋の澄んだ空気の中、オレンジコスモスは気取らない鮮やかさで存在感を放っている。</p>
     <ul>
-      <li>オレンジコスモスは鮮やかなオレンジ色の花を咲かせる、10月2日の誕生花</li>
-      <li>花言葉は「野生美」、野に咲くような飾らない美しさに由来する</li>
-      <li>コスモスに似た花姿が漂わせる秋らしい風情が魅力</li>
-      <li>日当たりを好み、種まきや苗の植え付けから育てやすく、水切れに注意して管理するとよく育ちます</li>
+      <li>オレンジコスモスは秋にオレンジ色の花を咲かせる、キク科の一年草で、10月2日の誕生花</li>
+      <li>花言葉は「野生美」。飾らない自然な美しさに由来すると言われる</li>
+      <li>コスモスに似た花の形をしているが、鮮やかなオレンジ色が特徴</li>
+      <li>飾らない自分らしさを大切にしたい日に寄り添う花</li>
     </ul>
   </section>
 

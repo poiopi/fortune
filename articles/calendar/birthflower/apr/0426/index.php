@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0426/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月26日の誕生花ミヤコワスレの花言葉・特徴・魅力をわかりやすく解説。「しばしの思い」を象徴する和の情緒ある花の意味を紹介します。">
+  <meta name="description" content="4月26日の誕生花ミヤコワスレの花言葉・特徴・魅力をわかりやすく解説。佐渡に流された天皇の伝説を名の由来に持つ「しばしの思い」の意味を紹介します。">
   <title>4月26日の誕生花はミヤコワスレ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ミヤコワスレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に紫色の花を咲かせます。キク科の多年草で、和の情緒を感じさせる素朴な花です。"}},
-      {"@type":"Question","name":"ミヤコワスレの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「しばしの思い」という花言葉は、都を離れた寂しさをこの花を見てしばし忘れられたという言い伝えに由来すると言われています。"}},
-      {"@type":"Question","name":"ミヤコワスレはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"半日陰を好み、乾燥に弱いため水切れに注意が必要です。丈夫な多年草で毎年花を楽しめます。"}}
+      {"@type":"Question","name":"ミヤコワスレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"本来の見頃は初夏です。紫色の花を咲かせるキク科の多年草で、4月26日の誕生花としても親しまれています。"}},
+      {"@type":"Question","name":"ミヤコワスレの花言葉「しばしの思い」の由来は？","acceptedAnswer":{"@type":"Answer","text":"佐渡に流された天皇がこの花を見て、都を思う心が慰められたという伝説が名前の由来とされ、この故事から花言葉が生まれたといわれています。"}},
+      {"@type":"Question","name":"ミヤコワスレはどんな花として親しまれてきましたか？","acceptedAnswer":{"@type":"Answer","text":"江戸時代から茶花として親しまれてきました。紫色の素朴な花姿が、静かな茶室の空間によく合うとされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 26 · 誕生花</span>
     <h1>4月26日の誕生花はミヤコワスレ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ミヤコワスレは、キク科の多年草で、初夏に紫色の花を咲かせる4月26日の誕生花です。花言葉は「しばしの思い」。素朴な印象の花です。</p>
+    <p class="art-lead">4月26日、紫色の素朴な花にふと目を留める頃。ミヤコワスレは、遠い昔の伝説を名前に宿しながら、束の間よぎる思い出のかけがえのなさを教えてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ミヤコワスレとは</a></li>
-      <li><a href="#meaning">ミヤコワスレが象徴する意味</a></li>
-      <li><a href="#charm">ミヤコワスレの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月26日の誕生花として親しまれるミヤコワスレ</a></li>
+      <li><a href="#story">伝説が語る、ミヤコワスレという名前の意味</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ミヤコワスレから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ミヤコワスレとは</h2>
-    <p>ミヤコワスレは、キク科の多年草で、4月26日の誕生花として知られています。ミヤマヨメナの園芸品種で、紫がかった落ち着いた花色を咲かせることから、日本庭園や茶花としても古くから親しまれています。</p>
-  </section>
+    <h2>4月26日の誕生花として親しまれるミヤコワスレ</h2>
+    <p>ミヤコワスレは、キク科の多年草です。本来の見頃は初夏で、紫色の素朴な花を咲かせます。江戸時代から茶花として長く親しまれてきた歴史を持ち、その静かな佇まいから、4月26日の誕生花としても親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ミヤコワスレが象徴する意味</h2>
-    <p>ミヤコワスレの花言葉は「しばしの思い」です。都を離れた寂しさをこの花を見ることでしばし忘れられたという言い伝えに由来すると言われ、静かに心を慰める花として知られています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ミヤコワスレの魅力</h2>
-    <p>ミヤコワスレの魅力は、控えめでありながら凛とした紫色の花色と、和の情緒を感じさせる素朴な佇まいにあります。半日陰でもよく育つため、庭の一角にひっそりと彩りを添えたいときに重宝される花です。4月26日生まれの方はもちろん、心を慰める贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ミヤコワスレは半日陰を好み、乾燥に弱いため水切れに注意して育てるのがおすすめです。丈夫で毎年花を咲かせてくれる多年草です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月26日生まれの方はもちろん、心を慰める贈り物としてもミヤコワスレは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ミヤコワスレはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に紫色の花を咲かせます。キク科の多年草で、和の情緒を感じさせる素朴な花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミヤコワスレの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「しばしの思い」という花言葉は、都を離れた寂しさをこの花を見てしばし忘れられたという言い伝えに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ミヤコワスレはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">半日陰を好み、乾燥に弱いため水切れに注意が必要です。丈夫な多年草で毎年花を楽しめます。</div>
+        <div class="faq-a">本来の見頃は初夏です。紫色の花を咲かせるキク科の多年草で、4月26日の誕生花としても親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>伝説が語る、ミヤコワスレという名前の意味</h2>
+    <p>ミヤコワスレという名前には、一つの伝説が伝えられています。かつて佐渡に流された天皇が、この花を目にして、都を離れた寂しさが少し慰められたという話です。真偽のほどは定かではありませんが、「都を忘れる」という響きを持つこの名前は、単なる寂しさや別れの言葉ではなく、心が救われた瞬間の記録として受け止めることもできそうです。江戸時代からは茶花として茶室にも取り入れられ、静かな空間の中でそっと心を和ませる存在として長く愛されてきました。大きく目を引く花ではありませんが、ふと目にしたときに心の緊張がゆるむような、そんな力を持った花なのかもしれません。この伝説と紫色の素朴な花姿から、ミヤコワスレには「しばしの思い」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミヤコワスレの花言葉「しばしの思い」の由来は？</div>
+        <div class="faq-a">佐渡に流された天皇がこの花を見て、都を思う心が慰められたという伝説が名前の由来とされ、この故事から花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>ふとよぎる思い出は、長く引きずるものでなくても構いません。心をふっと和ませてくれるだけで、それは十分に価値のある一瞬です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ミヤコワスレから始める小さな体験</h2>
+    <p>茶花として静かに愛されてきたミヤコワスレにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>紫色の素朴な花を探して観察してみる</li>
+      <li>名前にまつわる伝説について調べてみる</li>
+      <li>茶花として花を一輪、静かに飾ってみる</li>
+      <li>ふと思い出したことを一つ、心にとめてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ミヤコワスレはどんな花として親しまれてきましたか？</div>
+        <div class="faq-a">江戸時代から茶花として親しまれてきました。紫色の素朴な花姿が、静かな茶室の空間によく合うとされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">ふと思い出がよぎる今日は、六曜や今月の誕生石も気になるところ。開運カレンダーでは、その日の六曜と今月の誕生石をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月26日、天皇の伝説を名前に宿すミヤコワスレは、ふとよぎる思い出だけで心が和むこともあると教えてくれる花です。</p>
     <ul>
-      <li>ミヤコワスレは初夏に紫色の花を咲かせる、4月26日の誕生花</li>
-      <li>花言葉は「しばしの思い」、都を離れた寂しさを慰める言い伝えに由来する</li>
-      <li>凛とした紫色の花色と和の情緒あふれる佇まいが魅力</li>
-      <li>半日陰で、水切れに注意しながら育てたい</li>
+      <li>ミヤコワスレはキク科の多年草で、本来の見頃は初夏、紫色の花を咲かせる</li>
+      <li>佐渡に流された天皇の伝説が名前の由来とされ、江戸時代から茶花として親しまれてきた</li>
+      <li>花言葉は「しばしの思い」。都を思う心を慰めた伝説に由来するといわれる</li>
+      <li>しばしの思いは、心をふっと和ませる束の間の思い出を表す言葉ともいえる</li>
     </ul>
   </section>
 

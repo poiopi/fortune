@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0816/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月16日の誕生花パキスタキス・ルテアの花言葉・特徴・魅力をわかりやすく解説。「楽しい語らい」を象徴する黄色い苞の意味を紹介します。">
+  <meta name="description" content="8月16日の誕生花パキスタキス・ルテアの花言葉・特徴・魅力をわかりやすく解説。黄色い苞から白い花がのぞく、対話のような花姿の意味を紹介します。">
   <title>8月16日の誕生花はパキスタキス・ルテア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"パキスタキス・ルテアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"黄色い苞から白い花をのぞかせます。キツネノマゴ科の常緑低木です。"}},
-      {"@type":"Question","name":"パキスタキス・ルテアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"黄色い苞の間から白い花が顔をのぞかせるように咲く姿が、和やかに言葉を交わす楽しいひとときを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"パキスタキス・ルテアの黄色い部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。鮮やかな黄色の部分は「苞」と呼ばれる葉が変化した部分で、その間からのぞく白い部分が実際の花です。"}}
+      {"@type":"Question","name":"パキスタキス・ルテアの黄色い部分は花びらですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、黄色い部分は「苞」と呼ばれる部分です。その中から白い花がのぞき、黄色と白の対比が印象的な姿を作り出します。キツネノマゴ科の常緑低木です。"}},
+      {"@type":"Question","name":"パキスタキス・ルテアの花言葉『楽しい語らい』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"黄色い苞と白い花が並んで咲く姿が、まるで言葉を交わし合っているように見えることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,14 +138,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 16 · 誕生花</span>
     <h1>8月16日の誕生花はパキスタキス・ルテア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">パキスタキス・ルテアは、キツネノマゴ科の常緑低木で、鮮やかな黄色い苞から白い花をのぞかせる、明るく賑やかな印象を放つ花木です。花言葉は「楽しい語らい」。明るく賑やかな花です。</p>
+    <p class="art-lead">黄色い包みの中から、白い顔がひょいとのぞく瞬間がある。パキスタキス・ルテアは、その小さな驚きを毎日そっと届けてくれる。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>パキスタキス・ルテア</dd>
     <dt>花言葉</dt><dd>楽しい語らい</dd>
     <dt>科名</dt><dd>キツネノマゴ科</dd>
-    <dt>見頃</dt><dd>夏〜秋</dd>
+    <dt>見頃</dt><dd>通年</dd>
   </dl>
 
   <?php
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">パキスタキス・ルテアとは</a></li>
-      <li><a href="#meaning">パキスタキス・ルテアが象徴する意味</a></li>
-      <li><a href="#charm">パキスタキス・ルテアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月16日の誕生花として親しまれるパキスタキス・ルテア</a></li>
+      <li><a href="#story">黄色の中に白がのぞく、小さな掛け合いの色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、パキスタキス・ルテアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>パキスタキス・ルテアとは</h2>
-    <p>パキスタキス・ルテアは、キツネノマゴ科の常緑低木で、8月16日の誕生花として知られています。鮮やかな黄色い苞から白い花をのぞかせる、明るく賑やかな印象を放つ花木です。</p>
-  </section>
+    <h2>8月16日の誕生花として親しまれるパキスタキス・ルテア</h2>
+    <p>パキスタキス・ルテアは、キツネノマゴ科の常緑低木です。黄色い苞の中から白い花をのぞかせる、印象的な姿を持っています。苞の黄色と花の白がくっきりと対比することで、一色では出せない奥行きが生まれます。この個性的な色合いの花が、8月16日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>パキスタキス・ルテアが象徴する意味</h2>
-    <p>パキスタキス・ルテアの花言葉は「楽しい語らい」です。黄色い苞の間から白い花が顔をのぞかせるように咲く姿が、和やかに言葉を交わす楽しいひとときを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>パキスタキス・ルテアの魅力</h2>
-    <p>パキスタキス・ルテアの魅力は、松かさのように重なり合う鮮やかな黄色い苞と、その隙間からのぞく白い花が生み出す独特の華やかさにあります。観葉植物としても人気の高い花木です。8月16日生まれの方はもちろん、楽しい語らいのひとときを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>パキスタキス・ルテアは明るい日陰を好み、寒さに弱いため冬は室内で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月16日生まれの方はもちろん、楽しい語らいのひとときを届けたい贈り物としてもパキスタキス・ルテアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パキスタキス・ルテアはいつ頃咲きますか？</div>
-        <div class="faq-a">黄色い苞から白い花をのぞかせます。キツネノマゴ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">パキスタキス・ルテアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">黄色い苞の間から白い花が顔をのぞかせるように咲く姿が、和やかに言葉を交わす楽しいひとときを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">パキスタキス・ルテアの黄色い部分は花びらですか？</div>
-        <div class="faq-a">いいえ。鮮やかな黄色の部分は「苞」と呼ばれる葉が変化した部分で、その間からのぞく白い部分が実際の花です。</div>
+        <div class="faq-a">いいえ、黄色い部分は「苞」と呼ばれる部分です。その中から白い花がのぞき、黄色と白の対比が印象的な姿を作り出します。キツネノマゴ科の常緑低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>黄色の中に白がのぞく、小さな掛け合いの色</h2>
+    <p>パキスタキス・ルテアを彩るのは、迷いのないはっきりとした黄色だ。その苞が幾重にも連なる中から、白い花がひょっこりと顔を出す。黄色一色のままでは生まれない奥行きが、白がひとさし加わることで立ち上がってくる。二つの色が並んで、初めて完成する表情と言ってもいいだろう。花言葉「楽しい語らい」は、この黄色と白が向き合うように咲く姿が、まるで言葉を交わし合う場面のように見えることに由来すると言われている。一色だけでは語り尽くせないことを、二つの色が代わる代わる引き受けているようにも映る。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">パキスタキス・ルテアの花言葉『楽しい語らい』にはどんな由来がありますか？</div>
+        <div class="faq-a">黄色い苞と白い花が並んで咲く姿が、まるで言葉を交わし合っているように見えることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一色だけの景色より、違う色が並んだ景色の方が賑やかに見える。自分とは違う考えを持つ誰かの言葉にも、今日は少し耳を傾けてみよう。そこから思いがけない会話が生まれるかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、パキスタキス・ルテアから始める小さな体験</h2>
+    <p>黄色い苞の中から、白い花がひょっこり顔をのぞかせるパキスタキス・ルテアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>黄色い苞から白い花がのぞく様子をじっくり観察してみる</li>
+      <li>誰かと気軽な会話を一つ楽しんでみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かとの会話が弾む一日にしたいなら、今日の星座も覗いてみませんか。開運カレンダーでは、星座と吉日を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一色では言い尽くせない表情を、この花は黄色と白、二つの色で語っている。</p>
     <ul>
-      <li>パキスタキス・ルテアは黄色い苞から白い花をのぞかせる、8月16日の誕生花</li>
-      <li>花言葉は「楽しい語らい」、和やかに咲く花姿に由来する</li>
-      <li>黄色い苞と白い花のコントラストが魅力</li>
-      <li>明るい日陰を好み、寒さに弱い</li>
+      <li>パキスタキス・ルテアは黄色い苞から白い花をのぞかせる、キツネノマゴ科の常緑低木で、8月16日の誕生花</li>
+      <li>花言葉は「楽しい語らい」。黄色と白が向き合う姿に由来すると言われる</li>
+      <li>苞の黄色と花の白の対比が、一色にはない奥行きを生む</li>
+      <li>個性的な色の組み合わせが最大の見どころ</li>
     </ul>
   </section>
 

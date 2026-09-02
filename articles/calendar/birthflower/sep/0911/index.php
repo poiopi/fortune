@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0911/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月11日の誕生花サルスベリの花言葉・特徴・魅力をわかりやすく解説。「雄弁」を象徴する紙のように縮れた花の意味を紹介します。">
+  <meta name="description" content="9月11日の誕生花サルスベリの花言葉・特徴・魅力をわかりやすく解説。「雄弁」を象徴する長く咲き続ける花の意味を紹介します。">
   <title>9月11日の誕生花はサルスベリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サルスベリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて長期間、紙のように縮れた花を咲かせ続けます。ミソハギ科の落葉高木です。"}},
-      {"@type":"Question","name":"サルスベリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"猛暑の中でも長い期間途切れることなく華やかに咲き続ける力強い花姿が、尽きることのない雄弁さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"サルスベリという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"幹の樹皮が滑らかで、猿も滑り落ちてしまいそうなことから「猿滑り」と名付けられたと言われています。"}}
+      {"@type":"Question","name":"サルスベリはどのくらいの期間花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、長期間にわたって紙のように縮れた花を咲かせ続けます。百日紅とも呼ばれるほど花期の長い花木です。"}},
+      {"@type":"Question","name":"サルスベリの花言葉『雄弁』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて、長期間途切れることなく咲き続ける生命力の強さに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 11 · 誕生花</span>
     <h1>9月11日の誕生花はサルスベリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サルスベリは、ミソハギ科の落葉高木で、夏から秋にかけて長期間、紙のように縮れた花を咲かせ続ける、華やかで力強い印象を与える花です。花言葉は「雄弁」。華やかで力強い花です。</p>
+    <p class="art-lead">真夏の強い日差しの下で咲き始めた花が、季節が変わってもなお咲き続けている。長く語り続けるように途切れない花期を持つサルスベリを、9月11日は誕生花に迎える。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サルスベリとは</a></li>
-      <li><a href="#meaning">サルスベリが象徴する意味</a></li>
-      <li><a href="#charm">サルスベリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月11日の誕生花として親しまれるサルスベリ</a></li>
+      <li><a href="#story">夏から秋へ、語り続けるように咲く花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サルスベリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サルスベリとは</h2>
-    <p>サルスベリは、ミソハギ科の落葉高木で、9月11日の誕生花として知られています。夏から秋にかけて長期間、紙のように縮れた花を咲かせ続ける、華やかで力強い印象を与える花です。</p>
-  </section>
+    <h2>9月11日の誕生花として親しまれるサルスベリ</h2>
+    <p>サルスベリは、ミソハギ科の落葉高木です。夏から秋にかけて、紙のように縮れた花を長期間咲かせ続けます。夏を彩る華やかな花木として親しまれ、9月11日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サルスベリが象徴する意味</h2>
-    <p>サルスベリの花言葉は「雄弁」です。猛暑の中でも長い期間途切れることなく華やかに咲き続ける力強い花姿が、尽きることのない雄弁さを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サルスベリの魅力</h2>
-    <p>サルスベリの魅力は、紙のように縮れた花びらが枝いっぱいに咲きそろう華やかさと、長い期間咲き続ける花期の長さにあります。夏の庭木を代表する存在として親しまれています。 9月11日生まれの方はもちろん、尽きせぬ想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サルスベリは日当たりを好み、乾燥に強く丈夫なため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月11日生まれの方はもちろん、尽きせぬ想いを伝えたい贈り物としてもサルスベリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルスベリはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋にかけて長期間、紙のように縮れた花を咲かせ続けます。ミソハギ科の落葉高木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルスベリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">猛暑の中でも長い期間途切れることなく華やかに咲き続ける力強い花姿が、尽きることのない雄弁さを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サルスベリという名前の由来は何ですか？</div>
-        <div class="faq-a">幹の樹皮が滑らかで、猿も滑り落ちてしまいそうなことから「猿滑り」と名付けられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サルスベリはどのくらいの期間花を咲かせますか？</div>
+        <div class="faq-a">夏から秋にかけて、長期間にわたって紙のように縮れた花を咲かせ続けます。百日紅とも呼ばれるほど花期の長い花木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏から秋へ、語り続けるように咲く花</h2>
+    <p>サルスベリの花期は、他の花木と比べても際立って長い。真夏の盛りに咲き始め、暑さが和らぎ秋の気配が漂い始めても、まだその花は途切れることなく咲き続けている。まるで、伝えたいことがまだ残っているとでもいうように。花びらは薄く、紙をくしゃくしゃにしたような独特の縮れを持ち、ひとつひとつは繊細でありながら、房のように集まって咲くことで華やかな印象を放つ。この長く咲き続ける生命力に、花言葉「雄弁」は由来すると言われている。言葉を尽くすように、季節をまたいで咲き続ける姿がそこにはある。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サルスベリの花言葉『雄弁』にはどんな由来がありますか？</div>
+        <div class="faq-a">夏から秋にかけて、長期間途切れることなく咲き続ける生命力の強さに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>本当に伝えたいことは、一度きりの言葉では言い尽くせないことがある。何度でも、形を変えながら伝え続けることに意味がある。今日はその気持ちを、丁寧に言葉にしていこうと思う。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サルスベリから始める小さな体験</h2>
+    <p>夏から秋にかけて長く咲き続けるサルスベリにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紙のように縮れた花びらをじっくり観察してみる</li>
+      <li>伝えたいことを一つ、丁寧に言葉にしてみる</li>
+      <li>長く咲き続ける花のように、根気強く何かに取り組んでみる</li>
+    </ul>
+
+    <p class="cta-lead">伝えたい気持ちを大切にしたい日は、今日の月九星もあわせて見てみませんか。開運カレンダーでは、月九星と今月の誕生石を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>咲き終わるまでにこれほど時間をかける花は、そう多くない。その長さこそが「雄弁」の由来だろう。</p>
     <ul>
-      <li>サルスベリは夏から秋に縮れた花を咲かせる、9月11日の誕生花</li>
-      <li>花言葉は「雄弁」、咲き続ける力強さに由来する</li>
-      <li>華やかさと長い花期が魅力</li>
-      <li>日当たりを好み、乾燥に強く丈夫</li>
+      <li>サルスベリは夏から秋にかけて長く咲き続ける、ミソハギ科の落葉高木で、9月11日の誕生花</li>
+      <li>花言葉は「雄弁」。途切れることなく咲き続ける生命力に由来すると言われる</li>
+      <li>紙のように縮れた花びらが房になって咲く</li>
+      <li>夏を彩る華やかな花木として親しまれている</li>
     </ul>
   </section>
 

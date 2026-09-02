@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0825/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月25日の誕生花リシアンサスの花言葉・特徴・魅力をわかりやすく解説。「優美」を象徴する上品な花の意味を紹介します。">
+  <meta name="description" content="8月25日の誕生花リシアンサスの花言葉・特徴・魅力をわかりやすく解説。釣鐘のような上品な花姿が漂わせる、優美の意味を紹介します。">
   <title>8月25日の誕生花はリシアンサス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"リシアンサスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に上品な花を咲かせます。リンドウ科の一年草です。"}},
-      {"@type":"Question","name":"リシアンサスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"幾重にも重なる薄い花びらが、まるでバラのように優雅に開く上品な花姿が、優美な佇まいを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"リシアンサスとトルコギキョウは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。リシアンサスはトルコギキョウの別名（学名由来の呼び名）で、同じ花を指します。"}}
+      {"@type":"Question","name":"リシアンサスとトルコギキョウは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、同じ花です。リシアンサスはトルコギキョウの別名で、初夏に釣鐘のような上品な花を咲かせる、リンドウ科の一年草です。"}},
+      {"@type":"Question","name":"リシアンサスの花言葉『優美』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"釣鐘のように整った花の形と、切り花としても長く姿を保つ凛とした佇まいが、優美な印象を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 25 · 誕生花</span>
     <h1>8月25日の誕生花はリシアンサス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">リシアンサスは、リンドウ科の一年草で、初夏になると上品な花を咲かせる、優雅で洗練された印象を放つ花です。花言葉は「優美」。上品で洗練された花です。</p>
+    <p class="art-lead">釣鐘のような形が、静かに整った気配を漂わせる。上品な佇まいでトルコギキョウの名でも親しまれるリシアンサスが、8月25日をそっと彩る一輪となる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">リシアンサスとは</a></li>
-      <li><a href="#meaning">リシアンサスが象徴する意味</a></li>
-      <li><a href="#charm">リシアンサスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月25日の誕生花として親しまれるリシアンサス</a></li>
+      <li><a href="#story">『リシアンサス』と『トルコギキョウ』、二つの名前が漂わせる上品さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、リシアンサスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>リシアンサスとは</h2>
-    <p>リシアンサスは、リンドウ科の一年草で、8月25日の誕生花として知られています。初夏になると上品な花を咲かせる、優雅で洗練された印象を放つ花です。</p>
-  </section>
+    <h2>8月25日の誕生花として親しまれるリシアンサス</h2>
+    <p>リシアンサスは、リンドウ科の一年草です。初夏に、釣鐘のような形の上品な花を咲かせます。「トルコギキョウ」という別名でも知られ、切り花としても花持ちが良いことで親しまれています。誕生花は生まれた日と花を結びつける文化であり、実際の開花期とは必ずしも一致しません。この上品な花が、8月25日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>リシアンサスが象徴する意味</h2>
-    <p>リシアンサスの花言葉は「優美」です。幾重にも重なる薄い花びらが、まるでバラのように優雅に開く上品な花姿が、優美な佇まいを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>リシアンサスの魅力</h2>
-    <p>リシアンサスの魅力は、絹のように薄く柔らかな花びらが幾重にも重なり合う上品な美しさにあります。ブーケや装花にも欠かせない、花嫁にも人気の高い花です。8月25日生まれの方はもちろん、優美な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>リシアンサスは日当たりを好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月25日生まれの方はもちろん、優美な想いを伝えたい贈り物としてもリシアンサスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リシアンサスはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に上品な花を咲かせます。リンドウ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リシアンサスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">幾重にも重なる薄い花びらが、まるでバラのように優雅に開く上品な花姿が、優美な佇まいを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">リシアンサスとトルコギキョウは同じ花ですか？</div>
-        <div class="faq-a">はい。リシアンサスはトルコギキョウの別名（学名由来の呼び名）で、同じ花を指します。</div>
+        <div class="faq-a">はい、同じ花です。リシアンサスはトルコギキョウの別名で、初夏に釣鐘のような上品な花を咲かせる、リンドウ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>『リシアンサス』と『トルコギキョウ』、二つの名前が漂わせる上品さ</h2>
+    <p>リシアンサスという名前と、トルコギキョウという名前。同じ一つの花に、印象の異なる二つの呼び名が与えられている。前者はどこか洋風で洗練された響きを持ち、後者は親しみやすく素朴な響きを持つ。呼び方によって浮かぶ印象が変わるのも、この花ならではの面白さだろう。花そのものは、釣鐘のような形をした上品な佇まいで初夏に咲き、切り花にしても花持ちが良いことから、花束やアレンジメントにも重宝されている。花言葉「優美」は、この釣鐘のように整った花の形と、長く姿を保ち続ける凛とした佇まいから生まれたと言われている。二つの名前を行き来しながら眺めると、一つの花の中に、また違った上品さが見えてくる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">リシアンサスの花言葉『優美』にはどんな由来がありますか？</div>
+        <div class="faq-a">釣鐘のように整った花の形と、切り花としても長く姿を保つ凛とした佇まいが、優美な印象を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>整った形を持つものは、それだけで静かな説得力を持つ。だからこそ今日は身の回りにある美しいものに、少しゆっくり目を留めてみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、リシアンサスから始める小さな体験</h2>
+    <p>釣鐘のような上品な花、切り花として花持ちが良いトルコギキョウでもあるリシアンサスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>「リシアンサス」と「トルコギキョウ」二つの名前を並べて考えてみる</li>
+      <li>釣鐘のような花の形をじっくり観察してみる</li>
+      <li>切り花として長く楽しめる花を一輪飾ってみる</li>
+    </ul>
+
+    <p class="cta-lead">上品なひとときを過ごしたい日は、今日の星座もあわせて見てみませんか。開運カレンダーでは、星座と誕生石を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>呼び名が変われば、同じ花でも見え方が少し違ってくる。</p>
     <ul>
-      <li>リシアンサスは初夏に上品な花を咲かせる、8月25日の誕生花</li>
-      <li>花言葉は「優美」、優雅な花姿に由来する</li>
-      <li>絹のような花びらの重なりが魅力</li>
-      <li>日当たりを好み、水はけの良い土でよく育つ</li>
+      <li>リシアンサスは初夏に釣鐘のような上品な花を咲かせる、リンドウ科の一年草で、8月25日の誕生花</li>
+      <li>花言葉は「優美」。釣鐘のように整った花の形に由来すると言われる</li>
+      <li>「トルコギキョウ」という別名でも親しまれる</li>
+      <li>切り花としても花持ちが良い</li>
     </ul>
   </section>
 

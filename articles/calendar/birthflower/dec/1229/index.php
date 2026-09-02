@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1229/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月29日の誕生花ヒイラギモチの花言葉・特徴・魅力をわかりやすく解説。「清廉」を象徴する凛とした木の意味を紹介します。">
+  <meta name="description" content="12月29日の誕生花ヒイラギモチの花言葉・特徴・魅力をわかりやすく解説。「清廉」を象徴する、冬に赤い実をつける常緑の木を紹介します。">
   <title>12月29日の誕生花はヒイラギモチ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒイラギモチはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白い小花を咲かせ、冬には赤い実をつけます。モチノキ科の常緑低木です。"}},
-      {"@type":"Question","name":"ヒイラギモチの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉で身を保ちながら、清らかな白い花と赤い実を実らせる姿が、私欲のない清廉な心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ヒイラギモチとヒイラギはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"ヒイラギモチはモチノキ科、ヒイラギはモクセイ科に属する別の植物ですが、どちらもとげのある葉が特徴です。"}}
+      {"@type":"Question","name":"ヒイラギモチは、名前の似ている「ヒイラギ」とは違う植物なのですか？","acceptedAnswer":{"@type":"Answer","text":"とげのある葉の形がヒイラギ（モクセイ科）によく似ていますが、ヒイラギモチはモチノキ科に属する別の植物です。近縁関係を示す「モチ」という言葉が名前に添えられたと言われています。"}},
+      {"@type":"Question","name":"ヒイラギモチの「清廉」という花言葉は、どのような姿から連想されたのですか？","acceptedAnswer":{"@type":"Answer","text":"厳しい寒さが増す時期にも、とげのある葉と赤い実を保ちながらまっすぐに立ち続ける姿が、飾らない清らかな心、つまり「清廉」を象徴すると考えられています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 29 · 誕生花</span>
     <h1>12月29日の誕生花はヒイラギモチ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒイラギモチは、モチノキ科の常緑低木で、初夏に白い小花を咲かせ、冬には赤い実をつける、清らかで凛とした印象を持つ花です。花言葉は「清廉」。凛とした花です。</p>
+    <p class="art-lead">庭先の緑に、点々と真っ赤な実が浮かび上がる頃。ヒイラギモチは、モチノキ科の常緑低木で、初夏に白い小花を咲かせたのち、冬になるとつややかな実を結ぶ。12月29日、街のあちこちで見かけるその赤い実こそが、この木の今の姿である。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒイラギモチとは</a></li>
-      <li><a href="#meaning">ヒイラギモチが象徴する意味</a></li>
-      <li><a href="#charm">ヒイラギモチの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月29日の誕生花として親しまれるヒイラギモチ</a></li>
+      <li><a href="#story">冬にひときわ映える、艶やかな葉と赤い実</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒイラギモチから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒイラギモチとは</h2>
-    <p>ヒイラギモチは、モチノキ科の常緑低木で、12月29日の誕生花として知られています。初夏に白い小花を咲かせ、冬には赤い実をつける、清らかで凛とした印象を持つ花です。</p>
-  </section>
+    <h2>12月29日の誕生花として親しまれるヒイラギモチ</h2>
+    <p>ヒイラギモチは、モチノキ科の常緑低木で、12月29日の誕生花として知られています。冬になると艶のある葉のあいだに真っ赤な実をつけ、庭先や街路を彩る植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒイラギモチが象徴する意味</h2>
-    <p>ヒイラギモチの花言葉は「清廉」です。とげのある葉で身を保ちながら、清らかな白い花と赤い実を実らせる姿が、私欲のない清廉な心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒイラギモチの魅力</h2>
-    <p>ヒイラギモチの魅力は、初夏の清らかな白い花と、冬に色づく赤い実が生む季節ごとの表情の変化にあります。12月29日生まれの方はもちろん、清らかな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒイラギモチは日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月29日生まれの方はもちろん、清らかな想いを伝えたい贈り物としてもヒイラギモチは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギモチはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白い小花を咲かせ、冬には赤い実をつけます。モチノキ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギモチの花言葉の由来は何ですか？</div>
-        <div class="faq-a">とげのある葉で身を保ちながら、清らかな白い花と赤い実を実らせる姿が、私欲のない清廉な心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギモチとヒイラギはどう違いますか？</div>
-        <div class="faq-a">ヒイラギモチはモチノキ科、ヒイラギはモクセイ科に属する別の植物ですが、どちらもとげのある葉が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギモチは、名前の似ている「ヒイラギ」とは違う植物なのですか？</div>
+        <div class="faq-a">とげのある葉の形がヒイラギ（モクセイ科）によく似ていますが、ヒイラギモチはモチノキ科に属する別の植物です。近縁関係を示す「モチ」という言葉が名前に添えられたと言われています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>冬にひときわ映える、艶やかな葉と赤い実</h2>
+    <p>艶のある濃い緑の葉に、真っ赤な実がいくつも連なる。ヒイラギモチが見せるこの鮮やかな対比は、冬枯れの景色の中でもひときわ目を引く。この木が花を咲かせるのは初夏のことで、小さな白い花を静かに咲かせたのち、時間をかけてこの赤い実を実らせる。だから冬に見えているのは花ではなく、その季節の終着点としての実りの姿だ。とげのある葉を持ちながらも、周囲に染まらずまっすぐに立ち続けるその佇まいには、清らかさと凛とした強さが同居している。花言葉「清廉」は、飾ることなく自らを保ち続ける、この木の一年を通した姿勢からこぼれ落ちた言葉なのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒイラギモチの「清廉」という花言葉は、どのような姿から連想されたのですか？</div>
+        <div class="faq-a">厳しい寒さが増す時期にも、とげのある葉と赤い実を保ちながらまっすぐに立ち続ける姿が、飾らない清らかな心、つまり「清廉」を象徴すると考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>とげを持つ葉に守られながら、この木は自分の姿のまま静かに立ち続けている。飾らない佇まいこそが、この木の清らかさそのものだ。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒイラギモチから始める小さな体験</h2>
+    <p>冬にひときわ目を引く、この清らかな佇まいにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤い実をつけた木を、探して眺めてみる</li>
+      <li>名前の似た「ヒイラギ」との違いを、少し調べてみる</li>
+      <li>常緑の葉の力強さを、感じてみる</li>
+    </ul>
+
+    <p class="cta-lead">常緑の葉の力強さにあやかりたい日は、開運カレンダーのおすすめアイテムも覗いてみてください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤い実の彩りは、寒さの中でもこの木が静かに歩みを止めていない証だ。</p>
     <ul>
-      <li>ヒイラギモチは初夏に白い小花を咲かせ、冬には赤い実をつける、12月29日の誕生花</li>
-      <li>花言葉は「清廉」、清らかな花と実に由来する</li>
-      <li>初夏の白い花と冬の赤い実、清らかな表情を見せる木</li>
-      <li>日当たりから半日陰を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ヒイラギモチは、モチノキ科の常緑低木で、冬に赤い実をつける、12月29日の誕生花</li>
+      <li>花言葉は「清廉」。周囲に染まらずまっすぐに立ち続ける姿に由来すると言われる</li>
+      <li>開花は初夏で、冬に見られるのは実の姿である点に留意したい</li>
+      <li>とげのある葉はヒイラギ（モクセイ科）と似ているが、別の科に属する植物である点に注意したい</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-29'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1229'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-29');
+echo autoLink($html, 'birthflower-dec-1229');
 ?>

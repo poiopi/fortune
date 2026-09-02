@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0525/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月25日の誕生花ニゲラの花言葉・特徴・魅力をわかりやすく解説。「とまどい」を象徴する糸状の葉に包まれて咲く花の意味を紹介します。">
+  <meta name="description" content="5月25日の誕生花ニゲラの花言葉・特徴・魅力をわかりやすく解説。「とまどい」という花言葉に込められた意味と、糸状の葉に包まれる神秘的な花姿を紹介します。">
   <title>5月25日の誕生花はニゲラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ニゲラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に糸状の葉に包まれるように花を咲かせます。キンポウゲ科の一年草で、繊細で神秘的な印象を持つ花です。"}},
-      {"@type":"Question","name":"ニゲラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「とまどい」という花言葉は、花全体が霧のような細い葉に包まれ、はっきりと姿を見せない様子が、揺れ動く心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ニゲラはなぜ「霧の中の恋」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"花全体を包む霧のように細かい糸状の葉が、恋のときめきで揺れ動く心を霧に例えた呼び名だと言われています。"}}
+      {"@type":"Question","name":"ニゲラはなぜ霧をまとったような姿に見えるのですか？","acceptedAnswer":{"@type":"Answer","text":"糸のように細い葉が花全体を包み込むように茂るため、ベールをまとったような、霧がかった印象を与えるといわれています。"}},
+      {"@type":"Question","name":"ニゲラの花言葉「とまどい」の由来は？","acceptedAnswer":{"@type":"Answer","text":"葉の向こうにひそやかに佇み、はっきりと姿を見せない咲き方が、答えの出ない気持ちの揺れを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ニゲラはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"日当たりのよい花壇や庭先で、初夏に糸状の葉に包まれた花を咲かせる姿がよく見られます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 25 · 誕生花</span>
     <h1>5月25日の誕生花はニゲラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ニゲラは、キンポウゲ科の一年草で、初夏に糸状の葉に包まれるように花を咲かせる5月25日の誕生花です。花言葉は「とまどい」。繊細で神秘的な印象の花です。</p>
+    <p class="art-lead">糸のように細い葉に包まれて咲く花を、じっくり見たことはありますか。ニゲラは、そのベールをまとったような不思議な姿で、初夏の庭にひそやかな存在感を放ちます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ニゲラとは</a></li>
-      <li><a href="#meaning">ニゲラが象徴する意味</a></li>
-      <li><a href="#charm">ニゲラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月25日の誕生花として親しまれるニゲラ</a></li>
+      <li><a href="#story">糸の葉に包まれて、ニゲラが見せる不思議な形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ニゲラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ニゲラとは</h2>
-    <p>ニゲラは、キンポウゲ科の一年草で、5月25日の誕生花として知られています。初夏になると、糸状の細かい葉に包まれるように花を咲かせ、繊細で神秘的な印象から「霧の中の恋」とも呼ばれ親しまれています。</p>
-  </section>
+    <h2>5月25日の誕生花として親しまれるニゲラ</h2>
+    <p>ニゲラは、キンポウゲ科の一年草です。初夏になると、糸状の葉に包まれるように花を咲かせ、繊細で神秘的な印象を漂わせます。その独特な姿から、5月25日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ニゲラが象徴する意味</h2>
-    <p>ニゲラの花言葉は「とまどい」です。花全体が霧のような細い葉に包まれ、はっきりと姿を見せない様子が、揺れ動く心のとまどいを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ニゲラの魅力</h2>
-    <p>ニゲラの魅力は、繊細な糸状の葉に包まれた神秘的な花姿と、花後にできるユニークな形の実にあります。ドライフラワーとしても人気があり、長く楽しむことができます。5月25日生まれの方はもちろん、揺れ動く想いを伝える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ニゲラは日当たりの良い場所を好む一年草で、こぼれ種でもよく増えます。移植を嫌うため、直まきが適しています。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月25日生まれの方はもちろん、揺れ動く想いを伝える贈り物としてもニゲラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニゲラはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に糸状の葉に包まれるように花を咲かせます。キンポウゲ科の一年草で、繊細で神秘的な印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニゲラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「とまどい」という花言葉は、花全体が霧のような細い葉に包まれ、はっきりと姿を見せない様子が、揺れ動く心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ニゲラはなぜ「霧の中の恋」と呼ばれるのですか？</div>
-        <div class="faq-a">花全体を包む霧のように細かい糸状の葉が、恋のときめきで揺れ動く心を霧に例えた呼び名だと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ニゲラはなぜ霧をまとったような姿に見えるのですか？</div>
+        <div class="faq-a">糸のように細い葉が花全体を包み込むように茂るため、ベールをまとったような、霧がかった印象を与えるといわれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>糸の葉に包まれて、ニゲラが見せる不思議な形</h2>
+    <p>糸のように細い葉が、まるでベールのように花全体を包み込むのがニゲラの特徴です。中心に咲く花は淡い青紫や白の繊細な色合いで、包み込む葉とのコントラストが、どこか神秘的で幻想的な雰囲気を漂わせます。この、はっきりと姿を見せず、葉の向こうにひそやかに佇むような咲き方から、ニゲラには「とまどい」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ニゲラの花言葉「とまどい」の由来は？</div>
+        <div class="faq-a">葉の向こうにひそやかに佇み、はっきりと姿を見せない咲き方が、答えの出ない気持ちの揺れを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>迷いは、悪いことばかりではありません。糸のような葉にそっと包まれて咲くニゲラのように、答えの出ない気持ちも、しばらくそのまま抱えていていいのです。今日は、その迷い自体をそっと眺めてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ニゲラから始める小さな体験</h2>
+    <p>神秘的な咲き姿に背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>糸状の葉に包まれた花をじっくり観察してみる</li>
+      <li>迷っていることを一つ、紙に書き出してみる</li>
+      <li>神秘的な雰囲気のものに触れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ニゲラはどんな場所でよく見られますか？</div>
+        <div class="faq-a">日当たりのよい花壇や庭先で、初夏に糸状の葉に包まれた花を咲かせる姿がよく見られます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">心の迷いに向き合いたい今日は、六曜やおすすめアイテムもチェックしてみませんか。開運カレンダーでは、その日の六曜とおすすめアイテムをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>糸のような葉にそっと包まれて咲く花を前にすると、答えの出ない気持ちも悪いものではないと感じられてきます。</p>
     <ul>
-      <li>ニゲラは初夏に糸状の葉に包まれた花を咲かせる、5月25日の誕生花</li>
-      <li>花言葉は「とまどい」、揺れ動く心を思わせる花姿に由来する</li>
-      <li>神秘的な花姿とユニークな実が魅力</li>
-      <li>日当たりの良い場所でこぼれ種でも増える</li>
+      <li>ニゲラはキンポウゲ科の一年草で、初夏に糸状の葉に包まれた花を咲かせる、5月25日の誕生花</li>
+      <li>花言葉は「とまどい」。姿をはっきり見せない咲き方に由来するとされる</li>
+      <li>繊細で神秘的な、ベールをまとったような印象が魅力</li>
+      <li>日当たりのよい花壇や庭先でよく見られる</li>
     </ul>
   </section>
 

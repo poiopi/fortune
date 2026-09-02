@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0301/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月1日の誕生花ボケの花言葉・特徴・魅力をわかりやすく解説。「知恵」を象徴する早春に咲く花木の意味を紹介します。">
+  <meta name="description" content="3月1日の誕生花ボケの花言葉・特徴・魅力をわかりやすく解説。「知恵」を象徴する、早春に赤や白の花を咲かせる花木の意味を紹介します。">
   <title>3月1日の誕生花はボケ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ボケはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、まだ寒さが残る頃に赤や白の花を枝に沿って咲かせます。バラ科の落葉低木で、春を告げる花木として親しまれています。"}},
-      {"@type":"Question","name":"ボケの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「知恵」という花言葉は、他の花に先駆けて早春から力強く咲く姿が、落ち着いた知性を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ボケという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"漢字で「木瓜」と書き、実の形が瓜（うり）に似ていることに由来すると言われています。秋につける黄色い実は香りがよく、果実酒などにも利用されます。"}}
+      {"@type":"Question","name":"ボケはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に見頃を迎えます。赤や白の花を枝に沿って咲かせ、他の花木に先駆けて春の訪れを告げてくれます。"}},
+      {"@type":"Question","name":"ボケの花言葉「知恵」の由来は？","acceptedAnswer":{"@type":"Answer","text":"他の花に先駆けて咲きながらも、赤と白の花が同じ枝に入り混じって咲く、じっくりと物事を見極めるような咲き方に由来するといわれています。"}},
+      {"@type":"Question","name":"ボケという名前はネガティブな意味ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、植物としてのボケは花の美しさで親しまれる花木です。名前の響きと花そのものの魅力は別のものとして楽しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 1 · 誕生花</span>
     <h1>3月1日の誕生花はボケ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ボケは、バラ科の落葉低木で、早春に赤や白の花を枝に沿って咲かせる3月1日の誕生花です。花言葉は「知恵」。素朴で力強い、春を告げる花木です。</p>
+    <p class="art-lead">早春、他の花に先駆けて枝いっぱいに赤や白の花を咲かせるボケ。3月1日の誕生花に選ばれたこの花木は、素朴でありながら力強い春の便りを届けてくれます。今日はその静かな存在感に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ボケとは</a></li>
-      <li><a href="#meaning">ボケが象徴する意味</a></li>
-      <li><a href="#charm">ボケの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">早春の枝に、他の花より先んじて咲くボケの赤と白</a></li>
+      <li><a href="#story">3月1日、ボケが枝いっぱいに教える春待つ知恵</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ボケから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ボケとは</h2>
-    <p>ボケは、バラ科の落葉低木で、3月1日の誕生花として知られています。「木瓜」と書き、早春、葉が出るよりも先に赤や白、時に紅白が混じった花を枝いっぱいに咲かせます。中国原産で、日本には古くから渡来し、庭木や盆栽としても親しまれてきました。</p>
-  </section>
+    <h2>早春の枝に、他の花より先んじて咲くボケの赤と白</h2>
+    <p>ボケは、バラ科の落葉低木です。早春、まだ他の花木の多くが芽吹く前に、赤や白の花を枝に沿って咲かせます。派手な華やかさよりも、素朴で力強い佇まいが持ち味で、寒さの残る庭先や公園で春の気配を最初に知らせてくれる花木の一つとして親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ボケが象徴する意味</h2>
-    <p>ボケの花言葉は「知恵」です。寒さの残る早春に他の花に先駆けて力強く花を咲かせる姿が、物事を見通す落ち着いた知性を思わせることに由来すると言われています。「先駆者」「早熟」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ボケの魅力</h2>
-    <p>ボケの魅力は、まだ肌寒い季節に一足早く咲く花の素朴な力強さにあります。トゲのある枝ぶりと相まって野趣あふれる表情を見せながらも、花色は華やかで、庭に春の気配を運んでくれます。秋には黄色い実をつけ、香りを楽しんだり果実酒に利用したりする楽しみ方もあります。3月1日生まれの方はもちろん、力強く歩み始める門出を祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ボケは日当たりと水はけの良い場所を好み、乾燥しすぎない程度に水を与えて育てるのがおすすめです。花芽は前年の枝にできるため、剪定は花が終わった直後に行うと翌年も花付きよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月1日生まれの方はもちろん、力強い一歩を踏み出す人への贈り物としてもボケは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ボケはいつ頃咲きますか？</div>
-        <div class="faq-a">早春、まだ寒さが残る頃に赤や白の花を枝に沿って咲かせます。バラ科の落葉低木で、春を告げる花木として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ボケの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「知恵」という花言葉は、他の花に先駆けて早春から力強く咲く姿が、落ち着いた知性を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ボケという名前の由来は何ですか？</div>
-        <div class="faq-a">漢字で「木瓜」と書き、実の形が瓜（うり）に似ていることに由来すると言われています。秋につける黄色い実は香りがよく、果実酒などにも利用されます。</div>
+        <div class="faq-a">早春に見頃を迎えます。赤や白の花を枝に沿って咲かせ、他の花木に先駆けて春の訪れを告げてくれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月1日、ボケが枝いっぱいに教える春待つ知恵</h2>
+    <p>3月に入ったばかりのこの時期は、暦の上ではもう春でも、朝晩の空気はまだ冷たく、景色の多くは冬の名残をとどめています。そんな中でボケは、他の花に先駆けて赤や白の花を咲かせ、枝いっぱいに春の兆しを広げていきます。一本の枝をよく見ると、赤い花と白い花が入り混じって咲いていることに気づくことがあります。同じ枝から咲く花なのに、色合いが異なる――その様子は、一つの物事にも複数の見え方があることをそっと教えてくれるようです。慌てて先を急がず、枝先の変化をじっくり見極めるボケの咲き方から、「知恵」という花言葉が生まれたといわれています。物事の本質をゆっくり見極める姿勢は、慌ただしい年度替わりを前にした今の時期にこそ、心に留めておきたい知恵なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ボケの花言葉「知恵」の由来は？</div>
+        <div class="faq-a">他の花に先駆けて咲きながらも、赤と白の花が同じ枝に入り混じって咲く、じっくりと物事を見極めるような咲き方に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>焦らずに、枝先の小さな変化を見つめてみる。今日はそんな静かな観察から、思わぬ気づきが生まれる一日になりそうです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ボケから始める小さな体験</h2>
+    <p>早春に赤や白の花を咲かせるボケにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>枝に沿って咲く赤や白の花を探して観察してみる</li>
+      <li>迷っていることについて、一晩考えを整理してみる</li>
+      <li>知っていることを一つ、誰かに分かりやすく伝えてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ボケという名前はネガティブな意味ですか？</div>
+        <div class="faq-a">いいえ、植物としてのボケは花の美しさで親しまれる花木です。名前の響きと花そのものの魅力は別のものとして楽しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">枝先の小さな違いに気づけた今日は、六曜や月の満ち欠けにも目を向けてみませんか。開運カレンダーでは、その日の六曜や月齢もあわせて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月1日、他の花に先駆けて赤と白の花を枝いっぱいに咲かせるボケは、慌てず物事を見極める知恵を教えてくれる花木です。</p>
     <ul>
-      <li>ボケは早春に赤や白の花を咲かせる、3月1日の誕生花</li>
-      <li>花言葉は「知恵」、他の花に先駆けて咲く力強さに由来する</li>
-      <li>素朴で野趣あふれる花姿と、秋につける香り高い実が魅力</li>
-      <li>日当たりの良い場所で、花後すぐの剪定を心がけて育てたい</li>
+      <li>ボケはバラ科の落葉低木で、早春に赤や白の花を枝に沿って咲かせる</li>
+      <li>同じ枝に異なる色の花が咲く姿が、物事を見極める知恵の象徴とされる</li>
+      <li>花言葉は「知恵」。じっくりと本質を見極める姿勢を表すといわれる</li>
+      <li>ボケという名前と花そのものの魅力は別のものとして親しまれている</li>
     </ul>
   </section>
 

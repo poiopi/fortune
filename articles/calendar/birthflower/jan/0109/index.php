@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ユキワリソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春、雪解けとともに花を咲かせます。"}},
-      {"@type":"Question","name":"ユキワリソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「期待」という花言葉は、雪解けを待って咲く姿がこれから訪れる春への期待を象徴することに由来するとされています。"}},
-      {"@type":"Question","name":"ユキワリソウとミスミソウは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"どちらも「雪割草」と呼ばれることがありますが、ユキワリソウはサクラソウ科で、ミスミソウ（キンポウゲ科）とは異なる植物です。"}}
+      {"@type":"Question","name":"ユキワリソウの名前の由来は？","acceptedAnswer":{"@type":"Answer","text":"雪を割るようにして花を咲かせる姿が名前の由来とされています。別種のミスミソウも「雪割草」の俗称で呼ばれることがあるため、混同しないよう注意が必要です。"}},
+      {"@type":"Question","name":"ユキワリソウの花言葉「期待」の由来は？","acceptedAnswer":{"@type":"Answer","text":"雪の下でじっと春を待ち、やがて雪を割って花を咲かせる姿から「期待」という花言葉が生まれたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 9 · 誕生花</span>
     <h1>1月9日の誕生花はユキワリソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ユキワリソウは、雪解けとともに咲く1月9日の誕生花です。花言葉は「期待」。可憐な花姿が特徴です。</p>
+    <p class="art-lead">松の内も明ける1月9日。まだ雪の下にある大地では、ユキワリソウがその名の通り、雪を割って顔を出す準備を進めています。控えめながらも確かなその力を、今日は少しのぞいてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ユキワリソウとは</a></li>
-      <li><a href="#meaning">ユキワリソウが象徴する意味</a></li>
-      <li><a href="#charm">ユキワリソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">雪を割って咲く、ユキワリソウの名の通り</a></li>
+      <li><a href="#story">1月9日、ユキワリソウが灯す小さな期待</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ユキワリソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ユキワリソウとは</h2>
-    <p>ユキワリソウは、サクラソウ科の多年草で、1月9日の誕生花として知られています。早春、雪解けとともに小さく可憐な花を咲かせることからこの名がつけられました。</p>
-  </section>
+    <h2>雪を割って咲く、ユキワリソウの名の通り</h2>
+    <p>ユキワリソウは、サクラソウ科の多年草です。早春、雪解けとともに花を咲かせ、その名の通り、まるで雪を割るようにして顔を出す姿が特徴です。花色は白や紫など多彩で、小さいながらも凛とした印象を与えます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ユキワリソウが象徴する意味</h2>
-    <p>ユキワリソウの花言葉は「期待」です。雪解けを待って咲くその姿から、これから訪れる春への期待や希望を象徴する花とされてきました。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ユキワリソウの魅力</h2>
-    <p>ユキワリソウの魅力は、雪解けの中でそっと顔を出す控えめな花姿と、春の訪れを予感させる可憐さにあります。庭や鉢植えでも育てやすく、早春の景色に小さな彩りを添えてくれます。1月9日生まれの方はもちろん、これからの期待を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ユキワリソウは半日陰を好み、乾燥を嫌うため、土が乾ききる前に水を与えるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月9日生まれの方はもちろん、これからの期待を伝えたい贈り物としてもユキワリソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウはいつ頃咲きますか？</div>
-        <div class="faq-a">早春、雪解けとともに花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「期待」という花言葉は、雪解けを待って咲く姿がこれから訪れる春への期待を象徴することに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウとミスミソウは同じ花ですか？</div>
-        <div class="faq-a">どちらも「雪割草」と呼ばれることがありますが、ユキワリソウはサクラソウ科で、ミスミソウ（キンポウゲ科）とは異なる植物です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウの名前の由来は？</div>
+        <div class="faq-a">雪を割るようにして花を咲かせる姿が名前の由来とされています。別種のミスミソウも「雪割草」の俗称で呼ばれることがあるため、混同しないよう注意が必要です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月9日、ユキワリソウが灯す小さな期待</h2>
+    <p>まだ雪に覆われた地面の下で、ユキワリソウは静かに開花の準備を進めています。硬い雪の層を割ってでも顔を出そうとするその姿は、控えめながらも確かな意志を感じさせます。松の内が明け、日常が本格的に動き始める1月9日。目に見える変化はまだなくても、次の一歩へ向けた小さな期待を胸に抱く頃合いなのかもしれません。花言葉は「期待」。雪の下で春を待つその姿から生まれた言葉だといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ユキワリソウの花言葉「期待」の由来は？</div>
+        <div class="faq-a">雪の下でじっと春を待ち、やがて雪を割って花を咲かせる姿から「期待」という花言葉が生まれたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>小さな期待は、恥ずかしがらずに抱いていいものです。雪の下で静かに準備を進めるユキワリソウのように、今日はあなたの中の楽しみを一つ、そっと育ててみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ユキワリソウから始める小さな体験</h2>
+    <p>雪の下で春を待つユキワリソウにあやかって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>雪解けの季節の変化に目を向けてみる</li>
+      <li>楽しみにしていることを一つ思い浮かべてみる</li>
+      <li>早春の空気を感じに外に出てみる</li>
+    </ul>
+
+    <p class="cta-lead">小さな期待を胸に過ごした今日は、運気の流れもあわせてチェックしてみませんか。開運カレンダーでは、日々の吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ユキワリソウは、雪を割って春を告げる、1月9日らしい誕生花です。</p>
     <ul>
-      <li>ユキワリソウは雪解けとともに咲く、1月9日の誕生花</li>
-      <li>花言葉は「期待」、春への希望を象徴する花とされる</li>
-      <li>控えめで可憐な花姿が魅力</li>
-      <li>乾燥を嫌うため、半日陰で育てたい</li>
+      <li>ユキワリソウはサクラソウ科の多年草で、早春、雪解けとともに花を咲かせる</li>
+      <li>雪を割るように咲く姿が名前の由来とされる</li>
+      <li>花言葉は「期待」。雪の下で春を待つ姿を象徴する言葉とされる</li>
+      <li>別種のミスミソウ（俗称・雪割草）と名前が似ているため注意したい</li>
     </ul>
   </section>
 

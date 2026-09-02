@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0423/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月23日の誕生花ボタンの花言葉・特徴・魅力をわかりやすく解説。「王者の風格」を象徴する百花の王の意味を紹介します。">
+  <meta name="description" content="4月23日の誕生花ボタンの花言葉・特徴・魅力をわかりやすく解説。百花の王とも称される大輪の花が象徴する「王者の風格」の意味を紹介します。">
   <title>4月23日の誕生花はボタン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ボタンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に大輪の華やかな花を咲かせます。ボタン科の落葉低木で、百花の王とも称されます。"}},
-      {"@type":"Question","name":"ボタンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「王者の風格」という花言葉は、大輪の花を堂々と咲かせる姿が、気高さと威厳を感じさせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ボタンとシャクヤクはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"ボタンは木本（落葉低木）であるのに対し、シャクヤクは草本（多年草）である点が大きな違いです。花姿がよく似ているため混同されることもあります。"}}
+      {"@type":"Question","name":"ボタンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に大輪の華やかな花を咲かせます。ボタン科の落葉低木で、「百花の王」とも称される花です。"}},
+      {"@type":"Question","name":"ボタンの花言葉「王者の風格」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一輪だけでも空間の中心になるほどの大輪の花を咲かせる存在感が、「百花の王」と称される所以であり、この称号に由来するといわれています。"}},
+      {"@type":"Question","name":"ボタンとシャクヤクはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらも大輪の花を咲かせ、見た目が似ていることから見分けが難しいとされます。詳しい違いについては専門的な資料も参考にしてみてください。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 23 · 誕生花</span>
     <h1>4月23日の誕生花はボタン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ボタンは、ボタン科の落葉低木で、春に大輪の華やかな花を咲かせる4月23日の誕生花です。花言葉は「王者の風格」。百花の王とも称される花です。</p>
+    <p class="art-lead">4月23日、大輪の花が堂々と咲き誇る頃。「百花の王」とも称されるボタンは、自分を小さく見せる必要はないのだと教えてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ボタンとは</a></li>
-      <li><a href="#meaning">ボタンが象徴する意味</a></li>
-      <li><a href="#charm">ボタンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月23日の誕生花として親しまれるボタン</a></li>
+      <li><a href="#story">大輪が漂わせる、ボタンの王者の風格</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ボタンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ボタンとは</h2>
-    <p>ボタンは、ボタン科の落葉低木で、4月23日の誕生花として知られています。「百花の王」とも称されるほど大輪で豪華な花を咲かせ、幾重にも重なる花びらが生み出すボリューム感は、他の花にはない堂々とした存在感を放ちます。</p>
-  </section>
+    <h2>4月23日の誕生花として親しまれるボタン</h2>
+    <p>ボタンは、ボタン科の落葉低木です。春になると、大きく重なり合う花びらを持つ華やかな大輪の花を咲かせます。古くから「百花の王」とも称され、数ある花の中でも別格の存在感を放つ花として親しまれてきました。この堂々とした佇まいから、4月23日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ボタンが象徴する意味</h2>
-    <p>ボタンの花言葉は「王者の風格」です。大輪の花を堂々と咲かせる姿が、他を圧倒する気高さと威厳を感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ボタンの魅力</h2>
-    <p>ボタンの魅力は、大輪の花が枝いっぱいに咲き誇る豪華絢爛な景観にあります。花色も赤やピンク、白、黄色など幅広く、日本庭園から洋風の庭まで、どんな場所でも主役になれる貫禄を持つ花です。4月23日生まれの方はもちろん、堂々とした門出を祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ボタンは日当たりと水はけの良い場所を好み、強い西日を避けて育てるのがおすすめです。植え替えを嫌うため、一度植えたら根を大きく張らせて育てます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月23日生まれの方はもちろん、堂々とした贈り物としてもボタンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ボタンはいつ頃咲きますか？</div>
-        <div class="faq-a">春に大輪の華やかな花を咲かせます。ボタン科の落葉低木で、百花の王とも称されます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ボタンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「王者の風格」という花言葉は、大輪の花を堂々と咲かせる姿が、気高さと威厳を感じさせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ボタンとシャクヤクはどう違いますか？</div>
-        <div class="faq-a">ボタンは木本（落葉低木）であるのに対し、シャクヤクは草本（多年草）である点が大きな違いです。花姿がよく似ているため混同されることもあります。</div>
+        <div class="faq-a">春に大輪の華やかな花を咲かせます。ボタン科の落葉低木で、「百花の王」とも称される花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>大輪が漂わせる、ボタンの王者の風格</h2>
+    <p>庭のどこに植えられていても、ボタンが咲いていればそこが自然と視線の集まる場所になります。幾重にも重なった花びらが作り出す大きな花は、控えめな咲き方をする花々とはまったく違う存在感を放ちます。しかしその華やかさは、決して他を蹴落として得たものではありません。ただ自分の持てる力を惜しみなく咲かせているだけで、結果として周囲を圧倒する。そんな飾らない堂々とした在り方こそが、「百花の王」と称される所以なのでしょう。自信を持って自分の魅力を発揮することは、決して傲慢なことではありません。むしろ、自分の価値を正しく認め、堂々と表現できることの証でもあります。そんな在り方から、ボタンには「王者の風格」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ボタンの花言葉「王者の風格」の由来は？</div>
+        <div class="faq-a">一輪だけでも空間の中心になるほどの大輪の花を咲かせる存在感が、「百花の王」と称される所以であり、この称号に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分の魅力を堂々と表に出すことは、決して悪いことではありません。今日は少し胸を張って、自分の持ち味を素直に見せてみてはいかがでしょうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ボタンから始める小さな体験</h2>
+    <p>堂々とした大輪の花を咲かせるボタンにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>大輪の花をじっくり観察してみる</li>
+      <li>自分の中の自信を一つ、思い出してみる</li>
+      <li>堂々とした振る舞いを意識して過ごしてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ボタンとシャクヤクはどう違いますか？</div>
+        <div class="faq-a">どちらも大輪の花を咲かせ、見た目が似ていることから見分けが難しいとされます。詳しい違いについては専門的な資料も参考にしてみてください。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">堂々とした自分でありたい今日は、ラッキーナンバーやおすすめの行動も気になるところ。開運カレンダーでは、その日のラッキーナンバーとおすすめの行動をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月23日、大輪の花を堂々と咲かせるボタンは、自分の魅力を正しく認めて表現することの大切さを教えてくれる花です。</p>
     <ul>
-      <li>ボタンは春に大輪の花を咲かせる、4月23日の誕生花</li>
-      <li>花言葉は「王者の風格」、堂々とした花姿に由来する</li>
-      <li>豪華絢爛な花色とボリューム感のある花姿が魅力</li>
-      <li>日当たりと水はけの良い場所で、植え替えを避けて育てたい</li>
+      <li>ボタンはボタン科の落葉低木で、春に大輪の華やかな花を咲かせる</li>
+      <li>「百花の王」とも称される、別格の存在感を持つ花である</li>
+      <li>花言葉は「王者の風格」。大輪が放つ堂々とした存在感に由来するといわれる</li>
+      <li>王者の風格は、自分の魅力を素直に認めて表現する姿勢を表す言葉ともいえる</li>
     </ul>
   </section>
 

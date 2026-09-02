@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0807/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月7日の誕生花オクラの花言葉・特徴・魅力をわかりやすく解説。「初恋」を象徴する淡い黄色の花の意味を紹介します。">
+  <meta name="description" content="8月7日の誕生花オクラの花言葉・特徴・魅力をわかりやすく解説。淡い黄色の花が夏の食卓を彩る野菜へと実る意味を紹介します。">
   <title>8月7日の誕生花はオクラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に淡い黄色の花を咲かせます。アオイ科の一年草です。"}},
-      {"@type":"Question","name":"オクラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"淡く優しい黄色の花びらが一日だけ咲いて静かにしぼむはかなさが、初めて誰かを想う初々しい恋心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"オクラの花はどのくらいの期間咲きますか？","acceptedAnswer":{"@type":"Answer","text":"1つの花は一日だけ咲いてしぼむ一日花です。夏の間、次々と新しい花を咲かせ続けます。"}}
+      {"@type":"Question","name":"オクラの花はどんな色をしていますか？","acceptedAnswer":{"@type":"Answer","text":"淡い黄色の花びらを咲かせます。夏に見頃を迎える、アオイ科の一年草です。"}},
+      {"@type":"Question","name":"オクラの花言葉『初恋』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"淡く優しい色の花びらが一日だけ咲いて静かにしぼむ、そのはかない姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 7 · 誕生花</span>
     <h1>8月7日の誕生花はオクラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オクラは、アオイ科の一年草で、夏になると淡い黄色の花を咲かせる、清らかで初々しい印象を漂わせる植物です。花言葉は「初恋」。清らかで初々しい花です。</p>
+    <p class="art-lead">食卓でおなじみのあの野菜にも、知られざる花の顔がある。淡い黄色の花びらが一日だけ開き、静かにしぼんでいく。それがオクラの、8月7日の姿だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オクラとは</a></li>
-      <li><a href="#meaning">オクラが象徴する意味</a></li>
-      <li><a href="#charm">オクラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月7日の誕生花として親しまれるオクラ</a></li>
+      <li><a href="#story">夏野菜へ実る前の、淡い初恋の花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オクラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オクラとは</h2>
-    <p>オクラは、アオイ科の一年草で、8月7日の誕生花として知られています。夏になると淡い黄色の花を咲かせる、清らかで初々しい印象を漂わせる植物です。</p>
-  </section>
+    <h2>8月7日の誕生花として親しまれるオクラ</h2>
+    <p>オクラは、アオイ科の一年草です。夏になると、淡い黄色の花を咲かせます。野菜として親しまれているこの植物は、花が咲いたあとに実がなるまでの過程を知る人は意外と少なく、淡く優しい色の花を咲かせる姿は見過ごされがちです。この花が、8月7日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オクラが象徴する意味</h2>
-    <p>オクラの花言葉は「初恋」です。淡く優しい黄色の花びらが一日だけ咲いて静かにしぼむはかなさが、初めて誰かを想う初々しい恋心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オクラの魅力</h2>
-    <p>オクラの魅力は、野菜として親しまれる一方で、ハイビスカスにも似た淡い黄色の花を咲かせる美しさにもあります。花の中心にある赤紫色の模様が、清楚な花姿にアクセントを添えます。8月7日生まれの方はもちろん、初恋のような初々しい想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オクラは日当たりと高温を好み、乾燥に強いため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月7日生まれの方はもちろん、初恋のような初々しい想いを伝えたい贈り物としてもオクラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オクラはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に淡い黄色の花を咲かせます。アオイ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オクラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">淡く優しい黄色の花びらが一日だけ咲いて静かにしぼむはかなさが、初めて誰かを想う初々しい恋心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オクラの花はどのくらいの期間咲きますか？</div>
-        <div class="faq-a">1つの花は一日だけ咲いてしぼむ一日花です。夏の間、次々と新しい花を咲かせ続けます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オクラの花はどんな色をしていますか？</div>
+        <div class="faq-a">淡い黄色の花びらを咲かせます。夏に見頃を迎える、アオイ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夏野菜へ実る前の、淡い初恋の花</h2>
+    <p>食卓でおなじみのオクラも、花を見る機会は案外少ない。淡い黄色の花びらが重なり合って咲く姿は、上品な印象を与える。この花は一日だけ咲いてしぼみ、そのあとに私たちがよく知るあの角ばった実が育っていく。花としての時間の短さと、野菜としての存在の長さ――この対比が、オクラという植物のもう一つの顔を教えてくれる。花言葉「初恋」は、この淡く儚い花の姿から生まれたと言われている。夏野菜として食卓に上がるたび、その始まりに花があったことを思い出すのも一興だろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オクラの花言葉『初恋』にはどんな由来がありますか？</div>
+        <div class="faq-a">淡く優しい色の花びらが一日だけ咲いて静かにしぼむ、そのはかない姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>始まりは、いつも小さく静かにやってくる。オクラの花も、一日だけそっと開いて役目を終える。忘れかけていた初々しい気持ちを、今日はふと思い出す日にしてもいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オクラから始める小さな体験</h2>
+    <p>淡い黄色の花を一日だけ咲かせるオクラにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>淡い黄色の花をじっくり観察してみる</li>
+      <li>夏野菜のオクラを食卓に取り入れてみる</li>
+      <li>初々しい気持ちを一つ、思い出してみる</li>
+    </ul>
+
+    <p class="cta-lead">初々しい気持ちで一日を過ごしたい方は、今日のラッキーフードもあわせて確認してみませんか。開運カレンダーでは、ラッキーフードとおすすめの行動を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一日だけ咲いてしぼむ花の先で、あの夏野菜がゆっくり育っていく。</p>
     <ul>
-      <li>オクラは夏に淡い黄色の花を咲かせる、8月7日の誕生花</li>
-      <li>花言葉は「初恋」、はかなく咲く花姿に由来する</li>
-      <li>野菜としても親しまれる清らかな花が魅力</li>
-      <li>日当たりと高温を好む</li>
+      <li>オクラは夏に淡い黄色の花を咲かせる、アオイ科の一年草で、8月7日の誕生花</li>
+      <li>花言葉は「初恋」。一日だけ咲くはかない花姿に由来するとされる</li>
+      <li>野菜として親しまれる一方、花はあまり知られていない</li>
+      <li>花が咲き終えたあと、おなじみの野菜へと実っていく</li>
     </ul>
   </section>
 
@@ -260,3 +269,4 @@ function toggleFaq(el){
 $html = ob_get_clean();
 echo autoLink($html, 'birthflower-aug-0807');
 ?>
+</content>

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0621/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月21日の誕生花フロスフラワーの花言葉・特徴・魅力をわかりやすく解説。「安楽」を象徴するふわふわとした質感の花の意味を紹介します。">
+  <meta name="description" content="6月21日の誕生花フロスフラワーの花言葉・特徴・魅力をわかりやすく解説。ふわふわとした質感の花を咲かせる、キク科「安楽」の花を紹介します。">
   <title>6月21日の誕生花はフロスフラワー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フロスフラワーはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にふわふわとした質感の花を咲かせます。キク科の一年草です。"}},
-      {"@type":"Question","name":"フロスフラワーの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「安楽」という花言葉は、綿毛のように柔らかくふんわりと咲く花の質感が心地よい安らぎを連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"フロスフラワーはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"花壇に群生させて柔らかな雰囲気を楽しむほか、切り花としてアレンジメントにもよく使われます。"}}
+      {"@type":"Question","name":"フロスフラワーはどんな質感の花ですか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋にかけて咲く、ふわふわとした質感が特徴のキク科の一年草です。見た目の柔らかさから癒やしを感じさせます。"}},
+      {"@type":"Question","name":"フロスフラワーの花言葉「安楽」の由来は？","acceptedAnswer":{"@type":"Answer","text":"急かされることなく、ふわふわとした質感でゆったりと咲く花の姿に由来すると考えられています。"}},
+      {"@type":"Question","name":"フロスフラワーはどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"切り花やドライフラワーとして飾ると、柔らかな質感を長く楽しめます。花束のアクセントとしても人気があります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 21 · 誕生花</span>
     <h1>6月21日の誕生花はフロスフラワー<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フロスフラワーは、キク科の一年草で、夏から秋にふわふわとした質感の花を咲かせる6月21日の誕生花です。花言葉は「安楽」。柔らかく優しい印象の花です。</p>
+    <p class="art-lead">夏から秋にかけて、ふわふわとした綿菓子のような花が咲き始めます。フロスフラワーは、ふわふわとした質感の花を咲かせる、キク科の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フロスフラワーとは</a></li>
-      <li><a href="#meaning">フロスフラワーが象徴する意味</a></li>
-      <li><a href="#charm">フロスフラワーの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月21日の誕生花として親しまれるフロスフラワー</a></li>
+      <li><a href="#story">柔らかな質感がほどく、フロスフラワーの季節</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フロスフラワーから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フロスフラワーとは</h2>
-    <p>フロスフラワーは、キク科の一年草で、6月21日の誕生花として知られています。夏から秋になるとふわふわとした質感の花を咲かせ、柔らかく優しい印象を漂わせる花です。</p>
-  </section>
+    <h2>6月21日の誕生花として親しまれるフロスフラワー</h2>
+    <p>フロスフラワーは、キク科の一年草です。夏から秋にかけて、ふわふわとした質感の花を咲かせ、その柔らかな見た目から人気を集めています。癒やしを感じさせる花として、6月21日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フロスフラワーが象徴する意味</h2>
-    <p>フロスフラワーの花言葉は「安楽」です。綿毛のように柔らかくふんわりと咲く花の質感が、心地よい安らぎのひとときを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フロスフラワーの魅力</h2>
-    <p>フロスフラワーの魅力は、糸をほぐしたようなふわふわとした花びらの質感と、青紫や白など優しい色合いにあります。花壇に植えると柔らかな雰囲気を作り出し、切り花としても長く楽しめます。6月21日生まれの方はもちろん、安らぎを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フロスフラワーは日当たりと水はけの良い場所を好み、過湿を避けて育てるとよく花を咲かせます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月21日生まれの方はもちろん、安らぎを届けたい贈り物としてもフロスフラワーは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フロスフラワーはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋にふわふわとした質感の花を咲かせます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フロスフラワーの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「安楽」という花言葉は、綿毛のように柔らかくふんわりと咲く花の質感が心地よい安らぎを連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フロスフラワーはどんな楽しみ方がありますか？</div>
-        <div class="faq-a">花壇に群生させて柔らかな雰囲気を楽しむほか、切り花としてアレンジメントにもよく使われます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フロスフラワーはどんな質感の花ですか？</div>
+        <div class="faq-a">夏から秋にかけて咲く、ふわふわとした質感が特徴のキク科の一年草です。見た目の柔らかさから癒やしを感じさせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>柔らかな質感がほどく、フロスフラワーの季節</h2>
+    <p>これから夏の盛りへと向かう季節、フロスフラワーはゆっくりと蕾をふくらませ、やがてふわふわとした質感の花を咲かせていきます。急いで咲き誇るのではなく、季節の巡りに身をゆだねるように咲く姿は、どこか肩の力が抜けたような穏やかさをまとっています。綿菓子を思わせる柔らかな花びらに触れると、こわばった気持ちがすっとほどけていくようです。急かされることなく、ゆったりと時を過ごすようなその質感から、フロスフラワーには「安楽」という花言葉が重ねられてきたようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フロスフラワーの花言葉「安楽」の由来は？</div>
+        <div class="faq-a">急かされることなく、ふわふわとした質感でゆったりと咲く花の姿に由来すると考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>何もかも頑張り続けなくても、いい日はあります。フロスフラワーの柔らかな花びらのように、力を抜いた時間もまた必要なものです。肩の力がふっと抜ける瞬間は、案外身近なところに隠れているようです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フロスフラワーから始める小さな体験</h2>
+    <p>柔らかな花びらを思い浮かべながら、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ふわふわとした質感の花をじっくり観察してみる</li>
+      <li>ゆったりとくつろぐ時間を少し作ってみる</li>
+      <li>柔らかい手触りのものに触れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フロスフラワーはどんな楽しみ方がありますか？</div>
+        <div class="faq-a">切り花やドライフラワーとして飾ると、柔らかな質感を長く楽しめます。花束のアクセントとしても人気があります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">肩の力を抜いて過ごしたい今日は、ラッキーカラーやおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、今日のラッキーカラーとおすすめの行動を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>急かされることなくふわふわと咲くフロスフラワーの姿を見ていると、力を抜くこともまた大切な時間の過ごし方なのだと思えてきます。</p>
     <ul>
-      <li>フロスフラワーは夏から秋にふわふわとした花を咲かせる、6月21日の誕生花</li>
-      <li>花言葉は「安楽」、柔らかな花の質感に由来する</li>
-      <li>綿毛のような質感と優しい色合いが魅力</li>
-      <li>日当たりと水はけの良い場所でよく育つ</li>
+      <li>フロスフラワーはキク科の一年草で、夏から秋にかけて花を咲かせる、6月21日の誕生花</li>
+      <li>花言葉は「安楽」。ゆったりと咲く柔らかな質感に由来するとされる</li>
+      <li>ふわふわとした質感が魅力</li>
+      <li>切り花やドライフラワーとして長く楽しめる</li>
     </ul>
   </section>
 

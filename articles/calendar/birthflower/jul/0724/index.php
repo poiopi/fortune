@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0724/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月24日の誕生花オシロイバナの花言葉・特徴・魅力をわかりやすく解説。「内気」を象徴する夕方に咲くラッパ状の花の意味を紹介します。">
+  <meta name="description" content="7月24日の誕生花オシロイバナの花言葉・特徴・魅力をわかりやすく解説。夕方に開き翌朝しぼむラッパ状の花を咲かせる、オシロイバナ科の花を紹介します。">
   <title>7月24日の誕生花はオシロイバナ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オシロイバナはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋の夕方に開き翌朝しぼむラッパ状の花を咲かせます。オシロイバナ科の多年草です。"}},
-      {"@type":"Question","name":"オシロイバナの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"夕方になってからひっそりと花を開く控えめな性質が、恥ずかしがり屋な内気さを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"オシロイバナという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"熟した黒い種の中に入っている白い粉が、化粧に使うおしろいに似ていることから名付けられたとされています。"}}
+      {"@type":"Question","name":"オシロイバナはいつ頃花を開きますか？","acceptedAnswer":{"@type":"Answer","text":"夏から秋の夕方に開き、翌朝にはしぼみます。オシロイバナ科の多年草です。"}},
+      {"@type":"Question","name":"オシロイバナの花言葉『内気』の意味は？","acceptedAnswer":{"@type":"Answer","text":"人目を集める昼を避け、夕暮れにひっそりと花開く控えめな咲き方が、この花言葉と結びついてきたといわれています。"}}
     ]
   }
   </script>
@@ -129,14 +138,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 24 · 誕生花</span>
     <h1>7月24日の誕生花はオシロイバナ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オシロイバナは、オシロイバナ科の多年草で、夏から秋の夕方になるとラッパ状の花を咲かせ、翌朝にはしぼんでしまう素朴で懐かしい花です。花言葉は「内気」。夕暮れにひっそりと花開く花です。</p>
+    <p class="art-lead">夕暮れが近づく頃、閉じていた花がゆっくりとラッパの形に開いていきます。オシロイバナは、日が沈む時間にだけ姿を見せる素朴な花です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>オシロイバナ</dd>
     <dt>花言葉</dt><dd>内気</dd>
     <dt>科名</dt><dd>オシロイバナ科</dd>
-    <dt>見頃</dt><dd>夏〜秋</dd>
+    <dt>見頃</dt><dd>夏〜秋（夕方）</dd>
   </dl>
 
   <?php
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オシロイバナとは</a></li>
-      <li><a href="#meaning">オシロイバナが象徴する意味</a></li>
-      <li><a href="#charm">オシロイバナの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月24日の誕生花として親しまれるオシロイバナ</a></li>
+      <li><a href="#story">夕暮れに開き、朝にしぼむ、オシロイバナの素朴な咲き方</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オシロイバナから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オシロイバナとは</h2>
-    <p>オシロイバナは、オシロイバナ科の多年草で、7月24日の誕生花として知られています。夏から秋の夕方になるとラッパ状の花を咲かせ、翌朝にはしぼんでしまう素朴で懐かしい花です。</p>
-  </section>
+    <h2>7月24日の誕生花として親しまれるオシロイバナ</h2>
+    <p>オシロイバナは、オシロイバナ科の多年草です。夏から秋の夕方に開き、翌朝にはしぼむラッパ状の花を咲かせます。7月24日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オシロイバナが象徴する意味</h2>
-    <p>オシロイバナの花言葉は「内気」です。夕方になってからひっそりと花を開く控えめな性質が、恥ずかしがり屋な内気さを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オシロイバナの魅力</h2>
-    <p>オシロイバナの魅力は、夕暮れどきにふわりと香り立つ花の素朴な美しさと、種の白い粉を白粉に見立てた懐かしい親しみやすさにあります。こぼれ種でよく増え、道端でも見かける身近な花です。7月24日生まれの方はもちろん、控えめな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オシロイバナは日当たりを好み、丈夫でこぼれ種でもよく増えるため管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月24日生まれの方はもちろん、控えめな想いを伝えたい贈り物としてもオシロイバナは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オシロイバナはいつ頃咲きますか？</div>
-        <div class="faq-a">夏から秋の夕方に開き翌朝しぼむラッパ状の花を咲かせます。オシロイバナ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オシロイバナの花言葉の由来は何ですか？</div>
-        <div class="faq-a">夕方になってからひっそりと花を開く控えめな性質が、恥ずかしがり屋な内気さを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オシロイバナという名前の由来は何ですか？</div>
-        <div class="faq-a">熟した黒い種の中に入っている白い粉が、化粧に使うおしろいに似ていることから名付けられたとされています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オシロイバナはいつ頃花を開きますか？</div>
+        <div class="faq-a">夏から秋の夕方に開き、翌朝にはしぼみます。オシロイバナ科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>夕暮れに開き、朝にしぼむ、オシロイバナの素朴な咲き方</h2>
+    <p>周囲が明るいうちは静かに閉じたまま過ごし、夕暮れが近づいてようやくラッパの形にゆっくりと開いていく――それがオシロイバナの咲き方です。人目を集める時間を避けるようなこの姿は、華やかさを競うのではなく、控えめで飾らない佇まいを感じさせます。夜の間だけひっそり花開き、翌朝にはまたしぼんでしまうこのサイクルに、『内気』という花言葉を重ねる人は少なくないようです。人目のない時間をあえて選んで咲くという生き方も、この花にとってはごく自然なことなのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オシロイバナの花言葉『内気』の意味は？</div>
+        <div class="faq-a">人目を集める昼を避け、夕暮れにひっそりと花開く控えめな咲き方が、この花言葉と結びついてきたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>人前で無理に目立とうとしなくても構いません。自分にとって心地よいタイミングを選び取ることも、立派な在り方の一つです。オシロイバナも、あたりが静かになる夕暮れにようやく花を開きます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オシロイバナから始める小さな体験</h2>
+    <p>夕暮れにラッパ状の花を咲かせるオシロイバナにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>夕方、ラッパ状の花が開く瞬間を観察してみる</li>
+      <li>控えめだけど自分らしい行動を一つしてみる</li>
+      <li>懐かしさを感じる時間を過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">目立たなくても自分らしくいたい今日は、おすすめアイテムや吉日もあわせて確認してみませんか。開運カレンダーでは、おすすめアイテムと吉日を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>人目を避けて夕暮れに咲くその選び方こそ、自分らしさを守る一つの知恵なのかもしれない。</p>
     <ul>
-      <li>オシロイバナは夏から秋の夕方に花を咲かせる、7月24日の誕生花</li>
-      <li>花言葉は「内気」、夕方にひっそりと咲く性質に由来する</li>
-      <li>素朴な花の美しさと懐かしい親しみやすさが魅力</li>
-      <li>日当たりを好み、こぼれ種でもよく増える</li>
+      <li>オシロイバナは夏から秋の夕方に開き翌朝しぼむ、オシロイバナ科の多年草で、7月24日の誕生花</li>
+      <li>花言葉は「内気」。人目を避けて夕暮れにひっそりと咲く姿と結びついてきたとされる</li>
+      <li>素朴で懐かしい印象を与える花として知られる</li>
+      <li>夕暮れから翌朝までの短いサイクルで咲く点が特徴</li>
     </ul>
   </section>
 

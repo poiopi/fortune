@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0630/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月30日の誕生花ヘリオトロープの花言葉・特徴・魅力をわかりやすく解説。「献身的な愛」を象徴する甘い香りの紫の花の意味を紹介します。">
+  <meta name="description" content="6月30日の誕生花ヘリオトロープの花言葉・特徴・魅力をわかりやすく解説。バニラに似た甘い香りを放つ、紫の小花を密に咲かせるムラサキ科の花を紹介します。">
   <title>6月30日の誕生花はヘリオトロープ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヘリオトロープはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に紫色の小花を密に咲かせます。ムラサキ科の多年草で、バニラに似た甘い香りが特徴です。"}},
-      {"@type":"Question","name":"ヘリオトロープの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「献身的な愛」という花言葉は、太陽の方向を追うように花や葉を向ける性質が、変わらぬ愛を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ヘリオトロープはどんな用途で使われますか？","acceptedAnswer":{"@type":"Answer","text":"甘く上品な香りを生かし、香水の原料として古くから利用されてきました。"}}
+      {"@type":"Question","name":"ヘリオトロープはどんな香りがしますか？","acceptedAnswer":{"@type":"Answer","text":"感じ方には個人差がありますが、バニラに似た、甘く落ち着いた香りとして親しまれています。夏になると紫色の小花を密に咲かせ、香りとともに気品ある印象を持つ人も多いようです。"}},
+      {"@type":"Question","name":"ヘリオトロープの花言葉「献身的な愛」はどう受け止めるとよいですか？","acceptedAnswer":{"@type":"Answer","text":"誰かのために尽くすことだけを指す言葉ではありません。紫の小花が静かに香りを届け続けるように、さりげない気遣いを重ねることも、献身的な愛のかたちの一つだといわれています。"}},
+      {"@type":"Question","name":"ヘリオトロープはどんな色の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"紫色の小花を密に咲かせます。香りとともに、気品のある紫の彩りも魅力の一つです。"}}
     ]
   }
   </script>
@@ -132,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 30 · 誕生花</span>
     <h1>6月30日の誕生花はヘリオトロープ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヘリオトロープは、ムラサキ科の多年草で、夏に紫色の小花を密に咲かせる6月30日の誕生花です。花言葉は「献身的な愛」。バニラに似た甘い香りを放つ花です。</p>
+    <p class="art-lead">ふと風に乗って、バニラのような甘い香りが漂ってきました。ヘリオトロープは、紫の小花を密に咲かせながら、そんな心地よい香りを届けてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -153,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヘリオトロープとは</a></li>
-      <li><a href="#meaning">ヘリオトロープが象徴する意味</a></li>
-      <li><a href="#charm">ヘリオトロープの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月30日の誕生花として親しまれるヘリオトロープ</a></li>
+      <li><a href="#story">バニラの香りに包まれる、ヘリオトロープのやさしいひととき</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヘリオトロープから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヘリオトロープとは</h2>
-    <p>ヘリオトロープは、ムラサキ科の多年草で、6月30日の誕生花として知られています。夏になると紫色の小花を密に咲かせ、バニラに似た甘い香りを放ちながら落ち着いた気品ある印象を漂わせる花です。</p>
-  </section>
+    <h2>6月30日の誕生花として親しまれるヘリオトロープ</h2>
+    <p>ヘリオトロープは、ムラサキ科の多年草です。夏になると紫色の小花を密に咲かせ、バニラに似た甘い香りをあたりに漂わせます。その香り高さから、6月30日の誕生花として名前が挙がる花です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヘリオトロープが象徴する意味</h2>
-    <p>ヘリオトロープの花言葉は「献身的な愛」です。太陽の方向を追うように花や葉を向ける性質が、変わらず想いを寄せ続ける献身的な愛の象徴とされることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヘリオトロープの魅力</h2>
-    <p>ヘリオトロープの魅力は、小花が密に集まって咲く落ち着いた紫色の美しさと、バニラを思わせる甘く上品な香りにあります。香水の原料としても古くから利用されてきた花です。6月30日生まれの方はもちろん、献身的な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヘリオトロープは日当たりと風通しの良い場所を好み、夏の強い直射日光は避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月30日生まれの方はもちろん、献身的な想いを伝えたい贈り物としてもヘリオトロープは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に紫色の小花を密に咲かせます。ムラサキ科の多年草で、バニラに似た甘い香りが特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「献身的な愛」という花言葉は、太陽の方向を追うように花や葉を向ける性質が、変わらぬ愛を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープはどんな用途で使われますか？</div>
-        <div class="faq-a">甘く上品な香りを生かし、香水の原料として古くから利用されてきました。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープはどんな香りがしますか？</div>
+        <div class="faq-a">感じ方には個人差がありますが、バニラに似た、甘く落ち着いた香りとして親しまれています。夏になると紫色の小花を密に咲かせ、香りとともに気品ある印象を持つ人も多いようです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>バニラの香りに包まれる、ヘリオトロープのやさしいひととき</h2>
+    <p>ヘリオトロープの花に近づくと、バニラを思わせる甘く優しい香りがふわりと鼻先をかすめます。声高に自己主張するわけではないのに、香りだけは静かに、けれど確かにそこにあることを伝えてきます。紫色の小花が寄り添うように密に咲く姿は、一つひとつは控えめでも、集まることで気品のある存在感をつくり出しています。誰かのそばでそっと寄り添い続けるようなその佇まいから、ヘリオトロープには「献身的な愛」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープの花言葉「献身的な愛」はどう受け止めるとよいですか？</div>
+        <div class="faq-a">誰かのために尽くすことだけを指す言葉ではありません。紫の小花が静かに香りを届け続けるように、さりげない気遣いを重ねることも、献身的な愛のかたちの一つだといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かの力になりたいと思っても、身構えてしまうと、行動になかなか移せないものです。ヘリオトロープの香りが声高に主張せず、そっと漂うように届いてくるように、ささやかな気遣いも同じくらい確かに相手へ伝わっていきます。そばにいる誰かへ、今日はほんの小さな気配りを一つ届けてみると、いつもより穏やかな時間が流れるかもしれません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヘリオトロープから始める小さな体験</h2>
+    <p>甘く優しい香りをまとうヘリオトロープを思い浮かべながら、こんなことを試してみませんか。</p>
+    <ul class="exp-list">
+      <li>バニラに似た甘い香りを確かめてみる</li>
+      <li>大切な人を、そっと支える行動を一つしてみる</li>
+      <li>紫色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヘリオトロープはどんな色の花を咲かせますか？</div>
+        <div class="faq-a">紫色の小花を密に咲かせます。香りとともに、気品のある紫の彩りも魅力の一つです。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かをそっと支えたい今日は、星座やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、星座占いとおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>バニラに似た香りをまとって静かに咲くヘリオトロープの姿は、声高に語らずとも伝わる優しさそのものです。</p>
     <ul>
-      <li>ヘリオトロープは夏に紫色の小花を咲かせる、6月30日の誕生花</li>
-      <li>花言葉は「献身的な愛」、太陽を追う性質に由来する</li>
-      <li>落ち着いた花色とバニラのような甘い香りが魅力</li>
-      <li>日当たりと風通しの良い場所で、強い直射日光は避ける</li>
+      <li>ヘリオトロープはムラサキ科の多年草で、夏に紫色の小花を密に咲かせる、6月30日の誕生花</li>
+      <li>花言葉は「献身的な愛」。静かに寄り添うように香りを届ける佇まいに由来するとされる</li>
+      <li>バニラに似た甘い香りを放ち、気品ある印象を持つ人も多い</li>
+      <li>紫色の小花が密に集まって咲く</li>
     </ul>
   </section>
 

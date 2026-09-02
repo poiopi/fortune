@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0225/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月25日の誕生花バイモの花言葉・特徴・魅力をわかりやすく解説。「飾らない心」を象徴する春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月25日の誕生花バイモの花言葉・特徴・魅力をわかりやすく解説。「飾らない心」を象徴する、うつむき加減に咲く釣り鐘型の花の意味を紹介します。">
   <title>2月25日の誕生花はバイモ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"バイモはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、うつむき加減の釣り鐘型の花を咲かせます。控えめながら独特の存在感を持つ多年草です。"}},
-      {"@type":"Question","name":"バイモの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「飾らない心」という花言葉は、地味な色合いでうつむいて咲く、控えめで素朴な花姿に由来するとされています。"}},
-      {"@type":"Question","name":"バイモはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"うつむき加減に咲く釣り鐘型の花が特徴で、控えめながら独特の存在感があります。"}}
+      {"@type":"Question","name":"バイモはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に見頃を迎えます。うつむき加減の釣り鐘型の花を咲かせ、控えめながらも印象的な姿を見せてくれます。"}},
+      {"@type":"Question","name":"バイモの花言葉「飾らない心」の由来は？","acceptedAnswer":{"@type":"Answer","text":"うつむき加減に咲き、目立とうとしない控えめな花の姿に由来するといわれています。素朴でありのままの魅力を象徴する言葉とされます。"}},
+      {"@type":"Question","name":"バイモはなぜ下向きに花を咲かせるのですか？","acceptedAnswer":{"@type":"Answer","text":"はっきりとした理由は明らかにされていませんが、うつむくように咲く姿がバイモらしい控えめな魅力として親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 25 · 誕生花</span>
     <h1>2月25日の誕生花はバイモ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">バイモは、ユリ科の多年草で、春にうつむき加減の釣り鐘型の花を咲かせる2月25日の誕生花です。花言葉は「飾らない心」。控えめで独特な存在感を持つ花です。</p>
+    <p class="art-lead">うつむき加減の釣り鐘のような花を、静かに咲かせるバイモ。2月25日の誕生花に選ばれたこの花は、控えめな姿の中に飾らない心の強さを宿しています。今日はその素朴な佇まいに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">バイモとは</a></li>
-      <li><a href="#meaning">バイモが象徴する意味</a></li>
-      <li><a href="#charm">バイモの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">春にうつむき加減で咲く、バイモの釣り鐘</a></li>
+      <li><a href="#story">2月25日、バイモの釣り鐘が語る「飾らない」という強さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、バイモから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>バイモとは</h2>
-    <p>バイモは、ユリ科の多年草で、2月25日の誕生花として知られています。春になると、うつむき加減に咲く釣り鐘型の花を咲かせ、花の内側に見られる網目模様が独特の趣を醸し出します。</p>
-  </section>
+    <h2>春にうつむき加減で咲く、バイモの釣り鐘</h2>
+    <p>バイモは、ユリ科の多年草です。春になると、うつむき加減の釣り鐘のような形をした花を咲かせます。上を向いて大きく開くのではなく、控えめに下を向いて咲くその姿は、どこか素朴で飾り気のない印象を与えてくれます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>バイモが象徴する意味</h2>
-    <p>バイモの花言葉は「飾らない心」です。派手さのない落ち着いた色合いで、うつむいてひっそりと咲くその素朴な花姿が、飾り気のない誠実な心を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>バイモの魅力</h2>
-    <p>バイモの魅力は、うつむいて咲くからこそ覗き込みたくなる花の内側の模様と、他にはない独特の花姿にあります。茶花としても古くから愛され、静かな趣を庭にもたらしてくれます。2月25日生まれの方はもちろん、飾らない誠実さを届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>バイモは、日当たりと水はけの良い場所を好み、球根植物として夏の休眠期は乾燥気味に管理して育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月25日生まれの方はもちろん、飾らない誠実な心を伝えたい贈り物としてもバイモは意味のある花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">バイモはいつ頃咲きますか？</div>
-        <div class="faq-a">春に、うつむき加減の釣り鐘型の花を咲かせます。控えめながら独特の存在感を持つ多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バイモの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「飾らない心」という花言葉は、地味な色合いでうつむいて咲く、控えめで素朴な花姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">バイモはどんな形の花を咲かせますか？</div>
-        <div class="faq-a">うつむき加減に咲く釣り鐘型の花が特徴で、控えめながら独特の存在感があります。</div>
+        <div class="faq-a">春に見頃を迎えます。うつむき加減の釣り鐘型の花を咲かせ、控えめながらも印象的な姿を見せてくれます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月25日、バイモの釣り鐘が語る「飾らない」という強さ</h2>
+    <p>バイモの花をよく見ると、ほかの多くの花とは向きが違うことに気づきます。太陽に向かって大きく開くのではなく、うつむくように下を向いて静かに咲いているのです。派手に主張することなく、ただそこにひっそりと揺れている。その姿は、目立とうとしない代わりに、見る人に安心感を与えてくれます。飾り立てなくても、そのままの形で十分に美しい。うつむき加減の釣り鐘という素朴な形そのものが、バイモの一番の魅力なのかもしれません。この、控えめで飾り気のない佇まいから、バイモには「飾らない心」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バイモの花言葉「飾らない心」の由来は？</div>
+        <div class="faq-a">うつむき加減に咲き、目立とうとしない控えめな花の姿に由来するといわれています。素朴でありのままの魅力を象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>背伸びをやめてみると、案外心が軽くなることがあります。今日は、うつむき加減のバイモのように、力を抜いて過ごしてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、バイモから始める小さな体験</h2>
+    <p>うつむき加減に静かに咲くバイモにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>うつむき加減に咲く花を探して観察してみる</li>
+      <li>飾らない普段着で一日を過ごしてみる</li>
+      <li>素朴なものに目を向けてみる</li>
+      <li>背伸びせず、今の自分のままで人と会ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">バイモはなぜ下向きに花を咲かせるのですか？</div>
+        <div class="faq-a">はっきりとした理由は明らかにされていませんが、うつむくように咲く姿がバイモらしい控えめな魅力として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">飾らない自分のままで一日を過ごせたなら、今日は持ち物のラッキーアイテムも確かめてみませんか。開運カレンダーでは、その日のラッキーアイテムや六曜も紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月25日、うつむき加減に静かに咲くバイモは、飾らないままでいる強さを教えてくれる花です。</p>
     <ul>
-      <li>バイモは春にうつむいて咲く釣り鐘型の花、2月25日の誕生花</li>
-      <li>花言葉は「飾らない心」、素朴で誠実な姿を象徴する</li>
-      <li>独特の網目模様と控えめな花姿が魅力</li>
-      <li>日当たりと水はけの良い場所で、夏は乾燥気味に管理したい</li>
+      <li>バイモはユリ科の多年草で、春にうつむき加減の釣り鐘型の花を咲かせる</li>
+      <li>上を向かず下向きに咲く、控えめで素朴な姿が特徴</li>
+      <li>花言葉は「飾らない心」。ありのままの魅力を象徴するとされる</li>
+      <li>下向きに咲く理由は明らかではないが、それこそがバイモらしい魅力とされる</li>
     </ul>
   </section>
 

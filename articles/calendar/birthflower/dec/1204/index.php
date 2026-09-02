@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1204/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月4日の誕生花ポインセチアの花言葉・特徴・魅力をわかりやすく解説。「祝福」を象徴する華やかな花の意味を紹介します。">
+  <meta name="description" content="12月4日の誕生花ポインセチアの花言葉・特徴・魅力をわかりやすく解説。「祝福」を象徴する華やかに彩る花の意味を紹介します。">
   <title>12月4日の誕生花はポインセチア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ポインセチアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に赤や白の苞葉を色づかせます。トウダイグサ科の常緑低木です。"}},
-      {"@type":"Question","name":"ポインセチアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"冬の寒い時期に赤や白の葉を鮮やかに色づかせ、季節を彩る姿が、人を祝う華やかな気持ちを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ポインセチアの赤い部分は花なのですか？","acceptedAnswer":{"@type":"Answer","text":"赤や白の華やかな部分は花びらではなく「苞葉」と呼ばれる葉で、中心の小さな部分が本来の花です。"}}
+      {"@type":"Question","name":"ポインセチアの赤い部分は、花びらなのですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、赤や白に色づく部分は苞葉と呼ばれる葉の一種です。中心にある小さな粒状のものが、実際の花にあたります。"}},
+      {"@type":"Question","name":"ポインセチアが「祝福」の花と呼ばれるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"クリスマスの時期を彩る華やかな姿が、誰かの幸せを願う気持ちや贈り物としての想いと結びつき、「祝福」という花言葉が生まれたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 4 · 誕生花</span>
     <h1>12月4日の誕生花はポインセチア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ポインセチアは、トウダイグサ科の常緑低木で、冬に赤や白の苞葉を色づかせる、華やかで祝祭感のある印象を持つ花です。花言葉は「祝福」。華やかな花です。</p>
+    <p class="art-lead">街のショーウィンドウや玄関先が赤や白で彩られ始めると、クリスマスが近いことを感じる。その彩りを担う代表格が、トウダイグサ科の常緑低木、ポインセチアだ。12月4日、街中を華やかに飾るその姿は、まさに見頃を迎えている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ポインセチアとは</a></li>
-      <li><a href="#meaning">ポインセチアが象徴する意味</a></li>
-      <li><a href="#charm">ポインセチアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月4日の誕生花として親しまれるポインセチア</a></li>
+      <li><a href="#story">クリスマスの彩りが、街に灯す祝福の色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ポインセチアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ポインセチアとは</h2>
-    <p>ポインセチアは、トウダイグサ科の常緑低木で、12月4日の誕生花として知られています。冬に赤や白の苞葉を色づかせる、華やかで祝祭感のある印象を持つ花です。</p>
-  </section>
+    <h2>12月4日の誕生花として親しまれるポインセチア</h2>
+    <p>ポインセチアは、トウダイグサ科の常緑低木で、12月4日の誕生花として知られています。冬になると、枝先の葉が赤や白へと色づき、まるで大輪の花が咲いたかのような華やかな姿を見せます。実はこの赤や白の部分は花びらではなく苞葉と呼ばれる葉の一種で、中心にある小さな粒のようなものが本当の花にあたります。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ポインセチアが象徴する意味</h2>
-    <p>ポインセチアの花言葉は「祝福」です。冬の寒い時期に赤や白の葉を鮮やかに色づかせ、季節を彩る姿が、人を祝う華やかな気持ちを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ポインセチアの魅力</h2>
-    <p>ポインセチアの魅力は、花のように見える赤や白の苞葉が生む華やかさと、冬の室内を明るく彩る存在感にあります。12月4日生まれの方はもちろん、祝福の気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ポインセチアは日当たりの良い室内を好み、冷え込みを避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月4日生まれの方はもちろん、祝福の気持ちを伝えたい贈り物としてもポインセチアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポインセチアはいつ頃咲きますか？</div>
-        <div class="faq-a">冬に赤や白の苞葉を色づかせます。トウダイグサ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポインセチアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">冬の寒い時期に赤や白の葉を鮮やかに色づかせ、季節を彩る姿が、人を祝う華やかな気持ちを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ポインセチアの赤い部分は花なのですか？</div>
-        <div class="faq-a">赤や白の華やかな部分は花びらではなく「苞葉」と呼ばれる葉で、中心の小さな部分が本来の花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ポインセチアの赤い部分は、花びらなのですか？</div>
+        <div class="faq-a">いいえ、赤や白に色づく部分は苞葉と呼ばれる葉の一種です。中心にある小さな粒状のものが、実際の花にあたります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>クリスマスの彩りが、街に灯す祝福の色</h2>
+    <p>冬の街角がイルミネーションで輝き始めるころ、店先やリースの中にポインセチアの赤が寄り添っていることが多い。もともとは中南米で自生していたこの植物が、クリスマスを彩る花として世界中に広まったのは、その鮮やかな赤と白が、この季節の祝いの色として親しまれてきたからだといわれている。誰かの幸せを願い、贈り物として選ばれることも多いポインセチアには、宗教や国を超えて、大切な人を想う気持ちが託されてきた。花言葉「祝福」は、そうした季節の想いをそのまま映した言葉なのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ポインセチアが「祝福」の花と呼ばれるのはなぜですか？</div>
+        <div class="faq-a">クリスマスの時期を彩る華やかな姿が、誰かの幸せを願う気持ちや贈り物としての想いと結びつき、「祝福」という花言葉が生まれたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>飾られた葉一枚にも、贈る人の気持ちが映り込む。誰かを想って何かを選ぶ、その小さな行為の中に、祝福の始まりがある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ポインセチアから始める小さな体験</h2>
+    <p>彩りが想いを伝えてくれるように、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>赤や白の苞葉の彩りを、楽しんでみる</li>
+      <li>大切な人に、お祝いの言葉を一つ伝えてみる</li>
+      <li>冬の彩りを、部屋の中に取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分の心の動きをもっと知りたい日は、開運カレンダーで星座の運勢も見てみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤と白の彩りは、言葉を超えて想いを伝えてくれる。</p>
     <ul>
-      <li>ポインセチアは冬に赤や白の苞葉を色づかせる、12月4日の誕生花</li>
-      <li>花言葉は「祝福」、冬を彩る華やかな姿に由来する</li>
-      <li>冬に赤や白の苞葉を色づかせる、彩り豊かな植物</li>
-      <li>日当たりの良い室内を好み、冷え込みを避けて管理するとよく育ちます</li>
+      <li>ポインセチアは、トウダイグサ科の常緑低木で、冬に赤や白の苞葉を色づかせる、12月4日の誕生花</li>
+      <li>花言葉は「祝福」。クリスマスを彩り、誰かの幸せを願う気持ちに由来すると言われる</li>
+      <li>赤や白の部分は花びらではなく苞葉で、中心の小さな粒が本当の花にあたる</li>
+      <li>小さな贈り物一つが、今日という一日をやさしく照らしてくれそうだ</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-04'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1204'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-04');
+echo autoLink($html, 'birthflower-dec-1204');
 ?>

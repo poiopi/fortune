@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1108/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月8日の誕生花ステルンベルギアの花言葉・特徴・魅力をわかりやすく解説。「期待」を象徴する黄色い花の意味を紹介します。">
+  <meta name="description" content="11月8日の誕生花ステルンベルギアの花言葉・特徴・魅力をわかりやすく解説。「期待」を象徴する秋に咲く黄色い花の意味を紹介します。">
   <title>11月8日の誕生花はステルンベルギア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ステルンベルギアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に黄色い花を咲かせます。ヒガンバナ科の球根植物です。"}},
-      {"@type":"Question","name":"ステルンベルギアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋の澄んだ空気の中、黄色い花が地面から顔をのぞかせるように咲く姿が、これから訪れる喜びへの期待を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ステルンベルギアはどんな場所に植えるのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"秋に咲く球根植物のため、他の秋の草花と合わせた花壇に植えるのがおすすめです。"}}
+      {"@type":"Question","name":"ステルンベルギアはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"ヒガンバナ科の球根植物で、秋に黄色い花を咲かせます。"}},
+      {"@type":"Question","name":"ステルンベルギアの花言葉「期待」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"他の花が姿を消していく晩秋にあえて咲く黄色い花の姿が、これから訪れる何かへの期待を連想させることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 8 · 誕生花</span>
     <h1>11月8日の誕生花はステルンベルギア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ステルンベルギアは、ヒガンバナ科の球根植物で、秋に黄色い花を咲かせる、明るく凛とした印象を持つ花です。花言葉は「期待」。明るい花です。</p>
+    <p class="art-lead">落ち葉が舞う晩秋の地面から、思いがけず黄色い花が顔をのぞかせることがある。ヒガンバナ科の球根植物、ステルンベルギアが11月8日の誕生花とされているのも、この季節外れの鮮やかさゆえかもしれない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ステルンベルギアとは</a></li>
-      <li><a href="#meaning">ステルンベルギアが象徴する意味</a></li>
-      <li><a href="#charm">ステルンベルギアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月8日の誕生花として親しまれるステルンベルギア</a></li>
+      <li><a href="#story">枯れ色の景色に灯る、小さな黄色</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ステルンベルギアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ステルンベルギアとは</h2>
-    <p>ステルンベルギアは、ヒガンバナ科の球根植物で、11月8日の誕生花として知られています。秋に黄色い花を咲かせる、明るく凛とした印象を持つ花です。</p>
-  </section>
+    <h2>11月8日の誕生花として親しまれるステルンベルギア</h2>
+    <p>ステルンベルギアは、ヒガンバナ科の球根植物として知られる、11月8日の誕生花です。秋に黄色い花を咲かせることで親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ステルンベルギアが象徴する意味</h2>
-    <p>ステルンベルギアの花言葉は「期待」です。秋の澄んだ空気の中、黄色い花が地面から顔をのぞかせるように咲く姿が、これから訪れる喜びへの期待を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ステルンベルギアの魅力</h2>
-    <p>ステルンベルギアの魅力は、秋の澄んだ空気の中で咲く黄色い花の明るさと、球根植物ならではの凛とした佇まいにあります。11月8日生まれの方はもちろん、期待を込めた贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ステルンベルギアは日当たりの良い場所を好み、休眠期は乾燥気味に管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月8日生まれの方はもちろん、期待を込めた贈り物としてもステルンベルギアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ステルンベルギアはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に黄色い花を咲かせます。ヒガンバナ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ステルンベルギアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋の澄んだ空気の中、黄色い花が地面から顔をのぞかせるように咲く姿が、これから訪れる喜びへの期待を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ステルンベルギアはどんな場所に植えるのがおすすめですか？</div>
-        <div class="faq-a">秋に咲く球根植物のため、他の秋の草花と合わせた花壇に植えるのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ステルンベルギアはどんな植物ですか？</div>
+        <div class="faq-a">ヒガンバナ科の球根植物で、秋に黄色い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>枯れ色の景色に灯る、小さな黄色</h2>
+    <p>木々の葉が色を失い、地面が茶色一色に近づいていく晩秋。そんな景色の中で、ステルンベルギアの黄色は、ひときわ目を引く存在になる。地表からすっと伸びた茎の先に、控えめながらも鮮やかな黄色い花を咲かせるヒガンバナ科の球根植物だ。ほかの花々が姿を消していく時期にあえて咲くその姿は、これから訪れる何かを予感させるようにも映る。静かな景色の中にぽつんと灯るその色合いが、「期待」という花言葉と結びついているのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ステルンベルギアの花言葉「期待」はどのように結びついていますか？</div>
+        <div class="faq-a">他の花が姿を消していく晩秋にあえて咲く黄色い花の姿が、これから訪れる何かへの期待を連想させることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>先のことは誰にもわからないからこそ、心待ちにする時間そのものに意味があり、それを楽しめるかどうかは今日の過ごし方次第なのかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ステルンベルギアから始める小さな体験</h2>
+    <p>枯れ色の景色にひとり咲くステルンベルギアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>黄色い花が咲く様子を思い浮かべてみる</li>
+      <li>楽しみにしていることを一つ、紙に書き出してみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">何かを始めるのにふさわしい日か気になる方は、開運カレンダーで吉日情報も確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>枯れ色の景色に灯るこの黄色い花は、これから訪れる何かの気配を静かにまとっている。</p>
     <ul>
-      <li>ステルンベルギアは秋に黄色い花を咲かせる、11月8日の誕生花</li>
-      <li>花言葉は「期待」、地面から顔をのぞかせるように咲く姿に由来する</li>
-      <li>秋の澄んだ空気の中で咲く明るい黄色が魅力</li>
-      <li>日当たりの良い場所を好み、休眠期は乾燥気味に管理するとよく育ちます</li>
+      <li>ステルンベルギアは、ヒガンバナ科の球根植物で、秋に黄色い花を咲かせる、11月8日の誕生花</li>
+      <li>花言葉は「期待」。枯れ色の景色に灯る黄色に由来すると言われる</li>
+      <li>地表からすっと伸びた茎の先に咲く、控えめながら鮮やかな花</li>
+      <li>これから訪れる良いことを心待ちにしたい日に寄り添う花</li>
     </ul>
   </section>
 

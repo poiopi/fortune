@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0928/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月28日の誕生花リンドウの花言葉・特徴・魅力をわかりやすく解説。「正義」を象徴する青紫色の花の意味を紹介します。">
+  <meta name="description" content="9月28日の誕生花リンドウの花言葉・特徴・魅力をわかりやすく解説。「正義」を象徴する青紫の花の意味を紹介します。">
   <title>9月28日の誕生花はリンドウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"リンドウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に青紫色の筒状の花を咲かせます。リンドウ科の多年草です。"}},
-      {"@type":"Question","name":"リンドウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋の澄んだ空気の中で、青紫色の花をまっすぐに凛と咲かせる奥ゆかしい花姿が、揺るぎない正義を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"リンドウはいつ頃から日本で親しまれていますか？","acceptedAnswer":{"@type":"Answer","text":"古くから薬草としても利用され、平安時代の文献にもその名が見られるなど、日本で長く親しまれてきた花です。"}}
+      {"@type":"Question","name":"リンドウはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"青紫色の筒状の花を、上向きに咲かせます。大きく開ききらない、奥ゆかしい咲き方が特徴です。"}},
+      {"@type":"Question","name":"リンドウの花言葉『正義』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"秋の澄んだ空気の中、青紫色の花をまっすぐ凛と咲かせる姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 28 · 誕生花</span>
     <h1>9月28日の誕生花はリンドウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">リンドウは、リンドウ科の多年草で、秋に青紫色の筒状の花を咲かせる、凛として奥ゆかしい印象を持つ花です。花言葉は「正義」。凛として奥ゆかしい花です。</p>
+    <p class="art-lead">秋の澄んだ空気の中、青紫色の花が上向きにまっすぐ咲く。その凛とした姿の持ち主こそ、9月28日の誕生花リンドウ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">リンドウとは</a></li>
-      <li><a href="#meaning">リンドウが象徴する意味</a></li>
-      <li><a href="#charm">リンドウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月28日の誕生花として親しまれるリンドウ</a></li>
+      <li><a href="#story">青紫の花がまっすぐ貫く、正義のかたち</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、リンドウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>リンドウとは</h2>
-    <p>リンドウは、リンドウ科の多年草で、9月28日の誕生花として知られています。秋に青紫色の筒状の花を咲かせる、凛として奥ゆかしい印象を持つ花です。</p>
-  </section>
+    <h2>9月28日の誕生花として親しまれるリンドウ</h2>
+    <p>リンドウは、リンドウ科の多年草です。秋になると、青紫色の筒状の花を咲かせます。凛として奥ゆかしい印象を持つ花として親しまれ、9月28日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>リンドウが象徴する意味</h2>
-    <p>リンドウの花言葉は「正義」です。秋の澄んだ空気の中で、青紫色の花をまっすぐに凛と咲かせる奥ゆかしい花姿が、揺るぎない正義を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>リンドウの魅力</h2>
-    <p>リンドウの魅力は、深みのある青紫色の花びらが持つ凛とした気品と、秋の花として古くから愛されてきた奥ゆかしさにあります。9月28日生まれの方はもちろん、揺るぎない正義の想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>リンドウは日当たりから半日陰を好み、乾燥を嫌うため湿り気のある土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月28日生まれの方はもちろん、揺るぎない正義の想いを伝えたい贈り物としてもリンドウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リンドウはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に青紫色の筒状の花を咲かせます。リンドウ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リンドウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋の澄んだ空気の中で、青紫色の花をまっすぐに凛と咲かせる奥ゆかしい花姿が、揺るぎない正義を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">リンドウはいつ頃から日本で親しまれていますか？</div>
-        <div class="faq-a">古くから薬草としても利用され、平安時代の文献にもその名が見られるなど、日本で長く親しまれてきた花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">リンドウはどんな形の花を咲かせますか？</div>
+        <div class="faq-a">青紫色の筒状の花を、上向きに咲かせます。大きく開ききらない、奥ゆかしい咲き方が特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>青紫の花がまっすぐ貫く、正義のかたち</h2>
+    <p>リンドウの花は、秋の澄んだ空気の中で、青紫色の筒状の花を上向きに咲かせる。派手に開ききることはなく、筒のような形を保ったまま、凛とした姿を保ち続ける。この、開ききらない奥ゆかしさこそが、リンドウらしさとも言える。周りの花々が咲き乱れる中でも、リンドウは自分のペースを崩さず、まっすぐに立ち続ける。花言葉「正義」は、この揺るがずまっすぐに咲く姿に由来すると言われている。周囲に流されず、自分の芯を保ち続けること。それは簡単なことではないが、リンドウの花言葉「正義」には、そんな強さへの願いが込められているのかもしれない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">リンドウの花言葉『正義』にはどんな由来がありますか？</div>
+        <div class="faq-a">秋の澄んだ空気の中、青紫色の花をまっすぐ凛と咲かせる姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>周りに流されず、自分の芯を保ち続けることは簡単ではない。青紫の花をまっすぐに咲かせるリンドウの姿から、少し勇気をもらえるかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、リンドウから始める小さな体験</h2>
+    <p>青紫色の花をまっすぐに咲かせるリンドウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>青紫色の筒状の花をじっくり観察してみる</li>
+      <li>自分の芯を曲げずに、今日一日を過ごしてみる</li>
+      <li>凛とした秋の景色をゆっくり眺めてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分の芯を大切にしたい日は、今日の六曜も見てみませんか。開運カレンダーでは、六曜とラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「正義」という花言葉を持つリンドウは、秋の澄んだ空気の中で、青紫の花をまっすぐに咲かせる。</p>
     <ul>
-      <li>リンドウは秋に青紫色の花を咲かせる、9月28日の誕生花</li>
-      <li>花言葉は「正義」、凛と咲く花姿に由来する</li>
-      <li>凛とした気品が魅力</li>
-      <li>日当たりから半日陰を好み、乾燥を嫌う</li>
+      <li>リンドウは秋に青紫色の筒状の花を咲かせる、リンドウ科の多年草で、9月28日の誕生花</li>
+      <li>花言葉は「正義」。揺るがずまっすぐに咲く姿に由来すると言われる</li>
+      <li>凛として奥ゆかしい、秋らしい印象を持つ</li>
+      <li>自分の芯を保ち続けることの大切さを伝える花</li>
     </ul>
   </section>
 

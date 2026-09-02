@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0405/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月5日の誕生花コデマリの花言葉・特徴・魅力をわかりやすく解説。「優雅」を象徴する手鞠のような花木の意味を紹介します。">
+  <meta name="description" content="4月5日の誕生花コデマリの花言葉・特徴・魅力をわかりやすく解説。「優雅」を象徴する球状に集まって咲く花木の意味を紹介します。">
   <title>4月5日の誕生花はコデマリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コデマリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小さな白い花が球状にまとまって咲きます。バラ科の落葉低木で、しなやかに枝垂れる姿が特徴です。"}},
-      {"@type":"Question","name":"コデマリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「優雅」という花言葉は、しなやかな枝に連なる手鞠のような花房の上品な佇まいに由来すると言われています。"}},
-      {"@type":"Question","name":"コデマリという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花が集まって咲く姿が手鞠（てまり）に似ていることから「小手鞠」と名づけられたとされています。"}}
+      {"@type":"Question","name":"コデマリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、小さな花が球状に集まって咲きます。バラ科の落葉低木で、可憐な花木として親しまれています。"}},
+      {"@type":"Question","name":"コデマリの花言葉「優雅」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が寄り添うように集まり、しなやかな枝先に品のある丸みを描き出す姿に由来するといわれています。"}},
+      {"@type":"Question","name":"コデマリはどんな場所でよく育てられていますか？","acceptedAnswer":{"@type":"Answer","text":"しなやかな枝ぶりが生かせる庭木や生け垣として、古くから親しまれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 5 · 誕生花</span>
     <h1>4月5日の誕生花はコデマリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コデマリは、バラ科の落葉低木で、春に小さな花が球状に集まって咲く4月5日の誕生花です。花言葉は「優雅」。しなやかに枝垂れる可憐な花木です。</p>
+    <p class="art-lead">4月5日、桜の便りに続いて次々と春の花木が咲き始める頃。小さな花が球状に集まって咲くコデマリは、洗練された落ち着きをまといたくなる日に寄り添ってくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コデマリとは</a></li>
-      <li><a href="#meaning">コデマリが象徴する意味</a></li>
-      <li><a href="#charm">コデマリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月5日の誕生花として親しまれるコデマリ</a></li>
+      <li><a href="#story">球状の花房が語る、コデマリの優雅</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、コデマリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コデマリとは</h2>
-    <p>コデマリは、バラ科の落葉低木で、4月5日の誕生花として知られています。小さな白い花が球状にまとまって咲き、その姿が手鞠（てまり）を連想させることから「小手鞠」の名がつけられたとされ、しなやかに枝垂れる枝いっぱいに花をつけます。</p>
-  </section>
+    <h2>4月5日の誕生花として親しまれるコデマリ</h2>
+    <p>コデマリは、バラ科の落葉低木です。春になると、小さな花がいくつも球状に集まって咲き、しなやかな枝いっぱいに連なる可憐な花木として親しまれています。一つ一つの花は小さくても、集まることで柔らかな丸みを生み出すのが特徴です。4月5日の誕生花として、その落ち着いた佇まいが重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>コデマリが象徴する意味</h2>
-    <p>コデマリの花言葉は「優雅」です。細い枝がしなやかに弧を描き、その先に手鞠のような花房をいくつも咲かせる様子が、上品で優雅な佇まいを感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>コデマリの魅力</h2>
-    <p>コデマリの魅力は、枝いっぱいに連なる小さな花房が織りなす、繊細で上品な景観にあります。庭木や生け垣としても人気があり、和洋どちらの庭にもなじみやすい花木です。4月5日生まれの方はもちろん、上品さを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>コデマリは日当たりの良い場所を好み、丈夫で育てやすい花木です。花が終わった後に伸びすぎた枝を整理する程度の剪定で、翌年も花付きよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月5日生まれの方はもちろん、上品な贈り物としてもコデマリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">コデマリはいつ頃咲きますか？</div>
-        <div class="faq-a">春に小さな白い花が球状にまとまって咲きます。バラ科の落葉低木で、しなやかに枝垂れる姿が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コデマリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「優雅」という花言葉は、しなやかな枝に連なる手鞠のような花房の上品な佇まいに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コデマリという名前の由来は何ですか？</div>
-        <div class="faq-a">小さな花が集まって咲く姿が手鞠（てまり）に似ていることから「小手鞠」と名づけられたとされています。</div>
+        <div class="faq-a">春に、小さな花が球状に集まって咲きます。バラ科の落葉低木で、可憐な花木として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>球状の花房が語る、コデマリの優雅</h2>
+    <p>コデマリの花房をよく見ると、小さな花が一つ一つ密集しながらも、決して窮屈そうには見えない、丸く整った形にまとまっていることに気づきます。派手な大輪の花とは違い、控えめな花が寄り添うように集まることで、静かで品のある丸みを描き出しているのです。しなやかな枝が弧を描きながら垂れ下がり、その先々に球状の花房を連ねる姿を観察してみると、一本の枝の中にいくつもの小さな球体が並んでいるのがわかります。バラ科の落葉低木として、庭木や生け垣にも古くから使われてきました。そんな、控えめな花が寄り添って上品な丸みを作り出す姿から、コデマリには「優雅」という花言葉が贈られているといわれています。この言葉は、華美な装飾ではなく、静かに整った所作の美しさを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コデマリの花言葉「優雅」の由来は？</div>
+        <div class="faq-a">小さな花が寄り添うように集まり、しなやかな枝先に品のある丸みを描き出す姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>丁寧に積み重ねた小さな所作は、やがて自然な品として身にまとわれていきます。いつもの動作の一つひとつを、今日はゆっくりと味わいながら行ってみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、コデマリから始める小さな体験</h2>
+    <p>小さな花が集まって球状に咲くコデマリにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>球状に集まって咲く花を探して観察してみる</li>
+      <li>所作を一つ、丁寧に行ってみる</li>
+      <li>小さな花をまとめて飾ってみる</li>
+      <li>春先の枝先に咲き始めるコデマリの季節を感じてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コデマリはどんな場所でよく育てられていますか？</div>
+        <div class="faq-a">しなやかな枝ぶりが生かせる庭木や生け垣として、古くから親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">丁寧な一日を過ごしたい今日は、六曜やラッキープレイスも確認してみませんか。開運カレンダーでは、その日の六曜とラッキープレイスをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月5日、小さな花が寄り添って丸みを描くコデマリは、丁寧な所作が生む洗練を教えてくれる花です。</p>
     <ul>
-      <li>コデマリは春に手鞠状の白い花を咲かせる、4月5日の誕生花</li>
-      <li>花言葉は「優雅」、しなやかに咲く花房の佇まいに由来する</li>
-      <li>枝いっぱいに連なる花房の繊細な景観が魅力</li>
-      <li>日当たりの良い場所で、花後の軽い剪定で育てたい</li>
+      <li>コデマリはバラ科の落葉低木で、春に小さな花が球状に集まって咲く</li>
+      <li>しなやかな枝先に連なる可憐な花房が、庭木や生け垣として親しまれている</li>
+      <li>花言葉は「優雅」。寄り添う花が生む品のある丸みに由来するといわれる</li>
+      <li>優雅は、丁寧な所作の積み重ねが生む静かな美しさを表す言葉ともいえる</li>
     </ul>
   </section>
 

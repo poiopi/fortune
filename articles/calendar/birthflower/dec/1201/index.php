@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サフランはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に紫色の花を咲かせます。アヤメ科の球根植物です。"}},
-      {"@type":"Question","name":"サフランの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"サフランの雌しべはどのように利用されますか？","acceptedAnswer":{"@type":"Answer","text":"乾燥させた雌しべは香辛料サフランとして、料理の色づけや香りづけに古くから利用されています。"}}
+      {"@type":"Question","name":"サフランの雌しべは、どのように暮らしの中で使われていますか？","acceptedAnswer":{"@type":"Answer","text":"乾燥させた雌しべは香辛料サフランとして、料理の色づけや香りづけに古くから利用されています。ひとつの花からとれる量はわずかで、丁寧な手作業によって集められます。"}},
+      {"@type":"Question","name":"サフランの花言葉「節度の美」は、なぜこの花に付けられたのですか？","acceptedAnswer":{"@type":"Answer","text":"気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 1 · 誕生花</span>
     <h1>12月1日の誕生花はサフラン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サフランは、アヤメ科の球根植物で、秋に紫色の花を咲かせる、静かで気品ある印象を持つ花です。花言葉は「節度の美」。静かな花です。</p>
+    <p class="art-lead">深紅の細い糸のような香辛料、サフラン。その名前をそのまま受け継ぐ花は、アヤメ科の球根植物で、秋に紫色の花を咲かせる。12月1日はすでに花期を終えているが、乾燥させた雌しべは、今も食卓のどこかで静かに使われているかもしれない。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サフランとは</a></li>
-      <li><a href="#meaning">サフランが象徴する意味</a></li>
-      <li><a href="#charm">サフランの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月1日の誕生花として親しまれるサフラン</a></li>
+      <li><a href="#story">小さな雌しべに宿る、暮らしの彩り</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サフランから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サフランとは</h2>
-    <p>サフランは、アヤメ科の球根植物で、12月1日の誕生花として知られています。秋に紫色の花を咲かせる、静かで気品ある印象を持つ花です。</p>
-  </section>
+    <h2>12月1日の誕生花として親しまれるサフラン</h2>
+    <p>サフランは、アヤメ科の球根植物で、12月1日の誕生花として知られています。花そのものが咲くのは秋で、紫色の可憐な花びらの中央に、鮮やかな赤い雌しべをのぞかせるのが特徴です。12月に入った今は、その花期をすでに終えている時期にあたりますが、乾燥させた雌しべが香辛料として姿を変え、暮らしの中で息づき続けています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サフランが象徴する意味</h2>
-    <p>サフランの花言葉は「節度の美」です。気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サフランの魅力</h2>
-    <p>サフランの魅力は、気取らず可憐に咲く花の美しさと、雌しべが香辛料として大切に受け継がれてきた実用性にあります。12月1日生まれの方はもちろん、控えめで気品ある想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サフランは日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月1日生まれの方はもちろん、控えめで気品ある想いを伝えたい贈り物としてもサフランは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サフランはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に紫色の花を咲かせます。アヤメ科の球根植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サフランの花言葉の由来は何ですか？</div>
-        <div class="faq-a">気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サフランの雌しべはどのように利用されますか？</div>
-        <div class="faq-a">乾燥させた雌しべは香辛料サフランとして、料理の色づけや香りづけに古くから利用されています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">サフランの雌しべは、どのように暮らしの中で使われていますか？</div>
+        <div class="faq-a">乾燥させた雌しべは香辛料サフランとして、料理の色づけや香りづけに古くから利用されています。ひとつの花からとれる量はわずかで、丁寧な手作業によって集められます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>小さな雌しべに宿る、暮らしの彩り</h2>
+    <p>紫色の花びらは、たった数日で静かに終わりを迎える。けれど、その中心にある三本の雌しべは、乾燥という手を加えられることで、香辛料として新しい役割を得る。パエリアの黄金色も、菓子の淡い香りも、もとをたどればこの小さな雌しべに行き着く。一輪の花からとれる雌しべはごくわずかで、それを集める作業には手間と時間がかかる。派手さのない、けれど代えがたい価値。サフランの花言葉「節度の美」には、そうした控えめな存在感の重みが息づいているようだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サフランの花言葉「節度の美」は、なぜこの花に付けられたのですか？</div>
+        <div class="faq-a">気取らず可憐に咲きながらも、香辛料として大切に扱われてきた雌しべの存在が、行き過ぎない慎み深さを思わせることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>わずかな量にしか採れないからこそ、一つひとつが丁寧に扱われる。多くを求めない、その慎ましさの奥に、確かな価値が眠っているのかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サフランから始める小さな体験</h2>
+    <p>小さな雌しべが持つ静かな価値にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>紫色の花びらを、じっくり眺めてみる</li>
+      <li>普段使っている香辛料の由来を、調べてみる</li>
+      <li>控えめだけれど価値のあるものを一つ、大切にしてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日という一日をどう過ごすか迷ったら、開運カレンダーで六曜やラッキーフードもあわせてのぞいてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな雌しべひとつに、驚くほど豊かな価値が詰まっている。</p>
     <ul>
-      <li>サフランは秋に紫色の花を咲かせる、12月1日の誕生花</li>
-      <li>花言葉は「節度の美」、慎み深い花の姿に由来する</li>
-      <li>雌しべが香辛料として利用される、実用性も兼ね備えた花</li>
-      <li>日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます</li>
+      <li>サフランは、アヤメ科の球根植物で、秋に紫色の花を咲かせる、12月1日の誕生花</li>
+      <li>花言葉は「節度の美」。雌しべの控えめで確かな存在感に由来すると言われる</li>
+      <li>開花期は秋で、12月1日の時点ではすでに花期を終えていることが多い点に注意</li>
+      <li>少ない雌しべを大切に集める、その丁寧な手間に心を打たれる</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-01'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1201'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-01');
+echo autoLink($html, 'birthflower-dec-1201');
 ?>

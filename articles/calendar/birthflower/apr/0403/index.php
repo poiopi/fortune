@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ラナンキュラスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に幾重にも重なる花びらの花を咲かせます。キンポウゲ科の多年草で、切り花としても人気の高い花です。"}},
-      {"@type":"Question","name":"ラナンキュラスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「華やかな魅力」という花言葉は、幾重にも重なる花びらが生み出す豊かなボリューム感に由来すると言われています。"}},
-      {"@type":"Question","name":"ラナンキュラスにはどんな花色がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤やピンク、白、オレンジ、黄色など豊富な花色があり、色によって花言葉が異なる場合があります。"}}
+      {"@type":"Question","name":"ラナンキュラスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、薄い花びらが幾重にも重なり合った花を咲かせます。キンポウゲ科の多年草で、華やかで柔らかな印象を持つ花です。"}},
+      {"@type":"Question","name":"ラナンキュラスの花言葉「華やかな魅力」の由来は？","acceptedAnswer":{"@type":"Answer","text":"薄い花びらが幾重にも重なり合い、一枚一枚では気づかれなくても全体として華やかな印象を生み出す姿に由来するといわれています。"}},
+      {"@type":"Question","name":"ラナンキュラスはどんな場面で人気の花ですか？","acceptedAnswer":{"@type":"Answer","text":"幾重にも重なる華やかな花姿から、花束やアレンジメントの主役として人気があります。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 3 · 誕生花</span>
     <h1>4月3日の誕生花はラナンキュラス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ラナンキュラスは、キンポウゲ科の多年草で、春に幾重にも重なる花びらの花を咲かせる4月3日の誕生花です。花言葉は「華やかな魅力」。華やかで柔らかな印象を持つ花です。</p>
+    <p class="art-lead">4月3日、新年度の緊張が少しずつやわらいでくる頃。幾重にも重なる花びらを持つラナンキュラスは、外見だけではない自分自身の魅力に気づかせてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ラナンキュラスとは</a></li>
-      <li><a href="#meaning">ラナンキュラスが象徴する意味</a></li>
-      <li><a href="#charm">ラナンキュラスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月3日の誕生花として親しまれるラナンキュラス</a></li>
+      <li><a href="#story">幾重にも重なる花びらが語る、ラナンキュラスの魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ラナンキュラスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ラナンキュラスとは</h2>
-    <p>ラナンキュラスは、キンポウゲ科の多年草で、4月3日の誕生花として知られています。薄い花びらが幾重にも重なり合うボリュームのある花姿が特徴で、切り花や花束の主役としても人気の高い花です。</p>
-  </section>
+    <h2>4月3日の誕生花として親しまれるラナンキュラス</h2>
+    <p>ラナンキュラスは、キンポウゲ科の多年草です。春になると、薄い花びらが幾重にも重なり合った、ボリュームのある花を咲かせます。一枚一枚の花びらは繊細で頼りなさげなのに、幾重にも重なることで華やかで柔らかな印象を生み出すのが、この花ならではの魅力です。4月3日の誕生花として、その重なりの美しさが重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ラナンキュラスが象徴する意味</h2>
-    <p>ラナンキュラスの花言葉は「華やかな魅力」です。幾重にも重なる花びらが織りなす豊かなボリューム感が、見る人を惹きつける華やかさを感じさせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ラナンキュラスの魅力</h2>
-    <p>ラナンキュラスの魅力は、薄紙を重ねたような繊細な花びらと、それが集まって生まれる豪華な花姿にあります。花色も赤やピンク、白、オレンジなど豊富で、贈り物やアレンジメントに彩りを添えてくれます。4月3日生まれの方はもちろん、華やかな門出を祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ラナンキュラスは日当たりと水はけの良い場所を好み、球根を植えて育てるのが一般的です。過湿に弱いため、水の与えすぎには注意が必要です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月3日生まれの方はもちろん、華やかな贈り物としてもラナンキュラスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスはいつ頃咲きますか？</div>
-        <div class="faq-a">春に幾重にも重なる花びらの花を咲かせます。キンポウゲ科の多年草で、切り花としても人気の高い花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「華やかな魅力」という花言葉は、幾重にも重なる花びらが生み出す豊かなボリューム感に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスにはどんな花色がありますか？</div>
-        <div class="faq-a">赤やピンク、白、オレンジ、黄色など豊富な花色があり、色によって花言葉が異なる場合があります。</div>
+        <div class="faq-a">春に、薄い花びらが幾重にも重なり合った花を咲かせます。キンポウゲ科の多年草で、華やかで柔らかな印象を持つ花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>幾重にも重なる花びらが語る、ラナンキュラスの魅力</h2>
+    <p>ラナンキュラスの花びらを一枚めくってみると、その下にまた同じような花びらが重なっていることに驚かされます。薄紙のように繊細な花びらが何層にも折り重なりながら丸くふくらんでいく様子は、一輪の花の中に小さな花束が隠れているかのようです。花びらの重なり方や、中心に近づくほど小さくなっていく変化を観察してみると、単純な形のようでいて実は緻密な構造を持つ花だとわかります。キンポウゲ科の多年草として、春の花壇や花束の主役になることも多い花です。そんな、一枚では気づかれなくても幾重にも重なることで人の目を引く華やかさを生み出す姿から、ラナンキュラスには「華やかな魅力」という花言葉が贈られているといわれています。この言葉は、目立つ一部分ではなく、積み重なった全体が生む印象こそが本当の魅力だと教えてくれているようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスの花言葉「華やかな魅力」の由来は？</div>
+        <div class="faq-a">薄い花びらが幾重にも重なり合い、一枚一枚では気づかれなくても全体として華やかな印象を生み出す姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰か一人の褒め言葉よりも、自分自身が積み重ねてきた小さな努力の方が、本当は一番の魅力かもしれません。その積み重ねを、今日は自分自身の手でそっと認めてあげてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ラナンキュラスから始める小さな体験</h2>
+    <p>幾重にも重なる花びらを持つラナンキュラスにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>花びらの重なりをじっくり数えてみる</li>
+      <li>自分の魅力だと思うことを一つ書き出してみる</li>
+      <li>華やかな色のものを身の回りに取り入れてみる</li>
+      <li>春の花壇や花束でラナンキュラスの旬を探してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ラナンキュラスはどんな場面で人気の花ですか？</div>
+        <div class="faq-a">幾重にも重なる華やかな花姿から、花束やアレンジメントの主役として人気があります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分の魅力に気づいた今日は、ラッキーカラーやおすすめアイテムも味方につけてみませんか。開運カレンダーでは、その日のラッキーカラーとおすすめアイテムをまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月3日、幾重にも重なる花びらで華やかさを生み出すラナンキュラスは、積み重ねてきたものこそが本当の魅力だと教えてくれる花です。</p>
     <ul>
-      <li>ラナンキュラスは春に幾重にも重なる花を咲かせる、4月3日の誕生花</li>
-      <li>花言葉は「華やかな魅力」、豊かなボリューム感に由来する</li>
-      <li>薄紙のような繊細な花びらと豊富な花色が魅力</li>
-      <li>水はけの良い場所で、過湿に注意しながら育てたい</li>
+      <li>ラナンキュラスはキンポウゲ科の多年草で、春に幾重にも重なる花びらの花を咲かせる</li>
+      <li>一枚一枚は繊細でも、重なることで華やかで柔らかな印象を生み出す</li>
+      <li>花言葉は「華やかな魅力」。花びらの重なりが生む印象に由来するといわれる</li>
+      <li>華やかな魅力は、積み重ねてきたものが生み出す本当の魅力を表す言葉ともいえる</li>
     </ul>
   </section>
 

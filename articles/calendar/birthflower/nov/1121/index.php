@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1121/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月21日の誕生花ハマギクの花言葉・特徴・魅力をわかりやすく解説。「友愛」を象徴する白い花の意味を紹介します。">
+  <meta name="description" content="11月21日の誕生花ハマギクの花言葉・特徴・魅力をわかりやすく解説。「友愛」を象徴する海岸沿いで白い花を咲かせる多年草の意味を紹介します。">
   <title>11月21日の誕生花はハマギク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハマギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に海岸沿いで白い花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ハマギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋の海岸沿いで白い花を寄り添うように咲かせる姿が、友愛を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ハマギクはどんな場所に自生していますか？","acceptedAnswer":{"@type":"Answer","text":"太平洋沿岸の岩場や砂地など、潮風の当たる海岸沿いに自生する日本原産の植物です。"}}
+      {"@type":"Question","name":"ハマギクはどんな場所に自生していますか？","acceptedAnswer":{"@type":"Answer","text":"海岸沿いに自生する、キク科の多年草です。秋に白い花を咲かせます。"}},
+      {"@type":"Question","name":"ハマギクの花言葉「友愛」はなぜこの花についたのですか？","acceptedAnswer":{"@type":"Answer","text":"海辺という同じ環境で肩を並べるように群れて咲く様子が、友愛という花言葉の由来とされています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 21 · 誕生花</span>
     <h1>11月21日の誕生花はハマギク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハマギクは、キク科の多年草で、秋に海岸沿いで白い花を咲かせる、素朴で親しみやすい印象を持つ花です。花言葉は「友愛」。素朴な花です。</p>
+    <p class="art-lead">潮風の強い秋の海岸で、白い花が寄り添うように咲いているのを見かけることがある。キク科の多年草ハマギクの、この粘り強い咲き方は、11月21日という日によく似合う。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハマギクとは</a></li>
-      <li><a href="#meaning">ハマギクが象徴する意味</a></li>
-      <li><a href="#charm">ハマギクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月21日の誕生花として親しまれるハマギク</a></li>
+      <li><a href="#story">潮風に負けない、白い群れ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハマギクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハマギクとは</h2>
-    <p>ハマギクは、キク科の多年草で、11月21日の誕生花として知られています。秋に海岸沿いで白い花を咲かせる、素朴で親しみやすい印象を持つ花です。</p>
-  </section>
+    <h2>11月21日の誕生花として親しまれるハマギク</h2>
+    <p>ハマギクは、キク科の多年草として知られる、11月21日の誕生花です。秋、海岸沿いで白い花を咲かせ、潮風にも負けない力強さを見せます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハマギクが象徴する意味</h2>
-    <p>ハマギクの花言葉は「友愛」です。秋の海岸沿いで白い花を寄り添うように咲かせる姿が、友愛を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハマギクの魅力</h2>
-    <p>ハマギクの魅力は、海岸沿いで咲く白い花の素朴な美しさと、寄り添うように群れて咲く親しみやすさにあります。11月21日生まれの方はもちろん、友愛の想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハマギクは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月21日生まれの方はもちろん、友愛の想いを伝えたい贈り物としてもハマギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハマギクはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に海岸沿いで白い花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハマギクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋の海岸沿いで白い花を寄り添うように咲かせる姿が、友愛を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ハマギクはどんな場所に自生していますか？</div>
-        <div class="faq-a">太平洋沿岸の岩場や砂地など、潮風の当たる海岸沿いに自生する日本原産の植物です。</div>
+        <div class="faq-a">海岸沿いに自生する、キク科の多年草です。秋に白い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>潮風に負けない、白い群れ</h2>
+    <p>潮風の吹きつける秋の海岸で、白い花が群れになって咲いているのを見かけることがある。キク科の多年草、ハマギクが花を咲かせるのはこの時期で、厳しい環境にもかかわらず、一つひとつの花が寄り添うように咲き並ぶ姿が印象的だ。強い風にさらされながらも茎を折らず、隣の花と支え合うように群生するその姿は、単独では見せない粘り強さを感じさせる。この助け合うような咲き方が、「友愛」という花言葉に結びついている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハマギクの花言葉「友愛」はなぜこの花についたのですか？</div>
+        <div class="faq-a">海辺という同じ環境で肩を並べるように群れて咲く様子が、友愛という花言葉の由来とされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>潮風にさらされながらも凛と咲く花のように、大切な人との絆は、離れていても色あせない。遠くにいる誰かのことを、少し思い出す時間にしよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハマギクから始める小さな体験</h2>
+    <p>潮風の中で寄り添うように咲くハマギクにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白い花が潮風に揺れる様子を思い浮かべてみる</li>
+      <li>大切な友人との時間を、今日は少し大切にしてみる</li>
+      <li>海辺を歩いて過ごす時間を作ってみる</li>
+    </ul>
+
+    <p class="cta-lead">誰かと出かける計画を立てたい日は、開運カレンダーで今日のラッキープレイスも調べてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>潮風の中で寄り添うように咲く強さが、ハマギクを「友愛」の花にしている。</p>
     <ul>
-      <li>ハマギクは秋に海岸沿いで白い花を咲かせる、11月21日の誕生花</li>
-      <li>花言葉は「友愛」、寄り添うように咲く姿に由来する</li>
-      <li>海岸沿いで咲く白い花の素朴な美しさが魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ハマギクは、キク科の多年草で、秋に海岸沿いで白い花を咲かせる、11月21日の誕生花</li>
+      <li>花言葉は「友愛」。仲間と共に困難な環境を乗り越えて咲く姿に由来すると言われる</li>
+      <li>厳しい環境でも茎を折らない粘り強さを持つ</li>
+      <li>大切な人との絆を感じたい日に寄り添う花</li>
     </ul>
   </section>
 

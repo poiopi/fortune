@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1212/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月12日の誕生花テッポウユリの花言葉・特徴・魅力をわかりやすく解説。「純潔」を象徴する清楚な花の意味を紹介します。">
+  <meta name="description" content="12月12日の誕生花テッポウユリの花言葉・特徴・魅力をわかりやすく解説。「純潔」を象徴する白く清楚な花の意味を紹介します。">
   <title>12月12日の誕生花はテッポウユリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"テッポウユリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に白いラッパ状の花を咲かせます。ユリ科の多年草です。"}},
-      {"@type":"Question","name":"テッポウユリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"白く清らかなラッパ状の花をまっすぐに咲かせる姿が、汚れのない純潔さを思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"テッポウユリという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花の形が鉄砲の筒に似ていることから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"テッポウユリは、冬でも花屋で見かけることがあるのですか？","acceptedAnswer":{"@type":"Answer","text":"自然の開花期は初夏ですが、栽培技術によって一年を通して切り花として流通することも多く、冬でも花屋で見かけることがあります。"}},
+      {"@type":"Question","name":"テッポウユリが「純潔」の象徴とされるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"白く清らかな花の色と、まっすぐに伸びるラッパ状の花の形が重なり合い、「純潔」という花言葉が生まれたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 12 · 誕生花</span>
     <h1>12月12日の誕生花はテッポウユリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">テッポウユリは、ユリ科の多年草で、初夏に白いラッパ状の花を咲かせる、清楚で気品ある印象を持つ花です。花言葉は「純潔」。清楚な花です。</p>
+    <p class="art-lead">すっと伸びた純白の花びらが、ラッパのように開く。テッポウユリは、そんな清楚な印象を持つユリ科の多年草だ。花期は初夏で、12月12日はその花からは少し遠い、静かな季節にあたる。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">テッポウユリとは</a></li>
-      <li><a href="#meaning">テッポウユリが象徴する意味</a></li>
-      <li><a href="#charm">テッポウユリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月12日の誕生花として親しまれるテッポウユリ</a></li>
+      <li><a href="#story">白いラッパが描く、まっすぐな清らかさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、テッポウユリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>テッポウユリとは</h2>
-    <p>テッポウユリは、ユリ科の多年草で、12月12日の誕生花として知られています。初夏に白いラッパ状の花を咲かせる、清楚で気品ある印象を持つ花です。</p>
-  </section>
+    <h2>12月12日の誕生花として親しまれるテッポウユリ</h2>
+    <p>テッポウユリは、ユリ科の多年草で、12月12日の誕生花として知られています。花が咲くのは初夏で、白いラッパ状の花びらをすっと伸ばして咲かせるのが特徴です。12月12日の時点ではまだ花期を迎えていませんが、切り花として一年を通して花屋に並ぶことも多く、季節を問わず親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>テッポウユリが象徴する意味</h2>
-    <p>テッポウユリの花言葉は「純潔」です。白く清らかなラッパ状の花をまっすぐに咲かせる姿が、汚れのない純潔さを思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>テッポウユリの魅力</h2>
-    <p>テッポウユリの魅力は、まっすぐに伸びる茎の先で咲く白く清らかな花と、凛とした気品にあります。12月12日生まれの方はもちろん、清らかな想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>テッポウユリは日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月12日生まれの方はもちろん、清らかな想いを伝えたい贈り物としてもテッポウユリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">テッポウユリはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に白いラッパ状の花を咲かせます。ユリ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">テッポウユリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">白く清らかなラッパ状の花をまっすぐに咲かせる姿が、汚れのない純潔さを思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">テッポウユリという名前の由来は何ですか？</div>
-        <div class="faq-a">花の形が鉄砲の筒に似ていることから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">テッポウユリは、冬でも花屋で見かけることがあるのですか？</div>
+        <div class="faq-a">自然の開花期は初夏ですが、栽培技術によって一年を通して切り花として流通することも多く、冬でも花屋で見かけることがあります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>白いラッパが描く、まっすぐな清らかさ</h2>
+    <p>テッポウユリの花びらは、他のユリのように反り返らず、筒状のまま先端だけがふわりと開く。そのまっすぐな形は、鉄砲のような直線的な印象を与えると同時に、迷いのない清らかさをも感じさせる。純白の色合いと、まっすぐに伸びる花の形が重なり合うことで、花言葉「純潔」が生まれたのだろう。この言葉は、特定の宗教や道徳観に限らず、誰の心にもある澄んだ気持ちを映していると言えそうだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">テッポウユリが「純潔」の象徴とされるのはなぜですか？</div>
+        <div class="faq-a">白く清らかな花の色と、まっすぐに伸びるラッパ状の花の形が重なり合い、「純潔」という花言葉が生まれたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>まっすぐに伸びる花のように、迷いを一つ手放して、澄んだ気持ちで過ごせたらいい。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、テッポウユリから始める小さな体験</h2>
+    <p>白く澄んだ花の姿にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>白いラッパ状の花の形を、じっくり観察してみる</li>
+      <li>清らかな気持ちを、今日は一つ大切にしてみる</li>
+      <li>白いものを、身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日出かけるとよい場所を知りたいときは、開運カレンダーのラッキープレイスもあわせてご覧ください。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>白一色の潔さが、今日という一日を静かに整えてくれる。</p>
     <ul>
-      <li>テッポウユリは初夏に白いラッパ状の花を咲かせる、12月12日の誕生花</li>
-      <li>花言葉は「純潔」、白く清らかな花姿に由来する</li>
-      <li>白く清らかなラッパ状の花が、まっすぐ気高く咲く姿が魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土に球根を植えつけて管理するとよく育ちます</li>
+      <li>テッポウユリは、ユリ科の多年草で、初夏に白いラッパ状の花を咲かせる、12月12日の誕生花</li>
+      <li>花言葉は「純潔」。まっすぐな花の形と白い色合いに由来すると言われる</li>
+      <li>開花期は初夏だが、切り花としては冬でも見かけることがある</li>
+      <li>反り返らない花びらの姿に、すっと背筋が伸びる</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-12'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1212'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-12');
+echo autoLink($html, 'birthflower-dec-1212');
 ?>

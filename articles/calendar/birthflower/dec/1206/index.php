@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1206/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="12月6日の誕生花ブバルディアの花言葉・特徴・魅力をわかりやすく解説。「予感」を象徴する可憐な花の意味を紹介します。">
+  <meta name="description" content="12月6日の誕生花ブバルディアの花言葉・特徴・魅力をわかりやすく解説。「予感」を象徴する星形の可憐な花の意味を紹介します。">
   <title>12月6日の誕生花はブバルディア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ブバルディアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋を中心に小さな星形の花を咲かせます。アカネ科の常緑低木です。"}},
-      {"@type":"Question","name":"ブバルディアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな星形の花が集まって咲く姿が、これから訪れる何かを静かに知らせる予感を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ブバルディアはどんな場面で使われることが多いですか？","acceptedAnswer":{"@type":"Answer","text":"小さく可憐な花姿から、花束やアレンジメントの引き立て役として使われることが多い花です。"}}
+      {"@type":"Question","name":"ブバルディアは、花が咲いていない時期はどんな姿をしていますか？","acceptedAnswer":{"@type":"Answer","text":"常緑低木のため、花が咲いていない時期も葉を落とさず、緑を保ち続けます。一年を通して庭に彩りを添えてくれる植物です。"}},
+      {"@type":"Question","name":"ブバルディアは、どんな用途で使われることが多いですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花がまとまって咲く姿が愛らしく、ブーケや花束の引き立て役として使われることが多い花です。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">DECEMBER 6 · 誕生花</span>
     <h1>12月6日の誕生花はブバルディア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ブバルディアは、アカネ科の常緑低木で、秋を中心に小さな星形の花を咲かせる、可憐で清楚な印象を持つ花です。花言葉は「予感」。可憐な花です。</p>
+    <p class="art-lead">星のかたちをした小さな花が、いくつも寄り集まって咲く。ブバルディアは、そんな姿を持つアカネ科の常緑低木で、花期の中心は秋にあたる。12月6日、そのピークはやや過ぎているが、常緑の葉は変わらず緑を保ち続けている。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ブバルディアとは</a></li>
-      <li><a href="#meaning">ブバルディアが象徴する意味</a></li>
-      <li><a href="#charm">ブバルディアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">12月6日の誕生花として親しまれるブバルディア</a></li>
+      <li><a href="#story">小さな星のかたちが告げる、次の季節の気配</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ブバルディアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ブバルディアとは</h2>
-    <p>ブバルディアは、アカネ科の常緑低木で、12月6日の誕生花として知られています。秋を中心に小さな星形の花を咲かせる、可憐で清楚な印象を持つ花です。</p>
-  </section>
+    <h2>12月6日の誕生花として親しまれるブバルディア</h2>
+    <p>ブバルディアは、アカネ科の常緑低木で、12月6日の誕生花として知られています。小さな星形の花を、秋を中心とした季節に咲かせるのが特徴です。12月6日の時点では、その花期のピークをやや過ぎた頃にあたりますが、常緑低木であるため、葉は一年を通して緑を保ち続けます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ブバルディアが象徴する意味</h2>
-    <p>ブバルディアの花言葉は「予感」です。小さな星形の花が集まって咲く姿が、これから訪れる何かを静かに知らせる予感を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ブバルディアの魅力</h2>
-    <p>ブバルディアの魅力は、星形の小花が集まって咲く可憐さと、花束に軽やかさを添える清楚な佇まいにあります。12月6日生まれの方はもちろん、小さな予感を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ブバルディアは日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>12月6日生まれの方はもちろん、小さな予感を伝えたい贈り物としてもブバルディアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブバルディアはいつ頃咲きますか？</div>
-        <div class="faq-a">秋を中心に小さな星形の花を咲かせます。アカネ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブバルディアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">小さな星形の花が集まって咲く姿が、これから訪れる何かを静かに知らせる予感を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ブバルディアはどんな場面で使われることが多いですか？</div>
-        <div class="faq-a">小さく可憐な花姿から、花束やアレンジメントの引き立て役として使われることが多い花です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ブバルディアは、花が咲いていない時期はどんな姿をしていますか？</div>
+        <div class="faq-a">常緑低木のため、花が咲いていない時期も葉を落とさず、緑を保ち続けます。一年を通して庭に彩りを添えてくれる植物です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>小さな星のかたちが告げる、次の季節の気配</h2>
+    <p>ブバルディアの花をよく見ると、花びらの先が細く尖り、まるで小さな星を散りばめたような形をしている。一つひとつは控えめな大きさでも、いくつも寄り集まって咲くことで、夜空の星座のような賑やかさを見せる。秋を中心に咲くこの花が、常緑の葉とともに一年を通して庭に佇む姿は、次に何かが始まる予感を静かに漂わせているようにも見える。花言葉「予感」という言葉は、そんな星のかたちの花が纏う、期待に満ちた気配をよく表している。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ブバルディアは、どんな用途で使われることが多いですか？</div>
+        <div class="faq-a">小さな花がまとまって咲く姿が愛らしく、ブーケや花束の引き立て役として使われることが多い花です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>心にふと浮かぶ小さな予感を、大切に育てたことはあるだろうか。ふとした瞬間に、その気配は静かに膨らんでいく。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ブバルディアから始める小さな体験</h2>
+    <p>星形の花が告げる予感にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>星形の花を、じっくり観察してみる</li>
+      <li>心の中に浮かんだ小さな予感を、大切にしてみる</li>
+      <li>常緑の葉を、日々の暮らしの中に取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">今日が特別な一日かどうか気になったら、開運カレンダーで吉日の情報も調べてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>小さな星形の花が集まって、静かな予感を灯している。</p>
     <ul>
-      <li>ブバルディアは秋を中心に小さな星形の花を咲かせる、12月6日の誕生花</li>
-      <li>花言葉は「予感」、小さな星形の花に由来する</li>
-      <li>星形の小さな花が集まって咲く、可憐な姿が魅力</li>
-      <li>日当たりの良い場所を好み、水はけのよい土で管理するとよく育ちます</li>
+      <li>ブバルディアは、アカネ科の常緑低木で、秋を中心に小さな星形の花を咲かせる、12月6日の誕生花</li>
+      <li>花言葉は「予感」。星のような花の形が持つ、期待に満ちた気配に由来すると言われる</li>
+      <li>開花のピークは秋で、12月6日の時点では花期を過ぎている場合がある点に注意</li>
+      <li>常緑の葉が、花のない季節にも変わらぬ彩りを添えてくれる</li>
     </ul>
   </section>
 
@@ -253,10 +259,10 @@ function toggleFaq(el){
 }
 </script>
 
-<?php $currentSlug='calendar-birthflower-dec-06'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
+<?php $currentSlug='calendar-birthflower-dec-1206'; $pageType='article'; require __DIR__.'/../../../../../inc/footer.php'; ?>
 </body>
 </html>
 <?php
 $html = ob_get_clean();
-echo autoLink($html, 'birthflower-dec-06');
+echo autoLink($html, 'birthflower-dec-1206');
 ?>

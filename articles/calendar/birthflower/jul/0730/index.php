@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0730/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月30日の誕生花ホウセンカの花言葉・特徴・魅力をわかりやすく解説。「激しい愛」を象徴する触れると弾ける実の意味を紹介します。">
+  <meta name="description" content="7月30日の誕生花ホウセンカの花言葉・特徴・魅力をわかりやすく解説。夏に色鮮やかな花を咲かせ、触れると実が弾ける、懐かしく親しみやすいツリフネソウ科の一年草を紹介します。">
   <title>7月30日の誕生花はホウセンカ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ホウセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に色鮮やかな花を咲かせます。ツリフネソウ科の一年草です。"}},
-      {"@type":"Question","name":"ホウセンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"熟した実にわずかに触れただけで種が勢いよく弾け飛ぶ様子が、抑えきれないほど激しい愛の情熱を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ホウセンカの実はなぜ弾けるのですか？","acceptedAnswer":{"@type":"Answer","text":"熟した実の内側にたまった水分の圧力によって、触れた刺激で種を勢いよく弾き飛ばす仕組みを持っているためです。"}}
+      {"@type":"Question","name":"ホウセンカの花にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"夏に色鮮やかな花を咲かせ、実に触れると弾けるという他にはない特徴を持つ、ツリフネソウ科の一年草です。"}},
+      {"@type":"Question","name":"ホウセンカの花言葉『激しい愛』はどのような由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"赤やピンクなど鮮やかな色を惜しみなく咲かせる、迷いのない花の姿が、まっすぐで飾らない想いと重ねられてきたと言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 30 · 誕生花</span>
     <h1>7月30日の誕生花はホウセンカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ホウセンカは、ツリフネソウ科の一年草で、夏になると色鮮やかな花を咲かせ、実が触れると弾ける懐かしく親しみやすい花です。花言葉は「激しい愛」。触れると実が弾ける懐かしい花です。</p>
+    <p class="art-lead">赤やピンク、白と、鮮やかな色をまとって咲くホウセンカ。夏の庭で次々と花を咲かせ、触れると実が勢いよくはじける、活気ある表情を持つ花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ホウセンカとは</a></li>
-      <li><a href="#meaning">ホウセンカが象徴する意味</a></li>
-      <li><a href="#charm">ホウセンカの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月30日の誕生花として親しまれるホウセンカ</a></li>
+      <li><a href="#story">鮮やかな色が語る、ホウセンカのまっすぐな想い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ホウセンカから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ホウセンカとは</h2>
-    <p>ホウセンカは、ツリフネソウ科の一年草で、7月30日の誕生花として知られています。夏になると色鮮やかな花を咲かせ、実が触れると弾ける懐かしく親しみやすい花です。</p>
-  </section>
+    <h2>7月30日の誕生花として親しまれるホウセンカ</h2>
+    <p>ホウセンカは、ツリフネソウ科の一年草です。夏に色鮮やかな花を咲かせます。7月30日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ホウセンカが象徴する意味</h2>
-    <p>ホウセンカの花言葉は「激しい愛」です。熟した実にわずかに触れただけで種が勢いよく弾け飛ぶ様子が、抑えきれないほど激しい愛の情熱を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ホウセンカの魅力</h2>
-    <p>ホウセンカの魅力は、赤やピンクなど色鮮やかな花色と、触れると弾ける実のユニークな面白さにあります。子どもの遊びとしても親しまれてきた、身近で懐かしい花です。7月30日生まれの方はもちろん、情熱的な愛を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ホウセンカは日当たりを好み、乾燥に弱いため水切れに注意して管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月30日生まれの方はもちろん、情熱的な愛を伝えたい贈り物としてもホウセンカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホウセンカはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に色鮮やかな花を咲かせます。ツリフネソウ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホウセンカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">熟した実にわずかに触れただけで種が勢いよく弾け飛ぶ様子が、抑えきれないほど激しい愛の情熱を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ホウセンカの実はなぜ弾けるのですか？</div>
-        <div class="faq-a">熟した実の内側にたまった水分の圧力によって、触れた刺激で種を勢いよく弾き飛ばす仕組みを持っているためです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ホウセンカの花にはどんな特徴がありますか？</div>
+        <div class="faq-a">夏に色鮮やかな花を咲かせ、実に触れると弾けるという他にはない特徴を持つ、ツリフネソウ科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>鮮やかな色が語る、ホウセンカのまっすぐな想い</h2>
+    <p>ホウセンカの花は、赤やピンク、白など、鮮やかな色を惜しみなく重ねて咲きます。一輪ごとの色がはっきりとしているぶん、群れて咲く姿はどこか勢いに満ちて見え、控えめさとは対極にある力強い印象を残します。この、迷いなく色を放つ咲き方が、まっすぐで飾らない想いのあり方と重ねられ、『激しい愛』という花言葉につながっていったと伝えられています。燃えるような激しさというより、隠さずにあふれ出す気持ちの純度の高さを表しているのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ホウセンカの花言葉『激しい愛』はどのような由来がありますか？</div>
+        <div class="faq-a">赤やピンクなど鮮やかな色を惜しみなく咲かせる、迷いのない花の姿が、まっすぐで飾らない想いと重ねられてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>赤やピンクの色が惜しみなく重なって咲く庭先。その光景を思い浮かべると、心の中にある気持ちも、隠しておくよりありのまま見せてしまったほうが、きっと軽やかになるはずです。今日は、抑えていた気持ちを少しだけ表に出してみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ホウセンカから始める小さな体験</h2>
+    <p>色鮮やかな花を次々と咲かせるホウセンカにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>色鮮やかな花をじっくり観察してみる</li>
+      <li>実が触れると弾ける様子を想像してみる</li>
+      <li>抑えていた気持ちを一つ、素直に表現してみる</li>
+    </ul>
+
+    <p class="cta-lead">抑えきれない気持ちがあふれてくる今日は、月齢・月相やおすすめアイテムもあわせて確認してみませんか。開運カレンダーでは、月齢・月相とおすすめアイテムを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>赤やピンクの色を惜しみなく重ねて咲くその姿は、抑えることなくあふれ出す気持ちそのものだ。</p>
     <ul>
-      <li>ホウセンカは夏に色鮮やかな花を咲かせる、7月30日の誕生花</li>
-      <li>花言葉は「激しい愛」、実が弾ける様子に由来する</li>
-      <li>鮮やかな花色と実がはじけるユニークさが魅力</li>
-      <li>日当たりを好み、水切れに注意することが必要</li>
+      <li>ホウセンカは夏に色鮮やかな花を咲かせる、ツリフネソウ科の一年草で、7月30日の誕生花</li>
+      <li>花言葉は「激しい愛」。迷いなく色を放つ花の姿と重ねられてきたとされる</li>
+      <li>触れると実が勢いよく弾けるという、他にはない特徴を持つ</li>
+      <li>懐かしく親しみやすい印象を持つ花として知られる</li>
     </ul>
   </section>
 

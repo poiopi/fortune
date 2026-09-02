@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0607/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月7日の誕生花カルセオラリアの花言葉・特徴・魅力をわかりやすく解説。「私の伴侶」を象徴する袋状の形の花の意味を紹介します。">
+  <meta name="description" content="6月7日の誕生花カルセオラリアの花言葉・特徴・魅力をわかりやすく解説。和名キンチャクソウ、袋状のユニークな花に込められた「私の伴侶」の意味を紹介します。">
   <title>6月7日の誕生花はカルセオラリア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カルセオラリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に袋状のユニークな形の花を咲かせます。ゴマノハグサ科の多年草で、個性的な姿が特徴です。"}},
-      {"@type":"Question","name":"カルセオラリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「私の伴侶」という花言葉は、花びらが二つの袋を寄り添わせたような形をしていることに由来すると言われています。"}},
-      {"@type":"Question","name":"カルセオラリアの花の形にはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"袋状にふくらんだユニークな形をしており、他の花にはない個性的な姿として親しまれています。"}}
+      {"@type":"Question","name":"カルセオラリアの和名は何ですか？","acceptedAnswer":{"@type":"Answer","text":"和名は「キンチャクソウ」です。袋状のユニークな形の花が、巾着袋を思わせることに由来すると考えられています。"}},
+      {"@type":"Question","name":"カルセオラリアの花言葉『私の伴侶』の由来は？","acceptedAnswer":{"@type":"Answer","text":"はっきりとした由来は伝わっていませんが、二つ寄り添うような袋状の花の形が、そばにいる存在を連想させると語られることが多いようです。"}},
+      {"@type":"Question","name":"カルセオラリアはどんな花色がありますか？","acceptedAnswer":{"@type":"Answer","text":"黄色や赤など、鮮やかな花色を持つ品種が多く見られます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 7 · 誕生花</span>
     <h1>6月7日の誕生花はカルセオラリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カルセオラリアは、ゴマノハグサ科の多年草で、春に袋状のユニークな形の花を咲かせる6月7日の誕生花です。花言葉は「私の伴侶」。個性的な姿が印象的な花です。</p>
+    <p class="art-lead">花びらが袋のようにふくらみ、二つ寄り添って並んでいます。カルセオラリアは、そんなユニークな形の花を咲かせる、ゴマノハグサ科の多年草です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カルセオラリアとは</a></li>
-      <li><a href="#meaning">カルセオラリアが象徴する意味</a></li>
-      <li><a href="#charm">カルセオラリアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月7日の誕生花として親しまれるカルセオラリア</a></li>
+      <li><a href="#story">袋状の花が伝える、カルセオラリアの寄り添い</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カルセオラリアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カルセオラリアとは</h2>
-    <p>カルセオラリアは、ゴマノハグサ科の多年草で、6月7日の誕生花として知られています。春になると袋状のユニークな形の花を咲かせ、他の花にはない個性的な姿が印象的な花です。</p>
-  </section>
+    <h2>6月7日の誕生花として親しまれるカルセオラリア</h2>
+    <p>カルセオラリアは、ゴマノハグサ科の多年草です。袋状のユニークな形の花を咲かせ、和名は「キンチャクソウ」といいます。黄色や赤など鮮やかな花色を持つ、他にはない印象的な姿から、6月7日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カルセオラリアが象徴する意味</h2>
-    <p>カルセオラリアの花言葉は「私の伴侶」です。花びらが二つの袋を寄り添わせたような形をしていることから、寄り添い合うパートナーの姿を連想させ、この花言葉が生まれたと言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カルセオラリアの魅力</h2>
-    <p>カルセオラリアの魅力は、他に類を見ない袋状の花の形と、鮮やかな黄色や赤の色合いにあります。鉢植えとして飾ると独特の存在感を放ち、話題性のある花としても人気です。6月7日生まれの方はもちろん、大切な伴侶への想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カルセオラリアは涼しく風通しの良い環境を好み、高温多湿を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月7日生まれの方はもちろん、大切な伴侶への想いを伝えたい贈り物としてもカルセオラリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カルセオラリアはいつ頃咲きますか？</div>
-        <div class="faq-a">春に袋状のユニークな形の花を咲かせます。ゴマノハグサ科の多年草で、個性的な姿が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カルセオラリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「私の伴侶」という花言葉は、花びらが二つの袋を寄り添わせたような形をしていることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カルセオラリアの花の形にはどんな特徴がありますか？</div>
-        <div class="faq-a">袋状にふくらんだユニークな形をしており、他の花にはない個性的な姿として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">カルセオラリアの和名は何ですか？</div>
+        <div class="faq-a">和名は「キンチャクソウ」です。袋状のユニークな形の花が、巾着袋を思わせることに由来すると考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>袋状の花が伝える、カルセオラリアの寄り添い</h2>
+    <p>カルセオラリアの花は、上下二枚の花びらが袋のようにふくらみ、独特な立体感を作り出します。一つだけでも目を引く形ですが、茎の先で複数の花が並んで咲く様子は、まるでお互いに寄り添っているようにも見えます。黄色や赤といった鮮やかな色がその形をさらに印象づけ、遠くからでも見つけやすい花です。和名の「キンチャクソウ」も、この袋状の形を巾着袋になぞらえたものだと考えられています。寄り添うように二つ並んで咲く袋状の花の姿が、「私の伴侶」という言葉の由来になったと伝えられています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カルセオラリアの花言葉「私の伴侶」の由来は？</div>
+        <div class="faq-a">はっきりとした由来は伝わっていませんが、二つ寄り添うような袋状の花の形が、そばにいる存在を連想させると語られることが多いようです。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>二つ並んで咲く袋状の花を見ていると、そばにいる存在のありがたさに気づく瞬間があります。長く一緒に過ごしてきた誰かの姿は、当たり前のようでいて、実はかけがえのないものだったりします。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カルセオラリアから始める小さな体験</h2>
+    <p>寄り添うように咲くカルセオラリアにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>袋状のユニークな形の花をじっくり観察してみる</li>
+      <li>和名「キンチャクソウ」の由来について調べてみる</li>
+      <li>隣にいてくれる誰かに、感謝を一つ伝えてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カルセオラリアはどんな花色がありますか？</div>
+        <div class="faq-a">黄色や赤など、鮮やかな花色を持つ品種が多く見られます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">そばにいる誰かへ感謝を伝えたい今日は、月九星やラッキーカラーも見てみませんか。開運カレンダーでは、今月の九星と今日のラッキーカラーを確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>袋状のかわいらしい花をつけるカルセオラリアは、隣にいる誰かの存在をふと意識させる花です。</p>
     <ul>
-      <li>カルセオラリアは春に袋状の花を咲かせる、6月7日の誕生花</li>
-      <li>花言葉は「私の伴侶」、寄り添う花の形に由来する</li>
-      <li>他に類を見ない個性的な花の姿が魅力</li>
-      <li>涼しく風通しの良い環境でよく育つ</li>
+      <li>カルセオラリアはゴマノハグサ科の多年草で、袋状の花を咲かせる、6月7日の誕生花</li>
+      <li>花言葉は「私の伴侶」。寄り添うような花の形に結びつけられているとされる</li>
+      <li>和名は「キンチャクソウ」。黄色や赤など鮮やかな花色が魅力</li>
+      <li>茎の先に複数の花が並んで咲く姿が特徴</li>
     </ul>
   </section>
 

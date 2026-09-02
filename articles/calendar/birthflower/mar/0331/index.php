@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0331/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月31日の誕生花キンセンカの花言葉・特徴・魅力をわかりやすく解説。「変身・再生」を象徴する太陽を思わせる花の意味を紹介します。">
+  <meta name="description" content="3月31日の誕生花キンセンカの花言葉・特徴・魅力をわかりやすく解説。「変身・再生」を象徴する、鮮やかな橙黄色の花の意味を紹介します。">
   <title>3月31日の誕生花はキンセンカ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   .article-nav-comingsoon{opacity:.55;cursor:default}
   .article-nav-comingsoon:hover{border-color:var(--border)}
   .article-nav-comingsoon .article-nav-name{color:var(--muted)}
@@ -93,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"キンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、鮮やかな橙黄色の花を咲かせます。キク科の一年草で、長い開花期間が特徴です。"}},
-      {"@type":"Question","name":"キンセンカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「変身・再生」という花言葉は、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたというギリシャ神話に由来すると言われています。"}},
-      {"@type":"Question","name":"キンセンカは食べることもできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。エディブルフラワー（食用花）としてサラダなどに添えられるほか、肌にやさしい成分を含むことからスキンケア用品の原料としても使われています。"}}
+      {"@type":"Question","name":"キンセンカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて鮮やかな橙黄色の花を咲かせます。キク科の一年草で、明るく温かみのある印象を与える花です。"}},
+      {"@type":"Question","name":"キンセンカの花言葉「変身・再生」の由来は？","acceptedAnswer":{"@type":"Answer","text":"冬から春という季節の変わり目を、鮮やかな橙黄色の花で長く彩り続ける姿に由来するといわれています。"}},
+      {"@type":"Question","name":"キンセンカはどんな印象の花ですか？","acceptedAnswer":{"@type":"Answer","text":"鮮やかな橙黄色の花を咲かせ、明るく温かみのある印象を与える花として親しまれています。"}}
     ]
   }
   </script>
@@ -132,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 31 · 誕生花</span>
     <h1>3月31日の誕生花はキンセンカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">キンセンカは、キク科の一年草で、冬から春に鮮やかな橙黄色の花を咲かせる3月31日の誕生花です。花言葉は「変身・再生」。明るく温かみのある花です。</p>
+    <p class="art-lead">3月最後の日、3月31日。冬から春にかけて鮮やかな橙黄色の花を咲かせ続けるキンセンカは、新しい自分へと向かう予感を教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>キンセンカ</dd>
     <dt>花言葉</dt><dd>変身・再生</dd>
     <dt>科名</dt><dd>キク科</dd>
-    <dt>見頃</dt><dd>冬から春</dd>
+    <dt>見頃</dt><dd>冬〜春</dd>
   </dl>
 
   <?php
@@ -153,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">キンセンカとは</a></li>
-      <li><a href="#meaning">キンセンカが象徴する意味</a></li>
-      <li><a href="#charm">キンセンカの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月31日の誕生花として親しまれるキンセンカ</a></li>
+      <li><a href="#story">橙黄色が語る、キンセンカの変身・再生</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、キンセンカから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>キンセンカとは</h2>
-    <p>キンセンカは、キク科の一年草で、3月31日の誕生花として知られています。英名は「カレンダー（ひと月）」に由来する「カレンデュラ」といい、ほぼ一年を通してどこかで花を咲かせ続けることから名づけられたとされます。橙色や黄色の鮮やかな花色で花壇を彩る、冬から春の代表的な花です。</p>
-  </section>
+    <h2>3月31日の誕生花として親しまれるキンセンカ</h2>
+    <p>キンセンカは、キク科の一年草です。冬から春にかけて、鮮やかな橙黄色の花を咲かせます。明るく温かみのある印象を与える花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>キンセンカが象徴する意味</h2>
-    <p>キンセンカの花言葉は「変身・再生」です。ギリシャ神話で、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたという伝説に由来すると言われています。花が太陽の動きを追うように向きを変える性質も、この花言葉と結びつけられています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>キンセンカの魅力</h2>
-    <p>キンセンカの魅力は、寒い季節にも負けない鮮やかな橙黄色の花色と、長い開花期間にあります。食用花（エディブルフラワー）としてサラダに添えられたり、肌にやさしい成分を含むことからスキンケア用品の原料としても使われたりと、観賞以外の楽しみ方も豊富な花です。3月31日生まれの方はもちろん、新しい自分へと踏み出す門出を祝う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>キンセンカは日当たりの良い場所を好み、寒さに強く育てやすい花です。花がら摘みをこまめに行うことで、冬から春にかけて長く花を咲かせ続けてくれます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月31日生まれの方はもちろん、新しい自分へと踏み出す門出を祝う贈り物としてもキンセンカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">キンセンカはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、鮮やかな橙黄色の花を咲かせます。キク科の一年草で、長い開花期間が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「変身・再生」という花言葉は、太陽神アポロンに恋をしたニンフが、想いが届かぬまま花に姿を変えたというギリシャ神話に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">キンセンカは食べることもできますか？</div>
-        <div class="faq-a">はい。エディブルフラワー（食用花）としてサラダなどに添えられるほか、肌にやさしい成分を含むことからスキンケア用品の原料としても使われています。</div>
+        <div class="faq-a">冬から春にかけて鮮やかな橙黄色の花を咲かせます。キク科の一年草で、明るく温かみのある印象を与える花です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>橙黄色が語る、キンセンカの変身・再生</h2>
+    <p>冬の寒さがまだ残る頃から、キンセンカは鮮やかな橙黄色の花を咲かせ始めます。他の花がまだ動き出さない季節に一足早く彩りを添え、そのまま春が深まっていく間もずっと咲き続けます。季節が冬から春へと移ろっていく長い時間を、絶えることなく橙黄色の花で彩り続けるのが、キンセンカという花の特徴です。キク科の一年草として、明るく温かみのある印象を周囲に与える花でもあります。そんな、季節の変わり目を長く彩り続ける姿から、キンセンカには「変身・再生」という花言葉が贈られているといわれています。この言葉は、冬から春へと季節が自然に移ろっていくように、少しずつ新しい自分へと向かっていく過程そのものを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キンセンカの花言葉「変身・再生」の由来は？</div>
+        <div class="faq-a">冬から春という季節の変わり目を、鮮やかな橙黄色の花で長く彩り続ける姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>季節が少しずつ移り変わっていくように、心の中にも新しい自分へと向かう予感が芽生えることがあります。今日は、その小さな予感に耳を澄ませてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、キンセンカから始める小さな体験</h2>
+    <p>冬から春にかけて橙黄色の花を咲かせ続けるキンセンカにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>橙黄色の花を探して春の気配を感じてみる</li>
+      <li>変えたいと思っていることを一つ書き出してみる</li>
+      <li>橙黄色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">キンセンカはどんな印象の花ですか？</div>
+        <div class="faq-a">鮮やかな橙黄色の花を咲かせ、明るく温かみのある印象を与える花として親しまれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">新しい自分への予感を感じた今日は、ラッキーフードやおすすめの行動もあわせて確認してみませんか。開運カレンダーでは、その日のラッキーフードやおすすめの行動もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月31日、冬から春を橙黄色の花で彩り続けるキンセンカは、少しずつ新しい自分へと向かっていく予感を教えてくれる花です。</p>
     <ul>
-      <li>キンセンカは冬から春に橙黄色の花を咲かせる、3月31日の誕生花</li>
-      <li>花言葉は「変身・再生」、花に姿を変えたニンフの神話に由来する</li>
-      <li>長い開花期間とサラダやスキンケアにも使われる実用性が魅力</li>
-      <li>寒さに強く、花がら摘みをしながら育てたい</li>
+      <li>キンセンカはキク科の一年草で、冬から春にかけて鮮やかな橙黄色の花を咲かせる</li>
+      <li>明るく温かみのある印象を与える花として親しまれている</li>
+      <li>花言葉は「変身・再生」。季節の変わり目を長く彩り続ける姿に由来するといわれる</li>
+      <li>変身・再生は、少しずつ新しい自分へと向かっていく過程そのものを表す言葉ともいえる</li>
     </ul>
   </section>
 

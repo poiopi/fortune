@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1120/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月20日の誕生花ルクリアの花言葉・特徴・魅力をわかりやすく解説。「優美な人」を象徴するピンクの花の意味を紹介します。">
+  <meta name="description" content="11月20日の誕生花ルクリアの花言葉・特徴・魅力をわかりやすく解説。「優美な人」を象徴する香り高いピンクの花を咲かせる常緑低木の意味を紹介します。">
   <title>11月20日の誕生花はルクリア｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ルクリアはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋から冬に香りのよいピンクの花を咲かせます。アカネ科の常緑低木です。"}},
-      {"@type":"Question","name":"ルクリアの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"秋から冬に香りのよいピンクの花を咲かせる気品ある姿が、優美な人を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ルクリアはどんな魅力がありますか？","acceptedAnswer":{"@type":"Answer","text":"花の姿だけでなく、甘く上品な香りも楽しめる点が大きな魅力です。"}}
+      {"@type":"Question","name":"ルクリアの香りにはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"甘く上品な香りが特徴で、秋から冬にかけて周囲に漂います。アカネ科の常緑低木です。"}},
+      {"@type":"Question","name":"ルクリアの花言葉「優美な人」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"多くの花が姿を消す時期にひとり咲き続ける、その落ち着いた佇まいが重なると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 20 · 誕生花</span>
     <h1>11月20日の誕生花はルクリア<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ルクリアは、アカネ科の常緑低木で、秋から冬に香りのよいピンクの花を咲かせる、優美で香り高い印象を持つ花です。花言葉は「優美な人」。優美な花です。</p>
+    <p class="art-lead">秋も深まる頃、どこからともなく甘い香りが漂ってくることがある。アカネ科の常緑低木、ルクリアがピンクの花とともにその香りを届けるのが、ちょうど11月20日の頃だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ルクリアとは</a></li>
-      <li><a href="#meaning">ルクリアが象徴する意味</a></li>
-      <li><a href="#charm">ルクリアの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月20日の誕生花として親しまれるルクリア</a></li>
+      <li><a href="#story">冷え込みが増す頃に見頃を迎える花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ルクリアから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ルクリアとは</h2>
-    <p>ルクリアは、アカネ科の常緑低木で、11月20日の誕生花として知られています。秋から冬に香りのよいピンクの花を咲かせる、優美で香り高い印象を持つ花です。</p>
-  </section>
+    <h2>11月20日の誕生花として親しまれるルクリア</h2>
+    <p>ルクリアは、アカネ科の常緑低木として知られる、11月20日の誕生花です。秋から冬にかけて、香りのよいピンクの花を咲かせます。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ルクリアが象徴する意味</h2>
-    <p>ルクリアの花言葉は「優美な人」です。秋から冬に香りのよいピンクの花を咲かせる気品ある姿が、優美な人を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ルクリアの魅力</h2>
-    <p>ルクリアの魅力は、ピンクの花が持つ気品ある美しさと、甘く上品な香りが漂う優雅なひとときにあります。11月20日生まれの方はもちろん、優美な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ルクリアは日当たりから半日陰を好み、寒さを避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月20日生まれの方はもちろん、優美な想いを伝えたい贈り物としてもルクリアは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルクリアはいつ頃咲きますか？</div>
-        <div class="faq-a">秋から冬に香りのよいピンクの花を咲かせます。アカネ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルクリアの花言葉の由来は何ですか？</div>
-        <div class="faq-a">秋から冬に香りのよいピンクの花を咲かせる気品ある姿が、優美な人を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ルクリアはどんな魅力がありますか？</div>
-        <div class="faq-a">花の姿だけでなく、甘く上品な香りも楽しめる点が大きな魅力です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ルクリアの香りにはどんな特徴がありますか？</div>
+        <div class="faq-a">甘く上品な香りが特徴で、秋から冬にかけて周囲に漂います。アカネ科の常緑低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>冷え込みが増す頃に見頃を迎える花</h2>
+    <p>朝晩の冷え込みが増し、周囲の草木が少しずつ枯れ色を帯び始める頃、ルクリアは見頃を迎える。アカネ科の常緑低木であるこの木は、多くの植物が花を落とし葉を落としていく秋から冬という季節に、あえて花を咲かせる数少ない木の一つだ。淡いピンク色の花びらが房状に集まって咲く様子は、寒さの中でひときわ人目を引き、ふと甘い香りが漂ってくることもある。他の花が少なくなっていく静かな季節になお咲き続けるこの落ち着いた気品が、「優美な人」という花言葉に重なる。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ルクリアの花言葉「優美な人」はどのように結びついていますか？</div>
+        <div class="faq-a">多くの花が姿を消す時期にひとり咲き続ける、その落ち着いた佇まいが重なると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>優美さは、静かな佇まいから自然とにじみ出るものだ。声のトーンを少し落とし、ゆっくりと人に接してみる。それだけで一日の空気が、少し気品を帯びていく。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ルクリアから始める小さな体験</h2>
+    <p>香りだけを先に届けるルクリアにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ピンクの花の香りを深呼吸で感じてみる</li>
+      <li>穏やかな振る舞いを、今日は少し意識してみる</li>
+      <li>ピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">穏やかな一日を過ごしたい日は、開運カレンダーでおすすめアイテムもあわせて確認してみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>冷たい風が吹き始める頃になお花を咲かせる。それがルクリアの気品である。</p>
     <ul>
-      <li>ルクリアは秋から冬に香りのよいピンクの花を咲かせる、11月20日の誕生花</li>
-      <li>花言葉は「優美な人」、気品あるピンクの花に由来する</li>
-      <li>花の美しさと甘く上品な香りが魅力</li>
-      <li>日当たりから半日陰を好み、寒さを避けて管理するとよく育ちます</li>
+      <li>ルクリアは、アカネ科の常緑低木で、秋から冬に香りのよいピンクの花を咲かせる、11月20日の誕生花</li>
+      <li>花言葉は「優美な人」。凛とした静けさをまとって冬にも花を咲かせ続けることに由来すると言われる</li>
+      <li>甘く上品な香りも、花より先に周囲に届く</li>
+      <li>穏やかな佇まいでありたい日に寄り添う花</li>
     </ul>
   </section>
 

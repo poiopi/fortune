@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0325/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月25日の誕生花カキツバタの花言葉・特徴・魅力をわかりやすく解説。「幸せの誓い」を象徴する和の趣を持つ花の意味を紹介します。">
+  <meta name="description" content="3月25日の誕生花カキツバタの花言葉・特徴・魅力をわかりやすく解説。「幸せの誓い」を象徴する、水辺に咲く紫色の花の意味を紹介します。">
   <title>3月25日の誕生花はカキツバタ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カキツバタはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に紫色の花を水辺に咲かせます。アヤメ科の多年草で、水辺や湿地に群生して育ちます。"}},
-      {"@type":"Question","name":"カキツバタの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「幸せの誓い」という花言葉は、在原業平が旅の途中で妻を想い詠んだとされる和歌に由来すると言われています。愛する人との絆を象徴する花とされています。"}},
-      {"@type":"Question","name":"カキツバタとアヤメ・ハナショウブはどう見分けますか？","acceptedAnswer":{"@type":"Answer","text":"カキツバタは花びらの根元に白い筋模様が入り、水辺や湿地に生育するのが特徴です。乾いた場所に生えるアヤメ、湿った場所を好むハナショウブとあわせて見分けることができます。"}}
+      {"@type":"Question","name":"カキツバタはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に紫色の花を水辺に咲かせます。3月25日は誕生花として定められている日で、実際の開花期とは異なります。"}},
+      {"@type":"Question","name":"カキツバタの花言葉「幸せの誓い」の由来は？","acceptedAnswer":{"@type":"Answer","text":"水辺で揺らぐことなく凛と咲く、深みのある紫色の佇まいに由来するといわれています。"}},
+      {"@type":"Question","name":"カキツバタとアヤメは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"見分けが難しいとされる近縁種ですが、それぞれ異なる特徴を持つ植物といわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 25 · 誕生花</span>
     <h1>3月25日の誕生花はカキツバタ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カキツバタは、アヤメ科の多年草で、初夏に紫色の花を水辺に咲かせる3月25日の誕生花です。花言葉は「幸せの誓い」。和の趣がある花です。</p>
+    <p class="art-lead">水辺に凛と紫色の花を咲かせるカキツバタ。3月25日の誕生花に選ばれたこの花は、揺るがない誓いの大切さを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カキツバタとは</a></li>
-      <li><a href="#meaning">カキツバタが象徴する意味</a></li>
-      <li><a href="#charm">カキツバタの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月25日の誕生花として親しまれるカキツバタ</a></li>
+      <li><a href="#story">水辺の紫が語る、カキツバタの揺るがなさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カキツバタから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カキツバタとは</h2>
-    <p>カキツバタは、アヤメ科の多年草で、3月25日の誕生花として知られています。水辺や湿地に群生して育ち、鮮やかな紫の花びらの中央に白い模様が入るのが特徴です。平安時代の物語「伊勢物語」にも詠まれるなど、古くから日本の文学や美術に登場してきた花です。</p>
-  </section>
+    <h2>3月25日の誕生花として親しまれるカキツバタ</h2>
+    <p>カキツバタは、アヤメ科の多年草です。初夏になると、紫色の花を水辺に咲かせます。凛とした佇まいと和の趣を漂わせる花姿は、古くから多くの人に愛されてきました。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カキツバタが象徴する意味</h2>
-    <p>カキツバタの花言葉は「幸せの誓い」です。在原業平が詠んだとされる「かきつばた」の五文字を句頭に置いた和歌が、旅の途中で妻を想う気持ちを表したことに由来すると言われています。愛する人との絆や約束を象徴する花とされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カキツバタの魅力</h2>
-    <p>カキツバタの魅力は、水辺に映える鮮やかな紫色の花色と、日本画の題材としても愛されてきた気品ある佇まいにあります。近縁のアヤメやハナショウブと似ていますが、花びらの根元に入る白い筋模様と、水中で育つ点で見分けることができます。3月25日生まれの方はもちろん、大切な約束を交わす贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カキツバタは湿地や水辺を好み、鉢植えの場合は常に水を張った状態で育てるのがおすすめです。日当たりの良い場所を好み、株分けで増やすこともできます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月25日生まれの方はもちろん、大切な約束を交わしたい贈り物としてもカキツバタは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">カキツバタはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に紫色の花を水辺に咲かせます。アヤメ科の多年草で、水辺や湿地に群生して育ちます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カキツバタの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「幸せの誓い」という花言葉は、在原業平が旅の途中で妻を想い詠んだとされる和歌に由来すると言われています。愛する人との絆を象徴する花とされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カキツバタとアヤメ・ハナショウブはどう見分けますか？</div>
-        <div class="faq-a">カキツバタは花びらの根元に白い筋模様が入り、水辺や湿地に生育するのが特徴です。乾いた場所に生えるアヤメ、湿った場所を好むハナショウブとあわせて見分けることができます。</div>
+        <div class="faq-a">初夏に紫色の花を水辺に咲かせます。3月25日は誕生花として定められている日で、実際の開花期とは異なります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>水辺の紫が語る、カキツバタの揺るがなさ</h2>
+    <p>水面に映る紫色の花――カキツバタの色は、単なる紫ではなく、水辺という舞台があってこそ引き立つ、深みのある紫色です。静かな水面と、そこに凛と立つ紫の花との組み合わせは、見る人に落ち着きと同時に、揺るがない強さを感じさせます。その揺らぐことのない紫色の佇まいから、「幸せの誓い」という花言葉が生まれたといわれています。誓いという言葉には、変わらずにいようとする意志が込められています。水に流されそうでいて、しっかりと根を張るカキツバタの姿は、まさにその象徴なのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カキツバタの花言葉「幸せの誓い」の由来は？</div>
+        <div class="faq-a">水辺で揺らぐことなく凛と咲く、深みのある紫色の佇まいに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>変わらずにいようとする気持ちこそ、何よりの誓いです。今日は、大切な人との約束を、心の中でそっと確かめ直してみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カキツバタから始める小さな体験</h2>
+    <p>水辺に凛と紫色の花を咲かせるカキツバタにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>水辺に咲く紫色の花を探してみる</li>
+      <li>大切な人との約束を一つ、心の中で確かめてみる</li>
+      <li>水面からすっと伸びる、凛とした花の佇まいをじっくり眺めてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カキツバタとアヤメは同じ花ですか？</div>
+        <div class="faq-a">見分けが難しいとされる近縁種ですが、それぞれ異なる特徴を持つ植物といわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">水辺に凛と咲く紫色を思い描き、揺るがない約束を胸に留めた今日は、六曜や月齢、ラッキーアイテムもあわせて確認してみませんか。開運カレンダーでは、その日の六曜や月齢、ラッキーアイテムもまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月25日、水辺に凛と咲くカキツバタは、揺るがない誓いの大切さを教えてくれる花です。</p>
     <ul>
-      <li>カキツバタは初夏に紫色の花を水辺に咲かせる、3月25日の誕生花</li>
-      <li>花言葉は「幸せの誓い」、業平の和歌に詠まれた妻への想いに由来する</li>
-      <li>水辺に映える鮮やかな花色と気品ある佇まいが魅力</li>
-      <li>水を張った環境で日当たりの良い場所に育てたい</li>
+      <li>カキツバタはアヤメ科の多年草で、初夏に紫色の花を水辺に咲かせる</li>
+      <li>水面に映える深みのある紫色が印象的</li>
+      <li>花言葉は「幸せの誓い」。揺らがず凛と咲く姿に由来するといわれる</li>
+      <li>アヤメやハナショウブなど見分けが難しい近縁種がある</li>
     </ul>
   </section>
 

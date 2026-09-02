@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0524/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="5月24日の誕生花スズランの花言葉・特徴・魅力をわかりやすく解説。「幸福の再来」を象徴する鈴形の白い花の意味を紹介します。">
+  <meta name="description" content="5月24日の誕生花スズランの花言葉・特徴・魅力をわかりやすく解説。「幸福の再来」という花言葉に込められた意味と、鈴形の白い花が連なる可憐な姿を紹介します。">
   <title>5月24日の誕生花はスズラン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スズランはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に小さな鈴形の白い花を連ねて咲かせます。キジカクシ科の多年草で、清楚で可憐な印象を持つ花です。"}},
-      {"@type":"Question","name":"スズランの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「幸福の再来」という花言葉は、毎年春になると変わらず可憐な花を咲かせる様子が、繰り返し訪れる幸福を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"フランスでスズランを贈る習慣があるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"5月1日にスズランを贈られた人には幸運が訪れるという言い伝えがあり、「メーデー」の日に大切な人へ贈る習慣として今も親しまれています。"}}
+      {"@type":"Question","name":"スズランはどんな香りがする花ですか？","acceptedAnswer":{"@type":"Answer","text":"小さな花からは清らかで甘い香りが漂い、その可憐な姿とともに古くから愛されてきました。"}},
+      {"@type":"Question","name":"スズランの花言葉「幸福の再来」の由来は？","acceptedAnswer":{"@type":"Answer","text":"毎年春になると律儀に鈴形の花を咲かせ続けるその姿が、繰り返し訪れる幸福を思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"スズランはどんな場所でよく見られますか？","acceptedAnswer":{"@type":"Answer","text":"半日陰の涼しい場所を好み、庭先や公園の花壇などでよく見られる、キジカクシ科の多年草です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MAY 24 · 誕生花</span>
     <h1>5月24日の誕生花はスズラン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スズランは、キジカクシ科の多年草で、春に小さな鈴形の白い花を連ねて咲かせる5月24日の誕生花です。花言葉は「幸福の再来」。清楚で可憐な印象の花です。</p>
+    <p class="art-lead">春の終わり、うつむくように連なる小さな鈴の形をした花が、あたり一面に清らかな香りを漂わせています。スズランは、その可憐な姿で長く愛されてきた花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スズランとは</a></li>
-      <li><a href="#meaning">スズランが象徴する意味</a></li>
-      <li><a href="#charm">スズランの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">5月24日の誕生花として親しまれるスズラン</a></li>
+      <li><a href="#story">鈴を連ねて咲く、スズランの愛らしい形</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スズランから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スズランとは</h2>
-    <p>スズランは、キジカクシ科の多年草で、5月24日の誕生花として知られています。春になると小さな鈴形の白い花を連ねて咲かせ、清楚で可憐な印象から、フランスでは幸運を呼ぶ花として贈られる習慣もあります。</p>
-  </section>
+    <h2>5月24日の誕生花として親しまれるスズラン</h2>
+    <p>スズランは、キジカクシ科の多年草です。春になると、小さな鈴形の白い花を連ねて咲かせ、清楚で可憐な印象を与えます。古くから多くの人に愛されてきたことから、5月24日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スズランが象徴する意味</h2>
-    <p>スズランの花言葉は「幸福の再来」です。毎年春になると変わらず可憐な花を咲かせる様子が、繰り返し訪れる幸福を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スズランの魅力</h2>
-    <p>スズランの魅力は、控えめにうつむいて咲く小さな鈴形の花と、爽やかな甘い香りにあります。フランスでは5月1日に贈り合う習慣があるなど、幸運の象徴として世界中で愛されています。5月24日生まれの方はもちろん、幸せの訪れを願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スズランは半日陰でも育つ丈夫な多年草ですが、全草に毒性があるため、育てる際は取り扱いに注意が必要です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>5月24日生まれの方はもちろん、幸せの訪れを願う贈り物としてもスズランは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スズランはいつ頃咲きますか？</div>
-        <div class="faq-a">春に小さな鈴形の白い花を連ねて咲かせます。キジカクシ科の多年草で、清楚で可憐な印象を持つ花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スズランの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「幸福の再来」という花言葉は、毎年春になると変わらず可憐な花を咲かせる様子が、繰り返し訪れる幸福を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フランスでスズランを贈る習慣があるのはなぜですか？</div>
-        <div class="faq-a">5月1日にスズランを贈られた人には幸運が訪れるという言い伝えがあり、「メーデー」の日に大切な人へ贈る習慣として今も親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スズランはどんな香りがする花ですか？</div>
+        <div class="faq-a">小さな花からは清らかで甘い香りが漂い、その可憐な姿とともに古くから愛されてきました。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>鈴を連ねて咲く、スズランの愛らしい形</h2>
+    <p>一本の茎に、米粒よりもやや大きい鈴形の白い花が、俯くようにいくつも連なって咲くのがスズランです。よく見ると、一つひとつの花はまるで小さなベルのような愛らしい形をしていて、風が吹くたびに揺れて音を立てそうな錯覚さえ覚えます。清らかな香りとともに、毎年同じ時期に律儀に咲くその姿は、何度でも巡ってくる喜びを思わせます。この、繰り返し訪れる清らかな咲きぶりから、スズランには「幸福の再来」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スズランの花言葉「幸福の再来」の由来は？</div>
+        <div class="faq-a">毎年春になると律儀に鈴形の花を咲かせ続けるその姿が、繰り返し訪れる幸福を思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>一度過ぎ去った幸せは、もう戻らないと思われがちです。けれど鈴なりに連なる花が春ごとに咲くように、幸せもまた、形を変えながら何度でも巡ってくるものなのかもしれません。次に訪れる小さな幸せを、心のどこかで待っていてもいいのでしょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スズランから始める小さな体験</h2>
+    <p>鈴なりに咲く愛らしさに背中を押されて、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>鈴形の白い花を探して観察してみる</li>
+      <li>繰り返し訪れる小さな幸せを一つ見つけてみる</li>
+      <li>白いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スズランはどんな場所でよく見られますか？</div>
+        <div class="faq-a">半日陰の涼しい場所を好み、庭先や公園の花壇などでよく見られる、キジカクシ科の多年草です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">巡る幸せを感じたい今日は、星座やラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、その日の星座とラッキープレイスをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>毎年同じ場所で健気に鈴を鳴らすスズランを見ると、幸せは繰り返し訪れていいのだと思えてきます。</p>
     <ul>
-      <li>スズランは春に鈴形の白い花を咲かせる、5月24日の誕生花</li>
-      <li>花言葉は「幸福の再来」、毎年変わらず咲く姿に由来する</li>
-      <li>可憐な花姿と爽やかな香りが魅力</li>
-      <li>半日陰でも育つが毒性があるため取り扱いに注意</li>
+      <li>スズランはキジカクシ科の多年草で、春に鈴形の白い花を連ねて咲かせる、5月24日の誕生花</li>
+      <li>花言葉は「幸福の再来」。毎年律儀に咲く姿に由来するとされる</li>
+      <li>清らかな香りと、清楚で可憐な姿が魅力</li>
+      <li>半日陰の涼しい場所を好み、庭先や公園でもよく見られる</li>
     </ul>
   </section>
 

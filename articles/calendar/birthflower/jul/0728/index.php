@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0728/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月28日の誕生花グロリオーサの花言葉・特徴・魅力をわかりやすく解説。「光栄」を象徴する炎のような独特な花の形の意味を紹介します。">
+  <meta name="description" content="7月28日の誕生花グロリオーサの花言葉・特徴・魅力をわかりやすく解説。夏に炎のような独特な形の花を咲かせる、イヌサフラン科のつる性多年草を紹介します。">
   <title>7月28日の誕生花はグロリオーサ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"グロリオーサはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に炎のような独特な形の花を咲かせます。イヌサフラン科のつる性多年草です。"}},
-      {"@type":"Question","name":"グロリオーサの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"炎が燃え上がるような華やかで独特な花姿が、大きな栄誉や光栄を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"グロリオーサという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ラテン語で「栄光」を意味する言葉に由来し、その名の通り華やかで存在感のある花姿を持ちます。"}}
+      {"@type":"Question","name":"グロリオーサはどんな形の花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"花びらが炎のように反り返った、独特な形の花を咲かせます。イヌサフラン科のつる性多年草です。"}},
+      {"@type":"Question","name":"グロリオーサの花言葉『光栄』には、どんな意味が込められていますか？","acceptedAnswer":{"@type":"Answer","text":"花びらが炎のように反り返って咲く、誇らしげで堂々とした花姿が、この花言葉と結びついてきたといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 28 · 誕生花</span>
     <h1>7月28日の誕生花はグロリオーサ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">グロリオーサは、イヌサフラン科のつる性多年草で、夏になると炎のような独特な形の花を咲かせ、つるを伸ばしながら華やかな存在感を放つ花です。花言葉は「光栄」。炎のような独特な形の花です。</p>
+    <p class="art-lead">反り返った花びらが、炎のように燃え立つ形をしています。グロリオーサは、その独特な花姿で夏を彩るつる性の花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">グロリオーサとは</a></li>
-      <li><a href="#meaning">グロリオーサが象徴する意味</a></li>
-      <li><a href="#charm">グロリオーサの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月28日の誕生花として親しまれるグロリオーサ</a></li>
+      <li><a href="#story">炎のように咲く、グロリオーサの誇り高い花姿</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、グロリオーサから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>グロリオーサとは</h2>
-    <p>グロリオーサは、イヌサフラン科のつる性多年草で、7月28日の誕生花として知られています。夏になると炎のような独特な形の花を咲かせ、つるを伸ばしながら華やかな存在感を放つ花です。</p>
-  </section>
+    <h2>7月28日の誕生花として親しまれるグロリオーサ</h2>
+    <p>グロリオーサは、イヌサフラン科のつる性多年草です。夏に炎のような独特な形の花を咲かせます。7月28日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>グロリオーサが象徴する意味</h2>
-    <p>グロリオーサの花言葉は「光栄」です。炎が燃え上がるような華やかで独特な花姿が、大きな栄誉や光栄を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>グロリオーサの魅力</h2>
-    <p>グロリオーサの魅力は、炎のように反り返って燃え立つ独特な花の形と、鮮やかな赤とオレンジのグラデーションにあります。切り花としても人気が高く、独特な花姿で存在感を放ちます。7月28日生まれの方はもちろん、栄誉を称えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>グロリオーサは日当たりを好み、つるを伸ばすため支柱を立てて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月28日生まれの方はもちろん、栄誉を称えたい贈り物としてもグロリオーサは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グロリオーサはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に炎のような独特な形の花を咲かせます。イヌサフラン科のつる性多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グロリオーサの花言葉の由来は何ですか？</div>
-        <div class="faq-a">炎が燃え上がるような華やかで独特な花姿が、大きな栄誉や光栄を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">グロリオーサという名前の由来は何ですか？</div>
-        <div class="faq-a">ラテン語で「栄光」を意味する言葉に由来し、その名の通り華やかで存在感のある花姿を持ちます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">グロリオーサはどんな形の花を咲かせますか？</div>
+        <div class="faq-a">花びらが炎のように反り返った、独特な形の花を咲かせます。イヌサフラン科のつる性多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>炎のように咲く、グロリオーサの誇り高い花姿</h2>
+    <p>グロリオーサの花びらは、まるで燃え上がる炎の一瞬を切り取ったかのように、後方へ大きく反り返って咲きます。静かに佇む花とは対照的な、この動きのある独特な形は、力強く自らの存在を示しているように映ります。つるを伸ばしながら空に向かって咲くその姿は、誇らしげに胸を張っているようにも見え、こうした佇まいから『光栄』という花言葉が生まれたと伝えられています。誇らしさとは、声高に主張するものではなく、自然と姿に表れてくるものなのかもしれません。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">グロリオーサの花言葉『光栄』には、どんな意味が込められていますか？</div>
+        <div class="faq-a">花びらが炎のように反り返って咲く、誇らしげで堂々とした花姿が、この花言葉と結びついてきたといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>積み重ねてきたことを、今日は誇らしく思ってみましょう。隠さず認めた自信こそ、本物の輝きになっていきます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、グロリオーサから始める小さな体験</h2>
+    <p>炎のような花を咲かせるグロリオーサにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>炎のような形の花びらをじっくり観察してみる</li>
+      <li>誇りに思えることを一つ、心の中で認めてみる</li>
+      <li>情熱的な色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">誇らしい気持ちで胸を張りたい今日は、ラッキーナンバーや六曜もあわせて確認してみませんか。開運カレンダーでは、ラッキーナンバーと六曜を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>後方へ大きく反り返る花びらの動きこそ、誇らしさが自然と姿に表れた形なのだろう。</p>
     <ul>
-      <li>グロリオーサは夏に炎のような花を咲かせる、7月28日の誕生花</li>
-      <li>花言葉は「光栄」、華やかで独特な花姿に由来する</li>
-      <li>反り返って燃え立つ独特な花の形が魅力</li>
-      <li>日当たりを好み、つるを伸ばすため支柱が必要</li>
+      <li>グロリオーサは夏に炎のような独特な形の花を咲かせる、イヌサフラン科のつる性多年草で、7月28日の誕生花</li>
+      <li>花言葉は「光栄」。炎のように反り返って咲く誇らしげな花姿と結びついてきたとされる</li>
+      <li>つるを伸ばしながら空へ向かって咲く点が特徴</li>
+      <li>動きのある独特な花の形が魅力</li>
     </ul>
   </section>
 

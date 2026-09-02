@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マツリカはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏に香り高い白い花を咲かせます。モクセイ科の常緑低木です。"}},
-      {"@type":"Question","name":"マツリカの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"汚れのない純白の花びらから清らかな香りを放つ花姿が、飾り気のない純情無垢な心を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"マツリカはジャスミン茶に使われる花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。マツリカはジャスミン茶の香り付けに使われる代表的な花として知られています。"}}
+      {"@type":"Question","name":"マツリカはどんな植物の仲間ですか？","acceptedAnswer":{"@type":"Answer","text":"モクセイ科の常緑低木で、ジャスミンの仲間として知られています。夏になると、香り高い白い花を咲かせます。"}},
+      {"@type":"Question","name":"マツリカの花言葉『純情無垢』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"飾らない白さと、素直に香りを放つ姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 19 · 誕生花</span>
     <h1>9月19日の誕生花はマツリカ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マツリカは、モクセイ科の常緑低木で、夏に香り高い白い花を咲かせる、清らかで純粋な印象を放つ花です。花言葉は「純情無垢」。清らかで純粋な花です。</p>
+    <p class="art-lead">白く小さな花から、驚くほど強く清らかな香りが漂う。その香りの主こそ、9月19日の誕生花マツリカである。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マツリカとは</a></li>
-      <li><a href="#meaning">マツリカが象徴する意味</a></li>
-      <li><a href="#charm">マツリカの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月19日の誕生花として親しまれるマツリカ</a></li>
+      <li><a href="#story">飾らない白と香りが伝える、純情無垢</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マツリカから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マツリカとは</h2>
-    <p>マツリカは、モクセイ科の常緑低木で、9月19日の誕生花として知られています。夏に香り高い白い花を咲かせる、清らかで純粋な印象を放つ花です。</p>
-  </section>
+    <h2>9月19日の誕生花として親しまれるマツリカ</h2>
+    <p>マツリカは、モクセイ科の常緑低木です。夏になると、香り高い白い花を咲かせます。ジャスミンの仲間として知られ、9月19日の誕生花とされています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マツリカが象徴する意味</h2>
-    <p>マツリカの花言葉は「純情無垢」です。汚れのない純白の花びらから清らかな香りを放つ花姿が、飾り気のない純情無垢な心を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マツリカの魅力</h2>
-    <p>マツリカの魅力は、真っ白な花びらと、甘く上品な香りにあります。ジャスミンの仲間として、お茶や香水にも用いられる親しみやすい花です。 9月19日生まれの方はもちろん、純粋な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マツリカは日当たりを好み、寒さに弱いため冬は室内で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月19日生まれの方はもちろん、純粋な想いを伝えたい贈り物としてもマツリカは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツリカはいつ頃咲きますか？</div>
-        <div class="faq-a">夏に香り高い白い花を咲かせます。モクセイ科の常緑低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツリカの花言葉の由来は何ですか？</div>
-        <div class="faq-a">汚れのない純白の花びらから清らかな香りを放つ花姿が、飾り気のない純情無垢な心を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツリカはジャスミン茶に使われる花ですか？</div>
-        <div class="faq-a">はい。マツリカはジャスミン茶の香り付けに使われる代表的な花として知られています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マツリカはどんな植物の仲間ですか？</div>
+        <div class="faq-a">モクセイ科の常緑低木で、ジャスミンの仲間として知られています。夏になると、香り高い白い花を咲かせます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>飾らない白と香りが伝える、純情無垢</h2>
+    <p>マツリカの花は、白く小さいながらも、驚くほど強い香りを放つ。ジャスミンの仲間として知られるこの花の香りは、飾り気のない清々しさを感じさせる。強い香りを放ちながらも、花そのものは決して派手ではなく、白く控えめな姿をしている。花言葉「純情無垢」は、この飾らない白さと、素直に香りを放つ姿に由来すると言われている。着飾らなくても、そのままで十分に魅力的でいられる。マツリカはそのことを静かに教えてくれる花だ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マツリカの花言葉『純情無垢』にはどんな由来がありますか？</div>
+        <div class="faq-a">飾らない白さと、素直に香りを放つ姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>着飾らなくても、素直でいるだけで十分に美しい。香り高く咲くマツリカの白を見ていると、そのことに気づかされる。今日はどこまで、飾らずにいられるだろうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マツリカから始める小さな体験</h2>
+    <p>香り高い白い花を咲かせるマツリカにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>香り高い白い花の香りを確かめてみる</li>
+      <li>素直な気持ちで一日を過ごしてみる</li>
+      <li>心が洗われるような清々しい時間を作ってみる</li>
+    </ul>
+
+    <p class="cta-lead">澄んだ気持ちで一日を始めたい日は、今日の六曜も確認してみませんか。開運カレンダーでは、六曜とおすすめの行動を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>飾らない白と、隠しきれない香りの高さ。それがマツリカという花の持ち味である。</p>
     <ul>
-      <li>マツリカは夏に香り高い白い花を咲かせる、9月19日の誕生花</li>
-      <li>花言葉は「純情無垢」、清らかな花びらに由来する</li>
-      <li>白く清らかな花びらと香りが魅力</li>
-      <li>日当たりを好み、寒さに弱い</li>
+      <li>マツリカは夏に香り高い白い花を咲かせる、モクセイ科の常緑低木で、9月19日の誕生花</li>
+      <li>花言葉は「純情無垢」。飾らない白さと素直な香りに由来すると言われる</li>
+      <li>ジャスミンの仲間として知られている</li>
+      <li>飾らなくても十分魅力的でいられることを教えてくれる花</li>
     </ul>
   </section>
 

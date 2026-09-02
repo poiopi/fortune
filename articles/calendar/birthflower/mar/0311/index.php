@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0311/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月11日の誕生花ヒガンザクラの花言葉・特徴・魅力をわかりやすく解説。「優れた美人」を象徴する一足早く咲く桜の意味を紹介します。">
+  <meta name="description" content="3月11日の誕生花ヒガンザクラの花言葉・特徴・魅力をわかりやすく解説。「優れた美人」を象徴する、彼岸の頃に咲く早咲きの桜の意味を紹介します。">
   <title>3月11日の誕生花はヒガンザクラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ヒガンザクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春分を挟む「お彼岸」の頃に咲く、早咲きの桜です。バラ科の落葉高木で、ソメイヨシノよりも一足早く花を咲かせます。"}},
-      {"@type":"Question","name":"ヒガンザクラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「優れた美人」という花言葉は、他の桜に先駆けて凛と咲く可憐な花姿が、気品ある美しさを備えた人に重ねられたことに由来すると言われています。"}},
-      {"@type":"Question","name":"ヒガンザクラはソメイヨシノとどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"ヒガンザクラはソメイヨシノより開花時期が早く、花もやや小ぶりで淡い色合いをしています。寺社の境内などに古木として植えられていることも多い桜です。"}}
+      {"@type":"Question","name":"ヒガンザクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"彼岸の頃、つまり3月中旬前後に見頃を迎えます。ソメイヨシノより一足早く咲く早咲きの桜として知られています。"}},
+      {"@type":"Question","name":"ヒガンザクラの花言葉「優れた美人」の由来は？","acceptedAnswer":{"@type":"Answer","text":"ソメイヨシノより濃い淡紅色の花を、一重咲きというシンプルなつくりで咲かせる姿に由来するといわれています。飾らない中に宿る美しさを象徴する言葉とされます。"}},
+      {"@type":"Question","name":"ヒガンザクラと他の早咲きの桜は同じですか？","acceptedAnswer":{"@type":"Answer","text":"カンヒザクラなど、同じく早咲きの桜と混同されることがありますが、開花時期や花の特徴が異なる別の品種とされています。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 11 · 誕生花</span>
     <h1>3月11日の誕生花はヒガンザクラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ヒガンザクラは、バラ科の落葉高木で、彼岸の頃に咲く早咲きの桜、3月11日の誕生花です。花言葉は「優れた美人」。凛とした気品を感じさせる花です。</p>
+    <p class="art-lead">彼岸の頃、ソメイヨシノより一足早く濃い淡紅色の花を咲かせるヒガンザクラ。3月11日の誕生花に選ばれたこの桜は、内側からにじみ出るような美しさを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ヒガンザクラ</dd>
     <dt>花言葉</dt><dd>優れた美人</dd>
     <dt>科名</dt><dd>バラ科</dd>
-    <dt>見頃</dt><dd>彼岸の頃</dd>
+    <dt>見頃</dt><dd>彼岸の頃（3月）</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ヒガンザクラとは</a></li>
-      <li><a href="#meaning">ヒガンザクラが象徴する意味</a></li>
-      <li><a href="#charm">ヒガンザクラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">彼岸の頃に咲く、ヒガンザクラの濃い淡紅色</a></li>
+      <li><a href="#story">3月11日、ヒガンザクラが示す、内側からにじむ美しさ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ヒガンザクラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ヒガンザクラとは</h2>
-    <p>ヒガンザクラは、バラ科の落葉高木で、3月11日の誕生花として知られています。春分・秋分を挟む「お彼岸」の頃に花を咲かせることからこの名がつけられ、ソメイヨシノよりも一足早く春の訪れを告げる桜として親しまれています。</p>
-  </section>
+    <h2>彼岸の頃に咲く、ヒガンザクラの濃い淡紅色</h2>
+    <p>ヒガンザクラは、バラ科の落葉高木です。ソメイヨシノより一足早く、彼岸の頃に花を咲かせる早咲きの桜として知られています。花はソメイヨシノより濃い淡紅色で、一重咲き・花びら5枚というシンプルなつくり。本州中部以西に分布し、名前もそのまま、彼岸の頃に咲くという開花時期に由来しているといわれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ヒガンザクラが象徴する意味</h2>
-    <p>ヒガンザクラの花言葉は「優れた美人」です。他の桜に先駆けて、まだ寒さの残る中で凛と咲く可憐な花姿が、気品ある美しさを備えた人に重ねられたことに由来すると言われています。桜全般に共通する「精神美」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ヒガンザクラの魅力</h2>
-    <p>ヒガンザクラの魅力は、ソメイヨシノよりも小ぶりで淡い花びらが持つ繊細な美しさと、いち早く春の訪れを告げてくれる存在感にあります。寺社の境内などに古木として植えられていることも多く、長い年月を経た枝ぶりとともに花を楽しめるのも魅力です。3月11日生まれの方はもちろん、凛とした美しさを称える贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ヒガンザクラは日当たりの良い場所を好み、水はけの良い土で育てるのがおすすめです。桜の仲間は移植や強い剪定を嫌うため、植え付け場所は慎重に選ぶとよいでしょう。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月11日生まれの方はもちろん、凛とした美しさを称えたい贈り物としてもヒガンザクラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ヒガンザクラはいつ頃咲きますか？</div>
-        <div class="faq-a">春分を挟む「お彼岸」の頃に咲く、早咲きの桜です。バラ科の落葉高木で、ソメイヨシノよりも一足早く花を咲かせます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒガンザクラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「優れた美人」という花言葉は、他の桜に先駆けて凛と咲く可憐な花姿が、気品ある美しさを備えた人に重ねられたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ヒガンザクラはソメイヨシノとどう違いますか？</div>
-        <div class="faq-a">ヒガンザクラはソメイヨシノより開花時期が早く、花もやや小ぶりで淡い色合いをしています。寺社の境内などに古木として植えられていることも多い桜です。</div>
+        <div class="faq-a">彼岸の頃、つまり3月中旬前後に見頃を迎えます。ソメイヨシノより一足早く咲く早咲きの桜として知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>3月11日、ヒガンザクラが示す、内側からにじむ美しさ</h2>
+    <p>ヒガンザクラの花色は、ソメイヨシノよりも濃い淡紅色です。一重咲きで花びらは5枚と、桜としてはごくシンプルなつくりでありながら、その濃やかな色合いは見る人の目を引きつけます。飾り立てず、けれど内側からにじみ出るように色濃く咲くその姿から、ヒガンザクラには「優れた美人」という花言葉が贈られてきたといわれています。外見の華やかさだけでなく、シンプルな花のつくりの中に確かな美しさを宿す佇まいこそが、この花言葉の本当の意味なのかもしれません。彼岸という、先祖を思い自分自身を見つめ直す時期に咲くことも、この花に静かな品格を添えています。季節の節目に、自分の内側にある美しさに目を向けてみるのも良さそうです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒガンザクラの花言葉「優れた美人」の由来は？</div>
+        <div class="faq-a">ソメイヨシノより濃い淡紅色の花を、一重咲きというシンプルなつくりで咲かせる姿に由来するといわれています。飾らない中に宿る美しさを象徴する言葉とされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>内側から色濃くにじみ出る美しさが、この花にはあります。今日は自分自身の内側に、そっと目を向けてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ヒガンザクラから始める小さな体験</h2>
+    <p>彼岸の頃に濃い淡紅色の花を咲かせるヒガンザクラにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>彼岸の頃に咲く早咲きの桜を探してみる</li>
+      <li>ソメイヨシノとの色の濃さの違いを見比べてみる</li>
+      <li>季節の節目に、自分自身を振り返ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ヒガンザクラと他の早咲きの桜は同じですか？</div>
+        <div class="faq-a">カンヒザクラなど、同じく早咲きの桜と混同されることがありますが、開花時期や花の特徴が異なる別の品種とされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分自身の内側を見つめ直せた今日は、ラッキーカラーやラッキープレイスもあわせて確認してみませんか。開運カレンダーでは、その日のラッキーカラーやラッキープレイスをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月11日、彼岸の頃に濃い淡紅色の花を咲かせるヒガンザクラは、飾らない中に宿る美しさを教えてくれる桜です。</p>
     <ul>
-      <li>ヒガンザクラは彼岸の頃に咲く早咲きの桜、3月11日の誕生花</li>
-      <li>花言葉は「優れた美人」、凛と咲く可憐な花姿に由来する</li>
-      <li>ソメイヨシノに先駆けて咲く繊細な美しさが魅力</li>
-      <li>水はけの良い場所に植え、移植や強い剪定を避けて育てたい</li>
+      <li>ヒガンザクラはバラ科の落葉高木で、彼岸の頃にソメイヨシノより一足早く花を咲かせる</li>
+      <li>濃い淡紅色の一重咲き、花びら5枚というシンプルなつくりが特徴</li>
+      <li>花言葉は「優れた美人」。飾らない中に宿る美しさを象徴するといわれる</li>
+      <li>カンヒザクラなど他の早咲きの桜とは異なる品種とされる</li>
     </ul>
   </section>
 

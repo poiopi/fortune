@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ツリガネヤナギはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に釣り鐘型の花を穂状に咲かせます。オオバコ科の多年草です。"}},
-      {"@type":"Question","name":"ツリガネヤナギの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"茎をまっすぐに伸ばし、釣り鐘型の花を規則正しく穂状に咲かせる凛とした花姿が、揺るがない正義を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ツリガネヤナギとペンステモンは同じ花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。ツリガネヤナギはペンステモンの和名で、同じ植物を指します。"}}
+      {"@type":"Question","name":"ツリガネヤナギとペンステモンは同じ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、同じ植物です。初夏に釣り鐘のような形の花を穂状に咲かせることから「ツリガネヤナギ」という和名で呼ばれる一方、学名由来の「ペンステモン」という呼び名でも広く親しまれています。"}},
+      {"@type":"Question","name":"ツリガネヤナギの花言葉『正義』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"釣り鐘型の花が茎に沿って整然と並んで咲く、揺るぎない姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 6 · 誕生花</span>
     <h1>9月6日の誕生花はツリガネヤナギ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ツリガネヤナギは、オオバコ科の多年草で、初夏に釣り鐘型の花を穂状に咲かせる、凛とした印象を与える花です。花言葉は「正義」。凛とした花です。</p>
+    <p class="art-lead">小さな鐘が並んでいるような花が、まっすぐに立つ茎の先で静かに揺れている。音は鳴らないのに、どこか凛とした響きを感じさせるツリガネヤナギ。9月6日は、この花を誕生花に持つ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ツリガネヤナギとは</a></li>
-      <li><a href="#meaning">ツリガネヤナギが象徴する意味</a></li>
-      <li><a href="#charm">ツリガネヤナギの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月6日の誕生花として親しまれるツリガネヤナギ</a></li>
+      <li><a href="#story">ペンステモンという名前が持つ、もう一つの顔</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ツリガネヤナギから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ツリガネヤナギとは</h2>
-    <p>ツリガネヤナギは、オオバコ科の多年草で、9月6日の誕生花として知られています。初夏に釣り鐘型の花を穂状に咲かせる、凛とした印象を与える花です。</p>
-  </section>
+    <h2>9月6日の誕生花として親しまれるツリガネヤナギ</h2>
+    <p>ツリガネヤナギは、オオバコ科の多年草で、ペンステモンの和名として知られています。初夏になると、釣り鐘のような形の花を穂状に咲かせ、9月6日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ツリガネヤナギが象徴する意味</h2>
-    <p>ツリガネヤナギの花言葉は「正義」です。茎をまっすぐに伸ばし、釣り鐘型の花を規則正しく穂状に咲かせる凛とした花姿が、揺るがない正義を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ツリガネヤナギの魅力</h2>
-    <p>ツリガネヤナギの魅力は、釣り鐘のような可憐な花が穂状に連なって咲く整った美しさと、初夏の花壇に涼やかさを添える佇まいにあります。ペンステモンという名前でも親しまれています。 9月6日生まれの方はもちろん、揺るがない誠実な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ツリガネヤナギは日当たりと風通しの良い場所を好み、過湿を嫌うため水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月6日生まれの方はもちろん、揺るがない誠実な想いを伝えたい贈り物としてもツリガネヤナギは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツリガネヤナギはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に釣り鐘型の花を穂状に咲かせます。オオバコ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツリガネヤナギの花言葉の由来は何ですか？</div>
-        <div class="faq-a">茎をまっすぐに伸ばし、釣り鐘型の花を規則正しく穂状に咲かせる凛とした花姿が、揺るがない正義を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ツリガネヤナギとペンステモンは同じ花ですか？</div>
-        <div class="faq-a">はい。ツリガネヤナギはペンステモンの和名で、同じ植物を指します。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ツリガネヤナギとペンステモンは同じ植物ですか？</div>
+        <div class="faq-a">はい、同じ植物です。初夏に釣り鐘のような形の花を穂状に咲かせることから「ツリガネヤナギ」という和名で呼ばれる一方、学名由来の「ペンステモン」という呼び名でも広く親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>ペンステモンという名前が持つ、もう一つの顔</h2>
+    <p>ツリガネヤナギという名前は、日本で古くから呼ばれてきた和名だ。園芸の世界では「ペンステモン」という学名由来の呼び名の方が広く知られているかもしれない。同じ花に二つの名前があるということは、それだけ多くの人がこの花に親しんできた証でもある。釣り鐘のような形の花が、すっと伸びた茎に沿って穂のように連なって咲く姿は、一本芯の通った潔さを感じさせる。花言葉「正義」は、この揺るぎなく整った咲き方から生まれたのだろう。名前が違っても、花そのものが持つまっすぐな印象は変わらない。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ツリガネヤナギの花言葉『正義』にはどんな由来がありますか？</div>
+        <div class="faq-a">釣り鐘型の花が茎に沿って整然と並んで咲く、揺るぎない姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かに認められるためではなく、自分自身が納得できるかどうかで、筋を通したいことがある。そんな自分なりの正しさを、今日は静かに大切にできるかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ツリガネヤナギから始める小さな体験</h2>
+    <p>釣り鐘型の花を穂のように整然と咲かせるツリガネヤナギにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>釣り鐘型の花が穂になって並ぶ様子をじっくり観察してみる</li>
+      <li>正しいと思うことを一つ、静かに貫いてみる</li>
+      <li>植物の和名と学名の違いについて調べてみる</li>
+    </ul>
+
+    <p class="cta-lead">まっすぐな気持ちを大切にしたい日は、今日のラッキープレイスも覗いてみませんか。開運カレンダーでは、ラッキープレイスと月九星を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>「正義」という花言葉を体現するように、この花は和名と学名、二つの呼び名を持ちながらも、まっすぐな姿を崩さずに咲く。</p>
     <ul>
-      <li>ツリガネヤナギは初夏に釣り鐘型の花を咲かせる、9月6日の誕生花</li>
-      <li>花言葉は「正義」、まっすぐに咲く花姿に由来する</li>
-      <li>整った花姿が魅力</li>
-      <li>日当たりと風通しの良い場所を好み、過湿を嫌う</li>
+      <li>ツリガネヤナギはペンステモンの和名で、初夏に釣り鐘型の花を穂状に咲かせる、9月6日の誕生花</li>
+      <li>花言葉は「正義」。整然と並んで咲く揺るぎない姿に由来すると言われる</li>
+      <li>オオバコ科の多年草で、和名と学名の両方で親しまれている</li>
+      <li>まっすぐに伸びる茎が凛とした印象を与える</li>
     </ul>
   </section>
 

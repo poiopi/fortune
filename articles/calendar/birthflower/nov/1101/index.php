@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フウセンダマノキとはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"風船のように丸く膨らんだ姿が特徴的な、ユニークな印象を持つ樹木です。"}},
-      {"@type":"Question","name":"フウセンダマノキの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"風船のように丸く膨らんだ姿を枝いっぱいに広げる豊かな様子が、繁栄を連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"フウセンダマノキの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"風船のように丸く膨らんだ姿を持つことから、この名前がつけられたと言われています。"}}
+      {"@type":"Question","name":"フウセンダマノキの名前にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"風船のように丸く膨らんだ姿を持つことから、この名前がつけられたと言われています。和名は「フウセントウワタ」といいます。"}},
+      {"@type":"Question","name":"フウセンダマノキの花言葉「繁栄」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"風船のように丸く膨らんだ姿を枝いっぱいに広げる、豊かに見える様子が、繁栄を連想させることに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,13 +135,13 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 1 · 誕生花</span>
     <h1>11月1日の誕生花はフウセンダマノキ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フウセンダマノキは、風船のように丸く膨らんだ姿が特徴的な、ユニークな印象を持つ11月1日の誕生花です。花言葉は「繁栄」。ユニークな花です。</p>
+    <p class="art-lead">散歩の途中、見慣れない丸い実のような姿にふと足を止めることがある。風船のようにまん丸に膨らんだそのフォルムを持つのが、フウセンダマノキだ。キョウチクトウ科に属するこの樹木は、和名を「フウセントウワタ」といい、11月1日の誕生花として名を連ねている。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>フウセンダマノキ</dd>
     <dt>花言葉</dt><dd>繁栄</dd>
-    <dt>科名</dt><dd>-</dd>
+    <dt>科名</dt><dd>キョウチクトウ科</dd>
     <dt>見頃</dt><dd>-</dd>
   </dl>
 
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フウセンダマノキとは</a></li>
-      <li><a href="#meaning">フウセンダマノキが象徴する意味</a></li>
-      <li><a href="#charm">フウセンダマノキの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月1日の誕生花として親しまれるフウセンダマノキ</a></li>
+      <li><a href="#story">丸く膨らんだ、風船のようなフォルムの正体</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フウセンダマノキから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フウセンダマノキとは</h2>
-    <p>フウセンダマノキは、11月1日の誕生花として知られている植物です。風船のように丸く膨らんだ姿が特徴的な、ユニークな印象を持つ樹木です。</p>
-  </section>
+    <h2>11月1日の誕生花として親しまれるフウセンダマノキ</h2>
+    <p>フウセンダマノキは、キョウチクトウ科に属する、11月1日の誕生花です。風船のように丸く膨らんだ姿が特徴的な、ユニークな印象を持つ樹木として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フウセンダマノキが象徴する意味</h2>
-    <p>フウセンダマノキの花言葉は「繁栄」です。風船のように丸く膨らんだ姿を枝いっぱいに広げる豊かな様子が、繁栄を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フウセンダマノキの魅力</h2>
-    <p>フウセンダマノキの魅力は、風船のように丸く膨らんだユニークな姿と、他にはない個性的な存在感にあります。11月1日生まれの方はもちろん、豊かな発展を願う贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フウセンダマノキは日当たりの良い場所を好み、適度な水やりを心がけると育てやすい植物です。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月1日生まれの方はもちろん、豊かな発展を願う贈り物としてもフウセンダマノキは人気です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フウセンダマノキとはどんな植物ですか？</div>
-        <div class="faq-a">風船のように丸く膨らんだ姿が特徴的な、ユニークな印象を持つ樹木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フウセンダマノキの花言葉の由来は何ですか？</div>
-        <div class="faq-a">風船のように丸く膨らんだ姿を枝いっぱいに広げる豊かな様子が、繁栄を連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フウセンダマノキの名前の由来は何ですか？</div>
-        <div class="faq-a">風船のように丸く膨らんだ姿を持つことから、この名前がつけられたと言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">フウセンダマノキの名前にはどんな由来がありますか？</div>
+        <div class="faq-a">風船のように丸く膨らんだ姿を持つことから、この名前がつけられたと言われています。和名は「フウセントウワタ」といいます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>丸く膨らんだ、風船のようなフォルムの正体</h2>
+    <p>植物の実や殻がここまで丸く張りつめる例は、意外と少ない。フウセンダマノキの姿を近くで見ると、薄い皮の内側に空気をたっぷり含んでいるかのような、軽やかな膨らみに気づく。指先でそっと触れてみたくなるような質感は、クリーム色がかった白い花が終わったあとに現れる。和名の「フウセントウワタ」は、この膨らんだ姿そのものを言い表した名前だという。枝いっぱいに広がるいくつもの丸い実が、遠目にはまるで小さな風船を吊るしたように見える。この豊かに広がる様子が、「繁栄」という花言葉の由来になったと言われている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フウセンダマノキの花言葉「繁栄」はどのように結びついていますか？</div>
+        <div class="faq-a">風船のように丸く膨らんだ姿を枝いっぱいに広げる、豊かに見える様子が、繁栄を連想させることに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今日の小さな積み重ねは、風船のように、内側からゆっくりと満ちていく。膨らみがはっきり目に見える頃には、もう十分に育っている。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フウセンダマノキから始める小さな体験</h2>
+    <p>丸く膨らんだ姿を枝いっぱいに広げるフウセンダマノキにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>丸く膨らんだユニークな形をじっくり眺めてみる</li>
+      <li>身の回りで少しずつ広がっていることを一つ見つけてみる</li>
+      <li>今日は焦らず、じっくり成長を待つ気持ちで過ごしてみる</li>
+    </ul>
+
+    <p class="cta-lead">その日の六曜が気になる方は、開運カレンダーで今日の運気も確かめてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>ゆっくり広がっていく何かの気配は、この丸いシルエットのどこかに宿っているのだろうか。</p>
     <ul>
-      <li>フウセンダマノキは風船のように丸く膨らんだ姿を持つ、11月1日の誕生花</li>
-      <li>花言葉は「繁栄」、丸く膨らんだ姿を枝いっぱいに広げる豊かな様子に由来する</li>
-      <li>ユニークで個性的な存在感が魅力</li>
-      <li>日当たりの良い場所を好み、適度な水やりを心がけると育てやすい植物です</li>
+      <li>フウセンダマノキはキョウチクトウ科の樹木で、風船のように丸く膨らんだ姿を持つ、11月1日の誕生花</li>
+      <li>花言葉は「繁栄」。枝いっぱいに広がる丸い姿に由来すると言われる</li>
+      <li>和名は「フウセントウワタ」。ユニークな見た目が印象的</li>
+      <li>焦らず、着実に何かを積み重ねたい日に寄り添う花</li>
     </ul>
   </section>
 

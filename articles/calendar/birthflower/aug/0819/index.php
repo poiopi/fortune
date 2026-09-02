@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0819/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="8月19日の誕生花ガーベラ（ピンク）の花言葉・特徴・魅力をわかりやすく解説。「神秘」を象徴する華やかな花の意味を紹介します。">
+  <meta name="description" content="8月19日の誕生花ガーベラ（ピンク）の花言葉・特徴・魅力をわかりやすく解説。一年を通して咲き続ける華やかなピンクが漂わせる、神秘の意味を紹介します。">
   <title>8月19日の誕生花はガーベラ（ピンク）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ガーベラ（ピンク）はいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通してピンクの華やかな花を咲かせます。キク科の多年草です。"}},
-      {"@type":"Question","name":"ガーベラ（ピンク）の花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"整った花びらが幾重にも重なりながら咲く華やかな姿の奥に漂う静かな気品が、言葉では言い表せない神秘的な魅力を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"ガーベラはどんな場面の贈り物に選ばれますか？","acceptedAnswer":{"@type":"Answer","text":"花色が豊富で花持ちも良いため、誕生日や記念日など、さまざまなお祝いの贈り物として人気があります。"}}
+      {"@type":"Question","name":"ガーベラ（ピンク）はいつ頃まで花を楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通してピンクの華やかな花を咲かせ続けます。季節を問わず花を楽しめる、キク科の多年草です。"}},
+      {"@type":"Question","name":"ガーベラ（ピンク）の花言葉『神秘』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"季節を問わず一年を通して咲き続けるピンクの花の在り方が、言葉にしきれない神秘的な魅力を象徴することに由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 19 · 誕生花</span>
     <h1>8月19日の誕生花はガーベラ（ピンク）<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ガーベラ（ピンク）は、キク科の多年草で、一年を通してピンクの華やかな花を咲かせる、可憐でありながらどこか神秘的な印象を放つ花です。花言葉は「神秘」。可憐で華やかな花です。</p>
+    <p class="art-lead">一年のどの季節に訪れても、変わらずそこに咲いている花がある。途切れない華やかさを持つガーベラ（ピンク）が、8月19日にひときわ映える。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ガーベラ（ピンク）とは</a></li>
-      <li><a href="#meaning">ガーベラ（ピンク）が象徴する意味</a></li>
-      <li><a href="#charm">ガーベラ（ピンク）の魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月19日の誕生花として親しまれるガーベラ（ピンク）</a></li>
+      <li><a href="#story">途切れないピンクが漂わせる、言葉にならない魅力</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ガーベラ（ピンク）から始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ガーベラ（ピンク）とは</h2>
-    <p>ガーベラ（ピンク）は、キク科の多年草で、8月19日の誕生花として知られています。一年を通してピンクの華やかな花を咲かせる、可憐でありながらどこか神秘的な印象を放つ花です。</p>
-  </section>
+    <h2>8月19日の誕生花として親しまれるガーベラ（ピンク）</h2>
+    <p>ガーベラ（ピンク）は、キク科の多年草です。一年を通してピンクの華やかな花を咲かせ続けます。季節を問わず花を楽しめる性質を持つことが、この花の大きな特徴です。この途切れない華やかさを持つ花が、8月19日の誕生花として知られています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ガーベラ（ピンク）が象徴する意味</h2>
-    <p>ガーベラ（ピンク）の花言葉は「神秘」です。整った花びらが幾重にも重なりながら咲く華やかな姿の奥に漂う静かな気品が、言葉では言い表せない神秘的な魅力を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ガーベラ（ピンク）の魅力</h2>
-    <p>ガーベラ（ピンク）の魅力は、整然と重なる花びらが生み出す華やかさと、優しいピンク色が醸し出す可憐さにあります。切り花としても人気が高く、贈り物にも広く選ばれています。8月19日生まれの方はもちろん、神秘的な魅力を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ガーベラ（ピンク）は日当たりを好み、多湿を避けて水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月19日生まれの方はもちろん、神秘的な魅力を伝えたい贈り物としてもガーベラ（ピンク）は人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ガーベラ（ピンク）はいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通してピンクの華やかな花を咲かせます。キク科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ガーベラ（ピンク）の花言葉の由来は何ですか？</div>
-        <div class="faq-a">整った花びらが幾重にも重なりながら咲く華やかな姿の奥に漂う静かな気品が、言葉では言い表せない神秘的な魅力を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ガーベラはどんな場面の贈り物に選ばれますか？</div>
-        <div class="faq-a">花色が豊富で花持ちも良いため、誕生日や記念日など、さまざまなお祝いの贈り物として人気があります。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ガーベラ（ピンク）はいつ頃まで花を楽しめますか？</div>
+        <div class="faq-a">一年を通してピンクの華やかな花を咲かせ続けます。季節を問わず花を楽しめる、キク科の多年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>途切れないピンクが漂わせる、言葉にならない魅力</h2>
+    <p>ガーベラ（ピンク）のピンクは、季節に左右されない色だ。多くの花が特定の時期にだけ姿を見せる中、この花は一年を通してその華やかな色を咲かせ続ける。いつ出会っても変わらずそこにある、という在り方そのものが、どこか不思議な印象を残す。決まった時にしか会えないものより、いつでもそこにあるものの方が、かえって捉えどころのない魅力を放つことがある。花言葉「神秘」は、この一年を通して変わらず咲き続けるピンクの花の在り方から生まれたと言われている。理由をうまく説明しきれないまま、ただ惹きつけられる。そんな感覚を抱かせる花だ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ガーベラ（ピンク）の花言葉『神秘』にはどんな由来がありますか？</div>
+        <div class="faq-a">季節を問わず一年を通して咲き続けるピンクの花の在り方が、言葉にしきれない神秘的な魅力を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>うまく言葉にできない気持ちを、今日はそのまま静かに抱えておいてみよう。説明を急ぐより、感覚そのものを味わうことに意味がある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ガーベラ（ピンク）から始める小さな体験</h2>
+    <p>ピンクの華やかな花が、一年を通して咲き続けるガーベラ（ピンク）にならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ピンクの花びらをじっくり観察してみる</li>
+      <li>言葉にならない気持ちを一つそのまま感じてみる</li>
+      <li>ピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <p class="cta-lead">言葉にならない魅力に触れたい日は、今月の誕生石も覗いてみませんか。開運カレンダーでは、誕生石とラッキーカラーを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>季節を選ばずに咲く花は、それだけで少し謎めいて見える。</p>
     <ul>
-      <li>ガーベラ（ピンク）は一年を通して花を咲かせる、8月19日の誕生花</li>
-      <li>花言葉は「神秘」、静かな気品に由来する</li>
-      <li>整った花びらと優しいピンク色が魅力</li>
-      <li>日当たりを好み、水はけの良い土でよく育つ</li>
+      <li>ガーベラ（ピンク）は一年を通してピンクの華やかな花を咲かせる、キク科の多年草で、8月19日の誕生花</li>
+      <li>花言葉は「神秘」。季節を問わず咲き続ける在り方に由来すると言われる</li>
+      <li>季節に左右されず花を楽しめる性質を持つ</li>
+      <li>華やかなピンク色が言葉にならない魅力を放つ</li>
     </ul>
   </section>
 

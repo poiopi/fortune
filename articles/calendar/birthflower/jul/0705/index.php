@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0705/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月5日の誕生花アンスリウムの花言葉・特徴・魅力をわかりやすく解説。「情熱」を象徴するつややかなハート形の苞の意味を紹介します。">
+  <meta name="description" content="7月5日の誕生花アンスリウムの花言葉・特徴・魅力をわかりやすく解説。ギリシャ語で「花」と「尾」を意味する名を持つ、つややかなハート形の苞のサトイモ科の花を紹介します。">
   <title>7月5日の誕生花はアンスリウム｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アンスリウムはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通してつややかなハート形の苞を咲かせます。サトイモ科の多年草です。"}},
-      {"@type":"Question","name":"アンスリウムの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"つややかで鮮やかな苞の色合いが、燃えるような情熱を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"アンスリウムの花のように見える部分は何ですか？","acceptedAnswer":{"@type":"Answer","text":"花びらのように見えるハート形の部分は苞と呼ばれる葉が変化した器官で、中心の棒状の部分に小さな花が集まっています。"}}
+      {"@type":"Question","name":"アンスリウムはどんな見た目の花ですか？","acceptedAnswer":{"@type":"Answer","text":"つややかなハート形の苞を咲かせる、サトイモ科の多年草です。一年を通して楽しめます。"}},
+      {"@type":"Question","name":"アンスリウムの花言葉『情熱』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"つややかで鮮やかな苞の色合いが、燃えるような情熱を象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"アンスリウムという名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ギリシャ語の「花」を意味する言葉と「尾」を意味する言葉に由来するとされています。熱帯アメリカが原産です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 5 · 誕生花</span>
     <h1>7月5日の誕生花はアンスリウム<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アンスリウムは、サトイモ科の多年草で、一年を通してつややかなハート形の苞を咲かせ、モダンで華やかな存在感を放つ花です。花言葉は「情熱」。つややかな苞でモダンな存在感を放つ花です。</p>
+    <p class="art-lead">つやのあるハート形の苞が、季節を問わず存在感を放っています。アンスリウムは、南国生まれのその独特な形だけで視線を集める花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アンスリウムとは</a></li>
-      <li><a href="#meaning">アンスリウムが象徴する意味</a></li>
-      <li><a href="#charm">アンスリウムの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月5日の誕生花として親しまれるアンスリウム</a></li>
+      <li><a href="#story">ハート形の苞が語る、アンスリウムの静かな存在感</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アンスリウムから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アンスリウムとは</h2>
-    <p>アンスリウムは、サトイモ科の多年草で、7月5日の誕生花として知られています。一年を通してつややかなハート形の苞を咲かせ、モダンで華やかな存在感を放つ花です。</p>
-  </section>
+    <h2>7月5日の誕生花として親しまれるアンスリウム</h2>
+    <p>アンスリウムは、サトイモ科の多年草です。一年を通してつややかなハート形の苞を咲かせ、熱帯アメリカが原産とされています。名前はギリシャ語の「花」と「尾」に由来するといわれ、一年中楽しめる花でありながら、その南国的な存在感から7月5日の誕生花としても親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アンスリウムが象徴する意味</h2>
-    <p>アンスリウムの花言葉は「情熱」です。つややかで鮮やかな苞の色合いが、燃えるような情熱を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アンスリウムの魅力</h2>
-    <p>アンスリウムの魅力は、ハート形のつややかな苞が持つモダンな存在感と、一年を通して楽しめる花期の長さにあります。南国の花としてハワイなどでも親しまれ、贈り物にも人気の花です。7月5日生まれの方はもちろん、情熱的な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アンスリウムは明るい日陰と高い湿度を好み、直射日光を避けて管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月5日生まれの方はもちろん、情熱的な想いを伝えたい贈り物としてもアンスリウムは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通してつややかなハート形の苞を咲かせます。サトイモ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムの花言葉の由来は何ですか？</div>
-        <div class="faq-a">つややかで鮮やかな苞の色合いが、燃えるような情熱を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムの花のように見える部分は何ですか？</div>
-        <div class="faq-a">花びらのように見えるハート形の部分は苞と呼ばれる葉が変化した器官で、中心の棒状の部分に小さな花が集まっています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムはどんな見た目の花ですか？</div>
+        <div class="faq-a">つややかなハート形の苞を咲かせる、サトイモ科の多年草です。一年を通して楽しめます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>ハート形の苞が語る、アンスリウムの静かな存在感</h2>
+    <p>アンスリウムのつややかな苞は、見る角度によって表情を変えるほど滑らかな曲線を描き、はっきりとしたハート形を作り出しています。この形は一年を通して崩れることなく、いつ見ても同じ存在感を保ち続けます。熱帯アメリカ生まれのこの花は、名前がギリシャ語の「花」と「尾」に由来するとされ、異国的な響きとともに独自の存在感を放っています。艶やかでありながら揺るぎないこの佇まいには、内に秘めた熱がそっと息づいているようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムの花言葉『情熱』の由来は何ですか？</div>
+        <div class="faq-a">つややかで鮮やかな苞の色合いが、燃えるような情熱を象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>つややかなハート形の苞の奥に本当の花をそっと秘めているアンスリウムのように、胸の内の熱もまた、大きな言葉より小さな行動の中にこそ表れるものです。その情熱を、ひとつの行動に変えてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アンスリウムから始める小さな体験</h2>
+    <p>つややかなハート形の苞を咲かせるアンスリウムにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>ハート形の苞をじっくり観察してみる</li>
+      <li>名前の由来（ギリシャ語の「花」と「尾」）について調べてみる</li>
+      <li>心の中の情熱を、今日は一つ行動に移してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アンスリウムという名前の由来は何ですか？</div>
+        <div class="faq-a">ギリシャ語の「花」を意味する言葉と「尾」を意味する言葉に由来するとされています。熱帯アメリカが原産です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">内に秘めた気持ちを表したい今日は、年九星やラッキーフードもあわせて確認してみませんか。開運カレンダーでは、年九星とラッキーフードを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>つやのあるハート形の苞をいつ見ても崩さないアンスリウムは、変わらない存在感の中に情熱を秘めているのです。</p>
     <ul>
-      <li>アンスリウムは一年を通してつややかな苞を咲かせる、7月5日の誕生花</li>
-      <li>花言葉は「情熱」、つややかで鮮やかな苞の色に由来する</li>
-      <li>ハート形の苞が持つモダンな存在感が魅力</li>
-      <li>明るい日陰と高い湿度を好み、直射日光を避けることが必要</li>
+      <li>アンスリウムは一年を通してつややかなハート形の苞を咲かせる、サトイモ科の多年草で、7月5日の誕生花</li>
+      <li>花言葉は「情熱」。つややかで鮮やかな苞の色合いに由来するとされる</li>
+      <li>名前はギリシャ語の「花」と「尾」に由来するといわれる</li>
+      <li>熱帯アメリカが原産とされ、南国的な存在感を持つ</li>
     </ul>
   </section>
 

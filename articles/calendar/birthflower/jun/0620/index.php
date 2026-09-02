@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0620/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月20日の誕生花オトメギキョウの花言葉・特徴・魅力をわかりやすく解説。「大切な人」を象徴する可憐な小輪の花の意味を紹介します。">
+  <meta name="description" content="6月20日の誕生花オトメギキョウの花言葉・特徴・魅力をわかりやすく解説。釣り鐘型の小花を咲かせる、キキョウ科「大切な人」の花を紹介します。">
   <title>6月20日の誕生花はオトメギキョウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オトメギキョウとはどんな花ですか？","acceptedAnswer":{"@type":"Answer","text":"可憐で愛らしい印象の小輪の花を咲かせる植物です。"}},
-      {"@type":"Question","name":"オトメギキョウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「大切な人」という花言葉は、小さくも愛らしい花姿が身近な人への変わらぬ想いを連想させることに由来すると言われています。"}},
-      {"@type":"Question","name":"オトメギキョウはどんな場所に飾るのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"控えめで愛らしい花姿を活かして、鉢植えとして室内や玄関先に飾るのがおすすめです。"}}
+      {"@type":"Question","name":"オトメギキョウの名前の由来は？","acceptedAnswer":{"@type":"Answer","text":"花の形がキキョウに似ていることが名前の由来とされ、別名はベルフラワーと呼ばれています。"}},
+      {"@type":"Question","name":"オトメギキョウの花言葉「大切な人」の由来は？","acceptedAnswer":{"@type":"Answer","text":"小さな花が寄り添うように咲く姿が、誰かのそばに寄り添う気持ちを思わせることから結びついたとされています。"}},
+      {"@type":"Question","name":"オトメギキョウとキキョウは同じ植物ですか？","acceptedAnswer":{"@type":"Answer","text":"オトメギキョウはキキョウとは別の植物ですが、花の形がよく似ていることから名付けられました。見比べてみると輪郭に違いがあります。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 20 · 誕生花</span>
     <h1>6月20日の誕生花はオトメギキョウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オトメギキョウは、可憐で愛らしい印象の小輪の花を咲かせる6月20日の誕生花です。花言葉は「大切な人」。控えめながらも心に残る花です。</p>
+    <p class="art-lead">小さな釣り鐘のような花が、紫や白の色をまとってうつむき加減に咲いています。オトメギキョウは、キキョウによく似たその姿から名付けられた花です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>オトメギキョウ</dd>
     <dt>花言葉</dt><dd>大切な人</dd>
-    <dt>科名</dt><dd>-</dd>
-    <dt>見頃</dt><dd>-</dd>
+    <dt>科名</dt><dd>キキョウ科</dd>
+    <dt>見頃</dt><dd>夏</dd>
   </dl>
 
   <?php
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オトメギキョウとは</a></li>
-      <li><a href="#meaning">オトメギキョウが象徴する意味</a></li>
-      <li><a href="#charm">オトメギキョウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月20日の誕生花として親しまれるオトメギキョウ</a></li>
+      <li><a href="#story">寄り添うように咲く、オトメギキョウ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オトメギキョウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オトメギキョウとは</h2>
-    <p>オトメギキョウは、6月20日の誕生花として知られている植物です。可憐で愛らしい印象の小輪の花を咲かせ、控えめながらも心に残る存在感を持つ花です。</p>
-  </section>
+    <h2>6月20日の誕生花として親しまれるオトメギキョウ</h2>
+    <p>オトメギキョウは、キキョウ科の多年草です。釣り鐘型の小さな花を咲かせ、その姿がキキョウに似ていることから名付けられたとされます。海外ではベルフラワーの名でも親しまれ、6月20日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オトメギキョウが象徴する意味</h2>
-    <p>オトメギキョウの花言葉は「大切な人」です。小さくも愛らしい花姿が、身近で大切な人への変わらぬ想いを連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オトメギキョウの魅力</h2>
-    <p>オトメギキョウの魅力は、小輪ながらも愛らしく咲く花の可憐さと、控えめな佇まいの中にある優しい印象にあります。飾らない美しさが、日々の暮らしにそっと寄り添ってくれます。6月20日生まれの方はもちろん、大切な人への想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オトメギキョウは明るい場所を好み、土の表面が乾いたら水を与える程度の管理でよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月20日生まれの方はもちろん、大切な人への想いを伝えたい贈り物としてもオトメギキョウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オトメギキョウとはどんな花ですか？</div>
-        <div class="faq-a">可憐で愛らしい印象の小輪の花を咲かせる植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オトメギキョウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「大切な人」という花言葉は、小さくも愛らしい花姿が身近な人への変わらぬ想いを連想させることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オトメギキョウはどんな場所に飾るのがおすすめですか？</div>
-        <div class="faq-a">控えめで愛らしい花姿を活かして、鉢植えとして室内や玄関先に飾るのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オトメギキョウの名前の由来は？</div>
+        <div class="faq-a">花の形がキキョウに似ていることが名前の由来とされ、別名はベルフラワーと呼ばれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>寄り添うように咲く、オトメギキョウ</h2>
+    <p>オトメギキョウの花は、釣り鐘のような愛らしい形をして、紫や白の色をまといながら小さくうつむいて咲きます。よく似た花にキキョウがありますが、その名の由来になっただけあって、見比べてみると輪郭の柔らかさに違いが見えてきます。ひとつひとつは小さくても、群れて咲く姿には、寄り添うような温かみが感じられます。誰かのそばにそっと寄り添うようなその姿から、オトメギキョウには「大切な人」という花言葉が結びついたと言い伝えられています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オトメギキョウの花言葉「大切な人」の由来は？</div>
+        <div class="faq-a">小さな花が寄り添うように咲く姿が、誰かのそばに寄り添う気持ちを思わせることから結びついたとされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>ふと誰かの顔が浮かぶ瞬間があります。恋人とは限らず、家族や友人の顔が浮かぶ人もいるはずです。オトメギキョウが寄り添うように咲く姿は、そばにいてくれる存在のありがたさをそっと思い出させてくれます。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オトメギキョウから始める小さな体験</h2>
+    <p>釣り鐘型の花を眺めながら、こんな時間を持ってみませんか。</p>
+    <ul class="exp-list">
+      <li>釣り鐘型の小さな花をじっくり観察してみる</li>
+      <li>キキョウとの花の形の似ているところを見比べてみる</li>
+      <li>大切な人のことを一つ、思い浮かべてみる</li>
+      <li>紫や白の花を身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オトメギキョウとキキョウは同じ植物ですか？</div>
+        <div class="faq-a">オトメギキョウはキキョウとは別の植物ですが、花の形がよく似ていることから名付けられました。見比べてみると輪郭に違いがあります。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">大切な人の顔を思い浮かべたい今日は、六曜やラッキーフードもあわせて確認してみませんか。開運カレンダーでは、その日の六曜とラッキーフードを紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>寄り添うように咲くオトメギキョウの姿は、そばにいてくれる誰かの存在を思い出すきっかけになります。</p>
     <ul>
-      <li>オトメギキョウは可憐な小輪の花を咲かせる、6月20日の誕生花</li>
-      <li>花言葉は「大切な人」、愛らしい花姿に由来する</li>
-      <li>控えめで心に残る優しい印象が魅力</li>
-      <li>明るい場所で、乾燥したら水を与える程度でよく育つ</li>
+      <li>オトメギキョウはキキョウ科の多年草で、釣り鐘型の花を咲かせる、6月20日の誕生花</li>
+      <li>花言葉は「大切な人」。寄り添うように咲く花の姿に由来するとされる</li>
+      <li>花の形がキキョウに似ていることが名前の由来、別名はベルフラワー</li>
+      <li>紫や白の花色が魅力</li>
     </ul>
   </section>
 

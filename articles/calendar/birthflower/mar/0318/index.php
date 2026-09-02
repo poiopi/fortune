@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0318/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="3月18日の誕生花ジンチョウゲの花言葉・特徴・魅力をわかりやすく解説。「不老長寿」を象徴する香り高い花木の意味を紹介します。">
+  <meta name="description" content="3月18日の誕生花ジンチョウゲの花言葉・特徴・魅力をわかりやすく解説。「不老長寿」を象徴する、強い芳香で春を告げる花木の意味を紹介します。">
   <title>3月18日の誕生花はジンチョウゲ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ジンチョウゲはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に強い芳香を放つ花を咲かせます。ジンチョウゲ科の常緑低木で、香りで春の訪れを告げる花木として知られています。"}},
-      {"@type":"Question","name":"ジンチョウゲの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「不老長寿」という花言葉は、常緑樹として一年中葉を保つ生命力と、香り高く咲く花の存在感が、長く健やかな命への願いと結びつけられたことに由来すると言われています。"}},
-      {"@type":"Question","name":"ジンチョウゲはなぜ「三大香木」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"キンモクセイ、クチナシと並んで、日本で古くから香りの良い木として親しまれてきたことから「三大香木」のひとつに数えられています。"}}
+      {"@type":"Question","name":"ジンチョウゲはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に強い芳香を放つ花を咲かせます。ちょうど3月頃、春の訪れを告げる花として親しまれています。"}},
+      {"@type":"Question","name":"ジンチョウゲの花言葉「不老長寿」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一年を通して葉を落とさない常緑樹としての姿に、健やかで変わらない様子が重ねられたことに由来するといわれています。"}},
+      {"@type":"Question","name":"ジンチョウゲには注意することがありますか？","acceptedAnswer":{"@type":"Answer","text":"花や樹皮などに毒性があるとされ、口にしないよう注意が必要といわれています。香りを楽しむ花木として親しみつつ、扱いには気をつけたいところです。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">MARCH 18 · 誕生花</span>
     <h1>3月18日の誕生花はジンチョウゲ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ジンチョウゲは、ジンチョウゲ科の常緑低木で、早春に強い芳香を放つ花を咲かせる3月18日の誕生花です。花言葉は「不老長寿」。香りで春の訪れを告げる花木です。</p>
+    <p class="art-lead">姿より先に香りで気づかせてくれるジンチョウゲ。3月18日の誕生花に選ばれたこの花木は、強い芳香で早春の訪れを告げてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ジンチョウゲとは</a></li>
-      <li><a href="#meaning">ジンチョウゲが象徴する意味</a></li>
-      <li><a href="#charm">ジンチョウゲの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">3月18日の誕生花として親しまれるジンチョウゲ</a></li>
+      <li><a href="#story">香りが先に届く、ジンチョウゲと早春の移ろい</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ジンチョウゲから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ジンチョウゲとは</h2>
-    <p>ジンチョウゲは、ジンチョウゲ科の常緑低木で、3月18日の誕生花として知られています。「沈丁花」と書き、キンモクセイ・クチナシと並ぶ「三大香木」のひとつに数えられます。つぼみは紅紫色で、開くと内側は白く、甘く濃厚な香りをあたり一面に漂わせます。</p>
-  </section>
+    <h2>3月18日の誕生花として親しまれるジンチョウゲ</h2>
+    <p>ジンチョウゲは、ジンチョウゲ科の常緑低木です。早春になると、強い芳香を放つ花を咲かせます。姿を見つける前に、香りでその存在に気づくことも多い花木です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ジンチョウゲが象徴する意味</h2>
-    <p>ジンチョウゲの花言葉は「不老長寿」です。常緑樹として一年を通して青々とした葉を保ち続ける生命力と、香り高く咲く花の存在感が、長く健やかな命への願いと結びつけられたことに由来すると言われています。「栄光」「不滅」といった花言葉が添えられることもあります。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ジンチョウゲの魅力</h2>
-    <p>ジンチョウゲの魅力は、なんといってもその濃厚で甘い香りにあります。姿を見る前に香りで存在に気づくほど強く、庭先に一株あるだけで早春の訪れをいち早く知らせてくれます。紅紫色のつぼみと純白の花のコントラストも美しく、和の庭園にもよく調和します。3月18日生まれの方はもちろん、健やかな長寿を願う贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ジンチョウゲは半日陰で水はけの良い場所を好み、移植を嫌う性質があります。植え付け場所は最初によく検討し、根を傷つけないよう丁寧に扱うのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>3月18日生まれの方はもちろん、健やかな長寿を願う贈り物としてもジンチョウゲは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ジンチョウゲはいつ頃咲きますか？</div>
-        <div class="faq-a">早春に強い芳香を放つ花を咲かせます。ジンチョウゲ科の常緑低木で、香りで春の訪れを告げる花木として知られています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジンチョウゲの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「不老長寿」という花言葉は、常緑樹として一年中葉を保つ生命力と、香り高く咲く花の存在感が、長く健やかな命への願いと結びつけられたことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ジンチョウゲはなぜ「三大香木」と呼ばれるのですか？</div>
-        <div class="faq-a">キンモクセイ、クチナシと並んで、日本で古くから香りの良い木として親しまれてきたことから「三大香木」のひとつに数えられています。</div>
+        <div class="faq-a">早春に強い芳香を放つ花を咲かせます。ちょうど3月頃、春の訪れを告げる花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>香りが先に届く、ジンチョウゲと早春の移ろい</h2>
+    <p>まだ肌寒さの残る早春、どこからともなく漂ってくる甘く強い香り――その正体がジンチョウゲであることに気づくと、春が近づいていることを実感します。姿を見る前に香りで気づかせてくれるこの花は、季節の移ろいを、視覚よりも先に嗅覚で伝えてくれる存在です。一年を通して葉を落とさない常緑樹でありながら、この時期だけ強い香りを放つ――その変わらなさと季節ごとの表情の両方から、「不老長寿」という花言葉が生まれたといわれています。ただし、これは医学的な効能を示すものではなく、常緑樹としての姿や、香りの力強さが重ねられた言葉として伝わっているようです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ジンチョウゲの花言葉「不老長寿」の由来は？</div>
+        <div class="faq-a">一年を通して葉を落とさない常緑樹としての姿に、健やかで変わらない様子が重ねられたことに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>変わらずにいられることは、当たり前ではなく、大切に育てていくものなのかもしれません。今日は、変わらずそばにいてくれる人や習慣に、少し感謝を向けてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ジンチョウゲから始める小さな体験</h2>
+    <p>強い芳香で早春を告げるジンチョウゲにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>強い芳香を探して春の気配を感じてみる</li>
+      <li>長く健やかに過ごしたい相手を一人思い浮かべてみる</li>
+      <li>常緑樹のように、変わらない日課を一つ続けてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ジンチョウゲには注意することがありますか？</div>
+        <div class="faq-a">花や樹皮などに毒性があるとされ、口にしないよう注意が必要といわれています。香りを楽しむ花木として親しみつつ、扱いには気をつけたいところです。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">香りだけで春の気配に気づいた今日は、月齢やラッキーカラー、吉日もあわせて確認してみませんか。開運カレンダーでは、その日の月齢やラッキーカラー、吉日もまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>3月18日、姿より先に香りで春を告げるジンチョウゲは、変わらないことの大切さを教えてくれる花です。</p>
     <ul>
-      <li>ジンチョウゲは早春に強い芳香を放つ花を咲かせる、3月18日の誕生花</li>
-      <li>花言葉は「不老長寿」、常緑樹としての生命力に由来する</li>
-      <li>濃厚で甘い香りと紅紫と白のコントラストが魅力</li>
-      <li>半日陰の水はけの良い場所で、移植を避けて育てたい</li>
+      <li>ジンチョウゲはジンチョウゲ科の常緑低木で、早春に強い芳香を放つ花を咲かせる</li>
+      <li>香りによって春の訪れをいち早く告げる</li>
+      <li>花言葉は「不老長寿」。常緑樹としての変わらない姿に由来するといわれる</li>
+      <li>毒性があるとされるため、扱いには注意が必要</li>
     </ul>
   </section>
 

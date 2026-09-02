@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0615/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月15日の誕生花アジサイの花言葉・特徴・魅力をわかりやすく解説。「はにかみ」を象徴する梅雨に咲く花房の意味を紹介します。">
+  <meta name="description" content="6月15日の誕生花アジサイの花言葉・特徴・魅力をわかりやすく解説。梅雨の時期に丸い花房を咲かせる、アジサイ科「はにかみ」の花を紹介します。">
   <title>6月15日の誕生花はアジサイ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"アジサイはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"梅雨の時期に丸く集まった花房を咲かせます。アジサイ科の落葉低木です。"}},
-      {"@type":"Question","name":"アジサイの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「はにかみ」という花言葉は、咲き始めから少しずつ色を変えていく繊細な移ろいに由来すると言われています。"}},
-      {"@type":"Question","name":"アジサイの色が変わるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"土壌の酸性度によって花色が変化するとされ、同じ株でも青、紫、ピンクなどさまざまな色合いを見せます。"}}
+      {"@type":"Question","name":"アジサイの花の色はなぜ変わるのですか？","acceptedAnswer":{"@type":"Answer","text":"土壌によって色合いが変わるとされ、同じ株でも咲く場所によって表情が違って見えることがあります。"}},
+      {"@type":"Question","name":"アジサイの花言葉「はにかみ」の由来は？","acceptedAnswer":{"@type":"Answer","text":"雨に濡れながら少しずつ色を深めていく花房の様子が、頬を染めるしぐさに重なって見えることから生まれた花言葉とされています。"}},
+      {"@type":"Question","name":"アジサイは庭のどんな楽しみ方がありますか？","acceptedAnswer":{"@type":"Answer","text":"鉢植えや庭木として植えるほか、切り花として飾ったり、色の変化を観察したりと、雨の季節ならではの楽しみ方ができる花です。"}}
     ]
   }
   </script>
@@ -129,14 +139,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 15 · 誕生花</span>
     <h1>6月15日の誕生花はアジサイ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">アジサイは、アジサイ科の落葉低木で、梅雨の時期に丸く集まった花房を咲かせる6月15日の誕生花です。花言葉は「はにかみ」。しっとりとした情緒を感じさせる花です。</p>
+    <p class="art-lead">梅雨に入ると、庭先や道端で丸く集まった花房が、雨に濡れながら静かに色づいていきます。アジサイは、湿った空気をまとうこの季節にこそ美しさを増す、アジサイ科の花です。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>アジサイ</dd>
     <dt>花言葉</dt><dd>はにかみ</dd>
     <dt>科名</dt><dd>アジサイ科</dd>
-    <dt>見頃</dt><dd>梅雨時</dd>
+    <dt>見頃</dt><dd>梅雨の時期</dd>
   </dl>
 
   <?php
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">アジサイとは</a></li>
-      <li><a href="#meaning">アジサイが象徴する意味</a></li>
-      <li><a href="#charm">アジサイの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月15日の誕生花として親しまれるアジサイ</a></li>
+      <li><a href="#story">雨の中で色を深めていく、梅雨のアジサイ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、アジサイから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>アジサイとは</h2>
-    <p>アジサイは、アジサイ科の落葉低木で、6月15日の誕生花として知られています。梅雨の時期になると丸く集まった花房を咲かせ、土壌によって色合いが変わる、しっとりとした情緒を感じさせる花です。</p>
-  </section>
+    <h2>6月15日の誕生花として親しまれるアジサイ</h2>
+    <p>アジサイは、アジサイ科の落葉低木です。梅雨の時期に、小さな花が集まって丸い花房をつくり、雨に打たれながらも凛とした姿を保ちます。土壌の性質によって花の色合いが変わることでも知られ、その移ろいやすさが人の心を惹きつけてきました。こうした特徴から、6月15日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>アジサイが象徴する意味</h2>
-    <p>アジサイの花言葉は「はにかみ」です。咲き始めから咲き終わりまで少しずつ色を変えていく繊細な移ろいが、恥じらうような表情を連想させることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>アジサイの魅力</h2>
-    <p>アジサイの魅力は、青や紫、ピンクなど土壌によって変化する花色の豊かさと、雨に濡れることでより一層映える瑞々しい美しさにあります。梅雨の時期を代表する花として、日本の暮らしに深く根付いています。6月15日生まれの方はもちろん、しっとりとした想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>アジサイは半日陰を好み、乾燥に弱いため土が乾かないようこまめに水を与えるとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月15日生まれの方はもちろん、しっとりとした想いを伝えたい贈り物としてもアジサイは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アジサイはいつ頃咲きますか？</div>
-        <div class="faq-a">梅雨の時期に丸く集まった花房を咲かせます。アジサイ科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アジサイの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「はにかみ」という花言葉は、咲き始めから少しずつ色を変えていく繊細な移ろいに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">アジサイの色が変わるのはなぜですか？</div>
-        <div class="faq-a">土壌の酸性度によって花色が変化するとされ、同じ株でも青、紫、ピンクなどさまざまな色合いを見せます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">アジサイの花の色はなぜ変わるのですか？</div>
+        <div class="faq-a">土壌によって色合いが変わるとされ、同じ株でも咲く場所によって表情が違って見えることがあります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>雨の中で色を深めていく、梅雨のアジサイ</h2>
+    <p>雨粒が葉先を伝う音だけが響く庭で、アジサイの花房はゆっくりと膨らみ、色を深めていきます。ほかの多くの花が日差しを浴びて咲き急ぐ中、アジサイは曇り空の下でこそ、その存在感を静かに際立たせる花です。丸く集まった小さな花の一つひとつは決して大きくありませんが、寄り添うように咲くことで、雨に負けない確かな存在感を生み出します。そうして頬を染めるように色づいていく姿から、アジサイには「はにかみ」という花言葉が添えられるようになったといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アジサイの花言葉「はにかみ」の由来は？</div>
+        <div class="faq-a">雨に濡れながら少しずつ色を深めていく花房の様子が、頬を染めるしぐさに重なって見えることから生まれた花言葉とされています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>人前で頬を染めてしまう瞬間は、決して恥ずかしいことではありません。アジサイの花房も、雨の中でゆっくりと色を深めながら、誰に急かされるでもなく自分のペースを守っています。照れくささごと受け止めてしまえば、その表情はきっと誰かの目にやわらかく映るはずです。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、アジサイから始める小さな体験</h2>
+    <p>雨の季節に色を深めていくアジサイにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>丸く集まった花房をじっくり観察してみる</li>
+      <li>色とりどりのアジサイを探して写真に撮ってみる</li>
+      <li>照れくさい気持ちを、そのまま受け止めてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">アジサイは庭のどんな楽しみ方がありますか？</div>
+        <div class="faq-a">鉢植えや庭木として植えるほか、切り花として飾ったり、色の変化を観察したりと、雨の季節ならではの楽しみ方ができる花です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">照れくさい気持ちをそっと抱えた今日は、星座や今月の誕生石もあわせて確認してみませんか。開運カレンダーでは、星座占いと今月の誕生石を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>雨に濡れながら静かに色を深めていくアジサイの佇まいは、恥ずかしさもまた自分らしさの一部なのかもしれません。</p>
     <ul>
-      <li>アジサイは梅雨時に丸い花房を咲かせる、6月15日の誕生花</li>
-      <li>花言葉は「はにかみ」、色が移ろう繊細さに由来する</li>
-      <li>土壌によって変化する花色の豊かさが魅力</li>
-      <li>半日陰で、乾燥に弱いためこまめな水やりが必要</li>
+      <li>アジサイはアジサイ科の落葉低木で、梅雨の時期に丸い花房を咲かせる、6月15日の誕生花</li>
+      <li>花言葉は「はにかみ」。雨の中で色づいていく花房の様子に由来するとされる</li>
+      <li>土壌によって色合いが変わる、移ろいやすさが魅力</li>
+      <li>鉢植え・庭木・切り花などさまざまな楽しみ方ができる</li>
     </ul>
   </section>
 

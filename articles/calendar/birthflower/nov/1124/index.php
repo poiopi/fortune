@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1124/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月24日の誕生花フユボタンの花言葉・特徴・魅力をわかりやすく解説。「高貴」を象徴する冬に咲く牡丹の意味を紹介します。">
+  <meta name="description" content="11月24日の誕生花フユボタンの花言葉・特徴・魅力をわかりやすく解説。「高貴」を象徴する藁囲いの中で咲く牡丹の意味を紹介します。">
   <title>11月24日の誕生花はフユボタン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"フユボタンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬に藁囲いの中で咲きます。ボタン科の落葉低木です。"}},
-      {"@type":"Question","name":"フユボタンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"冬、藁囲いの中で大切に守られながら咲く趣ある姿が、高貴な気品を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"フユボタンはどのように育てられていますか？","acceptedAnswer":{"@type":"Answer","text":"冬に霜や雪から花を守るため、わらで囲う「わら囲い」を施して育てられるのが特徴です。"}}
+      {"@type":"Question","name":"フユボタンはどのように育てられていますか？","acceptedAnswer":{"@type":"Answer","text":"冬に藁囲いを施し、寒さから守りながら育てられる、ボタン科の落葉低木です。"}},
+      {"@type":"Question","name":"フユボタンの花言葉「高貴」はどこから来ていますか？","acceptedAnswer":{"@type":"Answer","text":"誰も見ていない時間も含めて、堂々とした咲き方を貫こうとする心構えが「高貴」の由来と言われています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 24 · 誕生花</span>
     <h1>11月24日の誕生花はフユボタン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">フユボタンは、ボタン科の落葉低木で、冬に藁囲いの中で咲く、高貴で趣深い印象を持つ花です。花言葉は「高貴」。趣深い花です。</p>
+    <p class="art-lead">藁で編んだ囲いの中で、冬にひっそりと花開く牡丹がある。ボタン科の落葉低木フユボタンだ。人の手をかけられてもなお乱れることなく咲き続けるこの姿は、寒さの中でこそ際立つ「高貴」さそのものではないだろうか。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">フユボタンとは</a></li>
-      <li><a href="#meaning">フユボタンが象徴する意味</a></li>
-      <li><a href="#charm">フユボタンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月24日の誕生花として親しまれるフユボタン</a></li>
+      <li><a href="#story">藁囲いの中で守られる、大輪の気品</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、フユボタンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>フユボタンとは</h2>
-    <p>フユボタンは、ボタン科の落葉低木で、11月24日の誕生花として知られています。冬に藁囲いの中で咲く、趣のある高貴な印象を持つ牡丹です。</p>
-  </section>
+    <h2>11月24日の誕生花として親しまれるフユボタン</h2>
+    <p>フユボタンは、ボタン科の落葉低木として知られる、11月24日の誕生花です。花が咲くのは冬ですが、藁囲いの中で大切に育てられる趣ある花姿にちなみ、高貴を象徴する花としてこの日に選ばれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>フユボタンが象徴する意味</h2>
-    <p>フユボタンの花言葉は「高貴」です。冬、藁囲いの中で大切に守られながら咲く趣ある姿が、高貴な気品を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>フユボタンの魅力</h2>
-    <p>フユボタンの魅力は、寒さの中でも守られながら咲く高貴な佇まいと、藁囲いに包まれた趣深い風情にあります。11月24日生まれの方はもちろん、高貴な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>フユボタンは日当たりの良い場所を好み、寒さから守りながら管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月24日生まれの方はもちろん、高貴な想いを伝えたい贈り物としてもフユボタンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フユボタンはいつ頃咲きますか？</div>
-        <div class="faq-a">冬に藁囲いの中で咲きます。ボタン科の落葉低木です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">フユボタンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">冬、藁囲いの中で大切に守られながら咲く趣ある姿が、高貴な気品を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">フユボタンはどのように育てられていますか？</div>
-        <div class="faq-a">冬に霜や雪から花を守るため、わらで囲う「わら囲い」を施して育てられるのが特徴です。</div>
+        <div class="faq-a">冬に藁囲いを施し、寒さから守りながら育てられる、ボタン科の落葉低木です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>藁囲いの中で守られる、大輪の気品</h2>
+    <p>藁を円錐状に編んだ囲いの中に、大輪の花びらを幾重にも重ねた牡丹が咲いているのを見かけることがある。ボタン科の落葉低木であるフユボタンが花を咲かせるのはこの時期で、本来なら別の季節に咲く牡丹を、人の手によって冬に合わせて咲かせている。囲いの隙間からのぞく花びらの重なりは、寒さの中でもいっさい乱れることなく整った形を保ち続ける。この人の手をかけてなお崩れない気高い佇まいが、「高貴」という花言葉の由来とされている。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">フユボタンの花言葉「高貴」はどこから来ていますか？</div>
+        <div class="faq-a">誰も見ていない時間も含めて、堂々とした咲き方を貫こうとする心構えが「高貴」の由来と言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>多くを語らずとも伝わる品格というものが、この世にはある。今日は静かに、背筋だけ伸ばしてみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、フユボタンから始める小さな体験</h2>
+    <p>藁囲いの中で気品を保ち続けるフユボタンにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>藁囲いの中で咲く牡丹の趣ある姿を思い浮かべてみる</li>
+      <li>伝統的な栽培の工夫について調べてみる</li>
+      <li>寒さの中でも凛とした振る舞いを、今日は意識してみる</li>
+    </ul>
+
+    <p class="cta-lead">今日をどう過ごすか迷ったときは、開運カレンダーのおすすめの行動も参考にしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>季節に逆らうように咲くその一輪に、思わず目を留めてしまう。</p>
     <ul>
-      <li>フユボタンは冬に藁囲いの中で咲く、11月24日の誕生花</li>
-      <li>花言葉は「高貴」、大切に守られながら咲く趣ある姿に由来する</li>
-      <li>寒さの中でも守られながら咲く高貴な佇まいが魅力</li>
-      <li>日当たりの良い場所を好み、寒さから守りながら管理するとよく育ちます</li>
+      <li>フユボタンは、ボタン科の落葉低木で、冬に藁囲いの中で咲く、11月24日の誕生花</li>
+      <li>花言葉は「高貴」。冬の寒さにも姿を崩さず咲き続ける凛とした様子に由来すると言われる</li>
+      <li>花が咲くのは冬だが、その気品ある佇まいにちなんでこの日の誕生花に選ばれている</li>
+      <li>静かに品位を保ちたい日に寄り添う花</li>
     </ul>
   </section>
 

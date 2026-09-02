@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0710/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="7月10日の誕生花マツバボタンの花言葉・特徴・魅力をわかりやすく解説。「可憐」を象徴する晴れた日にだけ咲く鮮やかな花の意味を紹介します。">
+  <meta name="description" content="7月10日の誕生花マツバボタンの花言葉・特徴・魅力をわかりやすく解説。夏の晴れた日に咲きこぼれる、鮮やかなスベリヒユ科の花を紹介します。">
   <title>7月10日の誕生花はマツバボタン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マツバボタンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏の晴れた日に鮮やかな花を咲かせます。スベリヒユ科の一年草です。"}},
-      {"@type":"Question","name":"マツバボタンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"晴れた日の日中だけ鮮やかに咲く小さな花姿が、素朴で可憐な愛らしさを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"マツバボタンは暑さに強い花ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。乾燥や暑さに強く、真夏の炎天下でも次々と花を咲かせる丈夫さが特徴です。"}}
+      {"@type":"Question","name":"マツバボタンはどんな環境で咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏の晴れた日に鮮やかな花を咲かせます。スベリヒユ科の一年草です。"}},
+      {"@type":"Question","name":"マツバボタンの花言葉『可憐』の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"素朴で飾り気のない小さな花が、夏の光を受けて鮮やかに咲く姿が、可憐な愛らしさを象徴することに由来すると言われています。"}},
+      {"@type":"Question","name":"マツバボタンはどんな印象の花ですか？","acceptedAnswer":{"@type":"Answer","text":"素朴で可憐な印象を持つ花として親しまれています。鮮やかな色合いが夏の光によく映えます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JULY 10 · 誕生花</span>
     <h1>7月10日の誕生花はマツバボタン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マツバボタンは、スベリヒユ科の一年草で、夏の晴れた日になると鮮やかな花を咲かせ、松葉のように細い葉とともに素朴で可憐な印象を与える花です。花言葉は「可憐」。晴れた日にだけ鮮やかに咲く花です。</p>
+    <p class="art-lead">夏の光を浴びて、鮮やかな花びらが次々と開いていきます。マツバボタンは、晴れた夏の日によく似合う、素朴で鮮やかな彩りを持つ花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マツバボタンとは</a></li>
-      <li><a href="#meaning">マツバボタンが象徴する意味</a></li>
-      <li><a href="#charm">マツバボタンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">7月10日の誕生花として親しまれるマツバボタン</a></li>
+      <li><a href="#story">晴れた夏に鮮やかさを見せる、マツバボタンの素朴な彩り</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マツバボタンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マツバボタンとは</h2>
-    <p>マツバボタンは、スベリヒユ科の一年草で、7月10日の誕生花として知られています。夏の晴れた日になると鮮やかな花を咲かせ、松葉のように細い葉とともに素朴で可憐な印象を与える花です。</p>
-  </section>
+    <h2>7月10日の誕生花として親しまれるマツバボタン</h2>
+    <p>マツバボタンは、スベリヒユ科の一年草です。夏の晴れた日になると、鮮やかな花を咲かせます。素朴で可憐な印象を持つとされるこの花は、7月10日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マツバボタンが象徴する意味</h2>
-    <p>マツバボタンの花言葉は「可憐」です。晴れた日の日中だけ鮮やかに咲く小さな花姿が、素朴で可憐な愛らしさを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マツバボタンの魅力</h2>
-    <p>マツバボタンの魅力は、松葉のように細い葉と、晴れた日にだけ鮮やかに咲く花のコントラストにあります。夏の花壇を鮮やかに彩る、育てやすい花として親しまれています。7月10日生まれの方はもちろん、可憐な想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マツバボタンは日当たりと乾燥に強く、水はけの良い土で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>7月10日生まれの方はもちろん、可憐な想いを伝えたい贈り物としてもマツバボタンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツバボタンはいつ頃咲きますか？</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マツバボタンはどんな環境で咲きますか？</div>
         <div class="faq-a">夏の晴れた日に鮮やかな花を咲かせます。スベリヒユ科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツバボタンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">晴れた日の日中だけ鮮やかに咲く小さな花姿が、素朴で可憐な愛らしさを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツバボタンは暑さに強い花ですか？</div>
-        <div class="faq-a">はい。乾燥や暑さに強く、真夏の炎天下でも次々と花を咲かせる丈夫さが特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>晴れた夏に鮮やかさを見せる、マツバボタンの素朴な彩り</h2>
+    <p>マツバボタンの花は、夏の晴れた日になると鮮やかな色をまとって咲きます。飾り気のない花びらが、太陽の光を受けてまっすぐに開いていく様子は、技巧を凝らさない素朴さを感じさせます。小さくまとまった花の中で、鮮やかな色そのものが持つ力が、見る人の視線を集めます。その飾らない鮮やかさにこそ、「可憐」という花言葉の本質があるのである。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マツバボタンの花言葉『可憐』の由来は何ですか？</div>
+        <div class="faq-a">素朴で飾り気のない小さな花が、夏の光を受けて鮮やかに咲く姿が、可憐な愛らしさを象徴することに由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>人の目を気にせず、思うままの自分で過ごしてみませんか。マツバボタンが夏の強い光を浴びて飾り気のない花びらをまっすぐ開くように、素のままでいることもまた、十分に鮮やかな選択です。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マツバボタンから始める小さな体験</h2>
+    <p>夏の光の中で鮮やかに咲くマツバボタンにならって、こんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな花をじっくり観察してみる</li>
+      <li>素朴で飾らない振る舞いを一つ意識してみる</li>
+      <li>鮮やかな色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マツバボタンはどんな印象の花ですか？</div>
+        <div class="faq-a">素朴で可憐な印象を持つ花として親しまれています。鮮やかな色合いが夏の光によく映えます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">素直な自分で過ごしたい今日は、吉日や年九星もあわせて確認してみませんか。開運カレンダーでは、吉日と年九星を紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>晴れた夏の光の中で飾り気のない花びらをまっすぐに開くマツバボタンは、飾らないままの自分でいることの心地よさを静かに知っている。</p>
     <ul>
-      <li>マツバボタンは夏の晴れた日に鮮やかな花を咲かせる、7月10日の誕生花</li>
-      <li>花言葉は「可憐」、晴れた日だけ咲く花姿に由来する</li>
-      <li>松葉のような細い葉と鮮やかな花のコントラストが魅力</li>
-      <li>日当たりと乾燥に強く、育てやすい</li>
+      <li>マツバボタンは夏の晴れた日に鮮やかな花を咲かせる、スベリヒユ科の一年草で、7月10日の誕生花</li>
+      <li>花言葉は「可憐」。素朴で飾り気のない花姿が可憐な愛らしさに由来するとされる</li>
+      <li>素朴で可憐な印象を持つとされる</li>
+      <li>飾り気のない花びらが夏の光に映える</li>
     </ul>
   </section>
 

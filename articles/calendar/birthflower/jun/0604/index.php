@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0604/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="6月4日の誕生花マツバギクの花言葉・特徴・魅力をわかりやすく解説。「順応性」を象徴する光沢のある花を咲かせる花の意味を紹介します。">
+  <meta name="description" content="6月4日の誕生花マツバギクの花言葉・特徴・魅力をわかりやすく解説。松葉に似た葉と光沢のある花びらに込められた「順応性」の意味を紹介します。">
   <title>6月4日の誕生花はマツバギク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マツバギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に光沢のある花を咲かせます。ハマミズナ科の多年草で、松葉に似た葉が特徴の花です。"}},
-      {"@type":"Question","name":"マツバギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「順応性」という花言葉は、乾燥した土地など厳しい環境にもしなやかに適応して育つ性質に由来すると言われています。"}},
-      {"@type":"Question","name":"マツバギクはどんな場所でよく見かけますか？","acceptedAnswer":{"@type":"Answer","text":"乾燥や潮風に強いことから、海辺の砂地や庭のグラウンドカバーとしてよく植えられています。"}}
+      {"@type":"Question","name":"マツバギクという名前の由来は？","acceptedAnswer":{"@type":"Answer","text":"松葉に似た細い葉を持つことが、名前の由来になっていると考えられています。"}},
+      {"@type":"Question","name":"マツバギクの花言葉『順応性』はどこからきていますか？","acceptedAnswer":{"@type":"Answer","text":"乾燥した環境にもしなやかに適応して育つ性質こそが、「順応性」という花言葉の由来だと考えられています。"}},
+      {"@type":"Question","name":"マツバギクの花びらにはどんな特徴がありますか？","acceptedAnswer":{"@type":"Answer","text":"光沢のある花びらが特徴で、日差しを受けるときらきらと輝いて見えます。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JUNE 4 · 誕生花</span>
     <h1>6月4日の誕生花はマツバギク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マツバギクは、ハマミズナ科の多年草で、初夏に光沢のある花を咲かせる6月4日の誕生花です。花言葉は「順応性」。松葉に似た葉が特徴の花です。</p>
+    <p class="art-lead">細く尖った葉の間から、日を浴びて光る花びらがのぞきます。マツバギクは、松葉に似た葉を持つ、ハマミズナ科の多年草です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マツバギクとは</a></li>
-      <li><a href="#meaning">マツバギクが象徴する意味</a></li>
-      <li><a href="#charm">マツバギクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">6月4日の誕生花として親しまれるマツバギク</a></li>
+      <li><a href="#story">松葉のような葉から、初夏に輝く花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マツバギクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マツバギクとは</h2>
-    <p>マツバギクは、ハマミズナ科の多年草で、6月4日の誕生花として知られています。初夏になると光沢のある花を咲かせ、松葉に似た細い葉が地を這うように広がる姿が特徴の花です。</p>
-  </section>
+    <h2>6月4日の誕生花として親しまれるマツバギク</h2>
+    <p>マツバギクは、ハマミズナ科の多年草です。初夏になると光沢のある花を咲かせ、松葉に似た細い葉を持つことで知られています。その名の通り葉と花のコントラストが印象的な姿から、6月4日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マツバギクが象徴する意味</h2>
-    <p>マツバギクの花言葉は「順応性」です。乾燥した土地や海辺の砂地など厳しい環境にもしなやかに適応して育つ性質が、その花言葉の由来と言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マツバギクの魅力</h2>
-    <p>マツバギクの魅力は、太陽の光を受けてきらきらと輝くように見える花びらの光沢と、地面を覆うように広がる旺盛な生育力にあります。グラウンドカバーとしても親しまれ、庭に彩りを添えてくれます。6月4日生まれの方はもちろん、しなやかな強さを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マツバギクは乾燥に強く、水はけの良い日当たりの良い場所であれば手入れが少なくてもよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>6月4日生まれの方はもちろん、しなやかな強さを伝えたい贈り物としてもマツバギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツバギクはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に光沢のある花を咲かせます。ハマミズナ科の多年草で、松葉に似た葉が特徴の花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツバギクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「順応性」という花言葉は、乾燥した土地など厳しい環境にもしなやかに適応して育つ性質に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マツバギクはどんな場所でよく見かけますか？</div>
-        <div class="faq-a">乾燥や潮風に強いことから、海辺の砂地や庭のグラウンドカバーとしてよく植えられています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マツバギクという名前の由来は？</div>
+        <div class="faq-a">松葉に似た細い葉を持つことが、名前の由来になっていると考えられています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>松葉のような葉から、初夏に輝く花</h2>
+    <p>初夏の乾いた日差しの下で、マツバギクは細く尖った葉の間から光沢のある花びらを開きます。松の葉を思わせるその葉は、水分を蓄えながら暑さや乾燥に耐える形をしていて、厳しい環境でも枯れずに姿を保ち続けます。そうして生き抜いた先で咲く花は、太陽の光を受けるときらきらと輝き、葉の硬さとは対照的な柔らかさを見せます。厳しい環境にも形を合わせながら花を咲かせ続けるこの姿は、「順応性」という言葉によく重なります。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マツバギクの花言葉「順応性」はどこからきていますか？</div>
+        <div class="faq-a">乾燥した環境にもしなやかに適応して育つ性質こそが、「順応性」という花言葉の由来だと考えられています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>乾いた土地でも花を絶やさないマツバギクは、環境に合わせてしなやかに在りたい気持ちを映す花です。変わらない自分の芯を持ちながら、置かれた場所に形を合わせていく。そんな柔らかさを、あなたは今どれくらい持っているでしょうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マツバギクから始める小さな体験</h2>
+    <p>環境にしなやかに合わせるマツバギクにならって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>光沢のある花びらをじっくり観察してみる</li>
+      <li>松葉に似た細い葉の形を確かめてみる</li>
+      <li>新しい環境や状況に一つ、慣れてみる工夫をする</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マツバギクの花びらにはどんな特徴がありますか？</div>
+        <div class="faq-a">光沢のある花びらが特徴で、日差しを受けるときらきらと輝いて見えます。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">環境の変化にしなやかに応えたい今日は、月齢・月相やおすすめアイテムもあわせて見てみませんか。開運カレンダーでは、今日の月の満ち欠けとおすすめアイテムを確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>松葉のような葉と光沢の花を持つマツバギクは、環境に合わせてしなやかに形を変える強さを物語ります。</p>
     <ul>
-      <li>マツバギクは初夏に光沢のある花を咲かせる、6月4日の誕生花</li>
-      <li>花言葉は「順応性」、厳しい環境に適応して育つ性質に由来する</li>
-      <li>太陽に輝く花びらの光沢と旺盛な生育力が魅力</li>
-      <li>乾燥に強く、水はけの良い場所でよく育つ</li>
+      <li>マツバギクはハマミズナ科の多年草で、初夏に光沢のある花を咲かせる、6月4日の誕生花</li>
+      <li>花言葉は「順応性」。乾燥した環境でもよく育つ性質に結びつけられているとされる</li>
+      <li>松葉に似た細い葉と、日差しに輝く花びらの対比が魅力</li>
+      <li>乾いた土地や強い日差しにも耐える丈夫さを持つ</li>
     </ul>
   </section>
 

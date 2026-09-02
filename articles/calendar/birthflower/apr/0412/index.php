@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0412/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月12日の誕生花カタクリの花言葉・特徴・魅力をわかりやすく解説。「初恋」を象徴するはかなく可憐な山野草の意味を紹介します。">
+  <meta name="description" content="4月12日の誕生花カタクリの花言葉・特徴・魅力をわかりやすく解説。「初恋」を象徴するうつむき加減に咲く紫紅色の花の意味を紹介します。">
   <title>4月12日の誕生花はカタクリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カタクリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春にうつむき加減の紫紅色の花を咲かせます。ユリ科の多年草で、春の妖精とも呼ばれます。"}},
-      {"@type":"Question","name":"カタクリの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「初恋」という花言葉は、恥じらうようにうつむいて咲く花の姿に由来すると言われています。"}},
-      {"@type":"Question","name":"カタクリはなぜ「スプリング・エフェメラル」と呼ばれるのですか？","acceptedAnswer":{"@type":"Answer","text":"早春の短い期間だけ地上に姿を現し、他の木々の葉が茂る頃には姿を消してしまう性質から、そう呼ばれています。"}}
+      {"@type":"Question","name":"カタクリはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"早春に、うつむき加減の紫紅色の花を咲かせます。ユリ科の多年草で、はかなく可憐な春の使者として親しまれています。"}},
+      {"@type":"Question","name":"カタクリの花言葉「初恋」の由来は？","acceptedAnswer":{"@type":"Answer","text":"短い早春の期間だけ、うつむき加減に恥じらうように咲く紫紅色の花の姿が、言葉にできない淡い気持ちを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"カタクリの球根は片栗粉の原料になりますか？","acceptedAnswer":{"@type":"Answer","text":"かつてはカタクリの球根からでんぷんを取っていましたが、現在市販されている片栗粉の主原料はじゃがいもであり、カタクリではありません。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 12 · 誕生花</span>
     <h1>4月12日の誕生花はカタクリ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カタクリは、ユリ科の多年草で、早春にうつむき加減の紫紅色の花を咲かせる4月12日の誕生花です。花言葉は「初恋」。はかなく可憐な春の使者として親しまれています。</p>
+    <p class="art-lead">4月12日、雑木林にも柔らかな日射しが届き始める頃。うつむき加減に咲く紫紅色のカタクリは、胸がきゅっと締めつけられるような懐かしい気持ちをそっと呼び覚ましてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カタクリとは</a></li>
-      <li><a href="#meaning">カタクリが象徴する意味</a></li>
-      <li><a href="#charm">カタクリの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月12日の誕生花として親しまれるカタクリ</a></li>
+      <li><a href="#story">紫紅色が語る、カタクリの初恋</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カタクリから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カタクリとは</h2>
-    <p>カタクリは、ユリ科の多年草で、4月12日の誕生花として知られています。雑木林の林床にひっそりと咲く山野草で、花が開くのは日射しのある短い時間帯のみという性質から、スプリング・エフェメラル（春の妖精）とも呼ばれます。</p>
-  </section>
+    <h2>4月12日の誕生花として親しまれるカタクリ</h2>
+    <p>カタクリは、ユリ科の多年草です。早春になると、うつむき加減の紫紅色の花を咲かせます。はかなく可憐な春の使者として、雑木林などで古くから親しまれてきました。4月12日の誕生花として、そのうつむいて咲く姿が重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カタクリが象徴する意味</h2>
-    <p>カタクリの花言葉は「初恋」です。うつむきがちに咲き、花びらを反り返らせて恥じらうように開く姿が、まだ言葉にできない淡い初恋の心情を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カタクリの魅力</h2>
-    <p>カタクリの魅力は、群生地一面をうっすらと紫紅色に染める景観と、一つ一つの花が見せる可憐なうつむき姿にあります。発芽から開花まで長い年月を要することでも知られ、その分だけ出会える喜びの大きい花です。4月12日生まれの方はもちろん、淡い想いを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カタクリは半日陰の湿り気のある落葉樹林のような環境を好みます。栽培には時間がかかるため、山野草として鉢植えで大切に育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月12日生まれの方はもちろん、淡い想いを届けたい贈り物としてもカタクリは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">カタクリはいつ頃咲きますか？</div>
-        <div class="faq-a">早春にうつむき加減の紫紅色の花を咲かせます。ユリ科の多年草で、春の妖精とも呼ばれます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カタクリの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「初恋」という花言葉は、恥じらうようにうつむいて咲く花の姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カタクリはなぜ「スプリング・エフェメラル」と呼ばれるのですか？</div>
-        <div class="faq-a">早春の短い期間だけ地上に姿を現し、他の木々の葉が茂る頃には姿を消してしまう性質から、そう呼ばれています。</div>
+        <div class="faq-a">早春に、うつむき加減の紫紅色の花を咲かせます。ユリ科の多年草で、はかなく可憐な春の使者として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>紫紅色が語る、カタクリの初恋</h2>
+    <p>まだ木々の葉が茂りきらない早春の林床に、カタクリはうつむき加減の紫紅色の花をひっそりと咲かせます。花びらは反り返るように開き、俯く姿勢と相まって、まるで何かを恥じらっているかのような印象を与えます。この花が咲くのは、木々が葉を茂らせる前の、ほんの短い期間だけ。季節が早春から本格的な春へと移り変わる、その一瞬を狙うようにして花を開くのです。ユリ科の多年草として、地上に姿を現すまでに長い年月をかけて育つことでも知られています。そんな、短い時間だけうつむきながら咲く控えめな姿から、カタクリには「初恋」という花言葉が贈られているといわれています。この言葉は、まだ言葉にできない淡い気持ちを、そっと胸の内に秘めている様子を表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カタクリの花言葉「初恋」の由来は？</div>
+        <div class="faq-a">短い早春の期間だけ、うつむき加減に恥じらうように咲く紫紅色の花の姿が、言葉にできない淡い気持ちを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かを思うとき、まだうまく言葉にできない気持ちがあっても構いません。その気持ちをそっと胸にしまいながら大切に育んでいくのは、今日に限らずきっと悪くありません。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カタクリから始める小さな体験</h2>
+    <p>うつむき加減に紫紅色の花を咲かせるカタクリにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>うつむき加減に咲く紫紅色の花を探してみる</li>
+      <li>初恋の記憶をそっと思い出してみる</li>
+      <li>紫紅色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カタクリの球根は片栗粉の原料になりますか？</div>
+        <div class="faq-a">かつてはカタクリの球根からでんぷんを取っていましたが、現在市販されている片栗粉の主原料はじゃがいもであり、カタクリではありません。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">懐かしい気持ちに浸る今日は、月齢・月相や今月の誕生石も気になるところ。開運カレンダーでは、その日の月齢・月相と今月の誕生石をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月12日、短い時間だけうつむいて咲くカタクリは、まだ言葉にできない気持ちを大切に育むことの美しさを教えてくれる花です。</p>
     <ul>
-      <li>カタクリは早春に紫紅色の花を咲かせる、4月12日の誕生花</li>
-      <li>花言葉は「初恋」、恥じらうようにうつむく花姿に由来する</li>
-      <li>群生地を彩る景観とはかなく可憐な花姿が魅力</li>
-      <li>半日陰の湿り気のある環境で、山野草として大切に育てたい</li>
+      <li>カタクリはユリ科の多年草で、早春にうつむき加減の紫紅色の花を咲かせる</li>
+      <li>はかなく可憐な春の使者として、雑木林などで親しまれている</li>
+      <li>花言葉は「初恋」。短い期間だけ恥じらうように咲く姿に由来するといわれる</li>
+      <li>初恋は、まだ言葉にできない淡い気持ちを胸に秘める様子を表す言葉ともいえる</li>
     </ul>
   </section>
 

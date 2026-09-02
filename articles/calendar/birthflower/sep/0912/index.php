@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0912/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="9月12日の誕生花コスモスの花言葉・特徴・魅力をわかりやすく解説。「乙女のまごころ」を象徴する風に揺れる可憐な花の意味を紹介します。">
+  <meta name="description" content="9月12日の誕生花コスモスの花言葉・特徴・魅力をわかりやすく解説。「乙女のまごころ」を象徴する秋の花の意味を紹介します。">
   <title>9月12日の誕生花はコスモス｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"コスモスはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"秋に、細い茎の先で風に揺れながら咲きます。キク科の一年草です。"}},
-      {"@type":"Question","name":"コスモスの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"細い茎の先で風に揺れながらも凛と咲き続ける可憐な花姿が、飾らない乙女のまごころを象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"コスモスの名前の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"ギリシャ語で「秩序」「美しさ」を意味する「kosmos」に由来すると言われています。"}}
+      {"@type":"Question","name":"コスモスはどんな季節に見頃を迎えますか？","acceptedAnswer":{"@type":"Answer","text":"秋に見頃を迎え、細い茎の先で風に揺れながら花を咲かせます。可憐で秋らしい印象を与えるキク科の一年草です。"}},
+      {"@type":"Question","name":"コスモスの花言葉『乙女のまごころ』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"細い茎で風に揺れながらも、飾らずまっすぐに咲き続ける姿に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">SEPTEMBER 12 · 誕生花</span>
     <h1>9月12日の誕生花はコスモス<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">コスモスは、キク科の一年草で、秋、細い茎の先で風に揺れながら咲く、可憐で秋らしい印象を与える花です。花言葉は「乙女のまごころ」。可憐で秋らしい花です。</p>
+    <p class="art-lead">秋風が吹き抜けるたび、細い茎の先で花がふわりと揺れる。倒れそうで倒れない、その頼りなさが逆に愛らしい。この花が、9月12日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">コスモスとは</a></li>
-      <li><a href="#meaning">コスモスが象徴する意味</a></li>
-      <li><a href="#charm">コスモスの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">9月12日の誕生花として親しまれるコスモス</a></li>
+      <li><a href="#story">秋風とともに揺れる、頼りなくて確かな花</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、コスモスから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>コスモスとは</h2>
-    <p>コスモスは、キク科の一年草で、9月12日の誕生花として知られています。秋、細い茎の先で風に揺れながら咲く、可憐で秋らしい印象を与える花です。</p>
-  </section>
+    <h2>9月12日の誕生花として親しまれるコスモス</h2>
+    <p>コスモスは、キク科の一年草です。秋になると、細い茎の先に可憐な花を咲かせ、風に揺れながら秋らしい景色をつくります。9月12日の誕生花として広く親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>コスモスが象徴する意味</h2>
-    <p>コスモスの花言葉は「乙女のまごころ」です。細い茎の先で風に揺れながらも凛と咲き続ける可憐な花姿が、飾らない乙女のまごころを象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>コスモスの魅力</h2>
-    <p>コスモスの魅力は、風に揺れる繊細な花びらと、一面に咲きそろったときの秋らしい優しい景色にあります。秋を代表する花として広く親しまれています。 9月12日生まれの方はもちろん、飾らないまごころを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>コスモスは日当たりを好み、やせた土地でもよく育つため肥料を控えめにして管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>9月12日生まれの方はもちろん、飾らないまごころを伝えたい贈り物としてもコスモスは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コスモスはいつ頃咲きますか？</div>
-        <div class="faq-a">秋に、細い茎の先で風に揺れながら咲きます。キク科の一年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コスモスの花言葉の由来は何ですか？</div>
-        <div class="faq-a">細い茎の先で風に揺れながらも凛と咲き続ける可憐な花姿が、飾らない乙女のまごころを象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">コスモスの名前の由来は何ですか？</div>
-        <div class="faq-a">ギリシャ語で「秩序」「美しさ」を意味する「kosmos」に由来すると言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">コスモスはどんな季節に見頃を迎えますか？</div>
+        <div class="faq-a">秋に見頃を迎え、細い茎の先で風に揺れながら花を咲かせます。可憐で秋らしい印象を与えるキク科の一年草です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>秋風とともに揺れる、頼りなくて確かな花</h2>
+    <p>コスモスの茎は、驚くほど細い。それなのに、大きく開いた花を支えて、秋風が吹くたびにしなやかに揺れる。折れてしまうのではないかと心配になるほど頼りなく見えて、実際には簡単には折れない。この揺れながらも倒れない姿は、秋という季節の移ろいやすさとよく重なる。日差しが和らぎ、空気が澄んでいく中で、コスモスは気取らず、ただ風に身を任せるように咲いている。花言葉「乙女のまごころ」は、こうした飾らずまっすぐな咲き方から生まれたと言われている。強がるのではなく、しなやかであることの強さが、この花にはある。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">コスモスの花言葉『乙女のまごころ』にはどんな由来がありますか？</div>
+        <div class="faq-a">細い茎で風に揺れながらも、飾らずまっすぐに咲き続ける姿に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>無理に強がらなくても、しなやかであることは十分に強さになる。風に揺れながらも折れずにいる姿のように、ありのままの自分で過ごせる日になるかもしれない。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、コスモスから始める小さな体験</h2>
+    <p>秋風に揺れながらも折れずに咲くコスモスにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>風に揺れるコスモスをじっくり眺めてみる</li>
+      <li>気取らず、ありのままの自分で一日を過ごしてみる</li>
+      <li>秋の風を感じながら少し外を歩いてみる</li>
+    </ul>
+
+    <p class="cta-lead">ありのままの自分で過ごしたい日は、今日のラッキーフードも確認してみませんか。開運カレンダーでは、ラッキーフードと月齢・月相を毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>細い茎で揺れながらも折れないコスモスのしなやかさに、「乙女のまごころ」という花言葉の芯の強さを重ねてしまうのは、私だけだろうか。</p>
     <ul>
-      <li>コスモスは秋に可憐な花を咲かせる、9月12日の誕生花</li>
-      <li>花言葉は「乙女のまごころ」、風に揺れながら咲く姿に由来する</li>
-      <li>風に揺れる繊細さが魅力</li>
-      <li>日当たりを好み、やせた土地でもよく育つ</li>
+      <li>コスモスは秋に細い茎の先で花を咲かせる、キク科の一年草で、9月12日の誕生花</li>
+      <li>花言葉は「乙女のまごころ」。飾らずまっすぐに咲く姿に由来すると言われる</li>
+      <li>風に揺れながらも折れない、しなやかな強さを持つ</li>
+      <li>可憐で秋らしい印象を与える花</li>
     </ul>
   </section>
 

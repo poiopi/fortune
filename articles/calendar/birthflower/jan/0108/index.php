@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"マンリョウの実はいつ頃見られますか？","acceptedAnswer":{"@type":"Answer","text":"冬に鮮やかな赤い実をつけ、花は初夏に咲きます。"}},
-      {"@type":"Question","name":"マンリョウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「予言」という花言葉は、冬に実る赤い実がこれから訪れる幸運を予感させることに由来するとされています。"}},
-      {"@type":"Question","name":"マンリョウはなぜ縁起物とされるのですか？","acceptedAnswer":{"@type":"Answer","text":"「万両」という名前が富や繁栄を連想させることから、正月飾りなど縁起物として親しまれています。"}}
+      {"@type":"Question","name":"マンリョウの花はいつ咲きますか？","acceptedAnswer":{"@type":"Answer","text":"マンリョウの花が咲くのは初夏です。1月に見られる赤い実は、初夏に咲いた花が時間をかけて実ったものです。"}},
+      {"@type":"Question","name":"マンリョウの花言葉「予言」の由来は？","acceptedAnswer":{"@type":"Answer","text":"花から実になるまで長い時間をかける生態が、先の結果をそっと示唆するようなイメージにつながり「予言」という花言葉になったといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +135,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">JANUARY 8 · 誕生花</span>
     <h1>1月8日の誕生花はマンリョウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">マンリョウは、冬に鮮やかな赤い実をつける1月8日の誕生花です。花言葉は「予言」。正月飾りの縁起物としても親しまれています。</p>
+    <p class="art-lead">正月飾りの余韻がまだ残る1月8日。庭木や鉢植えに、鮮やかな赤い実をつけたマンリョウを見かける頃です。その実は、半年以上前に咲いた花の結果だと知っていましたか。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">マンリョウとは</a></li>
-      <li><a href="#meaning">マンリョウが象徴する意味</a></li>
-      <li><a href="#charm">マンリョウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">花よりも実で語る、マンリョウの赤</a></li>
+      <li><a href="#story">1月8日、マンリョウの赤い実が語る予言</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、マンリョウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>マンリョウとは</h2>
-    <p>マンリョウは、サクラソウ科の常緑低木で、1月8日の誕生花として知られています。初夏に白い小さな花を咲かせ、冬になると鮮やかな赤い実をつけることから、正月飾りや縁起物としても親しまれています。</p>
-  </section>
+    <h2>花よりも実で語る、マンリョウの赤</h2>
+    <p>マンリョウは、サクラソウ科の常緑低木です。花が咲くのは初夏ですが、1月の今、私たちが目にするのは冬に熟す鮮やかな赤い実。正月飾りの縁起物としても親しまれ、花よりも実の記憶の方が強く残る、少し珍しい植物です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>マンリョウが象徴する意味</h2>
-    <p>マンリョウの花言葉は「予言」です。冬に実る赤い実が、これから訪れる幸運を予感させることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>マンリョウの魅力</h2>
-    <p>マンリョウの魅力は、冬の庭を彩る鮮やかな赤い実と、「万両」という縁起の良い名前にあります。正月の寄せ植えや盆栽としても人気があり、新年を迎える華やぎを添えてくれます。1月8日生まれの方はもちろん、幸運を願う贈り物にもふさわしい植物です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>マンリョウは半日陰でも育ちやすく、乾燥にはやや弱いため、土の表面が乾いたらたっぷり水を与えるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>1月8日生まれの方はもちろん、幸運を願う贈り物としてもマンリョウは縁起物として親しまれています。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンリョウの実はいつ頃見られますか？</div>
-        <div class="faq-a">冬に鮮やかな赤い実をつけ、花は初夏に咲きます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンリョウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「予言」という花言葉は、冬に実る赤い実がこれから訪れる幸運を予感させることに由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">マンリョウはなぜ縁起物とされるのですか？</div>
-        <div class="faq-a">「万両」という名前が富や繁栄を連想させることから、正月飾りなど縁起物として親しまれています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">マンリョウの花はいつ咲きますか？</div>
+        <div class="faq-a">マンリョウの花が咲くのは初夏です。1月に見られる赤い実は、初夏に咲いた花が時間をかけて実ったものです。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>1月8日、マンリョウの赤い実が語る予言</h2>
+    <p>小さな白い花から始まった営みが、夏を越え秋を越え、冬になってようやく赤い実として姿を現す。マンリョウの一年をたどると、結果がすぐには見えない物事の時間の流れを思わせます。正月飾りとして選ばれてきたのも、この赤い実が「今年も実りある一年になるように」という願いを託しやすかったからかもしれません。花言葉は「予言」。今はまだ見えなくても、いずれ実を結ぶという静かな確信が込められた言葉のようにも感じられます。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">マンリョウの花言葉「予言」の由来は？</div>
+        <div class="faq-a">花から実になるまで長い時間をかける生態が、先の結果をそっと示唆するようなイメージにつながり「予言」という花言葉になったといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>今すぐ結果が出なくても、それは失敗ではありません。マンリョウの実のように、時間をかけてゆっくり育っているものが、あなたの中にもきっとあります。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、マンリョウから始める小さな体験</h2>
+    <p>花から実まで長い時間をかけるマンリョウにあやかって、今日はこんな体験を試してみませんか。</p>
+    <ul class="exp-list">
+      <li>冬に赤い実をつける木を探してみる</li>
+      <li>今は結果が見えなくても、じっくり続けていることを一つ思い浮かべる</li>
+      <li>赤いものを身の回りに置いて気持ちを引き締めてみる</li>
+    </ul>
+
+    <p class="cta-lead">じっくり続けていることを見つめ直した今日は、運気の流れも合わせてチェックしてみませんか。開運カレンダーでは、今日の吉日もわかります。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>マンリョウは、時間をかけて実を結ぶ姿で「予言」を語る、1月8日らしい誕生花です。</p>
     <ul>
-      <li>マンリョウは冬に赤い実をつける、1月8日の誕生花</li>
-      <li>花言葉は「予言」、訪れる幸運を象徴する植物とされる</li>
-      <li>縁起の良い名前と鮮やかな赤い実が魅力</li>
-      <li>半日陰でも育ちやすいが、乾燥にはやや弱い</li>
+      <li>マンリョウはサクラソウ科の常緑低木で、初夏に白い花、冬に赤い実をつける</li>
+      <li>正月飾りの縁起物として親しまれてきた</li>
+      <li>花言葉は「予言」。時間をかけて実を結ぶ姿を象徴する言葉とされる</li>
+      <li>開花は初夏、1月に見られるのは冬にできる赤い実である点に注意したい</li>
     </ul>
   </section>
 

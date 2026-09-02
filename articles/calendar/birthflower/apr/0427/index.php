@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0427/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月27日の誕生花カルミヤの花言葉・特徴・魅力をわかりやすく解説。「賞賛」を象徴する金平糖のような花の意味を紹介します。">
+  <meta name="description" content="4月27日の誕生花カルミヤの花言葉・特徴・魅力をわかりやすく解説。金平糖のようなつぼみが印象的な「賞賛」を象徴する花の意味を紹介します。">
   <title>4月27日の誕生花はカルミヤ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"カルミヤはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"初夏に金平糖のような形のつぼみと花を咲かせます。ツツジ科の常緑低木で、ユニークな花姿が特徴です。"}},
-      {"@type":"Question","name":"カルミヤの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「賞賛」という花言葉は、つぼみから開花まで移り変わる凝った造形の花姿が、称賛したくなる美しさを持つことに由来すると言われています。"}},
-      {"@type":"Question","name":"カルミヤはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"半日陰から明るい日陰を好み、水はけの良い酸性の土壌でよく育ちます。乾燥を嫌うため適度な水やりが必要です。"}}
+      {"@type":"Question","name":"カルミヤはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"本来の見頃は初夏です。金平糖のような形のつぼみと花を咲かせるツツジ科の常緑低木で、4月27日の誕生花としても親しまれています。"}},
+      {"@type":"Question","name":"カルミヤの花言葉「賞賛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"つぼみの段階から金平糖のような美しい形を作り上げる丁寧さが、じっくり積み重ねた努力をたたえたくなる気持ちを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"カルミヤの和名は何ですか？","acceptedAnswer":{"@type":"Answer","text":"和名は「アメリカシャクナゲ」です。北アメリカ東部原産で、本来のシャクナゲとは別の植物とされています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 27 · 誕生花</span>
     <h1>4月27日の誕生花はカルミヤ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">カルミヤは、ツツジ科の常緑低木で、初夏に金平糖のような形のつぼみと花を咲かせる4月27日の誕生花です。花言葉は「賞賛」。ユニークな花姿が魅力の花です。</p>
+    <p class="art-lead">4月27日、金平糖のような形のつぼみがふくらんでいく頃。カルミヤは、丁寧に積み重ねられた工程の美しさに、思わず拍手を送りたくなる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">カルミヤとは</a></li>
-      <li><a href="#meaning">カルミヤが象徴する意味</a></li>
-      <li><a href="#charm">カルミヤの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月27日の誕生花として親しまれるカルミヤ</a></li>
+      <li><a href="#story">金平糖のつぼみが誘う、カルミヤへの賞賛</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、カルミヤから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>カルミヤとは</h2>
-    <p>カルミヤは、ツツジ科の常緑低木で、4月27日の誕生花として知られています。開花前の金平糖のような愛らしいつぼみと、開花後の皿状に広がる花の両方を楽しめる、他にはないユニークな花姿を持つ花木です。</p>
-  </section>
+    <h2>4月27日の誕生花として親しまれるカルミヤ</h2>
+    <p>カルミヤは、ツツジ科の常緑低木です。本来の見頃は初夏で、金平糖のような形のつぼみと花を咲かせます。北アメリカ東部を原産地とし、和名は「アメリカシャクナゲ」と呼ばれています。そのユニークで愛らしい姿から、4月27日の誕生花としても親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>カルミヤが象徴する意味</h2>
-    <p>カルミヤの花言葉は「賞賛」です。つぼみから開花まで移り変わる、細やかで凝った造形の花姿が、見る人の目を引き称賛したくなる美しさを持つことに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>カルミヤの魅力</h2>
-    <p>カルミヤの魅力は、金平糖のようなつぼみが少しずつ開いていく過程そのものと、開花後の星形に近い花模様にあります。株いっぱいに咲くと、まるで宝石をちりばめたような華やかな景観になります。4月27日生まれの方はもちろん、称賛の気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>カルミヤは半日陰から明るい日陰を好み、水はけの良い酸性の土壌で育てるのがおすすめです。乾燥を嫌うため、適度な水やりを心がけます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月27日生まれの方はもちろん、称賛の気持ちを届けたい贈り物としてもカルミヤは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">カルミヤはいつ頃咲きますか？</div>
-        <div class="faq-a">初夏に金平糖のような形のつぼみと花を咲かせます。ツツジ科の常緑低木で、ユニークな花姿が特徴です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カルミヤの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「賞賛」という花言葉は、つぼみから開花まで移り変わる凝った造形の花姿が、称賛したくなる美しさを持つことに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">カルミヤはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">半日陰から明るい日陰を好み、水はけの良い酸性の土壌でよく育ちます。乾燥を嫌うため適度な水やりが必要です。</div>
+        <div class="faq-a">本来の見頃は初夏です。金平糖のような形のつぼみと花を咲かせるツツジ科の常緑低木で、4月27日の誕生花としても親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>金平糖のつぼみが誘う、カルミヤへの賞賛</h2>
+    <p>カルミヤのつぼみは、開く前から目を引きます。まるで金平糖のようにいくつもの角が規則正しく並び、小さな菓子のような愛らしい造形を見せてくれるのです。花が咲いてしまえば見られなくなる、つぼみだけの一瞬の姿。それでも、この花を語るときにまずつぼみの話から始めたくなるほど、その完成度は際立っています。一つの花を咲かせるまでに、これほど丁寧な形が積み重ねられているのかと、思わず見入ってしまう人も少なくないでしょう。結果としての花だけでなく、そこに至るまでの過程そのものに目を向けさせてくれる花です。そんな丁寧な仕上がりの美しさから、カルミヤには「賞賛」という花言葉が贈られているといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カルミヤの花言葉「賞賛」の由来は？</div>
+        <div class="faq-a">つぼみの段階から金平糖のような美しい形を作り上げる丁寧さが、じっくり積み重ねた努力をたたえたくなる気持ちを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>結果だけでなく、そこに至るまでの積み重ねにも、たたえられるべき価値があります。今日は誰かの頑張りを、素直な言葉にして伝えてみてはいかがでしょうか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、カルミヤから始める小さな体験</h2>
+    <p>金平糖のようなつぼみを丁寧に作り上げるカルミヤにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>金平糖のような形のつぼみをじっくり観察してみる</li>
+      <li>和名「アメリカシャクナゲ」を知った上で、つぼみの形を改めて眺めてみる</li>
+      <li>誰かの頑張りを一つ、言葉にして称えてみる</li>
+      <li>ユニークな形のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">カルミヤの和名は何ですか？</div>
+        <div class="faq-a">和名は「アメリカシャクナゲ」です。北アメリカ東部原産で、本来のシャクナゲとは別の植物とされています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かの頑張りを称えたい今日は、ラッキーフードやおすすめの行動も参考にしてみませんか。開運カレンダーでは、その日のラッキーフードとおすすめの行動をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月27日、金平糖のようなつぼみを丁寧に咲かせるカルミヤは、結果に至るまでの積み重ねをたたえる大切さを教えてくれる花です。</p>
     <ul>
-      <li>カルミヤは初夏に金平糖のような花を咲かせる、4月27日の誕生花</li>
-      <li>花言葉は「賞賛」、凝った造形の花姿に由来する</li>
-      <li>つぼみから開花まで移り変わるユニークな花姿が魅力</li>
-      <li>半日陰で、水はけの良い酸性土壌を好み育てたい</li>
+      <li>カルミヤはツツジ科の常緑低木で、本来の見頃は初夏、金平糖のようなつぼみを咲かせる</li>
+      <li>北アメリカ東部原産で、和名は「アメリカシャクナゲ」と呼ばれる</li>
+      <li>花言葉は「賞賛」。つぼみの丁寧な造形に由来するといわれる</li>
+      <li>賞賛は、結果だけでなく積み重ねてきた過程をたたえる気持ちを表す言葉ともいえる</li>
     </ul>
   </section>
 

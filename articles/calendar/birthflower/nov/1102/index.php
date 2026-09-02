@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1102/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="11月2日の誕生花ハナキリンの花言葉・特徴・魅力をわかりやすく解説。「独立」を象徴する赤い花の意味を紹介します。">
+  <meta name="description" content="11月2日の誕生花ハナキリンの花言葉・特徴・魅力をわかりやすく解説。「独立」を象徴する一年中花を咲かせる多肉植物の意味を紹介します。">
   <title>11月2日の誕生花はハナキリン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,13 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +97,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ハナキリンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"一年を通して赤い花を咲かせます。トウダイグサ科の多肉植物です。"}},
-      {"@type":"Question","name":"ハナキリンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"厳しい環境でも多肉質の茎に水を蓄えて力強く花を咲かせ続ける姿が、他に頼らず自立する独立心を思わせることに由来すると言われています。"}},
-      {"@type":"Question","name":"ハナキリンはどんな場所で育てるのがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"多肉質で乾燥に強いため、日当たりの良い室内や窓辺で育てるのがおすすめです。"}}
+      {"@type":"Question","name":"ハナキリンはどんな植物ですか？","acceptedAnswer":{"@type":"Answer","text":"トウダイグサ科の多肉植物で、一年を通して小さな赤い花を咲かせ続けます。"}},
+      {"@type":"Question","name":"ハナキリンの花言葉「独立」はどのように結びついていますか？","acceptedAnswer":{"@type":"Answer","text":"季節を問わず、自分のペースを守るように咲き続ける赤い花の姿が、独立という花言葉に重ねられてきたと言われています。"}}
     ]
   }
   </script>
@@ -129,14 +135,14 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">NOVEMBER 2 · 誕生花</span>
     <h1>11月2日の誕生花はハナキリン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ハナキリンは、トウダイグサ科の多肉植物で、一年を通して赤い花を咲かせる、力強く凛とした印象を持つ花です。花言葉は「独立」。力強い花です。</p>
+    <p class="art-lead">赤い花をぽつぽつと絶やさず咲かせる姿に、いつの間にか目が留まることがある。トウダイグサ科の多肉植物、ハナキリンは、季節を問わず一年を通して咲き続ける、11月2日の誕生花だ。</p>
   </div>
 
   <dl class="basic-info">
     <dt>花名</dt><dd>ハナキリン</dd>
     <dt>花言葉</dt><dd>独立</dd>
     <dt>科名</dt><dd>トウダイグサ科</dd>
-    <dt>見頃</dt><dd>通年</dd>
+    <dt>見頃</dt><dd>周年</dd>
   </dl>
 
   <?php
@@ -150,66 +156,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ハナキリンとは</a></li>
-      <li><a href="#meaning">ハナキリンが象徴する意味</a></li>
-      <li><a href="#charm">ハナキリンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">11月2日の誕生花として親しまれるハナキリン</a></li>
+      <li><a href="#story">絶えず灯り続ける、小さな赤</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ハナキリンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ハナキリンとは</h2>
-    <p>ハナキリンは、トウダイグサ科の多肉植物で、11月2日の誕生花として知られています。一年を通して小さな赤い花を咲かせる、力強く凛とした印象を持つ花です。</p>
-  </section>
+    <h2>11月2日の誕生花として親しまれるハナキリン</h2>
+    <p>ハナキリンは、トウダイグサ科の多肉植物として知られる、11月2日の誕生花です。一年を通して小さな赤い花を咲かせ続けることで親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ハナキリンが象徴する意味</h2>
-    <p>ハナキリンの花言葉は「独立」です。厳しい環境でも多肉質の茎に水を蓄えて力強く花を咲かせ続ける姿が、他に頼らず自立する独立心を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ハナキリンの魅力</h2>
-    <p>ハナキリンの魅力は、多肉植物ならではの力強い生命力と、一年を通して赤い花を咲かせ続ける粘り強さにあります。11月2日生まれの方はもちろん、自立した強さを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ハナキリンは日当たりの良い場所を好み、乾燥気味に管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>11月2日生まれの方はもちろん、自立した強さを伝えたい贈り物としてもハナキリンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナキリンはいつ頃咲きますか？</div>
-        <div class="faq-a">一年を通して赤い花を咲かせます。トウダイグサ科の多肉植物です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナキリンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">厳しい環境でも多肉質の茎に水を蓄えて力強く花を咲かせ続ける姿が、他に頼らず自立する独立心を思わせることに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ハナキリンはどんな場所で育てるのがおすすめですか？</div>
-        <div class="faq-a">多肉質で乾燥に強いため、日当たりの良い室内や窓辺で育てるのがおすすめです。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">ハナキリンはどんな植物ですか？</div>
+        <div class="faq-a">トウダイグサ科の多肉植物で、一年を通して小さな赤い花を咲かせ続けます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>絶えず灯り続ける、小さな赤</h2>
+    <p>ハナキリンの赤は、季節によって濃さを変えることがない。夏の盛りにも、寒さが増す11月にも、変わらず同じ強さで咲き続けている。その赤には、周囲に流されず自分のペースを守り抜くような、静かな芯の強さが宿っているように映る。多肉質の茎に鋭いとげをまといながらも、花びらはどこまでも小さく愛らしい。一年を通して途切れることのないこの赤い花が、「独立」という花言葉に重ねられてきたのだろう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ハナキリンの花言葉「独立」はどのように結びついていますか？</div>
+        <div class="faq-a">季節を問わず、自分のペースを守るように咲き続ける赤い花の姿が、独立という花言葉に重ねられてきたと言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>自分の歩幅を信じられる日は、誰かに合わせてばかりの毎日から少しだけ抜け出せる日でもある。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ハナキリンから始める小さな体験</h2>
+    <p>季節を問わず赤い花を咲かせ続けるハナキリンにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>小さな赤い花をじっくり観察してみる</li>
+      <li>一年を通して楽しめる鉢植えを育ててみる</li>
+      <li>誰かに頼らず、今日一つのことを自分の力でやり遂げてみる</li>
+    </ul>
+
+    <p class="cta-lead">自分らしい色を身にまといたい日は、開運カレンダーで今日のラッキーカラーもチェックしてみませんか。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>一年中変わらず灯り続ける赤い花は、流されない強さの手本になる。</p>
     <ul>
-      <li>ハナキリンは一年を通して赤い花を咲かせる、11月2日の誕生花</li>
-      <li>花言葉は「独立」、多肉質の茎で力強く咲き続ける姿に由来する</li>
-      <li>一年を通して咲き続ける力強い生命力が魅力</li>
-      <li>日当たりの良い場所を好み、乾燥気味に管理するとよく育ちます</li>
+      <li>ハナキリンはトウダイグサ科の多肉植物で、一年を通して赤い花を咲かせる、11月2日の誕生花</li>
+      <li>花言葉は「独立」。季節を問わず自分のペースで咲き続ける姿に由来すると言われる</li>
+      <li>多肉質の茎ととげを持ちながら、花は小さく愛らしい</li>
+      <li>自分の足でまっすぐ進みたい日に寄り添う花</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0212/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月12日の誕生花スプレーギクの花言葉・特徴・魅力をわかりやすく解説。「寛大」を象徴する菊の仲間の花の意味を紹介します。">
+  <meta name="description" content="2月12日の誕生花スプレーギクの花言葉・特徴・魅力をわかりやすく解説。「寛大」を象徴する、一本の茎に寄り添う小花の意味を紹介します。">
   <title>2月12日の誕生花はスプレーギク｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"スプレーギクはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"品種によって開花時期は異なりますが、一本の茎に複数の小花をたくさん咲かせる菊です。"}},
-      {"@type":"Question","name":"スプレーギクの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「寛大」という花言葉は、一本の茎にたくさんの小花を受け入れて咲かせる懐の深い花姿に由来するとされています。"}},
-      {"@type":"Question","name":"スプレーギクと一輪咲きの菊はどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"スプレーギクは一本の茎に複数の小花を咲かせるのが特徴で、ボリュームのある花姿を楽しめます。"}}
+      {"@type":"Question","name":"スプレーギクと一輪菊はどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"一輪菊が一本の茎に一つの大きな花を咲かせるのに対し、スプレーギクは一本の茎に複数の小花を咲かせる点が異なります。どちらにも異なる魅力があります。"}},
+      {"@type":"Question","name":"スプレーギクの花言葉「寛大」の由来は？","acceptedAnswer":{"@type":"Answer","text":"一本の茎に複数の小花が寄り添って咲く姿に由来するといわれています。互いを引き立て合いながら共に咲く様子が、広い心を連想させるとされます。"}},
+      {"@type":"Question","name":"スプレーギクはどんな場面で使われることが多いですか？","acceptedAnswer":{"@type":"Answer","text":"ボリュームが出しやすいことから、花束やフラワーアレンジメント、日常のインテリアなど幅広い場面で使われています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 12 · 誕生花</span>
     <h1>2月12日の誕生花はスプレーギク<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">スプレーギクは、キク科の多年草で、一本の茎に複数の小花を咲かせる2月12日の誕生花です。花言葉は「寛大」。ボリュームのある花姿が魅力の菊です。</p>
+    <p class="art-lead">一本の茎に、たくさんの小花が寄り添うように咲くスプレーギク。2月12日の誕生花に選ばれたこの花は、一輪だけでは伝わらない広やかさを持っています。今日はその咲き方に目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">スプレーギクとは</a></li>
-      <li><a href="#meaning">スプレーギクが象徴する意味</a></li>
-      <li><a href="#charm">スプレーギクの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">一本の茎に、小花が寄り添うスプレーギク</a></li>
+      <li><a href="#story">2月12日、スプレーギクの咲き方が語る寛大さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、スプレーギクから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>スプレーギクとは</h2>
-    <p>スプレーギクは、キク科の多年草で、2月12日の誕生花として知られています。一輪咲きの菊とは異なり、一本の茎から枝分かれして複数の小花を咲かせるため、ボリュームがあり華やかな印象を与えます。</p>
-  </section>
+    <h2>一本の茎に、小花が寄り添うスプレーギク</h2>
+    <p>スプレーギクは、キク科の多年草です。一輪の大きな花を主役にするのではなく、一本の茎から枝分かれし、複数の小花を寄り添うように咲かせます。ボリュームのある花姿は、花束やアレンジメントでも重宝される存在です。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>スプレーギクが象徴する意味</h2>
-    <p>スプレーギクの花言葉は「寛大」です。一本の茎にたくさんの小花を受け入れるように咲かせる、その懐の深い花姿に由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>スプレーギクの魅力</h2>
-    <p>スプレーギクの魅力は、一輪だけでも華やかに見える豊かなボリュームと、花持ちの良さにあります。花束やアレンジメントにも使いやすく、菊のイメージを明るく彩る存在です。2月12日生まれの方はもちろん、懐の深さや優しさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>スプレーギクは日当たりと水はけの良い場所を好み、土の乾燥に注意しながら育てるのがおすすめです。花がら摘みをこまめに行うと、次々と花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月12日生まれの方はもちろん、懐の深さや思いやりを伝えたい贈り物としてもスプレーギクは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スプレーギクはいつ頃咲きますか？</div>
-        <div class="faq-a">品種によって開花時期は異なりますが、一本の茎に複数の小花をたくさん咲かせる菊です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スプレーギクの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「寛大」という花言葉は、一本の茎にたくさんの小花を受け入れて咲かせる懐の深い花姿に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">スプレーギクと一輪咲きの菊はどう違いますか？</div>
-        <div class="faq-a">スプレーギクは一本の茎に複数の小花を咲かせるのが特徴で、ボリュームのある花姿を楽しめます。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">スプレーギクと一輪菊はどう違いますか？</div>
+        <div class="faq-a">一輪菊が一本の茎に一つの大きな花を咲かせるのに対し、スプレーギクは一本の茎に複数の小花を咲かせる点が異なります。どちらにも異なる魅力があります。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月12日、スプレーギクの咲き方が語る寛大さ</h2>
+    <p>スプレーギクの面白さは、一輪だけを主役にしない咲き方にあります。よく見ると、一本の茎から分かれた枝の先に、それぞれ独立した小花が咲いていますが、決してばらばらな印象は与えません。一つ一つの花が互いを引き立て合いながら、一つの茎という同じ場所でつながっている。その姿は、誰か一人だけを目立たせるのではなく、みんなで一緒に咲こうとしているようにも見えます。個々の違いを認めながら、全体としてまとまりを持つ。そんな寛容さを感じさせる咲き方です。この複数の小花が寄り添って咲く姿から、スプレーギクには「寛大」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スプレーギクの花言葉「寛大」の由来は？</div>
+        <div class="faq-a">一本の茎に複数の小花が寄り添って咲く姿に由来するといわれています。互いを引き立て合いながら共に咲く様子が、広い心を連想させるとされます。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>誰かの意見が自分と違っていても、それは間違いではなく、ただの違いです。今日は、その違いをそのまま受け止めてみる練習をしてみませんか。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、スプレーギクから始める小さな体験</h2>
+    <p>複数の小花が寄り添って咲くスプレーギクにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>複数の小花が集まって咲く花を探してみる</li>
+      <li>誰かの意見を一つ、否定せずに受け止めてみる</li>
+      <li>一輪挿しではなく、まとまった花を飾ってみる</li>
+      <li>自分の中の余裕を感じる瞬間を探してみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">スプレーギクはどんな場面で使われることが多いですか？</div>
+        <div class="faq-a">ボリュームが出しやすいことから、花束やフラワーアレンジメント、日常のインテリアなど幅広い場面で使われています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">誰かの違いを受け止められた今日は、身の回りのラッキーアイテムにも目を向けてみましょう。開運カレンダーでは、その日のラッキーアイテムを毎日更新でお届けしています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月12日、小花が寄り添って咲くスプレーギクは、違いを認め合う広い心を教えてくれます。</p>
     <ul>
-      <li>スプレーギクは一本の茎に複数の小花を咲かせる、2月12日の誕生花</li>
-      <li>花言葉は「寛大」、懐の深い花姿を象徴する</li>
-      <li>豊かなボリュームと花持ちの良さが魅力</li>
-      <li>日当たりと水はけの良い場所で、こまめな花がら摘みで育てたい</li>
+      <li>スプレーギクはキク科の多年草で、一本の茎に複数の小花を咲かせる</li>
+      <li>個々の花が互いを引き立て合いながら、まとまりを持って咲く</li>
+      <li>花言葉は「寛大」。広い心で受け止める姿勢を象徴するとされる</li>
+      <li>花束やアレンジメントなど、幅広い場面で親しまれている</li>
     </ul>
   </section>
 

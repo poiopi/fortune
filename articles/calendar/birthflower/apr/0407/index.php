@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0407/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月7日の誕生花サクラの花言葉・特徴・魅力をわかりやすく解説。「高潔」を象徴する日本を代表する花の意味を紹介します。">
+  <meta name="description" content="4月7日の誕生花サクラの花言葉・特徴・魅力をわかりやすく解説。「高潔」を象徴する一斉に咲き誇る淡紅色の花の意味を紹介します。">
   <title>4月7日の誕生花はサクラ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"サクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に淡紅色の花を一斉に咲かせます。バラ科の落葉高木で、日本を象徴する花として親しまれています。"}},
-      {"@type":"Question","name":"サクラの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「高潔」という花言葉は、散り際まで美しさを保ち、潔く花を散らせていく姿に由来すると言われています。"}},
-      {"@type":"Question","name":"サクラにはどんな品種がありますか？","acceptedAnswer":{"@type":"Answer","text":"ソメイヨシノをはじめ、ヤマザクラやシダレザクラなど日本には数多くの品種があり、それぞれ花色や咲き方が異なります。"}}
+      {"@type":"Question","name":"サクラはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に、淡紅色の花を一斉に咲かせます。バラ科の落葉高木で、日本を象徴する花として親しまれています。"}},
+      {"@type":"Question","name":"サクラの花言葉「高潔」の由来は？","acceptedAnswer":{"@type":"Answer","text":"満開の時も散り際も乱れることなく美しさを保ち、潔く花を散らせていく姿に由来するといわれています。"}},
+      {"@type":"Question","name":"サクラはなぜ日本を象徴する花とされているのですか？","acceptedAnswer":{"@type":"Answer","text":"春の訪れとともに一斉に咲き誇り、華やかでありながらはかなく散っていく美しさが、古くから日本人の心情と重ねられて親しまれてきたためといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 7 · 誕生花</span>
     <h1>4月7日の誕生花はサクラ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">サクラは、バラ科の落葉高木で、春に淡紅色の花を一斉に咲かせる4月7日の誕生花です。花言葉は「高潔」。日本を象徴する華やかではかない美しさで親しまれています。</p>
+    <p class="art-lead">4月7日、入学式や新生活の始まりを彩る頃。一斉に咲き誇る淡紅色のサクラは、揺るがない気高さを胸に抱くことの美しさを教えてくれます。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">サクラとは</a></li>
-      <li><a href="#meaning">サクラが象徴する意味</a></li>
-      <li><a href="#charm">サクラの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月7日の誕生花として親しまれるサクラ</a></li>
+      <li><a href="#story">淡紅色が語る、サクラの高潔</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、サクラから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>サクラとは</h2>
-    <p>サクラは、バラ科の落葉高木で、4月7日の誕生花として知られています。日本各地で春の訪れを告げる花として古くから愛され、花見の文化とともに人々の暮らしに深く根付いてきました。淡い紅色の花が一斉に咲き誇り、短い期間で散っていく姿が印象的です。</p>
-  </section>
+    <h2>4月7日の誕生花として親しまれるサクラ</h2>
+    <p>サクラは、バラ科の落葉高木です。春になると、淡紅色の花を一斉に咲かせます。日本を象徴する花として、華やかでありながらどこかはかない美しさで古くから親しまれてきました。4月7日の誕生花として、その一斉に咲き誇る姿が重ねられています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>サクラが象徴する意味</h2>
-    <p>サクラの花言葉は「高潔」です。散り際までその美しさを保ち、潔く花を散らせていく姿が、私利私欲にとらわれない気高い精神性を思わせることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>サクラの魅力</h2>
-    <p>サクラの魅力は、満開の華やかさと、花吹雪となって散っていくはかなさを併せ持つところにあります。品種によって花色や咲き方も異なり、開花から散り際まで移り変わる表情を楽しめるのも魅力のひとつです。4月7日生まれの方はもちろん、日本らしい美しさを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>サクラは日当たりの良い広い場所を好み、庭木として植える場合は生育後の樹形を考えて場所を選ぶことが大切です。剪定は枝の切り口から傷みやすいため、必要最小限にとどめるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月7日生まれの方はもちろん、日本らしい美しさを届けたい贈り物としてもサクラは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">サクラはいつ頃咲きますか？</div>
-        <div class="faq-a">春に淡紅色の花を一斉に咲かせます。バラ科の落葉高木で、日本を象徴する花として親しまれています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サクラの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「高潔」という花言葉は、散り際まで美しさを保ち、潔く花を散らせていく姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">サクラにはどんな品種がありますか？</div>
-        <div class="faq-a">ソメイヨシノをはじめ、ヤマザクラやシダレザクラなど日本には数多くの品種があり、それぞれ花色や咲き方が異なります。</div>
+        <div class="faq-a">春に、淡紅色の花を一斉に咲かせます。バラ科の落葉高木で、日本を象徴する花として親しまれています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>淡紅色が語る、サクラの高潔</h2>
+    <p>つぼみのうちはひっそりと枝先に控えていたサクラが、ある日を境に一斉に花開き、あたり一面を淡紅色に染め上げます。まだ肌寒さの残る季節から、春が本格的に動き出す瞬間へと季節が切り替わる、その節目を告げるかのような咲き方です。満開の期間は決して長くはなく、やがて花びらは風に舞いながら静かに散っていきます。バラ科の落葉高木として、一斉に咲いて一斉に散っていくその潔さが、この花の印象を決定づけています。そんな、咲く時も散る時も乱れることなく美しさを保つ姿から、サクラには「高潔」という花言葉が贈られているといわれています。この言葉は、厳しさや近寄りがたさではなく、最後まで自分らしさを崩さない静かな強さを表しているのでしょう。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サクラの花言葉「高潔」の由来は？</div>
+        <div class="faq-a">満開の時も散り際も乱れることなく美しさを保ち、潔く花を散らせていく姿に由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>周りに流されて自分を曲げてしまいそうになったときこそ、最後まで自分らしさを保つ強さが試されます。今日は、自分の中にある譲れない気持ちを、静かに大切にしてみましょう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、サクラから始める小さな体験</h2>
+    <p>一斉に咲き誇るサクラにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>一斉に咲く淡紅色の花を見に出かけてみる</li>
+      <li>自分の中で譲れない信念を一つ思い浮かべてみる</li>
+      <li>淡いピンク色のものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">サクラはなぜ日本を象徴する花とされているのですか？</div>
+        <div class="faq-a">春の訪れとともに一斉に咲き誇り、華やかでありながらはかなく散っていく美しさが、古くから日本人の心情と重ねられて親しまれてきたためといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">揺るがない気持ちで過ごしたい今日は、星座や月齢・月相も参考にしてみませんか。開運カレンダーでは、その日の星座と月齢・月相をまとめて確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月7日、一斉に咲き誇り潔く散るサクラは、最後まで自分らしさを保つ気高さを教えてくれる花です。</p>
     <ul>
-      <li>サクラは春に淡紅色の花を一斉に咲かせる、4月7日の誕生花</li>
-      <li>花言葉は「高潔」、潔く咲いて散る姿に由来する</li>
-      <li>満開の華やかさとはかない散り際の美しさが魅力</li>
-      <li>日当たりの良い広い場所で、剪定は最小限に育てたい</li>
+      <li>サクラはバラ科の落葉高木で、春に淡紅色の花を一斉に咲かせる</li>
+      <li>日本を象徴する花として、華やかではかない美しさで親しまれている</li>
+      <li>花言葉は「高潔」。咲く時も散る時も乱れない美しさに由来するといわれる</li>
+      <li>高潔は、最後まで自分らしさを崩さない静かな強さを表す言葉ともいえる</li>
     </ul>
   </section>
 

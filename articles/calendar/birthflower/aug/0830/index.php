@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,8 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"オジギソウはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"夏にピンク色の丸い花を咲かせます。マメ科の多年草です。"}},
-      {"@type":"Question","name":"オジギソウの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"触れられた記憶を覚えているかのように葉をそっと閉じる不思議な性質が、心に刻まれた愛の記憶を象徴することに由来すると言われています。"}},
-      {"@type":"Question","name":"オジギソウはなぜ葉を閉じるのですか？","acceptedAnswer":{"@type":"Answer","text":"刺激を受けると葉の付け根にある細胞から水分が移動し、葉が閉じる仕組みになっています。外敵から身を守るためとも言われています。"}}
+      {"@type":"Question","name":"オジギソウはどんな花を咲かせますか？","acceptedAnswer":{"@type":"Answer","text":"夏にピンク色の丸い花を咲かせる、マメ科の多年草です。触れると葉をそっと閉じるユニークな性質でも知られています。"}},
+      {"@type":"Question","name":"オジギソウの花言葉『愛の記憶』にはどんな由来がありますか？","acceptedAnswer":{"@type":"Answer","text":"触れるとそっと葉を閉じるという、この花ならではの繊細な仕草に由来すると言われています。"}}
     ]
   }
   </script>
@@ -129,7 +138,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">AUGUST 30 · 誕生花</span>
     <h1>8月30日の誕生花はオジギソウ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">オジギソウは、マメ科の多年草で、夏になるとピンク色の丸い花を咲かせる、触れると葉が閉じるユニークな植物です。花言葉は「愛の記憶」。愛らしくユニークな花です。</p>
+    <p class="art-lead">触れた指先に、思いがけない返事が返ってくる植物がある。まるで、こちらの気配に気づいているかのようだ。8月30日は、そんな繊細な反応を見せるオジギソウを誕生花に持つ一日だ。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +159,66 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">オジギソウとは</a></li>
-      <li><a href="#meaning">オジギソウが象徴する意味</a></li>
-      <li><a href="#charm">オジギソウの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">8月30日の誕生花として親しまれるオジギソウ</a></li>
+      <li><a href="#story">そっと触れて確かめる、葉が覚えている記憶</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、オジギソウから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>オジギソウとは</h2>
-    <p>オジギソウは、マメ科の多年草で、8月30日の誕生花として知られています。夏になるとピンク色の丸い花を咲かせる、触れると葉が閉じるユニークな植物です。</p>
-  </section>
+    <h2>8月30日の誕生花として親しまれるオジギソウ</h2>
+    <p>オジギソウは、マメ科の多年草です。夏になると、ピンク色の丸い花を咲かせます。触れるとそっと葉を閉じるという、他の植物にはない性質を持つことでも知られ、8月30日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>オジギソウが象徴する意味</h2>
-    <p>オジギソウの花言葉は「愛の記憶」です。触れられた記憶を覚えているかのように葉をそっと閉じる不思議な性質が、心に刻まれた愛の記憶を象徴することに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>オジギソウの魅力</h2>
-    <p>オジギソウの魅力は、丸くふわふわとしたピンク色の花の愛らしさと、触れるとお辞儀をするように葉を閉じるユニークな動きにあります。子どもから大人まで楽しめる植物として親しまれています。8月30日生まれの方はもちろん、愛の記憶を伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>オジギソウは日当たりを好み、寒さに弱いため冬は室内で管理するとよく育ちます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>8月30日生まれの方はもちろん、愛の記憶を伝えたい贈り物としてもオジギソウは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オジギソウはいつ頃咲きますか？</div>
-        <div class="faq-a">夏にピンク色の丸い花を咲かせます。マメ科の多年草です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オジギソウの花言葉の由来は何ですか？</div>
-        <div class="faq-a">触れられた記憶を覚えているかのように葉をそっと閉じる不思議な性質が、心に刻まれた愛の記憶を象徴することに由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">オジギソウはなぜ葉を閉じるのですか？</div>
-        <div class="faq-a">刺激を受けると葉の付け根にある細胞から水分が移動し、葉が閉じる仕組みになっています。外敵から身を守るためとも言われています。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">オジギソウはどんな花を咲かせますか？</div>
+        <div class="faq-a">夏にピンク色の丸い花を咲かせる、マメ科の多年草です。触れると葉をそっと閉じるユニークな性質でも知られています。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>そっと触れて確かめる、葉が覚えている記憶</h2>
+    <p>オジギソウの一番の面白さは、その花よりもむしろ葉にある。指先でそっと触れると、葉は音もなく静かに畳まれていく。まるで触れられたことを覚えていて、それに応えているかのような動きだ。花そのものは、丸くふんわりとしたピンク色で、夏の光の中に愛らしく浮かび上がる。花言葉「愛の記憶」は、この葉が触れられた感触を留めているかのようなふるまいから生まれたと言われている。一度触れた記憶は、案外長く心に残るものだ。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">オジギソウの花言葉『愛の記憶』にはどんな由来がありますか？</div>
+        <div class="faq-a">触れるとそっと葉を閉じるという、この花ならではの繊細な仕草に由来すると言われています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>指先の記憶というのは不思議なもので、ふとした瞬間に、思いがけずよみがえることがある。誰かに優しくされた温もりも、そんなふうに体のどこかに刻まれ続けているのかもしれない。小さな触れ合いを、今日は少しだけ大切に思ってみよう。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、オジギソウから始める小さな体験</h2>
+    <p>触れると葉をそっと閉じて応えるオジギソウにならって、今日はこんな時間を過ごしてみませんか。</p>
+    <ul class="exp-list">
+      <li>触れると葉が閉じる様子を想像してみる（実際に触れる場合は、植物を傷めないよう優しく）</li>
+      <li>ピンク色の丸い花をじっくり観察してみる</li>
+      <li>大切な人との思い出を一つ、そっと思い出してみる</li>
+    </ul>
+
+    <p class="cta-lead">優しい記憶にそっと触れたい一日は、今日の六曜も見てみませんか。開運カレンダーでは、六曜とラッキープレイスを毎日紹介しています。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>そっと触れて確かめる仕草の中に、この花いちばんの魅力が宿っている。</p>
     <ul>
-      <li>オジギソウは夏にピンク色の丸い花を咲かせる、8月30日の誕生花</li>
-      <li>花言葉は「愛の記憶」、葉を閉じる性質に由来する</li>
-      <li>丸く愛らしい花と葉の動きが魅力</li>
-      <li>日当たりを好み、寒さに弱い</li>
+      <li>オジギソウは夏にピンク色の丸い花を咲かせる、マメ科の多年草で、8月30日の誕生花</li>
+      <li>花言葉は「愛の記憶」。触れると葉を閉じるふるまいに由来すると言われる</li>
+      <li>触れると葉がそっと閉じる、他にはないユニークな性質を持つ</li>
+      <li>丸く愛らしい花の姿も、この花の魅力の一つ</li>
     </ul>
   </section>
 

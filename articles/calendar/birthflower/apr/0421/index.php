@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0421/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="4月21日の誕生花ムルチコーレの花言葉・特徴・魅力をわかりやすく解説。「高潔」を象徴する鮮やかな黄色の花の意味を紹介します。">
+  <meta name="description" content="4月21日の誕生花ムルチコーレの花言葉・特徴・魅力をわかりやすく解説。鮮やかな黄色をたくさん咲かせる姿が象徴する「高潔」の意味を紹介します。">
   <title>4月21日の誕生花はムルチコーレ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"ムルチコーレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鮮やかな黄色の花をたくさん咲かせます。キク科の一年草で、株全体が黄色く染まるほどよく咲きます。"}},
-      {"@type":"Question","name":"ムルチコーレの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「高潔」という花言葉は、たくさんの花を咲かせながらも澄んだ黄色を保ち続ける姿に由来すると言われています。"}},
-      {"@type":"Question","name":"ムルチコーレはどんな場所で育てやすいですか？","acceptedAnswer":{"@type":"Answer","text":"日当たりの良い場所を好み、丈夫でよく分枝します。花がら摘みで長く花を楽しめます。"}}
+      {"@type":"Question","name":"ムルチコーレはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"春に鮮やかな黄色の花をたくさん咲かせます。キク科の一年草で、次々に花をつける旺盛さが特徴です。"}},
+      {"@type":"Question","name":"ムルチコーレの花言葉「高潔」の由来は？","acceptedAnswer":{"@type":"Answer","text":"色を混ぜず一途に黄色一色を咲かせ続ける姿が、周囲に流されない自分の芯の強さを思わせることに由来するといわれています。"}},
+      {"@type":"Question","name":"ムルチコーレはどんな咲き方をしますか？","acceptedAnswer":{"@type":"Answer","text":"一株から次々と黄色い花を途切れず咲かせるのが特徴です。名前は「多くの花冠」を意味するラテン語に由来するといわれています。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">APRIL 21 · 誕生花</span>
     <h1>4月21日の誕生花はムルチコーレ<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">ムルチコーレは、キク科の一年草で、春に鮮やかな黄色の花をたくさん咲かせる4月21日の誕生花です。花言葉は「高潔」。明るく元気な印象の花です。</p>
+    <p class="art-lead">4月21日、鮮やかな黄色が途切れることなく咲き続ける頃。ムルチコーレは、一色を貫き通す潔さで、自分らしくあることの誇らしさを教えてくれる花です。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,73 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">ムルチコーレとは</a></li>
-      <li><a href="#meaning">ムルチコーレが象徴する意味</a></li>
-      <li><a href="#charm">ムルチコーレの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">4月21日の誕生花として親しまれるムルチコーレ</a></li>
+      <li><a href="#story">黄色一色が示す、ムルチコーレの高潔さ</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、ムルチコーレから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>ムルチコーレとは</h2>
-    <p>ムルチコーレは、キク科の一年草で、4月21日の誕生花として知られています。細かく分かれた葉の間から次々と鮮やかな黄色い花を咲かせ、こんもりと茂った株全体が黄色く染まるほどよく咲くことで知られる花です。</p>
-  </section>
+    <h2>4月21日の誕生花として親しまれるムルチコーレ</h2>
+    <p>ムルチコーレは、キク科の一年草です。春になると、鮮やかな黄色の花を一株からいくつもいくつも咲かせます。名前は「多くの花冠」を意味するラテン語に由来するといわれ、その名の通り旺盛に花をつけ続ける姿が魅力です。この途切れない黄色から、4月21日の誕生花として親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>ムルチコーレが象徴する意味</h2>
-    <p>ムルチコーレの花言葉は「高潔」です。数え切れないほどたくさんの花を惜しみなく咲かせながらも、一つ一つの花が澄んだ黄色を保ち続ける姿が、清らかで気高い印象を与えることに由来すると言われています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>ムルチコーレの魅力</h2>
-    <p>ムルチコーレの魅力は、株いっぱいに咲き誇る鮮やかな黄色の花が生み出す、明るく元気な景観にあります。花壇や寄せ植えに用いると、周囲をぱっと明るく彩ってくれる存在です。4月21日生まれの方はもちろん、清らかな気持ちを伝えたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>ムルチコーレは日当たりの良い場所を好み、丈夫でよく分枝して育ちます。花がら摘みをこまめに行うことで、長く花を楽しめます。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>4月21日生まれの方はもちろん、清らかな気持ちを届けたい贈り物としてもムルチコーレは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">ムルチコーレはいつ頃咲きますか？</div>
-        <div class="faq-a">春に鮮やかな黄色の花をたくさん咲かせます。キク科の一年草で、株全体が黄色く染まるほどよく咲きます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムルチコーレの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「高潔」という花言葉は、たくさんの花を咲かせながらも澄んだ黄色を保ち続ける姿に由来すると言われています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">ムルチコーレはどんな場所で育てやすいですか？</div>
-        <div class="faq-a">日当たりの良い場所を好み、丈夫でよく分枝します。花がら摘みで長く花を楽しめます。</div>
+        <div class="faq-a">春に鮮やかな黄色の花をたくさん咲かせます。キク科の一年草で、次々に花をつける旺盛さが特徴です。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>黄色一色が示す、ムルチコーレの高潔さ</h2>
+    <p>ムルチコーレの花壇には、他の色が混じり込む隙間がありません。一株からいくつもの花が生まれ続け、視界を鮮やかな黄色で埋め尽くしていきます。淡い色合いに逃げることも、周囲に合わせて色を変えることもなく、ただひたすらに黄色を咲かせ続ける。その一途な姿には、どこか凛とした潔さが漂います。派手に見えて実は迷いがなく、周囲の評価や流行に左右されず自分の色を貫き通す。そんなまっすぐな在り方から、ムルチコーレには「高潔」という花言葉が贈られているといわれています。近寄りがたい厳しさではなく、自分の芯を静かに保ち続ける強さを表す言葉として受け止めたいところです。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ムルチコーレの花言葉「高潔」の由来は？</div>
+        <div class="faq-a">色を混ぜず一途に黄色一色を咲かせ続ける姿が、周囲に流されない自分の芯の強さを思わせることに由来するといわれています。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>周囲に色を合わせるのではなく、自分の色を静かに保ち続けることにも意味があります。今日は自分が大切にしている考え方を、あらためて胸の中で確かめてみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、ムルチコーレから始める小さな体験</h2>
+    <p>鮮やかな黄色をたくさん咲かせ続けるムルチコーレにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>鮮やかな黄色の花をたくさん探して観察してみる</li>
+      <li>自分の中で大切にしている信念を一つ思い浮かべてみる</li>
+      <li>黄色いものを身の回りに取り入れてみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">ムルチコーレはどんな咲き方をしますか？</div>
+        <div class="faq-a">一株から次々と黄色い花を途切れず咲かせるのが特徴です。名前は「多くの花冠」を意味するラテン語に由来するといわれています。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">自分の芯をまっすぐ保ちたい今日は、年九星やおすすめアイテムも確認してみませんか。開運カレンダーでは、その日の年九星とおすすめアイテムをまとめて調べられます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>4月21日、黄色一色を咲かせ続けるムルチコーレは、周囲に流されず自分の芯を保つ潔さを教えてくれる花です。</p>
     <ul>
-      <li>ムルチコーレは春に鮮やかな黄色の花を咲かせる、4月21日の誕生花</li>
-      <li>花言葉は「高潔」、澄んだ黄色を保ち続ける花姿に由来する</li>
-      <li>株いっぱいに咲き誇る明るく元気な景観が魅力</li>
-      <li>日当たりの良い場所で、花がら摘みをしながら育てたい</li>
+      <li>ムルチコーレはキク科の一年草で、春に鮮やかな黄色の花をたくさん咲かせる</li>
+      <li>一株から途切れず花をつけ続ける、旺盛な生命力を持つ花である</li>
+      <li>花言葉は「高潔」。一途に黄色を貫き通す咲き方に由来するといわれる</li>
+      <li>高潔は、周囲に流されず自分の芯を静かに保つ強さを表す言葉ともいえる</li>
     </ul>
   </section>
 

@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0219/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="2月19日の誕生花プリムラ・ジュリアンの花言葉・特徴・魅力をわかりやすく解説。「永続する愛」を象徴する冬から春に咲く花の意味を紹介します。">
+  <meta name="description" content="2月19日の誕生花プリムラ・ジュリアンの花言葉・特徴・魅力をわかりやすく解説。「永続する愛」を象徴する、咲き続ける小さな花の意味を紹介します。">
   <title>2月19日の誕生花はプリムラ・ジュリアン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
@@ -83,6 +83,16 @@ ob_start();
   .faq-item.open .faq-a{max-height:300px;padding:.9rem 1.1rem}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}
   .al-link:hover{color:var(--accent-lt)}
+  .hana-message{background:var(--bg2);border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0}
+  .hana-message-label{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;color:var(--gold);margin-bottom:.6rem;display:block}
+  .hana-message p{font-size:.95rem;line-height:1.9;color:var(--text)}
+  .exp-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;margin-top:.75rem}
+  .exp-list li{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem .75rem 2.3rem;font-size:.9rem;line-height:1.7;position:relative}
+  .exp-list li::before{content:'🌱';position:absolute;left:.85rem;top:.72rem}
+  .cta-lead{font-size:.9rem;color:var(--muted);line-height:1.8;margin:0 0 1rem}
+  .article-nav-comingsoon{opacity:.55;cursor:default}
+  .article-nav-comingsoon:hover{border-color:var(--border)}
+  .article-nav-comingsoon .article-nav-name{color:var(--muted)}
   </style>
 
   <script type="application/ld+json">
@@ -90,9 +100,9 @@ ob_start();
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"プリムラ・ジュリアンはいつ頃咲きますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、小輪の花をたくさん咲かせます。花壇や鉢植えを長い期間彩ってくれる花です。"}},
-      {"@type":"Question","name":"プリムラ・ジュリアンの花言葉の由来は何ですか？","acceptedAnswer":{"@type":"Answer","text":"「永続する愛」という花言葉は、寒い時期から長期間にわたり途切れず花を咲かせ続ける様子に由来するとされています。"}},
-      {"@type":"Question","name":"プリムラ・ジュリアンとプリムラ・ポリアンサはどう違いますか？","acceptedAnswer":{"@type":"Answer","text":"どちらもサクラソウ科の仲間ですが、プリムラ・ジュリアンは小輪でコンパクトな草姿が特徴です。"}}
+      {"@type":"Question","name":"プリムラ・ジュリアンはいつ頃まで楽しめますか？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけてが見頃です。小輪の花を長い期間、途切れることなく咲かせ続けます。"}},
+      {"@type":"Question","name":"プリムラ・ジュリアンの花言葉「永続する愛」の由来は？","acceptedAnswer":{"@type":"Answer","text":"冬から春にかけて、途切れることなく咲き続ける粘り強さに由来するといわれています。一時的ではなく、長く続く愛情を象徴する言葉です。"}},
+      {"@type":"Question","name":"プリムラ・ジュリアンは他のプリムラと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"プリムラには複数の品種があり、それぞれ花の大きさや咲き方に違いがあります。プリムラ・ジュリアンは特に小輪で、コンパクトに育てやすいのが特徴です。"}}
     ]
   }
   </script>
@@ -129,7 +139,7 @@ ob_start();
   <div class="art-hero">
     <span class="art-label">FEBRUARY 19 · 誕生花</span>
     <h1>2月19日の誕生花はプリムラ・ジュリアン<br>花言葉と魅力をわかりやすく解説</h1>
-    <p class="art-lead">プリムラ・ジュリアンは、サクラソウ科の多年草で、冬から春に小輪の花をたくさん咲かせる2月19日の誕生花です。花言葉は「永続する愛」。コンパクトで愛らしい花です。</p>
+    <p class="art-lead">小さな花を、途切れることなく咲かせ続けるプリムラ・ジュリアン。2月19日の誕生花に選ばれたこの花は、一瞬の華やかさより、続けることの尊さを教えてくれます。今日はその粘り強さに目を向けてみましょう。</p>
   </div>
 
   <dl class="basic-info">
@@ -150,66 +160,74 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#about">プリムラ・ジュリアンとは</a></li>
-      <li><a href="#meaning">プリムラ・ジュリアンが象徴する意味</a></li>
-      <li><a href="#charm">プリムラ・ジュリアンの魅力</a></li>
-      <li><a href="#care">育て方</a></li>
-      <li><a href="#today">今日が誕生花なら</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#about">咲き続ける小輪の花、プリムラ・ジュリアン</a></li>
+      <li><a href="#story">2月19日、プリムラ・ジュリアンが伝える続けることの意味</a></li>
+      <li><a href="#message">🌼今日の誕生花からのメッセージ</a></li>
+      <li><a href="#experience">今日、プリムラ・ジュリアンから始める小さな体験</a></li>
       <li><a href="#matome">まとめ</a></li>
     </ol>
   </nav>
 
   <section class="art-section" id="about">
-    <h2>プリムラ・ジュリアンとは</h2>
-    <p>プリムラ・ジュリアンは、サクラソウ科の多年草で、2月19日の誕生花として知られています。プリムラの仲間の中でも小輪でコンパクトな草姿が特徴で、冬から春にかけて小さな花をたくさん咲かせます。</p>
-  </section>
+    <h2>咲き続ける小輪の花、プリムラ・ジュリアン</h2>
+    <p>プリムラ・ジュリアンは、サクラソウ科の多年草です。冬から春にかけて、小輪の花をたくさん咲かせ続けます。コンパクトな鉢植えでも育てやすく、愛らしい姿から冬から春にかけての彩りとして親しまれています。</p>
 
-  <section class="art-section" id="meaning">
-    <h2>プリムラ・ジュリアンが象徴する意味</h2>
-    <p>プリムラ・ジュリアンの花言葉は「永続する愛」です。寒い時期から長期間にわたり、絶えることなく花を咲かせ続ける姿が、変わらず続く愛情を思わせることに由来するとされています。</p>
-  </section>
-
-  <section class="art-section" id="charm">
-    <h2>プリムラ・ジュリアンの魅力</h2>
-    <p>プリムラ・ジュリアンの魅力は、コンパクトな草姿にたくさんの花を咲かせる愛らしさと、長い開花期間にあります。鉢植えでも扱いやすく、冬から春の花壇や玄関先を彩ってくれます。2月19日生まれの方はもちろん、変わらない愛情を届けたい贈り物にもふさわしい花です。</p>
-  </section>
-
-  <section class="art-section" id="care">
-    <h2>育て方</h2>
-    <p>プリムラ・ジュリアンは日当たりの良い場所を好みますが、寒さや乾燥に弱いため、霜の当たらない場所で土の表面が乾いたらしっかり水を与えて育てるのがおすすめです。</p>
-  </section>
-
-  <section class="art-section" id="today">
-    <h2>今日が誕生花なら</h2>
-    <p>2月19日生まれの方はもちろん、変わらない愛情を伝えたい贈り物としてもプリムラ・ジュリアンは人気の花です。開運カレンダーでは、誕生花だけでなく六曜や月齢など、日々の運気もあわせて確認できます。</p>
-  </section>
-
-  <section class="art-section" id="faq">
-    <h2>よくある質問</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・ジュリアンはいつ頃咲きますか？</div>
-        <div class="faq-a">冬から春にかけて、小輪の花をたくさん咲かせます。花壇や鉢植えを長い期間彩ってくれる花です。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・ジュリアンの花言葉の由来は何ですか？</div>
-        <div class="faq-a">「永続する愛」という花言葉は、寒い時期から長期間にわたり途切れず花を咲かせ続ける様子に由来するとされています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・ジュリアンとプリムラ・ポリアンサはどう違いますか？</div>
-        <div class="faq-a">どちらもサクラソウ科の仲間ですが、プリムラ・ジュリアンは小輪でコンパクトな草姿が特徴です。</div>
+        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・ジュリアンはいつ頃まで楽しめますか？</div>
+        <div class="faq-a">冬から春にかけてが見頃です。小輪の花を長い期間、途切れることなく咲かせ続けます。</div>
       </div>
     </div>
   </section>
 
+  <section class="art-section" id="story">
+    <h2>2月19日、プリムラ・ジュリアンが伝える続けることの意味</h2>
+    <p>プリムラ・ジュリアンの魅力は、一輪一輪の大きさにあるのではありません。むしろ、一つ一つは小さいながらも、冬から春という長い期間、途切れることなく咲き続ける点にこそ、この花らしさがあります。派手に一度だけ咲いて散るのではなく、少しずつ入れ替わりながら、いつ見ても花のある状態を保ち続ける。その姿は、瞬間的な華やかさよりも、地道な継続を選んでいるようにも映ります。毎日少しずつ咲き続けることで、気づけば長い時間を彩っていた。そんな積み重ねの強さを感じさせる花です。この途切れず咲き続ける粘り強い姿から、プリムラ・ジュリアンには「永続する愛」という花言葉が贈られてきたといわれています。</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・ジュリアンの花言葉「永続する愛」の由来は？</div>
+        <div class="faq-a">冬から春にかけて、途切れることなく咲き続ける粘り強さに由来するといわれています。一時的ではなく、長く続く愛情を象徴する言葉です。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="art-section" id="message">
+    <h2>🌼今日の誕生花からのメッセージ</h2>
+    <div class="hana-message">
+      <span class="hana-message-label">MESSAGE</span>
+      <p>毎日少しずつ続けてきたことには、それだけで十分な意味があります。今日は、あなたが積み重ねてきたことを一つ、静かに振り返ってみてください。</p>
+    </div>
+  </section>
+
+  <section class="art-section" id="experience">
+    <h2>今日、プリムラ・ジュリアンから始める小さな体験</h2>
+    <p>小さな花を途切れず咲かせ続けるプリムラ・ジュリアンにあやかって、今日はこんな小さな体験はいかがでしょうか。</p>
+    <ul class="exp-list">
+      <li>長く咲き続ける鉢植えの花を育ててみる</li>
+      <li>ずっと大切にしている関係を一つ思い浮かべてみる</li>
+      <li>小さな花をたくさん飾ってみる</li>
+      <li>毎日続けていることを一つ振り返ってみる</li>
+    </ul>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">プリムラ・ジュリアンは他のプリムラと何が違いますか？</div>
+        <div class="faq-a">プリムラには複数の品種があり、それぞれ花の大きさや咲き方に違いがあります。プリムラ・ジュリアンは特に小輪で、コンパクトに育てやすいのが特徴です。</div>
+      </div>
+    </div>
+
+    <p class="cta-lead">積み重ねてきたことを振り返れた今日。せっかくなら、今日が吉日かどうかも調べてみませんか。開運カレンダーでは、その日の吉日や月齢も確認できます。</p>
+  </section>
+
   <section class="art-section" id="matome">
     <h2>まとめ</h2>
+    <p>2月19日、小さな花を途切れず咲かせ続けるプリムラ・ジュリアンは、続けることの尊さを教えてくれます。</p>
     <ul>
-      <li>プリムラ・ジュリアンは冬から春に小輪の花をたくさん咲かせる、2月19日の誕生花</li>
-      <li>花言葉は「永続する愛」、変わらず続く愛情を象徴する</li>
-      <li>コンパクトな草姿と長い開花期間が魅力</li>
-      <li>寒さと乾燥を避け、霜の当たらない場所で育てたい</li>
+      <li>プリムラ・ジュリアンはサクラソウ科の多年草で、冬から春に小輪の花を咲かせ続ける</li>
+      <li>一輪の大きさより、咲き続ける期間の長さに特徴がある</li>
+      <li>花言葉は「永続する愛」。長く続く愛情を象徴するとされる</li>
+      <li>他のプリムラ品種に比べ、小輪でコンパクトに育てやすい</li>
     </ul>
   </section>
 
