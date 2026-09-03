@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0408/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月8日の誕生花フジの花言葉・特徴・魅力をわかりやすく解説。「恋に酔う」を象徴する紫の花房が長く垂れる花の意味を紹介します。">
   <title>4月8日の誕生花はフジ｜花言葉と魅力をわかりやすく解説</title>

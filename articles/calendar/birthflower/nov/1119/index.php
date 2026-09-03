@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1119/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="11月19日の誕生花ペリストロフェの花言葉・特徴・魅力をわかりやすく解説。「不思議」を象徴する赤紫の小花をほぼ一年中咲かせる常緑多年草の意味を紹介します。">
   <title>11月19日の誕生花はペリストロフェ｜花言葉と魅力をわかりやすく解説</title>

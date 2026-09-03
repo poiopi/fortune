@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0315/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月15日の誕生花ヤグルマソウの花言葉・特徴・魅力をわかりやすく解説。「繊細」を象徴する、白く小さな花と矢車のような葉を持つ山野草の意味を紹介します。">
   <title>3月15日の誕生花はヤグルマソウ｜花言葉と魅力をわかりやすく解説</title>

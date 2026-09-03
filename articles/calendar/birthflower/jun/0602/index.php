@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0602/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月2日の誕生花シャクナゲの花言葉・特徴・魅力をわかりやすく解説。大きな花房を咲かせるツツジ科の花に込められた「警戒心」の意味を紹介します。">
   <title>6月2日の誕生花はシャクナゲ｜花言葉と魅力をわかりやすく解説</title>

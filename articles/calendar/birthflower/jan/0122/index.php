@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0122/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="1月22日の誕生花リカステの花言葉・特徴・魅力をわかりやすく解説。「快活」を象徴する花の意味を紹介します。">
   <title>1月22日の誕生花はリカステ｜花言葉と魅力をわかりやすく解説</title>

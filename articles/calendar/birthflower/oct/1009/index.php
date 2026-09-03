@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/oct/1009/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="10月9日の誕生花ユーチャリスの花言葉・特徴・魅力をわかりやすく解説。「清い心」を象徴する清楚な白い花の意味を紹介します。">
   <title>10月9日の誕生花はユーチャリス｜花言葉と魅力をわかりやすく解説</title>

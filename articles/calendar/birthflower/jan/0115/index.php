@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0115/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="1月15日の誕生花ポピーの花言葉・特徴・魅力をわかりやすく解説。「やすらぎ」を象徴する繊細な花の意味を紹介します。">
   <title>1月15日の誕生花はポピー｜花言葉と魅力をわかりやすく解説</title>

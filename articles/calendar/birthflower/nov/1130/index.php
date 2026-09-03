@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1130/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="11月30日の誕生花シネラリアの花言葉・特徴・魅力をわかりやすく解説。「いつも陽気」を象徴する色鮮やかな花の意味を紹介します。">
   <title>11月30日の誕生花はシネラリア｜花言葉と魅力をわかりやすく解説</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0423/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月23日の誕生花ボタンの花言葉・特徴・魅力をわかりやすく解説。百花の王とも称される大輪の花が象徴する「王者の風格」の意味を紹介します。">
   <title>4月23日の誕生花はボタン｜花言葉と魅力をわかりやすく解説</title>

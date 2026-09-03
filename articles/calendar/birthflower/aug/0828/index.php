@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0828/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月28日の誕生花オイランソウの花言葉・特徴・魅力をわかりやすく解説。房状に寄り添って咲く花が教える、同意の意味を紹介します。">
   <title>8月28日の誕生花はオイランソウ｜花言葉と魅力をわかりやすく解説</title>

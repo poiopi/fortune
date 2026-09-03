@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1221/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月21日の誕生花ニオイバンマツリの花言葉・特徴・魅力をわかりやすく解説。「青春の喜び」を象徴する、紫から白へ移ろう花色を紹介します。">
   <title>12月21日の誕生花はニオイバンマツリ｜花言葉と魅力をわかりやすく解説</title>

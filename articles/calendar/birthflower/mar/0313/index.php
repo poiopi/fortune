@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0313/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月13日の誕生花ノースポールの花言葉・特徴・魅力をわかりやすく解説。「誠実」を象徴する、冬から春に咲き続ける白い花の意味を紹介します。">
   <title>3月13日の誕生花はノースポール｜花言葉と魅力をわかりやすく解説</title>

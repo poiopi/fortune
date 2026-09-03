@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0905/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="9月5日の誕生花オミナエシの花言葉・特徴・魅力をわかりやすく解説。「美人」を象徴する秋の七草の意味を紹介します。">
   <title>9月5日の誕生花はオミナエシ｜花言葉と魅力をわかりやすく解説</title>

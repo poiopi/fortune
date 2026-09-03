@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0228/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="2月28日の誕生花ロウバイの花言葉・特徴・魅力をわかりやすく解説。「温かみ」を象徴する、寒さの中で甘く香る黄色い花の意味を紹介します。">
   <title>2月28日の誕生花はロウバイ｜花言葉と魅力をわかりやすく解説</title>

@@ -13,7 +13,7 @@ require_once __DIR__.'/inc/mbti-data.php';
   gtag('config', 'G-P1EKB3WWX8');
 </script>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://life-fun.net/mbti.php" />
+<link rel="canonical" href="https://life-fun.net/mbti" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MBTI×星座で導く性格診断。10の質問に答えてあなたの本質タイプと星座の組み合わせ運勢を診断します。">
 <title>MBTI×星座 性格診断｜三星統合鑑定</title>
@@ -426,7 +426,7 @@ body{top:0!important}
         <div class="love-cta-eyebrow">▼ もっと詳しく知りたい方へ</div>
         <div class="love-cta-title">💜 MBTI×血液型×星座で診断</div>
         <div class="love-cta-desc">恋愛傾向・相性・恋の進め方を<br>3つの性格要素から総合分析します。</div>
-        <a class="love-cta-btn" id="love-cta-link" href="/love.php">恋愛診断を始める →</a>
+        <a class="love-cta-btn" id="love-cta-link" href="/love">恋愛診断を始める →</a>
       </div>
 
       <?php require __DIR__.'/inc/share-btns.php'; ?>

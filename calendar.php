@@ -59,7 +59,7 @@ $todayKyusei = $todayInfo['sections']['kyusei'];
   </script>
 <meta charset="UTF-8">
 <!-- calendar.php -->
-<link rel="canonical" href="https://life-fun.net/calendar.php" />
+<link rel="canonical" href="https://life-fun.net/calendar" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="今日の六曜・大安カレンダーとラッキーアイテムを毎日更新。開運情報を一覧でチェック。">
 <title>開運カレンダー｜今日の六曜とラッキーアイテム</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/oct/1024/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="10月24日の誕生花パボニアの花言葉・特徴・魅力をわかりやすく解説。「安堵」を象徴する独特な形の赤い花の意味を紹介します。">
   <title>10月24日の誕生花はパボニア｜花言葉と魅力をわかりやすく解説</title>

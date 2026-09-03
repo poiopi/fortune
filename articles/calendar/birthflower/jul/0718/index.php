@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0718/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月18日の誕生花ゲッカビジンの花言葉・特徴・魅力をわかりやすく解説。夏の夜に大輪の白い花を一晩だけ咲かせる、サボテン科の花を紹介します。">
   <title>7月18日の誕生花はゲッカビジン｜花言葉と魅力をわかりやすく解説</title>

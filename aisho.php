@@ -353,7 +353,7 @@ if($ym>0&&$yd>0&&$pm>0&&$pd>0){
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P1EKB3WWX8');</script>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://life-fun.net/aisho.php" />
+<link rel="canonical" href="https://life-fun.net/aisho" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="二人の生年月日を入れるだけで相性を鑑定。結婚・恋愛の相性スコア、告白の言葉、おすすめデートスポット、プレゼントまで占います。">
 <title>相性診断｜二人の運命を星と数字で占う</title>

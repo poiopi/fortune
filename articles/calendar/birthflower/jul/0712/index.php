@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0712/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月12日の誕生花パッションフラワーの花言葉・特徴・魅力をわかりやすく解説。時計の文字盤のような珍しい形の花を咲かせる、トケイソウ科のつる性植物を紹介します。">
   <title>7月12日の誕生花はパッションフラワー｜花言葉と魅力をわかりやすく解説</title>

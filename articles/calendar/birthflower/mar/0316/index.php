@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0316/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月16日の誕生花ビジョナデシコの花言葉・特徴・魅力をわかりやすく解説。「清い愛」を象徴する、「美女撫子」とも呼ばれる華やかな花の意味を紹介します。">
   <title>3月16日の誕生花はビジョナデシコ｜花言葉と魅力をわかりやすく解説</title>

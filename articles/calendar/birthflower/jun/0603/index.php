@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0603/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月3日の誕生花クローバーの花言葉・特徴・魅力をわかりやすく解説。身近な野道に咲く白い花に込められた「約束」の意味を紹介します。">
   <title>6月3日の誕生花はクローバー｜花言葉と魅力をわかりやすく解説</title>

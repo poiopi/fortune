@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0323/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月23日の誕生花ヤマブキの花言葉・特徴・魅力をわかりやすく解説。「富裕」を象徴する、枝いっぱいに咲く黄色い花の意味を紹介します。">
   <title>3月23日の誕生花はヤマブキ｜花言葉と魅力をわかりやすく解説</title>

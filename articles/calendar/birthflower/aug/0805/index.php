@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0805/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月5日の誕生花ルリタマアザミの花言葉・特徴・魅力をわかりやすく解説。瑠璃色の球体が凛と立ち上がる花の意味を紹介します。">
   <title>8月5日の誕生花はルリタマアザミ｜花言葉と魅力をわかりやすく解説</title>

@@ -202,7 +202,7 @@ if (isset($_GET['birthdate']) && $_GET['birthdate'] !== '') {
   gtag('config', 'G-P1EKB3WWX8');
 </script>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://life-fun.net/kyusei.php" />
+<link rel="canonical" href="https://life-fun.net/kyusei" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生年月日から九星気学の本命星・月命星・命式を無料で算出。吉方位・2024年の運勢・性格・相性を詳しく診断します。">
 <title>九星気学｜本命星・月命星・命式を無料診断</title>

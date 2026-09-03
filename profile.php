@@ -10,7 +10,7 @@
     gtag('config', 'G-P1EKB3WWX8');
   </script>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://life-fun.net/profile.php" />
+<link rel="canonical" href="https://life-fun.net/profile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="占いPortalの運営者情報。西洋占星術・タロット・四柱推命などの占いコンテンツを提供するエンタメサイトです。">
 <title>運営者情報｜占いPortal</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0821/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月21日の誕生花ヒャクニチソウの花言葉・特徴・魅力をわかりやすく解説。夏から秋へ、変わらず咲き続ける花が結ぶ深い友情の意味を紹介します。">
   <title>8月21日の誕生花はヒャクニチソウ｜花言葉と魅力をわかりやすく解説</title>

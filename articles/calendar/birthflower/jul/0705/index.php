@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0705/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月5日の誕生花アンスリウムの花言葉・特徴・魅力をわかりやすく解説。ギリシャ語で「花」と「尾」を意味する名を持つ、つややかなハート形の苞のサトイモ科の花を紹介します。">
   <title>7月5日の誕生花はアンスリウム｜花言葉と魅力をわかりやすく解説</title>

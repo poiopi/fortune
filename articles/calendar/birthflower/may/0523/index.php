@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0523/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月23日の誕生花タイムの花言葉・特徴・魅力をわかりやすく解説。「活発」という花言葉に込められた意味と、暮らしの中で親しまれてきたハーブとしての魅力を紹介します。">
   <title>5月23日の誕生花はタイム｜花言葉と魅力をわかりやすく解説</title>

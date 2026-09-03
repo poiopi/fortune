@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0504/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月4日の誕生花シャクヤクの花言葉・特徴・魅力をわかりやすく解説。ふんわりと開く大輪の花が象徴する「恥じらい」というメッセージの意味を紹介します。">
   <title>5月4日の誕生花はシャクヤク｜花言葉と魅力をわかりやすく解説</title>

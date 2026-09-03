@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1213/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月13日の誕生花カトレアの花言葉・特徴・魅力をわかりやすく解説。「優雅な女性」を象徴する大輪で華やかな花の意味を紹介します。">
   <title>12月13日の誕生花はカトレア｜花言葉と魅力をわかりやすく解説</title>

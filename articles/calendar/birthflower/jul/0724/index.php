@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0724/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月24日の誕生花オシロイバナの花言葉・特徴・魅力をわかりやすく解説。夕方に開き翌朝しぼむラッパ状の花を咲かせる、オシロイバナ科の花を紹介します。">
   <title>7月24日の誕生花はオシロイバナ｜花言葉と魅力をわかりやすく解説</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0425/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月25日の誕生花モッコウバラの花言葉・特徴・魅力をわかりやすく解説。房状にたくさん咲きこぼれる小輪の花が象徴する「初恋」の意味を紹介します。">
   <title>4月25日の誕生花はモッコウバラ｜花言葉と魅力をわかりやすく解説</title>

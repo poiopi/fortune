@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0520/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月20日の誕生花セントポーリアの花言葉・特徴・魅力をわかりやすく解説。「はぐくむ愛」という花言葉に込められた意味と、一年を通して咲き続ける花の魅力を紹介します。">
   <title>5月20日の誕生花はセントポーリア｜花言葉と魅力をわかりやすく解説</title>

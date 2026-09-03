@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0723/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月23日の誕生花ツリガネソウの花言葉・特徴・魅力をわかりやすく解説。初夏に釣り鐘型の花を咲かせる、キキョウ科の花を紹介します。">
   <title>7月23日の誕生花はツリガネソウ｜花言葉と魅力をわかりやすく解説</title>

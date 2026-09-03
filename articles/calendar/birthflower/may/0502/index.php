@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0502/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月2日の誕生花シバザクラの花言葉・特徴・魅力をわかりやすく解説。地面を覆うように咲く姿が象徴する「合意」というメッセージの意味を紹介します。">
   <title>5月2日の誕生花はシバザクラ｜花言葉と魅力をわかりやすく解説</title>

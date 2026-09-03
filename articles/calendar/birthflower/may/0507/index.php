@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0507/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月7日の誕生花ナスタチウムの花言葉・特徴・魅力をわかりやすく解説。鮮やかな橙色の花が象徴する「勝利」というメッセージの意味を紹介します。">
   <title>5月7日の誕生花はナスタチウム｜花言葉と魅力をわかりやすく解説</title>

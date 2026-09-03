@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0321/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月21日の誕生花チューリップ（赤）の花言葉・特徴・魅力をわかりやすく解説。「恋の告白」を象徴する、まっすぐな赤色の花の意味を紹介します。">
   <title>3月21日の誕生花はチューリップ（赤）｜花言葉と魅力をわかりやすく解説</title>

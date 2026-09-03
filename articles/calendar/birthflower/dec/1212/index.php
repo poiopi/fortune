@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1212/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月12日の誕生花テッポウユリの花言葉・特徴・魅力をわかりやすく解説。「純潔」を象徴する白く清楚な花の意味を紹介します。">
   <title>12月12日の誕生花はテッポウユリ｜花言葉と魅力をわかりやすく解説</title>

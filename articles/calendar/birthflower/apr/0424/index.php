@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0424/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月24日の誕生花シャガの花言葉・特徴・魅力をわかりやすく解説。日陰に咲く淡い紫の模様が象徴する「自己主張」の意味を紹介します。">
   <title>4月24日の誕生花はシャガ｜花言葉と魅力をわかりやすく解説</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0605/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月5日の誕生花シランの花言葉・特徴・魅力をわかりやすく解説。丈夫に咲き続ける紫紅色の花に込められた「希望」の意味を紹介します。">
   <title>6月5日の誕生花はシラン｜花言葉と魅力をわかりやすく解説</title>

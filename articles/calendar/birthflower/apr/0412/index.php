@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0412/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月12日の誕生花カタクリの花言葉・特徴・魅力をわかりやすく解説。「初恋」を象徴するうつむき加減に咲く紫紅色の花の意味を紹介します。">
   <title>4月12日の誕生花はカタクリ｜花言葉と魅力をわかりやすく解説</title>

@@ -5,7 +5,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P1EKB3WWX8');</script>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://life-fun.net/rpg.php" />
+<link rel="canonical" href="https://life-fun.net/rpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="description" content="RPGゲーム風の無料占い。村を歩いてキャラクターに話しかけ、星座・数秘術・ジョブクラスで運命を占います。ユニークな体験型占いゲーム。">
 <title>RPG風占いゲーム｜村を歩いて星座・数秘術で運命診断</title>

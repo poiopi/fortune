@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0516/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月16日の誕生花ゼラニウムの花言葉・特徴・魅力をわかりやすく解説。長く咲き続ける花が象徴する「真の友情」というメッセージの意味を紹介します。">
   <title>5月16日の誕生花はゼラニウム｜花言葉と魅力をわかりやすく解説</title>
