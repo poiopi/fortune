@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0717/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月17日の誕生花アメリカデイコの花言葉・特徴・魅力をわかりやすく解説。夏に赤い花を咲かせる、南国的な雰囲気を持つマメ科の花木を紹介します。">
   <title>7月17日の誕生花はアメリカデイコ｜花言葉と魅力をわかりやすく解説</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1226/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月26日の誕生花リュウノヒゲの花言葉・特徴・魅力をわかりやすく解説。「天才的」を象徴する、見つけにくい瑠璃色の実を紹介します。">
   <title>12月26日の誕生花はリュウノヒゲ｜花言葉と魅力をわかりやすく解説</title>

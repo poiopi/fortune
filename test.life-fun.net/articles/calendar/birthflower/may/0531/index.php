@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0531/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月31日の誕生花キショウブの花言葉・特徴・魅力をわかりやすく解説。「消息」という花言葉に込められた意味と、水辺に鮮やかに咲く黄色い花姿を紹介します。">
   <title>5月31日の誕生花はキショウブ｜花言葉と魅力をわかりやすく解説</title>

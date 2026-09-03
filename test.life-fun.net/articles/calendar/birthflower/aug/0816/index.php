@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0816/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月16日の誕生花パキスタキス・ルテアの花言葉・特徴・魅力をわかりやすく解説。黄色い苞から白い花がのぞく、対話のような花姿の意味を紹介します。">
   <title>8月16日の誕生花はパキスタキス・ルテア｜花言葉と魅力をわかりやすく解説</title>

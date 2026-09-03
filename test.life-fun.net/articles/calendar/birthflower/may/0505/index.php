@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/may/0505/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="5月5日の誕生花ハナショウブの花言葉・特徴・魅力をわかりやすく解説。水辺に映える紫の花が象徴する「情熱」というメッセージの意味を紹介します。">
   <title>5月5日の誕生花はハナショウブ｜花言葉と魅力をわかりやすく解説</title>

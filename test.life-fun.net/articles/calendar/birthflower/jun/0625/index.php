@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0625/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月25日の誕生花アガパンサスの花言葉・特徴・魅力をわかりやすく解説。花茎の先に紫や白の小花が球状に集まって咲く、ヒガンバナ科「愛の始まり」の花を紹介します。">
   <title>6月25日の誕生花はアガパンサス｜花言葉と魅力をわかりやすく解説</title>

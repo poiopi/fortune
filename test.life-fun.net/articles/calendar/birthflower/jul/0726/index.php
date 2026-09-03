@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0726/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月26日の誕生花ヤマトナデシコの花言葉・特徴・魅力をわかりやすく解説。夏に繊細な花を咲かせる、ナデシコ科の花を紹介します。">
   <title>7月26日の誕生花はヤマトナデシコ｜花言葉と魅力をわかりやすく解説</title>

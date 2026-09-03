@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1231/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月31日の誕生花カンギクの花言葉・特徴・魅力をわかりやすく解説。「真の強さ」を象徴する、寒さの中で多彩な花を咲かせる姿を紹介します。">
   <title>12月31日の誕生花はカンギク｜花言葉と魅力をわかりやすく解説</title>

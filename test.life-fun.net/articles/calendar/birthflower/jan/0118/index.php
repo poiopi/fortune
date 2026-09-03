@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jan/0118/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="1月18日の誕生花グズマニアの花言葉・特徴・魅力をわかりやすく解説。「完璧」を象徴する花の意味を紹介します。">
   <title>1月18日の誕生花はグズマニア｜花言葉と魅力をわかりやすく解説</title>

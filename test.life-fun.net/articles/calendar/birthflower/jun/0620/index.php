@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0620/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月20日の誕生花オトメギキョウの花言葉・特徴・魅力をわかりやすく解説。釣り鐘型の小花を咲かせる、キキョウ科「大切な人」の花を紹介します。">
   <title>6月20日の誕生花はオトメギキョウ｜花言葉と魅力をわかりやすく解説</title>

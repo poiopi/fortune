@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0610/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月10日の誕生花ラベンダーの花言葉・特徴・魅力をわかりやすく解説。紫の花穂と爽やかな香りに込められた「疑問・鎮静」の意味を紹介します。">
   <title>6月10日の誕生花はラベンダー｜花言葉と魅力をわかりやすく解説</title>

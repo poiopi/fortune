@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0721/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月21日の誕生花アサガオの花言葉・特徴・魅力をわかりやすく解説。夏の朝に咲いて昼にはしぼむ、ヒルガオ科のつる性一年草を紹介します。">
   <title>7月21日の誕生花はアサガオ｜花言葉と魅力をわかりやすく解説</title>

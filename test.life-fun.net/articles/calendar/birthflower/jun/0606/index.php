@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0606/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月6日の誕生花スターチスの花言葉・特徴・魅力をわかりやすく解説。色褪せにくい紙質の小花に込められた「知識」の意味を紹介します。">
   <title>6月6日の誕生花はスターチス｜花言葉と魅力をわかりやすく解説</title>

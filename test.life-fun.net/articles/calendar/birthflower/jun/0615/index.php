@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0615/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月15日の誕生花アジサイの花言葉・特徴・魅力をわかりやすく解説。梅雨の時期に丸い花房を咲かせる、アジサイ科「はにかみ」の花を紹介します。">
   <title>6月15日の誕生花はアジサイ｜花言葉と魅力をわかりやすく解説</title>

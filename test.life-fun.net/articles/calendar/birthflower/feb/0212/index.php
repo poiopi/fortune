@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0212/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="2月12日の誕生花スプレーギクの花言葉・特徴・魅力をわかりやすく解説。「寛大」を象徴する、一本の茎に寄り添う小花の意味を紹介します。">
   <title>2月12日の誕生花はスプレーギク｜花言葉と魅力をわかりやすく解説</title>

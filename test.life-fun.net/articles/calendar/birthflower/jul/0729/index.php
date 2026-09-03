@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0729/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月29日の誕生花エキザカムの花言葉・特徴・魅力をわかりやすく解説。夏に紫色の小花をたくさん咲かせる、涼しげな印象のリンドウ科の一年草を紹介します。">
   <title>7月29日の誕生花はエキザカム｜花言葉と魅力をわかりやすく解説</title>

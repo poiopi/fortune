@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0330/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月30日の誕生花ゲッケイジュの花言葉・特徴・魅力をわかりやすく解説。「栄誉と勝利」を象徴する、常緑高木の意味を紹介します。">
   <title>3月30日の誕生花はゲッケイジュ｜花言葉と魅力をわかりやすく解説</title>

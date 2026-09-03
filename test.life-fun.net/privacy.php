@@ -10,7 +10,7 @@
     gtag('config', 'G-P1EKB3WWX8');
   </script>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://life-fun.net/privacy.php" />
+<link rel="canonical" href="https://life-fun.net/privacy" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="占いPortalのプライバシーポリシー。個人情報の取り扱い、Cookie、Google AdSense・Analyticsについて。">
 <title>プライバシーポリシー｜占いPortal</title>

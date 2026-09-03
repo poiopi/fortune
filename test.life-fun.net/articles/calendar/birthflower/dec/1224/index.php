@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1224/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月24日の誕生花シンビジュームの花言葉・特徴・魅力をわかりやすく解説。「飾らない心」を象徴する、房になって咲く素朴な佇まいを紹介します。">
   <title>12月24日の誕生花はシンビジューム｜花言葉と魅力をわかりやすく解説</title>

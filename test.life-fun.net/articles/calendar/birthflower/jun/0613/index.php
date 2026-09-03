@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0613/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月13日の誕生花クチナシの花言葉・特徴・魅力をわかりやすく解説。芳醇な香りを放つ白い花に込められた「洗練」の意味を紹介します。">
   <title>6月13日の誕生花はクチナシ｜花言葉と魅力をわかりやすく解説</title>

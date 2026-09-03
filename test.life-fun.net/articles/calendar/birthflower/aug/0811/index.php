@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0811/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月11日の誕生花グラジオラスの花言葉・特徴・魅力をわかりやすく解説。高く伸びた花茎に次々と花を咲かせる植物の意味を紹介します。">
   <title>8月11日の誕生花はグラジオラス｜花言葉と魅力をわかりやすく解説</title>

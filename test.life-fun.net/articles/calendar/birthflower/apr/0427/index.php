@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0427/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月27日の誕生花カルミヤの花言葉・特徴・魅力をわかりやすく解説。金平糖のようなつぼみが印象的な「賞賛」を象徴する花の意味を紹介します。">
   <title>4月27日の誕生花はカルミヤ｜花言葉と魅力をわかりやすく解説</title>

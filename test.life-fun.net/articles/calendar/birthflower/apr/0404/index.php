@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0404/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月4日の誕生花トリテリアの花言葉・特徴・魅力をわかりやすく解説。「耐える愛」を象徴する星形の花、ヒメアガパンサスの意味を紹介します。">
   <title>4月4日の誕生花はトリテリア｜花言葉と魅力をわかりやすく解説</title>

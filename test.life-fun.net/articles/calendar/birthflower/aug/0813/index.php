@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0813/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月13日の誕生花ルドベキアの花言葉・特徴・魅力をわかりやすく解説。黄色い花びらと黒っぽい中心がくっきりと対比する花の意味を紹介します。">
   <title>8月13日の誕生花はルドベキア｜花言葉と魅力をわかりやすく解説</title>

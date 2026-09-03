@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   gtag('config', 'G-P1EKB3WWX8');
 </script>
 <meta charset="UTF-8">
-<link rel="canonical" href="https://life-fun.net/love.php" />
+<link rel="canonical" href="https://life-fun.net/love" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MBTI×血液型×星座で導く恋愛傾向診断。3つの入力からあなたの恋愛スタイル・傾向をひも解きます。">
 <title>恋愛診断｜MBTI×血液型×星座</title>

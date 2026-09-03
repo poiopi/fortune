@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1118/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="11月18日の誕生花カラー（黄）の花言葉・特徴・魅力をわかりやすく解説。「熱意」を象徴する黄色い苞に包まれた花を咲かせる多年草の意味を紹介します。">
   <title>11月18日の誕生花はカラー（黄）｜花言葉と魅力をわかりやすく解説</title>

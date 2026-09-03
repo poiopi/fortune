@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0711/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月11日の誕生花インパチェンスの花言葉・特徴・魅力をわかりやすく解説。株一面に鮮やかな彩りを咲かせる、夏のツリフネソウ科の花を紹介します。">
   <title>7月11日の誕生花はインパチェンス｜花言葉と魅力をわかりやすく解説</title>

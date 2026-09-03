@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0312/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月12日の誕生花キャンディタフトの花言葉・特徴・魅力をわかりやすく解説。「復活」を象徴する、白やピンクの小花が咲きそろう花の意味を紹介します。">
   <title>3月12日の誕生花はキャンディタフト｜花言葉と魅力をわかりやすく解説</title>

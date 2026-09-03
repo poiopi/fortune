@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0304/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月4日の誕生花ヒヤシンス（ピンク）の花言葉・特徴・魅力をわかりやすく解説。「勝負」を象徴する、香り高いピンクの花が穂状に咲く花の意味を紹介します。">
   <title>3月4日の誕生花はヒヤシンス（ピンク）｜花言葉と魅力をわかりやすく解説</title>

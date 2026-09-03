@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0706/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月6日の誕生花トキソウの花言葉・特徴・魅力をわかりやすく解説。朱鷺の羽の色に見立てられた、初夏に咲く淡紅色のラン科の花を紹介します。">
   <title>7月6日の誕生花はトキソウ｜花言葉と魅力をわかりやすく解説</title>

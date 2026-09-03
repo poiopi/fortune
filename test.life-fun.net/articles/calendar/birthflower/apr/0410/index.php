@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0410/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月10日の誕生花ベニバナアセビの花言葉・特徴・魅力をわかりやすく解説。「静かな主張」を象徴する紅色の壺型の花の意味を紹介します。">
   <title>4月10日の誕生花はベニバナアセビ｜花言葉と魅力をわかりやすく解説</title>

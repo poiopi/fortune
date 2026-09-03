@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0614/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月14日の誕生花ブーゲンビリアの花言葉・特徴・魅力をわかりやすく解説。南国的で鮮やかな苞に込められた「情熱」の意味を紹介します。">
   <title>6月14日の誕生花はブーゲンビリア｜花言葉と魅力をわかりやすく解説</title>

@@ -1271,7 +1271,7 @@ footer{
             <span class="lucky-chip-val"><?= $luckyToday['action'] ?></span>
           </div>
         </div>
-        <a href="/calendar.php" class="cal-more-link">詳しい開運カレンダーを見る &#8594;</a>
+        <a href="/calendar" class="cal-more-link">詳しい開運カレンダーを見る &#8594;</a>
       </div>
     </div><!-- /.sidebar-col -->
 

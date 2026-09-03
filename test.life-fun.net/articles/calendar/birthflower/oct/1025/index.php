@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/oct/1025/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="10月25日の誕生花ヘレニウムの花言葉・特徴・魅力をわかりやすく解説。「寛容」を象徴するオレンジ色の花の意味を紹介します。">
   <title>10月25日の誕生花はヘレニウム｜花言葉と魅力をわかりやすく解説</title>

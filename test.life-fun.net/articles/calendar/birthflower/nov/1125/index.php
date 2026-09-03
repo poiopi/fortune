@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1125/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="11月25日の誕生花コチョウランの花言葉・特徴・魅力をわかりやすく解説。「永久の愛」を象徴する一年を通して咲き続けるランの意味を紹介します。">
   <title>11月25日の誕生花はコチョウラン｜花言葉と魅力をわかりやすく解説</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0825/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月25日の誕生花リシアンサスの花言葉・特徴・魅力をわかりやすく解説。釣鐘のような上品な花姿が漂わせる、優美の意味を紹介します。">
   <title>8月25日の誕生花はリシアンサス｜花言葉と魅力をわかりやすく解説</title>

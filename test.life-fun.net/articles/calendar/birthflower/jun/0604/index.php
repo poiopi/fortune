@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0604/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月4日の誕生花マツバギクの花言葉・特徴・魅力をわかりやすく解説。松葉に似た葉と光沢のある花びらに込められた「順応性」の意味を紹介します。">
   <title>6月4日の誕生花はマツバギク｜花言葉と魅力をわかりやすく解説</title>

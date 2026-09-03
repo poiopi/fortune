@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0801/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月1日の誕生花ヒメユリの花言葉・特徴・魅力をわかりやすく解説。小ぶりながら鮮やかな朱色で凛と咲く花の意味を紹介します。">
   <title>8月1日の誕生花はヒメユリ｜花言葉と魅力をわかりやすく解説</title>

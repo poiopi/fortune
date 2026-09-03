@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0215/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="2月15日の誕生花サンシュユの花言葉・特徴・魅力をわかりやすく解説。「永遠」を象徴する、早春に枝いっぱいに咲く黄色い花木の意味を紹介します。">
   <title>2月15日の誕生花はサンシュユ｜花言葉と魅力をわかりやすく解説</title>

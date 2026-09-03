@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0701/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月1日の誕生花ベゴニア（赤）の花言葉・特徴・魅力をわかりやすく解説。植物収集家べゴン総督の名を受け継ぎ、一年を通して赤い花を咲かせ続けるシュウカイドウ科の花を紹介します。">
   <title>7月1日の誕生花はベゴニア（赤）｜花言葉と魅力をわかりやすく解説</title>

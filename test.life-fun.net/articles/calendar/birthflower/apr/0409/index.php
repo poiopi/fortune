@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0409/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月9日の誕生花ウォールフラワーの花言葉・特徴・魅力をわかりやすく解説。「熱愛」を象徴する香りのよいオレンジや黄色の花の意味を紹介します。">
   <title>4月9日の誕生花はウォールフラワー｜花言葉と魅力をわかりやすく解説</title>

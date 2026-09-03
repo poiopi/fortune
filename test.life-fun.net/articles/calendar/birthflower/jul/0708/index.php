@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jul/0708/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="7月8日の誕生花クロユリの花言葉・特徴・魅力をわかりやすく解説。暗紫褐色の花びらが妖しく魅了する、夏に咲くユリ科の多年草を紹介します。">
   <title>7月8日の誕生花はクロユリ｜花言葉と魅力をわかりやすく解説</title>

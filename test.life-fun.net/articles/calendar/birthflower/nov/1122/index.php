@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/nov/1122/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="11月22日の誕生花ワビスケの花言葉・特徴・魅力をわかりやすく解説。「簡素」を象徴する侘びた風情を持つ常緑低木の意味を紹介します。">
   <title>11月22日の誕生花はワビスケ｜花言葉と魅力をわかりやすく解説</title>

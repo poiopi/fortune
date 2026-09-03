@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/mar/0322/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月22日の誕生花ユキヤナギの花言葉・特徴・魅力をわかりやすく解説。「殊勝」を象徴する、雪のように白い小花を咲かせる花木の意味を紹介します。">
   <title>3月22日の誕生花はユキヤナギ｜花言葉と魅力をわかりやすく解説</title>

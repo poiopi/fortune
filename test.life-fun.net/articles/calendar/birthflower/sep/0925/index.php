@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0925/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="9月25日の誕生花ノコンギクの花言葉・特徴・魅力をわかりやすく解説。「質素」を象徴する秋の野菊の意味を紹介します。">
   <title>9月25日の誕生花はノコンギク｜花言葉と魅力をわかりやすく解説</title>

@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0227/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="2月27日の誕生花ミルトニアの花言葉・特徴・魅力をわかりやすく解説。「愛の訪れ」を象徴する、パンジーに似た顔を持つ洋ランの意味を紹介します。">
   <title>2月27日の誕生花はミルトニア｜花言葉と魅力をわかりやすく解説</title>

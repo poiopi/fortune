@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/oct/1021/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="10月21日の誕生花モミジアオイの花言葉・特徴・魅力をわかりやすく解説。「思いやり」を象徴する大輪の赤い花の意味を紹介します。">
   <title>10月21日の誕生花はモミジアオイ｜花言葉と魅力をわかりやすく解説</title>

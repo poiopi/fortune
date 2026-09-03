@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0926/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="9月26日の誕生花マンジュシャゲの花言葉・特徴・魅力をわかりやすく解説。「感謝」を象徴する彼岸に咲く赤い花の意味を紹介します。">
   <title>9月26日の誕生花はマンジュシャゲ｜花言葉と魅力をわかりやすく解説</title>

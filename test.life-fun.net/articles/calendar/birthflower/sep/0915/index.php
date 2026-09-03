@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0915/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="9月15日の誕生花ヨメナの花言葉・特徴・魅力をわかりやすく解説。「秘めた美しさ」を象徴する淡紫の野菊の意味を紹介します。">
   <title>9月15日の誕生花はヨメナ｜花言葉と魅力をわかりやすく解説</title>

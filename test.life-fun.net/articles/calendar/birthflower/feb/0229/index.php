@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/feb/0229/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="2月29日の誕生花パンジーの花言葉・特徴・魅力をわかりやすく解説。4年に一度だけ巡ってくる特別な日と、「もの思い」を象徴する花の意味を紹介します。">
   <title>2月29日の誕生花はパンジー｜花言葉と魅力をわかりやすく解説</title>

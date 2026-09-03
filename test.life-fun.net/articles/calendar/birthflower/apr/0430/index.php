@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/apr/0430/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="4月30日の誕生花ムラサキハナナの花言葉・特徴・魅力をわかりやすく解説。「恵まれた未来」という花言葉に込められた意味と、春に紫色の花を咲かせる一年草の魅力を紹介します。">
   <title>4月30日の誕生花はムラサキハナナ｜花言葉と魅力をわかりやすく解説</title>

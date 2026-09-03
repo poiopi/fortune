@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1219/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月19日の誕生花ベゴニア（ピンク）の花言葉・特徴・魅力をわかりやすく解説。「愛の告白」を象徴する、一年を通して咲き続ける花の意味を紹介します。">
   <title>12月19日の誕生花はベゴニア（ピンク）｜花言葉と魅力をわかりやすく解説</title>

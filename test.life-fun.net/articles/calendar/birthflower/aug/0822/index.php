@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0822/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月22日の誕生花ジャノメギクの花言葉・特徴・魅力をわかりやすく解説。花びらに浮かぶ蛇の目模様がにじませる、せつない喜びの意味を紹介します。">
   <title>8月22日の誕生花はジャノメギク｜花言葉と魅力をわかりやすく解説</title>

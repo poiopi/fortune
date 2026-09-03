@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/0621/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月21日の誕生花フロスフラワーの花言葉・特徴・魅力をわかりやすく解説。ふわふわとした質感の花を咲かせる、キク科「安楽」の花を紹介します。">
   <title>6月21日の誕生花はフロスフラワー｜花言葉と魅力をわかりやすく解説</title>

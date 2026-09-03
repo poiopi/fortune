@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/sep/0918/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="9月18日の誕生花サルビア（紫）の花言葉・特徴・魅力をわかりやすく解説。「尊敬」を象徴する紫の花穂の意味を紹介します。">
   <title>9月18日の誕生花はサルビア（紫）｜花言葉と魅力をわかりやすく解説</title>

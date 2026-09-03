@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/dec/1203/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月3日の誕生花ツワブキの花言葉・特徴・魅力をわかりやすく解説。「心づかい」を象徴する艶やかな葉と黄色い花の意味を紹介します。">
   <title>12月3日の誕生花はツワブキ｜花言葉と魅力をわかりやすく解説</title>

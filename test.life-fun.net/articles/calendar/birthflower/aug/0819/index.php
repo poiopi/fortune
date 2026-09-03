@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/aug/0819/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="8月19日の誕生花ガーベラ（ピンク）の花言葉・特徴・魅力をわかりやすく解説。一年を通して咲き続ける華やかなピンクが漂わせる、神秘の意味を紹介します。">
   <title>8月19日の誕生花はガーベラ（ピンク）｜花言葉と魅力をわかりやすく解説</title>
