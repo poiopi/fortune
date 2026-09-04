@@ -311,7 +311,7 @@ body {
 }
 
 /* ══════════════════════════════════
-   占いカルーセル（PC） / グリッド（SP）
+   占いカードグリッド（カテゴリ別）
 ══════════════════════════════════ */
 .fortune-section {
   padding: 4rem 0 3rem;
@@ -319,40 +319,38 @@ body {
 }
 .fortune-section-head { margin-bottom: 1.6rem; }
 
-/* ─── PC カルーセル ─── */
-.carousel-outer {
-  position: relative;
-  user-select: none;
-}
-.carousel-track {
+/* ─── カテゴリブロック ─── */
+.fortune-categories {
   display: flex;
-  gap: .9rem;
-  overflow-x: hidden;       /* PCは JS制御 */
-  scrollbar-width: none;
-  padding: .6rem 0 1rem 1.2rem;
-  cursor: grab;
-  -webkit-overflow-scrolling: touch;
+  flex-direction: column;
+  gap: 2.4rem;
 }
-.carousel-track::-webkit-scrollbar { display: none; }
-.carousel-track.dragging { cursor: grabbing; }
-
-/* ─── SP グリッド（モバイル上書き） ─── */
+.fortune-category-head { margin-bottom: 1rem; padding: 0 1.2rem; }
+.fc-cat-eyebrow {
+  font-family: var(--ff-mono);
+  font-size: .62rem;
+  letter-spacing: .25em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.fortune-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: .9rem;
+  padding: 0 1.2rem;
+}
 @media (max-width: 639px) {
-  .carousel-track {
-    display: grid;
+  .fortune-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: .65rem;
-    overflow-x: visible;
-    padding: 0 1rem 1rem;
-    cursor: default;
+    padding: 0 1rem;
   }
-  /* SP: 複製カードを非表示 */
-  .carousel-track .fcard[aria-hidden="true"] { display: none; }
+  .fortune-category-head { padding: 0 1rem; }
 }
 
 /* 占いカード共通 */
 .fcard {
-  flex: 0 0 190px;
+  /* grid化に伴いflex指定は不要になったため削除 */
   scroll-snap-align: start;
   background: var(--card);
   border: 1px solid var(--border);
@@ -412,30 +410,6 @@ body {
 .ct-a  { --c1:#c9a84c; --c2:#c85080; }
 .ct-c  { --c1:#3ab8b0; --c2:#4a3a9e; }
 .ct-s  { --c1:#9e4a7a; --c2:#c9a84c; } /* 三星 */
-
-/* カルーセルコントロール（PCのみ） */
-.carousel-controls {
-  display: flex; align-items: center; justify-content: center; gap: .8rem;
-  margin-top: .5rem;
-}
-.c-arr {
-  width: 30px; height: 30px; border-radius: 50%;
-  border: 1px solid rgba(201,168,76,.35);
-  background: rgba(201,168,76,.07);
-  color: var(--gold); font-size: .85rem;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: background .2s, border-color .2s;
-  user-select: none;
-}
-.c-arr:hover { background: rgba(201,168,76,.18); border-color: var(--gold); }
-.c-pause-hint {
-  font-family: var(--ff-mono);
-  font-size: .58rem; letter-spacing: .12em;
-  color: rgba(201,168,76,.35);
-}
-@media (max-width: 639px) {
-  .carousel-controls { display: none; }
-}
 
 /* ══════════════════════════════════
    今日の開運情報
@@ -583,13 +557,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       foreach ($_heroPills as $_slugKey => $_shortLabel):
         $_heroPill = $_NAV_PAGES[$_slugKey];
         $_cls = $_slugKey === 'sansei' ? 'pillar pillar-flagship' : 'pillar';
+        $_gaAttrs = $_slugKey === 'sansei' ? ' data-ga-event="cta_click" data-cta-name="hero_pillar_sansei" data-cta-destination="/sansei"' : '';
       ?>
-      <a href="<?= htmlspecialchars($_heroPill['url'], ENT_QUOTES, 'UTF-8') ?>" class="<?= $_cls ?>"><?= htmlspecialchars($_heroPill['icon'], ENT_QUOTES, 'UTF-8') ?> <?= htmlspecialchars($_shortLabel, ENT_QUOTES, 'UTF-8') ?></a>
+      <a href="<?= htmlspecialchars($_heroPill['url'], ENT_QUOTES, 'UTF-8') ?>" class="<?= $_cls ?>"<?= $_gaAttrs ?>><?= htmlspecialchars($_heroPill['icon'], ENT_QUOTES, 'UTF-8') ?> <?= htmlspecialchars($_shortLabel, ENT_QUOTES, 'UTF-8') ?></a>
       <?php endforeach; ?>
     </div>
     <div class="hero-cta h-d7">
-      <a href="#fortunes" class="btn-primary">占いを選ぶ ▼</a>
-      <a href="#oracle" class="btn-outline">今日の開運情報</a>
+      <a href="#fortunes" class="btn-primary" data-ga-event="cta_click" data-cta-name="hero_browse_fortunes" data-cta-destination="#fortunes">占いを選ぶ ▼</a>
+      <a href="#oracle" class="btn-outline" data-ga-event="cta_click" data-cta-name="hero_oracle" data-cta-destination="#oracle">今日の開運情報</a>
     </div>
   </div>
 
@@ -607,7 +582,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   </div>
 </div>
 
-<!-- ══ 占いカルーセル / SPグリッド ══ -->
+<!-- ══ 占いカードグリッド（カテゴリ別） ══ -->
 <section class="fortune-section" id="fortunes">
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
@@ -616,144 +591,163 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
-  <div class="carousel-outer">
-    <div class="carousel-track" id="cTrack">
+  <div class="fortune-categories">
 
-      <a href="/sansei" class="fcard ct-s fade-up">
-        <span class="fc-icon">✨</span>
-        <span class="fc-lbl">Integrated</span>
-        <div class="fc-name">三星統合鑑定</div>
-        <div class="fc-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
+    <div class="fortune-category">
+      <div class="fortune-category-head">
+        <span class="fc-cat-eyebrow">本格占い</span>
+      </div>
+      <div class="fortune-grid">
 
-      <a href="/love" class="fcard ct-r fade-up">
-        <span class="fc-icon">💜</span>
-        <span class="fc-lbl">Love Type</span>
-        <div class="fc-name">恋愛傾向診断</div>
-        <div class="fc-desc">MBTI×血液型×星座の3つから、あなたの恋愛スタイルと傾向を診断。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
+        <a href="/sansei" class="fcard ct-s fade-up">
+          <span class="fc-icon">✨</span>
+          <span class="fc-lbl">Integrated</span>
+          <div class="fc-name">三星統合鑑定</div>
+          <div class="fc-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</div>
+          <span class="fc-btn">鑑定する →</span>
+        </a>
 
-      <a href="/tarot" class="fcard ct-v fade-up">
-        <span class="fc-icon">🃏</span>
-        <span class="fc-lbl">Tarot</span>
-        <div class="fc-name">タロット占い</div>
-        <div class="fc-desc">大アルカナ22枚から1枚を選ぶ。直感でカードを引き、今のメッセージを受け取る。</div>
-        <span class="fc-btn">カードを引く →</span>
-      </a>
+        <a href="/shichu" class="fcard ct-g fade-up">
+          <span class="fc-icon">🔯</span>
+          <span class="fc-lbl">Shichu Suimei</span>
+          <div class="fc-name">四柱推命</div>
+          <div class="fc-desc">命式・十神・大運を本格算出。生年月日から人生の流れを読み解く。</div>
+          <span class="fc-btn">算出する →</span>
+        </a>
 
-      <a href="/shichu" class="fcard ct-g fade-up">
-        <span class="fc-icon">🔯</span>
-        <span class="fc-lbl">Shichu Suimei</span>
-        <div class="fc-name">四柱推命</div>
-        <div class="fc-desc">命式・十神・大運を本格算出。生年月日から人生の流れを読み解く。</div>
-        <span class="fc-btn">算出する →</span>
-      </a>
+        <a href="/sanmei" class="fcard ct-t fade-up">
+          <span class="fc-icon">☯</span>
+          <span class="fc-lbl">Sanmeigaku</span>
+          <div class="fc-name">算命学鑑定</div>
+          <div class="fc-desc">元命・主星・従星から才能・恋愛・仕事適性を読む性格占術。</div>
+          <span class="fc-btn">鑑定する →</span>
+        </a>
 
-      <a href="/sanmei" class="fcard ct-t fade-up">
-        <span class="fc-icon">☯</span>
-        <span class="fc-lbl">Sanmeigaku</span>
-        <div class="fc-name">算命学鑑定</div>
-        <div class="fc-desc">元命・主星・従星から才能・恋愛・仕事適性を読む性格占術。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
+        <a href="/seiza" class="fcard ct-r fade-up">
+          <span class="fc-icon">⭐</span>
+          <span class="fc-lbl">Western Astrology</span>
+          <div class="fc-name">西洋占星術</div>
+          <div class="fc-desc">太陽星座×内面タイプで個性・恋愛・仕事適性を深掘り鑑定。</div>
+          <span class="fc-btn">鑑定する →</span>
+        </a>
 
-      <a href="/seiza" class="fcard ct-r fade-up">
-        <span class="fc-icon">⭐</span>
-        <span class="fc-lbl">Western Astrology</span>
-        <div class="fc-name">西洋占星術</div>
-        <div class="fc-desc">太陽星座×内面タイプで個性・恋愛・仕事適性を深掘り鑑定。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
+        <a href="/kyusei" class="fcard ct-a fade-up">
+          <span class="fc-icon">⭐</span>
+          <span class="fc-lbl">Nine Star Ki</span>
+          <div class="fc-name">九星気学診断</div>
+          <div class="fc-desc">本命星・月命星・吉方位を無料診断。今年の運勢の流れを知る。</div>
+          <span class="fc-btn">診断する →</span>
+        </a>
 
-      <a href="/mbti" class="fcard ct-i fade-up">
-        <span class="fc-icon">🧠</span>
-        <span class="fc-lbl">MBTI × Zodiac</span>
-        <div class="fc-name">MBTI×星座診断</div>
-        <div class="fc-desc">10の質問で性格タイプと星座の組み合わせ運命を診断する。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
+        <a href="/tarot" class="fcard ct-v fade-up">
+          <span class="fc-icon">🃏</span>
+          <span class="fc-lbl">Tarot</span>
+          <div class="fc-name">タロット占い</div>
+          <div class="fc-desc">大アルカナ22枚から1枚を選ぶ。直感でカードを引き、今のメッセージを受け取る。</div>
+          <span class="fc-btn">カードを引く →</span>
+        </a>
 
-      <a href="/numerology" class="fcard ct-t fade-up">
-        <span class="fc-icon">🔢</span>
-        <span class="fc-lbl">Numerology</span>
-        <div class="fc-name">数秘術診断</div>
-        <div class="fc-desc">生年月日と名前から4つの数字で人生の使命を読み解く。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
+        <a href="/numerology" class="fcard ct-t fade-up">
+          <span class="fc-icon">🔢</span>
+          <span class="fc-lbl">Numerology</span>
+          <div class="fc-name">数秘術診断</div>
+          <div class="fc-desc">生年月日と名前から4つの数字で人生の使命を読み解く。</div>
+          <span class="fc-btn">診断する →</span>
+        </a>
 
-      <a href="/kyusei" class="fcard ct-a fade-up">
-        <span class="fc-icon">⭐</span>
-        <span class="fc-lbl">Nine Star Ki</span>
-        <div class="fc-name">九星気学診断</div>
-        <div class="fc-desc">本命星・月命星・吉方位を無料診断。今年の運勢の流れを知る。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
+        <a href="/seimei" class="fcard ct-v fade-up">
+          <span class="fc-icon">✍️</span>
+          <span class="fc-lbl">Seimei</span>
+          <div class="fc-name">姓名判断</div>
+          <div class="fc-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む。</div>
+          <span class="fc-btn">鑑定する →</span>
+        </a>
 
-      <a href="/rpg" class="fcard ct-gn fade-up">
-        <span class="fc-icon">⚔️</span>
-        <span class="fc-lbl">RPG Fortune</span>
-        <div class="fc-name">RPG風占いの村</div>
-        <div class="fc-desc">勇者となって占いの村を冒険しながら運命を知る。</div>
-        <span class="fc-btn">冒険する →</span>
-      </a>
-
-      <a href="/aisho" class="fcard ct-r fade-up">
-        <span class="fc-icon">💑</span>
-        <span class="fc-lbl">Compatibility</span>
-        <div class="fc-name">二人の相性診断</div>
-        <div class="fc-desc">星座と数秘術で恋愛・結婚の相性を鑑定する。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/zense" class="fcard ct-c fade-up">
-        <span class="fc-icon">🌀</span>
-        <span class="fc-lbl">Past Life</span>
-        <div class="fc-name">前世診断</div>
-        <div class="fc-desc">あなたは何回目の転生？魂のカルテを読み解く。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/guardian" class="fcard ct-g fade-up">
-        <span class="fc-icon">👻</span>
-        <span class="fc-lbl">Guardian Spirit</span>
-        <div class="fc-name">守護霊診断</div>
-        <div class="fc-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚。</div>
-        <span class="fc-btn">召喚する →</span>
-      </a>
-
-      <a href="/seimei" class="fcard ct-v fade-up">
-        <span class="fc-icon">✍️</span>
-        <span class="fc-lbl">Seimei</span>
-        <div class="fc-name">姓名判断</div>
-        <div class="fc-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
-
-      <a href="/geimei" class="fcard ct-a fade-up">
-        <span class="fc-icon">🎭</span>
-        <span class="fc-lbl">Geimei</span>
-        <div class="fc-name">芸名診断</div>
-        <div class="fc-desc">大喜利で見つける最強の芸名。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/reversi" class="fcard ct-v fade-up">
-        <span class="fc-icon"><span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style></span>
-        <span class="fc-lbl">Destiny Reversi</span>
-        <div class="fc-name">リバーシ占い</div>
-        <div class="fc-desc">対局中の一手一手が布石となり、今日の運勢を読み解く新感覚の占いゲーム。</div>
-        <span class="fc-btn">対局する →</span>
-      </a>
-
-    </div><!-- /carousel-track -->
-
-    <div class="carousel-controls">
-      <button class="c-arr" id="cPrev">‹</button>
-      <span class="c-pause-hint">hover / drag to pause</span>
-      <button class="c-arr" id="cNext">›</button>
+      </div>
     </div>
+
+    <div class="fortune-category">
+      <div class="fortune-category-head">
+        <span class="fc-cat-eyebrow">カード・心理</span>
+      </div>
+      <div class="fortune-grid">
+
+        <a href="/mbti" class="fcard ct-i fade-up">
+          <span class="fc-icon">🧠</span>
+          <span class="fc-lbl">MBTI × Zodiac</span>
+          <div class="fc-name">MBTI×星座診断</div>
+          <div class="fc-desc">10の質問で性格タイプと星座の組み合わせ運命を診断する。</div>
+          <span class="fc-btn">診断する →</span>
+        </a>
+
+        <a href="/love" class="fcard ct-r fade-up">
+          <span class="fc-icon">💜</span>
+          <span class="fc-lbl">Love Type</span>
+          <div class="fc-name">恋愛傾向診断</div>
+          <div class="fc-desc">MBTI×血液型×星座の3つから、あなたの恋愛スタイルと傾向を診断。</div>
+          <span class="fc-btn">診断する →</span>
+        </a>
+
+        <a href="/aisho" class="fcard ct-r fade-up">
+          <span class="fc-icon">💑</span>
+          <span class="fc-lbl">Compatibility</span>
+          <div class="fc-name">二人の相性診断</div>
+          <div class="fc-desc">星座と数秘術で恋愛・結婚の相性を鑑定する。</div>
+          <span class="fc-btn">診断する →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="fortune-category">
+      <div class="fortune-category-head">
+        <span class="fc-cat-eyebrow">気軽に楽しむ</span>
+      </div>
+      <div class="fortune-grid">
+
+        <a href="/rpg" class="fcard ct-gn fade-up">
+          <span class="fc-icon">⚔️</span>
+          <span class="fc-lbl">RPG Fortune</span>
+          <div class="fc-name">RPG風占いの村</div>
+          <div class="fc-desc">勇者となって占いの村を冒険しながら運命を知る。</div>
+          <span class="fc-btn">冒険する →</span>
+        </a>
+
+        <a href="/reversi" class="fcard ct-v fade-up">
+          <span class="fc-icon"><span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style></span>
+          <span class="fc-lbl">Destiny Reversi</span>
+          <div class="fc-name">リバーシ占い</div>
+          <div class="fc-desc">対局中の一手一手が布石となり、今日の運勢を読み解く新感覚の占いゲーム。</div>
+          <span class="fc-btn">対局する →</span>
+        </a>
+
+        <a href="/zense" class="fcard ct-c fade-up">
+          <span class="fc-icon">🌀</span>
+          <span class="fc-lbl">Past Life</span>
+          <div class="fc-name">前世診断</div>
+          <div class="fc-desc">あなたは何回目の転生？魂のカルテを読み解く。</div>
+          <span class="fc-btn">診断する →</span>
+        </a>
+
+        <a href="/guardian" class="fcard ct-g fade-up">
+          <span class="fc-icon">👻</span>
+          <span class="fc-lbl">Guardian Spirit</span>
+          <div class="fc-name">守護霊診断</div>
+          <div class="fc-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚。</div>
+          <span class="fc-btn">召喚する →</span>
+        </a>
+
+        <a href="/geimei" class="fcard ct-a fade-up">
+          <span class="fc-icon">🎭</span>
+          <span class="fc-lbl">Geimei</span>
+          <div class="fc-name">芸名診断</div>
+          <div class="fc-desc">大喜利で見つける最強の芸名。</div>
+          <span class="fc-btn">診断する →</span>
+        </a>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -861,7 +855,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap">
     <h2 class="closing-cta-title">さあ、あなたの運命を占ってみましょう</h2>
     <p class="closing-cta-sub">名前と生年月日を入力するだけ。西洋占星術×タロット×四柱推命の三位一体鑑定 ✨三星統合鑑定</p>
-    <a href="/sansei" class="btn-primary">三星統合鑑定をはじめる →</a>
+    <a href="/sansei" class="btn-primary" data-ga-event="cta_click" data-cta-name="closing_sansei" data-cta-destination="/sansei">三星統合鑑定をはじめる →</a>
   </div>
 </section>
 
@@ -927,167 +921,6 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   window.addEventListener('resize', resize);
   resize(); draw();
   setTimeout(spawnMeteor, 1800);
-})();
-
-/* ══ PC カルーセル（無限じわスクロール + ドラッグ） ══ */
-(function(){
-  const isMobile = () => window.innerWidth < 640;
-  const track = document.getElementById('cTrack');
-  const origCards = Array.from(track.querySelectorAll('.fcard'));
-
-  const SPEED   = 0.45;   // px/frame（遅め）
-  const CARD_GAP = 14;    // .9rem ≈ 14px
-
-  let pos       = 0;
-  let targetPos = 0;   // イージング用の目標位置
-  let paused    = false;
-  let dragging  = false;
-  let dragStartX   = 0;
-  let dragStartPos = 0;
-  let raf = null;
-  let cloned = false;
-
-  /* カードを複製してDOMに追加（1セット追加で無限ループ） */
-  function setupClones(){
-    if(cloned) return;
-    origCards.forEach(c => {
-      const cl = c.cloneNode(true);
-      cl.setAttribute('aria-hidden', 'true');
-      track.appendChild(cl);
-    });
-    cloned = true;
-  }
-
-  /* 1セット分の幅 */
-  function origWidth(){
-    if(!origCards[0]) return 0;
-    return (origCards[0].offsetWidth + CARD_GAP) * origCards.length;
-  }
-
-  /* メインループ */
-  function tick(){
-    if(!isMobile()){
-      const ow = origWidth();
-      if(!paused && !dragging){
-        /* 自動スクロール：targetPosも一緒に進める */
-        pos += SPEED;
-        targetPos += SPEED;
-        if(ow > 0 && pos >= ow) { pos -= ow; targetPos -= ow; }
-      }
-      /* イージング：posをtargetPosに向かってなめらかに近づける */
-      if(Math.abs(targetPos - pos) > 0.1){
-        pos += (targetPos - pos) * 0.1;
-        /* ループ境界処理 */
-        if(ow > 0 && pos >= ow) pos -= ow;
-        if(pos < 0) pos += ow;
-      }
-      track.scrollLeft = pos;
-    }
-    raf = requestAnimationFrame(tick);
-  }
-
-  /* 矢印：1枚分なめらかに移動 */
-  function jump(dir){
-    if(isMobile()) return;
-    const cardW = origCards[0] ? origCards[0].offsetWidth + CARD_GAP : 200;
-    targetPos += dir * cardW;
-    const ow = origWidth();
-    if(targetPos < 0)   targetPos += ow;
-    if(targetPos >= ow) targetPos -= ow;
-  }
-
-  document.getElementById('cPrev').addEventListener('click', () => jump(-1));
-  document.getElementById('cNext').addEventListener('click', () => jump(1));
-
-  /* ホバーで一時停止 */
-  track.addEventListener('mouseenter', () => { if(!isMobile()) paused = true;  });
-  track.addEventListener('mouseleave', () => { if(!isMobile()) paused = false; });
-
-  /* ドラッグ（一定距離動いたときだけドラッグ扱いにし、単純クリックはリンクとして機能させる） */
-  const DRAG_THRESHOLD = 6; // px
-  let pointerIsDown = false;
-  let pointerDownX = 0;
-  let moved = false; // このポインタ操作でドラッグ判定（しきい値超え）が発生したか
-
-  let activePointerId = null;
-
-  track.addEventListener('pointerdown', e => {
-    if(isMobile()) return;
-    pointerIsDown = true;
-    pointerDownX = e.clientX;
-    dragStartX   = e.clientX;
-    dragStartPos = pos;
-    activePointerId = e.pointerId;
-    /* setPointerCaptureはここでは呼ばない：単純クリックの時点でcaptureすると
-       ブラウザによってはその後のclickイベントのtargetが実際の<a>ではなく
-       track自身に付け替わり、リンク遷移が起きなくなることがあるため。
-       ドラッグが確定した瞬間(pointermove側)にのみcaptureする。 */
-  });
-  track.addEventListener('pointermove', e => {
-    if(!pointerIsDown) return;
-    if(!dragging){
-      if(Math.abs(e.clientX - pointerDownX) < DRAG_THRESHOLD) return;
-      /* しきい値を超えたらここで初めてドラッグ開始 */
-      dragging = true;
-      moved = true;
-      track.classList.add('dragging');
-      track.setPointerCapture(e.pointerId);
-    }
-    e.preventDefault();
-    const dx = dragStartX - e.clientX;
-    const ow = origWidth();
-    let next = dragStartPos + dx;
-    if(next < 0)   next += ow;
-    if(next >= ow) next -= ow;
-    pos = targetPos = next;       /* ドラッグ中はイージングをバイパス */
-    track.scrollLeft = pos;
-  });
-  ['pointerup','pointercancel'].forEach(ev => {
-    track.addEventListener(ev, e => {
-      pointerIsDown = false;
-      if(activePointerId !== null && track.hasPointerCapture(activePointerId)){
-        track.releasePointerCapture(activePointerId);
-      }
-      activePointerId = null;
-      if(dragging){
-        dragging = false;
-        track.classList.remove('dragging');
-        targetPos = pos;  /* 離した位置から自動スクロール再開 */
-      }
-      /* moved はここで即リセットしない：直後に同期発火するclickイベント側で
-         先に参照させる必要があるため。ただし、要素外でpointerupした場合など
-         clickが発火しないケースに備え、次のイベントループでの遅延リセットを
-         安全策として必ず入れておく（reset漏れによる誤爆の再発防止） */
-      setTimeout(() => { moved = false; }, 0);
-    });
-  });
-
-  /* ドラッグ操作の直後だけ、そのクリックによるページ遷移を止める。
-     捕捉フェーズ(true)でリンクのデフォルト動作より先に判定する。 */
-  track.addEventListener('click', e => {
-    if(moved){
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    moved = false; // 判定に使ったら必ずリセット（reset漏れ防止）
-  }, true);
-
-  /* 初期化 */
-  function init(){
-    if(!isMobile()){
-      setupClones();
-      track.scrollLeft = 0;
-      pos = 0;
-    }
-    if(!raf) raf = requestAnimationFrame(tick);
-  }
-
-  window.addEventListener('resize', () => {
-    /* リサイズ時にSP⇔PCを切り替え */
-    track.scrollLeft = pos = 0;
-  });
-
-  init();
 })();
 
 /* ══ IntersectionObserver ══ */
