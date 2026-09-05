@@ -485,11 +485,15 @@ body {
        140px/250pxは極端な幅での防御的な下限・上限キャップ。 */
     width: clamp(140px, calc((100vw - 7.65rem) / 1.2), 250px);
     border-radius: 12px;
-    padding: .9rem .85rem .85rem;
+    padding: 1.1rem 1rem 1rem;
   }
   .fcard:hover { transform: none; }
+  /* D案：上部カラーバーの面積・彩度を後退（識別性は維持、主張のみ抑制） */
+  .fcard::before { height: 1px; opacity: .5; }
   .fc-icon-badge { width: 44px; height: 44px; }
   .fc-icon { font-size: 1.3rem; }
+  /* D案：英字キャプションはタイトルと内容重複のため非表示（HTML構造は維持） */
+  .fc-lbl { display: none; }
 }
 
 .fc-icon-badge {
@@ -517,6 +521,20 @@ body {
   transition: opacity .2s;
 }
 .fc-btn:hover { opacity: .85; }
+
+/* D案：SP限定の彩度後退。共通ルール(.fc-icon-badge/.fc-btn)より後ろに置き、
+   CSSカスケード順序でソース順が同一詳細度の勝敗を決める仕様上、確実に上書きさせるため。
+   （このメディアクエリを476行目のSPブロックに入れると、ソース順で共通ルールに負けて反映されない） */
+@media (max-width: 639px) {
+  .fc-icon-badge {
+    background: radial-gradient(circle at 35% 30%, rgba(201,168,76,.06), rgba(201,168,76,.02) 70%);
+    border-color: rgba(201,168,76,.2);
+  }
+  .fc-btn {
+    background: linear-gradient(rgba(26,21,53,.55), rgba(26,21,53,.55)), linear-gradient(135deg, var(--c1), var(--c2));
+    border: 1px solid rgba(255,255,255,.12);
+  }
+}
 
 /* カラーテーマ */
 .ct-v  { --c1:#7a4a9e; --c2:#c85080; }
