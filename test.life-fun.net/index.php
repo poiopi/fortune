@@ -381,7 +381,7 @@ body {
 }
 @media (max-width: 639px) {
   .fortune-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: .65rem;
     padding: 0 1rem 1rem;
   }
