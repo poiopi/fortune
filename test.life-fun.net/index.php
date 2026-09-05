@@ -255,7 +255,6 @@ body {
 .h-d7 { animation-delay: 1.3s; }
 @keyframes hFade { to { opacity: 1; transform: translateY(0); } }
 
-.hero-kamon { font-size: 2.8rem; display: block; margin-bottom: .7rem; filter: drop-shadow(0 0 16px rgba(201,168,76,.5)); }
 .hero-eyebrow { font-family: var(--ff-mono); font-size: .62rem; letter-spacing: .35em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: .8rem; }
 .hero-deco {
   display: flex; align-items: center; justify-content: center; gap: 8px;
@@ -279,6 +278,41 @@ body {
   text-shadow: none;
 }
 .hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.5rem; }
+.hero-flagship-card {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto 1.6rem;
+  padding: 1.8rem 1.6rem 1.6rem;
+  border: 1px solid rgba(201,168,76,.45);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(26,21,53,.55) 0%, rgba(18,15,36,.72) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 1px rgba(201,168,76,.12) inset, 0 12px 40px rgba(0,0,0,.45);
+}
+.hf-eyebrow { display: block; font-family: var(--ff-mono); font-size: .6rem; letter-spacing: .3em; color: var(--gold); text-transform: uppercase; margin-bottom: .5rem; }
+.hf-title { font-family: var(--ff-serif); font-size: 1.25rem; font-weight: 700; color: var(--text); letter-spacing: .06em; margin-bottom: .5rem; }
+.hf-desc { font-size: .8rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.1rem; }
+.hf-steps { display: flex; align-items: center; justify-content: center; gap: .6rem; margin-bottom: 1.3rem; flex-wrap: wrap; }
+.hf-step { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+.hf-step-icon { font-size: 1.3rem; }
+.hf-step-label { font-family: var(--ff-mono); font-size: .6rem; color: var(--muted); letter-spacing: .04em; white-space: nowrap; }
+.hf-arrow { color: var(--gold); opacity: .6; font-size: .8rem; }
+.btn-gold {
+  padding: .78rem 2rem;
+  background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+  border: none; border-radius: 28px; color: var(--void);
+  font-family: var(--ff-serif); font-size: .9rem; font-weight: 700; letter-spacing: .1em;
+  text-decoration: none; display: inline-block;
+  box-shadow: 0 4px 24px rgba(201,168,76,.45);
+  transition: opacity .2s, transform .15s;
+}
+.btn-gold:hover { opacity: .88; transform: translateY(-2px); }
+@media (max-width: 639px) {
+  .hero-flagship-card { padding: 1.4rem 1.1rem 1.3rem; border-radius: 18px; }
+  .hf-steps { flex-direction: column; gap: .7rem; }
+  .hf-arrow { transform: rotate(90deg); }
+}
 .hero-pillars { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
 .pillar { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .1em; padding: .28rem .85rem; border: 1px solid rgba(201,168,76,.28); border-radius: 20px; color: rgba(201,168,76,.7); text-decoration: none; display: inline-block; cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
 .pillar:hover, .pillar:focus-visible { background: rgba(201,168,76,.1); border-color: rgba(201,168,76,.5); color: rgba(201,168,76,.9); }
@@ -319,12 +353,18 @@ body {
 }
 .fortune-section-head { margin-bottom: 1.6rem; }
 
+/* ─── カテゴリアンカーナビ ─── */
+.fc-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; max-width: 820px; margin: 0 auto 2rem; padding: 0 1.2rem; }
+.fc-tab { flex: 1 1 160px; text-align: center; font-family: var(--ff-mono); font-size: .66rem; letter-spacing: .12em; color: var(--gold-lt); text-decoration: none; padding: .55rem .9rem; border: 1px solid rgba(201,168,76,.35); border-radius: 24px; background: rgba(201,168,76,.05); transition: border-color .2s, background .2s; }
+.fc-tab:hover, .fc-tab:focus-visible { border-color: var(--gold); background: rgba(201,168,76,.12); }
+
 /* ─── カテゴリブロック ─── */
 .fortune-categories {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
 }
+.fortune-category { scroll-margin-top: 76px; }
 .fortune-category-head { margin-bottom: 1rem; padding: 0 1.2rem; }
 .fc-cat-eyebrow {
   font-family: var(--ff-mono);
@@ -343,7 +383,7 @@ body {
   .fortune-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: .65rem;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
   }
   .fortune-category-head { padding: 0 1rem; }
 }
@@ -354,9 +394,9 @@ body {
   scroll-snap-align: start;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.15rem 1rem 1rem;
-  display: flex; flex-direction: column; gap: .45rem;
+  border-radius: 16px;
+  padding: 1.3rem 1.1rem 1.1rem;
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: .5rem;
   position: relative; overflow: hidden;
   transition: border-color .22s, transform .22s, box-shadow .22s;
   cursor: pointer;
@@ -378,9 +418,17 @@ body {
     padding: .9rem .85rem .85rem;
   }
   .fcard:hover { transform: none; }
+  .fc-icon-badge { width: 44px; height: 44px; }
+  .fc-icon { font-size: 1.3rem; }
 }
 
-.fc-icon  { font-size: 1.7rem; line-height: 1; }
+.fc-icon-badge {
+  width: 50px; height: 50px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle at 35% 30%, rgba(201,168,76,.18), rgba(201,168,76,.04) 70%);
+  border: 1px solid rgba(201,168,76,.35); margin-bottom: .1rem;
+}
+.fc-icon  { font-size: 1.5rem; line-height: 1; }
 .fc-lbl   { font-family: var(--ff-mono); font-size: .53rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
 .fc-name  { font-family: var(--ff-serif); font-size: .93rem; font-weight: 700; color: var(--text); letter-spacing: .04em; }
 .fc-desc  { font-size: .74rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
@@ -394,7 +442,7 @@ body {
   font-family: var(--ff-mono); font-size: .65rem; letter-spacing: .06em;
   color: #fff; text-decoration: none;
   padding: .32rem .75rem; border-radius: 20px;
-  align-self: flex-start; margin-top: .2rem;
+  align-self: center; margin-top: .3rem;
   background: linear-gradient(135deg, var(--c1), var(--c2));
   transition: opacity .2s;
 }
@@ -499,7 +547,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 <!-- ══ HEADER ══ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="logo">⛩ 占い<em>Portal</em></a>
+    <a href="/" class="logo">占い<em>Portal</em></a>
     <nav class="header-nav">
       <a href="/" class="cur">✦ TOP</a>
       <a href="/tarot">タロット</a>
@@ -538,11 +586,25 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="hero-top-accent"></div>
 
   <div class="hero-inner">
-    <span class="hero-kamon h-d1">⛩</span>
-    <span class="hero-eyebrow h-d2">Free Fortune Telling · 占いPortal</span>
-    <div class="hero-deco h-d3"><span>✦ ── ✦ ── ✦</span></div>
-    <h1 class="hero-h1 h-d4">無料占いポータル</h1>
-    <span class="hero-sub h-d5">星と運命の交差点 · 16種類の占術で今を読み解く</span>
+    <span class="hero-eyebrow h-d1">Free Fortune Telling · 占いPortal</span>
+    <div class="hero-deco h-d2"><span>✦ ── ✦ ── ✦</span></div>
+    <h1 class="hero-h1 h-d3">無料占いポータル</h1>
+    <span class="hero-sub h-d4">星と運命の交差点 · 16種類の占術で今を読み解く</span>
+    <div class="hero-flagship-card h-d5">
+      <span class="hf-eyebrow">Flagship Reading</span>
+      <div class="hf-title">✨ 三星統合鑑定</div>
+      <p class="hf-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</p>
+      <div class="hf-steps">
+        <div class="hf-step"><span class="hf-step-icon">🔮</span><span class="hf-step-label">何がわかるか</span></div>
+        <span class="hf-arrow">→</span>
+        <div class="hf-step"><span class="hf-step-icon">📝</span><span class="hf-step-label">名前・生年月日を入力</span></div>
+        <span class="hf-arrow">→</span>
+        <div class="hf-step"><span class="hf-step-icon">✨</span><span class="hf-step-label">その場で鑑定結果</span></div>
+      </div>
+      <a href="/sansei" class="btn-gold" data-ga-event="cta_click" data-cta-name="hero_flagship_sansei" data-cta-destination="/sansei">
+        ✨ 三星統合鑑定をはじめる →
+      </a>
+    </div>
     <div class="hero-pillars h-d6">
       <?php
       // Hero直下のピル：URL・アイコンは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として利用（二重管理を避ける）。
@@ -577,7 +639,6 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 <div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
-    <span class="pb-kamon">✦ ── ⛩ ── ✦</span>
     <div class="pb-gold-line"></div>
   </div>
 </div>
@@ -591,16 +652,22 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
+  <nav class="fc-tabs" aria-label="占いカテゴリ">
+    <a href="#cat-classic" class="fc-tab">本格占い</a>
+    <a href="#cat-cards" class="fc-tab">カード・心理</a>
+    <a href="#cat-casual" class="fc-tab">気軽に楽しむ</a>
+  </nav>
+
   <div class="fortune-categories">
 
-    <div class="fortune-category">
+    <div class="fortune-category" id="cat-classic">
       <div class="fortune-category-head">
         <span class="fc-cat-eyebrow">本格占い</span>
       </div>
       <div class="fortune-grid">
 
         <a href="/sansei" class="fcard ct-s fade-up">
-          <span class="fc-icon">✨</span>
+          <span class="fc-icon-badge"><span class="fc-icon">✨</span></span>
           <span class="fc-lbl">Integrated</span>
           <div class="fc-name">三星統合鑑定</div>
           <div class="fc-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</div>
@@ -608,7 +675,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/shichu" class="fcard ct-g fade-up">
-          <span class="fc-icon">🔯</span>
+          <span class="fc-icon-badge"><span class="fc-icon">🔯</span></span>
           <span class="fc-lbl">Shichu Suimei</span>
           <div class="fc-name">四柱推命</div>
           <div class="fc-desc">命式・十神・大運を本格算出。生年月日から人生の流れを読み解く。</div>
@@ -616,7 +683,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/sanmei" class="fcard ct-t fade-up">
-          <span class="fc-icon">☯</span>
+          <span class="fc-icon-badge"><span class="fc-icon">☯</span></span>
           <span class="fc-lbl">Sanmeigaku</span>
           <div class="fc-name">算命学鑑定</div>
           <div class="fc-desc">元命・主星・従星から才能・恋愛・仕事適性を読む性格占術。</div>
@@ -624,7 +691,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/seiza" class="fcard ct-r fade-up">
-          <span class="fc-icon">⭐</span>
+          <span class="fc-icon-badge"><span class="fc-icon">⭐</span></span>
           <span class="fc-lbl">Western Astrology</span>
           <div class="fc-name">西洋占星術</div>
           <div class="fc-desc">太陽星座×内面タイプで個性・恋愛・仕事適性を深掘り鑑定。</div>
@@ -632,7 +699,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/kyusei" class="fcard ct-a fade-up">
-          <span class="fc-icon">⭐</span>
+          <span class="fc-icon-badge"><span class="fc-icon">⭐</span></span>
           <span class="fc-lbl">Nine Star Ki</span>
           <div class="fc-name">九星気学診断</div>
           <div class="fc-desc">本命星・月命星・吉方位を無料診断。今年の運勢の流れを知る。</div>
@@ -640,7 +707,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/tarot" class="fcard ct-v fade-up">
-          <span class="fc-icon">🃏</span>
+          <span class="fc-icon-badge"><span class="fc-icon">🃏</span></span>
           <span class="fc-lbl">Tarot</span>
           <div class="fc-name">タロット占い</div>
           <div class="fc-desc">大アルカナ22枚から1枚を選ぶ。直感でカードを引き、今のメッセージを受け取る。</div>
@@ -648,7 +715,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/numerology" class="fcard ct-t fade-up">
-          <span class="fc-icon">🔢</span>
+          <span class="fc-icon-badge"><span class="fc-icon">🔢</span></span>
           <span class="fc-lbl">Numerology</span>
           <div class="fc-name">数秘術診断</div>
           <div class="fc-desc">生年月日と名前から4つの数字で人生の使命を読み解く。</div>
@@ -656,7 +723,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/seimei" class="fcard ct-v fade-up">
-          <span class="fc-icon">✍️</span>
+          <span class="fc-icon-badge"><span class="fc-icon">✍️</span></span>
           <span class="fc-lbl">Seimei</span>
           <div class="fc-name">姓名判断</div>
           <div class="fc-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む。</div>
@@ -666,14 +733,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       </div>
     </div>
 
-    <div class="fortune-category">
+    <div class="fortune-category" id="cat-cards">
       <div class="fortune-category-head">
         <span class="fc-cat-eyebrow">カード・心理</span>
       </div>
       <div class="fortune-grid">
 
         <a href="/mbti" class="fcard ct-i fade-up">
-          <span class="fc-icon">🧠</span>
+          <span class="fc-icon-badge"><span class="fc-icon">🧠</span></span>
           <span class="fc-lbl">MBTI × Zodiac</span>
           <div class="fc-name">MBTI×星座診断</div>
           <div class="fc-desc">10の質問で性格タイプと星座の組み合わせ運命を診断する。</div>
@@ -681,7 +748,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/love" class="fcard ct-r fade-up">
-          <span class="fc-icon">💜</span>
+          <span class="fc-icon-badge"><span class="fc-icon">💜</span></span>
           <span class="fc-lbl">Love Type</span>
           <div class="fc-name">恋愛傾向診断</div>
           <div class="fc-desc">MBTI×血液型×星座の3つから、あなたの恋愛スタイルと傾向を診断。</div>
@@ -689,7 +756,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/aisho" class="fcard ct-r fade-up">
-          <span class="fc-icon">💑</span>
+          <span class="fc-icon-badge"><span class="fc-icon">💑</span></span>
           <span class="fc-lbl">Compatibility</span>
           <div class="fc-name">二人の相性診断</div>
           <div class="fc-desc">星座と数秘術で恋愛・結婚の相性を鑑定する。</div>
@@ -699,14 +766,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       </div>
     </div>
 
-    <div class="fortune-category">
+    <div class="fortune-category" id="cat-casual">
       <div class="fortune-category-head">
         <span class="fc-cat-eyebrow">気軽に楽しむ</span>
       </div>
       <div class="fortune-grid">
 
         <a href="/rpg" class="fcard ct-gn fade-up">
-          <span class="fc-icon">⚔️</span>
+          <span class="fc-icon-badge"><span class="fc-icon">⚔️</span></span>
           <span class="fc-lbl">RPG Fortune</span>
           <div class="fc-name">RPG風占いの村</div>
           <div class="fc-desc">勇者となって占いの村を冒険しながら運命を知る。</div>
@@ -714,7 +781,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/reversi" class="fcard ct-v fade-up">
-          <span class="fc-icon"><span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style></span>
+          <span class="fc-icon-badge"><span class="fc-icon"><span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style></span></span>
           <span class="fc-lbl">Destiny Reversi</span>
           <div class="fc-name">リバーシ占い</div>
           <div class="fc-desc">対局中の一手一手が布石となり、今日の運勢を読み解く新感覚の占いゲーム。</div>
@@ -722,7 +789,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/zense" class="fcard ct-c fade-up">
-          <span class="fc-icon">🌀</span>
+          <span class="fc-icon-badge"><span class="fc-icon">🌀</span></span>
           <span class="fc-lbl">Past Life</span>
           <div class="fc-name">前世診断</div>
           <div class="fc-desc">あなたは何回目の転生？魂のカルテを読み解く。</div>
@@ -730,7 +797,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/guardian" class="fcard ct-g fade-up">
-          <span class="fc-icon">👻</span>
+          <span class="fc-icon-badge"><span class="fc-icon">👻</span></span>
           <span class="fc-lbl">Guardian Spirit</span>
           <div class="fc-name">守護霊診断</div>
           <div class="fc-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚。</div>
@@ -738,7 +805,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
         <a href="/geimei" class="fcard ct-a fade-up">
-          <span class="fc-icon">🎭</span>
+          <span class="fc-icon-badge"><span class="fc-icon">🎭</span></span>
           <span class="fc-lbl">Geimei</span>
           <div class="fc-name">芸名診断</div>
           <div class="fc-desc">大喜利で見つける最強の芸名。</div>
@@ -855,7 +922,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap">
     <h2 class="closing-cta-title">さあ、あなたの運命を占ってみましょう</h2>
     <p class="closing-cta-sub">名前と生年月日を入力するだけ。西洋占星術×タロット×四柱推命の三位一体鑑定 ✨三星統合鑑定</p>
-    <a href="/sansei" class="btn-primary" data-ga-event="cta_click" data-cta-name="closing_sansei" data-cta-destination="/sansei">三星統合鑑定をはじめる →</a>
+    <a href="/sansei" class="btn-gold" data-ga-event="cta_click" data-cta-name="closing_sansei" data-cta-destination="/sansei">三星統合鑑定をはじめる →</a>
   </div>
 </section>
 
@@ -863,7 +930,6 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 <div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
-    <span class="pb-kamon">✦ ── ⛩ ── ✦</span>
     <div class="pb-gold-line"></div>
   </div>
 </div>
