@@ -465,7 +465,14 @@ body {
 @media (max-width: 639px) {
   .fcard {
     flex: none;
-    width: min(78vw, 300px);
+    /* カード幅計算式：viewport幅から.fortune-gridのpadding-left(7rem=112px、
+       フローティングメニュー危険域回避用・変更禁止)とgap(.65rem=10.4px)を差し引き、
+       次カードのpeekが常に約20%(15〜25%目安の範囲内)見えるよう逆算した式。
+       cardWidth = (viewportWidth - 112px - 10.4px) / 1.2
+       検算(Manager確認済み): 320px→164.7px(peek32.9px/20.0%)、375px→210.5px(peek42.1px/20.0%)、
+       390px→223.0px(peek44.6px/20.0%)、414px→243.0px(peek48.6px/20.0%)。
+       140px/250pxは極端な幅での防御的な下限・上限キャップ。 */
+    width: clamp(140px, calc((100vw - 7.65rem) / 1.2), 250px);
     border-radius: 12px;
     padding: .9rem .85rem .85rem;
   }
