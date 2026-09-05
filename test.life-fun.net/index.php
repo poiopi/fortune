@@ -394,18 +394,29 @@ body {
        スナップ後のいずれでも1枚目カードの実座標が危険域より右(112px > 101.6px)になるようにする。 */
     padding: 0 1.2rem 1rem 7rem;
     scroll-padding-left: 7rem;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE/legacy Edge */
   }
+  .fortune-grid::-webkit-scrollbar { display: none; } /* Chrome/Safari等WebKit系 */
   .fortune-category-head { padding: 0 1rem; }
 
   /* ─── カテゴリタブ：SPは大きなセグメントコントロール風に ─── */
-  .fc-tabs { gap: .5rem; padding: 0 1rem; max-width: none; }
+  .fc-tabs { gap: .4rem; padding: 0 1rem; max-width: none; }
+  /* ピル文字サイズ計算式：SP最小幅320pxを想定し、3ピル均等幅(flex:1 1 0)のうち
+     最長ラベル「カード・心理」「気軽に楽しむ」(6文字)が1行に収まるよう逆算。
+     .fc-tabs available = 320 - padding(1rem*2=32px) - gap(.4rem*2=12.8px) = 275.2px
+     1タブ幅 = 275.2 / 3 ≈ 91.73px
+     タブ内テキスト領域 = 91.73 - border(1.5px*2=3px) - padding(.4rem*2=12.8px) ≈ 75.93px
+     テキスト幅(6文字, font-size .72rem=11.52px, letter-spacing 0) = 6 × 11.52 ≈ 69.12px
+     マージン ≈ 6.8px確保（Manager確認済み）。375px以上ではさらに余裕あり。 */
   .fc-tab {
     flex: 1 1 0;
     font-family: var(--ff-sans);
-    font-size: .82rem;
+    font-size: .72rem;
     font-weight: 500;
-    letter-spacing: .04em;
-    padding: .8rem .6rem;
+    letter-spacing: 0;
+    white-space: nowrap;
+    padding: .8rem .4rem;
     min-height: 44px;
     display: flex; align-items: center; justify-content: center;
     border-radius: 999px;
