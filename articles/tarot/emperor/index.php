@@ -80,8 +80,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>玉座に座る皇帝の表情は厳しく、背後には険しい山が連なります。柔らかさより強さ、感情より理性——皇帝が体現するのはそういう世界です。しかし彼は無慈悲ではありません。秩序は守るためにある。ルールは混沌から人々を護るためにある。皇帝のカードが出る時、あなたに求められているのは「大人の判断」です。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">皇帝とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>皇帝とはどんなカードか</h2><p>玉座に座る皇帝の表情は厳しく、背後には険しい山が連なります。柔らかさより強さ、感情より理性——皇帝が体現するのはそういう世界です。しかし彼は無慈悲ではありません。秩序は守るためにある。ルールは混沌から人々を護るためにある。皇帝のカードが出る時、あなたに求められているのは「大人の判断」です。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>計画・ルール・構造によって目標が達成できる時です。感情に流されず、冷静に判断することが今最も賢い選択。リーダーとして立ち、責任を引き受けることで道が開きます。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>コントロールしすぎているか、または誰かの権威に抑圧されている状態です。「自分のやり方」に固執しすぎると、周囲との摩擦を生みます。または不当な権威に従わされていることへの反発——どちらも今見直すべきサインです。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">安定した関係を築く時期です。責任を持って相手に向き合い、長期的な視点で関係を育む姿勢が吉です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">支配的・頑固・感情を抑圧している関係への警告です。対等なパートナーシップが、今の関係には必要かもしれません。</div></div></div></section>

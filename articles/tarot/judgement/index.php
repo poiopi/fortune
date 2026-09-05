@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>天使ガブリエルがラッパを吹き鳴らし、棺から人々が目覚めて立ち上がります。これは終わりの審判ではなく、始まりの目覚めです。「今まで眠っていた自分の本質」が呼び起こされる瞬間。このカードが来る時、宇宙はあなたに問いかけています——「あなたは本当に生きていますか？ 本当にやりたいことをやっていますか？」</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">審判とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>審判とはどんなカードか</h2><p>天使ガブリエルがラッパを吹き鳴らし、棺から人々が目覚めて立ち上がります。これは終わりの審判ではなく、始まりの目覚めです。「今まで眠っていた自分の本質」が呼び起こされる瞬間。このカードが来る時、宇宙はあなたに問いかけています——「あなたは本当に生きていますか？ 本当にやりたいことをやっていますか？」</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>自分の本当の使命や価値観に気づく時です。これまでの人生を振り返り、新しい自分として立ち上がる転換点。ラッパの音が聞こえているなら、それに従ってください。人生の新しい章が始まろうとしています。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>過去の後悔や自己批判に縛られているか、人生の転換点を無視している状態です。ラッパの音が聞こえているのに、棺から出ることを恐れている——そんな状態です。立ち上がる勇気を持ってください。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">過去の関係を清算し、新しい愛のステージへ進む時期です。または古い絆が新しい形で復活することも。どちらも「過去から学んだ自分」として向き合うことが大切です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">過去の傷を引きずりすぎて新しい愛に踏み出せない状態です。自分を許すことが、次のステップへの鍵です。</div></div></div></section>

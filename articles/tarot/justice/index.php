@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>秤と剣を手に、中立的な表情で座る正義の女神。秤は公平さ、剣は真実の鋭さを象徴します。彼女は好き嫌いで判断しません。ただ事実を見て、正しく量るだけです。このカードが現れる時、あなたは「正直に自分を見る」よう求められています。他者への公正さだけでなく、自分への正直さも問われています。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">正義とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>正義とはどんなカードか</h2><p>秤と剣を手に、中立的な表情で座る正義の女神。秤は公平さ、剣は真実の鋭さを象徴します。彼女は好き嫌いで判断しません。ただ事実を見て、正しく量るだけです。このカードが現れる時、あなたは「正直に自分を見る」よう求められています。他者への公正さだけでなく、自分への正直さも問われています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>正しい行動が正しい結果をもたらす時期です。誠実に・公平に行動することが、今最も大切なことです。過去の誠実な行動が評価されるタイミングでもあります。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>自分に都合の良い解釈をしているか、または不公平な扱いを受けている状態です。秤が傾いているなら、なぜそうなったかを冷静に見つめ直す必要があります。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">誠実さと公平さが関係の安定をもたらします。隠し事のない、対等な関係が今の吉運をもたらします。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">一方的な関係・不誠実な行為への警告です。どちらかが不公平な扱いを受けているなら、今こそ話し合いの時です。</div></div></div></section>

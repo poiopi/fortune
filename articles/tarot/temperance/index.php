@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>天使は一方の杯から他方の杯へと、水を静かに注いでいます。片足は陸に、もう片足は水の中に。天界と地上の間に立ちながら、完璧なバランスを保っています。このカードが示すのは「完璧さ」ではなく「動的なバランス」——状況に合わせて常に調整し続ける、生きたバランス感覚です。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">節制とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>節制とはどんなカードか</h2><p>天使は一方の杯から他方の杯へと、水を静かに注いでいます。片足は陸に、もう片足は水の中に。天界と地上の間に立ちながら、完璧なバランスを保っています。このカードが示すのは「完璧さ」ではなく「動的なバランス」——状況に合わせて常に調整し続ける、生きたバランス感覚です。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は急がず着実に進む時です。バランスを保つことが最も賢い選択。一歩一歩を丁寧に踏みしめることで、確実に前に進めます。焦りを手放してください。今のペースが正しいです。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>どこかで過剰になっている状態です。仕事・感情・欲求のいずれかが暴走しています。今一番「やりすぎている」ことを一つ見つけて、意識的に減らしてみてください。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">お互いのペースを尊重した穏やかな関係が育まれます。押したり引いたりせず、二人のリズムを大切にする時期です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">片方に負担が偏っているか、ペースが合わない状態です。どちらかが無理をしているなら、それを正直に話し合う機会を作ってください。</div></div></div></section>

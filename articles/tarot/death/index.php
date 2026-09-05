@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>骸骨の騎士が白馬に乗り、花を持って進んでいます。彼の前に王も司教も膝をつきます——死は平等にすべてのものに訪れます。しかし白馬のたてがみに咲く白い花は、終わりの中に宿る希望の象徴。このカードを恐れる必要はありません。死神が来るのは、古い自分が終わり、新しい自分が生まれる時です。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">死神とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>死神とはどんなカードか</h2><p>骸骨の騎士が白馬に乗り、花を持って進んでいます。彼の前に王も司教も膝をつきます——死は平等にすべてのものに訪れます。しかし白馬のたてがみに咲く白い花は、終わりの中に宿る希望の象徴。このカードを恐れる必要はありません。死神が来るのは、古い自分が終わり、新しい自分が生まれる時です。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>何かが終わろうとしています。それを恐れず受け入れることで、次の扉が開きます。終わりは失敗ではなく、完了です。「手放す勇気」があるとき、人生は次の章へと進みます。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>終わるべきものにしがみついている状態です。変化を恐れることが成長を止めています。「変わりたくない」という気持ちは自然ですが、それが前進を妨げているなら、今こそ直視する時です。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">関係の大きな転換点が来ています。古い関係性のパターンを終わらせ、新しい形へと進化させる時期です。怖くても、流れに従ってください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">終わった関係への執着が、新しい出会いを妨げています。過去を手放すことが、未来への入り口になります。</div></div></div></section>

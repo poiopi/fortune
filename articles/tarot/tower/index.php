@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>高い塔の頂点に雷が落ち、人々が投げ出されます。しかし空には雷雲の中に光があります。塔が崩れるのは、それが人間の傲慢さで建てられた嘘の建物だからです。真実の上に建てられたものは、雷に耐えます。このカードが来る時、あなたの人生の中で「嘘の上に建てられた何か」が崩れようとしています。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">塔とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>塔とはどんなカードか</h2><p>高い塔の頂点に雷が落ち、人々が投げ出されます。しかし空には雷雲の中に光があります。塔が崩れるのは、それが人間の傲慢さで建てられた嘘の建物だからです。真実の上に建てられたものは、雷に耐えます。このカードが来る時、あなたの人生の中で「嘘の上に建てられた何か」が崩れようとしています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>予期せぬ変化が来ます。しかしそれは必要な崩壊です。真実が明らかになる時——短期的には混乱があっても、長期的には正しい方向への転換です。崩れることを恐れないでください。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>来るべき変化を必死に避けているか、既に崩れかけているのに気づいていない状態です。問題を先送りにするほど、後で大きな崩壊になります。今のうちに少しずつ変えていく勇気が必要です。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">隠れていた問題が一気に噴出します。短期的には辛いですが、偽りの関係を終わらせる力をこのカードは持っています。本物の関係なら、この嵐を超えられます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">関係の崩壊を恐れて問題を先送りにしています。早めに対話することで、大崩壊を防げます。</div></div></div></section>

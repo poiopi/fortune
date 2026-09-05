@@ -53,8 +53,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>法王は二本の柱の間の玉座に座り、信者たちを祝福しています。彼が体現するのは「受け継がれてきた知恵」の力です。すべてを自分で発見する必要はない。先人が積み上げた道をたどることにも、深い意味があります。このカードが現れる時、信頼できる師や制度の中に学びがあることを示しています。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">法王とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>法王とはどんなカードか</h2><p>法王は二本の柱の間の玉座に座り、信者たちを祝福しています。彼が体現するのは「受け継がれてきた知恵」の力です。すべてを自分で発見する必要はない。先人が積み上げた道をたどることにも、深い意味があります。このカードが現れる時、信頼できる師や制度の中に学びがあることを示しています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>伝統的な方法、または信頼できる人からの助言に従うことで道が開ける時期です。正規のルートを選ぶことが、今は最も安全で確実な道。資格取得・正式な関係・正攻法の交渉が吉です。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>ルールに縛られすぎているか、または既存の権威や慣習に疑問を感じている状態です。形式を守ることが目的化してしまっていないか確認を。本質を見失わないようにしながら、慣習を疑う勇気も時には必要です。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">結婚・正式な関係への進展を示します。伝統的なアプローチ・誠実な姿勢が吉。遠回りに見えても、正式な形を取ることが後々の安定につながります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">型にはまった関係への窮屈さを感じているサインです。社会的なプレッシャーによる結婚願望と、本心をきちんと区別しましょう。</div></div></div></section>

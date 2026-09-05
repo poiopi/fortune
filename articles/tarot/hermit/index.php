@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>雪深い山頂で、老人がランタンを掲げています。彼は迷子ではありません。意図的にここにいる。世界の喧騒から離れ、自分の内側に向かっているのです。隠者のランタンは「自分だけの光」——誰かの真実ではなく、あなた自身の真実を照らすために在ります。一人でいることを恐れずにいられる時、人は最も深く成長します。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">隠者とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>隠者とはどんなカードか</h2><p>雪深い山頂で、老人がランタンを掲げています。彼は迷子ではありません。意図的にここにいる。世界の喧騒から離れ、自分の内側に向かっているのです。隠者のランタンは「自分だけの光」——誰かの真実ではなく、あなた自身の真実を照らすために在ります。一人でいることを恐れずにいられる時、人は最も深く成長します。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は静かに自分と向き合う時です。群れから離れることで真実が見えてきます。この孤独は弱さではなく、選択です。賢者は意図的に一人の時間を作ります。今のあなたもそれができる時期です。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>孤立を恐れて群れに依存しているか、または引きこもりすぎて世界から切り離されている状態です。一人になることと孤立することは違います。外とのつながりを保ちながら、内省の時間を作ることが今は必要です。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">一人の時間を大切にしてください。自分を深く知ることが良い関係の土台になります。焦らず自分と向き合うことで、次の関係の質が変わります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">相手との心の距離が生まれています。言葉が届かなくなっているなら、まず対話の場を作ることが大切です。</div></div></div></section>

@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>大きな悪魔の台座に繋がれた二人の人物。しかしよく見ると、鎖は緩い。首に引っかかっているだけで、いつでも外せます。彼らが逃げないのは、悪魔の力ではなく、自分たちが諦めているからです。悪魔のカードは「あなたを縛っているのは誰ですか？」という問いを突きつけます。外側を責める前に、内側を見てください。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">悪魔とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>悪魔とはどんなカードか</h2><p>大きな悪魔の台座に繋がれた二人の人物。しかしよく見ると、鎖は緩い。首に引っかかっているだけで、いつでも外せます。彼らが逃げないのは、悪魔の力ではなく、自分たちが諦めているからです。悪魔のカードは「あなたを縛っているのは誰ですか？」という問いを突きつけます。外側を責める前に、内側を見てください。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>何かへの依存・執着に気づいていない状態です。見えない鎖に縛られています。それは人かもしれない、仕事かもしれない、スマートフォンかもしれない、怠惰かもしれない——気づくだけで、変化が始まります。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>束縛から解放されるタイミングが来ています。または気づきによって鎖が外れ始めている状態です。解放の感覚を大切にしてください。それはあなたの魂が正しい方向を知っているサインです。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">不健全な依存関係・共依存への警告です。愛ではなく恐れで繋がっていないか、冷静に見つめ直してください。本当の愛は相手を縛りません。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">不健全な関係から解放されるタイミングが来ています。やっと自由になれるサインです。怖くても、そちらに進んでください。</div></div></div></section>

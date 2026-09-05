@@ -163,7 +163,7 @@ ob_start();
   <nav class="toc">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#overview"></a></li>
+      <li><a href="#overview">魔術師とはどんなカードか</a></li>
       <li><a href="#upright">正位置の意味</a></li>
       <li><a href="#reversed">逆位置の意味</a></li>
       <li><a href="#love">恋愛での意味</a></li>
@@ -173,7 +173,7 @@ ob_start();
   </nav>
 
   <section class="art-section" id="overview">
-    <h2></h2>
+    <h2>魔術師とはどんなカードか</h2>
     <p>自分の中にすでに全ての道具が揃っている——魔術師はそう告げます。テーブルの上には杖・剣・聖杯・金貨。大アルカナ四元素の象徴がすべて揃い、魔術師はそれを自在に操る存在です。「始める前に準備が必要」ではなく「今持っているものがすでに十分」を伝えるカード。準備を言い訳にしているなら、このカードはその幻想を打ち砕きます。</p>
   </section>
 

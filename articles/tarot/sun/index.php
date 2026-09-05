@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>白馬に乗った子供が太陽に向かって手を広げています。後ろには向日葵が咲き誇り、空いっぱいに太陽が輝いています。子供の笑顔には計算がありません。ただ、太陽を楽しんでいる。このカードはそれでいい、と言っています。幸せを複雑にしなくていい。喜びを受け取ることを許可してください。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">太陽とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>太陽とはどんなカードか</h2><p>白馬に乗った子供が太陽に向かって手を広げています。後ろには向日葵が咲き誇り、空いっぱいに太陽が輝いています。子供の笑顔には計算がありません。ただ、太陽を楽しんでいる。このカードはそれでいい、と言っています。幸せを複雑にしなくていい。喜びを受け取ることを許可してください。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今のあなたは輝いています。その輝きを受け取ることを許可してください。「こんなに上手くいっていいのかな」という不安は手放して。太陽が輝くことに理由は要りません。あなたが幸せでいることにも、理由は要りません。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>自分の輝きを信じられていないか、または一時的な曇り空の状態です。太陽は常に雲の上にある——今は見えなくても、光は消えていません。少し時間をおけば、また輝けます。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">関係が明るく輝く時期です。喜びと幸福感に満ちた愛のサイン。一緒にいると心が軽くなる——その感覚を大切にしてください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">関係の中で自分の輝きが失われているサインです。相手に合わせすぎて、自分らしさを失っていないか確認してください。</div></div></div></section>

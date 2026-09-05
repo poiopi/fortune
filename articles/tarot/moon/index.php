@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>月の光の下、犬と狼が遠吠えをしています。エビが水から這い出し、遠くには二つの塔が立っています。月は光を照らしますが、その光は直接的ではありません——影と陰影が生まれ、現実と幻想の境界が曖昧になります。このカードが現れる時、あなたは「見えないもの」と向き合っています。怖れずに、ただ感じて進んでください。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">月とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>月とはどんなカードか</h2><p>月の光の下、犬と狼が遠吠えをしています。エビが水から這い出し、遠くには二つの塔が立っています。月は光を照らしますが、その光は直接的ではありません——影と陰影が生まれ、現実と幻想の境界が曖昧になります。このカードが現れる時、あなたは「見えないもの」と向き合っています。怖れずに、ただ感じて進んでください。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は霧の中にいます。焦らず、直感を信じて一歩ずつ進む時期です。「何が起きているかわからない」という感覚は正常です。全てが明確に見える前に動くことを、月は求めていません。ただ感じて、信じて、進んでください。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>混乱が解消に向かっています。霧の中に隠れていた真実が徐々に明らかになってきます。これまで「なんとなく嫌だった」ことの正体が、ついに見えてくるかもしれません。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">相手の気持ちが読めない不安な時期です。想像で判断せず、直接対話することが今の最善手です。不安は想像が生み出すことが多い——確かめることで、霧は晴れます。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">不安の霧が晴れてきました。相手の本音が見えてくる時期です。今まで感じていた「違和感」が言語化できるようになってきています。</div></div></div></section>

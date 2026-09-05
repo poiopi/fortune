@@ -381,11 +381,63 @@ body {
 }
 @media (max-width: 639px) {
   .fortune-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: none;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: .65rem;
-    padding: 0 1rem 1rem;
+    /* 左paddingでフローティングメニュー(.fmenu-btn 危険域 x≈13.6〜101.6px)を回避。
+       scroll-padding-leftと同値の7rem(112px)を確保し、静止時(scrollLeft:0)・
+       スナップ後のいずれでも1枚目カードの実座標が危険域より右(112px > 101.6px)になるようにする。 */
+    padding: 0 1.2rem 1rem 7rem;
+    scroll-padding-left: 7rem;
   }
   .fortune-category-head { padding: 0 1rem; }
+
+  /* ─── カテゴリタブ：SPは大きなセグメントコントロール風に ─── */
+  .fc-tabs { gap: .5rem; padding: 0 1rem; max-width: none; }
+  .fc-tab {
+    flex: 1 1 0;
+    font-family: var(--ff-sans);
+    font-size: .82rem;
+    font-weight: 500;
+    letter-spacing: .04em;
+    padding: .8rem .6rem;
+    min-height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 999px;
+    border: 1.5px solid rgba(201,168,76,.4);
+    background: transparent;
+  }
+  .fc-tab-active {
+    background: linear-gradient(120deg, var(--gold), var(--gold-dk));
+    border-color: var(--gold);
+    color: var(--void);
+    font-weight: 700;
+  }
+
+  /* ─── カテゴリ見出し：SPは「棚のタイトル」として視認性を高める ─── */
+  .fc-cat-eyebrow {
+    font-family: var(--ff-serif);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    color: var(--gold-lt);
+    text-transform: none;
+  }
+
+  /* ─── 棚の右端フェード：3枚目以降のpeekを演出（クリックは妨げない） ─── */
+  .fc-shelf { position: relative; }
+  .fc-shelf::after {
+    content: '';
+    position: absolute; top: 0; right: 0; bottom: 1rem;
+    width: 2.6rem;
+    background: linear-gradient(to right, transparent, var(--deep) 88%);
+    pointer-events: none;
+  }
 }
 
 /* 占いカード共通 */
@@ -413,7 +465,7 @@ body {
 @media (max-width: 639px) {
   .fcard {
     flex: none;
-    width: 100%;
+    width: min(78vw, 300px);
     border-radius: 12px;
     padding: .9rem .85rem .85rem;
   }
@@ -653,7 +705,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   </div>
 
   <nav class="fc-tabs" aria-label="占いカテゴリ">
-    <a href="#cat-classic" class="fc-tab">本格占い</a>
+    <a href="#cat-classic" class="fc-tab fc-tab-active">本格占い</a>
     <a href="#cat-cards" class="fc-tab">カード・心理</a>
     <a href="#cat-casual" class="fc-tab">気軽に楽しむ</a>
   </nav>
@@ -664,6 +716,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       <div class="fortune-category-head">
         <span class="fc-cat-eyebrow">本格占い</span>
       </div>
+      <div class="fc-shelf">
       <div class="fortune-grid">
 
         <a href="/sansei" class="fcard ct-s fade-up">
@@ -731,12 +784,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
       </div>
+      </div>
     </div>
 
     <div class="fortune-category" id="cat-cards">
       <div class="fortune-category-head">
         <span class="fc-cat-eyebrow">カード・心理</span>
       </div>
+      <div class="fc-shelf">
       <div class="fortune-grid">
 
         <a href="/mbti" class="fcard ct-i fade-up">
@@ -764,12 +819,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
         </a>
 
       </div>
+      </div>
     </div>
 
     <div class="fortune-category" id="cat-casual">
       <div class="fortune-category-head">
         <span class="fc-cat-eyebrow">気軽に楽しむ</span>
       </div>
+      <div class="fc-shelf">
       <div class="fortune-grid">
 
         <a href="/rpg" class="fcard ct-gn fade-up">
@@ -812,6 +869,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
           <span class="fc-btn">診断する →</span>
         </a>
 
+      </div>
       </div>
     </div>
 
@@ -994,6 +1052,22 @@ const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: .12 });
 document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+/* ══ カテゴリタブ scroll-spy（SPの横スクロール棚と連動。表示上の効果はSP用CSSのみで発火） ══ */
+const fcCategories = document.querySelectorAll('.fortune-category');
+const fcTabs = document.querySelectorAll('.fc-tab');
+if (fcCategories.length && fcTabs.length) {
+  const fcSpy = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const activeTab = document.querySelector('.fc-tab[href="#' + entry.target.id + '"]');
+      if (!activeTab) return;
+      fcTabs.forEach(t => t.classList.remove('fc-tab-active'));
+      activeTab.classList.add('fc-tab-active');
+    });
+  }, { threshold: 0, rootMargin: '-40% 0px -55% 0px' });
+  fcCategories.forEach(el => fcSpy.observe(el));
+}
 
 /* ══ スマホメニュー ══ */
 window.toggleMenu = function(){

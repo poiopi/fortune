@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>スフィンクス・アヌビス・蛇が輪の周りを回り、輪の外には四大元素の象徴が座っています。この輪は止まりません。過去も現在も未来も、すべては輪の一部です。今あなたが底にいると感じているなら、輪は必ず上を向きます。今頂点にいると感じているなら、謙虚さを持って流れを楽しんでください。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">運命の輪とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>運命の輪とはどんなカードか</h2><p>スフィンクス・アヌビス・蛇が輪の周りを回り、輪の外には四大元素の象徴が座っています。この輪は止まりません。過去も現在も未来も、すべては輪の一部です。今あなたが底にいると感じているなら、輪は必ず上を向きます。今頂点にいると感じているなら、謙虚さを持って流れを楽しんでください。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>運気の転換点が来ています。流れに乗ることで大きなチャンスをつかめる時期です。変化を恐れず、むしろ変化の波を楽しむ姿勢が幸運を引き寄せます。今動けば、タイミングが合います。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>同じパターンを繰り返しているか、変化のタイミングを見逃している状態です。「また同じことが起きた」と感じているなら、それはサインです。輪の法則に従うことを拒んでいる自分に気づいてください。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">関係の転換点が訪れています。新しい段階へ進む時が来ている、または関係が大きく変わるタイミングです。変化を受け入れることが吉です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">同じ問題を繰り返している関係には、根本的な変化が必要です。パターンを変えない限り、輪は同じ場所を回り続けます。</div></div></div></section>

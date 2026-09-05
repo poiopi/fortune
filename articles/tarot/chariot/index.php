@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>冠を持つ戦士が、黒と白のスフィンクスに引かれた戦車に乗っています。二頭のスフィンクスは相反する力——この二つを制御することが戦車の本質です。感情と理性、本能と意志。どちらかを切り捨てるのではなく、両方を手綱で制御することで、戦車は動き出します。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">戦車とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>戦車とはどんなカードか</h2><p>冠を持つ戦士が、黒と白のスフィンクスに引かれた戦車に乗っています。二頭のスフィンクスは相反する力——この二つを制御することが戦車の本質です。感情と理性、本能と意志。どちらかを切り捨てるのではなく、両方を手綱で制御することで、戦車は動き出します。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は前進あるのみです。意志を固め、迷わず突き進む時。「できるかどうか」ではなく「やるかどうか」を問われています。あなたの中に戦士はいます——あとはその戦士に、前を向かせるだけです。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>力任せで突き進み、周囲との衝突を招いているか、または方向性を失って迷走している状態です。アクセルを踏む前に、行き先を確認してください。感情的な反応が判断を歪めていないか見直す時です。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">積極的なアプローチで関係が前進します。障害を乗り越えて結ばれる暗示があります。臆さず、あなたの気持ちを伝えることが今の最善手です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">感情的になりすぎて相手を傷つけているか、または執着が強すぎています。力強さが「重さ」になっていないか確認してください。</div></div></div></section>

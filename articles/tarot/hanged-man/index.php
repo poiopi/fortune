@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>一本の木から逆さに吊られた男の顔は、穏やかです。苦しんでいません。なぜなら彼は自分でそこにいることを選んだから。逆さの視点から見える世界は、普段とまったく違います。右と左が逆になり、上と下が入れ替わる——この強制的な「逆」の体験が、新しい真実への扉を開きます。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">吊るされた男とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>吊るされた男とはどんなカードか</h2><p>一本の木から逆さに吊られた男の顔は、穏やかです。苦しんでいません。なぜなら彼は自分でそこにいることを選んだから。逆さの視点から見える世界は、普段とまったく違います。右と左が逆になり、上と下が入れ替わる——この強制的な「逆」の体験が、新しい真実への扉を開きます。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今は動かず待つことが正解です。この停滞には意味があります。強制的な休止の中に答えが隠されています。「何もできない」ではなく「今は受け取る時」と捉え直してください。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>意味のない我慢を続けているか、現実を直視せず被害者を演じている状態です。自ら選んでいない停滞には、意味がありません。そろそろ動き出すタイミングが来ています。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">今は焦らないことが正解です。相手のペースに合わせる忍耐が、今の関係には必要です。押しても引いても進まない時は、ただ待つことが最善です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">一方的な犠牲・献身への疲れを感じているサインです。報われない関係に疑問を持ち始めたなら、その感覚は正しいです。</div></div></div></section>

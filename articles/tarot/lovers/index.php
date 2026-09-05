@@ -53,8 +53,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>天使が見守る中、男と女が立っています。背景にある林檎の木と蛇は、選択の誘惑と責任を暗示します。恋人のカードは「ただ恋愛する」のではなく、「誰と・どう生きるか」を選ぶカードです。表面的な選択ではなく、魂の深さで選べているかどうかが問われています。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">恋人とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>恋人とはどんなカードか</h2><p>天使が見守る中、男と女が立っています。背景にある林檎の木と蛇は、選択の誘惑と責任を暗示します。恋人のカードは「ただ恋愛する」のではなく、「誰と・どう生きるか」を選ぶカードです。表面的な選択ではなく、魂の深さで選べているかどうかが問われています。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>心から選んだ道、または人との関係が正しい方向に進んでいます。二者択一の場面では、頭より心の声を優先することが吉。今のあなたには、自分が本当に望むものを選ぶ準備ができています。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>二者択一を先延ばしにしているか、価値観が合わない関係に引き止められている状態です。「どちらも選べない」という状態は、実は「選ばない」という選択をしているに等しいことを意識してください。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">深い信頼と愛情で結ばれる時期です。真剣な関係への発展を示す吉サイン。お互いの価値観が一致していることが、この時期の恋愛の核心です。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">浮気・不誠実・どちらかへの優柔不断な態度への警告です。一方を選ぶ勇気が、今の関係には必要かもしれません。</div></div></div></section>

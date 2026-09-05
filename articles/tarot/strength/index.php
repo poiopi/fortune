@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>若い女性が、おだやかな微笑みで獅子の口に手を添えています。力で抑えるのではなく、愛で従わせる——この女性は恐れていません。恐れがないから、獅子は従います。このカードが伝えるのは、本当の勇気とは恐れを感じないことではなく、恐れがあっても進める力だということです。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">力とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>力とはどんなカードか</h2><p>若い女性が、おだやかな微笑みで獅子の口に手を添えています。力で抑えるのではなく、愛で従わせる——この女性は恐れていません。恐れがないから、獅子は従います。このカードが伝えるのは、本当の勇気とは恐れを感じないことではなく、恐れがあっても進める力だということです。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>今の状況を乗り越える力は、すでにあなたの中にあります。外側の助けを待つのではなく、内側にある静かな強さを信じてください。恐れず、柔らかく。それがこのカードの処方箋です。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>自分の感情や衝動に振り回されているか、または自信を失って立ちすくんでいる状態です。本来あなたが持っている強さが、恐怖に隠されています。一歩引いて、自分の中の獅子と向き合う時です。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">相手を受け入れる包容力が関係を深めます。忍耐と優しさが愛を育てる時期。強がりではなく、本当の自分を見せることが相手との絆を作ります。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">感情的な爆発や相手への不満をため込みすぎている可能性があります。我慢が限界に来る前に、丁寧な対話を選んでください。</div></div></div></section>

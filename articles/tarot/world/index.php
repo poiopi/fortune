@@ -49,8 +49,8 @@ ob_start();
   require __DIR__.'/../../../inc/article-cta.php';
   ?>
 
-  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview"></a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
-  <section class="art-section" id="overview"><h2></h2><p>月桂樹の輪の中で踊る女性の周りに、四大元素の象徴が取り囲んでいます。彼女は自由で、完成していて、輝いています。旅の0番「愚者」から始まった22枚の物語が、ここで完結します。しかし——世界が次に向かうのは、再び0番の愚者です。完成は終わりではなく、新しい旅の入り口です。</p></section>
+  <nav class="toc"><p class="toc-title">目次</p><ol><li><a href="#overview">世界とはどんなカードか</a></li><li><a href="#upright">正位置の意味</a></li><li><a href="#reversed">逆位置の意味</a></li><li><a href="#love">恋愛での意味</a></li><li><a href="#work">仕事・お金での意味</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+  <section class="art-section" id="overview"><h2>世界とはどんなカードか</h2><p>月桂樹の輪の中で踊る女性の周りに、四大元素の象徴が取り囲んでいます。彼女は自由で、完成していて、輝いています。旅の0番「愚者」から始まった22枚の物語が、ここで完結します。しかし——世界が次に向かうのは、再び0番の愚者です。完成は終わりではなく、新しい旅の入り口です。</p></section>
   <section class="art-section" id="upright"><h2>正位置の意味</h2><div class="reading-box upright"><div class="reading-box-label">UPRIGHT · 正位置</div><p>一つのサイクルが完成しました。達成感と自由を味わう時期です。これだけのことを成し遂げてきた自分を、しっかりと認めてください。そして新しい旅への準備も、もう始まっています。</p></div></section>
   <section class="art-section" id="reversed"><h2>逆位置の意味</h2><div class="reading-box reversed"><div class="reading-box-label">REVERSED · 逆位置</div><p>ゴール直前で立ち止まっています。完璧主義や恐れがフィニッシュラインを遠ざけています。「もっと良くなってから」ではなく、今のあなたのまま完成させる勇気を持ってください。</p></div></section>
   <section class="art-section" id="love"><h2>恋愛での意味</h2><div class="cat-grid"><div class="cat-card"><div class="cat-label">UPRIGHT · 正位置</div><div class="cat-text">関係が理想的な形に到達しています。または長い旅を経た深い絆が完成した時期です。素直にこの幸せを受け取ってください。</div></div><div class="cat-card"><div class="cat-label">REVERSED · 逆位置</div><div class="cat-text">「まだ完璧じゃない」という思いが関係の完成を阻んでいます。あなたは十分です。相手も十分です。今の関係を完成と認めてください。</div></div></div></section>
