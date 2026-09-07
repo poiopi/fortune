@@ -350,37 +350,124 @@ body {
 .fortune-section {
   padding: 4rem 0 3rem;
   background: var(--deep);
+  /* v4: モックアップ由来のローカルトークン。.fortune-sectionにスコープし、グローバル:root(36行目付近)には追記しない */
+  --fs-surface-a: hsl(258 28% 26%);
+  --fs-surface-b: hsl(258 28% 32%);
+  --fs-border: hsl(40 38% 40%);
+  --fs-border-hover: hsl(42 45% 58%);
+  --fs-gold-dim: hsl(42 32% 48%);
+  --fs-r-card: 14px;
 }
 .fortune-section-head { margin-bottom: 1.6rem; }
 
-/* ─── カテゴリアンカーナビ ─── */
-.fc-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; max-width: 820px; margin: 0 auto 2rem; padding: 0 1.2rem; }
-.fc-tab { flex: 1 1 160px; text-align: center; font-family: var(--ff-mono); font-size: .66rem; letter-spacing: .12em; color: var(--gold-lt); text-decoration: none; padding: .55rem .9rem; border: 1px solid rgba(201,168,76,.35); border-radius: 24px; background: rgba(201,168,76,.05); transition: border-color .2s, background .2s; }
-.fc-tab:hover, .fc-tab:focus-visible { border-color: var(--gold); background: rgba(201,168,76,.12); }
+/* ─── v4: レーン構成（占いを選ぶ） ─── */
+.fs-lanes { max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.6rem; }
+.lane + .lane { border-top: 1px solid var(--fs-border); padding-top: 2rem; }
+.lane-head { padding: 0 1.2rem; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 4px; }
+.lane-eyebrow { display: flex; align-items: baseline; gap: .6rem; }
+.lane-num { font-family: var(--ff-mono); font-size: .62rem; color: var(--muted); letter-spacing: .06em; }
+.lane-cat { font-family: var(--ff-sans); font-size: .62rem; color: var(--muted); letter-spacing: .1em; }
+.lane-title { font-family: var(--ff-serif); font-weight: 700; font-size: 1.15rem; letter-spacing: .08em; color: var(--gold); }
+.lane-tagline { font-size: .78rem; color: var(--text-secondary); }
 
-/* ─── カテゴリブロック ─── */
-.fortune-categories {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
+/* ─── カード共通の質感・額縁（feature-card/crow/tile/dcard 4種共通） ─── */
+.feature-card, .crow, .tile, .dcard { position: relative; text-decoration: none; color: inherit; transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+.feature-card, .tile, .dcard {
+  background: linear-gradient(145deg, var(--fs-surface-b), var(--fs-surface-a));
+  border: 1px solid var(--fs-border);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.05), 0 4px 20px rgba(0,0,0,.4);
 }
-.fortune-category { scroll-margin-top: 76px; }
-.fortune-category-head { margin-bottom: 1rem; padding: 0 1.2rem; }
-.fc-cat-eyebrow {
-  font-family: var(--ff-mono);
-  font-size: .62rem;
-  letter-spacing: .25em;
-  color: var(--gold);
-  text-transform: uppercase;
+.feature-card:hover, .feature-card:focus-visible,
+.tile:hover, .tile:focus-visible,
+.dcard:hover, .dcard:focus-visible {
+  border-color: var(--fs-border-hover); transform: translateY(-3px);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.1), 0 12px 28px rgba(201,168,76,.15);
 }
-.fortune-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  gap: .9rem;
-  padding: 0 1.2rem;
+/* 四隅ノッチの額縁装飾（4種共通） */
+.feature-card::before, .crow::before, .tile::before, .dcard::before {
+  content: ''; position: absolute; inset: 5px; pointer-events: none;
+  border: 1.5px solid hsl(45 75% 74% / .85); border-radius: calc(var(--fs-r-card) - 6px);
+  background-repeat: no-repeat; background-size: 11px 11px, 11px 11px, 11px 11px, 11px 11px;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>");
+  background-position: top -1px left -1px, top -1px right -1px, bottom -1px left -1px, bottom -1px right -1px;
 }
+.fs-ic { width: 1em; height: 1em; stroke: currentColor; stroke-width: 1.4; fill: none; stroke-linecap: round; stroke-linejoin: round; vertical-align: -.12em; }
+.feature-cta { font-size: .8rem; color: var(--fs-gold-dim); display: inline-flex; align-items: center; gap: 6px; }
+
+/* ─── レーン01：本格占い（フィーチャーカード＋随伴7件・4列dense grid） ─── */
+.lane01-grid { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-flow: row dense; gap: .75rem; }
+.companions { display: contents; }
+.feature-card {
+  grid-column: span 2; grid-row: span 2;
+  border-radius: var(--fs-r-card); padding: 1.5rem;
+  display: flex; flex-direction: column; gap: .75rem;
+}
+.feature-card .ic-wrap { width: 44px; height: 44px; color: var(--gold); font-size: 26px; display: flex; align-items: center; justify-content: center; }
+.feature-card .ic-wrap svg { filter: drop-shadow(0 0 5px hsl(42 70% 60% / .45)); }
+.feature-card h3 { font-family: var(--ff-serif); font-weight: 700; font-size: 1.75rem; letter-spacing: .08em; color: var(--text); }
+.feature-card p { font-size: .85rem; color: var(--text-secondary); line-height: 1.7; }
+.feature-card .feature-cta { align-self: flex-start; margin-top: auto; }
+/* 青海波風の余白装飾（デスクトップのみ。SPでは640行目付近のメディアクエリでcontent:noneにする） */
+.feature-card::after {
+  content: ''; position: absolute; inset: 9px; pointer-events: none; border-radius: calc(var(--fs-r-card) - 9px);
+  background-repeat: repeat; background-size: 40px 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20'><path d='M0,20 A20,20 0 0,1 40,20' fill='none' stroke='%23c9a84c' stroke-width='1' opacity='0.5'/><path d='M6,20 A14,14 0 0,1 34,20' fill='none' stroke='%23c9a84c' stroke-width='1' opacity='0.5'/><path d='M12,20 A8,8 0 0,1 28,20' fill='none' stroke='%23c9a84c' stroke-width='1' opacity='0.5'/></svg>");
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='f' x1='0' y1='0' x2='1' y2='0'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='65%25' stop-color='white' stop-opacity='1'/></linearGradient><linearGradient id='vt' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='1'/><stop offset='100%25' stop-color='white' stop-opacity='0'/></linearGradient><linearGradient id='vb' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='100%25' stop-color='white' stop-opacity='1'/></linearGradient><mask id='mt'><rect x='0' y='0' width='100' height='34' fill='url(%23vt)'/></mask><mask id='mb'><rect x='0' y='66' width='100' height='34' fill='url(%23vb)'/></mask></defs><rect x='0' y='0' width='100' height='34' fill='url(%23f)' mask='url(%23mt)'/><rect x='0' y='66' width='100' height='34' fill='url(%23f)' mask='url(%23mb)'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='f' x1='0' y1='0' x2='1' y2='0'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='65%25' stop-color='white' stop-opacity='1'/></linearGradient><linearGradient id='vt' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='1'/><stop offset='100%25' stop-color='white' stop-opacity='0'/></linearGradient><linearGradient id='vb' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='100%25' stop-color='white' stop-opacity='1'/></linearGradient><mask id='mt'><rect x='0' y='0' width='100' height='34' fill='url(%23vt)'/></mask><mask id='mb'><rect x='0' y='66' width='100' height='34' fill='url(%23vb)'/></mask></defs><rect x='0' y='0' width='100' height='34' fill='url(%23f)' mask='url(%23mt)'/><rect x='0' y='66' width='100' height='34' fill='url(%23f)' mask='url(%23mb)'/></svg>");
+  -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+}
+.crow {
+  grid-column: span 1;
+  padding: 1rem; border-radius: 10px;
+  display: flex; align-items: center; gap: .8rem;
+  background: hsl(258 24% 16%); border: 1px solid var(--fs-border); box-shadow: none;
+}
+.crow:hover, .crow:focus-visible { background: hsl(258 26% 20%); border-color: var(--fs-border-hover); box-shadow: none; }
+.crow .ic-wrap { width: 60px; height: 60px; color: var(--fs-gold-dim); font-size: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.crow-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.crow-body h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .85rem; color: var(--text); }
+.crow-body span { font-size: .65rem; color: var(--muted); }
+.crow .feature-cta { font-size: .62rem; margin-top: 2px; }
+
 @media (max-width: 639px) {
-  .fortune-grid {
+  .lane01-grid { display: block; padding: 0 1.2rem; }
+  .companions { display: flex; flex-direction: column; gap: .5rem; }
+  .feature-card { grid-column: unset; grid-row: unset; margin-bottom: .9rem; padding: 1.2rem; }
+  .feature-card h3 { font-size: 1.15rem; }
+  .feature-card::after { content: none; }
+  .crow { grid-column: unset; padding: .7rem; background: linear-gradient(145deg, hsl(258 24% 18%), hsl(258 24% 14%)); border-color: transparent; }
+  .crow:hover, .crow:focus-visible { border-color: var(--fs-border); }
+}
+
+/* ─── レーン02：カード・心理（タイル） ─── */
+.tiles { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.tile { border-radius: 12px; padding: 1rem; display: flex; align-items: center; gap: 1rem; min-height: auto; }
+.tile .ic-wrap { width: 64px; height: 64px; color: var(--gold); font-size: 43px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.tile-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.tile h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .95rem; color: var(--text); margin-top: .5rem; }
+.tile-body span { font-size: .69rem; color: var(--muted); line-height: 1.5; flex: 1; }
+.tile .feature-cta { font-size: .69rem; margin-top: auto; }
+
+@media (max-width: 639px) {
+  .tiles { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+  .tile { min-height: 132px; }
+}
+
+/* ─── レーン03：気軽に楽しむ（レール） ─── */
+.rail { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; }
+.dcard { border-radius: 12px; padding: 1rem; display: flex; align-items: center; gap: .75rem; width: auto; }
+.dcard .ic-wrap { width: 56px; height: 56px; color: var(--fs-gold-dim); font-size: 37px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.dcard-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.dcard h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .8rem; color: var(--text); margin-bottom: .4rem; line-height: 1.4; }
+.dcard .feature-cta { font-size: .69rem; }
+
+@media (max-width: 639px) {
+  .rail {
     display: flex;
     flex-wrap: nowrap;
     grid-template-columns: none;
@@ -388,151 +475,21 @@ body {
     overflow-y: visible;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: .65rem;
+    gap: .6rem;
     /* 左paddingでフローティングメニュー(.fmenu-btn 危険域 x≈13.6〜101.6px)を回避。
        scroll-padding-leftと同値の7rem(112px)を確保し、静止時(scrollLeft:0)・
-       スナップ後のいずれでも1枚目カードの実座標が危険域より右(112px > 101.6px)になるようにする。 */
-    padding: 0 1.2rem 1rem 7rem;
+       スナップ後のいずれでも1枚目カードの実座標が危険域より右(112px > 101.6px)になるようにする。
+       この値は既存.fortune-gridと同一・変更禁止。 */
+    padding: 2px 1.2rem 1rem 7rem;
     scroll-padding-left: 7rem;
     scrollbar-width: none;       /* Firefox */
     -ms-overflow-style: none;    /* IE/legacy Edge */
   }
-  .fortune-grid::-webkit-scrollbar { display: none; } /* Chrome/Safari等WebKit系 */
-  .fortune-category-head { padding: 0 1rem; }
-
-  /* ─── カテゴリタブ：SPは大きなセグメントコントロール風に ─── */
-  .fc-tabs { gap: .4rem; padding: 0 1rem; max-width: none; }
-  /* ピル文字サイズ計算式：SP最小幅320pxを想定し、3ピル均等幅(flex:1 1 0)のうち
-     最長ラベル「カード・心理」「気軽に楽しむ」(6文字)が1行に収まるよう逆算。
-     .fc-tabs available = 320 - padding(1rem*2=32px) - gap(.4rem*2=12.8px) = 275.2px
-     1タブ幅 = 275.2 / 3 ≈ 91.73px
-     タブ内テキスト領域 = 91.73 - border(1.5px*2=3px) - padding(.4rem*2=12.8px) ≈ 75.93px
-     テキスト幅(6文字, font-size .72rem=11.52px, letter-spacing 0) = 6 × 11.52 ≈ 69.12px
-     マージン ≈ 6.8px確保（Manager確認済み）。375px以上ではさらに余裕あり。 */
-  .fc-tab {
-    flex: 1 1 0;
-    font-family: var(--ff-sans);
-    font-size: .72rem;
-    font-weight: 500;
-    letter-spacing: 0;
-    white-space: nowrap;
-    padding: .8rem .4rem;
-    min-height: 44px;
-    display: flex; align-items: center; justify-content: center;
-    border-radius: 999px;
-    border: 1.5px solid rgba(201,168,76,.4);
-    background: transparent;
-  }
-  .fc-tab-active {
-    background: linear-gradient(120deg, var(--gold), var(--gold-dk));
-    border-color: var(--gold);
-    color: var(--void);
-    font-weight: 700;
-  }
-
-  /* ─── カテゴリ見出し：SPは「棚のタイトル」として視認性を高める ─── */
-  .fc-cat-eyebrow {
-    font-family: var(--ff-serif);
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: .08em;
-    color: var(--gold-lt);
-    text-transform: none;
-  }
-
-  /* ─── 棚の右端フェード：3枚目以降のpeekを演出（クリックは妨げない） ─── */
-  .fc-shelf { position: relative; }
-  .fc-shelf::after {
-    content: '';
-    position: absolute; top: 0; right: 0; bottom: 1rem;
-    width: 2.6rem;
-    background: linear-gradient(to right, transparent, var(--deep) 88%);
-    pointer-events: none;
-  }
-}
-
-/* 占いカード共通 */
-.fcard {
-  /* grid化に伴いflex指定は不要になったため削除 */
-  scroll-snap-align: start;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1.3rem 1.1rem 1.1rem;
-  display: flex; flex-direction: column; align-items: center; text-align: center; gap: .5rem;
-  position: relative; overflow: hidden;
-  transition: border-color .22s, transform .22s, box-shadow .22s;
-  cursor: pointer;
-  text-decoration: none; color: inherit;
-}
-.fcard::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, var(--c1), var(--c2));
-}
-.fcard:hover { border-color: var(--border2); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,.35); }
-
-/* SP グリッド時はhoverのtransformを無効化 */
-@media (max-width: 639px) {
-  .fcard {
-    flex: none;
-    /* カード幅計算式：viewport幅から.fortune-gridのpadding-left(7rem=112px、
-       フローティングメニュー危険域回避用・変更禁止)とgap(.65rem=10.4px)を差し引き、
-       次カードのpeekが常に約20%(15〜25%目安の範囲内)見えるよう逆算した式。
-       cardWidth = (viewportWidth - 112px - 10.4px) / 1.2
-       検算(Manager確認済み): 320px→164.7px(peek32.9px/20.0%)、375px→210.5px(peek42.1px/20.0%)、
-       390px→223.0px(peek44.6px/20.0%)、414px→243.0px(peek48.6px/20.0%)。
-       140px/250pxは極端な幅での防御的な下限・上限キャップ。 */
-    width: clamp(140px, calc((100vw - 7.65rem) / 1.2), 250px);
-    border-radius: 12px;
-    padding: 1.1rem 1rem 1rem;
-  }
-  .fcard:hover { transform: none; }
-  /* D案：上部カラーバーの面積・彩度を後退（識別性は維持、主張のみ抑制） */
-  .fcard::before { height: 1px; opacity: .5; }
-  .fc-icon-badge { width: 44px; height: 44px; }
-  .fc-icon { font-size: 1.3rem; }
-  /* D案：英字キャプションはタイトルと内容重複のため非表示（HTML構造は維持） */
-  .fc-lbl { display: none; }
-}
-
-.fc-icon-badge {
-  width: 50px; height: 50px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  background: radial-gradient(circle at 35% 30%, rgba(201,168,76,.18), rgba(201,168,76,.04) 70%);
-  border: 1px solid rgba(201,168,76,.35); margin-bottom: .1rem;
-}
-.fc-icon  { font-size: 1.5rem; line-height: 1; }
-.fc-lbl   { font-family: var(--ff-mono); font-size: .53rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
-.fc-name  { font-family: var(--ff-serif); font-size: .93rem; font-weight: 700; color: var(--text); letter-spacing: .04em; }
-.fc-desc  { font-size: .74rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
-
-@media (max-width: 639px) {
-  .fc-desc { display: none; } /* SPでは説明文を省略して高さを詰める */
-}
-
-.fc-btn {
-  display: inline-flex; align-items: center; gap: .3rem;
-  font-family: var(--ff-mono); font-size: .65rem; letter-spacing: .06em;
-  color: #fff; text-decoration: none;
-  padding: .32rem .75rem; border-radius: 20px;
-  align-self: center; margin-top: .3rem;
-  background: linear-gradient(135deg, var(--c1), var(--c2));
-  transition: opacity .2s;
-}
-.fc-btn:hover { opacity: .85; }
-
-/* D案：SP限定の彩度後退。共通ルール(.fc-icon-badge/.fc-btn)より後ろに置き、
-   CSSカスケード順序でソース順が同一詳細度の勝敗を決める仕様上、確実に上書きさせるため。
-   （このメディアクエリを476行目のSPブロックに入れると、ソース順で共通ルールに負けて反映されない） */
-@media (max-width: 639px) {
-  .fc-icon-badge {
-    background: radial-gradient(circle at 35% 30%, rgba(201,168,76,.06), rgba(201,168,76,.02) 70%);
-    border-color: rgba(201,168,76,.2);
-  }
-  .fc-btn {
-    background: linear-gradient(rgba(26,21,53,.55), rgba(26,21,53,.55)), linear-gradient(135deg, var(--c1), var(--c2));
-    border: 1px solid rgba(255,255,255,.12);
+  .rail::-webkit-scrollbar { display: none; } /* Chrome/Safari等WebKit系 */
+  .dcard {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: clamp(170px, calc((100vw - 8.4rem) / 1.1), 230px);
   }
 }
 
@@ -740,172 +697,128 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
-  <nav class="fc-tabs" aria-label="占いカテゴリ">
-    <a href="#cat-classic" class="fc-tab fc-tab-active">本格占い</a>
-    <a href="#cat-cards" class="fc-tab">カード・心理</a>
-    <a href="#cat-casual" class="fc-tab">気軽に楽しむ</a>
-  </nav>
+  <?php
+  // v4: 「占いを選ぶ」3レーン構成。URL・名称は$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として使用。
+  // アイコンはモックアップのSVG意匠をそのまま使用（$_NAV_PAGESのicon絵文字フィールドはこのレーン内では使わない）。
+  $_fsIcons = [
+    'shichu'     => '<path d="M6 3v18M10 6v15M14 4v17M18 7v14"/>',
+    'sansei'     => '<g transform="translate(2,1) scale(0.34)"><path d="M12 2l2.2 6.8H21l-5.6 4.2 2.2 6.8L12 15.6 6.4 19.8l2.2-6.8L3 8.8h6.8z"/></g><g transform="translate(10,0) scale(0.26)"><path d="M12 2l2.2 6.8H21l-5.6 4.2 2.2 6.8L12 15.6 6.4 19.8l2.2-6.8L3 8.8h6.8z"/></g><g transform="translate(9,13) scale(0.2)"><path d="M12 2l2.2 6.8H21l-5.6 4.2 2.2 6.8L12 15.6 6.4 19.8l2.2-6.8L3 8.8h6.8z"/></g>',
+    'sanmei'     => '<path d="M12 3a9 9 0 000 18 4.5 4.5 0 010-9 4.5 4.5 0 000-9z"/><circle cx="12" cy="7.5" r="1"/><circle cx="12" cy="16.5" r="1"/>',
+    'seiza'      => '<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/>',
+    'tarot'      => '<rect x="4" y="3" width="7" height="11" rx="1"/><rect x="13" y="6" width="7" height="15" rx="1"/>',
+    'kyusei'     => '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/>',
+    'numerology' => '<path d="M12 2v20M7 6h3M7 10h3M7 14h3M7 18h3M14 6h3M14 10h3M14 14h3M14 18h3"/>',
+    'seimei'     => '<path d="M4 18c3-2 7-9 11-13"/><rect x="14" y="13" width="7" height="7" rx="1"/><path d="M16.2 16.5h2.6M16.2 18.5h2.6"/>',
+    'mbti'       => '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16M10 10v10"/>',
+    'love'       => '<path d="M12 21c-4-3-8-6.5-8-11a5 5 0 019-3 5 5 0 019 3c0 4.5-4 8-8 11z"/>',
+    'aisho'      => '<circle cx="9" cy="12" r="6.5"/><circle cx="15" cy="12" r="6.5"/>',
+    'rpg'        => '<path d="M4 11l8-6 8 6M6 11v9h12v-9M10 20v-5h4v5"/>',
+    'reversi'    => '<circle cx="9" cy="12" r="5" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="5"/>',
+    'zense'      => '<path d="M18 6a8 8 0 10-1.5 12.5"/><path d="M15 19.8l1.7-2.3 2.6 1.2"/>',
+    'guardian'   => '<path d="M12 3c3 3 5 6 5 9a5 5 0 01-10 0c0-3 2-6 5-9z"/>',
+    'geimei'     => '<path d="M4 20l3-1 10-10-2-2L5 17z"/><circle cx="18" cy="6" r="1"/>',
+  ];
 
-  <div class="fortune-categories">
+  // レーン01：本格占い（feature=四柱推命、companions=随伴7件）
+  $_lane1FeatureSlug = 'shichu';
+  $_lane1FeatureDesc = '生年月日を四本の柱に見立て、命式と大運から人生の流れを読み解く、東洋占術の王道。';
+  $_lane1Companions = [
+    ['slug'=>'sansei',     'sub'=>'三占術を同時に鑑定'],
+    ['slug'=>'sanmei',     'sub'=>'陰陽五行で才能を読む'],
+    ['slug'=>'seiza',      'sub'=>'太陽星座×内面タイプ'],
+    ['slug'=>'tarot',      'sub'=>'1枚引いて今日を読む'],
+    ['slug'=>'kyusei',     'sub'=>'吉方位と運気の周期'],
+    ['slug'=>'numerology', 'sub'=>'数字が示す性格と運命'],
+    ['slug'=>'seimei',     'sub'=>'画数に宿る性格と流れ'],
+  ];
 
-    <div class="fortune-category" id="cat-classic">
-      <div class="fortune-category-head">
-        <span class="fc-cat-eyebrow">本格占い</span>
+  // レーン02：カード・心理
+  $_lane2Tiles = [
+    ['slug'=>'mbti',  'sub'=>'性格タイプと星座を掛け合わせて診断'],
+    ['slug'=>'love',  'sub'=>'あなたの恋のクセを丁寧にひもとく'],
+    ['slug'=>'aisho', 'sub'=>'ふたりの生年月日から相性を読む'],
+  ];
+
+  // レーン03：気軽に楽しむ
+  $_lane3Cards = [
+    ['slug'=>'rpg',      'cta'=>'遊ぶ →'],
+    ['slug'=>'reversi',  'cta'=>'対局 →'],
+    ['slug'=>'zense',    'cta'=>'診断 →'],
+    ['slug'=>'guardian', 'cta'=>'診断 →'],
+    ['slug'=>'geimei',   'cta'=>'診断 →'],
+  ];
+  ?>
+
+  <div class="fs-lanes">
+
+    <!-- レーン01：本格占い -->
+    <div class="lane">
+      <div class="lane-head">
+        <div class="lane-eyebrow"><span class="lane-num">01</span><span class="lane-cat">本格占い</span></div>
+        <span class="lane-title">じっくり向き合う</span>
+        <span class="lane-tagline">生年月日から、命の設計図を読み解く。</span>
       </div>
-      <div class="fc-shelf">
-      <div class="fortune-grid">
-
-        <a href="/sansei" class="fcard ct-s fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">✨</span></span>
-          <span class="fc-lbl">Integrated</span>
-          <div class="fc-name">三星統合鑑定</div>
-          <div class="fc-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</div>
-          <span class="fc-btn">鑑定する →</span>
+      <div class="lane01-grid">
+        <?php $_fp = $_NAV_PAGES[$_lane1FeatureSlug]; ?>
+        <a href="<?= htmlspecialchars($_fp['url'], ENT_QUOTES, 'UTF-8') ?>" class="feature-card fade-up">
+          <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_lane1FeatureSlug] ?></svg></div>
+          <h3><?= htmlspecialchars($_fp['name'], ENT_QUOTES, 'UTF-8') ?></h3>
+          <p><?= htmlspecialchars($_lane1FeatureDesc, ENT_QUOTES, 'UTF-8') ?></p>
+          <span class="feature-cta">占ってみる →</span>
         </a>
-
-        <a href="/shichu" class="fcard ct-g fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">🔯</span></span>
-          <span class="fc-lbl">Shichu Suimei</span>
-          <div class="fc-name">四柱推命</div>
-          <div class="fc-desc">命式・十神・大運を本格算出。生年月日から人生の流れを読み解く。</div>
-          <span class="fc-btn">算出する →</span>
-        </a>
-
-        <a href="/sanmei" class="fcard ct-t fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">☯</span></span>
-          <span class="fc-lbl">Sanmeigaku</span>
-          <div class="fc-name">算命学鑑定</div>
-          <div class="fc-desc">元命・主星・従星から才能・恋愛・仕事適性を読む性格占術。</div>
-          <span class="fc-btn">鑑定する →</span>
-        </a>
-
-        <a href="/seiza" class="fcard ct-r fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">⭐</span></span>
-          <span class="fc-lbl">Western Astrology</span>
-          <div class="fc-name">西洋占星術</div>
-          <div class="fc-desc">太陽星座×内面タイプで個性・恋愛・仕事適性を深掘り鑑定。</div>
-          <span class="fc-btn">鑑定する →</span>
-        </a>
-
-        <a href="/kyusei" class="fcard ct-a fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">⭐</span></span>
-          <span class="fc-lbl">Nine Star Ki</span>
-          <div class="fc-name">九星気学診断</div>
-          <div class="fc-desc">本命星・月命星・吉方位を無料診断。今年の運勢の流れを知る。</div>
-          <span class="fc-btn">診断する →</span>
-        </a>
-
-        <a href="/tarot" class="fcard ct-v fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">🃏</span></span>
-          <span class="fc-lbl">Tarot</span>
-          <div class="fc-name">タロット占い</div>
-          <div class="fc-desc">大アルカナ22枚から1枚を選ぶ。直感でカードを引き、今のメッセージを受け取る。</div>
-          <span class="fc-btn">カードを引く →</span>
-        </a>
-
-        <a href="/numerology" class="fcard ct-t fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">🔢</span></span>
-          <span class="fc-lbl">Numerology</span>
-          <div class="fc-name">数秘術診断</div>
-          <div class="fc-desc">生年月日と名前から4つの数字で人生の使命を読み解く。</div>
-          <span class="fc-btn">診断する →</span>
-        </a>
-
-        <a href="/seimei" class="fcard ct-v fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">✍️</span></span>
-          <span class="fc-lbl">Seimei</span>
-          <div class="fc-name">姓名判断</div>
-          <div class="fc-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む。</div>
-          <span class="fc-btn">鑑定する →</span>
-        </a>
-
-      </div>
-      </div>
-    </div>
-
-    <div class="fortune-category" id="cat-cards">
-      <div class="fortune-category-head">
-        <span class="fc-cat-eyebrow">カード・心理</span>
-      </div>
-      <div class="fc-shelf">
-      <div class="fortune-grid">
-
-        <a href="/mbti" class="fcard ct-i fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">🧠</span></span>
-          <span class="fc-lbl">MBTI × Zodiac</span>
-          <div class="fc-name">MBTI×星座診断</div>
-          <div class="fc-desc">10の質問で性格タイプと星座の組み合わせ運命を診断する。</div>
-          <span class="fc-btn">診断する →</span>
-        </a>
-
-        <a href="/love" class="fcard ct-r fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">💜</span></span>
-          <span class="fc-lbl">Love Type</span>
-          <div class="fc-name">恋愛傾向診断</div>
-          <div class="fc-desc">MBTI×血液型×星座の3つから、あなたの恋愛スタイルと傾向を診断。</div>
-          <span class="fc-btn">診断する →</span>
-        </a>
-
-        <a href="/aisho" class="fcard ct-r fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">💑</span></span>
-          <span class="fc-lbl">Compatibility</span>
-          <div class="fc-name">二人の相性診断</div>
-          <div class="fc-desc">星座と数秘術で恋愛・結婚の相性を鑑定する。</div>
-          <span class="fc-btn">診断する →</span>
-        </a>
-
-      </div>
+        <div class="companions">
+          <?php foreach ($_lane1Companions as $_c): $_p = $_NAV_PAGES[$_c['slug']]; ?>
+          <a href="<?= htmlspecialchars($_p['url'], ENT_QUOTES, 'UTF-8') ?>" class="crow fade-up">
+            <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_c['slug']] ?></svg></div>
+            <div class="crow-body">
+              <h4><?= htmlspecialchars($_p['name'], ENT_QUOTES, 'UTF-8') ?></h4>
+              <span><?= htmlspecialchars($_c['sub'], ENT_QUOTES, 'UTF-8') ?></span>
+              <span class="feature-cta">開く →</span>
+            </div>
+          </a>
+          <?php endforeach; ?>
+        </div>
       </div>
     </div>
 
-    <div class="fortune-category" id="cat-casual">
-      <div class="fortune-category-head">
-        <span class="fc-cat-eyebrow">気軽に楽しむ</span>
+    <!-- レーン02：カード・心理 -->
+    <div class="lane">
+      <div class="lane-head">
+        <div class="lane-eyebrow"><span class="lane-num">02</span><span class="lane-cat">カード・心理</span></div>
+        <span class="lane-title">遊びながら知る</span>
+        <span class="lane-tagline">診断を通して、自分の傾向に気づく。</span>
       </div>
-      <div class="fc-shelf">
-      <div class="fortune-grid">
-
-        <a href="/rpg" class="fcard ct-gn fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">⚔️</span></span>
-          <span class="fc-lbl">RPG Fortune</span>
-          <div class="fc-name">RPG風占いの村</div>
-          <div class="fc-desc">勇者となって占いの村を冒険しながら運命を知る。</div>
-          <span class="fc-btn">冒険する →</span>
+      <div class="tiles">
+        <?php foreach ($_lane2Tiles as $_t): $_p = $_NAV_PAGES[$_t['slug']]; ?>
+        <a href="<?= htmlspecialchars($_p['url'], ENT_QUOTES, 'UTF-8') ?>" class="tile fade-up">
+          <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_t['slug']] ?></svg></div>
+          <div class="tile-body">
+            <h4><?= htmlspecialchars($_p['name'], ENT_QUOTES, 'UTF-8') ?></h4>
+            <span><?= htmlspecialchars($_t['sub'], ENT_QUOTES, 'UTF-8') ?></span>
+            <span class="feature-cta">診断 →</span>
+          </div>
         </a>
-
-        <a href="/reversi" class="fcard ct-v fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon"><span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style></span></span>
-          <span class="fc-lbl">Destiny Reversi</span>
-          <div class="fc-name">リバーシ占い</div>
-          <div class="fc-desc">対局中の一手一手が布石となり、今日の運勢を読み解く新感覚の占いゲーム。</div>
-          <span class="fc-btn">対局する →</span>
-        </a>
-
-        <a href="/zense" class="fcard ct-c fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">🌀</span></span>
-          <span class="fc-lbl">Past Life</span>
-          <div class="fc-name">前世診断</div>
-          <div class="fc-desc">あなたは何回目の転生？魂のカルテを読み解く。</div>
-          <span class="fc-btn">診断する →</span>
-        </a>
-
-        <a href="/guardian" class="fcard ct-g fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">👻</span></span>
-          <span class="fc-lbl">Guardian Spirit</span>
-          <div class="fc-name">守護霊診断</div>
-          <div class="fc-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚。</div>
-          <span class="fc-btn">召喚する →</span>
-        </a>
-
-        <a href="/geimei" class="fcard ct-a fade-up">
-          <span class="fc-icon-badge"><span class="fc-icon">🎭</span></span>
-          <span class="fc-lbl">Geimei</span>
-          <div class="fc-name">芸名診断</div>
-          <div class="fc-desc">大喜利で見つける最強の芸名。</div>
-          <span class="fc-btn">診断する →</span>
-        </a>
-
+        <?php endforeach; ?>
       </div>
+    </div>
+
+    <!-- レーン03：気軽に楽しむ -->
+    <div class="lane">
+      <div class="lane-head">
+        <div class="lane-eyebrow"><span class="lane-num">03</span><span class="lane-cat">気軽に楽しむ</span></div>
+        <span class="lane-title">肩の力を抜いて</span>
+        <span class="lane-tagline">ひと息つく、軽やかな占い時間。</span>
+      </div>
+      <div class="rail">
+        <?php foreach ($_lane3Cards as $_d): $_p = $_NAV_PAGES[$_d['slug']]; ?>
+        <a href="<?= htmlspecialchars($_p['url'], ENT_QUOTES, 'UTF-8') ?>" class="dcard fade-up">
+          <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_d['slug']] ?></svg></div>
+          <div class="dcard-body">
+            <h4><?= htmlspecialchars($_p['name'], ENT_QUOTES, 'UTF-8') ?></h4>
+            <span class="feature-cta"><?= htmlspecialchars($_d['cta'], ENT_QUOTES, 'UTF-8') ?></span>
+          </div>
+        </a>
+        <?php endforeach; ?>
       </div>
     </div>
 

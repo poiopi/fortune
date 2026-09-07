@@ -12,6 +12,12 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["C:\\Users\\sende\\projects\\osero-fortune\\scripts\\devServer.mjs", "8812"],
       "port": 8812
+    },
+    {
+      "name": "mockup-scratch-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["C:\\Users\\sende\\AppData\\Local\\Temp\\claude\\C--Users-sende-fortune\\6b621bee-5fa7-45f7-8bc0-b42fb0923958\\scratchpad\\static-server.mjs", "8813"],
+      "port": 8813
     }
   ]
 }
