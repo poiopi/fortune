@@ -88,7 +88,7 @@ body {
   margin-bottom: .35rem;
 }
 .fortune-guide {
-  font-size: .78rem;
+  font-size: .875rem;
   color: var(--gold-lt);
   text-align: center;
   letter-spacing: .02em;
@@ -255,7 +255,6 @@ body {
 .h-d7 { animation-delay: 1.3s; }
 @keyframes hFade { to { opacity: 1; transform: translateY(0); } }
 
-.hero-kamon { font-size: 2.8rem; display: block; margin-bottom: .7rem; filter: drop-shadow(0 0 16px rgba(201,168,76,.5)); }
 .hero-eyebrow { font-family: var(--ff-mono); font-size: .62rem; letter-spacing: .35em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: .8rem; }
 .hero-deco {
   display: flex; align-items: center; justify-content: center; gap: 8px;
@@ -279,6 +278,41 @@ body {
   text-shadow: none;
 }
 .hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.5rem; }
+.hero-flagship-card {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto 1.6rem;
+  padding: 1.8rem 1.6rem 1.6rem;
+  border: 1px solid rgba(201,168,76,.45);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(26,21,53,.55) 0%, rgba(18,15,36,.72) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 1px rgba(201,168,76,.12) inset, 0 12px 40px rgba(0,0,0,.45);
+}
+.hf-eyebrow { display: block; font-family: var(--ff-mono); font-size: .6rem; letter-spacing: .3em; color: var(--gold); text-transform: uppercase; margin-bottom: .5rem; }
+.hf-title { font-family: var(--ff-serif); font-size: 1.25rem; font-weight: 700; color: var(--text); letter-spacing: .06em; margin-bottom: .5rem; }
+.hf-desc { font-size: .8rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.1rem; }
+.hf-steps { display: flex; align-items: center; justify-content: center; gap: .6rem; margin-bottom: 1.3rem; flex-wrap: wrap; }
+.hf-step { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+.hf-step-icon { font-size: 1.3rem; }
+.hf-step-label { font-family: var(--ff-mono); font-size: .6rem; color: var(--muted); letter-spacing: .04em; white-space: nowrap; }
+.hf-arrow { color: var(--gold); opacity: .6; font-size: .8rem; }
+.btn-gold {
+  padding: .78rem 2rem;
+  background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+  border: none; border-radius: 28px; color: var(--void);
+  font-family: var(--ff-serif); font-size: .9rem; font-weight: 700; letter-spacing: .1em;
+  text-decoration: none; display: inline-block;
+  box-shadow: 0 4px 24px rgba(201,168,76,.45);
+  transition: opacity .2s, transform .15s;
+}
+.btn-gold:hover { opacity: .88; transform: translateY(-2px); }
+@media (max-width: 639px) {
+  .hero-flagship-card { padding: 1.4rem 1.1rem 1.3rem; border-radius: 18px; }
+  .hf-steps { flex-direction: column; gap: .7rem; }
+  .hf-arrow { transform: rotate(90deg); }
+}
 .hero-pillars { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
 .pillar { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .1em; padding: .28rem .85rem; border: 1px solid rgba(201,168,76,.28); border-radius: 20px; color: rgba(201,168,76,.7); text-decoration: none; display: inline-block; cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
 .pillar:hover, .pillar:focus-visible { background: rgba(201,168,76,.1); border-color: rgba(201,168,76,.5); color: rgba(201,168,76,.9); }
@@ -311,96 +345,157 @@ body {
 }
 
 /* ══════════════════════════════════
-   占いカルーセル（PC） / グリッド（SP）
+   占いカードグリッド（カテゴリ別）
 ══════════════════════════════════ */
 .fortune-section {
   padding: 4rem 0 3rem;
   background: var(--deep);
+  /* v4: モックアップ由来のローカルトークン。.fortune-sectionにスコープし、グローバル:root(36行目付近)には追記しない */
+  --fs-surface-a: hsl(258 28% 26%);
+  --fs-surface-b: hsl(258 28% 32%);
+  --fs-border: hsl(40 38% 40%);
+  --fs-border-hover: hsl(42 45% 58%);
+  --fs-gold-dim: hsl(42 32% 48%);
+  --fs-r-card: 14px;
 }
 .fortune-section-head { margin-bottom: 1.6rem; }
 
-/* ─── PC カルーセル ─── */
-.carousel-outer {
-  position: relative;
-  user-select: none;
-}
-.carousel-track {
-  display: flex;
-  gap: .9rem;
-  overflow-x: hidden;       /* PCは JS制御 */
-  scrollbar-width: none;
-  padding: .6rem 0 1rem 1.2rem;
-  cursor: grab;
-  -webkit-overflow-scrolling: touch;
-}
-.carousel-track::-webkit-scrollbar { display: none; }
-.carousel-track.dragging { cursor: grabbing; }
+/* ─── v4: レーン構成（占いを選ぶ） ─── */
+.fs-lanes { max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.6rem; }
+.lane + .lane { border-top: 1px solid var(--fs-border); padding-top: 2rem; }
+.lane-head { padding: 0 1.2rem; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 4px; }
+.lane-eyebrow { display: flex; align-items: baseline; gap: .6rem; }
+.lane-num { font-family: var(--ff-mono); font-size: .62rem; color: var(--muted); letter-spacing: .06em; }
+.lane-cat { font-family: var(--ff-sans); font-size: .62rem; color: var(--muted); letter-spacing: .1em; }
+.lane-title { font-family: var(--ff-serif); font-weight: 700; font-size: 1.15rem; letter-spacing: .08em; color: var(--gold); }
+.lane-tagline { font-size: .78rem; color: var(--text-secondary); }
 
-/* ─── SP グリッド（モバイル上書き） ─── */
+/* ─── カード共通の質感・額縁（feature-card/crow/tile/dcard 4種共通） ─── */
+.feature-card, .crow, .tile, .dcard { position: relative; text-decoration: none; color: inherit; transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+.feature-card, .tile, .dcard {
+  background: linear-gradient(145deg, var(--fs-surface-b), var(--fs-surface-a));
+  border: 1px solid var(--fs-border);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.05), 0 4px 20px rgba(0,0,0,.4);
+}
+.feature-card:hover, .feature-card:focus-visible,
+.tile:hover, .tile:focus-visible,
+.dcard:hover, .dcard:focus-visible {
+  border-color: var(--fs-border-hover); transform: translateY(-3px);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.1), 0 12px 28px rgba(201,168,76,.15);
+}
+/* 四隅ノッチの額縁装飾（4種共通） */
+.feature-card::before, .crow::before, .tile::before, .dcard::before {
+  content: ''; position: absolute; inset: 5px; pointer-events: none;
+  border: 1.5px solid hsl(45 75% 74% / .85); border-radius: calc(var(--fs-r-card) - 6px);
+  background-repeat: no-repeat; background-size: 11px 11px, 11px 11px, 11px 11px, 11px 11px;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='6' cy='6' r='5' fill='hsl(257,27%,30%)' stroke='hsl(45,75%,74%)' stroke-width='1.2'/></svg>");
+  background-position: top -1px left -1px, top -1px right -1px, bottom -1px left -1px, bottom -1px right -1px;
+}
+.fs-ic { width: 1em; height: 1em; stroke: currentColor; stroke-width: 1.4; fill: none; stroke-linecap: round; stroke-linejoin: round; vertical-align: -.12em; }
+.feature-cta { font-size: .8rem; color: var(--fs-gold-dim); display: inline-flex; align-items: center; gap: 6px; }
+
+/* ─── レーン01：本格占い（フィーチャーカード＋随伴7件・4列dense grid） ─── */
+.lane01-grid { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-flow: row dense; gap: .75rem; }
+.companions { display: contents; }
+.feature-card {
+  grid-column: span 2; grid-row: span 2;
+  border-radius: var(--fs-r-card); padding: 1.5rem;
+  display: flex; flex-direction: column; gap: .75rem;
+}
+.feature-card .ic-wrap { width: 44px; height: 44px; color: var(--gold); font-size: 26px; display: flex; align-items: center; justify-content: center; }
+.feature-card .ic-wrap svg { filter: drop-shadow(0 0 5px hsl(42 70% 60% / .45)); }
+.feature-card h3 { font-family: var(--ff-serif); font-weight: 700; font-size: 1.75rem; letter-spacing: .08em; color: var(--text); }
+.feature-card p { font-size: .85rem; color: var(--text-secondary); line-height: 1.7; }
+.feature-card .feature-cta { align-self: flex-start; margin-top: auto; }
+/* 青海波風の余白装飾（デスクトップのみ。SPでは640行目付近のメディアクエリでcontent:noneにする） */
+.feature-card::after {
+  content: ''; position: absolute; inset: 9px; pointer-events: none; border-radius: calc(var(--fs-r-card) - 9px);
+  background-repeat: repeat; background-size: 40px 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20'><path d='M0,20 A20,20 0 0,1 40,20' fill='none' stroke='%23c9a84c' stroke-width='1' opacity='0.5'/><path d='M6,20 A14,14 0 0,1 34,20' fill='none' stroke='%23c9a84c' stroke-width='1' opacity='0.5'/><path d='M12,20 A8,8 0 0,1 28,20' fill='none' stroke='%23c9a84c' stroke-width='1' opacity='0.5'/></svg>");
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='f' x1='0' y1='0' x2='1' y2='0'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='65%25' stop-color='white' stop-opacity='1'/></linearGradient><linearGradient id='vt' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='1'/><stop offset='100%25' stop-color='white' stop-opacity='0'/></linearGradient><linearGradient id='vb' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='100%25' stop-color='white' stop-opacity='1'/></linearGradient><mask id='mt'><rect x='0' y='0' width='100' height='34' fill='url(%23vt)'/></mask><mask id='mb'><rect x='0' y='66' width='100' height='34' fill='url(%23vb)'/></mask></defs><rect x='0' y='0' width='100' height='34' fill='url(%23f)' mask='url(%23mt)'/><rect x='0' y='66' width='100' height='34' fill='url(%23f)' mask='url(%23mb)'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='f' x1='0' y1='0' x2='1' y2='0'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='65%25' stop-color='white' stop-opacity='1'/></linearGradient><linearGradient id='vt' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='1'/><stop offset='100%25' stop-color='white' stop-opacity='0'/></linearGradient><linearGradient id='vb' x1='0' y1='0' x2='0' y2='1'><stop offset='0%25' stop-color='white' stop-opacity='0'/><stop offset='100%25' stop-color='white' stop-opacity='1'/></linearGradient><mask id='mt'><rect x='0' y='0' width='100' height='34' fill='url(%23vt)'/></mask><mask id='mb'><rect x='0' y='66' width='100' height='34' fill='url(%23vb)'/></mask></defs><rect x='0' y='0' width='100' height='34' fill='url(%23f)' mask='url(%23mt)'/><rect x='0' y='66' width='100' height='34' fill='url(%23f)' mask='url(%23mb)'/></svg>");
+  -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+}
+.crow {
+  grid-column: span 1;
+  padding: 1rem; border-radius: 10px;
+  display: flex; align-items: center; gap: .8rem;
+  background: hsl(258 24% 16%); border: 1px solid var(--fs-border); box-shadow: none;
+}
+.crow:hover, .crow:focus-visible { background: hsl(258 26% 20%); border-color: var(--fs-border-hover); box-shadow: none; }
+.crow .ic-wrap { width: 60px; height: 60px; color: var(--fs-gold-dim); font-size: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.crow-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.crow-body h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .85rem; color: var(--text); }
+.crow-body span { font-size: .81rem; color: var(--muted); }
+.crow .feature-cta { font-size: .62rem; margin-top: 2px; }
+
 @media (max-width: 639px) {
-  .carousel-track {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: .65rem;
-    overflow-x: visible;
-    padding: 0 1rem 1rem;
-    cursor: default;
+  .lane01-grid { display: block; padding: 0 1.2rem; }
+  /* 左paddingでフローティングメニュー(.fmenu-btn 危険域 x≈25.6〜89.6px)との重なりを軽減。
+     完全回避(.railの7rem)までは行わず、アイコン主要部・テキストが隠れない程度に留める。 */
+  .companions { display: flex; flex-direction: column; gap: .5rem; padding-left: 4rem; }
+  .feature-card { grid-column: unset; grid-row: unset; margin-bottom: .9rem; padding: 1.2rem; }
+  .feature-card h3 { font-size: 1.15rem; }
+  .feature-card::after { content: none; }
+  .crow { grid-column: unset; padding: .7rem; background: linear-gradient(145deg, hsl(258 24% 18%), hsl(258 24% 14%)); border-color: transparent; }
+  .crow:hover, .crow:focus-visible { border-color: var(--fs-border); }
+}
+
+/* ─── レーン02：カード・心理（タイル） ─── */
+.tiles { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.tile { border-radius: 12px; padding: 1rem; display: flex; align-items: center; gap: 1rem; min-height: auto; }
+.tile .ic-wrap { width: 64px; height: 64px; color: var(--gold); font-size: 43px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.tile-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.tile h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .95rem; color: var(--text); margin-top: .5rem; }
+.tile-body span { font-size: .84rem; color: var(--muted); line-height: 1.5; flex: 1; }
+.tile .feature-cta { font-size: .69rem; margin-top: auto; }
+
+@media (max-width: 639px) {
+  .tiles { grid-template-columns: 1fr; gap: .75rem; }
+}
+
+/* ─── レーン03：気軽に楽しむ（レール） ─── */
+.rail { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; }
+.dcard { border-radius: 12px; padding: 1rem; display: flex; align-items: center; gap: .75rem; width: auto; }
+.dcard .ic-wrap { width: 56px; height: 56px; color: var(--fs-gold-dim); font-size: 37px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.dcard-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.dcard h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .8rem; color: var(--text); margin-bottom: .4rem; line-height: 1.4; }
+.dcard .feature-cta { font-size: .69rem; }
+
+@media (max-width: 639px) {
+  .rail {
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: none;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: .6rem;
+    /* 左paddingでフローティングメニュー(.fmenu-btn 危険域 x≈13.6〜101.6px)を回避。
+       scroll-padding-leftと同値の7rem(112px)を確保し、静止時(scrollLeft:0)・
+       スナップ後のいずれでも1枚目カードの実座標が危険域より右(112px > 101.6px)になるようにする。
+       この値は既存.fortune-gridと同一・変更禁止。 */
+    padding: 2px 1.2rem 1rem 7rem;
+    scroll-padding-left: 7rem;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE/legacy Edge */
   }
-  /* SP: 複製カードを非表示 */
-  .carousel-track .fcard[aria-hidden="true"] { display: none; }
-}
-
-/* 占いカード共通 */
-.fcard {
-  flex: 0 0 190px;
-  scroll-snap-align: start;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.15rem 1rem 1rem;
-  display: flex; flex-direction: column; gap: .45rem;
-  position: relative; overflow: hidden;
-  transition: border-color .22s, transform .22s, box-shadow .22s;
-  cursor: pointer;
-  text-decoration: none; color: inherit;
-}
-.fcard::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, var(--c1), var(--c2));
-}
-.fcard:hover { border-color: var(--border2); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,.35); }
-
-/* SP グリッド時はhoverのtransformを無効化 */
-@media (max-width: 639px) {
-  .fcard {
-    flex: none;
-    width: 100%;
-    border-radius: 12px;
-    padding: .9rem .85rem .85rem;
+  .rail::-webkit-scrollbar { display: none; } /* Chrome/Safari等WebKit系 */
+  .dcard {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: clamp(170px, calc((100vw - 8.4rem) / 1.1), 230px);
   }
-  .fcard:hover { transform: none; }
+  /* レーン03見出しのみ左paddingでフローティングメニュー(.fmenu-btn 危険域 x≈25.6〜89.6px)との
+     重なりを軽減。レーン01・02のlane-headには影響させないためnth-child(3)でスコープ。 */
+  .lane:nth-child(3) .lane-head { padding-left: 6rem; }
 }
-
-.fc-icon  { font-size: 1.7rem; line-height: 1; }
-.fc-lbl   { font-family: var(--ff-mono); font-size: .53rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
-.fc-name  { font-family: var(--ff-serif); font-size: .93rem; font-weight: 700; color: var(--text); letter-spacing: .04em; }
-.fc-desc  { font-size: .74rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
-
-@media (max-width: 639px) {
-  .fc-desc { display: none; } /* SPでは説明文を省略して高さを詰める */
-}
-
-.fc-btn {
-  display: inline-flex; align-items: center; gap: .3rem;
-  font-family: var(--ff-mono); font-size: .65rem; letter-spacing: .06em;
-  color: #fff; text-decoration: none;
-  padding: .32rem .75rem; border-radius: 20px;
-  align-self: flex-start; margin-top: .2rem;
-  background: linear-gradient(135deg, var(--c1), var(--c2));
-  transition: opacity .2s;
-}
-.fc-btn:hover { opacity: .85; }
 
 /* カラーテーマ */
 .ct-v  { --c1:#7a4a9e; --c2:#c85080; }
@@ -412,30 +507,6 @@ body {
 .ct-a  { --c1:#c9a84c; --c2:#c85080; }
 .ct-c  { --c1:#3ab8b0; --c2:#4a3a9e; }
 .ct-s  { --c1:#9e4a7a; --c2:#c9a84c; } /* 三星 */
-
-/* カルーセルコントロール（PCのみ） */
-.carousel-controls {
-  display: flex; align-items: center; justify-content: center; gap: .8rem;
-  margin-top: .5rem;
-}
-.c-arr {
-  width: 30px; height: 30px; border-radius: 50%;
-  border: 1px solid rgba(201,168,76,.35);
-  background: rgba(201,168,76,.07);
-  color: var(--gold); font-size: .85rem;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: background .2s, border-color .2s;
-  user-select: none;
-}
-.c-arr:hover { background: rgba(201,168,76,.18); border-color: var(--gold); }
-.c-pause-hint {
-  font-family: var(--ff-mono);
-  font-size: .58rem; letter-spacing: .12em;
-  color: rgba(201,168,76,.35);
-}
-@media (max-width: 639px) {
-  .carousel-controls { display: none; }
-}
 
 /* ══════════════════════════════════
    今日の開運情報
@@ -525,7 +596,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 <!-- ══ HEADER ══ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="logo">⛩ 占い<em>Portal</em></a>
+    <a href="/" class="logo">占い<em>Portal</em></a>
     <nav class="header-nav">
       <a href="/" class="cur">✦ TOP</a>
       <a href="/tarot">タロット</a>
@@ -564,11 +635,25 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="hero-top-accent"></div>
 
   <div class="hero-inner">
-    <span class="hero-kamon h-d1">⛩</span>
-    <span class="hero-eyebrow h-d2">Free Fortune Telling · 占いPortal</span>
-    <div class="hero-deco h-d3"><span>✦ ── ✦ ── ✦</span></div>
-    <h1 class="hero-h1 h-d4">無料占いポータル</h1>
-    <span class="hero-sub h-d5">星と運命の交差点 · 16種類の占術で今を読み解く</span>
+    <span class="hero-eyebrow h-d1">Free Fortune Telling · 占いPortal</span>
+    <div class="hero-deco h-d2"><span>✦ ── ✦ ── ✦</span></div>
+    <h1 class="hero-h1 h-d3">無料占いポータル</h1>
+    <span class="hero-sub h-d4">星と運命の交差点 · 16種類の占術で今を読み解く</span>
+    <div class="hero-flagship-card h-d5">
+      <span class="hf-eyebrow">Flagship Reading</span>
+      <div class="hf-title">✨ 三星統合鑑定</div>
+      <p class="hf-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</p>
+      <div class="hf-steps">
+        <div class="hf-step"><span class="hf-step-icon">🔮</span><span class="hf-step-label">何がわかるか</span></div>
+        <span class="hf-arrow">→</span>
+        <div class="hf-step"><span class="hf-step-icon">📝</span><span class="hf-step-label">名前・生年月日を入力</span></div>
+        <span class="hf-arrow">→</span>
+        <div class="hf-step"><span class="hf-step-icon">✨</span><span class="hf-step-label">その場で鑑定結果</span></div>
+      </div>
+      <a href="/sansei" class="btn-gold" data-ga-event="cta_click" data-cta-name="hero_flagship_sansei" data-cta-destination="/sansei">
+        ✨ 三星統合鑑定をはじめる →
+      </a>
+    </div>
     <div class="hero-pillars h-d6">
       <?php
       // Hero直下のピル：URL・アイコンは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として利用（二重管理を避ける）。
@@ -583,13 +668,14 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       foreach ($_heroPills as $_slugKey => $_shortLabel):
         $_heroPill = $_NAV_PAGES[$_slugKey];
         $_cls = $_slugKey === 'sansei' ? 'pillar pillar-flagship' : 'pillar';
+        $_gaAttrs = $_slugKey === 'sansei' ? ' data-ga-event="cta_click" data-cta-name="hero_pillar_sansei" data-cta-destination="/sansei"' : '';
       ?>
-      <a href="<?= htmlspecialchars($_heroPill['url'], ENT_QUOTES, 'UTF-8') ?>" class="<?= $_cls ?>"><?= htmlspecialchars($_heroPill['icon'], ENT_QUOTES, 'UTF-8') ?> <?= htmlspecialchars($_shortLabel, ENT_QUOTES, 'UTF-8') ?></a>
+      <a href="<?= htmlspecialchars($_heroPill['url'], ENT_QUOTES, 'UTF-8') ?>" class="<?= $_cls ?>"<?= $_gaAttrs ?>><?= htmlspecialchars($_heroPill['icon'], ENT_QUOTES, 'UTF-8') ?> <?= htmlspecialchars($_shortLabel, ENT_QUOTES, 'UTF-8') ?></a>
       <?php endforeach; ?>
     </div>
     <div class="hero-cta h-d7">
-      <a href="#fortunes" class="btn-primary">占いを選ぶ ▼</a>
-      <a href="#oracle" class="btn-outline">今日の開運情報</a>
+      <a href="#fortunes" class="btn-primary" data-ga-event="cta_click" data-cta-name="hero_browse_fortunes" data-cta-destination="#fortunes">占いを選ぶ ▼</a>
+      <a href="#oracle" class="btn-outline" data-ga-event="cta_click" data-cta-name="hero_oracle" data-cta-destination="#oracle">今日の開運情報</a>
     </div>
   </div>
 
@@ -602,12 +688,11 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 <div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
-    <span class="pb-kamon">✦ ── ⛩ ── ✦</span>
     <div class="pb-gold-line"></div>
   </div>
 </div>
 
-<!-- ══ 占いカルーセル / SPグリッド ══ -->
+<!-- ══ 占いカードグリッド（カテゴリ別） ══ -->
 <section class="fortune-section" id="fortunes">
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
@@ -616,144 +701,131 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
-  <div class="carousel-outer">
-    <div class="carousel-track" id="cTrack">
+  <?php
+  // v4: 「占いを選ぶ」3レーン構成。URL・名称は$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として使用。
+  // アイコンはモックアップのSVG意匠をそのまま使用（$_NAV_PAGESのicon絵文字フィールドはこのレーン内では使わない）。
+  $_fsIcons = [
+    'shichu'     => '<path d="M6 3v18M10 6v15M14 4v17M18 7v14"/>',
+    'sansei'     => '<g transform="translate(2,1) scale(0.34)"><path d="M12 2l2.2 6.8H21l-5.6 4.2 2.2 6.8L12 15.6 6.4 19.8l2.2-6.8L3 8.8h6.8z"/></g><g transform="translate(10,0) scale(0.26)"><path d="M12 2l2.2 6.8H21l-5.6 4.2 2.2 6.8L12 15.6 6.4 19.8l2.2-6.8L3 8.8h6.8z"/></g><g transform="translate(9,13) scale(0.2)"><path d="M12 2l2.2 6.8H21l-5.6 4.2 2.2 6.8L12 15.6 6.4 19.8l2.2-6.8L3 8.8h6.8z"/></g>',
+    'sanmei'     => '<path d="M12 3a9 9 0 000 18 4.5 4.5 0 010-9 4.5 4.5 0 000-9z"/><circle cx="12" cy="7.5" r="1"/><circle cx="12" cy="16.5" r="1"/>',
+    'seiza'      => '<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/>',
+    'tarot'      => '<rect x="4" y="3" width="7" height="11" rx="1"/><rect x="13" y="6" width="7" height="15" rx="1"/>',
+    'kyusei'     => '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/>',
+    'numerology' => '<path d="M12 2v20M7 6h3M7 10h3M7 14h3M7 18h3M14 6h3M14 10h3M14 14h3M14 18h3"/>',
+    'seimei'     => '<path d="M4 18c3-2 7-9 11-13"/><rect x="14" y="13" width="7" height="7" rx="1"/><path d="M16.2 16.5h2.6M16.2 18.5h2.6"/>',
+    'mbti'       => '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16M10 10v10"/>',
+    'love'       => '<path d="M12 21c-4-3-8-6.5-8-11a5 5 0 019-3 5 5 0 019 3c0 4.5-4 8-8 11z"/>',
+    'aisho'      => '<circle cx="9" cy="12" r="6.5"/><circle cx="15" cy="12" r="6.5"/>',
+    'rpg'        => '<path d="M4 11l8-6 8 6M6 11v9h12v-9M10 20v-5h4v5"/>',
+    'reversi'    => '<circle cx="9" cy="12" r="5" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="5"/>',
+    'zense'      => '<path d="M18 6a8 8 0 10-1.5 12.5"/><path d="M15 19.8l1.7-2.3 2.6 1.2"/>',
+    'guardian'   => '<path d="M12 3c3 3 5 6 5 9a5 5 0 01-10 0c0-3 2-6 5-9z"/>',
+    'geimei'     => '<path d="M4 20l3-1 10-10-2-2L5 17z"/><circle cx="18" cy="6" r="1"/>',
+  ];
 
-      <a href="/sansei" class="fcard ct-s fade-up">
-        <span class="fc-icon">✨</span>
-        <span class="fc-lbl">Integrated</span>
-        <div class="fc-name">三星統合鑑定</div>
-        <div class="fc-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
+  // レーン01：本格占い（feature=四柱推命、companions=随伴7件）
+  $_lane1FeatureSlug = 'shichu';
+  $_lane1FeatureDesc = '生年月日を四本の柱に見立て、命式と大運から人生の流れを読み解く、東洋占術の王道。';
+  $_lane1Companions = [
+    ['slug'=>'sansei',     'sub'=>'三占術を同時に鑑定'],
+    ['slug'=>'sanmei',     'sub'=>'陰陽五行で才能を読む'],
+    ['slug'=>'seiza',      'sub'=>'太陽星座×内面タイプ'],
+    ['slug'=>'tarot',      'sub'=>'1枚引いて今日を読む'],
+    ['slug'=>'kyusei',     'sub'=>'吉方位と運気の周期'],
+    ['slug'=>'numerology', 'sub'=>'数字が示す性格と運命'],
+    ['slug'=>'seimei',     'sub'=>'画数に宿る性格と流れ'],
+  ];
 
-      <a href="/love" class="fcard ct-r fade-up">
-        <span class="fc-icon">💜</span>
-        <span class="fc-lbl">Love Type</span>
-        <div class="fc-name">恋愛傾向診断</div>
-        <div class="fc-desc">MBTI×血液型×星座の3つから、あなたの恋愛スタイルと傾向を診断。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
+  // レーン02：カード・心理
+  $_lane2Tiles = [
+    ['slug'=>'mbti',  'sub'=>'性格タイプと星座を掛け合わせて診断'],
+    ['slug'=>'love',  'sub'=>'あなたの恋のクセを丁寧にひもとく'],
+    ['slug'=>'aisho', 'sub'=>'ふたりの生年月日から相性を読む'],
+  ];
 
-      <a href="/tarot" class="fcard ct-v fade-up">
-        <span class="fc-icon">🃏</span>
-        <span class="fc-lbl">Tarot</span>
-        <div class="fc-name">タロット占い</div>
-        <div class="fc-desc">大アルカナ22枚から1枚を選ぶ。直感でカードを引き、今のメッセージを受け取る。</div>
-        <span class="fc-btn">カードを引く →</span>
-      </a>
+  // レーン03：気軽に楽しむ
+  $_lane3Cards = [
+    ['slug'=>'rpg',      'cta'=>'遊ぶ →'],
+    ['slug'=>'reversi',  'cta'=>'対局 →'],
+    ['slug'=>'zense',    'cta'=>'診断 →'],
+    ['slug'=>'guardian', 'cta'=>'診断 →'],
+    ['slug'=>'geimei',   'cta'=>'診断 →'],
+  ];
+  ?>
 
-      <a href="/shichu" class="fcard ct-g fade-up">
-        <span class="fc-icon">🔯</span>
-        <span class="fc-lbl">Shichu Suimei</span>
-        <div class="fc-name">四柱推命</div>
-        <div class="fc-desc">命式・十神・大運を本格算出。生年月日から人生の流れを読み解く。</div>
-        <span class="fc-btn">算出する →</span>
-      </a>
+  <div class="fs-lanes">
 
-      <a href="/sanmei" class="fcard ct-t fade-up">
-        <span class="fc-icon">☯</span>
-        <span class="fc-lbl">Sanmeigaku</span>
-        <div class="fc-name">算命学鑑定</div>
-        <div class="fc-desc">元命・主星・従星から才能・恋愛・仕事適性を読む性格占術。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
-
-      <a href="/seiza" class="fcard ct-r fade-up">
-        <span class="fc-icon">⭐</span>
-        <span class="fc-lbl">Western Astrology</span>
-        <div class="fc-name">西洋占星術</div>
-        <div class="fc-desc">太陽星座×内面タイプで個性・恋愛・仕事適性を深掘り鑑定。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
-
-      <a href="/mbti" class="fcard ct-i fade-up">
-        <span class="fc-icon">🧠</span>
-        <span class="fc-lbl">MBTI × Zodiac</span>
-        <div class="fc-name">MBTI×星座診断</div>
-        <div class="fc-desc">10の質問で性格タイプと星座の組み合わせ運命を診断する。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/numerology" class="fcard ct-t fade-up">
-        <span class="fc-icon">🔢</span>
-        <span class="fc-lbl">Numerology</span>
-        <div class="fc-name">数秘術診断</div>
-        <div class="fc-desc">生年月日と名前から4つの数字で人生の使命を読み解く。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/kyusei" class="fcard ct-a fade-up">
-        <span class="fc-icon">⭐</span>
-        <span class="fc-lbl">Nine Star Ki</span>
-        <div class="fc-name">九星気学診断</div>
-        <div class="fc-desc">本命星・月命星・吉方位を無料診断。今年の運勢の流れを知る。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/rpg" class="fcard ct-gn fade-up">
-        <span class="fc-icon">⚔️</span>
-        <span class="fc-lbl">RPG Fortune</span>
-        <div class="fc-name">RPG風占いの村</div>
-        <div class="fc-desc">勇者となって占いの村を冒険しながら運命を知る。</div>
-        <span class="fc-btn">冒険する →</span>
-      </a>
-
-      <a href="/aisho" class="fcard ct-r fade-up">
-        <span class="fc-icon">💑</span>
-        <span class="fc-lbl">Compatibility</span>
-        <div class="fc-name">二人の相性診断</div>
-        <div class="fc-desc">星座と数秘術で恋愛・結婚の相性を鑑定する。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/zense" class="fcard ct-c fade-up">
-        <span class="fc-icon">🌀</span>
-        <span class="fc-lbl">Past Life</span>
-        <div class="fc-name">前世診断</div>
-        <div class="fc-desc">あなたは何回目の転生？魂のカルテを読み解く。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/guardian" class="fcard ct-g fade-up">
-        <span class="fc-icon">👻</span>
-        <span class="fc-lbl">Guardian Spirit</span>
-        <div class="fc-name">守護霊診断</div>
-        <div class="fc-desc">あなたを守る霊はUR？SSR？レアリティ付き守護霊を召喚。</div>
-        <span class="fc-btn">召喚する →</span>
-      </a>
-
-      <a href="/seimei" class="fcard ct-v fade-up">
-        <span class="fc-icon">✍️</span>
-        <span class="fc-lbl">Seimei</span>
-        <div class="fc-name">姓名判断</div>
-        <div class="fc-desc">名前に宿る運命を五格で鑑定。天格・人格・総格から運勢を読む。</div>
-        <span class="fc-btn">鑑定する →</span>
-      </a>
-
-      <a href="/geimei" class="fcard ct-a fade-up">
-        <span class="fc-icon">🎭</span>
-        <span class="fc-lbl">Geimei</span>
-        <div class="fc-name">芸名診断</div>
-        <div class="fc-desc">大喜利で見つける最強の芸名。</div>
-        <span class="fc-btn">診断する →</span>
-      </a>
-
-      <a href="/reversi" class="fcard ct-v fade-up">
-        <span class="fc-icon"><span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style></span>
-        <span class="fc-lbl">Destiny Reversi</span>
-        <div class="fc-name">リバーシ占い</div>
-        <div class="fc-desc">対局中の一手一手が布石となり、今日の運勢を読み解く新感覚の占いゲーム。</div>
-        <span class="fc-btn">対局する →</span>
-      </a>
-
-    </div><!-- /carousel-track -->
-
-    <div class="carousel-controls">
-      <button class="c-arr" id="cPrev">‹</button>
-      <span class="c-pause-hint">hover / drag to pause</span>
-      <button class="c-arr" id="cNext">›</button>
+    <!-- レーン01：本格占い -->
+    <div class="lane">
+      <div class="lane-head">
+        <div class="lane-eyebrow"><span class="lane-num">01</span><span class="lane-cat">本格占い</span></div>
+        <span class="lane-title">じっくり向き合う</span>
+        <span class="lane-tagline">生年月日から、命の設計図を読み解く。</span>
+      </div>
+      <div class="lane01-grid">
+        <?php $_fp = $_NAV_PAGES[$_lane1FeatureSlug]; ?>
+        <a href="<?= htmlspecialchars($_fp['url'], ENT_QUOTES, 'UTF-8') ?>" class="feature-card fade-up">
+          <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_lane1FeatureSlug] ?></svg></div>
+          <h3><?= htmlspecialchars($_fp['name'], ENT_QUOTES, 'UTF-8') ?></h3>
+          <p><?= htmlspecialchars($_lane1FeatureDesc, ENT_QUOTES, 'UTF-8') ?></p>
+          <span class="feature-cta">占ってみる →</span>
+        </a>
+        <div class="companions">
+          <?php foreach ($_lane1Companions as $_c): $_p = $_NAV_PAGES[$_c['slug']]; ?>
+          <a href="<?= htmlspecialchars($_p['url'], ENT_QUOTES, 'UTF-8') ?>" class="crow fade-up">
+            <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_c['slug']] ?></svg></div>
+            <div class="crow-body">
+              <h4><?= htmlspecialchars($_p['name'], ENT_QUOTES, 'UTF-8') ?></h4>
+              <span><?= htmlspecialchars($_c['sub'], ENT_QUOTES, 'UTF-8') ?></span>
+              <span class="feature-cta">開く →</span>
+            </div>
+          </a>
+          <?php endforeach; ?>
+        </div>
+      </div>
     </div>
+
+    <!-- レーン02：カード・心理 -->
+    <div class="lane">
+      <div class="lane-head">
+        <div class="lane-eyebrow"><span class="lane-num">02</span><span class="lane-cat">カード・心理</span></div>
+        <span class="lane-title">遊びながら知る</span>
+        <span class="lane-tagline">診断を通して、自分の傾向に気づく。</span>
+      </div>
+      <div class="tiles">
+        <?php foreach ($_lane2Tiles as $_t): $_p = $_NAV_PAGES[$_t['slug']]; ?>
+        <a href="<?= htmlspecialchars($_p['url'], ENT_QUOTES, 'UTF-8') ?>" class="tile fade-up">
+          <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_t['slug']] ?></svg></div>
+          <div class="tile-body">
+            <h4><?= htmlspecialchars($_p['name'], ENT_QUOTES, 'UTF-8') ?></h4>
+            <span><?= htmlspecialchars($_t['sub'], ENT_QUOTES, 'UTF-8') ?></span>
+            <span class="feature-cta">診断 →</span>
+          </div>
+        </a>
+        <?php endforeach; ?>
+      </div>
+    </div>
+
+    <!-- レーン03：気軽に楽しむ -->
+    <div class="lane">
+      <div class="lane-head">
+        <div class="lane-eyebrow"><span class="lane-num">03</span><span class="lane-cat">気軽に楽しむ</span></div>
+        <span class="lane-title">肩の力を抜いて</span>
+        <span class="lane-tagline">ひと息つく、軽やかな占い時間。</span>
+      </div>
+      <div class="rail">
+        <?php foreach ($_lane3Cards as $_d): $_p = $_NAV_PAGES[$_d['slug']]; ?>
+        <a href="<?= htmlspecialchars($_p['url'], ENT_QUOTES, 'UTF-8') ?>" class="dcard fade-up">
+          <div class="ic-wrap"><svg class="fs-ic" viewBox="0 0 24 24" aria-hidden="true"><?= $_fsIcons[$_d['slug']] ?></svg></div>
+          <div class="dcard-body">
+            <h4><?= htmlspecialchars($_p['name'], ENT_QUOTES, 'UTF-8') ?></h4>
+            <span class="feature-cta"><?= htmlspecialchars($_d['cta'], ENT_QUOTES, 'UTF-8') ?></span>
+          </div>
+        </a>
+        <?php endforeach; ?>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -861,7 +933,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap">
     <h2 class="closing-cta-title">さあ、あなたの運命を占ってみましょう</h2>
     <p class="closing-cta-sub">名前と生年月日を入力するだけ。西洋占星術×タロット×四柱推命の三位一体鑑定 ✨三星統合鑑定</p>
-    <a href="/sansei" class="btn-primary">三星統合鑑定をはじめる →</a>
+    <a href="/sansei" class="btn-gold" data-ga-event="cta_click" data-cta-name="closing_sansei" data-cta-destination="/sansei">三星統合鑑定をはじめる →</a>
   </div>
 </section>
 
@@ -869,7 +941,6 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 <div class="parallax-band">
   <div class="pb-content">
     <div class="pb-gold-line"></div>
-    <span class="pb-kamon">✦ ── ⛩ ── ✦</span>
     <div class="pb-gold-line"></div>
   </div>
 </div>
@@ -929,172 +1000,27 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   setTimeout(spawnMeteor, 1800);
 })();
 
-/* ══ PC カルーセル（無限じわスクロール + ドラッグ） ══ */
-(function(){
-  const isMobile = () => window.innerWidth < 640;
-  const track = document.getElementById('cTrack');
-  const origCards = Array.from(track.querySelectorAll('.fcard'));
-
-  const SPEED   = 0.45;   // px/frame（遅め）
-  const CARD_GAP = 14;    // .9rem ≈ 14px
-
-  let pos       = 0;
-  let targetPos = 0;   // イージング用の目標位置
-  let paused    = false;
-  let dragging  = false;
-  let dragStartX   = 0;
-  let dragStartPos = 0;
-  let raf = null;
-  let cloned = false;
-
-  /* カードを複製してDOMに追加（1セット追加で無限ループ） */
-  function setupClones(){
-    if(cloned) return;
-    origCards.forEach(c => {
-      const cl = c.cloneNode(true);
-      cl.setAttribute('aria-hidden', 'true');
-      track.appendChild(cl);
-    });
-    cloned = true;
-  }
-
-  /* 1セット分の幅 */
-  function origWidth(){
-    if(!origCards[0]) return 0;
-    return (origCards[0].offsetWidth + CARD_GAP) * origCards.length;
-  }
-
-  /* メインループ */
-  function tick(){
-    if(!isMobile()){
-      const ow = origWidth();
-      if(!paused && !dragging){
-        /* 自動スクロール：targetPosも一緒に進める */
-        pos += SPEED;
-        targetPos += SPEED;
-        if(ow > 0 && pos >= ow) { pos -= ow; targetPos -= ow; }
-      }
-      /* イージング：posをtargetPosに向かってなめらかに近づける */
-      if(Math.abs(targetPos - pos) > 0.1){
-        pos += (targetPos - pos) * 0.1;
-        /* ループ境界処理 */
-        if(ow > 0 && pos >= ow) pos -= ow;
-        if(pos < 0) pos += ow;
-      }
-      track.scrollLeft = pos;
-    }
-    raf = requestAnimationFrame(tick);
-  }
-
-  /* 矢印：1枚分なめらかに移動 */
-  function jump(dir){
-    if(isMobile()) return;
-    const cardW = origCards[0] ? origCards[0].offsetWidth + CARD_GAP : 200;
-    targetPos += dir * cardW;
-    const ow = origWidth();
-    if(targetPos < 0)   targetPos += ow;
-    if(targetPos >= ow) targetPos -= ow;
-  }
-
-  document.getElementById('cPrev').addEventListener('click', () => jump(-1));
-  document.getElementById('cNext').addEventListener('click', () => jump(1));
-
-  /* ホバーで一時停止 */
-  track.addEventListener('mouseenter', () => { if(!isMobile()) paused = true;  });
-  track.addEventListener('mouseleave', () => { if(!isMobile()) paused = false; });
-
-  /* ドラッグ（一定距離動いたときだけドラッグ扱いにし、単純クリックはリンクとして機能させる） */
-  const DRAG_THRESHOLD = 6; // px
-  let pointerIsDown = false;
-  let pointerDownX = 0;
-  let moved = false; // このポインタ操作でドラッグ判定（しきい値超え）が発生したか
-
-  let activePointerId = null;
-
-  track.addEventListener('pointerdown', e => {
-    if(isMobile()) return;
-    pointerIsDown = true;
-    pointerDownX = e.clientX;
-    dragStartX   = e.clientX;
-    dragStartPos = pos;
-    activePointerId = e.pointerId;
-    /* setPointerCaptureはここでは呼ばない：単純クリックの時点でcaptureすると
-       ブラウザによってはその後のclickイベントのtargetが実際の<a>ではなく
-       track自身に付け替わり、リンク遷移が起きなくなることがあるため。
-       ドラッグが確定した瞬間(pointermove側)にのみcaptureする。 */
-  });
-  track.addEventListener('pointermove', e => {
-    if(!pointerIsDown) return;
-    if(!dragging){
-      if(Math.abs(e.clientX - pointerDownX) < DRAG_THRESHOLD) return;
-      /* しきい値を超えたらここで初めてドラッグ開始 */
-      dragging = true;
-      moved = true;
-      track.classList.add('dragging');
-      track.setPointerCapture(e.pointerId);
-    }
-    e.preventDefault();
-    const dx = dragStartX - e.clientX;
-    const ow = origWidth();
-    let next = dragStartPos + dx;
-    if(next < 0)   next += ow;
-    if(next >= ow) next -= ow;
-    pos = targetPos = next;       /* ドラッグ中はイージングをバイパス */
-    track.scrollLeft = pos;
-  });
-  ['pointerup','pointercancel'].forEach(ev => {
-    track.addEventListener(ev, e => {
-      pointerIsDown = false;
-      if(activePointerId !== null && track.hasPointerCapture(activePointerId)){
-        track.releasePointerCapture(activePointerId);
-      }
-      activePointerId = null;
-      if(dragging){
-        dragging = false;
-        track.classList.remove('dragging');
-        targetPos = pos;  /* 離した位置から自動スクロール再開 */
-      }
-      /* moved はここで即リセットしない：直後に同期発火するclickイベント側で
-         先に参照させる必要があるため。ただし、要素外でpointerupした場合など
-         clickが発火しないケースに備え、次のイベントループでの遅延リセットを
-         安全策として必ず入れておく（reset漏れによる誤爆の再発防止） */
-      setTimeout(() => { moved = false; }, 0);
-    });
-  });
-
-  /* ドラッグ操作の直後だけ、そのクリックによるページ遷移を止める。
-     捕捉フェーズ(true)でリンクのデフォルト動作より先に判定する。 */
-  track.addEventListener('click', e => {
-    if(moved){
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    moved = false; // 判定に使ったら必ずリセット（reset漏れ防止）
-  }, true);
-
-  /* 初期化 */
-  function init(){
-    if(!isMobile()){
-      setupClones();
-      track.scrollLeft = 0;
-      pos = 0;
-    }
-    if(!raf) raf = requestAnimationFrame(tick);
-  }
-
-  window.addEventListener('resize', () => {
-    /* リサイズ時にSP⇔PCを切り替え */
-    track.scrollLeft = pos = 0;
-  });
-
-  init();
-})();
-
 /* ══ IntersectionObserver ══ */
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: .12 });
 document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+/* ══ カテゴリタブ scroll-spy（SPの横スクロール棚と連動。表示上の効果はSP用CSSのみで発火） ══ */
+const fcCategories = document.querySelectorAll('.fortune-category');
+const fcTabs = document.querySelectorAll('.fc-tab');
+if (fcCategories.length && fcTabs.length) {
+  const fcSpy = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const activeTab = document.querySelector('.fc-tab[href="#' + entry.target.id + '"]');
+      if (!activeTab) return;
+      fcTabs.forEach(t => t.classList.remove('fc-tab-active'));
+      activeTab.classList.add('fc-tab-active');
+    });
+  }, { threshold: 0, rootMargin: '-40% 0px -55% 0px' });
+  fcCategories.forEach(el => fcSpy.observe(el));
+}
 
 /* ══ スマホメニュー ══ */
 window.toggleMenu = function(){
