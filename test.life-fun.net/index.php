@@ -436,7 +436,9 @@ body {
 
 @media (max-width: 639px) {
   .lane01-grid { display: block; padding: 0 1.2rem; }
-  .companions { display: flex; flex-direction: column; gap: .5rem; }
+  /* 左paddingでフローティングメニュー(.fmenu-btn 危険域 x≈25.6〜89.6px)との重なりを軽減。
+     完全回避(.railの7rem)までは行わず、アイコン主要部・テキストが隠れない程度に留める。 */
+  .companions { display: flex; flex-direction: column; gap: .5rem; padding-left: 4rem; }
   .feature-card { grid-column: unset; grid-row: unset; margin-bottom: .9rem; padding: 1.2rem; }
   .feature-card h3 { font-size: 1.15rem; }
   .feature-card::after { content: none; }
@@ -454,8 +456,7 @@ body {
 .tile .feature-cta { font-size: .69rem; margin-top: auto; }
 
 @media (max-width: 639px) {
-  .tiles { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
-  .tile { min-height: 132px; }
+  .tiles { grid-template-columns: 1fr; gap: .75rem; }
 }
 
 /* ─── レーン03：気軽に楽しむ（レール） ─── */
@@ -491,6 +492,9 @@ body {
     scroll-snap-align: start;
     width: clamp(170px, calc((100vw - 8.4rem) / 1.1), 230px);
   }
+  /* レーン03見出しのみ左paddingでフローティングメニュー(.fmenu-btn 危険域 x≈25.6〜89.6px)との
+     重なりを軽減。レーン01・02のlane-headには影響させないためnth-child(3)でスコープ。 */
+  .lane:nth-child(3) .lane-head { padding-left: 6rem; }
 }
 
 /* カラーテーマ */
