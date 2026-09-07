@@ -88,7 +88,7 @@ body {
   margin-bottom: .35rem;
 }
 .fortune-guide {
-  font-size: .78rem;
+  font-size: .875rem;
   color: var(--gold-lt);
   text-align: center;
   letter-spacing: .02em;
@@ -431,7 +431,7 @@ body {
 .crow .ic-wrap { width: 60px; height: 60px; color: var(--fs-gold-dim); font-size: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .crow-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .crow-body h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .85rem; color: var(--text); }
-.crow-body span { font-size: .65rem; color: var(--muted); }
+.crow-body span { font-size: .81rem; color: var(--muted); }
 .crow .feature-cta { font-size: .62rem; margin-top: 2px; }
 
 @media (max-width: 639px) {
@@ -452,7 +452,7 @@ body {
 .tile .ic-wrap { width: 64px; height: 64px; color: var(--gold); font-size: 43px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .tile-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .tile h4 { font-family: var(--ff-serif); font-weight: 700; font-size: .95rem; color: var(--text); margin-top: .5rem; }
-.tile-body span { font-size: .69rem; color: var(--muted); line-height: 1.5; flex: 1; }
+.tile-body span { font-size: .84rem; color: var(--muted); line-height: 1.5; flex: 1; }
 .tile .feature-cta { font-size: .69rem; margin-top: auto; }
 
 @media (max-width: 639px) {
