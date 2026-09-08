@@ -1,6 +1,5 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__.'/inc/nav-cards.php';
 require_once __DIR__.'/inc/oracle.php';
 
 $today      = new DateTimeImmutable();
@@ -14,6 +13,15 @@ $oracleDateLabel = $today->format('Y年n月j日').'（'.$weekdayJp[(int)$today->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<?php
+/* Quirksモード修正（2026-09 Stage3）：inc/nav-cards.phpはPHP終了タグの外側に
+   <style>ブロックを持つため、requireした時点でその内容がそのまま出力される。
+   以前はrequireがDOCTYPEより前（ファイル冒頭）にあったため、DOCTYPEより前に
+   このstyleが出力されQuirksモードの原因になっていた。DOCTYPE出力後・
+   $_NAV_PAGES初回使用（Heroピル、669行目付近）より前であるここへ移動する。
+   nav-cards.php自体の表示・CSSは無変更。 */
+require_once __DIR__.'/inc/nav-cards.php';
+?>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1EKB3WWX8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P1EKB3WWX8');</script>
 <meta charset="UTF-8">
@@ -559,15 +567,30 @@ body {
 @media (max-width: 380px) { .guide-grid { grid-template-columns: 1fr; } }
 
 .gcard {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 12px; padding: 1.1rem 1rem .95rem;
+  /* Stage3案B：占い解説ガイド固有の改修。角丸14px・背景グラデーションはTOP「占いを選ぶ」の
+     Global Design Principle（新規トークンを追加せず既存の--card/--card2を使う）を抽出したもの。
+     四隅ノッチ・HSL surface gradient・レーン構造・.btn-goldは意図的に導入しない。 */
+  background: linear-gradient(145deg, var(--card2), var(--card));
+  border: 1px solid var(--border);
+  border-radius: 14px; padding: 1.1rem 1rem .95rem;
   display: flex; flex-direction: column; gap: .42rem;
   position: relative; overflow: hidden;
-  transition: border-color .2s, transform .2s;
+  transition: border-color .2s, transform .25s, box-shadow .25s;
   text-decoration: none; color: inherit;
 }
 .gcard::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--c1), var(--c2)); }
-.gcard:hover { border-color: var(--border2); transform: translateY(-2px); }
+.gcard:hover {
+  border-color: var(--border2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.26);
+}
+.gc-icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem; line-height: 1;
+  background: var(--card2); border: 1px solid var(--border);
+  margin-bottom: .1rem;
+}
 .gc-lbl { font-family: var(--ff-mono); font-size: .52rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
 .gc-name { font-family: var(--ff-serif); font-size: .88rem; font-weight: 700; color: var(--text); }
 .gc-desc { font-size: .74rem; color: var(--text-secondary); line-height: 1.65; letter-spacing: .01em; flex: 1; }
@@ -885,38 +908,44 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 
     <div class="guide-grid">
       <a href="/articles/tarot/" class="gcard fade-up" style="--c1:#9b72ef;--c2:#c85080">
+        <span class="gc-icon" aria-hidden="true">🃏</span>
         <span class="gc-lbl">Tarot</span>
-        <div class="gc-name">🃏 タロット占いとは</div>
+        <div class="gc-name">タロット占いとは</div>
         <div class="gc-desc">22枚の意味・歴史・正位置逆位置の読み方</div>
         <span class="gc-link">解説を読む →</span>
       </a>
       <a href="/articles/shichu/" class="gcard fade-up" style="--c1:#c9a84c;--c2:#9b72ef">
+        <span class="gc-icon" aria-hidden="true">🔯</span>
         <span class="gc-lbl">Shichu Suimei</span>
-        <div class="gc-name">🔯 四柱推命とは</div>
+        <div class="gc-name">四柱推命とは</div>
         <div class="gc-desc">命式・十神・大運・天中殺の見方</div>
         <span class="gc-link">解説を読む →</span>
       </a>
       <a href="/articles/numerology/" class="gcard fade-up" style="--c1:#3ab8b0;--c2:#c9a84c">
+        <span class="gc-icon" aria-hidden="true">🔢</span>
         <span class="gc-lbl">Numerology</span>
-        <div class="gc-name">🔢 数秘術とは</div>
+        <div class="gc-name">数秘術とは</div>
         <div class="gc-desc">ライフパスナンバーの計算方法と意味</div>
         <span class="gc-link">解説を読む →</span>
       </a>
       <a href="/articles/mbti/" class="gcard fade-up" style="--c1:#c85080;--c2:#9b72ef">
+        <span class="gc-icon" aria-hidden="true">🧠</span>
         <span class="gc-lbl">MBTI</span>
-        <div class="gc-name">🧠 MBTIとは</div>
+        <div class="gc-name">MBTIとは</div>
         <div class="gc-desc">16タイプの特徴と星座との組み合わせ</div>
         <span class="gc-link">解説を読む →</span>
       </a>
       <a href="/articles/kyusei/" class="gcard fade-up" style="--c1:#9b72ef;--c2:#3ab8b0">
+        <span class="gc-icon" aria-hidden="true">⭐</span>
         <span class="gc-lbl">Nine Star Ki</span>
-        <div class="gc-name">⭐ 九星気学とは</div>
+        <div class="gc-name">九星気学とは</div>
         <div class="gc-desc">本命星・月命星と吉方位の求め方</div>
         <span class="gc-link">解説を読む →</span>
       </a>
       <a href="/articles/sanmei/" class="gcard fade-up" style="--c1:#c9a84c;--c2:#3ab8b0">
+        <span class="gc-icon" aria-hidden="true">☯</span>
         <span class="gc-lbl">Sanmeigaku</span>
-        <div class="gc-name">☯ 算命学とは</div>
+        <div class="gc-name">算命学とは</div>
         <div class="gc-desc">元命・主星・従星から才能と本質を読む</div>
         <span class="gc-link">解説を読む →</span>
       </a>

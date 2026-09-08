@@ -140,12 +140,19 @@ function render_footer(array $opts = []): void {
   cursor:pointer;
   box-shadow:0 0 0 2px rgba(201,168,76,.7),0 0 28px rgba(130,70,240,.9),0 0 60px rgba(100,50,200,.5),0 4px 20px rgba(0,0,0,.7);
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
-  transition:box-shadow .3s,transform .2s
+  transition:box-shadow .3s,transform .25s,opacity .25s
 }
 .fmenu-btn:hover{
   transform:scale(1.1);
   box-shadow:0 0 0 2px #c9a84c,0 0 40px rgba(160,90,255,1),0 0 80px rgba(120,60,220,.7),0 4px 24px rgba(0,0,0,.8)
 }
+/* コンテンツ衝突対策（Stage3）：本ボタンはposition:fixedのため、スクロール位置によっては
+   本文・カード・CTA等の重要コンテンツと画面上で重なりうる。スクロール中のみ縮小・半透明化し、
+   静止時・hover/touch時は元のサイズへ戻すことで、常時の視覚的干渉を減らす。
+   ページ側のCSS・HTMLは一切変更せず、本ファイル（全ページ共通）のみで完結させる。 */
+.fmenu-btn.fmenu-compact{transform:scale(.6);transform-origin:bottom left;opacity:.4}
+.fmenu-btn.fmenu-compact:hover,
+.fmenu-btn.fmenu-compact:focus-visible{transform:scale(1);opacity:1}
 /* 回転リング */
 .fmenu-ring{
   position:absolute;inset:-5px;border-radius:50%;
@@ -326,5 +333,16 @@ function copyShareUrl(){
   overlay.addEventListener('click',close);
   closeBtn.addEventListener('click',close);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+
+  // コンテンツ衝突対策（Stage3）：スクロール中のみ.fmenu-compactを付与して縮小・半透明化し、
+  // スクロール停止から500ms後、またはボタンへのhover/touch時に元のサイズへ戻す。
+  var compactTimer=null;
+  function setCompact(on){btn.classList.toggle('fmenu-compact',on);}
+  window.addEventListener('scroll',function(){
+    setCompact(true);
+    clearTimeout(compactTimer);
+    compactTimer=setTimeout(function(){setCompact(false);},500);
+  },{passive:true});
+  btn.addEventListener('touchstart',function(){setCompact(false);},{passive:true});
 })();
 </script>
