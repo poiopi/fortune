@@ -923,4 +923,18 @@
   <url><loc>https://life-fun.net/articles/love/tendency/kekkonshikou-love/</loc><lastmod>2026-07-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://life-fun.net/articles/love/tendency/uwakitaisei-love/</loc><lastmod>2026-07-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
+  <url>
+    <loc>https://life-fun.net/quiz/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url><loc>https://life-fun.net/quiz/hatsutaimen-saisho-ni-miru-mono/</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://life-fun.net/quiz/yotei-no-nai-kyuujitsu/</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://life-fun.net/quiz/erabu-toki-saisho-ni-kininaru/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://life-fun.net/quiz/junishi-nihon-ni-inai-doubutsu/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://life-fun.net/quiz/doyo-no-ushi-unagi/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://life-fun.net/quiz/omikuji-junban/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://life-fun.net/quiz/junishi-nihon-ni-inai-doubutsu/kaisetsu/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
 </urlset>
