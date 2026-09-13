@@ -22,6 +22,14 @@ $_ogImage = 'https://life-fun.net/favicon.png';
 $currentPage = $quiz['slug'];
 $currentSlug = $quiz['slug'];
 $pageType    = 'quiz';
+
+// 4択の丸バッジに割り当てる控えめなアクセントカラー（確定デザイン：a-plus案より）
+$_accentMap = [
+    'a1' => '#c1616a', // ローズ
+    'a2' => '#3f7fa6', // ブルー
+    'a3' => '#3f9c74', // グリーン
+    'a4' => '#b8863a', // マスタード
+];
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -55,89 +63,112 @@ $pageType    = 'quiz';
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --void:    #08060f;
-  --deep:    #0f0b1e;
-  --surface: #16112b;
-  --card:    #1e1738;
-  --border:  rgba(160,130,220,.18);
-  --border2: rgba(160,130,220,.35);
-  --gold:    #c9a84c;
-  --gold-lt: #e8c96a;
-  --violet:  #9b72ef;
-  --violet-lt:#c4a8f5;
-  --rose:    #e8719a;
-  --teal:    #4ecdc4;
-  --text:    #e8e2f5;
-  --muted:   #8a7db5;
+  /* ── 確定デザイン（a-plus案）：ライト・マガジン型 ── */
+  --bg:      #faf6ef;
+  --surface: #ffffff;
+  --card:    #ffffff;
+  --border:  #e7dfcb;
+  --border2: #d8ccae;
+  --accent:  #b8863a;   /* マスタード系 */
+  --accent-dk:#8f6626;
+  --accent2: #c14f68;   /* ローズ系 */
+  --tint:    #fbf1e2;   /* ホバー時の淡いアクセント背景 */
+  --text:    #2b2620;
+  --muted:   #756c5c;
   --ff-serif:'Shippori Mincho',serif;
   --ff-sans: 'Zen Kaku Gothic New',sans-serif;
   --ff-mono: 'DM Mono',monospace;
+  /* ── inc/header.php・inc/footer.php・inc/nav-cards.php（共通コンポーネント）が
+     参照する変数名との互換のためのエイリアス。共通コンポーネント本体は変更しないため、
+     これらの変数名はそのまま維持し、値のみ確定デザインの配色に合わせている。 ── */
+  --gold:    var(--accent);
+  --gold-lt: #e8c96a;
+  --violet:  var(--accent2);
+  --card2:   var(--tint);
 }
 html{font-size:16px;scroll-behavior:smooth}
-body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-weight:300;line-height:1.8;min-height:100vh;overflow-x:hidden}
-body::before{
-  content:'';position:fixed;inset:0;
-  background:
-    radial-gradient(ellipse at 20% 20%, rgba(90,50,180,.25) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(180,50,100,.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(30,20,60,.8) 0%, transparent 100%);
-  pointer-events:none;z-index:0;
-}
-.wrap{position:relative;z-index:1;max-width:700px;margin:0 auto;padding:0 1.2rem}
+body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.8;min-height:100vh}
+.wrap{max-width:700px;margin:0 auto;padding:0 1.2rem}
 .quiz-wrap{padding-bottom:2rem}
-.quiz-hero{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--border)}
-.quiz-eyebrow{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:1.2rem;display:block}
-.quiz-hero h1{font-family:var(--ff-serif);font-size:clamp(1.4rem,5vw,2rem);font-weight:700;line-height:1.4;letter-spacing:.04em;color:var(--text);margin-bottom:1rem}
-.quiz-lead{color:var(--muted);font-size:.9rem;line-height:1.9}
-.quiz-choices{display:flex;flex-direction:column;gap:.9rem;padding:2rem 0}
+.quiz-hero{text-align:center;padding:2.6rem 1rem 2rem;border-bottom:2px solid var(--border)}
+.quiz-eyebrow{
+  font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.25em;color:var(--accent-dk);
+  text-transform:uppercase;margin-bottom:1.2rem;display:inline-block;
+  padding:.3rem .9rem;border:1px solid var(--border2);border-radius:20px;background:var(--tint);
+}
+.quiz-hero h1{font-family:var(--ff-serif);font-size:clamp(1.4rem,5vw,2rem);font-weight:700;line-height:1.5;letter-spacing:.03em;color:var(--text);margin-top:1rem;margin-bottom:1rem}
+.quiz-lead{color:var(--muted);font-size:.92rem;line-height:1.9}
+.quiz-choices{display:grid;grid-template-columns:1fr;gap:.9rem;padding:2rem 0}
+@media(min-width:560px){.quiz-choices{grid-template-columns:1fr 1fr}}
 .quiz-choice{
-  display:flex;align-items:center;gap:1rem;
-  background:var(--card);border:1px solid var(--border2);border-radius:14px;
+  display:flex;align-items:center;gap:1rem;min-height:72px;
+  background:var(--card);border:1.5px solid var(--border);border-radius:16px;
   padding:1.1rem 1.3rem;text-decoration:none;color:var(--text);
-  transition:border-color .2s,transform .15s,background .2s;
+  box-shadow:0 1px 3px rgba(43,38,32,.05);
+  transition:border-color .18s,transform .15s,background .18s,box-shadow .18s;
 }
-.quiz-choice:hover{border-color:var(--violet);transform:translateY(-2px);background:var(--surface)}
+.quiz-choice:hover,.quiz-choice:focus-visible{
+  border-color:var(--accent);background:var(--tint);
+  transform:translateY(-3px) rotate(-.3deg);
+  box-shadow:0 8px 20px rgba(184,134,58,.18);
+}
+.quiz-choice:active{transform:translateY(-1px) scale(.98);box-shadow:0 4px 10px rgba(184,134,58,.16)}
+.quiz-choice:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
 .quiz-choice-mark{
-  flex-shrink:0;width:2.2rem;height:2.2rem;border-radius:50%;
+  flex-shrink:0;width:2.3rem;height:2.3rem;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(135deg,var(--violet),var(--rose));
-  font-family:var(--ff-mono);font-size:.8rem;font-weight:400;color:#fff;
+  background:var(--mark-color, var(--accent));
+  font-family:var(--ff-mono);font-size:.8rem;font-weight:500;color:#fff;
+  transition:transform .18s;
 }
-.quiz-choice-text{font-size:.92rem;line-height:1.6}
+.quiz-choice:hover .quiz-choice-mark,.quiz-choice:focus-visible .quiz-choice-mark{
+  transform:scale(1.12) rotate(-6deg);
+}
+.quiz-choice-text{font-size:.94rem;line-height:1.6;font-weight:500}
+.quiz-choice-arrow{margin-left:auto;flex-shrink:0;color:var(--border2);font-size:1rem;transition:color .18s,transform .18s}
+.quiz-choice:hover .quiz-choice-arrow{color:var(--accent2);transform:translateX(3px)}
 .quiz-result-block,.quiz-kaisetsu-block{
-  background:var(--card);border:1px solid var(--border2);border-radius:16px;
-  padding:1.8rem;margin:2rem 0;
+  background:var(--card);border:1.5px solid var(--border2);border-radius:18px;
+  padding:1.9rem;margin:2rem 0;box-shadow:0 4px 16px rgba(43,38,32,.06);
 }
 .quiz-your-choice{
-  font-family:var(--ff-mono);font-size:.78rem;color:var(--gold-lt);
-  letter-spacing:.04em;margin-bottom:1.1rem;padding-bottom:1rem;
-  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:.6rem;
+  font-family:var(--ff-mono);font-size:.8rem;color:var(--accent-dk);
+  letter-spacing:.02em;margin-bottom:1.2rem;padding-bottom:1rem;
+  border-bottom:1px dashed var(--border2);
 }
+.quiz-your-choice-mark{
+  flex-shrink:0;width:1.6rem;height:1.6rem;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-family:var(--ff-mono);font-size:.68rem;font-weight:500;
+}
+.quiz-your-choice b{color:var(--accent2);font-weight:700}
 .quiz-kaisetsu-intro{
   font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;
-  color:var(--gold-lt);margin-bottom:1rem;
+  color:var(--accent-dk);margin-bottom:1rem;
 }
-.quiz-result-text,.quiz-kaisetsu-text{font-size:.92rem;line-height:2;color:var(--text)}
+.quiz-result-text,.quiz-kaisetsu-text{font-size:.95rem;line-height:2;color:var(--text)}
 .quiz-btn-primary{
-  display:inline-block;margin-top:1.5rem;padding:.8rem 1.8rem;
-  background:linear-gradient(135deg,var(--violet) 0%,var(--rose) 100%);
-  color:#fff;border-radius:10px;text-decoration:none;
+  display:inline-block;margin-top:1.6rem;padding:.85rem 1.9rem;
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);
+  color:#fff;border-radius:24px;text-decoration:none;
   font-family:var(--ff-serif);font-weight:600;font-size:.9rem;letter-spacing:.06em;
-  box-shadow:0 4px 20px rgba(155,114,239,.35);transition:opacity .2s,transform .15s;
+  box-shadow:0 6px 18px rgba(184,134,58,.3);transition:opacity .2s,transform .15s;
 }
 .quiz-btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+.quiz-btn-primary:active{transform:translateY(0) scale(.98)}
 .quiz-cta-wrap{margin:2rem 0}
 .quiz-back-to-hub{text-align:center;margin:1.5rem 0 0}
 .quiz-back-to-hub a{
   font-family:var(--ff-mono);font-size:.75rem;color:var(--muted);
   text-decoration:none;letter-spacing:.06em;transition:color .2s;
 }
-.quiz-back-to-hub a:hover{color:var(--violet-lt)}
+.quiz-back-to-hub a:hover{color:var(--accent-dk)}
 .article-cta{
   background:var(--surface);border:1px solid var(--border2);border-radius:14px;
   padding:1.3rem 1.5rem;display:flex;flex-direction:column;gap:.8rem;
@@ -147,13 +178,13 @@ body::before{
 .article-cta-text small{display:block;margin-top:.3rem;font-size:.78rem;color:var(--muted)}
 .article-cta-btn{
   display:inline-block;padding:.7rem 1.6rem;border-radius:10px;
-  background:linear-gradient(135deg,var(--gold) 0%,var(--violet) 100%);
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);
   color:#fff;text-decoration:none;font-family:var(--ff-serif);font-weight:600;
   font-size:.85rem;letter-spacing:.05em;transition:opacity .2s;
 }
 .article-cta-btn:hover{opacity:.88}
 @media(max-width:600px){
-  .quiz-hero{padding:2.2rem .5rem 1.5rem}
+  .quiz-hero{padding:1.6rem .5rem 1.5rem}
   .quiz-result-block,.quiz-kaisetsu-block{padding:1.3rem 1.1rem}
 }
 </style>
@@ -173,8 +204,9 @@ body::before{
   <section class="quiz-choices">
     <?php foreach (['a1','a2','a3','a4'] as $_k): ?>
     <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/kekka/?a=<?= $_k ?>" class="quiz-choice" onclick="return quizAnswer(this,'<?= $_k ?>')">
-      <span class="quiz-choice-mark"><?= strtoupper($_k) ?></span>
+      <span class="quiz-choice-mark" style="--mark-color:<?= $_accentMap[$_k] ?>"><?= strtoupper($_k) ?></span>
       <span class="quiz-choice-text"><?= htmlspecialchars($quiz['choices'][$_k], ENT_QUOTES, 'UTF-8') ?></span>
+      <span class="quiz-choice-arrow">→</span>
     </a>
     <?php endforeach; ?>
   </section>
@@ -196,7 +228,10 @@ body::before{
   </section>
 
   <section class="quiz-result-block">
-    <p class="quiz-your-choice">あなたが選んだのは「<?= htmlspecialchars($quiz['choices'][$quizChoice], ENT_QUOTES, 'UTF-8') ?>」</p>
+    <p class="quiz-your-choice">
+      <span class="quiz-your-choice-mark" style="background:<?= $_accentMap[$quizChoice] ?>"><?= strtoupper($quizChoice) ?></span>
+      あなたが選んだのは「<b><?= htmlspecialchars($quiz['choices'][$quizChoice], ENT_QUOTES, 'UTF-8') ?></b>」でした。
+    </p>
     <?php if (($quiz['series'] ?? null) === 'B'): ?>
     <p class="quiz-kaisetsu-intro"><?= htmlspecialchars($quiz['explanation_intro'][$quizChoice], ENT_QUOTES, 'UTF-8') ?></p>
     <?php elseif (!empty($quiz['results'][$quizChoice])): ?>

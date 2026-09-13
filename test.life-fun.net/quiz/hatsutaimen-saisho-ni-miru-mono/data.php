@@ -8,13 +8,13 @@ return [
   'published_at' => '2026-09-12',
 
   'question' => '初対面で最初に気になるものは？',
-  'lead'     => 'はじめて会う人と話すとき、実は人によって最初に見ている場所がちがいます。目、話し方、服装、しぐさ——あなたが無意識に見ているものから、ちょっとした対人傾向がわかるかもしれません。',
+  'lead'     => 'はじめて会う人と話すとき、実は人によって最初に気になる場所が違います。目、話し方、服装、しぐさ――今日はどこが気になるか、選んでみてください。',
 
   'choices' => [
-    'a1' => 'その人の『目』',
-    'a2' => 'その人の『話し方・声のトーン』',
-    'a3' => 'その人の『服装・見た目の雰囲気』',
-    'a4' => 'その人の『手の動き・しぐさ』',
+    'a1' => '目',
+    'a2' => '話し方・声のトーン',
+    'a3' => '服装・見た目の雰囲気',
+    'a4' => '手の動き・しぐさ',
   ],
 
   'results' => [
@@ -43,7 +43,7 @@ return [
   'cta_label' => '相性診断で、二人の相性を占う',
 
   'sns' => [
-    'threads' => "初対面で最初に気になるものは？\n\n○ その人の『目』\n○ その人の『話し方・声のトーン』\n○ その人の『服装・見た目の雰囲気』\n○ その人の『手の動き・しぐさ』\n\nあなたはどれ？\n答えと解説はこちら → https://life-fun.net/quiz/hatsutaimen-saisho-ni-miru-mono/?utm_source=threads&utm_medium=social&utm_campaign=daily_quiz",
+    'threads' => "初対面で最初に気になるものは？\n\n○ 目\n○ 話し方・声のトーン\n○ 服装・見た目の雰囲気\n○ 手の動き・しぐさ\n\nあなたはどれ？\n答えと解説はこちら → https://life-fun.net/quiz/hatsutaimen-saisho-ni-miru-mono/?utm_source=threads&utm_medium=social&utm_campaign=daily_quiz",
     'note' => null,
   ],
 ];
