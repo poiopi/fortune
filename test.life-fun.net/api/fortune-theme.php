@@ -47,14 +47,24 @@ function build_theme_result_text(string $category, array $engineResult): string 
     }
 
     if ($category === 'self') {
-        return $highlights[0] . ' ' . $highlights[1];
+        $innerType = SEIZA_INNER_TYPES[$engineResult['raw']['innerTypeIndex']];
+        $elementName = '';
+        $qualityName = '';
+        foreach ($extras as $extra) {
+            if ($extra['type'] === 'element') {
+                $elementName = $extra['value']['name'];
+            } elseif ($extra['type'] === 'quality') {
+                $qualityName = $extra['value']['name'];
+            }
+        }
+        return $innerType['desc'] . ' エレメントは' . $elementName . '、クオリティは' . $qualityName . 'です。';
     }
 
     // work
     foreach ($extras as $extra) {
         if ($extra['type'] === 'jobs') {
             $jobs = $extra['value'];
-            return 'あなたに向いているのは、' . $jobs[0] . 'や' . $jobs[1] . '、' . $jobs[2] . 'といった仕事です。自分の強みを活かせる環境を選ぶことで、力を発揮できるでしょう。';
+            return 'あなたに向いているのは、' . $jobs[0] . 'や' . $jobs[1] . '、' . $jobs[2] . 'といった仕事です。';
         }
     }
     return '';
