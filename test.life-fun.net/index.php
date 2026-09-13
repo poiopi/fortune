@@ -616,7 +616,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 /* ══════════════════════════════════
    気になることから占う（相談テーマ型占いモーダル）
 ══════════════════════════════════ */
-.theme-picker-section { padding: 3.2rem 0 2.6rem; }
+.theme-picker-section { padding: 3.2rem 0 2.6rem; background: var(--surface); }
 .theme-picker-head { margin-bottom: .4rem; }
 .theme-tiles {
   display: grid;
