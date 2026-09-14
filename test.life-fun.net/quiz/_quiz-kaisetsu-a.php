@@ -151,9 +151,19 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
   font-size:.85rem;letter-spacing:.05em;transition:opacity .2s;
 }
 .article-cta-btn:hover{opacity:.88}
+.quiz-ad-slot{
+  margin:2rem 0 0;padding:1.2rem 1rem;
+  background:var(--surface);border:1px dashed var(--border2);border-radius:14px;
+  text-align:center;
+}
+.quiz-ad-label{
+  font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.15em;color:var(--muted);
+  text-transform:uppercase;margin-bottom:.8rem;
+}
 @media(max-width:600px){
   .quiz-hero{padding:1.6rem .5rem 1.5rem}
   .quiz-result-block,.quiz-kaisetsu-block{padding:1.3rem 1.1rem}
+  .quiz-ad-slot{padding:1rem .7rem}
 }
 </style>
 </head>
@@ -183,6 +193,10 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
   </div>
 
   <?php require __DIR__ . '/../inc/share-btns.php'; ?>
+
+  <?php if (!empty($quiz['ad_enabled'])): ?>
+  <?php require __DIR__ . '/../inc/quiz-ad-slot.php'; ?>
+  <?php endif; ?>
 
 </div>
 <?php require __DIR__.'/../inc/footer.php'; ?>
