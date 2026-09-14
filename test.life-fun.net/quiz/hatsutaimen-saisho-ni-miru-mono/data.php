@@ -42,8 +42,10 @@ return [
   'cta_url'   => '/aisho',
   'cta_label' => '相性診断で、二人の相性を占う',
 
-  // Phase 5-B：広告収益化の初回試験導入（対象はこの1本のみ。DAILY_QUIZ_AD_MONETIZATION.md K-5参照）
-  'ad_enabled' => true,
+  // Phase 5-B：広告収益化の初回試験導入実装（DAILY_QUIZ_AD_MONETIZATION.md K-5参照）。
+  // 2026-09-15：本番初回公開にあたりfalseに変更（本番反映対象から広告関連ファイルを除外する判断のため）。
+  // 実装自体はSTGに凍結保持。広告を再検討する際はtrueに戻す。
+  'ad_enabled' => false,
 
   'sns' => [
     'threads' => "初対面で最初に気になるものは？\n\n○ 目\n○ 話し方・声のトーン\n○ 服装・見た目の雰囲気\n○ 手の動き・しぐさ\n\nあなたはどれ？\n答えと解説はこちら → https://life-fun.net/quiz/hatsutaimen-saisho-ni-miru-mono/?utm_source=threads&utm_medium=social&utm_campaign=daily_quiz",

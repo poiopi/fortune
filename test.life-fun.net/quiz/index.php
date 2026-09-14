@@ -2,13 +2,9 @@
 declare(strict_types=1);
 
 // Daily Quiz 一覧・アーカイブハブ
+// 本番公開対象のみ掲載する。新しいQuizを本番公開するたびに、このリストへ追加すること。
 $_quizSlugs = [
     'hatsutaimen-saisho-ni-miru-mono',
-    'yotei-no-nai-kyuujitsu',
-    'erabu-toki-saisho-ni-kininaru',
-    'junishi-nihon-ni-inai-doubutsu',
-    'doyo-no-ushi-unagi',
-    'omikuji-junban',
 ];
 
 $_quizzes = [];
