@@ -61,6 +61,7 @@ function render_footer(array $opts = []): void {
   <?= _nav_cards(9, $_p) ?>
 </div>
 <?php render_footer(['currentSlug' => $_slug, 'pageType' => $_type]); ?>
+<?php require __DIR__.'/ai-fortune-modal.php'; ?>
 <style>
 .site-footer{border-top:1px solid rgba(160,130,220,.18);padding:2.5rem 1.2rem 1.5rem;margin-top:2rem}
 .site-footer-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:2rem}
@@ -120,6 +121,7 @@ function render_footer(array $opts = []): void {
   color:#c8c0e0;text-decoration:none;transition:background .2s,color .2s;
   border-left:2px solid transparent
 }
+button.fmenu-item{width:100%;background:none;border-top:none;border-right:none;border-bottom:none;text-align:left;cursor:pointer}
 .fmenu-item:hover{background:rgba(155,114,239,.12);color:#e8e0f8;border-left-color:#9b72ef}
 .fmenu-item.current{
   background:rgba(155,114,239,.18);color:#c4a8f5;
@@ -199,6 +201,10 @@ function render_footer(array $opts = []): void {
     <button class="fmenu-close-btn" id="fmenuClose">✕</button>
   </div>
   <nav class="fmenu-nav">
+    <div class="fmenu-section-label">AIに相談</div>
+    <button type="button" class="fmenu-item" id="fmenuAiChatBtn">
+      <span class="fmenu-item-icon">🔮</span>AI鑑定チャット
+    </button>
     <?php
     echo '<div class="fmenu-section-label">占い一覧</div>';
     foreach($_NAV_PAGES as $key => $pg):
@@ -344,5 +350,13 @@ function copyShareUrl(){
     compactTimer=setTimeout(function(){setCompact(false);},500);
   },{passive:true});
   btn.addEventListener('touchstart',function(){setCompact(false);},{passive:true});
+
+  var aiChatBtn = document.getElementById('fmenuAiChatBtn');
+  if (aiChatBtn) {
+    aiChatBtn.addEventListener('click', function(){
+      close(); // 既存のfmenuドロワーを閉じる関数を再利用
+      if (typeof openAiChatModal === 'function') openAiChatModal();
+    });
+  }
 })();
 </script>
