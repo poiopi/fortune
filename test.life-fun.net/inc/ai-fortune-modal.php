@@ -250,6 +250,10 @@ var AIC_MONTHS = Array.from({length:12},function(_,i){return i+1;});
 var AIC_DAYS = Array.from({length:31},function(_,i){return i+1;});
 
 var aicState = null;
+// 結果ラップ要素のid重複防止用カウンタ（「もう一度占う」で過去の結果ターンが
+// history配列にHTML文字列として蓄積されるため、固定idだと2周目以降に
+// document.getElementById()が古い履歴側の要素を返してしまう。連番idで一意化する）
+var aicResultSeq = 0;
 function aicInitialState(keepHistory){
   return {
     phase:'theme', theme:null, effectiveTheme:null,
@@ -370,7 +374,7 @@ function aicResultTurn(){
   return '<div class="aic-row bot"><div class="aic-stack" style="max-width:100%">'
     + '<div class="aic-bubble headline">'+aicEsc(AIC_RESULT_HEADINGS[t])+'、読み解きました' + (badge?'<span class="aic-sub"><span class="aic-result-badge" data-aic-text="star"></span></span>':'') + '</div>'
     + aicTimeTag()
-    + '<div class="aic-stack" style="max-width:100%"><div class="aic-result-wrap" id="aicResultWrap">'+bodyHtml+'</div></div>'
+    + '<div class="aic-stack" style="max-width:100%"><div class="aic-result-wrap" id="'+aicEsc(aicState.resultId)+'">'+bodyHtml+'</div></div>'
     + '<span class="aic-footnote">※既存の占いデータに基づく鑑定結果です。</span>'
     + (link ? '<a href="'+link.url+'" class="aic-result-link">'+aicEsc(link.label)+' →</a>' : '')
     + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" data-aic-retry>もう一度占う</button></div>'
@@ -378,7 +382,7 @@ function aicResultTurn(){
 }
 // resultTurn描画後、APIレスポンスの実データをtextContentで流し込む（innerHTML不使用）
 function aicFillResultData(){
-  var wrap = document.getElementById('aicResultWrap');
+  var wrap = document.getElementById(aicState.resultId);
   if(!wrap) return;
   var r = aicState.resultData || {};
   var t = aicState.effectiveTheme;
@@ -386,7 +390,7 @@ function aicFillResultData(){
     var key = el.getAttribute('data-aic-text');
     el.textContent = (r[key] != null) ? r[key] : '';
   });
-  var badgeEl = document.querySelector('.aic-result-badge[data-aic-text="star"]');
+  var badgeEl = wrap.querySelector('.aic-result-badge[data-aic-text="star"]');
   if(badgeEl) badgeEl.textContent = r.star || '';
   wrap.querySelectorAll('[data-aic-list]').forEach(function(ul){
     var key = ul.getAttribute('data-aic-list');
@@ -557,6 +561,7 @@ function aicSubmit(){
         aicState.phase = 'error';
       } else {
         aicState.resultData = result.data;
+        aicState.resultId = 'aicResultWrap-' + (++aicResultSeq);
         aicState.phase = 'result';
       }
       aicRender();
