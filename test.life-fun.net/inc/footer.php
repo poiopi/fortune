@@ -236,6 +236,7 @@ button.fmenu-item{background:none;border:none;border-left:2px solid transparent;
 </button>
 
 <?php require __DIR__.'/ai-fortune-modal.php'; ?>
+<?php require __DIR__.'/ai-fortune-tab.php'; ?>
 
 <script>window.GA_FORTUNE_TYPE = <?= json_encode(
   !empty($currentSlug) ? $currentSlug :

@@ -1,0 +1,308 @@
+<title>占いチャットタブ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-page:#0b0e17;
+  --bg-card:#12172a;
+  --bg-catalog:#0e1119;
+  --bg-tile:#1c2130;
+  --border-tile:#2a2f40;
+  --text-primary:#f2ead9;
+  --text-secondary:#9a95ab;
+  --text-muted:#6b7080;
+  --gold-1:#f5e4b8;
+  --gold-2:#c0913c;
+  --gold-ring:#c9a84c;
+  --gold-on-fill:#3a2a08;
+  --violet-1:#7f4fd6;
+  --violet-2:#4a20a0;
+  --violet-3:#1a0a40;
+  --panel-bg-1:#171225;
+  --panel-bg-2:#100c1c;
+  --bubble-bot:#211c33;
+  --overlay:rgba(4,3,10,.6);
+  --ease-out:cubic-bezier(.22,1,.3,1);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  padding-inline:16px;
+  padding-block:2rem;
+  background:var(--bg-page);
+  color:var(--text-primary);
+  font-family:'Noto Sans JP','Hiragino Sans',Meiryo,sans-serif;
+  min-height:100dvh;
+}
+.wrap{max-width:760px;margin:0 auto}
+.intro{
+  font-size:13px;color:var(--text-secondary);line-height:1.7;margin:0 0 1.2rem;
+  padding:.8rem 1rem;background:var(--bg-card);border-radius:10px;border:1px solid #232a3d;
+}
+.intro b{color:var(--text-primary);font-weight:500}
+.frame{
+  position:relative;overflow:hidden;border-radius:16px;border:1px solid #232a3d;
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+  transform:translateZ(0);
+  transition:width .35s var(--ease-out),max-width .35s var(--ease-out);
+}
+.frame.sp-mode{width:336px;max-width:336px;margin:0 auto;border-radius:28px;border-width:6px;border-color:#05060a}
+.chrome{background:#1a1e2a;padding:8px 12px;display:flex;gap:6px;align-items:center}
+.dot{width:8px;height:8px;border-radius:50%;background:#3a3f52}
+.frame.sp-mode .chrome{display:none}
+.phone-bar{display:none;padding:10px 18px 4px;justify-content:space-between;align-items:center;font-family:'DM Mono',monospace;font-size:11px;color:var(--text-primary)}
+.frame.sp-mode .phone-bar{display:flex}
+.phone-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:90px;height:18px;background:#05060a;border-radius:0 0 12px 12px;z-index:20;display:none}
+.frame.sp-mode .phone-notch{display:block}
+.hero{
+  background:radial-gradient(120% 100% at 50% 0%,#141a2c,var(--bg-page));
+  padding:3rem 1.5rem 2.5rem;text-align:center;position:relative;
+}
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;color:var(--gold-1);margin-bottom:.7rem}
+.h1{
+  font-family:'Shippori Mincho',serif;font-weight:700;font-size:clamp(1.6rem,5vw,2.3rem);
+  margin:0 0 .6rem;text-wrap:balance;
+  background:linear-gradient(180deg,#fbf3df,#d8cdee);-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.sub{font-size:12px;color:var(--text-secondary);margin-bottom:1.6rem}
+.cta{
+  display:inline-block;background:linear-gradient(180deg,var(--gold-1),var(--gold-2));
+  color:var(--gold-on-fill);font-weight:500;font-size:13px;padding:.7rem 1.6rem;border-radius:999px;
+}
+.catalog{background:var(--bg-catalog);padding:1.2rem 1.5rem 1.6rem;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.tile{flex:1 1 90px;height:52px;background:var(--bg-tile);border:1px solid var(--border-tile);border-radius:10px;opacity:.55}
+
+.tab-wrap{
+  position:absolute;top:40%;right:0;z-index:5;
+  display:flex;flex-direction:column;
+  border:1px solid var(--gold-ring);border-right:none;border-radius:12px 0 0 12px;
+  overflow:hidden;box-shadow:-4px 0 20px rgba(90,40,200,.5);
+  touch-action:none;cursor:grab;
+  transition:opacity .3s var(--ease-out),box-shadow .2s;
+}
+.tab-wrap:active{cursor:grabbing}
+.tab-wrap.dragging{box-shadow:-6px 0 26px rgba(120,70,255,.65)}
+.tab-wrap.hide{opacity:0;pointer-events:none}
+.tab-min-btn{
+  background:radial-gradient(circle at 30% 20%,var(--violet-1),var(--violet-3));
+  color:var(--gold-1);border:none;border-bottom:1px solid rgba(201,168,76,.35);
+  font-size:12px;line-height:1;padding:5px 0;cursor:pointer;width:100%;
+}
+.tab-body{
+  writing-mode:vertical-rl;text-orientation:upright;
+  background:radial-gradient(circle at 30% 20%,var(--violet-1),var(--violet-3));
+  color:var(--gold-1);font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.15em;font-weight:500;
+  padding:14px 9px;border:none;cursor:inherit;
+}
+.tab-wrap.min{border-radius:50%}
+.tab-wrap.min .tab-body{display:none}
+.tab-wrap.min .tab-min-btn{
+  width:38px;height:38px;padding:0;border-bottom:none;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+}
+
+.scrim{
+  position:absolute;inset:0;background:var(--overlay);opacity:0;pointer-events:none;
+  transition:opacity .35s var(--ease-out);z-index:8;
+}
+.scrim.open{opacity:1;pointer-events:auto}
+
+.panel{
+  position:absolute;right:16px;bottom:-100%;width:min(88%,360px);height:min(72%,520px);
+  background:linear-gradient(160deg,var(--panel-bg-1),var(--panel-bg-2));
+  border:1px solid #2c2440;border-radius:18px 18px 0 0;
+  box-shadow:0 -16px 50px rgba(0,0,0,.6);
+  transition:bottom .4s var(--ease-out),width .3s var(--ease-out),height .3s var(--ease-out),
+    right .3s var(--ease-out),border-radius .3s var(--ease-out);
+  z-index:9;display:flex;flex-direction:column;
+}
+.panel.open{bottom:0}
+.panel.mobile{width:100%;height:100%;right:0;border-radius:0;border:none}
+.panel-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 14px 10px;border-bottom:1px solid rgba(255,255,255,.06);flex-shrink:0;
+}
+.panel-title{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-primary);font-weight:500}
+.seal{width:22px;height:22px;border-radius:50%;background:linear-gradient(180deg,var(--gold-1),var(--gold-2));display:flex;align-items:center;justify-content:center;font-size:11px}
+.close-btn{
+  width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:none;
+  color:var(--text-secondary);font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:border-color .2s,color .2s;
+}
+.close-btn:hover{border-color:var(--gold-ring);color:var(--gold-1)}
+.thread{padding:14px;display:flex;flex-direction:column;gap:10px;flex:1;overflow-y:auto}
+.row{display:flex;gap:6px}
+.row.me{justify-content:flex-end}
+.avatar{width:16px;height:16px;border-radius:50%;background:linear-gradient(180deg,var(--gold-1),var(--gold-2));flex-shrink:0;margin-top:2px}
+.bubble{background:var(--bubble-bot);color:#e6e2f5;font-size:11px;line-height:1.5;padding:7px 10px;border-radius:10px 10px 10px 2px;max-width:80%}
+.bubble.me{background:linear-gradient(180deg,var(--gold-1),var(--gold-2));color:var(--gold-on-fill);border-radius:10px 10px 2px 10px}
+.panel-foot{padding:12px 14px 16px;flex-shrink:0}
+.foot-btn{display:block;width:100%;text-align:center;background:linear-gradient(180deg,var(--gold-1),var(--gold-2));color:var(--gold-on-fill);font-size:11px;font-weight:500;padding:9px;border-radius:999px;border:none}
+
+.menu-btn{
+  position:absolute;bottom:16px;left:16px;z-index:6;
+  width:46px;height:46px;border-radius:50%;border:none;
+  background:radial-gradient(circle at 35% 35%,var(--violet-2),var(--violet-3));
+  box-shadow:0 0 0 1.5px rgba(201,168,76,.7),0 0 16px rgba(130,70,240,.7);
+  cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+  transition:transform .2s,box-shadow .2s;
+}
+.menu-btn:hover{transform:scale(1.08);box-shadow:0 0 0 1.5px var(--gold-ring),0 0 22px rgba(160,90,255,1)}
+.menu-ring{position:absolute;inset:-4px;border-radius:50%;border:1.5px solid transparent;border-top-color:var(--gold-ring);border-right-color:var(--violet-1);animation:menu-spin 4s linear infinite}
+@keyframes menu-spin{to{transform:rotate(360deg)}}
+.menu-line{width:13px;height:1.2px;background:linear-gradient(90deg,var(--gold-ring),var(--violet-1));border-radius:1px}
+.menu-label{font-family:'DM Mono',monospace;font-size:6px;letter-spacing:.1em;color:var(--gold-1);margin-top:2px}
+
+.menu-scrim{
+  position:absolute;inset:0;background:var(--overlay);opacity:0;pointer-events:none;
+  transition:opacity .3s var(--ease-out);z-index:10;
+}
+.menu-scrim.open{opacity:1;pointer-events:auto}
+.drawer{
+  position:absolute;top:0;left:0;height:100%;width:66%;max-width:220px;
+  background:linear-gradient(180deg,#0f0b1e,#1a1035);
+  border-right:1px solid rgba(155,114,239,.35);
+  transform:translateX(-100%);transition:transform .35s var(--ease-out);
+  z-index:11;display:flex;flex-direction:column;
+}
+.drawer.open{transform:translateX(0)}
+.drawer-head{padding:14px 12px 10px;border-bottom:1px solid rgba(155,114,239,.2);display:flex;align-items:center;justify-content:space-between}
+.drawer-title{font-family:'Shippori Mincho',serif;font-size:11px;letter-spacing:.15em;color:#c4a8f5}
+.drawer-nav{padding:8px 0}
+.drawer-section{padding:.4rem .9rem .2rem;font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.15em;color:rgba(196,168,245,.5);text-transform:uppercase}
+.drawer-item{
+  display:flex;align-items:center;gap:.5rem;padding:.5rem .9rem;
+  font-family:'Shippori Mincho',serif;font-size:11px;color:#c8c0e0;cursor:pointer;
+  border-left:2px solid transparent;background:none;width:100%;text-align:left;border-top:none;border-bottom:none;border-right:none;
+}
+.drawer-item:hover{background:rgba(155,114,239,.12);color:#e8e0f8;border-left-color:var(--violet-1)}
+.drawer-item.featured{color:var(--gold-1);border-left-color:var(--gold-ring)}
+
+.controls{display:flex;gap:8px;justify-content:center;margin-top:1.2rem}
+.toggle{
+  font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.05em;color:var(--text-secondary);
+  background:var(--bg-card);border:1px solid #232a3d;border-radius:999px;padding:.5rem 1rem;cursor:pointer;
+}
+.toggle.active{color:var(--gold-1);border-color:var(--gold-ring)}
+</style>
+
+<div class="wrap">
+  <p class="intro"><b>右端のタブ</b>は縦にドラッグして好きな高さへ動かせます。上の小さい<b>−</b>ボタンを押すと丸いアイコンだけに最小化でき、もう一度押すと元のタブに戻ります(最小化中はドラッグのみ、クリックではチャットは開きません)。タブ本体をクリックするとチャットパネルが右からすっと出て、パネル内の<b>×</b>で戻ります。<b>左下の紫色のMENUボタン</b>からも同じチャットを開けます。下のボタンでPC表示とスマホ表示(全画面)も切り替えられます。</p>
+
+  <div class="frame" id="frame">
+    <div class="phone-notch"></div>
+    <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="phone-bar"><span>9:41</span><span>📶 🔋</span></div>
+    <div class="hero">
+      <div class="eyebrow">FREE FORTUNE TELLING · 占いPORTAL</div>
+      <h1 class="h1">無料占いポータル</h1>
+      <p class="sub">星と運命の交差点 · 16種類の占術で今を読み解く</p>
+      <span class="cta">三星統合鑑定をはじめる →</span>
+    </div>
+    <div class="catalog">
+      <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+    </div>
+
+    <div class="scrim" id="scrim"></div>
+    <div class="tab-wrap" id="tabWrap">
+      <button class="tab-min-btn" id="tabMinBtn" aria-label="最小化する">−</button>
+      <button class="tab-body" id="tabBody" aria-label="占いチャットを開く">占いチャット</button>
+    </div>
+    <div class="panel" id="panel" role="dialog" aria-label="AI鑑定チャット">
+      <div class="panel-head">
+        <span class="panel-title"><span class="seal">🔮</span>AI鑑定チャット</span>
+        <button class="close-btn" id="closeBtn" aria-label="閉じる">✕</button>
+      </div>
+      <div class="thread">
+        <div class="row"><span class="avatar"></span><span class="bubble">こんにちは。今日は何が気になっていますか？</span></div>
+        <div class="row me"><span class="bubble me">結婚について知りたい</span></div>
+        <div class="row"><span class="avatar"></span><span class="bubble">結婚についてですね。まずは生年月日を教えてください。</span></div>
+      </div>
+      <div class="panel-foot"><span class="foot-btn">10テーマから選びなおす</span></div>
+    </div>
+
+    <div class="menu-scrim" id="menuScrim"></div>
+    <div class="drawer" id="drawer">
+      <div class="drawer-head"><span class="drawer-title">✦ Fortune Menu ✦</span><button class="close-btn" id="drawerClose" aria-label="閉じる">✕</button></div>
+      <div class="drawer-nav">
+        <div class="drawer-section">占い一覧</div>
+        <button class="drawer-item featured" id="drawerAiItem">🔮 AI鑑定チャット</button>
+        <button class="drawer-item">✨ 三星統合鑑定</button>
+        <button class="drawer-item">⭐ 西洋占星術</button>
+        <button class="drawer-item">🎴 タロット</button>
+      </div>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="メニューを開く">
+      <span class="menu-ring"></span>
+      <span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span>
+      <span class="menu-label">MENU</span>
+    </button>
+  </div>
+
+  <div class="controls">
+    <button class="toggle active" id="pcBtn">🖥 PC表示</button>
+    <button class="toggle" id="spBtn">📱 スマホ表示(全画面)</button>
+  </div>
+</div>
+
+<script>
+var tabWrap=document.getElementById('tabWrap'),tabMinBtn=document.getElementById('tabMinBtn'),tabBody=document.getElementById('tabBody'),
+    panel=document.getElementById('panel'),scrim=document.getElementById('scrim'),
+    closeBtn=document.getElementById('closeBtn'),pcBtn=document.getElementById('pcBtn'),spBtn=document.getElementById('spBtn'),
+    menuBtn=document.getElementById('menuBtn'),drawer=document.getElementById('drawer'),menuScrim=document.getElementById('menuScrim'),
+    drawerClose=document.getElementById('drawerClose'),drawerAiItem=document.getElementById('drawerAiItem'),
+    frame=document.getElementById('frame');
+function openPanel(){panel.classList.add('open');scrim.classList.add('open');tabWrap.classList.add('hide')}
+function closePanel(){panel.classList.remove('open');scrim.classList.remove('open');tabWrap.classList.remove('hide')}
+function openDrawer(){drawer.classList.add('open');menuScrim.classList.add('open')}
+function closeDrawer(){drawer.classList.remove('open');menuScrim.classList.remove('open')}
+closeBtn.addEventListener('click',closePanel);
+scrim.addEventListener('click',closePanel);
+pcBtn.addEventListener('click',function(){panel.classList.remove('mobile');frame.classList.remove('sp-mode');pcBtn.classList.add('active');spBtn.classList.remove('active');clampTabPosition()});
+spBtn.addEventListener('click',function(){panel.classList.add('mobile');frame.classList.add('sp-mode');spBtn.classList.add('active');pcBtn.classList.remove('active');clampTabPosition()});
+menuBtn.addEventListener('click',openDrawer);
+drawerClose.addEventListener('click',closeDrawer);
+menuScrim.addEventListener('click',closeDrawer);
+drawerAiItem.addEventListener('click',function(){closeDrawer();openPanel()});
+
+function clamp(v,min,max){return Math.max(min,Math.min(max,v))}
+function clampTabPosition(){
+  var fh=frame.clientHeight,th=tabWrap.offsetHeight;
+  var top=parseFloat(tabWrap.style.top)||fh*0.4;
+  tabWrap.style.top=clamp(top,36,Math.max(36,fh-th-36))+'px';
+}
+clampTabPosition();
+
+var dragging=false,moved=false,startY=0,startTop=0;
+function onDragMove(e){
+  if(!dragging)return;
+  var dy=e.clientY-startY;
+  if(Math.abs(dy)>6)moved=true;
+  var fh=frame.clientHeight,th=tabWrap.offsetHeight;
+  tabWrap.style.top=clamp(startTop+dy,36,Math.max(36,fh-th-36))+'px';
+}
+function onDragEnd(){
+  dragging=false;
+  tabWrap.classList.remove('dragging');
+  window.removeEventListener('pointermove',onDragMove);
+  window.removeEventListener('pointerup',onDragEnd);
+}
+tabWrap.addEventListener('pointerdown',function(e){
+  dragging=true;moved=false;startY=e.clientY;
+  startTop=parseFloat(tabWrap.style.top)||frame.clientHeight*0.4;
+  tabWrap.classList.add('dragging');
+  window.addEventListener('pointermove',onDragMove);
+  window.addEventListener('pointerup',onDragEnd);
+});
+
+tabBody.addEventListener('click',function(){if(moved){moved=false;return}openPanel()});
+tabMinBtn.addEventListener('click',function(e){
+  e.stopPropagation();
+  if(moved){moved=false;return}
+  var min=tabWrap.classList.toggle('min');
+  tabMinBtn.textContent=min?'🔮':'−';
+  tabMinBtn.setAttribute('aria-label',min?'占いチャットタブを元に戻す':'最小化する');
+});
+</script>
