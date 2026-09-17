@@ -1,0 +1,630 @@
+<title>AI鑑定チャット モック</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;600&family=DM+Mono:wght@400;500&family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark}
+:root{
+  --ink:#05070d; --ink-2:#080c14; --plate:#02040a;
+  --panel:#10151f; --panel-2:#161c29; --panel-3:#1d2432;
+  --brass:#c0913c; --brass-lt:#e8ce93; --brass-pale:#f2e3bd; --brass-dk:#7e5c1e;
+  --rule:rgba(232,206,147,.14); --rule-2:rgba(232,206,147,.30); --rule-3:rgba(232,206,147,.52);
+  --star:#f0ead9; --text:#c7cedd; --muted:#7a8399; --dim:#525c72;
+  --ff-mincho:'Shippori Mincho',"Hiragino Mincho ProN","Yu Mincho",serif;
+  --ff-sans:'Zen Kaku Gothic New',"Hiragino Sans","Yu Gothic",sans-serif;
+  --ff-mono:'DM Mono',ui-monospace,monospace;
+  --gut:1.1rem; --r-btn:11px; --r-card:16px; --r-pill:999px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--ff-sans);-webkit-font-smoothing:antialiased}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
+
+.page{max-width:1100px;margin:0 auto;padding:2rem 16px 4rem}
+.intro{text-align:center;margin-bottom:2rem}
+.intro .eyebrow{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.24em;color:var(--brass);text-transform:uppercase}
+.intro h1{font-family:var(--ff-mincho);font-size:1.5rem;color:var(--star);margin:.5rem 0 .4rem;letter-spacing:.04em}
+.intro p{font-size:.8rem;color:var(--muted);margin:0;line-height:1.7}
+
+.stage{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;align-items:flex-start}
+.frame-col{display:flex;flex-direction:column;align-items:center;gap:.6rem}
+.frame-tag{font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.18em;color:var(--dim);text-transform:uppercase}
+/* transform:translateZ(0)で、この枠をposition:fixedな子要素(モーダル背景・ピッカー)の
+   基準(containing block)にする。これがないとモーダル背景がページ全体を基準に表示され、
+   デモ枠からはみ出して背景コンテンツと重なって見えてしまう。 */
+.frame{position:relative;overflow:hidden;border-radius:20px;border:1px solid rgba(232,206,147,.14);box-shadow:0 34px 80px rgba(0,0,0,.7);background:var(--ink-2);width:min(94vw,380px);height:700px;transform:translateZ(0)}
+
+.mini-top{position:absolute;inset:0;overflow:hidden;display:flex;flex-direction:column;isolation:isolate;background:radial-gradient(120% 60% at 50% -10%,#0d1220,var(--ink-2) 70%)}
+.mini-head{display:flex;align-items:center;justify-content:space-between;padding:.75rem var(--gut);border-bottom:1px solid var(--rule);flex-shrink:0}
+.mini-brand{display:flex;align-items:center;gap:.5rem;font-family:var(--ff-mincho);font-size:.82rem;letter-spacing:.06em;color:var(--star)}
+.seal{border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 34% 28%,#1e2432,#0a0e17 70%);border:1px solid var(--rule-3);color:var(--brass-lt);box-shadow:inset 0 0 12px rgba(232,206,147,.16),0 0 0 3px rgba(232,206,147,.05)}
+.mini-brand .seal{width:24px;height:24px;font-size:.75rem}
+.mini-head .nav{font-size:.6rem;color:var(--dim);letter-spacing:.06em}
+.starfield{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.starfield span{position:absolute;border-radius:50%;background:#fff6e2;opacity:.35;animation:twinkle 4.2s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.12}50%{opacity:.62}}
+
+.mini-trigger{margin:1.2rem var(--gut);padding:1.1rem 1.1rem 1.2rem;border-radius:var(--r-card);position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse 90% 120% at 88% -20%,rgba(58,80,140,.30),transparent 62%),linear-gradient(180deg,#0a0f1a,#04060c);border:1px solid var(--rule);box-shadow:inset 0 1px 0 rgba(232,206,147,.11)}
+.mini-trigger::before{content:'';position:absolute;top:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--rule-3),transparent)}
+.trigger-arc{position:absolute;top:-40%;right:-15%;width:180px;height:180px;opacity:.5;pointer-events:none;z-index:0}
+.trigger-arc svg{width:100%;height:100%}
+.mini-trigger-body{position:relative;z-index:2}
+.mini-trigger .seal{width:34px;height:34px;font-size:1.05rem;flex-shrink:0;animation:sealBreathe 4.5s ease-in-out infinite}
+@keyframes sealBreathe{0%,100%{box-shadow:inset 0 0 12px rgba(232,206,147,.16),0 0 0 3px rgba(232,206,147,.05)}50%{box-shadow:inset 0 0 16px rgba(232,206,147,.24),0 0 0 3px rgba(232,206,147,.08),0 0 26px rgba(232,206,147,.28)}}
+.trigger-msg-row{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.7rem}
+.trigger-bubble{flex:1;min-width:0}
+.trigger-replies{padding-left:calc(34px + .6rem);margin-bottom:.55rem}
+.trigger-more-note{padding-left:calc(34px + .6rem);font-size:.66rem;color:var(--dim);margin:0 0 .7rem;line-height:1.6}
+.trigger-note{display:block;margin-top:.15rem;font-family:var(--ff-mono);font-size:.58rem;color:var(--dim);letter-spacing:.06em;padding-left:calc(34px + .6rem)}
+.trigger-cta{margin-top:.9rem;width:100%}
+
+.mini-fortunes{padding:.7rem var(--gut) .9rem;margin-top:auto}
+.mini-fortunes p{font-size:.66rem;color:var(--dim);margin:0 0 .55rem}
+.chip-row{display:flex;gap:.35rem;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:.35rem;font-size:.62rem;padding:.32rem .65rem;border-radius:var(--r-pill);background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07);color:var(--muted)}
+.chip i{width:4px;height:4px;border-radius:50%;background:var(--dim);display:block}
+.chip.flag{border-color:var(--rule-2);color:var(--brass-lt);background:linear-gradient(180deg,rgba(232,206,147,.09),rgba(232,206,147,.02))}
+.chip.flag i{background:var(--brass-lt);box-shadow:0 0 6px var(--brass-lt)}
+
+.btn{--h:40px;height:var(--h);padding:0 1rem;display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:var(--ff-sans);font-weight:700;font-size:.78rem;border-radius:var(--r-btn);border:1px solid transparent;cursor:pointer;transition:.18s;width:100%}
+.btn-brass{color:#1d1407;background:linear-gradient(180deg,#f5e4b8 0%,#e0c384 36%,#c0913c 100%);border-color:#6d4f19;box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 10px 24px -10px rgba(192,145,60,.85)}
+.btn-brass:hover{transform:translateY(-1px)}
+.btn-brass:disabled{opacity:.35;cursor:not-allowed;transform:none}
+
+.modal-overlay{position:absolute;inset:0;z-index:20;background:rgba(2,4,9,.94);backdrop-filter:blur(7px);opacity:0;pointer-events:none;transition:opacity .25s}
+.modal-overlay.open{opacity:1;pointer-events:all}
+/* 注記：transformでスライド演出をすると、一部ブラウザでtransformが祖先要素に
+   かかった<select>のネイティブ・ドロップダウンが開けなくなる／正しい位置に
+   出ない不具合が起きるため、position/opacityのみで開閉させる（transform不使用）。 */
+.modal{position:absolute;left:0;right:0;bottom:-100%;top:8%;display:flex;flex-direction:column;overflow:hidden;isolation:isolate;background:radial-gradient(140% 46% at 50% 0%,rgba(58,80,140,.24),transparent 68%),linear-gradient(180deg,#070a13,var(--plate) 55%);border:1px solid var(--rule-2);border-radius:20px 20px 0 0;box-shadow:0 -20px 60px rgba(0,0,0,.8),inset 0 1px 0 rgba(232,206,147,.14);opacity:0;transition:bottom .34s cubic-bezier(.22,1,.3,1),opacity .34s}
+.modal-overlay.open .modal{bottom:0;opacity:1}
+.modal .grabber{width:34px;height:4px;border-radius:2px;background:var(--rule-2);margin:.6rem auto -.1rem;flex-shrink:0}
+.modal-crest{position:absolute;top:-70px;left:50%;transform:translateX(-50%);width:230px;height:230px;opacity:.55;pointer-events:none;z-index:0}
+.modal-crest svg{width:100%;height:100%;display:block}
+.chat-head{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.4rem;padding:1.1rem var(--gut) .7rem;flex-shrink:0}
+.chat-head .seal{width:46px;height:46px;font-size:1.3rem;animation:sealBreathe 4.5s ease-in-out infinite}
+.chat-head-text strong{display:block;font-family:var(--ff-mincho);font-size:1.15rem;font-weight:700;color:var(--star);letter-spacing:.06em}
+.chat-head-text span{display:block;font-family:var(--ff-mono);font-size:.52rem;letter-spacing:.14em;color:var(--dim);text-transform:uppercase;margin-top:.15rem}
+.step-count{position:absolute;top:.85rem;left:var(--gut);font-family:var(--ff-mono);font-size:.6rem;letter-spacing:.1em;color:var(--brass);z-index:2}
+.progress-track{height:2px;background:rgba(232,206,147,.09);flex-shrink:0;position:relative;z-index:1}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--brass-dk),var(--brass));box-shadow:0 0 6px rgba(232,206,147,.32);transition:width .4s cubic-bezier(.22,1,.3,1)}
+.modal-close{position:absolute;top:.65rem;right:var(--gut);width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(5,7,13,.4);color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.7rem}
+.modal-close:hover{color:var(--brass-lt);border-color:var(--rule-3)}
+
+.thread{padding:.9rem var(--gut) 1.1rem;overflow-y:auto;display:flex;flex-direction:column;gap:.7rem;flex:1;scrollbar-width:thin;scrollbar-color:var(--panel-3) transparent}
+.thread::-webkit-scrollbar{width:6px}
+.thread::-webkit-scrollbar-thumb{background:var(--panel-3);border-radius:3px}
+.row{display:flex;max-width:100%;animation:msgIn .32s cubic-bezier(.22,1,.3,1) both}
+@keyframes msgIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.row.bot{justify-content:flex-start}
+.row.user{justify-content:flex-end}
+.stack{display:flex;flex-direction:column;gap:.5rem;max-width:92%;align-items:flex-start}
+.bubble{background:linear-gradient(180deg,var(--panel-2),#121722);border:1px solid rgba(255,255,255,.06);border-radius:3px 16px 16px 16px;padding:.7rem .9rem;font-size:.92rem;line-height:1.75;color:var(--text)}
+.bubble.headline{font-family:var(--ff-mincho);font-size:1.15rem;font-weight:700;line-height:1.55;color:var(--star)}
+.bubble .sub{display:block;font-family:var(--ff-sans);font-size:.78rem;color:var(--muted);margin-top:.4rem;line-height:1.6}
+.bubble.user{background:linear-gradient(180deg,rgba(232,206,147,.17),rgba(232,206,147,.07));border:1px solid var(--rule-2);color:var(--brass-pale);border-radius:16px 3px 16px 16px;font-size:.86rem;font-weight:500}
+.msg-time{display:block;font-family:var(--ff-mono);font-size:.6rem;color:var(--dim);margin-top:.25rem;letter-spacing:.03em}
+.row.user .msg-time{text-align:right}
+
+.qr{display:flex;gap:.35rem;flex-wrap:wrap}
+/* テーマ選択・結婚2択は文字数がバラバラで、flexだと幅が不揃いになり右側に半端な
+   余白ができるため、等幅グリッドにする(1列に収まらない項目は自然に折り返す)。 */
+.qr.grid2{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;align-items:stretch}
+.qr.grid2 .qr-btn{width:100%;border-radius:12px;min-height:82px;display:flex;flex-direction:column;justify-content:flex-start;padding-top:.65rem}
+.card-icon{display:block;width:20px;height:20px;color:var(--brass-lt);margin-bottom:.4rem}
+.card-icon svg{width:100%;height:100%;display:block}
+.qr-btn{padding:.55rem .9rem;border-radius:var(--r-pill);font-weight:500;font-size:.82rem;color:var(--star);background:linear-gradient(180deg,rgba(232,206,147,.08),rgba(232,206,147,.02));border:1px solid var(--rule-2);cursor:pointer;transition:.16s;font-family:var(--ff-sans);text-align:left}
+.qr-btn:hover{border-color:var(--brass);background:linear-gradient(180deg,rgba(232,206,147,.16),rgba(232,206,147,.05));transform:translateY(-1px)}
+.qr-btn .tag{display:block;font-size:.68rem;color:var(--muted);margin-top:.15rem;font-weight:400}
+.qr-btn.ghost{background:none;color:var(--muted);border-color:rgba(255,255,255,.1)}
+.qr-btn.ghost:hover{color:var(--brass-lt);border-color:var(--rule-2)}
+.qr-btn:disabled{opacity:.35;cursor:not-allowed;pointer-events:none}
+.qr-btn.soon{opacity:.4;cursor:default;pointer-events:none;border-style:dashed}
+
+.date-inline{background:linear-gradient(180deg,#141a26,#0e131d);border:1px solid var(--rule);border-radius:14px;padding:.75rem;display:flex;flex-direction:column;gap:.55rem;width:100%;max-width:280px}
+.date-legend{font-family:var(--ff-mono);font-size:.56rem;letter-spacing:.1em;color:var(--brass);text-transform:uppercase}
+.date-row{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:.32rem}
+.dd-wrap{position:relative}
+.dd-btn{width:100%;font-family:var(--ff-mono);font-size:.74rem;color:var(--star);background:#080c14;border:1px solid rgba(255,255,255,.09);border-radius:9px;padding:.48rem .5rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.3rem}
+.dd-btn.ph{color:var(--dim)}
+.dd-btn:hover{border-color:var(--rule-2)}
+.dd-caret{font-size:.55rem;color:var(--brass-lt);flex-shrink:0}
+.name-input{width:100%;font-family:var(--ff-mincho);font-size:.8rem;color:var(--star);background:#080c14;border:1px solid rgba(255,255,255,.09);border-radius:9px;padding:.5rem .6rem;box-sizing:border-box}
+.name-input::placeholder{color:var(--dim);font-family:var(--ff-mono);font-size:.68rem}
+.name-input:focus{outline:none;border-color:var(--rule-2)}
+/* 候補リストは、スクロールする吹き出しエリアの中に浮かせず、
+   frame全体に対してposition:fixedのボトムシートとして独立させる
+   （祖先のoverflowにクリップされないようにするため）。 */
+.picker-overlay{position:fixed;inset:0;background:rgba(2,4,9,.7);z-index:90;opacity:0;pointer-events:none;transition:opacity .2s}
+.picker-overlay.open{opacity:1;pointer-events:all}
+.picker-sheet{position:fixed;left:0;right:0;bottom:-100%;z-index:91;background:#12172a;border:1px solid var(--rule-2);border-top-left-radius:16px;border-top-right-radius:16px;box-shadow:0 -14px 40px rgba(0,0,0,.6);transition:bottom .28s cubic-bezier(.22,1,.3,1);max-height:60%;display:flex;flex-direction:column}
+.picker-overlay.open .picker-sheet{bottom:0}
+.picker-title{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--brass);text-transform:uppercase;padding:.9rem 1rem .5rem;flex-shrink:0}
+.picker-list{overflow-y:auto;padding:.25rem .5rem .8rem}
+.dd-option{display:block;background:none;border:none;color:var(--text);font-family:var(--ff-mono);font-size:.85rem;padding:.6rem .6rem;text-align:left;cursor:pointer;border-radius:8px;width:100%}
+.dd-option:hover{background:rgba(232,206,147,.12);color:var(--star)}
+.dd-option.sel{color:var(--brass-lt);background:rgba(232,206,147,.08)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:.3rem}
+.pick-btn{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:8px;padding:.4rem .1rem;text-align:center;font-family:var(--ff-mono);font-size:.64rem;color:var(--muted);cursor:pointer;transition:.16s}
+.pick-btn:hover{border-color:var(--rule-2);color:var(--star)}
+.pick-btn.picked{background:rgba(232,206,147,.14);border-color:var(--brass);color:var(--brass-lt)}
+.blood-btn{font-family:var(--ff-mincho);font-weight:700;font-size:.78rem}
+
+.typing{display:inline-flex;align-items:center;gap:5px;padding:.8rem .95rem}
+.typing span{width:5px;height:5px;border-radius:50%;background:var(--brass-lt);animation:typeBounce 1.2s ease-in-out infinite}
+.typing span:nth-child(2){animation-delay:.16s}
+.typing span:nth-child(3){animation-delay:.32s}
+@keyframes typeBounce{0%,60%,100%{opacity:.25;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+
+.result-wrap{display:flex;flex-direction:column;gap:.6rem;width:100%;max-width:none}
+.result-badge{display:inline-block;font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--brass);text-transform:uppercase;background:rgba(232,206,147,.08);border:1px solid var(--rule-2);border-radius:var(--r-pill);padding:.22rem .65rem}
+.angle-block{border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:.65rem .75rem;background:rgba(255,255,255,.02)}
+.angle-title{font-family:var(--ff-mincho);font-size:.8rem;color:var(--star);margin:0 0 .35rem;display:flex;align-items:center;gap:.4rem}
+.angle-list{margin:0;padding-left:1rem;display:flex;flex-direction:column;gap:.3rem}
+.angle-list li{font-size:.76rem;color:var(--text);line-height:1.6}
+.stars{font-size:1.1rem;letter-spacing:.08em}
+.star-on{color:var(--brass)}
+.star-off{color:rgba(232,206,147,.2)}
+.score-label{font-family:var(--ff-mono);font-size:.7rem;color:var(--brass-lt)}
+.footnote{font-family:var(--ff-mono);font-size:.58rem;color:var(--dim);letter-spacing:.03em}
+.result-link{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--ff-mono);font-size:.68rem;color:var(--brass-lt);text-decoration:none;border-bottom:1px solid var(--rule-2);padding-bottom:2px;align-self:flex-start;margin-top:.2rem}
+.result-link:hover{color:var(--brass-pale);border-color:var(--brass)}
+
+@media(max-width:400px){.frame{width:100%}}
+</style>
+
+<div class="page">
+  <div class="intro">
+    <span class="eyebrow">占いPortal ・ mockup preview</span>
+    <h1>AI鑑定チャット — 見た目モック（全テーマ版）</h1>
+    <p>実サイトのコードには一切触れていません。見た目・会話の流れだけを確認するための試作です。<br>サイト内に実際のデータがある10テーマをすべて選べるようにしています。</p>
+  </div>
+  <div class="stage">
+    <div class="frame-col">
+      <span class="frame-tag">占いPortal・トップ画面（簡易再現）</span>
+      <div class="frame" id="frame"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ── 実データが確認できている10テーマ（2026-09-15調査でA評価のもの） ── */
+/* 参照モックアップの線画アイコン様式(viewBox 20x20、currentColorのストローク)を踏襲 */
+var THEME_ICONS = {
+  love:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M10 16.8C5.2 13.4 2.2 10.4 2.2 7.2c0-2.3 1.9-4.2 4.2-4.2 1.4 0 2.7.7 3.6 1.9 .9-1.2 2.2-1.9 3.6-1.9 2.3 0 4.2 1.9 4.2 4.2 0 3.2-3 6.2-7.8 9.6z"/></svg>',
+  work:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.2" y="6.5" width="15.6" height="10" rx="1.6"/><path d="M7 6.5V5c0-.9.7-1.6 1.6-1.6h2.8c.9 0 1.6.7 1.6 1.6v1.5M2.2 10.8h15.6"/></svg>',
+  money:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="10" cy="10" r="7.3"/><path d="M10 6.2v7.6M12.2 8c0-1-1-1.7-2.2-1.7s-2.2.7-2.2 1.6c0 2.2 4.4 1 4.4 3.2 0 .9-1 1.6-2.2 1.6S7.8 12 7.8 11"/></svg>',
+  self:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="10" cy="10" r="6.8"/><circle cx="10" cy="10" r="1.7" fill="currentColor" stroke="none"/><path d="M10 1.7v2M10 16.3v2M1.7 10h2M16.3 10h2"/></svg>',
+  encounter:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6.5 2.2h7v15.6h-7z"/><path d="M6.5 2.2 2.8 3.6v13l3.7-1.4"/><circle cx="8.6" cy="10" r=".75" fill="currentColor" stroke="none"/></svg>',
+  compatibility:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6.6 12.2C4 10.4 2.4 8.7 2.4 6.7c0-1.8 1.5-3.2 3.2-3.2 1 0 2 .5 2.6 1.3M13.4 12.2c2.6-1.8 4.2-3.5 4.2-5.5 0-1.8-1.5-3.2-3.2-3.2-1 0-2 .5-2.6 1.3"/><path d="M10 8.4c-1.6 1.7-3.6 3.2-3.6 5 0 1.7 1.4 2.8 3.6 4.3 2.2-1.5 3.6-2.6 3.6-4.3 0-1.8-2-3.3-3.6-5z"/></svg>',
+  marriage:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="7.4" cy="11" r="4.3"/><circle cx="12.6" cy="11" r="4.3"/><path d="M8.6 4.4 10 2l1.4 2.4"/></svg>',
+  timing:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 2.5h10M5 17.5h10M6 2.5c0 3 1.6 4.7 4 6-2.4 1.3-4 3-4 6M14 2.5c0 3-1.6 4.7-4 6 2.4 1.3 4 3 4 6"/></svg>',
+  kaiun:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M10 1.8c.7 3.6 2.1 5.9 6.2 6.7-4.1 1-5.5 3.3-6.2 6.9-.7-3.6-2.1-5.9-6.2-6.9 4.1-.8 5.5-3.1 6.2-6.7z" fill="currentColor" stroke="none"/></svg>',
+  zense:'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M10 2.2c3.4 1.1 5.6 3.6 5.6 6.8 0 4.3-3.4 7.8-5.6 8.8-2.2-1-5.6-4.5-5.6-8.8 0-1.9 1-3.5 2.4-4.7"/><path d="M10 5.6c1.7.7 2.8 2 2.8 3.6 0 2.3-1.8 4.1-2.8 4.8-1-.7-2.8-2.5-2.8-4.8"/></svg>'
+};
+var THEMES = [
+  { key:'love', name:'恋愛', desc:'恋愛の傾向やタイプを知る', ack:'恋愛についてですね。生年月日・MBTI・血液型から、恋愛の傾向を見ていきますね。', input:'ms' },
+  { key:'work', name:'仕事・キャリア', desc:'向いている仕事の傾向を知る', ack:'仕事についてですね。生まれ持った気質から、向いている働き方を見ていきますね。', input:'single' },
+  { key:'money', name:'金運', desc:'お金との付き合い方の傾向を知る', ack:'金運についてですね。本命星から、お金との付き合い方の傾向を見ていきますね。', input:'single' },
+  { key:'self', name:'自己理解', desc:'自分の性格・強み弱みを知る', ack:'自己理解についてですね。生まれ持った気質から、強み・弱みを見ていきますね。', input:'single' },
+  { key:'encounter', name:'出会い', desc:'新しい出会いへの心の開きやすさを知る', ack:'出会いについてですね。生年月日・MBTI・血液型から、新しい出会いへの向き合い方を見ていきますね。', input:'ms' },
+  { key:'compatibility', name:'相性', desc:'気になるあの人との相性を知る', ack:'相性についてですね。お二人の生年月日から読み解いていきますね。', input:'dual' },
+  { key:'marriage', name:'結婚', desc:'結婚について知りたいことを選ぶ', ack:null, input:null },
+  { key:'timing', name:'運気の流れ', desc:'今年・今の運気の流れを知る', ack:'運気の流れについてですね。生年月日と性別から、今の運気の流れを見ていきますね。', input:'sg' },
+  { key:'kaiun', name:'開運のヒント', desc:'今日から意識したい開運のポイントを知る', ack:'開運のヒントについてですね。本命星から、今すぐ試せるヒントを見ていきますね。', input:'single' },
+  { key:'zense', name:'前世・運命', desc:'前世からのメッセージを知る', ack:'前世・運命についてですね。生年月日とお名前から、前世からのメッセージを見ていきますね。', input:'sn' }
+];
+var SOON = ['家族','学業・進路','選択・決断','健康','転職','復縁','相手の気持ち'];
+var MARRIAGE_CHOICES = [
+  { key:'marriage_self', name:'自分の結婚志向', ack:'自分の結婚志向についてですね。生年月日とタイプから、結婚観の傾向を見ていきますね。' },
+  { key:'marriage_person', name:'この人との結婚相性', ack:'この人との結婚相性についてですね。お二人の生年月日から読み解いていきますね。' }
+];
+var INPUT_SUB = {
+  love:'MBTIタイプと血液型もあわせて、恋愛傾向を読み解きます。',
+  work:'本命星から、向いている働き方を読み解きます。',
+  money:'九星気学の本命星から、お金との付き合い方を読み解きます。',
+  self:'算命学の考え方で、あなたの気質を読み解きます。',
+  encounter:'MBTIタイプと血液型もあわせて、新しい出会いへの心の開きやすさを読み解きます。',
+  timing:'四柱推命の考え方で、今の運気の流れを読み解きます。',
+  kaiun:'生年月日から、あなたの本命星を割り出します。',
+  zense:'生年月日とお名前から、前世からのメッセージを読み解きます。',
+  marriage_self:'MBTIタイプと血液型もあわせて、結婚観の傾向を読み解きます。',
+  marriage_person:'お二人の生年月日から、星座の組み合わせで相性を見ます。',
+  compatibility:'お二人の生年月日から、星座の組み合わせで相性を見ます。'
+};
+/* 結果は見た目確認用の例示テキスト（実際の占いロジックそのままの文体を模した参考文言） */
+var EXAMPLE_RESULT = {
+  love: { text:'一度好きになると一途に想い続けるタイプ。ただし気持ちを言葉にするのが苦手で、相手に伝わりきらないことがあります。素直な一言が、関係を大きく前進させます。' },
+  work: { text:'裏方でチームを支える役割で力を発揮するタイプ。人前に立つより、仕組みを整える仕事に向いています。自己アピールが苦手なため実力が評価されにくいことも。' },
+  money: { text:'コツコツ貯めるのが得意なタイプ。ただし人付き合いの出費がかさみやすいので、月ごとの上限を決めておくと安心です。' },
+  self: {
+    strengths:['物事を筋道立てて考えられる','一度決めたことをやり抜く粘り強さがある','周囲の変化に落ち着いて対応できる'],
+    weaknesses:['慎重になりすぎて動き出すまでに時間がかかることがある','本音を後回しにして無理をしやすい']
+  },
+  encounter: { text:'直感と見極めの両方を働かせ、ピンときた相手とは自然に距離が縮まるタイプ。恋の入り口で無理をしません。' },
+  timing: { text:'今年は、これまで積み上げてきたことが形になりやすい時期。無理に新しいことを始めるより、今あるものを育てる方が結果につながります。' },
+  kaiun: { star:'四緑木星', text:'今日は、人との縁が動きやすい日。連絡を後回しにしていた相手に、自分から一言送ってみましょう。小さな行動が、次の巡り合わせを呼び込みます。' },
+  zense: { text:'前世では、誰かを支える役割を担っていたようです。今世でも、人をサポートすることに自然と喜びを感じやすい傾向があります。' },
+  marriage_self: { text:'安定した関係を大切にしたいタイプ。結婚は「勢い」よりも「積み重ね」で決めたいと考える傾向があります。焦らず、信頼を確かめながら進むことが向いています。' },
+  compat: { score:4, label:'相性良好', reason:'お互いの足りない部分を自然に補い合える組み合わせです。価値観の違いも、話し合えば大きな摩擦にはなりにくい相性です。' }
+};
+
+var MBTI_TYPES = ['INTJ','INTP','ENTJ','ENTP','INFJ','INFP','ENFJ','ENFP','ISTJ','ISFJ','ESTJ','ESFJ','ISTP','ISFP','ESTP','ESFP'];
+var BLOOD_TYPES = ['A','B','O','AB'];
+var YEARS = (function(){ var a=[]; for(var y=2026;y>=1930;y--) a.push(y); return a; })();
+var MONTHS = Array.from({length:12},function(_,i){return i+1;});
+var DAYS = Array.from({length:31},function(_,i){return i+1;});
+
+var state = null;
+function initialState(keepHistory){
+  return {
+    phase:'theme', theme:null, effectiveTheme:null,
+    single:{y:'',m:'',d:''}, ms:{y:'',m:'',d:''}, mbti:null, blood:null,
+    sg:{y:'',m:'',d:''}, gender:null, name:'',
+    your:{y:'',m:'',d:''}, partner:{y:'',m:'',d:''},
+    openDD:null,
+    /* 「もう一度占う」はチャットを打ち切ってトップに戻すのではなく、それまでの
+       やり取りを履歴として残したまま、同じスレッドの続きとして次の質問に進む。 */
+    history: keepHistory ? state.history : []
+  };
+}
+state = initialState();
+
+/* ネイティブ<select>のポップアップが環境によって開けない不具合が報告されたため、
+   見た目・操作感はドロップダウンのまま、ポップアップは自前のリスト(div)で実装する。 */
+var ddFieldDefs = {}; /* key -> {list, current, suffix, title} を都度登録し、固定シート側で参照する */
+function ddField(prefix, part, list, current, suffix, placeholder){
+  var key = prefix+'-'+part;
+  var label = current ? (current+suffix) : placeholder;
+  ddFieldDefs[key] = { list:list, current:current, suffix:suffix, title:placeholder+'を選択' };
+  return '<div class="dd-wrap">'
+    + '<button type="button" class="dd-btn'+(current?'':' ph')+'" data-dd-toggle="'+key+'">'+label+'<span class="dd-caret">▾</span></button>'
+    + '</div>';
+}
+function dateRow(prefix, d){
+  return '<div class="date-row">'
+    + ddField(prefix,'y',YEARS,d.y,'年','年')
+    + ddField(prefix,'m',MONTHS,d.m,'月','月')
+    + ddField(prefix,'d',DAYS,d.d,'日','日')
+    + '</div>';
+}
+function dateReady(d){ return !!(d.y && d.m && d.d); }
+function themeInputType(){
+  if(state.effectiveTheme==='marriage_self') return 'ms';
+  if(state.effectiveTheme==='marriage_person' || state.effectiveTheme==='compatibility') return 'dual';
+  var t = THEMES.filter(function(x){return x.key===state.effectiveTheme;})[0];
+  return t ? t.input : 'single';
+}
+function inputReady(){
+  var type = themeInputType();
+  if(type==='single') return dateReady(state.single);
+  if(type==='sg') return dateReady(state.sg) && !!state.gender;
+  if(type==='sn') return dateReady(state.single) && !!(state.name && state.name.trim());
+  if(type==='ms') return dateReady(state.ms) && !!state.mbti && !!state.blood;
+  if(type==='dual') return dateReady(state.your) && dateReady(state.partner);
+  return false;
+}
+
+function inputTurn(){
+  var type = themeInputType(), body;
+  if(type==='single'){
+    body = '<div class="date-inline"><span class="date-legend">birth date</span>' + dateRow('single', state.single) + '</div>';
+  } else if(type==='sg'){
+    body = '<div class="date-inline"><span class="date-legend">birth date</span>' + dateRow('sg', state.sg)
+      + '<span class="date-legend">性別</span><div class="grid4" style="grid-template-columns:1fr 1fr">'
+        + '<button type="button" class="pick-btn'+(state.gender==='male'?' picked':'')+'" data-gender="male">男性</button>'
+        + '<button type="button" class="pick-btn'+(state.gender==='female'?' picked':'')+'" data-gender="female">女性</button>'
+      + '</div>'
+      + '<span class="footnote" style="display:block">※大運(10年ごとの運気サイクル)の順行・逆行の判定に使います</span>'
+      + '</div>';
+  } else if(type==='sn'){
+    body = '<div class="date-inline"><span class="date-legend">birth date</span>' + dateRow('single', state.single)
+      + '<span class="date-legend">お名前</span>'
+      + '<input type="text" class="name-input" id="nameInput" data-name-input placeholder="例：山田 太郎" maxlength="20" value="'+(state.name||'').replace(/"/g,'&quot;')+'">'
+      + '<span class="footnote" style="display:block">※前世からのメッセージの抽出に使います(外部へは送信されません)</span>'
+      + '</div>';
+  } else if(type==='ms'){
+    body = '<div class="date-inline"><span class="date-legend">birth date</span>' + dateRow('ms', state.ms)
+      + '<span class="date-legend">MBTI</span><div class="grid4">' + MBTI_TYPES.map(function(t){
+          return '<button type="button" class="pick-btn'+(state.mbti===t?' picked':'')+'" data-mbti="'+t+'">'+t+'</button>';
+        }).join('') + '</div>'
+      + '<span class="date-legend">血液型</span><div class="grid4">' + BLOOD_TYPES.map(function(t){
+          return '<button type="button" class="pick-btn blood-btn'+(state.blood===t?' picked':'')+'" data-blood="'+t+'">'+t+'型</button>';
+        }).join('') + '</div>'
+      + '</div>';
+  } else {
+    body = '<div class="date-inline"><span class="date-legend">あなたの生年月日</span>' + dateRow('your', state.your)
+      + '<span class="date-legend">お相手の生年月日</span>' + dateRow('partner', state.partner)
+      + '</div>';
+  }
+  var ready = inputReady();
+  return '<div class="row bot"><div class="stack">'
+    + '<div class="bubble">'+(type==='sg' ? '生年月日と性別を教えてください' : type==='sn' ? '生年月日とお名前を教えてください' : '生年月日を教えてください')+'<span class="sub">'+INPUT_SUB[state.effectiveTheme]+'</span></div>'
+    + body
+    + '<div class="qr"><button type="button" class="qr-btn ghost" data-back>← 最初から</button>'
+    + '<button type="button" class="qr-btn" data-submit style="background:linear-gradient(180deg,#f5e4b8,#c0913c);color:#1d1407;border-color:#6d4f19"'+(ready?'':' disabled')+'>読み解いてもらう</button></div>'
+    + '</div></div>';
+}
+
+var RESULT_HEADINGS = { love:'恋愛', work:'仕事・キャリア', money:'金運', self:'自己理解', encounter:'出会い', timing:'運気の流れ', kaiun:'開運のヒント', zense:'前世・運命', marriage_self:'結婚志向', marriage_person:'この人との結婚相性', compatibility:'相性' };
+/* 結果の後、対応する既存の占いページへ回遊させるリンク(サイト内の他ツールと同じresult-footer.phpの仕組みを踏襲) */
+var RESULT_LINKS = {
+  love:{ url:'/love', label:'恋愛傾向診断で詳しく見る' },
+  work:{ url:'/kyusei', label:'九星気学診断で詳しく見る' },
+  money:{ url:'/kyusei', label:'九星気学診断で詳しく見る' },
+  self:{ url:'/sanmei', label:'算命学鑑定で詳しく見る' },
+  encounter:{ url:'/love', label:'恋愛傾向診断で詳しく見る' },
+  timing:{ url:'/shichu', label:'四柱推命で詳しく見る' },
+  kaiun:{ url:'/kyusei', label:'九星気学診断で詳しく見る' },
+  zense:{ url:'/zense', label:'前世診断で詳しく見る' },
+  marriage_self:{ url:'/love', label:'恋愛傾向診断で詳しく見る' },
+  marriage_person:{ url:'/aisho', label:'相性診断で詳しく見る' },
+  compatibility:{ url:'/aisho', label:'相性診断で詳しく見る' }
+};
+
+function resultTurn(){
+  var t = state.effectiveTheme, body='', badge='';
+  if(t==='kaiun'){
+    var r = EXAMPLE_RESULT.kaiun; badge = r.star;
+    body = '<p style="margin:0;font-size:.83rem;line-height:1.85;color:var(--text)">'+r.text+'</p>';
+  } else if(t==='self'){
+    var s = EXAMPLE_RESULT.self;
+    body = '<div class="angle-block"><p class="angle-title">◎ あなたの強み</p><ul class="angle-list">'+s.strengths.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'
+      + '<div class="angle-block"><p class="angle-title">△ 気をつけたい傾向</p><ul class="angle-list">'+s.weaknesses.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>';
+  } else if(t==='marriage_self'){
+    body = '<p style="margin:0;font-size:.83rem;line-height:1.85;color:var(--text)">'+EXAMPLE_RESULT.marriage_self.text+'</p>';
+  } else if(t==='marriage_person' || t==='compatibility'){
+    var c = EXAMPLE_RESULT.compat, stars='';
+    for(var i=1;i<=5;i++) stars += '<span class="'+(i<=c.score?'star-on':'star-off')+'">★</span>';
+    body = '<div class="stars">'+stars+'</div><div class="score-label">'+c.label+'</div><p style="margin:.5rem 0 0;font-size:.83rem;line-height:1.85;color:var(--text)">'+c.reason+'</p>';
+  } else {
+    var e = EXAMPLE_RESULT[t];
+    body = '<p style="margin:0;font-size:.83rem;line-height:1.85;color:var(--text)">'+(e?e.text:'')+'</p>';
+  }
+  var link = RESULT_LINKS[t];
+  return '<div class="row bot"><div class="stack" style="max-width:100%">'
+    + '<div class="bubble headline">'+RESULT_HEADINGS[t]+'、読み解きました' + (badge?'<span class="sub"><span class="result-badge">'+badge+'</span></span>':'') + '</div>'
+    + timeTag()
+    + '<div class="stack" style="max-width:100%"><div class="result-wrap">'+body+'</div></div>'
+    + '<span class="footnote">※見た目確認用の例示文です。実際は既存の占いデータをそのまま表示します。</span>'
+    + (link ? '<a href="'+link.url+'" class="result-link">'+link.label+' →</a>' : '')
+    + '<div class="qr"><button type="button" class="qr-btn ghost" data-retry>もう一度占う</button></div>'
+    + '</div></div>';
+}
+
+function render(){
+  var thread = document.getElementById('thread');
+  if(!thread) return;
+
+  var stepEl = document.getElementById('stepCount');
+  var fillEl = document.getElementById('progressFill');
+  var step = phaseStep();
+  if(stepEl) stepEl.textContent = step + ' / 4';
+  if(fillEl) fillEl.style.width = (step*25) + '%';
+
+  var html = '';
+
+  /* 過去のやり取り(もう一度占う、で積んだ履歴)をそのまま先頭に残す */
+  html += state.history.join('');
+
+  var isFirstTurn = state.history.length === 0;
+  html += '<div class="row bot"'+(isFirstTurn ? '' : ' id="continueRow"')+'><div class="stack">'
+    + '<div class="bubble headline">'+(isFirstTurn ? 'こんにちは。<br>何について知りたいですか？' : '他にも知りたいことはありますか？')+'</div>'
+    + timeTag()
+    + (state.phase==='theme'
+        ? '<div class="qr grid2">'+THEMES.map(function(t){
+            return '<button type="button" class="qr-btn" data-theme="'+t.key+'"><span class="card-icon">'+(THEME_ICONS[t.key]||'')+'</span>'+t.name+'<span class="tag">'+t.desc+'</span></button>';
+          }).join('')+'</div>'
+          + '<span class="footnote" style="display:block;margin-top:.2rem">他にも準備中のテーマがあります('+SOON.join('・')+')</span>'
+        : '')
+    + '</div></div>';
+
+  if(state.phase!=='theme'){
+    var picked = THEMES.filter(function(t){return t.key===state.theme;})[0];
+    html += '<div class="row user"><div class="stack" style="align-items:flex-end"><div class="bubble user">'+(picked?picked.name:'')+'</div>'+timeTag()+'</div></div>';
+    if(state.theme!=='marriage' && picked){
+      html += '<div class="row bot"><div class="stack"><div class="bubble">'+picked.ack+'</div>'+timeTag()+'</div></div>';
+    }
+  }
+
+  if(state.theme==='marriage'){
+    html += '<div class="row bot"><div class="stack">'
+      + '<div class="bubble">結婚について知りたいことを選んでください。</div>'
+      + (state.phase==='marriageChoice'
+          ? '<div class="qr grid2">'+MARRIAGE_CHOICES.map(function(c){return '<button type="button" class="qr-btn" data-marriage="'+c.key+'">'+c.name+'</button>';}).join('')+'</div>'
+          : timeTag())
+      + '</div></div>';
+    if(state.effectiveTheme){
+      var pickedC = MARRIAGE_CHOICES.filter(function(c){return c.key===state.effectiveTheme;})[0];
+      html += '<div class="row user"><div class="stack" style="align-items:flex-end"><div class="bubble user">'+(pickedC?pickedC.name:'')+'</div>'+timeTag()+'</div></div>';
+      html += '<div class="row bot"><div class="stack"><div class="bubble">'+pickedC.ack+'</div>'+timeTag()+'</div></div>';
+    }
+  }
+
+  if(state.phase==='input') html += inputTurn();
+  if(state.phase==='loading' || state.phase==='result'){
+    html += '<div class="row user"><div class="stack" style="align-items:flex-end"><div class="bubble user">入力しました</div>'+timeTag()+'</div></div>';
+  }
+  if(state.phase==='loading'){
+    html += '<div class="row bot"><div class="stack"><div class="bubble">ありがとうございます。</div><div class="bubble"><span class="typing"><span></span><span></span><span></span></span></div></div></div>';
+  }
+  if(state.phase==='result') html += resultTurn();
+
+  thread.innerHTML = html;
+  /* 結果表示等で画面が一瞬で切り替わる怖さを減らすため、スクロールは滑らかに行う。
+     ただし「もう一度占う」直後は、一番下(テーマ一覧の最後)まで飛ばすと直前の結果が
+     完全に隠れてしまうため、新しく追加された導入文の位置までに留める。 */
+  if(state.scrollTarget === 'continue'){
+    var continueRow = document.getElementById('continueRow');
+    if(continueRow) continueRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
+  }
+  state.scrollTarget = null;
+  renderPicker();
+}
+
+/* 星座盤の装飾リング(参照モックアップと同一のロジック) */
+function arc(){
+  var lines = '';
+  for(var i=0;i<36;i++){
+    var a = i*10*Math.PI/180, r1 = 96, r2 = (i%3===0) ? 86 : 91;
+    lines += '<line x1="'+(115+r1*Math.cos(a)).toFixed(1)+'" y1="'+(115+r1*Math.sin(a)).toFixed(1)+'" x2="'+(115+r2*Math.cos(a)).toFixed(1)+'" y2="'+(115+r2*Math.sin(a)).toFixed(1)+'"/>';
+  }
+  return '<svg viewBox="0 0 230 230" fill="none" aria-hidden="true">'
+    + '<circle cx="115" cy="115" r="96" stroke="rgba(232,206,147,.42)" stroke-width="1"/>'
+    + '<circle cx="115" cy="115" r="82" stroke="rgba(232,206,147,.22)" stroke-width="1"/>'
+    + '<g stroke="rgba(232,206,147,.42)" stroke-width="1">'+lines+'</g>'
+    + '<circle cx="115" cy="19" r="2.4" fill="#f2e3bd"/>'
+    + '<circle cx="197" cy="163" r="1.7" fill="#f2e3bd" opacity=".6"/>'
+    + '</svg>';
+}
+function nowTime(){
+  var d = new Date();
+  return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
+}
+function timeTag(){ return '<span class="msg-time">'+nowTime()+'</span>'; }
+function phaseStep(){
+  if(state.phase==='theme' || state.phase==='marriageChoice') return 1;
+  if(state.phase==='input') return 2;
+  if(state.phase==='loading') return 3;
+  return 4;
+}
+function frameHTML(){
+  return '<div class="mini-top">'
+    + '<div class="mini-head"><span class="mini-brand"><span class="seal">🔮</span>占いPortal</span><span class="nav">占い一覧　解説</span></div>'
+    + '<div class="starfield">'+Array.from({length:14},function(_,i){
+        return '<span style="top:'+(Math.random()*70)+'%;left:'+(Math.random()*100)+'%;width:1.4px;height:1.4px;animation-delay:'+(Math.random()*4)+'s"></span>';
+      }).join('')+'</div>'
+    + '<div class="mini-trigger"><div class="trigger-arc">'+arc()+'</div><div class="mini-trigger-body">'
+      + '<div class="trigger-msg-row"><span class="seal">🔮</span>'
+      + '<div class="bubble headline trigger-bubble">こんにちは。<br>今日は、どんなことが気になっていますか？'
+      + '<span class="sub">選んだテーマを、既存の占いデータから読み解きます。</span></div></div>'
+      + '<div class="qr trigger-replies">'+['love','marriage','compatibility'].map(function(k){
+          var t = THEMES.filter(function(x){return x.key===k;})[0];
+          return '<button type="button" class="qr-btn ghost" data-theme="'+k+'"><span class="card-icon" style="display:inline-block;width:14px;height:14px;vertical-align:-2px;margin:0 .25rem 0 0">'+THEME_ICONS[k]+'</span>'+t.name+'</button>';
+        }).join('')+'</div>'
+      + '<p class="trigger-more-note">他にも10個のテーマから選べます</p>'
+      + '<span class="trigger-note">約30秒・登録不要</span>'
+      + '<button type="button" class="btn btn-brass trigger-cta" id="openBtn">すべてのテーマを見る →</button>'
+      + '</div></div>'
+    + '<div class="mini-fortunes"><p>占い方法をすでに決めている方はこちら</p><div class="chip-row"><span class="chip flag"><i></i>三星統合鑑定</span><span class="chip"><i></i>タロット</span><span class="chip"><i></i>四柱推命</span><span class="chip"><i></i>九星気学</span></div></div>'
+    + '</div>'
+    + '<div class="modal-overlay" id="overlay">'
+    + '<div class="modal"><span class="grabber"></span>'
+    + '<div class="modal-crest">'+arc()+'</div>'
+    + '<div class="chat-head"><span class="step-count" id="stepCount">1 / 4</span><button type="button" class="modal-close" id="closeBtn">✕</button><span class="seal">🔮</span><div class="chat-head-text"><strong>AI鑑定チャット</strong><span>fortune consultation</span></div></div>'
+    + '<div class="progress-track"><div class="progress-fill" id="progressFill" style="width:25%"></div></div>'
+    + '<div class="thread" id="thread"></div>'
+    + '</div>'
+    + '<div class="picker-overlay" id="pickerOverlay"><div class="picker-sheet"><div class="picker-title" id="pickerTitle"></div><div class="picker-list" id="pickerList"></div></div></div>'
+    + '</div>';
+}
+
+function renderPicker(){
+  var overlay = document.getElementById('pickerOverlay');
+  var titleEl = document.getElementById('pickerTitle');
+  var listEl = document.getElementById('pickerList');
+  if(!overlay) return;
+  if(!state.openDD){ overlay.classList.remove('open'); return; }
+  var def = ddFieldDefs[state.openDD];
+  if(!def){ overlay.classList.remove('open'); return; }
+  titleEl.textContent = def.title;
+  listEl.innerHTML = def.list.map(function(v){
+    return '<button type="button" class="dd-option'+(String(v)===String(def.current)?' sel':'')+'" data-dd-pick="'+state.openDD+'|'+v+'">'+v+def.suffix+'</button>';
+  }).join('');
+  overlay.classList.add('open');
+  /* 年の初期スクロール位置：2026年から降順のため、未選択時に一番若い年(2026年)が
+     先頭に来て使いにくい。未選択なら2000年付近、選択済みならその年へスクロールする。 */
+  var targetValue = def.current || (state.openDD.slice(-2)==='-y' ? '2000' : null);
+  if(targetValue){
+    var idx = def.list.findIndex(function(v){ return String(v)===String(targetValue); });
+    if(idx >= 0){
+      var opts = listEl.querySelectorAll('.dd-option');
+      if(opts[idx]) opts[idx].scrollIntoView({ block:'center' });
+    }
+  }
+}
+
+document.getElementById('frame').innerHTML = frameHTML();
+render();
+
+document.getElementById('frame').addEventListener('click', function(e){
+  if(e.target.id==='openBtn'){ document.getElementById('overlay').classList.add('open'); return; }
+  if(e.target.id==='closeBtn' || e.target.id==='overlay'){ document.getElementById('overlay').classList.remove('open'); state=initialState(); render(); return; }
+
+  var themePick = e.target.closest('[data-theme]');
+  if(themePick){
+    var key = themePick.dataset.theme;
+    document.getElementById('overlay').classList.add('open'); /* 入口のテーマ抜粋から直接開く場合に対応 */
+    state.theme = key;
+    if(key==='marriage'){ state.phase='marriageChoice'; } else { state.effectiveTheme=key; state.phase='input'; }
+    render(); return;
+  }
+  var marriagePick = e.target.closest('[data-marriage]');
+  if(marriagePick){ state.effectiveTheme = marriagePick.dataset.marriage; state.phase='input'; render(); return; }
+
+  var mbti = e.target.closest('[data-mbti]'); if(mbti){ state.mbti = mbti.dataset.mbti; render(); return; }
+  var blood = e.target.closest('[data-blood]'); if(blood){ state.blood = blood.dataset.blood; render(); return; }
+  var gender = e.target.closest('[data-gender]'); if(gender){ state.gender = gender.dataset.gender; render(); return; }
+
+  if(e.target.closest('[data-back]')){ state = initialState(); render(); return; }
+  if(e.target.closest('[data-retry]')){
+    /* 今の会話(質問〜結果)をhistoryに積んでから、次の質問に続ける。トップへ戻さない。
+       ただし「もう一度占う」ボタン自体は過去分に残さず取り除く。 */
+    var pastThread = document.getElementById('thread');
+    var tmp = document.createElement('div');
+    tmp.innerHTML = pastThread ? pastThread.innerHTML : '';
+    tmp.querySelectorAll('[data-retry],[data-back]').forEach(function(btn){
+      var row = btn.closest('.qr') || btn;
+      row.remove();
+    });
+    state = initialState(true);
+    state.history.push(tmp.innerHTML);
+    state.scrollTarget = 'continue';
+    render();
+    return;
+  }
+
+  if(e.target.closest('[data-submit]')){
+    if(!inputReady()) return;
+    state.phase='loading'; render();
+    setTimeout(function(){ if(state.phase==='loading'){ state.phase='result'; render(); } }, 1200);
+    return;
+  }
+
+  var ddToggle = e.target.closest('[data-dd-toggle]');
+  if(ddToggle){
+    var k = ddToggle.dataset.ddToggle;
+    state.openDD = (state.openDD === k) ? null : k;
+    render();
+    return;
+  }
+  var ddPick = e.target.closest('[data-dd-pick]');
+  if(ddPick){
+    var pair = ddPick.dataset.ddPick.split('|');
+    var fieldKey = pair[0], value = pair[1];
+    var fp = fieldKey.split('-');
+    var map = { single:state.single, sg:state.sg, ms:state.ms, your:state.your, partner:state.partner };
+    var target = map[fp[0]];
+    if(target){ target[fp[1]] = value; }
+    state.openDD = null;
+    render();
+    return;
+  }
+  /* ピッカーの背景(シート外)をクリックしたら閉じる */
+  if(e.target.id==='pickerOverlay'){
+    state.openDD = null;
+    render();
+    return;
+  }
+});
+/* 名前入力欄はキー入力のたびにフォーカスが外れないよう、全体render()はせず
+   状態更新と送信ボタンの有効/無効の切り替えだけを直接行う。 */
+document.getElementById('frame').addEventListener('input', function(e){
+  if(e.target.matches('[data-name-input]')){
+    state.name = e.target.value;
+    var submitBtn = document.querySelector('[data-submit]');
+    if(submitBtn) submitBtn.disabled = !inputReady();
+  }
+});
+</script>
