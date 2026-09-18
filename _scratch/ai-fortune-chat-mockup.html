@@ -407,7 +407,7 @@ function render(){
   html += state.history.join('');
 
   var isFirstTurn = state.history.length === 0;
-  html += '<div class="row bot"'+(isFirstTurn ? '' : ' id="continueRow"')+'><div class="stack">'
+  html += '<div class="row bot"'+(isFirstTurn ? '' : ' id="continueRow"')+'><div class="stack"'+(state.phase==='theme' ? ' style="max-width:100%"' : '')+'>'
     + '<div class="bubble headline">'+(isFirstTurn ? 'こんにちは。<br>何について知りたいですか？' : '他にも知りたいことはありますか？')+'</div>'
     + timeTag()
     + (state.phase==='theme'
@@ -427,7 +427,7 @@ function render(){
   }
 
   if(state.theme==='marriage'){
-    html += '<div class="row bot"><div class="stack">'
+    html += '<div class="row bot"><div class="stack"'+(state.phase==='marriageChoice' ? ' style="max-width:100%"' : '')+'>'
       + '<div class="bubble">結婚について知りたいことを選んでください。</div>'
       + (state.phase==='marriageChoice'
           ? '<div class="qr grid2">'+MARRIAGE_CHOICES.map(function(c){return '<button type="button" class="qr-btn" data-marriage="'+c.key+'">'+c.name+'</button>';}).join('')+'</div>'

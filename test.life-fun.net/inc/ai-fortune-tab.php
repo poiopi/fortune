@@ -146,10 +146,12 @@ if (aicOverlay) {
 }
 
 // タブ本体クリック → 既存のAI鑑定チャットモーダルを開く（新規実装しない）
+// タブの現在位置（getBoundingClientRect）を渡し、モーダル側でPC幅時のみ
+// タブの位置に連動した開閉位置を計算できるようにする。
 body.addEventListener('click', function(){
   if (aftMoved) { aftMoved = false; return; }
   if (wrap.classList.contains('aft-min')) return; // 最小化中はクリックしても開かない（誤操作防止）
-  if (typeof window.openAiChatModal === 'function') window.openAiChatModal();
+  if (typeof window.openAiChatModal === 'function') window.openAiChatModal(wrap.getBoundingClientRect());
 });
 
 // 最小化トグル

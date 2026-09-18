@@ -46,7 +46,14 @@ declare(strict_types=1);
 .aic-overlay.open{opacity:1;pointer-events:all}
 .aic-modal{position:fixed;left:0;right:0;margin:0 auto;max-width:460px;bottom:-100%;top:8vh;display:flex;flex-direction:column;overflow:hidden;isolation:isolate;background:radial-gradient(140% 46% at 50% 0%,rgba(58,80,140,.24),transparent 68%),linear-gradient(180deg,#070a13,var(--aic-plate) 55%);border:1px solid var(--aic-rule-2);border-radius:20px 20px 0 0;box-shadow:0 -20px 60px rgba(0,0,0,.8),inset 0 1px 0 rgba(232,206,147,.14);opacity:0;transition:bottom .34s cubic-bezier(.22,1,.3,1),opacity .34s;color:var(--aic-text)}
 .aic-overlay.open .aic-modal{bottom:0;opacity:1}
-@media(min-width:461px){.aic-modal{top:5vh;bottom:5vh;border-radius:20px}.aic-overlay.open .aic-modal{bottom:5vh}}
+/* PC幅（461px以上）：占いチャットタブの位置に連動して開くため、下からのせり上がり
+   ではなく右からの水平スライドインに変更する。位置計算のためheightを固定値にし、
+   topはJS（aicOpen）でタブの位置に応じてインラインスタイルとして動的に設定する
+   （anchorRectが渡されない場合はこのtop:5vhがデフォルト値として使われる）。 */
+@media(min-width:461px){
+  .aic-modal{top:5vh;bottom:auto;height:min(72vh,520px);border-radius:20px;right:16px;left:auto;margin:0;transform:translateX(calc(100% + 16px));transition:transform .34s cubic-bezier(.22,1,.3,1),opacity .34s}
+  .aic-overlay.open .aic-modal{bottom:auto;transform:translateX(0)}
+}
 .aic-grabber{width:34px;height:4px;border-radius:2px;background:var(--aic-rule-2);margin:.6rem auto -.1rem;flex-shrink:0}
 .aic-modal-crest{position:absolute;top:-70px;left:50%;transform:translateX(-50%);width:230px;height:230px;opacity:.55;pointer-events:none;z-index:0}
 .aic-modal-crest svg{width:100%;height:100%;display:block}
@@ -70,6 +77,9 @@ declare(strict_types=1);
 .aic-row.bot{justify-content:flex-start}
 .aic-row.user{justify-content:flex-end}
 .aic-stack{display:flex;flex-direction:column;gap:.5rem;max-width:92%;align-items:flex-start}
+/* テーマ選択・結婚2択のカードグリッド（.aic-qr.grid2）を含むstackは、
+   通常のチャット吹き出し用92%制限を適用せずフル幅で表示する。 */
+.aic-stack.aic-stack-full{max-width:100%}
 .aic-bubble{background:linear-gradient(180deg,var(--aic-panel-2),#121722);border:1px solid rgba(255,255,255,.06);border-radius:3px 16px 16px 16px;padding:.7rem .9rem;font-size:.92rem;line-height:1.75;color:var(--aic-text)}
 .aic-bubble.headline{font-family:var(--aic-ff-mincho);font-size:1.15rem;font-weight:700;line-height:1.55;color:var(--aic-star)}
 .aic-bubble .aic-sub{display:block;font-family:var(--aic-ff-sans);font-size:.78rem;color:var(--aic-muted);margin-top:.4rem;line-height:1.6}
@@ -424,7 +434,8 @@ function aicRender(){
   html += aicState.history.join('');
 
   var isFirstTurn = aicState.history.length === 0;
-  html += '<div class="aic-row bot"'+(isFirstTurn ? '' : ' id="aicContinueRow"')+'><div class="aic-stack">'
+  var themeStackClass = 'aic-stack' + (aicState.phase==='theme' ? ' aic-stack-full' : '');
+  html += '<div class="aic-row bot"'+(isFirstTurn ? '' : ' id="aicContinueRow"')+'><div class="'+themeStackClass+'">'
     + '<div class="aic-bubble headline">'+(isFirstTurn ? 'こんにちは。<br>何について知りたいですか？' : '他にも知りたいことはありますか？')+'</div>'
     + aicTimeTag()
     + (aicState.phase==='theme'
@@ -444,7 +455,8 @@ function aicRender(){
   }
 
   if(aicState.theme==='marriage'){
-    html += '<div class="aic-row bot"><div class="aic-stack">'
+    var marriageStackClass = 'aic-stack' + (aicState.phase==='marriageChoice' ? ' aic-stack-full' : '');
+    html += '<div class="aic-row bot"><div class="'+marriageStackClass+'">'
       + '<div class="aic-bubble">結婚について知りたいことを選んでください。</div>'
       + (aicState.phase==='marriageChoice'
           ? '<div class="aic-qr grid2">'+AIC_MARRIAGE_CHOICES.map(function(c){return '<button type="button" class="aic-qr-btn" data-aic-marriage="'+c.key+'">'+aicEsc(c.name)+'</button>';}).join('')+'</div>'
@@ -577,9 +589,31 @@ function aicSubmit(){
 }
 
 // ── モーダル開閉 ──
-function aicOpen(){
+// anchorRect: 占いチャットタブ（#aftWrap）のgetBoundingClientRect()。
+// PC幅（461px以上）の場合のみ、タブの縦中心に合わせてモーダルのtopを動的に設定する。
+// anchorRectが渡されない場合（ドロワー「AI鑑定チャット」項目からの起動等）や
+// スマホ幅の場合は、CSSのデフォルト位置（top:5vh／top:8vh）をそのまま使う。
+function aicOpen(anchorRect){
   var overlay = document.getElementById('aicOverlay');
-  if(overlay) overlay.classList.add('open');
+  if(!overlay) return;
+  var modal = overlay.querySelector('.aic-modal');
+  if(modal){
+    var isPcWidth = window.matchMedia('(min-width:461px)').matches;
+    if(anchorRect && isPcWidth){
+      // .aic-modalはdisplay:noneにはならず常時レイアウトされている（非表示はopacity:0で
+      // 行っている）ため、offsetHeightは呼び出し時点で必ず実測値を返す。
+      // 右側のフォールバック（window.innerHeight*0.9）は実質到達しないが、
+      // 万一CSSが変更されoffsetHeightが0になるケースに備えて保持する。
+      var modalHeight = modal.offsetHeight || Math.round(window.innerHeight * 0.9);
+      var centerY = anchorRect.top + anchorRect.height / 2;
+      var top = centerY - modalHeight / 2;
+      top = Math.max(12, Math.min(top, window.innerHeight - modalHeight - 12));
+      modal.style.top = top + 'px';
+    } else {
+      modal.style.top = '';
+    }
+  }
+  overlay.classList.add('open');
 }
 function aicClose(){
   var overlay = document.getElementById('aicOverlay');
@@ -587,8 +621,8 @@ function aicClose(){
   aicState = aicInitialState();
   aicRender();
 }
-window.openAiChatModal = function(){
-  aicOpen();
+window.openAiChatModal = function(anchorRect){
+  aicOpen(anchorRect);
   aicRender();
 };
 
