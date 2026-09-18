@@ -44,14 +44,19 @@ declare(strict_types=1);
 
 .aic-overlay{position:fixed;inset:0;z-index:9990;background:rgba(2,4,9,.94);backdrop-filter:blur(7px);opacity:0;pointer-events:none;transition:opacity .25s}
 .aic-overlay.open{opacity:1;pointer-events:all}
-.aic-modal{position:fixed;left:0;right:0;margin:0 auto;max-width:460px;bottom:-100%;top:8vh;display:flex;flex-direction:column;overflow:hidden;isolation:isolate;background:radial-gradient(140% 46% at 50% 0%,rgba(58,80,140,.24),transparent 68%),linear-gradient(180deg,#070a13,var(--aic-plate) 55%);border:1px solid var(--aic-rule-2);border-radius:20px 20px 0 0;box-shadow:0 -20px 60px rgba(0,0,0,.8),inset 0 1px 0 rgba(232,206,147,.14);opacity:0;transition:bottom .34s cubic-bezier(.22,1,.3,1),opacity .34s;color:var(--aic-text)}
+.aic-modal{position:fixed;left:0;right:0;margin:0 auto;width:min(460px,100vw);max-width:460px;bottom:-100%;top:8vh;display:flex;flex-direction:column;overflow:hidden;isolation:isolate;background:radial-gradient(140% 46% at 50% 0%,rgba(58,80,140,.24),transparent 68%),linear-gradient(180deg,#070a13,var(--aic-plate) 55%);border:1px solid var(--aic-rule-2);border-radius:20px 20px 0 0;box-shadow:0 -20px 60px rgba(0,0,0,.8),inset 0 1px 0 rgba(232,206,147,.14);opacity:0;transition:bottom .34s cubic-bezier(.22,1,.3,1),opacity .34s;color:var(--aic-text)}
 .aic-overlay.open .aic-modal{bottom:0;opacity:1}
 /* PC幅（461px以上）：占いチャットタブの位置に連動して開くため、下からのせり上がり
    ではなく右からの水平スライドインに変更する。位置計算のためheightを固定値にし、
    topはJS（aicOpen）でタブの位置に応じてインラインスタイルとして動的に設定する
-   （anchorRectが渡されない場合はこのtop:5vhがデフォルト値として使われる）。 */
+   （anchorRectが渡されない場合はこのtop:5vhがデフォルト値として使われる）。
+   このブレークポイントではleft:autoになりwidthの明示指定が無いと、position:fixed要素の
+   幅がCSS仕様上「shrink-to-fit」（内容物の幅に応じた可変値）で計算されてしまい、
+   テーマ選択画面（2カラムのカードグリッドを含む）だけパネル自体の横幅が
+   通常の会話画面より広くなる不具合があったため、widthを明示して内容物に依存しない
+   固定値にする（右16px・左16px相当の余白を確保しつつ460px上限は維持）。 */
 @media(min-width:461px){
-  .aic-modal{top:5vh;bottom:auto;height:min(72vh,520px);border-radius:20px;right:16px;left:auto;margin:0;transform:translateX(calc(100% + 16px));transition:transform .34s cubic-bezier(.22,1,.3,1),opacity .34s}
+  .aic-modal{top:5vh;bottom:auto;height:min(72vh,520px);border-radius:20px;right:16px;left:auto;margin:0;width:min(460px,calc(100vw - 32px));transform:translateX(calc(100% + 16px));transition:transform .34s cubic-bezier(.22,1,.3,1),opacity .34s}
   .aic-overlay.open .aic-modal{bottom:auto;transform:translateX(0)}
 }
 .aic-grabber{width:34px;height:4px;border-radius:2px;background:var(--aic-rule-2);margin:.6rem auto -.1rem;flex-shrink:0}
