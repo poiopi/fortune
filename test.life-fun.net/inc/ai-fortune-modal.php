@@ -17,7 +17,7 @@ declare(strict_types=1);
  * - モックアップは「スマホ画面のデモ枠(.frame)」の中にposition:absoluteで
  *   モーダルを描画していたが、実サイトには枠が存在しないため、
  *   position:fixedで実ビューポート基準に描画する。
- * - デスクトップ幅ではモーダル本体の横幅をmax-width:460pxで中央寄せする
+ * - デスクトップ幅ではモーダル本体の横幅をmax-width:380pxで中央寄せする
  *   （モバイル幅ではモックアップ同様、画面下からせり上がるボトムシートになる）。
  * - 星座リング装飾（arc）はモックアップと同一の計算式で静的に1回だけ生成する
  *   （render()のたびに再生成する必要がないため）。
@@ -54,9 +54,11 @@ declare(strict_types=1);
    幅がCSS仕様上「shrink-to-fit」（内容物の幅に応じた可変値）で計算されてしまい、
    テーマ選択画面（2カラムのカードグリッドを含む）だけパネル自体の横幅が
    通常の会話画面より広くなる不具合があったため、widthを明示して内容物に依存しない
-   固定値にする（右16px・左16px相当の余白を確保しつつ460px上限は維持）。 */
+   固定値にする（右16px・左16px相当の余白を確保しつつ380px上限は維持。380pxは
+   _scratch/ai-fortune-chat-mockup.htmlの.frame{width:min(94vw,380px)}に合わせた
+   正本の値。旧460pxはshrink-to-fitバグ修正時の暫定値だった）。 */
 @media(min-width:461px){
-  .aic-modal{top:5vh;bottom:auto;height:min(72vh,520px);border-radius:20px;right:16px;left:auto;margin:0;width:min(460px,calc(100vw - 32px));transform:translateX(calc(100% + 16px));transition:transform .34s cubic-bezier(.22,1,.3,1),opacity .34s}
+  .aic-modal{top:5vh;bottom:auto;height:min(72vh,520px);border-radius:20px;right:16px;left:auto;margin:0;width:min(380px,calc(100vw - 32px));transform:translateX(calc(100% + 16px));transition:transform .34s cubic-bezier(.22,1,.3,1),opacity .34s}
   .aic-overlay.open .aic-modal{bottom:auto;transform:translateX(0)}
 }
 .aic-grabber{width:34px;height:4px;border-radius:2px;background:var(--aic-rule-2);margin:.6rem auto -.1rem;flex-shrink:0}
@@ -118,7 +120,7 @@ declare(strict_types=1);
 
 .aic-picker-overlay{position:fixed;inset:0;background:rgba(2,4,9,.7);z-index:9995;opacity:0;pointer-events:none;transition:opacity .2s}
 .aic-picker-overlay.open{opacity:1;pointer-events:all}
-.aic-picker-sheet{position:fixed;left:0;right:0;bottom:-100%;z-index:9996;background:#12172a;border:1px solid var(--aic-rule-2);border-top-left-radius:16px;border-top-right-radius:16px;box-shadow:0 -14px 40px rgba(0,0,0,.6);transition:bottom .28s cubic-bezier(.22,1,.3,1);max-height:60%;display:flex;flex-direction:column;max-width:460px;margin:0 auto;font-family:var(--aic-ff-sans)}
+.aic-picker-sheet{position:fixed;left:0;right:0;bottom:-100%;z-index:9996;background:#12172a;border:1px solid var(--aic-rule-2);border-top-left-radius:16px;border-top-right-radius:16px;box-shadow:0 -14px 40px rgba(0,0,0,.6);transition:bottom .28s cubic-bezier(.22,1,.3,1);max-height:60%;display:flex;flex-direction:column;max-width:380px;margin:0 auto;font-family:var(--aic-ff-sans)}
 .aic-picker-overlay.open .aic-picker-sheet{bottom:0}
 .aic-picker-title{font-family:var(--aic-ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--aic-brass);text-transform:uppercase;padding:.9rem 1rem .5rem;flex-shrink:0}
 .aic-picker-list{overflow-y:auto;padding:.25rem .5rem .8rem}
@@ -141,6 +143,7 @@ declare(strict_types=1);
 .aic-result-badge{display:inline-block;font-family:var(--aic-ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--aic-brass);text-transform:uppercase;background:rgba(232,206,147,.08);border:1px solid var(--aic-rule-2);border-radius:999px;padding:.22rem .65rem}
 .aic-angle-block{border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:.65rem .75rem;background:rgba(255,255,255,.02)}
 .aic-angle-title{font-family:var(--aic-ff-mincho);font-size:.8rem;color:var(--aic-star);margin:0 0 .35rem;display:flex;align-items:center;gap:.4rem}
+.aic-angle-subtitle{font-family:var(--aic-ff-mono);font-size:.62rem;letter-spacing:.06em;color:var(--aic-muted);margin:0 0 .2rem;text-transform:uppercase}
 .aic-angle-list{margin:0;padding-left:1rem;display:flex;flex-direction:column;gap:.3rem}
 .aic-angle-list li{font-size:.76rem;color:var(--aic-text);line-height:1.6}
 .aic-stars{font-size:1.1rem;letter-spacing:.08em}
@@ -379,14 +382,16 @@ function aicResultTurn(){
     bodyHtml = '<div class="aic-stars" data-aic-stars></div><div class="aic-score-label" data-aic-text="label"></div><p class="aic-result-body" style="margin-top:.5rem" data-aic-text="reasonText"></p>';
   } else if(t==='timing'){
     bodyHtml = '<div class="aic-angle-block"><p class="aic-angle-title">今年の運気</p><p class="aic-result-body" data-aic-text="yearText"></p></div>'
-      + '<div class="aic-angle-block"><p class="aic-angle-title">今の10年の運気</p><p class="aic-result-body" data-aic-text="decadeGodText"></p><p class="aic-result-body" data-aic-text="decadeJuniText"></p></div>';
+      + '<div class="aic-angle-block"><p class="aic-angle-title">今の10年の運気</p>'
+      + '<p class="aic-angle-subtitle">傾向</p><p class="aic-result-body" data-aic-text="decadeGodText"></p>'
+      + '<p class="aic-angle-subtitle" style="margin-top:.5rem">エネルギーの流れ</p><p class="aic-result-body" data-aic-text="decadeJuniText"></p></div>';
   } else if(t==='zense'){
     bodyHtml = '<p class="aic-result-body" data-aic-text="message"></p><p class="aic-mission-line">今世の使命：<span data-aic-text="mission"></span></p>';
   } else {
     bodyHtml = '<p class="aic-result-body" data-aic-text="resultText"></p>';
   }
   var link = AIC_RESULT_LINKS[t];
-  return '<div class="aic-row bot"><div class="aic-stack" style="max-width:100%">'
+  return '<div class="aic-row bot" id="'+aicEsc(aicState.resultRowId)+'"><div class="aic-stack" style="max-width:100%">'
     + '<div class="aic-bubble headline">'+aicEsc(AIC_RESULT_HEADINGS[t])+'、読み解きました' + (badge?'<span class="aic-sub"><span class="aic-result-badge" data-aic-text="star"></span></span>':'') + '</div>'
     + aicTimeTag()
     + '<div class="aic-stack" style="max-width:100%"><div class="aic-result-wrap" id="'+aicEsc(aicState.resultId)+'">'+bodyHtml+'</div></div>'
@@ -494,6 +499,14 @@ function aicRender(){
   if(aicState.scrollTarget === 'continue'){
     var continueRow = document.getElementById('aicContinueRow');
     if(continueRow) continueRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if(aicState.scrollTarget === 'result' && aicState.resultRowId){
+    // 結果表示時は「最下部へジャンプ」ではなく、新しい結果ターンの先頭
+    // （見出しを含む行）が画面上部に来るようscrollIntoViewする。履歴が
+    // 積み上がった2回目以降でも、最下部ジャンプだと見出しが視野外に
+    // 置き去りになるため（「もう一度占う」を繰り返すと再現）。
+    var resultRow = document.getElementById(aicState.resultRowId);
+    if(resultRow) resultRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    else thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
   } else {
     thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
   }
@@ -513,8 +526,33 @@ function aicPhaseStep(){
   return 4;
 }
 
+// PC幅（461px以上）ではモーダルがタブの位置に応じて画面上を移動するため、
+// pickerシート（.aic-picker-sheet、.aic-overlay/.aic-modalとは別ツリーの兄弟要素で
+// 画面全体基準のposition:fixed）を、開くたびにモーダルのgetBoundingClientRect()に
+// 合わせてインラインスタイルで追従させる。スマホ幅では画面全体基準のまま
+// （インラインスタイルをクリアしてCSSのデフォルト位置に戻す）。
+function aicPositionPickerSheet(sheet){
+  if(!sheet) return;
+  var isPcWidth = window.matchMedia('(min-width:461px)').matches;
+  var modal = document.querySelector('.aic-modal');
+  if(isPcWidth && modal){
+    var rect = modal.getBoundingClientRect();
+    sheet.style.left = rect.left + 'px';
+    sheet.style.right = 'auto';
+    sheet.style.width = rect.width + 'px';
+    sheet.style.margin = '0';
+    sheet.style.bottom = Math.max(0, window.innerHeight - rect.bottom) + 'px';
+  } else {
+    sheet.style.left = '';
+    sheet.style.right = '';
+    sheet.style.width = '';
+    sheet.style.margin = '';
+    sheet.style.bottom = '';
+  }
+}
 function aicRenderPicker(){
   var overlay = document.getElementById('aicPickerOverlay');
+  var sheet = overlay ? overlay.querySelector('.aic-picker-sheet') : null;
   var titleEl = document.getElementById('aicPickerTitle');
   var listEl = document.getElementById('aicPickerList');
   if(!overlay) return;
@@ -525,6 +563,7 @@ function aicRenderPicker(){
   listEl.innerHTML = def.list.map(function(v){
     return '<button type="button" class="aic-dd-option'+(String(v)===String(def.current)?' sel':'')+'" data-aic-dd-pick="'+aicState.openDD+'|'+v+'">'+v+def.suffix+'</button>';
   }).join('');
+  aicPositionPickerSheet(sheet);
   overlay.classList.add('open');
   var targetValue = def.current || (aicState.openDD.slice(-2)==='-y' ? '2000' : null);
   if(targetValue){
@@ -578,8 +617,11 @@ function aicSubmit(){
         aicState.phase = 'error';
       } else {
         aicState.resultData = result.data;
-        aicState.resultId = 'aicResultWrap-' + (++aicResultSeq);
+        ++aicResultSeq;
+        aicState.resultId = 'aicResultWrap-' + aicResultSeq;
+        aicState.resultRowId = 'aicResultRow-' + aicResultSeq;
         aicState.phase = 'result';
+        aicState.scrollTarget = 'result';
       }
       aicRender();
     }, wait);
