@@ -46,6 +46,7 @@ require_once __DIR__.'/inc/nav-cards.php';
   --surface:  #120f24;
   --card:     #1a1535;
   --card2:    #221a42;
+  --panel:    #0d0b20;
   --border:   rgba(160,130,220,.15);
   --border2:  rgba(160,130,220,.32);
   --gold:     #c9a84c;
@@ -246,7 +247,7 @@ body {
 .hero-inner {
   position: relative; z-index: 3;
   text-align: center;
-  padding: 1.5rem 1.2rem 0;
+  padding: 1.5rem 1.2rem 7rem;
   max-width: 680px;
   width: 100%;
 }
@@ -288,24 +289,35 @@ body {
 .hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.5rem; }
 .hero-flagship-card {
   position: relative;
-  max-width: 620px;
+  max-width: 640px;
   margin: 0 auto 1.6rem;
-  padding: 1.8rem 1.6rem 1.6rem;
-  border: 1px solid rgba(201,168,76,.45);
-  border-radius: 22px;
-  background: linear-gradient(180deg, rgba(26,21,53,.55) 0%, rgba(18,15,36,.72) 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 0 0 1px rgba(201,168,76,.12) inset, 0 12px 40px rgba(0,0,0,.45);
+  padding: 3.2rem 3rem 2.6rem;
+  border: 1px solid rgba(201,168,76,.35);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 24px 60px rgba(0,0,0,.45);
+  overflow: hidden;
 }
-.hf-eyebrow { display: block; font-family: var(--ff-mono); font-size: .6rem; letter-spacing: .3em; color: var(--gold); text-transform: uppercase; margin-bottom: .5rem; }
-.hf-title { font-family: var(--ff-serif); font-size: 1.25rem; font-weight: 700; color: var(--text); letter-spacing: .06em; margin-bottom: .5rem; }
-.hf-desc { font-size: .8rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.1rem; }
-.hf-steps { display: flex; align-items: center; justify-content: center; gap: .6rem; margin-bottom: 1.3rem; flex-wrap: wrap; }
-.hf-step { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
-.hf-step-icon { font-size: 1.3rem; }
-.hf-step-label { font-family: var(--ff-mono); font-size: .6rem; color: var(--muted); letter-spacing: .04em; white-space: nowrap; }
-.hf-arrow { color: var(--gold); opacity: .6; font-size: .8rem; }
+.hf-corner { position: absolute; width: 220px; height: auto; opacity: .85; pointer-events: none; }
+.hf-corner-tl { top: -8px; left: -8px; }
+.hf-corner-tr { top: -8px; right: -8px; transform: scaleX(-1); }
+.hf-corner-bl { bottom: -8px; left: -8px; transform: scaleY(-1); }
+.hf-corner-br { bottom: -8px; right: -8px; transform: scale(-1,-1); }
+.hf-content { position: relative; }
+.hf-eyebrow { display: block; text-align: center; font-family: var(--ff-mono); font-size: .6rem; letter-spacing: .32em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.6rem; }
+.hf-emblem { width: 150px; margin: 0 auto 1.4rem; }
+.hf-emblem img { width: 100%; height: auto; display: block; filter: drop-shadow(0 0 22px rgba(201,168,76,.22)); }
+.hf-title { text-align: center; font-family: var(--ff-serif); font-size: 1.9rem; font-weight: 700; color: var(--text); letter-spacing: .08em; margin-bottom: .9rem; }
+.hf-desc { text-align: center; margin: 0 auto 1.6rem; max-width: 30rem; font-size: .85rem; line-height: 1.9; color: var(--text-secondary); }
+.hf-tags { display: flex; align-items: center; justify-content: center; gap: .6rem; flex-wrap: wrap; margin-bottom: 2.2rem; }
+.hf-tag { padding: .55rem 1.2rem; border: 1px solid rgba(201,168,76,.4); border-radius: 20px; font-family: var(--ff-mono); font-size: .65rem; letter-spacing: .04em; color: var(--gold-lt); }
+.hf-methods { display: flex; align-items: flex-start; justify-content: center; gap: 2.6rem; margin-bottom: 2.2rem; }
+.hf-method { display: flex; flex-direction: column; align-items: center; gap: .55rem; }
+.hf-method-icon { width: 74px; height: 74px; }
+.hf-method-icon img { width: 100%; height: 100%; object-fit: contain; display: block; filter: drop-shadow(0 3px 10px rgba(0,0,0,.4)); }
+.hf-method-label { font-family: var(--ff-mono); font-size: .65rem; letter-spacing: .04em; color: var(--text-secondary); }
+.hf-cta-wrap { text-align: center; }
+.hf-trust { margin-top: .9rem; font-family: var(--ff-mono); font-size: .62rem; letter-spacing: .04em; color: var(--muted); }
 .btn-gold {
   padding: .78rem 2rem;
   background: linear-gradient(135deg, var(--gold), var(--gold-lt));
@@ -317,9 +329,15 @@ body {
 }
 .btn-gold:hover { opacity: .88; transform: translateY(-2px); }
 @media (max-width: 639px) {
-  .hero-flagship-card { padding: 1.4rem 1.1rem 1.3rem; border-radius: 18px; }
-  .hf-steps { flex-direction: column; gap: .7rem; }
-  .hf-arrow { transform: rotate(90deg); }
+  .hero-flagship-card { padding: 2.4rem 1.3rem 2rem; border-radius: 16px; }
+  .hf-corner { width: 150px; }
+  .hf-emblem { width: 110px; }
+  .hf-title { font-size: 1.4rem; }
+  .hf-desc { font-size: .8rem; }
+  .hf-tags { gap: .4rem; }
+  .hf-tag { padding: .45rem .8rem; font-size: .6rem; }
+  .hf-methods { gap: 1rem; }
+  .hf-method-icon { width: 58px; height: 58px; }
 }
 .hero-pillars { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
 .pillar { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .1em; padding: .28rem .85rem; border: 1px solid rgba(201,168,76,.28); border-radius: 20px; color: rgba(201,168,76,.7); text-decoration: none; display: inline-block; cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
@@ -663,19 +681,31 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <h1 class="hero-h1 h-d3">無料占いポータル</h1>
     <span class="hero-sub h-d4">星と運命の交差点 · 16種類の占術で今を読み解く</span>
     <div class="hero-flagship-card h-d5">
-      <span class="hf-eyebrow">Flagship Reading</span>
-      <div class="hf-title">✨ 三星統合鑑定</div>
-      <p class="hf-desc">西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定。</p>
-      <div class="hf-steps">
-        <div class="hf-step"><span class="hf-step-icon">🔮</span><span class="hf-step-label">何がわかるか</span></div>
-        <span class="hf-arrow">→</span>
-        <div class="hf-step"><span class="hf-step-icon">📝</span><span class="hf-step-label">名前・生年月日を入力</span></div>
-        <span class="hf-arrow">→</span>
-        <div class="hf-step"><span class="hf-step-icon">✨</span><span class="hf-step-label">その場で鑑定結果</span></div>
+      <img class="hf-corner hf-corner-tl" src="/img/hero/corner-single.webp" alt="">
+      <img class="hf-corner hf-corner-tr" src="/img/hero/corner-single.webp" alt="">
+      <img class="hf-corner hf-corner-bl" src="/img/hero/corner-single.webp" alt="">
+      <img class="hf-corner hf-corner-br" src="/img/hero/corner-single.webp" alt="">
+      <div class="hf-content">
+        <span class="hf-eyebrow">Flagship &nbsp;◆&nbsp; Reading</span>
+        <div class="hf-emblem"><img src="/img/hero/hero-astrolabe.webp" alt="西洋占星術・タロット・四柱推命の紋章"></div>
+        <div class="hf-title">三星統合鑑定</div>
+        <p class="hf-desc">西洋占星術×タロット×四柱推命の三位一体鑑定。性格・恋愛・仕事・これからの流れを、3つの占術から読み解きます。</p>
+        <div class="hf-tags">
+          <span class="hf-tag">性格・自分</span>
+          <span class="hf-tag">恋愛・相性</span>
+          <span class="hf-tag">仕事・運気</span>
+          <span class="hf-tag">今後の流れ</span>
+        </div>
+        <div class="hf-methods">
+          <div class="hf-method"><div class="hf-method-icon"><img src="/img/hero/seiza-medallion.webp" alt="西洋占星術"></div><div class="hf-method-label">西洋占星術</div></div>
+          <div class="hf-method"><div class="hf-method-icon"><img src="/img/hero/tarot-medallion.webp" alt="タロット"></div><div class="hf-method-label">タロット</div></div>
+          <div class="hf-method"><div class="hf-method-icon"><img src="/img/hero/shichu-medallion.webp" alt="四柱推命"></div><div class="hf-method-label">四柱推命</div></div>
+        </div>
+        <div class="hf-cta-wrap">
+          <a href="/sansei" class="btn-gold" data-ga-event="cta_click" data-cta-name="hero_flagship_sansei" data-cta-destination="/sansei">三星統合鑑定をはじめる →</a>
+          <div class="hf-trust">名前＋生年月日だけ　｜　約3分　｜　登録不要</div>
+        </div>
       </div>
-      <a href="/sansei" class="btn-gold" data-ga-event="cta_click" data-cta-name="hero_flagship_sansei" data-cta-destination="/sansei">
-        ✨ 三星統合鑑定をはじめる →
-      </a>
     </div>
     <div class="hero-pillars h-d6">
       <?php
