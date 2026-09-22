@@ -247,7 +247,7 @@ body {
 .hero-inner {
   position: relative; z-index: 3;
   text-align: center;
-  padding: 1.5rem 1.2rem 0;
+  padding: 1.5rem 1.2rem 5.5rem;
   max-width: 680px;
   width: 100%;
 }
