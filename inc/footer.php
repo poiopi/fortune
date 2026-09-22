@@ -126,6 +126,7 @@ function render_footer(array $opts = []): void {
   border-left-color:#c9a84c;cursor:default;pointer-events:none
 }
 .fmenu-item-icon{font-size:1.1rem;width:1.4rem;text-align:center;flex-shrink:0}
+button.fmenu-item{background:none;border:none;border-left:2px solid transparent;width:100%;cursor:pointer;text-align:left}
 .fmenu-section-label{
   padding:.5rem 1.4rem .25rem;
   font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.18em;
@@ -199,6 +200,10 @@ function render_footer(array $opts = []): void {
     <button class="fmenu-close-btn" id="fmenuClose">✕</button>
   </div>
   <nav class="fmenu-nav">
+    <div class="fmenu-section-label">AIに相談</div>
+    <button type="button" class="fmenu-item" id="fmenuAiChatBtn">
+      <span class="fmenu-item-icon">🔮</span>AI鑑定チャット
+    </button>
     <?php
     echo '<div class="fmenu-section-label">占い一覧</div>';
     foreach($_NAV_PAGES as $key => $pg):
@@ -229,6 +234,9 @@ function render_footer(array $opts = []): void {
   </div>
   <span class="fmenu-btn-label">MENU</span>
 </button>
+
+<?php require __DIR__.'/ai-fortune-modal.php'; ?>
+<?php require __DIR__.'/ai-fortune-tab.php'; ?>
 
 <script>window.GA_FORTUNE_TYPE = <?= json_encode(
   !empty($currentSlug) ? $currentSlug :
@@ -333,6 +341,14 @@ function copyShareUrl(){
   overlay.addEventListener('click',close);
   closeBtn.addEventListener('click',close);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+
+  var aiChatBtn = document.getElementById('fmenuAiChatBtn');
+  if (aiChatBtn) {
+    aiChatBtn.addEventListener('click', function(){
+      close();
+      if (typeof openAiChatModal === 'function') openAiChatModal();
+    });
+  }
 
   // コンテンツ衝突対策（Stage3）：スクロール中のみ.fmenu-compactを付与して縮小・半透明化し、
   // スクロール停止から500ms後、またはボタンへのhover/touch時に元のサイズへ戻す。
