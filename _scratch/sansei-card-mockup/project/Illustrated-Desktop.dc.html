@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>三星統合鑑定 イラスト実装案（デスクトップ）</title>
+<script src="./support.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+  body{margin:0;background:#060410;}
+  a{text-decoration:none;}
+</style>
+</helmet>
+
+<div style="width: 880px; height: 860px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; padding: 40px; font-family: 'Zen Kaku Gothic New', sans-serif; background: linear-gradient(180deg, #0a0818 0%, #060410 100%);">
+
+  <div style="position: relative; width: 720px; box-sizing: border-box; padding: 60px 64px 52px; border-radius: 16px; border: 1px solid rgba(201,168,76,.35); background: #0d0b20; box-shadow: 0 24px 60px rgba(0,0,0,.45); overflow: hidden;">
+
+    <img src="/_blob/2bc6488df6dc6526213646d35139f223" alt="" style="position: absolute; top: -8px; left: -8px; width: 260px; height: auto; opacity: .85; pointer-events: none;">
+    <img src="/_blob/2bc6488df6dc6526213646d35139f223" alt="" style="position: absolute; top: -8px; right: -8px; width: 260px; height: auto; opacity: .85; pointer-events: none; transform: scaleX(-1);">
+    <img src="/_blob/2bc6488df6dc6526213646d35139f223" alt="" style="position: absolute; bottom: -8px; left: -8px; width: 260px; height: auto; opacity: .85; pointer-events: none; transform: scaleY(-1);">
+    <img src="/_blob/2bc6488df6dc6526213646d35139f223" alt="" style="position: absolute; bottom: -8px; right: -8px; width: 260px; height: auto; opacity: .85; pointer-events: none; transform: scale(-1,-1);">
+
+    <div style="position: relative;">
+
+      <div style="text-align: center; margin-bottom: 26px;">
+        <span style="display: inline-block; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .32em; color: #c9a84c; text-transform: uppercase;">Flagship &nbsp;◆&nbsp; Reading</span>
+      </div>
+
+      <div style="width: 172px; margin: 0 auto 22px;">
+        <img src="/_blob/c16b4f9ff6b639272d5949d899ad036b" alt="西洋占星術・タロット・四柱推命の紋章" style="width: 100%; height: auto; display: block; filter: drop-shadow(0 0 22px rgba(201,168,76,.22));">
+      </div>
+
+      <div style="text-align: center;">
+        <div style="font-family: 'Shippori Mincho', serif; font-size: 34px; font-weight: 700; color: #f1ecdc; letter-spacing: .08em; margin-bottom: 16px;">三星統合鑑定</div>
+        <p style="margin: 0 auto 28px; max-width: 480px; font-size: 14px; line-height: 1.9; color: #b7acd7;">西洋占星術×タロット×四柱推命の三位一体鑑定。性格・恋愛・仕事・これからの流れを、3つの占術から読み解きます。</p>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;">
+        <span style="padding: 9px 20px; border: 1px solid rgba(201,168,76,.4); border-radius: 20px; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #e8d48a;">性格・自分</span>
+        <span style="padding: 9px 20px; border: 1px solid rgba(201,168,76,.4); border-radius: 20px; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #e8d48a;">恋愛・相性</span>
+        <span style="padding: 9px 20px; border: 1px solid rgba(201,168,76,.4); border-radius: 20px; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #e8d48a;">仕事・運気</span>
+        <span style="padding: 9px 20px; border: 1px solid rgba(201,168,76,.4); border-radius: 20px; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #e8d48a;">今後の流れ</span>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; justify-content: center; gap: 48px; margin-bottom: 40px;">
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+          <div style="width: 86px; height: 86px;">
+            <img src="/_blob/b6d33bb16ce5e23d94fa1ceb9d24edc8" alt="西洋占星術" style="width: 100%; height: 100%; object-fit: contain; display: block; filter: drop-shadow(0 3px 10px rgba(0,0,0,.4));">
+          </div>
+          <div style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #d8d1ea;">西洋占星術</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+          <div style="width: 86px; height: 86px;">
+            <img src="/_blob/12a5dc8bc499670b948b800e60905b6c" alt="タロット" style="width: 100%; height: 100%; object-fit: contain; display: block; filter: drop-shadow(0 3px 10px rgba(0,0,0,.4));">
+          </div>
+          <div style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #d8d1ea;">タロット</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+          <div style="width: 86px; height: 86px;">
+            <img src="/_blob/e90575afcbe30a7914c213afbcfed08f" alt="四柱推命" style="width: 100%; height: 100%; object-fit: contain; display: block; filter: drop-shadow(0 3px 10px rgba(0,0,0,.4));">
+          </div>
+          <div style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #d8d1ea;">四柱推命</div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center;">
+        <a href="/sansei" style="display: inline-block; padding: 16px 54px; background: linear-gradient(135deg, #c9a84c, #e8d48a); border-radius: 4px; color: #1a1204; font-family: 'Shippori Mincho', serif; font-size: 16px; font-weight: 700; letter-spacing: .12em;">三星統合鑑定をはじめる　→</a>
+        <div style="margin-top: 16px; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .04em; color: #8a7db5;">名前＋生年月日だけ　｜　約3分　｜　登録不要</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":880,"height":860}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
