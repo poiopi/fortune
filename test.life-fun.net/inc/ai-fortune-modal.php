@@ -513,6 +513,13 @@ function aicRender(){
     var resultRow = document.getElementById(aicState.resultRowId);
     if(resultRow) resultRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
     else thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
+  } else if(isFirstTurn && aicState.phase==='theme'){
+    // 初回の挨拶＋テーマ一覧表示時のみ自動スクロールしない。スレッド先頭が
+    // 挨拶文なのでそのままでよい。以前はここが素通りしてscrollHeightまで
+    // 飛んでいたため、テーマ一覧が長い場合に挨拶文が画面外に置き去りに
+    // なっていた。ただしphaseが'input'/'loading'等に進んだ後まで抑制すると、
+    // 初回ラウンド中ずっとスクロールされず入力欄・送信ボタンが隠れるため、
+    // phase==='theme'の場合に限定する。
   } else {
     thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
   }
@@ -706,8 +713,20 @@ document.addEventListener('click', function(e){
   if(e.target.closest('[data-aic-retry-input]')){ aicState.phase='input'; aicRender(); return; }
   if(e.target.closest('[data-aic-retry]')){
     var pastThread = document.getElementById('aicThread');
+    var fullHtml = pastThread ? pastThread.innerHTML : '';
+    // aicRender()は毎回 history.join('') を先頭に据えてhtmlを組み立てているため、
+    // fullHtmlのうち既にhistoryへ入っている分（priorHtml）を差し引き、今回新しく
+    // 追加された部分だけをhistoryにpushする。差し引かずに丸ごとpushすると、
+    // 「もう一度占う」を繰り返すたびに過去のhistoryが二重・三重に積み重なり、
+    // aicResultWrap-N等のidがDOM内に複数出現する不具合になっていた。
+    var priorHtml = aicState.history.join('');
+    // fullHtmlの先頭はpriorHtmlと一致するはず（aicRender()の構成上）。
+    // 一致しない想定外のケースは、fullHtml全体をpushすると過去history分も
+    // 巻き込んで二重・三重に積み重なる不具合を再現するため、今回分の
+    // history追記自体をスキップする（continueRowIdの更新だけは行う）。
+    var newPortion = (fullHtml.indexOf(priorHtml) === 0) ? fullHtml.slice(priorHtml.length) : null;
     var tmp = document.createElement('div');
-    tmp.innerHTML = pastThread ? pastThread.innerHTML : '';
+    tmp.innerHTML = newPortion || '';
     tmp.querySelectorAll('[data-aic-retry],[data-aic-back],[data-aic-retry-input]').forEach(function(btn){
       var row = btn.closest('.aic-qr') || btn;
       row.remove();
@@ -715,7 +734,9 @@ document.addEventListener('click', function(e){
     ++aicContinueSeq;
     var newContinueRowId = 'aicContinueRow-' + aicContinueSeq;
     aicState = aicInitialState(true);
-    aicState.history.push(tmp.innerHTML);
+    if(newPortion !== null){
+      aicState.history.push(tmp.innerHTML); // 新規追加分のみ。不一致時はスキップ（重複回避を優先）
+    }
     aicState.continueRowId = newContinueRowId;
     aicState.scrollTarget = 'continue';
     aicRender();
