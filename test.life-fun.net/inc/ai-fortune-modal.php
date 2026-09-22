@@ -60,6 +60,7 @@ declare(strict_types=1);
 @media(min-width:461px){
   .aic-modal{top:5vh;bottom:auto;height:min(72vh,520px);border-radius:20px;right:16px;left:auto;margin:0;width:min(380px,calc(100vw - 32px));transform:translateX(calc(100% + 16px));transition:transform .34s cubic-bezier(.22,1,.3,1),opacity .34s}
   .aic-overlay.open .aic-modal{bottom:auto;transform:translateX(0)}
+  .aic-picker-sheet{max-width:380px}
 }
 .aic-grabber{width:34px;height:4px;border-radius:2px;background:var(--aic-rule-2);margin:.6rem auto -.1rem;flex-shrink:0}
 .aic-modal-crest{position:absolute;top:-70px;left:50%;transform:translateX(-50%);width:230px;height:230px;opacity:.55;pointer-events:none;z-index:0}
@@ -120,7 +121,7 @@ declare(strict_types=1);
 
 .aic-picker-overlay{position:fixed;inset:0;background:rgba(2,4,9,.7);z-index:9995;opacity:0;pointer-events:none;transition:opacity .2s}
 .aic-picker-overlay.open{opacity:1;pointer-events:all}
-.aic-picker-sheet{position:fixed;left:0;right:0;bottom:-100%;z-index:9996;background:#12172a;border:1px solid var(--aic-rule-2);border-top-left-radius:16px;border-top-right-radius:16px;box-shadow:0 -14px 40px rgba(0,0,0,.6);transition:bottom .28s cubic-bezier(.22,1,.3,1);max-height:60%;display:flex;flex-direction:column;max-width:380px;margin:0 auto;font-family:var(--aic-ff-sans)}
+.aic-picker-sheet{position:fixed;left:0;right:0;bottom:-100%;z-index:9996;background:#12172a;border:1px solid var(--aic-rule-2);border-top-left-radius:16px;border-top-right-radius:16px;box-shadow:0 -14px 40px rgba(0,0,0,.6);transition:bottom .28s cubic-bezier(.22,1,.3,1);max-height:60%;display:flex;flex-direction:column;max-width:460px;margin:0 auto;font-family:var(--aic-ff-sans)}
 .aic-picker-overlay.open .aic-picker-sheet{bottom:0}
 .aic-picker-title{font-family:var(--aic-ff-mono);font-size:.62rem;letter-spacing:.1em;color:var(--aic-brass);text-transform:uppercase;padding:.9rem 1rem .5rem;flex-shrink:0}
 .aic-picker-list{overflow-y:auto;padding:.25rem .5rem .8rem}
@@ -272,6 +273,10 @@ var aicState = null;
 // history配列にHTML文字列として蓄積されるため、固定idだと2周目以降に
 // document.getElementById()が古い履歴側の要素を返してしまう。連番idで一意化する）
 var aicResultSeq = 0;
+// 「他にも知りたいことはありますか？」行（continueRow）のid重複防止用カウンタ。
+// aicResultSeqと同じ問題がaicContinueRow（旧固定id）でも発生するため、
+// 用途混同を避けて専用カウンタを新設し連番idで一意化する。
+var aicContinueSeq = 0;
 function aicInitialState(keepHistory){
   return {
     phase:'theme', theme:null, effectiveTheme:null,
@@ -280,6 +285,7 @@ function aicInitialState(keepHistory){
     your:{y:'',m:'',d:''}, partner:{y:'',m:'',d:''},
     openDD:null, resultData:null, errorMsg:null,
     history: keepHistory ? aicState.history : [],
+    continueRowId: keepHistory ? aicState.continueRowId : null,
     scrollTarget: null
   };
 }
@@ -445,7 +451,7 @@ function aicRender(){
 
   var isFirstTurn = aicState.history.length === 0;
   var themeStackClass = 'aic-stack' + (aicState.phase==='theme' ? ' aic-stack-full' : '');
-  html += '<div class="aic-row bot"'+(isFirstTurn ? '' : ' id="aicContinueRow"')+'><div class="'+themeStackClass+'">'
+  html += '<div class="aic-row bot"'+(isFirstTurn ? '' : ' id="'+aicEsc(aicState.continueRowId)+'"')+'><div class="'+themeStackClass+'">'
     + '<div class="aic-bubble headline">'+(isFirstTurn ? 'こんにちは。<br>何について知りたいですか？' : '他にも知りたいことはありますか？')+'</div>'
     + aicTimeTag()
     + (aicState.phase==='theme'
@@ -496,8 +502,8 @@ function aicRender(){
 
   if(aicState.phase==='result') aicFillResultData();
 
-  if(aicState.scrollTarget === 'continue'){
-    var continueRow = document.getElementById('aicContinueRow');
+  if(aicState.scrollTarget === 'continue' && aicState.continueRowId){
+    var continueRow = document.getElementById(aicState.continueRowId);
     if(continueRow) continueRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } else if(aicState.scrollTarget === 'result' && aicState.resultRowId){
     // 結果表示時は「最下部へジャンプ」ではなく、新しい結果ターンの先頭
@@ -706,8 +712,11 @@ document.addEventListener('click', function(e){
       var row = btn.closest('.aic-qr') || btn;
       row.remove();
     });
+    ++aicContinueSeq;
+    var newContinueRowId = 'aicContinueRow-' + aicContinueSeq;
     aicState = aicInitialState(true);
     aicState.history.push(tmp.innerHTML);
+    aicState.continueRowId = newContinueRowId;
     aicState.scrollTarget = 'continue';
     aicRender();
     return;
