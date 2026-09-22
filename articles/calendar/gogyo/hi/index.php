@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/gogyo/hi/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="五行「火（か）」の意味・性質・ラッキーカラー・相性を解説。情熱と活力のエネルギーを持つ火のエネルギーを日常に取り入れる方法を紹介します。">
   <title>五行「火（か）」とは？意味とラッキーカラーをわかりやすく解説</title>

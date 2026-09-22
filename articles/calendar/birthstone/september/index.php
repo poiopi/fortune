@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthstone/september/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="9月の誕生石サファイアの石言葉・特徴・魅力をわかりやすく解説。「誠実、慈愛」を象徴する宝石の意味とおすすめの身につけ方を紹介します。">
   <title>9月の誕生石はサファイア｜石言葉と魅力をわかりやすく解説</title>

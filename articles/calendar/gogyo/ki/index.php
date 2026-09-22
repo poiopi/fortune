@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/gogyo/ki/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="五行「木（もく）」の意味・性質・ラッキーカラー・相性を解説。成長と発展のエネルギーを持つ木のエネルギーを日常に取り入れる方法を紹介します。">
   <title>五行「木（もく）」とは？意味とラッキーカラーをわかりやすく解説</title>

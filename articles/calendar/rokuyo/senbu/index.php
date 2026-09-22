@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/senbu/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="六曜「先負」の意味・由来・過ごし方を解説。午前は凶、午後は吉とされる先負の日にすべきこと・避けるべきことをわかりやすく紹介します。">
   <title>先負（せんぶ）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>

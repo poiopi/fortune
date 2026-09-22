@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/moon/jougen/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="上弦の月の意味・スピリチュアルな解釈・おすすめの過ごし方を解説。決断と行動を象徴する半月にすべきことを紹介します。">
   <title>上弦の月とは？意味と過ごし方をわかりやすく解説｜月相ガイド</title>
