@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/zense/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="前世診断とは何か、前世・来世・カルマの概念と前世診断の楽しみ方をわかりやすく解説。">
-  <title>前世診断とは？前世の意味と魂の記憶をわかりやすく解説</title>
+  <meta name="description" content="前世診断・カルマ（業）診断とは何か、前世・輪廻転生・カルマの意味と、診断結果の読み方・楽しみ方をわかりやすく解説。">
+  <title>前世・カルマ診断とは？前世の意味と魂の記憶をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

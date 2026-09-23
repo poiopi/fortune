@@ -16,7 +16,7 @@ require_once __DIR__.'/inc/mbti-data.php';
 <link rel="canonical" href="https://life-fun.net/mbti" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MBTI×星座で導く性格診断。10の質問に答えてあなたの本質タイプと星座の組み合わせ運勢を診断します。">
-<title>MBTI×星座 性格診断｜三星統合鑑定</title>
+<title>MBTI×星座診断｜あなたの組み合わせを10問で無料診断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 

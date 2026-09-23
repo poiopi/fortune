@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/sanmei/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="算命学とは何か、元命・主星・従星・十大主星・五行バランスの意味と計算方法をわかりやすく解説。四柱推命との違いも紹介。">
+  <meta name="description" content="元命とは何かを十大主星の一覧でわかりやすく解説。算命学の主星・従星・五行バランスの意味と計算方法、四柱推命との違いも紹介。">
   <title>算命学とは？元命・主星・従星の意味と計算方法をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
