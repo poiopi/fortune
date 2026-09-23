@@ -25,10 +25,11 @@ function render_footer(array $opts = []): void {
   echo '<div class="sf-col"><p class="sf-heading">解説ガイド</p><ul>';
   echo '<li><a href="/articles/">占い解説ガイド</a></li>';
   foreach ($articles as $s => $p) {
+    $_artLabel = ($p['article_name'] ?? $p['name']).'とは';
     if ($s === $slug) {
-      echo '<li><span style="color:var(--muted)">'.$p['name'].'とは</span></li>';
+      echo '<li><span style="color:var(--muted)">'.$_artLabel.'</span></li>';
     } else {
-      echo '<li><a href="'.htmlspecialchars($p['article']).'">'.$p['name'].'とは</a></li>';
+      echo '<li><a href="'.htmlspecialchars($p['article']).'">'.$_artLabel.'</a></li>';
     }
   }
   echo '</ul></div>';
