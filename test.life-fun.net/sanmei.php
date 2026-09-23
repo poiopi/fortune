@@ -176,9 +176,10 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .tool-guide .tg-point{color:var(--text);font-weight:500;margin:.9rem 0 .3rem}
 .tool-guide ul{padding-left:1.2rem;margin-bottom:.6rem}
 .tool-guide .tg-table-wrap{overflow-x:auto;margin:.4rem 0 .8rem}
-.tool-guide table{width:100%;min-width:320px;border-collapse:collapse;font-family:var(--ff-sans);font-size:.82rem}
+.tool-guide table{width:100%;border-collapse:collapse;font-family:var(--ff-sans);font-size:.82rem}
 .tool-guide th,.tool-guide td{border-bottom:1px solid var(--border);padding:.5rem .6rem;text-align:left;vertical-align:top;color:rgba(232,226,245,.85)}
-.tool-guide th{color:var(--gold);font-weight:500;white-space:nowrap}
+.tool-guide th{color:var(--gold);font-weight:500}
+.tool-guide tbody th{white-space:nowrap}
 .tool-guide dt{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--text);margin-top:1rem}
 .tool-guide dt:first-child{margin-top:0}
 .tool-guide dd{font-family:var(--ff-sans);font-size:.86rem;color:rgba(232,226,245,.78);line-height:1.9;margin:.25rem 0 0}
