@@ -138,7 +138,7 @@ ob_start();
 
   <div class="art-hero">
     <span class="art-label">MBTI · 完全ガイド</span>
-    <h1>MBTI診断とは？<br>16タイプの性格と星座の組み合わせをわかりやすく解説</h1>
+    <h1>MBTI×星座の組み合わせとは？<br>16タイプ×12星座・192通りの性格の見方</h1>
     <p class="art-lead">MBTI（Myers-Briggs Type Indicator）は、ユング心理学をベースに開発された世界最大規模の性格タイプ診断です。E/I・S/N・T/F・J/Pの4軸16タイプで性格傾向を把握し、星座占いと組み合わせることで、より立体的な自己理解が得られます。</p>
   </div>
 
