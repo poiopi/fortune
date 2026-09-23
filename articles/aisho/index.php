@@ -216,7 +216,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <?php
     $relatedItems = [
       ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
-      ['label'=>'MBTI診断とは', 'title'=>'16タイプの性格と4つの指標を解説 →', 'url'=>'/articles/mbti/'],
+      ['label'=>'MBTI×星座の組み合わせとは', 'title'=>'16タイプの性格と4つの指標を解説 →', 'url'=>'/articles/mbti/'],
       ['label'=>'数秘術とは', 'title'=>'運命数で二人の相性を深掘り →', 'url'=>'/articles/numerology/'],
       ['label'=>'タロット占いとは', 'title'=>'二人の関係をタロットで読む →', 'url'=>'/articles/tarot/'],
     ];

@@ -126,7 +126,7 @@ ob_start();
       ['label'=>'守護霊診断', 'title'=>'あなたの守護霊タイプを診断する →', 'url'=>'/guardian'],
       ['label'=>'守護霊ガイド', 'title'=>'守護霊・守護獣の意味をわかりやすく解説 →', 'url'=>'/articles/guardian/'],
       ['label'=>'三星統合鑑定', 'title'=>'タロット×星座×数秘で深読みする →', 'url'=>'/'],
-      ['label'=>'前世診断とは', 'title'=>'前世・輪廻転生・カルマの意味を解説 →', 'url'=>'/articles/zense/'],
+      ['label'=>'前世・カルマ診断とは', 'title'=>'前世・輪廻転生・カルマの意味を解説 →', 'url'=>'/articles/zense/'],
     ];
     require __DIR__.'/../../../inc/article-related.php';
     ?>

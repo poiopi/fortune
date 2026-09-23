@@ -16,7 +16,7 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/moon/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="新月・満月など月の満ち欠け（月相）の意味とスピリチュアルな解釈をわかりやすく解説。8つの月相の特徴とおすすめの過ごし方を紹介します。">
+  <meta name="description" content="新月・三日月・上弦・満月など8つの月相の意味と、時期ごとのおすすめの過ごし方を一覧で解説。月の満ち欠け（月相）の基本とスピリチュアルな解釈も紹介します。">
   <title>月の満ち欠け（月相）とは？8つの月相の意味を完全解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">

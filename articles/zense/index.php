@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/zense/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="前世診断とは何か、前世・来世・カルマの概念と前世診断の楽しみ方をわかりやすく解説。">
-  <title>前世診断とは？前世の意味と魂の記憶をわかりやすく解説</title>
+  <meta name="description" content="前世診断・カルマ（業）診断とは何か、前世・輪廻転生・カルマの意味と、診断結果の読み方・楽しみ方をわかりやすく解説。">
+  <title>前世・カルマ診断とは？前世の意味と魂の記憶をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -110,7 +110,7 @@ ob_start();
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"前世診断とは","item":"https://life-fun.net/articles/zense/"}
+      {"@type":"ListItem","position":3,"name":"前世・カルマ診断とは","item":"https://life-fun.net/articles/zense/"}
     ]
   }
   </script>
@@ -126,12 +126,12 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>前世診断とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>前世・カルマ診断とは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">PAST LIFE · 完全ガイド</span>
-    <h1>前世診断とは？<br>前世の意味と魂の記憶をわかりやすく解説</h1>
+    <h1>前世・カルマ診断とは？<br>前世の意味と魂の記憶をわかりやすく解説</h1>
     <p class="art-lead">前世診断とは、誕生日や性格的傾向をもとに「前世でどのような人生を生きたか」を読み解く占いです。輪廻転生・カルマという概念とともに、今世の自分を深く見つめ直すユニークなツールとして世界中で楽しまれています。</p>
   </div>
 

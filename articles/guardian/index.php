@@ -265,7 +265,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <?php
     $relatedItems = [
       ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
-      ['label'=>'前世診断とは', 'title'=>'前世・輪廻転生・カルマの意味を解説 →', 'url'=>'/articles/zense/'],
+      ['label'=>'前世・カルマ診断とは', 'title'=>'前世・輪廻転生・カルマの意味を解説 →', 'url'=>'/articles/zense/'],
       ['label'=>'数秘術とは', 'title'=>'誕生日から運命数を読み解く →', 'url'=>'/articles/numerology/'],
       ['label'=>'タロット占いとは', 'title'=>'22枚の大アルカナの意味と読み方 →', 'url'=>'/articles/tarot/'],
     ];

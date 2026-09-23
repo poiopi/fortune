@@ -146,7 +146,7 @@ ob_start();
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"MBTI診断とは","item":"https://life-fun.net/articles/mbti/"},
+      {"@type":"ListItem","position":3,"name":"MBTI×星座の組み合わせとは","item":"https://life-fun.net/articles/mbti/"},
       {"@type":"ListItem","position":4,"name":"<?= htmlspecialchars($type['code'].'（'.$type['name'].'）') ?>","item":"https://life-fun.net/articles/mbti/<?= $type['slug'] ?>/"}
     ]
   }
@@ -166,7 +166,7 @@ ob_start();
   <nav class="breadcrumb">
     <a href="/">占いPortal</a><span>›</span>
     <a href="/articles/">占い解説ガイド</a><span>›</span>
-    <a href="/articles/mbti/">MBTI診断とは</a><span>›</span>
+    <a href="/articles/mbti/">MBTI×星座の組み合わせとは</a><span>›</span>
     <?= htmlspecialchars($type['code'].'（'.$type['name'].'）') ?>
   </nav>
 
@@ -315,7 +315,7 @@ ob_start();
     <h2>関連コンテンツ</h2>
     <?php
     $relatedItems = [
-      ['label'=>'MBTI診断とは', 'title'=>'16タイプ完全ガイドを読む →', 'url'=>'/articles/mbti/'],
+      ['label'=>'MBTI×星座の組み合わせとは', 'title'=>'16タイプ完全ガイドを読む →', 'url'=>'/articles/mbti/'],
       ['label'=>'数秘術とは',   'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
       ['label'=>'九星気学とは', 'title'=>'生まれ年でわかる9つの気質を解説 →', 'url'=>'/articles/kyusei/'],
       ['label'=>'星座とは',     'title'=>'12星座の特徴と相性を解説 →', 'url'=>'/articles/seiza/'],

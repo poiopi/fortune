@@ -16,8 +16,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/mbti/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MBTIの16タイプ性格診断と星座占いを組み合わせた性格分析。各タイプの特徴・相性・強みを解説。">
-  <title>MBTI診断とは？16タイプの性格と星座の組み合わせをわかりやすく解説</title>
+  <meta name="description" content="MBTIの16タイプと12星座を組み合わせた192通りの性格の見方を解説。4つの指標と16タイプ一覧、星座を組み合わせる意味、無料のMBTI×星座診断も紹介。">
+  <title>MBTI×星座の組み合わせとは？16タイプ×12星座・192通りの性格の見方</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -117,7 +117,7 @@ ob_start();
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"MBTI診断とは","item":"https://life-fun.net/articles/mbti/"}
+      {"@type":"ListItem","position":3,"name":"MBTI×星座の組み合わせとは","item":"https://life-fun.net/articles/mbti/"}
     ]
   }
   </script>
@@ -133,12 +133,12 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>MBTI診断とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>MBTI×星座の組み合わせとは
   </nav>
 
   <div class="art-hero">
     <span class="art-label">MBTI · 完全ガイド</span>
-    <h1>MBTI診断とは？<br>16タイプの性格と星座の組み合わせをわかりやすく解説</h1>
+    <h1>MBTI×星座の組み合わせとは？<br>16タイプ×12星座・192通りの性格の見方</h1>
     <p class="art-lead">MBTI（Myers-Briggs Type Indicator）は、ユング心理学をベースに開発された世界最大規模の性格タイプ診断です。E/I・S/N・T/F・J/Pの4軸16タイプで性格傾向を把握し、星座占いと組み合わせることで、より立体的な自己理解が得られます。</p>
   </div>
 
