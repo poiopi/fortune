@@ -167,6 +167,22 @@ h1{font-size:clamp(1.2rem,3.5vw,1.7rem);letter-spacing:.08em;font-weight:700;lin
 .tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
 .tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
 .tool-desc p:last-child{margin-bottom:0}
+/* ── ツール下の解説（見方・算出方法・よくある質問） ── */
+.tool-guide{max-width:760px;margin:2rem auto 1.5rem;background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem}
+.tool-guide h2{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--gold);letter-spacing:.04em;margin:1.8rem 0 .7rem}
+.tool-guide h2:first-child{margin-top:0}
+.tool-guide p,.tool-guide li{font-family:var(--ff-sans);font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9}
+.tool-guide p{margin-bottom:.6rem}
+.tool-guide .tg-point{color:var(--text);font-weight:500;margin:.9rem 0 .3rem}
+.tool-guide ul{padding-left:1.2rem;margin-bottom:.6rem}
+.tool-guide .tg-table-wrap{overflow-x:auto;margin:.4rem 0 .8rem}
+.tool-guide table{width:100%;min-width:320px;border-collapse:collapse;font-family:var(--ff-sans);font-size:.82rem}
+.tool-guide th,.tool-guide td{border-bottom:1px solid var(--border);padding:.5rem .6rem;text-align:left;vertical-align:top;color:rgba(232,226,245,.85)}
+.tool-guide th{color:var(--gold);font-weight:500;white-space:nowrap}
+.tool-guide dt{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--text);margin-top:1rem}
+.tool-guide dt:first-child{margin-top:0}
+.tool-guide dd{font-family:var(--ff-sans);font-size:.86rem;color:rgba(232,226,245,.78);line-height:1.9;margin:.25rem 0 0}
+.tool-guide a{color:var(--gold)}
 
 /* ── FOOTER ── */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
@@ -275,6 +291,48 @@ footer a:hover{color:var(--gold)}
     ※ 年柱の算出には節入り日（立春）を使用しています。2月の節入り前後の方は±1日の誤差が生じる場合があります。<br>
     本サービスはエンターテインメントを目的とした占いコンテンツです。結果は楽しみや気づきの参考としてご活用ください。
   </p>
+
+  <section class="tool-guide">
+    <h2>五行バランスの見方</h2>
+    <p>五行バランスは、あなたの生年月日の干支を「木・火・土・金・水」の5つの気に振り分け、それぞれがいくつあるかを表したものです。数が多い気ほど、その性質が表に出やすいと読みます。</p>
+    <div class="tg-table-wrap">
+      <table>
+        <thead><tr><th>五行</th><th>多いときに出やすい力</th><th>少ない・0のときに意識したいこと</th></tr></thead>
+        <tbody>
+          <tr><th>木</th><td>創造力・成長力・柔軟性</td><td>継続力や粘り強さ</td></tr>
+          <tr><th>火</th><td>情熱・行動力・表現力</td><td>慎重さや客観性</td></tr>
+          <tr><th>土</th><td>安定感・包容力・誠実さ</td><td>変化への柔軟さ</td></tr>
+          <tr><th>金</th><td>決断力・効率・集中力</td><td>感受性や協調性</td></tr>
+          <tr><th>水</th><td>直感力・適応力・知性</td><td>安定感や持続力</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tg-point">読み方のポイント</p>
+    <ul>
+      <li>いちばん多い気が、あなたの持ち味です。</li>
+      <li>0の気があっても「欠点」ではありません。このツールは4つの干支の文字を5つの気に振り分けるため、必ずどれか1つ以上が0になります。「意識すると伸びる部分」として読んでください。</li>
+      <li>4つの文字がすべて別々の気に分かれた人は、偏りが少なく、場面に応じて力を使い分けられるタイプです。</li>
+    </ul>
+
+    <h2>このツールの算出方法</h2>
+    <ul>
+      <li>元命は生まれた日の「干」、主星は生まれた年の「干」、従星は生まれた日の「支」から導いています。</li>
+      <li>五行バランスは、生まれた年と日の干支（4文字）から数えています。</li>
+      <li>年の切り替えは1月1日ではなく、節入り日（立春）で判定しています。2月初めの立春前後に生まれた方は、前の年の干支になる場合があります。</li>
+      <li>「この10年間のテーマ」は、年齢を10年ごとに区切った簡易的な目安です。節入り日や性別から算出する本来の大運とは異なります。</li>
+      <li>同じ生年月日なら、何度鑑定しても同じ結果になります。</li>
+    </ul>
+
+    <h2>よくある質問</h2>
+    <dl>
+      <dt>Q. 五行に0の気があるのは悪いことですか？</dt>
+      <dd>いいえ。このツールでは4つの文字を5つの気に振り分けるため、どなたでも必ずどれかが0になります。弱点ではなく、意識すると伸ばせる部分と考えてください。</dd>
+      <dt>Q. 生まれた時刻は必要ですか？</dt>
+      <dd>必要ありません。算命学は生年月日で鑑定する占術で、このツールも生年月日だけで算出します。</dd>
+      <dt>Q. 四柱推命とは何が違いますか？</dt>
+      <dd>どちらも干支を使う東洋の占術ですが、四柱推命は生まれた時刻を含む4つの柱で読むのに対し、算命学は生年月日で読みます。このツールでは簡易的に、年と日の干支を使っています。理論の詳しい説明は<a href="/articles/sanmei/">「算命学とは？」の記事</a>をご覧ください。</dd>
+    </dl>
+  </section>
 </div>
 
 <?php require __DIR__.'/inc/retry-reset.php'; ?>

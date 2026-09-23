@@ -119,6 +119,21 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 .tool-desc{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem;margin-bottom:1.5rem}
 .tool-desc p{font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9;margin-bottom:.6rem}
 .tool-desc p:last-child{margin-bottom:0}
+/* ── ツール下の解説（見方・仕組み・よくある質問） ── */
+.tool-guide{max-width:760px;margin:2rem auto 1.5rem;background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(155,114,239,.06));border:1px solid rgba(160,130,220,.2);border-radius:14px;padding:1.3rem 1.6rem}
+.tool-guide h2{font-family:var(--ff-serif);font-size:1.05rem;font-weight:600;color:var(--gold);letter-spacing:.04em;margin:1.8rem 0 .7rem}
+.tool-guide h2:first-child{margin-top:0}
+.tool-guide p,.tool-guide li{font-family:var(--ff-sans);font-size:.88rem;color:rgba(232,226,245,.78);line-height:1.9}
+.tool-guide p{margin-bottom:.6rem}
+.tool-guide ul{padding-left:1.2rem;margin-bottom:.6rem}
+.tool-guide .tg-table-wrap{overflow-x:auto;margin:.4rem 0 .8rem}
+.tool-guide table{width:100%;min-width:320px;border-collapse:collapse;font-family:var(--ff-sans);font-size:.82rem}
+.tool-guide th,.tool-guide td{border-bottom:1px solid var(--border);padding:.5rem .6rem;text-align:left;vertical-align:top;color:rgba(232,226,245,.85)}
+.tool-guide th{color:var(--gold);font-weight:500;white-space:nowrap}
+.tool-guide dt{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--text);margin-top:1rem}
+.tool-guide dt:first-child{margin-top:0}
+.tool-guide dd{font-family:var(--ff-sans);font-size:.86rem;color:rgba(232,226,245,.78);line-height:1.9;margin:.25rem 0 0}
+.tool-guide a{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -140,7 +155,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
     <div class="form-section-label">✦ あなたの情報を入力 ✦</div>
     <div class="error-box" id="formError" style="display:none"></div>
     <div class="form-group">
-      <label class="form-label" for="userName">名前（フルネームほど精度が上がります）</label>
+      <label class="form-label" for="userName">名前（毎回同じ書き方で入力すると、同じ結果になります）</label>
       <input class="form-input" type="text" id="userName" placeholder="例：山田 花子" maxlength="30">
     </div>
     <div class="form-group">
@@ -219,6 +234,44 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
       ?>
     </div>
   </div>
+
+  <section class="tool-guide">
+    <h2>転生回数の見方</h2>
+    <p>転生回数は、今の人生が何回目の転生にあたるかを表す数字です。回数によって、魂の年齢を5段階で表しています。</p>
+    <div class="tg-table-wrap">
+      <table>
+        <thead><tr><th>転生回数</th><th>魂の年齢</th><th>出る割合（目安）</th></tr></thead>
+        <tbody>
+          <tr><th>1〜10回</th><td>魂の新参者（生まれたての光）</td><td>約90%</td></tr>
+          <tr><th>11〜50回</th><td>学びの途中にある魂</td><td>約2%</td></tr>
+          <tr><th>51〜150回</th><td>経験を重ねた魂</td><td>約3%</td></tr>
+          <tr><th>151〜400回</th><td>深みを増した古い魂</td><td>約1%</td></tr>
+          <tr><th>401回以上</th><td>伝説級の古魂（ヴェテラン・ソウル）</td><td>約3%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>10人に9人は1〜10回です。11回以上が出たら、10人に1人の珍しい結果です。回数の多い少ないに優劣はありません。</p>
+
+    <h2>診断の仕組み</h2>
+    <ul>
+      <li>名前と生年月日の組み合わせから、一定の計算ルールで結果を決めています。</li>
+      <li>同じ名前・生年月日なら、何度診断しても同じ結果になります。名前の書き方（漢字・ひらがな、旧姓など）を変えると、結果も変わります。</li>
+      <li>入力された情報はサーバーに送信・保存されません。</li>
+      <li>歴史的な記録や霊的な鑑定にもとづくものではありません。エンターテインメントとしてお楽しみください。</li>
+    </ul>
+
+    <h2>よくある質問</h2>
+    <dl>
+      <dt>Q. フルネームで入力しないといけませんか？</dt>
+      <dd>名前だけやニックネームでも診断できます。入力した文字が変わると結果も変わるので、毎回同じ書き方で入力すると、同じ結果をいつでも確認できます。</dd>
+      <dt>Q. 旧姓と今の名前、どちらで診断すればいいですか？</dt>
+      <dd>どちらでも診断できます。名前が変わると結果も変わるので、両方で試して比べてみるのもおすすめです。</dd>
+      <dt>Q. 転生回数が多いほど良いのですか？</dt>
+      <dd>優劣はありません。回数は魂の年齢の目安で、どの段階にもその段階ならではの意味があります。</dd>
+      <dt>Q. カルマとは何ですか？</dt>
+      <dd>もとは仏教などで「行い（業）」を意味する言葉で、過去の行いが今の人生に影響するという考え方です。詳しくは<a href="/articles/zense/">「前世・カルマ診断とは？」の記事</a>をご覧ください。</dd>
+    </dl>
+  </section>
 </div>
 
 <?php require __DIR__.'/inc/retry-reset.php'; ?>
