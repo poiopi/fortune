@@ -130,7 +130,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
 .tool-guide table{width:100%;border-collapse:collapse;font-family:var(--ff-sans);font-size:.82rem}
 .tool-guide th,.tool-guide td{border-bottom:1px solid var(--border);padding:.5rem .6rem;text-align:left;vertical-align:top;color:rgba(232,226,245,.85)}
 .tool-guide th{color:var(--gold);font-weight:500}
-.tool-guide tbody th{white-space:nowrap}
+.tool-guide tbody th,.tool-guide thead th:first-child{white-space:nowrap}
 .tool-guide dt{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--text);margin-top:1rem}
 .tool-guide dt:first-child{margin-top:0}
 .tool-guide dd{font-family:var(--ff-sans);font-size:.86rem;color:rgba(232,226,245,.78);line-height:1.9;margin:.25rem 0 0}
