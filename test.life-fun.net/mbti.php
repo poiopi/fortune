@@ -432,7 +432,7 @@ body{top:0!important}
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <?php
       $articleIcon  = '📖';
-      $articleTitle = 'MBTI診断とは？';
+      $articleTitle = 'MBTI×星座の組み合わせとは？';
       $articleDesc  = '16タイプの性格と4つの指標をわかりやすく解説';
       $contextKey   = 'mbti';
       $retryLabel   = 'もう一度診断する';

@@ -117,7 +117,7 @@ ob_start();
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"MBTI診断とは","item":"https://life-fun.net/articles/mbti/"}
+      {"@type":"ListItem","position":3,"name":"MBTI×星座の組み合わせとは","item":"https://life-fun.net/articles/mbti/"}
     ]
   }
   </script>
@@ -133,7 +133,7 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>MBTI診断とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>MBTI×星座の組み合わせとは
   </nav>
 
   <div class="art-hero">

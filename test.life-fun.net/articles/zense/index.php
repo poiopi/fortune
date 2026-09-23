@@ -110,7 +110,7 @@ ob_start();
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
       {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"前世診断とは","item":"https://life-fun.net/articles/zense/"}
+      {"@type":"ListItem","position":3,"name":"前世・カルマ診断とは","item":"https://life-fun.net/articles/zense/"}
     ]
   }
   </script>
@@ -126,7 +126,7 @@ ob_start();
 
 <div class="wrap">
   <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>前世診断とは
+    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span>前世・カルマ診断とは
   </nav>
 
   <div class="art-hero">

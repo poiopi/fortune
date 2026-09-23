@@ -209,7 +209,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-fa
       <?php require __DIR__.'/inc/share-btns.php'; ?>
       <?php
       $articleIcon  = '📖';
-      $articleTitle = '前世診断とは？';
+      $articleTitle = '前世・カルマ診断とは？';
       $articleDesc  = '前世・輪廻転生・カルマの意味をわかりやすく解説';
       $contextKey   = 'zense';
       $retryLabel   = 'もう一度診断する';
