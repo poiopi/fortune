@@ -36,8 +36,11 @@ IMPLEMENTATION_PLAN.md
 
 # Root-level/scratch markdown stays untracked by default (mirrors the
 # .vscode/sftp.json ignore list's *.md / README* coverage for publish
-# prevention; that list already protects docs/ and tests/ independently,
-# so this section governs Git tracking only, not publishing).
+# prevention; that list protects docs/, tools/ and tests/ with explicit
+# entries — docs/ and tools/ were added on 2026-09-24 after their .json/
+# .php/.sh files were found uploaded to production — so this section
+# governs Git tracking only, not publishing. docs/ and tools/ stay tracked
+# in Git on purpose; do not add them here).
 # docs/ is explicitly re-included below: it holds versioned engineering
 # specs (engine-template.md, sansei-engine-design.md, docs/love/*) that
 # engine-template.md treats as formal, diffable deliverables.

@@ -6,6 +6,11 @@ Require valid-user
 RewriteEngine On
 RewriteBase /
 
+# 開発用フォルダ（tools/docs/tests）はWebに公開しない（404を返す）
+# 2026-09-24、本番に tools/*.php・*.sh と docs/love/*.json がアップロードされ外部から
+# 実行・閲覧できる状態だったため追加（.vscode/sftp.json の除外設定との二重の守り）
+RewriteRule ^(tools|docs|tests)(/|$) - [R=404,L]
+
 # .php拡張子を省略したURLへ301リダイレクト（index.phpは除外）
 # GET/HEADのみを対象とする。301リダイレクトはPOSTボディを保持しないため、
 # POSTフォーム（sansei.php等）を持つページで.php付きURLへ直接POSTされた場合に
