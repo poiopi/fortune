@@ -956,8 +956,8 @@ footer{
   <!-- HERO -->
   <header class="hero">
     <span class="hero-eyebrow">Free Fortune Telling</span>
-    <h1>無料占いポータル｜三星統合鑑定</h1>
-    <p class="hero-sub">タロット・数秘術・九星気学・姓名判断 ── 複数の占術で運命を読み解く</p>
+    <h1>三星統合鑑定｜西洋占星術×タロット×四柱推命の統合鑑定</h1>
+    <p class="hero-sub">名前と生年月日だけで、3つの占術の結果をひとつに読み解く</p>
     <div class="pillars">
       <a class="pillar" href="/seiza">♈ 西洋占星術</a>
       <a class="pillar" href="/tarot">🔮 タロット</a>
