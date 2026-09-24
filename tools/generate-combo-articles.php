@@ -102,6 +102,13 @@ function buildArticle(array $c, ?array $prevCombo, ?array $nextCombo): array {
     $name = "{$mbti}×{$blood}型";
     $bloodLabel = "{$blood}型";
 
+    // 血液型側に、単体の主軸Primitiveへ直接寄与するTraitが無い場合（例：B型の要素は
+    // 自由→変化志向・マイペース→自立性のみだが、単体集計の主軸は誠実性）。
+    // このとき$bloodOwnDescは空文字になり「B型ではが〜」という欠けた文が生成されていた
+    // （2026-09-24発見、B型14記事）。寄与要素が無いことを明示する文に切り替える。
+    $bloodHasOwn = !empty($bloodOwnContrib);
+    $bloodKeywords = implode('・', array_column(BLOOD_TRAIT_MAPPING[$blood], 'keyword'));
+
     // ---- classification-specific blocks ----
     if ($class === '協調型') {
         $classDesc = "{$mbti}単体の主軸も{$bloodLabel}単体の主軸も{$comboPrimJa}です。2つの入力が同じ方向を向いているため「協調型」に分類されます。";
@@ -111,7 +118,9 @@ function buildArticle(array $c, ?array $prevCombo, ?array $nextCombo): array {
             ['source' => "{$mbti}（MBTI）単体", 'solo' => "{$mbtiPrimJa} {$c['mbtiPrimaryRate']}%（576パターン中）", 'result' => "組み合わせでも同じ方向（一致）", 'adopted' => true],
             ['source' => "{$bloodLabel}（血液型）単体", 'solo' => "{$bloodPrimJa} {$c['bloodPrimaryRate']}%（2304パターン中）", 'result' => "組み合わせでも同じ方向（一致）", 'adopted' => true],
         ];
-        $causalExplanation = "{$mbti}では{$mbtiOwnDesc}が{$comboPrimJa}へ、{$bloodLabel}では{$bloodOwnDesc}が同じく{$comboPrimJa}へ寄与します。2つの入力が同じ方向を後押しするため、単体（MBTI{$c['mbtiPrimaryRate']}%・{$bloodLabel}{$c['bloodPrimaryRate']}%）よりも高い集中度（{$c['comboPrimaryRate']}%）になります。";
+        $causalExplanation = $bloodHasOwn
+            ? "{$mbti}では{$mbtiOwnDesc}が{$comboPrimJa}へ、{$bloodLabel}では{$bloodOwnDesc}が同じく{$comboPrimJa}へ寄与します。2つの入力が同じ方向を後押しするため、単体（MBTI{$c['mbtiPrimaryRate']}%・{$bloodLabel}{$c['bloodPrimaryRate']}%）よりも高い集中度（{$c['comboPrimaryRate']}%）になります。"
+            : "{$mbti}では{$mbtiOwnDesc}が{$comboPrimJa}へ寄与します。{$bloodLabel}の要素（{$bloodKeywords}）は{$comboPrimJa}へ直接は寄与しませんが、{$bloodLabel}単体の集計でも{$comboPrimJa}が優勢です（{$c['bloodPrimaryRate']}%）。2つの入力が同じ方向になるため、単体（MBTI{$c['mbtiPrimaryRate']}%・{$bloodLabel}{$c['bloodPrimaryRate']}%）よりも高い集中度（{$c['comboPrimaryRate']}%）になります。";
         $faqQ2 = ["q" => "なぜMBTIと血液型の両方が同じ方向になるのですか？", "a" => "{$mbti}と{$bloodLabel}が、たまたま同じPrimitive（{$comboPrimJa}）に強く寄与する構造を持っているためです。全てのMBTI×血液型の組み合わせがこうなるわけではなく、64通り中24通りがこの「協調型」に該当します。"];
     } elseif ($class === '拮抗型（MBTI優勢）') {
         $classDesc = "{$mbti}単体の主軸は{$mbtiPrimJa}、{$bloodLabel}単体の主軸は{$bloodPrimJa}と、2つの入力は異なる方向を向いています。組み合わせた実測データでは、MBTI由来の{$mbtiPrimJa}側が主軸として採用されるため「拮抗型（MBTI優勢）」に分類されます。";
@@ -121,7 +130,10 @@ function buildArticle(array $c, ?array $prevCombo, ?array $nextCombo): array {
             ['source' => "{$mbti}（MBTI）単体", 'solo' => "{$mbtiPrimJa} {$c['mbtiPrimaryRate']}%（576パターン中）", 'result' => "主軸として採用（{$c['comboPrimaryRate']}%）", 'adopted' => true],
             ['source' => "{$bloodLabel}（血液型）単体", 'solo' => "{$bloodPrimJa} {$c['bloodPrimaryRate']}%（2304パターン中）", 'result' => "主軸としては不採用。副軸として高確率で残る", 'adopted' => false],
         ];
-        $causalExplanation = "{$mbti}では{$mbtiOwnDesc}が{$mbtiPrimJa}へ寄与し、単体でも{$c['mbtiPrimaryRate']}%と主軸になりやすい構造を持ちます。{$bloodLabel}は{$bloodOwnDesc}が{$bloodPrimJa}へ寄与しますが、{$mbti}側の寄与の方が強く働くため、組み合わせでは{$mbtiPrimJa}が主軸として採用されます（{$c['comboPrimaryRate']}%）。{$bloodPrimJa}は、{$mbtiPrimJa}が主軸になったケース（{$c['primaryMatchCount']}件）のうち{$c['comboSecondaryRate']}%（{$c['comboSecondaryCount']}件）で副軸として残ります。";
+        $bloodSide = $bloodHasOwn
+            ? "{$bloodLabel}は{$bloodOwnDesc}が{$bloodPrimJa}へ寄与しますが、"
+            : "{$bloodLabel}単体の集計では{$bloodPrimJa}が優勢（{$c['bloodPrimaryRate']}%）ですが、{$bloodLabel}の要素（{$bloodKeywords}）が{$bloodPrimJa}へ直接寄与するわけではありません。";
+        $causalExplanation = "{$mbti}では{$mbtiOwnDesc}が{$mbtiPrimJa}へ寄与し、単体でも{$c['mbtiPrimaryRate']}%と主軸になりやすい構造を持ちます。{$bloodSide}{$mbti}側の寄与の方が強く働くため、組み合わせでは{$mbtiPrimJa}が主軸として採用されます（{$c['comboPrimaryRate']}%）。{$bloodPrimJa}は、{$mbtiPrimJa}が主軸になったケース（{$c['primaryMatchCount']}件）のうち{$c['comboSecondaryRate']}%（{$c['comboSecondaryCount']}件）で副軸として残ります。";
         $faqQ2 = ["q" => "{$bloodLabel}の性格はこの組み合わせで消えてしまうのですか？", "a" => "消えません。主軸としては採用されにくいものの、{$mbtiPrimJa}が主軸になったケースの{$c['comboSecondaryRate']}%で{$bloodPrimJa}が副軸として残ります。"];
     } elseif ($class === '拮抗型（血液型優勢）') {
         $classDesc = "{$mbti}単体の主軸は{$mbtiPrimJa}、{$bloodLabel}単体の主軸は{$bloodPrimJa}と、2つの入力は異なる方向を向いています。組み合わせた実測データでは、血液型由来の{$bloodPrimJa}側が主軸として採用されるため「拮抗型（血液型優勢）」に分類されます。";
@@ -131,7 +143,10 @@ function buildArticle(array $c, ?array $prevCombo, ?array $nextCombo): array {
             ['source' => "{$mbti}（MBTI）単体", 'solo' => "{$mbtiPrimJa} {$c['mbtiPrimaryRate']}%（576パターン中）", 'result' => "主軸としては不採用。副軸として高確率で残る", 'adopted' => false],
             ['source' => "{$bloodLabel}（血液型）単体", 'solo' => "{$bloodPrimJa} {$c['bloodPrimaryRate']}%（2304パターン中）", 'result' => "主軸として採用（{$c['comboPrimaryRate']}%）", 'adopted' => true],
         ];
-        $causalExplanation = "{$bloodLabel}では{$bloodOwnDesc}が{$bloodPrimJa}へ寄与し、単体でも{$c['bloodPrimaryRate']}%と主軸になりやすい構造を持ちます。{$mbti}は{$mbtiOwnDesc}が{$mbtiPrimJa}へ寄与しますが、{$bloodLabel}側の寄与の方が強く働くため、組み合わせでは{$bloodPrimJa}が主軸として採用されます（{$c['comboPrimaryRate']}%）。{$mbtiPrimJa}は、{$bloodPrimJa}が主軸になったケース（{$c['primaryMatchCount']}件）のうち{$c['comboSecondaryRate']}%（{$c['comboSecondaryCount']}件）で副軸として残ります。";
+        $bloodSide = $bloodHasOwn
+            ? "{$bloodLabel}では{$bloodOwnDesc}が{$bloodPrimJa}へ寄与し、単体でも{$c['bloodPrimaryRate']}%と主軸になりやすい構造を持ちます。"
+            : "{$bloodLabel}の要素（{$bloodKeywords}）は{$bloodPrimJa}へ直接は寄与しませんが、{$bloodLabel}単体の集計では{$bloodPrimJa}が{$c['bloodPrimaryRate']}%と優勢です。";
+        $causalExplanation = "{$bloodSide}{$mbti}は{$mbtiOwnDesc}が{$mbtiPrimJa}へ寄与しますが、{$bloodLabel}側の寄与の方が強く働くため、組み合わせでは{$bloodPrimJa}が主軸として採用されます（{$c['comboPrimaryRate']}%）。{$mbtiPrimJa}は、{$bloodPrimJa}が主軸になったケース（{$c['primaryMatchCount']}件）のうち{$c['comboSecondaryRate']}%（{$c['comboSecondaryCount']}件）で副軸として残ります。";
         $faqQ2 = ["q" => "{$mbti}の性格はこの組み合わせで消えてしまうのですか？", "a" => "消えません。主軸としては採用されにくいものの、{$bloodPrimJa}が主軸になったケースの{$c['comboSecondaryRate']}%で{$mbtiPrimJa}が副軸として残ります。"];
     } else { // 転換型
         $samePrimary = ($c['mbtiPrimary'] === $c['bloodPrimary']);
@@ -157,8 +172,9 @@ function buildArticle(array $c, ?array $prevCombo, ?array $nextCombo): array {
     }
 
     // ---- shared blocks ----
-    $lead = "{$mbti}は{$mbtiPrimJa}が、{$bloodLabel}は{$bloodPrimJa}が、それぞれ単体では恋愛傾向の主軸になりやすいタイプです。この2つを組み合わせたとき、どちらの影響がより強く出るのかを、Love Engineの実測データから解説します。";
-    $title = "{$name}の恋愛傾向｜Love Engineで解説する{$comboPrimJa}主軸の理由";
+    $lead = "{$mbti}は{$mbtiPrimJa}が、{$bloodLabel}は{$bloodPrimJa}が、それぞれ単体では恋愛傾向の主軸になりやすいタイプです。この2つを組み合わせたとき、どちらの影響がより強く出るのかを、当サイトの恋愛傾向診断（Love Engine）の実測データから解説します。";
+    // 2026-09-24：検索語（「infj b型」等）に合わせ、内部用語（Love Engine・主軸）をタイトルから外した
+    $title = "{$name}の恋愛傾向と特徴｜{$comboPrimJa}が強く出る理由をデータで解説";
 
     $bundleIntro = "{$name}の144パターンを、実際に採用されるBundle（主軸×副軸の組み合わせ）別に見ると、次のようになります。";
     $bundleBreakdown = array_map(fn($b) => ['label' => $b['label'], 'count' => $b['count'], 'pct' => $b['pct']], $c['bundleBreakdown']);
@@ -198,7 +214,7 @@ function buildArticle(array $c, ?array $prevCombo, ?array $nextCombo): array {
         'name' => $name,
         'title' => $title,
         'h1' => $title,
-        'description' => "{$name}の組み合わせでは、MBTI単体の主軸（{$mbtiPrimJa}）と血液型単体の主軸（{$bloodPrimJa}）のうち、どちらの影響が恋愛傾向により強く出るのかをLove Engineの実測データ（144パターン）で解説。",
+        'description' => "{$name}の恋愛傾向を144パターンのデータで解説。積極性・愛情表現・嫉妬深さなど7つの恋愛スタイルの傾向と、{$mbti}と{$bloodLabel}のどちらの性格が強く出るかを紹介します。",
         'lead' => $lead,
         'classification' => $class,
         'classification_desc' => $classDesc,
