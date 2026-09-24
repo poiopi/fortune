@@ -193,8 +193,7 @@ header{
 }
 
 /* ── AdSense ── */
-.adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
-.adsense-space::after{content:'AD SPACE'}
+.adsense-space{display:none}
 /* ── カレンダー ── */
 .cal-section{margin-bottom:2.5rem}
 .cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:.7rem}

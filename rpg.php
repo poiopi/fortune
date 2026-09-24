@@ -139,8 +139,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .rtry{width:100%;background:none;border:1px solid var(--border2);border-radius:8px;padding:.6rem;font-family:var(--ff-rpg);font-size:.75rem;color:var(--muted);cursor:pointer;margin-top:.7rem;transition:color .2s,border-color .2s}
 .rtry:hover{color:var(--text);border-color:var(--violet)}
 
-.adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
-.adsense-space::after{content:'AD SPACE'}
+.adsense-space{display:none}
 .fs-btn{background:rgba(155,114,239,.15);border:1px solid var(--border2);border-radius:8px;color:var(--violet-lt);font-size:.6rem;font-family:var(--ff-rpg);padding:.35rem .6rem;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .1s;white-space:nowrap}
 .fs-btn:active{background:rgba(155,114,239,.4)}
 .game-outer:fullscreen,.game-outer:-webkit-full-screen{border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#08060f;width:100vw;height:100vh}

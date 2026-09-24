@@ -632,21 +632,7 @@ select.form-input{background-color:#1a1530;-webkit-appearance:none;appearance:no
 }
 
 /* ── AdSense枠 ── */
-.adsense-space{
-  min-height:100px;
-  background:rgba(255,255,255,.02);
-  border:1px dashed rgba(255,255,255,.08);
-  border-radius:8px;
-  margin:1.5rem 0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family:var(--ff-mono);
-  font-size:.65rem;
-  color:rgba(255,255,255,.1);
-  letter-spacing:.1em;
-}
-.adsense-space::after{content:'AD SPACE'}
+.adsense-space{display:none}
 
 /* ── フッター ── */
 footer{
