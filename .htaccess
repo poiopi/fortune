@@ -5,6 +5,11 @@ RewriteBase /
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+# 開発用フォルダ（tools/docs/tests）はWebに公開しない（404を返す）
+# 2026-09-24、本番に tools/*.php・*.sh と docs/love/*.json がアップロードされ外部から
+# 実行・閲覧できる状態だったため追加（.vscode/sftp.json の除外設定との二重の守り）
+RewriteRule ^(tools|docs|tests)(/|$) - [R=404,L]
+
 # 旧WordPressのURLを全部トップにリダイレクト
 RewriteRule ^index\.php/.*$ / [R=301,L]
 
