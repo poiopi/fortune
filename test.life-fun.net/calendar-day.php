@@ -300,8 +300,7 @@ a.star-card:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.06)
 
 .unavailable{font-size:.85rem;color:var(--muted)}
 
-.adsense-space{min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:8px;margin:1.5rem 0;display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;color:rgba(255,255,255,.08);letter-spacing:.1em}
-.adsense-space::after{content:'AD SPACE'}
+.adsense-space{display:none}
 
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
 footer a{color:var(--muted);text-decoration:none}
