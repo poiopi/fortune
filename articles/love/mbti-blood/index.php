@@ -79,8 +79,8 @@ ob_start();
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/love/mbti-blood/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MBTI×血液型64パターンの組み合わせが恋愛にどう影響するかを、Love Engineの実測データで解説。協調型・拮抗型・転換型という4分類で、どちらの入力が結果を支配しているかがわかります。">
-  <title>MBTI×血液型の組み合わせ｜64パターンをLove Engineの実測データで解説</title>
+  <meta name="description" content="MBTI16タイプ×血液型4種の64パターンについて、恋愛傾向と特徴を当サイトの恋愛傾向診断（Love Engine）のデータで解説。組み合わせごとに、MBTIと血液型のどちらの性格が強く出るかがわかります。">
+  <title>MBTI×血液型の組み合わせ一覧｜64パターンの恋愛傾向と特徴をデータで解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -149,7 +149,7 @@ ob_start();
 
   <div class="art-hero">
     <span class="art-label">MBTI × Blood × Love Engine</span>
-    <h1>MBTI×血液型の組み合わせ｜64パターン</h1>
+    <h1>MBTI×血液型の組み合わせ一覧｜64パターン</h1>
     <p class="art-lead">MBTIと血液型は、それぞれ単体でも恋愛傾向の主軸となるPrimitiveを持ちます。この2つを組み合わせたとき、どちらの影響がより強く出るのか——Love Engineの9216通りの実測データから、64通り全ての組み合わせを分析しています。</p>
   </div>
 
