@@ -52,3 +52,15 @@ README*
 # Snapshot). Tracked in Git: engine-template.md treats these as formal
 # deliverables that must be diffable across changes; keeping them out of
 # Git defeats the purpose of a Golden Master.
+
+# Admin console data (added 2026-09-26, ADMIN_IMPL_PLAN.md Phase 1).
+# SQLite DB, PHP sessions, encryption keys, locks and logs are created on the
+# server and must never be committed or uploaded. Mirrored in the
+# .vscode/sftp.json ignore list. The .htaccess inside _admin-data/ is NOT
+# excluded: it must stay tracked and uploaded so the folder stays denied.
+**/_admin-data/*.sqlite
+**/_admin-data/*.sqlite-*
+**/_admin-data/sessions/
+**/_admin-data/secret*
+**/_admin-data/*.lock
+**/_admin-data/*.log

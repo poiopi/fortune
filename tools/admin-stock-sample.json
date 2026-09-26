@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "generated_by": "claude-code",
+  "generated_at": "2026-09-26T12:00:00+09:00",
+  "items": [
+    {
+      "ext_id": "sample-trivia-001",
+      "kind": "trivia",
+      "title": "【見本】六曜の「先勝」は午前が吉",
+      "link_url": "https://life-fun.net/calendar",
+      "bodies": {
+        "threads": { "body": "【今日の豆知識】\n六曜の「先勝（せんしょう）」は、午前中が吉・午後は凶とされる日。\n急ぎの用事は午前のうちに済ませるのが昔からの知恵です。\n\n今日の六曜はこちら → {link}" }
+      },
+      "notes": "見本データ。STGでの動作確認用"
+    },
+    {
+      "ext_id": "sample-personality-001",
+      "kind": "personality",
+      "title": "【見本】休日の過ごし方でわかるタイプ",
+      "link_url": "https://life-fun.net/mbti",
+      "bodies": {
+        "threads": { "body": "【性格診断】休日、最初にすることは？\n\n○ 予定を立てる\n○ とりあえず寝る\n○ 誰かに連絡する\n○ 外に出る\n\nあなたのタイプをくわしく → {link}" },
+        "note": { "title": "【見本】休日の過ごし方でわかる4つのタイプ", "body": "休日の最初の行動には、その人らしさが出やすいと言われます。\n\n（本文の見本）\n\n診断はこちら：{link}" }
+      },
+      "notes": "note用本文ありの見本"
+    },
+    {
+      "ext_id": "sample-guide-001",
+      "kind": "guide",
+      "title": "【見本】今日の運勢の案内",
+      "link_url": "https://life-fun.net/",
+      "bodies": {
+        "threads": { "body": "今日の運勢、もうチェックしましたか？\n生年月日だけで、今日のラッキーアイテムもわかります。\n\n→ {link}" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# 管理画面のデータ置き場（SQLite・セッション・鍵）。Webからは一切読ませない。
+# 2026-09-26 管理画面Phase 1で追加。Require（403）と RewriteRule（404）の二重の守り。
+# 本ファイルは Git 管理・アップロード対象。中のデータファイルは .gitignore / sftp.json の両方で除外している。
+Require all denied
+RewriteEngine On
+RewriteRule ^ - [R=404,L]

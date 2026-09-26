@@ -557,7 +557,7 @@ function getRitchin(pillars) {
   for (let i = 0; i < pillars.length - 1; i++) {
     for (let j = i + 1; j < pillars.length; j++) {
       if (pillars[i].stem === pillars[j].stem && pillars[i].branch === pillars[j].branch) {
-        results.push({ label1: colLabels[i], label2: colLabels[j],
+        results.push({ label1: pillars[i].label, label2: pillars[j].label,
           kanshi: STEMS[pillars[i].stem] + BRANCHES[pillars[i].branch] });
       }
     }
@@ -783,7 +783,9 @@ function _calcAndRender(year, month, day, hour, hasHour, gender, name) {
     return `${currentY + diff1}年`;
   }).join('・');
 
-  const validCols = cols.filter(c => c !== null);
+  const validCols = cols
+    .map((c, i) => c && { ...c, label: colLabels[i] })
+    .filter(Boolean);
   const ritchinList = getRitchin(validCols);
 
   let ritchinHTML = '';

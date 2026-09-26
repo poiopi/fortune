@@ -1,0 +1,94 @@
+{
+    "format_version": 1,
+    "generated_by": "claude-code",
+    "generated_at": "2026-09-26T12:00:00+09:00",
+    "items": [
+        {
+            "ext_id": "test-ok-001",
+            "kind": "quiz",
+            "title": "【テスト】正常",
+            "link_url": "https://life-fun.net/quiz/",
+            "bodies": {
+                "threads": {
+                    "body": "正常な項目です → {link}"
+                }
+            }
+        },
+        {
+            "ext_id": "test-ok-001",
+            "kind": "quiz",
+            "title": "【テスト】ファイル内でext_id重複",
+            "link_url": "https://life-fun.net/quiz/",
+            "bodies": {
+                "threads": {
+                    "body": "重複 → {link}"
+                }
+            }
+        },
+        {
+            "ext_id": "test-bad-url",
+            "kind": "trivia",
+            "title": "【テスト】他サイトのURL",
+            "link_url": "https://example.com/",
+            "bodies": {
+                "threads": {
+                    "body": "不正URL → {link}"
+                }
+            }
+        },
+        {
+            "ext_id": "test-utm",
+            "kind": "trivia",
+            "title": "【テスト】UTM混入",
+            "link_url": "https://life-fun.net/?utm_source=x",
+            "bodies": {
+                "threads": {
+                    "body": "UTM → {link}"
+                }
+            }
+        },
+        {
+            "ext_id": "test-too-long",
+            "kind": "trivia",
+            "title": "【テスト】文字数超過",
+            "link_url": "https://life-fun.net/",
+            "bodies": {
+                "threads": {
+                    "body": "あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ{link}"
+                }
+            }
+        },
+        {
+            "ext_id": "test-bad-kind",
+            "kind": "horoscope",
+            "title": "【テスト】存在しない種別",
+            "link_url": "https://life-fun.net/",
+            "bodies": {
+                "threads": {
+                    "body": "種別なし → {link}"
+                }
+            }
+        },
+        {
+            "ext_id": "test-no-link",
+            "kind": "guide",
+            "title": "【テスト】{link}があるのにURLなし",
+            "bodies": {
+                "threads": {
+                    "body": "URLなし → {link}"
+                }
+            }
+        },
+        {
+            "ext_id": "test note",
+            "kind": "guide",
+            "title": "【テスト】ext_idに空白",
+            "link_url": "https://life-fun.net/",
+            "bodies": {
+                "threads": {
+                    "body": "x"
+                }
+            }
+        }
+    ]
+}

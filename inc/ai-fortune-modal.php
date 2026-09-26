@@ -76,6 +76,8 @@ declare(strict_types=1);
 .aic-progress-fill{height:100%;background:linear-gradient(90deg,var(--aic-brass-dk),var(--aic-brass));box-shadow:0 0 6px rgba(232,206,147,.32);transition:width .4s cubic-bezier(.22,1,.3,1)}
 .aic-modal-close{position:absolute;top:.65rem;right:var(--aic-gut);width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(5,7,13,.4);color:var(--aic-muted);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.7rem;z-index:2}
 .aic-modal-close:hover{color:var(--aic-brass-lt);border-color:var(--aic-rule-3)}
+.aic-mute-btn{position:absolute;top:.65rem;right:calc(var(--aic-gut) + 34px);width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(5,7,13,.4);color:var(--aic-muted);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.68rem;z-index:2}
+.aic-mute-btn:hover{color:var(--aic-brass-lt);border-color:var(--aic-rule-3)}
 
 .aic-thread{padding:.9rem var(--aic-gut) 1.1rem;overflow-y:auto;display:flex;flex-direction:column;gap:.7rem;flex:1;scrollbar-width:thin;scrollbar-color:var(--aic-panel-3) transparent}
 .aic-thread::-webkit-scrollbar{width:6px}
@@ -182,6 +184,7 @@ declare(strict_types=1);
       ?></div>
       <div class="aic-chat-head">
         <span class="aic-step-count" id="aicStepCount">1 / 4</span>
+        <button type="button" class="aic-mute-btn" id="aicMuteBtn" aria-label="通知音を消す">🔊</button>
         <button type="button" class="aic-modal-close" id="aicCloseBtn" aria-label="閉じる">✕</button>
         <span class="aic-seal">🔮</span>
         <div class="aic-chat-head-text"><strong>AI鑑定チャット</strong><span>fortune consultation</span></div>
@@ -375,10 +378,15 @@ function aicInputTurn(){
 }
 
 // ── 結果表示（本文はプレースホルダーのみ生成し、実データはrender()後にtextContentで挿入する） ──
-function aicResultTurn(){
+// headlineOnly=trueの場合、見出しの吹き出しだけを返す（逐次表示の1段階目、resultHeadlineフェーズ用）。
+function aicResultTurn(headlineOnly){
   var t = aicState.effectiveTheme, badge = '';
   var r = aicState.resultData || {};
   if(t==='kaiun') badge = r.star || '';
+  var headlineHtml = '<div class="aic-bubble headline">'+aicEsc(AIC_RESULT_HEADINGS[t])+'、読み解きました' + (badge?'<span class="aic-sub"><span class="aic-result-badge" data-aic-text="star"></span></span>':'') + '</div>' + aicTimeTag();
+  if(headlineOnly){
+    return '<div class="aic-row bot" id="'+aicEsc(aicState.resultRowId)+'"><div class="aic-stack" style="max-width:100%">' + headlineHtml + '</div></div>';
+  }
   var bodyHtml = '';
   if(t==='self'){
     bodyHtml = '<div class="aic-angle-block"><p class="aic-angle-title">◎ あなたの強み</p><ul class="aic-angle-list" data-aic-list="strengths"></ul></div>'
@@ -398,8 +406,7 @@ function aicResultTurn(){
   }
   var link = AIC_RESULT_LINKS[t];
   return '<div class="aic-row bot" id="'+aicEsc(aicState.resultRowId)+'"><div class="aic-stack" style="max-width:100%">'
-    + '<div class="aic-bubble headline">'+aicEsc(AIC_RESULT_HEADINGS[t])+'、読み解きました' + (badge?'<span class="aic-sub"><span class="aic-result-badge" data-aic-text="star"></span></span>':'') + '</div>'
-    + aicTimeTag()
+    + headlineHtml
     + '<div class="aic-stack" style="max-width:100%"><div class="aic-result-wrap" id="'+aicEsc(aicState.resultId)+'">'+bodyHtml+'</div></div>'
     + '<span class="aic-footnote">※既存の占いデータに基づく鑑定結果です。</span>'
     + (link ? '<a href="'+link.url+'" class="aic-result-link">'+aicEsc(link.label)+' →</a>' : '')
@@ -465,12 +472,15 @@ function aicRender(){
   if(aicState.phase!=='theme'){
     var picked = AIC_THEMES.filter(function(t){return t.key===aicState.theme;})[0];
     html += '<div class="aic-row user"><div class="aic-stack" style="align-items:flex-end"><div class="aic-bubble user">'+(picked?aicEsc(picked.name):'')+'</div>'+aicTimeTag()+'</div></div>';
-    if(aicState.theme!=='marriage' && picked){
+    // themePicked（テーマを選んだ直後、逐次表示の1段階目）ではまだ相槌を出さない。
+    // ユーザーの選択が先に見え、間を置いてから相槌が届く、という会話らしい間を作るため。
+    if(aicState.theme!=='marriage' && picked && aicState.phase!=='themePicked'){
       html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble">'+aicEsc(picked.ack)+'</div>'+aicTimeTag()+'</div></div>';
     }
   }
 
-  if(aicState.theme==='marriage'){
+  // marriagePicked（「結婚」を選んだ直後）では、まだ選択肢の質問を出さない（同上の理由）。
+  if(aicState.theme==='marriage' && aicState.phase!=='marriagePicked'){
     var marriageStackClass = 'aic-stack' + (aicState.phase==='marriageChoice' ? ' aic-stack-full' : '');
     html += '<div class="aic-row bot"><div class="'+marriageStackClass+'">'
       + '<div class="aic-bubble">結婚について知りたいことを選んでください。</div>'
@@ -481,12 +491,14 @@ function aicRender(){
     if(aicState.effectiveTheme){
       var pickedC = AIC_MARRIAGE_CHOICES.filter(function(c){return c.key===aicState.effectiveTheme;})[0];
       html += '<div class="aic-row user"><div class="aic-stack" style="align-items:flex-end"><div class="aic-bubble user">'+(pickedC?aicEsc(pickedC.name):'')+'</div>'+aicTimeTag()+'</div></div>';
-      if(pickedC) html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble">'+aicEsc(pickedC.ack)+'</div>'+aicTimeTag()+'</div></div>';
+      // marriageSubPicked（結婚の2択を選んだ直後）ではまだ相槌を出さない（同上の理由）。
+      if(pickedC && aicState.phase!=='marriageSubPicked') html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble">'+aicEsc(pickedC.ack)+'</div>'+aicTimeTag()+'</div></div>';
     }
   }
 
   if(aicState.phase==='input') html += aicInputTurn();
-  if(aicState.phase==='loading' || aicState.phase==='result' || aicState.phase==='error'){
+  // 「入力しました」は送信直後（submitted）〜結果確定後まで一貫して表示し続ける。
+  if(aicState.phase==='submitted' || aicState.phase==='loading' || aicState.phase==='resultHeadline' || aicState.phase==='result' || aicState.phase==='error'){
     html += '<div class="aic-row user"><div class="aic-stack" style="align-items:flex-end"><div class="aic-bubble user">入力しました</div>'+aicTimeTag()+'</div></div>';
   }
   if(aicState.phase==='loading'){
@@ -496,7 +508,10 @@ function aicRender(){
     html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble aic-error-bubble">うまく読み解けませんでした。もう一度お試しください。</div>'+aicTimeTag()
       + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" data-aic-retry-input>もう一度入力する</button></div></div></div>';
   }
-  if(aicState.phase==='result') html += aicResultTurn();
+  // resultHeadline（結果確定直後、逐次表示の1段階目）は見出しの吹き出しだけを見せる。
+  // 本文（aicFillResultDataで流し込む部分）は少し間を置いてからresultフェーズで表示する。
+  if(aicState.phase==='resultHeadline') html += aicResultTurn(true);
+  if(aicState.phase==='result') html += aicResultTurn(false);
 
   thread.innerHTML = html;
 
@@ -533,10 +548,55 @@ function aicNowTime(){
 }
 function aicTimeTag(){ return '<span class="aic-msg-time">'+aicNowTime()+'</span>'; }
 function aicPhaseStep(){
-  if(aicState.phase==='theme' || aicState.phase==='marriageChoice') return 1;
+  if(aicState.phase==='theme' || aicState.phase==='marriageChoice' || aicState.phase==='themePicked' || aicState.phase==='marriagePicked' || aicState.phase==='marriageSubPicked') return 1;
   if(aicState.phase==='input') return 2;
-  if(aicState.phase==='loading') return 3;
+  if(aicState.phase==='loading' || aicState.phase==='submitted') return 3;
   return 4;
+}
+
+// ── 通知音（吹き出しが1つ表示されるたびに鳴らす軽いノイズ音） ──
+var aicAudioCtx = null;
+var aicMuted = false;
+try { aicMuted = localStorage.getItem('aic_muted') === '1'; } catch(e) {}
+function aicGetAudioCtx(){
+  var AC = window.AudioContext || window.webkitAudioContext;
+  if(!AC) return null;
+  if(!aicAudioCtx) aicAudioCtx = new AC();
+  if(aicAudioCtx.state === 'suspended') aicAudioCtx.resume();
+  return aicAudioCtx;
+}
+function aicPlayPop(){
+  if(aicMuted) return;
+  try {
+    var c = aicGetAudioCtx();
+    if(!c) return;
+    var duration = 0.045, gainPeak = 0.5;
+    var bufferSize = Math.ceil(c.sampleRate * duration);
+    var buffer = c.createBuffer(1, bufferSize, c.sampleRate);
+    var data = buffer.getChannelData(0);
+    for(var i=0;i<bufferSize;i++){ data[i] = Math.random()*2-1; }
+    var src = c.createBufferSource();
+    src.buffer = buffer;
+    var filter = c.createBiquadFilter();
+    filter.type = 'highpass';
+    filter.frequency.setValueAtTime(4500, c.currentTime);
+    filter.frequency.exponentialRampToValueAtTime(6000, c.currentTime + duration);
+    filter.Q.value = 0.9;
+    var gain = c.createGain();
+    gain.gain.setValueAtTime(gainPeak, c.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + duration);
+    src.connect(filter);
+    filter.connect(gain);
+    gain.connect(c.destination);
+    src.start(c.currentTime);
+    src.stop(c.currentTime + duration + 0.02);
+  } catch(e) {}
+}
+function aicUpdateMuteBtn(){
+  var btn = document.getElementById('aicMuteBtn');
+  if(!btn) return;
+  btn.textContent = aicMuted ? '🔇' : '🔊';
+  btn.setAttribute('aria-label', aicMuted ? '通知音をオンにする' : '通知音を消す');
 }
 
 // PC幅（461px以上）ではモーダルがタブの位置に応じて画面上を移動するため、
@@ -611,8 +671,20 @@ function aicBuildPayload(){
 }
 function aicSubmit(){
   if(!aicInputReady()) return;
-  aicState.phase='loading';
+  // 逐次表示1段階目：まず「入力しました」だけを見せる（submitted）。
+  aicState.phase='submitted';
+  aicPlayPop();
   aicRender();
+  // 少し間を置いてから「ありがとうございます」＋入力中インジケーターを見せる（loading）。
+  // phaseが変わっていないかガードするのは、その間にAPIが即座に返ってきて
+  // 既にresult系へ進んでいた場合に、古いタイマーがloadingへ巻き戻すのを防ぐため。
+  setTimeout(function(){
+    if(aicState.phase==='submitted'){
+      aicState.phase='loading';
+      aicPlayPop();
+      aicRender();
+    }
+  }, 500);
   var payload = aicBuildPayload();
   var startedAt = Date.now();
   var MIN_DELAY = 900;
@@ -628,15 +700,26 @@ function aicSubmit(){
     setTimeout(function(){
       if(!result.ok || result.data.error){
         aicState.phase = 'error';
-      } else {
-        aicState.resultData = result.data;
-        ++aicResultSeq;
-        aicState.resultId = 'aicResultWrap-' + aicResultSeq;
-        aicState.resultRowId = 'aicResultRow-' + aicResultSeq;
-        aicState.phase = 'result';
-        aicState.scrollTarget = 'result';
+        aicRender();
+        return;
       }
+      aicState.resultData = result.data;
+      ++aicResultSeq;
+      aicState.resultId = 'aicResultWrap-' + aicResultSeq;
+      aicState.resultRowId = 'aicResultRow-' + aicResultSeq;
+      // 逐次表示2段階目：まず見出しの吹き出しだけを見せる（resultHeadline）。
+      aicState.phase = 'resultHeadline';
+      aicState.scrollTarget = 'result';
+      aicPlayPop();
       aicRender();
+      // 少し間を置いてから本文を見せる（result）。
+      setTimeout(function(){
+        if(aicState.phase === 'resultHeadline'){
+          aicState.phase = 'result';
+          aicState.scrollTarget = 'result';
+          aicRender();
+        }
+      }, 650);
     }, wait);
   }).catch(function(){
     var elapsed = Date.now() - startedAt;
@@ -684,6 +767,7 @@ function aicClose(){
 window.openAiChatModal = function(anchorRect){
   aicOpen(anchorRect);
   aicRender();
+  aicUpdateMuteBtn();
 };
 
 // ── イベント委譲（クリック） ──
@@ -692,6 +776,12 @@ document.addEventListener('click', function(e){
   if(!root) return;
 
   if(e.target.id==='aicCloseBtn' || e.target.id==='aicOverlay'){ aicClose(); return; }
+  if(e.target.id==='aicMuteBtn'){
+    aicMuted = !aicMuted;
+    try { localStorage.setItem('aic_muted', aicMuted ? '1' : '0'); } catch(err) {}
+    aicUpdateMuteBtn();
+    return;
+  }
 
   if(!root.contains(e.target)) return;
 
@@ -699,11 +789,50 @@ document.addEventListener('click', function(e){
   if(themePick){
     var key = themePick.dataset.aicTheme;
     aicState.theme = key;
-    if(key==='marriage'){ aicState.phase='marriageChoice'; } else { aicState.effectiveTheme=key; aicState.phase='input'; }
-    aicRender(); return;
+    if(key==='marriage'){
+      // 逐次表示1段階目：「結婚」という選択だけを見せる（marriagePicked）。
+      aicState.phase='marriagePicked';
+      aicPlayPop();
+      aicRender();
+      setTimeout(function(){
+        if(aicState.phase==='marriagePicked'){
+          aicState.phase='marriageChoice';
+          aicPlayPop();
+          aicRender();
+        }
+      }, 550);
+    } else {
+      aicState.effectiveTheme=key;
+      // 逐次表示1段階目：選んだテーマ名だけを見せる（themePicked）。
+      aicState.phase='themePicked';
+      aicPlayPop();
+      aicRender();
+      setTimeout(function(){
+        if(aicState.phase==='themePicked'){
+          aicState.phase='input';
+          aicPlayPop();
+          aicRender();
+        }
+      }, 550);
+    }
+    return;
   }
   var marriagePick = e.target.closest('[data-aic-marriage]');
-  if(marriagePick){ aicState.effectiveTheme = marriagePick.dataset.aicMarriage; aicState.phase='input'; aicRender(); return; }
+  if(marriagePick){
+    aicState.effectiveTheme = marriagePick.dataset.aicMarriage;
+    // 逐次表示1段階目：結婚の2択のうち選んだ方だけを見せる（marriageSubPicked）。
+    aicState.phase='marriageSubPicked';
+    aicPlayPop();
+    aicRender();
+    setTimeout(function(){
+      if(aicState.phase==='marriageSubPicked'){
+        aicState.phase='input';
+        aicPlayPop();
+        aicRender();
+      }
+    }, 550);
+    return;
+  }
 
   var mbti = e.target.closest('[data-aic-mbti]'); if(mbti){ aicState.mbti = mbti.dataset.aicMbti; aicRender(); return; }
   var blood = e.target.closest('[data-aic-blood]'); if(blood){ aicState.blood = blood.dataset.aicBlood; aicRender(); return; }
