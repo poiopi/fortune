@@ -78,6 +78,7 @@ declare(strict_types=1);
 .aic-modal-close:hover{color:var(--aic-brass-lt);border-color:var(--aic-rule-3)}
 .aic-mute-btn{position:absolute;top:.65rem;right:calc(var(--aic-gut) + 34px);width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.1);background:rgba(5,7,13,.4);color:var(--aic-muted);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.68rem;z-index:2}
 .aic-mute-btn:hover{color:var(--aic-brass-lt);border-color:var(--aic-rule-3)}
+.aic-qr-btn:disabled,.aic-pick-btn:disabled{opacity:.4;cursor:not-allowed}
 
 .aic-thread{padding:.9rem var(--aic-gut) 1.1rem;overflow-y:auto;display:flex;flex-direction:column;gap:.7rem;flex:1;scrollbar-width:thin;scrollbar-color:var(--aic-panel-3) transparent}
 .aic-thread::-webkit-scrollbar{width:6px}
@@ -271,290 +272,19 @@ var AIC_YEARS = (function(){ var a=[],cy=new Date().getFullYear(); for(var y=cy;
 var AIC_MONTHS = Array.from({length:12},function(_,i){return i+1;});
 var AIC_DAYS = Array.from({length:31},function(_,i){return i+1;});
 
-var aicState = null;
-// 結果ラップ要素のid重複防止用カウンタ（「もう一度占う」で過去の結果ターンが
-// history配列にHTML文字列として蓄積されるため、固定idだと2周目以降に
-// document.getElementById()が古い履歴側の要素を返してしまう。連番idで一意化する）
-var aicResultSeq = 0;
-// 「他にも知りたいことはありますか？」行（continueRow）のid重複防止用カウンタ。
-// aicResultSeqと同じ問題がaicContinueRow（旧固定id）でも発生するため、
-// 用途混同を避けて専用カウンタを新設し連番idで一意化する。
-var aicContinueSeq = 0;
-function aicInitialState(keepHistory){
-  return {
-    phase:'theme', theme:null, effectiveTheme:null,
-    single:{y:'',m:'',d:''}, ms:{y:'',m:'',d:''}, mbti:null, blood:null,
-    sg:{y:'',m:'',d:''}, gender:null, name:'',
-    your:{y:'',m:'',d:''}, partner:{y:'',m:'',d:''},
-    openDD:null, resultData:null, errorMsg:null,
-    history: keepHistory ? aicState.history : [],
-    continueRowId: keepHistory ? aicState.continueRowId : null,
-    scrollTarget: null
-  };
-}
-aicState = aicInitialState();
-
 function aicEsc(s){
   return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
   });
 }
-
-// ── 日付ドロップダウン（自前実装。ネイティブ<select>は使わない） ──
-var aicDdFieldDefs = {};
-function aicDdField(prefix, part, list, current, suffix, placeholder){
-  var key = prefix+'-'+part;
-  var label = current ? (current+suffix) : placeholder;
-  aicDdFieldDefs[key] = { list:list, current:current, suffix:suffix, title:placeholder+'を選択' };
-  return '<div class="aic-dd-wrap">'
-    + '<button type="button" class="aic-dd-btn'+(current?'':' ph')+'" data-aic-dd-toggle="'+key+'">'+aicEsc(label)+'<span class="aic-dd-caret">▾</span></button>'
-    + '</div>';
-}
-function aicDateRow(prefix, d){
-  return '<div class="aic-date-row">'
-    + aicDdField(prefix,'y',AIC_YEARS,d.y,'年','年')
-    + aicDdField(prefix,'m',AIC_MONTHS,d.m,'月','月')
-    + aicDdField(prefix,'d',AIC_DAYS,d.d,'日','日')
-    + '</div>';
-}
-function aicDateReady(d){ return !!(d.y && d.m && d.d); }
-function aicThemeInputType(){
-  if(aicState.effectiveTheme==='marriage_self') return 'ms';
-  if(aicState.effectiveTheme==='marriage_person' || aicState.effectiveTheme==='compatibility') return 'dual';
-  var t = AIC_THEMES.filter(function(x){return x.key===aicState.effectiveTheme;})[0];
-  return t ? t.input : 'single';
-}
-function aicInputReady(){
-  var type = aicThemeInputType();
-  if(type==='single') return aicDateReady(aicState.single);
-  if(type==='sg') return aicDateReady(aicState.sg) && !!aicState.gender;
-  if(type==='sn') return aicDateReady(aicState.single) && !!(aicState.name && aicState.name.trim());
-  if(type==='ms') return aicDateReady(aicState.ms) && !!aicState.mbti && !!aicState.blood;
-  if(type==='dual') return aicDateReady(aicState.your) && aicDateReady(aicState.partner);
-  return false;
-}
-function aicPad2(n){ n=String(n); return n.length<2 ? '0'+n : n; }
-function aicBirthdayStr(d){ return d.y+'-'+aicPad2(d.m)+'-'+aicPad2(d.d); }
-
-function aicInputTurn(){
-  var type = aicThemeInputType(), body;
-  if(type==='single'){
-    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + aicDateRow('single', aicState.single) + '</div>';
-  } else if(type==='sg'){
-    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + aicDateRow('sg', aicState.sg)
-      + '<span class="aic-date-legend">性別</span><div class="aic-grid4" style="grid-template-columns:1fr 1fr">'
-        + '<button type="button" class="aic-pick-btn'+(aicState.gender==='male'?' picked':'')+'" data-aic-gender="male">男性</button>'
-        + '<button type="button" class="aic-pick-btn'+(aicState.gender==='female'?' picked':'')+'" data-aic-gender="female">女性</button>'
-      + '</div>'
-      + '<span class="aic-footnote" style="display:block">※大運（10年ごとの運気サイクル）の順行・逆行の判定に使います</span>'
-      + '</div>';
-  } else if(type==='sn'){
-    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + aicDateRow('single', aicState.single)
-      + '<span class="aic-date-legend">お名前</span>'
-      + '<input type="text" class="aic-name-input" data-aic-name-input placeholder="例：山田 太郎" maxlength="20" value="'+aicEsc(aicState.name||'')+'">'
-      + '<span class="aic-footnote" style="display:block">※前世からのメッセージの抽出に使います（外部へは送信されません）</span>'
-      + '</div>';
-  } else if(type==='ms'){
-    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + aicDateRow('ms', aicState.ms)
-      + '<span class="aic-date-legend">MBTI</span><div class="aic-grid4">' + AIC_MBTI_TYPES.map(function(t){
-          return '<button type="button" class="aic-pick-btn'+(aicState.mbti===t?' picked':'')+'" data-aic-mbti="'+t+'">'+t+'</button>';
-        }).join('') + '</div>'
-      + '<span class="aic-date-legend">血液型</span><div class="aic-grid4">' + AIC_BLOOD_TYPES.map(function(t){
-          return '<button type="button" class="aic-pick-btn aic-blood-btn'+(aicState.blood===t?' picked':'')+'" data-aic-blood="'+t+'">'+t+'型</button>';
-        }).join('') + '</div>'
-      + '</div>';
-  } else {
-    body = '<div class="aic-date-inline"><span class="aic-date-legend">あなたの生年月日</span>' + aicDateRow('your', aicState.your)
-      + '<span class="aic-date-legend">お相手の生年月日</span>' + aicDateRow('partner', aicState.partner)
-      + '</div>';
-  }
-  var ready = aicInputReady();
-  return '<div class="aic-row bot"><div class="aic-stack">'
-    + '<div class="aic-bubble">'+(type==='sg' ? '生年月日と性別を教えてください' : type==='sn' ? '生年月日とお名前を教えてください' : '生年月日を教えてください')+'<span class="aic-sub">'+aicEsc(AIC_INPUT_SUB[aicState.effectiveTheme])+'</span></div>'
-    + body
-    + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" data-aic-back>← 最初から</button>'
-    + '<button type="button" class="aic-qr-btn" data-aic-submit style="background:linear-gradient(180deg,#f5e4b8,#c0913c);color:#1d1407;border-color:#6d4f19"'+(ready?'':' disabled')+'>読み解いてもらう</button></div>'
-    + '</div></div>';
-}
-
-// ── 結果表示（本文はプレースホルダーのみ生成し、実データはrender()後にtextContentで挿入する） ──
-// headlineOnly=trueの場合、見出しの吹き出しだけを返す（逐次表示の1段階目、resultHeadlineフェーズ用）。
-function aicResultTurn(headlineOnly){
-  var t = aicState.effectiveTheme, badge = '';
-  var r = aicState.resultData || {};
-  if(t==='kaiun') badge = r.star || '';
-  var headlineHtml = '<div class="aic-bubble headline">'+aicEsc(AIC_RESULT_HEADINGS[t])+'、読み解きました' + (badge?'<span class="aic-sub"><span class="aic-result-badge" data-aic-text="star"></span></span>':'') + '</div>' + aicTimeTag();
-  if(headlineOnly){
-    return '<div class="aic-row bot" id="'+aicEsc(aicState.resultRowId)+'"><div class="aic-stack" style="max-width:100%">' + headlineHtml + '</div></div>';
-  }
-  var bodyHtml = '';
-  if(t==='self'){
-    bodyHtml = '<div class="aic-angle-block"><p class="aic-angle-title">◎ あなたの強み</p><ul class="aic-angle-list" data-aic-list="strengths"></ul></div>'
-      + '<div class="aic-angle-block"><p class="aic-angle-title">△ 気をつけたい傾向</p><ul class="aic-angle-list" data-aic-list="weaknesses"></ul></div>'
-      + '<div class="aic-angle-block"><p class="aic-angle-title">👥 人との関わり方</p><p class="aic-result-body" data-aic-text="relations"></p></div>';
-  } else if(t==='marriage_person' || t==='compatibility'){
-    bodyHtml = '<div class="aic-stars" data-aic-stars></div><div class="aic-score-label" data-aic-text="label"></div><p class="aic-result-body" style="margin-top:.5rem" data-aic-text="reasonText"></p>';
-  } else if(t==='timing'){
-    bodyHtml = '<div class="aic-angle-block"><p class="aic-angle-title">今年の運気</p><p class="aic-result-body" data-aic-text="yearText"></p></div>'
-      + '<div class="aic-angle-block"><p class="aic-angle-title">今の10年の運気</p>'
-      + '<p class="aic-angle-subtitle">傾向</p><p class="aic-result-body" data-aic-text="decadeGodText"></p>'
-      + '<p class="aic-angle-subtitle" style="margin-top:.5rem">エネルギーの流れ</p><p class="aic-result-body" data-aic-text="decadeJuniText"></p></div>';
-  } else if(t==='zense'){
-    bodyHtml = '<p class="aic-result-body" data-aic-text="message"></p><p class="aic-mission-line">今世の使命：<span data-aic-text="mission"></span></p>';
-  } else {
-    bodyHtml = '<p class="aic-result-body" data-aic-text="resultText"></p>';
-  }
-  var link = AIC_RESULT_LINKS[t];
-  return '<div class="aic-row bot" id="'+aicEsc(aicState.resultRowId)+'"><div class="aic-stack" style="max-width:100%">'
-    + headlineHtml
-    + '<div class="aic-stack" style="max-width:100%"><div class="aic-result-wrap" id="'+aicEsc(aicState.resultId)+'">'+bodyHtml+'</div></div>'
-    + '<span class="aic-footnote">※既存の占いデータに基づく鑑定結果です。</span>'
-    + (link ? '<a href="'+link.url+'" class="aic-result-link">'+aicEsc(link.label)+' →</a>' : '')
-    + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" data-aic-retry>もう一度占う</button></div>'
-    + '</div></div>';
-}
-// resultTurn描画後、APIレスポンスの実データをtextContentで流し込む（innerHTML不使用）
-function aicFillResultData(){
-  var wrap = document.getElementById(aicState.resultId);
-  if(!wrap) return;
-  var r = aicState.resultData || {};
-  var t = aicState.effectiveTheme;
-  wrap.querySelectorAll('[data-aic-text]').forEach(function(el){
-    var key = el.getAttribute('data-aic-text');
-    el.textContent = (r[key] != null) ? r[key] : '';
-  });
-  var badgeEl = wrap.querySelector('.aic-result-badge[data-aic-text="star"]');
-  if(badgeEl) badgeEl.textContent = r.star || '';
-  wrap.querySelectorAll('[data-aic-list]').forEach(function(ul){
-    var key = ul.getAttribute('data-aic-list');
-    var arr = r[key] || [];
-    ul.innerHTML = '';
-    arr.forEach(function(item){
-      var li = document.createElement('li');
-      li.textContent = item;
-      ul.appendChild(li);
-    });
-  });
-  var starsEl = wrap.querySelector('[data-aic-stars]');
-  if(starsEl){
-    var score = r.score || 0, html = '';
-    for(var i=1;i<=5;i++) html += '<span class="'+(i<=score?'aic-star-on':'aic-star-off')+'">★</span>';
-    starsEl.innerHTML = html;
-  }
-}
-
-function aicRender(){
-  var thread = document.getElementById('aicThread');
-  if(!thread) return;
-
-  var stepEl = document.getElementById('aicStepCount');
-  var fillEl = document.getElementById('aicProgressFill');
-  var step = aicPhaseStep();
-  if(stepEl) stepEl.textContent = step + ' / 4';
-  if(fillEl) fillEl.style.width = (step*25) + '%';
-
-  var html = '';
-  html += aicState.history.join('');
-
-  var isFirstTurn = aicState.history.length === 0;
-  var themeStackClass = 'aic-stack' + (aicState.phase==='theme' ? ' aic-stack-full' : '');
-  html += '<div class="aic-row bot"'+(isFirstTurn ? '' : ' id="'+aicEsc(aicState.continueRowId)+'"')+'><div class="'+themeStackClass+'">'
-    + '<div class="aic-bubble headline">'+(isFirstTurn ? 'こんにちは。<br>何について知りたいですか？' : '他にも知りたいことはありますか？')+'</div>'
-    + aicTimeTag()
-    + (aicState.phase==='theme'
-        ? '<div class="aic-qr grid2">'+AIC_THEMES.map(function(t){
-            return '<button type="button" class="aic-qr-btn" data-aic-theme="'+t.key+'"><span class="aic-card-icon">'+(AIC_THEME_ICONS[t.key]||'')+'</span>'+aicEsc(t.name)+'<span class="aic-tag">'+aicEsc(t.desc)+'</span></button>';
-          }).join('')+'</div>'
-          + '<span class="aic-footnote" style="display:block;margin-top:.2rem">他にも準備中のテーマがあります（'+AIC_SOON.join('・')+'）</span>'
-        : '')
-    + '</div></div>';
-
-  if(aicState.phase!=='theme'){
-    var picked = AIC_THEMES.filter(function(t){return t.key===aicState.theme;})[0];
-    html += '<div class="aic-row user"><div class="aic-stack" style="align-items:flex-end"><div class="aic-bubble user">'+(picked?aicEsc(picked.name):'')+'</div>'+aicTimeTag()+'</div></div>';
-    // themePicked（テーマを選んだ直後、逐次表示の1段階目）ではまだ相槌を出さない。
-    // ユーザーの選択が先に見え、間を置いてから相槌が届く、という会話らしい間を作るため。
-    if(aicState.theme!=='marriage' && picked && aicState.phase!=='themePicked'){
-      html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble">'+aicEsc(picked.ack)+'</div>'+aicTimeTag()+'</div></div>';
-    }
-  }
-
-  // marriagePicked（「結婚」を選んだ直後）では、まだ選択肢の質問を出さない（同上の理由）。
-  if(aicState.theme==='marriage' && aicState.phase!=='marriagePicked'){
-    var marriageStackClass = 'aic-stack' + (aicState.phase==='marriageChoice' ? ' aic-stack-full' : '');
-    html += '<div class="aic-row bot"><div class="'+marriageStackClass+'">'
-      + '<div class="aic-bubble">結婚について知りたいことを選んでください。</div>'
-      + (aicState.phase==='marriageChoice'
-          ? '<div class="aic-qr grid2">'+AIC_MARRIAGE_CHOICES.map(function(c){return '<button type="button" class="aic-qr-btn" data-aic-marriage="'+c.key+'">'+aicEsc(c.name)+'</button>';}).join('')+'</div>'
-          : aicTimeTag())
-      + '</div></div>';
-    if(aicState.effectiveTheme){
-      var pickedC = AIC_MARRIAGE_CHOICES.filter(function(c){return c.key===aicState.effectiveTheme;})[0];
-      html += '<div class="aic-row user"><div class="aic-stack" style="align-items:flex-end"><div class="aic-bubble user">'+(pickedC?aicEsc(pickedC.name):'')+'</div>'+aicTimeTag()+'</div></div>';
-      // marriageSubPicked（結婚の2択を選んだ直後）ではまだ相槌を出さない（同上の理由）。
-      if(pickedC && aicState.phase!=='marriageSubPicked') html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble">'+aicEsc(pickedC.ack)+'</div>'+aicTimeTag()+'</div></div>';
-    }
-  }
-
-  if(aicState.phase==='input') html += aicInputTurn();
-  // 「入力しました」は送信直後（submitted）〜結果確定後まで一貫して表示し続ける。
-  if(aicState.phase==='submitted' || aicState.phase==='loading' || aicState.phase==='resultHeadline' || aicState.phase==='result' || aicState.phase==='error'){
-    html += '<div class="aic-row user"><div class="aic-stack" style="align-items:flex-end"><div class="aic-bubble user">入力しました</div>'+aicTimeTag()+'</div></div>';
-  }
-  if(aicState.phase==='loading'){
-    html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble">ありがとうございます。</div><div class="aic-bubble"><span class="aic-typing"><span></span><span></span><span></span></span></div></div></div>';
-  }
-  if(aicState.phase==='error'){
-    html += '<div class="aic-row bot"><div class="aic-stack"><div class="aic-bubble aic-error-bubble">うまく読み解けませんでした。もう一度お試しください。</div>'+aicTimeTag()
-      + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" data-aic-retry-input>もう一度入力する</button></div></div></div>';
-  }
-  // resultHeadline（結果確定直後、逐次表示の1段階目）は見出しの吹き出しだけを見せる。
-  // 本文（aicFillResultDataで流し込む部分）は少し間を置いてからresultフェーズで表示する。
-  if(aicState.phase==='resultHeadline') html += aicResultTurn(true);
-  if(aicState.phase==='result') html += aicResultTurn(false);
-
-  thread.innerHTML = html;
-
-  if(aicState.phase==='result') aicFillResultData();
-
-  if(aicState.scrollTarget === 'continue' && aicState.continueRowId){
-    var continueRow = document.getElementById(aicState.continueRowId);
-    if(continueRow) continueRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  } else if(aicState.scrollTarget === 'result' && aicState.resultRowId){
-    // 結果表示時は「最下部へジャンプ」ではなく、新しい結果ターンの先頭
-    // （見出しを含む行）が画面上部に来るようscrollIntoViewする。履歴が
-    // 積み上がった2回目以降でも、最下部ジャンプだと見出しが視野外に
-    // 置き去りになるため（「もう一度占う」を繰り返すと再現）。
-    var resultRow = document.getElementById(aicState.resultRowId);
-    if(resultRow) resultRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    else thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
-  } else if(isFirstTurn && aicState.phase==='theme'){
-    // 初回の挨拶＋テーマ一覧表示時のみ自動スクロールしない。スレッド先頭が
-    // 挨拶文なのでそのままでよい。以前はここが素通りしてscrollHeightまで
-    // 飛んでいたため、テーマ一覧が長い場合に挨拶文が画面外に置き去りに
-    // なっていた。ただしphaseが'input'/'loading'等に進んだ後まで抑制すると、
-    // 初回ラウンド中ずっとスクロールされず入力欄・送信ボタンが隠れるため、
-    // phase==='theme'の場合に限定する。
-  } else {
-    thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
-  }
-  aicState.scrollTarget = null;
-  aicRenderPicker();
-}
-
 function aicNowTime(){
   var d = new Date();
   return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
 }
 function aicTimeTag(){ return '<span class="aic-msg-time">'+aicNowTime()+'</span>'; }
-function aicPhaseStep(){
-  if(aicState.phase==='theme' || aicState.phase==='marriageChoice' || aicState.phase==='themePicked' || aicState.phase==='marriagePicked' || aicState.phase==='marriageSubPicked') return 1;
-  if(aicState.phase==='input') return 2;
-  if(aicState.phase==='loading' || aicState.phase==='submitted') return 3;
-  return 4;
-}
 
-// ── 通知音（吹き出しが1つ表示されるたびに鳴らす軽いノイズ音） ──
+// ── 通知音（吹き出しを1つ追加するたびに鳴らす軽いノイズ音） ──
+// 「行を1つ追加する」処理そのものに紐付けることで、音と表示は常に1対1になる。
 var aicAudioCtx = null;
 var aicMuted = false;
 try { aicMuted = localStorage.getItem('aic_muted') === '1'; } catch(e) {}
@@ -599,11 +329,79 @@ function aicUpdateMuteBtn(){
   btn.setAttribute('aria-label', aicMuted ? '通知音をオンにする' : '通知音を消す');
 }
 
-// PC幅（461px以上）ではモーダルがタブの位置に応じて画面上を移動するため、
-// pickerシート（.aic-picker-sheet、.aic-overlay/.aic-modalとは別ツリーの兄弟要素で
-// 画面全体基準のposition:fixed）を、開くたびにモーダルのgetBoundingClientRect()に
-// 合わせてインラインスタイルで追従させる。スマホ幅では画面全体基準のまま
-// （インラインスタイルをクリアしてCSSのデフォルト位置に戻す）。
+// ── スレッドへの追加（土台となる唯一の描画操作） ──
+// 新しいメッセージは必ずこの関数で「1行追加」される。既存の行の中身を
+// 書き換えることはあっても（結果を待つ「入力中」を実際の結果に差し替える等）、
+// 既存の行を丸ごと作り直す・消して出し直すことは一切しない。
+function aicAddRow(side, stackHtml, opts){
+  var thread = document.getElementById('aicThread');
+  if(!thread) return null;
+  var row = document.createElement('div');
+  row.className = 'aic-row ' + side;
+  if(opts && opts.id) row.id = opts.id;
+  var stackClass = 'aic-stack' + (opts && opts.full ? ' aic-stack-full' : '');
+  var stackStyle = side === 'user' ? ' style="align-items:flex-end"' : '';
+  row.innerHTML = '<div class="' + stackClass + '"' + stackStyle + '>' + stackHtml + '</div>';
+  thread.appendChild(row);
+  aicPlayPop();
+  var stepEl = document.getElementById('aicStepCount');
+  var fillEl = document.getElementById('aicProgressFill');
+  if(opts && opts.step){
+    if(stepEl) stepEl.textContent = opts.step + ' / 4';
+    if(fillEl) fillEl.style.width = (opts.step*25) + '%';
+  }
+  // 初回の挨拶＋テーマ一覧だけは自動スクロールしない。テーマ一覧が縦に長い場合、
+  // 一番下までスクロールすると挨拶文が画面外に押し出されてしまうため
+  // （スレッドが空の状態で開いた直後はscrollTopが既に0なので、何もしなくてよい）。
+  if(!(opts && opts.noScroll)){
+    thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
+  }
+  return row;
+}
+
+// ── 日付ドロップダウン（自前実装。ネイティブ<select>は使わない） ──
+// 開いているピッカーが、今どの日付オブジェクト・どのボタン要素に対応しているかだけを
+// 覚えておく。ピッカーはスレッドの外にある共有の1つのオーバーレイなので、
+// 値が選ばれたら「そのボタンの表示」と「対応する日付オブジェクト」だけを更新する。
+var aicOpenPicker = null; // { list, current, suffix, title, onPick }
+function aicDdField(dateObj, part, list, suffix, placeholder, onChangeCheck){
+  var btnId = 'aicdd-' + Math.random().toString(36).slice(2);
+  var current = dateObj[part];
+  var label = current ? (current+suffix) : placeholder;
+  var html = '<div class="aic-dd-wrap">'
+    + '<button type="button" class="aic-dd-btn'+(current?'':' ph')+'" id="'+btnId+'">'+aicEsc(label)+'<span class="aic-dd-caret">▾</span></button>'
+    + '</div>';
+  // DOM挿入後にイベントを配線する必要があるため、呼び出し側でsetupを実行してもらう。
+  return { html: html, setup: function(){
+    var btn = document.getElementById(btnId);
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      aicOpenPicker = {
+        list: list, current: dateObj[part], suffix: suffix, title: placeholder+'を選択',
+        onPick: function(v){
+          dateObj[part] = v;
+          btn.textContent = v + suffix;
+          btn.classList.remove('ph');
+          var caret = document.createElement('span');
+          caret.className = 'aic-dd-caret'; caret.textContent = '▾';
+          btn.appendChild(caret);
+          if(onChangeCheck) onChangeCheck();
+        }
+      };
+      aicRenderPicker();
+    });
+  }};
+}
+function aicDateRow(dateObj, onChangeCheck){
+  var y = aicDdField(dateObj, 'y', AIC_YEARS, '年', '年', onChangeCheck);
+  var m = aicDdField(dateObj, 'm', AIC_MONTHS, '月', '月', onChangeCheck);
+  var d = aicDdField(dateObj, 'd', AIC_DAYS, '日', '日', onChangeCheck);
+  return { html: '<div class="aic-date-row">' + y.html + m.html + d.html + '</div>', setup: function(){ y.setup(); m.setup(); d.setup(); } };
+}
+function aicDateReady(d){ return !!(d.y && d.m && d.d); }
+function aicPad2(n){ n=String(n); return n.length<2 ? '0'+n : n; }
+function aicBirthdayStr(d){ return d.y+'-'+aicPad2(d.m)+'-'+aicPad2(d.d); }
+
 function aicPositionPickerSheet(sheet){
   if(!sheet) return;
   var isPcWidth = window.matchMedia('(min-width:461px)').matches;
@@ -629,16 +427,15 @@ function aicRenderPicker(){
   var titleEl = document.getElementById('aicPickerTitle');
   var listEl = document.getElementById('aicPickerList');
   if(!overlay) return;
-  if(!aicState.openDD){ overlay.classList.remove('open'); return; }
-  var def = aicDdFieldDefs[aicState.openDD];
-  if(!def){ overlay.classList.remove('open'); return; }
+  if(!aicOpenPicker){ overlay.classList.remove('open'); return; }
+  var def = aicOpenPicker;
   titleEl.textContent = def.title;
   listEl.innerHTML = def.list.map(function(v){
-    return '<button type="button" class="aic-dd-option'+(String(v)===String(def.current)?' sel':'')+'" data-aic-dd-pick="'+aicState.openDD+'|'+v+'">'+v+def.suffix+'</button>';
+    return '<button type="button" class="aic-dd-option'+(String(v)===String(def.current)?' sel':'')+'" data-v="'+aicEsc(String(v))+'">'+v+def.suffix+'</button>';
   }).join('');
   aicPositionPickerSheet(sheet);
   overlay.classList.add('open');
-  var targetValue = def.current || (aicState.openDD.slice(-2)==='-y' ? '2000' : null);
+  var targetValue = def.current || (def.suffix==='年' ? '2000' : null);
   if(targetValue){
     var idx = def.list.findIndex(function(v){ return String(v)===String(targetValue); });
     if(idx >= 0){
@@ -647,47 +444,194 @@ function aicRenderPicker(){
     }
   }
 }
+document.addEventListener('click', function(e){
+  var pick = e.target.closest('[data-v]');
+  if(pick && pick.closest('#aicPickerList') && aicOpenPicker){
+    aicOpenPicker.onPick(pick.dataset.v);
+    aicOpenPicker = null;
+    aicRenderPicker();
+    return;
+  }
+  if(e.target.id === 'aicPickerOverlay'){
+    aicOpenPicker = null;
+    aicRenderPicker();
+  }
+});
 
-// ── API呼び出し ──
+// ── 入力欄の組み立て（テーマごとの入力タイプに応じて変わる） ──
+function aicThemeInputType(effectiveTheme){
+  if(effectiveTheme==='marriage_self') return 'ms';
+  if(effectiveTheme==='marriage_person' || effectiveTheme==='compatibility') return 'dual';
+  var t = AIC_THEMES.filter(function(x){return x.key===effectiveTheme;})[0];
+  return t ? t.input : 'single';
+}
+
+// 現在開いている入力ターンの状態（1度に1つしか開かないため単一のオブジェクトでよい）。
+var aicForm = null;
+
+function aicInputReady(){
+  if(!aicForm) return false;
+  var type = aicForm.type;
+  if(type==='single') return aicDateReady(aicForm.single);
+  if(type==='sg') return aicDateReady(aicForm.sg) && !!aicForm.gender;
+  if(type==='sn') return aicDateReady(aicForm.single) && !!(aicForm.name && aicForm.name.trim());
+  if(type==='ms') return aicDateReady(aicForm.ms) && !!aicForm.mbti && !!aicForm.blood;
+  if(type==='dual') return aicDateReady(aicForm.your) && aicDateReady(aicForm.partner);
+  return false;
+}
 function aicBuildPayload(){
-  var type = aicThemeInputType(), theme = aicState.effectiveTheme, payload = { theme: theme };
+  var type = aicForm.type, theme = aicForm.effectiveTheme, payload = { theme: theme };
   if(type==='single'){
-    payload.birthday = aicBirthdayStr(aicState.single);
+    payload.birthday = aicBirthdayStr(aicForm.single);
   } else if(type==='sg'){
-    payload.birthday = aicBirthdayStr(aicState.sg);
-    payload.gender = aicState.gender;
+    payload.birthday = aicBirthdayStr(aicForm.sg);
+    payload.gender = aicForm.gender;
   } else if(type==='sn'){
-    payload.birthday = aicBirthdayStr(aicState.single);
-    payload.name = aicState.name.trim();
+    payload.birthday = aicBirthdayStr(aicForm.single);
+    payload.name = aicForm.name.trim();
   } else if(type==='ms'){
-    payload.birthday = aicBirthdayStr(aicState.ms);
-    payload.mbti = aicState.mbti;
-    payload.blood = aicState.blood;
+    payload.birthday = aicBirthdayStr(aicForm.ms);
+    payload.mbti = aicForm.mbti;
+    payload.blood = aicForm.blood;
   } else if(type==='dual'){
-    payload.yourBirthday = aicBirthdayStr(aicState.your);
-    payload.partnerBirthday = aicBirthdayStr(aicState.partner);
+    payload.yourBirthday = aicBirthdayStr(aicForm.your);
+    payload.partnerBirthday = aicBirthdayStr(aicForm.partner);
   }
   return payload;
 }
-function aicSubmit(){
+
+// 入力フォームの行を組み立てて追加する。送信ボタンの有効/無効判定用に
+// updateReady()を都度呼べるようにし、フォーム内の要素だけを更新する。
+function aicShowInputForm(effectiveTheme){
+  var type = aicThemeInputType(effectiveTheme);
+  aicForm = {
+    type: type, effectiveTheme: effectiveTheme,
+    single:{y:'',m:'',d:''}, ms:{y:'',m:'',d:''}, mbti:null, blood:null,
+    sg:{y:'',m:'',d:''}, gender:null, name:'',
+    your:{y:'',m:'',d:''}, partner:{y:'',m:'',d:''}
+  };
+  var submitBtnId = 'aic-submit-' + Math.random().toString(36).slice(2);
+  var setups = [];
+  var body;
+
+  function updateReady(){
+    var btn = document.getElementById(submitBtnId);
+    if(btn) btn.disabled = !aicInputReady();
+  }
+
+  if(type==='single'){
+    var r = aicDateRow(aicForm.single, updateReady); setups.push(r.setup);
+    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + r.html + '</div>';
+  } else if(type==='sg'){
+    var r = aicDateRow(aicForm.sg, updateReady); setups.push(r.setup);
+    var genderId1 = 'aic-g-' + Math.random().toString(36).slice(2);
+    var genderId2 = 'aic-g-' + Math.random().toString(36).slice(2);
+    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + r.html
+      + '<span class="aic-date-legend">性別</span><div class="aic-grid4" style="grid-template-columns:1fr 1fr">'
+        + '<button type="button" class="aic-pick-btn" id="'+genderId1+'">男性</button>'
+        + '<button type="button" class="aic-pick-btn" id="'+genderId2+'">女性</button>'
+      + '</div>'
+      + '<span class="aic-footnote" style="display:block">※大運（10年ごとの運気サイクル）の順行・逆行の判定に使います</span>'
+      + '</div>';
+    setups.push(function(){
+      var b1=document.getElementById(genderId1), b2=document.getElementById(genderId2);
+      function pick(v,btn,other){ aicForm.gender=v; btn.classList.add('picked'); other.classList.remove('picked'); updateReady(); }
+      if(b1) b1.addEventListener('click', function(){ pick('male', b1, b2); });
+      if(b2) b2.addEventListener('click', function(){ pick('female', b2, b1); });
+    });
+  } else if(type==='sn'){
+    var r = aicDateRow(aicForm.single, updateReady); setups.push(r.setup);
+    var nameId = 'aic-name-' + Math.random().toString(36).slice(2);
+    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + r.html
+      + '<span class="aic-date-legend">お名前</span>'
+      + '<input type="text" class="aic-name-input" id="'+nameId+'" placeholder="例：山田 太郎" maxlength="20">'
+      + '<span class="aic-footnote" style="display:block">※前世からのメッセージの抽出に使います（外部へは送信されません）</span>'
+      + '</div>';
+    setups.push(function(){
+      var input = document.getElementById(nameId);
+      if(input) input.addEventListener('input', function(){ aicForm.name = input.value; updateReady(); });
+    });
+  } else if(type==='ms'){
+    var r = aicDateRow(aicForm.ms, updateReady); setups.push(r.setup);
+    var mbtiIds = AIC_MBTI_TYPES.map(function(){ return 'aic-mbti-' + Math.random().toString(36).slice(2); });
+    var bloodIds = AIC_BLOOD_TYPES.map(function(){ return 'aic-blood-' + Math.random().toString(36).slice(2); });
+    body = '<div class="aic-date-inline"><span class="aic-date-legend">birth date</span>' + r.html
+      + '<span class="aic-date-legend">MBTI</span><div class="aic-grid4">' + AIC_MBTI_TYPES.map(function(t,i){
+          return '<button type="button" class="aic-pick-btn" id="'+mbtiIds[i]+'">'+t+'</button>';
+        }).join('') + '</div>'
+      + '<span class="aic-date-legend">血液型</span><div class="aic-grid4">' + AIC_BLOOD_TYPES.map(function(t,i){
+          return '<button type="button" class="aic-pick-btn aic-blood-btn" id="'+bloodIds[i]+'">'+t+'型</button>';
+        }).join('') + '</div>'
+      + '</div>';
+    setups.push(function(){
+      var mbtiBtns = mbtiIds.map(function(id){ return document.getElementById(id); });
+      mbtiBtns.forEach(function(btn, i){
+        if(!btn) return;
+        btn.addEventListener('click', function(){
+          aicForm.mbti = AIC_MBTI_TYPES[i];
+          mbtiBtns.forEach(function(b){ b && b.classList.remove('picked'); });
+          btn.classList.add('picked');
+          updateReady();
+        });
+      });
+      var bloodBtns = bloodIds.map(function(id){ return document.getElementById(id); });
+      bloodBtns.forEach(function(btn, i){
+        if(!btn) return;
+        btn.addEventListener('click', function(){
+          aicForm.blood = AIC_BLOOD_TYPES[i];
+          bloodBtns.forEach(function(b){ b && b.classList.remove('picked'); });
+          btn.classList.add('picked');
+          updateReady();
+        });
+      });
+    });
+  } else {
+    var ry = aicDateRow(aicForm.your, updateReady); setups.push(ry.setup);
+    var rp = aicDateRow(aicForm.partner, updateReady); setups.push(rp.setup);
+    body = '<div class="aic-date-inline"><span class="aic-date-legend">あなたの生年月日</span>' + ry.html
+      + '<span class="aic-date-legend">お相手の生年月日</span>' + rp.html
+      + '</div>';
+  }
+
+  var backBtnId = 'aic-back-' + Math.random().toString(36).slice(2);
+  var promptText = type==='sg' ? '生年月日と性別を教えてください' : type==='sn' ? '生年月日とお名前を教えてください' : '生年月日を教えてください';
+  var html = '<div class="aic-bubble">'+promptText+'<span class="aic-sub">'+aicEsc(AIC_INPUT_SUB[effectiveTheme])+'</span></div>'
+    + body
+    + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" id="'+backBtnId+'">← 最初から</button>'
+    + '<button type="button" class="aic-qr-btn" id="'+submitBtnId+'" style="background:linear-gradient(180deg,#f5e4b8,#c0913c);color:#1d1407;border-color:#6d4f19" disabled>読み解いてもらう</button></div>';
+
+  var row = aicAddRow('bot', html, { step: 2 });
+  setups.forEach(function(fn){ fn(); });
+  var backBtn = document.getElementById(backBtnId);
+  var submitBtn = document.getElementById(submitBtnId);
+  if(backBtn) backBtn.addEventListener('click', function(){ aicHandleBack(); });
+  if(submitBtn) submitBtn.addEventListener('click', function(){ aicHandleSubmit(row, submitBtn, backBtn); });
+  return row;
+}
+
+function aicFreezeRowButtons(row){
+  if(!row) return;
+  row.querySelectorAll('button').forEach(function(b){ b.disabled = true; });
+}
+
+// ── 送信〜結果表示 ──
+function aicHandleSubmit(formRow, submitBtn, backBtn){
   if(!aicInputReady()) return;
-  // 逐次表示1段階目：まず「入力しました」だけを見せる（submitted）。
-  aicState.phase='submitted';
-  aicPlayPop();
-  aicRender();
-  // 少し間を置いてから「ありがとうございます」＋入力中インジケーターを見せる（loading）。
-  // phaseが変わっていないかガードするのは、その間にAPIが即座に返ってきて
-  // 既にresult系へ進んでいた場合に、古いタイマーがloadingへ巻き戻すのを防ぐため。
-  setTimeout(function(){
-    if(aicState.phase==='submitted'){
-      aicState.phase='loading';
-      aicPlayPop();
-      aicRender();
-    }
-  }, 500);
+  aicFreezeRowButtons(formRow);
+  var input = formRow.querySelector('.aic-name-input');
+  if(input) input.disabled = true;
+
+  aicAddRow('user', '<div class="aic-bubble user">入力しました</div>' + aicTimeTag(), { step: 3 });
+
   var payload = aicBuildPayload();
   var startedAt = Date.now();
   var MIN_DELAY = 900;
+  var typingRow = null;
+
+  setTimeout(function(){
+    typingRow = aicAddRow('bot', '<div class="aic-bubble">ありがとうございます。</div><div class="aic-bubble"><span class="aic-typing"><span></span><span></span><span></span></span></div>', { step: 3 });
+  }, 500);
+
   fetch('/api/fortune-chat.php', {
     method:'POST',
     headers:{'Content-Type':'application/json'},
@@ -695,40 +639,180 @@ function aicSubmit(){
   }).then(function(res){
     return res.json().then(function(data){ return { ok: res.ok, data: data }; });
   }).then(function(result){
+    finish(result, null);
+  }).catch(function(err){
+    finish(null, err);
+  });
+
+  function finish(result, err){
     var elapsed = Date.now() - startedAt;
     var wait = Math.max(0, MIN_DELAY - elapsed);
     setTimeout(function(){
-      if(!result.ok || result.data.error){
-        aicState.phase = 'error';
-        aicRender();
+      if(!typingRow){
+        // まだ「ありがとうございます」ターンが来ていない場合は、それを先に出してから結果へ。
+        typingRow = aicAddRow('bot', '<div class="aic-bubble">ありがとうございます。</div><div class="aic-bubble"><span class="aic-typing"><span></span><span></span><span></span></span></div>', { step: 3 });
+      }
+      if(err || !result.ok || result.data.error){
+        aicPlayPop();
+        var stepEl = document.getElementById('aicStepCount');
+        var fillEl = document.getElementById('aicProgressFill');
+        if(stepEl) stepEl.textContent = '4 / 4';
+        if(fillEl) fillEl.style.width = '100%';
+        var bubble = typingRow.querySelector('.aic-bubble:last-child');
+        if(bubble) bubble.outerHTML = '<div class="aic-bubble aic-error-bubble">うまく読み解けませんでした。もう一度お試しください。</div>' + aicTimeTag();
+        var retryBtnId = 'aic-retryinput-' + Math.random().toString(36).slice(2);
+        var stack = typingRow.querySelector('.aic-stack');
+        stack.insertAdjacentHTML('beforeend', '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" id="'+retryBtnId+'">もう一度入力する</button></div>');
+        document.getElementById(retryBtnId).addEventListener('click', function(){
+          aicFreezeRowButtons(typingRow);
+          aicShowInputForm(aicForm.effectiveTheme);
+        });
         return;
       }
-      aicState.resultData = result.data;
-      ++aicResultSeq;
-      aicState.resultId = 'aicResultWrap-' + aicResultSeq;
-      aicState.resultRowId = 'aicResultRow-' + aicResultSeq;
-      // 逐次表示2段階目：まず見出しの吹き出しだけを見せる（resultHeadline）。
-      aicState.phase = 'resultHeadline';
-      aicState.scrollTarget = 'result';
-      aicPlayPop();
-      aicRender();
-      // 少し間を置いてから本文を見せる（result）。
-      setTimeout(function(){
-        if(aicState.phase === 'resultHeadline'){
-          aicState.phase = 'result';
-          aicState.scrollTarget = 'result';
-          aicRender();
-        }
-      }, 650);
+      aicShowResult(typingRow, aicForm.effectiveTheme, result.data);
     }, wait);
-  }).catch(function(){
-    var elapsed = Date.now() - startedAt;
-    var wait = Math.max(0, MIN_DELAY - elapsed);
-    setTimeout(function(){
-      aicState.phase = 'error';
-      aicRender();
-    }, wait);
+  }
+}
+
+function aicResultBodyHtml(t){
+  if(t==='self'){
+    return '<div class="aic-angle-block"><p class="aic-angle-title">◎ あなたの強み</p><ul class="aic-angle-list" data-aic-list="strengths"></ul></div>'
+      + '<div class="aic-angle-block"><p class="aic-angle-title">△ 気をつけたい傾向</p><ul class="aic-angle-list" data-aic-list="weaknesses"></ul></div>'
+      + '<div class="aic-angle-block"><p class="aic-angle-title">👥 人との関わり方</p><p class="aic-result-body" data-aic-text="relations"></p></div>';
+  } else if(t==='marriage_person' || t==='compatibility'){
+    return '<div class="aic-stars" data-aic-stars></div><div class="aic-score-label" data-aic-text="label"></div><p class="aic-result-body" style="margin-top:.5rem" data-aic-text="reasonText"></p>';
+  } else if(t==='timing'){
+    return '<div class="aic-angle-block"><p class="aic-angle-title">今年の運気</p><p class="aic-result-body" data-aic-text="yearText"></p></div>'
+      + '<div class="aic-angle-block"><p class="aic-angle-title">今の10年の運気</p>'
+      + '<p class="aic-angle-subtitle">傾向</p><p class="aic-result-body" data-aic-text="decadeGodText"></p>'
+      + '<p class="aic-angle-subtitle" style="margin-top:.5rem">エネルギーの流れ</p><p class="aic-result-body" data-aic-text="decadeJuniText"></p></div>';
+  } else if(t==='zense'){
+    return '<p class="aic-result-body" data-aic-text="message"></p><p class="aic-mission-line">今世の使命：<span data-aic-text="mission"></span></p>';
+  }
+  return '<p class="aic-result-body" data-aic-text="resultText"></p>';
+}
+// APIレスポンスの実データは、生成したプレースホルダー(data-aic-text等)に対して
+// textContentで挿入する（innerHTMLは使わない＝XSS対策）。この関数はwrap要素
+// 1つに対してのみ作用する、常にスコープの絞られた操作。
+function aicFillResultData(wrap, r){
+  wrap.querySelectorAll('[data-aic-text]').forEach(function(el){
+    var key = el.getAttribute('data-aic-text');
+    el.textContent = (r[key] != null) ? r[key] : '';
   });
+  var badgeEl = wrap.querySelector('.aic-result-badge[data-aic-text="star"]');
+  if(badgeEl) badgeEl.textContent = r.star || '';
+  wrap.querySelectorAll('[data-aic-list]').forEach(function(ul){
+    var key = ul.getAttribute('data-aic-list');
+    var arr = r[key] || [];
+    arr.forEach(function(item){
+      var li = document.createElement('li');
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+  });
+  var starsEl = wrap.querySelector('[data-aic-stars]');
+  if(starsEl){
+    var score = r.score || 0, html = '';
+    for(var i=1;i<=5;i++) html += '<span class="'+(i<=score?'aic-star-on':'aic-star-off')+'">★</span>';
+    starsEl.innerHTML = html;
+  }
+}
+
+// 「入力中」の吹き出しを、見出しに置き換える → 少し間を置いて本文を新しい行として
+// 追加する、という2段階。触るのはtypingRowという1行だけで、それより上には触れない。
+function aicShowResult(typingRow, effectiveTheme, resultData){
+  var t = effectiveTheme, badge = '';
+  if(t==='kaiun') badge = resultData.star || '';
+  aicPlayPop();
+  var headlineHtml = '<div class="aic-bubble headline">'+aicEsc(AIC_RESULT_HEADINGS[t])+'、読み解きました' + (badge?'<span class="aic-sub"><span class="aic-result-badge" data-aic-text="star"></span></span>':'') + '</div>' + aicTimeTag();
+  var bubble = typingRow.querySelector('.aic-bubble:last-child');
+  if(bubble) bubble.outerHTML = headlineHtml;
+  if(badge){
+    var badgeEl = typingRow.querySelector('.aic-result-badge[data-aic-text="star"]');
+    if(badgeEl) badgeEl.textContent = badge;
+  }
+
+  setTimeout(function(){
+    ++aicResultSeq;
+    var resultId = 'aicResultWrap-' + aicResultSeq;
+    var link = AIC_RESULT_LINKS[t];
+    var retryBtnId = 'aic-retry-' + Math.random().toString(36).slice(2);
+    var html = '<div class="aic-result-wrap" id="'+resultId+'">' + aicResultBodyHtml(t) + '</div>'
+      + '<span class="aic-footnote">※既存の占いデータに基づく鑑定結果です。</span>'
+      + (link ? '<a href="'+link.url+'" class="aic-result-link">'+aicEsc(link.label)+' →</a>' : '')
+      + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" id="'+retryBtnId+'">もう一度占う</button></div>';
+    var row = aicAddRow('bot', html, { step: 4, full: true });
+    var wrap = document.getElementById(resultId);
+    if(wrap) aicFillResultData(wrap, resultData);
+    document.getElementById(retryBtnId).addEventListener('click', function(){
+      aicFreezeRowButtons(row);
+      aicShowContinue();
+    });
+  }, 650);
+}
+
+// ── テーマ選択・結婚分岐 ──
+var aicResultSeq = 0;
+
+function aicShowThemeGrid(isFirst){
+  var greeting = isFirst ? 'こんにちは。<br>何について知りたいですか？' : '他にも知りたいことはありますか？';
+  var html = '<div class="aic-bubble headline">'+greeting+'</div>' + aicTimeTag()
+    + '<div class="aic-qr grid2">'+AIC_THEMES.map(function(t){
+        return '<button type="button" class="aic-qr-btn" data-aic-theme="'+t.key+'"><span class="aic-card-icon">'+(AIC_THEME_ICONS[t.key]||'')+'</span>'+aicEsc(t.name)+'<span class="aic-tag">'+aicEsc(t.desc)+'</span></button>';
+      }).join('')+'</div>'
+    + '<span class="aic-footnote" style="display:block;margin-top:.2rem">他にも準備中のテーマがあります（'+AIC_SOON.join('・')+'）</span>';
+  var row = aicAddRow('bot', html, { full: true, step: 1, noScroll: isFirst });
+  row.querySelectorAll('[data-aic-theme]').forEach(function(btn){
+    btn.addEventListener('click', function(){ aicHandleThemePick(btn, btn.dataset.aicTheme); });
+  });
+  return row;
+}
+function aicShowContinue(){
+  aicShowThemeGrid(false);
+}
+
+function aicHandleThemePick(gridRow, key){
+  aicFreezeRowButtons(gridRow);
+  var picked = AIC_THEMES.filter(function(t){return t.key===key;})[0];
+  aicAddRow('user', '<div class="aic-bubble user">'+(picked?aicEsc(picked.name):'')+'</div>'+aicTimeTag(), { step: 1 });
+
+  if(key==='marriage'){
+    setTimeout(function(){
+      var html = '<div class="aic-bubble">結婚について知りたいことを選んでください。</div>'
+        + '<div class="aic-qr grid2">'+AIC_MARRIAGE_CHOICES.map(function(c){return '<button type="button" class="aic-qr-btn" data-aic-marriage="'+c.key+'">'+aicEsc(c.name)+'</button>';}).join('')+'</div>';
+      var row = aicAddRow('bot', html, { full: true, step: 1 });
+      row.querySelectorAll('[data-aic-marriage]').forEach(function(btn){
+        btn.addEventListener('click', function(){ aicHandleMarriagePick(row, btn.dataset.aicMarriage); });
+      });
+    }, 550);
+    return;
+  }
+
+  setTimeout(function(){
+    aicAddRow('bot', '<div class="aic-bubble">'+aicEsc(picked.ack)+'</div>'+aicTimeTag(), { step: 1 });
+    setTimeout(function(){
+      aicShowInputForm(key);
+    }, 550);
+  }, 550);
+}
+
+function aicHandleMarriagePick(choiceRow, key){
+  aicFreezeRowButtons(choiceRow);
+  var pickedC = AIC_MARRIAGE_CHOICES.filter(function(c){return c.key===key;})[0];
+  aicAddRow('user', '<div class="aic-bubble user">'+(pickedC?aicEsc(pickedC.name):'')+'</div>'+aicTimeTag(), { step: 1 });
+  setTimeout(function(){
+    aicAddRow('bot', '<div class="aic-bubble">'+aicEsc(pickedC.ack)+'</div>'+aicTimeTag(), { step: 1 });
+    setTimeout(function(){
+      aicShowInputForm(key);
+    }, 550);
+  }, 550);
+}
+
+function aicHandleBack(){
+  var thread = document.getElementById('aicThread');
+  if(thread) thread.innerHTML = '';
+  aicForm = null;
+  aicShowThemeGrid(true);
 }
 
 // ── モーダル開閉 ──
@@ -743,10 +827,6 @@ function aicOpen(anchorRect){
   if(modal){
     var isPcWidth = window.matchMedia('(min-width:461px)').matches;
     if(anchorRect && isPcWidth){
-      // .aic-modalはdisplay:noneにはならず常時レイアウトされている（非表示はopacity:0で
-      // 行っている）ため、offsetHeightは呼び出し時点で必ず実測値を返す。
-      // 右側のフォールバック（window.innerHeight*0.9）は実質到達しないが、
-      // 万一CSSが変更されoffsetHeightが0になるケースに備えて保持する。
       var modalHeight = modal.offsetHeight || Math.round(window.innerHeight * 0.9);
       var centerY = anchorRect.top + anchorRect.height / 2;
       var top = centerY - modalHeight / 2;
@@ -761,13 +841,18 @@ function aicOpen(anchorRect){
 function aicClose(){
   var overlay = document.getElementById('aicOverlay');
   if(overlay) overlay.classList.remove('open');
-  aicState = aicInitialState();
-  aicRender();
+  var thread = document.getElementById('aicThread');
+  if(thread) thread.innerHTML = '';
+  aicForm = null;
+  aicOpenPicker = null;
 }
 window.openAiChatModal = function(anchorRect){
   aicOpen(anchorRect);
-  aicRender();
   aicUpdateMuteBtn();
+  var thread = document.getElementById('aicThread');
+  if(thread && !thread.firstChild){
+    aicShowThemeGrid(true);
+  }
 };
 
 // ── イベント委譲（クリック） ──
@@ -782,132 +867,6 @@ document.addEventListener('click', function(e){
     aicUpdateMuteBtn();
     return;
   }
-
-  if(!root.contains(e.target)) return;
-
-  var themePick = e.target.closest('[data-aic-theme]');
-  if(themePick){
-    var key = themePick.dataset.aicTheme;
-    aicState.theme = key;
-    if(key==='marriage'){
-      // 逐次表示1段階目：「結婚」という選択だけを見せる（marriagePicked）。
-      aicState.phase='marriagePicked';
-      aicPlayPop();
-      aicRender();
-      setTimeout(function(){
-        if(aicState.phase==='marriagePicked'){
-          aicState.phase='marriageChoice';
-          aicPlayPop();
-          aicRender();
-        }
-      }, 550);
-    } else {
-      aicState.effectiveTheme=key;
-      // 逐次表示1段階目：選んだテーマ名だけを見せる（themePicked）。
-      aicState.phase='themePicked';
-      aicPlayPop();
-      aicRender();
-      setTimeout(function(){
-        if(aicState.phase==='themePicked'){
-          aicState.phase='input';
-          aicPlayPop();
-          aicRender();
-        }
-      }, 550);
-    }
-    return;
-  }
-  var marriagePick = e.target.closest('[data-aic-marriage]');
-  if(marriagePick){
-    aicState.effectiveTheme = marriagePick.dataset.aicMarriage;
-    // 逐次表示1段階目：結婚の2択のうち選んだ方だけを見せる（marriageSubPicked）。
-    aicState.phase='marriageSubPicked';
-    aicPlayPop();
-    aicRender();
-    setTimeout(function(){
-      if(aicState.phase==='marriageSubPicked'){
-        aicState.phase='input';
-        aicPlayPop();
-        aicRender();
-      }
-    }, 550);
-    return;
-  }
-
-  var mbti = e.target.closest('[data-aic-mbti]'); if(mbti){ aicState.mbti = mbti.dataset.aicMbti; aicRender(); return; }
-  var blood = e.target.closest('[data-aic-blood]'); if(blood){ aicState.blood = blood.dataset.aicBlood; aicRender(); return; }
-  var gender = e.target.closest('[data-aic-gender]'); if(gender){ aicState.gender = gender.dataset.aicGender; aicRender(); return; }
-
-  if(e.target.closest('[data-aic-back]')){ aicState = aicInitialState(); aicRender(); return; }
-  if(e.target.closest('[data-aic-retry-input]')){ aicState.phase='input'; aicRender(); return; }
-  if(e.target.closest('[data-aic-retry]')){
-    var pastThread = document.getElementById('aicThread');
-    var fullHtml = pastThread ? pastThread.innerHTML : '';
-    // aicRender()は毎回 history.join('') を先頭に据えてhtmlを組み立てているため、
-    // fullHtmlのうち既にhistoryへ入っている分（priorHtml）を差し引き、今回新しく
-    // 追加された部分だけをhistoryにpushする。差し引かずに丸ごとpushすると、
-    // 「もう一度占う」を繰り返すたびに過去のhistoryが二重・三重に積み重なり、
-    // aicResultWrap-N等のidがDOM内に複数出現する不具合になっていた。
-    var priorHtml = aicState.history.join('');
-    // fullHtmlの先頭はpriorHtmlと一致するはず（aicRender()の構成上）。
-    // 一致しない想定外のケースは、fullHtml全体をpushすると過去history分も
-    // 巻き込んで二重・三重に積み重なる不具合を再現するため、今回分の
-    // history追記自体をスキップする（continueRowIdの更新だけは行う）。
-    var newPortion = (fullHtml.indexOf(priorHtml) === 0) ? fullHtml.slice(priorHtml.length) : null;
-    var tmp = document.createElement('div');
-    tmp.innerHTML = newPortion || '';
-    tmp.querySelectorAll('[data-aic-retry],[data-aic-back],[data-aic-retry-input]').forEach(function(btn){
-      var row = btn.closest('.aic-qr') || btn;
-      row.remove();
-    });
-    ++aicContinueSeq;
-    var newContinueRowId = 'aicContinueRow-' + aicContinueSeq;
-    aicState = aicInitialState(true);
-    if(newPortion !== null){
-      aicState.history.push(tmp.innerHTML); // 新規追加分のみ。不一致時はスキップ（重複回避を優先）
-    }
-    aicState.continueRowId = newContinueRowId;
-    aicState.scrollTarget = 'continue';
-    aicRender();
-    return;
-  }
-
-  if(e.target.closest('[data-aic-submit]')){ aicSubmit(); return; }
-
-  var ddToggle = e.target.closest('[data-aic-dd-toggle]');
-  if(ddToggle){
-    var k = ddToggle.dataset.aicDdToggle;
-    aicState.openDD = (aicState.openDD === k) ? null : k;
-    aicRender();
-    return;
-  }
-  var ddPick = e.target.closest('[data-aic-dd-pick]');
-  if(ddPick){
-    var pair = ddPick.dataset.aicDdPick.split('|');
-    var fieldKey = pair[0], value = pair[1];
-    var fp = fieldKey.split('-');
-    var map = { single:aicState.single, sg:aicState.sg, ms:aicState.ms, your:aicState.your, partner:aicState.partner };
-    var target = map[fp[0]];
-    if(target){ target[fp[1]] = value; }
-    aicState.openDD = null;
-    aicRender();
-    return;
-  }
-  if(e.target.id==='aicPickerOverlay'){
-    aicState.openDD = null;
-    aicRender();
-    return;
-  }
-});
-
-// 名前入力欄：キー入力のたびに全体render()を呼ぶとフォーカスが外れるため、
-// 状態更新と送信ボタンの有効/無効切り替えだけを直接行う。
-document.addEventListener('input', function(e){
-  if(e.target.matches('[data-aic-name-input]')){
-    aicState.name = e.target.value;
-    var submitBtn = document.querySelector('[data-aic-submit]');
-    if(submitBtn) submitBtn.disabled = !aicInputReady();
-  }
 });
 
 document.addEventListener('keydown', function(e){
@@ -918,4 +877,5 @@ document.addEventListener('keydown', function(e){
 });
 
 })();
+
 </script>
