@@ -1312,18 +1312,44 @@ form.addEventListener('submit', function(){
 
 <?php if ($result): ?>
 
-window.addEventListener('load', function(){
+(function(){
 
-    setTimeout(function(){
+    var el = document.getElementById('result');
+    if (!el) return;
 
-        document.getElementById('result').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+    // 利用者が操作したら、自動の移動はやめる
+    var touched = false;
+    ['wheel', 'touchstart', 'keydown'].forEach(function(t){
+        window.addEventListener(t, function(){ touched = true; }, { once: true, passive: true });
+    });
 
-    }, 100);
+    // htmlにscroll-behavior:smoothがあるため、instantを明示する
+    function targetY(){ return el.getBoundingClientRect().top + window.scrollY; }
+    function setY(y){ window.scrollTo({ top: y, behavior: 'instant' }); }
 
-});
+    // ブラウザ任せのsmooth scrollは読み込み中に止められるため、1コマずつ自前で動かす。
+    // 広告の差し込みで位置が変わっても着地できるよう、行き先は毎コマ計算し直す
+    var DURATION = 600;
+    var animating = true;
+    var startY = window.scrollY;
+    var startTime = null;
+    function step(now){
+        if (touched) { animating = false; return; }
+        if (startTime === null) startTime = now;
+        var t = Math.min((now - startTime) / DURATION, 1);
+        var ease = 1 - Math.pow(1 - t, 3); // 最後にゆっくり止まる
+        setY(startY + (targetY() - startY) * ease);
+        if (t < 1) requestAnimationFrame(step); else animating = false;
+    }
+    // このscriptはページ末尾にあるので、#resultはすでに存在する
+    requestAnimationFrame(step);
+
+    // 読み込み完了後、広告の差し込みで位置がずれていたら補正（アニメーション中・操作後は何もしない）
+    window.addEventListener('load', function(){
+        if (!touched && !animating) setY(targetY());
+    });
+
+})();
 
 <?php endif; ?>
 

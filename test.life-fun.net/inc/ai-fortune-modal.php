@@ -80,7 +80,7 @@ declare(strict_types=1);
 .aic-mute-btn:hover{color:var(--aic-brass-lt);border-color:var(--aic-rule-3)}
 .aic-qr-btn:disabled,.aic-pick-btn:disabled{opacity:.4;cursor:not-allowed}
 
-.aic-thread{padding:.9rem var(--aic-gut) 1.1rem;overflow-y:auto;display:flex;flex-direction:column;gap:.7rem;flex:1;scrollbar-width:thin;scrollbar-color:var(--aic-panel-3) transparent}
+.aic-thread{position:relative;padding:.9rem var(--aic-gut) 1.1rem;overflow-y:auto;display:flex;flex-direction:column;gap:.7rem;flex:1;scrollbar-width:thin;scrollbar-color:var(--aic-panel-3) transparent}
 .aic-thread::-webkit-scrollbar{width:6px}
 .aic-thread::-webkit-scrollbar-thumb{background:var(--aic-panel-3);border-radius:3px}
 .aic-row{display:flex;max-width:100%;animation:aicMsgIn .32s cubic-bezier(.22,1,.3,1) both}
@@ -161,6 +161,14 @@ declare(strict_types=1);
 .aic-mission-line{font-size:.76rem;color:var(--aic-muted);line-height:1.7;margin:0}
 
 .aic-error-bubble{color:#e8a3a3!important}
+
+/* スレッドの下にまだ続きがあるときだけ出す目印（下端のうす暗いぼかし＋↓ボタン） */
+.aic-more{position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(180deg,rgba(2,4,10,0),rgba(2,4,10,.92));display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px;pointer-events:none;opacity:0;transition:opacity .25s;z-index:3}
+.aic-more.show{opacity:1}
+.aic-more-btn{pointer-events:auto;width:30px;height:30px;border-radius:50%;border:1px solid var(--aic-rule-2);background:rgba(22,28,41,.85);color:var(--aic-brass-lt);font-size:.8rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;animation:aicNudge 1.6s ease-in-out infinite}
+.aic-more:not(.show) .aic-more-btn{pointer-events:none}
+@keyframes aicNudge{0%,100%{transform:translateY(0);opacity:.75}50%{transform:translateY(3px);opacity:1}}
+@media (prefers-reduced-motion:reduce){.aic-more-btn{animation:none}}
 </style>
 
 <div class="aic-root">
@@ -192,6 +200,7 @@ declare(strict_types=1);
       </div>
       <div class="aic-progress-track"><div class="aic-progress-fill" id="aicProgressFill" style="width:25%"></div></div>
       <div class="aic-thread" id="aicThread"></div>
+      <div class="aic-more" id="aicMore"><button type="button" class="aic-more-btn" id="aicMoreBtn" aria-label="下に続きがあります">↓</button></div>
     </div>
   </div>
   <div class="aic-picker-overlay" id="aicPickerOverlay">
@@ -350,13 +359,24 @@ function aicAddRow(side, stackHtml, opts){
     if(stepEl) stepEl.textContent = opts.step + ' / 4';
     if(fillEl) fillEl.style.width = (opts.step*25) + '%';
   }
-  // 初回の挨拶＋テーマ一覧だけは自動スクロールしない。テーマ一覧が縦に長い場合、
-  // 一番下までスクロールすると挨拶文が画面外に押し出されてしまうため
-  // （スレッドが空の状態で開いた直後はscrollTopが既に0なので、何もしなくてよい）。
-  if(!(opts && opts.noScroll)){
-    thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
-  }
+  // 中身を後から流し込む行（結果表示）は、流し込み終わった高さで位置を決める。
+  if(opts && opts.fill) opts.fill(row);
+  // 新しい行は、その行の先頭が見える位置までしかスクロールしない。一番下まで
+  // スクロールすると、長い行（テーマ一覧・入力フォーム・結果）の冒頭の文章が
+  // 画面外に押し出されるため。下に残った分は↓の目印（aicUpdateMore）で知らせる。
+  var maxScroll = thread.scrollHeight - thread.clientHeight;
+  var target = Math.min(maxScroll, row.offsetTop - 14);
+  if(target > thread.scrollTop) thread.scrollTo({ top: target, behavior: 'smooth' });
+  aicUpdateMore();
   return row;
+}
+
+function aicUpdateMore(){
+  var thread = document.getElementById('aicThread');
+  var more = document.getElementById('aicMore');
+  if(!thread || !more) return;
+  var hidden = thread.scrollHeight - thread.clientHeight - thread.scrollTop;
+  more.classList.toggle('show', hidden > 24);
 }
 
 // ── 日付ドロップダウン（自前実装。ネイティブ<select>は使わない） ──
@@ -667,6 +687,7 @@ function aicHandleSubmit(formRow, submitBtn, backBtn){
           aicFreezeRowButtons(typingRow);
           aicShowInputForm(aicForm.effectiveTheme);
         });
+        aicUpdateMore();
         return;
       }
       aicShowResult(typingRow, aicForm.effectiveTheme, result.data);
@@ -731,6 +752,7 @@ function aicShowResult(typingRow, effectiveTheme, resultData){
     var badgeEl = typingRow.querySelector('.aic-result-badge[data-aic-text="star"]');
     if(badgeEl) badgeEl.textContent = badge;
   }
+  aicUpdateMore();
 
   setTimeout(function(){
     ++aicResultSeq;
@@ -741,9 +763,10 @@ function aicShowResult(typingRow, effectiveTheme, resultData){
       + '<span class="aic-footnote">※既存の占いデータに基づく鑑定結果です。</span>'
       + (link ? '<a href="'+link.url+'" class="aic-result-link">'+aicEsc(link.label)+' →</a>' : '')
       + '<div class="aic-qr"><button type="button" class="aic-qr-btn ghost" id="'+retryBtnId+'">もう一度占う</button></div>';
-    var row = aicAddRow('bot', html, { step: 4, full: true });
-    var wrap = document.getElementById(resultId);
-    if(wrap) aicFillResultData(wrap, resultData);
+    var row = aicAddRow('bot', html, { step: 4, full: true, fill: function(r){
+      var wrap = r.querySelector('#' + resultId);
+      if(wrap) aicFillResultData(wrap, resultData);
+    }});
     document.getElementById(retryBtnId).addEventListener('click', function(){
       aicFreezeRowButtons(row);
       aicShowContinue();
@@ -761,7 +784,7 @@ function aicShowThemeGrid(isFirst){
         return '<button type="button" class="aic-qr-btn" data-aic-theme="'+t.key+'"><span class="aic-card-icon">'+(AIC_THEME_ICONS[t.key]||'')+'</span>'+aicEsc(t.name)+'<span class="aic-tag">'+aicEsc(t.desc)+'</span></button>';
       }).join('')+'</div>'
     + '<span class="aic-footnote" style="display:block;margin-top:.2rem">他にも準備中のテーマがあります（'+AIC_SOON.join('・')+'）</span>';
-  var row = aicAddRow('bot', html, { full: true, step: 1, noScroll: isFirst });
+  var row = aicAddRow('bot', html, { full: true, step: 1 });
   row.querySelectorAll('[data-aic-theme]').forEach(function(btn){
     btn.addEventListener('click', function(){ aicHandleThemePick(btn, btn.dataset.aicTheme); });
   });
@@ -845,6 +868,7 @@ function aicClose(){
   if(thread) thread.innerHTML = '';
   aicForm = null;
   aicOpenPicker = null;
+  aicUpdateMore();
 }
 window.openAiChatModal = function(anchorRect){
   aicOpen(anchorRect);
@@ -868,6 +892,15 @@ document.addEventListener('click', function(e){
     return;
   }
 });
+
+(function(){
+  var thread = document.getElementById('aicThread');
+  var moreBtn = document.getElementById('aicMoreBtn');
+  if(thread) thread.addEventListener('scroll', aicUpdateMore, { passive: true });
+  if(thread && moreBtn) moreBtn.addEventListener('click', function(){
+    thread.scrollTo({ top: thread.scrollHeight, behavior: 'smooth' });
+  });
+})();
 
 document.addEventListener('keydown', function(e){
   if(e.key === 'Escape'){
