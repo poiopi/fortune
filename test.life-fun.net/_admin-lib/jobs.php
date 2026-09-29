@@ -9,7 +9,7 @@ declare(strict_types=1);
  */
 
 const ADMIN_JOBS = [
-    // 毎分：生存記録（jobs テーブルの更新そのものが生存記録になる）＋投稿時刻が来たSNS投稿の処理＋新しいJSエラーの通知
+    // 毎分：生存記録（jobs テーブルの更新そのものが生存記録になる）＋投稿時刻が来たSNS投稿の処理＋新しいJSエラーの通知＋SEO点検の続き
     'minutely' => ['label' => '毎分',            'schedule' => 'minutely'],
     // 毎時：SNS投稿の先7日分の自動割り当て
     'hourly'   => ['label' => '毎時',            'schedule' => 'hourly'],
@@ -17,6 +17,10 @@ const ADMIN_JOBS = [
     'daily'    => ['label' => '毎日（深夜3時）', 'schedule' => 'daily', 'hour' => 3],
     // 毎日 21:00：翌日分の未承認リマインド・ストック残量の通知
     'evening'  => ['label' => '毎日（21時）',   'schedule' => 'daily', 'hour' => 21],
+    // 毎日 09:00：サイトヘルスの全項目（🔴の通知が日中に届くように朝に実行）
+    'health'   => ['label' => '毎日（9時）',    'schedule' => 'daily', 'hour' => 9],
+    // 毎週月曜 04:00：SEO点検の予約（毎日4時に動き、月曜だけ予約する。取得は毎分ジョブが1分100ページずつ）
+    'seo'      => ['label' => '毎週月曜（4時）', 'schedule' => 'daily', 'hour' => 4],
 ];
 
 /** cron が止まっているとみなすまでの分数（警告バー・ダッシュボード） */
@@ -28,6 +32,7 @@ const ADMIN_RETENTION_DAYS = [
     'audit_logs'     => ['column' => 'at',           'days' => 90],
     'cron_runs'      => ['column' => 'started_at',   'days' => 30],
     'notifications'  => ['column' => 'sent_at',      'days' => 90],
+    'health_changes' => ['column' => 'at',           'days' => 180],
 ];
 
 /** $now 時点で直近に来た実行予定時刻（これ以降に一度も動いていなければ実行する）。 */
@@ -101,10 +106,13 @@ function admin_job_handler(string $job): callable
         'minutely' => static fn (): string => implode('、', array_filter([
             ($n = admin_sns_process_due()) > 0 ? 'SNS投稿の時刻処理 ' . $n . '件' : '',
             admin_monitor_notify_new(),
+            admin_seo_tick(),
         ])),
-        'hourly'   => static fn (): string => 'SNS投稿の割り当て ' . admin_sns_assign() . '枠',
+        'hourly'   => static fn (): string => 'SNS投稿の割り当て ' . admin_sns_assign() . '枠、' . admin_health_run(false),
         'daily'    => 'admin_job_cleanup',
         'evening'  => static fn (): string => admin_sns_evening(),
+        'health'   => static fn (): string => admin_health_run(true),
+        'seo'      => static fn (): string => admin_seo_weekly(),
     };
 }
 

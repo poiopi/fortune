@@ -43,6 +43,9 @@ const ADMIN_AUDIT_LABELS = [
     'kanji_remove'       => '姓名判断の漢字を反映待ちから削除',
     'kanji_export'       => '姓名判断の画数表を出力',
     'unknown_kanji'      => '未登録の字の扱いを変更',
+    'health_run'         => 'サイトヘルスの手動実行',
+    'seo_run'            => 'SEO点検の予約',
+    'seo_issue'          => 'SEO点検の問題の扱いを変更',
 ];
 
 function admin_client_ip(): string

@@ -9,7 +9,12 @@ RewriteBase /
 # 開発用フォルダ（tools/docs/tests）はWebに公開しない（404を返す）
 # 2026-09-24、本番に tools/*.php・*.sh と docs/love/*.json がアップロードされ外部から
 # 実行・閲覧できる状態だったため追加（.vscode/sftp.json の除外設定との二重の守り）
-RewriteRule ^(tools|docs|tests)(/|$) - [R=404,L]
+# 2026-09-29、_scratch/（開発用のモックアップ）も本番で公開されていたため追加
+RewriteRule ^(tools|docs|tests|_scratch)(/|$) - [R=404,L]
+
+# 十干の解説記事は 2026-06-27 に articles/jikkan/ から articles/shichu/ へ移動した。
+# サーバーに旧フォルダが残り同じ内容が2か所で公開されていたため（2026-09-29 管理画面のSEO点検で発見）、恒久的に転送する
+RewriteRule ^articles/jikkan(/(.*))?$ /articles/shichu/$2 [R=301,L]
 
 # .php拡張子を省略したURLへ301リダイレクト（index.phpは除外）
 # GET/HEADのみを対象とする。301リダイレクトはPOSTボディを保持しないため、

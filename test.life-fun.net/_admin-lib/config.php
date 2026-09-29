@@ -29,6 +29,8 @@ function admin_config(): array
         'admin_origin' => $isStg ? 'https://test.life-fun.net' : 'https://life-fun.net',
         // ヘルスチェック・SEO点検の対象。STGからも本番を読む（ADMIN_IMPL_PLAN.md P7=B）
         'site_url'     => 'https://life-fun.net',
+        // ページ台帳が走査する本番の公開フォルダ。STGは本番の公開フォルダの中（web/test.life-fun.net）にあるため1つ上
+        'site_root'    => $isStg ? dirname($libDir, 2) : dirname($libDir),
         'timezone'     => 'Asia/Tokyo',
         // STGと本番でCookieが混ざらないよう名前を分ける
         'session_name' => $isStg ? 'lfadmin_stg' : 'lfadmin',

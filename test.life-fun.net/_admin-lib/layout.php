@@ -15,9 +15,9 @@ const ADMIN_MENU = [
     'errors'    => ['label' => 'エラー監視',     'path' => '/errors',  'ready' => true],
     'issues'    => ['label' => '既知の不具合',   'path' => '/issues',  'ready' => true],
     'kanji'     => ['label' => '姓名判断の漢字', 'path' => '/kanji',   'ready' => true],
-    'health'    => ['label' => 'サイトヘルス',   'path' => '/health',  'ready' => false],
-    'seo'       => ['label' => 'SEO点検',       'path' => '/seo',     'ready' => false],
-    'pages'     => ['label' => 'ページ台帳',     'path' => '/pages',   'ready' => false],
+    'health'    => ['label' => 'サイトヘルス',   'path' => '/health',  'ready' => true],
+    'seo'       => ['label' => 'SEO点検',       'path' => '/seo',     'ready' => true],
+    'pages'     => ['label' => 'ページ台帳',     'path' => '/pages',   'ready' => true],
     'settings'  => ['label' => '設定',          'path' => '/settings', 'ready' => true],
     'logs'      => ['label' => '操作ログ',       'path' => '/logs',    'ready' => true],
 ];
@@ -132,6 +132,10 @@ function admin_collect_warnings(): array
         if ($k['per_week'] > 0 && $k['days'] < ADMIN_STOCK_LOW_DAYS) {
             $warnings[] = ['text' => $k['label'] . 'のストックが残り' . $k['count'] . '件（約' . $k['days'] . '日分）です。', 'link' => '/sns/stock'];
         }
+    }
+    $redHealth = admin_db()->query("SELECT check_key FROM health_checks WHERE status = 'red'")->fetchAll(PDO::FETCH_COLUMN);
+    if ($redHealth !== []) {
+        $warnings[] = ['text' => 'サイトヘルスに🔴があります：' . implode('、', array_map(static fn (string $k): string => ADMIN_HEALTH_LABELS[$k] ?? $k, $redHealth)), 'link' => '/health'];
     }
     $openErrors = (int) admin_db()->query("SELECT COUNT(*) FROM client_errors WHERE status = 'open'")->fetchColumn();
     if ($openErrors > 0) {

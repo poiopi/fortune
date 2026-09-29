@@ -23,6 +23,9 @@ require_once __DIR__ . '/sns/scheduler.php';
 require_once __DIR__ . '/monitor.php';
 require_once __DIR__ . '/issues.php';
 require_once __DIR__ . '/seimei-kanji.php';
+require_once __DIR__ . '/health.php';
+require_once __DIR__ . '/pages.php';
+require_once __DIR__ . '/seo.php';
 
 date_default_timezone_set(admin_config()['timezone']);
 

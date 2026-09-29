@@ -209,3 +209,4 @@ a { color: var(--primary); }
 .form--tight form { margin: 0; }
 .table-wrap--spaced { margin: 12px 0; }
 .panel pre.preview { margin: 8px 0; }
+.health-icon { font-size: 16px; width: 2em; }
