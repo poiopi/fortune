@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-// SNS投稿：投稿予定（昨日〜13日後）。差し替え・取消・手動投稿（コピー → 投稿済にする）。
+// SNS投稿：投稿予定（昨日〜13日後 ＋ それより前に残っている未処理）。差し替え・取消・手動投稿（コピー → 投稿済にする）。
 
 require_once __DIR__ . '/../../_admin-lib/bootstrap.php';
 
@@ -60,16 +60,28 @@ $replaceDate = isset($_GET['replace']) && preg_match($datePattern, (string) $_GE
 
 $today = new DateTimeImmutable('today');
 $rules = admin_rotation_rules();
-$days = [];
+// 表示範囲（昨日〜）より前でも、手動投稿待ち・保留が残っている日は先頭に出す（警告から辿って片付けられるように）
+$overdue = admin_db()->prepare(
+    "SELECT DISTINCT slot_date FROM post_queue WHERE slot_date < ? AND status IN ('manual_pending', 'held') ORDER BY slot_date"
+);
+$overdue->execute([$today->modify('-1 day')->format('Y-m-d')]);
+$dates = [];
+foreach ($overdue->fetchAll(PDO::FETCH_COLUMN) as $date) {
+    $dates[] = [new DateTimeImmutable($date), true];
+}
 for ($i = -1; $i <= 13; $i++) {
-    $day = $today->modify(($i >= 0 ? '+' : '') . $i . ' day');
+    $dates[] = [$today->modify(($i >= 0 ? '+' : '') . $i . ' day'), false];
+}
+$days = [];
+foreach ($dates as [$day, $isOverdue]) {
     $date = $day->format('Y-m-d');
     $rows = admin_sns_slot_rows($date);
     $days[] = [
-        'date'  => $date,
-        'rule'  => $rules[(int) $day->format('w')] ?? null,
-        'rows'  => $rows,
-        'stock' => $rows !== [] ? admin_stock_get((int) $rows[0]['stock_id']) : null,
+        'date'    => $date,
+        'overdue' => $isOverdue,
+        'rule'    => $rules[(int) $day->format('w')] ?? null,
+        'rows'    => $rows,
+        'stock'   => $rows !== [] ? admin_stock_get((int) $rows[0]['stock_id']) : null,
     ];
 }
 
@@ -87,8 +99,9 @@ admin_render_flash();
 <?php foreach ($days as $day): $date = $day['date']; $stock = $day['stock']; $isPast = $date < $today->format('Y-m-d'); ?>
 <section class="slot<?= $date === $today->format('Y-m-d') ? ' slot--today' : '' ?>">
   <header class="slot__head">
-    <strong><?= h(admin_date_label($date)) ?><?= $date === $today->format('Y-m-d') ? '（今日）' : '' ?></strong>
-    <?php if ($day['rule'] !== null): ?>
+    <strong><?= h(admin_date_label($date, true)) ?></strong><?= $day['overdue'] ? ' <span class="badge badge--held">過去の未処理</span>' : '' ?>
+    <?php if ($day['overdue']): ?>
+    <?php elseif ($day['rule'] !== null): ?>
       <span class="muted"><?= h(admin_kind_label($day['rule']['kind'])) ?> <?= h($day['rule']['post_time']) ?></span>
     <?php else: ?>
       <span class="muted">投稿枠なし</span>

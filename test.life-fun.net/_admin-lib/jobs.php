@@ -9,7 +9,7 @@ declare(strict_types=1);
  */
 
 const ADMIN_JOBS = [
-    // 毎分：生存記録（jobs テーブルの更新そのものが生存記録になる）＋投稿時刻が来たSNS投稿の処理
+    // 毎分：生存記録（jobs テーブルの更新そのものが生存記録になる）＋投稿時刻が来たSNS投稿の処理＋新しいJSエラーの通知
     'minutely' => ['label' => '毎分',            'schedule' => 'minutely'],
     // 毎時：SNS投稿の先7日分の自動割り当て
     'hourly'   => ['label' => '毎時',            'schedule' => 'hourly'],
@@ -98,7 +98,10 @@ function admin_run_job(string $job, callable $handler): void
 function admin_job_handler(string $job): callable
 {
     return match ($job) {
-        'minutely' => static fn (): string => ($n = admin_sns_process_due()) > 0 ? 'SNS投稿の時刻処理 ' . $n . '件' : '',
+        'minutely' => static fn (): string => implode('、', array_filter([
+            ($n = admin_sns_process_due()) > 0 ? 'SNS投稿の時刻処理 ' . $n . '件' : '',
+            admin_monitor_notify_new(),
+        ])),
         'hourly'   => static fn (): string => 'SNS投稿の割り当て ' . admin_sns_assign() . '枠',
         'daily'    => 'admin_job_cleanup',
         'evening'  => static fn (): string => admin_sns_evening(),
@@ -114,6 +117,11 @@ function admin_job_cleanup(): string
         $stmt->execute([$before]);
         $deleted[] = $table . ' ' . $stmt->rowCount() . '件';
     }
+    // JSエラーは、未対応のものは残し、対応済・無視で90日起きていないものだけ消す
+    $stmt = admin_db()->prepare("DELETE FROM client_errors WHERE status <> 'open' AND last_seen < ?");
+    $stmt->execute([(new DateTimeImmutable('-90 days'))->format(DATE_ATOM)]);
+    $deleted[] = 'client_errors ' . $stmt->rowCount() . '件';
+    $deleted[] = admin_monitor_cleanup();
     return '古い記録を削除：' . implode('、', $deleted);
 }
 

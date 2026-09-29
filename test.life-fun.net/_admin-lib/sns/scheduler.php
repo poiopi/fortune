@@ -44,10 +44,12 @@ function admin_slot_scheduled_at(string $date, string $time): DateTimeImmutable
     return new DateTimeImmutable($date . ' ' . $time . ':00');
 }
 
-function admin_date_label(string $date): string
+/** 「9/29（火）」。$markToday なら今日は「9/29（火・今日）」 */
+function admin_date_label(string $date, bool $markToday = false): string
 {
     $d = new DateTimeImmutable($date);
-    return $d->format('n/j') . '（' . ADMIN_WEEKDAY_LABELS[(int) $d->format('w')] . '）';
+    $today = $markToday && $d->format('Y-m-d') === (new DateTimeImmutable('today'))->format('Y-m-d') ? '・今日' : '';
+    return $d->format('n/j') . '（' . ADMIN_WEEKDAY_LABELS[(int) $d->format('w')] . $today . '）';
 }
 
 /**
@@ -196,7 +198,7 @@ function admin_sns_evening(?DateTimeImmutable $now = null): string
         $stmt->execute([$tomorrow]);
         $titles = $stmt->fetchAll(PDO::FETCH_COLUMN);
         if ($titles !== []) {
-            admin_notify('sns_tomorrow_unapproved', '明日（' . admin_date_label($tomorrow) . '）の投稿がまだ承認されていません。'
+            admin_notify('sns_tomorrow_unapproved', '明日 ' . admin_date_label($tomorrow) . ' の投稿がまだ承認されていません。'
                 . "\n「" . implode('」「', $titles) . "」\n承認しないと投稿時刻に保留になります。\n" . admin_absolute_admin_url('/sns/'));
             $messages[] = '翌日の未承認 ' . count($titles) . '件を通知';
         }

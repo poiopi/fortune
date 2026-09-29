@@ -45,6 +45,38 @@ function render_footer(array $opts = []): void {
   echo '</footer>';
 }
 ?>
+<script>
+// JSエラーを管理画面「エラー監視」へ送る（api/client-error.php）。自サイトのファイルで起きたものだけ・URLはパスのみ・1ページ10件まで。
+// 姓名判断の未登録字もこの lfReport で送る（seimei.php）。この処理自体は例外を外に出さない。
+(function(){
+  if(window.lfReport)return;
+  var sent=0,seen={},ep='/api/client-error.php',o=location.origin;
+  function send(d){
+    try{
+      var k=d.t+'|'+d.m+'|'+(d.s||'')+'|'+(d.l||0);
+      if(sent>=10||seen[k])return;
+      seen[k]=1;sent++;
+      d.p=location.pathname;
+      var b=JSON.stringify(d);
+      if(navigator.sendBeacon){navigator.sendBeacon(ep,new Blob([b],{type:'text/plain'}));}
+      else if(window.fetch){fetch(ep,{method:'POST',body:b,keepalive:true,credentials:'same-origin'}).catch(function(){});}
+    }catch(e){}
+  }
+  window.lfReport=send;
+  function own(u){return !u||String(u).indexOf(o)===0;}
+  function clean(u){return String(u||'').split(/[?#]/)[0];}
+  window.addEventListener('error',function(e){
+    if(!e||!e.message||!e.filename||!own(e.filename))return;
+    var st=e.error&&e.error.stack?String(e.error.stack).slice(0,1500):'';
+    send({t:'error',m:String(e.message).slice(0,300),s:clean(e.filename),l:e.lineno||0,c:e.colno||0,st:st});
+  });
+  window.addEventListener('unhandledrejection',function(e){
+    var r=e&&e.reason,st=r&&r.stack?String(r.stack):'';
+    if(!st||st.indexOf(o)<0)return;
+    send({t:'rejection',m:String(r&&r.message?r.message:r).slice(0,300),s:'',l:0,c:0,st:st.slice(0,1500)});
+  });
+})();
+</script>
 <style>
 .share-wrap{text-align:center;margin:1.5rem 0 1rem}
 .share-label{font-family:'DM Mono',monospace;font-size:.62rem;color:#8a7db5;letter-spacing:.1em;margin-bottom:.55rem}

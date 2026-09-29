@@ -12,6 +12,9 @@ declare(strict_types=1);
 const ADMIN_MENU = [
     'dashboard' => ['label' => 'ダッシュボード', 'path' => '/',        'ready' => true],
     'sns'       => ['label' => 'SNS投稿',       'path' => '/sns/',    'ready' => true],
+    'errors'    => ['label' => 'エラー監視',     'path' => '/errors',  'ready' => true],
+    'issues'    => ['label' => '既知の不具合',   'path' => '/issues',  'ready' => true],
+    'kanji'     => ['label' => '姓名判断の漢字', 'path' => '/kanji',   'ready' => true],
     'health'    => ['label' => 'サイトヘルス',   'path' => '/health',  'ready' => false],
     'seo'       => ['label' => 'SEO点検',       'path' => '/seo',     'ready' => false],
     'pages'     => ['label' => 'ページ台帳',     'path' => '/pages',   'ready' => false],
@@ -129,6 +132,14 @@ function admin_collect_warnings(): array
         if ($k['per_week'] > 0 && $k['days'] < ADMIN_STOCK_LOW_DAYS) {
             $warnings[] = ['text' => $k['label'] . 'のストックが残り' . $k['count'] . '件（約' . $k['days'] . '日分）です。', 'link' => '/sns/stock'];
         }
+    }
+    $openErrors = (int) admin_db()->query("SELECT COUNT(*) FROM client_errors WHERE status = 'open'")->fetchColumn();
+    if ($openErrors > 0) {
+        $warnings[] = ['text' => '公開ページのJSエラーが' . $openErrors . '種類、未対応のままです。', 'link' => '/errors'];
+    }
+    $staleIssues = admin_issue_stale_count();
+    if ($staleIssues > 0) {
+        $warnings[] = ['text' => '重要度「高」の不具合が' . $staleIssues . '件、' . ADMIN_ISSUE_STALE_DAYS . '日以上更新されていません。', 'link' => '/issues'];
     }
     if (admin_notify_channels() === []) {
         $warnings[] = ['text' => '通知先が1つも有効になっていません。エラーが起きても通知されません。', 'link' => '/settings'];

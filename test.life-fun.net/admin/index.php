@@ -58,7 +58,7 @@ admin_render_header('ダッシュボード', 'dashboard');
     <p class="muted">予定はありません。</p>
 <?php endif; ?>
 <?php foreach ($slots as $slot): $parts = array_map(static function (string $r): string { [$p, $st] = explode(':', $r); return admin_sns_label($p) . ' ' . (ADMIN_QUEUE_STATUS_LABELS[$st] ?? $st); }, explode(',', $slot['rows_info'])); ?>
-    <p><?= h(admin_date_label($slot['slot_date'])) ?><?= $slot['slot_date'] === $today ? '（今日）' : '' ?> <?= h(substr(admin_format_time($slot['scheduled_at']), 11, 5)) ?>
+    <p><?= h(admin_date_label($slot['slot_date'], true)) ?> <?= h(substr(admin_format_time($slot['scheduled_at']), 11, 5)) ?>
       <span class="badge"><?= h(admin_kind_label($slot['kind'])) ?></span> <?= h($slot['title']) ?>
       <?= $slot['stock_status'] !== 'approved' ? '<span class="badge badge--pending_review">未承認</span>' : '' ?>
       <br><span class="muted"><?= h(implode(' / ', $parts)) ?></span></p>

@@ -187,7 +187,8 @@ a { color: var(--primary); }
 .form__input--grow { flex: 1; min-width: 200px; }
 .fieldset { border: 1px solid var(--border); border-radius: var(--radius); padding: 8px 12px 12px; margin: 8px 0; }
 .fieldset legend { font-weight: 700; font-size: 14px; }
-.fieldset textarea { width: 100%; }
+.fieldset textarea,
+.fieldset input.form__input { display: block; width: 100%; }
 .preview { white-space: pre-wrap; word-break: break-all; background: #f0f2f5; padding: 8px; border-radius: var(--radius); font-size: 13px; margin: 4px 0 0; }
 .counter { margin: 2px 0 0; font-size: 12px; color: var(--muted); }
 .counter--over { color: var(--error-text); font-weight: 700; }
@@ -196,3 +197,15 @@ a { color: var(--primary); }
   .rotation-row { grid-template-columns: 3em 1fr 6em; }
 }
 .details summary { cursor: pointer; color: var(--primary); font-size: 14px; }
+
+/* 段階3.5：エラー監視・既知の不具合・姓名判断の漢字 */
+.badge--err-open, .badge--sev-high { background: var(--error-bg); color: var(--error-text); }
+.badge--err-resolved { background: var(--ok-bg); color: var(--ok-text); }
+.badge--err-ignored, .badge--sev-low { background: #eef0f3; color: var(--muted); }
+.badge--sev-mid { background: var(--warn-bg); color: #8a5a00; }
+.table tr.is-muted td { color: var(--muted); }
+.kanji-cell { font-size: 20px; line-height: 1.2; }
+.form--tight { margin-top: 0; gap: 6px; }
+.form--tight form { margin: 0; }
+.table-wrap--spaced { margin: 12px 0; }
+.panel pre.preview { margin: 8px 0; }

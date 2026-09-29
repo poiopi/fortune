@@ -36,6 +36,13 @@ const ADMIN_AUDIT_LABELS = [
     'queue_to_manual'    => '保留を手動投稿待ちに変更',
     'queue_mark_posted'  => '投稿済にする',
     'rotation_change'    => 'ローテーション変更',
+    'error_status'       => 'JSエラーの状態変更',
+    'issue_create'       => '既知の不具合の登録',
+    'issue_edit'         => '既知の不具合の編集',
+    'kanji_add'          => '姓名判断の漢字を反映待ちに追加',
+    'kanji_remove'       => '姓名判断の漢字を反映待ちから削除',
+    'kanji_export'       => '姓名判断の画数表を出力',
+    'unknown_kanji'      => '未登録の字の扱いを変更',
 ];
 
 function admin_client_ip(): string
