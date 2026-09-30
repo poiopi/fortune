@@ -278,6 +278,7 @@ body{top:0!important}
 </div><!-- /.wrap -->
 
 <?php require __DIR__.'/inc/footer.php'; ?>
+<?php require __DIR__.'/inc/retry-reset.php'; ?>
 
 <script>
 const mbtiTypes = <?= json_encode(array_keys(MBTI_DATA)) ?>;
@@ -441,6 +442,7 @@ function restart() {
   selectedMbti = null;
   selectedBlood = null;
   document.querySelectorAll('.mbti-btn.selected, .blood-btn.selected').forEach(x => x.classList.remove('selected'));
+  clearBirthdate('birth');
   document.getElementById('mbti-next').disabled = true;
   document.getElementById('blood-next').disabled = true;
   document.getElementById('submit-btn').disabled = true;
