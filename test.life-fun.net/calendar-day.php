@@ -410,7 +410,7 @@ body{top:0!important}
             'available'  => $moonSection['available'],
             'symbol'     => $moonSection['available'] ? '☾' : null,
             'name'       => $moonSection['available'] ? $moonSection['phase_name'] : null,
-            'meta'       => $moonSection['available'] ? ('月齢'.$moonSection['age']) : null,
+            'meta'       => $moonSection['available'] ? ('月齢'.number_format((float)$moonSection['age'], 1)) : null,
             'desc'       => $moonSection['available'] ? $moonSection['description'] : null,
             'url'        => $moonSection['available'] ? ($moonSection['url'] ?? null) : null,
             'comingSoon' => $moonSection['available'] && empty($moonSection['url'] ?? null),

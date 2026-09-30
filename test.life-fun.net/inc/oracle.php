@@ -3,12 +3,16 @@ declare(strict_types=1);
 
 date_default_timezone_set('Asia/Tokyo');
 
+// 旧暦テーブルのルックアップ（lunarFromJdn）。テーブル本体は関数呼び出し時だけ遅延ロードされる。
+require_once __DIR__ . '/lunar-calendar.php';
+
 // ══════════════════════════════════════════════════════════════════
 // 六曜計算
 // ══════════════════════════════════════════════════════════════════
 function getRokuyo(int $year, int $month, int $day): array {
-    // 旧暦月日の合計 mod 6 で六曜を算出（簡易版）
-    // 旧暦変換は完全実装が複雑なため、広く使われる近似計算を使用
+    // 旧暦の (月+日) mod 6 で六曜を算出する。
+    // 旧暦月日は jdToLunar() が、天文計算で事前生成した旧暦テーブル（inc/lunar-table.php、1899〜2101年）から引く。
+    // 閏月は元の月と同じ月番号で (月+日)%6 を計算する。テーブル範囲外の日付のみ近似式にフォールバックする。
     $jd = myGregorianToJD($year, $month, $day);
     $lunarInfo = jdToLunar($jd);
     $lunarMonth = $lunarInfo['month'];
@@ -41,13 +45,20 @@ function myGregorianToJD(int $y, int $m, int $d): int {
 }
 
 function jdToLunar(int $jd): array {
-    // 簡易旧暦推算
+    // 旧暦テーブル（inc/lunar-table.php：天文計算で事前生成、1899〜2101年）から引く。
+    // 閏月は元の月と同じ月番号なので、getRokuyo() の (月+日)%6 はそのまま成り立つ。
+    $lunar = lunarFromJdn($jd);
+    if ($lunar !== null) {
+        return ['month' => $lunar['month'], 'day' => $lunar['day'], 'leap' => $lunar['leap']];
+    }
+
+    // テーブル範囲外のみ：従来の簡易旧暦推算（平均朔望月による近似。閏月は扱わない）
     $cycle = $jd - 2451550; // 2000/1/6 新月基準
     $monthNum = (int)floor($cycle / 29.53059);
     $monthStart = (int)(2451550 + $monthNum * 29.53059);
     $day = $jd - $monthStart + 1;
     $month = (($monthNum % 12) + 12) % 12 + 1;
-    return ['month' => $month, 'day' => $day];
+    return ['month' => $month, 'day' => $day, 'leap' => false];
 }
 
 // ══════════════════════════════════════════════════════════════════

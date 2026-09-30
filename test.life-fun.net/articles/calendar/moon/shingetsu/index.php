@@ -134,7 +134,7 @@ ob_start();
   <dl class="basic-info">
     <dt>読み方</dt><dd>しんげつ</dd>
     <dt>英語名</dt><dd>New Moon</dd>
-    <dt>月齢</dt><dd>0.0〜1.8</dd>
+    <dt>月齢</dt><dd>27.7〜1.8（0.0をまたぐ）</dd>
     <dt>見え方</dt><dd>月がほとんど見えない、あるいは全く見えない状態</dd>
   </dl>
 

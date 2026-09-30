@@ -50,6 +50,14 @@ $suites = [
     'Love Combo (MBTI×血液型)' => [
         'Invariants' => "{$toolsDir}/love-combo-invariants.php",
     ],
+    // 正解は現行出力ではなく国立天文台／外部カレンダー（tests/README.md「Lunar/Rokuyo」参照）
+    'Lunar/Rokuyo' => [
+        'NAOJ Saku' => "{$toolsDir}/compare-lunar-naoj.php",
+        'Arachne Rokuyo' => "{$toolsDir}/compare-lunar-arachne.php",
+        'Invariants' => "{$toolsDir}/lunar-rokuyo-invariants.php",
+        'Dates' => "{$toolsDir}/test-rokuyo-dates.php",
+        'Moon Age' => "{$toolsDir}/compare-moon-age-naoj.php",
+    ],
 ];
 
 $allPass = true;

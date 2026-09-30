@@ -158,7 +158,13 @@ function sansei_formatExtraValue($value): string {
 // oracle.php側のgetRokuyo()はclass値の形式が異なる（'taian' vs 'cal-taian'）ため、
 // 単純な差し替えはCSSとの対応が崩れる。この開運カレンダー機能自体の重複解消は
 // 別タスクとして扱い、ここでは名前衝突の回避のみ行う。
+//
+// 旧暦の月日（六曜の元）は、2026-09-30の六曜バグ修正で共通の inc/lunar-calendar.php の
+// lunarFromJdn()（天文計算で事前生成した旧暦テーブル。閏月対応）へ委譲するよう変更した。
+// テーブル範囲外（1899〜2101年の外）のみ従来の近似式にフォールバックする。
 // ══════════════════════════════════════════════════════════════════
+
+require_once __DIR__ . '/inc/lunar-calendar.php';
 
 function sansei_calGregorianToJD(int $y, int $m, int $d): int {
     if ($m <= 2) { $y--; $m += 12; }
@@ -168,6 +174,11 @@ function sansei_calGregorianToJD(int $y, int $m, int $d): int {
 }
 
 function sansei_calJdToLunar(int $jd): array {
+    $lunar = lunarFromJdn($jd);
+    if ($lunar !== null) {
+        return ['month' => $lunar['month'], 'day' => $lunar['day']];
+    }
+    // テーブル範囲外のみ：従来の近似式
     $cycle = $jd - 2451550;
     $monthNum = (int)($cycle / 29.53059);
     $monthStart = (int)(2451550 + $monthNum * 29.53059);
