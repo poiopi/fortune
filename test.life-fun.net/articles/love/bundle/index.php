@@ -3,10 +3,10 @@ declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
 
 $_PUBLISHED = [
-  ['slug'=>'reliability-type', 'code'=>'誠実性型', 'kw'=>'9216パターン中51.2%、最も多いタイプ'],
-  ['slug'=>'sensitivity-type', 'code'=>'情動性型', 'kw'=>'9216パターン中27.9%、感情の動きが恋の原動力'],
-  ['slug'=>'action-type', 'code'=>'行動主導性型', 'kw'=>'9216パターン中16.1%、迷う前に動くタイプ'],
-  ['slug'=>'transform-type', 'code'=>'変化志向型', 'kw'=>'9216パターン中4.4%、新しい風を恋に求める'],
+  ['slug'=>'reliability-type', 'code'=>'誠実性型', 'kw'=>'9216パターン中50.3%、最も多いタイプ'],
+  ['slug'=>'sensitivity-type', 'code'=>'情動性型', 'kw'=>'9216パターン中26.7%、感情の動きが恋の原動力'],
+  ['slug'=>'action-type', 'code'=>'行動主導性型', 'kw'=>'9216パターン中18.5%、迷う前に動くタイプ'],
+  ['slug'=>'transform-type', 'code'=>'変化志向型', 'kw'=>'9216パターン中4.2%、新しい風を恋に求める'],
   ['slug'=>'autonomy-type', 'code'=>'自立性型', 'kw'=>'9216パターン中0.35%、5タイプ中最もレア'],
 ];
 
