@@ -278,6 +278,7 @@ body{top:0!important}
 </div><!-- /.wrap -->
 
 <?php require __DIR__.'/inc/footer.php'; ?>
+<?php require __DIR__.'/inc/retry-reset.php'; ?>
 
 <script>
 const mbtiTypes = <?= json_encode(array_keys(MBTI_DATA)) ?>;
@@ -441,11 +442,16 @@ function restart() {
   selectedMbti = null;
   selectedBlood = null;
   document.querySelectorAll('.mbti-btn.selected, .blood-btn.selected').forEach(x => x.classList.remove('selected'));
+  clearBirthdate('birth');
   document.getElementById('mbti-next').disabled = true;
   document.getElementById('blood-next').disabled = true;
   document.getElementById('submit-btn').disabled = true;
   document.getElementById('submit-btn').textContent = '診断結果を見る →';
+  // scrollToResult()（inc/footer.php）が結果欄にインラインのdisplay:blockを書き込むため、
+  // クラス切替だけでは結果が残る。インライン指定を消してから最初のステップへ戻す。
+  document.getElementById('step-result').style.display = '';
   goStep('step-mbti');
+  document.querySelector('.shindan-card').scrollIntoView({behavior: 'smooth', block: 'start'});
 }
 </script>
 <script>

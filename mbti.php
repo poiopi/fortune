@@ -632,8 +632,12 @@ function showResult() {
 function restart() {
   scores = {E:0,I:0,S:0,N:0,T:0,F:0,J:0,P:0};
   current = 0; answers = []; selectedMbti = null; selectedSeiza = null;
+  // scrollToResult()（inc/footer.php）が結果欄にインラインのdisplay:blockを書き込むため、
+  // クラス切替だけでは結果が残る。インライン指定を消してから最初のステップへ戻す。
+  document.getElementById('step-result').style.display = '';
   showStep('step-q');
   renderQ();
+  document.querySelector('.shindan-card').scrollIntoView({behavior: 'smooth', block: 'start'});
 }
 
 renderQ();
