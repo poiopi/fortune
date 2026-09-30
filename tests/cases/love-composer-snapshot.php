@@ -6,7 +6,7 @@ return [
     'generator' => 'love_composeResult()（実運用コード）＋ダミーText Bank（文言=ID）＋ダミーarticle候補',
     'basedOn' => 'tests/cases/love-style-tendency-snapshot.php（9216通り全数）＋axis_computeInfluence()',
     'note' => 'bundleTextは固定ダミー（Bundle選定ロジック未実装のため）。文章の内容ではなくComposerの組立アルゴリズム（ID参照・Influence順ソート・null除外・出力スキーマ）を固定する',
-    'generatedAt' => '2026-09-30T15:23:57+00:00',
+    'generatedAt' => '2026-09-30T16:54:49+00:00',
     'caseCount' => 9216,
     'cases' => [
         [
@@ -3508,7 +3508,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -4024,7 +4024,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -6088,7 +6088,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -9700,7 +9700,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -10216,7 +10216,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -12280,7 +12280,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -12452,7 +12452,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -12495,7 +12495,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -12581,7 +12581,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -12624,7 +12624,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -12710,7 +12710,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -12753,7 +12753,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -12797,7 +12797,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -12839,7 +12839,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -13322,7 +13322,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -14182,7 +14182,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -17096,7 +17096,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -17139,7 +17139,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -17225,7 +17225,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -17268,7 +17268,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -17354,7 +17354,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -17397,7 +17397,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -17441,7 +17441,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -17483,7 +17483,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -17966,7 +17966,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -19504,7 +19504,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -19762,7 +19762,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -19891,7 +19891,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -21052,7 +21052,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -21568,7 +21568,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -22610,7 +22610,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -23116,7 +23116,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -23890,7 +23890,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -24019,7 +24019,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -28276,7 +28276,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -28792,7 +28792,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -30856,7 +30856,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -34468,7 +34468,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -34984,7 +34984,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -37048,7 +37048,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -37220,7 +37220,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -37263,7 +37263,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -37349,7 +37349,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -37392,7 +37392,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -37478,7 +37478,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -37521,7 +37521,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -37565,7 +37565,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -37607,7 +37607,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -39638,7 +39638,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -41864,7 +41864,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -41907,7 +41907,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -41993,7 +41993,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -42036,7 +42036,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -42122,7 +42122,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -42165,7 +42165,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -42209,7 +42209,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -42251,7 +42251,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -44272,7 +44272,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -44530,7 +44530,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -44659,7 +44659,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -45820,7 +45820,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -46336,7 +46336,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -47884,7 +47884,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -48658,7 +48658,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -48787,7 +48787,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -49561,7 +49561,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -50034,7 +50034,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -50474,7 +50474,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -51334,7 +51334,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -52700,7 +52700,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -52743,7 +52743,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -52829,7 +52829,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -52872,7 +52872,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -52958,7 +52958,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53001,7 +53001,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -53045,7 +53045,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -53087,7 +53087,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -53216,7 +53216,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53259,7 +53259,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53345,7 +53345,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53388,7 +53388,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53474,7 +53474,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53517,7 +53517,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
@@ -53561,7 +53561,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -53603,7 +53603,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -54205,7 +54205,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -54678,7 +54678,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -55118,7 +55118,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -55280,7 +55280,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55323,7 +55323,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -55409,7 +55409,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55452,7 +55452,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55538,7 +55538,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55581,7 +55581,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -55625,7 +55625,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -55667,7 +55667,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -55753,7 +55753,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -56226,7 +56226,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -58214,7 +58214,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -58892,7 +58892,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -58935,7 +58935,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59021,7 +59021,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59064,7 +59064,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59150,7 +59150,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59193,7 +59193,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59237,7 +59237,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -59279,7 +59279,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59408,7 +59408,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -59451,7 +59451,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59537,7 +59537,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -59580,7 +59580,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59666,7 +59666,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -59709,7 +59709,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59753,7 +59753,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -59795,7 +59795,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -60397,7 +60397,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -60870,7 +60870,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61472,7 +61472,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61515,7 +61515,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61601,7 +61601,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61644,7 +61644,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61730,7 +61730,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61773,7 +61773,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61817,7 +61817,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -61859,7 +61859,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61989,7 +61989,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -62032,7 +62032,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -62118,7 +62118,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -62161,7 +62161,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -62247,7 +62247,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -62290,7 +62290,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -62376,7 +62376,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -62514,7 +62514,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -62643,7 +62643,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -62772,7 +62772,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -64019,7 +64019,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -64105,7 +64105,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -64148,7 +64148,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -64277,7 +64277,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -64363,7 +64363,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -64449,7 +64449,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -64492,7 +64492,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -66298,7 +66298,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -66633,7 +66633,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -66676,7 +66676,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -66762,7 +66762,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -66805,7 +66805,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -66891,7 +66891,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -66934,7 +66934,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -67020,7 +67020,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -67158,7 +67158,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -67287,7 +67287,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -67416,7 +67416,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -68362,7 +68362,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -68696,7 +68696,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -68739,7 +68739,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -68825,7 +68825,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -68868,7 +68868,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -68954,7 +68954,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -68997,7 +68997,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -69041,7 +69041,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -69083,7 +69083,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -70244,7 +70244,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -70287,7 +70287,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -70373,7 +70373,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -70416,7 +70416,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -70502,7 +70502,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -70545,7 +70545,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -70589,7 +70589,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -70631,7 +70631,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -70760,7 +70760,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -70803,7 +70803,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -70889,7 +70889,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -70932,7 +70932,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -71018,7 +71018,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -71061,7 +71061,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -71105,7 +71105,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -71147,7 +71147,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -71802,7 +71802,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -71931,7 +71931,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -72060,7 +72060,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -72308,7 +72308,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -72351,7 +72351,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -72437,7 +72437,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -72480,7 +72480,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -72566,7 +72566,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -72609,7 +72609,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -72653,7 +72653,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -72695,7 +72695,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -74329,7 +74329,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -74802,7 +74802,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -75758,7 +75758,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -75887,7 +75887,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -75973,7 +75973,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -76016,7 +76016,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -76145,7 +76145,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -76231,7 +76231,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -76317,7 +76317,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -76360,7 +76360,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -76790,7 +76790,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -77306,7 +77306,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -77468,7 +77468,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -77511,7 +77511,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -77597,7 +77597,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -77640,7 +77640,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -77726,7 +77726,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -77769,7 +77769,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -77813,7 +77813,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -77855,7 +77855,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -77984,7 +77984,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -78027,7 +78027,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -78113,7 +78113,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -78156,7 +78156,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -78242,7 +78242,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -78285,7 +78285,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -78329,7 +78329,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -78371,7 +78371,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -78973,7 +78973,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -79446,7 +79446,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80048,7 +80048,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80091,7 +80091,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80177,7 +80177,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80220,7 +80220,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80306,7 +80306,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80349,7 +80349,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -80393,7 +80393,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -80435,7 +80435,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80521,7 +80521,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -80994,7 +80994,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -83660,7 +83660,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -83703,7 +83703,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -83789,7 +83789,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -83832,7 +83832,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -83918,7 +83918,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -83961,7 +83961,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84005,7 +84005,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -84047,7 +84047,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84176,7 +84176,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84219,7 +84219,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84305,7 +84305,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84348,7 +84348,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84434,7 +84434,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84477,7 +84477,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84521,7 +84521,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -84563,7 +84563,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -85165,7 +85165,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -85638,7 +85638,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86240,7 +86240,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86283,7 +86283,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86369,7 +86369,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86412,7 +86412,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86498,7 +86498,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86541,7 +86541,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86585,7 +86585,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -86627,7 +86627,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86757,7 +86757,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -86800,7 +86800,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -86886,7 +86886,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -86929,7 +86929,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -87015,7 +87015,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -87058,7 +87058,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -87144,7 +87144,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -88830,7 +88830,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -88959,7 +88959,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -89088,7 +89088,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -91401,7 +91401,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -91444,7 +91444,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -91530,7 +91530,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -91573,7 +91573,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -91659,7 +91659,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -91702,7 +91702,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -91788,7 +91788,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -93464,7 +93464,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -93507,7 +93507,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -93593,7 +93593,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -93636,7 +93636,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -93722,7 +93722,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -93765,7 +93765,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -93809,7 +93809,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -93851,7 +93851,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95012,7 +95012,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -95055,7 +95055,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95141,7 +95141,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -95184,7 +95184,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95270,7 +95270,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -95313,7 +95313,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -95357,7 +95357,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -95399,7 +95399,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95528,7 +95528,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95571,7 +95571,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95657,7 +95657,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95700,7 +95700,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95786,7 +95786,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -95829,7 +95829,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -95873,7 +95873,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -95915,7 +95915,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -97076,7 +97076,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -97119,7 +97119,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -97205,7 +97205,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -97248,7 +97248,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -97334,7 +97334,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -97377,7 +97377,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -97421,7 +97421,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -97463,7 +97463,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -100259,7 +100259,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -100388,7 +100388,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -104387,7 +104387,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -104516,7 +104516,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -105299,7 +105299,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -105385,7 +105385,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -105428,7 +105428,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -105557,7 +105557,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -105643,7 +105643,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -105729,7 +105729,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -105772,7 +105772,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -106451,7 +106451,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -106580,7 +106580,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -108438,7 +108438,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -108567,7 +108567,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -108696,7 +108696,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -109126,7 +109126,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -109986,7 +109986,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -110115,7 +110115,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -110244,7 +110244,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -110579,7 +110579,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -110708,7 +110708,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -111018,7 +111018,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -111147,7 +111147,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -111276,7 +111276,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -111610,7 +111610,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -111739,7 +111739,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -116254,7 +116254,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -116383,7 +116383,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -118414,7 +118414,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -118705,7 +118705,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -118758,7 +118758,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -118887,7 +118887,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -119016,7 +119016,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -119178,7 +119178,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -120306,7 +120306,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -120435,7 +120435,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -120564,7 +120564,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -121811,7 +121811,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -121897,7 +121897,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -121940,7 +121940,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -122069,7 +122069,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -122155,7 +122155,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -122241,7 +122241,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -122284,7 +122284,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -122833,7 +122833,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -123058,7 +123058,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -123306,7 +123306,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -125027,7 +125027,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -125156,7 +125156,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -129155,7 +129155,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -129284,7 +129284,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -130110,7 +130110,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -130239,7 +130239,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -130368,7 +130368,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -131219,7 +131219,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -131348,7 +131348,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -135347,7 +135347,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -135476,7 +135476,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Low',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -136378,7 +136378,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -136507,7 +136507,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -141022,7 +141022,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -141151,7 +141151,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -143473,7 +143473,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -143946,7 +143946,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -144730,7 +144730,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -146622,7 +146622,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -146751,7 +146751,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -146880,7 +146880,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -147601,7 +147601,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -148074,7 +148074,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -149020,7 +149020,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -151858,7 +151858,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -151987,7 +151987,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -152374,7 +152374,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -152503,7 +152503,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -153664,7 +153664,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -154438,7 +154438,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -154567,7 +154567,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -155212,7 +155212,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -158050,7 +158050,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -158179,7 +158179,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -158566,7 +158566,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -158695,7 +158695,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -159856,7 +159856,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -160630,7 +160630,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -160759,7 +160759,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -163478,7 +163478,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -167854,7 +167854,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -167983,7 +167983,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -169402,7 +169402,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -169531,7 +169531,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -169918,7 +169918,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -170047,7 +170047,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -171466,7 +171466,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -171595,7 +171595,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -173788,7 +173788,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -175346,7 +175346,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -176626,7 +176626,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -176755,7 +176755,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -177142,7 +177142,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -177271,7 +177271,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -178432,7 +178432,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -179206,7 +179206,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -179335,7 +179335,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -179980,7 +179980,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -182818,7 +182818,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -182947,7 +182947,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -183334,7 +183334,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -183463,7 +183463,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -184624,7 +184624,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -185398,7 +185398,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -185527,7 +185527,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -192622,7 +192622,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -192751,7 +192751,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -194170,7 +194170,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -194299,7 +194299,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -194686,7 +194686,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -194815,7 +194815,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -196234,7 +196234,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -196363,7 +196363,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -210553,7 +210553,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -211026,7 +211026,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -212154,7 +212154,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -212283,7 +212283,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -212412,7 +212412,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -213692,7 +213692,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -213735,7 +213735,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -213821,7 +213821,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -213864,7 +213864,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -213950,7 +213950,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -213993,7 +213993,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -214037,7 +214037,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -214079,7 +214079,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -214208,7 +214208,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214251,7 +214251,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -214337,7 +214337,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214380,7 +214380,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214466,7 +214466,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214509,7 +214509,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -214553,7 +214553,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -214595,7 +214595,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -215078,7 +215078,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -215197,7 +215197,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -215670,7 +215670,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -216272,7 +216272,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -216315,7 +216315,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -216401,7 +216401,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -216444,7 +216444,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -216530,7 +216530,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -216573,7 +216573,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -216617,7 +216617,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -216659,7 +216659,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -217142,7 +217142,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -218164,7 +218164,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -218336,7 +218336,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -218379,7 +218379,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -218465,7 +218465,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -218508,7 +218508,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -218594,7 +218594,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -218637,7 +218637,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -218681,7 +218681,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -218723,7 +218723,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -222292,7 +222292,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -232235,7 +232235,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -232321,7 +232321,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -232364,7 +232364,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -232493,7 +232493,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -232579,7 +232579,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -232665,7 +232665,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -232708,7 +232708,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -233783,7 +233783,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -233869,7 +233869,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -233912,7 +233912,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -234041,7 +234041,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -234127,7 +234127,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -234213,7 +234213,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -234256,7 +234256,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -234815,7 +234815,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -234901,7 +234901,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -234944,7 +234944,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -235073,7 +235073,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -235159,7 +235159,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -235245,7 +235245,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -235288,7 +235288,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -235708,7 +235708,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -238546,7 +238546,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -238675,7 +238675,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -239062,7 +239062,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -239191,7 +239191,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -240352,7 +240352,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -241126,7 +241126,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -241255,7 +241255,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -242555,7 +242555,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -242641,7 +242641,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -242684,7 +242684,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -242813,7 +242813,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -242899,7 +242899,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -242985,7 +242985,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -243028,7 +243028,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -243190,7 +243190,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -243319,7 +243319,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -244103,7 +244103,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -244189,7 +244189,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -244232,7 +244232,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -244361,7 +244361,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -244447,7 +244447,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -244533,7 +244533,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -244576,7 +244576,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -249650,7 +249650,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -250801,7 +250801,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -251274,7 +251274,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -251317,7 +251317,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -251790,7 +251790,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -253381,7 +253381,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -253854,7 +253854,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -254810,7 +254810,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -255670,7 +255670,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -256993,7 +256993,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -257466,7 +257466,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -257509,7 +257509,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -257982,7 +257982,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -259454,7 +259454,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -259573,7 +259573,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -260046,7 +260046,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -260090,7 +260090,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -260563,7 +260563,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -260615,7 +260615,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -260701,7 +260701,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -260744,7 +260744,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -260873,7 +260873,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -260959,7 +260959,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -261045,7 +261045,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -261088,7 +261088,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -261346,7 +261346,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -262378,7 +262378,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -262894,7 +262894,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -263229,7 +263229,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263272,7 +263272,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263358,7 +263358,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263401,7 +263401,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263487,7 +263487,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263530,7 +263530,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -263616,7 +263616,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263745,7 +263745,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263788,7 +263788,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263874,7 +263874,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263917,7 +263917,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -264003,7 +264003,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -264046,7 +264046,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -264132,7 +264132,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -264270,7 +264270,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -264399,7 +264399,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -264528,7 +264528,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -264734,7 +264734,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265207,7 +265207,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265259,7 +265259,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -265345,7 +265345,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -265388,7 +265388,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -265517,7 +265517,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -265603,7 +265603,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -265689,7 +265689,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -265732,7 +265732,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -265809,7 +265809,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265852,7 +265852,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265938,7 +265938,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265981,7 +265981,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -266067,7 +266067,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -266110,7 +266110,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -266196,7 +266196,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -266334,7 +266334,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -266463,7 +266463,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -266592,7 +266592,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -266797,7 +266797,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -267270,7 +267270,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -267356,7 +267356,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -267399,7 +267399,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -267485,7 +267485,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -267528,7 +267528,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -267614,7 +267614,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -267657,7 +267657,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -267701,7 +267701,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -267743,7 +267743,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -267873,7 +267873,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -267916,7 +267916,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268002,7 +268002,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268045,7 +268045,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268131,7 +268131,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268174,7 +268174,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -268260,7 +268260,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268345,7 +268345,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -268818,7 +268818,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -268861,7 +268861,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -269334,7 +269334,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -269602,7 +269602,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -269903,7 +269903,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -269989,7 +269989,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -270032,7 +270032,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -270161,7 +270161,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -270247,7 +270247,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -270333,7 +270333,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -270376,7 +270376,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -270409,7 +270409,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -270882,7 +270882,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -271150,7 +271150,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -271484,7 +271484,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -271527,7 +271527,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -271613,7 +271613,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -271656,7 +271656,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -271742,7 +271742,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -271785,7 +271785,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -271829,7 +271829,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -271871,7 +271871,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -272182,7 +272182,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -275956,7 +275956,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -276472,7 +276472,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -278536,7 +278536,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -282148,7 +282148,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -282664,7 +282664,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -284728,7 +284728,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -284900,7 +284900,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -284943,7 +284943,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -285029,7 +285029,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -285072,7 +285072,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -285158,7 +285158,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -285201,7 +285201,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -285245,7 +285245,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -285287,7 +285287,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -285770,7 +285770,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -286630,7 +286630,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -289544,7 +289544,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -289587,7 +289587,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -289673,7 +289673,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -289716,7 +289716,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -289802,7 +289802,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -289845,7 +289845,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -289889,7 +289889,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -289931,7 +289931,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -290414,7 +290414,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -291952,7 +291952,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -292210,7 +292210,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -292339,7 +292339,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -293500,7 +293500,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -294016,7 +294016,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -295058,7 +295058,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -295564,7 +295564,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -296338,7 +296338,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -296467,7 +296467,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -309625,7 +309625,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -310098,7 +310098,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -310538,7 +310538,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -311398,7 +311398,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -312764,7 +312764,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -312807,7 +312807,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -312893,7 +312893,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -312936,7 +312936,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313022,7 +313022,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313065,7 +313065,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -313109,7 +313109,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -313151,7 +313151,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -313280,7 +313280,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313323,7 +313323,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -313409,7 +313409,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313452,7 +313452,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313538,7 +313538,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313581,7 +313581,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -313625,7 +313625,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -313667,7 +313667,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -314269,7 +314269,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -314742,7 +314742,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -315182,7 +315182,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -315344,7 +315344,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315387,7 +315387,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -315473,7 +315473,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315516,7 +315516,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315602,7 +315602,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315645,7 +315645,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -315689,7 +315689,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -315731,7 +315731,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -317236,7 +317236,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -317408,7 +317408,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317451,7 +317451,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -317537,7 +317537,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317580,7 +317580,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317666,7 +317666,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317709,7 +317709,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -317753,7 +317753,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -317795,7 +317795,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -319826,7 +319826,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -321364,7 +321364,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -328211,7 +328211,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -328297,7 +328297,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -328340,7 +328340,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -328469,7 +328469,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -328555,7 +328555,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -328641,7 +328641,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -328684,7 +328684,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -331350,7 +331350,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -331479,7 +331479,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -331608,7 +331608,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -332038,7 +332038,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -332898,7 +332898,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -333027,7 +333027,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -333156,7 +333156,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -333930,7 +333930,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -334059,7 +334059,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -334188,7 +334188,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -334780,7 +334780,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -337618,7 +337618,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -337747,7 +337747,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -338134,7 +338134,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -338263,7 +338263,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -339424,7 +339424,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -340198,7 +340198,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -340327,7 +340327,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -341326,7 +341326,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -341670,7 +341670,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -341799,7 +341799,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -341928,7 +341928,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -342262,7 +342262,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -342391,7 +342391,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -343218,7 +343218,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -343347,7 +343347,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -343476,7 +343476,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -344723,7 +344723,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -344809,7 +344809,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -344852,7 +344852,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -344981,7 +344981,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -345067,7 +345067,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -345153,7 +345153,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -345196,7 +345196,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -345970,7 +345970,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -347690,7 +347690,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -348550,7 +348550,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -349873,7 +349873,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -350346,7 +350346,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -350389,7 +350389,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -350862,7 +350862,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -352334,7 +352334,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:Mid',
+                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -352453,7 +352453,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -352926,7 +352926,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -355430,7 +355430,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -356065,7 +356065,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356538,7 +356538,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356581,7 +356581,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -357054,7 +357054,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358645,7 +358645,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -359118,7 +359118,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -359162,7 +359162,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -359635,7 +359635,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -359730,7 +359730,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -359859,7 +359859,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -359988,7 +359988,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -361235,7 +361235,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -361321,7 +361321,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -361364,7 +361364,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -361493,7 +361493,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -361579,7 +361579,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -361665,7 +361665,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -361708,7 +361708,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -362301,7 +362301,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362344,7 +362344,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362430,7 +362430,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362473,7 +362473,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362559,7 +362559,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362602,7 +362602,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -362688,7 +362688,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -362817,7 +362817,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362860,7 +362860,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362946,7 +362946,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362989,7 +362989,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -363075,7 +363075,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -363118,7 +363118,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -363204,7 +363204,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -363514,7 +363514,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -363806,7 +363806,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -364279,7 +364279,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -364374,7 +364374,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -364503,7 +364503,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -364632,7 +364632,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -364881,7 +364881,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -364924,7 +364924,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365010,7 +365010,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365053,7 +365053,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365139,7 +365139,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365182,7 +365182,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -365268,7 +365268,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -365578,7 +365578,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -365869,7 +365869,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366342,7 +366342,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366428,7 +366428,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366471,7 +366471,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366557,7 +366557,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366600,7 +366600,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366686,7 +366686,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366729,7 +366729,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -366773,7 +366773,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -366815,7 +366815,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -366945,7 +366945,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -366988,7 +366988,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367074,7 +367074,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367117,7 +367117,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367203,7 +367203,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367246,7 +367246,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -367332,7 +367332,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -367417,7 +367417,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -367890,7 +367890,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -367933,7 +367933,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -368406,7 +368406,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -369018,7 +369018,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -369147,7 +369147,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -369276,7 +369276,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -369481,7 +369481,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -369954,7 +369954,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -370556,7 +370556,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -370599,7 +370599,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -370685,7 +370685,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -370728,7 +370728,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -370814,7 +370814,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -370857,7 +370857,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -370901,7 +370901,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -370943,7 +370943,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -375028,7 +375028,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -375544,7 +375544,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -377608,7 +377608,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -381220,7 +381220,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -381736,7 +381736,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -383800,7 +383800,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -383972,7 +383972,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -384015,7 +384015,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -384101,7 +384101,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -384144,7 +384144,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -384230,7 +384230,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -384273,7 +384273,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -384317,7 +384317,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -384359,7 +384359,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -386390,7 +386390,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Low',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -388616,7 +388616,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -388659,7 +388659,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -388745,7 +388745,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -388788,7 +388788,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -388874,7 +388874,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -388917,7 +388917,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -388961,7 +388961,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -389003,7 +389003,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -391024,7 +391024,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -391282,7 +391282,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -391411,7 +391411,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -392572,7 +392572,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -393088,7 +393088,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -394636,7 +394636,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -395410,7 +395410,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -395539,7 +395539,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:High',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',

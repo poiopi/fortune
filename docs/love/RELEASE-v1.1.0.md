@@ -123,6 +123,17 @@
 
 ほかの10項目は一致。今回の修正では閾値を変更していない（上記「影響範囲」の件数はすべて現行閾値のまま）。閾値を更新するかどうかは未決定で、更新する場合は影響範囲が変わるため、記事の数値更新より前に決める必要がある。
 
+**→ 2026-10-01 決定・実施（ユーザー承認）：閾値を更新した。** あわせて、判定時の浮動小数点誤差の不具合を修正した。上の「影響範囲」の Normalizer 関連の件数（primitivesNormalized・stylesNormalized・tendenciesNormalized）は、この更新前の値であり、最終値は下記。
+
+- 閾値の更新（`test.life-fun.net/inc/love-normalizer.php`）：行動主導性P33 2→3、積極性P67 4.40→4.60、愛情表現P67 4.80→4.90、浮気耐性 1.70/3.90→1.60/3.70、結婚志向P33 2.14→2.17（分類結果は同一）。詳細は [08-normalizer.md](08-normalizer.md)
+- 浮動小数点誤差の修正：`love_classify()` で比較前に `round(score, 6)` を行う。修正前は、閾値と同値のスコアの一部がHighに誤判定されていた（本番の修正前エンジンで692件／9216件。包容力366・恋愛の慎重さ348・浮気耐性86）
+- 検証：修正後のエンジンの判定は、丸めた値による判定と9216件すべてで一致。`php tests/run-all.php` ALL PASS
+- 再生成：`tests/cases/love-composer-snapshot.php`、`tests/cases/love-final-snapshot.php`（Normalizer以外の項目＝primitives・bundleId・bundleTextId・influence・articleLinkSources に差分がないことを確認）
+- **最終的な影響（本番の修正前エンジンと比べて、診断結果に表示されるStyle 7項目・Tendency 2項目の区分が変わる件数）：1,860件／9216件**
+  - 星座別：山羊座106・水瓶座100・魚座85・牡羊座223・牡牛座140・双子座73・蟹座125・獅子座374・乙女座67・天秤座114・蠍座120・射手座333
+  - 項目別：積極性918・愛情表現418・包容力366・恋愛の慎重さ348・浮気耐性263
+  - 火の星座の修正・閾値の更新・誤差の修正の3つの合計。火以外の星座の変化は、閾値の更新と誤差の修正によるもの
+
 ### その他
 
 - STG（test.life-fun.net）への同期、本番（ルート直下 `inc/`）への反映は未実施
@@ -130,6 +141,6 @@
 
 ## 関連ファイル
 
-- 修正：`test.life-fun.net/inc/seiza-trait-mapping.php`、`docs/seiza-trait-mapping.md`
+- 修正：`test.life-fun.net/inc/seiza-trait-mapping.php`、`docs/seiza-trait-mapping.md`、`test.life-fun.net/inc/love-normalizer.php`、`docs/love/08-normalizer.md`
 - テスト：`tests/tools/export-axis-aggregation.php`、`tests/tools/export-sansei-resultdata.php`、`tests/cases/` 配下の再生成ファイル
 - 前版：[RELEASE-v1.0.0.md](RELEASE-v1.0.0.md)
