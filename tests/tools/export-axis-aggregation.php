@@ -4,7 +4,8 @@ declare(strict_types=1);
 /**
  * export-axis-aggregation.php
  *
- * shichu/tarot/seizaの既存ResultData Snapshotから3占術分の組み合わせを50件サンプリングし、
+ * shichu/tarot/seizaの既存ResultData Snapshotから3占術分の組み合わせを50件サンプリングし
+ * （＋12星座カバレッジ用に各signIndex 1件ずつ計12件を追加、合計62件）、
  * docs/sansei-engine-design.md §5「Trait Aggregation」の契約を、axis-engine.phpの
  * axis_aggregateTraits()とは独立に再実装して期待値を算出し、
  * tests/cases/axis-aggregation-snapshot.php へ書き出す。
@@ -68,6 +69,32 @@ for ($i = 0; $i < SAMPLE_COUNT; $i++) {
     ];
 }
 
+// 12星座カバレッジ（2026-10-01追加）：上の50件はseiza-resultdataの先頭50件＝全件山羊座のため、
+// 星座固有のtraits（element・quality）の差がAxis以降のテストに現れなかった。
+// signIndex 0〜11それぞれについて、seiza-resultdataのcasesで最初に現れる1件を追加する。
+// shichu/tarotは上のループと同じく通し番号 $i（SAMPLE_COUNT から続ける）の剰余で選ぶ。
+$firstIndexBySign = [];
+foreach ($seizaCases as $idx => $z) {
+    $signIndex = $z['resultData']['raw']['signIndex'];
+    if (!isset($firstIndexBySign[$signIndex])) $firstIndexBySign[$signIndex] = $idx;
+}
+ksort($firstIndexBySign);
+if (count($firstIndexBySign) !== 12) throw new Exception('seiza-resultdata に12星座が揃っていない');
+$i = SAMPLE_COUNT;
+foreach ($firstIndexBySign as $seizaIdx) {
+    $s = $shichuCases[$i % count($shichuCases)];
+    $t = $tarotCases[$i % count($tarotCases)];
+    $z = $seizaCases[$seizaIdx];
+    $combos[] = [
+        'shichuInput' => $s['input'],
+        'tarotInput' => $t['input'],
+        'seizaInput' => $z['input'],
+        'resultDatas' => [$s['resultData'], $t['resultData'], $z['resultData']],
+    ];
+    $i++;
+}
+$signCoverageCount = count($firstIndexBySign);
+
 $snapshotCases = [];
 foreach ($combos as $combo) {
     $snapshotCases[] = [
@@ -80,7 +107,8 @@ foreach ($combos as $combo) {
 
 $doc = [
     'generator' => 'docs/sansei-engine-design.md §5（独立再実装：export-axis-aggregation.php）',
-    'note' => '3占術のResultData Snapshotから' . SAMPLE_COUNT . '件の組み合わせをサンプリングし、Trait Aggregationの期待値を独立実装で算出したもの。',
+    'note' => '3占術のResultData Snapshotから' . SAMPLE_COUNT . '件の組み合わせをサンプリングし（seizaは先頭' . SAMPLE_COUNT . '件＝全件山羊座）、'
+        . 'さらに12星座カバレッジとして各signIndexの最初の1件を使った' . $signCoverageCount . '件を追加して、Trait Aggregationの期待値を独立実装で算出したもの。',
     'generatedAt' => (new DateTimeImmutable())->format('c'),
     'caseCount' => count($snapshotCases),
     'cases' => $snapshotCases,

@@ -6,7 +6,7 @@ return [
     'generator' => 'love_composeResult()（実運用コード）＋ダミーText Bank（文言=ID）＋ダミーarticle候補',
     'basedOn' => 'tests/cases/love-style-tendency-snapshot.php（9216通り全数）＋axis_computeInfluence()',
     'note' => 'bundleTextは固定ダミー（Bundle選定ロジック未実装のため）。文章の内容ではなくComposerの組立アルゴリズム（ID参照・Influence順ソート・null除外・出力スキーマ）を固定する',
-    'generatedAt' => '2026-07-10T10:32:59+00:00',
+    'generatedAt' => '2026-09-30T15:23:57+00:00',
     'caseCount' => 9216,
     'cases' => [
         [
@@ -1573,7 +1573,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -1654,7 +1654,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -1697,7 +1697,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -1783,7 +1783,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -1826,7 +1826,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -2046,7 +2046,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -3638,7 +3638,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -3680,8 +3680,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -3718,13 +3718,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -3761,12 +3761,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -3809,8 +3809,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -3847,13 +3847,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -3890,12 +3890,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -3938,8 +3938,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -3981,8 +3981,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -4024,7 +4024,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -4067,8 +4067,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -4111,7 +4111,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -5702,7 +5702,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -5744,8 +5744,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -5782,13 +5782,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -5825,12 +5825,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -5873,8 +5873,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -5911,13 +5911,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -5954,12 +5954,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -6002,8 +6002,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -6045,8 +6045,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -6088,7 +6088,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -6131,8 +6131,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -6175,7 +6175,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -7765,7 +7765,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -7775,7 +7775,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -7846,7 +7846,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -7861,7 +7861,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -7889,7 +7889,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -7904,7 +7904,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -7975,7 +7975,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -8018,7 +8018,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -8033,7 +8033,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -8119,7 +8119,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -8205,7 +8205,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -8238,7 +8238,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -8248,7 +8248,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -9830,7 +9830,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -9872,8 +9872,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -9910,13 +9910,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -9953,12 +9953,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -10001,8 +10001,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -10039,13 +10039,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -10082,12 +10082,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -10130,8 +10130,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -10173,8 +10173,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -10216,7 +10216,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -10259,8 +10259,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -10303,7 +10303,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -11894,7 +11894,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -11936,8 +11936,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -11974,13 +11974,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -12017,12 +12017,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -12065,8 +12065,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -12103,13 +12103,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -12146,12 +12146,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -12194,8 +12194,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -12237,8 +12237,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -12280,7 +12280,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -12323,8 +12323,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -12367,7 +12367,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -14038,7 +14038,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -14081,7 +14081,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -14167,7 +14167,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -14182,7 +14182,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -14210,7 +14210,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -16102,7 +16102,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -16145,7 +16145,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -16231,7 +16231,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -16274,7 +16274,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -18166,7 +18166,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -18209,7 +18209,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -18295,7 +18295,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -18338,7 +18338,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -20230,7 +20230,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -20273,7 +20273,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -20359,7 +20359,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -20402,7 +20402,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -22256,8 +22256,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:High',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -22266,7 +22266,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -22294,12 +22294,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -22337,7 +22337,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -22385,7 +22385,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -22395,7 +22395,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -22423,12 +22423,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -22466,7 +22466,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -22514,7 +22514,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -22524,7 +22524,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -22557,7 +22557,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -22610,7 +22610,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -22643,7 +22643,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -24287,7 +24287,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -24320,7 +24320,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -24358,12 +24358,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -24373,7 +24373,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -24401,7 +24401,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -24416,7 +24416,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -24449,7 +24449,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -24487,12 +24487,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -24530,7 +24530,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -24545,7 +24545,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -24578,7 +24578,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -24621,7 +24621,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -24631,7 +24631,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -24707,7 +24707,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -24717,7 +24717,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -24760,7 +24760,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -26341,7 +26341,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -26351,7 +26351,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -26422,7 +26422,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -26437,7 +26437,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -26465,7 +26465,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -26480,7 +26480,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -26551,7 +26551,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -26594,7 +26594,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -26609,7 +26609,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -26695,7 +26695,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -26781,7 +26781,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -26814,7 +26814,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -26824,7 +26824,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -28406,7 +28406,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -28448,8 +28448,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -28486,13 +28486,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -28529,12 +28529,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -28577,8 +28577,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -28615,13 +28615,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -28658,12 +28658,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -28706,8 +28706,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -28749,8 +28749,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -28792,7 +28792,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -28835,8 +28835,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -28879,7 +28879,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -30470,7 +30470,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -30512,8 +30512,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -30550,13 +30550,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -30593,12 +30593,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -30641,8 +30641,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -30679,13 +30679,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -30722,12 +30722,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -30770,8 +30770,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -30813,8 +30813,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -30856,7 +30856,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -30899,8 +30899,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -30943,7 +30943,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -32533,7 +32533,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -32586,7 +32586,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -32614,7 +32614,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -32657,7 +32657,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -32715,7 +32715,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -32743,7 +32743,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -32786,7 +32786,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -32844,7 +32844,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -33006,7 +33006,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -34598,7 +34598,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -34640,8 +34640,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -34678,13 +34678,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -34721,12 +34721,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -34769,8 +34769,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -34807,13 +34807,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -34850,12 +34850,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -34898,8 +34898,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -34941,8 +34941,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -34984,7 +34984,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -35027,8 +35027,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -35071,7 +35071,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -36662,7 +36662,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -36704,8 +36704,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -36742,13 +36742,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -36785,12 +36785,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -36833,8 +36833,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -36871,13 +36871,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -36914,12 +36914,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -36962,8 +36962,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -37005,8 +37005,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -37048,7 +37048,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -37091,8 +37091,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -37135,7 +37135,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -38806,7 +38806,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -38849,7 +38849,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -38935,7 +38935,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -38978,7 +38978,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -40870,7 +40870,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -40913,7 +40913,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -40999,7 +40999,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -41042,7 +41042,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -42934,7 +42934,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -42977,7 +42977,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -43063,7 +43063,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -43106,7 +43106,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -44998,7 +44998,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -45041,7 +45041,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -45127,7 +45127,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -45170,7 +45170,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -47024,7 +47024,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -47062,12 +47062,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -47105,7 +47105,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -47153,7 +47153,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -47191,12 +47191,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -47206,7 +47206,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -47234,7 +47234,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -47282,7 +47282,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -47325,7 +47325,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -47411,7 +47411,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -49088,7 +49088,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -49098,7 +49098,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -49126,12 +49126,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -49169,7 +49169,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -49217,7 +49217,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -49227,7 +49227,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -49255,12 +49255,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -49298,7 +49298,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -49346,7 +49346,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -49356,7 +49356,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -49389,7 +49389,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -49475,7 +49475,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -51104,7 +51104,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -51147,7 +51147,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -51276,7 +51276,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -51334,7 +51334,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -51405,7 +51405,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -51448,7 +51448,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -51491,7 +51491,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -51534,7 +51534,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -51577,7 +51577,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -53168,7 +53168,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -53211,12 +53211,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53259,7 +53259,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53302,8 +53302,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -53340,12 +53340,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53388,7 +53388,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53431,8 +53431,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -53469,12 +53469,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53512,12 +53512,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
@@ -53555,13 +53555,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -53598,12 +53598,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -53641,7 +53641,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -55232,7 +55232,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -55275,12 +55275,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55323,7 +55323,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -55366,8 +55366,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -55404,12 +55404,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55452,7 +55452,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55495,8 +55495,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -55533,12 +55533,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -55576,12 +55576,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -55619,13 +55619,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -55662,12 +55662,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -55705,7 +55705,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57296,7 +57296,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57339,7 +57339,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57468,7 +57468,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57597,7 +57597,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57640,7 +57640,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57683,7 +57683,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57726,7 +57726,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -57769,7 +57769,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -59360,7 +59360,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -59403,12 +59403,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -59451,7 +59451,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59494,8 +59494,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -59532,12 +59532,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -59580,7 +59580,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59623,8 +59623,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -59661,12 +59661,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -59704,12 +59704,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59747,13 +59747,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -59790,12 +59790,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -59833,7 +59833,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -61424,7 +61424,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -61467,12 +61467,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61515,7 +61515,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61558,8 +61558,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -61596,12 +61596,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61644,7 +61644,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61687,8 +61687,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -61725,12 +61725,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61768,12 +61768,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61811,13 +61811,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -61854,12 +61854,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -61897,7 +61897,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63488,7 +63488,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63531,7 +63531,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63660,7 +63660,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63789,7 +63789,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63832,7 +63832,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63875,7 +63875,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63918,7 +63918,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -63961,7 +63961,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -65552,7 +65552,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -65595,7 +65595,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -65724,7 +65724,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -65853,7 +65853,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -65896,7 +65896,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -65939,7 +65939,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -65982,7 +65982,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -66025,7 +66025,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -67616,7 +67616,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -67659,7 +67659,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -67788,7 +67788,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -67917,7 +67917,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -67960,7 +67960,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -68003,7 +68003,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -68046,7 +68046,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -68089,7 +68089,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -69680,7 +69680,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -69723,7 +69723,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -69852,7 +69852,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -69981,7 +69981,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -70024,7 +70024,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -70067,7 +70067,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -70110,7 +70110,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -70153,7 +70153,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -71744,7 +71744,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -71787,7 +71787,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -71802,7 +71802,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -71916,7 +71916,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -71931,7 +71931,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -72045,7 +72045,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -72060,7 +72060,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -72088,7 +72088,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -72131,7 +72131,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -72174,7 +72174,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -72217,7 +72217,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -73808,7 +73808,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -73851,7 +73851,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -73980,7 +73980,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -74109,7 +74109,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -74152,7 +74152,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -74195,7 +74195,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -74238,7 +74238,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -74281,7 +74281,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -75872,7 +75872,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -75887,7 +75887,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -75915,7 +75915,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -75973,7 +75973,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -76016,7 +76016,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -76044,7 +76044,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -76145,7 +76145,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -76173,7 +76173,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -76216,7 +76216,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -76231,7 +76231,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -76259,7 +76259,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -76302,7 +76302,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -76317,7 +76317,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -76345,7 +76345,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -76360,7 +76360,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -77936,7 +77936,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -77979,12 +77979,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -78027,7 +78027,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -78070,8 +78070,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -78108,12 +78108,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -78156,7 +78156,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -78199,8 +78199,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -78237,12 +78237,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -78280,12 +78280,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -78323,13 +78323,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -78366,12 +78366,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -78409,7 +78409,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -80000,7 +80000,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -80043,12 +80043,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80091,7 +80091,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80134,8 +80134,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -80172,12 +80172,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80220,7 +80220,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80263,8 +80263,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -80301,12 +80301,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80344,12 +80344,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -80387,13 +80387,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -80430,12 +80430,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -80473,7 +80473,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82064,7 +82064,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82107,7 +82107,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82236,7 +82236,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82365,7 +82365,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82408,7 +82408,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82451,7 +82451,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82494,7 +82494,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -82537,7 +82537,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -84128,7 +84128,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -84171,12 +84171,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84219,7 +84219,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84262,8 +84262,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -84300,12 +84300,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84348,7 +84348,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84391,8 +84391,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -84429,12 +84429,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84472,12 +84472,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84515,13 +84515,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -84558,12 +84558,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -84601,7 +84601,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -86192,7 +86192,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -86235,12 +86235,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86283,7 +86283,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86326,8 +86326,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -86364,12 +86364,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86412,7 +86412,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86455,8 +86455,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -86493,12 +86493,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86536,12 +86536,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86579,13 +86579,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -86622,12 +86622,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -86665,7 +86665,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88256,7 +88256,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88299,7 +88299,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88428,7 +88428,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88557,7 +88557,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88600,7 +88600,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88643,7 +88643,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88686,7 +88686,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -88729,7 +88729,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90320,7 +90320,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90363,7 +90363,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90492,7 +90492,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90621,7 +90621,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90664,7 +90664,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90707,7 +90707,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90750,7 +90750,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -90793,7 +90793,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92384,7 +92384,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92427,7 +92427,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92556,7 +92556,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92685,7 +92685,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92728,7 +92728,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92771,7 +92771,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92814,7 +92814,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -92857,7 +92857,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94448,7 +94448,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94491,7 +94491,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94620,7 +94620,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94749,7 +94749,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94792,7 +94792,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94835,7 +94835,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94878,7 +94878,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -94921,7 +94921,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96512,7 +96512,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96555,7 +96555,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96684,7 +96684,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96813,7 +96813,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96856,7 +96856,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96899,7 +96899,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96942,7 +96942,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -96985,7 +96985,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -98576,7 +98576,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -98619,7 +98619,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -98748,7 +98748,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -98877,7 +98877,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -98920,7 +98920,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -98963,7 +98963,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -99006,7 +99006,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -99049,7 +99049,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -100688,7 +100688,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -100726,12 +100726,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -100769,7 +100769,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -100817,7 +100817,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -100855,12 +100855,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -100898,7 +100898,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -100946,7 +100946,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -100989,7 +100989,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -101032,7 +101032,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -101075,7 +101075,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -102709,7 +102709,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -102790,7 +102790,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -102833,12 +102833,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -102919,7 +102919,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -102962,12 +102962,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -103097,7 +103097,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -103182,7 +103182,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -104773,7 +104773,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -104854,7 +104854,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -104897,12 +104897,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -104983,7 +104983,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -105026,12 +105026,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -105161,7 +105161,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -105246,7 +105246,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -106880,7 +106880,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -106918,12 +106918,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -106961,7 +106961,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -107009,7 +107009,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -107047,12 +107047,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -107090,7 +107090,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -107138,7 +107138,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -107181,7 +107181,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -107224,7 +107224,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -107234,7 +107234,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -107267,7 +107267,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -108901,7 +108901,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -108982,7 +108982,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -109025,12 +109025,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -109111,7 +109111,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -109126,7 +109126,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -109154,12 +109154,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -109289,7 +109289,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -109374,7 +109374,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -110965,7 +110965,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -111018,7 +111018,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -111046,7 +111046,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -111089,12 +111089,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -111147,7 +111147,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -111175,7 +111175,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -111218,12 +111218,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -111276,7 +111276,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -111353,7 +111353,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -111438,7 +111438,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -113039,7 +113039,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -113110,7 +113110,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -113125,7 +113125,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -113153,7 +113153,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -113168,7 +113168,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -113239,7 +113239,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -113282,7 +113282,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -113297,7 +113297,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -113383,7 +113383,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -113469,7 +113469,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -113512,7 +113512,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -115136,7 +115136,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -115174,12 +115174,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -115217,7 +115217,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -115265,7 +115265,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -115303,12 +115303,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -115346,7 +115346,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -115394,7 +115394,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -115437,7 +115437,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -115523,7 +115523,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -117200,7 +117200,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -117238,12 +117238,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -117281,7 +117281,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -117329,7 +117329,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -117367,12 +117367,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -117410,7 +117410,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -117458,7 +117458,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -117501,7 +117501,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -117587,7 +117587,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -119264,7 +119264,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -119302,12 +119302,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -119345,7 +119345,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -119393,7 +119393,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -119431,12 +119431,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -119474,7 +119474,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -119522,7 +119522,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -119565,7 +119565,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -119651,7 +119651,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -121366,7 +121366,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -121409,12 +121409,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -121495,7 +121495,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -121538,12 +121538,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -123430,7 +123430,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -123473,12 +123473,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -123559,7 +123559,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -123602,12 +123602,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -123746,7 +123746,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -125456,7 +125456,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -125494,12 +125494,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -125537,7 +125537,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -125585,7 +125585,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -125623,12 +125623,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -125666,7 +125666,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -125714,7 +125714,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -125757,7 +125757,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -125800,7 +125800,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -125810,7 +125810,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -125843,7 +125843,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -127477,7 +127477,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -127558,7 +127558,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -127601,12 +127601,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -127687,7 +127687,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -127730,12 +127730,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -127865,7 +127865,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -127950,7 +127950,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -129541,7 +129541,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -129622,7 +129622,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -129665,12 +129665,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -129751,7 +129751,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -129794,12 +129794,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -129929,7 +129929,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -130014,7 +130014,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -131648,7 +131648,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -131686,12 +131686,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -131729,7 +131729,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -131777,7 +131777,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -131815,12 +131815,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -131830,7 +131830,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -131858,7 +131858,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -131906,7 +131906,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -131949,7 +131949,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -131992,7 +131992,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -132035,7 +132035,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -133669,7 +133669,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -133750,7 +133750,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -133793,12 +133793,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -133879,7 +133879,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -133922,12 +133922,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -134057,7 +134057,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -134142,7 +134142,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -135733,7 +135733,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -135814,7 +135814,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -135857,12 +135857,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -135943,7 +135943,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -135986,12 +135986,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -136121,7 +136121,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -136206,7 +136206,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -137850,7 +137850,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -137878,7 +137878,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -137921,7 +137921,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -137979,7 +137979,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -138007,7 +138007,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -138050,7 +138050,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -138108,7 +138108,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -139904,7 +139904,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -139942,12 +139942,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -139985,7 +139985,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -140033,7 +140033,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -140071,12 +140071,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -140114,7 +140114,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -140162,7 +140162,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -140205,7 +140205,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -140291,7 +140291,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -141968,7 +141968,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -142006,12 +142006,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -142049,7 +142049,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -142097,7 +142097,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -142135,12 +142135,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -142178,7 +142178,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -142226,7 +142226,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -142269,7 +142269,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -142355,7 +142355,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -144032,7 +144032,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -144070,12 +144070,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -144113,7 +144113,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -144161,7 +144161,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -144199,12 +144199,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -144242,7 +144242,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -144290,7 +144290,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -144333,7 +144333,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -144419,7 +144419,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -146063,7 +146063,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -146134,7 +146134,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -146149,7 +146149,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -146177,12 +146177,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -146192,7 +146192,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -146263,7 +146263,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -146306,12 +146306,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -146321,7 +146321,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -146407,7 +146407,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -146493,7 +146493,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -146536,7 +146536,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -148198,7 +148198,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -148241,12 +148241,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -148327,7 +148327,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -148342,7 +148342,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -148370,12 +148370,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -150176,7 +150176,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -150191,7 +150191,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -150219,12 +150219,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -150267,7 +150267,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -150277,7 +150277,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -150320,7 +150320,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -150348,12 +150348,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -150396,7 +150396,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -150449,7 +150449,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -150477,12 +150477,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -150520,12 +150520,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
@@ -150535,7 +150535,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -150563,7 +150563,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -150606,12 +150606,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -150621,7 +150621,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -150649,7 +150649,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -150664,7 +150664,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -152240,12 +152240,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -152283,13 +152283,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -152332,7 +152332,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -152374,7 +152374,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -152412,13 +152412,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -152461,7 +152461,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -152503,7 +152503,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -152541,13 +152541,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -152584,13 +152584,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -152627,7 +152627,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -152670,13 +152670,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -152713,12 +152713,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -154304,12 +154304,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -154347,13 +154347,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -154396,7 +154396,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -154438,7 +154438,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -154476,13 +154476,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -154525,7 +154525,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -154567,7 +154567,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -154605,13 +154605,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -154648,13 +154648,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -154691,7 +154691,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -154734,13 +154734,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -154777,12 +154777,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -156368,7 +156368,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -156411,12 +156411,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -156426,7 +156426,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -156459,7 +156459,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -156540,12 +156540,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -156555,7 +156555,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -156588,7 +156588,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -156669,12 +156669,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -156684,7 +156684,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -156712,12 +156712,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -156755,7 +156755,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -156798,12 +156798,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -156841,7 +156841,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -158432,12 +158432,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -158475,13 +158475,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -158524,7 +158524,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -158566,7 +158566,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -158604,13 +158604,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -158653,7 +158653,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -158695,7 +158695,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -158733,13 +158733,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -158776,13 +158776,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -158819,7 +158819,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -158862,13 +158862,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -158905,12 +158905,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -160496,12 +160496,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -160539,13 +160539,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -160588,7 +160588,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -160630,7 +160630,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -160668,13 +160668,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -160717,7 +160717,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -160759,7 +160759,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -160797,13 +160797,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -160840,13 +160840,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -160883,7 +160883,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -160926,13 +160926,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -160969,12 +160969,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -162560,7 +162560,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -162603,7 +162603,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -162732,7 +162732,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -162861,7 +162861,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -162904,7 +162904,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -162947,7 +162947,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -162990,7 +162990,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -163033,7 +163033,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -164624,7 +164624,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -164667,7 +164667,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -164796,7 +164796,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -164925,7 +164925,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -164968,7 +164968,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -165011,7 +165011,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -165054,7 +165054,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -165097,7 +165097,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -166688,7 +166688,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -166731,7 +166731,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -166860,7 +166860,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -166989,7 +166989,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -167032,7 +167032,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -167075,7 +167075,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -167118,7 +167118,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -167161,7 +167161,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -168752,7 +168752,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -168795,7 +168795,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -168924,7 +168924,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -169053,7 +169053,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -169096,7 +169096,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -169139,7 +169139,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -169182,7 +169182,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -169225,7 +169225,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -170816,7 +170816,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -170859,7 +170859,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -170988,7 +170988,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -171046,7 +171046,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -171117,7 +171117,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -171160,7 +171160,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -171203,7 +171203,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -171246,7 +171246,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -171289,7 +171289,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -172880,7 +172880,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -172923,7 +172923,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -172938,7 +172938,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -173052,7 +173052,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -173067,7 +173067,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -173181,7 +173181,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -173196,7 +173196,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -173224,7 +173224,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -173267,7 +173267,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -173310,7 +173310,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -173353,7 +173353,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -174944,7 +174944,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -174987,12 +174987,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -175002,7 +175002,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -175035,7 +175035,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -175116,12 +175116,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -175131,7 +175131,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -175164,7 +175164,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -175245,12 +175245,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -175260,7 +175260,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -175288,12 +175288,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -175331,7 +175331,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -175346,7 +175346,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -175374,12 +175374,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -175417,7 +175417,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -177008,12 +177008,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -177051,13 +177051,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -177100,7 +177100,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -177142,7 +177142,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -177180,13 +177180,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -177229,7 +177229,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -177271,7 +177271,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -177309,13 +177309,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -177352,13 +177352,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -177395,7 +177395,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -177438,13 +177438,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -177481,12 +177481,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -179072,12 +179072,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -179115,13 +179115,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -179164,7 +179164,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -179206,7 +179206,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -179244,13 +179244,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -179293,7 +179293,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -179335,7 +179335,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -179373,13 +179373,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -179416,13 +179416,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -179459,7 +179459,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -179502,13 +179502,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -179545,12 +179545,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -181136,7 +181136,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -181179,12 +181179,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -181227,7 +181227,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -181308,12 +181308,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -181356,7 +181356,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -181437,12 +181437,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -181480,12 +181480,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -181523,7 +181523,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -181566,12 +181566,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -181609,7 +181609,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -183200,12 +183200,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -183243,13 +183243,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -183292,7 +183292,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -183334,7 +183334,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -183372,13 +183372,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -183421,7 +183421,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -183463,7 +183463,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -183501,13 +183501,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -183544,13 +183544,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -183587,7 +183587,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -183630,13 +183630,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -183673,12 +183673,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -185264,12 +185264,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -185307,13 +185307,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -185356,7 +185356,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -185398,7 +185398,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -185436,13 +185436,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -185485,7 +185485,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -185527,7 +185527,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -185565,13 +185565,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -185608,13 +185608,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -185651,7 +185651,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -185694,13 +185694,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -185737,12 +185737,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -187328,7 +187328,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -187371,7 +187371,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -187500,7 +187500,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -187629,7 +187629,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -187672,7 +187672,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -187715,7 +187715,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -187758,7 +187758,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -187801,7 +187801,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189392,7 +189392,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189435,7 +189435,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189564,7 +189564,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189693,7 +189693,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189736,7 +189736,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189779,7 +189779,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189822,7 +189822,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -189865,7 +189865,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191456,7 +191456,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191499,7 +191499,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191628,7 +191628,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191757,7 +191757,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191800,7 +191800,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191843,7 +191843,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191886,7 +191886,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -191929,7 +191929,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193520,7 +193520,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193563,7 +193563,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193692,7 +193692,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193821,7 +193821,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193864,7 +193864,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193907,7 +193907,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193950,7 +193950,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -193993,7 +193993,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -195584,7 +195584,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -195627,7 +195627,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -195756,7 +195756,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -195885,7 +195885,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -195928,7 +195928,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -195971,7 +195971,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -196014,7 +196014,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -196057,7 +196057,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -197648,7 +197648,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -197691,7 +197691,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -197820,7 +197820,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -197949,7 +197949,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -197992,7 +197992,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -198035,7 +198035,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -198078,7 +198078,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -198121,7 +198121,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -199798,7 +199798,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -199841,12 +199841,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -199927,7 +199927,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -199970,12 +199970,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -201781,8 +201781,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -201862,7 +201862,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -201905,7 +201905,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -201991,7 +201991,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -202034,7 +202034,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -202168,7 +202168,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -202254,8 +202254,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -203845,8 +203845,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -203926,7 +203926,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -203969,7 +203969,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -204055,7 +204055,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -204098,7 +204098,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -204232,7 +204232,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -204318,8 +204318,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -205990,7 +205990,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -206033,12 +206033,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -206119,7 +206119,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -206134,7 +206134,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -206162,12 +206162,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -207973,8 +207973,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -208054,7 +208054,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -208097,7 +208097,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -208183,7 +208183,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -208226,7 +208226,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -208360,7 +208360,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -208446,8 +208446,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -210037,8 +210037,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -210118,7 +210118,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -210161,7 +210161,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -210247,7 +210247,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -210290,7 +210290,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -210424,7 +210424,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -210510,8 +210510,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -212154,7 +212154,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -212182,7 +212182,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -212225,7 +212225,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -212283,7 +212283,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -212311,7 +212311,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -212354,7 +212354,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -212412,7 +212412,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -214208,7 +214208,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214246,12 +214246,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -214289,13 +214289,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -214337,7 +214337,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214375,12 +214375,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214418,13 +214418,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -214466,7 +214466,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -214509,7 +214509,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -214553,7 +214553,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -214595,7 +214595,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -216272,7 +216272,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -216310,12 +216310,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -216353,13 +216353,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -216401,7 +216401,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -216439,12 +216439,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -216482,13 +216482,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -216530,7 +216530,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -216573,7 +216573,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -216617,7 +216617,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -216659,7 +216659,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -218336,7 +218336,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -218374,12 +218374,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -218417,13 +218417,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -218465,7 +218465,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -218503,12 +218503,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -218546,13 +218546,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -218594,7 +218594,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -218637,7 +218637,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -218681,7 +218681,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -218723,7 +218723,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -220357,7 +220357,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -220367,7 +220367,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -220438,7 +220438,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -220453,7 +220453,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -220481,7 +220481,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -220496,7 +220496,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -220567,7 +220567,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -220610,7 +220610,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -220625,7 +220625,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -220711,7 +220711,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -220797,7 +220797,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -220830,7 +220830,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -220840,7 +220840,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -222421,7 +222421,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -222502,7 +222502,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -222545,7 +222545,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -222631,7 +222631,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -222646,7 +222646,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -222674,7 +222674,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -222894,7 +222894,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -224485,7 +224485,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -224566,7 +224566,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -224609,7 +224609,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -224695,7 +224695,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -224738,7 +224738,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -224958,7 +224958,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -226630,7 +226630,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -226673,7 +226673,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -226759,7 +226759,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -226802,7 +226802,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -226936,8 +226936,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -228694,7 +228694,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -228737,7 +228737,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -228823,7 +228823,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -228866,7 +228866,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -229000,8 +229000,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -230677,7 +230677,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -230758,7 +230758,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -230801,7 +230801,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -230887,7 +230887,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -230930,7 +230930,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -231150,7 +231150,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -232822,7 +232822,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -232865,7 +232865,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -232951,7 +232951,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -232994,7 +232994,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -233128,8 +233128,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -234815,7 +234815,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -234886,7 +234886,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -234901,7 +234901,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -234929,7 +234929,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -234944,7 +234944,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -235015,7 +235015,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -235058,7 +235058,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -235073,7 +235073,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -235159,7 +235159,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -235192,8 +235192,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -235245,7 +235245,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -235288,7 +235288,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -236912,7 +236912,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -236950,12 +236950,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
@@ -236993,7 +236993,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -237041,7 +237041,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -237079,12 +237079,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -237094,7 +237094,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -237122,7 +237122,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -237170,7 +237170,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -237213,7 +237213,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
@@ -237299,7 +237299,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -238933,7 +238933,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -238977,7 +238977,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -239014,13 +239014,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -239057,12 +239057,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -239106,7 +239106,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -239143,13 +239143,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -239186,12 +239186,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -239235,7 +239235,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -239278,7 +239278,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -239364,7 +239364,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -239406,7 +239406,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -240997,7 +240997,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -241041,7 +241041,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -241078,13 +241078,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -241121,12 +241121,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -241170,7 +241170,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -241207,13 +241207,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -241250,12 +241250,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -241299,7 +241299,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -241342,7 +241342,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -241428,7 +241428,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -241470,7 +241470,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -243061,7 +243061,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -243105,7 +243105,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -243142,13 +243142,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -243185,12 +243185,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -243234,7 +243234,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -243271,13 +243271,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -243314,12 +243314,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -243363,7 +243363,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -243406,7 +243406,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -243492,7 +243492,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -243534,7 +243534,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -245168,7 +245168,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -245206,12 +245206,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -245249,7 +245249,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -245297,7 +245297,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -245335,12 +245335,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -245378,7 +245378,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -245426,7 +245426,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -245469,7 +245469,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -245512,7 +245512,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -245522,7 +245522,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -245555,7 +245555,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -247232,7 +247232,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -247270,12 +247270,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -247313,7 +247313,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -247361,7 +247361,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -247399,12 +247399,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -247442,7 +247442,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -247490,7 +247490,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -247533,7 +247533,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -247576,7 +247576,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -247619,7 +247619,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -249248,7 +249248,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -249291,7 +249291,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -249382,7 +249382,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
@@ -249420,7 +249420,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -249511,7 +249511,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
@@ -249549,7 +249549,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -249592,7 +249592,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -249635,7 +249635,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -249650,7 +249650,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -249678,7 +249678,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -249721,7 +249721,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -251312,12 +251312,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -251355,12 +251355,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -251403,7 +251403,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -251447,7 +251447,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -251484,12 +251484,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -251532,7 +251532,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -251576,7 +251576,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -251613,12 +251613,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -251656,12 +251656,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -251699,13 +251699,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -251742,12 +251742,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -251785,12 +251785,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -253376,12 +253376,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -253419,12 +253419,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -253467,7 +253467,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -253511,7 +253511,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -253548,12 +253548,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -253596,7 +253596,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -253640,7 +253640,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -253677,12 +253677,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -253720,12 +253720,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -253763,13 +253763,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -253806,12 +253806,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -253849,12 +253849,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -255440,7 +255440,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -255483,7 +255483,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -255574,7 +255574,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -255612,7 +255612,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -255670,7 +255670,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -255703,7 +255703,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -255741,7 +255741,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -255784,7 +255784,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -255827,7 +255827,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -255870,7 +255870,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -255913,7 +255913,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -257504,12 +257504,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -257547,12 +257547,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -257595,7 +257595,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -257639,7 +257639,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -257676,12 +257676,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -257724,7 +257724,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -257768,7 +257768,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -257805,12 +257805,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -257848,12 +257848,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -257891,13 +257891,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -257934,12 +257934,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -257977,12 +257977,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -259568,12 +259568,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -259611,12 +259611,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -259659,7 +259659,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -259703,7 +259703,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -259740,12 +259740,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -259788,7 +259788,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -259832,7 +259832,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -259869,12 +259869,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -259912,12 +259912,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -259955,13 +259955,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -259998,12 +259998,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -260041,12 +260041,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -261632,7 +261632,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -261675,7 +261675,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -261804,7 +261804,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -261933,7 +261933,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -261976,7 +261976,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -262019,7 +262019,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -262062,7 +262062,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -262105,7 +262105,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -263696,7 +263696,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -263739,13 +263739,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263788,7 +263788,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263868,13 +263868,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263917,7 +263917,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -263997,13 +263997,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -264040,13 +264040,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -264083,7 +264083,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -264126,13 +264126,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -264169,7 +264169,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -265760,7 +265760,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -265803,13 +265803,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265852,7 +265852,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265932,13 +265932,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -265981,7 +265981,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -266061,13 +266061,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -266104,13 +266104,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -266147,7 +266147,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -266190,13 +266190,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -266233,7 +266233,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -267824,7 +267824,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -267867,13 +267867,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -267916,7 +267916,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -267996,13 +267996,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268045,7 +268045,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268125,13 +268125,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268168,13 +268168,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -268211,7 +268211,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -268254,13 +268254,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -268297,7 +268297,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -269888,7 +269888,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -269903,7 +269903,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -269931,7 +269931,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -269989,7 +269989,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -270032,7 +270032,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -270060,7 +270060,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -270161,7 +270161,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -270189,7 +270189,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -270232,7 +270232,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -270247,7 +270247,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -270275,7 +270275,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -270318,7 +270318,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -270333,7 +270333,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -270361,7 +270361,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -270376,7 +270376,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -271952,7 +271952,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -271995,7 +271995,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -272124,7 +272124,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -272182,7 +272182,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -272253,7 +272253,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -272296,7 +272296,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -272339,7 +272339,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -272382,7 +272382,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -272425,7 +272425,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -274016,12 +274016,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -274059,7 +274059,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -274188,7 +274188,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -274317,7 +274317,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -274360,7 +274360,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -274403,7 +274403,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -274446,7 +274446,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -274489,12 +274489,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -276080,13 +276080,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -276123,13 +276123,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -276171,8 +276171,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -276214,7 +276214,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -276252,13 +276252,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -276300,8 +276300,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -276343,7 +276343,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -276381,13 +276381,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -276424,13 +276424,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -276467,12 +276467,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -276510,13 +276510,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -276553,13 +276553,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -278144,13 +278144,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -278187,13 +278187,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -278235,8 +278235,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -278278,7 +278278,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -278316,13 +278316,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -278364,8 +278364,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -278407,7 +278407,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -278445,13 +278445,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -278488,13 +278488,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -278531,12 +278531,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -278574,13 +278574,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -278617,13 +278617,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
@@ -280208,12 +280208,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -280223,7 +280223,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -280251,7 +280251,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -280309,7 +280309,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -280352,7 +280352,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -280380,7 +280380,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -280481,7 +280481,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -280509,7 +280509,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -280552,7 +280552,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -280567,7 +280567,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -280595,7 +280595,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -280638,7 +280638,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -280653,7 +280653,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -280681,12 +280681,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -280696,7 +280696,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -282272,13 +282272,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -282315,13 +282315,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -282363,8 +282363,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -282406,7 +282406,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -282444,13 +282444,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -282492,8 +282492,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -282535,7 +282535,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -282573,13 +282573,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -282616,13 +282616,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -282659,12 +282659,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -282702,13 +282702,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -282745,13 +282745,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -284336,13 +284336,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -284379,13 +284379,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -284427,8 +284427,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -284470,7 +284470,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -284508,13 +284508,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -284556,8 +284556,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -284599,7 +284599,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -284637,13 +284637,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -284680,13 +284680,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -284723,12 +284723,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -284766,13 +284766,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -284809,13 +284809,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -286400,7 +286400,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -286443,7 +286443,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -286481,6 +286481,49 @@ return [
                 'blood' => 'O',
                 'seizaSign' => 3,
                 'seizaInnerType' => 2,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 3,
+                    'seiza' => 3,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:High',
+                        '愛情表現:High',
+                        '包容力:Mid',
+                        '独占欲:High',
+                        '惚れやすさ:Mid',
+                        '嫉妬深さ:High',
+                        '恋愛の慎重さ:Low',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:Mid',
+                        '浮気耐性:Low',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ESFJ',
+                'blood' => 'O',
+                'seizaSign' => 3,
+                'seizaInnerType' => 3,
             ],
             'expected' => [
                 'influence' => [
@@ -286497,6 +286540,92 @@ return [
                         '独占欲:High',
                         '惚れやすさ:Mid',
                         '嫉妬深さ:High',
+                        '恋愛の慎重さ:Low',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:Mid',
+                        '浮気耐性:Low',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ESFJ',
+                'blood' => 'O',
+                'seizaSign' => 3,
+                'seizaInnerType' => 4,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 3,
+                    'seiza' => 4,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:High',
+                        '愛情表現:High',
+                        '包容力:High',
+                        '独占欲:High',
+                        '惚れやすさ:Mid',
+                        '嫉妬深さ:Mid',
+                        '恋愛の慎重さ:Mid',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:Mid',
+                        '浮気耐性:Mid',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ESFJ',
+                'blood' => 'O',
+                'seizaSign' => 3,
+                'seizaInnerType' => 5,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 3,
+                    'seiza' => 3,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:High',
+                        '愛情表現:High',
+                        '包容力:Mid',
+                        '独占欲:High',
+                        '惚れやすさ:Mid',
+                        '嫉妬深さ:Mid',
                         '恋愛の慎重さ:Low',
                     ],
                     'tendencyTexts' => [
@@ -286523,135 +286652,6 @@ return [
                 'mbti' => 'ESFJ',
                 'blood' => 'O',
                 'seizaSign' => 3,
-                'seizaInnerType' => 3,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 3,
-                    'seiza' => 3,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:High',
-                        '愛情表現:High',
-                        '包容力:Mid',
-                        '独占欲:High',
-                        '惚れやすさ:Mid',
-                        '嫉妬深さ:High',
-                        '恋愛の慎重さ:Low',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:Mid',
-                        '浮気耐性:Low',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ESFJ',
-                'blood' => 'O',
-                'seizaSign' => 3,
-                'seizaInnerType' => 4,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 3,
-                    'seiza' => 3,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:High',
-                        '愛情表現:High',
-                        '包容力:High',
-                        '独占欲:High',
-                        '惚れやすさ:Mid',
-                        '嫉妬深さ:Mid',
-                        '恋愛の慎重さ:Mid',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:Mid',
-                        '浮気耐性:Mid',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ESFJ',
-                'blood' => 'O',
-                'seizaSign' => 3,
-                'seizaInnerType' => 5,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 3,
-                    'seiza' => 3,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:High',
-                        '愛情表現:High',
-                        '包容力:Mid',
-                        '独占欲:High',
-                        '惚れやすさ:Mid',
-                        '嫉妬深さ:Mid',
-                        '恋愛の慎重さ:Low',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:Mid',
-                        '浮気耐性:Mid',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ESFJ',
-                'blood' => 'O',
-                'seizaSign' => 3,
                 'seizaInnerType' => 6,
             ],
             'expected' => [
@@ -286701,7 +286701,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -286744,7 +286744,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -286787,7 +286787,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -286830,7 +286830,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -286873,7 +286873,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288464,7 +288464,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288507,7 +288507,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288636,7 +288636,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288765,7 +288765,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288808,7 +288808,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288851,7 +288851,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288894,7 +288894,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -288937,7 +288937,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -290528,7 +290528,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -290571,7 +290571,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -290700,7 +290700,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -290829,7 +290829,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -290872,7 +290872,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -290915,7 +290915,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -290958,7 +290958,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -291001,7 +291001,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -292592,7 +292592,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -292635,7 +292635,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -292764,7 +292764,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -292893,7 +292893,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -292936,7 +292936,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -292979,7 +292979,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -293022,7 +293022,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -293065,7 +293065,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -294656,7 +294656,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -294699,12 +294699,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -294714,7 +294714,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -294747,7 +294747,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -294828,12 +294828,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -294843,7 +294843,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -294876,103 +294876,17 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:Mid',
                         '嫉妬深さ:Mid',
                         '恋愛の慎重さ:Mid',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:Mid',
-                        '浮気耐性:Mid',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ESFJ',
-                'blood' => 'AB',
-                'seizaSign' => 7,
-                'seizaInnerType' => 6,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 2,
-                    'seiza' => 3,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:High',
-                        '愛情表現:High',
-                        '包容力:Mid',
-                        '独占欲:High',
-                        '惚れやすさ:Mid',
-                        '嫉妬深さ:High',
-                        '恋愛の慎重さ:Low',
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
                         '浮気耐性:Mid',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ESFJ',
-                'blood' => 'AB',
-                'seizaSign' => 7,
-                'seizaInnerType' => 7,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 2,
-                    'seiza' => 3,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:High',
-                        '包容力:High',
-                        '独占欲:High',
-                        '惚れやすさ:Mid',
-                        '嫉妬深さ:Mid',
-                        '恋愛の慎重さ:Mid',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:High',
-                        '浮気耐性:High',
                     ],
                     'articleLinks' => [
                         [
@@ -294994,7 +294908,7 @@ return [
                 'mbti' => 'ESFJ',
                 'blood' => 'AB',
                 'seizaSign' => 7,
-                'seizaInnerType' => 8,
+                'seizaInnerType' => 6,
             ],
             'expected' => [
                 'influence' => [
@@ -295005,7 +294919,93 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
+                        '包容力:Mid',
+                        '独占欲:High',
+                        '惚れやすさ:Mid',
+                        '嫉妬深さ:High',
+                        '恋愛の慎重さ:Low',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:Mid',
+                        '浮気耐性:Mid',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ESFJ',
+                'blood' => 'AB',
+                'seizaSign' => 7,
+                'seizaInnerType' => 7,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 2,
+                    'seiza' => 4,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:High',
+                        '愛情表現:High',
+                        '包容力:High',
+                        '独占欲:High',
+                        '惚れやすさ:Mid',
+                        '嫉妬深さ:Mid',
+                        '恋愛の慎重さ:Mid',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:High',
+                        '浮気耐性:Mid',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ESFJ',
+                'blood' => 'AB',
+                'seizaSign' => 7,
+                'seizaInnerType' => 8,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 2,
+                    'seiza' => 4,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -295043,7 +295043,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -295058,7 +295058,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -295086,12 +295086,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -295129,7 +295129,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -296720,7 +296720,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -296735,7 +296735,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -296763,12 +296763,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -296811,7 +296811,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -296821,7 +296821,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -296864,7 +296864,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -296892,12 +296892,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -296940,7 +296940,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -296993,7 +296993,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -297021,12 +297021,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -297064,12 +297064,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -297079,7 +297079,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -297107,7 +297107,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -297150,12 +297150,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -297165,7 +297165,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -297193,7 +297193,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -297208,7 +297208,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -298751,6 +298751,135 @@ return [
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
+                        '嫉妬深さ:Low',
+                        '恋愛の慎重さ:High',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:High',
+                        '浮気耐性:High',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ISTP',
+                'blood' => 'A',
+                'seizaSign' => 3,
+                'seizaInnerType' => 0,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 3,
+                    'seiza' => 3,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:Mid',
+                        '愛情表現:Mid',
+                        '包容力:High',
+                        '独占欲:Mid',
+                        '惚れやすさ:Low',
+                        '嫉妬深さ:Low',
+                        '恋愛の慎重さ:High',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:High',
+                        '浮気耐性:High',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ISTP',
+                'blood' => 'A',
+                'seizaSign' => 3,
+                'seizaInnerType' => 1,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 3,
+                    'seiza' => 3,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:Low',
+                        '愛情表現:Low',
+                        '包容力:High',
+                        '独占欲:Low',
+                        '惚れやすさ:Low',
+                        '嫉妬深さ:Low',
+                        '恋愛の慎重さ:High',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:High',
+                        '浮気耐性:High',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ISTP',
+                'blood' => 'A',
+                'seizaSign' => 3,
+                'seizaInnerType' => 2,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 3,
+                    'seiza' => 3,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:Low',
+                        '愛情表現:Low',
+                        '包容力:High',
+                        '独占欲:Low',
+                        '惚れやすさ:Low',
                         '嫉妬深さ:Low',
                         '恋愛の慎重さ:High',
                     ],
@@ -298778,7 +298907,7 @@ return [
                 'mbti' => 'ISTP',
                 'blood' => 'A',
                 'seizaSign' => 3,
-                'seizaInnerType' => 0,
+                'seizaInnerType' => 3,
             ],
             'expected' => [
                 'influence' => [
@@ -298790,135 +298919,6 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
-                        '包容力:High',
-                        '独占欲:Mid',
-                        '惚れやすさ:Low',
-                        '嫉妬深さ:Low',
-                        '恋愛の慎重さ:High',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:High',
-                        '浮気耐性:High',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ISTP',
-                'blood' => 'A',
-                'seizaSign' => 3,
-                'seizaInnerType' => 1,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 3,
-                    'seiza' => 3,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
-                        '包容力:High',
-                        '独占欲:Low',
-                        '惚れやすさ:Low',
-                        '嫉妬深さ:Low',
-                        '恋愛の慎重さ:High',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:High',
-                        '浮気耐性:High',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ISTP',
-                'blood' => 'A',
-                'seizaSign' => 3,
-                'seizaInnerType' => 2,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 3,
-                    'seiza' => 2,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
-                        '包容力:High',
-                        '独占欲:Low',
-                        '惚れやすさ:Low',
-                        '嫉妬深さ:Low',
-                        '恋愛の慎重さ:High',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:High',
-                        '浮気耐性:High',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ISTP',
-                'blood' => 'A',
-                'seizaSign' => 3,
-                'seizaInnerType' => 3,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 3,
-                    'seiza' => 2,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:Low',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -298999,7 +298999,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -299042,12 +299042,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -300853,8 +300853,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -300934,7 +300934,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -300977,7 +300977,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -301063,7 +301063,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -301106,7 +301106,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -301240,7 +301240,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -301326,8 +301326,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -302917,8 +302917,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -302998,7 +302998,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -303041,7 +303041,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -303127,7 +303127,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -303170,7 +303170,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -303304,7 +303304,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -303390,8 +303390,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -304991,7 +304991,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -305062,7 +305062,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -305077,7 +305077,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -305105,12 +305105,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -305120,7 +305120,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -305191,7 +305191,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -305234,12 +305234,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -305249,7 +305249,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -305335,7 +305335,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -305421,7 +305421,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -305464,7 +305464,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -307045,8 +307045,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -307126,7 +307126,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -307169,7 +307169,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -307255,7 +307255,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -307298,7 +307298,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -307432,7 +307432,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -307518,8 +307518,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -309109,8 +309109,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -309190,7 +309190,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -309233,7 +309233,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -309319,7 +309319,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -309362,7 +309362,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -309496,7 +309496,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -309582,8 +309582,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -311254,7 +311254,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -311297,7 +311297,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -311383,7 +311383,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -311398,7 +311398,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -311426,7 +311426,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -313280,7 +313280,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313318,12 +313318,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -313361,13 +313361,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -313409,7 +313409,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313447,12 +313447,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313490,13 +313490,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -313538,7 +313538,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -313581,7 +313581,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -313625,7 +313625,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -313667,7 +313667,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315344,7 +315344,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315382,12 +315382,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -315425,13 +315425,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -315473,7 +315473,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315511,12 +315511,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315554,13 +315554,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -315602,7 +315602,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -315645,7 +315645,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -315689,7 +315689,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -315731,7 +315731,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -317408,7 +317408,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317446,12 +317446,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -317489,13 +317489,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -317537,7 +317537,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317575,12 +317575,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317618,13 +317618,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Mid',
+                        '積極性:High',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -317666,7 +317666,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -317709,7 +317709,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -317753,7 +317753,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -317795,7 +317795,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -319429,7 +319429,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -319482,7 +319482,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -319510,7 +319510,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -319553,7 +319553,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -319611,7 +319611,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -319639,7 +319639,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -319682,7 +319682,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -319740,7 +319740,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -319826,7 +319826,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -319902,7 +319902,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -321493,7 +321493,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -321503,7 +321503,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -321574,7 +321574,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -321589,7 +321589,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -321617,7 +321617,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -321632,7 +321632,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -321703,7 +321703,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -321746,7 +321746,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -321761,7 +321761,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -321847,7 +321847,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -321933,7 +321933,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -321966,7 +321966,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -321976,7 +321976,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -323557,7 +323557,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -323638,7 +323638,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -323681,7 +323681,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -323767,7 +323767,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -323810,7 +323810,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -324030,7 +324030,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -325702,7 +325702,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -325745,7 +325745,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -325831,7 +325831,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -325874,7 +325874,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -326008,8 +326008,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -327766,7 +327766,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -327809,7 +327809,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -327895,7 +327895,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -327938,7 +327938,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -328072,8 +328072,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -329749,7 +329749,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -329830,7 +329830,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -329873,7 +329873,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -329959,7 +329959,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -330002,7 +330002,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -330146,7 +330146,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -330222,7 +330222,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -331894,7 +331894,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -331937,7 +331937,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -332023,7 +332023,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -332038,7 +332038,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -332066,7 +332066,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -332200,8 +332200,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -333930,7 +333930,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -333958,7 +333958,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -334001,7 +334001,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -334059,7 +334059,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -334087,7 +334087,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -334130,7 +334130,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -334188,7 +334188,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -334264,8 +334264,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -335951,7 +335951,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -335984,7 +335984,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -336022,12 +336022,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -336037,7 +336037,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -336065,7 +336065,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -336080,7 +336080,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -336113,7 +336113,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -336151,12 +336151,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -336194,7 +336194,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -336209,7 +336209,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -336242,7 +336242,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -336285,7 +336285,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -336295,7 +336295,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -336371,7 +336371,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -336381,7 +336381,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -336424,7 +336424,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -338005,7 +338005,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -338049,7 +338049,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -338086,13 +338086,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -338129,12 +338129,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -338178,7 +338178,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -338215,13 +338215,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -338258,12 +338258,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -338307,7 +338307,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -338350,7 +338350,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -338436,7 +338436,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -338478,7 +338478,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -340069,7 +340069,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -340113,7 +340113,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -340150,13 +340150,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -340193,12 +340193,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -340242,7 +340242,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -340279,13 +340279,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -340322,12 +340322,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -340371,7 +340371,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -340414,7 +340414,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -340500,7 +340500,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -340542,7 +340542,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -342133,7 +342133,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -342177,7 +342177,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -342214,13 +342214,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -342257,12 +342257,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -342306,7 +342306,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -342343,13 +342343,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -342386,12 +342386,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -342435,7 +342435,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -342478,7 +342478,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -342564,7 +342564,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -342606,7 +342606,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -344240,7 +344240,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -344278,12 +344278,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -344321,7 +344321,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -344369,7 +344369,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -344407,12 +344407,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -344450,7 +344450,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -344498,7 +344498,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -344541,7 +344541,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -344584,7 +344584,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -344627,7 +344627,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
@@ -346304,7 +346304,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -346342,12 +346342,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -346385,7 +346385,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -346433,7 +346433,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -346471,12 +346471,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
@@ -346514,7 +346514,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 2,
+                    'seiza' => 3,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -346562,7 +346562,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:High',
@@ -346605,7 +346605,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -346648,7 +346648,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -346658,7 +346658,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -346691,7 +346691,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:High',
@@ -348320,7 +348320,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -348363,7 +348363,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -348454,7 +348454,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -348492,7 +348492,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -348550,7 +348550,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -348583,7 +348583,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -348621,7 +348621,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -348664,7 +348664,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -348707,7 +348707,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -348750,7 +348750,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -348793,7 +348793,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -350384,12 +350384,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -350427,12 +350427,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -350475,7 +350475,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -350519,7 +350519,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -350556,12 +350556,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -350604,7 +350604,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -350648,7 +350648,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -350685,12 +350685,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -350728,12 +350728,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -350771,13 +350771,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -350814,12 +350814,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -350857,12 +350857,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -352448,12 +352448,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -352491,12 +352491,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -352539,7 +352539,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -352583,7 +352583,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -352620,12 +352620,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -352668,7 +352668,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -352712,7 +352712,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -352749,12 +352749,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:High',
                         '独占欲:Low',
@@ -352792,12 +352792,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -352835,13 +352835,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -352878,12 +352878,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Mid',
                         '独占欲:Low',
@@ -352921,12 +352921,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -354512,7 +354512,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -354555,7 +354555,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -354646,7 +354646,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -354684,7 +354684,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -354775,7 +354775,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -354813,7 +354813,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -354856,7 +354856,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -354899,7 +354899,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -354942,7 +354942,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -354985,7 +354985,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -356576,12 +356576,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356619,12 +356619,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356667,7 +356667,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356711,7 +356711,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -356748,12 +356748,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356796,7 +356796,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356840,7 +356840,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -356877,12 +356877,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356920,12 +356920,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -356963,13 +356963,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -357006,12 +357006,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -357049,12 +357049,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358640,12 +358640,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358683,12 +358683,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358731,7 +358731,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358775,7 +358775,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -358812,12 +358812,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358860,7 +358860,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358904,7 +358904,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Low',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -358941,12 +358941,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -358984,12 +358984,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -359027,13 +359027,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
-                        '愛情表現:Low',
+                        '積極性:High',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -359070,12 +359070,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Low',
                         '包容力:Low',
                         '独占欲:Low',
@@ -359113,12 +359113,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -360704,7 +360704,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -360747,7 +360747,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -360876,7 +360876,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -361005,7 +361005,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -361048,7 +361048,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -361091,7 +361091,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -361134,7 +361134,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -361177,7 +361177,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -362768,7 +362768,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -362811,13 +362811,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362860,7 +362860,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362940,13 +362940,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -362989,7 +362989,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -363069,13 +363069,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -363112,13 +363112,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -363155,7 +363155,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -363198,13 +363198,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -363241,7 +363241,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -364832,7 +364832,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -364875,13 +364875,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -364924,7 +364924,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365004,13 +365004,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365053,7 +365053,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365133,13 +365133,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -365176,13 +365176,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -365219,7 +365219,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -365262,13 +365262,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -365305,7 +365305,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -366896,7 +366896,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -366939,13 +366939,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -366988,7 +366988,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367068,13 +367068,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367117,7 +367117,7 @@ return [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367197,13 +367197,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -367240,13 +367240,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -367283,7 +367283,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -367326,13 +367326,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:High',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -367369,7 +367369,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -368960,7 +368960,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -369003,7 +369003,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -369018,7 +369018,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -369132,7 +369132,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -369147,7 +369147,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -369261,7 +369261,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -369276,7 +369276,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -369304,7 +369304,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -369347,7 +369347,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -369390,7 +369390,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -369433,7 +369433,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371024,7 +371024,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371067,7 +371067,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371196,7 +371196,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371325,7 +371325,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371368,7 +371368,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371411,7 +371411,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371454,7 +371454,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -371497,7 +371497,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -373088,12 +373088,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -373103,7 +373103,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -373131,7 +373131,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -373189,7 +373189,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -373232,7 +373232,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -373260,7 +373260,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -373361,7 +373361,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -373389,7 +373389,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -373432,7 +373432,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -373447,7 +373447,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -373475,7 +373475,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -373518,7 +373518,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -373533,7 +373533,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -373561,12 +373561,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
@@ -373576,7 +373576,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:High',
-                        '浮気耐性:High',
+                        '浮気耐性:Mid',
                     ],
                     'articleLinks' => [
                         [
@@ -375152,13 +375152,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -375195,13 +375195,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -375243,8 +375243,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -375286,7 +375286,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -375324,13 +375324,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -375372,8 +375372,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -375415,7 +375415,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -375453,13 +375453,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Low',
@@ -375496,13 +375496,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Low',
                         '惚れやすさ:Low',
@@ -375539,12 +375539,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -375582,13 +375582,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -375625,13 +375625,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -377216,13 +377216,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -377259,13 +377259,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -377307,8 +377307,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -377350,7 +377350,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -377383,61 +377383,18 @@ return [
                 'blood' => 'A',
                 'seizaSign' => 11,
                 'seizaInnerType' => 4,
-            ],
-            'expected' => [
-                'influence' => [
-                    'mbti' => 5,
-                    'blood' => 3,
-                    'seiza' => 3,
-                ],
-                'document' => [
-                    'bundleText' => 'BUNDLE_PLACEHOLDER',
-                    'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
-                        '包容力:High',
-                        '独占欲:Mid',
-                        '惚れやすさ:Mid',
-                        '嫉妬深さ:Low',
-                        '恋愛の慎重さ:High',
-                    ],
-                    'tendencyTexts' => [
-                        '結婚志向:High',
-                        '浮気耐性:High',
-                    ],
-                    'articleLinks' => [
-                        [
-                            'source' => 'mbti',
-                            'url' => 'mbti-article',
-                            'label' => 'MBTI',
-                        ],
-                        [
-                            'source' => 'seiza',
-                            'url' => 'seiza-article',
-                            'label' => 'SEIZA',
-                        ],
-                    ],
-                ],
-            ],
-        ],
-        [
-            'input' => [
-                'mbti' => 'ESFP',
-                'blood' => 'A',
-                'seizaSign' => 11,
-                'seizaInnerType' => 5,
             ],
             'expected' => [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -377468,6 +377425,49 @@ return [
                 'mbti' => 'ESFP',
                 'blood' => 'A',
                 'seizaSign' => 11,
+                'seizaInnerType' => 5,
+            ],
+            'expected' => [
+                'influence' => [
+                    'mbti' => 5,
+                    'blood' => 3,
+                    'seiza' => 3,
+                ],
+                'document' => [
+                    'bundleText' => 'BUNDLE_PLACEHOLDER',
+                    'styleTexts' => [
+                        '積極性:Mid',
+                        '愛情表現:Mid',
+                        '包容力:High',
+                        '独占欲:Mid',
+                        '惚れやすさ:Mid',
+                        '嫉妬深さ:Low',
+                        '恋愛の慎重さ:High',
+                    ],
+                    'tendencyTexts' => [
+                        '結婚志向:High',
+                        '浮気耐性:High',
+                    ],
+                    'articleLinks' => [
+                        [
+                            'source' => 'mbti',
+                            'url' => 'mbti-article',
+                            'label' => 'MBTI',
+                        ],
+                        [
+                            'source' => 'seiza',
+                            'url' => 'seiza-article',
+                            'label' => 'SEIZA',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'mbti' => 'ESFP',
+                'blood' => 'A',
+                'seizaSign' => 11,
                 'seizaInnerType' => 6,
             ],
             'expected' => [
@@ -377479,7 +377479,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
@@ -377517,13 +377517,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:High',
                         '独占欲:Mid',
                         '惚れやすさ:Mid',
@@ -377560,13 +377560,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -377603,12 +377603,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
@@ -377646,13 +377646,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -377689,13 +377689,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:High',
                         '独占欲:High',
                         '惚れやすさ:High',
@@ -379280,12 +379280,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -379323,7 +379323,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -379338,7 +379338,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -379452,7 +379452,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -379467,7 +379467,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -379581,7 +379581,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -379596,7 +379596,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -379624,7 +379624,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -379667,7 +379667,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -379710,7 +379710,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -379753,12 +379753,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -381344,13 +381344,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -381387,13 +381387,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -381435,8 +381435,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -381478,7 +381478,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -381516,13 +381516,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -381564,8 +381564,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -381607,7 +381607,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -381645,13 +381645,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Mid',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -381688,13 +381688,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:Mid',
@@ -381731,12 +381731,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -381774,13 +381774,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -381817,13 +381817,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -383408,13 +383408,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -383451,13 +383451,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -383499,8 +383499,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -383542,7 +383542,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -383580,13 +383580,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -383628,8 +383628,8 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -383671,7 +383671,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
+                        '積極性:Mid',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -383709,13 +383709,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -383752,13 +383752,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -383795,12 +383795,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
@@ -383838,13 +383838,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Low',
-                        '愛情表現:Low',
+                        '積極性:Mid',
+                        '愛情表現:Mid',
                         '包容力:Low',
                         '独占欲:Low',
                         '惚れやすさ:High',
@@ -383881,13 +383881,13 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
                         '積極性:Mid',
-                        '愛情表現:Mid',
+                        '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
                         '惚れやすさ:High',
@@ -385472,7 +385472,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -385515,7 +385515,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -385644,7 +385644,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -385773,7 +385773,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -385816,7 +385816,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -385859,7 +385859,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -385902,7 +385902,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -385945,7 +385945,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -387536,7 +387536,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -387579,7 +387579,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -387708,7 +387708,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -387837,7 +387837,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -387880,7 +387880,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -387923,7 +387923,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -387966,7 +387966,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -388009,7 +388009,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -389600,7 +389600,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -389643,7 +389643,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -389772,7 +389772,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -389901,7 +389901,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -389944,7 +389944,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -389987,7 +389987,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -390030,7 +390030,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -390073,7 +390073,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 3,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -391664,7 +391664,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -391707,7 +391707,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -391836,7 +391836,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -391965,7 +391965,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -392008,7 +392008,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -392051,7 +392051,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -392094,7 +392094,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -392137,7 +392137,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -393728,7 +393728,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -393771,12 +393771,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -393819,7 +393819,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -393900,12 +393900,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -393948,7 +393948,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -393958,7 +393958,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Mid',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -394029,12 +394029,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -394072,12 +394072,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -394115,7 +394115,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -394158,12 +394158,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -394201,7 +394201,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -395792,7 +395792,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -395835,12 +395835,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -395850,7 +395850,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -395883,7 +395883,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -395964,12 +395964,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -395979,7 +395979,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -396012,7 +396012,7 @@ return [
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -396093,12 +396093,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Mid',
                         '独占欲:High',
@@ -396108,7 +396108,7 @@ return [
                     ],
                     'tendencyTexts' => [
                         '結婚志向:Low',
-                        '浮気耐性:Mid',
+                        '浮気耐性:Low',
                     ],
                     'articleLinks' => [
                         [
@@ -396136,12 +396136,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:Mid',
@@ -396179,7 +396179,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
@@ -396222,12 +396222,12 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',
                     'styleTexts' => [
-                        '積極性:Mid',
+                        '積極性:High',
                         '愛情表現:High',
                         '包容力:Low',
                         '独占欲:High',
@@ -396265,7 +396265,7 @@ return [
                 'influence' => [
                     'mbti' => 5,
                     'blood' => 2,
-                    'seiza' => 3,
+                    'seiza' => 4,
                 ],
                 'document' => [
                     'bundleText' => 'BUNDLE_PLACEHOLDER',

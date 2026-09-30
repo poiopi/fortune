@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * compare-axis-values.php
  *
- * tests/cases/axis-values-snapshot.php（50ケース）に対して、axis-engine.php の
+ * tests/cases/axis-values-snapshot.php（62ケース＝50件＋12星座カバレッジ12件）に対して、axis-engine.php の
  * axis_aggregateTraits() → axis_computeAxes() のパイプラインを照合する。
  *
  * 実行方法: php tests/tools/compare-axis-values.php

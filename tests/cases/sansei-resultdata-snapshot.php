@@ -4,9 +4,9 @@
 // 生成元: tests/tools/export-sansei-resultdata.php
 return [
     'generator' => 'test.life-fun.net/inc/axis-engine.php sanseiEngine() (Step2-4完成版)',
-    'note' => 'version/archetype/summary/advice/scores/influence/metaを含む完全なSanseiResultのスナップショット。50件全件保存。',
-    'generatedAt' => '2026-07-06T08:52:07+09:00',
-    'caseCount' => 50,
+    'note' => 'version/archetype/summary/advice/scores/influence/metaを含む完全なSanseiResultのスナップショット。axis-aggregation-snapshot.phpと同じ62件（サンプリング50件＋12星座カバレッジ12件）を全件保存。',
+    'generatedAt' => '2026-10-01T00:26:59+09:00',
+    'caseCount' => 62,
     'cases' => [
         [
             'shichuInput' => [
@@ -2903,6 +2903,702 @@ return [
                     ],
                     'theme' => [
                         'identity' => '継続 × 共感',
+                        'today' => '継続 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2090,
+                'month' => 11,
+                'day' => 29,
+                'hour' => 8,
+                'gender' => 'female',
+                'note' => 'seed生成 #34',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 3,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 1,
+                'day' => 1,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '揺るがぬ土台を築く守護者',
+                'summary' => 'あなたは堅実さを軸に物事を進める傾向があります。一方で必要な場面ではためらわず動く行動力も持ち、地道な積み重ねと機を逃さない決断力の両方で成果を積み上げていけます。今日は、共感力が高まる一日です。感じたことを行動に移すと流れが良くなります。',
+                'advice' => '今日は人の気持ちを敏感に感じ取れる一日です。感じたことを言葉や行動にすぐ移すと、良い縁につながりやすいでしょう。',
+                'scores' => [
+                    'love' => 1,
+                    'work' => 4,
+                    'money' => 3,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 3,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_ACT',
+                    'todayBundleId' => 'TD_SEN_ACT',
+                    'identityAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'todayAxes' => [
+                        '感応性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '安定性',
+                        '行動力',
+                        '責任感',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 勢い',
+                        'today' => '共感 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2081,
+                'month' => 3,
+                'day' => 24,
+                'hour' => 1,
+                'gender' => 'male',
+                'note' => 'seed生成 #35',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 3,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 1,
+                'day' => 20,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '伝統を今に活かす継承者',
+                'summary' => 'あなたは堅実さを核に持っています。さらに変化を恐れず受け入れる柔軟さも併せ持っており、大切なものを守りながらも時代に合わせて形を変えられるため、続けるほど深みが増していきます。今日は、地に足のついた判断ができる一日です。ここぞという場面での決断も後押しされます。',
+                'advice' => '今日は落ち着いて計画を立てるのに向いた日ですが、思い切って動く場面も訪れそうです。準備が整ったら迷わず一歩を踏み出しましょう。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 2,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_TRA',
+                    'todayBundleId' => 'TD_REL_ACT',
+                    'identityAxes' => [
+                        '堅実性',
+                        '変革性',
+                    ],
+                    'todayAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '安定性',
+                        '変化',
+                        '慎重さ',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 変化',
+                        'today' => '継続 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1910,
+                'month' => 12,
+                'day' => 18,
+                'hour' => 1,
+                'gender' => 'male',
+                'note' => 'seed生成 #36',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 4,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 2,
+                'day' => 19,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '着実に前進する開拓者',
+                'summary' => 'あなたは行動力を核に持っています。さらに物事を一過性で終わらせない堅実さも併せ持っており、勢いと粘り強さを両立できるため、長期的な目標ほど本来の力を発揮できるでしょう。今日は、地に足のついた判断ができる一日です。ここぞという場面での決断も後押しされます。',
+                'advice' => '今日は落ち着いて計画を立てるのに向いた日ですが、思い切って動く場面も訪れそうです。準備が整ったら迷わず一歩を踏み出しましょう。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 3,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_ACT_REL',
+                    'todayBundleId' => 'TD_REL_ACT',
+                    'identityAxes' => [
+                        '行動性',
+                        '堅実性',
+                    ],
+                    'todayAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '変化',
+                        '責任感',
+                        '慎重さ',
+                    ],
+                    'theme' => [
+                        'identity' => '勢い × 継続',
+                        'today' => '継続 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2075,
+                'month' => 12,
+                'day' => 17,
+                'hour' => 7,
+                'gender' => 'male',
+                'note' => 'seed生成 #37',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 4,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 3,
+                'day' => 21,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '着実に前進する開拓者',
+                'summary' => 'あなたは行動力を核に持っています。さらに物事を一過性で終わらせない堅実さも併せ持っており、勢いと粘り強さを両立できるため、長期的な目標ほど本来の力を発揮できるでしょう。今日は、地に足のついた判断ができる一日です。ここぞという場面での決断も後押しされます。',
+                'advice' => '今日は落ち着いて計画を立てるのに向いた日ですが、思い切って動く場面も訪れそうです。準備が整ったら迷わず一歩を踏み出しましょう。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 3,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_ACT_REL',
+                    'todayBundleId' => 'TD_REL_ACT',
+                    'identityAxes' => [
+                        '行動性',
+                        '堅実性',
+                    ],
+                    'todayAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '情熱',
+                        '慎重さ',
+                        '挑戦',
+                    ],
+                    'theme' => [
+                        'identity' => '勢い × 継続',
+                        'today' => '継続 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2002,
+                'month' => 8,
+                'day' => 11,
+                'hour' => null,
+                'gender' => 'male',
+                'note' => 'seed生成 #38',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 5,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 4,
+                'day' => 20,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '揺るがぬ土台を築く守護者',
+                'summary' => 'あなたは堅実さを軸に物事を進める傾向があります。一方で必要な場面ではためらわず動く行動力も持ち、地道な積み重ねと機を逃さない決断力の両方で成果を積み上げていけます。今日は、地に足のついた判断ができる一日です。ここぞという場面での決断も後押しされます。',
+                'advice' => '今日は落ち着いて計画を立てるのに向いた日ですが、思い切って動く場面も訪れそうです。準備が整ったら迷わず一歩を踏み出しましょう。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 4,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_ACT',
+                    'todayBundleId' => 'TD_REL_ACT',
+                    'identityAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'todayAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '安定性',
+                        '変化',
+                        '情熱',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 勢い',
+                        'today' => '継続 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1992,
+                'month' => 5,
+                'day' => 27,
+                'hour' => 22,
+                'gender' => 'female',
+                'note' => 'seed生成 #39',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 5,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 5,
+                'day' => 21,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '自分の軸で組み立てる設計者',
+                'summary' => '堅実さ——それがあなたの本質です。同時に自分の信念で決める自律性も兼ね備えており、周囲に流されず着実に積み上げられるため、長期計画を任されるほど本領を発揮するでしょう。今日は、変化に飛び込む勢いが生まれる一日です。行動が変化をさらに加速させます。',
+                'advice' => '今日は変化の兆しを感じたら、迷わず一歩踏み出してみましょう。新しい流れに乗ることが、今のあなたにとって大きな追い風になります。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 2,
+                    'money' => 2,
+                    'health' => 2,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 2,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_AUT',
+                    'todayBundleId' => 'TD_TRA_ACT',
+                    'identityAxes' => [
+                        '堅実性',
+                        '自律性',
+                    ],
+                    'todayAxes' => [
+                        '変革性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '慎重さ',
+                        '独立',
+                        '変化',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 信念',
+                        'today' => '変化 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2099,
+                'month' => 4,
+                'day' => 4,
+                'hour' => 16,
+                'gender' => 'female',
+                'note' => 'seed生成 #40',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 6,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 6,
+                'day' => 22,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '心を込めて仕上げる職人',
+                'summary' => 'あなたの強みは堅実さです。そのうえで繊細な感性と共感力も持ち合わせており、丁寧さと思いやりを両立できるため、じっくり向き合う仕事ほど評価されやすいでしょう。今日は、共感力が高まる一日です。感じたことを行動に移すと流れが良くなります。',
+                'advice' => '今日は人の気持ちを敏感に感じ取れる一日です。感じたことを言葉や行動にすぐ移すと、良い縁につながりやすいでしょう。',
+                'scores' => [
+                    'love' => 3,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 4,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 3,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_SEN',
+                    'todayBundleId' => 'TD_SEN_ACT',
+                    'identityAxes' => [
+                        '堅実性',
+                        '感応性',
+                    ],
+                    'todayAxes' => [
+                        '感応性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '慎重さ',
+                        '直感',
+                        '行動力',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 共感',
+                        'today' => '共感 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1937,
+                'month' => 12,
+                'day' => 8,
+                'hour' => 0,
+                'gender' => 'female',
+                'note' => 'seed生成 #41',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 6,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 7,
+                'day' => 23,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '心を込めて仕上げる職人',
+                'summary' => 'あなたの強みは堅実さです。そのうえで繊細な感性と共感力も持ち合わせており、丁寧さと思いやりを両立できるため、じっくり向き合う仕事ほど評価されやすいでしょう。今日は、地に足のついた判断ができる一日です。ここぞという場面での決断も後押しされます。',
+                'advice' => '今日は落ち着いて計画を立てるのに向いた日ですが、思い切って動く場面も訪れそうです。準備が整ったら迷わず一歩を踏み出しましょう。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 4,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 3,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_SEN',
+                    'todayBundleId' => 'TD_REL_ACT',
+                    'identityAxes' => [
+                        '堅実性',
+                        '感応性',
+                    ],
+                    'todayAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '慎重さ',
+                        '安定性',
+                        '情熱',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 共感',
+                        'today' => '継続 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1943,
+                'month' => 10,
+                'day' => 26,
+                'hour' => 15,
+                'gender' => 'female',
+                'note' => 'seed生成 #42',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 7,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 8,
+                'day' => 23,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '伝統を今に活かす継承者',
+                'summary' => 'あなたは堅実さを核に持っています。さらに変化を恐れず受け入れる柔軟さも併せ持っており、大切なものを守りながらも時代に合わせて形を変えられるため、続けるほど深みが増していきます。今日は、決断の早さが際立つ一日です。積み重ねを意識すると流れがさらに安定します。',
+                'advice' => '今日は普段より決断が早くなりそうです。ただし勢いに任せきりにせず、小さな積み重ねも意識すると結果がついてくるでしょう。',
+                'scores' => [
+                    'love' => 1,
+                    'work' => 4,
+                    'money' => 2,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 2,
+                    'seiza' => 3,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_TRA',
+                    'todayBundleId' => 'TD_ACT_REL',
+                    'identityAxes' => [
+                        '堅実性',
+                        '変革性',
+                    ],
+                    'todayAxes' => [
+                        '行動性',
+                        '堅実性',
+                    ],
+                    'topTraits' => [
+                        '責任感',
+                        '変化',
+                        '行動力',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 変化',
+                        'today' => '勢い × 継続',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1920,
+                'month' => 1,
+                'day' => 11,
+                'hour' => null,
+                'gender' => 'female',
+                'note' => 'seed生成 #43',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 7,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 9,
+                'day' => 23,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '着実に前進する開拓者',
+                'summary' => 'あなたは行動力を核に持っています。さらに物事を一過性で終わらせない堅実さも併せ持っており、勢いと粘り強さを両立できるため、長期的な目標ほど本来の力を発揮できるでしょう。今日は、共感力が高まる一日です。感じたことを行動に移すと流れが良くなります。',
+                'advice' => '今日は人の気持ちを敏感に感じ取れる一日です。感じたことを言葉や行動にすぐ移すと、良い縁につながりやすいでしょう。',
+                'scores' => [
+                    'love' => 1,
+                    'work' => 2,
+                    'money' => 2,
+                    'health' => 1,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 2,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_ACT_REL',
+                    'todayBundleId' => 'TD_SEN_ACT',
+                    'identityAxes' => [
+                        '行動性',
+                        '堅実性',
+                    ],
+                    'todayAxes' => [
+                        '感応性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '行動力',
+                        '安定性',
+                        '独立',
+                    ],
+                    'theme' => [
+                        'identity' => '勢い × 継続',
+                        'today' => '共感 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2084,
+                'month' => 1,
+                'day' => 6,
+                'hour' => null,
+                'gender' => 'female',
+                'note' => 'seed生成 #44',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 8,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 10,
+                'day' => 24,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '伝統を今に活かす継承者',
+                'summary' => 'あなたは堅実さを核に持っています。さらに変化を恐れず受け入れる柔軟さも併せ持っており、大切なものを守りながらも時代に合わせて形を変えられるため、続けるほど深みが増していきます。今日は、地に足のついた判断ができる一日です。ここぞという場面での決断も後押しされます。',
+                'advice' => '今日は落ち着いて計画を立てるのに向いた日ですが、思い切って動く場面も訪れそうです。準備が整ったら迷わず一歩を踏み出しましょう。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 4,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_REL_TRA',
+                    'todayBundleId' => 'TD_REL_ACT',
+                    'identityAxes' => [
+                        '堅実性',
+                        '変革性',
+                    ],
+                    'todayAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '慎重さ',
+                        '変化',
+                        '安定性',
+                    ],
+                    'theme' => [
+                        'identity' => '継続 × 変化',
+                        'today' => '継続 × 勢い',
+                    ],
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2093,
+                'month' => 5,
+                'day' => 22,
+                'hour' => 7,
+                'gender' => 'female',
+                'note' => 'seed生成 #45',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 8,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 11,
+                'day' => 22,
+                'timeZoneCode' => 'M',
+            ],
+            'sanseiResult' => [
+                'version' => '1.0',
+                'archetype' => '静かに場を整える調停者',
+                'summary' => 'あなたは感応性を核に持っています。さらに物事を着実に積み重ねる堅実さも併せ持っており、周囲の気持ちを汲みながら地道に信頼を築けるため、長く続く関係ほど力を発揮します。今日は、地に足のついた判断ができる一日です。ここぞという場面での決断も後押しされます。',
+                'advice' => '今日は落ち着いて計画を立てるのに向いた日ですが、思い切って動く場面も訪れそうです。準備が整ったら迷わず一歩を踏み出しましょう。',
+                'scores' => [
+                    'love' => 2,
+                    'work' => 3,
+                    'money' => 2,
+                    'health' => 3,
+                ],
+                'influence' => [
+                    'shichu' => 5,
+                    'tarot' => 1,
+                    'seiza' => 3,
+                ],
+                'meta' => [
+                    'identityBundleId' => 'ID_SEN_REL',
+                    'todayBundleId' => 'TD_REL_ACT',
+                    'identityAxes' => [
+                        '感応性',
+                        '堅実性',
+                    ],
+                    'todayAxes' => [
+                        '堅実性',
+                        '行動性',
+                    ],
+                    'topTraits' => [
+                        '安定性',
+                        '行動力',
+                        '直感',
+                    ],
+                    'theme' => [
+                        'identity' => '共感 × 継続',
                         'today' => '継続 × 勢い',
                     ],
                 ],

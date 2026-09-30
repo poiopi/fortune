@@ -5,7 +5,7 @@
 return [
     'generator' => 'inc/seiza-trait-mapping.php（独立再実装：export-seiza-traits.php）',
     'basedOnGolden' => 'tests/cases/seiza-golden.php',
-    'generatedAt' => '2026-07-05T23:05:44+00:00',
+    'generatedAt' => '2026-09-30T15:23:54+00:00',
     'caseCount' => 1830,
     'cases' => [
         [
@@ -8004,7 +8004,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8025,7 +8025,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8046,7 +8046,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8067,7 +8067,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8088,7 +8088,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8105,7 +8105,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -8126,7 +8126,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -8147,7 +8147,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -8168,7 +8168,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -8189,7 +8189,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -8214,7 +8214,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8235,7 +8235,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8256,7 +8256,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8277,7 +8277,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8298,7 +8298,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8319,7 +8319,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8340,7 +8340,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8361,7 +8361,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8382,7 +8382,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8403,7 +8403,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8424,7 +8424,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8445,7 +8445,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8466,7 +8466,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8487,7 +8487,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8508,7 +8508,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8529,7 +8529,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8550,7 +8550,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8571,7 +8571,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8592,7 +8592,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8613,7 +8613,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8630,7 +8630,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8647,7 +8647,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8664,7 +8664,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8681,7 +8681,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8698,7 +8698,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8719,7 +8719,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8740,7 +8740,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8761,7 +8761,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8782,7 +8782,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8803,7 +8803,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8824,7 +8824,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8845,7 +8845,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8866,7 +8866,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8887,7 +8887,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8908,7 +8908,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8929,7 +8929,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8950,7 +8950,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8971,7 +8971,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -8992,7 +8992,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9013,7 +9013,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9034,7 +9034,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9055,7 +9055,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9076,7 +9076,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9097,7 +9097,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9118,7 +9118,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9139,7 +9139,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9160,7 +9160,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9181,7 +9181,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9202,7 +9202,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9223,7 +9223,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9244,7 +9244,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9265,7 +9265,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9286,7 +9286,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9307,7 +9307,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9328,7 +9328,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9345,7 +9345,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -9366,7 +9366,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -9387,7 +9387,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -9408,7 +9408,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -9429,7 +9429,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -9454,7 +9454,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9475,7 +9475,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9496,7 +9496,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9517,7 +9517,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9538,7 +9538,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9559,7 +9559,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9580,7 +9580,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9601,7 +9601,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9622,7 +9622,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9643,7 +9643,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9664,7 +9664,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9685,7 +9685,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9706,7 +9706,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9727,7 +9727,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9748,7 +9748,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9769,7 +9769,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9790,7 +9790,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9811,7 +9811,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9832,7 +9832,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9853,7 +9853,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9870,7 +9870,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9887,7 +9887,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9904,7 +9904,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9921,7 +9921,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9938,7 +9938,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9959,7 +9959,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -9980,7 +9980,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10001,7 +10001,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10022,7 +10022,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10043,7 +10043,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10064,7 +10064,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10085,7 +10085,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10106,7 +10106,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10127,7 +10127,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10148,7 +10148,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10169,7 +10169,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10190,7 +10190,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10211,7 +10211,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10232,7 +10232,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10253,7 +10253,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10274,7 +10274,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10295,7 +10295,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10316,7 +10316,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10337,7 +10337,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10358,7 +10358,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10379,7 +10379,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10400,7 +10400,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10421,7 +10421,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10442,7 +10442,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10463,7 +10463,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10484,7 +10484,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10505,7 +10505,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10526,7 +10526,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10547,7 +10547,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10568,7 +10568,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10585,7 +10585,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -10606,7 +10606,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -10627,7 +10627,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -10648,7 +10648,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -10669,7 +10669,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -10694,7 +10694,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10715,7 +10715,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10736,7 +10736,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10757,7 +10757,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10778,7 +10778,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10799,7 +10799,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10820,7 +10820,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10841,7 +10841,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10862,7 +10862,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10883,7 +10883,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10904,7 +10904,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10925,7 +10925,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10946,7 +10946,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10967,7 +10967,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -10988,7 +10988,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -11009,7 +11009,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -11030,7 +11030,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -11051,7 +11051,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -11072,7 +11072,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -11093,7 +11093,7 @@ return [
                     'type' => 'permanent',
                 ],
                 '行動力' => [
-                    'score' => 1,
+                    'score' => 2,
                     'type' => 'permanent',
                 ],
             ],
@@ -19383,6 +19383,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19400,6 +19404,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19417,6 +19425,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19434,6 +19446,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19451,6 +19467,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19466,6 +19486,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -19485,6 +19509,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19500,6 +19528,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -19519,6 +19551,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19534,6 +19570,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -19554,6 +19594,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -19578,6 +19622,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19596,6 +19644,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -19620,6 +19672,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19638,6 +19694,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -19662,6 +19722,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19680,6 +19744,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -19704,6 +19772,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19725,6 +19797,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19743,6 +19819,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -19767,6 +19847,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19786,6 +19870,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -19809,6 +19897,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19830,6 +19922,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19849,6 +19945,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -19868,6 +19968,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19883,6 +19987,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -19902,6 +20010,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19919,6 +20031,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19934,6 +20050,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -19957,6 +20077,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -19975,6 +20099,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -19999,6 +20127,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20020,6 +20152,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20038,6 +20174,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -20056,6 +20196,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -20079,6 +20223,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -20098,6 +20246,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -20121,6 +20273,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -20140,6 +20296,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -20167,6 +20327,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20188,6 +20352,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20209,6 +20377,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20230,6 +20402,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20251,6 +20427,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20270,6 +20450,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20293,6 +20477,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20312,6 +20500,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20335,6 +20527,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20354,6 +20550,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20377,6 +20577,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20396,6 +20600,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20419,6 +20627,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20440,6 +20652,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20459,6 +20675,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20482,6 +20702,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20501,6 +20725,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20524,6 +20752,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20545,6 +20777,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20564,6 +20800,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20583,6 +20823,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20598,6 +20842,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 4,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20617,6 +20865,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20634,6 +20886,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20649,6 +20905,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 4,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20668,6 +20928,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20683,6 +20947,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20702,6 +20970,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20719,6 +20991,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20734,6 +21010,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -20757,6 +21037,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20775,6 +21059,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -20799,6 +21087,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20820,6 +21112,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20838,6 +21134,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -20862,6 +21162,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20880,6 +21184,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -20904,6 +21212,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20925,6 +21237,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20943,6 +21259,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -20967,6 +21287,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -20986,6 +21310,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21009,6 +21337,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21030,6 +21362,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21049,6 +21385,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21068,6 +21408,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21083,6 +21427,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21102,6 +21450,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21119,6 +21471,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21134,6 +21490,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21157,6 +21517,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21175,6 +21539,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -21199,6 +21567,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21220,6 +21592,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21238,6 +21614,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -21256,6 +21636,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -21279,6 +21663,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -21298,6 +21686,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -21321,6 +21713,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -21340,6 +21736,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -21367,6 +21767,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21388,6 +21792,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21409,6 +21817,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21430,6 +21842,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21451,6 +21867,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21470,6 +21890,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21493,6 +21917,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21512,6 +21940,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21535,6 +21967,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21554,6 +21990,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21577,6 +22017,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21596,6 +22040,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21619,6 +22067,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21640,6 +22092,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21659,6 +22115,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21682,6 +22142,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21701,6 +22165,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21724,6 +22192,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21745,6 +22217,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21764,6 +22240,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21783,6 +22263,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21798,6 +22282,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 4,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21817,6 +22305,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21834,6 +22326,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21849,6 +22345,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 4,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21868,6 +22368,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21883,6 +22387,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21902,6 +22410,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21919,6 +22431,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21934,6 +22450,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -21957,6 +22477,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -21975,6 +22499,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -21999,6 +22527,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22020,6 +22552,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22038,6 +22574,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -22062,6 +22602,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22080,6 +22624,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -22104,6 +22652,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22125,6 +22677,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22143,6 +22699,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -22167,6 +22727,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22186,6 +22750,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -22209,6 +22777,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22230,6 +22802,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22249,6 +22825,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -22268,6 +22848,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22283,6 +22867,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -22302,6 +22890,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22319,6 +22911,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22334,6 +22930,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -22357,6 +22957,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22375,6 +22979,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -22399,6 +23007,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22420,6 +23032,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -22438,6 +23054,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -31597,24 +32217,7 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
-            ],
-        ],
-        [
-            'input' => [
-                'month' => 11,
-                'day' => 22,
-                'timeZoneCode' => 'D',
-            ],
-            'expected' => [
-                '変化' => [
-                    'score' => 1,
-                    'type' => 'permanent',
-                ],
-                '情熱' => [
-                    'score' => 2,
-                    'type' => 'permanent',
-                ],
-                '直感' => [
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -31624,6 +32227,31 @@ return [
             'input' => [
                 'month' => 11,
                 'day' => 22,
+                'timeZoneCode' => 'D',
+            ],
+            'expected' => [
+                '変化' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '情熱' => [
+                    'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+            ],
+        ],
+        [
+            'input' => [
+                'month' => 11,
+                'day' => 22,
                 'timeZoneCode' => 'N',
             ],
             'expected' => [
@@ -31636,6 +32264,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -31660,6 +32292,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31681,6 +32317,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31700,6 +32340,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -31723,6 +32367,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31742,6 +32390,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -31765,6 +32417,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31784,6 +32440,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -31807,6 +32467,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31826,6 +32490,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -31849,6 +32517,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31870,6 +32542,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31889,6 +32565,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -31912,6 +32592,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31930,6 +32614,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -31954,6 +32642,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31975,6 +32667,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -31993,6 +32689,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -32013,6 +32713,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -32032,6 +32736,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -32055,6 +32763,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -32076,6 +32788,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -32095,6 +32811,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -32122,6 +32842,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32143,6 +32867,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32164,6 +32892,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32185,6 +32917,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32206,6 +32942,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32225,6 +32965,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32248,6 +32992,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32269,6 +33017,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32290,6 +33042,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32311,6 +33067,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32326,6 +33086,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32345,6 +33109,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32360,6 +33128,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32379,6 +33151,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32394,6 +33170,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32417,6 +33197,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32436,6 +33220,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32459,6 +33247,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32480,6 +33272,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32499,6 +33295,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32522,6 +33322,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32541,6 +33345,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32564,6 +33372,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32585,6 +33397,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32604,6 +33420,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32627,6 +33447,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32645,6 +33469,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -32669,6 +33497,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32690,6 +33522,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32708,6 +33544,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -32732,6 +33572,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32750,6 +33594,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -32774,6 +33622,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32795,6 +33647,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32813,6 +33669,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -32837,6 +33697,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32856,6 +33720,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32879,6 +33747,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32900,6 +33772,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32919,6 +33795,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32942,6 +33822,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -32961,6 +33845,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -32984,6 +33872,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33005,6 +33897,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33024,6 +33920,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33047,6 +33947,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33065,6 +33969,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -33089,6 +33997,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33110,6 +34022,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33128,6 +34044,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -33146,6 +34066,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -33169,6 +34093,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -33188,6 +34116,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -33211,6 +34143,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -33230,6 +34166,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -33257,6 +34197,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33278,6 +34222,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33299,6 +34247,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33320,6 +34272,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33341,6 +34297,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33360,6 +34320,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33383,6 +34347,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33402,6 +34370,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33425,6 +34397,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33444,6 +34420,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33463,6 +34443,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33478,6 +34462,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33497,6 +34485,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33514,6 +34506,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33529,6 +34525,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33552,6 +34552,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33571,6 +34575,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33594,6 +34602,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33615,6 +34627,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33634,6 +34650,10 @@ return [
                 ],
                 '直感' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33653,6 +34673,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33668,6 +34692,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 4,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33687,6 +34715,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33704,6 +34736,10 @@ return [
                     'score' => 4,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33719,6 +34755,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 4,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33742,6 +34782,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33761,6 +34805,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33784,6 +34832,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33805,6 +34857,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33824,6 +34880,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -33847,6 +34907,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33865,6 +34929,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -33889,6 +34957,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33910,6 +34982,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33928,6 +35004,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '独立' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -33952,6 +35032,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -33970,6 +35054,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -33994,6 +35082,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34015,6 +35107,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34033,6 +35129,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -34057,6 +35157,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34076,6 +35180,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -34099,6 +35207,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34120,6 +35232,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34139,6 +35255,10 @@ return [
                 ],
                 '慎重さ' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -34162,6 +35282,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34181,6 +35305,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -34204,6 +35332,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34225,6 +35357,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34244,6 +35380,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -34267,6 +35407,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34285,6 +35429,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -34309,6 +35457,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34330,6 +35482,10 @@ return [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34348,6 +35504,10 @@ return [
                     'type' => 'permanent',
                 ],
                 '直感' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
                     'score' => 1,
                     'type' => 'permanent',
                 ],
@@ -34366,6 +35526,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -34389,6 +35553,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -34408,6 +35576,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -34431,6 +35603,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
                 '責任感' => [
                     'score' => 2,
                     'type' => 'permanent',
@@ -34450,6 +35626,10 @@ return [
                 ],
                 '情熱' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
                 '責任感' => [
@@ -34477,6 +35657,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34496,6 +35680,10 @@ return [
                 ],
                 '独立' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -34519,6 +35707,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34540,6 +35732,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34559,6 +35755,10 @@ return [
                 ],
                 '独立' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -34582,6 +35782,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34601,6 +35805,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],
@@ -34624,6 +35832,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34645,6 +35857,10 @@ return [
                     'score' => 2,
                     'type' => 'permanent',
                 ],
+                '行動力' => [
+                    'score' => 1,
+                    'type' => 'permanent',
+                ],
             ],
         ],
         [
@@ -34664,6 +35880,10 @@ return [
                 ],
                 '挑戦' => [
                     'score' => 2,
+                    'type' => 'permanent',
+                ],
+                '行動力' => [
+                    'score' => 1,
                     'type' => 'permanent',
                 ],
             ],

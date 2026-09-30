@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * inc/seiza-trait-mapping.php
  *
- * docs/seiza-trait-mapping.md（Rule ID: Z001〜Z019）の実体。
+ * docs/seiza-trait-mapping.md（Rule ID: Z001〜Z020）の実体。
  * Mapping Table自体をこのPHP配列として持つ（単一の情報源。shichu・tarotと同じ方式）。
  *
  * element・quality・innerTypeIndexという「インデックス」だけをキーにする（表示名には依存しない）。
@@ -24,7 +24,10 @@ require_once __DIR__ . '/trait-vocabulary.php';
 const SEIZA_TRAIT_MAPPING = [
     // element: 0=火, 1=地, 2=風, 3=水（SEIZA_ELEMENTSのインデックスと対応）
     'element' => [
-        0 => [['id' => 'Z001', 'keyword' => '火・情熱・創造・直感', 'trait' => TRAIT_PASSION, 'score' => 2]],
+        0 => [
+            ['id' => 'Z001', 'keyword' => '火・情熱・創造・直感', 'trait' => TRAIT_PASSION, 'score' => 2],
+            ['id' => 'Z020', 'keyword' => '火・行動的・自ら動く', 'trait' => TRAIT_ACTION, 'score' => 1],
+        ],
         1 => [['id' => 'Z002', 'keyword' => '地・安定・現実・継続', 'trait' => TRAIT_STABILITY, 'score' => 2]],
         2 => [['id' => 'Z003', 'keyword' => '風・知性・変化', 'trait' => TRAIT_CHANGE, 'score' => 1]],
         3 => [['id' => 'Z004', 'keyword' => '水・感情・直感・共感', 'trait' => TRAIT_INTUITION, 'score' => 2]],

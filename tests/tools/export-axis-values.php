@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * export-axis-values.php
  *
- * tests/cases/axis-aggregation-snapshot.php（Aggregation Snapshot、50件）を入力とし、
+ * tests/cases/axis-aggregation-snapshot.php（Aggregation Snapshot、62件＝50件＋12星座カバレッジ12件）を入力とし、
  * inc/axis-mapping.php（A001〜A009）を axis-engine.php の axis_computeAxes() とは
  * 独立に再実装して、Axis Snapshotの期待値を算出し tests/cases/axis-values-snapshot.php へ書き出す。
  *

@@ -5,7 +5,7 @@
 return [
     'generator' => 'test.life-fun.net/inc/seiza-engine.php (Step1-12完成版)',
     'note' => 'meta/raw/traits/highlights/extrasを含む完全なResultData（SeizaResult）のスナップショット。Golden Masterの1830件全件を保存する（shichu・tarotと同じ方式）。',
-    'generatedAt' => '2026-07-05T23:13:25+00:00',
+    'generatedAt' => '2026-09-30T15:23:54+00:00',
     'caseCount' => 1830,
     'cases' => [
         [
@@ -30010,7 +30010,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -30086,7 +30086,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -30162,7 +30162,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -30238,7 +30238,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -30314,7 +30314,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -30390,7 +30390,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -30466,7 +30466,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -30542,7 +30542,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -30618,7 +30618,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -30694,7 +30694,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -30770,7 +30770,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -30846,7 +30846,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -30922,7 +30922,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -30998,7 +30998,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -31074,7 +31074,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -31150,7 +31150,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -31226,7 +31226,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -31302,7 +31302,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -31378,7 +31378,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -31454,7 +31454,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -31530,7 +31530,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -31606,7 +31606,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -31682,7 +31682,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -31758,7 +31758,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -31834,7 +31834,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -31910,7 +31910,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -31986,7 +31986,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -32062,7 +32062,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -32138,7 +32138,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -32214,7 +32214,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -32290,7 +32290,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -32362,7 +32362,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -32434,7 +32434,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -32506,7 +32506,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -32578,7 +32578,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -32650,7 +32650,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -32726,7 +32726,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -32802,7 +32802,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -32878,7 +32878,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -32954,7 +32954,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -33030,7 +33030,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -33106,7 +33106,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -33182,7 +33182,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -33258,7 +33258,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -33334,7 +33334,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -33410,7 +33410,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -33486,7 +33486,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -33562,7 +33562,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -33638,7 +33638,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -33714,7 +33714,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -33790,7 +33790,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -33866,7 +33866,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -33942,7 +33942,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -34018,7 +34018,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -34094,7 +34094,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -34170,7 +34170,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -34246,7 +34246,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -34322,7 +34322,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -34398,7 +34398,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -34474,7 +34474,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -34550,7 +34550,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -34626,7 +34626,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -34702,7 +34702,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -34778,7 +34778,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -34854,7 +34854,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -34930,7 +34930,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -35006,7 +35006,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -35082,7 +35082,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -35158,7 +35158,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -35234,7 +35234,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -35310,7 +35310,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -35386,7 +35386,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -35462,7 +35462,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -35538,7 +35538,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -35614,7 +35614,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -35690,7 +35690,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -35766,7 +35766,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -35842,7 +35842,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -35918,7 +35918,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -35994,7 +35994,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -36070,7 +36070,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -36146,7 +36146,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -36222,7 +36222,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -36298,7 +36298,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -36374,7 +36374,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -36450,7 +36450,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -36526,7 +36526,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -36602,7 +36602,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -36678,7 +36678,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -36754,7 +36754,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -36830,7 +36830,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -36902,7 +36902,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -36974,7 +36974,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -37046,7 +37046,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -37118,7 +37118,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                 ],
@@ -37190,7 +37190,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -37266,7 +37266,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -37342,7 +37342,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -37418,7 +37418,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -37494,7 +37494,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -37570,7 +37570,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -37646,7 +37646,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -37722,7 +37722,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -37798,7 +37798,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -37874,7 +37874,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -37950,7 +37950,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -38026,7 +38026,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -38102,7 +38102,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -38178,7 +38178,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -38254,7 +38254,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -38330,7 +38330,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -38406,7 +38406,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -38482,7 +38482,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -38558,7 +38558,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -38634,7 +38634,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '慎重さ' => [
@@ -38710,7 +38710,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -38786,7 +38786,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -38862,7 +38862,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -38938,7 +38938,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -39014,7 +39014,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -39090,7 +39090,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -39166,7 +39166,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -39242,7 +39242,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -39318,7 +39318,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -39394,7 +39394,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -39470,7 +39470,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -39546,7 +39546,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -39622,7 +39622,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -39698,7 +39698,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -39774,7 +39774,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '責任感' => [
@@ -39850,7 +39850,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -39926,7 +39926,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -40002,7 +40002,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -40078,7 +40078,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -40154,7 +40154,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '独立' => [
@@ -40230,7 +40230,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -40306,7 +40306,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -40382,7 +40382,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -40458,7 +40458,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -40534,7 +40534,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '挑戦' => [
@@ -40610,7 +40610,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -40686,7 +40686,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -40762,7 +40762,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -40838,7 +40838,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -40914,7 +40914,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -40990,7 +40990,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -41066,7 +41066,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -41142,7 +41142,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -41218,7 +41218,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -41294,7 +41294,7 @@ return [
                         'type' => 'permanent',
                     ],
                     '行動力' => [
-                        'score' => 1,
+                        'score' => 2,
                         'type' => 'permanent',
                     ],
                     '直感' => [
@@ -75489,6 +75489,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -75561,6 +75565,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -75633,6 +75641,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -75705,6 +75717,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -75777,6 +75793,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -75849,6 +75869,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -75919,6 +75943,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -75993,6 +76021,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -76065,6 +76097,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -76135,6 +76171,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -76209,6 +76249,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76283,6 +76327,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -76361,6 +76409,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76437,6 +76489,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76511,6 +76567,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -76589,6 +76649,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76665,6 +76729,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76741,6 +76809,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76817,6 +76889,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76893,6 +76969,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -76967,6 +77047,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -77045,6 +77129,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -77119,6 +77207,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -77197,6 +77289,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -77271,6 +77367,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -77349,6 +77449,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -77421,6 +77525,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -77493,6 +77601,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -77565,6 +77677,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -77637,6 +77753,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -77707,6 +77827,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -77785,6 +77909,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -77859,6 +77987,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -77937,6 +78069,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78011,6 +78147,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -78089,6 +78229,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78165,6 +78309,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78241,6 +78389,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78317,6 +78469,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78393,6 +78549,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78467,6 +78627,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -78545,6 +78709,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78619,6 +78787,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -78697,6 +78869,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78771,6 +78947,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -78849,6 +79029,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -78925,6 +79109,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79001,6 +79189,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79077,6 +79269,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79153,6 +79349,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79227,6 +79427,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -79305,6 +79509,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79379,6 +79587,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -79457,6 +79669,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79531,6 +79747,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -79609,6 +79829,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79685,6 +79909,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79761,6 +79989,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79837,6 +80069,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79913,6 +80149,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -79989,6 +80229,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -80059,6 +80303,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 4,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -80133,6 +80381,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -80205,6 +80457,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -80275,6 +80531,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 4,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -80349,6 +80609,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -80419,6 +80683,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -80493,6 +80761,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -80565,6 +80837,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -80635,6 +80911,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -80709,6 +80989,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -80783,6 +81067,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -80861,6 +81149,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -80937,6 +81229,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81011,6 +81307,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -81089,6 +81389,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81165,6 +81469,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81241,6 +81549,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81317,6 +81629,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81393,6 +81709,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81467,6 +81787,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -81545,6 +81869,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81619,6 +81947,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -81697,6 +82029,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -81771,6 +82107,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -81849,6 +82189,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -81921,6 +82265,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -81993,6 +82341,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -82065,6 +82417,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -82137,6 +82493,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -82207,6 +82567,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -82285,6 +82649,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -82359,6 +82727,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -82437,6 +82809,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -82511,6 +82887,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -82589,6 +82969,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -82665,6 +83049,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -82741,6 +83129,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -82817,6 +83209,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -82893,6 +83289,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -82969,6 +83369,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83045,6 +83449,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83121,6 +83529,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83197,6 +83609,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83273,6 +83689,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83349,6 +83769,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83425,6 +83849,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83501,6 +83929,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83577,6 +84009,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83653,6 +84089,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83729,6 +84169,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83805,6 +84249,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83881,6 +84329,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -83957,6 +84409,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84033,6 +84489,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84109,6 +84569,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84185,6 +84649,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84261,6 +84729,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84337,6 +84809,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84413,6 +84889,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84489,6 +84969,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84559,6 +85043,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 4,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -84633,6 +85121,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84705,6 +85197,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -84775,6 +85271,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 4,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -84849,6 +85349,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -84919,6 +85423,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -84993,6 +85501,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -85065,6 +85577,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -85135,6 +85651,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -85209,6 +85729,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -85283,6 +85807,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -85361,6 +85889,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -85437,6 +85969,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -85511,6 +86047,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -85589,6 +86129,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -85663,6 +86207,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -85741,6 +86289,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -85817,6 +86369,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -85891,6 +86447,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -85967,6 +86527,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86045,6 +86609,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -86119,6 +86687,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86197,6 +86769,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -86271,6 +86847,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86347,6 +86927,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86421,6 +87005,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -86491,6 +87079,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86565,6 +87157,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 2,
                         'type' => 'permanent',
@@ -86635,6 +87231,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86707,6 +87307,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86785,6 +87389,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -86859,6 +87467,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -86937,6 +87549,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '安定性' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -87011,6 +87627,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '安定性' => [
@@ -121249,6 +121869,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -121325,6 +121949,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -121401,6 +122029,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -121477,6 +122109,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -121553,6 +122189,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -121627,6 +122267,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -121705,6 +122349,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -121779,6 +122427,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -121857,6 +122509,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -121931,6 +122587,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -122009,6 +122669,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122085,6 +122749,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122161,6 +122829,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122237,6 +122909,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122313,6 +122989,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122387,6 +123067,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -122465,6 +123149,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122539,6 +123227,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -122617,6 +123309,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122691,6 +123387,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -122769,6 +123469,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122845,6 +123549,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122921,6 +123629,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -122997,6 +123709,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123073,6 +123789,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123147,6 +123867,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -123225,6 +123949,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123299,6 +124027,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -123377,6 +124109,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123451,6 +124187,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -123529,6 +124269,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123605,6 +124349,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123681,6 +124429,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123757,6 +124509,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123833,6 +124589,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -123909,6 +124669,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -123979,6 +124743,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -124053,6 +124821,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -124125,6 +124897,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -124195,6 +124971,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -124269,6 +125049,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -124343,6 +125127,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -124421,6 +125209,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -124497,6 +125289,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -124571,6 +125367,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -124649,6 +125449,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -124725,6 +125529,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -124801,6 +125609,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -124877,6 +125689,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -124953,6 +125769,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125027,6 +125847,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -125105,6 +125929,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125179,6 +126007,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -125257,6 +126089,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125331,6 +126167,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -125409,6 +126249,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125485,6 +126329,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125561,6 +126409,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125637,6 +126489,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125713,6 +126569,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125787,6 +126647,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -125865,6 +126729,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -125939,6 +126807,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -126017,6 +126889,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126091,6 +126967,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -126169,6 +127049,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126245,6 +127129,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126321,6 +127209,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126397,6 +127289,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126473,6 +127369,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126547,6 +127447,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -126625,6 +127529,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126699,6 +127607,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -126777,6 +127689,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -126851,6 +127767,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -126929,6 +127849,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127005,6 +127929,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127081,6 +128009,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127157,6 +128089,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127233,6 +128169,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127307,6 +128247,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -127385,6 +128329,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127459,6 +128407,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -127537,6 +128489,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127611,6 +128567,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -127689,6 +128649,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127765,6 +128729,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127841,6 +128809,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127917,6 +128889,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -127993,6 +128969,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -128069,6 +129049,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -128139,6 +129123,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -128213,6 +129201,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -128283,6 +129275,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -128357,6 +129353,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 3,
                         'type' => 'permanent',
@@ -128427,6 +129427,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -128505,6 +129509,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -128581,6 +129589,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -128657,6 +129669,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -128733,6 +129749,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -128809,6 +129829,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -128879,6 +129903,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 4,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -128953,6 +129981,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129025,6 +130057,10 @@ return [
                         'score' => 4,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129095,6 +130131,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 4,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -129169,6 +130209,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129243,6 +130287,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -129321,6 +130369,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129397,6 +130449,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129471,6 +130527,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -129549,6 +130609,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129623,6 +130687,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -129701,6 +130769,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129777,6 +130849,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -129851,6 +130927,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -129929,6 +131009,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -130003,6 +131087,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -130081,6 +131169,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -130157,6 +131249,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -130231,6 +131327,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -130307,6 +131407,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -130385,6 +131489,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -130459,6 +131567,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -130537,6 +131649,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -130611,6 +131727,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -130687,6 +131807,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -130765,6 +131889,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -130839,6 +131967,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -130917,6 +132049,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -130991,6 +132127,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131067,6 +132207,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131145,6 +132289,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -131219,6 +132367,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131297,6 +132449,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -131371,6 +132527,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131447,6 +132607,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131525,6 +132689,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -131599,6 +132767,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131677,6 +132849,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -131751,6 +132927,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131827,6 +133007,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -131905,6 +133089,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -131979,6 +133167,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -132057,6 +133249,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -132131,6 +133327,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -132207,6 +133407,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -132285,6 +133489,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -132359,6 +133567,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [
@@ -132437,6 +133649,10 @@ return [
                         'score' => 2,
                         'type' => 'permanent',
                     ],
+                    '行動力' => [
+                        'score' => 1,
+                        'type' => 'permanent',
+                    ],
                     '変化' => [
                         'score' => 1,
                         'type' => 'permanent',
@@ -132511,6 +133727,10 @@ return [
                 'traits' => [
                     '情熱' => [
                         'score' => 2,
+                        'type' => 'permanent',
+                    ],
+                    '行動力' => [
+                        'score' => 1,
                         'type' => 'permanent',
                     ],
                     '変化' => [

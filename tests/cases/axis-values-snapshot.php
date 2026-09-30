@@ -5,8 +5,8 @@
 return [
     'generator' => 'inc/axis-mapping.php（独立再実装：export-axis-values.php）',
     'basedOn' => 'tests/cases/axis-aggregation-snapshot.php',
-    'generatedAt' => '2026-07-05T23:26:32+00:00',
-    'caseCount' => 50,
+    'generatedAt' => '2026-09-30T15:26:59+00:00',
+    'caseCount' => 62,
     'cases' => [
         [
             'shichuInput' => [
@@ -2145,6 +2145,520 @@ return [
                     'permanent' => 2,
                     'transient' => 0,
                     'total' => 2,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2090,
+                'month' => 11,
+                'day' => 29,
+                'hour' => 8,
+                'gender' => 'female',
+                'note' => 'seed生成 #34',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 3,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 1,
+                'day' => 1,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 8,
+                    'transient' => 0,
+                    'total' => 8,
+                ],
+                '感応性' => [
+                    'permanent' => 0,
+                    'transient' => 2,
+                    'total' => 2,
+                ],
+                '自律性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+                '行動性' => [
+                    'permanent' => 4,
+                    'transient' => 0,
+                    'total' => 4,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2081,
+                'month' => 3,
+                'day' => 24,
+                'hour' => 1,
+                'gender' => 'male',
+                'note' => 'seed生成 #35',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 3,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 1,
+                'day' => 20,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 6,
+                    'transient' => 1,
+                    'total' => 7,
+                ],
+                '変革性' => [
+                    'permanent' => 4,
+                    'transient' => 0,
+                    'total' => 4,
+                ],
+                '感応性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1910,
+                'month' => 12,
+                'day' => 18,
+                'hour' => 1,
+                'gender' => 'male',
+                'note' => 'seed生成 #36',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 4,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 2,
+                'day' => 19,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 4,
+                    'transient' => 2,
+                    'total' => 6,
+                ],
+                '変革性' => [
+                    'permanent' => 3,
+                    'transient' => 0,
+                    'total' => 3,
+                ],
+                '感応性' => [
+                    'permanent' => 3,
+                    'transient' => 0,
+                    'total' => 3,
+                ],
+                '行動性' => [
+                    'permanent' => 4,
+                    'transient' => 0,
+                    'total' => 4,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2075,
+                'month' => 12,
+                'day' => 17,
+                'hour' => 7,
+                'gender' => 'male',
+                'note' => 'seed生成 #37',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 4,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 3,
+                'day' => 21,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 4,
+                    'transient' => 1,
+                    'total' => 5,
+                ],
+                '変革性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+                '感応性' => [
+                    'permanent' => 4,
+                    'transient' => 0,
+                    'total' => 4,
+                ],
+                '自律性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+                '行動性' => [
+                    'permanent' => 4,
+                    'transient' => 0,
+                    'total' => 4,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2002,
+                'month' => 8,
+                'day' => 11,
+                'hour' => null,
+                'gender' => 'male',
+                'note' => 'seed生成 #38',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 5,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 4,
+                'day' => 20,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 6,
+                    'transient' => 2,
+                    'total' => 8,
+                ],
+                '変革性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+                '感応性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+                '行動性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1992,
+                'month' => 5,
+                'day' => 27,
+                'hour' => 22,
+                'gender' => 'female',
+                'note' => 'seed生成 #39',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 5,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 5,
+                'day' => 21,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 4,
+                    'transient' => 0,
+                    'total' => 4,
+                ],
+                '変革性' => [
+                    'permanent' => 2,
+                    'transient' => 1,
+                    'total' => 3,
+                ],
+                '感応性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+                '自律性' => [
+                    'permanent' => 3,
+                    'transient' => 0,
+                    'total' => 3,
+                ],
+                '行動性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2099,
+                'month' => 4,
+                'day' => 4,
+                'hour' => 16,
+                'gender' => 'female',
+                'note' => 'seed生成 #40',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 6,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 6,
+                'day' => 22,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 7,
+                    'transient' => 0,
+                    'total' => 7,
+                ],
+                '感応性' => [
+                    'permanent' => 5,
+                    'transient' => 2,
+                    'total' => 7,
+                ],
+                '行動性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1937,
+                'month' => 12,
+                'day' => 8,
+                'hour' => 0,
+                'gender' => 'female',
+                'note' => 'seed生成 #41',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 6,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 7,
+                'day' => 23,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 8,
+                    'transient' => 1,
+                    'total' => 9,
+                ],
+                '感応性' => [
+                    'permanent' => 5,
+                    'transient' => 0,
+                    'total' => 5,
+                ],
+                '自律性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+                '行動性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1943,
+                'month' => 10,
+                'day' => 26,
+                'hour' => 15,
+                'gender' => 'female',
+                'note' => 'seed生成 #42',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 7,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 8,
+                'day' => 23,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 8,
+                    'transient' => 0,
+                    'total' => 8,
+                ],
+                '変革性' => [
+                    'permanent' => 3,
+                    'transient' => 0,
+                    'total' => 3,
+                ],
+                '感応性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+                '行動性' => [
+                    'permanent' => 2,
+                    'transient' => 3,
+                    'total' => 5,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 1920,
+                'month' => 1,
+                'day' => 11,
+                'hour' => null,
+                'gender' => 'female',
+                'note' => 'seed生成 #43',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 7,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 9,
+                'day' => 23,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+                '変革性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+                '感応性' => [
+                    'permanent' => 0,
+                    'transient' => 1,
+                    'total' => 1,
+                ],
+                '自律性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+                '行動性' => [
+                    'permanent' => 5,
+                    'transient' => 0,
+                    'total' => 5,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2084,
+                'month' => 1,
+                'day' => 6,
+                'hour' => null,
+                'gender' => 'female',
+                'note' => 'seed生成 #44',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 8,
+                'isUpright' => true,
+            ],
+            'seizaInput' => [
+                'month' => 10,
+                'day' => 24,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 5,
+                    'transient' => 2,
+                    'total' => 7,
+                ],
+                '変革性' => [
+                    'permanent' => 3,
+                    'transient' => 0,
+                    'total' => 3,
+                ],
+                '感応性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+                '行動性' => [
+                    'permanent' => 2,
+                    'transient' => 0,
+                    'total' => 2,
+                ],
+            ],
+        ],
+        [
+            'shichuInput' => [
+                'year' => 2093,
+                'month' => 5,
+                'day' => 22,
+                'hour' => 7,
+                'gender' => 'female',
+                'note' => 'seed生成 #45',
+            ],
+            'tarotInput' => [
+                'deckVersion' => 1,
+                'cardOrder' => 8,
+                'isUpright' => false,
+            ],
+            'seizaInput' => [
+                'month' => 11,
+                'day' => 22,
+                'timeZoneCode' => 'M',
+            ],
+            'expected' => [
+                '堅実性' => [
+                    'permanent' => 4,
+                    'transient' => 1,
+                    'total' => 5,
+                ],
+                '変革性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+                '感応性' => [
+                    'permanent' => 5,
+                    'transient' => 0,
+                    'total' => 5,
+                ],
+                '自律性' => [
+                    'permanent' => 1,
+                    'transient' => 0,
+                    'total' => 1,
+                ],
+                '行動性' => [
+                    'permanent' => 3,
+                    'transient' => 0,
+                    'total' => 3,
                 ],
             ],
         ],

@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * export-bundle-ids.php
  *
- * tests/cases/axis-values-snapshot.php（50件）を入力とし、
+ * tests/cases/axis-values-snapshot.php（62件＝50件＋12星座カバレッジ12件）を入力とし、
  * axis-engine.php の axis_selectTop2() とは独立にIdentity/Today Bundle IDを算出し、
  * tests/cases/bundle-id-snapshot.php へ書き出す。
  *

@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * export-sansei-resultdata.php
  *
- * axis-aggregation-snapshot.php と同じ50組み合わせに対して sanseiEngine() を実行し、
+ * axis-aggregation-snapshot.php と同じ組み合わせ（50件＋12星座カバレッジ12件）に対して sanseiEngine() を実行し、
  * 完成したSanseiResult（version/archetype/summary/advice/scores/influence/meta）を
  * tests/cases/sansei-resultdata-snapshot.php へ全件保存する（shichu/tarot/seizaと同じ
  * 「全件保存」方式）。
@@ -61,7 +61,8 @@ foreach ($aggSnapshot['cases'] as $case) {
 
 $doc = [
     'generator' => 'test.life-fun.net/inc/axis-engine.php sanseiEngine() (Step2-4完成版)',
-    'note' => 'version/archetype/summary/advice/scores/influence/metaを含む完全なSanseiResultのスナップショット。50件全件保存。',
+    'note' => 'version/archetype/summary/advice/scores/influence/metaを含む完全なSanseiResultのスナップショット。'
+        . 'axis-aggregation-snapshot.phpと同じ' . count($snapshotCases) . '件（サンプリング50件＋12星座カバレッジ12件）を全件保存。',
     'generatedAt' => (new DateTimeImmutable())->format('c'),
     'caseCount' => count($snapshotCases),
     'cases' => $snapshotCases,

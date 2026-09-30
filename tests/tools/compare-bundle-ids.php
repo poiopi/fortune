@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * compare-bundle-ids.php
  *
- * tests/cases/bundle-id-snapshot.php（50ケース）に対して、axis-engine.php の
+ * tests/cases/bundle-id-snapshot.php（62ケース＝50件＋12星座カバレッジ12件）に対して、axis-engine.php の
  * axis_getIdentityBundle() / axis_getTodayBundle() が選ぶBundle IDを照合する。
  * 本文（archetype/advice等）は比較対象外。
  *
