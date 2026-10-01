@@ -22,7 +22,7 @@ require_once __DIR__ . '/love-style.php';
 require_once __DIR__ . '/love-tendency.php';
 
 const NORMALIZE_PRIMITIVE_THRESHOLDS = [
-    PRIMITIVE_ACTION      => ['p33' => 2, 'p67' => 4],
+    PRIMITIVE_ACTION      => ['p33' => 3, 'p67' => 4],
     PRIMITIVE_RELIABILITY => ['p33' => 4, 'p67' => 7],
     PRIMITIVE_SENSITIVITY => ['p33' => 4, 'p67' => 6],
     PRIMITIVE_AUTONOMY    => ['p33' => 1, 'p67' => 2],
@@ -30,8 +30,8 @@ const NORMALIZE_PRIMITIVE_THRESHOLDS = [
 ];
 
 const NORMALIZE_STYLE_THRESHOLDS = [
-    '積極性'     => ['p33' => 3.20, 'p67' => 4.40],
-    '愛情表現'   => ['p33' => 3.40, 'p67' => 4.80],
+    '積極性'     => ['p33' => 3.20, 'p67' => 4.60],
+    '愛情表現'   => ['p33' => 3.40, 'p67' => 4.90],
     '包容力'     => ['p33' => 4.40, 'p67' => 5.80],
     '独占欲'     => ['p33' => 2.20, 'p67' => 3.60],
     '惚れやすさ' => ['p33' => 3.20, 'p67' => 4.20],
@@ -40,8 +40,8 @@ const NORMALIZE_STYLE_THRESHOLDS = [
 ];
 
 const NORMALIZE_TENDENCY_THRESHOLDS = [
-    '結婚志向' => ['p33' => 2.14, 'p67' => 4.20],
-    '浮気耐性' => ['p33' => 1.70, 'p67' => 3.90],
+    '結婚志向' => ['p33' => 2.17, 'p67' => 4.20],
+    '浮気耐性' => ['p33' => 1.60, 'p67' => 3.70],
 ];
 
 /**
@@ -57,6 +57,10 @@ function love_classify(array $scores, array $thresholds, string $label): array {
         if ($t === null) {
             throw new InvalidArgumentException("Normalizer閾値が未定義の{$label}: {$name}");
         }
+        // Style/Tendencyは小数の重み付き和のため、浮動小数点誤差で閾値と同値のスコアが
+        // わずかに上回り（例：5.8 → 5.8000000000000007）High側へ誤判定される。
+        // 比較前に丸めて、同じスコアが常に同じ区分になるようにする（2026-10-01修正）。
+        $score = round((float)$score, 6);
         if ($score <= $t['p33']) {
             $result[$name] = 'Low';
         } elseif ($score <= $t['p67']) {

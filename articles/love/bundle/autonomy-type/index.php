@@ -28,18 +28,18 @@ $item = [
   ],
   'causal_explanation' => 'つまり自立性は、MBTIのI（弱め）・血液型B型・星座の一部の内面タイプという限られた経路からしか加算されません。他の4プリミティブが複数の経路を持つのに対し、自立性が主軸まで届くには、これらの条件が特定の組み合わせで重ならないといけないため、9216パターン中32パターンという極めてレアな結果になっています。',
 
-  'breakdown_intro' => '自立性型は、副軸によって次の組み合わせパターンに分かれます。自立性×行動主導性（LOVE_AUT_ACT）は9216パターン中1件も出現しませんでした。',
+  'breakdown_intro' => '自立性型は、副軸によって次の組み合わせパターンに分かれます。自立性×行動主導性（LOVE_AUT_ACT）は9216パターン中3件（INTJ・INTP・ISTPのB型×牡羊座×自由型）のみで、ごく低頻度です。',
   'breakdown' => [
-    ['label' => '自立性×誠実性', 'count' => 14, 'pctOfAll' => 0.152, 'pctOfGroup' => 43.8],
     ['label' => '自立性×変化志向', 'count' => 14, 'pctOfAll' => 0.152, 'pctOfGroup' => 43.8],
-    ['label' => '自立性×情動性', 'count' => 4, 'pctOfAll' => 0.043, 'pctOfGroup' => 12.5],
-    ['label' => '自立性×行動主導性', 'count' => 0, 'pctOfAll' => 0.000, 'pctOfGroup' => 0.0],
+    ['label' => '自立性×誠実性', 'count' => 12, 'pctOfAll' => 0.130, 'pctOfGroup' => 37.5],
+    ['label' => '自立性×情動性', 'count' => 3, 'pctOfAll' => 0.033, 'pctOfGroup' => 9.4],
+    ['label' => '自立性×行動主導性', 'count' => 3, 'pctOfAll' => 0.033, 'pctOfGroup' => 9.4],
   ],
 
   'data_intro' => 'ここからは、自立性型に該当する32パターンを対象に、Style（恋愛スタイル）7項目とTendency（推定傾向）2項目の分布を見ていきます。サンプル数が少ないため、他タイプ以上に参考値としてご覧ください。',
   'styles' => [
-    '積極性' => ['high'=>0,'mid'=>12.5,'low'=>87.5],
-    '愛情表現' => ['high'=>0,'mid'=>12.5,'low'=>87.5],
+    '積極性' => ['high'=>0,'mid'=>21.9,'low'=>78.1],
+    '愛情表現' => ['high'=>0,'mid'=>21.9,'low'=>78.1],
     '包容力' => ['high'=>0,'mid'=>0,'low'=>100.0],
     '独占欲' => ['high'=>0,'mid'=>0,'low'=>100.0],
     '惚れやすさ' => ['high'=>21.9,'mid'=>34.4,'low'=>43.8],
@@ -48,15 +48,15 @@ $item = [
   ],
   'tendencies' => [
     '結婚志向' => ['high'=>0,'mid'=>6.2,'low'=>93.8],
-    '浮気耐性' => ['high'=>0,'mid'=>71.9,'low'=>28.1],
+    '浮気耐性' => ['high'=>0,'mid'=>65.6,'low'=>34.4],
   ],
 
   'compare_intro' => '恋愛タイプ（Bundle）は、主軸プリミティブによって5つに分類されます。自立性型は5タイプ中最少です。',
   'groupCompare' => [
-    ['name'=>'誠実性型', 'pct'=>51.226, 'self'=>false, 'url'=>'/articles/love/bundle/reliability-type/'],
-    ['name'=>'情動性型', 'pct'=>27.919, 'self'=>false, 'url'=>'/articles/love/bundle/sensitivity-type/'],
-    ['name'=>'行動主導性型', 'pct'=>16.092, 'self'=>false, 'url'=>'/articles/love/bundle/action-type/'],
-    ['name'=>'変化志向型', 'pct'=>4.416, 'self'=>false, 'url'=>'/articles/love/bundle/transform-type/'],
+    ['name'=>'誠実性型', 'pct'=>50.347, 'self'=>false, 'url'=>'/articles/love/bundle/reliability-type/'],
+    ['name'=>'情動性型', 'pct'=>26.693, 'self'=>false, 'url'=>'/articles/love/bundle/sensitivity-type/'],
+    ['name'=>'行動主導性型', 'pct'=>18.457, 'self'=>false, 'url'=>'/articles/love/bundle/action-type/'],
+    ['name'=>'変化志向型', 'pct'=>4.156, 'self'=>false, 'url'=>'/articles/love/bundle/transform-type/'],
     ['name'=>'自立性型', 'pct'=>0.347, 'self'=>true, 'url'=>'#'],
   ],
 
