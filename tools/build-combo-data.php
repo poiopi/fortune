@@ -14,13 +14,23 @@ declare(strict_types=1);
 $data = require __DIR__ . '/../tests/cases/love-final-snapshot.php';
 $cases = $data['cases'];
 
+/**
+ * 件数降順に並べ、同数は PRIMITIVE_PRIORITY_ORDER（ACT>REL>SEN>AUT>TRA。
+ * エンジンの love_selectTop2Primitives と同じ順）で決める。
+ * 2026-10-01：以前は arsort の安定ソート（スナップショットに先に出た方）に依存していた。
+ * 主軸（dominant）と副軸の両方に適用する。仕様は docs/love/12-combo-classification.md 2-2節。
+ */
+function sortByCountThenPriority(array &$counts): void {
+    $order = ['ACT' => 0, 'REL' => 1, 'SEN' => 2, 'AUT' => 3, 'TRA' => 4];
+    uksort($counts, fn($a, $b) => ($counts[$b] <=> $counts[$a]) ?: ($order[$a] <=> $order[$b]));
+}
 function primaryOf(string $bundleId): string { return explode('_', $bundleId)[1]; }
 function secondaryOf(string $bundleId): string { return explode('_', $bundleId)[2]; }
 
 function dominant(array $subset): array {
     $counts = [];
     foreach ($subset as $c) { $p = primaryOf($c['expected']['bundleId']); $counts[$p] = ($counts[$p] ?? 0) + 1; }
-    arsort($counts);
+    sortByCountThenPriority($counts);
     $top = array_key_first($counts);
     return [$top, round($counts[$top] / count($subset) * 100, 1)];
 }
@@ -95,8 +105,14 @@ foreach ($mbtiTypes as $m) {
         $primaryMatch = array_filter($sub, fn($c) => primaryOf($c['expected']['bundleId']) === $cP);
         $secCounts = [];
         foreach ($primaryMatch as $c) { $s = secondaryOf($c['expected']['bundleId']); $secCounts[$s] = ($secCounts[$s] ?? 0) + 1; }
-        arsort($secCounts);
+        sortByCountThenPriority($secCounts);
         $secTop = array_key_first($secCounts);
+        // 最多副軸と同数の副軸（本文に併記する。例：istj-b 行動主導性55件・自立性55件）
+        $secTies = array_values(array_filter(array_keys($secCounts), fn($k) => $k !== $secTop && $secCounts[$k] === $secCounts[$secTop]));
+        // 拮抗型で主軸を譲った側の単体主軸。主軸一致サブセット内で副軸になった件数・割合を別に持つ
+        // （comboSecondary＝最多副軸とは一致しないことがある。2026-10-01確認で17件）
+        $yielded = $class === '拮抗型（MBTI優勢）' ? $bP : ($class === '拮抗型（血液型優勢）' ? $mP : null);
+        $yieldedCount = $yielded !== null ? ($secCounts[$yielded] ?? 0) : null;
         $secRate = round($secCounts[$secTop] / count($primaryMatch) * 100, 1);
         $secCountAbs = $secCounts[$secTop];
         $primaryMatchCount = count($primaryMatch);
@@ -152,6 +168,10 @@ foreach ($mbtiTypes as $m) {
             'comboPrimary' => $cP, 'comboPrimaryRate' => $cRate,
             'comboSecondary' => $secTop, 'comboSecondaryRate' => $secRate,
             'comboSecondaryCount' => $secCountAbs, 'primaryMatchCount' => $primaryMatchCount,
+            'comboSecondaryTies' => $secTies,
+            'yieldedPrimary' => $yielded,
+            'yieldedAsSecondaryCount' => $yieldedCount,
+            'yieldedAsSecondaryRate' => $yielded !== null ? round($yieldedCount / $primaryMatchCount * 100, 1) : null,
             'concentrationRank' => $rankMap[$key],
             'concentrationPercentile' => $percentileMap[$key],
             'concentrationLevel' => levelOf($cRate, $p20, $p40, $p60, $p80),

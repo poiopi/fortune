@@ -49,6 +49,7 @@ $suites = [
     ],
     'Love Combo (MBTI×血液型)' => [
         'Invariants' => "{$toolsDir}/love-combo-invariants.php",
+        'Article Facts' => "{$toolsDir}/love-article-facts.php",
     ],
     // 正解は現行出力ではなく国立天文台／外部カレンダー（tests/README.md「Lunar/Rokuyo」参照）
     'Lunar/Rokuyo' => [

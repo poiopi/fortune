@@ -7,10 +7,10 @@
 //     ]
 ?>
 <div class="article-related-grid">
-  <?php foreach ($relatedItems ?? [] as $item): ?>
-  <a href="<?= htmlspecialchars($item['url']) ?>" class="article-related-item" data-ga-event="article_related_click" data-related-destination="<?= htmlspecialchars($item['url']) ?>">
-    <div class="article-related-label"><?= htmlspecialchars($item['label']) ?></div>
-    <div class="article-related-title"><?= htmlspecialchars($item['title']) ?></div>
+  <?php foreach ($relatedItems ?? [] as $_relItem): ?>
+  <a href="<?= htmlspecialchars($_relItem['url']) ?>" class="article-related-item" data-ga-event="article_related_click" data-related-destination="<?= htmlspecialchars($_relItem['url']) ?>">
+    <div class="article-related-label"><?= htmlspecialchars($_relItem['label']) ?></div>
+    <div class="article-related-title"><?= htmlspecialchars($_relItem['title']) ?></div>
   </a>
   <?php endforeach; ?>
 </div>
