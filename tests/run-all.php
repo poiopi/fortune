@@ -51,6 +51,9 @@ $suites = [
         'Invariants' => "{$toolsDir}/love-combo-invariants.php",
         'Article Facts' => "{$toolsDir}/love-article-facts.php",
     ],
+    'Love Engine' => [
+        'Level6 Consistency' => "{$toolsDir}/love-level6-consistency.php",
+    ],
     // 正解は現行出力ではなく国立天文台／外部カレンダー（tests/README.md「Lunar/Rokuyo」参照）
     'Lunar/Rokuyo' => [
         'NAOJ Saku' => "{$toolsDir}/compare-lunar-naoj.php",

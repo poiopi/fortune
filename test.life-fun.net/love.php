@@ -145,6 +145,9 @@ body::before{
 .result-section-title{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:.8rem}
 .result-list{display:flex;flex-direction:column;gap:.6rem}
 .result-item{background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:.9rem 1.1rem;font-size:.85rem;color:rgba(232,226,245,.85);line-height:1.8}
+.result-item-label{font-family:var(--ff-sans);font-size:.9rem;font-weight:500;color:var(--gold-lt);line-height:1.5}
+.result-item-desc{font-size:.75rem;font-weight:400;color:var(--violet-lt);opacity:.8;line-height:1.6;margin-top:.1rem}
+.result-item-text{margin-top:.5rem}
 
 .article-link-box{display:flex;align-items:center;gap:.9rem;background:rgba(155,114,239,.06);border:1px solid rgba(155,114,239,.25);border-radius:12px;padding:1rem 1.2rem;margin-top:.6rem;text-decoration:none;transition:border-color .2s,background .2s}
 .article-link-box:hover{border-color:var(--violet-lt);background:rgba(155,114,239,.12)}
@@ -399,23 +402,10 @@ function renderResult(data) {
   document.getElementById('r-badge').textContent = badge.mbti + ' × ' + badge.blood + ' × ' + badge.seiza;
   document.getElementById('r-bundle').textContent = data.document.bundleText;
 
-  const styleList = document.getElementById('r-styles');
-  styleList.innerHTML = '';
-  data.document.styleTexts.forEach(t => {
-    const d = document.createElement('div');
-    d.className = 'result-item';
-    d.textContent = t;
-    styleList.appendChild(d);
-  });
-
-  const tendencyList = document.getElementById('r-tendencies');
-  tendencyList.innerHTML = '';
-  data.document.tendencyTexts.forEach(t => {
-    const d = document.createElement('div');
-    d.className = 'result-item';
-    d.textContent = t;
-    tendencyList.appendChild(d);
-  });
+  // 表示名・一行説明・文章だけを出す（正式な項目名・段階名・点数は出さない。
+  // inc/love-display-labels.php、docs/love/09-writing-rules.md）
+  renderResultItems(document.getElementById('r-styles'), data.document.styleItems);
+  renderResultItems(document.getElementById('r-tendencies'), data.document.tendencyItems);
 
   const articlesSection = document.getElementById('r-articles-section');
   const articles = document.getElementById('r-articles');
@@ -436,6 +426,27 @@ function renderResult(data) {
   }
 
   window._shareText = `恋愛診断結果：${badge.mbti} × ${badge.blood} × ${badge.seiza} でした！✨`;
+}
+
+function renderResultItems(list, items) {
+  list.textContent = '';
+  items.forEach(item => {
+    const d = document.createElement('div');
+    d.className = 'result-item';
+    const label = document.createElement('div');
+    label.className = 'result-item-label';
+    label.textContent = item.label;
+    const desc = document.createElement('div');
+    desc.className = 'result-item-desc';
+    desc.textContent = item.description;
+    const text = document.createElement('div');
+    text.className = 'result-item-text';
+    text.textContent = item.text;
+    d.appendChild(label);
+    d.appendChild(desc);
+    d.appendChild(text);
+    list.appendChild(d);
+  });
 }
 
 function restart() {

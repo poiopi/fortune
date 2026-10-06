@@ -5,7 +5,7 @@ $item = [
   'title' => '恋愛診断の結果の見方｜Love Engineの仕組みをやさしく解説',
   'description' => 'Love Engineの恋愛傾向診断が、MBTI・血液型・星座からどうやって結果を導き出しているのかを解説。Style・Tendency・Bundle・High/Mid/Lowの意味、9216パターンの仕組みがわかります。',
   'h1' => '恋愛診断の結果の見方｜Love Engineの仕組みをやさしく解説',
-  'lead' => '恋愛傾向診断の結果には、「積極性はHigh」「恋愛タイプはREL_SEN」など、聞き慣れない言葉が出てきます。このページでは、Love Engineがどんな仕組みで結果を導き出しているのかを、専門用語を1つずつ解きほぐしながら解説します。',
+  'lead' => '恋愛傾向診断の解説記事には、「Style」「Bundle」「High/Mid/Low」など、聞き慣れない言葉が出てきます。このページでは、Love Engineがどんな仕組みで結果を導き出しているのかを、専門用語を1つずつ解きほぐしながら解説します。',
 
   'body' => <<<'HTML'
   <nav class="toc">
@@ -55,11 +55,11 @@ $item = [
 
   <section class="art-section" id="highmidlow">
     <h2>High・Mid・Lowとは何か</h2>
-    <p>診断結果のStyle・Tendencyは、それぞれ「High」「Mid」「Low」の3段階で表示されます。これは9216通りの実測データの中で、あなたの結果が上位・中位・下位のどこに位置するかを表す「母集団上の位置」です。</p>
+    <p>診断結果のStyle（恋愛スタイル）とTendency（推定傾向）は、9216通りの実測データの中であなたの結果がどのあたりに位置するかによって、項目ごとに6つの段階に分けられ、段階に合わせた解説文が表示されます。結果画面には段階の名前や点数は表示せず、表示名（「恋の進め方」など）・一行の説明・解説文を、あなたらしさが強く出ている項目（全体の真ん中から離れている項目）から順に並べています。解説記事では、この6段階を2つずつまとめた「High」「Mid」「Low」の3段階で割合を示しています。境目は9216通りの実測データの下から3分の1・3分の2の位置に置いていますが、同じ値の人がまとまって存在するため、実際の割合はちょうど3分の1ずつにはならず、Lowの割合は項目によって33.3%（結婚志向）〜42.7%（惚れやすさ）の幅があります。</p>
     <div class="norm-box">
-      <div class="norm-seg"><span class="lv">Low</span>下位33%</div>
-      <div class="norm-seg"><span class="lv">Mid</span>中位34%</div>
-      <div class="norm-seg"><span class="lv">High</span>上位33%</div>
+      <div class="norm-seg"><span class="lv">Low</span>6段階の下2つ</div>
+      <div class="norm-seg"><span class="lv">Mid</span>真ん中の2つ</div>
+      <div class="norm-seg"><span class="lv">High</span>上の2つ</div>
     </div>
     <p>大切なのは、High・Mid・Lowに優劣が無いという点です。「High=良い」「Low=悪い」ではなく、単に相対的な位置を示しているだけです。実際の閾値は指標ごとに異なり、各<a href="/articles/love/style/" class="al-link">Style記事</a>・<a href="/articles/love/tendency/" class="al-link">Tendency記事</a>で実際の数値を確認できます。</p>
   </section>
@@ -87,11 +87,11 @@ $item = [
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">Primitiveは診断結果に表示されますか？</div>
-        <div class="faq-a">表示されません。Primitiveは、MBTI・血液型・星座の情報をStyle・Tendency・Bundleへ変換するための内部的な計算軸です。各記事の「なぜこの傾向になるのか」という解説の中で登場しますが、診断結果の画面そのものにはStyle・Tendency・Bundleのみが表示されます。</div>
+        <div class="faq-a">表示されません。Primitiveは、MBTI・血液型・星座の情報をStyle・Tendency・Bundleへ変換するための内部的な計算軸です。各記事の「なぜこの傾向になるのか」という解説の中で登場しますが、診断結果の画面に表示されるのは、入力した組み合わせ（MBTI・血液型・星座）、恋愛タイプ（Bundle）にもとづく解説文、「恋愛スタイル」「推定される傾向」の各項目（表示名・一行の説明・解説文）、関連記事へのリンクです。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">なぜHigh/Mid/Lowの境界が指標によって違うのですか？</div>
-        <div class="faq-a">Love Engineでは、あらかじめ均等な3分割を狙うのではなく、9216通りの実測データから実際の分布に基づいて閾値を決めています。指標によって元のスコアの分布が異なるため、境界値も指標ごとに異なります。</div>
+        <div class="faq-a">Love Engineでは、9216通りの実測データの下から3分の1・3分の2の位置を境目にしています。指標によって元のスコアの分布が異なるため、境界値も指標ごとに異なります。また、同じ値の人がまとまって存在するため、実際の割合もちょうど3分の1ずつにはなりません。</div>
       </div>
     </div>
   </section>

@@ -79,11 +79,78 @@ Style・Tendencyも同じ設計原則（Primitiveごとに独立、百分位ベ�
 
 Style/Tendencyは小数係数の加重和のため、浮動小数点誤差で閾値と同値のスコアがわずかに上回ることがある（例：包容力5.8が5.8000000000000007になる）。2026-07のv1.0では、この誤差で「score ≤ P67 → Mid」のはずのスコアの一部がHighに誤判定されていた（本番の修正前エンジンで692件／9216件。包容力366・恋愛の慎重さ348・浮気耐性86）。`love_classify()`で比較前に `round(score, 6)` を行い、同じスコアが常に同じ区分になるようにした。閾値はスナップショット上の丸めた値から算出しているため、この丸めで閾値算出と判定の前提が一致する。
 
+## 6段階（L1〜L6）（2026-10-06追加）
+
+### 目的
+
+結果画面のStyle/Tendencyの文章を、3段階より細かく選び分けるための区分。対象はStyle 7項目とTendency 2項目だけで、Primitiveは3段階のまま（値の種類が少なく、6段階に分けても意味のある区別にならないため）。
+
+- 実装：`inc/love-normalizer.php`の`NORMALIZE_STYLE_THRESHOLDS6`・`NORMALIZE_TENDENCY_THRESHOLDS6`・`love_classify6()`・`love_normalizeStyles6()`・`love_normalizeTendencies6()`・`love_level6To3()`・`LOVE_LEVELS6`
+- 使う場所：`inc/love-orchestrator.php`が6段階の結果をComposerへ渡す（文言の選択と項目の並び順。[06-composer.md](06-composer.md)）
+- 文言：`inc/love-style-texts.php`・`inc/love-tendency-texts.php`（9項目×L1〜L6）
+
+### 分類ルール
+
+比較前に`round(score, 6)`する（3段階と同じ。「比較前の丸め」参照）。
+
+```
+score ≤ P17        → L1
+P17 < score ≤ P33  → L2
+P33 < score ≤ P50  → L3
+P50 < score ≤ P67  → L4
+P67 < score ≤ P83  → L5
+score > P83        → L6
+```
+
+### 境目の表（9216通り全数、2026-10-06算出）
+
+P33・P67は3段階の定数（`NORMALIZE_STYLE_THRESHOLDS`・`NORMALIZE_TENDENCY_THRESHOLDS`）をそのまま参照する（二重管理にしない）。P17・P50・P83は、9216件の値（`tests/cases/love-style-tendency-snapshot.php`）から3段階と同じ方法（線形補間の百分位、位置＝(n−1)×k/6、k=1,3,5）で算出し、小数第2位に丸めた値。同じ方法で計算し直したP33・P67も3段階の定数と一致する（結婚志向P33は2.1666…→2.17）。
+
+| 名称 | P17 | P33 | P50 | P67 | P83 |
+|---|---|---|---|---|---|
+| 積極性 | 2.60 | 3.20 | 3.80 | 4.60 | 5.20 |
+| 愛情表現 | 2.60 | 3.40 | 4.20 | 4.90 | 5.80 |
+| 包容力 | 3.60 | 4.40 | 5.20 | 5.80 | 6.80 |
+| 独占欲 | 1.10 | 2.20 | 2.80 | 3.60 | 4.20 |
+| 惚れやすさ | 2.40 | 3.20 | 3.60 | 4.20 | 4.80 |
+| 嫉妬深さ | -1.60 | -0.40 | 0.40 | 1.60 | 2.60 |
+| 恋愛の慎重さ | 2.00 | 3.00 | 3.80 | 4.60 | 5.80 |
+| 結婚志向 | 0.90 | 2.17 | 3.00 | 4.20 | 5.70 |
+| 浮気耐性 | 0.50 | 1.60 | 2.70 | 3.70 | 5.40 |
+
+### 実際の割合（2026-10-06、9216通り全数・`tests/cases/love-final-snapshot.php`の`stylesLevel6`・`tendenciesLevel6`で実測）
+
+3段階と同じく、値が離散的なため均等（各16.7%）にはならない。この偏りを人為的に均す調整はしない（「実際のLow/Mid/High比率」と同じ理由）。
+
+| 名称 | L1 | L2 | L3 | L4 | L5 | L6 |
+|---|---|---|---|---|---|---|
+| 積極性 | 20.2% | 14.2% | 15.8% | 20.8% | 12.3% | 16.6% |
+| 愛情表現 | 17.9% | 16.4% | 15.8% | 17.4% | 16.6% | 15.8% |
+| 包容力 | 19.1% | 17.1% | 19.2% | 12.6% | 15.6% | 16.3% |
+| 独占欲 | 18.8% | 19.7% | 18.8% | 11.7% | 16.8% | 14.3% |
+| 惚れやすさ | 22.7% | 20.0% | 13.0% | 12.1% | 17.6% | 14.6% |
+| 嫉妬深さ | 19.7% | 17.6% | 13.2% | 21.3% | 11.9% | 16.3% |
+| 恋愛の慎重さ | 17.7% | 19.0% | 14.6% | 16.4% | 17.4% | 14.9% |
+| 結婚志向 | 17.7% | 15.7% | 17.4% | 16.9% | 17.1% | 15.2% |
+| 浮気耐性 | 17.1% | 16.8% | 17.5% | 15.5% | 17.5% | 15.7% |
+
+### 3段階との関係
+
+- 6段階を2つずつまとめると3段階になる（`love_level6To3()`：L1・L2→Low、L3・L4→Mid、L5・L6→High）。P33・P67が共通のため、9216件×9項目の全件で一致する（`tests/tools/love-level6-consistency.php`で検査。`tests/run-all.php`の「Love Engine / Level6 Consistency」）
+- **3段階は記事・事実照合の基準として残す**。`NORMALIZE_STYLE_THRESHOLDS`・`NORMALIZE_TENDENCY_THRESHOLDS`・`love_classify()`・`love_normalizeStyles()`・`love_normalizeTendencies()`は変更しない。記事の数値（High/Mid/Lowの割合）と`tests/tools/love-article-facts.php`は3段階で扱う
+- `tests/cases/love-final-snapshot.php`は3段階（`stylesNormalized`・`tendenciesNormalized`）と6段階（`stylesLevel6`・`tendenciesLevel6`）の両方を記録する
+
+### 名前の扱い
+
+- 段階の名前（L1〜L6）は内部名であり、**結果画面には出さない**（[09-writing-rules.md](09-writing-rules.md)「表示名の規約」）
+- **生成器の5段階（`tools/build-combo-data.php`の`concentrationLevel`。主軸の集中度「集中しやすい〜非常に分散しやすい」。[12-combo-classification.md](12-combo-classification.md)）とは別の尺度**である。混同しないため、6段階の名前に「集中」「分散」などの言葉は使わない
+
 ## 今後の検討事項（2026-10-01、ユーザー要望）
 
 - 3段階（Low/Mid/High）を5〜10段階に細分化したい（「30%が低め」という粒度は精度が粗く見えるため）
+  - **対応済み（2026-10-06）**：結果画面の文章を選ぶ区分として6段階（L1〜L6）を追加した（上記「6段階（L1〜L6）」）。記事・事実照合は3段階のまま
 - 恋愛はなるべく良い結果が出るようにしたい（表示文の言い方・段階の見せ方を含めて検討）
-- いずれも未着手。段階数を変える場合は、閾値（百分位の位置）、Style/Tendencyの表示文（`inc/love-style-texts.php`・`inc/love-tendency-texts.php`）、Composer、記事の数値表記がすべて影響を受けるため、設計レビューから行う
+- 段階数を変える場合は、閾値（百分位の位置）、Style/Tendencyの表示文（`inc/love-style-texts.php`・`inc/love-tendency-texts.php`）、Composer、記事の数値表記がすべて影響を受けるため、設計レビューから行う（6段階の追加では、記事の数値表記に影響しないよう3段階を基準として残した）
 
 ## データソース
 
@@ -91,3 +158,5 @@ Style/Tendencyは小数係数の加重和のため、浮動小数点誤差で閾
 - Style／Tendency：`tests/tools/export-love-style-tendency.php`が生成する`tests/cases/love-style-tendency-snapshot.php`（同じ9216件のPrimitive値に導出式を適用）
 
 Trait Mapping・Axis重み・Primitive係数・Style/Tendency係数のいずれかが変わった場合、該当するスナップショットを再生成し、閾値表を見直す必要があるかを確認する。
+
+**メモリの注意（2026-10-06）**：`tests/cases/love-final-snapshot.php`は、6段階の欄（`stylesLevel6`・`tendenciesLevel6`）を追加したため約20MBになり、PHPの既定のメモリ上限（128MB）では読み込めない。このスナップショットを読む`tools/build-combo-data.php`（`docs/love/combo-data-64.json`の再生成。[12-combo-classification.md](12-combo-classification.md)8-1節）は、`php -d memory_limit=1G tools/build-combo-data.php`で実行すること。既定のままではFatal（メモリ不足）になる。

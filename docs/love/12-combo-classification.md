@@ -238,6 +238,8 @@ else:
 
 **「9216件中◯件（◯%）」という表現は使わない**——MBTI×血液型64通りは、どの組み合わせも9216件中144件（1.56%）で完全に同一の値になるため、情報価値がない（ENTP×A型のリファレンス記事執筆時に気づき、削除した）。
 
+**【2026-10-06追記】この5段階（`concentrationLevel`）は、Normalizerの段階（Style/Tendencyの3段階 Low/Mid/High、結果画面用の6段階 L1〜L6。[08-normalizer.md](08-normalizer.md)）とは別の尺度である。** `concentrationLevel`はMBTI×血液型64通りについて「主軸のPrimitiveがどれだけ集中して現れるか」を64通りの中で5等分したものであり、Normalizerの段階は9216通りの中で各Style/Tendencyのスコアがどの位置にあるかを表す。対象（64通り／9216通り）も、測っているもの（主軸の集中度／各項目のスコア）も異なるため、両者を対応づけたり同じ名前で呼んだりしない（Normalizerの6段階の名前には「集中」「分散」を使わない）。
+
 ## 6. 執筆時の表現方針
 
 「勝った」「負けた」という対戦・勝敗の言葉は使わない。Love Engineは入力を比較して優劣をつけているのではなく、Trait→Primitiveへのスコア加算という機械的な計算をしているだけであるため、**エンジンの処理として説明する**。
@@ -309,6 +311,8 @@ tools/qa-combo-articles.sh
            ③PHPエラー文字列スキャン ④prev/nextチェーン整合性
            ⑤ハブ$_PUBLISHED 64件掲載確認
 ```
+
+**メモリの注意（2026-10-06）**：`tools/build-combo-data.php`は`php -d memory_limit=1G tools/build-combo-data.php`で実行すること。`tests/cases/love-final-snapshot.php`に6段階の欄（`stylesLevel6`・`tendenciesLevel6`。[08-normalizer.md](08-normalizer.md)「6段階」）を追加して約20MBになったため、PHPの既定のメモリ上限（128MB）のままではFatal（メモリ不足）になる。
 
 生成器はJSONにHTMLを持たせず、レイアウト（causalRowsの行数等）は生成器側のロジックとして保持する。テンプレート（`_combo-tpl.php`）は配列を描画するだけで分岐を持たない。
 

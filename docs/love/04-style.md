@@ -36,3 +36,7 @@ Styleは、性格プリミティブの組み合わせから導かれる、恋愛
 ## 保留・却下（[05-tendency.md](05-tendency.md)で再評価済み）
 
 浮気耐性はTendencyへ採用、安心感は却下、恋愛の慎重さは上記に採用。詳細な判定理由は05-tendency.mdを参照。
+
+## 表示文（2026-10-06）
+
+結果画面に出す各Styleの文は、Normalizerの6段階（L1〜L6。[08-normalizer.md](08-normalizer.md)「6段階」）ごとに1本ずつ持つ（7項目×6段階）。置き場所は`inc/love-style-texts.php`（`LOVE_STYLE_TEXTS`）。文の書き方は[09-writing-rules.md](09-writing-rules.md)（規約1〜7は6段階すべてに適用）。記事・事実照合の数値は従来どおり3段階（High/Mid/Low）で扱う。

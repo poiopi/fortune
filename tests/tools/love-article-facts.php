@@ -14,20 +14,22 @@ declare(strict_types=1);
  * 「どの入力がどのPrimitiveへ加算されるか」という構造の確認にだけ読み込む（スナップショット生成元と同じ test.life-fun.net/inc/ を読み取り専用で）。
  * --root で別のツリー（本番用ツリー等）を照合するときも、構造はスナップショットに合わせて常にリポジトリの test.life-fun.net/inc/ を使う。
  *
- * 照合対象は次の2つの宣言的な表で持つ。
+ * 照合対象は次の3つの宣言的な表で持つ。
  *   1. $RULES  : カテゴリ（mbti/seiza/blood/style/tendency/bundle/mbti-blood）ごとの照合規則。
  *                各規則は「記事のどこを（フィールド・正規表現）」「何と比べるか（スナップショットからの算出）」を持つ。
  *   2. $CLAIMS : 個別記事の文の主張（正規表現＋算出クロージャ）。
  *                - required=true : 修正後の正しい主張。本文に見つからなければ FAIL（MISSING）。
  *                - required=false: 誤りを見分ける意味的な検査。本文に該当する文があれば算出値と比べ、
  *                                  成り立たなければ FAIL（旧文が残っている／再発した場合に検出）。
+ *   3. $WEIGHT_CLAIMS : 指標とプリミティブの重み関係の言い回し（「Pへの依存度が高い」「主に Pで決まる」「P・Qで決まる」等）。
+ *                全記事を文単位で走査し、式の係数（inc/love-style.php・inc/love-tendency.php）と照合する（5b 節）。
  *
  * 新しい数値主張を記事に足したら、$RULES で拾えない文は $CLAIMS に1行追加すること
  * （DEVELOPMENT_RULES.md「記事の事実検証ルール」）。
  *
  * 実行方法:
  *   php tests/tools/love-article-facts.php                         （既定: test.life-fun.net）
- *   php tests/tools/love-article-facts.php --root=C:/Users/sende/fortune   （本番用ツリー）
+ *   php tests/tools/love-article-facts.php --root=<リポジトリのルート>     （本番用ツリー）
  *   php tests/tools/love-article-facts.php --root=<コピー> --verbose        （PASSも表示）
  * 終了コード: 0=ALL PASS / 1=FAIL あり
  *
@@ -206,7 +208,7 @@ $RESULTS = []; $FAILS = []; $ARTICLES_CHECKED = [];
  * 'text' は登録時点の該当フィールドの全文（判定に渡される文字列そのもの）。これと完全一致するときだけ KNOWN を適用し、
  * 1文字でも変わったら通常どおり FAIL（または規則で再判定）になる。
  */
-$KNOWN = [];
+$KNOWN = [];  // 2026-10-06：2026-10-01に登録した4件（blood/ab-love×2・mbti/enfj・mbti/isfp）は記事を修正して解消（5節に修正後の主張と旧文の検査を登録）
 function chk(string $art, string $rule, bool $ok, string $detail, string $kind = 'FACT', ?string $text = null): void {
     global $RESULTS, $FAILS, $KNOWN, $ARTICLES_CHECKED;
     $ARTICLES_CHECKED[$art] = true;
@@ -457,6 +459,25 @@ $styleTendencyRule = function (string $art, array $a) {
 };
 $RULES[] = ['scope' => 'style/*', 'desc' => '全体分布・計算式・MBTI/血液型/主軸別High率・最高/最低/突出の主張', 'fn' => $styleTendencyRule];
 $RULES[] = ['scope' => 'tendency/*', 'desc' => '同上（Tendency）', 'fn' => $styleTendencyRule];
+// 2026-10-06（6段階化）：levels_intro が6段階の説明文であること、levels の High・Mid・Low が結果画面の表示文
+// （test.life-fun.net/inc/love-style-texts.php・love-tendency-texts.php）の L6・L3・L1 と一字一句一致すること。期待値は文言バンクから取る
+const LEVELS_INTRO_6 = '実際の診断結果は6つの段階で文章が変わります。次はHigh・Mid・Lowそれぞれの代表的な文章（Highはいちばん高い段階、Midは真ん中の段階のひとつ、Lowはいちばん低い段階の文章）です';
+$levelsRule = function (string $art, array $a) {
+    require_once $GLOBALS['repo'] . '/test.life-fun.net/inc/love-style-texts.php';
+    require_once $GLOBALS['repo'] . '/test.life-fun.net/inc/love-tendency-texts.php';
+    $intro = (string)($a['levels_intro'] ?? '');
+    $ok = str_contains($intro, LEVELS_INTRO_6);
+    chk($art, 'levels_intro.6stage', $ok, '[levels_intro] ' . ($ok ? '6段階の説明文あり' : '6段階の説明文が無い: ' . mb_strimwidth($intro, 0, 60, '…')), $ok ? 'CLAIM' : 'MISSING');
+    $mt = (string)($a['name'] ?? '');
+    $bank = LOVE_STYLE_TEXTS[$mt] ?? LOVE_TENDENCY_TEXTS[$mt] ?? null;
+    if ($bank === null) { chk($art, 'levels.bank', false, "項目「{$mt}」の表示文が文言バンクに無い", 'CLAIM'); return; }
+    foreach (['High' => 'L6', 'Mid' => 'L3', 'Low' => 'L1'] as $k => $lv) {
+        $ok = ($a['levels'][$k] ?? null) === $bank[$lv];
+        chk($art, "levels.$k=$lv", $ok, "[levels.$k] " . ($ok ? "{$mt} {$lv}の表示文と一致" : "{$mt} {$lv}の表示文と一致しない（期待: {$bank[$lv]}）"), 'CLAIM');
+    }
+};
+$RULES[] = ['scope' => 'style/*', 'desc' => 'levels_intro（6段階の説明）・levels（High=L6・Mid=L3・Low=L1の表示文）', 'fn' => $levelsRule];
+$RULES[] = ['scope' => 'tendency/*', 'desc' => '同上（Tendency）', 'fn' => $levelsRule];
 
 // ---- 4-5. Bundle記事（bundle/*：主軸Primitive別） ----
 $RULES[] = ['scope' => 'bundle/*', 'desc' => '出現率・件数・副軸内訳・グループ内のStyle/Tendency分布・5グループ比較・MBTI別該当率', 'fn' => function (string $art, array $a) {
@@ -585,6 +606,77 @@ $dokusenSame = function () use ($sixEarthAir) {
 };
 $capLibSameAct = fn() => lvDist(sub(['s' => signIndex('山羊座')]), '積極性')['raw'] === lvDist(sub(['s' => signIndex('天秤座')]), '積極性')['raw']
     && lvDist(sub(['s' => signIndex('山羊座')]), '愛情表現')['raw'] === lvDist(sub(['s' => signIndex('天秤座')]), '愛情表現')['raw'];
+/** 積極性・愛情表現＝行動主導性と情動性、独占欲＝情動性と自立性の式で、天秤座・山羊座のエレメント（風・地）・クオリティ（活動宮）が情動性・自立性へ加算しない */
+$libCapFormulaOk = function (): bool {
+    $set = function (string $mt) { $k = array_keys(formulaOf($mt)); sort($k); return $k; };
+    $ok = $set('積極性') === ['情動性', '行動主導性'] && $set('愛情表現') === ['情動性', '行動主導性'] && $set('独占欲') === ['情動性', '自立性'];
+    foreach ([signIndex('天秤座'), signIndex('山羊座')] as $si) {
+        $el = SEIZA_ELEMENTS[SEIZA_SIGNS[$si]['element']]['name']; $qu = SEIZA_QUALITIES[SEIZA_SIGNS[$si]['quality']]['name'];
+        foreach (['情動性', '自立性'] as $pj) foreach (sourcesOf($pj) as $s) if (($s['kind'] === 'element' && $s['key'] === $el) || ($s['kind'] === 'quality' && $s['key'] === $qu)) $ok = false;
+    }
+    return $ok && SEIZA_SIGNS[signIndex('天秤座')]['quality'] === SEIZA_SIGNS[signIndex('山羊座')]['quality'];
+};
+/** 全9216件での各指標（Style7＋Tendency2）の Low 率（未丸め、昇順） */
+$lowRates = function (): array { $r = []; foreach ($GLOBALS['METRICS'] as $mt) $r[$mt] = lvDist(sub([]), $mt)['Low']; asort($r); return $r; };
+$lowRangeStr = function () use ($lowRates): string { $r = $lowRates(); $mn = array_key_first($r); $mx = array_key_last($r); return "Low率 最小={$mn}" . r1($r[$mn]) . " 最大={$mx}" . r1($r[$mx]); };
+/** 結果画面の表示文（test.life-fun.net/inc/love-style-texts.php・love-tendency-texts.php）の全文 */
+$displayTexts = function (): array {
+    require_once $GLOBALS['repo'] . '/test.life-fun.net/inc/love-style-texts.php';
+    require_once $GLOBALS['repo'] . '/test.life-fun.net/inc/love-tendency-texts.php';
+    $all = [LOVE_STYLE_TEXTS, LOVE_TENDENCY_TEXTS]; $o = [];
+    array_walk_recursive($all, function ($v) use (&$o) { if (is_string($v)) $o[] = $v; });
+    return $o;
+};
+/** 結果画面の表示名（test.life-fun.net/inc/love-display-labels.php の LOVE_ITEM_LABELS）：項目名 => 表示名 */
+$displayLabels = function (): array {
+    require_once $GLOBALS['repo'] . '/test.life-fun.net/inc/love-display-labels.php';
+    return array_map(fn($v) => $v['label'], LOVE_ITEM_LABELS);
+};
+/**
+ * 引用した表示名（「恋の進め方」など）が LOVE_ITEM_LABELS の表示名と一字一句一致し、$kind（'style'/'tendency'/null）の項目のものであること。
+ * $all=true（「〜という名前」）のときは、その種類の表示名をすべて挙げていること。
+ */
+$labelQuoteExpect = function (string $quoted, ?string $kind, bool $all = false) use ($displayLabels): array {
+    preg_match_all('/「([^」]+)」/u', $quoted, $q); $labels = $displayLabels();
+    $keys = $kind === 'style' ? array_keys(LOVE_STYLE_MAPPING) : ($kind === 'tendency' ? array_keys(LOVE_TENDENCY_MAPPING) : array_keys($labels));
+    $pool = array_values(array_intersect_key($labels, array_flip($keys))); $bad = [];
+    foreach ($q[1] as $l) if (!in_array($l, $pool, true)) $bad[] = $l;
+    if ($all) { $a = $q[1]; $b = $pool; sort($a); sort($b); if ($a !== $b) $bad[] = '列挙が全項目と一致しない（' . implode('・', $pool) . '）'; }
+    return [$q[1] !== [] && $bad === [], $bad ? 'LOVE_ITEM_LABELS に無い／種類が違う: ' . implode(' ', $bad) : '表示名=' . implode('・', $q[1])];
+};
+/** 結果画面（test.life-fun.net/love.php）の結果の見出し（class="result-section-title"） */
+$screenSections = function (): array {
+    preg_match_all('/class="result-section-title">([^<]+)</u', (string)file_get_contents($GLOBALS['repo'] . '/test.life-fun.net/love.php'), $mm);
+    return $mm[1];
+};
+$sectionQuoteExpect = function (string $quoted) use ($screenSections): array {
+    preg_match_all('/「([^」]+)」/u', $quoted, $q); $bad = array_values(array_diff($q[1], $screenSections()));
+    return [$q[1] !== [] && $bad === [], $bad ? 'love.php の結果の見出しに無い: ' . implode('・', $bad) : '見出し=' . implode('・', $q[1])];
+};
+/** 式の Primitive 集合（昇順） */
+$fset = function (string $mt): array { $k = array_keys(formulaOf($mt)); sort($k); return $k; };
+/** 血液型ごとの Primitive への寄与（inc/blood-trait-mapping.php）：Primitive => 合計スコア */
+$bloodContrib = function (string $bt): array { $o = []; foreach (BLOOD_TRAIT_MAPPING[$bt] as $r) { $p = primOfTrait($r['trait']); $o[$p] = ($o[$p] ?? 0) + $r['score']; } ksort($o); return $o; };
+/** AB型の「行動主導性を含まない指標（列挙）は、行動主導性以外の寄与がO型と同じため完全に同じ数値」 */
+$abNoActExpect = function ($m) use ($bloodContrib): array {
+    $listed = explode('・', $m[1]); $noAct = array_values(array_filter($GLOBALS['METRICS'], fn($mt) => !isset(formulaOf($mt)['行動主導性'])));
+    $a = $listed; $b = $noAct; sort($a); sort($b);
+    $ab = $bloodContrib('AB'); $o = $bloodContrib('O'); $abX = $ab; $oX = $o; unset($abX['行動主導性'], $oX['行動主導性']);
+    $diffP = array_values(array_unique(array_merge(array_keys(array_diff_assoc($ab, $o)), array_keys(array_diff_assoc($o, $ab)))));
+    $same = []; foreach ($listed as $mt) if (lvDist(sub(['b' => 'AB']), $mt)['raw'] !== lvDist(sub(['b' => 'O']), $mt)['raw']) $same[] = $mt;
+    $ok = $a === $b && $abX === $oX && $diffP === ['行動主導性'] && $same === [];
+    return [$ok, '行動主導性を含まない指標=' . implode('・', $noAct) . ' AB=' . json_encode($ab, JSON_UNESCAPED_UNICODE) . ' O=' . json_encode($o, JSON_UNESCAPED_UNICODE) . ($same ? ' 分布が違う: ' . implode('・', $same) : '')];
+};
+/** 天秤座・山羊座のエレメント・クオリティが情動性へ加算しない（inc の星座マッピング）＋2星座の積極性・愛情表現の分布が同じ（スナップショット） */
+$libCapSenZero = function () use ($capLibSameAct): array {
+    $contrib = [];
+    foreach (['天秤座', '山羊座'] as $nm) {
+        $si = signIndex($nm); $el = SEIZA_ELEMENTS[SEIZA_SIGNS[$si]['element']]['name']; $qu = SEIZA_QUALITIES[SEIZA_SIGNS[$si]['quality']]['name'];
+        $contrib[$nm] = array_sum(array_map(fn($s) => $s['score'], array_filter(sourcesOf('情動性'), fn($s) => ($s['kind'] === 'element' && $s['key'] === $el) || ($s['kind'] === 'quality' && $s['key'] === $qu))));
+    }
+    $ok = $contrib['天秤座'] === 0 && $contrib['山羊座'] === 0 && $capLibSameAct() && isset(formulaOf('積極性')['情動性']) && isset(formulaOf('愛情表現')['情動性']);
+    return [$ok, '情動性への寄与 天秤座=' . $contrib['天秤座'] . ' 山羊座=' . $contrib['山羊座'] . ' 積極性・愛情表現の分布' . ($capLibSameAct() ? 'は同じ' : 'が違う')];
+};
 
 $CLAIMS = [
     // ---- guide/9216-patterns ----
@@ -612,6 +704,40 @@ $CLAIMS = [
      'expect' => function ($m) use ($primMax) { $oth = array_map($primMax, ['行動主導性', '誠実性', '情動性', '変化志向']); return [$primMax('自立性') === (int)$m[1] && min($oth) === (int)$m[2] && max($oth) === (int)$m[3], '最大=' . $primMax('自立性')]; }],
     ['art' => 'guide/bundle-guide', 'where' => 'body', 'required' => false, 'all' => true, 're' => '/<tr><td>(\d+)<\/td><td>(行動主導性|誠実性|情動性|自立性|変化志向)×(行動主導性|誠実性|情動性|自立性|変化志向)<\/td><td>([\d.]+)%<\/td><\/tr>/u', 'raw' => true,
      'expect' => function ($m) { $c = countBy($GLOBALS['CASES'], 'bid'); $id = 'LOVE_' . P_CODE[$m[2]] . '_' . P_CODE[$m[3]]; $pos = array_search($id, array_keys($c), true) + 1; return [$pos === (int)$m[1] && near($m[4], pct($c[$id], 9216)), "{$id} 実測 {$pos}位 " . r1(pct($c[$id], 9216))]; }],
+    // ---- guide/kekka-no-mikata・style-guide：High/Mid/Low の割合と結果画面の表示（2026-10-01修正）----
+    // 実測の3段階の割合は均等ではない（Low率は指標ごとに異なる）。結果画面（love.php renderResult）は段階名・点数・Bundle ID を表示しない
+    ['art' => 'guide/kekka-no-mikata', 'where' => '*', 'required' => true, 're' => "/Lowの割合は項目によって([\\d.]+)%（($MET_RE)）〜([\\d.]+)%（($MET_RE)）/u",
+     'expect' => function ($m) use ($lowRates, $lowRangeStr) { $r = $lowRates();
+        return [near($m[1], min($r)) && near($m[1], $r[$m[2]]) && near($m[3], max($r)) && near($m[3], $r[$m[4]]), $lowRangeStr()]; }],
+    ['art' => 'guide/style-guide', 'where' => '*', 'required' => true, 're' => "/($MET_RE)はLowが([\\d.]+)%/u",
+     'expect' => function ($m) use ($lowRates) { $r = $lowRates(); return [near($m[2], $r[$m[1]]), "{$m[1]} Low率=" . r1($r[$m[1]])]; }],
+    // 旧文：均等割合（「下位33%」「中位34%」「上位33%」「上位33%・中位34%・下位33%」「上位33%がHigh、下位33%がLow」）。全指標の実測がその割合（±0.5）なら成り立つ
+    // 2026-10-06：対象を guide/* から全記事へ広げた（style/sekkyokusei-love の normalizer_body に同じ文型があったため）。mbti-blood の「上位◯%相当」（集中度の順位）は対象外
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => '/(?:上位|中位|下位)[\d.]+%(?!相当)(?:が(?:High|Mid|Low))?(?:[・、](?:上位|中位|下位)[\d.]+%(?!相当)(?:が(?:High|Mid|Low))?)*/u',
+     'expect' => function ($m) use ($lowRangeStr) { preg_match_all('/(上位|中位|下位)([\d.]+)%/u', $m[0], $ps, PREG_SET_ORDER); $bad = [];
+        foreach ($ps as $p) { $lv = ['上位' => 'High', '中位' => 'Mid', '下位' => 'Low'][$p[1]]; foreach ($GLOBALS['METRICS'] as $mt) { $v = lvDist(sub([]), $mt)[$lv]; if (!near($p[2], $v, 0.5)) $bad[] = "{$mt}{$lv}=" . r1($v); } }
+        return [$bad === [], '実測は均等ではない（' . $lowRangeStr() . '）' . ($bad ? ' 不一致: ' . implode(' ', array_slice(array_unique($bad), 0, 6)) . (count(array_unique($bad)) > 6 ? ' …' : '') : '')]; }],
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => '/3段階で表示されます/u',
+     'expect' => fn($m) => [false, '結果画面（love.php renderResult）は段階（High/Mid/Low）を表示しない']],
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => "/「(?:$MET_RE)は(?:High|Mid|Low)」|「恋愛タイプは(?:LOVE_)?[A-Z]{3}_[A-Z]{3}」/u",
+     'expect' => fn($m) => [false, '結果画面に「指標は段階名」「恋愛タイプはBundle ID」の表記は出ない（表示は文章のみ）']],
+    // 表示文の引用：「〜」のように／という前向きな傾向として表示、の引用句が結果画面の表示文（inc/love-style-texts.php・love-tendency-texts.php）のどれかに部分一致すること。旧文「じっくり相手を見てから動く」は表示文に無い
+    // 2026-10-06：対象を guide/* から全記事へ広げ、「「〜」という前向きな傾向として表示」の形も扱う（style/sekkyokusei-love の FAQ の旧文「じっくり相手をよく知ってから一歩を踏み出す」を検出するため）
+    // 2026-10-06（6段階化）：引用の前に段階の書き方（「いちばん低い段階」「いちばん高い段階」）があれば、引用がその記事の項目の L1／L6 の表示文に含まれること。
+    // 項目は記事の 'name'（style/*・tendency/* のみ）。「Low判定のうち」「Highのうち」があれば、低い＝Low・高い＝High と対応していること
+    // 2026-10-06（M1追加）：「「〜」という前向きな表現で示され」の形も扱う（tendency/kekkonshikou-love・uwakitaisei-love の FAQ）
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => '/(?:(?:(?<lv>Low判定|High)のうち)?いちばん(?<stage>低い|高い)段階(?:でも|では))?「(?<q>[^」]+)」(?:のように|という)前向きな(?:傾向として表示|表現で示され)/u',
+     'expect' => function ($m, string $rel = '', array $a = []) use ($displayTexts) {
+        $q = $m['q']; $hit = array_filter($displayTexts(), fn($t) => mb_strpos($t, $q) !== false);
+        if (!$hit) return [false, '表示文（inc/love-style-texts.php・love-tendency-texts.php）に含まれない引用'];
+        $stage = $m['stage'] ?? ''; if ($stage === '') return [true, ''];
+        $lvKey = $stage === '低い' ? 'L1' : 'L6';
+        $lv = $m['lv'] ?? ''; if ($lv !== '' && ($lv === 'High') !== ($lvKey === 'L6')) return [false, "「{$lv}のうち」と「いちばん{$stage}段階」が対応しない"];
+        $mt = (fnmatch('style/*', $rel) || fnmatch('tendency/*', $rel)) ? (string)($a['name'] ?? '') : '';
+        $bank = LOVE_STYLE_TEXTS[$mt] ?? LOVE_TENDENCY_TEXTS[$mt] ?? null;
+        if ($bank === null) return [false, '段階を書いた引用だが、記事の項目を特定できない（style/*・tendency/* 以外）'];
+        $ok = mb_strpos($bank[$lvKey], $q) !== false;
+        return [$ok, "{$mt} {$lvKey}" . ($ok ? 'の表示文に含まれる' : "の表示文に含まれない（{$lvKey}: {$bank[$lvKey]}）")]; }],
     // ---- 経路の「〜からのみ」（全記事共通の意味検査：MBTI以外からも加算されるなら誤り） ----
     ['art' => '*', 'where' => '*', 'required' => false, 're' => '/(自立性|変化志向)(?:というプリミティブ)?は、?MBTIの[IP]（[^）]*）からのみ/u',
      'expect' => fn($m) => [count(array_filter(sourcesOf($m[1]), fn($s) => $s['kind'] !== 'mbti')) === 0, "{$m[1]}のMBTI以外の経路=" . implode(',', array_map(fn($s) => $s['key'], array_filter(sourcesOf($m[1]), fn($s) => $s['kind'] !== 'mbti')))]],
@@ -735,19 +861,23 @@ $CLAIMS = [
         return [$ok, "浮気耐性 乙女" . r1(high($v, '浮気耐性')) . '/山羊' . r1(high($c, '浮気耐性')) . " 積極性 山羊" . r1(high($c, '積極性')) . '/乙女' . r1(high($v, '積極性'))]; }],
     ['art' => 'seiza/virgo', 'where' => 'faq', 'required' => false, 're' => '/浮気耐性など行動主導性が絡む指標では乙女座の方が高く/u',
      'expect' => function ($m) { $bad = []; foreach ($GLOBALS['METRICS'] as $mt) if (isset(formulaOf($mt)['行動主導性']) && high(['s' => signIndex('乙女座')], $mt) <= high(['s' => signIndex('山羊座')], $mt)) $bad[] = $mt; return [$bad === [], '乙女座の方が高くない指標=' . implode('・', $bad)]; }],
-    ['art' => 'seiza/capricorn', 'where' => 'mbti_intro', 'required' => true, 're' => '/天秤座と同じ数値になります（積極性([\d.]+)%・独占欲([\d.]+)%等）。積極性・愛情表現は、活動宮由来の行動主導性が同じ強さのため、独占欲は、どちらも情動性・自立性へ寄与しないためです（独占欲は地・風の6星座すべてで同じ値）/u',
-     'expect' => fn($m) => [$capLibSameAct() && $dokusenSame() && near($m[1], high(['s' => signIndex('山羊座')], '積極性')) && near($m[2], high(['s' => signIndex('山羊座')], '独占欲')), '']],
-    ['art' => 'seiza/capricorn', 'where' => 'faq', 'required' => true, 're' => '/積極性・愛情表現は、どちらもクオリティ（活動宮）が共通しており行動主導性への寄与が同じ強さだから、独占欲は、どちらも情動性・自立性へ寄与しないからです（独占欲は地・風の6星座すべてで同じ値）/u',
-     'expect' => fn($m) => [$capLibSameAct() && $dokusenSame(), '']],
-    ['art' => 'seiza/libra', 'where' => 'mbti_intro', 'required' => true, 're' => '/積極性・愛情表現は、活動宮由来の行動主導性が同じ強さのため、独占欲は、どちらも情動性・自立性へ寄与しないためです（独占欲は地・風の6星座すべてで同じ値）/u',
-     'expect' => fn($m) => [$capLibSameAct() && $dokusenSame(), '']],
+    // 2026-10-06：積極性・愛情表現が同じになる理由に「どちらも情動性へ寄与しない」を加えた（式に情動性が入るため、行動主導性の強さが同じだけでは理由として不足）。
+    // 情動性への寄与がゼロであることは inc の星座マッピングから、2星座の分布が同じことはスナップショットから確かめる（$libCapSenZero）
+    ['art' => 'seiza/capricorn', 'where' => 'mbti_intro', 'required' => true, 're' => '/天秤座と同じ数値になります（積極性([\d.]+)%・独占欲([\d.]+)%等）。積極性・愛情表現は、活動宮由来の行動主導性が同じ強さで、どちらも情動性へ寄与しないため、独占欲は、どちらも情動性・自立性へ寄与しないためです（独占欲は地・風の6星座すべてで同じ値）/u',
+     'expect' => function ($m) use ($capLibSameAct, $dokusenSame, $libCapSenZero) { [$z, $zd] = $libCapSenZero(); return [$z && $capLibSameAct() && $dokusenSame() && near($m[1], high(['s' => signIndex('山羊座')], '積極性')) && near($m[2], high(['s' => signIndex('山羊座')], '独占欲')), $zd]; }],
+    ['art' => 'seiza/capricorn', 'where' => 'faq', 'required' => true, 're' => '/積極性・愛情表現は、どちらもクオリティ（活動宮）が共通しており行動主導性への寄与が同じ強さで、どちらも情動性へ寄与しないから、独占欲は、どちらも情動性・自立性へ寄与しないからです（独占欲は地・風の6星座すべてで同じ値）/u',
+     'expect' => function ($m) use ($capLibSameAct, $dokusenSame, $libCapSenZero) { [$z, $zd] = $libCapSenZero(); return [$z && $capLibSameAct() && $dokusenSame(), $zd]; }],
+    ['art' => 'seiza/libra', 'where' => 'mbti_intro', 'required' => true, 're' => '/積極性・愛情表現は、活動宮由来の行動主導性が同じ強さで、どちらも情動性へ寄与しないため、独占欲は、どちらも情動性・自立性へ寄与しないためです（独占欲は地・風の6星座すべてで同じ値）/u',
+     'expect' => function ($m) use ($capLibSameAct, $dokusenSame, $libCapSenZero) { [$z, $zd] = $libCapSenZero(); return [$z && $capLibSameAct() && $dokusenSame(), $zd]; }],
     ['art' => 'seiza/libra', 'where' => 'faq', 'required' => true, 're' => '/独占欲は情動性・自立性で決まる指標で、どちらの星座も情動性・自立性へ寄与しないため同じ数値になります（地・風の6星座すべてで同じ値）/u',
      'expect' => fn($m) => [$capLibSameAct() && $dokusenSame(), '']],
-    ['art' => 'seiza/libra', 'where' => 'matome', 'required' => true, 're' => '/積極性・愛情表現は行動主導性への寄与の強さが山羊座と同じため、独占欲はどちらも情動性・自立性へ寄与しないため、山羊座と完全に同じ数値になる/u',
-     'expect' => fn($m) => [$capLibSameAct() && $dokusenSame(), '']],
-    // 天秤座 causal_explanation（2026-10-01修正）：積極性・愛情表現は活動宮由来の行動主導性、独占欲は地・風が情動性・自立性へ寄与しないことが理由。誠実性が主軸の指標では差
-    ['art' => 'seiza/libra', 'where' => 'causal_explanation', 'required' => true, 're' => '/風は「知性・変化」という特性を通じて変化志向に、活動宮は「行動を起こすイニシアチブ」という特性を通じて行動主導性に、それぞれ寄与します。積極性・愛情表現は、同じ活動宮を持つ山羊座と行動主導性への寄与の強さが同じため、独占欲は、どちらも情動性・自立性へ寄与しないため（独占欲は地・風の6星座すべてで同じ値）、山羊座と完全に同じ数値になります。一方、山羊座が誠実性（地）を持つのに対し天秤座は変化志向（風）を持つため、誠実性が主軸の指標では差が生まれます/u',
-     'expect' => function ($m) use ($capLibSameAct, $dokusenSame, $srcKeys) {
+    ['art' => 'seiza/libra', 'where' => 'matome', 'required' => true, 're' => '/積極性・愛情表現は行動主導性への寄与の強さが山羊座と同じで、どちらも情動性へ寄与しないため、独占欲はどちらも情動性・自立性へ寄与しないため、山羊座と完全に同じ数値になる/u',
+     'expect' => function ($m) use ($capLibSameAct, $dokusenSame, $libCapSenZero) { [$z, $zd] = $libCapSenZero(); return [$z && $capLibSameAct() && $dokusenSame(), $zd]; }],
+    // 天秤座 causal_explanation（2026-10-01修正、同日再修正）：積極性・愛情表現は行動主導性と情動性、独占欲は情動性と自立性で決まる。
+    // 両星座は活動宮で行動主導性への寄与が同じ、情動性・自立性へはどちらも寄与しない（地・風・活動宮のいずれも情動性・自立性へ加算しない）。誠実性が主軸の指標では差
+    ['art' => 'seiza/libra', 'where' => 'causal_explanation', 'required' => true, 're' => '/風は「知性・変化」という特性を通じて変化志向に、活動宮は「行動を起こすイニシアチブ」という特性を通じて行動主導性に、それぞれ寄与します。積極性・愛情表現は行動主導性と情動性、独占欲は情動性と自立性で決まる指標です。天秤座と山羊座は、同じ活動宮のため行動主導性への寄与の強さが同じで、情動性・自立性へはどちらも寄与しないため（独占欲は地・風の6星座すべてで同じ値）、これらの指標は山羊座と完全に同じ数値になります。一方、山羊座が誠実性（地）を持つのに対し天秤座は変化志向（風）を持つため、誠実性が主軸の指標では差が生まれます/u',
+     'expect' => function ($m) use ($capLibSameAct, $dokusenSame, $srcKeys, $libCapFormulaOk) {
+        if (!$libCapFormulaOk()) return [false, '式または情動性・自立性への寄与が記事の説明と異なる: ' . formulaStr('積極性') . ' ' . formulaStr('愛情表現') . ' ' . formulaStr('独占欲')];
         $li = signIndex('天秤座'); $ci = signIndex('山羊座');
         $relMain = array_values(array_filter($GLOBALS['METRICS'], function ($mt) { $fo = formulaOf($mt); if (!isset($fo['誠実性'])) return false; foreach ($fo as $w) if (abs($w) > abs($fo['誠実性'])) return false; return true; }));
         $diff = []; foreach ($relMain as $mt) $diff[$mt] = lvDist(sub(['s' => $li]), $mt)['raw'] !== lvDist(sub(['s' => $ci]), $mt)['raw'];
@@ -758,12 +888,192 @@ $CLAIMS = [
         $hi = []; foreach ($relMain as $mt) $hi[] = "$mt 天秤" . r1(high(['s' => $li], $mt)) . '/山羊' . r1(high(['s' => $ci], $mt));
         return [$ok, '誠実性が主軸の指標: ' . implode(' ', $hi) . ' 積極性High=' . r1(high(['s' => $li], '積極性')) . '/' . r1(high(['s' => $ci], '積極性')) . ' 独占欲High=' . r1(high(['s' => $li], '独占欲')) . '/' . r1(high(['s' => $ci], '独占欲'))]; }],
     ['art' => 'seiza/libra', 'where' => 'causal_explanation', 'required' => false, 're' => '/行動主導性への寄与の強さ[^。]*同じです。そのため((?:積極性|愛情表現|独占欲)(?:・(?:積極性|愛情表現|独占欲))+)は山羊座と完全に同じ数値/u', 'expect' => $actReasonExpect],
+    // 旧文（2026-10-01再修正前）：積極性・愛情表現が同じ理由を行動主導性だけで説明していた。式には情動性も入るため、理由として不足
+    ['art' => 'seiza/libra', 'where' => 'causal_explanation', 'required' => false, 're' => '/((?:積極性|愛情表現)(?:・(?:積極性|愛情表現))*)は、同じ活動宮を持つ山羊座と行動主導性への寄与の強さが同じため/u',
+     'expect' => function ($m) { $bad = []; foreach (explode('・', $m[1]) as $mt) if (array_keys(formulaOf($mt)) !== ['行動主導性']) $bad[] = formulaStr($mt); return [$bad === [], $bad ? '式に行動主導性以外も含まれる（同じ数値になる理由として、情動性への寄与も同じ＝どちらもゼロであることが必要）: ' . implode(' ', $bad) : '']; }],
+    // 天秤座 FAQ（2026-10-01修正）：旧文「積極性・愛情表現は、行動主導性というプリミティブへの依存度が高い指標」は愛情表現（情動性×0.7）で誤り。旧文の検出は 5b の dependsHigh-prim が担う
+    ['art' => 'seiza/libra', 'where' => 'faq', 'required' => true, 're' => '/積極性・愛情表現は、行動主導性と情動性で決まる指標です。天秤座と山羊座はどちらもクオリティが活動宮で行動主導性への寄与の強さが同じであるうえ、どちらの星座も情動性へは寄与しないため、これらの指標では同じ数値になります/u',
+     'expect' => fn($m) => [$libCapFormulaOk() && $capLibSameAct(), formulaStr('積極性') . ' ' . formulaStr('愛情表現')]],
     // 「(指標の列挙)が同じなのは行動主導性（活動宮）のため」：列挙した指標の式に行動主導性が含まれるか（seiza全体）
     ['art' => 'seiza/*', 'where' => '*', 'required' => false, 'rule' => 'ACT-reason', 're' => '/((?:積極性|愛情表現|独占欲|包容力|惚れやすさ|嫉妬深さ|恋愛の慎重さ)(?:・(?:積極性|愛情表現|独占欲|包容力|惚れやすさ|嫉妬深さ|恋愛の慎重さ))+)は、[^。]*同じ数値になります(?:（[^）]*）)?。これは、行動主導性が活動宮由来/u', 'expect' => $actReasonExpect],
     ['art' => 'seiza/*', 'where' => '*', 'required' => false, 'rule' => 'ACT-reason', 're' => '/((?:積極性|愛情表現|独占欲)(?:・(?:積極性|愛情表現|独占欲))+)については同じ数値になります。どちらもクオリティ（活動宮）が共通しており、行動主導性/u', 'expect' => $actReasonExpect],
     ['art' => 'seiza/*', 'where' => '*', 'required' => false, 'rule' => 'ACT-reason', 're' => '/((?:積極性|愛情表現|独占欲)(?:・(?:積極性|愛情表現|独占欲))+)は、行動主導性というプリミティブへの依存度が高い指標/u', 'expect' => $actReasonExpect],
     ['art' => 'seiza/*', 'where' => '*', 'required' => false, 'rule' => 'ACT-reason', 're' => '/行動主導性への寄与の強さ(?:が|は、)[^。]*?同じ(?:です。そのため|ため、)((?:積極性|愛情表現|独占欲)(?:・(?:積極性|愛情表現|独占欲))+)は/u', 'expect' => $actReasonExpect],
+    // 旧文（2026-10-06修正前の天秤座・山羊座）：積極性・愛情表現が同じ理由を「行動主導性が同じ強さ」だけで説明していた。式に情動性も入るため理由として不足
+    ['art' => 'seiza/*', 'where' => '*', 'required' => false, 're' => '/積極性・愛情表現は[^。]*?行動主導性(?:への寄与)?(?:の強さ)?が(?:山羊座と|天秤座と)?同じ(?:強さ)?(?:のため|ため|だから)、独占欲/u',
+     'expect' => function ($m) { $bad = []; foreach (['積極性', '愛情表現'] as $mt) if (array_keys(formulaOf($mt)) !== ['行動主導性']) $bad[] = formulaStr($mt); return [$bad === [], $bad ? '式に行動主導性以外も含まれる（同じ数値になる理由として、情動性への寄与も同じ＝どちらもゼロであることが必要）: ' . implode(' ', $bad) : '']; }],
+
+    // ---- 2026-10-06 記事の誤りのまとめ修正 ----
+    // blood/ab-love：O型と同じ数値になるのは「行動主導性を含まない指標」（AB型とO型の違いは行動主導性への寄与（O型2・AB型1）だけ）
+    ['art' => 'blood/ab-love', 'where' => 'causal_explanation', 'required' => true, 're' => '/行動主導性を含まない指標（((?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性)(?:・(?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性))*)）は、行動主導性以外の寄与がO型と同じため、O型と完全に同じ数値/u',
+     'expect' => $abNoActExpect],
+    ['art' => 'blood/ab-love', 'where' => 'faq.0.a', 'required' => true, 're' => '/行動主導性を含まない指標（((?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性)(?:・(?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性))*)）は、行動主導性以外の寄与がO型と同じため完全に同じ数値/u',
+     'expect' => $abNoActExpect],
+    // 旧文：「情動性が主軸（になる）の指標（列挙）」。列挙した指標すべてで情動性が最大の正の重みなら成り立つ
+    ['art' => 'blood/*', 'where' => '*', 'required' => false, 're' => '/情動性が主軸(?:に(?:なる)?|の)指標（((?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性)(?:・(?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性))*)）/u',
+     'expect' => function ($m) { $bad = array_values(array_filter(explode('・', $m[1]), fn($mt) => dominantPrim($mt) !== '情動性')); return [$bad === [], $bad ? '情動性が最大の重みでない: ' . implode(' ', array_map('formulaStr', $bad)) : '']; }],
+    // mbti/enfj：独占欲は情動性・自立性で決まる。ENFPと変わらないのは、行動主導性・情動性への寄与が同じで、自立性へはJ/Pのどちらも寄与しないため
+    ['art' => 'mbti/enfj', 'where' => 'causal_explanation', 'required' => true, 're' => '/積極性・愛情表現は行動主導性・情動性、独占欲は情動性・自立性で決まる指標です。行動主導性・情動性への寄与はENFPと同じで、自立性への寄与もJ\/Pの違いでは変わらない（どちらも自立性へは寄与しない）ため、これらの指標はENFPと変わりません/u',
+     'expect' => function ($m) use ($fset) {
+        $same = []; foreach (['積極性', '愛情表現', '独占欲'] as $mt) $same[$mt] = lvDist(sub(['m' => 'ENFJ']), $mt)['raw'] === lvDist(sub(['m' => 'ENFP']), $mt)['raw'];
+        $ok = $fset('積極性') === ['情動性', '行動主導性'] && $fset('愛情表現') === ['情動性', '行動主導性'] && $fset('独占欲') === ['情動性', '自立性']
+            && typeContribLetters('ENFJ', '行動主導性') === typeContribLetters('ENFP', '行動主導性') && typeContribLetters('ENFJ', '情動性') === typeContribLetters('ENFP', '情動性')
+            && typeContribLetters('ENFJ', '自立性') === [] && typeContribLetters('ENFP', '自立性') === [] && !in_array(false, $same, true);
+        return [$ok, formulaStr('独占欲') . ' 自立性への寄与 ENFJ=' . implode('', typeContribLetters('ENFJ', '自立性')) . ' ENFP=' . implode('', typeContribLetters('ENFP', '自立性')) . ' 分布が同じ=' . json_encode($same, JSON_UNESCAPED_UNICODE)]; }],
+    // 旧文：「行動主導性・情動性のみで決まる指標（列挙）」。列挙した指標の式がすべて行動主導性・情動性だけなら成り立つ
+    ['art' => 'mbti/*', 'where' => '*', 'required' => false, 're' => '/行動主導性・情動性のみで決まる指標（((?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性)(?:・(?:積極性|愛情表現|包容力|独占欲|惚れやすさ|嫉妬深さ|恋愛の慎重さ|結婚志向|浮気耐性))*)）/u',
+     'expect' => function ($m) use ($fset) { $bad = array_values(array_filter(explode('・', $m[1]), fn($mt) => array_diff($fset($mt), ['情動性', '行動主導性']) !== [])); return [$bad === [], $bad ? implode(' ', array_map('formulaStr', $bad)) : '']; }],
+    // mbti/isfp：恋愛の慎重さは誠実性・自立性、結婚志向は誠実性・変化志向で決まり、どちらもT/Fからは加算されない
+    ['art' => 'mbti/isfp', 'where' => 'faq', 'required' => true, 're' => '/恋愛の慎重さは誠実性・自立性、結婚志向は誠実性・変化志向で決まり、どちらもT\/Fからは加算されないため、T\/Fの違いに影響されず両者で完全に同じ分布になります/u',
+     'expect' => function ($m) use ($fset) {
+        $tf = array_merge(letterPrims('T'), letterPrims('F'));
+        $same = []; foreach (['恋愛の慎重さ', '結婚志向'] as $mt) $same[$mt] = lvDist(sub(['m' => 'ISFP']), $mt)['raw'] === lvDist(sub(['m' => 'ISTP']), $mt)['raw'];
+        $ok = $fset('恋愛の慎重さ') === ['自立性', '誠実性'] && $fset('結婚志向') === ['変化志向', '誠実性'] && array_intersect($tf, ['誠実性', '自立性', '変化志向']) === [] && !in_array(false, $same, true);
+        return [$ok, 'T/Fの寄与先=' . implode('・', array_unique($tf)) . ' 分布が同じ=' . json_encode($same, JSON_UNESCAPED_UNICODE)]; }],
+    ['art' => 'mbti/*', 'where' => '*', 'required' => false, 're' => '/(恋愛の慎重さ・結婚志向)は(誠実性・変化志向)のみで決ま/u',
+     'expect' => function ($m) use ($fset) { $cl = explode('・', $m[2]); $bad = array_values(array_filter(explode('・', $m[1]), fn($mt) => array_diff($fset($mt), $cl) !== [])); return [$bad === [], $bad ? implode(' ', array_map('formulaStr', $bad)) : '']; }],
+    // style/sekkyokusei-love：境目は P33・P67 だが、実際の割合は均等にならない（スナップショットから再計算）
+    ['art' => 'style/sekkyokusei-love', 'where' => 'normalizer_body', 'required' => true, 're' => '/実際の割合はHigh([\d.]+)%・Mid([\d.]+)%・Low([\d.]+)%と、ちょうど3分の1ずつにはなりません/u',
+     'expect' => function ($m) { $d = lvDist(sub([]), '積極性'); $uneven = abs($d['High'] - 100 / 3) > 0.5 || abs($d['Mid'] - 100 / 3) > 0.5 || abs($d['Low'] - 100 / 3) > 0.5;
+        return [near($m[1], $d['High']) && near($m[2], $d['Mid']) && near($m[3], $d['Low']) && $uneven, '積極性 ' . fmtD($d)]; }],
+    // 旧文：境目を「均等な3分割を狙う／狙ったものではない」と説明（2026-10-06修正前の kekka-no-mikata・sekkyokusei-love）
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => '/均等な3分割を狙/u',
+     'expect' => fn($m) => [false, '境目は実測データの下から3分の1・3分の2の位置（P33・P67）。割合が均等にならないのは同じ値の人がまとまっているため']],
+    // 旧文：結果画面の表示内容（2026-10-06修正前の kekka-no-mikata・primitive-guide）。画面に出るのは入力の組み合わせ・恋愛タイプの解説文・「恋愛スタイル」「推定される傾向」の各項目（表示名・一行説明・解説文）・関連記事
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => '/のみが表示されます/u',
+     'expect' => fn($m) => [false, '結果画面の表示内容の説明として不正確（love.php renderResult）']],
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => '/表示されるのは[^。]*Style・Tendency・Bundleです/u',
+     'expect' => fn($m) => [false, '結果画面に Style・Tendency・Bundle という名前の項目は出ない（love.php renderResult）']],
+    // 旧文：正式な項目名が画面に出ると読める書き方（2026-10-06修正前の style-guide・tendency-guide）。画面は表示名（inc/love-display-labels.php）で出す
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => "/診断結果に出てくる「($MET_RE)」/u",
+     'expect' => fn($m) => [false, "結果画面に正式な項目名「{$m[1]}」は出ない（表示名は「" . ($displayLabels()[$m[1]] ?? '?') . '」）']],
+    // 修正後の画面の説明：引用した表示名が LOVE_ITEM_LABELS と一字一句一致すること・引用した見出しが love.php の結果の見出しにあること
+    ['art' => 'guide/style-guide', 'where' => 'lead', 'required' => true, 're' => '/診断結果の(「[^」]+」)に並ぶ項目（画面では((?:「[^」]+」)+)などの名前で表示）/u',
+     'expect' => function ($m) use ($labelQuoteExpect, $sectionQuoteExpect) { [$a, $ad] = $labelQuoteExpect($m[2], 'style'); [$b, $bd] = $sectionQuoteExpect($m[1]); return [$a && $b, "$ad $bd"]; }],
+    ['art' => 'guide/tendency-guide', 'where' => 'lead', 'required' => true, 're' => '/診断結果の(「[^」]+」)に並ぶ項目（画面では((?:「[^」]+」)+)という名前で表示）/u',
+     'expect' => function ($m) use ($labelQuoteExpect, $sectionQuoteExpect) { [$a, $ad] = $labelQuoteExpect($m[2], 'tendency', true); [$b, $bd] = $sectionQuoteExpect($m[1]); return [$a && $b, "$ad $bd"]; }],
+    ['art' => 'guide/kekka-no-mikata', 'where' => 'body', 'required' => true, 're' => '/結果画面には段階の名前や点数は表示せず、表示名（((?:「[^」]+」)+)など）・一行の説明・解説文を/u',
+     'expect' => fn($m) => $labelQuoteExpect($m[1], null)],
+    ['art' => 'guide/kekka-no-mikata', 'where' => 'body', 'required' => true, 're' => '/診断結果の画面に表示されるのは、入力した組み合わせ（MBTI・血液型・星座）、恋愛タイプ（Bundle）にもとづく解説文、((?:「[^」]+」)+)の各項目（表示名・一行の説明・解説文）、関連記事へのリンクです/u',
+     'expect' => fn($m) => $sectionQuoteExpect($m[1])],
+    ['art' => 'guide/primitive-guide', 'where' => 'body', 'required' => true, 're' => '/実際に表示されるのは、Primitiveから計算された後のStyle・Tendency・Bundleにもとづく文章（恋愛タイプの解説文と、((?:「[^」]+」)+)の各項目の表示名・一行の説明・解説文）です/u',
+     'expect' => fn($m) => $sectionQuoteExpect($m[1])],
+    // 引用した表示名の一般検査（全記事）：「画面では「〜」」「表示名（「〜」」の引用は LOVE_ITEM_LABELS の表示名であること
+    ['art' => '*', 'where' => '*', 'required' => false, 're' => '/(?:画面では|表示名（)((?:「[^」]+」)+)/u',
+     'expect' => fn($m) => $labelQuoteExpect($m[1], null)],
+    // 旧文（2026-10-06 6段階化の前の style/*・tendency/*）：段階の書き方が無い「Low判定でも「〜」」「Highは「〜」」の引用、3通りの表示と読める levels_intro
+    // 2026-10-06（M1追加）：「という前向きな表現で示され」の形も旧文として検出する（tendency/* の FAQ）
+    ['art' => 'style/*', 'where' => '*', 'required' => false, 're' => '/(?:Low判定でも|Highは)「[^」]+」という前向きな(?:傾向として表示|表現で示され)/u',
+     'expect' => fn($m) => [false, '段階の書き方が無い引用。結果画面の文章は6段階（L1〜L6）で変わり、引用した文が出るのはいちばん低い段階（L1）／いちばん高い段階（L6）だけ']],
+    ['art' => 'tendency/*', 'where' => '*', 'required' => false, 're' => '/(?:Low判定でも|Highは)「[^」]+」という前向きな(?:傾向として表示|表現で示され)/u',
+     'expect' => fn($m) => [false, '段階の書き方が無い引用。結果画面の文章は6段階（L1〜L6）で変わり、引用した文が出るのはいちばん低い段階（L1）／いちばん高い段階（L6）だけ']],
+    ['art' => 'style/*', 'where' => '*', 'required' => false, 're' => '/High\/Mid\/Lowそれぞれ次のように表示されます/u',
+     'expect' => fn($m) => [false, '結果画面の文章は6段階（L1〜L6）で変わり、High/Mid/Lowの3通りではない']],
+    ['art' => 'tendency/*', 'where' => '*', 'required' => false, 're' => '/High\/Mid\/Lowそれぞれ次のように表示されます/u',
+     'expect' => fn($m) => [false, '結果画面の文章は6段階（L1〜L6）で変わり、High/Mid/Lowの3通りではない']],
 ];
+
+// ======================================================================
+// 5b. 指標とプリミティブの重み関係の主張（宣言的な表、2026-10-01追加）
+//     「Xは Pへの依存度が高い」「主に Pで決まる」「Pが主軸の指標」「P・Qで決まる」等の文を、
+//     inc/love-style.php・inc/love-tendency.php の式の係数（formulaOf()、数値は表に直書きしない）と照合する。
+//     全記事・全フィールドを文単位で走査する（個別記事の文を登録しなくても拾う）。
+//
+//   'id'    : 規則名（結果の rule 欄は "weight:<id>@<フィールド>"。KNOWN のキーにも使う）
+//   're'    : 正規表現。名前付きグループ
+//               p  = 主張したプリミティブ（列挙可。「行動主導性（Tから）と情動性（Nから）」の注記つきも可）
+//               m  = 対象指標の列挙（任意。無ければ下記「対象指標の決め方」で決める。m3/m4/m5 は同じ意味の別位置で、m→m3→m4→m5 の順に使う）
+//               o  = 比較相手の指標（reversed / heavierThanMetric）
+//               q  = 比較相手のプリミティブ（heavier のみ）
+//               w / w2 = 文中に書かれた係数（任意。書かれていれば式の係数と一致するかも見る）
+//   'judge' : 判定の種類
+//     dominant : 各指標で、P が「最大の正の重み」を持つ。すなわち w(P) > 0 かつ、他のすべてのプリミティブ Q について
+//                w(P) > |w(Q)|（厳密に大きい）。同率最大（w(P) = |w(Q)|）は「主に P で決まる」とは言えないため不一致とする。
+//                P は1つだけ（複数書かれていたら不一致）。
+//     set      : 「P・Q（のみ）で決まる」。各指標の式のプリミティブ集合 ⊆ 主張した集合、かつ 列挙した指標の式の和集合 = 主張した集合
+//                （指標が1つなら集合の完全一致）。
+//     contains : 「P に依存する指標」「P が絡む／関わる指標」。各指標の式に、主張したプリミティブの少なくとも1つが含まれる。
+//     absent   : 「P に依存しない」。各指標の式に、主張したプリミティブがどれも含まれない。
+//     heavier  : 「P の重みが Q より大きい」。w(P) > |w(Q)|。
+//     reversed : 「(指標O)と重みが逆」。対象指標と指標O の式のプリミティブ集合が同じで、最大の正の重みのプリミティブが異なる。
+//     heavierThanMetric : 「(指標O)より P への依存が強い」。対象指標での w(P) > 指標Oでの w(P)（O の式に P が無ければ 0 とみなす）。
+//   'pair'  : true のとき、m/p に加えて m2/p2 の組も同じ判定で照合する（「Xは P・Q、Yは R・Sで決まる」）。
+//
+//   対象指標の決め方（m が無いとき、上から順に）:
+//     (1) 文頭の「(指標の列挙)は／が／の」  (2) フィールドが styles.<指標>.note / tendencies.<指標>.note ならその指標
+//     (3) Style/Tendency記事（style/*・tendency/*）で、文中に記事の指標以外の指標名が無ければ記事の指標
+//     (4) 決まらなければ照合せず「照合できなかった重み主張」として末尾に表示する（FAILには数えない）
+// ======================================================================
+$PA = "(?:$PRIM_RE)(?:（[^）]*）|×[\d.]+)?";
+$PLIST = "$PA(?:(?:・|と|、|＋|－)$PA)*";
+$MLIST = "(?:$MET_RE)(?:・(?:$MET_RE))*";
+$WEIGHT_CLAIMS = [
+    ['id' => 'dependsHigh-prim',  'judge' => 'dominant', 're' => "/(?<m>$MLIST)は、?(?<p>$PRIM_RE)というプリミティブへの依存度が高い/u"],
+    ['id' => 'dependsHigh',       'judge' => 'dominant', 're' => "/(?<p>$PRIM_RE)への依存度?が(?:特に|非常に)?高い(?:指標|Style|Tendency)?(?:（(?:(?<m>$MLIST)|(?<w>[\d.]+))）)?/u"],
+    ['id' => 'leaningWeight',     'judge' => 'dominant', 're' => "/(?:(?<m>$MLIST)(?:は|が)、?)?(?<p>$PRIM_RE)寄りの重み/u"],
+    ['id' => 'dependsMoreThan',   'judge' => 'heavierThanMetric', 're' => "/(?:(?<m>$MLIST)(?:は|が)、?)?(?<o>$MET_RE)より(?<p>$PRIM_RE)への依存(?:度)?が(?:強|高|大き)/u"],
+    ['id' => 'mainlyDecided',     'judge' => 'dominant', 're' => "/(?:(?<m>$MLIST)(?:は|が)、?)?主に(?<p>$PRIM_RE)(?:で|によって)決ま/u"],
+    ['id' => 'almostOnly',        'judge' => 'dominant', 're' => "/(?:(?<m>$MLIST)(?:は|が)、?)?ほぼ(?<p>$PRIM_RE)だけで決ま/u"],
+    ['id' => 'mainAxisMetric',    'judge' => 'dominant', 're' => "/(?<p>$PRIM_RE)が(?:主軸|中心)(?:の|となる|になる)指標(?:（(?<m>$MLIST)）)?/u"],
+    ['id' => 'weightLarge',       'judge' => 'dominant', 're' => "/(?:(?<m>$MLIST)は、?)?(?<p>$PRIM_RE)の(?:重み|影響)が(?:最も|特に)?(?:大き[いく]|主)[^。（]{0,8}(?:（(?<w>[\d.]+)）)?/u"],
+    ['id' => 'weightReversed',    'judge' => 'reversed', 're' => "/(?:(?<m>$MLIST)と)?(?<o>$MET_RE)(?:（[^）]*）)?(?:と同じ2つのプリミティブ[^。]*?|とは|は同じ2つのプリミティブ[^。]*?)重み(?:が|を)逆/u"],
+    ['id' => 'weightHeavier',     'judge' => 'heavier',  're' => "/(?:(?<m>$MLIST)は、?)?(?<p>$PRIM_RE)の重みが(?<q>$PRIM_RE)より大き[いく][^。（]*(?:（(?<w>[\d.]+):(?<w2>[\d.]+)）)?/u"],
+    ['id' => 'effective',         'judge' => 'dominant', 're' => "/(?:(?<m>$MLIST)(?:は|では)、?)?(?<p>$PRIM_RE)が(?:よく|強く)?効いて/u"],
+    ['id' => 'decidedBy',         'judge' => 'set',      're' => "/(?:(?<m>$MLIST)(?:は|が|など)、?)?(?<!主に)(?<!ほぼ)(?<p>$PLIST)(?:の2つ)?(?:のみ)?で(?:決ま|構成され)(?:る(?:指標（(?<m4>$MLIST)）|「(?<m3>$MLIST)」|(?<m5>$MLIST)))?/u"],
+    ['id' => 'decidedByPair',     'judge' => 'set', 'pair' => true, 're' => "/(?<m>$MLIST)は(?<p>$PLIST)、(?<m2>$MLIST)は(?<p2>$PLIST)で決ま/u"],
+    ['id' => 'dependsOn',         'judge' => 'contains', 're' => "/(?:(?<m>$MLIST)など)?(?<p>$PLIST)(?:に|へ)依存する(?:指標|Style|Tendency)?(?:（(?<m4>$MLIST)）)?/u"],
+    ['id' => 'involves',          'judge' => 'contains', 're' => "/(?:(?<m>$MLIST)など)?(?<p>$PLIST)が(?:絡む|関わる)(?:指標(?:（(?<m4>$MLIST)）)?|(?<m3>$MLIST))/u"],
+    ['id' => 'notDependsOn',      'judge' => 'absent',   're' => "/(?:(?<m>$MLIST)は、?)?(?<p>$PLIST)(?:に|へ)(?:は)?依存しない/u"],
+];
+/** 照合対象にした文を除き、重み関係の語を含む文を「照合できなかった重み主張」として拾う語 */
+$WEIGHT_WORDS_RE = '/依存|主に|ほぼ[^。]{0,10}だけ|効いて|重み|係数|比重|主軸(?:の|となる|になる)指標|で決ま|影響が大き|強く影響|左右/u';
+
+function formulaStr(string $metric): string {
+    $s = ''; foreach (formulaOf($metric) as $p => $w) $s .= ($s === '' ? '' : ($w < 0 ? '－' : '＋')) . $p . '×' . abs($w);
+    return "$metric=$s";
+}
+/** 最大の正の重みを持つプリミティブ（同率最大なら null） */
+function dominantPrim(string $metric): ?string {
+    $fo = formulaOf($metric); arsort($fo); $p = array_key_first($fo); $w = $fo[$p];
+    if ($w <= 0) return null;
+    foreach ($fo as $q => $wq) if ($q !== $p && abs($wq) >= $w) return null;
+    return $p;
+}
+/** 重み主張1件の判定。戻り値 [ok, 説明] */
+function judgeWeight(string $judge, array $metrics, array $prims, ?string $q, ?string $w, ?string $w2, ?string $other = null): array {
+    $bad = [];
+    if ($judge === 'set') {
+        $union = [];
+        foreach ($metrics as $mt) { $fs = array_keys(formulaOf($mt)); $union = array_merge($union, $fs); if (array_diff($fs, $prims)) $bad[] = "$mt の式に主張外の" . implode('・', array_diff($fs, $prims)); }
+        $union = array_unique($union); sort($union); $cl = array_unique($prims); sort($cl);
+        if ($union !== $cl) $bad[] = '式のプリミティブ集合=' . implode('・', $union) . ' 主張=' . implode('・', $cl);
+    } else {
+        foreach ($metrics as $mt) {
+            $fo = formulaOf($mt);
+            if ($judge === 'dominant') {
+                $d = dominantPrim($mt);
+                if (count($prims) !== 1) $bad[] = 'dominant にはプリミティブを1つだけ書く';
+                elseif ($d !== $prims[0]) $bad[] = "$mt の最大の正の重みは " . ($d ?? '同率で無し');
+                elseif ($w !== null && $w !== '' && abs($fo[$prims[0]] - (float)$w) > 1e-9) $bad[] = "$mt の {$prims[0]} の係数は {$fo[$prims[0]]}（記事 $w）";
+            } elseif ($judge === 'contains') {
+                if (!array_intersect($prims, array_keys($fo))) $bad[] = "$mt の式に " . implode('・', $prims) . ' が無い';
+            } elseif ($judge === 'absent') {
+                if (array_intersect($prims, array_keys($fo))) $bad[] = "$mt の式に " . implode('・', array_intersect($prims, array_keys($fo))) . ' がある';
+            } elseif ($judge === 'reversed') {
+                $ka = array_keys($fo); $ko = array_keys(formulaOf($other)); sort($ka); sort($ko);
+                if ($mt === $other || $ka !== $ko || dominantPrim($mt) === null || dominantPrim($mt) === dominantPrim($other)) $bad[] = "$mt と $other の重みは逆になっていない";
+            } elseif ($judge === 'heavierThanMetric') {
+                $wa = $fo[$prims[0]] ?? 0; $wo = formulaOf($other)[$prims[0]] ?? 0;
+                if (!($wa > $wo)) $bad[] = "$mt の {$prims[0]}={$wa} は {$other} の {$wo} より大きくない";
+            } elseif ($judge === 'heavier') {
+                $wp = $fo[$prims[0]] ?? null; $wq = $fo[$q] ?? null;
+                if ($wp === null || $wq === null || !($wp > abs($wq))) $bad[] = "$mt の {$prims[0]}=" . ($wp ?? '無') . " {$q}=" . ($wq ?? '無');
+                elseif ($w !== null && $w !== '' && (abs($wp - (float)$w) > 1e-9 || abs(abs($wq) - (float)$w2) > 1e-9)) $bad[] = "$mt の係数は {$wp}:" . abs($wq) . "（記事 $w:$w2）";
+            }
+        }
+    }
+    return [$bad === [], ($bad ? implode(' / ', $bad) . ' → ' : '') . implode(' ', array_map('formulaStr', $other !== null ? array_merge($metrics, [$other]) : $metrics))];
+}
 
 // ======================================================================
 // 6. 実行
@@ -798,13 +1108,48 @@ foreach ($CLAIMS as $i => $cl) {
             if (!preg_match_all($cl['re'], $t, $mm, PREG_SET_ORDER)) continue;
             foreach ($mm as $m) {
                 $found = true;
-                [$ok, $detail] = ($cl['expect'])($m);
+                [$ok, $detail] = ($cl['expect'])($m, $rel, $a);  // 記事のパス・配列も渡す（使わない expect は無視する）
                 $label = mb_strimwidth($m[0], 0, 90, '…');
                 chk($rel, isset($cl['rule']) ? "{$cl['rule']}@$w" : "claim#$i", $ok, "[$w] 「{$label}」" . ($detail !== '' ? " → $detail" : ''), $cl['required'] ? 'CLAIM' : 'SEM', $t);
             }
         }
     }
     if ($cl['required'] && !$found) chk($cl['art'], "claim#$i", false, "[{$cl['where']}] 修正後の主張が本文に見つからない: " . mb_strimwidth($cl['re'], 0, 110, '…'), 'MISSING');
+}
+
+// 5b の重み主張：全記事・全フィールドを文単位で照合
+$WEIGHT_UNRESOLVED = []; $WEIGHT_UNMATCHED = []; $WEIGHT_N = 0;
+$listOf = fn(string $s, string $re) => preg_match_all("/$re/u", $s, $x) ? array_values(array_unique($x[0])) : [];
+foreach ($loaded as $rel => $a) {
+    if (!is_array($a)) continue;
+    $artMetric = (fnmatch('style/*', $rel) || fnmatch('tendency/*', $rel)) && in_array($a['name'] ?? '', $METRICS, true) ? $a['name'] : null;
+    foreach (leaves($a) as $where => $text) {
+        $ctxMetric = preg_match("/^(?:styles|tendencies)\\.($MET_RE)\\./u", $where, $x) ? $x[1] : null;
+        foreach (sentences($text) as $s) {
+            $hit = false;
+            foreach ($WEIGHT_CLAIMS as $wc) {
+                if (!preg_match_all($wc['re'], $s, $mm, PREG_SET_ORDER)) continue;
+                foreach ($mm as $m) {
+                    $mFirst = ''; foreach (['m', 'm3', 'm4', 'm5'] as $gk) if (($m[$gk] ?? '') !== '') { $mFirst = $m[$gk]; break; }
+                    $pairs = [[$mFirst, $m['p'] ?? '']];
+                    if (!empty($wc['pair'])) $pairs[] = [$m['m2'], $m['p2']];
+                    foreach ($pairs as [$mStr, $pStr]) {
+                        $metrics = $mStr !== '' ? explode('・', $mStr) : [];
+                        if (!$metrics && preg_match("/^($MLIST)(?:は|が|の)/u", $s, $x)) $metrics = explode('・', $x[1]);
+                        if (!$metrics && $ctxMetric !== null) $metrics = [$ctxMetric];
+                        if (!$metrics && $artMetric !== null && array_diff($listOf($s, $MET_RE), [$artMetric, $m['o'] ?? '']) === []) $metrics = [$artMetric];
+                        $label = mb_strimwidth($m[0], 0, 80, '…');
+                        $hit = true;
+                        if (!$metrics) { $WEIGHT_UNRESOLVED[] = "$rel [$where] {$wc['id']}「{$label}」（対象指標を特定できない）"; continue; }
+                        $WEIGHT_N++;
+                        [$ok, $detail] = judgeWeight($wc['judge'], $metrics, $listOf($pStr, $PRIM_RE), $m['q'] ?? null, $m['w'] ?? null, $m['w2'] ?? null, ($m['o'] ?? '') !== '' ? $m['o'] : null);
+                        chk($rel, "weight:{$wc['id']}@$where", $ok, "「{$label}」 → $detail", 'SEM', $text);
+                    }
+                }
+            }
+            if (!$hit && preg_match($WEIGHT_WORDS_RE, $s) && preg_match("/$PRIM_RE/u", $s) && ($artMetric !== null || preg_match("/$MET_RE|指標|Style|Tendency/u", $s))) $WEIGHT_UNMATCHED[] = "$rel [$where] 「" . mb_strimwidth($s, 0, 90, '…') . '」';
+        }
+    }
 }
 
 // ======================================================================
@@ -827,11 +1172,15 @@ if ($FAILS) {
     echo "\n--- FAIL 一覧（kind: SEM=誤りの意味検査で検出 / FACT・CLAIM=数値の不一致 / MISSING=修正後の主張が本文に無い） ---\n";
     foreach ($FAILS as $r) echo "[FAIL:{$r[4]}] {$r[1]} {$r[2]} {$r[3]}\n";
 }
+echo "\n重み関係の主張（5b、式の係数と照合）: {$WEIGHT_N}件を照合\n";
+if ($WEIGHT_UNRESOLVED) { echo "照合できなかった重み主張（対象指標を特定できない。FAILには数えない）: " . count($WEIGHT_UNRESOLVED) . "件\n"; foreach ($WEIGHT_UNRESOLVED as $u) echo "  - $u\n"; }
+if ($WEIGHT_UNMATCHED) { echo "重み関係の語を含むが 5b の言い回しに当てはまらない文（照合していない。目視で確認）: " . count($WEIGHT_UNMATCHED) . "件\n"; foreach ($WEIGHT_UNMATCHED as $u) echo "  - $u\n"; }
 echo "\n照合できない主張の種類（網羅外。目視・差分レポートで確認する）:\n";
 echo "  - 心理的・解釈的な説明文（「〜な傾向があります」「慎重に見極めるタイプ」等）と相性（compat）の記述\n";
 echo "  - 指標名を特定できない自由文中の比較（例：「ENTJより高い傾向」「突出した指標が少ない」「Low寄り」）\n";
 echo "  - 「Highが目立つ」等の相対表現（INFP記事のまとめのみ個別に照合）\n";
 echo "  - Style/Tendency記事のnormalizer（P33/P67）、guide記事の本文中の概念説明\n";
 echo "  - docs/love/*.md（記事ではないため対象外）\n";
+echo "  - 重み関係の文のうち、対象の指標を文から特定できないもの・5b の言い回しに当てはまらないもの（上の2つの一覧）\n";
 echo "\n総合結果: " . ($FAILS ? count($FAILS) . " FAILURE(S)" : 'ALL PASS') . "\n";
 exit($FAILS ? 1 : 0);

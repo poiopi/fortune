@@ -14,6 +14,11 @@ ini_set('memory_limit', '1024M');
  * 中間状態（Primitive値・各層の区分・Bundle ID・Text ID・Influence・記事リンクの
  * ソース順）を固定する。
  *
+ * Style/Tendencyの区分は2種類を記録する（2026-10-06）：
+ *   - stylesNormalized・tendenciesNormalized：3段階（Low/Mid/High）。記事・事実照合の基準
+ *   - stylesLevel6・tendenciesLevel6：6段階（L1〜L6）。結果画面の文章と並び順に使う区分
+ *   6段階を2つずつまとめると3段階と一致すること等は tests/tools/love-level6-consistency.php で検査する。
+ *
  * 目的：Text Bank修正・Normalizer調整・Bundle追加等、今後のリファクタリング時に
  * 「何が変わったか」を機械的に検知できるようにする（実装ではなく回帰検知）。
  *
@@ -96,6 +101,8 @@ foreach ($mbtiTypes as $mbtiType) {
             $tendencies = love_computeTendencies($primitives);
             $stylesNormalized = love_normalizeStyles($styles);
             $tendenciesNormalized = love_normalizeTendencies($tendencies);
+            $stylesLevel6 = love_normalizeStyles6($styles);
+            $tendenciesLevel6 = love_normalizeTendencies6($tendencies);
 
             $bundle = love_selectBundle($primitives);
             $bundleTextId = love_resolveBundleTextId($bundle['id']);
@@ -111,16 +118,18 @@ foreach ($mbtiTypes as $mbtiType) {
             // メモリ枯渇するため（実測）。IDと分類だけを固定し、文言そのものの正しさは
             // 別途 tests/cases/love-composer-snapshot.php（IDベース）と
             // inc/love-*-texts.php（単一の情報源）が担保する。
+            // 文言バンクは6段階（L1〜L6）のキーを持つため、本番（inc/love-orchestrator.php）と
+            // 同じく6段階の区分を渡す。
             $document = love_composeResult(
                 $bundleText,
-                $stylesNormalized,
-                $tendenciesNormalized,
+                $stylesLevel6,
+                $tendenciesLevel6,
                 LOVE_STYLE_TEXTS,
                 LOVE_TENDENCY_TEXTS,
                 $influence,
                 $articleLinkCandidates
             );
-            if (count($document['styleTexts']) !== count($stylesNormalized)) {
+            if (count($document['styleTexts']) !== count($stylesLevel6)) {
                 throw new Exception("styleTexts件数不一致: {$mbtiType}/{$bloodType}/{$sign}/{$inner}");
             }
             if ($document['bundleText'] === '') {
@@ -139,6 +148,8 @@ foreach ($mbtiTypes as $mbtiType) {
                     'primitivesNormalized' => $primitivesNormalized,
                     'stylesNormalized' => $stylesNormalized,
                     'tendenciesNormalized' => $tendenciesNormalized,
+                    'stylesLevel6' => $stylesLevel6,
+                    'tendenciesLevel6' => $tendenciesLevel6,
                     'bundleId' => $bundle['id'],
                     'bundleTextId' => $bundleTextId,
                     'influence' => $influence,
