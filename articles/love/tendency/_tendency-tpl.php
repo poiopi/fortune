@@ -174,7 +174,7 @@ ob_start();
     <ol>
       <li><a href="#overview"><?= htmlspecialchars($item['name']) ?>とは何を測る指標か</a></li>
       <li><a href="#formula">Love Engineでの計算方法</a></li>
-      <li><a href="#levels">High・Mid・Lowの違い</a></li>
+      <li><a href="#levels">段階ごとの文章の例</a></li>
       <li><a href="#data">9216件の実測分析</a></li>
       <li><a href="#mbti">関連するMBTIタイプ</a></li>
       <li><a href="#faq">よくある質問</a></li>
@@ -206,7 +206,7 @@ ob_start();
   </section>
 
   <section class="art-section" id="levels">
-    <h2>High・Mid・Lowの違い</h2>
+    <h2>段階ごとの文章の例</h2>
     <p><?= htmlspecialchars($item['levels_intro']) ?></p>
     <div class="level-list">
       <?php foreach (['High','Mid','Low'] as $lv): ?>

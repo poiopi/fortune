@@ -28,6 +28,7 @@ require_once __DIR__ . '/love-bundle-texts.php';
 require_once __DIR__ . '/love-style-texts.php';
 require_once __DIR__ . '/love-tendency-texts.php';
 require_once __DIR__ . '/love-composer.php';
+require_once __DIR__ . '/love-display-labels.php';
 require_once __DIR__ . '/love-article-links.php';
 
 /**
@@ -38,7 +39,7 @@ require_once __DIR__ . '/love-article-links.php';
  * @param string $timeZoneCode SEIZA_TIME_ZONESのコード（traitsには寄与しない）
  * @return array{
  *   badge: array{mbti: string, blood: string, seiza: string},
- *   document: array{bundleText: string, styleTexts: string[], tendencyTexts: string[], articleLinks: array<int, array{source: string, url: string, label: string}>}
+ *   document: array{bundleText: string, styleTexts: string[], tendencyTexts: string[], articleLinks: array<int, array{source: string, url: string, label: string}>, styleItems: array<int, array{name: string, label: string, description: string, text: string}>, tendencyItems: array<int, array{name: string, label: string, description: string, text: string}>}
  * }
  */
 function love_diagnose(string $mbtiType, string $bloodType, int $month, int $day, string $timeZoneCode): array {
@@ -52,8 +53,10 @@ function love_diagnose(string $mbtiType, string $bloodType, int $month, int $day
     $axisValues = axis_computeAxes($aggregated);
     $primitives = love_computePrimitives($axisValues);
 
-    $normalizedStyles = love_normalizeStyles(love_computeStyles($primitives));
-    $normalizedTendencies = love_normalizeTendencies(love_computeTendencies($primitives));
+    // 画面の文章と並び順には6段階（L1〜L6）を使う（docs/love/08-normalizer.md「6段階」）。
+    // 3段階（love_normalizeStyles等）は記事・事実照合の基準として別に残している。
+    $normalizedStyles = love_normalizeStyles6(love_computeStyles($primitives));
+    $normalizedTendencies = love_normalizeTendencies6(love_computeTendencies($primitives));
 
     $bundle = love_selectBundle($primitives);
     $bundleText = LOVE_BUNDLE_TEXTS[love_resolveBundleTextId($bundle['id'])];
@@ -68,7 +71,9 @@ function love_diagnose(string $mbtiType, string $bloodType, int $month, int $day
         LOVE_STYLE_TEXTS,
         LOVE_TENDENCY_TEXTS,
         $influence,
-        $articleLinkCandidates
+        $articleLinkCandidates,
+        LOVE_ITEM_LABELS,
+        LOVE_LEVELS6
     );
 
     return [
