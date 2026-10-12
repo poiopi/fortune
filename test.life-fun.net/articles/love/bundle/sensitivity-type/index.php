@@ -89,7 +89,7 @@ $item = [
     ['name'=>'独占欲', 'desc'=>'情動性×0.7－自立性×0.3。情動性型ではHigh率74.5%と高い傾向。', 'url'=>'/articles/love/style/dokusenyoku-love/'],
     ['name'=>'惚れやすさ', 'desc'=>'情動性×0.6＋変化志向×0.4。情動性型ではHigh率86.6%と非常に高い傾向。', 'url'=>'/articles/love/style/horeyasusa-love/'],
     ['name'=>'嫉妬深さ', 'desc'=>'情動性×0.6－誠実性×0.4。情動性型ではHigh率85.7%と非常に高い傾向。', 'url'=>'/articles/love/style/shittobukasa-love/'],
-    ['name'=>'積極性', 'desc'=>'行動主導性×0.6＋情動性×0.4。情動性型ではHigh率55.8%とやや高い傾向。', 'url'=>'/articles/love/style/sekkyokusei-love/'],
+    ['name'=>'積極性', 'desc'=>'行動主導性×0.6＋情動性×0.4。情動性型ではHigh率55.8%と、全体平均（28.9%）を大きく上回る傾向。', 'url'=>'/articles/love/style/sekkyokusei-love/'],
   ],
 
   'faq' => [
