@@ -1,5 +1,9 @@
 <?php
 declare(strict_types=1);
+// final スナップショット（tests/cases/love-final-snapshot.php、約20MB。2026-10-06に
+// 6段階の欄 stylesLevel6・tendenciesLevel6 を追加した後）の読み込みに、
+// PHP 既定の memory_limit（128MB）では足りないため（2026-10-06）。
+ini_set('memory_limit', '1G');
 
 /**
  * tools/build-combo-data.php

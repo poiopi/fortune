@@ -159,4 +159,4 @@ P33・P67は3段階の定数（`NORMALIZE_STYLE_THRESHOLDS`・`NORMALIZE_TENDENC
 
 Trait Mapping・Axis重み・Primitive係数・Style/Tendency係数のいずれかが変わった場合、該当するスナップショットを再生成し、閾値表を見直す必要があるかを確認する。
 
-**メモリの注意（2026-10-06）**：`tests/cases/love-final-snapshot.php`は、6段階の欄（`stylesLevel6`・`tendenciesLevel6`）を追加したため約20MBになり、PHPの既定のメモリ上限（128MB）では読み込めない。このスナップショットを読む`tools/build-combo-data.php`（`docs/love/combo-data-64.json`の再生成。[12-combo-classification.md](12-combo-classification.md)8-1節）は、`php -d memory_limit=1G tools/build-combo-data.php`で実行すること。既定のままではFatal（メモリ不足）になる。
+**メモリの注意（2026-10-06）**：`tests/cases/love-final-snapshot.php`は、6段階の欄（`stylesLevel6`・`tendenciesLevel6`）を追加したため約20MBになり、PHPの既定のメモリ上限（128MB）では読み込めない。このスナップショットを読む`tools/build-combo-data.php`（`docs/love/combo-data-64.json`の再生成。[12-combo-classification.md](12-combo-classification.md)8-1節）は、スクリプト内で`memory_limit`を1Gに設定済み（2026-10-06）のため、`php tools/build-combo-data.php`のままで実行できる（`-d`の指定は不要）。スナップショットがさらに大きくなった場合は、この設定値を見直すこと。

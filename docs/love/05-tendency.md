@@ -17,7 +17,7 @@ Style同様、[04-style.mdの受け入れ基準5点](04-style.md)を満たすこ
 
 ## 表示文（2026-10-06）
 
-結果画面に出す各Tendencyの文は、Normalizerの6段階（L1〜L6。[08-normalizer.md](08-normalizer.md)「6段階」）ごとに1本ずつ持つ（2項目×6段階）。置き場所は`inc/love-tendency-texts.php`（`LOVE_TENDENCY_TEXTS`）。文の書き方は[09-writing-rules.md](09-writing-rules.md)。規約7のうち、第1文「〜傾向があります」は6段階すべてが従い、第2文「〜ようです／〜そうです」はL2〜L5が従う。結婚志向L1（「…自由な間柄だからこそ深まる愛情もあります。」）と浮気耐性L6（「…揺るがない信頼につながります。」）の第2文は例外で、3段階のときに承認された文をそのまま使っているため（[09-writing-rules.md](09-writing-rules.md)「6段階の文言への適用」）。記事・事実照合の数値は従来どおり3段階（High/Mid/Low）で扱う。
+結果画面に出す各Tendencyの文は、Normalizerの6段階（L1〜L6。[08-normalizer.md](08-normalizer.md)「6段階」）ごとに1本ずつ持つ（2項目×6段階）。置き場所は`inc/love-tendency-texts.php`（`LOVE_TENDENCY_TEXTS`）。文の書き方は[09-writing-rules.md](09-writing-rules.md)。規約7のうち、第1文「〜傾向があります」は6段階すべてが従い、第2文「〜ようです／〜そうです」は12本中10本が従う。例外は結婚志向L1（「…自由な間柄だからこそ深まる愛情もあります。」）と浮気耐性L6（「…揺るがない信頼につながります。」）の第2文の2本だけで、3段階のときに承認された文をそのまま使っているため（[09-writing-rules.md](09-writing-rules.md)「6段階の文言への適用」）。記事・事実照合の数値は従来どおり3段階（High/Mid/Low）で扱う。
 
 ## 保留項目の最終判定
 

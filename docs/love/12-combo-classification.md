@@ -312,7 +312,7 @@ tools/qa-combo-articles.sh
            ⑤ハブ$_PUBLISHED 64件掲載確認
 ```
 
-**メモリの注意（2026-10-06）**：`tools/build-combo-data.php`は`php -d memory_limit=1G tools/build-combo-data.php`で実行すること。`tests/cases/love-final-snapshot.php`に6段階の欄（`stylesLevel6`・`tendenciesLevel6`。[08-normalizer.md](08-normalizer.md)「6段階」）を追加して約20MBになったため、PHPの既定のメモリ上限（128MB）のままではFatal（メモリ不足）になる。
+**メモリの注意（2026-10-06）**：`tests/cases/love-final-snapshot.php`に6段階の欄（`stylesLevel6`・`tendenciesLevel6`。[08-normalizer.md](08-normalizer.md)「6段階」）を追加して約20MBになり、PHPの既定のメモリ上限（128MB）では読み込めない。このため`tools/build-combo-data.php`はスクリプト内で`memory_limit`を1Gに設定済み（2026-10-06）であり、`php tools/build-combo-data.php`のままで実行できる（`-d`の指定は不要）。スナップショットがさらに大きくなった場合は、この設定値を見直すこと。
 
 生成器はJSONにHTMLを持たせず、レイアウト（causalRowsの行数等）は生成器側のロジックとして保持する。テンプレート（`_combo-tpl.php`）は配列を描画するだけで分岐を持たない。
 

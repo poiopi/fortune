@@ -5,9 +5,9 @@ declare(strict_types=1);
  * inc/love-tendency-texts.php
  *
  * Tendencyの6段階（L1〜L6）文言バンク（Text Bank）。すべての文言は
- * docs/love/09-writing-rules.mdの表示規約1〜7に適合する（規約7の例外は下記）（L1・L3・L6はManagerが
- * 執筆・セルフレビューした3段階時代の文言をそのまま使用（2026-07-10）、L2・L4・L5は
- * 2026-10-06にユーザー承認済みの追加文言）。
+ * docs/love/09-writing-rules.mdの表示規約1〜7に適合する。ただし規約7には例外が2本ある
+ * （下記）。L1・L3・L6は、Managerが執筆・セルフレビューした3段階時代の文言を
+ * そのまま使用している（2026-07-10）。L2・L4・L5は、2026-10-06にユーザー承認済みの追加文言。
  *
  * キーはinc/love-tendency.phpのLOVE_TENDENCY_MAPPINGと同一のTendency名。
  * 段階のキーはNormalizerの6段階（love_normalizeTendencies6()の出力 'L1'〜'L6'。
@@ -15,8 +15,8 @@ declare(strict_types=1);
  *
  * Tendencyは性格だけでは決定できない概念のため、Styleより一段強く断定を避ける
  * （Writing Rules第7条）。第1文「〜傾向があります」は6段階すべてが従う。
- * 第2文「〜ようです／〜そうです」はL2〜L5が従う。例外は結婚志向L1と浮気耐性L6の
- * 第2文で、3段階のときに承認された文（結婚志向Low・浮気耐性High）をそのまま使っている
+ * 第2文「〜ようです／〜そうです」は12本中10本が従う。例外は結婚志向L1と浮気耐性L6の
+ * 2本だけで、3段階のときに承認された文（結婚志向Low・浮気耐性High）をそのまま使っている
  * ため（docs/love/09-writing-rules.md「6段階の文言への適用」）。
  */
 

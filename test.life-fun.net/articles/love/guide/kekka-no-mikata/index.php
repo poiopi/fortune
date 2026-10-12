@@ -87,7 +87,7 @@ $item = [
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">Primitiveは診断結果に表示されますか？</div>
-        <div class="faq-a">表示されません。Primitiveは、MBTI・血液型・星座の情報をStyle・Tendency・Bundleへ変換するための内部的な計算軸です。各記事の「なぜこの傾向になるのか」という解説の中で登場しますが、診断結果の画面に表示されるのは、入力した組み合わせ（MBTI・血液型・星座）、恋愛タイプ（Bundle）にもとづく解説文、「恋愛スタイル」「推定される傾向」の各項目（表示名・一行の説明・解説文）、関連記事へのリンクです。</div>
+        <div class="faq-a">表示されません。Primitiveは、MBTI・血液型・星座の情報をStyle・Tendency・Bundleへ変換するための内部的な計算軸です。各記事の「なぜこの傾向になるのか」という解説の中で登場しますが、診断結果の画面に表示されるのは、入力したMBTI・血液型と、生年月日から決まる星座の組み合わせ、恋愛タイプ（Bundle）にもとづく解説文、「恋愛スタイル」「推定される傾向」の各項目（表示名・一行の説明・解説文）、関連記事へのリンクです。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">なぜHigh/Mid/Lowの境界が指標によって違うのですか？</div>

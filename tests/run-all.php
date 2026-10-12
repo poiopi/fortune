@@ -53,6 +53,9 @@ $suites = [
     ],
     'Love Engine' => [
         'Level6 Consistency' => "{$toolsDir}/love-level6-consistency.php",
+        'Approved Texts' => "{$toolsDir}/love-approved-texts.php",
+        'Composer Snapshot' => "{$toolsDir}/compare-love-composer-snapshot.php",
+        'Final Snapshot' => "{$toolsDir}/compare-love-final-snapshot.php",
     ],
     // 正解は現行出力ではなく国立天文台／外部カレンダー（tests/README.md「Lunar/Rokuyo」参照）
     'Lunar/Rokuyo' => [
