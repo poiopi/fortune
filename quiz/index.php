@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/../inc/site.php';
 
 // Daily Quiz 一覧・アーカイブハブ
 // 本番公開対象のみ掲載する。新しいQuizを本番公開するたびに、このリストへ追加すること。
@@ -20,7 +21,7 @@ $currentSlug = 'quiz';
 $pageType    = 'quiz';
 
 $_canonical = 'https://life-fun.net/quiz/';
-$_title       = 'Daily Quiz一覧｜占いPortal';
+$_title       = 'Daily Quiz一覧｜'.SITE_NAME;
 $_description = '毎回4択で楽しむDaily Quiz一覧。気づき系のミニクイズと、雑学系のクイズを配信しています。';
 $_ogImage = 'https://life-fun.net/favicon.png';
 ?>

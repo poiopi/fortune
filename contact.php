@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/inc/site.php';
 
 $sent    = false;
 $error   = '';
@@ -42,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="canonical" href="https://life-fun.net/contact" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="占いPortalへのご意見・ご感想・お問い合わせはこちらのフォームよりご連絡ください。">
-  <title>お問い合わせ｜占いPortal</title>
+  <title>お問い合わせ｜<?= SITE_NAME ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -61,13 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   body{background:var(--void);color:var(--text);font-family:var(--ff-sans);font-weight:300;line-height:1.8;min-height:100vh}
   body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(90,50,180,.22) 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(180,50,100,.14) 0%,transparent 55%);pointer-events:none;z-index:0}
   .wrap{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:0 1.2rem}
-  header{border-bottom:1px solid var(--border);padding:0 1.2rem;position:sticky;top:0;z-index:100;background:rgba(8,6,15,.9);backdrop-filter:blur(12px)}
-  .header-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:54px}
-  .logo{font-family:var(--ff-serif);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.08em}
-  .logo em{font-style:italic;color:var(--gold)}
-  .header-nav{display:flex;gap:1.5rem}
-  .header-nav a{font-family:var(--ff-mono);font-size:.72rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;transition:color .2s}
-  .header-nav a:hover{color:var(--gold-lt)}
   .hero{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid var(--border);margin-bottom:2rem}
   .hero-eyebrow{font-family:var(--ff-mono);font-size:.68rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;display:block}
   .hero h1{font-family:var(--ff-serif);font-size:clamp(1.8rem,5vw,2.6rem);font-weight:700;line-height:1.2;letter-spacing:.06em;background:linear-gradient(135deg,var(--gold-lt) 0%,var(--violet-lt) 50%,#4ecdc4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
@@ -87,16 +81,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   .msg-success strong{font-family:var(--ff-serif);font-size:1.1rem;color:#c8e6c9;display:block;margin-bottom:.5rem}
   footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);letter-spacing:.08em;margin-top:2rem}
   footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}
-  .sp-menu-btn{display:none}.sp-dropdown{display:none}
   @media(max-width:768px){
-    .header-nav{display:none}
     .contact-box{padding:1.4rem 1.2rem}
-    .sp-menu-btn{display:flex;align-items:center;gap:.4rem;font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;color:var(--muted);background:none;border:1px solid var(--border);border-radius:6px;padding:.35rem .8rem;cursor:pointer}
-    .sp-dropdown{display:none;position:absolute;top:54px;right:1.2rem;background:rgba(8,6,15,.97);border:1px solid var(--border);border-radius:12px;overflow:hidden;z-index:200;min-width:180px;backdrop-filter:blur(16px)}
-    .sp-dropdown.open{display:block}
-    .sp-dropdown a{display:block;padding:.85rem 1.25rem;font-family:var(--ff-mono);font-size:.78rem;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border)}
-    .sp-dropdown a:last-child{border-bottom:none}
-    .sp-dropdown a:hover{color:var(--gold-lt)}
   }
   #google_translate_element{font-size:.65rem;flex-shrink:0}
   #google_translate_element .goog-te-gadget{color:transparent;white-space:nowrap}

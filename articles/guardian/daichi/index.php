@@ -22,7 +22,6 @@ ob_start();
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--ff-serif:'Shippori Mincho',serif;--ff-sans:'Zen Kaku Gothic New',sans-serif;--ff-mono:'DM Mono',monospace;--accent:#7c4dce;--accent-lt:#9b72ef;--gold:#c9a84c;--text:#1a1a2e;--muted:#6b6b8a;--border:#e5e3ee;--bg:#faf7ff;--bg2:#f8f7fc;}
   html{font-size:16px;scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
-  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}.art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}.art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}.art-logo em{font-style:italic;color:var(--gold)}.art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}.art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
   .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}.breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}.breadcrumb a{color:var(--muted);text-decoration:none}.breadcrumb a:hover{color:var(--accent)}.breadcrumb span{margin:0 .4rem}
   .art-hero{padding:2rem 0 1.5rem;border-bottom:1px solid var(--border);display:flex;gap:2rem;align-items:flex-start}.art-hero-text{flex:1}.art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}.art-hero h1{font-family:var(--ff-serif);font-size:clamp(1.4rem,4vw,2rem);font-weight:700;line-height:1.3;letter-spacing:.04em;color:var(--text);margin-bottom:.75rem}.art-lead{font-size:.93rem;color:var(--muted);line-height:1.9}
   .guardian-visual{width:120px;flex-shrink:0;background:linear-gradient(170deg,#0d1f42 0%,#050d1f 100%);border:2px solid var(--gold);border-radius:10px;padding:.8rem .6rem;text-align:center;position:relative;box-shadow:0 0 0 1px rgba(201,168,76,.15),0 8px 32px rgba(0,0,0,.5),inset 0 0 20px rgba(100,150,239,.12);display:flex;flex-direction:column;align-items:center;gap:.5rem}
@@ -37,12 +36,11 @@ ob_start();
   @media(max-width:600px){.art-hero{flex-direction:column-reverse;gap:1.5rem;align-items:center}.guardian-visual{width:130px}.trait-grid{grid-template-columns:1fr}}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"守護霊ガイド","item":"https://life-fun.net/articles/guardian/"},{"@type":"ListItem","position":4,"name":"大地の精霊","item":"https://life-fun.net/articles/guardian/daichi/"}]}</script>
 </head>
 <body>
-<header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/guardian" class="art-back">👻 守護霊を診断する →</a></div></header>
+<?php $headerTheme = 'light'; $headerAction = ['label' => '守護霊を診断する', 'url' => '/guardian']; require __DIR__.'/../../../inc/header.php'; ?>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/guardian/">守護霊ガイド</a><span>›</span>大地の精霊</nav>
+  <?php $bcPath = '/articles/guardian/daichi/'; $bcName = '大地の精霊'; require __DIR__.'/../../../inc/breadcrumb.php'; ?>
   <div class="art-hero">
     <div class="art-hero-text">
       <span class="art-label">GUARDIAN · 精霊系</span>

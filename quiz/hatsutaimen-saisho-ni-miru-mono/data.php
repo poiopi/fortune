@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/../../inc/site.php';
 
 return [
   'slug'         => 'hatsutaimen-saisho-ni-miru-mono',
@@ -36,7 +37,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '初対面で最初に気になるものは？｜Daily Quiz - 占いPortal',
+  'title'       => '初対面で最初に気になるものは？｜Daily Quiz - '.SITE_NAME,
   'description' => '初対面の場面で、最初に気になるのはどこ？4つの選択肢から選んで、今回あなたが選んだ視点を振り返るミニクイズです。',
 
   'cta_url'   => '/aisho',

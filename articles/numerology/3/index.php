@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/numerology/3/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="数秘術の運命数3（表現者）の意味を解説。創造性・コミュニケーション・楽観性・芸術をキーワードに、性格、恋愛傾向、仕事運、相性をわかりやすく紹介します。">
-  <title>運命数3（表現者）とは？性格・恋愛・仕事・相性を解説 | 占いPortal</title>
+  <title>運命数3（表現者）とは？性格・恋愛・仕事・相性を解説 | <?= SITE_NAME ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -24,9 +25,6 @@ ob_start();
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--ff-serif:'Shippori Mincho',serif;--ff-sans:'Zen Kaku Gothic New',sans-serif;--ff-mono:'DM Mono',monospace;--accent:#7c4dce;--accent-lt:#9b72ef;--gold:#c9a84c;--text:#1a1a2e;--muted:#6b6b8a;--border:#e5e3ee;--bg:#faf7ff;--bg2:#f8f7fc}
   html{font-size:16px;scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
-  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}.art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}
-  .art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}.art-logo em{font-style:italic;color:var(--gold)}
-  .art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}.art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
   .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}
   .breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}.breadcrumb a{color:var(--muted);text-decoration:none}.breadcrumb a:hover{color:var(--accent)}.breadcrumb span{margin:0 .4rem}
   .art-hero{padding:2rem 0 1.5rem;border-bottom:1px solid var(--border)}.art-label{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.2em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem;display:block}
@@ -61,14 +59,6 @@ ob_start();
   @media(max-width:600px){.art-meta{gap:6px}}
   </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-    {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-    {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-    {"@type":"ListItem","position":3,"name":"数秘術とは","item":"https://life-fun.net/articles/numerology/"},
-    {"@type":"ListItem","position":4,"name":"運命数3：表現者","item":"https://life-fun.net/articles/numerology/3/"}
-  ]}
-  </script>
-  <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"運命数3（表現者）とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"3は「創造」と「発信」を象徴します。頭の中に浮かぶアイデアを、会話、文章、音楽、絵、企画などに変換する力があります。楽しい空気をつくるのが得意で、周囲の緊張をほぐし、前向きな流れを生み出します。"}},
     {"@type":"Question","name":"運命数3の恋愛傾向は？","acceptedAnswer":{"@type":"Answer","text":"恋愛では、会話のテンポや一緒に笑える感覚を大切にします。楽しいデートや自由なやり取りの中で愛情が育ちます。感情を明るく表現できる反面、深刻な話を避けすぎないことが関係を深めるポイントです。"}},
@@ -79,17 +69,10 @@ ob_start();
 </head>
 <body>
 
-<header class="art-header">
-  <div class="art-header-inner">
-    <a href="/" class="art-logo">占い<em>Portal</em></a>
-    <a href="/articles/numerology/" class="art-back">数秘術とは へ →</a>
-  </div>
-</header>
+<?php $headerTheme = 'light'; $headerAction = ['label' => '数秘術解説へ', 'url' => '/articles/numerology/']; require __DIR__.'/../../../inc/header.php'; ?>
 
 <div class="wrap">
-  <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/numerology/">数秘術とは</a><span>›</span>運命数3：表現者
-  </nav>
+  <?php $bcPath = '/articles/numerology/3/'; $bcName = '運命数3：表現者'; require __DIR__.'/../../../inc/breadcrumb.php'; ?>
 
   <div class="art-hero">
     <span class="art-label">NUMEROLOGY · LIFE PATH NUMBER 3</span>
