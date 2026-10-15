@@ -39,12 +39,6 @@ ob_start();
   }
   html{font-size:16px;scroll-behavior:smooth}
   body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
-  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-  .art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}
-  .art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}
-  .art-logo em{font-style:italic;color:var(--gold)}
-  .art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}
-  .art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
   .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}
   .breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}
   .breadcrumb a{color:var(--muted);text-decoration:none}
@@ -101,38 +95,14 @@ ob_start();
   .matome-list li{font-size:.92rem;line-height:1.8;color:#333}
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"恋愛傾向診断（Love Engine）解説記事一覧","item":"https://life-fun.net/articles/love/"},
-      {"@type":"ListItem","position":4,"name":"星座×恋愛","item":"https://life-fun.net/articles/love/seiza/"},
-      {"@type":"ListItem","position":5,"name":"<?= htmlspecialchars($item['name'].'の恋愛傾向') ?>","item":"https://life-fun.net/articles/love/seiza/<?= $item['slug'] ?>/"}
-    ]
-  }
-  </script>
 </head>
 <body>
 
-<header class="art-header">
-  <div class="art-header-inner">
-    <a href="/" class="art-logo">占い<em>Portal</em></a>
-    <a href="/love" class="art-back">💜 恋愛傾向診断を受ける →</a>
-  </div>
-</header>
+<?php $headerTheme = 'light'; $headerAction = ['label' => '恋愛傾向診断を受ける', 'url' => '/love']; require __DIR__.'/../../../inc/header.php'; ?>
 
 <div class="wrap">
 
-  <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span>
-    <a href="/articles/">占い解説ガイド</a><span>›</span>
-    <a href="/articles/love/">恋愛傾向診断（Love Engine）解説記事一覧</a><span>›</span>
-    <a href="/articles/love/seiza/">星座×恋愛</a><span>›</span>
-    <?= htmlspecialchars($item['name']) ?>
-  </nav>
+  <?php $bcPath = '/articles/love/seiza/'.$item['slug'].'/'; $bcName = $item['name']; require __DIR__.'/../../../inc/breadcrumb.php'; ?>
 
   <div class="art-hero">
     <span class="art-label">Seiza × Love Engine</span>

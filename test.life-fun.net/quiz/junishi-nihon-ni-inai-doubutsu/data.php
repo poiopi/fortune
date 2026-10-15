@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/../../inc/site.php';
 
 return [
   'slug'         => 'junishi-nihon-ni-inai-doubutsu',
@@ -41,7 +42,7 @@ return [
   ],
   'explanation_indexable' => true,
 
-  'title'       => '十二支の中で、実際には日本にいない動物は？｜Daily Quiz - 占いPortal',
+  'title'       => '十二支の中で、実際には日本にいない動物は？｜Daily Quiz - '.SITE_NAME,
   'description' => '十二支にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/calendar',

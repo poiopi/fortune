@@ -41,26 +41,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
    詳細度が同点でソース順（inc/header.php側が後）に負けるため、header.site-headerで
    詳細度を上げて確実にこちらを優先させる） */
 header.site-header{position:sticky;top:0;z-index:200;background:rgba(6,4,16,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-.header-inner{max-width:960px;margin:0 auto;padding:0 1.4rem;display:flex;align-items:center;justify-content:space-between;height:56px;gap:1rem}
-.logo{font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.5rem;letter-spacing:.06em;white-space:nowrap}
-.logo em{font-style:italic;color:var(--gold)}
-.header-nav{display:flex;align-items:center;gap:1.6rem}
-.header-nav a{font-family:var(--ff-mono);font-size:.68rem;color:var(--muted);text-decoration:none;letter-spacing:.1em;white-space:nowrap;position:relative;padding-bottom:2px;transition:color .2s}
-.header-nav a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .2s}
-.header-nav a:hover{color:var(--gold-lt)}
-.header-nav a:hover::after{transform:scaleX(1)}
-.header-nav a.cur{color:var(--gold);pointer-events:none}
-.header-nav a.cur::after{transform:scaleX(1)}
-.header-gold-line{height:2px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.6) 30%,rgba(201,168,76,1) 50%,rgba(201,168,76,.6) 70%,transparent 100%)}
-.sp-menu-btn{display:none;background:none;border:1px solid var(--border2);border-radius:6px;color:var(--muted);font-family:var(--ff-mono);font-size:.72rem;padding:.3rem .75rem;cursor:pointer;letter-spacing:.08em}
-.sp-dropdown{display:none;position:fixed;top:58px;left:0;right:0;background:rgba(6,4,16,.97);border-bottom:1px solid var(--border2);z-index:199;backdrop-filter:blur(16px)}
-.sp-dropdown.open{display:block}
-.sp-dropdown a{display:block;padding:.85rem 1.4rem;font-family:var(--ff-mono);font-size:.78rem;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
-.sp-dropdown a:hover{color:var(--gold-lt);background:rgba(201,168,76,.05)}
-@media(max-width:768px){
-  .header-nav{display:none}
-  .sp-menu-btn{display:flex;align-items:center;gap:.35rem}
-}
 
 /* ══ HERO ══ */
 .hero{text-align:center;padding:2.5rem 1rem 2rem;border-bottom:1px solid var(--border);margin-bottom:2rem}

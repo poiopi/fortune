@@ -43,14 +43,6 @@ ob_start();
   html{font-size:16px;scroll-behavior:smooth}
   body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
 
-  /* ── HEADER ── */
-  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-  .art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}
-  .art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}
-  .art-logo em{font-style:italic;color:var(--gold)}
-  .art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}
-  .art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
-
   /* ── WRAP ── */
   .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}
 
@@ -167,33 +159,13 @@ ob_start();
     ]
   }
   </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},
-      {"@type":"ListItem","position":4,"name":"愚者（THE FOOL）","item":"https://life-fun.net/articles/tarot/fool/"}
-    ]
-  }
-  </script>
 </head>
 <body>
 
-<header class="art-header">
-  <div class="art-header-inner">
-    <a href="/" class="art-logo">占い<em>Portal</em></a>
-    <a href="/tarot" class="art-back">🔮 タロットを占う →</a>
-  </div>
-</header>
+<?php $headerTheme = 'light'; $headerAction = ['label' => 'タロットを占う', 'url' => '/tarot']; require __DIR__.'/../../../inc/header.php'; ?>
 
 <div class="wrap">
-  <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>愚者（THE FOOL）
-  </nav>
+  <?php $bcPath = '/articles/tarot/fool/'; $bcName = '愚者（THE FOOL）'; require __DIR__.'/../../../inc/breadcrumb.php'; ?>
 
   <div class="art-hero">
     <div class="art-hero-text">

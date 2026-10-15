@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/../../inc/site.php';
 
 return [
   'slug'         => 'doyo-no-ushi-unagi',
@@ -41,7 +42,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '土用の丑の日、うなぎを広めたのは誰？｜Daily Quiz - 占いPortal',
+  'title'       => '土用の丑の日、うなぎを広めたのは誰？｜Daily Quiz - '.SITE_NAME,
   'description' => '土用の丑の日にうなぎを食べる習慣にまつわる4択クイズ。有名なエピソードと、その裏側を解説します。',
 
   'cta_url'   => '/calendar',

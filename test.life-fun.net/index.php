@@ -147,83 +147,6 @@ body {
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
 /* ══════════════════════════════════
-   HEADER
-══════════════════════════════════ */
-.site-header {
-  position: sticky; top: 0; z-index: 200;
-  background: rgba(6,4,16,.94);
-  backdrop-filter: blur(14px);
-}
-.header-inner {
-  max-width: 960px; margin: 0 auto;
-  padding: 0 1.4rem;
-  display: flex; align-items: center; justify-content: space-between;
-  height: 56px; gap: 1rem;
-}
-.logo {
-  font-family: var(--ff-serif);
-  font-size: 1.05rem; font-weight: 700;
-  color: var(--text); text-decoration: none;
-  display: flex; align-items: center; gap: .5rem;
-  letter-spacing: .06em; white-space: nowrap;
-}
-.logo em { font-style: italic; color: var(--gold); }
-.header-nav {
-  display: flex; align-items: center; gap: 1.6rem;
-}
-.header-nav a {
-  font-family: var(--ff-mono);
-  font-size: .68rem; color: var(--muted);
-  text-decoration: none; letter-spacing: .1em;
-  white-space: nowrap;
-  position: relative; padding-bottom: 2px;
-  transition: color .2s;
-}
-.header-nav a::after {
-  content: '';
-  position: absolute; bottom: 0; left: 0; right: 0;
-  height: 1px; background: var(--gold);
-  transform: scaleX(0); transition: transform .2s;
-}
-.header-nav a:hover { color: var(--gold-lt); }
-.header-nav a:hover::after, .header-nav a.cur::after { transform: scaleX(1); }
-.header-nav a.cur { color: var(--gold); pointer-events: none; }
-.sp-menu-btn {
-  display: none;
-  background: none; border: 1px solid var(--border2);
-  border-radius: 6px; color: var(--muted);
-  font-family: var(--ff-mono); font-size: .72rem;
-  padding: .3rem .75rem; cursor: pointer;
-}
-.header-gold-line {
-  height: 2px;
-  background: linear-gradient(90deg,
-    transparent 0%, rgba(201,168,76,.6) 30%,
-    rgba(201,168,76,1) 50%, rgba(201,168,76,.6) 70%,
-    transparent 100%);
-}
-.sp-dropdown {
-  display: none; position: fixed; top: 58px; left: 0; right: 0;
-  background: rgba(6,4,16,.97);
-  border-bottom: 1px solid var(--border2);
-  z-index: 199; backdrop-filter: blur(16px);
-}
-.sp-dropdown.open { display: block; }
-.sp-dropdown a {
-  display: block; padding: .85rem 1.4rem;
-  font-family: var(--ff-mono); font-size: .78rem;
-  color: var(--muted); text-decoration: none;
-  border-bottom: 1px solid var(--border);
-  transition: color .2s, background .2s;
-}
-.sp-dropdown a:hover { color: var(--gold-lt); background: rgba(201,168,76,.05); }
-
-@media (max-width: 768px) {
-  .header-nav { display: none; }
-  .sp-menu-btn { display: flex; align-items: center; gap: .35rem; }
-}
-
-/* ══════════════════════════════════
    HERO
 ══════════════════════════════════ */
 .hero {
@@ -635,41 +558,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 </head>
 <body>
 
-<!-- ══ HEADER ══ -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="logo">占い<em>Portal</em></a>
-    <nav class="header-nav">
-      <a href="/" class="cur">✦ TOP</a>
-      <a href="/tarot">タロット</a>
-      <a href="/shichu">四柱推命</a>
-      <a href="/kyusei">九星気学</a>
-      <a href="/articles/">解説ガイド</a>
-    </nav>
-    <div id="google_translate_element"></div>
-    <button class="sp-menu-btn" onclick="toggleMenu()">☰ メニュー</button>
-  </div>
-  <div class="header-gold-line"></div>
-</header>
-
-<div class="sp-dropdown" id="spMenu">
-  <a href="/">✦ トップ</a>
-  <a href="/sansei">✨ 三星統合鑑定</a>
-  <a href="/tarot">🃏 タロット占い</a>
-  <a href="/shichu">🔯 四柱推命</a>
-  <a href="/sanmei">☯ 算命学</a>
-  <a href="/seiza">⭐ 西洋占星術</a>
-  <a href="/mbti">🧠 MBTI×星座</a>
-  <a href="/numerology">🔢 数秘術</a>
-  <a href="/kyusei">⭐ 九星気学</a>
-  <a href="/rpg">⚔️ RPG風占い</a>
-  <a href="/aisho">💑 相性診断</a>
-  <a href="/zense">🌀 前世診断</a>
-  <a href="/guardian">👻 守護霊診断</a>
-  <a href="/seimei">✍️ 姓名判断</a>
-  <a href="/geimei">🎭 芸名診断</a>
-  <a href="/articles/">📖 解説ガイド</a>
-</div>
+<?php $currentPage = 'top'; require __DIR__.'/inc/header.php'; ?>
 
 <!-- ══ HERO ══ -->
 <section class="hero">
@@ -1081,15 +970,6 @@ if (fcCategories.length && fcTabs.length) {
   }, { threshold: 0, rootMargin: '-40% 0px -55% 0px' });
   fcCategories.forEach(el => fcSpy.observe(el));
 }
-
-/* ══ スマホメニュー ══ */
-window.toggleMenu = function(){
-  document.getElementById('spMenu').classList.toggle('open');
-};
-document.addEventListener('click', e => {
-  if(!e.target.closest('.sp-menu-btn') && !e.target.closest('.sp-dropdown'))
-    document.getElementById('spMenu').classList.remove('open');
-});
 </script>
 </body>
 </html>

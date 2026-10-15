@@ -43,12 +43,6 @@ ob_start();
   }
   html{font-size:16px;scroll-behavior:smooth}
   body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
-  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-  .art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}
-  .art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}
-  .art-logo em{font-style:italic;color:var(--gold)}
-  .art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}
-  .art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
   .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}
   .breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}
   .breadcrumb a{color:var(--muted);text-decoration:none}
@@ -103,35 +97,13 @@ ob_start();
     ]
   }
   </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-      {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-      {"@type":"ListItem","position":3,"name":"開運カレンダーとは","item":"https://life-fun.net/articles/calendar/"},
-      {"@type":"ListItem","position":4,"name":"誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/"},
-      {"@type":"ListItem","position":5,"name":"1月の誕生花とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/"},
-      {"@type":"ListItem","position":6,"name":"1月20日の誕生花（スイートピー）とは","item":"https://life-fun.net/articles/calendar/birthflower/jan/0120/"}
-    ]
-  }
-  </script>
 </head>
 <body>
 
-<header class="art-header">
-  <div class="art-header-inner">
-    <a href="/" class="art-logo">占い<em>Portal</em></a>
-    <a href="/calendar" class="art-back">📅 開運カレンダーを見る →</a>
-  </div>
-</header>
+<?php $headerTheme = 'light'; $headerAction = ['label' => '開運カレンダーを見る', 'url' => '/calendar']; require __DIR__.'/../../../../../inc/header.php'; ?>
 
 <div class="wrap">
-  <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/calendar/">開運カレンダーとは</a><span>›</span><a href="/articles/calendar/birthflower/">誕生花とは</a><span>›</span><a href="/articles/calendar/birthflower/jan/">1月の誕生花とは</a><span>›</span>1月20日の誕生花（スイートピー）とは
-  </nav>
+  <?php $bcPath = '/articles/calendar/birthflower/jan/0120/'; $bcName = '1月20日の誕生花（スイートピー）とは'; require __DIR__.'/../../../../../inc/breadcrumb.php'; ?>
 
   <div class="art-hero">
     <span class="art-label">JANUARY 20 · 誕生花</span>

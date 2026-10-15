@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/../../inc/site.php';
 
 return [
   'slug'         => 'omikuji-junban',
@@ -41,7 +42,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => 'おみくじの順番、全国共通だと思ってた？｜Daily Quiz - 占いPortal',
+  'title'       => 'おみくじの順番、全国共通だと思ってた？｜Daily Quiz - '.SITE_NAME,
   'description' => 'おみくじの吉凶の順番にまつわる4択クイズ。正解と、意外と知られていない背景を解説します。',
 
   'cta_url'   => '/calendar',

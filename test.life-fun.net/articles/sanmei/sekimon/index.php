@@ -30,12 +30,6 @@ ob_start();
   :root{--ff-serif:'Shippori Mincho',serif;--ff-sans:'Zen Kaku Gothic New',sans-serif;--ff-mono:'DM Mono',monospace;--accent:#7c4dce;--accent-lt:#9b72ef;--gold:#c9a84c;--text:#1a1a2e;--muted:#6b6b8a;--border:#e5e3ee;--bg:#faf7ff;--bg2:#f8f7fc}
   html{font-size:16px;scroll-behavior:smooth}
   body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
-  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-  .art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}
-  .art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}
-  .art-logo em{font-style:italic;color:var(--gold)}
-  .art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}
-  .art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
   .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}
   .breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}
   .breadcrumb a{color:var(--muted);text-decoration:none}
@@ -79,26 +73,11 @@ ob_start();
     {"@type":"Question","name":"石門星の相性は？","acceptedAnswer":{"@type":"Answer","text":"石門星とは同じ調和を重んじる性質で自然とうまくいきます。玉堂星とは知識と人脈の補完関係が築けます。貫索星とは個人主義vs集団主義の違いがあるため、互いの価値観を理解する努力が必要です。"}}
   ]}
   </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-    {"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},
-    {"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},
-    {"@type":"ListItem","position":3,"name":"算命学とは","item":"https://life-fun.net/articles/sanmei/"},
-    {"@type":"ListItem","position":4,"name":"石門星","item":"https://life-fun.net/articles/sanmei/sekimon/"}
-  ]}
-  </script>
 </head>
 <body>
-<header class="art-header">
-  <div class="art-header-inner">
-    <a href="/" class="art-logo">占い<em>Portal</em></a>
-    <a href="/sanmei" class="art-back">☯️ 算命学で鑑定する →</a>
-  </div>
-</header>
+<?php $headerTheme = 'light'; $headerAction = ['label' => '算命学で鑑定する', 'url' => '/sanmei']; require __DIR__.'/../../../inc/header.php'; ?>
 <div class="wrap">
-  <nav class="breadcrumb">
-    <a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/sanmei/">算命学とは</a><span>›</span>石門星
-  </nav>
+  <?php $bcPath = '/articles/sanmei/sekimon/'; $bcName = '石門星'; require __DIR__.'/../../../inc/breadcrumb.php'; ?>
   <div class="art-hero">
     <span class="art-label">SANMEI-GAKU · 十大主星</span>
     <h1>石門星（せきもんせい）とは？<br>算命学が示す性格・恋愛・適職・相性を解説</h1>

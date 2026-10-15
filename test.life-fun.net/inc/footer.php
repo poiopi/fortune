@@ -2,6 +2,7 @@
 $_slug = $currentSlug ?? ($currentPage ?? '');
 $_type = $pageType ?? 'tool';
 require_once __DIR__.'/nav-cards.php';
+require_once __DIR__.'/site.php';
 $_p = $_slug; // 後方互換（fmenuの current 判定用）
 
 function render_footer(array $opts = []): void {
@@ -41,7 +42,7 @@ function render_footer(array $opts = []): void {
   echo '<li><a href="/contact">お問い合わせ</a></li>';
   echo '</ul></div>';
   echo '</div>';
-  echo '<p class="sf-copy">&copy; '.date('Y').' 占いPortal</p>';
+  echo '<p class="sf-copy">&copy; '.date('Y').' '.SITE_NAME.'</p>';
   echo '</footer>';
 }
 ?>

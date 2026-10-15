@@ -24,9 +24,6 @@ ob_start();
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--ff-serif:'Shippori Mincho',serif;--ff-sans:'Zen Kaku Gothic New',sans-serif;--ff-mono:'DM Mono',monospace;--accent:#7c4dce;--accent-lt:#9b72ef;--gold:#c9a84c;--text:#1a1a2e;--muted:#6b6b8a;--border:#e5e3ee;--bg:#faf7ff;--bg2:#f8f7fc;}
   html{font-size:16px;scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weight:400;line-height:1.85}
-  .art-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}.art-header-inner{max-width:780px;margin:0 auto;padding:0 1.2rem;display:flex;align-items:center;justify-content:space-between;height:52px}
-  .art-logo{font-family:var(--ff-serif);font-size:1rem;font-weight:700;color:var(--text);text-decoration:none}.art-logo em{font-style:italic;color:var(--gold)}
-  .art-back{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:.25rem .75rem;border-radius:20px;transition:border-color .2s,color .2s}.art-back:hover{border-color:var(--accent-lt);color:var(--accent)}
   .wrap{max-width:780px;margin:0 auto;padding:0 1.2rem}
   .breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}.breadcrumb a{color:var(--muted);text-decoration:none}.breadcrumb a:hover{color:var(--accent)}.breadcrumb span{margin:0 .4rem}
   .art-hero{padding:2rem 0 1.5rem;border-bottom:1px solid var(--border);display:flex;gap:2rem;align-items:flex-start}.art-hero-text{flex:1}
@@ -55,12 +52,11 @@ ob_start();
   .al-link{color:var(--accent);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;transition:color .2s}.al-link:hover{color:var(--accent-lt)}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"女教皇は恋愛でどういう意味？","acceptedAnswer":{"@type":"Answer","text":"感情より直感を信じるよう促しています。言葉ではなく空気を読み、相手の本音を感じ取ることが大切な時期です。"}},{"@type":"Question","name":"女教皇の逆位置は何を意味する？","acceptedAnswer":{"@type":"Answer","text":"直感を無視している、または秘密を抱えているサインです。知っていることを隠すことで生じる歪みへの警告でもあります。"}},{"@type":"Question","name":"女教皇と魔術師の違いは？","acceptedAnswer":{"@type":"Answer","text":"魔術師は「行動」、女教皇は「待機と観察」。方向性が真逆のカードです。魔術師が動くなら、女教皇は待つ。"}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"占いPortal","item":"https://life-fun.net/"},{"@type":"ListItem","position":2,"name":"占い解説ガイド","item":"https://life-fun.net/articles/"},{"@type":"ListItem","position":3,"name":"タロット解説","item":"https://life-fun.net/articles/tarot/"},{"@type":"ListItem","position":4,"name":"女教皇（THE HIGH PRIESTESS）","item":"https://life-fun.net/articles/tarot/high-priestess/"}]}</script>
 </head>
 <body>
-<header class="art-header"><div class="art-header-inner"><a href="/" class="art-logo">占い<em>Portal</em></a><a href="/tarot" class="art-back">🔮 タロットを占う →</a></div></header>
+<?php $headerTheme = 'light'; $headerAction = ['label' => 'タロットを占う', 'url' => '/tarot']; require __DIR__.'/../../../inc/header.php'; ?>
 <div class="wrap">
-  <nav class="breadcrumb"><a href="/">占いPortal</a><span>›</span><a href="/articles/">占い解説ガイド</a><span>›</span><a href="/articles/tarot/">タロット解説</a><span>›</span>女教皇（THE HIGH PRIESTESS）</nav>
+  <?php $bcPath = '/articles/tarot/high-priestess/'; $bcName = '女教皇（THE HIGH PRIESTESS）'; require __DIR__.'/../../../inc/breadcrumb.php'; ?>
   <div class="art-hero">
     <div class="art-hero-text">
       <span class="art-label">TAROT · 大アルカナ II</span>

@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/../../inc/site.php';
 
 return [
   'slug'         => 'erabu-toki-saisho-ni-kininaru',
@@ -36,7 +37,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '何かを選ぶとき、最初に気になるのは？｜Daily Quiz - 占いPortal',
+  'title'       => '何かを選ぶとき、最初に気になるのは？｜Daily Quiz - '.SITE_NAME,
   'description' => '値段？見た目？口コミ？使いやすさ？何かを選ぶときに最初に気になるものから、今回のあなたの視点を振り返るミニクイズです。',
 
   'cta_url'   => '/numerology',
