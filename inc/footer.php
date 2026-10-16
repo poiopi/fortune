@@ -42,6 +42,7 @@ function render_footer(array $opts = []): void {
   echo '<li><a href="/contact">お問い合わせ</a></li>';
   echo '</ul></div>';
   echo '</div>';
+  echo '<p class="sf-en"><a href="/en/omikuji/">おみくじガイド（英語版）</a></p>';
   echo '<p class="sf-copy">&copy; '.date('Y').' '.SITE_NAME.'</p>';
   echo '</footer>';
 }
@@ -70,6 +71,9 @@ function render_footer(array $opts = []): void {
 .site-footer ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
 .site-footer ul a{font-size:.8rem;color:#8a7db5;text-decoration:none;transition:color .2s}
 .site-footer ul a:hover{color:#c4a8f5}
+.sf-en{text-align:center;font-size:.78rem;margin:0 0 .6rem}
+.sf-en a{color:#8a7db5;text-decoration:none;transition:color .2s}
+.sf-en a:hover{color:#c4a8f5}
 .sf-copy{font-family:'DM Mono',monospace;font-size:.68rem;color:rgba(138,125,181,.45);text-align:center;letter-spacing:.1em}
 @media(max-width:600px){
   .site-footer-inner{grid-template-columns:1fr;gap:1.5rem}

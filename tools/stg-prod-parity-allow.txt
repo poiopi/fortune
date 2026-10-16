@@ -16,11 +16,7 @@ _admin-lib/*	管理画面	管理画面（ADMIN_IMPL_PLAN.md）
 _admin-data/*	管理画面	管理画面のデータ
 admin/*	管理画面	管理画面
 api/client-error.php	管理画面	管理画面「エラー監視」の受け口
-inc/footer.php	管理画面	管理画面「エラー監視」へ送る lfReport の script だけ違ってよい。加えて保留中（2026-10-17〜、英語区画）：sf-en のリンク1行と .sf-en の CSS 3行も、英語区画を本番反映するまでは違ってよい。本番反映したら後半の2つの選択肢を消す	(?:<script>\s*// JSエラーを管理画面「エラー監視」へ送る.*?</script>\s*|[ ]*echo '<p class="sf-en">[^\n]*\n|\.sf-en[^\n]*\n)
-]*
-|\.sf-en[^
-]*
-)
+inc/footer.php	管理画面	管理画面「エラー監視」へ送る lfReport の script だけ違ってよい	<script>\s*// JSエラーを管理画面「エラー監視」へ送る.*?</script>\s*
 
 _template_article.php	STG専用	記事を作るときのコピー元（公開ページではない）
 
@@ -33,8 +29,6 @@ quiz/yotei-no-nai-kyuujitsu/*	保留中	同上
 quiz/_quiz-kaisetsu-b.php	保留中	同上（B系統の解説テンプレート。未リリースのクイズだけが使う）
 quiz/_design-mockup/*	保留中	同上（デザイン見本）
 inc/quiz-ad-slot.php	保留中	同上（クイズの広告枠）
-sitemap.xml	保留中	未リリースのクイズ6URL＋英語区画6URLだけ違ってよい（2026-10-16〜、英語区画は本番反映したら en/ の部分を消す）	\s*<url><loc>https://life-fun\.net/(quiz/(yotei-no-nai-kyuujitsu|erabu-toki-saisho-ni-kininaru|junishi-nihon-ni-inai-doubutsu|doyo-no-ushi-unagi|omikuji-junban)/|en/)[^\n]*</url>
+sitemap.xml	保留中	未リリースのクイズ6URLだけ違ってよい	\s*<url><loc>https://life-fun\.net/(quiz/(yotei-no-nai-kyuujitsu|erabu-toki-saisho-ni-kininaru|junishi-nihon-ni-inai-doubutsu|doyo-no-ushi-unagi|omikuji-junban)/)[^\n]*</url>
 inc/dayinfo/flower-descriptions-data.php	保留中	2026-07-31〜 誕生花ページ改修（量産中断中）のデータ。改修を再開・リリースしたら行を消す
 inc/dayinfo/flower-material-data.php	保留中	同上
-en/*	保留中	2026-10-16〜 英語区画 Omikuji & Shrine Guide（STG実装、本番未反映）。本番反映したら消す
-img/en/*	保留中	同上（英語区画の挿絵・OGP画像。ユーザーが配置）。本番反映したら消す
