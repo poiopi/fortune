@@ -164,8 +164,8 @@ require EN_INC . '/head.php';
   <div class="sec-head">
     <div class="num">06 — Local rules</div>
     <div>
-      <h2>Rules at a specific temple</h2>
-      <p>An example from an official English page. Many other places post similar rules.</p>
+      <h2>Rules at specific temples</h2>
+      <p>Examples from official English pages. Many other temples post similar rules.</p>
     </div>
   </div>
   <div class="rules">
@@ -178,6 +178,14 @@ require EN_INC . '/head.php';
         <li>Lower your voice in the temple grounds.</li>
       </ul>
       <p class="small"><a href="https://www.kiyomizudera.or.jp/en/faq/" target="_blank" data-official="kiyomizu-dera">Kiyomizu-dera's FAQ</a></p>
+    </div>
+    <div class="rule">
+      <h3>Todai-ji <span class="where">Temple · Nara</span></h3>
+      <ul>
+        <li>Smoking and drone photography are prohibited in the temple grounds.</li>
+        <li>Photography is prohibited inside all halls except the Great Buddha Hall.</li>
+      </ul>
+      <p class="small"><a href="https://www.todaiji.or.jp/en/tourist-information/" target="_blank" data-official="todai-ji">Todai-ji's visitor notices</a></p>
     </div>
   </div>
   <p class="small">For shrine rules, including Fushimi Inari Taisha's, see <a href="/en/shrine-etiquette/#local-rules">shrine etiquette</a>.</p>

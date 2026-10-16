@@ -109,8 +109,8 @@ require EN_INC . '/head.php';
   <div class="sec-head">
     <div class="num">02 — Local rules</div>
     <div>
-      <h2>Rules at specific shrines and temples</h2>
-      <p>Many places post their own rules, and those take priority over general advice. A few examples from their official English pages:</p>
+      <h2>Rules at specific shrines</h2>
+      <p>Many shrines post their own rules, and those take priority over general advice. A few examples from their official English pages:</p>
     </div>
   </div>
   <div class="rules">
@@ -128,14 +128,6 @@ require EN_INC . '/head.php';
       <p class="small">Visitors who do not stop when asked may be asked to leave. <a href="https://inari.jp/en/request/" target="_blank" data-official="fushimi-inari">Read the full list</a></p>
     </div>
     <div class="rule">
-      <h3>Todai-ji <span class="where">Temple · Nara</span></h3>
-      <ul>
-        <li>Smoking and drone photography are prohibited in the temple grounds.</li>
-        <li>Photography is prohibited inside all halls except the Great Buddha Hall.</li>
-      </ul>
-      <p class="small"><a href="https://www.todaiji.or.jp/en/tourist-information/" target="_blank" data-official="todai-ji">Todai-ji's visitor notices</a></p>
-    </div>
-    <div class="rule">
       <h3>Meiji Jingu <span class="where">Shrine · Tokyo</span></h3>
       <ul>
         <li>No photos or videos at the main sanctuary, where people pray.</li>
@@ -145,6 +137,7 @@ require EN_INC . '/head.php';
       <p class="small"><a href="https://www.meijijingu.or.jp/en/etiquette/" target="_blank" data-official="meiji-jingu">Meiji Jingu's etiquette page</a></p>
     </div>
   </div>
+  <p class="small">For temple rules, including Todai-ji's, see <a href="/en/shrines-and-temples/#local-rules">shrines and temples</a>.</p>
 </section>
 
 <section id="official-sites">
@@ -164,7 +157,6 @@ require EN_INC . '/head.php';
     <li>Ise Jingu, "Pray" (temizu, how to pray to kami, etiquette)</li>
     <li>Meiji Jingu, "Etiquette"</li>
     <li>Fushimi Inari Taisha, "Request for All Visitors"</li>
-    <li>Todai-ji, top page and "Tourist Information"</li>
     <li>Japan National Tourism Organization (JNTO), "Shrine and Temple Traditions", <a href="https://www.japan.travel/" target="_blank">japan.travel</a></li>
     <li>Izumo Taisha, FAQ (in Japanese), <a href="https://izumooyashiro.or.jp/archives/faq/7898" target="_blank">izumooyashiro.or.jp</a></li>
     <li>Toya Manabu, "Sandō: The Worshipper's Path", <a href="https://www.nippon.com/en/views/b05203/" target="_blank">Nippon.com</a></li>
