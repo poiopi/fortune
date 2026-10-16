@@ -902,4 +902,12 @@
   <url><loc>https://life-fun.net/articles/love/tendency/kekkonshikou-love/</loc><lastmod>2026-07-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://life-fun.net/articles/love/tendency/uwakitaisei-love/</loc><lastmod>2026-07-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
+  <url>
+    <loc>https://life-fun.net/quiz/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url><loc>https://life-fun.net/quiz/hatsutaimen-saisho-ni-miru-mono/</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
 </urlset>

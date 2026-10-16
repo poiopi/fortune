@@ -93,6 +93,9 @@ footer a:hover{color:var(--gold)}
 .btn-skip{background:transparent;border:1px solid var(--border2);color:var(--muted)}
 .btn-game:hover,.btn-skip:hover{opacity:.8}
 .time-note{font-family:var(--ff-mono);font-size:.62rem;color:var(--muted);text-align:center;margin-top:.8rem}
+
+/* ── Form error box ── */
+.error-box{background:rgba(232,113,154,.1);border:1px solid rgba(232,113,154,.3);border-radius:8px;padding:.75rem 1rem;margin-bottom:1rem;font-size:.88rem;color:var(--rose)}
 #gameSection{display:none}
 .game-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.8rem 1.6rem}
 .game-progress{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem}
@@ -215,6 +218,7 @@ footer a:hover{color:var(--gold)}
           </div>
         </div>
       </div>
+      <div id="jsErrorBox" class="error-box" style="display:none"></div>
       <div class="btn-row">
         <button class="calc-btn btn-game" onclick="startGame()" data-ga-event="fortune_submit">🎯 大喜利で診断する</button>
         <button class="calc-btn btn-skip" onclick="skipToResult()" data-ga-event="fortune_submit">⚡ すぐ芸名を見る</button>
@@ -674,9 +678,18 @@ function getDate(){
   const[y,m,d]=v.split('-').map(Number);
   return{y,m,d};
 }
+function showFormError(msg){
+  const box = document.getElementById('jsErrorBox');
+  box.textContent = msg;
+  box.style.display = 'block';
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
 function startGame(){
-  if(!state.role){alert('芸風を選んでください');return;}
-  if(!getDate()){alert('生年月日を入力してください');return;}
+  const errBox = document.getElementById('jsErrorBox');
+  if (errBox) errBox.style.display = 'none';
+  if(!state.role){showFormError('芸風を選んでください');return;}
+  if(!getDate()){showFormError('生年月日を入力してください');return;}
   state.fromGame=true;
   const pool=state.role==='boke'?Q_BOKE:state.role==='tsukkomi'?Q_TSUKKOMI:Q_PIN;
   state.questions=shuffle([...pool]).slice(0,10);
@@ -688,8 +701,10 @@ function startGame(){
   renderQuestion();
 }
 function skipToResult(){
-  if(!state.role){alert('芸風を選んでください');return;}
-  if(!getDate()){alert('生年月日を入力してください');return;}
+  const errBox = document.getElementById('jsErrorBox');
+  if (errBox) errBox.style.display = 'none';
+  if(!state.role){showFormError('芸風を選んでください');return;}
+  if(!getDate()){showFormError('生年月日を入力してください');return;}
   state.fromGame=false;showResult();
 }
 function renderQuestion(){
