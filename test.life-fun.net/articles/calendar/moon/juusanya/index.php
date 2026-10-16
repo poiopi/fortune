@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/moon/juusanya/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="十三夜月の意味・スピリチュアルな解釈・おすすめの過ごし方を解説。満月まであと一歩の月相にすべきことを紹介します。">
   <title>十三夜月とは？意味と過ごし方をわかりやすく解説｜月相ガイド</title>

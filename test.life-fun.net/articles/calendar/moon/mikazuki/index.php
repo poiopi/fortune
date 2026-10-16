@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/moon/mikazuki/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="三日月の意味・スピリチュアルな解釈・おすすめの過ごし方を解説。新月から満ちていく成長初期の月相にすべきことを紹介します。">
   <title>三日月とは？意味と過ごし方をわかりやすく解説｜月相ガイド</title>

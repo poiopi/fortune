@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/kichijitsu/ichiryumanbai/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="一粒万倍日の意味・由来・過ごし方を解説。何かを始めると大きな成果につながるとされる、始まりの吉日にすべきことをわかりやすく紹介します。">
   <title>一粒万倍日とは？意味と過ごし方をわかりやすく解説｜吉日ガイド</title>

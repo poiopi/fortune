@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/tomobiki/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="六曜「友引」の意味・由来・過ごし方を解説。祝い事に良く葬儀は避けるべきとされる友引の日にすべきこと・避けるべきことをわかりやすく紹介します。">
   <title>友引（ともびき）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>

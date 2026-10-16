@@ -553,7 +553,6 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
 .closing-cta-sub { font-size: .8rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
 .footer-links a:hover { color: var(--gold-lt); }
 .footer-copy { font-family: var(--ff-mono); font-size: .58rem; color: rgba(138,125,181,.3); letter-spacing: .1em; }
-
 </style>
 </head>
 <body>

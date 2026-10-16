@@ -15,6 +15,7 @@ ob_start();
   </script>
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthstone/june/" />
+  <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月の誕生石真珠（パール）の石言葉・特徴・魅力をわかりやすく解説。「健康、富」を象徴する宝石の意味とおすすめの身につけ方を紹介します。">
   <title>6月の誕生石は真珠｜石言葉と魅力をわかりやすく解説</title>
