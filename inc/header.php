@@ -15,6 +15,8 @@
      $headerTheme  任意  'dark'（省略時）または 'light'
      $headerAction 任意  ['label' => 'ボタン文言', 'url' => '/path']。light テーマの右ボタン
                          （文言に絵文字・「→」は入れない。矢印は部品側でSVGを付ける）
+                         任意キー 'dir' => 'forward'（省略時。文言の後ろに右向き矢印）
+                                         または 'back'（文言の前に左向き矢印。「TOPへ戻る」等の戻る導線）
 
    使用例（ツール）：
      <?php $currentPage = 'tarot'; require __DIR__.'/inc/header.php'; ?>
@@ -33,6 +35,7 @@ require_once __DIR__.'/site.php';
 $_p = $currentPage ?? '';
 $_hTheme = (($headerTheme ?? 'dark') === 'light') ? 'light' : 'dark';
 $_hAction = (isset($headerAction) && is_array($headerAction) && isset($headerAction['label'], $headerAction['url'])) ? $headerAction : null;
+$_hBack = ($_hAction !== null && ($_hAction['dir'] ?? 'forward') === 'back');
 if (!function_exists('_navlink')) {
     function _navlink(string $label, string $href, string $key, string $current): string {
         return $current === $key
@@ -161,6 +164,8 @@ if (!function_exists('_site_nav_link')) {
     </nav>
     <div id="google_translate_element"></div>
     <button class="sp-menu-btn" type="button" onclick="toggleSpMenu()" aria-controls="spDropdown">☰ メニュー</button>
+<?php elseif ($_hAction !== null && $_hBack): ?>
+    <a class="site-header__action" href="<?= htmlspecialchars((string)$_hAction['url'], ENT_QUOTES) ?>"><svg class="site-header__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true" focusable="false"><line x1="10" y1="6" x2="2" y2="6"/><line x1="5" y1="3" x2="2" y2="6"/><line x1="5" y1="9" x2="2" y2="6"/></svg><?= htmlspecialchars((string)$_hAction['label'], ENT_QUOTES) ?></a>
 <?php elseif ($_hAction !== null): ?>
     <a class="site-header__action" href="<?= htmlspecialchars((string)$_hAction['url'], ENT_QUOTES) ?>"><?= htmlspecialchars((string)$_hAction['label'], ENT_QUOTES) ?><svg class="site-header__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true" focusable="false"><line x1="2" y1="6" x2="10" y2="6"/><line x1="7" y1="3" x2="10" y2="6"/><line x1="7" y1="9" x2="10" y2="6"/></svg></a>
 <?php endif; ?>

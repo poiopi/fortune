@@ -13,7 +13,7 @@ ob_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="守護霊「龍神」の意味を徹底解説。天龍・水龍・金龍それぞれの特徴、龍神に守護された人の性格・強み・開運のヒントをわかりやすく紹介します。">
   <title>守護霊「龍神」とは｜天龍・水龍・金龍の特徴と開運のヒントを解説</title>
-  <link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">

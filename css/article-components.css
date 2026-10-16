@@ -110,3 +110,8 @@
 .article-related-item:hover { border-color: var(--accent-lt); transform: translateY(-2px); }
 .article-related-label { font-size: .7rem; color: var(--muted); margin-bottom: .3rem; font-family: var(--ff-mono); }
 .article-related-title { font-size: .9rem; font-weight: 500; color: var(--accent); }
+
+/* ── ANCHOR OFFSET ──
+   目次リンク（href="#…"）の飛び先の見出しが sticky ヘッダー（inc/header.php の light：高さ56px＋線1px）に
+   隠れないようにする。72px = 56 + 1 + 余白15。記事本文の id 付き要素（.wrap 内）すべてに効かせる（2026-10-16） */
+.wrap [id] { scroll-margin-top: 72px; }

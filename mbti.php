@@ -18,7 +18,7 @@ require_once __DIR__.'/inc/mbti-data.php';
 <meta name="description" content="MBTI×星座で導く性格診断。10の質問に答えてあなたの本質タイプと星座の組み合わせ運勢を診断します。">
 <title>MBTI×星座診断｜あなたの組み合わせを10問で無料診断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -646,14 +646,6 @@ renderQ();
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    document.getElementById('spDropdown').classList.remove('open');
-  }
-});
 </script>
 </body>
 </html>

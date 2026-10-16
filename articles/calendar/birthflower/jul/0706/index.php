@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="7月6日の誕生花トキソウの花言葉・特徴・魅力をわかりやすく解説。朱鷺の羽の色に見立てられた、初夏に咲く淡紅色のラン科の花を紹介します。">
   <title>7月6日の誕生花はトキソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="7月20日の誕生花ルコウソウの花言葉・特徴・魅力をわかりやすく解説。夏に星形の赤い花を咲かせる、ヒルガオ科のつる性一年草を紹介します。">
   <title>7月20日の誕生花はルコウソウ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="4月1日クロッカス（黄）など、4月の誕生花・花言葉をわかりやすく解説します。">
   <title>4月の誕生花とは？1日ごとの花言葉を解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

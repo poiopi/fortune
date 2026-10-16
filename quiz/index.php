@@ -41,7 +41,7 @@ $_ogImage = 'https://life-fun.net/favicon.png';
 <meta name="description" content="<?= htmlspecialchars($_description, ENT_QUOTES, 'UTF-8') ?>">
 <title><?= htmlspecialchars($_title, ENT_QUOTES, 'UTF-8') ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= htmlspecialchars($_canonical, ENT_QUOTES, 'UTF-8') ?>">

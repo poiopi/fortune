@@ -64,7 +64,7 @@ $todayKyusei = $todayInfo['sections']['kyusei'];
 <meta name="description" content="今日の六曜・大安カレンダーとラッキーアイテムを毎日更新。開運情報を一覧でチェック。">
 <title>開運カレンダー｜今日の六曜とラッキーアイテム</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -546,14 +546,6 @@ body{top:0!important}
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    document.getElementById('spDropdown').classList.remove('open');
-  }
-});
 </script>
 </body>
 </html>

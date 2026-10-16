@@ -18,7 +18,7 @@ ob_start();
   <meta name="description" content="九星気学「二黒土星」の意味を解説。土の気を持つ第2星が守護する人の性格・才能・恋愛・仕事・開運のヒントを紹介します。">
   <title>二黒土星とは｜九星気学・大地の母性が育む性格と開運のヒント</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="1月1日フクジュソウなど、365日の誕生花が持つ意味と花言葉をわかりやすく解説します。">
   <title>誕生花とは？365日の花言葉を完全解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

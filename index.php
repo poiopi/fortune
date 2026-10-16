@@ -30,7 +30,7 @@ require_once __DIR__.'/inc/nav-cards.php';
 <meta name="description" content="タロット占い・数秘術・九星気学・相性診断・姓名判断など無料の占いが揃う占いポータル。生年月日や名前を入力するだけで鑑定結果をすぐに表示します。">
 <title>無料占いポータル｜タロット・数秘術・九星気学・姓名判断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">

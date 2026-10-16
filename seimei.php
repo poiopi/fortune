@@ -15,7 +15,7 @@
 <title>姓名判断｜名前に宿る運命を五格で鑑定</title>
 <link rel="canonical" href="https://life-fun.net/seimei" />
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <style>

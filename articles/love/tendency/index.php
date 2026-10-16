@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="Love Engineが算出する推定傾向指標（結婚志向・浮気耐性）を、9216パターンの実測データで解説。">
   <title>推定傾向指標（Tendency）とは｜Love Engineの計算方法を実測データで解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -15,7 +15,7 @@
 <meta name="description" content="22枚の大アルカナが円形に並ぶ本格タロット占い。直感でカードを選び、恋愛・仕事・運勢へのメッセージを無料で受け取ってください。">
 <title>本格タロット占い｜大アルカナ22枚で運命を読む</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -602,14 +602,6 @@ function googleTranslateElementInit(){
     layout:google.translate.TranslateElement.InlineLayout.SIMPLE
   },'google_translate_element');
 }
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
-document.addEventListener('click', function(e){
-  if(!e.target.closest('.sp-menu-btn') && !e.target.closest('.sp-dropdown')){
-    document.getElementById('spDropdown').classList.remove('open');
-  }
-});
 </script>
 </body>
 </html>

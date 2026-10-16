@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="九星気学とは何か、本命星・月命星・吉方位・9つの星の意味をわかりやすく解説。生年月日から本命星を調べる方法から九星それぞれの性格・特徴まで完全ガイド。">
   <title>九星気学とは？本命星・月命星・吉方位の意味をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

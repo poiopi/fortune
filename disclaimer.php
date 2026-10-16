@@ -10,7 +10,7 @@
   <meta name="description" content="占いPortalの免責事項。本サイトのコンテンツの利用・占い結果の取り扱い・外部リンクに関する免責事項をご確認ください。">
   <title>免責事項｜<?= SITE_NAME ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,8 +93,6 @@
 <?php $currentPage='disclaimer'; $currentSlug=''; $pageType='tool'; require __DIR__.'/inc/footer.php'; ?>
 <script>
 function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');}
-function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
-document.addEventListener('click',function(e){if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){var sd=document.getElementById('spDropdown');if(sd)sd.classList.remove('open');}});
 </script>
 </body>
 </html>

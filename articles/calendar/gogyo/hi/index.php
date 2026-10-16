@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="五行「火（か）」の意味・性質・ラッキーカラー・相性を解説。情熱と活力のエネルギーを持つ火のエネルギーを日常に取り入れる方法を紹介します。">
   <title>五行「火（か）」とは？意味とラッキーカラーをわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

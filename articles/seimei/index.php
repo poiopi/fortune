@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="姓名判断の仕組み、天格・人格・地格・外格・総格の五格と画数の吉凶をわかりやすく解説。">
   <title>姓名判断とは？画数・五格の意味と吉数をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

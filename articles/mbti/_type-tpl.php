@@ -42,7 +42,7 @@ ob_start();
   <meta name="description" content="<?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の性格・強み・弱み・恋愛・仕事・相性を詳しく解説。16タイプ性格診断の<?= htmlspecialchars($type['group']) ?>グループ。">
   <title><?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の性格・特徴・恋愛・仕事を徹底解説｜MBTIガイド</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

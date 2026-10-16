@@ -122,7 +122,7 @@ if ($luckySection['available']) {
 <meta name="description" content="<?= htmlspecialchars($dateLabel) ?>の六曜・星座・九星をまとめて確認できる日別詳細ページ。">
 <title><?= htmlspecialchars($dateLabel) ?>の運勢｜開運カレンダー</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 

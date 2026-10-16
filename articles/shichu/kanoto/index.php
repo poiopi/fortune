@@ -13,7 +13,7 @@ ob_start();
   <meta name="description" content="十干のひとつ「辛（かのと）」の意味、五行・陰陽、基本性格、恋愛運、仕事運、他の十干との相性をわかりやすく解説します。">
   <link rel="canonical" href="https://life-fun.net/articles/shichu/kanoto/" />
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">

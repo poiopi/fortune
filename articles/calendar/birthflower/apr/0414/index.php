@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="4月14日の誕生花ハルジオンの花言葉・特徴・魅力をわかりやすく解説。「さりげない愛」を象徴する身近な野に咲く白い花の意味を紹介します。">
   <title>4月14日の誕生花はハルジオン｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

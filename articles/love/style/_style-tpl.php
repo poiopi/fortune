@@ -31,7 +31,7 @@ ob_start();
   <meta name="description" content="Love Engineの恋愛スタイル指標「<?= htmlspecialchars($item['name']) ?>」とは何か、どう計算されるかを9216パターンの実測データで解説。High/Mid/Lowの違いとMBTI・血液型別の傾向を紹介。">
   <title><?= htmlspecialchars($item['name']) ?>（Style）とは｜Love Engineの計算方法と実測データを解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

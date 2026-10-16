@@ -15,7 +15,7 @@
 <title>守護霊診断｜あなたを守る霊はUR？SSR？</title>
 <link rel="canonical" href="https://life-fun.net/guardian" />
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -575,15 +575,6 @@ function resetForm(){
   hideInlineError('formError');
   resetResultView('formArea','result');
 }
-function toggleSpMenu(){
-  const d=document.getElementById('spDropdown');
-  d.style.display=d.style.display==='block'?'none':'block';
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    const d=document.getElementById('spDropdown');if(d)d.style.display='none';
-  }
-});
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }

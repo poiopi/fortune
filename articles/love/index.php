@@ -26,7 +26,7 @@ ob_start();
   <meta name="description" content="MBTI×血液型×星座で診断する恋愛傾向診断（Love Engine）の解説記事一覧。使い方ガイド・MBTI・恋愛スタイル・推定傾向・星座・血液型・恋愛タイプ・組み合わせ分析をカテゴリ別に掲載。">
   <title>恋愛傾向診断×解説記事一覧｜Love Engineをやさしく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +66,7 @@ ob_start();
 <?php $headerTheme = 'light'; $headerAction = ['label' => '恋愛傾向診断を受ける', 'url' => '/love']; require __DIR__.'/../../inc/header.php'; ?>
 
 <div class="wrap">
-  <?php $bcPath = '/articles/love/'; $bcName = '恋愛傾向診断（Love Engine）解説記事一覧'; require __DIR__.'/../../inc/breadcrumb.php'; ?>
+  <?php $bcPath = '/articles/love/'; $bcName = '恋愛傾向診断'; require __DIR__.'/../../inc/breadcrumb.php'; ?>
 
   <div class="art-hero">
     <span class="art-label">Love Engine × 解説記事</span>

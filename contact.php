@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="description" content="占いPortalへのご意見・ご感想・お問い合わせはこちらのフォームよりご連絡ください。">
   <title>お問い合わせ｜<?= SITE_NAME ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,8 +142,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php $currentPage='contact'; $currentSlug=''; $pageType='tool'; require __DIR__.'/inc/footer.php'; ?>
 <script>
 function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');}
-function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
-document.addEventListener('click',function(e){if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){var sd=document.getElementById('spDropdown');if(sd)sd.classList.remove('open');}});
 </script>
 </body>
 </html>

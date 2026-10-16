@@ -18,7 +18,7 @@ ob_start();
   <meta name="description" content="九星気学「六白金星」の意味を解説。金の気を持つ第6星が守護する人の性格・完璧主義・恋愛・仕事・開運のヒントを紹介します。">
   <title>六白金星とは｜九星気学・天の意志が宿す完璧主義と開運のヒント</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
