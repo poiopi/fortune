@@ -18,6 +18,12 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["C:\\Users\\sende\\AppData\\Local\\Temp\\claude\\C--Users-sende-fortune\\6b621bee-5fa7-45f7-8bc0-b42fb0923958\\scratchpad\\static-server.mjs", "8813"],
       "port": 8813
+    },
+    {
+      "name": "en-mock-preview",
+      "runtimeExecutable": "C:\\php\\php.exe",
+      "runtimeArgs": ["-S", "localhost:8814", "-t", "C:\\Users\\sende\\AppData\\Local\\Temp\\claude\\C--Users-sende-fortune\\8e28c566-ddd1-4375-b5a6-158364a421d7\\scratchpad\\en-mock"],
+      "port": 8814
     }
   ]
 }
