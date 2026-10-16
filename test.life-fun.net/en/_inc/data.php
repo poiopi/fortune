@@ -69,11 +69,11 @@ $EN_TRY_TONE = [
 // Topics printed on the practice slip (病気・相場・出産 are deliberately left out of the practice slip).
 $EN_TRY_LINES = [
   '願望' => ['good'=>['叶う','It comes true.'],      'mixed'=>['遅けれど叶う','Slow, but it comes true.'],   'careful'=>['急ぐな','Don\'t rush.']],
-  '待人' => ['good'=>['来る','They come.'],          'mixed'=>['遅く来る','They come, but late.'],        'careful'=>['来ず','They do not come.']],
-  '失物' => ['good'=>['出る','It turns up.'],        'mixed'=>['遅けれど出る','It turns up, but late.'],     'careful'=>['出にくし','Hard to find.']],
+  '待人' => ['good'=>['来る','They come.'],          'mixed'=>['来るが遅し','They come, but late.'],        'careful'=>['来ず','They do not come.']],
+  '失物' => ['good'=>['出る','It turns up.'],        'mixed'=>['遅けれど出る','It turns up, but late.'],     'careful'=>['出がたし','Hard to find.']],
   '旅行' => ['good'=>['良し','Good.'],               'mixed'=>['近きは良し','Short trips are good.'],      'careful'=>['控えよ','Hold back for now.']],
-  '学問' => ['good'=>['安心せよ','Rest easy.'],      'mixed'=>['努力せよ','Keep working at it.'],         'careful'=>['油断するな','Don\'t let your guard down.']],
-  '恋愛' => ['good'=>['良し','Good.'],               'mixed'=>['焦るな','Don\'t be impatient.'],          'careful'=>['慎め','Be careful; show restraint.']],
+  '学問' => ['good'=>['安心せよ','Rest easy.'],      'mixed'=>['努力せよ','Keep working at it.'],         'careful'=>['油断すべからず','Don\'t let your guard down.']],
+  '恋愛' => ['good'=>['良し','Good.'],               'mixed'=>['急ぐべからず','Don\'t rush.'],          'careful'=>['慎め','Be careful; show restraint.']],
   '転居' => ['good'=>['良し','Good.'],               'mixed'=>['急ぐな','Don\'t rush.'],                  'careful'=>['障りあり','Something may get in the way.']],
 ];
 // One short English note per level, shown under the level on the practice slip.
