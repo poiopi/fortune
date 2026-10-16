@@ -3,7 +3,7 @@ require __DIR__ . '/../_inc/bootstrap.php';
 $page = [
     'path'        => '/en/privacy/',
     'title'       => 'Privacy Notice · Omikuji & Shrine Guide',
-    'description' => 'What the English Omikuji & Shrine Guide collects through Google Analytics, what stays on your device, and how to contact us.',
+    'description' => 'What the English Omikuji & Shrine Guide collects through Google Analytics and Google AdSense, what stays on your device, and how to contact us.',
     'nav'         => '',
     'crumbs'      => [['Omikuji & Shrine Guide', '/en/omikuji/'], ['Privacy', null]],
     'og'          => [],
@@ -30,7 +30,8 @@ require EN_INC . '/head.php';
     <p>If you save a slip as an image, the image is made in your browser and saved to your device. It is not uploaded anywhere.</p>
 
     <h2>Advertising</h2>
-    <p>These English pages do not show ads.</p>
+    <p>These pages show ads served by Google AdSense, a third-party advertising service. Google and other third-party ad vendors may use cookies to show ads based on your past visits to this site and other sites. You can learn more in <a href="https://policies.google.com/technologies/ads" target="_blank">Google's advertising policy</a>, and you can turn off personalized ads in <a href="https://adssettings.google.com/" target="_blank">Google's Ad Settings</a>.</p>
+    <p>If you are in the European Economic Area, the United Kingdom or Switzerland, you will be asked for your consent before personalized ads are shown.</p>
 
     <h2>Your choices</h2>
     <p>You can block or delete cookies in your browser settings. Google also offers a <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">browser add-on to opt out of Google Analytics</a>.</p>

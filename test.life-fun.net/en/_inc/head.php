@@ -34,6 +34,8 @@ $enNav = [
   gtag('js', new Date());
   gtag('config', '<?= EN_GA_ID ?>');
 </script>
+<?php /* AdSense auto ads: same tag and publisher as the Japanese pages. Ad count/placement is controlled in the AdSense console. */ ?>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=<?= EN_ADSENSE_CLIENT ?>" crossorigin="anonymous"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title><?= en_e($page['title']) ?></title>

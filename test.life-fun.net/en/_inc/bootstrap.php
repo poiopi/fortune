@@ -27,6 +27,7 @@ define('EN_INC', __DIR__);
 define('EN_DOCROOT', dirname(__DIR__, 2));
 define('EN_BASE_URL', 'https://life-fun.net');
 define('EN_GA_ID', 'G-P1EKB3WWX8');
+define('EN_ADSENSE_CLIENT', 'ca-pub-6979913482925873'); // same publisher ID as the Japanese pages and ads.txt
 define('EN_SITE_NAME', 'Omikuji & Shrine Guide');
 
 require EN_INC . '/data.php';

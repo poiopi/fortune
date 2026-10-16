@@ -21,7 +21,7 @@
         <li><a href="/en/shrine-etiquette/">Shrine etiquette</a></li>
         <li><a href="/en/shrines-and-temples/">Shrines and temples</a></li>
         <li><a href="/en/privacy/">Privacy</a></li>
-        <li><a href="/"><span lang="ja">日本語</span></a></li>
+        <li><a href="/">fortune-telling (Japanese)</a></li>
       </ul>
     </nav>
   </div>

@@ -16,7 +16,11 @@ _admin-lib/*	管理画面	管理画面（ADMIN_IMPL_PLAN.md）
 _admin-data/*	管理画面	管理画面のデータ
 admin/*	管理画面	管理画面
 api/client-error.php	管理画面	管理画面「エラー監視」の受け口
-inc/footer.php	管理画面	管理画面「エラー監視」へ送る lfReport の script だけ違ってよい	<script>\s*// JSエラーを管理画面「エラー監視」へ送る.*?</script>\s*
+inc/footer.php	管理画面	管理画面「エラー監視」へ送る lfReport の script だけ違ってよい。加えて保留中（2026-10-17〜、英語区画）：sf-en のリンク1行と .sf-en の CSS 3行も、英語区画を本番反映するまでは違ってよい。本番反映したら後半の2つの選択肢を消す	(?:<script>\s*// JSエラーを管理画面「エラー監視」へ送る.*?</script>\s*|[ ]*echo '<p class="sf-en">[^\n]*\n|\.sf-en[^\n]*\n)
+]*
+|\.sf-en[^
+]*
+)
 
 _template_article.php	STG専用	記事を作るときのコピー元（公開ページではない）
 
