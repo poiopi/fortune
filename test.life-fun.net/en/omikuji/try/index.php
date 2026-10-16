@@ -28,7 +28,7 @@ require EN_INC . '/head.php';
     <p class="lead">One slip a day, laid out like a real one: the kanji as you'd see them on paper, with English underneath. Then try reading it with the Decoder.</p>
     <div class="meta"><span>One draw per day</span><span>No sign-up</span><span>Practice only. Not issued by any shrine or temple</span></div>
   </div>
-  <?= en_img('try-box', 1000, 1000, 'Two hands tilting a hexagonal wooden box so a thin stick slides out of the hole at the top', 'square') ?>
+  <?= en_img('try-box', 1000, 1000, 'Two hands holding a hexagonal wooden box upside down as a thin stick slides out of the hole', 'square') ?>
 </div>
 
 <?php if ($shared): ?>
@@ -72,6 +72,7 @@ require EN_INC . '/head.php';
     <li><b>The number.</b> <span lang="ja">第〇番</span> at the top is the slip number, written in kanji numerals.</li>
     <li><b>The level.</b> The large characters are your overall fortune. Find them in the <a href="/en/omikuji/decoder/#levels">level chart</a>.</li>
     <li><b>The poem.</b> On a real slip a poem usually sits here. This practice slip leaves the space blank, because a real poem deserves a real translation.</li>
+    <li><b>The overall reading.</b> Some slips include a short passage about your fortune as a whole. The practice slip has one under the poem space, written in classical Japanese.</li>
     <li><b>The topics.</b> Each line starts with a topic heading, such as <span lang="ja">願望</span> or <span lang="ja">待人</span>. Look them up in the <a href="/en/omikuji/decoder/#topics">topic table</a>, then find the ending in the <a href="/en/omikuji/decoder/#phrases">phrase list</a>.</li>
   </ol>
   <p class="small sec-body">Practice slips leave out illness, childbirth and market dealings. Real slips often include them. The Decoder covers those too.</p>
@@ -94,13 +95,14 @@ require EN_INC . '/head.php';
 
 <?php /* JS slip template (rendered into #slip), all text from data:
   <div class="slip-paper">
-    <div class="slip-title" lang="ja">御神籤</div>            (vertical-feel title; small)
+    <div class="slip-title" lang="ja">おみくじ</div>          (vertical-feel title; small)
     <div class="slip-no"><span lang="ja">第二十三番</span><span class="en">No. 23</span></div>
     <div class="slip-rank"><span class="k" lang="ja">大吉</span><span class="r">daikichi</span><span class="en">Great good luck</span></div>
     <p class="slip-note">{EN_TRY_NOTE[rank]}</p>
     <div class="slip-poem"><span>Poem space</span></div>
+    <div class="slip-sum"><p lang="ja">{summary ja}</p><p class="r">{romaji}</p><p class="en">{English}</p></div>   ($EN_TRY_SUMMARY[rank][no % 2])
     <dl class="slip-lines">  (7 rows, order of $EN_TRY_LINES)
-      <div><dt lang="ja">願望</dt><dd><span lang="ja">叶う</span><span class="en">Your wish: It comes true.</span></dd></div>
+      <div><dt><span lang="ja">願望</span><span class="r">ganbō</span></dt><dd><span lang="ja">叶う</span><span class="r">kanau</span><span class="en">Your wish: It comes true.</span></dd></div>
     </dl>
     <div class="slip-foot">Practice slip · life-fun.net · not issued by any shrine or temple</div>
   </div>
@@ -125,9 +127,13 @@ $enTryData = [
     'tone'    => $EN_TRY_TONE,
     'lines'   => $EN_TRY_LINES,
     'note'    => $EN_TRY_NOTE,
+    'summary' => $EN_TRY_SUMMARY,
+    'topicRomaji' => $EN_TRY_TOPIC_ROMAJI,
+    'lineRomaji'  => $EN_TRY_LINE_ROMAJI,
     'topics'  => $enTryTopics,
     // Slip title and the kanji used for the slip number (第〇番).
-    'slip'    => ['title' => $EN_SLIP_PARTS[0]['ja'], 'dai' => '第', 'ban' => '番', 'digits' => ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'], 'ten' => '十', 'hundred' => '百'],
+    // Practice-slip title: plain おみくじ (御神籤 is a shrine word; this slip stands for shrines and temples alike).
+    'slip'    => ['title' => 'おみくじ', 'dai' => '第', 'ban' => '番', 'digits' => ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'], 'ten' => '十', 'hundred' => '百'],
 ];
 ?>
 <script id="en-try-data" type="application/json"><?= json_encode($enTryData, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP) ?></script>

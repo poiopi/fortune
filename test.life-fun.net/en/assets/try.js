@@ -90,8 +90,17 @@
     return TOPIC_ORDER.map(function (topic, i) {
       var tone = s.tones[i];
       var pair = D.lines[topic][tone];
-      return { topic: topic, ja: pair[0], en: (D.topics[topic] || topic) + ': ' + pair[1] };
+      return {
+        topic: topic, topicR: (D.topicRomaji && D.topicRomaji[topic]) || '',
+        ja: pair[0], r: (D.lineRomaji && D.lineRomaji[pair[0]]) || '',
+        en: (D.topics[topic] || topic) + ': ' + pair[1]
+      };
     });
+  }
+  // Overall reading (総評): one of two per level, chosen by slip number so a stored draw always shows the same one.
+  function summary(s) {
+    var list = D.summary && D.summary[s.rank];
+    return list && list.length ? list[s.no % list.length] : null;
   }
 
   // ---- render ----
@@ -117,12 +126,25 @@
     poem.appendChild(el('span', null, 'A poem goes here on a real slip'));
     paper.appendChild(poem);
 
+    var sum = summary(s);
+    if (sum) {
+      var sumEl = el('div', { 'class': 'slip-sum' });
+      sumEl.appendChild(el('p', { lang: 'ja' }, sum.ja));
+      sumEl.appendChild(el('p', { 'class': 'r' }, sum.romaji));
+      sumEl.appendChild(el('p', { 'class': 'en' }, sum.en));
+      paper.appendChild(sumEl);
+    }
+
     var dl = el('dl', { 'class': 'slip-lines' });
     slipLines(s).forEach(function (l) {
       var row = el('div');
-      row.appendChild(el('dt', { lang: 'ja' }, l.topic));
+      var dt = el('dt');
+      dt.appendChild(el('span', { lang: 'ja' }, l.topic));
+      if (l.topicR) dt.appendChild(el('span', { 'class': 'r' }, l.topicR));
+      row.appendChild(dt);
       var dd = el('dd');
       dd.appendChild(el('span', { lang: 'ja' }, l.ja));
+      if (l.r) dd.appendChild(el('span', { 'class': 'r' }, l.r));
       dd.appendChild(el('span', { 'class': 'en' }, l.en));
       row.appendChild(dd);
       dl.appendChild(row);
@@ -169,11 +191,11 @@
   function fontsReady(s) {
     if (!document.fonts || !document.fonts.load) return Promise.resolve();
     var ja = D.slip.title + D.slip.dai + D.slip.ban + kanjiNum(s.no) + RANKS[s.rank].ja +
-      slipLines(s).map(function (l) { return l.topic + l.ja; }).join('');
+      slipLines(s).map(function (l) { return l.topic + l.ja; }).join('') + ((summary(s) || {}).ja || '');
     var loads = [
       document.fonts.load('700 40px ' + FF_JA, ja),
       document.fonts.load('500 40px ' + FF_JA, ja),
-      document.fonts.load('italic 400 30px ' + FF_HEAD, 'a'),
+      document.fonts.load('italic 400 30px ' + FF_HEAD, 'aō'),
       document.fonts.load('400 20px ' + FF_BODY, 'a'),
       document.fonts.load('600 20px ' + FF_BODY, 'a')
     ].map(function (p) { return p.catch(function () {}); });
@@ -196,16 +218,45 @@
     if (line) lines.push(line);
     return lines;
   }
+  // Japanese has no spaces: break after 、。 where possible, and by character only inside a phrase that is too long.
+  function wrapJa(ctx, text, maxW) {
+    var lines = [], line = '';
+    (text.match(/[^、。]+[、。]?/g) || [text]).forEach(function (seg) {
+      if (ctx.measureText(line + seg).width <= maxW) { line += seg; return; }
+      if (line) { lines.push(line); line = ''; }
+      Array.from(seg).forEach(function (ch) {
+        if (line && ctx.measureText(line + ch).width > maxW) { lines.push(line); line = ch; } else line += ch;
+      });
+    });
+    if (line) lines.push(line);
+    return lines;
+  }
+  var ROW_H = 84;
+  // Lays out the overall reading; returns its lines and height so the canvas can be sized first.
+  function sumLayout(ctx, sum, maxW) {
+    if (!sum) return null;
+    ctx.font = '500 30px ' + FF_JA; var ja = wrapJa(ctx, sum.ja, maxW);
+    ctx.font = 'italic 400 22px ' + FF_HEAD; var ro = wrap(ctx, sum.romaji, maxW);
+    ctx.font = '400 22px ' + FF_BODY; var en = wrap(ctx, sum.en, maxW);
+    return { ja: ja, ro: ro, en: en, h: ja.length * 44 + 12 + ro.length * 30 + 10 + en.length * 30 + 28 };
+  }
   function drawCanvas(s) {
-    var W = 1080, H = 1350, r = RANKS[s.rank];
+    var W = 1080, r = RANKS[s.rank];
+    var x0 = 140, x1 = 940, cw = x1 - x0, cx = W / 2;
+    var probe = document.createElement('canvas').getContext('2d');
+    probe.font = '400 22px ' + FF_BODY;
+    var noteLines = wrap(probe, D.note[s.rank], cw - 140);
+    var sumL = sumLayout(probe, summary(s), cw - 140);
+    var linesTop = 570 + noteLines.length * 32 + 8 + 84 + (sumL ? sumL.h : 0);
+    var H = linesTop + TOPIC_ORDER.length * ROW_H + 160;
+
     var cv = document.createElement('canvas');
     cv.width = W; cv.height = H;
     var ctx = cv.getContext('2d');
-    var x0 = 140, x1 = 940, cw = x1 - x0, cx = W / 2;
 
     ctx.fillStyle = C.paper; ctx.fillRect(0, 0, W, H);
-    ctx.fillStyle = C.card; ctx.fillRect(x0, 60, cw, 1230);
-    ctx.strokeStyle = C.line; ctx.lineWidth = 2; ctx.strokeRect(x0, 60, cw, 1230);
+    ctx.fillStyle = C.card; ctx.fillRect(x0, 60, cw, H - 120);
+    ctx.strokeStyle = C.line; ctx.lineWidth = 2; ctx.strokeRect(x0, 60, cw, H - 120);
     ctx.fillStyle = C.shu; ctx.fillRect(x0, 60, cw, 8);
 
     ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
@@ -228,7 +279,7 @@
 
     var y = 570;
     ctx.fillStyle = '#4a463f'; ctx.font = '400 22px ' + FF_BODY;
-    wrap(ctx, D.note[s.rank], cw - 140).forEach(function (line) { ctx.fillText(line, cx, y); y += 32; });
+    noteLines.forEach(function (line) { ctx.fillText(line, cx, y); y += 32; });
 
     y += 8;
     ctx.save();
@@ -239,19 +290,40 @@
     ctx.fillText('A poem goes here on a real slip', cx, y + 35);
     y += 84;
 
+    if (sumL) {
+      var sy = y + 34;
+      ctx.fillStyle = C.ink; ctx.font = '500 30px ' + FF_JA;
+      sumL.ja.forEach(function (line) { ctx.fillText(line, cx, sy); sy += 44; });
+      sy += 12 - 44 + 30;
+      ctx.fillStyle = C.muted; ctx.font = 'italic 400 22px ' + FF_HEAD;
+      sumL.ro.forEach(function (line) { ctx.fillText(line, cx, sy); sy += 30; });
+      sy += 10;
+      ctx.fillStyle = '#4a463f'; ctx.font = '400 22px ' + FF_BODY;
+      sumL.en.forEach(function (line) { ctx.fillText(line, cx, sy); sy += 30; });
+      y += sumL.h;
+    }
+
     ctx.textAlign = 'left';
-    var rowH = 64, tx = x0 + 60, px = x0 + 200, maxW = x1 - 60 - px;
+    var rowH = ROW_H, tx = x0 + 60, px = x0 + 200, maxW = x1 - 60 - px;
     slipLines(s).forEach(function (l, i) {
       var top = y + i * rowH;
       ctx.strokeStyle = C.line; ctx.lineWidth = 1;
       ctx.beginPath(); ctx.moveTo(x0 + 60, top); ctx.lineTo(x1 - 60, top); ctx.stroke();
       ctx.fillStyle = C.ink; ctx.font = '700 28px ' + FF_JA;
-      ctx.fillText(l.topic, tx, top + 42);
-      ctx.font = '500 24px ' + FF_JA;
-      ctx.fillText(l.ja, px, top + 30);
+      ctx.fillText(l.topic, tx, top + 40);
+      if (l.topicR) {
+        ctx.fillStyle = C.muted; ctx.font = 'italic 400 17px ' + FF_HEAD;
+        ctx.fillText(l.topicR, tx, top + 64);
+      }
+      ctx.fillStyle = C.ink; ctx.font = '500 24px ' + FF_JA;
+      ctx.fillText(l.ja, px, top + 32);
       ctx.fillStyle = C.muted;
+      if (l.r) {
+        ctx.font = 'italic 400 18px ' + FF_HEAD;
+        ctx.fillText(l.r, px, top + 54);
+      }
       fit(ctx, l.en, '400 {px} ' + FF_BODY, 18, maxW);
-      ctx.fillText(l.en, px, top + 55);
+      ctx.fillText(l.en, px, top + 76);
     });
     var end = y + TOPIC_ORDER.length * rowH;
     ctx.strokeStyle = C.line; ctx.beginPath(); ctx.moveTo(x0 + 60, end); ctx.lineTo(x1 - 60, end); ctx.stroke();
@@ -259,7 +331,7 @@
     ctx.textAlign = 'center'; ctx.fillStyle = C.muted;
     var foot = 'Practice slip · life-fun.net/en/omikuji/try/ · not issued by any shrine or temple';
     fit(ctx, foot, '400 {px} ' + FF_BODY, 18, cw - 60);
-    ctx.fillText(foot, cx, 1255);
+    ctx.fillText(foot, cx, H - 100);
     return cv;
   }
   function download(blobOrUrl, name, isUrl) {

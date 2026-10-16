@@ -87,6 +87,53 @@ $EN_TRY_NOTE = [
   'sueshokichi' => 'A little good luck, coming later.',
   'kyo'         => 'Bad luck. Real slips usually pair 凶 with advice on what to watch out for, so the lines below matter most.',
 ];
+// Overall reading (総評) on the practice slip: 2 per level, picked by slip number (no % 2).
+// Japanese and kana readings checked by the site owner (2026-10-17); romaji is Hepburn from those readings.
+// No illness or money. Even 凶 ends with how to spend the time. English uses "may", never a promise.
+$EN_TRY_SUMMARY = [
+  'daikichi' => [
+    ['ja'=>'月雲を出でて光さやかなり。おごらず正しき心を保てば、望み事おのずから成るべし。', 'romaji'=>'Tsuki kumo o idete hikari sayaka nari. Ogorazu tadashiki kokoro o tamoteba, nozomigoto onozukara naru beshi.', 'en'=>'Like the moon coming out from behind the clouds, things grow clear. Stay humble and steady, and what you hope for may come in its own time.'],
+    ['ja'=>'春の野に花咲きそろうがごとし。人の恩を忘れず励めば、喜びいよいよ重なるべし。', 'romaji'=>'Haru no no ni hana sakisorou ga gotoshi. Hito no on o wasurezu hagemeba, yorokobi iyoiyo kasanaru beshi.', 'en'=>'Like a spring field in full bloom. Keep working and remember those who helped you, and your joys may keep multiplying.'],
+  ],
+  'kichi' => [
+    ['ja'=>'朝日の山の端を照らすがごとし。焦らず一歩ずつ進めば、道はおのずと開くべし。', 'romaji'=>'Asahi no yama no ha o terasu ga gotoshi. Aserazu ippo zutsu susumeba, michi wa onozuto hiraku beshi.', 'en'=>'Like the morning sun lighting the ridge of a mountain. Go one step at a time without rushing, and the way may open.'],
+    ['ja'=>'穏やかなる流れに舟を進むるがごとし。身の程を守りて油断せざれば、事なく運ぶべし。', 'romaji'=>'Odayaka naru nagare ni fune o susumuru ga gotoshi. Mi no hodo o mamorite yudan sezareba, koto naku hakobu beshi.', 'en'=>'Like a boat moving down a calm river. Know your limits and stay alert, and things may go smoothly.'],
+  ],
+  'chukichi' => [
+    ['ja'=>'木々の芽の日ごとにふくらむがごとし。今の努めを怠らねば、やがて実を結ぶべし。', 'romaji'=>'Kigi no me no higoto ni fukuramu ga gotoshi. Ima no tsutome o okotaraneba, yagate mi o musubu beshi.', 'en'=>'Like buds swelling a little more each day. Keep up your efforts now, and they may bear fruit in time.'],
+    ['ja'=>'雨上がりの空しだいに晴るるがごとし。人と和して事を進むれば、よき知らせあるべし。', 'romaji'=>'Ameagari no sora shidai ni haruru ga gotoshi. Hito to washite koto o susumureba, yoki shirase aru beshi.', 'en'=>'Like the sky slowly clearing after rain. Work in harmony with others, and good news may come.'],
+  ],
+  'shokichi' => [
+    ['ja'=>'小川の水の絶えず流るるがごとし。小さき事を大切にすれば、幸い少しずつ来たるべし。', 'romaji'=>'Ogawa no mizu no taezu nagaruru ga gotoshi. Chiisaki koto o taisetsu ni sureba, saiwai sukoshi zutsu kitaru beshi.', 'en'=>'Like a small stream that never stops flowing. Take care of small things, and good fortune may come little by little.'],
+    ['ja'=>'庭の草木に水をやるがごとし。欲を張らず日々を丁寧に送れば、心安らかなるべし。', 'romaji'=>'Niwa no kusaki ni mizu o yaru ga gotoshi. Yoku o harazu hibi o teinei ni okureba, kokoro yasuraka naru beshi.', 'en'=>'Like watering the plants in a garden. Keep your wants modest and live each day with care, and your mind may be at peace.'],
+  ],
+  'hankichi' => [
+    ['ja'=>'霧の中に道を探すがごとし。急がず足元を確かめて進めば、迷うことなかるべし。', 'romaji'=>'Kiri no naka ni michi o sagasu ga gotoshi. Isogazu ashimoto o tashikamete susumeba, mayou koto nakaru beshi.', 'en'=>'Like finding your way through mist. Don\'t hurry, check each step, and you need not lose your way.'],
+    ['ja'=>'月の半ば雲に隠るるがごとし。良きことも悪しきことも半ばなれば、心を静かに保つべし。', 'romaji'=>'Tsuki no nakaba kumo ni kakururu ga gotoshi. Yoki koto mo ashiki koto mo nakaba nareba, kokoro o shizuka ni tamotsu beshi.', 'en'=>'Like a moon half hidden by clouds. Good and bad come in equal parts for now, so keep your mind calm.'],
+  ],
+  'suekichi' => [
+    ['ja'=>'冬の木の春を待つがごとし。今は根を養う時なれば、やがて花咲くべし。', 'romaji'=>'Fuyu no ki no haru o matsu ga gotoshi. Ima wa ne o yashinau toki nareba, yagate hana saku beshi.', 'en'=>'Like a winter tree waiting for spring. For now, tend your roots; in time, flowers may bloom.'],
+    ['ja'=>'遠き山道を一歩ずつ登るがごとし。初めは苦しくとも、終わりには良き眺めあるべし。', 'romaji'=>'Tōki yamamichi o ippo zutsu noboru ga gotoshi. Hajime wa kurushiku tomo, owari ni wa yoki nagame aru beshi.', 'en'=>'Like climbing a long mountain path one step at a time. The climb is hard at first, but a fine view may be waiting at the end.'],
+  ],
+  'sueshokichi' => [
+    ['ja'=>'夜明け前の空のほのかに白むがごとし。望みを捨てず待てば、小さき喜び来たるべし。', 'romaji'=>'Yoake mae no sora no honoka ni shiromu ga gotoshi. Nozomi o sutezu mateba, chiisaki yorokobi kitaru beshi.', 'en'=>'Like the sky just starting to pale before dawn. Don\'t give up hope, and a small joy may come.'],
+    ['ja'=>'蒔きし種のまだ土の中にあるがごとし。焦らず世話を続ければ、いずれ芽吹くべし。', 'romaji'=>'Makishi tane no mada tsuchi no naka ni aru ga gotoshi. Aserazu sewa o tsuzukereba, izure mebuku beshi.', 'en'=>'Like a seed still under the soil. Keep tending it without rushing, and it may sprout in time.'],
+  ],
+  'kyo' => [
+    ['ja'=>'冬枯れの野にも春は来たる。今はつつしみて時を待てば、やがて道ひらくべし。', 'romaji'=>'Fuyugare no no ni mo haru wa kitaru. Ima wa tsutsushimite toki o mateba, yagate michi hiraku beshi.', 'en'=>'Even a winter field sees spring. Hold back for now and wait for the right time, and a way may open.'],
+    ['ja'=>'嵐の夜の明くるを待つがごとし。無理をせず身を慎めば、災いおのずから去るべし。', 'romaji'=>'Arashi no yo no akuru o matsu ga gotoshi. Muri o sezu mi o tsutsushimeba, wazawai onozukara saru beshi.', 'en'=>'Like waiting for a stormy night to end. Don\'t push yourself and act with care, and the trouble may pass on its own.'],
+  ],
+];
+// Romaji for the practice-slip topic headings and lines (readings checked by the site owner, 2026-10-17).
+$EN_TRY_TOPIC_ROMAJI = ['願望'=>'ganbō', '待人'=>'machibito', '失物'=>'usemono', '旅行'=>'ryokō', '学問'=>'gakumon', '恋愛'=>'ren\'ai', '転居'=>'tenkyo'];
+$EN_TRY_LINE_ROMAJI = [
+  '叶う'=>'kanau', '遅けれど叶う'=>'osokeredo kanau', '急ぐな'=>'isogu na',
+  '来る'=>'kitaru', '来るが遅し'=>'kitaru ga ososhi', '来ず'=>'kozu',
+  '出る'=>'deru', '遅けれど出る'=>'osokeredo deru', '出がたし'=>'degatashi',
+  '良し'=>'yoshi', '近きは良し'=>'chikaki wa yoshi', '控えよ'=>'hikaeyo',
+  '安心せよ'=>'anshin seyo', '努力せよ'=>'doryoku seyo', '油断すべからず'=>'yudan subekarazu',
+  '急ぐべからず'=>'isogu bekarazu', '慎め'=>'tsutsushime', '障りあり'=>'sawari ari',
+];
 
 // ---- Official sites (verified 2026-10-16; see report). Dazaifu Tenmangu: NOT linked (user decision).
 // Itsukushima Shrine: NOT linked (hidden "no links" statement found in its page source; pending user decision).

@@ -159,6 +159,10 @@ section>.rules+.small{margin-top:20px}
 
 /* official sites */
 .official{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 40px;border-bottom:1px solid var(--line)}
+.history h3{font-family:var(--ff-head);font-weight:600;font-size:19px;margin:26px 0 6px}
+.history h3:first-child{margin-top:0}
+.official-h{font-family:var(--ff-head);font-weight:600;font-size:20px;margin:28px 0 4px}
+.official-h:first-child{margin-top:0}
 .official li{display:flex;flex-direction:column;gap:2px;padding:16px 0;border-top:1px solid var(--line)}
 .o-name{font-family:var(--ff-head);font-weight:600;font-size:19px;color:var(--ink);text-decoration:none;align-self:flex-start}
 .o-name:hover{text-decoration:underline;text-decoration-color:var(--shu);text-underline-offset:3px}
@@ -237,7 +241,14 @@ section.shared{border:1px solid var(--line);background:var(--card);padding:18px 
 .slip-poem{border:1px dashed #cfc6b3;border-radius:4px;padding:10px;text-align:center;font-size:12px;color:#9a917f;margin-bottom:14px}
 .slip-lines>div{display:grid;grid-template-columns:3.6em 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
 .slip-lines>div:last-child{border-bottom:1px solid var(--line)}
+/* 総評：和歌の下・項目の上。漢字→読み→英語の順に、紙の中央にそろえる */
+.slip-sum{text-align:center;margin-bottom:16px}
+.slip-sum [lang="ja"]{font-size:16px;font-weight:500;line-height:1.9;letter-spacing:.04em;text-wrap:balance}
+.slip-sum .r{font-family:var(--ff-head);font-style:italic;color:var(--muted);font-size:13px;line-height:1.5;margin-top:6px}
+.slip-sum .en{font-size:14px;color:#4a463f;line-height:1.6;margin-top:6px}
 .slip-lines dt{font-size:17px;font-weight:700}
+.slip-lines dt .r{display:block;font-family:var(--ff-head);font-style:italic;font-weight:400;font-size:12px;color:var(--muted);line-height:1.3}
+.slip-lines dd .r{display:block;font-family:var(--ff-head);font-style:italic;font-size:13px;color:var(--muted);line-height:1.4}
 .slip-lines dd [lang="ja"]{display:block;font-size:16px;font-weight:500}
 .slip-lines dd .en{display:block;font-size:13px;color:var(--muted);line-height:1.5}
 .slip-foot{font-size:11px;color:var(--muted);text-align:center;margin-top:14px;line-height:1.5}

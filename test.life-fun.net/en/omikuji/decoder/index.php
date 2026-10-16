@@ -102,6 +102,7 @@ require EN_INC . '/head.php';
   </table>
   <div class="sec-body">
     <p>The poem is part of the message, not decoration: at Meiji Jingu, the omikuji is built around the poem instead of a fortune level. A classical poem needs more than a word list to translate, so if your slip has one, ask at the counter or look for an English version of that slip.</p>
+    <p>Some slips also include a short passage about your fortune as a whole. Where it sits on the slip, and whether it has a heading, varies. JNTO notes that omikuji always explain how to improve your fortune. The <a href="/en/omikuji/try/">practice slip</a> has an overall passage you can read.</p>
   </div>
 </section>
 

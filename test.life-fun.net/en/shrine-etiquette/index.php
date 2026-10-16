@@ -152,10 +152,10 @@ require EN_INC . '/head.php';
     <div class="num">03 — Official sites</div>
     <div>
       <h2>Check the official site before you go</h2>
-      <p>Hours, rules and English information change. These shrines and temples have official pages in English.</p>
+      <p>Hours, rules and English-language information can change. These shrines have official pages in English.</p>
     </div>
   </div>
-  <?php en_official_list(); ?>
+  <?php en_official_list('Shrine'); ?>
 </section>
 
 <section class="sources">

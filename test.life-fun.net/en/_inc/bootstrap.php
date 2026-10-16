@@ -84,16 +84,26 @@ function en_og_image(array $chain): ?string
     return null;
 }
 
-/** Official sites list ($EN_OFFICIAL). */
-function en_official_list(): void
+/**
+ * Official sites list ($EN_OFFICIAL).
+ * $type 'Shrine' or 'Temple' lists only that type (shrine etiquette page: shrines only).
+ * null lists both, each under its own heading, so shrines and temples are never mixed in one row.
+ */
+function en_official_list(?string $type = null): void
 {
     global $EN_OFFICIAL;
-    echo '<ul class="official">';
-    foreach ($EN_OFFICIAL as $o) {
-        echo '<li><a class="o-name" href="' . en_e($o['url']) . '" target="_blank" data-official="' . en_e($o['key']) . '">'
-            . en_e($o['name']) . '</a><span class="o-meta">' . en_e($o['type']) . ' · ' . en_e($o['place']) . '</span>'
-            . '<span class="o-note">' . en_e($o['note']) . '</span></li>';
+    $groups = $type === null ? ['Shrine' => 'Shrines', 'Temple' => 'Temples'] : [$type => null];
+    foreach ($groups as $t => $heading) {
+        if ($heading !== null) echo '<h3 class="official-h">' . en_e($heading) . '</h3>';
+        echo '<ul class="official">';
+        foreach ($EN_OFFICIAL as $o) {
+            if ($o['type'] !== $t) continue;
+            echo '<li><a class="o-name" href="' . en_e($o['url']) . '" target="_blank" data-official="' . en_e($o['key']) . '">'
+                . en_e($o['name']) . '</a><span class="o-meta">' . en_e($o['type']) . ' · ' . en_e($o['place']) . '</span>'
+                . '<span class="o-note">' . en_e($o['note']) . '</span></li>';
+        }
+        echo '</ul>';
     }
-    echo '</ul>';
-    echo '<p class="small">Links open the official site in a new tab. We are not affiliated with these shrines and temples.</p>';
+    $who = $type === 'Shrine' ? 'these shrines' : ($type === 'Temple' ? 'these temples' : 'these shrines and temples');
+    echo '<p class="small">Links open the official site in a new tab. We are not affiliated with ' . $who . '.</p>';
 }
