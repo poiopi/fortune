@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="元命とは何かを十大主星の一覧でわかりやすく解説。算命学の主星・従星・五行バランスの意味と計算方法、四柱推命との違いも紹介。">
   <title>算命学とは？元命・主星・従星の意味と計算方法をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

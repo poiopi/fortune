@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="四柱推命とは何か、命式・十神・大運・天中殺の意味をわかりやすく解説。年柱・月柱・日柱・時柱の読み方から十干十二支まで四柱推命の基礎を完全ガイド。">
   <title>四柱推命とは？命式・十神・大運・天中殺の意味をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

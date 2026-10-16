@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <meta name="description" content="MBTI×血液型×星座で導く恋愛傾向診断。3つの入力からあなたの恋愛スタイル・傾向をひも解きます。">
 <title>恋愛診断｜MBTI×血液型×星座</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -469,14 +469,6 @@ function restart() {
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    document.getElementById('spDropdown').classList.remove('open');
-  }
-});
 </script>
 </body>
 </html>

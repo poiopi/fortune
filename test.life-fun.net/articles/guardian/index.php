@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="守護霊・守護獣とは何か、その役割と種類、守護霊診断の楽しみ方をわかりやすく解説。龍神・白狐・鳳凰・天使など20種類の守護霊タイプ別解説も。">
   <title>守護霊診断とは？守護霊・守護獣の意味をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

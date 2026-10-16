@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="11月18日の誕生花カラー（黄）の花言葉・特徴・魅力をわかりやすく解説。「熱意」を象徴する黄色い苞に包まれた花を咲かせる多年草の意味を紹介します。">
   <title>11月18日の誕生花はカラー（黄）｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

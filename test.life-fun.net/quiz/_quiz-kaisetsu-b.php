@@ -66,7 +66,7 @@ if ($_isIndexable && !$_hasChoice) {
 <meta name="description" content="<?= htmlspecialchars($quiz['description'], ENT_QUOTES, 'UTF-8') ?>">
 <title><?= htmlspecialchars($quiz['title'], ENT_QUOTES, 'UTF-8') ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= htmlspecialchars($_canonical, ENT_QUOTES, 'UTF-8') ?>">

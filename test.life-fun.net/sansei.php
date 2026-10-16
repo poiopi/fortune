@@ -257,7 +257,7 @@ $weekdayJa   = ['日','月','火','水','木','金','土'][(int)$todayObj->forma
 <meta name="description" content="西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定する三星統合鑑定。">
 <title>三星統合鑑定｜西洋占星術×タロット×四柱推命の統合鑑定</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <!-- AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -1369,14 +1369,6 @@ form.addEventListener('submit', function(){
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function toggleSpMenu(){
-  document.getElementById('spDropdown').classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown')){
-    document.getElementById('spDropdown').classList.remove('open');
-  }
-});
 </script>
 </body>
 </html>

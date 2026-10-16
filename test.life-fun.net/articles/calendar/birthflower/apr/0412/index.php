@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="4月12日の誕生花カタクリの花言葉・特徴・魅力をわかりやすく解説。「初恋」を象徴するうつむき加減に咲く紫紅色の花の意味を紹介します。">
   <title>4月12日の誕生花はカタクリ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

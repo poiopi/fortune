@@ -240,7 +240,7 @@ function autoLink(string $html, string $currentSlug): string {
     $linked = [];
 
     return preg_replace_callback(
-        '/<p([^>]*)>(.*?)<\/p>/su',
+        '/<p((?:\s[^>]*)?)>(.*?)<\/p>/su',
         function ($pMatch) use (&$linked, $currentSlug) {
             global $_autoLinkMap;
             $inner = $pMatch[2];

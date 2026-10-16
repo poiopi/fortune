@@ -14,7 +14,7 @@ ob_start();
   <meta name="description" content="算命学の十大主星「龍高星」を徹底解説。探求と革新の星・龍高星の基本性格や恋愛の傾向、向いている適職、他星との相性まで初心者にもわかりやすく紹介します。">
   <title>龍高星とは？算命学が示す性格・恋愛・適職・相性を解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

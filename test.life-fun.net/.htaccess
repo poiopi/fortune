@@ -10,7 +10,8 @@ RewriteBase /
 # 2026-09-24、本番に tools/*.php・*.sh と docs/love/*.json がアップロードされ外部から
 # 実行・閲覧できる状態だったため追加（.vscode/sftp.json の除外設定との二重の守り）
 # 2026-09-29、_scratch/（開発用のモックアップ）も本番で公開されていたため追加
-RewriteRule ^(tools|docs|tests|_scratch)(/|$) - [R=404,L]
+# 2026-10-16、inc/ 配下の部品PHPの直接アクセスを防ぐため inc を追加（PHPの require は __DIR__ 相対のファイル読み込みなので影響しない）
+RewriteRule ^(tools|docs|tests|_scratch|inc)(/|$) - [R=404,L]
 
 # ドット（.）で始まるファイル・フォルダ（.gitignore 等）は公開しない（404を返す）。/.well-known/（SSL証明書の更新等）は除く
 # 2026-09-30、2026-07-03 の事故で上がった /.gitignore が本番に残り、外部から読める状態だったため追加

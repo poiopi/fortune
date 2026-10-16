@@ -15,7 +15,7 @@
   <meta name="description" content="タロット・四柱推命・MBTI・九星気学など各占術の意味・歴史・活用方法をわかりやすく解説。無料占いをより深く楽しむための占い解説ガイド。">
   <title>占い解説ガイド｜タロット・四柱推命・MBTIなど各占術を徹底解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -128,7 +128,7 @@
 </head>
 <body>
 
-<?php $headerTheme = 'light'; $headerAction = ['label' => 'TOPへ戻る', 'url' => '/']; require __DIR__.'/../inc/header.php'; ?>
+<?php $headerTheme = 'light'; $headerAction = ['label' => 'TOPへ戻る', 'url' => '/', 'dir' => 'back']; require __DIR__.'/../inc/header.php'; ?>
 
 <div class="wrap">
   <?php $bcPath = '/articles/'; $bcName = '占い解説ガイド'; require __DIR__.'/../inc/breadcrumb.php'; ?>

@@ -275,7 +275,6 @@ footer a:hover{color:var(--gold)}
 
 <script>
 function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,ko,zh-CN,zh-TW,es,fr,de',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element')}
-function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open')}
 
 const LUCKY = new Set([1,3,5,6,7,8,11,13,15,16,17,21,23,24,25,31,32,33,35,37,38,41,45,47,48,52,57,58,63,65,67,68,81]);
 

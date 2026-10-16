@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="3月12日の誕生花キャンディタフトの花言葉・特徴・魅力をわかりやすく解説。「復活」を象徴する、白やピンクの小花が咲きそろう花の意味を紹介します。">
   <title>3月12日の誕生花はキャンディタフト｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="数秘術とは何か、運命数（ライフパスナンバー）の計算方法と1〜9+11・22の意味をわかりやすく解説。">
   <title>数秘術とは？運命数・誕生数の意味と計算方法をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,7 +98,7 @@ ob_start();
 <?php $headerTheme = 'light'; $headerAction = ['label' => '数秘術を診断する', 'url' => '/numerology']; require __DIR__.'/../../inc/header.php'; ?>
 
 <div class="wrap">
-  <?php $bcPath = '/articles/numerology/'; $bcName = '数秘術とは'; require __DIR__.'/../../inc/breadcrumb.php'; ?>
+  <?php $bcPath = '/articles/numerology/'; $bcName = '数秘術解説'; require __DIR__.'/../../inc/breadcrumb.php'; ?>
 
   <div class="art-hero">
     <span class="art-label">NUMEROLOGY · 完全ガイド</span>

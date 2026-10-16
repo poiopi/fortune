@@ -18,7 +18,7 @@ ob_start();
   <meta name="description" content="九星気学「九紫火星」の意味を解説。火の気を持つ第9星が守護する人の性格・直感力・恋愛・仕事・開運のヒントを紹介します。">
   <title>九紫火星とは｜九星気学・太陽の炎が宿す直感と名誉の開運ガイド</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

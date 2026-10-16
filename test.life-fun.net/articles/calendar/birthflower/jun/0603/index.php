@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="6月3日の誕生花クローバーの花言葉・特徴・魅力をわかりやすく解説。身近な野道に咲く白い花に込められた「約束」の意味を紹介します。">
   <title>6月3日の誕生花はクローバー｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

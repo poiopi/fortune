@@ -10,7 +10,7 @@
 <meta name="description" content="RPGゲーム風の無料占い。村を歩いてキャラクターに話しかけ、星座・数秘術・ジョブクラスで運命を占います。ユニークな体験型占いゲーム。">
 <title>RPG風占いゲーム｜村を歩いて星座・数秘術で運命診断</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -1200,11 +1200,6 @@ function jobClass(y,m,d){
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
-document.addEventListener('click',e=>{
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown'))
-    document.getElementById('spDropdown').classList.remove('open');
-});
 
 function resetGame(){
   pl={x:10,y:9,hp:30,mhp:30,mp:20,mmp:20};

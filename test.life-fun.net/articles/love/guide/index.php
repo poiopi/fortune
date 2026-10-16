@@ -24,7 +24,7 @@ ob_start();
   <meta name="description" content="Love Engineの恋愛傾向診断の仕組みをやさしく解説する使い方ガイド。Primitive・Style・Tendency・Bundleの意味がわかります。">
   <title>使い方ガイド｜Love Engineの仕組みをやさしく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

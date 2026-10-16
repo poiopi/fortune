@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="新月・三日月・上弦・満月など8つの月相の意味と、時期ごとのおすすめの過ごし方を一覧で解説。月の満ち欠け（月相）の基本とスピリチュアルな解釈も紹介します。">
   <title>月の満ち欠け（月相）とは？8つの月相の意味を完全解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

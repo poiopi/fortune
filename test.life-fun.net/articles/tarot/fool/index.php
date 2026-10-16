@@ -19,7 +19,7 @@ ob_start();
   <meta name="description" content="タロット「愚者（THE FOOL）」の意味を徹底解説。正位置・逆位置それぞれの恋愛・仕事・人間関係への影響と、カードが伝えるメッセージをわかりやすく紹介します。">
   <title>愚者（THE FOOL）タロットの意味｜正位置・逆位置・恋愛・仕事を解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

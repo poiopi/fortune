@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="六曜「赤口」の意味・由来・過ごし方を解説。正午のみ吉、それ以外は凶とされる赤口の日に注意すべきことをわかりやすく紹介します。">
   <title>赤口（しゃっこう）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

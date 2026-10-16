@@ -358,7 +358,7 @@ if($ym>0&&$yd>0&&$pm>0&&$pd>0){
 <meta name="description" content="二人の生年月日を入れるだけで相性を鑑定。結婚・恋愛の相性スコア、告白の言葉、おすすめデートスポット、プレゼントまで占います。">
 <title>相性診断｜二人の運命を星と数字で占う</title>
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -1327,11 +1327,6 @@ window._shareText = <?=json_encode($shareText)?>;
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'ja',includedLanguages:'en,zh-TW,zh-CN,ko',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');
 }
-function toggleSpMenu(){document.getElementById('spDropdown').classList.toggle('open');}
-document.addEventListener('click',e=>{
-  if(!e.target.closest('.sp-menu-btn')&&!e.target.closest('.sp-dropdown'))
-    document.getElementById('spDropdown').classList.remove('open');
-});
 </script>
 </body>
 </html>

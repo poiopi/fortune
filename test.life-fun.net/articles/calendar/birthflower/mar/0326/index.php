@@ -20,7 +20,7 @@ ob_start();
   <meta name="description" content="3月26日の誕生花プリムラ・オブコニカの花言葉・特徴・魅力をわかりやすく解説。「神秘な心」を象徴する、色とりどりに咲き続ける花の意味を紹介します。">
   <title>3月26日の誕生花はプリムラ・オブコニカ｜花言葉と魅力をわかりやすく解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

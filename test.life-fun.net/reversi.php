@@ -15,7 +15,7 @@
 <title>リバーシ占い｜布石から読み解く今日の運勢【無料占い】</title>
 <link rel="canonical" href="https://life-fun.net/reversi" />
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
 <!-- Google Translate -->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

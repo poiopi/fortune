@@ -26,7 +26,7 @@ ob_start();
   <meta name="description" content="Love Engineが算出する恋愛スタイル指標（積極性・愛情表現・包容力など）を、9216パターンの実測データで解説。">
   <title>恋愛スタイル指標（Style）とは｜Love Engineの計算方法を実測データで解説</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
