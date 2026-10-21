@@ -738,7 +738,7 @@ function submitFree(){
   const val=document.getElementById('freeInput').value.trim();
   if(val.length<3){alert('3文字以上入力してください');return;}
   const q=state.questions[state.current];
-  const fd=new FormData();
+  const fd=new URLSearchParams();
   fd.append('action','save_answer');fd.append('cat',state.role);fd.append('qid',q.id);fd.append('answer',val);
   fetch('',{method:'POST',body:fd}).catch(()=>{});
   document.querySelectorAll('.choice-btn').forEach(b=>b.classList.remove('selected'));
