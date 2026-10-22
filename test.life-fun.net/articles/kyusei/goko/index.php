@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
     $listUrl   = '/articles/kyusei/#nine-stars';
     $listTitle = '九星一覧';
@@ -16,7 +17,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/kyusei/goko/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="九星気学「五黄土星」の意味を解説。九星の中心・第5星が守護する人の性格・カリスマ・恋愛・仕事・開運のヒントを紹介します。">
-  <title>五黄土星とは｜九星気学・九星の帝王が持つカリスマと開運のヒント</title>
+  <title>五黄土星とは｜九星気学・九星の帝王が持つカリスマと開運のヒント<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

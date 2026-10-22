@@ -7,8 +7,8 @@
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/disclaimer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="占いPortalの免責事項。本サイトのコンテンツの利用・占い結果の取り扱い・外部リンクに関する免責事項をご確認ください。">
-  <title>免責事項｜<?= SITE_NAME ?></title>
+  <meta name="description" content="<?= SITE_NAME ?>の免責事項。本サイトのコンテンツの利用・占い結果の取り扱い・外部リンクに関する免責事項をご確認ください。">
+  <title>免責事項<?= site_title_suffix(TITLE_SEP . SITE_NAME) ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -54,7 +54,7 @@
 
   <div class="section">
     <h2>コンテンツの目的について</h2>
-    <p>占いPortal（以下「当サイト」）が提供する占い・診断ツール、および解説記事のすべては、エンターテインメントおよび自己理解のヒントを目的としたものです。</p>
+    <p><?= SITE_NAME ?>（以下「当サイト」）が提供する占い・診断ツール、および解説記事のすべては、エンターテインメントおよび自己理解のヒントを目的としたものです。</p>
     <p>占いや診断の結果は、将来起こり得る出来事を予言・保証するものではありません。日々の生活のなかで楽しむための参考情報としてご活用ください。</p>
   </div>
 

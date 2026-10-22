@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/guardian/taiyou/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="守護霊「太陽の神使」の意味を解説。太陽に仕える神の使いが守護する人の性格・生命力・開運のヒントを紹介します。">
-  <title>守護霊「太陽の神使」とは｜生命力と行動力の守護・開運のヒントを解説</title>
+  <title>守護霊「太陽の神使」とは｜生命力と行動力の守護・開運のヒントを解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,7 +124,7 @@ ob_start();
     $relatedItems = [
       ['label'=>'守護霊診断', 'title'=>'あなたの守護霊タイプを診断する →', 'url'=>'/guardian'],
       ['label'=>'守護霊ガイド', 'title'=>'守護霊・守護獣の意味をわかりやすく解説 →', 'url'=>'/articles/guardian/'],
-      ['label'=>'三星統合鑑定', 'title'=>'タロット×星座×数秘で深読みする →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定', 'title'=>'タロット×星座×数秘で深読みする →', 'url'=>'/sansei'],
       ['label'=>'前世・カルマ診断とは', 'title'=>'前世・輪廻転生・カルマの意味を解説 →', 'url'=>'/articles/zense/'],
     ];
     require __DIR__.'/../../../inc/article-related.php';

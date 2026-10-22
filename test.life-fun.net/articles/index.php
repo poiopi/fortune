@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1); require_once __DIR__ . '/../inc/site.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://life-fun.net/articles/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="タロット・四柱推命・MBTI・九星気学など各占術の意味・歴史・活用方法をわかりやすく解説。無料占いをより深く楽しむための占い解説ガイド。">
-  <title>占い解説ガイド｜タロット・四柱推命・MBTIなど各占術を徹底解説</title>
+  <title>占い解説ガイド｜タロット・四柱推命・MBTIなど各占術を徹底解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

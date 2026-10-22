@@ -10,7 +10,7 @@
  * アクセントカラー：#7c4dce（紫・全解説ページ共通）
  * 基準ページ：articles/tarot/index.php
  */
-declare(strict_types=1); ?>
+declare(strict_types=1); require_once __DIR__ . '/inc/site.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -25,7 +25,7 @@ declare(strict_types=1); ?>
   <link rel="canonical" href="https://life-fun.net/articles/[KEY]/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="[META_DESCRIPTION]">
-  <title>[PAGE_TITLE]</title>
+  <title>[PAGE_TITLE]<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -247,7 +247,7 @@ declare(strict_types=1); ?>
     <div class="aft-col">
       <p class="aft-heading">人気の占い</p>
       <ul>
-        <li><a href="/">三星統合鑑定</a></li>
+        <li><a href="/sansei">三星統合鑑定</a></li>
         <li><a href="/tarot">タロット占い</a></li>
         <li><a href="/shichu">四柱推命</a></li>
         <li><a href="/seiza">西洋占星術</a></li>
@@ -276,7 +276,7 @@ declare(strict_types=1); ?>
       </ul>
     </div>
   </div>
-  <p class="aft-copy">© <?= date('Y') ?> 占いPortal</p>
+  <p class="aft-copy">© <?= date('Y') ?> <?= SITE_NAME ?></p>
 </footer>
 
 <script>

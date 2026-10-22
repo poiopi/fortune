@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/tarot/wheel/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="タロット「運命の輪（WHEEL OF FORTUNE）」の意味を徹底解説。正位置・逆位置それぞれの恋愛・仕事・人間関係への影響と、カードが伝えるメッセージをわかりやすく紹介します。">
-  <title>運命の輪（WHEEL OF FORTUNE）タロットの意味｜正位置・逆位置・恋愛・仕事を解説</title>
+  <title>運命の輪（WHEEL OF FORTUNE）タロットの意味｜正位置・逆位置・恋愛・仕事を解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,7 +98,7 @@ ob_start();
     $relatedItems = [
       ['label'=>'タロット占い',      'title'=>'実際にカードを引いてみる →',      'url'=>'/tarot'],
       ['label'=>'タロット完全ガイド', 'title'=>'大アルカナの基礎知識を学ぶ →',    'url'=>'/articles/tarot/#cards'],
-      ['label'=>'三星統合鑑定',      'title'=>'タロット×星座×数秘で深読みする →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定',      'title'=>'タロット×星座×数秘で深読みする →', 'url'=>'/sansei'],
       ['label'=>'数秘術',            'title'=>'誕生日から運命数を読み解く →',      'url'=>'/numerology'],
     ];
     require __DIR__.'/../../../inc/article-related.php';

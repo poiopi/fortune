@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 // Primitive名 → Bundle記事slugの対応表（articles/love/bundle/配下）。
 const SEIZA_TPL_BUNDLE_SLUGS = [
@@ -22,7 +23,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/seiza/<?= $item['slug'] ?>/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= htmlspecialchars($item['name']) ?>の恋愛傾向を、Love Engineの実測データ（<?= (int)$item['sampleSize'] ?>パターン分析）で解説。恋愛スタイル・結婚観の傾向を、なぜそうなるかという理由つきで紹介。">
-  <title><?= htmlspecialchars($item['name']) ?>の恋愛傾向｜Love Engineの実測データで解説</title>
+  <title><?= htmlspecialchars($item['name']) ?>の恋愛傾向｜Love Engineの実測データで解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

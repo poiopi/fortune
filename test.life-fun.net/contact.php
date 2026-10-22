@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $error = 'お問い合わせ内容は10文字以上ご記入ください。';
         } else {
             $to      = 'info@life-fun.net';
-            $subject = '【占いPortal】お問い合わせ：' . mb_substr($name, 0, 30);
+            $subject = '【' . SITE_NAME . '】お問い合わせ：' . mb_substr($name, 0, 30);
             $body    = "お名前：{$name}\nメール：{$email}\n\n{$message}";
             $headers = "From: noreply@life-fun.net\r\nReply-To: {$email}\r\nContent-Type: text/plain; charset=UTF-8";
             mail($to, $subject, $body, $headers);
@@ -42,8 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta charset="UTF-8">
   <link rel="canonical" href="https://life-fun.net/contact" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="占いPortalへのご意見・ご感想・お問い合わせはこちらのフォームよりご連絡ください。">
-  <title>お問い合わせ｜<?= SITE_NAME ?></title>
+  <meta name="description" content="<?= SITE_NAME ?>へのご意見・ご感想・お問い合わせはこちらのフォームよりご連絡ください。">
+  <title>お問い合わせ<?= site_title_suffix(TITLE_SEP . SITE_NAME) ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

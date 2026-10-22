@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/kyusei/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="九星気学とは何か、本命星・月命星・吉方位・9つの星の意味をわかりやすく解説。生年月日から本命星を調べる方法から九星それぞれの性格・特徴まで完全ガイド。">
-  <title>九星気学とは？本命星・月命星・吉方位の意味をわかりやすく解説</title>
+  <title>九星気学とは？本命星・月命星・吉方位の意味をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

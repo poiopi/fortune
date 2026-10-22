@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 $_PUBLISHED = [
   ['slug'=>'a-love',  'code'=>'A型',  'kw'=>'誠実さが際立って強く出る'],
@@ -20,7 +21,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/blood/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="血液型別の恋愛傾向を、Love Engineの実測データ（9216パターン分析）で解説。恋愛スタイル・結婚観の傾向とその理由を紹介。">
-  <title>血液型×恋愛傾向｜A・B・O・AB型の恋愛スタイルを実測データで解説</title>
+  <title>血液型×恋愛傾向｜A・B・O・AB型の恋愛スタイルを実測データで解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

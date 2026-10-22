@@ -10,6 +10,7 @@ $ctaText  = '生年月日と生まれた時間帯から、太陽星座・エレ�
 $ctaUrl   = '/seiza';
 $ctaBtn   = '西洋占星術で鑑定する →';
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 
 // 全12星座ナビデータ（他の星座リンク用）
 $_ALL_SIGNS = [
@@ -38,7 +39,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/seiza/<?= $sign['slug'] ?>/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= htmlspecialchars($sign['description']) ?>">
-  <title><?= htmlspecialchars($sign['name']) ?>とは？性格・恋愛・仕事・相性を西洋占星術で徹底解説</title>
+  <title><?= htmlspecialchars($sign['name']) ?>とは？性格・恋愛・仕事・相性を西洋占星術で徹底解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

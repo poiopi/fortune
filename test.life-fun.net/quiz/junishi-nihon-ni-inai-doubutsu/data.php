@@ -42,7 +42,7 @@ return [
   ],
   'explanation_indexable' => true,
 
-  'title'       => '十二支の中で、実際には日本にいない動物は？｜Daily Quiz - '.SITE_NAME,
+  'title'       => '十二支の中で、実際には日本にいない動物は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
   'description' => '十二支にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/calendar',

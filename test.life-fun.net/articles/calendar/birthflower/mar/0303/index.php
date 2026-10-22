@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ ob_start();
   <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="3月3日の誕生花ナノハナの花言葉・特徴・魅力をわかりやすく解説。「予期せぬ出会い」を象徴する、早春に一面を彩る黄色い花の意味を紹介します。">
-  <title>3月3日の誕生花はナノハナ｜花言葉と魅力をわかりやすく解説</title>
+  <title>3月3日の誕生花はナノハナ｜花言葉と魅力をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

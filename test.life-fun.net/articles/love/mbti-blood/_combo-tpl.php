@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 ob_start();
 ?>
@@ -13,7 +14,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/mbti-blood/<?= $item['slug'] ?>/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= htmlspecialchars($item['description']) ?>">
-  <title><?= htmlspecialchars($item['title']) ?></title>
+  <title><?= htmlspecialchars($item['title']) ?><?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

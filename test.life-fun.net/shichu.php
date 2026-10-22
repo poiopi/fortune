@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1); require_once __DIR__ . '/inc/site.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,7 +12,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生年月日と生まれた時間から四柱推命の命式を無料で算出。年柱・月柱・日柱・時柱・十神・大運をすべて表示します。">
-<title>四柱推命｜命式・十神・大運を無料で算出</title>
+<title>四柱推命｜命式・十神・大運を無料で算出<?= TITLE_SUFFIX ?></title>
 <link rel="canonical" href="https://life-fun.net/shichu" />
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">

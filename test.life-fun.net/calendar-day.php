@@ -3,6 +3,7 @@ declare(strict_types=1);
 require_once __DIR__.'/inc/dayinfo/DayInfoService.php';
 require_once __DIR__.'/inc/dayinfo/day-url.php';
 require_once __DIR__.'/inc/dayinfo/render-star-card.php';
+require_once __DIR__ . '/inc/site.php';
 
 // 六曜class→解説記事slugの変換表（class名とslugが一致しない箇所に注意）
 // rokuyo.php（Provider）自体は変更しないため、このページ側で保持する。
@@ -120,7 +121,7 @@ if ($luckySection['available']) {
 <link rel="canonical" href="https://life-fun.net/calendar-day?date=<?= htmlspecialchars($dayInfo['meta']['date']) ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="<?= htmlspecialchars($dateLabel) ?>の六曜・星座・九星をまとめて確認できる日別詳細ページ。">
-<title><?= htmlspecialchars($dateLabel) ?>の運勢｜開運カレンダー</title>
+<title><?= htmlspecialchars($dateLabel) ?>の運勢｜開運カレンダー<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 

@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/site.php';
 
 /**
  * inc/ai-fortune-modal.php
@@ -196,7 +197,7 @@ declare(strict_types=1);
         <button type="button" class="aic-mute-btn" id="aicMuteBtn" aria-label="通知音を消す">🔊</button>
         <button type="button" class="aic-modal-close" id="aicCloseBtn" aria-label="閉じる">✕</button>
         <span class="aic-seal">🔮</span>
-        <div class="aic-chat-head-text"><strong>AI鑑定チャット</strong><span>fortune consultation</span></div>
+        <div class="aic-chat-head-text"><strong><?= htmlspecialchars(CHAT_TITLE, ENT_QUOTES) ?></strong><span>fortune consultation</span></div>
       </div>
       <div class="aic-progress-track"><div class="aic-progress-fill" id="aicProgressFill" style="width:25%"></div></div>
       <div class="aic-thread" id="aicThread"></div>
@@ -778,7 +779,7 @@ function aicShowResult(typingRow, effectiveTheme, resultData){
 var aicResultSeq = 0;
 
 function aicShowThemeGrid(isFirst){
-  var greeting = isFirst ? 'こんにちは。<br>何について知りたいですか？' : '他にも知りたいことはありますか？';
+  var greeting = isFirst ? 'こんにちは。<?= CHAT_BOT_NAME !== '' ? CHAT_BOT_NAME . 'です。' : '' ?><br>何について知りたいですか？' : '他にも知りたいことはありますか？';
   var html = '<div class="aic-bubble headline">'+greeting+'</div>' + aicTimeTag()
     + '<div class="aic-qr grid2">'+AIC_THEMES.map(function(t){
         return '<button type="button" class="aic-qr-btn" data-aic-theme="'+t.key+'"><span class="aic-card-icon">'+(AIC_THEME_ICONS[t.key]||'')+'</span>'+aicEsc(t.name)+'<span class="aic-tag">'+aicEsc(t.desc)+'</span></button>';

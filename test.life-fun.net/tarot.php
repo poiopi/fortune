@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1); require_once __DIR__ . '/inc/site.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +13,7 @@
 <link rel="canonical" href="https://life-fun.net/tarot" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="22枚の大アルカナが円形に並ぶ本格タロット占い。直感でカードを選び、恋愛・仕事・運勢へのメッセージを無料で受け取ってください。">
-<title>本格タロット占い｜大アルカナ22枚で運命を読む</title>
+<title>本格タロット占い｜大アルカナ22枚で運命を読む<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

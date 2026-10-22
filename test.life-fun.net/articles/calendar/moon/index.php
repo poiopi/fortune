@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/calendar/moon/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="新月・三日月・上弦・満月など8つの月相の意味と、時期ごとのおすすめの過ごし方を一覧で解説。月の満ち欠け（月相）の基本とスピリチュアルな解釈も紹介します。">
-  <title>月の満ち欠け（月相）とは？8つの月相の意味を完全解説</title>
+  <title>月の満ち欠け（月相）とは？8つの月相の意味を完全解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

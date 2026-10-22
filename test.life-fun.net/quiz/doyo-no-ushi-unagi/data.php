@@ -42,7 +42,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '土用の丑の日、うなぎを広めたのは誰？｜Daily Quiz - '.SITE_NAME,
+  'title'       => '土用の丑の日、うなぎを広めたのは誰？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
   'description' => '土用の丑の日にうなぎを食べる習慣にまつわる4択クイズ。有名なエピソードと、その裏側を解説します。',
 
   'cta_url'   => '/calendar',

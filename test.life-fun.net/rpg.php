@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1); require_once __DIR__ . '/inc/site.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://life-fun.net/rpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="description" content="RPGゲーム風の無料占い。村を歩いてキャラクターに話しかけ、星座・数秘術・ジョブクラスで運命を占います。ユニークな体験型占いゲーム。">
-<title>RPG風占いゲーム｜村を歩いて星座・数秘術で運命診断</title>
+<title>RPG風占いゲーム｜村を歩いて星座・数秘術で運命診断<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

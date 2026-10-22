@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/inc/site.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -15,7 +16,7 @@ declare(strict_types=1);
 <link rel="canonical" href="https://life-fun.net/sanmei" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生年月日から算命学の元命・主星・従星を無料で算出。五行バランス・強み・恋愛スタイル・仕事適性まで本格鑑定します。">
-<title>算命学｜元命・主星・従星・五行バランスを無料で算出</title>
+<title>算命学｜元命・主星・従星・五行バランスを無料で算出<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

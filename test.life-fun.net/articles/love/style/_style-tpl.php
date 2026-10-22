@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 // 血液型ラベル → 記事slugの対応表（articles/love/blood/index.phpの$_PUBLISHEDと同じ対応）。
 const STYLE_TPL_BLOOD_SLUGS = [
@@ -29,7 +30,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/style/<?= $item['slug'] ?>/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Love Engineの恋愛スタイル指標「<?= htmlspecialchars($item['name']) ?>」とは何か、どう計算されるかを9216パターンの実測データで解説。High/Mid/Lowの違いとMBTI・血液型別の傾向を紹介。">
-  <title><?= htmlspecialchars($item['name']) ?>（Style）とは｜Love Engineの計算方法と実測データを解説</title>
+  <title><?= htmlspecialchars($item['name']) ?>（Style）とは｜Love Engineの計算方法と実測データを解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

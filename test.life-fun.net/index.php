@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__.'/inc/oracle.php';
+require_once __DIR__.'/inc/site.php';
 
 $today      = new DateTimeImmutable();
 $todayStr   = $today->format('Y-m-d');
@@ -27,8 +28,12 @@ require_once __DIR__.'/inc/nav-cards.php';
 <meta charset="UTF-8">
 <link rel="canonical" href="https://life-fun.net/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="タロット占い・数秘術・九星気学・相性診断・姓名判断など無料の占いが揃う占いポータル。生年月日や名前を入力するだけで鑑定結果をすぐに表示します。">
-<title>無料占いポータル｜タロット・数秘術・九星気学・姓名判断</title>
+<meta name="description" content="<?= htmlspecialchars(TOP_DESCRIPTION, ENT_QUOTES) ?>">
+<title><?= htmlspecialchars(TOP_TITLE, ENT_QUOTES) ?></title>
+<?php if (SITE_WEBSITE_META): ?>
+<meta property="og:site_name" content="<?= htmlspecialchars(SITE_NAME, ENT_QUOTES) ?>">
+<script type="application/ld+json"><?= json_encode(['@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => SITE_NAME, 'alternateName' => SITE_ALT_NAMES, 'url' => SITE_URL . '/'], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?></script>
+<?php endif; ?>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -209,6 +214,7 @@ body {
   margin-bottom: .6rem;
   text-shadow: none;
 }
+.hero-h1-desc { display: block; font-size: .4em; letter-spacing: .3em; margin-top: .55rem; font-weight: 600; }
 .hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.5rem; }
 .hero-flagship-card {
   position: relative;
@@ -565,9 +571,9 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="hero-top-accent"></div>
 
   <div class="hero-inner">
-    <span class="hero-eyebrow h-d1">Free Fortune Telling · 占いPortal</span>
+    <span class="hero-eyebrow h-d1"><?= htmlspecialchars(TOP_EYEBROW, ENT_QUOTES) ?></span>
     <div class="hero-deco h-d2"><span>✦ ── ✦ ── ✦</span></div>
-    <h1 class="hero-h1 h-d3">無料占いポータル</h1>
+    <h1 class="hero-h1 h-d3"><?= TOP_H1_HTML ?></h1>
     <span class="hero-sub h-d4">星と運命の交差点 · 16種類の占術で今を読み解く</span>
     <div class="hero-flagship-card h-d5">
       <img class="hf-corner hf-corner-tl" src="/img/hero/corner-single.webp" alt="">
@@ -601,7 +607,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
       // Hero直下のピル：URL・アイコンは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として利用（二重管理を避ける）。
       // 表示名のみHero専用の短縮ラベルを使う（Heroは「入口」であり、カード一覧の正式名称とは役割が異なるため）。
       $_heroPills = [
-        'sansei' => '三星鑑定',
+        'sansei' => '三星統合鑑定',
         'seiza'  => '西洋占星術',
         'tarot'  => 'タロット',
         'shichu' => '四柱推命',

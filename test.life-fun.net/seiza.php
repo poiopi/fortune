@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/inc/site.php';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -15,7 +16,7 @@ declare(strict_types=1);
 <link rel="canonical" href="https://life-fun.net/seiza" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生年月日と生まれた時間帯から、太陽星座・エレメント・内面タイプを無料で鑑定。恋愛スタイル・仕事適性まで西洋占星術で深掘りします。">
-<title>西洋占星術｜太陽星座・エレメント・内面タイプを無料で鑑定</title>
+<title>西洋占星術｜太陽星座・エレメント・内面タイプを無料で鑑定<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

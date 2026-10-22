@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/sanmei/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="元命とは何かを十大主星の一覧でわかりやすく解説。算命学の主星・従星・五行バランスの意味と計算方法、四柱推命との違いも紹介。">
-  <title>算命学とは？元命・主星・従星の意味と計算方法をわかりやすく解説</title>
+  <title>算命学とは？元命・主星・従星の意味と計算方法をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

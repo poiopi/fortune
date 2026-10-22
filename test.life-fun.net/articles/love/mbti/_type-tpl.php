@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 // Style/Tendency名 → 記事slugの対応表（articles/love/style/index.php・
 // articles/love/tendency/index.phpの$_PUBLISHEDと同じ対応）。
@@ -37,7 +38,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/mbti/<?= $type['slug'] ?>/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の恋愛傾向をLove Engineの実測データ（9216パターン分析）で解説。恋愛スタイル・結婚観・相性・浮気耐性の傾向を、なぜそうなるかという理由つきで紹介。">
-  <title><?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の恋愛傾向｜恋愛スタイル・結婚観をLove Engineで解説</title>
+  <title><?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の恋愛傾向｜恋愛スタイル・結婚観をLove Engineで解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

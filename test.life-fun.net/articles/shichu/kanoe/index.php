@@ -9,7 +9,7 @@ ob_start();
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>庚（かのえ）とは？性格・恋愛運・仕事運・相性を解説 | <?= SITE_NAME ?></title>
+  <title>庚（かのえ）とは？性格・恋愛運・仕事運・相性を解説<?= site_title_suffix(' | ' . SITE_NAME) ?></title>
   <meta name="description" content="十干のひとつ「庚（かのえ）」の意味、五行・陰陽、基本性格、恋愛運、仕事運、他の十干との相性をわかりやすく解説します。">
   <link rel="canonical" href="https://life-fun.net/articles/shichu/kanoe/" />
   <link rel="icon" type="image/png" href="/favicon.png">

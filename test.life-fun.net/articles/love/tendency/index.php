@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 $_PUBLISHED = [
   ['slug'=>'kekkonshikou-love', 'name'=>'結婚志向', 'kw'=>'恋愛の先に将来を描きやすいか'],
@@ -18,7 +19,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/tendency/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Love Engineが算出する推定傾向指標（結婚志向・浮気耐性）を、9216パターンの実測データで解説。">
-  <title>推定傾向指標（Tendency）とは｜Love Engineの計算方法を実測データで解説</title>
+  <title>推定傾向指標（Tendency）とは｜Love Engineの計算方法を実測データで解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

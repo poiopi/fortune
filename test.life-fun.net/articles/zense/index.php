@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/zense/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="前世診断・カルマ（業）診断とは何か、前世・輪廻転生・カルマの意味と、診断結果の読み方・楽しみ方をわかりやすく解説。">
-  <title>前世・カルマ診断とは？前世の意味と魂の記憶をわかりやすく解説</title>
+  <title>前世・カルマ診断とは？前世の意味と魂の記憶をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -188,7 +189,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>前世を知ったら、今世のあなたをさらに多角的に占ってみましょう。</p>
     <?php
     $relatedItems = [
-      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/sansei'],
       ['label'=>'守護霊診断とは', 'title'=>'守護霊・守護獣の意味と種類を解説 →', 'url'=>'/articles/guardian/'],
       ['label'=>'数秘術とは', 'title'=>'誕生日から運命数を読み解く →', 'url'=>'/articles/numerology/'],
       ['label'=>'タロット占いとは', 'title'=>'今この瞬間のメッセージをカードで受け取る →', 'url'=>'/articles/tarot/'],

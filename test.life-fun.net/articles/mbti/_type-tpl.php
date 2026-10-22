@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 
 // 全16タイプ（ナビゲーション用）
 $_ALL_TYPES = [
@@ -40,7 +41,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/mbti/<?= $type['slug'] ?>/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の性格・強み・弱み・恋愛・仕事・相性を詳しく解説。16タイプ性格診断の<?= htmlspecialchars($type['group']) ?>グループ。">
-  <title><?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の性格・特徴・恋愛・仕事を徹底解説｜MBTIガイド</title>
+  <title><?= htmlspecialchars($type['code']) ?>（<?= htmlspecialchars($type['name']) ?>）の性格・特徴・恋愛・仕事を徹底解説｜MBTIガイド<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

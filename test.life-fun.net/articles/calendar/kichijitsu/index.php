@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/calendar/kichijitsu/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="一粒万倍日・天赦日・寅の日・己巳の日など、特別な吉日の意味とおすすめの行動をわかりやすく解説。">
-  <title>特別な吉日とは？一粒万倍日・天赦日・寅の日の意味を完全解説</title>
+  <title>特別な吉日とは？一粒万倍日・天赦日・寅の日の意味を完全解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

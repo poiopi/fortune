@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/calendar/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="開運カレンダーで使われる吉方位・ラッキーカラー・一粒万倍日・天赦日などの開運キーワードをわかりやすく解説。">
-  <title>開運カレンダーとは？吉方位・ラッキーカラー・一粒万倍日の意味をわかりやすく解説</title>
+  <title>開運カレンダーとは？吉方位・ラッキーカラー・一粒万倍日の意味をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -263,7 +264,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>日々の運気をさらに多角的に調べてみましょう。</p>
     <?php
     $relatedItems = [
-      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/sansei'],
       ['label'=>'九星気学とは', 'title'=>'今年・来年の運気の流れを知る →', 'url'=>'/articles/kyusei/'],
       ['label'=>'数秘術とは', 'title'=>'誕生日から運命数を計算して読み解く →', 'url'=>'/articles/numerology/'],
       ['label'=>'タロット占いとは', 'title'=>'今この瞬間のメッセージをカードで受け取る →', 'url'=>'/articles/tarot/'],

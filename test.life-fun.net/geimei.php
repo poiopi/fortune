@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+require_once __DIR__ . '/inc/site.php';
 if ($_SERVER['REQUEST_METHOD']==='POST' && ($_POST['action']??'')==='save_answer') {
     header('Content-Type: application/json');
     $answer = trim($_POST['answer'] ?? '');
@@ -40,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && ($_POST['action']??'')==='save_answer
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="大喜利ゲームで芸風を判定！生年月日の画数から大吉の芸名をフルネーム＋コンビ名で3パターン提案。ボケ・ツッコミ・ピン芸人から選んでチャレンジ。">
-<title>芸名診断｜大喜利で見つける最強の芸名</title>
+<title>芸名診断｜大喜利で見つける最強の芸名<?= TITLE_SUFFIX ?></title>
 <link rel="canonical" href="https://life-fun.net/geimei" />
 <link rel="icon" type="image/png" href="/favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">

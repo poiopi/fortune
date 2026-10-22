@@ -12,8 +12,8 @@
 <meta charset="UTF-8">
 <link rel="canonical" href="https://life-fun.net/profile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="占いPortalの運営者情報。西洋占星術・タロット・四柱推命などの占いコンテンツを提供するエンタメサイトです。">
-<title>運営者情報｜<?= SITE_NAME ?></title>
+<meta name="description" content="<?= SITE_NAME ?>の運営者情報。西洋占星術・タロット・四柱推命などの占いコンテンツを提供するエンタメサイトです。">
+<title>運営者情報<?= site_title_suffix(TITLE_SEP . SITE_NAME) ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -69,7 +69,7 @@ body{top:0!important}
       管理人 K<br><br>
 
       <strong style="color:var(--text)">サイト名</strong><br>
-      占いPortal<br><br>
+      <?= SITE_NAME ?><br><br>
 
       <strong style="color:var(--text)">サイトURL</strong><br>
       https://life-fun.net<br><br>
@@ -85,16 +85,16 @@ body{top:0!important}
 
       <strong style="color:var(--text)">プロフィール・サイトについて</strong><br><br>
 
-      はじめまして。占いPortal管理人の「K」です。<br><br>
+      はじめまして。<?= SITE_NAME ?>管理人の「K」です。<br><br>
 
       当サイトは2021年に開設しました。開設以来、少しずつ改良を重ねながら、現在は占いコンテンツを中心としたサイトとして運営しています。<br><br>
 
       サイトの企画・設計・開発・運営は、すべて個人で行っています。専門用語をできるだけ分かりやすく伝え、占いに初めて触れる方でも気軽に楽しめるサイトを目指しています。<br><br>
 
       <strong style="color:var(--text)">サイトについて</strong><br>
-      占いPortalでは、西洋占星術・タロット・算命学・四柱推命をはじめ、さまざまな占いや診断コンテンツを無料でご利用いただけます。<br><br>
+      <?= SITE_NAME ?>では、西洋占星術・タロット・算命学・四柱推命をはじめ、さまざまな占いや診断コンテンツを無料でご利用いただけます。<br><br>
 
-      統合鑑定である「三星鑑定」、本格タロット占い、開運カレンダー、MBTIと星座を組み合わせた性格診断など、日々の生活のヒントとして楽しめるコンテンツを幅広く公開しています。<br><br>
+      統合鑑定である「三星統合鑑定」、本格タロット占い、開運カレンダー、MBTIと星座を組み合わせた性格診断など、日々の生活のヒントとして楽しめるコンテンツを幅広く公開しています。<br><br>
 
       占い結果は、各占術の考え方を尊重しながら、分かりやすくお伝えできるよう構成や表現を工夫して作成しています。また、各占術の解説記事についても、初めて読む方にも理解しやすい内容を心掛け、一つひとつ執筆・更新しています。<br><br>
 

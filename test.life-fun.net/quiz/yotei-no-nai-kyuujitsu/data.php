@@ -37,7 +37,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '予定のない休日、最初にしたくなることは？｜Daily Quiz - '.SITE_NAME,
+  'title'       => '予定のない休日、最初にしたくなることは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
   'description' => '急に予定がなくなった休日、あなたが最初にしたくなるのはどれ？選んだあと、今回の自分の過ごし方を振り返るミニクイズです。',
 
   'cta_url'   => '/kyusei',

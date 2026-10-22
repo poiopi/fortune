@@ -13,7 +13,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/numerology/3/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="数秘術の運命数3（表現者）の意味を解説。創造性・コミュニケーション・楽観性・芸術をキーワードに、性格、恋愛傾向、仕事運、相性をわかりやすく紹介します。">
-  <title>運命数3（表現者）とは？性格・恋愛・仕事・相性を解説 | <?= SITE_NAME ?></title>
+  <title>運命数3（表現者）とは？性格・恋愛・仕事・相性を解説<?= site_title_suffix(' | ' . SITE_NAME) ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

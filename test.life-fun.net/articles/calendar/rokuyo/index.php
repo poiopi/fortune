@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/calendar/rokuyo/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="六曜（先勝・友引・先負・仏滅・大安・赤口）の意味と由来、それぞれの日にすべき行動・避けるべき行動をわかりやすく解説。">
-  <title>六曜とは？先勝・友引・先負・仏滅・大安・赤口の意味を完全解説</title>
+  <title>六曜とは？先勝・友引・先負・仏滅・大安・赤口の意味を完全解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

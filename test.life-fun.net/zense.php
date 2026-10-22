@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1); require_once __DIR__ . '/inc/site.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,7 +12,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="名前と生年月日から前世を診断。何回目の転生か、どの時代のどこで何者だったか、魂のカルテを生成します。">
-<title>前世診断｜あなたは何回目の転生？魂のカルテ</title>
+<title>前世診断｜あなたは何回目の転生？魂のカルテ<?= TITLE_SUFFIX ?></title>
 <link rel="canonical" href="https://life-fun.net/zense" />
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
