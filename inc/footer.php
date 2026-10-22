@@ -208,7 +208,8 @@ button.fmenu-item{background:none;border:none;border-left:2px solid transparent;
   <nav class="fmenu-nav">
     <div class="fmenu-section-label">AIに相談</div>
     <button type="button" class="fmenu-item" id="fmenuAiChatBtn">
-      <span class="fmenu-item-icon">🔮</span>AI鑑定チャット
+<?php /* 次の行末の改行コード出力：閉じタグ直後の改行はPHPが出力しないため明示している（SITE_BRAND=portal で旧HTMLとバイト一致させるため） */ ?>
+      <span class="fmenu-item-icon">🔮</span><?= htmlspecialchars(CHAT_TITLE, ENT_QUOTES) . "\r\n" ?>
     </button>
     <?php
     echo '<div class="fmenu-section-label">占い一覧</div>';

@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ ob_start();
   <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="六曜「仏滅」の意味・由来・過ごし方を解説。六曜の中で最も凶とされる仏滅の日にすべきこと・避けるべきことをわかりやすく紹介します。">
-  <title>仏滅（ぶつめつ）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド</title>
+  <title>仏滅（ぶつめつ）とは？意味と過ごし方をわかりやすく解説｜六曜ガイド<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

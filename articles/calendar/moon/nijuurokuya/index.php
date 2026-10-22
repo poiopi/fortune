@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ ob_start();
   <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="二十六夜月の意味・スピリチュアルな解釈・おすすめの過ごし方を解説。次の新月に向けて静けさを象徴する月相にすべきことを紹介します。">
-  <title>二十六夜月とは？意味と過ごし方をわかりやすく解説｜月相ガイド</title>
+  <title>二十六夜月とは？意味と過ごし方をわかりやすく解説｜月相ガイド<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

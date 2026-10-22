@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
     $listUrl   = '/articles/kyusei/#nine-stars';
     $listTitle = '九星一覧';
@@ -16,7 +17,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/kyusei/shiryoku/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="九星気学「四緑木星」の意味を解説。木の気を持つ第4星が守護する人の性格・調和力・恋愛・仕事・開運のヒントを紹介します。">
-  <title>四緑木星とは｜九星気学・風のように巡る調和と信頼の開運ガイド</title>
+  <title>四緑木星とは｜九星気学・風のように巡る調和と信頼の開運ガイド<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

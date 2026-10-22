@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/mbti/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MBTIの16タイプと12星座を組み合わせた192通りの性格の見方を解説。4つの指標と16タイプ一覧、星座を組み合わせる意味、無料のMBTI×星座診断も紹介。">
-  <title>MBTI×星座の組み合わせとは？16タイプ×12星座・192通りの性格の見方</title>
+  <title>MBTI×星座の組み合わせとは？16タイプ×12星座・192通りの性格の見方<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -229,7 +230,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>性格・相性をさらに多角的に知りたい方はこちらもどうぞ。</p>
     <?php
     $relatedItems = [
-      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/sansei'],
       ['label'=>'相性診断とは', 'title'=>'誕生日・血液型・星座で相性を占う仕組みを解説 →', 'url'=>'/articles/aisho/'],
       ['label'=>'数秘術とは', 'title'=>'運命数の計算方法と意味を解説 →', 'url'=>'/articles/numerology/'],
       ['label'=>'四柱推命とは', 'title'=>'命式・大運・年運の流れを知る →', 'url'=>'/articles/shichu/'],

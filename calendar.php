@@ -3,6 +3,7 @@ declare(strict_types=1);
 require_once __DIR__.'/inc/oracle.php';
 require_once __DIR__.'/inc/dayinfo/day-url.php';
 require_once __DIR__.'/inc/dayinfo/DayInfoService.php';
+require_once __DIR__ . '/inc/site.php';
 
 const CALENDAR_MIN_YEAR = 1900;
 const CALENDAR_MAX_YEAR = 2100;
@@ -62,7 +63,7 @@ $todayKyusei = $todayInfo['sections']['kyusei'];
 <link rel="canonical" href="https://life-fun.net/calendar" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="今日の六曜・大安カレンダーとラッキーアイテムを毎日更新。開運情報を一覧でチェック。">
-<title>開運カレンダー｜今日の六曜とラッキーアイテム</title>
+<title>開運カレンダー｜今日の六曜とラッキーアイテム<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 

@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 $_PUBLISHED = [
   ['slug'=>'kekka-no-mikata', 'name'=>'恋愛診断の結果の見方', 'kw'=>'Style・Tendency・Bundle・High/Mid/Lowの意味'],
@@ -22,7 +23,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/guide/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Love Engineの恋愛傾向診断の仕組みをやさしく解説する使い方ガイド。Primitive・Style・Tendency・Bundleの意味がわかります。">
-  <title>使い方ガイド｜Love Engineの仕組みをやさしく解説</title>
+  <title>使い方ガイド｜Love Engineの仕組みをやさしく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

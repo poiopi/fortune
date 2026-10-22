@@ -1,4 +1,4 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1); require_once __DIR__ . '/inc/site.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,7 +12,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="名前と生年月日からあなたの守護霊を診断。レアリティ・属性・守護霊名・相性・メッセージを魂のカルテとして表示します。">
-<title>守護霊診断｜あなたを守る霊はUR？SSR？</title>
+<title>守護霊診断｜あなたを守る霊はUR？SSR？<?= TITLE_SUFFIX ?></title>
 <link rel="canonical" href="https://life-fun.net/guardian" />
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">

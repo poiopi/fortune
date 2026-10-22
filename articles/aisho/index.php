@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/aisho/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="誕生日・血液型・星座を使った相性診断の仕組みと読み方をわかりやすく解説。">
-  <title>相性診断とは？誕生日・血液型・星座で相性を占う方法をわかりやすく解説</title>
+  <title>相性診断とは？誕生日・血液型・星座で相性を占う方法をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -190,7 +191,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>相性を知ったら、それぞれの個性もさらに深く知ってみましょう。</p>
     <?php
     $relatedItems = [
-      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/sansei'],
       ['label'=>'MBTI×星座の組み合わせとは', 'title'=>'16タイプの性格と4つの指標を解説 →', 'url'=>'/articles/mbti/'],
       ['label'=>'数秘術とは', 'title'=>'運命数で二人の相性を深掘り →', 'url'=>'/articles/numerology/'],
       ['label'=>'タロット占いとは', 'title'=>'二人の関係をタロットで読む →', 'url'=>'/articles/tarot/'],

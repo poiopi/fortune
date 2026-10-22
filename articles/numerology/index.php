@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/numerology/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="数秘術とは何か、運命数（ライフパスナンバー）の計算方法と1〜9+11・22の意味をわかりやすく解説。">
-  <title>数秘術とは？運命数・誕生数の意味と計算方法をわかりやすく解説</title>
+  <title>数秘術とは？運命数・誕生数の意味と計算方法をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -216,7 +217,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>数字で自分を知ったら、他の占術でさらに深掘りしてみませんか。</p>
     <?php
     $relatedItems = [
-      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/sansei'],
       ['label'=>'姓名判断とは', 'title'=>'名前の画数から運勢を読む →', 'url'=>'/articles/seimei/'],
       ['label'=>'タロット占いとは', 'title'=>'直感でカードを選んでメッセージを受け取る →', 'url'=>'/articles/tarot/'],
       ['label'=>'九星気学とは', 'title'=>'今年の運気の流れを九星で知る →', 'url'=>'/articles/kyusei/'],

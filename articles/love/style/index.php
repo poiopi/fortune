@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 // 公開済み記事のみ掲載（残りは順次追加）
 $_PUBLISHED = [
@@ -24,7 +25,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/style/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Love Engineが算出する恋愛スタイル指標（積極性・愛情表現・包容力など）を、9216パターンの実測データで解説。">
-  <title>恋愛スタイル指標（Style）とは｜Love Engineの計算方法を実測データで解説</title>
+  <title>恋愛スタイル指標（Style）とは｜Love Engineの計算方法を実測データで解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

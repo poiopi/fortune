@@ -123,6 +123,7 @@ $WORK_TIP = [
 ];
 
 require_once __DIR__.'/inc/birthday-input.php';
+require_once __DIR__ . '/inc/site.php';
 
 $result = null;
 $errors = [];
@@ -167,7 +168,7 @@ if (isset($_GET['birthdate']) && $_GET['birthdate'] !== '') {
 <link rel="canonical" href="https://life-fun.net/kyusei" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生年月日から九星気学の本命星・月命星・命式を無料で算出。吉方位・2024年の運勢・性格・相性を詳しく診断します。">
-<title>九星気学｜本命星・月命星・命式を無料診断</title>
+<title>九星気学｜本命星・月命星・命式を無料診断<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

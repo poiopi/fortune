@@ -149,6 +149,7 @@ function getNumberData(int $n): array {
 
 // フォーム処理
 require_once __DIR__.'/inc/birthday-input.php';
+require_once __DIR__ . '/inc/site.php';
 $result = null;
 $errors = [];
 
@@ -198,7 +199,7 @@ if (isset($_GET['birthdate']) && $_GET['birthdate'] !== '') {
 <link rel="canonical" href="https://life-fun.net/numerology" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生年月日と名前から4つの数秘術ナンバーを算出。ライフパス・誕生日・運命数・ソウルナンバーであなたの本質と使命を読み解きます。">
-<title>数秘術診断｜生年月日と名前で読み解く人生の数字</title>
+<title>数秘術診断｜生年月日と名前で読み解く人生の数字<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 

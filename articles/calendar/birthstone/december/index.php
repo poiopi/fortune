@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthstone/december/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="12月の誕生石トルコ石の石言葉・特徴・魅力をわかりやすく解説。「成功、繁栄」を象徴する宝石の意味とおすすめの身につけ方を紹介します。">
-  <title>12月の誕生石はトルコ石｜石言葉と魅力をわかりやすく解説</title>
+  <title>12月の誕生石はトルコ石｜石言葉と魅力をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

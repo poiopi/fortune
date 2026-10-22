@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/seimei/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="姓名判断の仕組み、天格・人格・地格・外格・総格の五格と画数の吉凶をわかりやすく解説。">
-  <title>姓名判断とは？画数・五格の意味と吉数をわかりやすく解説</title>
+  <title>姓名判断とは？画数・五格の意味と吉数をわかりやすく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -210,7 +211,7 @@ require __DIR__.'/../../inc/article-cta.php';
     <p>名前の数字を知ったら、次は誕生日の数字も調べてみましょう。</p>
     <?php
     $relatedItems = [
-      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/'],
+      ['label'=>'三星統合鑑定', 'title'=>'四柱推命・数秘・九星を統合して鑑定する →', 'url'=>'/sansei'],
       ['label'=>'数秘術とは', 'title'=>'誕生日から運命数を計算して読み解く →', 'url'=>'/articles/numerology/'],
       ['label'=>'タロット占いとは', 'title'=>'直感でカードを選んでメッセージを受け取る →', 'url'=>'/articles/tarot/'],
       ['label'=>'四柱推命とは', 'title'=>'命式・大運・年運の流れを知る →', 'url'=>'/articles/shichu/'],

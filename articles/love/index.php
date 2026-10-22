@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../inc/auto-link.php';
+require_once __DIR__ . '/../../inc/site.php';
 
 $_CATEGORIES = [
   ['slug'=>'guide', 'name'=>'使い方ガイド', 'icon'=>'📖', 'kw'=>'診断結果の読み方・Style/Tendency/Bundle/Primitiveの意味（6記事）'],
@@ -24,7 +25,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MBTI×血液型×星座で診断する恋愛傾向診断（Love Engine）の解説記事一覧。使い方ガイド・MBTI・恋愛スタイル・推定傾向・星座・血液型・恋愛タイプ・組み合わせ分析をカテゴリ別に掲載。">
-  <title>恋愛傾向診断×解説記事一覧｜Love Engineをやさしく解説</title>
+  <title>恋愛傾向診断×解説記事一覧｜Love Engineをやさしく解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

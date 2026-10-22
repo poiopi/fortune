@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 
 $_PUBLISHED = [
   ['slug'=>'entp-a', 'mbti'=>'ENTP', 'blood'=>'A型', 'class'=>'拮抗型（血液型優勢）', 'kw'=>'主軸誠実性（70.8%）'],
@@ -80,7 +81,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/love/mbti-blood/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MBTI16タイプ×血液型4種の64パターンについて、恋愛傾向と特徴を当サイトの恋愛傾向診断（Love Engine）のデータで解説。組み合わせごとに、MBTIと血液型のどちらの性格が強く出るかがわかります。">
-  <title>MBTI×血液型の組み合わせ一覧｜64パターンの恋愛傾向と特徴をデータで解説</title>
+  <title>MBTI×血液型の組み合わせ一覧｜64パターンの恋愛傾向と特徴をデータで解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

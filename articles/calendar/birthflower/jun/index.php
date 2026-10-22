@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/calendar/birthflower/jun/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="6月1日クレマチスなど、6月の誕生花・花言葉をわかりやすく解説します。">
-  <title>6月の誕生花とは？1日ごとの花言葉を解説</title>
+  <title>6月の誕生花とは？1日ごとの花言葉を解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

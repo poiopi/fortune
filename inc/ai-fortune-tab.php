@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+require_once __DIR__ . '/site.php';
 
 /**
  * inc/ai-fortune-tab.php
@@ -77,7 +78,7 @@ declare(strict_types=1);
 
 <div class="aft-wrap" id="aftWrap">
   <button type="button" class="aft-min-btn" id="aftMinBtn" aria-label="最小化する">&minus;</button>
-  <button type="button" class="aft-body" id="aftBody" aria-label="占いチャットを開く">占いチャット</button>
+  <button type="button" class="aft-body" id="aftBody" aria-label="<?= htmlspecialchars(CHAT_TAB_LABEL, ENT_QUOTES) ?>を開く"><?= htmlspecialchars(CHAT_TAB_LABEL, ENT_QUOTES) ?></button>
 </div>
 
 <script>
@@ -160,7 +161,7 @@ minBtn.addEventListener('click', function(e){
   if (aftMoved) { aftMoved = false; return; }
   var isMin = wrap.classList.toggle('aft-min');
   minBtn.innerHTML = isMin ? '&#128302;' : '&minus;';
-  minBtn.setAttribute('aria-label', isMin ? '占いチャットタブを元に戻す' : '最小化する');
+  minBtn.setAttribute('aria-label', isMin ? '<?= CHAT_TAB_LABEL ?>タブを元に戻す' : '最小化する');
 });
 })();
 </script>

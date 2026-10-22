@@ -12,8 +12,8 @@
 <meta charset="UTF-8">
 <link rel="canonical" href="https://life-fun.net/privacy" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="占いPortalのプライバシーポリシー。個人情報の取り扱い、Cookie、Google AdSense・Analyticsについて。">
-<title>プライバシーポリシー｜<?= SITE_NAME ?></title>
+<meta name="description" content="<?= SITE_NAME ?>のプライバシーポリシー。個人情報の取り扱い、Cookie、Google AdSense・Analyticsについて。">
+<title>プライバシーポリシー<?= site_title_suffix(TITLE_SEP . SITE_NAME) ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>
@@ -64,7 +64,7 @@ body{top:0!important}
     <div class="rokuyo-desc">
 
       <strong style="color:var(--text)">個人情報の取り扱い</strong><br>
-      当サイト「占いPortal」（以下、当サイト）では、三星鑑定のご利用時に入力いただくお名前（ニックネーム可）や生年月日などの情報を、鑑定結果の表示のみに使用します。これらの情報をサーバーに永続的に保存することはありません。お問い合わせの際にメールでご連絡いただいた内容については、ご返信の目的のみに使用し、適切に管理します。<br><br>
+      当サイト「<?= SITE_NAME ?>」（以下、当サイト）では、三星統合鑑定のご利用時に入力いただくお名前（ニックネーム可）や生年月日などの情報を、鑑定結果の表示のみに使用します。これらの情報をサーバーに永続的に保存することはありません。お問い合わせの際にメールでご連絡いただいた内容については、ご返信の目的のみに使用し、適切に管理します。<br><br>
 
       <strong style="color:var(--text)">Google AdSenseによる広告配信</strong><br>
       当サイトでは、第三者配信の広告サービス「Google AdSense（グーグルアドセンス）」を利用しています。Googleなどの第三者広告配信事業者は、ユーザーの興味に応じた広告を表示するため、当サイトや他サイトへのアクセス情報に基づくCookie（クッキー）を使用することがあります。Cookieを使用することにより、当サイトへの過去のアクセス情報に基づいて広告が配信されます。詳しくは<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" rel="noopener noreferrer" style="color:var(--violet-lt)">Googleの広告に関するポリシー</a>をご確認ください。<br><br>

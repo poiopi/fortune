@@ -3,6 +3,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/inc/love-orchestrator.php';
 require_once __DIR__ . '/inc/mbti-data.php';
 require_once __DIR__ . '/inc/blood-data.php';
+require_once __DIR__ . '/inc/site.php';
 
 // ─────────────────────────────────────────────
 // APIモード：診断リクエスト（POST）はJSONを返して終了する。
@@ -50,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <link rel="canonical" href="https://life-fun.net/love" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MBTI×血液型×星座で導く恋愛傾向診断。3つの入力からあなたの恋愛スタイル・傾向をひも解きます。">
-<title>恋愛診断｜MBTI×血液型×星座</title>
+<title>恋愛診断｜MBTI×血液型×星座<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 

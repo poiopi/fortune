@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../../../inc/auto-link.php';
+require_once __DIR__ . '/../../../inc/site.php';
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ ob_start();
   <link rel="canonical" href="https://life-fun.net/articles/sanmei/kengyu/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="算命学の十大主星「牽牛星」を徹底解説。誠実とプライドの星・牽牛星の基本性格や恋愛の傾向、向いている適職、他星との相性まで初心者にもわかりやすく紹介します。">
-  <title>牽牛星とは？算命学が示す性格・恋愛・適職・相性を解説</title>
+  <title>牽牛星とは？算命学が示す性格・恋愛・適職・相性を解説<?= TITLE_SUFFIX ?></title>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6979913482925873" crossorigin="anonymous"></script>

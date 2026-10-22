@@ -165,6 +165,7 @@ function sansei_formatExtraValue($value): string {
 // ══════════════════════════════════════════════════════════════════
 
 require_once __DIR__ . '/inc/lunar-calendar.php';
+require_once __DIR__ . '/inc/site.php';
 
 function sansei_calGregorianToJD(int $y, int $m, int $d): int {
     if ($m <= 2) { $y--; $m += 12; }
@@ -255,7 +256,7 @@ $weekdayJa   = ['日','月','火','水','木','金','土'][(int)$todayObj->forma
 <link rel="canonical" href="https://life-fun.net/sansei" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="西洋占星術×タロット×四柱推命の三位一体。名前と生年月日だけで鑑定する三星統合鑑定。">
-<title>三星統合鑑定｜西洋占星術×タロット×四柱推命の統合鑑定</title>
+<title>三星統合鑑定｜西洋占星術×タロット×四柱推命の統合鑑定<?= TITLE_SUFFIX ?></title>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -998,7 +999,7 @@ footer{
                 ]);
               ?>
             </div>
-            <button type="submit" class="btn-submit" data-ga-event="fortune_submit">✦ 三星鑑定を開始する ✦</button>
+            <button type="submit" class="btn-submit" data-ga-event="fortune_submit">✦ 三星統合鑑定を開始する ✦</button>
           </form>
           <script>
           function validateBirthdate(){
@@ -1276,12 +1277,12 @@ footer{
 
 <section class="about-box">
 
-<h2>三星鑑定について</h2>
+<h2>三星統合鑑定について</h2>
 
 <div class="about-item">
     <span>✨</span>
     <p>
-    占いPortalの「三星鑑定」は、西洋占星術・タロット・四柱推命を組み合わせた無料の統合鑑定サービスです。
+    <?= SITE_NAME ?>の「三星統合鑑定」は、西洋占星術・タロット・四柱推命を組み合わせた無料の統合鑑定サービスです。
     </p>
 </div>
 
