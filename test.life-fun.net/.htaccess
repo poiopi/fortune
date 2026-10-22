@@ -6,13 +6,6 @@ Require valid-user
 RewriteEngine On
 RewriteBase /
 
-# 2026-10-21 PHP本体のRCE脆弱性（CVE-2026-109618/109619）への暫定対策。
-# 攻撃の入口と報じられている multipart/form-data のリクエストを、PHPに渡す前に403で拒否する。
-# サイト内で multipart を使っていた geimei.php の自由回答送信は URLSearchParams（urlencoded）に変更済み。
-# PHPが修正版に更新されたことを確認したら、このブロック（コメント含む6行）を削除する。
-RewriteCond %{HTTP:Content-Type} multipart [NC]
-RewriteRule ^ - [F,L]
-
 # 開発用フォルダ（tools/docs/tests）はWebに公開しない（404を返す）
 # 2026-09-24、本番に tools/*.php・*.sh と docs/love/*.json がアップロードされ外部から
 # 実行・閲覧できる状態だったため追加（.vscode/sftp.json の除外設定との二重の守り）
