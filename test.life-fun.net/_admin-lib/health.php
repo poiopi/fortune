@@ -319,3 +319,84 @@ function admin_health_latest(): array
     }
     return $ordered;
 }
+
+/* サーバーの道具チェック（動画のffmpeg・画像処理・コマンド実行）。画面を開いたときだけ調べ、結果は保存しない。
+   実行するコマンドは下に固定した文字列だけ（入力値は一切使わない）。 */
+function admin_server_tools(): array
+{
+    $disabled = array_filter(array_map('trim', explode(',', (string) ini_get('disable_functions'))));
+    $canExec = function_exists('exec') && !in_array('exec', $disabled, true);
+    $tools = [];
+
+    $tools[] = [
+        'label'  => 'コマンドの実行',
+        'status' => $canExec ? 'green' : 'red',
+        'message' => $canExec ? 'できます（ffmpeg などの道具を呼び出せます）' : 'できません（PHPの設定で止められています）',
+        'detail' => 'disable_functions: ' . ($disabled === [] ? '(なし)' : implode(', ', $disabled)),
+    ];
+
+    $ffmpeg = null;
+    $ffmpegDetail = '';
+    if ($canExec) {
+        $candidates = [];
+        $out = [];
+        @exec('command -v ffmpeg 2>/dev/null', $out);
+        if (($out[0] ?? '') !== '') {
+            $candidates[] = $out[0];
+        }
+        foreach (['/usr/bin/ffmpeg', '/usr/local/bin/ffmpeg', '/bin/ffmpeg'] as $p) {
+            $candidates[] = $p;
+        }
+        foreach (array_unique($candidates) as $path) {
+            if (!@is_file($path)) {
+                continue;
+            }
+            $ver = [];
+            $code = 1;
+            @exec(escapeshellarg($path) . ' -hide_banner -version 2>&1', $ver, $code);
+            if ($code === 0 && $ver !== []) {
+                $ffmpeg = $path;
+                $ffmpegDetail = implode("\n", array_slice($ver, 0, 3));
+                break;
+            }
+            $ffmpegDetail .= $path . '：実行できません（終了コード ' . $code . '）' . "\n";
+        }
+    }
+    $tools[] = [
+        'label'  => 'ffmpeg（動画の作成）',
+        'status' => $ffmpeg !== null ? 'green' : 'red',
+        'message' => $ffmpeg !== null ? 'あります：' . $ffmpeg . '（サーバーで動画を作れます）'
+            : ($canExec ? '見つかりません（サーバーでは動画を作れません）' : 'コマンドを実行できないため調べられません'),
+        'detail' => $ffmpegDetail !== '' ? trim($ffmpegDetail) : null,
+    ];
+
+    $gd = extension_loaded('gd') && function_exists('gd_info') ? gd_info() : null;
+    $gdParts = [];
+    if ($gd !== null) {
+        foreach (['PNG Support' => 'PNG', 'JPEG Support' => 'JPEG', 'WebP Support' => 'WebP', 'FreeType Support' => '文字の描画（FreeType）'] as $k => $name) {
+            $gdParts[] = $name . '：' . (!empty($gd[$k]) ? '可' : '不可');
+        }
+    }
+    $tools[] = [
+        'label'  => '画像処理（GD）',
+        'status' => $gd === null ? 'red' : (!empty($gd['FreeType Support']) ? 'green' : 'yellow'),
+        'message' => $gd === null ? '使えません' : '使えます（' . ($gd['GD Version'] ?? '') . '）',
+        'detail' => $gdParts === [] ? null : implode("\n", $gdParts),
+    ];
+
+    $tools[] = [
+        'label'  => '画像処理（Imagick）',
+        'status' => extension_loaded('imagick') ? 'green' : 'yellow',
+        'message' => extension_loaded('imagick') ? '使えます' : '使えません（GDがあれば足ります）',
+        'detail' => null,
+    ];
+
+    $tools[] = [
+        'label'  => 'PHPのバージョン・実行時間の上限',
+        'status' => 'green',
+        'message' => PHP_VERSION . '・' . ((int) ini_get('max_execution_time') === 0 ? '上限なし' : ini_get('max_execution_time') . '秒') . '・メモリ ' . ini_get('memory_limit'),
+        'detail' => 'SAPI: ' . PHP_SAPI,
+    ];
+
+    return $tools;
+}

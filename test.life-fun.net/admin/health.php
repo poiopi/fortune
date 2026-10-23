@@ -19,6 +19,7 @@ $latest = admin_health_latest();
 $changes = admin_db()->query('SELECT * FROM health_changes ORDER BY id DESC LIMIT 30')->fetchAll();
 $cron = admin_cron_health();
 $openErrors = (int) admin_db()->query("SELECT COUNT(*) FROM client_errors WHERE status = 'open'")->fetchColumn();
+$tools = admin_server_tools();
 
 admin_render_header('サイトヘルス', 'health');
 admin_render_flash();
@@ -65,6 +66,30 @@ admin_render_flash();
     </tbody>
   </table>
 </div>
+
+<section class="panel panel--wide">
+  <h2 class="panel__title">サーバーの道具</h2>
+  <p class="muted">動画の自動作成・画像処理に使えるものがこのサーバー（<?= admin_config()['env'] === 'stg' ? 'STG' : '本番' ?>）にあるかを、この画面を開いたときに調べます。</p>
+  <div class="table-wrap">
+    <table class="table">
+      <thead><tr><th></th><th>項目</th><th>結果</th></tr></thead>
+      <tbody>
+<?php foreach ($tools as $t): ?>
+        <tr>
+          <td class="health-icon"><?= ADMIN_HEALTH_STATUS_ICONS[$t['status']] ?? '' ?></td>
+          <td class="nowrap"><?= h($t['label']) ?></td>
+          <td>
+            <?= h($t['message']) ?>
+            <?php if ($t['detail'] !== null && $t['detail'] !== ''): ?>
+              <details class="details"><summary>詳細</summary><pre class="preview"><?= h($t['detail']) ?></pre></details>
+            <?php endif; ?>
+          </td>
+        </tr>
+<?php endforeach; ?>
+      </tbody>
+    </table>
+  </div>
+</section>
 
 <section class="panel panel--wide">
   <h2 class="panel__title">変化の履歴（最近30件）</h2>
