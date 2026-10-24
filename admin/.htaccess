@@ -1,0 +1,7 @@
+# 本番の管理画面の入口（Basic認証）。本番だけに置く（STGはサイト全体に Basic認証がかかっている）。
+# パスワードはSTGと同じ（ADMIN_IMPL_PLAN.md 17-6 Q2：ユーザー決定 2026-10-24）。STGのパスワードファイルをそのまま使う。
+# パスワードファイルが読めないときはサーバーエラー（500）になり、開かない側に倒れる。
+AuthType Basic
+AuthName "Admin"
+AuthUserFile /home/users/0/boo.jp-life-fun/web/test.life-fun.net/.htpasswd
+Require valid-user

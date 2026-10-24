@@ -131,7 +131,7 @@ admin_render_header('通知', 'settings');
       <p class="muted">設定済み（末尾 <?= h($webhookHint) ?>）。変更するときだけ新しいURLを入力してください。</p>
       <label class="check"><input type="checkbox" name="discord_webhook_delete" value="1"> 保存済みのWebhook URLを削除する</label>
     <?php endif; ?>
-    <input class="form__input" type="password" id="discord_webhook" name="discord_webhook" autocomplete="off" placeholder="https://discord.com/api/webhooks/...">
+    <input class="form__input" type="password" id="discord_webhook" name="discord_webhook" autocomplete="new-password" placeholder="https://discord.com/api/webhooks/...">
     <button type="submit" class="btn btn--primary">送り先を保存</button>
   </form>
   <form method="post" action="<?= h(admin_url('/settings')) ?>" class="form form--inline">

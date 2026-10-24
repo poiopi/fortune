@@ -12,11 +12,10 @@
 .htpasswd	STG専用	STGのBasic認証
 robots.txt	STG専用	STGは検索エンジンに載せない（Disallow: /）
 
-_admin-lib/*	管理画面	管理画面（ADMIN_IMPL_PLAN.md）
-_admin-data/*	管理画面	管理画面のデータ
-admin/*	管理画面	管理画面
-api/client-error.php	管理画面	管理画面「エラー監視」の受け口
-inc/footer.php	管理画面	管理画面「エラー監視」へ送る lfReport の script だけ違ってよい	<script>\s*// JSエラーを管理画面「エラー監視」へ送る.*?</script>\s*
+# 管理画面（2026-10-24 本番公開・ADMIN_IMPL_PLAN.md 17-6 Q6）：プログラム（_admin-lib/・admin/・api/client-error.php・inc/footer.php）は一致必須。
+# 違ってよいのは中身（データ）と、本番だけの Basic認証の設定ファイルだけ
+_admin-data/*	管理画面	管理画面のデータ（DB・画像・鍵。中身はSTGと本番で別）
+admin/.htaccess	管理画面	本番だけの Basic認証（STGはサイト全体に Basic認証がかかっている）
 
 _template_article.php	STG専用	記事を作るときのコピー元（公開ページではない）
 

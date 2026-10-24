@@ -144,7 +144,8 @@ function admin_sns_assign(?DateTimeImmutable $now = null): int
         }
         foreach (admin_sns_candidates($rule['kind'], 20) as $candidate) {
             $platforms = admin_sns_slot_platforms($rule['platforms'], (int) $candidate['id'], $date);
-            if ($platforms !== []) {
+            // note 本文しか無いストック（note 専用）はローテーションでは使わない（「今日のnoteにする」・note の別枠で使う）
+            if (array_diff($platforms, ['note']) !== []) {
                 admin_sns_create_slot_rows((int) $candidate['id'], $date, $scheduledAt, $platforms, 'rotation');
                 $assigned++;
                 break;

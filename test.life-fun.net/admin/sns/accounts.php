@@ -127,7 +127,7 @@ admin_render_flash();
     <label class="form__label" for="app_id">Threads アプリID</label>
     <input class="form__input" id="app_id" name="app_id" inputmode="numeric" autocomplete="off" value="<?= h((string) ($account['app_id'] ?? '')) ?>" required>
     <label class="form__label" for="app_secret">Threads アプリシークレット<?= $account['app_secret_encrypted'] !== null ? '（保存済み。変えるときだけ入力）' : '' ?></label>
-    <input class="form__input" id="app_secret" name="app_secret" type="password" autocomplete="off" value=""<?= $account['app_secret_encrypted'] === null ? ' required' : '' ?>>
+    <input class="form__input" id="app_secret" name="app_secret" type="password" autocomplete="new-password" value=""<?= $account['app_secret_encrypted'] === null ? ' required' : '' ?>>
     <p class="muted">アプリの「有効なOAuthリダイレクトURI」には次のURLを入れてください：<br><code><?= h(admin_threads_redirect_uri()) ?></code></p>
     <button type="submit" class="btn btn--ghost">保存</button>
   </form>

@@ -1,0 +1,5 @@
+# 管理画面の共通処理・cronスクリプト・マイグレーション。Webから直接実行させない。
+# 2026-09-26 管理画面Phase 1で追加。Require（403）と RewriteRule（404）の二重の守り。
+Require all denied
+RewriteEngine On
+RewriteRule ^ - [R=404,L]
