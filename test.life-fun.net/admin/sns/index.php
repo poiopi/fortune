@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     admin_verify_csrf();
     $action = (string) ($_POST['action'] ?? '');
     $date = (string) ($_POST['date'] ?? '');
-    if ($action !== 'assign_now' && $action !== 'mark_posted' && preg_match($datePattern, $date) !== 1) {
+    if (!in_array($action, ['assign_now', 'mark_posted', 'retry', 'note_lane_cancel'], true) && preg_match($datePattern, $date) !== 1) {
         admin_flash_redirect('error', '日付が正しくありません。', '/sns/');
     }
 
@@ -32,11 +32,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 admin_sns_release_slot($date);
                 admin_sns_assign();
                 admin_audit('queue_release', $date);
-                admin_flash_redirect('ok', admin_date_label($date) . 'の枠を外し、ストックに戻しました。', '/sns/');
-            case 'to_manual':
-                $n = admin_sns_held_to_manual($date);
-                admin_audit('queue_to_manual', $date, $n . '件');
-                admin_flash_redirect($n > 0 ? 'ok' : 'error', $n > 0 ? '手動投稿待ちにしました。' : '承認済みのストックではないため変更できません。先にストックを承認してください。', '/sns/');
+                // スキップ・失敗の行（履歴）が残ると、その日は空き枠と見なされず自動割り当ての対象外
+                $historyLeft = array_intersect(array_column(admin_sns_slot_rows($date), 'status'), ['failed', 'skipped']) !== [];
+                admin_flash_redirect('ok', admin_date_label($date) . 'の枠を外し、ストックに戻しました' . ($historyLeft ? '（履歴の行が残るため、この日は自動では埋め直しません）' : '') . '。', '/sns/');
+            case 'post_now':
+                $r = admin_sns_held_post_now($date);
+                admin_audit('queue_post_now', $date, '自動' . $r['auto'] . '件・手動待ち' . $r['manual'] . '件・未連携' . $r['unconnected'] . '件');
+                $parts = [];
+                if ($r['auto'] > 0) {
+                    $parts[] = 'Threadsは1〜2分後に自動で投稿されます';
+                }
+                if ($r['manual'] > 0) {
+                    $parts[] = 'noteは手動投稿待ちにしました';
+                }
+                if ($r['unconnected'] > 0) {
+                    $parts[] = 'Threadsと連携していないため、Threadsの分は保留のままです（「SNS連携」から連携してください）';
+                }
+                if ($parts === []) {
+                    admin_flash_redirect('error', '承認済みのストックではないため投稿できません。先にストックを承認してください。', '/sns/');
+                }
+                admin_flash_redirect($r['auto'] + $r['manual'] > 0 ? 'ok' : 'error', implode('。', $parts) . '。', '/sns/');
             case 'mark_posted':
                 $queueId = (int) ($_POST['queue_id'] ?? 0);
                 $postUrl = trim((string) ($_POST['post_url'] ?? ''));
@@ -46,6 +61,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 admin_sns_mark_posted($queueId, $postUrl);
                 admin_audit('queue_mark_posted', '#' . $queueId, $postUrl);
                 admin_flash_redirect('ok', '投稿済にしました。', '/sns/');
+            case 'retry':
+                $queueId = (int) ($_POST['queue_id'] ?? 0);
+                admin_sns_retry($queueId);
+                admin_audit('queue_retry', '#' . $queueId);
+                admin_flash_redirect('ok', '再試行します（次の毎分の処理で、投稿済みかどうかの確認から始めます）。', '/sns/');
+            case 'note_lane_cancel':
+                $queueId = (int) ($_POST['queue_id'] ?? 0);
+                admin_note_lane_cancel($queueId);
+                admin_audit('queue_cancel', '#' . $queueId, 'noteの別枠');
+                admin_flash_redirect('ok', 'noteの別枠を取り消しました（ストックは未使用に戻り、また使えます）。', '/sns/');
             case 'assign_now':
                 $n = admin_sns_assign();
                 admin_flash_redirect('ok', '割り当てを実行しました（' . $n . '枠）。', '/sns/');
@@ -76,17 +101,17 @@ $days = [];
 foreach ($dates as [$day, $isOverdue]) {
     $date = $day->format('Y-m-d');
     $rows = admin_sns_slot_rows($date);
+    // 差し替えでスキップ・失敗の行（履歴）が残っている場合があるため、枠のストックは最後に作られた行（今の割り当て）のもの
     $days[] = [
         'date'    => $date,
         'overdue' => $isOverdue,
         'rule'    => $rules[(int) $day->format('w')] ?? null,
         'rows'    => $rows,
-        'stock'   => $rows !== [] ? admin_stock_get((int) $rows[0]['stock_id']) : null,
+        'stock'   => $rows !== [] ? admin_stock_get((int) $rows[count($rows) - 1]['stock_id']) : null,
     ];
 }
 
-admin_render_header('SNS投稿', 'sns');
-admin_render_sns_tabs('queue');
+admin_render_header('投稿予定', 'sns_queue');
 admin_render_flash();
 ?>
 <p class="muted">投稿モード：<?= admin_post_mode() === 'review' ? '確認モード（承認したものだけ投稿）' : '自動モード' ?>　／　割り当ては毎時自動で行います（先<?= ADMIN_ASSIGN_DAYS ?>日分）。</p>
@@ -119,8 +144,9 @@ admin_render_flash();
       <a href="<?= h(admin_url('/sns/stock-edit?id=' . $stock['id'])) ?>"><?= h($stock['title']) ?></a>
       <span class="badge badge--<?= h($stock['status']) ?>"><?= h(ADMIN_STOCK_STATUS_LABELS[$stock['status']]) ?></span>
     </p>
-    <?php foreach ($day['rows'] as $row): ?>
+    <?php foreach ($day['rows'] as $row): $rowStock = (int) $row['stock_id'] === (int) $stock['id'] ? $stock : admin_stock_get((int) $row['stock_id']); ?>
       <div class="slot__row">
+        <?php if ($rowStock !== $stock): ?><p class="muted">差し替え前のストック：<?= h($rowStock['title'] ?? '（削除済み）') ?></p><?php endif; ?>
         <p>
           <strong><?= h(admin_sns_label($row['platform'])) ?></strong>
           <?= h(admin_format_time($row['scheduled_at'])) ?>
@@ -128,13 +154,13 @@ admin_render_flash();
           <?php if ($row['post_url'] !== null): ?><a href="<?= h($row['post_url']) ?>" rel="noopener noreferrer" target="_blank">投稿を見る</a><?php endif; ?>
         </p>
         <?php if ($row['status'] === 'scheduled'): ?>
-          <details class="details"><summary>投稿される本文を見る</summary><pre class="preview"><?= h(admin_stock_render_body($stock, $row['platform'])) ?></pre></details>
+          <details class="details"><summary>投稿される本文を見る</summary><pre class="preview"><?= h(admin_stock_render_body($rowStock ?? ['bodies' => []], $row['platform'])) ?></pre></details>
         <?php endif; ?>
         <?php if ($row['status'] === 'manual_pending'): $bodyId = 'body-' . $row['id']; ?>
-          <?php if ($row['platform'] === 'note' && ($stock['bodies']['note']['title'] ?? null) !== null): ?>
-            <p class="muted">noteのタイトル：<?= h($stock['bodies']['note']['title']) ?></p>
+          <?php if ($row['platform'] === 'note' && ($rowStock['bodies']['note']['title'] ?? null) !== null): ?>
+            <p class="muted">noteのタイトル：<?= h($rowStock['bodies']['note']['title']) ?></p>
           <?php endif; ?>
-          <textarea class="form__input copy-src" id="<?= h($bodyId) ?>" readonly rows="5"><?= h(admin_stock_render_body($stock, $row['platform'])) ?></textarea>
+          <textarea class="form__input copy-src" id="<?= h($bodyId) ?>" readonly rows="5"><?= h(admin_stock_render_body($rowStock ?? ['bodies' => []], $row['platform'])) ?></textarea>
           <div class="form--inline">
             <button type="button" class="btn btn--ghost" data-copy-target="<?= h($bodyId) ?>">本文をコピー</button>
             <a class="btn btn--ghost" href="<?= h(ADMIN_SNS_PLATFORMS[$row['platform']]['open_url'] ?? '#') ?>" target="_blank" rel="noopener noreferrer"><?= h(admin_sns_label($row['platform'])) ?>を開く</a>
@@ -148,25 +174,47 @@ admin_render_flash();
           </form>
         <?php endif; ?>
         <?php if ($row['last_error'] !== null): ?><p class="muted"><?= h($row['last_error']) ?></p><?php endif; ?>
+        <?php if ($row['status'] === 'failed' && $rowStock === $stock && admin_sns_has_publisher($row['platform'])): ?>
+          <form method="post" action="<?= h(admin_url('/sns/')) ?>" class="form form--inline"><?= admin_csrf_field() ?><input type="hidden" name="action" value="retry"><input type="hidden" name="queue_id" value="<?= (int) $row['id'] ?>"><button type="submit" class="btn btn--primary">再試行</button></form>
+        <?php endif; ?>
+        <?php if ($row['status'] === 'posted' && $row['platform'] === 'threads' && (string) $row['external_id'] !== ''): ?>
+          <a class="btn btn--ghost" href="<?= h(admin_url('/sns/history?delete=' . (int) $row['id'])) ?>">Threadsから削除</a>
+        <?php endif; ?>
       </div>
     <?php endforeach; ?>
 
-    <?php $statuses = array_column($day['rows'], 'status'); ?>
+    <?php $statuses = array_column($day['rows'], 'status'); $unconfirmed = admin_sns_slot_has_unconfirmed($day['rows']); ?>
+    <?php if ($unconfirmed): ?><p class="muted"><?= h(ADMIN_SNS_UNCONFIRMED_MESSAGE) ?>。</p><?php endif; ?>
     <div class="form--inline">
-      <?php if (!array_intersect($statuses, ['posted', 'manual_pending'])): ?>
+      <?php if (!array_intersect($statuses, ['posted', 'manual_pending', 'sending', 'deleted']) && !$unconfirmed): ?>
         <a class="btn btn--ghost" href="<?= h(admin_url('/sns/?replace=' . $date)) ?>#slot-<?= h($date) ?>">差し替え</a>
       <?php endif; ?>
       <?php if (in_array('held', $statuses, true)): ?>
-        <form method="post" action="<?= h(admin_url('/sns/')) ?>"><?= admin_csrf_field() ?><input type="hidden" name="action" value="to_manual"><input type="hidden" name="date" value="<?= h($date) ?>"><button type="submit" class="btn btn--ghost">承認済みなら手動投稿待ちにする</button></form>
+        <form method="post" action="<?= h(admin_url('/sns/')) ?>"><?= admin_csrf_field() ?><input type="hidden" name="action" value="post_now"><input type="hidden" name="date" value="<?= h($date) ?>"><button type="submit" class="btn btn--ghost" data-confirm="承認済みの投稿を今から投稿しますか？（Threadsは自動で投稿、noteは手動投稿待ちになります）">承認済みなら今から投稿する</button></form>
       <?php endif; ?>
       <?php if (array_intersect($statuses, ['scheduled', 'held', 'manual_pending'])): ?>
         <form method="post" action="<?= h(admin_url('/sns/')) ?>"><?= admin_csrf_field() ?><input type="hidden" name="action" value="cancel"><input type="hidden" name="date" value="<?= h($date) ?>"><button type="submit" class="btn btn--ghost" data-confirm="この日の投稿を取り消しますか？（自動では埋め直しません）">取消</button></form>
       <?php endif; ?>
-      <?php if (array_intersect($statuses, ['canceled', 'held']) && !array_intersect($statuses, ['posted', 'manual_pending'])): ?>
+      <?php if (array_intersect($statuses, ['canceled', 'held']) && !array_intersect($statuses, ['posted', 'manual_pending', 'sending', 'deleted']) && !$unconfirmed): ?>
         <form method="post" action="<?= h(admin_url('/sns/')) ?>"><?= admin_csrf_field() ?><input type="hidden" name="action" value="release"><input type="hidden" name="date" value="<?= h($date) ?>"><button type="submit" class="btn btn--ghost">枠を外してストックに戻す</button></form>
       <?php endif; ?>
     </div>
   <?php endif; ?>
+
+  <?php foreach (admin_note_lane_rows($date) as $lane): ?>
+    <div class="slot__row slot__row--lane">
+      <p>
+        <strong>note（別枠）</strong>
+        <a href="<?= h(admin_url('/sns/stock-edit?id=' . (int) $lane['stock_id'])) ?>"><?= h($lane['title']) ?></a>
+        <span class="badge badge--<?= h($lane['status']) ?>"><?= h(ADMIN_QUEUE_STATUS_LABELS[$lane['status']] ?? $lane['status']) ?></span>
+        <?php if ($lane['post_url'] !== null): ?><a href="<?= h($lane['post_url']) ?>" rel="noopener noreferrer" target="_blank">投稿を見る</a><?php endif; ?>
+      </p>
+      <?php if (in_array($lane['status'], ['scheduled', 'manual_pending'], true)): ?>
+        <p class="muted">本文のコピー・画像・投稿URLの記録は、その日の「今日」画面で行います。</p>
+        <form method="post" action="<?= h(admin_url('/sns/')) ?>" class="form form--inline"><?= admin_csrf_field() ?><input type="hidden" name="action" value="note_lane_cancel"><input type="hidden" name="queue_id" value="<?= (int) $lane['id'] ?>"><button type="submit" class="btn btn--ghost" data-confirm="このnoteの別枠を取り消しますか？（同じ日のThreadsには影響しません）">noteの別枠を取消</button></form>
+      <?php endif; ?>
+    </div>
+  <?php endforeach; ?>
 
   <?php if ($replaceDate === $date): $candidates = admin_sns_candidates(null, 200); $ruleKind = $day['rule']['kind'] ?? null;
       usort($candidates, static fn (array $a, array $b): int => [($a['kind'] !== $ruleKind), $a['status'] !== 'approved', $a['id']] <=> [($b['kind'] !== $ruleKind), $b['status'] !== 'approved', $b['id']]); ?>

@@ -9,23 +9,31 @@ declare(strict_types=1);
  */
 
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/paths.php';
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/audit.php';
 require_once __DIR__ . '/layout.php';
 require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/crypto.php';
+require_once __DIR__ . '/totp.php';
+require_once __DIR__ . '/two-factor.php';
 require_once __DIR__ . '/notify.php';
 require_once __DIR__ . '/jobs.php';
 require_once __DIR__ . '/sns/platforms.php';
 require_once __DIR__ . '/sns/stock.php';
 require_once __DIR__ . '/sns/import.php';
 require_once __DIR__ . '/sns/scheduler.php';
+require_once __DIR__ . '/sns/threads.php';
 require_once __DIR__ . '/monitor.php';
 require_once __DIR__ . '/issues.php';
 require_once __DIR__ . '/seimei-kanji.php';
 require_once __DIR__ . '/health.php';
+require_once __DIR__ . '/backup.php';
 require_once __DIR__ . '/pages.php';
 require_once __DIR__ . '/seo.php';
+require_once __DIR__ . '/note.php';
+require_once __DIR__ . '/note-images.php';
+require_once __DIR__ . '/today.php';
 
 date_default_timezone_set(admin_config()['timezone']);
 

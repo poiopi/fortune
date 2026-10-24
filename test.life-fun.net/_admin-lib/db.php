@@ -7,6 +7,7 @@ declare(strict_types=1);
  * SQLite 接続とマイグレーション。
  * データ置き場が無ければ作成し、アクセス拒否の .htaccess が無ければ自動で置く
  * （アップロード漏れ対策。本来はアップロードされた .htaccess が使われる）。
+ * 書き込み先は paths.php のガードを通す（データ置き場の外には書かない）。
  */
 
 const ADMIN_DENY_HTACCESS = "# 管理画面のデータ置き場。Webからは一切読ませない（db.php が自動生成）。\n"
@@ -25,7 +26,7 @@ function admin_ensure_data_dir(): string
     if (!is_dir($dir) && !mkdir($dir, 0755, true) && !is_dir($dir)) {
         throw new RuntimeException('データ置き場を作成できません');
     }
-    $htaccess = $dir . '/.htaccess';
+    $htaccess = admin_assert_writable_path($dir . '/.htaccess');
     if (!is_file($htaccess)) {
         if (file_put_contents($htaccess, ADMIN_DENY_HTACCESS, LOCK_EX) === false) {
             throw new RuntimeException('データ置き場の .htaccess を作成できません');
@@ -42,7 +43,8 @@ function admin_db(): PDO
         return $pdo;
     }
 
-    $path = admin_ensure_data_dir() . '/' . admin_config()['db_file'];
+    admin_ensure_data_dir();
+    $path = admin_assert_writable_path(admin_data_path(admin_config()['db_file']));
     $isNew = !is_file($path);
 
     $pdo = new PDO('sqlite:' . $path, null, null, [

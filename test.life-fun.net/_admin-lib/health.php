@@ -8,6 +8,7 @@ declare(strict_types=1);
  *  - 毎時：主要ページの応答
  *  - 毎日 9時：上記＋SSL証明書・sitemap/robots/ads.txt・機密ファイルの非公開・存在しないURLの404
  *  - 管理画面の「今すぐ実行」：すべて
+ *  - バックアップ（backup.php）：毎時・毎日・今すぐ実行のたびに、最終成功からの時間で判定（ネットワークは使わない）
  * 結果は check_key ごとに最新1行。状態が変わったときだけ履歴に残し、🔴になったとき・🔴から戻ったときだけ通知する。
  */
 
@@ -32,9 +33,16 @@ const ADMIN_HEALTH_LABELS = [
     'ads'      => 'ads.txt',
     'secrets'  => '機密ファイルの非公開',
     'notfound' => '存在しないURLが404を返すか',
+    'backup'   => 'バックアップ',
+    'sns_token' => 'SNSトークン期限',
 ];
+/** SNSトークン期限：残り日数がこれ以下で🟡・🔴（ADMIN_PLAN.md 4章7） */
+const ADMIN_HEALTH_TOKEN_WARN_DAYS = 14;
+const ADMIN_HEALTH_TOKEN_RED_DAYS = 3;
 const ADMIN_HEALTH_DAILY_KEYS = ['ssl', 'sitemap', 'robots', 'ads', 'secrets', 'notfound'];
 const ADMIN_HEALTH_STATUS_ICONS = ['green' => '🟢', 'yellow' => '🟡', 'red' => '🔴'];
+/** 🔴になった・戻ったときの通知の種類（notify.php）。ここに無い項目は health_change（朝のまとめ） */
+const ADMIN_HEALTH_NOTIFY_EVENTS = ['pages' => 'site_down', 'secrets' => 'secret_exposed', 'sns_token' => 'threads_token'];
 
 /**
  * 複数URLを並行して取得する。戻り値：[url => ['code' => int, 'time' => float, 'body' => string, 'error' => ?string]]
@@ -251,7 +259,7 @@ function admin_health_check_notfound(): array
  */
 function admin_health_run(bool $daily): string
 {
-    $results = ['pages' => admin_health_check_pages()];
+    $results = ['pages' => admin_health_check_pages(), 'backup' => admin_health_check_backup(), 'sns_token' => admin_health_check_sns_token()];
     if ($daily) {
         $results['ssl'] = admin_health_check_ssl();
         $results += admin_health_check_site_files();
@@ -259,17 +267,19 @@ function admin_health_run(bool $daily): string
         $results['notfound'] = admin_health_check_notfound();
     }
 
+    // 通知は項目ごとに種類を分ける：主要ページ＝サイト停止、機密ファイル、SNSトークン＝Threads はすぐ届く。そのほかは朝のまとめ（notify.php）
     $alerts = [];
     foreach ($results as $key => [$status, $message, $detail]) {
         $change = admin_health_save($key, $status, $message, $detail);
+        $event = ADMIN_HEALTH_NOTIFY_EVENTS[$key] ?? 'health_change';
         if ($change === 'red') {
-            $alerts[] = '🔴 ' . ADMIN_HEALTH_LABELS[$key] . '：' . $message;
+            $alerts[$event][] = '🔴 ' . ADMIN_HEALTH_LABELS[$key] . '：' . $message;
         } elseif ($change === 'recovered') {
-            $alerts[] = ADMIN_HEALTH_STATUS_ICONS[$status] . ' 回復：' . ADMIN_HEALTH_LABELS[$key] . '：' . $message;
+            $alerts[$event][] = ADMIN_HEALTH_STATUS_ICONS[$status] . ' 回復：' . ADMIN_HEALTH_LABELS[$key] . '：' . $message;
         }
     }
-    if ($alerts !== []) {
-        admin_notify('health_change', "サイトヘルスに変化がありました。\n" . implode("\n", $alerts) . "\n" . admin_absolute_admin_url('/health'), true);
+    foreach ($alerts as $event => $lines) {
+        admin_notify($event, "サイトの見回りに変化がありました。\n" . implode("\n", $lines) . "\n" . admin_absolute_admin_url('/health'), true);
     }
 
     $counts = array_count_values(array_column($results, 0));
@@ -399,4 +409,41 @@ function admin_server_tools(): array
     ];
 
     return $tools;
+}
+
+/**
+ * SNSトークン期限（Threads）。ネットワークは使わず、保存済みの期限と連携状態だけで判定する（毎時・毎日・今すぐ実行）。
+ *  - 未連携：🟡（対象外・自動投稿は止まっている。既存の「まだ実行されていない」と同じく🟡。ヘルスの状態は🟢🟡🔴の3つ）
+ *  - エラー（認証切れ等）・失効・残り3日以下：🔴（🔴になったときは admin_health_run の仕組みで通知）
+ *  - 残り14日以下：🟡、それより先：🟢
+ */
+function admin_health_check_sns_token(?DateTimeImmutable $now = null): array
+{
+    $now ??= new DateTimeImmutable('now');
+    $account = admin_threads_account();
+    $accountsUrl = '設定 → SNS連携';
+    if ($account['status'] === 'disconnected' || $account['token_encrypted'] === null) {
+        return ['yellow', 'Threads：未連携（対象外。自動投稿は止まっています。' . $accountsUrl . 'から連携できます）', null];
+    }
+    $detail = '@' . $account['account_name'] . '・最終更新 ' . admin_format_time($account['token_issued_at'])
+        . ($account['last_error'] !== null ? "\n最後のエラー：" . $account['last_error'] : '');
+    if ($account['status'] === 'error') {
+        return ['red', 'Threads：連携エラー。' . $accountsUrl . 'から連携し直してください', $detail];
+    }
+    if ($account['token_expires_at'] === null) {
+        return ['red', 'Threads：トークンの期限が記録されていません。連携し直してください', $detail];
+    }
+    $expires = new DateTimeImmutable($account['token_expires_at']);
+    $days = (int) floor(($expires->getTimestamp() - $now->getTimestamp()) / 86400);
+    $message = 'Threads：期限 ' . $expires->format('Y-m-d') . '（残り' . max(0, $days) . '日）';
+    if ($expires <= $now) {
+        return ['red', 'Threads：トークンが失効しています（' . $expires->format('Y-m-d') . '）。' . $accountsUrl . 'から連携し直してください', $detail];
+    }
+    if ($days <= ADMIN_HEALTH_TOKEN_RED_DAYS) {
+        return ['red', $message . '。毎日の自動更新が失敗しています。' . $accountsUrl . 'で「今すぐトークン更新」または連携し直してください', $detail];
+    }
+    if ($days <= ADMIN_HEALTH_TOKEN_WARN_DAYS) {
+        return ['yellow', $message . '。毎日の自動更新が失敗している可能性があります', $detail];
+    }
+    return ['green', $message, $detail];
 }

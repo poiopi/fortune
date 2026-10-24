@@ -8,19 +8,57 @@ declare(strict_types=1);
  * CSP でインラインのスタイル・スクリプトを禁止しているため、見た目はすべて admin.css に置く。
  */
 
-/** 左メニュー。ready=false は未実装（Phase 2以降）で「準備中」表示。 */
+/**
+ * メニュー（ADMIN_FEATURES_ORGANIZED.md 1-1 の7つ。ADMIN_STAGE2_PROPOSAL.md 3-1）。
+ * 各画面は admin_render_header() に「画面のキー」（tabs のキー、タブが無いメニューはメニューのキー）を渡す。
+ * URL はメニューに合わせて変えない（Meta に登録した Threads の戻り先などを壊さないため）。
+ * ready=false：中身がまだ無いメニュー（数字とふりかえり＝段階3、お問い合わせ＝段階6）。中身ができるまでメニューに出さない（ADMIN_FULLSPEC_PROPOSAL.md 2-1）
+ * tabs：[画面のキー => [タブの名前, URL, この画面でできること]]
+ * mobile：スマホで画面の下に固定するメニュー
+ */
 const ADMIN_MENU = [
-    'dashboard' => ['label' => 'ダッシュボード', 'path' => '/',        'ready' => true],
-    'sns'       => ['label' => 'SNS投稿',       'path' => '/sns/',    'ready' => true],
-    'errors'    => ['label' => 'エラー監視',     'path' => '/errors',  'ready' => true],
-    'issues'    => ['label' => '既知の不具合',   'path' => '/issues',  'ready' => true],
-    'kanji'     => ['label' => '姓名判断の漢字', 'path' => '/kanji',   'ready' => true],
-    'health'    => ['label' => 'サイトヘルス',   'path' => '/health',  'ready' => true],
-    'seo'       => ['label' => 'SEO点検',       'path' => '/seo',     'ready' => true],
-    'pages'     => ['label' => 'ページ台帳',     'path' => '/pages',   'ready' => true],
-    'settings'  => ['label' => '設定',          'path' => '/settings', 'ready' => true],
-    'logs'      => ['label' => '操作ログ',       'path' => '/logs',    'ready' => true],
+    // 今日：タブは出さない（「今日の作業」へは画面の主ボタンから入る。tabs は画面のキー・説明文のために持つ）
+    'today' => ['label' => '今日', 'path' => '/', 'ready' => true, 'mobile' => true, 'show_tabs' => false, 'tabs' => [
+        'today'      => ['今日', '/', '今日やることを上から順に片付けます。'],
+        'today_flow' => ['今日の作業', '/today-flow', '今日の作業を、1つずつ「次へ」で進めます。'],
+    ]],
+    'write' => ['label' => '書いて出す', 'path' => '/sns/', 'ready' => true, 'mobile' => true, 'tabs' => [
+        'sns_queue'   => ['投稿予定', '/sns/', 'これから出るSNS・noteの投稿を確認し、差し替え・取り消しをします。'],
+        'sns_stock'   => ['ストック', '/sns/stock', '投稿のネタ（ストック）を確認・承認・追加します。'],
+        'sns_history' => ['履歴', '/sns/history', '出した投稿の結果を見て、失敗したものを再試行します。'],
+        'sns_rules'   => ['投稿のルール', '/sns/rules', '曜日ごとの投稿の種類・時刻と、承認してから出すかどうかを決めます。'],
+    ]],
+    'numbers' => ['label' => '数字とふりかえり', 'path' => null, 'ready' => false, 'mobile' => false, 'tabs' => []],
+    'site' => ['label' => 'サイトを整える', 'path' => '/seo', 'ready' => true, 'mobile' => false, 'tabs' => [
+        'seo'   => ['SEO点検', '/seo', '公開ページの検索向けの問題（タイトル・説明文など）を点検します。'],
+        'pages' => ['ページ台帳', '/pages', '公開しているページの一覧と、それぞれの状態を見ます。'],
+        'kanji' => ['姓名判断の漢字', '/kanji', '姓名判断で使う漢字の画数を追加・確認します。'],
+    ]],
+    'contact' => ['label' => 'お問い合わせ', 'path' => null, 'ready' => false, 'mobile' => false, 'tabs' => []],
+    'trouble' => ['label' => '困ったとき', 'path' => '/health', 'ready' => true, 'mobile' => false, 'tabs' => [
+        'health' => ['サイトの見回り', '/health', '本番サイトが正しく動いているかの自動チェックの結果です。'],
+        'errors' => ['エラー', '/errors', '公開ページで起きたJSエラーを確認し、対応済みにします。'],
+        'issues' => ['既知の不具合', '/issues', '分かっている不具合と、その対応の状況を記録します。'],
+    ]],
+    'settings' => ['label' => '設定', 'path' => '/settings', 'ready' => true, 'mobile' => false, 'tabs' => [
+        'settings'     => ['通知', '/settings', '何を・いつ・どこに知らせるかを決めます。'],
+        'security'     => ['ログインと2段階認証', '/security', 'ログインの記録・2段階認証・パスワードの変更です。'],
+        'sns_accounts' => ['SNS連携', '/sns/accounts', 'Threadsとの連携と、noteのIDを設定します。'],
+        'cron'         => ['自動実行', '/cron', '自動で動く処理（cron）が動いているかを確かめます。'],
+        'logs'         => ['操作ログ', '/logs', 'いつ・何をしたかの記録です。'],
+    ]],
 ];
+
+/** 画面のキー → [メニューのキー, タブの定義]。見つからなければ [null, null] */
+function admin_menu_lookup(string $screen): array
+{
+    foreach (ADMIN_MENU as $key => $item) {
+        if (isset($item['tabs'][$screen])) {
+            return [$key, $item['tabs'][$screen]];
+        }
+    }
+    return [isset(ADMIN_MENU[$screen]) ? $screen : null, null];
+}
 
 function h(?string $value): string
 {
@@ -71,9 +109,21 @@ function admin_render_head(string $title, string $bodyClass): void
         . '</head><body class="' . h($bodyClass) . '">';
 }
 
-/** ログイン後の画面の先頭（左メニュー付き）。 */
-function admin_render_header(string $title, string $active): void
+/**
+ * ログイン後の画面の先頭（PCは左メニュー、スマホは画面の下に「今日」「書いて出す」「ほかの画面」）。
+ * $screen：画面のキー（ADMIN_MENU の tabs のキー）。上部には異常（赤）だけを全画面に出す。やることは「今日」画面と朝のまとめだけ。
+ */
+function admin_render_header(string $title, string $screen): void
 {
+    [$activeMenu, $tab] = admin_menu_lookup($screen);
+    $items = admin_status_items();
+    $alerts = array_filter($items, static fn (array $i): bool => $i['kind'] === 'alert');
+    // メニューの点：今日＝やることがある、困ったとき＝サイトの異常がある
+    $dots = [
+        'today'   => count($items) > count($alerts),
+        'trouble' => array_filter($alerts, static fn (array $i): bool => $i['category'] === 'site') !== [],
+    ];
+
     admin_render_head($title, 'admin');
     echo '<header class="topbar"><a class="topbar__brand" href="' . h(admin_url('/')) . '">life-fun 管理画面</a>'
         . admin_env_badge()
@@ -81,74 +131,64 @@ function admin_render_header(string $title, string $active): void
         . admin_csrf_field()
         . '<button type="submit" class="btn btn--ghost">ログアウト</button></form></header>';
 
-    echo '<div class="layout"><nav class="sidenav"><ul>';
+    echo '<div class="layout"><nav class="sidenav" aria-label="メニュー"><ul>';
     foreach (ADMIN_MENU as $key => $item) {
-        $classes = 'sidenav__item' . ($key === $active ? ' is-active' : '');
         if ($item['ready']) {
-            echo '<li class="' . $classes . '"><a href="' . h(admin_url($item['path'])) . '">' . h($item['label']) . '</a></li>';
-        } else {
-            echo '<li class="' . $classes . ' is-disabled"><span>' . h($item['label']) . '</span><small>準備中</small></li>';
+            echo admin_menu_link($key, $item, $key === $activeMenu, $dots[$key] ?? false, 'sidenav__item');
         }
     }
-    echo '</ul></nav><main class="main">';
-    foreach (admin_collect_warnings() as $warning) {
-        echo '<p class="warnbar">' . h($warning['text'])
-            . ($warning['link'] !== null ? ' <a href="' . h(admin_url($warning['link'])) . '">確認する</a>' : '')
+    echo '</ul></nav>';
+    admin_render_bottomnav($activeMenu, $dots);
+    echo '<main class="main">';
+    foreach ($alerts as $alert) {
+        echo '<p class="warnbar">' . h($alert['text'])
+            . ($alert['link'] !== null ? ' <a href="' . h(admin_url($alert['link'])) . '">' . h($alert['link_label'] ?? '確認する') . '</a>' : '')
             . '</p>';
     }
-    echo '<h1 class="page-title">' . h($title) . '</h1>';
+    // 見出し：タブと同じ名前の画面はメニューの名前（タブと見出しが同じ言葉を2回並べないため）。詳細画面などは画面の名前
+    $heading = $tab !== null && $tab[0] === $title && (ADMIN_MENU[$activeMenu]['show_tabs'] ?? true) ? ADMIN_MENU[$activeMenu]['label'] : $title;
+    echo '<h1 class="page-title">' . h($heading) . '</h1>';
+    if ($activeMenu !== null && (ADMIN_MENU[$activeMenu]['show_tabs'] ?? true) && count(ADMIN_MENU[$activeMenu]['tabs']) > 1) {
+        echo '<nav class="tabs" aria-label="' . h(ADMIN_MENU[$activeMenu]['label']) . 'の画面">';
+        foreach (ADMIN_MENU[$activeMenu]['tabs'] as $key => [$label, $path]) {
+            echo '<a class="tabs__item' . ($key === $screen ? ' is-active' : '') . '" href="' . h(admin_url($path)) . '"'
+                . ($key === $screen ? ' aria-current="page"' : '') . '>' . h($label) . '</a>';
+        }
+        echo '</nav>';
+    }
+    if ($tab !== null) {
+        echo '<p class="page-lead">' . h($tab[2]) . '</p>';
+    }
 }
 
-/** 全画面の上部に出す警告。問題が無ければ空配列。 */
-function admin_collect_warnings(): array
+/** メニューの1項目（<li>）。点は文字の右に出す丸（CSS）。読み上げ用に「（お知らせあり）」を添える */
+function admin_menu_link(string $key, array $item, bool $active, bool $dot, string $class): string
 {
-    $warnings = [];
-    $cron = admin_cron_health();
-    if ($cron['state'] === 'never') {
-        $warnings[] = ['text' => 'cronがまだ一度も動いていません（ロリポップのcron設定が未登録の可能性があります）。', 'link' => '/settings'];
-    } elseif ($cron['state'] === 'stale') {
-        $warnings[] = ['text' => 'cronが' . ADMIN_CRON_STALE_MINUTES . '分以上動いていません（最終実行：' . admin_format_time($cron['last']) . '）。', 'link' => '/settings'];
-    }
-    $pending = (int) admin_db()->query("SELECT COUNT(*) FROM post_queue WHERE status = 'manual_pending'")->fetchColumn();
-    if ($pending > 0) {
-        $warnings[] = ['text' => '手動投稿待ちが' . $pending . '件あります。', 'link' => '/sns/'];
-    }
-    $held = (int) admin_db()->query("SELECT COUNT(DISTINCT slot_date) FROM post_queue WHERE status = 'held' AND slot_date >= date('now', 'localtime', '-7 days')")->fetchColumn();
-    if ($held > 0) {
-        $warnings[] = ['text' => '未承認のため保留になった投稿が' . $held . '枠あります（直近7日）。', 'link' => '/sns/'];
-    }
-    if (admin_post_mode() === 'review') {
-        $stmt = admin_db()->prepare("SELECT COUNT(DISTINCT q.slot_date) FROM post_queue q JOIN post_stock s ON s.id = q.stock_id WHERE q.status = 'scheduled' AND s.status <> 'approved' AND q.scheduled_at <= ?");
-        $stmt->execute([(new DateTimeImmutable('+1 day'))->format(DATE_ATOM)]);
-        if ((int) $stmt->fetchColumn() > 0) {
-            $warnings[] = ['text' => '24時間以内に投稿予定の、未承認の投稿があります。', 'link' => '/sns/'];
+    return '<li class="' . $class . ($active ? ' is-active' : '') . '"><a href="' . h(admin_url($item['path'])) . '"' . ($active ? ' aria-current="page"' : '') . '>'
+        . h($item['label']) . ($dot ? '<span class="menu-dot menu-dot--' . h($key) . '"><span class="visually-hidden">（お知らせあり）</span></span>' : '')
+        . '</a></li>';
+}
+
+/** スマホの下部メニュー：mobile=true のメニューを固定で並べ、残りは「ほかの画面」（<details>。JS不要）に入れる */
+function admin_render_bottomnav(?string $activeMenu, array $dots): void
+{
+    $fixed = '';
+    $others = '';
+    $otherActive = false;
+    foreach (ADMIN_MENU as $key => $item) {
+        if (!$item['ready']) {
+            continue;
+        }
+        if ($item['mobile']) {
+            $fixed .= admin_menu_link($key, $item, $key === $activeMenu, $dots[$key] ?? false, 'bottomnav__item');
+        } else {
+            $others .= admin_menu_link($key, $item, $key === $activeMenu, $dots[$key] ?? false, 'bottomnav__menuitem');
+            $otherActive = $otherActive || $key === $activeMenu;
         }
     }
-    $empty = admin_sns_empty_slots();
-    if ($empty !== []) {
-        $warnings[] = ['text' => '割り当てるストックが無い日があります：' . implode('、', array_map(static fn (array $e): string => admin_date_label($e['date']) . admin_kind_label($e['kind']), $empty)), 'link' => '/sns/stock'];
-    }
-    foreach (admin_sns_stock_days_left() as $k) {
-        if ($k['per_week'] > 0 && $k['days'] < ADMIN_STOCK_LOW_DAYS) {
-            $warnings[] = ['text' => $k['label'] . 'のストックが残り' . $k['count'] . '件（約' . $k['days'] . '日分）です。', 'link' => '/sns/stock'];
-        }
-    }
-    $redHealth = admin_db()->query("SELECT check_key FROM health_checks WHERE status = 'red'")->fetchAll(PDO::FETCH_COLUMN);
-    if ($redHealth !== []) {
-        $warnings[] = ['text' => 'サイトヘルスに🔴があります：' . implode('、', array_map(static fn (string $k): string => ADMIN_HEALTH_LABELS[$k] ?? $k, $redHealth)), 'link' => '/health'];
-    }
-    $openErrors = (int) admin_db()->query("SELECT COUNT(*) FROM client_errors WHERE status = 'open'")->fetchColumn();
-    if ($openErrors > 0) {
-        $warnings[] = ['text' => '公開ページのJSエラーが' . $openErrors . '種類、未対応のままです。', 'link' => '/errors'];
-    }
-    $staleIssues = admin_issue_stale_count();
-    if ($staleIssues > 0) {
-        $warnings[] = ['text' => '重要度「高」の不具合が' . $staleIssues . '件、' . ADMIN_ISSUE_STALE_DAYS . '日以上更新されていません。', 'link' => '/issues'];
-    }
-    if (admin_notify_channels() === []) {
-        $warnings[] = ['text' => '通知先が1つも有効になっていません。エラーが起きても通知されません。', 'link' => '/settings'];
-    }
-    return $warnings;
+    echo '<nav class="bottomnav" aria-label="メニュー"><ul class="bottomnav__list">' . $fixed
+        . '<li class="bottomnav__item bottomnav__item--more' . ($otherActive ? ' is-active' : '') . '"><details class="bottomnav__more"><summary>ほかの画面</summary>'
+        . '<ul class="bottomnav__menu">' . $others . '</ul></details></li></ul></nav>';
 }
 
 /** ISO 8601 → 「2026-09-26 03:00:00」 */
@@ -197,15 +237,4 @@ function admin_render_flash(): void
     if (is_array($flash)) {
         echo '<p class="alert alert--' . ($flash['type'] === 'ok' ? 'ok' : 'error') . '">' . nl2br(h($flash['text'])) . '</p>';
     }
-}
-
-/** SNS投稿の画面上部のタブ */
-function admin_render_sns_tabs(string $active): void
-{
-    $tabs = ['queue' => ['投稿予定', '/sns/'], 'stock' => ['ストック', '/sns/stock'], 'history' => ['履歴', '/sns/history'], 'accounts' => ['SNS連携', '/sns/accounts']];
-    echo '<nav class="tabs">';
-    foreach ($tabs as $key => [$label, $path]) {
-        echo '<a class="tabs__item' . ($key === $active ? ' is-active' : '') . '" href="' . h(admin_url($path)) . '">' . h($label) . '</a>';
-    }
-    echo '</nav>';
 }

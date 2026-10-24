@@ -12,12 +12,21 @@ if (admin_is_logged_in()) {
 
 $error = null;
 $notice = isset($_GET['setup']) ? 'パスワードを設定しました。ログインしてください。' : null;
+if (isset($_GET['expired'])) {
+    $error = 'コード入力の有効期限（5分）が切れました。もう一度パスワードから入力してください。';
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     admin_verify_csrf();
     $result = admin_attempt_login((string) ($_POST['password'] ?? ''));
     if ($result === 'ok') {
         admin_redirect('/');
+    }
+    if ($result === 'need_2fa') {
+        admin_redirect('/login-2fa');
+    }
+    if ($result === 'reset_2fa') {
+        admin_redirect('/two-factor');
     }
     $error = $result === 'locked'
         ? 'ログインの失敗が続いたため、しばらくログインできません。15分ほど待ってからお試しください。'

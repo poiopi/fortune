@@ -1,11 +1,12 @@
 <?php
 declare(strict_types=1);
 
-// 設定：通知先・投稿モード・cronの状態（実行時間テスト）・パスワード変更。
+// 設定 → 通知：送り先（メール・Discord）・テスト送信・すぐ届く通知の一覧・朝のまとめ（時刻・区分ごとのオン/オフ）・最近の通知。
+// 段階2で、投稿モード・ローテーションは「書いて出す → 投稿のルール」、cron は「設定 → 自動実行」、
+// 2段階認証・パスワード変更は「設定 → ログインと2段階認証」へ移した。
 // POST は処理後に同じ画面へリダイレクトし、結果はセッションの flash で1回だけ表示する。
 
 require_once __DIR__ . '/../_admin-lib/bootstrap.php';
-require_once __DIR__ . '/../_admin-lib/cron-probe.php';
 
 admin_require_login();
 
@@ -55,12 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $discordEnabled ? 'ON' : 'OFF',
             $deleteWebhook ? '（Webhook削除）' : ($webhook !== '' ? '（Webhook更新）' : '')
         ));
-        settings_flash('ok', '通知設定を保存しました。');
+        settings_flash('ok', '通知の送り先を保存しました。');
     }
 
     if ($action === 'test_notify') {
         if (admin_notify_channels() === []) {
-            settings_flash('error', '有効な通知先がありません。先に通知設定を保存してください。');
+            settings_flash('error', '有効な送り先がありません。先に通知の送り先を保存してください。');
         }
         $results = admin_notify('test', "テスト送信です。\n送信日時：" . admin_format_time(admin_now()), true);
         $labels = ['email' => 'メール', 'discord' => 'Discord'];
@@ -74,79 +75,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         settings_flash($allOk ? 'ok' : 'error', implode(' / ', $summary) . ($allOk ? '。届いているか確認してください。' : ''));
     }
 
-    if ($action === 'save_post_mode') {
-        $mode = (string) ($_POST['post_mode'] ?? '');
-        if (!in_array($mode, ['review', 'auto'], true)) {
-            settings_flash('error', '投稿モードの値が正しくありません。');
+    if ($action === 'save_digest') {
+        $hour = (string) ($_POST['digest_hour'] ?? '');
+        if (preg_match('/^(?:[01]?\d|2[0-3])$/', $hour) !== 1) {
+            settings_flash('error', '朝のまとめの時刻が正しくありません。');
         }
-        admin_set_setting('post_mode', $mode);
-        admin_audit('settings_post_mode', null, $mode === 'review' ? '確認モード' : '自動モード');
-        settings_flash('ok', '投稿モードを保存しました。');
-    }
-
-    if ($action === 'request_probe') {
-        $probe = admin_cron_probe_view();
-        if (in_array($probe['status'], ['requested', 'running'], true)) {
-            settings_flash('error', 'cron実行時間テストは予約済み、または実行中です。');
-        }
-        admin_request_cron_probe();
-        admin_audit('cron_probe_request');
-        settings_flash('ok', 'cron実行時間テストを予約しました。次のcron（1分以内）で始まり、最大5分かかります。');
-    }
-
-    if ($action === 'change_password') {
-        $result = admin_change_password(
-            (string) ($_POST['current_password'] ?? ''),
-            (string) ($_POST['new_password'] ?? ''),
-            (string) ($_POST['new_password_confirm'] ?? '')
-        );
-        if ($result === 'ok') {
-            admin_audit('password_changed');
-            settings_flash('ok', 'パスワードを変更しました。');
-        }
-        admin_audit('password_change_failed', null, $result);
-        $messages = [
-            'wrong_current' => '現在のパスワードが違います。',
-            'too_short'     => '新しいパスワードは' . admin_config()['password_min_length'] . '文字以上にしてください。',
-            'mismatch'      => '新しいパスワード（確認）が一致しません。',
-        ];
-        settings_flash('error', $messages[$result]);
-    }
-
-    if ($action === 'save_rotation') {
-        $kinds = admin_post_kinds(true);
-        $allowedPlatforms = admin_sns_rotation_platforms();
-        $update = admin_db()->prepare('UPDATE rotation_rules SET kind = ?, post_time = ?, platforms = ?, active = ? WHERE weekday = ?');
-        $summary = [];
-        admin_db()->exec('BEGIN IMMEDIATE');
-        try {
-            foreach (range(0, 6) as $weekday) {
-                $row = $_POST['rotation'][$weekday] ?? [];
-                $kind = (string) ($row['kind'] ?? '');
-                $time = (string) ($row['time'] ?? '');
-                $platforms = array_values(array_intersect($allowedPlatforms, (array) ($row['platforms'] ?? [])));
-                $active = isset($row['active']);
-                if (!isset($kinds[$kind]) || preg_match('/^([01]\d|2[0-3]):[0-5]\d$/', $time) !== 1) {
-                    throw new InvalidArgumentException(ADMIN_WEEKDAY_LABELS[$weekday] . '曜日の種別または時刻が正しくありません。');
-                }
-                if ($active && $platforms === []) {
-                    throw new InvalidArgumentException(ADMIN_WEEKDAY_LABELS[$weekday] . '曜日の投稿先を1つ以上選んでください。');
-                }
-                $update->execute([$kind, $time, json_encode($platforms), $active ? 1 : 0, $weekday]);
-                $summary[] = ADMIN_WEEKDAY_LABELS[$weekday] . ':' . ($active ? $kinds[$kind]['label'] . ' ' . $time : '休み');
+        $on = [];
+        foreach (array_keys(ADMIN_NOTIFY_DIGEST_CATEGORIES) as $category) {
+            $enabled = isset($_POST['digest'][$category]);
+            admin_set_setting('notify_digest_' . $category, $enabled ? '1' : '0');
+            if ($enabled) {
+                $on[] = $category;
             }
-            admin_db()->exec('COMMIT');
-        } catch (InvalidArgumentException $e) {
-            admin_db()->exec('ROLLBACK');
-            settings_flash('error', $e->getMessage());
         }
-        $reset = isset($_POST['reset_future']);
-        if ($reset) {
-            admin_sns_reset_future_rotation();
-        }
-        $assigned = admin_sns_assign();
-        admin_audit('rotation_change', null, implode(' ', $summary) . ($reset ? '（未投稿の自動割り当てをやり直し）' : ''));
-        settings_flash('ok', 'ローテーションを保存しました。' . ($reset ? '未投稿の自動割り当てをやり直しました（' . $assigned . '枠）。' : '新しい設定は、まだ割り当てられていない日から使われます。'));
+        admin_set_setting('notify_digest_hour', (string) (int) $hour);
+        admin_audit('settings_digest', null, (int) $hour . '時 / オン：' . ($on === [] ? 'なし' : implode(',', $on)));
+        settings_flash('ok', '朝のまとめの設定を保存しました。');
     }
 
     settings_flash('error', '不明な操作です。');
@@ -160,31 +104,20 @@ $emailTo = admin_setting('notify_email_to') ?? '';
 $discordEnabled = admin_setting('notify_discord_enabled') === '1';
 $webhook = admin_secret_setting('notify_discord_webhook');
 $webhookHint = $webhook === null ? null : '…' . substr($webhook, -6);
-$postMode = admin_setting('post_mode') ?? 'review';
-$rotation = admin_rotation_rules(false);
+$digestHour = admin_notify_digest_hour();
+$notifications = admin_db()->query('SELECT channel, event, status, sent_at FROM notifications ORDER BY id DESC LIMIT 10')->fetchAll();
+$pendingDigest = (int) admin_db()->query('SELECT COUNT(*) FROM notify_digest WHERE sent_at IS NULL')->fetchColumn();
+$channelLabels = ['email' => 'メール', 'discord' => 'Discord'];
 
-$cron = admin_cron_health();
-$cronStateLabel = ['ok' => '🟢 正常', 'stale' => '🔴 止まっています', 'never' => '🔴 まだ一度も動いていません'][$cron['state']];
-$jobs = admin_db()->query('SELECT * FROM jobs ORDER BY job')->fetchAll();
-$runs = admin_db()->query('SELECT * FROM cron_runs ORDER BY id DESC LIMIT 10')->fetchAll();
-$probe = admin_cron_probe_view();
-$probeLabels = [
-    'none'      => '未実施',
-    'requested' => '予約済み（次のcronで開始します）',
-    'running'   => '実行中',
-    'done'      => '完了（' . ADMIN_PROBE_MAX_SECONDS . '秒間止められずに動きました）',
-    'stopped'   => '途中で止まりました（下の「動けた秒数」が上限の目安です）',
-];
-
-admin_render_header('設定', 'settings');
+admin_render_header('通知', 'settings');
 ?>
 <?php if ($flash !== null): ?>
   <p class="alert alert--<?= $flash['type'] === 'ok' ? 'ok' : 'error' ?>"><?= h($flash['text']) ?></p>
 <?php endif; ?>
 
 <section class="panel panel--wide">
-  <h2 class="panel__title">通知</h2>
-  <p class="muted">エラー・投稿失敗・トークン期限などの通知先です。メールとDiscordは両方ONにもできます。</p>
+  <h2 class="panel__title">送り先</h2>
+  <p class="muted">メールとDiscordは両方ONにもできます。</p>
   <form method="post" action="<?= h(admin_url('/settings')) ?>" class="form">
     <?= admin_csrf_field() ?>
     <input type="hidden" name="action" value="save_notify">
@@ -199,132 +132,70 @@ admin_render_header('設定', 'settings');
       <label class="check"><input type="checkbox" name="discord_webhook_delete" value="1"> 保存済みのWebhook URLを削除する</label>
     <?php endif; ?>
     <input class="form__input" type="password" id="discord_webhook" name="discord_webhook" autocomplete="off" placeholder="https://discord.com/api/webhooks/...">
-    <button type="submit" class="btn btn--primary">通知設定を保存</button>
+    <button type="submit" class="btn btn--primary">送り先を保存</button>
   </form>
   <form method="post" action="<?= h(admin_url('/settings')) ?>" class="form form--inline">
     <?= admin_csrf_field() ?>
     <input type="hidden" name="action" value="test_notify">
     <button type="submit" class="btn btn--ghost">テスト送信</button>
-    <span class="muted">保存済みの設定で、有効な通知先すべてに送ります。</span>
+    <span class="muted">保存済みの設定で、有効な送り先すべてに送ります。</span>
   </form>
 </section>
 
 <section class="panel panel--wide">
-  <h2 class="panel__title">投稿モード</h2>
-  <p class="muted">確認モードでは、承認したストックだけが投稿されます（未承認のまま投稿時刻になると保留）。自動モードでは、取り込んだストックがそのまま投稿対象になります。目安：確認モードで修正ゼロが2週間続いたら切り替えを検討（ダッシュボードに直近14日の承認数・修正数を表示）。</p>
-  <form method="post" action="<?= h(admin_url('/settings')) ?>" class="form">
-    <?= admin_csrf_field() ?>
-    <input type="hidden" name="action" value="save_post_mode">
-    <label class="check"><input type="radio" name="post_mode" value="review"<?= $postMode === 'review' ? ' checked' : '' ?>> 確認モード（投稿前に自分で確認・承認する）</label>
-    <label class="check"><input type="radio" name="post_mode" value="auto"<?= $postMode === 'auto' ? ' checked' : '' ?>> 自動モード（確認せずに投稿する）</label>
-    <button type="submit" class="btn btn--primary">投稿モードを保存</button>
-  </form>
-</section>
-
-<section class="panel panel--wide">
-  <h2 class="panel__title">SNS投稿のローテーション</h2>
-  <p class="muted">曜日ごとに、投稿する種別・時刻・投稿先を決めます（1日1枠）。noteは、ストックにnote用の本文があるときだけ自動で加わります。</p>
-  <form method="post" action="<?= h(admin_url('/settings')) ?>" class="form">
-    <?= admin_csrf_field() ?>
-    <input type="hidden" name="action" value="save_rotation">
-    <?php $rotationKinds = admin_post_kinds(true); ?>
-    <?php foreach ([1, 2, 3, 4, 5, 6, 0] as $weekday): $rule = $rotation[$weekday] ?? ['kind' => array_key_first($rotationKinds), 'post_time' => '20:00', 'platforms' => [], 'active' => 0]; ?>
-      <div class="rotation-row">
-        <strong><?= h(ADMIN_WEEKDAY_LABELS[$weekday]) ?></strong>
-        <select class="form__input" name="rotation[<?= $weekday ?>][kind]" aria-label="<?= h(ADMIN_WEEKDAY_LABELS[$weekday]) ?>曜日の種別">
-          <?php foreach ($rotationKinds as $key => $k): ?><option value="<?= h($key) ?>"<?= $rule['kind'] === $key ? ' selected' : '' ?>><?= h($k['label']) ?></option><?php endforeach; ?>
-        </select>
-        <input class="form__input" type="time" name="rotation[<?= $weekday ?>][time]" value="<?= h($rule['post_time']) ?>" aria-label="<?= h(ADMIN_WEEKDAY_LABELS[$weekday]) ?>曜日の時刻" required>
-        <span>
-          <?php foreach (admin_sns_rotation_platforms() as $platform): ?>
-            <label class="check"><input type="checkbox" name="rotation[<?= $weekday ?>][platforms][]" value="<?= h($platform) ?>"<?= in_array($platform, $rule['platforms'], true) ? ' checked' : '' ?>> <?= h(admin_sns_label($platform)) ?></label>
-          <?php endforeach; ?>
-        </span>
-        <label class="check"><input type="checkbox" name="rotation[<?= $weekday ?>][active]" value="1"<?= (int) $rule['active'] === 1 ? ' checked' : '' ?>> 投稿する</label>
-      </div>
-    <?php endforeach; ?>
-    <label class="check"><input type="checkbox" name="reset_future" value="1"> すでに自動で割り当て済みの未投稿分も、新しい設定で割り当て直す</label>
-    <button type="submit" class="btn btn--primary">ローテーションを保存</button>
-  </form>
-</section>
-
-<section class="panel panel--wide">
-  <h2 class="panel__title">cronの状態</h2>
-  <p>状態：<?= h($cronStateLabel) ?>（最終実行：<?= h(admin_format_time($cron['last'])) ?>）</p>
-  <div class="table-wrap">
-    <table class="table">
-      <thead><tr><th>ジョブ</th><th>最終開始</th><th>最終終了</th><th>結果</th><th>メッセージ</th></tr></thead>
-      <tbody>
-<?php if ($jobs === []): ?>
-        <tr><td colspan="5" class="muted">まだ一度も実行されていません。</td></tr>
-<?php endif; ?>
-<?php foreach ($jobs as $job): ?>
-        <tr class="<?= $job['last_status'] === 'failed' ? 'is-warn' : '' ?>">
-          <td><?= h(ADMIN_JOBS[$job['job']]['label'] ?? $job['job']) ?></td>
-          <td class="nowrap"><?= h(admin_format_time($job['last_started_at'])) ?></td>
-          <td class="nowrap"><?= h(admin_format_time($job['last_finished_at'])) ?></td>
-          <td><?= h($job['last_status']) ?></td>
-          <td><?= h($job['last_message']) ?></td>
-        </tr>
-<?php endforeach; ?>
-      </tbody>
-    </table>
-  </div>
-
-  <h3 class="panel__subtitle">実行履歴（毎分以外・直近10件）</h3>
-  <div class="table-wrap">
-    <table class="table">
-      <thead><tr><th>ジョブ</th><th>開始</th><th>結果</th><th>メッセージ</th></tr></thead>
-      <tbody>
-<?php if ($runs === []): ?>
-        <tr><td colspan="4" class="muted">記録はまだありません。</td></tr>
-<?php endif; ?>
-<?php foreach ($runs as $run): ?>
-        <tr class="<?= $run['status'] === 'failed' ? 'is-warn' : '' ?>">
-          <td><?= h(ADMIN_JOBS[$run['job']]['label'] ?? $run['job']) ?></td>
-          <td class="nowrap"><?= h(admin_format_time($run['started_at'])) ?></td>
-          <td><?= h($run['status']) ?></td>
-          <td><?= h($run['message']) ?></td>
-        </tr>
-<?php endforeach; ?>
-      </tbody>
-    </table>
-  </div>
-
-  <h3 class="panel__subtitle">cron実行時間テスト</h3>
-  <p class="muted">cronで動かしたとき、何秒まで止められずに動けるかと、外部への接続を確認します（最大<?= ADMIN_PROBE_MAX_SECONDS ?>秒・1回だけ）。</p>
-  <p>状態：<?= h($probeLabels[$probe['status']]) ?></p>
-<?php if ($probe['result'] !== null): $r = $probe['result'] + ['started_at' => null, 'php_version' => '', 'sapi' => '', 'max_execution_time' => '', 'memory_limit' => '', 'https' => [], 'alive_seconds' => 0, 'last_alive_at' => null]; ?>
+  <h2 class="panel__title">すぐ届く通知（オフにできません）</h2>
+  <p class="muted">起きたらすぐ対応が要るものだけです。同じ内容は<?= ADMIN_NOTIFY_DEDUPE_MINUTES ?>分以内に重ねて送りません。</p>
   <ul class="kv">
-    <li>開始：<?= h(admin_format_time($r['started_at'])) ?></li>
-    <li>PHP：<?= h($r['php_version']) ?>（SAPI：<?= h($r['sapi']) ?>）</li>
-    <li>max_execution_time：<?= h($r['max_execution_time']) ?>　memory_limit：<?= h($r['memory_limit']) ?></li>
-<?php foreach ($r['https'] as $url => $code): ?>
-    <li>接続 <?= h($url) ?>：<?= h($code) ?></li>
+<?php foreach (ADMIN_NOTIFY_IMMEDIATE_GROUPS as $group): ?>
+    <li><?= h($group['label']) ?></li>
 <?php endforeach; ?>
-    <li>動けた秒数：<?= (int) $r['alive_seconds'] ?> 秒（最終記録：<?= h(admin_format_time($r['last_alive_at'])) ?>）</li>
   </ul>
-<?php endif; ?>
-  <form method="post" action="<?= h(admin_url('/settings')) ?>" class="form form--inline">
-    <?= admin_csrf_field() ?>
-    <input type="hidden" name="action" value="request_probe">
-    <button type="submit" class="btn btn--ghost"<?= in_array($probe['status'], ['requested', 'running'], true) ? ' disabled' : '' ?>>テストを予約する</button>
-  </form>
 </section>
 
 <section class="panel panel--wide">
-  <h2 class="panel__title">パスワード変更</h2>
+  <h2 class="panel__title">朝のまとめ（1日1通）</h2>
+  <p class="muted">すぐ届く通知以外は、毎朝1通にまとめて送ります。オフにした区分は、まとめに入りません（「今日」画面にはいつも出ます）。送る内容が何も無い日は送りません。</p>
   <form method="post" action="<?= h(admin_url('/settings')) ?>" class="form">
     <?= admin_csrf_field() ?>
-    <input type="hidden" name="action" value="change_password">
-    <label class="form__label" for="current_password">現在のパスワード</label>
-    <input class="form__input" type="password" id="current_password" name="current_password" autocomplete="current-password" required>
-    <label class="form__label" for="new_password">新しいパスワード（<?= (int) admin_config()['password_min_length'] ?>文字以上）</label>
-    <input class="form__input" type="password" id="new_password" name="new_password" autocomplete="new-password" required minlength="<?= (int) admin_config()['password_min_length'] ?>">
-    <label class="form__label" for="new_password_confirm">新しいパスワード（確認）</label>
-    <input class="form__input" type="password" id="new_password_confirm" name="new_password_confirm" autocomplete="new-password" required minlength="<?= (int) admin_config()['password_min_length'] ?>">
-    <button type="submit" class="btn btn--primary">パスワードを変更</button>
+    <input type="hidden" name="action" value="save_digest">
+    <label class="form__label" for="digest_hour">送る時刻</label>
+    <select class="form__input form__input--narrow" id="digest_hour" name="digest_hour">
+<?php foreach (range(0, 23) as $hour): ?>
+      <option value="<?= $hour ?>"<?= $hour === $digestHour ? ' selected' : '' ?>><?= sprintf('%02d:00', $hour) ?></option>
+<?php endforeach; ?>
+    </select>
+    <span class="form__label">まとめに入れるもの</span>
+<?php foreach (ADMIN_NOTIFY_DIGEST_CATEGORIES as $category => $label): ?>
+    <label class="check"><input type="checkbox" name="digest[<?= h($category) ?>]" value="1"<?= admin_notify_digest_enabled($category) ? ' checked' : '' ?>> <?= h($label) ?></label>
+<?php endforeach; ?>
+    <button type="submit" class="btn btn--primary">朝のまとめを保存</button>
   </form>
+  <p class="muted">次のまとめに入る知らせ：<?= $pendingDigest ?> 件</p>
 </section>
+
+<section class="panel panel--wide">
+  <h2 class="panel__title">最近の通知（10件）</h2>
+<?php if ($notifications === []): ?>
+  <p class="muted">まだ通知はありません。</p>
+<?php else: ?>
+  <div class="table-wrap">
+    <table class="table">
+      <thead><tr><th>日時</th><th>送り先</th><th>種類</th><th>結果</th></tr></thead>
+      <tbody>
+<?php foreach ($notifications as $n): ?>
+        <tr class="<?= $n['status'] === 'sent' ? '' : 'is-warn' ?>">
+          <td class="nowrap"><?= h(admin_format_time($n['sent_at'])) ?></td>
+          <td><?= h($channelLabels[$n['channel']] ?? $n['channel']) ?></td>
+          <td><?= h(admin_notify_event_label($n['event'])) ?></td>
+          <td><?= $n['status'] === 'sent' ? '送信' : '<strong>失敗</strong>' ?></td>
+        </tr>
+<?php endforeach; ?>
+      </tbody>
+    </table>
+  </div>
+<?php endif; ?>
+</section>
+
+<p class="muted">以前この画面にあった項目の移動先：投稿モード・曜日ごとの投稿 →「書いて出す」→「投稿のルール」／cronの状態 →「設定」→「自動実行」／2段階認証・パスワード変更 →「設定」→「ログインと2段階認証」</p>
 <?php
 admin_render_footer();

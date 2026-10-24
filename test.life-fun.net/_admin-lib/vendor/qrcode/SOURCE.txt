@@ -1,0 +1,18 @@
+QRコード生成ライブラリの出典（2段階認証の設定画面でQRコードを描くために使う。管理画面専用）
+
+名前      : qrcode-generator（PHP版 php/qrcode.php）
+作者      : Kazuhiko Arase
+ライセンス: MIT License（同じフォルダの LICENSE。qrcode.php 冒頭の表記もそのまま保持）
+リポジトリ: https://github.com/kazuhikoarase/qrcode-generator
+タグ      : js2.0.4（コミット 83b7e8fe3fddd3b0368dbafd6ce56995bd25e3c8、2025-08-07）
+            php/qrcode.php の最終変更はコミット 95af9c2e1249337047ca478ccf98650a0a30af13（2021-12-10）で、
+            タグ js2.0.4 の php/qrcode.php と同一内容（SHA256 一致を確認）。
+            PHP版のタグ v20170724 は PHP4形式のコンストラクタで PHP 8 では正しく動かないため使わない。
+取得元URL : https://raw.githubusercontent.com/kazuhikoarase/qrcode-generator/js2.0.4/php/qrcode.php
+            https://raw.githubusercontent.com/kazuhikoarase/qrcode-generator/js2.0.4/LICENSE
+取得日    : 2026-10-23
+SHA256    : qrcode.php 839337a00e1ab8be1916ab20702d724aa41cdd7991dd7fc8187ffbc602998b4e
+            LICENSE    3a850fa5f08101db6f40676c2786e10bd2cd5fff7b12ffdf1e0c434d4e49d90c
+改変      : なし（取得したまま。読み込みと描画は _admin-lib/qr.php が行う）
+確認      : 外部通信・eval・ファイル書き込み・スーパーグローバルの参照が無いことを確認済み
+            （出力は print を使う printHTML / printSVG と GD の createImage のみで、qr.php からは呼ばない）

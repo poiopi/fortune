@@ -11,16 +11,18 @@ declare(strict_types=1);
 const ADMIN_JOBS = [
     // 毎分：生存記録（jobs テーブルの更新そのものが生存記録になる）＋投稿時刻が来たSNS投稿の処理＋新しいJSエラーの通知＋SEO点検の続き
     'minutely' => ['label' => '毎分',            'schedule' => 'minutely'],
-    // 毎時：SNS投稿の先7日分の自動割り当て
+    // 毎時：SNS投稿の先7日分の自動割り当て＋主要ページの見回り＋「今日」の目標の数え直し（ページ台帳とsitemapの照合・noteのRSS。today.php）
     'hourly'   => ['label' => '毎時',            'schedule' => 'hourly'],
-    // 毎日 03:00：古い記録の削除
+    // 毎日 03:00：古い記録の削除＋Threadsのトークン更新（発行／前回更新から7日以上のとき）
     'daily'    => ['label' => '毎日（深夜3時）', 'schedule' => 'daily', 'hour' => 3],
-    // 毎日 21:00：翌日分の未承認リマインド・ストック残量の通知
-    'evening'  => ['label' => '毎日（21時）',   'schedule' => 'daily', 'hour' => 21],
+    // 毎朝（既定7時・設定画面で変更）：朝のまとめ通知（notify.php）。段階2で21時のジョブ（翌日の未承認・ストック残少の通知）から置き換え
+    'morning'  => ['label' => '毎朝（朝のまとめ）', 'schedule' => 'daily', 'hour_setting' => 'notify_digest_hour'],
     // 毎日 09:00：サイトヘルスの全項目（🔴の通知が日中に届くように朝に実行）
     'health'   => ['label' => '毎日（9時）',    'schedule' => 'daily', 'hour' => 9],
     // 毎週月曜 04:00：SEO点検の予約（毎日4時に動き、月曜だけ予約する。取得は毎分ジョブが1分100ページずつ）
     'seo'      => ['label' => '毎週月曜（4時）', 'schedule' => 'daily', 'hour' => 4],
+    // 毎日 05:00：管理画面DBのバックアップ（backup.php。3時の削除・4時のSEO予約の後、9時のサイトヘルスの前）
+    'backup'   => ['label' => '毎日（5時）バックアップ', 'schedule' => 'daily', 'hour' => 5],
 ];
 
 /** cron が止まっているとみなすまでの分数（警告バー・ダッシュボード） */
@@ -33,6 +35,7 @@ const ADMIN_RETENTION_DAYS = [
     'cron_runs'      => ['column' => 'started_at',   'days' => 30],
     'notifications'  => ['column' => 'sent_at',      'days' => 90],
     'health_changes' => ['column' => 'at',           'days' => 180],
+    'notify_digest'  => ['column' => 'created_at',   'days' => 90],
 ];
 
 /** $now 時点で直近に来た実行予定時刻（これ以降に一度も動いていなければ実行する）。 */
@@ -44,7 +47,8 @@ function admin_job_last_slot(array $def, DateTimeImmutable $now): DateTimeImmuta
         case 'hourly':
             return $now->setTime((int) $now->format('H'), 0);
         case 'daily':
-            $slot = $now->setTime($def['hour'], 0);
+            // hour_setting：時刻を設定画面で変えられるジョブ（朝のまとめ）
+            $slot = $now->setTime($def['hour'] ?? admin_notify_digest_hour(), 0);
             return $slot > $now ? $slot->modify('-1 day') : $slot;
         default:
             throw new InvalidArgumentException('未対応のスケジュール: ' . $def['schedule']);
@@ -108,11 +112,12 @@ function admin_job_handler(string $job): callable
             admin_monitor_notify_new(),
             admin_seo_tick(),
         ])),
-        'hourly'   => static fn (): string => 'SNS投稿の割り当て ' . admin_sns_assign() . '枠、' . admin_health_run(false),
-        'daily'    => 'admin_job_cleanup',
-        'evening'  => static fn (): string => admin_sns_evening(),
+        'hourly'   => static fn (): string => 'SNS投稿の割り当て ' . admin_sns_assign() . '枠、' . admin_health_run(false) . '、' . admin_today_hourly(),
+        'daily'    => static fn (): string => admin_job_cleanup() . '／' . admin_threads_refresh_daily(),
+        'morning'  => static fn (): string => admin_notify_send_digest(),
         'health'   => static fn (): string => admin_health_run(true),
         'seo'      => static fn (): string => admin_seo_weekly(),
+        'backup'   => static fn (): string => admin_backup_run(),
     };
 }
 

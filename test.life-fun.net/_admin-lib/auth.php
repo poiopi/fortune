@@ -5,7 +5,9 @@ declare(strict_types=1);
  * _admin-lib/auth.php
  *
  * セッション・ログイン・ログイン試行制限・CSRF。
- * 管理者は1人（パスワードのみ）。パスワードハッシュは settings.admin_password_hash。
+ * 管理者は1人。パスワードハッシュは settings.admin_password_hash。
+ * 2段階認証（two-factor.php）が有効なときは、パスワードの後にコード入力（admin_attempt_login_2fa）が必要。
+ * コード待ちの間は admin_auth を立てないため、admin_require_login は他の管理ページをログイン画面へ戻す。
  */
 
 function admin_session_start(): void
@@ -137,7 +139,13 @@ function admin_record_login_attempt(string $ip, bool $success): void
 }
 
 /**
- * ログイン処理。結果：'ok' / 'failed' / 'locked'
+ * ログイン処理（パスワード）。結果：
+ *  'ok'        … ログイン完了
+ *  'need_2fa'  … パスワードは正しい。2段階認証のコード入力待ち（まだログインしていない）
+ *  'reset_2fa' … reset-2fa ファイルにより2段階認証を解除してログイン完了（設定し直しを促す）
+ *  'failed' / 'locked'
+ * 2段階認証が有効なときは、パスワードが正しくても成功として記録しない（コード入力の失敗と合わせて数え、
+ * パスワードの再入力で失敗回数が消えないようにするため）。成功の記録はコードを受け付けたとき。
  */
 function admin_attempt_login(string $password): string
 {
@@ -150,15 +158,24 @@ function admin_attempt_login(string $password): string
 
     $hash = admin_setting('admin_password_hash');
     if ($hash !== null && password_verify($password, $hash)) {
-        admin_record_login_attempt($ip, true);
         if (password_needs_rehash($hash, PASSWORD_DEFAULT)) {
             admin_set_setting('admin_password_hash', password_hash($password, PASSWORD_DEFAULT));
         }
-        session_regenerate_id(true);
-        $_SESSION['admin_auth'] = true;
-        $_SESSION['last_activity'] = time();
-        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-        admin_audit('login');
+        $reset = admin_2fa_apply_reset_file();
+        if (admin_2fa_enabled()) {
+            // コード待ちに入る前にセッションIDを振り直す（パスワード確認前のIDを引き継がない）
+            if (session_status() === PHP_SESSION_ACTIVE) {
+                session_regenerate_id(true);
+            }
+            admin_2fa_pending_start();
+            admin_audit('2fa_pending');
+            return 'need_2fa';
+        }
+        admin_complete_login($ip);
+        if ($reset) {
+            $_SESSION['flash'] = ['type' => 'error', 'text' => '2段階認証を解除しました（サーバーの reset-2fa ファイルによる解除）。設定し直してください。'];
+            return 'reset_2fa';
+        }
         return 'ok';
     }
 
@@ -169,6 +186,94 @@ function admin_attempt_login(string $password): string
         return 'locked';
     }
     return 'failed';
+}
+
+/** 直近 two_factor_global_window 秒の2段階認証のコード誤り（全IP合計。操作ログ 2fa_failed の件数） */
+function admin_2fa_recent_global_failures(): int
+{
+    $since = (new DateTimeImmutable('-' . (int) admin_config()['two_factor_global_window'] . ' seconds', new DateTimeZone(admin_config()['timezone'])))->format(DATE_ATOM);
+    $stmt = admin_db()->prepare("SELECT COUNT(*) FROM audit_logs WHERE action = '2fa_failed' AND at > ?");
+    $stmt->execute([$since]);
+    return (int) $stmt->fetchColumn();
+}
+
+/** 秒数を通知用の「N時間」「N分」にする */
+function admin_2fa_window_label(int $seconds): string
+{
+    return $seconds >= 3600 && $seconds % 3600 === 0 ? intdiv($seconds, 3600) . '時間' : intdiv($seconds, 60) . '分';
+}
+
+/** IPをまたいだ上限に達しているか（達していれば通知する。同じ文面は通知の重複防止（60分）に従う） */
+function admin_2fa_global_locked(): bool
+{
+    $config = admin_config();
+    if (admin_2fa_recent_global_failures() < $config['two_factor_global_max_failures']) {
+        return false;
+    }
+    admin_notify('2fa_global_locked', '管理画面の2段階認証のコード誤りが、直近' . intdiv((int) $config['two_factor_global_window'], 60) . '分で'
+        . $config['two_factor_global_max_failures'] . "回以上ありました（全IPの合計）。\n"
+        . "そのため、すべてのIPからのコード入力を一時的に止めています（誤りが減ると自動で再開します）。\n"
+        . '心当たりがない場合は、上限が解けてから（最長' . admin_2fa_window_label((int) $config['two_factor_global_window']) . '）ログインし、パスワードを変更してください。'
+        . "\n" . admin_absolute_admin_url('/logs'));
+    return true;
+}
+
+/**
+ * ログイン処理（2段階認証のコード）。admin_attempt_login が 'need_2fa' を返した後に使う。
+ * 結果：'ok' / 'failed' / 'locked' / 'global_locked'（全IP合計の上限） / 'expired'（コード待ちが無い・5分を過ぎた → パスワードからやり直し）
+ * 失敗はパスワードの失敗と同じ login_attempts に記録し、同じロック（同一IP 15分で5回 → 15分）に合算する。
+ * さらに、直近1時間のコード誤りが全IP合計で10回以上なら、全IPでコード入力を拒否する（値は config）。
+ */
+function admin_attempt_login_2fa(string $code): string
+{
+    $ip = admin_client_ip();
+
+    if (!admin_2fa_pending_valid()) {
+        return 'expired';
+    }
+    if (admin_login_locked_until($ip) !== null) {
+        admin_audit('login_blocked');
+        return 'locked';
+    }
+    if (admin_2fa_global_locked()) {
+        admin_audit('login_blocked', null, '2段階認証：全IP合計の上限');
+        return 'global_locked';
+    }
+    if (!admin_2fa_enabled()) {
+        admin_2fa_pending_clear();
+        return 'expired';
+    }
+
+    $method = admin_2fa_verify($code);
+    if ($method !== null) {
+        admin_complete_login($ip, $method === 'backup' ? '2段階認証：予備コード' : '2段階認証：認証アプリ');
+        if ($method === 'backup') {
+            admin_audit('2fa_backup_login', null, '予備コードの残り' . admin_2fa_backup_remaining() . '個');
+        }
+        return 'ok';
+    }
+
+    admin_record_login_attempt($ip, false);
+    admin_audit('2fa_failed');
+    // 上限に達したらこの時点で通知する（IPのロックより先に判定し、通知を漏らさない）
+    $globalLocked = admin_2fa_global_locked();
+    if (admin_login_locked_until($ip) !== null) {
+        admin_audit('login_locked');
+        return 'locked';
+    }
+    return $globalLocked ? 'global_locked' : 'failed';
+}
+
+/** ログイン完了（成功の記録・セッションIDの振り直し・ログイン状態の設定）。 */
+function admin_complete_login(string $ip, ?string $detail = null): void
+{
+    admin_record_login_attempt($ip, true);
+    session_regenerate_id(true);
+    admin_2fa_pending_clear();
+    $_SESSION['admin_auth'] = true;
+    $_SESSION['last_activity'] = time();
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    admin_audit('login', null, $detail);
 }
 
 /**

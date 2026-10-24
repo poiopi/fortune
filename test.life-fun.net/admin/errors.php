@@ -98,7 +98,7 @@ foreach (admin_db()->query('SELECT status, COUNT(*) AS n FROM client_errors GROU
     $counts[$row['status']] = (int) $row['n'];
 }
 
-admin_render_header('エラー監視', 'errors');
+admin_render_header('エラー', 'errors');
 admin_render_flash();
 ?>
 <p class="muted">公開ページのブラウザで起きたJSエラーです（自サイトのファイルで起きたものだけ・URLはパスのみ）。新しい種類のエラーは通知します。対応済にしたエラーが再発すると未対応に戻り、もう一度通知します。</p>

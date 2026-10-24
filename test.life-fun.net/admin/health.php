@@ -21,10 +21,10 @@ $cron = admin_cron_health();
 $openErrors = (int) admin_db()->query("SELECT COUNT(*) FROM client_errors WHERE status = 'open'")->fetchColumn();
 $tools = admin_server_tools();
 
-admin_render_header('サイトヘルス', 'health');
+admin_render_header('サイトの見回り', 'health');
 admin_render_flash();
 ?>
-<p class="muted">本番サイト（<?= h(admin_config()['site_url']) ?>）を自動でチェックしています。主要ページは毎時、そのほかは毎日9時。🔴になったとき・🔴から戻ったときだけ通知します。</p>
+<p class="muted">本番サイト（<?= h(admin_config()['site_url']) ?>）を自動でチェックしています。主要ページは毎時、そのほかは毎日9時。🔴になったとき・🔴から戻ったときだけ通知します（主要ページ・機密ファイル・SNSトークンはすぐ、そのほかは朝のまとめで）。</p>
 <form method="post" action="<?= h(admin_url('/health')) ?>" class="form form--inline">
   <?= admin_csrf_field() ?>
   <button type="submit" class="btn btn--primary">今すぐ全部チェックする</button>
@@ -60,7 +60,7 @@ admin_render_flash();
       <tr>
         <td class="health-icon"><?= $openErrors === 0 ? '🟢' : '🟡' ?></td>
         <td class="nowrap">公開ページのJSエラー</td>
-        <td><?= $openErrors === 0 ? '未対応はありません' : '未対応が' . $openErrors . '種類あります（<a href="' . h(admin_url('/errors')) . '">エラー監視</a>）' ?></td>
+        <td><?= $openErrors === 0 ? '未対応はありません' : '未対応が' . $openErrors . '種類あります（<a href="' . h(admin_url('/errors')) . '">エラー</a>）' ?></td>
         <td class="nowrap">常時</td>
       </tr>
     </tbody>

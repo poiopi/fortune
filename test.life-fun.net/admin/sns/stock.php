@@ -80,8 +80,7 @@ $stmt->execute($params);
 $stocks = $stmt->fetchAll();
 $daysLeft = admin_sns_stock_days_left();
 
-admin_render_header('SNS投稿', 'sns');
-admin_render_sns_tabs('stock');
+admin_render_header('ストック', 'sns_stock');
 admin_render_flash();
 ?>
 <div class="panels">

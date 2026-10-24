@@ -57,6 +57,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stock = ($stock ?? ['id' => 0, 'status' => 'pending_review', 'source' => 'manual', 'edited' => 0, 'ext_id' => null])
             + [];
         $stock = array_merge($stock, admin_stock_normalize($input));
+    } elseif ($stock !== null && $action === 'image_upload') {
+        [$role, $seq] = array_pad(explode(':', (string) ($_POST['role_seq'] ?? '')), 2, '0');
+        $seq = (int) $seq;
+        $upload = $_FILES['image'] ?? null;
+        if (!is_array($upload) || ($upload['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK || !is_uploaded_file((string) $upload['tmp_name'])) {
+            $code = is_array($upload) ? (int) ($upload['error'] ?? UPLOAD_ERR_NO_FILE) : UPLOAD_ERR_NO_FILE;
+            $message = in_array($code, [UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_FORM_SIZE], true) ? '画像が大きすぎます（サーバーの上限：' . ini_get('upload_max_filesize') . '）' : '画像ファイルを選んでください';
+            admin_flash_redirect('error', $message, $selfPath);
+        }
+        try {
+            admin_note_image_save($id, $role, $seq, (string) $upload['tmp_name']);
+        } catch (InvalidArgumentException | RuntimeException $e) {
+            admin_flash_redirect('error', $e->getMessage(), $selfPath);
+        }
+        $label = $role === 'eyecatch' ? '見出し画像' : '画像' . $seq;
+        admin_audit('note_image_upload', '#' . $id, $label);
+        admin_flash_redirect('ok', $label . 'を保存しました。', $selfPath);
+    } elseif ($stock !== null && $action === 'image_delete') {
+        $image = admin_note_image_get((int) ($_POST['image_id'] ?? 0));
+        if ($image === null || (int) $image['stock_id'] !== $id) {
+            admin_flash_redirect('error', '画像が見つかりません。', $selfPath);
+        }
+        admin_note_image_delete((int) $image['id']);
+        admin_audit('note_image_delete', '#' . $id, admin_note_image_label($image));
+        admin_flash_redirect('ok', admin_note_image_label($image) . 'を削除しました。', $selfPath);
+    } elseif ($stock !== null && $action === 'schedule_at') {
+        $at = DateTimeImmutable::createFromFormat('!Y-m-d\TH:i', (string) ($_POST['scheduled_at'] ?? ''), new DateTimeZone(admin_config()['timezone']));
+        if ($at === false) {
+            admin_flash_redirect('error', '日時を正しく入力してください。', $selfPath);
+        }
+        $platforms = array_values(array_intersect(['threads', 'note'], (array) ($_POST['platforms'] ?? [])));
+        try {
+            $replaced = admin_sns_schedule_at($id, $at, null, $platforms);
+        } catch (RuntimeException $e) {
+            admin_flash_redirect('error', $e->getMessage(), $selfPath);
+        }
+        $labels = implode('・', array_map('admin_sns_label', $platforms));
+        admin_audit('queue_schedule_at', '#' . $id, $at->format('Y-m-d H:i') . ' ' . $labels . ($replaced ? '（その日の枠を差し替え）' : ''));
+        admin_flash_redirect('ok', $at->format('Y-m-d H:i') . ' に ' . $labels . ' への投稿を予約しました' . ($replaced ? '（その日の予約中・保留・取消の枠を外しました）' : '')
+            . (in_array('note', $platforms, true) ? '。noteは「今日」画面に本文が出ます（' . admin_date_label($at->format('Y-m-d')) . '）' : '') . '。', $selfPath);
     } elseif ($stock !== null && in_array($action, ['approve', 'unapprove', 'archive', 'restore'], true)) {
         $map = [
             'approve'   => ['approved', 'stock_approve', '承認しました。'],
@@ -88,8 +128,7 @@ if (!$isNew) {
     $queueRows = $q->fetchAll();
 }
 
-admin_render_header($isNew ? 'ストックを作る' : 'ストックの確認・編集', 'sns');
-admin_render_sns_tabs('stock');
+admin_render_header($isNew ? 'ストックを作る' : 'ストックの確認・編集', 'sns_stock');
 admin_render_flash();
 ?>
 <?php if ($errors !== []): ?>
@@ -114,6 +153,50 @@ admin_render_flash();
       <?php endif; ?>
     <?php endforeach; ?>
   </div>
+  <?php $queued = array_filter($queueRows, static fn (array $r): bool => !in_array($r['status'], ['canceled', 'skipped'], true)); ?>
+  <?php $schedulable = array_values(array_intersect(['threads', 'note'], array_keys($current['bodies']))); ?>
+  <?php if ($current['status'] === 'approved' && $schedulable !== [] && $queued === []): ?>
+    <form method="post" action="<?= h(admin_url($selfPath)) ?>" class="form form--inline">
+      <?= admin_csrf_field() ?>
+      <input type="hidden" name="action" value="schedule_at">
+      <label class="form__label" for="scheduled_at">日時を指定して予約</label>
+      <input class="form__input" id="scheduled_at" name="scheduled_at" type="datetime-local" required min="<?= h((new DateTimeImmutable('+1 minute'))->format('Y-m-d\TH:i')) ?>">
+      <?php foreach ($schedulable as $platform): ?>
+        <label class="check"><input type="checkbox" name="platforms[]" value="<?= h($platform) ?>" checked> <?= h(admin_sns_label($platform)) ?><?= $platform === 'threads' ? '（連携済みなら自動で投稿）' : '（その日の「今日」画面に本文が出る・投稿は手動）' ?></label>
+      <?php endforeach; ?>
+      <button type="submit" class="btn btn--ghost" data-confirm="チェックした投稿先に、この日時で予約しますか？（その日に別の予約がある場合は差し替わります。Threadsは連携済みなら自動で投稿されます）">予約する</button>
+    </form>
+    <p class="muted">noteだけで予約すると、noteの別枠に入ります（同じ日のThreadsの予約はそのまま）。</p>
+  <?php endif; ?>
+</section>
+
+<?php $images = admin_note_images($id); $usedSeq = array_map('intval', array_column(array_filter($images, static fn (array $i): bool => $i['role'] === 'body'), 'seq')); $nextSeq = $usedSeq === [] ? 1 : min(ADMIN_NOTE_IMAGE_BODY_MAX, max($usedSeq) + 1); $hasEyecatch = array_filter($images, static fn (array $i): bool => $i['role'] === 'eyecatch') !== []; ?>
+<section class="panel panel--wide" id="note-images">
+  <h2 class="panel__title">noteの画像</h2>
+  <p class="muted">見出し画像（1枚）と本文の画像（最大<?= ADMIN_NOTE_IMAGE_BODY_MAX ?>枚）を付けられます。「今日」画面に並び、そこから保存してnoteに入れます。本文に「［画像1］」のように書いておくと、どこに入れるかが分かります。PNG・JPEG、5MBまで（サーバーの上限：<?= h((string) ini_get('upload_max_filesize')) ?>）。</p>
+  <?php if ($images !== []): ?>
+  <div class="image-grid">
+    <?php foreach ($images as $image): ?>
+      <figure class="image-card">
+        <img src="<?= h(admin_url('/sns/stock-image?id=' . (int) $image['id'])) ?>" alt="<?= h(admin_note_image_label($image)) ?>" loading="lazy">
+        <figcaption><?= h(admin_note_image_label($image)) ?>（<?= (int) $image['width'] ?>×<?= (int) $image['height'] ?>）</figcaption>
+        <form method="post" action="<?= h(admin_url($selfPath)) ?>"><?= admin_csrf_field() ?><input type="hidden" name="action" value="image_delete"><input type="hidden" name="image_id" value="<?= (int) $image['id'] ?>"><button type="submit" class="btn btn--ghost btn--small" data-confirm="この画像を削除しますか？">削除</button></form>
+      </figure>
+    <?php endforeach; ?>
+  </div>
+  <?php endif; ?>
+  <form method="post" action="<?= h(admin_url($selfPath)) ?>" enctype="multipart/form-data" class="form form--inline">
+    <?= admin_csrf_field() ?>
+    <input type="hidden" name="action" value="image_upload">
+    <select class="form__input" name="role_seq" aria-label="画像の種類">
+      <option value="eyecatch:0"<?= $hasEyecatch ? '' : ' selected' ?>>見出し画像<?= $hasEyecatch ? '（置き換え）' : '' ?></option>
+      <?php for ($n = 1; $n <= ADMIN_NOTE_IMAGE_BODY_MAX; $n++): ?>
+        <option value="body:<?= $n ?>"<?= $hasEyecatch && $n === $nextSeq ? ' selected' : '' ?>>本文の画像<?= $n ?><?= in_array($n, $usedSeq, true) ? '（置き換え）' : '' ?></option>
+      <?php endfor; ?>
+    </select>
+    <input class="form__input" type="file" name="image" accept="image/png,image/jpeg" required>
+    <button type="submit" class="btn btn--primary">画像を保存</button>
+  </form>
 </section>
 <?php endif; ?>
 
