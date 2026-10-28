@@ -43,5 +43,6 @@ if (!defined("BREADCRUMB_MAP")) {
         '/articles/seiza/'                 => '西洋占星術とは',
         '/articles/shichu/'                => '四柱推命解説',
         '/articles/tarot/'                 => 'タロット解説',
+        '/quiz/'                           => 'Daily Quiz一覧',
     ]);
 }

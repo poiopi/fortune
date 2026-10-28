@@ -20,14 +20,7 @@ admin/.htaccess	管理画面	本番だけの Basic認証（STGはサイト全体
 _template_article.php	STG専用	記事を作るときのコピー元（公開ページではない）
 
 # ---- 保留中（未リリース。解消したら行を消す）----
-quiz/doyo-no-ushi-unagi/*	保留中	2026-09-12〜 Daily Quiz 未リリース分（STG実装・Reviewer/Tester PASS済み、本番未反映）。リリースしたら行を消す
-quiz/erabu-toki-saisho-ni-kininaru/*	保留中	同上
-quiz/junishi-nihon-ni-inai-doubutsu/*	保留中	同上
-quiz/omikuji-junban/*	保留中	同上
-quiz/yotei-no-nai-kyuujitsu/*	保留中	同上
-quiz/_quiz-kaisetsu-b.php	保留中	同上（B系統の解説テンプレート。未リリースのクイズだけが使う）
-quiz/_design-mockup/*	保留中	同上（デザイン見本）
-inc/quiz-ad-slot.php	保留中	同上（クイズの広告枠）
-sitemap.xml	保留中	未リリースのクイズ6URLだけ違ってよい	\s*<url><loc>https://life-fun\.net/(quiz/(yotei-no-nai-kyuujitsu|erabu-toki-saisho-ni-kininaru|junishi-nihon-ni-inai-doubutsu|doyo-no-ushi-unagi|omikuji-junban)/)[^\n]*</url>
+quiz/_design-mockup/*	保留中	2026-09〜 Daily Quiz のデザイン見本（STGだけに置く）
+inc/quiz-ad-slot.php	保留中	2026-09〜 Daily Quiz の広告枠（ad-slot IDが仮のため本番に出さない。使うクイズは ad_enabled=true のものだけ）
 inc/dayinfo/flower-descriptions-data.php	保留中	2026-07-31〜 誕生花ページ改修（量産中断中）のデータ。改修を再開・リリースしたら行を消す
 inc/dayinfo/flower-material-data.php	保留中	同上

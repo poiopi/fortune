@@ -11,12 +11,25 @@ if (!isset($quiz) || !isset($quizStep)) {
     exit('quiz template: missing required variables');
 }
 
+// A系統は②回答ページを持たず、③解説ページへ直接進む（旧kekka URLは解説へ302）
+if ($quizStep === 'result' && ($quiz['series'] ?? null) === 'A') {
+    $_redirChoice = in_array($quizChoice ?? null, ['a1', 'a2', 'a3', 'a4'], true) ? $quizChoice : null;
+    $_redirUrl    = '/quiz/' . $quiz['slug'] . '/' . ($_redirChoice !== null ? 'kaisetsu/?a=' . $_redirChoice : '');
+    header('Location: ' . $_redirUrl, true, 302);
+    exit;
+}
+
+require_once __DIR__ . '/../inc/site.php';
+require_once __DIR__ . '/../inc/breadcrumb-map.php';
+
 $_isResult   = ($quizStep === 'result');
 $_numberStr  = str_pad((string)$quiz['number'], 3, '0', STR_PAD_LEFT);
 $_canonical  = 'https://life-fun.net/quiz/' . $quiz['slug'] . '/';
 if ($_isResult) {
     $_canonical = 'https://life-fun.net/quiz/' . $quiz['slug'] . '/kekka/?a=' . $quizChoice;
 }
+// パンくず：最後の段のURLはcanonicalのパス部分と一致させる
+$_bcSelfUrl = (strpos($_canonical, SITE_URL) === 0) ? substr($_canonical, strlen(SITE_URL)) : $_canonical;
 $_ogImage = 'https://life-fun.net/favicon.png';
 
 $currentPage = $quiz['slug'];
@@ -163,12 +176,17 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
 .quiz-btn-primary:hover{opacity:.9;transform:translateY(-1px)}
 .quiz-btn-primary:active{transform:translateY(0) scale(.98)}
 .quiz-cta-wrap{margin:2rem 0}
-.quiz-back-to-hub{text-align:center;margin:1.5rem 0 0}
+.quiz-back-to-hub{text-align:center;margin:1.5rem 0 0;display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem 1.6rem}
 .quiz-back-to-hub a{
+  display:inline-block;padding:.5rem .3rem;
   font-family:var(--ff-mono);font-size:.75rem;color:var(--muted);
   text-decoration:none;letter-spacing:.06em;transition:color .2s;
 }
 .quiz-back-to-hub a:hover{color:var(--accent-dk)}
+.breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.breadcrumb a:hover{color:var(--accent-dk)}
+.breadcrumb span{margin:0 .4rem}
 .article-cta{
   background:var(--surface);border:1px solid var(--border2);border-radius:14px;
   padding:1.3rem 1.5rem;display:flex;flex-direction:column;gap:.8rem;
@@ -192,6 +210,20 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
 <body>
 <?php require __DIR__.'/../inc/header.php'; ?>
 <div class="wrap quiz-wrap">
+  <?php
+  if ($_isResult) {
+      $bcTrail = [
+          ['name' => SITE_NAME, 'url' => '/'],
+          ['name' => BREADCRUMB_MAP['/quiz/'], 'url' => '/quiz/'],
+          ['name' => $quiz['question'], 'url' => '/quiz/' . $quiz['slug'] . '/'],
+          ['name' => '結果', 'url' => $_bcSelfUrl],
+      ];
+  } else {
+      $bcPath = '/quiz/' . $quiz['slug'] . '/';
+      $bcName = $quiz['question'];
+  }
+  require __DIR__ . '/../inc/breadcrumb.php';
+  ?>
 
   <?php if (!$_isResult): ?>
   <!-- ① 問題ページ -->
@@ -203,13 +235,15 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
 
   <section class="quiz-choices">
     <?php foreach (['a1','a2','a3','a4'] as $_k): ?>
-    <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/kekka/?a=<?= $_k ?>" class="quiz-choice" onclick="return quizAnswer(this,'<?= $_k ?>')">
+    <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/<?= (($quiz['series'] ?? null) === 'A') ? 'kaisetsu' : 'kekka' ?>/?a=<?= $_k ?>" class="quiz-choice" onclick="return quizAnswer(this,'<?= $_k ?>')">
       <span class="quiz-choice-mark" style="--mark-color:<?= $_accentMap[$_k] ?>"><?= strtoupper($_k) ?></span>
       <span class="quiz-choice-text"><?= htmlspecialchars($quiz['choices'][$_k], ENT_QUOTES, 'UTF-8') ?></span>
       <span class="quiz-choice-arrow">→</span>
     </a>
     <?php endforeach; ?>
   </section>
+
+  <nav class="quiz-back-to-hub" aria-label="クイズ内の移動"><a href="/quiz/">クイズ一覧へ</a></nav>
 
   <script>
   function quizAnswer(el, choice){
@@ -239,6 +273,11 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
     <?php endif; ?>
     <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/kaisetsu/?a=<?= $quizChoice ?>" class="quiz-btn-primary">解説を見る →</a>
   </section>
+
+  <nav class="quiz-back-to-hub" aria-label="クイズ内の移動">
+    <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/">← 問題にもどる</a>
+    <a href="/quiz/">クイズ一覧へ</a>
+  </nav>
 
   <?php require __DIR__ . '/../inc/share-btns.php'; ?>
   <?php endif; ?>

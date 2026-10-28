@@ -10,6 +10,9 @@ if (!isset($quiz) || !array_key_exists('quizChoice', get_defined_vars())) {
     exit('quiz kaisetsu-b template: missing required variables');
 }
 
+require_once __DIR__ . '/../inc/site.php';
+require_once __DIR__ . '/../inc/breadcrumb-map.php';
+
 $_isIndexable = !empty($quiz['explanation_indexable']);
 $_hasChoice   = $quizChoice !== null;
 $_numberStr   = str_pad((string)$quiz['number'], 3, '0', STR_PAD_LEFT);
@@ -24,6 +27,8 @@ if ($_isIndexable) {
     $_canonical    = $_canonicalBase . ($_hasChoice ? '?a=' . $quizChoice : '');
     $_robotsNoindex = true;
 }
+// パンくず：最後の段のURLはcanonicalのパス部分と一致させる
+$_bcSelfUrl = (strpos($_canonical, SITE_URL) === 0) ? substr($_canonical, strlen(SITE_URL)) : $_canonical;
 
 $_ogImage = 'https://life-fun.net/favicon.png';
 
@@ -143,12 +148,17 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
 }
 .quiz-btn-primary:hover{opacity:.9;transform:translateY(-1px)}
 .quiz-cta-wrap{margin:2rem 0}
-.quiz-back-to-hub{text-align:center;margin:1.5rem 0 0}
+.quiz-back-to-hub{text-align:center;margin:1.5rem 0 0;display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem 1.6rem}
 .quiz-back-to-hub a{
+  display:inline-block;padding:.5rem .3rem;
   font-family:var(--ff-mono);font-size:.75rem;color:var(--muted);
   text-decoration:none;letter-spacing:.06em;transition:color .2s;
 }
 .quiz-back-to-hub a:hover{color:var(--accent-dk)}
+.breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.breadcrumb a:hover{color:var(--accent-dk)}
+.breadcrumb span{margin:0 .4rem}
 .article-cta{
   background:var(--surface);border:1px solid var(--border2);border-radius:14px;
   padding:1.3rem 1.5rem;display:flex;flex-direction:column;gap:.8rem;
@@ -173,6 +183,15 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
 <body>
 <?php require __DIR__.'/../inc/header.php'; ?>
 <div class="wrap quiz-wrap">
+  <?php
+  $bcTrail = [
+      ['name' => SITE_NAME, 'url' => '/'],
+      ['name' => BREADCRUMB_MAP['/quiz/'], 'url' => '/quiz/'],
+      ['name' => $quiz['question'], 'url' => '/quiz/' . $quiz['slug'] . '/'],
+      ['name' => '解説', 'url' => $_bcSelfUrl],
+  ];
+  require __DIR__ . '/../inc/breadcrumb.php';
+  ?>
 
   <section class="quiz-hero">
     <span class="quiz-eyebrow">Daily Quiz #<?= $_numberStr ?> · 解説</span>
@@ -187,9 +206,10 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
     <?php require __DIR__.'/../inc/article-cta.php'; ?>
   </div>
 
-  <div class="quiz-back-to-hub">
-    <a href="/quiz/">← 過去のDaily Quiz一覧</a>
-  </div>
+  <nav class="quiz-back-to-hub" aria-label="クイズ内の移動">
+    <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/">← 問題にもどる</a>
+    <a href="/quiz/">クイズ一覧へ</a>
+  </nav>
 
   <?php require __DIR__ . '/../inc/share-btns.php'; ?>
 

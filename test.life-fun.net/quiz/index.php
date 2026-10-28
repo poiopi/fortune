@@ -6,6 +6,44 @@ require_once __DIR__ . '/../inc/site.php';
 // 本番公開対象のみ掲載する。新しいQuizを本番公開するたびに、このリストへ追加すること。
 $_quizSlugs = [
     'hatsutaimen-saisho-ni-miru-mono',
+    'yotei-no-nai-kyuujitsu',
+    'erabu-toki-saisho-ni-kininaru',
+    'junishi-nihon-ni-inai-doubutsu',
+    'doyo-no-ushi-unagi',
+    'omikuji-junban',
+    'tsurusareta-otoko-hyoujou',
+    'tarot-zero-ban-no-card',
+    'tarot-shinigami-no-imi',
+    'tora-no-hi-nannichi-ni-ichido',
+    'tsuchinotomi-no-hi-yomikata',
+    'kyureki-ganjitsu-no-rokuyo',
+    'tsuki-no-michikake-nannichi',
+    'rakusho-no-mahoujin',
+    'tarot-hoshi-nanban',
+    'tarot-tou-no-imi',
+    'tarot-unmei-no-wa-nanban',
+    'ichiryumanbaibi-yomikata',
+    'tenshabi-nannichi',
+    'butsumetsu-moto-no-ji',
+    'juuichigatsu-no-tanjouseki',
+    'juuichigatsu-touka-no-seiza',
+    'gogyo-mizu-wo-umu',
+    'hajimete-au-hito-saisho-no-wadai',
+    'rpg-de-erabu-shokugyou',
+    'umarekawaru-nara-dono-jidai',
+    'mamotte-kureru-sonzai',
+    'adana-wo-tsukete-morau-nara',
+    'tarot-ichimai-hiku-nara',
+    'mayotta-toki-no-kimekata',
+    'othello-joban-no-uchikata',
+    'jibunrashii-jikantai',
+    'ryokou-no-keikaku-kakari',
+    'juuman-en-atattara',
+    'note-no-ichi-peiji-me',
+    'heya-no-muki-erabu-nara',
+    'uranai-no-kekka-uketomekata',
+    'pinch-no-toki-soba-ni',
+    'kininaru-hito-ni-renraku',
 ];
 
 $_quizzes = [];
@@ -107,6 +145,10 @@ body::before{
 .quiz-hub-badge-b{background:rgba(201,168,76,.12);color:var(--gold-lt);border:1px solid rgba(201,168,76,.3)}
 .quiz-hub-number{font-family:var(--ff-mono);font-size:.7rem;color:var(--muted);letter-spacing:.05em}
 .quiz-hub-question{font-family:var(--ff-serif);font-size:1rem;font-weight:600;line-height:1.6}
+.breadcrumb{font-size:.72rem;color:var(--muted);padding:1rem 0 0;font-family:var(--ff-mono);letter-spacing:.04em}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{margin:0 .4rem}
 @media(max-width:600px){
   .quiz-hub-hero{padding:2.2rem .5rem 1.6rem}
   .quiz-hub-card{padding:1.1rem 1.2rem}
@@ -116,6 +158,7 @@ body::before{
 <body>
 <?php require __DIR__.'/../inc/header.php'; ?>
 <div class="wrap">
+  <?php $bcPath = '/quiz/'; $bcName = 'Daily Quiz一覧'; require __DIR__.'/../inc/breadcrumb.php'; ?>
 
   <section class="quiz-hub-hero">
     <span class="quiz-hub-eyebrow">Daily Quiz</span>
