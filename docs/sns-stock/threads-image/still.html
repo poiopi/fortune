@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>threads image</title>
-<!-- Threads の投稿に付ける画像（1080×1350・4:5）。render-still.mjs が window.render(spec) を呼んで1枚ずつ撮る。
+<!-- Threads の投稿に付ける画像（正方形 1080×1080。spec.ratio が '4:5' なら 1080×1350＝11月分まで）。render-still.mjs が window.render(spec) を呼んで1枚ずつ撮る。
      spec はストックの Threads 本文から作る（render-still.mjs の toSpec）。デザインの色は DESIGN.md のダークテーマ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,6 +48,21 @@ canvas{position:absolute;left:0;top:0}
 #brand{flex:none;margin-top:22px;display:flex;align-items:center;gap:18px}
 #brand img{height:46px}
 #brand span{font-size:24px;color:var(--muted);letter-spacing:.08em}
+/* 正方形（1080×1080）。2026-10-29 ユーザー決定：12月分から。4:5 だと Threads のPC表示で左寄りに見えるため */
+html.sq,html.sq body,html.sq #stage{height:1080px}
+.sq #content{left:76px;right:76px;top:58px;bottom:46px}
+.sq #label{font-size:34px}
+.sq #emblem{margin-top:18px}
+.sq .seal{width:104px;height:104px;box-shadow:0 0 0 6px rgba(201,168,76,.12),0 0 44px rgba(232,201,106,.25)}
+.sq .seal span{font-size:54px}
+.sq .card{transform:scale(.62);transform-origin:top center;margin-bottom:-110px}
+.sq #main{padding:14px 0}
+.sq #choices{gap:10px}
+.sq .choice{min-height:68px;padding:0 22px;gap:16px;border-radius:14px}
+.sq .choice b{width:46px;height:46px;line-height:46px;font-size:26px}
+.sq #footer{margin-top:18px;font-size:30px}
+.sq #brand{margin-top:12px}
+.sq #brand img{height:40px}
 </style>
 </head>
 <body>
@@ -70,12 +85,13 @@ canvas{position:absolute;left:0;top:0}
   // 「」で囲んだ語を金色にする
   const deco = (s) => esc(s).replace(/「([^「」]{1,14})」/g, '「<em>$1</em>」');
 
-  function drawSky(seed) {
+  function drawSky(seed, H) {
     const ctx = $('#sky').getContext('2d');
     const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
-    ctx.clearRect(0, 0, 1080, 1350);
+    ctx.canvas.height = H;
+    ctx.clearRect(0, 0, 1080, H);
     for (let i = 0; i < 260; i++) {
-      const x = rnd() * 1080, y = rnd() * 1350, r = .5 + Math.pow(rnd(), 3) * 2.2;
+      const x = rnd() * 1080, y = rnd() * H, r = .5 + Math.pow(rnd(), 3) * 2.2;
       ctx.globalAlpha = .15 + rnd() * .6;
       ctx.fillStyle = rnd() < .25 ? '#c4a8f5' : '#fff8ec';
       ctx.beginPath(); ctx.arc(x, y, r, 0, 6.283); ctx.fill();
@@ -98,7 +114,9 @@ canvas{position:absolute;left:0;top:0}
 
   /** spec を描いて、文字が収まるまで小さくする。終わったら true */
   window.render = async function (spec) {
-    drawSky(spec.seed || 1);
+    const square = spec.ratio !== '4:5';
+    document.documentElement.classList.toggle('sq', square);
+    drawSky(spec.seed || 1, square ? 1080 : 1350);
     $('#label').textContent = spec.label;
     const em = spec.emblem || {};
     $('#emblem').innerHTML = em.type === 'card'
@@ -120,16 +138,16 @@ canvas{position:absolute;left:0;top:0}
 
     // 文字の大きさ：本文は大きいほうから、選択肢は 42px から。はみ出す間は1pxずつ小さくする
     const main = $('#main'), text = $('#text'), content = $('#content');
-    const maxText = spec.choices && spec.choices.length ? 56 : 66;
-    let ts = maxText, cs = 42;
+    const maxText = spec.choices && spec.choices.length ? (square ? 50 : 56) : (square ? 62 : 66);
+    let ts = maxText, cs = square ? 38 : 42;
     const apply = () => {
       text.style.fontSize = ts + 'px';
       document.querySelectorAll('.choice span').forEach((s) => { s.style.fontSize = cs + 'px'; });
     };
     const overflow = () => text.scrollHeight > main.clientHeight - 52 || content.scrollHeight > content.clientHeight;
     apply();
-    while (overflow() && (ts > 34 || cs > 32)) {
-      if (ts > 34 && (ts - 34) / 22 >= (cs - 32) / 10) ts--; else cs--;
+    while (overflow() && (ts > 32 || cs > 30)) {
+      if (ts > 32 && (ts - 32) / 18 >= (cs - 30) / 8) ts--; else cs--;
       apply();
     }
     window.FIT = { textSize: ts, choiceSize: cs, overflow: overflow() };

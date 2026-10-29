@@ -1,7 +1,7 @@
 // Threads の投稿に付ける画像を、ストックの JSON から書き出す
-//   node render-still.mjs <ストックJSON>... [--only=ID,ID] [--out=フォルダ]
+//   node render-still.mjs <ストックJSON>... [--only=ID,ID] [--out=フォルダ] [--ratio=4:5]
 //   例：node render-still.mjs ../2026-10.json ../2026-11.json
-//   出力：png/<ext_id>.png（1080×1350・4:5・PNG）。管理画面の「Threadsの画像をまとめて追加」で、ファイル名（ext_id）でストックに結び付く
+//   出力：png/<ext_id>.png（正方形 1080×1080・PNG。--ratio=4:5 で 1080×1350＝11月分までの形）。管理画面の「Threadsの画像をまとめて追加」で、ファイル名（ext_id）でストックに結び付く
 //   本文（bodies.threads.body）から文字を取り出して still.html に流し込む。Threads 本文のないストック（note専用）は飛ばす
 //   【答えを出さない】クイズの画像には問題と選択肢だけを載せる。カードの番号は「?」にする
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -13,6 +13,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const files = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const opt = (name) => process.argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1];
 const only = opt('only')?.split(',');
+const ratio = opt('ratio') === '4:5' ? '4:5' : '1:1';
 const outDir = path.resolve(opt('out') || path.join(here, 'png'));
 if (files.length === 0) {
   console.error('使い方：node render-still.mjs <ストックJSON>... [--only=ID,ID] [--out=フォルダ]');
@@ -63,14 +64,14 @@ export function toSpec(item, seed) {
   const emblem = item.kind === 'quiz' && slug && TAROT[slug]
     ? { type: 'card', name: TAROT[slug][0], nameJa: TAROT[slug][1] }
     : { type: 'seal', glyph: k.glyph };
-  return { label: k.label, emblem, text: shown, choices, footer: k.footer, seed };
+  return { label: k.label, emblem, text: shown, choices, footer: k.footer, seed, ratio };
 }
 
 const items = files.flatMap((f) => JSON.parse(readFileSync(f, 'utf8')).items)
   .filter((i) => i.bodies?.threads?.body && (!only || only.includes(i.ext_id)));
 mkdirSync(outDir, { recursive: true });
 
-const page = await openPage(1080, 1350);
+const page = await openPage(1080, ratio === '4:5' ? 1350 : 1080);
 try {
   await page.load(pathToFileURL(path.join(here, 'still.html')).href);
   let n = 0;
