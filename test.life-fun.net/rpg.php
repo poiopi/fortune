@@ -979,6 +979,7 @@ function startCombat(en){
   document.getElementById('cMag').disabled=pl.mp<5;
   document.getElementById('cItm').disabled=inv.herb<=0;
   document.getElementById('cbtOv').classList.add('on');
+  _bgmSwitch('battle');
 }
 
 function updCbt(){
@@ -1028,6 +1029,7 @@ let _rpgResultFired = false;
 function endCbt(won,fled){
   document.getElementById('cbtOv').classList.remove('on');
   phase='explore';
+  _bgmSwitch('village');
   if(won){
     if(curEn.rewT==='herb') inv.herb++;
     if(curEn.rewT==='crystal') inv.crystal++;
@@ -1215,74 +1217,163 @@ function resetGame(){
 }
 
 // ════════════════════════════════════════════
-// BGM (Web Audio API チップチューン)
+// BGM (Web Audio API)
+// 村のテーマ：3拍子・ヘ長調・16小節ループ（笛風メロディ＋ハープ風分散和音＋低音ベース＋残響）
+// バトル：4拍子・ニ短調・8小節ループ（矩形波リード＋8分刻みベース＋和音の裏打ち＋ドラム）
 // ════════════════════════════════════════════
-let _ac=null, _bgmOn=false, _bgmNodes=[];
-const _BPM=112, _B=60/_BPM;
+let _ac=null, _bgmOn=false, _bgmTimer=null, _bgmMaster=null, _bgmRev=null, _bgmNoise=null;
+let _bgmQueue=[], _bgmNext=0, _bgmSong='village';
+const _BPM=96, _B=60/_BPM, _BAR=3*_B;
+const _mtof=m=>440*Math.pow(2,(m-69)/12);
 
-// 村のテーマ メロディー（音名→Hz）
-const N={
-  C4:261.63,D4:293.66,E4:329.63,F4:349.23,G4:392.00,A4:440.00,B4:493.88,
-  C5:523.25,D5:587.33,E5:659.25,G5:783.99,A5:880.00,_:0
-};
-// [周波数, 音長(拍)]
+// 和音（MIDIノート番号）
+const CHORD={F:[53,57,60],C:[48,52,55],Dm:[50,53,57],Bb:[46,50,53],Am:[45,48,52],C7:[48,52,55,58]};
+const PROG=['F','C','Dm','Bb','F','Bb','C','C7','Dm','Am','Bb','F','Bb','C','F','F'];
+// 小節ごとのメロディ [MIDI(nullは休符), 音長(拍)]
 const MELODY=[
-  [N.E5,1],[N.D5,1],[N.C5,2],
-  [N.E5,1],[N.G5,1],[N.A5,2],
-  [N.G5,1],[N.E5,1],[N.D5,2],
-  [N.C5,1],[N.D5,1],[N.E5,1],[N.C5,1],
-  [N.E5,1],[N.D5,1],[N.C5,2],
-  [N.D5,1],[N.E5,1],[N.F4,2],
-  [N.E4,1],[N.F4,1],[N.G4,1],[N.A4,1],
-  [N.G4,2],[N.C5,2],
+  [[69,2],[72,1]], [[67,2],[64,1]], [[65,1],[69,1],[74,1]], [[74,2],[70,1]],
+  [[69,2],[72,1]], [[77,2],[74,1]], [[72,1],[70,1],[69,1]], [[67,3]],
+  [[69,2],[74,1]], [[72,2],[76,1]], [[74,1],[72,1],[70,1]], [[69,2],[65,1]],
+  [[70,1],[74,1],[77,1]], [[72,1],[76,1],[79,1]], [[77,3]], [[null,3]],
 ];
-const BASS=[
-  [N.C4,2],[N.G4,2],[N.A4,2],[N.E4,2],
-  [N.F4,2],[N.C4,2],[N.G4,2],[N.G4,2],
-];
+const _LOOP=PROG.length*_BAR;
 
-function _playSeq(notes,type,gain,loop){
-  if(!_ac) return null;
-  const g=_ac.createGain(); g.gain.value=gain; g.connect(_ac.destination);
-  let t=_ac.currentTime+0.05;
-  const total=notes.reduce((s,[,d])=>s+d*_B,0);
-  function schedule(offset){
-    notes.forEach(([freq,dur])=>{
-      if(freq===0){t+=dur*_B;return;}
-      const o=_ac.createOscillator();
-      o.type=type; o.frequency.value=freq;
-      const eg=_ac.createGain();
-      eg.gain.setValueAtTime(gain,t);
-      eg.gain.linearRampToValueAtTime(0,t+dur*_B*0.85);
-      o.connect(eg); eg.connect(_ac.destination);
-      o.start(t); o.stop(t+dur*_B*0.9);
-      t+=dur*_B;
-    });
+// 曲ごとに出力系統を作り直す（切り替え時は旧系統をフェードアウトして鳴り残りを消す）
+function _bgmBus(wetLv){
+  _bgmMaster=_ac.createGain(); _bgmMaster.gain.value=0.8; _bgmMaster.connect(_ac.destination);
+  const len=_ac.sampleRate*2.4, ir=_ac.createBuffer(2,len,_ac.sampleRate);
+  for(let c=0;c<2;c++){const d=ir.getChannelData(c);for(let i=0;i<len;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/len,3);}
+  _bgmRev=_ac.createConvolver(); _bgmRev.buffer=ir;
+  const wet=_ac.createGain(); wet.gain.value=wetLv; _bgmRev.connect(wet); wet.connect(_bgmMaster);
+  if(!_bgmNoise){
+    _bgmNoise=_ac.createBuffer(1,_ac.sampleRate*0.5,_ac.sampleRate);
+    const d=_bgmNoise.getChannelData(0); for(let i=0;i<d.length;i++) d[i]=Math.random()*2-1;
   }
-  schedule(0);
-  if(loop){
-    const id=setInterval(()=>{
-      if(!_bgmOn){clearInterval(id);return;}
-      schedule(0);
-    }, total*1000);
-    return id;
+}
+function _bgmOut(node,dry){const g=_ac.createGain();g.gain.value=dry;node.connect(g);g.connect(_bgmMaster);node.connect(_bgmRev);}
+
+function _flute(m,t,d){
+  const o=_ac.createOscillator(), o2=_ac.createOscillator(), lp=_ac.createBiquadFilter(), g=_ac.createGain();
+  o.type='triangle'; o2.type='sine'; o.frequency.value=o2.frequency.value=_mtof(m);
+  const lfo=_ac.createOscillator(), lg=_ac.createGain(); lfo.frequency.value=5.2;
+  lg.gain.setValueAtTime(0,t); lg.gain.linearRampToValueAtTime(4,t+Math.min(0.5,d*0.6));
+  lfo.connect(lg); lg.connect(o.frequency); lg.connect(o2.frequency);
+  lp.type='lowpass'; lp.frequency.value=2600;
+  const v=0.13, end=t+d*0.95;
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(v,t+0.06);
+  g.gain.setValueAtTime(v*0.85,end-0.08); g.gain.linearRampToValueAtTime(0,end);
+  o.connect(lp); o2.connect(lp); lp.connect(g); _bgmOut(g,0.9);
+  [o,o2,lfo].forEach(x=>{x.start(t);x.stop(end+0.05);});
+}
+function _harp(m,t){
+  const o=_ac.createOscillator(), lp=_ac.createBiquadFilter(), g=_ac.createGain();
+  o.type='triangle'; o.frequency.value=_mtof(m); lp.type='lowpass'; lp.frequency.value=1800;
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(0.07,t+0.005); g.gain.exponentialRampToValueAtTime(0.0008,t+1.4);
+  o.connect(lp); lp.connect(g); _bgmOut(g,0.7); o.start(t); o.stop(t+1.5);
+}
+function _bass(m,t,d){
+  const o=_ac.createOscillator(), g=_ac.createGain();
+  o.type='sine'; o.frequency.value=_mtof(m);
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(0.22,t+0.02);
+  g.gain.exponentialRampToValueAtTime(0.03,t+d); g.gain.linearRampToValueAtTime(0,t+d+0.05);
+  o.connect(g); _bgmOut(g,1); o.start(t); o.stop(t+d+0.1);
+}
+function _bgmBuildVillage(t0){
+  const ev=[];
+  PROG.forEach((name,b)=>{
+    const c=CHORD[name], bt=t0+b*_BAR;
+    ev.push([bt,()=>_bass(c[0]-12,bt,_BAR*0.95)]);
+    [c[0],c[2],c[0]+12,c[1]+12,c[0]+12,c[2]].forEach((m,i)=>{const tt=bt+i*_B/2; ev.push([tt,()=>_harp(m,tt)]);});
+    let mt=bt;
+    MELODY[b].forEach(([m,d])=>{const tt=mt; if(m!==null) ev.push([tt,()=>_flute(m,tt,d*_B)]); mt+=d*_B;});
+  });
+  return ev;
+}
+// ── バトル ──
+const _BB=60/150, _BBAR=4*_BB;
+const B_PROG=['Dm','Dm','Bb','C','Dm','Dm','Bb','A'];
+const B_ROOT={Dm:38,Bb:34,C:36,A:33};
+const B_STAB={Dm:[62,65,69],Bb:[58,62,65],C:[60,64,67],A:[57,61,64]};
+const B_MELODY=[
+  [[74,1],[77,1],[81,1.5],[79,.5]], [[77,1],[76,1],[74,2]],
+  [[70,.5],[74,.5],[77,1],[79,1],[77,1]], [[76,1.5],[72,.5],[76,2]],
+  [[74,1],[77,1],[81,1],[86,1]], [[84,1.5],[81,.5],[77,2]],
+  [[82,1],[81,1],[79,1],[77,1]], [[76,1],[73,1],[69,2]],
+];
+const _BLOOP=B_PROG.length*_BBAR;
+
+function _sq(m,t,d,v,cut){
+  const o=_ac.createOscillator(), lp=_ac.createBiquadFilter(), g=_ac.createGain();
+  o.type='square'; o.frequency.value=_mtof(m); lp.type='lowpass'; lp.frequency.value=cut;
+  g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(v,t+0.01);
+  g.gain.exponentialRampToValueAtTime(v*0.5,t+d*0.9); g.gain.linearRampToValueAtTime(0,t+d*0.95);
+  o.connect(lp); lp.connect(g); _bgmOut(g,1); o.start(t); o.stop(t+d);
+}
+function _kick(t){
+  const o=_ac.createOscillator(), g=_ac.createGain();
+  o.frequency.setValueAtTime(130,t); o.frequency.exponentialRampToValueAtTime(40,t+0.12);
+  g.gain.setValueAtTime(0.5,t); g.gain.exponentialRampToValueAtTime(0.001,t+0.18);
+  o.connect(g); g.connect(_bgmMaster); o.start(t); o.stop(t+0.2);
+}
+function _noiseHit(t,type,freq,v,d){
+  const s=_ac.createBufferSource(), f=_ac.createBiquadFilter(), g=_ac.createGain();
+  s.buffer=_bgmNoise; f.type=type; f.frequency.value=freq;
+  g.gain.setValueAtTime(v,t); g.gain.exponentialRampToValueAtTime(0.001,t+d);
+  s.connect(f); f.connect(g); g.connect(_bgmMaster); s.start(t); s.stop(t+d+0.02);
+}
+function _bgmBuildBattle(t0){
+  const ev=[];
+  B_PROG.forEach((name,b)=>{
+    const r=B_ROOT[name], bt=t0+b*_BBAR;
+    [0,0,12,0,0,12,0,12].forEach((o,i)=>{const tt=bt+i*_BB/2; ev.push([tt,()=>_sq(r+o,tt,_BB/2,0.07,900)]);});
+    [1,3].forEach(k=>{const tt=bt+k*_BB; B_STAB[name].forEach(m=>ev.push([tt,()=>_sq(m,tt,_BB*0.4,0.025,2200)]));});
+    [0,2].forEach(k=>{const tt=bt+k*_BB; ev.push([tt,()=>_kick(tt)]);});
+    [1,3].forEach(k=>{const tt=bt+k*_BB; ev.push([tt,()=>_noiseHit(tt,'bandpass',1800,0.22,0.12)]);});
+    for(let i=0;i<8;i++){const tt=bt+i*_BB/2; ev.push([tt,()=>_noiseHit(tt,'highpass',7000,0.05,0.04)]);}
+    let mt=bt;
+    B_MELODY[b].forEach(([m,d])=>{const tt=mt; ev.push([tt,()=>_sq(m,tt,d*_BB,0.06,3500)]); mt+=d*_BB;});
+  });
+  return ev;
+}
+
+// 先読みスケジューラ：0.2秒先までの音を25msごとに予約（ループ境界で途切れない）
+function _bgmTick(){
+  const ahead=_ac.currentTime+0.2, battle=_bgmSong==='battle';
+  while(_bgmNext<ahead+0.5){
+    _bgmQueue.push(...(battle?_bgmBuildBattle(_bgmNext):_bgmBuildVillage(_bgmNext)));
+    _bgmNext+=battle?_BLOOP:_LOOP;
   }
-  return null;
+  _bgmQueue.sort((a,b)=>a[0]-b[0]);
+  while(_bgmQueue.length&&_bgmQueue[0][0]<ahead) _bgmQueue.shift()[1]();
+}
+
+function _bgmPlay(){
+  _bgmBus(_bgmSong==='battle'?0.12:0.35);
+  _bgmQueue=[]; _bgmNext=_ac.currentTime+0.1;
+  clearInterval(_bgmTimer); _bgmTimer=setInterval(_bgmTick,25); _bgmTick();
 }
 
 function startBgm(){
-  if(!_ac) _ac=new(window.AudioContext||window.webkitAudioContext)();
-  if(_ac.state==='suspended') _ac.resume();
-  _bgmNodes.forEach(id=>clearInterval(id));
-  _bgmNodes=[];
-  _bgmNodes.push(_playSeq(MELODY,'square',0.07,true));
-  _bgmNodes.push(_playSeq(BASS,'triangle',0.05,true));
+  if(_ac){_ac.close(); _ac=null;}
+  _ac=new(window.AudioContext||window.webkitAudioContext)();
+  _bgmNoise=null;
+  _bgmPlay();
 }
 
 function stopBgm(){
-  _bgmNodes.forEach(id=>clearInterval(id));
-  _bgmNodes=[];
-  if(_ac) _ac.suspend();
+  clearInterval(_bgmTimer); _bgmTimer=null; _bgmQueue=[];
+  if(_ac){_ac.close(); _ac=null;}
+}
+
+// 戦闘開始・終了で呼ぶ。BGM OFF中は曲の指定だけ覚えておく
+function _bgmSwitch(song){
+  if(_bgmSong===song) return;
+  _bgmSong=song;
+  if(!_bgmOn||!_ac) return;
+  const old=_bgmMaster, t=_ac.currentTime;
+  old.gain.setValueAtTime(old.gain.value,t); old.gain.linearRampToValueAtTime(0,t+0.3);
+  setTimeout(()=>old.disconnect(),400);
+  _bgmPlay();
 }
 
 
