@@ -37,7 +37,14 @@ const ADMIN_THREADS_RETRY_MINUTES = [5, 15, 60];
 /** コンテナ作成後、状態を見に行く間隔（分）。公式の推奨「1分に1回」 */
 const ADMIN_THREADS_POLL_MINUTES = 1;
 /** メディア種別ごとの IN_PROGRESS の待ち上限（分）。公式の推奨「5分まで」。VIDEO を足すときはここに長めの値を足す */
-const ADMIN_THREADS_MEDIA_WAIT_MINUTES = ['TEXT' => 5];
+const ADMIN_THREADS_MEDIA_WAIT_MINUTES = ['TEXT' => 5, 'IMAGE' => 5];
+/**
+ * 画像の配信口（api/threads-image.php）が画像を出す期間：予定時刻の何分前から、何分後まで。
+ * Threads は image_url から画像を取りに来る（【Meta公式】公開サーバーに置く必要がある）ので、投稿する前後だけ出す。
+ * 後ろ側は再試行（5→15→60分）とコンテナの期限（24時間）を含めて2日
+ */
+const ADMIN_THREADS_IMAGE_SERVE_BEFORE_MINUTES = 10;
+const ADMIN_THREADS_IMAGE_SERVE_AFTER_MINUTES = 2 * 24 * 60;
 /** 連携が切れている間、コンテナ作成済みの行を確認し直す間隔（分） */
 const ADMIN_THREADS_DISCONNECTED_WAIT_MINUTES = 60;
 const ADMIN_THREADS_REFRESH_AFTER_DAYS = 7;
@@ -621,14 +628,21 @@ function admin_threads_publishing_limit(): ?array
  * --------------------------------------------------------------------- */
 
 /**
- * 投稿するデータ。メディア種別は post_queue.media_type（今は TEXT のみ）。
- * VIDEO 等を足すとき：素材（動画URL等）の列を追加するマイグレーション → ここで素材を読む →
- * admin_threads_container_params() に種別の分岐 → ADMIN_THREADS_MEDIA_WAIT_MINUTES に待ち上限を足す。
+ * 投稿するデータ。メディア種別は、コンテナを作る前はストックに Threads の画像があるかで決め（IMAGE／TEXT）、
+ * 作った後は post_queue.media_type（作ったときの種別）を使う。
+ * VIDEO 等を足すとき：素材をここで読む → admin_threads_container_params() に種別の分岐 → ADMIN_THREADS_MEDIA_WAIT_MINUTES に待ち上限を足す。
  */
 function admin_threads_build_post(array $row, array $stock): array
 {
-    $type = (string) ($row['media_type'] ?? '');
-    return ['media_type' => $type !== '' ? $type : 'TEXT', 'text' => admin_stock_render_body($stock, 'threads')];
+    $text = admin_stock_render_body($stock, 'threads');
+    if ((string) ($row['container_id'] ?? '') !== '') {
+        $type = (string) ($row['media_type'] ?? '');
+        return ['media_type' => $type !== '' ? $type : 'TEXT', 'text' => $text, 'image_url' => null];
+    }
+    $image = admin_threads_image((int) $stock['id']);
+    return $image !== null
+        ? ['media_type' => 'IMAGE', 'text' => $text, 'image_url' => admin_threads_image_url((int) $row['id'], $image)]
+        : ['media_type' => 'TEXT', 'text' => $text, 'image_url' => null];
 }
 
 /** コンテナ作成に渡すパラメータ（メディア種別ごと）。戻り値：['ok' => true, 'params' => [..]] / ['ok' => false, 'error' => string] */
@@ -637,10 +651,114 @@ function admin_threads_container_params(array $post): array
     switch ($post['media_type']) {
         case 'TEXT':
             return ['ok' => true, 'params' => ['media_type' => 'TEXT', 'text' => $post['text']]];
+        case 'IMAGE':
+            return ['ok' => true, 'params' => ['media_type' => 'IMAGE', 'image_url' => $post['image_url'], 'text' => $post['text']]];
         default:
-            // VIDEO（video_url）・IMAGE（image_url）等は未対応
+            // VIDEO（video_url）等は未対応
             return ['ok' => false, 'error' => '未対応のメディア種別です（' . $post['media_type'] . '）'];
     }
+}
+
+/* ------------------------------------------------------------------------
+ * 画像の配信（Threads が image_url から取りに来る。ADMIN_IMPL_PLAN.md 18節）
+ * 画像はデータ置き場（Webから読めない）にあり、api/threads-image.php が、署名の合う投稿の行について、
+ * 予定時刻の前後（ADMIN_THREADS_IMAGE_SERVE_*）で、まだ投稿が終わっていない間だけ出す。
+ * --------------------------------------------------------------------- */
+
+/** 署名：投稿の行IDと画像ファイル名を、暗号化鍵から作った鍵で HMAC。URL を推測して他の画像を取ることはできない */
+function admin_threads_image_sig(int $queueId, string $file): string
+{
+    $key = hash('sha256', 'threads-image|' . admin_secret_key(), true);
+    return substr(hash_hmac('sha256', $queueId . '|' . $file, $key), 0, 32);
+}
+
+/** 拡張子なしのURL（サイトの .htaccess は「.php 付きのURL → 拡張子なし」へ301で転送するため、転送のないURLを渡す） */
+function admin_threads_image_url(int $queueId, array $image): string
+{
+    return admin_config()['admin_origin'] . '/api/threads-image?q=' . $queueId . '&s=' . admin_threads_image_sig($queueId, (string) $image['file']);
+}
+
+/** 配信口が出してよい画像（出せなければ null）。$now は判定の時刻 */
+function admin_threads_image_for_serving(int $queueId, string $sig, DateTimeImmutable $now): ?array
+{
+    if ($queueId < 1 || preg_match('/^[0-9a-f]{32}$/', $sig) !== 1) {
+        return null;
+    }
+    $stmt = admin_db()->prepare("SELECT * FROM post_queue WHERE id = ? AND platform = 'threads' AND status IN ('scheduled', 'sending')");
+    $stmt->execute([$queueId]);
+    $row = $stmt->fetch();
+    if ($row === false) {
+        return null;
+    }
+    $at = new DateTimeImmutable((string) $row['scheduled_at']);
+    if ($now < $at->modify('-' . ADMIN_THREADS_IMAGE_SERVE_BEFORE_MINUTES . ' minutes') || $now > $at->modify('+' . ADMIN_THREADS_IMAGE_SERVE_AFTER_MINUTES . ' minutes')) {
+        return null;
+    }
+    $image = admin_threads_image((int) $row['stock_id']);
+    if ($image === null || !hash_equals(admin_threads_image_sig($queueId, (string) $image['file']), $sig)) {
+        return null;
+    }
+    return $image;
+}
+
+/**
+ * Threads の画像を付け替えてよいか。投稿済み・送信中・削除済み、または公開されたか確かめられていない失敗の行があるストックは変えない
+ * （過去の投稿はいじらない：2026-10-29 ユーザー決定）。戻り値：変えられない理由（変えられるなら null）
+ */
+function admin_threads_image_locked_reason(int $stockId): ?string
+{
+    $stmt = admin_db()->prepare(
+        "SELECT status FROM post_queue WHERE stock_id = ? AND platform = 'threads'
+           AND (status IN ('posted', 'sending', 'deleted') OR (status = 'failed' AND container_id IS NOT NULL)) LIMIT 1"
+    );
+    $stmt->execute([$stockId]);
+    $status = $stmt->fetchColumn();
+    return $status === false ? null : 'Threads への投稿が「' . (ADMIN_QUEUE_STATUS_LABELS[$status] ?? $status) . '」のため、画像は変えられません';
+}
+
+/**
+ * Threads の画像をまとめて付ける。$files：[['name' => 元のファイル名, 'tmp' => 一時ファイル, 'error' => UPLOAD_ERR_*], ...]。
+ * ファイル名（拡張子を除く）＝ ストックの ext_id で結び付ける。画像を付け替えられないストック（上の関数）は飛ばす。
+ * 戻り値：['saved' => [ext_id...], 'skipped' => [理由...], 'errors' => [理由...]]
+ */
+function admin_threads_image_attach_bulk(array $files): array
+{
+    $result = ['saved' => [], 'skipped' => [], 'errors' => []];
+    $find = admin_db()->prepare('SELECT id, status FROM post_stock WHERE ext_id = ?');
+    foreach ($files as $f) {
+        $name = mb_substr(basename((string) $f['name']), 0, 120);
+        if (($f['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK) {
+            $result['errors'][] = $name . '：アップロードに失敗しました'
+                . (in_array($f['error'], [UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_FORM_SIZE], true) ? '（サーバーの上限：' . ini_get('upload_max_filesize') . '）' : '');
+            continue;
+        }
+        if (preg_match('/^(.+)\.(?:png|jpe?g)$/i', $name, $m) !== 1) {
+            $result['errors'][] = $name . '：PNG か JPEG のファイル名ではありません';
+            continue;
+        }
+        $find->execute([$m[1]]);
+        $stock = $find->fetch();
+        if ($stock === false) {
+            $result['errors'][] = $name . '：同じIDのストックがありません';
+            continue;
+        }
+        if ($stock['status'] === 'archived') {
+            $result['skipped'][] = $name . '：アーカイブ済みのストックです';
+            continue;
+        }
+        $locked = admin_threads_image_locked_reason((int) $stock['id']);
+        if ($locked !== null) {
+            $result['skipped'][] = $name . '：' . $locked;
+            continue;
+        }
+        try {
+            admin_note_image_save((int) $stock['id'], 'threads', 0, (string) $f['tmp']);
+            $result['saved'][] = $m[1];
+        } catch (InvalidArgumentException | RuntimeException $e) {
+            $result['errors'][] = $name . '：' . $e->getMessage();
+        }
+    }
+    return $result;
 }
 
 function admin_threads_update_row(int $id, array $fields): void
@@ -717,7 +835,7 @@ function admin_sns_threads_publish(array $row, ?DateTimeImmutable $now = null): 
     }
 
     // コンテナ作成（内容の確認に通らなければ API を呼ばずに失敗）
-    $errors = $post['media_type'] === 'TEXT' ? admin_sns_text_errors('threads', $post['text']) : [];
+    $errors = in_array($post['media_type'], ['TEXT', 'IMAGE'], true) ? admin_sns_text_errors('threads', $post['text']) : [];
     if (trim($post['text']) === '' && $post['media_type'] === 'TEXT') {
         $errors[] = 'Threads：本文が空です';
     }

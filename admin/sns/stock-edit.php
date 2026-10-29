@@ -82,6 +82,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         admin_note_image_delete((int) $image['id']);
         admin_audit('note_image_delete', '#' . $id, admin_note_image_label($image));
         admin_flash_redirect('ok', admin_note_image_label($image) . 'を削除しました。', $selfPath);
+    } elseif ($stock !== null && in_array($action, ['threads_image_upload', 'threads_image_delete'], true)) {
+        $locked = admin_threads_image_locked_reason($id);
+        if ($locked !== null) {
+            admin_flash_redirect('error', $locked . '。', $selfPath);
+        }
+        if ($action === 'threads_image_delete') {
+            $image = admin_threads_image($id);
+            if ($image !== null) {
+                admin_note_image_delete((int) $image['id']);
+                admin_audit('threads_image_delete', '#' . $id, null);
+            }
+            admin_flash_redirect('ok', 'Threadsの画像を外しました（文章だけで投稿されます）。', $selfPath);
+        }
+        $upload = $_FILES['image'] ?? null;
+        if (!is_array($upload) || ($upload['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_OK || !is_uploaded_file((string) $upload['tmp_name'])) {
+            $code = is_array($upload) ? (int) ($upload['error'] ?? UPLOAD_ERR_NO_FILE) : UPLOAD_ERR_NO_FILE;
+            $message = in_array($code, [UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_FORM_SIZE], true) ? '画像が大きすぎます（サーバーの上限：' . ini_get('upload_max_filesize') . '）' : '画像ファイルを選んでください';
+            admin_flash_redirect('error', $message, $selfPath);
+        }
+        try {
+            admin_note_image_save($id, 'threads', 0, (string) $upload['tmp_name']);
+        } catch (InvalidArgumentException | RuntimeException $e) {
+            admin_flash_redirect('error', $e->getMessage(), $selfPath);
+        }
+        admin_audit('threads_image_upload', '#' . $id, null);
+        admin_flash_redirect('ok', 'Threadsの画像を保存しました（次の投稿から画像付きになります）。', $selfPath);
     } elseif ($stock !== null && $action === 'schedule_at') {
         $at = DateTimeImmutable::createFromFormat('!Y-m-d\TH:i', (string) ($_POST['scheduled_at'] ?? ''), new DateTimeZone(admin_config()['timezone']));
         if ($at === false) {
@@ -169,6 +195,34 @@ admin_render_flash();
     <p class="muted">noteだけで予約すると、noteの別枠に入ります（同じ日のThreadsの予約はそのまま）。</p>
   <?php endif; ?>
 </section>
+
+<?php if (isset($current['bodies']['threads'])): $threadsImage = admin_threads_image($id); $threadsLocked = admin_threads_image_locked_reason($id); ?>
+<section class="panel panel--wide" id="threads-image">
+  <h2 class="panel__title">Threadsの画像</h2>
+  <p class="muted">付けると、Threads に画像付きで投稿します（無ければ文章だけ）。PNG・JPEG、5MBまで。1080×1350（4:5）で作っています（docs/sns-stock/threads-image/）。</p>
+  <?php if ($threadsImage !== null): ?>
+  <div class="image-grid">
+    <figure class="image-card">
+      <img src="<?= h(admin_url('/sns/stock-image?id=' . (int) $threadsImage['id'])) ?>" alt="Threadsの画像" loading="lazy">
+      <figcaption>Threadsの画像（<?= (int) $threadsImage['width'] ?>×<?= (int) $threadsImage['height'] ?>）</figcaption>
+      <?php if ($threadsLocked === null): ?>
+      <form method="post" action="<?= h(admin_url($selfPath)) ?>"><?= admin_csrf_field() ?><input type="hidden" name="action" value="threads_image_delete"><button type="submit" class="btn btn--ghost btn--small" data-confirm="Threadsの画像を外しますか？（文章だけで投稿されます）">外す</button></form>
+      <?php endif; ?>
+    </figure>
+  </div>
+  <?php endif; ?>
+  <?php if ($threadsLocked !== null): ?>
+  <p class="muted"><?= h($threadsLocked) ?>。</p>
+  <?php else: ?>
+  <form method="post" action="<?= h(admin_url($selfPath)) ?>" enctype="multipart/form-data" class="form form--inline">
+    <?= admin_csrf_field() ?>
+    <input type="hidden" name="action" value="threads_image_upload">
+    <input class="form__input" type="file" name="image" accept="image/png,image/jpeg" required>
+    <button type="submit" class="btn btn--primary"><?= $threadsImage !== null ? '画像を置き換える' : '画像を保存' ?></button>
+  </form>
+  <?php endif; ?>
+</section>
+<?php endif; ?>
 
 <?php $images = admin_note_images($id); $usedSeq = array_map('intval', array_column(array_filter($images, static fn (array $i): bool => $i['role'] === 'body'), 'seq')); $nextSeq = $usedSeq === [] ? 1 : min(ADMIN_NOTE_IMAGE_BODY_MAX, max($usedSeq) + 1); $hasEyecatch = array_filter($images, static fn (array $i): bool => $i['role'] === 'eyecatch') !== []; ?>
 <section class="panel panel--wide" id="note-images">

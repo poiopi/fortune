@@ -16,14 +16,23 @@ const ADMIN_NOTE_IMAGE_MAX_BYTES = 5 * 1024 * 1024;
 /** 長い辺がこれを超えたら縮める（note の推奨より十分大きい値） */
 const ADMIN_NOTE_IMAGE_MAX_SIDE = 2560;
 const ADMIN_NOTE_IMAGE_BODY_MAX = 5;
-const ADMIN_NOTE_IMAGE_ROLES = ['eyecatch' => '見出し画像', 'body' => '本文の画像'];
+/** threads：Threads の投稿に付ける画像（1枚・seq 0。ADMIN_IMPL_PLAN.md 18節）。保存のしかたは note の画像と同じ */
+const ADMIN_NOTE_IMAGE_ROLES = ['eyecatch' => '見出し画像', 'body' => '本文の画像', 'threads' => 'Threadsの画像'];
 
-/** ストックの画像（見出し画像 → 本文の画像1, 2, … の順） */
+/** ストックの note 用の画像（見出し画像 → 本文の画像1, 2, … の順）。Threads の画像は含めない */
 function admin_note_images(int $stockId): array
 {
-    $stmt = admin_db()->prepare("SELECT * FROM post_stock_images WHERE stock_id = ? ORDER BY CASE role WHEN 'eyecatch' THEN 0 ELSE 1 END, seq");
+    $stmt = admin_db()->prepare("SELECT * FROM post_stock_images WHERE stock_id = ? AND role IN ('eyecatch', 'body') ORDER BY CASE role WHEN 'eyecatch' THEN 0 ELSE 1 END, seq");
     $stmt->execute([$stockId]);
     return $stmt->fetchAll();
+}
+
+/** ストックの Threads 用の画像（無ければ null） */
+function admin_threads_image(int $stockId): ?array
+{
+    $stmt = admin_db()->prepare("SELECT * FROM post_stock_images WHERE stock_id = ? AND role = 'threads'");
+    $stmt->execute([$stockId]);
+    return $stmt->fetch() ?: null;
 }
 
 function admin_note_image_get(int $imageId): ?array
@@ -36,7 +45,11 @@ function admin_note_image_get(int $imageId): ?array
 /** 画像の名前（画面・保存するファイル名に使う）：「見出し画像」「画像1」 */
 function admin_note_image_label(array $image): string
 {
-    return $image['role'] === 'eyecatch' ? '見出し画像' : '画像' . (int) $image['seq'];
+    return match ($image['role']) {
+        'eyecatch' => '見出し画像',
+        'threads'  => 'Threadsの画像',
+        default    => '画像' . (int) $image['seq'],
+    };
 }
 
 function admin_note_image_path(string $file): string
@@ -56,7 +69,7 @@ function admin_note_image_save(int $stockId, string $role, int $seq, string $tmp
     if (!isset(ADMIN_NOTE_IMAGE_ROLES[$role])) {
         throw new InvalidArgumentException('画像の種類が正しくありません');
     }
-    $seq = $role === 'eyecatch' ? 0 : $seq;
+    $seq = $role === 'body' ? $seq : 0;
     if ($role === 'body' && ($seq < 1 || $seq > ADMIN_NOTE_IMAGE_BODY_MAX)) {
         throw new InvalidArgumentException('本文の画像の番号は 1〜' . ADMIN_NOTE_IMAGE_BODY_MAX . ' です');
     }

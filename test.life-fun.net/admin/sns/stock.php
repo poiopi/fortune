@@ -41,6 +41,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         admin_flash_redirect($type, $text, '/sns/stock');
     }
 
+    if ($action === 'threads_images') {
+        $upload = $_FILES['images'] ?? null;
+        $files = [];
+        if (is_array($upload) && is_array($upload['name'] ?? null)) {
+            foreach ($upload['name'] as $i => $name) {
+                $tmp = (string) ($upload['tmp_name'][$i] ?? '');
+                $error = (int) ($upload['error'][$i] ?? UPLOAD_ERR_NO_FILE);
+                if ($error === UPLOAD_ERR_NO_FILE) {
+                    continue;
+                }
+                $files[] = ['name' => (string) $name, 'tmp' => $tmp, 'error' => $error === UPLOAD_ERR_OK && !is_uploaded_file($tmp) ? UPLOAD_ERR_NO_FILE : $error];
+            }
+        }
+        if ($files === []) {
+            admin_flash_redirect('error', '画像を選んでください（選んだのに出る場合は、サーバーの上限 post_max_size：' . ini_get('post_max_size') . ' を超えています。数回に分けてください）。', '/sns/stock');
+        }
+        $result = admin_threads_image_attach_bulk($files);
+        admin_audit('threads_image_upload', null, 'まとめて：保存' . count($result['saved']) . ' スキップ' . count($result['skipped']) . ' エラー' . count($result['errors']));
+        $lines = ['保存 ' . count($result['saved']) . '枚 ／ スキップ ' . count($result['skipped']) . '枚 ／ エラー ' . count($result['errors']) . '枚'];
+        foreach ($result['skipped'] as $s) {
+            $lines[] = 'スキップ：' . $s;
+        }
+        foreach ($result['errors'] as $e) {
+            $lines[] = 'エラー：' . $e;
+        }
+        admin_flash_redirect($result['errors'] === [] ? 'ok' : 'error', implode("\n", $lines), '/sns/stock');
+    }
+
     if ($action === 'import_quiz') {
         $result = admin_import_quiz_data();
         admin_audit('quiz_import', null, "登録{$result['imported']} スキップ" . count($result['skipped']) . ' エラー' . count($result['errors']));
@@ -73,7 +101,8 @@ if ($filterStatus !== '') {
 $stmt = admin_db()->prepare(
     "SELECT s.*,
        (SELECT group_concat(platform, ',') FROM post_stock_bodies b WHERE b.stock_id = s.id) AS platforms,
-       (SELECT q.slot_date || '|' || q.status FROM post_queue q WHERE q.stock_id = s.id AND q.status <> 'canceled' ORDER BY q.id DESC LIMIT 1) AS queue_info
+       (SELECT q.slot_date || '|' || q.status FROM post_queue q WHERE q.stock_id = s.id AND q.status <> 'canceled' ORDER BY q.id DESC LIMIT 1) AS queue_info,
+       EXISTS (SELECT 1 FROM post_stock_images i WHERE i.stock_id = s.id AND i.role = 'threads') AS has_threads_image
      FROM post_stock s WHERE " . implode(' AND ', $where) . ' ORDER BY s.id DESC LIMIT 300'
 );
 $stmt->execute($params);
@@ -106,6 +135,13 @@ admin_render_flash();
     <button type="submit" class="btn btn--ghost">既存クイズの投稿文を取り込む</button>
     <span class="muted">このサーバーの quiz/ にあるクイズの Threads 用投稿文を取り込みます（取り込み済みは増えません）。</span>
   </form>
+  <form method="post" action="<?= h(admin_url('/sns/stock')) ?>" enctype="multipart/form-data" class="form form--inline">
+    <?= admin_csrf_field() ?>
+    <input type="hidden" name="action" value="threads_images">
+    <input type="file" name="images[]" accept="image/png,image/jpeg" multiple required>
+    <button type="submit" class="btn btn--primary">Threadsの画像をまとめて追加</button>
+    <span class="muted">ファイル名（例：2026-11-quiz-001.png）と同じIDのストックに付きます。投稿済み・送信中のストックは変えません。1回に <?= (int) ini_get('max_file_uploads') ?>枚・合計 <?= h((string) ini_get('post_max_size')) ?> まで。</span>
+  </form>
   <p class="muted">取り込み直後の状態：<?= admin_post_mode() === 'review' ? '未承認（確認モード）' : '承認済（自動モード）' ?>　<a href="<?= h(admin_url('/sns/stock-edit')) ?>">手書きで1件作る</a></p>
 </section>
 
@@ -134,7 +170,7 @@ admin_render_flash();
         <td class="nowrap"><?= h(admin_kind_label($s['kind'])) ?></td>
         <td><a href="<?= h(admin_url('/sns/stock-edit?id=' . $s['id'])) ?>"><?= h($s['title']) ?></a><?= (int) $s['edited'] === 1 ? ' <span class="badge">修正あり</span>' : '' ?></td>
         <td class="nowrap"><span class="badge badge--<?= h($s['status']) ?>"><?= h(ADMIN_STOCK_STATUS_LABELS[$s['status']]) ?></span></td>
-        <td class="nowrap"><?= h(implode(' / ', array_map('admin_sns_label', array_filter(explode(',', (string) $s['platforms']))))) ?></td>
+        <td class="nowrap"><?= h(implode(' / ', array_map('admin_sns_label', array_filter(explode(',', (string) $s['platforms']))))) ?><?= (int) $s['has_threads_image'] === 1 ? ' <span class="badge">画像</span>' : '' ?></td>
         <td class="nowrap"><?= $qDate !== null ? h(admin_date_label($qDate)) . ' ' . h(ADMIN_QUEUE_STATUS_LABELS[$qStatus] ?? $qStatus) : '<span class="muted">未使用</span>' ?></td>
         <td class="nowrap"><?= h(ADMIN_STOCK_SOURCE_LABELS[$s['source']] ?? $s['source']) ?></td>
       </tr>

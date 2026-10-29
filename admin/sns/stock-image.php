@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-// note 用の画像を出す（ログイン中だけ）。?id=<画像ID>、&download=1 で保存（ダウンロード）。
+// ストックの画像（note 用・Threads 用）を出す（ログイン中だけ）。?id=<画像ID>、&download=1 で保存（ダウンロード）。
 // 画像はデータ置き場（Webから読めない場所）にあるため、この画面を通して出す。保存時にサーバーで作り直した PNG・JPEG だけを扱う。
 
 require_once __DIR__ . '/../../_admin-lib/bootstrap.php';
@@ -16,7 +16,7 @@ if ($image === null || !is_file($path)) {
 }
 $stock = admin_stock_get((int) $image['stock_id']);
 $base = preg_replace('/[^A-Za-z0-9_.-]/', '', (string) ($stock['ext_id'] ?? '')) ?: 'stock-' . (int) $image['stock_id'];
-$name = $base . '-' . ($image['role'] === 'eyecatch' ? 'eyecatch' : 'image' . (int) $image['seq']) . ($image['mime'] === 'image/png' ? '.png' : '.jpg');
+$name = $base . '-' . match ($image['role']) { 'eyecatch' => 'eyecatch', 'threads' => 'threads', default => 'image' . (int) $image['seq'] } . ($image['mime'] === 'image/png' ? '.png' : '.jpg');
 
 header('Content-Type: ' . ($image['mime'] === 'image/png' ? 'image/png' : 'image/jpeg'));
 header('Content-Length: ' . (string) filesize($path));
