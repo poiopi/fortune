@@ -17,6 +17,7 @@ $_NAV_PAGES = [
   'guardian'   => ['name'=>'守護霊診断',    'url'=>'/guardian',  'article'=>'/articles/guardian/',    'featured_score'=>60,  'icon'=>'👻', 'desc'=>'あなたを守る霊のレアリティは？'],
   'geimei'     => ['name'=>'芸名診断',      'url'=>'/geimei',    'article'=>null,                     'featured_score'=>50,  'icon'=>'🎭', 'desc'=>'大喜利で見つける最強の芸名'],
   'reversi'    => ['name'=>'リバーシ占い',  'url'=>'/reversi',   'article'=>null,                     'featured_score'=>55,  'icon'=>'<span class="rv-stone-icon" aria-hidden="true"></span><style>.rv-stone-icon{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:-0.15em;background:radial-gradient(circle at 68% 72%, rgba(255,233,194,.35), transparent 45%),radial-gradient(circle at 30% 28%, rgba(255,255,255,.34) 0%, transparent 22%),radial-gradient(circle at 38% 34%, #e3d4ff 0%, #9b72ef 42%, #3d2470 100%);box-shadow:inset 0 0 0 1px rgba(228,201,255,.55);}</style>', 'desc'=>'一手一手の選択が、今日の運勢を映し出す'],
+  'adventure-quiz' => ['name'=>'冒険の分かれ道 心理テスト', 'url'=>'/adventure-quiz', 'article'=>null,                 'featured_score'=>55,  'icon'=>'<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="#c9a84c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="vertical-align:-0.15em"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>', 'desc'=>'12の場面の選び方から、性格の傾向を見る'],
 ];
 
 // 診断結果の型ごとの解説記事URL（result-footer.php が type-aware 呼び出し時に参照）

@@ -402,7 +402,7 @@ body {
 }
 
 /* ─── レーン02：カード・心理（タイル） ─── */
-.tiles { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.tiles { padding: 0 1.2rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } /* 4タイル（2026-10-30、冒険の分かれ道 心理テストを追加）：3列だと4つ目が1枚だけ段落ちするため2×2 */
 .tile { border-radius: 12px; padding: 1rem; display: flex; align-items: center; gap: 1rem; min-height: auto; }
 .tile .ic-wrap { width: 64px; height: 64px; color: var(--gold); font-size: 43px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .tile-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
@@ -574,7 +574,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <span class="hero-eyebrow h-d1"><?= htmlspecialchars(TOP_EYEBROW, ENT_QUOTES) ?></span>
     <div class="hero-deco h-d2"><span>✦ ── ✦ ── ✦</span></div>
     <h1 class="hero-h1 h-d3"><?= TOP_H1_HTML ?></h1>
-    <span class="hero-sub h-d4">星と運命の交差点 · 16種類の占術で今を読み解く</span>
+    <span class="hero-sub h-d4">星と運命の交差点 · 17種類の占術で今を読み解く</span>
     <div class="hero-flagship-card h-d5">
       <img class="hf-corner hf-corner-tl" src="/img/hero/corner-single.webp" alt="">
       <img class="hf-corner hf-corner-tr" src="/img/hero/corner-single.webp" alt="">
@@ -645,7 +645,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
     <h2 class="section-title">占いを選ぶ</h2>
-    <p class="section-sub">16種類の占術から、今のあなたに合ったものを</p>
+    <p class="section-sub">17種類の占術から、今のあなたに合ったものを</p>
     <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
@@ -666,6 +666,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     'aisho'      => '<circle cx="9" cy="12" r="6.5"/><circle cx="15" cy="12" r="6.5"/>',
     'rpg'        => '<path d="M4 11l8-6 8 6M6 11v9h12v-9M10 20v-5h4v5"/>',
     'reversi'    => '<circle cx="9" cy="12" r="5" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="5"/>',
+    'adventure-quiz' => '<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
     'zense'      => '<path d="M18 6a8 8 0 10-1.5 12.5"/><path d="M15 19.8l1.7-2.3 2.6 1.2"/>',
     'guardian'   => '<path d="M12 3c3 3 5 6 5 9a5 5 0 01-10 0c0-3 2-6 5-9z"/>',
     'geimei'     => '<path d="M4 20l3-1 10-10-2-2L5 17z"/><circle cx="18" cy="6" r="1"/>',
@@ -689,6 +690,7 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     ['slug'=>'mbti',  'sub'=>'性格タイプと星座を掛け合わせて診断'],
     ['slug'=>'love',  'sub'=>'あなたの恋のクセを丁寧にひもとく'],
     ['slug'=>'aisho', 'sub'=>'ふたりの生年月日から相性を読む'],
+    ['slug'=>'adventure-quiz', 'sub'=>'12の場面の選び方から、性格の傾向を見る'],
   ];
 
   // レーン03：気軽に楽しむ
