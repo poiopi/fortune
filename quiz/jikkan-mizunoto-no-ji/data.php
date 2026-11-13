@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 48,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '十干で「みずのと」と読む字は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '十干で「みずのと」と読む字は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '十干の読み方にまつわる4択クイズ。答えを選んだあと、正解と癸（みずのと）の意味をわかりやすく解説します。',
 
   'cta_url'   => '/articles/shichu/mizunoto/',

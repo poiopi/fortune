@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['kinun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 12,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '旧暦の元日の六曜は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '旧暦の元日の六曜は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '旧暦の元日の六曜は？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/rokuyo/',

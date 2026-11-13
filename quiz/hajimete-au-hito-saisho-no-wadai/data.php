@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['renai'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 24,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '初めて会う人と話すなら何から？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '初めて会う人と話すなら何から？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '初めて会う人と話すなら何から？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/aisho',

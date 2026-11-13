@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['kisetsu'],
   'season'       => [12],
+  'listed'       => true,
   'number'       => 49,
   'published_at' => '2026-11-13',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '大掃除、最初に手をつけるのは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '大掃除、最初に手をつけるのは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '年末の大掃除で最初に手をつける場所は？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/articles/calendar/moon/kagen/',

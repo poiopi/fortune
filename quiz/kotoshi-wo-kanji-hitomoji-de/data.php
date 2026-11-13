@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun', 'kisetsu'],
   'season'       => [12],
+  'listed'       => true,
   'number'       => 53,
   'published_at' => '2026-11-13',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '今年の自分を漢字1字で表すなら？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '今年の自分を漢字1字で表すなら？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '今年1年の自分を漢字1字で表すなら？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/seimei',

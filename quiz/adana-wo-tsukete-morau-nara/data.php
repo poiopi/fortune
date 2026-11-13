@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['renai'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 28,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => 'あだ名で呼ばれるなら？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'あだ名で呼ばれるなら？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'あだ名で呼ばれるなら？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/geimei',

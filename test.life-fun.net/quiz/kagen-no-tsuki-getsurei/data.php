@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 47,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '「下弦の月」の月齢は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '「下弦の月」の月齢は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '下弦の月の月齢を当てる4択クイズ。答えを選んだあと、正解と下弦の月の見え方・意味をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/moon/kagen/',

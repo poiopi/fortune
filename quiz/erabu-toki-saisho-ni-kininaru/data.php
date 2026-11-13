@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 3,
   'published_at' => '2026-09-14',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '何かを選ぶとき、最初に気になるのは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '何かを選ぶとき、最初に気になるのは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '値段？見た目？口コミ？使いやすさ？何かを選ぶときに最初に気になるものから、今回のあなたの視点を振り返るミニクイズです。',
 
   'cta_url'   => '/numerology',

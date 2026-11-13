@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 8,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => 'タロットで「0番」のカードはどれ？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'タロットで「0番」のカードはどれ？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'タロットで「0番」のカードはどれ？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/tarot/fool/',

@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['renai', 'kisetsu'],
   'season'       => [12],
+  'listed'       => true,
   'number'       => 50,
   'published_at' => '2026-11-13',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => 'クリスマスにもらってうれしいのは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'クリスマスにもらってうれしいのは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'クリスマスにもらっていちばんうれしいものは？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/love',

@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['kinun', 'jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 34,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '10万円が当たったら？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '10万円が当たったら？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '10万円が当たったら？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/articles/calendar/kichijitsu/tora/',

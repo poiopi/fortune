@@ -42,6 +42,7 @@ function render_footer(array $opts = []): void {
   echo '<li><a href="/contact">お問い合わせ</a></li>';
   echo '</ul></div>';
   echo '</div>';
+  echo '<p class="sf-en"><a href="/quiz/">みつぼしの4択</a></p>';
   echo '<p class="sf-en"><a href="/en/omikuji/">おみくじガイド（英語版）</a></p>';
   echo '<p class="sf-copy">&copy; '.date('Y').' '.SITE_NAME.'</p>';
   echo '</footer>';

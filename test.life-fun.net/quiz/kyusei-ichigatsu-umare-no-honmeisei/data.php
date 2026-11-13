@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [1],
+  'listed'       => true,
   'number'       => 46,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '1月生まれの本命星はどの年で数える？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '1月生まれの本命星はどの年で数える？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '九星気学の本命星の数え方にまつわる4択クイズ。答えを選んだあと、正解と年の区切りをわかりやすく解説します。',
 
   'cta_url'   => '/articles/kyusei/',

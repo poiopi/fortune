@@ -207,6 +207,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
     <?php require __DIR__.'/../inc/article-cta.php'; ?>
   </div>
 
+  <?php require __DIR__ . '/_related.php'; ?>
+
   <nav class="quiz-back-to-hub" aria-label="みつぼしの4択内の移動">
     <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/">← 問題にもどる</a>
     <a href="/quiz/">4択の一覧へ</a>

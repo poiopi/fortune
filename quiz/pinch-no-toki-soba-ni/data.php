@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['renai'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 38,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => 'ピンチのとき、そばにいてほしいのは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'ピンチのとき、そばにいてほしいのは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'ピンチのとき、そばにいてほしいのは？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/guardian',

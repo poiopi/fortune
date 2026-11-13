@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 27,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '守ってくれる存在を選ぶなら？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '守ってくれる存在を選ぶなら？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '守ってくれる存在を選ぶなら？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/guardian',

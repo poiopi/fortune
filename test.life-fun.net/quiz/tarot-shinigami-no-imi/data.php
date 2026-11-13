@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 9,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => 'タロット「死神」の本当の意味は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'タロット「死神」の本当の意味は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'タロット「死神」の本当の意味は？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/tarot/death/',

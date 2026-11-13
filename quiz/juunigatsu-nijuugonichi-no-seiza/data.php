@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [12],
+  'listed'       => true,
   'number'       => 41,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '12月25日生まれの星座は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '12月25日生まれの星座は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '12月25日生まれの星座を当てる4択クイズ。答えを選んだあと、正解と山羊座の期間・特徴をわかりやすく解説します。',
 
   'cta_url'   => '/articles/seiza/capricorn/',

@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 14,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '九星気学のルーツ「洛書」の魔方陣｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '九星気学のルーツ「洛書」の魔方陣'.site_title_suffix(' - '.SITE_NAME),
   'description' => '九星気学のルーツ「洛書」の魔方陣にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/kyusei/',

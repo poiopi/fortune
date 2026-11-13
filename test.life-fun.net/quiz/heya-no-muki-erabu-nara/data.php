@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 36,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '部屋を選ぶなら何向き？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '部屋を選ぶなら何向き？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '部屋を選ぶなら何向き？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/kyusei',

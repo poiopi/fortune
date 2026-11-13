@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['kinun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 10,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '寅の日は何日に1度？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '寅の日は何日に1度？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '寅の日は何日に1度？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/kichijitsu/tora/',

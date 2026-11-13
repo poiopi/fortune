@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 31,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => 'オセロの序盤、どう打つ？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'オセロの序盤、どう打つ？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'オセロの序盤、どう打つ？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/reversi',

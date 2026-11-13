@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['kisetsu'],
   'season'       => [12, 1, 2],
+  'listed'       => true,
   'number'       => 54,
   'published_at' => '2026-11-13',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '冬の夜空で見たいものは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '冬の夜空で見たいものは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '冬の夜空でいちばん見たいものは？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/seiza',

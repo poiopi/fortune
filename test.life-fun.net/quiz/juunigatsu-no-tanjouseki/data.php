@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [12],
+  'listed'       => true,
   'number'       => 40,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '12月の誕生石は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '12月の誕生石は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '12月の誕生石にまつわる4択クイズ。答えを選んだあと、正解と石言葉・名前の由来をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/birthstone/december/',

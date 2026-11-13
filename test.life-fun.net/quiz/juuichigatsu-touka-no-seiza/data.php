@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [11],
+  'listed'       => true,
   'number'       => 22,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '11月10日生まれの星座は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '11月10日生まれの星座は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '11月10日生まれの星座は？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/seiza/scorpio/',

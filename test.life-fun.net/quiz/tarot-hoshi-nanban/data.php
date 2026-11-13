@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 15,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => 'タロット「星」は何番のカード？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'タロット「星」は何番のカード？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'タロット「星」は何番のカード？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/tarot/star/',

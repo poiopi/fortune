@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 43,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => 'タロット「節制」の天使は何をしている？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'タロット「節制」の天使は何をしている？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'タロットの大アルカナ「節制」にまつわる4択クイズ。答えを選んだあと、正解とカードの意味をわかりやすく解説します。',
 
   'cta_url'   => '/articles/tarot/temperance/',

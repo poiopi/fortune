@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 2,
   'published_at' => '2026-09-13',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '予定のない休日、最初にしたくなることは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '予定のない休日、最初にしたくなることは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '急に予定がなくなった休日、あなたが最初にしたくなるのはどれ？選んだあと、今回の自分の過ごし方を振り返るミニクイズです。',
 
   'cta_url'   => '/kyusei',

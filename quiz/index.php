@@ -3,84 +3,12 @@ declare(strict_types=1);
 require_once __DIR__ . '/../inc/site.php';
 
 // みつぼしの4択 一覧（旧名 Daily Quiz。URL は /quiz/ のまま）
-// 本番公開対象のみ掲載する。新しいQuizを本番公開するたびに、このリストへ追加すること。
-$_quizSlugs = [
-    'hatsutaimen-saisho-ni-miru-mono',
-    'yotei-no-nai-kyuujitsu',
-    'erabu-toki-saisho-ni-kininaru',
-    'junishi-nihon-ni-inai-doubutsu',
-    'doyo-no-ushi-unagi',
-    'omikuji-junban',
-    'tsurusareta-otoko-hyoujou',
-    'tarot-zero-ban-no-card',
-    'tarot-shinigami-no-imi',
-    'tora-no-hi-nannichi-ni-ichido',
-    'tsuchinotomi-no-hi-yomikata',
-    'kyureki-ganjitsu-no-rokuyo',
-    'tsuki-no-michikake-nannichi',
-    'rakusho-no-mahoujin',
-    'tarot-hoshi-nanban',
-    'tarot-tou-no-imi',
-    'tarot-unmei-no-wa-nanban',
-    'ichiryumanbaibi-yomikata',
-    'tenshabi-nannichi',
-    'butsumetsu-moto-no-ji',
-    'juuichigatsu-no-tanjouseki',
-    'juuichigatsu-touka-no-seiza',
-    'gogyo-mizu-wo-umu',
-    'hajimete-au-hito-saisho-no-wadai',
-    'rpg-de-erabu-shokugyou',
-    'umarekawaru-nara-dono-jidai',
-    'mamotte-kureru-sonzai',
-    'adana-wo-tsukete-morau-nara',
-    'tarot-ichimai-hiku-nara',
-    'mayotta-toki-no-kimekata',
-    'othello-joban-no-uchikata',
-    'jibunrashii-jikantai',
-    'ryokou-no-keikaku-kakari',
-    'juuman-en-atattara',
-    'note-no-ichi-peiji-me',
-    'heya-no-muki-erabu-nara',
-    'uranai-no-kekka-uketomekata',
-    'pinch-no-toki-soba-ni',
-    'kininaru-hito-ni-renraku',
-    'juunigatsu-no-tanjouseki',
-    'juunigatsu-nijuugonichi-no-seiza',
-    'tarot-insha-ga-kakageru-mono',
-    'tarot-sessei-no-tenshi',
-    'senbu-kichi-no-jikantai',
-    'gogyo-kin-no-iro',
-    'kagen-no-tsuki-getsurei',
-    'jikkan-mizunoto-no-ji',
-    'oosouji-saisho-ni-te-wo-tsukeru',
-    'kurisumasu-ni-moraitai-mono',
-    'fuyu-no-kyuujitsu-sugosu-nara',
-    'bounenkai-de-no-ichi',
-    'kotoshi-wo-kanji-hitomoji-de',
-    'fuyu-no-yozora-de-mitai-mono',
-    'hatsumoude-de-onegai-suru-koto',
-    'oomisoka-no-yoru',
-    'rainen-hajimetai-koto',
-    'kyusei-ichigatsu-umare-no-honmeisei',
-];
+// 一覧に載せるクイズは quiz/_list.php がフォルダから集める（data.php に 'listed' => true があるものだけ）
+require_once __DIR__ . '/_list.php';
+$_quizzes = quiz_all_listed();
 
-$_quizzes = [];
-foreach ($_quizSlugs as $_slug) {
-    $_quizzes[] = require __DIR__ . '/' . $_slug . '/data.php';
-}
-
-// number降順（新しい順）
-usort($_quizzes, fn($a, $b) => $b['number'] <=> $a['number']);
-
-// 区分（data.php の themes。最初が主な区分、2つまで）。並び順＝表示順
-// 結婚・学業・仕事などの区分は、該当する問題が増えたら足す（DAILY_QUIZ_OPERATIONS.md「区分」節）
-$_genres = [
-    'kinun'   => ['label' => '金運・開運日',     'desc' => '財布を新しくする日、何かを始める日など、暦の上の吉日にまつわる4択です。'],
-    'renai'   => ['label' => '恋愛・人づきあい', 'desc' => '初対面、気になる人、仲間との場面。人とのつきあい方にまつわる4択です。'],
-    'jibun'   => ['label' => '自分を知る',       'desc' => '正解のない「あなたはどれ？」で、自分の選び方をふり返る4択です。'],
-    'kisetsu' => ['label' => '季節・行事',       'desc' => '年末年始や季節の行事にまつわる4択です。'],
-    'mame'    => ['label' => '占いの豆知識',     'desc' => 'タロット・五行・九星・星座など、占いの基本を当てる4択です。'],
-];
+// 区分の表示名と説明は quiz/_list.php の quiz_theme_labels()
+$_genres = quiz_theme_labels();
 
 // この時季：今月か来月が season に入っているもの（サーバーの日付で決まる）
 $_m1 = (int) date('n');

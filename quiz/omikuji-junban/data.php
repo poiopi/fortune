@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['kisetsu'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 6,
   'published_at' => '2026-09-17',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => 'おみくじの順番、全国共通だと思ってた？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'おみくじの順番、全国共通だと思ってた？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'おみくじの吉凶の順番にまつわる4択クイズ。正解と、意外と知られていない背景を解説します。',
 
   'cta_url'   => '/calendar',

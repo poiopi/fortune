@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['kinun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 44,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '「先負」の日、吉の時間帯は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '「先負」の日、吉の時間帯は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '六曜「先負」の吉の時間帯を当てる4択クイズ。答えを選んだあと、正解と先負の意味・過ごし方をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/rokuyo/senbu/',

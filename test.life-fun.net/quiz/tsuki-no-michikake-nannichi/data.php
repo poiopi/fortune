@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 13,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '月の満ち欠けは約何日で一巡り？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '月の満ち欠けは約何日で一巡り？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '月の満ち欠けは約何日で一巡り？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/moon/',

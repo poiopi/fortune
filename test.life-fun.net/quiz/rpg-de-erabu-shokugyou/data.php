@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 25,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => 'RPGで選ぶ職業は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'RPGで選ぶ職業は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'RPGで選ぶ職業は？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/rpg',

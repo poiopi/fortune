@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 17,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => 'タロット「運命の輪」は何番？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => 'タロット「運命の輪」は何番？'.site_title_suffix(' - '.SITE_NAME),
   'description' => 'タロット「運命の輪」は何番？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/tarot/wheel/',

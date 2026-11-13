@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['jibun'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 35,
   'published_at' => '2026-10-28',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '新しいノートの1ページ目に書くのは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '新しいノートの1ページ目に書くのは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '新しいノートの1ページ目に書くのは？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/articles/calendar/kichijitsu/ichiryumanbai/',

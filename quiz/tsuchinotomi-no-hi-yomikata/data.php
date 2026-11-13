@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['kinun', 'mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 11,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '「己巳の日」の読み方は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '「己巳の日」の読み方は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '「己巳の日」の読み方は？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/kichijitsu/tsuchinotomi/',

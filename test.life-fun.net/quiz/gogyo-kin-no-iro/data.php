@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 45,
   'published_at' => '2026-11-13',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '五行「金」の色は？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '五行「金」の色は？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '陰陽五行の「金」に対応する色を当てる4択クイズ。答えを選んだあと、正解と金の意味をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/gogyo/kin/',

@@ -7,6 +7,7 @@ return [
   'series'       => 'B',
   'themes'       => ['mame'],
   'season'       => [],
+  'listed'       => true,
   'number'       => 23,
   'published_at' => '2026-10-28',
 
@@ -44,7 +45,7 @@ return [
   ],
   'explanation_indexable' => false,
 
-  'title'       => '五行で「水」を生むのは？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '五行で「水」を生むのは？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '五行で「水」を生むのは？にまつわる4択クイズ。答えを選んだあと、正解とその背景をわかりやすく解説します。',
 
   'cta_url'   => '/articles/calendar/gogyo/',

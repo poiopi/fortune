@@ -7,6 +7,7 @@ return [
   'series'       => 'A',
   'themes'       => ['kisetsu'],
   'season'       => [12],
+  'listed'       => true,
   'number'       => 56,
   'published_at' => '2026-11-13',
 
@@ -39,7 +40,7 @@ return [
   'explanation_intro' => null,
   'explanation_indexable' => false,
 
-  'title'       => '大晦日の夜、どう過ごしたい？｜Daily Quiz'.site_title_suffix(' - '.SITE_NAME),
+  'title'       => '大晦日の夜、どう過ごしたい？'.site_title_suffix(' - '.SITE_NAME),
   'description' => '大晦日の夜の過ごし方は？4つの答えから選ぶと、選んだ答えごとの解説が読めるミニクイズです。',
 
   'cta_url'   => '/calendar',
