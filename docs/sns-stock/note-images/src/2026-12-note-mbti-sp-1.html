@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=block">
+<style>
+  html, body { margin: 0; width: 1280px; height: 670px; overflow: hidden; }
+  body { font-family: "Noto Sans JP", "Yu Gothic", sans-serif; background: radial-gradient(ellipse at 75% 0%, #7a4fd6 0%, #4a2f9a 38%, #24164f 75%, #1a1130 100%); color: #f4f0ff; position: relative; }
+  .stars { position: absolute; inset: 0; }
+  .line { position: absolute; left: 80px; right: 80px; height: 2px; background: #a98a4f; opacity: .8; }
+  .brand { position: absolute; width: 100%; text-align: center; color: #b9a9e6; opacity: .85; }
+  .kicker { position: absolute; width: 100%; text-align: center; color: #f2c95a; font-weight: 700; letter-spacing: .04em; text-shadow: 0 2px 6px rgba(0,0,0,.4); }  .line.top { top: 60px; } .line.bottom { top: 600px; }
+  .kicker { top: 78px; font-size: 28px; }
+  table { position: absolute; top: 130px; left: 60px; width: 1160px; border-collapse: separate; border-spacing: 0 10px; font-size: 28px; }
+  th { font-size: 21px; color: #d7cbff; font-weight: 400; padding: 0 8px; text-align: center; }
+  td { background: rgba(20,12,45,.42); padding: 16px 8px; text-align: center; border-top: 1.5px solid rgba(242,201,90,.35); border-bottom: 1.5px solid rgba(242,201,90,.35); }
+  td:first-child { border-left: 1.5px solid rgba(242,201,90,.35); border-radius: 14px 0 0 14px; }
+  td:last-child { border-right: 1.5px solid rgba(242,201,90,.35); border-radius: 0 14px 14px 0; }
+  .k { font-weight: 900; font-size: 26px; color: #f2c95a; white-space: nowrap; }
+  td.top { color: #f2c95a; font-weight: 900; }
+  .note { position: absolute; top: 560px; width: 100%; text-align: center; font-size: 18px; color: #b9a9e6; }
+  .brand { top: 616px; font-size: 22px; }
+</style></head>
+<body>
+<svg class="stars" width="1280" height="670" id="s"></svg>
+<div class="line top"></div>
+<div class="kicker">MBTIの2文字で分けた4グループの恋愛傾向（「高め」と出る割合）</div>
+<table>
+<tr><th>グループ</th><th>積極性</th><th>愛情表現</th><th>惚れやすさ</th><th>包容力</th><th>慎重さ</th><th>結婚志向</th></tr>
+<tr><td class="k">NT</td><td class="top">42.5%</td><td>37.3%</td><td>26.8%</td><td>20.3%</td><td>21.5%</td><td>23.2%</td></tr>
+<tr><td class="k">NF</td><td>34.6%</td><td class="top">58.9%</td><td class="top">72.2%</td><td>35.5%</td><td>21.5%</td><td>23.2%</td></tr>
+<tr><td class="k">SJ</td><td>19.2%</td><td>16.8%</td><td>5.4%</td><td class="top">49.0%</td><td class="top">55.8%</td><td class="top">55.6%</td></tr>
+<tr><td class="k">SP</td><td>19.2%</td><td>16.8%</td><td>24.2%</td><td>23.0%</td><td>30.0%</td><td>27.3%</td></tr>
+</table>
+<div class="note">Love Engine 全9216通りの診断結果より（各2304通り）。金色は4グループでいちばん高い値</div>
+<div class="line bottom"></div>
+<div class="brand">みつぼし占い ｜ life-fun.net</div>
+<script>
+  let seed = 547; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const s = document.getElementById('s');
+  for (let i = 0; i < 220; i++) { const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle'); c.setAttribute('cx', (rnd() * 1280).toFixed(1)); c.setAttribute('cy', (rnd() * 670).toFixed(1)); c.setAttribute('r', (rnd() * 1.3 + 0.4).toFixed(2)); c.setAttribute('fill', '#ffffff'); c.setAttribute('opacity', (rnd() * 0.6 + 0.25).toFixed(2)); s.appendChild(c); }
+</script>
+</body></html>

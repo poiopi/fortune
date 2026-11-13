@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=block">
+<style>
+  html, body { margin: 0; width: 1280px; height: 670px; overflow: hidden; }
+  body { font-family: "Noto Sans JP", "Yu Gothic", sans-serif; background: radial-gradient(ellipse at 75% 0%, #7a4fd6 0%, #4a2f9a 38%, #24164f 75%, #1a1130 100%); color: #f4f0ff; position: relative; }
+  .stars { position: absolute; inset: 0; }
+  .line { position: absolute; left: 80px; right: 80px; height: 2px; background: #a98a4f; opacity: .8; }
+  .line.top { top: 80px; } .line.bottom { top: 572px; }
+  .kicker { position: absolute; top: 104px; width: 100%; text-align: center; color: #f2c95a; font-weight: 700; font-size: 32px; letter-spacing: .04em; text-shadow: 0 2px 6px rgba(0,0,0,.4); }
+  .week { position: absolute; top: 178px; left: 80px; right: 80px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; }
+  .day { border: 1.5px solid rgba(242,201,90,.45); border-radius: 16px; background: rgba(20,12,45,.38); padding: 18px 6px 16px; text-align: center; height: 320px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .day.hot { border-color: #f2c95a; background: rgba(242,201,90,.14); box-shadow: 0 0 24px rgba(242,201,90,.25); }
+  .date { font-size: 34px; font-weight: 900; line-height: 1.1; }
+  .wd { font-size: 22px; color: #d7cbff; }
+  .rk { font-size: 30px; font-weight: 700; margin-top: 6px; }
+  .rk.taian { color: #f2c95a; }
+  .tag { font-size: 20px; font-weight: 700; color: #1a1130; background: #f2c95a; border-radius: 999px; padding: 3px 12px; }
+  .tag.moon { background: #d7cbff; }
+  .brand { position: absolute; top: 600px; width: 100%; text-align: center; color: #b9a9e6; font-size: 24px; opacity: .85; }
+</style></head>
+<body>
+<svg class="stars" width="1280" height="670" id="s"></svg>
+<div class="line top"></div>
+<div class="kicker">― 12/14〜12/20 の六曜と吉日 ―</div>
+<div class="week">
+  <div class="day"><div class="date">12/14</div><div class="wd">月</div><div class="rk ">仏滅</div></div>
+  <div class="day hot"><div class="date">12/15</div><div class="wd">火</div><div class="rk taian">大安</div><div class="tag ">一粒万倍日</div></div>
+  <div class="day hot"><div class="date">12/16</div><div class="wd">水</div><div class="rk ">赤口</div><div class="tag ">天赦日</div><div class="tag ">一粒万倍日</div></div>
+  <div class="day hot"><div class="date">12/17</div><div class="wd">木</div><div class="rk ">先勝</div><div class="tag moon">上弦の月</div></div>
+  <div class="day hot"><div class="date">12/18</div><div class="wd">金</div><div class="rk ">友引</div><div class="tag ">寅の日</div></div>
+  <div class="day"><div class="date">12/19</div><div class="wd">土</div><div class="rk ">先負</div></div>
+  <div class="day"><div class="date">12/20</div><div class="wd">日</div><div class="rk ">仏滅</div></div>
+</div>
+<div class="line bottom"></div>
+<div class="brand">みつぼし占い ｜ life-fun.net</div>
+<script>
+  let seed = 523; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const s = document.getElementById('s');
+  for (let i = 0; i < 220; i++) { const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle'); c.setAttribute('cx', (rnd() * 1280).toFixed(1)); c.setAttribute('cy', (rnd() * 670).toFixed(1)); c.setAttribute('r', (rnd() * 1.3 + 0.4).toFixed(2)); c.setAttribute('fill', '#ffffff'); c.setAttribute('opacity', (rnd() * 0.6 + 0.25).toFixed(2)); s.appendChild(c); }
+</script>
+</body></html>

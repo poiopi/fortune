@@ -1,0 +1,379 @@
+{
+  "format_version": 1,
+  "generated_by": "claude-code",
+  "generated_at": "2026-11-13T18:00:00+09:00",
+  "items": [
+    {
+      "ext_id": "2026-12-quiz-001",
+      "kind": "quiz",
+      "title": "12月の誕生石は？",
+      "link_url": "https://life-fun.net/quiz/juunigatsu-no-tanjouseki/",
+      "bodies": {
+        "threads": {
+          "body": "12月の誕生石として、日本でよく知られている石は？\n\nA. ガーネット\nB. アメジスト\nC. トパーズ\nD. トルコ石\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えD。/articles/calendar/birthstone/december/「12月の誕生石はトルコ石」「石言葉は成功、繁栄」「トルコ経由でヨーロッパに伝わった」。1月ガーネット・2月アメジスト・11月トパーズは各誕生石記事で確認"
+    },
+    {
+      "ext_id": "2026-12-quiz-002",
+      "kind": "quiz",
+      "title": "12月25日生まれの星座は？",
+      "link_url": "https://life-fun.net/quiz/juunigatsu-nijuugonichi-no-seiza/",
+      "bodies": {
+        "threads": {
+          "body": "12月25日生まれの人の星座は？\n\nA. 蠍座\nB. 射手座\nC. 山羊座\nD. 水瓶座\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えC。/articles/seiza/capricorn/ period_full「12月22日〜1月19日」、守護星土星・地のエレメント・第10番目。射手座は /articles/seiza/sagittarius/「11月23日〜12月21日」。冬至2026-12-22は国立天文台 暦要項2026で確認。山羊座記事 intro「冬至から始まる冬の本番に対応する星座」"
+    },
+    {
+      "ext_id": "2026-12-quiz-003",
+      "kind": "quiz",
+      "title": "タロット「隠者」が掲げているものは？",
+      "link_url": "https://life-fun.net/quiz/tarot-insha-ga-kakageru-mono/",
+      "bodies": {
+        "threads": {
+          "body": "タロットの「隠者」。老人が高く掲げているものは？\n\nA. 鍵\nB. ランタン\nC. 鏡\nD. 剣\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えB。/articles/tarot/hermit/「大アルカナ9番」「山頂でランタンを掲げる老賢者」「ランタンは自分だけの光」。杖も持っているため選択肢に杖は入れない"
+    },
+    {
+      "ext_id": "2026-12-quiz-004",
+      "kind": "quiz",
+      "title": "タロット「節制」の天使は何をしている？",
+      "link_url": "https://life-fun.net/quiz/tarot-sessei-no-tenshi/",
+      "bodies": {
+        "threads": {
+          "body": "タロットの「節制」。描かれている天使は、何をしている？\n\nA. ラッパを吹いている\nB. 杯から杯へ水を注いでいる\nC. 剣を構えている\nD. 本を読んでいる\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えB。/articles/tarot/temperance/「大アルカナ14番」「二つの杯の間で水を注ぐ天使」「片足は陸に、もう片足は水の中」。ラッパの天使＝審判は /articles/tarot/judgement/ で確認"
+    },
+    {
+      "ext_id": "2026-12-quiz-005",
+      "kind": "quiz",
+      "title": "「先負」の日、吉の時間帯は？",
+      "link_url": "https://life-fun.net/quiz/senbu-kichi-no-jikantai/",
+      "bodies": {
+        "threads": {
+          "body": "六曜の「先負（せんぶ）」の日。吉とされる時間帯は？\n\nA. 朝と夕方\nB. 午前中\nC. 正午ごろ\nD. 午後\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えD。/articles/calendar/rokuyo/senbu/「午前中は凶、午後（13時以降）が吉」「せんぶ・さきまけ」「友引の後、仏滅の前」。赤口の正午前後は /articles/calendar/rokuyo/shakko/（11月の豆知識でも使用）"
+    },
+    {
+      "ext_id": "2026-12-quiz-006",
+      "kind": "quiz",
+      "title": "五行「金」の色は？",
+      "link_url": "https://life-fun.net/quiz/gogyo-kin-no-iro/",
+      "bodies": {
+        "threads": {
+          "body": "五行の「金（こん）」。昔から結びつけられてきた色は？\n\nA. 緑\nB. 赤\nC. 黄\nD. 白\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えD。/articles/calendar/gogyo/kin/「ラッキーカラー 白・ゴールド・シルバー」「季節 秋」「金は水を生み出す」「金剋木」。他の色は /articles/calendar/gogyo/ の各記事で確認済み（木=緑・青緑、火=赤、土=黄、水=黒）"
+    },
+    {
+      "ext_id": "2026-12-quiz-007",
+      "kind": "quiz",
+      "title": "1月生まれの本命星はどの年で数える？",
+      "link_url": "https://life-fun.net/quiz/kyusei-ichigatsu-umare-no-honmeisei/",
+      "bodies": {
+        "threads": {
+          "body": "九星気学の本命星。1月15日生まれの人は、どの年で数える？\n\nA. 生まれた年\nB. 前の年\nC. 次の年\nD. 生まれた月で決まる\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えB。/articles/kyusei/「生まれた年（節分基準）から算出」「1月1日〜2月3日生まれは前年で計算します」「月命星：生まれた月から算出される星。本命星を補完」。2027年の立春は2/4（国立天文台 暦要項2027）。旧案の九星盤の中央（五黄土星）は rakusho-no-mahoujin と答えが重なるため差し替え（Reviewer指摘）。10月の豆知識 trivia-008「九星気学の1年は立春から」と同じ事実だが、クイズページとしては初"
+    },
+    {
+      "ext_id": "2026-12-quiz-008",
+      "kind": "quiz",
+      "title": "「下弦の月」の月齢は？",
+      "link_url": "https://life-fun.net/quiz/kagen-no-tsuki-getsurei/",
+      "bodies": {
+        "threads": {
+          "body": "「下弦の月」。月齢はおよそ何日ごろ？\n\nA. 約3日\nB. 約7日\nC. 約15日\nD. 約22日\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えD。/articles/calendar/moon/kagen/「月齢はおよそ22日前後」「左半分（南半球では右半分）」「真夜中に昇り、日中の空に見える」。上弦「およそ7日前後」は jougen/、満月 月齢12.9〜16.6 は mangetsu/ で確認"
+    },
+    {
+      "ext_id": "2026-12-quiz-009",
+      "kind": "quiz",
+      "title": "十干で「みずのと」と読む字は？",
+      "link_url": "https://life-fun.net/quiz/jikkan-mizunoto-no-ji/",
+      "bodies": {
+        "threads": {
+          "body": "十干のうち「みずのと」と読む字は？\n\nA. 壬\nB. 癸\nC. 己\nD. 辛\n\n予想はコメントで教えてください。\n答えと解説はこちら → {link}"
+        }
+      },
+      "notes": "答えB。/articles/shichu/mizunoto/「読み：みずのと」「五行：水」「陰陽：陰」「雨、露」「日干」。兄（え）・弟（と）は /articles/shichu/「陽（兄）と陰（弟）」、読みの由来は Wikipedia「十干と十二支」節「（の）と は（の）おと＝弟」で確認。己=つちのと・辛=かのとは各記事で確認"
+    },
+    {
+      "ext_id": "2026-12-trivia-001",
+      "kind": "trivia",
+      "title": "トルコ石はトルコ産ではない",
+      "link_url": "https://life-fun.net/articles/calendar/birthstone/december/",
+      "bodies": {
+        "threads": {
+          "body": "「トルコ石」なのに、トルコでとれる石ではないって知っていましたか？\n\n12月の誕生石、トルコ石（ターコイズ）。\n名前の由来は産地ではなく、むかし交易の道を通って、トルコ経由でヨーロッパに伝わったことだとされています。\n\n空のような青緑色が特徴で、世界で最も古くから使われてきた宝石の一つ。\n石言葉は「成功、繁栄」です。\n\nトルコ石の石言葉と魅力はこちら → {link}"
+        }
+      },
+      "notes": "/articles/calendar/birthstone/december/ FAQ「産地はトルコではありませんが、かつて交易路を通じてトルコ経由でヨーロッパに伝わったことが名前の由来とされています」「世界で最も古くから使われてきた宝石の一つ」「石言葉は成功、繁栄」"
+    },
+    {
+      "ext_id": "2026-12-trivia-002",
+      "kind": "trivia",
+      "title": "冬至の日から山羊座が始まる",
+      "link_url": "https://life-fun.net/articles/seiza/capricorn/",
+      "bodies": {
+        "threads": {
+          "body": "1年でいちばん昼が短い日に、始まる星座があります。\n\n2026年の冬至は、12月22日。\nそして山羊座は、12月22日〜1月19日生まれの人の星座です。\n\n西洋占星術では、山羊座は冬至から始まる「冬の本番」に対応する星座とされています。\nいちばん暗い時期から、一歩ずつ山を登っていく。\n山羊座の「積み上げる力」のイメージは、ここにも重なります。\n\n山羊座の性格・恋愛・相性はこちら → {link}"
+        }
+      },
+      "notes": "冬至2026-12-22 05:50は国立天文台 暦要項2026（eco.mtk.nao.ac.jp/koyomi/yoko/2026/）で確認。山羊座の期間・「冬至から始まる冬の本番に対応する星座」は /articles/seiza/capricorn/ intro で確認。「昼が短い」は冬至の一般的事実"
+    },
+    {
+      "ext_id": "2026-12-trivia-003",
+      "kind": "trivia",
+      "title": "先負の読み方は2つある",
+      "link_url": "https://life-fun.net/articles/calendar/rokuyo/senbu/",
+      "bodies": {
+        "threads": {
+          "body": "「先負」、なんと読んでいますか？\n\n六曜の「先負」は、「せんぶ」とも「さきまけ」とも読みます。\n意味は「先んずれば即ち負ける」。午前中は凶、午後は吉とされる日です。\n\n実はこの日、昔は「小凶」「周吉」といった別の書き方もされていて、時代を経て「先負」の字が定着したとされています。\n\n先負の由来と過ごし方はこちら → {link}"
+        }
+      },
+      "notes": "/articles/calendar/rokuyo/senbu/「読み方 せんぶ・さきまけ」「先んずれば即ち負ける」「午前中は凶、午後（13時以降）が吉」「もともと『小凶』『周吉』といった異なる表記」。クイズ senbu-kichi-no-jikantai（午後が吉）と同じ記事だが、豆知識は読み方・由来で切り口を分けた"
+    },
+    {
+      "ext_id": "2026-12-trivia-004",
+      "kind": "trivia",
+      "title": "タロット最後の「世界」の次は",
+      "link_url": "https://life-fun.net/articles/tarot/world/",
+      "bodies": {
+        "threads": {
+          "body": "タロットの物語は、終わったあとにまた始まります。\n\n大アルカナ22枚の最後、21番「世界」。\n0番の「愚者」から始まった旅が、ここで完成するカードです。\n\nでも、世界の次に向かうのは、もう一度0番の愚者。\n完成は終わりではなく、新しい旅の入り口とされています。\n\n1年の終わりに思い出したい1枚です。\n\n「世界」のカードの意味はこちら → {link}"
+        }
+      },
+      "notes": "/articles/tarot/world/「大アルカナ最後のカード21番『世界』」「旅の0番『愚者』から始まった22枚の物語が、ここで完結」「世界が次に向かうのは、再び0番の愚者です。完成は終わりではなく、新しい旅の入り口」"
+    },
+    {
+      "ext_id": "2026-12-trivia-005",
+      "kind": "trivia",
+      "title": "二十六夜月は明け方にだけ見える",
+      "link_url": "https://life-fun.net/articles/calendar/moon/nijuurokuya/",
+      "bodies": {
+        "threads": {
+          "body": "夜には見えないのに、名前に「夜」がつく月があります。\n\n「二十六夜月（にじゅうろくやづき）」は、新月の直前、光がごく細くなった月。\n明け方近くに昇り、日の出前の東の空にだけ、わずかに姿を見せます。\n\n占いの考え方では、ひと巡りの締めくくりにあたる、静けさと振り返りの月とされています。\n\n二十六夜月の意味と過ごし方はこちら → {link}"
+        }
+      },
+      "notes": "/articles/calendar/moon/nijuurokuya/「新月の直前、光がごく細くなった月相」「明け方近くに昇り、日の出前の東の空にわずかに見えます。日中は見えないことが多い」「静けさと内省の象徴」。名前の「夜」は旧暦の日付（二十六日の夜）に由来するが、それは記事にないので書かない"
+    },
+    {
+      "ext_id": "2026-12-trivia-006",
+      "kind": "trivia",
+      "title": "「えと」はもともと十干の呼び名",
+      "link_url": "https://life-fun.net/articles/shichu/",
+      "bodies": {
+        "threads": {
+          "body": "「来年のえとは？」の「えと」、もとは十二支のことではないそうです。\n\n甲（きのえ）・乙（きのと）・丙（ひのえ）・丁（ひのと）…\n十干は、五行それぞれを「兄（え）」と「弟（と）」に分けた10の字です。\n\n「えと」という呼び方は、この「え」と「と」から来ているとされています。\n今では十二支を「えと」と呼ぶことが多いですが、もとは十干のほうの呼び名でした。\n\n十干と十二支のしくみはこちら → {link}"
+        }
+      },
+      "notes": "/articles/shichu/「五行それぞれに『陽（兄）』と『陰（弟）』があり、合計10」「干支（えと）として年に使われる」。「えと」の由来はWikipedia「干支」概説「『えと』は十干において…陽陰に応じて『え』『と』の音が入ることに由来し、十二支とは関連のない呼び名」で確認"
+    },
+    {
+      "ext_id": "2026-12-trivia-007",
+      "kind": "trivia",
+      "title": "鳳凰とフェニックスはもとは別の鳥",
+      "link_url": "https://life-fun.net/articles/guardian/hoo/",
+      "bodies": {
+        "threads": {
+          "body": "東洋の「鳳凰」と西洋の「フェニックス」。\n実は、もとは別の鳥だと言われます。\n\n鳳凰は中国や日本の伝承に出てくる霊鳥で、平和と繁栄の訪れを告げる聖なる鳥とされてきました。\n炎の中からよみがえる不死鳥は、西洋のフェニックスの話です。\n\nそれでも二つはよく重ねて語られ、守護霊「鳳凰の守護者」も「再生」の象徴として描かれています。\n\n守護霊「鳳凰の守護者」の解説はこちら → {link}"
+        }
+      },
+      "notes": "Wikipedia「鳳凰」（2026-11-13確認）「中国の鳳凰は西洋のフェニックスとは本来別系統のものであり、特徴も異なる」「しばしば混同される」。平和と繁栄の到来を告げる聖なる鳥・守護霊診断での再生の象徴は /articles/guardian/hoo/"
+    },
+    {
+      "ext_id": "2026-12-trivia-008",
+      "kind": "trivia",
+      "title": "12月25日の誕生花",
+      "link_url": "https://life-fun.net/articles/calendar/birthflower/dec/",
+      "bodies": {
+        "threads": {
+          "body": "クリスマスの日にも、誕生花があります。\n\n12月25日の誕生花は「クリスマスパレード」。花言葉は「博愛」です。\nその前日、12月24日はシンビジューム（花言葉は「飾らない心」）。\n\n誕生花は月ごとではなく、1日ごとに決められています。\n12月には、ポインセチア（4日）やヒイラギ（27日）など、冬らしい植物も並びます。\n\n12月の誕生花の一覧はこちら → {link}"
+        }
+      },
+      "notes": "/articles/calendar/birthflower/dec/ 一覧「24日シンビジューム 飾らない心」「25日クリスマスパレード 博愛」「4日ポインセチア 祝福」「27日ヒイラギ 先見性」。12月の日別ページは e79c9df で noindex を外し済み"
+    },
+    {
+      "ext_id": "2026-12-trivia-009",
+      "kind": "trivia",
+      "title": "大安はもともと「泰安」",
+      "link_url": "https://life-fun.net/articles/calendar/rokuyo/taian/",
+      "bodies": {
+        "threads": {
+          "body": "「大安」は、昔は別の字で書かれていたとされています。\n\nもとの表記は「泰安」。\n「安泰」「平和」を意味する言葉から来ていると言われます。\n\n大安は、六曜の中で唯一「終日吉」とされる日。\n結婚式や結納の日取りを大安に合わせる習慣が定着したのは、明治時代以降とされています。\n\n大安の由来と過ごし方はこちら → {link}"
+        }
+      },
+      "notes": "/articles/calendar/rokuyo/taian/「もともと『泰安』と表記されていたとされ、『安泰』『平和』を意味する言葉から派生」「六曜の中で唯一『終日吉』」「明治時代以降、結婚式や結納の日取りを大安に合わせる慣習が定着」"
+    },
+    {
+      "ext_id": "2026-12-personality-001",
+      "kind": "personality",
+      "title": "大掃除、最初に手をつけるのは？",
+      "link_url": "https://life-fun.net/quiz/oosouji-saisho-ni-te-wo-tsukeru/",
+      "bodies": {
+        "threads": {
+          "body": "年末の大掃除。あなたが最初に手をつけるのは？\n\nA. 机のまわり\nB. キッチン\nC. クローゼット\nD. 玄関\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。性格は断定しない。CTAは /articles/calendar/moon/kagen/（「部屋やデータの整理」「引き算の行動に向いています」）。12/31に下弦の月（国立天文台 3:59）"
+    },
+    {
+      "ext_id": "2026-12-personality-002",
+      "kind": "personality",
+      "title": "クリスマスにもらってうれしいのは？",
+      "link_url": "https://life-fun.net/quiz/kurisumasu-ni-moraitai-mono/",
+      "bodies": {
+        "threads": {
+          "body": "クリスマス、大切な人からもらっていちばんうれしいのは？\n\nA. 形に残るプレゼント\nB. 手書きの手紙\nC. 一緒に出かける時間\nD. 思いがけないサプライズ\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは /love（恋愛傾向診断：MBTI×血液型×星座）。愛情の受け取り方の話なので恋愛傾向につなげる"
+    },
+    {
+      "ext_id": "2026-12-personality-003",
+      "kind": "personality",
+      "title": "冬の休日、どう過ごしたい？",
+      "link_url": "https://life-fun.net/quiz/fuyu-no-kyuujitsu-sugosu-nara/",
+      "bodies": {
+        "threads": {
+          "body": "寒い冬の休日。あなたが過ごしたいのは？\n\nA. こたつで映画を見る\nB. 温泉に行く\nC. 雪の降る場所へ出かける\nD. カフェで本を読む\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは新設の心理テスト /adventure-quiz（「選ぶ」体験つながり）。説明は adventure-quiz.php の description に合わせた"
+    },
+    {
+      "ext_id": "2026-12-personality-004",
+      "kind": "personality",
+      "title": "忘年会での役まわりは？",
+      "link_url": "https://life-fun.net/quiz/bounenkai-de-no-ichi/",
+      "bodies": {
+        "threads": {
+          "body": "忘年会。気づくと、あなたはどんな役まわりをしている？\n\nA. 乾杯や締めのあいさつ\nB. 料理の取り分け\nC. じっくり話を聞く\nD. 場を盛り上げる\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは /mbti（10問のMBTI×星座診断。説明は mbti.php の description に合わせた）。問いかけの型は解説ごとに変えた"
+    },
+    {
+      "ext_id": "2026-12-personality-005",
+      "kind": "personality",
+      "title": "今年の自分を漢字1字で表すなら？",
+      "link_url": "https://life-fun.net/quiz/kotoshi-wo-kanji-hitomoji-de/",
+      "bodies": {
+        "threads": {
+          "body": "今年1年の自分を、漢字1字で表すなら？\n\nA. 進\nB. 耐\nC. 楽\nD. 新\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは /seimei（漢字つながり。五格で鑑定）。今年の漢字（日本漢字能力検定協会）の名前は出さない"
+    },
+    {
+      "ext_id": "2026-12-personality-006",
+      "kind": "personality",
+      "title": "冬の夜空で見たいものは？",
+      "link_url": "https://life-fun.net/quiz/fuyu-no-yozora-de-mitai-mono/",
+      "bodies": {
+        "threads": {
+          "body": "空気の澄んだ冬の夜。いちばん見たいものは？\n\nA. まんまるの満月\nB. 流れ星\nC. オリオン座\nD. 満天の星\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは /seiza（星つながり）。「冬は空気が澄んで夜空がきれいに見えやすい」は「と言われます」でぼかした。オリオン座の三つ星は一般的事実"
+    },
+    {
+      "ext_id": "2026-12-personality-007",
+      "kind": "personality",
+      "title": "初詣で最初にお願いするのは？",
+      "link_url": "https://life-fun.net/quiz/hatsumoude-de-onegai-suru-koto/",
+      "bodies": {
+        "threads": {
+          "body": "初詣。手を合わせて、あなたが最初にお願いするのは？\n\nA. 健康\nB. 仕事や勉強\nC. 恋愛や人間関係\nD. お金\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは /shichu（新しい年の運の流れ＝大運）。shichu.php の description「命式・十神・大運をすべて表示」"
+    },
+    {
+      "ext_id": "2026-12-personality-008",
+      "kind": "personality",
+      "title": "大晦日の夜、どう過ごしたい？",
+      "link_url": "https://life-fun.net/quiz/oomisoka-no-yoru/",
+      "bodies": {
+        "threads": {
+          "body": "大晦日の夜。あなたはどう過ごしたい？\n\nA. 家族とゆっくり\nB. 友だちとカウントダウン\nC. 早めに寝て初日の出\nD. ひとりで1年をふり返る\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは /calendar（年末年始の暦）"
+    },
+    {
+      "ext_id": "2026-12-personality-009",
+      "kind": "personality",
+      "title": "来年、新しく始めてみたいのは？",
+      "link_url": "https://life-fun.net/quiz/rainen-hajimetai-koto/",
+      "bodies": {
+        "threads": {
+          "body": "来年、新しく始めてみたいのは？\n\nA. 習いごと\nB. ひとり旅\nC. 運動\nD. 貯金\n\nあなたはどれ？コメントで教えてください。\n選んだ答えの解説はこちら → {link}"
+        }
+      },
+      "notes": "A系統。CTAは /numerology（ライフパス＝人生の流れ。既存クイズと同じラベル）"
+    },
+    {
+      "ext_id": "2026-12-guide-001",
+      "kind": "guide",
+      "title": "開運カレンダーの案内（年末年始）",
+      "link_url": "https://life-fun.net/calendar",
+      "bodies": {
+        "threads": {
+          "body": "大掃除、年賀状、初詣。年末年始の予定、どの日にしますか？\n\n開運カレンダーでは、毎日の六曜や十二支、一粒万倍日・天赦日などの吉日、月齢、その日のラッキーカラーまで、1日ずつ確かめられます。\n\n日付を押すと、その日の詳しい暦も見られます。\n\n無料で見られます → {link}"
+        }
+      },
+      "notes": "calendar.php・calendar-day.php の表示内容（六曜・十二支・吉日・月齢・ラッキーカラー・日別詳細）は DayInfoService の項目で確認（memory: 開運カレンダー改修）。個別の日付は書かない"
+    },
+    {
+      "ext_id": "2026-12-guide-002",
+      "kind": "guide",
+      "title": "心理テスト「冒険の分かれ道」の案内",
+      "link_url": "https://life-fun.net/adventure-quiz",
+      "bodies": {
+        "threads": {
+          "body": "知らない森の入口で、道が2つに分かれています。あなたはどちらへ進みますか？\n\n心理テスト「冒険の分かれ道」は、12の冒険の場面を直感で選んでいくだけ。\n探求心・共感性・理論力・行動力・安定感の5つの視点から、あなたの傾向をレーダーチャートで見られます。\n\nゲームとして楽しむための目安です。\n\n無料で遊べます → {link}"
+        }
+      },
+      "notes": "adventure-quiz.php の description「12の冒険シナリオを直感で選ぶ」「探求心・共感性・理論力・行動力・安定感の5つの視点」「レーダーチャート」「ゲームとして楽しむための目安」。1行目は場面1「未知の森の入口で、道が2つに分かれています」に合わせた"
+    },
+    {
+      "ext_id": "2026-12-guide-003",
+      "kind": "guide",
+      "title": "恋愛傾向診断の案内",
+      "link_url": "https://life-fun.net/love",
+      "bodies": {
+        "threads": {
+          "body": "MBTI、血液型、星座。恋愛の傾向を見るなら、どれがいちばん当たると思いますか？\n\nみつぼし占いの恋愛傾向診断は、その3つをまとめて入力。\n組み合わせから、あなたの恋愛スタイルや傾向をひも解きます。\n\n占いは結果を約束するものではありません。自分を知るきっかけに。\n\n無料で診断できます → {link}"
+        }
+      },
+      "notes": "love.php の description「MBTI×血液型×星座で導く恋愛傾向診断。3つの入力からあなたの恋愛スタイル・傾向をひも解きます」"
+    },
+    {
+      "ext_id": "2026-12-guide-004",
+      "kind": "guide",
+      "title": "数秘術の案内（新しい年に）",
+      "link_url": "https://life-fun.net/numerology",
+      "bodies": {
+        "threads": {
+          "body": "生年月日の数字を足すと、あなたの数が出てきます。\n\n数秘術では、生年月日と名前から、ライフパス・誕生日・運命数・ソウルナンバーの4つの数を出して、あなたの本質や向いていることを読み解きます。\n\n新しい年を迎える前に、自分の数字を知っておくのはどうでしょう。\n\n無料で診断できます → {link}"
+        }
+      },
+      "notes": "numerology.php の description「生年月日と名前から4つの数秘術ナンバーを算出。ライフパス・誕生日・運命数・ソウルナンバー」"
+    }
+  ]
+}
