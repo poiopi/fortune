@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'oomisoka-no-yoru',
   'series'       => 'A',
+  'themes'       => ['kisetsu'],
+  'season'       => [12],
   'number'       => 56,
   'published_at' => '2026-11-13',
 

@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'mayotta-toki-no-kimekata',
   'series'       => 'A',
+  'themes'       => ['jibun'],
+  'season'       => [],
   'number'       => 30,
   'published_at' => '2026-10-28',
 

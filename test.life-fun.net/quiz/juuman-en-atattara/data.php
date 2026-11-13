@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'juuman-en-atattara',
   'series'       => 'A',
+  'themes'       => ['kinun', 'jibun'],
+  'season'       => [],
   'number'       => 34,
   'published_at' => '2026-10-28',
 

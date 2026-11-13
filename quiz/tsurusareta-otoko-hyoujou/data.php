@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'tsurusareta-otoko-hyoujou',
   'series'       => 'B',
+  'themes'       => ['mame'],
+  'season'       => [],
   'number'       => 7,
   'published_at' => '2026-10-28',
 

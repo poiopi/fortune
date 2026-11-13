@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'othello-joban-no-uchikata',
   'series'       => 'A',
+  'themes'       => ['jibun'],
+  'season'       => [],
   'number'       => 31,
   'published_at' => '2026-10-28',
 

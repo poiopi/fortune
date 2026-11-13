@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'heya-no-muki-erabu-nara',
   'series'       => 'A',
+  'themes'       => ['jibun'],
+  'season'       => [],
   'number'       => 36,
   'published_at' => '2026-10-28',
 

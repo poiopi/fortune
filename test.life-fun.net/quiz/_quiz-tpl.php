@@ -228,7 +228,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
   <?php if (!$_isResult): ?>
   <!-- ① 問題ページ -->
   <section class="quiz-hero">
-    <span class="quiz-eyebrow">Daily Quiz #<?= $_numberStr ?></span>
+    <span class="quiz-eyebrow">みつぼしの4択 <span style="text-transform:none">No.<?= $_numberStr ?></span></span>
     <h1><?= htmlspecialchars($quiz['question'], ENT_QUOTES, 'UTF-8') ?></h1>
     <p class="quiz-lead"><?= nl2br(htmlspecialchars($quiz['lead'], ENT_QUOTES, 'UTF-8')) ?></p>
   </section>
@@ -243,7 +243,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
     <?php endforeach; ?>
   </section>
 
-  <nav class="quiz-back-to-hub" aria-label="クイズ内の移動"><a href="/quiz/">クイズ一覧へ</a></nav>
+  <nav class="quiz-back-to-hub" aria-label="みつぼしの4択内の移動"><a href="/quiz/">4択の一覧へ</a></nav>
 
   <script>
   function quizAnswer(el, choice){
@@ -257,7 +257,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
   <?php else: ?>
   <!-- ② 回答結果ページ -->
   <section class="quiz-hero">
-    <span class="quiz-eyebrow">Daily Quiz #<?= $_numberStr ?> · 結果</span>
+    <span class="quiz-eyebrow">みつぼしの4択 <span style="text-transform:none">No.<?= $_numberStr ?></span> · 結果</span>
     <h1><?= htmlspecialchars($quiz['question'], ENT_QUOTES, 'UTF-8') ?></h1>
   </section>
 
@@ -274,9 +274,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
     <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/kaisetsu/?a=<?= $quizChoice ?>" class="quiz-btn-primary">解説を見る →</a>
   </section>
 
-  <nav class="quiz-back-to-hub" aria-label="クイズ内の移動">
+  <nav class="quiz-back-to-hub" aria-label="みつぼしの4択内の移動">
     <a href="/quiz/<?= htmlspecialchars($quiz['slug']) ?>/">← 問題にもどる</a>
-    <a href="/quiz/">クイズ一覧へ</a>
+    <a href="/quiz/">4択の一覧へ</a>
   </nav>
 
   <?php require __DIR__ . '/../inc/share-btns.php'; ?>

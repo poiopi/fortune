@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'hatsumoude-de-onegai-suru-koto',
   'series'       => 'A',
+  'themes'       => ['kisetsu'],
+  'season'       => [1],
   'number'       => 55,
   'published_at' => '2026-11-13',
 

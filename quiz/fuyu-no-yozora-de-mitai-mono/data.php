@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'fuyu-no-yozora-de-mitai-mono',
   'series'       => 'A',
+  'themes'       => ['kisetsu'],
+  'season'       => [12, 1, 2],
   'number'       => 54,
   'published_at' => '2026-11-13',
 

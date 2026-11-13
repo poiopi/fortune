@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'juunigatsu-nijuugonichi-no-seiza',
   'series'       => 'B',
+  'themes'       => ['mame'],
+  'season'       => [12],
   'number'       => 41,
   'published_at' => '2026-11-13',
 

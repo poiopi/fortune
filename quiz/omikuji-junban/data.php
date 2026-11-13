@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'omikuji-junban',
   'series'       => 'B',
+  'themes'       => ['kisetsu'],
+  'season'       => [],
   'number'       => 6,
   'published_at' => '2026-09-17',
 

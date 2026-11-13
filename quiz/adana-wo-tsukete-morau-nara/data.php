@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'adana-wo-tsukete-morau-nara',
   'series'       => 'A',
+  'themes'       => ['renai'],
+  'season'       => [],
   'number'       => 28,
   'published_at' => '2026-10-28',
 

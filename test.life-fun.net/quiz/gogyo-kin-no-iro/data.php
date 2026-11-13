@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'gogyo-kin-no-iro',
   'series'       => 'B',
+  'themes'       => ['mame'],
+  'season'       => [],
   'number'       => 45,
   'published_at' => '2026-11-13',
 

@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'rpg-de-erabu-shokugyou',
   'series'       => 'A',
+  'themes'       => ['jibun'],
+  'season'       => [],
   'number'       => 25,
   'published_at' => '2026-10-28',
 

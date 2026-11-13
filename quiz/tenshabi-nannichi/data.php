@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'tenshabi-nannichi',
   'series'       => 'B',
+  'themes'       => ['kinun'],
+  'season'       => [],
   'number'       => 19,
   'published_at' => '2026-10-28',
 

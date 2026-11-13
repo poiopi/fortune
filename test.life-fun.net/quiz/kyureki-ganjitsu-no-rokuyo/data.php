@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'kyureki-ganjitsu-no-rokuyo',
   'series'       => 'B',
+  'themes'       => ['kinun'],
+  'season'       => [],
   'number'       => 12,
   'published_at' => '2026-10-28',
 

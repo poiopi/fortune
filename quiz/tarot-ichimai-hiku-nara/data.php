@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'tarot-ichimai-hiku-nara',
   'series'       => 'A',
+  'themes'       => ['jibun'],
+  'season'       => [],
   'number'       => 29,
   'published_at' => '2026-10-28',
 

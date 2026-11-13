@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'kotoshi-wo-kanji-hitomoji-de',
   'series'       => 'A',
+  'themes'       => ['jibun', 'kisetsu'],
+  'season'       => [12],
   'number'       => 53,
   'published_at' => '2026-11-13',
 

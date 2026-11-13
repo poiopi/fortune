@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'tarot-zero-ban-no-card',
   'series'       => 'B',
+  'themes'       => ['mame'],
+  'season'       => [],
   'number'       => 8,
   'published_at' => '2026-10-28',
 

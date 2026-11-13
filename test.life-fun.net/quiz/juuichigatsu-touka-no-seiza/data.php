@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'juuichigatsu-touka-no-seiza',
   'series'       => 'B',
+  'themes'       => ['mame'],
+  'season'       => [11],
   'number'       => 22,
   'published_at' => '2026-10-28',
 

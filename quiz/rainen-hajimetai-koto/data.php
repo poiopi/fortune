@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'rainen-hajimetai-koto',
   'series'       => 'A',
+  'themes'       => ['jibun', 'kisetsu'],
+  'season'       => [12, 1],
   'number'       => 57,
   'published_at' => '2026-11-13',
 

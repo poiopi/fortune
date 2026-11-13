@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'kurisumasu-ni-moraitai-mono',
   'series'       => 'A',
+  'themes'       => ['renai', 'kisetsu'],
+  'season'       => [12],
   'number'       => 50,
   'published_at' => '2026-11-13',
 

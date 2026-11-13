@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'tsuchinotomi-no-hi-yomikata',
   'series'       => 'B',
+  'themes'       => ['kinun', 'mame'],
+  'season'       => [],
   'number'       => 11,
   'published_at' => '2026-10-28',
 

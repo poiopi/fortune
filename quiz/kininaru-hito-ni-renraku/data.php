@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'kininaru-hito-ni-renraku',
   'series'       => 'A',
+  'themes'       => ['renai'],
+  'season'       => [],
   'number'       => 39,
   'published_at' => '2026-10-28',
 

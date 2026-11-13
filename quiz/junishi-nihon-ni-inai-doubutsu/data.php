@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'junishi-nihon-ni-inai-doubutsu',
   'series'       => 'B',
+  'themes'       => ['mame'],
+  'season'       => [],
   'number'       => 4,
   'published_at' => '2026-09-15',
 

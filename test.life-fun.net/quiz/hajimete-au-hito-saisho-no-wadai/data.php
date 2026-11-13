@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'hajimete-au-hito-saisho-no-wadai',
   'series'       => 'A',
+  'themes'       => ['renai'],
+  'season'       => [],
   'number'       => 24,
   'published_at' => '2026-10-28',
 

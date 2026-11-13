@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'hatsutaimen-saisho-ni-miru-mono',
   'series'       => 'A',
+  'themes'       => ['renai'],
+  'season'       => [],
   'number'       => 1,
   'published_at' => '2026-09-12',
 

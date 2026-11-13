@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'doyo-no-ushi-unagi',
   'series'       => 'B',
+  'themes'       => ['kisetsu'],
+  'season'       => [7],
   'number'       => 5,
   'published_at' => '2026-09-16',
 

@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'ryokou-no-keikaku-kakari',
   'series'       => 'A',
+  'themes'       => ['renai'],
+  'season'       => [],
   'number'       => 33,
   'published_at' => '2026-10-28',
 

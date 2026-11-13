@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'fuyu-no-kyuujitsu-sugosu-nara',
   'series'       => 'A',
+  'themes'       => ['kisetsu'],
+  'season'       => [12, 1, 2],
   'number'       => 51,
   'published_at' => '2026-11-13',
 

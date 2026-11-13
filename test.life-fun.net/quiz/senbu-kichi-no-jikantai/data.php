@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'senbu-kichi-no-jikantai',
   'series'       => 'B',
+  'themes'       => ['kinun'],
+  'season'       => [],
   'number'       => 44,
   'published_at' => '2026-11-13',
 

@@ -5,6 +5,8 @@ require_once __DIR__ . '/../../inc/site.php';
 return [
   'slug'         => 'kyusei-ichigatsu-umare-no-honmeisei',
   'series'       => 'B',
+  'themes'       => ['mame'],
+  'season'       => [1],
   'number'       => 46,
   'published_at' => '2026-11-13',
 
