@@ -10,6 +10,45 @@ $luckyItems = getLuckyItems($todayStr);
 
 $weekdayJp = ['日','月','火','水','木','金','土'];
 $oracleDateLabel = $today->format('Y年n月j日').'（'.$weekdayJp[(int)$today->format('w')].'）';
+
+// ── Hero「今日のお楽しみ」（2026-11-13）：今日の暦（日めくり）と今日の4択（おみくじ札）
+require_once __DIR__.'/inc/dayinfo/DayInfoService.php';
+require_once __DIR__.'/quiz/_list.php';
+/** 1〜999 を漢数字に（十一、五十七 など） */
+function ht_kanji_num(int $n): string {
+    $d = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+    $s = '';
+    foreach ([100 => '百', 10 => '十'] as $unit => $kanji) {
+        $q = intdiv($n, $unit);
+        if ($q > 0) { $s .= ($q > 1 ? $d[$q] : '').$kanji; }
+        $n %= $unit;
+    }
+    return $s.$d[$n];
+}
+$_htInfo    = getDayInfo($today);
+$_htRokuyo  = $_htInfo['sections']['rokuyo']['name'] ?? $rokuyo['name'];
+$_htMonth   = ht_kanji_num((int)$today->format('n')).'月';
+$_htWeekday = $weekdayJp[(int)$today->format('w')].'曜日';
+// 六曜ごとの短い一言（DayInfoServiceの説明文を短くしたもの）
+$_htRokuyoShort = [
+    '大安' => ['吉', '終日・万事'],
+    '先勝' => ['吉', '午前・急ぎ事'],
+    '友引' => ['吉', '朝夕・慶事'],
+    '先負' => ['吉', '午後・静かに'],
+    '赤口' => ['吉', '正午ごろ'],
+    '仏滅' => ['心', '控えめに'],
+];
+$_htKichi = array_column($_htInfo['sections']['kichijitsu']['days'] ?? [], 'name');
+$_htMoon  = $_htInfo['sections']['moon']['phase_name'] ?? '';
+$_htColor = $_htInfo['sections']['lucky']['color']['name'] ?? '';
+$_htRows  = [];
+$_htRows[] = $_htKichi !== [] ? ['吉', implode('・', $_htKichi)] : ($_htRokuyoShort[$_htRokuyo] ?? ['吉', '']);
+if ($_htMoon !== '')  { $_htRows[] = ['月', $_htMoon]; }
+if ($_htColor !== '') { $_htRows[] = ['色', $_htColor]; }
+// スマホでは上の3行の代わりに1行の添え書きを出す（吉日があれば吉日を優先）
+$_htNote = $_htKichi !== [] ? implode('・', $_htKichi) : implode('・', array_filter([$_htMoon, $_htColor], fn($v) => $v !== ''));
+$_htQuiz    = quiz_of_the_day($today);
+$_htQuizTag = $_htQuiz !== null ? (quiz_theme_labels()[$_htQuiz['themes'][0] ?? '']['label'] ?? 'みつぼしの4択') : '';
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -120,7 +159,7 @@ body {
 
 /* ══ セクション区切り ══ */
 .parallax-band {
-  height: 64px;
+  height: 36px;
   display: flex; align-items: center; justify-content: center;
 }
 .pb-content {
@@ -156,7 +195,6 @@ body {
 ══════════════════════════════════ */
 .hero {
   position: relative;
-  min-height: 100svh;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   overflow: hidden;
@@ -175,8 +213,8 @@ body {
 .hero-inner {
   position: relative; z-index: 3;
   text-align: center;
-  padding: 1.5rem 1.2rem 7rem;
-  max-width: 680px;
+  padding: 1rem 1.2rem .8rem;
+  max-width: 1100px;
   width: 100%;
 }
 .hero-inner > * {
@@ -195,7 +233,7 @@ body {
 .hero-eyebrow { font-family: var(--ff-mono); font-size: .62rem; letter-spacing: .35em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: .8rem; }
 .hero-deco {
   display: flex; align-items: center; justify-content: center; gap: 8px;
-  margin: 0 auto .9rem; max-width: 240px;
+  margin: 0 auto .6rem; max-width: 240px;
 }
 .hero-deco::before, .hero-deco::after {
   content: ''; flex: 1; height: 1px;
@@ -215,38 +253,119 @@ body {
   text-shadow: none;
 }
 .hero-h1-desc { display: block; font-size: .4em; letter-spacing: .3em; margin-top: .55rem; font-weight: 600; }
-.hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.5rem; }
-.hero-flagship-card {
-  position: relative;
-  max-width: 640px;
-  margin: 0 auto 1.6rem;
-  padding: 3.2rem 3rem 2.6rem;
-  border: 1px solid rgba(201,168,76,.35);
-  border-radius: 16px;
-  background: var(--panel);
-  box-shadow: 0 24px 60px rgba(0,0,0,.45);
-  overflow: hidden;
+.hero-sub { font-size: .88rem; color: rgba(200,190,230,.5); letter-spacing: .1em; display: block; margin-bottom: 1.15rem; }
+/* 三星統合鑑定カード（2026-11-13改訂。DESIGN.md「フラッグシップカード」） */
+.hf-sp{display:none}
+.hero-flagship-card{position:relative;max-width:640px;margin:0 auto 1.5rem;padding:.95rem 2.4rem 1.05rem;
+ border:1px solid rgba(201,168,76,.42);border-radius:16px;
+ background:radial-gradient(120% 90% at 50% 0%,rgba(201,168,76,.10),transparent 55%),
+            radial-gradient(80% 70% at 50% 120%,rgba(122,74,158,.22),transparent 60%),var(--panel);
+ box-shadow:0 24px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(232,212,138,.12);text-align:center}
+.hf-frame{position:absolute;inset:7px;border:1px solid rgba(201,168,76,.16);border-radius:11px;pointer-events:none}
+.hf-orn{position:absolute;width:30px;height:30px;color:var(--gold);opacity:.75}
+.hf-orn:nth-child(1){top:4px;left:4px}
+.hf-orn:nth-child(2){top:4px;right:4px;transform:scaleX(-1)}
+.hf-orn:nth-child(3){bottom:4px;left:4px;transform:scaleY(-1)}
+.hf-orn:nth-child(4){bottom:4px;right:4px;transform:scale(-1,-1)}
+.hf-crest{display:flex;align-items:center;justify-content:center;gap:1rem;margin:0 auto .15rem}
+.hf-rule{display:flex;align-items:center;gap:.8rem;width:150px;font-family:var(--ff-mono);font-size:.58rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.hf-rule:first-child{justify-content:flex-end}
+.hf-rule:first-child::before,.hf-rule:last-child::after{content:'';flex:1;height:1px}
+.hf-rule:first-child::before{background:linear-gradient(90deg,transparent,rgba(201,168,76,.55))}
+.hf-rule:last-child::after{background:linear-gradient(270deg,transparent,rgba(201,168,76,.55))}
+.hf-emblem{width:88px;height:88px;display:block;margin:-6px 0 -4px;filter:brightness(1.75) saturate(1.1) drop-shadow(0 0 14px rgba(201,168,76,.45))}
+.hf-title{font-family:var(--ff-serif);font-size:1.85rem;font-weight:700;letter-spacing:.16em;line-height:1.3;background:linear-gradient(180deg,#fbf3dc 30%,#d8bd78);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-indent:.16em;margin-bottom:.4rem}
+.hf-methods{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-bottom:.45rem;font-family:var(--ff-serif);font-size:.74rem;letter-spacing:.08em;color:var(--text-secondary)}
+.hf-methods span{display:inline-flex;align-items:center;gap:.35rem}
+.hf-methods img{width:20px;height:20px}
+.hf-methods i{width:3px;height:3px;background:var(--gold);transform:rotate(45deg);opacity:.7}
+.hf-desc{font-size:.8rem;line-height:1.75;color:var(--text-secondary);margin-bottom:.85rem;letter-spacing:.03em}
+.hf-btn{padding:.72rem 2.3rem;font-size:.9rem;letter-spacing:.14em}
+.hf-btn span{display:inline-block;margin-left:.3rem}
+.hf-trust{margin-top:.6rem;font-size:.66rem;letter-spacing:.08em;color:var(--muted);display:flex;justify-content:center;align-items:center;gap:.7rem}
+.hf-trust b{width:3px;height:3px;border-radius:50%;background:rgba(201,168,76,.55)}
+@media (max-width:639px){
+ .hf-sp{display:inline}
+ .hero-flagship-card{padding:.95rem 1.2rem 1rem;margin-bottom:1.25rem}
+ .hf-frame{inset:5px;border-radius:12px}
+ .hf-orn{width:24px;height:24px}
+ .hf-rule{width:92px;font-size:.5rem;letter-spacing:.24em;gap:.5rem}
+ .hf-crest{gap:.6rem}
+ .hf-emblem{width:70px;height:70px;margin:-4px 0 -2px}
+ .hf-title{font-size:1.45rem;letter-spacing:.12em;margin-bottom:.3rem}
+ .hf-methods{font-size:.66rem;gap:.45rem;letter-spacing:.02em}
+ .hf-methods img{width:18px;height:18px}
+ .hf-desc{font-size:.74rem;line-height:1.65;margin-bottom:.7rem}
+ .hf-btn{padding:.7rem 1.6rem;font-size:.86rem;letter-spacing:.1em}
+ .hf-trust{font-size:.62rem;gap:.5rem;margin-top:.5rem}
 }
-.hf-corner { position: absolute; width: 220px; height: auto; opacity: .85; pointer-events: none; }
-.hf-corner-tl { top: -8px; left: -8px; }
-.hf-corner-tr { top: -8px; right: -8px; transform: scaleX(-1); }
-.hf-corner-bl { bottom: -8px; left: -8px; transform: scaleY(-1); }
-.hf-corner-br { bottom: -8px; right: -8px; transform: scale(-1,-1); }
-.hf-content { position: relative; }
-.hf-eyebrow { display: block; text-align: center; font-family: var(--ff-mono); font-size: .6rem; letter-spacing: .32em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.6rem; }
-.hf-emblem { width: 150px; margin: 0 auto 1.4rem; }
-.hf-emblem img { width: 100%; height: auto; display: block; filter: drop-shadow(0 0 22px rgba(201,168,76,.22)); }
-.hf-title { text-align: center; font-family: var(--ff-serif); font-size: 1.9rem; font-weight: 700; color: var(--text); letter-spacing: .08em; margin-bottom: .9rem; }
-.hf-desc { text-align: center; margin: 0 auto 1.6rem; max-width: 30rem; font-size: .85rem; line-height: 1.9; color: var(--text-secondary); }
-.hf-tags { display: flex; align-items: center; justify-content: center; gap: .6rem; flex-wrap: wrap; margin-bottom: 2.2rem; }
-.hf-tag { padding: .55rem 1.2rem; border: 1px solid rgba(201,168,76,.4); border-radius: 20px; font-family: var(--ff-mono); font-size: .65rem; letter-spacing: .04em; color: var(--gold-lt); }
-.hf-methods { display: flex; align-items: flex-start; justify-content: center; gap: 2.6rem; margin-bottom: 2.2rem; }
-.hf-method { display: flex; flex-direction: column; align-items: center; gap: .55rem; }
-.hf-method-icon { width: 74px; height: 74px; }
-.hf-method-icon img { width: 100%; height: 100%; object-fit: contain; display: block; filter: drop-shadow(0 3px 10px rgba(0,0,0,.4)); }
-.hf-method-label { font-family: var(--ff-mono); font-size: .65rem; letter-spacing: .04em; color: var(--text-secondary); }
-.hf-cta-wrap { text-align: center; }
-.hf-trust { margin-top: .9rem; font-family: var(--ff-mono); font-size: .62rem; letter-spacing: .04em; color: var(--muted); }
+/* 今日のお楽しみ（2026-11-13新設。DESIGN.md「今日のお楽しみ」） */
+.hero-today{max-width:1040px;margin:0 auto 1.6rem}
+.ht-head{display:flex;align-items:baseline;justify-content:center;gap:.9rem;margin:0 0 .8rem}
+.ht-h{font-family:var(--ff-serif);font-size:.92rem;font-weight:600;letter-spacing:.24em;color:#e9dfc6}
+.ht-s{font-size:.68rem;letter-spacing:.08em;color:var(--muted)}
+.ht-head::before,.ht-head::after{content:'';flex:0 0 46px;height:1px;align-self:center;background:linear-gradient(90deg,transparent,rgba(233,223,198,.35))}
+.ht-head::after{background:linear-gradient(270deg,transparent,rgba(233,223,198,.35))}
+.ht-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;text-align:left}
+.ht-item{display:block;text-decoration:none;color:inherit;filter:drop-shadow(0 10px 18px rgba(0,0,0,.45));transition:transform .2s}
+.ht-item:hover{transform:translateY(-2px)}
+.ht-paper{--ink:#2d2433;--ink2:#6e6253;--shu:#a8432f;position:relative;height:100%;color:var(--ink);
+ background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32 0 0 0 0 .25 0 0 0 0 .16 0 0 0 .11 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.012 .09' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .3 0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23f)'/></svg>"),linear-gradient(180deg,#e6dcc5,#dbcfb4);}
+.ht-hm{padding:.95rem 1.1rem .7rem;border-radius:2px 2px 4px 4px;
+ -webkit-mask:radial-gradient(circle at 5px 0,transparent 2.2px,#000 2.6px) 0 0/10px 100% repeat-x;
+         mask:radial-gradient(circle at 5px 0,transparent 2.2px,#000 2.6px) 0 0/10px 100% repeat-x}
+.ht-cal{position:relative}
+.ht-cal::before,.ht-cal::after{content:'';position:absolute;left:3px;right:3px;bottom:-3px;height:10px;background:#cdbf9f;border-radius:0 0 4px 4px;z-index:-1}
+.ht-cal::after{left:6px;right:6px;bottom:-6px;background:#b3a582}
+.ht-hm-top{display:flex;justify-content:space-between;font-family:var(--ff-serif);font-size:.66rem;letter-spacing:.14em;color:var(--ink2);padding-bottom:.35rem;border-bottom:1px solid rgba(45,36,51,.18)}
+.ht-hm-body{display:flex;align-items:center;gap:1rem;padding:.35rem 0 .3rem}
+.ht-hm-day{font-family:var(--ff-serif);font-weight:700;font-size:3.4rem;line-height:1;letter-spacing:-.02em;color:var(--ink);padding:0 .1rem}
+.ht-hm-side{flex:1;display:flex;align-items:center;gap:.8rem;justify-content:space-between}
+.ht-hm-stamp{writing-mode:vertical-rl;font-family:var(--ff-serif);font-weight:700;font-size:.9rem;letter-spacing:.14em;color:var(--shu);border:1.5px solid var(--shu);border-radius:3px;padding:.35rem .15rem;line-height:1;opacity:.92;transform:rotate(-2deg)}
+.ht-hm-dl{display:grid;gap:.08rem;font-size:.66rem;line-height:1.6;color:var(--ink)}
+.ht-hm-dl div{display:flex;gap:.4rem}
+.ht-hm-dl dt{font-family:var(--ff-serif);color:var(--shu);font-weight:600}
+.ht-hm-dl dd{margin:0}
+.ht-hm-note{display:none}
+.ht-hm-foot,.ht-mk-foot{display:flex;justify-content:flex-end;align-items:center;gap:.35rem;font-family:var(--ff-serif);font-size:.68rem;font-weight:600;letter-spacing:.1em;color:var(--ink2)}
+.ht-hm-foot{border-top:1px dashed rgba(45,36,51,.2);padding-top:.4rem}
+.ht-hm-foot span,.ht-mk-foot span{color:var(--shu)}
+.ht-mk{display:flex;border-radius:3px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32 0 0 0 0 .25 0 0 0 0 .16 0 0 0 .11 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.012 .09' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .3 0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23f)'/></svg>"),linear-gradient(90deg,#e9e0cb,#e0d5bd 57%,#d6caae 58.5%,#e2d8c1 60%,#ddd2b9)}
+.ht-mk-band{flex:0 0 38px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:.75rem 0 .6rem;background:linear-gradient(180deg,#3a2950,#2b1f3d);color:#e8d48a;border-radius:3px 0 0 3px}
+.ht-mk-v{writing-mode:vertical-rl;font-family:var(--ff-serif);font-size:.74rem;font-weight:600;letter-spacing:.22em}
+.ht-mk-no{writing-mode:vertical-rl;font-family:var(--ff-serif);font-size:.6rem;letter-spacing:.12em;color:rgba(232,212,138,.7);border-top:1px solid rgba(232,212,138,.35);padding-top:.35rem}
+.ht-mk-body{flex:1;display:flex;flex-direction:column;padding:.85rem 1rem .7rem 1rem}
+.ht-mk-tag{align-self:flex-start;font-size:.6rem;letter-spacing:.12em;color:var(--ink2);border-bottom:1px solid rgba(168,67,47,.5);padding-bottom:.05rem;margin-bottom:.45rem}
+.ht-tcy{text-combine-upright:all}
+.ht-mk-q{word-break:auto-phrase;text-wrap:balance;flex:1;font-family:var(--ff-serif);font-size:.98rem;font-weight:600;line-height:1.7;color:var(--ink);letter-spacing:.02em;margin:0 0 .4rem}
+@media (max-width:639px){
+ .hero-today{margin-bottom:1.3rem}
+ .ht-head{gap:.6rem;margin-bottom:.6rem}
+ .ht-head::before,.ht-head::after{flex-basis:22px}
+ .ht-h{font-size:.84rem;letter-spacing:.18em}
+ .ht-s{display:none}
+ .ht-grid{gap:.7rem;grid-template-columns:.9fr 1.1fr}
+ .ht-hm{padding:.75rem .7rem .55rem}
+ .ht-hm-top{font-size:.56rem;letter-spacing:.06em}
+ .ht-hm-top span:first-child{display:none}
+ .ht-hm-note{display:block;font-size:.62rem;color:var(--ink2);letter-spacing:.02em;padding:.1rem 0 .35rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .ht-hm-body{gap:.55rem}
+ .ht-hm-side{flex:0 0 auto}
+ .ht-hm-body{gap:.4rem;padding:.3rem 0 .25rem}
+ .ht-hm-day{font-size:2.5rem}
+ .ht-hm-side{gap:.4rem}
+ .ht-hm-stamp{font-size:.78rem;padding:.3rem .1rem}
+ .ht-hm-dl{display:none}
+ .ht-hm-side{justify-content:flex-start}
+ .ht-hm-foot,.ht-mk-foot{font-size:.6rem;letter-spacing:.04em}
+ .ht-mk-band{flex-basis:28px;padding:.6rem 0 .5rem}
+ .ht-mk-v{font-size:.64rem;letter-spacing:.14em}
+ .ht-mk-body{padding:.65rem .55rem .55rem}
+ .ht-mk-tag{font-size:.6rem;margin-bottom:.3rem}
+ .ht-mk-q{font-size:.74rem;line-height:1.6}
+ .hero-sub{font-size:.8rem;letter-spacing:.04em}
+}
+
 .btn-gold {
   padding: .78rem 2rem;
   background: linear-gradient(135deg, var(--gold), var(--gold-lt));
@@ -257,53 +376,61 @@ body {
   transition: opacity .2s, transform .15s;
 }
 .btn-gold:hover { opacity: .88; transform: translateY(-2px); }
-@media (max-width: 639px) {
-  .hero-flagship-card { padding: 2.4rem 1.3rem 2rem; border-radius: 16px; }
-  .hf-corner { width: 150px; }
-  .hf-emblem { width: 110px; }
-  .hf-title { font-size: 1.4rem; }
-  .hf-desc { font-size: .8rem; }
-  .hf-tags { gap: .4rem; }
-  .hf-tag { padding: .45rem .8rem; font-size: .6rem; }
-  .hf-methods { gap: 1rem; }
-  .hf-method-icon { width: 58px; height: 58px; }
+/* ── Hero 2カラム（2026-11-14）：左＝三星統合鑑定、右＝「いま、知りたいことは」。DESIGN.md「Hero 右側メニュー」 ── */
+.hero-main { display: grid; grid-template-columns: minmax(0,68fr) 40px minmax(0,32fr); align-items: center; max-width: 1040px; margin: 0 auto 1.4rem; text-align: left; }
+.hero-main .hero-flagship-card { max-width: none; margin: 0; text-align: center; }
+.hero-main-rule { align-self: stretch; position: relative; display: flex; align-items: center; justify-content: center; color: var(--gold); }
+.hero-main-rule::before { content: ''; position: absolute; top: 6%; bottom: 6%; left: 50%; width: 1px; background: linear-gradient(180deg, transparent, rgba(201,168,76,.55) 20%, rgba(201,168,76,.55) 80%, transparent); }
+.hero-main-rule svg { position: relative; width: 18px; height: 18px; background: var(--void); padding: 2px; box-sizing: content-box; }
+.hn-head { display: flex; align-items: center; gap: .8rem; margin-bottom: .6rem; font-family: var(--ff-serif); font-size: .95rem; font-weight: 600; letter-spacing: .18em; color: var(--gold-lt); }
+.hn-head::before, .hn-head::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.55)); }
+.hn-head::after { background: linear-gradient(270deg, transparent, rgba(201,168,76,.55)); }
+.hn-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(201,168,76,.35); }
+.hn-list li { border-bottom: 1px solid rgba(201,168,76,.22); }
+.hn-list a { display: flex; align-items: baseline; gap: .55rem; padding: .95rem .3rem .9rem .2rem; text-decoration: none; color: var(--text); transition: background .25s; }
+.hn-q { font-family: var(--ff-serif); font-size: 1.04rem; font-weight: 600; letter-spacing: .08em; white-space: nowrap; transition: color .25s; }
+.hn-dots { flex: 1; min-width: 1rem; border-bottom: 1px dotted rgba(201,168,76,.45); transform: translateY(-.3em); }
+.hn-m { font-family: var(--ff-serif); font-size: .76rem; letter-spacing: .1em; color: rgba(201,168,76,.9); white-space: nowrap; }
+.hn-chev { width: 6px; height: 10px; color: rgba(201,168,76,.8); align-self: center; transition: transform .25s; }
+.hn-list a:hover, .hn-list a:focus-visible { background: linear-gradient(90deg, rgba(201,168,76,.08), transparent 85%); }
+.hn-list a:hover .hn-q, .hn-list a:focus-visible .hn-q { color: var(--gold-lt); }
+.hn-list a:hover .hn-chev, .hn-list a:focus-visible .hn-chev { transform: translateX(3px); }
+.hn-more { position: relative; display: flex; align-items: center; justify-content: center; gap: .7rem; min-height: 46px; margin-top: 5px; padding-top: .35rem; text-decoration: none; color: var(--text-secondary); border-top: 1px solid rgba(201,168,76,.45); }
+.hn-more::before { content: ''; position: absolute; left: 0; right: 0; top: -5px; height: 1px; background: rgba(201,168,76,.22); }
+.hn-more-t { font-family: var(--ff-serif); font-size: .88rem; letter-spacing: .2em; transition: color .25s; }
+.hn-down { width: 9px; height: 13px; color: var(--gold); transition: transform .25s; }
+.hn-more:hover .hn-more-t, .hn-more:focus-visible .hn-more-t { color: var(--gold-lt); }
+.hn-more:hover .hn-down, .hn-more:focus-visible .hn-down { transform: translateY(2px); }
+@media (min-width: 861px) {
+  .ht-grid { gap: 1.6rem; }
+  .hero-today .ht-head::before, .hero-today .ht-head::after { flex: 1 1 auto; max-width: 300px; }
 }
-.hero-pillars { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
-.pillar { font-family: var(--ff-mono); font-size: .68rem; letter-spacing: .1em; padding: .28rem .85rem; border: 1px solid rgba(201,168,76,.28); border-radius: 20px; color: rgba(201,168,76,.7); text-decoration: none; display: inline-block; cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
-.pillar:hover, .pillar:focus-visible { background: rgba(201,168,76,.1); border-color: rgba(201,168,76,.5); color: rgba(201,168,76,.9); }
-.pillar:focus-visible { outline: 2px solid var(--gold-lt); outline-offset: 2px; }
-.pillar-flagship { border-color: var(--gold); color: var(--gold-lt); background: rgba(201,168,76,.12); }
-.pillar-flagship:hover, .pillar-flagship:focus-visible { background: rgba(201,168,76,.2); border-color: var(--gold-lt); color: var(--gold-lt); }
-@media (max-width: 600px) {
-  .pillar { padding: .8rem .9rem; min-height: 44px; display: inline-flex; align-items: center; }
+@media (max-width: 860px) {
+  /* スマホ・タブレット：三星 → 今日のお楽しみ → 右側メニュー の順に縦に並べる */
+  .hero-inner { display: flex; flex-direction: column; padding-bottom: .2rem; }
+  .hero-main { display: contents; }
+  .hero-main-card { order: 1; margin-bottom: 1.3rem; }
+  .hero-main .hero-flagship-card { margin: 0 auto; max-width: 640px; width: 100%; }
+  .hero-main-rule { display: none; }
+  .hero-today { order: 2; width: 100%; max-width: 640px; }
+  section.fortune-section { padding-top: 1.2rem; }
+  .hero-nav { order: 3; width: 100%; max-width: 640px; margin: .2rem auto 0; text-align: left; }
+  .hn-list { display: grid; grid-template-columns: 1fr 1fr; }
+  .hn-list li:nth-child(odd) { border-right: 1px solid rgba(201,168,76,.22); }
+  .hn-list a { flex-direction: column; align-items: flex-start; gap: .15rem; padding: .7rem .6rem .65rem .7rem; }
+  .hn-dots, .hn-chev { display: none; }
+  .hn-q { font-size: .92rem; letter-spacing: .04em; }
+  .hn-m { font-size: .66rem; }
+  .hn-m::after { content: ' で占う ›'; }
+  .parallax-band { display: none; }
 }
-.hero-cta { display: flex; justify-content: center; flex-wrap: wrap; gap: .7rem; }
-.btn-primary { padding: .72rem 1.9rem; background: linear-gradient(135deg, var(--violet), var(--rose)); border: none; border-radius: 28px; color: #fff; font-family: var(--ff-serif); font-size: .9rem; font-weight: 700; letter-spacing: .12em; cursor: pointer; text-decoration: none; display: inline-block; box-shadow: 0 4px 22px rgba(122,74,158,.4); transition: opacity .2s, transform .15s; }
-.btn-primary:hover { opacity: .88; transform: translateY(-2px); }
-.btn-outline { padding: .68rem 1.6rem; background: transparent; border: 1px solid rgba(201,168,76,.4); border-radius: 28px; color: var(--gold-lt); font-family: var(--ff-mono); font-size: .76rem; letter-spacing: .1em; cursor: pointer; text-decoration: none; display: inline-block; transition: border-color .2s, background .2s; }
-.btn-outline:hover { border-color: var(--gold); background: rgba(201,168,76,.08); }
 
-/* スクロール誘導 */
-.hero-scroll {
-  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: .35rem;
-  z-index: 3;
-  opacity: 0; animation: hFade .8s ease 1.6s forwards;
-}
-.scroll-txt { font-family: var(--ff-mono); font-size: .55rem; letter-spacing: .3em; color: rgba(201,168,76,.35); }
-.scroll-ln { width: 1px; height: 38px; background: linear-gradient(180deg, rgba(201,168,76,.4), transparent); animation: scDown 1.9s ease infinite; }
-@keyframes scDown {
-  0%   { transform: scaleY(0); transform-origin: top; }
-  50%  { transform: scaleY(1); transform-origin: top; }
-  51%  { transform: scaleY(1); transform-origin: bottom; }
-  100% { transform: scaleY(0); transform-origin: bottom; }
-}
 
 /* ══════════════════════════════════
    占いカードグリッド（カテゴリ別）
 ══════════════════════════════════ */
 .fortune-section {
-  padding: 4rem 0 3rem;
+  padding: 1.6rem 0 3rem;
   background: var(--deep);
   /* v4: モックアップ由来のローカルトークン。.fortune-sectionにスコープし、グローバル:root(36行目付近)には追記しない */
   --fs-surface-a: hsl(258 28% 26%);
@@ -574,62 +701,80 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
     <span class="hero-eyebrow h-d1"><?= htmlspecialchars(TOP_EYEBROW, ENT_QUOTES) ?></span>
     <div class="hero-deco h-d2"><span>✦ ── ✦ ── ✦</span></div>
     <h1 class="hero-h1 h-d3"><?= TOP_H1_HTML ?></h1>
-    <span class="hero-sub h-d4">星と運命の交差点 · 17種類の占術で今を読み解く</span>
-    <div class="hero-flagship-card h-d5">
-      <img class="hf-corner hf-corner-tl" src="/img/hero/corner-single.webp" alt="">
-      <img class="hf-corner hf-corner-tr" src="/img/hero/corner-single.webp" alt="">
-      <img class="hf-corner hf-corner-bl" src="/img/hero/corner-single.webp" alt="">
-      <img class="hf-corner hf-corner-br" src="/img/hero/corner-single.webp" alt="">
-      <div class="hf-content">
-        <span class="hf-eyebrow">Flagship &nbsp;◆&nbsp; Reading</span>
-        <div class="hf-emblem"><img src="/img/hero/hero-astrolabe.webp" alt="西洋占星術・タロット・四柱推命の紋章"></div>
-        <div class="hf-title">三星統合鑑定</div>
-        <p class="hf-desc">西洋占星術×タロット×四柱推命の三位一体鑑定。性格・恋愛・仕事・これからの流れを、3つの占術から読み解きます。</p>
-        <div class="hf-tags">
-          <span class="hf-tag">性格・自分</span>
-          <span class="hf-tag">恋愛・相性</span>
-          <span class="hf-tag">仕事・運気</span>
-          <span class="hf-tag">今後の流れ</span>
-        </div>
-        <div class="hf-methods">
-          <div class="hf-method"><div class="hf-method-icon"><img src="/img/hero/seiza-medallion.webp" alt="西洋占星術"></div><div class="hf-method-label">西洋占星術</div></div>
-          <div class="hf-method"><div class="hf-method-icon"><img src="/img/hero/tarot-medallion.webp" alt="タロット"></div><div class="hf-method-label">タロット</div></div>
-          <div class="hf-method"><div class="hf-method-icon"><img src="/img/hero/shichu-medallion.webp" alt="四柱推命"></div><div class="hf-method-label">四柱推命</div></div>
-        </div>
-        <div class="hf-cta-wrap">
-          <a href="/sansei" class="btn-gold" data-ga-event="cta_click" data-cta-name="hero_flagship_sansei" data-cta-destination="/sansei">三星統合鑑定をはじめる →</a>
-          <div class="hf-trust">名前＋生年月日だけ　｜　約3分　｜　登録不要</div>
-        </div>
+    <span class="hero-sub h-d4">星と運命の交差点 · さまざまな占術で今を読み解く</span>
+    <div class="hero-main h-d5">
+    <div class="hero-main-card">
+    <div class="hero-flagship-card">
+      <span class="hf-frame" aria-hidden="true"><?php for ($_i = 0; $_i < 4; $_i++): ?><svg class="hf-orn" viewBox="0 0 40 40"><path d="M1 22V1h21" fill="none" stroke="currentColor" stroke-width="1"/><path d="M5 14V5h9" fill="none" stroke="currentColor" stroke-width=".7" opacity=".7"/><path d="M5 1.5 6.6 3 5 4.5 3.4 3z" fill="currentColor"/></svg><?php endfor; ?></span>
+      <div class="hf-crest">
+        <span class="hf-rule">Flagship</span>
+        <img class="hf-emblem" src="/img/hero/hero-astrolabe.webp" alt="" width="88" height="88">
+        <span class="hf-rule">Reading</span>
+      </div>
+      <div class="hf-title">三星統合鑑定</div>
+      <div class="hf-methods">
+        <span><img src="/img/hero/seiza-medallion.webp" alt="" width="20" height="20">西洋占星術</span><i></i>
+        <span><img src="/img/hero/tarot-medallion.webp" alt="" width="20" height="20">タロット</span><i></i>
+        <span><img src="/img/hero/shichu-medallion.webp" alt="" width="20" height="20">四柱推命</span>
+      </div>
+      <p class="hf-desc">性格・恋愛・仕事・これからの流れを、<br class="hf-sp">3つの占術を重ねて読み解きます。</p>
+      <a href="/sansei" class="btn-gold hf-btn" data-ga-event="cta_click" data-cta-name="hero_flagship_sansei" data-cta-destination="/sansei">三星統合鑑定をはじめる <span>→</span></a>
+      <div class="hf-trust">名前と生年月日だけ<b></b>約3分<b></b>登録不要</div>
+    </div>
+    </div>
+    <div class="hero-main-rule" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.8 7.6 15.6 11 24 12 15.6 13 12.8 16.4 12 24 11.2 16.4 8.4 13 0 12 8.4 11 11.2 7.6 12 0Z" fill="currentColor"/></svg></div>
+    <nav class="hero-nav" aria-label="知りたいことから選ぶ">
+      <div class="hn-head"><span>いま、知りたいことは</span></div>
+      <ul class="hn-list">
+      <?php
+      // 4つの主要占術：知りたいことを見出しに、占術名を添える（2026-11-14）。URLは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として使う。
+      // 言葉は各ページの中身に合わせている（タロット＝いまの迷いへのメッセージ／西洋占星術＝内面／四柱推命＝大運／算命学＝元命・主星）
+      $_heroNav = [
+        'tarot'  => ['いまの迷いへの答え', 'タロット'],
+        'seiza'  => ['本当の自分の性格', '西洋占星術'],
+        'shichu' => ['人生の流れと転機', '四柱推命'],
+        'sanmei' => ['生まれ持った才能', '算命学'],
+      ];
+      foreach ($_heroNav as $_slugKey => [$_q, $_m]):
+        $_url = $_NAV_PAGES[$_slugKey]['url'];
+      ?>
+        <li><a href="<?= htmlspecialchars($_url, ENT_QUOTES, 'UTF-8') ?>" data-ga-event="cta_click" data-cta-name="hero_nav_<?= $_slugKey ?>" data-cta-destination="<?= htmlspecialchars($_url, ENT_QUOTES, 'UTF-8') ?>"><span class="hn-q"><?= htmlspecialchars($_q, ENT_QUOTES, 'UTF-8') ?></span><span class="hn-dots" aria-hidden="true"></span><span class="hn-m"><?= htmlspecialchars($_m, ENT_QUOTES, 'UTF-8') ?></span><svg class="hn-chev" viewBox="0 0 10 16" aria-hidden="true"><path d="M2 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a></li>
+      <?php endforeach; ?>
+      </ul>
+      <a class="hn-more" href="#fortunes" data-ga-event="cta_click" data-cta-name="hero_browse_fortunes" data-cta-destination="#fortunes"><span class="hn-more-t">他の占いを見る</span><svg class="hn-down" viewBox="0 0 10 14" aria-hidden="true"><path d="M5 1v11M1.5 8.5 5 12l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+    </nav>
+    </div>
+    <div class="hero-today h-d6">
+      <div class="ht-head"><span class="ht-h">今日のお楽しみ</span><span class="ht-s">暦と4択、毎日ひとつずつ</span></div>
+      <div class="ht-grid">
+        <a class="ht-item ht-cal" href="/calendar" data-ga-event="cta_click" data-cta-name="hero_today_calendar" data-cta-destination="/calendar">
+          <div class="ht-paper ht-hm">
+            <div class="ht-hm-top"><span><?= $today->format('Y') ?></span><span><?= $_htMonth ?></span><span><?= $_htWeekday ?></span></div>
+            <div class="ht-hm-body">
+              <div class="ht-hm-day"><?= $today->format('j') ?></div>
+              <div class="ht-hm-side">
+                <span class="ht-hm-stamp"><?= htmlspecialchars($_htRokuyo, ENT_QUOTES, 'UTF-8') ?></span>
+                <dl class="ht-hm-dl"><?php foreach ($_htRows as [$_dt, $_dd]): ?><div><dt><?= $_dt ?></dt><dd><?= htmlspecialchars($_dd, ENT_QUOTES, 'UTF-8') ?></dd></div><?php endforeach; ?></dl>
+              </div>
+            </div>
+            <div class="ht-hm-note"><?= htmlspecialchars($_htNote, ENT_QUOTES, 'UTF-8') ?></div>
+            <div class="ht-hm-foot">開運カレンダーをめくる<span>→</span></div>
+          </div>
+        </a>
+<?php if ($_htQuiz !== null): ?>
+        <a class="ht-item ht-quiz" href="/quiz/<?= htmlspecialchars($_htQuiz['slug'], ENT_QUOTES, 'UTF-8') ?>/" data-ga-event="cta_click" data-cta-name="hero_today_quiz" data-cta-destination="/quiz/<?= htmlspecialchars($_htQuiz['slug'], ENT_QUOTES, 'UTF-8') ?>/">
+          <div class="ht-paper ht-mk">
+            <div class="ht-mk-band"><span class="ht-mk-v">今日の<span class="ht-tcy">4</span>択</span><span class="ht-mk-no">第<?= ht_kanji_num((int)$_htQuiz['number']) ?>番</span></div>
+            <div class="ht-mk-body">
+              <span class="ht-mk-tag"><?= htmlspecialchars($_htQuizTag, ENT_QUOTES, 'UTF-8') ?></span>
+              <p class="ht-mk-q"><?= htmlspecialchars($_htQuiz['question'], ENT_QUOTES, 'UTF-8') ?></p>
+              <div class="ht-mk-foot">四つの中から選ぶ<span>→</span></div>
+            </div>
+          </div>
+        </a>
+<?php endif; ?>
       </div>
     </div>
-    <div class="hero-pillars h-d6">
-      <?php
-      // Hero直下のピル：URL・アイコンは$_NAV_PAGES（inc/nav-cards.php）を単一の情報源として利用（二重管理を避ける）。
-      // 表示名のみHero専用の短縮ラベルを使う（Heroは「入口」であり、カード一覧の正式名称とは役割が異なるため）。
-      $_heroPills = [
-        'sansei' => '三星統合鑑定',
-        'seiza'  => '西洋占星術',
-        'tarot'  => 'タロット',
-        'shichu' => '四柱推命',
-        'sanmei' => '算命学',
-      ];
-      foreach ($_heroPills as $_slugKey => $_shortLabel):
-        $_heroPill = $_NAV_PAGES[$_slugKey];
-        $_cls = $_slugKey === 'sansei' ? 'pillar pillar-flagship' : 'pillar';
-        $_gaAttrs = $_slugKey === 'sansei' ? ' data-ga-event="cta_click" data-cta-name="hero_pillar_sansei" data-cta-destination="/sansei"' : '';
-      ?>
-      <a href="<?= htmlspecialchars($_heroPill['url'], ENT_QUOTES, 'UTF-8') ?>" class="<?= $_cls ?>"<?= $_gaAttrs ?>><?= htmlspecialchars($_heroPill['icon'], ENT_QUOTES, 'UTF-8') ?> <?= htmlspecialchars($_shortLabel, ENT_QUOTES, 'UTF-8') ?></a>
-      <?php endforeach; ?>
-    </div>
-    <div class="hero-cta h-d7">
-      <a href="#fortunes" class="btn-primary" data-ga-event="cta_click" data-cta-name="hero_browse_fortunes" data-cta-destination="#fortunes">占いを選ぶ ▼</a>
-      <a href="#oracle" class="btn-outline" data-ga-event="cta_click" data-cta-name="hero_oracle" data-cta-destination="#oracle">今日の開運情報</a>
-    </div>
-  </div>
-
-  <div class="hero-scroll">
-    <span class="scroll-txt">Scroll</span>
-    <div class="scroll-ln"></div>
   </div>
 </section>
 
@@ -645,8 +790,8 @@ footer { background: var(--void); padding: 2rem 1.2rem; text-align: center; }
   <div class="wrap fortune-section-head">
     <span class="section-label">Choose Your Fortune</span>
     <h2 class="section-title">占いを選ぶ</h2>
-    <p class="section-sub">17種類の占術から、今のあなたに合ったものを</p>
-    <p class="fortune-guide">迷ったら、まずは✨三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
+    <p class="section-sub">さまざまな占術から、今のあなたに合ったものを</p>
+    <p class="fortune-guide">迷ったら、まずは三星統合鑑定から。名前と生年月日だけで3つの占術を同時に鑑定します。</p>
   </div>
 
   <?php

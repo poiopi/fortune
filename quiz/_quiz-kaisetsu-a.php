@@ -122,6 +122,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
   color:#fff;font-family:var(--ff-mono);font-size:.68rem;font-weight:500;
 }
 .quiz-your-choice b{color:var(--accent2);font-weight:700}
+.quiz-your-choice-text{flex:1;min-width:0;line-height:1.7}
 .quiz-kaisetsu-intro{
   font-family:var(--ff-serif);font-size:1.05rem;font-weight:700;
   color:var(--accent-dk);margin-bottom:1rem;
@@ -198,7 +199,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-sans);font-weig
   <section class="quiz-kaisetsu-block">
     <p class="quiz-your-choice">
       <span class="quiz-your-choice-mark" style="background:<?= $_accentMap[$quizChoice] ?>"><?= strtoupper($quizChoice) ?></span>
-      あなたが選んだのは「<b><?= htmlspecialchars($quiz['choices'][$quizChoice], ENT_QUOTES, 'UTF-8') ?></b>」でした。
+      <span class="quiz-your-choice-text">あなたが選んだのは「<b><?= htmlspecialchars($quiz['choices'][$quizChoice], ENT_QUOTES, 'UTF-8') ?></b>」でした。</span>
     </p>
     <p class="quiz-kaisetsu-text"><?= nl2br(htmlspecialchars($quiz['explanations'][$quizChoice], ENT_QUOTES, 'UTF-8')) ?></p>
   </section>

@@ -69,4 +69,26 @@ if (!function_exists('quiz_theme_labels')) {
         }
         return $out;
     }
+
+    /**
+     * TOPの「今日のお楽しみ」に出す、その日の4択を1問（なければ null）。
+     * - 候補：季節の指定がないもの＋今月が season に入るもの（来月の季節ものは出さない）
+     * - 番号の小さい順に並べ、日付（日本時間）の通し日数を候補数で割った余りで決める（乱数は使わない）
+     * - 4択が増えると候補数が変わり、その日の問題が入れ替わることがある（許容する）
+     */
+    function quiz_of_the_day(DateTimeImmutable $date): ?array
+    {
+        $date  = $date->setTimezone(new DateTimeZone('Asia/Tokyo'));
+        $month = (int)$date->format('n');
+        $cands = array_values(array_filter(quiz_all_listed(), function ($q) use ($month) {
+            $season = $q['season'] ?? [];
+            return $season === [] || in_array($month, $season, true);
+        }));
+        if ($cands === []) {
+            return null;
+        }
+        usort($cands, fn($a, $b) => $a['number'] <=> $b['number']);
+        $days = intdiv((new DateTimeImmutable($date->format('Y-m-d'), new DateTimeZone('UTC')))->getTimestamp(), 86400);
+        return $cands[$days % count($cands)];
+    }
 }
