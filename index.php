@@ -145,7 +145,7 @@ body {
   color: var(--gold-lt);
   text-align: center;
   letter-spacing: .02em;
-  margin: -1.3rem auto 1.6rem;
+  margin: 0 auto 1.6rem;
   max-width: 480px;
 }
 .section-sub {
@@ -441,6 +441,8 @@ body {
   --fs-r-card: 14px;
 }
 .fortune-section-head { margin-bottom: 1.6rem; }
+/* 「迷ったら〜」との間隔（2026-11-14）：以前は .fortune-guide を margin-top:-1.3rem で引き上げていたが、間に自動広告が入ると広告に重なって文字が隠れるため、上の文の下の空きを詰める形に変更（2rem − 1.3rem = .7rem） */
+.fortune-section-head .section-sub { margin-bottom: .7rem; }
 
 /* ─── v4: レーン構成（占いを選ぶ） ─── */
 .fs-lanes { max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.6rem; }
