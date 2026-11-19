@@ -74,6 +74,7 @@ foreach ($suites as $name => $checks) {
     $results[$name] = [];
     foreach ($checks as $label => $script) {
         $cmd = escapeshellarg($phpBin) . ' ' . escapeshellarg($script) . ' 2>&1';
+        $output = []; // exec() は既存の配列に追記するため、前のテストの出力が混ざらないよう毎回空にする
         exec($cmd, $output, $exitCode);
         $pass = $exitCode === 0;
         $results[$name][$label] = ['pass' => $pass, 'output' => $output];
